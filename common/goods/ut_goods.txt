@@ -1,0 +1,42 @@
+﻿heavy_machinery = {
+	texture = "gfx/interface/icons/goods_icons/steel.dds"
+	cost = 300
+	category = industrial
+	
+	prestige_factor = 10
+	
+	traded_quantity = 6
+	convoy_cost_multiplier = 2
+}
+
+plastic = {
+	texture = "gfx/interface/icons/goods_icons/glass.dds"
+	cost = 60
+	category = industrial
+	
+	prestige_factor = 10
+}
+
+electronics = {
+	texture = "gfx/interface/icons/goods_icons/glass.dds"
+	cost = 100
+	category = industrial
+	
+	prestige_factor = 10
+}
+
+aluminum = {
+	texture = "gfx/interface/icons/goods_icons/glass.dds"
+	cost = 90
+	category = industrial
+	
+	prestige_factor = 10
+}
+
+bauxit = {
+	texture = "gfx/interface/icons/goods_icons/iron.dds"
+	cost = 70
+	category = industrial
+	
+	prestige_factor = 5
+}

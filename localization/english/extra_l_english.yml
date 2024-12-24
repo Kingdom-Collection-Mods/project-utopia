@@ -1,0 +1,3 @@
+﻿ heavy_machenery: "Heavy Machenery"
+ goods_heavy_machenery_output_mult:0 "$steel$ Goods Output"
+ goods_heavy_machenery_output_mult_desc:0 "A bonus or penalty for the production of $steel$."

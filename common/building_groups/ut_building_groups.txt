@@ -1,0 +1,27 @@
+﻿bg_modern_industry = {
+	parent_group = bg_manufacturing
+
+	lens = heavy_industry
+	
+	urbanization = 25
+	infrastructure_usage_per_level = 4
+}
+
+
+bg_bauxit_mine = {
+	parent_group = bg_manufacturing
+	
+	#default_building = building_bauxit_mine
+	
+	lens = mine
+	
+	urbanization = 10
+	infrastructure_usage_per_level = 2
+	
+	should_auto_expand = { 
+		default_auto_expand_rule = yes
+	}
+	
+	economy_of_scale_ai_factor = 2.0
+	foreign_investment_ai_factor = 1.0
+}

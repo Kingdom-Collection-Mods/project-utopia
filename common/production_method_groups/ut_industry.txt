@@ -1,0 +1,49 @@
+﻿#base
+pmg_base_building_construction_sector = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_wooden_buildings
+		pm_iron_frame_buildings
+		pm_steel_frame_buildings
+		pm_arc_welded_buildings
+		pm_heavy_machinery_buildings
+	}
+}
+##custom
+pmg_heavy_machinery_making_process = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_heavy_machinery_one_process
+		pm_heavy_machinery_two_process
+	}
+}
+
+pmg_electronics_making_process = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_electronics_one_process
+	}
+}
+
+pmg_plastic_making_process = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_plastic_one_process
+	}
+}
+
+pmg_bauxit_making_process = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_bauxit_one_mine
+	}
+}
+
+pmg_aluminum_making_process = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_aluminum_one_process
+	}
+}

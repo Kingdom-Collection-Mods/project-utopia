@@ -1,0 +1,138 @@
+﻿
+building_bauxit_mine = {
+	building_group = bg_bauxit_mine
+	icon = "gfx/interface/icons/building_icons/iron_mine.dds"
+	city_type = mine
+	levels_per_mesh = 5
+	required_construction = construction_cost_very_low # construction_cost_medium
+	
+	unlocking_technologies = {
+		shaft_mining
+	}
+
+	production_method_groups = {
+		pmg_bauxit_making_process
+	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
+ }
+ 
+building_aluminum_factory = {
+	building_group = bg_modern_industry
+	icon = "gfx/interface/icons/building_icons/iron_mine.dds"
+	city_type = mine
+	levels_per_mesh = 5
+	required_construction = construction_cost_medium
+	
+	unlocking_technologies = {
+		shaft_mining
+	}
+
+	production_method_groups = {
+		pmg_aluminum_making_process
+	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
+ }
+
+building_plastic_factory = {
+	building_group = bg_modern_industry
+	icon = "gfx/interface/icons/building_icons/explosives_factory.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	ai_nationalization_desire = 0.25 # AI will generally not privatize steel mills due to importance for construction
+
+	unlocking_technologies = {
+		steelworking
+	}
+	
+	production_method_groups = {
+		pmg_plastic_making_process
+	}
+	
+	required_construction = construction_cost_very_low # construction_cost_very_high
+
+	possible = {
+		owner = {
+			NOT = { 
+				OR = {
+					has_law = law_type:law_industry_banned 
+					has_law = law_type:law_extraction_economy 
+				}
+			}
+		}
+	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_modern_industry.dds"
+}
+ 
+
+building_electronic_factory = {
+	building_group = bg_modern_industry
+	icon = "gfx/interface/icons/building_icons/steel_mills.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	ai_nationalization_desire = 0.25 # AI will generally not privatize steel mills due to importance for construction
+
+	unlocking_technologies = {
+		steelworking
+	}
+	
+	production_method_groups = {
+		pmg_electronics_making_process
+	}
+	
+	required_construction = construction_cost_very_low # construction_cost_very_high
+
+	possible = {
+		owner = {
+			NOT = { 
+				OR = {
+					has_law = law_type:law_industry_banned 
+					has_law = law_type:law_extraction_economy 
+				}
+			}
+		}
+	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_modern_industry.dds"
+}
+
+building_heavy_machinery_factory = {
+	building_group = bg_modern_industry
+	icon = "gfx/interface/icons/building_icons/steel_mills.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	ai_nationalization_desire = 0.25 # AI will generally not privatize steel mills due to importance for construction
+
+	unlocking_technologies = {
+		steelworking
+	}
+	
+	production_method_groups = {
+		pmg_heavy_machinery_making_process
+	}
+	
+	required_construction = construction_cost_very_low # construction_cost_very_high
+
+	possible = {
+		owner = {
+			NOT = { 
+				OR = {
+					has_law = law_type:law_industry_banned 
+					has_law = law_type:law_extraction_economy 
+				}
+			}
+		}
+	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_modern_industry.dds"
+}
