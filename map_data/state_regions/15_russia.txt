@@ -1,4 +1,4 @@
-STATE_TALINN = {
+﻿STATE_TALINN = {
     id = 151
     subsistence_building = "building_subsistence_farms"
     provinces = { "x1D7342" "x25CC83" "x5C8F48" "x6040E0" "x7AAA5C" "x80A021" "x9884F2" "xA69127" "xD29762" "xD737E2" "xE87B15" "xFCA6F4" }
