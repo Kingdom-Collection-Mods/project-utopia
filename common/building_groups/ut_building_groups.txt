@@ -7,22 +7,18 @@
 	infrastructure_usage_per_level = 4
 }
 
-bg_bauxite_mine = {
+bg_bauxite_mining = {
+	parent_group = bg_mining
+	
+	default_building = building_bauxite_mine
+
+	can_use_slaves = yes
+}
+
+bg_bauxite_mining_debug = {
 	parent_group = bg_manufacturing
 	
-	#default_building = building_bauxite_mine
-	
 	lens = mine
-	
-	urbanization = 10
-	infrastructure_usage_per_level = 2
-	
-	should_auto_expand = { 
-		default_auto_expand_rule = yes
-	}
-	
-	economy_of_scale_ai_factor = 2.0
-	foreign_investment_ai_factor = 1.0
 }
 
 bg_rare_earths_mine = {

@@ -54,10 +54,6 @@ pm_heavy_machinery_analog_process = {
 		}
 	}
 	
-	unlocking_technologies = {
-		heavy_machinery_era_analog
-	}
-	
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -135,10 +131,6 @@ pm_plastic_one_process = {
 		}
 	}
 	
-	unlocking_technologies = {
-		railways
-	}
-	
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -170,10 +162,6 @@ pm_electronics_circuits_process = {
 		workforce_scaled = {
 			state_pollution_generation_add = 20
 		}
-	}
-	
-	unlocking_technologies = {
-		railways
 	}
 	
 	building_modifiers = {
@@ -210,7 +198,7 @@ pm_computers_electromechanical_process = {
 	}
 	
 	unlocking_technologies = {
-		railways
+		electronics
 	}
 	
 	building_modifiers = {
@@ -248,7 +236,7 @@ pm_computers_transistors_process = {
 	}
 	
 	unlocking_technologies = {
-		railways
+		computers
 	}
 	
 	building_modifiers = {
@@ -285,7 +273,7 @@ pm_computers_integrated_chips_process  = {
 	}
 	
 	unlocking_technologies = {
-		railways
+		computers
 	}
 	
 	building_modifiers = {
@@ -322,7 +310,7 @@ pm_computers_micro_chips_process  = {
 	}
 	
 	unlocking_technologies = {
-		railways
+		software
 	}
 	
 	building_modifiers = {
@@ -414,11 +402,7 @@ pm_aluminum_one_process = {
 ###### Administration Heavy Industry
 
 pm_hi_analogue_admin = {
-	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
-	unlocking_technologies = {
-		central_planning
-	}
-	
+	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"	
 	country_modifiers = {
 		workforce_scaled = {
 			country_bureaucracy_add = 100
@@ -547,10 +531,6 @@ pm_hi_rail_logistics = {
 		}
 	}
 		
-	unlocking_technologies = {
-		railways
-	}
-		
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods					
@@ -572,7 +552,7 @@ pm_hi_individual_logistics = {
 	}
 		
 	unlocking_technologies = {
-		railways
+		truck_era_analog
 	}
 		
 	building_modifiers = {
@@ -596,7 +576,7 @@ pm_hi_connected_logistics = {
 	}
 		
 	unlocking_technologies = {
-		railways
+		truck_era_web
 	}
 		
 	building_modifiers = {
