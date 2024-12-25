@@ -7,14 +7,8 @@
 	infrastructure_usage_per_level = 4
 }
 
-bg_modern_mine = {
-	parent_group = bg_manufacturing
-}
-
-
-
 bg_bauxite_mine = {
-	parent_group = bg_modern_mine
+	parent_group = bg_manufacturing
 	
 	#default_building = building_bauxite_mine
 	
@@ -32,7 +26,7 @@ bg_bauxite_mine = {
 }
 
 bg_rare_earths_mine = {
-	parent_group = bg_modern_mine
+	parent_group = bg_manufacturing
 	
 	#default_building = building_bauxite_mine
 	

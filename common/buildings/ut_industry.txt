@@ -70,7 +70,7 @@ building_plastic_factory = {
 	}
 	ownership_type = self
 
-	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_modern_industry.dds"
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
 }
  
 
@@ -106,7 +106,7 @@ building_electronic_factory = {
 	}
 	ownership_type = self
 
-	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_modern_industry.dds"
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
 }
 
 building_heavy_machinery_factory = {
@@ -141,7 +141,7 @@ building_heavy_machinery_factory = {
 	}
 	ownership_type = self
 
-	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_modern_industry.dds"
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
 }
 
 rare_earths_mine = { 
@@ -196,5 +196,5 @@ building_computer_factory = {
 	}
 	ownership_type = self
 
-	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_modern_industry.dds"
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
 }

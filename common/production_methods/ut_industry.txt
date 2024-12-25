@@ -238,11 +238,116 @@ pm_computers_electromechanical_process = {
 }
 
 
-pm_computers_transistors_process
-pm_computers_integrated_chips_process
-pm_computers_micro_chips_process
+pm_computers_transistors_process = {
+	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+	
+	unlocking_technologies = {
+		railways
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_plastic_add = 5
+			goods_input_explosives_add = 10 
+			goods_input_electricity_add = 50
+			
+			# output goods
+			goods_output_computers_add = 30
+		}
 
+		level_scaled = {
+			# employment
+			building_employment_shopkeepers_add = 500
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 1000
+			building_employment_service_workers_add = 1500
+		}
+	}
 
+	required_input_goods = electricity
+}
+
+pm_computers_integrated_chips_process  = {
+	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+	
+	unlocking_technologies = {
+		railways
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_plastic_add = 5
+			goods_input_explosives_add = 10 
+			goods_input_electricity_add = 50
+			
+			# output goods
+			goods_output_computers_add = 30
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_shopkeepers_add = 500
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 1000
+			building_employment_service_workers_add = 1500
+		}
+	}
+
+	required_input_goods = electricity
+}
+
+pm_computers_micro_chips_process  = {
+	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+	
+	unlocking_technologies = {
+		railways
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_plastic_add = 5
+			goods_input_explosives_add = 10 
+			goods_input_electricity_add = 50
+			
+			# output goods
+			goods_output_computers_add = 30
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_shopkeepers_add = 500
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 1000
+			building_employment_service_workers_add = 1500
+		}
+	}
+
+	required_input_goods = electricity
+}
 
 pm_bauxite_one_mine = {
 	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
