@@ -1,0 +1,327 @@
+﻿plastics_mass_production = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	unlocking_technologies = {	
+		plastics
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+bauxite_mining = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	unlocking_technologies = {	
+		arc_welding
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+aluminum_base = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	unlocking_technologies = {	
+		bauxite_mining
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+heavy_machinery_era_analog = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	unlocking_technologies = {	
+		aluminum_base
+		arc_welding
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+
+heavy_machinery_era_digital = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	unlocking_technologies = {	
+		heavy_machinery_era_analog
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+heavy_machinery_era_web = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	unlocking_technologies = {	
+		heavy_machinery_era_digital
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+rare_earths_mining_era_analog = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	unlocking_technologies = {	
+		oil_turbine
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+rare_earths_mining_era_digital = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	unlocking_technologies = {	
+		rare_earths_mining_era_analog
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+truck_era_analog = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	unlocking_technologies = {	
+		compression_ignition
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+truck_era_digital = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	unlocking_technologies = {	
+		truck_era_analog
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+truck_era_web = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	unlocking_technologies = {	
+		truck_era_digital
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+electronics = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	unlocking_technologies = {	
+		electric_railway
+		radio
+	}
+	
+	ai_weight = {
+		value = 2 # Important for those nice-looking roads!
+	}
+}
+
+
+computers = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+	
+	modifier = {
+	}
+	
+	unlocking_technologies = {	
+		electronics
+	}
+	
+	ai_weight = {
+		value = 2 # Important for those nice-looking roads!
+	}
+}
+
+software = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	unlocking_technologies = {	
+		computers
+	}
+	
+	ai_weight = {
+		value = 2 # Important for those nice-looking roads!
+	}
+}
+
+internet = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+	
+	unlocking_technologies = {	
+		software
+	}
+	
+	ai_weight = {
+		value = 2 # Important for those nice-looking roads!
+	}
+}
+
+consumer_goods_research = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	
+	unlocking_technologies = {	
+		flash_freezing
+		dough_rollers
+		art_silk
+		automatic_bottle_blowers
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+consumer_goods_main_analog = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	
+	unlocking_technologies = {	
+		flash_freezing
+		dough_rollers
+		art_silk
+		automatic_bottle_blowers
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+consumer_goods_main_house_hold_electrical = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	
+	unlocking_technologies = {	
+		consumer_goods_main_analog
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+consumer_goods_main_plastic_revolution = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	
+	unlocking_technologies = {	
+		consumer_goods_main_house_hold_electrical
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+consumer_goods_main_entertainment_electrical = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	
+	unlocking_technologies = {	
+		consumer_goods_main_plastic_revolution
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+consumer_goods_main_digital_products = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	
+	unlocking_technologies = {	
+		consumer_goods_main_entertainment_electrical
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+consumer_goods_main_web_products = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = production
+
+	
+	unlocking_technologies = {	
+		consumer_goods_main_digital_products
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
