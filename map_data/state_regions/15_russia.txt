@@ -1,4 +1,4 @@
-﻿STATE_TALINN = {
+STATE_TALINN = {
     id = 151
     subsistence_building = "building_subsistence_farms"
     provinces = { "x1D7342" "x25CC83" "x5C8F48" "x6040E0" "x7AAA5C" "x80A021" "x9884F2" "xA69127" "xD29762" "xD737E2" "xE87B15" "xFCA6F4" }
@@ -253,6 +253,7 @@ STATE_KOLA = {
     capped_resources = {
         bg_iron_mining = 85
         bg_sulfur_mining = 10
+        bg_bauxite_mining = 10
         bg_logging = 25
         bg_fishing = 10
     }
@@ -497,6 +498,7 @@ STATE_KURSK = {
         bg_logging = 31
         bg_iron_mining = 93
         bg_sulfur_mining = 12
+        bg_bauxite_mining = 12
     }
     resource = {
         type = "bg_gold_fields"
@@ -981,6 +983,7 @@ STATE_VYATKA = {
     capped_resources = {
         bg_coal_mining = 15
         bg_sulfur_mining = 10
+        bg_bauxite_mining = 10
         bg_logging = 36
     }
     resource = {
@@ -1215,6 +1218,7 @@ STATE_CHUVASHIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_sulfur_mining = 15
+        bg_bauxite_mining = 15
         bg_logging = 25
     }
     resource = {

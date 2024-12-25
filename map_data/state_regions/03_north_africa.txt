@@ -12,6 +12,7 @@
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_sulfur_mining = 20
+        bg_bauxite_mining = 20
         bg_logging = 2
         bg_fishing = 6
     }
@@ -235,6 +236,7 @@ STATE_FEZ = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_sulfur_mining = 32
+        bg_bauxite_mining = 32
         bg_logging = 4
         bg_fishing = 5
     }
@@ -322,6 +324,7 @@ STATE_CONSTANTINE = {
         bg_iron_mining = 55
         bg_lead_mining = 19
         bg_sulfur_mining = 18
+        bg_bauxite_mining = 18
         bg_logging = 6
         bg_fishing = 4
     }
@@ -367,6 +370,7 @@ STATE_TUNISIA = {
     capped_resources = {
         bg_lead_mining = 15
         bg_sulfur_mining = 48
+        bg_bauxite_mining = 48
         bg_logging = 9
         bg_fishing = 7
     }
@@ -486,6 +490,7 @@ STATE_WEST_SAHARA = {
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
         bg_sulfur_mining = 36
+        bg_bauxite_mining = 36
         bg_fishing = 11
     }
     naval_exit_id = 3089
@@ -578,6 +583,7 @@ STATE_TIMBUKTU = {
     capped_resources = {
         bg_coal_mining = 36
         bg_sulfur_mining = 36
+        bg_bauxite_mining = 36
     }
     resource = {
         type = "bg_oil_extraction"
@@ -601,6 +607,7 @@ STATE_NIGER = {
         bg_coal_mining = 36
         bg_lead_mining = 18
         bg_sulfur_mining = 24
+        bg_bauxite_mining = 24
     }
     resource = {
         type = "bg_oil_extraction"
