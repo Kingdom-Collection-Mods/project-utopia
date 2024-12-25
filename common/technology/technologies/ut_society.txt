@@ -19,16 +19,10 @@
 }
 
 heavy_machinery_builders = {
-	era = era_7
+	era = era_6
 	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
 	category = society
-	
-	modifier = {
-		state_infrastructure_from_automobiles_consumption_add = 0.25
-		market_land_trade_capacity_add = 20
-		state_infrastructure_from_population_max_add = 20
-	}
-	
+
 	unlocking_technologies = {	
 		highways
 	}
@@ -37,3 +31,35 @@ heavy_machinery_builders = {
 		value = 2 # Important for those nice-looking roads!
 	}
 }
+
+
+intercity_transport = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = society
+	
+	unlocking_technologies = {	
+		heavy_machinery_builders
+	}
+	
+	ai_weight = {
+		value = 2 # Important for those nice-looking roads!
+	}
+}
+
+highspeed_transport = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = society
+	
+	unlocking_technologies = {	
+		intercity_transport
+	}
+	
+	ai_weight = {
+		value = 2 # Important for those nice-looking roads!
+	}
+}
+
+
+
