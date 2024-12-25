@@ -7,11 +7,34 @@
 	infrastructure_usage_per_level = 4
 }
 
-
-bg_bauxit_mine = {
+bg_modern_mine = {
 	parent_group = bg_manufacturing
+}
+
+
+
+bg_bauxite_mine = {
+	parent_group = bg_modern_mine
 	
-	#default_building = building_bauxit_mine
+	#default_building = building_bauxite_mine
+	
+	lens = mine
+	
+	urbanization = 10
+	infrastructure_usage_per_level = 2
+	
+	should_auto_expand = { 
+		default_auto_expand_rule = yes
+	}
+	
+	economy_of_scale_ai_factor = 2.0
+	foreign_investment_ai_factor = 1.0
+}
+
+bg_rare_earths_mine = {
+	parent_group = bg_modern_mine
+	
+	#default_building = building_bauxite_mine
 	
 	lens = mine
 	

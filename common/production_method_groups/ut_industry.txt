@@ -15,15 +15,15 @@ pmg_base_building_construction_sector = {
 pmg_heavy_machinery_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
-		pm_heavy_machinery_one_process
-		pm_heavy_machinery_two_process
+		pm_heavy_machinery_analog_process
+		pm_heavy_machinery_digital_process
 	}
 }
 
 pmg_electronics_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
-		pm_electronics_one_process
+		pm_electronics_circuits_process
 	}
 }
 
@@ -34,10 +34,10 @@ pmg_plastic_making_process = {
 	}
 }
 
-pmg_bauxit_making_process = {
+pmg_bauxite_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
-		pm_bauxit_one_mine
+		pm_bauxite_one_mine
 	}
 }
 
@@ -47,3 +47,64 @@ pmg_aluminum_making_process = {
 		pm_aluminum_one_process
 	}
 }
+
+pmg_rare_earths_making_process = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_rare_earths_one_mine
+	}
+}
+
+pmg_computers_making_process = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_computers_electromechanical_process
+		pm_computers_transistors_process
+		pm_computers_integrated_chips_process
+		pm_computers_micro_chips_process
+	}
+}
+
+
+
+
+
+pmg_administration_modern_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+
+	production_methods = {
+		pm_hi_analogue_admin
+		pm_hi_connected_admin
+		pm_hi_digital_admin
+		pm_hi_automated_admin
+	}
+}
+
+pmg_logistics_modern_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+
+	production_methods = {
+		pm_hi_rail_logistics
+		pm_hi_individual_logistics
+		pm_hi_connected_logistics
+	}
+}
+
+pmg_logistics_bauxite_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_road_carts
+		pm_hi_rail_logistics
+		pm_hi_individual_logistics
+		pm_hi_connected_logistics
+	}
+}
+
+pmg_logistics_rare_earths_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_no_steam_automation
+		pm_steam_donkey_mine
+	}
+}
+
