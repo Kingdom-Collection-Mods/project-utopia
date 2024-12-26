@@ -413,6 +413,7 @@ STATE_ARKHANGELSK = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_gold_mining = 2
+        bg_rare_earths_mining = 2
         bg_logging = 14
         bg_fishing = 10
     }
@@ -1167,6 +1168,7 @@ STATE_CHELYABINSK = {
         bg_coal_mining = 25
         bg_logging = 16
         bg_gold_mining = 3
+        bg_rare_earths_mining = 3
     }
     resource = {
         type = "bg_gold_fields"

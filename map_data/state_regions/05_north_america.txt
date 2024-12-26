@@ -1420,6 +1420,7 @@ STATE_BAJIO = {
     capped_resources = {
         bg_iron_mining = 23
         bg_gold_mining = 4
+        bg_rare_earths_mining = 4
     }
 }
 

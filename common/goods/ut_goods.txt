@@ -1,5 +1,5 @@
 ﻿heavy_machinery = {
-	texture = "gfx/interface/icons/goods_icons/steel.dds"
+	texture = "gfx/interface/icons/goods_icons/heavy_machinery.dds"
 	cost = 150
 	category = industrial
 	
@@ -10,7 +10,7 @@
 }
 
 plastic = {
-	texture = "gfx/interface/icons/goods_icons/unused/lightbulbs.dds"
+	texture = "gfx/interface/icons/goods_icons/plastic.dds"
 	cost = 60
 	category = industrial
 	
@@ -18,7 +18,7 @@ plastic = {
 }
 
 electronics = {
-	texture = "gfx/interface/icons/goods_icons/unused/lightbulbs.dds"
+	texture = "gfx/interface/icons/goods_icons/electronics.dds"
 	cost = 80
 	category = industrial
 	
@@ -26,7 +26,7 @@ electronics = {
 }
 
 aluminum = {
-	texture = "gfx/interface/icons/goods_icons/glass.dds"
+	texture = "gfx/interface/icons/goods_icons/aluminum.dds"
 	cost = 60
 	category = industrial
 	
@@ -34,7 +34,7 @@ aluminum = {
 }
 
 bauxite = {
-	texture = "gfx/interface/icons/goods_icons/iron.dds"
+	texture = "gfx/interface/icons/goods_icons/bauxite.dds"
 	cost = 50
 	category = industrial
 	
@@ -42,7 +42,7 @@ bauxite = {
 }
 
 rare_earths = {
-	texture = "gfx/interface/icons/rare_earths.dds"
+	texture = "gfx/interface/icons/goods_icons/rare_earths.dds"
 	cost = 50
 	category = industrial
 	
@@ -50,15 +50,24 @@ rare_earths = {
 }
 
 computers = {
-	texture = "gfx/interface/icons/goods_icons/unused/lightbulbs.dds"
+	texture = "gfx/interface/icons/goods_icons/computers.dds"
 	cost = 150
 	category = industrial
 	
 	prestige_factor = 5
 }
 
+software = {
+	texture = "gfx/interface/icons/goods_icons/software.dds"
+	cost = 80
+	category = industrial
+	
+	prestige_factor = 5
+}
+
+
 internet = {
-	texture = "gfx/interface/icons/goods_icons/electricity.dds"
+	texture = "gfx/interface/icons/goods_icons/internet.dds"
 	cost = 40
 	category = staple
 	local = yes
@@ -66,16 +75,8 @@ internet = {
 	prestige_factor = 5
 }
 
-fax_devices = {
-	texture = "gfx/interface/icons/goods_icons/radios.dds"
-	cost = 90
-	category = industrial
-	
-	prestige_factor = 10
-}
-
-truck = {
-	texture = "gfx/interface/icons/goods_icons/automobiles.dds"
+trucks = {
+	texture = "gfx/interface/icons/goods_icons/trucks.dds"
 	cost = 90
 	category = industrial
 	
@@ -84,7 +85,7 @@ truck = {
 
 
 consumer_goods = {
-	texture = "gfx/interface/icons/goods_icons/groceries.dds"
+	texture = "gfx/interface/icons/goods_icons/consumer_goods.dds"
 	cost = 40
 	category = staple
 	

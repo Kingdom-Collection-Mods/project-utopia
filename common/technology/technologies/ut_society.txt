@@ -5,7 +5,6 @@
 	
 	modifier = {
 		state_infrastructure_from_automobiles_consumption_add = 0.25
-		market_land_trade_capacity_add = 20
 		state_infrastructure_from_population_max_add = 20
 	}
 	
@@ -22,6 +21,10 @@ heavy_machinery_builders = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
 	category = society
+		
+	modifier = {
+		state_infrastructure_from_population_max_add = 20
+	}
 
 	unlocking_technologies = {	
 		highways
@@ -38,6 +41,11 @@ intercity_transport = {
 	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
 	category = society
 	
+	modifier = {
+		state_infrastructure_from_population_max_add = 20
+		market_land_trade_capacity_add = 20
+	}
+
 	unlocking_technologies = {	
 		heavy_machinery_builders
 	}
@@ -51,7 +59,12 @@ highspeed_transport = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
 	category = society
-	
+		
+	modifier = {
+		state_infrastructure_from_population_max_add = 20
+		market_land_trade_capacity_add = 20
+	}
+
 	unlocking_technologies = {	
 		intercity_transport
 	}
@@ -62,4 +75,39 @@ highspeed_transport = {
 }
 
 
+public_universities = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = society
+		
+	modifier = {
+		country_weekly_innovation_max_add = 100
+	}
+
+	unlocking_technologies = {
+		analytical_philosophy
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+public_universities_2 = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = society
+		
+	modifier = {
+		country_tech_spread_mult = 0.2
+	}
+
+	unlocking_technologies = {
+		analytical_philosophy
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
 

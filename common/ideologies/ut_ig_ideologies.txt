@@ -1,0 +1,83 @@
+﻿ideology_urbanist_power_base = {
+	icon = "gfx/interface/icons/ideology_icons/paternalistic.dds"
+	lawgroup_citizenship = {
+		law_ethnostate = disapprove
+		law_national_supremacy = disapprove
+		law_racial_segregation = neutral
+		law_cultural_exclusion = approve
+		law_multicultural = strongly_approve
+		law_neo_ethno_state = approve
+		law_multicultural_globalism = approve
+	}
+
+	lawgroup_army_model = {
+		law_task_forces = approve
+		law_mass_conscription = approve
+		law_professional_army = approve
+		law_national_militia = disapprove
+		law_peasant_levies = disapprove
+	}
+}
+
+
+ideology_urbanist_economy_base = {
+	icon = "gfx/interface/icons/ideology_icons/liberal.dds"
+	lawgroup_economic_system = {
+		law_traditionalism = strongly_disapprove
+		law_interventionism = neutral
+		law_agrarianism = neutral
+		law_industry_banned = disapprove
+		law_extraction_economy = strongly_disapprove
+		law_cooperative_ownership = neutral
+		law_command_economy = neutral
+	}
+
+	lawgroup_education_system = {
+		law_no_schools = strongly_disapprove
+		law_religious_schools = disapprove
+		law_private_schools = approve	
+		law_public_schools = strongly_approve
+		law_public_university = approve
+	}
+
+	lawgroup_trade_policy = {		
+		law_protectionism = neutral
+		law_isolationism = neutral
+		law_mercantilism = neutral
+		law_free_trade = strongly_approve
+		law_free_trade_union = approve
+		law_protectionism_union = approve
+	}
+}
+
+ideology_urbanist_human_rights_base = {
+	icon = "gfx/interface/icons/ideology_icons/republican.dds"
+	
+	lawgroup_free_speech = {
+		law_outlawed_dissent = disapprove
+		law_censorship = neutral
+		law_right_of_assembly = approve
+		law_protected_speech = approve
+	}
+
+	lawgroup_labor_rights = {
+		law_no_workers_rights = disapprove
+		law_regulatory_bodies = approve
+		law_worker_protections = approve
+	}
+
+	lawgroup_childrens_rights = {
+		law_child_labor_allowed = strongly_disapprove
+		law_restricted_child_labor = approve
+		law_compulsory_primary_school = strongly_approve
+		law_compulsory_secondary_school = strongly_approve
+		law_compulsory_tertiary_school = approve
+	}
+
+	lawgroup_slavery = {
+		law_slavery_banned = strongly_approve
+		law_legacy_slavery = strongly_disapprove
+		law_slave_trade = strongly_disapprove
+		law_debt_slavery = strongly_disapprove
+	}
+}

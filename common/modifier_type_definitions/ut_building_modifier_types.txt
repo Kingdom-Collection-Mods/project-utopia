@@ -114,6 +114,22 @@ goods_input_computers_add={
 	}
 }
 
+goods_outputs_software_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_computers_software_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
 
 goods_output_internet_add={
 	decimals=1
@@ -131,6 +147,21 @@ goods_input_internet_add={
 	}
 }
 
+goods_output_trucks_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_trucks_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
 
 
 ####

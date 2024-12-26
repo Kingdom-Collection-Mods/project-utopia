@@ -99,6 +99,7 @@ STATE_GREATER_CAUCASUS = {
         bg_coal_mining = 40
         bg_lead_mining = 20
         bg_gold_mining = 3
+        bg_rare_earths_mining = 3
         bg_iron_mining = 24
         bg_logging = 19
         bg_fishing = 5

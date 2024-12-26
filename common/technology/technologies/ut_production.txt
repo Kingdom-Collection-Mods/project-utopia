@@ -249,7 +249,7 @@ rare_earths_mining_era_digital = {
 	}
 }
 
-truck_era_analog = {
+trucks_era_analog = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
 	category = production
@@ -264,13 +264,13 @@ truck_era_analog = {
 	}
 }
 
-truck_era_digital = {
+trucks_era_digital = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
 	category = production
 
 	unlocking_technologies = {	
-		truck_era_analog
+		trucks_era_analog
 		computers
 	}
 	
@@ -279,13 +279,13 @@ truck_era_digital = {
 	}
 }
 
-truck_era_web = {
+trucks_era_web = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
 	category = production
 
 	unlocking_technologies = {	
-		truck_era_digital
+		trucks_era_digital
 	}
 	
 	ai_weight = {

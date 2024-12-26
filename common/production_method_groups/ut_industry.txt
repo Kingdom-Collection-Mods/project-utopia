@@ -37,7 +37,9 @@ pmg_plastic_making_process = {
 pmg_bauxite_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
-		pm_bauxite_one_mine
+		pm_bauxite_steam_powered_mine
+		pm_bauxite_heavy_machinery_mine
+		pm_bauxite_automated_heavy_machinery_mine
 	}
 }
 
@@ -62,6 +64,13 @@ pmg_computers_making_process = {
 		pm_computers_transistors_process
 		pm_computers_integrated_chips_process
 		pm_computers_micro_chips_process
+	}
+}
+
+pmg_consumer_goods_making_process = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_consumer_goods_analog_process
 	}
 }
 

@@ -1,0 +1,20 @@
+@sol_icon_fontsize = 45
+
+
+texticon = {
+  icon = service_workers
+  iconsize = {
+    offset = { 0 50 }
+    texture = "gfx/interface/icons/pops_icons/service_workers.dds"
+    fontsize = 250
+  }
+}
+
+texticon = {
+  icon = service_workers
+  iconsize = {
+    offset = { 0 5 }
+    texture = "gfx/interface/icons/pops_icons/service_workers_15.dds"
+    fontsize = 30
+  }
+}

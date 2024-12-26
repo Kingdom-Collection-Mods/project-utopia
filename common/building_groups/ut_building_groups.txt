@@ -1,5 +1,6 @@
 ﻿bg_modern_industry = {
 	parent_group = bg_manufacturing
+	category = urban
 
 	lens = heavy_industry
 	
@@ -9,6 +10,7 @@
 
 bg_bauxite_mining = {
 	parent_group = bg_mining
+	category = rural
 	
 	default_building = building_bauxite_mine
 
@@ -17,12 +19,23 @@ bg_bauxite_mining = {
 
 bg_bauxite_mining_debug = {
 	parent_group = bg_manufacturing
+	category = rural	
 	
 	lens = mine
 }
 
-bg_rare_earths_mine = {
+bg_rare_earths_mining = {
+	parent_group = bg_mining
+	category = rural	
+	
+	default_building = building_rare_earths_mine
+
+	can_use_slaves = yes
+}
+
+bg_rare_earths_mining_debug = {
 	parent_group = bg_manufacturing
+	category = rural
 	
 	#default_building = building_bauxite_mine
 	

@@ -1,0 +1,109 @@
+texticon = {
+	icon = heavy_machinery
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/heavy_machinery.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = plastic
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/plastic.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = electronics
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/electronics.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = aluminum
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/aluminum.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = bauxite
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/bauxite.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = rare_earths
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/rare_earths.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = computers
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/computers.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = software
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/software.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = trucks
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/trucks.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = consumer_goods
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/consumer_goods.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = internet
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/internet.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
