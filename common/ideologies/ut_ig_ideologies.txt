@@ -82,4 +82,11 @@ ideology_urbanist_human_rights_base = {
 		law_slave_trade = strongly_disapprove
 		law_debt_slavery = strongly_disapprove
 	}
+	lawgroup_rights_of_women = {
+		law_no_womens_rights = disapprove
+		law_women_own_property = neutral
+		law_women_in_the_workplace = approve
+		law_womens_suffrage = approve
+		law_equal_rights_for_women= approve
+	}
 }

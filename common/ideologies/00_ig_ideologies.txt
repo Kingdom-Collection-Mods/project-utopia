@@ -490,6 +490,7 @@ ideology_liberal = {
 		law_women_own_property = approve
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = neutral
+		law_equal_rights_for_women= neutral
 	}
 }
 
@@ -782,6 +783,7 @@ ideology_patriarchal = {
 		law_women_own_property = disapprove
 		law_women_in_the_workplace = disapprove
 		law_womens_suffrage = strongly_disapprove
+		law_equal_rights_for_women= strongly_disapprove
 	}
 
 	lawgroup_free_speech = {

@@ -74,6 +74,7 @@ ideology_traditionalist = {
 		law_women_own_property = neutral
 		law_women_in_the_workplace = disapprove
 		law_womens_suffrage = strongly_disapprove
+		law_equal_rights_for_women= strongly_disapprove
 	}
 
 	lawgroup_church_and_state = {
@@ -197,6 +198,7 @@ ideology_traditionalist_minoritarian = {
 		law_women_own_property = neutral
 		law_women_in_the_workplace = disapprove
 		law_womens_suffrage = strongly_disapprove
+		law_equal_rights_for_women= strongly_disapprove
 	}
 
 	lawgroup_church_and_state = {
@@ -891,6 +893,7 @@ ideology_reformer = {
 		law_women_own_property = approve
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = neutral
+		law_equal_rights_for_women= neutral
 	}
 	
 	lawgroup_childrens_rights = {
@@ -1031,6 +1034,7 @@ ideology_feminist = {
 	
 	lawgroup_rights_of_women = {
 		law_womens_suffrage = strongly_approve
+		law_equal_rights_for_women= strongly_approve
 		law_women_in_the_workplace = neutral
 		law_women_own_property = disapprove
 		law_no_womens_rights = strongly_disapprove
@@ -3880,6 +3884,7 @@ ideology_humanitarian = {
 		law_women_own_property = disapprove
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = approve
+		law_equal_rights_for_women= approve
 	}
 
 	lawgroup_childrens_rights = {
@@ -5074,6 +5079,7 @@ ideology_humanitarian_royalist = {
 		law_women_own_property = disapprove
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = approve
+		law_equal_rights_for_women= approve
 	}
 
 	lawgroup_childrens_rights = {
@@ -5463,6 +5469,7 @@ ideology_utilitarian_leader = {
 		law_women_own_property = neutral
 		law_women_in_the_workplace = approve
 		law_womens_suffrage = strongly_approve
+		law_equal_rights_for_women= strongly_approve
 	}
 	
 	lawgroup_slavery = {

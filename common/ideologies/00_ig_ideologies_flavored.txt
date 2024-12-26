@@ -334,6 +334,7 @@ ideology_russian_patriarch = {
 		law_women_own_property = neutral
 		law_women_in_the_workplace = disapprove
 		law_womens_suffrage = strongly_disapprove
+		law_equal_rights_for_women= strongly_disapprove
 	}
 
 	lawgroup_free_speech = {
@@ -372,6 +373,7 @@ ideology_orthodox_patriarch = {
 		law_women_own_property = neutral
 		law_women_in_the_workplace = disapprove
 		law_womens_suffrage = strongly_disapprove
+		law_equal_rights_for_women= strongly_disapprove
 	}
 
 	lawgroup_free_speech = {
@@ -549,6 +551,7 @@ ideology_oriental_orthodox_patriarch = {
 		law_women_own_property = neutral
 		law_women_in_the_workplace = disapprove
 		law_womens_suffrage = strongly_disapprove
+		law_equal_rights_for_women= strongly_disapprove
 	}
 
 	lawgroup_free_speech = {
@@ -736,6 +739,7 @@ ideology_utilitarian_millian = { # Replaces Malthusian, for the Industrialists
 		law_women_own_property = neutral
 		law_women_in_the_workplace = approve
 		law_womens_suffrage = strongly_approve
+		law_equal_rights_for_women= strongly_approve
 	}
 	
 	lawgroup_slavery = {
