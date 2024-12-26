@@ -190,7 +190,7 @@ pm_consumer_goods_analog_process = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_heavy_machinery_add = 5
+			goods_input_plastic_add = 10
 			goods_input_steel_add = 10
 			goods_input_aluminum_add = 10
 			goods_input_electricity_add = 5
@@ -996,4 +996,8 @@ pm_synthetic_rubber = {
 			building_employment_machinists_add = 1000
 		}
 	}
+}
+
+pm_no_artificial_rubber = {
+	texture = "gfx/interface/icons/production_method_icons/no_artificial_silk.dds"
 }
