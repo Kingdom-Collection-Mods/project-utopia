@@ -75,6 +75,86 @@ highspeed_transport = {
 }
 
 
+modern_economy = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = society
+		
+	modifier = {
+	}
+
+	unlocking_technologies = {
+		macroeconomics
+		modern_financial_instruments
+		mass_surveillance
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+union_trade = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = society
+		
+	modifier = {
+	}
+
+	unlocking_technologies = {
+		modern_economy
+		multilateral_alliances
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+multicultural_globalism = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = society
+		
+	modifier = {
+	}
+
+	unlocking_technologies = {
+		union_trade
+		mass_propaganda
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+privatization = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = society
+		
+	modifier = {
+	}
+
+	unlocking_technologies = {
+		modern_economy
+		zeppelins
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+
+
+
+
+
+
+
 public_universities = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
@@ -93,17 +173,17 @@ public_universities = {
 	}
 }
 
-public_universities_2 = {
+compulsory_secondary_school = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
 	category = society
 		
 	modifier = {
-		country_tech_spread_mult = 0.2
+		country_tech_spread_mult = 0.1
 	}
 
 	unlocking_technologies = {
-		analytical_philosophy
+		behaviorism
 	}
 	
 	ai_weight = {
@@ -111,3 +191,22 @@ public_universities_2 = {
 	}
 }
 
+
+compulsory_tertiary_school = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = society
+		
+	modifier = {
+		country_tech_spread_mult = 0.1
+	}
+
+	unlocking_technologies = {
+		compulsory_secondary_school
+		public_universities
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}

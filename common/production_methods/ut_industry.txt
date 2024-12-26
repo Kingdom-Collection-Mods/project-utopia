@@ -80,7 +80,7 @@ pm_heavy_machinery_digital_process = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 25
+			state_pollution_generation_add = 10
 		}
 	}
 	
@@ -193,9 +193,10 @@ pm_consumer_goods_analog_process = {
 			goods_input_heavy_machinery_add = 5
 			goods_input_steel_add = 10
 			goods_input_aluminum_add = 10
+			goods_input_electricity_add = 5
 			
 			# output goods
-			goods_output_consumer_goods_add = 40
+			goods_output_consumer_goods_add = 60
 		}
 
 		level_scaled = {
@@ -204,6 +205,33 @@ pm_consumer_goods_analog_process = {
 			building_employment_machinists_add = 500
 			building_employment_clerks_add = 500
 			building_employment_service_workers_add = 1000
+		}
+	}
+
+	required_input_goods = electricity
+}
+
+pm_software_one_process = {
+	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
+	
+	state_modifiers = {
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_electricity_add = 10
+			goods_input_computers_add = 20
+			
+			# output goods
+			goods_output_software_add = 40
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_clerks_add = 500
+			building_employment_service_workers_add = 1000
+			building_employment_academics_add = 2000
 		}
 	}
 
@@ -677,7 +705,7 @@ pm_hi_analogue_admin = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_paper_add = 20
+			goods_input_paper_add = 10
 			goods_input_telephones_add = 5
 		}
 
@@ -695,13 +723,13 @@ pm_hi_analogue_admin = {
 pm_hi_connected_admin = {
 	texture = "gfx/interface/icons/production_method_icons/automatic_power_looms.dds"
 	unlocking_technologies = {
-		central_planning
+		electronics
 	}
 
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_paper_add = 5
-			goods_input_telephones_add = 15
+			goods_input_telephones_add = 5
 		}
 
 		level_scaled = {
@@ -717,7 +745,7 @@ pm_hi_connected_admin = {
 pm_hi_digital_admin = {
 	texture = "gfx/interface/icons/production_method_icons/electric_fencing.dds"
 	unlocking_technologies = {
-		central_planning
+		computers
 	}
 	
 	building_modifiers = {
@@ -739,7 +767,7 @@ pm_hi_digital_admin = {
 pm_hi_automated_admin = {
 	texture = "gfx/interface/icons/production_method_icons/steam_donkey.dds"
 	unlocking_technologies = {
-		central_planning
+		internet
 	}
 	
 	building_modifiers = {
@@ -896,7 +924,7 @@ pm_heavy_machinery_oil_fired_plant = {
 pm_supermarket = {
 	texture = "gfx/interface/icons/production_method_icons/skyscraper_trade_nexus.dds"
 	unlocking_technologies = {
-		elevator
+		consumer_goods_main_house_hold_electrical
 	}
 
 	building_modifiers = {
@@ -921,7 +949,7 @@ pm_supermarket = {
 pm_shopping_district = {
 	texture = "gfx/interface/icons/production_method_icons/airship_mooring_post.dds"
 	unlocking_technologies = {
-		elevator
+		consumer_goods_main_entertainment_electrical
 	}
 
 	building_modifiers = {
@@ -943,4 +971,29 @@ pm_shopping_district = {
 	}
 
 	required_input_goods = electricity
+}
+
+pm_synthetic_rubber = {
+	texture = "gfx/interface/icons/production_method_icons/rayon.dds"
+
+	unlocking_technologies = {
+		consumer_goods_main_plastic_revolution
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_oil_add = 10
+
+			# output goods
+			goods_output_dye_add = -10
+			goods_output_rubber_add = 20
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = -1000
+			building_employment_machinists_add = 1000
+		}
+	}
 }

@@ -1,7 +1,7 @@
 ﻿
 building_bauxite_mine = {
 	building_group = bg_bauxite_mining
-	icon = "gfx/interface/icons/building_icons/iron_mine.dds"
+	icon = "gfx/interface/icons/building_icons/bauxite_mine.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium
@@ -21,7 +21,7 @@ building_bauxite_mine = {
 
 building_bauxite_mine_debug = {
 	 building_group = bg_bauxite_mining_debug
-	 icon = "gfx/interface/icons/building_icons/iron_mine.dds"
+	 icon = "gfx/interface/icons/building_icons/bauxite_mine.dds"
 	 city_type = mine
 	 levels_per_mesh = 5
 	 required_construction = construction_cost_very_low
@@ -43,7 +43,7 @@ building_bauxite_mine_debug = {
 
 building_rare_earths_mine = { 
     building_group = bg_rare_earths_mining
-	icon = "gfx/interface/icons/building_icons/coal_mine.dds"
+	icon = "gfx/interface/icons/building_icons/rare_earths_mine.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_high # construction_cost_medium
@@ -63,7 +63,7 @@ building_rare_earths_mine = {
 
 building_rare_earths_mine_debug = { 
     building_group = bg_rare_earths_mining_debug
-	icon = "gfx/interface/icons/building_icons/coal_mine.dds"
+	icon = "gfx/interface/icons/building_icons/rare_earths_mine.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_high # construction_cost_medium
@@ -173,7 +173,7 @@ building_electronic_factory = {
 
 building_heavy_machinery_factory = {
 	building_group = bg_modern_industry
-	icon = "gfx/interface/icons/building_icons/unused/foundries.dds"
+	icon = "gfx/interface/icons/building_icons/heavy_machinery.dds"
 	city_type = city
 	levels_per_mesh = 5
 	
@@ -208,7 +208,7 @@ building_heavy_machinery_factory = {
 
 building_computer_factory = {
 	building_group = bg_modern_industry
-	icon = "gfx/interface/icons/building_icons/skyscraper.dds"
+	icon = "gfx/interface/icons/building_icons/computers.dds"
 	city_type = city
 	levels_per_mesh = 5
 	
@@ -244,7 +244,7 @@ building_computer_factory = {
 
 building_commercial_factory = {
 	building_group = bg_modern_industry
-	icon = "gfx/interface/icons/building_icons/food_industry.dds"
+	icon = "gfx/interface/icons/building_icons/consumer_goods.dds"
 	city_type = city
 	levels_per_mesh = 5
 	
@@ -256,6 +256,41 @@ building_commercial_factory = {
 	
 	production_method_groups = {
 		pmg_consumer_goods_making_process
+		pmg_administration_modern_industry
+		pmg_logistics_modern_industry
+	}
+	
+	required_construction = construction_cost_modern_industry
+
+	possible = {
+		owner = {
+			NOT = { 
+				OR = {
+					has_law = law_type:law_industry_banned 
+					has_law = law_type:law_extraction_economy 
+				}
+			}
+		}
+	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+}
+
+building_software_company = {
+	building_group = bg_modern_industry
+	icon = "gfx/interface/icons/building_icons/unused/foundries.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	ai_nationalization_desire = 0.25 # AI will generally not privatize steel mills due to importance for construction
+
+	unlocking_technologies = {
+		software
+	}
+	
+	production_method_groups = {
+		pmg_software_making_process
 		pmg_administration_modern_industry
 		pmg_logistics_modern_industry
 	}

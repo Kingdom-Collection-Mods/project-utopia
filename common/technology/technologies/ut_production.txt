@@ -1,18 +1,4 @@
-﻿plastics_mass_production = {
-	era = era_6
-	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
-	category = production
-
-	unlocking_technologies = {	
-		plastics
-	}
-	
-	ai_weight = {
-		value = 1
-	}
-}
-
-chemistry = {
+﻿chemistry = {
 	
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"

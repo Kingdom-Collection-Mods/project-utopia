@@ -74,6 +74,12 @@ pmg_consumer_goods_making_process = {
 	}
 }
 
+pmg_software_making_process  = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_software_one_process
+	}
+}
 
 
 
@@ -119,3 +125,11 @@ pmg_logistics_rare_earths_mine = {
 	}
 }
 
+
+pmg_synthetic_rubber = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_artificial_fibers
+		pm_synthetic_rubber
+	}
+}

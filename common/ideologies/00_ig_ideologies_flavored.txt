@@ -305,10 +305,12 @@ ideology_austrian_hegemony = {
 	
 	lawgroup_citizenship = {
 		law_ethnostate = approve
+		law_neo_ethno_state = approve
 		law_national_supremacy = strongly_approve
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = strongly_disapprove
 		law_multicultural = strongly_disapprove	
+		law_multicultural_globalism = strongly_disapprove	
 	}
 }
 
@@ -486,6 +488,7 @@ ideology_sikh_moralist = {
 		law_national_militia = strongly_approve
 		law_mass_conscription = approve
 		law_peasant_levies = neutral
+		law_task_forces = disapprove
 		law_professional_army = strongly_approve
 	}
 }
@@ -502,10 +505,12 @@ ideology_sikh_militancy = {
 
 	lawgroup_citizenship = {
 		law_ethnostate = strongly_disapprove
+		law_neo_ethno_state = strongly_disapprove
 		law_national_supremacy = neutral
 		law_racial_segregation = neutral
 		law_cultural_exclusion = neutral
 		law_multicultural = approve
+		law_multicultural_globalism = approve
 	}
 	
 	lawgroup_army_model = {
@@ -513,6 +518,7 @@ ideology_sikh_militancy = {
 		law_mass_conscription = approve
 		law_national_militia = disapprove
 		law_peasant_levies = disapprove
+		law_task_forces = disapprove
 	}
 	
 	lawgroup_colonization = {
@@ -556,6 +562,8 @@ ideology_oriental_orthodox_patriarch = {
 		law_child_labor_allowed = disapprove
 		law_restricted_child_labor = neutral
 		law_compulsory_primary_school = approve
+		law_compulsory_secondary_school = approve
+		law_compulsory_tertiary_school = approve
 	}
 }
 
@@ -579,10 +587,12 @@ ideology_heavenly_kingdom_theocratic = {
 
 	lawgroup_citizenship = {
 		law_ethnostate = neutral
+		law_neo_ethno_state = neutral
 		law_national_supremacy = approve
 		law_racial_segregation = neutral
 		law_cultural_exclusion = disapprove
 		law_multicultural = strongly_disapprove	
+		law_multicultural_globalism = strongly_disapprove	
 	}
 }
 
@@ -598,6 +608,8 @@ ideology_agrarian_jeffersonian = {
 		law_laissez_faire = disapprove
 		law_command_economy = strongly_disapprove
 		law_extraction_economy = strongly_disapprove
+		law_social_market_economy = approve 
+		law_free_market_economy = strongly_disapprove
 	}
 
 	lawgroup_land_reform = {
@@ -665,10 +677,14 @@ ideology_colonialist = {
 		law_command_economy = strongly_disapprove
 		law_industry_banned = approve
 		law_extraction_economy = strongly_approve
+		law_social_market_economy = strongly_disapprove 
+		law_free_market_economy = strongly_disapprove
 	}
 	
 	lawgroup_trade_policy = {		
 		law_free_trade = approve	
+		law_free_trade_union= neutral
+		law_protectionism_union = neutral
 		law_mercantilism = neutral
 		law_protectionism = disapprove
 		law_isolationism = strongly_disapprove
@@ -701,12 +717,15 @@ ideology_utilitarian_millian = { # Replaces Malthusian, for the Industrialists
 	
 	lawgroup_childrens_rights = {
 		law_compulsory_primary_school = strongly_approve
+		law_compulsory_secondary_school = strongly_approve
+		law_compulsory_tertiary_school = strongly_approve
 		law_restricted_child_labor = neutral	
 		law_child_labor_allowed = neutral
 	}
 
 	lawgroup_education_system = {
 		law_public_schools = approve
+		law_public_university = approve
 		law_private_schools = neutral
 		law_religious_schools = neutral	
 		law_no_schools = disapprove	
@@ -766,10 +785,12 @@ ideology_sovereignist = {
 	
 	lawgroup_citizenship = {
 		law_ethnostate = strongly_disapprove
+		law_neo_ethno_state = strongly_disapprove
 		law_national_supremacy = disapprove
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = neutral
 		law_multicultural = approve	
+		law_multicultural_globalism = approve	
 	}
 }
 
@@ -799,10 +820,12 @@ ideology_enclavist = {
 
 	lawgroup_citizenship = {
 		law_ethnostate = neutral
+		law_neo_ethno_state = neutral
 		law_national_supremacy = approve
 		law_racial_segregation = approve
 		law_cultural_exclusion = disapprove
 		law_multicultural = strongly_disapprove	
+		law_multicultural_globalism = strongly_disapprove	
 	}
 
 	lawgroup_policing = {
@@ -839,6 +862,7 @@ ideology_malthusian = {
 	lawgroup_education_system = {
 		law_private_schools = approve
 		law_public_schools = neutral
+		law_public_university = neutral
 		law_religious_schools = neutral
 		law_no_schools = neutral
 	}

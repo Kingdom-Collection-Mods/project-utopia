@@ -10,8 +10,21 @@ ideology_urbanist_liberalist = {
 		law_privatized_bureaucrats = strongly_approve
 	}
 
+	lawgroup_economic_system = {		
+		law_traditionalism = strongly_disapprove
+		law_agrarianism = strongly_disapprove
+		law_interventionism = disapprove
+		law_industry_banned = strongly_disapprove
+		law_laissez_faire = approve
+		law_cooperative_ownership = strongly_disapprove
+		law_command_economy = strongly_disapprove
+		law_extraction_economy = strongly_disapprove
+		law_social_market_economy = neutral 
+		law_free_market_economy = strongly_approve
+	}
+
 	country_trigger = {
-		always = yes
+		has_technology_researched = privatization
 	}
 
 	interest_group_leader_trigger = {

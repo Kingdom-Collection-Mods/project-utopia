@@ -1,0 +1,13 @@
+﻿task_forces = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = military
+
+	unlocking_technologies = {	
+		mobile_armor
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}

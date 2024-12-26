@@ -41,12 +41,16 @@ ideology_modernizer = {
 		law_isolationism = strongly_disapprove
 		law_mercantilism = disapprove
 		law_free_trade = neutral
+		law_free_trade_union= neutral
+		law_protectionism_union = neutral
 	}
 
 	lawgroup_childrens_rights = {
 		law_child_labor_allowed = disapprove
 		law_restricted_child_labor = neutral
 		law_compulsory_primary_school = approve
+		law_compulsory_secondary_school = approve
+		law_compulsory_tertiary_school = approve
 	}
 
 	lawgroup_economic_system = {
@@ -57,6 +61,8 @@ ideology_modernizer = {
 		law_agrarianism = disapprove
 		law_traditionalism = strongly_disapprove
 		law_laissez_faire = neutral
+		law_social_market_economy = approve
+		law_free_market_economy = neutral
 	}
 }
 
@@ -67,7 +73,9 @@ ideology_liberal_modern = {
 
 	lawgroup_citizenship = {
 		law_multicultural = disapprove
+		law_multicultural_globalism = disapprove
 		law_ethnostate = disapprove
+		law_neo_ethno_state = disapprove
 		law_national_supremacy = disapprove
 		law_racial_segregation = neutral
 		law_cultural_exclusion = approve	
@@ -116,6 +124,8 @@ ideology_egalitarian_modern = {
 	
 	lawgroup_childrens_rights = {
 		law_compulsory_primary_school = strongly_approve
+		law_compulsory_secondary_school = strongly_approve
+		law_compulsory_tertiary_school = strongly_approve
 		law_restricted_child_labor = approve	
 		law_child_labor_allowed = disapprove
 	}
