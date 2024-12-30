@@ -70,7 +70,7 @@ ideology_laissez_faire = {
 		law_command_economy = strongly_disapprove
 		law_industry_banned = strongly_disapprove
 		law_extraction_economy = strongly_disapprove
-		law_social_market_economy = strongly_disapprove 
+		law_social_market_economy = disapprove 
 		law_free_market_economy = approve
 	}
 	
@@ -210,7 +210,7 @@ ideology_oligarchic = {
 		law_religious_schools = disapprove
 		law_no_schools = neutral
 		law_public_schools = approve
-		law_public_university = approve
+		law_public_university = disapprove
 		law_private_schools = approve		
 	}
 
@@ -236,7 +236,7 @@ ideology_pious = {
 		law_religious_schools = approve
 		law_no_schools = neutral
 		law_public_schools = disapprove
-		law_public_university = disapprove
+		law_public_university = strongly_disapprove
 		law_private_schools = disapprove		
 	}	
 }

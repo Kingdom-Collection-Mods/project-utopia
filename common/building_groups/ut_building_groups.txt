@@ -11,7 +11,7 @@
 bg_bauxite_mining = {
 	parent_group = bg_mining
 	category = rural
-	
+
 	default_building = building_bauxite_mine
 
 	can_use_slaves = yes
@@ -26,7 +26,7 @@ bg_bauxite_mining_debug = {
 
 bg_rare_earths_mining = {
 	parent_group = bg_mining
-	category = rural	
+	category = rural
 	
 	default_building = building_rare_earths_mine
 

@@ -1,0 +1,4 @@
+﻿
+movement_support_service_workers = {
+	name = POP_SERVICE_WORKERS
+}

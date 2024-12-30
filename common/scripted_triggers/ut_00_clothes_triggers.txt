@@ -1,0 +1,6 @@
+﻿service_workers_clothes_pop_trigger = {
+	exists = scope:pop
+	scope:pop = {
+	   is_pop_type = service_workers	
+	}   
+}

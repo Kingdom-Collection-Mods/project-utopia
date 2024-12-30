@@ -88,6 +88,18 @@ building_aluminum_factory = {
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_very_high
+
+	possible = {
+		has_building = building_power_plant
+		owner = {
+			NOT = { 
+				OR = {
+					has_law = law_type:law_industry_banned 
+					has_law = law_type:law_extraction_economy 
+				}
+			}
+		}
+	}
 	
 	unlocking_technologies = {
 		aluminum_base
@@ -112,7 +124,7 @@ building_plastic_factory = {
 	ai_nationalization_desire = 0.25 # AI will generally not privatize steel mills due to importance for construction
 
 	unlocking_technologies = {
-		plastics_mass_production
+		plastics_nylon
 	}
 	
 	production_method_groups = {
@@ -123,6 +135,7 @@ building_plastic_factory = {
 	required_construction = construction_cost_very_high
 
 	possible = {
+		has_building = building_power_plant
 		owner = {
 			NOT = { 
 				OR = {
@@ -157,6 +170,7 @@ building_electronic_factory = {
 	required_construction = construction_cost_modern_industry
 
 	possible = {
+		has_building = building_power_plant
 		owner = {
 			NOT = { 
 				OR = {
@@ -192,6 +206,7 @@ building_heavy_machinery_factory = {
 	required_construction = construction_cost_modern_industry
 
 	possible = {
+		has_building = building_power_plant
 		owner = {
 			NOT = { 
 				OR = {
@@ -227,6 +242,7 @@ building_computer_factory = {
 	required_construction = construction_cost_modern_industry
 
 	possible = {
+		has_building = building_power_plant
 		owner = {
 			NOT = { 
 				OR = {
@@ -263,6 +279,7 @@ building_commercial_factory = {
 	required_construction = construction_cost_modern_industry
 
 	possible = {
+		has_building = building_power_plant
 		owner = {
 			NOT = { 
 				OR = {
@@ -298,6 +315,7 @@ building_software_company = {
 	required_construction = construction_cost_modern_industry
 
 	possible = {
+		has_building = building_power_plant
 		owner = {
 			NOT = { 
 				OR = {
@@ -310,4 +328,51 @@ building_software_company = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+}
+
+
+highway = {
+	building_group = bg_private_infrastructure	
+	icon = "gfx/interface/icons/building_icons/building_railway.dds"
+	
+	lens = infrastructure
+	
+	ai_nationalization_desire = 0.5 # AI is reluctant to privatize railways since they are likely to need subsidies anyway
+
+	has_max_level = yes
+	ignore_stateregion_max_level = yes
+
+	unlocking_technologies = { 
+		highways
+	 }
+
+	production_method_groups = {
+		pmg_highway_cars
+		pmg_highway_trucks
+	}
+
+	required_construction = construction_cost_very_high
+	
+	ai_value = {
+		value = 2000 # Highways are great
+	}
+	
+	should_auto_expand = { 
+		occupancy >= 0.8
+		OR = {
+			cash_reserves_ratio > 0.5
+			is_subsidized = yes
+		}
+		OR = {
+			state = {
+				sg:transportation = { 
+					state_goods_pricier > 0.5 
+				}
+			}
+			state.market_access < 1
+		}
+		NOT = { is_under_construction = yes }
+
+	}
+	ownership_type = self
 }

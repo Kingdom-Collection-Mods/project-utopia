@@ -16,6 +16,7 @@ pmg_heavy_machinery_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_heavy_machinery_analog_process
+		pm_heavy_machinery_electronics_process
 		pm_heavy_machinery_digital_process
 	}
 }
@@ -71,6 +72,7 @@ pmg_consumer_goods_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_consumer_goods_analog_process
+		pm_consumer_goods_electrical_process
 	}
 }
 
@@ -100,7 +102,6 @@ pmg_logistics_modern_industry = {
 
 	production_methods = {
 		pm_rail_transport_mine
-		pm_hi_rail_logistics
 		pm_hi_individual_logistics
 		pm_hi_connected_logistics
 	}
@@ -111,7 +112,6 @@ pmg_logistics_bauxite_mine = {
 	production_methods = {
 		pm_road_carts
 		pm_rail_transport_mine
-		pm_hi_rail_logistics
 		pm_hi_individual_logistics
 		pm_hi_connected_logistics
 	}
@@ -120,8 +120,10 @@ pmg_logistics_bauxite_mine = {
 pmg_logistics_rare_earths_mine = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 	production_methods = {
-		pm_no_steam_automation
-		pm_steam_donkey_mine
+		pm_road_carts
+		pm_rail_transport_mine
+		pm_hi_individual_logistics
+		pm_hi_connected_logistics
 	}
 }
 
@@ -131,5 +133,20 @@ pmg_synthetic_rubber = {
 	production_methods = {
 		pm_no_artificial_rubber
 		pm_synthetic_rubber
+		pm_synthetic_rubber_plus
+	}
+}
+
+pmg_highway_cars = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_highway_cars_one
+	}
+}
+pmg_highway_trucks = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_highway_no_trucks
+		pm_highway_trucks
 	}
 }

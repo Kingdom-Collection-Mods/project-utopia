@@ -53,26 +53,26 @@
 		if = {
 			limit = {
 				is_peasant_under_serfdom = no 
-				literacy_rate > 0.2
+				literacy_rate > 0.6
 			}
-			# baseline: ( literacy - 0.2 ) * 5 + ( wealth / 20 ), norm 2.5 for Wealth 20 and Literacy 50%
+			# baseline: ( literacy - 0.26 ) * 10 + ( wealth / 10 ), norm 2.5 for Wealth 20 and Literacy 50%
 			add = {
 				value = literacy_rate
-				subtract = 0.2
+				subtract = 0.6
 				multiply = 10
 				desc = "QUALIFICATIONS_LITERACY_FACTOR"
 			}
 			add = {
 				value = wealth
-				divide = 20
+				divide = 10
 				desc = "QUALIFICATIONS_WEALTH_FACTOR"
 			}
 			if = {
 				limit = {
-					is_pop_type = machinists
+					is_pop_type = shopkeepers
 				}
 				multiply = {
-					value = 5
+					value = 2
 					desc = "QUALIFICATIONS_FAVORED_TYPE"
 				}
 			}
@@ -81,7 +81,16 @@
 					is_pop_type = clerks
 				}
 				multiply = {
-					value = 4
+					value = 2
+					desc = "QUALIFICATIONS_FAVORED_TYPE"
+				}
+			}
+			if = {
+				limit = {
+					is_pop_type = machinists
+				}
+				multiply = {
+					value = 2
 					desc = "QUALIFICATIONS_FAVORED_TYPE"
 				}
 			}

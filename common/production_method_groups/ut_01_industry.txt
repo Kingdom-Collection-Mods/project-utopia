@@ -69,6 +69,7 @@ pmg_base_building_furniture_manufacturies = {
 		pm_handcrafted_furniture
 		pm_lathe
 		pm_mechanized_workshops
+		pm_heavy_machinery_furnite
 	}
 }
 
@@ -197,6 +198,7 @@ pmg_steelmaking_process = {
 		pm_bessemer_process
 		pm_open_hearth_process
 		pm_electric_arc_process
+		pm_automatic_controllers_steel
 	}
 }
 
@@ -226,6 +228,7 @@ pmg_automobile_production = {
 	production_methods = {
 		pm_automobiles_disabled
 		pm_automobile_production
+		pm_truck_production
 		pm_automobile_and_truck_production
 	}
 }
