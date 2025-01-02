@@ -1,0 +1,45 @@
+﻿### See power_bloc_principles for the individual effects
+
+principle_group_modern_trade_league = {
+	unlocking_identity = identity_trade_league
+	levels = {
+		principle_common_financial_policy_1
+		principle_common_financial_policy_2
+		principle_common_financial_policy_3
+	}
+}
+
+principle_group_modern_sovereign_empire = {
+	unlocking_identity = identity_sovereign_empire
+	levels = {
+		principle_commissariat_1
+		principle_commissariat_2
+		principle_commissariat_3
+	}
+}
+
+principle_group_modern_military_treaty_organization = {
+	unlocking_identity = identity_military_treaty_organization
+	levels = {
+		principle_common_financial_policy_1
+		principle_common_financial_policy_2
+		principle_common_financial_policy_3
+	}
+}
+
+principle_group_modern_ideological_union = {
+	unlocking_identity = identity_ideological_union
+	levels = {
+		principle_common_financial_policy_1
+		principle_common_financial_policy_2
+		principle_common_financial_policy_3
+	}
+}
+
+#principle_group_advanced_research = {
+#	levels = {
+#		principle_common_financial_policy_1
+#		principle_common_financial_policy_2
+#		principle_common_financial_policy_3
+#	}
+#}

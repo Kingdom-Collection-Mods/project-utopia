@@ -1,4 +1,5 @@
 ﻿
+
 bauxite_mining = {
 	era = era_5
 	texture = "gfx/interface/icons/invention_icons/shaft_mining.dds"
@@ -37,6 +38,10 @@ chemistry = {
 	unlocking_technologies = {	
 		nitrogen_fixation
 	}
+
+	modifier = {
+		building_explosives_factory_throughput_add = 0.1
+	}
 	
 	ai_weight = {
 		value = 1
@@ -48,6 +53,10 @@ hybrid_crops = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/nitrogen_fixation.dds"
 	category = production
+
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.1
+	}
 
 	unlocking_technologies = {	
 		chemistry
@@ -81,6 +90,10 @@ civilian_planes = {
 	texture = "gfx/interface/icons/invention_icons/military_aviation.dds"
 	category = production
 
+	modifier = {
+		goods_output_aeroplanes_mult = 1.1
+	}
+
 	unlocking_technologies = {	
 		oil_turbine
 	}
@@ -94,6 +107,10 @@ civilian_drones = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/military_aviation.dds"
 	category = production
+
+	modifier = {
+		goods_output_aeroplanes_mult = 1.1
+	}
 
 	unlocking_technologies = {	
 		civilian_planes
@@ -179,6 +196,23 @@ electronics = {
 	}
 }
 
+
+high_tech_computers = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/shift_work.dds"
+	category = production
+	can_research = no
+	
+	modifier = {
+	}
+	
+	unlocking_technologies = {	
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
 
 computers = {
 	era = era_6
@@ -313,7 +347,7 @@ high_yield_crops = {
 	category = production
 
 	modifier = {
-		
+		building_group_bg_agriculture_throughput_add = 0.05
 	}
 
 	unlocking_technologies = {	
@@ -330,6 +364,11 @@ biotechnology = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/nitrogen_fixation.dds"
 	category = production
+
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.05
+		building_group_bg_plantations_throughput_add = 0.1
+	}
 
 	unlocking_technologies = {	
 		high_yield_crops
@@ -529,3 +568,4 @@ plastics_polyester   = {
 		value = 1
 	}
 }
+

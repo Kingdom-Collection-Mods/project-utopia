@@ -1,10 +1,140 @@
-﻿task_forces = {
+﻿heavy_industry_harbor = {
+
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = military
+
+	unlocking_technologies = {	
+		concrete_dockyards
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+task_forces = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
 	category = military
 
 	unlocking_technologies = {	
 		mobile_armor
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+military_rockets_electronic = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = military
+
+	unlocking_technologies = {	
+		chemical_warfare
+		flamethrowers
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+military_rockets_software = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = military
+
+	unlocking_technologies = {	
+		military_rockets_electronic
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+
+light_ships_rockets_base = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = military
+
+	unlocking_technologies = {	
+		battlefleet_tactics
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+heavy_ships_rockets_base = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = military
+
+	unlocking_technologies = {	
+		light_ships_rockets_base
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+light_ships_rockets_software = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = military
+
+	unlocking_technologies = {	
+		heavy_ships_rockets_base
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+
+heavy_ships_rockets_software = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = military
+
+	unlocking_technologies = {	
+		light_ships_rockets_software
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+heavy_ships_rockets_software = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = military
+
+	unlocking_technologies = {	
+		light_ships_rockets_software
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+peace_movement = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = military
+
+	unlocking_technologies = {	
+		task_forces
 	}
 	
 	ai_weight = {

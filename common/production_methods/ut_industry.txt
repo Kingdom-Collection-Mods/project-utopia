@@ -337,6 +337,80 @@ pm_consumer_goods_plastic_process = {
 	required_input_goods = electricity
 }
 
+
+pm_complex_consumer_goods_none = {
+
+}
+
+pm_complex_consumer_goods_electrical_process = {
+	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
+	
+	unlocking_technologies = {
+		consumer_goods_main_entertainment_electrical
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+		}
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+		}
+
+		level_scaled = {
+		}
+	}
+
+	required_input_goods = electricity
+}
+
+pm_complex_consumer_goods_computer_process = {
+	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
+	
+	unlocking_technologies = {
+		consumer_goods_main_digital_products
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+		}
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+		}
+
+		level_scaled = {
+		}
+	}
+
+	required_input_goods = electricity
+}
+
+pm_complex_consumer_goods_software_process = {
+	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
+	
+	unlocking_technologies = {
+		consumer_goods_main_web_products
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+		}
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+		}
+
+		level_scaled = {
+		}
+	}
+
+	required_input_goods = electricity
+}
+
 pm_software_one_process = {
 	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
 	
@@ -477,7 +551,7 @@ pm_computers_micro_chips_process  = {
 	}
 	
 	unlocking_technologies = {
-		software
+		high_tech_computers
 	}
 	
 	building_modifiers = {
@@ -491,13 +565,14 @@ pm_computers_micro_chips_process  = {
 			goods_input_electricity_add = 50
 			
 			# output goods
-			goods_output_computers_add = 200
+			goods_output_computers_add = 400
 		}
 
 		level_scaled = {
 			# employment
-			building_employment_engineers_add = 1000
-			building_employment_service_workers_add = 1000
+			building_employment_academics_add = 500
+			building_employment_engineers_add = 2000
+			building_employment_service_workers_add = 1500
 		}
 	}
 
@@ -824,6 +899,32 @@ pm_rare_earths_one_mine = {
 		level_scaled = {
 			building_employment_shopkeepers_add = 500
 			building_employment_laborers_add = 4500
+		}
+	}
+}
+
+
+pm_rare_earths_two_mine = {
+	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
+
+	unlocking_technologies = {
+		rare_earths_mining_era_digital
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_heavy_machinery_add = 10
+			goods_input_electricity_add = 10
+			
+			# output goods
+			goods_output_rare_earths_add = 40
+		}
+
+		level_scaled = {
+			building_employment_service_workers_add = 500
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 500
 		}
 	}
 }
@@ -1347,6 +1448,7 @@ pm_automatic_controllers_steel = {
 			goods_input_iron_add = 140
 			goods_input_coal_add = 40 
 			goods_input_electricity_add = 40
+			goods_input_computers_add = 10
 			
 			# output goods
 			goods_output_steel_add = 200
@@ -1355,8 +1457,8 @@ pm_automatic_controllers_steel = {
 		level_scaled = {
 			# employment
 			building_employment_service_workers_add = 500
-			building_employment_laborers_add = 2000
-			building_employment_machinists_add = 1500
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 1000
 			building_employment_engineers_add = 1000
 		}
 	}
@@ -1556,6 +1658,51 @@ pm_highway_trucks = {
 		workforce_scaled = {
 			state_market_access_price_impact = 0.01
 			state_pollution_generation_add = 10
+		}
+	}
+}
+
+
+pm_synthetic_oil_one_process = {
+	texture = "gfx/interface/icons/production_method_icons/experimental_trains.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_sugar_add = 20
+			goods_input_electricity_add = 5
+			
+			# output goods
+			goods_output_oil_add = 30 
+		}
+
+		level_scaled = {
+			building_employment_service_workers_add = 500
+			building_employment_laborers_add = 4500
+		}
+	}
+}
+
+pm_synthetic_oil_two_process = {
+	texture = "gfx/interface/icons/production_method_icons/experimental_trains.dds"
+	
+	unlocking_technologies = {
+		plastics_polyester
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_grain_add = 20
+			goods_input_electricity_add = 5
+			
+			# output goods
+			goods_output_oil_add = 30 
+		}
+
+		level_scaled = {
+			building_employment_service_workers_add = 500
+			building_employment_laborers_add = 4500
 		}
 	}
 }

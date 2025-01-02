@@ -307,3 +307,13 @@ building_group_bg_bauxite_mining_employee_mult={
 		ai_value=0
 	}
 }
+
+
+
+country_institution_epa_max_investment_add={
+	decimals=0
+	color=good
+	game_data={
+		ai_value=0
+	}
+}

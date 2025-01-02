@@ -1,0 +1,35 @@
+﻿namespace = utopia_mod
+
+utopia_mod.1 = {
+	type = country_event
+
+	trigger = {
+		NOT = { has_technology_researched = high_tech_computers }
+		has_technology_researched = rare_earths_mining_era_analog
+		has_technology_researched = computers
+		has_global_highest_innovation = yes
+	}
+
+	event_image = {
+		video = "unspecific_trains"
+	}
+
+	duration = 3
+
+	placement = ROOT
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	title = metro.1.t
+	desc = metro.1.d
+	flavor = metro.1.f
+
+
+	option = {
+		name = metro.1.a
+		default_option = yes
+		add_technology_researched = high_tech_computers
+	}
+}

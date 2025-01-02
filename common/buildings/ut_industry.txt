@@ -272,7 +272,7 @@ building_commercial_factory = {
 	
 	production_method_groups = {
 		pmg_consumer_goods_making_process
-		pmg_administration_modern_industry
+		pmg_complex_consumer_goods_making_process
 		pmg_logistics_modern_industry
 	}
 	
@@ -375,4 +375,38 @@ highway = {
 
 	}
 	ownership_type = self
+}
+
+building_synthetic_oil = {
+	building_group = bg_modern_industry
+	icon = "gfx/interface/icons/building_icons/aluminum.dds"
+	city_type = mine
+	levels_per_mesh = 5
+	required_construction = construction_cost_very_high
+
+	possible = {
+		has_building = building_power_plant
+		owner = {
+			NOT = { 
+				OR = {
+					has_law = law_type:law_industry_banned 
+					has_law = law_type:law_extraction_economy 
+				}
+			}
+		}
+	}
+	
+	unlocking_technologies = {
+		plastics_nylon
+	}
+
+
+	production_method_groups = {
+		pmg_synthetic_oil_making_process
+		pmg_logistics_modern_industry
+	}
+	
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
 }
