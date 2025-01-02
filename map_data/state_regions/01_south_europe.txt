@@ -58,7 +58,7 @@ STATE_SARDINIA = {
         bg_iron_mining = 21
         bg_lead_mining = 21
         bg_sulfur_mining = 20
-        bg_bauxite_mining = 20
+        bg_bauxite_mining = 10 
         bg_logging = 11
         bg_fishing = 10
     }
@@ -244,7 +244,7 @@ STATE_TUSCANY = {
     capped_resources = {
         bg_iron_mining = 60
         bg_sulfur_mining = 40
-        bg_bauxite_mining = 40
+        bg_bauxite_mining = 20 
         bg_logging = 11
         bg_fishing = 5
     }
@@ -264,7 +264,7 @@ STATE_ROMAGNA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_sulfur_mining = 48
-        bg_bauxite_mining = 48
+        bg_bauxite_mining = 24 
         bg_logging = 8
         bg_fishing = 6
     }
@@ -305,7 +305,7 @@ STATE_VENETIA = {
     capped_resources = {
         bg_coal_mining = 44
         bg_sulfur_mining = 36
-        bg_bauxite_mining = 36
+        bg_bauxite_mining = 18 
         bg_logging = 7
         bg_fishing = 12
     }
@@ -326,7 +326,7 @@ STATE_SICILY = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_sugar_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_sulfur_mining = 100
-        bg_bauxite_mining = 100
+        bg_bauxite_mining = 50 
         bg_logging = 6
         bg_fishing = 10
     }
@@ -381,7 +381,7 @@ STATE_ASTURIAS = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_gold_mining = 4
-        bg_rare_earths_mining = 4
+        bg_rare_earths_mining = 2 
         bg_coal_mining = 65
         bg_iron_mining = 14
         bg_logging = 5
@@ -499,7 +499,7 @@ STATE_ANDALUSIA = {
     capped_resources = {
         bg_iron_mining = 30
         bg_sulfur_mining = 60
-        bg_bauxite_mining = 60
+        bg_bauxite_mining = 30 
         bg_logging = 4
         bg_fishing = 9
     }
@@ -612,7 +612,7 @@ STATE_ALENTEJO = {
         bg_coal_mining = 28
         bg_iron_mining = 24
         bg_sulfur_mining = 20
-        bg_bauxite_mining = 20
+        bg_bauxite_mining = 10 
         bg_logging = 2
         bg_fishing = 4
     }
@@ -1015,7 +1015,7 @@ STATE_ATTICA = {
     capped_resources = {
         bg_lead_mining = 21
         bg_sulfur_mining = 32
-        bg_bauxite_mining = 32
+        bg_bauxite_mining = 16 
         bg_logging = 7
         bg_fishing = 8
     }

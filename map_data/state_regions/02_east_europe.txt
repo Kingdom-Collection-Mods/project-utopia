@@ -30,7 +30,7 @@ STATE_SILESIA = {
         bg_iron_mining = 60
         bg_lead_mining = 54
         bg_sulfur_mining = 40
-        bg_bauxite_mining = 40
+        bg_bauxite_mining = 20 
         bg_logging = 14
     }
 }
@@ -67,7 +67,7 @@ STATE_LESSER_POLAND = {
         bg_coal_mining = 108
         bg_iron_mining = 32
         bg_sulfur_mining = 32
-        bg_bauxite_mining = 32
+        bg_bauxite_mining = 16 
         bg_logging = 13
     }
 }
@@ -86,7 +86,7 @@ STATE_WEST_PRUSSIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_sulfur_mining = 40
-        bg_bauxite_mining = 40
+        bg_bauxite_mining = 20 
         bg_logging = 8
         bg_fishing = 10
     }
@@ -360,7 +360,7 @@ STATE_WALLACHIA = {
         bg_coal_mining = 68
         bg_iron_mining = 21
         bg_sulfur_mining = 15
-        bg_bauxite_mining = 15
+        bg_bauxite_mining = 8 
         bg_logging = 8
     }
     resource = {
