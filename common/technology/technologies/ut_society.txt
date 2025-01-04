@@ -37,7 +37,7 @@ heavy_machinery_builders = {
 
 
 intercity_transport = {
-	era = era_7
+	era = era_8
 	texture = "gfx/interface/icons/invention_icons/unused/streamliners.dds"
 	category = society
 	
@@ -56,7 +56,7 @@ intercity_transport = {
 }
 
 highspeed_transport = {
-	era = era_7
+	era = era_8
 	texture = "gfx/interface/icons/invention_icons/unused/streamliners.dds"
 	category = society
 		
@@ -94,7 +94,7 @@ early_civil_aviation = {
 }
 
 modern_civil_aviation = {
-	era = era_7
+	era = era_8
 	texture = "gfx/interface/icons/invention_icons/military_aviation.dds"
 	category = society
 		
@@ -202,7 +202,7 @@ food_standards_two = {
 
 food_standards_three = {
 	
-	era = era_7
+	era = era_8
 	texture = "gfx/interface/icons/invention_icons/pan_nationalism.dds"
 	category = society
 		
@@ -260,7 +260,7 @@ epa_two = {
 
 epa_three = {
 	
-	era = era_7
+	era = era_8
 	texture = "gfx/interface/icons/invention_icons/pan_nationalism.dds"
 	category = society
 		
@@ -279,7 +279,7 @@ epa_three = {
 }
 
 multicultural_globalism = {
-	era = era_7
+	era = era_8
 	texture = "gfx/interface/icons/invention_icons/civilizing_mission.dds"
 	category = society
 		
@@ -296,7 +296,7 @@ multicultural_globalism = {
 }
 
 privatization = {
-	era = era_7
+	era = era_8
 	texture = "gfx/interface/icons/invention_icons/currency_standards.dds"
 	category = society
 		
@@ -314,7 +314,7 @@ privatization = {
 }
 
 building_society_savings = {
-	era = era_7
+	era = era_8
 	texture = "gfx/interface/icons/invention_icons/currency_standards.dds"
 	category = society
 		
@@ -388,7 +388,7 @@ feminism_2 = {
 }
 
 feminism_3 = {
-	era = era_7
+	era = era_8
 	texture = "gfx/interface/icons/invention_icons/academia.dds"
 	category = society
 		
@@ -444,7 +444,7 @@ compulsory_secondary_school = {
 
 
 compulsory_tertiary_school = {
-	era = era_7
+	era = era_8
 	texture = "gfx/interface/icons/invention_icons/academia.dds"
 	category = society
 		
