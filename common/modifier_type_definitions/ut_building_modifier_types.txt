@@ -155,6 +155,15 @@ goods_output_trucks_add={
 	}
 }
 
+goods_output_trucks_mult={
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
 goods_input_trucks_add={
 	decimals=1
 	color=bad
