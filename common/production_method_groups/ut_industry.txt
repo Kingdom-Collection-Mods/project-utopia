@@ -32,6 +32,7 @@ pmg_plastic_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_plastic_one_process
+		pm_plastic_two_process
 	}
 }
 
@@ -48,6 +49,7 @@ pmg_aluminum_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_aluminum_one_process
+		pm_aluminum_two_process
 	}
 }
 
@@ -74,13 +76,14 @@ pmg_consumer_goods_making_process = {
 	production_methods = {
 		pm_consumer_goods_analog_process
 		pm_consumer_goods_electrical_process
+		pm_consumer_goods_plastic_process
 	}
 }
 
 pmg_complex_consumer_goods_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
-		pm_complex_consumer_goods_none
+		pm_no_artificial_rubber
 		pm_complex_consumer_goods_electrical_process
 		pm_complex_consumer_goods_computer_process
 		pm_complex_consumer_goods_software_process
