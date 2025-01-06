@@ -193,6 +193,9 @@ pm_plastic_one_process = {
 }
 
 pm_plastic_two_process = {
+	unlocking_technologies = {
+		consumer_goods_main_plastic_revolution
+	}
 	texture = "gfx/interface/icons/production_method_icons/ammonia_soda_process.dds"
 	
 	state_modifiers = {
@@ -482,6 +485,9 @@ pm_software_one_process = {
 
 pm_electronics_circuits_process = {
 	texture = "gfx/interface/icons/production_method_icons/electric_sewing_machines.dds"
+	unlocking_technologies = {
+		
+	}
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -513,6 +519,9 @@ pm_electronics_circuits_process = {
 
 pm_electronics_transistors_process = {
 	texture = "gfx/interface/icons/production_method_icons/electric_sewing_machines.dds"
+	unlocking_technologies = {
+		computers	
+	}
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -542,40 +551,12 @@ pm_electronics_transistors_process = {
 	required_input_goods = electricity
 }
 
-
-pm_electronics_transistors_process = {
-	texture = "gfx/interface/icons/production_method_icons/electric_sewing_machines.dds"
-	
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 20
-		}
-	}
-	
-	building_modifiers = {
-		workforce_scaled = {
-			# input goods
-			goods_input_plastic_add = 5
-			goods_input_explosives_add = 10 
-			goods_input_electricity_add = 30
-			
-			# output goods
-			goods_output_electronics_add = 50
-		}
-
-		level_scaled = {
-			# employment
-			building_employment_machinists_add = 250
-			building_employment_engineers_add = 250
-			building_employment_service_workers_add = 250
-		}
-	}
-
-	required_input_goods = electricity
-}
 
 pm_electronics_micro_chips_process = {
 	texture = "gfx/interface/icons/production_method_icons/electric_sewing_machines.dds"
+	unlocking_technologies = {
+		software_motors_production
+	}
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -1124,12 +1105,16 @@ pm_aluminum_one_process = {
 
 pm_aluminum_two_process = {
 	texture = "gfx/interface/icons/production_method_icons/diesel_engines.dds"
+	unlocking_technologies = {
+		heavy_machinery_industry
+	}
 
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_bauxite_add = 40
 			goods_input_electricity_add = 40
+			goods_input_heavy_machinery_add = 1
 			
 			# output goods
 			goods_output_aluminum_add = 120
@@ -1768,7 +1753,7 @@ pm_heavy_machinery_furnite = {
 
 		level_scaled = {
 			building_employment_service_workers_add = 500
-			building_employment_laborers_add = 3000
+			building_employment_laborers_add = 1000
 			building_employment_machinists_add = 1250
 			building_employment_engineers_add = 750
 		}

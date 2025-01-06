@@ -60,6 +60,7 @@ pmg_automation_building_textile_mills = {
 		pm_traditional_looms
 		pm_mechanized_looms
 		pm_automatic_power_looms
+		pm_heavy_machinery_textile
 	}
 }
 

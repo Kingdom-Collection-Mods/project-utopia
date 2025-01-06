@@ -229,3 +229,5 @@
  pm_consumer_goods_plastic_process:0 "Plastic Consumer Goods"
  pm_synthetic_oil_one_process:0 "Synth Oil I"
  pm_synthetic_oil_two_process:0 "Synth Oil II"
+ building_synthetic_oil: "Oil Refinery"
+ pm_heavy_machinery_textile: "Textile Machines"
