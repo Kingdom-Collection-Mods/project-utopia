@@ -19,7 +19,7 @@ bg_bauxite_mining = {
 
 bg_bauxite_mining_debug = {
 	parent_group = bg_manufacturing
-	category = rural	
+	category = urban
 	
 	lens = mine
 }
@@ -35,7 +35,7 @@ bg_rare_earths_mining = {
 
 bg_rare_earths_mining_debug = {
 	parent_group = bg_manufacturing
-	category = rural
+	category = urban
 	
 	#default_building = building_bauxite_mine
 	

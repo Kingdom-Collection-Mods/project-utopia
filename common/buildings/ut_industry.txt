@@ -259,7 +259,7 @@ building_computer_factory = {
 
 
 building_commercial_factory = {
-	building_group = bg_modern_industry
+	building_group = bg_heavy_industry
 	icon = "gfx/interface/icons/building_icons/consumer_goods.dds"
 	city_type = city
 	levels_per_mesh = 5
@@ -397,7 +397,7 @@ building_synthetic_oil = {
 	}
 	
 	unlocking_technologies = {
-		plastics_nylon
+		oil_synthetic_one
 	}
 
 

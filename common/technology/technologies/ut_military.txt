@@ -114,19 +114,6 @@ heavy_ships_rockets_software = {
 	}
 }
 
-heavy_ships_rockets_software = {
-	era = era_8
-	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
-	category = military
-
-	unlocking_technologies = {	
-		light_ships_rockets_software
-	}
-	
-	ai_weight = {
-		value = 1
-	}
-}
 
 peace_movement = {
 	era = era_8
