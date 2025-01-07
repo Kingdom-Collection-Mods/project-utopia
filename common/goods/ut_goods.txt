@@ -51,7 +51,7 @@ rare_earths = {
 
 computers = {
 	texture = "gfx/interface/icons/goods_icons/computers.dds"
-	cost = 150
+	cost = 100
 	category = industrial
 	
 	prestige_factor = 5

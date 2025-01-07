@@ -4,6 +4,7 @@
 		pm_bakery
 		pm_sweeteners
 		pm_baking_powder
+		pm_pre_baked_dough_pieces
 	}
 }
 
@@ -15,6 +16,8 @@ pmg_canning = {
 		pm_cannery_fish
 		pm_vacuum_canning
 		pm_vacuum_canning_principle_3
+		pm_aluminum_packaging
+		pm_plastic_packaging
 	}
 }
 
@@ -42,6 +45,7 @@ pmg_base_building_textile_mills = {
 		pm_dye_workshops
 		pm_sewing_machines
 		pm_electric_sewing_machines
+		pm_heavy_machinery_textile
 	}
 }
 
@@ -60,7 +64,6 @@ pmg_automation_building_textile_mills = {
 		pm_traditional_looms
 		pm_mechanized_looms
 		pm_automatic_power_looms
-		pm_heavy_machinery_textile
 	}
 }
 

@@ -26,6 +26,7 @@ pmg_harvesting_process_building_rye_farm = {
 		pm_steam_threshers
 		pm_tractors
 		pm_compression_ignition_tractors
+		pm_farms_heavy_machinery_support
 		pm_farms_plane_support
 		pm_farms_drone_support
 	}
@@ -58,6 +59,7 @@ pmg_harvesting_process_building_wheat_farm = {
 		pm_steam_threshers
 		pm_tractors
 		pm_compression_ignition_tractors
+		pm_farms_heavy_machinery_support
 		pm_farms_plane_support
 		pm_farms_drone_support
 	}
@@ -88,6 +90,7 @@ pmg_harvesting_process_building_rice_farm = {
 		pm_tools_disabled
 		pm_tools_building_rice_farm
 		pm_steam_threshers_building_rice_farm
+		pm_farms_heavy_machinery_support_rice
 		pm_farms_plane_support_rice
 		pm_farms_drone_support_rice
 	}
@@ -120,6 +123,7 @@ pmg_harvesting_process_building_maize_farm = {
 		pm_steam_threshers
 		pm_tractors
 		pm_compression_ignition_tractors
+		pm_farms_heavy_machinery_support
 		pm_farms_plane_support
 		pm_farms_drone_support
 	}
@@ -152,6 +156,7 @@ pmg_harvesting_process_building_millet_farm = {
 		pm_steam_threshers
 		pm_tractors
 		pm_compression_ignition_tractors
+		pm_farms_heavy_machinery_support
 		pm_farms_plane_support
 		pm_farms_drone_support
 	}
