@@ -13,6 +13,9 @@ $destinationFile = "$originalDir\production_methods.txt"
 
 # Move the file to the original directory
 if (Test-Path $sourceFile) {
+    if (Test-Path $destinationFile) {
+        Remove-Item -Path $destinationFile -Force
+    }
     Move-Item -Path $sourceFile -Destination $destinationFile
     Write-Host "File moved to $destinationFile"
 } else {
