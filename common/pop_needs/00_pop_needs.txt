@@ -162,7 +162,7 @@ popneed_household_items = {
 	entry = {
 		goods = consumer_goods
 
-		weight = 0.5
+		weight = 1
 		max_supply_share = 0.25
 		min_supply_share = 0.0
 	}
@@ -291,15 +291,15 @@ popneed_communication = {
 	entry = {
 		goods = computers
 		
-		weight = 2
-		max_supply_share = 1.0
+		weight = 1
+		max_supply_share = 0.75
 		min_supply_share = 0.0
 	}
 
 	entry = {
 		goods = internet
 		
-		weight = 2
+		weight = 1
 		max_supply_share = 0.75
 		min_supply_share = 0.0
 	}
@@ -375,6 +375,15 @@ popneed_luxury_items = {
 		max_supply_share = 0.5
 		min_supply_share = 0.0
 	}
+
+		
+	entry = {
+		goods = consumer_goods
+
+		weight = 0.5
+		max_supply_share = 0.25
+		min_supply_share = 0.0
+	}
 }
 
 popneed_leisure = {
@@ -421,6 +430,14 @@ popneed_leisure = {
 	}
 	
 	entry = {
+		goods = trucks
+		
+		weight = 0.5
+		max_supply_share = 0.5
+		min_supply_share = 0.0
+	}
+	
+	entry = {
 		goods = radios
 		
 		weight = 1
@@ -457,15 +474,14 @@ popneed_leisure = {
 
 		weight = 1.5
 		max_supply_share = 1
-		min_supply_share = 0.0
+		min_supply_share = 0.05
 	}
-	
-	
+
 	entry = {
-		goods = computers
-		
-		weight = 1
-		max_supply_share = 0.25
+		goods = software
+
+		weight = 0.75
+		max_supply_share = 0.5
 		min_supply_share = 0.0
 	}
 }
