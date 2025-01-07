@@ -24,7 +24,7 @@ ideology_urbanist_liberalist = {
 	}
 
 	country_trigger = {
-		has_technology_researched = privatization
+		has_technology_researched = credit_cards
 	}
 
 	interest_group_leader_trigger = {
