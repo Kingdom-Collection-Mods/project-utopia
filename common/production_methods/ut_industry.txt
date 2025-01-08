@@ -1094,10 +1094,11 @@ pm_aluminum_one_process = {
 		workforce_scaled = {
 			# input goods
 			goods_input_bauxite_add = 40
-			goods_input_electricity_add = 40
+			goods_input_electricity_add = 5
+			#todo after beta rework, so ai also builds this, it wont if electricity is high
 			
 			# output goods
-			goods_output_aluminum_add = 60
+			goods_output_aluminum_add = 50
 		}
 
 		level_scaled = {
@@ -1920,7 +1921,7 @@ pm_synthetic_oil_one_process = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_sugar_add = 15
+			goods_input_sugar_add = 30
 			goods_input_electricity_add = 5
 			
 			# output goods
@@ -1946,7 +1947,7 @@ pm_synthetic_oil_two_process = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_grain_add = 20
+			goods_input_grain_add = 40
 			goods_input_electricity_add = 5
 			
 			# output goods

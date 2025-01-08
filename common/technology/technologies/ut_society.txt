@@ -1,12 +1,12 @@
 ﻿##Infrastructure
-highways = {
+highway_projects = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
 	category = society
 	
 	modifier = {
 		state_infrastructure_from_population_max_add = 20
-		state_building_highway_max_level_add = 5
+		state_building_highways_max_level_add = 5
 	}
 	
 	unlocking_technologies = {	
@@ -28,7 +28,7 @@ heavy_machinery_builders = {
 	}
 
 	unlocking_technologies = {	
-		highways
+		highway_projects
 	}
 	
 	ai_weight = {

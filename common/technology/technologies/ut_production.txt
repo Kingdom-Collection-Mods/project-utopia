@@ -66,7 +66,7 @@ chemistry = {
 hybrid_crops = {
 	
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/nitrogen_fixation.dds"
+	texture = "gfx/interface/icons/invention_icons/improved_fertilizer.dds"
 	category = production
 
 	modifier = {
@@ -85,7 +85,7 @@ hybrid_crops = {
 high_yield_crops = {
 	
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/nitrogen_fixation.dds"
+	texture = "gfx/interface/icons/invention_icons/improved_fertilizer.dds"
 	category = production
 
 	modifier = {
@@ -203,7 +203,7 @@ heavy_machinery_era_web = {
 
 heavy_machinery_industry = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/hydraulic_cranes.dds"
+	texture = "gfx/interface/icons/invention_icons/electric_arc_process.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -354,7 +354,7 @@ software = {
 
 computers_steel_production = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/hydraulic_cranes.dds"
+	texture = "gfx/interface/icons/invention_icons/electric_arc_process.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -369,7 +369,7 @@ computers_steel_production = {
 electronics_motors_production = {
 	
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/hydraulic_cranes.dds"
+	texture = "gfx/interface/icons/invention_icons/combustion_engine.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -388,7 +388,7 @@ electronics_motors_production = {
 heavy_machinery_mining_production = {
 
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	texture = "gfx/interface/icons/invention_icons/hydraulic_cranes.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -423,7 +423,7 @@ internet = {
 software_motors_production = {
 	
 	era = era_8
-	texture = "gfx/interface/icons/invention_icons/hydraulic_cranes.dds"
+	texture = "gfx/interface/icons/invention_icons/electric_arc_process.dds"
 	category = production
 
 	unlocking_technologies = {	
