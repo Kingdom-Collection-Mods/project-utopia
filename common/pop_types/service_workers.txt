@@ -48,24 +48,28 @@
 		}		
 	}
 	
-	qualifications_growth_desc = "ENGINEERS_QUALIFICATIONS_DESC"
+	qualifications_growth_desc = "SERVICE_WORKERS_QUALIFICATIONS_DESC"
 	qualifications = {
 		if = {
 			limit = {
 				is_peasant_under_serfdom = no 
-				literacy_rate > 0.6
+				wealth > 10
+				literacy_rate > 0.8
 			}
-			# baseline: ( literacy - 0.26 ) * 10 + ( wealth / 10 ), norm 2.5 for Wealth 20 and Literacy 50%
-			add = {
-				value = literacy_rate
-				subtract = 0.6
-				multiply = 10
-				desc = "QUALIFICATIONS_LITERACY_FACTOR"
-			}
+			# baseline: ( wealth - 10 ) / 10 + (( literacy - 80 ) * 20 ), norm 5 for Wealth 20 and Literacy 100%
+			#TODO Check if the ai manages literacy rate
+			
 			add = {
 				value = wealth
+				subtract = 10
 				divide = 10
 				desc = "QUALIFICATIONS_WEALTH_FACTOR"
+			}
+			add = {
+				value = literacy_rate
+				subtract = 80
+				multiply = 20
+				desc = "QUALIFICATIONS_LITERACY_FACTOR"
 			}
 			if = {
 				limit = {
@@ -81,17 +85,22 @@
 					is_pop_type = clerks
 				}
 				multiply = {
-					value = 2
+					value = 3
 					desc = "QUALIFICATIONS_FAVORED_TYPE"
 				}
 			}
 			if = {
 				limit = {
-					is_pop_type = machinists
+					state = {
+						state_cultural_acceptance = {  
+							target = PREV.culture
+						   	value < acceptance_status_4 
+					   	}
+					}
 				}
 				multiply = {
-					value = 2
-					desc = "QUALIFICATIONS_FAVORED_TYPE"
+					value = 0.1
+					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
 				}
 			}
 		}
@@ -107,7 +116,7 @@
 		else = {		
 			value = {
 				desc = "QUALIFICATIONS_INSUFFICIENT_LITERACY_DECAY"
-				value = -2
+				value = -1
 			}
 		}
 	}
