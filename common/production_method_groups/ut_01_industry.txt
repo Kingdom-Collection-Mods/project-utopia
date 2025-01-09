@@ -55,6 +55,7 @@ pmg_luxury_building_textile_mills = {
 		pm_no_luxury_clothes
 		pm_craftsman_sewing
 		pm_elastics
+		pm_elastics_two
 	}
 }
 
