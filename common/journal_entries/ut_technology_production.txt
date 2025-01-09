@@ -1,0 +1,409 @@
+﻿je_bauxite_mine = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		is_player = yes
+		NOT = { has_variable = bauxite_mine_je_done }
+		any_scope_state = {
+			has_potential_resource = bg_bauxite_mining
+		}
+	}
+
+	possible = {
+		has_technology_researched = bauxite_mining
+		any_scope_building = {
+			is_building_type = building_bauxite_mine
+		}
+	}
+
+	complete = {
+		any_scope_building = {
+			is_building_type = building_bauxite_mine
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+			occupancy >= 0.5
+			level >= 5
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = production_tech_events.1 }
+		set_variable = {
+			name = bauxite_mine_je_done
+		}
+	}
+
+	timeout = 3650
+}
+
+je_rare_earths_mine = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		is_player = yes
+		NOT = { has_variable = rubber_je_done }
+		any_scope_state = {
+			has_potential_resource = bg_rubber
+		}
+	}
+
+	possible = {
+		has_technology_researched = rubber_mastication
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+		}
+	}
+
+	complete = {
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+			occupancy >= 0.5
+			level >= 5
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = production_tech_events.1 }
+		set_variable = {
+			name = rubber_je_done
+		}
+	}
+
+	timeout = 3650
+}
+
+
+je_aluminum_production = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		is_player = yes
+		NOT = { has_variable = rubber_je_done }
+		any_scope_state = {
+			has_potential_resource = bg_rubber
+		}
+	}
+
+	possible = {
+		has_technology_researched = rubber_mastication
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+		}
+	}
+
+	complete = {
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+			occupancy >= 0.5
+			level >= 5
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = production_tech_events.1 }
+		set_variable = {
+			name = rubber_je_done
+		}
+	}
+
+	timeout = 3650
+}
+
+je_plastic_production = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		is_player = yes
+		NOT = { has_variable = rubber_je_done }
+		any_scope_state = {
+			has_potential_resource = bg_rubber
+		}
+	}
+
+	possible = {
+		has_technology_researched = rubber_mastication
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+		}
+	}
+
+	complete = {
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+			occupancy >= 0.5
+			level >= 5
+		}
+	}
+
+	on_complete = {
+		set_variable = {
+			name = rubber_je_done
+		}
+		building
+	}
+
+	on_timeout = {
+		random_state = {
+			create_building={
+				building="building_rubber_plantation"
+			}
+		}
+	}
+
+	timeout = 3650
+}
+
+je_heavy_machinery_production = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		is_player = yes
+		NOT = { has_variable = rubber_je_done }
+		any_scope_state = {
+			has_potential_resource = bg_rubber
+		}
+	}
+
+	possible = {
+		has_technology_researched = rubber_mastication
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+		}
+	}
+
+	complete = {
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+			occupancy >= 0.5
+			level >= 5
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = production_tech_events.1 }
+		set_variable = {
+			name = rubber_je_done
+		}
+	}
+
+	timeout = 3650
+}
+
+
+je_electronics_production = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		is_player = yes
+		NOT = { has_variable = rubber_je_done }
+		any_scope_state = {
+			has_potential_resource = bg_rubber
+		}
+	}
+
+	possible = {
+		has_technology_researched = rubber_mastication
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+		}
+	}
+
+	complete = {
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+			occupancy >= 0.5
+			level >= 5
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = production_tech_events.1 }
+		set_variable = {
+			name = rubber_je_done
+		}
+	}
+
+	timeout = 3650
+}
+
+je_computer_production = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		is_player = yes
+		NOT = { has_variable = rubber_je_done }
+		any_scope_state = {
+			has_potential_resource = bg_rubber
+		}
+	}
+
+	possible = {
+		has_technology_researched = rubber_mastication
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+		}
+	}
+
+	complete = {
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+			occupancy >= 0.5
+			level >= 5
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = production_tech_events.1 }
+		set_variable = {
+			name = rubber_je_done
+		}
+	}
+
+	timeout = 3650
+}
+
+je_trucks_production = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		is_player = yes
+		NOT = { has_variable = rubber_je_done }
+		any_scope_state = {
+			has_potential_resource = bg_rubber
+		}
+	}
+
+	possible = {
+		has_technology_researched = rubber_mastication
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+		}
+	}
+
+	complete = {
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+			occupancy >= 0.5
+			level >= 5
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = production_tech_events.1 }
+		set_variable = {
+			name = rubber_je_done
+		}
+	}
+
+	timeout = 3650
+}
+
+je_research_high_tech_computer = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		is_player = yes
+		NOT = { has_variable = rubber_je_done }
+		any_scope_state = {
+			has_potential_resource = bg_rubber
+		}
+	}
+
+	possible = {
+		has_technology_researched = rubber_mastication
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+		}
+	}
+
+	complete = {
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+			occupancy >= 0.5
+			level >= 5
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = production_tech_events.1 }
+		set_variable = {
+			name = rubber_je_done
+		}
+	}
+
+	timeout = 3650
+}
+
+je_consumer_goods_production = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		is_player = yes
+		NOT = { has_variable = rubber_je_done }
+		any_scope_state = {
+			has_potential_resource = bg_rubber
+		}
+	}
+
+	possible = {
+		has_technology_researched = rubber_mastication
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+		}
+	}
+
+	complete = {
+		any_scope_building = {
+			is_building_type = building_rubber_plantation
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+			occupancy >= 0.5
+			level >= 5
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = production_tech_events.1 }
+		set_variable = {
+			name = rubber_je_done
+		}
+	}
+
+	timeout = 3650
+}
