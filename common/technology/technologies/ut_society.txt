@@ -1,4 +1,4 @@
-﻿##Infrastructure
+##Infrastructure
 highway_projects = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
@@ -329,7 +329,7 @@ union_trade = {
 }
 
 
-union_new_mandates2 = {
+union_new_mandates_two = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/pan_nationalism.dds"
 	category = society
