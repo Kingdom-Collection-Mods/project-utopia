@@ -45,8 +45,8 @@ building_electrics_industry = {
 
 	production_method_groups = {
 		pmg_telephones_category
-		pmg_electronics_making_process
 		pmg_radios_category
+		pmg_electronics_making_process
 	}
 	
 	required_construction = construction_cost_very_high

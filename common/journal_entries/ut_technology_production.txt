@@ -153,7 +153,6 @@ je_plastic_production = {
 		set_variable = {
 			name = rubber_je_done
 		}
-		building
 	}
 
 	on_timeout = {
