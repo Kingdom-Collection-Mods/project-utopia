@@ -1,0 +1,221 @@
+# Heavy Machinery
+utopia.journal.prod.heavy_industrial_machinery_je.success = {
+	type = country_event
+	event_image = { video = "factory_precision" }
+	
+	option = {
+		name = utopia.yes
+		add_modifier = {
+			name = manufacturing_efficiency
+			months = normal_modifier_time
+		}
+	}
+	
+	option = {
+		name = utopia.no
+		add_modifier = {
+			name = factory_construction_cost
+			months = normal_modifier_time
+		}
+	}
+}
+
+# CNC Machines Event
+utopia.journal.prod.cnc_machines_je.success = {
+	type = country_event
+	event_image = { video = "factory_precision" }
+	
+	option = {
+		name = utopia.journal.prod.103.a
+		add_modifier = {
+			name = manufacturing_efficiency
+			months = normal_modifier_time
+		}
+	}
+	
+	option = {
+		name = utopia.journal.prod.103.b
+		add_modifier = {
+			name = factory_construction_cost
+			months = normal_modifier_time
+		}
+	}
+}
+
+# Heavy Tractors Event
+utopia.journal.prod.heavy_tractors_je = {
+	type = country_event
+	trigger = { }
+	event_image = { video = "agriculture_tractors" }
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	option = {
+		name = utopia.journal.prod.heavy_tractors_je.a
+		add_modifier = {
+			name = agricultural_mechanization
+			months = normal_modifier_time
+		}
+	}
+	
+	option = {
+		name = utopia.journal.prod.heavy_tractors_je.b
+		add_modifier = {
+			name = tractor_export_boom
+			months = normal_modifier_time
+		}
+	}
+}
+
+# Agrarian Planes Event
+utopia.journal.prod.agrarian_planes_je = {
+	type = country_event
+	event_image = { video = "crop_dusting_planes" }
+
+	option = {
+		name = utopia.journal.prod.agrarian_planes_je.a
+		add_modifier = {
+			name = plantation_throughput
+			months = normal_modifier_time
+		}
+	}
+	
+	option = {
+		name = utopia.journal.prod.agrarian_planes_je.b
+		add_modifier = {
+			name = aviation_industry_throughput
+			months = normal_modifier_time
+		}
+	}
+}
+
+# Plastic Revolution Event
+utopia.journal.prod.plastic_je = {
+	type = country_event
+	event_image = { video = "plastic_production" }
+	
+	option = {
+		name = utopia.journal.prod.plastic_je.a
+		add_modifier = {
+			name = chemical_industry_throughput
+			months = normal_modifier_time
+		}
+	}
+	
+	option = {
+		name = utopia.journal.prod.plastic_je.b
+		add_modifier = {
+			name = consumer_goods_demand
+			months = normal_modifier_time
+		}
+	}
+}
+
+# Electronics Boom Event
+utopia.journal.prod.electronics_je = {
+	type = country_event
+	event_image = { video = "electronics_factory" }
+	
+	option = {
+		name = utopia.journal.prod.electronics_je.a
+		add_modifier = {
+			name = innovation_spread
+			months = normal_modifier_time
+		}
+	}
+	
+	option = {
+		name = utopia.journal.prod.electronics_je.b
+		add_modifier = {
+			name = electronics_export_revenue
+			months = normal_modifier_time
+		}
+	}
+}
+
+# Computer Age Event
+utopia.journal.prod.computers_je = {
+	type = country_event
+	event_image = { video = "computer_lab" }
+	
+	option = {
+		name = utopia.journal.prod.computers_je.a
+		add_modifier = {
+			name = administrative_efficiency
+			months = normal_modifier_time
+		}
+	}
+	
+	option = {
+		name = utopia.journal.prod.computers_je.b
+		add_modifier = {
+			name = consumer_electronics_demand
+			months = normal_modifier_time
+		}
+	}
+}
+
+# Software Revolution Event
+utopia.journal.prod.software_je = {
+	type = country_event
+	event_image = { video = "software_development" }
+	
+	option = {
+		name = utopia.journal.prod.software_je.a
+		add_modifier = {
+			name = research_speed
+			months = normal_modifier_time
+		}
+	}
+	
+	option = {
+		name = utopia.journal.prod.software_je.b
+		add_modifier = {
+			name = automation_throughput
+			months = normal_modifier_time
+		}
+	}
+}
+
+# Consumer Goods - Simple
+utopia.journal.prod.consumer_goods_simple_je = {
+	type = country_event
+	event_image = { video = "consumer_goods" }
+	
+	option = {
+		name = utopia.journal.prod.consumer_goods_simple_je.a
+		add_modifier = {
+			name = standard_of_living_add
+			months = normal_modifier_time
+		}
+	}
+	
+	option = {
+		name = utopia.journal.prod.consumer_goods_simple_je.b
+		add_modifier = {
+			name = domestic_trade_revenue
+			months = normal_modifier_time
+		}
+	}
+}
+
+# Consumer Goods - Complex
+utopia.journal.prod.consumer_goods_complex_je = {
+	type = country_event
+	event_image = { video = "luxury_electronics" }
+	
+	option = {
+		name = utopia.journal.prod.consumer_goods_complex_je.a
+		add_modifier = {
+			name = luxury_goods_demand
+			months = normal_modifier_time
+		}
+	}
+	
+	option = {
+		name = utopia.journal.prod.consumer_goods_complex_je.b
+		add_modifier = {
+			name = international_trade_power
+			months = normal_modifier_time
+		}
+	}
+}

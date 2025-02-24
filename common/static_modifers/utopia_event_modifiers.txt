@@ -1,0 +1,118 @@
+﻿# Heavy Tractors
+agricultural_mechanization = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_tractor.dds"
+	building_rye_farm_throughput_add = 0.15
+	building_wheat_farm_throughput_add = 0.15
+	building_maize_farm_throughput_add = 0.15
+	building_livestock_ranch_throughput_add = 0.15
+}
+
+tractor_export_boom = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_trade.dds" 
+	export_throughput_add = 0.20
+	trade_route_competitiveness = 0.15
+}
+
+# Agrarian Planes
+plantation_throughput = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_plantation.dds"
+	building_cotton_plantation_throughput_add = 0.25
+	building_coffee_plantation_throughput_add = 0.25
+	building_opium_plantation_throughput_add = 0.25
+}
+
+aviation_industry_throughput = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_airplane.dds"
+	building_motor_industries_throughput_add = 0.30
+	aeroplane_production_efficiency = 0.20
+}
+
+# CNC Machines
+manufacturing_efficiency = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_gear_precision.dds"
+	factory_throughput_add = 0.25
+	production_efficiency_growth = 0.10
+}
+
+factory_construction_cost = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_construction.dds"
+	factory_construction_cost_mult = -0.15
+	infrastructure_construction_speed = 0.20
+}
+
+# Plastic Revolution
+chemical_industry_throughput = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_beaker.dds"
+	building_chemical_plant_throughput_add = 0.35
+	petrochemicals_production_efficiency = 0.25
+}
+
+consumer_goods_demand = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_shopping.dds"
+	consumer_goods_demand_mult = 0.25
+	middle_class_political_strength = 0.15
+}
+
+# Electronics Boom
+innovation_spread = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_bulb.dds"
+	technology_spread = 0.25
+	research_points_modifier = 0.10
+}
+
+electronics_export_revenue = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_circuit.dds"
+	electronics_export_tax_mult = 0.30
+	foreign_investment_attraction = 0.20
+}
+
+# Computer Age
+administrative_efficiency = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_govt.dds"
+	administration_efficiency_mult = 0.20
+	bureaucracy_cost_mult = -0.10
+}
+
+consumer_electronics_demand = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_devices.dds"
+	electronics_demand_mult = 0.35
+	pop_consumption_mult = 0.15
+}
+
+# Software Revolution
+research_speed = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_research.dds"
+	research_speed_add = 0.25
+	technology_unlock_chance = 0.15
+}
+
+automation_throughput = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_robot.dds"
+	automated_factory_throughput = 0.30
+	employment_automation_resistance = -0.20
+}
+
+# Consumer Goods
+standard_of_living_add = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_happiness.dds"
+	pop_standard_of_living_add = 1
+	pop_militancy = -0.15
+}
+
+domestic_trade_revenue = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_domestic_trade.dds"
+	domestic_trade_profit_mult = 0.20
+	market_access_growth = 0.10
+}
+
+luxury_goods_demand = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_luxury.dds"
+	luxury_goods_demand_mult = 0.45
+	aristocrats_political_power = 0.25
+}
+
+international_trade_power = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_global_trade.dds"
+	trade_power_projection = 0.30
+	export_tariff_efficiency = 0.20
+}
