@@ -134,17 +134,7 @@ building_electronic_factory_debug = {
 	}
 	
 	required_construction = construction_cost_modern_industry
-
-	possible = {
-		owner = {
-			NOT = { 
-				OR = {
-					has_law = law_type:law_industry_banned 
-					has_law = law_type:law_extraction_economy 
-				}
-			}
-		}
-	}
+	
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"

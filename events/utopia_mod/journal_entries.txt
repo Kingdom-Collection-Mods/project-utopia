@@ -1,221 +1,347 @@
+﻿namespace = utopia_journal_prod
 # Heavy Machinery
-utopia.journal.prod.heavy_industrial_machinery_je.success = {
+utopia_journal_prod.1 = {
+	title = utopia_journal_prod.heavy_industrial_machinery_je.success 
 	type = country_event
 	event_image = { video = "factory_precision" }
 	
 	option = {
 		name = utopia.yes
-		add_modifier = {
-			name = manufacturing_efficiency
-			months = normal_modifier_time
+		default_option = yes
+		trigger = {
+			NOT = { has_technology_researched = heavy_machinery_era_digital }
+			can_research = heavy_machinery_era_digital
 		}
+		add_technology_progress = { progress = 4150 technology = heavy_machinery_era_digital }
 	}
 	
 	option = {
 		name = utopia.no
-		add_modifier = {
-			name = factory_construction_cost
-			months = normal_modifier_time
+		
+		trigger = {
+			NOT = { has_technology_researched = heavy_machinery_era_digital }
+			can_research = heavy_machinery_era_digital
+			country_rank = rank_value:great_power
 		}
+		add_technology_progress = { progress = 6000 technology = heavy_machinery_era_digital }
+	}
+}
+
+utopia_journal_prod.2 = {
+	title = utopia_journal_prod.heavy_industrial_machinery_je.fail 
+	type = country_event
+	event_image = { video = "factory_precision" }
+	
+	
+		
+	immediate = {
+		random_scope_state = {
+			limit = {
+				has_building = building_motor_industry
+				is_incorporated = yes
+			}
+			save_scope_as = heavy_industrial_machinery_je_state
+		}
+	}
+	
+	option = {
+		name = utopia.yes
+		default_option = yes
+		scope:heavy_industrial_machinery_je_state = {
+			create_building = {
+				building = building_heavy_machinery_factory
+ 				level=1
+ 				reserves=1
+				 subsidized = yes
+			}
+			create_building = {
+				building = building_aluminum_factory
+ 				level=1
+ 				reserves=1
+				subsidized = yes
+			}
+			remove_building = building_motor_industry
+		}
+	}
+
+	option = {
+		name = utopia.no
 	}
 }
 
 # CNC Machines Event
-utopia.journal.prod.cnc_machines_je.success = {
+utopia_journal_prod.3 = {
+	title = utopia_journal_prod.cnc_machines_je.success 
 	type = country_event
 	event_image = { video = "factory_precision" }
 	
 	option = {
-		name = utopia.journal.prod.103.a
-		add_modifier = {
-			name = manufacturing_efficiency
-			months = normal_modifier_time
+		name = utopia.yes
+		default_option = yes
+		trigger = {
+			NOT = { has_technology_researched = heavy_machinery_industry }
+			can_research = steam_turbine
+		}
+		add_technology_progress = { progress = 6000 technology = heavy_machinery_industry }
+	}
+	
+	option = {
+		name = utopia.no
+		
+		trigger = {
+			NOT = { has_technology_researched = heavy_machinery_industry }
+			can_research = steam_turbine
+			country_rank = rank_value:great_power
+		}
+		add_technology_progress = { progress = 4150 technology = heavy_machinery_industry }
+	}
+}
+
+#Fail Consumer Goods
+utopia_journal_prod.4 = {
+	title = utopia_journal_prod.cnc_machines_je.fail 
+	type = country_event
+	event_image = { video = "factory_precision" }
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+			}
+			save_scope_as = je_state
 		}
 	}
 	
 	option = {
-		name = utopia.journal.prod.103.b
-		add_modifier = {
-			name = factory_construction_cost
-			months = normal_modifier_time
+		name = utopia.yes
+		default_option = yes
+		scope:je_state = {
+			create_building = {
+				building = building_commercial_factory
+ 				level=1
+ 				reserves=1
+				 subsidized = yes
+			}
 		}
+	}
+
+	option = {
+		name = utopia.no
 	}
 }
 
+
 # Heavy Tractors Event
-utopia.journal.prod.heavy_tractors_je = {
+utopia_journal_prod.5 = {
+	title = utopia_journal_prod.heavy_tractors_je
 	type = country_event
 	trigger = { }
 	event_image = { video = "agriculture_tractors" }
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
-
-	option = {
-		name = utopia.journal.prod.heavy_tractors_je.a
-		add_modifier = {
-			name = agricultural_mechanization
-			months = normal_modifier_time
-		}
-	}
 	
 	option = {
-		name = utopia.journal.prod.heavy_tractors_je.b
-		add_modifier = {
-			name = tractor_export_boom
-			months = normal_modifier_time
+		name = utopia.yes
+		
+		trigger = {
+			NOT = { has_technology_researched = airplane_farming }
+			can_research = steam_turbine
 		}
+		add_technology_progress = { progress = 4150 technology = airplane_farming }
 	}
 }
 
 # Agrarian Planes Event
-utopia.journal.prod.agrarian_planes_je = {
+utopia_journal_prod.6 = {
+	title = utopia_journal_prod.agrarian_planes_je
 	type = country_event
 	event_image = { video = "crop_dusting_planes" }
 
 	option = {
-		name = utopia.journal.prod.agrarian_planes_je.a
-		add_modifier = {
-			name = plantation_throughput
-			months = normal_modifier_time
+		name = utopia.yes
+		default_option = yes
+		trigger = {
+			prestige = 1
+			NOT = { has_technology_researched = heavy_machinery_era_digital }
+			can_research = steam_turbine
 		}
+		add_technology_progress = { progress = 6000 technology = heavy_machinery_era_digital }
 	}
 	
 	option = {
-		name = utopia.journal.prod.agrarian_planes_je.b
-		add_modifier = {
-			name = aviation_industry_throughput
-			months = normal_modifier_time
+		name = utopia.no
+		
+		trigger = {
+			NOT = { has_technology_researched = heavy_machinery_era_digital }
+			can_research = steam_turbine
 		}
+		add_technology_progress = { progress = 4150 technology = heavy_machinery_era_digital }
 	}
 }
 
 # Plastic Revolution Event
-utopia.journal.prod.plastic_je = {
+utopia_journal_prod.7 = {
+	title = utopia_journal_prod.plastic_je
 	type = country_event
 	event_image = { video = "plastic_production" }
 	
 	option = {
-		name = utopia.journal.prod.plastic_je.a
-		add_modifier = {
-			name = chemical_industry_throughput
-			months = normal_modifier_time
+		name = utopia.yes
+		default_option = yes
+		trigger = {
+			prestige = 1
+			NOT = { has_technology_researched = heavy_machinery_era_digital }
+			can_research = steam_turbine
 		}
+		add_technology_progress = { progress = 6000 technology = heavy_machinery_era_digital }
 	}
 	
 	option = {
-		name = utopia.journal.prod.plastic_je.b
-		add_modifier = {
-			name = consumer_goods_demand
-			months = normal_modifier_time
+		name = utopia.no
+		
+		trigger = {
+			NOT = { has_technology_researched = heavy_machinery_era_digital }
+			can_research = steam_turbine
 		}
+		add_technology_progress = { progress = 4150 technology = heavy_machinery_era_digital }
 	}
 }
 
 # Electronics Boom Event
-utopia.journal.prod.electronics_je = {
+utopia_journal_prod.8 = {
+	title = utopia_journal_prod.electronics_je
 	type = country_event
 	event_image = { video = "electronics_factory" }
 	
 	option = {
-		name = utopia.journal.prod.electronics_je.a
-		add_modifier = {
-			name = innovation_spread
-			months = normal_modifier_time
+		name = utopia.yes
+		default_option = yes
+		trigger = {
+			prestige = 1
+			NOT = { has_technology_researched = heavy_machinery_era_digital }
+			can_research = steam_turbine
 		}
+		add_technology_progress = { progress = 6000 technology = heavy_machinery_era_digital }
 	}
 	
 	option = {
-		name = utopia.journal.prod.electronics_je.b
-		add_modifier = {
-			name = electronics_export_revenue
-			months = normal_modifier_time
+		name = utopia.no
+		
+		trigger = {
+			NOT = { has_technology_researched = heavy_machinery_era_digital }
+			can_research = steam_turbine
 		}
+		add_technology_progress = { progress = 4150 technology = heavy_machinery_era_digital }
 	}
 }
 
 # Computer Age Event
-utopia.journal.prod.computers_je = {
+utopia_journal_prod.9 = {
+	title = utopia_journal_prod.computers_je
 	type = country_event
 	event_image = { video = "computer_lab" }
 	
 	option = {
-		name = utopia.journal.prod.computers_je.a
-		add_modifier = {
-			name = administrative_efficiency
-			months = normal_modifier_time
+		name = utopia.yes
+		default_option = yes
+		trigger = {
+			prestige = 1
+			NOT = { has_technology_researched = heavy_machinery_era_digital }
+			can_research = steam_turbine
 		}
+		add_technology_progress = { progress = 6000 technology = heavy_machinery_era_digital }
 	}
 	
 	option = {
-		name = utopia.journal.prod.computers_je.b
-		add_modifier = {
-			name = consumer_electronics_demand
-			months = normal_modifier_time
+		name = utopia.no
+		
+		trigger = {
+			NOT = { has_technology_researched = heavy_machinery_era_digital }
+			can_research = steam_turbine
 		}
+		add_technology_progress = { progress = 4150 technology = heavy_machinery_era_digital }
 	}
 }
 
 # Software Revolution Event
-utopia.journal.prod.software_je = {
+utopia_journal_prod.10 = {
+	title = utopia_journal_prod.software_je
 	type = country_event
 	event_image = { video = "software_development" }
 	
 	option = {
-		name = utopia.journal.prod.software_je.a
-		add_modifier = {
-			name = research_speed
-			months = normal_modifier_time
+		name = utopia.yes
+		default_option = yes
+		trigger = {
+			prestige = 1
+			NOT = { has_technology_researched = heavy_machinery_era_digital }
+			can_research = steam_turbine
 		}
+		add_technology_progress = { progress = 6000 technology = heavy_machinery_era_digital }
 	}
 	
 	option = {
-		name = utopia.journal.prod.software_je.b
-		add_modifier = {
-			name = automation_throughput
-			months = normal_modifier_time
+		name = utopia.no
+		
+		trigger = {
+			NOT = { has_technology_researched = heavy_machinery_era_digital }
+			can_research = steam_turbine
 		}
+		add_technology_progress = { progress = 4150 technology = heavy_machinery_era_digital }
 	}
 }
 
 # Consumer Goods - Simple
-utopia.journal.prod.consumer_goods_simple_je = {
+utopia_journal_prod.11 = {
+	title = utopia_journal_prod.consumer_goods_simple_je
 	type = country_event
 	event_image = { video = "consumer_goods" }
 	
 	option = {
-		name = utopia.journal.prod.consumer_goods_simple_je.a
-		add_modifier = {
-			name = standard_of_living_add
-			months = normal_modifier_time
+		name = utopia.yes
+		default_option = yes
+		trigger = {
+			prestige = 1
+			NOT = { has_technology_researched = heavy_machinery_era_digital }
+			can_research = steam_turbine
 		}
+		add_technology_progress = { progress = 6000 technology = heavy_machinery_era_digital }
 	}
 	
 	option = {
-		name = utopia.journal.prod.consumer_goods_simple_je.b
-		add_modifier = {
-			name = domestic_trade_revenue
-			months = normal_modifier_time
+		name = utopia.no
+		
+		trigger = {
+			NOT = { has_technology_researched = heavy_machinery_era_digital }
+			can_research = steam_turbine
 		}
+		add_technology_progress = { progress = 4150 technology = heavy_machinery_era_digital }
 	}
 }
 
 # Consumer Goods - Complex
-utopia.journal.prod.consumer_goods_complex_je = {
+utopia_journal_prod.12 = {
+	title = utopia_journal_prod.consumer_goods_complex_je
 	type = country_event
 	event_image = { video = "luxury_electronics" }
 	
 	option = {
-		name = utopia.journal.prod.consumer_goods_complex_je.a
-		add_modifier = {
-			name = luxury_goods_demand
-			months = normal_modifier_time
+		name = utopia.yes
+		default_option = yes
+		trigger = {
+			prestige = 1
+			NOT = { has_technology_researched = heavy_machinery_era_digital }
+			can_research = steam_turbine
 		}
+		add_technology_progress = { progress = 6000 technology = heavy_machinery_era_digital }
 	}
 	
 	option = {
-		name = utopia.journal.prod.consumer_goods_complex_je.b
-		add_modifier = {
-			name = international_trade_power
-			months = normal_modifier_time
+		name = utopia.no
+		
+		trigger = {
+			NOT = { has_technology_researched = heavy_machinery_era_digital }
+			can_research = steam_turbine
 		}
+		add_technology_progress = { progress = 4150 technology = heavy_machinery_era_digital }
 	}
 }

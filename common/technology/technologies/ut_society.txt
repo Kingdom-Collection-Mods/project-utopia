@@ -1,4 +1,4 @@
-##Infrastructure
+﻿##Infrastructure
 highway_projects = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"

@@ -1,4 +1,4 @@
-# era_5 = { #1911-1936
+﻿# era_5 = { #1911-1936
 # 	technology_cost = 17500 # for progress bonuses, use an approximate third: 5850
 # }
 
