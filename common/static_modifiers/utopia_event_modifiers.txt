@@ -1,0 +1,85 @@
+﻿# Heavy Tractors
+agricultural_mechanization = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	building_rye_farm_throughput_add = 0.15
+	building_wheat_farm_throughput_add = 0.15
+	building_maize_farm_throughput_add = 0.15
+	building_livestock_ranch_throughput_add = 0.15
+}
+
+tractor_export_boom = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds" 
+}
+
+# Agrarian Planes
+plantation_throughput = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	goods_output_aeroplanes_mult = 0.2
+}
+
+aviation_industry_throughput = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	goods_output_aeroplanes_mult = 0.2
+}
+
+# CNC Machines
+manufacturing_efficiency = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+}
+
+factory_construction_cost = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+}
+
+# Plastic Revolution
+chemical_industry_throughput = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+}
+
+consumer_goods_demand = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+}
+
+# Electronics Boom
+innovation_spread = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+}
+
+electronics_export_revenue = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+}
+
+# Computer Age
+administrative_efficiency = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+}
+
+consumer_electronics_demand = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+}
+
+# Software Revolution
+research_speed = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+}
+
+automation_throughput = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+}
+
+# Consumer Goods
+standard_of_living_add = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+}
+
+domestic_trade_revenue = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+}
+
+luxury_goods_demand = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+}
+
+international_trade_power = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+}
