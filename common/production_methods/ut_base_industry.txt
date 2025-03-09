@@ -1,4 +1,4 @@
-﻿pm_elastics = {
+pm_elastics = {
 	texture = "gfx/interface/icons/production_method_icons/elastics.dds"
 
 	unlocking_technologies = {
@@ -51,14 +51,14 @@ pm_ut_industry_plastics = {
 			goods_input_lead_add = 30
 			
 			# output goods
-			goods_output_glass_add = 110
+			goods_output_glass_add = 120
 		}
 
 		level_scaled = {
 			building_employment_shopkeepers_add = 500
 			building_employment_laborers_add = 1500
 			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 750
+			building_employment_engineers_add = 1000
 			building_employment_service_workers_add = 1000
 		}
 	}

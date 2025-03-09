@@ -24,7 +24,6 @@ pmg_heavy_machinery_making_process = {
 pmg_electronics_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
-		pm_no_artificial_rubber
 		pm_electronics_circuits_process
 		pm_electronics_transistors_process
 		pm_electronics_micro_chips_process
