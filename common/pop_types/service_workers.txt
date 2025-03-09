@@ -53,22 +53,22 @@
 		if = {
 			limit = {
 				is_peasant_under_serfdom = no 
-				wealth > 10
-				literacy_rate > 0.8
+				wealth > 8
+				literacy_rate > 0.6
 			}
-			# baseline: ( wealth - 10 ) / 10 + (( literacy - 80 ) * 20 ), norm 5 for Wealth 20 and Literacy 100%
+			# baseline: ( wealth - 10 ) / 10 + (( literacy - 0.7 ) * 10 ), norm 5 for Wealth 20 and Literacy 100%
 			#TODO Check if the ai manages literacy rate
 			
 			add = {
 				value = wealth
-				subtract = 10
-				divide = 10
+				subtract = 8
+				divide = 8
 				desc = "QUALIFICATIONS_WEALTH_FACTOR"
 			}
 			add = {
 				value = literacy_rate
-				subtract = 80
-				multiply = 20
+				subtract = 0.7
+				multiply = 10
 				desc = "QUALIFICATIONS_LITERACY_FACTOR"
 			}
 			if = {

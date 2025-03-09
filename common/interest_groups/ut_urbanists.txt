@@ -267,7 +267,7 @@
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_technology_researched = empiricism }
+					NOT = { has_technology_researched = political_progress_1 }
 				}
 			}
 			multiply = {

@@ -3,25 +3,43 @@
 	lawgroup_citizenship = {
 		law_ethnostate = disapprove
 		law_national_supremacy = disapprove
-		law_racial_segregation = neutral
-		law_cultural_exclusion = approve
+		law_racial_segregation = disapprove
+		law_cultural_exclusion = neutral
 		law_multicultural = strongly_approve
-		law_neo_ethno_state = approve
+		law_neo_ethno_state = strongly_disapprove
 		law_multicultural_globalism = approve
 	}
 
-	lawgroup_army_model = {
-		law_task_forces = strongly_approve
-		law_mass_conscription = approve
-		law_professional_army = approve
-		law_national_militia = disapprove
-		law_peasant_levies = disapprove
+	lawgroup_migration = {
+		law_closed_borders = strongly_disapprove
+		law_migration_controls = disapprove
+		law_no_migration_controls = approve
+	}
+
+	lawgroup_church_and_state = {
+		law_state_religion = disapprove
+		law_freedom_of_conscience = neutral
+		law_total_separation = approve
+		law_state_atheism = approve
 	}
 }
 
 
 ideology_urbanist_economy_base = {
-	icon = "gfx/interface/icons/ideology_icons/liberal.dds"
+	icon = "gfx/interface/icons/ideology_icons/egalitarian.dds"
+
+	lawgroup_distribution_of_power = {
+		law_single_party_state = approve
+		law_landed_voting = neutral
+		law_oligarchy = neutral
+		law_autocracy = neutral
+		law_wealth_voting = approve
+		law_census_voting = approve
+		law_universal_suffrage = approve
+		law_anarchy = approve
+		law_technocracy = approve		
+	}
+
 	lawgroup_economic_system = {
 		law_traditionalism = strongly_disapprove
 		law_interventionism = neutral
@@ -30,6 +48,7 @@ ideology_urbanist_economy_base = {
 		law_extraction_economy = strongly_disapprove
 		law_cooperative_ownership = neutral
 		law_command_economy = neutral
+		law_laissez_faire = neutral
 		law_social_market_economy = approve
 		law_free_market_economy = approve
 	}
@@ -53,7 +72,7 @@ ideology_urbanist_economy_base = {
 }
 
 ideology_urbanist_human_rights_base = {
-	icon = "gfx/interface/icons/ideology_icons/republican.dds"
+	icon = "gfx/interface/icons/ideology_icons/individualist.dds"
 	
 	lawgroup_free_speech = {
 		law_outlawed_dissent = disapprove
@@ -70,7 +89,7 @@ ideology_urbanist_human_rights_base = {
 
 	lawgroup_childrens_rights = {
 		law_child_labor_allowed = strongly_disapprove
-		law_restricted_child_labor = approve
+		law_restricted_child_labor = neutral
 		law_compulsory_primary_school = strongly_approve
 		law_compulsory_secondary_school = strongly_approve
 		law_compulsory_tertiary_school = approve
@@ -88,5 +107,6 @@ ideology_urbanist_human_rights_base = {
 		law_women_in_the_workplace = approve
 		law_womens_suffrage = approve
 		law_equal_rights_for_women= approve
+		law_affirmative_equaltity = neutral
 	}
 }

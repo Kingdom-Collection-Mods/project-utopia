@@ -2,10 +2,15 @@
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
+	weight = 100
+	should_be_pinned_by_default = yes
+
 	is_shown_when_inactive = {
-		is_player = yes
+		always = yes
 		NOT = { has_variable = heavy_industrial_machinery_je_done }
 	}
+	
+	transferable = yes
 
 	possible = {
 		has_technology_researched = heavy_machinery_era_analog
@@ -48,7 +53,6 @@ cnc_machines_je = {
 	group = je_group_technology
 
 	is_shown_when_inactive = {
-		is_player = yes
 		has_variable = heavy_industrial_machinery_je_done
 		NOT = { has_variable = cnc_machines_je_done }
 	}
@@ -89,7 +93,6 @@ heavy_tractors_je = {
 	group = je_group_technology
 
 	is_shown_when_inactive = {
-		is_player = yes
 		has_technology_researched = mechanized_farming
 		NOT = { has_variable = heavy_tractors_je_done }
 	}
@@ -136,7 +139,6 @@ agrarian_planes_je = {
 	group = je_group_technology
 
 	is_shown_when_inactive = {
-		is_player = yes
 		has_variable = heavy_tractors_je_done
 	}
 
@@ -183,7 +185,6 @@ plastic_je = {
 	group = je_group_technology
 
 	is_shown_when_inactive = {
-		is_player = yes
 		has_technology_researched = art_silk
 	}
 
@@ -215,7 +216,6 @@ electronics_je = {
 	group = je_group_technology
 
 	is_shown_when_inactive = {
-		is_player = yes
 		has_technology_researched = electric_railway
 	}
 
@@ -250,7 +250,6 @@ computers_je = {
 	group = je_group_technology
 
 	is_shown_when_inactive = {
-		is_player = yes
 		has_variable =  electronics_je_done
 	}
 
@@ -286,7 +285,6 @@ software_je = {
 	group = je_group_technology
 
 	is_shown_when_inactive = {
-		is_player = yes
 		has_variable =  computers_je_done
 	}
 
@@ -318,8 +316,13 @@ consumer_goods_simple_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
+	weight = 100
+	should_be_pinned_by_default = yes
+
+	transferable = yes
+
 	is_shown_when_inactive = {
-		is_player = yes
+		always = yes
 	}
 
 	possible = {
@@ -359,7 +362,6 @@ consumer_goods_complex_je = {
 	group = je_group_technology
 
 	is_shown_when_inactive = {
-		is_player = yes
 		has_variable = consumer_goods_simple_je_done
 	}
 

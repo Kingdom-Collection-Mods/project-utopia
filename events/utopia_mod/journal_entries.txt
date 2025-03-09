@@ -52,7 +52,7 @@ utopia_journal_prod.2 = {
 				building = building_heavy_machinery_factory
  				level=1
  				reserves=1
-				 subsidized = yes
+				subsidized = yes
 			}
 			create_building = {
 				building = building_aluminum_factory
@@ -66,6 +66,9 @@ utopia_journal_prod.2 = {
 
 	option = {
 		name = utopia.no
+		trigger = {
+			is_ai = no
+		}
 	}
 }
 
@@ -108,25 +111,28 @@ utopia_journal_prod.4 = {
 			limit = {
 				is_incorporated = yes
 			}
-			save_scope_as = je_state
+			save_scope_as = cnc_machines_je_state
 		}
 	}
 	
 	option = {
 		name = utopia.yes
 		default_option = yes
-		scope:je_state = {
+		scope:cnc_machines_je_state = {
 			create_building = {
 				building = building_commercial_factory
  				level=1
  				reserves=1
-				 subsidized = yes
+				subsidized = yes
 			}
 		}
 	}
 
 	option = {
 		name = utopia.no
+		trigger = {
+			is_ai = no
+		}
 	}
 }
 
