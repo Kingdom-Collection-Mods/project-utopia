@@ -453,7 +453,7 @@ political_progress_1 = {
 		
 	modifier = {
 		country_service_workers_pol_str_mult = 0.2
-		interest_group_ig_urbanists_pol_str_mult = 0.2	
+		interest_group_ig_urbanists_pol_str_mult = 0.1
 	}
 
 	unlocking_technologies = {
@@ -472,7 +472,7 @@ political_progress_2 = {
 		
 	modifier = {
 		country_service_workers_pol_str_mult = 0.2
-		interest_group_ig_urbanists_pol_str_mult = 0.2	
+		interest_group_ig_urbanists_pol_str_mult = 0.1	
 	}
 
 	unlocking_technologies = {
