@@ -209,7 +209,7 @@ goods_input_software_add={
 
 
 
-state_building_highways_max_level_add={
+state_highways_max_level_add={
 	decimals=0
 	color=good
 	game_data={

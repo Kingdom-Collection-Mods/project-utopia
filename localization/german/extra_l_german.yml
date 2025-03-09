@@ -267,7 +267,7 @@
  anti_discrimination_laws: "Antidiskriminierungsgesetze"
  goods_output_trucks_add: "@trucks! Trucks output"
  goods_output_trucks_add_desc: "The amount of @trucks! Trucks produced by buildings"
- state_building_highways_max_level_add: "Maximale Stufe für $highways$ hinzufügen"
+ state_highways_max_level_add: "Maximale Stufe für $highways$ hinzufügen"
  law_environment_protection_institute_two: "EPA 2"
  law_food_safety_protection_institute_two: "FSP 2"
  pm_elastics_two: "Elastic II"

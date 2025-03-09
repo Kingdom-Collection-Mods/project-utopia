@@ -244,7 +244,7 @@
  anti_discrimination_laws: "Anti-discrimination laws"
  goods_output_trucks_add: "@trucks! Trucks output"
  goods_output_trucks_add_desc: "The amount of @trucks! Trucks produced by buildings"
- state_building_highways_max_level_add: "$highways$ Max Level"
+ state_highways_max_level_add: "$highways$ Max Level"
  interest_group_ig_urbanists_pol_str_mult: "$ig_variant_urbanists$ [concept_political_strength]"
  country_service_workers_pol_str_mult: "[concept_political_strength] of $service_workers$"
  country_service_workers_pol_str_mult_desc: "An increase or decrease in the [concept_political_strength] of $service_workers$"
