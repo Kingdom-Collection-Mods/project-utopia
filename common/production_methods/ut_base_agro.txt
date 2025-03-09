@@ -1,4 +1,218 @@
-﻿smart_irrigation_building_coffee_plantation = {
+
+pm_high_yield_crops = {
+	texture = "gfx/interface/icons/production_method_icons/ammonia_soda_process.dds"
+	unlocking_technologies = {
+		high_yield_crops
+	}
+
+	state_modifiers = {
+		unscaled = {
+			state_harvest_condition_drought_impact_mult = 0.1
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 20			
+			
+			# output goods												   
+			goods_output_grain_add = 100
+		}
+
+		level_scaled = {
+			# earnings														
+			building_employment_laborers_add = 2500
+			building_employment_farmers_add = 2500
+		}
+	}
+}
+
+pm_high_yield_crops_rice = {
+	texture = "gfx/interface/icons/production_method_icons/ammonia_soda_process.dds"
+	unlocking_technologies = {
+		high_yield_crops
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 40			
+			
+			# output goods												   
+			goods_output_grain_add = 190	
+		}
+
+		level_scaled = {
+			# earnings														
+			building_employment_laborers_add = 5000
+			building_employment_farmers_add = 5000
+		}
+	}
+
+}
+
+pm_farms_heavy_machinery_support = {
+	texture = "gfx/interface/icons/production_method_icons/green_aeroplanes.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+
+	unlocking_technologies = {
+		heavy_machinery_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods								
+			goods_input_oil_add = 1
+			goods_input_heavy_machinery_add = 1
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -2500
+			building_employment_farmers_add = -250
+		}
+	}
+}
+
+pm_farms_plane_support = {
+	texture = "gfx/interface/icons/production_method_icons/green_aeroplanes.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+
+	unlocking_technologies = {
+		airplane_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods								
+			goods_input_oil_add = 1
+			goods_input_aeroplanes_add = 1
+			goods_input_heavy_machinery_add = 1
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -2500
+			building_employment_farmers_add = -500
+		}
+	}
+}
+
+
+pm_farms_drone_support = {
+	texture = "gfx/interface/icons/production_method_icons/drone.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	unlocking_technologies = {
+		drone_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods								
+			goods_input_oil_add = 1
+			goods_input_heavy_machinery_add = 1
+			goods_input_aeroplanes_add = 1
+			goods_input_software_add = 2
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -2500
+			building_employment_farmers_add = -1000
+		}
+	}
+}
+
+pm_farms_heavy_machinery_support_rice = {
+	texture = "gfx/interface/icons/production_method_icons/green_aeroplanes.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	unlocking_technologies = {
+		heavy_machinery_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods							
+			goods_input_oil_add = 1
+			goods_input_heavy_machinery_add = 1
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -3500
+		}
+	}
+}
+
+pm_farms_plane_support_rice = {
+	texture = "gfx/interface/icons/production_method_icons/green_aeroplanes.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	unlocking_technologies = {
+		airplane_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods							
+			goods_input_oil_add = 1
+			goods_input_heavy_machinery_add = 1
+			goods_input_aeroplanes_add = 2
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -4000
+		}
+	}
+}
+
+pm_farms_drone_support_rice = {
+	texture = "gfx/interface/icons/production_method_icons/drone.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	unlocking_technologies = {
+		drone_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods										
+			goods_input_oil_add = 1
+			goods_input_heavy_machinery_add = 1
+			goods_input_aeroplanes_add = 4
+			goods_input_software_add = 2
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -4000
+			building_employment_farmers_add = -1000
+		}
+	}
+}
+
+smart_irrigation_building_coffee_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
 
 	state_modifiers = {

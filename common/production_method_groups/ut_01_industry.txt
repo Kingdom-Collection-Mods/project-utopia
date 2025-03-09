@@ -104,6 +104,7 @@ pmg_base_building_tooling_workshops = {
 		pm_pig_iron
 		pm_steel
 		pm_rubber_grips
+		pm_ut_precision_tools
 	}
 }
 
@@ -124,6 +125,7 @@ pmg_base_building_glassworks = {
 		pm_leaded_glass
 		pm_crystal_glass
 		pm_houseware_plastics
+		pm_ut_industry_plastics
 	}
 }
 
