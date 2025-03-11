@@ -60,6 +60,12 @@ utopia_journal_prod.2 = {
  				reserves=1
 				subsidized = yes
 			}
+			create_building = {
+				building = building_electronic_factory
+ 				level=1
+ 				reserves=1
+				subsidized = yes
+			}
 			remove_building = building_motor_industry
 		}
 	}

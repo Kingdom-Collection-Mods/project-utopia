@@ -293,6 +293,7 @@ pmg_telephones_category = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_telephones
+		pm_ut_telephones
 	}
 }
 
@@ -301,6 +302,7 @@ pmg_radios_category = {
 	production_methods = {
 		pm_no_radios
 		pm_radios
+		pm_ut_radios
 	}
 }
 

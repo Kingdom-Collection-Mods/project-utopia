@@ -499,7 +499,7 @@ pm_electronics_circuits_process = {
 		workforce_scaled = {
 			# input goods
 			goods_input_explosives_add = 10 
-			goods_input_electricity_add = 20
+			goods_input_electricity_add = 15
 			
 			# output goods
 			goods_output_electronics_add = 50
