@@ -1,0 +1,43 @@
+﻿namespace = utopia_journal_society
+# je_urbanist_ig >1% Urbanisten
+utopia_journal_society.1 = {
+	title = utopia_journal_prod.je_urbanist_ig.success 
+	type = country_event
+	event_image = { video = "factory_precision" }
+	
+	option = {
+		name = utopia.progress_c
+		default_option = yes
+		
+		trigger = {
+			NOT = { has_technology_researched = anti_discrimination_laws }
+			can_research = anti_discrimination_laws
+		}
+		add_technology_progress = { progress = 6000 technology = anti_discrimination_laws }
+	}
+
+	option = {
+		name = utopia.progress_b
+		
+		trigger = {
+			NOT = { has_technology_researched = check_payments }
+			can_research = check_payments
+		}
+		add_technology_progress = { progress = 6000 technology = check_payments }
+	}
+
+	option = {
+		name = utopia.progress_a
+		default_option = yes
+		trigger = {
+			NOT = { has_technology_researched = public_universities }
+			can_research = public_universities
+		}
+		add_technology_progress = { progress = 6000 technology = public_universities }
+	}
+	
+	
+	option = {
+		name = utopia.no
+	}
+}
