@@ -326,7 +326,7 @@ consumer_goods_simple_je = {
 	}
 
 	possible = {
-		has_technology_researched = electronics
+		has_technology_researched = consumer_goods_main_analog
 	}
 
 	complete = {
@@ -366,7 +366,7 @@ consumer_goods_complex_je = {
 	}
 
 	possible = {
-		has_technology_researched = electronics
+		has_technology_researched = consumer_goods_main_house_hold_electrical
 	}
 
 	complete = {

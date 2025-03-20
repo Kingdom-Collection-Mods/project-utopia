@@ -120,7 +120,7 @@ ideology_anarchist_movement = {
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = approve
 		law_multicultural = strongly_approve	
-		law_multicultural_globalism = strongly_approve	
+		law_multicultural_globalism = approve	
 	}	
 
 	lawgroup_distribution_of_power = {
@@ -375,7 +375,7 @@ ideology_pluralist_movement_4 = { # Multicultural
 		law_national_supremacy = strongly_disapprove
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = disapprove
-		law_multicultural = approve
+		law_multicultural = strongly_approve
 		law_multicultural_globalism = approve
 	}
 }

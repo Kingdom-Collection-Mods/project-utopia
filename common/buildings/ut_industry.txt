@@ -114,7 +114,7 @@ building_plastic_factory = {
 #replaced by vanilla, only there for google sheets
 building_electronic_factory = {
 	building_group = bg_modern_industry
-	icon = "gfx/interface/icons/building_icons/electrics_industry.dds"
+	icon = "gfx/interface/icons/building_icons/electronic_factory.dds"
 	city_type = none #city
 	levels_per_mesh = 5
 	

@@ -258,7 +258,7 @@ pm_heavy_machinery_textile  = {
 
 
 pm_automatic_controllers_steel = {
-	texture = "gfx/interface/icons/production_method_icons/electric_arc_process.dds"
+	texture = "gfx/interface/icons/production_method_icons/electric_sewing_machines.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {

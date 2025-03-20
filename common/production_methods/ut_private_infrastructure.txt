@@ -1,0 +1,63 @@
+﻿pm_ut_high_speed_electric_trains = {
+	texture = "gfx/interface/icons/production_method_icons/trains_diesel.dds"	
+	replacement_if_valid = pm_ut_high_speed_electric_trains_principle_transport_3
+
+	unlocking_technologies = {
+		highspeed_transport
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_heavy_machinery_add = 1
+			goods_input_engines_add = 5 # 300
+			goods_input_electricity_add = 15
+			goods_output_transportation_add = 45 # 1200
+		}
+		level_scaled = {
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 1000
+			building_employment_clerks_add = 500
+			building_employment_service_workers_add = 500
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 40
+		}
+	}
+}
+
+pm_ut_high_speed_electric_trains_principle_transport_3 = {
+	texture = "gfx/interface/icons/production_method_icons/trains_diesel.dds"	
+	is_hidden_when_unavailable = yes
+
+	unlocking_principles = {
+		principle_transport_3
+	}
+
+	unlocking_technologies = {
+		highspeed_transport
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_heavy_machinery_add = 1
+			goods_input_engines_add = 6 # 300
+			goods_input_electricity_add = 10
+			goods_output_transportation_add = 55 # 1200
+		}
+		level_scaled = {
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 1000
+			building_employment_clerks_add = 500
+			building_employment_service_workers_add = 500
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 50
+		}
+	}
+}

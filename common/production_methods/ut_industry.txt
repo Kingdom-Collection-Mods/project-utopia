@@ -732,7 +732,7 @@ pm_computers_micro_chips_process  = {
 ###
 
 pm_truck_production = {
-	texture = "gfx/interface/icons/production_method_icons/automobiles.dds"
+	texture = "gfx/interface/icons/production_method_icons/passenger_carriages.dds"
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -764,7 +764,7 @@ pm_truck_production = {
 }
 
 pm_automobile_and_truck_production = {
-	texture = "gfx/interface/icons/production_method_icons/automobiles.dds"
+	texture = "gfx/interface/icons/production_method_icons/passenger_trains.dds"
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -799,7 +799,7 @@ pm_automobile_and_truck_production = {
 
 
 pm_heavy_machinery_engines = {
-	texture = "gfx/interface/icons/production_method_icons/diesel_engines.dds"
+	texture = "gfx/interface/icons/production_method_icons/recoil_mechanism_artillery_production.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -834,7 +834,7 @@ pm_heavy_machinery_engines = {
 }
 
 pm_electronics_engines = {
-	texture = "gfx/interface/icons/production_method_icons/diesel_engines.dds"
+	texture = "gfx/interface/icons/production_method_icons/power_plant.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -869,7 +869,7 @@ pm_electronics_engines = {
 }
 
 pm_computers_engines = {
-	texture = "gfx/interface/icons/production_method_icons/diesel_engines.dds"
+	texture = "gfx/interface/icons/production_method_icons/electric_arc_process.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -1360,13 +1360,13 @@ pm_heavy_machinery_coal_fired_plant = {
 			goods_input_heavy_machinery_add = 10
 			goods_input_coal_add = 40
 			goods_output_electricity_add = 300
-			state_infrastructure_add = 5
+			state_infrastructure_add = 2
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 1500
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1400
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1000
 		}
 	}
 }
@@ -1390,13 +1390,13 @@ pm_heavy_machinery_oil_fired_plant = {
 			goods_input_heavy_machinery_add = 10
 			goods_input_oil_add = 40
 			goods_output_electricity_add = 350
-			state_infrastructure_add = 5
+			state_infrastructure_add = 2
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 1500
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1400
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1000
 		}
 	}
 }

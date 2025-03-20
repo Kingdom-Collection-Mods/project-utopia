@@ -1,6 +1,9 @@
 ﻿l_german:
  utopia.yes: "Ja"
  utopia.no: "Nein"
+ utopia.progress_a: "Fortschritt!"
+ utopia.progress_b: "Heureka!"
+ utopia.progress_c: "Lang lebe die Wissenschaft"
  heavy_industrial_machinery_je: "Schwermaschinenbau"  
  cnc_machines_je: "CNC-Maschinen"  
  heavy_tractors_je: "Schwere Traktoren"  

@@ -794,7 +794,7 @@ ideology_sovereignist = {
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = neutral
 		law_multicultural = approve	
-		law_multicultural_globalism = approve	
+		law_multicultural_globalism = neutral	
 	}
 }
 

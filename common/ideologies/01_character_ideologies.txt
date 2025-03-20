@@ -2676,7 +2676,7 @@ ideology_anarchist = {
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = approve
 		law_multicultural = strongly_approve	
-		law_multicultural_globalism = strongly_approve	
+		law_multicultural_globalism = approve	
 	}	
 
 	lawgroup_distribution_of_power = {
@@ -3861,7 +3861,7 @@ ideology_humanitarian = {
 		law_national_supremacy = strongly_disapprove
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = neutral
-		law_multicultural = approve	
+		law_multicultural = strongly_approve	
 		law_multicultural_globalism = approve	
 	}
 
@@ -5064,7 +5064,7 @@ ideology_humanitarian_royalist = {
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = neutral
 		law_multicultural = approve	
-		law_multicultural_globalism = approve	
+		law_multicultural_globalism = neutral	
 	}
 
 	lawgroup_free_speech = {
@@ -5325,7 +5325,7 @@ ideology_despotic_utopian = {
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = neutral
 		law_multicultural = approve	
-		law_multicultural_globalism = approve	
+		law_multicultural_globalism = neutral	
 	}
 
 	lawgroup_trade_policy = {		
