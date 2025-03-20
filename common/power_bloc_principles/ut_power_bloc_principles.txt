@@ -8,13 +8,24 @@ principle_common_financial_policy_1 = {
 
 	visible = {
 		has_dlc_feature = power_bloc_features
+	}
+
+	possible = {
 		has_technology_researched = union_new_mandates
-		has_technology_researched = modern_economy
+	}
+
+	power_bloc_modifier = {
+		power_bloc_trade_route_cost_mult = -0.5
 	}
 
 	member_modifier = {
-		# Members get a +10% Construction Efficiency modifier
-		state_construction_mult = 0.1
+		# Modifiers from previous level(s)
+		country_trade_route_cost_mult = -0.1
+		country_trade_route_competitiveness_mult = 0.25
+		
+		# Allows members to set up trade routes without diplomatic interests there
+		country_allow_trade_routes_without_interest_bool = yes
+		state_migration_pull_mult = 0.25
 	}
 	
 	ai_weight = {
@@ -42,13 +53,23 @@ principle_common_financial_policy_2 = {
 	icon = "gfx/interface/icons/principles_icons/construction.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
 
+	possible = {
+		has_technology_researched = union_new_mandates
+	}
+
+	power_bloc_modifier = {
+		power_bloc_trade_route_cost_mult = -0.5
+	}
+
 	member_modifier = {
 		# Modifiers from previous level(s)
+		country_trade_route_cost_mult = -0.1
+		country_trade_route_competitiveness_mult = 0.25
 		
-		state_construction_mult = 0.1
-		
-		# Members Construction Sectors cost less infrastructure
-		building_group_bg_construction_infrastructure_usage_mult = -0.75
+		# Allows members to set up trade routes without diplomatic interests there
+		country_allow_trade_routes_without_interest_bool = yes
+		state_migration_pull_mult = 0.25
+		country_company_throughput_bonus_add = 0.1
 	}
 	
 	ai_weight = {
@@ -60,13 +81,24 @@ principle_common_financial_policy_3 = {
 	icon  = "gfx/interface/icons/principles_icons/construction.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
 
+	possible = {
+		has_technology_researched = union_new_mandates
+	}
+
+	power_bloc_modifier = {
+		power_bloc_trade_route_cost_mult = -0.75
+	}
+
 	member_modifier = {
 		# Modifiers from previous level(s)
+		country_trade_route_cost_mult = -0.1
+		country_trade_route_competitiveness_mult = 0.25
 		
-		state_construction_mult = 0.1
-		building_group_bg_construction_infrastructure_usage_mult = -0.75
-		
-		# Members can form Construction type Companies unlock triggers in the company
+		# Allows members to set up trade routes without diplomatic interests there
+		country_allow_trade_routes_without_interest_bool = yes
+		state_migration_pull_mult = 0.25
+		country_company_throughput_bonus_add = 0.1
+		state_infrastructure_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -81,12 +113,19 @@ principle_commissariat_1 = {
 
 	visible = {
 		has_dlc_feature = power_bloc_features
+	}
+
+	possible = {
 		has_technology_researched = union_new_mandates
 	}
 
 	member_modifier = {
-		# Members get a +10% Construction Efficiency modifier
-		state_construction_mult = 0.1
+		country_authority_per_subject_add = 25
+		country_subject_income_transfer_mult = 0.25
+		country_allow_enacting_decrees_in_subject_bool = yes
+
+		power_bloc_customs_union_bool = yes
+		country_convoy_contribution_to_market_owner_add = 0.2
 	}
 	
 	ai_weight = {
@@ -114,14 +153,26 @@ principle_commissariat_2 = {
 	icon = "gfx/interface/icons/principles_icons/construction.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
 
-	visible = {
-		has_dlc_feature = power_bloc_features
+	possible = {
 		has_technology_researched = union_new_mandates
 	}
+	
+	leader_modifier = {
+		country_influence_mult = 0.1
+	}
+	
+	non_leader_modifier = {
+		country_influence_mult = -0.1
+	}
+
 
 	member_modifier = {
-		# Members get a +10% Construction Efficiency modifier
-		state_construction_mult = 0.1
+		country_authority_per_subject_add = 25
+		country_subject_income_transfer_mult = 0.25
+		country_allow_enacting_decrees_in_subject_bool = yes
+
+		power_bloc_customs_union_bool = yes
+		country_convoy_contribution_to_market_owner_add = 0.2
 	}
 	
 	ai_weight = {
@@ -149,14 +200,25 @@ principle_commissariat_3 = {
 	icon = "gfx/interface/icons/principles_icons/construction.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
 
-	visible = {
-		has_dlc_feature = power_bloc_features
+	possible = {
 		has_technology_researched = union_new_mandates
+	}
+	
+	leader_modifier = {
+		country_influence_mult = 0.2
+	}
+	
+	non_leader_modifier = {
+		country_influence_mult = -0.2
 	}
 
 	member_modifier = {
-		# Members get a +10% Construction Efficiency modifier
-		state_construction_mult = 0.1
+		country_authority_per_subject_add = 25
+		country_subject_income_transfer_mult = 0.25
+		country_allow_enacting_decrees_in_subject_bool = yes
+
+		power_bloc_customs_union_bool = yes
+		country_convoy_contribution_to_market_owner_add = 0.2
 	}
 	
 	ai_weight = {

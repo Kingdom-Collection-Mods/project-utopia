@@ -34,7 +34,7 @@ pm_ut_industry_plastics = {
 	texture = "gfx/interface/icons/production_method_icons/ammonia_soda_process.dds"
 	
 	unlocking_technologies = {
-		plastics
+		plastics_nylon
 	}
 	
 	state_modifiers = {
