@@ -196,7 +196,6 @@ ut_movement_humanist = {
 	ideology = ideology_urbanist_human_rights_base
 	character_ideologies = {
 		ideology_humanitarian
-		ideology_liberal
 		ideology_atheist
 		ideology_reformer
 	}
@@ -219,7 +218,6 @@ ut_movement_humanist = {
 		OR = {
 			has_ideology = ideology:ideology_humanitarian
 			has_ideology = ideology:ideology_humanitarian_royalist
-			has_ideology = ideology:ideology_liberal
 			has_ideology = ideology:ideology_atheist
 			has_ideology = ideology:ideology_reformer
 			OR = {
@@ -238,7 +236,6 @@ ut_movement_humanist = {
 				OR = {
 					has_ideology = ideology:ideology_humanitarian
 					has_ideology = ideology:ideology_humanitarian_royalist
-					has_ideology = ideology:ideology_liberal
 					has_ideology = ideology:ideology_atheist
 					has_ideology = ideology:ideology_reformer
 				}
@@ -355,7 +352,6 @@ ut_movement_rationalists = {
 
 	ideology = ideology_urbanist_economy_base
 	character_ideologies = {
-		ideology_liberal
 		ideology_reformer
 		ideology_laissez_faire
 		ideology_social_democrat
@@ -377,7 +373,6 @@ ut_movement_rationalists = {
 	
 	character_support_trigger = {
 		OR = {
-			has_ideology = ideology:ideology_liberal
 			has_ideology = ideology:ideology_reformer
 			has_ideology = ideology:ideology_laissez_faire
 			has_ideology = ideology:ideology_social_democrat
@@ -395,7 +390,6 @@ ut_movement_rationalists = {
 		if = {
 			limit = {
 				OR = {
-					has_ideology = ideology:ideology_liberal
 					has_ideology = ideology:ideology_reformer
 					has_ideology = ideology:ideology_laissez_faire
 					has_ideology = ideology:ideology_social_democrat
