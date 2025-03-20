@@ -56,9 +56,9 @@ ideology_urbanist_economy_base = {
 	lawgroup_education_system = {
 		law_no_schools = strongly_disapprove
 		law_religious_schools = disapprove
-		law_private_schools = approve	
-		law_public_schools = strongly_approve
-		law_public_university = approve
+		law_private_schools = neutral	
+		law_public_schools = approve
+		law_public_university = strongly_approve
 	}
 
 	lawgroup_trade_policy = {		
@@ -90,7 +90,7 @@ ideology_urbanist_human_rights_base = {
 	lawgroup_childrens_rights = {
 		law_child_labor_allowed = strongly_disapprove
 		law_restricted_child_labor = neutral
-		law_compulsory_primary_school = strongly_approve
+		law_compulsory_primary_school = approve
 		law_compulsory_secondary_school = strongly_approve
 		law_compulsory_tertiary_school = approve
 	}

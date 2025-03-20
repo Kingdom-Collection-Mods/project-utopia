@@ -93,6 +93,7 @@ law_compulsory_secondary_school = {
 	progressiveness = 75
 
 	unlocking_laws = {
+		law_public_schools
 		law_public_university
 	}
 
