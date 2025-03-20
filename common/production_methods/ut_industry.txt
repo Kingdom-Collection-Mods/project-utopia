@@ -517,7 +517,7 @@ pm_electronics_circuits_process = {
 }
 
 pm_electronics_transistors_process = {
-	texture = "gfx/interface/icons/production_method_icons/electric_sewing_machines.dds"
+	texture = "gfx/interface/icons/production_method_icons/electric_engines.dds"
 	unlocking_technologies = {
 		computers	
 	}
@@ -553,7 +553,7 @@ pm_electronics_transistors_process = {
 
 
 pm_electronics_micro_chips_process = {
-	texture = "gfx/interface/icons/production_method_icons/electric_sewing_machines.dds"
+	texture = "gfx/interface/icons/production_method_icons/electric_arc_process.dds"
 	unlocking_technologies = {
 		high_tech_computers
 	}

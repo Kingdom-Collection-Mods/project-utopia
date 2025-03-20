@@ -23,7 +23,31 @@
 	}
 	
 	prosperity_modifier = {	
-		country_tech_spread_mult = 0.1
-		country_weekly_innovation_max_add = 10
+		country_tech_spread_mult = 0.2
+	}	
+}
+
+ut_high_tech_company_research = {
+	icon = "gfx/interface/icons/company_icons/basic_steel.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	building_types = {
+		building_electronic_factory
+	}
+
+	possible = { 
+		has_technology_researched = electronics
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_electronic_factory
+				}
+				level >= 10
+			}
+		}
+	}
+	
+	prosperity_modifier = {	
+		country_weekly_innovation_max_add = 100
 	}	
 }
