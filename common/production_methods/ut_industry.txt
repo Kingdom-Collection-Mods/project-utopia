@@ -1467,11 +1467,11 @@ pm_synthetic_rubber = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_oil_add = 10
+			goods_input_oil_add = 20
 
 			# output goods
-			goods_output_dye_add = -10
-			goods_output_rubber_add = 25
+			goods_output_dye_add = -30
+			goods_output_rubber_add = 50
 		}
 
 		level_scaled = {
@@ -1492,11 +1492,11 @@ pm_synthetic_rubber_plus = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_oil_add = 10
+			goods_input_oil_add = 20
 
 			# output goods
-			goods_output_dye_add = -10
-			goods_output_rubber_add = 40
+			goods_output_dye_add = -30
+			goods_output_rubber_add = 80
 		}
 
 		level_scaled = {

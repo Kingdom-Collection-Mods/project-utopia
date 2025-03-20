@@ -309,3 +309,6 @@
  pm_ut_telephones: "Digitale Telephone"
  pm_ut_radios: "Verbesserter Funkempfänger"
  ut_company_research: "Forschungsverband"
+ ut_movement_cosmopolitan_name: "Kosmopolitanische Bewegung"
+ ut_movement_humanist_name: "Humanistenbewegung"
+ ut_movement_rationalists_name: "Rationalistenbewegung"
