@@ -1,5 +1,5 @@
 ﻿pm_ut_high_speed_electric_trains = {
-	texture = "gfx/interface/icons/production_method_icons/trains_diesel.dds"	
+	texture = "gfx/interface/icons/production_method_icons/electric_engines.dds"	
 	replacement_if_valid = pm_ut_high_speed_electric_trains_principle_transport_3
 
 	unlocking_technologies = {
@@ -29,7 +29,7 @@
 }
 
 pm_ut_high_speed_electric_trains_principle_transport_3 = {
-	texture = "gfx/interface/icons/production_method_icons/trains_diesel.dds"	
+	texture = "gfx/interface/icons/production_method_icons/electric_engines.dds"	
 	is_hidden_when_unavailable = yes
 
 	unlocking_principles = {

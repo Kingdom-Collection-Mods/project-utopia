@@ -261,7 +261,7 @@ pm_consumer_goods_analog_process = {
 }
 
 pm_consumer_goods_electrical_process = {
-	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
+	texture = "gfx/interface/icons/production_method_icons/vertical_filing_cabinets.dds"
 	
 	unlocking_technologies = {
 		consumer_goods_main_house_hold_electrical
@@ -300,7 +300,7 @@ pm_consumer_goods_electrical_process = {
 }
 
 pm_consumer_goods_plastic_process = {
-	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
+	texture = "gfx/interface/icons/production_method_icons/skyscraper_trade_nexus.dds"
 
 	unlocking_technologies = {
 		consumer_goods_main_plastic_revolution
@@ -344,7 +344,7 @@ pm_complex_consumer_goods_none = {
 }
 
 pm_complex_consumer_goods_electrical_process = {
-	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
+	texture = "gfx/interface/icons/production_method_icons/telephone_switchboards.dds"
 	
 	unlocking_technologies = {
 		consumer_goods_main_entertainment_electrical
@@ -379,7 +379,7 @@ pm_complex_consumer_goods_electrical_process = {
 }
 
 pm_complex_consumer_goods_computer_process = {
-	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
+	texture = "gfx/interface/icons/production_method_icons/unused/propaganda_photos.dds"
 	
 	unlocking_technologies = {
 		consumer_goods_main_digital_products
@@ -417,7 +417,7 @@ pm_complex_consumer_goods_computer_process = {
 }
 
 pm_complex_consumer_goods_software_process = {
-	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
+	texture = "gfx/interface/icons/production_method_icons/unused/stock_exchange.dds"
 	
 	unlocking_technologies = {
 		consumer_goods_main_web_products
