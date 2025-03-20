@@ -249,7 +249,7 @@
  bg_artillery_foundaries: "Gebäudegruppe Artilleriegießereien"  
  bg_arms_industries: "Gebäudegruppe Waffenindustrie"  
  bg_munition_plants: "Gebäudegruppe Munitionsfabrik"  
- oil_synthetic_one: "Bioethanol"
+ oil_synthetic_one: "Bio-Ethanol"
  oil_synthetic_two: "Bio-Diesel"
  building_synthetic_oil: "Oil Refinery"
  pm_heavy_machinery_textile: "Textile Machines"
@@ -273,7 +273,7 @@
  goods_output_trucks_add: "@trucks! Trucks output"
  goods_output_trucks_add_desc: "The amount of @trucks! Trucks produced by buildings"
  state_highways_max_level_add: "Maximale Stufe für $highways$ hinzufügen"
- pm_elastics_two: "Elastic II"
+
  international_commerce: "Internationaler Handel"
  military_rockets_software: "Militärische Raketen-Software"
  digital_trading: "Digitaler Handel"
