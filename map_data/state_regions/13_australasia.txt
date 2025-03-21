@@ -52,6 +52,10 @@ STATE_VICTORIA = {
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 6
     }
+    resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 6
+    }
     naval_exit_id = 3122
 }
 
@@ -78,6 +82,10 @@ STATE_TASMANIA = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 6
+    }
+    resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 6
     }
     naval_exit_id = 3122
 }
@@ -154,6 +162,10 @@ STATE_WESTERN_AUSTRALIA = {
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 8
     }
+    resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 8
+    }
     naval_exit_id = 3123
 }
 
@@ -203,6 +215,10 @@ STATE_NORTH_ISLAND = {
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 4
     }
+    resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 4
+    }
     naval_exit_id = 3122
 }
 
@@ -227,6 +243,10 @@ STATE_SOUTH_ISLAND = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 6
+    }
+    resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 6
     }
     naval_exit_id = 3122
 }

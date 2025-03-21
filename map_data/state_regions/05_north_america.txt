@@ -186,6 +186,10 @@ STATE_COLORADO = {
         undiscovered_amount = 8
     }
     resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 8
+    }
+    resource = {
         type = "bg_oil_extraction"
         undiscovered_amount = 5
     }
@@ -274,6 +278,10 @@ STATE_SOUTH_DAKOTA = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 8
+    }
+    resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 8
     }
     resource = {
         type = "bg_oil_extraction"
@@ -1072,6 +1080,10 @@ STATE_BRITISH_COLUMBIA = {
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 8
     }
+    resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 8
+    }
     naval_exit_id = 3154
 }
 
@@ -1256,6 +1268,10 @@ STATE_ARIZONA = {
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 5
     }
+    resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 5
+    }
 }
 
 STATE_NEW_MEXICO = {
@@ -1326,6 +1342,10 @@ STATE_SONORA = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 6
+    }
+    resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 6
     }
     naval_exit_id = 3153
 }
@@ -1521,6 +1541,10 @@ STATE_GUERRERO = {
         undiscovered_amount = 3
     }
     resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 3
+    }
+    resource = {
         type = "bg_rubber"
         undiscovered_amount = 8
     }
@@ -1549,6 +1573,10 @@ STATE_OAXACA = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 2
+    }
+    resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 2
     }
     resource = {
         type = "bg_rubber"
@@ -1599,6 +1627,10 @@ STATE_ZACATECAS = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 4
+    }
+    resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 4
     }
 }
 

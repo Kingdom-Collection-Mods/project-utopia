@@ -422,6 +422,10 @@ STATE_ARKHANGELSK = {
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 8
     }
+    resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 8
+    }
     naval_exit_id = 3039
 }
 
@@ -505,6 +509,10 @@ STATE_KURSK = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 3
+    }
+    resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 3
     }
 }
 
@@ -852,6 +860,10 @@ STATE_NORTH_CAUCASUS = {
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 4
     }
+    resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 4
+    }
 }
 
 STATE_TAURIDA = {
@@ -1079,6 +1091,10 @@ STATE_ALTAI = {
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 3
     }
+    resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 3
+    }
 }
 
 STATE_BURYATIA = {
@@ -1174,6 +1190,10 @@ STATE_CHELYABINSK = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 9
+    }
+    resource = {
+        type = "bg_rare_earths_mining"
+        discovered_amount = 9
     }
 }
 
