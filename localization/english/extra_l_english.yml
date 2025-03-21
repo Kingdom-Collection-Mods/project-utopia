@@ -69,7 +69,7 @@
  law_neo_ethno_state: "Neo-Ethno State"
  law_multicultural_globalism: "Multicultural Globalism"
  ideology_urbanist_liberalist: "Urban-Liberal Ideology"
- law_privatized_bureaucrats: "Privatized Bureaucrats"
+ law_privatized_bureaucrats: "Privatized Administration"
  ig_urbanists: "Urbanists"
  ig_urbanist_desc: "Service workers in modern urban settings, representing professionals in hospitality, retail, transportation, and other sectors of the contemporary economy."
  
@@ -87,7 +87,7 @@
  pm_electronics_engines: "ECU Engines"
  pm_computers_engines: "Complex ECU Engines"
  pm_truck_production: "Truck Production"
- pm_automobile_and_truck_production: "Automobile and Truck Production"
+ pm_automobile_and_truck_production: "Moderne Automobile"
  pm_heavy_machinery_buildings: "Crane and Excavator Construction"
  pm_heavy_machinery_analog_process: "Mechanical Machines"
  pm_heavy_machinery_electronics_process: "Electric Machines"
@@ -356,3 +356,5 @@
 
  ut_ideology_environmentalist: "Environmentalists"
  ut_ideology_environmentalist_desc: "#lore Environmentalists.#!"
+ pm_elastics_two: "Nylonstoffe"
+ pm_precision_tools_heavy_machinery: "CNC-Maschinen"

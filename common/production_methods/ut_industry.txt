@@ -1,4 +1,4 @@
-﻿###Heavy Industry
+###Heavy Industry
 ##Heavy Machinery
 pm_heavy_machinery_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/airship_mooring_post.dds"
@@ -196,7 +196,7 @@ pm_plastic_two_process = {
 	unlocking_technologies = {
 		plastics_polyester
 	}
-	texture = "gfx/interface/icons/production_method_icons/ammonia_soda_process.dds"
+	texture = "gfx/interface/icons/production_method_icons/leblanc_process.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -732,7 +732,7 @@ pm_computers_micro_chips_process  = {
 ###
 
 pm_truck_production = {
-	texture = "gfx/interface/icons/production_method_icons/passenger_carriages.dds"
+	texture = "gfx/interface/icons/production_method_icons/passenger_trains.dds"
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -763,8 +763,9 @@ pm_truck_production = {
 	}
 }
 
+###todo rename to better automobile production
 pm_automobile_and_truck_production = {
-	texture = "gfx/interface/icons/production_method_icons/passenger_trains.dds"
+	texture = "gfx/interface/icons/production_method_icons/public_motor_carriages.dds"
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -772,7 +773,7 @@ pm_automobile_and_truck_production = {
 	}
 	
 	unlocking_technologies = { 
-		trucks_era_analog
+		electronics_motors_production
 	}
 	
 	building_modifiers = {
@@ -784,15 +785,14 @@ pm_automobile_and_truck_production = {
 			goods_input_electricity_add = 10
 
 			# output goods
-			goods_output_automobiles_add = 30
-			goods_output_trucks_add = 30
+			goods_output_automobiles_add = 70
 		}
 
 		level_scaled = {
 			# employment
 			building_employment_machinists_add = 1000
 			building_employment_engineers_add = 1000
-			building_employment_service_workers_add = 500
+			building_employment_service_workers_add = 1000
 		}
 	}
 }
@@ -958,7 +958,7 @@ pm_bauxite_heavy_machinery_mine = {
 }
 
 pm_bauxite_automated_heavy_machinery_mine = {
-	texture = "gfx/interface/icons/production_method_icons/experimental_trains.dds"
+	texture = "gfx/interface/icons/production_method_icons/steamworks.dds"
 	unlocking_technologies = {
 		software
 	}
@@ -1012,7 +1012,7 @@ pm_oil_heavy_machinery_mine = {
 }
 
 pm_oil_automated_heavy_machinery_mine = {
-	texture = "gfx/interface/icons/production_method_icons/experimental_trains.dds"
+	texture = "gfx/interface/icons/production_method_icons/steamworks.dds"
 	unlocking_technologies = {
 		software
 	}
@@ -1113,7 +1113,7 @@ pm_aluminum_one_process = {
 
 
 pm_aluminum_two_process = {
-	texture = "gfx/interface/icons/production_method_icons/diesel_engines.dds"
+	texture = "gfx/interface/icons/production_method_icons/steamworks.dds"
 	unlocking_technologies = {
 		heavy_machinery_industry
 	}
@@ -1342,7 +1342,7 @@ pm_hi_connected_logistics = {
 
 ####
 pm_heavy_machinery_coal_fired_plant = {
-	texture = "gfx/interface/icons/production_method_icons/coal_fired_plant.dds"
+	texture = "gfx/interface/icons/production_method_icons/blister_steel_process.dds"
 
 	unlocking_technologies = {
 		heavy_machinery_era_analog
@@ -1351,6 +1351,7 @@ pm_heavy_machinery_coal_fired_plant = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 30
+			state_infrastructure_add = 5
 		}
 	}
 
@@ -1360,7 +1361,6 @@ pm_heavy_machinery_coal_fired_plant = {
 			goods_input_heavy_machinery_add = 10
 			goods_input_coal_add = 40
 			goods_output_electricity_add = 300
-			state_infrastructure_add = 2
 		}
 
 		level_scaled = {
@@ -1372,7 +1372,7 @@ pm_heavy_machinery_coal_fired_plant = {
 }
 
 pm_heavy_machinery_oil_fired_plant = {
-	texture = "gfx/interface/icons/production_method_icons/oil_fired_plant.dds"
+	texture = "gfx/interface/icons/production_method_icons/electric_arc_process.dds"
 
 	unlocking_technologies = {
 		heavy_machinery_era_analog
@@ -1381,6 +1381,7 @@ pm_heavy_machinery_oil_fired_plant = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
+			state_infrastructure_add = 5
 		}
 	}
 
@@ -1390,7 +1391,6 @@ pm_heavy_machinery_oil_fired_plant = {
 			goods_input_heavy_machinery_add = 10
 			goods_input_oil_add = 40
 			goods_output_electricity_add = 350
-			state_infrastructure_add = 2
 		}
 
 		level_scaled = {
@@ -1458,7 +1458,7 @@ pm_shopping_district = {
 }
 
 pm_synthetic_rubber = {
-	texture = "gfx/interface/icons/production_method_icons/rayon.dds"
+	texture = "gfx/interface/icons/production_method_icons/elastics.dds"
 
 	unlocking_technologies = {
 		plastics_nylon
@@ -1483,7 +1483,7 @@ pm_synthetic_rubber = {
 }
 
 pm_synthetic_rubber_plus = {
-	texture = "gfx/interface/icons/production_method_icons/rayon.dds"
+	texture = "gfx/interface/icons/production_method_icons/pot_stills.dds"
 
 	unlocking_technologies = {
 		plastics_polyester
@@ -1576,7 +1576,7 @@ pm_highway_trucks = {
 
 
 pm_synthetic_oil_one_process = {
-	texture = "gfx/interface/icons/production_method_icons/experimental_trains.dds"
+	texture = "gfx/interface/icons/production_method_icons/ammonia_soda_process.dds"
 
 	building_modifiers = {
 		workforce_scaled = {
@@ -1598,7 +1598,7 @@ pm_synthetic_oil_one_process = {
 }
 
 pm_synthetic_oil_two_process = {
-	texture = "gfx/interface/icons/production_method_icons/experimental_trains.dds"
+	texture = "gfx/interface/icons/production_method_icons/leblanc_process.dds"
 	
 	unlocking_technologies = {
 		oil_synthetic_two
@@ -1624,7 +1624,7 @@ pm_synthetic_oil_two_process = {
 }
 
 pm_elastics_two = {
-	texture = "gfx/interface/icons/production_method_icons/elastics.dds"
+	texture = "gfx/interface/icons/production_method_icons/rayon.dds"
 
 	unlocking_technologies = {
 		plastics_nylon

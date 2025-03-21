@@ -30,6 +30,70 @@ pm_elastics = {
 	}
 }
 
+pm_precision_tools = {
+	texture = "gfx/interface/icons/production_method_icons/precision_tools.dds"
+		
+	unlocking_technologies = {
+		mechanical_tools
+	}
+
+	unlocking_production_methods = {
+		pm_lathe
+		pm_mechanized_workshops
+		pm_heavy_machinery_furnite
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_hardwood_add = 25			# x40 = -1000
+			goods_input_tools_add = 10				# x40 = -400
+			goods_input_wood_add = -25				# x20 =  500
+			
+			# output goods
+			goods_output_furniture_add = -55			# x30 = -1650
+			goods_output_luxury_furniture_add = 55	# x60 =  3300
+		}
+		
+		level_scaled = {
+			building_employment_shopkeepers_add = 1000
+		}						
+	}
+}
+
+
+pm_precision_tools_heavy_machinery = {
+	texture = "gfx/interface/icons/production_method_icons/radios.dds"
+		
+	unlocking_technologies = {
+		heavy_machinery_industry
+	}
+
+	unlocking_production_methods = {
+		pm_lathe
+		pm_mechanized_workshops
+		pm_heavy_machinery_furnite
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_hardwood_add = 25			# x40 = -1000
+			goods_input_wood_add = -25				# x20 =  500
+			goods_input_heavy_machinery_add = 5
+			
+			# output goods
+			goods_output_furniture_add = -65			# x30 = -1650
+			goods_output_luxury_furniture_add = 65	# x60 =  3300
+		}
+		
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+			building_employment_service_workers_add = 500
+		}						
+	}
+}
+
 pm_ut_industry_plastics = {
 	texture = "gfx/interface/icons/production_method_icons/ammonia_soda_process.dds"
 	
@@ -94,7 +158,7 @@ pm_ut_precision_tools = {
 }
 
 pm_aluminum_packaging = {
-	texture = "gfx/interface/icons/production_method_icons/vaccum_canning.dds"	
+	texture = "gfx/interface/icons/production_method_icons/bleached_paper.dds"	
 	unlocking_technologies = {
 		aluminum_base
 	}
@@ -135,10 +199,8 @@ pm_plastic_packaging = {
 			goods_input_grain_add = -30		# x20 = -600
 			goods_input_fish_add = 30		# x20 = 600
 			goods_input_meat_add = 20		# x30 = 600
-			goods_input_iron_add = 10		# x40 =  400
 			goods_input_aluminum_add = 5
-			goods_input_plastic_add = 15
-			goods_input_oil_add = 5 			# x40 =  200
+			goods_input_plastic_add = 20
 			
 			# output goods
 			goods_output_groceries_add = 120	# x30 = 2100
@@ -148,7 +210,7 @@ pm_plastic_packaging = {
 			# profit = 600 (23.1)
 			building_employment_machinists_add = 200	# x1.5 = 750 laborer wages
 			building_employment_engineers_add = 300		# x3.0 = 600 laborer wages
-			building_employment_service_workers_add = 150
+			building_employment_service_workers_add = 200
 
 		}
 	}
@@ -157,7 +219,7 @@ pm_plastic_packaging = {
 
 
 pm_pre_baked_dough_pieces = {
-	texture = "gfx/interface/icons/production_method_icons/baking_powder.dds"
+	texture = "gfx/interface/icons/production_method_icons/vaccum_brine_electrolysis.dds"
 	
 	unlocking_technologies = {
 		heavy_machinery_industry
@@ -179,8 +241,8 @@ pm_pre_baked_dough_pieces = {
 			# profit = 1100
 			building_employment_shopkeepers_add = 500
 			building_employment_laborers_add = 3000
-			building_employment_machinists_add = 250
-			building_employment_engineers_add = 750
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 500
 			building_employment_service_workers_add = 500
 		}
 	}
@@ -189,7 +251,7 @@ pm_pre_baked_dough_pieces = {
 
 
 pm_heavy_machinery_furnite = {
-	texture = "gfx/interface/icons/production_method_icons/mechanized_workshops.dds"
+	texture = "gfx/interface/icons/production_method_icons/steel_tools.dds"
 	
 	unlocking_technologies = {
 		heavy_machinery_industry
@@ -206,16 +268,18 @@ pm_heavy_machinery_furnite = {
 			# input goods
 			goods_input_wood_add = 50
 			goods_input_fabric_add = 10
-			goods_input_heavy_machinery_add = 10
+			goods_input_heavy_machinery_add = 5
+			goods_input_electricity_add = 5
 			
 			# output goods
 			goods_output_furniture_add = 130
 		}
 
 		level_scaled = {
-			building_employment_service_workers_add = 500
-			building_employment_laborers_add = 1000
-			building_employment_machinists_add = 1250
+			building_employment_shopkeepers_add = 250
+			building_employment_service_workers_add = 250
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 750
 			building_employment_engineers_add = 750
 		}
 	}
@@ -245,9 +309,10 @@ pm_heavy_machinery_textile  = {
 
 		level_scaled = {
 			# profit = 1300
-			building_employment_service_workers_add = 500
-			building_employment_laborers_add = 2000
-			building_employment_machinists_add = 1000
+			building_employment_shopkeepers_add = 250
+			building_employment_service_workers_add = 250
+			building_employment_laborers_add = 2500
+			building_employment_machinists_add = 500
 			building_employment_engineers_add = 500
 		}
 	}
@@ -284,7 +349,8 @@ pm_automatic_controllers_steel = {
 
 		level_scaled = {
 			# employment
-			building_employment_service_workers_add = 500
+			building_employment_shopkeepers_add = 250
+			building_employment_service_workers_add = 250
 			building_employment_laborers_add = 500
 			building_employment_machinists_add = 1000
 			building_employment_engineers_add = 1000
@@ -295,7 +361,7 @@ pm_automatic_controllers_steel = {
 }
 
 pm_heavy_machinery_building_coal_mine = {
-	texture = "gfx/interface/icons/production_method_icons/diesel_pump.dds"
+	texture = "gfx/interface/icons/production_method_icons/steamworks.dds"
 
 	unlocking_technologies = {
 		heavy_machinery_mining_production
@@ -320,7 +386,8 @@ pm_heavy_machinery_building_coal_mine = {
 
 		level_scaled = {
 			#$mine_heavy_machinery_emp
-			building_employment_service_workers_add = 500
+			building_employment_shopkeepers_add = 250
+			building_employment_service_workers_add = 250
 			building_employment_laborers_add = 1750
 			building_employment_machinists_add = 1500
 			building_employment_engineers_add = 1000
@@ -330,7 +397,7 @@ pm_heavy_machinery_building_coal_mine = {
 
 
 pm_heavy_machinery_building_iron_mine = {
-	texture = "gfx/interface/icons/production_method_icons/diesel_pump.dds"
+	texture = "gfx/interface/icons/production_method_icons/steamworks.dds"
 
 	unlocking_technologies = {
 		heavy_machinery_mining_production
@@ -355,7 +422,8 @@ pm_heavy_machinery_building_iron_mine = {
 
 		level_scaled = {
 			#$mine_heavy_machinery_emp
-			building_employment_service_workers_add = 500
+			building_employment_shopkeepers_add = 250
+			building_employment_service_workers_add = 250
 			building_employment_laborers_add = 1750
 			building_employment_machinists_add = 1500
 			building_employment_engineers_add = 1000
@@ -381,9 +449,10 @@ pm_ut_telephones = {
 		}
 
 		level_scaled = {
-			building_employment_shopkeepers_add = 1000
+			building_employment_shopkeepers_add = 500
+			building_employment_service_workers_add = 500
 			building_employment_laborers_add = 1000
-			building_employment_machinists_add = 2000
+			building_employment_machinists_add = 1500
 			building_employment_engineers_add = 1000
 		}
 	}

@@ -52,7 +52,7 @@ pm_high_yield_crops_rice = {
 }
 
 pm_farms_heavy_machinery_support = {
-	texture = "gfx/interface/icons/production_method_icons/green_aeroplanes.dds"
+	texture = "gfx/interface/icons/production_method_icons/automatic_power_looms.dds"
 
 	state_modifiers = {
 		workforce_scaled = {
@@ -79,7 +79,7 @@ pm_farms_heavy_machinery_support = {
 }
 
 pm_farms_heavy_machinery_support_rice = {
-	texture = "gfx/interface/icons/production_method_icons/green_aeroplanes.dds"
+	texture = "gfx/interface/icons/production_method_icons/automatic_power_looms.dds"
 
 	state_modifiers = {
 		workforce_scaled = {

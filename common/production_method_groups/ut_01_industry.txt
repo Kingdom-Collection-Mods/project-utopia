@@ -84,6 +84,7 @@ pmg_luxury_building_furniture_manufacturies = {
 		pm_no_luxuries
 		pm_luxury_furniture
 		pm_precision_tools
+		pm_precision_tools_heavy_machinery
 	}
 }
 

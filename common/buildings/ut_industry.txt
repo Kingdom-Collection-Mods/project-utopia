@@ -191,7 +191,7 @@ building_computer_factory = {
 	ai_nationalization_desire = 0.25 # AI will generally not privatize steel mills due to importance for construction
 
 	unlocking_technologies = {
-		computers
+		electronics
 	}
 	
 	production_method_groups = {
