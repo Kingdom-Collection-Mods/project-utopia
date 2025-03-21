@@ -106,7 +106,7 @@ ideology_urbanist_human_rights_base = {
 		law_women_own_property = neutral
 		law_women_in_the_workplace = approve
 		law_womens_suffrage = approve
-		law_equal_rights_for_women= approve
-		law_affirmative_equaltity = neutral
+		law_equal_rights_for_women = approve
+		law_affirmative_equaltity = approve
 	}
 }

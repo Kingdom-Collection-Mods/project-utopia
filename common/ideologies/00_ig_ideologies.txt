@@ -56,6 +56,13 @@
 		law_free_trade_union= neutral
 		law_protectionism_union = neutral
 	}	
+
+	
+	lawgroup_food_safety = {
+		law_no_food_safety_protection = neutral
+		law_food_safety_protection_institute = approve
+		law_food_safety_protection_institute_two = approve		
+	}	
 }
 
 ideology_laissez_faire = {
@@ -71,7 +78,7 @@ ideology_laissez_faire = {
 		law_industry_banned = strongly_disapprove
 		law_extraction_economy = strongly_disapprove
 		law_social_market_economy = disapprove 
-		law_free_market_economy = approve
+		law_free_market_economy = strongly_approve
 	}
 	
 	lawgroup_trade_policy = {		
@@ -88,7 +95,7 @@ ideology_laissez_faire = {
 		law_restricted_child_labor = neutral
 		law_compulsory_primary_school = disapprove
 		law_compulsory_secondary_school = disapprove
-		law_compulsory_tertiary_school = disapprove
+		law_compulsory_tertiary_school = strongly_disapprove
 	}
 	
 	lawgroup_labor_rights = {
@@ -106,13 +113,13 @@ ideology_laissez_faire = {
 	}
 
 	lawgroup_food_safety = {
-		law_no_food_safety_protection = strongly_approve
+		law_no_food_safety_protection = approve
 		law_food_safety_protection_institute = neutral
 		law_food_safety_protection_institute_two = disapprove		
 	}	
 
 	lawgroup_environment_protection = {
-		law_no_environment_protection = strongly_approve
+		law_no_environment_protection = approve
 		law_environment_protection_institute = neutral
 		law_environment_protection_institute_two = disapprove
 	}
@@ -290,6 +297,12 @@ ideology_agrarian = {
 		law_hindu_caste_codified = disapprove
 		law_hindu_caste_not_enforced = neutral
 		law_affirmative_action = neutral
+	}
+
+	lawgroup_food_safety = {
+		law_no_food_safety_protection = neutral
+		law_food_safety_protection_institute = disapprove
+		law_food_safety_protection_institute_two = disapprove
 	}
 }
 
@@ -502,7 +515,8 @@ ideology_liberal = {
 		law_women_own_property = approve
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = neutral
-		law_equal_rights_for_women= neutral
+		law_equal_rights_for_women = neutral
+		law_affirmative_equaltity = disapprove
 	}
 }
 
@@ -683,7 +697,7 @@ ideology_socialist = {
 		law_laissez_faire = strongly_disapprove	
 		law_industry_banned = strongly_disapprove	
 		law_extraction_economy = strongly_disapprove
-		law_social_market_economy = strongly_approve
+		law_social_market_economy = approve
 		law_free_market_economy = strongly_disapprove
 	}
 
@@ -751,6 +765,12 @@ ideology_reactionary = {
 		law_migration_controls = strongly_approve
 		law_no_migration_controls = disapprove
 	}
+
+	lawgroup_environment_protection = {
+		law_no_environment_protection = neutral
+		law_environment_protection_institute = disapprove
+		law_environment_protection_institute_two = disapprove
+	}
 }
 
 ideology_plutocratic = {
@@ -801,7 +821,8 @@ ideology_patriarchal = {
 		law_women_own_property = disapprove
 		law_women_in_the_workplace = disapprove
 		law_womens_suffrage = strongly_disapprove
-		law_equal_rights_for_women= strongly_disapprove
+		law_equal_rights_for_women = strongly_disapprove
+		law_affirmative_equaltity = strongly_disapprove
 	}
 
 	lawgroup_free_speech = {
@@ -856,7 +877,7 @@ ideology_corporatist = {
 		law_religious_schools = approve
 		law_no_schools = neutral
 		law_public_schools = disapprove
-		law_public_university = disapprove
+		law_public_university = strongly_disapprove
 		law_private_schools = disapprove		
 	}	
 	
@@ -872,4 +893,10 @@ ideology_corporatist = {
 		law_wage_subsidies = approve
 		law_old_age_pension = neutral
 	}
+
+	lawgroup_food_safety = {
+		law_no_food_safety_protection = approve
+		law_food_safety_protection_institute = neutral
+		law_food_safety_protection_institute_two = disapprove		
+	}	
 }
