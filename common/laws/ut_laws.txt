@@ -650,7 +650,7 @@ demobilized = {
 	
 	progressiveness = 50
 	
-	unlocking_technologies = { peace_movement }
+	unlocking_technologies = { multicultural_globalism }
 	
 	modifier = {
 		unit_morale_loss_mult = 0.2
