@@ -104,6 +104,18 @@ ideology_laissez_faire = {
 		law_homesteading = neutral
 		law_commercialized_agriculture = approve
 	}
+
+	lawgroup_food_safety = {
+		law_no_food_safety_protection = strongly_approve
+		law_food_safety_protection_institute = neutral
+		law_food_safety_protection_institute_two = disapprove		
+	}	
+
+	lawgroup_environment_protection = {
+		law_no_environment_protection = strongly_approve
+		law_environment_protection_institute = neutral
+		law_environment_protection_institute_two = disapprove
+	}
 }
 
 ideology_individualist = {
@@ -703,6 +715,12 @@ ideology_socialist = {
 		law_wage_subsidies = approve
 		law_poor_laws = neutral
 		law_no_social_security = disapprove
+	}
+
+	lawgroup_food_safety = {
+		law_no_food_safety_protection = neutral
+		law_food_safety_protection_institute = approve
+		law_food_safety_protection_institute_two = approve
 	}
 }
 

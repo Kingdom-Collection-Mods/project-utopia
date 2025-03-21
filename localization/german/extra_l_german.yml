@@ -354,3 +354,7 @@
 
  country_institution_epa_max_investment_add: "Max. Investition der [concept_institution] $institution_epa$"
  country_institution_food_safety_max_investment_add: "Max. Investition der [concept_institution] $institution_food_safety$"
+
+
+ ut_ideology_environmentalist: "Umweltschütz"
+ ut_ideology_environmentalist_desc: "#lore Environmentalists.#!"

@@ -62,10 +62,10 @@ ideology_urbanist_economy_base = {
 	}
 
 	lawgroup_trade_policy = {		
+		law_isolationism = disapprove
 		law_protectionism = neutral
-		law_isolationism = neutral
 		law_mercantilism = neutral
-		law_free_trade = strongly_approve
+		law_free_trade = approve
 		law_free_trade_union = approve
 		law_protectionism_union = approve
 	}
