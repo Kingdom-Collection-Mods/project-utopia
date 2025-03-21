@@ -300,6 +300,7 @@ union_new_mandates = {
 	category = society
 		
 	modifier = {
+		power_bloc_leverage_generation_mult = 0.1
 	}
 
 	unlocking_technologies = {
@@ -316,8 +317,7 @@ union_trade = {
 	texture = "gfx/interface/icons/invention_icons/pan_nationalism.dds"
 	category = society
 		
-	modifier = {
-	}
+
 
 	unlocking_technologies = {
 		union_new_mandates
@@ -335,6 +335,7 @@ union_new_mandates_two = {
 	category = society
 		
 	modifier = {
+		power_bloc_leverage_generation_mult = 0.1
 	}
 
 	unlocking_technologies = {
@@ -352,6 +353,7 @@ food_standards_one = {
 	category = society
 		
 	modifier = {
+		country_institution_food_safety_max_investment_add = 3
 	}
 
 	unlocking_technologies = {
@@ -370,6 +372,7 @@ food_standards_two = {
 	category = society
 		
 	modifier = {
+		country_institution_food_safety_max_investment_add = 2
 	}
 
 	unlocking_technologies = {
@@ -388,6 +391,7 @@ epa_one = {
 	category = society
 		
 	modifier = {
+		country_institution_epa_max_investment_add = 3
 	}
 
 	unlocking_technologies = {
@@ -405,11 +409,9 @@ epa_two = {
 	texture = "gfx/interface/icons/invention_icons/pan_nationalism.dds"
 	category = society
 		
-	
-	#institution = institution_epa
-	#institution_modifier = {
-	#	state_pollution_reduction_health_mult = -0.025
-	#}
+	modifier = {
+		country_institution_epa_max_investment_add = 1
+	}
 
 	unlocking_technologies = {
 		epa_one
@@ -427,10 +429,9 @@ epa_three = {
 	texture = "gfx/interface/icons/invention_icons/pan_nationalism.dds"
 	category = society
 		
-	#institution = institution_epa
-	#institution_modifier = {
-	#	building_throughput_add = 0.01
-	#}
+	modifier = {
+		country_institution_epa_max_investment_add = 1
+	}
 
 	unlocking_technologies = {
 		epa_two

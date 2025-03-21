@@ -350,3 +350,6 @@
  ut_jet_planes: "Jet Aircraft"
  ut_tank_autoloader: "Autoloader"
  ut_war_planes: "Warplanes"
+
+ country_institution_epa_max_investment_add: "Max $institution_epa$ [concept_institution] Investment"
+ country_institution_food_safety_max_investment_add: "Max $institution_food_safety$ [concept_institution] Investment"

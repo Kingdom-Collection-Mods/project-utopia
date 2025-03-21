@@ -209,8 +209,8 @@
  modern_civil_aviation: "Moderne Zivilluftfahrt"
  pmg_highway_cars: "Autobahnautos"
  pmg_highway_trucks: "Autobahnlkw"
- institution_epa: "Umweltschutzbehörde"
- institution_food_safety: "Lebensmittelsicherheitsbehörde"
+ institution_epa: "Umweltschutz"
+ institution_food_safety: "Lebensmittelsicherheit"
  lawgroup_environment_protection: "Umweltschutz"
  lawgroup_food_safety: "Lebensmittelsicherheit"
  demobilized: "Demobilisiert"
@@ -351,3 +351,6 @@
  ut_jet_planes: "Jetflugzeuge"
  ut_tank_autoloader: "Autolader"
  ut_war_planes: "Kriegsflugzeuge"
+
+ country_institution_epa_max_investment_add: "Max. Investition der [concept_institution] $institution_epa$"
+ country_institution_food_safety_max_investment_add: "Max. Investition der [concept_institution] $institution_food_safety$"

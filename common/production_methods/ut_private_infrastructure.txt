@@ -3,7 +3,7 @@
 	replacement_if_valid = pm_ut_high_speed_electric_trains_principle_transport_3
 
 	unlocking_technologies = {
-		highspeed_transport
+		intercity_transport
 	}
 
 	building_modifiers = {
@@ -37,7 +37,7 @@ pm_ut_high_speed_electric_trains_principle_transport_3 = {
 	}
 
 	unlocking_technologies = {
-		highspeed_transport
+		intercity_transport
 	}
 
 	building_modifiers = {

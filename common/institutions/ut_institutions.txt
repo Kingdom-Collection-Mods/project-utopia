@@ -1,9 +1,9 @@
 ﻿institution_epa = {
-	icon = "gfx/interface/icons/institution_icons/home_affairs.dds"
-	background_texture = "gfx/interface/illustrations/institutions/home_affairs.dds"
+	icon = "gfx/interface/icons/institution_icons/workplace_safety.dds"
+	background_texture = "gfx/interface/illustrations/institutions/workplace_safety.dds"
 }
 
 institution_food_safety = {
-	icon = "gfx/interface/icons/institution_icons/home_affairs.dds"
-	background_texture = "gfx/interface/illustrations/institutions/home_affairs.dds"
+	icon = "gfx/interface/icons/institution_icons/schools.dds"
+	background_texture = "gfx/interface/illustrations/institutions/schools.dds"
 }
