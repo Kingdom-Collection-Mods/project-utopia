@@ -85,7 +85,7 @@ pmg_consumer_goods_making_process = {
 pmg_complex_consumer_goods_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
-		pm_no_artificial_rubber
+		pm_complex_consumer_goods_none
 		pm_complex_consumer_goods_electrical_process
 		pm_complex_consumer_goods_computer_process
 		pm_complex_consumer_goods_software_process
