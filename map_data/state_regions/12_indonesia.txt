@@ -49,7 +49,7 @@ STATE_NORTH_BORNEO = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        discovered_amount = 8
+        undiscovered_amount = 8
     }
     resource = {
         type = "bg_rubber"

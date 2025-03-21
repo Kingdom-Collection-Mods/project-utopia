@@ -54,7 +54,7 @@ STATE_VICTORIA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        discovered_amount = 6
+        undiscovered_amount = 6
     }
     naval_exit_id = 3122
 }
@@ -85,7 +85,7 @@ STATE_TASMANIA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        discovered_amount = 6
+        undiscovered_amount = 6
     }
     naval_exit_id = 3122
 }
@@ -164,7 +164,7 @@ STATE_WESTERN_AUSTRALIA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        discovered_amount = 8
+        undiscovered_amount = 8
     }
     naval_exit_id = 3123
 }
@@ -217,7 +217,7 @@ STATE_NORTH_ISLAND = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        discovered_amount = 4
+        undiscovered_amount = 4
     }
     naval_exit_id = 3122
 }
@@ -246,7 +246,7 @@ STATE_SOUTH_ISLAND = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        discovered_amount = 6
+        undiscovered_amount = 6
     }
     naval_exit_id = 3122
 }

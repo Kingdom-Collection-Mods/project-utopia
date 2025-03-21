@@ -396,7 +396,7 @@ STATE_CAJAMARCA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        discovered_amount = 4
+        undiscovered_amount = 4
     }
     resource = {
         type = "bg_oil_extraction"
@@ -794,7 +794,7 @@ STATE_ARAUCANIA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        discovered_amount = 4
+        undiscovered_amount = 4
     }
     resource = {
         type = "bg_oil_extraction"
@@ -1085,7 +1085,7 @@ STATE_MINAS_GERAIS = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        discovered_amount = 8
+        undiscovered_amount = 8
     }
     resource = {
         type = "bg_rubber"

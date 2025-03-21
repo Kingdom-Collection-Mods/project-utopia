@@ -235,7 +235,7 @@ STATE_OUTER_MANCHURIA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        discovered_amount = 8
+        undiscovered_amount = 8
     }
     resource = {
         type = "bg_oil_extraction"
@@ -963,7 +963,7 @@ STATE_HOKKAIDO = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        discovered_amount = 8
+        undiscovered_amount = 8
     }
     naval_exit_id = 3059
 }

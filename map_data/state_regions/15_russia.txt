@@ -424,7 +424,7 @@ STATE_ARKHANGELSK = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        discovered_amount = 8
+        undiscovered_amount = 8
     }
     naval_exit_id = 3039
 }
@@ -512,7 +512,7 @@ STATE_KURSK = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        discovered_amount = 3
+        undiscovered_amount = 3
     }
 }
 
@@ -862,7 +862,7 @@ STATE_NORTH_CAUCASUS = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        discovered_amount = 4
+        undiscovered_amount = 4
     }
 }
 
@@ -1093,7 +1093,7 @@ STATE_ALTAI = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        discovered_amount = 3
+        undiscovered_amount = 3
     }
 }
 
@@ -1193,7 +1193,7 @@ STATE_CHELYABINSK = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        discovered_amount = 9
+        undiscovered_amount = 9
     }
 }
 
