@@ -80,6 +80,12 @@ early_civil_aviation = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/military_aviation.dds"
 	category = society
+
+	on_researched = {
+		custom_tooltip = {
+			text = early_civil_aviation_tech_tt
+		}
+	}
 		
 	modifier = {
 		state_infrastructure_from_population_max_add = 20
@@ -119,8 +125,16 @@ modern_civil_aviation = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/military_aviation.dds"
 	category = society
+
+	on_researched = {
+		custom_tooltip = {
+			text = early_civil_aviation_tech_tt
+		}
+	}
 		
 	modifier = {
+		state_infrastructure_from_population_max_add = 20
+		market_land_trade_capacity_add = 20
 	}
 
 	unlocking_technologies = {	
@@ -298,6 +312,12 @@ union_new_mandates = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/pan_nationalism.dds"
 	category = society
+
+	on_researched = {
+		custom_tooltip = {
+			text = union_new_mandates_tt
+		}
+	}
 		
 	modifier = {
 		power_bloc_leverage_generation_mult = 0.1
@@ -333,7 +353,13 @@ union_new_mandates_two = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/pan_nationalism.dds"
 	category = society
-		
+	
+	on_researched = {
+		custom_tooltip = {
+			text = union_new_mandates_tt
+		}
+	}
+
 	modifier = {
 		power_bloc_leverage_generation_mult = 0.1
 	}

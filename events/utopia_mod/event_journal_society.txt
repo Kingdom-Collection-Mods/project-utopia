@@ -1,7 +1,7 @@
 ﻿namespace = utopia_journal_society
 # je_urbanist_ig >1% Urbanisten
 utopia_journal_society.1 = {
-	title = utopia_journal_prod.je_urbanist_ig.success 
+	title = je_urbanist_ig
 	type = country_event
 	event_image = { video = "factory_precision" }
 	
@@ -38,6 +38,172 @@ utopia_journal_society.1 = {
 	
 	
 	option = {
-		name = utopia.no
+		name = utopia.slow_progress
+		add_modifier = {
+			name = slow_tech_progress
+			months = normal_modifier_time
+		}
+	}
+}
+
+utopia_journal_society.2 = { #Wirtschaftswunder
+	type = country_event
+
+	trigger = {
+	}
+
+	event_image = {
+		video = "southamerica_factory_opening"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	duration = 3
+
+	placement = ROOT
+
+	title = utopia_journal_society_2_wirtschaftswunder_title
+	desc = utopia_journal_society_2_wirtschaftswunder_title
+	flavor = utopia_journal_society_2_wirtschaftswunder_flavor
+
+	immediate = {
+	}
+
+	option = {
+		name = utopia_journal_society_2_wirtschaftswunder_title
+		default_option = yes
+		add_modifier = {
+			name = wirtschaftswunder_modifier
+			months = long_modifier_time
+		}
+	}
+}
+
+utopia_journal_society.3 = { #Wirtschaftswunder others
+	type = country_event
+
+	trigger = {
+	}
+
+	event_image = {
+		video = "southamerica_factory_opening"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	duration = 3
+
+	placement = ROOT
+
+	title = utopia_journal_society_2_wirtschaftswunder_title
+	desc = utopia_journal_society_2_wirtschaftswunder_title
+	flavor = utopia_journal_society_2_wirtschaftswunder_flavor
+
+	immediate = {
+	}
+
+	option = {
+		name = utopia_journal_society_2_wirtschaftswunder_title
+		default_option = yes
+		trigger = {
+			can_research = heavy_machinery_era_analog
+		}
+		add_technology_researched = heavy_machinery_era_analog
+	}
+
+	option = {
+		name = utopia.progress_b
+		trigger = {
+			can_research = consumer_goods_main_analog
+		}
+		add_technology_researched = consumer_goods_main_analog
+	}
+
+	option = {
+		name = utopia.progress_a
+		trigger = {
+			can_research = electronics
+		}
+		add_technology_researched = electronics
+	}
+
+	option = {
+		name = utopia.slow_progress
+		add_modifier = {
+			name = wirtschaftswunder_others_modifier
+			months = long_modifier_time
+		}
+	}
+}
+
+utopia_journal_society.4 = { #Early Civil Aviation Others
+	type = country_event
+
+	trigger = {
+	}
+
+	event_image = {
+		video = "southamerica_factory_opening"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	duration = 3
+
+	placement = ROOT
+
+	title = early_civil_aviation
+	desc = early_civil_aviation
+	flavor = early_civil_aviation_desc
+
+	immediate = {
+	}
+
+	option = {
+		name = early_civil_aviation
+		add_modifier = {
+			name = early_civil_aviation_modifier_others
+			months = very_long_modifier_time
+		}
+	}
+}
+
+utopia_journal_society.5 = { #Modern Civil Aviation Others
+	type = country_event
+
+	trigger = {
+	}
+
+	event_image = {
+		video = "southamerica_factory_opening"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	duration = 3
+
+	placement = ROOT
+
+	title = modern_civil_aviation
+	desc = modern_civil_aviation
+	flavor = modern_civil_aviation_desc
+
+	immediate = {
+	}
+
+	option = {
+		name = modern_civil_aviation
+		add_modifier = {
+			name = modern_civil_aviation_modifier_others
+			months = very_long_modifier_time
+		}
 	}
 }

@@ -18,14 +18,157 @@
 	complete = {
 		pop_type_percent_country = {
 			pop_type = service_workers
-			percent > 0.01
+			percent > 0.2
 		}
 	}
 
 	on_complete = {
-		trigger_event = { id = society_tech_events.104 }
+		trigger_event = { id = utopia_journal_society.1  }
 		set_variable = {
 			name = je_urbanist_ig_done
+		}
+	}
+
+	timeout = 3650
+}
+
+je_wirtschaftswunder = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+		is_player = yes
+	}
+
+	possible = {
+		NOT = {	has_global_variable = je_wirtschaftswunder_done	}
+		has_technology_researched = heavy_machinery_era_digital	
+	}
+
+	complete = {
+		country_rank >= rank_value:major_power
+		any_scope_building = {
+			is_building_type = building_heavy_machinery_factory
+			level >= 10
+			occupancy > 0.75
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+		}
+		any_scope_building = {
+			is_building_type = building_commercial_factory
+			level >= 10
+			occupancy > 0.75
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+		}
+		any_scope_building = {
+			is_building_type = building_electronic_factory
+			level >= 10
+			occupancy > 0.75
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = utopia_journal_society.2 }
+		set_global_variable = {
+			name = je_wirtschaftswunder_done
+		}
+		set_variable = {
+			name = je_wirtschaftswunder_successful
+		}
+	}
+
+	timeout = 3650
+}
+
+je_wirtschaftswunder_others = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		always = no
+	}
+
+	possible = {
+		has_global_variable = je_wirtschaftswunder_done
+		NOT = { has_variable = je_wirtschaftswunder_successful }
+		any_country = {
+			has_variable = je_wirtschaftswunder_successful
+		}
+	}
+
+	complete = {
+		country_rank >= rank_value:major_power
+	}
+
+	on_complete = {
+		trigger_event = { id = utopia_journal_society.3 }
+		set_variable = {
+			name = je_urbanist_ig_done
+		}
+	}
+
+	timeout = 3650
+}
+
+je_early_civil_aviation = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		is_player = yes
+		NOT = {	has_variable = je_early_civil_aviation_done	}
+	}
+
+	possible = {
+		NOT = { has_variable = je_early_civil_aviation_done }
+	}
+
+	complete = {
+		any_country = {
+			has_technology_researched = early_civil_aviation
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = utopia_journal_society.4 }
+		set_variable = {
+			name = je_early_civil_aviation_done
+		}
+	}
+
+	timeout = 3650
+}
+
+je_modern_civil_aviation = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		is_player = yes
+		NOT = {	has_variable = je_modern_civil_aviation_done	}
+	}
+
+	possible = {
+		NOT = { has_variable = je_modern_civil_aviation_done }
+	}
+
+	complete = {
+		any_country = {
+			has_technology_researched = modern_civil_aviation
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = utopia_journal_society.5 }
+		set_variable = {
+			name = je_modern_civil_aviation_done
 		}
 	}
 

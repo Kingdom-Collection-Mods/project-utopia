@@ -24,6 +24,14 @@ utopia_journal_prod.1 = {
 		}
 		add_technology_progress = { progress = 6000 technology = electronics }
 	}
+	
+	option = {
+		name = utopia.slow_progress
+		add_modifier = {
+			name = slow_tech_progress
+			months = normal_modifier_time
+		}
+	}	
 }
 
 utopia_journal_prod.2 = {
@@ -103,6 +111,14 @@ utopia_journal_prod.3 = {
 		}
 		add_technology_progress = { progress = 4150 technology = heavy_machinery_industry }
 	}
+	
+	option = {
+		name = utopia.slow_progress
+		add_modifier = {
+			name = slow_tech_progress
+			months = normal_modifier_time
+		}
+	}	
 }
 
 #Fail Consumer Goods
@@ -159,6 +175,14 @@ utopia_journal_prod.5 = {
 		}
 		add_technology_progress = { progress = 6000 technology = airplane_farming }
 	}
+
+	option = {
+		name = utopia.slow_progress
+		add_modifier = {
+			name = agricultural_mechanization
+			months = normal_modifier_time
+		}
+	}
 }
 
 # Agrarian Planes Event
@@ -175,6 +199,14 @@ utopia_journal_prod.6 = {
 			can_research = drone_farming
 		}
 		add_technology_progress = { progress = 6000 technology = drone_farming }
+	}
+
+	option = {
+		name = utopia.slow_progress
+		add_modifier = {
+			name = agricultural_mechanization
+			months = normal_modifier_time
+		}
 	}
 }
 
@@ -194,6 +226,13 @@ utopia_journal_prod.7 = {
 		add_technology_progress = { progress = 6000 technology = plastics_polyester }
 	}
 	
+	option = {
+		name = utopia.slow_progress
+		add_modifier = {
+			name = slow_tech_progress
+			months = normal_modifier_time
+		}
+	}	
 }
 
 # Electronics Boom Event
@@ -221,6 +260,14 @@ utopia_journal_prod.8 = {
 		}
 		add_technology_progress = { progress = 6000 technology = consumer_goods_main_house_hold_electrical }
 	}
+	
+	option = {
+		name = utopia.slow_progress
+		add_modifier = {
+			name = slow_tech_progress
+			months = normal_modifier_time
+		}
+	}	
 }
 
 # Computer Age Event
@@ -248,6 +295,14 @@ utopia_journal_prod.9 = {
 		}
 		add_technology_progress = { progress = 6000 technology = software }
 	}
+	
+	option = {
+		name = utopia.slow_progress
+		add_modifier = {
+			name = slow_tech_progress
+			months = normal_modifier_time
+		}
+	}	
 }
 
 # Software Revolution Event
@@ -275,6 +330,14 @@ utopia_journal_prod.10 = {
 		}
 		add_technology_progress = { progress = 6000 technology = software_motors_production }
 	}
+	
+	option = {
+		name = utopia.slow_progress
+		add_modifier = {
+			name = slow_tech_progress
+			months = normal_modifier_time
+		}
+	}	
 }
 
 # Consumer Goods - Simple
@@ -302,6 +365,14 @@ utopia_journal_prod.11 = {
 		}
 		add_technology_progress = { progress = 6000 technology = consumer_goods_main_house_hold_electrical }
 	}
+	
+	option = {
+		name = utopia.slow_progress
+		add_modifier = {
+			name = slow_tech_progress
+			months = normal_modifier_time
+		}
+	}	
 }
 
 # Consumer Goods - Complex
@@ -339,4 +410,12 @@ utopia_journal_prod.12 = {
 		}
 		add_technology_progress = { progress = 6000 technology = plastics_polyester }
 	}
+	
+	option = {
+		name = utopia.slow_progress
+		add_modifier = {
+			name = slow_tech_progress
+			months = normal_modifier_time
+		}
+	}	
 }

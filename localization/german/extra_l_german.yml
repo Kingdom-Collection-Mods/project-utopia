@@ -5,6 +5,7 @@
  utopia.progress_a: "Fortschritt!"
  utopia.progress_b: "Heureka!"
  utopia.progress_c: "Lang lebe die Wissenschaft"
+ utopia.slow_progress: "Schritt für Schritt..."
  
 # Events & Journals
 
@@ -44,6 +45,15 @@
  consumer_goods_simple_je_reason: "Grund für einfache Konsumgüter"
  consumer_goods_complex_je_reason: "Grund für komplexe Konsumgüter"
  agrarian_planes_je_done: "Agrarflugzeuge abgeschlossen"
+ je_wirtschaftswunder: "Wirtschaftswunder"
+ je_wirtschaftswunder_others: "Wirtschaftswunder erreicht"
+ utopia_journal_society_2_wirtschaftswunder_title: "Wirtschaftswunder"
+ utopia_journal_society_2_wirtschaftswunder_flavor: "Aus Schutt wurde Gold: Wo einst Ruinen rauchten, wuchsen Fabriken, Wohlstand und ein neues Selbstbewusstsein. Eine starke globale Wirtschaft, weltweiter ökonomischer Aufschwung, und der Geist des Wunders verwandelten Verzweiflung in Dynamik - eine Ära, in der Arbeiterin zu Ingenieurinnen der Zukunft wurden und der technlogische Fortschritt die Welt staunen ließ."
+
+ je_early_civil_aviation: "Frühe zivile Luftfahrt"
+ je_modern_civil_aviation: "Moderne zivile Luftfahrt"
+
+ je_urbanist_ig: "Urbanebewegung"
  
 # Pop and Politics
  service_workers: "@service_workers! $service_workers_no_icon$"
@@ -269,8 +279,10 @@
  highspeed_transport: "Hochgeschwindigkeitsverkehr"
  highspeed_transport_desc: "Als die Dampflok der Elektrodynamik weicht, beginnen Züge mit Tempo 160 km/h über die Schienen zu jagen. Diese Geschwindigkeitsrevolution stellt selbst die schnellsten Postkutschen in den Schatten und komprimiert die wahrgenommene Distanz zwischen Städten."
  early_civil_aviation: "Frühe Zivilluftfahrt"
+ early_civil_aviation_tech_tt: "Einmal pro Spiel: Jedes Land erhält 10%+ mehr Technikverbreitung für 20 Jahre."
  civil_airlines: "Zivile Fluggesellschaften"
  modern_civil_aviation: "Moderne Zivilluftfahrt"
+ modern_civil_aviation_tech_tt: "Einmal pro Spiel: Jedes Land erhält 10%+ mehr Technikverbreitung für 20 Jahre."
  international_commerce: "Internationaler Handel"
  check_payments: "Scheckzahlungen"
  check_payments_desc: "Papierne Anweisungen ersetzen Bargeldtransaktionen im Großhandel. Schecks schaffen ein dokumentierbares Zahlungssystem, das den Aufstieg von Banken als zentrale Finanzintermediäre befördert."
@@ -287,6 +299,7 @@
  digital_tax_declaration: "Digitale Steuererklärung"
  digital_tax_declaration_desc: "Elektronische Formulare und automatische Plausibilitätsprüfungen modernisieren die Steuererhebung."
  union_new_mandates: "Machtblock 2.0"
+ union_new_mandates_tt: "Schaltet neu Machtblock Prinzipien frei"
  union_new_mandates_desc: "Supranationale Institutionen erhalten Kompetenzen in Klimapolitik und Digitalregulierung. Die Ära rein wirtschaftlicher Integration weicht ambitionierter politischer Verflechtung."
  union_new_mandates_two: "Machtblock 3.0"
  union_new_mandates_two_desc: "Gemeinsame Armeekorps und europäische Cloud-Infrastrukturen markieren den Übergang zum föderalen Superstaat. Nationale Souveränität wird zunehmend an Brüsseler Direktorien delegiert."
