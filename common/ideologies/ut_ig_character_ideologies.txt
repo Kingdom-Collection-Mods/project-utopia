@@ -1,4 +1,4 @@
-﻿ut_ideology_environmentalist = {
+ut_ideology_environmentalist = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_social_democrat.dds"
 	
 	character_ideology = yes

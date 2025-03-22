@@ -12,13 +12,20 @@
 	
 	character_ideologies = {
 		ideology_moderate
-		ideology_republican_leader
-		ideology_radical
-		ideology_reformer
-		ideology_sovereignist_leader
-		ideology_orleanist
-		ideology_despotic_utopian
+		ut_ideology_environmentalist
+		ideology_authoritarian
+		ideology_corporatist_leader
+		ideology_liberal_leader
+		ideology_ethno_nationalist
+		ideology_fascist
+		ideology_feminist
 		ideology_humanitarian
+		ideology_pacifist
+		ideology_positivist
+		ideology_reformer
+		ideology_republican_leader
+		ideology_social_democrat
+		ideology_sovereignist_leader
 	}
 
 	enable = {

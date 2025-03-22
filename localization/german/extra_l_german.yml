@@ -72,7 +72,7 @@
  ideology_urbanist_economy_base_desc: "Rationalistische Ideologien favorisieren die Regierung durch Experten und die effiziente Verwaltung von Staat und Gesellschaft. Sie setzen auf wissenschaftlich fundierte Entscheidungen und unterstützen Bildung, Technologie und öffentliche Dienstleistungen."
  ideology_urbanist_human_rights_base: "Humanisten"
  ideology_urbanist_human_rights_base_desc: "Humanistische Ideologien konzentrieren sich auf Gleichheit, soziale Gerechtigkeit und den Schutz der individuellen Rechte. Sie lehnen Sklaverei und Ausbeutung ab und setzen sich für starke soziale Sicherheitsnetze ein."
- ut_ideology_environmentalist: "Umweltschütz"
+ ut_ideology_environmentalist: "Ökologistisch"
  ut_ideology_environmentalist_desc: "#lore Environmentalists.#!"
 
  ig_trait_open_borders: "Offene Grenzen"
