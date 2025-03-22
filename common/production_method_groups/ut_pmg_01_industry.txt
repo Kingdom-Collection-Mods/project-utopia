@@ -237,7 +237,7 @@ pmg_automobile_production = {
 		pm_automobiles_disabled
 		pm_automobile_production
 		pm_truck_production
-		pm_automobile_and_truck_production
+		pm_modern_automobiles
 	}
 }
 

@@ -453,8 +453,7 @@ pm_truck_production = {
 	}
 }
 
-###todo rename to better automobile production
-pm_automobile_and_truck_production = {
+pm_modern_automobiles = {
 	texture = "gfx/interface/icons/production_method_icons/public_motor_carriages.dds"
 	state_modifiers = {
 		workforce_scaled = {
