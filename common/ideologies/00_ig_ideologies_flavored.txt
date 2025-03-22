@@ -492,7 +492,8 @@ ideology_sikh_moralist = {
 		law_national_militia = strongly_approve
 		law_mass_conscription = approve
 		law_peasant_levies = neutral
-		law_task_forces = disapprove
+		law_task_forces = approve
+		law_demobilized = approve
 		law_professional_army = strongly_approve
 	}
 }
@@ -522,7 +523,8 @@ ideology_sikh_militancy = {
 		law_mass_conscription = approve
 		law_national_militia = disapprove
 		law_peasant_levies = disapprove
-		law_task_forces = disapprove
+		law_task_forces = approve
+		law_demobilized = strongly_disapprove
 	}
 	
 	lawgroup_colonization = {

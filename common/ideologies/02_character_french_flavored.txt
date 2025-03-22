@@ -366,6 +366,7 @@ ideology_bonapartist = {
 		law_national_militia = disapprove
 		law_peasant_levies = disapprove
 		law_task_forces = disapprove
+		law_demobilized = disapprove
 	}
 
 	lawgroup_economic_system = {	

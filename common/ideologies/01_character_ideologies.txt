@@ -1409,6 +1409,7 @@ ideology_pacifist = {
 		law_peasant_levies = disapprove
 		law_task_forces = disapprove
 		law_mass_conscription = disapprove
+		law_demobilized = strongly_approve
 	}
 
 	lawgroup_colonization = {		
@@ -1553,6 +1554,7 @@ ideology_jingoist_leader = {
 		law_national_militia = neutral
 		law_peasant_levies = disapprove
 		law_task_forces = disapprove
+		law_demobilized = disapprove
 	}
 
 	lawgroup_colonization = {		
@@ -2451,7 +2453,8 @@ ideology_fascist = {
 		law_professional_army = approve
 		law_national_militia = disapprove
 		law_peasant_levies = disapprove
-		law_task_forces = disapprove
+		law_task_forces = approve
+		law_demobilized = strongly_disapprove
 	}
 
 	lawgroup_free_speech = {
@@ -2720,6 +2723,7 @@ ideology_anarchist = {
 		law_mass_conscription = disapprove
 		law_peasant_levies = strongly_disapprove
 		law_task_forces = disapprove
+		law_demobilized = approve
 	}
 
 	lawgroup_free_speech = {

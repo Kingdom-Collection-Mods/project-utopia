@@ -154,6 +154,7 @@ ideology_anarchist_movement = {
 		law_mass_conscription = disapprove
 		law_peasant_levies = strongly_disapprove
 		law_task_forces = disapprove
+		law_demobilized = approve
 	}
 
 	lawgroup_free_speech = {

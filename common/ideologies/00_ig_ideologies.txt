@@ -166,6 +166,7 @@ ideology_stratocratic = {
 		law_professional_army = neutral
 		law_national_militia = neutral
 		law_mass_conscription = disapprove
+		law_demobilized = neutral
 	}
 	
 	lawgroup_land_reform = {
@@ -322,6 +323,7 @@ ideology_particularist = {
 		law_mass_conscription = disapprove
 		law_peasant_levies = disapprove
 		law_task_forces = disapprove
+		law_demobilized = disapprove
 	}
 
 	lawgroup_slavery = {
@@ -466,6 +468,7 @@ ideology_jingoist = {
 		law_national_militia = disapprove
 		law_peasant_levies = disapprove
 		law_task_forces = disapprove
+		law_demobilized = strongly_disapprove
 	}
 	
 	lawgroup_colonization = {
@@ -664,8 +667,9 @@ ideology_populist = {
 		law_national_militia = strongly_approve
 		law_mass_conscription = approve
 		law_peasant_levies = neutral
-		law_task_forces = disapprove
+		law_task_forces = neutral
 		law_professional_army = disapprove
+		law_demobilized = disapprove
 	}
 
 	lawgroup_caste_hegemony = {
