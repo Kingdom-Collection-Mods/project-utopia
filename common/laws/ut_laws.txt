@@ -875,7 +875,7 @@ law_environment_protection_institute_two  = {
 	progressiveness = 100
 	
 	unlocking_technologies = {
-		epa_three
+		epa_two
 	}
 
 	unlocking_laws = {
