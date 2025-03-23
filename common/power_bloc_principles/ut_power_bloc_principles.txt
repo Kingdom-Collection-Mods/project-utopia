@@ -70,7 +70,7 @@ principle_common_financial_policy_3 = {
 	}
 
 	power_bloc_modifier = {
-		power_bloc_trade_route_cost_mult = -0.75
+		power_bloc_trade_route_cost_mult = -0.5
 	}
 
 	member_modifier = {
@@ -197,6 +197,10 @@ ut_principle_military_cooperation_1 = {
 		power_bloc_disallow_war_bool = yes
 	}
 	
+	member_modifier = {
+		power_bloc_customs_union_bool = yes
+	}
+
 	ai_weight = {
 		value = 100
 	}
@@ -214,8 +218,12 @@ ut_principle_military_cooperation_2 = {
 		# Modifiers from previous level(s)
 		power_bloc_disallow_war_bool = yes
 		
-		# Swaying members to join your side costs 50% less maneuvers if the inviting country is on the target's side
-		power_bloc_target_sway_cost_mult = -0.5
+		
+	}
+
+	member_modifier = {
+		power_bloc_customs_union_bool = yes
+		country_military_goods_cost_mult = -0.15
 	}
 	
 	leader_modifier = {
@@ -236,17 +244,20 @@ ut_principle_military_cooperation_3 = {
 		has_technology_researched = union_new_mandates
 	}
 
-	member_modifier = {
-		# Countries forced to join defensive plays against members
-		country_join_power_bloc_member_in_defensive_plays_bool = yes
-		
-		power_bloc_customs_union_bool = yes
-	}
-
 	power_bloc_modifier = {
 		# Modifiers from previous level(s)
-		power_bloc_disallow_war_bool = yes
-		power_bloc_target_sway_cost_mult = -0.5
+		power_bloc_disallow_war_bool = yes		
+	}
+
+	member_modifier = {
+		power_bloc_customs_union_bool = yes
+		country_military_goods_cost_mult = -0.15
+		country_military_tech_spread_mult = 0.1
+	}
+	
+	leader_modifier = {
+		# Allows leader to impose their own law onto member countries in the army_model law group
+		country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes
 	}
 	
 	ai_weight = {
