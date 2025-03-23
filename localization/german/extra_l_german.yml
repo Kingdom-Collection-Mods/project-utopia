@@ -148,6 +148,9 @@
  principle_group_modern_sovereign_empire: "Moderner Souveräner Staat"
  principle_group_modern_military_treaty_organization: "Moderne Militärbündnisorganisation"
  principle_group_modern_ideological_union: "Moderne Ideologische Union"
+
+ ut_has_truce_with_target: "Hat Waffenstillstand mit [ROOT.GetCountry.GetName]"
+ ut_has_no_truce_with_target: "Kein Waffenstillstand mit [ROOT.GetCountry.GetName]"
  
 # Tech Production
  heavy_machinery_farming: "Großtraktoren"
@@ -469,6 +472,7 @@
  trucks: "LKWs"
  highways: "Autobahnen"
  consumer_goods: "Konsumgüter"
+ heavy_machinery: "Schwerlastmaschinen"
 
 
  pm_supermarket: "Supermarkt"

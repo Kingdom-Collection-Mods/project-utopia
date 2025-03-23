@@ -1,6 +1,7 @@
 ### See power_bloc_principles for the individual effects
 
 principle_group_modern_trade_league = {
+	unlocking_identity = identity_trade_league
 	primary_for_identity = identity_trade_league
 	levels = {
 		principle_common_financial_policy_1
@@ -10,6 +11,7 @@ principle_group_modern_trade_league = {
 }
 
 principle_group_modern_sovereign_empire = {
+	unlocking_identity = identity_sovereign_empire
 	primary_for_identity = identity_sovereign_empire
 	levels = {
 		principle_commissariat_1
@@ -36,10 +38,10 @@ principle_group_modern_sovereign_empire = {
 # 	}
 # }
 
-#principle_group_advanced_research = {
-#	levels = {
-#		principle_common_financial_policy_1
-#		principle_common_financial_policy_2
-#		principle_common_financial_policy_3
-#	}
-#}
+ut_principle_group_advanced_research = {
+	levels = {
+		ut_principle_advanced_research_4
+		ut_principle_advanced_research_5
+		ut_principle_advanced_research_6
+	}
+}
