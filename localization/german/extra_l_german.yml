@@ -71,8 +71,7 @@
 
  ig_urbanists: "Urbanisten"
  ig_urbanists_desc: "Dienstleistende in modernen urbanen Umgebungen, die Fachkräfte in Bereichen wie Gastgewerbe, Einzelhandel, Transport und anderen Sektoren der zeitgenössischen Wirtschaft repräsentieren."
- ig_urbanists_only_icon: "@ig_urbanists!"
- ig_variant_urbanists: "$ig_urbanists$"
+ ig_urbanists_only_icon: "@service_workers!"
  interest_group_ig_urbanists_pol_str_mult: "$ig_variant_urbanists$ [concept_political_strength]"
  
  ideology_urbanist_liberalist: "Urban-liberale Ideologie"
