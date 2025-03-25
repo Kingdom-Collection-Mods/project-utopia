@@ -25,7 +25,8 @@ principle_common_financial_policy_1 = {
 		
 		# Allows members to set up trade routes without diplomatic interests there
 		country_allow_trade_routes_without_interest_bool = yes
-		state_migration_pull_mult = 0.25
+		state_migration_pull_mult = 0.2
+		country_mass_migration_attraction_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -52,8 +53,7 @@ principle_common_financial_policy_2 = {
 		
 		# Allows members to set up trade routes without diplomatic interests there
 		country_allow_trade_routes_without_interest_bool = yes
-		state_migration_pull_mult = 0.25
-		country_company_throughput_bonus_add = 0.1
+		country_mass_migration_attraction_mult = 0.15
 	}
 	
 	ai_weight = {
@@ -71,17 +71,18 @@ principle_common_financial_policy_3 = {
 
 	power_bloc_modifier = {
 		power_bloc_trade_route_cost_mult = -0.5
+		power_bloc_disallow_war_bool = yes
 	}
 
 	member_modifier = {
+		country_join_power_bloc_member_in_defensive_plays_bool = yes
 		# Modifiers from previous level(s)
 		country_trade_route_cost_mult = -0.1
 		country_trade_route_competitiveness_mult = 0.25
 		
 		# Allows members to set up trade routes without diplomatic interests there
 		country_allow_trade_routes_without_interest_bool = yes
-		state_migration_pull_mult = 0.25
-		country_company_throughput_bonus_add = 0.1
+		country_mass_migration_attraction_mult = 0.2
 		state_infrastructure_mult = 0.1
 	}
 	
@@ -368,4 +369,59 @@ ut_principle_advanced_research_6 = {
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}	
+}
+
+ut_modern_ideological_union_1 = {
+	icon = "gfx/interface/icons/principles_icons/creative_legislature.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+
+	visible = {
+		has_dlc_feature = power_bloc_features
+	}
+
+	member_modifier = {
+		political_movement_radicalism_from_enactment_disapproval_mult = -0.25
+		political_movement_radicalism_from_enactment_approval_mult = 0.25
+		power_bloc_customs_union_bool = yes
+	}
+	
+	ai_weight = {
+		value = 200 # High base value for ideological union, but also generally useful for others
+		
+		if = {
+			limit = {
+				power_bloc ?= { NOT = { has_identity = identity:identity_ideological_union } } 			
+			}
+			multiply = 0.5
+		}		
+	}
+}
+ut_modern_ideological_union_2 = {
+	icon = "gfx/interface/icons/principles_icons/creative_legislature.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+
+	member_modifier = {
+		political_movement_radicalism_from_enactment_disapproval_mult = -0.25
+		political_movement_radicalism_from_enactment_approval_mult = 0.25
+		power_bloc_customs_union_bool = yes
+	}
+	
+	ai_weight = {
+		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}
+}
+
+ut_modern_ideological_union_3 = {
+	icon = "gfx/interface/icons/principles_icons/creative_legislature.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+	
+	member_modifier = {
+		political_movement_radicalism_from_enactment_disapproval_mult = -0.25
+		political_movement_radicalism_from_enactment_approval_mult = 0.25
+		power_bloc_customs_union_bool = yes
+	}
+
+	ai_weight = {
+		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}
 }

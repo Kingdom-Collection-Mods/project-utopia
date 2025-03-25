@@ -11,7 +11,7 @@ heavy_industry_harbor = {
 	
 	modifier = {
 		state_building_port_max_level_add = 2
-		country_convoys_capacity_mult = 0.05
+		country_convoys_capacity_mult = 0.1
     }
 	
 	ai_weight = {
@@ -31,7 +31,7 @@ ultra_heavy_industry_harbor = {
 	
 	modifier = {
 		state_building_port_max_level_add = 2
-		country_convoys_capacity_mult = 0.05
+		country_convoys_capacity_mult = 0.1
     }
 
 	ai_weight = {

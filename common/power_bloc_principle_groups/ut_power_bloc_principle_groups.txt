@@ -30,14 +30,14 @@ principle_group_modern_military_treaty_organization = {
 	}
 }
 
-# principle_group_modern_ideological_union = {
-# 	unlocking_identity = identity_ideological_union
-# 	levels = {
-# 		principle_common_financial_policy_1
-# 		principle_common_financial_policy_2
-# 		principle_common_financial_policy_3
-# 	}
-# }
+principle_group_modern_ideological_union = {
+	unlocking_identity = identity_ideological_union
+	levels = {
+		ut_modern_ideological_union_1
+		ut_modern_ideological_union_2
+		ut_modern_ideological_union_3
+	}
+}
 
 ut_principle_group_advanced_research = {
 	levels = {
