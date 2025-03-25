@@ -17,7 +17,7 @@
  consumer_goods_simple_je: "Simple Consumer Goods"
  consumer_goods_complex_je: "Complex Consumer Goods"
  
- service_workers: "@service_workers! $service_workers_no_icon$"+
+ service_workers: "@service_workers! $service_workers_no_icon$"
  service_workers_desc: "Individuals employed in urban service sectors such as hospitality, retail, and transportation. They form a vital part of the modern economy and represent a diverse, dynamic workforce."
  ig_urbanists_only_icon: "@service_workers!"
  service_workers_only_icon: "@service_workers!"
