@@ -581,7 +581,7 @@ consumer_goods_main_web_products = {
 plastics_nylon = {
 	
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/art_silk.dds"
+	texture = "gfx/interface/icons/invention_icons/modern_nursing.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -610,7 +610,7 @@ plastics_polyester = {
 
 oil_synthetic_one = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/art_silk.dds"
+	texture = "gfx/interface/icons/invention_icons/distillation.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -624,7 +624,7 @@ oil_synthetic_one = {
 
 oil_synthetic_two = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/art_silk.dds"
+	texture = "gfx/interface/icons/invention_icons/oil_turbines.dds"
 	category = production
 
 	unlocking_technologies = {	
