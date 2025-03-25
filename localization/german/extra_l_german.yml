@@ -152,7 +152,9 @@
  ut_has_no_truce_with_target: "Kein Waffenstillstand mit [ROOT.GetCountry.GetName]"
 
  ut_humiliate_power_bloc_goal: "Machtblock-Anführer demütigen"
+ ut_humiliate_power_bloc_goal_desc: "Demütige einen rivalisierten Machtblockanführer um in ihn in dein Machtblock zu zwingen."
  ut_research_agreement: "Forschungsabkommen"
+ ut_research_agreement_desc: "Gemeinsam voranschreiten."
 
 #power blocs
  principle_common_financial_policy_1: "Gemeinsame Finanzpolitik"
@@ -515,3 +517,16 @@
  smart_irrigation_building_banana_plantation: "Intelligente Bewässerung"
  smart_irrigation_building_silk_plantation: "Intelligente Bewässerung"
  smart_irrigation_building_vineyard_plantation: "Intelligente Bewässerung"
+
+
+#
+ demand_ban_slavery: "Forderung: Verbots der Sklaverei"
+ demand_conquest: "Forderung: Eroberung"
+ demand_containment: "Forderung: Eindämmung"
+ demand_dominion: "Forderung: Herrschaft"
+ demand_humiliation: "Forderung: Demütigung"
+ demand_iraqi_freedom: "Forderung: der irakischen Freiheit"
+ demand_return_claim: "Forderung: Rückgabe eines Anspruchs"
+ demand_standard_oil: "Forderung: Standard Oil"
+ demand_treaty_port: "Forderung: Vertragshafens"
+ demand_war_reps: "Forderung: Kriegsreparationen"

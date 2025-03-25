@@ -1,4 +1,4 @@
-﻿ut_research_agreement = {
+ut_research_agreement = {
 	groups= {
 		general
 	}
