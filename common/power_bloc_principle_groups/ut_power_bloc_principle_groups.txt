@@ -32,6 +32,7 @@ principle_group_modern_military_treaty_organization = {
 
 principle_group_modern_ideological_union = {
 	unlocking_identity = identity_ideological_union
+	primary_for_identity = identity_ideological_union
 	levels = {
 		ut_modern_ideological_union_1
 		ut_modern_ideological_union_2

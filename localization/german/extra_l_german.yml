@@ -150,6 +150,26 @@
 
  ut_has_truce_with_target: "Hat Waffenstillstand mit [ROOT.GetCountry.GetName]"
  ut_has_no_truce_with_target: "Kein Waffenstillstand mit [ROOT.GetCountry.GetName]"
+
+ ut_humiliate_power_bloc_goal: "Machtblock-Anführer demütigen"
+ ut_research_agreement: "Forschungsabkommen"
+
+#power blocs
+ principle_common_financial_policy_1: "Gemeinsame Finanzpolitik"
+ principle_common_financial_policy_2: "Gemeinsame Finanzpolitik 2"
+ principle_common_financial_policy_3: "Gemeinsame Finanzpolitik 3"
+ principle_commissariat_1: "Kommistariat 1"
+ principle_commissariat_2: "Kommistariat 2"
+ principle_commissariat_3: "Kommistariat 3"
+ ut_principle_military_cooperation_1: "Militärorganisation 1"
+ ut_principle_military_cooperation_2: "Militärorganisation 3"
+ ut_principle_military_cooperation_3: "Militärorganisation 3"
+ ut_modern_ideological_union_1: "Ideologie 1"
+ ut_modern_ideological_union_2: "Ideologie 3"
+ ut_modern_ideological_union_3: "Ideologie 3"
+ ut_principle_advanced_research_4: "Forschungsinitiative 1"
+ ut_principle_advanced_research_5: "Forschungsinitiative 2"
+ ut_principle_advanced_research_6: "Forschungsinitiative 3"
  
 # Tech Production
  heavy_machinery_farming: "Großtraktoren"
