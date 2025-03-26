@@ -1288,7 +1288,7 @@ pm_heavy_machinery_oil_fired_plant = {
 
 
 pm_highway_cars_one = {
-	texture = "gfx/interface/icons/production_method_icons/ut_highway.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_highways.dds"
 
 	building_modifiers = {
 		workforce_scaled = {
