@@ -1,7 +1,7 @@
 ﻿##Infrastructure
 highway_projects = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	texture = "gfx/interface/icons/invention_icons/40s_highway.dds"
 	category = society
 	
 	modifier = {
@@ -78,7 +78,7 @@ highspeed_transport = {
 #Air
 early_civil_aviation = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/military_aviation.dds"
+	texture = "gfx/interface/icons/invention_icons/plane_50s.dds"
 	category = society
 
 	on_researched = {
@@ -104,7 +104,7 @@ early_civil_aviation = {
 
 civil_airlines = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/joint_stock_companies.dds"
+	texture = "gfx/interface/icons/invention_icons/plane_90s.dds"
 	category = society
 		
 	modifier = {

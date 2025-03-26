@@ -2,7 +2,7 @@
 #Farming Productivity
 heavy_machinery_farming = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/military_aviation.dds"
+	texture = "gfx/interface/icons/invention_icons/cabin_tractor.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -16,7 +16,7 @@ heavy_machinery_farming = {
 
 airplane_farming = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/military_aviation.dds"
+	texture = "gfx/interface/icons/invention_icons/crop_plane.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -31,7 +31,7 @@ airplane_farming = {
 drone_farming = {
 	
 	era = era_8
-	texture = "gfx/interface/icons/invention_icons/military_aviation.dds"
+	texture = "gfx/interface/icons/invention_icons/agriculture_drone.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -85,7 +85,7 @@ hybrid_crops = {
 high_yield_crops = {
 	
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/improved_fertilizer.dds"
+	texture = "gfx/interface/icons/invention_icons/irrigation_system.dds"
 	category = production
 
 	modifier = {
@@ -158,7 +158,7 @@ aluminum_base = {
 
 heavy_machinery_era_analog = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/hydraulic_cranes.dds"
+	texture = "gfx/interface/icons/invention_icons/crawler_tractors.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -173,7 +173,7 @@ heavy_machinery_era_analog = {
 
 heavy_machinery_era_digital = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/hydraulic_cranes.dds"
+	texture = "gfx/interface/icons/invention_icons/cnc_machine.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -187,7 +187,7 @@ heavy_machinery_era_digital = {
 
 heavy_machinery_era_web = {
 	era = era_8
-	texture = "gfx/interface/icons/invention_icons/hydraulic_cranes.dds"
+	texture = "gfx/interface/icons/invention_icons/assembly_robot.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -203,7 +203,7 @@ heavy_machinery_era_web = {
 
 heavy_machinery_industry = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/electric_arc_process.dds"
+	texture = "gfx/interface/icons/invention_icons/forging_press.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -219,7 +219,7 @@ heavy_machinery_industry = {
 #Airplanes placeholder
 civilian_planes = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/military_aviation.dds"
+	texture = "gfx/interface/icons/invention_icons/plane_50s.dds"
 	category = production
 
 	modifier = {
@@ -237,7 +237,7 @@ civilian_planes = {
 
 civilian_drones = {
 	era = era_8
-	texture = "gfx/interface/icons/invention_icons/military_aviation.dds"
+	texture = "gfx/interface/icons/invention_icons/plane_50s.dds"
 	category = production
 
 	modifier = {
@@ -290,7 +290,7 @@ rare_earths_mining_era_digital = {
 #Digitalization
 electronics = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/electrical_capacitors.dds"
+	texture = "gfx/interface/icons/invention_icons/cuircit_board.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -305,7 +305,7 @@ electronics = {
 
 computers = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/shift_work.dds"
+	texture = "gfx/interface/icons/invention_icons/computers_60s.dds"
 	category = production
 	
 	modifier = {
@@ -323,7 +323,7 @@ computers = {
 
 high_tech_computers = {
 	era = era_8
-	texture = "gfx/interface/icons/invention_icons/shift_work.dds"
+	texture = "gfx/interface/icons/invention_icons/computers_80s.dds"
 	category = production
 	can_research = no
 	
@@ -340,7 +340,7 @@ high_tech_computers = {
 
 software = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/shift_work.dds"
+	texture = "gfx/interface/icons/invention_icons/software_box.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -369,7 +369,7 @@ computers_steel_production = {
 electronics_motors_production = {
 	
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/combustion_engine.dds"
+	texture = "gfx/interface/icons/invention_icons/40s_car.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -388,7 +388,7 @@ electronics_motors_production = {
 heavy_machinery_mining_production = {
 
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/hydraulic_cranes.dds"
+	texture = "gfx/interface/icons/invention_icons/bucket_wheel_excavator.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -408,7 +408,7 @@ heavy_machinery_mining_production = {
 
 internet = {
 	era = era_8
-	texture = "gfx/interface/icons/invention_icons/shift_work.dds"
+	texture = "gfx/interface/icons/invention_icons/internet.dds"
 	category = production
 	
 	unlocking_technologies = {	
@@ -438,7 +438,7 @@ software_motors_production = {
 #Trucks
 trucks_era_analog = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/unused/streamliners.dds"
+	texture = "gfx/interface/icons/invention_icons/flatbed_truck.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -453,7 +453,7 @@ trucks_era_analog = {
 
 trucks_era_digital = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/unused/streamliners.dds"
+	texture = "gfx/interface/icons/invention_icons/semi_trailer_truck.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -471,7 +471,7 @@ trucks_era_digital = {
 
 trucks_era_web = {
 	era = era_8
-	texture = "gfx/interface/icons/invention_icons/unused/streamliners.dds"
+	texture = "gfx/interface/icons/invention_icons/semi_trailer_truck.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -487,7 +487,7 @@ trucks_era_web = {
 #Consumer Goods
 consumer_goods_main_analog = {
 	era = era_5
-	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	texture = "gfx/interface/icons/invention_icons/analog_consumer_goods.dds"
 	category = production
 
 	
