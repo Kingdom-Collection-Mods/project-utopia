@@ -47,7 +47,7 @@ pm_heavy_machinery_buildings = {
 
 
 pm_heavy_machinery_analog_process = {
-	texture = "gfx/interface/icons/production_method_icons/diesel_engines.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_heavy_machinery_1.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -81,7 +81,7 @@ pm_heavy_machinery_analog_process = {
 
 
 pm_heavy_machinery_electronics_process = {
-	texture = "gfx/interface/icons/production_method_icons/electric_engines.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_heavy_machinery_2.dds"
 	
 	unlocking_technologies = {
 		heavy_machinery_era_digital
@@ -120,7 +120,7 @@ pm_heavy_machinery_electronics_process = {
 }
 
 pm_heavy_machinery_digital_process = {
-	texture = "gfx/interface/icons/production_method_icons/trains_electric.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_heavy_machinery_3.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -161,7 +161,7 @@ pm_heavy_machinery_digital_process = {
 }
 
 pm_plastic_one_process = {
-	texture = "gfx/interface/icons/production_method_icons/ammonia_soda_process.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_plastic_1.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -196,7 +196,7 @@ pm_plastic_two_process = {
 	unlocking_technologies = {
 		plastics_polyester
 	}
-	texture = "gfx/interface/icons/production_method_icons/leblanc_process.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_plastic_2.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -229,7 +229,7 @@ pm_plastic_two_process = {
 
 
 pm_consumer_goods_analog_process = {
-	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_basic_consumer_goods_1.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -261,7 +261,7 @@ pm_consumer_goods_analog_process = {
 }
 
 pm_consumer_goods_electrical_process = {
-	texture = "gfx/interface/icons/production_method_icons/vertical_filing_cabinets.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_basic_consumer_goods_2.dds"
 	
 	unlocking_technologies = {
 		consumer_goods_main_house_hold_electrical
@@ -300,7 +300,7 @@ pm_consumer_goods_electrical_process = {
 }
 
 pm_consumer_goods_plastic_process = {
-	texture = "gfx/interface/icons/production_method_icons/skyscraper_trade_nexus.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_basic_consumer_goods_3.dds"
 
 	unlocking_technologies = {
 		consumer_goods_main_plastic_revolution
@@ -340,11 +340,11 @@ pm_consumer_goods_plastic_process = {
 
 
 pm_complex_consumer_goods_none = {
-	texture = "gfx/interface/icons/production_method_icons/unused/no_cargo_handling.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_complex_consumer_goods_0.dds"
 }
 
 pm_complex_consumer_goods_electrical_process = {
-	texture = "gfx/interface/icons/production_method_icons/telephone_switchboards.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_complex_consumer_goods_1.dds"
 	
 	unlocking_technologies = {
 		consumer_goods_main_entertainment_electrical
@@ -379,7 +379,7 @@ pm_complex_consumer_goods_electrical_process = {
 }
 
 pm_complex_consumer_goods_computer_process = {
-	texture = "gfx/interface/icons/production_method_icons/unused/propaganda_photos.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_complex_consumer_goods_2.dds"
 	
 	unlocking_technologies = {
 		consumer_goods_main_digital_products
@@ -417,7 +417,7 @@ pm_complex_consumer_goods_computer_process = {
 }
 
 pm_complex_consumer_goods_software_process = {
-	texture = "gfx/interface/icons/production_method_icons/unused/stock_exchange.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_complex_consumer_goods_3.dds"
 	
 	unlocking_technologies = {
 		consumer_goods_main_web_products
@@ -456,7 +456,7 @@ pm_complex_consumer_goods_software_process = {
 }
 
 pm_software_one_process = {
-	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_software_1.dds"
 	
 	state_modifiers = {
 	}
@@ -484,7 +484,7 @@ pm_software_one_process = {
 
 
 pm_electronics_circuits_process = {
-	texture = "gfx/interface/icons/production_method_icons/electric_sewing_machines.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_electronics_1.dds"
 	unlocking_technologies = {
 		electronics
 	}
@@ -517,7 +517,7 @@ pm_electronics_circuits_process = {
 }
 
 pm_electronics_transistors_process = {
-	texture = "gfx/interface/icons/production_method_icons/electric_engines.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_electronics_2.dds"
 	unlocking_technologies = {
 		computers	
 	}
@@ -553,7 +553,7 @@ pm_electronics_transistors_process = {
 
 
 pm_electronics_micro_chips_process = {
-	texture = "gfx/interface/icons/production_method_icons/electric_arc_process.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_electronics_3.dds"
 	unlocking_technologies = {
 		high_tech_computers
 	}
@@ -589,7 +589,7 @@ pm_electronics_micro_chips_process = {
 }
 
 pm_computers_electromechanical_process = {
-	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_computer_1.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -621,7 +621,7 @@ pm_computers_electromechanical_process = {
 
 
 pm_computers_transistors_process = {
-	texture = "gfx/interface/icons/production_method_icons/telephone_switchboards.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_computer_2.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -656,7 +656,7 @@ pm_computers_transistors_process = {
 }
 
 pm_computers_integrated_chips_process  = {
-	texture = "gfx/interface/icons/production_method_icons/electric_arc_process.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_computer_3.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -692,7 +692,7 @@ pm_computers_integrated_chips_process  = {
 }
 
 pm_computers_micro_chips_process  = {
-	texture = "gfx/interface/icons/production_method_icons/electric_saw_mills.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_computer_4.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -711,12 +711,13 @@ pm_computers_micro_chips_process  = {
 			goods_input_plastic_add = 5
 			goods_input_explosives_add = 10
 			goods_input_electronics_add = 100
+			goods_input_rare_earths_add = 60
 			goods_input_software_add = 30
 
 			
 			
 			# output goods
-			goods_output_computers_add = 200
+			goods_output_computers_add = 220
 		}
 
 		level_scaled = {
@@ -1024,7 +1025,7 @@ pm_aluminum_two_process = {
 ###### Administration Heavy Industry
 
 pm_hi_analogue_admin = {
-	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_admin_1.dds"
 	
 	building_modifiers = {
 		workforce_scaled = {
@@ -1045,7 +1046,7 @@ pm_hi_analogue_admin = {
 }
 
 pm_hi_connected_admin = {
-	texture = "gfx/interface/icons/production_method_icons/automatic_power_looms.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_admin_2.dds"
 	unlocking_technologies = {
 		electronics
 	}
@@ -1070,7 +1071,7 @@ pm_hi_connected_admin = {
 }
 
 pm_hi_digital_admin = {
-	texture = "gfx/interface/icons/production_method_icons/electric_fencing.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_admin_3.dds"
 	unlocking_technologies = {
 		computers
 	}
@@ -1096,7 +1097,7 @@ pm_hi_digital_admin = {
 }
 
 pm_hi_automated_admin = {
-	texture = "gfx/interface/icons/production_method_icons/steam_donkey.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_admin_4.dds"
 	unlocking_technologies = {
 		internet
 	}
@@ -1124,7 +1125,7 @@ pm_hi_automated_admin = {
 ###### Logistics Heavy Industry
 
 pm_hi_no_logistics = {
-	texture = "gfx/interface/icons/production_method_icons/tractors.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_logistics_1.dds"
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 5
@@ -1145,7 +1146,7 @@ pm_hi_no_logistics = {
 }
 
 pm_hi_rail_logistics = {
-	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_logistics_2.dds"
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -1169,7 +1170,7 @@ pm_hi_rail_logistics = {
 }
 
 pm_hi_individual_logistics = {
-	texture = "gfx/interface/icons/production_method_icons/tractors.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_logistics_3.dds"
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 5
@@ -1193,7 +1194,7 @@ pm_hi_individual_logistics = {
 }
 
 pm_hi_connected_logistics = {
-	texture = "gfx/interface/icons/production_method_icons/tanker_cars.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_logistics_4.dds"
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 5
@@ -1287,7 +1288,7 @@ pm_heavy_machinery_oil_fired_plant = {
 
 
 pm_highway_cars_one = {
-	texture = "gfx/interface/icons/production_method_icons/experimental_trains.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_highway.dds"
 
 	building_modifiers = {
 		workforce_scaled = {

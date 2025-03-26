@@ -104,7 +104,7 @@ early_civil_aviation = {
 
 civil_airlines = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/plane_90s.dds"
+	texture = "gfx/interface/icons/invention_icons/airport.dds"
 	category = society
 		
 	modifier = {
@@ -123,7 +123,7 @@ civil_airlines = {
 
 modern_civil_aviation = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/military_aviation.dds"
+	texture = "gfx/interface/icons/invention_icons/plane_50s.dds"
 	category = society
 
 	on_researched = {

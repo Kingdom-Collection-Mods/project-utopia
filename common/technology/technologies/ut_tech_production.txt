@@ -503,7 +503,7 @@ consumer_goods_main_analog = {
 
 consumer_goods_main_house_hold_electrical = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	texture = "gfx/interface/icons/invention_icons/consumer_goods_fridge.dds"
 	category = production
 
 	
@@ -518,7 +518,7 @@ consumer_goods_main_house_hold_electrical = {
 }
 consumer_goods_main_entertainment_electrical = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	texture = "gfx/interface/icons/invention_icons/consumer_goods_tv.dds"
 	category = production
 
 	
@@ -533,7 +533,7 @@ consumer_goods_main_entertainment_electrical = {
 
 consumer_goods_main_plastic_revolution = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	texture = "gfx/interface/icons/invention_icons/consumer_goods_cloth.dds"
 	category = production
 
 	

@@ -66,7 +66,7 @@ pm_ut_industry_plastics = {
 }
 
 pm_ut_precision_tools = {
-	texture = "gfx/interface/icons/production_method_icons/arc_welded_buildings.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_precision_tools.dds"
 	unlocking_technologies = {
 		bauxite_mining
 		electronics
@@ -156,7 +156,7 @@ pm_plastic_packaging = {
 
 
 pm_pre_baked_dough_pieces = {
-	texture = "gfx/interface/icons/production_method_icons/vaccum_brine_electrolysis.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_pre_baked.dds"
 	
 	unlocking_technologies = {
 		heavy_machinery_industry

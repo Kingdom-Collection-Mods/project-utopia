@@ -31,7 +31,7 @@ pm_elastics = {
 }
 
 pm_precision_tools = {
-	texture = "gfx/interface/icons/production_method_icons/precision_tools.dds"
+	texture = "gfx/interface/icons/production_method_icons/pm_precision_tools.dds"
 		
 	unlocking_technologies = {
 		mechanical_tools
