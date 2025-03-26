@@ -47,8 +47,7 @@ pm_ut_industry_plastics = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_oil_add = 10
-			goods_input_plastic_add = 10
+			goods_input_plastic_add = 20
 			goods_input_lead_add = 30
 			
 			# output goods

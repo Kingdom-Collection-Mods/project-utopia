@@ -413,15 +413,20 @@
 
  pm_heavy_machinery_buildings: "Kran- und Baggerbau"
 
+ pmg_heavy_machinery_making_process: "todo"
  pm_heavy_machinery_analog_process: "Mechanische Maschinen"
  pm_heavy_machinery_electronics_process: "Elektrische Maschinen"
  pm_heavy_machinery_digital_process: "Digitalisierte Maschinen"
 
  pm_electronics_circuits_process: "Elektronische Schaltkreisen"
- pm_computers_electromechanical_process: "Elektromechanische Teile"
- pm_computers_transistors_process: "Transistoren"
- pm_computers_integrated_chips_process: "Integrierten Schaltkreisen"
- pm_computers_micro_chips_process: "Mikrochip-Produktion"
+ pm_electronics_transistors_process: "Transistoren"
+ pm_electronics_micro_chips_process: "Mikrochips"
+
+ pmg_computers_making_process: "COMPUTER BASIS"
+ pm_computers_electromechanical_process: "Elektromechanischer Computer"
+ pm_computers_transistors_process: "Transitoren Computer"
+ pm_computers_integrated_chips_process: "Personal Computer"
+ pm_computers_micro_chips_process: "Hightech Computer"
 
  pm_bauxite_steam_powered_mine: "Dampfbetriebene Bauxit-Mine"
  pm_bauxite_heavy_machinery_mine: "Schwerlastmaschinen"
@@ -429,6 +434,8 @@
  pm_aluminum_one_process: "Aluminiumoxidation"
  pm_rare_earths_one_mine: "Grundlegende Seltene Erden-Mine"
 
+ pmg_consumer_goods_making_process: "Basis"
+ pmg_complex_consumer_goods_making_process: "Erweitert"
  pm_consumer_goods_analog_process: "Einfache Herstellung"
  pm_consumer_goods_electrical_process: "Elektrische Geräte"
  pm_consumer_goods_plastic_process: "Plastic Consumer Goods"
@@ -470,7 +477,8 @@
  pm_aluminum_packaging: "Aluminiumverpackung"
  pm_plastic_packaging: "Kunststoffverpackung"
  pm_synthetic_rubber_plus: "Polyester"
- pm_plastic_two_process: "Polyester"
+ pm_plastic_one_process: "Plyethen"
+ pm_plastic_two_process: "Polypropen"
 
  pm_highway_cars_one: "Autobahnautos"
  pm_highway_no_trucks: "Keine Autobahn-LKW"
