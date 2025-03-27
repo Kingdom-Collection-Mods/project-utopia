@@ -32,7 +32,7 @@ pm_precision_tools_heavy_machinery = {
 }
 
 pm_ut_industry_plastics = {
-	texture = "gfx/interface/icons/production_method_icons/ammonia_soda_process.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_plastic_mass_production.dds"
 	
 	unlocking_technologies = {
 		plastics_nylon
@@ -259,7 +259,7 @@ pm_heavy_machinery_textile  = {
 
 
 pm_automatic_controllers_steel = {
-	texture = "gfx/interface/icons/production_method_icons/electric_sewing_machines.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_steelworks.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -297,7 +297,7 @@ pm_automatic_controllers_steel = {
 }
 
 pm_heavy_machinery_building_coal_mine = {
-	texture = "gfx/interface/icons/production_method_icons/steamworks.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_heavy_excavator.dds"
 
 	unlocking_technologies = {
 		heavy_machinery_mining_production
@@ -333,7 +333,7 @@ pm_heavy_machinery_building_coal_mine = {
 
 
 pm_heavy_machinery_building_iron_mine = {
-	texture = "gfx/interface/icons/production_method_icons/steamworks.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_heavy_excavator.dds"
 
 	unlocking_technologies = {
 		heavy_machinery_mining_production
@@ -487,7 +487,7 @@ pm_modern_automobiles = {
 
 
 pm_oil_heavy_machinery_mine = {
-	texture = "gfx/interface/icons/production_method_icons/electric_arc_process.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_pumping_jack.dds"
 	unlocking_technologies = {
 		heavy_machinery_era_analog
 	}
@@ -513,7 +513,7 @@ pm_oil_heavy_machinery_mine = {
 }
 
 pm_oil_automated_heavy_machinery_mine = {
-	texture = "gfx/interface/icons/production_method_icons/steamworks.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_pumping_jack_2.dds"
 	unlocking_technologies = {
 		software
 	}

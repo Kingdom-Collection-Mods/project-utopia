@@ -865,7 +865,7 @@ pm_bauxite_steam_powered_mine = {
 }
 
 pm_bauxite_heavy_machinery_mine = {
-	texture = "gfx/interface/icons/production_method_icons/electric_arc_process.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_excavator.dds"
 	unlocking_technologies = {
 		heavy_machinery_era_analog
 	}
@@ -893,7 +893,7 @@ pm_bauxite_heavy_machinery_mine = {
 }
 
 pm_bauxite_automated_heavy_machinery_mine = {
-	texture = "gfx/interface/icons/production_method_icons/steamworks.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_heavy_excavator.dds"
 	unlocking_technologies = {
 		software
 	}
