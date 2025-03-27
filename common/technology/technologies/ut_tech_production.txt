@@ -143,7 +143,7 @@ bauxite_mining = {
 
 aluminum_base = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/conveyers.dds"
+	texture = "gfx/interface/icons/invention_icons/aluminum.dds"
 	category = production
 
 	unlocking_technologies = {	
