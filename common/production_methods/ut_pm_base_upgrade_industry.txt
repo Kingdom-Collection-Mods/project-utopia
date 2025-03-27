@@ -187,7 +187,7 @@ pm_pre_baked_dough_pieces = {
 
 
 pm_heavy_machinery_furnite = {
-	texture = "gfx/interface/icons/production_method_icons/steel_tools.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_furniture_cnc.dds"
 	
 	unlocking_technologies = {
 		heavy_machinery_industry
@@ -222,7 +222,7 @@ pm_heavy_machinery_furnite = {
 }
 
 pm_heavy_machinery_textile  = {
-	texture = "gfx/interface/icons/production_method_icons/arc_welded_buildings.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_cloth_machinery.dds"
 	
 	unlocking_technologies = {
 		consumer_goods_main_plastic_revolution
