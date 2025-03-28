@@ -418,6 +418,9 @@
  pm_heavy_machinery_electronics_process: "Elektrische Maschinen"
  pm_heavy_machinery_digital_process: "Digitalisierte Maschinen"
 
+ pm_heavy_machinery_coal_fired_plant: "Groß-Kohlekraftwerk"
+ pm_heavy_machinery_oil_fired_plant: "Groß-Ölkraftwerk"
+
  pm_electronics_circuits_process: "Elektronische Schaltkreisen"
  pm_electronics_transistors_process: "Transistoren"
  pm_electronics_micro_chips_process: "Mikrochips"

@@ -39,7 +39,7 @@ heavy_machinery_builders = {
 
 intercity_transport = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/unused/semaphore_signalling.dds"
+	texture = "gfx/interface/icons/invention_icons/unused/ut_intercity.dds"
 	category = society
 	
 	modifier = {
