@@ -1,0 +1,114 @@
+﻿je_ai_radio_researched = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		NOT = { has_modifier = ai_great_power_buff_spread }
+		NOT = { has_modifier = ai_great_power_buff_spread }
+		NOT = { has_modifier = ai_major_power_buff_spread }
+		NOT = { has_modifier = ai_below_major_power_buff_spread }
+		NOT = { has_variable = ut_is_player }
+	}
+
+	possible = {
+		any_country = {
+			has_technology_researched = radio
+		}
+		NOT = { has_modifier = ai_great_power_buff_spread }
+	}
+
+	immediate = {
+		trigger_event = { id = event_journal_ai.1 }
+	}
+
+	timeout = 1
+}
+
+je_ai_consumer_goods_researched = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		any_country = {
+			has_technology_researched = consumer_goods_main_analog
+		}
+		NOT = { has_modifier = ai_great_power_buff_spread }
+		NOT = { has_modifier = ai_major_power_buff_spread }
+		NOT = { has_modifier = ai_below_major_power_buff_spread }
+		NOT = { has_variable = ut_is_player }
+	}
+
+	possible = {
+		any_country = {
+			has_technology_researched = consumer_goods_main_analog
+		}
+		NOT = { has_modifier = ai_great_power_buff_spread }
+	}
+
+	immediate = {
+		trigger_event = { id = event_journal_ai.1 }
+	}
+
+	timeout = 1
+}
+
+
+je_ai_advanced_consumer_goods_researched = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		NOT = { has_modifier = ai_great_power_buff_spread }
+		NOT = { has_modifier = ai_major_power_buff_spread }
+		NOT = { has_modifier = ai_below_major_power_buff_spread }
+		NOT = { has_variable = ut_is_player }
+	}
+
+	possible = {
+		any_country = {
+			has_technology_researched = consumer_goods_main_digital_products
+		}
+		NOT = { has_modifier = ai_great_power_buff_spread }
+	}
+
+	immediate = {
+		trigger_event = { id = event_journal_ai.1 }
+	}
+
+	timeout = 1
+}
+
+je_ai_not_ai = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		OR = {
+			country_rank < rank_value:great_power
+			is_player = yes
+		}
+		has_modifier = ai_great_power_buff_spread
+		has_modifier = ai_great_power_buff_spread 
+		has_modifier = ai_major_power_buff_spread
+		has_modifier = ai_below_major_power_buff_spread
+	}
+
+	possible = {
+		OR = {
+			country_rank < rank_value:great_power
+			is_player = yes
+		}
+		has_modifier = ai_great_power_buff_spread
+	}
+
+	immediate = {
+		remove_modifier = ai_great_power_buff_spread
+		set_variable = ut_is_player
+	}
+
+	timeout = 1
+}

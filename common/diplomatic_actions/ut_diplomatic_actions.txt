@@ -54,7 +54,7 @@ ut_research_agreement = {
 
 		second_modifier = {
 			country_pact_leverage_generation_add = 200
-			country_tech_spread_mult = 0.1
+			country_weekly_innovation_add = 50
 		}
 
 		is_two_sided_pact = yes

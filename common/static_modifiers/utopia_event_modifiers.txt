@@ -10,7 +10,23 @@ agricultural_mechanization = {
 # consumer goods
 slow_tech_progress = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	country_weekly_innovation_max_add = 10
+	country_weekly_innovation_max_add = 20
+}
+
+
+ai_great_power_buff_spread = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_tech_spread_add = 200
+}
+
+ai_major_power_buff_spread = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_tech_spread_add = 100
+}
+
+ai_below_major_power_buff_spread = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_tech_spread_add = 50
 }
 
 wirtschaftswunder_modifier = {
@@ -21,15 +37,15 @@ wirtschaftswunder_modifier = {
 
 wirtschaftswunder_others_modifier = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	country_tech_spread_mult = 0.1
+	country_tech_spread_add = 50
 }
 
 early_civil_aviation_modifier_others = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	country_tech_spread_mult = 0.1
+	country_tech_spread_add = 50
 }
 
 modern_civil_aviation_modifier_others = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	country_tech_spread_mult = 0.1
+	country_tech_spread_add = 50
 }

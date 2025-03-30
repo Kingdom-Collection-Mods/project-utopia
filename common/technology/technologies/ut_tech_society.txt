@@ -5,8 +5,8 @@ highway_projects = {
 	category = society
 	
 	modifier = {
-		state_infrastructure_from_population_max_add = 20
-		state_highways_max_level_add = 5
+		state_highways_max_level_add = 4
+		state_infrastructure_from_automobiles_consumption_add = 0.1
 	}
 	
 	unlocking_technologies = {	
@@ -18,28 +18,9 @@ highway_projects = {
 	}
 }
 
-heavy_machinery_builders = {
-	era = era_6
-	texture = "gfx/interface/icons/invention_icons/open_hearth_process.dds"
-	category = society
-		
-	modifier = {
-		state_infrastructure_from_population_max_add = 20
-	}
-
-	unlocking_technologies = {	
-		highway_projects
-	}
-	
-	ai_weight = {
-		value = 2 # Important
-	}
-}
-
-
 intercity_transport = {
-	era = era_7
-	texture = "gfx/interface/icons/invention_icons/unused/ut_intercity.dds"
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/40s_highway.dds"
 	category = society
 	
 	modifier = {
@@ -48,11 +29,29 @@ intercity_transport = {
 	}
 
 	unlocking_technologies = {	
-		heavy_machinery_builders
+		highway_projects
 	}
 	
 	ai_weight = {
 		value = 1
+	}
+}
+
+heavy_machinery_builders = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/open_hearth_process.dds"
+	category = society
+		
+	modifier = {
+		state_infrastructure_from_population_max_add = 20
+	}
+
+	unlocking_technologies = {	
+		intercity_transport
+	}
+	
+	ai_weight = {
+		value = 2 # Important
 	}
 }
 
@@ -88,8 +87,8 @@ early_civil_aviation = {
 	}
 		
 	modifier = {
-		state_infrastructure_from_population_max_add = 20
 		market_land_trade_capacity_add = 20
+		state_migration_pull_mult = 0.05
 	}
 
 	unlocking_technologies = {	
@@ -109,6 +108,7 @@ civil_airlines = {
 		
 	modifier = {
 		country_max_companies_add = 1
+		state_infrastructure_from_population_max_add = 20
 	}
 
 	unlocking_technologies = {	
@@ -133,8 +133,8 @@ modern_civil_aviation = {
 	}
 		
 	modifier = {
-		state_infrastructure_from_population_max_add = 20
 		market_land_trade_capacity_add = 20
+		state_migration_pull_mult = 0.05
 	}
 
 	unlocking_technologies = {	
@@ -153,6 +153,7 @@ international_commerce = {
 		
 	modifier = {
 		country_max_companies_add = 1
+		state_infrastructure_from_population_max_add = 20
 	}
 
 	unlocking_technologies = {

@@ -54,6 +54,7 @@
  je_modern_civil_aviation: "Modern Civil Aviation"
 
  je_urbanist_ig: "Urbanist Movement"
+ event_journal_ai: "Fortschrittsverbreitung"
 
 # Pop and Politics
  service_workers: "@service_workers! $service_workers_no_icon$"

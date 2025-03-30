@@ -1,0 +1,49 @@
+﻿namespace = event_journal_ai
+# je_urbanist_ig >1% Urbanisten
+event_journal_ai.1 = {
+	title = event_journal_ai
+	type = country_event
+	event_image = { video = "factory_precision" }
+
+	duration = 3
+	immediate = {
+		if = {
+			limit = { 
+				is_ai = yes
+			}
+			if = {
+				limit = { 
+					country_rank >= rank_value:great_power
+				}
+				add_modifier = {
+					name = ai_great_power_buff_spread
+					months = normal_modifier_time
+				} 
+			}
+			else_if = {
+				limit = {
+					country_rank = rank_value:major_power
+				}
+				add_modifier = {
+					name = ai_great_power_buff_spread
+					months = normal_modifier_time
+				} 
+			}
+			else = {
+				add_modifier = {
+					name = ai_below_major_power_buff_spread
+					months = normal_modifier_time
+				}				
+			}
+		}
+		else_if = {
+			set_variable = ut_is_player
+		}
+
+	}
+
+	option = {
+		name = utopia.slow_progress
+		default_option = yes
+	}
+}

@@ -38,12 +38,11 @@ je_wirtschaftswunder = {
 	group = je_group_internal_affairs
 
 	is_shown_when_inactive = {
-		is_player = yes
 	}
 
 	possible = {
 		NOT = {	has_global_variable = je_wirtschaftswunder_done	}
-		has_technology_researched = heavy_machinery_era_digital	
+		has_technology_researched = heavy_machinery_era_analog
 	}
 
 	complete = {
@@ -121,28 +120,24 @@ je_early_civil_aviation = {
 	group = je_group_technology
 
 	is_shown_when_inactive = {
-		is_player = yes
 		NOT = {	has_variable = je_early_civil_aviation_done	}
 	}
 
 	possible = {
 		NOT = { has_variable = je_early_civil_aviation_done }
-	}
-
-	complete = {
 		any_country = {
 			has_technology_researched = early_civil_aviation
 		}
 	}
 
-	on_complete = {
+	immediate = {
 		trigger_event = { id = utopia_journal_society.4 }
 		set_variable = {
 			name = je_early_civil_aviation_done
 		}
 	}
 
-	timeout = 3650
+	timeout = 1
 }
 
 je_modern_civil_aviation = {
@@ -151,26 +146,22 @@ je_modern_civil_aviation = {
 	group = je_group_technology
 
 	is_shown_when_inactive = {
-		is_player = yes
 		NOT = {	has_variable = je_modern_civil_aviation_done	}
 	}
 
 	possible = {
 		NOT = { has_variable = je_modern_civil_aviation_done }
-	}
-
-	complete = {
 		any_country = {
 			has_technology_researched = modern_civil_aviation
 		}
 	}
 
-	on_complete = {
+	immediate = {
 		trigger_event = { id = utopia_journal_society.5 }
 		set_variable = {
 			name = je_modern_civil_aviation_done
 		}
 	}
 
-	timeout = 3650
+	timeout = 1
 }
