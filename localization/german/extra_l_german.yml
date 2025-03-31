@@ -71,7 +71,8 @@
 
  ig_urbanists: "Urbanisten"
  ig_urbanists_desc: "Dienstleistende in modernen urbanen Umgebungen, die Fachkräfte in Bereichen wie Gastgewerbe, Einzelhandel, Transport und anderen Sektoren der zeitgenössischen Wirtschaft repräsentieren."
- ig_urbanists_only_icon: "@service_workers!"
+ ig_urbanists_only_icon: "@urbanists!"
+ ig_variant_urbanists: "[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant]"
  interest_group_ig_urbanists_pol_str_mult: "$ig_variant_urbanists$ [concept_political_strength]"
  
  ideology_urbanist_liberalist: "Urban-liberale Ideologie"
@@ -500,6 +501,7 @@
 
  bauxite: "Bauxit"
  aluminum: "Aluminium"
+ rare_earths: "Seltene Erden"
  plastic: "Plastik"
  trucks: "LKWs"
  highways: "Autobahnen"

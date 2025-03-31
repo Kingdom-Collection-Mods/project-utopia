@@ -18,3 +18,12 @@ texticon = {
     fontsize = 30
   }
 }
+
+texticon = {
+  icon = urbanists
+  iconsize = {
+    offset = { 0 7 }
+    texture = "gfx/interface/icons/ig_icons/urbanists_30.dds"
+    fontsize = 22
+  }
+}

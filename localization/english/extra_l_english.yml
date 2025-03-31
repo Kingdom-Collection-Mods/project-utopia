@@ -58,7 +58,7 @@
 
 # Pop and Politics
  service_workers: "@service_workers! $service_workers_no_icon$"
- service_workers_desc: "Workers in urban service sectors such as hospitality, retail, and transport. They form an essential part of the modern economy and represent a diverse, dynamic workforce."
+ service_workers_desc: "Workers in urban service sectors such as hospitality, retail, and transport. They form an essential part of the service economy and represent a diverse, dynamic workforce."
  service_workers_only_icon: "@service_workers!"
  service_workers_no_icon: "Service Workers"
  POP_SERVICE_WORKERS: "$service_workers$ [concept_profession]"
@@ -72,7 +72,8 @@
 
  ig_urbanists: "Urbanists"
  ig_urbanists_desc: "Service workers in modern urban environments representing professionals in hospitality, retail, transport, and other sectors of the contemporary economy."
- ig_urbanists_only_icon: "@service_workers!"
+ ig_urbanists_only_icon: "@urbanists!"
+ ig_variant_urbanists: "[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant]"
  interest_group_ig_urbanists_pol_str_mult: "$ig_variant_urbanists$ [concept_political_strength]"
 
  ideology_urbanist_liberalist: "Urban-Liberal Ideology"
@@ -498,6 +499,7 @@
 
  bauxite: "Bauxite"
  aluminum: "Aluminum"
+ rare_earths: "Rare Earths"
  plastic: "Plastic"
  trucks: "Trucks"
  highways: "Highways"
