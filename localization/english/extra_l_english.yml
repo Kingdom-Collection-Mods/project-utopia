@@ -149,6 +149,7 @@
  principle_group_modern_sovereign_empire: "Modern Sovereign State"
  principle_group_modern_military_treaty_organization: "Modern Military Treaty Organization"
  principle_group_modern_ideological_union: "Modern Ideological Union"
+ ut_principle_group_advanced_research: "Fortgeschrittene Forschung"
 
  ut_has_truce_with_target: "Has truce with [ROOT.GetCountry.GetName]"
  ut_has_no_truce_with_target: "No truce with [ROOT.GetCountry.GetName]"
@@ -391,7 +392,8 @@
  building_software_company: "Software Companies"
  building_synthetic_oil: "Oil Refineries"
 
- pmg_bauxite_making_process: "Bauxite Processing"
+ pmg_synthetic_oil_making_process: "Base"
+ pmg_bauxite_making_process: "Base"
  pmg_logistics_bauxite_mine: "Bauxite Mine Logistics"
  pmg_rare_earths_making_process: "Rare Earths Processing"
  pmg_logistics_rare_earths_mine: "Rare Earth Mine Logistics"
@@ -404,7 +406,7 @@
  pmg_software_making_process: "Software Development Process"
  pmg_highway_cars: "Highway Cars"
  pmg_highway_trucks: "Highway Trucks"
- pmg_complex_consumer_goods_making_process: "Complex Consumer Goods Production Group"
+ pmg_complex_consumer_goods_making_process: "Complex Consumer Goods"
 
  pm_heavy_machinery_engines: "Multi-cylinder Engines"
  pm_electronics_engines: "ECU Engines"
@@ -420,11 +422,14 @@
  pm_heavy_machinery_electronics_process: "Electric Machines"
  pm_heavy_machinery_digital_process: "Digitized Machines"
 
+ pm_heavy_machinery_coal_fired_plant: "Groß-Kohlekraftwerk"
+ pm_heavy_machinery_oil_fired_plant: "Groß-Ölkraftwerk"
+
  pm_electronics_circuits_process: "Electronic Circuits"
  pm_electronics_transistors_process: "Transistors"
  pm_electronics_micro_chips_process: "Microchips"
 
- pmg_computers_making_process: "COMPUTER BASE"
+ pmg_computers_making_process: "Base"
  pm_computers_electromechanical_process: "Electromechanical Computer"
  pm_computers_transistors_process: "Transistor Computer"
  pm_computers_integrated_chips_process: "Personal Computer"
@@ -435,9 +440,9 @@
  pm_bauxite_automated_heavy_machinery_mine: "Automated Machinery"
  pm_aluminum_one_process: "Aluminum Oxidation"
  pm_rare_earths_one_mine: "Basic Rare Earth Mine"
+ pm_rare_earths_two_mine: "Erweiterte Seltene Erden-Mine"
 
  pmg_consumer_goods_making_process: "Basic"
- pmg_complex_consumer_goods_making_process: "Advanced"
  pm_consumer_goods_analog_process: "Simple Production"
  pm_consumer_goods_electrical_process: "Electrical Devices"
  pm_consumer_goods_plastic_process: "Plastic Consumer Goods"
@@ -521,6 +526,13 @@
  ut_high_tech_company_research: "High-Tech Research Institute"
  pm_ut_high_speed_electric_trains: "Intercity"
  pm_ut_high_speed_electric_trains_principle_transport_3: "Intercity"
+
+ pm_automatic_power_looms_2: "Schützenlose Webmaschine"
+ pm_assembly_lines_building_heavy_machinery_power: "Automatisierte Montagebänder"
+ pm_assembly_lines_building_heavy_machinery_tools_furniture: "Automatisierte Montagebänder"
+ pm_assembly_lines_building_heavy_machinery_tools_motors: "Automatisierte Montagebänder"
+ pm_steel_heavy_machinery: "Stranggussanlage"
+ pm_steel_computers: "Industrie Roboter"
 
  smart_irrigation_building_tea_plantation: "Smart Irrigation"
  smart_irrigation_building_tobacco_plantation: "Smart Irrigation"

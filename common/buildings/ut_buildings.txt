@@ -138,6 +138,7 @@ building_electronic_factory = {
 	production_method_groups = {
 		pmg_electronics_making_process
 		pmg_administration_modern_industry
+		pmg_logistics_modern_industry
 	}
 	
 	required_construction = construction_cost_modern_industry

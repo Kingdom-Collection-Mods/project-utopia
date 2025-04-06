@@ -253,7 +253,7 @@ pmg_automation_building_motor_industry = {
 		pm_watertube_boiler_building_motor_industry
 		pm_rotary_valve_engine_building_motor_industry
 		pm_assembly_lines_building_motor_industry
-		pm_assembly_lines_building_heavy_machinery_tools_motor
+		pm_assembly_lines_building_heavy_machinery_tools_motors
 	}
 }
 

@@ -527,9 +527,11 @@
  pm_ut_high_speed_electric_trains_principle_transport_3: "Intercity"
 
  pm_automatic_power_looms_2: "Schützenlose Webmaschine"
- pm_assembly_lines_building_heavy_machinery: "Automated Assembly Line"
+ pm_assembly_lines_building_heavy_machinery_power: "Automatisierte Montagebänder"
+ pm_assembly_lines_building_heavy_machinery_tools_furniture: "Automatisierte Montagebänder"
+ pm_assembly_lines_building_heavy_machinery_tools_motors: "Automatisierte Montagebänder"
  pm_steel_heavy_machinery: "Stranggussanlage"
- pm_steel_computers: "Industrial Robots"
+ pm_steel_computers: "Industrie Roboter"
 
  smart_irrigation_building_tea_plantation: "Intelligente Bewässerung"
  smart_irrigation_building_tobacco_plantation: "Intelligente Bewässerung"

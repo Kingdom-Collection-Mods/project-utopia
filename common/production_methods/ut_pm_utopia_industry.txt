@@ -70,9 +70,10 @@ pm_heavy_machinery_analog_process = {
 		}
 
 		level_scaled = {
+			#employment 4000 (full modern industry)
 			building_employment_laborers_add = 2000 # Base -2000 logistics
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1500
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1000
 		}
 	}
 
@@ -109,10 +110,10 @@ pm_heavy_machinery_electronics_process = {
 		}
 
 		level_scaled = {
-			# employment
+			#employment 4000 (full modern industry)
 			building_employment_laborers_add = 2000 # Base -2000 logistics
-			building_employment_machinists_add = 1250
-			building_employment_engineers_add = 1750
+			building_employment_machinists_add = 750
+			building_employment_engineers_add = 1250
 		}
 	}
 
@@ -150,10 +151,10 @@ pm_heavy_machinery_digital_process = {
 		}
 
 		level_scaled = {
-			# employment
+			#employment 4000 (full modern industry)
 			building_employment_laborers_add = 2000 # Base -2000 logistics
-			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 2000
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 1500
 		}
 	}
 
@@ -181,10 +182,10 @@ pm_plastic_one_process = {
 		}
 
 		level_scaled = {
-			# employment
+			# employment sum 5000 (no admin)
 			building_employment_laborers_add = 2500 # Base -2000 logistics
 			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1500
+			building_employment_engineers_add = 1000
 		}
 	}
 
@@ -215,10 +216,10 @@ pm_plastic_two_process = {
 		}
 
 		level_scaled = {
-			# employment
+			# employment sum 5000 (no admin)
 			building_employment_laborers_add = 2000 # Base -2000 logistics
-			building_employment_machinists_add = 1250
-			building_employment_engineers_add = 1750
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1500
 		}
 	}
 
@@ -248,13 +249,11 @@ pm_consumer_goods_analog_process = {
 		}
 
 		level_scaled = {
-			# employment
-			building_employment_laborers_add = 4000 # Base -2000 logistics
-			#todo rework with +3000 base from base, and and clerks etc from missing admin
-			# building_employment_machinists_add = 1250
-			# building_employment_engineers_add = 1750
+			# employment sum 5000 (no admin)
+			building_employment_laborers_add = 2000 # Base -2000 logistics
+			building_employment_service_workers_add = 2000
+			building_employment_machinists_add = 500
 			building_employment_clerks_add = 500
-			building_employment_service_workers_add = 500
 		}
 	}
 
@@ -290,12 +289,12 @@ pm_consumer_goods_electrical_process = {
 		}
 
 		level_scaled = {
-			# employment
-			building_employment_laborers_add = 4000 # Base -2000 logistics
-			#todo rework
-			building_employment_machinists_add = 500
+			# employment sum 5000 (no admin)
+			building_employment_laborers_add = 2000 # Base -2000 logistics
+			building_employment_service_workers_add = 2000
+			building_employment_machinists_add = 250
+			building_employment_engineers_add = 250
 			building_employment_clerks_add = 500
-			building_employment_service_workers_add = 1000
 		}
 	}
 
@@ -331,12 +330,12 @@ pm_consumer_goods_plastic_process = {
 		}
 
 		level_scaled = {
-			# employment
-			building_employment_laborers_add = 4000 # Base -2000 logistics
-			#todo rework
-			building_employment_machinists_add = 500
-			building_employment_clerks_add = 500
-			building_employment_service_workers_add = 1000
+			# employment sum 5000 (no admin)
+			building_employment_laborers_add = 2000 # Base -2000 logistics
+			building_employment_service_workers_add = 2250
+			building_employment_machinists_add = 250
+			building_employment_engineers_add = 250
+			building_employment_clerks_add = 250
 		}
 	}
 
@@ -374,9 +373,9 @@ pm_complex_consumer_goods_electrical_process = {
 
 		level_scaled = {
 			# employment
-			building_employment_laborers_add = 500
-			building_employment_machinists_add = 500
-			building_employment_academics_add = 500
+			building_employment_laborers_add = 250
+			building_employment_machinists_add = 250
+			building_employment_engineers_add = 500
 			building_employment_service_workers_add = 1000
 		}
 	}
@@ -413,10 +412,9 @@ pm_complex_consumer_goods_computer_process = {
 
 		level_scaled = {
 			# employment
-			building_employment_laborers_add = 500
 			building_employment_machinists_add = 500
-			building_employment_academics_add = 1000
-			building_employment_service_workers_add = 2000
+			building_employment_engineers_add = 500
+			building_employment_service_workers_add = 1000
 		}
 	}
 
@@ -453,10 +451,9 @@ pm_complex_consumer_goods_software_process = {
 
 		level_scaled = {
 			# employment
-			building_employment_laborers_add = 500
 			building_employment_machinists_add = 500
-			building_employment_academics_add = 1500
-			building_employment_service_workers_add = 3000
+			building_employment_engineers_add = 750
+			building_employment_service_workers_add = 750
 		}
 	}
 
@@ -480,11 +477,11 @@ pm_software_one_process = {
 		}
 
 		level_scaled = {
-			# employment
-			building_employment_laborers_add = 2000 # Base -2000 logistics
-			building_employment_clerks_add = 500
-			building_employment_service_workers_add = 1000
-			building_employment_academics_add = 1500
+			# employment 3000 (no logistics)
+			building_employment_laborers_add = 250
+			building_employment_clerks_add = 250
+			building_employment_service_workers_add = 500
+			building_employment_engineers_add = 2000
 		}
 	}
 
@@ -515,10 +512,10 @@ pm_electronics_circuits_process = {
 		}
 
 		level_scaled = {
-			# employment
-			building_employment_laborers_add = 3000 # Base -2000 logistics
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1500
+			# employment 4000 (full modern industry)
+			building_employment_laborers_add = 2000 # Base -2000 logistics
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1000
 		}
 	}
 
@@ -549,11 +546,10 @@ pm_electronics_transistors_process = {
 		}
 
 		level_scaled = {
-			# employment
-			building_employment_laborers_add = 2500 # Base -2000 logistics
-			building_employment_machinists_add = 1250
-			building_employment_engineers_add = 1500
-			building_employment_academics_add = 250
+			# employment 4000 (full modern industry)
+			building_employment_laborers_add = 2000 # Base -2000 logistics
+			building_employment_machinists_add = 750
+			building_employment_engineers_add = 1250
 		}
 	}
 
@@ -586,11 +582,10 @@ pm_electronics_micro_chips_process = {
 		}
 
 		level_scaled = {
-			# employment
+			# employment 4000 (full modern industry)
 			building_employment_laborers_add = 2000 # Base -2000 logistics
-			building_employment_machinists_add = 1000
+			building_employment_machinists_add = 500
 			building_employment_engineers_add = 1500
-			building_employment_academics_add = 500
 		}
 	}
 
@@ -618,10 +613,10 @@ pm_computers_electromechanical_process = {
 		}
 
 		level_scaled = {
-			# employment
+			# employment 4000 (full modern industry)
 			building_employment_laborers_add = 2000 # Base -2000 logistics
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1500
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1000
 		}
 	}
 
@@ -655,11 +650,10 @@ pm_computers_transistors_process = {
 		}
 
 		level_scaled = {
-			# employment
+			# employment 4000 (full modern industry)
 			building_employment_laborers_add = 2000 # Base -2000 logistics
-			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 1500
-			building_employment_service_workers_add = 500
+			building_employment_machinists_add = 750
+			building_employment_engineers_add = 1250
 		}
 	}
 
@@ -693,12 +687,10 @@ pm_computers_integrated_chips_process  = {
 		}
 
 		level_scaled = {
-			# employment
+			# employment 4000 (full modern industry)
 			building_employment_laborers_add = 2000 # Base -2000 logistics
-			building_employment_machinists_add = 750
+			building_employment_machinists_add = 500
 			building_employment_engineers_add = 1500
-			building_employment_academics_add = 250
-			building_employment_service_workers_add = 500
 		}
 	}
 
@@ -735,12 +727,10 @@ pm_computers_micro_chips_process  = {
 		}
 
 		level_scaled = {
-			# employment
+			# employment 4000 (full modern industry)
 			building_employment_laborers_add = 2000 # Base -2000 logistics
-			building_employment_machinists_add = 750
-			building_employment_engineers_add = 1500
-			building_employment_academics_add = 500
-			building_employment_service_workers_add = 750
+			building_employment_machinists_add = 250
+			building_employment_engineers_add = 1750
 		}
 	}
 
@@ -766,7 +756,7 @@ pm_bauxite_steam_powered_mine = {
 
 		level_scaled = {
 			#$bauxite_steam_powered_emp
-			building_employment_laborers_add = 4000 # Base -2000 logistics
+			building_employment_laborers_add = 2500 # Base -2000 logistics
 			building_employment_machinists_add = 1500
 			building_employment_engineers_add = 500
 			building_employment_shopkeepers_add = 500
@@ -794,10 +784,11 @@ pm_bauxite_heavy_machinery_mine = {
 
 		level_scaled = {
 			#$mine_heavy_machinery_emp
-			building_employment_laborers_add = 3000 # Base -2000 logistics
-			building_employment_service_workers_add = 500
-			building_employment_machinists_add = 1500
+			building_employment_laborers_add = 2000 # Base -2000 logistics
+			building_employment_machinists_add = 1250
 			building_employment_engineers_add = 1000
+			building_employment_service_workers_add = 250
+			building_employment_shopkeepers_add = 500
 		}
 	}
 }
@@ -823,10 +814,10 @@ pm_bauxite_automated_heavy_machinery_mine = {
 
 		level_scaled = {
 			building_employment_laborers_add = 2000 # Base -2000 logistics
-			building_employment_service_workers_add = 1500
-			building_employment_laborers_add = 1000
-			building_employment_machinists_add = 2000
+			building_employment_machinists_add = 750
 			building_employment_engineers_add = 1500
+			building_employment_service_workers_add = 250
+			building_employment_shopkeepers_add = 500
 		}
 	}
 }
@@ -892,10 +883,12 @@ pm_aluminum_one_process = {
 		}
 
 		level_scaled = {
-			building_employment_service_workers_add = 500
+			#sum 5000 (no admin)
+			building_employment_shopkeepers_add = 250
+			building_employment_service_workers_add = 250
 			building_employment_laborers_add = 2500 # Base -2000 logistics
-			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 500
+			building_employment_machinists_add = 100
+			building_employment_engineers_add = 1000
 		}
 	}
 
@@ -923,10 +916,11 @@ pm_aluminum_two_process = {
 		}
 
 		level_scaled = {
-			building_employment_service_workers_add = 500
+			building_employment_shopkeepers_add = 250
+			building_employment_service_workers_add = 250
 			building_employment_laborers_add = 2000 # Base -2000 logistics
 			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 500
+			building_employment_engineers_add = 1500
 		}
 	}
 
@@ -946,10 +940,7 @@ pm_hi_analogue_admin = {
 		}
 
 		level_scaled = {
-			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 1000
-			building_employment_bureaucrats_add = 500
-			building_employment_clerks_add = 500
+			building_employment_clerks_add = 2000
 			building_employment_service_workers_add = 500
 		}
 		
@@ -969,13 +960,8 @@ pm_hi_connected_admin = {
 		}
 
 		level_scaled = {
-			building_employment_machinists_add = 500
-			building_employment_engineers_add = 1000
-			building_employment_bureaucrats_add = 500
-			building_employment_service_workers_add = 750
-		}
-		unscaled = {
-			building_economy_of_scale_level_cap_add = 5
+			building_employment_clerks_add = 1000
+			building_employment_service_workers_add = 1000
 		}
 	}
 }
@@ -993,15 +979,10 @@ pm_hi_digital_admin = {
 		}
 
 		level_scaled = {
-			building_employment_machinists_add = 500
-			building_employment_engineers_add = 750
-			building_employment_bureaucrats_add = 250
+			building_employment_clerks_add = 500
 			building_employment_service_workers_add = 1000
 		}
 		
-		unscaled = {
-			building_economy_of_scale_level_cap_add = 10
-		}
 	}	
 }
 
@@ -1018,15 +999,8 @@ pm_hi_automated_admin = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 2000 # Base -2000 logistics
-			building_employment_machinists_add = 500
-			building_employment_engineers_add = 500
-			building_employment_bureaucrats_add = 100
-			building_employment_service_workers_add = 750
-		}
-	
-		unscaled = {
-			building_economy_of_scale_level_cap_add = 20
+			building_employment_clerks_add = 500
+			building_employment_service_workers_add = 500
 		}
 	}	
 }
@@ -1270,10 +1244,12 @@ pm_synthetic_oil_one_process = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 3000
-			building_employment_machinists_add = 500
-			building_employment_engineers_add = 500
-			building_employment_service_workers_add = 500
+			#employment 5000 (no admin)
+			building_employment_laborers_add = 2500
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 750
+			building_employment_service_workers_add = 250
+			building_employment_shopkeepers_add = 500
 		}
 	}
 }
@@ -1296,10 +1272,12 @@ pm_synthetic_oil_two_process = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 2500 # Base -2000 logistics
+			#employment 5000 (no admin)
+			building_employment_laborers_add = 2000
 			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 500
-			building_employment_service_workers_add = 500
+			building_employment_engineers_add = 1250
+			building_employment_service_workers_add = 250
+			building_employment_shopkeepers_add = 500
 		}
 	}
 }

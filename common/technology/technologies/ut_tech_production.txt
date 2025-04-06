@@ -209,6 +209,10 @@ heavy_machinery_industry = {
 	unlocking_technologies = {	
 		heavy_machinery_era_digital
 	}
+
+	modifier = {
+		building_economy_of_scale_level_cap_add = 5
+	}
 	
 	ai_weight = {
 		value = 2 # Important
@@ -309,6 +313,7 @@ computers = {
 	category = production
 	
 	modifier = {
+		building_economy_of_scale_level_cap_add = 5
 	}
 	
 	unlocking_technologies = {	
