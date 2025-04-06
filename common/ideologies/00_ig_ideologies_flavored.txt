@@ -691,8 +691,8 @@ ideology_colonialist = {
 	
 	lawgroup_trade_policy = {		
 		law_free_trade = approve	
-		law_free_trade_union= neutral
-		law_protectionism_union = neutral
+		law_free_trade_union= approve
+		law_protectionism_union = disapprove
 		law_mercantilism = neutral
 		law_protectionism = disapprove
 		law_isolationism = strongly_disapprove

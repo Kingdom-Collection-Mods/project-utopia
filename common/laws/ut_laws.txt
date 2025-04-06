@@ -194,9 +194,8 @@ law_social_market_economy = {
 		building_nationalization_investment_return_add = 0.25
 		country_government_dividends_reinvestment_add = 0.5
 		country_government_dividends_efficiency_add = 0.10
-		state_shopkeepers_investment_pool_efficiency_mult = 0.1	
-		state_capitalists_investment_pool_efficiency_mult = 0.1	
-		state_service_workers_investment_pool_efficiency_mult = 0.1
+		state_shopkeepers_investment_pool_efficiency_mult = 0.05
+		state_service_workers_investment_pool_efficiency_mult = 0.05
 		country_max_companies_add = 1
 
 		country_pec_fake_add_marketconfidence = 0.1 #pec
@@ -236,14 +235,15 @@ law_free_market_economy = {
 		country_loan_interest_rate_mult = -0.25
 		state_shopkeepers_investment_pool_efficiency_mult = 0.3
 		state_capitalists_investment_pool_efficiency_mult = 0.3
+		state_service_workers_investment_pool_efficiency_mult = 0.1
+		country_capitalists_pol_str_mult = 0.2
 		country_private_construction_allocation_mult = 0.8
-		country_government_dividends_reinvestment_add = 1.0		
+		country_government_dividends_reinvestment_add = 1.05
 		country_max_companies_add = 2
 		country_disable_nationalization_bool = yes
 		country_force_privatization_bool = yes
 		country_company_pay_to_establish_bool = yes
 		country_capitalists_pol_str_mult = 0.1
-		state_service_workers_investment_pool_efficiency_mult = 0.2
 		
 		country_pec_fake_add_marketconfidence = 0.25
 	}
@@ -272,25 +272,21 @@ law_protectionism_union = {
 	}
 	
 	tariff_modifier_no_priority = {
-		tariff_export_add = 0.05
-		tariff_import_add = 0.05
 	}	
 	
 	tariff_modifier_export_priority = {
-		tariff_import_add = 0.1
+		tariff_import_add = 0.15
 	}
 	
 	tariff_modifier_import_priority = {
-		tariff_export_add = 0.1
+		tariff_export_add = 0.15
 	}	
 	
 	modifier = {
-		power_bloc_cohesion_mult = 0.2
-		tariff_import_outside_power_bloc_mult = 0.5
-		tariff_export_outside_power_bloc_mult = 0.5
-		country_trade_route_competitiveness_mult = 0.1
-		country_trade_route_quantity_mult = 0.1
-		country_trade_route_cost_mult = -0.1
+		power_bloc_cohesion_mult = 0.25
+		tariff_import_outside_power_bloc_mult = 0.2
+		tariff_export_outside_power_bloc_mult = 0.2
+		country_max_declared_interests_add = 2
 	}
 	
 
@@ -337,6 +333,7 @@ law_free_trade_union = {
 		country_trade_route_quantity_mult = 0.5
 		country_trade_route_cost_mult = -0.5
 		country_leverage_resistance_mult = -0.25
+		country_max_declared_interests_add = 2
 	}
 
 	ai_enact_weight_modifier = { #Petitions

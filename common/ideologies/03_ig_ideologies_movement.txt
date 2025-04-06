@@ -223,8 +223,8 @@ ideology_vanguardist_movement = {
 		law_mercantilism = disapprove		
 		law_isolationism = approve
 		law_free_trade = strongly_disapprove
-		law_free_trade_union= neutral
-		law_protectionism_union = neutral
+		law_free_trade_union= strongly_disapprove
+		law_protectionism_union = approve
 	}
 
 	lawgroup_land_reform = {

@@ -174,7 +174,7 @@ check_payments = {
 		
 	modifier = {
 		state_service_workers_investment_pool_efficiency_mult = 0.1
-		country_trade_route_cost_mult = -0.10
+		country_trade_route_cost_mult = -0.05
 	}
 
 	unlocking_technologies = {	
@@ -194,7 +194,7 @@ credit_cards = {
 		
 	modifier = {
 		state_service_workers_investment_pool_efficiency_mult = 0.1
-		country_max_companies_add = 1
+		country_trade_route_cost_mult = -0.05
 	}
 
 	unlocking_technologies = {	
@@ -214,8 +214,8 @@ digital_payments = {
 	category = society
 		
 	modifier = {
-		state_service_workers_investment_pool_efficiency_mult = 0.1
-		country_trade_route_cost_mult = -0.10
+		state_service_workers_investment_pool_efficiency_mult = 0.05
+		country_trade_route_cost_mult = -0.05
 	}
 
 	unlocking_technologies = {
@@ -234,8 +234,8 @@ digital_trading = {
 	category = society
 		
 	modifier = {
-		state_service_workers_investment_pool_efficiency_mult = 0.1
-		country_trade_route_cost_mult = -0.10
+		state_service_workers_investment_pool_efficiency_mult = 0.05
+		country_trade_route_cost_mult = -0.05
 		country_max_companies_add = 1
 	}
 
@@ -321,7 +321,8 @@ union_new_mandates = {
 	}
 		
 	modifier = {
-		power_bloc_leverage_generation_mult = 0.1
+		power_bloc_leverage_generation_mult = 0.2
+		country_diplomatic_play_maneuvers_add = 20
 	}
 
 	unlocking_technologies = {
@@ -362,7 +363,8 @@ union_new_mandates_two = {
 	}
 
 	modifier = {
-		power_bloc_leverage_generation_mult = 0.1
+		power_bloc_leverage_generation_mult = 0.2
+		country_diplomatic_play_maneuvers_add = 20
 	}
 
 	unlocking_technologies = {
@@ -480,7 +482,7 @@ political_progress_1 = {
 	category = society
 		
 	modifier = {
-		country_service_workers_pol_str_mult = 0.2
+		country_service_workers_pol_str_mult = 0.1
 		interest_group_ig_urbanists_pol_str_mult = 0.1
 	}
 
@@ -499,7 +501,7 @@ political_progress_2 = {
 	category = society
 		
 	modifier = {
-		country_service_workers_pol_str_mult = 0.2
+		country_service_workers_pol_str_mult = 0.1
 		interest_group_ig_urbanists_pol_str_mult = 0.1	
 	}
 
