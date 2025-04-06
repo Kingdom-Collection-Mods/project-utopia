@@ -517,6 +517,8 @@
 
  goods_output_trucks_add: "@trucks! Trucks Output"
  goods_output_trucks_add_desc: "The amount of @trucks! Trucks produced by buildings"
+ goods_output_trucks_mult: "@trucks! Trucks output"
+ goods_output_trucks_mult: "The amount of @trucks! Trucks produced by buildings"
  state_highways_max_level_add: "Add Maximum Level for $highways$"
 
  pm_ut_industry_plastics: "Industrial Plastics"

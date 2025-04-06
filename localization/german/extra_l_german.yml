@@ -444,7 +444,7 @@
  pmg_consumer_goods_making_process: "Grundwert"
  pm_consumer_goods_analog_process: "Einfache Herstellung"
  pm_consumer_goods_electrical_process: "Elektrische Geräte"
- pm_consumer_goods_plastic_process: "Plastic Consumer Goods"
+ pm_consumer_goods_plastic_process: "Plastik Geräte"
 
  pm_hi_analogue_admin: "Analoge Verwaltung"
  pm_hi_connected_admin: "Vernetzte Verwaltung"
@@ -491,9 +491,9 @@
  pm_highway_trucks: "Autobahn-LKW"
 
  pm_complex_consumer_goods_none: "Keine komplexen Konsumgüter"
- pm_complex_consumer_goods_electrical_process: "Televisions"
- pm_complex_consumer_goods_computer_process: "Personal Computer"
- pm_complex_consumer_goods_software_process: "Digital Services"
+ pm_complex_consumer_goods_electrical_process: "Fernseher"
+ pm_complex_consumer_goods_computer_process: "Personale Computer"
+ pm_complex_consumer_goods_software_process: "Digitale Service"
 
  pm_software_one_process: "Software Entwicklung"
 
@@ -516,6 +516,8 @@
 
  goods_output_trucks_add: "@trucks! Trucks output"
  goods_output_trucks_add_desc: "The amount of @trucks! Trucks produced by buildings"
+ goods_output_trucks_mult: "@trucks! Trucks output"
+ goods_output_trucks_mult: "The amount of @trucks! Trucks produced by buildings"
  state_highways_max_level_add: "Maximale Stufe für $highways$ hinzufügen"
 
  pm_ut_industry_plastics: "Industrieplastik"
