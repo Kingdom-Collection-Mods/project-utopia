@@ -795,7 +795,7 @@ pm_elastics_two = {
 
 
 pm_assembly_lines_building_heavy_machinery_tools_motors = {
-	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_assembly_lines.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -828,7 +828,7 @@ pm_assembly_lines_building_heavy_machinery_tools_motors = {
 }
 
 pm_assembly_lines_building_heavy_machinery_tools_furniture = {
-	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_assembly_lines.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -861,7 +861,7 @@ pm_assembly_lines_building_heavy_machinery_tools_furniture = {
 }
 
 pm_assembly_lines_building_heavy_machinery_power = {
-	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_assembly_lines.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -922,7 +922,7 @@ pm_steel_heavy_machinery = {
 }
 
 pm_steel_computers = {
-	texture = "gfx/interface/icons/production_method_icons/rotary_valve_engine.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_pm_steel_computers.dds"
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -951,7 +951,7 @@ pm_steel_computers = {
 }
 
 pm_automatic_power_looms_2 = {
-	texture = "gfx/interface/icons/production_method_icons/automatic_power_looms.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_power_looms.dds"
 	
 	unlocking_technologies = {
 		consumer_goods_main_entertainment_electrical
