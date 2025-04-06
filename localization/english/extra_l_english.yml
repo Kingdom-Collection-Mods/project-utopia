@@ -417,7 +417,7 @@
 
  pm_heavy_machinery_buildings: "Crane and Excavator Construction"
 
- pmg_heavy_machinery_making_process: "TODO"
+ pmg_heavy_machinery_making_process: "Base"
  pm_heavy_machinery_analog_process: "Mechanical Machines"
  pm_heavy_machinery_electronics_process: "Electric Machines"
  pm_heavy_machinery_digital_process: "Digitized Machines"

@@ -148,7 +148,7 @@ pm_heavy_machinery_digital_process = {
 			goods_input_electricity_add = 30
 			
 			# output goods
-			goods_output_heavy_machinery_add = 140
+			goods_output_heavy_machinery_add = 120
 		}
 
 		level_scaled = {
@@ -318,7 +318,7 @@ pm_consumer_goods_plastic_process = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_plastic_add = 20
+			goods_input_plastic_add = 10
 			goods_input_tools_add = 5
 			goods_input_steel_add = 5
 			goods_input_aluminum_add = 10
@@ -443,11 +443,11 @@ pm_complex_consumer_goods_software_process = {
 			goods_input_electronics_add = 10
 			goods_input_electricity_add = 5
 			goods_input_computers_add = 20
-			goods_input_software_add = 40
+			goods_input_software_add = 30
 			goods_input_glass_add = 10
 			
 			# output goods
-			goods_output_consumer_goods_add = 310
+			goods_output_consumer_goods_add = 320
 		}
 
 		level_scaled = {
@@ -509,7 +509,7 @@ pm_electronics_circuits_process = {
 			goods_input_electricity_add = 15
 			
 			# output goods
-			goods_output_electronics_add = 50
+			goods_output_electronics_add = 60
 		}
 
 		level_scaled = {
@@ -543,7 +543,7 @@ pm_electronics_transistors_process = {
 			goods_input_electricity_add = 20
 			
 			# output goods
-			goods_output_electronics_add = 80
+			goods_output_electronics_add = 90
 		}
 
 		level_scaled = {
@@ -724,7 +724,7 @@ pm_computers_micro_chips_process  = {
 			
 			
 			# output goods
-			goods_output_computers_add = 220
+			goods_output_computers_add = 200
 		}
 
 		level_scaled = {
@@ -1213,8 +1213,8 @@ pm_highway_trucks = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_trucks_add = 10
-			goods_output_transportation_add = 50
+			goods_input_trucks_add = 5
+			goods_output_transportation_add = 40
 		}
 		level_scaled = {
 			building_employment_laborers_add = 500

@@ -5,7 +5,7 @@ highway_projects = {
 	category = society
 	
 	modifier = {
-		state_highways_max_level_add = 4
+		state_highways_max_level_add = 3
 		state_infrastructure_from_automobiles_consumption_add = 0.1
 	}
 	
