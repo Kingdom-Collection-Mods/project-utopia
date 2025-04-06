@@ -1,6 +1,6 @@
 ﻿# Heavy Tractors
 agricultural_mechanization = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	building_rye_farm_throughput_add = 0.15
 	building_wheat_farm_throughput_add = 0.15
 	building_maize_farm_throughput_add = 0.15
@@ -9,43 +9,43 @@ agricultural_mechanization = {
 
 # consumer goods
 slow_tech_progress = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_weekly_innovation_max_add = 20
 }
 
 
 ai_great_power_buff_spread = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 200
 }
 
 ai_major_power_buff_spread = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 100
 }
 
 ai_below_major_power_buff_spread = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 50
 }
 
 wirtschaftswunder_modifier = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	country_prestige_mult = 0.2
 	state_standard_of_living_add = 0.5
 }
 
 wirtschaftswunder_others_modifier = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	country_tech_spread_add = 50
 }
 
 early_civil_aviation_modifier_others = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 50
 }
 
 modern_civil_aviation_modifier_others = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 50
 }

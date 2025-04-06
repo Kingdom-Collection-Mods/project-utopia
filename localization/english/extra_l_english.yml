@@ -541,3 +541,12 @@
  smart_irrigation_building_silk_plantation: "Smart Irrigation"
  smart_irrigation_building_vineyard_plantation: "Smart Irrigation"
 
+ agricultural_mechanization: "Heavy Tractors"
+ slow_tech_progress: "Slow Technological Progress"
+ ai_great_power_buff_spread: "Technological Influence (Great Power)"
+ ai_major_power_buff_spread: "Technological Influence (Major Power)"
+ ai_below_major_power_buff_spread: "Technological Influence (Minor Power)"
+ wirtschaftswunder_modifier: "Economic Miracle"
+ wirtschaftswunder_others_modifier: "Economic Miracle (Influence)"
+ early_civil_aviation_modifier_others: "Early Civil Aviation"
+ modern_civil_aviation_modifier_others: "Modern Civil Aviation"

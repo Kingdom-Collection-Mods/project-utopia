@@ -30,7 +30,16 @@ principle_common_financial_policy_1 = {
 	}
 	
 	ai_weight = {
-		value = 1000
+		value = 0
+
+		if = {
+			limit = {
+				has_identity = identity:identity_trade_league
+				NOT = { has_principle_group = principle_group:principle_group_external_trade }
+				NOT = { has_principle_group = principle_group:principle_group_internal_trade }
+			}
+			add = 1000
+		}
 	}
 }
 
@@ -114,7 +123,16 @@ principle_commissariat_1 = {
 	}
 	
 	ai_weight = {
-		value = 1000
+		value = 0
+
+		if = {
+			limit = {
+				has_identity = identity:identity_sovereign_empire
+				NOT = { has_principle_group = principle_group:principle_group_vassalization }
+				NOT = { has_principle_group = principle_group:principle_group_exploit_members }
+			}
+			add = 1000
+		}
 	}
 }
 
@@ -203,7 +221,16 @@ ut_principle_military_cooperation_1 = {
 	}
 
 	ai_weight = {
-		value = 100
+		value = 0
+		
+		if = {
+			limit = {
+				has_identity = identity:identity_military_treaty_organization
+				NOT = { has_principle_group = principle_group:principle_group_aggressive_coordination }
+				NOT = { has_principle_group = principle_group:principle_group_defensive_cooperation }
+			}
+			add = 1000
+		}
 	}
 }
 
@@ -297,7 +324,7 @@ ut_principle_advanced_research_4 = {
 	}
 	
 	ai_weight = {
-		value = 100
+		value = 50
 	}	
 }
 
@@ -386,14 +413,17 @@ ut_modern_ideological_union_1 = {
 	}
 	
 	ai_weight = {
-		value = 200 # High base value for ideological union, but also generally useful for others
+		value = 0 # High base value for ideological union, but also generally useful for others
+		
 		
 		if = {
 			limit = {
-				power_bloc ?= { NOT = { has_identity = identity:identity_ideological_union } } 			
+				has_identity = identity:identity_ideological_union
+				NOT = { has_principle_group = principle_group:principle_group_creative_legislature }
+				NOT = { has_principle_group = principle_group:principle_group_ideological_truth }
 			}
-			multiply = 0.5
-		}		
+			add = 1000
+		}
 	}
 }
 ut_modern_ideological_union_2 = {

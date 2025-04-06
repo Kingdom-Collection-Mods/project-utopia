@@ -33,7 +33,7 @@ intercity_transport = {
 	}
 	
 	ai_weight = {
-		value = 1
+		value = 2 # Important
 	}
 }
 
@@ -96,7 +96,7 @@ early_civil_aviation = {
 	}
 	
 	ai_weight = {
-		value = 1
+		value = 2 # Important
 	}
 }
 
@@ -142,7 +142,7 @@ modern_civil_aviation = {
 	}
 	
 	ai_weight = {
-		value = 1
+		value = 2 # Important
 	}
 }
 
@@ -174,7 +174,8 @@ check_payments = {
 		
 	modifier = {
 		state_service_workers_investment_pool_efficiency_mult = 0.1
-		country_trade_route_cost_mult = -0.05
+		country_minting_mult = 0.05
+		country_loan_interest_rate_mult = -0.01
 	}
 
 	unlocking_technologies = {	
@@ -194,7 +195,8 @@ credit_cards = {
 		
 	modifier = {
 		state_service_workers_investment_pool_efficiency_mult = 0.1
-		country_trade_route_cost_mult = -0.05
+		country_minting_mult = 0.05
+		country_loan_interest_rate_mult = -0.01
 	}
 
 	unlocking_technologies = {	
@@ -262,7 +264,7 @@ modern_economy = {
 	}
 	
 	ai_weight = {
-		value = 1
+		value = 2 # Important
 	}
 }
 

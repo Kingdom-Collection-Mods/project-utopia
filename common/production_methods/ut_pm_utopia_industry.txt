@@ -102,6 +102,7 @@ pm_heavy_machinery_electronics_process = {
 			goods_input_steel_add = 15
 			goods_input_engines_add = 5
 			goods_input_aluminum_add = 10
+			goods_input_computers_add = 1
 			goods_input_electronics_add = 10
 			goods_input_electricity_add = 30
 			
@@ -842,7 +843,7 @@ pm_rare_earths_one_mine = {
 }
 
 pm_rare_earths_two_mine = {
-	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
+	texture = "gfx/interface/icons/production_method_icons/steamworks.dds"
 
 	unlocking_technologies = {
 		rare_earths_mining_era_digital
@@ -860,10 +861,11 @@ pm_rare_earths_two_mine = {
 
 		level_scaled = {
 			#$oil_digital_emp
-			building_employment_service_workers_add = 500
-			building_employment_laborers_add = 1000
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1500
+			building_employment_shopkeepers_add = 500
+			building_employment_service_workers_add = 250
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 750
+			building_employment_engineers_add = 1000
 		}
 	}
 }

@@ -256,7 +256,7 @@ building_commercial_factory = {
 
 building_software_company = {
 	building_group = bg_modern_industry
-	icon = "gfx/interface/icons/building_icons/unused/foundries.dds"
+	icon = "gfx/interface/icons/building_icons/software.dds"
 	city_type = none #city
 	levels_per_mesh = 5
 	
@@ -292,13 +292,17 @@ building_software_company = {
 
 highways = {
 	building_group = bg_private_infrastructure	
-	icon = "gfx/interface/icons/building_icons/building_railway.dds"
+	icon = "gfx/interface/icons/building_icons/highways.dds"
 	
 	lens = infrastructure
 	
 	ai_nationalization_desire = 0.5 # AI is reluctant to privatize railways since they are likely to need subsidies anyway
 
 	has_max_level = yes
+	
+	possible = {
+		on_river = no
+	}
 	
 	unlocking_technologies = { 
 		highway_projects

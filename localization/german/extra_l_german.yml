@@ -438,8 +438,8 @@
  pm_bauxite_heavy_machinery_mine: "Schwerlastmaschinen"
  pm_bauxite_automated_heavy_machinery_mine: "Automatisierte Maschinen"
  pm_aluminum_one_process: "Aluminiumoxidation"
- pm_rare_earths_one_mine: "Grundlegende Seltene Erden-Mine"
- pm_rare_earths_two_mine: "Erweiterte Seltene Erden-Mine"
+ pm_rare_earths_one_mine: "Spitzhaken und Schaufeln"
+ pm_rare_earths_two_mine: "Solventextration"
 
  pmg_consumer_goods_making_process: "Grundwert"
  pm_consumer_goods_analog_process: "Einfache Herstellung"
@@ -539,6 +539,16 @@
  smart_irrigation_building_banana_plantation: "Intelligente Bewässerung"
  smart_irrigation_building_silk_plantation: "Intelligente Bewässerung"
  smart_irrigation_building_vineyard_plantation: "Intelligente Bewässerung"
+
+ agricultural_mechanization: "Schwere Traktoren"
+ slow_tech_progress: "Langsamer technischer Fortschritt"
+ ai_great_power_buff_spread: "Technologischer Einfluss (Großmacht)"
+ ai_major_power_buff_spread: "Technologischer Einfluss (Hauptmacht)"
+ ai_below_major_power_buff_spread: "Technologischer Einfluss (Sekundärmacht)"
+ wirtschaftswunder_modifier: "Wirtschaftswunder"
+ wirtschaftswunder_others_modifier: "Wirtschaftswunder (Einfluss)"
+ early_civil_aviation_modifier_others: "Frühe zivile Luftfahrt"
+ modern_civil_aviation_modifier_others: "Moderne zivile Luftfahrt"
 
 
 # Demands
