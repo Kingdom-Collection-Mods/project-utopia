@@ -912,7 +912,7 @@ pm_aluminum_two_process = {
 			goods_input_electricity_add = 30
 			
 			# output goods
-			goods_output_aluminum_add = 90
+			goods_output_aluminum_add = 120
 		}
 
 		level_scaled = {

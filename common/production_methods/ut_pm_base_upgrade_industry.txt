@@ -440,7 +440,7 @@ pm_truck_production = {
 			goods_input_oil_add = 10
 
 			# output goods
-			goods_output_trucks_add = 30
+			goods_output_trucks_add = 40
 		}
 
 		level_scaled = {
