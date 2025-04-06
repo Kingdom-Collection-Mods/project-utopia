@@ -58,7 +58,7 @@
 
 # Pop and Politics
  service_workers: "@service_workers! $service_workers_no_icon$"
- service_workers_desc: "Workers in urban service sectors such as hospitality, retail, and transport. They form an essential part of the service economy and represent a diverse, dynamic workforce."
+ service_workers_desc: "Workers in urban service sectors such as hospitality, retail, and transport. They form an essential part of the service economy and represent a diverse workforce. Most support the Urbanists, some Petty Bourgeoisie or Trade Unions."
  service_workers_only_icon: "@service_workers!"
  service_workers_no_icon: "Service Workers"
  POP_SERVICE_WORKERS: "$service_workers$ [concept_profession]"
@@ -100,7 +100,7 @@
  law_social_market_economy_desc: "A regulated market economy that combines free competition with social security to promote prosperity and social balance."
  law_free_market_economy: "Free Market Economy"
  law_free_market_economy_desc: "An unleashed capitalism where prices and production are determined solely by supply and demand with minimal government regulation."
- law_free_trade_union: "Free Trade Bloc"
+ law_free_trade_union: "Free Trade Network"
  law_free_trade_union_desc: "A confederation of states that eliminates internal trade barriers and pursues a common tariff policy to promote economic interests."
  law_protectionism_union: "Protectionist Bloc"
  law_protectionism_union_desc: "An alliance of nations that protects domestic industries from foreign competition through collective tariffs and trade restrictions."

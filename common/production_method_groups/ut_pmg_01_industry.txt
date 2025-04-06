@@ -65,6 +65,7 @@ pmg_automation_building_textile_mills = {
 		pm_traditional_looms
 		pm_mechanized_looms
 		pm_automatic_power_looms
+		pm_automatic_power_looms_2
 	}
 }
 
@@ -95,6 +96,7 @@ pmg_automation_building_furniture_manufacturies = {
 		pm_watertube_boiler_building_furniture_manufacturies
 		pm_rotary_valve_engine_building_furniture_manufacturies
 		pm_assembly_lines_building_furniture_manufacturies
+		pm_assembly_lines_building_heavy_machinery_tools_furniture
 	}
 }
 
@@ -116,6 +118,7 @@ pmg_automation_building_tooling_workshops = {
 		pm_watertube_boiler_building_tooling_workshops
 		pm_rotary_valve_engine_building_tooling_workshops
 		pm_assembly_lines_building_tooling_workshops
+		pm_assembly_lines_building_heavy_machinery_power
 	}
 }
 
@@ -216,6 +219,8 @@ pmg_automation_building_steel_mills = {
 		pm_automation_disabled
 		pm_watertube_boiler_building_steel_mills
 		pm_rotary_valve_engine_building_steel_mills
+		pm_steel_heavy_machinery
+		pm_steel_computers
 	}
 }
 
@@ -248,6 +253,7 @@ pmg_automation_building_motor_industry = {
 		pm_watertube_boiler_building_motor_industry
 		pm_rotary_valve_engine_building_motor_industry
 		pm_assembly_lines_building_motor_industry
+		pm_assembly_lines_building_heavy_machinery_tools_motor
 	}
 }
 
@@ -325,6 +331,7 @@ pmg_automation_building_arms_industry = {
 		pm_automation_disabled
 		pm_rotary_valve_engine_building_arms_industry
 		pm_assembly_lines_building_arms_industry
+		pm_assembly_lines_building_heavy_machinery_power
 	}
 }
 
@@ -358,5 +365,6 @@ pmg_automation_building_munition_plants = {
 		pm_automation_disabled
 		pm_rotary_valve_engine_building_munition_plants
 		pm_assembly_lines_building_munition_plants
+		pm_assembly_lines_building_heavy_machinery_power
 	}
 }

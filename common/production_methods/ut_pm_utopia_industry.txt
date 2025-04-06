@@ -900,13 +900,14 @@ pm_aluminum_two_process = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
+			#todo check calc
 			goods_input_bauxite_add = 60
 			goods_input_explosives_add = 10
 			goods_input_heavy_machinery_add = 2
-			goods_input_electricity_add = 40
+			goods_input_electricity_add = 30
 			
 			# output goods
-			goods_output_aluminum_add = 120
+			goods_output_aluminum_add = 90
 		}
 
 		level_scaled = {
