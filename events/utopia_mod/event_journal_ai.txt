@@ -17,7 +17,7 @@ event_journal_ai.1 = {
 				}
 				add_modifier = {
 					name = ai_great_power_buff_spread
-					months = normal_modifier_time
+					months = long_modifier_time
 				} 
 			}
 			else_if = {
@@ -25,14 +25,14 @@ event_journal_ai.1 = {
 					country_rank = rank_value:major_power
 				}
 				add_modifier = {
-					name = ai_great_power_buff_spread
-					months = normal_modifier_time
+					name = ai_major_power_buff_spread
+					months = long_modifier_time
 				} 
 			}
 			else = {
 				add_modifier = {
 					name = ai_below_major_power_buff_spread
-					months = normal_modifier_time
+					months = long_modifier_time
 				}				
 			}
 		}
