@@ -86,9 +86,9 @@ pm_ut_precision_tools = {
 		level_scaled = {
 			building_employment_laborers_add = 3000
 			building_employment_shopkeepers_add = 500
-			building_employment_machinists_add = 500
+			building_employment_machinists_add = 750
 			building_employment_service_workers_add = 250
-			building_employment_engineers_add = 750
+			building_employment_engineers_add = 500
 		}
 	}
 }
@@ -846,7 +846,7 @@ pm_assembly_lines_building_heavy_machinery_tools_furniture = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_electricity_add = 15
+			goods_input_electricity_add = 10
 			goods_input_tools_add = 5
 			goods_input_heavy_machinery_add = 1
 		}
@@ -880,8 +880,8 @@ pm_assembly_lines_building_heavy_machinery_power = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_oil_add = 5
-			goods_input_electricity_add = 20
-			goods_input_heavy_machinery_add = 2
+			goods_input_electricity_add = 15
+			goods_input_heavy_machinery_add = 1
 		}
 
 		level_scaled = {

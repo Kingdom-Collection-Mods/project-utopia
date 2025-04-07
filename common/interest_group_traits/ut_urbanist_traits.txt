@@ -21,6 +21,6 @@ ig_trait_research_initiative = {
 	min_approval = loyal
 	
 	modifier = {
-		country_tech_research_speed_mult = 0.1
+		building_urban_center_throughput_add = 0.1
 	}
 }
