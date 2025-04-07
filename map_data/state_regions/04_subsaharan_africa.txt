@@ -679,6 +679,10 @@ STATE_SOUTH_MADAGASCAR = {
         type = "bg_rubber"
         undiscovered_amount = 16
     }
+    resource = {
+        type = "bg_rare_earths_mining"
+        undiscovered_amount = 20
+    }
     naval_exit_id = 3107
 }
 

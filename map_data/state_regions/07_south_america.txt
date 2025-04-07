@@ -1072,8 +1072,7 @@ STATE_MINAS_GERAIS = {
     arable_land = 150
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_gold_mining = 2
-        bg_rare_earths_mining = 1 
+        bg_gold_mining = 2        
         bg_iron_mining = 45
         bg_lead_mining = 30
         bg_logging = 24
@@ -1085,7 +1084,7 @@ STATE_MINAS_GERAIS = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 8
+        undiscovered_amount = 20
     }
     resource = {
         type = "bg_rubber"

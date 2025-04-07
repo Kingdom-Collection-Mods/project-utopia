@@ -1318,6 +1318,10 @@ STATE_CALIFORNIA = {
         type = "bg_oil_extraction"
         undiscovered_amount = 50
     }
+    resource = {
+        type = "bg_rare_earths_mining"
+        undiscovered_amount = 30
+    }
     naval_exit_id = 3153
 }
 
