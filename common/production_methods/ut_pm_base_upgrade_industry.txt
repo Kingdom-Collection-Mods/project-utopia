@@ -1,4 +1,4 @@
-
+﻿
 pm_precision_tools_heavy_machinery = {
 	texture = "gfx/interface/icons/production_method_icons/radios.dds"
 		
@@ -795,7 +795,7 @@ pm_elastics_two = {
 
 
 pm_assembly_lines_building_heavy_machinery_tools_motors = {
-	texture = "gfx/interface/icons/production_method_icons/ut_assembly_lines.dds"
+	texture = gfx/interface/icons/production_method_icons/ut_assembly_lines.dds
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -828,7 +828,7 @@ pm_assembly_lines_building_heavy_machinery_tools_motors = {
 }
 
 pm_assembly_lines_building_heavy_machinery_tools_furniture = {
-	texture = "gfx/interface/icons/production_method_icons/ut_assembly_lines.dds"
+	texture = gfx/interface/icons/production_method_icons/ut_assembly_lines.dds
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -861,8 +861,8 @@ pm_assembly_lines_building_heavy_machinery_tools_furniture = {
 }
 
 pm_assembly_lines_building_heavy_machinery_power = {
-	texture = "gfx/interface/icons/production_method_icons/ut_assembly_lines.dds"
-	
+	texture = gfx/interface/icons/production_method_icons/ut_assembly_lines.dds
+
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
