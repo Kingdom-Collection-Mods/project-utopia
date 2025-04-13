@@ -17,7 +17,7 @@ pm_precision_tools_heavy_machinery = {
 			# input goods
 			goods_input_hardwood_add = 25			# x40 = -1000
 			goods_input_wood_add = -25				# x20 =  500
-			goods_input_heavy_machinery_add = 5
+			goods_input_heavy_machinery_add = 4
 			
 			# output goods
 			goods_output_furniture_add = -65			# x30 = -1650
@@ -51,7 +51,7 @@ pm_ut_industry_plastics = {
 			goods_input_lead_add = 30
 			
 			# output goods
-			goods_output_glass_add = 120
+			goods_output_glass_add = 110
 		}
 
 		level_scaled = {
@@ -139,7 +139,7 @@ pm_plastic_packaging = {
 			goods_input_plastic_add = 20
 			
 			# output goods
-			goods_output_groceries_add = 120	# x30 = 2100
+			goods_output_groceries_add = 130	# x30 = 2100
 		}
 
 		level_scaled = {
@@ -205,7 +205,7 @@ pm_heavy_machinery_furnite = {
 			goods_input_wood_add = 50
 			goods_input_fabric_add = 10
 			goods_input_heavy_machinery_add = 5
-			goods_input_electricity_add = 5
+			goods_input_electricity_add = 1
 			
 			# output goods
 			goods_output_furniture_add = 130
@@ -317,7 +317,7 @@ pm_heavy_machinery_building_coal_mine = {
 			goods_input_heavy_machinery_add = 15
 			
 			# output goods
-			goods_output_coal_add = 140
+			goods_output_coal_add = 150
 		}
 
 		level_scaled = {
@@ -405,7 +405,7 @@ pm_ut_radios = {
 			goods_input_electricity_add = 50
 			goods_output_telephones_add = -20
 
-			goods_output_radios_add = 50
+			goods_output_radios_add = 45
 			goods_output_electronics_add = 5
 		}
 		
@@ -756,7 +756,7 @@ pm_synthetic_rubber_plus = {
 			# employment
 			building_employment_laborers_add = -1000
 			building_employment_machinists_add = 500
-			building_service_workers_shares_add = 500
+			building_employment_service_workers_add = 500
 		}
 	}
 }
@@ -916,7 +916,7 @@ pm_steel_heavy_machinery = {
 
 		level_scaled = {
 			building_employment_laborers_add = -2000
-			building_employment_machinists_add = -500
+			building_employment_machinists_add = -750
 		}
 	}
 }
@@ -945,7 +945,7 @@ pm_steel_computers = {
 
 		level_scaled = {
 			building_employment_laborers_add = -2000
-			building_employment_machinists_add = -1000
+			building_employment_machinists_add = -1250
 		}
 	}
 }
@@ -970,7 +970,7 @@ pm_automatic_power_looms_2 = {
 
 		level_scaled = {
 			# profit = -500 (break-even when annual laborer wage > 10.4)
-			building_employment_laborers_add = -2500
+			building_employment_laborers_add = -2750
 			building_employment_machinists_add = -250
 		}
 	}

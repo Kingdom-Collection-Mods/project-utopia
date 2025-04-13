@@ -23,7 +23,8 @@ pm_high_yield_crops = {
 		level_scaled = {
 			# earnings														
 			building_employment_laborers_add = 2500
-			building_employment_farmers_add = 2500
+			building_employment_farmers_add = 2250
+			building_employment_engineers_add = 250
 		}
 	}
 }
@@ -45,7 +46,8 @@ pm_high_yield_crops_rice = {
 		level_scaled = {
 			# earnings														
 			building_employment_laborers_add = 5000
-			building_employment_farmers_add = 5000
+			building_employment_farmers_add = 4500
+			building_employment_engineers_add = 500
 		}
 	}
 
@@ -136,7 +138,7 @@ pm_farms_drone_support = {
 }
 
 pm_farms_heavy_machinery_support_rice = {
-	texture = "gfx/interface/icons/production_method_icons/automatic_power_looms.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_cabin_tractor.dds"
 
 	state_modifiers = {
 		workforce_scaled = {
