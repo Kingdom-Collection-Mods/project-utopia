@@ -807,7 +807,7 @@ pm_bauxite_automated_heavy_machinery_mine = {
 			goods_input_software_add = 10
 			
 			# output goods
-			goods_output_bauxite_add = 140
+			goods_output_bauxite_add = 150
 		}
 
 		level_scaled = {
