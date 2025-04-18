@@ -54,7 +54,6 @@
  je_modern_civil_aviation: "Modern Civil Aviation"
 
  je_urbanist_ig: "Urbanist Movement"
- event_journal_ai: "Fortschrittsverbreitung"
 
 # Pop and Politics
  service_workers: "@service_workers! $service_workers_no_icon$"
@@ -552,3 +551,7 @@
  wirtschaftswunder_others_modifier: "Economic Miracle (Influence)"
  early_civil_aviation_modifier_others: "Early Civil Aviation"
  modern_civil_aviation_modifier_others: "Modern Civil Aviation"
+
+ event_journal_ai: "Fortschrittsverbreitung"
+ utopia_event_journal_ai_buff: "Welle des technlogischen Fortschritts"
+ utopia_event_journal_ai_buff_tooltip: "KI Länder erhalten einen signifikanten Bonus auf Innovationsverteilung."

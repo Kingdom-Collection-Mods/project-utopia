@@ -273,7 +273,7 @@ rare_earths_mining_era_analog = {
 	}
 
 	ai_weight = {
-		value = 2 # Important
+		value = 1
 	}
 }
 

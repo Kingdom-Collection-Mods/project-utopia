@@ -8,7 +8,6 @@
 		NOT = { has_modifier = ai_great_power_buff_spread }
 		NOT = { has_modifier = ai_major_power_buff_spread }
 		NOT = { has_modifier = ai_below_major_power_buff_spread }
-		NOT = { has_variable = ut_is_player }
 	}
 
 	possible = {
@@ -20,6 +19,11 @@
 
 	immediate = {
 		trigger_event = { id = event_journal_ai.1 }
+		set_variable = je_ai_radio_researched_done
+	}
+
+	on_timeout = {
+		set_variable = je_ai_radio_researched_done		
 	}
 
 	timeout = 1
@@ -37,7 +41,6 @@ je_ai_consumer_goods_researched = {
 		NOT = { has_modifier = ai_great_power_buff_spread }
 		NOT = { has_modifier = ai_major_power_buff_spread }
 		NOT = { has_modifier = ai_below_major_power_buff_spread }
-		NOT = { has_variable = ut_is_player }
 	}
 
 	possible = {
@@ -45,10 +48,15 @@ je_ai_consumer_goods_researched = {
 			has_technology_researched = consumer_goods_main_analog
 		}
 		NOT = { has_modifier = ai_great_power_buff_spread }
+		has_variable = je_ai_radio_researched_done
 	}
 
 	immediate = {
 		trigger_event = { id = event_journal_ai.1 }
+	}
+
+	on_timeout = {
+		set_variable = je_ai_consumer_goods_researched_done		
 	}
 
 	timeout = 1
@@ -64,7 +72,6 @@ je_ai_advanced_consumer_goods_researched = {
 		NOT = { has_modifier = ai_great_power_buff_spread }
 		NOT = { has_modifier = ai_major_power_buff_spread }
 		NOT = { has_modifier = ai_below_major_power_buff_spread }
-		NOT = { has_variable = ut_is_player }
 	}
 
 	possible = {
@@ -72,6 +79,7 @@ je_ai_advanced_consumer_goods_researched = {
 			has_technology_researched = consumer_goods_main_digital_products
 		}
 		NOT = { has_modifier = ai_great_power_buff_spread }
+		has_variable = je_ai_consumer_goods_researched_done
 	}
 
 	immediate = {

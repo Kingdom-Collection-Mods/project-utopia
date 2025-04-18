@@ -552,6 +552,10 @@
  early_civil_aviation_modifier_others: "Frühe zivile Luftfahrt"
  modern_civil_aviation_modifier_others: "Moderne zivile Luftfahrt"
 
+ event_journal_ai: "Fortschrittsverbreitung"
+ utopia_event_journal_ai_buff: "Welle des technlogischen Fortschritts"
+ utopia_event_journal_ai_buff_tooltip: "KI Länder erhalten einen signifikanten Bonus auf Innovationsverteilung."
+
 
 # Demands
  demand_ban_slavery: "Forderung: Verbots der Sklaverei"
