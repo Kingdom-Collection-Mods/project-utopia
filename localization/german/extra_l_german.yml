@@ -1,4 +1,4 @@
-﻿l_german:
+l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -556,6 +556,13 @@
  utopia_event_journal_ai_buff: "Welle des technlogischen Fortschritts"
  utopia_event_journal_ai_buff_tooltip: "KI Länder erhalten einen signifikanten Bonus auf Innovationsverteilung."
 
+ ut_tech_preview_cheat: "Project Utopia: Technology Cheat"
+ ut_tech_preview_cheat_desc: "As part of the technical preview you can cheat to get a ton of innovation."
+ utopia_mod.2.t: "Securing a Technological Edge"
+ utopia_mod.2.d: "Through unofficial channels, your administration gains access to an overwhelming influx of innovation. Though far from legitimate, this shortcut offers a glimpse into the future — one you can now shape with unfair advantage."
+ utopia_mod.2.f: "What is progress, if not the mastery of time itself? While others debate ethics and equality, we have pierced the veil of possibility. With this unprecedented surge in innovation, we leapfrog generations of slow, bureaucratic development. Let history judge us — or let there be no history, only the brilliance of tomorrow, written in circuits and steel, not ink and parchment. Utopia is not given. It is taken."
+ ut_tech_preview_cheat_disable_tt: "Deactivates the cheat permanently"
+ ut_tech_preview_cheat_modifier: "Forbidden Technologies"
 
 # Demands
  demand_ban_slavery: "Forderung: Verbots der Sklaverei"

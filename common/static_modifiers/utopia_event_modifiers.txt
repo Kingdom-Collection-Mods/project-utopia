@@ -29,6 +29,13 @@ ai_below_major_power_buff_spread = {
 	country_tech_spread_add = 50
 }
 
+
+ut_tech_preview_cheat_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_weekly_innovation_max_add = 6000
+	country_weekly_innovation_add = 6000
+}
+
 wirtschaftswunder_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	country_prestige_mult = 0.2

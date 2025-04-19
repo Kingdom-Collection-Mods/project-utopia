@@ -1,0 +1,22 @@
+﻿ut_tech_preview_cheat = {
+	is_shown = {
+		is_player = yes
+		NOT = { has_global_variable = ut_tech_preview_cheat_disable }
+	}
+
+	possible = {
+		is_player = yes
+		NOT = { has_global_variable = ut_tech_preview_cheat_disable }
+		NOT = { has_modifier = ut_tech_preview_cheat_modifier }
+	}
+	
+	when_taken = {
+		trigger_event = {
+			id = utopia_mod.2
+		}
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
