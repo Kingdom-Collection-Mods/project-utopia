@@ -4,9 +4,30 @@ ut_ideology_environmentalist = {
 	character_ideology = yes
 
 	lawgroup_environment_protection = {
-		law_no_environment_protection = strongly_approve
-		law_environment_protection_institute = neutral
-		law_environment_protection_institute_two = disapprove
+		law_no_environment_protection = strongly_disapprove
+		law_environment_protection_institute = approve
+		law_environment_protection_institute_two = strongly_approve
+	}
+
+	lawgroup_army_model = {
+		law_professional_army = neutral
+		law_mass_conscription = neutral
+		law_national_militia = neutral
+		law_peasant_levies = neutral
+		law_task_forces = neutral
+		law_demobilized = approve		
+	} 
+
+	lawgroup_labor_rights = {
+		law_worker_protections = neutral
+		law_regulatory_bodies = neutral
+		law_no_workers_rights = disapprove
+	}
+
+	lawgroup_food_safety = {
+		law_no_food_safety_protection = strongly_disapprove
+		law_food_safety_protection_institute = neutral
+		law_food_safety_protection_institute_two = neutral		
 	}
 
 	country_trigger = {
