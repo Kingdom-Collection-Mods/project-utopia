@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -22,7 +22,11 @@ l_english:
  consumer_goods_complex_je: "Complex Consumer Goods"
 
  utopia_journal_prod.heavy_industrial_machinery_je.success: "Heavy Industrial Machinery Successful"
+ utopia_journal_prod.heavy_industrial_machinery_je.success.d: "The foundations have been laid, the machines assembled. Our nation now proudly stands at the forefront of industrial progress with the opening of its very first heavy machinery factory."
+ utopia_journal_prod.heavy_industrial_machinery_je.success.f: "It began with smoke and steel. In the shadow of a war-scarred world, we dared to dream not of peace, but of purpose. The hum of turbines, the clang of iron, the precision of gears — these are the rhythms of a new age. This factory is more than concrete and rivets. It is the promise that we will no longer buy the future from others — we will build it with our own hands. From here, everything changes."
  utopia_journal_prod.heavy_industrial_machinery_je.fail: "Heavy Industrial Machinery Failed"
+ utopia_journal_prod.heavy_industrial_machinery_je.fail.d: "Plans were drawn, resources allocated — but the factory remains unbuilt. Mismanagement, shortages, and political friction have brought the project to a halt."
+ utopia_journal_prod.heavy_industrial_machinery_je.fail.f: "They promised a new industrial dawn. But all that remains is an empty lot, rusting scaffolds, and silence where engines were meant to roar. In the end, it was not ambition we lacked, but coordination — and perhaps the courage to see it through."
  utopia_journal_prod.cnc_machines_je.success: "CNC Machines Successful"
  utopia_journal_prod.cnc_machines_je.fail: "CNC Machines Failed"
  utopia_journal_prod.heavy_tractors_je: "Heavy Tractors"
@@ -48,7 +52,8 @@ l_english:
  je_wirtschaftswunder: "Economic Miracle"
  je_wirtschaftswunder_others: "Economic Miracle Achieved"
  utopia_journal_society_2_wirtschaftswunder_title: "Economic Miracle"
- utopia_journal_society_2_wirtschaftswunder_flavor: "From rubble came gold: Where once ruins smoked, factories, prosperity, and a new self-confidence rose. A strong global economy, worldwide economic upswing, and the spirit of the miracle transformed despair into dynamism – an era in which workers became engineers of the future and technological progress amazed the world."
+ utopia_journal_society_2_wirtschaftswunder_desc: "In a stunning turn of fortune, our economy has not only recovered — it has soared. Industries are booming, employment is at record highs, and prosperity is no longer a dream, but a daily reality for many."
+ utopia_journal_society_2_wirtschaftswunder_flavor: "No one expected it to happen so fast. Where there was once rubble and recession, now stand factories lit day and night, cities swelling with life, and markets alive with ambition. People speak in hushed disbelief — of full shelves, of steady work, of futures brighter than memory allows. This was not a miracle born of chance, but of effort, sacrifice, and the quiet determination to rebuild a nation not just as it was, but as it could be. The world watches in awe. We move forward."
 
  je_early_civil_aviation: "Early Civil Aviation"
  je_modern_civil_aviation: "Modern Civil Aviation"
@@ -86,7 +91,10 @@ l_english:
  ut_ideology_environmentalist_desc: "#lore Environmentalists.#!"
 
  ig_trait_open_borders: "Open Borders"
- ig_trait_research_initiative: "Research Initiative"
+ ig_trait_research_initiative: "Performance Society"
+ ig_trait_open_borders_desc: "This group advocates for the free movement of people across borders, believing it fosters cultural exchange and economic opportunity. They oppose restrictive immigration policies and emphasize international cooperation."
+ ig_trait_research_initiative_desc: "This group champions a society driven by research, innovation, and measurable performance. They believe continuous improvement and scientific progress are key to national success."
+
 
  ut_movement_cosmopolitan_name: "Cosmopolitan Movement"
  ut_movement_humanist_name: "Humanist Movement"

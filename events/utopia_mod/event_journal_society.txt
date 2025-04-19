@@ -67,7 +67,7 @@ utopia_journal_society.2 = { #Wirtschaftswunder
 	placement = ROOT
 
 	title = utopia_journal_society_2_wirtschaftswunder_title
-	desc = utopia_journal_society_2_wirtschaftswunder_title
+	desc = utopia_journal_society_2_wirtschaftswunder_desc
 	flavor = utopia_journal_society_2_wirtschaftswunder_flavor
 
 	immediate = {

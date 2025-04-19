@@ -2,6 +2,9 @@
 # Heavy Machinery
 utopia_journal_prod.1 = {
 	title = utopia_journal_prod.heavy_industrial_machinery_je.success 
+	desc = utopia_journal_prod.heavy_industrial_machinery_je.success.d
+	flavor = utopia_journal_prod.heavy_industrial_machinery_je.success.f
+
 	type = country_event
 	event_image = { video = "factory_precision" }
 	duration = 3
@@ -37,6 +40,8 @@ utopia_journal_prod.1 = {
 
 utopia_journal_prod.2 = {
 	title = utopia_journal_prod.heavy_industrial_machinery_je.fail 
+	desc = utopia_journal_prod.heavy_industrial_machinery_je.fail.d
+	flavor = utopia_journal_prod.heavy_industrial_machinery_je.fail.f
 	type = country_event
 	event_image = { video = "factory_precision" }
 	duration = 3
