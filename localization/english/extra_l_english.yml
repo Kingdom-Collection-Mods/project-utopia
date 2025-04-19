@@ -208,7 +208,7 @@
  heavy_machinery_era_digital_desc: "Servo motors mill to micrometer precision from CAD files. Digital accuracy births both rocket nozzles and iPhone shells in the same factories."
  heavy_machinery_era_web: "Industrial Robots"
  heavy_machinery_era_web_desc: "KUKA arms weld car bodies in milliseconds. Networked assembly lines optimize themselves—until a cyberattack freezes the metallic ballet."
- heavy_machinery_industry: "Specialized Heavy Machinery"
+ heavy_machinery_industry: "Specialized Machinery"
  heavy_machinery_industry_desc: "Tunnel borers chew through granite while 800-ton cranes lift skyscrapers. Tailor-made titanium titans for every niche of civilization."
  civilian_planes: "Civilian Aircraft"
  civilian_planes_desc: "Douglas DC-3s bring continents within reach. Fear of flying gives way to champagne in first class—the troposphere becomes the highway of the jet-set age."
@@ -396,7 +396,7 @@
  building_aluminum_factory: "Aluminum Factories"
  building_plastic_factory: "Plastic Factories"
  building_electronic_factory: "Chip Factories"
- building_heavy_machinery_factory: "Heavy Machinery Factories"
+ building_heavy_machinery_factory: "Machinery Factories"
  building_computer_factory: "Computer Factories"
  building_commercial_factory: "Commercial Enterprises"
  building_software_company: "Software Companies"
@@ -519,7 +519,7 @@
  trucks: "Trucks"
  highways: "Highways"
  consumer_goods: "Consumer Goods"
- heavy_machinery: "Heavy Machinery"
+ heavy_machinery: "Machinery"
 
 
  pm_supermarket: "Supermarket"

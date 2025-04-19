@@ -544,7 +544,8 @@ pm_electronics_engines = {
 			goods_input_electricity_add = 20
 			
 			# output goods
-			goods_output_engines_add = 160
+			goods_output_engines_add = 155
+			goods_output_trucks_add = 5
 		}
 
 		level_scaled = {
@@ -581,7 +582,8 @@ pm_computers_engines = {
 			goods_input_electricity_add = 20
 			
 			# output goods
-			goods_output_engines_add = 165
+			goods_output_engines_add = 160
+			goods_output_trucks_add = 5
 		}
 
 		level_scaled = {
@@ -652,7 +654,7 @@ pm_oil_automated_heavy_machinery_mine = {
 }
 
 pm_supermarket = {
-	texture = "gfx/interface/icons/production_method_icons/skyscraper_trade_nexus.dds"
+	texture = "gfx/interface/icons/production_method_icons/unused/stock_exchange.dds"
 	unlocking_technologies = {
 		consumer_goods_main_house_hold_electrical
 	}
@@ -679,7 +681,7 @@ pm_supermarket = {
 }
 
 pm_shopping_district = {
-	texture = "gfx/interface/icons/production_method_icons/airship_mooring_post.dds"
+	texture = "gfx/interface/icons/production_method_icons/unused/financial_district.dds"
 	unlocking_technologies = {
 		consumer_goods_main_plastic_revolution
 	}

@@ -617,8 +617,6 @@ pm_computers_electromechanical_process = {
 			building_employment_engineers_add = 1000
 		}
 	}
-
-	required_input_goods = electricity
 }
 
 
@@ -1103,7 +1101,7 @@ pm_hi_connected_logistics = {
 
 ####
 pm_heavy_machinery_coal_fired_plant = {
-	texture = "gfx/interface/icons/production_method_icons/blister_steel_process.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_power_plant.dds"
 
 	unlocking_technologies = {
 		heavy_machinery_era_analog
@@ -1133,7 +1131,7 @@ pm_heavy_machinery_coal_fired_plant = {
 }
 
 pm_heavy_machinery_oil_fired_plant = {
-	texture = "gfx/interface/icons/production_method_icons/electric_arc_process.dds"
+	texture = "gfx/interface/icons/production_method_icons/power_plant.dds"
 
 	unlocking_technologies = {
 		heavy_machinery_era_analog
@@ -1178,20 +1176,20 @@ pm_highway_cars_one = {
 		}
 		level_scaled = {
 			building_employment_machinists_add = 500
-			building_employment_service_workers_add = 500
+			building_employment_service_workers_add = 1000
 		}
 	}
 
 	state_modifiers = {
 		workforce_scaled = {
-			state_infrastructure_add = 20
+			state_infrastructure_add = 30
 			state_pollution_generation_add = 10
 		}
 	}
 }
 
 pm_highway_no_trucks = {
-	texture = "gfx/interface/icons/production_method_icons/experimental_trains.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_lkw_0.dds"
 
 	building_modifiers = {
 	}
@@ -1201,7 +1199,7 @@ pm_highway_no_trucks = {
 }
 
 pm_highway_trucks = {
-	texture = "gfx/interface/icons/production_method_icons/experimental_trains.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_lkw_1.dds"
 	
 	unlocking_technologies = {
 		trucks_era_analog
