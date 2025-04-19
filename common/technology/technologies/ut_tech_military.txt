@@ -1,4 +1,4 @@
-﻿# Harbor
+# Harbor
 heavy_industry_harbor = {
 
 	era = era_6
@@ -95,6 +95,7 @@ heavy_ships_rockets_base = {
 	}
 }
 
+
 heavy_ships_rockets_software = {
 	era = era_8
 	texture = "gfx/interface/icons/invention_icons/monitor_tech.dds"
@@ -156,7 +157,7 @@ ut_anti_tank = {
 
 ut_anti_tank_guided = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	texture = "gfx/interface/icons/invention_icons/breech_loading_artillery.dds"
 	category = military
 
 	unlocking_technologies = {	

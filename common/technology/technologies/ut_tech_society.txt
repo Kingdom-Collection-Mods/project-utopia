@@ -20,7 +20,7 @@ highway_projects = {
 
 intercity_transport = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/40s_highway.dds"
+	texture = "gfx/interface/icons/invention_icons/intercity.dds"
 	category = society
 	
 	modifier = {
@@ -39,7 +39,7 @@ intercity_transport = {
 
 heavy_machinery_builders = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/open_hearth_process.dds"
+	texture = "gfx/interface/icons/invention_icons/concrete_paver.dds"
 	category = society
 		
 	modifier = {
@@ -57,7 +57,7 @@ heavy_machinery_builders = {
 
 highspeed_transport = {
 	era = era_8
-	texture = "gfx/interface/icons/invention_icons/unused/streamliners.dds"
+	texture = "gfx/interface/icons/invention_icons/high_speed.dds"
 	category = society
 		
 	modifier = {
@@ -123,7 +123,7 @@ civil_airlines = {
 
 modern_civil_aviation = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/plane_50s.dds"
+	texture = "gfx/interface/icons/invention_icons/plane_90s.dds"
 	category = society
 
 	on_researched = {
@@ -169,7 +169,7 @@ international_commerce = {
 check_payments = {
 	
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/central_banking.dds"
+	texture = "gfx/interface/icons/invention_icons/check_payments.dds"
 	category = society
 		
 	modifier = {
@@ -190,7 +190,7 @@ check_payments = {
 credit_cards = {
 	
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/central_banking.dds"
+	texture = "gfx/interface/icons/invention_icons/credit_cards.dds"
 	category = society
 		
 	modifier = {
@@ -212,7 +212,7 @@ credit_cards = {
 
 digital_payments = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/currency_standards.dds"
+	texture = "gfx/interface/icons/invention_icons/digital_payments.dds"
 	category = society
 		
 	modifier = {
@@ -253,7 +253,7 @@ digital_trading = {
 
 modern_economy = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/mutual_funds.dds"
+	texture = "gfx/interface/icons/invention_icons/development_economics.dds"
 	category = society
 		
 	modifier = {
@@ -270,7 +270,7 @@ modern_economy = {
 
 new_public_management = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/enlistment_offices.dds"
+	texture = "gfx/interface/icons/invention_icons/new_public_management.dds"
 	category = society
 		
 	modifier = {
@@ -399,7 +399,7 @@ food_standards_one = {
 
 food_standards_two = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/international_trade.dds"
+	texture = "gfx/interface/icons/invention_icons/epa.dds"
 	category = society
 		
 	modifier = {
@@ -418,7 +418,7 @@ food_standards_two = {
 
 epa_one = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/concrete_dockyards.dds"
+	texture = "gfx/interface/icons/invention_icons/air_polution.dds"
 	category = society
 		
 	modifier = {
@@ -437,7 +437,7 @@ epa_one = {
 
 epa_two = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/intensive_agriculture.dds"
+	texture = "gfx/interface/icons/invention_icons/recycling.dds"
 	category = society
 		
 	modifier = {
@@ -456,8 +456,8 @@ epa_two = {
 
 epa_three = {
 	
-	era = era_8
-	texture = "gfx/interface/icons/invention_icons/manufacturies.dds"
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/cfc_ban.dds"
 	category = society
 		
 	modifier = {
@@ -480,7 +480,7 @@ epa_three = {
 
 political_progress_1 = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/civilizing_mission.dds"
+	texture = "gfx/interface/icons/invention_icons/cosmopolitan.dds"
 	category = society
 		
 	modifier = {
@@ -499,7 +499,7 @@ political_progress_1 = {
 
 political_progress_2 = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/empiricism.dds"
+	texture = "gfx/interface/icons/invention_icons/rationalism.dds"
 	category = society
 		
 	modifier = {
@@ -520,7 +520,7 @@ political_progress_2 = {
 
 multicultural_globalism = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/civilizing_mission.dds"
+	texture = "gfx/interface/icons/invention_icons/peace_movement.dds"
 	category = society
 		
 	modifier = {
@@ -537,7 +537,7 @@ multicultural_globalism = {
 
 anti_multicultural_globalism = {
 	era = era_8
-	texture = "gfx/interface/icons/invention_icons/civilizing_mission.dds"
+	texture = "gfx/interface/icons/invention_icons/neo_fascism.dds"
 	category = society
 		
 	modifier = {
@@ -554,7 +554,7 @@ anti_multicultural_globalism = {
 
 anti_discrimination_laws = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/democracy.dds"
+	texture = "gfx/interface/icons/invention_icons/human_dignity.dds"
 	category = society
 		
 	modifier = {
@@ -571,7 +571,7 @@ anti_discrimination_laws = {
 
 lgbt_movement = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/democracy.dds"
+	texture = "gfx/interface/icons/invention_icons/lgbt_movement.dds"
 	category = society
 		
 	modifier = {
@@ -590,7 +590,7 @@ lgbt_movement = {
 
 feminism_2 = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/feminism.dds"
+	texture = "gfx/interface/icons/invention_icons/feminism_2.dds"
 	category = society
 		
 	modifier = {
@@ -608,7 +608,7 @@ feminism_2 = {
 
 feminism_3 = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/feminism.dds"
+	texture = "gfx/interface/icons/invention_icons/feminism_3.dds"
 	category = society
 		
 	modifier = {

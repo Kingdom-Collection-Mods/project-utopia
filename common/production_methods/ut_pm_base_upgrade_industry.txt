@@ -421,7 +421,7 @@ pm_ut_radios = {
 
 
 pm_truck_production = {
-	texture = "gfx/interface/icons/production_method_icons/passenger_trains.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_trucks_1.dds"
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
