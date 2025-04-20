@@ -8,3 +8,25 @@
 		is_interest_group_type = ig_petty_bourgeoisie
 	}
 }
+
+ut_ideology_new_dawn_fascist_trigger = {
+	OR = {
+		has_ideology = ideology:ideology_corporatist_leader
+		has_ideology = ideology:ideology_ethno_nationalist
+		has_ideology = ideology:ideology_fascist
+	}
+}
+
+ut_ideology_new_dawn_moderate_trigger = {
+	ut_ideology_new_dawn_fascist_trigger = no
+	ut_ideology_new_dawn_communist_trigger = no
+}
+
+ut_ideology_new_dawn_communist_trigger = {
+	OR = {
+		has_ideology = ideology:ideology_anarchist
+		has_ideology = ideology:ideology_radical
+		has_ideology = ideology:ideology_communist
+		has_ideology = ideology:ideology_vanguardist
+	}
+}

@@ -1,0 +1,139 @@
+﻿ ### For je_divided_monarchists
+
+ ut_new_dawn_fascist_bar = {
+	name = "ut_new_dawn_fascist_bar"
+	desc = "ut_new_dawn_fascist_bar_desc"
+
+	default = yes
+
+	monthly_progress = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
+				}
+			}
+			add = {
+				desc = "ut_nd_fascist_progress_from_characters"
+				value = owner.var:ut_nd_fascist_progress_from_characters
+			}
+			add = {
+				desc = "ut_nd_fascist_progress_from_igs"
+				value = owner.var:ut_nd_fascist_progress_from_igs
+			}
+			add = {
+				desc = "ut_nd_fascist_progress_from_military"
+				value = owner.var:ut_nd_fascist_progress_from_military
+			}
+			add = {
+				desc = "ut_nd_fascist_progress_from_legitimacy"
+				value = owner.var:ut_nd_fascist_progress_from_legitimacy
+			}
+			add = {
+				desc = "ut_nd_fascist_progress_from_movements"
+				value = owner.var:ut_nd_fascist_progress_from_movements
+			}
+			add = {
+				desc = "ut_nd_fascist_progress_from_effects"
+				value = owner.var:ut_nd_fascist_progress_from_effects
+			}
+		}
+	}
+
+	start_value = 10
+	min_value = 0
+	max_value = 480 # divided_monarchists_upper_bound
+
+ }
+
+ ut_new_dawn_moderate_bar = {
+	name = "ut_new_dawn_moderate_bar"
+	desc = "ut_new_dawn_moderate_bar_desc"
+
+	default_bad = yes
+
+	monthly_progress = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
+				}
+			}
+			add = {
+				desc = "ut_nd_moderate_progress_from_characters"
+				value = owner.var:ut_nd_moderate_progress_from_characters
+			}
+			add = {
+				desc = "ut_nd_moderate_progress_from_igs"
+				value = owner.var:ut_nd_moderate_progress_from_igs
+			}
+			add = {
+				desc = "ut_nd_moderate_progress_from_laws"
+				value = owner.var:ut_nd_moderate_progress_from_laws
+			}
+			add = {
+				desc = "ut_nd_moderate_progress_from_legitimacy"
+				value = owner.var:ut_nd_moderate_progress_from_legitimacy
+			}
+			add = {
+				desc = "ut_nd_moderate_progress_from_movements"
+				value = owner.var:ut_nd_moderate_progress_from_movements
+			}
+			add = {
+				desc = "ut_nd_moderate_progress_from_effects"
+				value = owner.var:ut_nd_moderate_progress_from_effects
+			}
+		}
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 480 # divided_monarchists_upper_bound
+
+ }
+
+ ut_new_dawn_communist_bar = {
+	name = "ut_new_dawn_communist_bar"
+	desc = "ut_new_dawn_communist_bar_desc"
+
+	default_green = yes
+
+	monthly_progress = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
+				}
+			}
+			add = {
+				desc = "ut_nd_communist_progress_from_characters"
+				value = owner.var:ut_nd_communist_progress_from_characters
+			}
+			add = {
+				desc = "ut_nd_communist_progress_from_igs"
+				value = owner.var:ut_nd_communist_progress_from_igs
+			}
+			add = {
+				desc = "ut_nd_communist_progress_from_farms"
+				value = owner.var:ut_nd_communist_progress_from_farms
+			}
+			add = {
+				desc = "ut_nd_communist_progress_from_legitimacy"
+				value = owner.var:ut_nd_communist_progress_from_legitimacy
+			}
+			add = {
+				desc = "ut_nd_communist_progress_from_movements"
+				value = owner.var:ut_nd_communist_progress_from_movements
+			}
+			add = {
+				desc = "ut_nd_communist_progress_from_effects"
+				value = owner.var:ut_nd_communist_progress_from_effects
+			}
+		}
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 480 # divided_monarchists_upper_bound
+
+ }
