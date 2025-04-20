@@ -18,8 +18,8 @@ law_public_university = {
 	institution = institution_schools
 	institution_modifier = {
 		state_assimilation_mult = 0.125
-		state_education_access_add = 0.15
-		country_weekly_innovation_max_add = 10
+		state_education_access_add = 0.125
+		state_pop_qualifications_mult = 0.02
 	}
 
 	can_impose = {
@@ -109,7 +109,8 @@ law_compulsory_secondary_school = {
 	institution = institution_schools
 	institution_modifier = {
 		# School institution gives more tech spread
-		country_tech_spread_mult = 0.025
+		country_tech_spread_mult = 0.02
+		state_education_access_add = 0.025
 
 		# Increase Country max innovation
 		country_weekly_innovation_add = 10
@@ -151,10 +152,11 @@ law_compulsory_tertiary_school = {
 	institution = institution_schools
 	institution_modifier = {
 		# School institution gives more tech spread
-		country_tech_spread_mult = 0.025
+		country_tech_spread_mult = 0.02
+		state_education_access_add = 0.025
 
 		# Increase Country max innovation
-		country_weekly_innovation_add = 10
+		country_weekly_innovation_add = 20
 	}
 
 	ai_enact_weight_modifier = { #Petitions
