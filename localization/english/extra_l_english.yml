@@ -272,17 +272,18 @@
  ultra_heavy_industry_harbor_desc: "Container ships as long as skyscrapers dock at automated terminals. Standardized steel boxes move robotically between ship, train, and truck—a ballet of logistics that trims global trade down to 20-foot units."
  light_ships_rockets_base: "Hydrophones"
  light_ships_rockets_base_desc: "Underwater microphones listen for the propeller noise of enemy submarines. These hydroacoustic sentinels detect even the faintest vibrations and turn the deep sea into a monitored labyrinth."
- light_ships_rockets_software: "Sonar Systems"
- light_ships_rockets_software_desc: "Active sound pulses scan the ocean floor like bat calls. Modern sonar processors distinguish wrecks from subs and calculate real-time collision paths for depth charges."
- heavy_ships_rockets_base: "Fire Control Systems"
+ light_ships_rockets_machinery: "Fire Control Systems"
+ light_ships_rockets_machinery_desc: "Active sound pulses scan the ocean floor like bat calls. Modern sonar processors distinguish wrecks from subs and calculate real-time collision paths for depth charges."
+ heavy_ships_rockets_base: "Mine Sweeper"
  heavy_ships_rockets_base_desc: "Mechanical analog computers connect rangefinders with gun turrets. These fire-breathing cybernetic systems compute ballistic corrections for waves and wind drift—a precursor to the digital battlefield."
  heavy_ships_rockets_software: "Electronic Countermeasures"
  heavy_ships_rockets_software_desc: "Jammers confuse enemy radar with synthetic echo clouds. Electronic warfare creates phantom fleets while cryptomodules foil enemy radio surveillance."
  support_ships_rockets_base: "Integrated Radar System"
  support_ships_rockets_base_desc: "Rotating antennas build an electromagnetic picture of the sky. Networked radar stations triangulate aircraft formations from 200 km away and guide interceptors like sheepdogs to bomber herds."
+ support_ships_mine_sweeper: "Sonar Systems"
  ut_anti_tank: "Anti-Tank Weapons"
  ut_anti_tank_desc: "Anti-tank rifles fire tungsten cores that cut through steel like butter. Infantry learn to ambush in urban combat, where thick front armor becomes useless."
- ut_anti_tank_guided: "Guided Missiles"
+ ut_anti_tank_guided: "Self-Propellent Artillery"
  ut_anti_tank_guided_desc: "Wire-guided missiles follow the sightline of the scope. These 'smart' projectiles make it a matter of life or death for tank crews to stay behind hills."
  task_forces: "Special Forces"
  task_forces_desc: "Elite units train for night battles and hostage rescues. With silenced weapons and night vision, they move like shadows—fast, deadly, and off the record."
@@ -302,8 +303,37 @@
  ut_tank_future_desc: "Active defense systems intercept grenades with micro-explosions. Networked sensors give full 360° awareness—the tank becomes a rolling data center."
  ut_war_planes: "Warplanes"
  ut_war_planes_desc: "Biplane fighters battle with machine guns through spinning propellers. Dogfights still follow knightly rituals—until formation tactics militarize the skies."
+ ut_war_planes_2: "Advanced Warplanes"
  ut_jet_planes: "Jet Aircraft"
  ut_jet_planes_desc: "Jet engines tear through the sound barrier. MiG-15s and F-86s duel in supersonic loops where seconds decide life or fiery death."
+ ut_modern_planes: "Modern Aircraft"
+ ut_anti_tank_guided_software: "Anti-Tank Guided Systems"
+ light_ships_rockets_computers: "Light Ship Combat Systems"
+ heavy_ships_rockets_computers: "Heavy Ship Combat Systems"
+ support_ships_electronic_surveillance: "Electronic Surveillance Ships"
+
+ combat_unit_type_support_systems: "Support Systems"
+ combat_unit_type_missile_corvettes: "Missile Corvettes"
+ combat_unit_type_surveillance_corvettes: "Surveillance Corvettes"
+ combat_unit_type_capital_battleship: "Capital Battleship"
+ combat_unit_type_modern_submarine: "Modern Submarine"
+ combat_unit_type_super_carrier: "Supercarrier"
+ combat_unit_type_armored_infantry: "Armored Infantry"
+ combat_unit_type_task_force_infantry: "Task Force Infantry"
+ combat_unit_type_motorized_artillery: "Self-Propellent Artillery"
+ combat_unit_type_rocket_artillery: "Rocket Artillery"
+ combat_unit_type_support_systems_desc: "Logistical and electronic support units that enhance the effectiveness of frontline forces."
+ combat_unit_type_missile_corvettes_desc: "Fast and agile ships armed with missile systems designed for rapid naval engagements."
+ combat_unit_type_surveillance_corvettes_desc: "Naval units equipped with advanced sensors and communication arrays for reconnaissance and coordination."
+ combat_unit_type_capital_battleship_desc: "Heavily armed and armored flagship-class vessels designed for domination in major sea battles."
+ combat_unit_type_modern_submarine_desc: "Stealthy underwater vessels equipped with torpedoes and cruise missiles for strategic strikes."
+ combat_unit_type_super_carrier_desc: "Massive carriers that serve as mobile airbases, projecting power across vast distances."
+ combat_unit_type_armored_infantry_desc: "Infantry units outfitted with heavy personal armor and integrated support systems for increased survivability."
+ combat_unit_type_task_force_infantry_desc: "Highly trained, flexible units capable of executing specialized missions independently or alongside other forces."
+ combat_unit_type_motorized_artillery_desc: "Artillery mounted on motor vehicles, enabling rapid deployment and repositioning on the battlefield."
+ combat_unit_type_rocket_artillery_desc: "Artillery that launches volleys of rockets to saturate large areas with explosive firepower."
+
+
 
 # Tech Society
  highway_projects: "Highways"
@@ -522,6 +552,40 @@
  highways: "Highways"
  consumer_goods: "Consumer Goods"
  heavy_machinery: "Machinery"
+
+ goods_input_internet_add: "@internet! Internet input"
+ goods_input_internet_add_desc: "The amount of @internet! Internet consumed by buildings"
+
+ goods_input_heavy_machinery_add: "@heavy_machinery! Heavy Machinery input"
+ goods_input_heavy_machinery_add_desc: "The amount of @heavy_machinery! Heavy Machinery consumed by buildings"
+
+ goods_input_plastic_add: "@plastic! Plastic input"
+ goods_input_plastic_add_desc: "The amount of @plastic! Plastic consumed by buildings"
+
+ goods_input_consumer_goods_add: "@consumer_goods! Consumer Goods input"
+ goods_input_consumer_goods_add_desc: "The amount of @consumer_goods! Consumer Goods consumed by buildings"
+
+ goods_input_electronics_add: "@electronics! Electronics input"
+ goods_input_electronics_add_desc: "The amount of @electronics! Electronics consumed by buildings"
+
+ goods_input_computers_add: "@computers! Computers input"
+ goods_input_computers_add_desc: "The amount of @computers! Computers consumed by buildings"
+
+ goods_input_aliminum_add: "@aliminum! Aliminum input"
+ goods_input_aliminum_add_desc: "The amount of @aliminum! Aliminum consumed by buildings"
+
+ goods_input_bauxite_add: "@bauxite! Bauxite input"
+ goods_input_bauxite_add_desc: "The amount of @bauxite! Bauxite consumed by buildings"
+
+ goods_input_rare_earths_add: "@rare_earths! Rare Earths input"
+ goods_input_rare_earths_add_desc: "The amount of @rare_earths! Rare Earths consumed by buildings"
+
+ goods_input_trucks_add: "@trucks! Trucks input"
+ goods_input_trucks_add_desc: "The amount of @trucks! Trucks consumed by buildings"
+
+ goods_input_software_add: "@software! Software input"
+ goods_input_software_add_desc: "The amount of @software! Software consumed by buildings"
+
 
 
  pm_supermarket: "Supermarket"

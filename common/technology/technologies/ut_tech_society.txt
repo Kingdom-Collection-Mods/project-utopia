@@ -148,7 +148,7 @@ modern_civil_aviation = {
 
 international_commerce = {
 	era = era_8
-	texture = "gfx/interface/icons/invention_icons/joint_stock_companies.dds"
+	texture = "gfx/interface/icons/invention_icons/international_commerce.dds"
 	category = society
 		
 	modifier = {
@@ -232,7 +232,7 @@ digital_payments = {
 
 digital_trading = {
 	era = era_8
-	texture = "gfx/interface/icons/invention_icons/currency_standards.dds"
+	texture = "gfx/interface/icons/invention_icons/digital_trade.dds"
 	category = society
 		
 	modifier = {

@@ -125,7 +125,7 @@ biotechnology = {
 #Heavy Machinery Main
 bauxite_mining = {
 	era = era_5
-	texture = "gfx/interface/icons/invention_icons/shaft_mining.dds"
+	texture = "gfx/interface/icons/invention_icons/mining_pit.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -261,7 +261,7 @@ civilian_drones = {
 #Rare Earths
 rare_earths_mining_era_analog = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/shaft_mining.dds"
+	texture = "gfx/interface/icons/invention_icons/mining_pit_2.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -279,7 +279,7 @@ rare_earths_mining_era_analog = {
 
 rare_earths_mining_era_digital = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/atmospheric_engine.dds"
+	texture = "gfx/interface/icons/invention_icons/solvent_extraction.dds"
 	category = production
 
 	unlocking_technologies = {	

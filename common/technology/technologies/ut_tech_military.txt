@@ -2,7 +2,7 @@
 heavy_industry_harbor = {
 
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/floating_harbor.dds"
+	texture = "gfx/interface/icons/invention_icons/industrial_harbor.dds"
 	category = military
 
 	unlocking_technologies = {	
@@ -22,7 +22,7 @@ heavy_industry_harbor = {
 ultra_heavy_industry_harbor = {
 
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/concrete_dockyards.dds"
+	texture = "gfx/interface/icons/invention_icons/container_harbor.dds"
 	category = military
 
 	unlocking_technologies = {	
@@ -59,9 +59,9 @@ light_ships_rockets_base = {
 	}
 }
 
-light_ships_rockets_software = {
-	era = era_7
-	texture = "gfx/interface/icons/invention_icons/submarine.dds"
+light_ships_rockets_machinery = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/fire_control_systems.dds"
 	category = military
 
 	unlocking_technologies = {	
@@ -77,9 +77,84 @@ light_ships_rockets_software = {
 	}
 }
 
-heavy_ships_rockets_base = {
+
+light_ships_rockets_computers = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/dreadnought.dds"
+	texture = "gfx/interface/icons/invention_icons/surveillance_corvettes.dds"
+	category = military
+
+	unlocking_technologies = {	
+		light_ships_rockets_machinery
+	}
+
+	modifier = {
+		unit_navy_defense_add = 5
+    }
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+light_ships_rockets_computers = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/surveillance_corvettes.dds"
+	category = military
+
+	unlocking_technologies = {	
+		light_ships_rockets_machinery
+	}
+
+	modifier = {
+		unit_navy_defense_add = 5
+    }
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+support_ships_mine_sweeper = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/sonars.dds"
+	category = military
+
+	unlocking_technologies = {	
+		light_ships_rockets_base
+	}
+
+	modifier = {
+		unit_navy_defense_add = 5
+    }
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+
+support_ships_electronic_surveillance = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/modern_submarine.dds"
+	category = military
+
+	unlocking_technologies = {	
+		light_ships_rockets_computers
+	}
+
+	modifier = {
+		unit_navy_defense_add = 5
+    }
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+
+heavy_ships_rockets_base = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/mine_sweeper.dds"
 	category = military
 
 	unlocking_technologies = {	
@@ -95,10 +170,9 @@ heavy_ships_rockets_base = {
 	}
 }
 
-
-heavy_ships_rockets_software = {
-	era = era_8
-	texture = "gfx/interface/icons/invention_icons/monitor_tech.dds"
+heavy_ships_rockets_computers = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/capital_battleship.dds"
 	category = military
 
 	unlocking_technologies = {	
@@ -114,9 +188,27 @@ heavy_ships_rockets_software = {
 	}
 }
 
+heavy_ships_rockets_software = {
+	era = era_8
+	texture = "gfx/interface/icons/invention_icons/electronic_counter_measures.dds"
+	category = military
+
+	unlocking_technologies = {	
+		heavy_ships_rockets_computers
+	}
+
+	modifier = {
+		unit_navy_offense_add = 5
+    }
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
 support_ships_rockets_base = {
-	era = era_7
-	texture = "gfx/interface/icons/invention_icons/battlefleet_tactics.dds"
+	era = era_8
+	texture = "gfx/interface/icons/invention_icons/super_carrier.dds"
 	category = military
 
 	unlocking_technologies = {	
@@ -137,7 +229,7 @@ support_ships_rockets_base = {
 # Infantry
 ut_anti_tank = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/bolt_action_rifles.dds"
+	texture = "gfx/interface/icons/invention_icons/anti_tank_equipment.dds"
 	category = military
 
 	unlocking_technologies = {	
@@ -156,8 +248,8 @@ ut_anti_tank = {
 }
 
 ut_anti_tank_guided = {
-	era = era_7
-	texture = "gfx/interface/icons/invention_icons/breech_loading_artillery.dds"
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/guided_missiles.dds"
 	category = military
 
 	unlocking_technologies = {	
@@ -174,9 +266,28 @@ ut_anti_tank_guided = {
 	}
 }
 
+ut_anti_tank_guided_software = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/guided_missiles_2.dds"
+	category = military
+
+	unlocking_technologies = {	
+		ut_anti_tank_guided
+	}
+
+	modifier = {
+		unit_army_offense_mult = 0.05
+		unit_kill_rate_add = 0.05
+    }
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
 task_forces = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/admiralty.dds"
+	texture = "gfx/interface/icons/invention_icons/special_forces.dds"
 	category = military
 
 	unlocking_technologies = {	
@@ -191,7 +302,7 @@ task_forces = {
 # Tank Tree Start
 ut_tank_diesel_engine = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/combustion_engine.dds"
+	texture = "gfx/interface/icons/invention_icons/diesel_engine_tanks.dds"
 	category = military
 
 	unlocking_technologies = {	
@@ -209,7 +320,7 @@ ut_tank_diesel_engine = {
 
 ut_tank_radio = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/radio.dds"
+	texture = "gfx/interface/icons/invention_icons/tank_radio.dds"
 	category = military
 
 	unlocking_technologies = {	
@@ -227,7 +338,7 @@ ut_tank_radio = {
 
 ut_tank_composite_armor = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/concrete_fortifications.dds"
+	texture = "gfx/interface/icons/invention_icons/composite_armor.dds"
 	category = military
 
 	unlocking_technologies = {	
@@ -246,7 +357,7 @@ ut_tank_composite_armor = {
 
 ut_tank_modern = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/mobile_armor.dds"
+	texture = "gfx/interface/icons/invention_icons/tank_1960s.dds"
 	category = military
 
 	unlocking_technologies = {	
@@ -268,7 +379,7 @@ ut_tank_modern = {
 
 ut_tank_jet_engine = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/compression_ignition.dds"
+	texture = "gfx/interface/icons/invention_icons/gas_turbine.dds"
 	category = military
 
 	unlocking_technologies = {
@@ -286,7 +397,7 @@ ut_tank_jet_engine = {
 
 ut_tank_autoloader = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/breech_loading_artillery.dds"
+	texture = "gfx/interface/icons/invention_icons/autoloader.dds"
 	category = military
 
 	unlocking_technologies = {
@@ -305,7 +416,7 @@ ut_tank_autoloader = {
 
 ut_tank_future = {
 	era = era_8
-	texture = "gfx/interface/icons/invention_icons/mobile_armor.dds"
+	texture = "gfx/interface/icons/invention_icons/tank_2000s.dds"
 	category = military
 
 	unlocking_technologies = {
@@ -329,7 +440,7 @@ ut_tank_future = {
 
 ut_war_planes = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/military_aviation.dds"
+	texture = "gfx/interface/icons/invention_icons/warplan_40s.dds"
 	category = military
 
 	unlocking_technologies = {
@@ -345,14 +456,51 @@ ut_war_planes = {
 	}
 }
 
+ut_war_planes_2 = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/warplan_60s.dds"
+	category = military
+
+	unlocking_technologies = {
+		ut_war_planes
+	}
+	
+	modifier = {
+		unit_occupation_mult = 0.2
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
 ut_jet_planes = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/zeppelins.dds"
+	texture = "gfx/interface/icons/invention_icons/warplan_90s.dds"
 	category = military
 
 	unlocking_technologies = {
 		ut_tank_jet_engine
-		ut_war_planes
+		ut_war_planes_2
+	}
+	
+	
+	modifier = {
+		unit_occupation_mult = 0.2
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+ut_modern_planes = {
+	era = era_8
+	texture = "gfx/interface/icons/invention_icons/warplan_2010s.dds"
+	category = military
+
+	unlocking_technologies = {
+		ut_jet_planes
 	}
 	
 	
