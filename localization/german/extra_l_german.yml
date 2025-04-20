@@ -6,6 +6,9 @@
  utopia.progress_b: "Heureka!"
  utopia.progress_c: "Lang lebe die Wissenschaft"
  utopia.slow_progress: "Schritt für Schritt..."
+ utopia.continue: "Weiter"
+ utopia.cheat: "Cheaten"
+ utopia.disable: "Deaktivieren"
  
 # Events & Journals
 
@@ -314,9 +317,12 @@
  early_civil_aviation: "Frühe Zivilluftfahrt"
  early_civil_aviation_tech_tt: "Einmal pro Spiel: Jedes Land erhält 50 mehr Technikverbreitung für immer."
  civil_airlines: "Zivile Fluggesellschaften"
+ civil_airlines_desc: "Civil airlines refer to non-military air transport services that carry passengers and cargo for commercial purposes. They play a vital role in global connectivity, economic development, and the facilitation of international trade and tourism."
  modern_civil_aviation: "Moderne Zivilluftfahrt"
+ modern_civil_aviation_desc: "Modern civil aviation encompasses the advanced systems, technologies, and infrastructure that support contemporary air travel and transport. It emphasizes safety, efficiency, and global connectivity, driven by innovations in aircraft design, air traffic management, and international regulations."
  modern_civil_aviation_tech_tt: "Einmal pro Spiel: Jedes Land erhält 50 mehr Technikverbreitung für immer."
  international_commerce: "Internationaler Handel"
+ international_commerce_desc: "International commerce refers to the exchange of goods, services, and capital across national borders. It drives global economic integration, fosters specialization, and enables countries to access a wider variety of resources and markets."
  check_payments: "Scheckzahlungen"
  check_payments_desc: "Papierne Anweisungen ersetzen Bargeldtransaktionen im Großhandel. Schecks schaffen ein dokumentierbares Zahlungssystem, das den Aufstieg von Banken als zentrale Finanzintermediäre befördert."
  credit_cards: "Kreditkarten"
@@ -524,7 +530,6 @@
  goods_output_trucks_add: "@trucks! Trucks output"
  goods_output_trucks_add_desc: "The amount of @trucks! Trucks produced by buildings"
  goods_output_trucks_mult: "@trucks! Trucks output"
- goods_output_trucks_mult: "The amount of @trucks! Trucks produced by buildings"
  state_highways_max_level_add: "Maximale Stufe für $highways$ hinzufügen"
 
  pm_ut_industry_plastics: "Industrieplastik"
@@ -551,6 +556,7 @@
 
  agricultural_mechanization: "Schwere Traktoren"
  slow_tech_progress: "Langsamer technischer Fortschritt"
+ je_ai_advanced_consumer_goods_researched: "Wave of Technological Spread"
  ai_great_power_buff_spread: "Technologischer Einfluss (Großmacht)"
  ai_major_power_buff_spread: "Technologischer Einfluss (Hauptmacht)"
  ai_below_major_power_buff_spread: "Technologischer Einfluss (Sekundärmacht)"

@@ -55,18 +55,18 @@ utopia_mod.2 = {
 
 
 	option = {
-		name = continue
+		name = utopia.continue
 		default_option = yes
 	}
 	option = {
-		name = cheat
+		name = utopia.cheat
 		add_modifier = {
 			name = ut_tech_preview_cheat_modifier
 			months = short_modifier_time
 		}
 	}
 	option = {
-		name = disable
+		name = utopia.disable
 		custom_tooltip = ut_tech_preview_cheat_disable_tt
 		set_global_variable = ut_tech_preview_cheat_disable
 	}

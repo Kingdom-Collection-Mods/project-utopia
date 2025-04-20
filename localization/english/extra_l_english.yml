@@ -6,6 +6,9 @@
  utopia.progress_b: "Eureka!"
  utopia.progress_c: "Long live science"
  utopia.slow_progress: "Step by step..."
+ utopia.continue: "Continue"
+ utopia.cheat: "Cheat"
+ utopia.disable: "Disable"
 
 # Events & Journals
 
@@ -94,7 +97,6 @@
  ig_trait_research_initiative: "Performance Society"
  ig_trait_open_borders_desc: "This group advocates for the free movement of people across borders, believing it fosters cultural exchange and economic opportunity. They oppose restrictive immigration policies and emphasize international cooperation."
  ig_trait_research_initiative_desc: "This group champions a society driven by research, innovation, and measurable performance. They believe continuous improvement and scientific progress are key to national success."
-
 
  ut_movement_cosmopolitan_name: "Cosmopolitan Movement"
  ut_movement_humanist_name: "Humanist Movement"
@@ -318,7 +320,7 @@
  civil_airlines_desc: "Civil airlines refer to non-military air transport services that carry passengers and cargo for commercial purposes. They play a vital role in global connectivity, economic development, and the facilitation of international trade and tourism."
  modern_civil_aviation: "Modern Civil Aviation"
  modern_civil_aviation_desc: "Modern civil aviation encompasses the advanced systems, technologies, and infrastructure that support contemporary air travel and transport. It emphasizes safety, efficiency, and global connectivity, driven by innovations in aircraft design, air traffic management, and international regulations."
- modern_civil_aviation_tech_tt: "Once per game: All countries gain +10% tech spread for 20 years."
+ modern_civil_aviation_tech_tt: "Once per game: All countries gain 50 tech spread forever."
  international_commerce: "International Trade"
  international_commerce_desc: "International commerce refers to the exchange of goods, services, and capital across national borders. It drives global economic integration, fosters specialization, and enables countries to access a wider variety of resources and markets."
  check_payments: "Check Payments"
@@ -528,7 +530,6 @@
  goods_output_trucks_add: "@trucks! Trucks Output"
  goods_output_trucks_add_desc: "The amount of @trucks! Trucks produced by buildings"
  goods_output_trucks_mult: "@trucks! Trucks output"
- goods_output_trucks_mult: "The amount of @trucks! Trucks produced by buildings"
  state_highways_max_level_add: "Add Maximum Level for $highways$"
 
  pm_ut_industry_plastics: "Industrial Plastics"
@@ -555,6 +556,7 @@
 
  agricultural_mechanization: "Heavy Tractors"
  slow_tech_progress: "Slow Technological Progress"
+ je_ai_advanced_consumer_goods_researched: "Wave of Technological Spread"
  ai_great_power_buff_spread: "Technological Influence (Great Power)"
  ai_major_power_buff_spread: "Technological Influence (Major Power)"
  ai_below_major_power_buff_spread: "Technological Influence (Minor Power)"
