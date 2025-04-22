@@ -59,7 +59,7 @@ ideology_urbanist_economy_base = {
 		law_private_schools = neutral
 		law_private_universities = neutral
 		law_public_schools = approve
-		law_public_universities = strongly_approve
+		law_public_university = strongly_approve
 	}
 
 	lawgroup_trade_policy = {		

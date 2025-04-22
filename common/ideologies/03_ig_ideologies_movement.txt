@@ -276,7 +276,7 @@ ideology_radical_movement = {
 	
 	lawgroup_education_system = {
 		law_public_schools = approve
-		law_public_universities = approve
+		law_public_university = approve
 		law_private_schools = neutral
 		law_private_universities = neutral
 		law_no_schools = disapprove
