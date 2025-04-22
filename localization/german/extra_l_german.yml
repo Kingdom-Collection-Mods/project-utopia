@@ -41,8 +41,8 @@
  utopia_journal_prod.consumer_goods_simple_je: "Einfache Konsumgüter"
  utopia_journal_prod.consumer_goods_complex_je: "Komplexe Konsumgüter"
  
- heavy_industrial_machinery_je_reason: "Grund für schwere Industriemaschinen"
- cnc_machines_je_reason: "Grund für CNC-Maschinen"
+ heavy_industrial_machinery_je_reason: "A momentous turning point in our nation's march toward modernity. The foundations have been laid, the first gears assembled, and the furnaces fired - the very first Heavy Industrial Machinery building now stands tall against the skyline, a testament to human ingenuity and ambition.\nWhere once laborers toiled by hand, great machines now take shape to ease their burden and multiply their output. Though its engines roar and its halls echo with the clang of steel, this building is more than just a factory. It is the crucible in which the future will be forged."
+ cnc_machines_je_reason: "The arrival of CNC (Computer Numerical Control) machines has ushered in a new era of precision and consistency in heavy industry. Where once even the steadiest craftsman's hand might falter, now programmable machines execute complex tasks with unerring accuracy. Intricate components, once painstakingly shaped by human effort, are now milled, drilled, and cut with mechanical grace. The margin for error shrinks to near nothing, and with it, so too does the cost of imperfection.\nBut this revolution is more than just technical. It changes the very fabric of labor itself. Skilled machinists now find themselves retrained as operators and programmers, guiding machines rather than tools. Production scales faster, parts become standardized, and industries once limited by human variation find themselves liberated by automation. With CNC machines humming across the factory floor, heavy industry transforms from brute force into a symphony of calculated motion."
  heavy_tractors_je_reason: "Grund für schwere Traktoren"
  agrarian_planes_je_reason: "Grund für Agrarflugzeuge"
  plastic_je_reason: "Grund für Kunststoffe"
@@ -59,10 +59,60 @@
  utopia_journal_society_2_wirtschaftswunder_flavor: "Aus Schutt wurde Gold: Wo einst Ruinen rauchten, wuchsen Fabriken, Wohlstand und ein neues Selbstbewusstsein. Eine starke globale Wirtschaft, weltweiter ökonomischer Aufschwung, und der Geist des Wunders verwandelten Verzweiflung in Dynamik - eine Ära, in der Arbeiterin zu Ingenieurinnen der Zukunft wurden und der technlogische Fortschritt die Welt staunen ließ."
 
  je_early_civil_aviation: "Frühe zivile Luftfahrt"
+ je_early_civil_aviation_reason: "Frühe zivile Luftfahrt..."
  je_modern_civil_aviation: "Moderne zivile Luftfahrt"
+ je_modern_civil_aviation_reason: "Moderne zivile Luftfahrt..." 
 
  je_urbanist_ig: "Urbanebewegung"
- 
+ je_urbanist_ig_reason: "Urbanebewegung..."
+
+ je_ut_new_dawn: "New Dawn"
+ je_ut_new_dawn_reason: "New political waves hit our nation, we must decide on a path."
+ je_ut_new_dawn_condition_tt: "Moderate, Communisten oder Faschisten haben 100% erreicht."
+ je_ut_new_dawn_effect_tt: "New Dawn Teil 2"
+ new_dawn_ongoing: "New Dawn"
+
+ ut_new_dawn_status: "New Dawn"
+ ut_new_dawn_communist_bar: "Communist"
+ ut_new_dawn_communist_bar_desc: "Communist progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('divided_monarchists_upper_bound')])"
+ ut_nd_communist_progress_from_characters: "combined [concept_popularity] of #bold Anarchist, Radical, Communist, and Vanguardist#! characters"
+ ut_nd_communist_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with #bold Anarchist, Radical, Communist, and Vanguardist#! leaders"
+ ut_nd_communist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_command_economy').GetName], [GetLawType('law_cooperative_ownership').GetName]"
+ ut_nd_communist_progress_from_legitimacy: "[concept_government] [concept_legitimacy]"
+ ut_nd_communist_progress_from_movements: "[concept_political_movement_support] of #bold Anarchist, Radical, Communist, and Vanguardist#! [Concept('concept_political_movement','$concept_political_movements$')]"
+ ut_nd_communist_progress_from_effects: "events and other effects"
+
+ ut_new_dawn_moderate_bar: "Moderate"
+ ut_new_dawn_moderate_bar_desc: "Moderate progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('divided_monarchists_upper_bound')])"
+ ut_nd_moderate_progress_from_characters: "combined [concept_popularity] of #bold Moderate (non-extremist)#! characters"
+ ut_nd_moderate_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with #bold Moderate#! leaders"
+ ut_nd_moderate_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_monarchy').GetName]"
+ ut_nd_moderate_progress_from_legitimacy: "[concept_government] [concept_legitimacy]"
+ ut_nd_moderate_progress_from_movements: "[concept_political_movement_support] of #bold Moderate#! [Concept('concept_political_movement','$concept_political_movements$')]"
+ ut_nd_moderate_progress_from_effects: "events and other effects"
+
+ ut_new_dawn_fascist_bar: "Fascists"
+ ut_new_dawn_fascist_bar_desc: "Fascist progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('divided_monarchists_upper_bound')])"
+ ut_nd_fascist_progress_from_characters: "combined [concept_popularity] of #bold Corporatist, Ethno-Nationalist, and Fascist#! characters"
+ ut_nd_fascist_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with #bold Corporatist, Ethno-Nationalist, and Fascist#! leaders"
+ ut_nd_fascist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName]"
+ ut_nd_fascist_progress_from_legitimacy: "[concept_government] [concept_legitimacy]"
+ ut_nd_fascist_progress_from_movements: "[concept_political_movement_support] of #bold Fascist#! [Concept('concept_political_movement','$concept_political_movements$')]"
+ ut_nd_fascist_progress_from_effects: "events and other effects"
+
+ je_ai_radio_researched: "Radio Researched"
+ je_ai_radio_researched_reason: "REPLACE_ME"
+
+ je_ai_consumer_goods_researched: "Consumer Goods researched"
+ je_ai_consumer_goods_researched_reason: "REPLACE_ME"
+
+ je_ai_not_ai: "Human in disguise"
+ je_ai_not_ai_reason: "REPLACE_ME"
+
+
+ je_wirtschaftswunder_reason: "REPLACE_ME"
+ je_wirtschaftswunder_others_reason: "REPLACE_ME"
+
 # Pop and Politics
  service_workers: "@service_workers! $service_workers_no_icon$"
  service_workers_desc: "Arbeitende in urbanen Dienstleistungssektoren wie Gastgewerbe, Einzelhandel und Transport. Sie bilden einen wesentlichen Teil der modernen Wirtschaft und repräsentieren eine vielfältige, dynamische Arbeitskraft."
@@ -117,8 +167,10 @@
  law_compulsory_secondary_school_desc: "Staatlich verpflichtende Sekundarbildung, um allen Bürgern grundlegende Qualifikationen für gesellschaftliche Teilhabe zu sichern."
  law_compulsory_tertiary_school: "Hochschulpflicht"
  law_compulsory_tertiary_school_desc: "Verpflichtende Hochschulbildung zur Förderung von Fachwissen und technologischem Fortschritt."
- law_public_university: "Öffentliche Universitäten"
- law_public_university_desc: "Staatlich finanzierte Hochschulen, die Bildung unabhängig von sozialer Herkunft zugänglich machen und Forschung fördern."
+ law_public_universities: "Öffentliche Universitäten"
+ law_public_universities_desc: "Staatlich finanzierte Hochschulen, die Bildung unabhängig von sozialer Herkunft zugänglich machen und Forschung fördern."
+ law_private_universities: "Private Universitäten"
+ law_private_universities_desc: ""
  law_task_forces: "Einsatzgruppen"
  law_task_forces_desc: "Spezialisierte Einheiten zur schnellen Krisenbewältigung oder Verteidigung des Landes."
  law_neo_ethno_state: "Neo-Ethnostaat"
@@ -127,8 +179,8 @@
  law_multicultural_globalism_desc: "Eine offene Gesellschaft, die kulturelle Vielfalt und internationale Zusammenarbeit hoch bewertet."
  law_equal_rights_for_women: "Gleichberechtigung"
  law_equal_rights_for_women_desc: "Gesetzliche Gleichstellung von Frauen in Bildung, Beruf und Politik zur Beseitigung geschlechtsspezifischer Diskriminierung."
- law_affirmative_equaltity: "Gleichstellungsauftrag"
- law_affirmative_equaltity_desc: "Aktive Quotenregelungen und Förderprogramme, um historische Benachteiligungen von Frauen auszugleichen."
+ law_affirmative_equality: "Gleichstellungsauftrag"
+ law_affirmative_equality_desc: "Aktive Quotenregelungen und Förderprogramme, um historische Benachteiligungen von Frauen auszugleichen."
  law_privatized_bureaucrats: "Privatisierte Verwaltung"
  law_privatized_bureaucrats_desc: "Die Auslagerung staatlicher Verwaltungsaufgaben an private Unternehmen, um Effizienz zu steigern und Kosten zu senken."
  law_no_environment_protection: "Keine Umweltschutzgesetze"
@@ -280,6 +332,7 @@
  heavy_ships_rockets_software_desc: "Störsender verwirren gegnerische Radare mit synthetischen Echowolken. Elektronische Gegenmaßnahmen spiegeln ganze Phantomflotten vor, während Cryptomodule feindliche Funkaufklärung vereiteln."
  support_ships_rockets_base: "Integrierte Radarsystem"
  support_ships_rockets_base_desc: "Rotierende Antennen bauen ein elektromagnetisches Luftbild auf. Vernetzte Radarstationen triangulieren Flugzeugpulks auf 200 km Entfernung und leiten Abfangjäger wie Schäferhunde zu Bomberherden."
+ support_ships_mine_sweeper: "Sonar Systems"
  ut_anti_tank: "Anti-Panzer-Waffen"
  ut_anti_tank_desc: "Panzerbüchsen feuern Wolframkerne, die Stahl wie Butter durchdringen. Infanteristen lernen im Häuserkampf aus Hinterhalten zu operieren, wo die dicke Frontpanzerung der Kolosse wirkungslos wird."
  ut_anti_tank_guided: "Gelenkte Raketen"
@@ -550,6 +603,40 @@
  highways: "Autobahnen"
  consumer_goods: "Konsumgüter"
  heavy_machinery: "Schwerlastmaschinen"
+
+
+ goods_input_internet_add: "@internet! Internet input"
+ goods_input_internet_add_desc: "The amount of @internet! Internet consumed by buildings"
+
+ goods_input_heavy_machinery_add: "@heavy_machinery! Heavy Machinery input"
+ goods_input_heavy_machinery_add_desc: "The amount of @heavy_machinery! Heavy Machinery consumed by buildings"
+
+ goods_input_plastic_add: "@plastic! Plastic input"
+ goods_input_plastic_add_desc: "The amount of @plastic! Plastic consumed by buildings"
+
+ goods_input_consumer_goods_add: "@consumer_goods! Consumer Goods input"
+ goods_input_consumer_goods_add_desc: "The amount of @consumer_goods! Consumer Goods consumed by buildings"
+
+ goods_input_electronics_add: "@electronics! Electronics input"
+ goods_input_electronics_add_desc: "The amount of @electronics! Electronics consumed by buildings"
+
+ goods_input_computers_add: "@computers! Computers input"
+ goods_input_computers_add_desc: "The amount of @computers! Computers consumed by buildings"
+
+ goods_input_aliminum_add: "@aliminum! Aliminum input"
+ goods_input_aliminum_add_desc: "The amount of @aliminum! Aliminum consumed by buildings"
+
+ goods_input_bauxite_add: "@bauxite! Bauxite input"
+ goods_input_bauxite_add_desc: "The amount of @bauxite! Bauxite consumed by buildings"
+
+ goods_input_rare_earths_add: "@rare_earths! Rare Earths input"
+ goods_input_rare_earths_add_desc: "The amount of @rare_earths! Rare Earths consumed by buildings"
+
+ goods_input_trucks_add: "@trucks! Trucks input"
+ goods_input_trucks_add_desc: "The amount of @trucks! Trucks consumed by buildings"
+
+ goods_input_software_add: "@software! Software input"
+ goods_input_software_add_desc: "The amount of @software! Software consumed by buildings"
 
 
  pm_supermarket: "Supermarkt"

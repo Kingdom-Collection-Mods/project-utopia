@@ -50,10 +50,6 @@
 		}
 	}
 
-	scripted_button = french_monarchy_bonapartist_button
-	scripted_button = french_monarchy_orleanist_button
-	scripted_button = french_monarchy_legitimist_button
-
 	status_desc = {
 		first_valid = {
 			triggered_desc = { # Cementing the Rightful Dynasty is active

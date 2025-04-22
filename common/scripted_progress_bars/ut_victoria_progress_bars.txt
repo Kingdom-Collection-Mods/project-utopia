@@ -4,7 +4,8 @@
 	name = "ut_new_dawn_fascist_bar"
 	desc = "ut_new_dawn_fascist_bar_desc"
 
-	default = yes
+	#for color
+	default_green = yes
 
 	monthly_progress = {
 		if = {
@@ -22,16 +23,12 @@
 				value = owner.var:ut_nd_fascist_progress_from_igs
 			}
 			add = {
-				desc = "ut_nd_fascist_progress_from_military"
-				value = owner.var:ut_nd_fascist_progress_from_military
-			}
-			add = {
 				desc = "ut_nd_fascist_progress_from_legitimacy"
 				value = owner.var:ut_nd_fascist_progress_from_legitimacy
 			}
 			add = {
-				desc = "ut_nd_fascist_progress_from_movements"
-				value = owner.var:ut_nd_fascist_progress_from_movements
+				desc = "ut_nd_fascist_progress_from_laws"
+				value = owner.var:ut_nd_fascist_progress_from_laws
 			}
 			add = {
 				desc = "ut_nd_fascist_progress_from_effects"
@@ -50,7 +47,8 @@
 	name = "ut_new_dawn_moderate_bar"
 	desc = "ut_new_dawn_moderate_bar_desc"
 
-	default_bad = yes
+	#for color
+	default = yes
 
 	monthly_progress = {
 		if = {
@@ -76,10 +74,6 @@
 				value = owner.var:ut_nd_moderate_progress_from_legitimacy
 			}
 			add = {
-				desc = "ut_nd_moderate_progress_from_movements"
-				value = owner.var:ut_nd_moderate_progress_from_movements
-			}
-			add = {
 				desc = "ut_nd_moderate_progress_from_effects"
 				value = owner.var:ut_nd_moderate_progress_from_effects
 			}
@@ -96,7 +90,8 @@
 	name = "ut_new_dawn_communist_bar"
 	desc = "ut_new_dawn_communist_bar_desc"
 
-	default_green = yes
+	#for color
+	default_bad = yes
 
 	monthly_progress = {
 		if = {
@@ -114,16 +109,12 @@
 				value = owner.var:ut_nd_communist_progress_from_igs
 			}
 			add = {
-				desc = "ut_nd_communist_progress_from_farms"
-				value = owner.var:ut_nd_communist_progress_from_farms
-			}
-			add = {
 				desc = "ut_nd_communist_progress_from_legitimacy"
 				value = owner.var:ut_nd_communist_progress_from_legitimacy
 			}
 			add = {
-				desc = "ut_nd_communist_progress_from_movements"
-				value = owner.var:ut_nd_communist_progress_from_movements
+				desc = "ut_nd_communist_progress_from_laws"
+				value = owner.var:ut_nd_communist_progress_from_laws
 			}
 			add = {
 				desc = "ut_nd_communist_progress_from_effects"

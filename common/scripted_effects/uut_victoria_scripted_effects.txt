@@ -3,26 +3,26 @@
 # Refer to comments here and in 02_french_monarchism to get an idea as to how this works.
 
 ut_set_new_dawn_variables = {
-	#Bonapartist Variables
-	set_variable = { name = ut_nd_communist_progress_from_characters value = 0 } #Progress-from-character component. This updates with the combined popularities of every Bonapartist character later on, and is used to calculate monthly progress in the progress bar.
-	set_variable = { name = ut_nd_communist_progress_from_igs value = 0 } #Progress-from-IG component. This updates with the combined clout of every Bonapartist IG later on, and is used to calculate monthly progress in the progress bar.
+	#Communist Variables
+	set_variable = { name = ut_nd_communist_progress_from_characters value = 0 } #Progress-from-character component. This updates with the combined popularities of every Communist character later on, and is used to calculate monthly progress in the progress bar.
+	set_variable = { name = ut_nd_communist_progress_from_igs value = 0 } #Progress-from-IG component. This updates with the combined clout of every Communist IG later on, and is used to calculate monthly progress in the progress bar.
 	set_variable = { name = ut_nd_communist_progress_from_laws value = 0 } #Progress-from-military-building component. This updates with the sum of military building levels in France later on, and is used to calculate monthly progress in the progress bar.
 	set_variable = { name = ut_nd_communist_progress_from_legitimacy value = 0 } #Progress-from-legitimacy component. This updates with the current government legitimacy, and is also used to calculate monthly progress in the progress bar.
 	set_variable = { name = ut_nd_communist_progress_from_movements value = 0 } #Progress-from-movements component. This depends upon the support of various movements, and is also used to calculate monthly progress in the progress bar.
 	set_variable = { name = ut_nd_communist_progress_from_effects value = 0 } #Final element in the progress bar. This is defined by various effects, and is based solely on scripted effects. This is how designers can manually grant ticking bonuses or maluses to this mechanic.
 	
-	#Orleanist Variables
+	#Moderate Variables
 	set_variable = { name = ut_nd_moderate_progress_from_characters value = 0 } 
 	set_variable = { name = ut_nd_moderate_progress_from_igs value = 0 }
-	set_variable = { name = ut_nd_moderate_progress_from_laws value = 0 } #These variables use the same scheme as the Bonapartist ones, with the exception that Orleanists derive from the sum of light/heavy industry building levels in France.
+	set_variable = { name = ut_nd_moderate_progress_from_laws value = 0 } #These variables use the same scheme as the Communist ones, with the exception that Moderates derive from the sum of light/heavy industry building levels in France.
 	set_variable = { name = ut_nd_moderate_progress_from_legitimacy value = 0 }
 	set_variable = { name = ut_nd_moderate_progress_from_movements value = 0 }
 	set_variable = { name = ut_nd_moderate_progress_from_effects value = 0 }
 
-	#Legitimist Variables
+	#Fascist Variables
 	set_variable = { name = ut_nd_fascist_progress_from_characters value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_igs value = 0 }
-	set_variable = { name = ut_nd_fascist_progress_from_laws value = 0 } #These variables use the same scheme as the Bonapartist ones, with the exception that Legitimists derive from the sum of agricultural building levels in France.
+	set_variable = { name = ut_nd_fascist_progress_from_laws value = 0 } #These variables use the same scheme as the Communist ones, with the exception that Fascists derive from the sum of agricultural building levels in France.
 	set_variable = { name = ut_nd_fascist_progress_from_legitimacy value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_movements value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_effects value = 0 }
@@ -42,7 +42,7 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 			ut_ideology_new_dawn_communist_trigger = yes
 		}
 		ROOT = {
-			change_variable = { name = ut_nd_communist_progress_from_characters add = prev.popularity } #for_each loop. For each character of ideology_bonapartist, add that character's popularity to ut_nd_communist_progress_from_characters.
+			change_variable = { name = ut_nd_communist_progress_from_characters add = prev.popularity } #for_each loop. For each character of ideology_Communist, add that character's popularity to ut_nd_communist_progress_from_characters.
 		}
 	}
 	change_variable = { name = ut_nd_communist_progress_from_characters divide = 100 } #Character popularities are -100/100, rather than our desired -1/1, so divide by 100.
@@ -53,7 +53,7 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 				ut_ideology_new_dawn_communist_trigger = yes
 			}
 		}
-		ROOT = {														#for_each loop. For each interest group of ideology_bonapartist, perform the following steps in sequence.
+		ROOT = {														#for_each loop. For each interest group of ideology_Communist, perform the following steps in sequence.
 			set_variable = { name = ig_weight value = prev.ig_clout } 	#1. Set ig_weight as equal to the interest group's clout.
 		}
 		if = {
@@ -65,10 +65,10 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 			}
 		}
 		ROOT = {
-			change_variable = { name = ut_nd_communist_progress_from_igs add = var:ig_weight }	#3. Add ig_weight to the central ut_nd_communist_progress_from_igs variable. This will run until there are no more Bonapartist IGs.
+			change_variable = { name = ut_nd_communist_progress_from_igs add = var:ig_weight }	#3. Add ig_weight to the central ut_nd_communist_progress_from_igs variable. This will run until there are no more Communist IGs.
 		}
 	}
-	# From Buildings
+	# From Laws
 	if = {
 		limit = {
 			OR = {
@@ -88,11 +88,11 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 				ut_ideology_new_dawn_communist_trigger = no
 			}
 		}
-		change_variable = { name = ut_nd_communist_progress_from_legitimacy multiply = -0.5 } #If the ruler is not Bonapartist, they benefit from low legitimacy and suffer from high legitimacy.
+		change_variable = { name = ut_nd_communist_progress_from_legitimacy multiply = -0.5 } #If the ruler is not Communist, they benefit from low legitimacy and suffer from high legitimacy.
 	}
 }
-
-ut_new_dawn_moderate_progress = { #See Bonapartist progress to see how this works.
+ 
+ut_new_dawn_moderate_progress = { #See Communist progress to see how this works.
 	set_variable = { name = ut_nd_moderate_progress_from_base value = 0.5 }
 	set_variable = { name = ut_nd_moderate_progress_from_characters value = 0 }
 	set_variable = { name = ut_nd_moderate_progress_from_igs value = 0 }
@@ -108,7 +108,7 @@ ut_new_dawn_moderate_progress = { #See Bonapartist progress to see how this work
 			change_variable = { name = ut_nd_moderate_progress_from_characters add = prev.popularity }
 		}
 	}
-	change_variable = { name = ut_nd_moderate_progress_from_characters divide = 100 }
+	change_variable = { name = ut_nd_moderate_progress_from_characters divide = 200 } #x2
 	# From Interest Groups
 	every_interest_group = {
 		limit = {
@@ -131,6 +131,7 @@ ut_new_dawn_moderate_progress = { #See Bonapartist progress to see how this work
 			change_variable = { name = ut_nd_moderate_progress_from_igs add = var:ig_weight }
 		}
 	}
+	change_variable = { name = ut_nd_moderate_progress_from_igs divide = 2 }
 	# From Laws
 	if = {
 		limit = {
@@ -155,7 +156,7 @@ ut_new_dawn_moderate_progress = { #See Bonapartist progress to see how this work
 	}
 }
 
-ut_new_dawn_fascist_progress = { #See Legitimist progress to see how this works.
+ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 	set_variable = { name = ut_nd_fascist_progress_progress_from_characters value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_igs value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_laws value = 0 }
@@ -205,12 +206,12 @@ ut_new_dawn_fascist_progress = { #See Legitimist progress to see how this works.
 	if = {
 		limit = {
 			any_political_movement = {
-				is_political_movement_type = movement_legitimist
+				is_political_movement_type = movement_Fascist
 			}
 		}
 		random_political_movement = {
 			limit = {
-				is_political_movement_type = movement_legitimist
+				is_political_movement_type = movement_Fascist
 			}
 			ROOT = {
 				set_variable = { name = ut_nd_fascist_progress_from_movements value = prev.political_movement_support }
