@@ -1,8 +1,7 @@
-﻿
-law_public_university = {
+﻿law_public_universities = {
 	group = lawgroup_education_system
 
-	icon = "gfx/interface/icons/law_icons/state_atheism.dds"
+	icon = "gfx/interface/icons/law_icons/public_universities.dds"
 	
 	progressiveness = 60
 	
@@ -83,18 +82,107 @@ law_public_university = {
 	}
 }
 
+law_private_universities = {
+	group = lawgroup_education_system
+
+	icon = "gfx/interface/icons/law_icons/private_universities.dds"
+	
+	progressiveness = 60
+	
+	unlocking_technologies = {
+		new_public_management
+	}
+
+	disallowing_laws = {
+		law_state_religion
+		law_serfdom
+	}
+	
+	modifier = {
+		country_institution_cost_institution_schools_mult = -0.4
+	}
+
+	institution = institution_schools
+	institution_modifier = {
+		state_education_access_wealth_add = 0.0075
+		interest_group_ig_intelligentsia_pol_str_mult = 0.1
+		interest_group_ig_industrialists_pol_str_mult = 0.05
+	}
+
+	can_impose = {
+		OR = {
+			AND = {
+				is_in_same_power_bloc = scope:target_country
+				AND = {
+					modifier:country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes
+					has_law = scope:law
+				}
+			}
+			can_impose_law_default = yes
+		}
+	}
+
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+	}
+
+	ai_impose_chance = {
+		value = 0
+		
+		if = {
+			limit = {
+				has_law = law_type:law_public_schools
+				power_bloc ?= { has_principle_group = principle_group:principle_group_advanced_research }
+			}
+			add = base_impose_law_weight
+		}
+
+		if = {
+			limit = {
+				has_law = law_type:law_public_schools
+				scope:target_country = {
+					has_law = law_type:law_no_schools
+				}
+				power_bloc ?= { has_principle_group = principle_group:principle_group_advanced_research }
+			}
+			add = 10
+		}
+			
+		if = {
+			limit = {
+				scope:target_country = {
+					c:BIC ?= this
+					OR = {	
+						has_journal_entry = je_british_dictate_plantations
+						has_journal_entry = je_british_dictate_military
+						has_journal_entry = je_british_dictate_universities
+					}
+				}
+			}
+			multiply = 0
+		}
+	}
+}
+
 
 law_compulsory_secondary_school = {
 	group = lawgroup_childrens_rights
 
-	icon = "gfx/interface/icons/law_icons/religious_schools.dds"
+	icon = "gfx/interface/icons/law_icons/compulsory_secondary_school.dds"
 	
 	
 	progressiveness = 75
 
 	unlocking_laws = {
 		law_public_schools
-		law_public_university
+		law_public_universities
+		law_private_universities
 	}
 
 	unlocking_technologies = {
@@ -127,16 +215,15 @@ law_compulsory_secondary_school = {
 	}
 }
 
-
 law_compulsory_tertiary_school = {
 	group = lawgroup_childrens_rights
 
-	icon = "gfx/interface/icons/law_icons/public_schools.dds"
+	icon = "gfx/interface/icons/law_icons/compulsory_teritary_school.dds"
 	
 	progressiveness = 75
 
 	unlocking_laws = {
-		law_public_university
+		law_public_universities
 	}
 
 	unlocking_technologies = {
@@ -170,11 +257,10 @@ law_compulsory_tertiary_school = {
 }
 
 
-
 law_social_market_economy = {
 	group = lawgroup_economic_system
 	
-	icon = "gfx/interface/icons/law_icons/interventionism.dds"
+	icon = "gfx/interface/icons/law_icons/social_market_economy.dds"
 	
 	progressiveness = 70
 	
@@ -217,7 +303,7 @@ law_social_market_economy = {
 law_free_market_economy = {
 	group = lawgroup_economic_system
 	
-	icon = "gfx/interface/icons/law_icons/laissez_faire.dds"
+	icon = "gfx/interface/icons/law_icons/free_market_economy.dds"
 	
 	progressiveness = 50
 	
@@ -265,7 +351,7 @@ law_free_market_economy = {
 law_protectionism_union = {
 	group = lawgroup_trade_policy
 	
-	icon = "gfx/interface/icons/law_icons/protectionism.dds"
+	icon = "gfx/interface/icons/law_icons/protectionism_union.dds"
 	
 	progressiveness = 50
 	
@@ -305,7 +391,7 @@ law_protectionism_union = {
 law_free_trade_union = {
 	group = lawgroup_trade_policy
 	
-	icon = "gfx/interface/icons/law_icons/free_trade.dds"
+	icon = "gfx/interface/icons/law_icons/free_trade_union.dds"
 	
 	progressiveness = 50
 	
@@ -336,7 +422,7 @@ law_free_trade_union = {
 		country_trade_route_cost_mult = -0.5
 		country_leverage_resistance_mult = -0.25
 		country_max_declared_interests_add = 2
-	}
+	}	
 
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
@@ -352,7 +438,7 @@ law_free_trade_union = {
 law_multicultural_globalism = {
 	group = lawgroup_citizenship
 	
-	icon = "gfx/interface/icons/law_icons/guaranteed_liberties.dds"
+	icon = "gfx/interface/icons/law_icons/multicultural_globalism.dds"
 	
 	progressiveness = 75
 
@@ -425,7 +511,7 @@ law_neo_ethno_state = {
 		anti_multicultural_globalism
 	}
 	
-	icon = "gfx/interface/icons/law_icons/dedicated_police.dds"
+	icon = "gfx/interface/icons/law_icons/neo_ethno.dds"
 	
 	progressiveness = 0
 	
@@ -438,10 +524,9 @@ law_neo_ethno_state = {
 
 		#From this block, we only apply the highest value a Pop qualifies for
 		country_acceptance_primary_culture_add = 100
-		country_acceptance_shared_heritage_and_cultural_trait_add = 70
-		country_acceptance_shared_heritage_trait_add = 50
-		country_acceptance_shared_cultural_trait_add = 30
-		country_acceptance_culture_base_add = 30
+		country_acceptance_shared_heritage_and_cultural_trait_add = 50
+		country_acceptance_shared_heritage_trait_add = 30
+		country_acceptance_shared_cultural_trait_add = 10
 		state_assimilation_mult = 0.2
 		state_radicalism_increases_open_prejudice_mult =  0.1
 		state_radicalism_increases_cultural_erasure_mult = 0.2
@@ -502,10 +587,11 @@ law_neo_ethno_state = {
 	}
 }
 
+
 law_privatized_bureaucrats = {
 	group = lawgroup_bureaucracy
 	
-	icon = "gfx/interface/icons/law_icons/corporate_state.dds"
+	icon = "gfx/interface/icons/law_icons/privatized_bureaucrats.dds"
 
 	unlocking_technologies = {
 		new_public_management	
@@ -560,9 +646,10 @@ law_privatized_bureaucrats = {
 	}
 }
 
+
 law_task_forces = {
 	group = lawgroup_army_model
-	icon = "gfx/interface/icons/law_icons/secret_police.dds"
+	icon = "gfx/interface/icons/law_icons/unused/home_affairs.dds"
 	
 	progressiveness = 50
 	
@@ -739,9 +826,10 @@ law_demobilized = {
 	}
 }
 
+
 law_equal_rights_for_women = {
 	group = lawgroup_rights_of_women
-	icon = "gfx/interface/icons/law_icons/womens_suffrage.dds"
+	icon = "gfx/interface/icons/law_icons/feminism_2.dds"
 	
 	progressiveness = 100
 	
@@ -751,6 +839,7 @@ law_equal_rights_for_women = {
 
 	unlocking_laws = {
 		law_womens_suffrage
+		law_affirmative_equality
 	}
 	
 	on_enact = {
@@ -773,9 +862,9 @@ law_equal_rights_for_women = {
 	}
 }
 
-law_affirmative_equaltity = {
+law_affirmative_equality = {
 	group = lawgroup_rights_of_women
-	icon = "gfx/interface/icons/law_icons/womens_suffrage.dds"
+	icon = "gfx/interface/icons/law_icons/feminism_3.dds"
 	
 	progressiveness = 100
 	
@@ -808,9 +897,10 @@ law_affirmative_equaltity = {
 	}
 }
 
+
 law_no_environment_protection  = {
 	group = lawgroup_environment_protection
-	icon = "gfx/interface/icons/law_icons/no_police.dds"
+	icon = "gfx/interface/icons/law_icons/epa_0.dds"
 	
 	progressiveness = 0
 	
@@ -833,7 +923,7 @@ law_no_environment_protection  = {
 
 law_environment_protection_institute  = {
 	group = lawgroup_environment_protection
-	icon = "gfx/interface/icons/law_icons/dedicated_police.dds"
+	icon = "gfx/interface/icons/law_icons/epa_1.dds"
 	
 	progressiveness = 100
 	
@@ -868,7 +958,7 @@ law_environment_protection_institute  = {
 
 law_environment_protection_institute_two  = {
 	group = lawgroup_environment_protection
-	icon = "gfx/interface/icons/law_icons/unused/home_affairs.dds"
+	icon = "gfx/interface/icons/law_icons/epa_2.dds"
 	
 	progressiveness = 100
 	
@@ -903,7 +993,7 @@ law_environment_protection_institute_two  = {
 
 law_no_food_safety_protection  = {
 	group = lawgroup_food_safety
-	icon = "gfx/interface/icons/law_icons/no_schools.dds"
+	icon = "gfx/interface/icons/law_icons/fda_0.dds"
 	
 	progressiveness = 0
 	
@@ -926,7 +1016,7 @@ law_no_food_safety_protection  = {
 
 law_food_safety_protection_institute  = {
 	group = lawgroup_food_safety
-	icon = "gfx/interface/icons/law_icons/colonial_resettlement.dds"
+	icon = "gfx/interface/icons/law_icons/fda_1.dds"
 	
 	progressiveness = 90
 	
@@ -965,7 +1055,7 @@ law_food_safety_protection_institute  = {
 
 law_food_safety_protection_institute_two  = {
 	group = lawgroup_food_safety
-	icon = "gfx/interface/icons/law_icons/colonial_exploitation.dds"
+	icon = "gfx/interface/icons/law_icons/fda_2.dds"
 	
 	progressiveness = 100
 	

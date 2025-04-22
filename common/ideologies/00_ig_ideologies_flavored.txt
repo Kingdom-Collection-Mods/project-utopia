@@ -335,7 +335,7 @@ ideology_russian_patriarch = {
 		law_women_in_the_workplace = disapprove
 		law_womens_suffrage = strongly_disapprove
 		law_equal_rights_for_women = strongly_disapprove
-		law_affirmative_equaltity = strongly_disapprove
+		law_affirmative_equality = strongly_disapprove
 	}
 
 	lawgroup_free_speech = {
@@ -375,7 +375,7 @@ ideology_orthodox_patriarch = {
 		law_women_in_the_workplace = disapprove
 		law_womens_suffrage = strongly_disapprove
 		law_equal_rights_for_women = strongly_disapprove
-		law_affirmative_equaltity = strongly_disapprove
+		law_affirmative_equality = strongly_disapprove
 	}
 
 	lawgroup_free_speech = {
@@ -556,7 +556,7 @@ ideology_oriental_orthodox_patriarch = {
 		law_women_in_the_workplace = disapprove
 		law_womens_suffrage = strongly_disapprove
 		law_equal_rights_for_women = strongly_disapprove
-		law_affirmative_equaltity = strongly_disapprove
+		law_affirmative_equality = strongly_disapprove
 	}
 
 	lawgroup_free_speech = {
@@ -733,8 +733,9 @@ ideology_utilitarian_millian = { # Replaces Malthusian, for the Industrialists
 
 	lawgroup_education_system = {
 		law_public_schools = approve
-		law_public_university = approve
+		law_public_universities = approve
 		law_private_schools = neutral
+		law_private_universities = neutral
 		law_religious_schools = neutral	
 		law_no_schools = disapprove	
 	}
@@ -745,7 +746,7 @@ ideology_utilitarian_millian = { # Replaces Malthusian, for the Industrialists
 		law_women_in_the_workplace = approve
 		law_womens_suffrage = strongly_approve
 		law_equal_rights_for_women = strongly_approve
-		law_affirmative_equaltity = strongly_approve
+		law_affirmative_equality = strongly_approve
 	}
 	
 	lawgroup_slavery = {
@@ -871,8 +872,9 @@ ideology_malthusian = {
 	
 	lawgroup_education_system = {
 		law_private_schools = approve
+		law_private_universities = approve
 		law_public_schools = neutral
-		law_public_university = neutral
+		law_public_universities = neutral
 		law_religious_schools = neutral
 		law_no_schools = neutral
 	}

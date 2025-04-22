@@ -1,3 +1,18 @@
+template tech_tree_divider 
+{
+	using = dark_area
+	alpha = 1
+	parentanchor = hcenter
+	
+	modify_texture = {
+		texture = "gfx/interface/masks/fade_horizontal_center.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 0 0 }
+		blend_mode = alphamultiply
+		alpha = 1
+	}
+}
+
 types tech_tree
 {
 	type tech_tree_panel = fullscreen_block_window {
@@ -1252,6 +1267,37 @@ types tech_tree
 			alpha = 0.8
 
 			points = "[TechTreeLine.GetPointsInContainer]"
+		}
+	}
+}
+
+
+right_click_menu = {
+	name = "research_queue"
+	visible = "[GreaterThan_int32(GetDataModelSize(AccessPlayer.GetResearchQueueBottom), '(int32)0')]"
+
+	onmousehierarchyenter = "[SetCanOpenRightClickContextMenu( '(bool)no' )]"
+	onmousehierarchyleave = "[SetCanOpenRightClickContextMenu( '(bool)yes' )]"
+
+	parentanchor = right|top
+	widgetanchor = left|top
+
+	blockoverride "header_text" {}
+
+	blockoverride "list" {
+		dynamicgridbox = {
+			datamodel = "[AccessPlayer.GetResearchQueueBottom]"
+			datamodel_wrap = 4
+			flipdirection = yes
+
+			item = {
+				widget = {
+					size = { 90 90 }
+					queued_technology = {
+						parentanchor = center
+					}
+				}
+			}
 		}
 	}
 }

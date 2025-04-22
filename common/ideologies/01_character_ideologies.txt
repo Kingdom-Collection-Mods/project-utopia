@@ -75,7 +75,7 @@ ideology_traditionalist = {
 		law_women_in_the_workplace = disapprove
 		law_womens_suffrage = strongly_disapprove
 		law_equal_rights_for_women = strongly_disapprove
-		law_affirmative_equaltity = strongly_disapprove
+		law_affirmative_equality = strongly_disapprove
 	}
 
 	lawgroup_church_and_state = {
@@ -200,7 +200,7 @@ ideology_traditionalist_minoritarian = {
 		law_women_in_the_workplace = disapprove
 		law_womens_suffrage = strongly_disapprove
 		law_equal_rights_for_women = strongly_disapprove
-		law_affirmative_equaltity = strongly_disapprove
+		law_affirmative_equality = strongly_disapprove
 	}
 
 	lawgroup_church_and_state = {
@@ -660,8 +660,9 @@ ideology_radical = {
 	
 	lawgroup_education_system = {
 		law_public_schools = approve
-		law_public_university = approve
+		law_public_universities = approve
 		law_private_schools = neutral
+		law_private_universities = neutral
 		law_no_schools = disapprove
 		law_religious_schools = disapprove		
 	}		
@@ -896,7 +897,7 @@ ideology_reformer = {
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = neutral
 		law_equal_rights_for_women = neutral
-		law_affirmative_equaltity = neutral
+		law_affirmative_equality = neutral
 	}
 	
 	lawgroup_childrens_rights = {
@@ -1038,7 +1039,7 @@ ideology_feminist = {
 	lawgroup_rights_of_women = {
 		law_womens_suffrage = strongly_approve
 		law_equal_rights_for_women = strongly_approve
-		law_affirmative_equaltity = strongly_approve
+		law_affirmative_equality = strongly_approve
 		law_women_in_the_workplace = neutral
 		law_women_own_property = disapprove
 		law_no_womens_rights = strongly_disapprove
@@ -3899,7 +3900,7 @@ ideology_humanitarian = {
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = approve
 		law_equal_rights_for_women = approve
-		law_affirmative_equaltity = neutral
+		law_affirmative_equality = neutral
 	}
 
 	lawgroup_childrens_rights = {
@@ -4924,9 +4925,10 @@ ideology_corporatist_leader = {
 	
 	lawgroup_education_system = {
 		law_public_schools = approve
-		law_public_university = approve
+		law_public_universities = neutral
 		law_religious_schools = approve
-		law_private_schools = neutral	
+		law_private_schools = neutral
+		law_private_universities = neutral	
 		law_no_schools = disapprove	
 	}	
 	
@@ -5095,7 +5097,7 @@ ideology_humanitarian_royalist = {
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = approve
 		law_equal_rights_for_women = approve
-		law_affirmative_equaltity = neutral
+		law_affirmative_equality = neutral
 	}
 
 	lawgroup_childrens_rights = {
@@ -5474,8 +5476,9 @@ ideology_utilitarian_leader = {
 
 	lawgroup_education_system = {
 		law_public_schools = approve
-		law_public_university = approve
+		law_public_universities = strongly_approve
 		law_private_schools = neutral
+		law_private_universities = neutral
 		law_religious_schools = neutral	
 		law_no_schools = disapprove	
 	}
@@ -5486,7 +5489,7 @@ ideology_utilitarian_leader = {
 		law_women_in_the_workplace = approve
 		law_womens_suffrage = strongly_approve
 		law_equal_rights_for_women = strongly_approve
-		law_affirmative_equaltity = approve
+		law_affirmative_equality = approve
 	}
 	
 	lawgroup_slavery = {

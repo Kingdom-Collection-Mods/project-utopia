@@ -56,9 +56,10 @@ ideology_urbanist_economy_base = {
 	lawgroup_education_system = {
 		law_no_schools = strongly_disapprove
 		law_religious_schools = disapprove
-		law_private_schools = neutral	
+		law_private_schools = neutral
+		law_private_universities = neutral
 		law_public_schools = approve
-		law_public_university = strongly_approve
+		law_public_universities = strongly_approve
 	}
 
 	lawgroup_trade_policy = {		
@@ -107,6 +108,6 @@ ideology_urbanist_human_rights_base = {
 		law_women_in_the_workplace = approve
 		law_womens_suffrage = approve
 		law_equal_rights_for_women = approve
-		law_affirmative_equaltity = approve
+		law_affirmative_equality = approve
 	}
 }

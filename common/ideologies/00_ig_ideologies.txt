@@ -144,8 +144,9 @@ ideology_individualist = {
 	
 	lawgroup_education_system = {
 		law_private_schools = approve
+		law_public_universities = strongly_approve
 		law_public_schools = neutral
-		law_public_university = neutral
+		law_private_universities = neutral
 		law_religious_schools = neutral
 		law_no_schools = disapprove
 	}
@@ -230,8 +231,9 @@ ideology_oligarchic = {
 		law_religious_schools = disapprove
 		law_no_schools = neutral
 		law_public_schools = approve
-		law_public_university = disapprove
-		law_private_schools = approve		
+		law_public_universities = disapprove
+		law_private_schools = approve
+		law_private_universities = approve	
 	}
 
 	lawgroup_church_and_state = {
@@ -256,8 +258,9 @@ ideology_pious = {
 		law_religious_schools = approve
 		law_no_schools = neutral
 		law_public_schools = disapprove
-		law_public_university = strongly_disapprove
-		law_private_schools = disapprove		
+		law_public_universities = strongly_disapprove
+		law_private_schools = disapprove	
+		law_private_universities = strongly_disapprove	
 	}	
 }
 
@@ -519,7 +522,7 @@ ideology_liberal = {
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = neutral
 		law_equal_rights_for_women = neutral
-		law_affirmative_equaltity = disapprove
+		law_affirmative_equality = disapprove
 	}
 }
 
@@ -535,8 +538,9 @@ ideology_anti_clerical = {
 	
 	lawgroup_education_system = {
 		law_public_schools = approve
-		law_public_university = approve
+		law_public_universities = approve
 		law_private_schools = approve
+		law_private_universities = approve
 		law_no_schools = disapprove
 		law_religious_schools = disapprove		
 	}
@@ -826,7 +830,7 @@ ideology_patriarchal = {
 		law_women_in_the_workplace = disapprove
 		law_womens_suffrage = strongly_disapprove
 		law_equal_rights_for_women = strongly_disapprove
-		law_affirmative_equaltity = strongly_disapprove
+		law_affirmative_equality = strongly_disapprove
 	}
 
 	lawgroup_free_speech = {
@@ -881,8 +885,9 @@ ideology_corporatist = {
 		law_religious_schools = approve
 		law_no_schools = neutral
 		law_public_schools = disapprove
-		law_public_university = strongly_disapprove
-		law_private_schools = disapprove		
+		law_public_universities = strongly_disapprove
+		law_private_schools = disapprove
+		law_private_universities = disapprove	
 	}	
 	
 	lawgroup_labor_rights = {
