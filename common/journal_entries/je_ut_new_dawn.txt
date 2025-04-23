@@ -106,9 +106,9 @@
 					has_law = law_type:law_monarchy
 					scope:journal_entry = { 
 						OR = {
-							"scripted_bar_progress(divided_monarchists_orleanist_progress_bar)" >= divided_monarchists_upper_bound
-							"scripted_bar_progress(divided_monarchists_legitimist_progress_bar)" >= divided_monarchists_upper_bound
-							"scripted_bar_progress(divided_monarchists_bonapartist_progress_bar)" >= divided_monarchists_upper_bound
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= divided_monarchists_upper_bound
+							"scripted_bar_progress(ut_new_dawn_moderate_bar)" >= divided_monarchists_upper_bound
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" >= divided_monarchists_upper_bound
 						}
 					}
 					NOT = {
@@ -118,55 +118,55 @@
 				if = { #Fires the event to enthrone the pretender - 1 if contextualised as coup, 10 if contextualised as reinforcement.
 					limit = {
 						scope:journal_entry = { 
-							"scripted_bar_progress(divided_monarchists_bonapartist_progress_bar)" > "scripted_bar_progress(divided_monarchists_legitimist_progress_bar)"
-							"scripted_bar_progress(divided_monarchists_bonapartist_progress_bar)" > "scripted_bar_progress(divided_monarchists_orleanist_progress_bar)" 
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 						}
 					}
 					if = {
 						limit = {
 							ruler_is_bonapartist = yes
 						}
-						trigger_event = { id = french_pretenders.10 popup = yes} #Reinforcement event - fires if the leading dynasty is the one in power.
+						trigger_event = { id = event_new_dawn.2 popup = yes} #Reinforcement event - fires if the leading dynasty is the one in power.
 					}
 					else = {
-						trigger_event = { id = french_pretenders.1 popup = yes} #Coup event - fires if the leading dynasty is not the one in power.
+						trigger_event = { id = event_new_dawn.3 popup = yes} #Coup event - fires if the leading dynasty is not the one in power.
 					}
 				}
 				else_if = {
 					limit = {
 						scope:journal_entry = { 
-							"scripted_bar_progress(divided_monarchists_orleanist_progress_bar)" > "scripted_bar_progress(divided_monarchists_legitimist_progress_bar)"
-							"scripted_bar_progress(divided_monarchists_orleanist_progress_bar)" > "scripted_bar_progress(divided_monarchists_bonapartist_progress_bar)" 
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
 						}
 					}
 					if = {
 						limit = {
 							ruler_is_orleanist = yes
 						}
-						trigger_event = { id = french_pretenders.10 popup = yes}
+						trigger_event = { id = event_new_dawn.2 popup = yes}
 					}
 					else = {
-						trigger_event = { id = french_pretenders.1 popup = yes}
+						trigger_event = { id = event_new_dawn.3 popup = yes}
 					}
 				}
 				else_if = {
 					limit = {
 						scope:journal_entry = { 
-							"scripted_bar_progress(divided_monarchists_legitimist_progress_bar)" > "scripted_bar_progress(divided_monarchists_bonapartist_progress_bar)"
-							"scripted_bar_progress(divided_monarchists_legitimist_progress_bar)" > "scripted_bar_progress(divided_monarchists_orleanist_progress_bar)" 
+							"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+							"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 						}
 					}
 					if = {
 						limit = {
 							ruler_is_legitimist = yes
 						}
-						trigger_event = { id = french_pretenders.10 popup = yes}
+						trigger_event = { id = event_new_dawn.2 popup = yes}
 					}
 					else = {
-						trigger_event = { id = french_pretenders.1 popup = yes}
+						trigger_event = { id = event_new_dawn.3 popup = yes}
 					}
 				}
-				fra_freeze_divided_monarchist_progress = yes #Freezes the bars so that they no longer accumulate progress on the monthly tick, and stay as they are. In the case that Cement the Rightful Dynasty fails, the bars will be set back.
+				ut_freeze_new_dawn_progress = yes #Freezes the bars so that they no longer accumulate progress on the monthly tick, and stay as they are. In the case that Cement the Rightful Dynasty fails, the bars will be set back.
 			}
 		}
 		random_events = {

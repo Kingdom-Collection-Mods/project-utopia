@@ -1,17 +1,14 @@
-﻿namespace = event_new_dawn
+namespace = event_new_dawn
 
+#New Dawn start
 event_new_dawn.1 = {
 	type = country_event
 
-	trigger = {
-		NOT = { has_technology_researched = high_tech_computers }
-		has_technology_researched = rare_earths_mining_era_analog
-		has_technology_researched = computers
-		has_global_highest_innovation = yes
-	}
-
 	event_image = {
 		video = "unspecific_trains"
+	}
+	
+	trigger = {
 	}
 
 	duration = 3
@@ -30,6 +27,1066 @@ event_new_dawn.1 = {
 	option = {
 		name = metro.1.a
 		default_option = yes
-		add_technology_researched = high_tech_computers
+	}
+}
+
+#New Dawn Winner in Power
+event_new_dawn.2 = {
+	type = country_event
+	placement = ROOT
+	title = french_pretenders.10.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = french_pretenders.10.d_1
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
+					}
+				}
+			}
+			triggered_desc = {
+				desc = french_pretenders.10.d_2
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					}
+				}
+			}
+			triggered_desc = {
+				desc = french_pretenders.10.d_3
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					}
+				}
+			}
+		}
+	}
+	flavor = {
+		first_valid = {
+			triggered_desc = {
+				desc = french_pretenders.10.f_1
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
+					}
+				}
+			}
+			triggered_desc = {
+				desc = french_pretenders.10.f_2
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					}
+				}
+			}
+			triggered_desc = {
+				desc = french_pretenders.10.f_3
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					}
+				}
+			}
+		}
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:french_monarch_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		# triggered by enthrone pretender desicion
+	}
+
+	cancellation_trigger = {
+		OR = {
+			ruler = {
+				has_modifier = restitutor_orbis
+			}
+			any_interest_group = {
+				has_modifier = stalwarts_of_the_restoration
+			}
+		}
+	}
+
+	immediate = {
+		#set_variable = { name = pretender_enthroned_cooldown years = 1 }
+		root = {
+			save_scope_as = reflexive_reference_france
+		}
+		if = {
+			limit = {
+				je:je_ut_new_dawn = { 
+					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
+				}
+			}
+			remove_variable = bonapartist_restoration_var
+			remove_variable = legitimist_restoration_var
+			set_variable = {
+				name = orleanist_restoration_var
+			}
+		}
+		if = {
+			limit = {
+				je:je_ut_new_dawn = { 
+					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+				}
+			}
+			remove_variable = orleanist_restoration_var
+			remove_variable = legitimist_restoration_var
+			set_variable = {
+				name = bonapartist_restoration_var
+			}
+		}
+		if = {
+			limit = {
+				je:je_ut_new_dawn = { 
+					"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+					"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+				}
+			}
+			remove_variable = orleanist_restoration_var
+			remove_variable = bonapartist_restoration_var
+			set_variable = {
+				name = legitimist_restoration_var
+			}
+		}
+		if = {
+			limit = {
+				has_variable = french_dynastic_primary_progress_var
+			}
+			change_variable = {
+				name = french_dynastic_primary_progress_var
+				multiply = 0
+			}
+		}
+		hidden_effect = { generate_french_monarch = yes }
+	}
+	option = {
+		name = french_pretenders.10.a # Long live the Orleanists!
+		default_option = yes
+		trigger = {
+			has_variable = orleanist_restoration_var
+		}
+		custom_tooltip = {
+			text = je_cement_the_rightful_dynasty_fake
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:french_monarch_scope = {
+						has_role = agitator
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_character_role = agitator
+				}
+			}
+			if = {
+				limit = {
+					any_interest_group = {
+						leader = {
+							this ?= scope:french_monarch_scope
+						}
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_as_interest_group_leader = yes
+				}
+			}
+			add_journal_entry = {
+				type = je_cement_the_rightful_dynasty
+			}
+		}
+		
+		scope:french_monarch_scope = {
+			add_modifier = the_restorer_modifier
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_bonapartist
+						has_ideology = ideology:ideology_legitimist
+					}
+				}
+			}
+			ROOT = {
+				add_radicals = {
+					value = small_radicals
+					interest_group = prev
+				}
+			}
+		}
+	}
+	option = {
+		name = french_pretenders.10.b # Long live the Orleanists!
+		trigger = {
+			has_variable = orleanist_restoration_var
+		}
+		custom_tooltip = {
+			text = je_cement_the_rightful_dynasty_fake
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:french_monarch_scope = {
+						has_role = agitator
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_character_role = agitator
+				}
+			}
+			if = {
+				limit = {
+					any_interest_group = {
+						leader = {
+							this ?= scope:french_monarch_scope
+						}
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_as_interest_group_leader = yes
+				}
+			}
+			add_journal_entry = {
+				type = je_cement_the_rightful_dynasty
+			}
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					has_ideology = ideology:ideology_orleanist
+				}
+			}
+			add_modifier = {
+				name = orleanist_restoration_modifier
+				months = normal_modifier_time
+			}
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_legitimist
+						has_ideology = ideology:ideology_bonapartist
+					}
+				}
+			}
+			ROOT = {
+				add_radicals = {
+					value = small_radicals
+					interest_group = prev
+				}
+			}
+		}
+	}
+	option = {
+		name = french_pretenders.10.c # Long live the Legitimists!
+		default_option = yes
+		trigger = {
+			has_variable = legitimist_restoration_var
+		}
+		custom_tooltip = {
+			text = je_cement_the_rightful_dynasty_fake
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:french_monarch_scope = {
+						has_role = agitator
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_character_role = agitator
+				}
+			}
+			if = {
+				limit = {
+					any_interest_group = {
+						leader = {
+							this ?= scope:french_monarch_scope
+						}
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_as_interest_group_leader = yes
+				}
+			}
+			add_journal_entry = {
+				type = je_cement_the_rightful_dynasty
+			}
+		}
+		
+		scope:french_monarch_scope = {
+			add_modifier = the_restorer_modifier
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_bonapartist
+						has_ideology = ideology:ideology_orleanist
+					}
+				}
+			}
+			ROOT = {
+				add_radicals = {
+					value = small_radicals
+					interest_group = prev
+				}
+			}
+		}
+	}
+	option = {
+		name = french_pretenders.10.d # Long live the Legitimists!
+		trigger = {
+			has_variable = legitimist_restoration_var
+		}
+		custom_tooltip = {
+			text = je_cement_the_rightful_dynasty_fake
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:french_monarch_scope = {
+						has_role = agitator
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_character_role = agitator
+				}
+			}
+			if = {
+				limit = {
+					any_interest_group = {
+						leader = {
+							this ?= scope:french_monarch_scope
+						}
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_as_interest_group_leader = yes
+				}
+			}
+			add_journal_entry = {
+				type = je_cement_the_rightful_dynasty
+			}
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					has_ideology = ideology:ideology_legitimist
+				}
+			}
+			add_modifier = {
+				name = legitimist_restoration_modifier
+				months = normal_modifier_time
+			}
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_orleanist
+						has_ideology = ideology:ideology_bonapartist
+					}
+				}
+			}
+			ROOT = {
+				add_radicals = {
+					value = small_radicals
+					interest_group = prev
+				}
+			}
+		}
+	}
+	option = {
+		name = french_pretenders.10.e # Long live the Bonapartists!
+		default_option = yes
+		trigger = {
+			has_variable = bonapartist_restoration_var
+		}
+		custom_tooltip = {
+			text = je_cement_the_rightful_dynasty_fake
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:french_monarch_scope = {
+						has_role = agitator
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_character_role = agitator
+				}
+			}
+			if = {
+				limit = {
+					any_interest_group = {
+						leader = {
+							this ?= scope:french_monarch_scope
+						}
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_as_interest_group_leader = yes
+				}
+			}
+			add_journal_entry = {
+				type = je_cement_the_rightful_dynasty
+			}
+		}
+		
+		scope:french_monarch_scope = {
+			add_modifier = the_restorer_modifier
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_legitimist
+						has_ideology = ideology:ideology_orleanist
+					}
+				}
+			}
+			ROOT = {
+				add_radicals = {
+					value = small_radicals
+					interest_group = prev
+				}
+			}
+		}
+	}
+	option = {
+		name = french_pretenders.10.f # Long live the Bonapartists!
+		trigger = {
+			has_variable = bonapartist_restoration_var
+		}
+		custom_tooltip = {
+			text = je_cement_the_rightful_dynasty_fake
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:french_monarch_scope = {
+						has_role = agitator
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_character_role = agitator
+				}
+			}
+			if = {
+				limit = {
+					any_interest_group = {
+						leader = {
+							this ?= scope:french_monarch_scope
+						}
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_as_interest_group_leader = yes
+				}
+			}
+			add_journal_entry = {
+				type = je_cement_the_rightful_dynasty
+			}
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					has_ideology = ideology:ideology_bonapartist
+				}
+			}
+			add_modifier = {
+				name = bonapartist_restoration_modifier
+				months = normal_modifier_time
+			}
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_orleanist
+						has_ideology = ideology:ideology_legitimist
+					}
+				}
+			}
+			ROOT = {
+				add_radicals = {
+					value = small_radicals
+					interest_group = prev
+				}
+			}
+		}
+	}
+
+}
+
+#New Dawn Winner not in Power
+event_new_dawn.3 = {
+	type = country_event
+	placement = ROOT
+	title = french_pretenders.1.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = french_pretenders.1.d_1
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
+					}
+				}
+			}
+			triggered_desc = {
+				desc = french_pretenders.1.d_2
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					}
+				}
+			}
+			triggered_desc = {
+				desc = french_pretenders.1.d_3
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					}
+				}
+			}
+		}
+	}
+	flavor = {
+		first_valid = {
+			triggered_desc = {
+				desc = french_pretenders.1.f_1
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
+					}
+				}
+			}
+			triggered_desc = {
+				desc = french_pretenders.1.f_2
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					}
+				}
+			}
+			triggered_desc = {
+				desc = french_pretenders.1.f_3
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					}
+				}
+			}
+		}
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:french_monarch_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		# triggered by Divided Monarchy Journal Entry
+	}
+
+	cancellation_trigger = {
+		OR = {
+			ruler = {
+				has_modifier = restitutor_orbis
+			}
+			any_interest_group = {
+				has_modifier = stalwarts_of_the_restoration
+			}
+		}
+	}
+
+	immediate = {
+		#set_variable = { name = pretender_enthroned_cooldown years = 1 }
+		root = {
+			save_scope_as = reflexive_reference_france
+		}
+		if = {
+			limit = {
+				je:je_ut_new_dawn = { 
+					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
+				}
+			}
+			remove_variable = bonapartist_restoration_var
+			remove_variable = legitimist_restoration_var
+			set_variable = {
+				name = orleanist_restoration_var
+			}
+		}
+		if = {
+			limit = {
+				je:je_ut_new_dawn = { 
+					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+				}
+			}
+			remove_variable = orleanist_restoration_var
+			remove_variable = legitimist_restoration_var
+			set_variable = {
+				name = bonapartist_restoration_var
+			}
+		}
+		if = {
+			limit = {
+				je:je_ut_new_dawn = { 
+					"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+					"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+				}
+			}
+			remove_variable = orleanist_restoration_var
+			remove_variable = bonapartist_restoration_var
+			set_variable = {
+				name = legitimist_restoration_var
+			}
+		}
+		ruler = {
+			exile_character_with_martyrdom = yes
+			save_scope_as = old_ruler_scope
+		}
+		generate_french_monarch = yes
+		if = {
+			limit = {
+				has_variable = french_dynastic_primary_progress_var
+			}
+			change_variable = {
+				name = french_dynastic_primary_progress_var
+				multiply = 0
+			}
+		}
+	}
+	option = {
+		name = french_pretenders.1.a # Long live the Orleanists!
+		default_option = yes
+		trigger = {
+			has_variable = orleanist_restoration_var
+		}
+		custom_tooltip = {
+			text = je_cement_the_rightful_dynasty_fake
+		}
+		custom_tooltip = {
+			text = exile_old_ruler_tt
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:french_monarch_scope = {
+						has_role = agitator
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_character_role = agitator
+				}
+			}
+			if = {
+				limit = {
+					any_interest_group = {
+						leader = {
+							this ?= scope:french_monarch_scope
+						}
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_as_interest_group_leader = yes
+				}
+			}
+			add_journal_entry = {
+				type = je_cement_the_rightful_dynasty
+			}
+		}
+		
+		scope:french_monarch_scope = {
+			add_modifier = the_restorer_modifier
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_bonapartist
+						has_ideology = ideology:ideology_legitimist
+					}
+				}
+			}
+			ROOT = {
+				add_radicals = {
+					value = very_large_radicals
+					interest_group = prev
+				}
+			}
+		}
+	}
+	option = {
+		name = french_pretenders.1.b # Long live the Orleanists!
+		trigger = {
+			has_variable = orleanist_restoration_var
+		}
+		custom_tooltip = {
+			text = je_cement_the_rightful_dynasty_fake
+		}
+		custom_tooltip = {
+			text = exile_old_ruler_tt
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:french_monarch_scope = {
+						has_role = agitator
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_character_role = agitator
+				}
+			}
+			if = {
+				limit = {
+					any_interest_group = {
+						leader = {
+							this ?= scope:french_monarch_scope
+						}
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_as_interest_group_leader = yes
+				}
+			}
+			add_journal_entry = {
+				type = je_cement_the_rightful_dynasty
+			}
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					has_ideology = ideology:ideology_orleanist
+				}
+			}
+			add_modifier = {
+				name = orleanist_restoration_modifier
+				months = normal_modifier_time
+			}
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_bonapartist
+						has_ideology = ideology:ideology_legitimist
+					}
+				}
+			}
+			ROOT = {
+				add_radicals = {
+					value = large_radicals
+					interest_group = prev
+				}
+			}
+		}
+	}
+	option = {
+		name = french_pretenders.1.c # Long live the Legitimists!
+		default_option = yes
+		trigger = {
+			has_variable = legitimist_restoration_var
+		}
+		custom_tooltip = {
+			text = je_cement_the_rightful_dynasty_fake
+		}
+		custom_tooltip = {
+			text = exile_old_ruler_tt
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:french_monarch_scope = {
+						has_role = agitator
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_character_role = agitator
+				}
+			}
+			if = {
+				limit = {
+					any_interest_group = {
+						leader = {
+							this ?= scope:french_monarch_scope
+						}
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_as_interest_group_leader = yes
+				}
+			}
+			add_journal_entry = {
+				type = je_cement_the_rightful_dynasty
+			}
+		}
+		
+		scope:french_monarch_scope = {
+			add_modifier = the_restorer_modifier
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_bonapartist
+						has_ideology = ideology:ideology_orleanist
+					}
+				}
+			}
+			ROOT = {
+				add_radicals = {
+					value = very_large_radicals
+					interest_group = prev
+				}
+			}
+		}
+	}
+	option = {
+		name = french_pretenders.1.d # Long live the Legitimists!
+		trigger = {
+			has_variable = legitimist_restoration_var
+		}
+		custom_tooltip = {
+			text = je_cement_the_rightful_dynasty_fake
+		}
+		custom_tooltip = {
+			text = exile_old_ruler_tt
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:french_monarch_scope = {
+						has_role = agitator
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_character_role = agitator
+				}
+			}
+			if = {
+				limit = {
+					any_interest_group = {
+						leader = {
+							this ?= scope:french_monarch_scope
+						}
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_as_interest_group_leader = yes
+				}
+			}
+			add_journal_entry = {
+				type = je_cement_the_rightful_dynasty
+			}
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					has_ideology = ideology:ideology_legitimist
+				}
+			}
+			add_modifier = {
+				name = legitimist_restoration_modifier
+				months = normal_modifier_time
+			}
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_bonapartist
+						has_ideology = ideology:ideology_orleanist
+					}
+				}
+			}
+			ROOT = {
+				add_radicals = {
+					value = large_radicals
+					interest_group = prev
+				}
+			}
+		}
+	}
+	option = {
+		name = french_pretenders.1.e # Long live the Bonapartists!
+		default_option = yes
+		trigger = {
+			has_variable = bonapartist_restoration_var
+		}
+		custom_tooltip = {
+			text = je_cement_the_rightful_dynasty_fake
+		}
+		custom_tooltip = {
+			text = exile_old_ruler_tt
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:french_monarch_scope = {
+						has_role = agitator
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_character_role = agitator
+				}
+			}
+			if = {
+				limit = {
+					any_interest_group = {
+						leader = {
+							this ?= scope:french_monarch_scope
+						}
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_as_interest_group_leader = yes
+				}
+			}
+			add_journal_entry = {
+				type = je_cement_the_rightful_dynasty
+			}
+		}
+		
+		scope:french_monarch_scope = {
+			add_modifier = the_restorer_modifier
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_legitimist
+						has_ideology = ideology:ideology_orleanist
+					}
+				}
+			}
+			ROOT = {
+				add_radicals = {
+					value = very_large_radicals
+					interest_group = prev
+				}
+			}
+		}
+	}
+	option = {
+		name = french_pretenders.1.f # Long live the Bonapartists!
+		trigger = {
+			has_variable = bonapartist_restoration_var
+		}
+		custom_tooltip = {
+			text = je_cement_the_rightful_dynasty_fake
+		}
+		custom_tooltip = {
+			text = exile_old_ruler_tt
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:french_monarch_scope = {
+						has_role = agitator
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_character_role = agitator
+				}
+			}
+			if = {
+				limit = {
+					any_interest_group = {
+						leader = {
+							this ?= scope:french_monarch_scope
+						}
+					}
+				}
+				scope:french_monarch_scope = {
+					remove_as_interest_group_leader = yes
+				}
+			}
+			add_journal_entry = {
+				type = je_cement_the_rightful_dynasty
+			}
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					has_ideology = ideology:ideology_bonapartist
+				}
+			}
+			add_modifier = {
+				name = legitimist_restoration_modifier
+				months = normal_modifier_time
+			}
+		}
+		
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_legitimist
+						has_ideology = ideology:ideology_orleanist
+					}
+				}
+			}
+			ROOT = {
+				add_radicals = {
+					value = large_radicals
+					interest_group = prev
+				}
+			}
+		}
 	}
 }
