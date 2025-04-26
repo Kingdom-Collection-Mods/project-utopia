@@ -46,6 +46,7 @@ pmg_base_building_textile_mills = {
 		pm_sewing_machines
 		pm_electric_sewing_machines
 		pm_heavy_machinery_textile
+		pm_plastics_textile
 	}
 }
 
