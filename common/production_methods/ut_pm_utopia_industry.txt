@@ -1131,7 +1131,7 @@ pm_heavy_machinery_coal_fired_plant = {
 }
 
 pm_heavy_machinery_oil_fired_plant = {
-	texture = "gfx/interface/icons/production_method_icons/power_plant.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_power_plant_oil.dds"
 
 	unlocking_technologies = {
 		heavy_machinery_era_analog

@@ -254,7 +254,7 @@ pm_heavy_machinery_textile  = {
 }
 
 pm_plastics_textile  = {
-	texture = "gfx/interface/icons/production_method_icons/ut_cloth_machinery.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_cloth_machinery_plastics.dds"
 	
 	unlocking_technologies = {
 		consumer_goods_main_plastic_revolution
