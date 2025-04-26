@@ -13,33 +13,31 @@ principle_common_financial_policy_1 = {
 	possible = {
 		has_technology_researched = union_new_mandates
 	}
-
+	
 	power_bloc_modifier = {
-		power_bloc_trade_route_cost_mult = -0.5
+		# Modifiers from previous level(s)
+		power_bloc_trade_route_cost_mult = -0.75
+	
+		# Also unlocks a PM that grants Trade Centers Influence, checked with trigger on PM (from level 2)
 	}
-
+	
 	member_modifier = {
 		# Modifiers from previous level(s)
-		country_trade_route_cost_mult = -0.1
+		country_trade_route_cost_mult = -0.25
 		country_trade_route_competitiveness_mult = 0.25
 		
 		# Allows members to set up trade routes without diplomatic interests there
 		country_allow_trade_routes_without_interest_bool = yes
-		state_migration_pull_mult = 0.2
-		country_mass_migration_attraction_mult = 0.1
+
+		#for missing production method
+		state_migration_pull_mult = 0.1
+		
+		#for late game scale across continents
+		country_convoy_contribution_to_market_owner_add = 0.2
 	}
 	
 	ai_weight = {
 		value = 0
-
-		if = {
-			limit = {
-				has_identity = identity:identity_trade_league
-				NOT = { has_principle_group = principle_group:principle_group_external_trade }
-				NOT = { has_principle_group = principle_group:principle_group_internal_trade }
-			}
-			add = 1000
-		}
 	}
 }
 
@@ -50,19 +48,28 @@ principle_common_financial_policy_2 = {
 	possible = {
 		has_technology_researched = union_new_mandates
 	}
-
+	
 	power_bloc_modifier = {
-		power_bloc_trade_route_cost_mult = -0.5
+		# Modifiers from previous level(s)
+		power_bloc_trade_route_cost_mult = -0.75
+	
+		# Also unlocks a PM that grants Trade Centers Influence, checked with trigger on PM (from level 2)
+		power_bloc_disallow_war_bool = yes
 	}
-
+	
 	member_modifier = {
 		# Modifiers from previous level(s)
-		country_trade_route_cost_mult = -0.1
+		country_trade_route_cost_mult = -0.25
 		country_trade_route_competitiveness_mult = 0.25
 		
 		# Allows members to set up trade routes without diplomatic interests there
 		country_allow_trade_routes_without_interest_bool = yes
-		country_mass_migration_attraction_mult = 0.15
+
+		#for missing production method
+		state_migration_pull_mult = 0.15
+		
+		#for late game scale across continents
+		country_convoy_contribution_to_market_owner_add = 0.2
 	}
 	
 	ai_weight = {
@@ -77,22 +84,31 @@ principle_common_financial_policy_3 = {
 	possible = {
 		has_technology_researched = union_new_mandates
 	}
-
+	
 	power_bloc_modifier = {
-		power_bloc_trade_route_cost_mult = -0.5
+		# Modifiers from previous level(s)
+		power_bloc_trade_route_cost_mult = -0.75
+	
+		# Also unlocks a PM that grants Trade Centers Influence, checked with trigger on PM (from level 2)
 		power_bloc_disallow_war_bool = yes
 	}
-
+	
 	member_modifier = {
-		country_join_power_bloc_member_in_defensive_plays_bool = yes
 		# Modifiers from previous level(s)
-		country_trade_route_cost_mult = -0.1
+		country_trade_route_cost_mult = -0.25
 		country_trade_route_competitiveness_mult = 0.25
 		
 		# Allows members to set up trade routes without diplomatic interests there
 		country_allow_trade_routes_without_interest_bool = yes
-		country_mass_migration_attraction_mult = 0.2
-		state_infrastructure_mult = 0.1
+
+		#for missing production method
+		state_migration_pull_mult = 0.2
+		
+		#for late game scale across continents
+		country_convoy_contribution_to_market_owner_add = 0.2
+		
+		#
+		country_join_power_bloc_member_in_defensive_plays_bool = yes
 	}
 	
 	ai_weight = {
@@ -124,15 +140,6 @@ principle_commissariat_1 = {
 	
 	ai_weight = {
 		value = 0
-
-		if = {
-			limit = {
-				has_identity = identity:identity_sovereign_empire
-				NOT = { has_principle_group = principle_group:principle_group_vassalization }
-				NOT = { has_principle_group = principle_group:principle_group_exploit_members }
-			}
-			add = 1000
-		}
 	}
 }
 
@@ -217,20 +224,12 @@ ut_principle_military_cooperation_1 = {
 	}
 	
 	member_modifier = {
-		power_bloc_customs_union_bool = yes
+		# Countries forced to join defensive plays against members
+		country_join_power_bloc_member_in_defensive_plays_bool = yes
 	}
 
 	ai_weight = {
 		value = 0
-		
-		if = {
-			limit = {
-				has_identity = identity:identity_military_treaty_organization
-				NOT = { has_principle_group = principle_group:principle_group_aggressive_coordination }
-				NOT = { has_principle_group = principle_group:principle_group_defensive_cooperation }
-			}
-			add = 1000
-		}
 	}
 }
 
@@ -245,13 +244,16 @@ ut_principle_military_cooperation_2 = {
 	power_bloc_modifier = {
 		# Modifiers from previous level(s)
 		power_bloc_disallow_war_bool = yes
+		power_bloc_customs_union_bool = yes
 		
 		
 	}
 
 	member_modifier = {
-		power_bloc_customs_union_bool = yes
 		country_military_goods_cost_mult = -0.15
+		
+		# Countries forced to join defensive plays against members
+		country_join_power_bloc_member_in_defensive_plays_bool = yes
 	}
 	
 	leader_modifier = {
@@ -275,12 +277,15 @@ ut_principle_military_cooperation_3 = {
 	power_bloc_modifier = {
 		# Modifiers from previous level(s)
 		power_bloc_disallow_war_bool = yes		
+		power_bloc_customs_union_bool = yes
 	}
 
 	member_modifier = {
-		power_bloc_customs_union_bool = yes
 		country_military_goods_cost_mult = -0.15
 		country_military_tech_spread_mult = 0.1
+		
+		# Countries forced to join defensive plays against members
+		country_join_power_bloc_member_in_defensive_plays_bool = yes
 	}
 	
 	leader_modifier = {
