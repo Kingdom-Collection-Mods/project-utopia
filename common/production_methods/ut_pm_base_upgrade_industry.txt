@@ -35,7 +35,7 @@ pm_ut_industry_plastics = {
 	texture = "gfx/interface/icons/production_method_icons/ut_plastic_mass_production.dds"
 	
 	unlocking_technologies = {
-		plastics_nylon
+		plastics_polyester #todo: rework floatglasverfahren im machinery tree (industriell ab 60er)
 	}
 	
 	state_modifiers = {
@@ -125,7 +125,7 @@ pm_plastic_packaging = {
 	texture = "gfx/interface/icons/production_method_icons/vaccum_canning.dds"
 	
 	unlocking_technologies = {
-		plastics_polyester
+		plastics_polypropylene
 	}
 	
 	building_modifiers = {
@@ -231,7 +231,8 @@ pm_heavy_machinery_textile  = {
 		workforce_scaled = {
 			# input goods
 			goods_input_tools_add = 10
-			goods_input_fabric_add = 70
+			goods_input_fabric_add = 50
+			goods_input_plastic_add = 10 #polyester
 			goods_input_electricity_add = 10
 			goods_input_dye_add = 20
 			goods_input_heavy_machinery_add = 1
@@ -267,11 +268,11 @@ pm_plastics_textile  = {
 			goods_input_fabric_add = 30
 			goods_input_electricity_add = 10
 			goods_input_dye_add = 20
-			goods_input_plastic_add = 30
+			goods_input_plastic_add = 40 #acrylfasern
 			goods_input_heavy_machinery_add = 2
 			
 			# output goods
-			goods_output_clothes_add = 180
+			goods_output_clothes_add = 190
 		}
 
 		level_scaled = {
@@ -691,12 +692,12 @@ pm_supermarket = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_glass_add = 2
+			goods_input_glass_add = 3
 			goods_input_steel_add = 2
 			goods_input_electronics_add = 2
 			goods_input_electricity_add = 1
 			goods_output_services_add = 50
-			goods_output_consumer_goods_add = 1
+			goods_output_consumer_goods_add = 2
 		}
 
 		level_scaled = {
@@ -718,14 +719,14 @@ pm_shopping_district = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_glass_add = 2
-			goods_input_steel_add = 1
+			goods_input_glass_add = 3
+			goods_input_steel_add = 2
 			goods_input_heavy_machinery_add = 1
 			goods_input_computers_add = 1
 			goods_input_electricity_add = 1
 			goods_output_services_add = 70
 			goods_output_internet_add = 1
-			goods_output_consumer_goods_add = 1
+			goods_output_consumer_goods_add = 3
 		}
 
 		level_scaled = {

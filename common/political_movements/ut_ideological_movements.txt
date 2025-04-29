@@ -1,4 +1,4 @@
-﻿ut_movement_cosmopolitan = {
+ut_movement_cosmopolitan = {
 	category = movement_category_ideological
 
 	ideology = ideology_urbanist_power_base	
@@ -369,36 +369,6 @@ ut_movement_rationalists = {
 	}	
 	on_created = {
 		add_movement_enthusiasm_modifier = yes
-	}
-	
-	character_support_trigger = {
-		OR = {
-			has_ideology = ideology:ideology_reformer
-			has_ideology = ideology:ideology_laissez_faire
-			has_ideology = ideology:ideology_social_democrat
-			OR = {
-				is_interest_group_type = ig_intelligentsia
-				is_interest_group_type = ig_trade_unions
-				is_interest_group_type = ig_urbanists
-				is_interest_group_type = ig_industrialists
-				is_interest_group_type = ig_petty_bourgeoisie
-			}
-		}
-	}
-	character_support_weight = {
-		value = 200
-		if = {
-			limit = {
-				OR = {
-					has_ideology = ideology:ideology_reformer
-					has_ideology = ideology:ideology_laissez_faire
-					has_ideology = ideology:ideology_social_democrat
-				}
-			}
-			multiply = {
-				value = 5
-			}
-		}
 	}
 	
 	

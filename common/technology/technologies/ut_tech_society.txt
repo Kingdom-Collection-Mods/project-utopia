@@ -486,6 +486,8 @@ political_progress_1 = {
 	modifier = {
 		country_service_workers_pol_str_mult = 0.1
 		interest_group_ig_urbanists_pol_str_mult = 0.1
+
+		state_expected_sol_from_literacy = 1 #todo: rethink, if ai techs this... no good. But good for player. 
 	}
 
 	unlocking_technologies = {
@@ -504,7 +506,9 @@ political_progress_2 = {
 		
 	modifier = {
 		country_service_workers_pol_str_mult = 0.1
-		interest_group_ig_urbanists_pol_str_mult = 0.1	
+		interest_group_ig_urbanists_pol_str_mult = 0.1
+
+		state_expected_sol_from_literacy = 1
 	}
 
 	unlocking_technologies = {
@@ -541,6 +545,7 @@ anti_multicultural_globalism = {
 	category = society
 		
 	modifier = {
+		state_expected_sol_from_literacy = 2 #todo: does not really fit here
 	}
 
 	unlocking_technologies = {

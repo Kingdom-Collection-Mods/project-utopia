@@ -360,7 +360,7 @@ ut_principle_advanced_research_5 = {
 		country_ahead_of_time_research_penalty_mult = -0.05
 
 		# Increase Country max innovation
-		country_weekly_innovation_max_add = 30
+		country_weekly_innovation_max_add = 20
 	}
 	
 	ai_weight = {

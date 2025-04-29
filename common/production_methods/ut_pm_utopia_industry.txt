@@ -195,7 +195,7 @@ pm_plastic_one_process = {
 
 pm_plastic_two_process = {
 	unlocking_technologies = {
-		plastics_polyester
+		plastics_polypropylene
 	}
 	texture = "gfx/interface/icons/production_method_icons/ut_plastic_2.dds"
 	
@@ -535,8 +535,8 @@ pm_electronics_transistors_process = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_plastic_add = 10
-			goods_input_explosives_add = 30
+			goods_input_plastic_add = 5
+			goods_input_explosives_add = 35
 			goods_input_electricity_add = 20
 			
 			# output goods
@@ -673,7 +673,7 @@ pm_computers_integrated_chips_process  = {
 		workforce_scaled = {
 			# input goods
 			goods_input_electricity_add = 30
-			goods_input_plastic_add = 5
+			goods_input_plastic_add = 10
 			goods_input_explosives_add = 10
 			goods_input_electronics_add = 30
 			goods_input_rare_earths_add = 20
@@ -710,7 +710,7 @@ pm_computers_micro_chips_process  = {
 		workforce_scaled = {
 			# input goods
 			goods_input_electricity_add = 30
-			goods_input_plastic_add = 5
+			goods_input_plastic_add = 10
 			goods_input_explosives_add = 10
 			goods_input_electronics_add = 100
 			goods_input_rare_earths_add = 60
