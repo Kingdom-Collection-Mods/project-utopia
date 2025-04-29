@@ -1,4 +1,4 @@
-ut_movement_cosmopolitan = {
+﻿ut_movement_cosmopolitan = {
 	category = movement_category_ideological
 
 	ideology = ideology_urbanist_power_base	
@@ -371,27 +371,35 @@ ut_movement_rationalists = {
 		add_movement_enthusiasm_modifier = yes
 	}
 	
-	
-	pop_support_trigger = {
-		NOR = {
-			is_pop_type = peasants
-			is_pop_type = slaves
+	character_support_trigger = {
+		OR = {
+			has_ideology = ideology:ideology_reformer
+			has_ideology = ideology:ideology_laissez_faire
+			has_ideology = ideology:ideology_social_democrat
+			OR = {
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_urbanists
+				is_interest_group_type = ig_industrialists
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
 		}
 	}
-
-	pop_support_factors = {
-		movement_support_high_urbanization
-		movement_support_high_literacy
-		movement_support_capitalists
-		movement_support_aristocrats
-		movement_support_officers
-		movement_support_academics
-		movement_support_bureaucrats
-		movement_support_engineers
-		movement_support_clerks
-		movement_support_soldiers
-	}
-	
+	character_support_weight = {
+		value = 200
+		if = {
+			limit = {
+				OR = {
+					has_ideology = ideology:ideology_reformer
+					has_ideology = ideology:ideology_laissez_faire
+					has_ideology = ideology:ideology_social_democrat
+				}
+			}
+			multiply = {
+				value = 5
+			}
+		}
+	}	
 	
 	pop_support_trigger = {
 		NOR = {
