@@ -883,7 +883,7 @@ ideology_reformer = {
 	
 	lawgroup_citizenship = {
 		law_multicultural = disapprove	
-		law_multicultural_globalism = disapprove	
+		law_multicultural_globalism = strongly_disapprove	
 		law_ethnostate = disapprove
 		law_neo_ethno_state = disapprove
 		law_national_supremacy = disapprove
@@ -4568,7 +4568,7 @@ ideology_integralist = {
 		law_cultural_exclusion = approve
 		law_racial_segregation = neutral
 		law_multicultural = disapprove	
-		law_multicultural_globalism = disapprove	
+		law_multicultural_globalism = strongly_disapprove	
 		law_ethnostate = disapprove
 		law_neo_ethno_state = disapprove
 		law_national_supremacy = disapprove

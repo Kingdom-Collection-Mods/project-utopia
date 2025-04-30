@@ -9,6 +9,17 @@
 	}
 }
 
+ut_ideology_cosmopolitan_valid_trigger = {
+	OR = {
+		is_interest_group_type = ig_devout
+		is_interest_group_type = ig_rural_folk
+		is_interest_group_type = ig_intelligentsia
+		is_interest_group_type = ig_trade_unions
+		is_interest_group_type = ig_urbanists
+		is_interest_group_type = ig_petty_bourgeoisie
+	}
+}
+
 ut_ideology_new_dawn_fascist_trigger = {
 	OR = {
 		has_ideology = ideology:ideology_corporatist_leader

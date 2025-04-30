@@ -1,12 +1,17 @@
 ﻿ut_movement_cosmopolitan = {
 	category = movement_category_ideological
 
-	ideology = ideology_urbanist_power_base	
+	ideology = ut_ideology_cosmopolitan	
 	character_ideologies = {
-		ideology_humanitarian
+		ut_ideology_cosmopolitan
 	}
 	
 	disband_trigger = {
+		has_law = law_type:law_multicultural_globalism
+		OR = {
+			has_law = law_type:law_free_trade_union
+			has_law = law_type:law_protectionism_union
+		}
 	}
 	on_disbanded = {}
 	

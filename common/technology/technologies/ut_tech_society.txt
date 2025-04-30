@@ -257,6 +257,7 @@ modern_economy = {
 	category = society
 		
 	modifier = {
+		state_tax_capacity_add = 25
 	}
 
 	unlocking_technologies = {
@@ -274,7 +275,6 @@ new_public_management = {
 	category = society
 		
 	modifier = {
-		state_tax_capacity_add = 25
 	}
 
 	unlocking_technologies = {
@@ -293,8 +293,8 @@ digital_tax_declaration = {
 	category = society
 		
 	modifier = {
-		state_tax_capacity_add = 25
-		building_government_administration_throughput_add = 0.2
+		state_tax_capacity_mult = 0.1
+		building_government_administration_throughput_add = 0.1
 	}
 
 	#todo, neu machtverteilung
@@ -638,7 +638,7 @@ public_universities = {
 		
 	modifier = {
 		country_tech_spread_mult = 0.1
-		country_weekly_innovation_max_add = 50
+		country_weekly_innovation_max_add = 30
 	}
 
 	unlocking_technologies = {
@@ -657,7 +657,7 @@ compulsory_secondary_school = {
 		
 	modifier = {
 		country_tech_spread_mult = 0.1
-		country_weekly_innovation_max_add = 50
+		country_weekly_innovation_max_add = 30
 	}
 
 	unlocking_technologies = {

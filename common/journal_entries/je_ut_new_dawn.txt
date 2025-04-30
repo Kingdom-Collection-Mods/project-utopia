@@ -6,11 +6,7 @@
 
 	is_shown_when_inactive = {
 		is_player = yes
-		OR = {
-			has_technology_researched = anti_discrimination_laws
-			has_technology_researched = political_progress_1
-			has_technology_researched = feminism_2
-		}
+		has_technology_researched = mass_propaganda
 	}
 
 	possible = {

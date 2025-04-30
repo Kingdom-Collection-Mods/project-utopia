@@ -1,0 +1,32 @@
+﻿pm_computer_bureaucrats = {
+	texture = "gfx/interface/icons/production_method_icons/telephone_switchboards.dds"
+	unlocking_technologies = {
+		new_public_management
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_bureaucracy_add = 110
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_tax_capacity_add = 40
+		}		
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 20
+			goods_input_telephones_add = 5
+			goods_input_computers_add = 2
+		}
+
+		level_scaled = {
+			building_employment_service_workers_add = 500
+			building_employment_clerks_add = 2000
+			building_employment_bureaucrats_add = 2500
+		}
+	}	
+}

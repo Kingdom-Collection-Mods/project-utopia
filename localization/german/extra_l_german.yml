@@ -134,8 +134,8 @@
  interest_group_ig_urbanists_pol_str_mult: "$ig_variant_urbanists$ [concept_political_strength]"
  
  ideology_urbanist_liberalist: "Urban-liberale Ideologie"
- ideology_urbanist_power_base: "Kosmopolitan"
- ideology_urbanist_power_base_desc: "Kosmopolitische Ideologien setzen auf globale Vernetzung, Inklusivität und die Förderung von Menschenrechten. Sie befürworten offene Grenzen, Multikulturalismus und eine säkulare Regierungsführung ohne religiösen Einfluss."
+ ideology_urbanist_power_base: "Weltbürgerlich"
+ ideology_urbanist_power_base_desc: "Weltbürgerlich Ideologien setzen auf globale Vernetzung, Inklusivität und die Förderung von Menschenrechten. Sie befürworten offene Grenzen, Multikulturalismus und eine säkulare Regierungsführung ohne religiösen Einfluss."
  ideology_urbanist_economy_base: "Rationalisten"
  ideology_urbanist_economy_base_desc: "Rationalistische Ideologien favorisieren die Regierung durch Experten und die effiziente Verwaltung von Staat und Gesellschaft. Sie setzen auf wissenschaftlich fundierte Entscheidungen und unterstützen Bildung, Technologie und öffentliche Dienstleistungen."
  ideology_urbanist_human_rights_base: "Humanisten"

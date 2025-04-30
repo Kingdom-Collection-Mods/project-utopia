@@ -1,4 +1,4 @@
-ut_ideology_environmentalist = {
+﻿ut_ideology_environmentalist = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_social_democrat.dds"
 	
 	character_ideology = yes
@@ -118,6 +118,128 @@ ut_ideology_environmentalist = {
 		if = {
 			limit = {
 				has_technology_researched = food_standards_one
+			}
+			add = 25
+		}
+	}
+}
+
+ut_ideology_cosmopolitan = {
+	icon = "gfx/interface/icons/ideology_icons/paternalistic.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_citizenship = {
+		law_ethnostate = disapprove
+		law_national_supremacy = disapprove
+		law_racial_segregation = disapprove
+		law_cultural_exclusion = neutral
+		law_multicultural = approve
+		law_neo_ethno_state = strongly_disapprove
+		law_multicultural_globalism = strongly_approve
+	}
+
+	lawgroup_migration = {
+		law_closed_borders = strongly_disapprove
+		law_migration_controls = disapprove
+		law_no_migration_controls = approve
+	}
+
+	lawgroup_church_and_state = {
+		law_state_religion = disapprove
+		law_freedom_of_conscience = neutral
+		law_total_separation = approve
+		law_state_atheism = approve
+	}
+	
+	lawgroup_trade_policy = {		
+		law_free_trade = approve	
+		law_free_trade_union= strongly_approve
+		law_protectionism_union = approve
+		law_mercantilism = disapprove
+		law_protectionism = disapprove
+		law_isolationism = strongly_disapprove
+	}
+
+	
+	country_trigger = {
+		has_technology_researched = political_progress_1
+	}
+
+	interest_group_leader_trigger = {
+		ut_ideology_cosmopolitan_valid_trigger = yes
+	}
+
+	non_interest_group_leader_trigger = {
+		# Agitator ideologies should disapprove of a current law
+		NAND = {
+			has_role = agitator
+			owner = {
+				has_law = law_type:law_multicultural_globalism
+				OR = {
+					has_law = law_type:law_free_trade_union
+					has_law = law_type:law_protectionism_union
+				}
+			}
+		}
+		interest_group = {
+			ut_ideology_cosmopolitan_valid_trigger = yes
+		}
+	}
+	
+	interest_group_leader_weight = {
+		value = 100
+		# very angry IG's more likely to turn to more radical socialism
+		if = {
+			limit = {
+				NOT = { is_interest_group_type = ig_devout } # can't be radical socialists
+				ig_approval <= -5
+			}
+			add = -75
+		}
+		# more likely when issues are relevant
+		if = {
+			limit = {
+				owner = {
+					NAND = {
+						has_law = law_type:law_multicultural_globalism
+						OR = {
+							has_law = law_type:law_free_trade_union
+							has_law = law_type:law_protectionism_union
+						}
+					}
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				has_technology_researched = political_progress_1
+			}
+			add = 25
+		}
+		
+		if = {
+			limit = {
+				has_technology_researched = political_progress_2
+			}
+			add = 25
+		}
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 50
+		
+		if = {
+			limit = {
+				has_technology_researched = political_progress_1
+			}
+			add = 25
+		}
+		
+		if = {
+			limit = {
+				has_technology_researched = political_progress_2
 			}
 			add = 25
 		}
