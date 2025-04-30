@@ -1,14 +1,5 @@
-﻿ig_trait_open_borders = {
-	icon = "gfx/interface/icons/ig_trait_icons/propagandists.dds"
-	min_approval = happy
-	
-	modifier = {
-		state_migration_pull_mult = 0.1
-	}
-}
-
-ig_trait_closed_borders = {
-	icon = "gfx/interface/icons/ig_trait_icons/propagandists.dds"
+﻿ig_trait_urbanist_unhappy = {
+	icon = "gfx/interface/icons/ig_trait_icons/social_criticism.dds"
 	min_approval = unhappy
 	
 	modifier = {
@@ -16,9 +7,19 @@ ig_trait_closed_borders = {
 	}
 }
 
-ig_trait_research_initiative = {
-	icon = "gfx/interface/icons/ig_trait_icons/avant_garde.dds"
+ig_trait_urbanist_happy = {
+	icon = "gfx/interface/icons/ig_trait_icons/propagandists.dds"
 	min_approval = loyal
+	
+	modifier = {
+		state_education_access_add = 0.1
+	}
+}
+
+
+ig_trait_urbanist_loyal = {
+	icon = "gfx/interface/icons/ig_trait_icons/avant_garde.dds"
+	min_approval = happy
 	
 	modifier = {
 		building_urban_center_throughput_add = 0.1

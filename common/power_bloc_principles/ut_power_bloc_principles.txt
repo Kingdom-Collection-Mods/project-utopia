@@ -1,4 +1,4 @@
-﻿### See power_bloc_principle_groups for grouping, primary groups for identities etc.
+### See power_bloc_principle_groups for grouping, primary groups for identities etc.
 
 ### CONSTRUCTION
 
@@ -360,7 +360,7 @@ ut_principle_advanced_research_5 = {
 		country_ahead_of_time_research_penalty_mult = -0.05
 
 		# Increase Country max innovation
-		country_weekly_innovation_max_add = 20
+		country_weekly_innovation_max_add = 15
 	}
 	
 	ai_weight = {
@@ -389,13 +389,13 @@ ut_principle_advanced_research_6 = {
 	institution = institution_schools
 	institution_modifier = {
 		# School institution gives more tech spread
-		country_tech_spread_mult = 0.05
+		country_tech_spread_mult = 0.10
 
 		# School isntitution reduces ahead of time research penalty
-		country_ahead_of_time_research_penalty_mult = -0.1
+		country_ahead_of_time_research_penalty_mult = -0.05
 
 		# Increase Country max innovation
-		country_weekly_innovation_max_add = 30
+		country_weekly_innovation_max_add = 20
 	}
 	
 	ai_weight = {

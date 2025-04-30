@@ -447,7 +447,7 @@ ut_war_planes = {
 	}
 	
 	modifier = {
-		unit_occupation_mult = 0.2
+		unit_occupation_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -465,7 +465,7 @@ ut_war_planes_2 = {
 	}
 	
 	modifier = {
-		unit_occupation_mult = 0.2
+		unit_occupation_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -485,7 +485,6 @@ ut_jet_planes = {
 	
 	
 	modifier = {
-		unit_occupation_mult = 0.2
 	}
 
 	ai_weight = {

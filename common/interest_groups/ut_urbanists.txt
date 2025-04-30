@@ -34,16 +34,16 @@
 
 	# Deprecated; use on_enable effect to assign traits instead
 	traits = {
-		ig_trait_open_borders
-		ig_trait_research_initiative
-		ig_trait_social_criticism
+		ig_trait_urbanist_unhappy
+		ig_trait_urbanist_happy
+		ig_trait_urbanist_loyal
 	}
 
 	on_enable = {
 		ig:ig_urbanists = {
-			set_ig_trait = ig_trait:ig_trait_open_borders
-			set_ig_trait = ig_trait:ig_trait_research_initiative
-			set_ig_trait = ig_trait:ig_trait_social_criticism
+			set_ig_trait = ig_trait:ig_trait_urbanist_unhappy
+			set_ig_trait = ig_trait:ig_trait_urbanist_happy
+			set_ig_trait = ig_trait:ig_trait_urbanist_loyal
 		}
 		
 		if = {
