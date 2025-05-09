@@ -41,6 +41,9 @@
  utopia_journal_prod.consumer_goods_simple_je: "Simple Consumer Goods"
  utopia_journal_prod.consumer_goods_complex_je: "Complex Consumer Goods"
 
+ je_group_utopia: "Utopia"
+ je_group_ai_buffs: "Wave of Technological Spread"
+
  heavy_industrial_machinery_je_reason: "A momentous turning point in our nation's march toward modernity. The foundations have been laid, the first gears assembled, and the furnaces fired - the very first Heavy Industrial Machinery building now stands tall against the skyline, a testament to human ingenuity and ambition.\nWhere once laborers toiled by hand, great machines now take shape to ease their burden and multiply their output. Though its engines roar and its halls echo with the clang of steel, this building is more than just a factory. It is the crucible in which the future will be forged."
  cnc_machines_je_reason: "The arrival of CNC (Computer Numerical Control) machines has ushered in a new era of precision and consistency in heavy industry. Where once even the steadiest craftsman's hand might falter, now programmable machines execute complex tasks with unerring accuracy. Intricate components, once painstakingly shaped by human effort, are now milled, drilled, and cut with mechanical grace. The margin for error shrinks to near nothing, and with it, so too does the cost of imperfection.\nBut this revolution is more than just technical. It changes the very fabric of labor itself. Skilled machinists now find themselves retrained as operators and programmers, guiding machines rather than tools. Production scales faster, parts become standardized, and industries once limited by human variation find themselves liberated by automation. With CNC machines humming across the factory floor, heavy industry transforms from brute force into a symphony of calculated motion."
  heavy_tractors_je_reason: "The introduction of heavy tractors marks a turning point for agriculture and construction alike. No longer reliant on teams of animals or slow manual labor, these machines bring raw power to the soil. Cabin tractors, with their enclosed comfort and rugged build, let workers operate in all weather, covering more ground in less time.\nBut the impact goes beyond the fields. Roads are graded faster, foundations dug deeper, and supply lines move with greater speed. With each new model, the line between farm tool and industrial machine blurs further. In the age of heavy machinery, muscle is measured in horsepower, not manpower."
@@ -673,7 +676,7 @@
 
  agricultural_mechanization: "Heavy Tractors"
  slow_tech_progress: "Slow Technological Progress"
- je_ai_advanced_consumer_goods_researched: "Wave of Technological Spread"
+ je_ai_advanced_consumer_goods_researched: "Consumer Goods"
  ai_great_power_buff_spread: "Technological Influence (Great Power)"
  ai_major_power_buff_spread: "Technological Influence (Major Power)"
  ai_below_major_power_buff_spread: "Technological Influence (Minor Power)"

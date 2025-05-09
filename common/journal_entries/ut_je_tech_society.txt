@@ -35,9 +35,10 @@
 je_wirtschaftswunder = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
-	group = je_group_internal_affairs
+	group = je_group_utopia
 
 	is_shown_when_inactive = {
+		has_technology_researched = atmospheric_engine
 	}
 
 	possible = {
@@ -86,18 +87,15 @@ je_wirtschaftswunder = {
 je_wirtschaftswunder_others = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
-	group = je_group_technology
+	group = je_group_utopia
 
 	is_shown_when_inactive = {
-		always = no
+		has_technology_researched = atmospheric_engine
+		has_global_variable = je_wirtschaftswunder_done
 	}
 
 	possible = {
-		has_global_variable = je_wirtschaftswunder_done
 		NOT = { has_variable = je_wirtschaftswunder_successful }
-		any_country = {
-			has_variable = je_wirtschaftswunder_successful
-		}
 	}
 
 	complete = {
@@ -117,14 +115,13 @@ je_wirtschaftswunder_others = {
 je_early_civil_aviation = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
-	group = je_group_technology
+	group = je_group_utopia
 
 	is_shown_when_inactive = {
 		NOT = {	has_variable = je_early_civil_aviation_done	}
 	}
 
 	possible = {
-		NOT = { has_variable = je_early_civil_aviation_done }
 		any_country = {
 			has_technology_researched = early_civil_aviation
 		}
@@ -143,14 +140,13 @@ je_early_civil_aviation = {
 je_modern_civil_aviation = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
-	group = je_group_technology
+	group = je_group_utopia
 
 	is_shown_when_inactive = {
 		NOT = {	has_variable = je_modern_civil_aviation_done	}
 	}
 
 	possible = {
-		NOT = { has_variable = je_modern_civil_aviation_done }
 		any_country = {
 			has_technology_researched = modern_civil_aviation
 		}

@@ -1,7 +1,7 @@
 # Harbor
-heavy_industry_harbor = {
+industry_harbor = {
 
-	era = era_6
+	era = era_5
 	texture = "gfx/interface/icons/invention_icons/industrial_harbor.dds"
 	category = military
 
@@ -10,8 +10,25 @@ heavy_industry_harbor = {
 	}
 	
 	modifier = {
-		state_building_port_max_level_add = 2
-		country_convoys_capacity_mult = 0.1
+		state_building_port_max_level_add = 4
+    }
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+heavy_industry_harbor = {
+
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/industrial_harbor.dds"
+	category = military
+
+	unlocking_technologies = {	
+		industry_harbor
+	}
+	
+	modifier = {
     }
 	
 	ai_weight = {
@@ -30,8 +47,7 @@ ultra_heavy_industry_harbor = {
 	}
 	
 	modifier = {
-		state_building_port_max_level_add = 2
-		country_convoys_capacity_mult = 0.1
+		state_building_port_max_level_add = 4
     }
 
 	ai_weight = {

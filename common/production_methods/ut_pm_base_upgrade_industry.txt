@@ -837,7 +837,7 @@ pm_assembly_lines_building_heavy_machinery_tools_motors = {
 	}
 	
 	unlocking_technologies = {
-		heavy_machinery_era_analog
+		heavy_machinery_era_analog_two
 	}
 
 	disallowing_laws = {
@@ -870,7 +870,7 @@ pm_assembly_lines_building_heavy_machinery_tools_furniture = {
 	}
 	
 	unlocking_technologies = {
-		heavy_machinery_era_analog
+		heavy_machinery_era_analog_two
 	}
 
 	disallowing_laws = {
@@ -903,7 +903,7 @@ pm_assembly_lines_building_heavy_machinery_power = {
 	}
 	
 	unlocking_technologies = {
-		heavy_machinery_era_analog
+		heavy_machinery_era_analog_two
 	}
 
 	disallowing_laws = {

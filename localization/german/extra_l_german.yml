@@ -143,10 +143,12 @@
  ut_ideology_environmentalist: "Ökologistisch"
  ut_ideology_environmentalist_desc: "#lore Environmentalists.#!"
 
- ig_trait_open_borders: "Offene Grenzen"
- ig_trait_research_initiative: "Leistungsgesellschaft"
- ig_trait_open_borders_desc: "This group advocates for the free movement of people across borders, believing it fosters cultural exchange and economic opportunity. They oppose restrictive immigration policies and emphasize international cooperation."
- ig_trait_research_initiative_desc: "This group champions a society driven by research, innovation, and measurable performance. They believe continuous improvement and scientific progress are key to national success."
+ ig_trait_urbanist_loyal: "Leistungsgesellschaft"
+ ig_trait_urbanist_loyal_desc: "This group advocates for the free movement of people across borders, believing it fosters cultural exchange and economic opportunity. They oppose restrictive immigration policies and emphasize international cooperation."
+ ig_trait_urbanist_happy: "todo"
+ ig_trait_urbanist_happy_desc: "This group champions a society driven by research, innovation, and measurable performance. They believe continuous improvement and scientific progress are key to national success."
+ ig_trait_urbanist_unhappy: "todo"
+ ig_trait_urbanist_unhappy_desc: ""
 
  ut_movement_cosmopolitan_name: "Kosmopolitanische Bewegung"
  ut_movement_humanist_name: "Humanistenbewegung"

@@ -1,10 +1,9 @@
 ﻿je_ai_radio_researched = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
-	group = je_group_technology
+	group = je_group_ai_buffs
 
 	is_shown_when_inactive = {
-		NOT = { has_modifier = ai_great_power_buff_spread }
 		NOT = { has_modifier = ai_great_power_buff_spread }
 		NOT = { has_modifier = ai_major_power_buff_spread }
 		NOT = { has_modifier = ai_below_major_power_buff_spread }
@@ -32,12 +31,9 @@
 je_ai_consumer_goods_researched = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
-	group = je_group_technology
+	group = je_group_ai_buffs
 
 	is_shown_when_inactive = {
-		any_country = {
-			has_technology_researched = consumer_goods_main_analog
-		}
 		NOT = { has_modifier = ai_great_power_buff_spread }
 		NOT = { has_modifier = ai_major_power_buff_spread }
 		NOT = { has_modifier = ai_below_major_power_buff_spread }
@@ -47,7 +43,6 @@ je_ai_consumer_goods_researched = {
 		any_country = {
 			has_technology_researched = consumer_goods_main_analog
 		}
-		NOT = { has_modifier = ai_great_power_buff_spread }
 		has_variable = je_ai_radio_researched_done
 	}
 
@@ -66,7 +61,7 @@ je_ai_consumer_goods_researched = {
 je_ai_advanced_consumer_goods_researched = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
-	group = je_group_technology
+	group = je_group_ai_buffs
 
 	is_shown_when_inactive = {
 		NOT = { has_modifier = ai_great_power_buff_spread }
@@ -92,7 +87,7 @@ je_ai_advanced_consumer_goods_researched = {
 je_ai_not_ai = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
-	group = je_group_technology
+	group = je_group_ai_buffs
 
 	is_shown_when_inactive = {
 		OR = {
