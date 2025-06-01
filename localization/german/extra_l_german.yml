@@ -1,4 +1,4 @@
-﻿l_german:
+l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -177,8 +177,11 @@
  law_task_forces_desc: "Spezialisierte Einheiten zur schnellen Krisenbewältigung oder Verteidigung des Landes."
  law_neo_ethno_state: "Neo-Ethnostaat"
  law_neo_ethno_state_desc: "Ein nationalistisches Regime, das ethnische Homogenität durch restriktive Einwanderungsgesetze und kulturelle Assimilation erzwingt."
+ law_multicultural_globalism_desc: "Eine offene Gesellschaft, die kulturelle Vielfalt und internationale Zusammenarbeit hoch bewertet."
+ EFFECTS_ON_ACCEPTANCE_law_neo_ethno_state: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Pops führen ähnliche Leben mit wenigen abträglichen Folgen, auch wenn sie nicht akzeptiert sind#!#!"
  law_multicultural_globalism: "Kosmopolitismus"
  law_multicultural_globalism_desc: "Eine offene Gesellschaft, die kulturelle Vielfalt und internationale Zusammenarbeit hoch bewertet."
+ EFFECTS_ON_ACCEPTANCE_law_multicultural_globalism: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Pops führen ähnliche Leben mit wenigen abträglichen Folgen, auch wenn sie nicht akzeptiert sind#!#!"
  law_equal_rights_for_women: "Gleichberechtigung"
  law_equal_rights_for_women_desc: "Gesetzliche Gleichstellung von Frauen in Bildung, Beruf und Politik zur Beseitigung geschlechtsspezifischer Diskriminierung."
  law_affirmative_equality: "Gleichstellungsauftrag"
@@ -199,7 +202,8 @@
  law_food_safety_protection_institute_desc: "Gesetzlich festgelegte Mindestanforderungen an Hygiene und Qualität, um sichere Lebensmittel für Verbraucher zu gewährleisten."
  law_demobilized: "Demobilisiert"
  law_demobilized_desc: "Die massive Verkleinerung der Streitkräfte und die Rückführung von Ressourcen in die zivile Wirtschaft."
-
+ law_private_pension: "Private Rente"
+ law_private_pension_desc: ""
 
  institution_epa: "Umweltschutz"
  institution_food_safety: "Lebensmittelsicherheit"
@@ -451,7 +455,9 @@
  anti_multicultural_globalism_desc: "Gegenbewegungen beschwören ethnokulturelle Homogenität und Souveränität. Grenzzäune wachsen, während Sprachprüfungen und Leitkulturdebatten die Gesellschaft repolarisieren."
  anti_discrimination_laws: "Antidiskriminierungsgesetze"
  anti_discrimination_laws_desc: "Gesetze ahnden Benachteiligung aufgrund von Geschlecht, Hautfarbe oder Glauben. Quotenregelungen erzwingen Diversität in Vorstandsetagen und Parlamentsfraktionen."
+ anti_discrimination_laws_tt: "unlocks @ut_movement_cosmopolitan_name!"
  lgbt_movement: "LGBT Bewegung"
+ lgbt_movement_tt: ""
  lgbt_movement_desc: "Stonewall-Nachklänge erreichen konservative Provinzen. Regenbogenfahnen wehen vor Rathäusern, während Adoptionsrechte und Geschlechtsangleichung in den Mainstream drängen."
  feminism_2: "Gleichberechtigung"
  feminism_2_desc: "Gleicher Lohn für gleiche Arbeit wird verfassungsrechtlich verankert. Frauen erobern Führungspositionen in Militär und Industrie, doch die gläserne Decke bleibt spürbar."

@@ -562,7 +562,11 @@ anti_discrimination_laws = {
 	texture = "gfx/interface/icons/invention_icons/human_dignity.dds"
 	category = society
 		
-	modifier = {
+
+	on_researched = {
+		custom_tooltip = {
+			text = anti_discrimination_laws_tt
+		}
 	}
 
 	unlocking_technologies = {
@@ -579,7 +583,10 @@ lgbt_movement = {
 	texture = "gfx/interface/icons/invention_icons/lgbt_movement.dds"
 	category = society
 		
-	modifier = {
+	on_researched = {
+		custom_tooltip = {
+			text = lgbt_movement_tt
+		}
 	}
 
 	unlocking_technologies = {

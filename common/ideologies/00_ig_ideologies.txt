@@ -133,6 +133,7 @@ ideology_individualist = {
 		law_no_social_security = neutral
 		law_wage_subsidies = disapprove
 		law_old_age_pension = strongly_disapprove
+		law_private_pension = approve
 	}
 	
 	lawgroup_health_system = {
@@ -191,6 +192,7 @@ ideology_stratocratic = {
 		law_poor_laws = neutral
 		law_wage_subsidies = disapprove
 		law_old_age_pension = disapprove
+		law_private_pension = neutral
 	}
 
 	lawgroup_caste_hegemony = {
@@ -225,6 +227,7 @@ ideology_oligarchic = {
 		law_poor_laws = neutral
 		law_wage_subsidies = disapprove
 		law_old_age_pension = disapprove
+		law_private_pension = approve
 	}
 	
 	lawgroup_education_system = {
@@ -611,6 +614,7 @@ ideology_proletarian = {
 		law_wage_subsidies = approve
 		law_poor_laws = neutral
 		law_no_social_security = disapprove
+		law_private_pension = strongly_disapprove
 	}
 	
 	lawgroup_health_system = {
@@ -737,6 +741,7 @@ ideology_socialist = {
 		law_wage_subsidies = approve
 		law_poor_laws = neutral
 		law_no_social_security = disapprove
+		law_private_pension = disapprove
 	}
 
 	lawgroup_food_safety = {
@@ -901,6 +906,7 @@ ideology_corporatist = {
 		law_no_social_security = disapprove
 		law_wage_subsidies = approve
 		law_old_age_pension = neutral
+		law_private_pension = strongly_approve
 	}
 
 	lawgroup_food_safety = {
