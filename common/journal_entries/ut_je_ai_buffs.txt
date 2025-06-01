@@ -18,7 +18,6 @@
 
 	immediate = {
 		trigger_event = { id = event_journal_ai.1 }
-		set_variable = je_ai_radio_researched_done
 	}
 
 	on_timeout = {

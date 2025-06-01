@@ -272,7 +272,7 @@ pm_plastics_textile  = {
 			goods_input_heavy_machinery_add = 2
 			
 			# output goods
-			goods_output_clothes_add = 190
+			goods_output_clothes_add = 195
 		}
 
 		level_scaled = {

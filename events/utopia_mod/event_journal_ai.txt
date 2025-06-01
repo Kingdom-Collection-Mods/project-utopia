@@ -46,5 +46,7 @@ event_journal_ai.1 = {
 		name = utopia_event_journal_ai_buff
 		custom_tooltip = utopia_event_journal_ai_buff_tooltip
 		default_option = yes
+		
+		set_variable = je_ai_radio_researched_done
 	}
 }

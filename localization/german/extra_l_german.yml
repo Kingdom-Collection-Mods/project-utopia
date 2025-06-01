@@ -9,7 +9,7 @@
  utopia.continue: "Weiter"
  utopia.cheat: "Cheaten"
  utopia.disable: "Deaktivieren"
- 
+
 # Events & Journals
 
  heavy_industrial_machinery_je: "Schwermaschinenbau"
@@ -40,6 +40,9 @@
  utopia_journal_prod.software_je: "Software"
  utopia_journal_prod.consumer_goods_simple_je: "Einfache Konsumgüter"
  utopia_journal_prod.consumer_goods_complex_je: "Komplexe Konsumgüter"
+
+ je_group_utopia: "Utopia"
+ je_group_ai_buffs: "Welle technologischer Innovationen"
  
  heavy_industrial_machinery_je_reason: "A momentous turning point in our nation's march toward modernity. The foundations have been laid, the first gears assembled, and the furnaces fired - the very first Heavy Industrial Machinery building now stands tall against the skyline, a testament to human ingenuity and ambition.\nWhere once laborers toiled by hand, great machines now take shape to ease their burden and multiply their output. Though its engines roar and its halls echo with the clang of steel, this building is more than just a factory. It is the crucible in which the future will be forged."
  cnc_machines_je_reason: "The arrival of CNC (Computer Numerical Control) machines has ushered in a new era of precision and consistency in heavy industry. Where once even the steadiest craftsman's hand might falter, now programmable machines execute complex tasks with unerring accuracy. Intricate components, once painstakingly shaped by human effort, are now milled, drilled, and cut with mechanical grace. The margin for error shrinks to near nothing, and with it, so too does the cost of imperfection.\nBut this revolution is more than just technical. It changes the very fabric of labor itself. Skilled machinists now find themselves retrained as operators and programmers, guiding machines rather than tools. Production scales faster, parts become standardized, and industries once limited by human variation find themselves liberated by automation. With CNC machines humming across the factory floor, heavy industry transforms from brute force into a symphony of calculated motion."
@@ -105,6 +108,8 @@
 
  je_ai_consumer_goods_researched: "Consumer Goods researched"
  je_ai_consumer_goods_researched_reason: "REPLACE_ME"
+
+ je_ai_advanced_consumer_goods_researched_reason: "REPLACE_ME"
 
  je_ai_not_ai: "Human in disguise"
  je_ai_not_ai_reason: "REPLACE_ME"
@@ -177,8 +182,7 @@
  law_task_forces_desc: "Spezialisierte Einheiten zur schnellen Krisenbewältigung oder Verteidigung des Landes."
  law_neo_ethno_state: "Neo-Ethnostaat"
  law_neo_ethno_state_desc: "Ein nationalistisches Regime, das ethnische Homogenität durch restriktive Einwanderungsgesetze und kulturelle Assimilation erzwingt."
- law_multicultural_globalism_desc: "Eine offene Gesellschaft, die kulturelle Vielfalt und internationale Zusammenarbeit hoch bewertet."
- EFFECTS_ON_ACCEPTANCE_law_neo_ethno_state: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Pops führen ähnliche Leben mit wenigen abträglichen Folgen, auch wenn sie nicht akzeptiert sind#!#!"
+ EFFECTS_ON_ACCEPTANCE_law_neo_ethno_state: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Pops mit niedrigen Akzeptanzwerten erwartet ein hartes Leben, während Pops mit höherem Status gedeihen#!#!"
  law_multicultural_globalism: "Kosmopolitismus"
  law_multicultural_globalism_desc: "Eine offene Gesellschaft, die kulturelle Vielfalt und internationale Zusammenarbeit hoch bewertet."
  EFFECTS_ON_ACCEPTANCE_law_multicultural_globalism: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Pops führen ähnliche Leben mit wenigen abträglichen Folgen, auch wenn sie nicht akzeptiert sind#!#!"
@@ -205,6 +209,7 @@
  law_private_pension: "Private Rente"
  law_private_pension_desc: ""
 
+
  institution_epa: "Umweltschutz"
  institution_food_safety: "Lebensmittelsicherheit"
  country_institution_epa_max_investment_add: "Max. Investition der [concept_institution] $institution_epa$"
@@ -225,7 +230,6 @@
  ut_humiliate_power_bloc_goal_desc: "Demütige einen rivalisierten Machtblockanführer um in ihn in dein Machtblock zu zwingen."
  ut_research_agreement: "Forschungsabkommen"
  ut_research_agreement_desc: "Gemeinsam voranschreiten."
-
  
  ut_foreign_investment_agreement: "Mutual Investment Agreement (Block)"
  ut_foreign_investment_agreement_action_name: "Mutual [concept_foreign_investment_rights] Agreement"
@@ -269,6 +273,8 @@
  aluminum_base_desc: "Hall-Héroult-Öfen verschlingen Megawattstunden für glühende Elektrolyse. Das Leichtmetall krönt Kaiser wie Luftschiffe, doch sein Energiehunger verdunkelt ganze Regionen."
  heavy_machinery_era_analog: "Mechanische Maschinen"
  heavy_machinery_era_analog_desc: "Dampfgetriebene Walzen pressen Straßen, während Transmissionen Fabrikhallen durchziehen. Ein Zeitalter des Schmierfetts und der Hebel - brutal effektiv, doch ständig am Rande des Bruchs."
+ heavy_machinery_era_analog_two: "Montagebänder"
+ heavy_machinery_era_analog_two_desc: "Dampfgetriebene Walzen pressen Straßen, während Transmissionen Fabrikhallen durchziehen. Ein Zeitalter des Schmierfetts und der Hebel - brutal effektiv, doch ständig am Rande des Bruchs."
  heavy_machinery_era_digital: "CNC Maschinen"
  heavy_machinery_era_digital_desc: "Servomotoren fräsen Mikrometer-genau nach CAD-Vorlagen. Die digitale Präzision lässt Raketendüsen und iPhone-Gehäuse aus denselben Maschinenhallen rollen."
  heavy_machinery_era_web: "Industrie Roboter"
@@ -588,6 +594,7 @@
  pm_synthetic_oil_two_process: "Bio-Diesel"
 
  pm_heavy_machinery_textile: "Textilmaschinen"
+ pm_plastics_textile: "Kunststofftextilien"
  pm_aluminum_two_process: "Schmelzrecycling"
  pm_aluminum_packaging: "Aluminiumverpackung"
  pm_plastic_packaging: "Kunststoffverpackung"

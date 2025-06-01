@@ -42,7 +42,7 @@
  utopia_journal_prod.consumer_goods_complex_je: "Complex Consumer Goods"
 
  je_group_utopia: "Utopia"
- je_group_ai_buffs: "Wave of Technological Spread"
+ je_group_ai_buffs: "Technological Surge"
 
  heavy_industrial_machinery_je_reason: "A momentous turning point in our nation's march toward modernity. The foundations have been laid, the first gears assembled, and the furnaces fired - the very first Heavy Industrial Machinery building now stands tall against the skyline, a testament to human ingenuity and ambition.\nWhere once laborers toiled by hand, great machines now take shape to ease their burden and multiply their output. Though its engines roar and its halls echo with the clang of steel, this building is more than just a factory. It is the crucible in which the future will be forged."
  cnc_machines_je_reason: "The arrival of CNC (Computer Numerical Control) machines has ushered in a new era of precision and consistency in heavy industry. Where once even the steadiest craftsman's hand might falter, now programmable machines execute complex tasks with unerring accuracy. Intricate components, once painstakingly shaped by human effort, are now milled, drilled, and cut with mechanical grace. The margin for error shrinks to near nothing, and with it, so too does the cost of imperfection.\nBut this revolution is more than just technical. It changes the very fabric of labor itself. Skilled machinists now find themselves retrained as operators and programmers, guiding machines rather than tools. Production scales faster, parts become standardized, and industries once limited by human variation find themselves liberated by automation. With CNC machines humming across the factory floor, heavy industry transforms from brute force into a symphony of calculated motion."
@@ -67,12 +67,12 @@
  je_modern_civil_aviation_reason: "REPLACE_ME" 
 
  je_urbanist_ig: "Urbanist Movement"
- je_urbanist_ig_reason: "REPLACE_ME"
+ je_urbanist_ig_reason: "Urbanist Movement has been founded, a new political force in our nation. They represent the interests of service workers in urban environments, advocating for better working conditions, fair wages, and social justice."
 
  je_ut_new_dawn: "New Dawn"
  je_ut_new_dawn_reason: "New political waves hit our nation, we must decide on a path."
- je_ut_new_dawn_condition_tt: "REPLACE_ME"
- je_ut_new_dawn_effect_tt: "REPLACE_ME"
+ je_ut_new_dawn_condition_tt: "Moderate, Communisten oder Faschisten haben 100% erreicht."
+ je_ut_new_dawn_effect_tt: "New Dawn Part 2"
  new_dawn_ongoing: "New Dawn"
 
  ut_new_dawn_status: "New Dawn"
@@ -148,10 +148,12 @@
  ut_ideology_environmentalist: "Ecologist"
  ut_ideology_environmentalist_desc: "#lore Environmentalists.#!"
 
- ig_trait_open_borders: "Open Borders"
- ig_trait_research_initiative: "Performance Society"
- ig_trait_open_borders_desc: "This group advocates for the free movement of people across borders, believing it fosters cultural exchange and economic opportunity. They oppose restrictive immigration policies and emphasize international cooperation."
- ig_trait_research_initiative_desc: "This group champions a society driven by research, innovation, and measurable performance. They believe continuous improvement and scientific progress are key to national success."
+ ig_trait_urbanist_loyal: "Leistungsgesellschaft"
+ ig_trait_urbanist_loyal_desc: "This group advocates for the free movement of people across borders, believing it fosters cultural exchange and economic opportunity. They oppose restrictive immigration policies and emphasize international cooperation."
+ ig_trait_urbanist_happy: "todo"
+ ig_trait_urbanist_happy_desc: "This group champions a society driven by research, innovation, and measurable performance. They believe continuous improvement and scientific progress are key to national success."
+ ig_trait_urbanist_unhappy: "todo"
+ ig_trait_urbanist_unhappy_desc: ""
 
  ut_movement_cosmopolitan_name: "Cosmopolitan Movement"
  ut_movement_humanist_name: "Humanist Movement"
@@ -180,8 +182,10 @@
  law_task_forces_desc: "Specialized units for rapid crisis response or national defense."
  law_neo_ethno_state: "Neo-Ethnostate"
  law_neo_ethno_state_desc: "All foreign cultures are discriminated against. Assimilation is actively enforced."
+ EFFECTS_ON_ACCEPTANCE_law_neo_ethno_state: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Pops with low Acceptance values face a harsh life, while Pops in higher statuses prosper more#!#!"
  law_multicultural_globalism: "Globalism"
  law_multicultural_globalism_desc: "An open society that values cultural diversity and international cooperation."
+ EFFECTS_ON_ACCEPTANCE_law_multicultural_globalism: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Pops will lead similar lives with only few negative consequences, even when they aren't as accepted#!#!"
  law_equal_rights_for_women: "Equal Rights"
  law_equal_rights_for_women_desc: "Legal equality for women in education, employment, and politics to eliminate gender-based discrimination, including the end of a husband's legal authority over his wife."
  law_affirmative_equality: "Affirmative Equality"
@@ -202,6 +206,8 @@
  law_food_safety_protection_institute_desc: "Legally established minimum hygiene and quality standards to ensure safe food for consumers."
  law_demobilized: "Demobilized"
  law_demobilized_desc: "Massive downsizing of the armed forces and reallocation of resources to the civilian economy."
+ law_private_pension: "Private Pension"
+ law_private_pension_desc: ""
 
 
  institution_epa: "Environmental Protection"
@@ -224,6 +230,10 @@
  ut_humiliate_power_bloc_goal_desc: "Humiliate a rival power bloc leader to force them into your bloc."
  ut_research_agreement: "Research Agreement"
  ut_research_agreement_desc: "Advancing together."
+ 
+ ut_foreign_investment_agreement: "Mutual Investment Agreement (Block)"
+ ut_foreign_investment_agreement_action_name: "Mutual [concept_foreign_investment_rights] Agreement"
+ ut_foreign_investment_agreement_desc: "A [concept_diplomatic_pact] between two [Concept('concept_country','$concept_countries$')] to establish a Mutual [concept_foreign_investment_rights] Agreement."
 
 # Power Blocs
  principle_common_financial_policy_1: "Common Financial Policy"
@@ -263,6 +273,8 @@
  aluminum_base_desc: "Hall-Héroult furnaces devour megawatts for blazing electrolysis. The lightweight metal crowns emperors like airships—but its energy hunger darkens entire regions."
  heavy_machinery_era_analog: "Mechanical Machinery"
  heavy_machinery_era_analog_desc: "Steam-driven rollers pave roads as overhead shafts fill factories. An age of grease and levers—brutally effective, always on the edge of breakdown."
+ heavy_machinery_era_analog_two: "Montagebänder"
+ heavy_machinery_era_analog_two_desc: "Steam-driven rollers pave roads as overhead shafts fill factories. An age of grease and levers—brutally effective, always on the edge of breakdown."
  heavy_machinery_era_digital: "CNC Machines"
  heavy_machinery_era_digital_desc: "Servo motors mill to micrometer precision from CAD files. Digital accuracy births both rocket nozzles and iPhone shells in the same factories."
  heavy_machinery_era_web: "Industrial Robots"
@@ -317,6 +329,8 @@
  plastics_nylon_desc: "Parachute threads once saved soldiers, later caressed legs. The first fully synthetic polymer became a symbol of war and women's liberation."
  plastics_polyester: "Polyester"
  plastics_polyester_desc: "PET bottles replace glass, fleece jackets warm mountaineers. A material that democratized fashion—and flooded oceans with microfibers."
+ plastics_polypropylene: "Polypropylen"
+ plastics_polypropylene_desc: "..."
  oil_synthetic_one: "Bio-Ethanol"
  oil_synthetic_one_desc: "Corn cobs ferment into fuel for gas stations. Green gasoline fights oil dependency—but monocultures pit biofuels against food crops."
  oil_synthetic_two: "Bio-Diesel"
@@ -580,6 +594,7 @@
  pm_synthetic_oil_two_process: "Biodiesel"
 
  pm_heavy_machinery_textile: "Textile Machines"
+ pm_plastics_textile: "Plastic Textile Machines"
  pm_aluminum_two_process: "Smelting Recycling"
  pm_aluminum_packaging: "Aluminum Packaging"
  pm_plastic_packaging: "Plastic Packaging"
