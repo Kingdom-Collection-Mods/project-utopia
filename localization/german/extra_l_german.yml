@@ -1,4 +1,4 @@
-l_german:
+﻿l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -225,6 +225,11 @@ l_german:
  ut_humiliate_power_bloc_goal_desc: "Demütige einen rivalisierten Machtblockanführer um in ihn in dein Machtblock zu zwingen."
  ut_research_agreement: "Forschungsabkommen"
  ut_research_agreement_desc: "Gemeinsam voranschreiten."
+
+ 
+ ut_foreign_investment_agreement: "Mutual Investment Agreement (Block)"
+ ut_foreign_investment_agreement_action_name: "Mutual [concept_foreign_investment_rights] Agreement"
+ ut_foreign_investment_agreement_desc: "A [concept_diplomatic_pact] between two [Concept('concept_country','$concept_countries$')] to establish a Mutual [concept_foreign_investment_rights] Agreement."
 
 #power blocs
  principle_common_financial_policy_1: "Gemeinsame Finanzpolitik"
