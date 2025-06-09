@@ -1,4 +1,4 @@
-﻿l_german:
+l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -137,6 +137,11 @@
  ig_urbanists_only_icon: "@urbanists!"
  ig_variant_urbanists: "[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant]"
  interest_group_ig_urbanists_pol_str_mult: "$ig_variant_urbanists$ [concept_political_strength]"
+ interest_group_ig_urbanists_pol_str_mult_desc: "Ein Bonus oder Abzug auf die [concept_political_strength] der [concept_interest_group] „$ig_variant_urbanists$“ insgesamt."
+ interest_group_ig_urbanists_approval_add: "[concept_approval] ($ig_variant_urbanists$)"
+ interest_group_ig_urbanists_approval_add_desc: "Ein Bonus oder Abzug auf die [concept_approval] der [concept_interest_group] „$ig_variant_urbanists$“ insgesamt."
+ interest_group_ig_urbanists_pop_attraction_mult: "Pop-Anziehung ($ig_variant_urbanists$)"
+ interest_group_ig_urbanists_pop_attraction_mult_desc: "Ein Bonus oder Abzug darauf, wie sehr Pops von der [concept_interest_group] „$ig_variant_urbanists$“ angezogen werden."
  
  ideology_urbanist_liberalist: "Urban-liberale Ideologie"
  ideology_urbanist_power_base: "Weltbürgerlich"
@@ -337,13 +342,15 @@
  oil_synthetic_two_desc: "Algenkulturen produzieren schwefelfreien Treibstoff. Die Kreislaufwirtschaft träumt von CO2-neutralen LKW-Kolonnen - wenn nur die Energiebilanz stimmen würde."
 
 #Tech Mil
+ industry_harbor: "Industrie-Hafen"
+ industry_harbor_desc: "Industrie-Hafen..."
  heavy_industry_harbor: "Industrie-Hafen"
  heavy_industry_harbor_desc: "Gigantische Kräne laden Stahl und Kohle direkt von Güterzügen auf Schuten. Diese Hafencolosse mit ihren rauchenden Schlotten und rostigen Verladebrücken werden zum Herzschlag der Schwerindustrie, wo Frachter im Stundentakt Roheisen für die globale Produktion verschiffen."
  ultra_heavy_industry_harbor: "Kontainer-Hafen"
  ultra_heavy_industry_harbor_desc: "Containerschiffe so lang wie Wolkenkratzer liegen an automatisierten Terminals. Standardisierte Stahlboxen wandern robotergesteuert zwischen Schiff, Bahn und Lkw - ein Ballett der Logistik, das den Welthandel auf 20-Fuß-Maße trimmt."
  light_ships_rockets_base: "Hydrophone"
  light_ships_rockets_base_desc: "Unterwasser-Mikrofone lauschen nach Propellergeräuschen feindlicher U-Boote. Diese hydroakustischen Wächter spüren selbst leiseste Schraubenvibrationen auf und verwandeln die Tiefsee in ein überwachtes Labyrinth."
- light_ships_rockets_machinery: "Sonarsystem"
+ light_ships_rockets_machinery: "Raketenkorvetten"
  light_ships_rockets_machinery_desc: "Aktive Schallimpulse tasten den Meeresgrund ab wie Fledermausrufe. Moderne Sonarprozessoren unterscheiden Wracks von Tauchbooten und berechnen Echtzeit-Kollisionskurse für Wasserbomben."
  heavy_ships_rockets_base: "Feuerleitsysteme"
  heavy_ships_rockets_base_desc: "Mechanische Analogrechner verbinden Entfernungsmesser mit Geschützlafetten. Diese feuerspeienden Kyberneten berechnen ballistische Korrekturen für Wellengang und Windabdrift - ein Vorläufer des digitalen Schlachtfelds."
@@ -606,6 +613,8 @@
  pm_highway_no_trucks: "Keine Autobahn-LKW"
  pm_highway_trucks: "Autobahn-LKW"
 
+ pm_ut_industrial_port: "Industriehafen"
+
  pm_complex_consumer_goods_none: "Keine komplexen Konsumgüter"
  pm_complex_consumer_goods_electrical_process: "Fernseher"
  pm_complex_consumer_goods_computer_process: "Personale Computer"
@@ -676,6 +685,48 @@
  ut_high_tech_company_research: "Forschungsinstitut"
  pm_ut_high_speed_electric_trains: "Intercity"
  pm_ut_high_speed_electric_trains_principle_transport_3: "Intercity"
+
+ ut_commercial_goods_simple_company: "ElektroNord Gerätewerk"
+ ut_commercial_goods_complex_company: "ColorVision Ltd."
+ ut_mining_company: "Zentrummetall GmbH"
+ ut_electronics_company: "Microtech Group"
+ ut_mainframe_computer_company: "Systems Group"
+ ut_personal_computer_company: "Microtechnologies"
+ ut_heavy_machinery_company: "Krantechnik AG"
+ ut_software_company: "Software Solutions AG"
+ ut_synthetics_company: "Synthetics Ltd."
+
+ building_heavy_machinery_factory_throughput_add: "$building_heavy_machinery_factory$-[concept_throughput]"
+ building_heavy_machinery_factory_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_heavy_machinery_factory$."
+
+ building_plastic_factory_throughput_add: "$building_plastic_factory$-[concept_throughput]"
+ building_plastic_factory_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_plastic_factory$."
+
+ building_electronic_factory_throughput_add: "$building_electronic_factory$-[concept_throughput]"
+ building_electronic_factory_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_electronic_factory$."
+
+ building_bauxite_mining_throughput_add: "$building_bauxite_mining$-[concept_throughput]"
+ building_bauxite_mining_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_bauxite_mining$."
+
+ building_aluminum_factory_throughput_add: "$building_aluminum_factory$-[concept_throughput]"
+ building_aluminum_factory_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_aluminum_factory$."
+
+ building_rare_earths_mine_throughput_add: "$building_rare_earths_mine$-[concept_throughput]" 
+ building_rare_earths_mine_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_rare_earths_mine$."
+
+ building_computer_factory_throughput_add: "$building_computer_factory$-[concept_throughput]"
+ building_computer_factory_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_computer_factory$."
+
+ building_software_company_throughput_add: "$building_software_company$-[concept_throughput]"
+ building_software_company_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_software_company$."
+ 
+ building_commercial_factory_throughput_add: "$building_commercial_factory$-[concept_throughput]"
+ building_commercial_factory_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_commercial_factory$."
+ 
+ building_synthetic_oil_throughput_add: "$building_synthetic_oil$-[concept_throughput]"
+ building_synthetic_oil_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_synthetic_oil$."
+
+
 
  pm_automatic_power_looms_2: "Schützenlose Webmaschine"
  pm_assembly_lines_building_heavy_machinery_power: "Automatisierte Montagebänder"

@@ -14,6 +14,14 @@ goods_input_heavy_machinery_add={
 	}
 }
 
+building_heavy_machinery_factory_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
 
 goods_output_plastic_add={
 	decimals=1
@@ -31,6 +39,15 @@ goods_input_plastic_add={
 	}
 }
 
+building_plastic_factory_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
 goods_output_electronics_add={
 	decimals=1
 	color=good
@@ -42,6 +59,15 @@ goods_output_electronics_add={
 goods_input_electronics_add={
 	decimals=1
 	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+building_electronic_factory_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
 	game_data={
 		ai_value=0
 	}
@@ -64,6 +90,15 @@ goods_input_bauxite_add={
 	}
 }
 
+building_bauxite_mining_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
 
 goods_output_aluminum_add={
 	decimals=1
@@ -76,6 +111,15 @@ goods_output_aluminum_add={
 goods_input_aluminum_add={
 	decimals=1
 	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+building_aluminum_factory_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
 	game_data={
 		ai_value=0
 	}
@@ -97,6 +141,14 @@ goods_input_rare_earths_add={
 	}
 }
 
+building_rare_earths_mine_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
 
 goods_output_computers_add={
 	decimals=1
@@ -109,6 +161,15 @@ goods_output_computers_add={
 goods_input_computers_add={
 	decimals=1
 	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+building_computer_factory_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
 	game_data={
 		ai_value=0
 	}
@@ -130,6 +191,14 @@ goods_input_software_add={
 	}
 }
 
+building_software_company_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
 
 goods_output_internet_add={
 	decimals=1
@@ -146,6 +215,7 @@ goods_input_internet_add={
 		ai_value=0
 	}
 }
+
 
 goods_output_trucks_add={
 	decimals=1
@@ -188,6 +258,15 @@ goods_input_consumer_goods_add={
 	}
 }
 
+building_commercial_factory_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
 goods_output_software_add={
 	decimals=1
 	color=good
@@ -204,7 +283,23 @@ goods_input_software_add={
 	}
 }
 
+building_software_company_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
 
+building_synthetic_oil_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
 ####
 
 
@@ -274,6 +369,24 @@ interest_group_ig_urbanists_pol_str_mult={
 	decimals=0
 	color=neutral
 	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+interest_group_ig_urbanists_pop_attraction_mult={
+	decimals=0
+	color=neutral
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+
+interest_group_ig_urbanists_approval_add={
+	decimals=1
+	color=good
 	game_data={
 		ai_value=0
 	}

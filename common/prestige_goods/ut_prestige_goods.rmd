@@ -1,0 +1,10 @@
+﻿#generic goods
+ ut_commercial_goods_simple_company: "ElektroNord Gerätewerk" fridge
+ ut_commercial_goods_complex_company: "ColorVision Ltd." color_television
+ ut_mining_company: "Zentrummetall GmbH" 
+ ut_electronics_company: "Microtech Group" Special semiconductors
+ ut_mainframe_computer_company: "Systems Group" mainframe_computer
+ ut_personal_computer_company: "Microtechnologies" personal_computers
+ ut_heavy_machinery_company: "Krantechnik AG" tower_cranes
+ ut_software_company: "Software Solutions AG" erp software 
+ ut_synthetics_company: "Synthetics Ltd." 

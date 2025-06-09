@@ -1,5 +1,5 @@
 ﻿ut_company_research = {
-	icon = "gfx/interface/icons/company_icons/basic_steel.dds"
+	icon = "gfx/interface/icons/company_icons/ut_company_research.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
 	building_types = {
@@ -28,7 +28,7 @@
 }
 
 ut_high_tech_company_research = {
-	icon = "gfx/interface/icons/company_icons/basic_steel.dds"
+	icon = "gfx/interface/icons/company_icons/ut_high_tech_company_research.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
 	building_types = {
@@ -52,5 +52,246 @@ ut_high_tech_company_research = {
 		state_lower_strata_expected_sol_add = 2
 		state_middle_strata_expected_sol_add = 2
 		state_upper_strata_expected_sol_add = 2
+	}	
+}
+
+#Kühlschrank
+ut_commercial_goods_simple_company = {
+	icon = "gfx/interface/icons/company_icons/ut_commercial_goods_simple_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	building_types = {
+		building_commercial_factory
+		building_food_industry
+	}
+
+	possible = { 
+		has_technology_researched = consumer_goods_main_analog
+		has_technology_researched = electronics
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_commercial_factory
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_commercial_factory_throughput_add = 0.2
+		state_loyalists_from_political_movements_mult = 0.1
+	}	
+}
+
+#Farbfernsehr
+ut_commercial_goods_complex_company = {
+	icon = "gfx/interface/icons/company_icons/ut_commercial_goods_complex_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	building_types = {
+		building_commercial_factory
+		building_electronic_factory
+	}
+
+	possible = { 
+		has_technology_researched = consumer_goods_main_entertainment_electrical
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_commercial_factory
+				level >= 10
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		interest_group_ig_urbanists_pop_attraction_mult = 0.1
+		building_commercial_factory_throughput_add = 0.1
+	}	
+}
+
+ut_mining_company = {
+	icon = "gfx/interface/icons/company_icons/ut_mining_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	building_types = {
+		building_aluminum_factory
+		building_rare_earths_mine
+	}
+
+	possible = { 
+		has_technology_researched = aluminum_base
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_aluminum_factory
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_aluminum_factory_throughput_add = 0.1
+		building_rare_earths_mine_throughput_add = 0.1
+		country_resource_discovery_chance_mult = 0.3
+	}	
+}
+
+#Semi conductor factory
+ut_electronics_company = {
+	icon = "gfx/interface/icons/company_icons/ut_electronics_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	building_types = {
+		building_electronic_factory
+	}
+
+	possible = { 
+		has_technology_researched = computers
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_electronic_factory
+				level >= 10
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_electronic_factory_throughput_add = 0.1
+		country_weekly_innovation_max_add = 20
+	}	
+}
+
+
+ut_mainframe_computer_company = {
+	icon = "gfx/interface/icons/company_icons/ut_mainframe_computer_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	building_types = {
+		building_computer_factory
+	}
+
+	possible = { 
+		has_technology_researched = electronics
+		has_technology_researched = rare_earths_mining_era_analog
+		OR = {
+			has_technology_researched = heavy_machinery_era_analog_two
+			has_technology_researched = electronics_motors_production
+			has_technology_researched = consumer_goods_main_house_hold_electrical
+		}
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_computer_factory
+				level >= 10
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		country_weekly_innovation_max_add = 20
+		building_computer_factory_throughput_add = 0.1
+	}	
+}
+
+ut_personal_computer_company = {
+	icon = "gfx/interface/icons/company_icons/ut_personal_computer_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	building_types = {
+		building_computer_factory
+		building_commercial_factory
+	}
+
+	possible = { 
+		has_technology_researched = computers
+		OR = {
+			has_technology_researched = rare_earths_mining_era_digital
+			has_technology_researched = software
+		}
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_computer_factory
+				level >= 10
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_computer_factory_throughput_add = 0.1
+		building_urban_center_throughput_add = 0.1
+	}	
+}
+
+ut_heavy_machinery_company = {
+	icon = "gfx/interface/icons/company_icons/ut_heavy_machinery_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	building_types = {
+		building_heavy_machinery_factory
+		building_steel_mills
+	}
+
+	possible = { 
+		has_technology_researched = heavy_machinery_era_analog_two
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_heavy_machinery_factory
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_heavy_machinery_factory_throughput_add = 0.1
+		building_construction_sector_throughput_add = 0.1
+	}	
+}
+
+ut_software_company = {
+	icon = "gfx/interface/icons/company_icons/ut_software_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	building_types = {
+		building_software_company
+	}
+
+	possible = { 
+		has_technology_researched = software
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_software_company
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_software_company_throughput_add = 0.1
+		interest_group_ig_urbanists_approval_add = 1
+	}	
+}
+
+ut_synthetics_company = {
+	icon = "gfx/interface/icons/company_icons/ut_synthetics_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	building_types = {
+		building_synthetics_plants
+		building_synthetic_oil
+	}
+
+	possible = { 
+		has_technology_researched = software
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_synthetics_plants
+					is_building_type = building_synthetic_oil
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_synthetics_plants_throughput_add = 0.1
+		building_synthetic_oil_throughput_add = 0.2
 	}	
 }

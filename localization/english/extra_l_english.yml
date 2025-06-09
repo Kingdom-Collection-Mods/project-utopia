@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -337,6 +337,8 @@
  oil_synthetic_two_desc: "Algae cultures produce sulfur-free fuel. The circular economy dreams of CO₂-neutral truck fleets—if only the energy balance adds up."
 
 # Tech Mil
+ industry_harbor: "Industrie-Hafen"
+ industry_harbor_desc: "Industrie-Hafen..."
  heavy_industry_harbor: "Industrial Harbor"
  heavy_industry_harbor_desc: "Gigantic cranes load steel and coal directly from freight trains onto barges. These harbor colossi, with their smoking stacks and rusty loading bridges, become the heartbeat of heavy industry, where freighters ship raw iron for global production by the hour."
  ultra_heavy_industry_harbor: "Container Harbor"
@@ -606,6 +608,8 @@
  pm_highway_no_trucks: "No Highway Trucks"
  pm_highway_trucks: "Highway Trucks"
 
+ pm_ut_industrial_port: "Industrial Harbor"
+
  pm_complex_consumer_goods_none: "No Complex Consumer Goods"
  pm_complex_consumer_goods_electrical_process: "Televisions"
  pm_complex_consumer_goods_computer_process: "Personal Computers"
@@ -676,6 +680,17 @@
  ut_high_tech_company_research: "High-Tech Research Institute"
  pm_ut_high_speed_electric_trains: "Intercity"
  pm_ut_high_speed_electric_trains_principle_transport_3: "Intercity"
+
+ ut_commercial_goods_simple_company: "Consumer Goods Company – Basic"
+ ut_commercial_goods_complex_company: "Consumer Goods Company – Advanced"
+ ut_mining_company: "Mining Company"
+ ut_electronics_company: "Electronics Company"
+ ut_mainframe_computer_company: "Mainframe Computer Company"
+ ut_personal_computer_company: "Personal Computer Company"
+ ut_heavy_machinery_company: "Heavy Machinery Company"
+ ut_software_company: "Software Company"
+ ut_synthetics_company: "Synthetics Company"
+
 
  pm_automatic_power_looms_2: "Schützenlose Webmaschine"
  pm_assembly_lines_building_heavy_machinery_power: "Automatisierte Montagebänder"
