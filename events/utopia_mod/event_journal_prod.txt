@@ -131,7 +131,7 @@ utopia_journal_prod.3 = {
 
 #Fail Consumer Goods
 utopia_journal_prod.4 = {
-	title = utopia_journal_prod.cnc_machines_je.fail 
+	title = utopia_journal_prod.consumer_goods_simple_je.fail
 	type = country_event
 	event_image = { video = "factory_precision" }
 	duration = 3
@@ -141,14 +141,14 @@ utopia_journal_prod.4 = {
 			limit = {
 				is_incorporated = yes
 			}
-			save_scope_as = cnc_machines_je_state
+			save_scope_as = commercial_factory_state
 		}
 	}
 	
 	option = {
 		name = utopia.progress_a
 		default_option = yes
-		scope:cnc_machines_je_state = {
+		scope:commercial_factory_state = {
 			create_building = {
 				building = building_commercial_factory
  				level=1

@@ -1,4 +1,4 @@
-l_german:
+﻿l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -39,6 +39,7 @@ l_german:
  utopia_journal_prod.computers_je: "Computer"
  utopia_journal_prod.software_je: "Software"
  utopia_journal_prod.consumer_goods_simple_je: "Einfache Konsumgüter"
+ utopia_journal_prod.consumer_goods_simple_je.fail: "Simple Consumer Goods Failed"
  utopia_journal_prod.consumer_goods_complex_je: "Komplexe Konsumgüter"
 
  je_group_utopia: "Utopia"
@@ -70,8 +71,8 @@ l_german:
  je_urbanist_ig_reason: "Urbanebewegung..."
 
  je_ut_new_dawn: "New Dawn"
- je_ut_new_dawn_reason: "New political waves hit our nation, we must decide on a path."
- je_ut_new_dawn_condition_tt: "Moderate, Communisten oder Faschisten haben 100% erreicht."
+ je_ut_new_dawn_reason: "New political waves hit our nation, we must decide on a path.\nEine wichtige Kursrichtung giben die Interresensgruppen in der Regierung vor:\n- Gewerkschafter unterstützen die Kommunisten\n- Industrialisten und Junker die Faschisten. \n- Alle weiteren Interresensgruppen sind Moderate \n - Unzufriedene Moderate Interresensgruppen unterstützen Kommunisten/Faschisten \n - Die Charaktereigenschaft eines Anführers überschreibt die Ausrichtung der Interresensgruppe"
+ je_ut_new_dawn_condition_tt: "Moderate, Communisten oder Faschisten haben 100% erreicht"
  je_ut_new_dawn_effect_tt: "New Dawn Teil 2"
  new_dawn_ongoing: "New Dawn"
 
@@ -84,15 +85,17 @@ l_german:
  ut_nd_communist_progress_from_legitimacy: "[concept_government] [concept_legitimacy]"
  ut_nd_communist_progress_from_movements: "[concept_political_movement_support] of #bold Anarchist, Radical, Communist, and Vanguardist#! [Concept('concept_political_movement','$concept_political_movements$')]"
  ut_nd_communist_progress_from_effects: "events and other effects"
+ ut_new_dawn_communist_status: "Kommunistische Ideen verbreiten sich"
 
  ut_new_dawn_moderate_bar: "Moderate"
  ut_new_dawn_moderate_bar_desc: "Moderate progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('divided_monarchists_upper_bound')])"
- ut_nd_moderate_progress_from_characters: "combined [concept_popularity] of #bold Moderate (non-extremist)#! characters"
+ ut_nd_moderate_progress_from_characters: "kombinierte [concept_popularity] von #bold Moderate (nicht-extremistische)#! Charaktere"
  ut_nd_moderate_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with #bold Moderate#! leaders"
  ut_nd_moderate_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_monarchy').GetName]"
  ut_nd_moderate_progress_from_legitimacy: "[concept_government] [concept_legitimacy]"
  ut_nd_moderate_progress_from_movements: "[concept_political_movement_support] of #bold Moderate#! [Concept('concept_political_movement','$concept_political_movements$')]"
  ut_nd_moderate_progress_from_effects: "events and other effects"
+ ut_new_dawn_moderate_status: "Moderaten Ideen verbreiten sich"
 
  ut_new_dawn_fascist_bar: "Fascists"
  ut_new_dawn_fascist_bar_desc: "Fascist progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('divided_monarchists_upper_bound')])"
@@ -102,6 +105,7 @@ l_german:
  ut_nd_fascist_progress_from_legitimacy: "[concept_government] [concept_legitimacy]"
  ut_nd_fascist_progress_from_movements: "[concept_political_movement_support] of #bold Fascist#! [Concept('concept_political_movement','$concept_political_movements$')]"
  ut_nd_fascist_progress_from_effects: "events and other effects"
+ ut_new_dawn_fascist_status: "Faschistische Ideen verbreiten sich"
 
  je_ai_radio_researched: "Radio Researched"
  je_ai_radio_researched_reason: "REPLACE_ME"

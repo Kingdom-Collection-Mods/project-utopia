@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -39,6 +39,7 @@ l_english:
  utopia_journal_prod.computers_je: "Computers"
  utopia_journal_prod.software_je: "Software"
  utopia_journal_prod.consumer_goods_simple_je: "Simple Consumer Goods"
+ utopia_journal_prod.consumer_goods_simple_je.fail: "Simple Consumer Goods Failed"
  utopia_journal_prod.consumer_goods_complex_je: "Complex Consumer Goods"
 
  je_group_utopia: "Utopia"
@@ -75,6 +76,10 @@ l_english:
  je_ut_new_dawn_effect_tt: "New Dawn Part 2"
  new_dawn_ongoing: "New Dawn"
 
+ event_new_dawn.1.t: "New Dawn"
+ event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
+ event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. We must navigate these waters carefully, balancing the demands of the people with the needs of the state. The choices we make now will shape the future of our nation for generations to come."
+
  ut_new_dawn_status: "New Dawn"
  ut_new_dawn_communist_bar: "Communist"
  ut_new_dawn_communist_bar_desc: "Communist progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('divided_monarchists_upper_bound')])"
@@ -102,6 +107,7 @@ l_english:
  ut_nd_fascist_progress_from_legitimacy: "[concept_government] [concept_legitimacy]"
  ut_nd_fascist_progress_from_movements: "[concept_political_movement_support] of #bold Fascist#! [Concept('concept_political_movement','$concept_political_movements$')]"
  ut_nd_fascist_progress_from_effects: "events and other effects"
+ ut_new_dawn_fascist_status: "Fas"
 
  je_ai_radio_researched: "REPLACE_ME"
  je_ai_radio_researched_reason: "REPLACE_ME"

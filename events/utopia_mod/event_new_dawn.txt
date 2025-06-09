@@ -9,6 +9,7 @@ event_new_dawn.1 = {
 	}
 	
 	trigger = {
+		NOT = { has_variable = event_new_dawn_started }
 	}
 
 	duration = 3
@@ -19,10 +20,13 @@ event_new_dawn.1 = {
 
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
-	title = metro.1.t
-	desc = metro.1.d
-	flavor = metro.1.f
-
+	title = event_new_dawn.1.t
+	desc = event_new_dawn.1.d
+	flavor = event_new_dawn.1.f
+	
+	immediate = {
+		set_variable = event_new_dawn_started
+	}
 
 	option = {
 		name = metro.1.a
