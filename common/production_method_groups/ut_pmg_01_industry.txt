@@ -286,6 +286,7 @@ pmg_aeroplanes = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_aeroplane_production
+		pm_ut_jetplane_production
 	}
 }
 
@@ -294,6 +295,7 @@ pmg_tanks = {
 	production_methods = {
 		pm_no_tank_production
 		pm_tank_production
+		pm_ut_modern_tank_production
 	}
 }
 

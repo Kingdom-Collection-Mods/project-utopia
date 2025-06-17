@@ -1,4 +1,4 @@
-﻿heavy_machinery = {
+heavy_machinery = {
 	texture = "gfx/interface/icons/goods_icons/heavy_machinery.dds"
 	cost = 150
 	category = industrial

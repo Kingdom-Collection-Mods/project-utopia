@@ -1,4 +1,4 @@
-﻿###
+###
 ### Keep "unit tiers" per group in ascending order; the system will determine the default unit type for a country
 ### by the last defined unit type that it can build
 ###
@@ -313,7 +313,7 @@ combat_unit_type_rocket_artillery = {
     
     
     upkeep_modifier = {
-        goods_input_tanks_add = 4
+        goods_input_tanks_add = 3
         goods_input_artillery_add = 5
 		goods_input_ammunition_add = 5
         goods_input_radios_add = 1
