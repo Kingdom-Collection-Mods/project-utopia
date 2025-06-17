@@ -48,10 +48,15 @@
 
 	status_desc = {
 		first_valid = {
-			triggered_desc = { # Cementing the Rightful Dynasty is active
+			triggered_desc = { # In the lead and on the throne
 				desc = ut_new_dawn_moderate_status
 				trigger = {
-					has_journal_entry = je_cement_the_rightful_dynasty
+					AND = {
+						scope:journal_entry = { 
+							"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+							"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						}
+					}
 				}
 			}
 			triggered_desc = { # In the lead and on the throne
@@ -178,6 +183,78 @@
 			# 10 = french_pretenders_pulse.16
 			# 10 = french_pretenders_pulse.17
 			# 10 = french_pretenders_pulse.18
+		}
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}
+
+je_ut_new_dawn_democratic = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	group = je_group_utopia
+	
+
+	is_shown_when_inactive = {
+		is_player = yes
+		has_technology_researched = mass_propaganda
+	}
+
+	possible = {
+		has_variable = new_dawn_democrat_var
+	}
+
+	modifiers_while_active = {
+		new_dawn_ongoing
+	}
+
+	immediate = {
+		ut_set_new_dawn_variables = yes
+		# random_law = {
+		# 	limit = { type = law_type:law_monarchy }
+		# 	save_scope_as = monarchy_scope
+		# }
+	}
+	
+	scripted_button = je_ut_new_dawn_democratic_base
+	scripted_button = je_ut_new_dawn_democratic_cultural_values
+	scripted_button = je_ut_new_dawn_democratic_power_bloc
+
+	complete = {
+		custom_tooltip = {
+			text = je_ut_new_dawn_condition_tt
+			 #Can only ever complete upon finishing the Cement the Rightful Dynasty journal entry.
+		}
+		has_variable = je_ut_new_dawn_democratic_base_done
+		has_variable = je_ut_new_dawn_democratic_cultural_values_done
+		has_variable = je_ut_new_dawn_democratic_power_bloc_done
+	}
+
+	on_complete = {
+		custom_tooltip = {
+			text = je_ut_new_dawn_effect_tt
+			ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+		}
+	}
+
+	status_desc = {
+	}
+
+	on_weekly_pulse = {
+		events = {
+			#event_new_dawn.1
+		}
+		effect = {
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+		}
+		random_events = {
+			400 = 0
 		}
 	}
 
