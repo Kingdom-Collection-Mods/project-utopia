@@ -5,6 +5,9 @@
 	building_types = {
 		building_explosives_factory
 		building_tooling_workshops
+	}
+
+	extension_building_types = {
 		building_chemical_plants
 	}
 
@@ -33,6 +36,10 @@ ut_high_tech_company_research = {
 	
 	building_types = {
 		building_electronic_factory
+	}
+	
+	extension_building_types = {
+		building_power_plant
 	}
 
 	possible = { 
@@ -65,6 +72,10 @@ ut_commercial_goods_simple_company = {
 		building_food_industry
 	}
 
+	extension_building_types = {
+		building_wheat_farm
+	}
+	
 	possible = { 
 		has_technology_researched = consumer_goods_main_analog
 		has_technology_researched = electronics
@@ -91,6 +102,10 @@ ut_commercial_goods_complex_company = {
 		building_commercial_factory
 		building_electronic_factory
 	}
+	
+	extension_building_types = {
+		building_motor_industry
+	}
 
 	possible = { 
 		has_technology_researched = consumer_goods_main_entertainment_electrical
@@ -115,6 +130,10 @@ ut_mining_company = {
 	building_types = {
 		building_aluminum_factory
 		building_rare_earths_mine
+	}
+	
+	extension_building_types = {
+		building_bauxite_mine
 	}
 
 	possible = { 
@@ -142,6 +161,10 @@ ut_electronics_company = {
 	building_types = {
 		building_electronic_factory
 	}
+	
+	extension_building_types = {
+		building_computer_factory
+	}
 
 	possible = { 
 		has_technology_researched = computers
@@ -166,6 +189,10 @@ ut_mainframe_computer_company = {
 	
 	building_types = {
 		building_computer_factory
+	}
+	
+	extension_building_types = {
+		building_software_company
 	}
 
 	possible = { 
@@ -198,6 +225,10 @@ ut_personal_computer_company = {
 		building_computer_factory
 		building_commercial_factory
 	}
+	
+	extension_building_types = {
+		building_software_company
+	}
 
 	possible = { 
 		has_technology_researched = computers
@@ -227,6 +258,10 @@ ut_heavy_machinery_company = {
 		building_heavy_machinery_factory
 		building_steel_mills
 	}
+	
+	extension_building_types = {
+		building_electronic_factory
+	}
 
 	possible = { 
 		has_technology_researched = heavy_machinery_era_analog_two
@@ -252,6 +287,10 @@ ut_software_company = {
 		building_software_company
 	}
 
+	extension_building_types = {
+		building_computer_factory
+	}
+
 	possible = { 
 		has_technology_researched = software
 		any_scope_state = {
@@ -275,6 +314,11 @@ ut_synthetics_company = {
 	building_types = {
 		building_synthetics_plants
 		building_synthetic_oil
+	}
+	
+	extension_building_types = {
+		building_wheat_farm
+		building_sugar_plantation
 	}
 
 	possible = { 

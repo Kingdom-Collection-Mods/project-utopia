@@ -1,4 +1,4 @@
-﻿
+
 pm_precision_tools_heavy_machinery = {
 	texture = "gfx/interface/icons/production_method_icons/radios.dds"
 		
@@ -465,10 +465,12 @@ pm_truck_production = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			# input goods
-			goods_output_engines_add = -20
-			goods_input_rubber_add = 10
-			goods_input_oil_add = 10
+			# input goods			
+			goods_input_engines_add = 20
+			goods_input_rubber_add = 5
+			goods_input_oil_add = 5
+			goods_input_electricity_add = 5
+			goods_input_aluminum_add = 5
 
 			# output goods
 			goods_output_trucks_add = 40
@@ -498,20 +500,21 @@ pm_modern_automobiles = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_output_engines_add = -40
-			goods_input_rubber_add = 20
-			goods_input_oil_add = 10
-			goods_input_electricity_add = 10
+			goods_input_engines_add = 20
+			goods_input_rubber_add = 5
+			goods_input_oil_add = 5
+			goods_input_electricity_add = 5
+			goods_input_aluminum_add = 5
 
 			# output goods
 			goods_output_automobiles_add = 70
 		}
 
 		level_scaled = {
-			# employment
-			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 500
-			building_employment_service_workers_add = 1500
+			building_employment_shopkeepers_add = 500
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 1000
 		}
 	}
 }

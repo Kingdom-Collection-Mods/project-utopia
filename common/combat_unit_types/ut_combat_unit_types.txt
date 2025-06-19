@@ -8,12 +8,7 @@
 ### Infantry
 combat_unit_type_mechanized_infantry = {
     group = combat_unit_group_infantry
-
-    can_build_conscript = {
-        NOT = {
-            has_law = law_type:law_peasant_levies
-        }
-    }
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_small_arms_add = 3
@@ -22,7 +17,7 @@ combat_unit_type_mechanized_infantry = {
         goods_input_radios_add = 1
         goods_input_tanks_add = 1
     }
-    
+
     battle_modifier = {
         unit_offense_add = 50
         unit_defense_add = 60
@@ -33,28 +28,28 @@ combat_unit_type_mechanized_infantry = {
 	unlocking_technologies = { mobile_armor }
 
     combat_unit_image = {
-        trigger = { 
+        trigger = {
             has_culture_graphics = east_asian
         }
         texture = "gfx/unit_illustrations/infantry_east_asian_mechanized.dds"
     }
 
     combat_unit_image = {
-        trigger = { 
+        trigger = {
             has_culture_graphics = south_asian
         }
         texture = "gfx/unit_illustrations/infantry_south_asian_mechanized.dds"
     }
 
     combat_unit_image = {
-        trigger = { 
+        trigger = {
             has_culture_graphics = african
         }
         texture = "gfx/unit_illustrations/infantry_african_mechanized.dds"
     }
 
     combat_unit_image = {
-        trigger = { 
+        trigger = {
             has_culture_graphics = arabic
         }
         texture = "gfx/unit_illustrations/infantry_arabic_mechanized.dds"
@@ -72,6 +67,7 @@ combat_unit_type_mechanized_infantry = {
 
 combat_unit_type_armored_infantry = {
     group = combat_unit_group_infantry
+	max_manpower = 1000
 
     can_build_conscript = {
         NOT = {
@@ -108,6 +104,7 @@ combat_unit_type_armored_infantry = {
 
 combat_unit_type_task_force_infantry = {
     group = combat_unit_group_infantry
+	max_manpower = 1000
 
     can_build = {
         has_law = law_type:law_task_forces
@@ -150,13 +147,8 @@ combat_unit_type_task_force_infantry = {
 
 combat_unit_type_siege_artillery = {
     group = combat_unit_group_artillery
+	max_manpower = 1000
 
-    can_build_conscript = {
-        NOT = {
-            has_law = law_type:law_peasant_levies
-        }
-    }
-    
     upkeep_modifier = {
         goods_input_artillery_add = 4
         goods_input_ammunition_add = 4
@@ -179,28 +171,28 @@ combat_unit_type_siege_artillery = {
 	unlocking_technologies = { defense_in_depth }
 
     combat_unit_image = {
-        trigger = { 
+        trigger = {
             has_culture_graphics = east_asian
         }
         texture = "gfx/unit_illustrations/artillery_east_asian_siege.dds"
     }
 
     combat_unit_image = {
-        trigger = { 
+        trigger = {
             has_culture_graphics = south_asian
         }
         texture = "gfx/unit_illustrations/artillery_south_asian_siege.dds"
     }
 
     combat_unit_image = {
-        trigger = { 
+        trigger = {
             has_culture_graphics = african
         }
         texture = "gfx/unit_illustrations/artillery_african_siege.dds"
     }
 
     combat_unit_image = {
-        trigger = { 
+        trigger = {
             has_culture_graphics = arabic
         }
         texture = "gfx/unit_illustrations/artillery_arabic_siege.dds"
@@ -218,13 +210,8 @@ combat_unit_type_siege_artillery = {
 
 combat_unit_type_heavy_tank = {
     group = combat_unit_group_artillery
+	max_manpower = 1000
 
-    can_build_conscript = {
-        NOT = {
-            has_law = law_type:law_peasant_levies
-        }
-    }
-    
     upkeep_modifier = {
         goods_input_tanks_add = 3
         goods_input_artillery_add = 4
@@ -304,6 +291,7 @@ combat_unit_type_motorized_artillery = {
 
 combat_unit_type_rocket_artillery = {
     group = combat_unit_group_artillery
+	max_manpower = 1000
 
     can_build_conscript = {
         NOT = {
@@ -345,13 +333,8 @@ combat_unit_type_rocket_artillery = {
 
 combat_unit_type_lancers = {
     group = combat_unit_group_cavalry
-	
-    can_build_conscript = {
-        NOT = {
-            has_law = law_type:law_peasant_levies
-        }
-    }
-    
+	max_manpower = 1000
+
     upkeep_modifier = {
         goods_input_grain_add = 2
         goods_input_small_arms_add = 2
@@ -368,30 +351,30 @@ combat_unit_type_lancers = {
     }
 
 	unlocking_technologies = { napoleonic_warfare }
-    
+
     combat_unit_image = {
-        trigger = { 
+        trigger = {
             has_culture_graphics = east_asian
         }
         texture = "gfx/unit_illustrations/cavalry_east_asian_lancer.dds"
     }
 
     combat_unit_image = {
-        trigger = { 
+        trigger = {
             has_culture_graphics = south_asian
         }
         texture = "gfx/unit_illustrations/cavalry_south_asian_lancer.dds"
     }
 
     combat_unit_image = {
-        trigger = { 
+        trigger = {
             has_culture_graphics = african
         }
         texture = "gfx/unit_illustrations/cavalry_african_lancer.dds"
     }
 
     combat_unit_image = {
-        trigger = { 
+        trigger = {
             has_culture_graphics = arabic
         }
         texture = "gfx/unit_illustrations/cavalry_arabic_lancer.dds"
@@ -412,13 +395,8 @@ combat_unit_type_lancers = {
 
 combat_unit_type_light_tanks = {
     group = combat_unit_group_cavalry
+	max_manpower = 1000
 
-    can_build_conscript = {
-        NOT = {
-            has_law = law_type:law_peasant_levies
-        }
-    }
-    
     upkeep_modifier = {
         goods_input_tanks_add = 2
         goods_input_artillery_add = 2
@@ -452,6 +430,7 @@ combat_unit_type_light_tanks = {
 
 combat_unit_type_support_systems = {
     group = combat_unit_group_cavalry
+	max_manpower = 1000
 
     can_build_conscript = {
         NOT = {
@@ -500,6 +479,7 @@ combat_unit_type_support_systems = {
 
 combat_unit_type_torpedo_boat = {
     group = combat_unit_group_light_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 2
@@ -509,6 +489,7 @@ combat_unit_type_torpedo_boat = {
     battle_modifier = {
         unit_offense_add = 40
         unit_defense_add = 30
+        unit_blockade_add = 30
         unit_morale_loss_add = 8
         unit_convoy_raiding_mult = 0.25
     }
@@ -531,6 +512,7 @@ combat_unit_type_torpedo_boat = {
 
 combat_unit_type_scout_cruiser = {
     group = combat_unit_group_light_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 3
@@ -542,6 +524,7 @@ combat_unit_type_scout_cruiser = {
     battle_modifier = {
         unit_offense_add = 50
         unit_defense_add = 50
+        unit_blockade_add = 40
         unit_morale_loss_add = 6
 		unit_convoy_defense_mult = 0.5
     }
@@ -563,6 +546,7 @@ combat_unit_type_scout_cruiser = {
 
 combat_unit_type_missile_corvettes = {
     group = combat_unit_group_light_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 2
@@ -572,6 +556,7 @@ combat_unit_type_missile_corvettes = {
     battle_modifier = {
         unit_offense_add = 40
         unit_defense_add = 30
+        unit_blockade_add = 35
         unit_morale_loss_add = 8
         unit_convoy_raiding_mult = 0.25
     }
@@ -593,6 +578,7 @@ combat_unit_type_missile_corvettes = {
 
 combat_unit_type_surveillance_corvettes = {
     group = combat_unit_group_light_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 2
@@ -602,6 +588,7 @@ combat_unit_type_surveillance_corvettes = {
     battle_modifier = {
         unit_offense_add = 40
         unit_defense_add = 30
+        unit_blockade_add = 45
         unit_morale_loss_add = 8
         unit_convoy_raiding_mult = 0.25
     }
@@ -625,6 +612,7 @@ combat_unit_type_surveillance_corvettes = {
 
 combat_unit_type_battleship = {
     group = combat_unit_group_capital_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 8
@@ -636,8 +624,9 @@ combat_unit_type_battleship = {
     battle_modifier = {
         unit_offense_add = 100
         unit_defense_add = 100
+        unit_blockade_add = 500
         unit_morale_loss_add = 4
-		unit_convoy_raiding_mult = -0.5
+		unit_convoy_raiding_mult = -0.9
     }
 
     formation_modifier = {
@@ -657,6 +646,7 @@ combat_unit_type_battleship = {
 
 combat_unit_type_capital_battleship = {
     group = combat_unit_group_capital_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 8
@@ -669,7 +659,7 @@ combat_unit_type_capital_battleship = {
         unit_offense_add = 100
         unit_defense_add = 100
         unit_morale_loss_add = 4
-		unit_convoy_raiding_mult = -0.5
+		unit_convoy_raiding_mult = -0.6
     }
 
     formation_modifier = {
@@ -687,6 +677,7 @@ combat_unit_type_capital_battleship = {
 
 combat_unit_type_submarine = {
     group = combat_unit_group_support_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 2
@@ -698,6 +689,7 @@ combat_unit_type_submarine = {
     battle_modifier = {
         unit_offense_add = 60
         unit_defense_add = 20
+        unit_blockade_add = 10
         unit_morale_loss_add = 8
         unit_convoy_raiding_mult = 1.0
     }
@@ -719,6 +711,7 @@ combat_unit_type_submarine = {
 
 combat_unit_type_carrier = {
     group = combat_unit_group_support_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 8
@@ -730,6 +723,7 @@ combat_unit_type_carrier = {
     battle_modifier = {
         unit_offense_add = 120
         unit_defense_add = 60
+        unit_blockade_add = 500
         unit_morale_loss_add = 6
 		unit_convoy_defense_mult = 0.25
     }
@@ -751,6 +745,7 @@ combat_unit_type_carrier = {
 
 combat_unit_type_modern_submarine = {
     group = combat_unit_group_support_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 2
@@ -779,6 +774,7 @@ combat_unit_type_modern_submarine = {
 
 combat_unit_type_super_carrier = {
     group = combat_unit_group_support_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 8
