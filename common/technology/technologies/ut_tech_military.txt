@@ -1,4 +1,4 @@
-# Harbor
+﻿# Harbor
 industry_harbor = {
 
 	era = era_5
@@ -10,7 +10,7 @@ industry_harbor = {
 	}
 	
 	modifier = {
-		state_building_port_max_level_add = 4
+		#state_building_port_max_level_add = 4
     }
 	
 	ai_weight = {
@@ -47,7 +47,7 @@ ultra_heavy_industry_harbor = {
 	}
 	
 	modifier = {
-		state_building_port_max_level_add = 4
+		#state_building_port_max_level_add = 4
     }
 
 	ai_weight = {

@@ -1,4 +1,4 @@
-ideology_anti_slavery_movement = {
+﻿ideology_anti_slavery_movement = {
 	icon = "gfx/interface/icons/ideology_icons/abolitionist.dds"
 
 	lawgroup_slavery = {

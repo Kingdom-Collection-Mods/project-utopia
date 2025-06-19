@@ -25,7 +25,6 @@ intercity_transport = {
 	
 	modifier = {
 		state_infrastructure_from_population_max_add = 20
-		market_land_trade_capacity_add = 20
 	}
 
 	unlocking_technologies = {	
@@ -62,7 +61,6 @@ highspeed_transport = {
 		
 	modifier = {
 		state_infrastructure_from_population_max_add = 20
-		market_land_trade_capacity_add = 20
 	}
 
 	unlocking_technologies = {	
@@ -87,7 +85,6 @@ early_civil_aviation = {
 	}
 		
 	modifier = {
-		market_land_trade_capacity_add = 20
 		state_migration_pull_mult = 0.05
 	}
 
@@ -133,7 +130,6 @@ modern_civil_aviation = {
 	}
 		
 	modifier = {
-		market_land_trade_capacity_add = 20
 		state_migration_pull_mult = 0.05
 	}
 

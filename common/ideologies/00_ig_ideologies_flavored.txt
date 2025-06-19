@@ -1,4 +1,4 @@
-ideology_republican_paternalistic = {
+﻿ideology_republican_paternalistic = {
 	icon = "gfx/interface/icons/ideology_icons/republican_paternalistic.dds"
 	
 	lawgroup_governance_principles = {		

@@ -15,25 +15,18 @@ principle_common_financial_policy_1 = {
 	}
 	
 	power_bloc_modifier = {
-		# Modifiers from previous level(s)
-		power_bloc_trade_route_cost_mult = -0.75
-	
-		# Also unlocks a PM that grants Trade Centers Influence, checked with trigger on PM (from level 2)
+		power_bloc_cohesion_add = 5
 	}
 	
 	member_modifier = {
-		# Modifiers from previous level(s)
-		country_trade_route_cost_mult = -0.25
-		country_trade_route_competitiveness_mult = 0.25
-		
-		# Allows members to set up trade routes without diplomatic interests there
-		country_allow_trade_routes_without_interest_bool = yes
+		state_trade_capacity_mult = 0.25
+		state_trade_advantage_mult = 0.25
+
+		# Members no longer get a penalty to Trade Advantage due to lack of interests
+		country_no_advantage_loss_from_lack_of_interest_bool = yes
 
 		#for missing production method
 		state_migration_pull_mult = 0.1
-		
-		#for late game scale across continents
-		country_convoy_contribution_to_market_owner_add = 0.2
 	}
 	
 	ai_weight = {
@@ -50,26 +43,21 @@ principle_common_financial_policy_2 = {
 	}
 	
 	power_bloc_modifier = {
-		# Modifiers from previous level(s)
-		power_bloc_trade_route_cost_mult = -0.75
+		power_bloc_cohesion_add = 5
 	
 		# Also unlocks a PM that grants Trade Centers Influence, checked with trigger on PM (from level 2)
 		power_bloc_disallow_war_bool = yes
 	}
 	
 	member_modifier = {
-		# Modifiers from previous level(s)
-		country_trade_route_cost_mult = -0.25
-		country_trade_route_competitiveness_mult = 0.25
-		
-		# Allows members to set up trade routes without diplomatic interests there
-		country_allow_trade_routes_without_interest_bool = yes
+		state_trade_capacity_mult = 0.25
+		state_trade_advantage_mult = 0.25
+
+		# Members no longer get a penalty to Trade Advantage due to lack of interests
+		country_no_advantage_loss_from_lack_of_interest_bool = yes
 
 		#for missing production method
 		state_migration_pull_mult = 0.15
-		
-		#for late game scale across continents
-		country_convoy_contribution_to_market_owner_add = 0.2
 	}
 	
 	ai_weight = {
@@ -86,26 +74,21 @@ principle_common_financial_policy_3 = {
 	}
 	
 	power_bloc_modifier = {
-		# Modifiers from previous level(s)
-		power_bloc_trade_route_cost_mult = -0.75
+		power_bloc_cohesion_add = 10
 	
 		# Also unlocks a PM that grants Trade Centers Influence, checked with trigger on PM (from level 2)
 		power_bloc_disallow_war_bool = yes
 	}
 	
 	member_modifier = {
-		# Modifiers from previous level(s)
-		country_trade_route_cost_mult = -0.25
-		country_trade_route_competitiveness_mult = 0.25
-		
-		# Allows members to set up trade routes without diplomatic interests there
-		country_allow_trade_routes_without_interest_bool = yes
+		state_trade_capacity_mult = 0.30
+		state_trade_advantage_mult = 0.30
+
+		# Members no longer get a penalty to Trade Advantage due to lack of interests
+		country_no_advantage_loss_from_lack_of_interest_bool = yes
 
 		#for missing production method
 		state_migration_pull_mult = 0.2
-		
-		#for late game scale across continents
-		country_convoy_contribution_to_market_owner_add = 0.2
 		
 		#
 		country_join_power_bloc_member_in_defensive_plays_bool = yes

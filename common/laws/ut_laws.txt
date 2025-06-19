@@ -359,21 +359,14 @@ law_protectionism_union = {
 		union_trade
 	}
 	
-	tariff_modifier_no_priority = {
-	}	
-	
-	tariff_modifier_export_priority = {
-		tariff_import_add = 0.15
-	}
-	
-	tariff_modifier_import_priority = {
-		tariff_export_add = 0.15
-	}	
-	
 	modifier = {
+		state_tariff_import_add = 0.50
+		state_tariff_export_add = 0.50
+		state_subvention_export_add = 0.50
+		state_subvention_import_add = 0.50
+
 		power_bloc_cohesion_mult = 0.25
-		tariff_import_outside_power_bloc_mult = 0.2
-		tariff_export_outside_power_bloc_mult = 0.2
+		power_bloc_trade_advantage_add = 50
 		country_max_declared_interests_add = 2
 	}
 	
@@ -415,11 +408,11 @@ law_free_trade_union = {
 	}
 	
 	modifier = {
+		state_subvention_export_add = 0.50
+		state_subvention_import_add = 0.50
+		state_trade_advantage_mult = 0.35
 		country_leverage_generation_mult = 0.2
 		power_bloc_cohesion_add = -5
-		country_trade_route_competitiveness_mult = 0.5
-		country_trade_route_quantity_mult = 0.5
-		country_trade_route_cost_mult = -0.5
 		country_leverage_resistance_mult = -0.25
 		country_max_declared_interests_add = 2
 	}	

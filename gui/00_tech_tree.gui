@@ -1,4 +1,4 @@
-template tech_tree_divider 
+﻿template tech_tree_divider 
 {
 	using = dark_area
 	alpha = 1
