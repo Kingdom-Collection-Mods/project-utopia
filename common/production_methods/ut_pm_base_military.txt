@@ -2,6 +2,10 @@
 pm_ut_jetplane_production = {
 	texture = "gfx/interface/icons/production_method_icons/aeroplanes.dds"
 
+	unlocking_technologies = {
+		ut_war_planes_2
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods

@@ -237,15 +237,6 @@ pmg_base_building_motor_industry = {
 	}
 }
 
-pmg_automobile_production = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
-	production_methods = {
-		pm_automobile_production
-		pm_truck_production
-		pm_modern_automobiles
-	}
-}
-
 pmg_automation_building_motor_industry = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 	production_methods = {
@@ -256,6 +247,16 @@ pmg_automation_building_motor_industry = {
 		pm_assembly_lines_building_heavy_machinery_tools_motors
 	}
 }
+
+pmg_automobile_production = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_automobile_production
+		pm_truck_production
+		pm_modern_automobiles
+	}
+}
+
 
 pmg_base_building_shipyards = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
@@ -284,6 +285,7 @@ pmg_military_base = {
 pmg_aeroplanes = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
+		pm_no_aeroplane_production
 		pm_aeroplane_production
 		pm_ut_jetplane_production
 	}
