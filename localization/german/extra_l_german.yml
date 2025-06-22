@@ -1,4 +1,4 @@
-l_german:
+﻿l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -78,7 +78,7 @@ l_german:
 
  ut_new_dawn_status: "New Dawn"
  ut_new_dawn_communist_bar: "Communist"
- ut_new_dawn_communist_bar_desc: "Communist progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('divided_monarchists_upper_bound')])"
+ ut_new_dawn_communist_bar_desc: "Communist progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_upper_bound')])"
  ut_nd_communist_progress_from_characters: "combined [concept_popularity] of #bold Anarchist, Radical, Communist, and Vanguardist#! characters"
  ut_nd_communist_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with #bold Anarchist, Radical, Communist, and Vanguardist#! leaders"
  ut_nd_communist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_command_economy').GetName], [GetLawType('law_cooperative_ownership').GetName]"
@@ -88,7 +88,7 @@ l_german:
  ut_new_dawn_communist_status: "Kommunistische Ideen verbreiten sich"
 
  ut_new_dawn_moderate_bar: "Moderate"
- ut_new_dawn_moderate_bar_desc: "Moderate progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('divided_monarchists_upper_bound')])"
+ ut_new_dawn_moderate_bar_desc: "Moderate progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_upper_bound')])"
  ut_nd_moderate_progress_from_characters: "kombinierte [concept_popularity] von #bold Moderate (nicht-extremistische)#! Charaktere"
  ut_nd_moderate_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with #bold Moderate#! leaders"
  ut_nd_moderate_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_monarchy').GetName]"
@@ -98,7 +98,7 @@ l_german:
  ut_new_dawn_moderate_status: "Moderaten Ideen verbreiten sich"
 
  ut_new_dawn_fascist_bar: "Fascists"
- ut_new_dawn_fascist_bar_desc: "Fascist progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('divided_monarchists_upper_bound')])"
+ ut_new_dawn_fascist_bar_desc: "Fascist progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_upper_bound')])"
  ut_nd_fascist_progress_from_characters: "combined [concept_popularity] of #bold Corporatist, Ethno-Nationalist, and Fascist#! characters"
  ut_nd_fascist_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with #bold Corporatist, Ethno-Nationalist, and Fascist#! leaders"
  ut_nd_fascist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName]"
@@ -467,7 +467,7 @@ l_german:
  epa_two_desc: "Mülltrennung wird zur Bürgerpflicht. Deponien weichen hochtechnisierten Recyclingparks, wo Roboterarme Kunststoffe sortieren und Bioabfälle zu Biogas vergären."
  epa_three: "FCKW Verbot"
  epa_three_desc: "Das Verbot fluorierter Kohlenwasserstoffe rettet die stratosphärische Ozonschicht. Kühlschränke stellen auf natürliche Kältemittel um, während Spraydosen auf pumpbetriebene Alternativen umsteigen."
- political_progress_1: "Kosmopotianismus"
+ political_progress_1: "Kosmopolitismus"
  political_progress_1_desc: "Aufklärungsideale und wissenschaftlicher Fortschrittsglaube verdrängen religiöse Dogmen. Eine neue Elite von Technokraten träumt von der perfekt rational organisierten Gesellschaft."
  political_progress_2: "Rationalismus"
  political_progress_2_desc: "Evidenzbasierte Politik ersetzt ideologische Grabenkämpfe. Randomized Controlled Trials bestimmen über Sozialprogramme, während Algorithmen Wahlkreisgrenzen optimieren."

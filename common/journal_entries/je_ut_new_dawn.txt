@@ -1,4 +1,4 @@
-je_ut_new_dawn = {
+﻿je_ut_new_dawn = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
 	group = je_group_utopia
@@ -22,20 +22,22 @@ je_ut_new_dawn = {
 
 	immediate = {
 		ut_set_new_dawn_variables = yes
-		# random_law = {
-		# 	limit = { type = law_type:law_monarchy }
-		# 	save_scope_as = monarchy_scope
-		# }
 	}
 
+	scripted_button = ut_new_dawn_fascist_focus
+	scripted_button = ut_new_dawn_autocrat_focus
+	scripted_button = ut_new_dawn_democrat_focus
+	scripted_button = ut_new_dawn_communist_focus
+
 	scripted_progress_bar = ut_new_dawn_fascist_bar
-	scripted_progress_bar = ut_new_dawn_moderate_bar
+	scripted_progress_bar = ut_new_dawn_autocrat_bar
+	scripted_progress_bar = ut_new_dawn_moderate_bar #ut_new_dawn_democrat_bar
 	scripted_progress_bar = ut_new_dawn_communist_bar
 
 	complete = {
 		custom_tooltip = {
 			text = je_ut_new_dawn_condition_tt
-			has_variable = je_ut_new_dawn_done #Can only ever complete upon finishing the Cement the Rightful Dynasty journal entry.
+			has_variable = je_ut_new_dawn_done #Can only ever complete upon finishing the Cement the Rightful ideology journal entry.
 		}
 	}
 
@@ -90,12 +92,13 @@ je_ut_new_dawn = {
 			if = {
 				limit = {
 					NOT = {
-						has_variable = fra_divided_monarchists_freeze #This variable stops iteration, and is granted by reaching 480 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
+						has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 480 with one ideology. It's reset when this JE is completed, or when je_cement_the_rightful_ideology fails.
 					}
 				}
-				ut_new_dawn_fascist_progress = yes #Calculates how much the Legitimists will get next month. Updates weekly, but is not added until the monthly.
-				ut_new_dawn_moderate_progress = yes  #Calculates how much the Orleanists will get next month. Updates weekly, but is not added until the monthly.
-				ut_new_dawn_communist_progress = yes  #Calculates how much the Bonapartists will get next month. Updates weekly, but is not added until the monthly.
+				#Calculates how much the each core ideology will get next month. Updates weekly, but is not added until the monthly.
+				ut_new_dawn_fascist_progress = yes 
+				ut_new_dawn_moderate_progress = yes
+				ut_new_dawn_communist_progress = yes
 			}
 		}
 	}
@@ -104,16 +107,15 @@ je_ut_new_dawn = {
 		effect = {
 			if = {
 				limit = {
-					has_law = law_type:law_monarchy
 					scope:journal_entry = { 
 						OR = {
-							"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= divided_monarchists_upper_bound
-							"scripted_bar_progress(ut_new_dawn_moderate_bar)" >= divided_monarchists_upper_bound
-							"scripted_bar_progress(ut_new_dawn_communist_bar)" >= divided_monarchists_upper_bound
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= new_dawn_upper_bound
+							"scripted_bar_progress(ut_new_dawn_moderate_bar)" >= new_dawn_upper_bound
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" >= new_dawn_upper_bound
 						}
 					}
 					NOT = {
-						has_variable = fra_divided_monarchists_freeze
+						has_variable = ut_new_dawn_bar_freeze
 					}
 				}
 				if = { #Fires the event to enthrone the pretender - 1 if contextualised as coup, 10 if contextualised as reinforcement.
@@ -125,12 +127,14 @@ je_ut_new_dawn = {
 					}
 					if = {
 						limit = {
-							ruler_is_bonapartist = yes
+							ruler ?= {
+								ut_ideology_new_dawn_communist_trigger = yes								
+							}
 						}
-						trigger_event = { id = event_new_dawn.2 popup = yes} #Reinforcement event - fires if the leading dynasty is the one in power.
+						trigger_event = { id = event_new_dawn.2 popup = yes} #Reinforcement event - fires if the leading ideology is the one in power.
 					}
 					else = {
-						trigger_event = { id = event_new_dawn.3 popup = yes} #Coup event - fires if the leading dynasty is not the one in power.
+						trigger_event = { id = event_new_dawn.3 popup = yes} #Coup event - fires if the leading ideology is not the one in power.
 					}
 				}
 				else_if = {
@@ -142,7 +146,9 @@ je_ut_new_dawn = {
 					}
 					if = {
 						limit = {
-							ruler_is_orleanist = yes
+							ruler ?= {
+								ut_ideology_new_dawn_fascist_trigger = yes								
+							}
 						}
 						trigger_event = { id = event_new_dawn.2 popup = yes}
 					}
@@ -159,7 +165,9 @@ je_ut_new_dawn = {
 					}
 					if = {
 						limit = {
-							ruler_is_legitimist = yes
+							ruler ?= {
+								ut_ideology_new_dawn_moderate_trigger = yes								
+							}
 						}
 						trigger_event = { id = event_new_dawn.2 popup = yes}
 					}
@@ -167,7 +175,7 @@ je_ut_new_dawn = {
 						trigger_event = { id = event_new_dawn.3 popup = yes}
 					}
 				}
-				ut_freeze_new_dawn_progress = yes #Freezes the bars so that they no longer accumulate progress on the monthly tick, and stay as they are. In the case that Cement the Rightful Dynasty fails, the bars will be set back.
+				ut_freeze_new_dawn_progress = yes #Freezes the bars so that they no longer accumulate progress on the monthly tick, and stay as they are. In the case that Cement the Rightful ideology fails, the bars will be set back.
 			}
 		}
 		random_events = {
@@ -225,7 +233,7 @@ je_ut_new_dawn_democratic = {
 	complete = {
 		custom_tooltip = {
 			text = je_ut_new_dawn_condition_tt
-			 #Can only ever complete upon finishing the Cement the Rightful Dynasty journal entry.
+			 #Can only ever complete upon finishing the Cement the Rightful ideology journal entry.
 		}
 		has_variable = je_ut_new_dawn_democratic_base_done
 		has_variable = je_ut_new_dawn_democratic_cultural_values_done

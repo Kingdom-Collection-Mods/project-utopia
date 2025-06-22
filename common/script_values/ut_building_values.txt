@@ -6,3 +6,5 @@ construction_cost_modern_industry = 2400
 #construction_cost_medium = 400
 #construction_cost_low = 200
 #construction_cost_very_low = 100
+
+new_dawn_upper_bound = 480
