@@ -75,6 +75,10 @@ ut_commercial_goods_simple_company = {
 	extension_building_types = {
 		building_wheat_farm
 	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_consumer_goods_simple
+	}
 	
 	possible = { 
 		has_technology_researched = consumer_goods_main_analog
@@ -105,6 +109,10 @@ ut_commercial_goods_complex_company = {
 	
 	extension_building_types = {
 		building_motor_industry
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_consumer_goods_complex
 	}
 
 	possible = { 
@@ -166,6 +174,10 @@ ut_electronics_company = {
 		building_computer_factory
 	}
 
+	possible_prestige_goods = {
+		prestige_good_generic_electronics
+	}
+
 	possible = { 
 		has_technology_researched = computers
 		any_scope_state = {
@@ -178,7 +190,7 @@ ut_electronics_company = {
 	
 	prosperity_modifier = {
 		building_electronic_factory_throughput_add = 0.1
-		country_weekly_innovation_max_add = 20
+		country_weekly_innovation_max_add = 10
 	}	
 }
 
@@ -193,6 +205,10 @@ ut_mainframe_computer_company = {
 	
 	extension_building_types = {
 		building_software_company
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_computers_b2b
 	}
 
 	possible = { 
@@ -230,12 +246,12 @@ ut_personal_computer_company = {
 		building_software_company
 	}
 
+	possible_prestige_goods = {
+		prestige_good_generic_computers_b2c
+	}
+
 	possible = { 
-		has_technology_researched = computers
-		OR = {
-			has_technology_researched = rare_earths_mining_era_digital
-			has_technology_researched = software
-		}
+		has_technology_researched = software
 		any_scope_state = {
 			any_scope_building = {
 				is_building_type = building_computer_factory
@@ -250,7 +266,7 @@ ut_personal_computer_company = {
 	}	
 }
 
-ut_heavy_machinery_company = {
+ut_heavy_machinery_company_era_6 = {
 	icon = "gfx/interface/icons/company_icons/ut_heavy_machinery_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
@@ -260,7 +276,12 @@ ut_heavy_machinery_company = {
 	}
 	
 	extension_building_types = {
-		building_electronic_factory
+		building_aluminum_factory
+		building_power_plant
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_heavy_machinery_era_6
 	}
 
 	possible = { 
@@ -279,7 +300,73 @@ ut_heavy_machinery_company = {
 	}	
 }
 
-ut_software_company = {
+ut_heavy_machinery_company_era_7 = {
+	icon = "gfx/interface/icons/company_icons/ut_heavy_machinery_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	building_types = {
+		building_heavy_machinery_factory
+		building_steel_mills
+	}
+	
+	extension_building_types = {
+		building_electronic_factory
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_heavy_machinery_era_7
+	}
+
+	possible = { 
+		has_technology_researched = heavy_machinery_era_digital
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_heavy_machinery_factory
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_heavy_machinery_factory_throughput_add = 0.1
+		building_construction_sector_throughput_add = 0.1
+	}	
+}
+
+ut_heavy_machinery_company_era_8 = {
+	icon = "gfx/interface/icons/company_icons/ut_heavy_machinery_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	building_types = {
+		building_heavy_machinery_factory
+		building_computer_factory
+	}
+	
+	extension_building_types = {
+		building_electronic_factory
+		building_software_company
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_heavy_machinery_era_8
+	}
+
+	possible = { 
+		has_technology_researched = heavy_machinery_era_web
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_heavy_machinery_factory
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_throughput_add = 0.01
+	}	
+}
+
+ut_software_company_era_7 = {
 	icon = "gfx/interface/icons/company_icons/ut_software_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
@@ -289,6 +376,11 @@ ut_software_company = {
 
 	extension_building_types = {
 		building_computer_factory
+	}
+
+	
+	possible_prestige_goods = {
+		prestige_good_generic_software_b2b
 	}
 
 	possible = { 
@@ -303,7 +395,38 @@ ut_software_company = {
 	
 	prosperity_modifier = {
 		building_software_company_throughput_add = 0.1
-		interest_group_ig_urbanists_approval_add = 1
+	}	
+}
+
+ut_software_company_era_8 = {
+	icon = "gfx/interface/icons/company_icons/ut_software_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	building_types = {
+		building_software_company
+	}
+
+	extension_building_types = {
+		building_computer_factory
+	}
+
+	
+	possible_prestige_goods = {
+		prestige_good_generic_software_b2c
+	}
+
+	possible = { 
+		has_technology_researched = internet
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_software_company
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		interest_group_ig_urbanists_approval_add = 2
 	}	
 }
 
@@ -322,7 +445,7 @@ ut_synthetics_company = {
 	}
 
 	possible = { 
-		has_technology_researched = software
+		has_technology_researched = plastics_polyester
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
@@ -337,5 +460,36 @@ ut_synthetics_company = {
 	prosperity_modifier = {
 		building_synthetics_plants_throughput_add = 0.1
 		building_synthetic_oil_throughput_add = 0.2
+	}	
+}
+
+ut_plastic_company = {
+	icon = "gfx/interface/icons/company_icons/ut_plastic_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	building_types = {
+		building_plastic_factory
+	}
+	
+	extension_building_types = {
+		building_explosives_factory
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_plastic
+	}
+
+	possible = { 
+		has_technology_researched = plastics_polypropylene
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_plastic_factory
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_plastic_factory_throughput_add = 0.1
 	}	
 }

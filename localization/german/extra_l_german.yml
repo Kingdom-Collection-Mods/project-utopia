@@ -1,4 +1,4 @@
-﻿l_german:
+l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -639,6 +639,17 @@
  consumer_goods: "Konsumgüter"
  heavy_machinery: "Schwerlastmaschinen"
 
+ prestige_good_generic_consumer_goods_simple: "Kühlschränke"
+ prestige_good_generic_consumer_goods_complex: "Farbfernsehere"
+ prestige_good_generic_computers_b2b: "Mainframe Computer"
+ prestige_good_generic_computers_b2c: "Personal Computer"
+ prestige_good_generic_electronics: "LEDs"
+ prestige_good_generic_heavy_machinery_era_6: "Turmdrehkräne"
+ prestige_good_generic_heavy_machinery_era_7: "Tunnelbohrmaschinenen"
+ prestige_good_generic_heavy_machinery_era_8: "Industrie Robotor"
+ prestige_good_generic_plastic: "PVC"
+ prestige_good_generic_software_b2b: "Database Software"
+ prestige_good_generic_software_b2c: "Office Software"
 
  goods_input_internet_add: "@internet! Internet input"
  goods_input_internet_add_desc: "The amount of @internet! Internet consumed by buildings"

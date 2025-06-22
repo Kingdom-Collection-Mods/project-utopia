@@ -29,7 +29,7 @@
 	}
 
 	enable = {
-		always = yes
+		ut_service_workers_possible = yes
 	}
 
 	# Deprecated; use on_enable effect to assign traits instead

@@ -41,3 +41,12 @@ ut_ideology_new_dawn_communist_trigger = {
 		has_ideology = ideology:ideology_vanguardist
 	}
 }
+
+ut_service_workers_possible = {
+	OR = {
+		has_technology_researched = consumer_goods_main_analog
+		has_technology_researched = aluminum_base
+		has_technology_researched = electronics
+		has_technology_researched = trucks_era_analog
+	}
+}

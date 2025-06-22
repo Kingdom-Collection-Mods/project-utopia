@@ -1,4 +1,4 @@
-﻿je_ut_new_dawn = {
+je_ut_new_dawn = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
 	group = je_group_utopia
@@ -6,7 +6,7 @@
 
 	is_shown_when_inactive = {
 		is_player = yes
-		has_technology_researched = mass_propaganda
+		ut_service_workers_possible = yes
 	}
 
 	possible = {
