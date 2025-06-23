@@ -1,6 +1,6 @@
-﻿ ### For je_divided_monarchists
+ ### For je_divided_monarchists
 
- ut_new_dawn_fascist_bar = {
+ut_new_dawn_fascist_bar = {
 	name = "ut_new_dawn_fascist_bar"
 	desc = "ut_new_dawn_fascist_bar_desc"
 
@@ -41,11 +41,11 @@
 	min_value = 0
 	max_value = 480 # new_dawn_upper_bound
 
- }
+}
 
- ut_new_dawn_moderate_bar = {
-	name = "ut_new_dawn_moderate_bar"
-	desc = "ut_new_dawn_moderate_bar_desc"
+ut_new_dawn_democrat_bar = {
+	name = "ut_new_dawn_democrat_bar"
+	desc = "ut_new_dawn_democrat_bar_desc"
 
 	#for color
 	default = yes
@@ -58,24 +58,24 @@
 				}
 			}
 			add = {
-				desc = "ut_nd_moderate_progress_from_characters"
-				value = owner.var:ut_nd_moderate_progress_from_characters
+				desc = "ut_nd_democrat_progress_from_characters"
+				value = owner.var:ut_nd_democrat_progress_from_characters
 			}
 			add = {
-				desc = "ut_nd_moderate_progress_from_igs"
-				value = owner.var:ut_nd_moderate_progress_from_igs
+				desc = "ut_nd_democrat_progress_from_igs"
+				value = owner.var:ut_nd_democrat_progress_from_igs
 			}
 			add = {
-				desc = "ut_nd_moderate_progress_from_laws"
-				value = owner.var:ut_nd_moderate_progress_from_laws
+				desc = "ut_nd_democrat_progress_from_laws"
+				value = owner.var:ut_nd_democrat_progress_from_laws
 			}
 			add = {
-				desc = "ut_nd_moderate_progress_from_legitimacy"
-				value = owner.var:ut_nd_moderate_progress_from_legitimacy
+				desc = "ut_nd_democrat_progress_from_legitimacy"
+				value = owner.var:ut_nd_democrat_progress_from_legitimacy
 			}
 			add = {
-				desc = "ut_nd_moderate_progress_from_effects"
-				value = owner.var:ut_nd_moderate_progress_from_effects
+				desc = "ut_nd_democrat_progress_from_effects"
+				value = owner.var:ut_nd_democrat_progress_from_effects
 			}
 		}
 	}
@@ -84,9 +84,9 @@
 	min_value = 0
 	max_value = 480 # new_dawn_upper_bound
 
- }
+}
 
- ut_new_dawn_communist_bar = {
+ut_new_dawn_communist_bar = {
 	name = "ut_new_dawn_communist_bar"
 	desc = "ut_new_dawn_communist_bar_desc"
 
@@ -127,4 +127,46 @@
 	min_value = 0
 	max_value = 480 # new_dawn_upper_bound
 
- }
+}
+
+ut_new_dawn_autocrat_bar = {
+	name = "ut_new_dawn_autocrat_bar"
+	desc = "ut_new_dawn_autocrat_bar_desc"
+
+	default = yes
+
+	monthly_progress = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
+				}
+			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_characters"
+				value = owner.var:ut_nd_autocrat_progress_from_characters
+			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_igs"
+				value = owner.var:ut_nd_autocrat_progress_from_igs
+			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_legitimacy"
+				value = owner.var:ut_nd_autocrat_progress_from_legitimacy
+			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_laws"
+				value = owner.var:ut_nd_autocrat_progress_from_laws
+			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_effects"
+				value = owner.var:ut_nd_autocrat_progress_from_effects
+			}
+		}
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 480 # new_dawn_upper_bound
+
+}

@@ -31,7 +31,7 @@
 
 	scripted_progress_bar = ut_new_dawn_fascist_bar
 	scripted_progress_bar = ut_new_dawn_autocrat_bar
-	scripted_progress_bar = ut_new_dawn_moderate_bar #ut_new_dawn_democrat_bar
+	scripted_progress_bar = ut_new_dawn_democrat_bar #ut_new_dawn_democrat_bar
 	scripted_progress_bar = ut_new_dawn_communist_bar
 
 	complete = {
@@ -51,12 +51,13 @@
 	status_desc = {
 		first_valid = {
 			triggered_desc = { # In the lead and on the throne
-				desc = ut_new_dawn_moderate_status
+				desc = ut_new_dawn_democrat_status
 				trigger = {
 					AND = {
 						scope:journal_entry = { 
-							"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-							"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 						}
 					}
 				}
@@ -67,7 +68,8 @@
 					AND = {
 						scope:journal_entry = { 
 							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)" 
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)" 
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 						}
 					}
 				}
@@ -77,7 +79,18 @@
 				trigger = {
 					scope:journal_entry = { 
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
-						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)" 
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+					}
+				}
+			}
+			triggered_desc = {
+				desc = ut_new_dawn_autocrat_status
+				trigger = {
+					scope:journal_entry = { 
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 					}
 				}
 			}
@@ -97,8 +110,9 @@
 				}
 				#Calculates how much the each core ideology will get next month. Updates weekly, but is not added until the monthly.
 				ut_new_dawn_fascist_progress = yes 
-				ut_new_dawn_moderate_progress = yes
+				ut_new_dawn_democrat_progress = yes
 				ut_new_dawn_communist_progress = yes
+				ut_new_dawn_autocrat_progress = yes
 			}
 		}
 	}
@@ -110,8 +124,9 @@
 					scope:journal_entry = { 
 						OR = {
 							"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= new_dawn_upper_bound
-							"scripted_bar_progress(ut_new_dawn_moderate_bar)" >= new_dawn_upper_bound
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" >= new_dawn_upper_bound
 							"scripted_bar_progress(ut_new_dawn_communist_bar)" >= new_dawn_upper_bound
+							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" >= new_dawn_upper_bound
 						}
 					}
 					NOT = {
@@ -121,8 +136,9 @@
 				if = { #Fires the event to enthrone the pretender - 1 if contextualised as coup, 10 if contextualised as reinforcement.
 					limit = {
 						scope:journal_entry = { 
-							"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
 							"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 						}
 					}
 					if = {
@@ -140,8 +156,9 @@
 				else_if = {
 					limit = {
 						scope:journal_entry = { 
-							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
 							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 						}
 					}
 					if = {
@@ -159,14 +176,36 @@
 				else_if = {
 					limit = {
 						scope:journal_entry = { 
-							"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-							"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"	
 						}
 					}
 					if = {
 						limit = {
 							ruler ?= {
-								ut_ideology_new_dawn_moderate_trigger = yes								
+								ut_ideology_new_dawn_democrat_trigger = yes								
+							}
+						}
+						trigger_event = { id = event_new_dawn.2 popup = yes}
+					}
+					else = {
+						trigger_event = { id = event_new_dawn.3 popup = yes}
+					}
+				}
+				else_if = {
+					limit = {
+						scope:journal_entry = { 
+							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+						}
+					}
+					
+					if = {
+						limit = {
+							ruler ?= {
+								ut_ideology_new_dawn_democrat_trigger = yes								
 							}
 						}
 						trigger_event = { id = event_new_dawn.2 popup = yes}

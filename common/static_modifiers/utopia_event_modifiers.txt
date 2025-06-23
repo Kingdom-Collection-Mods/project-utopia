@@ -65,3 +65,9 @@ modern_civil_aviation_modifier_others = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 50
 }
+
+
+ut_new_dawn_focus_recently_changed = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_tech_spread_add = 50
+}

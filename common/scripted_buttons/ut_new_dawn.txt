@@ -1,4 +1,78 @@
-﻿je_ut_new_dawn_democratic_base = {
+﻿#Base
+ut_new_dawn_fascist_focus = {
+	name = "christ_of_nations_button"
+	desc = "christ_of_nations_button_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
+	}
+
+	effect = {		
+		set_variable = je_ut_new_dawn_fascist_focus
+		remove_variable = je_ut_new_dawn_autocratic_focus
+		remove_variable = je_ut_new_dawn_democratic_focus
+		remove_variable = je_ut_new_dawn_communist_focus
+	}
+}
+
+ut_new_dawn_autocrat_focus = {
+	name = "christ_of_nations_button"
+	desc = "christ_of_nations_button_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
+	}
+
+	effect = {		
+		set_variable = je_ut_new_dawn_autocratic_focus
+		remove_variable = je_ut_new_dawn_fascist_focus
+		remove_variable = je_ut_new_dawn_democratic_focus
+		remove_variable = je_ut_new_dawn_communist_focus
+	}
+}
+
+ut_new_dawn_democrat_focus = {
+	name = "christ_of_nations_button"
+	desc = "christ_of_nations_button_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
+	}
+
+	effect = {		
+		set_variable = je_ut_new_dawn_democratic_focus
+		remove_variable = je_ut_new_dawn_fascist_focus
+		remove_variable = je_ut_new_dawn_autocratic_focus
+		remove_variable = je_ut_new_dawn_communist_focus
+	}
+}
+
+ut_new_dawn_communist_focus = {
+	name = "christ_of_nations_button"
+	desc = "christ_of_nations_button_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
+	}
+
+	effect = {		
+		set_variable = je_ut_new_dawn_communist_focus
+		remove_variable = je_ut_new_dawn_fascist_focus
+		remove_variable = je_ut_new_dawn_autocratic_focus
+		remove_variable = je_ut_new_dawn_democratic_focus
+	}
+}
+
+####Democratic Buttons####
+je_ut_new_dawn_democratic_base = {
 	name = "christ_of_nations_button"
 	desc = "christ_of_nations_button_desc"
 

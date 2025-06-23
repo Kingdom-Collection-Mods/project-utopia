@@ -45,7 +45,7 @@ event_new_dawn.2 = {
 				desc = french_pretenders.10.d_1
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
 						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
 					}
 				}
@@ -54,8 +54,8 @@ event_new_dawn.2 = {
 				desc = french_pretenders.10.d_2
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 					}
 				}
 			}
@@ -63,7 +63,7 @@ event_new_dawn.2 = {
 				desc = french_pretenders.10.d_3
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 					}
 				}
@@ -76,7 +76,7 @@ event_new_dawn.2 = {
 				desc = french_pretenders.10.f_1
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
 						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
 					}
 				}
@@ -85,8 +85,8 @@ event_new_dawn.2 = {
 				desc = french_pretenders.10.f_2
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 					}
 				}
 			}
@@ -94,7 +94,7 @@ event_new_dawn.2 = {
 				desc = french_pretenders.10.f_3
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 					}
 				}
@@ -133,7 +133,7 @@ event_new_dawn.2 = {
 		if = {
 			limit = {
 				je:je_ut_new_dawn = { 
-					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
 					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
 				}
 			}
@@ -146,12 +146,12 @@ event_new_dawn.2 = {
 		if = {
 			limit = {
 				je:je_ut_new_dawn = { 
-					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
 					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 				}
 			}
 			remove_variable = new_dawn_fascist_var
-			remove_variable = new_dawn_moderate_var
+			remove_variable = new_dawn_democrat_var
 			set_variable = {
 				name = new_dawn_communist_var
 			}
@@ -159,14 +159,14 @@ event_new_dawn.2 = {
 		if = {
 			limit = {
 				je:je_ut_new_dawn = { 
-					"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-					"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+					"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 				}
 			}
 			remove_variable = new_dawn_fascist_var
 			remove_variable = new_dawn_communist_var
 			set_variable = {
-				name = new_dawn_moderate_var
+				name = new_dawn_democrat_var
 			}
 			trigger_event = { id = event_new_dawn.4 popup = yes } #Democratic or Autocratic
 		}
@@ -177,7 +177,7 @@ event_new_dawn.2 = {
 		name = french_pretenders.10.a # Long live the Moderates!
 		default_option = yes
 		trigger = {
-			has_variable = new_dawn_moderate_var
+			has_variable = new_dawn_democrat_var
 		}
 		custom_tooltip = {
 			text = je_cement_the_rightful_dynasty_fake
@@ -215,7 +215,7 @@ event_new_dawn.3 = {
 				desc = french_pretenders.1.d_1
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
 						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
 					}
 				}
@@ -224,8 +224,8 @@ event_new_dawn.3 = {
 				desc = french_pretenders.1.d_2
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 					}
 				}
 			}
@@ -233,7 +233,7 @@ event_new_dawn.3 = {
 				desc = french_pretenders.1.d_3
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 					}
 				}
@@ -246,7 +246,7 @@ event_new_dawn.3 = {
 				desc = french_pretenders.1.f_1
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
 						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
 					}
 				}
@@ -255,8 +255,8 @@ event_new_dawn.3 = {
 				desc = french_pretenders.1.f_2
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 					}
 				}
 			}
@@ -264,7 +264,7 @@ event_new_dawn.3 = {
 				desc = french_pretenders.1.f_3
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 					}
 				}
@@ -305,7 +305,7 @@ event_new_dawn.3 = {
 		if = {
 			limit = {
 				je:je_ut_new_dawn = { 
-					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
 					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
 				}
 			}
@@ -318,7 +318,7 @@ event_new_dawn.3 = {
 		if = {
 			limit = {
 				je:je_ut_new_dawn = { 
-					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
 					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 				}
 			}
@@ -331,8 +331,8 @@ event_new_dawn.3 = {
 		if = {
 			limit = {
 				je:je_ut_new_dawn = { 
-					"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-					"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+					"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 				}
 			}
 			remove_variable = orleanist_restoration_var
@@ -756,7 +756,7 @@ event_new_dawn.4 = {
 				desc = french_pretenders.1.d_1
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
 						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
 					}
 				}
@@ -765,8 +765,8 @@ event_new_dawn.4 = {
 				desc = french_pretenders.1.d_2
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 					}
 				}
 			}
@@ -774,7 +774,7 @@ event_new_dawn.4 = {
 				desc = french_pretenders.1.d_3
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 					}
 				}
@@ -787,7 +787,7 @@ event_new_dawn.4 = {
 				desc = french_pretenders.1.f_1
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
 						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
 					}
 				}
@@ -796,8 +796,8 @@ event_new_dawn.4 = {
 				desc = french_pretenders.1.f_2
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-						"scripted_bar_progress(ut_new_dawn_moderate_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 					}
 				}
 			}
@@ -805,7 +805,7 @@ event_new_dawn.4 = {
 				desc = french_pretenders.1.f_3
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_moderate_bar)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 					}
 				}
