@@ -616,7 +616,8 @@
 
  pm_heavy_machinery_textile: "Textilmaschinen"
  pm_plastics_textile: "Kunststofftextilien"
- pm_aluminum_two_process: "Schmelzrecycling"
+ pm_aluminum_two_process: "Hall-Héroult-Verfahren"
+ pm_aluminum_three_process: "Schmelzrecycling"
  pm_aluminum_packaging: "Aluminiumverpackung"
  pm_plastic_packaging: "Kunststoffverpackung"
  pm_synthetic_rubber_plus: "Polyester"

@@ -52,6 +52,7 @@ pmg_aluminum_making_process = {
 	production_methods = {
 		pm_aluminum_one_process
 		pm_aluminum_two_process
+		pm_aluminum_three_process
 	}
 }
 

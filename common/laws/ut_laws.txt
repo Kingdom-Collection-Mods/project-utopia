@@ -267,6 +267,7 @@ law_social_market_economy = {
 	unlocking_laws = {
 		law_interventionism
 		law_free_market_economy
+		law_laissez_faire
 	}
 	
 	on_activate = {

@@ -465,22 +465,19 @@ pm_truck_production = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			# input goods			
-			goods_input_engines_add = 20
-			goods_input_rubber_add = 5
-			goods_input_oil_add = 5
-			goods_input_electricity_add = 5
+			# input goods
 			goods_input_aluminum_add = 5
+			goods_input_heavy_machinery_add = 1
 
 			# output goods
-			goods_output_trucks_add = 40
+			goods_output_automobiles_add = -10
+			goods_output_trucks_add = 20
 		}
 
 		level_scaled = {
 			# employment
-			building_employment_machinists_add = 500
-			building_employment_engineers_add = 500
-			building_employment_service_workers_add = 500
+			building_employment_engineers_add = 250
+			building_employment_service_workers_add = 250
 		}
 	}
 }
@@ -500,20 +497,22 @@ pm_modern_automobiles = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_engines_add = 20
+			goods_input_engines_add = 10
 			goods_input_rubber_add = 5
 			goods_input_oil_add = 5
 			goods_input_electricity_add = 5
+			goods_input_heavy_machinery_add = 5
 			goods_input_aluminum_add = 5
 
 			# output goods
-			goods_output_automobiles_add = 70
+			goods_output_automobiles_add = 60
 		}
 
 		level_scaled = {
 			building_employment_shopkeepers_add = 500
-			building_employment_laborers_add = 2000
+			building_employment_laborers_add = 500
 			building_employment_machinists_add = 1500
+			building_employment_service_workers_add = 1500
 			building_employment_engineers_add = 1000
 		}
 	}
@@ -579,7 +578,6 @@ pm_electronics_engines = {
 			
 			# output goods
 			goods_output_engines_add = 155
-			goods_output_trucks_add = 5
 		}
 
 		level_scaled = {
@@ -617,7 +615,6 @@ pm_computers_engines = {
 			
 			# output goods
 			goods_output_engines_add = 160
-			goods_output_trucks_add = 5
 		}
 
 		level_scaled = {

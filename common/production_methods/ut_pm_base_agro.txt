@@ -17,7 +17,7 @@ pm_high_yield_crops = {
 			goods_input_fertilizer_add = 20			
 			
 			# output goods												   
-			goods_output_grain_add = 100
+			goods_output_grain_add = 90
 		}
 
 		level_scaled = {
@@ -40,7 +40,7 @@ pm_high_yield_crops_rice = {
 			goods_input_fertilizer_add = 40			
 			
 			# output goods												   
-			goods_output_grain_add = 190	
+			goods_output_grain_add = 180	
 		}
 
 		level_scaled = {
