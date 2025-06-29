@@ -3,11 +3,11 @@
 # }
 
 era_6 = { #1936-1961 (x1-x2)
-	technology_cost = 24000 # 30000 # for progress bonuses, use an approximate third: 5850
+	technology_cost = 26000 # 30000 # for progress bonuses, use an approximate third: 5850
 }
 
 era_7 = { #1961-1986 (x2-x2)
-	technology_cost = 28000 # 26000 # for progress bonuses, use an approximate third: 5850
+	technology_cost = 32000 # 26000 # for progress bonuses, use an approximate third: 5850
 }
 
 era_8 = { #1986-2036 (x3-x2)
