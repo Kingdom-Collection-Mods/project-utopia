@@ -10,20 +10,23 @@
 		workforce_scaled = {
 			goods_input_heavy_machinery_add = 1
 			goods_input_engines_add = 5 # 300
-			goods_input_electricity_add = 15
+			goods_input_electricity_add = 10
+			goods_input_oil_add = 2	
 			goods_output_transportation_add = 45 # 1200
 		}
 		level_scaled = {
-			building_employment_laborers_add = 500
-			building_employment_machinists_add = 1000
-			building_employment_clerks_add = 500
-			building_employment_service_workers_add = 500
+			building_employment_laborers_add = 200
+			building_employment_machinists_add = 300
+			building_employment_clerks_add = 100
+			building_employment_engineers_add = 200
+			building_employment_service_workers_add = 200
 		}
 	}
 
 	state_modifiers = {
 		workforce_scaled = {
-			state_infrastructure_add = 40
+			state_infrastructure_add = 45
+			state_pollution_generation_add = 2
 		}
 	}
 }
@@ -58,6 +61,24 @@ pm_ut_high_speed_electric_trains_principle_transport_3 = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_infrastructure_add = 50
+		}
+	}
+}
+
+
+pm_trade_center_trade_quantity_utopia = {
+	texture = "gfx/interface/icons/production_method_icons/trade_quantity_4.dds"
+
+	unlocking_technologies = { heavy_industry_harbor }
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_merchant_marine_add = 8
+		}
+	}
+	state_modifiers = {
+		unscaled = {
+			state_trade_quantity_mult = 1.5
 		}
 	}
 }

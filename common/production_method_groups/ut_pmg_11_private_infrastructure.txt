@@ -13,3 +13,16 @@
 		pm_ut_high_speed_electric_trains
 	}
 }
+
+pmg_trade_quantity_trade_center = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_trade_center_trade_quantity_limited
+		pm_trade_center_trade_quantity_normal
+		pm_trade_center_trade_quantity_high
+		pm_trade_center_trade_quantity_very_high
+		pm_trade_center_trade_quantity_utopia
+	}
+}
