@@ -7,6 +7,7 @@ ut_new_dawn_fascist_focus = {
 
 	possible = {
 		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
+		NOT = { has_variable = je_ut_new_dawn_fascist_focus }
 	}
 
 	effect = {		
@@ -25,6 +26,7 @@ ut_new_dawn_autocrat_focus = {
 
 	possible = {
 		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
+		NOT = { has_variable = je_ut_new_dawn_autocratic_focus }
 	}
 
 	effect = {		
@@ -43,6 +45,7 @@ ut_new_dawn_democrat_focus = {
 
 	possible = {
 		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
+		NOT = { has_variable = je_ut_new_dawn_democratic_focus }
 	}
 
 	effect = {		
@@ -61,6 +64,7 @@ ut_new_dawn_communist_focus = {
 
 	possible = {
 		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
+		NOT = { has_variable = je_ut_new_dawn_communist_focus }
 	}
 
 	effect = {		
@@ -168,12 +172,12 @@ je_ut_new_dawn_democratic_power_bloc = {
 		custom_tooltip = christ_of_nations_button_tt_1
 		set_variable = {
 			name = christ_of_nations_cooldown
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		show_as_tooltip = {
 			add_modifier = {
 				name = funding_polish_radicals
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		set_variable = je_ut_new_dawn_democratic_power_bloc_done

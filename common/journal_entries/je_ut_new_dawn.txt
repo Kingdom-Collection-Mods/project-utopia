@@ -269,6 +269,9 @@ je_ut_new_dawn_democratic = {
 	scripted_button = je_ut_new_dawn_democratic_cultural_values
 	scripted_button = je_ut_new_dawn_democratic_power_bloc
 
+	
+	scripted_progress_bar = je_ut_new_dawn_democratic_points_bar
+
 	complete = {
 		custom_tooltip = {
 			text = je_ut_new_dawn_condition_tt
@@ -289,11 +292,20 @@ je_ut_new_dawn_democratic = {
 	status_desc = {
 	}
 
+
 	on_weekly_pulse = {
 		events = {
-			#event_new_dawn.1
+			event_new_dawn.1
 		}
 		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_variable = je_ut_new_dawn_democratic_regress #This variable stops iteration, and is granted by reaching 480 with one ideology. It's reset when this JE is completed, or when je_cement_the_rightful_ideology fails.
+					}
+				}
+				je_ut_new_dawn_democratic_points_gain = yes
+			}
 		}
 	}
 
@@ -302,7 +314,16 @@ je_ut_new_dawn_democratic = {
 		}
 		random_events = {
 			400 = 0
+			# 10 = french_pretenders_pulse.2
 		}
+	}
+
+	fail = {
+		always = no
+	}
+
+	# effect which is executed when 'fail' trigger becomes true
+	on_fail = {
 	}
 
 	weight = 100

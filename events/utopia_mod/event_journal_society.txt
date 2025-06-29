@@ -43,7 +43,7 @@ utopia_journal_society.1 = {
 		name = utopia.slow_progress
 		add_modifier = {
 			name = slow_tech_progress
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 }

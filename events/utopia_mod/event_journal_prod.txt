@@ -33,7 +33,7 @@ utopia_journal_prod.1 = {
 		name = utopia.slow_progress
 		add_modifier = {
 			name = slow_tech_progress
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}	
 }
@@ -124,7 +124,7 @@ utopia_journal_prod.3 = {
 		name = utopia.slow_progress
 		add_modifier = {
 			name = slow_tech_progress
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}	
 }
@@ -190,7 +190,7 @@ utopia_journal_prod.5 = {
 		name = utopia.slow_progress
 		add_modifier = {
 			name = agricultural_mechanization
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 }
@@ -216,7 +216,7 @@ utopia_journal_prod.6 = {
 		name = utopia.slow_progress
 		add_modifier = {
 			name = agricultural_mechanization
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 }
@@ -242,7 +242,7 @@ utopia_journal_prod.7 = {
 		name = utopia.slow_progress
 		add_modifier = {
 			name = slow_tech_progress
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}	
 }
@@ -278,7 +278,7 @@ utopia_journal_prod.8 = {
 		name = utopia.slow_progress
 		add_modifier = {
 			name = slow_tech_progress
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}	
 }
@@ -314,7 +314,7 @@ utopia_journal_prod.9 = {
 		name = utopia.slow_progress
 		add_modifier = {
 			name = slow_tech_progress
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}	
 }
@@ -350,7 +350,7 @@ utopia_journal_prod.10 = {
 		name = utopia.slow_progress
 		add_modifier = {
 			name = slow_tech_progress
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}	
 }
@@ -386,7 +386,7 @@ utopia_journal_prod.11 = {
 		name = utopia.slow_progress
 		add_modifier = {
 			name = slow_tech_progress
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}	
 }
@@ -432,7 +432,7 @@ utopia_journal_prod.12 = {
 		name = utopia.slow_progress
 		add_modifier = {
 			name = slow_tech_progress
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}	
 }

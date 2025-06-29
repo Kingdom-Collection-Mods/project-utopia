@@ -464,7 +464,7 @@ event_new_dawn.3 = {
 			}
 			add_modifier = {
 				name = orleanist_restoration_modifier
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		
@@ -593,7 +593,7 @@ event_new_dawn.3 = {
 			}
 			add_modifier = {
 				name = legitimist_restoration_modifier
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		
@@ -722,7 +722,7 @@ event_new_dawn.3 = {
 			}
 			add_modifier = {
 				name = legitimist_restoration_modifier
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		
