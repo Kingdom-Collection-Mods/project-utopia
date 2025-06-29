@@ -76,6 +76,11 @@
  je_ut_new_dawn_effect_tt: "New Dawn Teil 2"
  new_dawn_ongoing: "New Dawn"
 
+ event_new_dawn.1.t: "New Dawn"
+ event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
+ event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. We must navigate these waters carefully, balancing the demands of the people with the needs of the state. The choices we make now will shape the future of our nation for generations to come."
+
+
  ut_new_dawn_status: "New Dawn"
  ut_new_dawn_communist_bar: "Communist"
  ut_new_dawn_communist_bar_desc: "Communist progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_upper_bound')])"
@@ -84,7 +89,7 @@
  ut_nd_communist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_command_economy').GetName], [GetLawType('law_cooperative_ownership').GetName]"
  ut_nd_communist_progress_from_legitimacy: "[concept_government] [concept_legitimacy]"
  ut_nd_communist_progress_from_movements: "[concept_political_movement_support] of #bold Anarchist, Radical, Communist, and Vanguardist#! [Concept('concept_political_movement','$concept_political_movements$')]"
- ut_nd_communist_progress_from_effects: "events and other effects"
+ ut_nd_communist_progress_from_focus: "events and other effects"
  ut_new_dawn_communist_status: "Kommunistische Ideen verbreiten sich"
 
  ut_new_dawn_democrat_focus: "Moderate"
@@ -94,7 +99,7 @@
  ut_nd_democrat_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_monarchy').GetName]"
  ut_nd_democrat_progress_from_legitimacy: "[concept_government] [concept_legitimacy]"
  ut_nd_democrat_progress_from_movements: "[concept_political_movement_support] of #bold Moderate#! [Concept('concept_political_movement','$concept_political_movements$')]"
- ut_nd_democrat_progress_from_effects: "events and other effects"
+ ut_nd_democrat_progress_from_focus: "events and other effects"
  ut_new_dawn_democrat_status: "Moderaten Ideen verbreiten sich"
 
  ut_new_dawn_fascist_bar: "Fascists"
@@ -104,8 +109,13 @@
  ut_nd_fascist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName]"
  ut_nd_fascist_progress_from_legitimacy: "[concept_government] [concept_legitimacy]"
  ut_nd_fascist_progress_from_movements: "[concept_political_movement_support] of #bold Fascist#! [Concept('concept_political_movement','$concept_political_movements$')]"
- ut_nd_fascist_progress_from_effects: "events and other effects"
+ ut_nd_fascist_progress_from_focus: "events and other effects"
  ut_new_dawn_fascist_status: "Faschistische Ideen verbreiten sich"
+
+ ut_new_dawn_fascist_focus: "Faschistischer Fokus (tbd)"
+ ut_new_dawn_autocrat_focus: "Autokratischer Fokus (tbd)"
+ ut_new_dawn_democrat_focus: "Demokratischer Fokus"
+ ut_new_dawn_communist_focus: "Kommunistischer Fokus (tbd)"
 
  je_ai_radio_researched: "Radio Researched"
  je_ai_radio_researched_reason: "REPLACE_ME"
@@ -639,7 +649,7 @@
  consumer_goods: "Konsumgüter"
  heavy_machinery: "Schwerlastmaschinen"
 
- prestige_good_generic_consumer_goods_simple: "Kühlschränke"
+ prestige_good_generic_consumer_goods_simple: "Waschmaschinen"
  prestige_good_generic_consumer_goods_complex: "Farbfernsehere"
  prestige_good_generic_computers_b2b: "Mainframe Computer"
  prestige_good_generic_computers_b2c: "Personal Computer"
@@ -701,15 +711,22 @@
  pm_ut_high_speed_electric_trains: "Intercity"
  pm_ut_high_speed_electric_trains_principle_transport_3: "Intercity"
 
+
  ut_commercial_goods_simple_company: "ElektroNord Gerätewerk"
  ut_commercial_goods_complex_company: "ColorVision Ltd."
  ut_mining_company: "Zentrummetall GmbH"
  ut_electronics_company: "Microtech Group"
  ut_mainframe_computer_company: "Systems Group"
  ut_personal_computer_company: "Microtechnologies"
- ut_heavy_machinery_company: "Krantechnik AG"
+ ut_heavy_machinery_company_era_6: "Krantechnik AG"
+ ut_heavy_machinery_company_era_7: "Tunnelbohr AG"
+ ut_heavy_machinery_company_era_8: "Industrie Roboter AG"
  ut_software_company: "Software Solutions AG"
+ ut_software_company_era_7: "Software Solutions AG"
+ ut_software_company_era_8: "Software Solutions AG"
  ut_synthetics_company: "Synthetics Ltd."
+ ut_plastic_company: "Plastiform GmbH"
+
 
  building_heavy_machinery_factory_throughput_add: "$building_heavy_machinery_factory$-[concept_throughput]"
  building_heavy_machinery_factory_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_heavy_machinery_factory$."

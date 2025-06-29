@@ -80,6 +80,7 @@
  event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
  event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. We must navigate these waters carefully, balancing the demands of the people with the needs of the state. The choices we make now will shape the future of our nation for generations to come."
 
+
  ut_new_dawn_status: "New Dawn"
  ut_new_dawn_communist_bar: "Communist"
  ut_new_dawn_communist_bar_desc: "Communist progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_upper_bound')])"
@@ -88,16 +89,17 @@
  ut_nd_communist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_command_economy').GetName], [GetLawType('law_cooperative_ownership').GetName]"
  ut_nd_communist_progress_from_legitimacy: "[concept_government] [concept_legitimacy]"
  ut_nd_communist_progress_from_movements: "[concept_political_movement_support] of #bold Anarchist, Radical, Communist, and Vanguardist#! [Concept('concept_political_movement','$concept_political_movements$')]"
- ut_nd_communist_progress_from_effects: "events and other effects"
+ ut_nd_communist_progress_from_focus: "events and other effects"
+ ut_new_dawn_communist_status: "Kommunistische Ideen verbreiten sich"
 
- ut_new_dawn_democrat_focus: "Moderate"
- ut_new_dawn_democrat_focus_desc: "Moderate progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_upper_bound')])"
+
  ut_nd_democrat_progress_from_characters: "combined [concept_popularity] of #bold Moderate (non-extremist)#! characters"
  ut_nd_democrat_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with #bold Moderate#! leaders"
  ut_nd_democrat_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_monarchy').GetName]"
  ut_nd_democrat_progress_from_legitimacy: "[concept_government] [concept_legitimacy]"
  ut_nd_democrat_progress_from_movements: "[concept_political_movement_support] of #bold Moderate#! [Concept('concept_political_movement','$concept_political_movements$')]"
- ut_nd_democrat_progress_from_effects: "events and other effects"
+ ut_nd_democrat_progress_from_focus: "events and other effects"
+ ut_new_dawn_democrat_status: "Moderaten Ideen verbreiten sich"
 
  ut_new_dawn_fascist_bar: "Fascists"
  ut_new_dawn_fascist_bar_desc: "Fascist progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_upper_bound')])"
@@ -106,8 +108,14 @@
  ut_nd_fascist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName]"
  ut_nd_fascist_progress_from_legitimacy: "[concept_government] [concept_legitimacy]"
  ut_nd_fascist_progress_from_movements: "[concept_political_movement_support] of #bold Fascist#! [Concept('concept_political_movement','$concept_political_movements$')]"
- ut_nd_fascist_progress_from_effects: "events and other effects"
+ ut_nd_fascist_progress_from_focus: "events and other effects"
  ut_new_dawn_fascist_status: "Fas"
+
+ ut_new_dawn_fascist_focus: "Faschistischer Fokus (tbd)"
+ ut_new_dawn_autocrat_focus: "Autokratischer Fokus (tbd)"
+ ut_new_dawn_democrat_focus: "Demokratischer Fokus"
+ ut_new_dawn_communist_focus: "Kommunistischer Fokus (tbd)"
+
 
  je_ai_radio_researched: "REPLACE_ME"
  je_ai_radio_researched_reason: "REPLACE_ME"
@@ -143,6 +151,11 @@
  ig_urbanists_only_icon: "@urbanists!"
  ig_variant_urbanists: "[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant]"
  interest_group_ig_urbanists_pol_str_mult: "$ig_variant_urbanists$ [concept_political_strength]"
+ interest_group_ig_urbanists_pol_str_mult_desc: "Ein Bonus oder Abzug auf die [concept_political_strength] der [concept_interest_group] „$ig_variant_urbanists$“ insgesamt."
+ interest_group_ig_urbanists_approval_add: "[concept_approval] ($ig_variant_urbanists$)"
+ interest_group_ig_urbanists_approval_add_desc: "Ein Bonus oder Abzug auf die [concept_approval] der [concept_interest_group] „$ig_variant_urbanists$“ insgesamt."
+ interest_group_ig_urbanists_pop_attraction_mult: "Pop-Anziehung ($ig_variant_urbanists$)"
+ interest_group_ig_urbanists_pop_attraction_mult_desc: "Ein Bonus oder Abzug darauf, wie sehr Pops von der [concept_interest_group] „$ig_variant_urbanists$“ angezogen werden."
 
  ideology_urbanist_liberalist: "Urban-Liberal Ideology"
  ideology_urbanist_power_base: "Cosmopolitan"
@@ -636,6 +649,18 @@
  consumer_goods: "Consumer Goods"
  heavy_machinery: "Machinery"
 
+ prestige_good_generic_consumer_goods_simple: "Waschmaschinen"
+ prestige_good_generic_consumer_goods_complex: "Farbfernsehere"
+ prestige_good_generic_computers_b2b: "Mainframe Computer"
+ prestige_good_generic_computers_b2c: "Personal Computer"
+ prestige_good_generic_electronics: "LEDs"
+ prestige_good_generic_heavy_machinery_era_6: "Turmdrehkräne"
+ prestige_good_generic_heavy_machinery_era_7: "Tunnelbohrmaschinenen"
+ prestige_good_generic_heavy_machinery_era_8: "Industrie Robotor"
+ prestige_good_generic_plastic: "PVC"
+ prestige_good_generic_software_b2b: "Database Software"
+ prestige_good_generic_software_b2c: "Office Software"
+
 
  goods_input_internet_add: "@internet! Internet input"
  goods_input_internet_add_desc: "The amount of @internet! Internet consumed by buildings"
@@ -687,15 +712,52 @@
  pm_ut_high_speed_electric_trains: "Intercity"
  pm_ut_high_speed_electric_trains_principle_transport_3: "Intercity"
 
- ut_commercial_goods_simple_company: "Consumer Goods Company – Basic"
- ut_commercial_goods_complex_company: "Consumer Goods Company – Advanced"
- ut_mining_company: "Mining Company"
- ut_electronics_company: "Electronics Company"
- ut_mainframe_computer_company: "Mainframe Computer Company"
- ut_personal_computer_company: "Personal Computer Company"
- ut_heavy_machinery_company: "Heavy Machinery Company"
- ut_software_company: "Software Company"
- ut_synthetics_company: "Synthetics Company"
+ ut_commercial_goods_simple_company: "ElektroNord Gerätewerk"
+ ut_commercial_goods_complex_company: "ColorVision Ltd."
+ ut_mining_company: "Zentrummetall GmbH"
+ ut_electronics_company: "Microtech Group"
+ ut_mainframe_computer_company: "Systems Group"
+ ut_personal_computer_company: "Microtechnologies"
+ ut_heavy_machinery_company_era_6: "Krantechnik AG"
+ ut_heavy_machinery_company_era_7: "Tunnelbohr AG"
+ ut_heavy_machinery_company_era_8: "Industrie Roboter AG"
+ ut_software_company: "Software Solutions AG"
+ ut_software_company_era_7: "Software Solutions AG"
+ ut_software_company_era_8: "Software Solutions AG"
+ ut_synthetics_company: "Synthetics Ltd."
+ ut_plastic_company: "Plastiform GmbH"
+
+
+ building_heavy_machinery_factory_throughput_add: "$building_heavy_machinery_factory$-[concept_throughput]"
+ building_heavy_machinery_factory_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_heavy_machinery_factory$."
+
+ building_plastic_factory_throughput_add: "$building_plastic_factory$-[concept_throughput]"
+ building_plastic_factory_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_plastic_factory$."
+
+ building_electronic_factory_throughput_add: "$building_electronic_factory$-[concept_throughput]"
+ building_electronic_factory_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_electronic_factory$."
+
+ building_bauxite_mining_throughput_add: "$building_bauxite_mining$-[concept_throughput]"
+ building_bauxite_mining_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_bauxite_mining$."
+
+ building_aluminum_factory_throughput_add: "$building_aluminum_factory$-[concept_throughput]"
+ building_aluminum_factory_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_aluminum_factory$."
+
+ building_rare_earths_mine_throughput_add: "$building_rare_earths_mine$-[concept_throughput]" 
+ building_rare_earths_mine_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_rare_earths_mine$."
+
+ building_computer_factory_throughput_add: "$building_computer_factory$-[concept_throughput]"
+ building_computer_factory_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_computer_factory$."
+
+ building_software_company_throughput_add: "$building_software_company$-[concept_throughput]"
+ building_software_company_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_software_company$."
+ 
+ building_commercial_factory_throughput_add: "$building_commercial_factory$-[concept_throughput]"
+ building_commercial_factory_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_commercial_factory$."
+ 
+ building_synthetic_oil_throughput_add: "$building_synthetic_oil$-[concept_throughput]"
+ building_synthetic_oil_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_synthetic_oil$."
+
 
 
  pm_automatic_power_looms_2: "Schützenlose Webmaschine"

@@ -7,66 +7,66 @@
 prestige_good_generic_consumer_goods_simple = {
 	base_good = consumer_goods
 	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/trade_good_icon_prestige_frame.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/washing_machine.dds"
 }
 
 
 prestige_good_generic_consumer_goods_complex = {
 	base_good = consumer_goods
 	prestige_bonus = 0.2
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/trade_good_icon_prestige_frame.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/color_tv.dds"
 }
 
 prestige_good_generic_computers_b2b = {
 	base_good = computers
 	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/trade_good_icon_prestige_frame.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/mainframe_computer.dds"
 }
 
 prestige_good_generic_computers_b2c = {
 	base_good = computers
 	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/trade_good_icon_prestige_frame.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/personal_computer.dds"
 }
 
 prestige_good_generic_electronics = {
 	base_good = furniture
 	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/trade_good_icon_prestige_frame.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/complex_electronics.dds"
 }
 
 prestige_good_generic_heavy_machinery_era_6 = { # good shit
 	base_good = heavy_machinery
 	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/trade_good_icon_prestige_frame.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/tower_crane.dds"
 }
 
 prestige_good_generic_heavy_machinery_era_7 = {
 	base_good = heavy_machinery
 	prestige_bonus = 0.2
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/trade_good_icon_prestige_frame.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/tunnel_boring_machines.dds"
 }
 
 prestige_good_generic_heavy_machinery_era_8 = {
 	base_good = heavy_machinery
 	prestige_bonus = 0.3
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/trade_good_icon_prestige_frame.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/industrial_robots.dds"
 }
 
 prestige_good_generic_plastic = {
 	base_good = plastic
 	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/trade_good_icon_prestige_frame.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/pvc.dds"
 }
 
 prestige_good_generic_software_b2b = {
 	base_good = coffee
 	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/trade_good_icon_prestige_frame.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/database_software.dds"
 }
 
 prestige_good_generic_software_b2c = {
 	base_good = steel
 	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/trade_good_icon_prestige_frame.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/office_software.dds"
 }
