@@ -396,7 +396,6 @@ electronics_motors_production = {
 	}
 	
     modifier = {
-		goods_output_automobiles_mult = 0.1
 	}
 	
 	ai_weight = {

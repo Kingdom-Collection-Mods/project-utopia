@@ -93,25 +93,6 @@ light_ships_rockets_machinery = {
 	}
 }
 
-
-light_ships_rockets_computers = {
-	era = era_7
-	texture = "gfx/interface/icons/invention_icons/surveillance_corvettes.dds"
-	category = military
-
-	unlocking_technologies = {	
-		light_ships_rockets_machinery
-	}
-
-	modifier = {
-		unit_navy_defense_add = 5
-    }
-	
-	ai_weight = {
-		value = 1
-	}
-}
-
 light_ships_rockets_computers = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/surveillance_corvettes.dds"
