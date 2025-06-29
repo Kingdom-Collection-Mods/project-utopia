@@ -74,8 +74,8 @@ pm_ut_precision_tools = {
 			# input goods
 			goods_input_rubber_add = 10
 			goods_input_steel_add = 30
-			goods_input_bauxite_add = 1
-			goods_input_electronics_add = 1
+			goods_input_aluminum_add = 2
+			goods_input_electronics_add = 2
 			goods_input_electricity_add = 1
 			
 			# output goods
@@ -231,7 +231,7 @@ pm_heavy_machinery_textile  = {
 		workforce_scaled = {
 			# input goods
 			goods_input_tools_add = 10
-			goods_input_fabric_add = 50
+			goods_input_fabric_add = 60
 			goods_input_plastic_add = 10 #polyester
 			goods_input_electricity_add = 10
 			goods_input_dye_add = 20
@@ -265,7 +265,7 @@ pm_plastics_textile  = {
 		workforce_scaled = {
 			# input goods
 			goods_input_tools_add = 10
-			goods_input_fabric_add = 30
+			goods_input_fabric_add = 50
 			goods_input_electricity_add = 10
 			goods_input_dye_add = 20
 			goods_input_plastic_add = 40 #acrylfasern
