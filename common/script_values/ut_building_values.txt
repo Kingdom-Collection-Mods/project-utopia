@@ -7,4 +7,6 @@ construction_cost_modern_industry = 2000
 #construction_cost_low = 200
 #construction_cost_very_low = 100
 
-new_dawn_upper_bound = 480
+new_dawn_core_upper_bound = 240
+new_dawn_ideology_upper_bound = 100
+new_dawn_ideology_required_points = 100

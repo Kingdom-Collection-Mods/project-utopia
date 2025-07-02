@@ -473,6 +473,7 @@ ut_plastic_company = {
 	
 	extension_building_types = {
 		building_explosives_factory
+		building_heavy_machinery_factory
 	}
 
 	possible_prestige_goods = {

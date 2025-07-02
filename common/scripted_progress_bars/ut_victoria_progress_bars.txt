@@ -39,7 +39,7 @@ ut_new_dawn_fascist_bar = {
 
 	start_value = 10
 	min_value = 0
-	max_value = 480 # new_dawn_upper_bound
+	max_value = 240 # new_dawn_core_upper_bound
 
 }
 
@@ -82,7 +82,7 @@ ut_new_dawn_democrat_bar = {
 
 	start_value = 0
 	min_value = 0
-	max_value = 480 # new_dawn_upper_bound
+	max_value = 240 # new_dawn_core_upper_bound
 
 }
 
@@ -125,7 +125,7 @@ ut_new_dawn_communist_bar = {
 
 	start_value = 0
 	min_value = 0
-	max_value = 480 # new_dawn_upper_bound
+	max_value = 240 # new_dawn_core_upper_bound
 
 }
 
@@ -167,13 +167,13 @@ ut_new_dawn_autocrat_bar = {
 
 	start_value = 0
 	min_value = 0
-	max_value = 480 # new_dawn_upper_bound
+	max_value = 240 # new_dawn_core_upper_bound
 
 }
 
 je_ut_new_dawn_democratic_points_bar = {
-	name = "ut_new_dawn_autocrat_bar"
-	desc = "ut_new_dawn_autocrat_bar_desc"
+	name = "je_ut_new_dawn_democratic_points_bar"
+	desc = "je_ut_new_dawn_democratic_points_bar_desc"
 
 	default = yes
 
@@ -184,31 +184,31 @@ je_ut_new_dawn_democratic_points_bar = {
 					has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
 				}
 			}
+			
 			add = {
-				desc = "ut_nd_autocrat_progress_from_characters"
-				value = owner.var:ut_nd_autocrat_progress_from_characters
+				desc = "ut_nd_democrat_progress_from_characters"
+				value = owner.var:ut_nd_democrat_progress_from_characters
 			}
 			add = {
-				desc = "ut_nd_autocrat_progress_from_igs"
-				value = owner.var:ut_nd_autocrat_progress_from_igs
+				desc = "ut_nd_democrat_progress_from_igs"
+				value = owner.var:ut_nd_democrat_progress_from_igs
 			}
 			add = {
-				desc = "ut_nd_autocrat_progress_from_legitimacy"
-				value = owner.var:ut_nd_autocrat_progress_from_legitimacy
+				desc = "ut_nd_democrat_progress_from_laws"
+				value = owner.var:ut_nd_democrat_progress_from_laws
 			}
 			add = {
-				desc = "ut_nd_autocrat_progress_from_laws"
-				value = owner.var:ut_nd_autocrat_progress_from_laws
+				desc = "ut_nd_democrat_progress_from_legitimacy"
+				value = owner.var:ut_nd_democrat_progress_from_legitimacy
 			}
 			add = {
-				desc = "ut_nd_autocrat_progress_from_focus"
-				value = owner.var:ut_nd_autocrat_progress_from_focus
+				desc = "ut_nd_democrat_progress_from_focus"
+				value = owner.var:ut_nd_democrat_progress_from_focus
 			}
 		}
 	}
 
 	start_value = 0
 	min_value = 0
-	max_value = 480 # new_dawn_upper_bound
-
+	max_value = 100 # new_dawn_core_upper_bound
 }

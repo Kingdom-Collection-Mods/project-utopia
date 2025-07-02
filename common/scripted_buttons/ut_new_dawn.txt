@@ -1,7 +1,7 @@
 ﻿#Base
 ut_new_dawn_fascist_focus = {
-	name = "christ_of_nations_button"
-	desc = "christ_of_nations_button_desc"
+	name = "ut_new_dawn_fascist_focus"
+	desc = "ut_new_dawn_fascist_focus_desc"
 
 	visible = { always = yes }
 
@@ -10,55 +10,70 @@ ut_new_dawn_fascist_focus = {
 		NOT = { has_variable = je_ut_new_dawn_fascist_focus }
 	}
 
-	effect = {		
+	effect = {	
+		custom_tooltip = ut_new_dawn_fascist_focus_tt	
 		set_variable = je_ut_new_dawn_fascist_focus
-		remove_variable = je_ut_new_dawn_autocratic_focus
-		remove_variable = je_ut_new_dawn_democratic_focus
+		remove_variable = je_ut_new_dawn_autocrat_focus
+		remove_variable = je_ut_new_dawn_democrat_focus
 		remove_variable = je_ut_new_dawn_communist_focus
+		add_modifier = {
+			name = ut_new_dawn_focus_recently_changed
+			days = normal_modifier_time
+		}
 	}
 }
 
 ut_new_dawn_autocrat_focus = {
-	name = "christ_of_nations_button"
-	desc = "christ_of_nations_button_desc"
+	name = "ut_new_dawn_autocrat_focus"
+	desc = "ut_new_dawn_autocrat_focus_desc"
 
 	visible = { always = yes }
 
 	possible = {
 		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
-		NOT = { has_variable = je_ut_new_dawn_autocratic_focus }
+		NOT = { has_variable = je_ut_new_dawn_autocrat_focus }
 	}
 
-	effect = {		
-		set_variable = je_ut_new_dawn_autocratic_focus
+	effect = {
+		custom_tooltip = ut_new_dawn_autocrat_focus_tt
+		set_variable = je_ut_new_dawn_autocrat_focus
 		remove_variable = je_ut_new_dawn_fascist_focus
-		remove_variable = je_ut_new_dawn_democratic_focus
+		remove_variable = je_ut_new_dawn_democrat_focus
 		remove_variable = je_ut_new_dawn_communist_focus
+		add_modifier = {
+			name = ut_new_dawn_focus_recently_changed
+			days = normal_modifier_time
+		}
 	}
 }
 
 ut_new_dawn_democrat_focus = {
-	name = "christ_of_nations_button"
-	desc = "christ_of_nations_button_desc"
+	name = "ut_new_dawn_democrat_focus"
+	desc = "ut_new_dawn_democrat_focus_desc"
 
 	visible = { always = yes }
 
 	possible = {
 		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
-		NOT = { has_variable = je_ut_new_dawn_democratic_focus }
+		NOT = { has_variable = je_ut_new_dawn_democrat_focus }
 	}
 
-	effect = {		
-		set_variable = je_ut_new_dawn_democratic_focus
+	effect = {
+		custom_tooltip = ut_new_dawn_democratic_focus_tt
+		set_variable = je_ut_new_dawn_democrat_focus
 		remove_variable = je_ut_new_dawn_fascist_focus
-		remove_variable = je_ut_new_dawn_autocratic_focus
+		remove_variable = je_ut_new_dawn_autocrat_focus
 		remove_variable = je_ut_new_dawn_communist_focus
+		add_modifier = {
+			name = ut_new_dawn_focus_recently_changed
+			days = normal_modifier_time
+		}
 	}
 }
 
 ut_new_dawn_communist_focus = {
-	name = "christ_of_nations_button"
-	desc = "christ_of_nations_button_desc"
+	name = "ut_new_dawn_communist_focus"
+	desc = "ut_new_dawn_communist_focus_desc"
 
 	visible = { always = yes }
 
@@ -68,21 +83,29 @@ ut_new_dawn_communist_focus = {
 	}
 
 	effect = {		
+		custom_tooltip = ut_new_dawn_communist_focus_tt
 		set_variable = je_ut_new_dawn_communist_focus
 		remove_variable = je_ut_new_dawn_fascist_focus
-		remove_variable = je_ut_new_dawn_autocratic_focus
-		remove_variable = je_ut_new_dawn_democratic_focus
+		remove_variable = je_ut_new_dawn_autocrat_focus
+		remove_variable = je_ut_new_dawn_democrat_focus
+		add_modifier = {
+			name = ut_new_dawn_focus_recently_changed
+			days = normal_modifier_time
+		}
 	}
 }
 
 ####Democratic Buttons####
-je_ut_new_dawn_democratic_base = {
-	name = "christ_of_nations_button"
-	desc = "christ_of_nations_button_desc"
+je_ut_new_dawn_democratic_spirit = {
+	name = "je_ut_new_dawn_democratic_spirit"
+	desc = "je_ut_new_dawn_democratic_spirit_desc"
 
 	visible = { always = yes }
 
 	possible = {
+		je:je_ut_new_dawn_democratic = { 
+			"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
+		}
 		OR = {
 			has_law = law_type:law_parliamentary_republic
 			has_law = law_type:law_presidential_republic
@@ -110,17 +133,20 @@ je_ut_new_dawn_democratic_base = {
 			remove_ideology = ideology_liberal
 			add_ideology = ideology_liberal_modern
 		}
-		set_variable = je_ut_new_dawn_democratic_base_done
+		set_variable = je_ut_new_dawn_democratic_spirit_done
 	}
 }
 
 je_ut_new_dawn_democratic_cultural_values = {
-	name = "christ_of_nations_button"
-	desc = "christ_of_nations_button_desc"
+	name = "je_ut_new_dawn_democratic_cultural_values"
+	desc = "je_ut_new_dawn_democratic_cultural_values_desc"
 
 	visible = { always = yes }
 
 	possible = {
+		je:je_ut_new_dawn_democratic = { 
+			"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
+		}
         OR = {
             is_subject = no
             has_law = law_type:law_protected_speech
@@ -135,28 +161,26 @@ je_ut_new_dawn_democratic_cultural_values = {
 	}
 
 	effect = {
-		trigger_event = { id = poland_events.1 days = 0 popup = yes }
-		custom_tooltip = christ_of_nations_button_tt_1
 		ig:ig_devout = {
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_moralist
 		}
 		set_variable = je_ut_new_dawn_democratic_cultural_values_done
+		je:je_ut_new_dawn_democratic = {
+			add_progress = { value = -50 name = je_ut_new_dawn_democratic_points_bar }
+		}
 	}
 }
 
 je_ut_new_dawn_democratic_power_bloc = {
-	name = "christ_of_nations_button"
-	desc = "christ_of_nations_button_desc"
+	name = "je_ut_new_dawn_democratic_power_bloc"
+	desc = "je_ut_new_dawn_democratic_power_bloc_desc"
 
 	visible = { always = yes }
 
 	possible = {
-		custom_tooltip = {
-			text = christ_of_nations_button_tt_2
-			NOT = {
-				has_variable = christ_of_nations_cooldown
-			}
+		je:je_ut_new_dawn_democratic = { 
+			"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
 		}
 		is_in_power_bloc = yes
 		OR = {
@@ -168,18 +192,32 @@ je_ut_new_dawn_democratic_power_bloc = {
 	}
 
 	effect = {
-		trigger_event = { id = poland_events.1 days = 0 popup = yes }
-		custom_tooltip = christ_of_nations_button_tt_1
-		set_variable = {
-			name = christ_of_nations_cooldown
-			days = normal_modifier_time
-		}
-		show_as_tooltip = {
-			add_modifier = {
-				name = funding_polish_radicals
-				days = normal_modifier_time
-			}
-		}
+		custom_tooltip = je_ut_new_dawn_democratic_power_bloc_tt
 		set_variable = je_ut_new_dawn_democratic_power_bloc_done
+		je:je_ut_new_dawn_democratic = {
+			add_progress = { value = -50 name = je_ut_new_dawn_democratic_points_bar }
+		}
+	}
+}
+
+je_ut_new_dawn_democratic_fair_elections = {
+	name = "je_ut_new_dawn_democratic_fair_elections"
+	desc = "je_ut_new_dawn_democratic_fair_elections_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		je:je_ut_new_dawn_democratic = { 
+			"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
+		}
+		has_law = law_type:law_universal_suffrage
+	}
+
+	effect = {
+		custom_tooltip = je_ut_new_dawn_democratic_fair_elections_tt
+		set_variable = je_ut_new_dawn_democratic_fair_elections_done
+		je:je_ut_new_dawn_democratic = {
+			add_progress = { value = -50 name = je_ut_new_dawn_democratic_points_bar }
+		}
 	}
 }

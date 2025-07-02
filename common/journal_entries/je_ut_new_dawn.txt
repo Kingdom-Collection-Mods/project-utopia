@@ -123,96 +123,26 @@
 				limit = {
 					scope:journal_entry = { 
 						OR = {
-							"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= new_dawn_upper_bound
-							"scripted_bar_progress(ut_new_dawn_democrat_bar)" >= new_dawn_upper_bound
-							"scripted_bar_progress(ut_new_dawn_communist_bar)" >= new_dawn_upper_bound
-							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" >= new_dawn_upper_bound
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= new_dawn_core_upper_bound
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" >= new_dawn_core_upper_bound
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" >= new_dawn_core_upper_bound
+							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" >= new_dawn_core_upper_bound
 						}
 					}
 					NOT = {
 						has_variable = ut_new_dawn_bar_freeze
 					}
 				}
-				if = { #Fires the event to enthrone the pretender - 1 if contextualised as coup, 10 if contextualised as reinforcement.
+				if = {
 					limit = {
 						scope:journal_entry = { 
-							"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
-							"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
-							"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+							ut_ideology_new_dawn_focus_won = yes
 						}
 					}
-					if = {
-						limit = {
-							ruler ?= {
-								ut_ideology_new_dawn_communist_trigger = yes								
-							}
-						}
-						trigger_event = { id = event_new_dawn.2 popup = yes} #Reinforcement event - fires if the leading ideology is the one in power.
-					}
-					else = {
-						trigger_event = { id = event_new_dawn.3 popup = yes} #Coup event - fires if the leading ideology is not the one in power.
-					}
+					trigger_event = { id = event_new_dawn.2 popup = yes} #Reinforcement event - fires if the leading ideology is the one in power.
 				}
-				else_if = {
-					limit = {
-						scope:journal_entry = { 
-							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
-							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
-							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
-						}
-					}
-					if = {
-						limit = {
-							ruler ?= {
-								ut_ideology_new_dawn_fascist_trigger = yes								
-							}
-						}
-						trigger_event = { id = event_new_dawn.2 popup = yes}
-					}
-					else = {
-						trigger_event = { id = event_new_dawn.3 popup = yes}
-					}
-				}
-				else_if = {
-					limit = {
-						scope:journal_entry = { 
-							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
-							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"	
-						}
-					}
-					if = {
-						limit = {
-							ruler ?= {
-								ut_ideology_new_dawn_democrat_trigger = yes								
-							}
-						}
-						trigger_event = { id = event_new_dawn.2 popup = yes}
-					}
-					else = {
-						trigger_event = { id = event_new_dawn.3 popup = yes}
-					}
-				}
-				else_if = {
-					limit = {
-						scope:journal_entry = { 
-							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
-							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
-						}
-					}
-					
-					if = {
-						limit = {
-							ruler ?= {
-								ut_ideology_new_dawn_democrat_trigger = yes								
-							}
-						}
-						trigger_event = { id = event_new_dawn.2 popup = yes}
-					}
-					else = {
-						trigger_event = { id = event_new_dawn.3 popup = yes}
-					}
+				else = {
+					trigger_event = { id = event_new_dawn.3 popup = yes} #Coup event - fires if the leading ideology is not the one in power.
 				}
 				ut_freeze_new_dawn_progress = yes #Freezes the bars so that they no longer accumulate progress on the monthly tick, and stay as they are. In the case that Cement the Rightful ideology fails, the bars will be set back.
 			}
@@ -250,7 +180,7 @@ je_ut_new_dawn_democratic = {
 	}
 
 	possible = {
-		has_variable = new_dawn_democrat_var
+		has_variable = ut_new_dawn_core_democrat_var
 	}
 
 	modifiers_while_active = {
@@ -265,9 +195,10 @@ je_ut_new_dawn_democratic = {
 		# }
 	}
 	
-	scripted_button = je_ut_new_dawn_democratic_base
+	scripted_button = je_ut_new_dawn_democratic_spirit
 	scripted_button = je_ut_new_dawn_democratic_cultural_values
 	scripted_button = je_ut_new_dawn_democratic_power_bloc
+	scripted_button = je_ut_new_dawn_democratic_fair_elections
 
 	
 	scripted_progress_bar = je_ut_new_dawn_democratic_points_bar
@@ -277,9 +208,10 @@ je_ut_new_dawn_democratic = {
 			text = je_ut_new_dawn_condition_tt
 			 #Can only ever complete upon finishing the Cement the Rightful ideology journal entry.
 		}
-		has_variable = je_ut_new_dawn_democratic_base_done
+		has_variable = je_ut_new_dawn_democratic_spirit_done
 		has_variable = je_ut_new_dawn_democratic_cultural_values_done
 		has_variable = je_ut_new_dawn_democratic_power_bloc_done
+		has_variable = je_ut_new_dawn_democratic_fair_elections_done
 	}
 
 	on_complete = {
@@ -295,16 +227,16 @@ je_ut_new_dawn_democratic = {
 
 	on_weekly_pulse = {
 		events = {
-			event_new_dawn.1
+			#event_new_dawn.1
 		}
 		effect = {
 			if = {
 				limit = {
 					NOT = {
-						has_variable = je_ut_new_dawn_democratic_regress #This variable stops iteration, and is granted by reaching 480 with one ideology. It's reset when this JE is completed, or when je_cement_the_rightful_ideology fails.
+						has_variable = je_ut_new_dawn_democratic_freeze #This variable stops iteration, and is granted by reaching 480 with one ideology. It's reset when this JE is completed, or when je_cement_the_rightful_ideology fails.
 					}
 				}
-				je_ut_new_dawn_democratic_points_gain = yes
+				ut_new_dawn_democrat_progress = yes
 			}
 		}
 	}

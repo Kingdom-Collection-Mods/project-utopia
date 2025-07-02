@@ -37,11 +37,41 @@ ut_ideology_new_dawn_democrat_trigger = {
 		has_ideology = ideology:ideology_social_democrat
 		has_ideology = ideology:ideology_utopian
 		AND = {
-			has_variable = je_ut_new_dawn_democratic_focus
+			has_variable = je_ut_new_dawn_democrat_focus
 			OR = {
 				has_ideology = ideology:ideology_humanitarian_royalist
 				has_ideology = ideology:ideology_radical
 			}
+		}
+	}
+
+}
+
+ut_ideology_new_dawn_focus_won = {
+	OR = {
+		AND = {
+			"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+			"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+			"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+			has_variable = je_ut_new_dawn_democrat_focus
+		}
+		AND = {
+			"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+			"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+			"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+			has_variable = je_ut_new_dawn_autocrat_focus
+		}
+		AND = {
+			"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+			"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+			"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+			has_variable = je_ut_new_dawn_communist_focus
+		}
+		AND = {
+			"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+			"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+			"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+			has_variable = je_ut_new_dawn_fascist_focus
 		}
 	}
 
@@ -56,7 +86,7 @@ ut_ideology_new_dawn_autocrat_trigger = {
 		has_ideology = ideology:ideology_royalist
 		has_ideology = ideology:ideology_traditionalist
 		AND = {
-			has_variable = je_ut_new_dawn_autocratic_focus
+			has_variable = je_ut_new_dawn_autocrat_focus
 			OR = {
 				has_ideology = ideology:ideology_jingoist_leader
 			}

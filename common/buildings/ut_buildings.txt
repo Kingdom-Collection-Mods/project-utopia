@@ -64,7 +64,7 @@ building_aluminum_factory = {
 
 	
 	unlocking_technologies = {
-		aluminum_base
+		bauxite_mining
 	}
 
 	production_method_groups = {

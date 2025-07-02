@@ -45,8 +45,9 @@ event_new_dawn.2 = {
 				desc = french_pretenders.10.d_1
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
 						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 					}
 				}
 			}
@@ -54,8 +55,9 @@ event_new_dawn.2 = {
 				desc = french_pretenders.10.d_2
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 					}
 				}
 			}
@@ -63,8 +65,19 @@ event_new_dawn.2 = {
 				desc = french_pretenders.10.d_3
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+					}
+				}
+			}
+			triggered_desc = {
+				desc = french_pretenders.10.d_4
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
 					}
 				}
 			}
@@ -76,8 +89,9 @@ event_new_dawn.2 = {
 				desc = french_pretenders.10.f_1
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
 						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 					}
 				}
 			}
@@ -85,8 +99,9 @@ event_new_dawn.2 = {
 				desc = french_pretenders.10.f_2
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 					}
 				}
 			}
@@ -94,8 +109,19 @@ event_new_dawn.2 = {
 				desc = french_pretenders.10.f_3
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+					}
+				}
+			}
+			triggered_desc = {
+				desc = french_pretenders.10.f_4
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
 					}
 				}
 			}
@@ -111,18 +137,11 @@ event_new_dawn.2 = {
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
 
 	trigger = {
-		# triggered by enthrone pretender desicion
+		# triggered by new dawn journal entry
 	}
 
 	cancellation_trigger = {
-		OR = {
-			ruler = {
-				has_modifier = restitutor_orbis
-			}
-			any_interest_group = {
-				has_modifier = stalwarts_of_the_restoration
-			}
-		}
+		always = no
 	}
 
 	immediate = {
@@ -133,73 +152,62 @@ event_new_dawn.2 = {
 		if = {
 			limit = {
 				je:je_ut_new_dawn = { 
-					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
+					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
 					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
+					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 				}
 			}
-			remove_variable = new_dawn_democratic_var
-			remove_variable = new_dawn_communist_var
+			remove_variable = ut_new_dawn_core_democrat_var
+			remove_variable = ut_new_dawn_core_communist_var
+			remove_variable = ut_new_dawn_core_autocrat_var
 			set_variable = {
-				name = new_dawn_fascist_var
+				name = ut_new_dawn_core_fascist_var
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				je:je_ut_new_dawn = { 
-					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
+					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
 					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 				}
 			}
-			remove_variable = new_dawn_fascist_var
-			remove_variable = new_dawn_democrat_var
+			remove_variable = ut_new_dawn_core_fascist_var
+			remove_variable = ut_new_dawn_core_democrat_var
+			remove_variable = ut_new_dawn_core_autocrat_var
 			set_variable = {
-				name = new_dawn_communist_var
+				name = ut_new_dawn_core_communist_var
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				je:je_ut_new_dawn = { 
-					"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-					"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+					"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 				}
 			}
-			remove_variable = new_dawn_fascist_var
-			remove_variable = new_dawn_communist_var
+			remove_variable = ut_new_dawn_core_fascist_var
+			remove_variable = ut_new_dawn_core_communist_var
+			remove_variable = ut_new_dawn_core_autocrat_var
 			set_variable = {
-				name = new_dawn_democrat_var
+				name = ut_new_dawn_core_democrat_var
 			}
-			trigger_event = { id = event_new_dawn.4 popup = yes } #Democratic or Autocratic
 		}
-		
-		# hidden_effect = { generate_french_monarch = yes } maybe new leader vent or smthg
-	}
-	option = {
-		name = french_pretenders.10.a # Long live the Moderates!
-		default_option = yes
-		trigger = {
-			has_variable = new_dawn_democrat_var
-		}
-		custom_tooltip = {
-			text = je_cement_the_rightful_dynasty_fake
-		}
-	}
-	option = {
-		name = french_pretenders.10.c # Long live the Legitimists!
-		default_option = yes
-		trigger = {
-			has_variable = new_dawn_communist_var
-		}
-		custom_tooltip = {
-			text = je_cement_the_rightful_dynasty_fake
-		}
-	}
-	option = {
-		name = french_pretenders.10.d # Long live the Legitimists!
-		trigger = {
-			has_variable = new_dawn_fascist_var
-		}
-		custom_tooltip = {
-			text = je_cement_the_rightful_dynasty_fake
+		else_if = {
+			limit = {
+				je:je_ut_new_dawn = { 
+					"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+					"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+					"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+				}
+			}
+			remove_variable = ut_new_dawn_core_fascist_var
+			remove_variable = ut_new_dawn_core_communist_var
+			remove_variable = ut_new_dawn_core_democrat_var
+			set_variable = {
+				name = ut_new_dawn_core_autocrat_var
+			}
 		}
 	}
 }
@@ -208,605 +216,91 @@ event_new_dawn.2 = {
 event_new_dawn.3 = {
 	type = country_event
 	placement = ROOT
-	title = french_pretenders.1.t
+	title = event_new_dawn.3.t
 	desc = {
 		first_valid = {
 			triggered_desc = {
-				desc = french_pretenders.1.d_1
+				desc = event_new_dawn.3.d_1
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
 						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 					}
 				}
 			}
 			triggered_desc = {
-				desc = french_pretenders.1.d_2
+				desc = event_new_dawn.3.d_2
 				trigger = {
 					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 					}
 				}
 			}
 			triggered_desc = {
-				desc = french_pretenders.1.d_3
-				trigger = {
-					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
-						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
-					}
-				}
-			}
-		}
-	}
-	flavor = {
-		first_valid = {
-			triggered_desc = {
-				desc = french_pretenders.1.f_1
-				trigger = {
-					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
-						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
-					}
-				}
-			}
-			triggered_desc = {
-				desc = french_pretenders.1.f_2
-				trigger = {
-					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
-					}
-				}
-			}
-			triggered_desc = {
-				desc = french_pretenders.1.f_3
-				trigger = {
-					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
-						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
-					}
-				}
-			}
-		}
-	}
-
-	duration = 3
-
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	gui_window = event_window_1char_tabloid
-
-	left_icon = scope:french_monarch_scope
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
-
-	trigger = {
-		# triggered by Divided Monarchy Journal Entry
-	}
-
-	cancellation_trigger = {
-		OR = {
-			ruler = {
-				has_modifier = restitutor_orbis
-			}
-			any_interest_group = {
-				has_modifier = stalwarts_of_the_restoration
-			}
-		}
-	}
-
-	immediate = {
-		#set_variable = { name = pretender_enthroned_cooldown years = 1 }
-		root = {
-			save_scope_as = reflexive_reference_france
-		}
-		if = {
-			limit = {
-				je:je_ut_new_dawn = { 
-					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
-					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
-				}
-			}
-			remove_variable = bonapartist_restoration_var
-			remove_variable = legitimist_restoration_var
-			set_variable = {
-				name = orleanist_restoration_var
-			}
-		}
-		if = {
-			limit = {
-				je:je_ut_new_dawn = { 
-					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
-					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
-				}
-			}
-			remove_variable = orleanist_restoration_var
-			remove_variable = legitimist_restoration_var
-			set_variable = {
-				name = bonapartist_restoration_var
-			}
-		}
-		if = {
-			limit = {
-				je:je_ut_new_dawn = { 
-					"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-					"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
-				}
-			}
-			remove_variable = orleanist_restoration_var
-			remove_variable = bonapartist_restoration_var
-			set_variable = {
-				name = legitimist_restoration_var
-			}
-		}
-		ruler = {
-			exile_character_with_martyrdom = yes
-			save_scope_as = old_ruler_scope
-		}
-		generate_french_monarch = yes
-		if = {
-			limit = {
-				has_variable = french_dynastic_primary_progress_var
-			}
-			change_variable = {
-				name = french_dynastic_primary_progress_var
-				multiply = 0
-			}
-		}
-	}
-	option = {
-		name = french_pretenders.1.a # Long live the Orleanists!
-		default_option = yes
-		trigger = {
-			has_variable = orleanist_restoration_var
-		}
-		custom_tooltip = {
-			text = je_cement_the_rightful_dynasty_fake
-		}
-		custom_tooltip = {
-			text = exile_old_ruler_tt
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					scope:french_monarch_scope = {
-						has_role = agitator
-					}
-				}
-				scope:french_monarch_scope = {
-					remove_character_role = agitator
-				}
-			}
-			if = {
-				limit = {
-					any_interest_group = {
-						leader = {
-							this ?= scope:french_monarch_scope
-						}
-					}
-				}
-				scope:french_monarch_scope = {
-					remove_as_interest_group_leader = yes
-				}
-			}
-			add_journal_entry = {
-				type = je_cement_the_rightful_dynasty
-			}
-		}
-		
-		scope:french_monarch_scope = {
-			add_modifier = the_restorer_modifier
-		}
-		
-		every_interest_group = {
-			limit = {
-				leader = {
-					OR = {
-						has_ideology = ideology:ideology_bonapartist
-						has_ideology = ideology:ideology_legitimist
-					}
-				}
-			}
-			ROOT = {
-				add_radicals = {
-					value = very_large_radicals
-					interest_group = prev
-				}
-			}
-		}
-	}
-	option = {
-		name = french_pretenders.1.b # Long live the Orleanists!
-		trigger = {
-			has_variable = orleanist_restoration_var
-		}
-		custom_tooltip = {
-			text = je_cement_the_rightful_dynasty_fake
-		}
-		custom_tooltip = {
-			text = exile_old_ruler_tt
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					scope:french_monarch_scope = {
-						has_role = agitator
-					}
-				}
-				scope:french_monarch_scope = {
-					remove_character_role = agitator
-				}
-			}
-			if = {
-				limit = {
-					any_interest_group = {
-						leader = {
-							this ?= scope:french_monarch_scope
-						}
-					}
-				}
-				scope:french_monarch_scope = {
-					remove_as_interest_group_leader = yes
-				}
-			}
-			add_journal_entry = {
-				type = je_cement_the_rightful_dynasty
-			}
-		}
-		
-		every_interest_group = {
-			limit = {
-				leader = {
-					has_ideology = ideology:ideology_orleanist
-				}
-			}
-			add_modifier = {
-				name = orleanist_restoration_modifier
-				days = normal_modifier_time
-			}
-		}
-		
-		every_interest_group = {
-			limit = {
-				leader = {
-					OR = {
-						has_ideology = ideology:ideology_bonapartist
-						has_ideology = ideology:ideology_legitimist
-					}
-				}
-			}
-			ROOT = {
-				add_radicals = {
-					value = large_radicals
-					interest_group = prev
-				}
-			}
-		}
-	}
-	option = {
-		name = french_pretenders.1.c # Long live the Legitimists!
-		default_option = yes
-		trigger = {
-			has_variable = legitimist_restoration_var
-		}
-		custom_tooltip = {
-			text = je_cement_the_rightful_dynasty_fake
-		}
-		custom_tooltip = {
-			text = exile_old_ruler_tt
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					scope:french_monarch_scope = {
-						has_role = agitator
-					}
-				}
-				scope:french_monarch_scope = {
-					remove_character_role = agitator
-				}
-			}
-			if = {
-				limit = {
-					any_interest_group = {
-						leader = {
-							this ?= scope:french_monarch_scope
-						}
-					}
-				}
-				scope:french_monarch_scope = {
-					remove_as_interest_group_leader = yes
-				}
-			}
-			add_journal_entry = {
-				type = je_cement_the_rightful_dynasty
-			}
-		}
-		
-		scope:french_monarch_scope = {
-			add_modifier = the_restorer_modifier
-		}
-		
-		every_interest_group = {
-			limit = {
-				leader = {
-					OR = {
-						has_ideology = ideology:ideology_bonapartist
-						has_ideology = ideology:ideology_orleanist
-					}
-				}
-			}
-			ROOT = {
-				add_radicals = {
-					value = very_large_radicals
-					interest_group = prev
-				}
-			}
-		}
-	}
-	option = {
-		name = french_pretenders.1.d # Long live the Legitimists!
-		trigger = {
-			has_variable = legitimist_restoration_var
-		}
-		custom_tooltip = {
-			text = je_cement_the_rightful_dynasty_fake
-		}
-		custom_tooltip = {
-			text = exile_old_ruler_tt
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					scope:french_monarch_scope = {
-						has_role = agitator
-					}
-				}
-				scope:french_monarch_scope = {
-					remove_character_role = agitator
-				}
-			}
-			if = {
-				limit = {
-					any_interest_group = {
-						leader = {
-							this ?= scope:french_monarch_scope
-						}
-					}
-				}
-				scope:french_monarch_scope = {
-					remove_as_interest_group_leader = yes
-				}
-			}
-			add_journal_entry = {
-				type = je_cement_the_rightful_dynasty
-			}
-		}
-		
-		every_interest_group = {
-			limit = {
-				leader = {
-					has_ideology = ideology:ideology_legitimist
-				}
-			}
-			add_modifier = {
-				name = legitimist_restoration_modifier
-				days = normal_modifier_time
-			}
-		}
-		
-		every_interest_group = {
-			limit = {
-				leader = {
-					OR = {
-						has_ideology = ideology:ideology_bonapartist
-						has_ideology = ideology:ideology_orleanist
-					}
-				}
-			}
-			ROOT = {
-				add_radicals = {
-					value = large_radicals
-					interest_group = prev
-				}
-			}
-		}
-	}
-	option = {
-		name = french_pretenders.1.e # Long live the Bonapartists!
-		default_option = yes
-		trigger = {
-			has_variable = bonapartist_restoration_var
-		}
-		custom_tooltip = {
-			text = je_cement_the_rightful_dynasty_fake
-		}
-		custom_tooltip = {
-			text = exile_old_ruler_tt
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					scope:french_monarch_scope = {
-						has_role = agitator
-					}
-				}
-				scope:french_monarch_scope = {
-					remove_character_role = agitator
-				}
-			}
-			if = {
-				limit = {
-					any_interest_group = {
-						leader = {
-							this ?= scope:french_monarch_scope
-						}
-					}
-				}
-				scope:french_monarch_scope = {
-					remove_as_interest_group_leader = yes
-				}
-			}
-			add_journal_entry = {
-				type = je_cement_the_rightful_dynasty
-			}
-		}
-		
-		scope:french_monarch_scope = {
-			add_modifier = the_restorer_modifier
-		}
-		
-		every_interest_group = {
-			limit = {
-				leader = {
-					OR = {
-						has_ideology = ideology:ideology_legitimist
-						has_ideology = ideology:ideology_orleanist
-					}
-				}
-			}
-			ROOT = {
-				add_radicals = {
-					value = very_large_radicals
-					interest_group = prev
-				}
-			}
-		}
-	}
-	option = {
-		name = french_pretenders.1.f # Long live the Bonapartists!
-		trigger = {
-			has_variable = bonapartist_restoration_var
-		}
-		custom_tooltip = {
-			text = je_cement_the_rightful_dynasty_fake
-		}
-		custom_tooltip = {
-			text = exile_old_ruler_tt
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					scope:french_monarch_scope = {
-						has_role = agitator
-					}
-				}
-				scope:french_monarch_scope = {
-					remove_character_role = agitator
-				}
-			}
-			if = {
-				limit = {
-					any_interest_group = {
-						leader = {
-							this ?= scope:french_monarch_scope
-						}
-					}
-				}
-				scope:french_monarch_scope = {
-					remove_as_interest_group_leader = yes
-				}
-			}
-			add_journal_entry = {
-				type = je_cement_the_rightful_dynasty
-			}
-		}
-		
-		every_interest_group = {
-			limit = {
-				leader = {
-					has_ideology = ideology:ideology_bonapartist
-				}
-			}
-			add_modifier = {
-				name = legitimist_restoration_modifier
-				days = normal_modifier_time
-			}
-		}
-		
-		every_interest_group = {
-			limit = {
-				leader = {
-					OR = {
-						has_ideology = ideology:ideology_legitimist
-						has_ideology = ideology:ideology_orleanist
-					}
-				}
-			}
-			ROOT = {
-				add_radicals = {
-					value = large_radicals
-					interest_group = prev
-				}
-			}
-		}
-	}
-}
-
-#Democratic or Autocratic
-event_new_dawn.4 = {
-	type = country_event
-	placement = ROOT
-	title = french_pretenders.1.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				desc = french_pretenders.1.d_1
-				trigger = {
-					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
-						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
-					}
-				}
-			}
-			triggered_desc = {
-				desc = french_pretenders.1.d_2
-				trigger = {
-					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
-					}
-				}
-			}
-			triggered_desc = {
-				desc = french_pretenders.1.d_3
-				trigger = {
-					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
-						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
-					}
-				}
-			}
-		}
-	}
-	flavor = {
-		first_valid = {
-			triggered_desc = {
-				desc = french_pretenders.1.f_1
-				trigger = {
-					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_focus)"
-						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
-					}
-				}
-			}
-			triggered_desc = {
-				desc = french_pretenders.1.f_2
-				trigger = {
-					je:je_ut_new_dawn = { 
-						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-						"scripted_bar_progress(ut_new_dawn_democrat_focus)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
-					}
-				}
-			}
-			triggered_desc = {
-				desc = french_pretenders.1.f_3
+				desc = event_new_dawn.3.d_3
 				trigger = {
 					je:je_ut_new_dawn = { 
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+					}
+				}
+			}
+			
+			triggered_desc = {
+				desc = event_new_dawn.3.d_4
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+					}
+				}
+			}
+		}
+	}
+	flavor = {
+		first_valid = {
+			triggered_desc = {
+				desc = event_new_dawn.3.f_1
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+					}
+				}
+			}
+			triggered_desc = {
+				desc = event_new_dawn.3.f_2
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+					}
+				}
+			}
+			triggered_desc = {
+				desc = event_new_dawn.3.f_3
+				trigger = {
+					je:je_ut_new_dawn = { 
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+					}
+				}
+			}
+			triggered_desc = {
+				desc = event_new_dawn.3.f_4
+				trigger = {
+					je:je_ut_new_dawn = {
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
 					}
 				}
 			}
@@ -828,26 +322,226 @@ event_new_dawn.4 = {
 	}
 
 	cancellation_trigger = {
-		OR = {
-			ruler = {
-				has_modifier = restitutor_orbis
+		always = no
+	}
+
+	immediate = {
+		
+	}
+	option = {
+		name = event_new_dawn.3.a # Long live the Orleanists!
+		default_option = yes
+		if = {
+			limit = {
+				je:je_ut_new_dawn = { 
+					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
+					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+				}
 			}
-			any_interest_group = {
-				has_modifier = stalwarts_of_the_restoration
+			remove_variable = ut_new_dawn_core_democrat_var
+			remove_variable = ut_new_dawn_core_communist_var
+			remove_variable = ut_new_dawn_core_autocrat_var
+			set_variable = {
+				name = ut_new_dawn_core_fascist_var
+			}
+			custom_tooltip = {
+				text = event_new_dawn.uprising.setback_fascist
 			}
 		}
+		else_if = {
+			limit = {
+				je:je_ut_new_dawn = { 
+					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+				}
+			}
+			remove_variable = ut_new_dawn_core_fascist_var
+			remove_variable = ut_new_dawn_core_democrat_var
+			remove_variable = ut_new_dawn_core_autocrat_var
+			set_variable = {
+				name = ut_new_dawn_core_communist_var
+			}
+		}
+		else_if = {
+			limit = {
+				je:je_ut_new_dawn = { 
+					"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+					"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+				}
+			}
+			remove_variable = ut_new_dawn_core_fascist_var
+			remove_variable = ut_new_dawn_core_communist_var
+			remove_variable = ut_new_dawn_core_autocrat_var
+			set_variable = {
+				name = ut_new_dawn_core_democrat_var
+			}
+			
+			add_journal_entry = {
+				type = je_ut_new_dawn_democratic
+			}
+		}
+		else_if = {
+			limit = {
+				je:je_ut_new_dawn = { 
+					"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+					"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+					"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+				}
+			}
+			remove_variable = ut_new_dawn_core_fascist_var
+			remove_variable = ut_new_dawn_core_communist_var
+			remove_variable = ut_new_dawn_core_democrat_var
+			set_variable = {
+				name = ut_new_dawn_core_autocrat_var
+			}
+		}
+	}
+	option = {
+		name = event_new_dawn.3.b # suppress!
+		trigger = {
+			NOT = { has_variable = ut_new_dawn_core_suppressed_winner_1_var }
+		}
+		add_radicals = {
+			value = 0.20
+		}
+		if = {
+			limit = {
+				je:je_ut_new_dawn = { 
+					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
+					"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+				}
+			}
+			je:je_ut_new_dawn = {
+				add_progress = { value = -120 name = ut_new_dawn_fascist_bar }
+			}
+
+			custom_tooltip = {
+				text = event_new_dawn.uprising.setback_fascist
+			}
+		}
+		else_if = {
+			limit = {
+				je:je_ut_new_dawn = { 
+					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+				}
+			}
+			
+			je:je_ut_new_dawn = {
+				add_progress = { value = -120 name = ut_new_dawn_communist_bar }
+			}
+
+			custom_tooltip = {
+				text = event_new_dawn.uprising.setback_communist
+			}
+		}
+		else_if = {
+			limit = {
+				je:je_ut_new_dawn = { 
+					"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+					"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+					"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+				}
+			}
+			
+			je:je_ut_new_dawn = {
+				add_progress = { value = -120 name = ut_new_dawn_democrat_bar }	
+			}
+
+			custom_tooltip = {
+				text = event_new_dawn.uprising.setback_democrat
+			}
+		}
+		else_if = {
+			limit = {
+				je:je_ut_new_dawn = { 
+					"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+					"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+					"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+				}
+			}
+			je:je_ut_new_dawn = {
+				add_progress = { value = -120 name = ut_new_dawn_autocrat_bar }	
+			}
+			custom_tooltip = {
+				text = event_new_dawn.uprising.setback_autocrat
+			}
+		}
+		custom_tooltip = {
+			text = event_new_dawn.uprising.first_setback
+		}
+		set_variable = {
+			name = ut_new_dawn_core_suppressed_winner_1_var
+		}
+		remove_variable = ut_new_dawn_bar_freeze
+	}
+}
+
+#Interest Group Events Core Ideology
+event_new_dawn.11 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.11.t
+	desc = event_new_dawn.11.d_1
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:french_monarch_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		# triggered by Divided Monarchy Journal Entry
+		NOT = { has_variable = event_new_dawn_11_done }
+	}
+
+	cancellation_trigger = {
+		always = no
+	}
+
+	immediate = {
+		set_variable = event_new_dawn_11_done
 	}
 
 	#Democrats
 	option = {
 		name = french_pretenders.1.a # Long live the Orleanists!s_variable = orleanist_restoration_var
-		set_variable = new_dawn_democrat_var
-		
+		set_variable = ut_new_dawn_core_democrat_var
+		random_list = {
+			
+		}
 	}
 
 	#Autocrats
 	option = {
 		name = french_pretenders.1.b # Long live the Orleanists!
-		set_variable = new_dawn_autocrat_var
+		set_variable = ut_new_dawn_core_autocrat_var
+	}
+
+	option = {
+		desc = event_new_dawn.11.random_decision
+		random_list = {
+			35 = {
+				set_variable = { name = ut_new_dawn_petty_bourgeoisie_democrat_var }
+			}
+			35 = {
+				set_variable = { name = ut_new_dawn_petty_bourgeoisie_fascist_var }
+			}
+			20 = {
+				set_variable = { name = ut_new_dawn_petty_bourgeoisie_autocrat_var }
+			}
+			10 = {
+				set_variable = { name = ut_new_dawn_petty_bourgeoisie_communist_var }
+			}
+		}
 	}
 }

@@ -20,6 +20,9 @@ new_dawn_ongoing = {
 	state_radicals_and_loyalists_from_sol_change_mult = 0.25
 }
 
+ut_new_dawn_focus_recently_changed = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+}
 
 ai_great_power_buff_spread = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
@@ -62,12 +65,6 @@ early_civil_aviation_modifier_others = {
 }
 
 modern_civil_aviation_modifier_others = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	country_tech_spread_add = 50
-}
-
-
-ut_new_dawn_focus_recently_changed = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 50
 }
