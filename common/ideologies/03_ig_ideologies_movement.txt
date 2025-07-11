@@ -179,7 +179,7 @@ ideology_socialist_movement = {
 		law_no_workers_rights = disapprove
 		law_regulatory_bodies = neutral
 		law_worker_protections = approve
-		law_ut_minimum_wage = approve
+		law_ut_minimum_wage = strongly_approve
 	}
 
 	lawgroup_welfare = {
@@ -439,7 +439,7 @@ ideology_corporatist_movement = {
 		law_no_workers_rights = neutral
 		law_regulatory_bodies = approve
 		law_worker_protections = neutral
-		law_ut_minimum_wage = neutral
+		law_ut_minimum_wage = disapprove
 	}
 
 	lawgroup_welfare = {

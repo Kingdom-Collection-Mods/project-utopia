@@ -4935,7 +4935,7 @@ ideology_corporatist_leader = {
 		law_no_workers_rights = neutral
 		law_regulatory_bodies = approve
 		law_worker_protections = neutral
-		law_ut_minimum_wage = neutral
+		law_ut_minimum_wage = disapprove
 	}
 	
 	lawgroup_welfare = {
@@ -5713,10 +5713,10 @@ ideology_utopian = {
 	character_ideology = yes
 
 	lawgroup_labor_rights = {
-		law_worker_protections = strongly_approve
+		law_worker_protections = approve
 		law_ut_minimum_wage = strongly_approve
-		law_regulatory_bodies = approve
-		law_no_workers_rights = neutral
+		law_regulatory_bodies = neutral
+		law_no_workers_rights = disapprove
 	}
 
 	lawgroup_distribution_of_power = {

@@ -720,6 +720,8 @@
  pm_ut_modern_tank_production: "Moderne Panzerproduktion"
  pm_ut_jetplane_production: "Jetproduktion"
 
+ pm_trade_center_trade_quantity_utopia: "Industriellerhandel"
+
  bauxite: "Bauxit"
  aluminum: "Aluminium"
  rare_earths: "Seltene Erden"

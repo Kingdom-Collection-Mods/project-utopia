@@ -902,7 +902,7 @@ ideology_corporatist = {
 		law_no_workers_rights = neutral
 		law_regulatory_bodies = approve
 		law_worker_protections = neutral
-		law_ut_minimum_wage = neutral
+		law_ut_minimum_wage = disapprove
 	}
 	
 	lawgroup_welfare = {

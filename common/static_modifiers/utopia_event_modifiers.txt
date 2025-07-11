@@ -79,6 +79,11 @@ modern_civil_aviation_modifier_others = {
 	country_tech_spread_add = 50
 }
 
+je_ut_new_dawn_democratic = {
+	country_infamy_generation_mult = 0.5
+	unit_defense_mult = 0.1
+}
+
 je_ut_new_dawn_democratic_power_bloc_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_leverage_generation_mult = 0.25

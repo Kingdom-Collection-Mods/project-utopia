@@ -321,6 +321,7 @@ union_new_mandates = {
 	modifier = {
 		power_bloc_leverage_generation_mult = 0.2
 		country_diplomatic_play_maneuvers_add = 20
+		country_infamy_generation_mult = -0.2
 	}
 
 	unlocking_technologies = {
@@ -363,6 +364,7 @@ union_new_mandates_two = {
 	modifier = {
 		power_bloc_leverage_generation_mult = 0.2
 		country_diplomatic_play_maneuvers_add = 20
+		country_infamy_generation_mult = -0.1
 	}
 
 	unlocking_technologies = {

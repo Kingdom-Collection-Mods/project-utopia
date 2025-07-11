@@ -5,6 +5,7 @@ ut_humiliate_power_bloc_goal = {
 	requires_approval = yes
 	
 	unlocking_technologies = {
+		union_new_mandates
 		union_new_mandates_two
 	}
 	
@@ -23,6 +24,7 @@ ut_humiliate_power_bloc_goal = {
 			scope:actor.power_bloc ?= { has_principle = principle:ut_principle_military_cooperation_1 }
 			scope:actor.power_bloc ?= { has_principle = principle:ut_principle_military_cooperation_2 }
 			scope:actor.power_bloc ?= { has_principle = principle:ut_principle_military_cooperation_3 }
+			has_technology_researched = union_new_mandates_two
 		}
 	}
 	

@@ -191,6 +191,7 @@ je_ut_new_dawn_democratic = {
 
 	modifiers_while_active = {
 		new_dawn_phase_2_ongoing
+		je_ut_new_dawn_democratic
 	}
 
 	immediate = {
