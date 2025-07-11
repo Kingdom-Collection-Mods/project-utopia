@@ -81,6 +81,7 @@
  event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. We must navigate these waters carefully, balancing the demands of the people with the needs of the state. The choices we make now will shape the future of our nation for generations to come."
 
 
+
  ut_new_dawn_status: "New Dawn"
  ut_new_dawn_focus_recently_changed: "Fokus kürzlich geändert"
  ut_new_dawn_focus_selected_tt: "Fokus ausgewählt"
@@ -114,6 +115,7 @@
  ut_nd_democrat_progress_from_movements: "[concept_political_movement_support] of #bold demokratische#! [Concept('concept_political_movement','$concept_political_movements$')]"
  ut_nd_democrat_progress_from_events: "Ereignisse und andere Effekte"
  ut_nd_democrat_progress_from_focus: "Demokratischer Fokus"
+ ut_nd_democrat_character_concept_tt: "[ut_nd_democrat_character_concept]"
  ut_nd_democrat_character_concept: "Demokratische Charaktere"
  ut_nd_democrat_character_concept_desc: "Demokratische Charakter sind: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_positivist').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName] und [GetIdeology('ideology_utopian').GetName] \n Wenn Demokratischer Fokus gesetzt ist ebenfalls:, dann sind auch folgende Charaktere demokratisch: [GetIdeology('ideology_humanitarian_royalist').GetName] und [GetIdeology('ideology_radical').GetName]"
  ut_new_dawn_democrat_status: "Demokratische Ideen prägen den Diskurs"
@@ -229,6 +231,8 @@
 
  ut_ideology_cosmopolitan: "Kosmopolitisch"
  ut_ideology_cosmopolitan_desc: "Kosmopolitische Ideologien betonen die globale Zusammenarbeit, kulturelle Vielfalt und die Förderung von Menschenrechten. Sie befürworten offene Grenzen, Multikulturalismus und eine säkulare Regierungsführung ohne religiösen Einfluss."
+ ut_ideology_cosmopolitan_leader: "Kosmopolitisch"
+ ut_ideology_cosmopolitan_leader_desc: "Kosmopolitische Ideologien betonen die globale Zusammenarbeit, kulturelle Vielfalt und die Förderung von Menschenrechten. Sie befürworten offene Grenzen, Multikulturalismus und eine säkulare Regierungsführung ohne religiösen Einfluss."
 
  ideology_liberal_democratic: "Liberal-Demokratisch"
  ideology_moralist_democratic: "Moralisch-Demokratisch"
@@ -479,7 +483,7 @@
  combat_unit_type_super_carrier: "Superträger"
  combat_unit_type_armored_infantry: "Gepanzerte Infanterie"
  combat_unit_type_task_force_infantry: "Einsatzkräfte"
- combat_unit_type_motorized_artillery: "Selbstfahrende Artillerie"
+ combat_unit_type_motorized_artillery: "Motorisierte Artillerie"
  combat_unit_type_rocket_artillery: "Raketenartillerie"
  combat_unit_type_support_systems_desc: "Logistik- und Unterstützungseinheiten, die die Effektivität der Fronttruppen verbessern."
  combat_unit_type_missile_corvettes_desc: "Schnelle und wendige Schiffe mit Raketensystemen für rasche Seegefechte."

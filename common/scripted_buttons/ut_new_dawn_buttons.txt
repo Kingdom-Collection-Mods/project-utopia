@@ -205,13 +205,19 @@ je_ut_new_dawn_democratic_cultural_values = {
 		ig:ig_devout = {
 			OR = {
 				is_marginal = yes
-				ut_ideology_new_dawn_democrat_trigger = yes
+				custom_tooltip = {
+					text = ut_nd_democrat_character_concept_tt
+					ut_ideology_new_dawn_democrat_trigger = yes
+				}
 			}
 		}
 		ig:ig_industrialists = {
 			OR = {
 				is_marginal = yes
-				ut_ideology_new_dawn_democrat_trigger = yes
+				custom_tooltip = {
+					text = ut_nd_democrat_character_concept_tt
+					ut_ideology_new_dawn_democrat_trigger = yes
+				}
 			}
 		}
 	}

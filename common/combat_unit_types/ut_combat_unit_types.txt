@@ -247,6 +247,7 @@ combat_unit_type_heavy_tank = {
 
 combat_unit_type_motorized_artillery = {
     group = combat_unit_group_artillery
+	max_manpower = 1000
 
     can_build_conscript = {
         NOT = {
