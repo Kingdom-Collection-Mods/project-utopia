@@ -559,7 +559,7 @@ pm_electronics_transistors_process = {
 pm_electronics_micro_chips_process = {
 	texture = "gfx/interface/icons/production_method_icons/ut_electronics_3.dds"
 	unlocking_technologies = {
-		#high_tech_computers rework
+		high_tech_computers
 		computers_steel_production
 	}
 	
