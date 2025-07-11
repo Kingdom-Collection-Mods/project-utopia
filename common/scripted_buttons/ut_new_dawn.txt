@@ -103,8 +103,11 @@ je_ut_new_dawn_democratic_spirit = {
 	visible = { always = yes }
 
 	possible = {
-		je:je_ut_new_dawn_democratic = { 
-			"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_democratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
+			}
 		}
 		OR = {
 			has_law = law_type:law_parliamentary_republic
@@ -144,8 +147,11 @@ je_ut_new_dawn_democratic_cultural_values = {
 	visible = { always = yes }
 
 	possible = {
-		je:je_ut_new_dawn_democratic = { 
-			"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_democratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
+			}
 		}
         OR = {
             is_subject = no
@@ -163,11 +169,14 @@ je_ut_new_dawn_democratic_cultural_values = {
 	effect = {
 		ig:ig_devout = {
 			remove_ideology = ideology_moralist
-			add_ideology = ideology_moralist
+			add_ideology = ideology_moralist_democratic
 		}
 		set_variable = je_ut_new_dawn_democratic_cultural_values_done
-		je:je_ut_new_dawn_democratic = {
-			add_progress = { value = -50 name = je_ut_new_dawn_democratic_points_bar }
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_democratic = {
+				add_progress = { value = -50 name = je_ut_new_dawn_democratic_points_bar }
+			}
 		}
 	}
 }
@@ -179,8 +188,11 @@ je_ut_new_dawn_democratic_power_bloc = {
 	visible = { always = yes }
 
 	possible = {
-		je:je_ut_new_dawn_democratic = { 
-			"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_democratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
+			}
 		}
 		is_in_power_bloc = yes
 		OR = {
@@ -194,9 +206,12 @@ je_ut_new_dawn_democratic_power_bloc = {
 	effect = {
 		custom_tooltip = je_ut_new_dawn_democratic_power_bloc_tt
 		set_variable = je_ut_new_dawn_democratic_power_bloc_done
-		je:je_ut_new_dawn_democratic = {
-			add_progress = { value = -50 name = je_ut_new_dawn_democratic_points_bar }
-		}
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_democratic = {
+				add_progress = { value = -50 name = je_ut_new_dawn_democratic_points_bar }
+			}
+		}		
 	}
 }
 
@@ -207,8 +222,11 @@ je_ut_new_dawn_democratic_fair_elections = {
 	visible = { always = yes }
 
 	possible = {
-		je:je_ut_new_dawn_democratic = { 
-			"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_democratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
+			}
 		}
 		has_law = law_type:law_universal_suffrage
 	}
@@ -216,8 +234,11 @@ je_ut_new_dawn_democratic_fair_elections = {
 	effect = {
 		custom_tooltip = je_ut_new_dawn_democratic_fair_elections_tt
 		set_variable = je_ut_new_dawn_democratic_fair_elections_done
-		je:je_ut_new_dawn_democratic = {
-			add_progress = { value = -50 name = je_ut_new_dawn_democratic_points_bar }
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_democratic = {
+				add_progress = { value = -50 name = je_ut_new_dawn_democratic_points_bar }
+			}
 		}
 	}
 }

@@ -554,11 +554,11 @@ combat_unit_type_missile_corvettes = {
     }
 
     battle_modifier = {
-        unit_offense_add = 40
-        unit_defense_add = 30
-        unit_blockade_add = 35
-        unit_morale_loss_add = 8
-        unit_convoy_raiding_mult = 0.25
+        unit_offense_add = 50
+        unit_defense_add = 50
+        unit_blockade_add = 40
+        unit_morale_loss_add = 6
+        unit_convoy_raiding_mult = 0.5
     }
 
     formation_modifier = {
@@ -586,11 +586,11 @@ combat_unit_type_surveillance_corvettes = {
     }
 
     battle_modifier = {
-        unit_offense_add = 40
-        unit_defense_add = 30
-        unit_blockade_add = 45
-        unit_morale_loss_add = 8
-        unit_convoy_raiding_mult = 0.25
+        unit_offense_add = 50
+        unit_defense_add = 50
+        unit_blockade_add = 50
+        unit_morale_loss_add = 6
+        unit_convoy_defense_mult = 0.5
     }
 
     formation_modifier = {
@@ -660,6 +660,7 @@ combat_unit_type_capital_battleship = {
         unit_defense_add = 100
         unit_morale_loss_add = 4
 		unit_convoy_raiding_mult = -0.6
+        unit_blockade_add = 600
     }
 
     formation_modifier = {

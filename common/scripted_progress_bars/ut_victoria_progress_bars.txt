@@ -177,12 +177,13 @@ je_ut_new_dawn_democratic_points_bar = {
 
 	default = yes
 
-	monthly_progress = {
+	weekly_progress = {
 		if = {
 			limit = {
-				NOT = {
-					has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
-				}
+				always = yes
+				#NOT = {
+				#	has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
+				#}
 			}
 			
 			add = {

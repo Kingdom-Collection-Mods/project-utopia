@@ -189,10 +189,8 @@ je_ut_new_dawn_democratic = {
 
 	immediate = {
 		ut_set_new_dawn_variables = yes
-		# random_law = {
-		# 	limit = { type = law_type:law_monarchy }
-		# 	save_scope_as = monarchy_scope
-		# }
+		
+		remove_variable = ut_new_dawn_bar_freeze
 	}
 	
 	scripted_button = je_ut_new_dawn_democratic_spirit
@@ -205,13 +203,12 @@ je_ut_new_dawn_democratic = {
 
 	complete = {
 		custom_tooltip = {
-			text = je_ut_new_dawn_condition_tt
-			 #Can only ever complete upon finishing the Cement the Rightful ideology journal entry.
+			text = je_ut_new_dawn_democratic_complete_condition_tt
+			has_variable = je_ut_new_dawn_democratic_spirit_done
+			has_variable = je_ut_new_dawn_democratic_cultural_values_done
+			has_variable = je_ut_new_dawn_democratic_power_bloc_done
+			has_variable = je_ut_new_dawn_democratic_fair_elections_done
 		}
-		has_variable = je_ut_new_dawn_democratic_spirit_done
-		has_variable = je_ut_new_dawn_democratic_cultural_values_done
-		has_variable = je_ut_new_dawn_democratic_power_bloc_done
-		has_variable = je_ut_new_dawn_democratic_fair_elections_done
 	}
 
 	on_complete = {
@@ -230,14 +227,7 @@ je_ut_new_dawn_democratic = {
 			#event_new_dawn.1
 		}
 		effect = {
-			if = {
-				limit = {
-					NOT = {
-						has_variable = je_ut_new_dawn_democratic_freeze #This variable stops iteration, and is granted by reaching 480 with one ideology. It's reset when this JE is completed, or when je_cement_the_rightful_ideology fails.
-					}
-				}
-				ut_new_dawn_democrat_progress = yes
-			}
+			ut_new_dawn_democrat_progress = yes
 		}
 	}
 
