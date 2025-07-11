@@ -113,6 +113,91 @@ ideology_urbanist_human_rights_base = {
 }
 
 
+ideology_liberal_democratic = {
+	icon = "gfx/interface/icons/ideology_icons/liberal.dds"
+	
+	lawgroup_citizenship = {
+		law_multicultural = approve
+		law_multicultural_globalism = neutral
+		law_ethnostate = disapprove
+		law_neo_ethno_state = disapprove
+		law_national_supremacy = disapprove
+		law_racial_segregation = neutral
+		law_cultural_exclusion = approve	
+	}
+	
+	lawgroup_policing = {
+		law_no_police = neutral
+		law_dedicated_police = neutral
+		law_local_police = disapprove
+		law_militarized_police = strongly_disapprove
+	}
+	
+	lawgroup_internal_security = {
+		law_guaranteed_liberties = strongly_approve
+		law_no_home_affairs = neutral
+		law_national_guard = disapprove
+		law_secret_police = disapprove
+	}
+	
+	lawgroup_free_speech = {
+		law_protected_speech = strongly_approve
+		law_right_of_assembly = neutral
+		law_censorship = neutral
+		law_outlawed_dissent = disapprove
+	}
+	
+	lawgroup_rights_of_women = {
+		law_no_womens_rights = strongly_disapprove
+		law_women_own_property = disapprove
+		law_women_in_the_workplace = disapprove
+		law_womens_suffrage = approve
+		law_equal_rights_for_women = approve
+		law_affirmative_equality = neutral
+	}
+}
+
+
+ideology_plutocratic_democratic = {
+	icon = "gfx/interface/icons/ideology_icons/plutocratic.dds"
+	
+	lawgroup_distribution_of_power = {
+		law_oligarchy = approve
+		law_wealth_voting = approve
+		law_technocracy = approve
+		law_landed_voting = neutral
+		law_census_voting = strongly_approve
+		law_single_party_state = neutral
+		law_autocracy = disapprove
+		law_universal_suffrage = neutral
+		law_anarchy = strongly_disapprove
+	}
+
+	lawgroup_governance_principles = {
+		law_monarchy = neutral			
+		law_presidential_republic = approve
+		law_parliamentary_republic = approve
+		law_corporate_state = neutral
+		law_theocracy = strongly_disapprove
+		law_council_republic = strongly_disapprove
+	}
+	
+	lawgroup_taxation = {
+		law_per_capita_based_taxation = neutral
+		law_consumption_based_taxation = approve
+		law_land_based_taxation = neutral
+		law_proportional_taxation = approve
+		law_graduated_taxation = strongly_disapprove
+	}	
+	
+	lawgroup_colonization = {
+		law_colonial_exploitation = neutral
+		law_no_colonial_affairs = approve
+		law_colonial_resettlement = neutral
+		law_frontier_colonization = neutral
+	}
+}
+
 ideology_moralist_democratic = {
 	icon = "gfx/interface/icons/ideology_icons/moralist.dds"
 	

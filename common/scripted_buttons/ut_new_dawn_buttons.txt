@@ -7,11 +7,18 @@ ut_new_dawn_fascist_focus = {
 
 	possible = {
 		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
-		NOT = { has_variable = je_ut_new_dawn_fascist_focus }
+		custom_tooltip = {
+			text = ut_new_dawn_focus_freeze_tt
+			NOT = { has_variable = ut_new_dawn_bar_freeze }
+		}
+		custom_tooltip = {
+			text = ut_new_dawn_focus_already_selected_tt
+			NOT = { has_variable = je_ut_new_dawn_fascist_focus }
+		}
 	}
 
 	effect = {	
-		custom_tooltip = ut_new_dawn_fascist_focus_tt	
+		custom_tooltip = ut_new_dawn_focus_tt	
 		set_variable = je_ut_new_dawn_fascist_focus
 		remove_variable = je_ut_new_dawn_autocrat_focus
 		remove_variable = je_ut_new_dawn_democrat_focus
@@ -31,11 +38,18 @@ ut_new_dawn_autocrat_focus = {
 
 	possible = {
 		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
-		NOT = { has_variable = je_ut_new_dawn_autocrat_focus }
+		custom_tooltip = {
+			text = ut_new_dawn_focus_freeze_tt
+			NOT = { has_variable = ut_new_dawn_bar_freeze }
+		}
+		custom_tooltip = {
+			text = ut_new_dawn_focus_already_selected_tt
+			NOT = { has_variable = je_ut_new_dawn_autocrat_focus }
+		}
 	}
 
 	effect = {
-		custom_tooltip = ut_new_dawn_autocrat_focus_tt
+		custom_tooltip = ut_new_dawn_focus_tt
 		set_variable = je_ut_new_dawn_autocrat_focus
 		remove_variable = je_ut_new_dawn_fascist_focus
 		remove_variable = je_ut_new_dawn_democrat_focus
@@ -55,11 +69,18 @@ ut_new_dawn_democrat_focus = {
 
 	possible = {
 		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
-		NOT = { has_variable = je_ut_new_dawn_democrat_focus }
+		custom_tooltip = {
+			text = ut_new_dawn_focus_freeze_tt
+			NOT = { has_variable = ut_new_dawn_bar_freeze }
+		}
+		custom_tooltip = {
+			text = ut_new_dawn_focus_already_selected_tt
+			NOT = { has_variable = je_ut_new_dawn_democrat_focus }
+		}
 	}
 
 	effect = {
-		custom_tooltip = ut_new_dawn_democratic_focus_tt
+		custom_tooltip = ut_new_dawn_focus_tt
 		set_variable = je_ut_new_dawn_democrat_focus
 		remove_variable = je_ut_new_dawn_fascist_focus
 		remove_variable = je_ut_new_dawn_autocrat_focus
@@ -79,11 +100,20 @@ ut_new_dawn_communist_focus = {
 
 	possible = {
 		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
-		NOT = { has_variable = je_ut_new_dawn_communist_focus }
+		NOT = { 
+			custom_tooltip = {
+				text = ut_new_dawn_focus_freeze_tt
+				has_variable = ut_new_dawn_bar_freeze
+			}
+		}
+		custom_tooltip = {
+			text = ut_new_dawn_focus_already_selected_tt
+			NOT = { has_variable = je_ut_new_dawn_communist_focus }
+		}
 	}
 
 	effect = {		
-		custom_tooltip = ut_new_dawn_communist_focus_tt
+		custom_tooltip = ut_new_dawn_focus_tt
 		set_variable = je_ut_new_dawn_communist_focus
 		remove_variable = je_ut_new_dawn_fascist_focus
 		remove_variable = je_ut_new_dawn_autocrat_focus
@@ -113,12 +143,11 @@ je_ut_new_dawn_democratic_spirit = {
 			has_law = law_type:law_parliamentary_republic
 			has_law = law_type:law_presidential_republic
 		}
-		has_law = law_type:law_universal_suffrage
 		NOT = {
-			every_interest_group = {
+			any_interest_group = {
 				is_in_government = yes
 				leader = {
-					NOR = {
+					OR = {
 						has_ideology = ideology:ideology_fascist
 						has_ideology = ideology:ideology_integralist
 						has_ideology = ideology:ideology_ethno_nationalist
@@ -134,9 +163,17 @@ je_ut_new_dawn_democratic_spirit = {
 	effect = {		
 		ig:ig_intelligentsia = {
 			remove_ideology = ideology_liberal
-			add_ideology = ideology_liberal_modern
+			add_ideology = ideology_liberal_democratic
 		}
 		set_variable = je_ut_new_dawn_democratic_spirit_done
+
+
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_democratic = {
+				add_progress = { value = -50 name = je_ut_new_dawn_democratic_points_bar }
+			}
+		}
 	}
 }
 
@@ -154,14 +191,19 @@ je_ut_new_dawn_democratic_cultural_values = {
 			}
 		}
         OR = {
-            is_subject = no
             has_law = law_type:law_protected_speech
             has_law = law_type:law_right_of_assembly
         }
-		custom_tooltip = {
-			text = christ_of_nations_button_tt_2
-			NOT = {
-				has_variable = christ_of_nations_cooldown
+		ig:ig_devout = {
+			OR = {
+				is_marginal = yes
+				ut_ideology_new_dawn_democrat_trigger = yes
+			}
+		}
+		ig:ig_industrialists = {
+			OR = {
+				is_marginal = yes
+				ut_ideology_new_dawn_democrat_trigger = yes
 			}
 		}
 	}
@@ -171,7 +213,13 @@ je_ut_new_dawn_democratic_cultural_values = {
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_moralist_democratic
 		}
+		ig:ig_industrialists = {
+			remove_ideology = ideology_plutocratic
+			add_ideology = ideology_plutocratic_democratic
+		}
 		set_variable = je_ut_new_dawn_democratic_cultural_values_done
+
+
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_spend_tt
 			je:je_ut_new_dawn_democratic = {
@@ -194,24 +242,27 @@ je_ut_new_dawn_democratic_power_bloc = {
 				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
 			}
 		}
+		is_subject = no
 		is_in_power_bloc = yes
-		OR = {
-			is_power_bloc_leader = yes
-			power_bloc ?= {
-				NOT = { has_identity = identity_sovereign_empire }
-			}
+		power_bloc ?= {
+			NOT = { has_identity = identity:identity_sovereign_empire }
 		}
 	}
 
 	effect = {
 		custom_tooltip = je_ut_new_dawn_democratic_power_bloc_tt
 		set_variable = je_ut_new_dawn_democratic_power_bloc_done
+		add_modifier = {
+			name = je_ut_new_dawn_democratic_power_bloc_mod
+		}
+
+		
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_spend_tt
 			je:je_ut_new_dawn_democratic = {
 				add_progress = { value = -50 name = je_ut_new_dawn_democratic_points_bar }
 			}
-		}		
+		}
 	}
 }
 
@@ -233,7 +284,12 @@ je_ut_new_dawn_democratic_fair_elections = {
 
 	effect = {
 		custom_tooltip = je_ut_new_dawn_democratic_fair_elections_tt
-		set_variable = je_ut_new_dawn_democratic_fair_elections_done
+		set_variable = je_ut_new_dawn_democratic_fair_elections_done		
+		add_modifier = {
+			name = je_ut_new_dawn_democratic_fair_elections_mod
+		}
+
+		
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_spend_tt
 			je:je_ut_new_dawn_democratic = {

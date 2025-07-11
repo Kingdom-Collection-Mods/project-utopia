@@ -50,6 +50,12 @@
 
 	status_desc = {
 		first_valid = {
+			triggered_desc = {
+				desc = ut_new_dawn_democrat_status_je
+				trigger = {	
+					has_journal_entry = je_ut_new_dawn_democratic
+				}
+			}
 			triggered_desc = { # In the lead and on the throne
 				desc = ut_new_dawn_democrat_status
 				trigger = {
@@ -184,7 +190,7 @@ je_ut_new_dawn_democratic = {
 	}
 
 	modifiers_while_active = {
-		new_dawn_ongoing
+		new_dawn_phase_2_ongoing
 	}
 
 	immediate = {
@@ -208,6 +214,13 @@ je_ut_new_dawn_democratic = {
 			has_variable = je_ut_new_dawn_democratic_cultural_values_done
 			has_variable = je_ut_new_dawn_democratic_power_bloc_done
 			has_variable = je_ut_new_dawn_democratic_fair_elections_done
+		}
+		
+		custom_tooltip = {
+			text = new_dawn_ideology_upper_bound_tt
+			je:je_ut_new_dawn_democratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_upper_bound_tt
+			}
 		}
 	}
 
@@ -241,7 +254,12 @@ je_ut_new_dawn_democratic = {
 	}
 
 	fail = {
-		always = no
+		custom_tooltip = {
+			text = je_ut_new_dawn_critical_lower_bound_fail_tt
+			je:je_ut_new_dawn_democratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" <= new_dawn_ideology_critical_lower_bound
+			}
+		}
 	}
 
 	# effect which is executed when 'fail' trigger becomes true

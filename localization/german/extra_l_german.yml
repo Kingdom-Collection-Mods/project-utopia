@@ -71,9 +71,9 @@
  je_urbanist_ig_reason: "Urbanebewegung..."
 
  je_ut_new_dawn: "New Dawn"
- je_ut_new_dawn_reason: "New Dawn sind neue Eventeinträge um Kernideologie eines Landes, sie sollen zu großen Endgame Events führen die Einfluss auf Radikale und Loyalisten nimmt. In Zusammenhang mit den Blöcken wäre auch cool.\nHeavily work in progress\n\nEine wichtige Kursrichtung giben die Interresensgruppen in der Regierung vor:\n- Gewerkschafter unterstützen die Kommunisten\n- Industrialisten und Junker die Faschisten. \n- Alle weiteren Interresensgruppen sind Moderate \n - Unzufriedene Moderate Interresensgruppen unterstützen Kommunisten/Faschisten \n - Die Charaktereigenschaft eines Anführers überschreibt die Ausrichtung der Interresensgruppe"
+ je_ut_new_dawn_reason: "New Dawn sind neue Eventeinträge um Kernideologie eines Landes, sie sollen zu großen Endgame Events führen die Einfluss auf Radikale und Loyalisten nimmt. In Zusammenhang mit den Blöcken wäre auch cool.\nHeavily work in progress"
  je_ut_new_dawn_condition_tt: "Moderate, Communisten oder Faschisten haben 100% erreicht"
- je_ut_new_dawn_effect_tt: "New Dawn Teil 2"
+ je_ut_new_dawn_effect_tt: "Schaltet Endgame Ideen frei (tbd)"
  new_dawn_ongoing: "New Dawn"
 
  event_new_dawn.1.t: "New Dawn"
@@ -82,11 +82,18 @@
 
 
  ut_new_dawn_status: "New Dawn"
+ ut_new_dawn_focus_recently_changed: "Fokus kürzlich geändert"
+ ut_new_dawn_focus_selected_tt: "Fokus ausgewählt"
+ ut_new_dawn_focus_already_selected_tt: "Fokus nicht bereits ausgewählt"
+ ut_new_dawn_focus_freeze_tt: "Fokus nicht deaktiviert"
+ ut_new_dawn_focus_tt: "#v +0.5#! Fortschritt pro Monat für ausgewählte Ideologie"
+
+ je_ut_new_dawn_critical_lower_bound_fail_tt: "Wenn der Grenzwert von [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')] Fortschrittspunkten unterschritten wird, können Ereignissketten politischen Fortschritt rückgängig machen und schlussendlich einen neuen New Dawn auslösen."
 
 
  ut_new_dawn_communist_focus: "Kommunistischer Fokus (tbd)"
  ut_new_dawn_communist_bar: "Kommunistisch"
- ut_new_dawn_communist_bar_desc: "Communist Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
+ ut_new_dawn_communist_bar_desc: "Kommunistischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_communist_progress_from_characters: "combined [concept_popularity] of [ut_nd_communist_character_concept]"
  ut_nd_communist_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [ut_nd_communist_character_concept] leaders"
  ut_nd_communist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_command_economy').GetName], [GetLawType('law_cooperative_ownership').GetName]"
@@ -99,7 +106,7 @@
  ut_nd_communist_character_concept_desc: "Kommunistische Charakter sind GetIdeology('ideology_anarchist').GetName, GetIdeology('ideology_radical').GetName, GetIdeology('ideology_communist').GetName und GetIdeology('ideology_vanguardist').GetName."
  ut_new_dawn_democrat_focus: "Demokratischer Fokus"
  ut_new_dawn_democrat_bar: "Demokratisch"
- ut_new_dawn_democrat_bar_desc: "Demokratisch Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
+ ut_new_dawn_democrat_bar_desc: "Demokratischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_democrat_progress_from_characters: "kombinierte [concept_popularity] von [ut_nd_democrat_character_concept] Charaktere"
  ut_nd_democrat_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [ut_nd_democrat_character_concept] Anführer"
  ut_nd_democrat_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_universal_suffrage').GetName]"
@@ -110,10 +117,38 @@
  ut_nd_democrat_character_concept: "Demokratische Charaktere"
  ut_nd_democrat_character_concept_desc: "Demokratische Charakter sind: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_positivist').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName] und [GetIdeology('ideology_utopian').GetName] \n Wenn Demokratischer Fokus gesetzt ist ebenfalls:, dann sind auch folgende Charaktere demokratisch: [GetIdeology('ideology_humanitarian_royalist').GetName] und [GetIdeology('ideology_radical').GetName]"
  ut_new_dawn_democrat_status: "Demokratische Ideen prägen den Diskurs"
+ ut_new_dawn_democrat_status_je: "Demokratische Ideen festigen sich"
+
+ je_ut_new_dawn_democratic: "Demokratischer Aufbruch"
+ je_ut_new_dawn_democratic_reason: "Das Volk fordert Mitsprache, Transparenz und freie Wahlen. Überall im Land bilden sich neue Parteien, Gewerkschaften gewinnen an Einfluss, und Proteste für Bürgerrechte füllen die Straßen. \n Ob dieser Aufbruch in eine stabile Demokratie führt oder im Widerstand der alten Eliten erstickt, liegt nun in deiner Hand. Wirst du Reformen zulassen - oder versuchen, die alte Ordnung mit aller Macht zu bewahren?"
+ je_ut_new_dawn_points_bar: "Fortschrittspunkte"
+ je_ut_new_dawn_points_bar_desc: "Fortschrittspunkte: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
+
+ je_ut_new_dawn_democratic_complete_condition_tt: "Alle Aktionen des Journaleintrages sind abgeschlossen"
+
+ je_ut_new_dawn_democratic_spirit: "Demokratischer Geist"
+ je_ut_new_dawn_democratic_spirit_desc: "Ein neuer demokratischer Geist erfasst das Land, geleitet von Intellektuellen, die sich dem liberal-demokratischen Ideal verpflichtet fühlen. Der Weg nach vorne erfordert eine klare Absage an extremistische Ideologien in der Regierung."
+ new_dawn_ideology_required_points_tt: "Erfordert mindestens #v [SCOPE.ScriptValue('new_dawn_ideology_required_points')] Fortschrittspunkte#!"
+ new_dawn_ideology_required_points_spend_tt: "Verbraucht #r [SCOPE.ScriptValue('new_dawn_ideology_spend_points')]#! #v Fortschrittspunkte#!, um diesen Schritt zu aktivieren"
+ new_dawn_ideology_upper_bound_tt: "Hat #v[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')] Fortschrittspunkte#!"
+
+ je_ut_new_dawn_democratic_cultural_values: "Demokratische Kulturwerte"
+ je_ut_new_dawn_democratic_cultural_values_desc: "Ein demokratisches Fundament kann nur auf kulturellen Werten gedeihen, die Pluralismus und individuelle Freiheiten respektieren. Führende Persönlichkeiten in Wirtschaft und Religion wenden sich einer demokratischeren Weltsicht zu."
+
+ je_ut_new_dawn_democratic_power_bloc: "Demokratischer Machtblock"
+ je_ut_new_dawn_democratic_power_bloc_desc: "Die Bildung eines demokratischen Machtblocks sichert Einfluss in der internationalen Ordnung und schützt vor hegemonialen Identitäten. Nur wer unabhängig und souverän bleibt, kann demokratische Ideale verteidigen."
+ je_ut_new_dawn_democratic_power_bloc_tt: "Die Nation formt oder verstärkt einen Machtblock, der auf demokratischen Prinzipien basiert"
+ je_ut_new_dawn_democratic_power_bloc_mod: "Demokratischer Machtblock"
+
+ je_ut_new_dawn_democratic_fair_elections: "Faire Wahlen"
+ je_ut_new_dawn_democratic_fair_elections_desc: "Allgemeines Wahlrecht bildet das Rückgrat einer gerechten Gesellschaft. Die Institutionalisierung fairer Wahlen stärkt das Vertrauen der Bevölkerung in die Demokratie."
+ je_ut_new_dawn_democratic_fair_elections_tt: "Stärkt die Legitimität des politischen Systems durch transparente und gerechte Wahlen"
+ je_ut_new_dawn_democratic_fair_elections_mod: "Faire Wahlen"
+
 
  ut_new_dawn_autocrat_focus: "Autokratischer Fokus (tbd)"
  ut_new_dawn_autocrat_bar: "Autokratisch"
- ut_new_dawn_autocrat_bar_desc: "Autokraten Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
+ ut_new_dawn_autocrat_bar_desc: "Autokratischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_autocrat_progress_from_characters: "kombinierte [concept_popularity] von [ut_nd_autocrat_character_concept] Charaktere"
  ut_nd_autocrat_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [ut_nd_autocrat_character_concept] Anführer"
  ut_nd_autocrat_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_monarchy').GetName]"
@@ -127,7 +162,7 @@
 
  ut_new_dawn_fascist_focus: "Faschistischer Fokus (tbd)"
  ut_new_dawn_fascist_bar: "Faschistisch"
- ut_new_dawn_fascist_bar_desc: "Fascist Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
+ ut_new_dawn_fascist_bar_desc: "Faschistischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_fascist_progress_from_characters: "combined [concept_popularity] of [ut_nd_fascist_character_concept] characters"
  ut_nd_fascist_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [ut_nd_fascist_character_concept] leaders"
  ut_nd_fascist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName]"
@@ -191,6 +226,13 @@
  ut_ideology_environmentalist: "Ökologistisch"
  ut_ideology_environmentalist_desc: "#lore Environmentalists.#!"
 
+ ut_ideology_cosmopolitan: "Kosmopolitisch"
+ ut_ideology_cosmopolitan_desc: "Kosmopolitische Ideologien betonen die globale Zusammenarbeit, kulturelle Vielfalt und die Förderung von Menschenrechten. Sie befürworten offene Grenzen, Multikulturalismus und eine säkulare Regierungsführung ohne religiösen Einfluss."
+
+ ideology_liberal_democratic: "Liberal-Demokratisch"
+ ideology_moralist_democratic: "Moralisch-Demokratisch"
+ ideology_plutocratic_democratic: "Plutokratisch-Demokratisch"
+
  ig_trait_urbanist_loyal: "Leistungsgesellschaft"
  ig_trait_urbanist_loyal_desc: "This group advocates for the free movement of people across borders, believing it fosters cultural exchange and economic opportunity. They oppose restrictive immigration policies and emphasize international cooperation."
  ig_trait_urbanist_happy: "todo"
@@ -198,7 +240,7 @@
  ig_trait_urbanist_unhappy: "todo"
  ig_trait_urbanist_unhappy_desc: ""
 
- ut_movement_cosmopolitan_name: "Kosmopolitanische Bewegung"
+ ut_movement_cosmopolitan_name: "Kosmopolitanischebewegung"
  ut_movement_humanist_name: "Humanistenbewegung"
  ut_movement_rationalists_name: "Rationalistenbewegung"
 

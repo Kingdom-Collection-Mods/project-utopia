@@ -9,4 +9,6 @@ construction_cost_modern_industry = 2000
 
 new_dawn_core_upper_bound = 240
 new_dawn_ideology_upper_bound = 100
+new_dawn_ideology_spend_points = 50
 new_dawn_ideology_required_points = 100
+new_dawn_ideology_critical_lower_bound = 10

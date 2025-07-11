@@ -1,4 +1,5 @@
 ﻿ut_movement_cosmopolitan = {
+	icon = "gfx/interface/icons/ideology_icons/paternalistic.dds"
 	category = movement_category_ideological
 
 	ideology = ut_ideology_cosmopolitan	
@@ -196,6 +197,7 @@
 }
 
 ut_movement_humanist = {
+	icon = "gfx/interface/icons/ideology_icons/individualist.dds"
 	category = movement_category_ideological
 
 	ideology = ideology_urbanist_human_rights_base
@@ -353,6 +355,7 @@ ut_movement_humanist = {
 }
 
 ut_movement_rationalists = {
+	icon = "gfx/interface/icons/ideology_icons/egalitarian.dds"
 	category = movement_category_ideological
 
 	ideology = ideology_urbanist_economy_base
