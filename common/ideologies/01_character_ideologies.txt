@@ -1831,6 +1831,7 @@ ideology_social_democrat = {
 
 	lawgroup_labor_rights = {		
 		law_worker_protections = strongly_approve
+		law_ut_minimum_wage = strongly_approve
 		law_regulatory_bodies = approve
 		law_no_workers_rights = neutral
 	}
@@ -2019,6 +2020,7 @@ ideology_communist = {
 
 	lawgroup_labor_rights = {		
 		law_worker_protections = strongly_approve
+		law_ut_minimum_wage = strongly_approve
 		law_regulatory_bodies = approve
 		law_no_workers_rights = neutral
 	}
@@ -3187,6 +3189,7 @@ ideology_market_liberal = {
 	lawgroup_labor_rights = {
 		law_regulatory_bodies = disapprove
 		law_worker_protections = strongly_disapprove
+		law_ut_minimum_wage = strongly_disapprove
 	}
 
 	lawgroup_land_reform = {
@@ -4932,6 +4935,7 @@ ideology_corporatist_leader = {
 		law_no_workers_rights = neutral
 		law_regulatory_bodies = approve
 		law_worker_protections = neutral
+		law_ut_minimum_wage = neutral
 	}
 	
 	lawgroup_welfare = {
@@ -5710,6 +5714,7 @@ ideology_utopian = {
 
 	lawgroup_labor_rights = {
 		law_worker_protections = strongly_approve
+		law_ut_minimum_wage = strongly_approve
 		law_regulatory_bodies = approve
 		law_no_workers_rights = neutral
 	}

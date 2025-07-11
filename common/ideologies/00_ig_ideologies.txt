@@ -102,6 +102,7 @@ ideology_laissez_faire = {
 		law_no_workers_rights = neutral
 		law_regulatory_bodies = disapprove
 		law_worker_protections = strongly_disapprove
+		law_ut_minimum_wage = strongly_disapprove
 	}
 
 	lawgroup_land_reform = {
@@ -645,6 +646,7 @@ ideology_egalitarian = {
 	
 	lawgroup_labor_rights = {		
 		law_worker_protections = strongly_approve
+		law_ut_minimum_wage = strongly_approve
 		law_regulatory_bodies = approve
 		law_no_workers_rights = neutral
 	}		
@@ -734,6 +736,7 @@ ideology_socialist = {
 		law_no_workers_rights = disapprove
 		law_regulatory_bodies = neutral
 		law_worker_protections = approve
+		law_ut_minimum_wage = strongly_approve
 	}
 
 	lawgroup_welfare = {
@@ -899,6 +902,7 @@ ideology_corporatist = {
 		law_no_workers_rights = neutral
 		law_regulatory_bodies = approve
 		law_worker_protections = neutral
+		law_ut_minimum_wage = neutral
 	}
 	
 	lawgroup_welfare = {

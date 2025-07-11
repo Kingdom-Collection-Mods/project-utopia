@@ -86,6 +86,7 @@ ideology_urbanist_human_rights_base = {
 		law_no_workers_rights = disapprove
 		law_regulatory_bodies = approve
 		law_worker_protections = approve
+		law_ut_minimum_wage = strongly_approve
 	}
 
 	lawgroup_childrens_rights = {
@@ -319,6 +320,7 @@ ideology_socialist_democratic = {
 		law_no_workers_rights = disapprove
 		law_regulatory_bodies = neutral
 		law_worker_protections = strongly_approve
+		law_ut_minimum_wage = strongly_approve
 	}
 
 	lawgroup_welfare = {

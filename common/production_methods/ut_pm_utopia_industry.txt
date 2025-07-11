@@ -9,7 +9,7 @@ pm_heavy_machinery_buildings = {
 		
 	country_modifiers = {
 		workforce_scaled = {
-			country_construction_add = 30
+			country_construction_add = 25
 		}
 	}
 
@@ -24,11 +24,12 @@ pm_heavy_machinery_buildings = {
 		} 
 
 		level_scaled = {
-			building_employment_bureaucrats_add = 500
-			building_employment_clerks_add = 500
-			building_employment_engineers_add = 250
-			building_employment_machinists_add = 750
-			building_employment_laborers_add = 3000
+			building_employment_bureaucrats_add = 100
+			building_employment_clerks_add = 100
+			building_employment_engineers_add = 100
+			building_employment_machinists_add = 200
+			building_employment_laborers_add = 400
+			building_employment_service_workers_add = 100
 		}
 
 		unscaled = {
@@ -558,7 +559,8 @@ pm_electronics_transistors_process = {
 pm_electronics_micro_chips_process = {
 	texture = "gfx/interface/icons/production_method_icons/ut_electronics_3.dds"
 	unlocking_technologies = {
-		high_tech_computers
+		#high_tech_computers rework
+		computers_steel_production
 	}
 	
 	state_modifiers = {

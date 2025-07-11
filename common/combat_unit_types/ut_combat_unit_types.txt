@@ -267,7 +267,7 @@ combat_unit_type_motorized_artillery = {
 
     battle_modifier = {
         unit_offense_add = 75
-        unit_defense_add = 35
+        unit_defense_add = 40
         unit_morale_loss_add = 3
         unit_kill_rate_add = 0.25
         unit_morale_damage_mult = 0.15

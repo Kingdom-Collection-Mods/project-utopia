@@ -179,6 +179,7 @@ ideology_socialist_movement = {
 		law_no_workers_rights = disapprove
 		law_regulatory_bodies = neutral
 		law_worker_protections = approve
+		law_ut_minimum_wage = approve
 	}
 
 	lawgroup_welfare = {
@@ -194,6 +195,7 @@ ideology_communist_movement = {
 
 	lawgroup_labor_rights = {
 		law_worker_protections = strongly_approve
+		law_ut_minimum_wage = strongly_approve
 		law_regulatory_bodies = approve
 		law_no_workers_rights = neutral
 	}
@@ -437,6 +439,7 @@ ideology_corporatist_movement = {
 		law_no_workers_rights = neutral
 		law_regulatory_bodies = approve
 		law_worker_protections = neutral
+		law_ut_minimum_wage = neutral
 	}
 
 	lawgroup_welfare = {
@@ -521,6 +524,7 @@ ideology_radical_movement = {
 	}
 
 	lawgroup_education_system = {
+		law_public_university = approve
 		law_public_schools = approve
 		law_private_schools = neutral
 		law_no_schools = disapprove

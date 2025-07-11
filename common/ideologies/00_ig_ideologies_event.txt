@@ -139,6 +139,7 @@ ideology_egalitarian_modern = {
 	
 	lawgroup_labor_rights = {		
 		law_worker_protections = strongly_approve
+		law_ut_minimum_wage = strongly_approve
 		law_regulatory_bodies = approve
 		law_no_workers_rights = neutral
 	}		

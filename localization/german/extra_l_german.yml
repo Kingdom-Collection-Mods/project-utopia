@@ -301,6 +301,8 @@
  law_demobilized_desc: "Die massive Verkleinerung der Streitkräfte und die Rückführung von Ressourcen in die zivile Wirtschaft."
  law_private_pension: "Private Rente"
  law_private_pension_desc: ""
+ law_ut_minimum_wage: "Mindestlohn"
+ law_ut_minimum_wage_desc: ""
 
 
  institution_epa: "Umweltschutz"
@@ -714,6 +716,9 @@
  pm_elastics_two: "Nylonstoffe"
  pm_precision_tools_heavy_machinery: "CNC-Maschinen"
  pm_pre_baked_dough_pieces: "Teigrohlinge"
+
+ pm_ut_modern_tank_production: "Moderne Panzerproduktion"
+ pm_ut_jetplane_production: "Jetproduktion"
 
  bauxite: "Bauxit"
  aluminum: "Aluminium"

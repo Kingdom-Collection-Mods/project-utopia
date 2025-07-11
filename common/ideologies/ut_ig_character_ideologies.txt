@@ -20,7 +20,8 @@ ut_ideology_environmentalist_leader = {
 
 	lawgroup_labor_rights = {
 		law_worker_protections = neutral
-		law_regulatory_bodies = neutral
+		law_ut_minimum_wage = neutral
+		law_regulatory_bodies = disapprove
 		law_no_workers_rights = disapprove
 	}
 
