@@ -26,7 +26,7 @@
 
 
 ideology_urbanist_economy_base = {
-	icon = "gfx/interface/icons/ideology_icons/egalitarian.dds"
+	icon = "gfx/interface/icons/ideology_icons/unused/integralist.dds"
 
 	lawgroup_distribution_of_power = {
 		law_single_party_state = approve
@@ -275,7 +275,7 @@ ideology_jingoist_democratic = {
 }
 
 ideology_socialist_democratic = {
-	icon = "gfx/interface/icons/ideology_icons/socialist.dds"
+	icon = "gfx/interface/icons/ideology_icons/unused/social_democrat.dds"
 
 	lawgroup_governance_principles = {
 		law_council_republic = approve
