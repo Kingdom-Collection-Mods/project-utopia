@@ -169,7 +169,7 @@ pm_pre_baked_dough_pieces = {
 			goods_input_electricity_add = 5
 
 			# output goods
-			goods_output_groceries_add = 170	# x30 = 3600
+			goods_output_groceries_add = 180	# x30 = 3600
 		}
 
 		level_scaled = {
@@ -265,14 +265,14 @@ pm_plastics_textile  = {
 		workforce_scaled = {
 			# input goods
 			goods_input_tools_add = 10
-			goods_input_fabric_add = 50
+			goods_input_fabric_add = 40
 			goods_input_electricity_add = 10
 			goods_input_dye_add = 20
 			goods_input_plastic_add = 40 #acrylfasern
-			goods_input_heavy_machinery_add = 2
+			goods_input_heavy_machinery_add = 1
 			
 			# output goods
-			goods_output_clothes_add = 195
+			goods_output_clothes_add = 225
 		}
 
 		level_scaled = {
@@ -510,9 +510,9 @@ pm_modern_automobiles = {
 
 		level_scaled = {
 			building_employment_shopkeepers_add = 500
-			building_employment_laborers_add = 500
+			building_employment_laborers_add = 1500
 			building_employment_machinists_add = 1500
-			building_employment_service_workers_add = 1500
+			building_employment_service_workers_add = 500
 			building_employment_engineers_add = 1000
 		}
 	}
@@ -848,12 +848,12 @@ pm_assembly_lines_building_heavy_machinery_tools_motors = {
 		workforce_scaled = {
 			goods_input_electricity_add = 10
 			goods_input_tools_add = 5
-			goods_input_heavy_machinery_add = 1
+			goods_input_heavy_machinery_add = 2
 		}
 
 		level_scaled = {
 			building_employment_laborers_add = -1500
-			building_employment_machinists_add = -750
+			building_employment_machinists_add = -1000
 		}
 	}
 

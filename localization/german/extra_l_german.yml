@@ -115,7 +115,7 @@
  ut_nd_democrat_progress_from_movements: "[concept_political_movement_support] of #bold demokratische#! [Concept('concept_political_movement','$concept_political_movements$')]"
  ut_nd_democrat_progress_from_events: "Ereignisse und andere Effekte"
  ut_nd_democrat_progress_from_focus: "Demokratischer Fokus"
- ut_nd_democrat_interest_group_concept_tt: "[ut_nd_democrat_concept] Interressensgruppen"
+ ut_nd_democrat_interest_group_concept_tt: "IG hat Anführer mit [ut_nd_democrat_concept] Ideologie"
  ut_nd_democrat_concept: "Demokratisch"
  ut_nd_democrat_concept_desc: "Demokratische Charakter Ideologien sind: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_positivist').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName] und [GetIdeology('ideology_utopian').GetName] \n Wenn Demokratischer Fokus gesetzt ist ebenfalls: [GetIdeology('ideology_humanitarian_royalist').GetName] und [GetIdeology('ideology_radical').GetName]"
  ut_new_dawn_democrat_status: "Demokratische Ideen prägen den Diskurs"
@@ -792,6 +792,7 @@
  ut_high_tech_company_research: "Forschungsinstitut"
  pm_ut_high_speed_electric_trains: "Intercity"
  pm_ut_high_speed_electric_trains_principle_transport_3: "Intercity"
+ pm_computer_bureaucrats: "Digitale Organisation"
 
 
  ut_commercial_goods_simple_company: "ElektroNord Gerätewerk"

@@ -300,6 +300,15 @@ pmg_tanks = {
 	}
 }
 
+pmg_automation_building_automotive_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_automation_disabled
+		pm_assembly_lines_building_automotive_industry
+		pm_assembly_lines_building_heavy_machinery_tools_motors
+	}
+}
+
 pmg_telephones_category = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {

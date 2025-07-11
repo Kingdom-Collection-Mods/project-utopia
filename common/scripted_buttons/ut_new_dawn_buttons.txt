@@ -130,7 +130,11 @@ je_ut_new_dawn_democratic_spirit = {
 	name = "je_ut_new_dawn_democratic_spirit"
 	desc = "je_ut_new_dawn_democratic_spirit_desc"
 
-	visible = { always = yes }
+	visible = { 
+		NOT = {
+			has_variable = je_ut_new_dawn_democratic_spirit_done
+		}
+	}
 
 	possible = {
 		custom_tooltip = {
@@ -189,13 +193,11 @@ je_ut_new_dawn_democratic_cultural_values = {
 	name = "je_ut_new_dawn_democratic_cultural_values"
 	desc = "je_ut_new_dawn_democratic_cultural_values_desc"
 
-	visible = { always = yes }
+	visible = { 
+		NOT = { has_variable = je_ut_new_dawn_democratic_cultural_values_done }
+	}
 
 	possible = {
-		custom_tooltip = {
-			text = new_dawn_ideology_action_done_tt
-			NOT = { has_variable = je_ut_new_dawn_democratic_cultural_values_done }
-		}
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_democratic = { 
@@ -251,13 +253,11 @@ je_ut_new_dawn_democratic_power_bloc = {
 	name = "je_ut_new_dawn_democratic_power_bloc"
 	desc = "je_ut_new_dawn_democratic_power_bloc_desc"
 
-	visible = { always = yes }
+	visible = { 
+		NOT = { has_variable = je_ut_new_dawn_democratic_power_bloc_done }
+	}
 
 	possible = {
-		custom_tooltip = {
-			text = new_dawn_ideology_action_done_tt
-			NOT = { has_variable = je_ut_new_dawn_democratic_power_bloc_done }
-		}
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_democratic = { 
@@ -295,13 +295,11 @@ je_ut_new_dawn_democratic_fair_elections = {
 	name = "je_ut_new_dawn_democratic_fair_elections"
 	desc = "je_ut_new_dawn_democratic_fair_elections_desc"
 
-	visible = { always = yes }
+	visible = { 
+		NOT = { has_variable = je_ut_new_dawn_democratic_fair_elections_done }
+	}
 
 	possible = {
-		custom_tooltip = {
-			text = new_dawn_ideology_action_done_tt
-			NOT = { has_variable = je_ut_new_dawn_democratic_fair_elections_done }
-		}
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_democratic = { 

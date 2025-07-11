@@ -319,9 +319,7 @@ union_new_mandates = {
 	}
 		
 	modifier = {
-		power_bloc_leverage_generation_mult = 0.2
-		country_diplomatic_play_maneuvers_add = 20
-		country_infamy_generation_mult = -0.2
+		country_infamy_generation_mult = -0.25
 	}
 
 	unlocking_technologies = {
@@ -338,7 +336,9 @@ union_trade = {
 	texture = "gfx/interface/icons/invention_icons/pan_nationalism.dds"
 	category = society
 		
-
+	modifier = {
+		power_bloc_leverage_generation_mult = 0.25
+	}
 
 	unlocking_technologies = {
 		union_new_mandates
@@ -362,9 +362,8 @@ union_new_mandates_two = {
 	}
 
 	modifier = {
-		power_bloc_leverage_generation_mult = 0.2
-		country_diplomatic_play_maneuvers_add = 20
-		country_infamy_generation_mult = -0.1
+		power_bloc_leverage_generation_mult = 0.25
+		country_diplomatic_play_maneuvers_add = 30
 	}
 
 	unlocking_technologies = {
@@ -482,6 +481,7 @@ political_progress_1 = {
 	category = society
 		
 	modifier = {
+		country_influence_mult = 0.25
 		country_service_workers_pol_str_mult = 0.1
 		interest_group_ig_urbanists_pol_str_mult = 0.1
 
@@ -526,6 +526,7 @@ multicultural_globalism = {
 	category = society
 		
 	modifier = {
+		country_influence_mult = 0.25
 	}
 
 	unlocking_technologies = {
@@ -544,6 +545,7 @@ anti_multicultural_globalism = {
 		
 	modifier = {
 		state_expected_sol_from_literacy = 2 #todo: does not really fit here
+		country_infamy_generation_mult = -0.25
 	}
 
 	unlocking_technologies = {
@@ -567,6 +569,9 @@ anti_discrimination_laws = {
 		}
 	}
 
+	modifier = {
+	}
+
 	unlocking_technologies = {
 		mass_propaganda
 	}
@@ -585,6 +590,10 @@ lgbt_movement = {
 		custom_tooltip = {
 			text = lgbt_movement_tt
 		}
+	}
+
+	modifier = {
+		country_diplomatic_play_maneuvers_add = 30
 	}
 
 	unlocking_technologies = {
