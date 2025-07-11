@@ -1,4 +1,4 @@
-ut_ideology_environmentalist = {
+ut_ideology_environmentalist_leader = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_Agrarian.dds"
 	
 	character_ideology = yes
@@ -124,7 +124,7 @@ ut_ideology_environmentalist = {
 	}
 }
 
-ut_ideology_cosmopolitan = {
+ut_ideology_cosmopolitan_leader = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_paternalistic.dds"
 	
 	character_ideology = yes

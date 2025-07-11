@@ -1,10 +1,9 @@
 ﻿ut_movement_cosmopolitan = {
-	icon = "gfx/interface/icons/ideology_icons/paternalistic.dds"
 	category = movement_category_ideological
 
 	ideology = ut_ideology_cosmopolitan	
 	character_ideologies = {
-		ut_ideology_cosmopolitan
+		ut_ideology_cosmopolitan_leader
 	}
 	
 	disband_trigger = {
@@ -197,13 +196,12 @@
 }
 
 ut_movement_humanist = {
-	icon = "gfx/interface/icons/ideology_icons/individualist.dds"
 	category = movement_category_ideological
 
 	ideology = ideology_urbanist_human_rights_base
 	character_ideologies = {
 		ideology_humanitarian
-		ideology_atheist
+		ideology_nihilist
 		ideology_reformer
 	}
 	
@@ -225,7 +223,7 @@ ut_movement_humanist = {
 		OR = {
 			has_ideology = ideology:ideology_humanitarian
 			has_ideology = ideology:ideology_humanitarian_royalist
-			has_ideology = ideology:ideology_atheist
+			has_ideology = ideology:ideology_nihilist
 			has_ideology = ideology:ideology_reformer
 			OR = {
 				is_interest_group_type = ig_intelligentsia
@@ -243,7 +241,7 @@ ut_movement_humanist = {
 				OR = {
 					has_ideology = ideology:ideology_humanitarian
 					has_ideology = ideology:ideology_humanitarian_royalist
-					has_ideology = ideology:ideology_atheist
+					has_ideology = ideology:ideology_nihilist
 					has_ideology = ideology:ideology_reformer
 				}
 			}

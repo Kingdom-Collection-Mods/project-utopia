@@ -134,6 +134,10 @@ je_ut_new_dawn_democratic_spirit = {
 
 	possible = {
 		custom_tooltip = {
+			text = new_dawn_ideology_action_done_tt
+			NOT = { has_variable = je_ut_new_dawn_democratic_spirit_done }
+		}
+		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_democratic = { 
 				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
@@ -184,6 +188,10 @@ je_ut_new_dawn_democratic_cultural_values = {
 	visible = { always = yes }
 
 	possible = {
+		custom_tooltip = {
+			text = new_dawn_ideology_action_done_tt
+			NOT = { has_variable = je_ut_new_dawn_democratic_cultural_values_done }
+		}
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_democratic = { 
@@ -237,6 +245,10 @@ je_ut_new_dawn_democratic_power_bloc = {
 
 	possible = {
 		custom_tooltip = {
+			text = new_dawn_ideology_action_done_tt
+			NOT = { has_variable = je_ut_new_dawn_democratic_power_bloc_done }
+		}
+		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_democratic = { 
 				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
@@ -250,7 +262,6 @@ je_ut_new_dawn_democratic_power_bloc = {
 	}
 
 	effect = {
-		custom_tooltip = je_ut_new_dawn_democratic_power_bloc_tt
 		set_variable = je_ut_new_dawn_democratic_power_bloc_done
 		add_modifier = {
 			name = je_ut_new_dawn_democratic_power_bloc_mod
@@ -274,6 +285,10 @@ je_ut_new_dawn_democratic_fair_elections = {
 
 	possible = {
 		custom_tooltip = {
+			text = new_dawn_ideology_action_done_tt
+			NOT = { has_variable = je_ut_new_dawn_democratic_fair_elections_done }
+		}
+		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_democratic = { 
 				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
@@ -283,7 +298,6 @@ je_ut_new_dawn_democratic_fair_elections = {
 	}
 
 	effect = {
-		custom_tooltip = je_ut_new_dawn_democratic_fair_elections_tt
 		set_variable = je_ut_new_dawn_democratic_fair_elections_done		
 		add_modifier = {
 			name = je_ut_new_dawn_democratic_fair_elections_mod

@@ -72,7 +72,6 @@
 
  je_ut_new_dawn: "New Dawn"
  je_ut_new_dawn_reason: "New political waves hit our nation, we must decide on a path."
- je_ut_new_dawn_condition_tt: "Moderate, Communisten oder Faschisten haben 100% erreicht."
  je_ut_new_dawn_effect_tt: "New Dawn Part 2"
  new_dawn_ongoing: "New Dawn"
 
@@ -165,8 +164,8 @@
  ideology_urbanist_economy_base_desc: "Rationalist ideologies favor governance by experts and the efficient management of state and society. They rely on science-based decisions and support education, technology, and public services."
  ideology_urbanist_human_rights_base: "Humanists"
  ideology_urbanist_human_rights_base_desc: "Humanist ideologies focus on equality, social justice, and the protection of individual rights. They reject slavery and exploitation and advocate for strong social safety nets."
- ut_ideology_environmentalist: "Ecologist"
- ut_ideology_environmentalist_desc: "#lore Environmentalists.#!"
+ ut_ideology_environmentalist_leader: "Ecologist"
+ ut_ideology_environmentalist_leader_desc: "#lore Environmentalists.#!"
 
  ig_trait_urbanist_loyal: "Leistungsgesellschaft"
  ig_trait_urbanist_loyal_desc: "This group advocates for the free movement of people across borders, believing it fosters cultural exchange and economic opportunity. They oppose restrictive immigration policies and emphasize international cooperation."

@@ -4942,6 +4942,12 @@ ideology_corporatist_leader = {
 		law_private_pension = approve
 	}
 
+	lawgroup_food_safety = {
+		law_no_food_safety_protection = approve
+		law_food_safety_protection_institute = neutral
+		law_food_safety_protection_institute_two = disapprove		
+	}	
+
 	country_trigger = {
 		has_technology_researched = corporatism
 	}

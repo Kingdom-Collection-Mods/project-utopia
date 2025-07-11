@@ -229,6 +229,7 @@ je_ut_new_dawn_democratic = {
 			text = je_ut_new_dawn_effect_tt
 			ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 		}
+		set_variable = je_ut_new_dawn_done
 	}
 
 	status_desc = {

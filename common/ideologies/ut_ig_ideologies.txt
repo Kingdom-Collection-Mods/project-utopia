@@ -217,3 +217,42 @@ ideology_moralist_democratic = {
 		law_state_atheism = strongly_disapprove
 	}
 }
+
+
+
+
+ut_ideology_cosmopolitan = {
+	icon = "gfx/interface/icons/ideology_icons/paternalistic.dds"
+	
+	lawgroup_citizenship = {
+		law_ethnostate = disapprove
+		law_national_supremacy = disapprove
+		law_racial_segregation = disapprove
+		law_cultural_exclusion = neutral
+		law_multicultural = approve
+		law_neo_ethno_state = strongly_disapprove
+		law_multicultural_globalism = strongly_approve
+	}
+
+	lawgroup_migration = {
+		law_closed_borders = strongly_disapprove
+		law_migration_controls = disapprove
+		law_no_migration_controls = approve
+	}
+
+	lawgroup_church_and_state = {
+		law_state_religion = disapprove
+		law_freedom_of_conscience = neutral
+		law_total_separation = approve
+		law_state_atheism = approve
+	}
+	
+	lawgroup_trade_policy = {		
+		law_free_trade = approve	
+		law_free_trade_union= strongly_approve
+		law_protectionism_union = approve
+		law_mercantilism = disapprove
+		law_protectionism = disapprove
+		law_isolationism = strongly_disapprove
+	}
+}

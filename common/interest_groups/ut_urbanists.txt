@@ -12,7 +12,7 @@
 	
 	character_ideologies = {
 		ideology_moderate
-		ut_ideology_environmentalist
+		ut_ideology_environmentalist_leader
 		ideology_authoritarian
 		ideology_corporatist_leader
 		ideology_liberal_leader

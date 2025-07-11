@@ -72,7 +72,7 @@
 
  je_ut_new_dawn: "New Dawn"
  je_ut_new_dawn_reason: "New Dawn sind neue Eventeinträge um Kernideologie eines Landes, sie sollen zu großen Endgame Events führen die Einfluss auf Radikale und Loyalisten nimmt. In Zusammenhang mit den Blöcken wäre auch cool.\nHeavily work in progress"
- je_ut_new_dawn_condition_tt: "Moderate, Communisten oder Faschisten haben 100% erreicht"
+ je_ut_new_dawn_condition_tt: "Demokratischen, Autokratischen, Kommunistischen oder Faschistischen Pfad abgeschlossen."
  je_ut_new_dawn_effect_tt: "Schaltet Endgame Ideen frei (tbd)"
  new_dawn_ongoing: "New Dawn"
 
@@ -88,7 +88,7 @@
  ut_new_dawn_focus_freeze_tt: "Fokus nicht deaktiviert"
  ut_new_dawn_focus_tt: "#v +0.5#! Fortschritt pro Monat für ausgewählte Ideologie"
 
- je_ut_new_dawn_critical_lower_bound_fail_tt: "Wenn der Grenzwert von [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')] Fortschrittspunkten unterschritten wird, können Ereignissketten politischen Fortschritt rückgängig machen und schlussendlich einen neuen New Dawn auslösen."
+ je_ut_new_dawn_critical_lower_bound_fail_tt: "Wenn der Grenzwert von #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v Fortschrittspunkten#! unterschritten wird, können Ereignissketten politischen Fortschritt rückgängig machen und schlussendlich einen neuen New Dawn auslösen."
 
 
  ut_new_dawn_communist_focus: "Kommunistischer Fokus (tbd)"
@@ -124,13 +124,14 @@
  je_ut_new_dawn_points_bar: "Fortschrittspunkte"
  je_ut_new_dawn_points_bar_desc: "Fortschrittspunkte: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
 
- je_ut_new_dawn_democratic_complete_condition_tt: "Alle Aktionen des Journaleintrages sind abgeschlossen"
+ je_ut_new_dawn_democratic_complete_condition_tt: "Alle #v Aktionen#! des Journaleintrages sind abgeschlossen"
 
  je_ut_new_dawn_democratic_spirit: "Demokratischer Geist"
  je_ut_new_dawn_democratic_spirit_desc: "Ein neuer demokratischer Geist erfasst das Land, geleitet von Intellektuellen, die sich dem liberal-demokratischen Ideal verpflichtet fühlen. Der Weg nach vorne erfordert eine klare Absage an extremistische Ideologien in der Regierung."
  new_dawn_ideology_required_points_tt: "Erfordert mindestens #v [SCOPE.ScriptValue('new_dawn_ideology_required_points')] Fortschrittspunkte#!"
  new_dawn_ideology_required_points_spend_tt: "Verbraucht #r [SCOPE.ScriptValue('new_dawn_ideology_spend_points')]#! #v Fortschrittspunkte#!, um diesen Schritt zu aktivieren"
- new_dawn_ideology_upper_bound_tt: "Hat #v[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')] Fortschrittspunkte#!"
+ new_dawn_ideology_upper_bound_tt: "Hat #v [SCOPE.ScriptValue('new_dawn_ideology_upper_bound')] Fortschrittspunkte#!"
+ new_dawn_ideology_action_done_tt: "Hat Aktion #v nicht#! abgeschlossen
 
  je_ut_new_dawn_democratic_cultural_values: "Demokratische Kulturwerte"
  je_ut_new_dawn_democratic_cultural_values_desc: "Ein demokratisches Fundament kann nur auf kulturellen Werten gedeihen, die Pluralismus und individuelle Freiheiten respektieren. Führende Persönlichkeiten in Wirtschaft und Religion wenden sich einer demokratischeren Weltsicht zu."
@@ -193,11 +194,11 @@
 
 # Pop and Politics
  service_workers: "@service_workers! $service_workers_no_icon$"
- service_workers_desc: "Arbeitende in urbanen Dienstleistungssektoren wie Gastgewerbe, Einzelhandel und Transport. Sie bilden einen wesentlichen Teil der modernen Wirtschaft und repräsentieren eine vielfältige, dynamische Arbeitskraft."
+ service_workers_desc: "Arbeitende in urbanen Dienstleistungssektoren wie Gastgewerbe, Einzelhandel und Transport. Sie bilden einen wesentlichen Teil der modernen Wirtschaft und repräsentieren eine vielfältige, dynamische Arbeitskraft. Ohne sie gibt es keine Urbanisten. Politisch haben sie eine Tendenz zu den Urbanisten."
  service_workers_only_icon: "@service_workers!"
  service_workers_no_icon: "Dienstleister"
  POP_SERVICE_WORKERS: "$service_workers$ [concept_profession]"
- SERVICE_WORKERS_QUALIFICATIONS_DESC: "Nur Bevölkerungsgruppen mit ausreichender [concept_literacy] und [concept_wealth] können zu #v $service_workers$#! werden. Das Potenzial steigt mit zunehmender [concept_literacy] und [concept_wealth]. #v $shopkeepers$#! und #v $clerks$#! haben es besonders leicht, zu #v $service_workers$#! zu werden."
+ SERVICE_WORKERS_QUALIFICATIONS_DESC: "Nur Bevölkerungsgruppen mit ausreichender [concept_literacy] und [concept_wealth] können zu #v $service_workers$#! werden. Das Potenzial steigt mit zunehmender [concept_literacy] und [concept_wealth]. #v $laborers$#! und #v $clerks$#! haben es besonders leicht, zu #v $service_workers$#! zu werden."
  country_service_workers_pol_str_mult: "[concept_political_strength] of $service_workers$"
  country_service_workers_pol_str_mult_desc: "An increase or decrease in the [concept_political_strength] of $service_workers$"
  state_service_workers_investment_pool_contribution_add: "Beitrag zu [concept_investment_pool] ($service_workers$)"
@@ -223,8 +224,8 @@
  ideology_urbanist_economy_base_desc: "Rationalistische Ideologien favorisieren die Regierung durch Experten und die effiziente Verwaltung von Staat und Gesellschaft. Sie setzen auf wissenschaftlich fundierte Entscheidungen und unterstützen Bildung, Technologie und öffentliche Dienstleistungen."
  ideology_urbanist_human_rights_base: "Humanisten"
  ideology_urbanist_human_rights_base_desc: "Humanistische Ideologien konzentrieren sich auf Gleichheit, soziale Gerechtigkeit und den Schutz der individuellen Rechte. Sie lehnen Sklaverei und Ausbeutung ab und setzen sich für starke soziale Sicherheitsnetze ein."
- ut_ideology_environmentalist: "Ökologistisch"
- ut_ideology_environmentalist_desc: "#lore Environmentalists.#!"
+ ut_ideology_environmentalist_leader: "Ökologistisch"
+ ut_ideology_environmentalist_leader_desc: "#lore Environmentalists.#!"
 
  ut_ideology_cosmopolitan: "Kosmopolitisch"
  ut_ideology_cosmopolitan_desc: "Kosmopolitische Ideologien betonen die globale Zusammenarbeit, kulturelle Vielfalt und die Förderung von Menschenrechten. Sie befürworten offene Grenzen, Multikulturalismus und eine säkulare Regierungsführung ohne religiösen Einfluss."
