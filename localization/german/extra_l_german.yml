@@ -236,7 +236,10 @@
 
  ideology_liberal_democratic: "Liberal-Demokratisch"
  ideology_moralist_democratic: "Moralisch-Demokratisch"
- ideology_plutocratic_democratic: "Plutokratisch-Demokratisch"
+ ideology_plutocratic_democratic: "Elitär"
+ ideology_reactionary_democratic: "Konservativ"
+ ideology_jingoist_democratic: "Sicherheitspolitik"
+ ideology_socialist_democratic: "Sozialdemokratisch"
 
  ig_trait_urbanist_loyal: "Leistungsgesellschaft"
  ig_trait_urbanist_loyal_desc: "This group advocates for the free movement of people across borders, believing it fosters cultural exchange and economic opportunity. They oppose restrictive immigration policies and emphasize international cooperation."

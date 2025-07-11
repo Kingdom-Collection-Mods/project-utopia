@@ -169,6 +169,10 @@ je_ut_new_dawn_democratic_spirit = {
 			remove_ideology = ideology_liberal
 			add_ideology = ideology_liberal_democratic
 		}
+		ig:ig_petty_bourgeoisie = {
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_reactionary_democratic
+		}
 		set_variable = je_ut_new_dawn_democratic_spirit_done
 
 
@@ -269,6 +273,10 @@ je_ut_new_dawn_democratic_power_bloc = {
 
 	effect = {
 		set_variable = je_ut_new_dawn_democratic_power_bloc_done
+		ig:ig_armed_forces = {
+			remove_ideology = ideology_jingoist
+			add_ideology = ideology_jingoist_democratic
+		}
 		add_modifier = {
 			name = je_ut_new_dawn_democratic_power_bloc_mod
 		}
@@ -309,6 +317,10 @@ je_ut_new_dawn_democratic_fair_elections = {
 			name = je_ut_new_dawn_democratic_fair_elections_mod
 		}
 
+		ig:ig_trade_unions = {
+			remove_ideology = ideology_socialist
+			add_ideology = ideology_socialist_democratic
+		}
 		
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_spend_tt

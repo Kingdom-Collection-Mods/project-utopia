@@ -218,7 +218,123 @@ ideology_moralist_democratic = {
 	}
 }
 
+ideology_reactionary_democratic = {
+	icon = "gfx/interface/icons/ideology_icons/reactionary.dds"
+	
+	lawgroup_governance_principles = {
+		law_monarchy = neutral
+		law_theocracy = neutral		
+		law_presidential_republic = approve
+		law_parliamentary_republic = approve
+		law_corporate_state = approve
+		law_council_republic = neutral
+	}
 
+	lawgroup_citizenship = {
+		law_ethnostate = neutral
+		law_neo_ethno_state = approve
+		law_national_supremacy = approve
+		law_racial_segregation = approve
+		law_cultural_exclusion = approve
+		law_multicultural = neutral	
+		law_multicultural_globalism = disapprove	
+	}
+
+	lawgroup_migration = {
+		law_closed_borders = neutral
+		law_migration_controls = strongly_approve
+		law_no_migration_controls = disapprove
+	}
+
+	lawgroup_environment_protection = {
+		law_no_environment_protection = neutral
+		law_environment_protection_institute = approve
+		law_environment_protection_institute_two = disapprove
+	}
+}
+
+ideology_jingoist_democratic = {
+	icon = "gfx/interface/icons/ideology_icons/jingoist.dds"
+	
+	lawgroup_army_model = {
+		law_professional_army = neutral
+		law_mass_conscription = neutral
+		law_national_militia = disapprove
+		law_peasant_levies = disapprove
+		law_task_forces = strongly_approve
+		law_demobilized = strongly_disapprove
+	}
+	
+	lawgroup_colonization = {
+		law_colonial_resettlement = neutral
+		law_colonial_exploitation = neutral
+		law_frontier_colonization = neutral
+		law_no_colonial_affairs = strongly_approve
+	}
+}
+
+ideology_socialist_democratic = {
+	icon = "gfx/interface/icons/ideology_icons/socialist.dds"
+
+	lawgroup_governance_principles = {
+		law_council_republic = approve
+		law_parliamentary_republic = strongly_approve
+		law_corporate_state = strongly_disapprove
+		law_presidential_republic = neutral
+		law_theocracy = strongly_disapprove
+		law_monarchy = strongly_disapprove
+	}
+
+	lawgroup_economic_system = {	
+		law_command_economy = neutral
+		law_cooperative_ownership = strongly_approve
+		law_interventionism = disapprove
+		law_agrarianism = disapprove
+		law_traditionalism = strongly_disapprove		
+		law_laissez_faire = strongly_disapprove	
+		law_industry_banned = strongly_disapprove	
+		law_extraction_economy = strongly_disapprove
+		law_social_market_economy = strongly_approve
+		law_free_market_economy = strongly_disapprove
+	}
+
+	lawgroup_trade_policy = {		
+		law_protectionism = neutral
+		law_isolationism = disapprove
+		law_mercantilism = neutral
+		law_free_trade = neutral
+		law_free_trade_union= strongly_approve
+		law_protectionism_union = approve
+	}
+
+	lawgroup_taxation = {
+		law_per_capita_based_taxation = disapprove
+		law_land_based_taxation = neutral
+		law_proportional_taxation = neutral
+		law_consumption_based_taxation = neutral
+		law_graduated_taxation = strongly_approve
+	}
+
+	lawgroup_labor_rights = {
+		law_no_workers_rights = disapprove
+		law_regulatory_bodies = neutral
+		law_worker_protections = strongly_approve
+	}
+
+	lawgroup_welfare = {
+		law_old_age_pension = strongly_approve
+		law_wage_subsidies = approve
+		law_poor_laws = neutral
+		law_no_social_security = strongly_disapprove
+		law_private_pension = strongly_disapprove
+	}
+
+	lawgroup_food_safety = {
+		law_no_food_safety_protection = neutral
+		law_food_safety_protection_institute = approve
+		law_food_safety_protection_institute_two = approve
+	}
+}
 
 
 ut_ideology_cosmopolitan = {
