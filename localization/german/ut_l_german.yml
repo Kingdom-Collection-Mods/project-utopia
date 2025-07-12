@@ -89,8 +89,8 @@
  je_urbanist_ig: "Urbanebewegung"
  je_urbanist_ig_reason: "Die Urbanebewegung ist mehr als Architektur - sie ist eine Vision des Zusammenlebens. In den wachsenden Städten entstehen nicht nur Häuser, sondern Gesellschaften. Stadtplaner, Sozialreformer und Visionärinnen träumen von urbanen Räumen, die nicht nur funktionieren, sondern inspirieren: mit Parks, Licht, Nahverkehr und öffentlichem Leben. Die Stadt wird nicht nur gebaut, sie wird gestaltet - als Bühne für eine bessere Zukunft."
 
- ut_research_institute_found: "Hochleistungscomputer erforschen"
- ut_research_institute_found_desc: "Ein nationales Forschungsinstitut soll gegründet werden, um wissenschaftliche Exzellenz zu bündeln, Grundlagenforschung zu fördern und den technologischen Fortschritt strukturell zu beschleunigen. Der Aufbau dieser Einrichtung ist ein Meilenstein auf dem Weg zur wissensbasierten Gesellschaft."
+ ut_research_institute_found: "Forschungsinstitut gründen"
+ ut_research_institute_found_desc: "Ein nationales Forschungsinstitut soll gegründet werden, um wissenschaftliche Exzellenz zu bündeln, Grundlagenforschung zu fördern und den technologischen Fortschritt strukturell zu beschleunigen."
  ut_je_research_institute_founding: "Founding a Research Institute"
  ut_je_research_institute_founding_reason: "Our nation prepares to institutionalize innovation by establishing a dedicated research institute. In an age where ideas fuel power, the foundation of such an institute marks a monumental step forward. Here, minds will be sharpened, knowledge systematized, and breakthroughs born not of accident, but design.\nThis institute will become a beacon - attracting scientists, thinkers, and technocrats from every corner of society. A crucible of curiosity, where the impossible is not denied, but studied."
  ut_je_research_institute_founding.success.d: "The research institute is operational. It provides a structured space for innovation, accelerating technological advancement and cultivating national prestige."
@@ -100,7 +100,7 @@
  ut_je_research_institute_founding_goal: "Auf den Abschluss der #BOLD 4-Jahres#!-Gründungsdauer warten"
 
  ut_research_high_tech_computers: "Hochleistungscomputer erforschen"
- ut_research_high_tech_computers_desc: "Unsere Nation investiert gezielt in die Erforschung von Hochleistungsrechnern. Diese Maschinen werden die Grundlage für moderne Simulationen, industrielle Automatisierung und militärische Überlegenheit bilden. Wer sie zuerst beherrscht, formt das digitale Zeitalter."
+ ut_research_high_tech_computers_desc: "Mit dem Ziel, an der Spitze der technologischen Entwicklung zu bleiben, schlagen führende Wissenschaftler die Gründung eines nationalen Forschungszentrums für Hochleistungscomputer vor."
  ut_je_ut_research_high_tech_computers_research: "Forschung an Hochleistungscomputern"
  ut_je_ut_research_high_tech_computers_research_reason: "Die Grenzen des Berechenbaren werden neu gezogen. Während klassische Computer an ihre Limits stoßen, verspricht eine neue Generation von Hochleistungsrechnern revolutionäre Fortschritte in Wissenschaft, Industrie und Verteidigung. Mit ausreichender Förderung können wir diese Revolution anführen - Maschinen erschaffen, die schneller denken als jedes menschliche Gehirn.\nDies ist keine Forschung - es ist ein Wettlauf um die Zukunft."
  ut_je_ut_research_high_tech_computers_research.success.d: "Die Entwicklung einer neuen Generation von Hochleistungscomputern ist gelungen. Diese Maschinen leisten Berechnungen in bisher unerreichter Komplexität und Geschwindigkeit."
