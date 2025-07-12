@@ -7,6 +7,7 @@ utopia_journal_prod.1 = {
 
 	type = country_event
 	event_image = { video = "unspecific_gears_pistons" }
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	duration = 3
 	
 	option = {
@@ -44,6 +45,7 @@ utopia_journal_prod.2 = {
 	flavor = ut_heavy_industrial_machinery_je.fail.f
 	type = country_event
 	event_image = { video = "unspecific_gears_pistons" }
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	duration = 3
 	
 	
@@ -99,6 +101,7 @@ utopia_journal_prod.3 = {
 	flavor = ut_cnc_machines_je.success.f
 	type = country_event
 	event_image = { video = "unspecific_gears_pistons" }
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	duration = 3
 	
 	option = {
@@ -138,6 +141,7 @@ utopia_journal_prod.4 = {
 	flavor = ut_consumer_goods_simple_je.fail.f
 	type = country_event
 	event_image = { video = "europenorthamerica_london_center" }
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	duration = 3
 	
 	immediate = {
@@ -179,6 +183,7 @@ utopia_journal_prod.5 = {
 	type = country_event
 	trigger = { }
 	event_image = { video = "unspecific_automobile" }
+	
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	duration = 3
 	
@@ -207,7 +212,11 @@ utopia_journal_prod.6 = {
 	desc = ut_agrarian_planes_je.success.d
 	flavor = ut_agrarian_planes_je.success.f
 	type = country_event
-	event_image = { video = "unspecific_airPlane" }
+ 	event_image = {
+ 		video = "unspecific_airplane"
+ 	}
+	
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	duration = 3
 	
 	option = {
@@ -236,6 +245,7 @@ utopia_journal_prod.7 = {
 	flavor = ut_plastic_je.success.f
 	type = country_event
 	event_image = { video = "unspecific_gears_pistons" }
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	duration = 3
 	
 	option = {
@@ -264,6 +274,7 @@ utopia_journal_prod.8 = {
 	flavor = ut_electronics_je.success.f
 	type = country_event
 	event_image = { video = "unspecific_gears_pistons" }
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	duration = 3
 	
 	option = {
@@ -302,6 +313,7 @@ utopia_journal_prod.9 = {
 	flavor = ut_computers_je.success.f
 	type = country_event
 	event_image = { video = "unspecific_gears_pistons" }
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	duration = 3
 	
 	option = {
@@ -340,6 +352,7 @@ utopia_journal_prod.10 = {
 	flavor = ut_software_je.success.f
 	type = country_event
 	event_image = { video = "unspecific_gears_pistons" }
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	duration = 3
 	
 	option = {
@@ -378,6 +391,7 @@ utopia_journal_prod.11 = {
 	flavor = ut_consumer_goods_simple_je.success.f
 	type = country_event
 	event_image = { video = "europenorthamerica_london_center" }
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	duration = 3
 	
 	option = {
@@ -416,6 +430,7 @@ utopia_journal_prod.12 = {
 	flavor = ut_consumer_goods_complex_je.success.f
 	type = country_event
 	event_image = { video = "europenorthamerica_london_center" }
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	duration = 3
 	
 	option = {

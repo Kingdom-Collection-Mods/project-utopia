@@ -2,8 +2,11 @@
 # je_urbanist_ig >1% Urbanisten
 utopia_journal_society.1 = {
 	title = je_urbanist_ig
+	desc = je_urbanist_ig
+	flavor = je_urbanist_ig_reason
 	type = country_event
-	event_image = { video = "factory_precision" }
+	event_image = { video = "unspecific_politicians_arguing" }
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 
 	duration = 3
 	
@@ -60,7 +63,7 @@ utopia_journal_society.2 = { #Wirtschaftswunder
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 
 	duration = 3
 
@@ -95,7 +98,7 @@ utopia_journal_society.3 = { #Wirtschaftswunder others
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 
 	duration = 3
 
@@ -154,7 +157,7 @@ utopia_journal_society.4 = { #Early Civil Aviation Others
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 
 	duration = 3
 
@@ -162,7 +165,7 @@ utopia_journal_society.4 = { #Early Civil Aviation Others
 
 	title = early_civil_aviation
 	desc = early_civil_aviation
-	flavor = early_civil_aviation_desc
+	flavor = je_early_civil_aviation_reason
 
 	immediate = {
 	}
@@ -187,7 +190,7 @@ utopia_journal_society.5 = { #Modern Civil Aviation Others
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 
 	duration = 3
 
@@ -195,7 +198,7 @@ utopia_journal_society.5 = { #Modern Civil Aviation Others
 
 	title = modern_civil_aviation
 	desc = modern_civil_aviation
-	flavor = modern_civil_aviation_desc
+	flavor = je_modern_civil_aviation_reason
 
 	immediate = {
 	}

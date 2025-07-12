@@ -63,30 +63,28 @@
  ut_consumer_goods_simple_je.fail.d: "Die geplante Produktion einfacher Konsumgüter konnte nicht realisiert werden. Technische Schwierigkeiten, Lieferengpässe und fehlende Koordination führten zum Scheitern der Initiative."
  ut_consumer_goods_simple_je.fail.f: "Regale bleiben leer, Werkbänke still. Was einfach schien, erwies sich als komplex: Ohne Seife, Stoff und Werkzeug wird der Alltag schwer - und das Vertrauen schwindet mit jedem unerfüllten Bedarf."
 
-
  ut_consumer_goods_complex_je: "Komplexe Konsumgüter"
  ut_consumer_goods_complex_je_reason: "Produktion hochwertiger Konsumgüter wie Haushaltsgeräte, Unterhaltungselektronik und Fahrzeuge."
  ut_consumer_goods_complex_je.success.d: "Der erfolgreiche Ausbau hochwertiger Konsumgüterindustrie hat Haushalte, Verkehr und Freizeit revolutioniert. Technik ist nicht mehr Luxus - sie ist Lebensqualität."
  ut_consumer_goods_complex_je.success.f: "Kühlschränke surren, Radios erklingen, Autos rollen. Komfort wird Serienprodukt - und Fortschritt zieht ein in Wohnzimmer und Werkbank."
 
- pm_ut_precision_tools: "Präzisionswerkzeuge"
-
  je_group_utopia: "Utopia"
  je_group_ai_buffs: "Welle technologischer Innovationen"
 
  je_wirtschaftswunder: "Wirtschaftswunder"
+ je_wirtschaftswunder_reason: "REPLACE_ME"
  je_wirtschaftswunder_others: "Wirtschaftswunder erreicht"
+ je_wirtschaftswunder_others_reason: "REPLACE_ME"
 
  utopia_journal_society_2_wirtschaftswunder_title: "Wirtschaftswunder"
  utopia_journal_society_2_wirtschaftswunder_desc: "In einer atemberaubenden Wendung hat sich unsere Wirtschaft nicht nur erholt - sie ist regelrecht explodiert. Die Industrie boomt, die Beschäftigung ist auf Rekordniveau, und Wohlstand ist für viele kein Traum mehr, sondern tägliche Realität."
  utopia_journal_society_2_wirtschaftswunder_flavor: "Aus Schutt wurde Gold: Wo einst Ruinen rauchten, wuchsen Fabriken, Wohlstand und ein neues Selbstbewusstsein. Eine starke globale Wirtschaft, weltweiter ökonomischer Aufschwung, und der Geist des Wunders verwandelten Verzweiflung in Dynamik - eine Ära, in der Arbeiterinnen zu Ingenieurinnen der Zukunft wurden und der technologische Fortschritt die Welt staunen ließ."
 
-
  je_early_civil_aviation: "Frühe zivile Luftfahrt"
  je_early_civil_aviation_reason: "Die frühe zivile Luftfahrt beginnt mit wagemutigen Pionieren, knatternden Propellermaschinen und improvisierten Landebahnen auf Wiesen und Feldern. Was einst militärisch geprägt war, wird nun zur Verbindung zwischen Städten, Menschen und Märkten. Jeder Flug ein Abenteuer, jede Landung ein Triumph. In den offenen Cockpits saßen keine Passagiere, sondern Träumer - und aus ihren Träumen wuchs ein ganz neues Verkehrszeitalter."
+
  je_modern_civil_aviation: "Moderne zivile Luftfahrt"
  je_modern_civil_aviation_reason: "Die moderne zivile Luftfahrt hat den Himmel gezähmt. Aus wackeligen Doppeldeckern wurden strömungsglänzende Jets, aus Postflugzeugen fliegende Städte. Flughäfen werden zu Knotenpunkten einer global vernetzten Welt. Was früher Tage dauerte, geschieht nun in Stunden - schnell, bequem, effizient. Der Himmel ist nicht mehr Grenze, sondern Durchgang: für Geschäftsreisende, Familien, Träumer und den Fortschritt selbst."
-
 
  je_urbanist_ig: "Urbanebewegung"
  je_urbanist_ig_reason: "Die Urbanebewegung ist mehr als Architektur - sie ist eine Vision des Zusammenlebens. In den wachsenden Städten entstehen nicht nur Häuser, sondern Gesellschaften. Stadtplaner, Sozialreformer und Visionärinnen träumen von urbanen Räumen, die nicht nur funktionieren, sondern inspirieren: mit Parks, Licht, Nahverkehr und öffentlichem Leben. Die Stadt wird nicht nur gebaut, sie wird gestaltet - als Bühne für eine bessere Zukunft."
@@ -101,8 +99,6 @@
  event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
  event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. We must navigate these waters carefully, balancing the demands of the people with the needs of the state. The choices we make now will shape the future of our nation for generations to come."
 
-
-
  ut_new_dawn_status: "New Dawn"
  ut_new_dawn_focus_recently_changed: "Fokus kürzlich geändert"
  ut_new_dawn_focus_selected_tt: "Fokus ausgewählt"
@@ -111,7 +107,6 @@
  ut_new_dawn_focus_tt: "#v +0.5#! Fortschritt pro Monat für ausgewählte Ideologie"
 
  je_ut_new_dawn_critical_lower_bound_fail_tt: "Wenn der Grenzwert von #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v Fortschrittspunkten#! unterschritten wird, können Ereignissketten politischen Fortschritt rückgängig machen und schlussendlich einen neuen New Dawn auslösen."
-
 
  ut_new_dawn_communist_focus: "Kommunistischer Fokus (tbd)"
  ut_new_dawn_communist_bar: "Kommunistisch"
@@ -126,6 +121,7 @@
  ut_new_dawn_communist_status: "Kommunistische Ideen prägen den Diskurs"
  ut_nd_communist_character_concept: "Kommunistische Charaktere"
  ut_nd_communist_character_concept_desc: "Kommunistische Charakter sind GetIdeology('ideology_anarchist').GetName, GetIdeology('ideology_radical').GetName, GetIdeology('ideology_communist').GetName und GetIdeology('ideology_vanguardist').GetName."
+
  ut_new_dawn_democrat_focus: "Demokratischer Fokus"
  ut_new_dawn_democrat_bar: "Demokratisch"
  ut_new_dawn_democrat_bar_desc: "Demokratischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
@@ -169,7 +165,6 @@
  je_ut_new_dawn_democratic_fair_elections_tt: "Stärkt die Legitimität des politischen Systems durch transparente und gerechte Wahlen"
  je_ut_new_dawn_democratic_fair_elections_mod: "Faire Wahlen"
 
-
  ut_new_dawn_autocrat_focus: "Autokratischer Fokus (tbd)"
  ut_new_dawn_autocrat_bar: "Autokratisch"
  ut_new_dawn_autocrat_bar_desc: "Autokratischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
@@ -198,8 +193,6 @@
  ut_nd_fascist_character_concept_desc: "Faschistische Charakter sind: #bold [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_ethno_nationalist').GetName], und [GetIdeology('ideology_fascist').GetName]"
  ut_new_dawn_fascist_status: "Faschistische Ideen prägen den Diskurs"
 
-
-
  je_ai_radio_researched: "Radio Researched"
  je_ai_radio_researched_reason: "REPLACE_ME"
 
@@ -210,10 +203,6 @@
 
  je_ai_not_ai: "Human in disguise"
  je_ai_not_ai_reason: "REPLACE_ME"
-
-
- je_wirtschaftswunder_reason: "REPLACE_ME"
- je_wirtschaftswunder_others_reason: "REPLACE_ME"
 
 # Pop and Politics
  service_workers: "@service_workers! $service_workers_no_icon$"
@@ -239,7 +228,7 @@
  interest_group_ig_urbanists_approval_add_desc: "Ein Bonus oder Abzug auf die [concept_approval] der [concept_interest_group] „$ig_variant_urbanists$“ insgesamt."
  interest_group_ig_urbanists_pop_attraction_mult: "Pop-Anziehung ($ig_variant_urbanists$)"
  interest_group_ig_urbanists_pop_attraction_mult_desc: "Ein Bonus oder Abzug darauf, wie sehr Pops von der [concept_interest_group] „$ig_variant_urbanists$“ angezogen werden."
- 
+
  ideology_urbanist_liberalist: "Urban-liberale Ideologie"
  ideology_urbanist_power_base: "Weltbürgerlich"
  ideology_urbanist_power_base_desc: "Weltbürgerlich Ideologien setzen auf globale Vernetzung, Inklusivität und die Förderung von Menschenrechten. Sie befürworten offene Grenzen, Multikulturalismus und eine säkulare Regierungsführung ohne religiösen Einfluss."
@@ -330,7 +319,7 @@
  institution_food_safety: "Lebensmittelsicherheit"
  country_institution_epa_max_investment_add: "Max. Investition der [concept_institution] $institution_epa$"
  country_institution_food_safety_max_investment_add: "Max. Investition der [concept_institution] $institution_food_safety$"
- 
+
 
 # Diplo
  principle_group_modern_trade_league: "Moderne Handelsliga"
@@ -601,15 +590,11 @@
 
 
 # Buildings & tech
- bg_modern_industrie: "Moderne Industrie"
  bg_modern_industry: "Gebäudegruppe Modern Industrie"
  bg_bauxite_mining: "Bauxit-Abbau"
  bg_bauxite_mining_debug: "Gebäudegruppe Bauxit Debug"
  bg_rare_earths_mining: "Seltene Erden"
  bg_rare_earths_mining_debug: "Gebäudegruppe Seltene Erden Debug"
- bg_artillery_foundaries: "Gebäudegruppe Artilleriegießereien"
- bg_arms_industries: "Gebäudegruppe Waffenindustrie"
- bg_munition_plants: "Gebäudegruppe Munitionsfabrik"
 
  building_bauxite_mine: "Bauxitminen"
  building_bauxite_mine_debug: "Bauxitminen (Debug)"
@@ -618,7 +603,7 @@
  building_aluminum_factory: "Aluminiumfabriken"
  building_plastic_factory: "Plastikfabriken"
  building_electronic_factory: "Chipfabriken"
- building_heavy_machinery_factory: "Schwermaschinenfabriken"
+ building_heavy_machinery_factory: "Maschinenfabriken"
  building_computer_factory: "Computerfabriken"
  building_commercial_factory: "Gewerbebetriebe"
  building_software_company: "Softwarebetriebe"
@@ -727,6 +712,8 @@
 
  pm_ut_industrial_port: "Industriehafen"
 
+ pm_ut_precision_tools: "Präzisionswerkzeuge" 
+
  pm_complex_consumer_goods_none: "Keine komplexen Konsumgüter"
  pm_complex_consumer_goods_electrical_process: "Fernseher"
  pm_complex_consumer_goods_computer_process: "Personale Computer"
@@ -743,68 +730,8 @@
 
  pm_trade_center_trade_quantity_utopia: "Industriellerhandel"
 
- bauxite: "Bauxit"
- aluminum: "Aluminium"
- rare_earths: "Seltene Erden"
- plastic: "Plastik"
- trucks: "LKWs"
- highways: "Autobahnen"
- consumer_goods: "Konsumgüter"
- heavy_machinery: "Schwerlastmaschinen"
-
- prestige_good_generic_consumer_goods_simple: "Waschmaschinen"
- prestige_good_generic_consumer_goods_complex: "Farbfernsehere"
- prestige_good_generic_computers_b2b: "Mainframe Computer"
- prestige_good_generic_computers_b2c: "Personal Computer"
- prestige_good_generic_electronics: "LEDs"
- prestige_good_generic_heavy_machinery_era_6: "Turmdrehkräne"
- prestige_good_generic_heavy_machinery_era_7: "Tunnelbohrmaschinenen"
- prestige_good_generic_heavy_machinery_era_8: "Industrie Robotor"
- prestige_good_generic_plastic: "PVC"
- prestige_good_generic_software_b2b: "Database Software"
- prestige_good_generic_software_b2c: "Office Software"
-
- goods_input_internet_add: "@internet! Internet input"
- goods_input_internet_add_desc: "The amount of @internet! Internet consumed by buildings"
-
- goods_input_heavy_machinery_add: "@heavy_machinery! Heavy Machinery input"
- goods_input_heavy_machinery_add_desc: "The amount of @heavy_machinery! Heavy Machinery consumed by buildings"
-
- goods_input_plastic_add: "@plastic! Plastic input"
- goods_input_plastic_add_desc: "The amount of @plastic! Plastic consumed by buildings"
-
- goods_input_consumer_goods_add: "@consumer_goods! Consumer Goods input"
- goods_input_consumer_goods_add_desc: "The amount of @consumer_goods! Consumer Goods consumed by buildings"
-
- goods_input_electronics_add: "@electronics! Electronics input"
- goods_input_electronics_add_desc: "The amount of @electronics! Electronics consumed by buildings"
-
- goods_input_computers_add: "@computers! Computers input"
- goods_input_computers_add_desc: "The amount of @computers! Computers consumed by buildings"
-
- goods_input_aliminum_add: "@aliminum! Aliminum input"
- goods_input_aliminum_add_desc: "The amount of @aliminum! Aliminum consumed by buildings"
-
- goods_input_bauxite_add: "@bauxite! Bauxite input"
- goods_input_bauxite_add_desc: "The amount of @bauxite! Bauxite consumed by buildings"
-
- goods_input_rare_earths_add: "@rare_earths! Rare Earths input"
- goods_input_rare_earths_add_desc: "The amount of @rare_earths! Rare Earths consumed by buildings"
-
- goods_input_trucks_add: "@trucks! Trucks input"
- goods_input_trucks_add_desc: "The amount of @trucks! Trucks consumed by buildings"
-
- goods_input_software_add: "@software! Software input"
- goods_input_software_add_desc: "The amount of @software! Software consumed by buildings"
-
-
  pm_supermarket: "Supermarkt"
  pm_shopping_district: "Shopping Viertel"
-
- goods_output_trucks_add: "@trucks! Trucks output"
- goods_output_trucks_add_desc: "The amount of @trucks! Trucks produced by buildings"
- goods_output_trucks_mult: "@trucks! Trucks output"
- state_highways_max_level_add: "Maximale Stufe für $highways$ hinzufügen"
 
  pm_ut_industry_plastics: "Industrieplastik"
  pm_ut_telephones: "Digitale Telephone"
@@ -815,7 +742,77 @@
  pm_ut_high_speed_electric_trains_principle_transport_3: "Intercity"
  pm_computer_bureaucrats: "Digitale Organisation"
 
+ pm_automatic_power_looms_2: "Schützenlose Webmaschine"
+ pm_assembly_lines_building_heavy_machinery_power: "Automatisierte Montagebänder"
+ pm_assembly_lines_building_heavy_machinery_tools_furniture: "Automatisierte Montagebänder"
+ pm_assembly_lines_building_heavy_machinery_tools_motors: "Automatisierte Montagebänder"
+ pm_steel_heavy_machinery: "Stranggussanlage"
+ pm_steel_computers: "Industrie Roboter"
 
+#goods
+ bauxite: "Bauxit"
+ aluminum: "Aluminium"
+ rare_earths: "Seltene Erden"
+ plastic: "Plastik"
+ trucks: "LKWs"
+ highways: "Autobahnen"
+ consumer_goods: "Konsumgüter"
+ heavy_machinery: "Maschinen"
+
+#prestige goods
+ prestige_good_generic_consumer_goods_simple: "Waschmaschinen"
+ prestige_good_generic_consumer_goods_complex: "Farbfernsehere"
+ prestige_good_generic_computers_b2b: "Mainframe"
+ prestige_good_generic_computers_b2c: "Personal Computer"
+ prestige_good_generic_electronics: "LEDs"
+ prestige_good_generic_heavy_machinery_era_6: "Turmdrehkräne"
+ prestige_good_generic_heavy_machinery_era_7: "Tunnelbohrmaschinenen"
+ prestige_good_generic_heavy_machinery_era_8: "Industrie Robotor"
+ prestige_good_generic_plastic: "PVC-Plastik"
+ prestige_good_generic_software_b2b: "Datenbank Software"
+ prestige_good_generic_software_b2c: "Büro Software"
+
+
+ goods_input_internet_add: "@internet! Internet-Eingang"
+ goods_input_internet_add_desc: " Die Menge an @internet! Internet, die von Gebäuden verbraucht wird"
+
+ goods_input_heavy_machinery_add: "@heavy_machinery! Maschinen-Eingang"
+ goods_input_heavy_machinery_add_desc: " Die Menge an @heavy_machinery! Maschinen, die von Gebäuden verbraucht wird"
+
+ goods_input_plastic_add: "@plastic! Plastik-Eingang"
+ goods_input_plastic_add_desc: " Die Menge an @plastic! Plastik, die von Gebäuden verbraucht wird"
+
+ goods_input_consumer_goods_add: "@consumer_goods! Konsumgüter-Eingang"
+ goods_input_consumer_goods_add_desc: " Die Menge an @consumer_goods! Konsumgüter, die von Gebäuden verbraucht wird"
+
+ goods_input_electronics_add: "@electronics! Elektronik-Eingang"
+ goods_input_electronics_add_desc: " Die Menge an @electronics! Elektronik, die von Gebäuden verbraucht wird"
+
+ goods_input_computers_add: "@computers! Computer-Eingang"
+ goods_input_computers_add_desc: " Die Menge an @computers! Computer, die von Gebäuden verbraucht wird"
+
+ goods_input_aluminum_add: "@aluminum! Aluminium-Eingang"
+ goods_input_aluminum_add_desc: " Die Menge an @aluminum! Aluminium, die von Gebäuden verbraucht wird"
+
+ goods_input_bauxite_add: "@bauxite! Bauxit-Eingang"
+ goods_input_bauxite_add_desc: " Die Menge an @bauxite! Bauxit, die von Gebäuden verbraucht wird"
+
+ goods_input_rare_earths_add: "@rare_earths! Seltene Erden-Eingang"
+ goods_input_rare_earths_add_desc: " Die Menge an @rare_earths! Seltene Erden, die von Gebäuden verbraucht wird"
+
+ goods_input_trucks_add: "@trucks! LKW-Eingang"
+ goods_input_trucks_add_desc: " Die Menge an @trucks! LKWs, die von Gebäuden verbraucht wird"
+
+ goods_input_software_add: "@software! Software-Eingang"
+ goods_input_software_add_desc: " Die Menge an @software! Software, die von Gebäuden verbraucht wird"
+
+ goods_output_trucks_add: "@trucks! LKW-Ausgang"
+ goods_output_trucks_add_desc: " Die Menge an @trucks! LKWs, die von Gebäuden produziert wird"
+ goods_output_trucks_mult: "@trucks! LKW-Ausgang"
+
+ state_highways_max_level_add: " Maximale Stufe für $highways$ hinzufügen"
+
+# Companies
  ut_commercial_goods_simple_company: "ElektroNord Gerätewerk"
  ut_commercial_goods_complex_company: "ColorVision Ltd."
  ut_mining_company: "Zentrummetall GmbH"
@@ -861,15 +858,6 @@
  
  building_synthetic_oil_throughput_add: "$building_synthetic_oil$-[concept_throughput]"
  building_synthetic_oil_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_synthetic_oil$."
-
-
-
- pm_automatic_power_looms_2: "Schützenlose Webmaschine"
- pm_assembly_lines_building_heavy_machinery_power: "Automatisierte Montagebänder"
- pm_assembly_lines_building_heavy_machinery_tools_furniture: "Automatisierte Montagebänder"
- pm_assembly_lines_building_heavy_machinery_tools_motors: "Automatisierte Montagebänder"
- pm_steel_heavy_machinery: "Stranggussanlage"
- pm_steel_computers: "Industrie Roboter"
 
  smart_irrigation_building_tea_plantation: "Intelligente Bewässerung"
  smart_irrigation_building_tobacco_plantation: "Intelligente Bewässerung"
