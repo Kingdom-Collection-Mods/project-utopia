@@ -20,3 +20,141 @@
 		base = 0
 	}
 }
+
+
+ut_research_institute_found = {
+	is_shown = {
+		has_technology_researched = electronics
+		NOT = {
+			has_variable = ut_research_institute_found_var
+		}
+	}
+
+	possible = {
+		produced_bureaucracy > 500
+		any_scope_state = {
+			is_incorporated = yes
+			is_split_state = no
+			any_scope_building = {
+				is_building_type = building_computer_factory
+				level >= 1
+			}
+		}
+		OR = {
+			has_global_highest_innovation = yes
+			country_rank >= rank_value:great_power
+		}
+	}
+
+	when_taken = {
+		set_variable = {
+			name = ut_research_institute_found_var
+			value = 0
+		}
+		add_modifier = {
+			name = ut_research_institute_found_mod
+			months = 48
+		}
+		add_journal_entry = {
+			type = ut_je_research_institute_founding
+		}
+	}
+
+	ai_chance = {
+		value = 0
+		if = {
+			limit = { produced_bureaucracy > 2500 }
+			add = 5
+		}
+		if = {
+			limit = {
+				produced_bureaucracy > 5000
+				any_country = {
+					is_ai = no
+					has_variable = skyscraper_var
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				OR = {
+					is_diplomatic_play_committed_participant = yes
+					is_at_war = yes
+				}
+			}
+			multiply = 0
+		}
+	}
+}
+
+ut_research_high_tech_computers = {
+	is_shown = {
+		has_technology_researched = electronics
+		NOT = {
+			has_variable = ut_research_high_tech_computers_var
+		}
+	}
+
+	possible = {
+		produced_bureaucracy > 500
+		has_variable = ut_research_institute_found
+		any_scope_state = {
+			is_incorporated = yes
+			is_split_state = no
+			any_scope_building = {
+				is_building_type = building_computer_factory
+				level >= 10
+			}
+		}
+		OR = {
+			has_global_highest_innovation = yes
+			any_scope_building = {
+				is_building_type = building_rare_earths_mine
+				level >= 5
+				has_active_production_method = pm_rare_earths_two_mine
+			}
+		}
+	}
+
+	when_taken = {
+		set_variable = {
+			name = ut_research_high_tech_computers_var
+			value = 0
+		}
+		add_modifier = {
+			name = ut_research_high_tech_computers_research_mod
+			months = 48
+		}
+		add_journal_entry = {
+			type = ut_je_ut_research_high_tech_computers_research
+		}
+	}
+
+	ai_chance = {
+		value = 0
+		if = {
+			limit = { produced_bureaucracy > 2500 }
+			add = 5
+		}
+		if = {
+			limit = {
+				produced_bureaucracy > 5000
+				any_country = {
+					is_ai = no
+					has_variable = skyscraper_var
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				OR = {
+					is_diplomatic_play_committed_participant = yes
+					is_at_war = yes
+				}
+			}
+			multiply = 0
+		}
+	}
+}

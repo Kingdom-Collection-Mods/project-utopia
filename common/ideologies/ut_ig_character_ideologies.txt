@@ -164,7 +164,7 @@ ut_ideology_cosmopolitan_leader = {
 
 	
 	country_trigger = {
-		has_technology_researched = political_progress_1
+		has_technology_researched = political_progress_1_cosmopolitan
 	}
 
 	interest_group_leader_trigger = {
@@ -215,14 +215,14 @@ ut_ideology_cosmopolitan_leader = {
 		}
 		if = {
 			limit = {
-				has_technology_researched = political_progress_1
+				has_technology_researched = political_progress_1_cosmopolitan
 			}
 			add = 25
 		}
 		
 		if = {
 			limit = {
-				has_technology_researched = political_progress_2
+				has_technology_researched = political_progress_2_rationalism
 			}
 			add = 25
 		}
@@ -233,14 +233,14 @@ ut_ideology_cosmopolitan_leader = {
 		
 		if = {
 			limit = {
-				has_technology_researched = political_progress_1
+				has_technology_researched = political_progress_1_cosmopolitan
 			}
 			add = 25
 		}
 		
 		if = {
 			limit = {
-				has_technology_researched = political_progress_2
+				has_technology_researched = political_progress_2_rationalism
 			}
 			add = 25
 		}

@@ -272,6 +272,43 @@ civilian_drones = {
 }
 
 
+nuclear_energy_research = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/mining_pit_2.dds"
+	category = production
+
+	unlocking_technologies = {	
+		oil_turbine
+	}
+	
+	modifier = {
+		country_resource_discovery_chance_mult = 0.05
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+nuclear_energy = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/mining_pit_2.dds"
+	category = production
+	can_research = no
+
+	unlocking_technologies = {	
+		nuclear_energy_research
+	}
+	
+	modifier = {
+		country_resource_discovery_chance_mult = 0.05
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
 #Rare Earths
 rare_earths_mining_era_analog = {
 	era = era_6
@@ -279,7 +316,7 @@ rare_earths_mining_era_analog = {
 	category = production
 
 	unlocking_technologies = {	
-		oil_turbine
+		nuclear_energy_research
 	}
 	
 	modifier = {
@@ -331,7 +368,7 @@ computers = {
 	}
 	
 	unlocking_technologies = {	
-		rare_earths_mining_era_analog
+		nuclear_energy_research
 		electronics
 	}
 	
@@ -341,7 +378,7 @@ computers = {
 }
 
 high_tech_computers = {
-	era = era_8
+	era = era_7
 	texture = "gfx/interface/icons/invention_icons/computers_80s.dds"
 	category = production
 	can_research = no
@@ -356,6 +393,7 @@ high_tech_computers = {
 		value = 1
 	}
 }
+
 
 software = {
 	era = era_7
@@ -431,6 +469,21 @@ internet = {
 	
 	unlocking_technologies = {	
 		software
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+generative_ai = {
+	era = era_8
+	texture = "gfx/interface/icons/invention_icons/software_box.dds"
+	category = production
+	can_research = no
+
+	unlocking_technologies = {	
+		internet
 	}
 	
 	ai_weight = {

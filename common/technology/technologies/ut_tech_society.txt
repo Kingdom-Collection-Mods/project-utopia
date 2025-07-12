@@ -162,6 +162,24 @@ international_commerce = {
 }
 
 #Financial progress and inclusion
+international_stock_exchange = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/check_payments.dds"
+	category = society
+		
+	modifier = {
+		country_free_charters_add = 1
+	}
+
+	unlocking_technologies = {	
+		macroeconomics
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
 check_payments = {
 	
 	era = era_6
@@ -342,6 +360,7 @@ union_trade = {
 
 	unlocking_technologies = {
 		union_new_mandates
+		check_payments
 	}
 	
 	ai_weight = {
@@ -472,139 +491,6 @@ epa_three = {
 
 
 
-
-
-
-political_progress_1 = {
-	era = era_6
-	texture = "gfx/interface/icons/invention_icons/cosmopolitan.dds"
-	category = society
-		
-	modifier = {
-		country_influence_mult = 0.25
-		country_service_workers_pol_str_mult = 0.1
-		interest_group_ig_urbanists_pol_str_mult = 0.1
-
-		state_expected_sol_from_literacy = 1 #todo: rethink, if ai techs this... no good. But good for player. 
-	}
-
-	unlocking_technologies = {
-		mass_propaganda
-	}
-	
-	ai_weight = {
-		value = 2 # Important
-	}
-}
-
-political_progress_2 = {
-	era = era_7
-	texture = "gfx/interface/icons/invention_icons/rationalism.dds"
-	category = society
-		
-	modifier = {
-		country_service_workers_pol_str_mult = 0.1
-		interest_group_ig_urbanists_pol_str_mult = 0.1
-
-		state_expected_sol_from_literacy = 1
-	}
-
-	unlocking_technologies = {
-		political_progress_1
-	}
-	
-	ai_weight = {
-		value = 2 # Important
-	}
-}
-
-## Globalism
-
-multicultural_globalism = {
-	era = era_7
-	texture = "gfx/interface/icons/invention_icons/peace_movement.dds"
-	category = society
-		
-	modifier = {
-		country_influence_mult = 0.25
-	}
-
-	unlocking_technologies = {
-		anti_discrimination_laws
-	}
-	
-	ai_weight = {
-		value = 1
-	}
-}
-
-anti_multicultural_globalism = {
-	era = era_8
-	texture = "gfx/interface/icons/invention_icons/neo_fascism.dds"
-	category = society
-		
-	modifier = {
-		state_expected_sol_from_literacy = 2 #todo: does not really fit here
-		country_infamy_generation_mult = -0.25
-	}
-
-	unlocking_technologies = {
-		multicultural_globalism
-	}
-	
-	ai_weight = {
-		value = 1
-	}
-}
-
-anti_discrimination_laws = {
-	era = era_6
-	texture = "gfx/interface/icons/invention_icons/human_dignity.dds"
-	category = society
-		
-
-	on_researched = {
-		custom_tooltip = {
-			text = anti_discrimination_laws_tt
-		}
-	}
-
-	modifier = {
-	}
-
-	unlocking_technologies = {
-		mass_propaganda
-	}
-	
-	ai_weight = {
-		value = 1
-	}
-}
-
-lgbt_movement = {
-	era = era_7
-	texture = "gfx/interface/icons/invention_icons/lgbt_movement.dds"
-	category = society
-		
-	on_researched = {
-		custom_tooltip = {
-			text = lgbt_movement_tt
-		}
-	}
-
-	modifier = {
-		country_diplomatic_play_maneuvers_add = 30
-	}
-
-	unlocking_technologies = {
-		anti_discrimination_laws
-	}
-	
-	ai_weight = {
-		value = 1
-	}
-}
-
 ## Emancipation
 
 feminism_2 = {
@@ -643,7 +529,293 @@ feminism_3 = {
 	}
 }
 
+political_progress_1_cosmopolitan = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/cosmopolitan.dds"
+	category = society
+		
+	modifier = {
+		country_influence_mult = 0.25
+		country_service_workers_pol_str_mult = 0.1
+		interest_group_ig_urbanists_pol_str_mult = 0.1
 
+		state_expected_sol_from_literacy = 1 #todo: rethink, if ai techs this... no good. But good for player. 
+	}
+
+	unlocking_technologies = {
+		mass_propaganda
+	}
+	
+	ai_weight = {
+		value = 2 # Important
+	}
+}
+
+political_progress_2_rationalism = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/rationalism.dds"
+	category = society
+		
+	modifier = {
+		country_service_workers_pol_str_mult = 0.1
+		interest_group_ig_urbanists_pol_str_mult = 0.1
+
+		state_expected_sol_from_literacy = 1
+	}
+
+	unlocking_technologies = {
+		political_progress_1_cosmopolitan
+	}
+	
+	ai_weight = {
+		value = 2 # Important
+	}
+}
+
+political_progress_3_neoliberalism = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/rationalism.dds"
+	category = society
+		
+	modifier = {
+		state_expected_sol_from_literacy = 1
+	}
+
+	unlocking_technologies = {
+		political_progress_2_rationalism
+	}
+	
+	ai_weight = {
+		value = 2 # Important
+	}
+}
+
+political_progress_4_greens = {
+	era = era_8
+	texture = "gfx/interface/icons/invention_icons/rationalism.dds"
+	category = society
+		
+	modifier = {
+		state_expected_sol_from_literacy = 1
+	}
+
+	unlocking_technologies = {
+		political_progress_3_neoliberalism
+	}
+	
+	ai_weight = {
+		value = 2 # Important
+	}
+}
+
+
+national_socialism = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/human_dignity.dds"
+	category = society
+		
+
+	on_researched = {
+		custom_tooltip = {
+			text = anti_discrimination_laws_tt
+		}
+	}
+
+	modifier = {
+	}
+
+	unlocking_technologies = {
+		mass_propaganda
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+movie_industry = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/human_dignity.dds"
+	category = society
+		
+
+	on_researched = {
+		custom_tooltip = {
+			text = anti_discrimination_laws_tt
+		}
+	}
+
+	modifier = {
+	}
+
+	unlocking_technologies = {
+		mass_propaganda
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+online_forums = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/human_dignity.dds"
+	category = society
+		
+
+	on_researched = {
+		custom_tooltip = {
+			text = anti_discrimination_laws_tt
+		}
+	}
+
+	modifier = {
+	}
+
+	unlocking_technologies = {
+		movie_industry
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+social_media = {
+	era = era_8
+	texture = "gfx/interface/icons/invention_icons/human_dignity.dds"
+	category = society
+		
+
+	on_researched = {
+		custom_tooltip = {
+			text = anti_discrimination_laws_tt
+		}
+	}
+
+	modifier = {
+	}
+
+	unlocking_technologies = {
+		online_forums
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+anti_discrimination_laws = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/human_dignity.dds"
+	category = society
+		
+
+	on_researched = {
+		custom_tooltip = {
+			text = anti_discrimination_laws_tt
+		}
+	}
+
+	modifier = {
+	}
+
+	unlocking_technologies = {
+		behaviorism
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+emancipation_movement = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/lgbt_movement.dds"
+	category = society
+		
+	on_researched = {
+		custom_tooltip = {
+			text = lgbt_movement_tt
+		}
+	}
+
+	modifier = {
+		country_diplomatic_play_maneuvers_add = 30
+	}
+
+	unlocking_technologies = {
+		anti_discrimination_laws
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+lgbt_movement = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/lgbt_movement.dds"
+	category = society
+		
+	on_researched = {
+		custom_tooltip = {
+			text = lgbt_movement_tt
+		}
+	}
+
+	modifier = {
+		country_diplomatic_play_maneuvers_add = 30
+	}
+
+	unlocking_technologies = {
+		emancipation_movement
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+## Globalism
+
+multicultural_globalism = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/peace_movement.dds"
+	category = society
+		
+	modifier = {
+		country_influence_mult = 0.25
+	}
+
+	unlocking_technologies = {
+		political_progress_1_cosmopolitan
+		emancipation_movement
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+anti_multicultural_globalism = {
+	era = era_8
+	texture = "gfx/interface/icons/invention_icons/neo_fascism.dds"
+	category = society
+		
+	modifier = {
+		state_expected_sol_from_literacy = 2 #todo: does not really fit here
+		country_infamy_generation_mult = -0.25
+	}
+
+	unlocking_technologies = {
+		political_progress_3_neoliberalism
+		multicultural_globalism
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
 
 public_universities = {
 	era = era_6
@@ -671,6 +843,23 @@ compulsory_secondary_school = {
 		
 	modifier = {
 		country_tech_spread_mult = 0.1
+	}
+
+	unlocking_technologies = {
+		public_universities
+	}
+	
+	ai_weight = {
+		value = 2 # Important
+	}
+}
+
+technical_scientific_school_reforms = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/academia.dds"
+	category = society
+		
+	modifier = {
 		country_weekly_innovation_max_add = 30
 	}
 
@@ -683,7 +872,6 @@ compulsory_secondary_school = {
 	}
 }
 
-
 compulsory_tertiary_school = {
 	era = era_8
 	texture = "gfx/interface/icons/invention_icons/academia.dds"
@@ -694,7 +882,7 @@ compulsory_tertiary_school = {
 	}
 
 	unlocking_technologies = {
-		compulsory_secondary_school
+		technical_scientific_school_reforms
 	}
 	
 	ai_weight = {

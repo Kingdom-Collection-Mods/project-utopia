@@ -471,3 +471,256 @@ utopia_journal_prod.12 = {
 		}
 	}	
 }
+
+utopia_journal_prod.40 = {
+	type = country_event
+
+	title = ut_je_research_institute_founding
+	desc = ut_je_research_institute_founding.success.d
+	flavor = ut_je_research_institute_founding.success.f
+
+	placement = scope:ut_research_institute_site
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+		# triggered by je_skyscraper_site
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				capital = {
+					is_split_state = no
+					any_scope_building = {
+						is_building_type = building_computer_factory
+						level >= 2
+					}
+				}
+			}
+			capital = {
+				save_scope_as = ut_research_institute_site
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					is_incorporated = yes
+					is_split_state = no
+					any_scope_building = {
+						is_building_type = building_computer_factory
+						level >= 2
+					}
+				}
+				save_scope_as = ut_research_institute_site
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = { has_global_variable = ut_first_research_institute }
+			}
+			set_global_variable = ut_first_research_institute
+			set_variable = ut_first_research_institute_builder
+		}
+	}
+
+	option = {
+		name = utopia.progress_c
+        default_option = yes
+        scope:ut_research_institute_site = {
+        	add_modifier = {
+        		name = ut_research_institute_site_mod
+        	}
+        }
+        show_as_tooltip = {
+        	remove_modifier = ut_research_institute_found_mod
+        }
+	}
+}
+
+utopia_journal_prod.41 = {
+	type = country_event
+
+	title = ut_je_ut_nuclear_power_research
+	desc = ut_je_ut_nuclear_power_research.success.d
+	flavor = ut_je_ut_nuclear_power_research.success.f
+
+	placement = scope:nuclear_power_site
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+		# triggered by je_skyscraper_site
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				any_scope_state = {
+					has_modifier = ut_research_institute_site_mod
+				}
+			}
+			random_scope_state = {
+				limit = {
+					has_modifier = ut_research_institute_site_mod
+				}
+				save_scope_as = nuclear_power_site
+			}
+		}
+		else_if = {
+			limit = {
+				capital = {
+					is_split_state = no
+					any_scope_building = {
+						is_building_type = building_power_plant
+						level >= 20
+					}
+				}
+			}
+			capital = {
+				save_scope_as = nuclear_power_site
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					is_incorporated = yes
+					is_split_state = no
+					any_scope_building = {
+						is_building_type = building_power_plant
+						level >= 20
+					}
+				}
+				save_scope_as = nuclear_power_site
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = { has_global_variable = ut_first_nuclear_power }
+			}
+			set_global_variable = ut_first_nuclear_power
+			set_variable = ut_first_nuclear_power_builder
+		}
+	}
+
+	option = {
+		name = utopia.progress_a
+        default_option = yes
+        scope:nuclear_power_site = {
+        	add_modifier = {
+        		name = ut_nuclear_power_site_mod
+        	}
+        }
+        show_as_tooltip = {
+        	remove_modifier = ut_nuclear_power_research_mod
+        }
+		add_technology_researched = nuclear_energy
+	}
+}
+
+utopia_journal_prod.42 = {
+	type = country_event
+
+	title = ut_je_ut_research_high_tech_computers_research
+	desc = ut_je_ut_research_high_tech_computers_research.success.d
+	flavor = ut_je_ut_research_high_tech_computers_research.success.f
+
+	placement = scope:hightech_computer_site
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+		# triggered by je_skyscraper_site
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				any_scope_state = {
+					has_modifier = ut_research_institute_site_mod
+				}
+			}
+			random_scope_state = {
+				limit = {
+					has_modifier = ut_research_institute_site_mod
+				}
+				save_scope_as = hightech_computer_site
+			}
+		}
+		else_if = {
+			limit = {
+				capital = {
+					is_split_state = no
+					any_scope_building = {
+						is_building_type = building_computer_factory
+						level >= 10
+					}
+				}
+			}
+			capital = {
+				save_scope_as = hightech_computer_site
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					is_incorporated = yes
+					is_split_state = no
+					any_scope_building = {
+						is_building_type = building_computer_factory
+						level >= 10
+					}
+				}
+				save_scope_as = hightech_computer_site
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = { has_global_variable = ut_first_high_tech_computer }
+			}
+			set_global_variable = ut_first_high_tech_computer
+			set_variable = ut_first_high_tech_computer_builder
+		}
+	}
+
+	option = {
+		name = utopia.progress_a
+        default_option = yes
+        scope:hightech_computer_site = {
+        	add_modifier = {
+        		name = ut_high_tech_computer_site_mod
+        	}
+        }
+        show_as_tooltip = {
+        	remove_modifier = ut_research_high_tech_computers_research_mod
+        }
+		add_technology_researched = high_tech_computers
+	}
+}

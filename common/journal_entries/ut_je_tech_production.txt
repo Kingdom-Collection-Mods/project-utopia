@@ -387,3 +387,132 @@ ut_consumer_goods_complex_je = {
 	
 	timeout = 3650
 }
+
+ut_je_research_institute_founding = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = ut_research_institute_found_var
+				add = 1
+			}
+		}
+	}
+
+	complete = {
+		scope:journal_entry = { is_goal_complete = yes }
+		any_scope_state = {
+			is_split_state = no
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_computer_factory
+				level >= 2
+			}
+		}
+	}
+
+	on_complete = {
+		remove_modifier = ut_research_institute_found_mod
+		trigger_event = { id = utopia_journal_prod.40 } # site found
+		set_variable = ut_research_institute_found
+	}
+
+	invalid = {
+		NOT = {
+			any_scope_state = {
+				is_split_state = no
+				is_incorporated = yes
+				any_scope_building = {
+					is_building_type = building_computer_factory
+					level >= 1
+				}
+			}
+		}
+	}
+
+	on_invalid = {
+		remove_modifier = ut_research_institute_found_mod
+		remove_variable = ut_research_institute_found_var
+	}
+
+	current_value = {
+		value = root.var:ut_research_institute_found_var
+	}
+
+	goal_add_value = {
+		value = 48
+	}
+
+	progressbar = yes
+
+	weight = 10
+
+	should_be_pinned_by_default = yes
+}
+
+ut_je_ut_research_high_tech_computers_research = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = ut_research_high_tech_computers_var
+				add = 1
+			}
+		}
+	}
+
+	complete = {
+		scope:journal_entry = { is_goal_complete = yes }
+		any_scope_state = {
+			is_split_state = no
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_computer_factory
+				level >= 10
+			}
+		}
+	}
+
+	on_complete = {
+		remove_modifier = ut_research_high_tech_computers_research_mod
+		trigger_event = { id = utopia_journal_prod.42 } # site found
+	}
+
+	invalid = {
+		NOT = {
+			any_scope_state = {
+				is_split_state = no
+				is_incorporated = yes
+				any_scope_building = {
+					is_building_type = building_computer_factory
+					level >= 10
+				}
+			}
+		}
+	}
+
+	on_invalid = {
+		remove_modifier = ut_research_high_tech_computers_research_mod
+		remove_variable = ut_research_high_tech_computers_var
+	}
+
+	current_value = {
+		value = root.var:ut_research_high_tech_computers_var
+	}
+
+	goal_add_value = {
+		value = 48
+	}
+
+	progressbar = yes
+
+	weight = 10
+
+	should_be_pinned_by_default = yes
+}
