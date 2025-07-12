@@ -149,7 +149,7 @@ utopia_journal_society.4 = { #Early Civil Aviation Others
 	}
 
 	event_image = {
-		video = "southamerica_factory_opening"
+		video = "unspecific_airship"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -182,7 +182,7 @@ utopia_journal_society.5 = { #Modern Civil Aviation Others
 	}
 
 	event_image = {
-		video = "southamerica_factory_opening"
+		video = "unspecific_airship"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"

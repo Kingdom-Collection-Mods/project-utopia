@@ -1,4 +1,4 @@
-heavy_industrial_machinery_je = {
+ut_heavy_industrial_machinery_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
@@ -48,7 +48,7 @@ heavy_industrial_machinery_je = {
 	timeout = 1825  # 5 years
 }
 
-cnc_machines_je = {
+ut_cnc_machines_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
@@ -88,7 +88,7 @@ cnc_machines_je = {
 	timeout = 3650
 }
 
-heavy_tractors_je = {
+ut_heavy_tractors_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
@@ -134,7 +134,7 @@ heavy_tractors_je = {
 	timeout = 3650
 }
 
-agrarian_planes_je = {
+ut_agrarian_planes_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
@@ -180,7 +180,7 @@ agrarian_planes_je = {
 	timeout = 3650
 }
 
-plastic_je = {
+ut_plastic_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
@@ -211,7 +211,7 @@ plastic_je = {
 	timeout = 3650
 }
 
-electronics_je = {
+ut_electronics_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
@@ -245,7 +245,7 @@ electronics_je = {
 	timeout = 3650
 }
 
-computers_je = {
+ut_computers_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
@@ -280,7 +280,7 @@ computers_je = {
 	timeout = 3650
 }
 
-software_je = {
+ut_software_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
@@ -312,7 +312,7 @@ software_je = {
 	timeout = 3650
 }
 
-consumer_goods_simple_je = {
+ut_consumer_goods_simple_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
@@ -357,7 +357,7 @@ consumer_goods_simple_je = {
 	timeout = 1825  # 5 years
 }
 
-consumer_goods_complex_je = {
+ut_consumer_goods_complex_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 

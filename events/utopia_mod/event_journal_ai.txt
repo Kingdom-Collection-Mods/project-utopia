@@ -3,7 +3,7 @@
 event_journal_ai.1 = {
 	title = event_journal_ai
 	type = country_event
-	event_image = { video = "factory_precision" }
+	event_image = { video = "unspecific_world_fair" }
 
 	duration = 3
 	immediate = {
