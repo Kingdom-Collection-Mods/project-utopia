@@ -155,7 +155,7 @@
 		}
 		random_events = {
 			400 = 0
-			# 10 = french_pretenders_pulse.2
+			10 = event_new_dawn.11
 			# 10 = french_pretenders_pulse.3
 			# 50 = french_pretenders_pulse.10
 			# 10 = french_pretenders_pulse.11

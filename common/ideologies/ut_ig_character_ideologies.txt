@@ -246,3 +246,460 @@ ut_ideology_cosmopolitan_leader = {
 		}
 	}
 }
+
+ut_ideology_autocratic_leader = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/authoritarian.dds"
+	
+	lawgroup_distribution_of_power = {
+		law_anarchy = strongly_disapprove
+		law_universal_suffrage = strongly_disapprove
+		law_census_voting = strongly_disapprove
+		law_wealth_voting = disapprove
+		law_landed_voting = disapprove
+		law_technocracy = neutral
+		law_oligarchy = strongly_approve
+		law_autocracy = strongly_approve
+		law_single_party_state = strongly_approve
+	}
+
+	lawgroup_governance_principles = {
+		law_monarchy = neutral
+		law_theocracy = neutral			
+		law_presidential_republic = neutral
+		law_parliamentary_republic = strongly_disapprove
+		law_corporate_state = neutral
+		law_council_republic = strongly_disapprove		
+	}
+
+	lawgroup_migration = {
+		law_closed_borders = strongly_approve
+		law_migration_controls = approve
+		law_no_migration_controls = strongly_disapprove
+	}
+	
+	lawgroup_land_reform = {
+		law_serfdom = neutral
+		law_collectivized_agriculture = strongly_disapprove
+		law_tenant_farmers = approve
+		law_commercialized_agriculture = approve
+		law_homesteading = strongly_disapprove
+	}		
+
+	lawgroup_free_speech = {
+		law_protected_speech = strongly_disapprove
+		law_right_of_assembly = strongly_disapprove
+		law_censorship = approve
+		law_outlawed_dissent = strongly_approve
+	}
+	
+	lawgroup_internal_security = {
+		law_guaranteed_liberties = strongly_disapprove
+		law_no_home_affairs = disapprove
+		law_national_guard = approve
+		law_secret_police = strongly_approve
+	}
+	
+	country_trigger = {
+		has_technology_researched = mass_propaganda
+	}
+
+	interest_group_leader_trigger = {
+		ut_ideology_autocratic_leader_valid_trigger = yes
+	}
+
+	non_interest_group_leader_trigger = {
+		# Agitator ideologies should disapprove of a current law
+		NAND = {
+			has_role = agitator
+			owner = {
+				has_law = law_type:law_outlawed_dissent
+				has_law = law_type:law_secret_police
+				OR = {
+					has_law = law_type:law_oligarchy
+					has_law = law_type:law_autocracy
+				}
+			}
+		}
+		interest_group = {
+			ut_ideology_autocratic_leader_valid_trigger = yes
+		}
+	}
+
+	interest_group_leader_weight = {
+		value = 0
+		# more likely if any but not all autocratic base
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_secret_police
+						has_law = law_type:law_outlawed_dissent
+					} 
+					NOT = {
+						NOT = { has_variable = je_ut_new_dawn_autocrat_focus }
+						AND = {
+							OR = {
+								has_law = law_type:law_autocracy
+								has_law = law_type:law_oligarchy
+							}
+							has_law = law_type:law_secret_police
+							has_law = law_type:law_outlawed_dissent
+						}
+					}
+				}
+			}
+			add = 50
+		}
+		# less likely if in government
+		if = {
+			limit = {
+				is_in_government = yes
+				NOT = { has_variable = je_ut_new_dawn_autocrat_focus }
+			}
+			add = -50
+		}
+		# more likely if landowners marginalized
+		if = {
+			limit = {
+				ig:ig_landowners = {
+					is_powerful = yes
+				}
+			}
+			add = 25
+		}
+		
+		# more likely if landowners marginalized
+		if = {
+			limit = {
+				ig:ig_landowners = {
+					is_marginal = no
+				}
+			}
+			add = 25
+		}
+		# less likely for loyal IG's
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_variable = ut_new_dawn_autocrat_focus }
+					NOT = { has_variable = ut_new_dawn_fascist_focus }
+				}
+				ig_approval > happy
+			}
+			add = -50
+		}
+
+		if = { 
+			limit = {
+				owner = {
+					OR = {
+						c:AUS ?= this
+						c:TUR ?= this
+						c:RUS ?= this
+					}
+					has_variable = je_ut_new_dawn_autocrat_focus
+				}
+			}
+			multiply = 1.5
+		}
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 50
+		if = {
+			limit = {
+				has_variable = ut_new_dawn_fascist_focus
+			}
+			multiply = 1.5
+		}
+		if = {
+			limit = {
+				has_variable = ut_new_dawn_autocrat_focus
+			}
+			multiply = 2
+		}
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+						has_variable = ut_new_dawn_communist_focus
+						has_variable = ut_new_dawn_democrat_focus
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}
+}
+
+ut_ideology_national_socialist_leader = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_fascist.dds"
+	
+	character_ideology = yes
+
+	lawgroup_distribution_of_power = {
+		law_single_party_state = strongly_approve
+		law_autocracy = approve
+		law_oligarchy = neutral
+		law_technocracy = strongly_disapprove
+		law_anarchy = strongly_disapprove
+		law_universal_suffrage = strongly_disapprove
+		law_census_voting = strongly_disapprove
+		law_wealth_voting = strongly_disapprove
+		law_landed_voting = strongly_disapprove				
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = strongly_approve
+		law_neo_ethno_state = strongly_approve
+		law_national_supremacy = neutral
+		law_racial_segregation = disapprove
+		law_cultural_exclusion = strongly_disapprove
+		law_multicultural = strongly_disapprove	
+		law_multicultural_globalism = strongly_disapprove	
+	}
+
+	lawgroup_army_model = {
+		law_mass_conscription = strongly_approve
+		law_professional_army = approve
+		law_national_militia = strongly_disapprove
+		law_peasant_levies = strongly_disapprove
+		law_task_forces = neutral
+		law_demobilized = strongly_disapprove
+	}
+
+	lawgroup_free_speech = {
+		law_protected_speech = strongly_disapprove
+		law_right_of_assembly = disapprove
+		law_censorship = neutral
+		law_outlawed_dissent = strongly_approve
+	}
+
+	lawgroup_policing = {
+		law_local_police = neutral
+		law_dedicated_police = approve
+		law_militarized_police = strongly_approve
+		law_no_police = strongly_disapprove
+	}
+
+	lawgroup_governance_principles = {
+		law_theocracy = disapprove
+		law_monarchy = disapprove
+		law_presidential_republic = strongly_approve
+		law_parliamentary_republic = strongly_disapprove
+		law_corporate_state = approve
+		law_council_republic = strongly_disapprove
+	}
+
+	lawgroup_migration = {
+		law_closed_borders = strongly_approve
+		law_migration_controls = approve
+		law_no_migration_controls = strongly_disapprove
+	}
+
+	
+	lawgroup_migration = {
+		law_closed_borders = strongly_approve
+		law_migration_controls = approve
+		law_no_migration_controls = strongly_disapprove
+	}
+
+	country_trigger = {
+		has_technology_researched = mass_propaganda
+	}
+
+	interest_group_leader_trigger = {
+		ut_ideology_national_socialist_leader_trigger = yes
+	}
+	
+	non_interest_group_leader_trigger = {
+		# Agitator ideologies should disapprove of a current law
+		NAND = {
+			has_role = agitator
+			owner = {
+				has_law = law_type:law_autocracy
+				OR = {
+					has_law = law_type:law_neo_ethno_state			
+					has_law = law_type:law_ethnostate
+				}
+				has_law = law_type:law_outlawed_dissent
+				has_law = law_type:law_militarized_police
+			}
+		}
+		interest_group = { 
+			ut_ideology_national_socialist_leader_trigger = yes
+		}
+	}
+	
+	interest_group_leader_weight = {
+		value = 0
+		# More likely if paying war reparations
+		if = {
+			limit = {
+				NOT = { has_variable = je_ut_new_dawn_democrat_focus }
+				any_country = {
+					any_scope_treaty = {
+						is_enforced = yes
+						any_scope_article = {
+							has_type = money_transfer
+							source_country = root.owner
+						}
+					}
+				}
+			}
+			add = 100
+		}
+		# More likely with a convenient scapegoat
+		if = {
+			limit = {
+				owner = {
+					any_scope_state = {
+						is_incorporated = yes
+						any_scope_pop = {
+							pop_acceptance < acceptance_status_4
+						}
+					}
+				}
+			}
+			add = 50
+		}
+		# more likely if bankrupt
+		if = {
+			limit = {
+				owner = {
+					in_default = yes
+				}
+			}
+			add = 50
+		}
+		
+		# more likely if autocrat focus
+		if = {
+			limit = {
+				owner = {
+					has_variable = je_ut_new_dawn_autocrat_focus
+				}
+			}
+			add = 25
+		}
+		
+		# more likely if nazi focus
+		if = {
+			limit = {
+				owner = {
+					has_variable = je_ut_new_dawn_fascist_focus
+				}
+			}
+			add = 50
+		}
+		# Less likely in council republic
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_council_republic
+				}
+			}
+			add = -75
+		}
+		# more likely if in government with ethnostate
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_ethnostate
+						has_law = law_type:law_neo_ethno_state
+					}
+					NOR = {
+						is_enacting_law = law_type:law_multicultural_globalism
+						is_enacting_law = law_type:law_multicultural
+						is_enacting_law = law_type:law_national_supremacy
+						is_enacting_law = law_type:law_racial_segregation
+						is_enacting_law = law_type:law_cultural_exclusion
+					}
+				}
+				is_in_government = yes
+			}
+			add = 100
+		}
+		# red scare can make you more fascist
+		if = {
+			limit = {
+				has_variable = fascist_uptick
+			}
+			add = 25
+		}
+		# Fascism JE causes an uptick in fascism
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_journal_entry = je_fascism_1
+						has_variable = completed_fascism_1_var
+					}
+				}
+			}
+			multiply = 1.25
+		}
+		if = { #Brazil has Integralists instead
+			limit = {
+				owner = {
+					c:BRZ ?= this
+				}
+			}
+			multiply = 0
+		}
+		
+		if = { 
+			limit = {
+				owner = {
+					OR = {
+						c:JAP ?= this
+						c:GER ?= this
+						c:ITA ?= this
+					}
+					has_variable = je_ut_new_dawn_fascist_focus
+				}
+			}
+			multiply = 1.5
+		}
+		if = {
+			limit = {
+				OR = {
+					has_variable = communist_ig_var
+					has_variable = chose_vanguardism
+					has_variable = chose_anarchism
+					has_variable = chose_communism
+					has_variable = chose_ethno_nationalism
+				}
+			}
+			multiply = 0.1
+		}
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
+}

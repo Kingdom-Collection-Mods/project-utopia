@@ -20,6 +20,39 @@ ut_ideology_cosmopolitan_valid_trigger = {
 	}
 }
 
+ut_ideology_autocratic_leader_valid_trigger = {
+	OR = {
+		is_interest_group_type = ig_armed_forces
+		is_interest_group_type = ig_petty_bourgeoisie
+		is_interest_group_type = ig_landowners
+		AND = {
+			OR = {
+				is_interest_group_type = ig_industrialists
+				is_interest_group_type = ig_devout
+			}
+			owner = { has_variable = je_ut_new_dawn_autocrat_focus }
+		}
+	}
+}
+
+ut_ideology_national_socialist_leader_trigger = {
+	OR = {
+		is_interest_group_type = ig_armed_forces
+		is_interest_group_type = ig_petty_bourgeoisie
+		is_interest_group_type = ig_landowners
+		is_interest_group_type = ig_rural_folk
+		AND = {
+			OR = {
+				is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_devout
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_industrialists
+			}
+			owner = { has_variable = je_ut_new_dawn_autocrat_focus }
+		}
+	}
+}
+
 ut_ideology_new_dawn_fascist_trigger = {
 	OR = {
 		has_ideology = ideology:ideology_corporatist_leader
