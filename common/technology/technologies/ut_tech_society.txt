@@ -608,7 +608,7 @@ political_progress_4_greens = {
 
 national_socialism = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/human_dignity.dds"
+	texture = "gfx/interface/icons/invention_icons/nazis.dds"
 	category = society
 		
 
@@ -632,7 +632,7 @@ national_socialism = {
 
 movie_industry = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/human_dignity.dds"
+	texture = "gfx/interface/icons/invention_icons/movie_industry.dds"
 	category = society
 		
 
