@@ -272,9 +272,9 @@ civilian_drones = {
 }
 
 
-nuclear_energy_research = {
+nuclear_power_research = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/mining_pit_2.dds"
+	texture = "gfx/interface/icons/invention_icons/nuclear_power_research.dds"
 	category = production
 
 	unlocking_technologies = {	
@@ -290,14 +290,14 @@ nuclear_energy_research = {
 	}
 }
 
-nuclear_energy = {
+nuclear_power = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/mining_pit_2.dds"
+	texture = "gfx/interface/icons/invention_icons/nuclear_power.dds"
 	category = production
 	can_research = no
 
 	unlocking_technologies = {	
-		nuclear_energy_research
+		nuclear_power_research
 	}
 	
 	modifier = {
@@ -316,7 +316,7 @@ rare_earths_mining_era_analog = {
 	category = production
 
 	unlocking_technologies = {	
-		nuclear_energy_research
+		nuclear_power_research
 	}
 	
 	modifier = {
@@ -368,7 +368,7 @@ computers = {
 	}
 	
 	unlocking_technologies = {	
-		nuclear_energy_research
+		nuclear_power_research
 		electronics
 	}
 	

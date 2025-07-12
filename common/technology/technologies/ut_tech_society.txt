@@ -164,7 +164,7 @@ international_commerce = {
 #Financial progress and inclusion
 international_stock_exchange = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/check_payments.dds"
+	texture = "gfx/interface/icons/invention_icons/international_stock_exchange.dds"
 	category = society
 		
 	modifier = {
@@ -327,7 +327,7 @@ digital_tax_declaration = {
 
 union_new_mandates = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/pan_nationalism.dds"
+	texture = "gfx/interface/icons/invention_icons/international_law.dds"
 	category = society
 
 	on_researched = {
@@ -351,7 +351,7 @@ union_new_mandates = {
 
 union_trade = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/pan_nationalism.dds"
+	texture = "gfx/interface/icons/invention_icons/international_trade_laws.dds"
 	category = society
 		
 	modifier = {
@@ -371,7 +371,7 @@ union_trade = {
 
 union_new_mandates_two = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/pan_nationalism.dds"
+	texture = "gfx/interface/icons/invention_icons/international_organization.dds"
 	category = society
 	
 	on_researched = {
@@ -557,9 +557,6 @@ political_progress_2_rationalism = {
 	category = society
 		
 	modifier = {
-		country_service_workers_pol_str_mult = 0.1
-		interest_group_ig_urbanists_pol_str_mult = 0.1
-
 		state_expected_sol_from_literacy = 1
 	}
 
@@ -574,7 +571,7 @@ political_progress_2_rationalism = {
 
 political_progress_3_neoliberalism = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/rationalism.dds"
+	texture = "gfx/interface/icons/invention_icons/neoliberalism.dds"
 	category = society
 		
 	modifier = {
@@ -592,7 +589,7 @@ political_progress_3_neoliberalism = {
 
 political_progress_4_greens = {
 	era = era_8
-	texture = "gfx/interface/icons/invention_icons/rationalism.dds"
+	texture = "gfx/interface/icons/invention_icons/green_movement.dds"
 	category = society
 		
 	modifier = {
@@ -659,7 +656,7 @@ movie_industry = {
 
 online_forums = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/human_dignity.dds"
+	texture = "gfx/interface/icons/invention_icons/online_forums.dds"
 	category = society
 		
 
@@ -670,6 +667,8 @@ online_forums = {
 	}
 
 	modifier = {
+		country_service_workers_pol_str_mult = 0.1
+		interest_group_ig_urbanists_pol_str_mult = 0.1
 	}
 
 	unlocking_technologies = {
@@ -682,7 +681,7 @@ online_forums = {
 }
 social_media = {
 	era = era_8
-	texture = "gfx/interface/icons/invention_icons/human_dignity.dds"
+	texture = "gfx/interface/icons/invention_icons/social_media.dds"
 	category = society
 		
 
@@ -693,6 +692,8 @@ social_media = {
 	}
 
 	modifier = {
+		country_service_workers_pol_str_mult = 0.1
+		interest_group_ig_urbanists_pol_str_mult = 0.1
 	}
 
 	unlocking_technologies = {
@@ -730,7 +731,7 @@ anti_discrimination_laws = {
 
 emancipation_movement = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/lgbt_movement.dds"
+	texture = "gfx/interface/icons/invention_icons/emancipation_movement.dds"
 	category = society
 		
 	on_researched = {
@@ -817,14 +818,13 @@ anti_multicultural_globalism = {
 	}
 }
 
-public_universities = {
+compulsory_secondary_school = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/academia.dds"
+	texture = "gfx/interface/icons/invention_icons/compulsory_secondary_school.dds"
 	category = society
 		
 	modifier = {
 		country_tech_spread_mult = 0.1
-		country_weekly_innovation_max_add = 30
 	}
 
 	unlocking_technologies = {
@@ -836,17 +836,18 @@ public_universities = {
 	}
 }
 
-compulsory_secondary_school = {
+public_universities = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/academia.dds"
+	texture = "gfx/interface/icons/invention_icons/public_universities.dds"
 	category = society
 		
 	modifier = {
 		country_tech_spread_mult = 0.1
+		country_weekly_innovation_max_add = 30
 	}
 
 	unlocking_technologies = {
-		public_universities
+		compulsory_secondary_school
 	}
 	
 	ai_weight = {
@@ -854,9 +855,10 @@ compulsory_secondary_school = {
 	}
 }
 
+
 technical_scientific_school_reforms = {
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/academia.dds"
+	texture = "gfx/interface/icons/invention_icons/school_reforms.dds"
 	category = society
 		
 	modifier = {
@@ -874,7 +876,7 @@ technical_scientific_school_reforms = {
 
 compulsory_tertiary_school = {
 	era = era_8
-	texture = "gfx/interface/icons/invention_icons/academia.dds"
+	texture = "gfx/interface/icons/invention_icons/compulsory_tertiary_school.dds"
 	category = society
 		
 	modifier = {

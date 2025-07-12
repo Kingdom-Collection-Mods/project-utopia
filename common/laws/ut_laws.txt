@@ -1136,7 +1136,7 @@ law_ut_minimum_wage = {
 	progressiveness = 100
 
 	unlocking_technologies = {
-		modern_economy
+		political_progress_2_rationalism
 	}
 
 	institution = institution_workplace_safety
