@@ -1022,6 +1022,7 @@ law_food_safety_protection_institute  = {
 	unlocking_laws = {
 		law_interventionism
 		law_laissez_faire
+		law_free_market_economy
 		law_social_market_economy
 		law_command_economy
 		law_cooperative_ownership
@@ -1061,6 +1062,7 @@ law_food_safety_protection_institute_two  = {
 	unlocking_laws = {
 		law_interventionism
 		law_laissez_faire
+		law_free_market_economy
 		law_social_market_economy
 		law_command_economy
 		law_cooperative_ownership

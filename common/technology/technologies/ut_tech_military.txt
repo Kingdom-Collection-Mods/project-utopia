@@ -67,7 +67,6 @@ light_ships_rockets_base = {
 	}
 
 	modifier = {
-		unit_navy_defense_add = 5
     }
 	
 	ai_weight = {
@@ -103,7 +102,6 @@ light_ships_rockets_computers = {
 	}
 
 	modifier = {
-		unit_navy_defense_add = 5
     }
 	
 	ai_weight = {
@@ -140,7 +138,6 @@ support_ships_electronic_surveillance = {
 	}
 
 	modifier = {
-		unit_navy_defense_add = 5
     }
 	
 	ai_weight = {
@@ -177,7 +174,6 @@ heavy_ships_rockets_computers = {
 	}
 
 	modifier = {
-		unit_navy_offense_add = 5
     }
 	
 	ai_weight = {
@@ -235,7 +231,7 @@ ut_anti_tank = {
 	}
 
 	modifier = {
-		unit_army_offense_mult = 0.05
+		unit_army_defense_mult = 0.05
 		unit_kill_rate_add = 0.05
     }
 	
@@ -273,7 +269,7 @@ ut_anti_tank_guided_software = {
 	}
 
 	modifier = {
-		unit_army_offense_mult = 0.05
+		unit_army_defense_mult = 0.05
 		unit_kill_rate_add = 0.05
     }
 	
@@ -343,7 +339,7 @@ ut_tank_composite_armor = {
 	}
 
 	modifier = {
-		unit_combat_unit_type_heavy_tank_offense_mult = 0.1
+		unit_combat_unit_type_light_tank_offense_add = 10
     }
 	
 	ai_weight = {
@@ -364,8 +360,7 @@ ut_tank_modern = {
 	}
 
 	modifier = {
-		unit_combat_unit_type_mechanized_infantry_offense_add = 5
-		unit_combat_unit_type_heavy_tank_offense_mult = 0.1
+		unit_combat_unit_type_motorized_artillery_offense_add = 5
     }
 	
 	ai_weight = {

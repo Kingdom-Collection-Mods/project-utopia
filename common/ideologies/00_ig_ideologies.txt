@@ -148,7 +148,7 @@ ideology_individualist = {
 		law_private_schools = approve
 		law_public_university = neutral
 		law_public_schools = neutral
-		law_private_universities = neutral
+		law_private_universities = approve
 		law_religious_schools = neutral
 		law_no_schools = disapprove
 	}
@@ -165,11 +165,11 @@ ideology_stratocratic = {
 	
 	lawgroup_army_model = {
 		law_peasant_levies = approve
-		law_task_forces = disapprove
+		law_task_forces = neutral
 		law_professional_army = neutral
 		law_national_militia = neutral
 		law_mass_conscription = disapprove
-		law_demobilized = neutral
+		law_demobilized = disapprove
 	}
 	
 	lawgroup_land_reform = {
@@ -910,7 +910,7 @@ ideology_corporatist = {
 		law_no_social_security = disapprove
 		law_wage_subsidies = approve
 		law_old_age_pension = neutral
-		law_private_pension = strongly_approve
+		law_private_pension = approve
 	}
 
 	lawgroup_food_safety = {
