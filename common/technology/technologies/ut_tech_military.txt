@@ -67,6 +67,7 @@ light_ships_rockets_base = {
 	}
 
 	modifier = {
+		unit_navy_defense_add = 5
     }
 	
 	ai_weight = {
@@ -84,7 +85,6 @@ light_ships_rockets_machinery = {
 	}
 
 	modifier = {
-		unit_navy_defense_add = 5
     }
 	
 	ai_weight = {
@@ -209,7 +209,7 @@ support_ships_rockets_base = {
 	}
 
 	modifier = {
-		unit_combat_unit_type_submarine_offense_mult = 0.2
+		unit_combat_unit_type_modern_submarine_offense_add = 5
 		unit_navy_defense_add = 5
     }
 	
