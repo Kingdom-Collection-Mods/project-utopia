@@ -141,7 +141,9 @@
  ut_new_dawn_communist_status: "Kommunistische Ideen prägen den Diskurs"
  ut_nd_communist_character_concept: "Kommunistische Charaktere"
  ut_nd_communist_character_concept_desc: "Kommunistische Charakter sind GetIdeology('ideology_anarchist').GetName, GetIdeology('ideology_radical').GetName, GetIdeology('ideology_communist').GetName und GetIdeology('ideology_vanguardist').GetName."
-
+ 
+ je_ut_new_dawn_democrat_focus: "Demokratisch"
+ je_ut_new_dawn_democrat_focus_desc: "Demokratischer Fokus ausgewählt"
  ut_new_dawn_democrat_focus: "Demokratischer Fokus"
  ut_new_dawn_democrat_bar: "Demokratisch"
  ut_new_dawn_democrat_bar_desc: "Demokratischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
@@ -340,6 +342,14 @@
  country_institution_epa_max_investment_add: "Max. Investition der [concept_institution] $institution_epa$"
  country_institution_food_safety_max_investment_add: "Max. Investition der [concept_institution] $institution_food_safety$"
 
+
+
+#articles
+ ut_international_diplomatic_power_bloc_merge: "Diplomatische Blöcke vereinigen"
+ ut_international_diplomatic_power_bloc_merge_effects_desc: "• Eine Vereinberung, laut der alle demokratischen Machtblockmitglieder dem dem anderen Machtblock beitreten. Freigeschaltet durch demokratischen New Dawn."
+ ut_international_diplomatic_power_bloc_merge_short_desc: "Alle Mitglieder des [TARGET_COUNTRY.GetAdjectiveNoFormatting|l]en Blocks tretten dem [SOURCE_COUNTRY.GetAltNameNoFormatting('NOM')|U] Block bei."
+ ut_international_diplomatic_power_bloc_merge_points_them: "[TreatyDraft.GetRightCountry.GetName]: Erfordert mindestens #v [SCOPE.ScriptValue('new_dawn_ideology_spend_points')] Fortschrittspunkte#!"
+ je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Hat #v $je_ut_new_dawn_democrat_focus$ #!Modifikator"
 
 # Diplo
  principle_group_modern_trade_league: "Moderne Handelsliga"
@@ -605,7 +615,7 @@
  online_forums_desc: ""
  social_media: "Soziale Medien"
  social_media_desc: ""
- multicultural_globalism: "Multikulturalismus 2.0"
+ multicultural_globalism: "Multikulturalismus"
  multicultural_globalism_desc: "Massenmigration und transnationale Identitäten lösen nationale Bindungen auf. Urbaner Hybridkulturen feiern kulinarische Fusionen und polyglotte Lebensstile als neue Normalität."
  anti_multicultural_globalism: "Anti-multikultureller Globalismus"
  anti_multicultural_globalism_desc: "Gegenbewegungen beschwören ethnokulturelle Homogenität und Souveränität. Grenzzäune wachsen, während Sprachprüfungen und Leitkulturdebatten die Gesellschaft repolarisieren."

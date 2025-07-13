@@ -285,6 +285,7 @@ law_social_market_economy = {
 		country_government_dividends_efficiency_add = 0.10
 		state_shopkeepers_investment_pool_efficiency_mult = 0.05
 		state_service_workers_investment_pool_efficiency_mult = 0.05
+		country_forbid_monopoly_bool = yes
 		country_max_companies_add = 1
 		country_free_charters_add = 1
 
@@ -334,6 +335,7 @@ law_free_market_economy = {
 		country_disable_nationalization_bool = yes
 		country_force_privatization_bool = yes
 		country_company_pay_to_establish_bool = yes
+		country_forbid_monopoly_bool = yes
 		country_capitalists_pol_str_mult = 0.1
 		
 		country_pec_fake_add_marketconfidence = 0.25

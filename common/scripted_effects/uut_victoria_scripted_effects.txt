@@ -106,7 +106,7 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 	}
 	if = {
 		limit = { 
-			has_variable = je_ut_new_dawn_communist_focus
+			has_modifier = je_ut_new_dawn_communist_focus
 		}
 		change_variable = { name = ut_nd_communist_progress_from_focus add = 0.5 } #If the Cement the Rightful Dynasty focus is active, add 0.5 to the progress bar.
 	}
@@ -176,7 +176,7 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 	}
 	if = {
 		limit = { 
-			has_variable = je_ut_new_dawn_democrat_focus
+			has_modifier = je_ut_new_dawn_democrat_focus
 		}
 		change_variable = { name = ut_nd_democrat_progress_from_focus add = 0.5 } #If the Cement the Rightful Dynasty focus is active, add 0.5 to the progress bar.
 	}
@@ -252,7 +252,7 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 	}
 	if = {
 		limit = { 
-			has_variable = je_ut_new_dawn_autocrat_focus
+			has_modifier = je_ut_new_dawn_autocrat_focus
 		}
 		change_variable = { name = ut_nd_autocrat_progress_from_focus add = 0.5 } #If the Cement the Rightful Dynasty focus is active, add 0.5 to the progress bar.
 	}
@@ -335,7 +335,7 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 	}
 	if = {
 		limit = { 
-			has_variable = je_ut_new_dawn_fascist_focus
+			has_modifier = je_ut_new_dawn_fascist_focus
 		}
 		change_variable = { name = ut_nd_fascist_progress_from_focus add = 0.5 } #If the Cement the Rightful Dynasty focus is active, add 0.5 to the progress bar.
 	}

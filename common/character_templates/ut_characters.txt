@@ -1,0 +1,171 @@
+﻿#france
+ut_agitator_charles_de_gaulle = {
+	first_name = Charles
+	last_name = de-Gaulle
+	historical = yes
+	culture = cu:french
+	religion = rel:catholic
+	female = no
+	interest_group = ig_armed_forces
+	ideology = ideology_reactionary_democratic
+	birth_date =  1890.11.22
+	traits = {
+		direct
+		tactful
+	}
+	agitator_usage = {
+		country_trigger = {
+			c:FRA ?= this
+		}
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_armed_forces
+                is_interest_group_type = ig_petty_bourgeoisie
+            }
+        }
+		earliest_usage_date = 1944.1.1 # first publication of "What is to be Done?""
+		latest_usage_date = 1969.1.1
+		chance = 50
+	}
+}
+
+#hispanophone
+ut_agitator_fidel_castro = {
+	first_name = Fidel
+	last_name = Castro
+	historical = yes
+	culture = cu:caribeno
+	religion = rel:atheist
+	female = no
+	interest_group = ig_trade_unions
+	ideology = ideology_communist
+	birth_date = 1926.8.13
+	traits = {
+		persistent
+		charismatic
+		meticulous
+	}
+	agitator_usage = {
+		country_trigger = {
+			any_primary_culture = {
+				has_discrimination_trait = hispanophone
+			}
+		}
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_intelligentsia
+                is_interest_group_type = ig_trade_unions
+                is_interest_group_type = ig_armed_forces
+            }
+        }
+		earliest_usage_date = 1959.1.1 # Malatesta met Bakunin at the Saint-Inier Congress
+		latest_usage_date = 1990.1.1
+		chance = 50
+	}
+}
+
+#usa
+ut_agitator_martin_luther_king_jr = {
+	first_name = Fidel
+	last_name = Castro
+	historical = yes
+	culture = cu:caribeno
+	religion = rel:atheist
+	female = no
+	interest_group = ig_intelligentsia
+	ideology = ut_ideology_cosmopolitan_leader
+	#to imrove more Civil Rights
+	birth_date = 1929.1.15
+	traits = {
+		pious
+		charismatic
+		persistent
+	}
+	agitator_usage = {
+		country_trigger = {
+			c:USA ?= this
+		}
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_intelligentsia
+                is_interest_group_type = ig_trade_unions
+                is_interest_group_type = ig_armed_forces
+            }
+        }
+		earliest_usage_date = 1955.1.1 # Malatesta met Bakunin at the Saint-Inier Congress
+		latest_usage_date = 1968.1.1
+		chance = 75
+	}
+}
+
+#todo below research and refine - generics
+ut_agitator_simone_de_beauvoir = {
+	first_name = Simone
+	last_name = de-Beauvoir
+	historical = yes
+	culture = cu:french
+	religion = rel:atheist
+	female = yes
+	interest_group = ig_intelligentsia
+	ideology = ideology_radical
+	#to imrove more Civil Rights
+	birth_date = 1908.1.09
+	traits = {
+		#placeholders
+		charismatic
+	}
+	agitator_usage = {
+		country_trigger = {
+			any_primary_culture = {
+				has_discrimination_trait = european_heritage
+			}
+		}
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_intelligentsia
+                is_interest_group_type = ig_trade_unions
+            }
+        }
+		earliest_usage_date = 1940.1.1 # Malatesta met Bakunin at the Saint-Inier Congress
+		latest_usage_date = 1970.1.1
+		chance = 50
+	}
+}
+
+ut_agitator_milton_friedman = {
+	first_name = Milton
+	last_name = Friedman
+	historical = yes
+	culture = cu:yankee
+	religion = rel:jewish
+	female = yes
+	interest_group = ig_industrialists
+	ideology = ideology_laissez_faire
+	#to imrove more Civil Rights
+	birth_date = 1912.6.31
+	traits = {
+		#placeholders
+		charismatic
+	}
+	agitator_usage = {
+		country_trigger = {
+			any_primary_culture = {
+				has_discrimination_trait = european_heritage
+			}
+		}
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_intelligentsia
+                is_interest_group_type = ig_trade_unions
+            }
+        }
+		earliest_usage_date = 1950.1.1 # Malatesta met Bakunin at the Saint-Inier Congress
+		latest_usage_date = 1980.1.1
+		chance = 50
+	}
+}

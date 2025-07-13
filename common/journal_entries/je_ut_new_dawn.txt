@@ -5,7 +5,10 @@
 	
 
 	is_shown_when_inactive = {
-		is_player = yes
+		OR = {
+			is_player = yes
+			country_rank >= rank_value:great_power
+		}
 		ut_service_workers_possible = yes
 	}
 
@@ -198,6 +201,14 @@ je_ut_new_dawn_democratic = {
 		ut_set_new_dawn_variables = yes
 		
 		remove_variable = ut_new_dawn_bar_freeze
+		if = {
+			limit = {
+				NOT = { has_modifier = je_ut_new_dawn_democrat_focus }	
+			}
+			add_modifier = {
+				name = je_ut_new_dawn_democrat_focus
+			}
+		}
 	}
 	
 	scripted_button = je_ut_new_dawn_democratic_spirit
@@ -248,6 +259,14 @@ je_ut_new_dawn_democratic = {
 
 	on_monthly_pulse = {
 		effect = {
+			if = {
+				limit = {
+					NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
+				}
+				add_modifier = {
+					name = je_ut_new_dawn_democrat_focus
+				}
+			}
 		}
 		random_events = {
 			400 = 0
@@ -266,6 +285,7 @@ je_ut_new_dawn_democratic = {
 
 	# effect which is executed when 'fail' trigger becomes true
 	on_fail = {
+		remove_modifier = je_ut_new_dawn_democrat_focus
 	}
 
 	weight = 100

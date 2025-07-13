@@ -13,19 +13,33 @@ ut_new_dawn_fascist_focus = {
 		}
 		custom_tooltip = {
 			text = ut_new_dawn_focus_already_selected_tt
-			NOT = { has_variable = je_ut_new_dawn_fascist_focus }
+			NOT = { has_modifier = je_ut_new_dawn_fascist_focus }
 		}
 	}
 
 	effect = {	
-		custom_tooltip = ut_new_dawn_focus_tt	
-		set_variable = je_ut_new_dawn_fascist_focus
-		remove_variable = je_ut_new_dawn_autocrat_focus
-		remove_variable = je_ut_new_dawn_democrat_focus
-		remove_variable = je_ut_new_dawn_communist_focus
+		custom_tooltip = ut_new_dawn_focus_tt 
+		add_modifier = {
+			name = je_ut_new_dawn_fascist_focus
+		}
+		remove_modifier = je_ut_new_dawn_autocrat_focus
+		remove_modifier = je_ut_new_dawn_democrat_focus
+		remove_modifier = je_ut_new_dawn_communist_focus
 		add_modifier = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
+		}
+	}
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				OR = {
+					c:GER ?= this
+					c:ITA ?= this
+				}
+			}
+			add = 1
 		}
 	}
 }
@@ -44,19 +58,32 @@ ut_new_dawn_autocrat_focus = {
 		}
 		custom_tooltip = {
 			text = ut_new_dawn_focus_already_selected_tt
-			NOT = { has_variable = je_ut_new_dawn_autocrat_focus }
+			NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }
 		}
 	}
 
 	effect = {
 		custom_tooltip = ut_new_dawn_focus_tt
-		set_variable = je_ut_new_dawn_autocrat_focus
-		remove_variable = je_ut_new_dawn_fascist_focus
-		remove_variable = je_ut_new_dawn_democrat_focus
-		remove_variable = je_ut_new_dawn_communist_focus
+		add_modifier = {
+			name = je_ut_new_dawn_autocrat_focus
+		}
+		remove_modifier = je_ut_new_dawn_fascist_focus
+		remove_modifier = je_ut_new_dawn_democrat_focus
+		remove_modifier = je_ut_new_dawn_communist_focus
 		add_modifier = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
+		}
+	}
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				OR = {
+					c:AUS ?= this
+				}
+			}
+			add = 1
 		}
 	}
 }
@@ -73,21 +100,37 @@ ut_new_dawn_democrat_focus = {
 			text = ut_new_dawn_focus_freeze_tt
 			NOT = { has_variable = ut_new_dawn_bar_freeze }
 		}
-		custom_tooltip = {
-			text = ut_new_dawn_focus_already_selected_tt
-			NOT = { has_variable = je_ut_new_dawn_democrat_focus }
-		}
+		NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
 	}
 
 	effect = {
 		custom_tooltip = ut_new_dawn_focus_tt
-		set_variable = je_ut_new_dawn_democrat_focus
-		remove_variable = je_ut_new_dawn_fascist_focus
-		remove_variable = je_ut_new_dawn_autocrat_focus
-		remove_variable = je_ut_new_dawn_communist_focus
+		add_modifier = {
+			name = je_ut_new_dawn_democrat_focus
+		}
+		remove_modifier = je_ut_new_dawn_fascist_focus
+		remove_modifier = je_ut_new_dawn_autocrat_focus
+		remove_modifier = je_ut_new_dawn_communist_focus
 		add_modifier = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
+		}
+	}
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				c:USA ?= this
+				NOT = { exists = c:CSA }
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				c:GBR ?= this
+				exists = c:GER
+			}
+			add = 1
 		}
 	}
 }
@@ -108,19 +151,30 @@ ut_new_dawn_communist_focus = {
 		}
 		custom_tooltip = {
 			text = ut_new_dawn_focus_already_selected_tt
-			NOT = { has_variable = je_ut_new_dawn_communist_focus }
+			NOT = { has_modifier = je_ut_new_dawn_communist_focus }
 		}
 	}
 
 	effect = {		
 		custom_tooltip = ut_new_dawn_focus_tt
-		set_variable = je_ut_new_dawn_communist_focus
-		remove_variable = je_ut_new_dawn_fascist_focus
-		remove_variable = je_ut_new_dawn_autocrat_focus
-		remove_variable = je_ut_new_dawn_democrat_focus
+		add_modifier = {
+			name = je_ut_new_dawn_communist_focus
+		}
+		remove_modifier = je_ut_new_dawn_fascist_focus
+		remove_modifier = je_ut_new_dawn_autocrat_focus
+		remove_modifier = je_ut_new_dawn_democrat_focus
 		add_modifier = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
+		}
+	}
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				c:RUS ?= this
+			}
+			add = 1
 		}
 	}
 }
@@ -171,6 +225,7 @@ je_ut_new_dawn_democratic_spirit = {
 	effect = {		
 		ig:ig_intelligentsia = {
 			remove_ideology = ideology_liberal
+			remove_ideology = ideology_liberal_modern
 			add_ideology = ideology_liberal_democratic
 		}
 		ig:ig_petty_bourgeoisie = {

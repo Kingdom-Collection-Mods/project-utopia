@@ -338,7 +338,7 @@ ut_ideology_autocratic_leader = {
 						has_law = law_type:law_outlawed_dissent
 					} 
 					NOT = {
-						NOT = { has_variable = je_ut_new_dawn_autocrat_focus }
+						NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }
 						AND = {
 							OR = {
 								has_law = law_type:law_autocracy
@@ -356,7 +356,7 @@ ut_ideology_autocratic_leader = {
 		if = {
 			limit = {
 				is_in_government = yes
-				NOT = { has_variable = je_ut_new_dawn_autocrat_focus }
+				NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }
 			}
 			add = -50
 		}
@@ -399,7 +399,7 @@ ut_ideology_autocratic_leader = {
 						c:TUR ?= this
 						c:RUS ?= this
 					}
-					has_variable = je_ut_new_dawn_autocrat_focus
+					has_modifier = je_ut_new_dawn_autocrat_focus
 				}
 			}
 			multiply = 1.5
@@ -545,7 +545,7 @@ ut_ideology_national_socialist_leader = {
 		# More likely if paying war reparations
 		if = {
 			limit = {
-				NOT = { has_variable = je_ut_new_dawn_democrat_focus }
+				NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
 				any_country = {
 					any_scope_treaty = {
 						is_enforced = yes
@@ -586,7 +586,7 @@ ut_ideology_national_socialist_leader = {
 		if = {
 			limit = {
 				owner = {
-					has_variable = je_ut_new_dawn_autocrat_focus
+					has_modifier = je_ut_new_dawn_autocrat_focus
 				}
 			}
 			add = 25
@@ -596,7 +596,7 @@ ut_ideology_national_socialist_leader = {
 		if = {
 			limit = {
 				owner = {
-					has_variable = je_ut_new_dawn_fascist_focus
+					has_modifier = je_ut_new_dawn_fascist_focus
 				}
 			}
 			add = 50
@@ -666,7 +666,7 @@ ut_ideology_national_socialist_leader = {
 						c:GER ?= this
 						c:ITA ?= this
 					}
-					has_variable = je_ut_new_dawn_fascist_focus
+					has_modifier = je_ut_new_dawn_fascist_focus
 				}
 			}
 			multiply = 1.5

@@ -488,14 +488,13 @@ event_new_dawn.11 = {
 	type = country_event
 	placement = ROOT
 	title = event_new_dawn.11.t
-	desc = event_new_dawn.11.d_1
+	desc = event_new_dawn.11.d
+	flavor = event_new_dawn.11.f
 
 	duration = 3
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	gui_window = event_window_1char_tabloid
-
-	left_icon = scope:french_monarch_scope
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -521,29 +520,29 @@ event_new_dawn.11 = {
 		name = event_new_dawn.democrat_leader # Long live the Orleanists!s_variable = orleanist_restoration_var
 		set_variable = ut_new_dawn_core_democrat_var
 		trigger = {
-			has_variable = je_ut_new_dawn_democrat_focus
-		}
-		create_character = {
-			ig_leader = yes
-			ideology = ideology_social_democrat
-			interest_group = ig_armed_forces
+			has_modifier = je_ut_new_dawn_democrat_focus
+		}		
+		ig:ig_armed_forces = {
+			leader = {
+				set_ideology = ideology:ideology_social_democrat
+			}
 		}
 	}
 
 	#Autocrats
 	option = {
-		name = french_pretenders.1.b # Long live the Orleanists!
+		name = event_new_dawn.autocrat_leader # Long live the Orleanists!
 		set_variable = ut_new_dawn_core_autocrat_var
 		trigger = {
 			OR = {
-				has_variable = je_ut_new_dawn_autocrat_focus
+				has_modifier = je_ut_new_dawn_autocrat_focus
 				NOT = { has_law = law_type:law_universal_suffrage }
 			}
 		}
-		create_character = {
-			ig_leader = yes
-			ideology = ut_ideology_autocratic_leader
-			interest_group = ig_armed_forces			
+		ig:ig_armed_forces = {
+			leader = {
+				set_ideology = ideology:ut_ideology_autocratic_leader
+			}
 		}
 	}
 
@@ -553,15 +552,16 @@ event_new_dawn.11 = {
 		name = french_pretenders.1.b # Long live the Orleanists!
 		set_variable = ut_new_dawn_core_autocrat_var
 		trigger = {
-			has_variable = je_ut_new_dawn_fascist_focus
+			has_modifier = je_ut_new_dawn_fascist_focus
 			ig:ig_armed_forces = {
 				is_in_government = yes
 			}
 		}
-		create_character = {
-			ig_leader = yes
-			ideology = ut_ideology_national_socialist_leader
-			interest_group = ig_armed_forces			
+		
+		ig:ig_armed_forces = {
+			leader = {
+				set_ideology = ideology:ut_ideology_national_socialist_leader
+			}
 		}
 	}
 
@@ -571,15 +571,15 @@ event_new_dawn.11 = {
 		name = french_pretenders.1.b # Long live the Orleanists!
 		set_variable = ut_new_dawn_core_autocrat_var
 		trigger = {
-			has_variable = je_ut_new_dawn_communist_focus
+			has_modifier = je_ut_new_dawn_communist_focus
 			ig:ig_armed_forces = {
 				is_in_government = yes
 			}
 		}
-		create_character = {
-			ig_leader = yes
-			ideology = ideology_communist
-			interest_group = ig_armed_forces			
+		ig:ig_armed_forces = {
+			leader = {
+				set_ideology = ideology:ideology_communist
+			}
 		}
 	}
 
@@ -587,18 +587,18 @@ event_new_dawn.11 = {
 		name = event_new_dawn.random_decision
 		default_option = yes
 		random_list = {
-			60 = {
-				create_character = {
-					ig_leader = yes
-					ideology = ut_ideology_autocratic_leader
-					interest_group = ig_armed_forces
+			50 = {
+				ig:ig_armed_forces = {
+					leader = {
+						set_ideology = ideology:ut_ideology_autocratic_leader
+					}
 				}
 			}
-			30 = {
-				create_character = {
-					ig_leader = yes
-					ideology = ut_ideology_national_socialist_leader
-					interest_group = ig_armed_forces
+			20 = {
+				ig:ig_armed_forces = {
+					leader = {
+						set_ideology = ideology:ut_ideology_national_socialist_leader
+					}
 				}
 			}
 			5 = {
@@ -607,13 +607,21 @@ event_new_dawn.11 = {
 					ideology = ideology_social_democrat
 					interest_group = ig_armed_forces
 				}
+				ig:ig_armed_forces = {
+					leader = {
+						set_ideology = ideology:ideology_social_democrat
+					}
+				}
 			}
 			5 = {
-				create_character = {
-					ig_leader = yes
-					ideology = ideology_communist
-					interest_group = ig_armed_forces
+				ig:ig_armed_forces = {
+					leader = {
+						set_ideology = ideology:ideology_communist
+					}
 				}
+			}
+			20 = {
+
 			}
 		}
 	}
@@ -661,7 +669,7 @@ event_new_dawn.12 = {
 		name = event_new_dawn.democrat_leader # Long live the Orleanists!s_variable = orleanist_restoration_var
 		set_variable = ut_new_dawn_core_democrat_var
 		trigger = {
-			has_variable = je_ut_new_dawn_democrat_focus
+			has_modifier = je_ut_new_dawn_democrat_focus
 		}
 		create_character = {
 			ig_leader = yes
@@ -676,7 +684,7 @@ event_new_dawn.12 = {
 		set_variable = ut_new_dawn_core_autocrat_var
 		trigger = {
 			OR = {
-				has_variable = je_ut_new_dawn_autocrat_focus
+				has_modifier = je_ut_new_dawn_autocrat_focus
 				NOT = { has_law = law_type:law_universal_suffrage }
 			}
 		}
@@ -693,7 +701,7 @@ event_new_dawn.12 = {
 		name = french_pretenders.1.b # Long live the Orleanists!
 		set_variable = ut_new_dawn_core_autocrat_var
 		trigger = {
-			has_variable = je_ut_new_dawn_fascist_focus
+			has_modifier = je_ut_new_dawn_fascist_focus
 			ig:ig_armed_forces = {
 				is_in_government = yes
 			}
@@ -711,7 +719,7 @@ event_new_dawn.12 = {
 		name = french_pretenders.1.b # Long live the Orleanists!
 		set_variable = ut_new_dawn_core_autocrat_var
 		trigger = {
-			has_variable = je_ut_new_dawn_communist_focus
+			has_modifier = je_ut_new_dawn_communist_focus
 			ig:ig_armed_forces = {
 				is_in_government = yes
 			}

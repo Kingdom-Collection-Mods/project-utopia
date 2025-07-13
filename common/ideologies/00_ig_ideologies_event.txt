@@ -8,8 +8,8 @@
 		law_women_own_property = neutral
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = neutral
-		law_equal_rights_for_women = neutral
-		law_affirmative_equality = neutral
+		law_equal_rights_for_women = disapprove
+		law_affirmative_equality = disapprove
 	}
 
 	lawgroup_free_speech = {
@@ -28,9 +28,9 @@ ideology_feminist_ig = {
 	lawgroup_rights_of_women = {
 		law_womens_suffrage = strongly_approve
 		law_equal_rights_for_women = strongly_approve
-		law_affirmative_equality = strongly_approve
-		law_women_in_the_workplace = approve
-		law_women_own_property = neutral
+		law_affirmative_equality = approve
+		law_women_in_the_workplace = neutral
+		law_women_own_property = disapprove
 		law_no_womens_rights = strongly_disapprove
 	}
 }

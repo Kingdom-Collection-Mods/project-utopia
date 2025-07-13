@@ -30,7 +30,7 @@ ut_ideology_autocratic_leader_valid_trigger = {
 				is_interest_group_type = ig_industrialists
 				is_interest_group_type = ig_devout
 			}
-			owner = { has_variable = je_ut_new_dawn_autocrat_focus }
+			owner = { has_modifier = je_ut_new_dawn_autocrat_focus }
 		}
 	}
 }
@@ -48,7 +48,7 @@ ut_ideology_national_socialist_leader_trigger = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_industrialists
 			}
-			owner = { has_variable = je_ut_new_dawn_autocrat_focus }
+			owner = { has_modifier = je_ut_new_dawn_autocrat_focus }
 		}
 	}
 }
@@ -74,7 +74,7 @@ ut_ideology_new_dawn_democrat_trigger = {
 			custom_tooltip = {
 				text = ut_new_dawn_focus_selected_tt
 				OR = {
-					has_variable = je_ut_new_dawn_democrat_focus
+					has_modifier = je_ut_new_dawn_democrat_focus
 					has_journal_entry = je_ut_new_dawn_democratic
 				}
 			}
@@ -98,7 +98,7 @@ ut_ideology_new_dawn_autocrat_trigger = {
 			custom_tooltip = {
 				text = ut_new_dawn_focus_selected_tt
 				OR = {
-					has_variable = je_ut_new_dawn_autocrat_focus
+					has_modifier = je_ut_new_dawn_autocrat_focus
 					#has_journal_entry = je_ut_new_dawn_autocratic
 				}
 			}
@@ -147,26 +147,42 @@ ut_ideology_new_dawn_focus_won = {
 			"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
 			"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 			"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
-			has_variable = je_ut_new_dawn_democrat_focus
+			has_modifier = je_ut_new_dawn_democrat_focus
 		}
 		AND = {
 			"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
 			"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
 			"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
-			has_variable = je_ut_new_dawn_autocrat_focus
+			has_modifier = je_ut_new_dawn_autocrat_focus
 		}
 		AND = {
 			"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
 			"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 			"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
-			has_variable = je_ut_new_dawn_communist_focus
+			has_modifier = je_ut_new_dawn_communist_focus
 		}
 		AND = {
 			"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
 			"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 			"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-			has_variable = je_ut_new_dawn_fascist_focus
+			has_modifier = je_ut_new_dawn_fascist_focus
 		}
 	}
 
+}
+
+new_dawn_ideology_required_points_trigger = {
+	custom_tooltip = {
+		text = new_dawn_ideology_required_points_tt
+		je:je_ut_new_dawn_democratic = { 
+			"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
+		}
+	}
+}
+
+je_ut_new_dawn_democratic_power_bloc_done_trigger = {
+	custom_tooltip = {
+		text = je_ut_new_dawn_democratic_power_bloc_done_tt
+		has_variable = je_ut_new_dawn_democratic_power_bloc_done
+	}
 }

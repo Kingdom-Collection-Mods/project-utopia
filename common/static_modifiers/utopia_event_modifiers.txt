@@ -34,6 +34,31 @@ ut_new_dawn_focus_recently_changed = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 }
 
+je_ut_new_dawn_democrat_focus = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_radicals_from_conquest_mult = 0.5
+	country_infamy_generation_mult = -0.25
+	country_diplomatic_play_maneuvers_add = -50
+}
+ 
+je_ut_new_dawn_fascist_focus = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	country_radicals_from_conquest_mult = -0.5
+	country_infamy_generation_mult = 0.25
+	country_diplomatic_play_maneuvers_add = 100
+}
+
+je_ut_new_dawn_autocrat_focus = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	country_radicals_from_conquest_mult = -0.25
+	country_diplomatic_play_maneuvers_add = 50
+}
+
+je_ut_new_dawn_communist_focus = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_radicals_from_conquest_mult = 0.25
+}
+
 ai_great_power_buff_spread = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 150

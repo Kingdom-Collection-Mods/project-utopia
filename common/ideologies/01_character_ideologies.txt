@@ -1039,7 +1039,7 @@ ideology_feminist = {
 	character_ideology = yes
 	
 	lawgroup_rights_of_women = {
-		law_womens_suffrage = strongly_approve
+		law_womens_suffrage = approve
 		law_equal_rights_for_women = strongly_approve
 		law_affirmative_equality = strongly_approve
 		law_women_in_the_workplace = neutral
@@ -3200,6 +3200,12 @@ ideology_market_liberal = {
 		law_commercialized_agriculture = approve
 	}	
 
+	lawgroup_food_safety = {
+		law_no_food_safety_protection = neutral
+		law_food_safety_protection_institute = disapprove
+		law_food_safety_protection_institute_two = disapprove		
+	}	
+
 	country_trigger = {
 		has_technology_researched = stock_exchange
 		# capitalism must be relevant
@@ -3896,8 +3902,8 @@ ideology_humanitarian = {
 		law_women_own_property = disapprove
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = approve
-		law_equal_rights_for_women = approve
-		law_affirmative_equality = neutral
+		law_equal_rights_for_women = strongly_approve
+		law_affirmative_equality = strongly_approve
 	}
 
 	lawgroup_childrens_rights = {
