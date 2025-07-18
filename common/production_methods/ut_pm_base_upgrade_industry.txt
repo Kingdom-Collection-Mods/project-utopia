@@ -51,7 +51,7 @@ pm_ut_industry_plastics = {
 			goods_input_lead_add = 30
 			
 			# output goods
-			goods_output_glass_add = 110
+			goods_output_glass_add = 115
 		}
 
 		level_scaled = {
@@ -74,8 +74,7 @@ pm_ut_precision_tools = {
 			# input goods
 			goods_input_rubber_add = 10
 			goods_input_steel_add = 30
-			goods_input_aluminum_add = 2
-			goods_input_electronics_add = 2
+			goods_input_electronics_add = 3
 			goods_input_electricity_add = 1
 			
 			# output goods
@@ -726,7 +725,7 @@ pm_shopping_district = {
 			goods_input_electricity_add = 1
 			goods_output_services_add = 70
 			goods_output_internet_add = 1
-			goods_output_consumer_goods_add = 3
+			goods_output_consumer_goods_add = 2
 		}
 
 		level_scaled = {
