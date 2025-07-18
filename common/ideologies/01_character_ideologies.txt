@@ -1861,7 +1861,7 @@ ideology_social_democrat = {
 		law_no_social_security = strongly_disapprove
 		law_wage_subsidies = approve
 		law_old_age_pension = strongly_approve
-		law_private_pension = disapprove
+		law_private_pension = strongly_disapprove
 	}
 
 	lawgroup_caste_hegemony = {
