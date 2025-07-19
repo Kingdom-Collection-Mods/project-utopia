@@ -89,6 +89,8 @@
  je_urbanist_ig: "Urbanist Movement"
  je_urbanist_ig_reason: "The urbanist movement is more than architecture – it is a vision of how we live together. In growing cities, not just buildings are created, but societies. Urban planners, social reformers, and visionaries dream of urban spaces that not only function, but inspire: with parks, light, transit, and public life. The city is not only built – it is shaped, as a stage for a better future."
 
+ ut_research_institute_concept: "Forschungsinstitut"
+ ut_research_institute_concept_desc: "Im Forschungsinstitut können große Forschungsprojekte freigeschaltet werden. \n Era 6: Nuklear Energie & Nuklear Waffen \n Era 7: High-End Computer (~10µm)\nEra 8: Generative KI.\nNoch in Arbeit."
  ut_research_institute_found: "Research High-Tech Computers"
  ut_research_institute_found_desc: "A national research institute is to be established to consolidate scientific excellence, promote fundamental research, and structurally accelerate technological progress. The construction of this institution marks a milestone on the path to a knowledge-based society."
  ut_je_research_institute_founding: "Founding a Research Institute"
@@ -98,6 +100,7 @@
  ut_research_institute_found_mod: "Building a Research Institute"
  ut_research_institute_found_mod_desc: "The foundations for a national research institute are being laid. Scientific networks are emerging, resources are being pooled, and the infrastructure for a future of knowledge is growing."
  ut_je_research_institute_founding_goal: "Wait for the completion of the #BOLD 4-year#! founding phase"
+ ut_research_institute_found_unlock_tt: "Schaltet [ut_research_institute_concept] frei"
 
  ut_research_high_tech_computers: "Research High-Tech Computers"
  ut_research_high_tech_computers_desc: "Our nation is making targeted investments into researching high-performance computers. These machines will form the basis for modern simulations, industrial automation, and military superiority. Whoever masters them first will shape the digital age."
@@ -756,6 +759,9 @@
 
  pm_supermarket: "Supermarket"
  pm_shopping_district: "Shopping District"
+
+ ut_pm_film_industry_art: "Filmindustrie"
+ ut_pm_digital_art: "Filme- & Videospiele"
 
  pm_ut_industry_plastics: "Industrial Plastics"
  pm_ut_telephones: "Digital Telephones"

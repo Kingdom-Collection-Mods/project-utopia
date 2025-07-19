@@ -2,3 +2,4 @@
 ut_nd_fascist_character_concept = {}
 ut_nd_democrat_concept = {}
 ut_nd_communist_character_concept = {}
+ut_research_institute_concept = {}

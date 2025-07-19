@@ -348,6 +348,12 @@ electronics = {
 	texture = "gfx/interface/icons/invention_icons/cuircit_board.dds"
 	category = production
 
+	on_researched = {
+		custom_tooltip = {
+			text = ut_research_institute_found_unlock_tt
+		}
+	}
+
 	unlocking_technologies = {	
 		electric_railway
 		radio
