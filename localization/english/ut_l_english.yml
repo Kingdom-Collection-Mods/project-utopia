@@ -113,7 +113,7 @@
  ut_je_ut_research_high_tech_computers_research_goal: "Wait for the completion of the #BOLD 4-year#! research phase"
 
  je_ut_new_dawn: "New Dawn"
- je_ut_new_dawn_reason: "New Dawn are new event entries centered on a country's core ideology. They are intended to lead to major endgame events that influence radicals and loyalists. Integration with the blocs would also be cool.\nHeavily work in progress"
+ je_ut_new_dawn_reason: "The path to utopia must be paved. Solidify your nation's core ideology. The ideology determines the direction your nation will take.\nChoose between [ut_nd_fascist_core_concept], [ut_nd_autocrat_core_concept], [ut_nd_democrat_core_concept], and [ut_nd_communist_core_concept]."
  je_ut_new_dawn_condition_tt: "Completed Democratic, Autocratic, Communist, or Fascist path."
  je_ut_new_dawn_effect_tt: "Unlocks endgame ideas (tbd)"
  new_dawn_ongoing: "New Dawn"
@@ -132,10 +132,11 @@
  je_ut_new_dawn_critical_lower_bound_fail_tt: "If the threshold of #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v progress points#! is undercut, event chains may undo political progress and eventually trigger a new New Dawn."
 
  ut_new_dawn_communist_focus: "Communist Focus (tbd)"
+ ut_new_dawn_communist_focus_desc: "work in progress"
  ut_new_dawn_communist_bar: "Communist"
  ut_new_dawn_communist_bar_desc: "Communist Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_communist_progress_from_characters: "combined [concept_popularity] of [ut_nd_communist_character_concept]"
- ut_nd_communist_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_grept_clout] with [Conccommunist_character_concept] [concept_leader]"
+ ut_nd_communist_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [ut_nd_communist_character_concept] [concept_leader]"
  ut_nd_communist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_command_economy').GetName], [GetLawType('law_cooperative_ownership').GetName]"
  ut_nd_communist_progress_from_legitimacy: "[concept_legitimacy] of [ut_nd_communist_character_concept] [concept_ruler]"
  ut_nd_communist_progress_from_focus: "Communist Focus"
@@ -146,11 +147,19 @@
 
  je_ut_new_dawn_democrat_focus: "Democratic"
  je_ut_new_dawn_democrat_focus_desc: "Democratic focus selected"
+ je_ut_new_dawn_fascist_focus: "Fascist"
+ je_ut_new_dawn_fascist_focus_desc: "Fascist focus selected"
+ je_ut_new_dawn_autocrat_focus: "Autocratic"
+ je_ut_new_dawn_autocrat_focus_desc: "Autocratic focus selected"
+ je_ut_new_dawn_communist_focus: "Communist"
+ je_ut_new_dawn_communist_focus_desc: "Communist focus selected"
+
  ut_new_dawn_democrat_focus: "Democratic Focus"
+ ut_new_dawn_democrat_focus_desc: ""
  ut_new_dawn_democrat_bar: "Democratic"
  ut_new_dawn_democrat_bar_desc: "Democratic Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_democrat_progress_from_characters: "combined [concept_popularity] of [ut_nd_democrat_characters_concept]"
- ut_nd_democrat_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_grept_clout] with [Concdemocrat_characters_concept] [concept_leader]"
+ ut_nd_democrat_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [ut_nd_democrat_characters_concept] [concept_leader]"
  ut_nd_democrat_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_universal_suffrage').GetName]"
  ut_nd_democrat_progress_from_legitimacy: "[concept_legitimacy] of [ut_nd_democrat_characters_concept] [concept_ruler]"
  ut_nd_democrat_progress_from_events: "Events and Other Effects"
@@ -189,10 +198,12 @@
  je_ut_new_dawn_democratic_fair_elections_mod: "Fair Elections"
 
  ut_new_dawn_autocrat_focus: "Autocratic Focus (tbd)"
+ ut_new_dawn_autocrat_focus_desc: "work in progress"
+
  ut_new_dawn_autocrat_bar: "Autocratic"
  ut_new_dawn_autocrat_bar_desc: "Autocratic Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_autocrat_progress_from_characters: "combined [concept_popularity] of [ut_nd_autocrat_character_concept]"
- ut_nd_autocrat_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_grept_clout] with [Concautocrat_character_concept] [concept_leader]"
+ ut_nd_autocrat_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [ut_nd_autocrat_character_concept] [concept_leader]"
  ut_nd_autocrat_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_monarchy').GetName] und [GetLawType('law_autocracy').GetName]"
  ut_nd_autocrat_progress_from_legitimacy: "[concept_legitimacy] of [ut_nd_autocrat_character_concept] [concept_ruler]"
  ut_nd_autocrat_progress_from_movements: "[concept_political_movement_support] von #bold autokratische#! [Concept('concept_political_movement','$concept_political_movements$')]"
@@ -214,10 +225,11 @@
  ut_nd_path_to_utopia_concept_desc: "Each ideology comes with its own endgame mechanics."
 
  ut_new_dawn_fascist_focus: "Fascist Focus (tbd)"
+ ut_new_dawn_fascist_focus_desc: "work in progress"
  ut_new_dawn_fascist_bar: "Fascist"
  ut_new_dawn_fascist_bar_desc: "Fascist Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_fascist_progress_from_characters: "combined [concept_popularity] of [ut_nd_fascist_character_concept]"
- ut_nd_fascist_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_grept_clout] with [Concfascist_character_concept] [concept_leader]"
+ ut_nd_fascist_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [ut_nd_fascist_character_concept] [concept_leader]"
  ut_nd_fascist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName], [GetLawType('law_national_supremacy').GetName]"
  ut_nd_fascist_progress_from_legitimacy: "[concept_legitimacy] of [ut_nd_fascist_character_concept] [concept_ruler]"
  ut_nd_fascist_progress_from_focus: "Fascist Focus"
@@ -812,6 +824,7 @@
  pm_ut_high_speed_electric_trains: "Intercity"
  pm_ut_high_speed_electric_trains_principle_transport_3: "Intercity"
  pm_computer_bureaucrats: "Digital Administration"
+
  pm_ut_research_department: "Institute for Social Sciences"
 
  pm_automatic_power_looms_2: "Shuttleless Loom"
@@ -843,7 +856,6 @@
  prestige_good_generic_plastic: "PVC"
  prestige_good_generic_software_b2b: "Database Software"
  prestige_good_generic_software_b2c: "Office Software"
-
 
  goods_input_internet_add: "@internet! Internet input"
  goods_input_internet_add_desc: "The amount of @internet! Internet consumed by buildings"
@@ -899,7 +911,6 @@
  ut_software_company_era_8: "Software Solutions Inc."
  ut_synthetics_company: "Synthetics Inc."
  ut_plastic_company: "Plastiform Inc."
-
 
  building_heavy_machinery_factory_throughput_add: "$building_heavy_machinery_factory$ [concept_throughput]"
  building_heavy_machinery_factory_throughput_add_desc: "A bonus or penalty to both input and output of the $building_heavy_machinery_factory$."

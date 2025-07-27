@@ -132,6 +132,7 @@
  je_ut_new_dawn_critical_lower_bound_fail_tt: "Wenn der Grenzwert von #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v Fortschrittspunkten#! unterschritten wird, können Ereignissketten politischen Fortschritt rückgängig machen und schlussendlich einen neuen New Dawn auslösen."
 
  ut_new_dawn_communist_focus: "Kommunistischer Fokus (tbd)"
+ ut_new_dawn_communist_focus_desc: "work in progress"
  ut_new_dawn_communist_bar: "Kommunistisch"
  ut_new_dawn_communist_bar_desc: "Kommunistischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_communist_progress_from_characters: "kombinierte [concept_popularity] von [ut_nd_communist_character_concept]"
@@ -146,7 +147,15 @@
  
  je_ut_new_dawn_democrat_focus: "Demokratisch"
  je_ut_new_dawn_democrat_focus_desc: "Demokratischer Fokus ausgewählt"
+ je_ut_new_dawn_fascist_focus: "Fascist"
+ je_ut_new_dawn_fascist_focus_desc: "Fascist focus selected"
+ je_ut_new_dawn_autocrat_focus: "Autocratic"
+ je_ut_new_dawn_autocrat_focus_desc: "Autocratic focus selected"
+ je_ut_new_dawn_communist_focus: "Communist"
+ je_ut_new_dawn_communist_focus_desc: "Communist focus selected"
+
  ut_new_dawn_democrat_focus: "Demokratischer Fokus"
+ ut_new_dawn_democrat_focus_desc: ""
  ut_new_dawn_democrat_bar: "Demokratisch"
  ut_new_dawn_democrat_bar_desc: "Demokratischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_democrat_progress_from_characters: "kombinierte [concept_popularity] von [ut_nd_democrat_characters_concept]"
@@ -189,6 +198,8 @@
  je_ut_new_dawn_democratic_fair_elections_mod: "Faire Wahlen"
 
  ut_new_dawn_autocrat_focus: "Autokratischer Fokus (tbd)"
+ ut_new_dawn_autocrat_focus_desc: "work in progress"
+
  ut_new_dawn_autocrat_bar: "Autokratisch"
  ut_new_dawn_autocrat_bar_desc: "Autokratischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_autocrat_progress_from_characters: "kombinierte [concept_popularity] von [ut_nd_autocrat_character_concept]"
@@ -214,6 +225,7 @@
  ut_nd_path_to_utopia_concept_desc: "Die Ideologien kommen mit ihren eigenen Endgame Mechaniken."
 
  ut_new_dawn_fascist_focus: "Faschistischer Fokus (tbd)"
+ ut_new_dawn_fascist_focus_desc: "work in progress"
  ut_new_dawn_fascist_bar: "Faschistisch"
  ut_new_dawn_fascist_bar_desc: "Faschistischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_fascist_progress_from_characters: "kombinierte [concept_popularity] von [ut_nd_fascist_character_concept]"
@@ -804,7 +816,6 @@
  ut_pm_film_industry_art: "Filmindustrie"
  ut_pm_digital_art: "Filme- & Videospiele"
  
-
  pm_ut_industry_plastics: "Industrieplastik"
  pm_ut_telephones: "Digitale Telephone"
  pm_ut_radios: "Verbesserter Funkempfänger"
@@ -845,7 +856,6 @@
  prestige_good_generic_plastic: "PVC-Plastik"
  prestige_good_generic_software_b2b: "Datenbank Software"
  prestige_good_generic_software_b2c: "Büro Software"
-
 
  goods_input_internet_add: "@internet! Internet-Eingang"
  goods_input_internet_add_desc: " Die Menge an @internet! Internet, die von Gebäuden verbraucht wird"
@@ -901,7 +911,6 @@
  ut_software_company_era_8: "Software Solutions AG"
  ut_synthetics_company: "Synthetics Ltd."
  ut_plastic_company: "Plastiform GmbH"
-
 
  building_heavy_machinery_factory_throughput_add: "$building_heavy_machinery_factory$-[concept_throughput]"
  building_heavy_machinery_factory_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_heavy_machinery_factory$."
