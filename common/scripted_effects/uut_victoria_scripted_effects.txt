@@ -161,6 +161,15 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 			change_variable = { name = ut_nd_democrat_progress_from_laws add = 1 }
 		}
 	}
+	
+	if = {
+		limit = {
+			has_law = law_type:law_census_voting
+		}
+		ROOT = {
+			change_variable = { name = ut_nd_democrat_progress_from_laws add = 0.5 }
+		}
+	}
 	change_variable = { name = ut_nd_democrat_progress_from_laws divide = 100 }
 	# From Movements
 	# From Legitimacy
@@ -213,17 +222,17 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 		}
 		if = {
 			limit = {
-				is_in_government = yes
+				is_in_government = no
+				is_insurrectionary = no
 			}
 			ROOT = {
-				change_variable = { name = ig_weight multiply = 2 }
+				change_variable = { name = ig_weight multiply = 0.5 }
 			}
 		}
 		ROOT = {
 			change_variable = { name = ut_nd_autocrat_progress_from_igs add = var:ig_weight }
 		}
 	}
-	change_variable = { name = ut_nd_autocrat_progress_from_igs divide = 2 }
 	# From Laws
 	if = {
 		limit = {
@@ -304,6 +313,13 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 			has_law = law_type:law_neo_ethno_state
 		}
 		change_variable = { name = ut_nd_fascist_progress_from_laws add = 1 }
+	}
+	
+	if = {
+		limit = {
+			has_law = law_type:law_national_supremacy
+		}
+		change_variable = { name = ut_nd_fascist_progress_from_laws add = 0.5 }
 	}
 	# From Movements
 	if = {

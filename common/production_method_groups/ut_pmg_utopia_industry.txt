@@ -176,3 +176,11 @@ pmg_synthetic_oil_making_process = {
 		pm_synthetic_oil_two_process
 	}
 }
+
+pmg_base_building_renewable_power_plant = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_synthetic_oil_one_process
+		pm_synthetic_oil_two_process
+	}
+}

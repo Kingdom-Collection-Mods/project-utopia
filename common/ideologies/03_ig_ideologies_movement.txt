@@ -75,7 +75,9 @@ ideology_absolutist_movement = {
 		law_industry_banned = strongly_disapprove
 		law_extraction_economy = strongly_disapprove
 		law_social_market_economy = disapprove 
+		law_state_capitalism_economy = disapprove 
 		law_free_market_economy = disapprove
+		law_corporate_economy = disapprove
 	}
 
 	lawgroup_land_reform = {
@@ -219,7 +221,9 @@ ideology_communist_movement = {
 		law_industry_banned = strongly_disapprove
 		law_extraction_economy = strongly_disapprove
 		law_social_market_economy = neutral
+		law_state_capitalism_economy = disapprove
 		law_free_market_economy = strongly_disapprove
+		law_corporate_economy = strongly_disapprove
 	}
 	
 	lawgroup_church_and_state = {
@@ -273,7 +277,9 @@ ideology_anarchist_movement = {
 		law_industry_banned = disapprove
 		law_extraction_economy = strongly_disapprove
 		law_free_market_economy = strongly_disapprove
+		law_corporate_economy = strongly_disapprove
 		law_social_market_economy = neutral
+		law_state_capitalism_economy = neutral
 	}
 
 	lawgroup_army_model = {

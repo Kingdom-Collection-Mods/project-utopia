@@ -393,11 +393,18 @@ ut_modern_ideological_union_1 = {
 	visible = {
 		has_dlc_feature = power_bloc_features
 	}
+	
+	possible = {
+		has_technology_researched = union_new_mandates
+	}
 
 	member_modifier = {
 		political_movement_radicalism_from_enactment_disapproval_mult = -0.25
 		political_movement_radicalism_from_enactment_approval_mult = 0.25
-		power_bloc_customs_union_bool = yes
+		power_bloc_trade_advantage_add = 100
+		power_bloc_disallow_embargo_bool = yes
+		
+		country_leader_has_law_enactment_success_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -417,11 +424,18 @@ ut_modern_ideological_union_1 = {
 ut_modern_ideological_union_2 = {
 	icon = "gfx/interface/icons/principles_icons/creative_legislature.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+	
+	possible = {
+		has_technology_researched = union_new_mandates
+	}
 
 	member_modifier = {
 		political_movement_radicalism_from_enactment_disapproval_mult = -0.25
 		political_movement_radicalism_from_enactment_approval_mult = 0.25
-		power_bloc_customs_union_bool = yes
+		power_bloc_trade_advantage_add = 150
+		power_bloc_disallow_embargo_bool = yes
+
+		country_leader_has_law_enactment_success_mult = 0.15
 	}
 	
 	ai_weight = {
@@ -433,10 +447,22 @@ ut_modern_ideological_union_3 = {
 	icon = "gfx/interface/icons/principles_icons/creative_legislature.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
 	
+	possible = {
+		has_technology_researched = union_new_mandates
+	}
+
+	leader_modifier = {
+		country_legitimacy_min_add = 15
+	}
+	
 	member_modifier = {
 		political_movement_radicalism_from_enactment_disapproval_mult = -0.25
 		political_movement_radicalism_from_enactment_approval_mult = 0.25
+		power_bloc_trade_advantage_add = 200
 		power_bloc_customs_union_bool = yes
+
+		country_leader_has_law_enactment_success_mult = 0.2
+		country_legitimacy_min_add = 10
 	}
 
 	ai_weight = {

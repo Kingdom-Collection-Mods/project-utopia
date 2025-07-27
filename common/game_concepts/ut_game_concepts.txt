@@ -1,5 +1,13 @@
 ﻿ut_nd_autocrat_character_concept = {}
 ut_nd_fascist_character_concept = {}
-ut_nd_democrat_concept = {}
+ut_nd_democrat_characters_concept = {}
 ut_nd_communist_character_concept = {}
+
+ut_nd_autocrat_core_concept = {}
+ut_nd_democrat_core_concept = {}
+ut_nd_fascist_core_concept = {}
+ut_nd_communist_core_concept = {}
+
+ut_nd_path_to_utopia_concept = {}
+
 ut_research_institute_concept = {}

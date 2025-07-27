@@ -536,8 +536,7 @@ pm_heavy_machinery_engines = {
 			# input goods
 			goods_input_heavy_machinery_add = 5
 			goods_input_steel_add = 50
-			goods_input_oil_add = 45
-			goods_input_electricity_add = 10
+			goods_input_oil_add = 50
 			
 			# output goods
 			goods_output_engines_add = 140

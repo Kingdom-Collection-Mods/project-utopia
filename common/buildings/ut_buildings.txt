@@ -390,3 +390,92 @@ building_synthetics_plants = {
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
 }
+
+
+building_ut_research_institute = {
+
+	building_group = bg_technology
+
+	city_type = city
+
+	levels_per_mesh = 5
+	
+	expandable = no
+
+	downsizeable = no
+
+	unlocking_technologies = {
+		nuclear_power_research
+	}
+
+	production_method_groups = {
+		pmg_base_building_university
+	}
+
+	icon = "gfx/interface/icons/building_icons/building_university.dds"
+
+	required_construction = construction_cost_monument
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+
+	can_build_government = {
+		custom_tooltip = {
+			text = skyscraper_can_construct_tt
+			has_modifier = skyscraper_site
+		}
+	}
+	can_build_private = {
+		always = no
+	}
+
+	ai_value = {
+		value = 5000
+	}
+}
+
+
+building_renewable_power_plant = {
+	building_group = bg_power
+	icon = "gfx/interface/icons/building_icons/power_plant.dds"
+	levels_per_mesh = 5
+
+	city_type = city
+
+	unlocking_technologies = {
+		heavy_machinery_era_digital
+	}
+
+	production_method_groups = {
+		pmg_base_building_power_plant
+	}
+
+	required_construction = construction_cost_medium
+
+	ai_value = {
+		value = 1000
+
+		# Need 1 level of Power Plants everywhere as its a local good and a prerequisite to enabling electricity PMs to begin with
+		if = {
+			limit = {
+				NOR = {
+					has_building = building_power_plant
+					any_scope_building = {
+						is_building_type = building_power_plant
+						is_under_construction = yes
+					}
+				}
+			}
+			add = 4000
+		}
+	}
+
+	possible = {
+		owner = {
+			NOT = { has_law = law_type:law_industry_banned }
+		}
+	}
+
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}

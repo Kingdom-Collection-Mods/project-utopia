@@ -2044,7 +2044,9 @@ ideology_communist = {
 		law_industry_banned = strongly_disapprove
 		law_extraction_economy = strongly_disapprove
 		law_social_market_economy = neutral
+		law_state_capitalism_economy = neutral
 		law_free_market_economy = strongly_disapprove
+		law_corporate_economy = strongly_disapprove
 	}
 	
 	lawgroup_church_and_state = {
@@ -2222,8 +2224,10 @@ ideology_vanguardist = {
 		law_laissez_faire = strongly_disapprove
 		law_industry_banned = strongly_disapprove
 		law_extraction_economy = strongly_disapprove
-		law_social_market_economy = approve
+		law_social_market_economy = neutral
+		law_state_capitalism_economy = neutral
 		law_free_market_economy = strongly_disapprove
+		law_corporate_economy = strongly_disapprove
 	}
 	
 	lawgroup_trade_policy = {		
@@ -2711,7 +2715,9 @@ ideology_anarchist = {
 		law_industry_banned = disapprove
 		law_extraction_economy = strongly_disapprove
 		law_free_market_economy = strongly_disapprove
+		law_corporate_economy = strongly_disapprove
 		law_social_market_economy = neutral
+		law_state_capitalism_economy = disapprove
 	}
 
 	lawgroup_army_model = {
@@ -3166,7 +3172,9 @@ ideology_market_liberal = {
 		law_industry_banned = strongly_disapprove
 		law_extraction_economy = strongly_disapprove
 		law_free_market_economy = strongly_approve
+		law_corporate_economy = neutral
 		law_social_market_economy = disapprove
+		law_state_capitalism_economy = disapprove
 	}
 	
 	lawgroup_childrens_rights = {
@@ -3422,7 +3430,9 @@ ideology_luddite = {
 		law_command_economy = strongly_disapprove
 		law_extraction_economy = disapprove
 		law_social_market_economy = neutral 
+		law_state_capitalism_economy = neutral 
 		law_free_market_economy = strongly_disapprove
+		law_corporate_economy = strongly_disapprove
 	}
 	
 	lawgroup_trade_policy = {
@@ -3705,7 +3715,9 @@ ideology_protectionist = {
 		law_industry_banned = strongly_disapprove
 		law_extraction_economy = strongly_disapprove
 		law_social_market_economy = approve
+		law_state_capitalism_economy = strongly_approve
 		law_free_market_economy = strongly_disapprove
+		law_corporate_economy = strongly_disapprove
 	}
 	
 	lawgroup_trade_policy = {
@@ -5756,7 +5768,9 @@ ideology_utopian = {
 		law_industry_banned = neutral
 		law_extraction_economy = strongly_disapprove
 		law_social_market_economy =  approve
+		law_state_capitalism_economy =  approve
 		law_free_market_economy = disapprove
+		law_corporate_economy = strongly_disapprove
 	}
 
 	lawgroup_land_reform = {
@@ -5910,7 +5924,9 @@ ideology_modernizer_leader = {
 		law_laissez_faire = neutral
 		law_industry_banned = strongly_disapprove
 		law_free_market_economy = neutral
+		law_corporate_economy = neutral
 		law_social_market_economy = approve
+		law_state_capitalism_economy = approve
 	}
 
 	lawgroup_taxation = {

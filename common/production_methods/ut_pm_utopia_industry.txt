@@ -1147,10 +1147,10 @@ pm_heavy_machinery_coal_fired_plant = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 14
-			goods_input_heavy_machinery_add = 6
-			goods_input_coal_add = 30
-			goods_output_electricity_add = 130
+			goods_input_engines_add = 12
+			goods_input_heavy_machinery_add = 4
+			goods_input_coal_add = 25
+			goods_output_electricity_add = 90
 		}
 
 		level_scaled = {
@@ -1177,10 +1177,10 @@ pm_heavy_machinery_oil_fired_plant = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 14
-			goods_input_heavy_machinery_add = 6
-			goods_input_oil_add = 30
-			goods_output_electricity_add = 140
+			goods_input_engines_add = 12
+			goods_input_heavy_machinery_add = 4
+			goods_input_oil_add = 25
+			goods_output_electricity_add = 100
 		}
 
 		level_scaled = {
