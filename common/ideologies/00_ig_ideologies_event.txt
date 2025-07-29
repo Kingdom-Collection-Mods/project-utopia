@@ -54,7 +54,7 @@ ideology_modernizer = {
 		law_restricted_child_labor = neutral
 		law_compulsory_primary_school = approve
 		law_compulsory_secondary_school = approve
-		law_compulsory_tertiary_school = approve
+		law_compulsory_tertiary_school = neutral
 	}
 
 	lawgroup_economic_system = {
