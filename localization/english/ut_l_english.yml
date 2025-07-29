@@ -89,8 +89,8 @@
  je_urbanist_ig: "Urbanist Movement"
  je_urbanist_ig_reason: "The urbanist movement is more than architecture – it is a vision of how we live together. In growing cities, not just buildings are created, but societies. Urban planners, social reformers, and visionaries dream of urban spaces that not only function, but inspire: with parks, light, transit, and public life. The city is not only built – it is shaped, as a stage for a better future."
 
- ut_research_institute_concept: "Forschungsinstitut"
- ut_research_institute_concept_desc: "Im Forschungsinstitut können große Forschungsprojekte freigeschaltet werden. \n Era 6: Nuklear Energie & Nuklear Waffen \n Era 7: High-End Computer (~10µm)\nEra 8: Generative KI.\nNoch in Arbeit."
+ ut_research_institute_concept: "Research Institute"
+ ut_research_institute_concept_desc: "In the research institute, large research projects can be unlocked. \n Era 6: Nuclear Energy & Nuclear Weapons \n Era 7: High-End Computers (~10µm)\nEra 8: Generative AI.\nStill in progress."
  ut_research_institute_found: "Research High-Tech Computers"
  ut_research_institute_found_desc: "A national research institute is to be established to consolidate scientific excellence, promote fundamental research, and structurally accelerate technological progress. The construction of this institution marks a milestone on the path to a knowledge-based society."
  ut_je_research_institute_founding: "Founding a Research Institute"
@@ -100,7 +100,7 @@
  ut_research_institute_found_mod: "Building a Research Institute"
  ut_research_institute_found_mod_desc: "The foundations for a national research institute are being laid. Scientific networks are emerging, resources are being pooled, and the infrastructure for a future of knowledge is growing."
  ut_je_research_institute_founding_goal: "Wait for the completion of the #BOLD 4-year#! founding phase"
- ut_research_institute_found_unlock_tt: "Schaltet [ut_research_institute_concept] frei"
+ ut_research_institute_found_unlock_tt: "Unlocks [ut_research_institute_concept]"
 
  ut_research_high_tech_computers: "Research High-Tech Computers"
  ut_research_high_tech_computers_desc: "Our nation is making targeted investments into researching high-performance computers. These machines will form the basis for modern simulations, industrial automation, and military superiority. Whoever masters them first will shape the digital age."
@@ -166,7 +166,7 @@
  ut_nd_democrat_progress_from_focus: "Democratic Focus"
  ut_nd_democrat_interest_group_concept_tt: "IG has leader with [ut_nd_democrat_characters_concept] ideology"
  ut_nd_democrat_characters_concept: "Democratic Characters"
- ut_nd_democrat_characters_concept_desc: "Demokratische [concept_character] [Concept('concept_ideology', '$concept_ideologies$')] sind: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName] und [GetIdeology('ideology_utopian').GetName]\nWenn Demokratischer Focus gesetzt ist ebenfalls: [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_pacifist').GetName] und [GetIdeology('ideology_radical').GetName]"
+ ut_nd_democrat_characters_concept_desc: "Democratic character ideologies are: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName] and [GetIdeology('ideology_utopian').GetName]\nWenn Demokratischer Focus gesetzt ist ebenfalls: [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_pacifist').GetName] und [GetIdeology('ideology_radical').GetName]"
  ut_new_dawn_democrat_status: "Democratic Ideas Shape the Discourse"
  ut_new_dawn_democrat_status_je: "Democratic Ideas Are Taking Root"
 
@@ -268,11 +268,12 @@
  ig_urbanists_only_icon: "@urbanists!"
  ig_variant_urbanists: "[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant]"
  interest_group_ig_urbanists_pol_str_mult: "$ig_variant_urbanists$ [concept_political_strength]"
- interest_group_ig_urbanists_pol_str_mult_desc: "Ein Bonus oder Abzug auf die [concept_political_strength] der [concept_interest_group] „$ig_variant_urbanists$“ insgesamt."
+ interest_group_ig_urbanists_pol_str_mult_desc: "An increase or decrease in the [concept_political_strength] of the [concept_interest_group] \"[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant]\"."
  interest_group_ig_urbanists_approval_add: "[concept_approval] ($ig_variant_urbanists$)"
- interest_group_ig_urbanists_approval_add_desc: "Ein Bonus oder Abzug auf die [concept_approval] der [concept_interest_group] „$ig_variant_urbanists$“ insgesamt."
- interest_group_ig_urbanists_pop_attraction_mult: "Pop-Anziehung ($ig_variant_urbanists$)"
- interest_group_ig_urbanists_pop_attraction_mult_desc: "Ein Bonus oder Abzug darauf, wie sehr Pops von der [concept_interest_group] „$ig_variant_urbanists$“ angezogen werden."
+ interest_group_ig_urbanists_approval_add_desc: "An increase or decrease in the [concept_approval] of the [concept_interest_group] \"[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant]\"."
+ 
+ interest_group_ig_urbanists_pop_attraction_mult: "$ig_variant_urbanists$ Pop Attraction Multiplier"
+ interest_group_ig_urbanists_pop_attraction_mult_desc: "A bonus or deduction on how much Pops are attracted to the [concept_interest_group] \"[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant]\"."
 
  ideology_urbanist_liberalist: "Urban-Liberal Ideology"
  ideology_urbanist_power_base: "Cosmopolitan"
@@ -296,11 +297,11 @@
  ideology_jingoist_democratic: "Security-Oriented"
  ideology_socialist_democratic: "Social Democratic"
 
- ig_trait_urbanist_loyal: "Leistungsgesellschaft"
+ ig_trait_urbanist_loyal: "Prestige Society"
  ig_trait_urbanist_loyal_desc: "This group advocates for the free movement of people across borders, believing it fosters cultural exchange and economic opportunity. They oppose restrictive immigration policies and emphasize international cooperation."
- ig_trait_urbanist_happy: "Bildungszugang"
+ ig_trait_urbanist_happy: "Access to Education"
  ig_trait_urbanist_happy_desc: "This group champions a society driven by research, innovation, and measurable performance. They believe continuous improvement and scientific progress are key to national success."
- ig_trait_urbanist_unhappy: "Diskriminierung"
+ ig_trait_urbanist_unhappy: "Discrimination"
  ig_trait_urbanist_unhappy_desc: ""
 
  ut_movement_cosmopolitan_name: "Cosmopolitan Movement"
@@ -314,10 +315,10 @@
  law_social_market_economy_desc: "A regulated market economy that combines free competition with social security to promote prosperity and social balance."
  law_free_market_economy: "Free Market Economy"
  law_free_market_economy_desc: "An unleashed capitalism where prices and production are determined solely by supply and demand with minimal government regulation."
- law_state_capitalism_economy: "Staatskapitalismus"
- law_state_capitalism_economy_desc: "Ein Wirtschaftssystem, in dem der Staat die Kontrolle über Schlüsselindustrien und Ressourcen ausübt, um nationale Interessen zu fördern und wirtschaftliche Stabilität zu gewährleisten."
- law_corporate_economy: "Korporatismus"
- law_corporate_economy_desc: "Ein System, in dem Unternehmen und Staat eng zusammenarbeiten, um wirtschaftliche Interessen zu fördern und soziale Stabilität zu gewährleisten."
+ law_state_capitalism_economy: "State Capitalism"
+ law_state_capitalism_economy_desc: "A system where the state controls key industries and resources to promote national interests and ensure economic stability."
+ law_corporate_economy: "Corporate Economy"
+ law_corporate_economy_desc: "A system where corporations and the state work closely together to promote economic interests and ensure social stability."
 
  law_free_trade_union: "Free Trade Network"
  law_free_trade_union_desc: "A confederation of states that eliminates internal trade barriers and pursues a common tariff policy to promote economic interests."
@@ -382,7 +383,7 @@
  principle_group_modern_sovereign_empire: "Modern Sovereign State"
  principle_group_modern_military_treaty_organization: "Modern Military Treaty Organization"
  principle_group_modern_ideological_union: "Modern Ideological Union"
- ut_principle_group_advanced_research: "Fortgeschrittene Forschung"
+ ut_principle_group_advanced_research: "Advanced Research"
 
  ut_has_truce_with_target: "Has truce with [ROOT.GetCountry.GetName]"
  ut_has_no_truce_with_target: "No truce with [ROOT.GetCountry.GetName]"
@@ -434,7 +435,7 @@
  aluminum_base_desc: "Hall-Héroult furnaces devour megawatts for blazing electrolysis. The lightweight metal crowns emperors like airships—but its energy hunger darkens entire regions."
  heavy_machinery_era_analog: "Mechanical Machinery"
  heavy_machinery_era_analog_desc: "Steam-driven rollers pave roads as overhead shafts fill factories. An age of grease and levers—brutally effective, always on the edge of breakdown."
- heavy_machinery_era_analog_two: "Montagebänder"
+ heavy_machinery_era_analog_two: "Complex Assembly Lines"
  heavy_machinery_era_analog_two_desc: "Steam-driven rollers pave roads as overhead shafts fill factories. An age of grease and levers—brutally effective, always on the edge of breakdown."
  heavy_machinery_era_digital: "CNC Machines"
  heavy_machinery_era_digital_desc: "Servo motors mill to micrometer precision from CAD files. Digital accuracy births both rocket nozzles and iPhone shells in the same factories."
@@ -494,7 +495,7 @@
  plastics_nylon_desc: "Parachute threads once saved soldiers, later caressed legs. The first fully synthetic polymer became a symbol of war and women's liberation."
  plastics_polyester: "Polyester"
  plastics_polyester_desc: "PET bottles replace glass, fleece jackets warm mountaineers. A material that democratized fashion—and flooded oceans with microfibers."
- plastics_polypropylene: "Polypropylen"
+ plastics_polypropylene: "Polypropylene"
  plastics_polypropylene_desc: "..."
  oil_synthetic_one: "Bio-Ethanol"
  oil_synthetic_one_desc: "Corn cobs ferment into fuel for gas stations. Green gasoline fights oil dependency—but monocultures pit biofuels against food crops."
@@ -502,8 +503,8 @@
  oil_synthetic_two_desc: "Algae cultures produce sulfur-free fuel. The circular economy dreams of CO₂-neutral truck fleets—if only the energy balance adds up."
 
 # Tech Mil
- industry_harbor: "Industrie-Hafen"
- industry_harbor_desc: "Industrie-Hafen..."
+ industry_harbor: "Industrial Harbor"
+ industry_harbor_desc: "Industrial Harbor..."
  heavy_industry_harbor: "Industrial Harbor"
  heavy_industry_harbor_desc: "Gigantic cranes load steel and coal directly from freight trains onto barges. These harbor colossi, with their smoking stacks and rusty loading bridges, become the heartbeat of heavy industry, where freighters ship raw iron for global production by the hour."
  ultra_heavy_industry_harbor: "Container Harbor"
@@ -719,8 +720,8 @@
  pm_heavy_machinery_electronics_process: "Electric Machines"
  pm_heavy_machinery_digital_process: "Digitized Machines"
 
- pm_heavy_machinery_coal_fired_plant: "Groß-Kohlekraftwerk"
- pm_heavy_machinery_oil_fired_plant: "Groß-Ölkraftwerk"
+ pm_heavy_machinery_coal_fired_plant: "Heavy Coal Power Plant"
+ pm_heavy_machinery_oil_fired_plant: "Heavy Oil Power Plant"
 
  pm_electronics_circuits_process: "Electronic Circuits"
  pm_electronics_transistors_process: "Transistors"
@@ -737,7 +738,7 @@
  pm_bauxite_automated_heavy_machinery_mine: "Automated Machinery"
  pm_aluminum_one_process: "Aluminum Oxidation"
  pm_rare_earths_one_mine: "Basic Rare Earth Mine"
- pm_rare_earths_two_mine: "Erweiterte Seltene Erden-Mine"
+ pm_rare_earths_two_mine: "Advanced Rare Earth Mine"
 
  pmg_consumer_goods_making_process: "Basic"
  pm_consumer_goods_analog_process: "Simple Production"
@@ -778,7 +779,7 @@
 
  pm_heavy_machinery_textile: "Textile Machines"
  pm_plastics_textile: "Plastic Textile Machines"
- pm_aluminum_two_process: "Hall-Héroult-Verfahren"
+ pm_aluminum_two_process: "Hall-Héroult Process"
  pm_aluminum_three_process: "Smelting Recycling"
  pm_aluminum_packaging: "Aluminum Packaging"
  pm_plastic_packaging: "Plastic Packaging"
@@ -792,7 +793,7 @@
 
  pm_ut_industrial_port: "Industrial Harbor"
 
- pm_ut_precision_tools: "Präzisionswerkzeuge" 
+ pm_ut_precision_tools: "Precision Tools" 
 
  pm_complex_consumer_goods_none: "No Complex Consumer Goods"
  pm_complex_consumer_goods_electrical_process: "Televisions"
@@ -813,8 +814,8 @@
  pm_supermarket: "Supermarket"
  pm_shopping_district: "Shopping District"
 
- ut_pm_film_industry_art: "Filmindustrie"
- ut_pm_digital_art: "Filme- & Videospiele"
+ ut_pm_film_industry_art: "Movie Industry"
+ ut_pm_digital_art: "Movie & Video Game Industry"
 
  pm_ut_industry_plastics: "Industrial Plastics"
  pm_ut_telephones: "Digital Telephones"
@@ -960,9 +961,9 @@
  early_civil_aviation_modifier_others: "Early Civil Aviation"
  modern_civil_aviation_modifier_others: "Modern Civil Aviation"
 
- event_journal_ai: "Fortschrittsverbreitung"
- utopia_event_journal_ai_buff: "Welle des technlogischen Fortschritts"
- utopia_event_journal_ai_buff_tooltip: "KI Länder erhalten einen signifikanten Bonus auf Innovationsverteilung."
+ event_journal_ai: "Technological Progress"
+ utopia_event_journal_ai_buff: "Wave of Innovation"
+ utopia_event_journal_ai_buff_tooltip: "AI countries receive a significant bonus to innovation spread."
 
  ut_tech_preview_cheat: "Project Utopia: Technology Cheat"
  ut_tech_preview_cheat_desc: "As part of the technical preview you can cheat to get a ton of innovation."
@@ -971,3 +972,8 @@
  utopia_mod.2.f: "What is progress, if not the mastery of time itself? While others debate ethics and equality, we have pierced the veil of possibility. With this unprecedented surge in innovation, we leapfrog generations of slow, bureaucratic development. Let history judge us — or let there be no history, only the brilliance of tomorrow, written in circuits and steel, not ink and parchment. Utopia is not given. It is taken."
  ut_tech_preview_cheat_disable_tt: "Deactivates the cheat permanently"
  ut_tech_preview_cheat_modifier: "Forbidden Technologies"
+
+ TAX_INCOME_TREATY: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TREATY_INCOME_BREAKDOWN,TreatyIncomeTooltip @money![GetPlayer.PredictTreatyIncome|D+=]#!#! [concept_budget_treaties]"
+ TREATY_INCOME_BREAKDOWN: "#tooltip_header Treaties#!\nTotal: #v @money![GetPlayer.PredictTreatyIncome|K+]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictTreatyIncomeDesc]"
+ EXPENSES_TREATIES: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TREATY_EXPENSES_BREAKDOWN,TreatyExpenseTooltip @money![GetPlayer.PredictTreatyExpenses|D-]#!#! [concept_budget_treaties]"
+ TREATY_EXPENSES_BREAKDOWN: "#tooltip_header Treaties#!\nTotal: #v #N @money!-[GetPlayer.PredictTreatyExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictTreatyExpensesDesc]"

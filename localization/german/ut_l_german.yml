@@ -985,4 +985,6 @@
  demand_war_reps: "Forderung: Kriegsreparationen"
 
  TAX_INCOME_TREATY: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TREATY_INCOME_BREAKDOWN,TreatyIncomeTooltip @money![GetPlayer.PredictTreatyIncome|D+=]#!#! [concept_budget_treaties]"
+ TREATY_INCOME_BREAKDOWN: "#tooltip_header Treaties#!\nTotal: #v @money![GetPlayer.PredictTreatyIncome|K+]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictTreatyIncomeDesc]"
+ EXPENSES_TREATIES: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TREATY_EXPENSES_BREAKDOWN,TreatyExpenseTooltip @money![GetPlayer.PredictTreatyExpenses|D-]#!#! [concept_budget_treaties]"
  TREATY_EXPENSES_BREAKDOWN: "#tooltip_header Treaties#!\nTotal: #v #N @money!-[GetPlayer.PredictTreatyExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictTreatyExpensesDesc]"
