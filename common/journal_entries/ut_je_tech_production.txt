@@ -388,6 +388,7 @@ ut_consumer_goods_complex_je = {
 	timeout = 3650
 }
 
+
 ut_je_research_institute_founding = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
@@ -407,9 +408,19 @@ ut_je_research_institute_founding = {
 		any_scope_state = {
 			is_split_state = no
 			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_computer_factory
-				level >= 2
+			OR = {
+				any_scope_building = {
+					is_building_type = building_heavy_machinery_factory
+					level >= 10
+				}
+				any_scope_building = {
+					is_building_type = building_electronic_factory
+					level >= 5
+				}
+				any_scope_building = {
+					is_building_type = building_computer_factory
+					level >= 1
+				}
 			}
 		}
 	}
@@ -453,6 +464,43 @@ ut_je_research_institute_founding = {
 	should_be_pinned_by_default = yes
 }
 
+ut_je_research_institute_construction = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_technology
+
+	complete = {
+		scope:target = {
+			any_scope_building = {
+				is_building_type = building_ut_research_institute
+				is_under_construction = no
+				occupancy > 0.75
+			}
+		}
+	}
+
+	fail = {
+		NOT = {
+			any_scope_state = {
+				has_modifier = ut_research_institute_site_mod
+			}
+		}
+	}
+
+	on_fail = {
+		remove_variable = ut_research_institute_found_var
+	}
+
+	on_complete = {
+		remove_variable = ut_research_institute_found_var
+		scope:target = {
+			remove_modifier = ut_research_institute_site_mod
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}
+
 ut_je_ut_research_high_tech_computers_research = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
@@ -460,9 +508,17 @@ ut_je_ut_research_high_tech_computers_research = {
 
 	on_monthly_pulse = {
 		effect = {
-			change_variable = {
-				name = ut_research_high_tech_computers_var
-				add = 1
+			every_scope_building = {
+				limit = {
+					is_building_type = building_heavy_machinery_factory
+				}
+				ROOT = {
+					change_variable = { name = ut_nd_autocrat_progress_from_characters add = prev.popularity }
+					change_variable = {
+						name = ut_research_high_tech_computers_var
+						add = prev.occupancy
+					}
+				}
 			}
 		}
 	}

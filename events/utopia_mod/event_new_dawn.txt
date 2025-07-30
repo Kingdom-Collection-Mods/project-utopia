@@ -220,7 +220,7 @@ event_new_dawn.3 = {
 	desc = {
 		first_valid = {
 			triggered_desc = {
-				desc = event_new_dawn.3.d_1
+				desc = event_new_dawn.3.d.f
 				trigger = {
 					je:je_ut_new_dawn = { 
 						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -230,7 +230,7 @@ event_new_dawn.3 = {
 				}
 			}
 			triggered_desc = {
-				desc = event_new_dawn.3.d_2
+				desc = event_new_dawn.3.d.d
 				trigger = {
 					je:je_ut_new_dawn = { 
 						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
@@ -240,7 +240,7 @@ event_new_dawn.3 = {
 				}
 			}
 			triggered_desc = {
-				desc = event_new_dawn.3.d_3
+				desc = event_new_dawn.3.d.c
 				trigger = {
 					je:je_ut_new_dawn = { 
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -251,7 +251,7 @@ event_new_dawn.3 = {
 			}
 			
 			triggered_desc = {
-				desc = event_new_dawn.3.d_4
+				desc = event_new_dawn.3.d.a
 				trigger = {
 					je:je_ut_new_dawn = { 
 						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -265,7 +265,7 @@ event_new_dawn.3 = {
 	flavor = {
 		first_valid = {
 			triggered_desc = {
-				desc = event_new_dawn.3.f_1
+				desc = event_new_dawn.3.f.f
 				trigger = {
 					je:je_ut_new_dawn = { 
 						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -310,9 +310,9 @@ event_new_dawn.3 = {
 	duration = 3
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	gui_window = event_window_1char_tabloid
-
-	left_icon = scope:french_monarch_scope
+	#gui_window = event_window_1char_tabloid
+	
+	#left_icon = scope:french_monarch_scope
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -329,7 +329,7 @@ event_new_dawn.3 = {
 		
 	}
 	option = {
-		name = event_new_dawn.3.a # Long live the Orleanists!
+		name = event_new_dawn.3.a # Take over by non focused ideology
 		default_option = yes
 		if = {
 			limit = {
@@ -346,7 +346,7 @@ event_new_dawn.3 = {
 				name = ut_new_dawn_core_fascist_var
 			}
 			custom_tooltip = {
-				text = event_new_dawn.uprising.setback_fascist
+				text = event_new_dawn.uprising.fascist_win
 			}
 		}
 		else_if = {
@@ -362,6 +362,9 @@ event_new_dawn.3 = {
 			remove_variable = ut_new_dawn_core_autocrat_var
 			set_variable = {
 				name = ut_new_dawn_core_communist_var
+			}
+			custom_tooltip = {
+				text = event_new_dawn.uprising.communist_win
 			}
 		}
 		else_if = {
@@ -379,6 +382,9 @@ event_new_dawn.3 = {
 				name = ut_new_dawn_core_democrat_var
 			}
 			
+			custom_tooltip = {
+				text = event_new_dawn.uprising.democrats
+			}
 			add_journal_entry = {
 				type = je_ut_new_dawn_democratic
 			}
@@ -400,7 +406,7 @@ event_new_dawn.3 = {
 		}
 	}
 	option = {
-		name = event_new_dawn.3.b # suppress!
+		name = event_new_dawn.3.b # Suppress
 		trigger = {
 			NOT = { has_variable = ut_new_dawn_core_suppressed_winner_1_var }
 		}

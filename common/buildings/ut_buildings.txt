@@ -404,10 +404,6 @@ building_ut_research_institute = {
 
 	downsizeable = no
 
-	unlocking_technologies = {
-		nuclear_power_research
-	}
-
 	production_method_groups = {
 		pmg_base_building_university
 	}
@@ -420,8 +416,8 @@ building_ut_research_institute = {
 
 	can_build_government = {
 		custom_tooltip = {
-			text = skyscraper_can_construct_tt
-			has_modifier = skyscraper_site
+			text = ut_research_institute_can_construct_tt
+			has_modifier = ut_research_institute_site_mod
 		}
 	}
 	can_build_private = {

@@ -35,10 +35,7 @@ ut_research_institute_found = {
 		any_scope_state = {
 			is_incorporated = yes
 			is_split_state = no
-			any_scope_building = {
-				is_building_type = building_computer_factory
-				level >= 1
-			}
+			ut_research_institute_site_building_trigger = yes
 		}
 		OR = {
 			has_global_highest_innovation = yes

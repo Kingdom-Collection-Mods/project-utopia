@@ -90,17 +90,20 @@
  je_urbanist_ig_reason: "The urbanist movement is more than architecture – it is a vision of how we live together. In growing cities, not just buildings are created, but societies. Urban planners, social reformers, and visionaries dream of urban spaces that not only function, but inspire: with parks, light, transit, and public life. The city is not only built – it is shaped, as a stage for a better future."
 
  ut_research_institute_concept: "Research Institute"
- ut_research_institute_concept_desc: "In the research institute, large research projects can be unlocked. \n Era 6: Nuclear Energy & Nuclear Weapons \n Era 7: High-End Computers (~10µm)\nEra 8: Generative AI.\nStill in progress."
+ ut_research_institute_concept_desc: "In the research institute, large research projects can be unlocked. \n Era 6: Nuclear Energy & Nuclear Weapons \n Era 6: Nuclear Power \n Era 7: High-End Computers (~10µm)\nEra 8: Generative AI.\nStill in progress."
  ut_research_institute_found: "Found Research Institute"
- ut_research_institute_found_desc: "A national research institute is to be established to consolidate scientific excellence, promote fundamental research, and structurally accelerate technological progress. The construction of this institution marks a milestone on the path to a knowledge-based society."
+ ut_research_institute_found_desc: "A national [ut_research_institute_concept] is to be established to consolidate scientific excellence, promote fundamental research, and structurally accelerate technological progress. The construction of this institution marks a milestone on the path to a knowledge-based society."
  ut_je_research_institute_founding: "Founding a Research Institute"
  ut_je_research_institute_founding_reason: "Our nation prepares to institutionalize innovation by establishing a dedicated research institute. In an age where ideas fuel power, the foundation of such an institute marks a monumental step forward. Here, minds will be sharpened, knowledge systematized, and breakthroughs born not of accident, but design.\nThis institute will become a beacon - attracting scientists, thinkers, and technocrats from every corner of society. A crucible of curiosity, where the impossible is not denied, but studied."
  ut_je_research_institute_founding.success.d: "The research institute is operational. It provides a structured space for innovation, accelerating technological advancement and cultivating national prestige."
  ut_je_research_institute_founding.success.f: "Where once lone inventors labored in dusty basements, now entire faculties work in unison. Chalkboards filled with equations, labs humming with energy - this is no longer mere experimentation. It is organized brilliance."
- ut_research_institute_found_mod: "Building a Research Institute"
+ ut_research_institute_found_mod: "Research Institute Initiative"
  ut_research_institute_found_mod_desc: "The foundations for a national research institute are being laid. Scientific networks are emerging, resources are being pooled, and the infrastructure for a future of knowledge is growing."
  ut_je_research_institute_founding_goal: "Wait for the completion of the #BOLD 4-year#! founding phase"
  ut_research_institute_found_unlock_tt: "Unlocks [ut_research_institute_concept]"
+
+ ut_je_research_institute_construction: "Construct Research Institute"
+ ut_je_research_institute_construction_reason: ""
 
  ut_research_high_tech_computers: "Research High-Tech Computers"
  ut_research_high_tech_computers_desc: "Our nation is making targeted investments into researching high-performance computers. These machines will form the basis for modern simulations, industrial automation, and military superiority. Whoever masters them first will shape the digital age."
@@ -110,7 +113,7 @@
  ut_je_ut_research_high_tech_computers_research.success.f: "Liquid-cooled processors, quantum fluctuations, neural networks—the age of raw logic yields to the elegance of synthetic thinking. Our machines no longer calculate—they model reality."
  ut_research_high_tech_computers_mod: "High-Tech Computer Research"
  ut_research_high_tech_computers_mod_desc: "National research is focused on developing cutting-edge computing technologies. Prototypes are being built, labs are expanding, and the line between computational power and vision begins to blur."
- ut_je_ut_research_high_tech_computers_research_goal: "Wait for the completion of the #BOLD 4-year#! research phase"
+ ut_je_ut_research_high_tech_computers_research_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy)"
 
  je_ut_new_dawn: "New Dawn"
  je_ut_new_dawn_reason: "The path to utopia must be paved. Solidify your nation's core ideology. The ideology determines the direction your nation will take.\nChoose between [ut_nd_fascist_core_concept], [ut_nd_autocrat_core_concept], [ut_nd_democrat_core_concept], and [ut_nd_communist_core_concept]."
@@ -121,6 +124,17 @@
  event_new_dawn.1.t: "New Dawn"
  event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
  event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. We must navigate these waters carefully, balancing the demands of the people with the needs of the state. The choices we make now will shape the future of our nation for generations to come."
+
+ event_new_dawn.3.t: "March on Capital"
+ event_new_dawn.3.d.f: "Our fascist leader is marching on our capital, what should we do?"
+ event_new_dawn.3.f.f: "Will the first try of fascism succeed in taking over our nation? Or will they have to try another route."
+ event_new_dawn.3.a: "Let them take over"
+ event_new_dawn.3.b: "This ideology must be suppressed"
+ event_new_dawn.uprising.setback_fascist: "Fascist loose progress"
+ event_new_dawn.uprising.setback_communist: "Communist loose progress"
+ event_new_dawn.uprising.setback_democrat: "Democrats loose progress"
+ event_new_dawn.uprising.setback_autocrat: "Autocrats loose progress"
+
 
  ut_new_dawn_status: "New Dawn"
  ut_new_dawn_focus_recently_changed: "Focus Recently Changed"
@@ -214,15 +228,15 @@
  ut_new_dawn_autocrat_status: "Autocratic Ideas Shape the Discourse"
 
  ut_nd_fascist_core_concept: "Fascism"
- ut_nd_fascist_core_concept_desc: "#bold Unlocks:#!\n - Conquer nations\n\n[ut_nd_path_to_utopia_concept]: Transform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others."
+ ut_nd_fascist_core_concept_desc: "Ideologies: [ut_nd_fascist_character_concept]\n#bold Unlocks (tbd):#!\n - Conquer nations\n\n[ut_nd_path_to_utopia_concept]: Transform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others."
  ut_nd_autocrat_core_concept: "Autocracy"
- ut_nd_autocrat_core_concept_desc: "#bold Unlocks:#!\n - Autocratic endgame mechanics\n\n[ut_nd_path_to_utopia_concept]: None."
+ ut_nd_autocrat_core_concept_desc: "Ideologies: [ut_nd_autocrat_character_concept]\n#bold Unlocks (wip):#!\n - Autocratic endgame mechanics\n\n[ut_nd_path_to_utopia_concept]: None."
  ut_nd_democrat_core_concept: "Democracy"
- ut_nd_democrat_core_concept_desc: "#bold Unlocks:#!\n - Unify democratic power blocs\n - Spread democracy\n\n[ut_nd_path_to_utopia_concept]: Strengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people."
- ut_nd_communist_core_concept: "Communism"
- ut_nd_communist_core_concept_desc: "#bold Unlocks:#!\n - Spread communism\n\n[ut_nd_path_to_utopia_concept]: Build a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
+ ut_nd_democrat_core_concept_desc: "Ideologies: [ut_nd_democrat_character_concept]\n#bold Unlocks (wip):#!\n - Unify democratic power blocs\n - Spread democracy\n\n[ut_nd_path_to_utopia_concept]: Strengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people."
+ ut_nd_communist_core_concept: "Ideologies: [ut_nd_communist_character_concept]\nCommunism"
+ ut_nd_communist_core_concept_desc: "#bold Unlock (tba)s:#!\n - Spread communism\n\n[ut_nd_path_to_utopia_concept]: Build a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
  ut_nd_path_to_utopia_concept: "Path to Utopia"
- ut_nd_path_to_utopia_concept_desc: "Each ideology comes with its own endgame mechanics."
+ ut_nd_path_to_utopia_concept_desc: "Each ideology comes with its own endgame mechanics. Base Mechanics: Democratic. Work in progress: Autocratic. (Work in progress)"
 
  ut_new_dawn_fascist_focus: "Fascist Focus (tbd)"
  ut_new_dawn_fascist_focus_desc: "work in progress"
@@ -289,6 +303,9 @@
  ut_ideology_cosmopolitan_desc: "Cosmopolitan ideologies emphasize global cooperation, cultural diversity, and the promotion of human rights. They advocate open borders, multiculturalism, and a secular government free from religious influence."
  ut_ideology_cosmopolitan_leader: "Cosmopolitan"
  ut_ideology_cosmopolitan_leader_desc: "Cosmopolitan ideologies emphasize global cooperation, cultural diversity, and the promotion of human rights. They advocate open borders, multiculturalism, and a secular government free from religious influence."
+
+ ut_ideology_autocratic_leader: "Autocratic"
+ ut_ideology_national_socialist_leader: "National Socialist"
 
  ideology_liberal_democratic: "Liberal-Democratic"
  ideology_moralist_democratic: "Moralist-Democratic"
@@ -373,6 +390,8 @@
 
 #articles
  ut_international_diplomatic_power_bloc_merge: "Unify Diplomatic Blocs"
+ ut_international_diplomatic_power_bloc_merge_desc: "REPLACE_ME"
+ ut_international_diplomatic_power_bloc_merge_article_short_desc: "REPLACE_ME"
  ut_international_diplomatic_power_bloc_merge_effects_desc: "• An agreement under which all democratic power bloc members join the other bloc. Unlocked through the democratic New Dawn."
  ut_international_diplomatic_power_bloc_merge_short_desc: "All members of the [TARGET_COUNTRY.GetAdjectiveNoFormatting|l] bloc join the [SOURCE_COUNTRY.GetAltNameNoFormatting('NOM')|U] bloc."
  ut_international_diplomatic_power_bloc_merge_points_them: "[TreatyDraft.GetRightCountry.GetName]: Requires at least #v [SCOPE.ScriptValue('new_dawn_ideology_spend_points')] progress points#!"
@@ -753,6 +772,8 @@
  pm_hi_no_logistics: "No Logistics"
  pm_hi_individual_logistics: "Truck Logistics"
  pm_hi_connected_logistics: "Connected Logistics"
+
+ ut_pm_research_department: "Social Science Department"
 
  pm_oil_heavy_machinery_mine: "Heavy Machinery"
  pm_oil_automated_heavy_machinery_mine: "Automated Machinery"
