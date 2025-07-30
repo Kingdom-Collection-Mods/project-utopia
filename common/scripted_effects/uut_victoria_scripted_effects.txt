@@ -1,4 +1,4 @@
-﻿# Based on Made Divided Monarchists by Victoria/Pacifica/AcresOfAsteraceae
+# Based on Made Divided Monarchists by Victoria/Pacifica/AcresOfAsteraceae
 # Together with ideologies and hegemon mechanic from EU4 creatin New Dawn journal chapter.
 # 
 # Refer to comments here and in 02_french_monarchism to get an idea as to how this works.
@@ -60,6 +60,24 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 		}
 	}
 	change_variable = { name = ut_nd_communist_progress_from_characters divide = 100 } #Character popularities are -100/100, rather than our desired -1/1, so divide by 100.
+	if = {
+		limit = {
+			ut_nd_communist_progress_from_characters > 1
+		}
+		set_variable = {
+			name = ut_nd_communist_progress_from_characters
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			ut_nd_communist_progress_from_characters < -1
+		}
+		set_variable = {
+			name = ut_nd_communist_progress_from_characters
+			value = -1
+		}
+	}
 	# From Interest Groups
 	every_interest_group = {
 		limit = {

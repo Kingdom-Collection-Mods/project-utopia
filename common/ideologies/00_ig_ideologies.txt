@@ -98,7 +98,7 @@ ideology_laissez_faire = {
 		law_child_labor_allowed = approve
 		law_restricted_child_labor = neutral
 		law_compulsory_primary_school = disapprove
-		law_compulsory_secondary_school = disapprove
+		law_compulsory_secondary_school = strongly_disapprove
 		law_compulsory_tertiary_school = strongly_disapprove
 	}
 	
