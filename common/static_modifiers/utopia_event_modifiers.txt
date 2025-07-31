@@ -77,7 +77,7 @@ ai_below_major_power_buff_spread = {
 }
 
 
-ut_tech_preview_cheat_modifier = {
+ut_tech_preview_cheat_research_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_weekly_innovation_max_add = 6000
 	country_weekly_innovation_add = 6000

@@ -1,4 +1,4 @@
-ut_tech_preview_cheat = {
+ut_tech_preview_cheat_research = {
 	is_shown = {
 		is_player = yes
 		NOT = { has_global_variable = ut_tech_preview_cheat_disable }
@@ -7,7 +7,7 @@ ut_tech_preview_cheat = {
 	possible = {
 		is_player = yes
 		NOT = { has_global_variable = ut_tech_preview_cheat_disable }
-		NOT = { has_modifier = ut_tech_preview_cheat_modifier }
+		NOT = { has_modifier = ut_tech_preview_cheat_research_modifier }
 	}
 	
 	when_taken = {
