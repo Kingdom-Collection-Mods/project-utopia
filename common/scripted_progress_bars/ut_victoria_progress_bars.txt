@@ -35,6 +35,9 @@ ut_new_dawn_fascist_bar = {
 				value = owner.var:ut_nd_fascist_progress_from_focus
 			}
 		}
+		else = {
+			add = 0
+		}
 	}
 
 	start_value = 10
@@ -77,6 +80,9 @@ ut_new_dawn_democrat_bar = {
 				desc = "ut_nd_democrat_progress_from_focus"
 				value = owner.var:ut_nd_democrat_progress_from_focus
 			}
+		}
+		else = {
+			add = 0
 		}
 	}
 
@@ -121,6 +127,9 @@ ut_new_dawn_communist_bar = {
 				value = owner.var:ut_nd_communist_progress_from_focus
 			}
 		}
+		else = {
+			add = 0
+		}
 	}
 
 	start_value = 0
@@ -162,6 +171,9 @@ ut_new_dawn_autocrat_bar = {
 				desc = "ut_nd_autocrat_progress_from_focus"
 				value = owner.var:ut_nd_autocrat_progress_from_focus
 			}
+		}
+		else = {
+			add = 0
 		}
 	}
 
@@ -249,6 +261,9 @@ je_ut_new_dawn_autocratic_points_bar = {
 				desc = "ut_nd_autocrat_progress_from_focus"
 				value = owner.var:ut_nd_autocrat_progress_from_focus
 			}
+		}
+		else = {
+			add = 0
 		}
 	}
 
