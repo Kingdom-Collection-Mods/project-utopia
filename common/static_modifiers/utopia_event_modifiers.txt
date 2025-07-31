@@ -1,4 +1,4 @@
-﻿# Heavy Tractors
+# Heavy Tractors
 agricultural_mechanization = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	building_rye_farm_throughput_add = 0.15
@@ -18,7 +18,9 @@ new_dawn_ongoing = {
 	political_movement_radicalism_add = 0.5
 	political_movement_pop_attraction_mult = 0.5
 	state_radicals_from_political_movements_mult = 0.5
-	state_radicals_and_loyalists_from_sol_change_mult = 0.5
+	state_radicals_and_loyalists_from_sol_change_mult = 0.25
+	country_radicals_from_legitimacy_mult = 1
+	country_law_enactment_time_mult = -0.25
 }
 
 
@@ -133,7 +135,7 @@ ut_research_institute_found_mod = {
 
 ut_research_institute_site_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-	state_pop_qualifications_mult = 0.25
+	state_pop_qualifications_mult = 0.1
 	building_construction_sector_throughput_add = 0.1
 }
 

@@ -1,4 +1,4 @@
-﻿goods_output_heavy_machinery_add={
+goods_output_heavy_machinery_add={
 	decimals=1
 	color=good
 	game_data={
@@ -444,6 +444,33 @@ country_institution_epa_max_investment_add={
 country_institution_food_safety_max_investment_add={
 	decimals=0
 	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+unit_combat_unit_type_light_tank_offense_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+unit_combat_unit_type_motorized_artillery_offense_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+unit_combat_unit_type_modern_submarine_offense_add={
+	decimals=0
+	color=good
+	percent=yes
 	game_data={
 		ai_value=0
 	}

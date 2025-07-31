@@ -501,6 +501,72 @@ ut_je_research_institute_construction = {
 	should_be_pinned_by_default = yes
 }
 
+
+ut_je_ut_research_nuclear_power = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_technology
+
+	on_monthly_pulse = {
+		effect = {
+			every_scope_building = {
+				limit = {
+					is_building_type = building_ut_research_institute
+				}
+				ROOT = {
+					change_variable = {
+						name = ut_research_nuclear_power_var
+						add = prev.occupancy
+					}
+				}
+			}
+		}
+	}
+
+	complete = {
+		scope:journal_entry = { is_goal_complete = yes }
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_ut_research_institute
+			}
+		}
+	}
+
+	on_complete = {
+		remove_modifier = ut_research_nuclear_power_mod
+		add_technology_researched = nuclear_power
+	}
+
+	invalid = {
+		NOT = {
+			any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_ut_research_institute
+				}
+			}
+		}
+	}
+
+	on_invalid = {
+		remove_modifier = ut_research_nuclear_power_mod
+		remove_variable = ut_research_nuclear_power_var
+	}
+
+	current_value = {
+		value = root.var:ut_research_nuclear_power_var
+	}
+
+	goal_add_value = {
+		value = 48
+	}
+
+	progressbar = yes
+
+	weight = 10
+
+	should_be_pinned_by_default = yes
+}
+
 ut_je_ut_research_high_tech_computers_research = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
@@ -510,10 +576,9 @@ ut_je_ut_research_high_tech_computers_research = {
 		effect = {
 			every_scope_building = {
 				limit = {
-					is_building_type = building_heavy_machinery_factory
+					is_building_type = building_ut_research_institute
 				}
 				ROOT = {
-					change_variable = { name = ut_nd_autocrat_progress_from_characters add = prev.popularity }
 					change_variable = {
 						name = ut_research_high_tech_computers_var
 						add = prev.occupancy

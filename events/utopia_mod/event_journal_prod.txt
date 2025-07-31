@@ -1,4 +1,4 @@
-﻿namespace = utopia_journal_prod
+namespace = utopia_journal_prod
 # Heavy Machinery
 utopia_journal_prod.1 = {
 	title = ut_heavy_industrial_machinery_je
@@ -538,7 +538,7 @@ utopia_journal_prod.40 = {
 			}
 		}
 		name = utopia.progress_b
-        scope:ut_research_institute_site = {
+        capital = {
         	add_modifier = {
         		name = ut_research_institute_site_mod
         	}

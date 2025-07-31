@@ -70,7 +70,6 @@ pm_farms_heavy_machinery_support = {
 			# input goods								
 			goods_input_oil_add = 1
 			goods_input_heavy_machinery_add = 1
-			goods_input_electronics_add = 1
 		}
 
 		level_scaled = {

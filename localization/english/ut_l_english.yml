@@ -101,12 +101,14 @@
  ut_research_institute_found_mod_desc: "The foundations for a national research institute are being laid. Scientific networks are emerging, resources are being pooled, and the infrastructure for a future of knowledge is growing."
  ut_je_research_institute_founding_goal: "Wait for the completion of the #BOLD 4-year#! founding phase"
  ut_research_institute_found_unlock_tt: "Unlocks [ut_research_institute_concept]"
+ ut_research_institute_can_construct_tt: "Has identified and surveyed an appropriate site for a Research Institute"
+ ut_research_institute_site_mod: "Research Institute Site"
 
  ut_je_research_institute_construction: "Construct Research Institute"
  ut_je_research_institute_construction_reason: ""
 
  ut_research_high_tech_computers: "Research High-Tech Computers"
- ut_research_high_tech_computers_desc: "Our nation is making targeted investments into researching high-performance computers. These machines will form the basis for modern simulations, industrial automation, and military superiority. Whoever masters them first will shape the digital age."
+ ut_research_high_tech_computers_desc: "Start a research initiative into micro chip technologies and replace transistors. These machines will form the basis for modern simulations, industrial automation, and military superiority."
  ut_je_ut_research_high_tech_computers_research: "High-Tech Computer Research"
  ut_je_ut_research_high_tech_computers_research_reason: "The boundaries of computation are being redrawn. As classical computers approach their limits, a new generation of high-performance machines promises revolutionary progress in science, industry, and defense. With sufficient investment, we can lead this revolution—creating machines that think faster than any human mind.\nThis is not just research—it is a race for the future."
  ut_je_ut_research_high_tech_computers_research.success.d: "The development of a new generation of high-performance computers has succeeded. These machines perform calculations at previously unreachable levels of complexity and speed."
@@ -116,7 +118,7 @@
  ut_je_ut_research_high_tech_computers_research_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy)"
 
  je_ut_new_dawn: "New Dawn"
- je_ut_new_dawn_reason: "The path to utopia must be paved. Solidify your nation's core ideology. The ideology determines the direction your nation will take.\nChoose between [ut_nd_fascist_core_concept], [ut_nd_autocrat_core_concept], [ut_nd_democrat_core_concept], and [ut_nd_communist_core_concept]."
+ je_ut_new_dawn_reason: "Technological and cultural progress ushers in a new wave of political change. The path to utopia may be paved. Solidify your nation's core ideology. The ideology determines the direction your nation will take.\nChoose between [ut_nd_fascist_core_concept], [ut_nd_autocrat_core_concept], [ut_nd_democrat_core_concept], and [ut_nd_communist_core_concept]."
  je_ut_new_dawn_condition_tt: "Completed Democratic, Autocratic, Communist, or Fascist path."
  je_ut_new_dawn_effect_tt: "Unlocks endgame ideas (tbd)"
  new_dawn_ongoing: "New Dawn"
@@ -141,7 +143,7 @@
  ut_new_dawn_focus_selected_tt: "Focus Selected"
  ut_new_dawn_focus_already_selected_tt: "Focus Not Already Selected"
  ut_new_dawn_focus_freeze_tt: "Focus Not Deactivated"
- ut_new_dawn_focus_tt: "#v +0.5#! progress per month for selected ideology"
+ ut_new_dawn_focus_tt: "#v +0.5#! progress per month for selected ideology\nEnables preventing other ideologies from taking over."
 
  je_ut_new_dawn_critical_lower_bound_fail_tt: "If the threshold of #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v progress points#! is undercut, event chains may undo political progress and eventually trigger a new New Dawn."
 
@@ -228,13 +230,13 @@
  ut_new_dawn_autocrat_status: "Autocratic Ideas Shape the Discourse"
 
  ut_nd_fascist_core_concept: "Fascism"
- ut_nd_fascist_core_concept_desc: "Ideologies: [ut_nd_fascist_characters_concept]\n#bold Unlocks (tbd):#!\n - Conquer nations\n\n[ut_nd_path_to_utopia_concept]: Transform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others."
+ ut_nd_fascist_core_concept_desc: "Ideologies: [ut_nd_fascist_characters_concept]\n\n#bold Unlocks (tbd):#!\n - Conquer nations\n\n[ut_nd_path_to_utopia_concept]: Transform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others."
  ut_nd_autocrat_core_concept: "Autocracy"
- ut_nd_autocrat_core_concept_desc: "Ideologies: [ut_nd_autocrat_characters_concept]\n#bold Unlocks (wip):#!\n - Autocratic endgame mechanics\n\n[ut_nd_path_to_utopia_concept]: None."
+ ut_nd_autocrat_core_concept_desc: "Ideologies: [ut_nd_autocrat_characters_concept]\n\n#bold Unlocks (wip):#!\n - Autocratic endgame mechanics\n\n[ut_nd_path_to_utopia_concept]: None."
  ut_nd_democrat_core_concept: "Democracy"
- ut_nd_democrat_core_concept_desc: "Ideologies: [ut_nd_democrat_characters_concept]\n#bold Unlocks (wip):#!\n - Unify democratic power blocs\n - Spread democracy\n\n[ut_nd_path_to_utopia_concept]: Strengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people."
+ ut_nd_democrat_core_concept_desc: "Ideologies: [ut_nd_democrat_characters_concept]\n\n#bold Unlocks (wip):#!\n - Unify democratic power blocs\n - Spread democracy\n\n[ut_nd_path_to_utopia_concept]: Strengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people."
  ut_nd_communist_core_concept: "Communism"
- ut_nd_communist_core_concept_desc: "Ideologies: [ut_nd_communist_characters_concept]\n#bold Unlock (tba):#!\n - Spread communism\n\n[ut_nd_path_to_utopia_concept]: Build a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
+ ut_nd_communist_core_concept_desc: "Ideologies: [ut_nd_communist_characters_concept]\n\n#bold Unlock (tba):#!\n - Spread communism\n\n[ut_nd_path_to_utopia_concept]: Build a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
  ut_nd_path_to_utopia_concept: "Path to Utopia"
  ut_nd_path_to_utopia_concept_desc: "Each ideology comes with its own endgame mechanics. Base Mechanics: Democratic. Work in progress: Autocratic. (Work in progress)"
 

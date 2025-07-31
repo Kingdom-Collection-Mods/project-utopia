@@ -85,6 +85,83 @@ ut_research_institute_found = {
 	}
 }
 
+
+ut_research_nuclear_power = {
+	is_shown = {
+		has_technology_researched = nuclear_power_research
+		NOT = {
+			has_variable = ut_research_nuclear_power_var
+		}
+	}
+
+	possible = {
+		produced_bureaucracy > 500
+		has_variable = ut_research_institute_found
+		has_technology_researched = computers
+		any_scope_state = {
+			is_incorporated = yes
+			is_split_state = no
+			any_scope_building = {
+				is_building_type = building_power_plant
+				level >= 20
+			}
+			any_scope_building = {
+				is_building_type = building_ut_research_institute
+			}
+		}
+		OR = {
+			has_global_highest_innovation = yes
+			any_scope_building = {
+				is_building_type = building_rare_earths_mine
+				level >= 1
+				has_active_production_method = pm_rare_earths_two_mine
+			}
+		}
+	}
+
+	when_taken = {
+		set_variable = {
+			name = ut_research_nuclear_power_var
+			value = 0
+		}
+		add_modifier = {
+			name = ut_research_nuclear_power_mod
+			months = 48
+		}
+		add_journal_entry = {
+			type = ut_je_ut_research_nuclear_power
+		}
+	}
+
+	ai_chance = {
+		value = 0
+		if = {
+			limit = { produced_bureaucracy > 2500 }
+			add = 5
+		}
+		if = {
+			limit = {
+				produced_bureaucracy > 5000
+				any_country = {
+					is_ai = no
+					has_variable = skyscraper_var
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				OR = {
+					is_diplomatic_play_committed_participant = yes
+					is_at_war = yes
+				}
+			}
+			multiply = 0
+		}
+	}
+}
+
+
 ut_research_high_tech_computers = {
 	is_shown = {
 		has_technology_researched = electronics
@@ -96,12 +173,16 @@ ut_research_high_tech_computers = {
 	possible = {
 		produced_bureaucracy > 500
 		has_variable = ut_research_institute_found
+		has_technology_researched = computers
 		any_scope_state = {
 			is_incorporated = yes
 			is_split_state = no
 			any_scope_building = {
 				is_building_type = building_computer_factory
 				level >= 10
+			}
+			any_scope_building = {
+				is_building_type = building_ut_research_institute
 			}
 		}
 		OR = {
