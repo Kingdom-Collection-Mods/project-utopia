@@ -13,7 +13,7 @@ slow_tech_progress = {
 	country_weekly_innovation_max_add = 20
 }
 
-new_dawn_ongoing = {
+new_dawn_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
 	political_movement_radicalism_add = 0.5
 	political_movement_pop_attraction_mult = 0.5
@@ -24,8 +24,8 @@ new_dawn_ongoing = {
 }
 
 
-new_dawn_phase_2_ongoing = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+new_dawn_phase_2_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	political_movement_radicalism_add = -0.25
 	political_movement_pop_attraction_mult = -0.25
 	state_radicals_from_political_movements_mult = -0.25
@@ -106,7 +106,8 @@ modern_civil_aviation_modifier_others = {
 	country_tech_spread_add = 50
 }
 
-je_ut_new_dawn_democratic = {
+je_ut_new_dawn_democratic_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_infamy_generation_mult = 0.5
 	unit_defense_mult = 0.1
 }
@@ -119,6 +120,11 @@ je_ut_new_dawn_democratic_power_bloc_mod = {
 je_ut_new_dawn_democratic_fair_elections_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_voting_power_base_add = 5
+}
+
+je_ut_new_dawn_autocrat_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	country_suppression_attraction_factor = -0.25
 }
 
 ut_research_high_tech_computers_research_mod = {

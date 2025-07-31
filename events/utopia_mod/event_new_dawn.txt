@@ -38,11 +38,11 @@ event_new_dawn.1 = {
 event_new_dawn.2 = {
 	type = country_event
 	placement = ROOT
-	title = french_pretenders.10.t
+	title = event_new_dawn.2.a 
 	desc = {
 		first_valid = {
 			triggered_desc = {
-				desc = french_pretenders.10.d_1
+				desc = event_new_dawn.2.d.f
 				trigger = {
 					je:je_ut_new_dawn = { 
 						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -52,7 +52,7 @@ event_new_dawn.2 = {
 				}
 			}
 			triggered_desc = {
-				desc = french_pretenders.10.d_2
+				desc = event_new_dawn.2.d.d
 				trigger = {
 					je:je_ut_new_dawn = { 
 						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
@@ -62,7 +62,7 @@ event_new_dawn.2 = {
 				}
 			}
 			triggered_desc = {
-				desc = french_pretenders.10.d_3
+				desc = event_new_dawn.2.d.c
 				trigger = {
 					je:je_ut_new_dawn = { 
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -72,7 +72,7 @@ event_new_dawn.2 = {
 				}
 			}
 			triggered_desc = {
-				desc = french_pretenders.10.d_4
+				desc = event_new_dawn.2.d.a
 				trigger = {
 					je:je_ut_new_dawn = { 
 						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -86,7 +86,7 @@ event_new_dawn.2 = {
 	flavor = {
 		first_valid = {
 			triggered_desc = {
-				desc = french_pretenders.10.f_1
+				desc = event_new_dawn.2.f.f
 				trigger = {
 					je:je_ut_new_dawn = { 
 						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -96,7 +96,7 @@ event_new_dawn.2 = {
 				}
 			}
 			triggered_desc = {
-				desc = french_pretenders.10.f_2
+				desc = event_new_dawn.2.f.d
 				trigger = {
 					je:je_ut_new_dawn = { 
 						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
@@ -106,7 +106,7 @@ event_new_dawn.2 = {
 				}
 			}
 			triggered_desc = {
-				desc = french_pretenders.10.f_3
+				desc = event_new_dawn.2.f.c
 				trigger = {
 					je:je_ut_new_dawn = { 
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -116,7 +116,7 @@ event_new_dawn.2 = {
 				}
 			}
 			triggered_desc = {
-				desc = french_pretenders.10.f_4
+				desc = event_new_dawn.2.f.a
 				trigger = {
 					je:je_ut_new_dawn = { 
 						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -193,6 +193,9 @@ event_new_dawn.2 = {
 			set_variable = {
 				name = ut_new_dawn_core_democrat_var
 			}
+			add_journal_entry = {
+				type = je_ut_new_dawn_democratic
+			}
 		}
 		else_if = {
 			limit = {
@@ -208,7 +211,15 @@ event_new_dawn.2 = {
 			set_variable = {
 				name = ut_new_dawn_core_autocrat_var
 			}
+			add_journal_entry = {
+				type = je_ut_new_dawn_autocratic
+			}
 		}
+	}
+
+	option = {
+		name = event_new_dawn.2.a # Take over by focused ideology
+		default_option = yes
 	}
 }
 

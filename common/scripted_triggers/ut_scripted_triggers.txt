@@ -168,38 +168,6 @@ ut_service_workers_possible = {
 	}
 }
 
-
-
-ut_ideology_new_dawn_focus_won = {
-	OR = {
-		AND = {
-			"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-			"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
-			"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
-			has_modifier = je_ut_new_dawn_democrat_focus
-		}
-		AND = {
-			"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
-			"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-			"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
-			has_modifier = je_ut_new_dawn_autocrat_focus
-		}
-		AND = {
-			"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
-			"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
-			"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
-			has_modifier = je_ut_new_dawn_communist_focus
-		}
-		AND = {
-			"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
-			"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
-			"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-			has_modifier = je_ut_new_dawn_fascist_focus
-		}
-	}
-
-}
-
 new_dawn_ideology_required_points_trigger = {
 	custom_tooltip = {
 		text = new_dawn_ideology_required_points_tt

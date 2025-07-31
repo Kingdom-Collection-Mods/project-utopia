@@ -20,7 +20,7 @@
 	}
 
 	modifiers_while_active = {
-		new_dawn_ongoing
+		new_dawn_mod
 	}
 
 	immediate = {
@@ -123,6 +123,30 @@
 				ut_new_dawn_communist_progress = yes
 				ut_new_dawn_autocrat_progress = yes
 			}
+			else_if = {
+				limit = {
+					has_variable = ut_new_dawn_bar_unfreeze_autocrat
+				}
+				ut_new_dawn_autocrat_progress = yes
+			}
+			else_if = {
+				limit = {
+					has_variable = ut_new_dawn_bar_unfreeze_democrat
+				}
+				ut_new_dawn_democrat_progress = yes
+			}
+			else_if = {
+				limit = {
+					has_variable = ut_new_dawn_bar_unfreeze_fascist
+				}
+				ut_new_dawn_fascist_progress = yes
+			}
+			else_if = {
+				limit = {
+					has_variable = ut_new_dawn_bar_unfreeze_communist
+				}
+				ut_new_dawn_communist_progress = yes
+			}
 		}
 	}
 
@@ -145,7 +169,32 @@
 				if = {
 					limit = {
 						scope:journal_entry = { 
-							ut_ideology_new_dawn_focus_won = yes
+							OR = {
+								AND = {
+									"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+									"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+									"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+									root = { has_modifier = je_ut_new_dawn_democrat_focus }
+								}
+								AND = {
+									"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+									"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+									"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+									root = { has_modifier = je_ut_new_dawn_autocrat_focus }
+								}
+								AND = {
+									"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+									"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+									"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+									root = { has_modifier = je_ut_new_dawn_communist_focus }
+								}
+								AND = {
+									"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+									"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+									"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+									root = { has_modifier = je_ut_new_dawn_fascist_focus }
+								}
+							}
 						}
 					}
 					trigger_event = { id = event_new_dawn.2 popup = yes} #Reinforcement event - fires if the leading ideology is the one in power.
@@ -193,14 +242,14 @@ je_ut_new_dawn_democratic = {
 	}
 
 	modifiers_while_active = {
-		new_dawn_phase_2_ongoing
-		je_ut_new_dawn_democratic
+		new_dawn_phase_2_mod
+		je_ut_new_dawn_democratic_mod
 	}
 
 	immediate = {
 		ut_set_new_dawn_variables = yes
 		
-		remove_variable = ut_new_dawn_bar_freeze
+		set_variable = ut_new_dawn_bar_unfreeze_democrat
 		if = {
 			limit = {
 				NOT = { has_modifier = je_ut_new_dawn_democrat_focus }	
@@ -242,6 +291,7 @@ je_ut_new_dawn_democratic = {
 			ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 		}
 		set_variable = je_ut_new_dawn_done
+		remove_variable = ut_new_dawn_bar_unfreeze_democrat
 	}
 
 	status_desc = {
@@ -286,6 +336,120 @@ je_ut_new_dawn_democratic = {
 	# effect which is executed when 'fail' trigger becomes true
 	on_fail = {
 		remove_modifier = je_ut_new_dawn_democrat_focus
+		remove_variable = ut_new_dawn_bar_freeze
+		remove_variable = ut_new_dawn_bar_unfreeze_democrat
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}
+
+
+je_ut_new_dawn_autocratic = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	group = je_group_utopia
+	
+
+	is_shown_when_inactive = {
+		is_player = yes
+		has_technology_researched = mass_propaganda
+	}
+
+	possible = {
+		has_variable = ut_new_dawn_core_autocrat_var
+	}
+
+	modifiers_while_active = {
+		new_dawn_phase_2_mod
+		je_ut_new_dawn_autocrat_mod
+	}
+
+	immediate = {
+		ut_set_new_dawn_variables = yes
+		
+		set_variable = ut_new_dawn_bar_unfreeze_autocrat
+		if = {
+			limit = {
+				NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }	
+			}
+			add_modifier = {
+				name = je_ut_new_dawn_autocrat_focus
+			}
+		}
+	}
+
+	
+	scripted_progress_bar = je_ut_new_dawn_autocratic_points_bar
+
+	complete = {
+		custom_tooltip = {
+			text = je_ut_new_dawn_autocratic_complete_condition_tt
+			always = no
+		}
+		
+		custom_tooltip = {
+			text = new_dawn_ideology_upper_bound_tt
+			je:je_ut_new_dawn_autocratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= new_dawn_ideology_upper_bound_tt
+			}
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = {
+			text = je_ut_new_dawn_effect_tt
+			ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+		}
+		set_variable = je_ut_new_dawn_done
+		remove_variable = ut_new_dawn_bar_unfreeze_autocrat
+	}
+
+	status_desc = {
+	}
+
+
+	on_weekly_pulse = {
+		events = {
+			#event_new_dawn.1
+		}
+		effect = {
+			ut_new_dawn_democrat_progress = yes
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
+				}
+				add_modifier = {
+					name = je_ut_new_dawn_democrat_focus
+				}
+			}
+		}
+		random_events = {
+			400 = 0
+			# 10 = french_pretenders_pulse.2
+		}
+	}
+
+	fail = {
+		custom_tooltip = {
+			text = je_ut_new_dawn_critical_lower_bound_fail_tt
+			je:je_ut_new_dawn_democratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" <= new_dawn_ideology_critical_lower_bound
+			}
+		}
+	}
+
+	# effect which is executed when 'fail' trigger becomes true
+	on_fail = {
+		remove_modifier = je_ut_new_dawn_autocrat_focus
+		remove_variable = ut_new_dawn_bar_freeze
+		remove_variable = ut_new_dawn_bar_unfreeze_autocrat
 	}
 
 	weight = 100

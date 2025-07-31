@@ -213,3 +213,46 @@ je_ut_new_dawn_democratic_points_bar = {
 	min_value = 0
 	max_value = 100 # new_dawn_core_upper_bound
 }
+
+je_ut_new_dawn_autocratic_points_bar = {
+	name = "je_ut_new_dawn_autocratic_points_bar"
+	desc = "je_ut_new_dawn_autocratic_points_bar_desc"
+
+	default = yes
+
+	weekly_progress = {
+		if = {
+			limit = {
+				always = yes
+				#NOT = {
+				#	has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
+				#}
+			}
+			
+			add = {
+				desc = "ut_nd_autocrat_progress_from_characters"
+				value = owner.var:ut_nd_autocrat_progress_from_characters
+			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_igs"
+				value = owner.var:ut_nd_autocrat_progress_from_igs
+			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_laws"
+				value = owner.var:ut_nd_autocrat_progress_from_laws
+			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_legitimacy"
+				value = owner.var:ut_nd_autocrat_progress_from_legitimacy
+			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_focus"
+				value = owner.var:ut_nd_autocrat_progress_from_focus
+			}
+		}
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 100 # new_dawn_core_upper_bound
+}

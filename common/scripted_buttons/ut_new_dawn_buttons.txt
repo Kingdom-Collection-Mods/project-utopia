@@ -11,10 +11,10 @@ ut_new_dawn_fascist_focus = {
 			text = ut_new_dawn_focus_freeze_tt
 			NOT = { has_variable = ut_new_dawn_bar_freeze }
 		}
-		custom_tooltip = {
-			text = ut_new_dawn_focus_already_selected_tt
-			NOT = { has_modifier = je_ut_new_dawn_fascist_focus }
-		}
+		# custom_tooltip = {
+		# 	text = ut_new_dawn_focus_already_selected_tt
+		# 	NOT = { has_modifier = je_ut_new_dawn_fascist_focus }
+		# }
 	}
 
 	effect = {	
@@ -90,10 +90,10 @@ ut_new_dawn_autocrat_focus = {
 			text = ut_new_dawn_focus_freeze_tt
 			NOT = { has_variable = ut_new_dawn_bar_freeze }
 		}
-		custom_tooltip = {
-			text = ut_new_dawn_focus_already_selected_tt
-			NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }
-		}
+		# custom_tooltip = {
+		# 	text = ut_new_dawn_focus_already_selected_tt
+		# 	NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }
+		# }
 	}
 
 	effect = {
@@ -157,6 +157,10 @@ ut_new_dawn_democrat_focus = {
 			text = ut_new_dawn_focus_freeze_tt
 			NOT = { has_variable = ut_new_dawn_bar_freeze }
 		}
+		# custom_tooltip = {
+		# 	text = ut_new_dawn_focus_already_selected_tt
+		# 	NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
+		# }
 		NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
 	}
 
@@ -213,10 +217,10 @@ ut_new_dawn_communist_focus = {
 				has_variable = ut_new_dawn_bar_freeze
 			}
 		}
-		custom_tooltip = {
-			text = ut_new_dawn_focus_already_selected_tt
-			NOT = { has_modifier = je_ut_new_dawn_communist_focus }
-		}
+		# custom_tooltip = {
+		# 	text = ut_new_dawn_focus_already_selected_tt
+		# 	NOT = { has_modifier = je_ut_new_dawn_communist_focus }
+		# }
 	}
 
 	effect = {		

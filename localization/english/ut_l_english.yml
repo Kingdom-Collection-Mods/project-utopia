@@ -121,11 +121,13 @@
  je_ut_new_dawn_reason: "Technological and cultural progress ushers in a new wave of political change. The path to utopia may be paved. Solidify your nation's core ideology. The ideology determines the direction your nation will take.\nChoose between [ut_nd_fascist_core_concept], [ut_nd_autocrat_core_concept], [ut_nd_democrat_core_concept], and [ut_nd_communist_core_concept]."
  je_ut_new_dawn_condition_tt: "Completed Democratic, Autocratic, Communist, or Fascist path."
  je_ut_new_dawn_effect_tt: "Unlocks endgame ideas (tbd)"
- new_dawn_ongoing: "New Dawn"
+ new_dawn_mod: "New Dawn"
 
  event_new_dawn.1.t: "New Dawn"
  event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
  event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. We must navigate these waters carefully, balancing the demands of the people with the needs of the state. The choices we make now will shape the future of our nation for generations to come."
+
+ event_new_dawn.2.a: "Build foundation for core ideology"
 
  event_new_dawn.3.t: "March on Capital"
  event_new_dawn.3.d.f: "Our fascist leader is marching on our capital, what should we do?"
@@ -139,10 +141,10 @@
 
 
  ut_new_dawn_status: "New Dawn"
- ut_new_dawn_focus_recently_changed: "Focus Recently Changed"
- ut_new_dawn_focus_selected_tt: "Focus Selected"
- ut_new_dawn_focus_already_selected_tt: "Focus Not Already Selected"
- ut_new_dawn_focus_freeze_tt: "Focus Not Deactivated"
+ ut_new_dawn_focus_recently_changed: "Focus recently changed"
+ ut_new_dawn_focus_selected_tt: "Focus selected"
+ ut_new_dawn_focus_already_selected_tt: "Focus not already selected"
+ ut_new_dawn_focus_freeze_tt: "Focus not deactivated"
  ut_new_dawn_focus_tt: "#v +0.5#! progress per month for selected ideology\nEnables preventing other ideologies from taking over."
 
  je_ut_new_dawn_critical_lower_bound_fail_tt: "If the threshold of #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v progress points#! is undercut, event chains may undo political progress and eventually trigger a new New Dawn."
