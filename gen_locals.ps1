@@ -32,7 +32,7 @@ foreach ($lang in $languages) {
 
 
     # Write the modified content to the new file
-    $newContent | Set-Content -Encoding UTF8 -Path $targetFile
+    $newContent | Set-Content -Encoding utf8BOM -Path $targetFile
 
     Write-Host "Generated $targetFile"
 }
