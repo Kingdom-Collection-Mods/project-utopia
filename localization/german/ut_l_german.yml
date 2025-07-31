@@ -266,6 +266,7 @@
  state_service_workers_investment_pool_efficiency_mult: "Beitragseffizienz zu [concept_investment_pool] ($service_workers$)"
  state_service_workers_investment_pool_contribution_add_desc: "Wie viel ihrer Gewinne $service_workers$ investieren werden."
  state_service_workers_investment_pool_efficiency_mult_desc: "Eine Erhöhung oder Verringerung der investierten Profite, die $service_workers$ zum [concept_investment_pool] beitragen."
+ building_employment_service_workers_add: "$service_workers$ Per Level"
 
  ig_urbanists: "Urbanisten"
  ig_urbanists_desc: "Dienstleistende in modernen urbanen Umgebungen, die Fachkräfte in Bereichen wie Gastgewerbe, Einzelhandel, Transport und anderen Sektoren der zeitgenössischen Wirtschaft repräsentieren."

@@ -470,13 +470,23 @@ ut_je_research_institute_construction = {
 	group = je_group_technology
 
 	complete = {
-		scope:target = {
+		OR = {
+			scope:target = {
+				any_scope_building = {
+					is_building_type = building_ut_research_institute
+					is_under_construction = no
+					occupancy > 0.75
+				}
+			}
+
+			#todo remove  only to fix bug with missing target
 			any_scope_building = {
 				is_building_type = building_ut_research_institute
 				is_under_construction = no
 				occupancy > 0.75
 			}
 		}
+		
 	}
 
 	fail = {

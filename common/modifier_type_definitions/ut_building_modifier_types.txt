@@ -452,26 +452,23 @@ country_institution_food_safety_max_investment_add={
 unit_combat_unit_type_light_tank_offense_add={
 	decimals=0
 	color=good
-	percent=yes
 	game_data={
-		ai_value=0
+		ai_value=100
 	}
 }
 
 unit_combat_unit_type_motorized_artillery_offense_add={
 	decimals=0
 	color=good
-	percent=yes
 	game_data={
-		ai_value=0
+		ai_value=100
 	}
 }
 
 unit_combat_unit_type_modern_submarine_offense_add={
 	decimals=0
 	color=good
-	percent=yes
 	game_data={
-		ai_value=0
+		ai_value=100
 	}
 }

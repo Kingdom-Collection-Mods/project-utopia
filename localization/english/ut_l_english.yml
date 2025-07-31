@@ -147,7 +147,7 @@
  ut_new_dawn_focus_freeze_tt: "Focus not deactivated"
  ut_new_dawn_focus_tt: "#v +0.5#! progress per month for selected ideology\nEnables preventing other ideologies from taking over."
 
- je_ut_new_dawn_critical_lower_bound_fail_tt: "If the threshold of #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v progress points#! is undercut, event chains may undo political progress and eventually trigger a new New Dawn."
+ je_ut_new_dawn_critical_lower_bound_fail_tt: "If the threshold of #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v progress points#! is undercut (instant right now), event chains may undo political progress and eventually trigger a new New Dawn."
 
  ut_new_dawn_communist_focus: "Communist Focus (tbd)"
  ut_new_dawn_communist_focus_desc: "work in progress"
@@ -281,6 +281,7 @@
  state_service_workers_investment_pool_efficiency_mult: "Contribution Efficiency to [concept_investment_pool] ($service_workers$)"
  state_service_workers_investment_pool_contribution_add_desc: "How much of their profits $service_workers$ will invest."
  state_service_workers_investment_pool_efficiency_mult_desc: "An increase or decrease in the invested profits that $service_workers$ contribute to the [concept_investment_pool]."
+ building_employment_service_workers_add: "$service_workers$ Per Level"
 
  ig_urbanists: "Urbanists"
  ig_urbanists_desc: "Service workers in modern urban environments representing professionals in hospitality, retail, transport, and other sectors of the contemporary economy."
