@@ -1,7 +1,7 @@
-﻿ut_nd_autocrat_character_concept = {}
-ut_nd_fascist_character_concept = {}
+﻿ut_nd_autocrat_characters_concept = {}
+ut_nd_fascist_characters_concept = {}
 ut_nd_democrat_characters_concept = {}
-ut_nd_communist_character_concept = {}
+ut_nd_communist_characters_concept = {}
 
 ut_nd_autocrat_core_concept = {}
 ut_nd_democrat_core_concept = {}

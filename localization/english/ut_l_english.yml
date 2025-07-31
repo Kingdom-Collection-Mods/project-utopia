@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -211,7 +211,7 @@ l_english:
  je_ut_new_dawn_democratic_fair_elections_tt: "Strengthens the legitimacy of the political system through transparent and fair elections"
  je_ut_new_dawn_democratic_fair_elections_mod: "Fair Elections"
 
- ut_new_dawn_autocrat_focus: "Autocratic Focus (tbd)"
+ ut_new_dawn_autocrat_focus: "Autocratic Focus (wip)"
  ut_new_dawn_autocrat_focus_desc: "work in progress"
 
  ut_new_dawn_autocrat_bar: "Autocratic"
@@ -234,7 +234,7 @@ l_english:
  ut_nd_democrat_core_concept: "Democracy"
  ut_nd_democrat_core_concept_desc: "Ideologies: [ut_nd_democrat_characters_concept]\n#bold Unlocks (wip):#!\n - Unify democratic power blocs\n - Spread democracy\n\n[ut_nd_path_to_utopia_concept]: Strengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people."
  ut_nd_communist_core_concept: "Communism"
- ut_nd_communist_core_concept_desc: "Ideologies: [ut_nd_communist_characters_concept]\n#bold Unlock (tba)s:#!\n - Spread communism\n\n[ut_nd_path_to_utopia_concept]: Build a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
+ ut_nd_communist_core_concept_desc: "Ideologies: [ut_nd_communist_characters_concept]\n#bold Unlock (tba):#!\n - Spread communism\n\n[ut_nd_path_to_utopia_concept]: Build a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
  ut_nd_path_to_utopia_concept: "Path to Utopia"
  ut_nd_path_to_utopia_concept_desc: "Each ideology comes with its own endgame mechanics. Base Mechanics: Democratic. Work in progress: Autocratic. (Work in progress)"
 
