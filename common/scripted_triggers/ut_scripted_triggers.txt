@@ -62,8 +62,10 @@ ut_ideology_new_dawn_fascist_trigger = {
 				has_modifier = je_ut_new_dawn_fascist_focus
 			}
 			OR = {
-				has_ideology = ideology:ideology_corporatist_leader
 				has_ideology = ideology:ideology_moderate
+				has_ideology = ideology:ideology_corporatist_leader
+				has_ideology = ideology:ideology_land_reformer
+				has_ideology = ideology:ideology_modernizer_leader
 			}
 		}
 	}
@@ -85,10 +87,12 @@ ut_ideology_new_dawn_democrat_trigger = {
 				}
 			}
 			OR = {
+				has_ideology = ideology:ideology_moderate
 				has_ideology = ideology:ideology_humanitarian_royalist
 				has_ideology = ideology:ideology_radical
 				has_ideology = ideology:ideology_pacifist
-				has_ideology = ideology:ideology_moderate
+				has_ideology = ideology:ideology_feminist
+				has_ideology = ideology:ideology_modernizer_leader
 			}
 		}
 	}
@@ -102,6 +106,7 @@ ut_ideology_new_dawn_autocrat_trigger = {
 		has_ideology = ideology:ideology_integralist
 		has_ideology = ideology:ideology_royalist
 		has_ideology = ideology:ideology_traditionalist
+		has_ideology = ideology:ideology_traditionalist_minoritarian
 		AND = {
 			custom_tooltip = {
 				text = ut_new_dawn_focus_selected_tt
@@ -110,11 +115,13 @@ ut_ideology_new_dawn_autocrat_trigger = {
 				}
 			}
 			OR = {
+				has_ideology = ideology:ideology_moderate
 				has_ideology = ideology:ideology_jingoist_leader
 				has_ideology = ideology:ideology_protectionist
 				has_ideology = ideology:ideology_positivist
 				has_ideology = ideology:ideology_corporatist_leader
-				has_ideology = ideology:ideology_moderate
+				has_ideology = ideology:ideology_land_reformer
+				has_ideology = ideology:ideology_luddite
 			}
 		}
 	}
@@ -126,12 +133,15 @@ ut_ideology_new_dawn_communist_trigger = {
 		has_ideology = ideology:ideology_radical
 		has_ideology = ideology:ideology_communist
 		has_ideology = ideology:ideology_vanguardist
+		has_ideology = ideology:ideology_nihilist
 		AND = {
 			ROOT = {
 				has_modifier = je_ut_new_dawn_communist_focus
 			}
 			OR = {
 				has_ideology = ideology:ideology_moderate
+				has_ideology = ideology:ideology_land_reformer
+				has_ideology = ideology:ideology_modernizer_leader
 			}
 		}
 	}
