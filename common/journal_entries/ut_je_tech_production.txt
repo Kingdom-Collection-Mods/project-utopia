@@ -1,4 +1,4 @@
-ut_heavy_industrial_machinery_je = {
+﻿ut_heavy_industrial_machinery_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 

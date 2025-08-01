@@ -1,4 +1,4 @@
-ut_ideology_environmentalist_leader = {
+﻿ut_ideology_environmentalist_leader = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_Agrarian.dds"
 	
 	character_ideology = yes

@@ -1,4 +1,4 @@
-namespace = utopia_journal_prod
+﻿namespace = utopia_journal_prod
 # Heavy Machinery
 utopia_journal_prod.1 = {
 	title = ut_heavy_industrial_machinery_je
