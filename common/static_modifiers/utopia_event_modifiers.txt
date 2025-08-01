@@ -128,6 +128,14 @@ je_ut_new_dawn_autocratic_mod = {
 	country_authority_mult = 0.1
 }
 
+je_ut_new_dawn_fascist_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+}
+
+je_ut_new_dawn_communist_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+}
+
 ut_research_high_tech_computers_research_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
 	country_bureaucracy_add = -500

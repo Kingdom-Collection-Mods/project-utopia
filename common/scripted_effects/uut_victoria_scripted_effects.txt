@@ -397,12 +397,12 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 	if = {
 		limit = {
 			any_political_movement = {
-				is_political_movement_type = movement_Fascist
+				is_political_movement_type = movement_fascist
 			}
 		}
 		random_political_movement = {
 			limit = {
-				is_political_movement_type = movement_Fascist
+				is_political_movement_type = movement_fascist
 			}
 			ROOT = {
 				set_variable = { name = ut_nd_fascist_progress_from_movements value = prev.political_movement_support }

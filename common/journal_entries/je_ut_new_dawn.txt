@@ -245,7 +245,7 @@ je_ut_new_dawn_democratic = {
 		custom_tooltip = {
 			text = new_dawn_ideology_upper_bound_tt
 			je:je_ut_new_dawn_democratic = { 
-				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_upper_bound_tt
+				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_upper_bound
 			}
 		}
 	}
@@ -343,7 +343,7 @@ je_ut_new_dawn_autocratic = {
 		custom_tooltip = {
 			text = new_dawn_ideology_upper_bound_tt
 			je:je_ut_new_dawn_autocratic = { 
-				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= new_dawn_ideology_upper_bound_tt
+				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= new_dawn_ideology_upper_bound
 			}
 		}
 	}
@@ -441,7 +441,7 @@ je_ut_new_dawn_fascist = {
 		custom_tooltip = {
 			text = new_dawn_ideology_upper_bound_tt
 			je:je_ut_new_dawn_fascist = { 
-				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_upper_bound_tt
+				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_upper_bound
 			}
 		}
 	}
@@ -539,7 +539,7 @@ je_ut_new_dawn_communist = {
 		custom_tooltip = {
 			text = new_dawn_ideology_upper_bound_tt
 			je:je_ut_new_dawn_communist = { 
-				"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" >= new_dawn_ideology_upper_bound_tt
+				"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" >= new_dawn_ideology_upper_bound
 			}
 		}
 	}

@@ -69,12 +69,6 @@ combat_unit_type_armored_infantry = {
     group = combat_unit_group_infantry
 	max_manpower = 1000
 
-    can_build_conscript = {
-        NOT = {
-            has_law = law_type:law_peasant_levies
-        }
-    }
-
     upkeep_modifier = {
         goods_input_small_arms_add = 3
         goods_input_ammunition_add = 3
@@ -108,12 +102,6 @@ combat_unit_type_task_force_infantry = {
 
     can_build = {
         has_law = law_type:law_task_forces
-    }
-
-    can_build_conscript = {
-        NOT = {
-            has_law = law_type:law_peasant_levies
-        }
     }
 
     upkeep_modifier = {
@@ -249,12 +237,6 @@ combat_unit_type_motorized_artillery = {
     group = combat_unit_group_artillery
 	max_manpower = 1000
 
-    can_build_conscript = {
-        NOT = {
-            has_law = law_type:law_peasant_levies
-        }
-    }
-    
     upkeep_modifier = {
         goods_input_tanks_add = 3
         goods_input_artillery_add = 4
@@ -293,12 +275,6 @@ combat_unit_type_motorized_artillery = {
 combat_unit_type_rocket_artillery = {
     group = combat_unit_group_artillery
 	max_manpower = 1000
-
-    can_build_conscript = {
-        NOT = {
-            has_law = law_type:law_peasant_levies
-        }
-    }
     
     
     upkeep_modifier = {
@@ -432,12 +408,6 @@ combat_unit_type_light_tanks = {
 combat_unit_type_support_systems = {
     group = combat_unit_group_cavalry
 	max_manpower = 1000
-
-    can_build_conscript = {
-        NOT = {
-            has_law = law_type:law_peasant_levies
-        }
-    }
     
     upkeep_modifier = {
         goods_input_tanks_add = 2

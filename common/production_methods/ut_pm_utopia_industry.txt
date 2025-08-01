@@ -1316,7 +1316,7 @@ ut_pm_research_institute_one = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_max_weekly_innovation_add = 50
+			country_weekly_innovation_max_add = 50
 		}
 	}
 
