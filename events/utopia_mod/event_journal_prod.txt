@@ -198,6 +198,7 @@ utopia_journal_prod.5 = {
 	}
 
 	option = {
+		default_option = yes
 		name = utopia.slow_progress
 		add_modifier = {
 			name = agricultural_mechanization
@@ -230,6 +231,7 @@ utopia_journal_prod.6 = {
 	}
 
 	option = {
+		default_option = yes
 		name = utopia.slow_progress
 		add_modifier = {
 			name = agricultural_mechanization
@@ -496,41 +498,22 @@ utopia_journal_prod.40 = {
 	}
 
 	immediate = {
-		if = {
+		random_scope_state = {
 			limit = {
-				capital = {
-					is_split_state = no
-					any_scope_building = {
-						is_building_type = building_computer_factory
-						level >= 2
-					}
-				}
+				is_incorporated = yes
+				is_split_state = no
+				ut_research_institute_site_building_trigger = yes
 			}
-			capital = {
-				save_scope_as = ut_research_institute_site
-			}
-		}
-		else = {
-			random_scope_state = {
-				limit = {
-					is_incorporated = yes
-					is_split_state = no
-					any_scope_building = {
-						is_building_type = building_computer_factory
-						level >= 2
-					}
-				}
-				save_scope_as = ut_research_institute_site
-			}
+			save_scope_as = ut_research_institute_site
 		}
 
-		if = {
-			limit = {
-				NOT = { has_global_variable = ut_first_research_institute }
-			}
-			set_global_variable = ut_first_research_institute
-			set_variable = ut_first_research_institute_builder
-		}
+		# if = {
+		# 	limit = {
+		# 		NOT = { has_global_variable = ut_first_research_institute }
+		# 	}
+		# 	set_global_variable = ut_first_research_institute
+		# 	set_variable = ut_first_research_institute_builder
+		# }
 	}
 
 	option = {
@@ -541,9 +524,35 @@ utopia_journal_prod.40 = {
         		name = ut_research_institute_site_mod
         	}
         }
-        show_as_tooltip = {
-        	remove_modifier = ut_research_institute_found_mod
+        # show_as_tooltip = {
+        # 	remove_modifier = ut_research_institute_found_mod
+        # }
+		add_journal_entry = {
+			type = ut_je_research_institute_construction
+			target = scope:ut_research_institute_site
+		}
+	}
+
+	
+	option = {
+		trigger = {
+			capital = {
+				ut_research_institute_site_building_trigger = yes
+			}
+		}
+		name = utopia.progress_b
+        capital = {
+        	add_modifier = {
+        		name = ut_research_institute_site_mod
+        	}
         }
+        # show_as_tooltip = {
+        # 	remove_modifier = ut_research_institute_found_mod
+        # }
+		add_journal_entry = {
+			type = ut_je_research_institute_construction
+        	target = scope:capital
+		}
 	}
 }
 
@@ -630,9 +639,9 @@ utopia_journal_prod.41 = {
         	}
         }
         show_as_tooltip = {
-        	remove_modifier = ut_nuclear_power_research_mod
+        	remove_modifier = ut_research_nuclear_power_mod
         }
-		add_technology_researched = nuclear_energy
+		add_technology_researched = nuclear_power
 	}
 }
 

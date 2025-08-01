@@ -302,6 +302,7 @@ nuclear_power = {
 	
 	modifier = {
 		country_resource_discovery_chance_mult = 0.05
+		building_power_plant_throughput_add = 0.2
 	}
 
 	ai_weight = {

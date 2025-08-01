@@ -109,6 +109,7 @@ ut_commercial_goods_complex_company = {
 	
 	extension_building_types = {
 		building_motor_industry
+		building_glassworks
 	}
 
 	possible_prestige_goods = {

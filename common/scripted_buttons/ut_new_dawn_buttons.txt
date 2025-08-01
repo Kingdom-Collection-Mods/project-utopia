@@ -11,10 +11,10 @@ ut_new_dawn_fascist_focus = {
 			text = ut_new_dawn_focus_freeze_tt
 			NOT = { has_variable = ut_new_dawn_bar_freeze }
 		}
-		custom_tooltip = {
-			text = ut_new_dawn_focus_already_selected_tt
-			NOT = { has_modifier = je_ut_new_dawn_fascist_focus }
-		}
+		# custom_tooltip = {
+		# 	text = ut_new_dawn_focus_already_selected_tt
+		# 	NOT = { has_modifier = je_ut_new_dawn_fascist_focus }
+		# }
 	}
 
 	effect = {	
@@ -30,6 +30,10 @@ ut_new_dawn_fascist_focus = {
 			days = normal_modifier_time
 		}
 	}
+	#1000 always
+	#10 very likely
+	#5 likely
+	#1 if no other reasons
 	ai_chance = {
 		value = 0
 		if = {
@@ -37,6 +41,36 @@ ut_new_dawn_fascist_focus = {
 				OR = {
 					c:GER ?= this
 					c:ITA ?= this
+				}
+			}
+			add = 10
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_ethnostate
+			}
+			add = 5
+		}
+		if = {
+			#Historically Germany, Italy, and Japan below in "ranking"?
+			limit = {
+				global_country_ranking < 5
+			}
+			add = 5
+		}
+		if = {
+			#Red scare if not socialist them self?
+			limit = {
+				NOT = { has_law = law_type:law_multicultural }
+				NOT = { has_law = law_type:law_cooperative_ownership }
+				NOT = { has_law = law_type:law_command_economy }
+				any_neighbouring_state = {
+					owner = {
+						OR = {
+							has_variable = ut_new_dawn_communist_focus
+							has_variable = ut_new_dawn_core_communist_var
+						}
+					}
 				}
 			}
 			add = 1
@@ -56,10 +90,10 @@ ut_new_dawn_autocrat_focus = {
 			text = ut_new_dawn_focus_freeze_tt
 			NOT = { has_variable = ut_new_dawn_bar_freeze }
 		}
-		custom_tooltip = {
-			text = ut_new_dawn_focus_already_selected_tt
-			NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }
-		}
+		# custom_tooltip = {
+		# 	text = ut_new_dawn_focus_already_selected_tt
+		# 	NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }
+		# }
 	}
 
 	effect = {
@@ -83,9 +117,32 @@ ut_new_dawn_autocrat_focus = {
 					c:AUS ?= this
 				}
 			}
-			add = 1
+			add = 10
 		}
+		
+		if = {
+			#let's stay in power, if nothing else to bother
+			limit = {
+				OR = {
+					has_law = law_type:law_monarchy
+					has_law = law_type:law_corporate_state
+				}
+				OR = {
+					has_law = law_type:law_autocracy
+					has_law = law_type:law_oligarchy
+				}
+			}
+			add = 5
+		}
+		if = {
+			#Same chance as fascist
+			limit = {
+				global_country_ranking < 5
+			}
+			add = 5
+		}	
 	}
+
 }
 
 ut_new_dawn_democrat_focus = {
@@ -100,6 +157,10 @@ ut_new_dawn_democrat_focus = {
 			text = ut_new_dawn_focus_freeze_tt
 			NOT = { has_variable = ut_new_dawn_bar_freeze }
 		}
+		# custom_tooltip = {
+		# 	text = ut_new_dawn_focus_already_selected_tt
+		# 	NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
+		# }
 		NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
 	}
 
@@ -123,14 +184,21 @@ ut_new_dawn_democrat_focus = {
 				c:USA ?= this
 				NOT = { exists = c:CSA }
 			}
-			add = 1
+			add = 10
 		}
 		if = {
 			limit = {
 				c:GBR ?= this
 				exists = c:GER
 			}
-			add = 1
+			add = 10
+		}
+		if = {
+			#Historically USA and Great Britain high "ranking"?
+			limit = {
+				global_country_ranking > 3
+			}
+			add = 5
 		}
 	}
 }
@@ -149,10 +217,10 @@ ut_new_dawn_communist_focus = {
 				has_variable = ut_new_dawn_bar_freeze
 			}
 		}
-		custom_tooltip = {
-			text = ut_new_dawn_focus_already_selected_tt
-			NOT = { has_modifier = je_ut_new_dawn_communist_focus }
-		}
+		# custom_tooltip = {
+		# 	text = ut_new_dawn_focus_already_selected_tt
+		# 	NOT = { has_modifier = je_ut_new_dawn_communist_focus }
+		# }
 	}
 
 	effect = {		
@@ -267,7 +335,7 @@ je_ut_new_dawn_democratic_cultural_values = {
 			OR = {
 				is_marginal = yes
 				custom_tooltip = {
-					text = ut_nd_democrat_interest_group_concept_tt
+					text = concept_ut_nd_democrat_interest_group_tt
 					ut_ideology_new_dawn_democrat_trigger = yes
 				}
 			}
@@ -276,7 +344,7 @@ je_ut_new_dawn_democratic_cultural_values = {
 			OR = {
 				is_marginal = yes
 				custom_tooltip = {
-					text = ut_nd_democrat_interest_group_concept_tt
+					text = concept_ut_nd_democrat_interest_group_tt
 					ut_ideology_new_dawn_democrat_trigger = yes
 				}
 			}

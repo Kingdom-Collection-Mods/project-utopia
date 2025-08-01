@@ -1,4 +1,4 @@
-### See power_bloc_principles for the individual effects
+﻿### See power_bloc_principles for the individual effects
 
 principle_group_modern_trade_league = {
 	unlocking_identity = identity_trade_league

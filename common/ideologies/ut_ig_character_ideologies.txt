@@ -1,4 +1,4 @@
-ut_ideology_environmentalist_leader = {
+﻿ut_ideology_environmentalist_leader = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_Agrarian.dds"
 	
 	character_ideology = yes
@@ -398,8 +398,8 @@ ut_ideology_autocratic_leader = {
 						c:AUS ?= this
 						c:TUR ?= this
 						c:RUS ?= this
+						has_modifier = je_ut_new_dawn_autocrat_focus
 					}
-					has_modifier = je_ut_new_dawn_autocrat_focus
 				}
 			}
 			multiply = 1.5
@@ -665,8 +665,8 @@ ut_ideology_national_socialist_leader = {
 						c:JAP ?= this
 						c:GER ?= this
 						c:ITA ?= this
+						has_modifier = je_ut_new_dawn_fascist_focus
 					}
-					has_modifier = je_ut_new_dawn_fascist_focus
 				}
 			}
 			multiply = 1.5

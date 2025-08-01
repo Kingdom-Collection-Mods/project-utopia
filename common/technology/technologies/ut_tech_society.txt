@@ -233,7 +233,7 @@ digital_payments = {
 		
 	modifier = {
 		state_service_workers_investment_pool_efficiency_mult = 0.05
-		country_trade_route_cost_mult = -0.05
+		building_trade_center_throughput_add = 0.05
 	}
 
 	unlocking_technologies = {
@@ -253,7 +253,7 @@ digital_trading = {
 		
 	modifier = {
 		state_service_workers_investment_pool_efficiency_mult = 0.05
-		country_trade_route_cost_mult = -0.05
+		building_trade_center_throughput_add = 0.05
 		country_max_companies_add = 1
 	}
 

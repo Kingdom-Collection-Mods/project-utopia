@@ -1,4 +1,4 @@
-service_workers = {
+﻿service_workers = {
 	texture = "gfx/interface/icons/pops_icons/service_workers.dds"
 	color = hsv{ 0.07 0.50 0.88 }
 	start_quality_of_life = 10

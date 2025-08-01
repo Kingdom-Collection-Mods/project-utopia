@@ -60,6 +60,24 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 		}
 	}
 	change_variable = { name = ut_nd_communist_progress_from_characters divide = 100 } #Character popularities are -100/100, rather than our desired -1/1, so divide by 100.
+	if = {
+		limit = {
+			var:ut_nd_communist_progress_from_characters > 1
+		}
+		set_variable = {
+			name = ut_nd_communist_progress_from_characters
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			var:ut_nd_communist_progress_from_characters < -1
+		}
+		set_variable = {
+			name = ut_nd_communist_progress_from_characters
+			value = -1
+		}
+	}
 	# From Interest Groups
 	every_interest_group = {
 		limit = {
@@ -129,6 +147,24 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 		}
 	}
 	change_variable = { name = ut_nd_democrat_progress_from_characters divide = 200 } #x2
+	if = {
+		limit = {
+			var:ut_nd_democrat_progress_from_characters > 1
+		}
+		set_variable = {
+			name = ut_nd_democrat_progress_from_characters
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			var:ut_nd_democrat_progress_from_characters < -1
+		}
+		set_variable = {
+			name = ut_nd_democrat_progress_from_characters
+			value = -1
+		}
+	}
 	# From Interest Groups
 	every_interest_group = {
 		limit = {
@@ -210,6 +246,24 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 		}
 	}
 	change_variable = { name = ut_nd_autocrat_progress_from_characters divide = 200 } #x2
+	if = {
+		limit = {
+			var:ut_nd_autocrat_progress_from_characters > 1
+		}
+		set_variable = {
+			name = ut_nd_autocrat_progress_from_characters
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			var:ut_nd_autocrat_progress_from_characters < -1
+		}
+		set_variable = {
+			name = ut_nd_autocrat_progress_from_characters
+			value = -1
+		}
+	}
 	# From Interest Groups
 	every_interest_group = {
 		limit = {
@@ -284,6 +338,24 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 		}
 	}
 	change_variable = { name = ut_nd_fascist_progress_from_characters divide = 100 }
+	if = {
+		limit = {
+			var:ut_nd_fascist_progress_from_characters > 1
+		}
+		set_variable = {
+			name = ut_nd_fascist_progress_from_characters
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			var:ut_nd_fascist_progress_from_characters < -1
+		}
+		set_variable = {
+			name = ut_nd_fascist_progress_from_characters
+			value = -1
+		}
+	}
 	# From Interest Groups
 	every_interest_group = {
 		limit = {
@@ -325,12 +397,12 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 	if = {
 		limit = {
 			any_political_movement = {
-				is_political_movement_type = movement_Fascist
+				is_political_movement_type = movement_fascist
 			}
 		}
 		random_political_movement = {
 			limit = {
-				is_political_movement_type = movement_Fascist
+				is_political_movement_type = movement_fascist
 			}
 			ROOT = {
 				set_variable = { name = ut_nd_fascist_progress_from_movements value = prev.political_movement_support }
