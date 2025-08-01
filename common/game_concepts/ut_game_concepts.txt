@@ -1,13 +1,13 @@
-﻿ut_nd_autocrat_characters_concept = {}
-ut_nd_fascist_characters_concept = {}
-ut_nd_democrat_characters_concept = {}
-ut_nd_communist_characters_concept = {}
+﻿concept_ut_nd_autocrat_characters = {}
+concept_ut_nd_fascist_characters = {}
+concept_ut_nd_democrat_characters = {}
+concept_ut_nd_communist_characters = {}
 
-ut_nd_autocrat_core_concept = {}
-ut_nd_democrat_core_concept = {}
-ut_nd_fascist_core_concept = {}
-ut_nd_communist_core_concept = {}
+concept_ut_nd_autocrat_core = {}
+concept_ut_nd_democrat_core = {}
+concept_ut_nd_fascist_core = {}
+concept_ut_nd_communist_core = {}
 
-ut_nd_path_to_utopia_concept = {}
+concept_ut_nd_path_to_utopia = {}
 
-ut_research_institute_concept = {}
+concept_ut_research_institute = {}
