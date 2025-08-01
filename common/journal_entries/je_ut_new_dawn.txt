@@ -315,7 +315,7 @@ je_ut_new_dawn_autocratic = {
 
 	modifiers_while_active = {
 		new_dawn_phase_2_mod
-		je_ut_new_dawn_autocrat_mod
+		je_ut_new_dawn_autocratic_mod
 	}
 
 	immediate = {
@@ -365,7 +365,7 @@ je_ut_new_dawn_autocratic = {
 			#event_new_dawn.1
 		}
 		effect = {
-			ut_new_dawn_democrat_progress = yes
+			ut_new_dawn_autocrat_progress = yes
 		}
 	}
 
@@ -373,10 +373,10 @@ je_ut_new_dawn_autocratic = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
+					NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }
 				}
 				add_modifier = {
-					name = je_ut_new_dawn_democrat_focus
+					name = je_ut_new_dawn_autocrat_focus
 				}
 			}
 		}
@@ -474,7 +474,7 @@ je_ut_new_dawn_fascist = {
 					NOT = { has_modifier = je_ut_new_dawn_fascist_focus }
 				}
 				add_modifier = {
-					name = je_ut_new_dawn_democrat_focus
+					name = je_ut_new_dawn_autocrat_focus
 				}
 			}
 		}
@@ -511,7 +511,7 @@ je_ut_new_dawn_communist = {
 
 	modifiers_while_active = {
 		new_dawn_phase_2_mod
-		je_ut_new_dawn_autocrat_mod
+		je_ut_new_dawn_autocratic_mod
 	}
 
 	immediate = {
@@ -561,7 +561,7 @@ je_ut_new_dawn_communist = {
 			#event_new_dawn.1
 		}
 		effect = {
-			ut_new_dawn_democrat_progress = yes
+			ut_new_dawn_autocrat_progress = yes
 		}
 	}
 
@@ -569,10 +569,10 @@ je_ut_new_dawn_communist = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
+					NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }
 				}
 				add_modifier = {
-					name = je_ut_new_dawn_democrat_focus
+					name = je_ut_new_dawn_autocrat_focus
 				}
 			}
 		}
@@ -585,7 +585,7 @@ je_ut_new_dawn_communist = {
 	fail = {
 		custom_tooltip = {
 			text = je_ut_new_dawn_critical_lower_bound_fail_tt
-			je:je_ut_new_dawn_democratic = { 
+			je:je_ut_new_dawn_communist = { 
 				"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" <= new_dawn_ideology_critical_lower_bound
 			}
 		}
