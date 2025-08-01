@@ -506,7 +506,6 @@ utopia_journal_prod.40 = {
 			}
 			save_scope_as = ut_research_institute_site
 		}
-
 		# if = {
 		# 	limit = {
 		# 		NOT = { has_global_variable = ut_first_research_institute }
@@ -551,7 +550,7 @@ utopia_journal_prod.40 = {
         # }
 		add_journal_entry = {
 			type = ut_je_research_institute_construction
-        	target = scope:capital
+        	target = capital
 		}
 	}
 }

@@ -1362,7 +1362,7 @@ ut_pm_research_institute_production_focus = {
 
 	state_modifiers = {
 		workforce_scaled = {
-			state_pop_qualifications_mult = 0.25
+			state_pop_qualifications_mult = 0.1
 		}
 	}
 }
