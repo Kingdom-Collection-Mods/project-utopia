@@ -286,6 +286,8 @@ law_social_market_economy = {
 		state_service_workers_investment_pool_efficiency_mult = 0.05
 		country_forbid_monopoly_bool = yes
 		interest_group_ig_industrialists_pol_str_mult = -0.2
+
+		country_disable_nationalization_bool = yes
 		
 		country_pec_fake_add_marketconfidence = 0.1 #pec
 	}
