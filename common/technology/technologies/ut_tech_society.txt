@@ -63,6 +63,7 @@ highspeed_transport = {
 		
 	modifier = {
 		state_infrastructure_from_population_max_add = 20
+		state_building_construction_sector_max_level_add = 5
 	}
 
 	unlocking_technologies = {	
@@ -559,7 +560,7 @@ political_progress_2_rationalism = {
 	category = society
 		
 	modifier = {
-		state_expected_sol_from_literacy = 1
+		state_expected_sol_from_literacy = 2
 	}
 
 	unlocking_technologies = {
@@ -577,7 +578,7 @@ political_progress_3_neoliberalism = {
 	category = society
 		
 	modifier = {
-		state_expected_sol_from_literacy = 1
+		state_expected_sol_from_literacy = 3
 	}
 
 	unlocking_technologies = {
@@ -595,7 +596,7 @@ political_progress_4_greens = {
 	category = society
 		
 	modifier = {
-		state_expected_sol_from_literacy = 1
+		state_expected_sol_from_literacy = 4
 	}
 
 	unlocking_technologies = {
