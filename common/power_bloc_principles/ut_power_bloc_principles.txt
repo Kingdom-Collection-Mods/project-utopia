@@ -227,7 +227,7 @@ ut_principle_military_cooperation_2 = {
 	power_bloc_modifier = {
 		# Modifiers from previous level(s)
 		power_bloc_disallow_war_bool = yes
-		power_bloc_customs_union_bool = yes
+		power_bloc_trade_advantage_add = 100
 		
 		
 	}
@@ -261,6 +261,7 @@ ut_principle_military_cooperation_3 = {
 		# Modifiers from previous level(s)
 		power_bloc_disallow_war_bool = yes		
 		power_bloc_customs_union_bool = yes
+		power_bloc_trade_advantage_add = 200
 	}
 
 	member_modifier = {
@@ -458,7 +459,6 @@ ut_modern_ideological_union_3 = {
 	member_modifier = {
 		political_movement_radicalism_from_enactment_disapproval_mult = -0.25
 		political_movement_radicalism_from_enactment_approval_mult = 0.25
-		power_bloc_trade_advantage_add = 200
 		power_bloc_customs_union_bool = yes
 
 		country_leader_has_law_enactment_success_mult = 0.2
