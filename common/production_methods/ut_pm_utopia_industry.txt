@@ -1150,7 +1150,7 @@ pm_heavy_machinery_coal_fired_plant = {
 			goods_input_engines_add = 12
 			goods_input_heavy_machinery_add = 4
 			goods_input_coal_add = 25
-			goods_output_electricity_add = 95
+			goods_output_electricity_add = 100
 		}
 
 		level_scaled = {
@@ -1180,7 +1180,7 @@ pm_heavy_machinery_oil_fired_plant = {
 			goods_input_engines_add = 12
 			goods_input_heavy_machinery_add = 4
 			goods_input_oil_add = 25
-			goods_output_electricity_add = 105
+			goods_output_electricity_add = 110
 		}
 
 		level_scaled = {
