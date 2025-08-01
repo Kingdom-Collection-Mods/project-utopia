@@ -1309,3 +1309,111 @@ pm_synthetic_oil_two_process = {
 		}
 	}
 }
+
+
+ut_pm_research_institute_one = {
+	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_max_weekly_innovation_add = 50
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 20
+			goods_input_computers_add = 20
+			goods_input_electronics_add = 10
+			goods_input_heavy_machinery_add = 10
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 500
+			building_employment_service_workers_add = 2000
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pop_qualifications_mult = 0.25
+		}
+	}
+}
+
+ut_pm_research_institute_production_focus = {
+	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_production_tech_research_speed_mult = 0.1
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+		}
+
+		level_scaled = {
+			building_employment_engineers_add = 5000
+			building_employment_academics_add = 2500
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pop_qualifications_mult = 0.25
+		}
+	}
+}
+
+ut_pm_research_institute_military_focus = {
+	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_military_tech_research_speed_mult = 0.1
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+		}
+
+		level_scaled = {
+			building_employment_engineers_add = 2500
+			building_employment_academics_add = 2500
+			building_employment_officers_add = 2500
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+		}
+	}
+}
+
+ut_pm_research_institute_society_focus = {
+	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_society_tech_research_speed_mult = 0.1
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+		}
+
+		level_scaled = {
+			building_employment_engineers_add = 2500
+			building_employment_academics_add = 5000
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+		}
+	}
+}

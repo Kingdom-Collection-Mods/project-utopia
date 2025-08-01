@@ -153,7 +153,7 @@ ut_high_tech_computer_site_mod = {
 	country_bureaucracy_add = -500
 }
 
-ut_nuclear_power_research_mod = {
+ut_research_nuclear_power_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
 	country_bureaucracy_add = -500
 	country_weekly_innovation_add = -10

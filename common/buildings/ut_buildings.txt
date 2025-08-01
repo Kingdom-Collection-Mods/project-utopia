@@ -405,7 +405,8 @@ building_ut_research_institute = {
 	downsizeable = no
 
 	production_method_groups = {
-		pmg_base_building_university
+		pmg_base_building_ut_research_institute
+		pmg_categories_building_ut_research_institute
 	}
 
 	icon = "gfx/interface/icons/building_icons/building_university.dds"

@@ -97,7 +97,7 @@ ut_research_nuclear_power = {
 	possible = {
 		produced_bureaucracy > 500
 		has_variable = ut_research_institute_found
-		has_technology_researched = computers
+		has_technology_researched = nuclear_power_research
 		any_scope_state = {
 			is_incorporated = yes
 			is_split_state = no

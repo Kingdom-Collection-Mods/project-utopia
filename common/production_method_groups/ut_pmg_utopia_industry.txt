@@ -1,4 +1,4 @@
-﻿#base
+#base
 pmg_base_building_construction_sector = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
@@ -182,5 +182,21 @@ pmg_base_building_renewable_power_plant = {
 	production_methods = {
 		pm_synthetic_oil_one_process
 		pm_synthetic_oil_two_process
+	}
+}
+
+pmg_base_building_ut_research_institute = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		ut_pm_research_institute_one
+	}
+}
+
+pmg_categories_building_ut_research_institute = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		ut_pm_research_institute_production_focus
+		ut_pm_research_institute_military_focus
+		ut_pm_research_institute_society_focus
 	}
 }
