@@ -321,7 +321,7 @@ je_ut_new_dawn_autocratic = {
 	scripted_button = je_ut_new_dawn_emergency_powers
 	scripted_button = je_ut_new_dawn_martial_law
 	scripted_button = je_ut_new_dawn_border_dispute
-	scripted_button = je_ut_new_dawn_suppress_dissents
+	scripted_button = je_ut_new_dawn_suppress_dissidents
 
 	immediate = {
 		ut_set_new_dawn_variables = yes
@@ -344,22 +344,15 @@ je_ut_new_dawn_autocratic = {
 			text = je_ut_new_dawn_autocratic_complete_condition_tt
 			always = no
 		}
-		
-		custom_tooltip = {
-			text = new_dawn_ideology_upper_bound_tt
-			je:je_ut_new_dawn_autocratic = { 
-				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= new_dawn_ideology_upper_bound
-			}
-		}
 	}
 
-	on_complete = {
-		custom_tooltip = {
-			text = je_ut_new_dawn_effect_tt
-			ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
-		}
-		set_variable = je_ut_new_dawn_done
-	}
+	# on_complete = {
+	# 	custom_tooltip = {
+	# 		text = je_ut_new_dawn_effect_tt
+	# 		ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+	# 	}
+	# 	set_variable = je_ut_new_dawn_done
+	# }
 
 	status_desc = {
 	}

@@ -126,6 +126,7 @@
  event_new_dawn.1.t: "New Dawn"
  event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
  event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. We must navigate these waters carefully, balancing the demands of the people with the needs of the state. The choices we make now will shape the future of our nation for generations to come."
+ event_new_dawn.1.a: "Towards a New Dawn"
 
  ut_new_dawn_status: "New Dawn"
  ut_new_dawn_focus_recently_changed: "Fokus kürzlich geändert"

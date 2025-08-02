@@ -227,8 +227,8 @@ je_ut_new_dawn_democratic_points_bar = {
 }
 
 je_ut_new_dawn_autocratic_points_bar = {
-	name = "je_ut_new_dawn_autocratic_points_bar"
-	desc = "je_ut_new_dawn_autocratic_points_bar_desc"
+	name = "je_ut_new_dawn_points_bar"
+	desc = "je_ut_new_dawn_points_bar_desc"
 
 	default = yes
 
@@ -273,8 +273,8 @@ je_ut_new_dawn_autocratic_points_bar = {
 }
 
 je_ut_new_dawn_fascist_points_bar = {
-	name = "je_ut_new_dawn_fascist_points_bar"
-	desc = "je_ut_new_dawn_fascist_points_bar_desc"
+	name = "je_ut_new_dawn_points_bar"
+	desc = "je_ut_new_dawn_points_bar_desc"
 
 	default = yes
 
@@ -319,8 +319,8 @@ je_ut_new_dawn_fascist_points_bar = {
 }
 
 je_ut_new_dawn_communist_points_bar = {
-	name = "je_ut_new_dawn_communist_points_bar"
-	desc = "je_ut_new_dawn_communist_points_bar_desc"
+	name = "je_ut_new_dawn_points_bar"
+	desc = "je_ut_new_dawn_points_bar_desc"
 
 	default = yes
 

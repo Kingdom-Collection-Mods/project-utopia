@@ -1,4 +1,4 @@
-﻿#Base
+#Base
 ut_new_dawn_fascist_focus = {
 	name = "ut_new_dawn_fascist_focus"
 	desc = "ut_new_dawn_fascist_focus_desc"
@@ -549,9 +549,9 @@ je_ut_new_dawn_border_dispute = {
 	}
 }
 
-je_ut_new_dawn_suppress_dissents = {
-	name = "je_ut_new_dawn_suppress_dissents"
-	desc = "je_ut_new_dawn_suppress_dissents_desc"
+je_ut_new_dawn_suppress_dissidents = {
+	name = "je_ut_new_dawn_suppress_dissidents"
+	desc = "je_ut_new_dawn_suppress_dissidents_desc"
 
 	possible = {
 		custom_tooltip = {
@@ -560,12 +560,12 @@ je_ut_new_dawn_suppress_dissents = {
 				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= new_dawn_ideology_required_points
 			}
 		}
-		NOT = { has_modifier = je_ut_new_dawn_suppress_dissents_mod }
+		NOT = { has_modifier = je_ut_new_dawn_suppress_dissidents_mod }
 	}
 
 	effect = {
 		add_modifier = {
-			name = je_ut_new_dawn_suppress_dissents_mod
+			name = je_ut_new_dawn_suppress_dissidents_mod
 			days = normal_modifier_time
 		}
 		add_radicals = {

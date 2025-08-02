@@ -206,11 +206,58 @@ je_ut_new_dawn_border_dispute_mod = {
 	country_infamy_decay_mult = -0.5
 }
 
-je_ut_new_dawn_suppress_dissents_mod = {
+je_ut_new_dawn_suppress_dissidents_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 }
 
-je_ut_new_dawn_suppress_dissents_self_mod = {
+je_ut_new_dawn_suppress_dissidents_self_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	country_legitimacy_base_add = 5
+}
+
+
+je_ut_new_dawn_suppress_dissidents_armed_forces_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	interest_group_ig_armed_forces_pol_str_mult = -0.2
+}
+
+je_ut_new_dawn_suppress_dissidents_urbanists_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	interest_group_ig_urbanists_pol_str_mult = -0.2
+}
+
+
+je_ut_new_dawn_suppress_dissidents_devout_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	interest_group_ig_devout_pol_str_mult = -0.2
+}
+
+je_ut_new_dawn_suppress_dissidents_industrialists_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	interest_group_ig_industrialists_pol_str_mult = -0.2
+}
+
+je_ut_new_dawn_suppress_dissidents_intelligentsia_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	interest_group_ig_intelligentsia_pol_str_mult = -0.2
+}
+
+je_ut_new_dawn_suppress_dissidents_landowners_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	interest_group_ig_landowners_pol_str_mult = -0.2
+}
+
+je_ut_new_dawn_suppress_dissidents_petit_bourgeoisie_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	interest_group_ig_petit_bourgeoisie_pol_str_mult = -0.2
+}
+
+je_ut_new_dawn_suppress_dissidents_rural_folk_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	interest_group_ig_rural_folk_pol_str_mult = -0.2
+}
+
+je_ut_new_dawn_suppress_dissidents_trade_unions_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	interest_group_ig_trade_unions_pol_str_mult = -0.2
 }

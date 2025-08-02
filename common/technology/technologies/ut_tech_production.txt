@@ -1,4 +1,4 @@
-
+﻿
 #Farming Productivity
 machinery_farming = {
 	era = era_6

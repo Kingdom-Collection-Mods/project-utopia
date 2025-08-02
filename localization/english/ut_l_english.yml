@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -133,14 +133,60 @@
  event_new_dawn.1.t: "New Dawn"
  event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
  event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. We must navigate these waters carefully, balancing the demands of the people with the needs of the state. The choices we make now will shape the future of our nation for generations to come."
+ event_new_dawn.1.a: "Towards a New Dawn"
 
  event_new_dawn.2.a: "Build foundation for core ideology"
+ 
+ event_new_dawn.2.d.a: "Our allies in the autocratic faction have moved swiftly to secure power, with support from key institutions. The transition is orderly, though not without opposition."
+ event_new_dawn.2.d.d: "The democratic coalition has taken the reins with a strong mandate. Civil society is energized, and the public seems optimistic—though challenges lie ahead."
+ event_new_dawn.2.d.c: "The communists have gained control, promising radical transformation. Old structures are being dismantled, and the people are called to unite under a new vision."
+ event_new_dawn.2.d.f: "The fascist bloc has assumed leadership, declaring a new era of national strength. Dissent is crushed quickly, and order is imposed through discipline."
+
+
+ event_new_dawn.2.f.a: "An iron grip restores control, though freedom may suffer."
+ event_new_dawn.2.f.d: "Hope rises with the vote—change through consensus."
+ event_new_dawn.2.f.c: "A workers' revolution reshapes the state."
+ event_new_dawn.2.f.f: "The strong lead the way into a purified future."
+
 
  event_new_dawn.3.t: "March on Capital"
- event_new_dawn.3.d.f: "Our fascist leader is marching on our capital, what should we do?"
- event_new_dawn.3.f.f: "Will the first try of fascism succeed in taking over our nation? Or will they have to try another route."
  event_new_dawn.3.a: "Let them take over"
  event_new_dawn.3.b: "This ideology must be suppressed"
+
+ event_new_dawn.3.f.a: "The rise of an unaligned autocratic force disrupts the political balance. Their seizure of power was swift, leaving little room for opposition or negotiation."
+ event_new_dawn.3.f.c: "Unexpected communist forces have overthrown the status quo. A radical realignment is underway, shocking much of the establishment."
+ event_new_dawn.3.f.d: "A democratic uprising has succeeded, catching the ruling elites off guard. The new leadership promises reform and transparency."
+ event_new_dawn.3.f.f: "Our fascist leader is marching on our capital, what should we do?"
+
+ event_new_dawn.3.d.a: "The regime fell, and the iron fist moved in swiftly."
+ event_new_dawn.3.d.d: "With protests swelling and rulers faltering, democracy took root in the aftermath."
+ event_new_dawn.3.d.c: "A vanguard emerged from the chaos, seizing the moment to usher in a new workers' state."
+ event_new_dawn.3.d.f: "Order collapsed—only strength could restore the nation's soul."
+
+ event_new_dawn.11.t: "Armed Forces Demand Leadership Change"
+ event_new_dawn.11.f: "Senior military officials, citing the nation's instability, have demanded the resignation of the current leadership. They propose a new figurehead who better aligns with their interests."
+ event_new_dawn.11.d: "When the generals speak, even presidents listen."
+
+ event_new_dawn.democrat_leader: "Appoint a new democratic leader"
+ event_new_dawn.autocrat_leader: "Empower an autocratic figurehead"
+ event_new_dawn.random_decision: "Let the outcome be decided organically"
+ event_new_dawn.suppress_random_decision: "Prevent unintended shifts in leadership"
+
+ event_new_dawn.30.t: "Suppress Dissidents"
+ event_new_dawn.30.d: "A growing faction of dissenters threatens national unity. The government is weighing whether to crack down forcefully to maintain stability."
+ event_new_dawn.30.f: "A growing faction of dissenters threatens national unity. The government is weighing whether to crack down forcefully to maintain stability."
+ event_new_dawn.30.o.self: "We will not tolerate division. Act decisively."
+
+ event_new_dawn.30.o.armed_forces: "Suppress the Armed Forces"
+ event_new_dawn.30.o.devout: "Suppress the Devout"
+ event_new_dawn.30.o.industrialists: "Suppress the Industrialists"
+ event_new_dawn.30.o.intelligentsia: "Suppress the Intelligentsia"
+ event_new_dawn.30.o.landowners: "Suppress the Landowners"
+ event_new_dawn.30.o.petit_bourgeoisie: "Suppress the Petit Bourgeoisie"
+ event_new_dawn.30.o.rural_folk: "Suppress the Rural Folk"
+ event_new_dawn.30.o.trade_unions: "Suppress the Trade Unions"
+ event_new_dawn.30.o.urbanists: "Suppress the Urbanists"
+
  event_new_dawn.uprising.setback_fascist: "Fascist loose progress"
  event_new_dawn.uprising.setback_communist: "Communist loose progress"
  event_new_dawn.uprising.setback_democrat: "Democrats loose progress"
@@ -222,16 +268,23 @@
  je_ut_new_dawn_democratic_fair_elections_tt: "Strengthens the legitimacy of the political system through transparent and fair elections"
  je_ut_new_dawn_democratic_fair_elections_mod: "Fair Elections"
 
- je_ut_new_dawn_autocratic: "Autocratic Awakening"
- je_ut_new_dawn_autocratic_reason: "The people demand order, stability, and strong"
+ je_ut_new_dawn_autocratic: "Autocratic System"
+ je_ut_new_dawn_autocratic_reason: "The people demand order, stability, and strong leadership."
+ je_ut_new_dawn_autocratic_complete_condition_tt: "There is no Autocratic Utopia, the entry can not be completed. They have access to repeatable actions instead."
+
  je_ut_new_dawn_emergency_powers: "Emergency Powers"
+ je_ut_new_dawn_emergency_powers_desc: "In times of crisis, the state must act decisively. Emergency powers allow for rapid response to threats and challenges, but they also risk undermining democratic institutions."
  je_ut_new_dawn_emergency_powers_mod: "$je_ut_new_dawn_emergency_powers$"
  je_ut_new_dawn_martial_law: "Martial Law"
+ je_ut_new_dawn_martial_law_desc: "Martial law is a powerful tool to restore order in times of crisis. It allows the state to act decisively, but it also risks undermining civil liberties and democratic institutions."
  je_ut_new_dawn_martial_law_mod: "$je_ut_new_dawn_martial_law$"
  je_ut_new_dawn_border_dispute: "Border Dispute"
+ je_ut_new_dawn_border_dispute_desc: "Border disputes can lead to tensions and conflicts between nations. It is important to resolve these disputes peacefully and diplomatically, but sometimes military action may be necessary to protect national interests."
  je_ut_new_dawn_border_dispute_mod: "$je_ut_new_dawn_border_dispute$"
- je_ut_new_dawn_suppress_dissents: "Suppress Dissidents"
- je_ut_new_dawn_suppress_dissents_mod: "$je_ut_new_dawn_suppress_dissents$"
+ je_ut_new_dawn_suppress_dissidents: "Suppress Dissidents"
+ je_ut_new_dawn_suppress_dissidents_desc: "Dissent can undermine the stability of the state and threaten national security. Suppressing dissent is a necessary measure to maintain order and protect the nation from internal threats."
+ je_ut_new_dawn_suppress_dissidents_mod: "$je_ut_new_dawn_suppress_dissidents$"
+ 
 
  je_ut_new_dawn_fascist: "Fascism"
  je_ut_new_dawn_fascist_reason: ""
