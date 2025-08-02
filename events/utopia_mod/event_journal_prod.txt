@@ -109,7 +109,7 @@ utopia_journal_prod.3 = {
 		default_option = yes
 		trigger = {
 			NOT = { has_technology_researched = heavy_machinery_industry }
-			can_research = steam_turbine
+			can_research = heavy_machinery_industry
 		}
 		add_technology_progress = { progress = 6000 technology = heavy_machinery_industry }
 	}
@@ -119,7 +119,7 @@ utopia_journal_prod.3 = {
 		
 		trigger = {
 			NOT = { has_technology_researched = heavy_machinery_industry }
-			can_research = steam_turbine
+			can_research = heavy_machinery_industry
 			country_rank = rank_value:great_power
 		}
 		add_technology_progress = { progress = 4150 technology = heavy_machinery_industry }

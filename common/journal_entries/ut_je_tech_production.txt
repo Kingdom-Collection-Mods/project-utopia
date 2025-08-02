@@ -71,7 +71,7 @@ ut_cnc_machines_je = {
 			level >= 8
 			occupancy > 0.90
 			cash_reserves_ratio > 0.30
-			has_active_production_method = pm_heavy_machinery_digital_process
+			has_active_production_method = pm_heavy_machinery_electronics_process
 		}
 	}
 

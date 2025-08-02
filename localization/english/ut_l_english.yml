@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -111,6 +111,11 @@ l_english:
  ut_je_ut_research_nuclear_power_reason: "The discovery of nuclear fission opens the door to a new era of energy production. What once was a theoretical concept becomes reality: controlled nuclear reactions that release immense amounts of energy. This is not just about power generation, but about mastering the atom itself.\nWith sufficient investment, we can lead this revolution—creating a new energy source that will change the world."
  ut_je_ut_research_nuclear_power_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy)"
  ut_research_nuclear_power_mod: "Research Nuclear Power"
+
+ ut_share_nuclear_power_research: "Share Nuclear Power Research"
+ ut_share_nuclear_power_research_desc:0 "REPLACE_ME"
+ ut_share_nuclear_power_research_effects_desc:0 "REPLACE_ME"
+ ut_share_nuclear_power_research_article_short_desc:0 "REPLACE_ME"
  
 
  ut_research_high_tech_computers: "Research High-Tech Computers"
@@ -977,8 +982,8 @@ l_english:
  goods_input_internet_add: "@internet! Internet input"
  goods_input_internet_add_desc: "The amount of @internet! Internet consumed by buildings"
 
- goods_input_heavy_machinery_add: "@heavy_machinery! Heavy Machinery input"
- goods_input_heavy_machinery_add_desc: "The amount of @heavy_machinery! Heavy Machinery consumed by buildings"
+ goods_input_heavy_machinery_add: "@heavy_machinery! Machinery input"
+ goods_input_heavy_machinery_add_desc: "The amount of @heavy_machinery! Machinery consumed by buildings"
 
  goods_input_plastic_add: "@plastic! Plastic input"
  goods_input_plastic_add_desc: "The amount of @plastic! Plastic consumed by buildings"

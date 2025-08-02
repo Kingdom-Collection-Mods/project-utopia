@@ -13,9 +13,18 @@
 	}
 
 	possible = {
-		pop_type_percent_country = {
-			pop_type = service_workers
-			percent > 0.05
+		OR = {
+			pop_type_percent_country = {
+				pop_type = service_workers
+				percent > 0.05
+			}
+			AND = {
+				is_ai = yes
+				pop_type_percent_country = {
+					pop_type = service_workers
+					percent > 0.01
+				}
+			}
 		}
 	}
 
