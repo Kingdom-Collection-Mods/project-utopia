@@ -52,7 +52,6 @@ je_ut_new_dawn_democrat_focus = {
 	country_radicals_from_conquest_mult = 0.5
 	country_infamy_generation_mult = -0.25
 	country_diplomatic_play_maneuvers_add = -50
-	country_law_enactment_time_mult = 0.25
 }
  
 je_ut_new_dawn_fascist_focus = {
@@ -60,20 +59,17 @@ je_ut_new_dawn_fascist_focus = {
 	country_radicals_from_conquest_mult = -0.5
 	country_infamy_generation_mult = 0.25
 	country_diplomatic_play_maneuvers_add = 100
-	country_law_enactment_time_mult = 0.25
 }
 
 je_ut_new_dawn_autocrat_focus = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
 	country_radicals_from_conquest_mult = -0.25
 	country_diplomatic_play_maneuvers_add = 50
-	country_law_enactment_time_mult = 0.25
 }
 
 je_ut_new_dawn_communist_focus = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_radicals_from_conquest_mult = 0.25
-	country_law_enactment_time_mult = 0.25
 }
 
 ai_great_power_buff_spread = {
@@ -125,6 +121,7 @@ je_ut_new_dawn_democratic_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_infamy_generation_mult = 0.5
 	unit_defense_mult = 0.1
+	country_law_enactment_time_mult = 0.25
 }
 
 je_ut_new_dawn_democratic_power_bloc_mod = {
@@ -141,26 +138,29 @@ je_ut_new_dawn_autocratic_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
 	country_suppression_attraction_factor = -0.25
 	country_authority_mult = 0.1
+	country_law_enactment_time_mult = 0.25
 }
 
 je_ut_new_dawn_fascist_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	country_law_enactment_time_mult = 0.25
 }
 
 je_ut_new_dawn_communist_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	country_law_enactment_time_mult = 0.25
 }
 
 ut_research_high_tech_computers_research_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	country_bureaucracy_add = -500
+	country_bureaucracy_add = -1000
 	country_weekly_innovation_add = -50
 }
 
 ut_research_institute_found_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	country_bureaucracy_add = -500
-	country_weekly_innovation_add = -10
+	country_bureaucracy_add = -1000
+	country_weekly_innovation_add = -20
 }
 
 ut_research_institute_site_mod = {
