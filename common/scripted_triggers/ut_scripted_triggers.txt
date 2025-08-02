@@ -93,6 +93,7 @@ ut_ideology_new_dawn_democrat_trigger = {
 				has_ideology = ideology:ideology_pacifist
 				has_ideology = ideology:ideology_feminist
 				has_ideology = ideology:ideology_modernizer_leader
+				has_ideology = ideology_market_liberal
 			}
 		}
 	}
