@@ -107,6 +107,12 @@
  ut_je_research_institute_construction: "Construct Research Institute"
  ut_je_research_institute_construction_reason: ""
 
+ ut_je_ut_research_nuclear_power: "Nuclear Power"
+ ut_je_ut_research_nuclear_power_reason: "The discovery of nuclear fission opens the door to a new era of energy production. What once was a theoretical concept becomes reality: controlled nuclear reactions that release immense amounts of energy. This is not just about power generation, but about mastering the atom itself.\nWith sufficient investment, we can lead this revolution—creating a new energy source that will change the world."
+ ut_je_ut_research_nuclear_power_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy)"
+ ut_research_nuclear_power_mod: "Research Nuclear Power"
+ 
+
  ut_research_high_tech_computers: "Research High-Tech Computers"
  ut_research_high_tech_computers_desc: "Start a research initiative into micro chip technologies and replace transistors. These machines will form the basis for modern simulations, industrial automation, and military superiority."
  ut_je_ut_research_high_tech_computers_research: "High-Tech Computer Research"
@@ -122,6 +128,7 @@
  je_ut_new_dawn_condition_tt: "Completed Democratic, Autocratic, Communist, or Fascist path."
  je_ut_new_dawn_effect_tt: "Unlocks endgame ideas (tbd)"
  new_dawn_mod: "New Dawn"
+ new_dawn_phase_2_mod: "New Dawn Phase 2"
 
  event_new_dawn.1.t: "New Dawn"
  event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
@@ -214,6 +221,23 @@
  je_ut_new_dawn_democratic_fair_elections_desc: "Universal suffrage forms the backbone of a just society. Institutionalizing fair elections strengthens public trust in democracy."
  je_ut_new_dawn_democratic_fair_elections_tt: "Strengthens the legitimacy of the political system through transparent and fair elections"
  je_ut_new_dawn_democratic_fair_elections_mod: "Fair Elections"
+
+ je_ut_new_dawn_autocratic: "Autocratic Awakening"
+ je_ut_new_dawn_autocratic_reason: "The people demand order, stability, and strong"
+ je_ut_new_dawn_emergency_powers: "Emergency Powers"
+ je_ut_new_dawn_emergency_powers_mod: "$je_ut_new_dawn_emergency_powers$"
+ je_ut_new_dawn_martial_law: "Martial Law"
+ je_ut_new_dawn_martial_law_mod: "$je_ut_new_dawn_martial_law$"
+ je_ut_new_dawn_border_dispute: "Border Dispute"
+ je_ut_new_dawn_border_dispute_mod: "$je_ut_new_dawn_border_dispute$"
+ je_ut_new_dawn_suppress_dissents: "Suppress Dissidents"
+ je_ut_new_dawn_suppress_dissents_mod: "$je_ut_new_dawn_suppress_dissents$"
+
+ je_ut_new_dawn_fascist: "Fascism"
+ je_ut_new_dawn_fascist_reason: ""
+
+ je_ut_new_dawn_communist: "Communism"
+ je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads
 
  ut_new_dawn_autocrat_focus: "Autocratic Focus (wip)"
  ut_new_dawn_autocrat_focus_desc: "work in progress"
@@ -440,6 +464,8 @@
  ut_principle_advanced_research_6: "Research Initiative 3"
 
 # Tech Production
+ machinery_farming: "Cabin Tractors"
+ machinery_farming_desc: "Tractors and harvesters replace oxen and scythes. These steel beasts plow fields, sow seeds, and reap crops at unprecedented speed—ushering in the age of mechanized agriculture."
  heavy_machinery_farming: "Heavy Tractors"
  heavy_machinery_farming_desc: "Steel colossi with 300-horsepower engines plow fields at record speed. These diesel giants replace ox carts and enable industrialized monocultures, while their balloon tires compact the soil for future Dust Bowls."
  airplane_farming: "Agricultural Aircraft"
@@ -454,12 +480,12 @@
  high_yield_crops_desc: "Dwarf wheat with turbocharged photosynthesis survives only in aquaculture. Green revolutions trade biodiversity for caloric records—nourishing civilizations while bleeding ecosystems dry."
  biotechnology: "Biotechnology"
  biotechnology_desc: "CRISPR scissors snip DNA like confetti. Gene-tech bacteria sweat insulin, while terminator genes sterilize seed stock—biology becomes a programmable factory lab."
- bauxite_mining: "Bauxite Mining"
- bauxite_mining_desc: "Excavators tear through lateritic soils in karst landscapes. The blood-red sludge leaves behind toxic lakes, but its aluminum feeds aircraft and Coke cans."
- aluminum_base: "Aluminum"
+ bauxite_mining: "Bayer-Process"
+ bauxite_mining_desc: "Bauxite refineries churn out aluminum oxide from red clay. This caustic process consumes rivers and forests, but the lightweight metal fuels everything from soda cans to skyscrapers."
+ aluminum_base: "Hall-Héroult-Process"
  aluminum_base_desc: "Hall-Héroult furnaces devour megawatts for blazing electrolysis. The lightweight metal crowns emperors like airships—but its energy hunger darkens entire regions."
- heavy_machinery_era_analog: "Mechanical Machinery"
- heavy_machinery_era_analog_desc: "Steam-driven rollers pave roads as overhead shafts fill factories. An age of grease and levers—brutally effective, always on the edge of breakdown."
+ heavy_machinery_era_analog: "Hydraulic Machinery"
+ heavy_machinery_era_analog_desc: "Steam-powered hydraulic presses shape steel into skyscrapers. These behemoths crush rock and mold metal, but their pistons leak oil and their boilers explode with a hiss."
  heavy_machinery_era_analog_two: "Complex Assembly Lines"
  heavy_machinery_era_analog_two_desc: "Steam-driven rollers pave roads as overhead shafts fill factories. An age of grease and levers—brutally effective, always on the edge of breakdown."
  heavy_machinery_era_digital: "CNC Machines"
@@ -761,7 +787,6 @@
  pm_bauxite_steam_powered_mine: "Steam-Powered Bauxite Mine"
  pm_bauxite_heavy_machinery_mine: "Heavy Machinery"
  pm_bauxite_automated_heavy_machinery_mine: "Automated Machinery"
- pm_aluminum_one_process: "Aluminum Oxidation"
  pm_rare_earths_one_mine: "Basic Rare Earth Mine"
  pm_rare_earths_two_mine: "Advanced Rare Earth Mine"
 
@@ -806,7 +831,8 @@
 
  pm_heavy_machinery_textile: "Textile Machines"
  pm_plastics_textile: "Plastic Textile Machines"
- pm_aluminum_two_process: "Hall-Héroult Process"
+ pm_aluminum_one_process: "Söderberg Electrode"
+ pm_aluminum_two_process: "Prebake Anode"
  pm_aluminum_three_process: "Smelting Recycling"
  pm_aluminum_packaging: "Aluminum Packaging"
  pm_plastic_packaging: "Plastic Packaging"
