@@ -177,3 +177,29 @@ ut_nuclear_power_site_mod = {
 	country_weekly_innovation_max_add = 5
 	country_bureaucracy_add = -500
 }
+
+je_ut_new_dawn_emergency_powers_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_law_enactment_time_mult = -0.25
+	country_law_enactment_stall_mult = -0.25
+}
+
+je_ut_new_dawn_martial_law_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	unit_offense_mult = 0.1
+}
+
+je_ut_new_dawn_border_dispute_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_infamy_generation_mult = -0.5
+	country_infamy_decay_mult = -0.5
+}
+
+je_ut_new_dawn_suppress_dissents_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+}
+
+je_ut_new_dawn_suppress_dissents_self_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_legitimacy_base_add = 5
+}

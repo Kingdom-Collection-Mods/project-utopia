@@ -356,8 +356,9 @@ event_new_dawn.3 = {
 	immediate = {
 		
 	}
+	# Take over by non focused ideology
 	option = {
-		name = event_new_dawn.3.a # Take over by non focused ideology
+		name = event_new_dawn.3.a 
 		default_option = yes
 		if = {
 			limit = {
@@ -372,6 +373,9 @@ event_new_dawn.3 = {
 			custom_tooltip = {
 				text = event_new_dawn.uprising.fascist_win
 			}
+			add_journal_entry = {
+				type = je_ut_new_dawn_fascist
+			}
 		}
 		else_if = {
 			limit = {
@@ -385,6 +389,9 @@ event_new_dawn.3 = {
 			}
 			custom_tooltip = {
 				text = event_new_dawn.uprising.communist_win
+			}
+			add_journal_entry = {
+				type = je_ut_new_dawn_communist
 			}
 		}
 		else_if = {
@@ -415,10 +422,14 @@ event_new_dawn.3 = {
 			set_variable = {
 				name = ut_new_dawn_core_autocrat_var
 			}
+			add_journal_entry = {
+				type = je_ut_new_dawn_autocratic
+			}
 		}
 	}
+	# Suppress
 	option = {
-		name = event_new_dawn.3.b # Suppress
+		name = event_new_dawn.3.b 
 		trigger = {
 			NOT = { has_variable = ut_new_dawn_core_suppressed_winner_1_var }
 		}
@@ -770,5 +781,33 @@ event_new_dawn.12 = {
 	
 	option = {
 		name = event_new_dawn.suppress_random_decision
+	}
+}
+
+#Autocratic
+event_new_dawn.30 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.30.t
+	desc = event_new_dawn.30.d
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		# by button
+	}
+
+	option = {
+		name = event_new_dawn.30.o.self
+		add_modifier = {
+			name = je_ut_new_dawn_suppress_dissents_self_mod
+			days = normal_modifier_time
+		}
 	}
 }

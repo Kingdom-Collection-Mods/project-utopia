@@ -451,3 +451,123 @@ je_ut_new_dawn_democratic_fair_elections = {
 		}
 	}
 }
+
+#Autocratic Buttons
+
+je_ut_new_dawn_emergency_powers = {
+	name = "je_ut_new_dawn_emergency_powers"
+	desc = "je_ut_new_dawn_emergency_powers_desc"
+
+	possible = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_autocratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		NOT = { has_modifier = je_ut_new_dawn_emergency_powers_mod }
+	}
+
+	effect = {
+		add_modifier = {
+			name = je_ut_new_dawn_emergency_powers_mod
+			days = normal_modifier_time
+		}
+		
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_autocratic = {
+				add_progress = { value = -50 name = je_ut_new_dawn_autocratic_points_bar }
+			}
+		}
+	}
+}
+
+je_ut_new_dawn_martial_law = {
+	name = "je_ut_new_dawn_martial_law"
+	desc = "je_ut_new_dawn_martial_law_desc"
+
+	possible = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_autocratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		NOT = { has_modifier = je_ut_new_dawn_martial_law_mod }
+	}
+
+	effect = {
+		add_modifier = {
+			name = je_ut_new_dawn_martial_law_mod
+			days = normal_modifier_time
+		}
+		
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_autocratic = {
+				add_progress = { value = -50 name = je_ut_new_dawn_autocratic_points_bar }
+			}
+		}
+	}
+}
+
+je_ut_new_dawn_border_dispute = {
+	name = "je_ut_new_dawn_border_dispute"
+	desc = "je_ut_new_dawn_border_dispute_desc"
+
+	possible = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_autocratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		NOT = { has_modifier = je_ut_new_dawn_border_dispute_mod }
+	}
+
+	effect = {
+		add_modifier = {
+			name = je_ut_new_dawn_border_dispute_mod
+			days = normal_modifier_time
+		}
+		
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_autocratic = {
+				add_progress = { value = -50 name = je_ut_new_dawn_autocratic_points_bar }
+			}
+		}
+	}
+}
+
+je_ut_new_dawn_suppress_dissents = {
+	name = "je_ut_new_dawn_suppress_dissents"
+	desc = "je_ut_new_dawn_suppress_dissents_desc"
+
+	possible = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_autocratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		NOT = { has_modifier = je_ut_new_dawn_suppress_dissents_mod }
+	}
+
+	effect = {
+		add_modifier = {
+			name = je_ut_new_dawn_suppress_dissents_mod
+			days = normal_modifier_time
+		}
+		
+		trigger_event = { id = event_new_dawn.30 }
+
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_autocratic = {
+				add_progress = { value = -50 name = je_ut_new_dawn_autocratic_points_bar }
+			}
+		}
+	}
+}

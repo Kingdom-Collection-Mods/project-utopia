@@ -318,6 +318,11 @@ je_ut_new_dawn_autocratic = {
 		je_ut_new_dawn_autocratic_mod
 	}
 
+	scripted_button = je_ut_new_dawn_emergency_powers
+	scripted_button = je_ut_new_dawn_martial_law
+	scripted_button = je_ut_new_dawn_border_dispute
+	scripted_button = je_ut_new_dawn_suppress_dissents
+
 	immediate = {
 		ut_set_new_dawn_variables = yes
 		
