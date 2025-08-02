@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -658,7 +658,7 @@
  combat_unit_type_support_systems: "Support Systems"
  combat_unit_type_missile_corvettes: "Missile Corvettes"
  combat_unit_type_surveillance_corvettes: "Surveillance Corvettes"
- combat_unit_type_capital_battleship: "Capital Battleship"
+ combat_unit_type_capital_battleship: "Capital Battleships"
  combat_unit_type_modern_submarine: "Modern Submarine"
  combat_unit_type_super_carrier: "Supercarrier"
  combat_unit_type_armored_infantry: "Armored Infantry"
