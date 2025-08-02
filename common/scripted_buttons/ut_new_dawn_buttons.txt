@@ -473,7 +473,9 @@ je_ut_new_dawn_emergency_powers = {
 			name = je_ut_new_dawn_emergency_powers_mod
 			days = normal_modifier_time
 		}
-		
+		add_radicals = {
+			value = 0.01
+		}
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_spend_tt
 			je:je_ut_new_dawn_autocratic = {
@@ -501,6 +503,9 @@ je_ut_new_dawn_martial_law = {
 		add_modifier = {
 			name = je_ut_new_dawn_martial_law_mod
 			days = normal_modifier_time
+		}
+		add_radicals = {
+			value = 0.01
 		}
 		
 		custom_tooltip = {
@@ -531,6 +536,9 @@ je_ut_new_dawn_border_dispute = {
 			name = je_ut_new_dawn_border_dispute_mod
 			days = normal_modifier_time
 		}
+		add_radicals = {
+			value = 0.01
+		}
 		
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_spend_tt
@@ -559,6 +567,9 @@ je_ut_new_dawn_suppress_dissents = {
 		add_modifier = {
 			name = je_ut_new_dawn_suppress_dissents_mod
 			days = normal_modifier_time
+		}
+		add_radicals = {
+			value = 0.01
 		}
 		
 		trigger_event = { id = event_new_dawn.30 }
