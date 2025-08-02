@@ -403,8 +403,6 @@ building_ut_research_institute = {
 	expandable = no
 
 	downsizeable = no
-	
-	infrastructure_usage_per_level = 10
 
 	production_method_groups = {
 		pmg_base_building_ut_research_institute
@@ -472,6 +470,14 @@ building_renewable_power_plant = {
 		owner = {
 			NOT = { has_law = law_type:law_industry_banned }
 		}
+	}
+
+	can_build_government = {
+		always = no
+	}
+
+	can_build_private = {
+		always = no
 	}
 
 	ownership_type = self
