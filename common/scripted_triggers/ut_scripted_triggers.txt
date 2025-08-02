@@ -1,4 +1,4 @@
-ut_ideology_environmentalist_valid_trigger = {
+﻿ut_ideology_environmentalist_valid_trigger = {
 	OR = {
 		is_interest_group_type = ig_devout
 		is_interest_group_type = ig_rural_folk
