@@ -741,6 +741,16 @@
  building_ut_research_institute: "Research Institute"
  building_renewable_power_plant: "Renewable Power Plant"
 
+ pmg_base_building_ut_research_institute: "Base"
+ pmg_categories_building_ut_research_institute: "Focus"
+ ut_pm_research_institute_one: "Basic Research Institute"
+ ut_pm_research_institute_two: "Advanced Research Institute"
+ ut_pm_research_institute_three: "Cutting-Edge Research Institute"
+ ut_pm_research_institute_no_focus: "No Focus"
+ ut_pm_research_institute_production_focus: "Production Focus"
+ ut_pm_research_institute_military_focus: "Military Focus"
+ ut_pm_research_institute_society_focus: "Society Focus"
+
  pmg_synthetic_oil_making_process: "Base"
  pmg_bauxite_making_process: "Base"
  pmg_logistics_bauxite_mine: "Bauxite Mine Logistics"
