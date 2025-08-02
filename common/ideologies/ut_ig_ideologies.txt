@@ -114,6 +114,13 @@ ideology_urbanist_human_rights_base = {
 		#todo rework into feminism 2.0
 		law_affirmative_equality = approve
 	}
+	
+	lawgroup_colonization = {
+		law_colonial_resettlement = disapprove
+		law_colonial_exploitation = disapprove
+		law_frontier_colonization = disapprove
+		law_no_colonial_affairs = approve
+	}
 }
 
 
