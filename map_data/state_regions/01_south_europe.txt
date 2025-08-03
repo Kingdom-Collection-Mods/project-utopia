@@ -933,6 +933,11 @@ STATE_NORTHERN_SERBIA = {
         bg_iron_mining = 24
         bg_logging = 13
     }
+    #unique rare earths mining tiny
+    resource = {
+        type = "bg_rare_earths_mining"
+        undiscovered_amount = 3
+    }
 }
 
 STATE_SOUTHERN_SERBIA = {

@@ -13,6 +13,12 @@
         bg_logging = 9
         bg_fishing = 8
     }
+    
+    #unique rare earths mining tiny
+    resource = {
+        type = "bg_rare_earths_mining"
+        undiscovered_amount = 3
+    }
     naval_exit_id = 3000
 }
 
@@ -257,6 +263,7 @@ STATE_KOLA = {
         bg_logging = 25
         bg_fishing = 10
     }
+    #unique rare earths mining medium
     resource = {
         type = "bg_rare_earths_mining"
         undiscovered_amount = 20

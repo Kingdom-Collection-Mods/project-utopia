@@ -166,6 +166,7 @@ STATE_WESTERN_AUSTRALIA = {
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 8
     }
+    #unique rare earths mining large
     resource = {
         type = "bg_rare_earths_mining"
         undiscovered_amount = 30
