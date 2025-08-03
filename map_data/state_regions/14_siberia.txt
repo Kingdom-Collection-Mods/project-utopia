@@ -257,6 +257,7 @@ STATE_TRANS_BAIKAL = {
         bg_iron_mining = 33
         bg_lead_mining = 28
         bg_sulfur_mining = 44
+        bg_bauxite_mining = 22 
         bg_logging = 24
     }
     resource = {

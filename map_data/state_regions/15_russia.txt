@@ -253,6 +253,7 @@ STATE_KOLA = {
     capped_resources = {
         bg_iron_mining = 85
         bg_sulfur_mining = 10
+        bg_bauxite_mining = 5 
         bg_logging = 25
         bg_fishing = 10
     }
@@ -497,6 +498,7 @@ STATE_KURSK = {
         bg_logging = 31
         bg_iron_mining = 93
         bg_sulfur_mining = 12
+        bg_bauxite_mining = 6 
     }
     resource = {
         type = "bg_gold_fields"
@@ -981,6 +983,7 @@ STATE_VYATKA = {
     capped_resources = {
         bg_coal_mining = 15
         bg_sulfur_mining = 10
+        bg_bauxite_mining = 5 
         bg_logging = 36
     }
     resource = {
@@ -1215,6 +1218,7 @@ STATE_CHUVASHIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_sulfur_mining = 15
+        bg_bauxite_mining = 8 
         bg_logging = 25
     }
     resource = {

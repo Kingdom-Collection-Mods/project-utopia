@@ -100,6 +100,7 @@ STATE_DELHI = {
     capped_resources = {
         bg_logging = 5
         bg_sulfur_mining = 2
+        bg_bauxite_mining = 1 
     }
 }
 
@@ -294,6 +295,7 @@ STATE_SINDH = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_opium_plantations" "bg_sugar_plantations" "bg_tobacco_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_sulfur_mining = 4
+        bg_bauxite_mining = 2 
         bg_fishing = 6
         bg_logging = 3
     }
@@ -315,6 +317,7 @@ STATE_RAJPUTANA = {
         bg_iron_mining = 24
         bg_lead_mining = 6
         bg_sulfur_mining = 3
+        bg_bauxite_mining = 2 
         bg_logging = 2
     }
 }

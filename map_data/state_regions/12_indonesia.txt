@@ -38,6 +38,7 @@ STATE_NORTH_BORNEO = {
     capped_resources = {
         bg_iron_mining = 24
         bg_sulfur_mining = 36
+        bg_bauxite_mining = 18 
         bg_logging = 20
         bg_fishing = 8
     }
@@ -133,6 +134,7 @@ STATE_WEST_JAVA = {
     capped_resources = {
         bg_coal_mining = 20
         bg_sulfur_mining = 32
+        bg_bauxite_mining = 16 
         bg_logging = 8
         bg_fishing = 11
     }
@@ -162,6 +164,7 @@ STATE_EAST_JAVA = {
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_sulfur_mining = 40
+        bg_bauxite_mining = 20 
         bg_logging = 7
         bg_fishing = 8
     }
@@ -190,6 +193,7 @@ STATE_CENTRAL_JAVA = {
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_sulfur_mining = 32
+        bg_bauxite_mining = 16 
         bg_logging = 6
         bg_fishing = 4
     }
@@ -215,6 +219,7 @@ STATE_NORTH_SUMATRA = {
     capped_resources = {
         bg_coal_mining = 40
         bg_sulfur_mining = 48
+        bg_bauxite_mining = 24 
         bg_logging = 29
         bg_fishing = 13
     }
@@ -239,6 +244,7 @@ STATE_SOUTH_SUMATRA = {
     capped_resources = {
         bg_coal_mining = 40
         bg_sulfur_mining = 48
+        bg_bauxite_mining = 24 
         bg_logging = 29
         bg_fishing = 13
     }
@@ -267,6 +273,7 @@ STATE_ACEH = {
     capped_resources = {
         bg_iron_mining = 15
         bg_sulfur_mining = 20
+        bg_bauxite_mining = 10 
         bg_logging = 14
         bg_fishing = 8
     }
@@ -371,6 +378,7 @@ STATE_EASTERN_NEW_GUINEA = {
     capped_resources = {
         bg_iron_mining = 24
         bg_sulfur_mining = 32
+        bg_bauxite_mining = 16 
         bg_logging = 16
         bg_fishing = 10
         bg_whaling = 2
@@ -401,6 +409,7 @@ STATE_SUNDA_ISLANDS = {
     capped_resources = {
         bg_iron_mining = 24
         bg_sulfur_mining = 40
+        bg_bauxite_mining = 20 
         bg_logging = 17
         bg_fishing = 10
     }
