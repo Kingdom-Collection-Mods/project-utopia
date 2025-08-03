@@ -67,7 +67,7 @@ ut_new_dawn_fascist_focus = {
 				any_neighbouring_state = {
 					owner = {
 						OR = {
-							has_modifier = ut_new_dawn_communist_focus
+							has_modifier = je_ut_new_dawn_communist_focus
 							has_variable = ut_new_dawn_core_communist_var
 						}
 					}

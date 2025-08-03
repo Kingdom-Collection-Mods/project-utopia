@@ -385,8 +385,8 @@ ut_ideology_autocratic_leader = {
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_modifier = ut_new_dawn_autocrat_focus }
-					NOT = { has_modifier = ut_new_dawn_fascist_focus }
+					NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }
+					NOT = { has_modifier = je_ut_new_dawn_fascist_focus }
 				}
 				ig_approval > happy
 			}
@@ -412,13 +412,13 @@ ut_ideology_autocratic_leader = {
 		value = 50
 		if = {
 			limit = {
-				has_modifier = ut_new_dawn_fascist_focus
+				has_modifier = je_ut_new_dawn_$1_focus
 			}
 			multiply = 1.5
 		}
 		if = {
 			limit = {
-				has_modifier = ut_new_dawn_autocrat_focus
+				has_modifier = je_ut_new_dawn_$1_focus
 			}
 			multiply = 2
 		}
@@ -433,8 +433,8 @@ ut_ideology_autocratic_leader = {
 						has_variable = chose_ethno_nationalism
 						has_variable = chose_conservatism
 						has_variable = chose_fascism
-						has_modifier = ut_new_dawn_communist_focus
-						has_modifier = ut_new_dawn_democrat_focus
+						has_modifier = je_ut_new_dawn_$1_focus
+						has_modifier = je_ut_new_dawn_$1_focus
 					}
 				}
 			}
