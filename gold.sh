@@ -49,18 +49,27 @@ for file in "$directory"/*; do
                         # Print original block
                         printf "%s", block_lines
 
-                        # Create and print modified duplicate block
+                        # Create and print clean duplicated block
+                        type_line = ""
+                        amount_line = ""
+
                         split(block_lines, lines, "\n")
-                        printf "    resource = {\n"
                         for (i in lines) {
                             line = lines[i]
                             if (line ~ /type\s*=\s*"bg_gold_fields"/) {
-                                print "        type = \"bg_rare_earths_mining\""
+                                type_line = "        type = \"bg_rare_earths_mining\""
                             } else if (line ~ /^\s*undiscovered_amount\s*=/) {
-                                print "        " line
+                                match(line, /undiscovered_amount\s*=\s*[0-9]+/, amt)
+                                amount_line = "        " amt[0]
                             }
                         }
-                        print "    }"
+
+                        if (type_line != "" && amount_line != "") {
+                            print "    resource = {"
+                            print type_line
+                            print amount_line
+                            print "    }"
+                        }
                         next
                     } else {
                         # Not a gold fields block — print as-is
@@ -74,6 +83,7 @@ for file in "$directory"/*; do
             # Default: print other lines
             { print }
         ' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
+
 
 
 
