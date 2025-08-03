@@ -22,13 +22,60 @@ for file in "$directory"/*; do
             /bg_gold_mining = [0-9]+/ {
                 match($0, /bg_gold_mining = ([0-9]+)/, arr)
                 gold_value = arr[1]
-                rare_earths_value = int((gold_value + 1) / 2)  # This ensures rounding up
+                rare_earths_value = int(gold_value) #1:1
                 print $0
                 printf "        bg_rare_earths_mining = %d \n", rare_earths_value
                 next
             }
             { print }
         ' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
+
+        
+        # Add new resource block for bg_rare_earths_mining based on bg_gold_fields
+        awk '
+            BEGIN { inside_block = 0; block_lines = "" }
+
+            /^\s*resource\s*=\s*{/ {
+                inside_block = 1
+                block_lines = $0 "\n"
+                next
+            }
+
+            inside_block {
+                block_lines = block_lines $0 "\n"
+                if ($0 ~ /^\s*}/) {
+                    inside_block = 0
+                    if (block_lines ~ /type\s*=\s*"bg_gold_fields"/) {
+                        # Print original block
+                        printf "%s", block_lines
+
+                        # Create and print modified duplicate block
+                        split(block_lines, lines, "\n")
+                        printf "    resource = {\n"
+                        for (i in lines) {
+                            line = lines[i]
+                            if (line ~ /type\s*=\s*"bg_gold_fields"/) {
+                                print "        type = \"bg_rare_earths_mining\""
+                            } else if (line ~ /^\s*undiscovered_amount\s*=/) {
+                                print "        " line
+                            }
+                        }
+                        print "    }"
+                        next
+                    } else {
+                        # Not a gold fields block — print as-is
+                        printf "%s", block_lines
+                        next
+                    }
+                }
+                next
+            }
+
+            # Default: print other lines
+            { print }
+        ' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
+
+
 
         echo "Finished processing $file."
     fi
