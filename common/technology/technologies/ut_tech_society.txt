@@ -199,11 +199,6 @@ check_payments = {
 		modern_financial_instruments
 	}
 
-	on_researched = {
-		custom_tooltip = {
-			text = ut_movement_rationalists_unlock_tt
-		}
-	}
 	
 	ai_weight = {
 		value = 1
@@ -587,6 +582,11 @@ political_progress_2_rationalism = {
 	
 	ai_weight = {
 		value = 2 # Important
+	}
+	on_researched = {
+		custom_tooltip = {
+			text = ut_movement_rationalists_unlock_tt
+		}
 	}
 }
 

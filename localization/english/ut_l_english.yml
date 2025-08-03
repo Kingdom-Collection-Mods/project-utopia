@@ -386,18 +386,18 @@
  ideology_urbanist_human_rights_base_desc: "Humanist ideologies focus on equality, social justice, and the protection of individual rights. They reject slavery and exploitation and advocate for strong social safety nets."
  ut_ideology_environmentalist_leader: "Ecologist"
  ut_ideology_environmentalist_leader_desc: "#lore Environmentalists.#!"
- ut_ideology_environmentalist_leader_unlock_tt: "Unlocks $ut_ideology_environmentalist_leader$"
+ ut_ideology_environmentalist_leader_unlock_tt: "Unlocks $ut_ideology_environmentalist_leader$ [concept_ideology]"
 
  ut_ideology_cosmopolitan: "Cosmopolitan"
  ut_ideology_cosmopolitan_desc: "Cosmopolitan ideologies emphasize global cooperation, cultural diversity, and the promotion of human rights. They advocate open borders, multiculturalism, and a secular government free from religious influence."
  ut_ideology_cosmopolitan_leader: "Cosmopolitan"
  ut_ideology_cosmopolitan_leader_desc: "Cosmopolitan ideologies emphasize global cooperation, cultural diversity, and the promotion of human rights. They advocate open borders, multiculturalism, and a secular government free from religious influence."
- ut_ideology_cosmopolitan_leader_unlock_tt: "Unlocks $ut_ideology_cosmopolitan_leader$"
+ ut_ideology_cosmopolitan_leader_unlock_tt: "Unlocks $ut_ideology_cosmopolitan_leader$ [concept_ideology]"
 
  ut_ideology_autocratic_leader: "Autocratic"
- ut_ideology_autocratic_leader_unlock_tt: "Unlocks $ut_ideology_autocratic_leader$"
+ ut_ideology_autocratic_leader_unlock_tt: "Unlocks $ut_ideology_autocratic_leader$ [concept_ideology]"
  ut_ideology_national_socialist_leader: "National Socialist"
- ut_ideology_national_socialist_leader_unlock_tt: "Unlocks $ut_ideology_national_socialist_leader$"
+ ut_ideology_national_socialist_leader_unlock_tt: "Unlocks $ut_ideology_national_socialist_leader$ [concept_ideology]"
 
  ideology_liberal_democratic: "Liberal-Democratic"
  ideology_moralist_democratic: "Moralist-Democratic"
@@ -417,9 +417,9 @@
  ut_movement_humanist_name: "Humanist Movement"
  ut_movement_rationalists_name: "Rationalist Movement"
 
- ut_movement_cosmopolitan_unlock_tt: "Unlocks $ut_movement_cosmopolitan_name$"
- ut_movement_humanist_unlock_tt: "Unlocks $ut_movement_humanist_name$"
- ut_movement_rationalists_unlock_tt: "Unlocks $ut_movement_cosmopolitan_name$"
+ ut_movement_cosmopolitan_unlock_tt: "Unlocks [$ut_movement_cosmopolitan_name$ [concept_political_movement]"
+ ut_movement_humanist_unlock_tt: "Unlocks $ut_movement_humanist_name$ [concept_political_movement]"
+ ut_movement_rationalists_unlock_tt: "Unlocks $ut_movement_rationalists_name$ [concept_political_movement]"
  
 
  lawgroup_environment_protection: "Environmental Protection"
