@@ -198,6 +198,12 @@ check_payments = {
 	unlocking_technologies = {	
 		modern_financial_instruments
 	}
+
+	on_researched = {
+		custom_tooltip = {
+			text = ut_movement_rationalists_unlock_tt
+		}
+	}
 	
 	ai_weight = {
 		value = 1
@@ -447,6 +453,12 @@ epa_one = {
 	unlocking_technologies = {
 		antibiotics
 	}
+
+	on_researched = {
+		custom_tooltip = {
+			text = ut_ideology_environmentalist_leader_unlock_tt
+		}
+	}
 	
 	ai_weight = {
 		value = 1
@@ -545,6 +557,12 @@ political_progress_1_cosmopolitan = {
 		state_expected_sol_from_literacy = 1 #todo: rethink, if ai techs this... no good. But good for player. 
 	}
 
+	on_researched = {
+		custom_tooltip = {
+			text = ut_ideology_cosmopolitan_leader_unlock_tt
+		}
+	}
+
 	unlocking_technologies = {
 		mass_propaganda
 	}
@@ -617,7 +635,10 @@ national_socialism = {
 
 	on_researched = {
 		custom_tooltip = {
-			text = anti_discrimination_laws_tt
+			text = ut_ideology_national_socialist_leader_unlock_tt
+		}
+		custom_tooltip = {
+			text = ut_ideology_autocratic_leader_unlock_tt
 		}
 	}
 
@@ -641,7 +662,7 @@ movie_industry = {
 
 	on_researched = {
 		custom_tooltip = {
-			text = anti_discrimination_laws_tt
+			text = ut_movement_rationalists_unlock_tt
 		}
 	}
 
@@ -665,7 +686,7 @@ online_forums = {
 
 	on_researched = {
 		custom_tooltip = {
-			text = anti_discrimination_laws_tt
+			text = ut_movement_rationalists_unlock_tt
 		}
 	}
 
@@ -690,7 +711,7 @@ social_media = {
 
 	on_researched = {
 		custom_tooltip = {
-			text = anti_discrimination_laws_tt
+			text = ut_movement_rationalists_unlock_tt
 		}
 	}
 
@@ -716,7 +737,10 @@ anti_discrimination_laws = {
 
 	on_researched = {
 		custom_tooltip = {
-			text = anti_discrimination_laws_tt
+			text = ut_movement_rationalists_unlock_tt
+		}
+		custom_tooltip = {
+			text = ut_movement_cosmopolitan_unlock_tt
 		}
 	}
 
@@ -851,6 +875,12 @@ public_universities = {
 
 	unlocking_technologies = {
 		compulsory_secondary_school
+	}
+
+	on_researched = {
+		custom_tooltip = {
+			text = ut_movement_humanist_unlock_tt
+		}
 	}
 	
 	ai_weight = {

@@ -660,7 +660,7 @@
  anti_multicultural_globalism_desc: "Gegenbewegungen beschwören ethnokulturelle Homogenität und Souveränität. Grenzzäune wachsen, während Sprachprüfungen und Leitkulturdebatten die Gesellschaft repolarisieren."
  anti_discrimination_laws: "Antidiskriminierungsgesetze"
  anti_discrimination_laws_desc: "Gesetze ahnden Benachteiligung aufgrund von Geschlecht, Hautfarbe oder Glauben. Quotenregelungen erzwingen Diversität in Vorstandsetagen und Parlamentsfraktionen."
- anti_discrimination_laws_tt: "unlocks @ut_movement_cosmopolitan_name!"
+ ut_movement_rationalists_unlock_tt: "unlocks $ut_movement_cosmopolitan_name$"
  emancipation_movement: "Emanzipationsbewegung"
  emancipation_movement_desc: ""
  lgbt_movement: "LGBT Bewegung"

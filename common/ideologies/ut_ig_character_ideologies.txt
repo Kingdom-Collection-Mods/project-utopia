@@ -302,7 +302,7 @@ ut_ideology_autocratic_leader = {
 	}
 	
 	country_trigger = {
-		has_technology_researched = mass_propaganda
+		has_technology_researched = national_socialism
 	}
 
 	interest_group_leader_trigger = {
@@ -518,7 +518,7 @@ ut_ideology_national_socialist_leader = {
 	}
 
 	country_trigger = {
-		has_technology_researched = mass_propaganda
+		has_technology_researched = national_socialism
 	}
 
 	interest_group_leader_trigger = {
