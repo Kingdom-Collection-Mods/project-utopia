@@ -417,7 +417,7 @@
  ut_movement_humanist_name: "Humanist Movement"
  ut_movement_rationalists_name: "Rationalist Movement"
 
- ut_movement_cosmopolitan_unlock_tt: "Unlocks [$ut_movement_cosmopolitan_name$ [concept_political_movement]"
+ ut_movement_cosmopolitan_unlock_tt: "Unlocks $ut_movement_cosmopolitan_name$ [concept_political_movement]"
  ut_movement_humanist_unlock_tt: "Unlocks $ut_movement_humanist_name$ [concept_political_movement]"
  ut_movement_rationalists_unlock_tt: "Unlocks $ut_movement_rationalists_name$ [concept_political_movement]"
  
@@ -772,7 +772,7 @@
  anti_discrimination_laws: "Anti-Discrimination Laws"
  anti_discrimination_laws_desc: "Anti-discrimination laws are legal measures designed to protect individuals from unfair treatment based on characteristics such as race, gender, religion, or sexual orientation. These laws aim to promote equality and ensure equal access to employment, education, and public services."
  emancipation_movement: "Emancipation Movement"
- emancipation_movement_desc: ""
+ emancipation_movement_desc: "Work in progress"
  lgbt_movement: "LGBT Movement"
  lgbt_movement_tt: ""
  lgbt_movement_desc: "LGBT movements advocate for the rights and acceptance of lesbian, gay, bisexual, and transgender people. Through activism, legal reforms, and cultural change, they challenge discrimination and seek social equality and recognition."
