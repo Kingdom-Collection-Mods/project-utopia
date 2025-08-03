@@ -33,7 +33,11 @@ for file in "$directory"/*; do
         
         # Add new resource block for bg_rare_earths_mining based on bg_gold_fields
         awk '
-            BEGIN { inside_block = 0; block_lines = "" }
+            BEGIN {
+                inside_block = 0
+                block_lines = ""
+                rare_earths_exists = 0
+            }
 
             /^\s*resource\s*=\s*{/ {
                 inside_block = 1
@@ -45,44 +49,42 @@ for file in "$directory"/*; do
                 block_lines = block_lines $0 "\n"
                 if ($0 ~ /^\s*}/) {
                     inside_block = 0
-                    if (block_lines ~ /type\s*=\s*"bg_gold_fields"/) {
+
+                    # Check if this block is for rare earths
+                    if (block_lines ~ /type\s*=\s*"bg_rare_earths_mining"/) {
+                        rare_earths_exists = 1
+                    }
+
+                    # Check if this block is for gold fields and rare earths not added
+                    if (block_lines ~ /type\s*=\s*"bg_gold_fields"/ && rare_earths_exists == 0) {
                         # Print original block
                         printf "%s", block_lines
 
-                        # Create and print clean duplicated block
-                        type_line = ""
-                        amount_line = ""
+                        # Extract amount
+                        amount = 0
+                        match(block_lines, /undiscovered_amount\s*=\s*([0-9]+)/, amt)
+                        if (amt[1] != "") amount = amt[1]
 
-                        split(block_lines, lines, "\n")
-                        for (i in lines) {
-                            line = lines[i]
-                            if (line ~ /type\s*=\s*"bg_gold_fields"/) {
-                                type_line = "        type = \"bg_rare_earths_mining\""
-                            } else if (line ~ /^\s*undiscovered_amount\s*=/) {
-                                match(line, /undiscovered_amount\s*=\s*[0-9]+/, amt)
-                                amount_line = "        " amt[0]
-                            }
-                        }
+                        # Print new rare earths block
+                        print "    resource = {"
+                        print "        type = \"bg_rare_earths_mining\""
+                        print "        undiscovered_amount = " amount
+                        print "    }"
 
-                        if (type_line != "" && amount_line != "") {
-                            print "    resource = {"
-                            print type_line
-                            print amount_line
-                            print "    }"
-                        }
-                        next
-                    } else {
-                        # Not a gold fields block — print as-is
-                        printf "%s", block_lines
                         next
                     }
+
+                    # Otherwise, print block as-is
+                    printf "%s", block_lines
+                    next
                 }
                 next
             }
 
-            # Default: print other lines
+            # Default: print everything else
             { print }
         ' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
+
 
 
 
