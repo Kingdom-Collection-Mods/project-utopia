@@ -424,7 +424,6 @@ STATE_ARKHANGELSK = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_gold_mining = 2
-        bg_rare_earths_mining = 2 
         bg_logging = 14
         bg_fishing = 10
     }
@@ -435,7 +434,7 @@ STATE_ARKHANGELSK = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 8
+        undiscovered_amount = 10
     }
     naval_exit_id = 3039
 }
@@ -1195,7 +1194,6 @@ STATE_CHELYABINSK = {
         bg_coal_mining = 25
         bg_logging = 16
         bg_gold_mining = 3
-        bg_rare_earths_mining = 3 
     }
     resource = {
         type = "bg_gold_fields"
@@ -1204,7 +1202,7 @@ STATE_CHELYABINSK = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 11
+        undiscovered_amount = 14
     }
 }
 

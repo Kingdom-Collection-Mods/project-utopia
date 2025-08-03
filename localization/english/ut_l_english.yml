@@ -187,7 +187,7 @@
  event_new_dawn.30.o.industrialists: "Suppress the Industrialists"
  event_new_dawn.30.o.intelligentsia: "Suppress the Intelligentsia"
  event_new_dawn.30.o.landowners: "Suppress the Landowners"
- event_new_dawn.30.o.petit_bourgeoisie: "Suppress the Petit Bourgeoisie"
+ event_new_dawn.30.o.petty_bourgeoisie: "Suppress the Petit Bourgeoisie"
  event_new_dawn.30.o.rural_folk: "Suppress the Rural Folk"
  event_new_dawn.30.o.trade_unions: "Suppress the Trade Unions"
  event_new_dawn.30.o.urbanists: "Suppress the Urbanists"

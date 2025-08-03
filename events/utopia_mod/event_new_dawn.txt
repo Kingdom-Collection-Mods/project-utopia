@@ -896,15 +896,15 @@ event_new_dawn.30 = {
 	}
 
 	option = {
-		name = event_new_dawn.30.o.petit_bourgeoisie
+		name = event_new_dawn.30.o.petty_bourgeoisie
 		trigger = {
-			ig:ig_petit_bourgeoisie = {
+			ig:ig_petty_bourgeoisie = {
 				is_in_government = no
 				is_marginal = no
 			}
 		}
 		add_modifier = {
-			name = je_ut_new_dawn_suppress_dissidents_petit_bourgeoisie_mod
+			name = je_ut_new_dawn_suppress_dissidents_petty_bourgeoisie_mod
 			days = normal_modifier_time
 		}
 	}

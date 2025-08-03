@@ -296,7 +296,7 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 }
 
 ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
-	set_variable = { name = ut_nd_fascist_progress_progress_from_characters value = 0 }
+	set_variable = { name = ut_nd_fascist_progress_from_characters value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_igs value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_laws value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_movements value = 0 }

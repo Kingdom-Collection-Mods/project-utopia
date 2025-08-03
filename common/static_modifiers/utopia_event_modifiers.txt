@@ -248,9 +248,9 @@ je_ut_new_dawn_suppress_dissidents_landowners_mod = {
 	interest_group_ig_landowners_pol_str_mult = -0.2
 }
 
-je_ut_new_dawn_suppress_dissidents_petit_bourgeoisie_mod = {
+je_ut_new_dawn_suppress_dissidents_petty_bourgeoisie_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	interest_group_ig_petit_bourgeoisie_pol_str_mult = -0.2
+	interest_group_ig_petty_bourgeoisie_pol_str_mult = -0.2
 }
 
 je_ut_new_dawn_suppress_dissidents_rural_folk_mod = {
