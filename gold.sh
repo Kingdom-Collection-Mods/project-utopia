@@ -36,54 +36,73 @@ for file in "$directory"/*; do
             BEGIN {
                 inside_block = 0
                 block_lines = ""
-                rare_earths_exists = 0
+                has_rare_earths = 0
+                file_content = ""
             }
 
-            /^\s*resource\s*=\s*{/ {
-                inside_block = 1
-                block_lines = $0 "\n"
-                next
-            }
-
-            inside_block {
-                block_lines = block_lines $0 "\n"
-                if ($0 ~ /^\s*}/) {
-                    inside_block = 0
-
-                    # Check if this block is for rare earths
-                    if (block_lines ~ /type\s*=\s*"bg_rare_earths_mining"/) {
-                        rare_earths_exists = 1
-                    }
-
-                    # Check if this block is for gold fields and rare earths not added
-                    if (block_lines ~ /type\s*=\s*"bg_gold_fields"/ && rare_earths_exists == 0) {
-                        # Print original block
-                        printf "%s", block_lines
-
-                        # Extract amount
-                        amount = 0
-                        match(block_lines, /undiscovered_amount\s*=\s*([0-9]+)/, amt)
-                        if (amt[1] != "") amount = amt[1]
-
-                        # Print new rare earths block
-                        print "    resource = {"
-                        print "        type = \"bg_rare_earths_mining\""
-                        print "        undiscovered_amount = " amount
-                        print "    }"
-
-                        next
-                    }
-
-                    # Otherwise, print block as-is
-                    printf "%s", block_lines
-                    next
+            {
+                file_content = file_content $0 "\n"
+                if ($0 ~ /type\s*=\s*"bg_rare_earths_mining"/) {
+                    has_rare_earths = 1
                 }
-                next
             }
 
-            # Default: print everything else
-            { print }
+            END {
+                if (has_rare_earths) {
+                    sub(/\n$/, "", file_content)  # Remove trailing newline
+                    printf "%s", file_content
+                    exit
+                }
+
+                # Process file content to add rare earths
+                split(file_content, lines, "\n")
+                inside_block = 0
+                block_lines = ""
+
+                for (i = 1; i <= length(lines); i++) {
+                    line = lines[i]
+
+                    if (line ~ /^\s*resource\s*=\s*{/) {
+                        inside_block = 1
+                        block_lines = line "\n"
+                        continue
+                    }
+
+                    if (inside_block) {
+                        block_lines = block_lines line "\n"
+                        if (line ~ /^\s*}/) {
+                            inside_block = 0
+
+                            if (block_lines ~ /type\s*=\s*"bg_gold_fields"/) {
+                                # Print original block
+                                printf "%s", block_lines
+
+                                # Extract undiscovered amount
+                                amt = 0
+                                if (block_lines ~ /undiscovered_amount\s*=\s*([0-9]+)/) {
+                                    match(block_lines, /undiscovered_amount\s*=\s*([0-9]+)/, m)
+                                    amt = m[1]
+                                }
+
+                                # Add rare earths block once
+                                print "    resource = {"
+                                print "        type = \"bg_rare_earths_mining\""
+                                print "        undiscovered_amount = " amt
+                                print "    }"
+                                continue
+                            } else {
+                                printf "%s", block_lines
+                                continue
+                            }
+                        }
+                        continue
+                    }
+
+                    print line
+                }
+            }
         ' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
+
 
 
 
