@@ -1357,6 +1357,10 @@ law_registration_process = {
 
 	progressiveness = 50
 
+	unlocking_technologies = {
+		union_new_mandates
+	}
+
 	modifier = {
 		country_mass_migration_attraction_mult = -0.25
 		country_migration_restrictiveness_add = 20
