@@ -107,6 +107,10 @@ STATE_ALASKA = {
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 12
     }
+    resource = {
+        type = "bg_rare_earths_mining"
+        undiscovered_amount = 12
+    }
     naval_exit_id = 3119
 }
 
@@ -183,6 +187,10 @@ STATE_COLORADO = {
     resource = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
+        undiscovered_amount = 8
+    }
+    resource = {
+        type = "bg_rare_earths_mining"
         undiscovered_amount = 8
     }
     resource = {
@@ -1444,7 +1452,7 @@ STATE_BAJIO = {
     capped_resources = {
         bg_iron_mining = 23
         bg_gold_mining = 4
-        bg_rare_earths_mining = 2 
+        bg_rare_earths_mining = 4 
     }
 }
 

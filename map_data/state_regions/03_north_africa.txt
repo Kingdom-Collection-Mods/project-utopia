@@ -280,7 +280,7 @@ STATE_INNER_MOROCCO = {
         bg_lead_mining = 30
         bg_fishing = 4
         bg_gold_mining = 3
-        bg_rare_earths_mining = 2 
+        bg_rare_earths_mining = 3 
         bg_coal_mining = 6
     }
     naval_exit_id = 3089

@@ -16,11 +16,16 @@
         bg_iron_mining = 96
         bg_lead_mining = 81
         bg_gold_mining = 2
+        bg_rare_earths_mining = 2 
         bg_logging = 27
     }
     resource = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
+        undiscovered_amount = 6
+    }
+    resource = {
+        type = "bg_rare_earths_mining"
         undiscovered_amount = 6
     }
     resource = {
