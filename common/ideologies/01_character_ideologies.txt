@@ -2893,6 +2893,7 @@ ideology_ethno_nationalist = {
 	
 	lawgroup_migration = {
 		law_migration_controls = strongly_approve
+		law_registration_process = strongly_approve
 		law_closed_borders = approve
 		law_no_migration_controls = disapprove	
 	}
@@ -5650,6 +5651,7 @@ ideology_sovereignist_leader = { # For colonised peoples
 	lawgroup_migration = {
 		law_closed_borders = approve
 		law_migration_controls = strongly_approve
+		law_registration_process = strongly_approve
 		law_no_migration_controls = disapprove
 	}
 	

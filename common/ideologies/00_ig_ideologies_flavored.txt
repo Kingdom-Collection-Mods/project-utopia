@@ -791,6 +791,7 @@ ideology_sovereignist = {
 	lawgroup_migration = {
 		law_closed_borders = approve
 		law_migration_controls = strongly_approve
+		law_registration_process = strongly_approve
 		law_no_migration_controls = disapprove
 	}
 	
@@ -890,6 +891,7 @@ ideology_malthusian = {
 	lawgroup_migration = {
 		law_no_migration_controls = approve
 		law_migration_controls = disapprove
+		law_registration_process = disapprove
 		law_closed_borders = strongly_disapprove
 	}
 

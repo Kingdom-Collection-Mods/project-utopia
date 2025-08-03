@@ -143,6 +143,7 @@ ut_ideology_cosmopolitan_leader = {
 	lawgroup_migration = {
 		law_closed_borders = strongly_disapprove
 		law_migration_controls = disapprove
+		law_registration_process = disapprove
 		law_no_migration_controls = approve
 	}
 
@@ -274,6 +275,7 @@ ut_ideology_autocratic_leader = {
 	lawgroup_migration = {
 		law_closed_borders = strongly_approve
 		law_migration_controls = approve
+		law_registration_process = approve
 		law_no_migration_controls = strongly_disapprove
 	}
 	
@@ -503,6 +505,7 @@ ut_ideology_national_socialist_leader = {
 	lawgroup_migration = {
 		law_closed_borders = strongly_approve
 		law_migration_controls = approve
+		law_registration_process = approve
 		law_no_migration_controls = strongly_disapprove
 	}
 
@@ -510,6 +513,7 @@ ut_ideology_national_socialist_leader = {
 	lawgroup_migration = {
 		law_closed_borders = strongly_approve
 		law_migration_controls = approve
+		law_registration_process = approve
 		law_no_migration_controls = strongly_disapprove
 	}
 
