@@ -1,4 +1,4 @@
-﻿STATE_MALAYA = {
+STATE_MALAYA = {
     id = 540
     subsistence_building = "building_subsistence_rice_paddies"
     provinces = { "x0080B0" "x08673B" "x23578B" "x374A68" "x660411" "x66170B" "x6CFA94" "x76546D" "x78EF92" "x8080B0" "x80C0B0" "x8E3305" "xAA2287" "xAF3737" "xB6B53D" "xC00130" "xC84C4C" "xCAB9F2" "xCF3E8D" "xD8E596" "xE87C53" "xF9F87A" "xFCBAFC" }
@@ -55,6 +55,10 @@ STATE_NORTH_BORNEO = {
         type = "bg_rubber"
         undiscovered_amount = 16
     }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 20
+    }	
     naval_exit_id = 3055
 }
 
@@ -114,7 +118,7 @@ STATE_EAST_BORNEO = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 40
+        undiscovered_amount = 60
     }
     naval_exit_id = 3125
 }
@@ -144,7 +148,7 @@ STATE_WEST_JAVA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        undiscovered_amount = 20
     }
     naval_exit_id = 3052
 }
@@ -174,7 +178,7 @@ STATE_EAST_JAVA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        undiscovered_amount = 20
     }
     naval_exit_id = 3052
 }
@@ -254,7 +258,7 @@ STATE_SOUTH_SUMATRA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        undiscovered_amount = 20
     }
     naval_exit_id = 3120
 }
@@ -283,7 +287,7 @@ STATE_ACEH = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        undiscovered_amount = 25
     }
     naval_exit_id = 3051
 }
@@ -312,7 +316,7 @@ STATE_WESTERN_NEW_GUINEA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        undiscovered_amount = 15
     }
     naval_exit_id = 3125
 }
@@ -389,7 +393,7 @@ STATE_EASTERN_NEW_GUINEA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        undiscovered_amount = 15
     }
     naval_exit_id = 3129
 }
