@@ -353,6 +353,7 @@ ideology_isolationist = {
 	lawgroup_colonization = {
 		law_frontier_colonization = strongly_approve
 		law_no_colonial_affairs = approve
+		law_decolonization = neutral
 		law_colonial_resettlement = disapprove
 		law_colonial_exploitation = disapprove
 	}
@@ -489,6 +490,7 @@ ideology_jingoist = {
 		law_colonial_exploitation = approve
 		law_frontier_colonization = approve
 		law_no_colonial_affairs = neutral
+		law_decolonization = neutral
 	}
 }
 
@@ -832,6 +834,7 @@ ideology_plutocratic = {
 	lawgroup_colonization = {
 		law_colonial_exploitation = approve
 		law_no_colonial_affairs = neutral
+		law_decolonization = neutral
 		law_colonial_resettlement = neutral
 		law_frontier_colonization = neutral
 	}

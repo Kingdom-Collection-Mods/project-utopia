@@ -532,6 +532,7 @@ ideology_sikh_militancy = {
 		law_colonial_exploitation = approve
 		law_frontier_colonization = approve
 		law_no_colonial_affairs = neutral
+		law_decolonization = neutral
 	}
 }
 
@@ -705,6 +706,7 @@ ideology_colonialist = {
 	lawgroup_colonization = {
 		law_colonial_exploitation = approve
 		law_no_colonial_affairs = neutral
+		law_decolonization = disapprove
 		law_colonial_resettlement = neutral
 		law_frontier_colonization = neutral
 	}
