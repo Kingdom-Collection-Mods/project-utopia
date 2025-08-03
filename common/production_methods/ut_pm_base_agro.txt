@@ -528,7 +528,7 @@ pm_ut_factory_farming = {
 	}
 
 	unlocking_technologies = {
-		mechanized_farming
+		machinery_farming
 	}
 	building_modifiers = {
 		workforce_scaled = {
