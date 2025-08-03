@@ -469,6 +469,8 @@
  law_private_pension_desc: ""
  law_ut_minimum_wage: "Minimum Wage"
  law_ut_minimum_wage_desc: ""
+ law_decolonization: "Decolonization"
+ law_decolonization_desc: "work in progress"
 
 
  institution_epa: "Environmental Protection"

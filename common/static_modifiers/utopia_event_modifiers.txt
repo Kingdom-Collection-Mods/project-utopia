@@ -1,4 +1,4 @@
-﻿# Heavy Tractors
+# Heavy Tractors
 agricultural_mechanization = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	building_rye_farm_throughput_add = 0.15
@@ -260,4 +260,10 @@ je_ut_new_dawn_suppress_dissidents_rural_folk_mod = {
 je_ut_new_dawn_suppress_dissidents_trade_unions_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	interest_group_ig_trade_unions_pol_str_mult = -0.2
+}
+
+
+ut_released_colony = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_acceptance_culture_base_add = -50
 }

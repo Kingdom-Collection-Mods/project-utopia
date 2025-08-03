@@ -232,6 +232,18 @@ je_ut_new_dawn_democratic = {
 				name = je_ut_new_dawn_democrat_focus
 			}
 		}
+		if = {
+			limit = {
+				GBR ?= this
+				power_bloc_leader = yes
+				has_principle_group = principle_group_colonial_offices
+			}
+			remove_principle = principle_colonial_offices_1
+			remove_principle = principle_colonial_offices_2
+			remove_principle = principle_colonial_offices_3
+
+			add_principle = principle_external_trade_1			
+		}
 	}
 	
 	scripted_button = je_ut_new_dawn_democratic_spirit
