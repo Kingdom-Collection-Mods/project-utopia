@@ -60,10 +60,6 @@ STATE_VICTORIA = {
         type = "bg_rare_earths_mining"
         undiscovered_amount = 6
     }
-    resource = {
-        type = "bg_rare_earths_mining"
-        undiscovered_amount = 6
-    }
     naval_exit_id = 3122
 }
 

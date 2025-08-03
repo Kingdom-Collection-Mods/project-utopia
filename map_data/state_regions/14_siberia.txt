@@ -28,10 +28,6 @@
         type = "bg_rare_earths_mining"
         undiscovered_amount = 6
     }
-    resource = {
-        type = "bg_rare_earths_mining"
-        undiscovered_amount = 6
-    }
 }
 
 STATE_TOMSK = {

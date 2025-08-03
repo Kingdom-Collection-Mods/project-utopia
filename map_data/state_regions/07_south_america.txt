@@ -407,10 +407,6 @@ STATE_CAJAMARCA = {
         undiscovered_amount = 4
     }
     resource = {
-        type = "bg_rare_earths_mining"
-        undiscovered_amount = 4
-    }
-    resource = {
         type = "bg_oil_extraction"
         undiscovered_amount = 20
     }

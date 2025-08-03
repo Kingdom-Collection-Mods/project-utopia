@@ -194,10 +194,6 @@ STATE_COLORADO = {
         undiscovered_amount = 8
     }
     resource = {
-        type = "bg_rare_earths_mining"
-        undiscovered_amount = 8
-    }
-    resource = {
         type = "bg_oil_extraction"
         undiscovered_amount = 20
     }
