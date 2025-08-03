@@ -144,6 +144,7 @@ STATE_HINGGAN = {
         bg_lead_mining = 24
         bg_logging = 6
     }
+    #unique rare earths mining large
     resource = {
         type = "bg_rare_earths_mining"
         undiscovered_amount = 30
@@ -648,6 +649,11 @@ STATE_FORMOSA = {
         bg_logging = 7
         bg_fishing = 13
     }
+    #unique rare earths mining small
+    resource = {
+        type = "bg_rare_earths_mining"
+        undiscovered_amount = 20
+    }
     naval_exit_id = 3056
 }
 
@@ -800,7 +806,7 @@ STATE_TONKIN = {
         type = "bg_rubber"
         undiscovered_amount = 16
     }
-    
+    #unique rare earths mining medium
     resource = {
         type = "bg_rare_earths_mining"
         undiscovered_amount = 20

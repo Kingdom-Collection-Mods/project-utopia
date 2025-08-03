@@ -76,6 +76,11 @@ STATE_NORRLAND = {
         bg_logging = 20
         bg_fishing = 12
     }
+    #unique rare earths mining small
+    resource = {
+        type = "bg_rare_earths_mining"
+        undiscovered_amount = 10
+    }
     naval_exit_id = 3000
 }
 

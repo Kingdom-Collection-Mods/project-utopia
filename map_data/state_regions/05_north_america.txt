@@ -1010,6 +1010,12 @@ STATE_QUEBEC = {
         bg_whaling = 4
         bg_fishing = 8
     }
+    
+    #unique rare earths mining small
+    resource = {
+        type = "bg_rare_earths_mining"
+        undiscovered_amount = 10
+    }
     naval_exit_id = 3045
 }
 
@@ -1172,6 +1178,12 @@ STATE_NORTHWEST_TERRITORIES = {
         bg_iron_mining = 18
         bg_logging = 11
     }
+    
+    #unique rare earths mining small
+    resource = {
+        type = "bg_rare_earths_mining"
+        undiscovered_amount = 10
+    }
 }
 
 STATE_NUNAVUT = {
@@ -1322,9 +1334,10 @@ STATE_CALIFORNIA = {
         type = "bg_oil_extraction"
         undiscovered_amount = 50
     }
+    #unique rare earths mining medium
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 30
+        undiscovered_amount = 20
     }
     naval_exit_id = 3153
 }
@@ -1679,6 +1692,11 @@ STATE_BAJA_CALIFORNIA = {
     capped_resources = {
         bg_logging = 2
         bg_fishing = 6
+    }
+    #unique rare earths mining small
+    resource = {
+        type = "bg_rare_earths_mining"
+        undiscovered_amount = 10
     }
     naval_exit_id = 3153
 }
