@@ -1,0 +1,6 @@
+﻿lawgroup_lgbt_rights = {
+	law_group_category = human_rights
+	
+	progressive_movement_chance = 2.0
+	regressive_movement_chance = 0.25	
+}

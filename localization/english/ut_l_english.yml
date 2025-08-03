@@ -113,9 +113,9 @@
  ut_research_nuclear_power_mod: "Research Nuclear Power"
 
  ut_share_nuclear_power_research: "Share Nuclear Power Research"
- ut_share_nuclear_power_research_desc:0 "REPLACE_ME"
- ut_share_nuclear_power_research_effects_desc:0 "REPLACE_ME"
- ut_share_nuclear_power_research_article_short_desc:0 "REPLACE_ME"
+ ut_share_nuclear_power_research_desc: "REPLACE_ME"
+ ut_share_nuclear_power_research_effects_desc: "REPLACE_ME"
+ ut_share_nuclear_power_research_article_short_desc: "REPLACE_ME"
  
 
  ut_research_high_tech_computers: "Research High-Tech Computers"
@@ -423,7 +423,9 @@
  
 
  lawgroup_environment_protection: "Environmental Protection"
+ lawgroup_environment_protection_desc: "Laws and institutions that protect the environment, promote sustainability, and ensure ecological balance."
  lawgroup_food_safety: "Food Safety"
+ lawgroup_food_safety_desc: "Laws and institutions that ensure food safety, hygiene, and quality standards in food production and distribution."
 
  law_social_market_economy: "Social Market Economy"
  law_social_market_economy_desc: "A regulated market economy that combines free competition with social security to promote prosperity and social balance."
@@ -482,6 +484,21 @@
  law_decolonization_desc: "work in progress"
  law_registration_process: "Qualified Migration"
  law_registration_process_desc: "work in progress"
+
+ lawgroup_lgbt_rights: "Wheels and Pistons are turning on this one"
+ lawgroup_lgbt_rights_desc: "Placeholder"
+ law_mass_surveillance: "Placeholder"
+ law_mass_surveillance_desc: "Placeholder"
+ law_lgbt_rights_0: "Placeholder"
+ law_lgbt_rights_0_desc: "Placeholder"
+ law_lgbt_rights_1: "Placeholder"
+ law_lgbt_rights_1_desc: "Placeholder"
+ law_lgbt_rights_2: "Placeholder"
+ law_lgbt_rights_2_desc: "Placeholder"
+ law_lgbt_rights_3: "Placeholder"
+ law_lgbt_rights_3_desc: "Placeholder"
+ law_international_trade: "Placeholder"
+ law_international_trade_desc: "Placeholder"
 
 
  institution_epa: "Environmental Protection"
