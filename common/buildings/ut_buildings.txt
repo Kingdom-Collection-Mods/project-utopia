@@ -472,6 +472,14 @@ building_renewable_power_plant = {
 		}
 	}
 
+	can_build_government = {
+		always = no
+	}
+
+	can_build_private = {
+		always = no
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"

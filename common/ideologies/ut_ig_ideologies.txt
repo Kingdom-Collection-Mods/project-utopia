@@ -13,6 +13,7 @@
 	lawgroup_migration = {
 		law_closed_borders = strongly_disapprove
 		law_migration_controls = disapprove
+		law_registration_process = disapprove
 		law_no_migration_controls = approve
 	}
 
@@ -114,6 +115,14 @@ ideology_urbanist_human_rights_base = {
 		#todo rework into feminism 2.0
 		law_affirmative_equality = approve
 	}
+	
+	lawgroup_colonization = {
+		law_colonial_resettlement = disapprove
+		law_colonial_exploitation = disapprove
+		law_frontier_colonization = disapprove
+		law_no_colonial_affairs = neutral
+		law_decolonization = strongly_approve
+	}
 }
 
 
@@ -197,6 +206,7 @@ ideology_plutocratic_democratic = {
 	lawgroup_colonization = {
 		law_colonial_exploitation = neutral
 		law_no_colonial_affairs = approve
+		law_decolonization = strongly_approve
 		law_colonial_resettlement = neutral
 		law_frontier_colonization = neutral
 	}
@@ -247,6 +257,7 @@ ideology_reactionary_democratic = {
 	lawgroup_migration = {
 		law_closed_borders = neutral
 		law_migration_controls = strongly_approve
+		law_registration_process = strongly_approve
 		law_no_migration_controls = disapprove
 	}
 
@@ -270,10 +281,11 @@ ideology_jingoist_democratic = {
 	}
 	
 	lawgroup_colonization = {
-		law_colonial_resettlement = neutral
-		law_colonial_exploitation = neutral
-		law_frontier_colonization = neutral
-		law_no_colonial_affairs = strongly_approve
+		law_colonial_resettlement = disapprove
+		law_colonial_exploitation = disapprove
+		law_frontier_colonization = disapprove
+		law_no_colonial_affairs = neutral
+		law_decolonization = strongly_approve
 	}
 }
 
@@ -360,6 +372,7 @@ ut_ideology_cosmopolitan = {
 	lawgroup_migration = {
 		law_closed_borders = strongly_disapprove
 		law_migration_controls = disapprove
+		law_registration_process = disapprove
 		law_no_migration_controls = approve
 	}
 

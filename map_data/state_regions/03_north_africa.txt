@@ -167,7 +167,7 @@ STATE_KORDOFAN = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
 }
 
@@ -185,7 +185,7 @@ STATE_DARFUR = {
     arable_resources = { "bg_livestock_ranches" }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        undiscovered_amount = 30
     }
 }
 
@@ -280,7 +280,7 @@ STATE_INNER_MOROCCO = {
         bg_lead_mining = 30
         bg_fishing = 4
         bg_gold_mining = 3
-        bg_rare_earths_mining = 2 
+        bg_rare_earths_mining = 3 
         bg_coal_mining = 6
     }
     naval_exit_id = 3089
@@ -331,7 +331,7 @@ STATE_CONSTANTINE = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
     naval_exit_id = 3032
 }
@@ -396,7 +396,7 @@ STATE_TRIPOLI = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 30
+        undiscovered_amount = 50
     }
     naval_exit_id = 3033
 }
@@ -432,7 +432,7 @@ STATE_LIBYAN_DESERT = {
     arable_resources = { "bg_livestock_ranches" }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 30
+        undiscovered_amount = 50
     }
 }
 
@@ -453,7 +453,7 @@ STATE_SAHARA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
 }
 
@@ -472,7 +472,7 @@ STATE_EAST_SAHARA = {
     arable_resources = { "bg_livestock_ranches" }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
 }
 
@@ -535,7 +535,7 @@ STATE_INNER_MAURITANIA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
 }
 
@@ -588,7 +588,7 @@ STATE_TIMBUKTU = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
 }
 
@@ -612,7 +612,7 @@ STATE_NIGER = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 30
+        undiscovered_amount = 50
     }
 }
 
@@ -630,7 +630,7 @@ STATE_CHAD = {
     arable_resources = { "bg_livestock_ranches" }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        undiscovered_amount = 30
     }
 }
 

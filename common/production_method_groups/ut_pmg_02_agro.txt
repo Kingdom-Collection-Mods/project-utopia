@@ -178,6 +178,7 @@ pmg_base_building_livestock_ranch = {
 		pm_butchering_tools
 		pm_slaughterhouses
 		pm_mechanized_slaughtering
+		pm_ut_factory_farming
 	}
 }
 

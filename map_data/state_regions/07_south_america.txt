@@ -47,12 +47,16 @@ STATE_GUAYANA = {
         undiscovered_amount = 12
     }
     resource = {
+        type = "bg_rare_earths_mining"
+        undiscovered_amount = 12
+    }
+    resource = {
         type = "bg_rubber"
         undiscovered_amount = 16
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
     naval_exit_id = 3062
 }
@@ -82,7 +86,7 @@ STATE_ZULIA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 60
+        undiscovered_amount = 100
     }
     naval_exit_id = 3025
 }
@@ -108,7 +112,7 @@ STATE_MIRANDA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 60
+        undiscovered_amount = 100
     }
     naval_exit_id = 3025
 }
@@ -136,7 +140,7 @@ STATE_BOLIVAR = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 30
+        undiscovered_amount = 50
     }
     naval_exit_id = 3025
 }
@@ -161,7 +165,7 @@ STATE_ANTIOQUIA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
     naval_exit_id = 3025
 }
@@ -250,7 +254,7 @@ STATE_PASTAZA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
 }
 
@@ -299,6 +303,10 @@ STATE_ANTOFAGASTA = {
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 10
     }
+    resource = {
+        type = "bg_rare_earths_mining"
+        undiscovered_amount = 10
+    }
     naval_exit_id = 3152
 }
 
@@ -323,7 +331,7 @@ STATE_SANTA_CRUZ = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 30
+        undiscovered_amount = 50
     }
 }
 
@@ -340,7 +348,7 @@ STATE_LA_PAZ = {
     capped_resources = {
         bg_logging = 20
         bg_gold_mining = 4
-        bg_rare_earths_mining = 2 
+        bg_rare_earths_mining = 4 
     }
     resource = {
         type = "bg_rubber"
@@ -348,7 +356,7 @@ STATE_LA_PAZ = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 30
+        undiscovered_amount = 50
     }
 }
 
@@ -367,7 +375,7 @@ STATE_POTOSI = {
         bg_lead_mining = 12
         bg_logging = 9
         bg_gold_mining = 4
-        bg_rare_earths_mining = 2 
+        bg_rare_earths_mining = 4 
     }
 }
 
@@ -400,7 +408,7 @@ STATE_CAJAMARCA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
     naval_exit_id = 3024
 }
@@ -419,7 +427,7 @@ STATE_LIMA = {
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_gold_mining = 6
-        bg_rare_earths_mining = 3 
+        bg_rare_earths_mining = 6 
         bg_iron_mining = 21
         bg_lead_mining = 30
         bg_sulfur_mining = 28
@@ -494,7 +502,7 @@ STATE_URUGUAY = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
     naval_exit_id = 3065
 }
@@ -515,7 +523,7 @@ STATE_JUJUY = {
         bg_lead_mining = 18
         bg_logging = 8
         bg_gold_mining = 3
-        bg_rare_earths_mining = 2 
+        bg_rare_earths_mining = 3 
     }
 }
 
@@ -535,7 +543,7 @@ STATE_ALTO_PARAGUAY = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
 }
 
@@ -556,7 +564,7 @@ STATE_BAJO_PARAGUAY = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
 }
 
@@ -599,7 +607,7 @@ STATE_PATAGONIA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
     naval_exit_id = 3066
 }
@@ -657,7 +665,7 @@ STATE_SANTA_FE = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
     naval_exit_id = 3065
 }
@@ -678,7 +686,7 @@ STATE_CORRIENTES = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
 }
 
@@ -697,7 +705,7 @@ STATE_TUCUMAN = {
         bg_iron_mining = 39
         bg_lead_mining = 15
         bg_gold_mining = 3
-        bg_rare_earths_mining = 2 
+        bg_rare_earths_mining = 3 
         bg_logging = 6
     }
 }
@@ -733,7 +741,7 @@ STATE_SANTIAGO = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_gold_mining = 5
-        bg_rare_earths_mining = 3 
+        bg_rare_earths_mining = 5 
         bg_iron_mining = 33
         bg_sulfur_mining = 36
         bg_bauxite_mining = 18 
@@ -798,7 +806,7 @@ STATE_ARAUCANIA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
     naval_exit_id = 3151
 }
@@ -847,7 +855,7 @@ STATE_PARA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
     naval_exit_id = 3062
 }
@@ -896,7 +904,7 @@ STATE_AMAZONAS = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
 }
 
@@ -962,7 +970,7 @@ STATE_MATO_GROSSO = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
 }
 
@@ -1072,7 +1080,7 @@ STATE_MINAS_GERAIS = {
     arable_land = 150
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_gold_mining = 2        
+        bg_gold_mining = 2
         bg_iron_mining = 45
         bg_lead_mining = 30
         bg_logging = 24
@@ -1082,9 +1090,10 @@ STATE_MINAS_GERAIS = {
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 8
     }
+    #unique rare earths mining large
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 20
+        undiscovered_amount = 30
     }
     resource = {
         type = "bg_rubber"
@@ -1092,7 +1101,7 @@ STATE_MINAS_GERAIS = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 20
     }
 }
 

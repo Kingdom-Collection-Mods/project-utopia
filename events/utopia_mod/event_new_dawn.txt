@@ -29,7 +29,7 @@ event_new_dawn.1 = {
 	}
 
 	option = {
-		name = metro.1.a
+		name = event_new_dawn.1.a
 		default_option = yes
 	}
 }
@@ -303,7 +303,7 @@ event_new_dawn.3 = {
 				}
 			}
 			triggered_desc = {
-				desc = event_new_dawn.3.f_2
+				desc = event_new_dawn.3.f.d
 				trigger = {
 					je:je_ut_new_dawn = { 
 						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
@@ -313,7 +313,7 @@ event_new_dawn.3 = {
 				}
 			}
 			triggered_desc = {
-				desc = event_new_dawn.3.f_3
+				desc = event_new_dawn.3.f.c
 				trigger = {
 					je:je_ut_new_dawn = { 
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -323,7 +323,7 @@ event_new_dawn.3 = {
 				}
 			}
 			triggered_desc = {
-				desc = event_new_dawn.3.f_4
+				desc = event_new_dawn.3.f.a
 				trigger = {
 					je:je_ut_new_dawn = {
 						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -356,8 +356,9 @@ event_new_dawn.3 = {
 	immediate = {
 		
 	}
+	# Take over by non focused ideology
 	option = {
-		name = event_new_dawn.3.a # Take over by non focused ideology
+		name = event_new_dawn.3.a 
 		default_option = yes
 		if = {
 			limit = {
@@ -372,6 +373,9 @@ event_new_dawn.3 = {
 			custom_tooltip = {
 				text = event_new_dawn.uprising.fascist_win
 			}
+			add_journal_entry = {
+				type = je_ut_new_dawn_fascist
+			}
 		}
 		else_if = {
 			limit = {
@@ -385,6 +389,9 @@ event_new_dawn.3 = {
 			}
 			custom_tooltip = {
 				text = event_new_dawn.uprising.communist_win
+			}
+			add_journal_entry = {
+				type = je_ut_new_dawn_communist
 			}
 		}
 		else_if = {
@@ -415,10 +422,14 @@ event_new_dawn.3 = {
 			set_variable = {
 				name = ut_new_dawn_core_autocrat_var
 			}
+			add_journal_entry = {
+				type = je_ut_new_dawn_autocratic
+			}
 		}
 	}
+	# Suppress
 	option = {
-		name = event_new_dawn.3.b # Suppress
+		name = event_new_dawn.3.b 
 		trigger = {
 			NOT = { has_variable = ut_new_dawn_core_suppressed_winner_1_var }
 		}
@@ -630,6 +641,9 @@ event_new_dawn.11 = {
 	
 	option = {
 		name = event_new_dawn.suppress_random_decision
+		add_radicals = {
+			value = 0.01
+		}
 	}
 }
 
@@ -769,6 +783,166 @@ event_new_dawn.12 = {
 	}
 	
 	option = {
-		name = event_new_dawn.suppress_random_decision
+		name = event_new_dawn.
+		add_radicals = {
+			value = 0.01
+		}
+	}
+}
+
+#Autocratic
+event_new_dawn.30 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.30.t
+	desc = event_new_dawn.30.d
+	flavor = event_new_dawn.30.f
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		# by button
+	}
+
+	
+	option = {
+		name = event_new_dawn.30.o.urbanists
+		trigger = {
+			ig:ig_urbanists = {
+				is_in_government = no
+				is_marginal = no
+			}
+		}
+		add_modifier = {
+			name = je_ut_new_dawn_suppress_dissidents_urbanists_mod
+			days = normal_modifier_time
+		}
+	}
+	
+	option = {
+		name = event_new_dawn.30.o.armed_forces
+		trigger = {
+			ig:ig_armed_forces = {
+				is_in_government = no
+				is_marginal = no
+			}
+		}
+		add_modifier = {
+			name = je_ut_new_dawn_suppress_dissidents_armed_forces_mod
+			days = normal_modifier_time
+		}
+	}
+
+	option = {
+		name = event_new_dawn.30.o.devout
+		trigger = {
+			ig:ig_devout = {
+				is_in_government = no
+				is_marginal = no
+			}
+		}
+		add_modifier = {
+			name = je_ut_new_dawn_suppress_dissidents_devout_mod
+			days = normal_modifier_time
+		}
+	}
+
+	option = {
+		name = event_new_dawn.30.o.industrialists
+		trigger = {
+			ig:ig_industrialists = {
+				is_in_government = no
+				is_marginal = no
+			}
+		}
+		add_modifier = {
+			name = je_ut_new_dawn_suppress_dissidents_industrialists_mod
+			days = normal_modifier_time
+		}
+	}
+
+	option = {
+		name = event_new_dawn.30.o.intelligentsia
+		trigger = {
+			ig:ig_intelligentsia = {
+				is_in_government = no
+				is_marginal = no
+			}
+		}
+		add_modifier = {
+			name = je_ut_new_dawn_suppress_dissidents_intelligentsia_mod
+			days = normal_modifier_time
+		}
+	}
+
+	option = {
+		name = event_new_dawn.30.o.landowners
+		trigger = {
+			ig:ig_landowners = {
+				is_in_government = no
+				is_marginal = no
+			}
+		}
+		add_modifier = {
+			name = je_ut_new_dawn_suppress_dissidents_landowners_mod
+			days = normal_modifier_time
+		}
+	}
+
+	option = {
+		name = event_new_dawn.30.o.petty_bourgeoisie
+		trigger = {
+			ig:ig_petty_bourgeoisie = {
+				is_in_government = no
+				is_marginal = no
+			}
+		}
+		add_modifier = {
+			name = je_ut_new_dawn_suppress_dissidents_petty_bourgeoisie_mod
+			days = normal_modifier_time
+		}
+	}
+
+	option = {
+		name = event_new_dawn.30.o.rural_folk
+		trigger = {
+			ig:ig_rural_folk = {
+				is_in_government = no
+				is_marginal = no
+			}
+		}
+		add_modifier = {
+			name = je_ut_new_dawn_suppress_dissidents_rural_folk_mod
+			days = normal_modifier_time
+		}
+	}
+
+	option = {
+		name = event_new_dawn.30.o.trade_unions
+		trigger = {
+			ig:ig_trade_unions = {
+				is_in_government = no
+				is_marginal = no
+			}
+		}
+		add_modifier = {
+			name = je_ut_new_dawn_suppress_dissidents_trade_unions_mod
+			days = normal_modifier_time
+		}
+	}
+
+	option = {
+		name = event_new_dawn.30.o.self
+		default_option = yes
+		add_modifier = {
+			name = je_ut_new_dawn_suppress_dissidents_self_mod
+			days = normal_modifier_time
+		}
 	}
 }

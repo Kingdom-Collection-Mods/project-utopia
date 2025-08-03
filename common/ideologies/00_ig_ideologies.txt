@@ -160,6 +160,7 @@ ideology_individualist = {
 	lawgroup_migration = {
 		law_no_migration_controls = approve
 		law_migration_controls = disapprove
+		law_registration_process = disapprove
 		law_closed_borders = strongly_disapprove
 	}
 }
@@ -353,6 +354,7 @@ ideology_isolationist = {
 	lawgroup_colonization = {
 		law_frontier_colonization = strongly_approve
 		law_no_colonial_affairs = approve
+		law_decolonization = neutral
 		law_colonial_resettlement = disapprove
 		law_colonial_exploitation = disapprove
 	}
@@ -360,6 +362,7 @@ ideology_isolationist = {
 	lawgroup_migration = {
 		law_closed_borders = strongly_approve
 		law_migration_controls = approve
+		law_registration_process = approve
 		law_no_migration_controls = disapprove
 	}
 
@@ -489,6 +492,7 @@ ideology_jingoist = {
 		law_colonial_exploitation = approve
 		law_frontier_colonization = approve
 		law_no_colonial_affairs = neutral
+		law_decolonization = neutral
 	}
 }
 
@@ -675,6 +679,7 @@ ideology_populist = {
 	
 	lawgroup_migration = {
 		law_migration_controls = approve		
+		law_registration_process = approve		
 		law_closed_borders = neutral
 		law_no_migration_controls = neutral
 	}
@@ -787,6 +792,7 @@ ideology_reactionary = {
 	lawgroup_migration = {
 		law_closed_borders = approve
 		law_migration_controls = strongly_approve
+		law_registration_process = strongly_approve
 		law_no_migration_controls = disapprove
 	}
 
@@ -832,6 +838,7 @@ ideology_plutocratic = {
 	lawgroup_colonization = {
 		law_colonial_exploitation = approve
 		law_no_colonial_affairs = neutral
+		law_decolonization = neutral
 		law_colonial_resettlement = neutral
 		law_frontier_colonization = neutral
 	}

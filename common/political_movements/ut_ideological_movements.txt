@@ -368,7 +368,7 @@ ut_movement_rationalists = {
 	on_disbanded = {}
 	
 	creation_trigger = {
-		has_technology_researched = check_payments
+		has_technology_researched = political_progress_2_rationalism
 	}
 	creation_weight = {
 		value = 1000

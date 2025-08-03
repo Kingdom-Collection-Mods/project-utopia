@@ -1,12 +1,30 @@
 ﻿
 #Farming Productivity
-heavy_machinery_farming = {
+machinery_farming = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/cabin_tractor.dds"
 	category = production
 
 	unlocking_technologies = {	
 		mechanized_farming
+	}
+
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.1
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+heavy_machinery_farming = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/cabin_tractor.dds"
+	category = production
+
+	unlocking_technologies = {	
+		machinery_farming
 	}
 	
 	ai_weight = {
@@ -56,6 +74,7 @@ chemistry = {
 
 	modifier = {
 		building_explosives_factory_throughput_add = 0.1
+		building_group_bg_plantations_throughput_add = 0.05
 	}
 	
 	ai_weight = {
@@ -71,6 +90,7 @@ hybrid_crops = {
 
 	modifier = {
 		building_group_bg_agriculture_throughput_add = 0.1
+		building_group_bg_plantations_throughput_add = 0.05
 	}
 
 	unlocking_technologies = {	
@@ -89,7 +109,7 @@ high_yield_crops = {
 	category = production
 
 	modifier = {
-		building_group_bg_plantations_throughput_add = 0.05
+		building_group_bg_plantations_throughput_add = 0.1
 	}
 
 	unlocking_technologies = {	

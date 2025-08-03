@@ -88,14 +88,6 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 		ROOT = {														#for_each loop. For each interest group of ideology_Communist, perform the following steps in sequence.
 			set_variable = { name = ig_weight value = prev.ig_clout } 	#1. Set ig_weight as equal to the interest group's clout.
 		}
-		if = {
-			limit = {
-				is_in_government = yes
-			}
-			ROOT = {
-				change_variable = { name = ig_weight multiply = 2 }		#2. If that IG is in government, multiply ig_weight by a given value.
-			}
-		}
 		ROOT = {
 			change_variable = { name = ut_nd_communist_progress_from_igs add = var:ig_weight }	#3. Add ig_weight to the central ut_nd_communist_progress_from_igs variable. This will run until there are no more Communist IGs.
 		}
@@ -175,19 +167,10 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 		ROOT = {
 			set_variable = { name = ig_weight value = prev.ig_clout }
 		}
-		if = {
-			limit = {
-				is_in_government = yes
-			}
-			ROOT = {
-				change_variable = { name = ig_weight multiply = 2 }
-			}
-		}
 		ROOT = {
 			change_variable = { name = ut_nd_democrat_progress_from_igs add = var:ig_weight }
 		}
 	}
-	change_variable = { name = ut_nd_democrat_progress_from_igs divide = 2 }
 	# From Laws
 	if = {
 		limit = {
@@ -274,15 +257,6 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 		ROOT = {
 			set_variable = { name = ig_weight value = prev.ig_clout }
 		}
-		if = {
-			limit = {
-				is_in_government = no
-				is_insurrectionary = no
-			}
-			ROOT = {
-				change_variable = { name = ig_weight multiply = 0.5 }
-			}
-		}
 		ROOT = {
 			change_variable = { name = ut_nd_autocrat_progress_from_igs add = var:ig_weight }
 		}
@@ -322,7 +296,7 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 }
 
 ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
-	set_variable = { name = ut_nd_fascist_progress_progress_from_characters value = 0 }
+	set_variable = { name = ut_nd_fascist_progress_from_characters value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_igs value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_laws value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_movements value = 0 }
@@ -365,14 +339,6 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 		}
 		ROOT = {
 			set_variable = { name = ig_weight value = prev.ig_clout }
-		}
-		if = {
-			limit = {
-				is_in_government = yes
-			}
-			ROOT = {
-				change_variable = { name = ig_weight multiply = 2 }
-			}
 		}
 		ROOT = {
 			change_variable = { name = ut_nd_fascist_progress_from_igs add = var:ig_weight }

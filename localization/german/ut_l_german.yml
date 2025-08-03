@@ -126,6 +126,7 @@
  event_new_dawn.1.t: "New Dawn"
  event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
  event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. We must navigate these waters carefully, balancing the demands of the people with the needs of the state. The choices we make now will shape the future of our nation for generations to come."
+ event_new_dawn.1.a: "Towards a New Dawn"
 
  ut_new_dawn_status: "New Dawn"
  ut_new_dawn_focus_recently_changed: "Fokus kürzlich geändert"
@@ -171,7 +172,7 @@
  ut_nd_democrat_progress_from_focus: "Demokratischer Fokus"
  concept_ut_nd_democrat_interest_group_tt: "IG hat Anführer mit [concept_ut_nd_democrat_characters] Ideologie"
  concept_ut_nd_democrat_characters: "Demokratische Charaktere"
- concept_ut_nd_democrat_characters_desc: "Democratic character ideologies are: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName], [GetIdeology('ideology_utopian').GetName], and [GetIdeology('ut_ideology_cosmopolitan_leader').GetName].\nIf Democrat Focus is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_pacifist').GetName], [GetIdeology('ideology_feminist').GetName], and [GetIdeology('ideology_modernizer_leader').GetName]."
+ concept_ut_nd_democrat_characters_desc: "Democratic character ideologies are: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName], [GetIdeology('ideology_utopian').GetName], and [GetIdeology('ut_ideology_cosmopolitan_leader').GetName].\nIf Democrat Focus is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_pacifist').GetName], [GetIdeology('ideology_feminist').GetName], [GetIdeology('ideology_market_liberal').GetName] and [GetIdeology('ideology_modernizer_leader').GetName]."
  ut_new_dawn_democrat_status: "Demokratische Ideen prägen den Diskurs"
  ut_new_dawn_democrat_status_je: "Demokratische Ideen festigen sich"
 
@@ -659,7 +660,7 @@
  anti_multicultural_globalism_desc: "Gegenbewegungen beschwören ethnokulturelle Homogenität und Souveränität. Grenzzäune wachsen, während Sprachprüfungen und Leitkulturdebatten die Gesellschaft repolarisieren."
  anti_discrimination_laws: "Antidiskriminierungsgesetze"
  anti_discrimination_laws_desc: "Gesetze ahnden Benachteiligung aufgrund von Geschlecht, Hautfarbe oder Glauben. Quotenregelungen erzwingen Diversität in Vorstandsetagen und Parlamentsfraktionen."
- anti_discrimination_laws_tt: "unlocks @ut_movement_cosmopolitan_name!"
+ ut_movement_rationalists_unlock_tt: "unlocks $ut_movement_cosmopolitan_name$"
  emancipation_movement: "Emanzipationsbewegung"
  emancipation_movement_desc: ""
  lgbt_movement: "LGBT Bewegung"

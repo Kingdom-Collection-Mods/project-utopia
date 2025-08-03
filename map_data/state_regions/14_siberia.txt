@@ -25,7 +25,7 @@
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 6
+        undiscovered_amount = 8
     }
 }
 
