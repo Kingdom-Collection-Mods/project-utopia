@@ -37,7 +37,7 @@ STATE_OMAN = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 20
+        undiscovered_amount = 30
     }
     naval_exit_id = 3048
 }
@@ -83,7 +83,7 @@ STATE_YEMEN = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 20
+        undiscovered_amount = 30
     }
     naval_exit_id = 3047
 }
@@ -102,7 +102,6 @@ STATE_HEDJAZ = {
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
         bg_sulfur_mining = 28
-        bg_bauxite_mining = 14 
         bg_fishing = 5
     }
     naval_exit_id = 3047
@@ -264,7 +263,6 @@ STATE_MOSUL = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" }
     capped_resources = {
         bg_sulfur_mining = 36
-        bg_bauxite_mining = 18 
     }
     resource = {
         type = "bg_oil_extraction"
@@ -299,7 +297,6 @@ STATE_BASRA = {
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_tobacco_plantations" }
     capped_resources = {
         bg_sulfur_mining = 32
-        bg_bauxite_mining = 16 
         bg_fishing = 6
     }
     resource = {
@@ -323,7 +320,6 @@ STATE_FARS = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_opium_plantations" "bg_vineyard_plantations" "bg_tobacco_plantations" "bg_dye_plantations" }
     capped_resources = {
         bg_sulfur_mining = 28
-        bg_bauxite_mining = 14 
         bg_iron_mining = 5
         bg_fishing = 7
         bg_logging = 6
@@ -374,7 +370,6 @@ STATE_KERMAN = {
         bg_coal_mining = 14
         bg_iron_mining = 40
         bg_sulfur_mining = 22
-        bg_bauxite_mining = 11 
         bg_logging = 2
     }
 }
@@ -433,7 +428,6 @@ STATE_KHUZESTAN = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_tobacco_plantations" "bg_dye_plantations" "bg_sugar_plantations" "bg_silk_plantations" }
     capped_resources = {
         bg_sulfur_mining = 22
-        bg_bauxite_mining = 11 
         bg_fishing = 5
         bg_logging = 4
     }

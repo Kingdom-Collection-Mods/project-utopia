@@ -12,7 +12,6 @@
         bg_iron_mining = 24
         bg_lead_mining = 36
         bg_sulfur_mining = 80
-        bg_bauxite_mining = 40 
     }
     resource = {
         type = "bg_oil_extraction"
@@ -47,7 +46,6 @@ STATE_SICHUAN = {
     capped_resources = {
         bg_coal_mining = 60
         bg_sulfur_mining = 40
-        bg_bauxite_mining = 20 
         bg_logging = 23
     }
 }
@@ -123,7 +121,7 @@ STATE_ALXA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 10
     }
 }
 
@@ -143,10 +141,6 @@ STATE_HINGGAN = {
         bg_iron_mining = 36
         bg_lead_mining = 24
         bg_logging = 6
-    }
-    resource = {
-        type = "bg_rare_earths_mining"
-        undiscovered_amount = 30
     }
 }
 
@@ -208,7 +202,7 @@ STATE_SHENGJING = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        undiscovered_amount = 20
     }
     naval_exit_id = 3057
 }
@@ -238,12 +232,8 @@ STATE_OUTER_MANCHURIA = {
         undiscovered_amount = 8
     }
     resource = {
-        type = "bg_rare_earths_mining"
-        undiscovered_amount = 8
-    }
-    resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        undiscovered_amount = 20
     }
     naval_exit_id = 3059
 }
@@ -300,7 +290,6 @@ STATE_SHANXI = {
         bg_coal_mining = 116
         bg_iron_mining = 96
         bg_sulfur_mining = 48
-        bg_bauxite_mining = 24 
         bg_logging = 7
     }
     resource = {
@@ -354,12 +343,11 @@ STATE_XIAN = {
     capped_resources = {
         bg_coal_mining = 72
         bg_sulfur_mining = 60
-        bg_bauxite_mining = 30 
         bg_logging = 9
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        undiscovered_amount = 20
     }
 }
 
@@ -397,7 +385,7 @@ STATE_CHONGQING = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 10
     }
 }
 
@@ -405,7 +393,7 @@ STATE_GUANGDONG = {
     id = 497
     subsistence_building = "building_subsistence_rice_paddies"
     provinces = { "x156AC0" "x19FD82" "x260389" "x2BDE7B" "x2C4C48" "x30B0E0" "x3131E0" "x475968" "x477755" "x489AB0" "x4E581C" "x62BF42" "x7131E0" "x85E0D4" "x8C9358" "x9A21B1" "xA92B88" "xA9B6D4" "xB031E0" "xB0B061" "xC77200" "xCB457A" "xDC137A" "xF0B061" "xF98B04" "xFEBFD5" }
-    traits = { "state_trait_pearl_river" }
+    traits = { "state_trait_pearl_river" "state_trait_natural_harbors" }
     city = "x2BDE7B"
     port = "xB031E0"
     farm = "xFEBFD5"
@@ -504,7 +492,6 @@ STATE_HENAN = {
     capped_resources = {
         bg_coal_mining = 52
         bg_sulfur_mining = 36
-        bg_bauxite_mining = 18 
         bg_logging = 11
     }
 }
@@ -523,10 +510,9 @@ STATE_ZHILI = {
     arable_land = 200
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
     capped_resources = {
-        bg_coal_mining = 4
+        bg_coal_mining = 5
         bg_iron_mining = 9
         bg_sulfur_mining = 36
-        bg_bauxite_mining = 18 
         bg_logging = 9
         bg_fishing = 4
     }
@@ -628,7 +614,6 @@ STATE_HUNAN = {
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
     capped_resources = {
         bg_sulfur_mining = 44
-        bg_bauxite_mining = 22 
         bg_logging = 18
     }
 }
@@ -665,13 +650,12 @@ STATE_SHANDONG = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
     capped_resources = {
         bg_sulfur_mining = 32
-        bg_bauxite_mining = 16 
         bg_logging = 6
         bg_fishing = 15
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        undiscovered_amount = 20
     }
     naval_exit_id = 3057
 }
@@ -799,11 +783,6 @@ STATE_TONKIN = {
     resource = {
         type = "bg_rubber"
         undiscovered_amount = 16
-    }
-    
-    resource = {
-        type = "bg_rare_earths_mining"
-        undiscovered_amount = 20
     }
     naval_exit_id = 3054
 }
@@ -937,7 +916,7 @@ STATE_SAKHALIN = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 5
+        undiscovered_amount = 10
     }
     naval_exit_id = 3059
 }
@@ -960,7 +939,6 @@ STATE_HOKKAIDO = {
         bg_iron_mining = 33
         bg_lead_mining = 36
         bg_sulfur_mining = 32
-        bg_bauxite_mining = 16 
         bg_logging = 9
         bg_whaling = 8
         bg_fishing = 12
@@ -968,10 +946,6 @@ STATE_HOKKAIDO = {
     resource = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
-        undiscovered_amount = 8
-    }
-    resource = {
-        type = "bg_rare_earths_mining"
         undiscovered_amount = 8
     }
     naval_exit_id = 3059
@@ -1080,7 +1054,6 @@ STATE_KYUSHU = {
         bg_coal_mining = 72
         bg_lead_mining = 36
         bg_sulfur_mining = 40
-        bg_bauxite_mining = 20 
         bg_fishing = 18
     }
     naval_exit_id = 3058
@@ -1116,7 +1089,6 @@ STATE_CHUGOKU = {
     capped_resources = {
         bg_lead_mining = 24
         bg_sulfur_mining = 40
-        bg_bauxite_mining = 20 
         bg_logging = 20
         bg_fishing = 12
     }
@@ -1138,7 +1110,6 @@ STATE_SHIKOKU = {
     capped_resources = {
         bg_iron_mining = 24
         bg_sulfur_mining = 32
-        bg_bauxite_mining = 16 
         bg_logging = 11
         bg_fishing = 9
     }
@@ -1203,7 +1174,6 @@ STATE_YANGHO = {
     capped_resources = {
         bg_coal_mining = 10
         bg_sulfur_mining = 10
-        bg_bauxite_mining = 5 
         bg_logging = 7
         bg_whaling = 2
         bg_fishing = 6
@@ -1228,7 +1198,6 @@ STATE_SARIWON = {
         bg_iron_mining = 33
         bg_lead_mining = 39
         bg_sulfur_mining = 28
-        bg_bauxite_mining = 14 
         bg_logging = 11
         bg_fishing = 6
     }

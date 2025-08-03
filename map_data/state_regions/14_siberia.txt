@@ -23,10 +23,6 @@
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 6
     }
-    resource = {
-        type = "bg_rare_earths_mining"
-        undiscovered_amount = 6
-    }
 }
 
 STATE_TOMSK = {
@@ -159,10 +155,6 @@ STATE_CHUKOTKA = {
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 4
     }
-    resource = {
-        type = "bg_rare_earths_mining"
-        undiscovered_amount = 4
-    }
     naval_exit_id = 3128
 }
 
@@ -187,10 +179,6 @@ STATE_KAMCHATKA = {
     resource = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
-        undiscovered_amount = 2
-    }
-    resource = {
-        type = "bg_rare_earths_mining"
         undiscovered_amount = 2
     }
     naval_exit_id = 3118
@@ -221,10 +209,6 @@ STATE_OKHOTSK = {
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 8
     }
-    resource = {
-        type = "bg_rare_earths_mining"
-        undiscovered_amount = 8
-    }
     naval_exit_id = 3118
 }
 
@@ -252,10 +236,6 @@ STATE_YAKUTSK = {
         undiscovered_amount = 8
     }
     resource = {
-        type = "bg_rare_earths_mining"
-        undiscovered_amount = 8
-    }
-    resource = {
         type = "bg_oil_extraction"
         undiscovered_amount = 5
     }
@@ -277,7 +257,6 @@ STATE_TRANS_BAIKAL = {
         bg_iron_mining = 33
         bg_lead_mining = 28
         bg_sulfur_mining = 44
-        bg_bauxite_mining = 22 
         bg_logging = 24
     }
     resource = {
