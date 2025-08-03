@@ -214,7 +214,7 @@ pm_plastic_two_process = {
 			goods_input_electricity_add = 35
 			
 			# output goods
-			goods_output_plastic_add = 90
+			goods_output_plastic_add = 80
 		}
 
 		level_scaled = {
@@ -909,7 +909,7 @@ pm_aluminum_two_process = {
 			#todo after beta rework, so ai also builds this, it wont if electricity is high
 			
 			# output goods
-			goods_output_aluminum_add = 90
+			goods_output_aluminum_add = 100
 		}
 
 		level_scaled = {
