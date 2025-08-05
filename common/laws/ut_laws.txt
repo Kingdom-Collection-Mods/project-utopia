@@ -384,7 +384,7 @@ law_state_capitalism_economy = {
 	}
 
 	unlocking_technologies = {
-		manufacturies
+		modern_economy
 	}
 
 	modifier = {
