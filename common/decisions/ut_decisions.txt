@@ -24,13 +24,13 @@
 
 ut_research_institute_found = {
 	is_shown = {
-		has_technology_researched = electronics
 		NOT = {
 			has_variable = ut_research_institute_found_var
 		}
 	}
 
 	possible = {
+		has_technology_researched = electronics
 		produced_bureaucracy > 500
 		any_scope_state = {
 			is_incorporated = yes
