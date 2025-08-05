@@ -73,7 +73,26 @@ ut_new_dawn_fascist_focus = {
 					}
 				}
 			}
-			add = 1
+			add = 2
+		}
+		if = {
+			limit = {
+				OR = {
+					has_modifier = je_ut_new_dawn_autocrat_focus
+					has_modifier = je_ut_new_dawn_democrat_focus
+					has_modifier = je_ut_new_dawn_fascist_focus
+					has_modifier = je_ut_new_dawn_communist_focus
+				}
+			}
+			multiply = 0
+		}
+		if = {
+			limit = {
+				ruler = {
+					ut_ideology_new_dawn_fascist_trigger = yes
+				}
+			}
+			add = 2
 		}
 	}
 }
@@ -141,6 +160,25 @@ ut_new_dawn_autocrat_focus = {
 			}
 			add = 5
 		}	
+		if = {
+			limit = {
+				OR = {
+					has_modifier = je_ut_new_dawn_autocrat_focus
+					has_modifier = je_ut_new_dawn_democrat_focus
+					has_modifier = je_ut_new_dawn_fascist_focus
+					has_modifier = je_ut_new_dawn_communist_focus
+				}
+			}
+			multiply = 0
+		}
+		if = {
+			limit = {
+				ruler = {
+					ut_ideology_new_dawn_autocrat_trigger = yes
+				}
+			}
+			add = 2
+		}
 	}
 
 }
@@ -196,9 +234,30 @@ ut_new_dawn_democrat_focus = {
 		if = {
 			#Historically USA and Great Britain high "ranking"?
 			limit = {
-				global_country_ranking > 3
+				global_country_ranking > 4
 			}
 			add = 5
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					has_modifier = je_ut_new_dawn_autocrat_focus
+					has_modifier = je_ut_new_dawn_democrat_focus
+					has_modifier = je_ut_new_dawn_fascist_focus
+					has_modifier = je_ut_new_dawn_communist_focus
+				}
+			}
+			multiply = 0
+		}
+		
+		if = {
+			limit = {
+				ruler = {
+					ut_ideology_new_dawn_democrat_trigger = yes
+				}
+			}
+			add = 2
 		}
 	}
 }
@@ -242,7 +301,37 @@ ut_new_dawn_communist_focus = {
 			limit = {
 				c:RUS ?= this
 			}
-			add = 1
+			add = 2
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					has_modifier = je_ut_new_dawn_autocrat_focus
+					has_modifier = je_ut_new_dawn_democrat_focus
+					has_modifier = je_ut_new_dawn_fascist_focus
+					has_modifier = je_ut_new_dawn_communist_focus
+				}
+			}
+			multiply = 0
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+			add = 5
+		}
+		if = {
+			limit = {
+				ruler = {
+					ut_ideology_new_dawn_communist_trigger = yes
+				}
+			}
+			add = 2
 		}
 	}
 }
