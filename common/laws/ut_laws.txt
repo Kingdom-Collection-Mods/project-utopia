@@ -16,9 +16,15 @@
 	
 	institution = institution_schools
 	institution_modifier = {
+		# law_public_schools
+		# state_assimilation_mult = 0.125
+		# state_education_access_add = 0.125
+
 		state_assimilation_mult = 0.125
 		state_education_access_add = 0.125
 		state_pop_qualifications_mult = 0.02
+		
+		country_weekly_innovation_max_add = 10
 	}
 
 	can_impose = {
@@ -111,9 +117,15 @@ law_private_universities = {
 
 	institution = institution_schools
 	institution_modifier = {
-		state_education_access_wealth_add = 0.0075
+		# law_private_universities
+		# state_education_access_wealth_add = 0.005
+		# interest_group_ig_intelligentsia_pol_str_mult = 0.1
+
+		state_education_access_wealth_add = 0.01
 		interest_group_ig_intelligentsia_pol_str_mult = 0.1
 		interest_group_ig_industrialists_pol_str_mult = 0.05
+
+		country_weekly_innovation_max_add = 10
 	}
 
 	can_impose = {
@@ -203,17 +215,17 @@ law_compulsory_secondary_school = {
 	
 	modifier = {
 		country_institution_schools_max_investment_add = 2
-		state_education_access_add = 0.05
 	}
 
 	institution = institution_schools
 	institution_modifier = {
-		# School institution gives more tech spread
-		country_tech_spread_mult = 0.02
-		state_education_access_add = 0.025
+		# law_compulsory_primary_school
+		# country_institution_schools_max_investment_add = 2
 
-		# Increase Country max innovation
-		country_weekly_innovation_add = 10
+		state_education_access_add = 0.05
+		state_assimilation_mult = 0.1
+
+		country_tech_spread_mult = 0.02
 	}
 	
 
@@ -250,19 +262,14 @@ law_compulsory_tertiary_school = {
 	
 	modifier = {
 		country_institution_schools_max_investment_add = 2
-		state_education_access_add = 0.05
-		country_weekly_innovation_max_add = 50
-		country_authority_add = -50
 	}
 
 	institution = institution_schools
 	institution_modifier = {
-		# School institution gives more tech spread
-		country_tech_spread_mult = 0.02
-		state_education_access_add = 0.025
+		state_education_access_add = 0.05
+		state_assimilation_mult = 0.2
 
-		# Increase Country max innovation
-		country_weekly_innovation_add = 20
+		country_tech_spread_mult = 0.04
 	}
 
 	ai_enact_weight_modifier = { #Petitions
