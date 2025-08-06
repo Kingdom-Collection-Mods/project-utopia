@@ -582,9 +582,9 @@ je_ut_new_dawn_emergency_powers = {
 	}
 }
 
-je_ut_new_dawn_martial_law = {
-	name = "je_ut_new_dawn_martial_law"
-	desc = "je_ut_new_dawn_martial_law_desc"
+je_ut_new_dawn_strengthen_power = {
+	name = "je_ut_new_dawn_strengthen_power"
+	desc = "je_ut_new_dawn_strengthen_power_desc"
 
 	possible = {
 		custom_tooltip = {
@@ -593,13 +593,13 @@ je_ut_new_dawn_martial_law = {
 				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= new_dawn_ideology_required_points
 			}
 		}
-		NOT = { has_modifier = je_ut_new_dawn_martial_law_mod }
+		NOT = { has_modifier = je_ut_new_dawn_strengthen_power_mod }
 	}
 
 	effect = {
 		add_modifier = {
-			name = je_ut_new_dawn_martial_law_mod
-			days = normal_modifier_time
+			name = je_ut_new_dawn_strengthen_power_mod
+			days = long_modifier_time
 		}
 		add_radicals = {
 			value = 0.01
@@ -657,7 +657,6 @@ je_ut_new_dawn_suppress_dissidents = {
 				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= new_dawn_ideology_required_points
 			}
 		}
-		NOT = { has_modifier = je_ut_new_dawn_suppress_dissidents_mod }
 	}
 
 	effect = {

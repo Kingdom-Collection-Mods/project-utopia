@@ -1,4 +1,4 @@
-# Heavy Tractors
+﻿# Heavy Tractors
 agricultural_mechanization = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	building_rye_farm_throughput_add = 0.15
@@ -41,6 +41,7 @@ new_dawn_phase_2_mod = {
 	political_movement_pop_attraction_mult = -0.25
 	state_radicals_from_political_movements_mult = -0.25
 	state_radicals_and_loyalists_from_sol_change_mult = -0.25
+	country_law_enactment_time_mult = 0.25
 }
 
 ut_new_dawn_focus_recently_changed = {
@@ -125,7 +126,6 @@ je_ut_new_dawn_democratic_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_infamy_generation_mult = 0.5
 	unit_defense_mult = 0.1
-	country_law_enactment_time_mult = 0.25
 }
 
 je_ut_new_dawn_democratic_power_bloc_mod = {
@@ -142,18 +142,15 @@ je_ut_new_dawn_autocratic_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
 	country_suppression_attraction_factor = -0.25
 	country_authority_mult = 0.1
-	country_law_enactment_time_mult = 0.25
 }
 
 je_ut_new_dawn_fascist_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
-	country_law_enactment_time_mult = 0.25
 	country_liberty_desire_of_subjects_add = 0.05
 }
 
 je_ut_new_dawn_communist_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
-	country_law_enactment_time_mult = 0.25
 }
 
 ut_research_high_tech_computers_research_mod = {
@@ -201,9 +198,9 @@ je_ut_new_dawn_emergency_powers_mod = {
 	interest_group_in_government_approval_add = 2
 }
 
-je_ut_new_dawn_martial_law_mod = {
+je_ut_new_dawn_strengthen_power_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	unit_offense_mult = 0.1
+	country_new_dawn_focus_selected_progress = 0.5
 }
 
 je_ut_new_dawn_border_dispute_mod = {

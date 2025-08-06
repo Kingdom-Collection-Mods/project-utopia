@@ -133,7 +133,7 @@ l_english:
  je_ut_new_dawn_condition_tt: "Completed Democratic, Autocratic, Communist, or Fascist path."
  je_ut_new_dawn_effect_tt: "Unlocks endgame ideas (tbd)"
  new_dawn_mod: "New Dawn"
- new_dawn_phase_2_mod: "New Dawn Phase 2"
+ new_dawn_phase_2_mod: "New Dawn: Enforce Ideology"
 
  event_new_dawn.1.t: "New Dawn"
  event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."

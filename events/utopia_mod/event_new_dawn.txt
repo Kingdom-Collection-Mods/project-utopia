@@ -1,4 +1,4 @@
-namespace = event_new_dawn
+﻿namespace = event_new_dawn
 
 #New Dawn start
 event_new_dawn.1 = {
@@ -818,6 +818,9 @@ event_new_dawn.30 = {
 				is_in_government = no
 				is_marginal = no
 			}
+			NOT = {
+				has_modifier = je_ut_new_dawn_suppress_dissidents_urbanists_mod
+			}
 		}
 		add_modifier = {
 			name = je_ut_new_dawn_suppress_dissidents_urbanists_mod
@@ -831,6 +834,9 @@ event_new_dawn.30 = {
 			ig:ig_armed_forces = {
 				is_in_government = no
 				is_marginal = no
+			}
+			NOT = {
+				has_modifier = je_ut_new_dawn_suppress_dissidents_armed_forces_mod
 			}
 		}
 		add_modifier = {
@@ -846,6 +852,9 @@ event_new_dawn.30 = {
 				is_in_government = no
 				is_marginal = no
 			}
+			NOT = {
+				has_modifier = je_ut_new_dawn_suppress_dissidents_devout_mod
+			}
 		}
 		add_modifier = {
 			name = je_ut_new_dawn_suppress_dissidents_devout_mod
@@ -859,6 +868,9 @@ event_new_dawn.30 = {
 			ig:ig_industrialists = {
 				is_in_government = no
 				is_marginal = no
+			}
+			NOT = {
+				has_modifier = je_ut_new_dawn_suppress_dissidents_industrialists_mod
 			}
 		}
 		add_modifier = {
@@ -874,6 +886,9 @@ event_new_dawn.30 = {
 				is_in_government = no
 				is_marginal = no
 			}
+			NOT = {
+				has_modifier = je_ut_new_dawn_suppress_dissidents_intelligentsia_mod
+			}
 		}
 		add_modifier = {
 			name = je_ut_new_dawn_suppress_dissidents_intelligentsia_mod
@@ -887,6 +902,9 @@ event_new_dawn.30 = {
 			ig:ig_landowners = {
 				is_in_government = no
 				is_marginal = no
+			}
+			NOT = {
+				has_modifier = je_ut_new_dawn_suppress_dissidents_landowners_mod
 			}
 		}
 		add_modifier = {
@@ -902,6 +920,9 @@ event_new_dawn.30 = {
 				is_in_government = no
 				is_marginal = no
 			}
+			NOT = {
+				has_modifier = je_ut_new_dawn_suppress_dissidents_petty_bourgeoisie_mod
+			}
 		}
 		add_modifier = {
 			name = je_ut_new_dawn_suppress_dissidents_petty_bourgeoisie_mod
@@ -916,6 +937,9 @@ event_new_dawn.30 = {
 				is_in_government = no
 				is_marginal = no
 			}
+			NOT = {
+				has_modifier = je_ut_new_dawn_suppress_dissidents_rural_folk_mod
+			}
 		}
 		add_modifier = {
 			name = je_ut_new_dawn_suppress_dissidents_rural_folk_mod
@@ -929,6 +953,9 @@ event_new_dawn.30 = {
 			ig:ig_trade_unions = {
 				is_in_government = no
 				is_marginal = no
+			}
+			NOT = {
+				has_modifier = je_ut_new_dawn_suppress_dissidents_trade_unions_mod
 			}
 		}
 		add_modifier = {
