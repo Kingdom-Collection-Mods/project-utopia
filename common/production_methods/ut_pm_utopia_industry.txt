@@ -574,11 +574,11 @@ pm_electronics_micro_chips_process = {
 			# input goods
 			goods_input_plastic_add = 10
 			goods_input_explosives_add = 30
-			goods_input_rare_earths_add = 30
+			goods_input_rare_earths_add = 20
 			goods_input_electricity_add = 25
 			
 			# output goods
-			goods_output_electronics_add = 200
+			goods_output_electronics_add = 150
 		}
 
 		level_scaled = {
@@ -674,14 +674,14 @@ pm_computers_integrated_chips_process  = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_electricity_add = 30
-			goods_input_plastic_add = 10
+			goods_input_electricity_add = 20
+			goods_input_plastic_add = 5
 			goods_input_explosives_add = 10
-			goods_input_electronics_add = 30
-			goods_input_rare_earths_add = 20
+			goods_input_electronics_add = 60
+			goods_input_rare_earths_add = 5
 			
 			# output goods
-			goods_output_computers_add = 80
+			goods_output_computers_add = 110
 		}
 
 		level_scaled = {
@@ -715,7 +715,7 @@ pm_computers_micro_chips_process  = {
 			goods_input_plastic_add = 10
 			goods_input_explosives_add = 10
 			goods_input_electronics_add = 100
-			goods_input_rare_earths_add = 60
+			goods_input_rare_earths_add = 30
 			goods_input_software_add = 30
 
 			
