@@ -1,4 +1,4 @@
-﻿goods_output_heavy_machinery_add={
+goods_output_heavy_machinery_add={
 	decimals=1
 	color=good
 	game_data={
@@ -470,5 +470,13 @@ unit_combat_unit_type_modern_submarine_offense_add={
 	color=good
 	game_data={
 		ai_value=100
+	}
+}
+
+country_new_dawn_focus_selected_progress={
+	decimals=1
+	color=neutral
+	game_data={
+		ai_value=0
 	}
 }

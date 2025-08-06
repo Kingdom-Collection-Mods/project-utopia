@@ -1,4 +1,4 @@
-﻿#Base
+#Base
 ut_new_dawn_fascist_focus = {
 	name = "ut_new_dawn_fascist_focus"
 	desc = "ut_new_dawn_fascist_focus_desc"
@@ -22,12 +22,14 @@ ut_new_dawn_fascist_focus = {
 		add_modifier = {
 			name = je_ut_new_dawn_fascist_focus
 		}
-		remove_modifier = je_ut_new_dawn_autocrat_focus
-		remove_modifier = je_ut_new_dawn_democrat_focus
-		remove_modifier = je_ut_new_dawn_communist_focus
 		add_modifier = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
+		}
+		hidden_effect = {
+			remove_modifier = je_ut_new_dawn_autocrat_focus
+			remove_modifier = je_ut_new_dawn_democrat_focus
+			remove_modifier = je_ut_new_dawn_communist_focus			
 		}
 	}
 	#1000 always
@@ -120,12 +122,14 @@ ut_new_dawn_autocrat_focus = {
 		add_modifier = {
 			name = je_ut_new_dawn_autocrat_focus
 		}
-		remove_modifier = je_ut_new_dawn_fascist_focus
-		remove_modifier = je_ut_new_dawn_democrat_focus
-		remove_modifier = je_ut_new_dawn_communist_focus
 		add_modifier = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
+		}
+		hidden_effect = {
+			remove_modifier = je_ut_new_dawn_fascist_focus
+			remove_modifier = je_ut_new_dawn_democrat_focus
+			remove_modifier = je_ut_new_dawn_communist_focus			
 		}
 	}
 	ai_chance = {
@@ -207,12 +211,14 @@ ut_new_dawn_democrat_focus = {
 		add_modifier = {
 			name = je_ut_new_dawn_democrat_focus
 		}
-		remove_modifier = je_ut_new_dawn_fascist_focus
-		remove_modifier = je_ut_new_dawn_autocrat_focus
-		remove_modifier = je_ut_new_dawn_communist_focus
 		add_modifier = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
+		}
+		hidden_effect = {
+			remove_modifier = je_ut_new_dawn_fascist_focus
+			remove_modifier = je_ut_new_dawn_autocrat_focus
+			remove_modifier = je_ut_new_dawn_communist_focus
 		}
 	}
 	ai_chance = {
@@ -287,12 +293,14 @@ ut_new_dawn_communist_focus = {
 		add_modifier = {
 			name = je_ut_new_dawn_communist_focus
 		}
-		remove_modifier = je_ut_new_dawn_fascist_focus
-		remove_modifier = je_ut_new_dawn_autocrat_focus
-		remove_modifier = je_ut_new_dawn_democrat_focus
 		add_modifier = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
+		}
+		hidden_effect = {
+			remove_modifier = je_ut_new_dawn_fascist_focus
+			remove_modifier = je_ut_new_dawn_autocrat_focus
+			remove_modifier = je_ut_new_dawn_democrat_focus			
 		}
 	}
 	ai_chance = {
@@ -662,6 +670,9 @@ je_ut_new_dawn_suppress_dissidents = {
 		}
 		
 		trigger_event = { id = event_new_dawn.30 }
+		custom_tooltip = {
+			text = event_new_dawn.30_tt
+		}
 
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_spend_tt

@@ -1,4 +1,4 @@
-﻿namespace = event_new_dawn
+namespace = event_new_dawn
 
 #New Dawn start
 event_new_dawn.1 = {
@@ -943,6 +943,9 @@ event_new_dawn.30 = {
 		add_modifier = {
 			name = je_ut_new_dawn_suppress_dissidents_self_mod
 			days = normal_modifier_time
+		}
+		add_radicals = {
+			value = -0.05
 		}
 	}
 }

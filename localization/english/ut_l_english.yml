@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -181,6 +181,7 @@
  event_new_dawn.30.d: "A growing faction of dissenters threatens national unity. The government is weighing whether to crack down forcefully to maintain stability."
  event_new_dawn.30.f: "A growing faction of dissenters threatens national unity. The government is weighing whether to crack down forcefully to maintain stability."
  event_new_dawn.30.o.self: "We will not tolerate division. Act decisively."
+ event_new_dawn.30_tt: "Select between significantly reducing opposition ideology group's power or strengthening our government to reduce radicals."
 
  event_new_dawn.30.o.armed_forces: "Suppress the Armed Forces"
  event_new_dawn.30.o.devout: "Suppress the Devout"
@@ -203,7 +204,8 @@
  ut_new_dawn_focus_selected_tt: "Focus selected"
  ut_new_dawn_focus_already_selected_tt: "Focus not already selected"
  ut_new_dawn_focus_freeze_tt: "Focus not deactivated"
- ut_new_dawn_focus_tt: "#v +0.5#! progress per month for selected ideology\nEnables preventing other ideologies from taking over."
+ ut_new_dawn_focus_tt: "Country will count as selected Ideology, this can impact diplomacy. \nEnables, preventing other ideologies from taking over."
+ country_new_dawn_focus_selected_progress: "Selected Ideology Progress"
 
  je_ut_new_dawn_critical_lower_bound_fail_tt: "If the threshold of #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v progress points#! is undercut (instant right now), event chains may undo political progress and eventually trigger a new New Dawn."
 
