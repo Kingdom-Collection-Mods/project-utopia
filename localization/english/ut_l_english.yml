@@ -232,6 +232,13 @@ l_english:
  je_ut_new_dawn_communist_focus: "Communist"
  je_ut_new_dawn_communist_focus_desc: "Communist focus selected"
 
+ 
+
+ je_ut_new_dawn_fascist_mod: "Fascist"
+ je_ut_new_dawn_communist_mod: "Communist"
+ je_ut_new_dawn_autocratic_mod: "Autocratic"
+ je_ut_new_dawn_democratic_mod: "Democratic"
+
  ut_new_dawn_democrat_focus: "Democratic Focus"
  ut_new_dawn_democrat_focus_desc: ""
  ut_new_dawn_democrat_bar: "Democratic"
@@ -282,9 +289,9 @@ l_english:
  je_ut_new_dawn_emergency_powers: "Emergency Powers"
  je_ut_new_dawn_emergency_powers_desc: "In times of crisis, the state must act decisively. Emergency powers allow for rapid response to threats and challenges, but they also risk undermining democratic institutions."
  je_ut_new_dawn_emergency_powers_mod: "$je_ut_new_dawn_emergency_powers$"
- je_ut_new_dawn_martial_law: "Martial Law"
- je_ut_new_dawn_martial_law_desc: "Martial law is a powerful tool to restore order in times of crisis. It allows the state to act decisively, but it also risks undermining civil liberties and democratic institutions."
- je_ut_new_dawn_martial_law_mod: "$je_ut_new_dawn_martial_law$"
+ je_ut_new_dawn_strengthen_power: "Strengthen Power"
+ je_ut_new_dawn_strengthen_power_desc: "To maintain order and stability, the state must strengthen its power. This can be achieved through various means, including military buildup, propaganda, and suppression of dissent."
+ je_ut_new_dawn_strengthen_power_mod: "$je_ut_new_dawn_strengthen_power$"
  je_ut_new_dawn_border_dispute: "Border Dispute"
  je_ut_new_dawn_border_dispute_desc: "Border disputes can lead to tensions and conflicts between nations. It is important to resolve these disputes peacefully and diplomatically, but sometimes military action may be necessary to protect national interests."
  je_ut_new_dawn_border_dispute_mod: "$je_ut_new_dawn_border_dispute$"

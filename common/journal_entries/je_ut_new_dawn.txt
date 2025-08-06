@@ -1,4 +1,4 @@
-je_ut_new_dawn = {
+﻿je_ut_new_dawn = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
 	group = je_group_utopia
@@ -452,7 +452,33 @@ je_ut_new_dawn_fascist = {
 			}
 		}
 	}
+	
+	
+	#Fascist Theory
+	
+	# Anti-liberalism & anti-Marxism
+	scripted_button = je_ut_new_dawn_outlaw_communists
+	# Militarism & cult of violence
+	scripted_button = je_ut_new_dawn_form_paramilitary_groups
+	# Leader principle
+	# State-controlled economy (corporatism)
+	scripted_button = je_ut_new_dawn_conformity
+	# Collectivism
+	scripted_button = je_ut_new_dawn_unite_heritage
 
+	# Extreme nationalism
+	# Propaganda & myths
+	scripted_button = je_ut_new_dawn_volksgemeinschaft
+
+	
+	scripted_button = je_ut_new_dawn_expansionism
+
+	scripted_button = je_ut_new_dawn_fascist_final
+
+
+	
+	
+	
 	
 	scripted_progress_bar = je_ut_new_dawn_fascist_points_bar
 
