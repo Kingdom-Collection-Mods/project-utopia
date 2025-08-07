@@ -314,6 +314,11 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  je_ut_new_dawn_fascist_final: "One World, One People"
  je_ut_new_dawn_fascist_final_desc: "Establish a permanent fascist order under a single ideology and race.\n\n#italic Historical Context:#!\nThe Nazi regime envisioned a “Thousand-Year Reich”—a totalitarian empire led by a single party, unified under a racially defined ideology. This vision drove relentless militarization, propaganda, and genocide, aiming to reshape the world through permanent domination. Though it lasted only 12 years (1933–1945), the regime’s actions left catastrophic global consequences and remain a warning of how ideology can fuel destruction."
 
+ je_ut_communist_one_communist_party: "Command Economy"
+ je_ut_communist_a_communist_party: "Cooperative Economy"
+ je_ut_communist_one_block: "Council Republics"
+ je_ut_communist_one_people: "Workers' Unity"
+ je_ut_communist_final: "Classless Society"
 
  je_ut_new_dawn_fascist: "Fascism"
  je_ut_new_dawn_fascist_reason: ""
