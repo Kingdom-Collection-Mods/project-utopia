@@ -141,7 +141,7 @@ je_ut_new_dawn_democratic_fair_elections_mod = {
 je_ut_new_dawn_autocratic_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
 	country_suppression_attraction_factor = -0.25
-	country_authority_mult = 0.1
+	country_authority_mult = 0.5
 }
 
 je_ut_new_dawn_fascist_mod = {

@@ -576,7 +576,14 @@ je_ut_new_dawn_communist = {
 			}
 		}
 	}
-
+	#Path A Historical Lenin-/Stalinism
+	#Path B Utopian Democratic Communists
+	#Joining for Marxist Communism
+	scripted_button = je_ut_communist_one_communist_party
+	scripted_button = je_ut_communist_a_communist_party
+	scripted_button = je_ut_communist_one_block
+	scripted_button = je_ut_communist_one_people
+	scripted_button = je_ut_communist_final
 	
 	scripted_progress_bar = je_ut_new_dawn_communist_points_bar
 

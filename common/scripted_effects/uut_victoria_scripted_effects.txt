@@ -1,4 +1,4 @@
-# Based on Made Divided Monarchists by Victoria/Pacifica/AcresOfAsteraceae
+﻿# Based on Made Divided Monarchists by Victoria/Pacifica/AcresOfAsteraceae
 # Together with ideologies and hegemon mechanic from EU4 creatin New Dawn journal chapter.
 # 
 # Refer to comments here and in 02_french_monarchism to get an idea as to how this works.
