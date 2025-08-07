@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -299,6 +299,21 @@
  je_ut_new_dawn_suppress_dissidents_desc: "Dissent can undermine the stability of the state and threaten national security. Suppressing dissent is a necessary measure to maintain order and protect the nation from internal threats."
  je_ut_new_dawn_suppress_dissidents_mod: "$je_ut_new_dawn_suppress_dissidents$"
  
+ je_ut_new_dawn_outlaw_communists: "Outlaw Communists"
+ je_ut_new_dawn_outlaw_communists_desc: "Crack down on leftist movements and ban communist parties.\n\n#italic Historical Context:#!\nOn February 28, 1933, following the Reichstag Fire, the Nazis passed the Reichstag Fire Decree, suspending civil liberties and allowing the arrest of thousands of communists. The KPD (Communist Party of Germany) was soon outlawed, marking the first step in dismantling political opposition."
+ je_ut_new_dawn_form_paramilitary_groups: "Paramilitary Groups"
+je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant organizations to enforce party rule.\n\n#italic Historical Context:#!\nThe SA (Sturmabteilung), active since the 1920s, grew into a powerful paramilitary force by the early 1930s, intimidating voters and disrupting opposition meetings. On June 30, 1934, during the Night of the Long Knives, Hitler purged the SA leadership to consolidate power, elevating the more ideologically driven SS (Schutzstaffel)."
+ je_ut_new_dawn_conformity: "Conformity"
+ je_ut_new_dawn_conformity_desc: "Encourage strict social alignment with state ideals.\n\n#italic Historical Context:#!\nStarting in 1933, the Nazis implemented Gleichschaltung ("coordination"), a process of aligning all aspects of society—including media, education, culture, and religion—with Nazi ideology. Independent trade unions were banned on May 2, 1933, replaced by the state-run German Labor Front.
+ je_ut_new_dawn_unite_heritage: "Unite Heritage"
+ je_ut_new_dawn_unite_heritage_desc: "Create a shared national identity based on cultural myths and history.\n\n#italic Historical Context:#!\nThe Nazi regime promoted a mythic vision of Germanic history through organizations like the Ahnenerbe (founded in 1935), which spread pseudoscientific racial theories. Nazi education and propaganda glorified a supposed Aryan past to unite the population under an exclusionary, ethnonationalist identity."
+ je_ut_new_dawn_volksgemeinschaft: "Us - not them."
+ je_ut_new_dawn_volksgemeinschaft_desc: "Build a racially defined national community that excludes outsiders.\n\n#italic Historical Context:#!\nThe concept of Volksgemeinschaft ("people's community") was used from 1933 onward to promote unity among 'racially pure' Germans. It excluded Jews, Roma, disabled people, and others—setting the foundation for the Nuremberg Laws of 1935, which legalized antisemitism and institutionalized racial segregation.\nThis ideology laid the groundwork for systematic exclusion, culminating in the Holocaust, where over six million Jews, along with other marginalized groups, were murdered in a state-planned genocide."
+ je_ut_new_dawn_expansionism: "Expansionism"
+ je_ut_new_dawn_expansionism_desc: "Pursue territorial growth for national glory and living space.\n\n#italic Historical Context:#!\nDriven by the ideology of Lebensraum ("living space"), Nazi Germany annexed Austria in March 1938 (Anschluss), took the Sudetenland in September 1938, and invaded Poland on September 1, 1939, triggering World War II. Expansion was a central pillar of Nazi foreign policy, aimed at conquering Eastern Europe and displacing its populations."
+ je_ut_new_dawn_fascist_final: "One World, One People"
+ je_ut_new_dawn_fascist_final_desc: "Establish a permanent fascist order under a single ideology and race.\n\n#italic Historical Context:#!\nThe Nazi regime envisioned a “Thousand-Year Reich”—a totalitarian empire led by a single party, unified under a racially defined ideology. This vision drove relentless militarization, propaganda, and genocide, aiming to reshape the world through permanent domination. Though it lasted only 12 years (1933–1945), the regime’s actions left catastrophic global consequences and remain a warning of how ideology can fuel destruction."
+
 
  je_ut_new_dawn_fascist: "Fascism"
  je_ut_new_dawn_fascist_reason: ""
