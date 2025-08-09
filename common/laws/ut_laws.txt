@@ -1275,7 +1275,6 @@ law_private_pension = {
 	}
 }
 
-
 law_ut_minimum_wage = {
 	group = lawgroup_labor_rights
 
