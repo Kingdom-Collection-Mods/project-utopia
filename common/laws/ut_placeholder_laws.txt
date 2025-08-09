@@ -55,10 +55,11 @@ law_lgbt_rights_1 = {
 	progressiveness = 0
 
 	unlocking_technologies = {
-		lgbt_movement
+		human_rights
 	}
 
 	modifier = {
+		country_authority_add = 100
 	}
 
 	on_enact = {
@@ -76,10 +77,10 @@ law_lgbt_rights_2 = {
 		always = no
 	}
 
-	progressiveness = 0
+	progressiveness = 50
 
 	unlocking_technologies = {
-		lgbt_movement
+		human_rights
 	}
 
 	modifier = {
@@ -100,10 +101,10 @@ law_lgbt_rights_3 = {
 		always = no
 	}
 
-	progressiveness = 0
+	progressiveness = 100
 
 	unlocking_technologies = {
-		lgbt_movement
+		anti_discrimination_laws
 	}
 
 	modifier = {
