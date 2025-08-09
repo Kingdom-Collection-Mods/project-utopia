@@ -55,6 +55,7 @@ law_lgbt_rights_1 = {
 	progressiveness = 0
 
 	unlocking_technologies = {
+		lgbt_movement
 	}
 
 	modifier = {
@@ -78,6 +79,7 @@ law_lgbt_rights_2 = {
 	progressiveness = 0
 
 	unlocking_technologies = {
+		lgbt_movement
 	}
 
 	modifier = {
@@ -101,6 +103,7 @@ law_lgbt_rights_3 = {
 	progressiveness = 0
 
 	unlocking_technologies = {
+		lgbt_movement
 	}
 
 	modifier = {
