@@ -721,6 +721,7 @@ je_ut_new_dawn_outlaw_communists = {
 	}
 
 	possible = {
+		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_fascist = { 
@@ -752,6 +753,7 @@ je_ut_new_dawn_form_paramilitary_groups = {
 	}
 
 	possible = {
+		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_fascist = { 
@@ -786,6 +788,7 @@ je_ut_new_dawn_conformity = {
 	}
 
 	possible = {
+		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_fascist = { 
@@ -817,6 +820,7 @@ je_ut_new_dawn_unite_heritage = {
 	}
 
 	possible = {
+		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_fascist = { 
@@ -855,6 +859,7 @@ je_ut_new_dawn_volksgemeinschaft = {
 	}
 
 	possible = {
+		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_fascist = { 
@@ -889,6 +894,7 @@ je_ut_new_dawn_expansionism = {
 	}
 
 	possible = {
+		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_fascist = { 
@@ -927,6 +933,7 @@ je_ut_new_dawn_fascist_final = {
 	}
 
 	possible = {
+		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_fascist = { 
@@ -969,6 +976,7 @@ je_ut_communist_one_communist_party  = {
 	}
 
 	possible = {
+		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_communist = { 
@@ -1002,6 +1010,7 @@ je_ut_communist_a_communist_party  = {
 	}
 
 	possible = {
+		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_communist = { 
@@ -1034,6 +1043,7 @@ je_ut_communist_one_block  = {
 	}
 
 	possible = {
+		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_communist = { 
@@ -1068,6 +1078,7 @@ je_ut_communist_one_people  = {
 	}
 
 	possible = {
+		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_communist = { 
@@ -1103,6 +1114,7 @@ je_ut_communist_final  = {
 	}
 
 	possible = {
+		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_communist = { 
