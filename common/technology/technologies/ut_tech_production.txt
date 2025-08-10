@@ -302,7 +302,7 @@ nuclear_power_research = {
 	}
 	
 	modifier = {
-		country_resource_discovery_chance_mult = 0.05
+		# country_resource_discovery_chance_mult = 0.5 something bugged
 	}
 
 	ai_weight = {
@@ -321,7 +321,7 @@ nuclear_power = {
 	}
 	
 	modifier = {
-		country_resource_discovery_chance_mult = 0.05
+		# country_resource_discovery_chance_mult = 0.5 something bugged
 		building_power_plant_throughput_add = 0.2
 	}
 
@@ -341,7 +341,7 @@ rare_earths_mining_era_analog = {
 	}
 	
 	modifier = {
-		country_resource_discovery_chance_mult = 0.05
+		# country_resource_discovery_chance_mult = 0.5 something bugged
 	}
 
 	ai_weight = {
@@ -480,7 +480,7 @@ heavy_machinery_mining_production = {
 	
     modifier = {
 		building_group_bg_mining_throughput_add = 0.05
-		country_resource_discovery_chance_mult = 0.05
+		# country_resource_discovery_chance_mult = 0.5 something bugged
 	}
 	
 	ai_weight = {
