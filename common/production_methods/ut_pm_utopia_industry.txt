@@ -149,7 +149,7 @@ pm_heavy_machinery_digital_process = {
 			goods_input_electricity_add = 30
 			
 			# output goods
-			goods_output_heavy_machinery_add = 120
+			goods_output_heavy_machinery_add = 110
 		}
 
 		level_scaled = {
