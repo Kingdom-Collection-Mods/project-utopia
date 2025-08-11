@@ -536,7 +536,7 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  country_institution_food_safety_max_investment_add: "Max. Investment in [concept_institution] $institution_food_safety$"
 
 #articles
- ut_international_diplomatic_power_bloc_merge: "Unify Diplomatic Blocs"
+ ut_international_diplomatic_power_bloc_merge: "Unify Democratic Blocs"
  ut_international_diplomatic_power_bloc_merge_desc: "REPLACE_ME"
  ut_international_diplomatic_power_bloc_merge_article_short_desc: "REPLACE_ME"
  ut_international_diplomatic_power_bloc_merge_effects_desc: "• An agreement under which all democratic power bloc members join the other bloc. Unlocked through the democratic New Dawn."
