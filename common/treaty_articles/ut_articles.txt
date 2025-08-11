@@ -20,11 +20,7 @@ ut_share_nuclear_power_research = {
 	}
 
 	possible = {
-		scope:target_country = {
-			NOT = {
-				has_technology_researched = nuclear_power
-			}
-		}
+
 	}
 
 	can_ratify = {

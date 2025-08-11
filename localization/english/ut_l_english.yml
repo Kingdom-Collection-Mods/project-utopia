@@ -113,7 +113,12 @@
  ut_research_nuclear_power_mod: "Research Nuclear Power"
 
  ut_share_nuclear_power_research: "Share Nuclear Power Research"
- ut_share_nuclear_power_research_desc: "REPLACE_ME"
+ ut_share_nuclear_power_research_name: "Nuclear Power Research"
+ ut_share_nuclear_power_research_desc: "Share the knowledge and advancements gained from our nuclear power research with [TARGET_COUNTRY.GetName]."
+ ut_share_nuclear_power_research_proposal_accepted_name: "$ut_share_nuclear_power_research_name$ accepted"
+ ut_share_nuclear_power_research_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted $ut_share_nuclear_power_research_name$."
+ ut_share_nuclear_power_research_proposal_declined_name: "$ut_share_nuclear_power_research_name$ declined"
+ ut_share_nuclear_power_research_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected $ut_share_nuclear_power_research_name$."
  ut_share_nuclear_power_research_effects_desc: "REPLACE_ME"
  ut_share_nuclear_power_research_article_short_desc: "REPLACE_ME"
  
