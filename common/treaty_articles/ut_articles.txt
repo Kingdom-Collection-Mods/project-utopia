@@ -1,72 +1,142 @@
-ut_share_nuclear_power_research = {
-	kind = directed
-	cost = 0
+ut_research_agreement = {
+	kind = mutual
+	cost = 50
 
-	icon = "gfx/interface/icons/diplomatic_treaties_articles_icons/invite_to_power_bloc_treaties.dds"
+	relations_progress_per_day = 1
+	relations_improvement_max = 30
+
+	icon = "gfx/interface/icons/diplomatic_treaties_articles_icons/alliance_treaties.dds"
 
 	flags = {
+		can_be_renegotiated
 		giftable
+		friendly
 	}
 
-	maintenance_paid_by = source_country
 	usage_limit = once_per_treaty
 
+	mutual_exclusions = {
+	}
+
 	unlocked_by_technologies = {
-		nuclear_power
+		union_new_mandates
+	}
+
+	mutual_modifier = {
+		country_weekly_innovation_max_add = 20
+		country_weekly_innovation_add = -20
+		country_treaty_leverage_generation_add = 200
 	}
 
 	visible = {
-		has_technology_researched = nuclear_power
 	}
 
 	possible = {
+	}
 
+	requirement_to_maintain = {
+		trigger = {
+			scope:first_country = {
+				country_rank >= rank_value:great_power
+			}
+			scope:second_country = {
+				country_rank >= rank_value:great_power
+			}
+		}
+	}
+
+	requirement_to_maintain = {
+		trigger = {
+			custom_tooltip = {
+				text = "DIPLOMATIC_PACT_REQUIREMENT_DIPLOMATIC_AUTONOMY"
+				scope:first_country = { aggressive_diplomatic_plays_permitted = yes }
+				scope:second_country = { aggressive_diplomatic_plays_permitted = yes }
+			}
+		}
 	}
 
 	can_ratify = {
-		scope:target_country = {
-			has_technology_researched = nuclear_power_research
+		scope:first_country = {
 			NOT = {
-				has_technology_researched = nuclear_power
+				custom_description = {
+					text = has_treaty_ut_research_agreement_with_trigger
+					subject = this
+					object = scope:second_country
+
+					any_scope_treaty = {
+						binds = scope:second_country
+						hidden_trigger = {
+							OR = {
+								scope:treaty = {
+									is_renegotiation = no
+								}
+								scope:treaty.amended_treaty != this
+							}
+						}
+						any_scope_article = {
+							has_type = ut_research_agreement
+						}
+					}
+				}
 			}
-		}
-		scope:source_country = {
-			has_technology_researched = nuclear_power
 		}
 	}
 
 	on_entry_into_force = {
-		scope:article_options.target_country = {
-			add_technology_researched = nuclear_power
+		scope:article_options.first_country = {
+			add_lobby_appeasement_from_diplomacy_bidirectional = {
+				FIRST = scope:article_options.first_country
+				SECOND = scope:article_options.second_country
+				PRO_AMOUNT = 2
+				ANTI_AMOUNT = -2
+				FACTOR = appeasement_alliance_formed
+			}
 		}
 	}
 
-	on_withdrawal = {}
+	on_withdrawal = {
+		add_lobby_appeasement_from_diplomacy_bidirectional = {
+			FIRST = scope:withdrawing_country
+			SECOND = scope:non_withdrawing_country
+			PRO_AMOUNT = -2
+			ANTI_AMOUNT = 2
+			FACTOR = appeasement_alliance_broken
+		}
+	}
 	on_break = {
 		scope:withdrawing_country = {
+			change_relations = {
+				country = scope:non_withdrawing_country
+					value = {
+						add = -10
+						multiply = {
+							value = scope:treaty_options.remaining_binding_period
+							min = 365
+							divide = 365
+						}
+						max = -10
+						min = -80
+					}
+			}
 			change_infamy = {
 				value = {
-					add = 1
+					add = 3
 					multiply = {
 						value = scope:treaty_options.remaining_binding_period
 						min = 365
 						divide = 365
 					}
-					max = 20
-					min = 5
+					max = 50
+					min = 10
 				}
 			}
 		}
-		scope:withdrawing_country = {
-			change_relations = { country = scope:non_withdrawing_country value = -10 }
-		}
 	}
 
-	#from alliance
 	ai = {
 
 		treaty_categories = {
-			military_defense
+			economy
 		}
 
 		evaluation_chance = {
