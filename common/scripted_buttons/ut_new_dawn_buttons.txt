@@ -1,4 +1,4 @@
-﻿#Base
+#Base
 ut_new_dawn_fascist_focus = {
 	name = "ut_new_dawn_fascist_focus"
 	desc = "ut_new_dawn_fascist_focus_desc"
@@ -550,8 +550,8 @@ je_ut_new_dawn_democratic_fair_elections = {
 }
 
 je_ut_new_dawn_democratic_final = {
-	name = "je_ut_new_dawn_democratic_fair_elections"
-	desc = "je_ut_new_dawn_democratic_fair_elections_desc"
+	name = "je_ut_new_dawn_democratic_final"
+	desc = "je_ut_new_dawn_democratic_final_desc"
 
 	visible = { 
 		NOT = { has_variable = je_ut_new_dawn_democratic_final_done }
@@ -738,6 +738,9 @@ je_ut_new_dawn_outlaw_communists = {
 				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
 			}
 		}
+		set_variable = {
+			name = je_ut_new_dawn_outlaw_communists_done
+		}
 	}
 }
 
@@ -773,6 +776,9 @@ je_ut_new_dawn_form_paramilitary_groups = {
 				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
 			}
 		}
+		set_variable = {
+			name = je_ut_new_dawn_form_paramilitary_groups_done
+		}
 	}
 }
 
@@ -805,6 +811,9 @@ je_ut_new_dawn_conformity = {
 			je:je_ut_new_dawn_fascist = {
 				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
 			}
+		}
+		set_variable = {
+			name = je_ut_new_dawn_conformity_done
 		}
 	}
 }
@@ -845,6 +854,9 @@ je_ut_new_dawn_unite_heritage = {
 				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
 			}
 		}
+		set_variable = {
+			name = je_ut_new_dawn_unite_heritage_done
+		}
 	}
 }
 
@@ -879,6 +891,9 @@ je_ut_new_dawn_volksgemeinschaft = {
 			je:je_ut_new_dawn_fascist = {
 				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
 			}
+		}
+		set_variable = {
+			name = je_ut_new_dawn_volksgemeinschaft_done
 		}
 	}
 }
@@ -919,47 +934,8 @@ je_ut_new_dawn_expansionism = {
 				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
 			}
 		}
-	}
-}
-
-je_ut_new_dawn_fascist_final = {
-	name = "je_ut_new_dawn_fascist_final"
-	desc = "je_ut_new_dawn_fascist_final_desc"
-
-	visible = {
-		NOT = {
-			has_variable = je_ut_new_dawn_fascist_final_done
-		}
-	}
-
-	possible = {
-		always = no #disabled
-		custom_tooltip = {
-			text = new_dawn_ideology_required_points_tt
-			je:je_ut_new_dawn_fascist = { 
-				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_required_points
-			}
-		}
-		average_sol_for_culture = {
-			target = root.ruler.culture
-			value >= 100
-		}
-		custom_tooltip = {
-			text = je_ut_new_dawn_fascist_final_tt
-		}
-		NOT = {
-			any_country = {
-				NOT = { root = this }
-			}
-		}
-	}
-
-	effect = {
-		custom_tooltip = {
-			text = new_dawn_ideology_required_points_spend_tt
-			je:je_ut_new_dawn_fascist = {
-				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
-			}
+		set_variable = {
+			name = je_ut_new_dawn_expansionism_done
 		}
 	}
 }
@@ -994,7 +970,7 @@ je_ut_communist_one_communist_party  = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
 		}
-		add_variable = je_ut_communist_one_communist_party_done
+		set_variable = je_ut_communist_one_communist_party_done
 	}
 }
 
@@ -1028,7 +1004,7 @@ je_ut_communist_a_communist_party  = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
 		}
-		add_variable = je_ut_communist_a_communist_party_done
+		set_variable = je_ut_communist_a_communist_party_done
 	}
 }
 
@@ -1063,7 +1039,7 @@ je_ut_communist_one_block  = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
 		}
-		add_variable = je_ut_communist_one_block_done
+		set_variable = je_ut_communist_one_block_done
 	}
 }
 
@@ -1099,7 +1075,7 @@ je_ut_communist_one_people  = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
 		}
-		add_variable = je_ut_communist_one_people_done
+		set_variable = je_ut_communist_one_people_done
 	}
 }
 
@@ -1136,6 +1112,6 @@ je_ut_communist_final  = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
 		}
-		add_variable = je_ut_communist_final_done
+		set_variable = je_ut_communist_final_done
 	}
 }

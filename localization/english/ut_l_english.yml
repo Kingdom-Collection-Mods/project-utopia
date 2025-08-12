@@ -215,7 +215,7 @@
  ut_new_dawn_focus_tt: "Country will count as selected Ideology, this can impact diplomacy. \nEnables, preventing other ideologies from taking over."
  country_new_dawn_focus_selected_progress: "Selected Ideology Progress"
 
- je_ut_new_dawn_critical_lower_bound_fail_tt: "If the threshold of #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v progress points#! is undercut (instant right now), event chains may undo political progress and eventually trigger a new New Dawn."
+ je_ut_new_dawn_critical_lower_bound_fail_tt: "If the threshold of #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v #![concept_ut_nd_progress_points] is undercut (instant right now), event chains may undo political progress and eventually trigger a new New Dawn."
 
  ut_new_dawn_communist_focus: "Communist Focus (tbd)"
  ut_new_dawn_communist_focus_desc: "work in progress"
@@ -267,14 +267,16 @@
  je_ut_new_dawn_democratic_reason: "The people demand participation, transparency, and free elections. Across the country, new parties are forming, trade unions are gaining influence, and protests for civil rights are filling the streets. \n Whether this awakening leads to a stable democracy or is crushed by the old elites is now in your hands. Will you allow reform – or try to preserve the old order by any means necessary?"
  je_ut_new_dawn_points_bar: "Progress Points"
  je_ut_new_dawn_points_bar_desc: "Progress Points: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
+ concept_ut_nd_progress_points: "Progress Points"
+ concept_ut_nd_progress_points_desc: "Progress Points represent the advancement of the New Dawn ideology within the nation. They are gained through various actions and can be spent to activate specific steps in the New Dawn focus tree."
 
- je_ut_new_dawn_democratic_complete_condition_tt: "All #v actions#! in the journal entry are completed"
+ je_ut_new_dawn_democratic_complete_condition_tt: "All [concept_ut_nd_milestones] in the journal entry are completed"
 
  je_ut_new_dawn_democratic_spirit: "Democratic Spirit"
  je_ut_new_dawn_democratic_spirit_desc: "A new democratic spirit is sweeping the nation, led by intellectuals committed to the liberal-democratic ideal. The way forward requires a clear rejection of extremist ideologies in government."
- new_dawn_ideology_required_points_tt: "Requires at least #v [SCOPE.ScriptValue('new_dawn_ideology_required_points')] progress points#!"
- new_dawn_ideology_required_points_spend_tt: "Consumes #r [SCOPE.ScriptValue('new_dawn_ideology_spend_points')]#! #v progress points#! to activate this step"
- new_dawn_ideology_upper_bound_tt: "Has #v [SCOPE.ScriptValue('new_dawn_ideology_upper_bound')] progress points#!"
+ new_dawn_ideology_required_points_tt: "Requires at least #v [SCOPE.ScriptValue('new_dawn_ideology_required_points')] #![concept_ut_nd_progress_points]"
+ new_dawn_ideology_required_points_spend_tt: "Consumes #r [SCOPE.ScriptValue('new_dawn_ideology_spend_points')]#! #v #![concept_ut_nd_progress_points] to activate this step"
+ new_dawn_ideology_upper_bound_tt: "Has #v [SCOPE.ScriptValue('new_dawn_ideology_upper_bound')] #![concept_ut_nd_progress_points]"
  new_dawn_ideology_action_done_tt: "Has #v not#! completed the action"
 
  je_ut_new_dawn_democratic_cultural_values: "Democratic Cultural Values"
@@ -289,6 +291,9 @@
  je_ut_new_dawn_democratic_fair_elections_desc: "Universal suffrage forms the backbone of a just society. Institutionalizing fair elections strengthens public trust in democracy."
  je_ut_new_dawn_democratic_fair_elections_tt: "Strengthens the legitimacy of the political system through transparent and fair elections"
  je_ut_new_dawn_democratic_fair_elections_mod: "Fair Elections"
+
+ je_ut_new_dawn_democratic_final: "Utopia"
+ je_ut_new_dawn_democratic_final_desc: "The culmination of democratic ideals and practices, leading to a harmonious and just society."
 
  je_ut_new_dawn_autocratic: "Autocratic System"
  je_ut_new_dawn_autocratic_reason: "The people demand order, stability, and strong leadership."
@@ -319,8 +324,12 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  je_ut_new_dawn_volksgemeinschaft_desc: "Build a racially defined national community that excludes outsiders.\n\n#italic Historical Context:#!\nThe concept of Volksgemeinschaft (\"people's community\") was used from 1933 onward to promote unity among 'racially pure' Germans. It excluded Jews, Roma, disabled people, and others—setting the foundation for the Nuremberg Laws of 1935, which legalized antisemitism and institutionalized racial segregation.\nThis ideology laid the groundwork for systematic exclusion, culminating in the Holocaust, where over six million Jews, along with other marginalized groups, were murdered in a state-planned genocide."
  je_ut_new_dawn_expansionism: "Expansionism"
  je_ut_new_dawn_expansionism_desc: "Pursue territorial growth for national glory and living space.\n\n#italic Historical Context:#!\nDriven by the ideology of Lebensraum (\"living space\"), Nazi Germany annexed Austria in March 1938 (Anschluss), took the Sudetenland in September 1938, and invaded Poland on September 1, 1939, triggering World War II. Expansion was a central pillar of Nazi foreign policy, aimed at conquering Eastern Europe and displacing its populations."
- je_ut_new_dawn_fascist_final: "One World, One People"
- je_ut_new_dawn_fascist_final_desc: "Establish a permanent fascist order under a single ideology and race.\n\n#italic Historical Context:#!\nThe Nazi regime envisioned a “Thousand-Year Reich”—a totalitarian empire led by a single party, unified under a racially defined ideology. This vision drove relentless militarization, propaganda, and genocide, aiming to reshape the world through permanent domination. Though it lasted only 12 years (1933–1945), the regime’s actions left catastrophic global consequences and remain a warning of how ideology can fuel destruction."
+ je_ut_new_dawn_fascist_final_tt: "[concept_ut_nd_fascist_final_context]: There exists only [ROOT.GetCountry.GetName]"
+ concept_ut_nd_fascist_final_context: "One World, One People"
+ concept_ut_nd_fascist_final_context_desc: "Establish a permanent fascist order under a single ideology and race.\n\n#italic Historical Context:#!\nThe Nazi regime envisioned a “Thousand-Year Reich”—a totalitarian empire led by a single party, unified under a racially defined ideology. This vision drove relentless militarization, propaganda, and genocide, aiming to reshape the world through permanent domination. Though it lasted only 12 years (1933–1945), the regime’s actions left catastrophic global consequences and remain a warning of how ideology can fuel destruction."
+ je_ut_new_dawn_fascist_complete_condition_tt: "All [concept_ut_nd_milestones] complete"
+ concept_ut_nd_milestones: "Milestones" 
+ concept_ut_nd_milestones_desc: "Milestones"
 
  je_ut_communist_one_communist_party: "Command Economy"
  je_ut_communist_a_communist_party: "Cooperative Economy"
@@ -549,7 +558,7 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  ut_international_diplomatic_power_bloc_merge_article_short_desc: "REPLACE_ME"
  ut_international_diplomatic_power_bloc_merge_effects_desc: "• An agreement under which all democratic power bloc members join the other bloc. Unlocked through the democratic New Dawn."
  ut_international_diplomatic_power_bloc_merge_short_desc: "All members of the [TARGET_COUNTRY.GetAdjectiveNoFormatting|l] bloc join the [SOURCE_COUNTRY.GetAltNameNoFormatting('NOM')|U] bloc."
- ut_international_diplomatic_power_bloc_merge_points_them: "[TreatyDraft.GetRightCountry.GetName]: Requires at least #v [SCOPE.ScriptValue('new_dawn_ideology_spend_points')] progress points#!"
+ ut_international_diplomatic_power_bloc_merge_points_them: "[TreatyDraft.GetRightCountry.GetName]: Requires at least #v [SCOPE.ScriptValue('new_dawn_ideology_spend_points')] #![concept_ut_nd_progress_points]"
  je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Has #v $je_ut_new_dawn_democrat_focus$#! modifier"
  
  ut_international_diplomatic_power_bloc_merge_name: "$ut_international_diplomatic_power_bloc_merge$"
