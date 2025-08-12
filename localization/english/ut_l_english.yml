@@ -202,7 +202,10 @@
  event_new_dawn.uprising.setback_communist: "Communist loose progress"
  event_new_dawn.uprising.setback_democrat: "Democrats loose progress"
  event_new_dawn.uprising.setback_autocrat: "Autocrats loose progress"
-
+ event_new_dawn.uprising.fascist_win: "Fascist march on capital"
+ event_new_dawn.uprising.communist_win: "Communist march on capital"
+ event_new_dawn.uprising.democrat_win: "Democrat march on capital"
+ event_new_dawn.uprising.autocrat_win: "Autocrat march on capital"
 
  ut_new_dawn_status: "New Dawn"
  ut_new_dawn_focus_recently_changed: "Focus recently changed"
@@ -309,13 +312,13 @@
  je_ut_new_dawn_form_paramilitary_groups: "Paramilitary Groups"
 je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant organizations to enforce party rule.\n\n#italic Historical Context:#!\nThe SA (Sturmabteilung), active since the 1920s, grew into a powerful paramilitary force by the early 1930s, intimidating voters and disrupting opposition meetings. On June 30, 1934, during the Night of the Long Knives, Hitler purged the SA leadership to consolidate power, elevating the more ideologically driven SS (Schutzstaffel)."
  je_ut_new_dawn_conformity: "Conformity"
- je_ut_new_dawn_conformity_desc: "Encourage strict social alignment with state ideals.\n\n#italic Historical Context:#!\nStarting in 1933, the Nazis implemented Gleichschaltung ("coordination"), a process of aligning all aspects of society—including media, education, culture, and religion—with Nazi ideology. Independent trade unions were banned on May 2, 1933, replaced by the state-run German Labor Front.
+ je_ut_new_dawn_conformity_desc: "Encourage strict social alignment with state ideals.\n\n#italic Historical Context:#!\nStarting in 1933, the Nazis implemented Gleichschaltung (\"coordination\"), a process of aligning all aspects of society—including media, education, culture, and religion—with Nazi ideology. Independent trade unions were banned on May 2, 1933, replaced by the state-run German Labor Front.
  je_ut_new_dawn_unite_heritage: "Unite Heritage"
  je_ut_new_dawn_unite_heritage_desc: "Create a shared national identity based on cultural myths and history.\n\n#italic Historical Context:#!\nThe Nazi regime promoted a mythic vision of Germanic history through organizations like the Ahnenerbe (founded in 1935), which spread pseudoscientific racial theories. Nazi education and propaganda glorified a supposed Aryan past to unite the population under an exclusionary, ethnonationalist identity."
  je_ut_new_dawn_volksgemeinschaft: "Us - not them."
- je_ut_new_dawn_volksgemeinschaft_desc: "Build a racially defined national community that excludes outsiders.\n\n#italic Historical Context:#!\nThe concept of Volksgemeinschaft ("people's community") was used from 1933 onward to promote unity among 'racially pure' Germans. It excluded Jews, Roma, disabled people, and others—setting the foundation for the Nuremberg Laws of 1935, which legalized antisemitism and institutionalized racial segregation.\nThis ideology laid the groundwork for systematic exclusion, culminating in the Holocaust, where over six million Jews, along with other marginalized groups, were murdered in a state-planned genocide."
+ je_ut_new_dawn_volksgemeinschaft_desc: "Build a racially defined national community that excludes outsiders.\n\n#italic Historical Context:#!\nThe concept of Volksgemeinschaft (\"people's community\") was used from 1933 onward to promote unity among 'racially pure' Germans. It excluded Jews, Roma, disabled people, and others—setting the foundation for the Nuremberg Laws of 1935, which legalized antisemitism and institutionalized racial segregation.\nThis ideology laid the groundwork for systematic exclusion, culminating in the Holocaust, where over six million Jews, along with other marginalized groups, were murdered in a state-planned genocide."
  je_ut_new_dawn_expansionism: "Expansionism"
- je_ut_new_dawn_expansionism_desc: "Pursue territorial growth for national glory and living space.\n\n#italic Historical Context:#!\nDriven by the ideology of Lebensraum ("living space"), Nazi Germany annexed Austria in March 1938 (Anschluss), took the Sudetenland in September 1938, and invaded Poland on September 1, 1939, triggering World War II. Expansion was a central pillar of Nazi foreign policy, aimed at conquering Eastern Europe and displacing its populations."
+ je_ut_new_dawn_expansionism_desc: "Pursue territorial growth for national glory and living space.\n\n#italic Historical Context:#!\nDriven by the ideology of Lebensraum (\"living space\"), Nazi Germany annexed Austria in March 1938 (Anschluss), took the Sudetenland in September 1938, and invaded Poland on September 1, 1939, triggering World War II. Expansion was a central pillar of Nazi foreign policy, aimed at conquering Eastern Europe and displacing its populations."
  je_ut_new_dawn_fascist_final: "One World, One People"
  je_ut_new_dawn_fascist_final_desc: "Establish a permanent fascist order under a single ideology and race.\n\n#italic Historical Context:#!\nThe Nazi regime envisioned a “Thousand-Year Reich”—a totalitarian empire led by a single party, unified under a racially defined ideology. This vision drove relentless militarization, propaganda, and genocide, aiming to reshape the world through permanent domination. Though it lasted only 12 years (1933–1945), the regime’s actions left catastrophic global consequences and remain a warning of how ideology can fuel destruction."
 
@@ -519,7 +522,7 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  law_registration_process: "Qualified Migration"
  law_registration_process_desc: "work in progress"
 
- lawgroup_lgbt_rights: "Sexuality Laws - Under Construction"
+ lawgroup_lgbt_rights: "Sexuality - Under Construction"
  lawgroup_lgbt_rights_desc: "Placeholder"
  law_mass_surveillance: "Placeholder"
  law_mass_surveillance_desc: "Placeholder"
@@ -548,6 +551,13 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  ut_international_diplomatic_power_bloc_merge_short_desc: "All members of the [TARGET_COUNTRY.GetAdjectiveNoFormatting|l] bloc join the [SOURCE_COUNTRY.GetAltNameNoFormatting('NOM')|U] bloc."
  ut_international_diplomatic_power_bloc_merge_points_them: "[TreatyDraft.GetRightCountry.GetName]: Requires at least #v [SCOPE.ScriptValue('new_dawn_ideology_spend_points')] progress points#!"
  je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Has #v $je_ut_new_dawn_democrat_focus$#! modifier"
+ 
+ ut_international_diplomatic_power_bloc_merge_name: "$ut_international_diplomatic_power_bloc_merge$"
+ ut_international_diplomatic_power_bloc_merge_proposal_accepted_name: "$ut_international_diplomatic_power_bloc_merge_name$ accepted"
+ ut_international_diplomatic_power_bloc_merge_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted $ut_international_diplomatic_power_bloc_merge_name$."
+ ut_international_diplomatic_power_bloc_merge_proposal_declined_name: "$ut_international_diplomatic_power_bloc_merge_name$ declined"
+ ut_international_diplomatic_power_bloc_merge_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected $ut_international_diplomatic_power_bloc_merge_name$."
+
 
 # Diplo
  principle_group_modern_trade_league: "Modern Trade League"
