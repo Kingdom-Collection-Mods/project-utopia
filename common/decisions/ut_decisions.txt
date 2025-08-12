@@ -236,3 +236,65 @@ ut_research_high_tech_computers = {
 		}
 	}
 }
+
+
+ut_lgbt_same_sex_unions = {
+	is_shown = {
+		has_law = law_type:law_lgbt_rights_3
+	}
+
+	possible = {
+		NOT = { has_variable = ut_lgbt_same_sex_unions_var }
+	}
+
+	when_taken = {
+		set_variable = {
+			name = ut_lgbt_same_sex_unions_var
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+
+ut_lgbt_same_sex_marriage = {
+	is_shown = {
+		has_law = law_type:law_lgbt_rights_3
+	}
+
+	possible = {
+		NOT = { has_variable = ut_lgbt_same_sex_marriage_var }
+	}
+
+	when_taken = {
+		set_variable = {
+			name = ut_lgbt_same_sex_marriage_var
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+ut_lgbt_sexual_self_determination = {
+	is_shown = {
+		has_law = law_type:law_lgbt_rights_3
+	}
+
+	possible = {
+		NOT = { has_variable = ut_lgbt_sexual_self_determination_var }
+	}
+
+	when_taken = {
+		set_variable = {
+			name = ut_lgbt_sexual_self_determination_var
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}

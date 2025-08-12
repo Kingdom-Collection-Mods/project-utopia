@@ -254,6 +254,7 @@ je_ut_new_dawn_democratic = {
 	scripted_button = je_ut_new_dawn_democratic_cultural_values
 	scripted_button = je_ut_new_dawn_democratic_power_bloc
 	scripted_button = je_ut_new_dawn_democratic_fair_elections
+	scripted_button = je_ut_new_dawn_democratic_final
 
 	
 	scripted_progress_bar = je_ut_new_dawn_democratic_points_bar
@@ -344,7 +345,7 @@ je_ut_new_dawn_autocratic = {
 	}
 
 	scripted_button = je_ut_new_dawn_emergency_powers
-	scripted_button = je_ut_new_dawn_martial_law
+	scripted_button = je_ut_new_dawn_strengthen_power
 	scripted_button = je_ut_new_dawn_border_dispute
 	scripted_button = je_ut_new_dawn_suppress_dissidents
 
@@ -451,7 +452,33 @@ je_ut_new_dawn_fascist = {
 			}
 		}
 	}
+	
+	
+	#Fascist Theory
+	
+	# Anti-liberalism & anti-Marxism
+	scripted_button = je_ut_new_dawn_outlaw_communists
+	# Militarism & cult of violence
+	scripted_button = je_ut_new_dawn_form_paramilitary_groups
+	# Leader principle
+	# State-controlled economy (corporatism)
+	scripted_button = je_ut_new_dawn_conformity
+	# Collectivism
+	scripted_button = je_ut_new_dawn_unite_heritage
 
+	# Extreme nationalism
+	# Propaganda & myths
+	scripted_button = je_ut_new_dawn_volksgemeinschaft
+
+	
+	scripted_button = je_ut_new_dawn_expansionism
+
+	scripted_button = je_ut_new_dawn_fascist_final
+
+
+	
+	
+	
 	
 	scripted_progress_bar = je_ut_new_dawn_fascist_points_bar
 
@@ -549,7 +576,14 @@ je_ut_new_dawn_communist = {
 			}
 		}
 	}
-
+	#Path A Historical Lenin-/Stalinism
+	#Path B Utopian Democratic Communists
+	#Joining for Marxist Communism
+	scripted_button = je_ut_communist_one_communist_party
+	scripted_button = je_ut_communist_a_communist_party
+	scripted_button = je_ut_communist_one_block
+	scripted_button = je_ut_communist_one_people
+	scripted_button = je_ut_communist_final
 	
 	scripted_progress_bar = je_ut_new_dawn_communist_points_bar
 

@@ -41,6 +41,7 @@ new_dawn_phase_2_mod = {
 	political_movement_pop_attraction_mult = -0.25
 	state_radicals_from_political_movements_mult = -0.25
 	state_radicals_and_loyalists_from_sol_change_mult = -0.25
+	country_law_enactment_time_mult = 0.25
 }
 
 ut_new_dawn_focus_recently_changed = {
@@ -49,6 +50,7 @@ ut_new_dawn_focus_recently_changed = {
 
 je_ut_new_dawn_democrat_focus = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_new_dawn_focus_selected_progress = 0.5
 	country_radicals_from_conquest_mult = 0.5
 	country_infamy_generation_mult = -0.25
 	country_diplomatic_play_maneuvers_add = -50
@@ -56,6 +58,7 @@ je_ut_new_dawn_democrat_focus = {
  
 je_ut_new_dawn_fascist_focus = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	country_new_dawn_focus_selected_progress = 0.5
 	country_radicals_from_conquest_mult = -0.5
 	country_infamy_generation_mult = 0.25
 	country_diplomatic_play_maneuvers_add = 100
@@ -63,12 +66,14 @@ je_ut_new_dawn_fascist_focus = {
 
 je_ut_new_dawn_autocrat_focus = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	country_new_dawn_focus_selected_progress = 0.5
 	country_radicals_from_conquest_mult = -0.25
 	country_diplomatic_play_maneuvers_add = 50
 }
 
 je_ut_new_dawn_communist_focus = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_new_dawn_focus_selected_progress = 0.5
 	country_radicals_from_conquest_mult = 0.25
 }
 
@@ -121,7 +126,6 @@ je_ut_new_dawn_democratic_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_infamy_generation_mult = 0.5
 	unit_defense_mult = 0.1
-	country_law_enactment_time_mult = 0.25
 }
 
 je_ut_new_dawn_democratic_power_bloc_mod = {
@@ -137,19 +141,16 @@ je_ut_new_dawn_democratic_fair_elections_mod = {
 je_ut_new_dawn_autocratic_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
 	country_suppression_attraction_factor = -0.25
-	country_authority_mult = 0.1
-	country_law_enactment_time_mult = 0.25
+	country_authority_mult = 0.5
 }
 
 je_ut_new_dawn_fascist_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
-	country_law_enactment_time_mult = 0.25
 	country_liberty_desire_of_subjects_add = 0.05
 }
 
 je_ut_new_dawn_communist_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
-	country_law_enactment_time_mult = 0.25
 }
 
 ut_research_high_tech_computers_research_mod = {
@@ -194,17 +195,21 @@ je_ut_new_dawn_emergency_powers_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	country_law_enactment_time_mult = -0.25
 	country_law_enactment_stall_mult = -0.25
+	interest_group_in_government_approval_add = 2
 }
 
-je_ut_new_dawn_martial_law_mod = {
+je_ut_new_dawn_strengthen_power_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	unit_offense_mult = 0.1
+	country_new_dawn_focus_selected_progress = 0.5
 }
 
 je_ut_new_dawn_border_dispute_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	country_infamy_generation_mult = -0.5
 	country_infamy_decay_mult = -0.5
+	country_diplomatic_play_maneuvers_add = 50
+	country_radicals_from_conquest_mult = -0.5
+	unit_defense_mult = 0.1
 }
 
 je_ut_new_dawn_suppress_dissidents_mod = {
@@ -213,56 +218,55 @@ je_ut_new_dawn_suppress_dissidents_mod = {
 
 je_ut_new_dawn_suppress_dissidents_self_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	country_legitimacy_base_add = 5
+	country_legitimacy_base_add = 10
 }
 
 
 je_ut_new_dawn_suppress_dissidents_armed_forces_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	interest_group_ig_armed_forces_pol_str_mult = -0.2
+	interest_group_ig_armed_forces_pol_str_mult = -0.5
 }
 
 je_ut_new_dawn_suppress_dissidents_urbanists_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	interest_group_ig_urbanists_pol_str_mult = -0.2
+	interest_group_ig_urbanists_pol_str_mult = -0.5
 }
 
 
 je_ut_new_dawn_suppress_dissidents_devout_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	interest_group_ig_devout_pol_str_mult = -0.2
+	interest_group_ig_devout_pol_str_mult = -0.5
 }
 
 je_ut_new_dawn_suppress_dissidents_industrialists_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	interest_group_ig_industrialists_pol_str_mult = -0.2
+	interest_group_ig_industrialists_pol_str_mult = -0.5
 }
 
 je_ut_new_dawn_suppress_dissidents_intelligentsia_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	interest_group_ig_intelligentsia_pol_str_mult = -0.2
+	interest_group_ig_intelligentsia_pol_str_mult = -0.5
 }
 
 je_ut_new_dawn_suppress_dissidents_landowners_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	interest_group_ig_landowners_pol_str_mult = -0.2
+	interest_group_ig_landowners_pol_str_mult = -0.5
 }
 
 je_ut_new_dawn_suppress_dissidents_petty_bourgeoisie_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	interest_group_ig_petty_bourgeoisie_pol_str_mult = -0.2
+	interest_group_ig_petty_bourgeoisie_pol_str_mult = -0.5
 }
 
 je_ut_new_dawn_suppress_dissidents_rural_folk_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	interest_group_ig_rural_folk_pol_str_mult = -0.2
+	interest_group_ig_rural_folk_pol_str_mult = -0.5
 }
 
 je_ut_new_dawn_suppress_dissidents_trade_unions_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	interest_group_ig_trade_unions_pol_str_mult = -0.2
+	interest_group_ig_trade_unions_pol_str_mult = -0.5
 }
-
 
 ut_released_colony = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds

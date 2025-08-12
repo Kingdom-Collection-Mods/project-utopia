@@ -285,6 +285,10 @@ je_ut_new_dawn_autocratic_points_bar = {
 				desc = "ut_nd_autocrat_progress_from_focus"
 				value = owner.var:ut_nd_autocrat_progress_from_focus
 			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_events"
+				value = owner.var:ut_nd_autocrat_progress_from_events
+			}
 		}
 		else = {
 			add = 0
