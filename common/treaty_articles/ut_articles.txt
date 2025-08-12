@@ -162,27 +162,9 @@
 			}				
 		}
 		
+		#ai will not propose
 		proposal_weight = {
-			value = 1
-		
-			if =  {
-				limit = { 
-					num_alliances < 1 
-					country_rank >= rank_value:major_power
-				}
-				add = 2
-				
-				if = {
-					limit = { country_rank >= rank_value:great_power }
-					add = 2
-				}
-			}
-			else_if =  {
-				limit = { 
-					num_alliances >= 2
-				}
-				multiply = 0
-			}			
+			value = 0
 		}	
 
 		article_ai_usage = {
