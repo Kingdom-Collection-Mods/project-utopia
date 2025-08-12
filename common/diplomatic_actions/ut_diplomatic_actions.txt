@@ -83,7 +83,7 @@ ut_international_diplomatic_power_bloc_merge = {
 		is_revolutionary = no
 		is_in_power_bloc = yes
 		is_power_bloc_leader = yes
-		has_modifier = je_ut_new_dawn_democrat_focus
+		has_technology_researched = consumer_goods_main_analog
 	}
 	
 	potential = {
@@ -91,6 +91,7 @@ ut_international_diplomatic_power_bloc_merge = {
 			is_in_power_bloc = yes
 			is_power_bloc_leader = yes
 		}
+		has_modifier = je_ut_new_dawn_democrat_focus
 		has_modifier = je_ut_new_dawn_democratic_power_bloc_mod
 	}
 	
@@ -403,7 +404,7 @@ ut_share_nuclear_power_research = {
 		}
 		change_relations = {
 			country = scope:target_country
-			value = 10
+			value = 20
 		}
 	}
 	
