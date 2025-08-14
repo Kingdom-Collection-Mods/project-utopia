@@ -129,8 +129,8 @@
  ut_je_ut_research_high_tech_computers_research_reason: "The boundaries of computation are being redrawn. As classical computers approach their limits, a new generation of high-performance machines promises revolutionary progress in science, industry, and defense. With sufficient investment, we can lead this revolution—creating machines that think faster than any human mind.\nThis is not just research—it is a race for the future."
  ut_je_ut_research_high_tech_computers_research.success.d: "The development of a new generation of high-performance computers has succeeded. These machines perform calculations at previously unreachable levels of complexity and speed."
  ut_je_ut_research_high_tech_computers_research.success.f: "Liquid-cooled processors, quantum fluctuations, neural networks—the age of raw logic yields to the elegance of synthetic thinking. Our machines no longer calculate—they model reality."
- ut_research_high_tech_computers_mod: "High-Tech Computer Research"
- ut_research_high_tech_computers_mod_desc: "National research is focused on developing cutting-edge computing technologies. Prototypes are being built, labs are expanding, and the line between computational power and vision begins to blur."
+ ut_research_high_tech_computers_research_mod: "High-Tech Computer Research"
+ ut_research_high_tech_computers_research_mod_desc: "National research is focused on developing cutting-edge computing technologies. Prototypes are being built, labs are expanding, and the line between computational power and vision begins to blur."
  ut_je_ut_research_high_tech_computers_research_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy)"
 
  je_ut_new_dawn: "New Dawn"
