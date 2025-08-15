@@ -408,7 +408,7 @@ building_ut_research_institute = {
 		pmg_categories_building_ut_research_institute
 	}
 
-	icon = "gfx/interface/icons/building_icons/building_university.dds"
+	icon = "gfx/interface/icons/building_icons/research_institute.dds"
 
 	required_construction = construction_cost_monument
 
@@ -445,7 +445,7 @@ building_ut_nuclear_power_plant_construction_site = {
 		pmg_base_building_ut_nuclear_power_plant_construction
 	}
 
-	icon = "gfx/interface/icons/building_icons/building_university.dds"
+	icon = "gfx/interface/icons/building_icons/nuclear_power_plant_construction.dds"
 
 	required_construction = construction_cost_very_high
 
@@ -492,7 +492,7 @@ building_ut_nuclear_power_plant = {
 		pmg_administration_modern_industry
 	}
 
-	icon = "gfx/interface/icons/building_icons/building_university.dds"
+	icon = "gfx/interface/icons/building_icons/nuclear_power_plant.dds"
 
 	required_construction = construction_cost_modern_monument
 

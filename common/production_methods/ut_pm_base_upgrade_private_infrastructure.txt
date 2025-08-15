@@ -134,7 +134,7 @@ ut_pm_digital_art = {
 }
 
 ut_pm_research_department = {
-	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
+	texture = "gfx/interface/icons/production_method_icons/social_science.dds"
 
 	unlocking_technologies = {
 		technical_scientific_school_reforms
