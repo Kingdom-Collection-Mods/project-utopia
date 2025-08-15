@@ -474,6 +474,8 @@ utopia_journal_prod.12 = {
 	}	
 }
 
+#research institute
+
 utopia_journal_prod.40 = {
 	type = country_event
 
@@ -730,5 +732,125 @@ utopia_journal_prod.42 = {
         	remove_modifier = ut_research_high_tech_computers_research_mod
         }
 		add_technology_researched = high_tech_computers
+	}
+}
+
+#nuclear power
+
+utopia_journal_prod.50 = {
+	type = country_event
+
+	title = ut_je_research_institute_founding
+	desc = ut_je_research_institute_founding.success.d
+	flavor = ut_je_research_institute_founding.success.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+		# triggered by je_skyscraper_site
+	}
+
+	immediate = {
+		
+		random_scope_state = {
+			limit = {
+				has_building = building_ut_nuclear_power_plant_construction_site
+			}
+			save_scope_as = ut_nuclear_power_plant_location_one
+		}
+		
+		random_scope_state = {
+			limit = {
+				has_building = building_ut_nuclear_power_plant_construction_site
+				NOT = { this = scope:ut_nuclear_power_plant_location_one }
+			}
+			save_scope_as = ut_nuclear_power_plant_location_two
+		}
+		
+		random_scope_state = {
+			limit = {
+				has_building = building_ut_nuclear_power_plant_construction_site
+				NOT = { this = scope:ut_nuclear_power_plant_location_one }
+				NOT = { this = scope:ut_nuclear_power_plant_location_two }
+			}
+			save_scope_as = ut_nuclear_power_plant_location_three
+		}
+	}
+
+	option = {
+		name = utopia.progress_a
+        default_option = yes
+        scope:ut_nuclear_power_plant_location_one = {
+        	add_modifier = {
+        		name = ut_nuclear_power_plant_construction_site_mod
+        	}
+        }
+		add_journal_entry = {
+			type = ut_je_nuclear_power_plant_construction
+			target = scope:ut_nuclear_power_plant_location_one
+		}
+	}
+
+	
+	option = {
+		trigger = {
+			exists = scope:ut_nuclear_power_plant_location_two
+		}
+		name = utopia.progress_b
+		scope:ut_nuclear_power_plant_location_two = {
+			add_modifier = {
+				name = ut_nuclear_power_plant_construction_site_mod
+			}
+		}
+		add_journal_entry = {
+			type = ut_je_nuclear_power_plant_construction
+			target = scope:ut_nuclear_power_plant_location_two
+		}
+	}
+
+	option = {
+		trigger = {
+			exists = scope:ut_nuclear_power_plant_location_three
+		}
+		name = utopia.progress_c
+		scope:ut_nuclear_power_plant_location_three = {
+			add_modifier = {
+				name = ut_nuclear_power_plant_construction_site_mod
+			}
+		}
+		add_journal_entry = {
+			type = ut_je_nuclear_power_plant_construction
+			target = scope:ut_nuclear_power_plant_location_three
+		}
+	}
+
+	option = {
+		trigger = {
+			capital = {
+				has_building = building_ut_nuclear_power_plant_construction_site
+			}
+		}
+		name = utopia.progress_a
+		capital = {
+			add_modifier = {
+				name = ut_nuclear_power_plant_construction_site_mod
+			}
+		}
+		add_journal_entry = {
+			type = ut_je_nuclear_power_plant_construction
+			target = capital
+		}
+	}
+
+	after = {
+		remove_variable = ut_nuclear_power_plant_location_selecting
 	}
 }

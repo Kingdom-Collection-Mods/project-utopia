@@ -919,7 +919,7 @@ je_ut_new_dawn_expansionism = {
 		NOT = {
 			any_country = {
 				OR = {
-					NOT = { this =heritage root }
+					NOT = { this = root }
 					NOT = { is_subject_of = root }
 				}
 				has_strategic_adjacency = root
@@ -940,7 +940,7 @@ je_ut_new_dawn_expansionism = {
 	}
 }
 
-je_ut_communist_one_communist_party  = {
+je_ut_communist_one_communist_party = {
 	name = "je_ut_communist_one_communist_party"
 	desc = "je_ut_communist_one_communist_party_desc"
 
@@ -974,7 +974,7 @@ je_ut_communist_one_communist_party  = {
 	}
 }
 
-je_ut_communist_a_communist_party  = {
+je_ut_communist_a_communist_party = {
 	name = "je_ut_communist_a_communist_party"
 	desc = "je_ut_communist_a_communist_party_desc"
 
@@ -1008,7 +1008,7 @@ je_ut_communist_a_communist_party  = {
 	}
 }
 
-je_ut_communist_one_block  = {
+je_ut_communist_one_block = {
 	name = "je_ut_communist_one_block"
 	desc = "je_ut_communist_one_block_desc"
 
@@ -1043,7 +1043,7 @@ je_ut_communist_one_block  = {
 	}
 }
 
-je_ut_communist_one_people  = {
+je_ut_communist_one_people = {
 	name = "je_ut_communist_one_people"
 	desc = "je_ut_communist_one_people_desc"
 
@@ -1079,7 +1079,7 @@ je_ut_communist_one_people  = {
 	}
 }
 
-je_ut_communist_final  = {
+je_ut_communist_final = {
 	name = "je_ut_communist_final"
 	desc = "je_ut_communist_final_desc"
 

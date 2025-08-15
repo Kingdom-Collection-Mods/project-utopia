@@ -203,3 +203,17 @@ pmg_categories_building_ut_research_institute = {
 		ut_pm_research_institute_society_focus
 	}
 }
+
+pmg_base_building_ut_nuclear_power_plant = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		ut_pm_nuclear_power_plant_one
+	}
+}
+
+pmg_base_building_ut_nuclear_power_plant_construction = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		ut_pm_nuclear_power_plant_construction
+	}
+}

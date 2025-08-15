@@ -1518,3 +1518,54 @@ ut_pm_research_institute_society_focus = {
 		}
 	}
 }
+
+ut_pm_nuclear_power_plant_one = {
+	texture = "gfx/interface/icons/production_method_icons/nuclear_power_plant.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 50
+			goods_input_computers_add = 50
+			goods_input_electronics_add = 100
+			goods_input_heavy_machinery_add = 100
+			goods_input_sulfur_add = 10
+			goods_input_bauxite_add = 10
+			goods_input_lead_add = 20
+
+			goods_output_electricity_add = 1000
+		}
+
+		level_scaled = {
+			#sum 5000 (no admin)
+			building_employment_laborers_add = 2500 # Base -2000 logistics
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1000
+			building_employment_academics_add = 500
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			building_group_bg_heavy_industry_throughput_add = 0.02
+			building_group_bg_modern_industry_throughput_add = 0.02
+		}
+	}
+}
+
+ut_pm_nuclear_power_plant_construction = {
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 50
+			goods_input_computers_add = 50
+			goods_input_electronics_add = 100
+			goods_input_heavy_machinery_add = 200
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2500 # Base -2000 logistics
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1000
+			building_employment_academics_add = 500
+		}
+	}
+}
