@@ -560,12 +560,16 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  ut_international_diplomatic_power_bloc_merge_short_desc: "All members of the [TARGET_COUNTRY.GetAdjectiveNoFormatting|l] bloc join the [SOURCE_COUNTRY.GetAltNameNoFormatting('NOM')|U] bloc."
  ut_international_diplomatic_power_bloc_merge_points_them: "[TreatyDraft.GetRightCountry.GetName]: Requires at least #v [SCOPE.ScriptValue('new_dawn_ideology_spend_points')] #![concept_ut_nd_progress_points]"
  je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Has #v $je_ut_new_dawn_democrat_focus$#! modifier"
- 
+
  ut_international_diplomatic_power_bloc_merge_name: "$ut_international_diplomatic_power_bloc_merge$"
  ut_international_diplomatic_power_bloc_merge_proposal_accepted_name: "$ut_international_diplomatic_power_bloc_merge_name$ accepted"
  ut_international_diplomatic_power_bloc_merge_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted $ut_international_diplomatic_power_bloc_merge_name$."
  ut_international_diplomatic_power_bloc_merge_proposal_declined_name: "$ut_international_diplomatic_power_bloc_merge_name$ declined"
  ut_international_diplomatic_power_bloc_merge_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected $ut_international_diplomatic_power_bloc_merge_name$."
+
+ ut_international_diplomatic_power_bloc_merge_action_name: "Unify Democratic Blocs"
+ ut_international_diplomatic_power_bloc_merge_proposal_notification_name: "Unify Democratic Blocs Proposal"
+ ut_international_diplomatic_power_bloc_merge_proposal_notification_desc: "A proposal to unify the democratic power blocs has been sent."
 
 
 # Diplo
@@ -579,6 +583,13 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  ut_has_no_truce_with_target: "No truce with [ROOT.GetCountry.GetName]"
 
  ut_humiliate_power_bloc_goal: "Humiliate Power Bloc Leader"
+ ut_humiliate_power_bloc_goal_action_name: "Humiliate Power Bloc Leader"
+ ut_humiliate_power_bloc_goal_proposal_accepted_name: "Humiliation Accepted"
+ ut_humiliate_power_bloc_goal_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] has accepted humiliation and will join your power bloc."
+ ut_humiliate_power_bloc_goal_proposal_declined_name: "Humiliation Rejected"
+ ut_humiliate_power_bloc_goal_proposal_declined_desc: "[TARGET_COUNTRY.GetName] has rejected the humiliation demand."
+ ut_humiliate_power_bloc_goal_proposal_notification_name: "Humiliate Power Bloc Leader Proposal"
+ ut_humiliate_power_bloc_goal_proposal_notification_desc: "A proposal to humiliate [TARGET_COUNTRY.GetName] and force them into your power bloc has been sent."
  ut_humiliate_power_bloc_goal_desc: "Humiliate a rival power bloc leader to force them into your bloc."
  ut_research_agreement: "Research Agreement"
  ut_research_agreement_desc: "Advancing together."
@@ -1177,8 +1188,3 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  utopia_mod.2.f: "What is progress, if not the mastery of time itself? While others debate ethics and equality, we have pierced the veil of possibility. With this unprecedented surge in innovation, we leapfrog generations of slow, bureaucratic development. Let history judge us — or let there be no history, only the brilliance of tomorrow, written in circuits and steel, not ink and parchment. Utopia is not given. It is taken."
  ut_tech_preview_cheat_disable_tt: "Deactivates the cheat permanently"
  ut_tech_preview_cheat_research_modifier: "Forbidden Technologies"
-
- TAX_INCOME_TREATY: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TREATY_INCOME_BREAKDOWN,TreatyIncomeTooltip @money![GetPlayer.PredictTreatyIncome|D+=]#!#! [concept_budget_treaties]"
- TREATY_INCOME_BREAKDOWN: "#tooltip_header Treaties#!\nTotal: #v @money![GetPlayer.PredictTreatyIncome|K+]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictTreatyIncomeDesc]"
- EXPENSES_TREATIES: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TREATY_EXPENSES_BREAKDOWN,TreatyExpenseTooltip @money![GetPlayer.PredictTreatyExpenses|D-]#!#! [concept_budget_treaties]"
- TREATY_EXPENSES_BREAKDOWN: "#tooltip_header Treaties#!\nTotal: #v #N @money!-[GetPlayer.PredictTreatyExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictTreatyExpensesDesc]"
