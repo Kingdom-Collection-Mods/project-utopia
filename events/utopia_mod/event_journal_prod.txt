@@ -740,9 +740,9 @@ utopia_journal_prod.42 = {
 utopia_journal_prod.50 = {
 	type = country_event
 
-	title = ut_je_research_institute_founding
-	desc = ut_je_research_institute_founding.success.d
-	flavor = ut_je_research_institute_founding.success.f
+	title = ut_je_nuclear_power_plant_construction_site
+	desc = ut_je_nuclear_power_plant_construction_site.success.d
+	flavor = ut_je_nuclear_power_plant_construction_site.success.f
 
 	event_image = {
 		video = "europenorthamerica_capitalists_meeting"
@@ -829,24 +829,6 @@ utopia_journal_prod.50 = {
 		add_journal_entry = {
 			type = ut_je_nuclear_power_plant_construction
 			target = scope:ut_nuclear_power_plant_location_three
-		}
-	}
-
-	option = {
-		trigger = {
-			capital = {
-				has_building = building_ut_nuclear_power_plant_construction_site
-			}
-		}
-		name = utopia.progress_a
-		capital = {
-			add_modifier = {
-				name = ut_nuclear_power_plant_construction_site_mod
-			}
-		}
-		add_journal_entry = {
-			type = ut_je_nuclear_power_plant_construction
-			target = capital
 		}
 	}
 

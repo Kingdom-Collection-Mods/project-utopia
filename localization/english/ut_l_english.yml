@@ -107,10 +107,19 @@
  ut_je_research_institute_construction: "Construct Research Institute"
  ut_je_research_institute_construction_reason: ""
 
+ ut_research_nuclear_power: "Research Nuclear Power"
+ ut_research_nuclear_power_desc: "Investigate the potential of nuclear fission as a powerful energy source."
  ut_je_ut_research_nuclear_power: "Nuclear Power"
  ut_je_ut_research_nuclear_power_reason: "The discovery of nuclear fission opens the door to a new era of energy production. What once was a theoretical concept becomes reality: controlled nuclear reactions that release immense amounts of energy. This is not just about power generation, but about mastering the atom itself.\nWith sufficient investment, we can lead this revolution—creating a new energy source that will change the world."
  ut_je_ut_research_nuclear_power_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy)"
  ut_research_nuclear_power_mod: "Research Nuclear Power"
+ ut_je_nuclear_power_plant_construction: "Nuclear Power Plant Construction"
+ ut_je_nuclear_power_plant_construction_reason: "With the successful research into nuclear power, we are now ready to take the next step."
+ ut_nuclear_power_plant_location: "Nuclear Power Plant Construction"
+ ut_nuclear_power_plant_location_desc: "Select a suitable location for the construction of the nuclear power plant."
+ ut_je_nuclear_power_plant_construction_site: "Nuclear Power Plant Construction Site"
+ ut_je_nuclear_power_plant_construction_site.success.d: "The site for the nuclear power plant has been successfully selected."
+ ut_je_nuclear_power_plant_construction_site.success.f: "The site for the nuclear power plant has been successfully selected. The location is ideal for the construction of a facility that will provide clean and efficient energy for generations to come."
 
  ut_share_nuclear_power_research: "Share Nuclear Power Research"
  ut_share_nuclear_power_research_name: "Nuclear Power Research"
@@ -891,6 +900,8 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  building_synthetic_oil: "Oil Refineries"
  building_ut_research_institute: "Research Institute"
  building_renewable_power_plant: "Renewable Power Plant"
+ building_ut_nuclear_power_plant_construction_site: "Nuclear Power Plant Construction Site"
+ building_ut_nuclear_power_plant: "Nuclear Power Plant"
 
  pmg_base_building_ut_research_institute: "Base"
  pmg_categories_building_ut_research_institute: "Focus"
