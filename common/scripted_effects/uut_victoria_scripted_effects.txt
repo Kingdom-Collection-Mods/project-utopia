@@ -363,13 +363,6 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 		}
 		change_variable = { name = ut_nd_fascist_progress_from_laws add = 1 }
 	}
-	
-	if = {
-		limit = {
-			has_law = law_type:law_national_supremacy
-		}
-		change_variable = { name = ut_nd_fascist_progress_from_laws add = 0.5 }
-	}
 	# From Movements
 	if = {
 		limit = {
