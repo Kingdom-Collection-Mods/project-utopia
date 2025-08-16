@@ -57,6 +57,7 @@ ut_new_dawn_fascist_focus = {
 			#Historically Germany, Italy, and Japan below in "ranking"?
 			limit = {
 				global_country_ranking < 5
+				country_rank >= rank_value:great_power
 			}
 			add = 5
 		}
@@ -449,6 +450,7 @@ je_ut_new_dawn_democratic_cultural_values = {
 	}
 
 	effect = {
+		custom_tooltip = ut_influence_new_dawn_major_power_unlock_tt
 		ig:ig_devout = {
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_moralist_democratic

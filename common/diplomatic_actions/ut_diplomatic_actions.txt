@@ -371,6 +371,347 @@ ut_international_diplomatic_power_bloc_merge = {
 	}
 }
 
+ut_influence_new_dawn_major_power = {
+	groups= {
+		general
+	}
+	requires_approval = yes
+	
+	unlocking_technologies = {
+		union_trade
+	}
+	
+	selectable = {
+		NOT = { is_country_type = decentralized }
+		is_revolutionary = no
+		country_rank >= rank_value:great_power
+		has_variable = je_ut_new_dawn_democratic_cultural_values_done
+	}
+	
+	potential = {
+		scope:target_country = {
+			is_subject = no
+			has_treaty_alliance_with = { TARGET = root }
+			country_rank = rank_value:major_power
+			NOT = { has_journal_entry = je_ut_new_dawn }
+			hidden_trigger = {
+				NOT = { has_variable = je_ut_new_dawn_done }
+			}
+		}
+	}
+	
+	possible = {
+		scope:target_country = {
+			pop_type_percent_country = {
+				pop_type = service_workers
+				percent > 0.01
+			}
+		}
+	}
+	
+	accept_effect = {
+		if = {
+			limit = {
+				has_modifier = je_ut_new_dawn_democrat_focus
+			}
+			scope:target_country = {
+				add_modifier = je_ut_new_dawn_democrat_focus
+			}
+		}
+		else_if = {
+			limit = {
+				has_modifier = je_ut_new_dawn_autocrat_focus
+			}
+			scope:target_country = {
+				add_modifier = je_ut_new_dawn_autocrat_focus
+			}
+		}
+		else_if = {
+			limit = {
+				has_modifier = je_ut_new_dawn_communist_focus
+			}
+			scope:target_country = {
+				add_modifier = je_ut_new_dawn_communist_focus
+			}
+		}
+		else_if = {
+			limit = {
+				has_modifier = je_ut_new_dawn_fascist_focus
+			}
+			scope:target_country = {
+				add_modifier = je_ut_new_dawn_fascist_focus
+			}
+		}
+
+
+		scope:target_country = {
+			set_variable = je_ut_new_dawn_major_power_influenced_var
+			add_modifier = {
+				name = ut_new_dawn_focus_recently_changed
+				days = normal_modifier_time
+			}
+			add_journal_entry = {
+				type = je_ut_new_dawn
+			}
+		}
+	}
+	
+
+	ai = {
+		evaluation_chance = {
+			value = 0.01 # AI shouldn't volunteer into power blocs all that often
+		}		
+	
+		accept_score = {
+			value = 0
+
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_BASE_ADDITIONAL"
+				value = -10
+			}
+
+			if = {
+				limit = {
+					has_strategic_adjacency = scope:target_country
+				}
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_NEIGHBORS"
+					value = 10
+				}
+			}
+
+			if = {
+				limit = {
+					OR = {
+						is_country_type = recognized
+						is_country_type = colonial
+					}
+					scope:target_country = {
+						is_country_type = unrecognized
+					}
+				}
+				add = {
+					desc = "concept_unrecognized_power_short"
+					value = -200
+				}
+			}
+
+			if = {
+				limit = {
+					has_strategy = ai_strategy_armed_isolationism
+				}
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_ISOLATIONIST"
+					add = -40
+				}
+			}
+
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_ARMY_STRENGTH"
+				value = "scope:target_country.ai_army_comparison(root)"
+				add = 0.25
+				multiply = 25
+				min = -200
+				max = 50
+			}
+
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_ATTITUDE"
+				if = {
+					limit = {
+						OR = {
+							has_attitude = {
+								who = scope:target_country
+								attitude = antagonistic
+							}
+							has_attitude = {
+								who = scope:target_country
+								attitude = domineering
+							}
+							has_attitude = {
+								who = scope:target_country
+								attitude = belligerent
+							}
+							has_attitude = {
+								who = scope:target_country
+								attitude = rebellious
+							}
+						}
+					}
+					value = -1000
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_attitude = {
+								who = scope:target_country
+								attitude = wary
+							}
+							has_attitude = {
+								who = scope:target_country
+								attitude = disinterested
+							}
+						}
+					}
+					value = -10
+				}
+				else_if = {
+					limit = {
+						has_attitude = {
+							who = scope:target_country
+							attitude = cautious
+						}
+					}
+					value = -50
+				}				
+				else_if = {
+					limit = {
+						OR = {
+							has_attitude = {
+								who = scope:target_country
+								attitude = protective
+							}
+							has_attitude = {
+								who = scope:target_country
+								attitude = genial
+							}
+							has_attitude = {
+								who = scope:target_country
+								attitude = cooperative
+							}
+							has_attitude = {
+								who = scope:target_country
+								attitude = conciliatory
+							}
+						}
+					}
+					value = 10
+				}
+			}
+
+			if = {
+				limit = {
+					"num_alliances_and_defensive_pacts_with_rivals(scope:target_country)" > 0
+				}
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_ALLIED_TO_RIVALS"
+					value = "num_alliances_and_defensive_pacts_with_rivals(scope:target_country)"
+					multiply = -25
+				}
+			}
+
+			if = {
+				limit = {
+					"num_alliances_and_defensive_pacts_with_allies(scope:target_country)" > 0
+				}
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_ALLIED_TO_ALLIES"
+					value = "num_alliances_and_defensive_pacts_with_allies(scope:target_country)"
+					multiply = 10
+				}
+			}
+
+			if = {
+				limit = {
+					"num_shared_rivals(scope:target_country)" > 0
+				}
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_SHARED_RIVALS"
+					value = "num_shared_rivals(scope:target_country)"
+					multiply = 10
+					max = 30
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						any_scope_treaty = {
+							binds = scope:target_country
+							any_scope_article = {
+								has_type = alliance
+							}
+						}
+					}
+					any_scope_treaty = {
+						count > 0
+						any_scope_article = {
+							has_type = alliance
+						}
+					}
+				}
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_NUM_ALLIES"
+					value = {
+						every_scope_treaty = {
+							limit = {
+								any_scope_article = {
+									has_type = alliance
+						 		}
+							}
+							add = 1
+						}
+					}
+					multiply = -20
+				}
+			}
+
+			if = {
+				limit = {
+					exists = power_bloc
+					exists = scope:target_country.power_bloc
+				}
+				if = {
+					limit = {
+						power_bloc = scope:target_country.power_bloc
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_SAME_POWER_BLOC"
+						value = 15
+					}
+				}
+				else_if = {
+					limit = {
+						is_power_bloc_leader = no
+						scope:target_country = { is_power_bloc_leader = no }							
+					}				
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_DIFFERENT_POWER_BLOC"
+						value = -25
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = { exists = scope:is_treaty_active }
+					exists = scope:treaty
+					scope:treaty.binding_period >= 1825
+				}
+				subtract = {
+					desc = "DIPLOMATIC_ACCEPTANCE_BINDING_PERIOD"
+					value = scope:treaty.binding_period
+					divide = 3650
+					subtract = 25
+					max = 50
+				}
+			}
+		}
+		
+		will_propose = {  
+			would_accept_diplomatic_action = {
+				actor = scope:target_country
+				type = ut_influence_new_dawn_major_power
+			}
+		}
+		
+		propose_score = {
+			value = 1
+			#will do if can, but low chance
+		}
+	}
+}
+
 ut_share_nuclear_power_research = {
 	groups= {
 		general

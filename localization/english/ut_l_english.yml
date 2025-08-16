@@ -123,7 +123,7 @@
 
  ut_share_nuclear_power_research: "Share Nuclear Power Research"
  ut_share_nuclear_power_research_name: "Nuclear Power Research"
- ut_share_nuclear_power_research_desc: "Share the knowledge and advancements gained from our nuclear power research with [TARGET_COUNTRY.GetName]."
+ ut_share_nuclear_power_research_desc: "Share the knowledge and advancements gained from our nuclear power research."
  ut_share_nuclear_power_research_proposal_accepted_name: "$ut_share_nuclear_power_research_name$ accepted"
  ut_share_nuclear_power_research_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted $ut_share_nuclear_power_research_name$."
  ut_share_nuclear_power_research_proposal_declined_name: "$ut_share_nuclear_power_research_name$ declined"
@@ -385,7 +385,7 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  ut_new_dawn_fascist_bar_desc: "Fascist Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_fascist_progress_from_characters: "combined [concept_popularity] of [concept_ut_nd_fascist_characters]"
  ut_nd_fascist_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [concept_ut_nd_fascist_characters] [concept_leader]"
- ut_nd_fascist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName], [GetLawType('law_national_supremacy').GetName]"
+ ut_nd_fascist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName]"
  ut_nd_fascist_progress_from_legitimacy: "[concept_legitimacy] of [concept_ut_nd_fascist_characters] [concept_ruler]"
  ut_nd_fascist_progress_from_focus: "Fascist Focus"
  ut_nd_fascist_progress_from_events: "Events and Other Effects"
@@ -563,10 +563,8 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
 
 #articles
  ut_international_diplomatic_power_bloc_merge: "Unify Democratic Blocs"
- ut_international_diplomatic_power_bloc_merge_desc: "REPLACE_ME"
- ut_international_diplomatic_power_bloc_merge_article_short_desc: "REPLACE_ME"
+ ut_international_diplomatic_power_bloc_merge_desc: "A proposal to unify the democratic power blocs. If accepted, all members of the bloc will join our power bloc."
  ut_international_diplomatic_power_bloc_merge_effects_desc: "• An agreement under which all democratic power bloc members join the other bloc. Unlocked through the democratic New Dawn."
- ut_international_diplomatic_power_bloc_merge_short_desc: "All members of the [TARGET_COUNTRY.GetAdjectiveNoFormatting|l] bloc join the [SOURCE_COUNTRY.GetAltNameNoFormatting('NOM')|U] bloc."
  ut_international_diplomatic_power_bloc_merge_points_them: "[TreatyDraft.GetRightCountry.GetName]: Requires at least #v [SCOPE.ScriptValue('new_dawn_ideology_spend_points')] #![concept_ut_nd_progress_points]"
  je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Has #v $je_ut_new_dawn_democrat_focus$#! modifier"
 
@@ -580,6 +578,9 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  ut_international_diplomatic_power_bloc_merge_proposal_notification_name: "Unify Democratic Blocs Proposal"
  ut_international_diplomatic_power_bloc_merge_proposal_notification_desc: "A proposal to unify the democratic power blocs has been sent."
 
+ ut_influence_new_dawn_major_power: "Spread Ideology"
+ ut_influence_new_dawn_major_power_desc: "Promote the New Dawn ideology among major powers."
+ ut_influence_new_dawn_major_power_unlock_tt: "Unlocks: #v $ut_influence_new_dawn_major_power$#!"
 
 # Diplo
  principle_group_modern_trade_league: "Modern Trade League"

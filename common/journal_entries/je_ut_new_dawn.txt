@@ -1,4 +1,4 @@
-﻿je_ut_new_dawn = {
+je_ut_new_dawn = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
 	group = je_group_utopia
@@ -7,6 +7,7 @@
 	is_shown_when_inactive = {
 		OR = {
 			is_player = yes
+			has_variable = je_ut_new_dawn_major_power_influenced_var
 			country_rank >= rank_value:great_power
 		}
 		ut_service_workers_possible = yes
