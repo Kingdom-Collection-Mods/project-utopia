@@ -18,7 +18,7 @@
 			has_global_variable = je_ut_new_dawn_global_started
 			pop_type_percent_country = {
 				pop_type = service_workers
-				percent > 0.02
+				percent > 0.01
 			}
 		}
 	}

@@ -52,8 +52,7 @@ je_ut_new_dawn_democrat_focus = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_new_dawn_focus_selected_progress = 0.5
 	country_radicals_from_conquest_mult = 0.5
-	country_infamy_generation_mult = -0.25
-	country_diplomatic_play_maneuvers_add = -50
+	country_diplomatic_play_maneuvers_add = -25
 }
  
 je_ut_new_dawn_fascist_focus = {
@@ -124,7 +123,6 @@ modern_civil_aviation_modifier_others = {
 
 je_ut_new_dawn_democratic_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	country_infamy_generation_mult = 0.5
 	unit_defense_mult = 0.1
 }
 

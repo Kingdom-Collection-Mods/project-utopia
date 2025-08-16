@@ -175,6 +175,12 @@ ut_new_dawn_autocrat_focus = {
 			}
 			add = 2
 		}
+		if = {
+			limit = {
+				has_variable = je_ut_new_dawn_first_started
+			}
+			multiply = 0
+		}
 	}
 
 }
