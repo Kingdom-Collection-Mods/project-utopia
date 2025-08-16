@@ -35,9 +35,15 @@ ut_new_dawn_fascist_focus = {
 	#1000 always
 	#10 very likely
 	#5 likely
-	#1 if no other reasons
+	#2 if no other reasons
 	ai_chance = {
 		value = 0
+		if = {
+			limit = {
+				has_modifier = je_ut_new_dawn_fascist_focus
+			}
+			add = 10
+		}
 		if = {
 			limit = {
 				OR = {
@@ -77,17 +83,6 @@ ut_new_dawn_fascist_focus = {
 				}
 			}
 			add = 2
-		}
-		if = {
-			limit = {
-				OR = {
-					has_modifier = je_ut_new_dawn_autocrat_focus
-					has_modifier = je_ut_new_dawn_democrat_focus
-					has_modifier = je_ut_new_dawn_fascist_focus
-					has_modifier = je_ut_new_dawn_communist_focus
-				}
-			}
-			multiply = 0
 		}
 		if = {
 			limit = {
@@ -135,6 +130,13 @@ ut_new_dawn_autocrat_focus = {
 	}
 	ai_chance = {
 		value = 0
+		
+		if = {
+			limit = {
+				has_modifier = je_ut_new_dawn_autocrat_focus
+			}
+			add = 10
+		}
 		if = {
 			limit = {
 				OR = {
@@ -165,17 +167,6 @@ ut_new_dawn_autocrat_focus = {
 			}
 			add = 5
 		}	
-		if = {
-			limit = {
-				OR = {
-					has_modifier = je_ut_new_dawn_autocrat_focus
-					has_modifier = je_ut_new_dawn_democrat_focus
-					has_modifier = je_ut_new_dawn_fascist_focus
-					has_modifier = je_ut_new_dawn_communist_focus
-				}
-			}
-			multiply = 0
-		}
 		if = {
 			limit = {
 				ruler = {
@@ -226,6 +217,12 @@ ut_new_dawn_democrat_focus = {
 		value = 0
 		if = {
 			limit = {
+				has_modifier = je_ut_new_dawn_democrat_focus
+			}
+			add = 10
+		}
+		if = {
+			limit = {
 				c:USA ?= this
 				NOT = { exists = c:CSA }
 			}
@@ -245,19 +242,15 @@ ut_new_dawn_democrat_focus = {
 			}
 			add = 5
 		}
-		
 		if = {
 			limit = {
 				OR = {
-					has_modifier = je_ut_new_dawn_autocrat_focus
-					has_modifier = je_ut_new_dawn_democrat_focus
-					has_modifier = je_ut_new_dawn_fascist_focus
-					has_modifier = je_ut_new_dawn_communist_focus
+					has_law = law_type:law_universal_suffrage
+					has_law = law_type:law_census_voting
 				}
 			}
-			multiply = 0
+			add = 2
 		}
-		
 		if = {
 			limit = {
 				ruler = {
@@ -308,23 +301,16 @@ ut_new_dawn_communist_focus = {
 		value = 0
 		if = {
 			limit = {
+				has_modifier = je_ut_new_dawn_communist_focus
+			}
+			add = 10
+		}
+		if = {
+			limit = {
 				c:RUS ?= this
 			}
 			add = 2
 		}
-		
-		if = {
-			limit = {
-				OR = {
-					has_modifier = je_ut_new_dawn_autocrat_focus
-					has_modifier = je_ut_new_dawn_democrat_focus
-					has_modifier = je_ut_new_dawn_fascist_focus
-					has_modifier = je_ut_new_dawn_communist_focus
-				}
-			}
-			multiply = 0
-		}
-		
 		if = {
 			limit = {
 				OR = {
