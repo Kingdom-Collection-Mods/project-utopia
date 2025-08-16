@@ -1,4 +1,4 @@
-je_ut_new_dawn = {
+﻿je_ut_new_dawn = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
 	group = je_group_utopia
@@ -15,17 +15,10 @@ je_ut_new_dawn = {
 
 	possible = {
 		OR = {
-			has_variable = je_ut_new_dawn_activate_cheat_var
+			has_global_variable = je_ut_new_dawn_global_started
 			pop_type_percent_country = {
 				pop_type = service_workers
-				percent > 0.05
-			}
-			AND = {
-				is_ai = yes
-				pop_type_percent_country = {
-					pop_type = service_workers
-					percent > 0.01
-				}
+				percent > 0.02
 			}
 		}
 	}
@@ -36,6 +29,13 @@ je_ut_new_dawn = {
 
 	immediate = {
 		ut_set_new_dawn_variables = yes
+		if = {
+			limit = {
+				has_global_variable = je_ut_new_dawn_global_started
+			}
+			set_global_variable = je_ut_new_dawn_global_started
+			set_variable = je_ut_new_dawn_first_started
+		}
 	}
 
 	scripted_button = ut_new_dawn_fascist_focus
