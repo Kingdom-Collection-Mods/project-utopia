@@ -57,7 +57,7 @@ ut_new_dawn_fascist_focus = {
 			limit = {
 				has_law = law_type:law_ethnostate
 			}
-			add = 5
+			add = 2
 		}
 		if = {
 			#Historically Germany, Italy, and Japan below in "ranking"?
@@ -261,6 +261,24 @@ ut_new_dawn_democrat_focus = {
 			limit = {
 				ruler = {
 					ut_ideology_new_dawn_democrat_trigger = yes
+				}
+			}
+			add = 2
+		}
+		if = {
+			#Fascist scare if democratic them self?
+			limit = {
+				OR = {
+					has_law = law_type:law_universal_suffrage
+					has_law = law_type:law_protected_speech
+				}
+				any_neighbouring_state = {
+					owner = {
+						OR = {
+							has_modifier = je_ut_new_dawn_fascist_focus
+							has_variable = ut_new_dawn_core_fascist_var
+						}
+					}
 				}
 			}
 			add = 2

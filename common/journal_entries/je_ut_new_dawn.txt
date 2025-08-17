@@ -31,7 +31,7 @@
 		ut_set_new_dawn_variables = yes
 		if = {
 			limit = {
-				has_global_variable = je_ut_new_dawn_global_started
+				NOT = { has_global_variable = je_ut_new_dawn_global_started }
 			}
 			set_global_variable = je_ut_new_dawn_global_started
 			set_variable = je_ut_new_dawn_first_started
