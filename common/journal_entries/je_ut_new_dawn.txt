@@ -236,8 +236,15 @@ je_ut_new_dawn_democratic = {
 		}
 		if = {
 			limit = {
-				c:GBR ?= this
-				power_bloc_leader = yes
+				NOT = { has_modifier = ut_new_dawn_core_democratic_mod }
+			}
+			add_modifier = {
+				name = ut_new_dawn_core_democratic_mod
+			}
+		}
+		if = {
+			limit = {
+				is_power_bloc_leader = yes
 				power_bloc ?= {
 					has_principle_group = principle_group:principle_group_colonial_offices
 				}
@@ -247,7 +254,12 @@ je_ut_new_dawn_democratic = {
 				remove_principle = principle_colonial_offices_2
 				remove_principle = principle_colonial_offices_3
 
-				add_principle = principle_external_trade_1
+				if = {
+					limit = {
+						NOT = { has_principle_group = principle_group:principle_group_external_trade }
+					}
+					add_principle = principle_external_trade_1
+				}
 			}		
 		}
 	}
@@ -309,6 +321,15 @@ je_ut_new_dawn_democratic = {
 					name = je_ut_new_dawn_democrat_focus
 				}
 			}
+			#debug todo remove, only for backwards compat
+			if = {
+				limit = {
+					NOT = { has_modifier = ut_new_dawn_core_democratic_mod }
+				}
+				add_modifier = {
+					name = ut_new_dawn_core_democratic_mod
+				}
+			}
 		}
 		random_events = {
 			400 = 0
@@ -362,6 +383,14 @@ je_ut_new_dawn_autocratic = {
 				name = je_ut_new_dawn_autocrat_focus
 			}
 		}
+		if = {
+			limit = {
+				NOT = { has_modifier = ut_new_dawn_core_autocratic_mod }
+			}
+			add_modifier = {
+				name = ut_new_dawn_core_autocratic_mod
+			}
+		}
 	}
 
 	
@@ -403,6 +432,15 @@ je_ut_new_dawn_autocratic = {
 				}
 				add_modifier = {
 					name = je_ut_new_dawn_autocrat_focus
+				}
+			}
+			#debug todo remove, only for backwards compat
+			if = {
+				limit = {
+					NOT = { has_modifier = ut_new_dawn_core_autocratic_mod }
+				}
+				add_modifier = {
+					name = ut_new_dawn_core_autocratic_mod
 				}
 			}
 		}
@@ -451,6 +489,14 @@ je_ut_new_dawn_fascist = {
 			}
 			add_modifier = {
 				name = je_ut_new_dawn_fascist_focus
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_modifier = ut_new_dawn_core_fascist_mod }
+			}
+			add_modifier = {
+				name = ut_new_dawn_core_fascist_mod
 			}
 		}
 	}
@@ -547,6 +593,15 @@ je_ut_new_dawn_fascist = {
 					name = je_ut_new_dawn_autocrat_focus
 				}
 			}
+			#debug todo remove, only for backwards compat
+			if = {
+				limit = {
+					NOT = { has_modifier = ut_new_dawn_core_fascist_mod }
+				}
+				add_modifier = {
+					name = ut_new_dawn_core_fascist_mod
+				}
+			}
 		}
 		random_events = {
 			400 = 0
@@ -581,7 +636,7 @@ je_ut_new_dawn_communist = {
 
 	modifiers_while_active = {
 		new_dawn_phase_2_mod
-		je_ut_new_dawn_autocratic_mod
+		je_ut_new_dawn_communist_mod
 	}
 
 	immediate = {
@@ -593,6 +648,14 @@ je_ut_new_dawn_communist = {
 			}
 			add_modifier = {
 				name = je_ut_new_dawn_communist_focus
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_modifier = ut_new_dawn_core_communist_mod }
+			}
+			add_modifier = {
+				name = ut_new_dawn_core_communist_mod
 			}
 		}
 	}
@@ -646,10 +709,19 @@ je_ut_new_dawn_communist = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }
+					NOT = { has_modifier = je_ut_new_dawn_communist_focus }
 				}
 				add_modifier = {
-					name = je_ut_new_dawn_autocrat_focus
+					name = je_ut_new_dawn_communist_focus
+				}
+			}
+			#debug todo remove, only for backwards compat
+			if = {
+				limit = {
+					NOT = { has_modifier = ut_new_dawn_core_communist_mod }
+				}
+				add_modifier = {
+					name = ut_new_dawn_core_communist_mod
 				}
 			}
 		}

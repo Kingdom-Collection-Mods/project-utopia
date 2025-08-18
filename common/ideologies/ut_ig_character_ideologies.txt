@@ -507,17 +507,10 @@ ut_ideology_national_socialist_leader = {
 	lawgroup_migration = {
 		law_closed_borders = strongly_approve
 		law_migration_controls = approve
-		law_registration_process = approve
+		law_registration_process = disapprove
 		law_no_migration_controls = strongly_disapprove
 	}
 
-	
-	lawgroup_migration = {
-		law_closed_borders = strongly_approve
-		law_migration_controls = approve
-		law_registration_process = approve
-		law_no_migration_controls = strongly_disapprove
-	}
 
 	country_trigger = {
 		has_technology_researched = national_socialism

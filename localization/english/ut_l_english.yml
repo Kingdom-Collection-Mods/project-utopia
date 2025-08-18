@@ -240,13 +240,13 @@
  concept_ut_nd_communist_characters: "Communist Characters"
  concept_ut_nd_communist_characters_desc: "Communist character ideologies are: [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_vanguardist').GetName], and [GetIdeology('ideology_nihilist').GetName].\nIf Communist Focus is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_land_reformer').GetName], and [GetIdeology('ideology_modernizer_leader').GetName]."
 
- je_ut_new_dawn_democrat_focus: "Democratic"
+ je_ut_new_dawn_democrat_focus: "Democratic Focus"
  je_ut_new_dawn_democrat_focus_desc: "Democratic focus selected"
- je_ut_new_dawn_fascist_focus: "Fascist"
+ je_ut_new_dawn_fascist_focus: "Fascist Focus"
  je_ut_new_dawn_fascist_focus_desc: "Fascist focus selected"
- je_ut_new_dawn_autocrat_focus: "Autocratic"
+ je_ut_new_dawn_autocrat_focus: "Autocratic Focus"
  je_ut_new_dawn_autocrat_focus_desc: "Autocratic focus selected"
- je_ut_new_dawn_communist_focus: "Communist"
+ je_ut_new_dawn_communist_focus: "Communist Focus"
  je_ut_new_dawn_communist_focus_desc: "Communist focus selected"
 
  
@@ -476,9 +476,9 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  ut_movement_humanist_name: "Humanist Movement"
  ut_movement_rationalists_name: "Rationalist Movement"
 
- ut_movement_cosmopolitan_unlock_tt: "Unlocks [SCOPE.sPoliticalMovement('ut_movement_cosmopolitan_name').GetName] [concept_political_movement]"
- ut_movement_humanist_unlock_tt: "Unlocks [SCOPE.sPoliticalMovement('ut_movement_humanist_name').GetName] [concept_political_movement]"
- ut_movement_rationalists_unlock_tt: "Unlocks [SCOPE.sPoliticalMovement('ut_movement_rationalists_name').GetName] [concept_political_movement]"
+ ut_movement_cosmopolitan_unlock_tt: "Unlocks [SCOPE.sPoliticalMovement('ut_movement_cosmopolitan').GetName] [concept_political_movement]"
+ ut_movement_humanist_unlock_tt: "Unlocks [SCOPE.sPoliticalMovement('ut_movement_humanist').GetName] [concept_political_movement]"
+ ut_movement_rationalists_unlock_tt: "Unlocks [SCOPE.sPoliticalMovement('ut_movement_rationalists').GetName] [concept_political_movement]"
 
 
  lawgroup_environment_protection: "Environmental Protection"

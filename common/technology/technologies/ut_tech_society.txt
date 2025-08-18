@@ -661,9 +661,9 @@ movie_industry = {
 		
 
 	on_researched = {
-		custom_tooltip = {
-			text = ut_movement_rationalists_unlock_tt
-		}
+		# custom_tooltip = {
+		# 	text = ut_movement_rationalists_unlock_tt
+		# }
 	}
 
 	modifier = {
@@ -685,9 +685,9 @@ online_forums = {
 		
 
 	on_researched = {
-		custom_tooltip = {
-			text = ut_movement_rationalists_unlock_tt
-		}
+		# custom_tooltip = {
+		# 	text = ut_movement_rationalists_unlock_tt
+		# }
 	}
 
 	modifier = {
@@ -710,9 +710,9 @@ social_media = {
 		
 
 	on_researched = {
-		custom_tooltip = {
-			text = ut_movement_rationalists_unlock_tt
-		}
+		# custom_tooltip = {
+		# 	text = ut_movement_rationalists_unlock_tt
+		# }
 	}
 
 	modifier = {
@@ -736,9 +736,9 @@ anti_discrimination_laws = {
 		
 
 	on_researched = {
-		custom_tooltip = {
-			text = ut_movement_rationalists_unlock_tt
-		}
+		# custom_tooltip = {
+		# 	text = ut_movement_rationalists_unlock_tt
+		# }
 		custom_tooltip = {
 			text = ut_movement_cosmopolitan_unlock_tt
 		}

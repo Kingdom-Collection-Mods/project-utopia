@@ -59,9 +59,7 @@ je_ut_new_dawn_fascist_focus = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
 	country_new_dawn_focus_selected_progress = 0.5
 	country_radicals_from_conquest_mult = -0.5
-	country_infamy_generation_mult = -0.5
-	country_infamy_decay_mult = -0.5
-	country_diplomatic_play_maneuvers_add = 100
+	country_diplomatic_play_maneuvers_add = 50
 }
 
 je_ut_new_dawn_autocrat_focus = {
@@ -72,6 +70,12 @@ je_ut_new_dawn_autocrat_focus = {
 }
 
 je_ut_new_dawn_communist_focus = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_new_dawn_focus_selected_progress = 0.5
+	country_radicals_from_conquest_mult = 0.25
+}
+
+ut_new_dawn_communist_focus = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_new_dawn_focus_selected_progress = 0.5
 	country_radicals_from_conquest_mult = 0.25
@@ -122,7 +126,12 @@ modern_civil_aviation_modifier_others = {
 	country_tech_spread_add = 50
 }
 
+#deprecated
 je_ut_new_dawn_democratic_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+}
+
+ut_new_dawn_core_democratic_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	unit_defense_mult = 0.1
 }
@@ -137,19 +146,37 @@ je_ut_new_dawn_democratic_fair_elections_mod = {
 	country_voting_power_base_add = 5
 }
 
+#deprecated
 je_ut_new_dawn_autocratic_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+}
+
+ut_new_dawn_core_autocratic_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
 	country_suppression_attraction_factor = -0.25
 	country_authority_mult = 0.5
 }
 
+#deprecated
 je_ut_new_dawn_fascist_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
-	country_liberty_desire_of_subjects_add = 0.05
 }
 
+ut_new_dawn_core_fascist_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	country_liberty_desire_of_subjects_add = 0.05
+	country_infamy_generation_mult = -0.5
+	country_infamy_decay_mult = -0.5
+	country_diplomatic_play_maneuvers_add = 50
+}
+
+#deprecated
 je_ut_new_dawn_communist_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+}
+
+ut_new_dawn_core_communist_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 }
 
 ut_research_high_tech_computers_research_mod = {

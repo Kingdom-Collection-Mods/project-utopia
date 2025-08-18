@@ -91,14 +91,14 @@ ut_international_diplomatic_power_bloc_merge = {
 			is_in_power_bloc = yes
 			is_power_bloc_leader = yes
 		}
-		has_modifier = je_ut_new_dawn_democrat_focus
+		has_modifier = ut_new_dawn_core_democratic_mod
 		has_modifier = je_ut_new_dawn_democratic_power_bloc_mod
 	}
 	
 	possible = {
 		scope:target_country = {
 			is_power_bloc_leader = yes
-			has_modifier = je_ut_new_dawn_democrat_focus
+			has_modifier = ut_new_dawn_core_democratic_mod
 		}
 	}
 	
