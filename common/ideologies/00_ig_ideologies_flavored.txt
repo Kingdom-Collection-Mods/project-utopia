@@ -617,8 +617,8 @@ ideology_agrarian_jeffersonian = {
 		law_laissez_faire = disapprove
 		law_command_economy = strongly_disapprove
 		law_extraction_economy = strongly_disapprove
-		law_social_market_economy = approve 
-		law_state_capitalism_economy = approve 
+		law_social_market_economy = neutral 
+		law_state_capitalism_economy = neutral 
 		law_free_market_economy = strongly_disapprove
 		law_corporate_economy = strongly_disapprove
 	}
@@ -691,7 +691,7 @@ ideology_colonialist = {
 		law_social_market_economy = strongly_disapprove 
 		law_state_capitalism_economy = disapprove 
 		law_free_market_economy = strongly_disapprove
-		law_corporate_economy = strongly_disapprove
+		law_corporate_economy = neutral
 	}
 	
 	lawgroup_trade_policy = {		
