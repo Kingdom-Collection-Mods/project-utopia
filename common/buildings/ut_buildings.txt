@@ -440,6 +440,10 @@ building_ut_nuclear_power_plant_construction_site = {
 	expandable = no
 
 	downsizeable = no
+	
+	unlocking_technologies = {
+		nuclear_power
+	}
 
 	production_method_groups = {
 		pmg_base_building_ut_nuclear_power_plant_construction
