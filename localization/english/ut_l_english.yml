@@ -418,8 +418,8 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  SERVICE_WORKERS_QUALIFICATIONS_DESC: "Only population groups with sufficient [concept_literacy] and [concept_wealth] can become #v $service_workers$#!. The potential increases with rising [concept_literacy] and [concept_wealth]. #v $shopkeepers$#! and #v $clerks$#! find it especially easy to become #v $service_workers$#!."
  country_service_workers_pol_str_mult: "[concept_political_strength] of $service_workers$"
  country_service_workers_pol_str_mult_desc: "An increase or decrease in the [concept_political_strength] of $service_workers$"
- state_service_workers_investment_pool_contribution_add: "Contribution to [concept_investment_pool] ($service_workers$)"
- state_service_workers_investment_pool_efficiency_mult: "Contribution Efficiency to [concept_investment_pool] ($service_workers$)"
+ state_service_workers_investment_pool_contribution_add: "$service_workers$ [concept_investment_pool] contribution"
+ state_service_workers_investment_pool_efficiency_mult: "$service_workers$ [concept_investment_pool] contribution efficiency"
  state_service_workers_investment_pool_contribution_add_desc: "How much of their profits $service_workers$ will invest."
  state_service_workers_investment_pool_efficiency_mult_desc: "An increase or decrease in the invested profits that $service_workers$ contribute to the [concept_investment_pool]."
  building_employment_service_workers_add: "$service_workers$ Per Level"
@@ -445,18 +445,18 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  ideology_urbanist_human_rights_base_desc: "Humanist ideologies focus on equality, social justice, and the protection of individual rights. They reject slavery and exploitation and advocate for strong social safety nets."
  ut_ideology_environmentalist_leader: "Ecologist"
  ut_ideology_environmentalist_leader_desc: "#lore Environmentalists.#!"
- ut_ideology_environmentalist_leader_unlock_tt: "Unlocks $ut_ideology_environmentalist_leader$ [concept_ideology]"
+ ut_ideology_environmentalist_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_environmentalist_leader').GetName] [concept_ideology]"
 
  ut_ideology_cosmopolitan: "Cosmopolitan"
  ut_ideology_cosmopolitan_desc: "Cosmopolitan ideologies emphasize global cooperation, cultural diversity, and the promotion of human rights. They advocate open borders, multiculturalism, and a secular government free from religious influence."
  ut_ideology_cosmopolitan_leader: "Cosmopolitan"
  ut_ideology_cosmopolitan_leader_desc: "Cosmopolitan ideologies emphasize global cooperation, cultural diversity, and the promotion of human rights. They advocate open borders, multiculturalism, and a secular government free from religious influence."
- ut_ideology_cosmopolitan_leader_unlock_tt: "Unlocks $ut_ideology_cosmopolitan_leader$ [concept_ideology]"
+ ut_ideology_cosmopolitan_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_cosmopolitan_leader').GetName] [concept_ideology]"
 
  ut_ideology_autocratic_leader: "Autocratic"
- ut_ideology_autocratic_leader_unlock_tt: "Unlocks $ut_ideology_autocratic_leader$ [concept_ideology]"
+ ut_ideology_autocratic_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_autocratic_leader').GetName] [concept_ideology]"
  ut_ideology_national_socialist_leader: "National Socialist"
- ut_ideology_national_socialist_leader_unlock_tt: "Unlocks $ut_ideology_national_socialist_leader$ [concept_ideology]"
+ ut_ideology_national_socialist_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_national_socialist_leader').GetName] [concept_ideology]"
 
  ideology_liberal_democratic: "Liberal-Democratic"
  ideology_moralist_democratic: "Moralist-Democratic"
@@ -476,10 +476,10 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  ut_movement_humanist_name: "Humanist Movement"
  ut_movement_rationalists_name: "Rationalist Movement"
 
- ut_movement_cosmopolitan_unlock_tt: "Unlocks $ut_movement_cosmopolitan_name$ [concept_political_movement]"
- ut_movement_humanist_unlock_tt: "Unlocks $ut_movement_humanist_name$ [concept_political_movement]"
- ut_movement_rationalists_unlock_tt: "Unlocks $ut_movement_rationalists_name$ [concept_political_movement]"
- 
+ ut_movement_cosmopolitan_unlock_tt: "Unlocks [SCOPE.sPoliticalMovement('ut_movement_cosmopolitan_name').GetName] [concept_political_movement]"
+ ut_movement_humanist_unlock_tt: "Unlocks [SCOPE.sPoliticalMovement('ut_movement_humanist_name').GetName] [concept_political_movement]"
+ ut_movement_rationalists_unlock_tt: "Unlocks [SCOPE.sPoliticalMovement('ut_movement_rationalists_name').GetName] [concept_political_movement]"
+
 
  lawgroup_environment_protection: "Environmental Protection"
  lawgroup_environment_protection_desc: "Laws and institutions that protect the environment, promote sustainability, and ensure ecological balance."

@@ -62,10 +62,10 @@ ut_new_dawn_fascist_focus = {
 		if = {
 			#Historically Germany, Italy, and Japan below in "ranking"?
 			limit = {
-				global_country_ranking < 5
+				global_country_ranking >= 5
 				country_rank >= rank_value:great_power
 			}
-			add = 5
+			add = 2
 		}
 		if = {
 			#Red scare if not socialist them self?
@@ -149,6 +149,8 @@ ut_new_dawn_autocrat_focus = {
 		if = {
 			#let's stay in power, if nothing else to bother
 			limit = {
+				NOT = { has_law = law_type:law_census_voting }
+				NOT = { has_law = law_type:law_universal_suffrage }
 				OR = {
 					has_law = law_type:law_monarchy
 					has_law = law_type:law_corporate_state
@@ -161,11 +163,11 @@ ut_new_dawn_autocrat_focus = {
 			add = 5
 		}
 		if = {
-			#Same chance as fascist
+			#Same chance as fascist (but more likely for majors)
 			limit = {
-				global_country_ranking < 5
+				global_country_ranking >= 5
 			}
-			add = 5
+			add = 2
 		}	
 		if = {
 			limit = {
@@ -244,9 +246,9 @@ ut_new_dawn_democrat_focus = {
 		if = {
 			#Historically USA and Great Britain high "ranking"?
 			limit = {
-				global_country_ranking > 4
+				global_country_ranking < 5
 			}
-			add = 5
+			add = 2
 		}
 		if = {
 			limit = {
@@ -343,6 +345,25 @@ ut_new_dawn_communist_focus = {
 				}
 			}
 			add = 5
+		}
+		
+		if = {
+			#Fascist scare if communist them self?
+			limit = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+				any_neighbouring_state = {
+					owner = {
+						OR = {
+							has_modifier = je_ut_new_dawn_fascist_focus
+							has_variable = ut_new_dawn_core_fascist_var
+						}
+					}
+				}
+			}
+			add = 2
 		}
 		if = {
 			limit = {
