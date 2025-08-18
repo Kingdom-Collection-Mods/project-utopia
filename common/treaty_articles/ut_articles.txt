@@ -29,9 +29,11 @@
 	}
 
 	visible = {
+		has_technology_researched = multilateral_alliances
 	}
 
 	possible = {
+		has_technology_researched = union_new_mandates
 	}
 
 	requirement_to_maintain = {
