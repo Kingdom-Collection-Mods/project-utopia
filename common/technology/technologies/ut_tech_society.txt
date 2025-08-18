@@ -341,7 +341,7 @@ union_new_mandates = {
 	}
 		
 	modifier = {
-		country_infamy_generation_mult = -0.25
+		country_infamy_generation_mult = -0.1
 	}
 
 	unlocking_technologies = {
@@ -832,7 +832,7 @@ anti_multicultural_globalism = {
 		
 	modifier = {
 		state_expected_sol_from_literacy = 2 #todo: does not really fit here
-		country_infamy_generation_mult = -0.25
+		country_infamy_generation_mult = -0.1
 	}
 
 	unlocking_technologies = {
