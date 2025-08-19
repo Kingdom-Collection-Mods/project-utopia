@@ -702,3 +702,191 @@ ut_ideology_national_socialist_leader = {
 		}
 	}	
 }
+
+ut_ideology_economical_corporatist_leader = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_paternalistic.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_governance_principles = {
+		law_theocracy = neutral
+		law_monarchy = neutral
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_corporate_state = approve
+		law_council_republic = strongly_disapprove
+	}
+	
+	lawgroup_education_system = {
+		law_public_schools = approve
+		law_public_university = neutral
+		law_religious_schools = approve
+		law_private_schools = neutral
+		law_private_universities = neutral	
+		law_no_schools = disapprove	
+	}	
+	
+	lawgroup_labor_rights = {
+		law_no_workers_rights = neutral
+		law_regulatory_bodies = approve
+		law_worker_protections = neutral
+		law_ut_minimum_wage = disapprove
+	}
+	
+	lawgroup_welfare = {
+		law_poor_laws = neutral
+		law_no_social_security = disapprove
+		law_wage_subsidies = approve
+		law_old_age_pension = neutral
+		law_private_pension = approve
+	}
+
+	lawgroup_food_safety = {
+		law_no_food_safety_protection = approve
+		law_food_safety_protection_institute = neutral
+		law_food_safety_protection_institute_two = disapprove		
+	}
+
+	#new on top of corporatist
+	lawgroup_bureaucracy = {
+		law_elected_bureaucrats = disapprove
+		law_appointed_bureaucrats = neutral
+		law_hereditary_bureaucrats = disapprove
+		law_privatized_bureaucrats = strongly_approve
+	}
+	
+	lawgroup_economic_system = {	
+		law_laissez_faire = neutral
+		law_interventionism = strongly_disapprove
+		law_agrarianism = strongly_disapprove
+		law_traditionalism = strongly_disapprove	
+		law_cooperative_ownership = strongly_disapprove
+		law_command_economy = strongly_disapprove
+		law_industry_banned = strongly_disapprove
+		law_extraction_economy = neutral
+		law_social_market_economy = strongly_disapprove 
+		law_state_capitalism_economy = disapprove
+		law_free_market_economy = neutral
+		law_corporate_economy = strongly_approve
+	}
+	
+	country_trigger = {
+		has_technology_researched = political_progress_1_cosmopolitan
+	}
+
+		
+
+	country_trigger = {
+		has_technology_researched = modern_economy
+	}
+
+	non_interest_group_leader_trigger = {
+		# Agitators should have an ideology at odds with current laws
+		NAND = {
+			has_role = agitator
+			owner = {
+				NOT = {
+					has_law = law_type:law_council_republic
+				}
+				has_law = law_type:law_religious_schools
+				has_law = law_type:law_regulatory_bodies
+				has_law = law_type:law_wage_subsidies
+			}
+		}
+	}
+	
+	interest_group_leader_weight = {
+		value = 100
+		# not very relevant if issues are already addressed
+		if = {
+			limit = {
+				owner = {
+					NOT = {
+						has_law = law_type:law_council_republic
+					}
+					has_law = law_type:law_private_universities
+					has_law = law_type:law_regulatory_bodies
+					has_law = law_type:law_wage_subsidies
+				}
+			}
+			add = -25
+		}
+		# less likely for landowners
+		if = {
+			limit = {
+				is_interest_group_type = ig_landowners
+			}
+			add = -50
+		}
+		# less likely for devout due to their IG ideology
+		if = {
+			limit = {
+				is_interest_group_type = ig_devout
+			}
+			add = -75
+		}
+		# more likely for content trade unions and rural folk outside of council republic
+		if = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_rural_folk
+				}
+				ig_approval >= 0
+				owner = {
+					NOT = { has_law = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_state_atheism }
+				}
+			}
+			add = 25
+		}
+		# conservative and/or reactionary leaders have a higher spawn chance if the Anti-Dreyfusards won
+		if = {
+			limit = {
+				has_variable = anti_dreyfusard_victory
+			}
+			add = 25
+		}
+		# corporatist boosts
+		if = {
+			limit = {
+				has_variable = corporatist_leaders_boost
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				OR = {
+					has_variable = communist_ig_var
+					has_variable = chose_vanguardism
+					has_variable = chose_anarchism
+					has_variable = chose_communism
+					has_variable = chose_ethno_nationalism
+					has_variable = chose_conservatism
+					has_variable = chose_fascism
+				}
+			}
+			multiply = 0.1
+		}
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}
+}
