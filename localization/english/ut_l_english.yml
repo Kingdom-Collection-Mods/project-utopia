@@ -262,7 +262,7 @@
  ut_new_dawn_democrat_bar_desc: "Democratic Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_democrat_progress_from_characters: "combined [concept_popularity] of [concept_ut_nd_democrat_characters]"
  ut_nd_democrat_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [concept_ut_nd_democrat_characters] [concept_leader]"
- ut_nd_democrat_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_universal_suffrage').GetName]"
+ ut_nd_democrat_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_universal_suffrage').GetName] and [GetLawType('law_census_voting').GetName]"
  ut_nd_democrat_progress_from_legitimacy: "[concept_legitimacy] of [concept_ut_nd_democrat_characters] [concept_ruler]"
  ut_nd_democrat_progress_from_events: "Events and Other Effects"
  ut_nd_democrat_progress_from_focus: "Democratic Focus"

@@ -189,7 +189,6 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 			change_variable = { name = ut_nd_democrat_progress_from_laws add = 0.5 }
 		}
 	}
-	change_variable = { name = ut_nd_democrat_progress_from_laws divide = 100 }
 	# From Movements
 	# From Legitimacy
 	change_variable = { name = ut_nd_democrat_progress_from_legitimacy divide = 100 }
@@ -275,7 +274,6 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 			change_variable = { name = ut_nd_autocrat_progress_from_laws add = 1 }
 		}
 	}
-	change_variable = { name = ut_nd_autocrat_progress_from_laws divide = 100 }
 	# From Movements
 	# From Legitimacy
 	change_variable = { name = ut_nd_autocrat_progress_from_legitimacy divide = 100 }
