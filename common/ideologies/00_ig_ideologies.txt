@@ -24,6 +24,7 @@
 	
 	lawgroup_bureaucracy = {
 		law_hereditary_bureaucrats = approve
+		law_privatized_bureaucrats = disapprove
 		law_appointed_bureaucrats = neutral
 		law_elected_bureaucrats = disapprove
 	}
@@ -413,6 +414,7 @@ ideology_meritocratic = {
 		law_elected_bureaucrats = approve
 		law_appointed_bureaucrats = neutral		
 		law_hereditary_bureaucrats = disapprove
+		law_privatized_bureaucrats = disapprove
 	}	
 	
 	lawgroup_taxation = {
@@ -563,6 +565,7 @@ ideology_anti_clerical = {
 		law_appointed_bureaucrats = approve
 		law_elected_bureaucrats = neutral	
 		law_hereditary_bureaucrats = disapprove
+		law_privatized_bureaucrats = disapprove
 	}
 
 	lawgroup_caste_hegemony = {

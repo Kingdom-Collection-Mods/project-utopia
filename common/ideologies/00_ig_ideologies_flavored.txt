@@ -24,6 +24,7 @@
 	
 	lawgroup_bureaucracy = {
 		law_hereditary_bureaucrats = approve
+		law_privatized_bureaucrats = disapprove
 		law_appointed_bureaucrats = neutral
 		law_elected_bureaucrats = neutral
 	}
@@ -64,6 +65,7 @@ ideology_scholar_paternalistic = {
 		law_appointed_bureaucrats = approve
 		law_elected_bureaucrats = disapprove
 		law_hereditary_bureaucrats = disapprove
+		law_privatized_bureaucrats = disapprove
 	}
 
 	lawgroup_policing = {
@@ -100,6 +102,7 @@ ideology_junker_paternalistic = {
 	
 	lawgroup_bureaucracy = {
 		law_hereditary_bureaucrats = approve
+		law_privatized_bureaucrats = disapprove
 		law_appointed_bureaucrats = approve
 		law_elected_bureaucrats = disapprove
 	}
@@ -138,6 +141,7 @@ ideology_papal_paternalistic = {
 	
 	lawgroup_bureaucracy = {
 		law_hereditary_bureaucrats = approve
+		law_privatized_bureaucrats = disapprove
 		law_appointed_bureaucrats = neutral
 		law_elected_bureaucrats = disapprove
 	}
@@ -288,6 +292,7 @@ ideology_caudillismo = {
 	
 	lawgroup_bureaucracy = {
 		law_hereditary_bureaucrats = approve
+		law_privatized_bureaucrats = disapprove
 		law_appointed_bureaucrats = approve
 		law_elected_bureaucrats = disapprove
 	}
@@ -427,6 +432,7 @@ ideology_hindu_moralist = {
 
 	lawgroup_bureaucracy = {
 		law_hereditary_bureaucrats = approve
+		law_privatized_bureaucrats = disapprove
 		law_appointed_bureaucrats = neutral
 		law_elected_bureaucrats = disapprove
 	}
@@ -460,6 +466,7 @@ ideology_hindu_moralist_british_india = {
 
 	lawgroup_bureaucracy = {
 		law_hereditary_bureaucrats = approve
+		law_privatized_bureaucrats = disapprove
 		law_appointed_bureaucrats = neutral
 		law_elected_bureaucrats = disapprove
 	}
@@ -486,6 +493,7 @@ ideology_sikh_moralist = {
 		law_appointed_bureaucrats = approve
 		law_elected_bureaucrats = neutral
 		law_hereditary_bureaucrats = approve
+		law_privatized_bureaucrats = disapprove
 	}
 	
 	lawgroup_army_model = {
@@ -856,6 +864,7 @@ ideology_enclavist = {
 
 	lawgroup_bureaucracy = {
 		law_hereditary_bureaucrats = disapprove
+		law_privatized_bureaucrats = disapprove
 		law_appointed_bureaucrats = approve
 		law_elected_bureaucrats = disapprove
 	}
@@ -937,6 +946,7 @@ ideology_magnatial = {
 
 	lawgroup_bureaucracy = {
 		law_hereditary_bureaucrats = approve
+		law_privatized_bureaucrats = disapprove
 		law_appointed_bureaucrats = neutral
 		law_elected_bureaucrats = neutral
 	}

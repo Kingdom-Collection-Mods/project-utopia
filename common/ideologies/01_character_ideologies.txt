@@ -480,6 +480,7 @@ ideology_republican_leader = {
 		law_elected_bureaucrats = approve
 		law_appointed_bureaucrats = neutral
 		law_hereditary_bureaucrats = disapprove
+		law_privatized_bureaucrats = disapprove
 	}
 
 	interest_group_leader_trigger = {
@@ -4162,6 +4163,7 @@ ideology_jacksonian_democrat = {
 		law_elected_bureaucrats = approve
 		law_appointed_bureaucrats = neutral
 		law_hereditary_bureaucrats = disapprove
+		law_privatized_bureaucrats = disapprove
 	}
 
 	lawgroup_slavery = {
@@ -4268,6 +4270,7 @@ ideology_positivist = {
 		law_appointed_bureaucrats = strongly_approve
 		law_elected_bureaucrats = disapprove
 		law_hereditary_bureaucrats = strongly_disapprove
+		law_privatized_bureaucrats = disapprove
 	}
 
 	country_trigger = {
@@ -4810,6 +4813,7 @@ ideology_liberal_leader = {
 		law_elected_bureaucrats = approve
 		law_appointed_bureaucrats = neutral
 		law_hereditary_bureaucrats = disapprove
+		law_privatized_bureaucrats = disapprove
 	}
 
 	country_trigger = {
