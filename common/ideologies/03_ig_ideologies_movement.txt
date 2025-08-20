@@ -513,7 +513,6 @@ ideology_liberal_movement = {
 		law_appointed_bureaucrats = neutral
 		law_hereditary_bureaucrats = disapprove
 		law_privatized_bureaucrats = disapprove
-		law_privatized_bureaucrats = neutral
 	}
 }
 
