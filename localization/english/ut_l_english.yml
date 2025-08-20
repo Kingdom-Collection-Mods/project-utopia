@@ -251,10 +251,10 @@
 
  
 
- je_ut_new_dawn_fascist_mod: "Fascist"
- je_ut_new_dawn_communist_mod: "Communist"
- je_ut_new_dawn_autocratic_mod: "Autocratic"
- je_ut_new_dawn_democratic_mod: "Democratic"
+ ut_new_dawn_core_fascist_mod: "Fascist"
+ ut_new_dawn_core_communist_mod: "Communist"
+ ut_new_dawn_core_autocratic_mod: "Autocratic"
+ ut_new_dawn_core_democratic_mod: "Democratic"
 
  ut_new_dawn_democrat_focus: "Democratic Focus"
  ut_new_dawn_democrat_focus_desc: ""
@@ -373,13 +373,13 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  ut_new_dawn_autocrat_status: "Autocratic Ideas Shape the Discourse"
 
  concept_ut_nd_fascist_core: "Fascism"
- concept_ut_nd_fascist_core_desc: "#bold Ideologies:#! [concept_ut_nd_fascist_characters]\n\n#bold Unlocks [concept_ut_nd_milestones]#!\n\n#bold Unlocks (tbd):#!\n - Conquer nations\n\nModifier:\n[GetStaticModifier('je_ut_new_dawn_fascist_focus').GetDesc]\n\nUnlocks Modifier:\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n[concept_ut_nd_path_to_utopia]: Transform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others."
+ concept_ut_nd_fascist_core_desc: "#bold Ideologies: [concept_ut_nd_fascist_characters]#!\n\n#bold Unlocks [concept_ut_nd_milestones]#!\n\n#bold Unlocks (tbd):#!\n - Conquer nations\n\nModifier:\n[GetStaticModifier('je_ut_new_dawn_fascist_focus').GetDesc]\n\nUnlocks Modifier:\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n[concept_ut_nd_path_to_utopia]: Transform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others."
  concept_ut_nd_autocrat_core: "Autocracy"
- concept_ut_nd_autocrat_core_desc: "#bold Ideologies:#! [concept_ut_nd_autocrat_characters]\n\n#bold Unlocks [concept_ut_nd_actions]#!\n\nModifier:\n[GetStaticModifier('je_ut_new_dawn_autocrat_focus').GetDesc]\n\nUnlocks Modifier:\n[GetStaticModifier('je_ut_new_dawn_autocratic_mod').GetDesc]\n\n[concept_ut_nd_path_to_utopia]: None."
+ concept_ut_nd_autocrat_core_desc: "#bold Ideologies: [concept_ut_nd_autocrat_characters]#!\n\n#bold Unlocks [concept_ut_nd_actions]#!\n\nModifier:\n[GetStaticModifier('je_ut_new_dawn_autocrat_focus').GetDesc]\n\nUnlocks Modifier:\n[GetStaticModifier('je_ut_new_dawn_autocratic_mod').GetDesc]\n\n[concept_ut_nd_path_to_utopia]: None."
  concept_ut_nd_democrat_core: "Democracy"
- concept_ut_nd_democrat_core_desc: "#bold Ideologies:#! [concept_ut_nd_democrat_characters]\n\n#bold Unlocks [concept_ut_nd_milestones]#!\n\n#bold Unlocks [concept_ut_nd_abilities]:#!\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n - [GetDiplomaticActionType('ut_influence_new_dawn_major_power').GetName]\n\nModifier:\n[GetStaticModifier('je_ut_new_dawn_democrat_focus').GetDesc]\n\nUnlocks Modifier:\n[GetStaticModifier('je_ut_new_dawn_democratic_mod').GetDesc]\n\n[concept_ut_nd_path_to_utopia]: Strengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people."
+ concept_ut_nd_democrat_core_desc: "#bold Ideologies: [concept_ut_nd_democrat_characters]#!\n\n#bold Unlocks [concept_ut_nd_milestones]#!\n\n#bold Unlocks [concept_ut_nd_abilities]:#!\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n - [GetDiplomaticActionType('ut_influence_new_dawn_major_power').GetName]\n\nModifier:\n[GetStaticModifier('je_ut_new_dawn_democrat_focus').GetDesc]\n\nUnlocks Modifier:\n[GetStaticModifier('je_ut_new_dawn_democratic_mod').GetDesc]\n\n[concept_ut_nd_path_to_utopia]: Strengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people."
  concept_ut_nd_communist_core: "Communism"
- concept_ut_nd_communist_core_desc: "#bold Ideologies:#! [concept_ut_nd_communist_characters]\n\n#bold Unlocks [concept_ut_nd_milestones]#!\n\n#bold Unlocks [concept_ut_nd_abilities]:#!\n - [GetDiplomaticActionType('ut_influence_new_dawn_major_power').GetName]\n\nModifier:\n[GetStaticModifier('je_ut_new_dawn_communist_focus').GetDesc]\n\nUnlocks Modifier:\n[GetStaticModifier('je_ut_new_dawn_communist_mod').GetDesc]\n\n[concept_ut_nd_path_to_utopia]: Build a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
+ concept_ut_nd_communist_core_desc: "#bold Ideologies: [concept_ut_nd_communist_characters]#!\n\n#bold Unlocks [concept_ut_nd_milestones]#!\n\n#bold Unlocks [concept_ut_nd_abilities]:#!\n - [GetDiplomaticActionType('ut_influence_new_dawn_major_power').GetName]\n\nModifier:\n[GetStaticModifier('je_ut_new_dawn_communist_focus').GetDesc]\n\nUnlocks Modifier:\n[GetStaticModifier('je_ut_new_dawn_communist_mod').GetDesc]\n\n[concept_ut_nd_path_to_utopia]: Build a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
  concept_ut_nd_path_to_utopia: "Path to Utopia"
  concept_ut_nd_path_to_utopia_desc: "Each ideology comes with its own endgame mechanics. Base Mechanics: Democratic. Work in progress: Autocratic. (Work in progress)"
 
@@ -415,7 +415,7 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  service_workers_only_icon: "@service_workers!"
  service_workers_no_icon: "Service Workers"
  POP_SERVICE_WORKERS: "$service_workers$ [concept_profession]"
- SERVICE_WORKERS_QUALIFICATIONS_DESC: "Only population groups with sufficient [concept_literacy] and [concept_wealth] can become #v $service_workers$#!. The potential increases with rising [concept_literacy] and [concept_wealth]. #v $shopkeepers$#! and #v $clerks$#! find it especially easy to become #v $service_workers$#!."
+ SERVICE_WORKERS_QUALIFICATIONS_DESC: "Only population groups with sufficient [concept_literacy] and [concept_wealth] can become #v $service_workers$#!. The potential increases with rising [concept_literacy] and [concept_wealth]. #v $laborers$#! and #v $clerks$#! find it especially easy to become #v $service_workers$#!."
  country_service_workers_pol_str_mult: "[concept_political_strength] of $service_workers$"
  country_service_workers_pol_str_mult_desc: "An increase or decrease in the [concept_political_strength] of $service_workers$"
  state_service_workers_investment_pool_contribution_add: "$service_workers$ [concept_investment_pool] contribution"
@@ -458,6 +458,10 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  ut_ideology_national_socialist_leader: "National Socialist"
  ut_ideology_national_socialist_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_national_socialist_leader').GetName] [concept_ideology]"
 
+ ut_ideology_economical_corporatist_leader: "Economical Corporatist"
+ ut_ideology_economical_corporatist_leader_desc: "Economical Corporatist ideologies emphasize the role of the state in managing the economy while maintaining a strong corporate sector. They advocate for collaboration between the government and businesses to achieve economic growth and social stability."
+ ut_ideology_economical_corporatist_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_economical_corporatist_leader').GetName] [concept_ideology]"
+
  ideology_liberal_democratic: "Liberal-Democratic"
  ideology_moralist_democratic: "Moralist-Democratic"
  ideology_plutocratic_democratic: "Elitist"
@@ -476,9 +480,9 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  ut_movement_humanist_name: "Humanist Movement"
  ut_movement_rationalists_name: "Rationalist Movement"
 
- ut_movement_cosmopolitan_unlock_tt: "Unlocks [SCOPE.sPoliticalMovement('ut_movement_cosmopolitan').GetName] [concept_political_movement]"
- ut_movement_humanist_unlock_tt: "Unlocks [SCOPE.sPoliticalMovement('ut_movement_humanist').GetName] [concept_political_movement]"
- ut_movement_rationalists_unlock_tt: "Unlocks [SCOPE.sPoliticalMovement('ut_movement_rationalists').GetName] [concept_political_movement]"
+ ut_movement_cosmopolitan_unlock_tt: "Unlocks $ut_movement_cosmopolitan$ [concept_political_movement]"
+ ut_movement_humanist_unlock_tt: "Unlocks $ut_movement_humanist$ [concept_political_movement]"
+ ut_movement_rationalists_unlock_tt: "Unlocks $ut_movement_rationalists$ [concept_political_movement]"
 
 
  lawgroup_environment_protection: "Environmental Protection"
@@ -1204,3 +1208,8 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  utopia_mod.2.f: "What is progress, if not the mastery of time itself? While others debate ethics and equality, we have pierced the veil of possibility. With this unprecedented surge in innovation, we leapfrog generations of slow, bureaucratic development. Let history judge us — or let there be no history, only the brilliance of tomorrow, written in circuits and steel, not ink and parchment. Utopia is not given. It is taken."
  ut_tech_preview_cheat_disable_tt: "Deactivates the cheat permanently"
  ut_tech_preview_cheat_research_modifier: "Forbidden Technologies"
+
+# units modifiers
+unit_combat_unit_type_light_tank_offense_add: "Light Tank Offense"
+unit_combat_unit_type_motorized_artillery_offense_add: "Motorized Artillery Offense"
+unit_combat_unit_type_modern_submarine_offense_add: "Modern Submarine Offense"

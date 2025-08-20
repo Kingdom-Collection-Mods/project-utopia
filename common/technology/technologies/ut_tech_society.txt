@@ -278,6 +278,10 @@ modern_economy = {
 		state_tax_capacity_add = 25
 	}
 
+	on_researched = {
+		custom_tooltip = ut_ideology_economical_corporatist_leader_unlock_tt
+	}
+
 	unlocking_technologies = {
 		mass_surveillance
 	}

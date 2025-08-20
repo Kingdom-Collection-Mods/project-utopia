@@ -41,7 +41,7 @@ new_dawn_phase_2_mod = {
 	political_movement_pop_attraction_mult = -0.25
 	state_radicals_from_political_movements_mult = -0.25
 	state_radicals_and_loyalists_from_sol_change_mult = -0.25
-	country_law_enactment_time_mult = 0.25
+	#country_law_enactment_time_mult = 0.25
 }
 
 ut_new_dawn_focus_recently_changed = {

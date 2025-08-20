@@ -18,18 +18,19 @@ ut_new_dawn_fascist_focus = {
 	}
 
 	effect = {	
-		custom_tooltip = ut_new_dawn_focus_tt 
+		custom_tooltip = ut_new_dawn_focus_tt 		
+		hidden_effect = {
+			remove_modifier = je_ut_new_dawn_autocrat_focus
+			remove_modifier = je_ut_new_dawn_democrat_focus
+			remove_modifier = je_ut_new_dawn_communist_focus
+			remove_modifier = je_ut_new_dawn_fascist_focus
+		}
 		add_modifier = {
 			name = je_ut_new_dawn_fascist_focus
 		}
 		add_modifier = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
-		}
-		hidden_effect = {
-			remove_modifier = je_ut_new_dawn_autocrat_focus
-			remove_modifier = je_ut_new_dawn_democrat_focus
-			remove_modifier = je_ut_new_dawn_communist_focus			
 		}
 	}
 	#1000 always
@@ -115,17 +116,18 @@ ut_new_dawn_autocrat_focus = {
 
 	effect = {
 		custom_tooltip = ut_new_dawn_focus_tt
+		hidden_effect = {
+			remove_modifier = je_ut_new_dawn_fascist_focus
+			remove_modifier = je_ut_new_dawn_democrat_focus
+			remove_modifier = je_ut_new_dawn_communist_focus
+			remove_modifier = je_ut_new_dawn_autocrat_focus
+		}
 		add_modifier = {
 			name = je_ut_new_dawn_autocrat_focus
 		}
 		add_modifier = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
-		}
-		hidden_effect = {
-			remove_modifier = je_ut_new_dawn_fascist_focus
-			remove_modifier = je_ut_new_dawn_democrat_focus
-			remove_modifier = je_ut_new_dawn_communist_focus			
 		}
 	}
 	ai_chance = {
@@ -203,22 +205,22 @@ ut_new_dawn_democrat_focus = {
 		# 	text = ut_new_dawn_focus_already_selected_tt
 		# 	NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
 		# }
-		NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
 	}
 
 	effect = {
-		custom_tooltip = ut_new_dawn_focus_tt
+		custom_tooltip = ut_new_dawn_focus_tt		
+		hidden_effect = {
+			remove_modifier = je_ut_new_dawn_democrat_focus
+			remove_modifier = je_ut_new_dawn_fascist_focus
+			remove_modifier = je_ut_new_dawn_autocrat_focus
+			remove_modifier = je_ut_new_dawn_communist_focus
+		}
 		add_modifier = {
 			name = je_ut_new_dawn_democrat_focus
 		}
 		add_modifier = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
-		}
-		hidden_effect = {
-			remove_modifier = je_ut_new_dawn_fascist_focus
-			remove_modifier = je_ut_new_dawn_autocrat_focus
-			remove_modifier = je_ut_new_dawn_communist_focus
 		}
 	}
 	ai_chance = {
@@ -310,17 +312,18 @@ ut_new_dawn_communist_focus = {
 
 	effect = {		
 		custom_tooltip = ut_new_dawn_focus_tt
+		hidden_effect = {
+			remove_modifier = je_ut_new_dawn_fascist_focus
+			remove_modifier = je_ut_new_dawn_autocrat_focus
+			remove_modifier = je_ut_new_dawn_democrat_focus
+			remove_modifier = je_ut_new_dawn_communist_focus
+		}
 		add_modifier = {
 			name = je_ut_new_dawn_communist_focus
 		}
 		add_modifier = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
-		}
-		hidden_effect = {
-			remove_modifier = je_ut_new_dawn_fascist_focus
-			remove_modifier = je_ut_new_dawn_autocrat_focus
-			remove_modifier = je_ut_new_dawn_democrat_focus			
 		}
 	}
 	ai_chance = {
