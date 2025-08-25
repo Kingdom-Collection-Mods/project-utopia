@@ -604,6 +604,7 @@ law_multicultural_globalism = {
 		country_allow_assimilation_cultural_erasure_bool = yes
 		country_allow_assimilation_open_prejudice_bool = yes
 		country_allow_assimilation_second_rate_citizen_bool = yes
+		country_allow_assimilation_full_acceptance_bool = yes
 
 		country_assimilation_cultural_erasure_mult = 0.05
 		country_assimilation_open_prejudice_mult = 0.15
