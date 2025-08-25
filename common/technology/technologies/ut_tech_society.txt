@@ -514,10 +514,17 @@ feminism_2 = {
 		
 	modifier = {
 		state_working_adult_ratio_add = 0.05
+		#female character chance is sadly horrible for mod compatibility to current knowledge
 	}
 
 	unlocking_technologies = {
 		feminism
+	}
+
+	on_researched = {
+		custom_tooltip = ut_liberal_feminism_leader_unlock_tt
+		custom_tooltip = ut_radical_feminism_leader_unlock_tt
+		custom_tooltip = ut_social_feminism_leader_unlock_tt
 	}
 	
 	ai_weight = {
