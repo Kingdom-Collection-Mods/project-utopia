@@ -248,13 +248,16 @@
  je_ut_new_dawn_autocrat_focus_desc: "Autocratic focus selected"
  je_ut_new_dawn_communist_focus: "Communist Focus"
  je_ut_new_dawn_communist_focus_desc: "Communist focus selected"
-
- 
+ ut_new_dawn_phase_2_progress_modifier: "x0.5"
 
  ut_new_dawn_core_fascist_mod: "Fascist"
+ je_ut_new_dawn_fascist_mod: "Fascist"
  ut_new_dawn_core_communist_mod: "Communist"
+ je_ut_new_dawn_communist_mod: "Communist"
  ut_new_dawn_core_autocratic_mod: "Autocratic"
+ je_ut_new_dawn_autocratic_mod: "Autocratic"
  ut_new_dawn_core_democratic_mod: "Democratic"
+ je_ut_new_dawn_democratic_mod: "Democratic"
 
  ut_new_dawn_democrat_focus: "Democratic Focus"
  ut_new_dawn_democrat_focus_desc: ""

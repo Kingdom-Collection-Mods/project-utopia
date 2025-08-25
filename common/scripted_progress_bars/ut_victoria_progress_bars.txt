@@ -238,10 +238,10 @@ je_ut_new_dawn_democratic_points_bar = {
 				desc = "ut_nd_democrat_progress_from_legitimacy"
 				value = owner.var:ut_nd_democrat_progress_from_legitimacy
 			}
-			add = {
-				desc = "ut_nd_democrat_progress_from_focus"
-				value = owner.var:ut_nd_democrat_progress_from_focus
-			}
+			multiply = {
+				desc = "ut_new_dawn_phase_2_progress_modifier"
+				value = 0.5
+			}	
 		}
 	}
 
@@ -282,13 +282,13 @@ je_ut_new_dawn_autocratic_points_bar = {
 				value = owner.var:ut_nd_autocrat_progress_from_legitimacy
 			}
 			add = {
-				desc = "ut_nd_autocrat_progress_from_focus"
-				value = owner.var:ut_nd_autocrat_progress_from_focus
-			}
-			add = {
 				desc = "ut_nd_autocrat_progress_from_events"
 				value = owner.var:ut_nd_autocrat_progress_from_events
 			}
+			multiply = {
+				desc = "ut_new_dawn_phase_2_progress_modifier"
+				value = 0.5
+			}	
 		}
 		else = {
 			add = 0
@@ -331,10 +331,10 @@ je_ut_new_dawn_fascist_points_bar = {
 				desc = "ut_nd_fascist_progress_from_legitimacy"
 				value = owner.var:ut_nd_fascist_progress_from_legitimacy
 			}
-			add = {
-				desc = "ut_nd_fascist_progress_from_focus"
-				value = owner.var:ut_nd_fascist_progress_from_focus
-			}
+			multiply = {
+				desc = "ut_new_dawn_phase_2_progress_modifier"
+				value = 0.5
+			}	
 		}
 		else = {
 			add = 0
@@ -377,10 +377,10 @@ je_ut_new_dawn_communist_points_bar = {
 				desc = "ut_nd_communist_progress_from_legitimacy"
 				value = owner.var:ut_nd_communist_progress_from_legitimacy
 			}
-			add = {
-				desc = "ut_nd_communist_progress_from_focus"
-				value = owner.var:ut_nd_communist_progress_from_focus
-			}
+			multiply = {
+				desc = "ut_new_dawn_phase_2_progress_modifier"
+				value = 0.5
+			}	
 		}
 		else = {
 			add = 0

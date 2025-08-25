@@ -226,6 +226,11 @@ je_ut_new_dawn_democratic = {
 	immediate = {
 		ut_set_new_dawn_variables = yes
 		
+		remove_modifier = je_ut_new_dawn_democrat_focus
+		remove_modifier = je_ut_new_dawn_autocrat_focus
+		remove_modifier = je_ut_new_dawn_communist_focus
+		remove_modifier = je_ut_new_dawn_fascist_focus
+		
 		if = {
 			limit = {
 				NOT = { has_modifier = je_ut_new_dawn_democrat_focus }	
@@ -374,6 +379,11 @@ je_ut_new_dawn_autocratic = {
 
 	immediate = {
 		ut_set_new_dawn_variables = yes
+
+		remove_modifier = je_ut_new_dawn_democrat_focus
+		remove_modifier = je_ut_new_dawn_autocrat_focus
+		remove_modifier = je_ut_new_dawn_communist_focus
+		remove_modifier = je_ut_new_dawn_fascist_focus
 		
 		if = {
 			limit = {
@@ -482,7 +492,11 @@ je_ut_new_dawn_fascist = {
 
 	immediate = {
 		ut_set_new_dawn_variables = yes
-		
+		remove_modifier = je_ut_new_dawn_democrat_focus
+		remove_modifier = je_ut_new_dawn_autocrat_focus
+		remove_modifier = je_ut_new_dawn_communist_focus
+		remove_modifier = je_ut_new_dawn_fascist_focus
+
 		if = {
 			limit = {
 				NOT = { has_modifier = je_ut_new_dawn_fascist_focus }	
@@ -641,6 +655,10 @@ je_ut_new_dawn_communist = {
 
 	immediate = {
 		ut_set_new_dawn_variables = yes
+		remove_modifier = je_ut_new_dawn_democrat_focus
+		remove_modifier = je_ut_new_dawn_autocrat_focus
+		remove_modifier = je_ut_new_dawn_communist_focus
+		remove_modifier = je_ut_new_dawn_fascist_focus
 		
 		if = {
 			limit = {
