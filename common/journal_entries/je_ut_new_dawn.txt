@@ -354,7 +354,15 @@ je_ut_new_dawn_democratic = {
 	# effect which is executed when 'fail' trigger becomes true
 	on_fail = {
 		remove_modifier = je_ut_new_dawn_democrat_focus
+		remove_modifier = ut_new_dawn_core_democratic_mod
 		remove_variable = ut_new_dawn_bar_freeze
+	
+		je:je_ut_new_dawn = {
+			add_progress = {
+				value = new_dawn_core_upper_bound
+				name = ut_new_dawn_democrat_bar
+			}
+		}
 	}
 
 	weight = 100
@@ -472,7 +480,14 @@ je_ut_new_dawn_autocratic = {
 	# effect which is executed when 'fail' trigger becomes true
 	on_fail = {
 		remove_modifier = je_ut_new_dawn_autocrat_focus
+		remove_modifier = ut_new_dawn_core_autocratic_mod
 		remove_variable = ut_new_dawn_bar_freeze
+		je:je_ut_new_dawn = {
+			add_progress = {
+				value = new_dawn_core_upper_bound
+				name = ut_new_dawn_autocrat_bar
+			}
+		}
 	}
 
 	weight = 100
@@ -635,7 +650,14 @@ je_ut_new_dawn_fascist = {
 	# effect which is executed when 'fail' trigger becomes true
 	on_fail = {
 		remove_modifier = je_ut_new_dawn_fascist_focus
+		remove_modifier = ut_new_dawn_core_fascist_mod
 		remove_variable = ut_new_dawn_bar_freeze
+		je:je_ut_new_dawn = {
+			add_progress = {
+				value = new_dawn_core_upper_bound
+				name = ut_new_dawn_fascist_bar
+			}
+		}
 	}
 
 	weight = 100
@@ -761,7 +783,14 @@ je_ut_new_dawn_communist = {
 	# effect which is executed when 'fail' trigger becomes true
 	on_fail = {
 		remove_modifier = je_ut_new_dawn_communist_focus
+		remove_modifier = ut_new_dawn_core_communist_mod
 		remove_variable = ut_new_dawn_bar_freeze
+		je:je_ut_new_dawn = {
+			add_progress = {
+				value = new_dawn_core_upper_bound
+				name = ut_new_dawn_communist_bar
+			}
+		}
 	}
 
 	weight = 100
