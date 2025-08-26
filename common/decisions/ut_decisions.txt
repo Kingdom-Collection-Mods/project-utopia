@@ -165,7 +165,7 @@ ut_research_nuclear_power = {
 
 ut_nuclear_power_plant_location  = {
 	is_shown = {
-		has_technology_researched = nuclear_power_research
+		has_technology_researched = nuclear_power
 	}
 
 	possible = {

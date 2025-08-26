@@ -158,7 +158,7 @@ ut_mining_company = {
 	prosperity_modifier = {
 		building_aluminum_factory_throughput_add = 0.1
 		building_rare_earths_mine_throughput_add = 0.1
-		country_resource_discovery_chance_mult = 0.3
+		#country_resource_discovery_chance_mult = 0.3 something bugged
 	}	
 }
 

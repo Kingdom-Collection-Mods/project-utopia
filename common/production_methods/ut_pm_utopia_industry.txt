@@ -1312,7 +1312,7 @@ pm_synthetic_oil_two_process = {
 
 
 ut_pm_research_institute_one = {
-	texture = "gfx/interface/icons/production_method_icons/philosophy_department.dds"
+	texture = "gfx/interface/icons/production_method_icons/philosophy_dept.dds"
 
 	country_modifiers = {
 		workforce_scaled = {

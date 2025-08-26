@@ -23,7 +23,7 @@
 	}
 
 	mutual_modifier = {
-		country_weekly_innovation_max_add = 20
+		country_weekly_innovation_max_add = 15
 		country_weekly_innovation_add = -20
 		country_treaty_leverage_generation_add = 200
 	}
