@@ -483,9 +483,9 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  ut_movement_humanist_name: "Humanist Movement"
  ut_movement_rationalists_name: "Rationalist Movement"
 
- ut_movement_cosmopolitan_unlock_tt: "Unlocks $ut_movement_cosmopolitan$ [concept_political_movement]"
- ut_movement_humanist_unlock_tt: "Unlocks $ut_movement_humanist$ [concept_political_movement]"
- ut_movement_rationalists_unlock_tt: "Unlocks $ut_movement_rationalists$ [concept_political_movement]"
+ ut_movement_cosmopolitan_unlock_tt: "Unlocks #BOLD Cosmopolitan#! [concept_political_movement]"
+ ut_movement_humanist_unlock_tt: "Unlocks #BOLD Humanist#! [concept_political_movement]"
+ ut_movement_rationalists_unlock_tt: "Unlocks #BOLD Rationalist#! [concept_political_movement]"
 
  ut_liberal_feminism_leader: "Liberal Feminist"
  ut_liberal_feminism_leader_unlock_tt: "Unlocks [GetIdeology('ut_liberal_feminism_leader').GetName] [concept_ideology]"
