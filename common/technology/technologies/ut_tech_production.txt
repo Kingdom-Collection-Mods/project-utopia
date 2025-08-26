@@ -152,7 +152,7 @@ bauxite_mining = {
 	}
 
 	modifier = {
-		country_resource_discovery_chance_mult = 0.25
+		country_resource_discovery_chance_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -341,7 +341,7 @@ rare_earths_mining_era_analog = {
 	}
 	
 	modifier = {
-		# country_resource_discovery_chance_mult = 0.5 something bugged
+		country_resource_discovery_chance_mult = 0.1
 	}
 
 	ai_weight = {

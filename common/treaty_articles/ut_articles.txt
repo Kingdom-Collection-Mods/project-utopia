@@ -39,10 +39,10 @@
 	requirement_to_maintain = {
 		trigger = {
 			scope:first_country = {
-				country_rank >= rank_value:great_power
+				country_rank >= rank_value:major_power
 			}
 			scope:second_country = {
-				country_rank >= rank_value:great_power
+				country_rank >= rank_value:major_power
 			}
 		}
 	}
