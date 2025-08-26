@@ -50,6 +50,7 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 	set_variable = { name = ut_nd_communist_progress_from_focus value = 0 }
 	set_variable = { name = ut_nd_communist_progress_from_movements value = 0 }
 	set_variable = { name = ut_nd_communist_progress_from_legitimacy value = root.government_legitimacy } #Government legitimacy is a single constant, and so this variable is set immediately rather than needing a calculation.
+	set_variable = { name = ut_nd_communist_progress_from_events value = 0 }
 	#From Characters
 	every_scope_character = {
 		limit = {
@@ -120,6 +121,13 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 		}
 		change_variable = { name = ut_nd_communist_progress_from_focus add = 0.5 } #If the Cement the Rightful Dynasty focus is active, add 0.5 to the progress bar.
 	}
+	if = {
+		limit = {
+			has_modifier = je_ut_new_dawn_communist_focus
+			has_modifier = country_humiliated
+		}
+		change_variable = { name = ut_nd_communist_progress_from_events add = -1 }
+	}
 }
  
 ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
@@ -129,6 +137,7 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 	set_variable = { name = ut_nd_democrat_progress_from_movements value = 0 }
 	set_variable = { name = ut_nd_democrat_progress_from_focus value = 0 }
 	set_variable = { name = ut_nd_democrat_progress_from_legitimacy value = root.government_legitimacy }
+	set_variable = { name = ut_nd_democrat_progress_from_events value = 0 }
 	#From Characters
 	every_scope_character = {
 		limit = {
@@ -206,6 +215,14 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 			has_modifier = je_ut_new_dawn_democrat_focus
 		}
 		change_variable = { name = ut_nd_democrat_progress_from_focus add = 0.5 } #If the Cement the Rightful Dynasty focus is active, add 0.5 to the progress bar.
+	}
+	
+	if = {
+		limit = {
+			has_modifier = je_ut_new_dawn_democrat_focus
+			has_modifier = country_humiliated
+		}
+		change_variable = { name = ut_nd_democrat_progress_from_events add = -1 }
 	}
 }
 
@@ -301,6 +318,13 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 			add = 0.5 
 		}
 	}
+	if = {
+		limit = {
+			has_modifier = je_ut_new_dawn_autocrat_focus
+			has_modifier = country_humiliated
+		}
+		change_variable = { name = ut_nd_autocrat_progress_from_events add = -1 }
+	}
 }
 
 ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
@@ -394,6 +418,14 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 			has_modifier = je_ut_new_dawn_fascist_focus
 		}
 		change_variable = { name = ut_nd_fascist_progress_from_focus add = 0.5 } #If the Cement the Rightful Dynasty focus is active, add 0.5 to the progress bar.
+	}
+	
+	if = {
+		limit = {
+			has_modifier = je_ut_new_dawn_fascist_focus
+			has_modifier = country_humiliated
+		}
+		change_variable = { name = ut_nd_fascist_progress_from_events add = -1 }
 	}
 }
 
