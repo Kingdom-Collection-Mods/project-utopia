@@ -190,7 +190,7 @@ ut_ideology_cosmopolitan_leader = {
 	}
 	
 	interest_group_leader_weight = {
-		value = 100
+		value = 50
 		# very angry IG's more likely to turn to more radical socialism
 		if = {
 			limit = {
@@ -214,18 +214,27 @@ ut_ideology_cosmopolitan_leader = {
 			}
 			add = 50
 		}
+		
+		if = {
+			limit = {
+				owner = {
+					has_modifier = je_ut_new_dawn_democrat_focus
+				}
+			}
+			add = 75
+		}
 		if = {
 			limit = {
 				has_technology_researched = political_progress_1_cosmopolitan
 			}
-			add = 25
+			add = 10
 		}
 		
 		if = {
 			limit = {
 				has_technology_researched = political_progress_2_rationalism
 			}
-			add = 25
+			add = 10
 		}
 	}
 	
@@ -236,14 +245,14 @@ ut_ideology_cosmopolitan_leader = {
 			limit = {
 				has_technology_researched = political_progress_1_cosmopolitan
 			}
-			add = 25
+			add = 10
 		}
 		
 		if = {
 			limit = {
 				has_technology_researched = political_progress_2_rationalism
 			}
-			add = 25
+			add = 10
 		}
 	}
 }
