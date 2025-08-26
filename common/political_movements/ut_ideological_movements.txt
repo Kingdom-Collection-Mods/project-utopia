@@ -29,6 +29,7 @@
 		OR = {
 			has_ideology = ideology:ideology_humanitarian
 			has_ideology = ideology:ideology_humanitarian_royalist
+			has_ideology = ideology:ut_social_feminism_leader
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_trade_unions
@@ -44,6 +45,7 @@
 				OR = {
 					has_ideology = ideology:ideology_humanitarian
 					has_ideology = ideology:ideology_humanitarian_royalist
+					has_ideology = ideology:ut_social_feminism_leader
 				}
 			}
 			multiply = {
@@ -225,6 +227,7 @@ ut_movement_humanist = {
 			has_ideology = ideology:ideology_humanitarian_royalist
 			has_ideology = ideology:ideology_nihilist
 			has_ideology = ideology:ideology_reformer
+			has_ideology = ideology:ut_liberal_feminism_leader
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_trade_unions
@@ -243,6 +246,7 @@ ut_movement_humanist = {
 					has_ideology = ideology:ideology_humanitarian_royalist
 					has_ideology = ideology:ideology_nihilist
 					has_ideology = ideology:ideology_reformer
+					has_ideology = ideology:ut_liberal_feminism_leader
 				}
 			}
 			multiply = {
@@ -382,6 +386,7 @@ ut_movement_rationalists = {
 			has_ideology = ideology:ideology_reformer
 			has_ideology = ideology:ideology_laissez_faire
 			has_ideology = ideology:ideology_social_democrat
+			has_ideology = ideology:ut_radical_feminism_leader
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_trade_unions
