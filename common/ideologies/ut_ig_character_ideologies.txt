@@ -249,7 +249,7 @@ ut_ideology_cosmopolitan_leader = {
 }
 
 ut_ideology_autocratic_leader = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/authoritarian.dds"
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_caudillismo.dds"
 	
 	character_ideology = yes
 	
@@ -446,7 +446,7 @@ ut_ideology_autocratic_leader = {
 }
 
 ut_ideology_national_socialist_leader = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_fascist.dds"
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/idealogy_leader_oligarchic.dds"
 	
 	character_ideology = yes
 
