@@ -26,7 +26,7 @@ principle_common_financial_policy_1 = {
 		country_no_advantage_loss_from_lack_of_interest_bool = yes
 
 		#for missing production method
-		country_influence_mult = 0.05
+		country_influence_mult = 0.2
 	}
 	
 	ai_weight = {
@@ -57,7 +57,7 @@ principle_common_financial_policy_2 = {
 		country_no_advantage_loss_from_lack_of_interest_bool = yes
 
 		#for missing production method
-		country_influence_mult = 0.05
+		country_influence_mult = 0.25
 	}
 	
 	ai_weight = {
@@ -88,7 +88,7 @@ principle_common_financial_policy_3 = {
 		country_no_advantage_loss_from_lack_of_interest_bool = yes
 
 		#for missing production method
-		country_influence_mult = 0.1
+		country_influence_mult = 0.3
 		
 		#
 		country_join_power_bloc_member_in_defensive_plays_bool = yes
