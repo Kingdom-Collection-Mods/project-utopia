@@ -622,7 +622,10 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  ut_humiliate_power_bloc_goal_desc: "Humiliate a rival power bloc leader to force them into your bloc."
  ut_research_agreement: "Research Agreement"
  ut_research_agreement_desc: "Advancing together."
- 
+
+ ut_democracy_article: "Force democracy"
+ ut_democracy_article_desc: "Impose democratic reforms on [TARGET_COUNTRY.GetName] (Requires a new treaty or being enforced)."
+
  ut_foreign_investment_agreement: "Mutual Investment Agreement (Block)"
  ut_foreign_investment_agreement_action_name: "Mutual [concept_foreign_investment_rights] Agreement"
  ut_foreign_investment_agreement_desc: "A [concept_diplomatic_pact] between two [Concept('concept_country','$concept_countries$')] to establish a Mutual [concept_foreign_investment_rights] Agreement."

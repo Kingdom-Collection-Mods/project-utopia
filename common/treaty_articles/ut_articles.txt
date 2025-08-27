@@ -577,6 +577,8 @@ ut_democracy_article = {
 	cost = 0
 
 	flags = {
+		can_be_enforced
+		can_be_renegotiated
 	}
 
 	maintenance_paid_by = source_country
@@ -628,7 +630,6 @@ ut_democracy_article = {
 	ai = {
 
 		treaty_categories = {
-			can_be_enforced
 			ideology
 		}
 
