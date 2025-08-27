@@ -19,7 +19,7 @@ pm_heavy_machinery_buildings = {
 			goods_input_heavy_machinery_add = 30
 			goods_input_glass_add = 40
 			goods_input_explosives_add = 10
-			goods_input_tools_add = 10
+			goods_input_tools_add = 30
 			goods_input_electricity_add = 40
 		} 
 
