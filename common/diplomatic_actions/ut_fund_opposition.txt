@@ -19,7 +19,6 @@ ut_fund_opposition = {
 	}
 
 	potential = {
-		country_rank >= scope:target_country.country_rank
 		scope:target_country = {
 			NOT = { is_country_type = decentralized }
 			is_revolutionary = no
@@ -195,17 +194,11 @@ ut_fund_opposition = {
 			}
 		}
 
-	 	requirement_to_maintain = {
-			trigger = {
-				custom_tooltip = {
-					text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT
-					scope:target_country.relations:root > relations_threshold:poor
+		requirement_to_maintain = {
+			trigger = { 
+				scope:target_country = {
+					ut_new_dawn_has_core_trigger = yes
 				}
-			}
-
-			show_about_to_break_warning = {
-				scope:target_country.relations:root <= -17 # this is: poor + 3
-				scope:target_country.relations_change_rate:root < 0
 			}
 		}
 

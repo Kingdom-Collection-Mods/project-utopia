@@ -16,7 +16,6 @@ ut_fund_ideology = {
 	}
 
 	potential = {
-		country_rank >= scope:target_country.country_rank
 		scope:target_country = {
 			NOT = { is_country_type = decentralized }
 			is_revolutionary = no
@@ -183,6 +182,18 @@ ut_fund_ideology = {
 			}
 			else = {
 				custom_tooltip = error
+			}
+		}
+
+		requirement_to_maintain = {
+			trigger = {
+				scope:source_country.country_rank > scope:target_country.country_rank
+			}
+		}
+
+		requirement_to_maintain = {
+			trigger = { 
+				NOT = { ut_new_dawn_has_core_trigger = yes }
 			}
 		}
 
