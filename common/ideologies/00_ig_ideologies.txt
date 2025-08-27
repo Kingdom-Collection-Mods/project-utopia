@@ -119,13 +119,13 @@ ideology_laissez_faire = {
 	}
 
 	lawgroup_food_safety = {
-		law_no_food_safety_protection = approve
+		law_no_food_safety_protection = neutral
 		law_food_safety_protection_institute = disapprove
 		law_food_safety_protection_institute_two = strongly_disapprove		
 	}	
 
 	lawgroup_environment_protection = {
-		law_no_environment_protection = approve
+		law_no_environment_protection = neutral
 		law_environment_protection_institute = disapprove
 		law_environment_protection_institute_two = strongly_disapprove
 	}
@@ -936,7 +936,7 @@ ideology_corporatist = {
 	}
 
 	lawgroup_food_safety = {
-		law_no_food_safety_protection = approve
+		law_no_food_safety_protection = neutral
 		law_food_safety_protection_institute = neutral
 		law_food_safety_protection_institute_two = disapprove		
 	}	
