@@ -936,7 +936,7 @@ STATE_NORTHERN_SERBIA = {
     #unique rare earths mining tiny
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 3
+        discovered_amount = 3
     }
 }
 

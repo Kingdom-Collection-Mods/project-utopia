@@ -48,7 +48,7 @@ STATE_GUAYANA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 12
+        discovered_amount = 12
     }
     resource = {
         type = "bg_rubber"
@@ -305,7 +305,7 @@ STATE_ANTOFAGASTA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 10
+        discovered_amount = 10
     }
     naval_exit_id = 3152
 }
@@ -404,7 +404,7 @@ STATE_CAJAMARCA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 4
+        discovered_amount = 4
     }
     resource = {
         type = "bg_oil_extraction"
@@ -802,7 +802,7 @@ STATE_ARAUCANIA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 4
+        discovered_amount = 4
     }
     resource = {
         type = "bg_oil_extraction"
@@ -1093,7 +1093,7 @@ STATE_MINAS_GERAIS = {
     #unique rare earths mining large
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 30
+        discovered_amount = 30
     }
     resource = {
         type = "bg_rubber"

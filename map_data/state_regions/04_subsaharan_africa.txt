@@ -682,7 +682,7 @@ STATE_SOUTH_MADAGASCAR = {
     #unique rare earths mining medium
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 20
+        discovered_amount = 20
     }
     naval_exit_id = 3107
 }
@@ -882,7 +882,7 @@ STATE_CONGO = {
     #unique rare earths mining medium
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 20
+        discovered_amount = 20
     }
     naval_exit_id = 3104
 }

@@ -24,7 +24,7 @@
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 12
+        discovered_amount = 12
     }
     resource = {
         type = "bg_oil_extraction"
@@ -58,7 +58,7 @@ STATE_VICTORIA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 6
+        discovered_amount = 6
     }
     naval_exit_id = 3122
 }
@@ -89,7 +89,7 @@ STATE_TASMANIA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 6
+        discovered_amount = 6
     }
     naval_exit_id = 3122
 }
@@ -169,7 +169,7 @@ STATE_WESTERN_AUSTRALIA = {
     #unique rare earths mining large
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 30
+        discovered_amount = 30
     }
     naval_exit_id = 3123
 }
@@ -222,7 +222,7 @@ STATE_NORTH_ISLAND = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 4
+        discovered_amount = 4
     }
     naval_exit_id = 3122
 }
@@ -251,7 +251,7 @@ STATE_SOUTH_ISLAND = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 6
+        discovered_amount = 6
     }
     naval_exit_id = 3122
 }

@@ -79,7 +79,7 @@ STATE_NORRLAND = {
     #unique rare earths mining small
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 10
+        discovered_amount = 10
     }
     naval_exit_id = 3000
 }
@@ -617,7 +617,7 @@ STATE_RHONE = {
     #unique rare earths mining tiny
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 3
+        discovered_amount = 3
     }
 }
 
@@ -835,7 +835,7 @@ STATE_AQUITAINE = {
     #unique rare earths mining tiny
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 3
+        discovered_amount = 3
     }
     naval_exit_id = 3029
 }
@@ -1346,7 +1346,7 @@ STATE_BAVARIA = {
     #unique rare earths mining tiny
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 3
+        discovered_amount = 3
     }
 }
 
@@ -1388,7 +1388,7 @@ STATE_SAXONY = {
     #unique rare earths mining tiny
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 3
+        discovered_amount = 3
     }
 }
 
