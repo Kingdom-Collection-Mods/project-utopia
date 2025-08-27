@@ -20,7 +20,6 @@ ut_fund_ideology = {
 			NOT = { is_country_type = decentralized }
 			is_revolutionary = no
 			has_journal_entry = je_ut_new_dawn
-			NOT = { ut_new_dawn_has_core_trigger = yes }
 		}
 	}
 
@@ -187,13 +186,18 @@ ut_fund_ideology = {
 
 		requirement_to_maintain = {
 			trigger = {
+				custom_tooltip = {
+					text = "HIGHER_RANK_THAN_TARGET"
+				}
 				scope:source_country.country_rank > scope:target_country.country_rank
 			}
 		}
 
 		requirement_to_maintain = {
 			trigger = { 
-				NOT = { ut_new_dawn_has_core_trigger = yes }
+				scope:target_country = {
+					NOT = { ut_new_dawn_has_core_trigger = yes }
+				}
 			}
 		}
 
