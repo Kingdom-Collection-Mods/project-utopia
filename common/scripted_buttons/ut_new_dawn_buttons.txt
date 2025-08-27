@@ -468,7 +468,9 @@ je_ut_new_dawn_democratic_cultural_values = {
 				is_marginal = yes
 				custom_tooltip = {
 					text = concept_ut_nd_democrat_interest_group_tt
-					ut_ideology_new_dawn_democrat_trigger = yes
+					leader = {
+						ut_ideology_new_dawn_democrat_trigger = yes
+					}
 				}
 			}
 		}
@@ -477,7 +479,9 @@ je_ut_new_dawn_democratic_cultural_values = {
 				is_marginal = yes
 				custom_tooltip = {
 					text = concept_ut_nd_democrat_interest_group_tt
-					ut_ideology_new_dawn_democrat_trigger = yes
+					leader = {
+						ut_ideology_new_dawn_democrat_trigger = yes
+					}
 				}
 			}
 		}
