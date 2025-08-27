@@ -701,8 +701,8 @@ pm_supermarket = {
 		}
 
 		level_scaled = {
-			building_employment_clerks_add = 2000
-			building_employment_laborers_add = 500
+			building_employment_clerks_add = 1500
+			building_employment_laborers_add = 1000
 			building_employment_shopkeepers_add = 500
 			building_employment_service_workers_add = 2000 
 		}
@@ -730,7 +730,8 @@ pm_shopping_district = {
 		}
 
 		level_scaled = {
-			building_employment_clerks_add = 2000
+			building_employment_clerks_add = 1000
+			building_employment_laborers_add = 1000
 			building_employment_shopkeepers_add = 500
 			building_employment_service_workers_add = 2000 
 		}
