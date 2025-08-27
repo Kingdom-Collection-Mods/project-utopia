@@ -359,7 +359,7 @@ je_ut_new_dawn_democratic = {
 	
 		je:je_ut_new_dawn = {
 			add_progress = {
-				value = new_dawn_core_upper_bound
+				value = -120
 				name = ut_new_dawn_democrat_bar
 			}
 		}
@@ -484,7 +484,7 @@ je_ut_new_dawn_autocratic = {
 		remove_variable = ut_new_dawn_bar_freeze
 		je:je_ut_new_dawn = {
 			add_progress = {
-				value = new_dawn_core_upper_bound
+				value = -120
 				name = ut_new_dawn_autocrat_bar
 			}
 		}
@@ -654,7 +654,7 @@ je_ut_new_dawn_fascist = {
 		remove_variable = ut_new_dawn_bar_freeze
 		je:je_ut_new_dawn = {
 			add_progress = {
-				value = new_dawn_core_upper_bound
+				value = -120
 				name = ut_new_dawn_fascist_bar
 			}
 		}
@@ -787,7 +787,7 @@ je_ut_new_dawn_communist = {
 		remove_variable = ut_new_dawn_bar_freeze
 		je:je_ut_new_dawn = {
 			add_progress = {
-				value = new_dawn_core_upper_bound
+				value = -120
 				name = ut_new_dawn_communist_bar
 			}
 		}
