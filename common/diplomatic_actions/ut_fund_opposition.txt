@@ -132,12 +132,10 @@ ut_fund_opposition = {
 
 		monthly_effect = {
 			random_list = {
-				#995
-				1 = {
-
+				100 = {
 				}
-				#5
-				999 = {
+				1 = {
+					custom_tooltip = ut_fund_opposition_effect
 					scope:target_country = {
 						if = {
 							limit = {

@@ -630,6 +630,13 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  ut_foreign_investment_agreement_action_name: "Mutual [concept_foreign_investment_rights] Agreement"
  ut_foreign_investment_agreement_desc: "A [concept_diplomatic_pact] between two [Concept('concept_country','$concept_countries$')] to establish a Mutual [concept_foreign_investment_rights] Agreement."
 
+ ut_fund_ideology: "Fund Ideology"
+ ut_fund_ideology_desc: "Work in progress."
+ ut_fund_ideology_effect: "Target country gains 0.25 progress points to your core ideology."
+ ut_fund_opposition: "Fund Opposition"
+ ut_fund_opposition_desc: "Democracies can fund the opposition in Autocratic countries. Work in progress."
+ ut_fund_opposition_effect: "Core Ideology loses 50 progress (may abort their journal entry)."
+ ut_fund_opposition_pact_desc: "x Chance: $ut_fund_opposition_effect$"
 # Power Blocs
  principle_common_financial_policy_1: "Common Financial Policy"
  principle_common_financial_policy_2: "Common Financial Policy 2"
