@@ -176,6 +176,7 @@ ut_nuclear_power_plant_location  = {
 			
 			any_scope_building = {
 				is_building_type = building_ut_nuclear_power_plant_construction_site
+				is_under_construction = no
 			}
 		}
 	}
