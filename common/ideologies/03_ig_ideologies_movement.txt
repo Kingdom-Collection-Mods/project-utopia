@@ -61,6 +61,7 @@ ideology_absolutist_movement = {
 
 	lawgroup_bureaucracy = {
 		law_hereditary_bureaucrats = approve
+		law_privatized_bureaucrats = disapprove
 		law_appointed_bureaucrats = approve
 		law_elected_bureaucrats = disapprove
 		law_privatized_bureaucrats = disapprove
@@ -511,7 +512,7 @@ ideology_liberal_movement = {
 		law_elected_bureaucrats = approve
 		law_appointed_bureaucrats = neutral
 		law_hereditary_bureaucrats = disapprove
-		law_privatized_bureaucrats = neutral
+		law_privatized_bureaucrats = disapprove
 	}
 }
 
@@ -632,6 +633,7 @@ ideology_positivist_movement = {
 		law_appointed_bureaucrats = strongly_approve
 		law_elected_bureaucrats = disapprove
 		law_hereditary_bureaucrats = strongly_disapprove
+		law_privatized_bureaucrats = disapprove
 	}
 }
 

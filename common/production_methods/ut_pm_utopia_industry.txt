@@ -19,7 +19,7 @@ pm_heavy_machinery_buildings = {
 			goods_input_heavy_machinery_add = 30
 			goods_input_glass_add = 40
 			goods_input_explosives_add = 10
-			goods_input_tools_add = 10
+			goods_input_tools_add = 30
 			goods_input_electricity_add = 40
 		} 
 
@@ -247,7 +247,7 @@ pm_consumer_goods_analog_process = {
 			goods_input_electricity_add = 5
 			
 			# output goods
-			goods_output_consumer_goods_add = 40
+			goods_output_consumer_goods_add = 50
 		}
 
 		level_scaled = {
@@ -405,11 +405,11 @@ pm_complex_consumer_goods_computer_process = {
 			goods_input_heavy_machinery_add = 20
 			goods_input_electronics_add = 10
 			goods_input_electricity_add = 5
-			goods_input_computers_add = 10
+			goods_input_computers_add = 20
 			goods_input_glass_add = 10
 			
 			# output goods
-			goods_output_consumer_goods_add = 270
+			goods_output_consumer_goods_add = 260
 		}
 
 		level_scaled = {
@@ -448,7 +448,7 @@ pm_complex_consumer_goods_software_process = {
 			goods_input_glass_add = 10
 			
 			# output goods
-			goods_output_consumer_goods_add = 320
+			goods_output_consumer_goods_add = 330
 		}
 
 		level_scaled = {
@@ -878,7 +878,7 @@ pm_aluminum_one_process = {
 			#todo after beta rework, so ai also builds this, it wont if electricity is high
 			
 			# output goods
-			goods_output_aluminum_add = 55
+			goods_output_aluminum_add = 60
 		}
 
 		level_scaled = {
@@ -905,7 +905,7 @@ pm_aluminum_two_process = {
 			# input goods
 			goods_input_bauxite_add = 60
 			goods_input_explosives_add = 10
-			goods_input_electricity_add = 20
+			goods_input_electricity_add = 15
 			#todo after beta rework, so ai also builds this, it wont if electricity is high
 			
 			# output goods
@@ -1312,7 +1312,7 @@ pm_synthetic_oil_two_process = {
 
 
 ut_pm_research_institute_one = {
-	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
+	texture = "gfx/interface/icons/production_method_icons/philosophy_dept.dds"
 
 	country_modifiers = {
 		workforce_scaled = {
@@ -1383,7 +1383,7 @@ ut_pm_research_institute_two = {
 }
 
 ut_pm_research_institute_three = {
-	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
+	texture = "gfx/interface/icons/production_method_icons/social_science.dds"
 
 	unlocking_technologies = {
 		high_tech_computers
@@ -1515,6 +1515,58 @@ ut_pm_research_institute_society_focus = {
 
 	state_modifiers = {
 		workforce_scaled = {
+		}
+	}
+}
+
+ut_pm_nuclear_power_plant_one = {
+	texture = "gfx/interface/icons/production_method_icons/ut_power_plant.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 50
+			goods_input_computers_add = 50
+			goods_input_electronics_add = 100
+			goods_input_heavy_machinery_add = 100
+			goods_input_sulfur_add = 10
+			goods_input_bauxite_add = 10
+			goods_input_lead_add = 20
+
+			goods_output_electricity_add = 1000
+		}
+
+		level_scaled = {
+			#sum 5000 (no admin)
+			building_employment_laborers_add = 2500 # Base -2000 logistics
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1000
+			building_employment_academics_add = 500
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			building_group_bg_heavy_industry_throughput_add = 0.02
+			building_group_bg_modern_industry_throughput_add = 0.02
+		}
+	}
+}
+
+ut_pm_nuclear_power_plant_construction = {
+	texture = "gfx/interface/icons/production_method_icons/arc_welded_buildings.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 50
+			goods_input_computers_add = 50
+			goods_input_electronics_add = 100
+			goods_input_heavy_machinery_add = 200
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2500 # Base -2000 logistics
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1000
+			building_employment_academics_add = 500
 		}
 	}
 }

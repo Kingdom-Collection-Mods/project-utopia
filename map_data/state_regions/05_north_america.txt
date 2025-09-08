@@ -109,7 +109,7 @@ STATE_ALASKA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 12
+        discovered_amount = 12
     }
     naval_exit_id = 3119
 }
@@ -191,7 +191,7 @@ STATE_COLORADO = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 8
+        discovered_amount = 8
     }
     resource = {
         type = "bg_oil_extraction"
@@ -285,7 +285,7 @@ STATE_SOUTH_DAKOTA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 8
+        discovered_amount = 8
     }
     resource = {
         type = "bg_oil_extraction"
@@ -1014,7 +1014,7 @@ STATE_QUEBEC = {
     #unique rare earths mining small
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 10
+        discovered_amount = 10
     }
     naval_exit_id = 3045
 }
@@ -1092,7 +1092,7 @@ STATE_BRITISH_COLUMBIA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 8
+        discovered_amount = 8
     }
     naval_exit_id = 3154
 }
@@ -1182,7 +1182,7 @@ STATE_NORTHWEST_TERRITORIES = {
     #unique rare earths mining small
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 10
+        discovered_amount = 10
     }
 }
 
@@ -1286,7 +1286,7 @@ STATE_ARIZONA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 5
+        discovered_amount = 5
     }
 }
 
@@ -1337,7 +1337,7 @@ STATE_CALIFORNIA = {
     #unique rare earths mining medium
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 20
+        discovered_amount = 20
     }
     naval_exit_id = 3153
 }
@@ -1366,7 +1366,7 @@ STATE_SONORA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 6
+        discovered_amount = 6
     }
     naval_exit_id = 3153
 }
@@ -1563,7 +1563,7 @@ STATE_GUERRERO = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 3
+        discovered_amount = 3
     }
     resource = {
         type = "bg_rubber"
@@ -1597,7 +1597,7 @@ STATE_OAXACA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 2
+        discovered_amount = 2
     }
     resource = {
         type = "bg_rubber"
@@ -1651,7 +1651,7 @@ STATE_ZACATECAS = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 4
+        discovered_amount = 4
     }
 }
 
@@ -1696,7 +1696,7 @@ STATE_BAJA_CALIFORNIA = {
     #unique rare earths mining small
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 10
+        discovered_amount = 10
     }
     naval_exit_id = 3153
 }

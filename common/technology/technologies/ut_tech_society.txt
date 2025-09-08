@@ -278,6 +278,10 @@ modern_economy = {
 		state_tax_capacity_add = 25
 	}
 
+	on_researched = {
+		custom_tooltip = ut_ideology_economical_corporatist_leader_unlock_tt
+	}
+
 	unlocking_technologies = {
 		mass_surveillance
 	}
@@ -341,7 +345,7 @@ union_new_mandates = {
 	}
 		
 	modifier = {
-		country_infamy_generation_mult = -0.25
+		country_infamy_generation_mult = -0.1
 	}
 
 	unlocking_technologies = {
@@ -510,10 +514,17 @@ feminism_2 = {
 		
 	modifier = {
 		state_working_adult_ratio_add = 0.05
+		#female character chance is sadly horrible for mod compatibility to current knowledge
 	}
 
 	unlocking_technologies = {
 		feminism
+	}
+
+	on_researched = {
+		custom_tooltip = ut_liberal_feminism_leader_unlock_tt
+		custom_tooltip = ut_radical_feminism_leader_unlock_tt
+		custom_tooltip = ut_social_feminism_leader_unlock_tt
 	}
 	
 	ai_weight = {
@@ -661,9 +672,9 @@ movie_industry = {
 		
 
 	on_researched = {
-		custom_tooltip = {
-			text = ut_movement_rationalists_unlock_tt
-		}
+		# custom_tooltip = {
+		# 	text = ut_movement_rationalists_unlock_tt
+		# }
 	}
 
 	modifier = {
@@ -685,13 +696,14 @@ online_forums = {
 		
 
 	on_researched = {
-		custom_tooltip = {
-			text = ut_movement_rationalists_unlock_tt
-		}
+		# custom_tooltip = {
+		# 	text = ut_movement_rationalists_unlock_tt
+		# }
 	}
 
 	modifier = {
-		country_service_workers_pol_str_mult = 0.1
+		state_pop_pol_str_mult = 0.05
+		country_service_workers_pol_str_mult = 0.05
 		interest_group_ig_urbanists_pol_str_mult = 0.1
 	}
 
@@ -710,13 +722,14 @@ social_media = {
 		
 
 	on_researched = {
-		custom_tooltip = {
-			text = ut_movement_rationalists_unlock_tt
-		}
+		# custom_tooltip = {
+		# 	text = ut_movement_rationalists_unlock_tt
+		# }
 	}
 
 	modifier = {
-		country_service_workers_pol_str_mult = 0.1
+		state_pop_pol_str_mult = 0.05
+		country_service_workers_pol_str_mult = 0.05
 		interest_group_ig_urbanists_pol_str_mult = 0.1
 	}
 
@@ -736,9 +749,9 @@ anti_discrimination_laws = {
 		
 
 	on_researched = {
-		custom_tooltip = {
-			text = ut_movement_rationalists_unlock_tt
-		}
+		# custom_tooltip = {
+		# 	text = ut_movement_rationalists_unlock_tt
+		# }
 		custom_tooltip = {
 			text = ut_movement_cosmopolitan_unlock_tt
 		}
@@ -832,7 +845,7 @@ anti_multicultural_globalism = {
 		
 	modifier = {
 		state_expected_sol_from_literacy = 2 #todo: does not really fit here
-		country_infamy_generation_mult = -0.25
+		country_infamy_generation_mult = -0.1
 	}
 
 	unlocking_technologies = {

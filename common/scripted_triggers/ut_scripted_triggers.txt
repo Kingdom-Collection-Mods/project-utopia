@@ -233,3 +233,12 @@ ut_new_dawn_autocrat_bar_most_trigger = {
 		"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
 	}
 }
+
+ut_new_dawn_has_core_trigger = {
+	OR = {
+		has_modifier = ut_new_dawn_core_autocratic_mod
+		has_modifier = ut_new_dawn_core_democratic_mod
+		has_modifier = ut_new_dawn_core_fascist_mod
+		has_modifier = ut_new_dawn_core_communist_mod
+	}
+}

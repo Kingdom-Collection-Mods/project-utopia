@@ -321,7 +321,7 @@ ut_tank_radio = {
 	}
 
 	modifier = {
-		military_formation_organization_gain_mult = 0.1
+		military_formation_organization_gain_mult = 0.2
     }
 	
 	ai_weight = {

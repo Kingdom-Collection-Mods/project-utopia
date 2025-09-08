@@ -17,7 +17,7 @@ pm_precision_tools_heavy_machinery = {
 			# input goods
 			goods_input_hardwood_add = 25			# x40 = -1000
 			goods_input_wood_add = -25				# x20 =  500
-			goods_input_heavy_machinery_add = 4
+			goods_input_heavy_machinery_add = 2
 			
 			# output goods
 			goods_output_furniture_add = -65			# x30 = -1650
@@ -701,8 +701,8 @@ pm_supermarket = {
 		}
 
 		level_scaled = {
-			building_employment_clerks_add = 2000
-			building_employment_laborers_add = 500
+			building_employment_clerks_add = 1500
+			building_employment_laborers_add = 1000
 			building_employment_shopkeepers_add = 500
 			building_employment_service_workers_add = 2000 
 		}
@@ -730,7 +730,8 @@ pm_shopping_district = {
 		}
 
 		level_scaled = {
-			building_employment_clerks_add = 2000
+			building_employment_clerks_add = 1000
+			building_employment_laborers_add = 1000
 			building_employment_shopkeepers_add = 500
 			building_employment_service_workers_add = 2000 
 		}

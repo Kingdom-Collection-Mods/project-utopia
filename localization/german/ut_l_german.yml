@@ -218,6 +218,8 @@
  concept_ut_nd_autocrat_characters: "Autokratische Charaktere"
  concept_ut_nd_autocrat_characters_desc: "Autocratic character ideologies are: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], and [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nIf Autocrat Focus is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], [GetIdeology('ideology_positivist').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], and [GetIdeology('ideology_luddite').GetName]."
  ut_new_dawn_autocrat_status: "Autokratische Ideen prägen den Diskurs"
+ 
+ ut_new_dawn_phase_2_progress_modifier: "x0.5"
 
  concept_ut_nd_fascist_core: "Faschismus"
  concept_ut_nd_fascist_core_desc: "#bold Schalte frei:#!\n - Nationen erobern\n\n[concept_ut_nd_path_to_utopia]: Verwandle dein Volk in eine ... Utopie, durch blinden Gehorsam, Militarismus und die rücksichtslose Unterwerfung aller, die als 'anders' gelten. Erobere die Welt. Schaffe Wohlstand und Einheit für die Einen, auf Kosten der Freiheit und Würde aller Anderen."
@@ -997,8 +999,3 @@
  demand_standard_oil: "Forderung: Standard Oil"
  demand_treaty_port: "Forderung: Vertragshafens"
  demand_war_reps: "Forderung: Kriegsreparationen"
-
- TAX_INCOME_TREATY: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TREATY_INCOME_BREAKDOWN,TreatyIncomeTooltip @money![GetPlayer.PredictTreatyIncome|D+=]#!#! [concept_budget_treaties]"
- TREATY_INCOME_BREAKDOWN: "#tooltip_header Treaties#!\nTotal: #v @money![GetPlayer.PredictTreatyIncome|K+]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictTreatyIncomeDesc]"
- EXPENSES_TREATIES: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TREATY_EXPENSES_BREAKDOWN,TreatyExpenseTooltip @money![GetPlayer.PredictTreatyExpenses|D-]#!#! [concept_budget_treaties]"
- TREATY_EXPENSES_BREAKDOWN: "#tooltip_header Treaties#!\nTotal: #v #N @money!-[GetPlayer.PredictTreatyExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictTreatyExpensesDesc]"

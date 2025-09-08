@@ -18,7 +18,13 @@ ut_new_dawn_fascist_focus = {
 	}
 
 	effect = {	
-		custom_tooltip = ut_new_dawn_focus_tt 
+		custom_tooltip = ut_new_dawn_focus_tt 		
+		hidden_effect = {
+			remove_modifier = je_ut_new_dawn_autocrat_focus
+			remove_modifier = je_ut_new_dawn_democrat_focus
+			remove_modifier = je_ut_new_dawn_communist_focus
+			remove_modifier = je_ut_new_dawn_fascist_focus
+		}
 		add_modifier = {
 			name = je_ut_new_dawn_fascist_focus
 		}
@@ -26,18 +32,19 @@ ut_new_dawn_fascist_focus = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
 		}
-		hidden_effect = {
-			remove_modifier = je_ut_new_dawn_autocrat_focus
-			remove_modifier = je_ut_new_dawn_democrat_focus
-			remove_modifier = je_ut_new_dawn_communist_focus			
-		}
 	}
 	#1000 always
 	#10 very likely
 	#5 likely
-	#1 if no other reasons
+	#2 if no other reasons
 	ai_chance = {
 		value = 0
+		if = {
+			limit = {
+				has_modifier = je_ut_new_dawn_fascist_focus
+			}
+			add = 10
+		}
 		if = {
 			limit = {
 				OR = {
@@ -51,14 +58,15 @@ ut_new_dawn_fascist_focus = {
 			limit = {
 				has_law = law_type:law_ethnostate
 			}
-			add = 5
+			add = 2
 		}
 		if = {
 			#Historically Germany, Italy, and Japan below in "ranking"?
 			limit = {
-				global_country_ranking < 5
+				global_country_ranking >= 5
+				country_rank >= rank_value:great_power
 			}
-			add = 5
+			add = 2
 		}
 		if = {
 			#Red scare if not socialist them self?
@@ -76,17 +84,6 @@ ut_new_dawn_fascist_focus = {
 				}
 			}
 			add = 2
-		}
-		if = {
-			limit = {
-				OR = {
-					has_modifier = je_ut_new_dawn_autocrat_focus
-					has_modifier = je_ut_new_dawn_democrat_focus
-					has_modifier = je_ut_new_dawn_fascist_focus
-					has_modifier = je_ut_new_dawn_communist_focus
-				}
-			}
-			multiply = 0
 		}
 		if = {
 			limit = {
@@ -119,6 +116,12 @@ ut_new_dawn_autocrat_focus = {
 
 	effect = {
 		custom_tooltip = ut_new_dawn_focus_tt
+		hidden_effect = {
+			remove_modifier = je_ut_new_dawn_fascist_focus
+			remove_modifier = je_ut_new_dawn_democrat_focus
+			remove_modifier = je_ut_new_dawn_communist_focus
+			remove_modifier = je_ut_new_dawn_autocrat_focus
+		}
 		add_modifier = {
 			name = je_ut_new_dawn_autocrat_focus
 		}
@@ -126,14 +129,16 @@ ut_new_dawn_autocrat_focus = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
 		}
-		hidden_effect = {
-			remove_modifier = je_ut_new_dawn_fascist_focus
-			remove_modifier = je_ut_new_dawn_democrat_focus
-			remove_modifier = je_ut_new_dawn_communist_focus			
-		}
 	}
 	ai_chance = {
 		value = 0
+		
+		if = {
+			limit = {
+				has_modifier = je_ut_new_dawn_autocrat_focus
+			}
+			add = 10
+		}
 		if = {
 			limit = {
 				OR = {
@@ -146,6 +151,8 @@ ut_new_dawn_autocrat_focus = {
 		if = {
 			#let's stay in power, if nothing else to bother
 			limit = {
+				NOT = { has_law = law_type:law_census_voting }
+				NOT = { has_law = law_type:law_universal_suffrage }
 				OR = {
 					has_law = law_type:law_monarchy
 					has_law = law_type:law_corporate_state
@@ -158,23 +165,12 @@ ut_new_dawn_autocrat_focus = {
 			add = 5
 		}
 		if = {
-			#Same chance as fascist
+			#Same chance as fascist (but more likely for majors)
 			limit = {
-				global_country_ranking < 5
+				global_country_ranking >= 5
 			}
-			add = 5
+			add = 2
 		}	
-		if = {
-			limit = {
-				OR = {
-					has_modifier = je_ut_new_dawn_autocrat_focus
-					has_modifier = je_ut_new_dawn_democrat_focus
-					has_modifier = je_ut_new_dawn_fascist_focus
-					has_modifier = je_ut_new_dawn_communist_focus
-				}
-			}
-			multiply = 0
-		}
 		if = {
 			limit = {
 				ruler = {
@@ -182,6 +178,12 @@ ut_new_dawn_autocrat_focus = {
 				}
 			}
 			add = 2
+		}
+		if = {
+			limit = {
+				has_variable = je_ut_new_dawn_first_started
+			}
+			multiply = 0
 		}
 	}
 
@@ -203,11 +205,16 @@ ut_new_dawn_democrat_focus = {
 		# 	text = ut_new_dawn_focus_already_selected_tt
 		# 	NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
 		# }
-		NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
 	}
 
 	effect = {
-		custom_tooltip = ut_new_dawn_focus_tt
+		custom_tooltip = ut_new_dawn_focus_tt		
+		hidden_effect = {
+			remove_modifier = je_ut_new_dawn_democrat_focus
+			remove_modifier = je_ut_new_dawn_fascist_focus
+			remove_modifier = je_ut_new_dawn_autocrat_focus
+			remove_modifier = je_ut_new_dawn_communist_focus
+		}
 		add_modifier = {
 			name = je_ut_new_dawn_democrat_focus
 		}
@@ -215,14 +222,15 @@ ut_new_dawn_democrat_focus = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
 		}
-		hidden_effect = {
-			remove_modifier = je_ut_new_dawn_fascist_focus
-			remove_modifier = je_ut_new_dawn_autocrat_focus
-			remove_modifier = je_ut_new_dawn_communist_focus
-		}
 	}
 	ai_chance = {
 		value = 0
+		if = {
+			limit = {
+				has_modifier = je_ut_new_dawn_democrat_focus
+			}
+			add = 10
+		}
 		if = {
 			limit = {
 				c:USA ?= this
@@ -240,27 +248,41 @@ ut_new_dawn_democrat_focus = {
 		if = {
 			#Historically USA and Great Britain high "ranking"?
 			limit = {
-				global_country_ranking > 4
+				global_country_ranking < 5
 			}
-			add = 5
+			add = 2
 		}
-		
 		if = {
 			limit = {
 				OR = {
-					has_modifier = je_ut_new_dawn_autocrat_focus
-					has_modifier = je_ut_new_dawn_democrat_focus
-					has_modifier = je_ut_new_dawn_fascist_focus
-					has_modifier = je_ut_new_dawn_communist_focus
+					has_law = law_type:law_universal_suffrage
+					has_law = law_type:law_census_voting
 				}
 			}
-			multiply = 0
+			add = 2
 		}
-		
 		if = {
 			limit = {
 				ruler = {
 					ut_ideology_new_dawn_democrat_trigger = yes
+				}
+			}
+			add = 2
+		}
+		if = {
+			#Fascist scare if democratic them self?
+			limit = {
+				OR = {
+					has_law = law_type:law_universal_suffrage
+					has_law = law_type:law_protected_speech
+				}
+				any_neighbouring_state = {
+					owner = {
+						OR = {
+							has_modifier = je_ut_new_dawn_fascist_focus
+							has_variable = ut_new_dawn_core_fascist_var
+						}
+					}
 				}
 			}
 			add = 2
@@ -290,6 +312,12 @@ ut_new_dawn_communist_focus = {
 
 	effect = {		
 		custom_tooltip = ut_new_dawn_focus_tt
+		hidden_effect = {
+			remove_modifier = je_ut_new_dawn_fascist_focus
+			remove_modifier = je_ut_new_dawn_autocrat_focus
+			remove_modifier = je_ut_new_dawn_democrat_focus
+			remove_modifier = je_ut_new_dawn_communist_focus
+		}
 		add_modifier = {
 			name = je_ut_new_dawn_communist_focus
 		}
@@ -297,33 +325,21 @@ ut_new_dawn_communist_focus = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
 		}
-		hidden_effect = {
-			remove_modifier = je_ut_new_dawn_fascist_focus
-			remove_modifier = je_ut_new_dawn_autocrat_focus
-			remove_modifier = je_ut_new_dawn_democrat_focus			
-		}
 	}
 	ai_chance = {
 		value = 0
+		if = {
+			limit = {
+				has_modifier = je_ut_new_dawn_communist_focus
+			}
+			add = 10
+		}
 		if = {
 			limit = {
 				c:RUS ?= this
 			}
 			add = 2
 		}
-		
-		if = {
-			limit = {
-				OR = {
-					has_modifier = je_ut_new_dawn_autocrat_focus
-					has_modifier = je_ut_new_dawn_democrat_focus
-					has_modifier = je_ut_new_dawn_fascist_focus
-					has_modifier = je_ut_new_dawn_communist_focus
-				}
-			}
-			multiply = 0
-		}
-		
 		if = {
 			limit = {
 				OR = {
@@ -332,6 +348,25 @@ ut_new_dawn_communist_focus = {
 				}
 			}
 			add = 5
+		}
+		
+		if = {
+			#Fascist scare if communist them self?
+			limit = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+				any_neighbouring_state = {
+					owner = {
+						OR = {
+							has_modifier = je_ut_new_dawn_fascist_focus
+							has_variable = ut_new_dawn_core_fascist_var
+						}
+					}
+				}
+			}
+			add = 2
 		}
 		if = {
 			limit = {
@@ -433,7 +468,9 @@ je_ut_new_dawn_democratic_cultural_values = {
 				is_marginal = yes
 				custom_tooltip = {
 					text = concept_ut_nd_democrat_interest_group_tt
-					ut_ideology_new_dawn_democrat_trigger = yes
+					leader = {
+						ut_ideology_new_dawn_democrat_trigger = yes
+					}
 				}
 			}
 		}
@@ -442,13 +479,16 @@ je_ut_new_dawn_democratic_cultural_values = {
 				is_marginal = yes
 				custom_tooltip = {
 					text = concept_ut_nd_democrat_interest_group_tt
-					ut_ideology_new_dawn_democrat_trigger = yes
+					leader = {
+						ut_ideology_new_dawn_democrat_trigger = yes
+					}
 				}
 			}
 		}
 	}
 
 	effect = {
+		custom_tooltip = ut_influence_new_dawn_major_power_unlock_tt
 		ig:ig_devout = {
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_moralist_democratic
@@ -550,8 +590,8 @@ je_ut_new_dawn_democratic_fair_elections = {
 }
 
 je_ut_new_dawn_democratic_final = {
-	name = "je_ut_new_dawn_democratic_fair_elections"
-	desc = "je_ut_new_dawn_democratic_fair_elections_desc"
+	name = "je_ut_new_dawn_democratic_final"
+	desc = "je_ut_new_dawn_democratic_final_desc"
 
 	visible = { 
 		NOT = { has_variable = je_ut_new_dawn_democratic_final_done }
@@ -738,6 +778,9 @@ je_ut_new_dawn_outlaw_communists = {
 				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
 			}
 		}
+		set_variable = {
+			name = je_ut_new_dawn_outlaw_communists_done
+		}
 	}
 }
 
@@ -773,6 +816,9 @@ je_ut_new_dawn_form_paramilitary_groups = {
 				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
 			}
 		}
+		set_variable = {
+			name = je_ut_new_dawn_form_paramilitary_groups_done
+		}
 	}
 }
 
@@ -805,6 +851,9 @@ je_ut_new_dawn_conformity = {
 			je:je_ut_new_dawn_fascist = {
 				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
 			}
+		}
+		set_variable = {
+			name = je_ut_new_dawn_conformity_done
 		}
 	}
 }
@@ -845,6 +894,9 @@ je_ut_new_dawn_unite_heritage = {
 				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
 			}
 		}
+		set_variable = {
+			name = je_ut_new_dawn_unite_heritage_done
+		}
 	}
 }
 
@@ -880,6 +932,9 @@ je_ut_new_dawn_volksgemeinschaft = {
 				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
 			}
 		}
+		set_variable = {
+			name = je_ut_new_dawn_volksgemeinschaft_done
+		}
 	}
 }
 
@@ -904,7 +959,7 @@ je_ut_new_dawn_expansionism = {
 		NOT = {
 			any_country = {
 				OR = {
-					NOT = { this =heritage root }
+					NOT = { this = root }
 					NOT = { is_subject_of = root }
 				}
 				has_strategic_adjacency = root
@@ -919,52 +974,13 @@ je_ut_new_dawn_expansionism = {
 				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
 			}
 		}
-	}
-}
-
-je_ut_new_dawn_fascist_final = {
-	name = "je_ut_new_dawn_fascist_final"
-	desc = "je_ut_new_dawn_fascist_final_desc"
-
-	visible = {
-		NOT = {
-			has_variable = je_ut_new_dawn_fascist_final_done
-		}
-	}
-
-	possible = {
-		always = no #disabled
-		custom_tooltip = {
-			text = new_dawn_ideology_required_points_tt
-			je:je_ut_new_dawn_fascist = { 
-				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_required_points
-			}
-		}
-		average_sol_for_culture = {
-			target = root.ruler.culture
-			value >= 100
-		}
-		custom_tooltip = {
-			text = je_ut_new_dawn_fascist_final_tt
-		}
-		NOT = {
-			any_country = {
-				NOT = { root = this }
-			}
-		}
-	}
-
-	effect = {
-		custom_tooltip = {
-			text = new_dawn_ideology_required_points_spend_tt
-			je:je_ut_new_dawn_fascist = {
-				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
-			}
+		set_variable = {
+			name = je_ut_new_dawn_expansionism_done
 		}
 	}
 }
 
-je_ut_communist_one_communist_party  = {
+je_ut_communist_one_communist_party = {
 	name = "je_ut_communist_one_communist_party"
 	desc = "je_ut_communist_one_communist_party_desc"
 
@@ -994,11 +1010,11 @@ je_ut_communist_one_communist_party  = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
 		}
-		add_variable = je_ut_communist_one_communist_party_done
+		set_variable = je_ut_communist_one_communist_party_done
 	}
 }
 
-je_ut_communist_a_communist_party  = {
+je_ut_communist_a_communist_party = {
 	name = "je_ut_communist_a_communist_party"
 	desc = "je_ut_communist_a_communist_party_desc"
 
@@ -1028,11 +1044,11 @@ je_ut_communist_a_communist_party  = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
 		}
-		add_variable = je_ut_communist_a_communist_party_done
+		set_variable = je_ut_communist_a_communist_party_done
 	}
 }
 
-je_ut_communist_one_block  = {
+je_ut_communist_one_block = {
 	name = "je_ut_communist_one_block"
 	desc = "je_ut_communist_one_block_desc"
 
@@ -1063,11 +1079,11 @@ je_ut_communist_one_block  = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
 		}
-		add_variable = je_ut_communist_one_block_done
+		set_variable = je_ut_communist_one_block_done
 	}
 }
 
-je_ut_communist_one_people  = {
+je_ut_communist_one_people = {
 	name = "je_ut_communist_one_people"
 	desc = "je_ut_communist_one_people_desc"
 
@@ -1099,11 +1115,11 @@ je_ut_communist_one_people  = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
 		}
-		add_variable = je_ut_communist_one_people_done
+		set_variable = je_ut_communist_one_people_done
 	}
 }
 
-je_ut_communist_final  = {
+je_ut_communist_final = {
 	name = "je_ut_communist_final"
 	desc = "je_ut_communist_final_desc"
 
@@ -1136,6 +1152,6 @@ je_ut_communist_final  = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
 		}
-		add_variable = je_ut_communist_final_done
+		set_variable = je_ut_communist_final_done
 	}
 }

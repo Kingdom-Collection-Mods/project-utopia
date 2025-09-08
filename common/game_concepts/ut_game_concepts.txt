@@ -1,5 +1,10 @@
-﻿concept_ut_nd_autocrat_characters = {}
+﻿concept_ut_nd_milestones = {}
+concept_ut_nd_actions = {}
+concept_ut_nd_abilities = {}
+concept_ut_nd_progress_points = {}
+concept_ut_nd_autocrat_characters = {}
 concept_ut_nd_fascist_characters = {}
+concept_ut_nd_fascist_final_context = {}
 concept_ut_nd_democrat_characters = {}
 concept_ut_nd_communist_characters = {}
 

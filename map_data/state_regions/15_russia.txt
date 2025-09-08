@@ -17,7 +17,7 @@
     #unique rare earths mining tiny
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 3
+        discovered_amount = 3
     }
     naval_exit_id = 3000
 }
@@ -266,7 +266,7 @@ STATE_KOLA = {
     #unique rare earths mining medium
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 20
+        discovered_amount = 20
     }    
     naval_exit_id = 3039
 }
@@ -434,7 +434,7 @@ STATE_ARKHANGELSK = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 10
+        discovered_amount = 10
     }
     naval_exit_id = 3039
 }
@@ -522,7 +522,7 @@ STATE_KURSK = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 3
+        discovered_amount = 3
     }
 }
 
@@ -872,7 +872,7 @@ STATE_NORTH_CAUCASUS = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 4
+        discovered_amount = 4
     }
 }
 
@@ -1103,7 +1103,7 @@ STATE_ALTAI = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 3
+        discovered_amount = 3
     }
 }
 
@@ -1202,7 +1202,7 @@ STATE_CHELYABINSK = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 14
+        discovered_amount = 14
     }
 }
 

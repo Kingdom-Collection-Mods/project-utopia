@@ -7,6 +7,7 @@
 	is_shown_when_inactive = {
 		OR = {
 			is_player = yes
+			has_variable = je_ut_new_dawn_major_power_influenced_var
 			country_rank >= rank_value:great_power
 		}
 		ut_service_workers_possible = yes
@@ -14,16 +15,10 @@
 
 	possible = {
 		OR = {
+			has_global_variable = je_ut_new_dawn_global_started
 			pop_type_percent_country = {
 				pop_type = service_workers
-				percent > 0.05
-			}
-			AND = {
-				is_ai = yes
-				pop_type_percent_country = {
-					pop_type = service_workers
-					percent > 0.01
-				}
+				percent > 0.01
 			}
 		}
 	}
@@ -34,6 +29,13 @@
 
 	immediate = {
 		ut_set_new_dawn_variables = yes
+		if = {
+			limit = {
+				NOT = { has_global_variable = je_ut_new_dawn_global_started }
+			}
+			set_global_variable = je_ut_new_dawn_global_started
+			set_variable = je_ut_new_dawn_first_started
+		}
 	}
 
 	scripted_button = ut_new_dawn_fascist_focus
@@ -224,6 +226,11 @@ je_ut_new_dawn_democratic = {
 	immediate = {
 		ut_set_new_dawn_variables = yes
 		
+		remove_modifier = je_ut_new_dawn_democrat_focus
+		remove_modifier = je_ut_new_dawn_autocrat_focus
+		remove_modifier = je_ut_new_dawn_communist_focus
+		remove_modifier = je_ut_new_dawn_fascist_focus
+		
 		if = {
 			limit = {
 				NOT = { has_modifier = je_ut_new_dawn_democrat_focus }	
@@ -234,8 +241,15 @@ je_ut_new_dawn_democratic = {
 		}
 		if = {
 			limit = {
-				c:GBR ?= this
-				power_bloc_leader = yes
+				NOT = { has_modifier = ut_new_dawn_core_democratic_mod }
+			}
+			add_modifier = {
+				name = ut_new_dawn_core_democratic_mod
+			}
+		}
+		if = {
+			limit = {
+				is_power_bloc_leader = yes
 				power_bloc ?= {
 					has_principle_group = principle_group:principle_group_colonial_offices
 				}
@@ -245,7 +259,12 @@ je_ut_new_dawn_democratic = {
 				remove_principle = principle_colonial_offices_2
 				remove_principle = principle_colonial_offices_3
 
-				add_principle = principle_external_trade_1
+				if = {
+					limit = {
+						NOT = { has_principle_group = principle_group:principle_group_external_trade }
+					}
+					add_principle = principle_external_trade_1
+				}
 			}		
 		}
 	}
@@ -266,6 +285,7 @@ je_ut_new_dawn_democratic = {
 			has_variable = je_ut_new_dawn_democratic_cultural_values_done
 			has_variable = je_ut_new_dawn_democratic_power_bloc_done
 			has_variable = je_ut_new_dawn_democratic_fair_elections_done
+			has_variable = je_ut_new_dawn_democratic_final_done
 		}
 		
 		custom_tooltip = {
@@ -293,7 +313,12 @@ je_ut_new_dawn_democratic = {
 			#event_new_dawn.1
 		}
 		effect = {
-			ut_new_dawn_democrat_progress = yes
+			if = {
+				limit = {
+					is_player = yes
+				}
+				ut_new_dawn_democrat_progress = yes
+			}
 		}
 	}
 
@@ -301,10 +326,25 @@ je_ut_new_dawn_democratic = {
 		effect = {
 			if = {
 				limit = {
+					is_player = no
+				}
+				ut_new_dawn_democrat_progress = yes
+			}
+			if = {
+				limit = {
 					NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
 				}
 				add_modifier = {
 					name = je_ut_new_dawn_democrat_focus
+				}
+			}
+			#debug todo remove, only for backwards compat
+			if = {
+				limit = {
+					NOT = { has_modifier = ut_new_dawn_core_democratic_mod }
+				}
+				add_modifier = {
+					name = ut_new_dawn_core_democratic_mod
 				}
 			}
 		}
@@ -326,7 +366,15 @@ je_ut_new_dawn_democratic = {
 	# effect which is executed when 'fail' trigger becomes true
 	on_fail = {
 		remove_modifier = je_ut_new_dawn_democrat_focus
+		remove_modifier = ut_new_dawn_core_democratic_mod
 		remove_variable = ut_new_dawn_bar_freeze
+	
+		je:je_ut_new_dawn = {
+			add_progress = {
+				value = -120
+				name = ut_new_dawn_democrat_bar
+			}
+		}
 	}
 
 	weight = 100
@@ -351,6 +399,11 @@ je_ut_new_dawn_autocratic = {
 
 	immediate = {
 		ut_set_new_dawn_variables = yes
+
+		remove_modifier = je_ut_new_dawn_democrat_focus
+		remove_modifier = je_ut_new_dawn_autocrat_focus
+		remove_modifier = je_ut_new_dawn_communist_focus
+		remove_modifier = je_ut_new_dawn_fascist_focus
 		
 		if = {
 			limit = {
@@ -358,6 +411,14 @@ je_ut_new_dawn_autocratic = {
 			}
 			add_modifier = {
 				name = je_ut_new_dawn_autocrat_focus
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_modifier = ut_new_dawn_core_autocratic_mod }
+			}
+			add_modifier = {
+				name = ut_new_dawn_core_autocratic_mod
 			}
 		}
 	}
@@ -403,6 +464,15 @@ je_ut_new_dawn_autocratic = {
 					name = je_ut_new_dawn_autocrat_focus
 				}
 			}
+			#debug todo remove, only for backwards compat
+			if = {
+				limit = {
+					NOT = { has_modifier = ut_new_dawn_core_autocratic_mod }
+				}
+				add_modifier = {
+					name = ut_new_dawn_core_autocratic_mod
+				}
+			}
 		}
 		random_events = {
 			400 = 0
@@ -422,7 +492,14 @@ je_ut_new_dawn_autocratic = {
 	# effect which is executed when 'fail' trigger becomes true
 	on_fail = {
 		remove_modifier = je_ut_new_dawn_autocrat_focus
+		remove_modifier = ut_new_dawn_core_autocratic_mod
 		remove_variable = ut_new_dawn_bar_freeze
+		je:je_ut_new_dawn = {
+			add_progress = {
+				value = -120
+				name = ut_new_dawn_autocrat_bar
+			}
+		}
 	}
 
 	weight = 100
@@ -442,13 +519,25 @@ je_ut_new_dawn_fascist = {
 
 	immediate = {
 		ut_set_new_dawn_variables = yes
-		
+		remove_modifier = je_ut_new_dawn_democrat_focus
+		remove_modifier = je_ut_new_dawn_autocrat_focus
+		remove_modifier = je_ut_new_dawn_communist_focus
+		remove_modifier = je_ut_new_dawn_fascist_focus
+
 		if = {
 			limit = {
 				NOT = { has_modifier = je_ut_new_dawn_fascist_focus }	
 			}
 			add_modifier = {
 				name = je_ut_new_dawn_fascist_focus
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_modifier = ut_new_dawn_core_fascist_mod }
+			}
+			add_modifier = {
+				name = ut_new_dawn_core_fascist_mod
 			}
 		}
 	}
@@ -473,8 +562,6 @@ je_ut_new_dawn_fascist = {
 	
 	scripted_button = je_ut_new_dawn_expansionism
 
-	scripted_button = je_ut_new_dawn_fascist_final
-
 
 	
 	
@@ -485,13 +572,33 @@ je_ut_new_dawn_fascist = {
 	complete = {
 		custom_tooltip = {
 			text = je_ut_new_dawn_fascist_complete_condition_tt
-			always = no
+			has_variable = je_ut_new_dawn_outlaw_communists
+			has_variable = je_ut_new_dawn_form_paramilitary_groups
+			has_variable = je_ut_new_dawn_conformity
+			has_variable = je_ut_new_dawn_volksgemeinschaft
+			has_variable = je_ut_new_dawn_unite_heritage
+			has_variable = je_ut_new_dawn_expansionism
 		}
 		
 		custom_tooltip = {
 			text = new_dawn_ideology_upper_bound_tt
 			je:je_ut_new_dawn_fascist = { 
 				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_upper_bound
+			}
+		}
+
+		
+		average_sol_for_culture = {
+			target = root.ruler.culture
+			value >= 100
+		}
+		custom_tooltip = {
+			text = je_ut_new_dawn_fascist_final_tt
+			
+			NOT = {
+				any_country = {
+					NOT = { root = this }
+				}
 			}
 		}
 	}
@@ -527,6 +634,15 @@ je_ut_new_dawn_fascist = {
 					name = je_ut_new_dawn_autocrat_focus
 				}
 			}
+			#debug todo remove, only for backwards compat
+			if = {
+				limit = {
+					NOT = { has_modifier = ut_new_dawn_core_fascist_mod }
+				}
+				add_modifier = {
+					name = ut_new_dawn_core_fascist_mod
+				}
+			}
 		}
 		random_events = {
 			400 = 0
@@ -546,7 +662,14 @@ je_ut_new_dawn_fascist = {
 	# effect which is executed when 'fail' trigger becomes true
 	on_fail = {
 		remove_modifier = je_ut_new_dawn_fascist_focus
+		remove_modifier = ut_new_dawn_core_fascist_mod
 		remove_variable = ut_new_dawn_bar_freeze
+		je:je_ut_new_dawn = {
+			add_progress = {
+				value = -120
+				name = ut_new_dawn_fascist_bar
+			}
+		}
 	}
 
 	weight = 100
@@ -561,11 +684,15 @@ je_ut_new_dawn_communist = {
 
 	modifiers_while_active = {
 		new_dawn_phase_2_mod
-		je_ut_new_dawn_autocratic_mod
+		je_ut_new_dawn_communist_mod
 	}
 
 	immediate = {
 		ut_set_new_dawn_variables = yes
+		remove_modifier = je_ut_new_dawn_democrat_focus
+		remove_modifier = je_ut_new_dawn_autocrat_focus
+		remove_modifier = je_ut_new_dawn_communist_focus
+		remove_modifier = je_ut_new_dawn_fascist_focus
 		
 		if = {
 			limit = {
@@ -573,6 +700,14 @@ je_ut_new_dawn_communist = {
 			}
 			add_modifier = {
 				name = je_ut_new_dawn_communist_focus
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_modifier = ut_new_dawn_core_communist_mod }
+			}
+			add_modifier = {
+				name = ut_new_dawn_core_communist_mod
 			}
 		}
 	}
@@ -626,10 +761,19 @@ je_ut_new_dawn_communist = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }
+					NOT = { has_modifier = je_ut_new_dawn_communist_focus }
 				}
 				add_modifier = {
-					name = je_ut_new_dawn_autocrat_focus
+					name = je_ut_new_dawn_communist_focus
+				}
+			}
+			#debug todo remove, only for backwards compat
+			if = {
+				limit = {
+					NOT = { has_modifier = ut_new_dawn_core_communist_mod }
+				}
+				add_modifier = {
+					name = ut_new_dawn_core_communist_mod
 				}
 			}
 		}
@@ -651,7 +795,14 @@ je_ut_new_dawn_communist = {
 	# effect which is executed when 'fail' trigger becomes true
 	on_fail = {
 		remove_modifier = je_ut_new_dawn_communist_focus
+		remove_modifier = ut_new_dawn_core_communist_mod
 		remove_variable = ut_new_dawn_bar_freeze
+		je:je_ut_new_dawn = {
+			add_progress = {
+				value = -120
+				name = ut_new_dawn_communist_bar
+			}
+		}
 	}
 
 	weight = 100

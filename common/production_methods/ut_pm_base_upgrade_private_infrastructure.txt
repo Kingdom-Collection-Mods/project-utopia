@@ -9,15 +9,14 @@
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_heavy_machinery_add = 1
-			goods_input_engines_add = 5 # 300
+			goods_input_engines_add = 6 # 300
 			goods_input_electricity_add = 10
 			goods_input_oil_add = 2	
-			goods_output_transportation_add = 45 # 1200
+			goods_output_transportation_add = 55 # 1200
 		}
 		level_scaled = {
-			building_employment_laborers_add = 200
-			building_employment_machinists_add = 300
-			building_employment_clerks_add = 100
+			building_employment_machinists_add = 400
+			building_employment_clerks_add = 200
 			building_employment_engineers_add = 200
 			building_employment_service_workers_add = 200
 		}
@@ -25,12 +24,44 @@
 
 	state_modifiers = {
 		workforce_scaled = {
-			state_infrastructure_add = 45
+			state_infrastructure_add = 60
 			state_pollution_generation_add = 2
 		}
 	}
 
 	required_input_goods = electricity
+}
+
+pm_trade_center_principle_external_trade_2 = {
+	texture = "gfx/interface/icons/production_method_icons/trade_center.dds"
+	is_hidden_when_unavailable = yes
+
+	unlocking_principles = {
+		principle_external_trade_2
+		principle_external_trade_3
+		principle_common_financial_policy_1
+		principle_common_financial_policy_2
+		principle_common_financial_policy_3
+	}
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_influence_add = 0.5
+		}
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_clerks_add = 800
+			building_employment_shopkeepers_add = 200
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_weekly_trades_add = 1
+			state_trade_capacity_add = 10
+		}
+	}
 }
 
 # Doesn't work, will just not have any utopia then
@@ -134,7 +165,7 @@ ut_pm_digital_art = {
 }
 
 ut_pm_research_department = {
-	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
+	texture = "gfx/interface/icons/production_method_icons/social_science.dds"
 
 	unlocking_technologies = {
 		technical_scientific_school_reforms

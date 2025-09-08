@@ -26,6 +26,7 @@ ut_research_institute_found = {
 	is_shown = {
 		NOT = {
 			has_variable = ut_research_institute_found_var
+			has_variable = ut_research_institute_found_done
 		}
 	}
 
@@ -89,6 +90,7 @@ ut_research_institute_found = {
 ut_research_nuclear_power = {
 	is_shown = {
 		has_technology_researched = nuclear_power_research
+		NOT = { has_technology_researched = nuclear_power }
 		NOT = {
 			has_variable = ut_research_nuclear_power_var
 		}
@@ -96,7 +98,7 @@ ut_research_nuclear_power = {
 
 	possible = {
 		produced_bureaucracy > 500
-		has_variable = ut_research_institute_found
+		has_variable = ut_research_institute_found_done
 		has_technology_researched = nuclear_power_research
 		any_scope_state = {
 			is_incorporated = yes
@@ -161,6 +163,57 @@ ut_research_nuclear_power = {
 	}
 }
 
+ut_nuclear_power_plant_location  = {
+	is_shown = {
+		has_technology_researched = nuclear_power
+	}
+
+	possible = {
+		NOT = { has_variable = ut_nuclear_power_plant_location_selecting }
+		any_scope_state = {
+			is_incorporated = yes
+			is_split_state = no
+			
+			any_scope_building = {
+				is_building_type = building_ut_nuclear_power_plant_construction_site
+			}
+		}
+	}
+
+	when_taken = {
+		set_variable = ut_nuclear_power_plant_location_selecting
+		trigger_event = {
+			id = utopia_journal_prod.50
+		}
+	}
+
+	ai_chance = {
+		value = 0
+		if = {
+			limit = { produced_bureaucracy > 2500 }
+			add = 5
+		}
+		if = {
+			limit = {
+				produced_bureaucracy > 5000
+				any_country = {
+					is_ai = no
+					has_variable = skyscraper_var
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				OR = {
+					is_diplomatic_play_committed_participant = yes
+					is_at_war = yes
+				}
+			}
+			multiply = 0
+		}
+	}
+}
 
 ut_research_high_tech_computers = {
 	is_shown = {
@@ -172,7 +225,7 @@ ut_research_high_tech_computers = {
 
 	possible = {
 		produced_bureaucracy > 500
-		has_variable = ut_research_institute_found
+		has_variable = ut_research_institute_found_done
 		has_technology_researched = computers
 		any_scope_state = {
 			is_incorporated = yes
@@ -237,7 +290,6 @@ ut_research_high_tech_computers = {
 	}
 }
 
-
 ut_lgbt_same_sex_unions = {
 	is_shown = {
 		has_law = law_type:law_lgbt_rights_3
@@ -257,7 +309,6 @@ ut_lgbt_same_sex_unions = {
 		value = 0
 	}
 }
-
 
 ut_lgbt_same_sex_marriage = {
 	is_shown = {

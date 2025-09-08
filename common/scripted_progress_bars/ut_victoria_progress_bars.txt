@@ -34,6 +34,10 @@ ut_new_dawn_fascist_bar = {
 				desc = "ut_nd_fascist_progress_from_focus"
 				value = owner.var:ut_nd_fascist_progress_from_focus
 			}
+			add = {
+				desc = "ut_nd_fascist_progress_from_events"
+				value = owner.var:ut_nd_fascist_progress_from_events
+			}
 			if = {
 				limit = {
 					is_ai = yes
@@ -42,7 +46,7 @@ ut_new_dawn_fascist_bar = {
 			}
 		}
 		else = {
-			add = 0
+			add = -0.5
 		}
 	}
 
@@ -86,6 +90,10 @@ ut_new_dawn_democrat_bar = {
 				desc = "ut_nd_democrat_progress_from_focus"
 				value = owner.var:ut_nd_democrat_progress_from_focus
 			}
+			add = {
+				desc = "ut_nd_democrat_progress_from_events"
+				value = owner.var:ut_nd_democrat_progress_from_events
+			}
 			if = {
 				limit = {
 					is_ai = yes
@@ -94,7 +102,7 @@ ut_new_dawn_democrat_bar = {
 			}
 		}
 		else = {
-			add = 0
+			add = -0.5
 		}
 	}
 
@@ -138,6 +146,10 @@ ut_new_dawn_communist_bar = {
 				desc = "ut_nd_communist_progress_from_focus"
 				value = owner.var:ut_nd_communist_progress_from_focus
 			}
+			add = {
+				desc = "ut_nd_communist_progress_from_events"
+				value = owner.var:ut_nd_communist_progress_from_events
+			}
 			if = {
 				limit = {
 					is_ai = yes
@@ -146,7 +158,7 @@ ut_new_dawn_communist_bar = {
 			}
 		}
 		else = {
-			add = 0
+			add = -0.5
 		}
 	}
 
@@ -189,6 +201,10 @@ ut_new_dawn_autocrat_bar = {
 				desc = "ut_nd_autocrat_progress_from_focus"
 				value = owner.var:ut_nd_autocrat_progress_from_focus
 			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_events"
+				value = owner.var:ut_nd_autocrat_progress_from_events
+			}
 			if = {
 				limit = {
 					is_ai = yes
@@ -197,7 +213,7 @@ ut_new_dawn_autocrat_bar = {
 			}
 		}
 		else = {
-			add = 0
+			add = -0.5
 		}
 	}
 
@@ -216,10 +232,8 @@ je_ut_new_dawn_democratic_points_bar = {
 	monthly_progress = {
 		if = {
 			limit = {
-				is_player = yes
-				#NOT = {
-				#	has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
-				#}
+				always = yes
+				# is_player = yes
 			}
 			
 			add = {
@@ -239,9 +253,13 @@ je_ut_new_dawn_democratic_points_bar = {
 				value = owner.var:ut_nd_democrat_progress_from_legitimacy
 			}
 			add = {
-				desc = "ut_nd_democrat_progress_from_focus"
-				value = owner.var:ut_nd_democrat_progress_from_focus
+				desc = "ut_nd_democrat_progress_from_events"
+				value = owner.var:ut_nd_democrat_progress_from_events
 			}
+			multiply = {
+				desc = "ut_new_dawn_phase_2_progress_modifier"
+				value = 0.5
+			}	
 		}
 	}
 
@@ -259,7 +277,8 @@ je_ut_new_dawn_autocratic_points_bar = {
 	monthly_progress = {
 		if = {
 			limit = {
-				is_player = yes
+				always = yes
+				#is_player = yes
 				#NOT = {
 				#	has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
 				#}
@@ -282,13 +301,13 @@ je_ut_new_dawn_autocratic_points_bar = {
 				value = owner.var:ut_nd_autocrat_progress_from_legitimacy
 			}
 			add = {
-				desc = "ut_nd_autocrat_progress_from_focus"
-				value = owner.var:ut_nd_autocrat_progress_from_focus
-			}
-			add = {
 				desc = "ut_nd_autocrat_progress_from_events"
 				value = owner.var:ut_nd_autocrat_progress_from_events
 			}
+			multiply = {
+				desc = "ut_new_dawn_phase_2_progress_modifier"
+				value = 0.5
+			}	
 		}
 		else = {
 			add = 0
@@ -309,7 +328,8 @@ je_ut_new_dawn_fascist_points_bar = {
 	monthly_progress = {
 		if = {
 			limit = {
-				is_player = yes
+				#is_player = yes
+				always = yes
 				#NOT = {
 				#	has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
 				#}
@@ -335,6 +355,14 @@ je_ut_new_dawn_fascist_points_bar = {
 				desc = "ut_nd_fascist_progress_from_focus"
 				value = owner.var:ut_nd_fascist_progress_from_focus
 			}
+			add = {
+				desc = "ut_nd_fascist_progress_from_events"
+				value = owner.var:ut_nd_fascist_progress_from_events
+			}
+			multiply = {
+				desc = "ut_new_dawn_phase_2_progress_modifier"
+				value = 0.5
+			}	
 		}
 		else = {
 			add = 0
@@ -355,7 +383,8 @@ je_ut_new_dawn_communist_points_bar = {
 	monthly_progress = {
 		if = {
 			limit = {
-				is_player = yes
+				always = yes
+				#is_player = yes
 				#NOT = {
 				#	has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
 				#}
@@ -378,9 +407,13 @@ je_ut_new_dawn_communist_points_bar = {
 				value = owner.var:ut_nd_communist_progress_from_legitimacy
 			}
 			add = {
-				desc = "ut_nd_communist_progress_from_focus"
-				value = owner.var:ut_nd_communist_progress_from_focus
+				desc = "ut_nd_communist_progress_from_events"
+				value = owner.var:ut_nd_communist_progress_from_events
 			}
+			multiply = {
+				desc = "ut_new_dawn_phase_2_progress_modifier"
+				value = 0.5
+			}	
 		}
 		else = {
 			add = 0

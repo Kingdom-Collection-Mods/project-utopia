@@ -147,7 +147,7 @@ STATE_HINGGAN = {
     #unique rare earths mining large
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 30
+        discovered_amount = 30
     }
 }
 
@@ -240,7 +240,7 @@ STATE_OUTER_MANCHURIA = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 8
+        discovered_amount = 8
     }
     resource = {
         type = "bg_oil_extraction"
@@ -652,7 +652,7 @@ STATE_FORMOSA = {
     #unique rare earths mining small
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 20
+        discovered_amount = 20
     }
     naval_exit_id = 3056
 }
@@ -809,7 +809,7 @@ STATE_TONKIN = {
     #unique rare earths mining medium
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 20
+        discovered_amount = 20
     }
     naval_exit_id = 3054
 }
@@ -978,7 +978,7 @@ STATE_HOKKAIDO = {
     }
     resource = {
         type = "bg_rare_earths_mining"
-        undiscovered_amount = 8
+        discovered_amount = 8
     }
     naval_exit_id = 3059
 }

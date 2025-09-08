@@ -128,7 +128,7 @@ pmg_logistics_modern_industry = {
 pmg_logistics_bauxite_mine = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 	production_methods = {
-		pm_road_carts
+		pm_hi_no_logistics
 		pm_hi_rail_logistics
 		pm_hi_individual_logistics
 		pm_hi_connected_logistics
@@ -138,7 +138,7 @@ pmg_logistics_bauxite_mine = {
 pmg_logistics_rare_earths_mine = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 	production_methods = {
-		pm_road_carts
+		pm_hi_no_logistics
 		pm_hi_rail_logistics
 		pm_hi_individual_logistics
 		pm_hi_connected_logistics
@@ -201,5 +201,19 @@ pmg_categories_building_ut_research_institute = {
 		ut_pm_research_institute_production_focus
 		ut_pm_research_institute_military_focus
 		ut_pm_research_institute_society_focus
+	}
+}
+
+pmg_base_building_ut_nuclear_power_plant = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		ut_pm_nuclear_power_plant_one
+	}
+}
+
+pmg_base_building_ut_nuclear_power_plant_construction = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		ut_pm_nuclear_power_plant_construction
 	}
 }
