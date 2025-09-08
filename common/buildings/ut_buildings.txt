@@ -1,4 +1,4 @@
-﻿
+
 building_bauxite_mine = {
 	building_group = bg_bauxite_mining
 	icon = "gfx/interface/icons/building_icons/bauxite_mine.dds"
@@ -480,7 +480,8 @@ building_ut_nuclear_power_plant_construction_site = {
 			NOT = {
 				any_scope_building = {
 					is_building_type = building_ut_nuclear_power_plant_construction_site
-					count > 3
+					count >= 1
+					#count >= 3, adding nuclear power construction slot mod later
 				}
 			}
 		}
