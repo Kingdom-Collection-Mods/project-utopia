@@ -185,15 +185,6 @@ ut_fund_ideology = {
 		}
 
 		requirement_to_maintain = {
-			trigger = {
-				custom_tooltip = {
-					text = "HIGHER_RANK_THAN_TARGET"
-				}
-				scope:source_country.country_rank > scope:target_country.country_rank
-			}
-		}
-
-		requirement_to_maintain = {
 			trigger = { 
 				scope:target_country = {
 					NOT = { ut_new_dawn_has_core_trigger = yes }
