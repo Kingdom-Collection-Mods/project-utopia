@@ -363,6 +363,20 @@ rare_earths_mining_era_digital = {
 	}
 }
 
+rare_earths_mining_era_connected = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/solvent_extraction.dds"
+	category = production
+
+	unlocking_technologies = {	
+		rare_earths_mining_era_digital
+	}
+	
+	ai_weight = {
+		value = 0.5
+	}
+}
+
 #Digitalization
 electronics = {
 	era = era_6

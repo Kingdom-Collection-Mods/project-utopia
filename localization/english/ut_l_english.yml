@@ -120,6 +120,7 @@
  ut_je_nuclear_power_plant_construction_site: "Nuclear Power Plant Construction Site"
  ut_je_nuclear_power_plant_construction_site.success.d: "The site for the nuclear power plant has been successfully selected."
  ut_je_nuclear_power_plant_construction_site.success.f: "The site for the nuclear power plant has been successfully selected. The location is ideal for the construction of a facility that will provide clean and efficient energy for generations to come."
+ ut_nuclear_power_plant_construction_site_mod: "Active Nuclear Power Plant Construction Site"
 
  ut_share_nuclear_power_research: "Share Nuclear Power Research"
  ut_share_nuclear_power_research_name: "Nuclear Power Research"
