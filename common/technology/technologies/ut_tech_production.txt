@@ -1,4 +1,4 @@
-﻿
+
 #Farming Productivity
 machinery_farming = {
 	era = era_6
@@ -156,7 +156,7 @@ bauxite_mining = {
 	}
 	
 	ai_weight = {
-		value = 1
+		value = 2
 	}
 }
 
@@ -229,7 +229,7 @@ heavy_machinery_era_web = {
 	}
 	
 	ai_weight = {
-		value = 1
+		value = 2
 	}
 }
 
@@ -345,7 +345,7 @@ rare_earths_mining_era_analog = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 2
 	}
 }
 
@@ -359,7 +359,7 @@ rare_earths_mining_era_digital = {
 	}
 	
 	ai_weight = {
-		value = 1
+		value = 2
 	}
 }
 
@@ -373,7 +373,7 @@ rare_earths_mining_era_connected = {
 	}
 	
 	ai_weight = {
-		value = 0.5
+		value = 1
 	}
 }
 
@@ -446,7 +446,7 @@ software = {
 	}
 	
 	ai_weight = {
-		value = 1
+		value = 2
 	}
 }
 
@@ -513,7 +513,7 @@ internet = {
 	}
 	
 	ai_weight = {
-		value = 1
+		value = 2
 	}
 }
 
