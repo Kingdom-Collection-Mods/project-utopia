@@ -1,4 +1,4 @@
-
+﻿
 #Farming Productivity
 machinery_farming = {
 	era = era_6
@@ -350,7 +350,7 @@ rare_earths_mining_era_analog = {
 }
 
 rare_earths_mining_era_digital = {
-	era = era_7
+	era = era_6
 	texture = "gfx/interface/icons/invention_icons/solvent_extraction.dds"
 	category = production
 

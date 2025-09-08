@@ -1,4 +1,4 @@
-﻿###Heavy Industry
+###Heavy Industry
 ##Heavy Machinery
 pm_heavy_machinery_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/airship_mooring_post.dds"
@@ -829,7 +829,7 @@ pm_rare_earths_one_mine = {
 			goods_input_tools_add = 5
 			
 			# output goods
-			goods_output_rare_earths_add = 25
+			goods_output_rare_earths_add = 30
 		}
 
 		level_scaled = {
@@ -851,6 +851,7 @@ pm_rare_earths_two_mine = {
 			# input goods
 			goods_input_heavy_machinery_add = 10
 			goods_input_electricity_add = 5
+			goods_input_computers_add = 1
 			
 			# output goods
 			goods_output_rare_earths_add = 90
