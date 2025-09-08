@@ -454,7 +454,7 @@ building_ut_nuclear_power_plant_construction_site = {
 	
 	expandable = no
 
-	downsizeable = no
+	downsizeable = yes
 	
 	unlocking_technologies = {
 		nuclear_power
@@ -480,8 +480,8 @@ building_ut_nuclear_power_plant_construction_site = {
 			NOT = {
 				any_scope_building = {
 					is_building_type = building_ut_nuclear_power_plant_construction_site
-					count >= 1
-					#count >= 3, adding nuclear power construction slot mod later
+					count >= 3
+					#Todo adjust based on nuclear power construction slot mod later
 				}
 			}
 		}
@@ -505,7 +505,7 @@ building_ut_nuclear_power_plant = {
 	
 	expandable = no
 
-	downsizeable = no
+	downsizeable = yes
 
 	production_method_groups = {
 		pmg_base_building_ut_nuclear_power_plant

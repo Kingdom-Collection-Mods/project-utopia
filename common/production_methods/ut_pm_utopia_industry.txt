@@ -1589,11 +1589,11 @@ ut_pm_nuclear_power_plant_one = {
 			goods_input_computers_add = 50
 			goods_input_electronics_add = 100
 			goods_input_heavy_machinery_add = 100
-			goods_input_sulfur_add = 10
-			goods_input_bauxite_add = 10
-			goods_input_lead_add = 20
+			goods_input_sulfur_add = 20
+			goods_input_bauxite_add = 20
+			goods_input_lead_add = 30
 
-			goods_output_electricity_add = 1000
+			goods_output_electricity_add = 2000
 		}
 
 		level_scaled = {
@@ -1608,7 +1608,8 @@ ut_pm_nuclear_power_plant_one = {
 	state_modifiers = {
 		workforce_scaled = {
 			building_group_bg_heavy_industry_throughput_add = 0.02
-			building_group_bg_modern_industry_throughput_add = 0.02
+			building_group_bg_modern_industry_throughput_add = 0.02	
+			state_mortality_mult = 0.01 # Maybe nuclear accidents later
 		}
 	}
 }

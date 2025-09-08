@@ -132,6 +132,7 @@
  ut_share_nuclear_power_research_effects_desc: "REPLACE_ME"
  ut_share_nuclear_power_research_article_short_desc: "REPLACE_ME"
  
+ ut_pm_nuclear_power_plant_one: "Nuclear Power Plant"
 
  ut_research_high_tech_computers: "Research High-Tech Computers"
  ut_research_high_tech_computers_desc: "Start a research initiative into micro chip technologies and replace transistors. These machines will form the basis for modern simulations, industrial automation, and military superiority."

@@ -679,6 +679,9 @@ ut_je_nuclear_power_plant_construction = {
 
 	on_fail = {
 		remove_variable = ut_nuclear_power_plant_location_found_var
+		scope:target = {
+			remove_modifier = ut_nuclear_power_plant_construction_site_mod
+		}
 	}
 
 	on_complete = {
