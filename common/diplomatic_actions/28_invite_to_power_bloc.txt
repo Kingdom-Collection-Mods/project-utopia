@@ -96,6 +96,70 @@ invite_to_power_bloc = {
 				value = -100
 			}
 
+			if = {
+				#Only if has ideology themself
+				limit = {
+					has_modifier = ut_new_dawn_core_democratic_mod
+					has_modifier = ut_new_dawn_core_autocratic_mod
+					has_modifier = ut_new_dawn_core_fascist_mod
+					has_modifier = ut_new_dawn_core_communist_mod
+				}
+				
+				if = {
+					limit = {
+						has_modifier = ut_new_dawn_core_democratic_mod
+						scope:target_country = {
+							has_modifier = ut_new_dawn_core_democratic_mod
+						}
+					}
+					add = {
+						desc = "COUNTRY_IS_DEMOCRATIC"
+						value = 100
+					}
+				}
+				
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								has_modifier = ut_new_dawn_core_democratic_mod
+								scope:target_country = {
+									has_modifier = ut_new_dawn_core_democratic_mod
+								}
+							}
+							AND = {
+								has_modifier = ut_new_dawn_core_autocratic_mod
+								scope:target_country = {
+									has_modifier = ut_new_dawn_core_autocratic_mod
+								}
+							}
+							AND = {
+								has_modifier = ut_new_dawn_core_fascist_mod
+								scope:target_country = {
+									has_modifier = ut_new_dawn_core_fascist_mod
+								}
+							}
+							AND = {
+								has_modifier = ut_new_dawn_core_communist_mod
+								scope:target_country = {
+									has_modifier = ut_new_dawn_core_communist_mod
+								}
+							}
+						}
+					}
+					add = {
+						desc = "UT_BOTH_SAME_IDEOLOGY"
+						value = 100
+					}
+				}
+				else = {
+					add = {
+						desc = "UT_BOTH_DIFFERENT_IDEOLOGY"
+						value = -100
+					}
+				}
+			}
+
 			### Leverage
 			add = {
 				desc = "DIPLOMATIC_ACCEPTANCE_LEVERAGE"
