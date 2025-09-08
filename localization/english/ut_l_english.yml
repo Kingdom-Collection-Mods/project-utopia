@@ -604,7 +604,12 @@
  ut_influence_new_dawn_major_power_desc: "Promote the New Dawn ideology among major powers."
  ut_influence_new_dawn_major_power_unlock_tt: "Unlocks: #v $ut_influence_new_dawn_major_power$#!"
 
-# Diplo
+ UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
+ UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
+ UT_BOTH_DIFFERENT_IDEOLOGY: "Different ideologies"
+ UT_BOTH_DIFFERENT_IDEOLOGY_OF_TARGET: "Both countries must have different ideologies."
+ 
+ # Diplo
  principle_group_modern_trade_league: "Modern Trade League"
  principle_group_modern_sovereign_empire: "Modern Sovereign State"
  principle_group_modern_military_treaty_organization: "Modern Military Treaty Organization"
