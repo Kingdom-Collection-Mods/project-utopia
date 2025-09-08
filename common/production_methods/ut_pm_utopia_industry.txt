@@ -574,11 +574,11 @@ pm_electronics_micro_chips_process = {
 			# input goods
 			goods_input_plastic_add = 10
 			goods_input_explosives_add = 30
-			goods_input_rare_earths_add = 20
+			goods_input_rare_earths_add = 10
 			goods_input_electricity_add = 25
 			
 			# output goods
-			goods_output_electronics_add = 150
+			goods_output_electronics_add = 140
 		}
 
 		level_scaled = {
