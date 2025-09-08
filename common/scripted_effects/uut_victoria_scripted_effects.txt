@@ -123,10 +123,11 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 	}
 	if = {
 		limit = {
+			has_variable = ut_new_dawn_bar_freeze
 			has_modifier = je_ut_new_dawn_communist_focus
 			has_modifier = country_humiliated
 		}
-		change_variable = { name = ut_nd_communist_progress_from_events add = -1 }
+		change_variable = { name = ut_nd_communist_progress_from_events add = -5 }
 	}
 }
  
@@ -219,10 +220,11 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 	
 	if = {
 		limit = {
+			has_variable = ut_new_dawn_bar_freeze
 			has_modifier = je_ut_new_dawn_democrat_focus
 			has_modifier = country_humiliated
 		}
-		change_variable = { name = ut_nd_democrat_progress_from_events add = -1 }
+		change_variable = { name = ut_nd_democrat_progress_from_events add = -5 }
 	}
 }
 
@@ -320,10 +322,11 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 	}
 	if = {
 		limit = {
+			has_variable = ut_new_dawn_bar_freeze
 			has_modifier = je_ut_new_dawn_autocrat_focus
 			has_modifier = country_humiliated
 		}
-		change_variable = { name = ut_nd_autocrat_progress_from_events add = -1 }
+		change_variable = { name = ut_nd_autocrat_progress_from_events add = -5 }
 	}
 }
 
@@ -422,10 +425,11 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 	
 	if = {
 		limit = {
+			has_variable = ut_new_dawn_bar_freeze
 			has_modifier = je_ut_new_dawn_fascist_focus
 			has_modifier = country_humiliated
 		}
-		change_variable = { name = ut_nd_fascist_progress_from_events add = -1 }
+		change_variable = { name = ut_nd_fascist_progress_from_events add = -5 }
 	}
 }
 
