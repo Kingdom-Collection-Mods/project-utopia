@@ -676,8 +676,8 @@ pm_computers_integrated_chips_process  = {
 			goods_input_electricity_add = 20
 			goods_input_plastic_add = 5
 			goods_input_explosives_add = 10
-			goods_input_electronics_add = 60
-			goods_input_rare_earths_add = 5
+			goods_input_electronics_add = 50
+			goods_input_software_add = 5
 			
 			# output goods
 			goods_output_computers_add = 110
@@ -714,7 +714,7 @@ pm_computers_micro_chips_process  = {
 			goods_input_plastic_add = 10
 			goods_input_explosives_add = 10
 			goods_input_electronics_add = 100
-			goods_input_rare_earths_add = 30
+			goods_input_rare_earths_add = 5
 			goods_input_software_add = 30
 
 			
