@@ -46,7 +46,10 @@ ut_new_dawn_fascist_bar = {
 			}
 		}
 		else = {
-			add = -0.5
+			add = {
+				desc = "ut_nd_decaying_progress"
+				value = -0.5
+			}
 		}
 	}
 
@@ -101,8 +104,11 @@ ut_new_dawn_democrat_bar = {
 				multiply = 2
 			}
 		}
-		else = {
-			add = -0.5
+		else = {			
+			add = {
+				desc = "ut_nd_decaying_progress"
+				value = -0.5
+			}
 		}
 	}
 
@@ -158,7 +164,10 @@ ut_new_dawn_communist_bar = {
 			}
 		}
 		else = {
-			add = -0.5
+			add = {
+				desc = "ut_nd_decaying_progress"
+				value = -0.5
+			}
 		}
 	}
 
@@ -213,7 +222,10 @@ ut_new_dawn_autocrat_bar = {
 			}
 		}
 		else = {
-			add = -0.5
+			add = {
+				desc = "ut_nd_decaying_progress"
+				value = -0.5
+			}
 		}
 	}
 

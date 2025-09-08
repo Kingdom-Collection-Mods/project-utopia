@@ -61,6 +61,7 @@ pmg_rare_earths_making_process = {
 	production_methods = {
 		pm_rare_earths_one_mine
 		pm_rare_earths_two_mine
+		pm_rare_earths_three_mine
 	}
 }
 
@@ -121,6 +122,7 @@ pmg_logistics_modern_industry = {
 		pm_hi_no_logistics
 		pm_hi_rail_logistics
 		pm_hi_individual_logistics
+		pm_hi_just_in_time_logistics
 		pm_hi_connected_logistics
 	}
 }
@@ -131,6 +133,7 @@ pmg_logistics_bauxite_mine = {
 		pm_hi_no_logistics
 		pm_hi_rail_logistics
 		pm_hi_individual_logistics
+		pm_hi_just_in_time_logistics
 		pm_hi_connected_logistics
 	}
 }
@@ -141,6 +144,7 @@ pmg_logistics_rare_earths_mine = {
 		pm_hi_no_logistics
 		pm_hi_rail_logistics
 		pm_hi_individual_logistics
+		pm_hi_just_in_time_logistics
 		pm_hi_connected_logistics
 	}
 }

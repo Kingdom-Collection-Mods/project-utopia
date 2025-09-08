@@ -120,6 +120,7 @@
  ut_je_nuclear_power_plant_construction_site: "Nuclear Power Plant Construction Site"
  ut_je_nuclear_power_plant_construction_site.success.d: "The site for the nuclear power plant has been successfully selected."
  ut_je_nuclear_power_plant_construction_site.success.f: "The site for the nuclear power plant has been successfully selected. The location is ideal for the construction of a facility that will provide clean and efficient energy for generations to come."
+ ut_nuclear_power_plant_construction_site_mod: "Active Nuclear Power Plant Construction Site"
 
  ut_share_nuclear_power_research: "Share Nuclear Power Research"
  ut_share_nuclear_power_research_name: "Nuclear Power Research"
@@ -131,6 +132,7 @@
  ut_share_nuclear_power_research_effects_desc: "REPLACE_ME"
  ut_share_nuclear_power_research_article_short_desc: "REPLACE_ME"
  
+ ut_pm_nuclear_power_plant_one: "Nuclear Power Plant"
 
  ut_research_high_tech_computers: "Research High-Tech Computers"
  ut_research_high_tech_computers_desc: "Start a research initiative into micro chip technologies and replace transistors. These machines will form the basis for modern simulations, industrial automation, and military superiority."
@@ -274,6 +276,7 @@
  concept_ut_nd_democrat_characters_desc: "Democratic character ideologies are: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName], [GetIdeology('ideology_utopian').GetName], and [GetIdeology('ut_ideology_cosmopolitan_leader').GetName].\nIf Democrat Focus is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_pacifist').GetName], [GetIdeology('ideology_feminist').GetName], and [GetIdeology('ideology_modernizer_leader').GetName]."
  ut_new_dawn_democrat_status: "Democratic Ideas Shape the Discourse"
  ut_new_dawn_democrat_status_je: "Democratic Ideas Are Taking Root"
+ ut_nd_decaying_progress: "$new_dawn_phase_2_mod$"
 
  je_ut_new_dawn_democratic: "Democratic Awakening"
  je_ut_new_dawn_democratic_reason: "The people demand participation, transparency, and free elections. Across the country, new parties are forming, trade unions are gaining influence, and protests for civil rights are filling the streets. \n Whether this awakening leads to a stable democracy or is crushed by the old elites is now in your hands. Will you allow reform – or try to preserve the old order by any means necessary?"
@@ -327,7 +330,7 @@
  je_ut_new_dawn_outlaw_communists: "Outlaw Communists"
  je_ut_new_dawn_outlaw_communists_desc: "Crack down on leftist movements and ban communist parties.\n\n#italic Historical Context:#!\nOn February 28, 1933, following the Reichstag Fire, the Nazis passed the Reichstag Fire Decree, suspending civil liberties and allowing the arrest of thousands of communists. The KPD (Communist Party of Germany) was soon outlawed, marking the first step in dismantling political opposition."
  je_ut_new_dawn_form_paramilitary_groups: "Paramilitary Groups"
-je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant organizations to enforce party rule.\n\n#italic Historical Context:#!\nThe SA (Sturmabteilung), active since the 1920s, grew into a powerful paramilitary force by the early 1930s, intimidating voters and disrupting opposition meetings. On June 30, 1934, during the Night of the Long Knives, Hitler purged the SA leadership to consolidate power, elevating the more ideologically driven SS (Schutzstaffel)."
+ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant organizations to enforce party rule.\n\n#italic Historical Context:#!\nThe SA (Sturmabteilung), active since the 1920s, grew into a powerful paramilitary force by the early 1930s, intimidating voters and disrupting opposition meetings. On June 30, 1934, during the Night of the Long Knives, Hitler purged the SA leadership to consolidate power, elevating the more ideologically driven SS (Schutzstaffel)."
  je_ut_new_dawn_conformity: "Conformity"
  je_ut_new_dawn_conformity_desc: "Encourage strict social alignment with state ideals.\n\n#italic Historical Context:#!\nStarting in 1933, the Nazis implemented Gleichschaltung (\"coordination\"), a process of aligning all aspects of society—including media, education, culture, and religion—with Nazi ideology. Independent trade unions were banned on May 2, 1933, replaced by the state-run German Labor Front.
  je_ut_new_dawn_unite_heritage: "Unite Heritage"
@@ -693,6 +696,8 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  rare_earths_mining_era_analog_desc: "Monazite sand irradiates miners for magnets in Walkmans. These exotic metals—unassuming, yet irreplaceable—turn mining towns into ghost towns."
  rare_earths_mining_era_digital: "Solvent Extraction"
  rare_earths_mining_era_digital_desc: "Acid baths leach lanthanides from e-waste. Urban mining replaces destructive strip mines—though toxic runoff still seeps into groundwater."
+ rare_earths_mining_era_connected: "Advanced Solvent Extraction"
+ rare_earths_mining_era_connected_desc: "Ionic liquids and supercritical CO2 replace acid baths. Green chemistry promises cleaner extraction—if only the energy balance adds up."
  nuclear_power_research: "Nuclear Research"
  nuclear_power_research_desc: ""
  nuclear_power: "Nuclear Power"
@@ -989,8 +994,9 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  pm_bauxite_steam_powered_mine: "Steam-Powered Bauxite Mine"
  pm_bauxite_heavy_machinery_mine: "Heavy Machinery"
  pm_bauxite_automated_heavy_machinery_mine: "Automated Machinery"
- pm_rare_earths_one_mine: "Basic Rare Earth Mine"
- pm_rare_earths_two_mine: "Advanced Rare Earth Mine"
+ pm_rare_earths_one_mine: "Basic Rare Earth Mining"
+ pm_rare_earths_two_mine: "Advanced Rare Earth Mining"
+ pm_rare_earths_three_mine: "Complex Rare Earth Mining"
 
  pmg_consumer_goods_making_process: "Basic"
  pm_consumer_goods_analog_process: "Simple Production"
@@ -1004,6 +1010,7 @@ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant org
  pm_hi_rail_logistics: "Rail Logistics"
  pm_hi_no_logistics: "No Logistics"
  pm_hi_individual_logistics: "Truck Logistics"
+ pm_hi_just_in_time_logistics: "Just-in-Time Logistics"
  pm_hi_connected_logistics: "Connected Logistics"
 
  ut_pm_research_department: "Social Science Department"
