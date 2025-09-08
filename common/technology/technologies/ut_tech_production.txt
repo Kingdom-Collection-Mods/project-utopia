@@ -557,6 +557,10 @@ trucks_era_analog = {
 		oil_turbine
 		compression_ignition
 	}
+
+	modifier = {
+		building_group_bg_logging_throughput_add = 0.1
+	}
 	
 	ai_weight = {
 		value = 1
@@ -574,6 +578,7 @@ trucks_era_digital = {
 
 	modifier = {
 		goods_output_trucks_mult = 	0.1
+		building_group_bg_logging_throughput_add = 0.1
 	}
 	
 	ai_weight = {
@@ -588,6 +593,10 @@ trucks_era_web = {
 
 	unlocking_technologies = {	
 		trucks_era_digital
+	}
+
+	modifier = {
+		building_group_bg_logging_throughput_add = 0.05
 	}
 	
 	ai_weight = {
