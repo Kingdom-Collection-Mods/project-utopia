@@ -1182,6 +1182,7 @@ pm_hi_connected_logistics = {
 			goods_input_transportation_add = 3
 			goods_input_trucks_add = 3
 			goods_input_merchant_marine_add = 1
+			goods_input_internet_add = 1
 		}
 
 		level_scaled = {

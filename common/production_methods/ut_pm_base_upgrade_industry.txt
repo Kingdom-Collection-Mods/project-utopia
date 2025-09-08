@@ -725,7 +725,7 @@ pm_shopping_district = {
 			goods_input_computers_add = 1
 			goods_input_electricity_add = 1
 			goods_output_services_add = 70
-			goods_output_internet_add = 1
+			goods_output_internet_add = 2
 			goods_output_consumer_goods_add = 2
 		}
 
