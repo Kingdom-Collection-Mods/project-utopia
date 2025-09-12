@@ -292,7 +292,7 @@
  new_dawn_ideology_required_points_tt: "Requires at least #v [SCOPE.ScriptValue('new_dawn_ideology_required_points')] #![concept_ut_nd_progress_points]"
  new_dawn_ideology_required_points_spend_tt: "Consumes #r [SCOPE.ScriptValue('new_dawn_ideology_spend_points')]#! #v #![concept_ut_nd_progress_points] to activate this step"
  new_dawn_ideology_upper_bound_tt: "Has #v [SCOPE.ScriptValue('new_dawn_ideology_upper_bound')] #![concept_ut_nd_progress_points]"
- new_dawn_ideology_action_done_tt: "Has #v not#! completed the action"
+ new_dawn_ideology_milestone_done_tt: "Has #v not#! completed the [Concept('concept_ut_nd_milestones', 'Milestone')]"
 
  je_ut_new_dawn_democratic_cultural_values: "Democratic Cultural Values"
  je_ut_new_dawn_democratic_cultural_values_desc: "A democratic foundation can only thrive on cultural values that respect pluralism and individual freedoms. Leading figures in business and religion are turning toward a more democratic worldview."
@@ -604,7 +604,12 @@
  ut_influence_new_dawn_major_power_desc: "Promote the New Dawn ideology among major powers."
  ut_influence_new_dawn_major_power_unlock_tt: "Unlocks: #v $ut_influence_new_dawn_major_power$#!"
 
-# Diplo
+ UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
+ UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
+ UT_BOTH_DIFFERENT_IDEOLOGY: "Different ideologies"
+ UT_BOTH_DIFFERENT_IDEOLOGY_OF_TARGET: "Both countries must have different ideologies."
+ 
+ # Diplo
  principle_group_modern_trade_league: "Modern Trade League"
  principle_group_modern_sovereign_empire: "Modern Sovereign State"
  principle_group_modern_military_treaty_organization: "Modern Military Treaty Organization"

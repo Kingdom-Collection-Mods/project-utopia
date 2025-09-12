@@ -188,7 +188,7 @@
  new_dawn_ideology_required_points_tt: "Erfordert mindestens #v [SCOPE.ScriptValue('new_dawn_ideology_required_points')] Fortschrittspunkte#!"
  new_dawn_ideology_required_points_spend_tt: "Verbraucht #r [SCOPE.ScriptValue('new_dawn_ideology_spend_points')]#! #v Fortschrittspunkte#!, um diesen Schritt zu aktivieren"
  new_dawn_ideology_upper_bound_tt: "Hat #v [SCOPE.ScriptValue('new_dawn_ideology_upper_bound')] Fortschrittspunkte#!"
- new_dawn_ideology_action_done_tt: "Hat Aktion #v nicht#! abgeschlossen
+ new_dawn_ideology_milestone_done_tt: "Hat Aktion #v nicht#! abgeschlossen
 
  je_ut_new_dawn_democratic_cultural_values: "Demokratische Kulturwerte"
  je_ut_new_dawn_democratic_cultural_values_desc: "Ein demokratisches Fundament kann nur auf kulturellen Werten gedeihen, die Pluralismus und individuelle Freiheiten respektieren. Führende Persönlichkeiten in Wirtschaft und Religion wenden sich einer demokratischeren Weltsicht zu."
