@@ -1145,8 +1145,8 @@
  goods_input_computers_add: "@computers! Computers input"
  goods_input_computers_add_desc: "The amount of @computers! Computers consumed by buildings"
 
- goods_input_aliminum_add: "@aliminum! Aliminum input"
- goods_input_aliminum_add_desc: "The amount of @aliminum! Aliminum consumed by buildings"
+ goods_input_aluminum_add: "@aluminum! aluminum input"
+ goods_input_aluminum_add_desc: "The amount of @aluminum! aluminum consumed by buildings"
 
  goods_input_bauxite_add: "@bauxite! Bauxite input"
  goods_input_bauxite_add_desc: "The amount of @bauxite! Bauxite consumed by buildings"
@@ -1243,6 +1243,6 @@
  ut_tech_preview_cheat_research_modifier: "Forbidden Technologies"
 
 # units modifiers
-unit_combat_unit_type_light_tank_offense_add: "Light Tank Offense"
+unit_combat_unit_type_light_tanks_offense_add: "Light Tank Offense"
 unit_combat_unit_type_motorized_artillery_offense_add: "Motorized Artillery Offense"
 unit_combat_unit_type_modern_submarine_offense_add: "Modern Submarine Offense"

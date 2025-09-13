@@ -14,6 +14,15 @@ goods_input_heavy_machinery_add={
 	}
 }
 
+building_group_bg_modern_industry_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
 building_heavy_machinery_factory_throughput_add={
 	decimals=0
 	color=good
@@ -449,7 +458,7 @@ country_institution_food_safety_max_investment_add={
 	}
 }
 
-unit_combat_unit_type_light_tank_offense_add={
+unit_combat_unit_type_light_tanks_offense_add={
 	decimals=0
 	color=good
 	game_data={
