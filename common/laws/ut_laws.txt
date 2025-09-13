@@ -505,11 +505,11 @@ law_protectionism_union = {
 		state_subvention_export_add = 0.50
 		state_subvention_import_add = 0.50
 
-		power_bloc_cohesion_mult = 0.25
-		power_bloc_trade_advantage_add = 50
+		# todo fix, power bloc mod not possible
+		# power_bloc_cohesion_mult = 0.25
+		# power_bloc_trade_advantage_add = 50
 		country_max_declared_interests_add = 2
-	}
-	
+	}	
 
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
@@ -552,7 +552,8 @@ law_free_trade_union = {
 		state_subvention_import_add = 0.50
 		state_trade_advantage_mult = 0.35
 		country_leverage_generation_mult = 0.2
-		power_bloc_cohesion_add = -5
+		#todo fix, power bloc mod not possible
+		#power_bloc_cohesion_add = -5
 		country_leverage_resistance_mult = -0.25
 		country_max_declared_interests_add = 2
 	}	
