@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -125,6 +125,8 @@ l_english:
  ut_share_nuclear_power_research: "Share Nuclear Power Research"
  ut_share_nuclear_power_research_name: "Nuclear Power Research"
  ut_share_nuclear_power_research_desc: "Share the knowledge and advancements gained from our nuclear power research."
+ ut_share_nuclear_power_research_proposal_notification_name: "Nuclear Power Research Proposal"
+ ut_share_nuclear_power_research_proposal_notification_desc: "A proposal to share nuclear power research has been sent."
  ut_share_nuclear_power_research_proposal_accepted_name: "$ut_share_nuclear_power_research_name$ accepted"
  ut_share_nuclear_power_research_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted $ut_share_nuclear_power_research_name$."
  ut_share_nuclear_power_research_proposal_declined_name: "$ut_share_nuclear_power_research_name$ declined"
@@ -583,25 +585,32 @@ l_english:
  country_institution_epa_max_investment_add: "Max. Investment in [concept_institution] $institution_epa$"
  country_institution_food_safety_max_investment_add: "Max. Investment in [concept_institution] $institution_food_safety$"
 
-#articles
+#Diplo Stuff
  ut_international_diplomatic_power_bloc_merge: "Unify Democratic Blocs"
  ut_international_diplomatic_power_bloc_merge_desc: "A proposal to unify the democratic power blocs. If accepted, all members of the bloc will join our power bloc."
  ut_international_diplomatic_power_bloc_merge_effects_desc: "• An agreement under which all democratic power bloc members join the other bloc. Unlocked through the democratic New Dawn."
  ut_international_diplomatic_power_bloc_merge_points_them: "[TreatyDraft.GetRightCountry.GetName]: Requires at least #v [SCOPE.ScriptValue('new_dawn_ideology_spend_points')] #![concept_ut_nd_progress_points]"
- je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Has #v $je_ut_new_dawn_democrat_focus$#! modifier"
-
  ut_international_diplomatic_power_bloc_merge_name: "$ut_international_diplomatic_power_bloc_merge$"
  ut_international_diplomatic_power_bloc_merge_proposal_accepted_name: "$ut_international_diplomatic_power_bloc_merge_name$ accepted"
  ut_international_diplomatic_power_bloc_merge_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted $ut_international_diplomatic_power_bloc_merge_name$."
  ut_international_diplomatic_power_bloc_merge_proposal_declined_name: "$ut_international_diplomatic_power_bloc_merge_name$ declined"
  ut_international_diplomatic_power_bloc_merge_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected $ut_international_diplomatic_power_bloc_merge_name$."
-
  ut_international_diplomatic_power_bloc_merge_action_name: "Unify Democratic Blocs"
  ut_international_diplomatic_power_bloc_merge_proposal_notification_name: "Unify Democratic Blocs Proposal"
  ut_international_diplomatic_power_bloc_merge_proposal_notification_desc: "A proposal to unify the democratic power blocs has been sent."
+ ut_international_diplomatic_power_bloc_merge_proposal_accepted_name: "$ut_international_diplomatic_power_bloc_merge$ Accepted"
+ ut_international_diplomatic_power_bloc_merge_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our proposal to $ut_international_diplomatic_power_bloc_merge$."
+ ut_international_diplomatic_power_bloc_merge_proposal_declined_name: "$ut_international_diplomatic_power_bloc_merge$ Declined"
+ ut_international_diplomatic_power_bloc_merge_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to $ut_international_diplomatic_power_bloc_merge$."
+
+ je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Has #v $je_ut_new_dawn_democrat_focus$#! modifier"
 
  ut_influence_new_dawn_major_power: "Spread Ideology"
- ut_influence_new_dawn_major_power_desc: "Promote the New Dawn ideology among major powers."
+ ut_influence_new_dawn_major_power_desc: "Promote your ideology among major powers by starting their New Dawn and forcing them to focus on your ideology."
+ ut_influence_new_dawn_major_power_proposal_accepted_name: "$ut_influence_new_dawn_major_power$ Accepted"
+ ut_influence_new_dawn_major_power_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our request to $ut_influence_new_dawn_major_power$."
+ ut_influence_new_dawn_major_power_proposal_declined_name: "$ut_influence_new_dawn_major_power$ Declined"
+ ut_influence_new_dawn_major_power_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our request to $ut_influence_new_dawn_major_power$."
  ut_influence_new_dawn_major_power_unlock_tt: "Unlocks: #v $ut_influence_new_dawn_major_power$#!"
 
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
@@ -639,12 +648,28 @@ l_english:
  ut_foreign_investment_agreement_desc: "A [concept_diplomatic_pact] between two [Concept('concept_country','$concept_countries$')] to establish a Mutual [concept_foreign_investment_rights] Agreement."
 
  ut_fund_ideology: "Fund Ideology"
+ ut_fund_ideology_action_name: "$ut_fund_ideology$"
+ ut_fund_ideology_action_propose_name: "Start $ut_fund_ideology_action_name$"
+ ut_fund_ideology_action_break_name: "Stop $ut_fund_ideology_action_name$"
+ ut_fund_ideology_proposal_notification_name: "$ut_fund_ideology$ Proposal"
+ ut_fund_ideology_proposal_notification_desc: "A proposal to $ut_fund_ideology$ in [TARGET_COUNTRY.GetName] has been sent."
+ ut_fund_ideology_proposal_accepted_name: "$ut_fund_ideology$ Accepted"
+ ut_fund_ideology_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our proposal to $ut_fund_ideology$."
+ ut_fund_ideology_proposal_declined_name: "$ut_fund_ideology$ Declined"
+ ut_fund_ideology_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to $ut_fund_ideology$."
+ ut_fund_ideology_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds aligned political groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], increasing [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] ideological progress in [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAdjectiveNoFormatting]'s ideology.\n\n$ut_fund_ideology_effect$"
  ut_fund_ideology_desc: "Work in progress."
- ut_fund_ideology_effect: "Target country gains 0.25 progress points to your core ideology."
+ ut_fund_ideology_effect: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
+
+
+
  ut_fund_opposition: "Fund Opposition"
+ ut_fund_opposition_action_name: "$ut_fund_opposition$"
+ ut_fund_opposition_action_propose_name: "Start $ut_fund_opposition_action_name$"
+ ut_fund_opposition_action_break_name: "Stop $ut_fund_opposition_action_name$"
  ut_fund_opposition_desc: "Democracies can fund the opposition in Autocratic countries. Work in progress."
- ut_fund_opposition_effect: "Core Ideology loses 50 progress (may abort their journal entry)."
- ut_fund_opposition_pact_desc: "x Chance: $ut_fund_opposition_effect$"
+ ut_fund_opposition_effect: "2% chance per month for their core Ideology to lose #r 25#! [concept_ut_nd_progress_points] (may abort their New Dawn Phase 2 journal entry)."
+ ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds opposition groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], this may lead to revolts in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] opposition groups reducing their ideology [concept_ut_nd_progress_points].\n\n$ut_fund_opposition_effect$"
 # Power Blocs
  principle_common_financial_policy_1: "Common Financial Policy"
  principle_common_financial_policy_2: "Common Financial Policy 2"
