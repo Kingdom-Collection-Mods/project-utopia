@@ -3,6 +3,7 @@
 	production_methods = {
 		default_building_coffee_plantation
 		automatic_irrigation_building_coffee_plantation
+		smart_irrigation_building_coffee_plantation
 	}
 }
 
