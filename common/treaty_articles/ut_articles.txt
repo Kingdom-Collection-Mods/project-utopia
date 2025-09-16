@@ -9,7 +9,6 @@
 
 	flags = {
 		can_be_renegotiated
-		giftable
 		friendly
 	}
 
@@ -647,6 +646,106 @@ ut_democracy_article = {
 	on_break = {
 		scope:withdrawing_country = {
 			change_relations = { country = scope:non_withdrawing_country value = -10 }
+		}
+	}
+
+	#copied from transfer money
+	wargoal = {
+		execution_priority = 21
+
+		contestion_type = control_any_target_incorporated_state
+
+		maneuvers = {
+			value = 0
+
+			add = {
+				desc = "MANEUVERS_BASE_VALUE"
+				value = 2.5
+			}
+
+			if = {
+				limit = {
+					exists = scope:quantity
+				}
+				add = {
+					desc = "MANEUVERS_QUANTITY_FACTOR"
+					value = scope:quantity
+					divide = 1000
+					min = 0
+					max = 50
+				}
+			}
+		}
+
+		infamy = {
+			value = 0
+
+			if = {
+				limit = {
+					exists = scope:quantity
+				}
+				add = {
+					desc = "INFAMY_QUANTITY_FACTOR"
+					value = scope:quantity
+					divide = 1000
+					min = 5
+					max = 50
+				}
+			}
+
+			if = {
+				limit = {
+					any_scope_treaty = {
+						any_scope_article = {
+							has_type = money_transfer
+							target_country = root
+						}
+					}
+				}
+				add = {
+					value = 0
+
+					every_scope_treaty = {
+						limit = {
+							any_scope_article = {
+								has_type = money_transfer
+								target_country = root
+							}
+						}
+						every_scope_article = {
+							limit = {
+								has_type = money_transfer
+								target_country = root
+							}
+
+							desc = "INFAMY_MONEY_TRANSFER_QUANTITY_ROOT_HAS_ALREADY_ESTABLISHED_FACTOR"
+							add = input_quantity
+							divide = 2000
+						}
+					}
+					max = 50
+				}
+			}
+
+			if = {
+				limit = {
+					any_diplomatic_play = {
+						initiator = scope:target_country
+						target = root
+					}
+					exists = scope:quantity
+				}
+				subtract = {
+					add = scope:quantity
+					value = {
+						desc = "INFAMY_TARGET_QUANTITY_DEDUCTION_FACTOR"
+						add = scope:target_country.income
+						multiply = 0.1
+					}
+					divide = 1000
+				}
+				min = 0
+			}
 		}
 	}
 
