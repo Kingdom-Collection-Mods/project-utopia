@@ -9,6 +9,7 @@
  utopia.continue: "Weiter"
  utopia.cheat: "Cheaten"
  utopia.disable: "Deaktivieren"
+ error: "Error" 
 
 # Events & Journals
  ut_heavy_industrial_machinery_je: "Schwermaschinenbau"
@@ -225,6 +226,7 @@
  ut_new_dawn_focus_already_selected_tt: "Fokus nicht bereits ausgewählt"
  ut_new_dawn_focus_freeze_tt: "Fokus nicht deaktiviert"
  ut_new_dawn_focus_tt: "#v +0.5#! Fortschritt pro Monat für ausgewählte Ideologie"
+ country_new_dawn_focus_selected_progress: "Selected Ideology Progress"
 
  je_ut_new_dawn_critical_lower_bound_fail_tt: "Wenn der Grenzwert von #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v Fortschrittspunkten#! unterschritten wird, können Ereignissketten politischen Fortschritt rückgängig machen und schlussendlich einen neuen New Dawn auslösen."
 

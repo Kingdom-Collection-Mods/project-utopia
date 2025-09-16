@@ -9,6 +9,7 @@
  utopia.continue: "Continue"
  utopia.cheat: "Cheat"
  utopia.disable: "Disable"
+ error: "Error" 
 
 # Events & Journals
  ut_heavy_industrial_machinery_je: "Heavy Industrial Machinery"
@@ -125,6 +126,9 @@
  ut_share_nuclear_power_research: "Share Nuclear Power Research"
  ut_share_nuclear_power_research_name: "Nuclear Power Research"
  ut_share_nuclear_power_research_desc: "Share the knowledge and advancements gained from our nuclear power research."
+ ut_share_nuclear_power_research_action_name: "$ut_share_nuclear_power_research_name$"
+ ut_share_nuclear_power_research_action_propose_name: "Propose $ut_share_nuclear_power_research_action_name$"
+ 
  ut_share_nuclear_power_research_proposal_notification_name: "Nuclear Power Research Proposal"
  ut_share_nuclear_power_research_proposal_notification_desc: "A proposal to share nuclear power research has been sent."
  ut_share_nuclear_power_research_proposal_accepted_name: "$ut_share_nuclear_power_research_name$ accepted"
@@ -133,7 +137,7 @@
  ut_share_nuclear_power_research_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected $ut_share_nuclear_power_research_name$."
  ut_share_nuclear_power_research_effects_desc: "REPLACE_ME"
  ut_share_nuclear_power_research_article_short_desc: "REPLACE_ME"
- 
+
  ut_pm_nuclear_power_plant_one: "Nuclear Power Plant"
 
  ut_research_high_tech_computers: "Research High-Tech Computers"
@@ -430,6 +434,11 @@
  state_service_workers_investment_pool_contribution_add_desc: "How much of their profits $service_workers$ will invest."
  state_service_workers_investment_pool_efficiency_mult_desc: "An increase or decrease in the invested profits that $service_workers$ contribute to the [concept_investment_pool]."
  building_employment_service_workers_add: "$service_workers$ Per Level"
+ building_employment_service_workers_add_desc: "Modifies the amount of $service_workers$ a building can hire per level."
+ country_service_workers_voting_power_add: "$service_workers$ [concept_voting_power]"
+ country_service_workers_voting_power_add_desc: "An increase or decrease in the [concept_voting_power] of $service_workers$"
+ building_service_workers_mortality_mult: "$service_workers$ Mortality Multiplier"
+ building_service_workers_mortality_mult_desc: "An increase or decrease in the mortality rate of $service_workers$."
 
  ig_urbanists: "Urbanists"
  ig_urbanists_desc: "Service workers in modern urban environments representing professionals in hospitality, retail, transport, and other sectors of the contemporary economy."
@@ -460,6 +469,7 @@
  ut_ideology_cosmopolitan_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_cosmopolitan_leader').GetName] [concept_ideology]"
 
  ut_ideology_autocratic_leader: "Autocratic"
+ ut_ideology_autocratic_leader_desc: "Autocratic ideologies prioritize strong, centralized authority and order. They often emphasize tradition, hierarchy, and national unity, advocating for limited political freedoms in favor of stability and control."
  ut_ideology_autocratic_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_autocratic_leader').GetName] [concept_ideology]"
  ut_ideology_national_socialist_leader: "National Socialist"
  ut_ideology_national_socialist_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_national_socialist_leader').GetName] [concept_ideology]"
@@ -605,6 +615,10 @@
 
  ut_influence_new_dawn_major_power: "Spread Ideology"
  ut_influence_new_dawn_major_power_desc: "Promote your ideology among major powers by starting their New Dawn and forcing them to focus on your ideology."
+ ut_influence_new_dawn_major_power_action_name: "$ut_influence_new_dawn_major_power$"
+ ut_influence_new_dawn_major_power_action_propose_name: "Start $ut_influence_new_dawn_major_power_action_name$"
+ ut_influence_new_dawn_major_power_proposal_notification_name: "$ut_influence_new_dawn_major_power$ Proposal"
+ ut_influence_new_dawn_major_power_proposal_notification_desc: "A proposal to $ut_influence_new_dawn_major_power$ in [TARGET_COUNTRY.GetName] has been sent."
  ut_influence_new_dawn_major_power_proposal_accepted_name: "$ut_influence_new_dawn_major_power$ Accepted"
  ut_influence_new_dawn_major_power_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our request to $ut_influence_new_dawn_major_power$."
  ut_influence_new_dawn_major_power_proposal_declined_name: "$ut_influence_new_dawn_major_power$ Declined"
@@ -630,6 +644,18 @@
  ut_humiliate_power_bloc_goal_desc: "Humiliate a rival power bloc leader to force them into your bloc."
  ut_research_agreement: "Research Agreement"
  ut_research_agreement_desc: "Advancing together."
+ ut_research_agreement_action_name: "$ut_research_agreement$"
+ ut_research_agreement_action_propose_name: "Propose $ut_research_agreement$"
+ ut_research_agreement_action_propose_desc: "Propose a $ut_research_agreement$ with [TARGET_COUNTRY.GetName]."
+ ut_research_agreement_action_break_name: "[INITIATOR_COUNTRY.GetName] stops $ut_research_agreement$"
+ ut_research_agreement_action_break_desc: "[INITIATOR_COUNTRY.GetName] stopped $ut_research_agreement$."
+ ut_research_agreement_proposal_notification_name: "$ut_research_agreement$ Proposal"
+ ut_research_agreement_proposal_notification_desc: "A proposal to establish a $ut_research_agreement$ with [TARGET_COUNTRY.GetName] has been sent."
+ ut_research_agreement_proposal_accepted_name: "$ut_research_agreement$ Accepted"
+ ut_research_agreement_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our proposal to establish a $ut_research_agreement$."
+ ut_research_agreement_proposal_declined_name: "$ut_research_agreement$ Declined"
+ ut_research_agreement_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to establish a $ut_research_agreement$."
+ has_treaty_ut_research_agreement_with_trigger: "Does not have a $ut_research_agreement$ with [ROOT.GetCountry.GetName]"
 
  ut_democracy_article: "Force democracy"
  ut_democracy_article_desc: "Impose democratic reforms on [TARGET_COUNTRY.GetName] (Requires a new treaty or being enforced)."
@@ -669,20 +695,35 @@
  principle_group_modern_ideological_union: "Modern Ideological Union"
  ut_principle_group_advanced_research: "Advanced Research"
  principle_common_financial_policy_1: "Common Financial Policy"
+ principle_common_financial_policy_1_desc: ""
  principle_common_financial_policy_2: "Common Financial Policy 2"
+ principle_common_financial_policy_2_desc: ""
  principle_common_financial_policy_3: "Common Financial Policy 3"
+ principle_common_financial_policy_3_desc: ""
  principle_commissariat_1: "Commissariat 1"
+ principle_commissariat_1_desc: ""
  principle_commissariat_2: "Commissariat 2"
+ principle_commissariat_2_desc: ""
  principle_commissariat_3: "Commissariat 3"
+ principle_commissariat_3_desc: ""
  ut_principle_military_cooperation_1: "Military Organization 1"
+ ut_principle_military_cooperation_1_desc: ""
  ut_principle_military_cooperation_2: "Military Organization 2"
+ ut_principle_military_cooperation_2_desc: ""
  ut_principle_military_cooperation_3: "Military Organization 3"
+ ut_principle_military_cooperation_3_desc: ""
  ut_modern_ideological_union_1: "Ideology 1"
+ ut_modern_ideological_union_1_desc: ""
  ut_modern_ideological_union_2: "Ideology 2"
+ ut_modern_ideological_union_2_desc: ""
  ut_modern_ideological_union_3: "Ideology 3"
+ ut_modern_ideological_union_3_desc: ""
  ut_principle_advanced_research_4: "Research Initiative 1"
+ ut_principle_advanced_research_4_desc: ""
  ut_principle_advanced_research_5: "Research Initiative 2"
+ ut_principle_advanced_research_5_desc: ""
  ut_principle_advanced_research_6: "Research Initiative 3"
+ ut_principle_advanced_research_6_desc: ""
 
 # Tech Production
  machinery_farming: "Cabin Tractors"
@@ -1195,7 +1236,11 @@
  goods_output_consumer_goods_add: "@consumer_goods! Consumer Goods output"
  goods_output_consumer_goods_add_desc: "The amount of @consumer_goods! Consumer Goods produced by buildings"
 
+ goods_output_trucks_mult: "$trucks$ Goods Output"
+ goods_output_trucks_mult_desc: "A bonus or penalty for the production of $trucks$."
+
  state_highways_max_level_add: "Add Maximum Level for $highways$"
+ state_highways_max_level_add_desc: "Increase the maximum level of $highways$ by 1."
 
 #Companies
  ut_commercial_goods_simple_company: "ElectroNord Appliances Inc."
@@ -1275,6 +1320,9 @@
  ut_tech_preview_cheat_research_modifier: "Forbidden Technologies"
 
 # units modifiers
- unit_combat_unit_type_light_tanks_offense_add: "Light Tank Offense"
- unit_combat_unit_type_motorized_artillery_offense_add: "Motorized Artillery Offense"
- unit_combat_unit_type_modern_submarine_offense_add: "Modern Submarine Offense"
+ unit_combat_unit_type_light_tanks_offense_add: "$combat_unit_type_light_tanks$ $unit_offense_add$"
+ unit_combat_unit_type_light_tanks_offense_add_desc: "$combat_unit_type_light_tanks$ $unit_offense_add$"
+ unit_combat_unit_type_motorized_artillery_offense_add: "$combat_unit_type_motorized_artillery$ $unit_offense_add$"
+ unit_combat_unit_type_motorized_artillery_offense_add_desc: "$combat_unit_type_motorized_artillery$ $unit_offense_add$"
+ unit_combat_unit_type_modern_submarine_offense_add: "$combat_unit_type_modern_submarine$ $unit_offense_add$"
+ unit_combat_unit_type_modern_submarine_offense_add_desc: "$combat_unit_type_modern_submarine$ $unit_offense_add$"
