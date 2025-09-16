@@ -1108,6 +1108,7 @@ event_new_dawn.998 = {
 			has_modifier = ut_new_dawn_focus_recently_changed
 		}
 		remove_modifier = ut_new_dawn_focus_recently_changed
+	}
 }
 
 #Phase 2 Cheat
