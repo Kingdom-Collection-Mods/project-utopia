@@ -391,7 +391,6 @@ ut_influence_new_dawn_major_power = {
 	potential = {
 		scope:target_country = {
 			is_subject = no
-			has_treaty_alliance_with = { TARGET = root }
 			country_rank = rank_value:major_power
 			NOT = { has_journal_entry = je_ut_new_dawn }
 			hidden_trigger = {
@@ -402,6 +401,11 @@ ut_influence_new_dawn_major_power = {
 	
 	possible = {
 		scope:target_country = {
+			custom_tooltip = {
+				text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT
+				scope:target_country.relations:root > relations_threshold:poor
+			}
+
 			pop_type_percent_country = {
 				pop_type = service_workers
 				percent > 0.01
