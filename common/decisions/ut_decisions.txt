@@ -21,6 +21,37 @@
 	}
 }
 
+ut_tech_preview_cheat_new_dawn = {
+	is_shown = {
+		is_player = yes
+		NOT = { has_global_variable = ut_tech_preview_cheat_disable }
+	}
+
+	possible = {
+		is_player = yes
+		NOT = { has_global_variable = ut_tech_preview_cheat_disable }
+	}
+	
+	when_taken = {
+		if = {
+			limit = {
+				ut_new_dawn_has_core_trigger = yes
+			}
+			trigger_event = {
+				id = event_new_dawn.999
+			}
+		}
+		else = {
+			trigger_event = {
+				id = event_new_dawn.998
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
 
 ut_research_institute_found = {
 	is_shown = {

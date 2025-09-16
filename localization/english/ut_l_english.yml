@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -223,6 +223,19 @@
  event_new_dawn.uprising.communist_win: "Communist march on capital"
  event_new_dawn.uprising.democrat_win: "Democrat march on capital"
  event_new_dawn.uprising.autocrat_win: "Autocrat march on capital"
+
+ event_new_dawn.998.cheat: "New Dawn Phase 1 Cheat"
+ event_new_dawn.999.cheat: "New Dawn Phase 2 Cheat"
+ event_new_dawn.cheat.add_new_dawn: "Add #b New Dawn journal entry#!"
+ event_new_dawn.cheat.add_democratic_50: "Add 50 #blue Democratic#! Progress"
+ event_new_dawn.cheat.add_autocratic_50: "Add 50 #blue Autocratic#! Progress"
+ event_new_dawn.cheat.add_fascist_50: "Add 50 #g Fascist#! Progress"
+ event_new_dawn.cheat.add_communist_50: "Add 50 #r Communist#! Progress"
+ event_new_dawn.cheat.remove_democratic_50: "Remove 50 #blue Democratic#! Progress"
+ event_new_dawn.cheat.remove_autocratic_50: "Remove 50 #blue Autocratic#! Progress"
+ event_new_dawn.cheat.remove_fascist_50: "Remove 50 #g Fascist#! Progress"
+ event_new_dawn.cheat.remove_communist_50: "Remove 50 #r Communist#! Progress"
+ event_new_dawn.cheat.remove_focus_recently_changed: "Remove Focus Recently Changed"
 
  ut_new_dawn_status: "New Dawn"
  ut_new_dawn_focus_recently_changed: "Focus recently changed"
