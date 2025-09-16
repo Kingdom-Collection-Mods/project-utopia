@@ -30,13 +30,13 @@ pmg_distillery = {
 	}
 }
 
-pmg_automation_building_food_industry = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
-	production_methods = {
-		pm_manual_dough_processing
-		pm_automated_bakery
-	}
-}
+# pmg_automation_building_food_industry = {
+# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+# 	production_methods = {
+# 		pm_manual_dough_processing
+# 		pm_automated_bakery
+# 	}
+# }
 
 pmg_base_building_textile_mills = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
@@ -134,74 +134,74 @@ pmg_base_building_glassworks = {
 	}
 }
 
-pmg_luxury_building_glassworks = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
-	production_methods = {
-		pm_disabled_ceramics
-		pm_ceramics
-		pm_bone_china
-	}
-}
+# pmg_luxury_building_glassworks = {
+# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+# 	production_methods = {
+# 		pm_disabled_ceramics
+# 		pm_ceramics
+# 		pm_bone_china
+# 	}
+# }
 
-pmg_glassblowing = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
-	production_methods = {
-		pm_manual_glassblowing
-		pm_automatic_bottle_blowers
-	}
-}
+# pmg_glassblowing = {
+# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+# 	production_methods = {
+# 		pm_manual_glassblowing
+# 		pm_automatic_bottle_blowers
+# 	}
+# }
 
-pmg_base_building_paper_mills = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	production_methods = {
-		pm_pulp_pressing
-		pm_sulfite_pulping
-		pm_bleached_paper
-	}
-}
+# pmg_base_building_paper_mills = {
+# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+# 	production_methods = {
+# 		pm_pulp_pressing
+# 		pm_sulfite_pulping
+# 		pm_bleached_paper
+# 	}
+# }
 
-pmg_automation_building_paper_mills = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
-	production_methods = {
-		pm_automation_disabled
-		pm_watertube_boiler_building_paper_mills
-		pm_rotary_valve_engine_building_paper_mills
-	}
-}
+# pmg_automation_building_paper_mills = {
+# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+# 	production_methods = {
+# 		pm_automation_disabled
+# 		pm_watertube_boiler_building_paper_mills
+# 		pm_rotary_valve_engine_building_paper_mills
+# 	}
+# }
 
-pmg_fertilizer_production = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	production_methods = {
-		pm_artificial_fertilizers
-		pm_improved_fertilizer
-		pm_nitrogen_fixation
-	}
-}
+# pmg_fertilizer_production = {
+# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+# 	production_methods = {
+# 		pm_artificial_fertilizers
+# 		pm_improved_fertilizer
+# 		pm_nitrogen_fixation
+# 	}
+# }
 
-pmg_explosives_building_chemical_plants = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	production_methods = {
-		pm_leblanc_process
-		pm_ammonia-soda_process
-		pm_vacuum_evaporation
-		pm_brine_electrolysis
-	}
-}
+# pmg_explosives_building_chemical_plants = {
+# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+# 	production_methods = {
+# 		pm_leblanc_process
+# 		pm_ammonia-soda_process
+# 		pm_vacuum_evaporation
+# 		pm_brine_electrolysis
+# 	}
+# }
 
-pmg_synthetic_dyes = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	production_methods = {
-		pm_dye_production
-	}
-}
+# pmg_synthetic_dyes = {
+# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+# 	production_methods = {
+# 		pm_dye_production
+# 	}
+# }
 
-pmg_synthetic_silk = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
-	production_methods = {
-		pm_no_artificial_fibers
-		pm_rayon
-	}
-}
+# pmg_synthetic_silk = {
+# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+# 	production_methods = {
+# 		pm_no_artificial_fibers
+# 		pm_rayon
+# 	}
+# }
 
 pmg_steelmaking_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
@@ -257,29 +257,29 @@ pmg_automobile_production = {
 }
 
 
-pmg_base_building_shipyards = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	ai_selection = most_productive
+# pmg_base_building_shipyards = {
+# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+# 	ai_selection = most_productive
 
-	production_methods = {
-		pm_basic_shipbuilding
-		pm_complex_shipbuilding
-		pm_metal_shipbuilding
-		pm_arc_welding_shipbuilding
-	}
-}
+# 	production_methods = {
+# 		pm_basic_shipbuilding
+# 		pm_complex_shipbuilding
+# 		pm_metal_shipbuilding
+# 		pm_arc_welding_shipbuilding
+# 	}
+# }
 
-pmg_military_base = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
-	ai_selection = most_productive
+# pmg_military_base = {
+# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+# 	ai_selection = most_productive
 
-	production_methods = {
-		pm_military_shipbuilding_wooden
-		pm_military_shipbuilding_wooden_2
-		pm_military_shipbuilding_steam
-		pm_military_shipbuilding_steam_2
-	}
-}
+# 	production_methods = {
+# 		pm_military_shipbuilding_wooden
+# 		pm_military_shipbuilding_wooden_2
+# 		pm_military_shipbuilding_steam
+# 		pm_military_shipbuilding_steam_2
+# 	}
+# }
 
 pmg_aeroplanes = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
@@ -326,17 +326,17 @@ pmg_radios_category = {
 	}
 }
 
-pmg_firearms_manufacturing = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	ai_selection = most_productive
+# pmg_firearms_manufacturing = {
+# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+# 	ai_selection = most_productive
 
-	production_methods = {
-		pm_muskets
-		pm_rifles
-		pm_repeaters
-		pm_bolt_action_rifles
-	}
-}
+# 	production_methods = {
+# 		pm_muskets
+# 		pm_rifles
+# 		pm_repeaters
+# 		pm_bolt_action_rifles
+# 	}
+# }
 
 pmg_automation_building_arms_industry = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
@@ -348,27 +348,27 @@ pmg_automation_building_arms_industry = {
 	}
 }
 
-pmg_foundries = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	ai_selection = most_productive
+# pmg_foundries = {
+# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+# 	ai_selection = most_productive
 
-	production_methods = {
-		pm_cannons
-		pm_smoothbores
-		pm_breech_loaders
-		pm_recoiled_barrels
-	}
-}
+# 	production_methods = {
+# 		pm_cannons
+# 		pm_smoothbores
+# 		pm_breech_loaders
+# 		pm_recoiled_barrels
+# 	}
+# }
 
-pmg_base_building_munition_plants = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	ai_selection = most_productive
+# pmg_base_building_munition_plants = {
+# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+# 	ai_selection = most_productive
 
-	production_methods = {
-		pm_percussion_caps
-		pm_explosive_shells
-	}
-}
+# 	production_methods = {
+# 		pm_percussion_caps
+# 		pm_explosive_shells
+# 	}
+# }
 
 pmg_automation_building_munition_plants = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
