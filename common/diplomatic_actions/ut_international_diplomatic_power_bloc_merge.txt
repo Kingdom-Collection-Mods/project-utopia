@@ -30,6 +30,19 @@ ut_international_diplomatic_power_bloc_merge = {
 			is_power_bloc_leader = yes
 			has_modifier = ut_new_dawn_core_democratic_mod
 		}
+
+		power_bloc = {
+			leverage_advantage = {
+				target = scope:target_country
+				value >= -200
+			}
+
+			NOT = {
+				any_power_bloc_member = {
+					is_diplomatic_play_enemy_of = scope:target_country
+				}
+			}
+		}
 	}
 	
 	accept_effect = {
