@@ -3,7 +3,7 @@ ut_fund_ideology = {
 	groups= {
 		general
 	}
-	requires_approval = no
+	requires_approval = yes
 	should_notify_third_parties = no
 
 	unlocking_technologies = {
