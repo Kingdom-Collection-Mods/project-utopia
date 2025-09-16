@@ -1,4 +1,4 @@
-﻿
+
 #Farming Productivity
 machinery_farming = {
 	era = era_6
@@ -559,7 +559,7 @@ trucks_era_analog = {
 	}
 
 	modifier = {
-		building_group_bg_logging_throughput_add = 0.1
+		building_group_bg_logging_throughput_add = 0.2
 	}
 	
 	ai_weight = {
@@ -578,7 +578,7 @@ trucks_era_digital = {
 
 	modifier = {
 		goods_output_trucks_mult = 	0.1
-		building_group_bg_logging_throughput_add = 0.1
+		building_group_bg_logging_throughput_add = 0.2
 	}
 	
 	ai_weight = {
@@ -596,7 +596,7 @@ trucks_era_web = {
 	}
 
 	modifier = {
-		building_group_bg_logging_throughput_add = 0.05
+		building_group_bg_logging_throughput_add = 0.1
 	}
 	
 	ai_weight = {
