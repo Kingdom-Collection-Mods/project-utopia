@@ -200,15 +200,6 @@ goods_input_software_add={
 	}
 }
 
-building_software_company_throughput_add={
-	decimals=0
-	color=good
-	percent=yes
-	game_data={
-		ai_value=0
-	}
-}
-
 goods_output_internet_add={
 	decimals=1
 	color=good
@@ -271,22 +262,6 @@ building_commercial_factory_throughput_add={
 	decimals=0
 	color=good
 	percent=yes
-	game_data={
-		ai_value=0
-	}
-}
-
-goods_output_software_add={
-	decimals=1
-	color=good
-	game_data={
-		ai_value=0
-	}
-}
-
-goods_input_software_add={
-	decimals=1
-	color=bad
 	game_data={
 		ai_value=0
 	}
