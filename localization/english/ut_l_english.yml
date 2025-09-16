@@ -1148,42 +1148,52 @@
  prestige_good_generic_software_b2b: "Database Software"
  prestige_good_generic_software_b2c: "Office Software"
 
- goods_input_internet_add: "@internet! Internet input"
- goods_input_internet_add_desc: "The amount of @internet! Internet consumed by buildings"
-
- goods_input_heavy_machinery_add: "@heavy_machinery! Machinery input"
- goods_input_heavy_machinery_add_desc: "The amount of @heavy_machinery! Machinery consumed by buildings"
-
+#goods input output
+ goods_input_heavy_machinery_add: "@heavy_machinery! Heavy Industrial Machinery input"
+ goods_input_heavy_machinery_add_desc: "The amount of @heavy_machinery! Heavy Industrial Machinery consumed by buildings"
  goods_input_plastic_add: "@plastic! Plastic input"
  goods_input_plastic_add_desc: "The amount of @plastic! Plastic consumed by buildings"
-
+ goods_input_electronics_add: "@electronics! Electronics input"
+ goods_input_electronics_add_desc: "The amount of @electronics! Electronics consumed by buildings"
+ goods_input_aluminum_add: "@aluminum! Aluminum input"
+ goods_input_aluminum_add_desc: "The amount of @aluminum! Aluminum consumed by buildings"
+ goods_input_bauxite_add: "@bauxite! Bauxite input"
+ goods_input_bauxite_add_desc: "The amount of @bauxite! Bauxite consumed by buildings"
+ goods_input_rare_earths_add: "@rare_earths! Rare Earths input"
+ goods_input_rare_earths_add_desc: "The amount of @rare_earths! Rare Earths consumed by buildings"
+ goods_input_computers_add: "@computers! Computers input"
+ goods_input_computers_add_desc: "The amount of @computers! Computers consumed by buildings"
+ goods_input_software_add: "@software! Software input"
+ goods_input_software_add_desc: "The amount of @software! Software consumed by buildings"
+ goods_input_internet_add: "@internet! Internet input"
+ goods_input_internet_add_desc: "The amount of @internet! Internet consumed by buildings"
+ goods_input_trucks_add: "@trucks! Trucks input"
+ goods_input_trucks_add_desc: "The amount of @trucks! Trucks consumed by buildings"
  goods_input_consumer_goods_add: "@consumer_goods! Consumer Goods input"
  goods_input_consumer_goods_add_desc: "The amount of @consumer_goods! Consumer Goods consumed by buildings"
 
- goods_input_electronics_add: "@electronics! Electronics input"
- goods_input_electronics_add_desc: "The amount of @electronics! Electronics consumed by buildings"
-
- goods_input_computers_add: "@computers! Computers input"
- goods_input_computers_add_desc: "The amount of @computers! Computers consumed by buildings"
-
- goods_input_aluminum_add: "@aluminum! aluminum input"
- goods_input_aluminum_add_desc: "The amount of @aluminum! aluminum consumed by buildings"
-
- goods_input_bauxite_add: "@bauxite! Bauxite input"
- goods_input_bauxite_add_desc: "The amount of @bauxite! Bauxite consumed by buildings"
-
- goods_input_rare_earths_add: "@rare_earths! Rare Earths input"
- goods_input_rare_earths_add_desc: "The amount of @rare_earths! Rare Earths consumed by buildings"
-
- goods_input_trucks_add: "@trucks! Trucks input"
- goods_input_trucks_add_desc: "The amount of @trucks! Trucks consumed by buildings"
-
- goods_input_software_add: "@software! Software input"
- goods_input_software_add_desc: "The amount of @software! Software consumed by buildings"
-
- goods_output_trucks_add: "@trucks! Trucks Output"
+ goods_output_heavy_machinery_add: "@heavy_machinery! Heavy Industrial Machinery output"
+ goods_output_heavy_machinery_add_desc: "The amount of @heavy_machinery! Heavy Industrial Machinery produced by buildings"
+ goods_output_plastic_add: "@plastic! Plastic output"
+ goods_output_plastic_add_desc: "The amount of @plastic! Plastic produced by buildings"
+ goods_output_electronics_add: "@electronics! Electronics output"
+ goods_output_electronics_add_desc: "The amount of @electronics! Electronics produced by buildings"
+ goods_output_aluminum_add: "@aluminum! Aluminum output"
+ goods_output_aluminum_add_desc: "The amount of @aluminum! Aluminum produced by buildings"
+ goods_output_bauxite_add: "@bauxite! Bauxite output"
+ goods_output_bauxite_add_desc: "The amount of @bauxite! Bauxite produced by buildings"
+ goods_output_rare_earths_add: "@rare_earths! Rare Earths output"
+ goods_output_rare_earths_add_desc: "The amount of @rare_earths! Rare Earths produced by buildings"
+ goods_output_computers_add: "@computers! Computers output"
+ goods_output_computers_add_desc: "The amount of @computers! Computers produced by buildings"
+ goods_output_software_add: "@software! Software output"
+ goods_output_software_add_desc: "The amount of @software! Software produced by buildings"
+ goods_output_internet_add: "@internet! Internet output"
+ goods_output_internet_add_desc: "The amount of @internet! Internet produced by buildings"
+ goods_output_trucks_add: "@trucks! Trucks output"
  goods_output_trucks_add_desc: "The amount of @trucks! Trucks produced by buildings"
- goods_output_trucks_mult: "@trucks! Trucks output"
+ goods_output_consumer_goods_add: "@consumer_goods! Consumer Goods output"
+ goods_output_consumer_goods_add_desc: "The amount of @consumer_goods! Consumer Goods produced by buildings"
 
  state_highways_max_level_add: "Add Maximum Level for $highways$"
 
