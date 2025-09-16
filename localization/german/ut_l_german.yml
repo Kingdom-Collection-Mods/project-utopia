@@ -107,6 +107,35 @@
  ut_je_research_institute_construction: "Forschungsinstitut bauen"
  ut_je_research_institute_construction_reason: ""
 
+ ut_research_nuclear_power: "Research Nuclear Power"
+ ut_research_nuclear_power_desc: "Investigate the potential of nuclear fission as a powerful energy source."
+ ut_je_ut_research_nuclear_power: "Nuclear Power"
+ ut_je_ut_research_nuclear_power_reason: "The discovery of nuclear fission opens the door to a new era of energy production. What once was a theoretical concept becomes reality: controlled nuclear reactions that release immense amounts of energy. This is not just about power generation, but about mastering the atom itself.\nWith sufficient investment, we can lead this revolution—creating a new energy source that will change the world."
+ ut_je_ut_research_nuclear_power_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy)"
+ ut_research_nuclear_power_mod: "Research Nuclear Power"
+ ut_je_nuclear_power_plant_construction: "Nuclear Power Plant Construction"
+ ut_je_nuclear_power_plant_construction_reason: "With the successful research into nuclear power, we are now ready to take the next step."
+ ut_nuclear_power_plant_location: "Nuclear Power Plant Construction"
+ ut_nuclear_power_plant_location_desc: "Select a suitable location for the construction of the nuclear power plant."
+ ut_je_nuclear_power_plant_construction_site: "Nuclear Power Plant Construction Site"
+ ut_je_nuclear_power_plant_construction_site.success.d: "The site for the nuclear power plant has been successfully selected."
+ ut_je_nuclear_power_plant_construction_site.success.f: "The site for the nuclear power plant has been successfully selected. The location is ideal for the construction of a facility that will provide clean and efficient energy for generations to come."
+ ut_nuclear_power_plant_construction_site_mod: "Active Nuclear Power Plant Construction Site"
+
+ ut_share_nuclear_power_research: "Share Nuclear Power Research"
+ ut_share_nuclear_power_research_name: "Nuclear Power Research"
+ ut_share_nuclear_power_research_desc: "Share the knowledge and advancements gained from our nuclear power research."
+ ut_share_nuclear_power_research_proposal_notification_name: "Nuclear Power Research Proposal"
+ ut_share_nuclear_power_research_proposal_notification_desc: "A proposal to share nuclear power research has been sent."
+ ut_share_nuclear_power_research_proposal_accepted_name: "$ut_share_nuclear_power_research_name$ accepted"
+ ut_share_nuclear_power_research_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted $ut_share_nuclear_power_research_name$."
+ ut_share_nuclear_power_research_proposal_declined_name: "$ut_share_nuclear_power_research_name$ declined"
+ ut_share_nuclear_power_research_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected $ut_share_nuclear_power_research_name$."
+ ut_share_nuclear_power_research_effects_desc: "REPLACE_ME"
+ ut_share_nuclear_power_research_article_short_desc: "REPLACE_ME"
+ 
+ ut_pm_nuclear_power_plant_one: "Nuclear Power Plant"
+
  ut_research_high_tech_computers: "Microchips erforschen"
  ut_research_high_tech_computers_desc: "Mit dem Ziel, an der Spitze der technologischen Entwicklung zu bleiben, schlagen führende Wissenschaftler die Gründung eines nationalen Forschungszentrums für Hochleistungscomputer vor."
  ut_je_ut_research_high_tech_computers_research: "Forschung an Hochleistungscomputern"
@@ -127,6 +156,68 @@
  event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
  event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. We must navigate these waters carefully, balancing the demands of the people with the needs of the state. The choices we make now will shape the future of our nation for generations to come."
  event_new_dawn.1.a: "Towards a New Dawn"
+
+ event_new_dawn.2.a: "Build foundation for core ideology"
+ 
+ event_new_dawn.2.d.a: "Our allies in the autocratic faction have moved swiftly to secure power, with support from key institutions. The transition is orderly, though not without opposition."
+ event_new_dawn.2.d.d: "The democratic coalition has taken the reins with a strong mandate. Civil society is energized, and the public seems optimistic—though challenges lie ahead."
+ event_new_dawn.2.d.c: "The communists have gained control, promising radical transformation. Old structures are being dismantled, and the people are called to unite under a new vision."
+ event_new_dawn.2.d.f: "The fascist bloc has assumed leadership, declaring a new era of national strength. Dissent is crushed quickly, and order is imposed through discipline."
+
+
+ event_new_dawn.2.f.a: "An iron grip restores control, though freedom may suffer."
+ event_new_dawn.2.f.d: "Hope rises with the vote—change through consensus."
+ event_new_dawn.2.f.c: "A workers' revolution reshapes the state."
+ event_new_dawn.2.f.f: "The strong lead the way into a purified future."
+
+
+ event_new_dawn.3.t: "March on Capital"
+ event_new_dawn.3.a: "Let them take over"
+ event_new_dawn.3.b: "This ideology must be suppressed"
+
+ event_new_dawn.3.f.a: "The rise of an unaligned autocratic force disrupts the political balance. Their seizure of power was swift, leaving little room for opposition or negotiation."
+ event_new_dawn.3.f.c: "Unexpected communist forces have overthrown the status quo. A radical realignment is underway, shocking much of the establishment."
+ event_new_dawn.3.f.d: "A democratic uprising has succeeded, catching the ruling elites off guard. The new leadership promises reform and transparency."
+ event_new_dawn.3.f.f: "Our fascist leader is marching on our capital, what should we do?"
+
+ event_new_dawn.3.d.a: "The regime fell, and the iron fist moved in swiftly."
+ event_new_dawn.3.d.d: "With protests swelling and rulers faltering, democracy took root in the aftermath."
+ event_new_dawn.3.d.c: "A vanguard emerged from the chaos, seizing the moment to usher in a new workers' state."
+ event_new_dawn.3.d.f: "Order collapsed—only strength could restore the nation's soul."
+
+ event_new_dawn.11.t: "Armed Forces Demand Leadership Change"
+ event_new_dawn.11.f: "Senior military officials, citing the nation's instability, have demanded the resignation of the current leadership. They propose a new figurehead who better aligns with their interests."
+ event_new_dawn.11.d: "When the generals speak, even presidents listen."
+
+ event_new_dawn.democrat_leader: "Appoint a new democratic leader"
+ event_new_dawn.autocrat_leader: "Empower an autocratic figurehead"
+ event_new_dawn.random_decision: "Let the outcome be decided organically"
+ event_new_dawn.suppress_random_decision: "Prevent unintended shifts in leadership"
+
+ event_new_dawn.30.t: "Suppress Dissidents"
+ event_new_dawn.30.d: "A growing faction of dissenters threatens national unity. The government is weighing whether to crack down forcefully to maintain stability."
+ event_new_dawn.30.f: "A growing faction of dissenters threatens national unity. The government is weighing whether to crack down forcefully to maintain stability."
+ event_new_dawn.30.o.self: "We will not tolerate division. Act decisively."
+ event_new_dawn.30_tt: "Select between significantly reducing opposition ideology group's power or strengthening our government to reduce radicals."
+
+ event_new_dawn.30.o.armed_forces: "Suppress the Armed Forces"
+ event_new_dawn.30.o.devout: "Suppress the Devout"
+ event_new_dawn.30.o.industrialists: "Suppress the Industrialists"
+ event_new_dawn.30.o.intelligentsia: "Suppress the Intelligentsia"
+ event_new_dawn.30.o.landowners: "Suppress the Landowners"
+ event_new_dawn.30.o.petty_bourgeoisie: "Suppress the Petit Bourgeoisie"
+ event_new_dawn.30.o.rural_folk: "Suppress the Rural Folk"
+ event_new_dawn.30.o.trade_unions: "Suppress the Trade Unions"
+ event_new_dawn.30.o.urbanists: "Suppress the Urbanists"
+
+ event_new_dawn.uprising.setback_fascist: "Fascist loose progress"
+ event_new_dawn.uprising.setback_communist: "Communist loose progress"
+ event_new_dawn.uprising.setback_democrat: "Democrats loose progress"
+ event_new_dawn.uprising.setback_autocrat: "Autocrats loose progress"
+ event_new_dawn.uprising.fascist_win: "Fascist march on capital"
+ event_new_dawn.uprising.communist_win: "Communist march on capital"
+ event_new_dawn.uprising.democrat_win: "Democrat march on capital"
+ event_new_dawn.uprising.autocrat_win: "Autocrat march on capital"
 
  ut_new_dawn_status: "New Dawn"
  ut_new_dawn_focus_recently_changed: "Fokus kürzlich geändert"
@@ -161,6 +252,18 @@
  je_ut_new_dawn_communist_focus_desc: "Communist focus selected"
 
  ut_new_dawn_democrat_focus: "Demokratischer Fokus"
+ ut_new_dawn_phase_2_progress_modifier: "x0.5"
+
+ ut_new_dawn_core_fascist_mod: "Fascist"
+ je_ut_new_dawn_fascist_mod: "Fascist"
+ ut_new_dawn_core_communist_mod: "Communist"
+ je_ut_new_dawn_communist_mod: "Communist"
+ ut_new_dawn_core_autocratic_mod: "Autocratic"
+ je_ut_new_dawn_autocratic_mod: "Autocratic"
+ ut_new_dawn_core_democratic_mod: "Democratic"
+ je_ut_new_dawn_democratic_mod: "Democratic"
+
+ ut_new_dawn_democrat_focus: "Democratic Focus"
  ut_new_dawn_democrat_focus_desc: ""
  ut_new_dawn_democrat_bar: "Demokratisch"
  ut_new_dawn_democrat_bar_desc: "Demokratischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
@@ -175,11 +278,14 @@
  concept_ut_nd_democrat_characters_desc: "Democratic character ideologies are: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName], [GetIdeology('ideology_utopian').GetName], and [GetIdeology('ut_ideology_cosmopolitan_leader').GetName].\nIf Democrat Focus is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_pacifist').GetName], [GetIdeology('ideology_feminist').GetName], [GetIdeology('ideology_market_liberal').GetName] and [GetIdeology('ideology_modernizer_leader').GetName]."
  ut_new_dawn_democrat_status: "Demokratische Ideen prägen den Diskurs"
  ut_new_dawn_democrat_status_je: "Demokratische Ideen festigen sich"
+ ut_nd_decaying_progress: "$new_dawn_phase_2_mod$"
 
  je_ut_new_dawn_democratic: "Demokratischer Aufbruch"
  je_ut_new_dawn_democratic_reason: "Das Volk fordert Mitsprache, Transparenz und freie Wahlen. Überall im Land bilden sich neue Parteien, Gewerkschaften gewinnen an Einfluss, und Proteste für Bürgerrechte füllen die Straßen. \n Ob dieser Aufbruch in eine stabile Demokratie führt oder im Widerstand der alten Eliten erstickt, liegt nun in deiner Hand. Wirst du Reformen zulassen - oder versuchen, die alte Ordnung mit aller Macht zu bewahren?"
  je_ut_new_dawn_points_bar: "Fortschrittspunkte"
  je_ut_new_dawn_points_bar_desc: "Fortschrittspunkte: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
+ concept_ut_nd_progress_points: "Progress Points"
+ concept_ut_nd_progress_points_desc: "Progress Points represent the advancement of the New Dawn ideology within the nation. They are gained through various actions and can be spent to activate specific steps in the New Dawn focus tree."
 
  je_ut_new_dawn_democratic_complete_condition_tt: "Alle #v Aktionen#! des Journaleintrages sind abgeschlossen"
 
@@ -188,7 +294,7 @@
  new_dawn_ideology_required_points_tt: "Erfordert mindestens #v [SCOPE.ScriptValue('new_dawn_ideology_required_points')] Fortschrittspunkte#!"
  new_dawn_ideology_required_points_spend_tt: "Verbraucht #r [SCOPE.ScriptValue('new_dawn_ideology_spend_points')]#! #v Fortschrittspunkte#!, um diesen Schritt zu aktivieren"
  new_dawn_ideology_upper_bound_tt: "Hat #v [SCOPE.ScriptValue('new_dawn_ideology_upper_bound')] Fortschrittspunkte#!"
- new_dawn_ideology_milestone_done_tt: "Hat Aktion #v nicht#! abgeschlossen
+ new_dawn_ideology_milestone_done_tt: "Hat Aktion #v nicht#! abgeschlossen"
 
  je_ut_new_dawn_democratic_cultural_values: "Demokratische Kulturwerte"
  je_ut_new_dawn_democratic_cultural_values_desc: "Ein demokratisches Fundament kann nur auf kulturellen Werten gedeihen, die Pluralismus und individuelle Freiheiten respektieren. Führende Persönlichkeiten in Wirtschaft und Religion wenden sich einer demokratischeren Weltsicht zu."
@@ -202,6 +308,61 @@
  je_ut_new_dawn_democratic_fair_elections_desc: "Allgemeines Wahlrecht bildet das Rückgrat einer gerechten Gesellschaft. Die Institutionalisierung fairer Wahlen stärkt das Vertrauen der Bevölkerung in die Demokratie."
  je_ut_new_dawn_democratic_fair_elections_tt: "Stärkt die Legitimität des politischen Systems durch transparente und gerechte Wahlen"
  je_ut_new_dawn_democratic_fair_elections_mod: "Faire Wahlen"
+
+ je_ut_new_dawn_democratic_final: "Utopia"
+ je_ut_new_dawn_democratic_final_desc: "The culmination of democratic ideals and practices, leading to a harmonious and just society."
+
+ je_ut_new_dawn_autocratic: "Autocratic System"
+ je_ut_new_dawn_autocratic_reason: "The people demand order, stability, and strong leadership."
+ je_ut_new_dawn_autocratic_complete_condition_tt: "There is no Autocratic Utopia, the entry can not be completed. They have access to repeatable actions instead."
+
+ je_ut_new_dawn_emergency_powers: "Emergency Powers"
+ je_ut_new_dawn_emergency_powers_desc: "In times of crisis, the state must act decisively. Emergency powers allow for rapid response to threats and challenges, but they also risk undermining democratic institutions."
+ je_ut_new_dawn_emergency_powers_mod: "$je_ut_new_dawn_emergency_powers$"
+ je_ut_new_dawn_strengthen_power: "Strengthen Power"
+ je_ut_new_dawn_strengthen_power_desc: "To maintain order and stability, the state must strengthen its power. This can be achieved through various means, including military buildup, propaganda, and suppression of dissent."
+ je_ut_new_dawn_strengthen_power_mod: "$je_ut_new_dawn_strengthen_power$"
+ je_ut_new_dawn_border_dispute: "Border Dispute"
+ je_ut_new_dawn_border_dispute_desc: "Border disputes can lead to tensions and conflicts between nations. It is important to resolve these disputes peacefully and diplomatically, but sometimes military action may be necessary to protect national interests."
+ je_ut_new_dawn_border_dispute_mod: "$je_ut_new_dawn_border_dispute$"
+ je_ut_new_dawn_suppress_dissidents: "Suppress Dissidents"
+ je_ut_new_dawn_suppress_dissidents_desc: "Dissent can undermine the stability of the state and threaten national security. Suppressing dissent is a necessary measure to maintain order and protect the nation from internal threats."
+ je_ut_new_dawn_suppress_dissidents_mod: "$je_ut_new_dawn_suppress_dissidents$"
+ 
+ je_ut_new_dawn_outlaw_communists: "Outlaw Communists"
+ je_ut_new_dawn_outlaw_communists_desc: "Crack down on leftist movements and ban communist parties.\n\n#italic Historical Context:#!\nOn February 28, 1933, following the Reichstag Fire, the Nazis passed the Reichstag Fire Decree, suspending civil liberties and allowing the arrest of thousands of communists. The KPD (Communist Party of Germany) was soon outlawed, marking the first step in dismantling political opposition."
+ je_ut_new_dawn_form_paramilitary_groups: "Paramilitary Groups"
+ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant organizations to enforce party rule.\n\n#italic Historical Context:#!\nThe SA (Sturmabteilung), active since the 1920s, grew into a powerful paramilitary force by the early 1930s, intimidating voters and disrupting opposition meetings. On June 30, 1934, during the Night of the Long Knives, Hitler purged the SA leadership to consolidate power, elevating the more ideologically driven SS (Schutzstaffel)."
+ je_ut_new_dawn_conformity: "Conformity"
+ je_ut_new_dawn_conformity_desc: "Encourage strict social alignment with state ideals.\n\n#italic Historical Context:#!\nStarting in 1933, the Nazis implemented Gleichschaltung (\"coordination\"), a process of aligning all aspects of society—including media, education, culture, and religion—with Nazi ideology. Independent trade unions were banned on May 2, 1933, replaced by the state-run German Labor Front.
+ je_ut_new_dawn_unite_heritage: "Unite Heritage"
+ je_ut_new_dawn_unite_heritage_desc: "Create a shared national identity based on cultural myths and history.\n\n#italic Historical Context:#!\nThe Nazi regime promoted a mythic vision of Germanic history through organizations like the Ahnenerbe (founded in 1935), which spread pseudoscientific racial theories. Nazi education and propaganda glorified a supposed Aryan past to unite the population under an exclusionary, ethnonationalist identity."
+ je_ut_new_dawn_volksgemeinschaft: "Us - not them."
+ je_ut_new_dawn_volksgemeinschaft_desc: "Build a racially defined national community that excludes outsiders.\n\n#italic Historical Context:#!\nThe concept of Volksgemeinschaft (\"people's community\") was used from 1933 onward to promote unity among 'racially pure' Germans. It excluded Jews, Roma, disabled people, and others—setting the foundation for the Nuremberg Laws of 1935, which legalized antisemitism and institutionalized racial segregation.\nThis ideology laid the groundwork for systematic exclusion, culminating in the Holocaust, where over six million Jews, along with other marginalized groups, were murdered in a state-planned genocide."
+ je_ut_new_dawn_expansionism: "Expansionism"
+ je_ut_new_dawn_expansionism_desc: "Pursue territorial growth for national glory and living space.\n\n#italic Historical Context:#!\nDriven by the ideology of Lebensraum (\"living space\"), Nazi Germany annexed Austria in March 1938 (Anschluss), took the Sudetenland in September 1938, and invaded Poland on September 1, 1939, triggering World War II. Expansion was a central pillar of Nazi foreign policy, aimed at conquering Eastern Europe and displacing its populations."
+ je_ut_new_dawn_fascist_final_tt: "[concept_ut_nd_fascist_final_context]: There exists only [ROOT.GetCountry.GetName]"
+ concept_ut_nd_fascist_final_context: "One World, One People"
+ concept_ut_nd_fascist_final_context_desc: "Establish a permanent fascist order under a single ideology and race.\n\n#italic Historical Context:#!\nThe Nazi regime envisioned a “Thousand-Year Reich”—a totalitarian empire led by a single party, unified under a racially defined ideology. This vision drove relentless militarization, propaganda, and genocide, aiming to reshape the world through permanent domination. Though it lasted only 12 years (1933–1945), the regime’s actions left catastrophic global consequences and remain a warning of how ideology can fuel destruction."
+ je_ut_new_dawn_fascist_complete_condition_tt: "All [concept_ut_nd_milestones] complete"
+ concept_ut_nd_milestones: "Milestones" 
+ concept_ut_nd_milestones_desc: "Achievable Milestones"
+ concept_ut_nd_actions: "Actions"
+ concept_ut_nd_actions_desc: "Repeatable Actions"
+ concept_ut_nd_abilities: "Abilities"
+ concept_ut_nd_abilities_desc: "Unique Late Game Abilities"
+
+ je_ut_communist_one_communist_party: "Command Economy"
+ je_ut_communist_a_communist_party: "Cooperative Economy"
+ je_ut_communist_one_block: "Council Republics"
+ je_ut_communist_one_people: "Workers' Unity"
+ je_ut_communist_final: "Classless Society"
+
+ je_ut_new_dawn_fascist: "Fascism"
+ je_ut_new_dawn_fascist_reason: ""
+
+ je_ut_new_dawn_communist: "Communism"
+ je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads"
 
  ut_new_dawn_autocrat_focus: "Autokratischer Fokus (tbd)"
  ut_new_dawn_autocrat_focus_desc: "work in progress"
@@ -218,8 +379,6 @@
  concept_ut_nd_autocrat_characters: "Autokratische Charaktere"
  concept_ut_nd_autocrat_characters_desc: "Autocratic character ideologies are: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], and [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nIf Autocrat Focus is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], [GetIdeology('ideology_positivist').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], and [GetIdeology('ideology_luddite').GetName]."
  ut_new_dawn_autocrat_status: "Autokratische Ideen prägen den Diskurs"
- 
- ut_new_dawn_phase_2_progress_modifier: "x0.5"
 
  concept_ut_nd_fascist_core: "Faschismus"
  concept_ut_nd_fascist_core_desc: "#bold Schalte frei:#!\n - Nationen erobern\n\n[concept_ut_nd_path_to_utopia]: Verwandle dein Volk in eine ... Utopie, durch blinden Gehorsam, Militarismus und die rücksichtslose Unterwerfung aller, die als 'anders' gelten. Erobere die Welt. Schaffe Wohlstand und Einheit für die Einen, auf Kosten der Freiheit und Würde aller Anderen."
@@ -243,7 +402,8 @@
  ut_nd_fascist_progress_from_focus: "Faschistischer Fokus"
  ut_nd_fascist_progress_from_events: "Ereignisse und andere Effekte"
  concept_ut_nd_fascist_characters: "Faschistische Charaktere"
- concept_ut_nd_fascist_characters_desc: "Fascist character ideologies are: [GetIdeology('ideology_ethno_nationalist').GetName] and [GetIdeology('ideology_fascist').GetName].\nIf Fascist Focus is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], and [GetIdeology('ideology_modernizer_leader').GetName]." ut_new_dawn_fascist_status: "Faschistische Ideen prägen den Diskurs"
+ concept_ut_nd_fascist_characters_desc: "Fascist character ideologies are: [GetIdeology('ideology_ethno_nationalist').GetName] and [GetIdeology('ideology_fascist').GetName].\nIf Fascist Focus is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], and [GetIdeology('ideology_modernizer_leader').GetName]."
+ ut_new_dawn_fascist_status: "Faschistische Ideen prägen den Diskurs"
 
  je_ai_radio_researched: "Radio Researched"
  je_ai_radio_researched_reason: "REPLACE_ME"
@@ -291,14 +451,22 @@
  ideology_urbanist_human_rights_base_desc: "Humanistische Ideologien konzentrieren sich auf Gleichheit, soziale Gerechtigkeit und den Schutz der individuellen Rechte. Sie lehnen Sklaverei und Ausbeutung ab und setzen sich für starke soziale Sicherheitsnetze ein."
  ut_ideology_environmentalist_leader: "Ökologistisch"
  ut_ideology_environmentalist_leader_desc: "#lore Environmentalists.#!"
+ ut_ideology_environmentalist_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_environmentalist_leader').GetName] [concept_ideology]"
 
  ut_ideology_cosmopolitan: "Kosmopolitisch"
  ut_ideology_cosmopolitan_desc: "Kosmopolitische Ideologien betonen die globale Zusammenarbeit, kulturelle Vielfalt und die Förderung von Menschenrechten. Sie befürworten offene Grenzen, Multikulturalismus und eine säkulare Regierungsführung ohne religiösen Einfluss."
  ut_ideology_cosmopolitan_leader: "Kosmopolitisch"
  ut_ideology_cosmopolitan_leader_desc: "Kosmopolitische Ideologien betonen die globale Zusammenarbeit, kulturelle Vielfalt und die Förderung von Menschenrechten. Sie befürworten offene Grenzen, Multikulturalismus und eine säkulare Regierungsführung ohne religiösen Einfluss."
- 
+ ut_ideology_cosmopolitan_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_cosmopolitan_leader').GetName] [concept_ideology]"
+
  ut_ideology_autocratic_leader: "Autokratisch"
+ ut_ideology_autocratic_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_autocratic_leader').GetName] [concept_ideology]"
  ut_ideology_national_socialist_leader: "Nationalsozialistisch"
+ ut_ideology_national_socialist_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_national_socialist_leader').GetName] [concept_ideology]"
+
+ ut_ideology_economical_corporatist_leader: "Economical Corporatist"
+ ut_ideology_economical_corporatist_leader_desc: "Economical Corporatist ideologies emphasize the role of the state in managing the economy while maintaining a strong corporate sector. They advocate for collaboration between the government and businesses to achieve economic growth and social stability."
+ ut_ideology_economical_corporatist_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_economical_corporatist_leader').GetName] [concept_ideology]" 
 
  ideology_liberal_democratic: "Liberal-Demokratisch"
  ideology_moralist_democratic: "Moralisch-Demokratisch"
@@ -319,8 +487,21 @@
  ut_movement_humanist_name: "Humanistenbewegung"
  ut_movement_rationalists_name: "Rationalistenbewegung"
 
+ ut_movement_cosmopolitan_unlock_tt: "Unlocks #BOLD Cosmopolitan#! [concept_political_movement]"
+ ut_movement_humanist_unlock_tt: "Unlocks #BOLD Humanist#! [concept_political_movement]"
+ ut_movement_rationalists_unlock_tt: "Unlocks #BOLD Rationalist#! [concept_political_movement]"
+
+ ut_liberal_feminism_leader: "Liberal Feminist"
+ ut_liberal_feminism_leader_unlock_tt: "Unlocks [GetIdeology('ut_liberal_feminism_leader').GetName] [concept_ideology]"
+ ut_radical_feminism_leader: "Radical Feminist"
+ ut_radical_feminism_leader_unlock_tt: "Unlocks [GetIdeology('ut_radical_feminism_leader').GetName] [concept_ideology]"
+ ut_social_feminism_leader: "Social Feminist"
+ ut_social_feminism_leader_unlock_tt: "Unlocks [GetIdeology('ut_social_feminism_leader').GetName] [concept_ideology]"
+
  lawgroup_environment_protection: "Umweltschutz"
+ lawgroup_environment_protection_desc: "Laws and institutions that protect the environment, promote sustainability, and ensure ecological balance."
  lawgroup_food_safety: "Lebensmittelsicherheit"
+ lawgroup_food_safety_desc: "Laws and institutions that ensure food safety, hygiene, and quality standards in food production and distribution."
 
  law_social_market_economy: "Soziale Marktwirtschaft" 
  law_social_market_economy_desc: "Eine regulierte Marktwirtschaft, die freien Wettbewerb mit sozialer Absicherung verbindet, um Wohlstand und gesellschaftlichen Ausgleich zu fördern."
@@ -375,6 +556,26 @@
  law_private_pension_desc: ""
  law_ut_minimum_wage: "Mindestlohn"
  law_ut_minimum_wage_desc: ""
+ law_decolonization: "Decolonization"
+ law_decolonization_desc: "work in progress"
+ law_decolonization_effect_tt: "Every subject will become independent. If you are on the Communist path, they will join your power bloc."
+ law_registration_process: "Qualified Migration"
+ law_registration_process_desc: "work in progress"
+
+ lawgroup_lgbt_rights: "Sexuality - Under Construction"
+ lawgroup_lgbt_rights_desc: "Placeholder"
+ law_mass_surveillance: "Placeholder"
+ law_mass_surveillance_desc: "Placeholder"
+ law_lgbt_rights_0: "Legal Silence"
+ law_lgbt_rights_0_desc: "The law is silent, but expectations are not. Same-sex desire lives in the shadows; some people conform, some live in the closet, others meet discreetly, and families or clergy - not courts do most of the policing."
+ law_lgbt_rights_1: "Criminalized"
+ law_lgbt_rights_1_desc: "The state outlaws same-sex relations and calls it \"Sodomy\". Raids, trials, and blackmail drive communities underground while scandal and fear do the rest."
+ law_lgbt_rights_2: "Decriminalized"
+ law_lgbt_rights_2_desc: "Consenting adults are no longer prosecuted but there is no recognition or safety. Censorship, unequal ages of consent, “public morals” rules keep people cautious and can still lead to violence."
+ law_lgbt_rights_3: "Legal Protection"
+ law_lgbt_rights_3_desc: "The state forbids discrimination and recognizes basic rights. Community life emerges in public, though backlash can flare and real progress depends on further enforcement and cultural progress."
+ law_international_trade: "Placeholder"
+ law_international_trade_desc: "Placeholder"
 
 
  institution_epa: "Umweltschutz"
@@ -382,35 +583,91 @@
  country_institution_epa_max_investment_add: "Max. Investition der [concept_institution] $institution_epa$"
  country_institution_food_safety_max_investment_add: "Max. Investition der [concept_institution] $institution_food_safety$"
 
-#articles
- ut_international_diplomatic_power_bloc_merge: "Diplomatische Blöcke vereinigen"
- ut_international_diplomatic_power_bloc_merge_desc: "REPLACE_ME"
- ut_international_diplomatic_power_bloc_merge_article_short_desc: "REPLACE_ME"
- ut_international_diplomatic_power_bloc_merge_effects_desc: "• Eine Vereinberung, laut der alle demokratischen Machtblockmitglieder dem dem anderen Machtblock beitreten. Freigeschaltet durch demokratischen New Dawn."
- ut_international_diplomatic_power_bloc_merge_short_desc: "Alle Mitglieder des [TARGET_COUNTRY.GetAdjectiveNoFormatting|l]en Blocks tretten dem [SOURCE_COUNTRY.GetAltNameNoFormatting('NOM')|U] Block bei."
- ut_international_diplomatic_power_bloc_merge_points_them: "[TreatyDraft.GetRightCountry.GetName]: Erfordert mindestens #v [SCOPE.ScriptValue('new_dawn_ideology_spend_points')] Fortschrittspunkte#!"
- je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Hat #v $je_ut_new_dawn_democrat_focus$ #!Modifikator"
+#Diplo Stuff
+ ut_international_diplomatic_power_bloc_merge: "Unify Democratic Blocs"
+ ut_international_diplomatic_power_bloc_merge_desc: "A proposal to unify the democratic power blocs. If accepted, all members of the bloc will join our power bloc."
+ ut_international_diplomatic_power_bloc_merge_effects_desc: "• An agreement under which all democratic power bloc members join the other bloc. Unlocked through the democratic New Dawn."
+ ut_international_diplomatic_power_bloc_merge_points_them: "[TreatyDraft.GetRightCountry.GetName]: Requires at least #v [SCOPE.ScriptValue('new_dawn_ideology_spend_points')] #![concept_ut_nd_progress_points]"
+ ut_international_diplomatic_power_bloc_merge_name: "$ut_international_diplomatic_power_bloc_merge$"
+ ut_international_diplomatic_power_bloc_merge_proposal_accepted_name: "$ut_international_diplomatic_power_bloc_merge_name$ accepted"
+ ut_international_diplomatic_power_bloc_merge_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted $ut_international_diplomatic_power_bloc_merge_name$."
+ ut_international_diplomatic_power_bloc_merge_proposal_declined_name: "$ut_international_diplomatic_power_bloc_merge_name$ declined"
+ ut_international_diplomatic_power_bloc_merge_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected $ut_international_diplomatic_power_bloc_merge_name$."
+ ut_international_diplomatic_power_bloc_merge_action_name: "Unify Democratic Blocs"
+ ut_international_diplomatic_power_bloc_merge_proposal_notification_name: "Unify Democratic Blocs Proposal"
+ ut_international_diplomatic_power_bloc_merge_proposal_notification_desc: "A proposal to unify the democratic power blocs has been sent."
+ ut_international_diplomatic_power_bloc_merge_proposal_accepted_name: "$ut_international_diplomatic_power_bloc_merge$ Accepted"
+ ut_international_diplomatic_power_bloc_merge_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our proposal to $ut_international_diplomatic_power_bloc_merge$."
+ ut_international_diplomatic_power_bloc_merge_proposal_declined_name: "$ut_international_diplomatic_power_bloc_merge$ Declined"
+ ut_international_diplomatic_power_bloc_merge_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to $ut_international_diplomatic_power_bloc_merge$."
 
-# Diplo
- principle_group_modern_trade_league: "Moderne Handelsliga"
- principle_group_modern_sovereign_empire: "Moderner Souveräner Staat"
- principle_group_modern_military_treaty_organization: "Moderne Militärbündnisorganisation"
- principle_group_modern_ideological_union: "Moderne Ideologische Union"
- ut_principle_group_advanced_research: "Fortgeschrittene Forschung"
+ je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Has #v $je_ut_new_dawn_democrat_focus$#! modifier"
+
+ ut_influence_new_dawn_major_power: "Spread Ideology"
+ ut_influence_new_dawn_major_power_desc: "Promote your ideology among major powers by starting their New Dawn and forcing them to focus on your ideology."
+ ut_influence_new_dawn_major_power_proposal_accepted_name: "$ut_influence_new_dawn_major_power$ Accepted"
+ ut_influence_new_dawn_major_power_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our request to $ut_influence_new_dawn_major_power$."
+ ut_influence_new_dawn_major_power_proposal_declined_name: "$ut_influence_new_dawn_major_power$ Declined"
+ ut_influence_new_dawn_major_power_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our request to $ut_influence_new_dawn_major_power$."
+ ut_influence_new_dawn_major_power_unlock_tt: "Unlocks: #v $ut_influence_new_dawn_major_power$#!"
+
+ UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
+ UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
+ UT_BOTH_DIFFERENT_IDEOLOGY: "Different ideologies"
+ UT_BOTH_DIFFERENT_IDEOLOGY_OF_TARGET: "Both countries must have different ideologies."
 
  ut_has_truce_with_target: "Hat Waffenstillstand mit [ROOT.GetCountry.GetName]"
  ut_has_no_truce_with_target: "Kein Waffenstillstand mit [ROOT.GetCountry.GetName]"
 
  ut_humiliate_power_bloc_goal: "Machtblock-Anführer demütigen"
- ut_humiliate_power_bloc_goal_desc: "Demütige einen rivalisierten Machtblockanführer um in ihn in dein Machtblock zu zwingen."
- ut_research_agreement: "Forschungsabkommen"
- ut_research_agreement_desc: "Gemeinsam voranschreiten."
+ ut_humiliate_power_bloc_goal_action_name: "Humiliate Power Bloc Leader"
+ ut_humiliate_power_bloc_goal_proposal_accepted_name: "Humiliation Accepted"
+ ut_humiliate_power_bloc_goal_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] has accepted humiliation and will join your power bloc."
+ ut_humiliate_power_bloc_goal_proposal_declined_name: "Humiliation Rejected"
+ ut_humiliate_power_bloc_goal_proposal_declined_desc: "[TARGET_COUNTRY.GetName] has rejected the humiliation demand."
+ ut_humiliate_power_bloc_goal_proposal_notification_name: "Humiliate Power Bloc Leader Proposal"
+ ut_humiliate_power_bloc_goal_proposal_notification_desc: "A proposal to humiliate [TARGET_COUNTRY.GetName] and force them into your power bloc has been sent."
+ ut_humiliate_power_bloc_goal_desc: "Humiliate a rival power bloc leader to force them into your bloc."
+ ut_research_agreement: "Research Agreement"
+ ut_research_agreement_desc: "Advancing together."
+
+ ut_democracy_article: "Force democracy"
+ ut_democracy_article_desc: "Impose democratic reforms on [TARGET_COUNTRY.GetName] (Requires a new treaty or being enforced)."
  
  ut_foreign_investment_agreement: "Mutual Investment Agreement (Block)"
  ut_foreign_investment_agreement_action_name: "Mutual [concept_foreign_investment_rights] Agreement"
  ut_foreign_investment_agreement_desc: "A [concept_diplomatic_pact] between two [Concept('concept_country','$concept_countries$')] to establish a Mutual [concept_foreign_investment_rights] Agreement."
 
+ ut_fund_ideology: "Fund Ideology"
+ ut_fund_ideology_action_name: "$ut_fund_ideology$"
+ ut_fund_ideology_action_propose_name: "Start $ut_fund_ideology_action_name$"
+ ut_fund_ideology_action_break_name: "Stop $ut_fund_ideology_action_name$"
+ ut_fund_ideology_proposal_notification_name: "$ut_fund_ideology$ Proposal"
+ ut_fund_ideology_proposal_notification_desc: "A proposal to $ut_fund_ideology$ in [TARGET_COUNTRY.GetName] has been sent."
+ ut_fund_ideology_proposal_accepted_name: "$ut_fund_ideology$ Accepted"
+ ut_fund_ideology_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our proposal to $ut_fund_ideology$."
+ ut_fund_ideology_proposal_declined_name: "$ut_fund_ideology$ Declined"
+ ut_fund_ideology_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to $ut_fund_ideology$."
+ ut_fund_ideology_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds aligned political groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], increasing [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] ideological progress in [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAdjectiveNoFormatting]'s ideology.\n\n$ut_fund_ideology_effect$"
+ ut_fund_ideology_desc: "Work in progress."
+ ut_fund_ideology_effect: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
+
+
+
+ ut_fund_opposition: "Fund Opposition"
+ ut_fund_opposition_action_name: "$ut_fund_opposition$"
+ ut_fund_opposition_action_propose_name: "Start $ut_fund_opposition_action_name$"
+ ut_fund_opposition_action_break_name: "Stop $ut_fund_opposition_action_name$"
+ ut_fund_opposition_desc: "Democracies can fund the opposition in Autocratic countries. Work in progress."
+ ut_fund_opposition_effect: "2% chance per month for their core Ideology to lose #r 25#! [concept_ut_nd_progress_points] (may abort their New Dawn Phase 2 journal entry)."
+ ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds opposition groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], this may lead to revolts in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] opposition groups reducing their ideology [concept_ut_nd_progress_points].\n\n$ut_fund_opposition_effect$"
+
 #power blocs
+ principle_group_modern_trade_league: "Moderne Handelsliga"
+ principle_group_modern_sovereign_empire: "Moderner Souveräner Staat"
+ principle_group_modern_military_treaty_organization: "Moderne Militärbündnisorganisation"
+ principle_group_modern_ideological_union: "Moderne Ideologische Union"
+ ut_principle_group_advanced_research: "Fortgeschrittene Forschung"
  principle_common_financial_policy_1: "Gemeinsame Finanzpolitik"
  principle_common_financial_policy_2: "Gemeinsame Finanzpolitik 2"
  principle_common_financial_policy_3: "Gemeinsame Finanzpolitik 3"
@@ -428,6 +685,8 @@
  ut_principle_advanced_research_6: "Forschungsinitiative 3"
  
 # Tech Production
+ machinery_farming: "Cabin Tractors"
+ machinery_farming_desc: "Tractors and harvesters replace oxen and scythes. These steel beasts plow fields, sow seeds, and reap crops at unprecedented speed—ushering in the age of mechanized agriculture."
  heavy_machinery_farming: "Großtraktoren"
  heavy_machinery_farming_desc: "Stahlkolosse mit 300-PS-Motoren pflügen Äcker in Rekordzeit. Diese Dieselgiganten ersetzen Ochsenkarren und ermöglichen industrialisierte Monokulturen, während ihre Ballonreifen den Boden für zukünftige Dust Bowls verdichten."
  airplane_farming: "Agrarflugzeuge"
@@ -464,6 +723,8 @@
  rare_earths_mining_era_analog_desc: "Monazitsand verstrahlt Minenarbeiter für Magnete in Walkmans. Diese exotischen Metalle - unscheinbar, doch unersetzlich für Hightech - verwandeln Bergdörfer in Geisterstädte."
  rare_earths_mining_era_digital: "Solventextraktion"
  rare_earths_mining_era_digital_desc: "Säurebäder lösen Lanthanoide aus Elektroschrott. Urban Mining ersetzt zerstörerische Tagebaue - wenn auch mit toxischen Abwässern, die ins Grundwasser sickern."
+ rare_earths_mining_era_connected: "Advanced Solvent Extraction"
+ rare_earths_mining_era_connected_desc: "Ionic liquids and supercritical CO2 replace acid baths. Green chemistry promises cleaner extraction—if only the energy balance adds up."
  nuclear_power_research: "Nuklearforschung"
  nuclear_power_research_desc: ""
  nuclear_power: "Kernkraftwerke"
@@ -662,7 +923,6 @@
  anti_multicultural_globalism_desc: "Gegenbewegungen beschwören ethnokulturelle Homogenität und Souveränität. Grenzzäune wachsen, während Sprachprüfungen und Leitkulturdebatten die Gesellschaft repolarisieren."
  anti_discrimination_laws: "Antidiskriminierungsgesetze"
  anti_discrimination_laws_desc: "Gesetze ahnden Benachteiligung aufgrund von Geschlecht, Hautfarbe oder Glauben. Quotenregelungen erzwingen Diversität in Vorstandsetagen und Parlamentsfraktionen."
- ut_movement_rationalists_unlock_tt: "unlocks $ut_movement_cosmopolitan_name$"
  emancipation_movement: "Emanzipationsbewegung"
  emancipation_movement_desc: ""
  lgbt_movement: "LGBT Bewegung"
@@ -702,6 +962,18 @@
  building_synthetic_oil: "Ölraffinerie"
  building_ut_research_institute: "Forschungsinstitut"
  building_renewable_power_plant: "Erneuerbare Energieanlagen"
+ building_ut_nuclear_power_plant_construction_site: "Nuclear Power Plant Construction Site"
+ building_ut_nuclear_power_plant: "Nuclear Power Plant"
+
+ pmg_base_building_ut_research_institute: "Base"
+ pmg_categories_building_ut_research_institute: "Focus"
+ ut_pm_research_institute_one: "Basic Research Institute"
+ ut_pm_research_institute_two: "Advanced Research Institute"
+ ut_pm_research_institute_three: "Cutting-Edge Research Institute"
+ ut_pm_research_institute_no_focus: "No Focus"
+ ut_pm_research_institute_production_focus: "Production Focus"
+ ut_pm_research_institute_military_focus: "Military Focus"
+ ut_pm_research_institute_society_focus: "Society Focus"
  
  pmg_synthetic_oil_making_process: "Grundwert"
  pmg_bauxite_making_process: "Grundwert"
@@ -749,9 +1021,9 @@
  pm_bauxite_steam_powered_mine: "Dampfbetriebene Bauxit-Mine"
  pm_bauxite_heavy_machinery_mine: "Schwerlastmaschinen"
  pm_bauxite_automated_heavy_machinery_mine: "Automatisierte Maschinen"
- pm_aluminum_one_process: "Aluminiumoxidation"
  pm_rare_earths_one_mine: "Spitzhaken und Schaufeln"
  pm_rare_earths_two_mine: "Solventextration"
+ pm_rare_earths_three_mine: "Complex Rare Earth Mining"
 
  pmg_consumer_goods_making_process: "Grundwert"
  pm_consumer_goods_analog_process: "Einfache Herstellung"
@@ -765,9 +1037,10 @@
  pm_hi_rail_logistics: "Schienenlogistik"
  pm_hi_no_logistics: "Keine Logistik"
  pm_hi_individual_logistics: "LWK Logistik"
+ pm_hi_just_in_time_logistics: "Just-in-Time Logistik"
  pm_hi_connected_logistics: "Vernetzte Logistik"
- 
- ut_pm_research_department: "Social Science Department"
+
+ ut_pm_research_department: "Institut für Sozialwissenschaften"
 
  pm_oil_heavy_machinery_mine: "Schwerlastmaschinen"
  pm_oil_automated_heavy_machinery_mine: "Automatisierte Maschinen"
@@ -780,6 +1053,7 @@
  pm_farms_drone_support_rice: "Drohnen"
  pm_farms_heavy_machinery_support: "Großtraktoren"
  pm_farms_heavy_machinery_support_rice: "Großtraktoren"
+ pm_ut_factory_farming: "Massentierhaltung"
 
  pm_heavy_machinery_building_coal_mine: "Schwerlastmaschinen"
  pm_heavy_machinery_building_iron_mine: "Schwerlastmaschinen"
@@ -794,6 +1068,7 @@
 
  pm_heavy_machinery_textile: "Textilmaschinen"
  pm_plastics_textile: "Kunststofftextilien"
+ pm_aluminum_one_process: "Aluminiumoxidation"
  pm_aluminum_two_process: "Hall-Héroult-Verfahren"
  pm_aluminum_three_process: "Schmelzrecycling"
  pm_aluminum_packaging: "Aluminiumverpackung"
@@ -964,10 +1239,11 @@
  smart_irrigation_building_banana_plantation: "Intelligente Bewässerung"
  smart_irrigation_building_silk_plantation: "Intelligente Bewässerung"
  smart_irrigation_building_vineyard_plantation: "Intelligente Bewässerung"
+ smart_irrigation_building_coffee_plantation: "Intelligente Bewässerung"
 
  agricultural_mechanization: "Schwere Traktoren"
  slow_tech_progress: "Langsamer technischer Fortschritt"
- je_ai_advanced_consumer_goods_researched: "Wave of Technological Spread"
+ je_ai_advanced_consumer_goods_researched: "Welle des technologischen Fortschritts"
  ai_great_power_buff_spread: "Technologischer Einfluss (Großmacht)"
  ai_major_power_buff_spread: "Technologischer Einfluss (Hauptmacht)"
  ai_below_major_power_buff_spread: "Technologischer Einfluss (Sekundärmacht)"
@@ -987,6 +1263,11 @@
  utopia_mod.2.f: "What is progress, if not the mastery of time itself? While others debate ethics and equality, we have pierced the veil of possibility. With this unprecedented surge in innovation, we leapfrog generations of slow, bureaucratic development. Let history judge us — or let there be no history, only the brilliance of tomorrow, written in circuits and steel, not ink and parchment. Utopia is not given. It is taken."
  ut_tech_preview_cheat_disable_tt: "Deactivates the cheat permanently"
  ut_tech_preview_cheat_research_modifier: "Forbidden Technologies"
+
+# units modifiers
+ unit_combat_unit_type_light_tanks_offense_add: "Light Tank Offense"
+ unit_combat_unit_type_motorized_artillery_offense_add: "Motorized Artillery Offense"
+ unit_combat_unit_type_modern_submarine_offense_add: "Modern Submarine Offense"
 
 # Demands
  demand_ban_slavery: "Forderung: Verbots der Sklaverei"

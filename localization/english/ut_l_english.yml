@@ -362,7 +362,7 @@
  je_ut_new_dawn_fascist_reason: ""
 
  je_ut_new_dawn_communist: "Communism"
- je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads
+ je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads"
 
  ut_new_dawn_autocrat_focus: "Autocratic Focus (wip)"
  ut_new_dawn_autocrat_focus_desc: "work in progress"
@@ -403,7 +403,6 @@
  ut_nd_fascist_progress_from_events: "Events and Other Effects"
  concept_ut_nd_fascist_characters: "Fascist Characters"
  concept_ut_nd_fascist_characters_desc: "Fascist character ideologies are: [GetIdeology('ideology_ethno_nationalist').GetName] and [GetIdeology('ideology_fascist').GetName].\nIf Fascist Focus is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], and [GetIdeology('ideology_modernizer_leader').GetName]."
-
  ut_new_dawn_fascist_status: "Fascist Ideas Shape the Discourse"
 
  je_ai_radio_researched: "Radio Researched"
@@ -440,7 +439,6 @@
  interest_group_ig_urbanists_pol_str_mult_desc: "An increase or decrease in the [concept_political_strength] of the [concept_interest_group] \"[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant]\"."
  interest_group_ig_urbanists_approval_add: "[concept_approval] ($ig_variant_urbanists$)"
  interest_group_ig_urbanists_approval_add_desc: "An increase or decrease in the [concept_approval] of the [concept_interest_group] \"[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant]\"."
- 
  interest_group_ig_urbanists_pop_attraction_mult: "$ig_variant_urbanists$ Pop Attraction Multiplier"
  interest_group_ig_urbanists_pop_attraction_mult_desc: "A bonus or deduction on how much Pops are attracted to the [concept_interest_group] \"[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant]\"."
 
@@ -477,6 +475,7 @@
  ideology_jingoist_democratic: "Security-Oriented"
  ideology_socialist_democratic: "Social Democratic"
 
+
  ig_trait_urbanist_loyal: "Prestige Society"
  ig_trait_urbanist_loyal_desc: "This group advocates for the free movement of people across borders, believing it fosters cultural exchange and economic opportunity. They oppose restrictive immigration policies and emphasize international cooperation."
  ig_trait_urbanist_happy: "Access to Education"
@@ -498,7 +497,6 @@
  ut_radical_feminism_leader_unlock_tt: "Unlocks [GetIdeology('ut_radical_feminism_leader').GetName] [concept_ideology]"
  ut_social_feminism_leader: "Social Feminist"
  ut_social_feminism_leader_unlock_tt: "Unlocks [GetIdeology('ut_social_feminism_leader').GetName] [concept_ideology]"
-
 
  lawgroup_environment_protection: "Environmental Protection"
  lawgroup_environment_protection_desc: "Laws and institutions that protect the environment, promote sustainability, and ensure ecological balance."
@@ -617,13 +615,6 @@
  UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
  UT_BOTH_DIFFERENT_IDEOLOGY: "Different ideologies"
  UT_BOTH_DIFFERENT_IDEOLOGY_OF_TARGET: "Both countries must have different ideologies."
- 
- # Diplo
- principle_group_modern_trade_league: "Modern Trade League"
- principle_group_modern_sovereign_empire: "Modern Sovereign State"
- principle_group_modern_military_treaty_organization: "Modern Military Treaty Organization"
- principle_group_modern_ideological_union: "Modern Ideological Union"
- ut_principle_group_advanced_research: "Advanced Research"
 
  ut_has_truce_with_target: "Has truce with [ROOT.GetCountry.GetName]"
  ut_has_no_truce_with_target: "No truce with [ROOT.GetCountry.GetName]"
@@ -670,7 +661,13 @@
  ut_fund_opposition_desc: "Democracies can fund the opposition in Autocratic countries. Work in progress."
  ut_fund_opposition_effect: "2% chance per month for their core Ideology to lose #r 25#! [concept_ut_nd_progress_points] (may abort their New Dawn Phase 2 journal entry)."
  ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds opposition groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], this may lead to revolts in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] opposition groups reducing their ideology [concept_ut_nd_progress_points].\n\n$ut_fund_opposition_effect$"
+
 # Power Blocs
+ principle_group_modern_trade_league: "Modern Trade League"
+ principle_group_modern_sovereign_empire: "Modern Sovereign State"
+ principle_group_modern_military_treaty_organization: "Modern Military Treaty Organization"
+ principle_group_modern_ideological_union: "Modern Ideological Union"
+ ut_principle_group_advanced_research: "Advanced Research"
  principle_common_financial_policy_1: "Common Financial Policy"
  principle_common_financial_policy_2: "Common Financial Policy 2"
  principle_common_financial_policy_3: "Common Financial Policy 3"
@@ -1056,7 +1053,6 @@
  pm_farms_drone_support_rice: "Drones"
  pm_farms_heavy_machinery_support: "Heavy Tractors"
  pm_farms_heavy_machinery_support_rice: "Heavy Tractors"
-
  pm_ut_factory_farming: "Factory Farming"
 
  pm_heavy_machinery_building_coal_mine: "Heavy Machinery"
@@ -1269,6 +1265,6 @@
  ut_tech_preview_cheat_research_modifier: "Forbidden Technologies"
 
 # units modifiers
-unit_combat_unit_type_light_tanks_offense_add: "Light Tank Offense"
-unit_combat_unit_type_motorized_artillery_offense_add: "Motorized Artillery Offense"
-unit_combat_unit_type_modern_submarine_offense_add: "Modern Submarine Offense"
+ unit_combat_unit_type_light_tanks_offense_add: "Light Tank Offense"
+ unit_combat_unit_type_motorized_artillery_offense_add: "Motorized Artillery Offense"
+ unit_combat_unit_type_modern_submarine_offense_add: "Modern Submarine Offense"
