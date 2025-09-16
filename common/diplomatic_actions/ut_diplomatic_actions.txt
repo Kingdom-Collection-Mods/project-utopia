@@ -2,7 +2,7 @@
 	groups= {
 		general
 	}
-	requires_approval = yes
+	requires_approval = no
 	
 	unlocking_technologies = {
 		union_new_mandates
@@ -44,15 +44,6 @@
 	ai = {
 		evaluation_chance = {
 			value = 0.01 # AI shouldn't volunteer into power blocs all that often
-		}		
-	
-		accept_score = {
-			value = 0
-			
-			add = {
-				desc = "DIPLOMATIC_ACCEPTANCE_BASE"
-				value = 100
-			}
 		}
 		
 		will_propose = {  
