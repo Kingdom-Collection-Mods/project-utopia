@@ -874,7 +874,7 @@ je_ut_new_dawn_unite_heritage = {
 			text = je_ut_new_dawn_unite_heritage_trigger_tt
 			NOT = {
 				any_state = {
-					is_homeland_of_country_cultures = SWE
+					is_homeland_of_country_cultures = c:SWE
 					NOT = { owner = root }
 				}
 			}
@@ -1061,8 +1061,10 @@ je_ut_communist_one_block = {
 			}
 		}
 		is_power_bloc_leader = yes
-		any_power_bloc_member = {
-			is_subject_of = root
+		power_bloc ?= {
+			any_power_bloc_member = {
+				is_subject_of = root
+			}
 		}
 	}
 

@@ -225,7 +225,7 @@ smart_irrigation_building_coffee_plantation = {
 	}
 		
 	unlocking_technologies = {
-		drone_farming
+		hybrid_crops
 	}
 	
 	building_modifiers = {
@@ -255,7 +255,7 @@ smart_irrigation_building_cotton_plantation = {
 	}
 		
 	unlocking_technologies = {
-		drone_farming
+		biotechnology
 	}
 	
 	building_modifiers = {
@@ -285,7 +285,7 @@ smart_irrigation_building_dye_plantation = {
 	}
 		
 	unlocking_technologies = {
-		drone_farming
+		biotechnology
 	}
 	
 	building_modifiers = {
@@ -315,7 +315,7 @@ smart_irrigation_building_opium_plantation = {
 	}
 		
 	unlocking_technologies = {
-		drone_farming
+		biotechnology
 	}
 	
 	building_modifiers = {
@@ -346,7 +346,7 @@ smart_irrigation_building_tea_plantation = {
 	}
 		
 	unlocking_technologies = {
-		drone_farming
+		hybrid_crops
 	}
 	
 	building_modifiers = {
@@ -376,7 +376,7 @@ smart_irrigation_building_tobacco_plantation = {
 	}
 		
 	unlocking_technologies = {
-		drone_farming
+		hybrid_crops
 	}
 	
 	building_modifiers = {
@@ -407,7 +407,7 @@ smart_irrigation_building_sugar_plantation = {
 	}
 		
 	unlocking_technologies = {
-		drone_farming
+		hybrid_crops
 	}
 	
 	building_modifiers = {
@@ -437,7 +437,7 @@ smart_irrigation_building_banana_plantation = {
 	}
 		
 	unlocking_technologies = {
-		drone_farming
+		hybrid_crops
 	}
 	
 	building_modifiers = {
@@ -467,7 +467,7 @@ smart_irrigation_building_silk_plantation = {
 	}
 		
 	unlocking_technologies = {
-		drone_farming
+		hybrid_crops
 	}
 	
 	building_modifiers = {
@@ -497,7 +497,7 @@ smart_irrigation_building_vineyard_plantation = {
 	}
 		
 	unlocking_technologies = {
-		drone_farming
+		hybrid_crops
 	}
 	
 	building_modifiers = {

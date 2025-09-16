@@ -339,7 +339,7 @@ ut_tank_composite_armor = {
 	}
 
 	modifier = {
-		unit_combat_unit_type_light_tank_offense_add = 10
+		unit_combat_unit_type_light_tanks_offense_add = 10
     }
 	
 	ai_weight = {

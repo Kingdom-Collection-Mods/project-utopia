@@ -977,6 +977,7 @@ event_new_dawn.30 = {
 	}
 }
 
+#Phase 1 Cheat
 event_new_dawn.998 = {
 	type = country_event
 
@@ -993,15 +994,25 @@ event_new_dawn.998 = {
 
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
-	title = event_new_dawn.999.cheat
-	desc = event_new_dawn.999.cheat
-	flavor = event_new_dawn.999.cheat
+	title = event_new_dawn.998.cheat
+	desc = event_new_dawn.998.cheat
+	flavor = event_new_dawn.998.cheat
 	
 	immediate = {
 	}
 
 	option = {
-		name = event_new_dawn.999.add_new_dawn
+		name = utopia.continue
+		default_option = yes
+	}
+
+	option = {
+		name = event_new_dawn.cheat.add_new_dawn
+		limit = {
+			NOT = {
+				has_journal_entry = je_ut_new_dawn
+			}
+		}
 		set_variable = {
 			name = je_ut_new_dawn_activate_cheat_var
 		}
@@ -1011,87 +1022,96 @@ event_new_dawn.998 = {
 	}
 	
 	option = {
-		name = event_new_dawn.999.add_democratic_50
+		name = event_new_dawn.cheat.add_democratic_50
 		je:je_ut_new_dawn ?= {
 			add_progress = {
 				value = 50
-				name = je_ut_new_dawn_democratic_points_bar
+				name = ut_new_dawn_democrat_bar
 			}
 		}
 	}
 	
 	option = {
-		name = event_new_dawn.999.add_autocratic_50
+		name = event_new_dawn.cheat.add_autocratic_50
 		je:je_ut_new_dawn ?= {
 			add_progress = {
 				value = 50
-				name = je_ut_new_dawn_autocratic_points_bar
+				name = ut_new_dawn_autocrat_bar
 			}
 		}
 	}
 	
 	option = {
-		name = event_new_dawn.999.add_communist_50
+		name = event_new_dawn.cheat.add_communist_50
 		je:je_ut_new_dawn ?= {
 			add_progress = {
 				value = 50
-				name = je_ut_new_dawn_communist_points_bar
+				name = ut_new_dawn_communist_bar
 			}
 		}
 	}
 	
 	option = {
-		name = event_new_dawn.999.add_fascist_50
+		name = event_new_dawn.cheat.add_fascist_50
 		je:je_ut_new_dawn ?= {
 			add_progress = {
 				value = 50
-				name = je_ut_new_dawn_fascist_points_bar
+				name = ut_new_dawn_fascist_bar
 			}
 		}
 	}
 
 	
 	option = {
-		name = event_new_dawn.999.remove_democratic_50
+		name = event_new_dawn.cheat.remove_democratic_50
 		je:je_ut_new_dawn ?= {
 			add_progress = {
 				value = -50
-				name = je_ut_new_dawn_democratic_points_bar
+				name = ut_new_dawn_democrat_bar
 			}
 		}
 	}
 	
 	option = {
-		name = event_new_dawn.999.remove_autocratic_50
+		name = event_new_dawn.cheat.remove_autocratic_50
 		je:je_ut_new_dawn ?= {
 			add_progress = {
 				value = -50
-				name = je_ut_new_dawn_autocratic_points_bar
+				name = ut_new_dawn_autocrat_bar
 			}
 		}
 	}
 	
 	option = {
-		name = event_new_dawn.999.remove_communist_50
+		name = event_new_dawn.cheat.remove_communist_50
 		je:je_ut_new_dawn ?= {
 			add_progress = {
 				value = -50
-				name = je_ut_new_dawn_communist_points_bar
+				name = ut_new_dawn_communist_bar
 			}
 		}
 	}
 	
 	option = {
-		name = event_new_dawn.999.remove_fascist_50
+		name = event_new_dawn.cheat.remove_fascist_50
 		je:je_ut_new_dawn ?= {
 			add_progress = {
 				value = -50
-				name = je_ut_new_dawn_fascist_points_bar
+				name = ut_new_dawn_fascist_bar
 			}
 		}
+	}
+
+	option = {
+		name = event_new_dawn.cheat.remove_focus_recently_changed
+		limit = {
+			has_modifier = ut_new_dawn_focus_recently_changed
+		}
+		remove_modifier = ut_new_dawn_focus_recently_changed
 	}
 }
 
+#Phase 2 Cheat
 event_new_dawn.999 = {
 	type = country_event
 
@@ -1114,37 +1134,17 @@ event_new_dawn.999 = {
 	
 	immediate = {
 	}
+	
 	option = {
-		name = event_new_dawn.999.add_autocratic_je
-		
-		add_journal_entry = {
-			type = je_ut_new_dawn_autocratic
-		}
-	}
-
-	option = {
-		name = event_new_dawn.999.add_democratic_je
-		add_journal_entry = {
-			type = je_ut_new_dawn_democratic
-		}
+		name = utopia.continue
+		default_option = yes
 	}
 	
 	option = {
-		name = event_new_dawn.999.add_communist_je
-		add_journal_entry = {
-			type = je_ut_new_dawn_communist
+		trigger = {
+			has_journal_entry = je_ut_new_dawn_democratic
 		}
-	}
-	
-	option = {
-		name = event_new_dawn.999.add_fascist_je
-		add_journal_entry = {
-			type = je_ut_new_dawn_fascist
-		}
-	}
-	
-	option = {
-		name = event_new_dawn.999.add_democratic_50
+		name = event_new_dawn.cheat.add_democratic_50
 		je:je_ut_new_dawn_democratic ?= {
 			add_progress = {
 				value = 50
@@ -1154,7 +1154,10 @@ event_new_dawn.999 = {
 	}
 	
 	option = {
-		name = event_new_dawn.999.add_autocratic_50
+		name = event_new_dawn.cheat.add_autocratic_50
+		trigger = {
+			has_journal_entry = je_ut_new_dawn_autocratic
+		}
 		je:je_ut_new_dawn_autocratic ?= {
 			add_progress = {
 				value = 50
@@ -1164,7 +1167,10 @@ event_new_dawn.999 = {
 	}
 	
 	option = {
-		name = event_new_dawn.999.add_communist_50
+		name = event_new_dawn.cheat.add_communist_50
+		trigger = {
+			has_journal_entry = je_ut_new_dawn_communist
+		}
 		je:je_ut_new_dawn_communist ?= {
 			add_progress = {
 				value = 50
@@ -1174,7 +1180,10 @@ event_new_dawn.999 = {
 	}
 	
 	option = {
-		name = event_new_dawn.999.add_fascist_50
+		name = event_new_dawn.cheat.add_fascist_50
+		trigger = {
+			has_journal_entry = je_ut_new_dawn_fascist
+		}
 		je:je_ut_new_dawn_fascist ?= {
 			add_progress = {
 				value = 50
@@ -1185,7 +1194,10 @@ event_new_dawn.999 = {
 
 	
 	option = {
-		name = event_new_dawn.999.remove_democratic_50
+		name = event_new_dawn.cheat.remove_democratic_50
+		trigger = {
+			has_journal_entry = je_ut_new_dawn_democratic
+		}
 		je:je_ut_new_dawn_democratic ?= {
 			add_progress = {
 				value = -50
@@ -1195,7 +1207,10 @@ event_new_dawn.999 = {
 	}
 	
 	option = {
-		name = event_new_dawn.999.remove_autocratic_50
+		name = event_new_dawn.cheat.remove_autocratic_50
+		trigger = {
+			has_journal_entry = je_ut_new_dawn_autocratic
+		}
 		je:je_ut_new_dawn_autocratic ?= {
 			add_progress = {
 				value = -50
@@ -1205,7 +1220,10 @@ event_new_dawn.999 = {
 	}
 	
 	option = {
-		name = event_new_dawn.999.remove_communist_50
+		name = event_new_dawn.cheat.remove_communist_50
+		trigger = {
+			has_journal_entry = je_ut_new_dawn_communist
+		}
 		je:je_ut_new_dawn_communist ?= {
 			add_progress = {
 				value = -50
@@ -1215,7 +1233,10 @@ event_new_dawn.999 = {
 	}
 	
 	option = {
-		name = event_new_dawn.999.remove_fascist_50
+		name = event_new_dawn.cheat.remove_fascist_50
+		trigger = {
+			has_journal_entry = je_ut_new_dawn_fascist
+		}
 		je:je_ut_new_dawn_fascist ?= {
 			add_progress = {
 				value = -50

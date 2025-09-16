@@ -82,6 +82,25 @@ chemistry = {
 	}
 }
 
+high_yield_crops = {
+	
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/high_yield_crops.dds"
+	category = production
+
+	modifier = {
+		building_group_bg_plantations_throughput_add = 0.1
+	}
+
+	unlocking_technologies = {	
+		chemistry
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
 hybrid_crops = {
 	
 	era = era_7
@@ -94,26 +113,7 @@ hybrid_crops = {
 	}
 
 	unlocking_technologies = {	
-		chemistry
-	}
-	
-	ai_weight = {
-		value = 1
-	}
-}
-
-high_yield_crops = {
-	
-	era = era_7
-	texture = "gfx/interface/icons/invention_icons/high_yield_crops.dds"
-	category = production
-
-	modifier = {
-		building_group_bg_plantations_throughput_add = 0.1
-	}
-
-	unlocking_technologies = {	
-		hybrid_crops
+		high_yield_crops
 	}
 	
 	ai_weight = {
@@ -133,7 +133,7 @@ biotechnology = {
 	}
 
 	unlocking_technologies = {	
-		high_yield_crops
+		hybrid_crops
 	}
 	
 	ai_weight = {
@@ -559,7 +559,7 @@ trucks_era_analog = {
 	}
 
 	modifier = {
-		building_group_bg_logging_throughput_add = 0.1
+		building_group_bg_logging_throughput_add = 0.2
 	}
 	
 	ai_weight = {
@@ -578,7 +578,7 @@ trucks_era_digital = {
 
 	modifier = {
 		goods_output_trucks_mult = 	0.1
-		building_group_bg_logging_throughput_add = 0.1
+		building_group_bg_logging_throughput_add = 0.2
 	}
 	
 	ai_weight = {
@@ -596,7 +596,7 @@ trucks_era_web = {
 	}
 
 	modifier = {
-		building_group_bg_logging_throughput_add = 0.05
+		building_group_bg_logging_throughput_add = 0.1
 	}
 	
 	ai_weight = {

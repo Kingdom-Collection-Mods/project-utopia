@@ -9,7 +9,6 @@
 
 	flags = {
 		can_be_renegotiated
-		giftable
 		friendly
 	}
 
@@ -181,25 +180,25 @@
 					OR = {
 						AND = {
 							has_modifier = ut_new_dawn_core_democratic_mod
-							scope:other_country = {
+							scope:second_country = {
 								has_modifier = ut_new_dawn_core_democratic_mod
 							}
 						}
 						AND = {
 							has_modifier = ut_new_dawn_core_autocratic_mod
-							scope:other_country = {
+							scope:second_country = {
 								has_modifier = ut_new_dawn_core_autocratic_mod
 							}
 						}
 						AND = {
 							has_modifier = ut_new_dawn_core_fascist_mod
-							scope:other_country = {
+							scope:second_country = {
 								has_modifier = ut_new_dawn_core_fascist_mod
 							}
 						}
 						AND = {
 							has_modifier = ut_new_dawn_core_communist_mod
-							scope:other_country = {
+							scope:second_country = {
 								has_modifier = ut_new_dawn_core_communist_mod
 							}
 						}
@@ -229,7 +228,7 @@
 				scope:source_country = {
 					save_temporary_scope_as = target
 				}
-				scope:target_country = {
+				scope:second_country = {
 					save_temporary_scope_as = actor
 				}
 
@@ -241,12 +240,12 @@
 				### Leverage
 				add = {
 					desc = "DIPLOMATIC_ACCEPTANCE_LEVERAGE"
-					value = "scope:target_country.power_bloc.leverage_advantage(scope:source_country)"
+					value = "scope:second_country.power_bloc.leverage_advantage(scope:source_country)"
 					multiply = 0.5
 
 					### Leverage effect when already part of the bloc can go into negative, to help determine if they want to leave
 					if = {
-						limit = { is_in_same_power_bloc = scope:target_country	}
+						limit = { is_in_same_power_bloc = scope:second_country	}
 						min = -200
 					}
 					else = {
@@ -283,59 +282,59 @@
 				### Cohesion
 				add = {
 					desc = "DIPLOMATIC_ACCEPTANCE_COHESION"
-					value = "scope:target_country.power_bloc.current_cohesion_number"
+					value = "scope:second_country.power_bloc.current_cohesion_number"
 					subtract = 50
 
 					### Low cohesion is more impactful than high cohesion
 					if = {
-						limit = { scope:target_country.power_bloc ?= { current_cohesion_number < 20 } }
+						limit = { scope:second_country.power_bloc ?= { current_cohesion_number < 20 } }
 						multiply = 4
 					}
 					else_if = {
-						limit = { scope:target_country.power_bloc ?= { current_cohesion_number < 40 } }
+						limit = { scope:second_country.power_bloc ?= { current_cohesion_number < 40 } }
 						multiply = 2
 					}
 
 					### Care more about cohesion when part of bloc
 					if = {
-						limit = { is_in_same_power_bloc = scope:target_country }
+						limit = { is_in_same_power_bloc = scope:second_country }
 						multiply = 2
 					}
 				}
 
 				if = {
 					limit = {
-						scope:target_country.country_rank > rank_value:insignificant_power
+						scope:second_country.country_rank > rank_value:insignificant_power
 					}
 					add = {
 						desc = "DIPLOMATIC_ACCEPTANCE_IDENTITY_AFFINITY_TO_RANK"
 						if = {
 							limit = {
-								scope:target_country.country_rank = rank_value:great_power
+								scope:second_country.country_rank = rank_value:great_power
 							}
 							add = modifier:power_bloc_invite_acceptance_great_power_add
 						}
 						else_if = {
 							limit = {
-								scope:target_country.country_rank = rank_value:major_power
+								scope:second_country.country_rank = rank_value:major_power
 							}
 							add = modifier:power_bloc_invite_acceptance_major_power_add
 						}
 						else_if = {
 							limit = {
-								scope:target_country.country_rank = rank_value:minor_power
+								scope:second_country.country_rank = rank_value:minor_power
 							}
 							add = modifier:power_bloc_invite_acceptance_minor_power_add
 						}
 						else_if = {
 							limit = {
-								scope:target_country.country_rank = rank_value:unrecognized_major_power
+								scope:second_country.country_rank = rank_value:unrecognized_major_power
 							}
 							add = modifier:power_bloc_invite_acceptance_unrecognized_major_power_add
 						}
 						else_if = {
 							limit = {
-								scope:target_country.country_rank = rank_value:unrecognized_regional_power
+								scope:second_country.country_rank = rank_value:unrecognized_regional_power
 							}
 							add = modifier:power_bloc_invite_acceptance_unrecognized_regional_power_add
 						}
@@ -344,16 +343,17 @@
 
 				add = {
 					desc = "DIPLOMATIC_ACCEPTANCE_FROM_IDENTITY"
-					scope:target_country.power_bloc = {
+					scope:second_country.power_bloc = {
 						add = modifier:power_bloc_invite_acceptance_add
 					}
 				}
 
 				### How the selected identity fits them
-				add = ai_power_bloc_identity_score_treaties
+				# does not work in mutual treaty
+				# add = ai_power_bloc_identity_score_treaties
 
 				### Similar to identities but considers selected principles
-				add = ai_power_bloc_principle_score_treaties
+				# add = ai_power_bloc_principle_score_treaties
 
 				# Ideological opinion is always a factor, but much weaker for non ideological unions
 				# Score for ideological unions is handled in ai_power_bloc_identity_score script value
@@ -365,7 +365,7 @@
 					}
 					add = {
 						desc = "DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION"
-						value = "scope:target_country.ai_ideological_opinion(scope:source_country)"
+						value = "scope:second_country.ai_ideological_opinion(scope:source_country)"
 						multiply = 0.25
 						max = 10
 						min = -25
@@ -375,7 +375,7 @@
 				### Powerful Protectors is always a factor, but less so if not being invited to a sovereign empire
 				if = {
 					limit = {
-						scope:target_country.power_bloc ?= {
+						scope:second_country.power_bloc ?= {
 							NOT = { has_identity = identity:identity_sovereign_empire }
 						}
 						has_powerful_protectors = {
@@ -391,7 +391,7 @@
 				### Relative rank
 				add = {
 					desc = "DIPLOMATIC_ACCEPTANCE_RANK"
-					value = scope:target_country.country_rank
+					value = scope:second_country.country_rank
 					subtract = 2
 					subtract = country_rank
 					multiply = 5
@@ -418,15 +418,15 @@
 						limit = {
 							OR = {
 								has_attitude = {
-									who = scope:target_country
+									who = scope:second_country
 									attitude = antagonistic
 								}
 								has_attitude = {
-									who = scope:target_country
+									who = scope:second_country
 									attitude = domineering
 								}
 								has_attitude = {
-									who = scope:target_country
+									who = scope:second_country
 									attitude = belligerent
 								}
 							}
@@ -439,7 +439,7 @@
 				scope:source_country = {
 					save_temporary_scope_as = actor
 				}
-				scope:target_country = {
+				scope:second_country = {
 					save_temporary_scope_as = target
 				}
 
@@ -483,19 +483,19 @@
 				}
 
 				### How we fit their selected identity
-				add = ai_accept_join_request_score_treaties
+				# add = ai_accept_join_request_score_treaties
 
 				# Ideological opinion is always a factor, but much weaker for non ideological unions
 				# Score for ideological unions is handled in ai_accept_join_request_score script value
 				if = {
 					limit = {
-						scope:target_country.power_bloc ?= {
+						scope:second_country.power_bloc ?= {
 							NOT = { has_identity = identity:identity_ideological_union }
 						}
 					}
 					add = {
 						desc = "DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION"
-						value = "scope:source_country.ai_ideological_opinion(scope:target_country)"
+						value = "scope:source_country.ai_ideological_opinion(scope:second_country)"
 						multiply = 0.25
 						max = 10
 						min = -25
@@ -539,7 +539,7 @@
 				}
 				if = {
 					limit = {
-						scope:other_country = {
+						scope:second_country = {
 							has_variable = pro_lobby_proposal_alliance
 							var:pro_lobby_opportunity_target ?= root
 						}
@@ -552,7 +552,7 @@
 
 				if = {
 					limit = {
-						scope:other_country = {
+						scope:second_country = {
 							has_variable = anti_lobby_proposal_alliance
 							var:anti_lobby_opportunity_target ?= root
 						}
@@ -566,7 +566,7 @@
 			else = {
 				if = {
 					limit = {
-						scope:other_country = {
+						scope:second_country = {
 							has_variable = pro_lobby_proposal_alliance
 							var:pro_lobby_opportunity_target ?= root
 						}
@@ -579,7 +579,7 @@
 
 				if = {
 					limit = {
-						scope:other_country = {
+						scope:second_country = {
 							has_variable = anti_lobby_proposal_alliance
 							var:anti_lobby_opportunity_target ?= root
 						}
@@ -646,6 +646,106 @@ ut_democracy_article = {
 	on_break = {
 		scope:withdrawing_country = {
 			change_relations = { country = scope:non_withdrawing_country value = -10 }
+		}
+	}
+
+	#copied from transfer money
+	wargoal = {
+		execution_priority = 21
+
+		contestion_type = control_any_target_incorporated_state
+
+		maneuvers = {
+			value = 0
+
+			add = {
+				desc = "MANEUVERS_BASE_VALUE"
+				value = 2.5
+			}
+
+			if = {
+				limit = {
+					exists = scope:quantity
+				}
+				add = {
+					desc = "MANEUVERS_QUANTITY_FACTOR"
+					value = scope:quantity
+					divide = 1000
+					min = 0
+					max = 50
+				}
+			}
+		}
+
+		infamy = {
+			value = 0
+
+			if = {
+				limit = {
+					exists = scope:quantity
+				}
+				add = {
+					desc = "INFAMY_QUANTITY_FACTOR"
+					value = scope:quantity
+					divide = 1000
+					min = 5
+					max = 50
+				}
+			}
+
+			if = {
+				limit = {
+					any_scope_treaty = {
+						any_scope_article = {
+							has_type = money_transfer
+							target_country = root
+						}
+					}
+				}
+				add = {
+					value = 0
+
+					every_scope_treaty = {
+						limit = {
+							any_scope_article = {
+								has_type = money_transfer
+								target_country = root
+							}
+						}
+						every_scope_article = {
+							limit = {
+								has_type = money_transfer
+								target_country = root
+							}
+
+							desc = "INFAMY_MONEY_TRANSFER_QUANTITY_ROOT_HAS_ALREADY_ESTABLISHED_FACTOR"
+							add = input_quantity
+							divide = 2000
+						}
+					}
+					max = 50
+				}
+			}
+
+			if = {
+				limit = {
+					any_diplomatic_play = {
+						initiator = scope:target_country
+						target = root
+					}
+					exists = scope:quantity
+				}
+				subtract = {
+					add = scope:quantity
+					value = {
+						desc = "INFAMY_TARGET_QUANTITY_DEDUCTION_FACTOR"
+						add = scope:target_country.income
+						multiply = 0.1
+					}
+					divide = 1000
+				}
+				min = 0
+			}
 		}
 	}
 

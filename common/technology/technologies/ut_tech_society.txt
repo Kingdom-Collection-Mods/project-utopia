@@ -363,7 +363,7 @@ union_trade = {
 	category = society
 		
 	modifier = {
-		power_bloc_leverage_generation_mult = 0.25
+		country_leverage_generation_mult = 0.25
 	}
 
 	unlocking_technologies = {
@@ -389,7 +389,7 @@ union_new_mandates_two = {
 	}
 
 	modifier = {
-		power_bloc_leverage_generation_mult = 0.25
+		country_leverage_generation_mult = 0.25
 		country_diplomatic_play_maneuvers_add = 30
 	}
 

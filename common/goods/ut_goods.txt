@@ -65,7 +65,6 @@ software = {
 	prestige_factor = 5
 }
 
-
 internet = {
 	texture = "gfx/interface/icons/goods_icons/internet.dds"
 	cost = 40
@@ -82,7 +81,6 @@ trucks = {
 	
 	prestige_factor = 10
 }
-
 
 consumer_goods = {
 	texture = "gfx/interface/icons/goods_icons/consumer_goods.dds"

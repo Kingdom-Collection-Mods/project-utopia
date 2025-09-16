@@ -281,6 +281,10 @@ ut_movement_humanist = {
 			limit = {
 				strata = upper
 			}
+			add = {
+				value = 5
+				desc = "POP_UPPER_NO_ICON"
+			}
 		}
 		else_if = {
 			limit = {
@@ -357,7 +361,6 @@ ut_movement_humanist = {
 }
 
 ut_movement_rationalists = {
-	icon = "gfx/interface/icons/ideology_icons/egalitarian.dds"
 	category = movement_category_ideological
 
 	ideology = ideology_urbanist_economy_base

@@ -79,21 +79,27 @@
 		}
 		if = {
 			limit = {
-				has_technology_researched = epa_two
+				owner = {
+					has_technology_researched = epa_two
+				}
 			}
 			add = 25
 		}
 		
 		if = {
 			limit = {
-				has_technology_researched = epa_three
+				owner = {
+					has_technology_researched = epa_three
+				}
 			}
 			add = 25
 		}
 		
 		if = {
 			limit = {
-				has_technology_researched = food_standards_one
+				owner = {
+					has_technology_researched = food_standards_one
+				}
 			}
 			add = 25
 		}
@@ -104,21 +110,27 @@
 		
 		if = {
 			limit = {
-				has_technology_researched = epa_two
+				owner = {
+					has_technology_researched = epa_two
+				}
 			}
 			add = 25
 		}
 		
 		if = {
 			limit = {
-				has_technology_researched = epa_three
+				owner = {
+					has_technology_researched = epa_three
+				}
 			}
 			add = 25
 		}
 		
 		if = {
 			limit = {
-				has_technology_researched = food_standards_one
+				owner = {
+					has_technology_researched = food_standards_one
+				}
 			}
 			add = 25
 		}
@@ -225,14 +237,18 @@ ut_ideology_cosmopolitan_leader = {
 		}
 		if = {
 			limit = {
-				has_technology_researched = political_progress_1_cosmopolitan
+				owner = {
+					has_technology_researched = political_progress_1_cosmopolitan
+				}
 			}
 			add = 10
 		}
 		
 		if = {
 			limit = {
-				has_technology_researched = political_progress_2_rationalism
+				owner = {
+					has_technology_researched = political_progress_2_rationalism
+				}
 			}
 			add = 10
 		}
@@ -243,14 +259,18 @@ ut_ideology_cosmopolitan_leader = {
 		
 		if = {
 			limit = {
-				has_technology_researched = political_progress_1_cosmopolitan
+				owner = {
+					has_technology_researched = political_progress_1_cosmopolitan
+				}
 			}
 			add = 10
 		}
 		
 		if = {
 			limit = {
-				has_technology_researched = political_progress_2_rationalism
+				owner = {
+					has_technology_researched = political_progress_2_rationalism
+				}
 			}
 			add = 10
 		}
@@ -376,8 +396,10 @@ ut_ideology_autocratic_leader = {
 		# more likely if landowners marginalized
 		if = {
 			limit = {
-				ig:ig_landowners = {
-					is_powerful = yes
+				owner = {
+					ig:ig_landowners = {
+						is_powerful = yes
+					}
 				}
 			}
 			add = 25
@@ -386,8 +408,10 @@ ut_ideology_autocratic_leader = {
 		# more likely if landowners marginalized
 		if = {
 			limit = {
-				ig:ig_landowners = {
-					is_marginal = no
+				owner = {
+					ig:ig_landowners = {
+						is_marginal = no
+					}
 				}
 			}
 			add = 25

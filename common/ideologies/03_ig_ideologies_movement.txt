@@ -879,6 +879,8 @@ ideology_pluralist_movement_4 = { # Multicultural
 		law_cultural_exclusion = disapprove
 		law_multicultural = strongly_approve
 		law_multicultural_globalism = approve
+	}
+}
 
 ideology_sovereignist_movement = {
 	icon = "gfx/interface/icons/ideology_icons/sovereignist.dds"

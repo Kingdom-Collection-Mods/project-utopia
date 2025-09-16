@@ -9,6 +9,7 @@
  utopia.continue: "Continue"
  utopia.cheat: "Cheat"
  utopia.disable: "Disable"
+ error: "Error" 
 
 # Events & Journals
  ut_heavy_industrial_machinery_je: "Heavy Industrial Machinery"
@@ -125,14 +126,17 @@
  ut_share_nuclear_power_research: "Share Nuclear Power Research"
  ut_share_nuclear_power_research_name: "Nuclear Power Research"
  ut_share_nuclear_power_research_desc: "Share the knowledge and advancements gained from our nuclear power research."
+ ut_share_nuclear_power_research_action_name: "$ut_share_nuclear_power_research_name$"
+ ut_share_nuclear_power_research_action_propose_name: "Propose $ut_share_nuclear_power_research_action_name$"
+ 
+ ut_share_nuclear_power_research_proposal_notification_name: "Nuclear Power Research Proposal"
+ ut_share_nuclear_power_research_proposal_notification_desc: "A proposal to share nuclear power research has been sent."
  ut_share_nuclear_power_research_proposal_accepted_name: "$ut_share_nuclear_power_research_name$ accepted"
  ut_share_nuclear_power_research_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted $ut_share_nuclear_power_research_name$."
  ut_share_nuclear_power_research_proposal_declined_name: "$ut_share_nuclear_power_research_name$ declined"
  ut_share_nuclear_power_research_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected $ut_share_nuclear_power_research_name$."
  ut_share_nuclear_power_research_effects_desc: "REPLACE_ME"
  ut_share_nuclear_power_research_article_short_desc: "REPLACE_ME"
- 
- ut_pm_nuclear_power_plant_one: "Nuclear Power Plant"
 
  ut_research_high_tech_computers: "Research High-Tech Computers"
  ut_research_high_tech_computers_desc: "Start a research initiative into micro chip technologies and replace transistors. These machines will form the basis for modern simulations, industrial automation, and military superiority."
@@ -217,6 +221,19 @@
  event_new_dawn.uprising.communist_win: "Communist march on capital"
  event_new_dawn.uprising.democrat_win: "Democrat march on capital"
  event_new_dawn.uprising.autocrat_win: "Autocrat march on capital"
+
+ event_new_dawn.998.cheat: "New Dawn Phase 1 Cheat"
+ event_new_dawn.999.cheat: "New Dawn Phase 2 Cheat"
+ event_new_dawn.cheat.add_new_dawn: "Add #b New Dawn journal entry#!"
+ event_new_dawn.cheat.add_democratic_50: "Add 50 #blue Democratic#! Progress"
+ event_new_dawn.cheat.add_autocratic_50: "Add 50 #blue Autocratic#! Progress"
+ event_new_dawn.cheat.add_fascist_50: "Add 50 #g Fascist#! Progress"
+ event_new_dawn.cheat.add_communist_50: "Add 50 #r Communist#! Progress"
+ event_new_dawn.cheat.remove_democratic_50: "Remove 50 #blue Democratic#! Progress"
+ event_new_dawn.cheat.remove_autocratic_50: "Remove 50 #blue Autocratic#! Progress"
+ event_new_dawn.cheat.remove_fascist_50: "Remove 50 #g Fascist#! Progress"
+ event_new_dawn.cheat.remove_communist_50: "Remove 50 #r Communist#! Progress"
+ event_new_dawn.cheat.remove_focus_recently_changed: "Remove Focus Recently Changed"
 
  ut_new_dawn_status: "New Dawn"
  ut_new_dawn_focus_recently_changed: "Focus recently changed"
@@ -360,7 +377,7 @@
  je_ut_new_dawn_fascist_reason: ""
 
  je_ut_new_dawn_communist: "Communism"
- je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads
+ je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads"
 
  ut_new_dawn_autocrat_focus: "Autocratic Focus (wip)"
  ut_new_dawn_autocrat_focus_desc: "work in progress"
@@ -401,7 +418,6 @@
  ut_nd_fascist_progress_from_events: "Events and Other Effects"
  concept_ut_nd_fascist_characters: "Fascist Characters"
  concept_ut_nd_fascist_characters_desc: "Fascist character ideologies are: [GetIdeology('ideology_ethno_nationalist').GetName] and [GetIdeology('ideology_fascist').GetName].\nIf Fascist Focus is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], and [GetIdeology('ideology_modernizer_leader').GetName]."
-
  ut_new_dawn_fascist_status: "Fascist Ideas Shape the Discourse"
 
  je_ai_radio_researched: "Radio Researched"
@@ -429,6 +445,11 @@
  state_service_workers_investment_pool_contribution_add_desc: "How much of their profits $service_workers$ will invest."
  state_service_workers_investment_pool_efficiency_mult_desc: "An increase or decrease in the invested profits that $service_workers$ contribute to the [concept_investment_pool]."
  building_employment_service_workers_add: "$service_workers$ Per Level"
+ building_employment_service_workers_add_desc: "Modifies the amount of $service_workers$ a building can hire per level."
+ country_service_workers_voting_power_add: "$service_workers$ [concept_voting_power]"
+ country_service_workers_voting_power_add_desc: "An increase or decrease in the [concept_voting_power] of $service_workers$"
+ building_service_workers_mortality_mult: "$service_workers$ Mortality Multiplier"
+ building_service_workers_mortality_mult_desc: "An increase or decrease in the mortality rate of $service_workers$."
 
  ig_urbanists: "Urbanists"
  ig_urbanists_desc: "Service workers in modern urban environments representing professionals in hospitality, retail, transport, and other sectors of the contemporary economy."
@@ -438,7 +459,6 @@
  interest_group_ig_urbanists_pol_str_mult_desc: "An increase or decrease in the [concept_political_strength] of the [concept_interest_group] \"[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant]\"."
  interest_group_ig_urbanists_approval_add: "[concept_approval] ($ig_variant_urbanists$)"
  interest_group_ig_urbanists_approval_add_desc: "An increase or decrease in the [concept_approval] of the [concept_interest_group] \"[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant]\"."
- 
  interest_group_ig_urbanists_pop_attraction_mult: "$ig_variant_urbanists$ Pop Attraction Multiplier"
  interest_group_ig_urbanists_pop_attraction_mult_desc: "A bonus or deduction on how much Pops are attracted to the [concept_interest_group] \"[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant]\"."
 
@@ -460,6 +480,7 @@
  ut_ideology_cosmopolitan_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_cosmopolitan_leader').GetName] [concept_ideology]"
 
  ut_ideology_autocratic_leader: "Autocratic"
+ ut_ideology_autocratic_leader_desc: "Autocratic ideologies prioritize strong, centralized authority and order. They often emphasize tradition, hierarchy, and national unity, advocating for limited political freedoms in favor of stability and control."
  ut_ideology_autocratic_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_autocratic_leader').GetName] [concept_ideology]"
  ut_ideology_national_socialist_leader: "National Socialist"
  ut_ideology_national_socialist_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_national_socialist_leader').GetName] [concept_ideology]"
@@ -474,6 +495,7 @@
  ideology_reactionary_democratic: "Conservative"
  ideology_jingoist_democratic: "Security-Oriented"
  ideology_socialist_democratic: "Social Democratic"
+
 
  ig_trait_urbanist_loyal: "Prestige Society"
  ig_trait_urbanist_loyal_desc: "This group advocates for the free movement of people across borders, believing it fosters cultural exchange and economic opportunity. They oppose restrictive immigration policies and emphasize international cooperation."
@@ -496,7 +518,6 @@
  ut_radical_feminism_leader_unlock_tt: "Unlocks [GetIdeology('ut_radical_feminism_leader').GetName] [concept_ideology]"
  ut_social_feminism_leader: "Social Feminist"
  ut_social_feminism_leader_unlock_tt: "Unlocks [GetIdeology('ut_social_feminism_leader').GetName] [concept_ideology]"
-
 
  lawgroup_environment_protection: "Environmental Protection"
  lawgroup_environment_protection_desc: "Laws and institutions that protect the environment, promote sustainability, and ensure ecological balance."
@@ -583,44 +604,46 @@
  country_institution_epa_max_investment_add: "Max. Investment in [concept_institution] $institution_epa$"
  country_institution_food_safety_max_investment_add: "Max. Investment in [concept_institution] $institution_food_safety$"
 
-#articles
+#Diplo Stuff
  ut_international_diplomatic_power_bloc_merge: "Unify Democratic Blocs"
  ut_international_diplomatic_power_bloc_merge_desc: "A proposal to unify the democratic power blocs. If accepted, all members of the bloc will join our power bloc."
  ut_international_diplomatic_power_bloc_merge_effects_desc: "• An agreement under which all democratic power bloc members join the other bloc. Unlocked through the democratic New Dawn."
  ut_international_diplomatic_power_bloc_merge_points_them: "[TreatyDraft.GetRightCountry.GetName]: Requires at least #v [SCOPE.ScriptValue('new_dawn_ideology_spend_points')] #![concept_ut_nd_progress_points]"
- je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Has #v $je_ut_new_dawn_democrat_focus$#! modifier"
-
  ut_international_diplomatic_power_bloc_merge_name: "$ut_international_diplomatic_power_bloc_merge$"
- ut_international_diplomatic_power_bloc_merge_proposal_accepted_name: "$ut_international_diplomatic_power_bloc_merge_name$ accepted"
- ut_international_diplomatic_power_bloc_merge_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted $ut_international_diplomatic_power_bloc_merge_name$."
- ut_international_diplomatic_power_bloc_merge_proposal_declined_name: "$ut_international_diplomatic_power_bloc_merge_name$ declined"
- ut_international_diplomatic_power_bloc_merge_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected $ut_international_diplomatic_power_bloc_merge_name$."
-
  ut_international_diplomatic_power_bloc_merge_action_name: "Unify Democratic Blocs"
  ut_international_diplomatic_power_bloc_merge_proposal_notification_name: "Unify Democratic Blocs Proposal"
  ut_international_diplomatic_power_bloc_merge_proposal_notification_desc: "A proposal to unify the democratic power blocs has been sent."
+ ut_international_diplomatic_power_bloc_merge_proposal_accepted_name: "$ut_international_diplomatic_power_bloc_merge$ Accepted"
+ ut_international_diplomatic_power_bloc_merge_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our proposal to $ut_international_diplomatic_power_bloc_merge$."
+ ut_international_diplomatic_power_bloc_merge_proposal_declined_name: "$ut_international_diplomatic_power_bloc_merge$ Declined"
+ ut_international_diplomatic_power_bloc_merge_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to $ut_international_diplomatic_power_bloc_merge$."
+
+ je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Has #v $je_ut_new_dawn_democrat_focus$#! modifier"
 
  ut_influence_new_dawn_major_power: "Spread Ideology"
- ut_influence_new_dawn_major_power_desc: "Promote the New Dawn ideology among major powers."
+ ut_influence_new_dawn_major_power_desc: "Promote your ideology among major powers by starting their New Dawn and forcing them to focus on your ideology."
+ ut_influence_new_dawn_major_power_action_name: "$ut_influence_new_dawn_major_power$"
+ ut_influence_new_dawn_major_power_action_propose_name: "Start $ut_influence_new_dawn_major_power_action_name$"
+ ut_influence_new_dawn_major_power_proposal_notification_name: "$ut_influence_new_dawn_major_power$ Proposal"
+ ut_influence_new_dawn_major_power_proposal_notification_desc: "A proposal to $ut_influence_new_dawn_major_power$ in [TARGET_COUNTRY.GetName] has been sent."
+ ut_influence_new_dawn_major_power_proposal_accepted_name: "$ut_influence_new_dawn_major_power$ Accepted"
+ ut_influence_new_dawn_major_power_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our request to $ut_influence_new_dawn_major_power$."
+ ut_influence_new_dawn_major_power_proposal_declined_name: "$ut_influence_new_dawn_major_power$ Declined"
+ ut_influence_new_dawn_major_power_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our request to $ut_influence_new_dawn_major_power$."
  ut_influence_new_dawn_major_power_unlock_tt: "Unlocks: #v $ut_influence_new_dawn_major_power$#!"
 
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
  UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
  UT_BOTH_DIFFERENT_IDEOLOGY: "Different ideologies"
  UT_BOTH_DIFFERENT_IDEOLOGY_OF_TARGET: "Both countries must have different ideologies."
- 
- # Diplo
- principle_group_modern_trade_league: "Modern Trade League"
- principle_group_modern_sovereign_empire: "Modern Sovereign State"
- principle_group_modern_military_treaty_organization: "Modern Military Treaty Organization"
- principle_group_modern_ideological_union: "Modern Ideological Union"
- ut_principle_group_advanced_research: "Advanced Research"
 
  ut_has_truce_with_target: "Has truce with [ROOT.GetCountry.GetName]"
  ut_has_no_truce_with_target: "No truce with [ROOT.GetCountry.GetName]"
 
  ut_humiliate_power_bloc_goal: "Humiliate Power Bloc Leader"
  ut_humiliate_power_bloc_goal_action_name: "Humiliate Power Bloc Leader"
+ ut_humiliate_power_bloc_goal_action_notification_name: "Humiliate Power Bloc Leader"
+ ut_humiliate_power_bloc_goal_action_notification_desc: "[INITIATOR_COUNTRY.GetName] has humiliated [TARGET_COUNTRY.GetName] and forced them into their power bloc."
  ut_humiliate_power_bloc_goal_proposal_accepted_name: "Humiliation Accepted"
  ut_humiliate_power_bloc_goal_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] has accepted humiliation and will join your power bloc."
  ut_humiliate_power_bloc_goal_proposal_declined_name: "Humiliation Rejected"
@@ -630,6 +653,18 @@
  ut_humiliate_power_bloc_goal_desc: "Humiliate a rival power bloc leader to force them into your bloc."
  ut_research_agreement: "Research Agreement"
  ut_research_agreement_desc: "Advancing together."
+ ut_research_agreement_action_name: "$ut_research_agreement$"
+ ut_research_agreement_action_propose_name: "Propose $ut_research_agreement$"
+ ut_research_agreement_action_propose_desc: "Propose a $ut_research_agreement$ with [TARGET_COUNTRY.GetName]."
+ ut_research_agreement_action_break_name: "[INITIATOR_COUNTRY.GetName] stops $ut_research_agreement$"
+ ut_research_agreement_action_break_desc: "[INITIATOR_COUNTRY.GetName] stopped $ut_research_agreement$."
+ ut_research_agreement_proposal_notification_name: "$ut_research_agreement$ Proposal"
+ ut_research_agreement_proposal_notification_desc: "A proposal to establish a $ut_research_agreement$ with [TARGET_COUNTRY.GetName] has been sent."
+ ut_research_agreement_proposal_accepted_name: "$ut_research_agreement$ Accepted"
+ ut_research_agreement_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our proposal to establish a $ut_research_agreement$."
+ ut_research_agreement_proposal_declined_name: "$ut_research_agreement$ Declined"
+ ut_research_agreement_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to establish a $ut_research_agreement$."
+ has_treaty_ut_research_agreement_with_trigger: "Does not have a $ut_research_agreement$ with [ROOT.GetCountry.GetName]"
 
  ut_democracy_article: "Force democracy"
  ut_democracy_article_desc: "Impose democratic reforms on [TARGET_COUNTRY.GetName] (Requires a new treaty or being enforced)."
@@ -639,28 +674,67 @@
  ut_foreign_investment_agreement_desc: "A [concept_diplomatic_pact] between two [Concept('concept_country','$concept_countries$')] to establish a Mutual [concept_foreign_investment_rights] Agreement."
 
  ut_fund_ideology: "Fund Ideology"
+ ut_fund_ideology_action_name: "$ut_fund_ideology$"
+ ut_fund_ideology_action_propose_name: "Start $ut_fund_ideology_action_name$"
+ ut_fund_ideology_action_break_name: "Stop $ut_fund_ideology_action_name$"
+ ut_fund_ideology_action_notification_break_name: "$ut_fund_ideology$ Stopped"
+ ut_fund_ideology_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] has stopped $ut_fund_ideology$ in [TARGET_COUNTRY.GetName]."
+ ut_fund_ideology_proposal_notification_name: "$ut_fund_ideology$ Proposal"
+ ut_fund_ideology_proposal_notification_desc: "A proposal to $ut_fund_ideology$ in [TARGET_COUNTRY.GetName] has been sent."
+ ut_fund_ideology_proposal_accepted_name: "$ut_fund_ideology$ Accepted"
+ ut_fund_ideology_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our proposal to $ut_fund_ideology$."
+ ut_fund_ideology_proposal_declined_name: "$ut_fund_ideology$ Declined"
+ ut_fund_ideology_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to $ut_fund_ideology$."
+ ut_fund_ideology_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds aligned political groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], increasing [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] ideological progress in [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAdjectiveNoFormatting]'s ideology.\n\n$ut_fund_ideology_effect$"
  ut_fund_ideology_desc: "Work in progress."
- ut_fund_ideology_effect: "Target country gains 0.25 progress points to your core ideology."
+ ut_fund_ideology_effect: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
+
+
+
  ut_fund_opposition: "Fund Opposition"
+ ut_fund_opposition_action_name: "$ut_fund_opposition$"
+ ut_fund_opposition_action_propose_name: "Start $ut_fund_opposition_action_name$"
+ ut_fund_opposition_action_break_name: "Stop $ut_fund_opposition_action_name$"
  ut_fund_opposition_desc: "Democracies can fund the opposition in Autocratic countries. Work in progress."
- ut_fund_opposition_effect: "Core Ideology loses 50 progress (may abort their journal entry)."
- ut_fund_opposition_pact_desc: "x Chance: $ut_fund_opposition_effect$"
+ ut_fund_opposition_effect: "2% chance per month for their core Ideology to lose #r 25#! [concept_ut_nd_progress_points] (may abort their New Dawn Phase 2 journal entry)."
+ ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds opposition groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], this may lead to revolts in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] opposition groups reducing their ideology [concept_ut_nd_progress_points].\n\n$ut_fund_opposition_effect$"
+
 # Power Blocs
+ principle_group_modern_trade_league: "Modern Trade League"
+ principle_group_modern_sovereign_empire: "Modern Sovereign State"
+ principle_group_modern_military_treaty_organization: "Modern Military Treaty Organization"
+ principle_group_modern_ideological_union: "Modern Ideological Union"
+ ut_principle_group_advanced_research: "Advanced Research"
  principle_common_financial_policy_1: "Common Financial Policy"
+ principle_common_financial_policy_1_desc: ""
  principle_common_financial_policy_2: "Common Financial Policy 2"
+ principle_common_financial_policy_2_desc: ""
  principle_common_financial_policy_3: "Common Financial Policy 3"
+ principle_common_financial_policy_3_desc: ""
  principle_commissariat_1: "Commissariat 1"
+ principle_commissariat_1_desc: ""
  principle_commissariat_2: "Commissariat 2"
+ principle_commissariat_2_desc: ""
  principle_commissariat_3: "Commissariat 3"
+ principle_commissariat_3_desc: ""
  ut_principle_military_cooperation_1: "Military Organization 1"
+ ut_principle_military_cooperation_1_desc: ""
  ut_principle_military_cooperation_2: "Military Organization 2"
+ ut_principle_military_cooperation_2_desc: ""
  ut_principle_military_cooperation_3: "Military Organization 3"
+ ut_principle_military_cooperation_3_desc: ""
  ut_modern_ideological_union_1: "Ideology 1"
+ ut_modern_ideological_union_1_desc: ""
  ut_modern_ideological_union_2: "Ideology 2"
+ ut_modern_ideological_union_2_desc: ""
  ut_modern_ideological_union_3: "Ideology 3"
+ ut_modern_ideological_union_3_desc: ""
  ut_principle_advanced_research_4: "Research Initiative 1"
+ ut_principle_advanced_research_4_desc: ""
  ut_principle_advanced_research_5: "Research Initiative 2"
+ ut_principle_advanced_research_5_desc: ""
  ut_principle_advanced_research_6: "Research Initiative 3"
+ ut_principle_advanced_research_6_desc: ""
 
 # Tech Production
  machinery_farming: "Cabin Tractors"
@@ -968,6 +1042,12 @@
  pmg_highway_cars: "Base"
  pmg_highway_trucks: "Trucks"
  pmg_complex_consumer_goods_making_process: "Complex Consumer Goods"
+ pmg_base_building_ut_nuclear_power_plant_construction: "Construction"
+ 
+ ut_pm_nuclear_power_plant_construction: "Power Plant Construction"
+
+ pmg_base_building_ut_nuclear_power_plant: "Base"
+ ut_pm_nuclear_power_plant_one: "Nuclear Power Plant"
 
  pm_heavy_machinery_engines: "Multi-cylinder Engines"
  pm_electronics_engines: "ECU Engines"
@@ -1031,7 +1111,6 @@
  pm_farms_drone_support_rice: "Drones"
  pm_farms_heavy_machinery_support: "Heavy Tractors"
  pm_farms_heavy_machinery_support_rice: "Heavy Tractors"
-
  pm_ut_factory_farming: "Factory Farming"
 
  pm_heavy_machinery_building_coal_mine: "Heavy Machinery"
@@ -1127,44 +1206,58 @@
  prestige_good_generic_software_b2b: "Database Software"
  prestige_good_generic_software_b2c: "Office Software"
 
- goods_input_internet_add: "@internet! Internet input"
- goods_input_internet_add_desc: "The amount of @internet! Internet consumed by buildings"
-
- goods_input_heavy_machinery_add: "@heavy_machinery! Machinery input"
- goods_input_heavy_machinery_add_desc: "The amount of @heavy_machinery! Machinery consumed by buildings"
-
+#goods input output
+ goods_input_heavy_machinery_add: "@heavy_machinery! Heavy Industrial Machinery input"
+ goods_input_heavy_machinery_add_desc: "The amount of @heavy_machinery! Heavy Industrial Machinery consumed by buildings"
  goods_input_plastic_add: "@plastic! Plastic input"
  goods_input_plastic_add_desc: "The amount of @plastic! Plastic consumed by buildings"
-
+ goods_input_electronics_add: "@electronics! Electronics input"
+ goods_input_electronics_add_desc: "The amount of @electronics! Electronics consumed by buildings"
+ goods_input_aluminum_add: "@aluminum! Aluminum input"
+ goods_input_aluminum_add_desc: "The amount of @aluminum! Aluminum consumed by buildings"
+ goods_input_bauxite_add: "@bauxite! Bauxite input"
+ goods_input_bauxite_add_desc: "The amount of @bauxite! Bauxite consumed by buildings"
+ goods_input_rare_earths_add: "@rare_earths! Rare Earths input"
+ goods_input_rare_earths_add_desc: "The amount of @rare_earths! Rare Earths consumed by buildings"
+ goods_input_computers_add: "@computers! Computers input"
+ goods_input_computers_add_desc: "The amount of @computers! Computers consumed by buildings"
+ goods_input_software_add: "@software! Software input"
+ goods_input_software_add_desc: "The amount of @software! Software consumed by buildings"
+ goods_input_internet_add: "@internet! Internet input"
+ goods_input_internet_add_desc: "The amount of @internet! Internet consumed by buildings"
+ goods_input_trucks_add: "@trucks! Trucks input"
+ goods_input_trucks_add_desc: "The amount of @trucks! Trucks consumed by buildings"
  goods_input_consumer_goods_add: "@consumer_goods! Consumer Goods input"
  goods_input_consumer_goods_add_desc: "The amount of @consumer_goods! Consumer Goods consumed by buildings"
 
- goods_input_electronics_add: "@electronics! Electronics input"
- goods_input_electronics_add_desc: "The amount of @electronics! Electronics consumed by buildings"
-
- goods_input_computers_add: "@computers! Computers input"
- goods_input_computers_add_desc: "The amount of @computers! Computers consumed by buildings"
-
- goods_input_aliminum_add: "@aliminum! Aliminum input"
- goods_input_aliminum_add_desc: "The amount of @aliminum! Aliminum consumed by buildings"
-
- goods_input_bauxite_add: "@bauxite! Bauxite input"
- goods_input_bauxite_add_desc: "The amount of @bauxite! Bauxite consumed by buildings"
-
- goods_input_rare_earths_add: "@rare_earths! Rare Earths input"
- goods_input_rare_earths_add_desc: "The amount of @rare_earths! Rare Earths consumed by buildings"
-
- goods_input_trucks_add: "@trucks! Trucks input"
- goods_input_trucks_add_desc: "The amount of @trucks! Trucks consumed by buildings"
-
- goods_input_software_add: "@software! Software input"
- goods_input_software_add_desc: "The amount of @software! Software consumed by buildings"
-
- goods_output_trucks_add: "@trucks! Trucks Output"
+ goods_output_heavy_machinery_add: "@heavy_machinery! Heavy Industrial Machinery output"
+ goods_output_heavy_machinery_add_desc: "The amount of @heavy_machinery! Heavy Industrial Machinery produced by buildings"
+ goods_output_plastic_add: "@plastic! Plastic output"
+ goods_output_plastic_add_desc: "The amount of @plastic! Plastic produced by buildings"
+ goods_output_electronics_add: "@electronics! Electronics output"
+ goods_output_electronics_add_desc: "The amount of @electronics! Electronics produced by buildings"
+ goods_output_aluminum_add: "@aluminum! Aluminum output"
+ goods_output_aluminum_add_desc: "The amount of @aluminum! Aluminum produced by buildings"
+ goods_output_bauxite_add: "@bauxite! Bauxite output"
+ goods_output_bauxite_add_desc: "The amount of @bauxite! Bauxite produced by buildings"
+ goods_output_rare_earths_add: "@rare_earths! Rare Earths output"
+ goods_output_rare_earths_add_desc: "The amount of @rare_earths! Rare Earths produced by buildings"
+ goods_output_computers_add: "@computers! Computers output"
+ goods_output_computers_add_desc: "The amount of @computers! Computers produced by buildings"
+ goods_output_software_add: "@software! Software output"
+ goods_output_software_add_desc: "The amount of @software! Software produced by buildings"
+ goods_output_internet_add: "@internet! Internet output"
+ goods_output_internet_add_desc: "The amount of @internet! Internet produced by buildings"
+ goods_output_trucks_add: "@trucks! Trucks output"
  goods_output_trucks_add_desc: "The amount of @trucks! Trucks produced by buildings"
- goods_output_trucks_mult: "@trucks! Trucks output"
+ goods_output_consumer_goods_add: "@consumer_goods! Consumer Goods output"
+ goods_output_consumer_goods_add_desc: "The amount of @consumer_goods! Consumer Goods produced by buildings"
+
+ goods_output_trucks_mult: "$trucks$ Goods Output"
+ goods_output_trucks_mult_desc: "A bonus or penalty for the production of $trucks$."
 
  state_highways_max_level_add: "Add Maximum Level for $highways$"
+ state_highways_max_level_add_desc: "Increase the maximum level of $highways$ by 1."
 
 #Companies
  ut_commercial_goods_simple_company: "ElectroNord Appliances Inc."
@@ -1218,6 +1311,7 @@
  smart_irrigation_building_banana_plantation: "Smart Irrigation"
  smart_irrigation_building_silk_plantation: "Smart Irrigation"
  smart_irrigation_building_vineyard_plantation: "Smart Irrigation"
+ smart_irrigation_building_coffee_plantation: "Smart Irrigation"
 
  agricultural_mechanization: "Heavy Tractors"
  slow_tech_progress: "Slow Technological Progress"
@@ -1242,7 +1336,13 @@
  ut_tech_preview_cheat_disable_tt: "Deactivates the cheat permanently"
  ut_tech_preview_cheat_research_modifier: "Forbidden Technologies"
 
+ ut_tech_preview_cheat_new_dawn: "Project Utopia: New Dawn Cheat" 
+ ut_tech_preview_cheat_new_dawn_desc: "As part of the technical preview you can cheat New Dawn."
+
 # units modifiers
-unit_combat_unit_type_light_tank_offense_add: "Light Tank Offense"
-unit_combat_unit_type_motorized_artillery_offense_add: "Motorized Artillery Offense"
-unit_combat_unit_type_modern_submarine_offense_add: "Modern Submarine Offense"
+ unit_combat_unit_type_light_tanks_offense_add: "$combat_unit_type_light_tanks$ $unit_offense_add$"
+ unit_combat_unit_type_light_tanks_offense_add_desc: "$combat_unit_type_light_tanks$ $unit_offense_add$"
+ unit_combat_unit_type_motorized_artillery_offense_add: "$combat_unit_type_motorized_artillery$ $unit_offense_add$"
+ unit_combat_unit_type_motorized_artillery_offense_add_desc: "$combat_unit_type_motorized_artillery$ $unit_offense_add$"
+ unit_combat_unit_type_modern_submarine_offense_add: "$combat_unit_type_modern_submarine$ $unit_offense_add$"
+ unit_combat_unit_type_modern_submarine_offense_add_desc: "$combat_unit_type_modern_submarine$ $unit_offense_add$"

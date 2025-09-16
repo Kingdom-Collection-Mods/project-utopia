@@ -9,8 +9,12 @@
 			is_player = yes
 			has_variable = je_ut_new_dawn_major_power_influenced_var
 			country_rank >= rank_value:great_power
+			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
 		}
-		ut_service_workers_possible = yes
+		OR = {
+			ut_service_workers_possible = yes
+			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
+		}
 	}
 
 	possible = {
@@ -20,6 +24,7 @@
 				pop_type = service_workers
 				percent > 0.01
 			}
+			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
 		}
 	}
 
