@@ -72,6 +72,7 @@ ideology_urbanist_economy_base = {
 		law_free_trade = approve
 		law_free_trade_union = approve
 		law_protectionism_union = approve
+		law_international_trade = approve
 	}
 }
 
@@ -323,6 +324,7 @@ ideology_socialist_democratic = {
 		law_free_trade = neutral
 		law_free_trade_union= strongly_approve
 		law_protectionism_union = approve
+		law_international_trade = strongly_approve
 	}
 
 	lawgroup_taxation = {
@@ -390,5 +392,6 @@ ut_ideology_cosmopolitan = {
 		law_mercantilism = disapprove
 		law_protectionism = disapprove
 		law_isolationism = strongly_disapprove
+		law_international_trade = approve
 	}
 }

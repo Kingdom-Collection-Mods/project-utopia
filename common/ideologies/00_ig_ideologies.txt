@@ -58,6 +58,7 @@
 		law_free_trade = disapprove
 		law_free_trade_union= disapprove
 		law_protectionism_union = neutral
+		law_international_trade = strongly_approve
 	}	
 
 	
@@ -93,6 +94,7 @@ ideology_laissez_faire = {
 		law_mercantilism = neutral
 		law_protectionism = disapprove
 		law_isolationism = strongly_disapprove
+		law_international_trade = approve
 	}		
 		
 	lawgroup_childrens_rights = {
@@ -374,6 +376,7 @@ ideology_isolationist = {
 		law_free_trade = disapprove
 		law_free_trade_union= strongly_disapprove
 		law_protectionism_union = approve
+		law_international_trade = neutral
 	}
 	
 	lawgroup_citizenship = {
@@ -742,6 +745,7 @@ ideology_socialist = {
 		law_free_trade = disapprove
 		law_free_trade_union= disapprove
 		law_protectionism_union = approve
+		law_international_trade = approve
 	}
 
 	lawgroup_taxation = {

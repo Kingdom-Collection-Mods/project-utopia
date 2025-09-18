@@ -180,6 +180,7 @@ ideology_socialist_movement = {
 		law_free_trade = disapprove
 		law_free_trade_union= disapprove
 		law_protectionism_union = strongly_approve
+		law_international_trade = approve
 	}
 
 	lawgroup_taxation = {
@@ -374,6 +375,7 @@ ideology_vanguardist_movement = {
 		law_free_trade = strongly_disapprove
 		law_free_trade_union= strongly_disapprove
 		law_protectionism_union = approve
+		law_international_trade = approve
 	}
 
 	lawgroup_land_reform = {
@@ -709,6 +711,7 @@ ideology_modernizer_movement = {
 		law_free_trade = neutral
 		law_free_trade_union= neutral
 		law_protectionism_union = approve
+		law_international_trade = strongly_approve
 	}
 
 	lawgroup_childrens_rights = {
@@ -1016,6 +1019,7 @@ ideology_orleanist_movement = {
 		law_isolationism = strongly_disapprove
 		law_free_trade_union= strongly_approve
 		law_protectionism_union = disapprove
+		law_international_trade = approve
 	}
 }
 

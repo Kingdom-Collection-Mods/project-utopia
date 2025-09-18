@@ -709,6 +709,7 @@ ideology_colonialist = {
 		law_mercantilism = neutral
 		law_protectionism = disapprove
 		law_isolationism = strongly_disapprove
+		law_international_trade = approve
 	}		
 
 	lawgroup_colonization = {
@@ -963,5 +964,6 @@ ideology_magnatial = {
 		law_mercantilism = approve
 		law_protectionism = approve
 		law_free_trade = disapprove
+		law_international_trade = approve
 	}
 }
