@@ -289,7 +289,7 @@ law_social_market_economy = {
 	
 	icon = "gfx/interface/icons/law_icons/social_market_economy.dds"
 	
-	progressiveness = 70
+	progressiveness = 80
 	
 	unlocking_laws = {
 		law_interventionism
@@ -334,7 +334,7 @@ law_free_market_economy = {
 	
 	icon = "gfx/interface/icons/law_icons/free_market_economy.dds"
 	
-	progressiveness = 50
+	progressiveness = 70
 	
 	unlocking_laws = {
 		law_laissez_faire
@@ -501,15 +501,13 @@ law_protectionism_union = {
 	}
 	
 	modifier = {
-		state_tariff_import_add = 0.50
-		state_tariff_export_add = 0.50
+		state_tariff_import_add = 0.60
+		state_tariff_export_add = 0.60
 		state_subvention_export_add = 0.50
 		state_subvention_import_add = 0.50
+		country_leverage_resistance_mult = 0.1
 
-		# todo fix, power bloc mod not possible
-		# power_bloc_cohesion_mult = 0.25
-		# power_bloc_trade_advantage_add = 50
-		country_max_declared_interests_add = 2
+		country_max_declared_interests_add = 3
 	}	
 
 	ai_enact_weight_modifier = { #Petitions
@@ -527,7 +525,7 @@ law_free_trade_union = {
 	
 	icon = "gfx/interface/icons/law_icons/free_trade_union.dds"
 	
-	progressiveness = 50
+	progressiveness = 70
 	
 	disallowing_laws = {
 		law_command_economy
@@ -549,9 +547,9 @@ law_free_trade_union = {
 	}
 	
 	modifier = {
-		state_subvention_export_add = 0.50
-		state_subvention_import_add = 0.50
-		state_trade_advantage_mult = 0.35
+		state_subvention_export_add = 0.60
+		state_subvention_import_add = 0.60
+		state_trade_advantage_mult = 0.3
 		country_leverage_generation_mult = 0.2
 		#todo fix, power bloc mod not possible
 		#power_bloc_cohesion_add = -5
@@ -571,22 +569,20 @@ law_free_trade_union = {
 
 law_international_trade = {
 	group = lawgroup_trade_policy
-	icon = "gfx/interface/icons/law_icons/protectionism.dds"
-
-	is_visible = {
-		always = no
-	}
+	icon = "gfx/interface/icons/law_icons/international_trade.dds"
 
 	progressiveness = 60
 
 	unlocking_technologies = {
+		international_trade
 	}
 
 	modifier = {
-		state_tariff_import_add = 0.25
-		state_tariff_export_add = 0.25
-		state_subvention_export_add = 0.25
-		state_subvention_import_add = 0.25
+		state_tariff_import_add = 0.20
+		state_tariff_export_add = 0.20
+		state_subvention_export_add = 0.30
+		state_subvention_import_add = 0.30
+		state_trade_advantage_mult = 0.1
 	}
 
 	ai_enact_weight_modifier = {
@@ -602,6 +598,13 @@ law_international_trade = {
 				has_law_or_variant = law_type:law_protectionism
 			}
 			add = 1000
+		}
+		
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_isolationism
+			}
+			add = 500
 		}
 	}
 }

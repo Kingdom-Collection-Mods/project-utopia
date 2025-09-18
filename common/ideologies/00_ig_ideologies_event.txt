@@ -47,6 +47,7 @@ ideology_modernizer = {
 		law_free_trade = neutral
 		law_free_trade_union= neutral
 		law_protectionism_union = neutral
+		law_international_trade = strongly_approve
 	}
 
 	lawgroup_childrens_rights = {

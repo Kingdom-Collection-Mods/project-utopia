@@ -1,4 +1,4 @@
-﻿ut_humiliate_power_bloc_goal = {
+ut_humiliate_power_bloc_goal = {
 	groups= {
 		general
 	}
@@ -66,7 +66,7 @@ ut_influence_new_dawn_major_power = {
 	requires_approval = yes
 	
 	unlocking_technologies = {
-		union_trade
+		union_new_mandates_two
 	}
 	
 	selectable = {

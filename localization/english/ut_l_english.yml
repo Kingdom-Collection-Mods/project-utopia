@@ -595,8 +595,8 @@
  law_lgbt_rights_2_desc: "Consenting adults are no longer prosecuted but there is no recognition or safety. Censorship, unequal ages of consent, “public morals” rules keep people cautious and can still lead to violence."
  law_lgbt_rights_3: "Legal Protection"
  law_lgbt_rights_3_desc: "The state forbids discrimination and recognizes basic rights. Community life emerges in public, though backlash can flare and real progress depends on further enforcement and cultural progress."
- law_international_trade: "Placeholder"
- law_international_trade_desc: "Placeholder"
+ law_international_trade: "International Trade"
+ law_international_trade_desc: "Regulations and agreements governing trade between nations."
 
 
  institution_epa: "Environmental Protection"
@@ -620,7 +620,7 @@
 
  je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Has #v $je_ut_new_dawn_democrat_focus$#! modifier"
 
- ut_influence_new_dawn_major_power: "Spread Ideology"
+ ut_influence_new_dawn_major_power: "Spread New Dawn"
  ut_influence_new_dawn_major_power_desc: "Promote your ideology among major powers by starting their New Dawn and forcing them to focus on your ideology."
  ut_influence_new_dawn_major_power_action_name: "$ut_influence_new_dawn_major_power$"
  ut_influence_new_dawn_major_power_action_propose_name: "Start $ut_influence_new_dawn_major_power_action_name$"
@@ -686,7 +686,7 @@
  ut_fund_ideology_proposal_declined_name: "$ut_fund_ideology$ Declined"
  ut_fund_ideology_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to $ut_fund_ideology$."
  ut_fund_ideology_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds aligned political groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], increasing [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] ideological progress in [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAdjectiveNoFormatting]'s ideology.\n\n$ut_fund_ideology_effect$"
- ut_fund_ideology_desc: "Work in progress."
+ ut_fund_ideology_desc: "Fund aligned political groups in the target country to increase their ideological progress.\n\n$ut_fund_ideology_effect$"
  ut_fund_ideology_effect: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
 
 
@@ -695,7 +695,7 @@
  ut_fund_opposition_action_name: "$ut_fund_opposition$"
  ut_fund_opposition_action_propose_name: "Start $ut_fund_opposition_action_name$"
  ut_fund_opposition_action_break_name: "Stop $ut_fund_opposition_action_name$"
- ut_fund_opposition_desc: "Democracies can fund the opposition in Autocratic countries. Work in progress."
+ ut_fund_opposition_desc: "Democracies can fund the opposition in Autocratic countries.\n\n$ut_fund_opposition_effect$"
  ut_fund_opposition_effect: "2% chance per month for their core Ideology to lose #r 25#! [concept_ut_nd_progress_points] (may abort their New Dawn Phase 2 journal entry)."
  ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds opposition groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], this may lead to revolts in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] opposition groups reducing their ideology [concept_ut_nd_progress_points].\n\n$ut_fund_opposition_effect$"
 

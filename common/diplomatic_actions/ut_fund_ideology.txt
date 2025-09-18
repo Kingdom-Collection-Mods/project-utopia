@@ -7,7 +7,7 @@ ut_fund_ideology = {
 	should_notify_third_parties = no
 
 	unlocking_technologies = {
-		union_trade
+		union_new_mandates
 	}
 
 	selectable = {
