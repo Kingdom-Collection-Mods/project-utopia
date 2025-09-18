@@ -93,7 +93,7 @@ ut_influence_new_dawn_major_power = {
 				text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT
 				scope:target_country.relations:root > relations_threshold:poor
 			}
-
+			ut_service_workers_possible = yes
 			pop_type_percent_country = {
 				pop_type = service_workers
 				percent > 0.01
