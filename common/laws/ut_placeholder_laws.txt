@@ -6,6 +6,10 @@
 		always = no
 	}
 
+	can_enact = {
+		always = no
+	}
+
 	progressiveness = 0
 
 	unlocking_technologies = {
@@ -52,6 +56,11 @@ law_lgbt_rights_1 = {
 		always = no
 	}
 
+	can_enact = {
+		always = no
+	}
+
+
 	progressiveness = 0
 
 	unlocking_technologies = {
@@ -77,6 +86,11 @@ law_lgbt_rights_2 = {
 		always = no
 	}
 
+	can_enact = {
+		always = no
+	}
+
+
 	progressiveness = 50
 
 	unlocking_technologies = {
@@ -100,6 +114,11 @@ law_lgbt_rights_3 = {
 	is_visible = {
 		always = no
 	}
+
+	can_enact = {
+		always = no
+	}
+
 
 	progressiveness = 100
 
