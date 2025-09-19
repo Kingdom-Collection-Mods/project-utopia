@@ -55,6 +55,44 @@ ultra_heavy_industry_harbor = {
 	}
 }
 
+placeholder_heavy_industry_harbor = {
+
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/container_harbor.dds"
+	category = military
+
+	unlocking_technologies = {	
+		support_ships_mine_sweeper
+		ultra_heavy_industry_harbor
+	}
+	
+	modifier = {
+		#state_building_port_max_level_add = 4
+    }
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+placeholder_2_heavy_industry_harbor = {
+
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/container_harbor.dds"
+	category = military
+
+	unlocking_technologies = {	ultra_heavy_industry_harbor
+	}
+	
+	modifier = {
+		#state_building_port_max_level_add = 4
+    }
+
+	ai_weight = {
+		value = 1
+	}
+}
+
 # Ships
 
 light_ships_rockets_base = {
@@ -428,7 +466,6 @@ ut_tank_future = {
 
 # Tank Tree End
 
-
 ut_war_planes = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/warplan_40s.dds"
@@ -498,6 +535,24 @@ ut_modern_planes = {
 		unit_occupation_mult = 0.2
 	}
 
+	ai_weight = {
+		value = 1
+	}
+}
+
+ut_rocket_factory = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/rocket_factory.dds"
+	category = military
+
+	unlocking_technologies = {
+		military_aviation
+	}
+	
+	modifier = {
+		factory_construction_speed_mult = 0.1
+	}
+	
 	ai_weight = {
 		value = 1
 	}
