@@ -770,6 +770,7 @@ ut_ideology_economical_corporatist_leader = {
 		law_no_social_security = disapprove
 		law_wage_subsidies = approve
 		law_old_age_pension = neutral
+		law_ut_disability_insurance = neutral
 		law_private_pension = approve
 	}
 
@@ -1477,7 +1478,8 @@ ut_social_feminism_leader = {
 		law_poor_laws = strongly_disapprove
 		law_no_social_security = strongly_disapprove
 		law_wage_subsidies = approve
-		law_old_age_pension = strongly_approve
+		law_old_age_pension = approve
+		law_ut_disability_insurance = strongly_approve
 		law_private_pension = strongly_disapprove
 	}
 

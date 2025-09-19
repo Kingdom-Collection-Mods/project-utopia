@@ -879,6 +879,7 @@ ideology_malthusian = {
 		law_no_social_security = neutral
 		law_wage_subsidies = disapprove
 		law_old_age_pension = strongly_disapprove
+		law_ut_disability_insurance = strongly_disapprove
 		law_private_pension = disapprove
 	}
 	

@@ -141,6 +141,7 @@ ideology_individualist = {
 		law_no_social_security = neutral
 		law_wage_subsidies = disapprove
 		law_old_age_pension = strongly_disapprove
+		law_ut_disability_insurance = strongly_disapprove
 		law_private_pension = approve
 	}
 	
@@ -201,6 +202,7 @@ ideology_stratocratic = {
 		law_poor_laws = neutral
 		law_wage_subsidies = disapprove
 		law_old_age_pension = disapprove
+		law_ut_disability_insurance = disapprove
 		law_private_pension = approve
 	}
 
@@ -236,6 +238,7 @@ ideology_oligarchic = {
 		law_poor_laws = neutral
 		law_wage_subsidies = disapprove
 		law_old_age_pension = disapprove
+		law_ut_disability_insurance = disapprove
 		law_private_pension = strongly_approve
 	}
 	
@@ -632,6 +635,7 @@ ideology_proletarian = {
 	
 	lawgroup_welfare = {
 		law_old_age_pension = strongly_approve
+		law_ut_disability_insurance = strongly_approve
 		law_wage_subsidies = approve
 		law_poor_laws = neutral
 		law_no_social_security = disapprove
@@ -765,6 +769,7 @@ ideology_socialist = {
 
 	lawgroup_welfare = {
 		law_old_age_pension = strongly_approve
+		law_ut_disability_insurance = strongly_approve
 		law_wage_subsidies = approve
 		law_poor_laws = neutral
 		law_no_social_security = disapprove
@@ -936,6 +941,7 @@ ideology_corporatist = {
 		law_no_social_security = disapprove
 		law_wage_subsidies = approve
 		law_old_age_pension = neutral
+		law_ut_disability_insurance = neutral
 		law_private_pension = approve
 	}
 

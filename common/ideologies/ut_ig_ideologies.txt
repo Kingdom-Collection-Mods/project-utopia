@@ -343,8 +343,9 @@ ideology_socialist_democratic = {
 	}
 
 	lawgroup_welfare = {
-		law_old_age_pension = strongly_approve
-		law_wage_subsidies = approve
+		law_old_age_pension = approve
+		law_ut_disability_insurance = strongly_approve
+		law_wage_subsidies = neutral
 		law_poor_laws = neutral
 		law_no_social_security = strongly_disapprove
 		law_private_pension = strongly_disapprove

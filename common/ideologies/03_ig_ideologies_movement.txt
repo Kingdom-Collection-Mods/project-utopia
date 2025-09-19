@@ -133,6 +133,7 @@ ideology_proletarian_movement = {
 	lawgroup_welfare = {
 		law_private_pension = disapprove
 		law_old_age_pension = strongly_approve
+		law_ut_disability_insurance = strongly_approve
 		law_wage_subsidies = approve
 		law_poor_laws = neutral
 		law_no_social_security = disapprove
@@ -200,6 +201,7 @@ ideology_socialist_movement = {
 
 	lawgroup_welfare = {
 		law_old_age_pension = strongly_approve
+		law_ut_disability_insurance = strongly_approve
 		law_wage_subsidies = approve
 		law_poor_laws = neutral
 		law_no_social_security = disapprove
@@ -478,6 +480,7 @@ ideology_corporatist_movement = {
 		law_no_social_security = disapprove
 		law_wage_subsidies = approve
 		law_old_age_pension = neutral
+		law_ut_disability_insurance = neutral
 		law_private_pension = approve
 	}
 }
