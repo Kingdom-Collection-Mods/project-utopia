@@ -695,7 +695,7 @@ pm_supermarket = {
 			goods_input_steel_add = 2
 			goods_input_electronics_add = 2
 			goods_input_electricity_add = 1
-			goods_output_services_add = 50
+			goods_output_services_add = 60
 			goods_output_consumer_goods_add = 2
 		}
 
@@ -723,14 +723,14 @@ pm_shopping_district = {
 			goods_input_heavy_machinery_add = 1
 			goods_input_computers_add = 1
 			goods_input_electricity_add = 1
-			goods_output_services_add = 70
+			goods_output_services_add = 90
 			goods_output_internet_add = 2
 			goods_output_consumer_goods_add = 2
 		}
 
 		level_scaled = {
-			building_employment_clerks_add = 1000
-			building_employment_laborers_add = 1000
+			building_employment_clerks_add = 1500
+			building_employment_laborers_add = 500
 			building_employment_shopkeepers_add = 500
 			building_employment_service_workers_add = 2000 
 		}
