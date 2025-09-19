@@ -1,6 +1,6 @@
 ﻿ut_research_agreement = {
 	kind = mutual
-	cost = 100
+	cost = 300
 
 	relations_progress_per_day = 1
 	relations_improvement_max = 30
@@ -16,7 +16,7 @@
 
 	mutual_exclusions = {
 		ut_research_agreement
-		ut_share_research
+		ut_research_assistance_treaty
 	}
 
 	unlocked_by_technologies = {
@@ -42,12 +42,18 @@
 			scope:first_country = {
 				country_rank >= rank_value:major_power
 			}
+		}
+	}
+
+	requirement_to_maintain = {
+		trigger = {
 			scope:second_country = {
 				country_rank >= rank_value:major_power
 			}
 		}
 	}
 
+			
 	requirement_to_maintain = {
 		trigger = {
 			custom_tooltip = {
@@ -498,7 +504,7 @@
 
 ut_research_assistance_treaty = {
 	kind = directed
-	cost = 50
+	cost = 150
 
 	relations_progress_per_day = 1
 	relations_improvement_max = 20
@@ -513,7 +519,7 @@ ut_research_assistance_treaty = {
 	usage_limit = once_per_treaty
 
 	mutual_exclusions = {
-		ut_share_research
+		ut_research_assistance_treaty
 		ut_research_agreement
 	}
 
@@ -542,7 +548,9 @@ ut_research_assistance_treaty = {
 
 	requirement_to_maintain = {
 		trigger = {
-			country_rank >=  rank_value:great_power
+			scope:source_country = {
+				country_rank >=  rank_value:great_power
+			}
 		}
 	}
 
@@ -568,7 +576,7 @@ ut_research_assistance_treaty = {
 		scope:source_country = {
 			NOT = {
 				custom_description = {
-					text = has_treaty_ut_research_agreement_with_trigger
+					text = has_treaty_ut_research_assistance_treaty_with_trigger
 					subject = this
 					object = scope:target_country
 
@@ -583,7 +591,7 @@ ut_research_assistance_treaty = {
 							}
 						}
 						any_scope_article = {
-							has_type = ut_research_agreement
+							has_type = ut_research_assistance_treaty
 						}
 					}
 				}
@@ -675,25 +683,25 @@ ut_research_assistance_treaty = {
 					OR = {
 						AND = {
 							has_modifier = ut_new_dawn_core_democratic_mod
-							scope:second_country = {
+							scope:target_country = {
 								has_modifier = ut_new_dawn_core_democratic_mod
 							}
 						}
 						AND = {
 							has_modifier = ut_new_dawn_core_autocratic_mod
-							scope:second_country = {
+							scope:target_country = {
 								has_modifier = ut_new_dawn_core_autocratic_mod
 							}
 						}
 						AND = {
 							has_modifier = ut_new_dawn_core_fascist_mod
-							scope:second_country = {
+							scope:target_country = {
 								has_modifier = ut_new_dawn_core_fascist_mod
 							}
 						}
 						AND = {
 							has_modifier = ut_new_dawn_core_communist_mod
-							scope:second_country = {
+							scope:target_country = {
 								has_modifier = ut_new_dawn_core_communist_mod
 							}
 						}
@@ -701,7 +709,7 @@ ut_research_assistance_treaty = {
 				}
 				add = {
 					desc = "UT_BOTH_SAME_IDEOLOGY"
-					value = 100
+					value = 50
 				}
 			}
 
