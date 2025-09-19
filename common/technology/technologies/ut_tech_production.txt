@@ -149,6 +149,7 @@ bauxite_mining = {
 	category = production
 
 	unlocking_technologies = {	
+		electric_arc_process
 	}
 
 	modifier = {

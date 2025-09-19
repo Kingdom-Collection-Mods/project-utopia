@@ -575,6 +575,8 @@
  law_demobilized_desc: "Massive downsizing of the armed forces and reallocation of resources to the civilian economy."
  law_private_pension: "Private Pension"
  law_private_pension_desc: ""
+ law_ut_disability_insurance: "Disability Insurance"
+ law_ut_disability_insurance_desc: "Financial support to integrate individuals who are unable to work due to disability into society."
  law_ut_minimum_wage: "Minimum Wage"
  law_ut_minimum_wage_desc: ""
  law_decolonization: "Decolonization"
