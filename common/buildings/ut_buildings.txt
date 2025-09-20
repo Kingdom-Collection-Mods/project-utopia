@@ -416,6 +416,8 @@ building_ut_research_institute = {
 
 	unlocking_technologies = { 
 		electronics
+		ut_rocket_factory
+		compulsory_secondary_school
 	}
 
 	production_method_groups = {
