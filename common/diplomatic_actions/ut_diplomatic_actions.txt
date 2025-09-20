@@ -1,4 +1,4 @@
-ut_humiliate_power_bloc_goal = {
+﻿ut_humiliate_power_bloc_goal = {
 	groups= {
 		general
 	}
@@ -693,6 +693,84 @@ ut_share_nuclear_power_research = {
 		propose_score = {
 			value = 1
 			#will do if can, but low chance
+		}
+	}
+}
+
+
+ut_claim_nation = {
+	groups= {
+		general
+	}
+	requires_approval = no
+	
+	unlocking_technologies = {
+		union_new_mandates_two
+	}
+	
+	selectable = {
+		NOT = { is_country_type = decentralized }
+		is_revolutionary = no
+		country_rank >= rank_value:great_power
+		#has_variable = ut_new_dawn_core_fascist_var
+	}
+	
+	potential = {
+		scope:target_country = {
+			is_subject = no
+		}
+	}
+	
+	possible = {
+		NOT = {
+			num_diplomatic_pacts = {
+				type = ut_claim_nation
+				value > 1
+			}
+		}
+		scope:target_country = {
+			is_adjacent_to_country = root
+		}
+	}
+	
+	accept_effect = {
+		add_journal_entry = {
+			type = je_ut_new_dawn_fascist_claim_nation
+			target = scope:target_country
+		}
+	}
+	
+	pact = {
+		cost = 1000
+
+		is_two_sided_pact = no
+
+		weekly_effect = {
+			#
+		}
+
+		requirement_to_maintain = {
+			trigger = {
+				is_adjacent_to_country = scope:target_country
+				scope:target_country = {
+					is_subject = no
+				}
+			}
+		}
+	}
+
+	ai = {
+		evaluation_chance = {
+			value = 0 #.01 # AI shouldn't volunteer into power blocs all that often
+		}		
+	
+		
+		will_propose = {  
+			always = no
+		}
+		
+		propose_score = {
+			value = 0
 		}
 	}
 }

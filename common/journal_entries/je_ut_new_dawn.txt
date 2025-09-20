@@ -814,3 +814,178 @@ je_ut_new_dawn_communist = {
 
 	should_be_pinned_by_default = yes
 }
+
+je_ut_new_dawn_fascist_claim_nation = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	group = je_group_utopia
+	
+	immediate = {
+		ut_set_new_dawn_variables = yes
+		if = {
+			limit = {
+				NOT = { has_global_variable = je_ut_new_dawn_global_started }
+			}
+			set_global_variable = je_ut_new_dawn_global_started
+			set_variable = je_ut_new_dawn_first_started
+		}
+	}
+
+	scripted_button = je_ut_new_dawn_fascist_claim_nation_abort
+
+	scripted_progress_bar = je_ut_new_dawn_fascist_claim_nation_bar
+
+	complete = {
+		custom_tooltip = {
+			text = je_ut_new_dawn_condition_tt
+			has_variable = je_ut_new_dawn_done #Can only ever complete upon finishing the Cement the Rightful ideology journal entry.
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = {
+			text = je_ut_new_dawn_effect_tt
+			ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+		}
+		annex = scope:target
+	}
+
+	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = ut_new_dawn_democrat_status_je
+				trigger = {	
+					has_journal_entry = je_ut_new_dawn_democratic
+				}
+			}
+			triggered_desc = { # In the lead and on the throne
+				desc = ut_new_dawn_democrat_status
+				trigger = {
+					AND = {
+						scope:journal_entry = { 
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+						}
+					}
+				}
+			}
+			triggered_desc = { # In the lead and on the throne
+				desc = ut_new_dawn_fascist_status
+				trigger = {
+					AND = {
+						scope:journal_entry = { 
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)" 
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+						}
+					}
+				}
+			}
+			triggered_desc = {
+				desc = ut_new_dawn_communist_status
+				trigger = {
+					scope:journal_entry = { 
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+					}
+				}
+			}
+			triggered_desc = {
+				desc = ut_new_dawn_autocrat_status
+				trigger = {
+					scope:journal_entry = { 
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+					}
+				}
+			}
+		}
+	}
+
+	# on_weekly_pulse = {
+	# 	events = {
+	# 		event_new_dawn.1
+	# 	}
+	# 	effect = {
+	# 		if = {
+	# 			limit = {
+	# 				NOT = {
+	# 					has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 480 with one ideology. It's reset when this JE is completed, or when je_cement_the_rightful_ideology fails.
+	# 				}
+	# 			}
+	# 			#Calculates how much the each core ideology will get next month. Updates weekly, but is not added until the monthly.
+	# 			ut_new_dawn_fascist_progress = yes 
+	# 			ut_new_dawn_democrat_progress = yes
+	# 			ut_new_dawn_communist_progress = yes
+	# 			ut_new_dawn_autocrat_progress = yes
+	# 		}
+	# 	}
+	# }
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					scope:journal_entry = { 
+						OR = {
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= new_dawn_core_upper_bound
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" >= new_dawn_core_upper_bound
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" >= new_dawn_core_upper_bound
+							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" >= new_dawn_core_upper_bound
+						}
+					}
+					NOT = {
+						has_variable = ut_new_dawn_bar_freeze
+					}
+				}
+				ut_freeze_new_dawn_progress = yes #Freezes the bars so that they no longer accumulate progress on the monthly tick, and stay as they are. In the case that Cement the Rightful ideology fails, the bars will be set back.
+				if = {
+					limit = {
+						scope:journal_entry = { 
+							OR = {
+								AND = {
+									"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+									"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+									"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+									root = { has_modifier = je_ut_new_dawn_democrat_focus }
+								}
+								AND = {
+									"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+									"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+									"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+									root = { has_modifier = je_ut_new_dawn_autocrat_focus }
+								}
+								AND = {
+									"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+									"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+									"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+									root = { has_modifier = je_ut_new_dawn_communist_focus }
+								}
+								AND = {
+									"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+									"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+									"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+									root = { has_modifier = je_ut_new_dawn_fascist_focus }
+								}
+							}
+						}
+					}
+					trigger_event = { id = event_new_dawn.2 popup = yes} #Reinforcement event - fires if the leading ideology is the one in power.
+				}
+				else = {
+					trigger_event = { id = event_new_dawn.3 popup = yes} #Coup event - fires if the leading ideology is not the one in power.
+				}
+			}
+		}
+		random_events = {
+			400 = 0
+		}
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}
