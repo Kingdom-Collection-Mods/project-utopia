@@ -62,7 +62,11 @@ ut_research_institute_found = {
 	}
 
 	possible = {
-		has_technology_researched = electronics
+		OR = {
+			has_technology_researched = electronics
+			has_technology_researched = ut_rocket_factory
+			has_technology_researched = compulsory_secondary_school			
+		}
 		produced_bureaucracy > 500
 		any_scope_state = {
 			is_incorporated = yes
