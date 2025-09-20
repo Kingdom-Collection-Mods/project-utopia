@@ -47,7 +47,6 @@ ultra_heavy_industry_harbor = {
 	}
 	
 	modifier = {
-		#state_building_port_max_level_add = 4
     }
 
 	ai_weight = {
@@ -55,10 +54,10 @@ ultra_heavy_industry_harbor = {
 	}
 }
 
-placeholder_heavy_industry_harbor = {
+ut_global_positioning_system = {
 
 	era = era_7
-	texture = "gfx/interface/icons/invention_icons/container_harbor.dds"
+	texture = "gfx/interface/icons/invention_icons/electronic_counter_measures.dds"
 	category = military
 
 	unlocking_technologies = {	
@@ -67,7 +66,7 @@ placeholder_heavy_industry_harbor = {
 	}
 	
 	modifier = {
-		#state_building_port_max_level_add = 4
+		building_trade_center_throughput_add = 0.2
     }
 
 	ai_weight = {
@@ -75,7 +74,7 @@ placeholder_heavy_industry_harbor = {
 	}
 }
 
-placeholder_2_heavy_industry_harbor = {
+ut_intermodal_container = {
 
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/container_harbor.dds"
@@ -85,7 +84,7 @@ placeholder_2_heavy_industry_harbor = {
 	}
 	
 	modifier = {
-		#state_building_port_max_level_add = 4
+		building_port_throughput_add = 0.2
     }
 
 	ai_weight = {
@@ -542,7 +541,7 @@ ut_modern_planes = {
 
 ut_rocket_factory = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/rocket_factory.dds"
+	texture = "gfx/interface/icons/invention_icons/guided_missiles.dds"
 	category = military
 
 	unlocking_technologies = {
