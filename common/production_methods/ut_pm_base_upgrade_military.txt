@@ -1,4 +1,4 @@
-
+﻿
 pm_ut_jetplane_production = {
 	texture = "gfx/interface/icons/production_method_icons/aeroplanes.dds"
 
@@ -17,7 +17,7 @@ pm_ut_jetplane_production = {
 			goods_output_automobiles_add = -10
 
 			# output goods
-			goods_output_aeroplanes_add = 30
+			goods_output_utopia_jet_planes_add=20
 		}
 
 		level_scaled = {
@@ -44,7 +44,7 @@ pm_ut_modern_tank_production = {
 			goods_output_automobiles_add = -10
 
 			# output goods
-			goods_output_tanks_add = 20
+			goods_output_utopia_tanks_add = 20
 		}
 		
 		level_scaled = {
