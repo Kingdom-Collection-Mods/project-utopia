@@ -385,3 +385,20 @@ ut_lgbt_sexual_self_determination = {
 		value = 0
 	}
 }
+
+ut_law_tax_code_amend = {
+	is_shown = {
+		has_law = law_type:ut_law_tax_code
+	}
+
+	possible = {
+		always = no
+	}
+
+	when_taken = {
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}

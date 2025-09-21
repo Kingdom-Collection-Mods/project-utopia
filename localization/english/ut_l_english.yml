@@ -532,6 +532,9 @@
  law_state_capitalism_economy_desc: "A system where the state controls key industries and resources to promote national interests and ensure economic stability."
  law_corporate_economy: "Corporate Economy"
  law_corporate_economy_desc: "A system where corporations and the state work closely together to promote economic interests and ensure social stability."
+ ut_law_tax_code: "Tax Code"
+ ut_law_tax_code_desc: "A comprehensive tax system that allows for additional tax edicts."
+
 
  law_free_trade_union: "Free Trade Network"
  law_free_trade_union_desc: "A confederation of states that eliminates internal trade barriers and pursues a common tariff policy to promote economic interests."

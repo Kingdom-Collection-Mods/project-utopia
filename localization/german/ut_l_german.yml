@@ -526,6 +526,8 @@
  law_state_capitalism_economy_desc: "Ein Wirtschaftssystem, in dem der Staat die Kontrolle über Schlüsselindustrien und Ressourcen ausübt, um nationale Interessen zu fördern und wirtschaftliche Stabilität zu gewährleisten."
  law_corporate_economy: "Korporatismus"
  law_corporate_economy_desc: "Ein System, in dem Unternehmen und Staat eng zusammenarbeiten, um wirtschaftliche Interessen zu fördern und soziale Stabilität zu gewährleisten."
+ ut_law_tax_code: "Steuergesetz"
+ ut_law_tax_code_desc: "Ein umfassendes Steuersystem, das zusätzliche Steuererlassmöglichkeiten bietet."
 
  law_free_trade_union: "Freihandelsblock"
  law_free_trade_union_desc: "Ein Staatenbund, der interne Handelsbarrieren abschafft und eine gemeinsame Zollpolitik zur Förderung wirtschaftlicher Interessen verfolgt."
