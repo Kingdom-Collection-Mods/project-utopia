@@ -152,7 +152,7 @@
  je_ut_new_dawn_condition_tt: "Demokratischen, Autokratischen, Kommunistischen oder Faschistischen Pfad abgeschlossen."
  je_ut_new_dawn_effect_tt: "Schaltet Endgame Ideen frei (tbd)"
  new_dawn_mod: "New Dawn"
-new_dawn_phase_2_mod: "New Dawn: Reinforce Ideology"
+ new_dawn_phase_2_mod: "New Dawn: Reinforce Ideology"
 
  event_new_dawn.1.t: "New Dawn"
  event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."

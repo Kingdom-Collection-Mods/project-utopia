@@ -80,7 +80,8 @@ ut_intermodal_container = {
 	texture = "gfx/interface/icons/invention_icons/container_harbor.dds"
 	category = military
 
-	unlocking_technologies = {	ultra_heavy_industry_harbor
+	unlocking_technologies = {	
+		ultra_heavy_industry_harbor
 	}
 	
 	modifier = {
