@@ -2,6 +2,7 @@
 ###<<<
 ###>>>
 ###
+#vanilla
 invite_to_power_bloc = {
 	requires_approval = yes
 	can_use_obligations = yes
