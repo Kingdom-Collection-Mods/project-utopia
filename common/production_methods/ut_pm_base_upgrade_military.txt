@@ -1,4 +1,4 @@
-﻿
+
 pm_ut_jetplane_production = {
 	texture = "gfx/interface/icons/production_method_icons/aeroplanes.dds"
 
@@ -50,6 +50,125 @@ pm_ut_modern_tank_production = {
 		level_scaled = {
 			# employment
 			building_employment_engineers_add = 500
+		}
+	}
+}
+
+ut_pm_semi_automatic_rifles = {
+	texture = "gfx/interface/icons/production_method_icons/bolt_action_rifles.dds"
+
+	unlocking_technologies = {
+		ut_anti_tank
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_steel_add = 20
+			goods_input_hardwood_add = 10
+			goods_input_tools_add = 20
+			goods_input_oil_add = 10
+			goods_input_heavy_machinery_add = 2
+
+			# output goods
+			goods_output_utopia_arms_add = 100
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_shopkeepers_add = 500
+			building_employment_laborers_add = 2500
+			building_employment_machinists_add = 1250
+			building_employment_engineers_add = 750
+		}
+	}
+}
+
+
+ut_pm_full_automatic_rifles = {
+	texture = "gfx/interface/icons/production_method_icons/bolt_action_rifles.dds"
+
+	unlocking_technologies = {
+		ut_anti_tank_guided
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_steel_add = 20
+			goods_input_hardwood_add = 10
+			goods_input_tools_add = 20
+			goods_input_oil_add = 10
+			goods_input_heavy_machinery_add = 8
+
+			# output goods
+			goods_output_utopia_arms_add = 140
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_shopkeepers_add = 500
+			building_employment_laborers_add = 2500
+			building_employment_machinists_add = 1250
+			building_employment_engineers_add = 750
+		}
+	}
+}
+
+ut_pm_hydraulic_recoil_mechanism = {
+	texture = "gfx/interface/icons/production_method_icons/recoil_mechanism_artillery_production.dds"
+
+	unlocking_technologies = {
+		automatic_machine_guns
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_steel_add = 40
+			goods_input_tools_add = 20
+			goods_input_oil_add = 10
+			goods_input_heavy_machinery_add = 2
+			goods_input_engines_add = 5
+
+			# output goods
+			goods_output_utopia_artillery_add = 70
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+			building_employment_laborers_add = 2500
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 750
+		}
+	}
+}
+
+ut_pm_self_propelled_artillery = {
+	texture = "gfx/interface/icons/production_method_icons/recoil_mechanism_artillery_production.dds"
+
+	unlocking_technologies = {
+		automatic_machine_guns
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_steel_add = 40
+			goods_input_tools_add = 20
+			goods_input_oil_add = 10
+			goods_input_heavy_machinery_add = 10
+			goods_input_engines_add = 10
+
+			# output goods
+			goods_output_utopia_artillery_add = 90
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+			building_employment_laborers_add = 2500
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 750
 		}
 	}
 }

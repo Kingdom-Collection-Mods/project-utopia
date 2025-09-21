@@ -1,4 +1,4 @@
-﻿
+
 pm_precision_tools_heavy_machinery = {
 	texture = "gfx/interface/icons/production_method_icons/radios.dds"
 		
@@ -916,7 +916,40 @@ pm_assembly_lines_building_heavy_machinery_power = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -3000
+			building_employment_laborers_add = -2500
+			building_employment_machinists_add = -750
+		}
+	}
+
+	required_input_goods = electricity
+}
+
+pm_assembly_lines_building_heavy_machinery_arms = {
+	texture = gfx/interface/icons/production_method_icons/ut_assembly_lines.dds
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	
+	unlocking_technologies = {
+		heavy_machinery_era_analog_two
+	}
+
+	disallowing_laws = {
+		law_industry_banned
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_oil_add = 5
+			goods_input_electricity_add = 10
+			goods_input_heavy_machinery_add = 1
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -2500
 			building_employment_machinists_add = -750
 		}
 	}

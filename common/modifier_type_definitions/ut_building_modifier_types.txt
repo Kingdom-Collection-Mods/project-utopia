@@ -258,6 +258,84 @@ goods_input_consumer_goods_add={
 	}
 }
 
+goods_output_utopia_arms_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_utopia_arms_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_output_utopia_artillery_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_utopia_artillery_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_output_utopia_tanks_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_utopia_tanks_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_output_utopia_jet_planes_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+goods_input_utopia_jet_planes_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_output_utopia_battleship_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+goods_input_utopia_battleship_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
 building_commercial_factory_throughput_add={
 	decimals=0
 	color=good

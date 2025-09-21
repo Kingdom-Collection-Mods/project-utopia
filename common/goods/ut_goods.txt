@@ -89,3 +89,54 @@ consumer_goods = {
 	
 	prestige_factor = 5
 }
+
+utopia_arms  = {
+	texture = "gfx/interface/icons/goods_icons/small_arms.dds"
+	cost = 80
+	category = military
+
+	obsession_chance = 0.5
+	prestige_factor = 5
+	traded_quantity = 4 # 240
+}
+
+utopia_artillery = {
+	texture = "gfx/interface/icons/goods_icons/artillery.dds"
+	cost = 90
+	category = military
+
+	prestige_factor = 5
+	traded_quantity = 3 # 245
+	convoy_cost_multiplier = 2
+}
+
+utopia_tanks = {
+	texture = "gfx/interface/icons/goods_icons/tanks.dds"
+	cost = 80
+	category = military
+
+	prestige_factor = 10
+	traded_quantity = 3 # 240
+	convoy_cost_multiplier = 2.0
+}
+
+utopia_jet_planes = {
+	texture = "gfx/interface/icons/goods_icons/aeroplanes.dds"
+	cost = 80
+	category = military
+
+	obsession_chance = 0.5
+	prestige_factor = 10
+	traded_quantity = 3 # 240
+	convoy_cost_multiplier = 2.0
+}
+
+utopia_battleship = {
+	texture = "gfx/interface/icons/goods_icons/ironclads.dds"
+	cost = 100
+	category = military
+
+	prestige_factor = 10
+	traded_quantity = 3 # 280
+	convoy_cost_multiplier = 1
+}

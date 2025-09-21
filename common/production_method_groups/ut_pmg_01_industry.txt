@@ -1,4 +1,4 @@
-﻿pmg_base_building_food_industry = {
+pmg_base_building_food_industry = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_bakery
@@ -326,17 +326,19 @@ pmg_radios_category = {
 	}
 }
 
-# pmg_firearms_manufacturing = {
-# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-# 	ai_selection = most_productive
+pmg_firearms_manufacturing = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
 
-# 	production_methods = {
-# 		pm_muskets
-# 		pm_rifles
-# 		pm_repeaters
-# 		pm_bolt_action_rifles
-# 	}
-# }
+	production_methods = {
+		pm_muskets
+		pm_rifles
+		pm_repeaters
+		pm_bolt_action_rifles
+		ut_pm_semi_automatic_rifles
+		ut_pm_full_automatic_rifles
+	}
+}
 
 pmg_automation_building_arms_industry = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
@@ -344,21 +346,23 @@ pmg_automation_building_arms_industry = {
 		pm_automation_disabled
 		pm_rotary_valve_engine_building_arms_industry
 		pm_assembly_lines_building_arms_industry
-		pm_assembly_lines_building_heavy_machinery_power
+		pm_assembly_lines_building_heavy_machinery_arms
 	}
 }
 
-# pmg_foundries = {
-# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-# 	ai_selection = most_productive
+pmg_foundries = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
 
-# 	production_methods = {
-# 		pm_cannons
-# 		pm_smoothbores
-# 		pm_breech_loaders
-# 		pm_recoiled_barrels
-# 	}
-# }
+	production_methods = {
+		pm_cannons
+		pm_smoothbores
+		pm_breech_loaders
+		pm_recoiled_barrels
+		ut_pm_hydraulic_recoil_mechanism
+		ut_pm_self_propelled_artillery
+	}
+}
 
 # pmg_base_building_munition_plants = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"

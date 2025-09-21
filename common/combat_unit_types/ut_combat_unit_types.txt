@@ -70,11 +70,11 @@ combat_unit_type_armored_infantry = {
 	max_manpower = 1000
 
     upkeep_modifier = {
-        goods_input_small_arms_add = 3
+        goods_input_utopia_arms_add = 3
         goods_input_ammunition_add = 3
         goods_input_oil_add = 1
         goods_input_radios_add = 1
-        goods_input_tanks_add = 3
+        goods_input_utopia_tanks_add = 3
         goods_input_electronics_add = 2
     }
     
@@ -105,11 +105,11 @@ combat_unit_type_task_force_infantry = {
     }
 
     upkeep_modifier = {
-        goods_input_small_arms_add = 4
+        goods_input_utopia_arms_add = 4
         goods_input_ammunition_add = 4
         goods_input_oil_add = 1
         goods_input_radios_add = 1
-        goods_input_tanks_add = 3
+        goods_input_utopia_tanks_add = 3
         goods_input_computers_add = 1
     }
     
@@ -239,7 +239,7 @@ combat_unit_type_motorized_artillery = {
 
     upkeep_modifier = {
         goods_input_tanks_add = 3
-        goods_input_artillery_add = 4
+        goods_input_utopia_artillery_add = 4
 		goods_input_ammunition_add = 4
         goods_input_radios_add = 1
         goods_input_oil_add = 3
@@ -278,8 +278,8 @@ combat_unit_type_rocket_artillery = {
     
     
     upkeep_modifier = {
-        goods_input_tanks_add = 3
-        goods_input_artillery_add = 5
+        goods_input_utopia_tanks_add = 3
+        goods_input_utopia_artillery_add = 5
 		goods_input_ammunition_add = 5
         goods_input_radios_add = 1
         goods_input_oil_add = 3
@@ -411,18 +411,57 @@ combat_unit_type_support_systems = {
     
     upkeep_modifier = {
         goods_input_tanks_add = 2
-        goods_input_artillery_add = 2
+        goods_input_utopia_artillery_add = 2
         goods_input_oil_add = 2
         goods_input_ammunition_add = 2
         goods_input_radios_add = 2
-        goods_input_aeroplanes_add = 1
+        goods_input_aeroplanes_add = 2
+        goods_input_heavy_machinery_add = 1
+        goods_input_computers_add = 1
+    }
+
+    battle_modifier = {
+        unit_offense_add = 55
+        unit_defense_add = 60
+        unit_morale_loss_add = 2
+        unit_devastation_mult = 0.1
+        unit_occupation_mult = 0.4
+    }
+
+    formation_modifier = {
+        military_formation_mobilization_speed_mult = 0.3
+    }
+
+	unlocking_technologies = { ut_war_planes }
+
+    combat_unit_image = {
+        texture = "gfx/unit_illustrations/cavalry_light_support_systems.dds"
+    }
+
+    upgrades = {
+        combat_unit_type_lancers
+        combat_unit_type_light_tanks
+    }
+}
+
+combat_unit_type_advanced_support_systems = {
+    group = combat_unit_group_cavalry
+	max_manpower = 1000
+    
+    upkeep_modifier = {
+        goods_input_utopia_tanks_add = 2
+        goods_input_utopia_artillery_add = 2
+        goods_input_oil_add = 2
+        goods_input_ammunition_add = 2
+        goods_input_radios_add = 2
+        goods_input_utopia_jet_planes_add = 2
         goods_input_heavy_machinery_add = 1
         goods_input_computers_add = 1
     }
 
     battle_modifier = {
         unit_offense_add = 60
-        unit_defense_add = 60
+        unit_defense_add = 65
         unit_morale_loss_add = 2
         unit_devastation_mult = 0.1
         unit_occupation_mult = 0.4
@@ -521,7 +560,7 @@ combat_unit_type_missile_corvettes = {
 	max_manpower = 1000
 
     upkeep_modifier = {
-        goods_input_ironclads_add = 3
+        goods_input_utopia_battleship_add = 3
         goods_input_ammunition_add = 3
         goods_input_artillery_add = 3
         goods_input_radios_add = 1
@@ -557,7 +596,7 @@ combat_unit_type_surveillance_corvettes = {
 	max_manpower = 1000
 
     upkeep_modifier = {
-        goods_input_ironclads_add = 3
+        goods_input_utopia_battleship_add = 3
         goods_input_ammunition_add = 3
         goods_input_artillery_add = 3
         goods_input_radios_add = 1
@@ -629,7 +668,7 @@ combat_unit_type_capital_battleship = {
 	max_manpower = 1000
 
     upkeep_modifier = {
-        goods_input_ironclads_add = 10
+        goods_input_utopia_battleship_add = 10
 		goods_input_artillery_add = 10
         goods_input_ammunition_add = 10
         goods_input_radios_add = 4
@@ -731,7 +770,7 @@ combat_unit_type_modern_submarine = {
 	max_manpower = 1000
 
     upkeep_modifier = {
-        goods_input_ironclads_add = 2
+        goods_input_utopia_battleship_add = 2
         goods_input_artillery_add = 2
         goods_input_ammunition_add = 2
 		goods_input_radios_add = 2
@@ -763,7 +802,7 @@ combat_unit_type_super_carrier = {
 	max_manpower = 1000
 
     upkeep_modifier = {
-        goods_input_ironclads_add = 8
+        goods_input_utopia_battleship_add = 8
         goods_input_ammunition_add = 8
         goods_input_radios_add = 4
         goods_input_aeroplanes_add = 10
