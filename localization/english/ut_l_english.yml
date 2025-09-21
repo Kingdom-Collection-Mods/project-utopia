@@ -128,7 +128,6 @@
  ut_share_nuclear_power_research_desc: "Share the knowledge and advancements gained from our nuclear power research."
  ut_share_nuclear_power_research_action_name: "$ut_share_nuclear_power_research_name$"
  ut_share_nuclear_power_research_action_propose_name: "Propose $ut_share_nuclear_power_research_action_name$"
- 
  ut_share_nuclear_power_research_proposal_notification_name: "Nuclear Power Research Proposal"
  ut_share_nuclear_power_research_proposal_notification_desc: "A proposal to share nuclear power research has been sent."
  ut_share_nuclear_power_research_proposal_accepted_name: "$ut_share_nuclear_power_research_name$ accepted"
