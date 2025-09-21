@@ -1,4 +1,4 @@
-pmg_base_building_food_industry = {
+﻿pmg_base_building_food_industry = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_bakery
@@ -97,7 +97,7 @@ pmg_automation_building_furniture_manufacturies = {
 		pm_watertube_boiler_building_furniture_manufacturies
 		pm_rotary_valve_engine_building_furniture_manufacturies
 		pm_assembly_lines_building_furniture_manufacturies
-		pm_assembly_lines_building_heavy_machinery_tools_furniture
+		pm_assembly_lines_building_heavy_machinery_furniture
 	}
 }
 
@@ -119,7 +119,7 @@ pmg_automation_building_tooling_workshops = {
 		pm_watertube_boiler_building_tooling_workshops
 		pm_rotary_valve_engine_building_tooling_workshops
 		pm_assembly_lines_building_tooling_workshops
-		pm_assembly_lines_building_heavy_machinery_power
+		pm_assembly_lines_building_heavy_machinery_tools
 	}
 }
 
@@ -244,7 +244,7 @@ pmg_automation_building_motor_industry = {
 		pm_watertube_boiler_building_motor_industry
 		pm_rotary_valve_engine_building_motor_industry
 		pm_assembly_lines_building_motor_industry
-		pm_assembly_lines_building_heavy_machinery_tools_motors
+		pm_assembly_lines_building_heavy_machinery_cars
 	}
 }
 
@@ -305,7 +305,7 @@ pmg_automation_building_automotive_industry = {
 	production_methods = {
 		pm_automation_disabled
 		pm_assembly_lines_building_automotive_industry
-		pm_assembly_lines_building_heavy_machinery_tools_motors
+		pm_assembly_lines_building_heavy_machinery_cars
 	}
 }
 
@@ -382,6 +382,6 @@ pmg_automation_building_munition_plants = {
 		pm_automation_disabled
 		pm_rotary_valve_engine_building_munition_plants
 		pm_assembly_lines_building_munition_plants
-		pm_assembly_lines_building_heavy_machinery_power
+		pm_assembly_lines_building_heavy_machinery_arms
 	}
 }

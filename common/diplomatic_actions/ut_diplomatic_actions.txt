@@ -1,4 +1,4 @@
-ut_humiliate_power_bloc_goal = {
+﻿ut_humiliate_power_bloc_goal = {
 	groups= {
 		general
 	}

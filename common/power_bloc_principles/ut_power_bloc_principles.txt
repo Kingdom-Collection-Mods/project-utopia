@@ -1,4 +1,4 @@
-### See power_bloc_principle_groups for grouping, primary groups for identities etc.
+﻿### See power_bloc_principle_groups for grouping, primary groups for identities etc.
 
 ### CONSTRUCTION
 

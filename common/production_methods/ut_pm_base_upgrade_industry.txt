@@ -1,4 +1,4 @@
-
+﻿
 pm_precision_tools_heavy_machinery = {
 	texture = "gfx/interface/icons/production_method_icons/radios.dds"
 		
@@ -82,7 +82,7 @@ pm_ut_precision_tools = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 3000
+			building_employment_laborers_add = 2500
 			building_employment_shopkeepers_add = 500
 			building_employment_machinists_add = 750
 			building_employment_service_workers_add = 250
@@ -618,10 +618,9 @@ pm_computers_engines = {
 
 		level_scaled = {
 			building_employment_laborers_add = 1500
-			building_employment_machinists_add = 750
+			building_employment_machinists_add = 1000
 			building_employment_engineers_add = 2000
 			building_employment_shopkeepers_add = 500
-			building_employment_service_workers_add = 250
 		}
 	}
 }
@@ -825,7 +824,7 @@ pm_elastics_two = {
 }
 
 
-pm_assembly_lines_building_heavy_machinery_tools_motors = {
+pm_assembly_lines_building_heavy_machinery_cars = {
 	texture = gfx/interface/icons/production_method_icons/ut_assembly_lines.dds
 	
 	state_modifiers = {
@@ -858,7 +857,7 @@ pm_assembly_lines_building_heavy_machinery_tools_motors = {
 	required_input_goods = electricity
 }
 
-pm_assembly_lines_building_heavy_machinery_tools_furniture = {
+pm_assembly_lines_building_heavy_machinery_furniture = {
 	texture = gfx/interface/icons/production_method_icons/ut_assembly_lines.dds
 	
 	state_modifiers = {
@@ -891,7 +890,7 @@ pm_assembly_lines_building_heavy_machinery_tools_furniture = {
 	required_input_goods = electricity
 }
 
-pm_assembly_lines_building_heavy_machinery_power = {
+pm_assembly_lines_building_heavy_machinery_tools = {
 	texture = gfx/interface/icons/production_method_icons/ut_assembly_lines.dds
 
 	state_modifiers = {
