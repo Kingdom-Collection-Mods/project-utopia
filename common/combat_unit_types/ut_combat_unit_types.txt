@@ -474,7 +474,7 @@ combat_unit_type_advanced_support_systems = {
 	unlocking_technologies = { ut_jet_planes }
 
     combat_unit_image = {
-        texture = "gfx/unit_illustrations/cavalry_light_support_systems.dds"
+        texture = "gfx/unit_illustrations/cavalry_heavy_support_systems.dds"
     }
 
     upgrades = {
