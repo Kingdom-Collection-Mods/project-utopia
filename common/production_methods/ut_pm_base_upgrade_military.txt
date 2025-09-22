@@ -17,7 +17,7 @@ pm_ut_jetplane_production = {
 			goods_output_automobiles_add = -10
 
 			# output goods
-			goods_output_utopia_jet_planes_add=20
+			goods_output_utopia_jet_planes_add=10
 		}
 
 		level_scaled = {
@@ -55,10 +55,10 @@ pm_ut_modern_tank_production = {
 }
 
 ut_pm_semi_automatic_rifles = {
-	texture = "gfx/interface/icons/production_method_icons/bolt_action_rifles.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_semi_auto_rifles.dds"
 
 	unlocking_technologies = {
-		ut_anti_tank
+		ut_tank_radio
 	}
 
 	building_modifiers = {
@@ -86,10 +86,10 @@ ut_pm_semi_automatic_rifles = {
 
 
 ut_pm_full_automatic_rifles = {
-	texture = "gfx/interface/icons/production_method_icons/bolt_action_rifles.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_auto_rifles.dds"
 
 	unlocking_technologies = {
-		ut_anti_tank_guided
+		ut_tank_autoloader
 	}
 
 	building_modifiers = {
@@ -102,7 +102,7 @@ ut_pm_full_automatic_rifles = {
 			goods_input_heavy_machinery_add = 8
 
 			# output goods
-			goods_output_utopia_arms_add = 140
+			goods_output_utopia_arms_add = 120
 		}
 
 		level_scaled = {
@@ -116,10 +116,10 @@ ut_pm_full_automatic_rifles = {
 }
 
 ut_pm_hydraulic_recoil_mechanism = {
-	texture = "gfx/interface/icons/production_method_icons/recoil_mechanism_artillery_production.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_hydraulic_recoil_mechanism.dds"
 
 	unlocking_technologies = {
-		automatic_machine_guns
+		ut_tank_diesel_engine
 	}
 
 	building_modifiers = {
@@ -145,10 +145,10 @@ ut_pm_hydraulic_recoil_mechanism = {
 }
 
 ut_pm_self_propelled_artillery = {
-	texture = "gfx/interface/icons/production_method_icons/recoil_mechanism_artillery_production.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_self_artillery.dds"
 
 	unlocking_technologies = {
-		automatic_machine_guns
+		ut_anti_tank_guided_software
 	}
 
 	building_modifiers = {
