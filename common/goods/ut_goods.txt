@@ -91,7 +91,7 @@ consumer_goods = {
 }
 
 utopia_arms  = {
-	texture = "gfx/interface/icons/goods_icons/small_arms.dds"
+	texture = "gfx/interface/icons/goods_icons/utopia_arms.dds"
 	cost = 80
 	category = military
 
@@ -101,7 +101,7 @@ utopia_arms  = {
 }
 
 utopia_artillery = {
-	texture = "gfx/interface/icons/goods_icons/artillery.dds"
+	texture = "gfx/interface/icons/goods_icons/utopia_artillery.dds"
 	cost = 90
 	category = military
 
@@ -111,7 +111,7 @@ utopia_artillery = {
 }
 
 utopia_tanks = {
-	texture = "gfx/interface/icons/goods_icons/tanks.dds"
+	texture = "gfx/interface/icons/goods_icons/utopia_tanks.dds"
 	cost = 80
 	category = military
 
@@ -121,8 +121,8 @@ utopia_tanks = {
 }
 
 utopia_jet_planes = {
-	texture = "gfx/interface/icons/goods_icons/aeroplanes.dds"
-	cost = 80
+	texture = "gfx/interface/icons/goods_icons/utopia_jet_planes.dds"
+	cost = 90
 	category = military
 
 	obsession_chance = 0.5
@@ -132,7 +132,7 @@ utopia_jet_planes = {
 }
 
 utopia_battleship = {
-	texture = "gfx/interface/icons/goods_icons/ironclads.dds"
+	texture = "gfx/interface/icons/goods_icons/utopia_battleship.dds"
 	cost = 100
 	category = military
 
