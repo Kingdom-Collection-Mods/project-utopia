@@ -1,4 +1,4 @@
-STATE_URAL = {
+﻿STATE_URAL = {
     #done
     id = 566
     subsistence_building = "building_subsistence_farms"

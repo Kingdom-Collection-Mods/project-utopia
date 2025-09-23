@@ -1,4 +1,4 @@
-STATE_MALAYA = {
+﻿STATE_MALAYA = {
     id = 540
     subsistence_building = "building_subsistence_rice_paddies"
     traits = { "state_trait_natural_harbors" }
