@@ -47,7 +47,45 @@ ultra_heavy_industry_harbor = {
 	}
 	
 	modifier = {
-		#state_building_port_max_level_add = 4
+    }
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+ut_global_positioning_system = {
+
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/electronic_counter_measures.dds"
+	category = military
+
+	unlocking_technologies = {	
+		support_ships_mine_sweeper
+		ultra_heavy_industry_harbor
+	}
+	
+	modifier = {
+		building_trade_center_throughput_add = 0.2
+    }
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+ut_intermodal_container = {
+
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/container_harbor.dds"
+	category = military
+
+	unlocking_technologies = {	
+		ultra_heavy_industry_harbor
+	}
+	
+	modifier = {
+		building_port_throughput_add = 0.2
     }
 
 	ai_weight = {
@@ -428,7 +466,6 @@ ut_tank_future = {
 
 # Tank Tree End
 
-
 ut_war_planes = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/warplan_40s.dds"
@@ -498,6 +535,24 @@ ut_modern_planes = {
 		unit_occupation_mult = 0.2
 	}
 
+	ai_weight = {
+		value = 1
+	}
+}
+
+ut_military_complex = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/guided_missiles.dds"
+	category = military
+
+	unlocking_technologies = {
+		military_aviation
+	}
+	
+	modifier = {
+		building_munition_plants_throughput_add = 0.2
+	}
+	
 	ai_weight = {
 		value = 1
 	}

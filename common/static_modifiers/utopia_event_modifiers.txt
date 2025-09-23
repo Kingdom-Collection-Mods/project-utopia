@@ -101,8 +101,8 @@ ai_below_major_power_buff_spread = {
 
 ut_tech_preview_cheat_research_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	country_weekly_innovation_max_add = 6000
-	country_weekly_innovation_add = 6000
+	country_weekly_innovation_max_add = 8000
+	country_weekly_innovation_add = 8000
 }
 
 wirtschaftswunder_modifier = {
@@ -302,5 +302,6 @@ je_ut_new_dawn_suppress_dissidents_trade_unions_mod = {
 
 ut_released_colony = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	country_acceptance_culture_base_add = -50
+	country_acceptance_no_shared_heritage_trait_add = -30
+	country_acceptance_no_shared_language_trait_add = -30
 }

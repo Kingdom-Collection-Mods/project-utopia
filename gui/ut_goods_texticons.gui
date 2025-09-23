@@ -107,3 +107,48 @@ texticon = {
 		fontsize = 18
 	}
 }
+texticon = {
+	icon = utopia_arms
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/utopia_arms.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = utopia_artillery
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/utopia_artillery.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = utopia_tanks
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/utopia_tanks.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = utopia_jet_planes
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/utopia_jet_planes.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = utopia_battleship
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/utopia_battleship.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}

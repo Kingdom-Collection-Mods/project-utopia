@@ -87,7 +87,7 @@ for file in "$directory"/*; do
                                 # Add rare earths block once
                                 print "    resource = {"
                                 print "        type = \"bg_rare_earths_mining\""
-                                print "        undiscovered_amount = " amt
+                                print "        discovered_amount = " amt
                                 print "    }"
                                 continue
                             } else {

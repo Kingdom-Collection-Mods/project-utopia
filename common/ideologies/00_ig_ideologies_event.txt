@@ -47,6 +47,7 @@ ideology_modernizer = {
 		law_free_trade = neutral
 		law_free_trade_union= neutral
 		law_protectionism_union = neutral
+		law_international_trade = strongly_approve
 	}
 
 	lawgroup_childrens_rights = {
@@ -70,6 +71,7 @@ ideology_modernizer = {
 		law_corporate_economy = neutral
 		law_social_market_economy = strongly_approve
 		law_state_capitalism_economy = approve
+		law_industry_banned = strongly_disapprove
 	}
 }
 
@@ -86,6 +88,7 @@ ideology_liberal_modern = {
 		law_national_supremacy = disapprove
 		law_racial_segregation = neutral
 		law_cultural_exclusion = approve	
+		law_subjecthood = strongly_disapprove
 	}
 	
 	lawgroup_policing = {

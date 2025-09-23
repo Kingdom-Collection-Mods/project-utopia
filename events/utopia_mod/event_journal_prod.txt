@@ -672,47 +672,6 @@ utopia_journal_prod.42 = {
 	immediate = {
 		if = {
 			limit = {
-				any_scope_state = {
-					has_modifier = ut_research_institute_site_mod
-				}
-			}
-			random_scope_state = {
-				limit = {
-					has_modifier = ut_research_institute_site_mod
-				}
-				save_scope_as = hightech_computer_site
-			}
-		}
-		else_if = {
-			limit = {
-				capital = {
-					is_split_state = no
-					any_scope_building = {
-						is_building_type = building_computer_factory
-						level >= 10
-					}
-				}
-			}
-			capital = {
-				save_scope_as = hightech_computer_site
-			}
-		}
-		else = {
-			random_scope_state = {
-				limit = {
-					is_incorporated = yes
-					is_split_state = no
-					any_scope_building = {
-						is_building_type = building_computer_factory
-						level >= 10
-					}
-				}
-				save_scope_as = hightech_computer_site
-			}
-		}
-
-		if = {
-			limit = {
 				NOT = { has_global_variable = ut_first_high_tech_computer }
 			}
 			set_global_variable = ut_first_high_tech_computer
@@ -723,11 +682,6 @@ utopia_journal_prod.42 = {
 	option = {
 		name = utopia.progress_a
         default_option = yes
-        scope:hightech_computer_site = {
-        	add_modifier = {
-        		name = ut_high_tech_computer_site_mod
-        	}
-        }
         show_as_tooltip = {
         	remove_modifier = ut_research_high_tech_computers_research_mod
         }

@@ -128,7 +128,6 @@
  ut_share_nuclear_power_research_desc: "Share the knowledge and advancements gained from our nuclear power research."
  ut_share_nuclear_power_research_action_name: "$ut_share_nuclear_power_research_name$"
  ut_share_nuclear_power_research_action_propose_name: "Propose $ut_share_nuclear_power_research_action_name$"
- 
  ut_share_nuclear_power_research_proposal_notification_name: "Nuclear Power Research Proposal"
  ut_share_nuclear_power_research_proposal_notification_desc: "A proposal to share nuclear power research has been sent."
  ut_share_nuclear_power_research_proposal_accepted_name: "$ut_share_nuclear_power_research_name$ accepted"
@@ -532,6 +531,8 @@
  law_state_capitalism_economy_desc: "A system where the state controls key industries and resources to promote national interests and ensure economic stability."
  law_corporate_economy: "Corporate Economy"
  law_corporate_economy_desc: "A system where corporations and the state work closely together to promote economic interests and ensure social stability."
+ ut_law_tax_code: "Tax Code"
+ ut_law_tax_code_desc: "A comprehensive tax system that allows for additional tax edicts."
 
  law_free_trade_union: "Free Trade Network"
  law_free_trade_union_desc: "A confederation of states that eliminates internal trade barriers and pursues a common tariff policy to promote economic interests."
@@ -575,6 +576,8 @@
  law_demobilized_desc: "Massive downsizing of the armed forces and reallocation of resources to the civilian economy."
  law_private_pension: "Private Pension"
  law_private_pension_desc: ""
+ law_ut_disability_insurance: "Disability Insurance"
+ law_ut_disability_insurance_desc: "Financial support to integrate individuals who are unable to work due to disability into society."
  law_ut_minimum_wage: "Minimum Wage"
  law_ut_minimum_wage_desc: ""
  law_decolonization: "Decolonization"
@@ -595,8 +598,8 @@
  law_lgbt_rights_2_desc: "Consenting adults are no longer prosecuted but there is no recognition or safety. Censorship, unequal ages of consent, “public morals” rules keep people cautious and can still lead to violence."
  law_lgbt_rights_3: "Legal Protection"
  law_lgbt_rights_3_desc: "The state forbids discrimination and recognizes basic rights. Community life emerges in public, though backlash can flare and real progress depends on further enforcement and cultural progress."
- law_international_trade: "Placeholder"
- law_international_trade_desc: "Placeholder"
+ law_international_trade: "International Trade"
+ law_international_trade_desc: "Regulations and agreements governing trade between nations."
 
 
  institution_epa: "Environmental Protection"
@@ -620,7 +623,7 @@
 
  je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Has #v $je_ut_new_dawn_democrat_focus$#! modifier"
 
- ut_influence_new_dawn_major_power: "Spread Ideology"
+ ut_influence_new_dawn_major_power: "Spread New Dawn"
  ut_influence_new_dawn_major_power_desc: "Promote your ideology among major powers by starting their New Dawn and forcing them to focus on your ideology."
  ut_influence_new_dawn_major_power_action_name: "$ut_influence_new_dawn_major_power$"
  ut_influence_new_dawn_major_power_action_propose_name: "Start $ut_influence_new_dawn_major_power_action_name$"
@@ -666,6 +669,21 @@
  ut_research_agreement_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to establish a $ut_research_agreement$."
  has_treaty_ut_research_agreement_with_trigger: "Does not have a $ut_research_agreement$ with [ROOT.GetCountry.GetName]"
 
+ ut_research_assistance_treaty: "Research Agreement"
+ ut_research_assistance_treaty_desc: "Advancing together."
+ ut_research_assistance_treaty_action_name: "$ut_research_assistance_treaty$"
+ ut_research_assistance_treaty_action_propose_name: "Propose $ut_research_assistance_treaty$"
+ ut_research_assistance_treaty_action_propose_desc: "Propose a $ut_research_assistance_treaty$ with [TARGET_COUNTRY.GetName]."
+ ut_research_assistance_treaty_action_break_name: "[INITIATOR_COUNTRY.GetName] stops $ut_research_assistance_treaty$"
+ ut_research_assistance_treaty_action_break_desc: "[INITIATOR_COUNTRY.GetName] stopped $ut_research_assistance_treaty$."
+ ut_research_assistance_treaty_proposal_notification_name: "$ut_research_assistance_treaty$ Proposal"
+ ut_research_assistance_treaty_proposal_notification_desc: "A proposal to establish a $ut_research_assistance_treaty$ with [TARGET_COUNTRY.GetName] has been sent."
+ ut_research_assistance_treaty_proposal_accepted_name: "$ut_research_assistance_treaty$ Accepted"
+ ut_research_assistance_treaty_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our proposal to establish a $ut_research_assistance_treaty$."
+ ut_research_assistance_treaty_proposal_declined_name: "$ut_research_assistance_treaty$ Declined"
+ ut_research_assistance_treaty_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to establish a $ut_research_agreement$."
+
+
  ut_democracy_article: "Force democracy"
  ut_democracy_article_desc: "Impose democratic reforms on [TARGET_COUNTRY.GetName] (Requires a new treaty or being enforced)."
 
@@ -686,7 +704,7 @@
  ut_fund_ideology_proposal_declined_name: "$ut_fund_ideology$ Declined"
  ut_fund_ideology_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to $ut_fund_ideology$."
  ut_fund_ideology_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds aligned political groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], increasing [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] ideological progress in [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAdjectiveNoFormatting]'s ideology.\n\n$ut_fund_ideology_effect$"
- ut_fund_ideology_desc: "Work in progress."
+ ut_fund_ideology_desc: "Fund aligned political groups in the target country to increase their ideological progress.\n\n$ut_fund_ideology_effect$"
  ut_fund_ideology_effect: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
 
 
@@ -695,7 +713,7 @@
  ut_fund_opposition_action_name: "$ut_fund_opposition$"
  ut_fund_opposition_action_propose_name: "Start $ut_fund_opposition_action_name$"
  ut_fund_opposition_action_break_name: "Stop $ut_fund_opposition_action_name$"
- ut_fund_opposition_desc: "Democracies can fund the opposition in Autocratic countries. Work in progress."
+ ut_fund_opposition_desc: "Democracies can fund the opposition in Autocratic countries.\n\n$ut_fund_opposition_effect$"
  ut_fund_opposition_effect: "2% chance per month for their core Ideology to lose #r 25#! [concept_ut_nd_progress_points] (may abort their New Dawn Phase 2 journal entry)."
  ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds opposition groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], this may lead to revolts in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] opposition groups reducing their ideology [concept_ut_nd_progress_points].\n\n$ut_fund_opposition_effect$"
 
@@ -835,6 +853,10 @@
  heavy_industry_harbor_desc: "Gigantic cranes load steel and coal directly from freight trains onto barges. These harbor colossi, with their smoking stacks and rusty loading bridges, become the heartbeat of heavy industry, where freighters ship raw iron for global production by the hour."
  ultra_heavy_industry_harbor: "Container Harbor"
  ultra_heavy_industry_harbor_desc: "Container ships as long as skyscrapers dock at automated terminals. Standardized steel boxes move robotically between ship, train, and truck—a ballet of logistics that trims global trade down to 20-foot units."
+ ut_global_positioning_system: "Global Positioning System"
+ ut_global_positioning_system_desc: "A constellation of satellites beams location data to Earth. GPS guides everything from smartphones to missiles—turning the globe into a digital map."
+ ut_intermodal_container: "Intermodal Container"
+ ut_intermodal_container_desc: "Standardized steel boxes revolutionize global trade. From ship to train to truck—these 20-foot containers streamline logistics and shrink the world."
  light_ships_rockets_base: "Hydrophones"
  light_ships_rockets_base_desc: "Underwater microphones listen for the propeller noise of enemy submarines. These hydroacoustic sentinels detect even the faintest vibrations and turn the deep sea into a monitored labyrinth."
  light_ships_rockets_machinery: "Fire Control Systems"
@@ -872,12 +894,17 @@
  ut_jet_planes: "Jet Aircraft"
  ut_jet_planes_desc: "Jet engines tear through the sound barrier. MiG-15s and F-86s duel in supersonic loops where seconds decide life or fiery death."
  ut_modern_planes: "Modern Aircraft"
+ ut_modern_planes_desc: ""
  ut_anti_tank_guided_software: "Anti-Tank Guided Systems"
+ ut_anti_tank_guided_software_desc: ""
+ ut_military_complex: "Military Complex"
+ ut_military_complex_desc: ""
  light_ships_rockets_computers: "Light Ship Combat Systems"
  heavy_ships_rockets_computers: "Heavy Ship Combat Systems"
  support_ships_electronic_surveillance: "Electronic Surveillance Ships"
 
  combat_unit_type_support_systems: "Support Systems"
+ combat_unit_type_advanced_support_systems: "Advanced Support Systems"
  combat_unit_type_missile_corvettes: "Missile Corvettes"
  combat_unit_type_surveillance_corvettes: "Surveillance Corvettes"
  combat_unit_type_capital_battleship: "Capital Battleships"
@@ -888,6 +915,7 @@
  combat_unit_type_motorized_artillery: "Self-Propellent Artillery"
  combat_unit_type_rocket_artillery: "Rocket Artillery"
  combat_unit_type_support_systems_desc: "Logistical and electronic support units that enhance the effectiveness of frontline forces."
+ combat_unit_type_advanced_support_systems_desc: "Highly specialized support units equipped with cutting-edge technology to provide superior battlefield assistance."
  combat_unit_type_missile_corvettes_desc: "Fast and agile ships armed with missile systems designed for rapid naval engagements."
  combat_unit_type_surveillance_corvettes_desc: "Naval units equipped with advanced sensors and communication arrays for reconnaissance and coordination."
  combat_unit_type_capital_battleship_desc: "Heavily armed and armored flagship-class vessels designed for domination in major sea battles."
@@ -1156,6 +1184,10 @@
 
  pm_ut_modern_tank_production: "Modern Tank Production"
  pm_ut_jetplane_production: "Jet Production"
+ ut_pm_semi_automatic_rifles: "Semi-Automatic Rifles"
+ ut_pm_full_automatic_rifles: "Automatic Rifles"
+ ut_pm_hydraulic_recoil_mechanism: "Hydraulic Recoil Mechanism"
+ ut_pm_self_propelled_artillery: "Self-Propelled Artillery"
 
  pm_trade_center_trade_quantity_utopia: "Industrial Trade"
 
@@ -1177,9 +1209,10 @@
  pm_ut_research_department: "Institute for Social Sciences"
 
  pm_automatic_power_looms_2: "Shuttleless Loom"
- pm_assembly_lines_building_heavy_machinery_power: "Automated Assembly Lines"
- pm_assembly_lines_building_heavy_machinery_tools_furniture: "Automated Assembly Lines"
- pm_assembly_lines_building_heavy_machinery_tools_motors: "Automated Assembly Lines"
+ pm_assembly_lines_building_heavy_machinery_tools: "Automated Assembly Lines"
+ pm_assembly_lines_building_heavy_machinery_arms: "Automated Assembly Lines"
+ pm_assembly_lines_building_heavy_machinery_furniture: "Automated Assembly Lines"
+ pm_assembly_lines_building_heavy_machinery_cars: "Automated Assembly Lines"
  pm_steel_heavy_machinery: "Continuous Casting Plant"
  pm_steel_computers: "Industrial Robots"
 
@@ -1192,6 +1225,11 @@
  highways: "Highways"
  consumer_goods: "Consumer Goods"
  heavy_machinery: "Machinery"
+ utopia_arms: "Infantry Equipment"
+ utopia_artillery: "Heavy Artillery"
+ utopia_tanks: "Heavy Tanks"
+ utopia_jet_planes: "Jet Plane"
+ utopia_battleship: "Battleship"
 
 #prestige goods
  prestige_good_generic_consumer_goods_simple: "Washing Machines"
@@ -1207,8 +1245,8 @@
  prestige_good_generic_software_b2c: "Office Software"
 
 #goods input output
- goods_input_heavy_machinery_add: "@heavy_machinery! Heavy Industrial Machinery input"
- goods_input_heavy_machinery_add_desc: "The amount of @heavy_machinery! Heavy Industrial Machinery consumed by buildings"
+ goods_input_heavy_machinery_add: "@heavy_machinery! Machinery input"
+ goods_input_heavy_machinery_add_desc: "The amount of @heavy_machinery! Machinery consumed by buildings"
  goods_input_plastic_add: "@plastic! Plastic input"
  goods_input_plastic_add_desc: "The amount of @plastic! Plastic consumed by buildings"
  goods_input_electronics_add: "@electronics! Electronics input"
@@ -1229,9 +1267,19 @@
  goods_input_trucks_add_desc: "The amount of @trucks! Trucks consumed by buildings"
  goods_input_consumer_goods_add: "@consumer_goods! Consumer Goods input"
  goods_input_consumer_goods_add_desc: "The amount of @consumer_goods! Consumer Goods consumed by buildings"
+ goods_input_utopia_arms_add: "@utopia_arms! Infantry Equipment input"
+ goods_input_utopia_arms_add_desc: "The amount of @utopia_arms! Infantry Equipment consumed by buildings"
+ goods_input_utopia_artillery_add: "@utopia_artillery! Heavy Artillery input"
+ goods_input_utopia_artillery_add_desc: "The amount of @utopia_artillery! Heavy Artillery consumed by buildings"
+ goods_input_utopia_tanks_add: "@utopia_tanks! Heavy Tanks input"
+ goods_input_utopia_tanks_add_desc: "The amount of @utopia_tanks! Heavy Tanks consumed by buildings"
+ goods_input_utopia_jet_planes_add: "@utopia_jet_planes! Jet Plane input"
+ goods_input_utopia_jet_planes_add_desc: "The amount of @utopia_jet_planes! Jet Plane consumed by buildings"
+ goods_input_utopia_battleship_add: "@utopia_battleship! Battleship input"
+ goods_input_utopia_battleship_add_desc: "The amount of @utopia_battleship! Battleship consumed by buildings"
 
- goods_output_heavy_machinery_add: "@heavy_machinery! Heavy Industrial Machinery output"
- goods_output_heavy_machinery_add_desc: "The amount of @heavy_machinery! Heavy Industrial Machinery produced by buildings"
+ goods_output_heavy_machinery_add: "@heavy_machinery! Machinery output"
+ goods_output_heavy_machinery_add_desc: "The amount of @heavy_machinery! Machinery produced by buildings"
  goods_output_plastic_add: "@plastic! Plastic output"
  goods_output_plastic_add_desc: "The amount of @plastic! Plastic produced by buildings"
  goods_output_electronics_add: "@electronics! Electronics output"
@@ -1252,6 +1300,16 @@
  goods_output_trucks_add_desc: "The amount of @trucks! Trucks produced by buildings"
  goods_output_consumer_goods_add: "@consumer_goods! Consumer Goods output"
  goods_output_consumer_goods_add_desc: "The amount of @consumer_goods! Consumer Goods produced by buildings"
+ goods_output_utopia_arms_add: "@arms! Infantry Equipment output"
+ goods_output_utopia_arms_add_desc: "The amount of @arms! Infantry Equipment produced by buildings"
+ goods_output_utopia_artillery_add: "@artillery! Heavy Artillery output"
+ goods_output_utopia_artillery_add_desc: "The amount of @artillery! Heavy Artillery produced by buildings"
+ goods_output_utopia_tanks_add: "@tanks! Heavy Tanks output"
+ goods_output_utopia_tanks_add_desc: "The amount of @tanks! Heavy Tanks produced by buildings"
+ goods_output_utopia_jet_planes_add: "@jet_plane! Jet Plane output"
+ goods_output_utopia_jet_planes_add_desc: "The amount of @jet_plane! Jet Plane produced by buildings"
+ goods_output_utopia_battleship_add: "@battleship! Battleship output"
+ goods_output_utopia_battleship_add_desc: "The amount of @battleship! Battleship produced by buildings"
 
  goods_output_trucks_mult: "$trucks$ Goods Output"
  goods_output_trucks_mult_desc: "A bonus or penalty for the production of $trucks$."
@@ -1284,8 +1342,8 @@
  building_electronic_factory_throughput_add: "$building_electronic_factory$ [concept_throughput]"
  building_electronic_factory_throughput_add_desc: "A bonus or penalty to both input and output of the $building_electronic_factory$."
 
- building_bauxite_mining_throughput_add: "$building_bauxite_mining$ [concept_throughput]"
- building_bauxite_mining_throughput_add_desc: "A bonus or penalty to both input and output of the $building_bauxite_mining$."
+ building_bauxite_mine_throughput_add: "$building_bauxite_mining$ [concept_throughput]"
+ building_bauxite_mine_throughput_add_desc: "A bonus or penalty to both input and output of the $building_bauxite_mining$."
 
  building_aluminum_factory_throughput_add: "$building_aluminum_factory$ [concept_throughput]"
  building_aluminum_factory_throughput_add_desc: "A bonus or penalty to both input and output of the $building_aluminum_factory$."
@@ -1312,6 +1370,7 @@
  smart_irrigation_building_silk_plantation: "Smart Irrigation"
  smart_irrigation_building_vineyard_plantation: "Smart Irrigation"
  smart_irrigation_building_coffee_plantation: "Smart Irrigation"
+ smart_irrigation_building_dye_plantation: "Smart Irrigation"
 
  agricultural_mechanization: "Heavy Tractors"
  slow_tech_progress: "Slow Technological Progress"

@@ -149,10 +149,11 @@ bauxite_mining = {
 	category = production
 
 	unlocking_technologies = {	
+		electric_arc_process
 	}
 
 	modifier = {
-		country_resource_discovery_chance_mult = 0.1
+		# country_resource_discovery_chance_mult = 0.1
 	}
 	
 	ai_weight = {

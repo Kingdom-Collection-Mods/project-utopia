@@ -1,11 +1,11 @@
 ﻿ut_research_agreement = {
 	kind = mutual
-	cost = 50
+	cost = 300
 
 	relations_progress_per_day = 1
 	relations_improvement_max = 30
 
-	icon = "gfx/interface/icons/diplomatic_treaties_articles_icons/alliance_treaties.dds"
+	icon = "gfx/interface/icons/diplomatic_treaties_articles_icons/ut_research_agreement.dds"
 
 	flags = {
 		can_be_renegotiated
@@ -15,6 +15,8 @@
 	usage_limit = once_per_treaty
 
 	mutual_exclusions = {
+		ut_research_agreement
+		ut_research_assistance_treaty
 	}
 
 	unlocked_by_technologies = {
@@ -40,12 +42,18 @@
 			scope:first_country = {
 				country_rank >= rank_value:major_power
 			}
+		}
+	}
+
+	requirement_to_maintain = {
+		trigger = {
 			scope:second_country = {
 				country_rank >= rank_value:major_power
 			}
 		}
 	}
 
+			
 	requirement_to_maintain = {
 		trigger = {
 			custom_tooltip = {
@@ -146,34 +154,28 @@
 			add = {
 				value = country_rank
 				multiply = 0.05
-			}
-			
-			if =  {
-				limit = { 
-					num_alliances < 1 
-					country_rank >= rank_value:major_power
-				}
-				multiply = 2
-			}
-			else_if =  {
-				limit = { 
-					num_alliances >= 2
-				}
-				multiply = 0
-			}				
+			}		
 		}
 		
-		#ai will not propose
+		#ai will propose
 		proposal_weight = {
-			value = 0
+			value = 1
 		}	
 
 		article_ai_usage = {
             offer
         }
 
+		#based on defensive pact
 		inherent_accept_score = {
-			value = -50
+			value = 0
+
+			# We are doing this to be able to reuse loc across treaties and diplomatic actions
+			save_temporary_scope_as = target
+			scope:other_country = {
+				save_temporary_scope_as = actor
+			}
+
 
 			if = {
 				limit = {
@@ -210,318 +212,224 @@
 				}
 			}
 
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_BASE_ADDITIONAL"
+				value = -100
+			}
+
+			if = {
+				limit = {
+					has_strategic_adjacency = scope:other_country
+				}
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_NEIGHBORS"
+					value = 10
+				}
+			}
+
+			if = {
+				limit = {
+					OR = {
+						is_country_type = recognized
+						is_country_type = colonial
+					}
+					scope:other_country = {
+						is_country_type = unrecognized
+					}
+				}
+				add = {
+					desc = "concept_unrecognized_power_short"
+					value = -100
+				}
+			}
+
 			if = {
 				limit = {
 					has_strategy = ai_strategy_armed_isolationism
 				}
 				add = {
 					desc = "DIPLOMATIC_ACCEPTANCE_ISOLATIONIST"
-					add = -40
+					add = -25
 				}
 			}
+
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_ARMY_STRENGTH"
+				value = "scope:other_country.ai_army_comparison(root)"
+				add = 0.5
+				multiply = 20
+				min = -200
+				max = 50
+			}
+
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_ATTITUDE"
+				if = {
+					limit = {
+						has_attitude = {
+							who = scope:other_country
+							attitude = protective
+						}
+					}
+					value = 25
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_attitude = {
+								who = scope:other_country
+								attitude = antagonistic
+							}
+							has_attitude = {
+								who = scope:other_country
+								attitude = domineering
+							}
+							has_attitude = {
+								who = scope:other_country
+								attitude = belligerent
+							}
+							has_attitude = {
+								who = scope:other_country
+								attitude = rebellious
+							}
+						}
+					}
+					value = -1000
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_attitude = {
+								who = scope:other_country
+								attitude = wary
+							}
+							has_attitude = {
+								who = scope:other_country
+								attitude = disinterested
+							}
+						}
+					}
+					value = -100
+				}
+				else_if = {
+					limit = {
+						has_attitude = {
+							who = scope:other_country
+							attitude = cautious
+						}
+					}
+					value = -50
+				}
+			}
+
 			if = {
 				limit = {
-					scope:source_country ?= this
+					"num_alliances_and_defensive_pacts_with_rivals(scope:other_country)" > 0
 				}
-
-				# We are doing this to be able to reuse loc across treaties and diplomatic actions
-				scope:source_country = {
-					save_temporary_scope_as = target
-				}
-				scope:second_country = {
-					save_temporary_scope_as = actor
-				}
-
 				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_BASE_ADDITIONAL"
-					value = -30
+					desc = "DIPLOMATIC_ACCEPTANCE_ALLIED_TO_RIVALS"
+					value = "num_alliances_and_defensive_pacts_with_rivals(scope:other_country)"
+					multiply = -15
 				}
+			}
 
-				### Leverage
+			if = {
+				limit = {
+					"num_alliances_and_defensive_pacts_with_allies(scope:other_country)" > 0
+				}
 				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_LEVERAGE"
-					value = "scope:second_country.power_bloc.leverage_advantage(scope:source_country)"
-					multiply = 0.5
-
-					### Leverage effect when already part of the bloc can go into negative, to help determine if they want to leave
-					if = {
-						limit = { is_in_same_power_bloc = scope:second_country	}
-						min = -200
-					}
-					else = {
-						min = 0
-					}
-
-					max = 10
+					desc = "DIPLOMATIC_ACCEPTANCE_ALLIED_TO_ALLIES"
+					value = "num_alliances_and_defensive_pacts_with_allies(scope:other_country)"
+					multiply = 10
 				}
+			}
 
+			if = {
+				limit = {
+					"num_shared_rivals(scope:other_country)" > 0
+				}
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_SHARED_RIVALS"
+					value = "num_shared_rivals(scope:other_country)"
+					multiply = 10
+					max = 30
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						any_scope_treaty = {
+							binds = scope:other_country
+							any_scope_article = {
+								has_type = defensive_pact
+							}
+						}
+					}
+					any_scope_treaty = {
+						count > 0
+						any_scope_article = {
+							has_type = defensive_pact
+						}
+					}
+				}
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_NUM_DEFENSIVE_PACTS"
+					value = {
+						every_scope_treaty = {
+							limit = {
+								any_scope_article = {
+									has_type = defensive_pact
+						 		}
+							}
+							add = 1
+						}
+					}
+					multiply = -15
+				}
+			}
+
+			if = {
+				limit = {
+					exists = power_bloc
+					exists = scope:other_country.power_bloc			
+				}
 				if = {
 					limit = {
-						scope:source_country = { is_in_power_bloc = yes }
-					}
-
-					### Cohesion of current Bloc
-					subtract = {
-						desc = "DIPLOMATIC_ACCEPTANCE_COHESION_OF_TARGET"
-						value = "scope:source_country.power_bloc.current_cohesion_number"
-						subtract = 50
-
-						### Low cohesion is more impactful than high cohesion
-						if = {
-							limit = { scope:source_country.power_bloc = { current_cohesion_number < 20 } }
-							multiply = 2
-						}
-						else_if = {
-							limit = { scope:source_country.power_bloc = { current_cohesion_number < 40 } }
-							multiply = 1.5
-						}
-						max = 25
-					}
-				}
-
-				### Cohesion
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_COHESION"
-					value = "scope:second_country.power_bloc.current_cohesion_number"
-					subtract = 50
-
-					### Low cohesion is more impactful than high cohesion
-					if = {
-						limit = { scope:second_country.power_bloc ?= { current_cohesion_number < 20 } }
-						multiply = 4
-					}
-					else_if = {
-						limit = { scope:second_country.power_bloc ?= { current_cohesion_number < 40 } }
-						multiply = 2
-					}
-
-					### Care more about cohesion when part of bloc
-					if = {
-						limit = { is_in_same_power_bloc = scope:second_country }
-						multiply = 2
-					}
-				}
-
-				if = {
-					limit = {
-						scope:second_country.country_rank > rank_value:insignificant_power
+						power_bloc = scope:other_country.power_bloc
 					}
 					add = {
-						desc = "DIPLOMATIC_ACCEPTANCE_IDENTITY_AFFINITY_TO_RANK"
-						if = {
-							limit = {
-								scope:second_country.country_rank = rank_value:great_power
-							}
-							add = modifier:power_bloc_invite_acceptance_great_power_add
-						}
-						else_if = {
-							limit = {
-								scope:second_country.country_rank = rank_value:major_power
-							}
-							add = modifier:power_bloc_invite_acceptance_major_power_add
-						}
-						else_if = {
-							limit = {
-								scope:second_country.country_rank = rank_value:minor_power
-							}
-							add = modifier:power_bloc_invite_acceptance_minor_power_add
-						}
-						else_if = {
-							limit = {
-								scope:second_country.country_rank = rank_value:unrecognized_major_power
-							}
-							add = modifier:power_bloc_invite_acceptance_unrecognized_major_power_add
-						}
-						else_if = {
-							limit = {
-								scope:second_country.country_rank = rank_value:unrecognized_regional_power
-							}
-							add = modifier:power_bloc_invite_acceptance_unrecognized_regional_power_add
-						}
+						desc = "DIPLOMATIC_ACCEPTANCE_SAME_POWER_BLOC"
+						value = 15
 					}
 				}
-
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_FROM_IDENTITY"
-					scope:second_country.power_bloc = {
-						add = modifier:power_bloc_invite_acceptance_add
-					}
-				}
-
-				### How the selected identity fits them
-				# does not work in mutual treaty
-				# add = ai_power_bloc_identity_score_treaties
-
-				### Similar to identities but considers selected principles
-				# add = ai_power_bloc_principle_score_treaties
-
-				# Ideological opinion is always a factor, but much weaker for non ideological unions
-				# Score for ideological unions is handled in ai_power_bloc_identity_score script value
-				if = {
+				else_if = {
 					limit = {
-						power_bloc ?= {
-							NOT = { has_identity = identity:identity_ideological_union }
-						}
+						is_power_bloc_leader = no
+						scope:other_country = { is_power_bloc_leader = no }							
 					}
 					add = {
-						desc = "DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION"
-						value = "scope:second_country.ai_ideological_opinion(scope:source_country)"
-						multiply = 0.25
-						max = 10
-						min = -25
-					}
-				}
-
-				### Powerful Protectors is always a factor, but less so if not being invited to a sovereign empire
-				if = {
-					limit = {
-						scope:second_country.power_bloc ?= {
-							NOT = { has_identity = identity:identity_sovereign_empire }
-						}
-						has_powerful_protectors = {
-							ACTOR_SCOPE = scope:source_country
-						}
-					}
-					add = {
-						desc = "DIPLOMATIC_ACCEPTANCE_POWERFUL_PROTECTORS_THEM"
+						desc = "DIPLOMATIC_ACCEPTANCE_DIFFERENT_POWER_BLOC"
 						value = -25
 					}
 				}
+			}
 
-				### Relative rank
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_RANK"
-					value = scope:second_country.country_rank
-					subtract = 2
-					subtract = country_rank
-					multiply = 5
+			if = {
+				limit = {
+					NOT = { exists = scope:is_treaty_active }
+					exists = scope:treaty
+					scope:treaty.binding_period >= 1825
 				}
-
-				if = {
-					limit = {
-						gdp >= 2000000
-					}
-
-					subtract = {
-						desc = "DIPLOMATIC_ACCEPTANCE_HIGH_GDP"
-						value = gdp
-						subtract = 1000000
-						divide = 1000000
-						min = 1
-						max = 10
-					}
-				}
-
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_ATTITUDE"
-					if = {
-						limit = {
-							OR = {
-								has_attitude = {
-									who = scope:second_country
-									attitude = antagonistic
-								}
-								has_attitude = {
-									who = scope:second_country
-									attitude = domineering
-								}
-								has_attitude = {
-									who = scope:second_country
-									attitude = belligerent
-								}
-							}
-						}
-						value = -200
-					}
+				subtract = {
+					desc = "DIPLOMATIC_ACCEPTANCE_BINDING_PERIOD"
+					value = scope:treaty.binding_period
+					divide = 3650
+					subtract = 25
+					max = 50
 				}
 			}
-			else = {
-				scope:source_country = {
-					save_temporary_scope_as = actor
-				}
-				scope:second_country = {
-					save_temporary_scope_as = target
-				}
-
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_BASE_ADDITIONAL"
-					value = -10
-				}
-
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_LEVERAGE_OF_TARGET"
-					value = "power_bloc.leverage_advantage(scope:source_country)"
-					multiply = 0.5
-					min = 0
-					max = 10
-				}
-
-				### Impact on Cohesion
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_DECREASED_COHESION"
-					value = "power_bloc.predicted_cohesion_percentage_with(scope:source_country)"
-					subtract = "power_bloc.current_cohesion_number"
-					multiply = 2 # -2 acceptance for each lost point of cohesion
-					if = {
-						limit = {
-							exists = power_bloc
-							NOT = {
-								scope:source_country.power_bloc ?= power_bloc
-							}
-						}
-						if = {
-							limit = { "power_bloc.current_cohesion_number" <= 20 }
-							multiply = 5
-						}
-						else_if = {
-							limit = { "power_bloc.current_cohesion_number" <= 40 }
-							multiply = 2
-						}
-					}
-
-					max = 0
-				}
-
-				### How we fit their selected identity
-				# add = ai_accept_join_request_score_treaties
-
-				# Ideological opinion is always a factor, but much weaker for non ideological unions
-				# Score for ideological unions is handled in ai_accept_join_request_score script value
-				if = {
-					limit = {
-						scope:second_country.power_bloc ?= {
-							NOT = { has_identity = identity:identity_ideological_union }
-						}
-					}
-					add = {
-						desc = "DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION"
-						value = "scope:source_country.ai_ideological_opinion(scope:second_country)"
-						multiply = 0.25
-						max = 10
-						min = -25
-					}
-				}
-
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_ATTITUDE"
-					if = {
-						limit = {
-							OR = {
-								has_attitude = {
-									who = scope:source_country
-									attitude = antagonistic
-								}
-								has_attitude = {
-									who = scope:source_country
-									attitude = belligerent
-								}
-							}
-						}
-						value = -200
-					}
-				}
-			}
-		}
+	}
 
 		contextual_accept_score = {
 			if = {
@@ -580,6 +488,701 @@
 				if = {
 					limit = {
 						scope:second_country = {
+							has_variable = anti_lobby_proposal_alliance
+							var:anti_lobby_opportunity_target ?= root
+						}
+					}
+					add = {
+						desc = "LOBBY_OPPORTUNITY_BONUS"
+						value = 5
+					}
+				}
+			}
+		}
+	}
+}
+
+ut_research_assistance_treaty = {
+	kind = directed
+	cost = 150
+
+	relations_progress_per_day = 1
+	relations_improvement_max = 20
+
+	icon = "gfx/interface/icons/diplomatic_treaties_articles_icons/ut_research_assistance_treaty.dds"
+
+	flags = {
+		can_be_renegotiated
+		friendly
+	}
+
+	usage_limit = once_per_treaty
+
+	mutual_exclusions = {
+		ut_research_assistance_treaty
+		ut_research_agreement
+	}
+
+	unlocked_by_technologies = {
+		union_new_mandates
+	}
+
+	source_modifier = {
+		country_weekly_innovation_add = -10
+	}
+
+	target_modifier = {
+		country_weekly_innovation_add = 10
+		country_weekly_innovation_max_add = 10
+		country_tech_spread_add = 10
+	}
+
+	visible = {
+		has_technology_researched = multilateral_alliances
+	}
+
+	possible = {
+		has_technology_researched = union_new_mandates
+	}
+	
+
+	requirement_to_maintain = {
+		trigger = {
+			scope:source_country = {
+				country_rank >=  rank_value:great_power
+			}
+		}
+	}
+
+	requirement_to_maintain = {
+		trigger = {
+			scope:target_country = {
+				country_rank < rank_value:major_power
+			}
+		}
+	}
+
+	requirement_to_maintain = {
+		trigger = {
+			custom_tooltip = {
+				text = "DIPLOMATIC_PACT_REQUIREMENT_DIPLOMATIC_AUTONOMY"
+				scope:source_country = { aggressive_diplomatic_plays_permitted = yes }
+				scope:target_country = { aggressive_diplomatic_plays_permitted = yes }
+			}
+		}
+	}
+
+	can_ratify = {
+		scope:source_country = {
+			NOT = {
+				custom_description = {
+					text = has_treaty_ut_research_assistance_treaty_with_trigger
+					subject = this
+					object = scope:target_country
+
+					any_scope_treaty = {
+						binds = scope:target_country
+						hidden_trigger = {
+							OR = {
+								scope:treaty = {
+									is_renegotiation = no
+								}
+								scope:treaty.amended_treaty != this
+							}
+						}
+						any_scope_article = {
+							has_type = ut_research_assistance_treaty
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_entry_into_force = {
+		scope:article_options.source_country = {
+			add_lobby_appeasement_from_diplomacy_bidirectional = {
+				FIRST = scope:article_options.source_country
+				SECOND = scope:article_options.target_country
+				PRO_AMOUNT = 1
+				ANTI_AMOUNT = -1
+				FACTOR = appeasement_alliance_formed
+			}
+		}
+	}
+
+	on_withdrawal = {
+		add_lobby_appeasement_from_diplomacy_bidirectional = {
+			FIRST = scope:withdrawing_country
+			SECOND = scope:non_withdrawing_country
+			PRO_AMOUNT = -1
+			ANTI_AMOUNT = 1
+			FACTOR = appeasement_alliance_broken
+		}
+	}
+	on_break = {
+		scope:withdrawing_country = {
+			change_relations = {
+				country = scope:non_withdrawing_country
+					value = {
+						add = -10
+						multiply = {
+							value = scope:treaty_options.remaining_binding_period
+							min = 365
+							divide = 365
+						}
+						max = -10
+						min = -80
+					}
+			}
+			change_infamy = {
+				value = {
+					add = 3
+					multiply = {
+						value = scope:treaty_options.remaining_binding_period
+						min = 365
+						divide = 365
+					}
+					max = 50
+					min = 10
+				}
+			}
+		}
+	}
+
+	ai = {
+
+		treaty_categories = {
+			economy
+		}
+
+		evaluation_chance = {
+			value = 0.1
+
+			add = {
+				value = country_rank
+				multiply = 0.05
+			}	
+		}
+		
+		#ai will propose
+		proposal_weight = {
+			value = 1
+		}	
+
+		article_ai_usage = {
+            offer
+        }
+
+		#based on military assistance
+		inherent_accept_score = {
+			value = 0
+
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							has_modifier = ut_new_dawn_core_democratic_mod
+							scope:target_country = {
+								has_modifier = ut_new_dawn_core_democratic_mod
+							}
+						}
+						AND = {
+							has_modifier = ut_new_dawn_core_autocratic_mod
+							scope:target_country = {
+								has_modifier = ut_new_dawn_core_autocratic_mod
+							}
+						}
+						AND = {
+							has_modifier = ut_new_dawn_core_fascist_mod
+							scope:target_country = {
+								has_modifier = ut_new_dawn_core_fascist_mod
+							}
+						}
+						AND = {
+							has_modifier = ut_new_dawn_core_communist_mod
+							scope:target_country = {
+								has_modifier = ut_new_dawn_core_communist_mod
+							}
+						}
+					}
+				}
+				add = {
+					desc = "UT_BOTH_SAME_IDEOLOGY"
+					value = 50
+				}
+			}
+
+			if = {
+				limit = {
+					scope:source_country ?= this
+				}
+
+				# We are doing this to be able to reuse loc across treaties and diplomatic actions
+				scope:source_country = {
+					save_temporary_scope_as = target
+				}
+				scope:target_country = {
+					save_temporary_scope_as = actor
+				}
+
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_BASE_ADDITIONAL"
+					value = -10
+				}
+
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_ARMY_STRENGTH"
+					value = "scope:source_country.ai_army_comparison(scope:target_country)"
+					multiply = -2
+					min = -30
+					max = 30
+				}
+
+
+				if = {
+					limit = {
+						has_strategic_adjacency = scope:target_country
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_NEIGHBORS"
+						value = 5
+					}
+				}
+
+				if = {
+					limit = {
+						has_strategy = ai_strategy_armed_isolationism
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_ISOLATIONIST"
+						add = -25
+					}
+				}
+
+				if = {
+					limit = {
+						has_strategy = ai_strategy_maintain_power_balance
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_MAINTAIN_POWER_BALANCE"
+						add = 10
+					}
+				}
+				else_if = {
+					limit = {
+						has_strategy = ai_strategy_economic_imperialism
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_ECONOMIC_IMPERIALISM"
+						add = 10
+					}
+				}
+
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_ATTITUDE"
+					if = {
+						limit = {
+							OR = {
+								has_attitude = {
+									who = scope:target_country
+									attitude = antagonistic
+								}
+								has_attitude = {
+									who = scope:target_country
+									attitude = domineering
+								}
+								has_attitude = {
+									who = scope:target_country
+									attitude = belligerent
+								}
+								has_attitude = {
+									who = scope:target_country
+									attitude = rebellious
+								}
+							}
+						}
+						value = -1000
+					}
+				}
+
+				add = {
+					desc = "GREAT_GAME_BONUS"
+					if = {
+						limit = {
+							OR = {
+								scope:target_country = {
+									has_journal_entry = je_unify_afghanistan
+									OR = {
+										AND = {
+											has_variable = AFG_appealed_to_GBR
+											c:GBR ?= scope:source_country
+										}
+										AND = {
+											has_variable = AFG_appealed_to_RUS
+											c:RUS ?= scope:source_country
+										}
+									}
+								}
+								scope:target_country = {
+									has_journal_entry = je_eastern_frontier
+									OR = {
+										AND = {
+											has_variable = PER_appealed_to_GBR
+											c:GBR ?= scope:source_country
+										}
+										AND = {
+											has_variable = PER_appealed_to_RUS
+											c:RUS ?= scope:source_country
+										}
+									}
+								}
+								scope:target_country = {
+									c:CIR ?= this
+									scope:source_country = {
+										has_variable = circassia_recognizer
+									}
+								}
+							}
+						}
+						value = 25
+					}
+				}
+
+				if = {
+					limit = {
+						"num_alliances_and_defensive_pacts_with_rivals(scope:target_country)" > 0
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_ALLIED_TO_RIVALS"
+						value = "num_alliances_and_defensive_pacts_with_rivals(scope:target_country)"
+						multiply = -15
+					}
+				}
+
+				if = {
+					limit = {
+						"num_alliances_and_defensive_pacts_with_allies(scope:target_country)" > 0
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_ALLIED_TO_ALLIES"
+						value = "num_alliances_and_defensive_pacts_with_allies(scope:target_country)"
+						multiply = 10
+					}
+				}
+
+				if = {
+					limit = {
+						"num_shared_rivals(scope:target_country)" > 0
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_SHARED_RIVALS"
+						value = "num_shared_rivals(scope:target_country)"
+						multiply = 10
+						max = 30
+					}
+				}
+
+				if = {
+					limit = {
+						NOT = {
+							any_scope_treaty = {
+								binds = scope:source_country
+								any_scope_article = {
+									has_type = military_assistance
+								}
+							}
+						}
+						any_scope_treaty = {
+							count > 0
+							any_scope_article = {
+								has_type = military_assistance
+							}
+						}
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_NUM_MILITARY_ASSISTANCE_PACTS"
+						value = {
+							every_scope_treaty = {
+								limit = {
+									any_scope_article = {
+										has_type = military_assistance
+									}
+								}
+								add = 1
+							}
+						}
+						multiply = -10
+					}
+				}
+
+				if = {
+					limit = {
+						scope:target_country = {
+							any_scope_treaty = {
+								count > 0
+								any_scope_article = {
+									has_type = military_assistance
+								}
+							}
+						}
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_NUM_MILITARY_ASSISTANCE_PACTS_TARGET"
+						value = {
+							scope:target_country = {
+								every_scope_treaty = {
+									limit = {
+										any_scope_article = {
+											has_type = military_assistance
+										}
+									}
+									add = 1
+								}
+							}
+						}
+						multiply = -10
+					}
+				}
+
+				add = {
+					desc = "AT_WAR_WITH_FRIENDLY_COUNTRY"
+					if = {
+						limit = {
+							scope:target_country = {
+								is_at_war = yes
+								any_enemy_in_war = {
+									scope:source_country.relations:this >= relations_threshold:cordial
+								}
+							}
+						}
+						add = -100
+					}
+				}
+
+				add = {
+					desc = "AT_WAR_WITH_UNFRIENDLY_COUNTRY"
+					if = {
+						limit = {
+							scope:target_country = {
+								is_at_war = yes
+								any_enemy_in_war = {
+									scope:source_country.relations:this <= relations_threshold:poor
+								}
+							}
+						}
+						add = 25
+					}
+				}
+			}
+			else = {
+				# We are doing this to be able to reuse loc across treaties and diplomatic actions
+				scope:source_country = {
+					save_temporary_scope_as = actor
+				}
+				scope:target_country = {
+					save_temporary_scope_as = target
+				}
+
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_BASE_ADDITIONAL"
+					value = -10
+				}
+
+				if = {
+					limit = {
+						has_strategic_adjacency = scope:source_country
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_NEIGHBORS"
+						value = 10
+					}
+				}
+
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_ARMY_STRENGTH"
+					value = "scope:source_country.ai_army_comparison(scope:target_country)"
+					add = 0.5
+					min = -25
+					max = 50
+				}
+
+
+				if = {
+					limit = {
+						is_subject_of = scope:source_country
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_LIBERTY_DESIRE"
+						value = "scope:target_country.liberty_desire"
+						subtract = 50
+						multiply = 2
+						min = -50
+						max = 25
+					}
+				}
+
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_ATTITUDE"
+					if = {
+						limit = {
+							has_attitude = {
+								who = scope:source_country
+								attitude = protective
+							}
+						}
+						value = 25
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_attitude = {
+									who = scope:source_country
+									attitude = antagonistic
+								}
+								has_attitude = {
+									who = scope:source_country
+									attitude = domineering
+								}
+								has_attitude = {
+									who = scope:source_country
+									attitude = belligerent
+								}
+								has_attitude = {
+									who = scope:source_country
+									attitude = rebellious
+								}
+							}
+						}
+						value = -1000
+					}
+				}
+
+				if = {
+					limit = {
+						"num_alliances_and_defensive_pacts_with_rivals(scope:source_country)" > 0
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_ALLIED_TO_RIVALS"
+						value = "num_alliances_and_defensive_pacts_with_rivals(scope:source_country)"
+						multiply = -15
+					}
+				}
+
+				if = {
+					limit = {
+						"num_alliances_and_defensive_pacts_with_allies(scope:source_country)" > 0
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_ALLIED_TO_ALLIES"
+						value = "num_alliances_and_defensive_pacts_with_allies(scope:source_country)"
+						multiply = 10
+					}
+				}
+
+				if = {
+					limit = {
+						"num_shared_rivals(scope:source_country)" > 0
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_SHARED_RIVALS"
+						value = "num_shared_rivals(scope:source_country)"
+						multiply = 10
+						max = 30
+					}
+				}
+
+				if = {
+					limit = {
+						is_at_war = yes
+						any_enemy_in_war = {
+							this.country_rank >= scope:target_country.country_rank
+							"THIS.ai_army_comparison(scope:target_country)" >= 0
+						}
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_POWERFUL_ENEMY_IN_WAR"
+						value = 50
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = { exists = scope:is_treaty_active }
+					exists = scope:treaty
+					scope:treaty.binding_period >= 1825
+				}
+				multiply = {
+					desc = "DIPLOMATIC_ACCEPTANCE_BINDING_PERIOD"
+					value = 1
+					add = {
+						value = scope:treaty.binding_period
+						min = 365
+						divide = 3650
+					}
+					max = 2
+				}
+			}
+		}
+
+		contextual_accept_score = {
+			if = {
+				limit = {
+					scope:treaty ?= {
+						NOT = {
+							any_scope_article_option = {
+								NOT = { has_type = alliance }
+							}
+						}
+						any_scope_article_option = {
+							has_type = alliance
+						}
+					}
+				}
+				if = {
+					limit = {
+						scope:target_country = {
+							has_variable = pro_lobby_proposal_alliance
+							var:pro_lobby_opportunity_target ?= root
+						}
+					}
+					add = {
+						desc = "LOBBY_OPPORTUNITY_BONUS"
+						value = 50
+					}
+				}
+
+				if = {
+					limit = {
+						scope:target_country = {
+							has_variable = anti_lobby_proposal_alliance
+							var:anti_lobby_opportunity_target ?= root
+						}
+					}
+					add = {
+						desc = "LOBBY_OPPORTUNITY_BONUS"
+						value = 25
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						scope:target_country = {
+							has_variable = pro_lobby_proposal_alliance
+							var:pro_lobby_opportunity_target ?= root
+						}
+					}
+					add = {
+						desc = "LOBBY_OPPORTUNITY_BONUS"
+						value = 10
+					}
+				}
+
+				if = {
+					limit = {
+						scope:target_country = {
 							has_variable = anti_lobby_proposal_alliance
 							var:anti_lobby_opportunity_target ?= root
 						}

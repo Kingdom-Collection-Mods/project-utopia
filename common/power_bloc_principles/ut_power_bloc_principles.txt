@@ -12,6 +12,11 @@ principle_common_financial_policy_1 = {
 
 	possible = {
 		has_technology_researched = union_new_mandates
+		OR = {
+			has_law = law_type:law_international_trade
+			has_law = law_type:law_free_trade_union
+			has_law = law_type:law_protectionism_union
+		}
 	}
 	
 	power_bloc_modifier = {
@@ -40,6 +45,11 @@ principle_common_financial_policy_2 = {
 
 	possible = {
 		has_technology_researched = union_new_mandates
+		OR = {
+			has_law = law_type:law_international_trade
+			has_law = law_type:law_free_trade_union
+			has_law = law_type:law_protectionism_union
+		}
 	}
 	
 	power_bloc_modifier = {
@@ -50,8 +60,8 @@ principle_common_financial_policy_2 = {
 	}
 	
 	member_modifier = {
-		state_trade_capacity_mult = 0.25
-		state_trade_advantage_mult = 0.25
+		state_trade_capacity_mult = 0.30
+		state_trade_advantage_mult = 0.30
 
 		# Members no longer get a penalty to Trade Advantage due to lack of interests
 		country_no_advantage_loss_from_lack_of_interest_bool = yes
@@ -71,6 +81,11 @@ principle_common_financial_policy_3 = {
 
 	possible = {
 		has_technology_researched = union_new_mandates
+		OR = {
+			has_law = law_type:law_international_trade
+			has_law = law_type:law_free_trade_union
+			has_law = law_type:law_protectionism_union
+		}
 	}
 	
 	power_bloc_modifier = {

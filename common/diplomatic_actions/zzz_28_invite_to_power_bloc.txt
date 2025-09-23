@@ -2,6 +2,7 @@
 ###<<<
 ###>>>
 ###
+#vanilla
 invite_to_power_bloc = {
 	requires_approval = yes
 	can_use_obligations = yes
@@ -21,7 +22,7 @@ invite_to_power_bloc = {
 	}
 
 	potential = {
-		scope:target_country = {
+		scope:target_country ?= {
 			NOT = { is_country_type = decentralized }
 		}
 	}
