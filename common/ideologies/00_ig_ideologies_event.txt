@@ -1,4 +1,4 @@
-﻿ideology_patriarchal_suffrage = {
+ideology_patriarchal_suffrage = {
 	icon = "gfx/interface/icons/ideology_icons/patriarchal.dds"
 	
 	priority = 100 # Overrides other non-leader ideologies with a lower prio
@@ -71,6 +71,7 @@ ideology_modernizer = {
 		law_corporate_economy = neutral
 		law_social_market_economy = strongly_approve
 		law_state_capitalism_economy = approve
+		law_industry_banned = strongly_disapprove
 	}
 }
 
@@ -87,6 +88,7 @@ ideology_liberal_modern = {
 		law_national_supremacy = disapprove
 		law_racial_segregation = neutral
 		law_cultural_exclusion = approve	
+		law_subjecthood = strongly_disapprove
 	}
 	
 	lawgroup_policing = {
