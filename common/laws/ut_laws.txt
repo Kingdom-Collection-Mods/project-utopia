@@ -574,7 +574,7 @@ law_international_trade = {
 	progressiveness = 60
 
 	unlocking_technologies = {
-		international_trade
+		union_trade
 	}
 
 	modifier = {
