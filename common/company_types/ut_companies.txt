@@ -1,6 +1,8 @@
 ﻿ut_company_research = {
 	icon = "gfx/interface/icons/company_icons/ut_company_research.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	category = bureaucrat_owned
 	
 	building_types = {
 		building_explosives_factory
@@ -27,12 +29,18 @@
 	
 	prosperity_modifier = {	
 		country_tech_spread_mult = 0.2
-	}	
+	}
+	
+	ai_will_do = {
+		always = no
+	}
 }
 
 ut_high_tech_company_research = {
 	icon = "gfx/interface/icons/company_icons/ut_high_tech_company_research.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	category = bureaucrat_owned
 	
 	building_types = {
 		building_electronic_factory
@@ -60,6 +68,10 @@ ut_high_tech_company_research = {
 		state_middle_strata_expected_sol_add = 2
 		state_upper_strata_expected_sol_add = 2
 	}	
+		
+	ai_will_do = {
+		always = no
+	}
 }
 
 #Kühlschrank
@@ -95,6 +107,10 @@ ut_commercial_goods_simple_company = {
 		building_commercial_factory_throughput_add = 0.2
 		state_loyalists_from_political_movements_mult = 0.1
 	}	
+		
+	ai_will_do = {
+		always = no
+	}
 }
 
 #Farbfernsehr
@@ -130,6 +146,10 @@ ut_commercial_goods_complex_company = {
 		interest_group_ig_urbanists_pop_attraction_mult = 0.1
 		building_commercial_factory_throughput_add = 0.1
 	}	
+		
+	ai_will_do = {
+		always = no
+	}
 }
 
 ut_mining_company = {
@@ -160,6 +180,10 @@ ut_mining_company = {
 		building_rare_earths_mine_throughput_add = 0.1
 		#country_resource_discovery_chance_mult = 0.3 something bugged
 	}	
+	
+	ai_will_do = {
+		always = no
+	}
 }
 
 #Semi conductor factory
@@ -193,6 +217,10 @@ ut_electronics_company = {
 		building_electronic_factory_throughput_add = 0.1
 		country_weekly_innovation_max_add = 10
 	}	
+		
+	ai_will_do = {
+		always = no
+	}
 }
 
 
@@ -232,6 +260,10 @@ ut_mainframe_computer_company = {
 		country_weekly_innovation_max_add = 20
 		building_computer_factory_throughput_add = 0.1
 	}	
+		
+	ai_will_do = {
+		always = no
+	}
 }
 
 ut_personal_computer_company = {
@@ -265,6 +297,10 @@ ut_personal_computer_company = {
 		building_computer_factory_throughput_add = 0.1
 		building_urban_center_throughput_add = 0.1
 	}	
+		
+	ai_will_do = {
+		always = no
+	}
 }
 
 ut_heavy_machinery_company_era_6 = {
@@ -298,6 +334,10 @@ ut_heavy_machinery_company_era_6 = {
 	prosperity_modifier = {
 		building_heavy_machinery_factory_throughput_add = 0.1
 		building_construction_sector_throughput_add = 0.1
+	}
+		
+	ai_will_do = {
+		always = no
 	}	
 }
 
@@ -332,6 +372,10 @@ ut_heavy_machinery_company_era_7 = {
 		building_heavy_machinery_factory_throughput_add = 0.1
 		building_construction_sector_throughput_add = 0.1
 	}	
+		
+	ai_will_do = {
+		always = no
+	}
 }
 
 ut_heavy_machinery_company_era_8 = {
@@ -365,6 +409,10 @@ ut_heavy_machinery_company_era_8 = {
 	prosperity_modifier = {
 		building_throughput_add = 0.01
 	}	
+		
+	ai_will_do = {
+		always = no
+	}
 }
 
 ut_software_company_era_7 = {
@@ -397,6 +445,10 @@ ut_software_company_era_7 = {
 	prosperity_modifier = {
 		building_software_company_throughput_add = 0.1
 	}	
+		
+	ai_will_do = {
+		always = no
+	}
 }
 
 ut_software_company_era_8 = {
@@ -429,6 +481,10 @@ ut_software_company_era_8 = {
 	prosperity_modifier = {
 		interest_group_ig_urbanists_approval_add = 2
 	}	
+		
+	ai_will_do = {
+		always = no
+	}
 }
 
 ut_synthetics_company = {
@@ -462,6 +518,10 @@ ut_synthetics_company = {
 		building_synthetics_plants_throughput_add = 0.1
 		building_synthetic_oil_throughput_add = 0.2
 	}	
+		
+	ai_will_do = {
+		always = no
+	}
 }
 
 ut_plastic_company = {
@@ -494,4 +554,8 @@ ut_plastic_company = {
 	prosperity_modifier = {
 		building_plastic_factory_throughput_add = 0.1
 	}	
+		
+	ai_will_do = {
+		always = no
+	}
 }
