@@ -1230,8 +1230,8 @@
  prestige_good_generic_software_b2c: "Office Software"
 
 #goods input output
- goods_input_heavy_machinery_add: "@heavy_machinery! Industrial Machinery input"
- goods_input_heavy_machinery_add_desc: "The amount of @heavy_machinery! Industrial Machinery consumed by buildings"
+ goods_input_heavy_machinery_add: "@heavy_machinery! Machinery input"
+ goods_input_heavy_machinery_add_desc: "The amount of @heavy_machinery! Machinery consumed by buildings"
  goods_input_plastic_add: "@plastic! Plastic input"
  goods_input_plastic_add_desc: "The amount of @plastic! Plastic consumed by buildings"
  goods_input_electronics_add: "@electronics! Electronics input"
@@ -1263,8 +1263,8 @@
  goods_input_utopia_battleship_add: "@utopia_battleship! Battleship input"
  goods_input_utopia_battleship_add_desc: "The amount of @utopia_battleship! Battleship consumed by buildings"
 
- goods_output_heavy_machinery_add: "@heavy_machinery! Industrial Machinery output"
- goods_output_heavy_machinery_add_desc: "The amount of @heavy_machinery! Industrial Machinery produced by buildings"
+ goods_output_heavy_machinery_add: "@heavy_machinery! Machinery output"
+ goods_output_heavy_machinery_add_desc: "The amount of @heavy_machinery! Machinery produced by buildings"
  goods_output_plastic_add: "@plastic! Plastic output"
  goods_output_plastic_add_desc: "The amount of @plastic! Plastic produced by buildings"
  goods_output_electronics_add: "@electronics! Electronics output"
