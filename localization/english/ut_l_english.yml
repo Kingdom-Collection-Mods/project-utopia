@@ -879,7 +879,11 @@
  ut_jet_planes: "Jet Aircraft"
  ut_jet_planes_desc: "Jet engines tear through the sound barrier. MiG-15s and F-86s duel in supersonic loops where seconds decide life or fiery death."
  ut_modern_planes: "Modern Aircraft"
+ ut_modern_planes_desc: ""
  ut_anti_tank_guided_software: "Anti-Tank Guided Systems"
+ ut_anti_tank_guided_software_desc: ""
+ ut_military_complex: "Military Complex"
+ ut_military_complex_desc: ""
  light_ships_rockets_computers: "Light Ship Combat Systems"
  heavy_ships_rockets_computers: "Heavy Ship Combat Systems"
  support_ships_electronic_surveillance: "Electronic Surveillance Ships"
@@ -1323,8 +1327,8 @@
  building_electronic_factory_throughput_add: "$building_electronic_factory$ [concept_throughput]"
  building_electronic_factory_throughput_add_desc: "A bonus or penalty to both input and output of the $building_electronic_factory$."
 
- building_bauxite_mining_throughput_add: "$building_bauxite_mining$ [concept_throughput]"
- building_bauxite_mining_throughput_add_desc: "A bonus or penalty to both input and output of the $building_bauxite_mining$."
+ building_bauxite_mine_throughput_add: "$building_bauxite_mining$ [concept_throughput]"
+ building_bauxite_mine_throughput_add_desc: "A bonus or penalty to both input and output of the $building_bauxite_mining$."
 
  building_aluminum_factory_throughput_add: "$building_aluminum_factory$ [concept_throughput]"
  building_aluminum_factory_throughput_add_desc: "A bonus or penalty to both input and output of the $building_aluminum_factory$."
@@ -1351,6 +1355,7 @@
  smart_irrigation_building_silk_plantation: "Smart Irrigation"
  smart_irrigation_building_vineyard_plantation: "Smart Irrigation"
  smart_irrigation_building_coffee_plantation: "Smart Irrigation"
+ smart_irrigation_building_dye_plantation: "Smart Irrigation"
 
  agricultural_mechanization: "Heavy Tractors"
  slow_tech_progress: "Slow Technological Progress"

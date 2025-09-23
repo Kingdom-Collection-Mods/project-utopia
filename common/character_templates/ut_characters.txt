@@ -49,7 +49,7 @@ ut_agitator_fidel_castro = {
 	agitator_usage = {
 		country_trigger = {
 			any_primary_culture = {
-				has_discrimination_trait = hispanophone
+				has_discrimination_trait = language_hispanophone
 			}
 		}
         interest_group_trigger = {
@@ -120,7 +120,7 @@ ut_agitator_simone_de_beauvoir = {
 	agitator_usage = {
 		country_trigger = {
 			any_primary_culture = {
-				has_discrimination_trait = european_heritage
+				has_discrimination_trait_group = heritage_group_european
 			}
 		}
         interest_group_trigger = {
@@ -154,7 +154,7 @@ ut_agitator_milton_friedman = {
 	agitator_usage = {
 		country_trigger = {
 			any_primary_culture = {
-				has_discrimination_trait = european_heritage
+				has_discrimination_trait_group = heritage_group_european
 			}
 		}
         interest_group_trigger = {

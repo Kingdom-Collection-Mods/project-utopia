@@ -1,4 +1,4 @@
-# Harbor
+﻿# Harbor
 industry_harbor = {
 
 	era = era_5
@@ -540,7 +540,7 @@ ut_modern_planes = {
 	}
 }
 
-ut_rocket_factory = {
+ut_military_complex = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/guided_missiles.dds"
 	category = military

@@ -985,12 +985,13 @@ ut_liberal_feminism_leader = {
 
 	interest_group_leader_trigger = {
 		ideology_market_liberal_valid_trigger = yes
-		OR = {
-			owner = {
-				has_technology_researched = feminism_3
-			}
-			is_female = yes
-		}
+		# 
+		# OR = {
+		# 	owner = {
+		# 		has_technology_researched = feminism_3
+		# 	}
+		# 	is_female = yes
+		# }
 	}
 	
 	non_interest_group_leader_trigger = {

@@ -416,7 +416,7 @@ building_ut_research_institute = {
 
 	unlocking_technologies = { 
 		electronics
-		ut_rocket_factory
+		ut_military_complex
 		compulsory_secondary_school
 	}
 

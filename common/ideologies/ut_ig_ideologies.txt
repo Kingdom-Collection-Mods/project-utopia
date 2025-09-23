@@ -27,7 +27,7 @@
 
 
 ideology_urbanist_economy_base = {
-	icon = "gfx/interface/icons/ideology_icons/unused/integralist.dds"
+	icon = "gfx/interface/icons/ideology_icons/integralist.dds"
 
 	lawgroup_distribution_of_power = {
 		law_single_party_state = approve

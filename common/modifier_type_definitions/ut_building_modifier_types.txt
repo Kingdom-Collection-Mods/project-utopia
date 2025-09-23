@@ -99,7 +99,7 @@ goods_input_bauxite_add={
 	}
 }
 
-building_bauxite_mining_throughput_add={
+building_bauxite_mine_throughput_add={
 	decimals=0
 	color=good
 	percent=yes

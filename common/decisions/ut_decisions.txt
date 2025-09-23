@@ -64,7 +64,7 @@ ut_research_institute_found = {
 	possible = {
 		OR = {
 			has_technology_researched = electronics
-			has_technology_researched = ut_rocket_factory
+			has_technology_researched = ut_military_complex
 			has_technology_researched = compulsory_secondary_school			
 		}
 		produced_bureaucracy > 500
