@@ -302,5 +302,6 @@ je_ut_new_dawn_suppress_dissidents_trade_unions_mod = {
 
 ut_released_colony = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	country_acceptance_culture_base_add = -50
+	country_acceptance_no_shared_heritage_trait_add = -30
+	country_acceptance_no_shared_language_trait_add = -30
 }

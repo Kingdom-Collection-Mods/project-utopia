@@ -1,4 +1,4 @@
-﻿# Harbor
+# Harbor
 industry_harbor = {
 
 	era = era_5
@@ -550,7 +550,7 @@ ut_rocket_factory = {
 	}
 	
 	modifier = {
-		factory_construction_speed_mult = 0.1
+		building_munition_plants_throughput_add = 0.2
 	}
 	
 	ai_weight = {
