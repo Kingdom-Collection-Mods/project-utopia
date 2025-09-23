@@ -574,7 +574,7 @@ law_international_trade = {
 	progressiveness = 60
 
 	unlocking_technologies = {
-		international_trade
+		union_trade
 	}
 
 	modifier = {
@@ -1365,7 +1365,7 @@ law_ut_disability_insurance = {
 	progressiveness = 100
 
 	unlocking_technologies = {
-		human_rights
+		emancipation_movement
 	}
 
 	modifier = {

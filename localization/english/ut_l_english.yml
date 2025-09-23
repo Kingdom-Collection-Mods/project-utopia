@@ -91,7 +91,7 @@
  je_urbanist_ig_reason: "The urbanist movement is more than architecture – it is a vision of how we live together. In growing cities, not just buildings are created, but societies. Urban planners, social reformers, and visionaries dream of urban spaces that not only function, but inspire: with parks, light, transit, and public life. The city is not only built – it is shaped, as a stage for a better future."
 
  concept_ut_research_institute: "Research Institute"
- concept_ut_research_institute_desc: "In the research institute, large research projects can be unlocked. \n Era 6: Nuclear Energy & Nuclear Weapons \n Era 6: Nuclear Power \n Era 7: High-End Computers (~10µm)\nEra 8: Generative AI.\nStill in progress."
+ concept_ut_research_institute_desc: "In the research institute, large research projects can be unlocked. \n Era 6: Nuclear Power \n Era 7: High-End Computers (~10µm)\nWork in progress."
  ut_research_institute_found: "Found Research Institute"
  ut_research_institute_found_desc: "A national [concept_ut_research_institute] is to be established to consolidate scientific excellence, promote fundamental research, and structurally accelerate technological progress. The construction of this institution marks a milestone on the path to a knowledge-based society."
  ut_je_research_institute_founding: "Founding a Research Institute"
