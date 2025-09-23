@@ -1,4 +1,4 @@
-﻿pmg_base_building_rye_farm = {
+pmg_base_building_rye_farm = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_simple_farming
@@ -15,6 +15,7 @@
 # 		pm_no_secondary
 # 		pm_potatoes
 # 		pm_apple_orchards
+# 		pm_sugar_beets
 # 	}
 # }
 
@@ -48,6 +49,7 @@ pmg_base_building_wheat_farm = {
 # 	production_methods = {
 # 		pm_no_secondary
 # 		pm_citrus_orchards
+# 		pm_sugar_beets
 # 	}
 # }
 
