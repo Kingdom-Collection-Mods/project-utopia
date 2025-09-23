@@ -1,8 +1,7 @@
 ﻿### See power_bloc_principles for the individual effects
 
 principle_group_modern_trade_league = {
-	#Available for all
-	#unlocking_identity = identity_trade_league
+	unlocking_identity = identity_trade_league
 	primary_for_identity = identity_trade_league
 	levels = {
 		principle_common_financial_policy_1
