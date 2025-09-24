@@ -1,0 +1,108 @@
+﻿#################################################################
+#####					INFANTRY UNITS						#####
+#################################################################
+
+
+#################################################
+###       			European     			  ###
+#################################################
+
+ut_military_infantry_generic_task_force_diorama_entity = {
+	entity = "military_infantry_european_mechanized_entity"
+
+	group = "infantry"
+	
+	trigger = {
+		scope:combat_unit_type = unit_type:combat_unit_type_task_force_infantry
+	}
+}
+
+ut_military_infantry_european_armored_diorama_entity = {
+	entity = "military_infantry_european_mechanized_entity"
+
+	group = "infantry"
+	
+	trigger = {
+		scope:culture = {
+			OR = {
+				has_culture_graphics = european
+				has_culture_graphics = french
+				has_culture_graphics = brazilian
+				has_culture_graphics = balkan
+			}
+		}
+		scope:combat_unit_type = unit_type:combat_unit_type_armored_infantry
+	}
+}
+
+
+#################################################
+###       			African     			  ###
+#################################################
+
+ut_military_infantry_african_armored_diorama_entity = {
+	entity = "military_infantry_african_mechanized_entity"
+
+	group = "infantry"
+	
+	trigger = {
+		scope:culture = {
+			has_culture_graphics = african
+		}
+		scope:combat_unit_type = unit_type:combat_unit_type_armored_infantry
+	}
+}
+
+
+#################################################
+###       			Arabic     				  ###
+#################################################
+
+ut_military_infantry_arabic_armored_diorama_entity = {
+	entity = "military_infantry_arabic_mechanized_entity"
+
+	group = "infantry"
+	
+	trigger = {
+		scope:culture = {
+			has_culture_graphics = arabic
+		}
+		scope:combat_unit_type = unit_type:combat_unit_type_armored_infantry
+	}
+}
+
+
+#################################################
+###       			East Asian     			  ###
+#################################################
+
+ut_military_infantry_eastasian_armored_diorama_entity = {
+	entity = "military_infantry_eastasian_mechanized_entity"
+
+	group = "infantry"
+	
+	trigger = {
+		scope:culture = {
+			has_culture_graphics = east_asian
+		}
+		scope:combat_unit_type = unit_type:combat_unit_type_armored_infantry
+	}
+}
+
+
+#################################################
+###       			South Asian     		  ###
+#################################################
+
+ut_military_infantry_southasian_armored_diorama_entity = {
+	entity = "military_infantry_southasian_mechanized_entity"
+
+	group = "infantry"
+	
+	trigger = {
+		scope:culture = {
+			has_culture_graphics = south_asian
+		}
+		scope:combat_unit_type = unit_type:combat_unit_type_armored_infantry
+	}
+}
