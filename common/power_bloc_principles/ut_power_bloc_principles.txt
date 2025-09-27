@@ -430,7 +430,9 @@ ut_modern_ideological_union_1 = {
 	member_modifier = {
 		political_movement_radicalism_from_enactment_disapproval_mult = -0.25
 		political_movement_radicalism_from_enactment_approval_mult = 0.25
-		
+	}
+
+	non_leader_modifier = {
 		country_leader_has_law_enactment_success_mult = 0.1
 	}
 	
@@ -465,6 +467,9 @@ ut_modern_ideological_union_2 = {
 		political_movement_radicalism_from_enactment_disapproval_mult = -0.25
 		political_movement_radicalism_from_enactment_approval_mult = 0.25
 
+	}
+
+	non_leader_modifier = {
 		country_leader_has_law_enactment_success_mult = 0.15
 	}
 	
@@ -493,8 +498,11 @@ ut_modern_ideological_union_3 = {
 		political_movement_radicalism_from_enactment_disapproval_mult = -0.25
 		political_movement_radicalism_from_enactment_approval_mult = 0.25
 
-		country_leader_has_law_enactment_success_mult = 0.2
 		country_legitimacy_min_add = 10
+	}
+
+	non_leader_modifier = {
+		country_leader_has_law_enactment_success_mult = 0.2		
 	}
 
 	ai_weight = {

@@ -1,0 +1,23 @@
+﻿#################################################################
+#####					INFANTRY UNITS						#####
+#################################################################
+
+ut_military_infantry_generic_task_force_diorama_entity = {
+	entity = "military_tank_light_generic_entity"
+
+	group = "infantry"
+	
+	trigger = {
+		scope:combat_unit_type = unit_type:combat_unit_type_task_force_infantry
+	}
+}
+
+ut_military_infantry_european_armored_diorama_entity = {
+	entity = "military_tank_light_generic_entity"
+
+	group = "infantry"
+	
+	trigger = {
+		scope:combat_unit_type = unit_type:combat_unit_type_armored_infantry
+	}
+}

@@ -1,0 +1,65 @@
+﻿#fleet_entity_example = {
+#	# The asset to show
+#	entity = "generic_ship_cargo_01_entity"
+#
+#	# Trigger to check if the current entity is valid to show in the naval diorama
+#	# scope:combat_unit_type - combat unit type
+#	trigger = {
+#		scope:combat_unit_type = unit_type:combat_unit_type_frigate
+#	}
+#}
+
+########################################
+###           Light Ships       	 ###
+########################################
+
+ut_military_navy_missile_corvettes_generic_diorama_entity = {
+	entity = "military_navy_scoutcruiser_generic_entity"
+	
+	trigger = {
+		scope:combat_unit_type = unit_type:combat_unit_type_missile_corvettes
+	}
+}
+
+ut_military_navy_surveillance_corvettes_generic_diorama_entity = {
+	entity = "military_navy_surveillance_corvettes_generic_entity"
+	
+	trigger = {
+		scope:combat_unit_type = unit_type:combat_unit_type_surveillance_corvettes
+	}
+}
+
+
+########################################
+###           Capital Ships       	 ###
+########################################
+
+ut_military_navy_capital_battleship_generic_diorama_entity = {
+	entity = "military_navy_battleship_generic_entity"
+	
+	trigger = {
+		scope:combat_unit_type = unit_type:combat_unit_type_capital_battleship
+	}
+}
+
+
+
+########################################
+###         Support Vessels      	 ###
+########################################
+
+ut_military_navy_modern_submarine_generic_diorama_entity = {
+	entity = "military_navy_submarine_generic_entity"
+	
+	trigger = {
+		scope:combat_unit_type = unit_type:combat_unit_type_modern_submarine
+	}
+}
+
+ut_military_navy_super_carrier_generic_diorama_entity = {
+	entity = "military_navy_carrier_generic_entity"
+	
+	trigger = {
+		scope:combat_unit_type = unit_type:combat_unit_type_super_carrier
+	}
+}
