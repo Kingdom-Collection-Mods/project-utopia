@@ -652,7 +652,7 @@ event_new_dawn.12 = {
 	type = country_event
 	placement = ROOT
 	title = event_new_dawn.11.t
-	desc = event_new_dawn.11.d_1
+	desc = event_new_dawn.11.d
 
 	duration = 3
 
