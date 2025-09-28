@@ -19,7 +19,10 @@
 
 	possible = {
 		OR = {
-			has_global_variable = je_ut_new_dawn_global_started
+			custom_tooltip = {
+				text = je_ut_new_dawn_global_started_tt
+				has_global_variable = je_ut_new_dawn_global_started
+			}
 			pop_type_percent_country = {
 				pop_type = service_workers
 				percent > 0.01
@@ -33,6 +36,7 @@
 	}
 
 	immediate = {
+		custom_tooltip = je_ut_new_dawn_immediate_tt
 		ut_set_new_dawn_variables = yes
 		if = {
 			limit = {
