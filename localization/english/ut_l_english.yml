@@ -390,6 +390,7 @@
 
  je_ut_new_dawn_communist: "Communism"
  je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads"
+ je_ut_new_dawn_communist_complete_condition_tt: "Never (todo)"
 
  ut_new_dawn_autocrat_focus: "Autocratic Focus"
  ut_new_dawn_autocrat_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities].#!"

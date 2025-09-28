@@ -770,7 +770,7 @@ je_ut_new_dawn_communist = {
 			#event_new_dawn.1
 		}
 		effect = {
-			ut_new_dawn_autocrat_progress = yes
+			ut_new_dawn_communist_progress = yes
 		}
 	}
 
