@@ -154,7 +154,7 @@
  je_ut_new_dawn_condition_tt: "Completed [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_communist_core], or [concept_ut_nd_fascist_core] [concept_ut_nd_path_to_utopia]"
  je_ut_new_dawn_effect_tt: "Achieved [concept_ut_nd_utopia]?"
  new_dawn_mod: "New Dawn"
- new_dawn_phase_2_mod: "New Dawn: Reinforce Ideology" Democratic, Autocratic, Communist, or Fascist
+ new_dawn_phase_2_mod: "New Dawn: Reinforce Ideology"
 
  event_new_dawn.1.t: "New Dawn"
  event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."

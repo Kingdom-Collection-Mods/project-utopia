@@ -223,7 +223,7 @@
 }
 
 je_ut_new_dawn_democratic = {
-	icon = "gfx/interface/icons/new_dawn_icons/ut_nd_democractic.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_nd_democract.dds"
 
 	group = je_group_utopia
 	
@@ -392,7 +392,7 @@ je_ut_new_dawn_democratic = {
 }
 
 je_ut_new_dawn_autocratic = {
-	icon = "gfx/interface/icons/new_dawn_icons/ut_nd_autocratic.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_nd_autocrat.dds"
 
 	group = je_group_utopia
 
