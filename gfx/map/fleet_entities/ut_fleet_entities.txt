@@ -14,7 +14,7 @@
 ########################################
 
 ut_military_navy_missile_corvettes_generic_diorama_entity = {
-	entity = "military_navy_scoutcruiser_generic_entity"
+	entity = "military_navy_torpedo_generic_entity"
 	
 	trigger = {
 		scope:combat_unit_type = unit_type:combat_unit_type_missile_corvettes
@@ -22,7 +22,7 @@ ut_military_navy_missile_corvettes_generic_diorama_entity = {
 }
 
 ut_military_navy_surveillance_corvettes_generic_diorama_entity = {
-	entity = "military_navy_surveillance_corvettes_generic_entity"
+	entity = "military_navy_scoutcruiser_generic_entity"
 	
 	trigger = {
 		scope:combat_unit_type = unit_type:combat_unit_type_surveillance_corvettes

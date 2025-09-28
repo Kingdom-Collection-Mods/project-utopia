@@ -102,7 +102,7 @@ utopia_arms  = {
 
 utopia_artillery = {
 	texture = "gfx/interface/icons/goods_icons/utopia_artillery.dds"
-	cost = 90
+	cost = 100
 	category = military
 
 	prestige_factor = 5

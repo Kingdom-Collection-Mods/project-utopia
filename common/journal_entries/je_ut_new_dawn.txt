@@ -1,5 +1,5 @@
 ﻿je_ut_new_dawn = {
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
 	
@@ -19,7 +19,10 @@
 
 	possible = {
 		OR = {
-			has_global_variable = je_ut_new_dawn_global_started
+			custom_tooltip = {
+				text = je_ut_new_dawn_global_started_tt
+				has_global_variable = je_ut_new_dawn_global_started
+			}
 			pop_type_percent_country = {
 				pop_type = service_workers
 				percent > 0.01
@@ -33,6 +36,7 @@
 	}
 
 	immediate = {
+		custom_tooltip = je_ut_new_dawn_immediate_tt
 		ut_set_new_dawn_variables = yes
 		if = {
 			limit = {
@@ -219,7 +223,7 @@
 }
 
 je_ut_new_dawn_democratic = {
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_nd_democrat.dds"
 
 	group = je_group_utopia
 	
@@ -388,7 +392,7 @@ je_ut_new_dawn_democratic = {
 }
 
 je_ut_new_dawn_autocratic = {
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_nd_autocrat.dds"
 
 	group = je_group_utopia
 
@@ -513,7 +517,7 @@ je_ut_new_dawn_autocratic = {
 }
 
 je_ut_new_dawn_fascist = {
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds"
 
 	group = je_group_utopia
 
@@ -683,7 +687,7 @@ je_ut_new_dawn_fascist = {
 }
 
 je_ut_new_dawn_communist = {
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_nd_communist.dds"
 
 	group = je_group_utopia
 
