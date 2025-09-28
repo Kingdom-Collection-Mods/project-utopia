@@ -44,6 +44,62 @@ ut_new_dawn_fascist_bar = {
 				}
 				multiply = 2
 			}
+			else = {
+				if ={
+					limit = {
+						pop_type_percent_country = {
+							pop_type = service_workers
+							percent < 0.01
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_0"
+						value = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							pop_type = service_workers
+							percent < 0.02
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_1"
+						value = 1.5
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							pop_type = service_workers
+							percent < 0.03
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_2"
+						value = 2
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							pop_type = service_workers
+							percent < 0.04
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_3"
+						value = 2.5
+					}				
+				}
+				else = {
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_4"
+						value = 3
+					}
+				}
+			}
 		}
 		else = {
 			add = {
@@ -97,11 +153,68 @@ ut_new_dawn_democrat_bar = {
 				desc = "ut_nd_democrat_progress_from_events"
 				value = owner.var:ut_nd_democrat_progress_from_events
 			}
+			
 			if = {
 				limit = {
 					is_ai = yes
 				}
 				multiply = 2
+			}
+			else = {
+				if ={
+					limit = {
+						pop_type_percent_country = {
+							pop_type = service_workers
+							percent < 0.01
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_0"
+						value = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							pop_type = service_workers
+							percent < 0.02
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_1"
+						value = 1.5
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							pop_type = service_workers
+							percent < 0.03
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_2"
+						value = 2
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							pop_type = service_workers
+							percent < 0.04
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_3"
+						value = 2.5
+					}				
+				}
+				else = {
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_4"
+						value = 3
+					}
+				}
 			}
 		}
 		else = {			
@@ -162,6 +275,62 @@ ut_new_dawn_communist_bar = {
 				}
 				multiply = 2
 			}
+			else = {
+				if ={
+					limit = {
+						pop_type_percent_country = {
+							pop_type = service_workers
+							percent < 0.01
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_0"
+						value = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							pop_type = service_workers
+							percent < 0.02
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_1"
+						value = 1.5
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							pop_type = service_workers
+							percent < 0.03
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_2"
+						value = 2
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							pop_type = service_workers
+							percent < 0.04
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_3"
+						value = 2.5
+					}				
+				}
+				else = {
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_4"
+						value = 3
+					}
+				}
+			}
 		}
 		else = {
 			add = {
@@ -219,6 +388,62 @@ ut_new_dawn_autocrat_bar = {
 					is_ai = yes
 				}
 				multiply = 2
+			}
+			else = {
+				if ={
+					limit = {
+						pop_type_percent_country = {
+							pop_type = service_workers
+							percent < 0.01
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_0"
+						value = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							pop_type = service_workers
+							percent < 0.02
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_1"
+						value = 1.5
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							pop_type = service_workers
+							percent < 0.03
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_2"
+						value = 2
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							pop_type = service_workers
+							percent < 0.04
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_3"
+						value = 2.5
+					}				
+				}
+				else = {
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_4"
+						value = 3
+					}
+				}
 			}
 		}
 		else = {

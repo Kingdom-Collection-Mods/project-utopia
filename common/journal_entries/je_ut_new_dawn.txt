@@ -23,9 +23,17 @@
 				text = je_ut_new_dawn_global_started_tt
 				has_global_variable = je_ut_new_dawn_global_started
 			}
-			pop_type_percent_country = {
-				pop_type = service_workers
-				percent > 0.01
+			OR = {
+				has_technology_researched = heavy_machinery_era_analog
+				has_technology_researched = consumer_goods_main_house_hold_electrical
+				has_technology_researched = nuclear_power
+				has_technology_researched = union_trade
+				has_technology_researched = national_socialism
+				has_technology_researched = emancipation_movement
+				AND = {
+					has_technology_researched = ut_military_complex
+					has_technology_researched = ut_tank_diesel_engine
+				}
 			}
 			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
 		}

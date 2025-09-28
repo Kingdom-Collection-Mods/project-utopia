@@ -468,9 +468,11 @@ pm_truck_production = {
 			# input goods
 			goods_input_aluminum_add = 5
 			goods_input_heavy_machinery_add = 1
+			goods_input_steel_add = 2
 
 			# output goods
 			goods_output_automobiles_add = -10
+			goods_output_utopia_tanks_add = 1
 			goods_output_trucks_add = 20
 		}
 
@@ -505,7 +507,7 @@ pm_modern_automobiles = {
 			goods_input_aluminum_add = 5
 
 			# output goods
-			goods_output_automobiles_add = 60
+			goods_output_automobiles_add = 70
 		}
 
 		level_scaled = {
