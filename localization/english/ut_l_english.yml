@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -247,8 +247,8 @@
 
  je_ut_new_dawn_critical_lower_bound_fail_tt: "If the threshold of #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v #![concept_ut_nd_progress_points] is undercut (instant right now), event chains may undo political progress and eventually trigger a new New Dawn."
 
- ut_new_dawn_communist_focus: "Communist Focus (tbd)"
- ut_new_dawn_communist_focus_desc: "work in progress"
+ ut_new_dawn_communist_focus: "Communist Focus"
+ ut_new_dawn_communist_focus_desc: "#italic wip: Currently being worked on#!"
  ut_new_dawn_communist_bar: "Communist"
  ut_new_dawn_communist_bar_desc: "Communist Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_communist_progress_from_characters: "combined [concept_popularity] of [concept_ut_nd_communist_characters]"
@@ -281,7 +281,7 @@
  je_ut_new_dawn_democratic_mod: "Democratic"
 
  ut_new_dawn_democrat_focus: "Democratic Focus"
- ut_new_dawn_democrat_focus_desc: ""
+ ut_new_dawn_democrat_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities] and [concept_ut_nd_milestones].#!"
  ut_new_dawn_democrat_bar: "Democratic"
  ut_new_dawn_democrat_bar_desc: "Democratic Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_democrat_progress_from_characters: "combined [concept_popularity] of [concept_ut_nd_democrat_characters]"
@@ -391,8 +391,8 @@
  je_ut_new_dawn_communist: "Communism"
  je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads"
 
- ut_new_dawn_autocrat_focus: "Autocratic Focus (wip)"
- ut_new_dawn_autocrat_focus_desc: "work in progress"
+ ut_new_dawn_autocrat_focus: "Autocratic Focus"
+ ut_new_dawn_autocrat_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities].#!"
 
  ut_new_dawn_autocrat_bar: "Autocratic"
  ut_new_dawn_autocrat_bar_desc: "Autocratic Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
@@ -429,8 +429,8 @@
  concept_ut_nd_utopia: "Utopia"
  concept_ut_nd_utopia_desc: "A utopia is an imagined ideal society where there is complete justice, harmony, and humans flourishing to perfection - it's as much an aspiration, as it's an inspiring vision."
 
- ut_new_dawn_fascist_focus: "Fascist Focus (tbd)"
- ut_new_dawn_fascist_focus_desc: "work in progress"
+ ut_new_dawn_fascist_focus: "Fascist Focus"
+ ut_new_dawn_fascist_focus_desc: "#italic tbd: Only preview of [concept_ut_nd_milestones] available. #!"
  ut_new_dawn_fascist_bar: "Fascist"
  ut_new_dawn_fascist_bar_desc: "Fascist Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_fascist_progress_from_characters: "combined [concept_popularity] of [concept_ut_nd_fascist_characters]"
