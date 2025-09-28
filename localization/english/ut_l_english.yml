@@ -100,7 +100,7 @@
  ut_je_research_institute_founding.success.f: "Where once lone inventors labored in dusty basements, now entire faculties work in unison. Chalkboards filled with equations, labs humming with energy - this is no longer mere experimentation. It is organized brilliance."
  ut_research_institute_found_mod: "Research Institute Initiative"
  ut_research_institute_found_mod_desc: "The foundations for a national research institute are being laid. Scientific networks are emerging, resources are being pooled, and the infrastructure for a future of knowledge is growing."
- ut_je_research_institute_founding_goal: "Wait for the completion of the #BOLD 4-year#! founding phase"
+ ut_je_research_institute_founding_goal: "Wait for the completion of the #BOLD 3-year#! founding phase"
  ut_research_institute_found_unlock_tt: "Unlocks [concept_ut_research_institute]"
  ut_research_institute_can_construct_tt: "Has identified and surveyed an appropriate site for a Research Institute"
  ut_research_institute_site_mod: "Research Institute Site"
