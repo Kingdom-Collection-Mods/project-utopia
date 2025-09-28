@@ -132,6 +132,7 @@ je_ut_new_dawn_democratic_mod = {
 ut_new_dawn_core_democratic_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	unit_defense_mult = 0.1
+	country_production_tech_research_speed_mult = 0.02
 }
 
 je_ut_new_dawn_democratic_power_bloc_mod = {
@@ -166,6 +167,9 @@ ut_new_dawn_core_fascist_mod = {
 	country_infamy_generation_mult = -0.5
 	country_infamy_decay_mult = -0.5
 	country_diplomatic_play_maneuvers_add = 50
+	country_military_tech_research_speed_mult = 0.05
+	country_acceptance_no_shared_heritage_trait_add = -10
+	country_acceptance_no_shared_language_trait_add = -10
 }
 
 #deprecated
@@ -175,6 +179,10 @@ je_ut_new_dawn_communist_mod = {
 
 ut_new_dawn_core_communist_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_leverage_generation_mult = 0.2
+	country_leader_has_law_enactment_success_mult = 0.2
+	interest_group_ig_trade_unions_pop_attraction_mult = 0.1
+	country_society_tech_research_speed_mult = 0.05
 }
 
 ut_research_high_tech_computers_research_mod = {

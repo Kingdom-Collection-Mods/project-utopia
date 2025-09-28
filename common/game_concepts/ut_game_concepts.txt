@@ -1,6 +1,16 @@
-﻿concept_ut_nd_milestones = {}
-concept_ut_nd_actions = {}
-concept_ut_nd_abilities = {}
+﻿concept_ut_nd_milestones = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds"
+}
+concept_ut_new_dawn = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
+}
+concept_ut_nd_actions = {
+	#deprecated
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds"
+}
+concept_ut_nd_abilities = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds"
+}
 concept_ut_nd_progress_points = {}
 concept_ut_nd_autocrat_characters = {
 	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_autocrat.dds"
