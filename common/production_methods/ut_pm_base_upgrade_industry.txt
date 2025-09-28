@@ -472,8 +472,8 @@ pm_truck_production = {
 
 			# output goods
 			goods_output_automobiles_add = -10
-			goods_output_trucks_add = 20
 			goods_output_utopia_tanks_add = 1
+			goods_output_trucks_add = 20
 		}
 
 		level_scaled = {

@@ -48,6 +48,10 @@ je_wirtschaftswunder = {
 
 	complete = {
 		country_rank >= rank_value:major_power
+		pop_type_percent_country = {
+			pop_type = service_workers
+			percent > 0.05
+		}
 		any_scope_building = {
 			is_building_type = building_heavy_machinery_factory
 			level >= 10
