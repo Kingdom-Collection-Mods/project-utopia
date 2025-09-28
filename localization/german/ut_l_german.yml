@@ -699,7 +699,7 @@
  ut_research_agreement_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to establish a $ut_research_agreement$."
  has_treaty_ut_research_agreement_with_trigger: "Does not have a $ut_research_agreement$ with [ROOT.GetCountry.GetName]"
 
-ut_research_assistance_treaty: "Research Agreement"
+ ut_research_assistance_treaty: "Research Agreement"
  ut_research_assistance_treaty_desc: "Advancing together."
  ut_research_assistance_treaty_action_name: "$ut_research_assistance_treaty$"
  ut_research_assistance_treaty_action_propose_name: "Propose $ut_research_assistance_treaty$"
