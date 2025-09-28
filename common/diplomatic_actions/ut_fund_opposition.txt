@@ -13,9 +13,7 @@ ut_fund_opposition = {
 	selectable = {
 		NOT = { is_country_type = decentralized }
 		is_revolutionary = no
-		has_modifier = ut_new_dawn_core_democratic_mod
-		#for initial release only the following
-		#Democrats putsch Autocrats
+		ut_new_dawn_has_core_trigger = yes
 	}
 
 	potential = {
@@ -23,7 +21,7 @@ ut_fund_opposition = {
 			NOT = { is_country_type = decentralized }
 			is_revolutionary = no
 			has_journal_entry = je_ut_new_dawn
-			#has_modifier = ut_new_dawn_core_autocratic_mod
+			ut_new_dawn_has_core_trigger = yes
 		}
 	}
 
@@ -135,51 +133,71 @@ ut_fund_opposition = {
 				}
 				2 = {
 					custom_tooltip = ut_fund_opposition_effect
-					scope:target_country = {
-						if = {
-							limit = {
+					if = {
+						limit = {
+							has_modifier = ut_new_dawn_core_democratic_mod
+							scope:target_country = {
 								has_modifier = ut_new_dawn_core_autocratic_mod
 							}
+						}
+						scope:target_country = {
 							je:je_ut_new_dawn_autocratic = {
 								add_progress = {
 									name = je_ut_new_dawn_autocratic_points_bar
-									value = -25
+									value = -37.5
+									#-25*1.5
 								}
 							}
 						}
-						else_if = {
-							limit = {
-								has_modifier = ut_new_dawn_core_democratic_mod
+					}
+					else = {
+						scope:target_country = {
+							if = {
+								limit = {
+									has_modifier = ut_new_dawn_core_autocratic_mod
+								}
+								je:je_ut_new_dawn_autocratic = {
+									add_progress = {
+										name = je_ut_new_dawn_autocratic_points_bar
+										value = -25
+									}
+								}
 							}
-							je:je_ut_new_dawn_democratic = {
-								add_progress = {
-									name = je_ut_new_dawn_democratic_points_bar
-									value = -25
+							else_if = {
+								limit = {
+									has_modifier = ut_new_dawn_core_democratic_mod
+								}
+								je:je_ut_new_dawn_democratic = {
+									add_progress = {
+										name = je_ut_new_dawn_democratic_points_bar
+										value = -25
+									}
+								}
+							}
+							else_if = {
+								limit = {
+									has_modifier = ut_new_dawn_core_fascist_mod
+								}
+								je:je_ut_new_dawn_fascist = {
+									add_progress = {
+										name = je_ut_new_dawn_fascist_points_bar
+										value = -25
+									}
+								}
+							}
+							else_if = {
+								limit = {
+									has_modifier = ut_new_dawn_core_communist_mod
+								}
+								je:je_ut_new_dawn_communist = {
+									add_progress = {
+										name = je_ut_new_dawn_communist_points_bar
+										value = -25
+									}
 								}
 							}
 						}
-						else_if = {
-							limit = {
-								has_modifier = ut_new_dawn_core_fascist_mod
-							}
-							je:je_ut_new_dawn_fascist = {
-								add_progress = {
-									name = je_ut_new_dawn_fascist_points_bar
-									value = -25
-								}
-							}
-						}
-						else_if = {
-							limit = {
-								has_modifier = ut_new_dawn_core_communist_mod
-							}
-							je:je_ut_new_dawn_communist = {
-								add_progress = {
-									name = je_ut_new_dawn_communist_points_bar
-									value = -25
-								}
-							}
-						}
+
 					}
 				}
 			}
