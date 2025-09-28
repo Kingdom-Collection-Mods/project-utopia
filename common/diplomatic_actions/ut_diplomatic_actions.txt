@@ -73,7 +73,7 @@ ut_influence_new_dawn_major_power = {
 		NOT = { is_country_type = decentralized }
 		is_revolutionary = no
 		country_rank >= rank_value:great_power
-		has_variable = je_ut_new_dawn_democratic_cultural_values_done
+		ut_new_dawn_has_core_trigger = yes
 	}
 	
 	potential = {
