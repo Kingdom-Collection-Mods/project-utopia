@@ -2,18 +2,39 @@
 concept_ut_nd_actions = {}
 concept_ut_nd_abilities = {}
 concept_ut_nd_progress_points = {}
-concept_ut_nd_autocrat_characters = {}
-concept_ut_nd_fascist_characters = {}
+concept_ut_nd_autocrat_characters = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_autocrat.dds"
+}
+concept_ut_nd_fascist_characters = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds"
+}
 concept_ut_nd_fascist_final_context = {}
-concept_ut_nd_democrat_characters = {}
-concept_ut_nd_communist_characters = {}
+concept_ut_nd_democrat_characters = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_democrat.dds"
+}
+concept_ut_nd_communist_characters = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_communist.dds"
+}
 
-concept_ut_nd_autocrat_core = {}
-concept_ut_nd_democrat_core = {}
-concept_ut_nd_fascist_core = {}
-concept_ut_nd_communist_core = {}
+concept_ut_nd_autocrat_core = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_autocrat.dds"
+}
+concept_ut_nd_democrat_core = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_democrat.dds"
+}
+concept_ut_nd_fascist_core = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds"
+}
+concept_ut_nd_communist_core = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_communist.dds"
+}
 
-concept_ut_nd_path_to_utopia = {}
+concept_ut_nd_path_to_utopia = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds"
+}
+concept_ut_nd_utopia = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds"
+}
 concept_ut_nd_focus = {}
 concept_ut_nd_stance = {}
 

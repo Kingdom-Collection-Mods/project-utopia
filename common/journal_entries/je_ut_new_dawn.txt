@@ -1,5 +1,5 @@
 ﻿je_ut_new_dawn = {
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
 	
@@ -223,7 +223,7 @@
 }
 
 je_ut_new_dawn_democratic = {
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_nd_democractic.dds"
 
 	group = je_group_utopia
 	
@@ -392,7 +392,7 @@ je_ut_new_dawn_democratic = {
 }
 
 je_ut_new_dawn_autocratic = {
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_nd_autocratic.dds"
 
 	group = je_group_utopia
 
@@ -517,7 +517,7 @@ je_ut_new_dawn_autocratic = {
 }
 
 je_ut_new_dawn_fascist = {
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds"
 
 	group = je_group_utopia
 
@@ -687,7 +687,7 @@ je_ut_new_dawn_fascist = {
 }
 
 je_ut_new_dawn_communist = {
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_nd_communist.dds"
 
 	group = je_group_utopia
 
