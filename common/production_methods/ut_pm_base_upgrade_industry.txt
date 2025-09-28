@@ -1,4 +1,4 @@
-﻿
+
 pm_precision_tools_heavy_machinery = {
 	texture = "gfx/interface/icons/production_method_icons/radios.dds"
 		
@@ -468,10 +468,12 @@ pm_truck_production = {
 			# input goods
 			goods_input_aluminum_add = 5
 			goods_input_heavy_machinery_add = 1
+			goods_input_steel_add = 2
 
 			# output goods
 			goods_output_automobiles_add = -10
 			goods_output_trucks_add = 20
+			goods_output_utopia_tanks_add = 1
 		}
 
 		level_scaled = {
