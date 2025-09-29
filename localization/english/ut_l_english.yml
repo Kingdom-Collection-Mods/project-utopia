@@ -148,7 +148,7 @@
  ut_je_ut_research_high_tech_computers_research_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy)"
 
  je_ut_new_dawn: "New Dawn"
- je_ut_new_dawn_reason: "Technological and cultural progress ushers in a [concept_ut_new_dawn] of political change. The path to utopia may be paved. Solidify your nation's core ideology. The ideology determines the direction your nation will take.\nChoose between [concept_ut_nd_fascist_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_democrat_core], and [concept_ut_nd_communist_core] [concept_ut_nd_path_to_utopia]."
+ je_ut_new_dawn_reason: "Technological and cultural progress ushers in a [concept_ut_new_dawn] of political change. The [concept_ut_nd_path_to_utopia] may be paved. Solidify your nation's core ideology. The ideology determines the direction your nation will take.\nChoose between [concept_ut_nd_fascist_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_democrat_core], and [concept_ut_nd_communist_core] [concept_ut_nd_path_to_utopia]."
  je_ut_new_dawn_immediate_tt: "$je_ut_new_dawn_reason$"
  je_ut_new_dawn_global_started_tt: "Any country has started the #b New Dawn#! event chain"
  je_ut_new_dawn_condition_tt: "Completed [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_communist_core], or [concept_ut_nd_fascist_core] [concept_ut_nd_path_to_utopia]"
