@@ -126,11 +126,11 @@ modern_civil_aviation_modifier_others = {
 
 #deprecated
 je_ut_new_dawn_democratic_mod = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_democrat.dds
 }
 
 ut_new_dawn_core_democratic_mod = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_democrat.dds
 	unit_defense_mult = 0.1
 	country_production_tech_research_speed_mult = 0.02
 }
@@ -147,22 +147,22 @@ je_ut_new_dawn_democratic_fair_elections_mod = {
 
 #deprecated
 je_ut_new_dawn_autocratic_mod = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_autocrat.dds
 }
 
 ut_new_dawn_core_autocratic_mod = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_autocrat.dds
 	country_suppression_attraction_factor = -0.25
 	country_authority_mult = 0.5
 }
 
 #deprecated
 je_ut_new_dawn_fascist_mod = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds
 }
 
 ut_new_dawn_core_fascist_mod = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds
 	country_liberty_desire_of_subjects_add = 0.05
 	country_infamy_generation_mult = -0.5
 	country_infamy_decay_mult = -0.5
@@ -174,11 +174,11 @@ ut_new_dawn_core_fascist_mod = {
 
 #deprecated
 je_ut_new_dawn_communist_mod = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_communist.dds
 }
 
 ut_new_dawn_core_communist_mod = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_communist.dds
 	country_leverage_generation_mult = 0.2
 	country_leader_has_law_enactment_success_mult = 0.2
 	interest_group_ig_trade_unions_pop_attraction_mult = 0.1

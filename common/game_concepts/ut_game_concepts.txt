@@ -11,7 +11,9 @@ concept_ut_nd_actions = {
 concept_ut_nd_abilities = {
 	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds"
 }
-concept_ut_nd_progress_points = {}
+concept_ut_nd_progress_points = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_progress_points.dds"
+}
 concept_ut_nd_autocrat_characters = {
 	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_autocrat.dds"
 }
@@ -46,6 +48,8 @@ concept_ut_nd_utopia = {
 	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds"
 }
 concept_ut_nd_focus = {}
-concept_ut_nd_stance = {}
+concept_ut_nd_stance = {
+	texture = "gfx/interface/icons/ai_attitude_icons/cooperative.dds"
+}
 
 concept_ut_research_institute = {}

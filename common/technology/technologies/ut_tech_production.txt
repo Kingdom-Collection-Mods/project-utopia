@@ -323,7 +323,7 @@ nuclear_power = {
 	
 	modifier = {
 		# country_resource_discovery_chance_mult = 0.5 something bugged
-		building_power_plant_throughput_add = 0.2
+		building_power_plant_throughput_add = 0.05
 	}
 
 	ai_weight = {
@@ -661,6 +661,7 @@ consumer_goods_main_plastic_revolution = {
 	
 	unlocking_technologies = {	
 		consumer_goods_main_entertainment_electrical
+		plastics_polypropylene
 	}
 	
 	ai_weight = {
@@ -732,7 +733,7 @@ plastics_polyester = {
 
 plastics_polypropylene = {
 	
-	era = era_7
+	era = era_6
 	texture = "gfx/interface/icons/invention_icons/art_silk.dds"
 	category = production
 

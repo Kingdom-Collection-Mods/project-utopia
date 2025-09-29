@@ -11,10 +11,10 @@
 			country_rank >= rank_value:great_power
 			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
 		}
-		OR = {
-			ut_service_workers_possible = yes
-			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
-		}
+		# OR = {
+		# 	ut_service_workers_possible = yes
+		# 	hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
+		# }
 	}
 
 	possible = {
@@ -770,7 +770,7 @@ je_ut_new_dawn_communist = {
 			#event_new_dawn.1
 		}
 		effect = {
-			ut_new_dawn_autocrat_progress = yes
+			ut_new_dawn_communist_progress = yes
 		}
 	}
 

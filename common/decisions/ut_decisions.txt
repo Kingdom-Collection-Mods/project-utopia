@@ -86,7 +86,7 @@ ut_research_institute_found = {
 		}
 		add_modifier = {
 			name = ut_research_institute_found_mod
-			months = 48
+			months = 36
 		}
 		add_journal_entry = {
 			type = ut_je_research_institute_founding
