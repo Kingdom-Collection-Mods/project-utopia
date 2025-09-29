@@ -1434,7 +1434,7 @@ principle_common_financial_policy_1: "Gemeinsame Finanzpolitik 1"
  ut_tech_preview_cheat_research_modifier: "Verbotene Technologien"
 
  ut_tech_preview_cheat_new_dawn: "Project Utopia: New Dawn Cheat" 
- ut_tech_preview_cheat_new_dawn_desc: "Als Teil der technischen Vorschau kann man New Dawn cheaten."
+ ut_tech_preview_cheat_new_dawn_desc: "Als Teil der technischen Vorschau kann man [concept_ut_new_dawn] cheaten."
 
 # units modifiers
  unit_combat_unit_type_light_tanks_offense_add: "$combat_unit_type_light_tanks$ $unit_offense_add$"
