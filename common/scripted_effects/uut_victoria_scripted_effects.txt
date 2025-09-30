@@ -502,7 +502,7 @@ ut_freeze_new_dawn_progress = { #Used upon initiation of cement_the_rightful_dyn
 	set_variable = ut_new_dawn_bar_freeze
 }
 
-ut_add_new_dawn_progress_autocratic = { #Used upon completion of cement_the_rightful_dynasty, to unfreeze the bars.
+ut_add_new_dawn_progress_autocratic = { 
 	je:je_ut_new_dawn_autocratic = {
 		add_progress = {
 			name = je_ut_new_dawn_autocratic_points_bar

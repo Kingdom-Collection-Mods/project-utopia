@@ -298,7 +298,7 @@
  ut_nd_decaying_progress: "$new_dawn_phase_2_mod$"
 
  je_ut_new_dawn_democratic: "Democratic Awakening"
- je_ut_new_dawn_democratic_reason: "The people demand participation, transparency, and free elections. Across the country, new parties are forming, trade unions are gaining influence, and protests for civil rights are filling the streets. \n Whether this awakening leads to a stable democracy or is crushed by the old elites is now in your hands. Will you allow reform – or try to preserve the old order by any means necessary?"
+ je_ut_new_dawn_democratic_reason: "The people demand participation, transparency, and free elections. Across the country, new parties are forming, trade unions are gaining influence, and protests for civil rights are filling the streets. \n Whether this awakening leads to a stable democracy or is crushed by the old elites is now in your hands. Will you allow reform – or try to preserve the old order by any means necessary? \n #italic - [Concept('concept_ut_nd_democratic_core', 'Democratic')'] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_points_bar: "Progress Points"
  je_ut_new_dawn_points_bar_desc: "Progress Points: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
  concept_ut_nd_progress_points: "Progress Points"
@@ -386,10 +386,10 @@
  je_ut_communist_final_desc: ""
 
  je_ut_new_dawn_fascist: "Fascism"
- je_ut_new_dawn_fascist_reason: ""
+ je_ut_new_dawn_fascist_reason: " \n #italic[Concept('concept_ut_nd_fascist_core', 'Fascist')']#!"
 
  je_ut_new_dawn_communist: "Communism"
- je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads"
+ je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads. \n #italic - [Concept('concept_ut_nd_communist_core', 'Communist')'] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_communist_complete_condition_tt: "Never (todo)"
 
  ut_new_dawn_autocrat_focus: "Autocratic Focus"
@@ -411,7 +411,7 @@
 #Core Ideology concepts
 
  concept_ut_nd_fascist_core: "Fascism"
- concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - Annex Country (Major) - tbd\n - Force Decrease Autonomy - tbd\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('ut_new_dawn_core_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nOppose: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others."
+ concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - Annex Country (Major) - tbd\n - Force Decrease Autonomy - tbd\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('ut_new_dawn_core_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nOppose: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others."
 
 
  concept_ut_nd_autocrat_core: "Autocracy"
@@ -422,7 +422,7 @@
  concept_ut_nd_democrat_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_democrat_progress_from_characters$\n- $ut_nd_democrat_progress_from_igs$\n- $ut_nd_democrat_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - Preview\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n - [GetArticleType('ut_democracy_article').GetNameNoIcon]\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_democrat_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('ut_new_dawn_core_democratic_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_democrat_core]\nNeutral: [concept_ut_nd_communist_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nStrengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people."
 
  concept_ut_nd_communist_core: "Communism"
- concept_ut_nd_communist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#! - wip\n - Spread Communism - tbd\n - Force into Power Bloc - tbd\n - Collective Council Republic - tbd\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_communist_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('ut_new_dawn_core_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_communist_core]\nNeutral: [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nBuild a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
+ concept_ut_nd_communist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#! - wip\n - [GetDiplomaticActionType('ut_force_become_subject').GetName] - Preview\n - Spread Communism - tbd\n - Force into Power Bloc - tbd\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_communist_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('ut_new_dawn_core_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_communist_core]\nNeutral: [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nBuild a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
 
  concept_ut_nd_path_to_utopia: "Path to Utopia"
  concept_ut_nd_path_to_utopia_desc: "When an ideology successfully completes the [concept_ut_new_dawn] journal entry, it can start their [concept_ut_nd_path_to_utopia] - each ideology comes with the same base set of abilities, flavored abilities, flavored modifiers and may even feature an [concept_ut_nd_utopia] to be achieved.\n\n#bold Base [concept_ut_nd_abilities]:#!\n - [GetDiplomaticActionType('ut_influence_new_dawn_major_power').GetName]\n - [GetDiplomaticActionType('ut_fund_ideology').GetName]\n - [GetDiplomaticActionType('ut_fund_opposition').GetName]\n\n#b 'New Dawn' is Work in Progress#!\n#italic Note the status notes:\ntbd (To Be Determined): No actual work done\nwip (Work in Progress): Ongoing development, follow the patch notes\nPreview: Initial version available for feedback; incomplete and not final\n\nIdeologies without Preview [concept_ut_nd_milestones] or [concept_ut_nd_abilities] feature more static modifiers instead.\n\nStatus notes may be incomplete.\n\n#i If you wanna support Project Utopia - leave a like on Steam Workshop <3"
@@ -745,6 +745,15 @@
  ut_fund_ideology_desc: "Fund aligned political groups in the target country to increase their ideological progress.\n\n$ut_fund_ideology_effect$"
  ut_fund_ideology_effect: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
 
+ ut_has_new_dawn_progress_50: "At least #b 50#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_50: "Add #b 50#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_neg_50: "Remove #r 50#! [concept_ut_nd_progress_points]"
+
+ ut_force_become_subject: "Collectivize Council Republics"
+ ut_force_become_subject_desc: "Force the target power bloc member to become your subject and join the Council Republic. They must be Communist themselves."
+
+ ut_force_regime_change: "ut_force_regime_change_wip"
+ ut_force_regime_change_desc: "Force a regime change in the target power bloc member to your ideology. They will enact, subjecthood, extraction economy and corporate economy."
 
 
  ut_fund_opposition: "Fund Opposition"
