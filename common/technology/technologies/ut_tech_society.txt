@@ -637,7 +637,6 @@ political_progress_4_greens = {
 	}
 }
 
-
 national_socialism = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/nazis.dds"
@@ -715,6 +714,7 @@ online_forums = {
 		value = 1
 	}
 }
+
 social_media = {
 	era = era_8
 	texture = "gfx/interface/icons/invention_icons/social_media.dds"
@@ -900,7 +900,6 @@ public_universities = {
 		value = 2 # Important
 	}
 }
-
 
 technical_scientific_school_reforms = {
 	era = era_7
