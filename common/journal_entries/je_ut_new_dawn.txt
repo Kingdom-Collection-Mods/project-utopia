@@ -284,6 +284,12 @@ je_ut_new_dawn_democratic = {
 				}
 			}		
 		}
+		if = {
+			limit = {
+				has_law = law_type:law_monarchy
+			}
+			activate_law = law_type:ut_law_monarchy_democratic
+		}
 	}
 	
 	scripted_button = je_ut_new_dawn_democratic_spirit
