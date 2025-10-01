@@ -163,7 +163,7 @@ je_ut_new_dawn_fascist_mod = {
 
 ut_new_dawn_core_fascist_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds
-	country_liberty_desire_of_subjects_add = 0.05
+	country_liberty_desire_of_subjects_add = 0.1
 	country_infamy_generation_mult = -0.5
 	country_infamy_decay_mult = -0.5
 	country_diplomatic_play_maneuvers_add = 50

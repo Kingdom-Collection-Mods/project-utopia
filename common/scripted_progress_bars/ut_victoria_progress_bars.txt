@@ -590,10 +590,6 @@ je_ut_new_dawn_fascist_points_bar = {
 				value = owner.var:ut_nd_fascist_progress_from_legitimacy
 			}
 			add = {
-				desc = "ut_nd_fascist_progress_from_focus"
-				value = owner.var:ut_nd_fascist_progress_from_focus
-			}
-			add = {
 				desc = "ut_nd_fascist_progress_from_events"
 				value = owner.var:ut_nd_fascist_progress_from_events
 			}
