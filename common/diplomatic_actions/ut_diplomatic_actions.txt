@@ -825,13 +825,16 @@ ut_force_regime_change = {
 
 	selectable = {
 		is_power_bloc_leader = yes
-		has_modifier = ut_new_dawn_core_communist_mod
+		has_modifier = ut_new_dawn_core_fascist_mod
 	}
 
 	potential = {
 		power_bloc ?= {
 			scope:target_country.power_bloc ?= this
 		}
+	}
+
+	possible = {
 		OR = {
 			has_subject_relation_with = scope:target_country
 			country_rank <= rank_value:minor_power
@@ -840,9 +843,6 @@ ut_force_regime_change = {
 		ut_has_new_dawn_progress_fascist = {
 			VALUE = 100
 		}
-	}
-
-	possible = {
 		custom_tooltip = {
 			text = "FORCE_REGIME_CHANGE_GOV_PRINCIPLES_DIST_POWER_PROGRESSIVENESS_DIFFERENCE"
 			OR = {
@@ -879,7 +879,10 @@ ut_force_regime_change = {
 		scope:target_country = {
 			activate_law = law_type:law_corporate_state
 			activate_law = law_type:law_extraction_economy
-			activate_law = law_type:law_subjecthood
+			activate_law = law_type:law_subjecthood #DEPRECATED
+
+			#apply law_subjecthood before for backwords compatibility DEPRECATED
+			activate_law = law_type:ut_law_subjecthood_fascist
 		}
 
 		power_bloc = {
