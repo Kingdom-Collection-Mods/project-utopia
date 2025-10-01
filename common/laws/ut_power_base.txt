@@ -1,4 +1,4 @@
-ut_law_monarchy_democratic = {
+﻿ut_law_monarchy_democratic = {
 	group = lawgroup_governance_principles
 	parent = law_monarchy
 
