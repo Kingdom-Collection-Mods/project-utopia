@@ -1,0 +1,642 @@
+ut_law_monarchy_democratic = {
+	group = lawgroup_governance_principles
+	parent = law_monarchy
+
+	icon = "gfx/interface/icons/law_icons/presidential_republic.dds"
+
+	progressiveness = 70
+
+	disallowing_laws = {
+		law_anarchy
+	}
+
+	is_visible = {
+		always = no #todo remove
+		ut_new_dawn_has_core_trigger = yes
+	}
+
+	modifier = {
+		country_legitimacy_govt_total_votes_add = 20
+		country_legitimacy_govt_size_add = 1
+		country_aristocrats_pol_str_mult = 0.15
+	}
+
+	can_enact = {
+		has_modifier = ut_new_dawn_core_democratic_mod
+	}
+
+	ai_will_do = {
+		exists = ruler
+		has_law = law_type:law_monarchy
+		has_modifier = ut_new_dawn_core_democratic_mod
+	}
+
+	on_activate = {
+		#remove french stuff
+		#?
+		if = {
+			limit = {
+				country_has_primary_culture = cu:vietnamese
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+						state_region = s:STATE_CAMBODIA
+					}
+				}
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_CAMBODIA
+					}
+					STATE_CAMBODIA_state_name_assign = yes
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+						state_region = s:STATE_LAOS
+					}
+				}
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_LAOS
+					}
+					STATE_LAOS_state_name_assign = yes
+				}
+			}
+		}
+		crown_land_republic_effect = yes
+		if = {
+			limit = {
+				has_law = law_type:law_neo_absolutism
+			}
+			deactivate_law = law_type:law_neo_absolutism
+			activate_law = law_type:law_autocracy
+		}
+	}
+
+	on_deactivate = {
+		if = {
+			limit = {
+				AND = {
+					has_law = law_type:law_subjecthood
+					NOR = {
+						has_law = law_type:law_theocracy
+						is_enacting_law = law_type:law_theocracy
+					}
+				}
+			}
+			custom_tooltip = because_subjecthood_is_active_tt
+			if = {
+				limit = {
+					any_interest_group = {
+						is_in_government = yes
+						any_preferred_law = {
+							is_citizenship_law = yes
+							NOT = {
+								type ?= law_type:law_subjecthood
+							}
+						}
+					}
+				}
+				ordered_interest_group = {
+					limit = {
+						is_in_government = yes
+						any_preferred_law = {
+							is_citizenship_law = yes
+							NOT = {
+								type ?= law_type:law_subjecthood
+							}
+						}
+					}
+					order_by = ig_clout
+					ordered_preferred_law = {
+						limit = {
+							is_citizenship_law = yes
+							NOT = {
+								type ?= law_type:law_subjecthood
+							}
+						}
+						min = 0
+						max = 1
+						check_range_bounds = no
+						prev.owner = {
+							activate_law = prev.type
+						}
+					}
+				}
+			}
+			else = {
+				activate_law = law_type:law_national_supremacy
+			}
+		}
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+	}
+}
+
+ut_law_monarchy_autocratic = {
+	group = lawgroup_governance_principles
+	parent = law_monarchy
+
+	icon = "gfx/interface/icons/law_icons/monarchy.dds"
+
+	progressiveness = 0
+
+	disallowing_laws = {
+		law_anarchy
+	}
+
+	is_visible = {
+		always = no #todo remove
+		ut_new_dawn_has_core_trigger = yes
+	}
+
+	can_enact = {
+		has_modifier = ut_new_dawn_core_autocratic_mod
+	}
+
+	modifier = {
+		country_legitimacy_headofstate_add = 25
+		country_legitimacy_ideological_incoherence_mult = 0.1
+		country_aristocrats_pol_str_mult = 0.25
+		country_authority_add = 400
+	}
+
+	ai_will_do = {
+		exists = ruler
+		has_law = law_type:law_monarchy
+		has_modifier = ut_new_dawn_core_autocratic_mod
+	}
+
+	on_activate = {
+		#remove french stuff
+		#?
+		if = {
+			limit = {
+				country_has_primary_culture = cu:vietnamese
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+						state_region = s:STATE_CAMBODIA
+					}
+				}
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_CAMBODIA
+					}
+					STATE_CAMBODIA_state_name_assign = yes
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+						state_region = s:STATE_LAOS
+					}
+				}
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_LAOS
+					}
+					STATE_LAOS_state_name_assign = yes
+				}
+			}
+		}
+		crown_land_republic_effect = yes
+		if = {
+			limit = {
+				has_law = law_type:law_neo_absolutism
+			}
+			deactivate_law = law_type:law_neo_absolutism
+			activate_law = law_type:law_autocracy
+		}
+	}
+
+	on_deactivate = {
+		if = {
+			limit = {
+				AND = {
+					has_law = law_type:law_subjecthood
+					NOR = {
+						has_law = law_type:law_theocracy
+						is_enacting_law = law_type:law_theocracy
+					}
+				}
+			}
+			custom_tooltip = because_subjecthood_is_active_tt
+			if = {
+				limit = {
+					any_interest_group = {
+						is_in_government = yes
+						any_preferred_law = {
+							is_citizenship_law = yes
+							NOT = {
+								type ?= law_type:law_subjecthood
+							}
+						}
+					}
+				}
+				ordered_interest_group = {
+					limit = {
+						is_in_government = yes
+						any_preferred_law = {
+							is_citizenship_law = yes
+							NOT = {
+								type ?= law_type:law_subjecthood
+							}
+						}
+					}
+					order_by = ig_clout
+					ordered_preferred_law = {
+						limit = {
+							is_citizenship_law = yes
+							NOT = {
+								type ?= law_type:law_subjecthood
+							}
+						}
+						min = 0
+						max = 1
+						check_range_bounds = no
+						prev.owner = {
+							activate_law = prev.type
+						}
+					}
+				}
+			}
+			else = {
+				activate_law = law_type:law_national_supremacy
+			}
+		}
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+	}
+}
+
+ut_law_monarchy_corporate_state = {
+	group = lawgroup_governance_principles
+	parent = law_monarchy
+
+	icon = "gfx/interface/icons/law_icons/corporate_state.dds"
+
+	progressiveness = 0
+
+	disallowing_laws = {
+		law_anarchy
+	}
+
+	is_visible = {
+		always = no #todo remove
+		ut_new_dawn_has_core_trigger = yes
+	}
+
+	can_enact = {
+		OR = {
+			has_modifier = ut_new_dawn_core_fascist_mod
+			has_modifier = ut_new_dawn_core_autocratic_mod
+		}
+	}
+
+	modifier = {
+		country_legitimacy_govt_size_add = 2
+		country_legitimacy_ideological_incoherence_mult = -0.25
+		country_authority_add = 100
+		interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.25
+	}
+
+	ai_will_do = {
+		exists = ruler
+		has_law = law_type:law_monarchy
+		has_modifier = ut_new_dawn_core_fascist_mod
+	}
+
+	on_activate = {
+		#remove french stuff
+		#?
+		if = {
+			limit = {
+				country_has_primary_culture = cu:vietnamese
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+						state_region = s:STATE_CAMBODIA
+					}
+				}
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_CAMBODIA
+					}
+					STATE_CAMBODIA_state_name_assign = yes
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+						state_region = s:STATE_LAOS
+					}
+				}
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_LAOS
+					}
+					STATE_LAOS_state_name_assign = yes
+				}
+			}
+		}
+		crown_land_republic_effect = yes
+		if = {
+			limit = {
+				has_law = law_type:law_neo_absolutism
+			}
+			deactivate_law = law_type:law_neo_absolutism
+			activate_law = law_type:law_autocracy
+		}
+	}
+
+	on_deactivate = {
+		if = {
+			limit = {
+				AND = {
+					has_law = law_type:law_subjecthood
+					NOR = {
+						has_law = law_type:law_theocracy
+						is_enacting_law = law_type:law_theocracy
+					}
+				}
+			}
+			custom_tooltip = because_subjecthood_is_active_tt
+			if = {
+				limit = {
+					any_interest_group = {
+						is_in_government = yes
+						any_preferred_law = {
+							is_citizenship_law = yes
+							NOT = {
+								type ?= law_type:law_subjecthood
+							}
+						}
+					}
+				}
+				ordered_interest_group = {
+					limit = {
+						is_in_government = yes
+						any_preferred_law = {
+							is_citizenship_law = yes
+							NOT = {
+								type ?= law_type:law_subjecthood
+							}
+						}
+					}
+					order_by = ig_clout
+					ordered_preferred_law = {
+						limit = {
+							is_citizenship_law = yes
+							NOT = {
+								type ?= law_type:law_subjecthood
+							}
+						}
+						min = 0
+						max = 1
+						check_range_bounds = no
+						prev.owner = {
+							activate_law = prev.type
+						}
+					}
+				}
+			}
+			else = {
+				activate_law = law_type:law_national_supremacy
+			}
+		}
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+	}
+}
+
+ut_law_council_presidium = {
+	group = lawgroup_governance_principles
+	parent = law_council_republic
+
+	icon = "gfx/interface/icons/law_icons/council_republic.dds"
+
+	progressiveness = 100
+
+	unlocking_technologies = {
+		socialism
+	}
+
+	is_visible = {
+		always = no #todo remove
+		ut_new_dawn_has_core_trigger = yes
+	}
+
+	can_enact = {
+		has_modifier = ut_new_dawn_core_communist_mod
+	}
+
+	on_activate = {
+		custom_tooltip = {
+			text = enact_law_radical_leftist_government_warning_desc
+		}
+		if = {
+			limit = {
+				any_interest_group = {
+					has_ideology = ideology:ideology_constitutionalist
+				}
+			}
+			every_interest_group = {
+				limit = {
+					has_ideology = ideology:ideology_constitutionalist
+				}
+				remove_ideology = ideology_constitutionalist
+				add_ideology = ideology_republican
+			}
+		}
+		if = {
+			limit = {
+				has_global_variable = lenin_spawn
+				country_has_primary_culture = cu:russian
+				any_scope_state = {
+					state_region = s:STATE_INGRIA
+				}
+			}
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_INGRIA
+				}
+				if = {
+					limit = {
+						has_global_variable = lenin_spawn
+
+						owner = {
+							country_has_primary_culture = cu:russian
+							has_law_or_variant = law_type:law_council_republic
+						}
+					}
+
+			        set_hub_name = {
+			            type = city
+			            name = HUB_NAME_STATE_INGRIA_city_russian_sov # St. Petersburg only becomes Leningrad if Lenin has been around to be a namesake
+			        }
+				}
+			}
+		}
+		crown_land_republic_effect = yes
+		if = {
+			limit = {
+				has_law = law_type:law_neo_absolutism
+			}
+			deactivate_law = law_type:law_neo_absolutism
+			activate_law = law_type:law_autocracy
+		}
+	}
+
+	modifier = {
+		country_legitimacy_headofstate_add = 10
+		country_legitimacy_govt_size_add = 1
+		country_legitimacy_ideological_incoherence_mult = 0.1
+		interest_group_ig_trade_unions_pol_str_mult = 0.25
+		interest_group_ig_industrialists_pol_str_mult = 0.1
+	}
+
+	ai_will_do = {
+		always = no
+		exists = ruler
+		ruler = {
+			has_socialist_ideology = yes
+		}
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+	}
+}
+
+ut_law_international_council = {
+	group = lawgroup_governance_principles
+	parent = law_council_republic
+
+	icon = "gfx/interface/icons/law_icons/council_republic.dds"
+
+	progressiveness = 300
+
+	unlocking_technologies = {
+		socialism
+	}
+
+	is_visible = {
+		always = no #todo remove
+		ut_new_dawn_has_core_trigger = yes
+	}
+
+	can_enact = {
+		has_modifier = ut_new_dawn_core_communist_mod
+	}
+
+	on_activate = {
+		custom_tooltip = {
+			text = enact_law_radical_leftist_government_warning_desc
+		}
+		if = {
+			limit = {
+				any_interest_group = {
+					has_ideology = ideology:ideology_constitutionalist
+				}
+			}
+			every_interest_group = {
+				limit = {
+					has_ideology = ideology:ideology_constitutionalist
+				}
+				remove_ideology = ideology_constitutionalist
+				add_ideology = ideology_republican
+			}
+		}
+		if = {
+			limit = {
+				has_global_variable = lenin_spawn
+				country_has_primary_culture = cu:russian
+				any_scope_state = {
+					state_region = s:STATE_INGRIA
+				}
+			}
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_INGRIA
+				}
+				if = {
+					limit = {
+						has_global_variable = lenin_spawn
+
+						owner = {
+							country_has_primary_culture = cu:russian
+							has_law_or_variant = law_type:law_council_republic
+						}
+					}
+
+			        set_hub_name = {
+			            type = city
+			            name = HUB_NAME_STATE_INGRIA_city_russian_sov # St. Petersburg only becomes Leningrad if Lenin has been around to be a namesake
+			        }
+				}
+			}
+		}
+		crown_land_republic_effect = yes
+		if = {
+			limit = {
+				has_law = law_type:law_neo_absolutism
+			}
+			deactivate_law = law_type:law_neo_absolutism
+			activate_law = law_type:law_autocracy
+		}
+	}
+
+	modifier = {
+		state_pop_pol_str_mult = 0.05
+		country_legitimacy_govt_total_votes_add = 20
+		country_legitimacy_govt_size_add = 2
+	}
+
+	ai_will_do = {
+		always = no
+		exists = ruler
+		ruler = {
+			has_socialist_ideology = yes
+		}
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+	}
+}
