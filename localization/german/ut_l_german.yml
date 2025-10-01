@@ -569,20 +569,23 @@
  lawgroup_food_safety: "Lebensmittelsicherheit"
  lawgroup_food_safety_desc: "Laws and institutions that ensure food safety, hygiene, and quality standards in food production and distribution."
 
- ut_law_monarchy_democratic: "Constitutional Monarchy"
- ut_law_monarchy_democratic_desc: "A system where the monarch's powers has no real political power and an elected parliament holds authority."
+ ut_law_monarchy_democratic: "Konstitutionelle Monarchie"
+ ut_law_monarchy_democratic_desc: "Ein System, in dem die Macht des Monarchen keine wirkliche politische Macht hat und ein gewähltes Parlament die Autorität innehat."
 
- ut_law_monarchy_autocratic: "Absolute Monarchy"
- ut_law_monarchy_autocratic_desc: "A system where the monarch holds supreme authority."
- 
- ut_law_monarchy_corporate_state: "Supreme Leader"
- ut_law_monarchy_corporate_state_desc: "A system where a single leader holds absolute power, often supported by a corporate or party structure."
+ ut_law_monarchy_autocratic: "Absolute Monarchie"
+ ut_law_monarchy_autocratic_desc: "Ein System, in dem der Monarch die höchste Autorität innehat."
 
- ut_law_council_presidium: "Council Presidium"
- ut_law_council_presidium_desc: "A collective leadership body that shares power among a select few, often within a party or government structure."
+ ut_law_monarchy_corporate_state: "Oberster Anführer"
+ ut_law_monarchy_corporate_state_desc: "Ein System, in dem ein einzelner Führer absolute Macht hat, oft unterstützt von einer Unternehmens- oder Parteistruktur."
 
- ut_law_international_council: "International Council"
- ut_law_international_council_desc: "A supranational governing body that oversees multiple nations, promoting cooperation and shared governance."
+ ut_law_council_presidium: "Rätepräsidium"
+ ut_law_council_presidium_desc: "Ein kollektives Führungsorgan, das die Macht unter einer ausgewählten Gruppe teilt, oft innerhalb einer Partei oder Regierungsstruktur."
+
+ ut_law_international_council: "Internationale Räterepublik"
+ ut_law_international_council_desc: "Ein supranationales Regierungsorgan, das mehrere Nationen überwacht und Zusammenarbeit sowie gemeinsame Regierungsführung fördert."
+
+ ut_law_subjecthood_fascist: "Administrative Gehorsamkeit"
+ ut_law_subjecthood_fascist_desc: "All eroberten Völker sind Subjekte der führenden Nation."
 
  law_social_market_economy: "Soziale Marktwirtschaft" 
  law_social_market_economy_desc: "Eine regulierte Marktwirtschaft, die freien Wettbewerb mit sozialer Absicherung verbindet, um Wohlstand und gesellschaftlichen Ausgleich zu fördern."

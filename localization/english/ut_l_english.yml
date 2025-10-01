@@ -386,10 +386,10 @@
  je_ut_communist_final_desc: ""
 
  je_ut_new_dawn_fascist: "Fascism"
- je_ut_new_dawn_fascist_reason: " \n #italic[Concept('concept_ut_nd_fascist_core', 'Fascist')']#!"
+ je_ut_new_dawn_fascist_reason: "#italic - [Concept('concept_ut_nd_fascist_core', 'Fascist')]#!"
 
  je_ut_new_dawn_communist: "Communism"
- je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads. \n #italic - [Concept('concept_ut_nd_communist_core', 'Communist')'] [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads. \n #italic - [Concept('concept_ut_nd_communist_core', 'Communist')] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_communist_complete_condition_tt: "Never (todo)"
 
  ut_new_dawn_autocrat_focus: "Autocratic Focus"
@@ -584,6 +584,9 @@
  ut_law_international_council: "International Council"
  ut_law_international_council_desc: "A supranational governing body that oversees multiple nations, promoting cooperation and shared governance."
 
+ ut_law_subjecthood_fascist: "Administrative Obedience"
+ ut_law_subjecthood_fascist_desc: "All conquered peoples are subjects of the first nation."
+
  law_social_market_economy: "Social Market Economy"
  law_social_market_economy_desc: "A regulated market economy that combines free competition with social security to promote prosperity and social balance."
  law_free_market_economy: "Free Market Economy"
@@ -615,6 +618,7 @@
  law_multicultural_globalism: "Globalism"
  law_multicultural_globalism_desc: "An open society that values cultural diversity and international cooperation."
  EFFECTS_ON_ACCEPTANCE_law_multicultural_globalism: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Pops will lead similar lives with only few negative consequences, even when they aren't as accepted#!#!"
+ EFFECTS_ON_ACCEPTANCE_ut_law_subjecthood_fascist: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Pops outside their home land face low Acceptance values and a harsh life, while Pops in higher statuses are also suppressed.#!"
  law_equal_rights_for_women: "Equal Rights"
  law_equal_rights_for_women_desc: "Legal equality for women in education, employment, and politics to eliminate gender-based discrimination, including the end of a husband's legal authority over his wife."
  law_affirmative_equality: "Affirmative Equality"
@@ -775,8 +779,8 @@
  ut_force_become_subject: "Collectivize Council Republics"
  ut_force_become_subject_desc: "Force the target power bloc member to become your subject and join the Council Republic. They must be Communist themselves."
 
- ut_force_regime_change: "ut_force_regime_change_wip"
- ut_force_regime_change_desc: "Force a regime change in the target power bloc member to your ideology. They will enact, subjecthood, extraction economy and corporate economy."
+ ut_force_regime_change: "Order Fascist Change"
+ ut_force_regime_change_desc: "Force a regime change in the target power bloc member to your ideology. They must be your subject or a minor nation. They will enact, [GetLawType('law_corporate_state').GetName], [GetLawType('law_extraction_economy').GetName] and [GetLawType('ut_law_subjecthood_fascist').GetName]."
 
 
  ut_fund_opposition: "Fund Opposition"
