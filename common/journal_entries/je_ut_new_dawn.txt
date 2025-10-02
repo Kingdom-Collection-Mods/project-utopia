@@ -18,6 +18,7 @@
 	}
 
 	possible = {
+		has_technology_researched = consumer_goods_main_analog
 		OR = {
 			custom_tooltip = {
 				text = je_ut_new_dawn_global_started_tt
