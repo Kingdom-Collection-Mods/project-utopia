@@ -443,6 +443,7 @@ je_ut_new_dawn_democratic_spirit = {
 			if = {
 				limit = {
 					any_country = {
+						is_player = no
 						is_power_bloc_leader = yes
 						has_modifier = ut_new_dawn_core_democratic_mod
 						save_temporary_scope_as = target_country
@@ -454,6 +455,7 @@ je_ut_new_dawn_democratic_spirit = {
 			else = {
 				random_country = {
 					limit = {
+						is_player = no
 						is_power_bloc_leader = yes
 						save_temporary_scope_as = target_country
 					}
