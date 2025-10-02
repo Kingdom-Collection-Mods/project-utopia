@@ -411,7 +411,7 @@
 #Core Ideology concepts
 
  concept_ut_nd_fascist_core: "Fascism"
- concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - Annex Country (Major) - tbd\n - Force Decrease Autonomy - tbd\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('ut_new_dawn_core_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nOppose: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others."
+ concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - Annex Country (Major) - tbd\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('ut_new_dawn_core_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nOppose: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others."
 
 
  concept_ut_nd_autocrat_core: "Autocracy"
@@ -785,7 +785,7 @@
  ut_force_become_subject_desc: "Force the target power bloc member to become your subject and join the Council Republic. They must be Communist themselves."
 
  ut_force_regime_change: "Order Fascist Change"
- ut_force_regime_change_desc: "Force a regime change in the target power bloc member to your ideology. They must be your subject or a minor nation. They will enact, [GetLawType('law_corporate_state').GetName], [GetLawType('law_extraction_economy').GetName] and [GetLawType('ut_law_subjecthood_fascist').GetName]."
+ ut_force_regime_change_desc: "Force a regime change in the target power bloc member to your ideology. They must be your subject or a minor nation. They will enact, [GetLawType('law_corporate_state').GetName], [GetLawType('law_extraction_economy').GetName] and [GetLawType('ut_law_subjecthood_fascist').GetName]. Will turn a [concept_protectorate] into a [concept_puppet]."
 
 
  ut_fund_opposition: "Fund Opposition"

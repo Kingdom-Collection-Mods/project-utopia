@@ -887,6 +887,16 @@ ut_force_regime_change = {
 
 			#apply law_subjecthood before for backwords compatibility DEPRECATED
 			activate_law = law_type:ut_law_subjecthood_fascist
+			
+			if = {
+				limit = { 
+					has_diplomatic_pact = {
+						who = root
+						type = protectorate
+					}
+				}
+				decrease_autonomy = yes
+			}
 		}
 
 		power_bloc = {
