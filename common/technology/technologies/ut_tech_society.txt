@@ -1,4 +1,4 @@
-##Infrastructure
+﻿##Infrastructure
 highway_projects = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/40s_highway.dds"
@@ -653,6 +653,7 @@ national_socialism = {
 	}
 
 	modifier = {
+		state_expected_sol_from_literacy = 1
 	}
 
 	unlocking_technologies = {
