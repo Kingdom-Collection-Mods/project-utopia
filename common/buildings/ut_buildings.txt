@@ -301,7 +301,8 @@ highways = {
 	has_max_level = yes
 	
 	possible = {
-		on_river = no
+		#10 mio gdp
+		gdp > 10000000
 	}
 	
 	unlocking_technologies = { 
