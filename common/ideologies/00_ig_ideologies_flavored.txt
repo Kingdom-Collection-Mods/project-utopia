@@ -894,6 +894,8 @@ ideology_malthusian = {
 		law_no_health_system = approve
 		law_charitable_health_system = neutral
 		law_public_health_insurance = disapprove
+		ut_law_private_health_research = approve
+		ut_law_public_health_research = strongly_disapprove
 	}
 	
 	lawgroup_education_system = {

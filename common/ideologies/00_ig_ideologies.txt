@@ -150,6 +150,8 @@ ideology_individualist = {
 		law_no_health_system = approve
 		law_charitable_health_system = neutral
 		law_public_health_insurance = disapprove
+		ut_law_private_health_research = strongly_approve
+		ut_law_public_health_research = disapprove
 	}
 	
 	lawgroup_education_system = {
@@ -284,6 +286,8 @@ ideology_pious = {
 		law_public_health_insurance = neutral
 		law_no_health_system = disapprove
 		law_private_health_insurance = disapprove
+		ut_law_private_health_research = disapprove
+		ut_law_public_health_research = disapprove
 	}
 	
 	lawgroup_education_system = {
@@ -706,6 +710,8 @@ ideology_proletarian = {
 		law_no_health_system = disapprove
 		law_charitable_health_system = neutral
 		law_public_health_insurance = approve
+		ut_law_public_health_research = strongly_approve
+		ut_law_private_health_research = disapprove
 	}	
 
 	lawgroup_labour_associations = {
@@ -1008,6 +1014,8 @@ ideology_corporatist = {
 		law_public_health_insurance = neutral
 		law_no_health_system = disapprove
 		law_private_health_insurance = disapprove
+		ut_law_private_health_research = approve
+		ut_law_public_health_research = neutral
 	}
 	
 	lawgroup_education_system = {

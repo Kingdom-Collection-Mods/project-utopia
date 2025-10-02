@@ -181,6 +181,8 @@ ideology_proletarian_movement = {
 		law_no_health_system = disapprove
 		law_charitable_health_system = neutral
 		law_public_health_insurance = approve
+		ut_law_public_health_research = strongly_approve
+		ut_law_private_health_research = disapprove
 	}
 }
 
