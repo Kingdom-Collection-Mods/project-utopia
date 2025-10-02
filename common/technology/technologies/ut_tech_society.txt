@@ -1,4 +1,4 @@
-﻿##Infrastructure
+##Infrastructure
 highway_projects = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/40s_highway.dds"
@@ -190,7 +190,7 @@ check_payments = {
 	category = society
 		
 	modifier = {
-		state_service_workers_investment_pool_efficiency_mult = 0.1
+		state_service_workers_investment_pool_efficiency_mult = 0.05
 		country_minting_mult = 0.05
 		country_loan_interest_rate_mult = -0.01
 	}
@@ -212,7 +212,7 @@ credit_cards = {
 	category = society
 		
 	modifier = {
-		state_service_workers_investment_pool_efficiency_mult = 0.1
+		state_service_workers_investment_pool_efficiency_mult = 0.05
 		country_minting_mult = 0.05
 		country_loan_interest_rate_mult = -0.01
 	}
