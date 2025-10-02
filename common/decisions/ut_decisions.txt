@@ -396,6 +396,9 @@ ut_law_tax_code_amend = {
 	}
 
 	when_taken = {
+		trigger_event = {
+			id = utopia_mod.3
+		}
 	}
 
 	ai_chance = {

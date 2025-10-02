@@ -71,3 +71,36 @@ utopia_mod.2 = {
 		set_global_variable = ut_tech_preview_cheat_disable
 	}
 }
+
+#tax ammend
+utopia_mod.3 = {
+	type = country_event
+
+	event_image = {
+		video = "unspecific_trains"
+	}
+
+	duration = 3
+
+	placement = ROOT
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	title = utopia_mod.3.t
+	desc = utopia_mod.3.d
+	flavor = utopia_mod.3.f
+
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+	option = {
+		name = utopia.cheat
+	}
+	option = {
+		name = utopia.disable
+	}
+}

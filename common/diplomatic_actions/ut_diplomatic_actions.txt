@@ -720,6 +720,10 @@ ut_force_become_subject = {
 			has_law = law_type:law_cooperative_ownership
 			has_law = law_type:law_command_economy
 		}
+		
+		scope:target_country = {
+			is_subject = no
+		}
 	}
 
 	possible = {
