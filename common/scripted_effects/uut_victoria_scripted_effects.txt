@@ -97,8 +97,8 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 	if = {
 		limit = {
 			OR = {
-				has_law = law_type:law_command_economy
-				has_law = law_type:law_cooperative_ownership
+				has_law_or_variant = law_type:law_command_economy
+				has_law_or_variant = law_type:law_cooperative_ownership
 			}
 		}
 		change_variable = { name = ut_nd_communist_progress_from_laws add = 1 }
@@ -191,7 +191,7 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 	# From Laws
 	if = {
 		limit = {
-			has_law = law_type:law_universal_suffrage
+			has_law_or_variant = law_type:law_universal_suffrage
 		}
 		ROOT = {
 			change_variable = { name = ut_nd_democrat_progress_from_laws add = 1 }
@@ -200,7 +200,7 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 	
 	if = {
 		limit = {
-			has_law = law_type:law_census_voting
+			has_law_or_variant = law_type:law_census_voting
 		}
 		ROOT = {
 			change_variable = { name = ut_nd_democrat_progress_from_laws add = 0.5 }
@@ -299,10 +299,10 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 	if = {
 		limit = {
 			OR = {
-				has_law = law_type:law_monarchy
-				has_law = law_type:law_autocracy
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_autocracy
 			}
-			NOT = { has_law = law_type:law_universal_suffrage }
+			NOT = { has_law_or_variant = law_type:law_universal_suffrage }
 		}
 		ROOT = {
 			change_variable = { name = ut_nd_autocrat_progress_from_laws add = 1 }
@@ -402,11 +402,13 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 			change_variable = { name = ut_nd_fascist_progress_from_igs add = var:ig_weight }
 		}
 	}
-	# From Buildings
+	# From Laws
 	if = {
 		limit = {
-			has_law = law_type:law_ethnostate
-			has_law = law_type:law_neo_ethno_state
+			OR = {
+				has_law_or_variant = law_type:law_ethnostate
+				has_law_or_variant = law_type:law_neo_ethno_state
+			}
 		}
 		change_variable = { name = ut_nd_fascist_progress_from_laws add = 1 }
 	}
