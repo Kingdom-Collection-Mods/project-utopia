@@ -598,6 +598,11 @@
  ut_law_tax_code: "Steuergesetz"
  ut_law_tax_code_desc: "Ein umfassendes Steuersystem, das zusätzliche Steuererlassmöglichkeiten bietet."
 
+ ut_law_private_health_research: "Private Gesundheitsforschung"
+ ut_law_private_health_research_desc: "Ermöglicht es privaten Unternehmen, Gesundheitsforschung durchzuführen und medizinische Behandlungen zu entwickeln, was potenziell zu Innovationen führt, aber auch ethische Bedenken aufwirft."
+ law_public_health_research: "Öffentliche Gesundheitsforschung"
+ law_public_health_research_desc: "Staatlich finanzierte Forschungseinrichtungen, die sich auf öffentliche Gesundheitsfragen konzentrieren und sicherstellen, dass medizinische Fortschritte der gesamten Bevölkerung zugutekommen."
+
  law_free_trade_union: "Freihandelsblock"
  law_free_trade_union_desc: "Ein Staatenbund, der interne Handelsbarrieren abschafft und eine gemeinsame Zollpolitik zur Förderung wirtschaftlicher Interessen verfolgt."
  law_protectionism_union: "Protektionistischer Block"

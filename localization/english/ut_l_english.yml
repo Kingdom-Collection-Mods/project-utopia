@@ -598,6 +598,11 @@ l_english:
  ut_law_tax_code: "Tax Code"
  ut_law_tax_code_desc: "A comprehensive tax system that allows for additional tax edicts."
 
+ ut_law_private_health_research: "Private Health Research"
+ ut_law_private_health_research_desc: "Allows private companies to conduct health research and develop medical treatments, potentially leading to innovation but also raising ethical concerns."
+ law_public_health_research: "Public Health Research"
+ law_public_health_research_desc: "State-funded health research institutions that focus on public health issues, ensuring that medical advancements benefit the entire population."
+
  law_free_trade_union: "Free Trade Network"
  law_free_trade_union_desc: "A confederation of states that eliminates internal trade barriers and pursues a common tariff policy to promote economic interests."
  law_protectionism_union: "Protectionist Bloc"
