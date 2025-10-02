@@ -501,3 +501,39 @@ ut_clear_divided_new_dawn_variables = { #Clears all variables, to save memory/pe
 ut_freeze_new_dawn_progress = { #Used upon initiation of cement_the_rightful_dynasty, to prevent the bars from excessively accumulating.
 	set_variable = ut_new_dawn_bar_freeze
 }
+
+ut_add_new_dawn_progress_autocratic = { 
+	je:je_ut_new_dawn_autocratic = {
+		add_progress = {
+			name = je_ut_new_dawn_autocratic_points_bar
+			value = $VALUE$
+		}
+	}
+}
+
+ut_add_new_dawn_progress_democratic = {
+	je:je_ut_new_dawn_democratic = {
+		add_progress = {
+			name = je_ut_new_dawn_democratic_points_bar
+			value = $VALUE$
+		}
+	}
+}
+
+ut_add_new_dawn_progress_fascist = {
+	je:je_ut_new_dawn_fascist = {
+		add_progress = {
+			name = je_ut_new_dawn_fascist_points_bar
+			value = $VALUE$
+		}
+	}
+}
+
+ut_add_new_dawn_progress_communist = {
+	je:je_ut_new_dawn_communist = {
+		add_progress = {
+			name = je_ut_new_dawn_communist_points_bar
+			value = $VALUE$
+		}
+	}
+}

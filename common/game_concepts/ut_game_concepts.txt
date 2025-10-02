@@ -3,6 +3,8 @@
 }
 concept_ut_new_dawn = {
 	texture = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
+
+	is_loading_tip = yes
 }
 concept_ut_nd_actions = {
 	#deprecated
@@ -10,9 +12,11 @@ concept_ut_nd_actions = {
 }
 concept_ut_nd_abilities = {
 	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds"
+	is_loading_tip = yes
 }
 concept_ut_nd_progress_points = {
 	texture = "gfx/interface/icons/new_dawn_icons/ut_progress_points.dds"
+	is_loading_tip = yes
 }
 concept_ut_nd_autocrat_characters = {
 	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_autocrat.dds"
@@ -46,10 +50,14 @@ concept_ut_nd_path_to_utopia = {
 }
 concept_ut_nd_utopia = {
 	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds"
+	is_loading_tip = yes
 }
 concept_ut_nd_focus = {}
 concept_ut_nd_stance = {
 	texture = "gfx/interface/icons/ai_attitude_icons/cooperative.dds"
 }
 
-concept_ut_research_institute = {}
+concept_ut_research_institute = {
+	texture = "gfx/interface/icons/building_icons/research_institute.dds"
+	is_loading_tip = yes
+}
