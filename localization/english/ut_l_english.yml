@@ -772,9 +772,9 @@
  ut_fund_ideology_desc: "Fund aligned political groups in the target country to increase their ideological progress.\n\n$ut_fund_ideology_effect$"
  ut_fund_ideology_effect: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
 
- ut_has_new_dawn_progress_50: "At least #b 50#! [concept_ut_nd_progress_points]"
- ut_add_new_dawn_progress_50: "Add #b 50#! [concept_ut_nd_progress_points]"
- ut_add_new_dawn_progress_neg_50: "Remove #r 50#! [concept_ut_nd_progress_points]"
+ ut_has_new_dawn_progress_50: "[TARGET_COUNTRY.GetName] has #b 50#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_50: "[TARGET_COUNTRY.GetName] gains #b 50#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_neg_50: "[TARGET_COUNTRY.GetName] loses #r 50#! [concept_ut_nd_progress_points]"
 
  ut_force_become_subject: "Collectivize Council Republics"
  ut_force_become_subject_desc: "Force the target power bloc member to become your subject and join the Council Republic. They must be Communist themselves."

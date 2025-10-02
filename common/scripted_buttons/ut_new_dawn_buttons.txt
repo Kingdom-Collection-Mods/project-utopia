@@ -435,6 +435,38 @@ je_ut_new_dawn_democratic_spirit = {
 				add_progress = { value = -50 name = je_ut_new_dawn_democratic_points_bar }
 			}
 		}
+		if = {
+			limit = {
+				is_power_bloc_leader = yes
+				has_identity = identity:identity_sovereign_empire
+			}
+			if = {
+				limit = {
+					any_country = {
+						is_power_bloc_leader = yes
+						has_modifier = ut_new_dawn_core_democratic_mod
+						save_temporary_scope_as = target_country
+					}
+				}
+				
+				join_power_bloc = scope:target_country
+			}
+			else = {
+				random_country = {
+					limit = {
+						is_power_bloc_leader = yes
+						save_temporary_scope_as = target_country
+					}
+					root = {
+						join_power_bloc = scope:target_country
+					}
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
 	}
 }
 
@@ -501,6 +533,10 @@ je_ut_new_dawn_democratic_cultural_values = {
 			}
 		}
 	}
+
+	ai_chance = {
+		value = 10
+	}
 }
 
 je_ut_new_dawn_democratic_power_bloc = {
@@ -543,6 +579,10 @@ je_ut_new_dawn_democratic_power_bloc = {
 			}
 		}
 	}
+
+	ai_chance = {
+		value = 10
+	}
 }
 
 je_ut_new_dawn_democratic_fair_elections = {
@@ -580,6 +620,10 @@ je_ut_new_dawn_democratic_fair_elections = {
 				add_progress = { value = -50 name = je_ut_new_dawn_democratic_points_bar }
 			}
 		}
+	}
+
+	ai_chance = {
+		value = 10
 	}
 }
 
