@@ -1467,6 +1467,7 @@ law_decolonization = {
 
 	modifier = {
 		country_leverage_generation_mult = 0.1
+		country_acceptance_homeland_add = 10
 	}
 
 	
