@@ -169,6 +169,14 @@ ideology_liberal_democratic = {
 		law_equal_rights_for_women = approve
 		law_affirmative_equality = neutral
 	}
+
+	lawgroup_colonization = {
+		law_colonial_exploitation = disapprove
+		law_no_colonial_affairs = neutral
+		law_decolonization = strongly_approve
+		law_colonial_resettlement = disapprove
+		law_frontier_colonization = neutral
+	}
 }
 
 
