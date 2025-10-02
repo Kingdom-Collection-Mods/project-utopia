@@ -12,7 +12,7 @@ pm_ut_jetplane_production = {
 			goods_input_heavy_machinery_add = 1
 			goods_input_hardwood_add = 4
 			goods_input_fabric_add = 4
-			goods_input_plastic_add = 4
+			goods_input_plastic_add = 6
 			goods_input_aluminum_add = 4
 			goods_output_automobiles_add = -10
 

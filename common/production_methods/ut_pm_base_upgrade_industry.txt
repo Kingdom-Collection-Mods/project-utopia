@@ -47,7 +47,7 @@ pm_ut_industry_plastics = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_plastic_add = 20
+			goods_input_plastic_add = 25
 			goods_input_lead_add = 30
 			
 			# output goods
@@ -134,7 +134,7 @@ pm_plastic_packaging = {
 			goods_input_fish_add = 30		# x20 = 600
 			goods_input_meat_add = 20		# x30 = 600
 			goods_input_aluminum_add = 5
-			goods_input_plastic_add = 20
+			goods_input_plastic_add = 30
 			
 			# output goods
 			goods_output_groceries_add = 130	# x30 = 2100
@@ -231,7 +231,7 @@ pm_heavy_machinery_textile  = {
 			# input goods
 			goods_input_tools_add = 10
 			goods_input_fabric_add = 60
-			goods_input_plastic_add = 10 #polyester
+			goods_input_plastic_add = 15 #polyester
 			goods_input_electricity_add = 10
 			goods_input_dye_add = 20
 			goods_input_heavy_machinery_add = 1
@@ -267,7 +267,7 @@ pm_plastics_textile  = {
 			goods_input_fabric_add = 40
 			goods_input_electricity_add = 10
 			goods_input_dye_add = 20
-			goods_input_plastic_add = 40 #acrylfasern
+			goods_input_plastic_add = 60 #acrylfasern
 			goods_input_heavy_machinery_add = 1
 			
 			# output goods
