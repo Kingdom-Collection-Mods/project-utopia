@@ -1,4 +1,4 @@
-﻿je_ut_new_dawn = {
+je_ut_new_dawn = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
@@ -643,12 +643,23 @@ je_ut_new_dawn_fascist = {
 			#event_new_dawn.1
 		}
 		effect = {
-			ut_new_dawn_fascist_progress = yes
+			if = {
+				limit = {
+					is_player = yes
+				}
+				ut_new_dawn_fascist_progress = yes
+			}
 		}
 	}
 
 	on_monthly_pulse = {
 		effect = {
+			if = {
+				limit = {
+					is_player = no
+				}
+				ut_new_dawn_fascist_progress = yes
+			}
 			if = {
 				limit = {
 					NOT = { has_modifier = je_ut_new_dawn_fascist_focus }
