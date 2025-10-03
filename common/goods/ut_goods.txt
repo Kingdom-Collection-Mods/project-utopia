@@ -11,7 +11,7 @@
 
 plastic = {
 	texture = "gfx/interface/icons/goods_icons/plastic.dds"
-	cost = 60
+	cost = 40
 	category = industrial
 	
 	prestige_factor = 10

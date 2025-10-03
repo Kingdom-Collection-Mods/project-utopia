@@ -190,7 +190,7 @@ check_payments = {
 	category = society
 		
 	modifier = {
-		state_service_workers_investment_pool_efficiency_mult = 0.1
+		state_service_workers_investment_pool_efficiency_mult = 0.05
 		country_minting_mult = 0.05
 		country_loan_interest_rate_mult = -0.01
 	}
@@ -212,7 +212,7 @@ credit_cards = {
 	category = society
 		
 	modifier = {
-		state_service_workers_investment_pool_efficiency_mult = 0.1
+		state_service_workers_investment_pool_efficiency_mult = 0.05
 		country_minting_mult = 0.05
 		country_loan_interest_rate_mult = -0.01
 	}
@@ -340,7 +340,11 @@ union_new_mandates = {
 
 	on_researched = {
 		custom_tooltip = {
-			text = union_new_mandates_tt
+			text = union_new_mandates_tt_principles
+		}
+		
+		custom_tooltip = {
+			text = union_new_mandates_tt_articles
 		}
 	}
 		
@@ -384,7 +388,7 @@ union_new_mandates_two = {
 	
 	on_researched = {
 		custom_tooltip = {
-			text = union_new_mandates_tt
+			text = union_new_mandates_two_tt
 		}
 	}
 
@@ -653,6 +657,7 @@ national_socialism = {
 	}
 
 	modifier = {
+		state_expected_sol_from_literacy = 1
 	}
 
 	unlocking_technologies = {
@@ -865,6 +870,12 @@ compulsory_secondary_school = {
 		
 	modifier = {
 		country_tech_spread_mult = 0.1
+	}
+
+	on_researched = {
+		custom_tooltip = {
+			text = ut_research_institute_found_unlock_tt
+		}
 	}
 
 	unlocking_technologies = {

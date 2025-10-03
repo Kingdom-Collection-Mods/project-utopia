@@ -100,63 +100,53 @@ invite_to_power_bloc = {
 			if = {
 				#Only if has ideology themself
 				limit = {
-					has_modifier = ut_new_dawn_core_democratic_mod
-					has_modifier = ut_new_dawn_core_autocratic_mod
-					has_modifier = ut_new_dawn_core_fascist_mod
-					has_modifier = ut_new_dawn_core_communist_mod
+					scope:actor = {
+						OR = {
+							has_modifier = ut_new_dawn_core_democratic_mod
+							has_modifier = ut_new_dawn_core_autocratic_mod
+							has_modifier = ut_new_dawn_core_fascist_mod
+							has_modifier = ut_new_dawn_core_communist_mod
+						}
+					}
 				}
 				
 				if = {
 					limit = {
-						has_modifier = ut_new_dawn_core_democratic_mod
+						scope:actor = {
+							has_modifier = ut_new_dawn_core_democratic_mod
+						}
 						scope:target_country = {
 							has_modifier = ut_new_dawn_core_democratic_mod
 						}
 					}
 					add = {
-						desc = "COUNTRY_IS_DEMOCRATIC"
+						desc = "UT_BOTH_DEMOCRATIC"
 						value = 100
 					}
 				}
 				
 				if = {
 					limit = {
-						OR = {
-							AND = {
-								has_modifier = ut_new_dawn_core_democratic_mod
-								scope:target_country = {
-									has_modifier = ut_new_dawn_core_democratic_mod
-								}
-							}
-							AND = {
-								has_modifier = ut_new_dawn_core_autocratic_mod
-								scope:target_country = {
-									has_modifier = ut_new_dawn_core_autocratic_mod
-								}
-							}
-							AND = {
-								has_modifier = ut_new_dawn_core_fascist_mod
-								scope:target_country = {
-									has_modifier = ut_new_dawn_core_fascist_mod
-								}
-							}
-							AND = {
-								has_modifier = ut_new_dawn_core_communist_mod
-								scope:target_country = {
-									has_modifier = ut_new_dawn_core_communist_mod
-								}
-							}
-						}
+						ut_diplomatic_action_accept_favorable_stance = yes
 					}
 					add = {
-						desc = "UT_BOTH_SAME_IDEOLOGY"
+						desc = "UT_STANCE_FAVORABLE"
 						value = 100
+					}
+				}
+				else_if = {
+					limit = {
+						ut_diplomatic_action_accept_opposing_stance = yes
+					}
+					add = {
+						desc = "UT_STANCE_OPPOSING"
+						value = -200
 					}
 				}
 				else = {
 					add = {
-						desc = "UT_BOTH_DIFFERENT_IDEOLOGY"
-						value = -100
+						desc = "UT_STANCE_NEUTRAL"
+						value = -10
 					}
 				}
 			}
@@ -472,7 +462,7 @@ invite_to_power_bloc = {
 									has_principle = principle:principle_sacred_civics_3
 								}
 							}
-							scope:actor.religion = root.religion
+							scope:actor.religion = scope:target_country.religion
 						}
 					}
 					add = 20
@@ -525,3 +515,4 @@ invite_to_power_bloc = {
 		}
 	}
 }
+

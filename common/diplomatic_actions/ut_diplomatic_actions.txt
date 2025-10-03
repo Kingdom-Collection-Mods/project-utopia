@@ -66,7 +66,7 @@ ut_influence_new_dawn_major_power = {
 	requires_approval = yes
 	
 	unlocking_technologies = {
-		union_new_mandates_two
+		union_trade
 	}
 	
 	selectable = {
@@ -720,6 +720,10 @@ ut_force_become_subject = {
 			has_law = law_type:law_cooperative_ownership
 			has_law = law_type:law_command_economy
 		}
+		
+		scope:target_country = {
+			is_subject = no
+		}
 	}
 
 	possible = {
@@ -732,8 +736,7 @@ ut_force_become_subject = {
 			country_rank < rank_value:unrecognized_major_power
 			is_diplomatic_play_committed_participant = no
 			OR = {
-				has_law = law_type:law_cooperative_ownership
-				has_law = law_type:law_command_economy
+				has_law_or_variant = law_type:law_council_republic
 				has_modifier = ut_new_dawn_core_communist_mod
 			}
 		}
@@ -883,6 +886,16 @@ ut_force_regime_change = {
 
 			#apply law_subjecthood before for backwords compatibility DEPRECATED
 			activate_law = law_type:ut_law_subjecthood_fascist
+			
+			if = {
+				limit = { 
+					has_diplomatic_pact = {
+						who = root
+						type = protectorate
+					}
+				}
+				decrease_autonomy = yes
+			}
 		}
 
 		power_bloc = {
