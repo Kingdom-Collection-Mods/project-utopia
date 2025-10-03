@@ -350,6 +350,89 @@ ut_articles_mutual_accept_opposing_stance = {
 	}
 }
 
+ut_articles_directed_accept_favorable_stance = {
+	OR = {
+		AND = {
+			scope:source_country = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+			scope:target_country = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+		}
+		AND = {
+			scope:source_country = {
+				has_modifier = ut_new_dawn_core_autocratic_mod
+			}
+			scope:target_country = {
+				OR = {
+					has_modifier = ut_new_dawn_core_autocratic_mod
+					has_modifier = ut_new_dawn_core_fascist_mod
+				}
+			}
+		}
+		AND = {
+			scope:source_country = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+			}
+			scope:target_country = {
+				OR = {
+					has_modifier = ut_new_dawn_core_autocratic_mod
+					has_modifier = ut_new_dawn_core_fascist_mod
+				}
+			}
+		}
+		AND = {
+			scope:source_country = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+			scope:target_country = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+		}
+	}
+}
+
+ut_articles_directed_accept_opposing_stance = {
+	OR = {
+		AND = {
+			scope:source_country = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+			scope:target_country = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+			}
+		}
+		AND = {
+			scope:source_country = {
+				has_modifier = ut_new_dawn_core_autocratic_mod
+			}
+			scope:target_country = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+		}
+		AND = {
+			scope:source_country = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+			}
+			scope:target_country = {
+				OR = {
+					has_modifier = ut_new_dawn_core_democratic_mod
+					has_modifier = ut_new_dawn_core_communist_mod
+				}
+			}
+		}
+		AND = {
+			scope:source_country = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+			scope:target_country = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+			}
+		}
+	}
+}
+
 ut_diplomatic_action_accept_favorable_stance = {
 	OR = {
 		AND = {

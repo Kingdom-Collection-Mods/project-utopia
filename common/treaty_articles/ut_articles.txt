@@ -39,6 +39,14 @@
 
 	requirement_to_maintain = {
 		trigger = {
+			scope:second_country = {
+				has_technology_researched = union_new_mandates
+			}
+		}
+	}
+
+	requirement_to_maintain = {
+		trigger = {
 			scope:first_country = {
 				country_rank >= rank_value:major_power
 			}
@@ -198,6 +206,12 @@
 				add = {
 					desc = "UT_STANCE_OPPOSING"
 					value = -200
+				}
+			}
+			else = {
+				add = {
+					desc = "UT_STANCE_NEUTRAL"
+					value = -10
 				}
 			}
 
@@ -513,12 +527,13 @@ ut_research_assistance_treaty = {
 
 	source_modifier = {
 		country_weekly_innovation_add = -10
+		country_weekly_innovation_max_add = 5
 	}
 
 	target_modifier = {
 		country_weekly_innovation_add = 10
 		country_weekly_innovation_max_add = 10
-		country_tech_spread_add = 10
+		country_tech_spread_mult = 0.15
 	}
 
 	visible = {
@@ -664,36 +679,26 @@ ut_research_assistance_treaty = {
 
 			if = {
 				limit = {
-					OR = {
-						AND = {
-							has_modifier = ut_new_dawn_core_democratic_mod
-							scope:target_country = {
-								has_modifier = ut_new_dawn_core_democratic_mod
-							}
-						}
-						AND = {
-							has_modifier = ut_new_dawn_core_autocratic_mod
-							scope:target_country = {
-								has_modifier = ut_new_dawn_core_autocratic_mod
-							}
-						}
-						AND = {
-							has_modifier = ut_new_dawn_core_fascist_mod
-							scope:target_country = {
-								has_modifier = ut_new_dawn_core_fascist_mod
-							}
-						}
-						AND = {
-							has_modifier = ut_new_dawn_core_communist_mod
-							scope:target_country = {
-								has_modifier = ut_new_dawn_core_communist_mod
-							}
-						}
-					}
+					ut_articles_directed_accept_favorable_stance = yes
 				}
 				add = {
-					desc = "UT_BOTH_SAME_IDEOLOGY"
+					desc = "UT_STANCE_FAVORABLE"
 					value = 50
+				}
+			}
+			else_if = {
+				limit = {
+					ut_articles_directed_accept_opposing_stance = yes
+				}
+				add = {
+					desc = "UT_STANCE_OPPOSING"
+					value = -50
+				}
+			}
+			else = {
+				add = {
+					desc = "UT_STANCE_NEUTRAL"
+					value = 10
 				}
 			}
 

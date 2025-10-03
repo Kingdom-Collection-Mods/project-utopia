@@ -135,7 +135,7 @@
  ut_share_nuclear_power_research_proposal_declined_name: "$ut_share_nuclear_power_research_name$ declined"
  ut_share_nuclear_power_research_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected $ut_share_nuclear_power_research_name$."
  ut_share_nuclear_power_research_effects_desc: "REPLACE_ME"
- ut_share_nuclear_power_research_article_short_desc: "REPLACE_ME"
+ ut_share_nuclear_power_research_article_short_desc: "Shares Nuclear Power research with [TARGET_COUNTRY.GetAdjectiveNoFormatting]"
 
  ut_research_high_tech_computers: "Research High-Tech Computers"
  ut_research_high_tech_computers_desc: "Start a research initiative into micro chip technologies and replace transistors. These machines will form the basis for modern simulations, industrial automation, and military superiority."
@@ -732,6 +732,7 @@
  ut_humiliate_power_bloc_goal_desc: "Humiliate a rival power bloc leader to force them into your bloc."
  ut_research_agreement: "Research Agreement"
  ut_research_agreement_desc: "Advancing together."
+ ut_research_agreement_article_short_desc: "[FIRST_COUNTRY.GetAdjectiveNoFormatting] forms a Research Pact with [SECOND_COUNTRY.GetAdjectiveNoFormatting]."
  ut_research_agreement_action_name: "$ut_research_agreement$"
  ut_research_agreement_action_propose_name: "Propose $ut_research_agreement$"
  ut_research_agreement_action_propose_desc: "Propose a $ut_research_agreement$ with [TARGET_COUNTRY.GetName]."
@@ -745,8 +746,9 @@
  ut_research_agreement_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to establish a $ut_research_agreement$."
  has_treaty_ut_research_agreement_with_trigger: "Does not have a $ut_research_agreement$ with [ROOT.GetCountry.GetName]"
 
- ut_research_assistance_treaty: "Research Agreement"
+ ut_research_assistance_treaty: "Research Assistance"
  ut_research_assistance_treaty_desc: "Advancing together."
+ ut_research_assistance_treaty_article_short_desc: "[SOURCE_COUNTRY.GetAdjectiveNoFormatting] assists [TARGET_COUNTRY.GetAdjectiveNoFormatting] in Research."
  ut_research_assistance_treaty_action_name: "$ut_research_assistance_treaty$"
  ut_research_assistance_treaty_action_propose_name: "Propose $ut_research_assistance_treaty$"
  ut_research_assistance_treaty_action_propose_desc: "Propose a $ut_research_assistance_treaty$ with [TARGET_COUNTRY.GetName]."
@@ -762,10 +764,7 @@
 
  ut_democracy_article: "Spread Democracy"
  ut_democracy_article_desc: "Impose democratic reforms on the target country (Requires a new treaty or being enforced)."
-
- ut_foreign_investment_agreement: "Mutual Investment Agreement (Block)"
- ut_foreign_investment_agreement_action_name: "Mutual [concept_foreign_investment_rights] Agreement"
- ut_foreign_investment_agreement_desc: "A [concept_diplomatic_pact] between two [Concept('concept_country','$concept_countries$')] to establish a Mutual [concept_foreign_investment_rights] Agreement."
+ ut_democracy_article_article_short_desc: "Spreads Democracy to [TARGET_COUNTRY.GetAdjectiveNoFormatting]"
 
  ut_fund_ideology: "Fund Ideology"
  ut_fund_ideology_action_name: "$ut_fund_ideology$"
@@ -1047,7 +1046,7 @@
  digital_tax_declaration: "Digital Tax Declaration"
  digital_tax_declaration_desc: "Electronic forms and automated plausibility checks modernize tax collection."
  union_new_mandates: "International Law"
- union_new_mandates_tt: "Unlocks new power bloc principles"
+ union_new_mandates_tt: "Unlocks new [concept_article] and Power Bloc [concept_power_bloc_principle]"
  union_new_mandates_desc: "Supranational institutions gain authority over climate and digital regulation. The era of purely economic integration gives way to ambitious political entanglement."
  union_new_mandates_two: "International Organization"
  union_new_mandates_two_desc: "Joint army corps and cloud infrastructures mark the shift to a federal superstate. National sovereignty is increasingly delegated to the superstate."
