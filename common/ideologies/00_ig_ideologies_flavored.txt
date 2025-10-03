@@ -648,6 +648,7 @@ ideology_agrarian_jeffersonian = {
 		law_proportional_taxation = neutral
 		law_graduated_taxation = neutral
 		law_land_based_taxation = disapprove
+		ut_law_tax_code = neutral
 	}
 
 	lawgroup_distribution_of_power = {
@@ -782,6 +783,7 @@ ideology_utilitarian_millian = { # Replaces Malthusian, for the Industrialists
 		law_proportional_taxation = approve
 		law_graduated_taxation = strongly_approve
 		law_land_based_taxation = disapprove
+		ut_law_tax_code = strongly_approve
 	}
 
 	lawgroup_caste_hegemony = {
@@ -920,6 +922,7 @@ ideology_malthusian = {
 		law_land_based_taxation = approve
 		law_proportional_taxation = neutral
 		law_graduated_taxation = disapprove
+		ut_law_tax_code = strongly_disapprove
 	}
 
 	lawgroup_caste_hegemony = {

@@ -388,14 +388,26 @@ ut_lgbt_sexual_self_determination = {
 
 ut_law_tax_code_amend = {
 	is_shown = {
-		has_law = law_type:ut_law_tax_code
+		OR = {
+			has_law_or_variant = law_type:law_graduated_taxation
+			has_law_or_variant = law_type:ut_law_tax_code
+		}
+		NOT = { has_variable = ut_law_tax_code_amend_lock }
 	}
 
 	possible = {
-		always = no
+		has_law_or_variant = law_type:ut_law_tax_code
+		NOT = {
+			has_modifier = ut_tax_code_income_tax_raised
+			has_modifier = ut_tax_code_income_tax_lowered
+			has_modifier = ut_tax_code_consumption_tax_raised
+			has_modifier = ut_tax_code_dividend_tax_raised
+			has_modifier = ut_tax_code_dividend_tax_lowered
+		}
 	}
 
 	when_taken = {
+		set_variable = ut_law_tax_code_amend_lock
 		trigger_event = {
 			id = utopia_mod.3
 		}

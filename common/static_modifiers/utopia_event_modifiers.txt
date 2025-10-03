@@ -311,3 +311,33 @@ ut_released_colony = {
 	country_acceptance_no_shared_heritage_trait_add = -30
 	country_acceptance_no_shared_language_trait_add = -30
 }
+
+ut_tax_code_changed = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	state_tax_waste_add = 0.05
+}
+
+ut_tax_code_income_tax_raised = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	tax_income_add = 0.05
+}
+
+ut_tax_code_income_tax_lowered = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	tax_income_add = -0.05
+}
+
+ut_tax_code_consumption_tax_raised = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	tax_consumption_add = 0.1
+}
+
+ut_tax_code_dividend_tax_raised = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	tax_dividends_add = 0.05
+}
+
+ut_tax_code_dividend_tax_lowered = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	tax_dividends_add = -0.05
+}

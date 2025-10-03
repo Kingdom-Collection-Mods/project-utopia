@@ -150,6 +150,7 @@ ideology_proletarian_movement = {
 		law_proportional_taxation = neutral
 		law_consumption_based_taxation = neutral
 		law_graduated_taxation = approve
+		ut_law_tax_code = approve
 	}
 
 	lawgroup_economic_system = {
@@ -229,6 +230,7 @@ ideology_socialist_movement = {
 		law_proportional_taxation = neutral
 		law_consumption_based_taxation = neutral
 		law_graduated_taxation = approve
+		ut_law_tax_code = strongly_approve
 	}
 
 	lawgroup_labor_rights = {
@@ -734,6 +736,7 @@ ideology_land_reformer_movement = {
 		law_per_capita_based_taxation = neutral
 		law_proportional_taxation = neutral
 		law_graduated_taxation = neutral
+		ut_law_tax_code = neutral
 	}
 
 	lawgroup_land_reform = {
@@ -828,6 +831,7 @@ ideology_modernizer_movement = {
 		law_graduated_taxation = strongly_approve
 		law_land_based_taxation = neutral
 		law_consumption_based_taxation = disapprove
+		ut_law_tax_code = strongly_approve
 	}
 
 	lawgroup_education_system = {
@@ -1107,6 +1111,7 @@ ideology_utilitarian_movement = {
 		law_proportional_taxation = approve
 		law_graduated_taxation = strongly_approve
 		law_land_based_taxation = disapprove
+		ut_law_tax_code = approve
 	}
 
 	lawgroup_caste_hegemony = {
