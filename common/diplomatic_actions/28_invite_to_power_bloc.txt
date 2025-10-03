@@ -100,17 +100,21 @@ invite_to_power_bloc = {
 			if = {
 				#Only if has ideology themself
 				limit = {
-					OR = {
-						has_modifier = ut_new_dawn_core_democratic_mod
-						has_modifier = ut_new_dawn_core_autocratic_mod
-						has_modifier = ut_new_dawn_core_fascist_mod
-						has_modifier = ut_new_dawn_core_communist_mod
+					scope:actor = {
+						OR = {
+							has_modifier = ut_new_dawn_core_democratic_mod
+							has_modifier = ut_new_dawn_core_autocratic_mod
+							has_modifier = ut_new_dawn_core_fascist_mod
+							has_modifier = ut_new_dawn_core_communist_mod
+						}
 					}
 				}
 				
 				if = {
 					limit = {
-						has_modifier = ut_new_dawn_core_democratic_mod
+						scope:actor = {
+							has_modifier = ut_new_dawn_core_democratic_mod
+						}
 						scope:target_country = {
 							has_modifier = ut_new_dawn_core_democratic_mod
 						}
@@ -125,13 +129,17 @@ invite_to_power_bloc = {
 					limit = {
 						OR = {
 							AND = {
-								has_modifier = ut_new_dawn_core_democratic_mod
+								scope:actor = {
+									has_modifier = ut_new_dawn_core_democratic_mod
+								}
 								scope:target_country = {
 									has_modifier = ut_new_dawn_core_democratic_mod
 								}
 							}
 							AND = {
-								has_modifier = ut_new_dawn_core_autocratic_mod
+								scope:actor = {
+									has_modifier = ut_new_dawn_core_autocratic_mod
+								}
 								scope:target_country = {
 									OR = {
 										has_modifier = ut_new_dawn_core_autocratic_mod
@@ -140,7 +148,9 @@ invite_to_power_bloc = {
 								}
 							}
 							AND = {
-								has_modifier = ut_new_dawn_core_fascist_mod
+								scope:actor = {
+									has_modifier = ut_new_dawn_core_fascist_mod
+								}
 								scope:target_country = {
 									OR = {
 										has_modifier = ut_new_dawn_core_autocratic_mod
@@ -149,7 +159,9 @@ invite_to_power_bloc = {
 								}
 							}
 							AND = {
-								has_modifier = ut_new_dawn_core_communist_mod
+								scope:actor = {
+									has_modifier = ut_new_dawn_core_communist_mod
+								}
 								scope:target_country = {
 									has_modifier = ut_new_dawn_core_communist_mod
 								}
@@ -165,26 +177,34 @@ invite_to_power_bloc = {
 					limit = {
 						OR = {
 							AND = {
-								has_modifier = ut_new_dawn_core_democratic_mod
+								scope:actor = {
+									has_modifier = ut_new_dawn_core_democratic_mod
+								}
 								scope:target_country = {
 									has_modifier = ut_new_dawn_core_fascist_mod
 								}
 							}
 							AND = {
-								has_modifier = ut_new_dawn_core_autocratic_mod
+								scope:actor = {
+									has_modifier = ut_new_dawn_core_autocratic_mod
+								}
 								scope:target_country = {
 									has_modifier = ut_new_dawn_core_communist_mod
 								}
 							}
 							AND = {
-								has_modifier = ut_new_dawn_core_fascist_mod
+								scope:actor = {
+									has_modifier = ut_new_dawn_core_fascist_mod
+								}
 								scope:target_country = {
 									has_modifier = ut_new_dawn_core_democratic_mod
 									has_modifier = ut_new_dawn_core_communist_mod
 								}
 							}
 							AND = {
-								has_modifier = ut_new_dawn_core_communist_mod
+								scope:actor = {
+									has_modifier = ut_new_dawn_core_communist_mod
+								}
 								scope:target_country = {
 									has_modifier = ut_new_dawn_core_fascist_mod
 								}
@@ -194,13 +214,13 @@ invite_to_power_bloc = {
 					}
 					add = {
 						desc = "UT_STANCE_OPPOSING"
-						value = -100
+						value = -200
 					}
 				}
 				else = {
 					add = {
 						desc = "UT_STANCE_NEUTRAL"
-						value = 0
+						value = -10
 					}
 				}
 			}
