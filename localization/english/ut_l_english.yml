@@ -135,7 +135,7 @@
  ut_share_nuclear_power_research_proposal_declined_name: "$ut_share_nuclear_power_research_name$ declined"
  ut_share_nuclear_power_research_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected $ut_share_nuclear_power_research_name$."
  ut_share_nuclear_power_research_effects_desc: "REPLACE_ME"
- ut_share_nuclear_power_research_article_short_desc: "Shares Nuclear Power research with [TARGET_COUNTRY.GetAdjectiveNoFormatting]"
+ ut_share_nuclear_power_research_article_short_desc: "Shares Nuclear Power research with [TARGET_COUNTRY.GetNameNoFormatting]"
 
  ut_research_high_tech_computers: "Research High-Tech Computers"
  ut_research_high_tech_computers_desc: "Start a research initiative into micro chip technologies and replace transistors. These machines will form the basis for modern simulations, industrial automation, and military superiority."
@@ -732,7 +732,7 @@
  ut_humiliate_power_bloc_goal_desc: "Force a [Concept('concept_humiliation', 'humiliated')] rival power bloc leader to force to join your bloc - this will dissolve their power bloc. A [Concept('concept_humiliation', 'humiliated')] is also likely to abandon their [concept_ut_nd_path_to_utopia]."
  ut_research_agreement: "Research Agreement"
  ut_research_agreement_desc: "Advancing together."
- ut_research_agreement_article_short_desc: "[FIRST_COUNTRY.GetAdjectiveNoFormatting] forms a Research Pact with [SECOND_COUNTRY.GetAdjectiveNoFormatting]."
+ ut_research_agreement_article_short_desc: "[FIRST_COUNTRY.GetAdjectiveNoFormatting] form a Research Pact with [SECOND_COUNTRY.GetAdjectiveNoFormatting] Researchers."
  ut_research_agreement_action_name: "$ut_research_agreement$"
  ut_research_agreement_action_propose_name: "Propose $ut_research_agreement$"
  ut_research_agreement_action_propose_desc: "Propose a $ut_research_agreement$ with [TARGET_COUNTRY.GetName]."
@@ -748,7 +748,7 @@
 
  ut_research_assistance_treaty: "Research Assistance"
  ut_research_assistance_treaty_desc: "Advancing together."
- ut_research_assistance_treaty_article_short_desc: "[SOURCE_COUNTRY.GetAdjectiveNoFormatting] assists [TARGET_COUNTRY.GetAdjectiveNoFormatting] in Research."
+ ut_research_assistance_treaty_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] assists [TARGET_COUNTRY.GetNameNoFormatting] in Research."
  ut_research_assistance_treaty_action_name: "$ut_research_assistance_treaty$"
  ut_research_assistance_treaty_action_propose_name: "Propose $ut_research_assistance_treaty$"
  ut_research_assistance_treaty_action_propose_desc: "Propose a $ut_research_assistance_treaty$ with [TARGET_COUNTRY.GetName]."
@@ -763,8 +763,12 @@
 
 
  ut_democracy_article: "Spread Democracy"
- ut_democracy_article_desc: "Impose democratic reforms on the target country."
- ut_democracy_article_article_short_desc: "Spreads Democracy to [TARGET_COUNTRY.GetAdjectiveNoFormatting]"
+ ut_democracy_article_desc: "Impose [GetLawType('law_universal_suffrage').GetName] reforms on target country."
+ ut_democracy_article_article_short_desc: "Spreads Democracy to [TARGET_COUNTRY.GetNameNoFormatting]"
+
+ ut_communism_article: "Spread Communism"
+ ut_communism_article_desc: "Impose [GetLawType('law_council_republic').GetName] reforms on the target country."
+ ut_communism_article_article_short_desc: "Spreads Communism to [TARGET_COUNTRY.GetNameNoFormatting]"
 
  ut_fund_ideology: "Fund Ideology"
  ut_fund_ideology_action_name: "$ut_fund_ideology$"

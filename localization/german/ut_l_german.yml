@@ -761,9 +761,14 @@
  ut_research_assistance_treaty_proposal_declined_name: "$ut_research_assistance_treaty$ Declined"
  ut_research_assistance_treaty_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to establish a $ut_research_agreement$."
 
+
  ut_democracy_article: "Demokratie verbreiten"
- ut_democracy_article_desc: "Impose [GetLawType('law_universal_suffrage').GetName] reforms on target country."
- ut_democracy_article_article_short_desc: "Spreads [GetLawType('law_universal_suffrage').GetName] to [TARGET_COUNTRY.GetAdjectiveNoFormatting]"
+ ut_democracy_article_desc: "Zwinge das Zielland zu [GetLawType('law_universal_suffrage').GetName] Reformen."
+ ut_democracy_article_article_short_desc: "[TARGET_COUNTRY.GetAdjectiveNoFormatting] erlässt [GetLawType('law_universal_suffrage')."
+
+ ut_communism_article: "Kommunismus verbreiten"
+ ut_communism_article_desc: "Zwinge das Zielland zu [GetLawType('law_council_republic').GetName] Reformen."
+ ut_communism_article_article_short_desc: "[TARGET_COUNTRY.GetAdjectiveNoFormatting]
 
  ut_fund_ideology: "Ideologie finanzieren"
  ut_fund_ideology_action_name: "$ut_fund_ideology$"
