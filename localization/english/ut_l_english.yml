@@ -15,15 +15,15 @@
  ut_heavy_industrial_machinery_je: "Heavy Industrial Machinery"
  ut_heavy_industrial_machinery_je_reason: "A significant turning point on our nation's road to modernity. The foundations are laid, the first gears are mounted, the furnaces fired up - the very first building for heavy industrial machinery now proudly rises above the skyline, a testament to human ingenuity and ambition.\nWhere once workers toiled with bare hands, massive machines are now built to ease their burden and multiply their productivity. Even as the engines roar and the halls echo with the sound of steel, this building is more than just a factory. It is the crucible in which the future is forged."
  ut_heavy_industrial_machinery_je.success.d: "The foundations are laid, the machines installed. Our nation now proudly stands at the forefront of industrial progress with the opening of its first heavy machinery factory."
- ut_heavy_industrial_machinery_je.success.f: "It began with smoke and steel. In the shadow of a war-torn world, we dared not to dream of peace, but of purpose. The hum of turbines, the clash of iron, the precision of gears – these are the rhythms of a new age. This factory is more than concrete and rivets. It is the promise that we will no longer buy the future from others – we will build it with our own hands. From here on, everything changes."
+ ut_heavy_industrial_machinery_je.success.f: "It began with smoke and steel. In the shadow of a war-torn world, we dared not to dream of peace, but of purpose. The hum of turbines, the clash of iron, the precision of gears - these are the rhythms of a new age. This factory is more than concrete and rivets. It is the promise that we will no longer buy the future from others - we will build it with our own hands. From here on, everything changes."
  ut_heavy_industrial_machinery_je.fail: "Heavy Industrial Machinery Failed"
- ut_heavy_industrial_machinery_je.fail.d: "Plans were drawn, resources allocated – but the factory was never built. Mismanagement, bottlenecks, and political tensions brought the project to a halt."
- ut_heavy_industrial_machinery_je.fail.f: "They promised a new industrial dawn. But all that remains is an empty lot, rusted scaffolding, and silence where engines were meant to roar. In the end, it wasn't ambition we lacked, but coordination – and perhaps the courage to see it through."
+ ut_heavy_industrial_machinery_je.fail.d: "Plans were drawn, resources allocated - but the factory was never built. Mismanagement, bottlenecks, and political tensions brought the project to a halt."
+ ut_heavy_industrial_machinery_je.fail.f: "They promised a new industrial dawn. But all that remains is an empty lot, rusted scaffolding, and silence where engines were meant to roar. In the end, it wasn't ambition we lacked, but coordination - and perhaps the courage to see it through."
 
  ut_cnc_machines_je: "CNC Machines"
- ut_cnc_machines_je_reason: "With the introduction of CNC (Computerized Numerical Control) machines, a new era of precision and uniformity begins in heavy industry. Where even the steadiest craftsman's hand might fail, programmable machines now perform complex tasks with unfailing accuracy. Components once painstakingly made by hand are now milled, drilled, and cut – with mechanical elegance. The margin of error shrinks to nearly zero – and with it, the cost of imperfection.\nBut this revolution is more than just technological progress. It changes the nature of work itself. Skilled workers become operators and programmers, guiding machines instead of tools. Production becomes faster, parts standardized, and industries once limited by human variability are freed by automation. When CNC machines hum through the factory halls, heavy industry becomes a calculated symphony."
+ ut_cnc_machines_je_reason: "With the introduction of CNC (Computerized Numerical Control) machines, a new era of precision and uniformity begins in heavy industry. Where even the steadiest craftsman's hand might fail, programmable machines now perform complex tasks with unfailing accuracy. Components once painstakingly made by hand are now milled, drilled, and cut - with mechanical elegance. The margin of error shrinks to nearly zero - and with it, the cost of imperfection.\nBut this revolution is more than just technological progress. It changes the nature of work itself. Skilled workers become operators and programmers, guiding machines instead of tools. Production becomes faster, parts standardized, and industries once limited by human variability are freed by automation. When CNC machines hum through the factory halls, heavy industry becomes a calculated symphony."
  ut_cnc_machines_je.success.d: "The introduction of CNC machines marks a decisive step in the automation of our industry. Complex tasks are now executed with maximum precision and efficiency."
- ut_cnc_machines_je.success.f: "A soft hum replaces the noise of workbenches. Gears turn in sync, metal shavings dance to the rhythm of programmed perfection. Chaos is no longer in the workshop – order reigns, created not by hand, but by code."
+ ut_cnc_machines_je.success.f: "A soft hum replaces the noise of workbenches. Gears turn in sync, metal shavings dance to the rhythm of programmed perfection. Chaos is no longer in the workshop - order reigns, created not by hand, but by code."
 
  ut_heavy_tractors_je: "Heavy Tractors"
  ut_heavy_tractors_je_reason: "Introduction and use of powerful tractors to significantly increase agricultural productivity."
@@ -31,7 +31,7 @@
  ut_heavy_tractors_je.success.f: "The fields tremble under the weight of machines. What once took days now happens in hours. Diesel, steel, and determination carve deep furrows into the soil of the future."
 
  ut_agrarian_planes_je: "Agricultural Aircraft"
- ut_agrarian_planes_je_reason: "Use of aircraft in agriculture – for fertilization, pest control, and seeding over large areas."
+ ut_agrarian_planes_je_reason: "Use of aircraft in agriculture - for fertilization, pest control, and seeding over large areas."
  ut_agrarian_planes_je_done: "Agricultural Aircraft Completed"
  ut_agrarian_planes_je.success.d: "With the successful deployment of agricultural aircraft, a new chapter in modern farming begins. Vast fields are now cultivated more quickly, precisely, and economically."
  ut_agrarian_planes_je.success.f: "Wings of metal circle the horizon. What once was done by hand now rains from the sky: fertilizer, seed, hope. The fields breathe technology."
@@ -39,35 +39,35 @@
  ut_plastic_je: "Plastics"
  ut_plastic_je_reason: "The foundations and mass production of plastics, revolutionizing numerous industrial applications."
  ut_plastic_je.success.d: "The manufacturing and use of plastics has revolutionized our industrial base. New materials enable cost-effective and versatile production."
- ut_plastic_je.success.f: "Born in the lab, moldable like ideas – plastic replaces wood, glass, and metal. From resin and chemistry grows a new industrial age."
+ ut_plastic_je.success.f: "Born in the lab, moldable like ideas - plastic replaces wood, glass, and metal. From resin and chemistry grows a new industrial age."
 
  ut_electronics_je: "Electronics"
  ut_electronics_je_reason: "Electronic components and systems as the foundation of modern machinery, communication, and information processing."
  ut_electronics_je.success.d: "The successful implementation of electronic components brings precision, automation, and entirely new control capabilities to our industry."
- ut_electronics_je.success.f: "Solder gleams, circuit paths whisper. Where mechanical waves once rattled, pulses now flow – faster than thought."
+ ut_electronics_je.success.f: "Solder gleams, circuit paths whisper. Where mechanical waves once rattled, pulses now flow - faster than thought."
 
  ut_computers_je: "Computers"
  ut_computers_je_reason: "Computing machines that support and accelerate human planning and control through automation."
  ut_computers_je.success.d: "With the successful introduction of computers, information processing reaches a new level. Computing power replaces routine, logic replaces lists."
- ut_computers_je.success.f: "The first machines think – fast, logical, tireless. Between zero and one, a new universe of data and possibility is born."
+ ut_computers_je.success.f: "The first machines think - fast, logical, tireless. Between zero and one, a new universe of data and possibility is born."
 
  ut_software_je: "Software"
  ut_software_je_reason: "Programs and logical structures that control machines and computers and vastly expand their usability."
  ut_software_je.success.d: "The development and use of software gives machines a language. Processes are optimized, tasks automated, complexity tamed."
- ut_software_je.success.f: "Invisible, yet omnipresent. Cast in code, software controls gears, thoughts, and society – quiet, yet powerful."
+ ut_software_je.success.f: "Invisible, yet omnipresent. Cast in code, software controls gears, thoughts, and society - quiet, yet powerful."
 
  ut_consumer_goods_simple_je: "Basic Consumer Goods"
  ut_consumer_goods_simple_je_reason: "Production of basic consumer goods for everyday needs like clothing, soap, and tools."
- ut_consumer_goods_simple_je.success.d: "Mass production of basic consumer goods reliably meets the population's essential needs. Soap, clothing, tools – standardized and affordable."
- ut_consumer_goods_simple_je.success.f: "On every shelf lies a piece of stability. The everyday becomes accessible, the ordinary becomes a foundation – for a more dignified life."
+ ut_consumer_goods_simple_je.success.d: "Mass production of basic consumer goods reliably meets the population's essential needs. Soap, clothing, tools - standardized and affordable."
+ ut_consumer_goods_simple_je.success.f: "On every shelf lies a piece of stability. The everyday becomes accessible, the ordinary becomes a foundation - for a more dignified life."
  ut_consumer_goods_simple_je.fail: "Basic Consumer Goods Failed"
  ut_consumer_goods_simple_je.fail.d: "The planned production of basic consumer goods could not be realized. Technical difficulties, supply bottlenecks, and lack of coordination led to the initiative’s failure."
- ut_consumer_goods_simple_je.fail.f: "Shelves remain empty, workbenches silent. What seemed simple proved complex: Without soap, cloth, and tools, daily life becomes difficult – and trust fades with every unmet need."
+ ut_consumer_goods_simple_je.fail.f: "Shelves remain empty, workbenches silent. What seemed simple proved complex: Without soap, cloth, and tools, daily life becomes difficult - and trust fades with every unmet need."
 
  ut_consumer_goods_complex_je: "Advanced Consumer Goods"
  ut_consumer_goods_complex_je_reason: "Production of high-quality consumer goods such as household appliances, consumer electronics, and vehicles."
- ut_consumer_goods_complex_je.success.d: "The successful expansion of the advanced consumer goods industry has revolutionized households, transport, and leisure. Technology is no longer a luxury – it is quality of life."
- ut_consumer_goods_complex_je.success.f: "Refrigerators hum, radios play, cars roll. Comfort becomes a mass product – and progress enters both living rooms and workbenches."
+ ut_consumer_goods_complex_je.success.d: "The successful expansion of the advanced consumer goods industry has revolutionized households, transport, and leisure. Technology is no longer a luxury - it is quality of life."
+ ut_consumer_goods_complex_je.success.f: "Refrigerators hum, radios play, cars roll. Comfort becomes a mass product - and progress enters both living rooms and workbenches."
 
  je_group_utopia: "Utopia"
  je_group_ai_buffs: "Wave of Technological Innovation"
@@ -78,17 +78,17 @@
  je_wirtschaftswunder_others_reason: "REPLACE_ME"
 
  utopia_journal_society_2_wirtschaftswunder_title: "Economic Miracle"
- utopia_journal_society_2_wirtschaftswunder_desc: "In a breathtaking turn of events, our economy has not only recovered – it has exploded. Industry is booming, employment is at record levels, and prosperity is no longer a dream for many, but a daily reality."
- utopia_journal_society_2_wirtschaftswunder_flavor: "From rubble came gold: where once ruins smoldered, factories rose, prosperity bloomed, and a new sense of self took hold. A strong global economy, worldwide economic growth, and the spirit of the miracle transformed despair into momentum – an era in which workers became engineers of the future and technological progress amazed the world."
+ utopia_journal_society_2_wirtschaftswunder_desc: "In a breathtaking turn of events, our economy has not only recovered - it has exploded. Industry is booming, employment is at record levels, and prosperity is no longer a dream for many, but a daily reality."
+ utopia_journal_society_2_wirtschaftswunder_flavor: "From rubble came gold: where once ruins smoldered, factories rose, prosperity bloomed, and a new sense of self took hold. A strong global economy, worldwide economic growth, and the spirit of the miracle transformed despair into momentum - an era in which workers became engineers of the future and technological progress amazed the world."
 
  je_early_civil_aviation: "Early Civil Aviation"
- je_early_civil_aviation_reason: "Early civil aviation began with daring pioneers, sputtering propeller planes, and improvised runways on meadows and fields. What was once military in nature became a link between cities, people, and markets. Every flight was an adventure, every landing a triumph. In the open cockpits sat not passengers, but dreamers – and from their dreams grew an entirely new era of transportation."
+ je_early_civil_aviation_reason: "Early civil aviation began with daring pioneers, sputtering propeller planes, and improvised runways on meadows and fields. What was once military in nature became a link between cities, people, and markets. Every flight was an adventure, every landing a triumph. In the open cockpits sat not passengers, but dreamers - and from their dreams grew an entirely new era of transportation."
 
  je_modern_civil_aviation: "Modern Civil Aviation"
- je_modern_civil_aviation_reason: "Modern civil aviation has tamed the skies. Rickety biplanes became sleek jets, mail planes became flying cities. Airports are turning into hubs of a globally connected world. What once took days now happens in hours – fast, convenient, efficient. The sky is no longer a boundary, but a passageway: for business travelers, families, dreamers, and progress itself."
+ je_modern_civil_aviation_reason: "Modern civil aviation has tamed the skies. Rickety biplanes became sleek jets, mail planes became flying cities. Airports are turning into hubs of a globally connected world. What once took days now happens in hours - fast, convenient, efficient. The sky is no longer a boundary, but a passageway: for business travelers, families, dreamers, and progress itself."
 
  je_urbanist_ig: "Urbanist Movement"
- je_urbanist_ig_reason: "The urbanist movement is more than architecture – it is a vision of how we live together. In growing cities, not just buildings are created, but societies. Urban planners, social reformers, and visionaries dream of urban spaces that not only function, but inspire: with parks, light, transit, and public life. The city is not only built – it is shaped, as a stage for a better future."
+ je_urbanist_ig_reason: "The urbanist movement is more than architecture - it is a vision of how we live together. In growing cities, not just buildings are created, but societies. Urban planners, social reformers, and visionaries dream of urban spaces that not only function, but inspire: with parks, light, transit, and public life. The city is not only built - it is shaped, as a stage for a better future."
 
  concept_ut_research_institute: "Research Institute"
  concept_ut_research_institute_desc: "When unlocked, a location for [GetBuildingType('building_ut_research_institute').GetName] can be founded via [concept_decision] and then must be construcuted. The institute is a major source of $country_weekly_innovation_max_add$. Large research projects can be unlocked. \n\nEra 6 (1936-1961): [GetTechnology('nuclear_power').GetName] \nEra 7 (1962-1986): [GetTechnology('high_tech_computers').GetName] (~10µm)\nEra 8 (beyond 1987): [GetTechnology('generative_ai').GetName]\n\nWork in progress."
@@ -363,7 +363,7 @@
  je_ut_new_dawn_expansionism_desc: "Pursue territorial growth for national glory and living space.\n\n#italic Historical Context:#!\nDriven by the ideology of Lebensraum (\"living space\"), Nazi Germany annexed Austria in March 1938 (Anschluss), took the Sudetenland in September 1938, and invaded Poland on September 1, 1939, triggering World War II. Expansion was a central pillar of Nazi foreign policy, aimed at conquering Eastern Europe and displacing its populations."
  je_ut_new_dawn_fascist_final_tt: "[concept_ut_nd_fascist_final_context]: There exists only [ROOT.GetCountry.GetName]"
  concept_ut_nd_fascist_final_context: "One World, One People"
- concept_ut_nd_fascist_final_context_desc: "Establish a permanent fascist order under a single ideology and race.\n\n#italic Historical Context:#!\nThe Nazi regime envisioned a “Thousand-Year Reich”—a totalitarian empire led by a single party, unified under a racially defined ideology. This vision drove relentless militarization, propaganda, and genocide, aiming to reshape the world through permanent domination. Though it lasted only 12 years (1933–1945), the regime’s actions left catastrophic global consequences and remain a warning of how ideology can fuel destruction."
+ concept_ut_nd_fascist_final_context_desc: "Establish a permanent fascist order under a single ideology and race.\n\n#italic Historical Context:#!\nThe Nazi regime envisioned a “Thousand-Year Reich”—a totalitarian empire led by a single party, unified under a racially defined ideology. This vision drove relentless militarization, propaganda, and genocide, aiming to reshape the world through permanent domination. Though it lasted only 12 years (1933-1945), the regime’s actions left catastrophic global consequences and remain a warning of how ideology can fuel destruction."
  je_ut_new_dawn_fascist_complete_condition_tt: "All [concept_ut_nd_milestones] complete"
  concept_ut_nd_milestones: "Milestones" 
  concept_ut_nd_milestones_desc: "Milestones are achievable one time actions. All Ideologies (except Autocracy) have unique path(s) of milestones that require different actions and provide various effects on the [concept_ut_nd_path_to_utopia]. Milestone remain activated even when losing the core ideology. \n\n #i Inspired by history #!"
@@ -390,7 +390,7 @@
 
  je_ut_new_dawn_communist: "Communism"
  je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads. \n #italic - [Concept('concept_ut_nd_communist_core', 'Communist')] [concept_ut_nd_path_to_utopia]#!"
- je_ut_new_dawn_communist_complete_condition_tt: "Never (todo)"
+ je_ut_new_dawn_communist_complete_condition_tt: "Never (wip)"
 
  ut_new_dawn_autocrat_focus: "Autocratic Focus"
  ut_new_dawn_autocrat_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities].#!"
@@ -651,10 +651,10 @@
  law_ut_minimum_wage: "Minimum Wage"
  law_ut_minimum_wage_desc: ""
  law_decolonization: "Decolonization"
- law_decolonization_desc: "work in progress"
+ law_decolonization_desc: "This country actively promotes the independence of its former colonies."
  law_decolonization_effect_tt: "Every subject will become independent. If you are on the Communist path, they will join your power bloc."
  law_registration_process: "Qualified Migration"
- law_registration_process_desc: "work in progress"
+ law_registration_process_desc: "The country has a regulated immigration system; only after successful registration do immigrants receive residence and work rights."
 
  lawgroup_lgbt_rights: "Sexuality - Under Construction"
  lawgroup_lgbt_rights_desc: "Placeholder"
@@ -679,7 +679,7 @@
 
 #Diplo Stuff
  ut_international_diplomatic_power_bloc_merge: "Unify Democratic Blocs"
- ut_international_diplomatic_power_bloc_merge_desc: "A proposal to unify the democratic power blocs. If accepted, all members of the bloc will join our power bloc."
+ ut_international_diplomatic_power_bloc_merge_desc: "A proposal to unify the democratic power blocs. If accepted, the leader and all members of the target country's power bloc will join our own power bloc. They will only stay if acceptance to join your power bloc is high enough."
  ut_international_diplomatic_power_bloc_merge_effects_desc: "• An agreement under which all democratic power bloc members join the other bloc. Unlocked through the democratic New Dawn."
  ut_international_diplomatic_power_bloc_merge_points_them: "[TreatyDraft.GetRightCountry.GetName]: Requires at least #v [SCOPE.ScriptValue('new_dawn_ideology_spend_points')] #![concept_ut_nd_progress_points]"
  ut_international_diplomatic_power_bloc_merge_name: "$ut_international_diplomatic_power_bloc_merge$"
@@ -763,7 +763,7 @@
 
 
  ut_democracy_article: "Spread Democracy"
- ut_democracy_article_desc: "Impose democratic reforms on the target country (Requires a new treaty or being enforced)."
+ ut_democracy_article_desc: "Impose democratic reforms on the target country."
  ut_democracy_article_article_short_desc: "Spreads Democracy to [TARGET_COUNTRY.GetAdjectiveNoFormatting]"
 
  ut_fund_ideology: "Fund Ideology"
