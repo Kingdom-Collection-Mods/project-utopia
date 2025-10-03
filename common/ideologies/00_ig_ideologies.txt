@@ -938,6 +938,7 @@ ideology_plutocratic = {
 		law_land_based_taxation = neutral
 		law_proportional_taxation = neutral
 		law_graduated_taxation = disapprove
+		ut_law_tax_code = strongly_disapprove
 	}	
 	
 	lawgroup_colonization = {
