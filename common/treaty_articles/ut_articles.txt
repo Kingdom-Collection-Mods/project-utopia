@@ -526,7 +526,7 @@ ut_research_assistance_treaty = {
 	}
 
 	source_modifier = {
-		country_weekly_innovation_add = -10
+		country_weekly_innovation_add = -20
 		country_weekly_innovation_max_add = 5
 	}
 
@@ -544,6 +544,13 @@ ut_research_assistance_treaty = {
 		has_technology_researched = union_new_mandates
 	}
 	
+	requirement_to_maintain = {
+		trigger = {
+			scope:source_country = {
+				has_technology_researched = union_new_mandates
+			}
+		}
+	}
 
 	requirement_to_maintain = {
 		trigger = {

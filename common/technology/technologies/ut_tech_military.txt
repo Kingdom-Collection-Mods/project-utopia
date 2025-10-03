@@ -549,6 +549,12 @@ ut_military_complex = {
 	unlocking_technologies = {
 		military_aviation
 	}
+
+	on_researched = {
+		custom_tooltip = {
+			text = ut_research_institute_found_unlock_tt
+		}
+	}
 	
 	modifier = {
 		building_munition_plants_throughput_add = 0.2
