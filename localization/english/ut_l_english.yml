@@ -366,7 +366,7 @@
  concept_ut_nd_fascist_final_context_desc: "Establish a permanent fascist order under a single ideology and race.\n\n#italic Historical Context:#!\nThe Nazi regime envisioned a “Thousand-Year Reich”—a totalitarian empire led by a single party, unified under a racially defined ideology. This vision drove relentless militarization, propaganda, and genocide, aiming to reshape the world through permanent domination. Though it lasted only 12 years (1933–1945), the regime’s actions left catastrophic global consequences and remain a warning of how ideology can fuel destruction."
  je_ut_new_dawn_fascist_complete_condition_tt: "All [concept_ut_nd_milestones] complete"
  concept_ut_nd_milestones: "Milestones" 
- concept_ut_nd_milestones_desc: "Milestones are achievable one time actions. All Ideologies (except Autocracy) have unique path(s) of milestones that require different actions and provide various effects on the [concept_ut_nd_path_to_utopia]. \n\n #i Inspired by history #!"
+ concept_ut_nd_milestones_desc: "Milestones are achievable one time actions. All Ideologies (except Autocracy) have unique path(s) of milestones that require different actions and provide various effects on the [concept_ut_nd_path_to_utopia]. Milestone remain activated even when losing the core ideology. \n\n #i Inspired by history #!"
  #deprecated
  concept_ut_nd_actions: "Actions"
  concept_ut_nd_actions_desc: "Repeatable Actions"
@@ -425,7 +425,7 @@
  concept_ut_nd_communist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#!:\n - [GetLawType('ut_law_international_council').GetName] or [GetLawType('ut_law_council_presidium').GetName] - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#! - wip\n - [GetDiplomaticActionType('ut_force_become_subject').GetName] - Preview\n - Spread Communism - tbd\n - Force into Power Bloc - tbd\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_communist_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('ut_new_dawn_core_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_communist_core]\nNeutral: [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nBuild a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
 
  concept_ut_nd_path_to_utopia: "Path to Utopia"
- concept_ut_nd_path_to_utopia_desc: "When an ideology successfully completes the [concept_ut_new_dawn] journal entry, it can start their [concept_ut_nd_path_to_utopia] - each ideology comes with the same base set of abilities, flavored abilities, flavored modifiers and may even feature an [concept_ut_nd_utopia] to be achieved.\n\n#bold Base [concept_ut_nd_abilities]:#!\n - [GetDiplomaticActionType('ut_influence_new_dawn_major_power').GetName]\n - [GetDiplomaticActionType('ut_fund_ideology').GetName]\n\nA [Concept('concept_humiliation', 'humiliated')] country, is likely to abandon their [concept_ut_nd_path_to_utopia].\n - [GetDiplomaticActionType('ut_fund_opposition').GetName]\n\n#b 'New Dawn' is Work in Progress#!\n#italic Note the status notes:\ntbd (To Be Determined): No actual work done\nwip (Work in Progress): Ongoing development, follow the patch notes\nPreview: Initial version available for feedback; incomplete and not final\n\nIdeologies without Preview [concept_ut_nd_milestones] or [concept_ut_nd_abilities] feature more static modifiers instead.\n\nStatus notes may be incomplete.\n\n#i If you wanna support Project Utopia - leave a like on Steam Workshop <3"
+ concept_ut_nd_path_to_utopia_desc: "When an ideology successfully completes the [concept_ut_new_dawn] journal entry, it can start their [concept_ut_nd_path_to_utopia] - each ideology comes with the same base set of abilities, flavored abilities, flavored modifiers and may even feature an [concept_ut_nd_utopia] to be achieved.\n\nA [Concept('concept_humiliation', 'humiliated')] country, is likely to abandon their [concept_ut_nd_path_to_utopia].\n\n#bold Base [concept_ut_nd_abilities]:#!\n - [GetDiplomaticActionType('ut_influence_new_dawn_major_power').GetName]\n - [GetDiplomaticActionType('ut_fund_ideology').GetName]\n - [GetDiplomaticActionType('ut_fund_opposition').GetName]\n\n#b 'New Dawn' is Work in Progress#!\n#italic Note the status notes:\ntbd (To Be Determined): No actual work done\nwip (Work in Progress): Ongoing development, follow the patch notes\nPreview: Initial version available for feedback; incomplete and not final\n\nIdeologies without Preview [concept_ut_nd_milestones] or [concept_ut_nd_abilities] feature more static modifiers instead.\n\nStatus notes may be incomplete.\n\n#i If you wanna support Project Utopia - leave a like on Steam Workshop <3"
 
  concept_ut_nd_utopia: "Utopia"
  concept_ut_nd_utopia_desc: "A utopia is an imagined ideal society where there is complete justice, harmony, and humans flourishing to perfection - it's as much an aspiration, as it's an inspiring vision."
@@ -710,6 +710,12 @@
  UT_BOTH_DIFFERENT_IDEOLOGY: "Different ideologies"
  UT_BOTH_DIFFERENT_IDEOLOGY_OF_TARGET: "Both countries must have different ideologies."
 
+ UT_BOTH_DEMOCRATIC: "Both [concept_ut_nd_democrat_core]"
+
+ UT_STANCE_FAVORABLE: "Favorable [concept_ut_nd_stance]"
+ UT_STANCE_NEUTRAL: "Neutral [concept_ut_nd_stance]"
+ UT_STANCE_OPPOSING: "Opposing [concept_ut_nd_stance]"
+
  ut_has_truce_with_target: "Has truce with [ROOT.GetCountry.GetName]"
  ut_has_no_truce_with_target: "No truce with [ROOT.GetCountry.GetName]"
 
@@ -782,7 +788,7 @@
  ut_add_new_dawn_progress_neg_50: "[COUNTRY.GetName] loses #r 50#! [concept_ut_nd_progress_points]"
 
  ut_force_become_subject: "Collectivize Council Republics"
- ut_force_become_subject_desc: "Force the target power bloc member to become your subject and join the Council Republic. They must be Communist themselves."
+ ut_force_become_subject_desc: "Force the target power bloc member to become your subject and join the Council Republic. They must be [GetLawType('law_council_republic').GetName] or [concept_ut_nd_communist_core] themselves."
 
  ut_force_regime_change: "Order Fascist Change"
  ut_force_regime_change_desc: "Force a regime change in the target power bloc member to your ideology. They must be your subject or a minor nation. They will enact, [GetLawType('law_corporate_state').GetName], [GetLawType('law_extraction_economy').GetName] and [GetLawType('ut_law_subjecthood_fascist').GetName]. Will turn a [concept_protectorate] into a [concept_puppet]."

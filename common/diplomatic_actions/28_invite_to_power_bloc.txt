@@ -100,10 +100,12 @@ invite_to_power_bloc = {
 			if = {
 				#Only if has ideology themself
 				limit = {
-					has_modifier = ut_new_dawn_core_democratic_mod
-					has_modifier = ut_new_dawn_core_autocratic_mod
-					has_modifier = ut_new_dawn_core_fascist_mod
-					has_modifier = ut_new_dawn_core_communist_mod
+					OR = {
+						has_modifier = ut_new_dawn_core_democratic_mod
+						has_modifier = ut_new_dawn_core_autocratic_mod
+						has_modifier = ut_new_dawn_core_fascist_mod
+						has_modifier = ut_new_dawn_core_communist_mod
+					}
 				}
 				
 				if = {
@@ -114,7 +116,7 @@ invite_to_power_bloc = {
 						}
 					}
 					add = {
-						desc = "COUNTRY_IS_DEMOCRATIC"
+						desc = "UT_BOTH_DEMOCRATIC"
 						value = 100
 					}
 				}
@@ -131,13 +133,19 @@ invite_to_power_bloc = {
 							AND = {
 								has_modifier = ut_new_dawn_core_autocratic_mod
 								scope:target_country = {
-									has_modifier = ut_new_dawn_core_autocratic_mod
+									OR = {
+										has_modifier = ut_new_dawn_core_autocratic_mod
+										has_modifier = ut_new_dawn_core_fascist_mod
+									}
 								}
 							}
 							AND = {
 								has_modifier = ut_new_dawn_core_fascist_mod
 								scope:target_country = {
-									has_modifier = ut_new_dawn_core_fascist_mod
+									OR = {
+										has_modifier = ut_new_dawn_core_autocratic_mod
+										has_modifier = ut_new_dawn_core_fascist_mod
+									}
 								}
 							}
 							AND = {
@@ -149,14 +157,50 @@ invite_to_power_bloc = {
 						}
 					}
 					add = {
-						desc = "UT_BOTH_SAME_IDEOLOGY"
+						desc = "UT_STANCE_FAVORABLE"
 						value = 100
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							AND = {
+								has_modifier = ut_new_dawn_core_democratic_mod
+								scope:target_country = {
+									has_modifier = ut_new_dawn_core_fascist_mod
+								}
+							}
+							AND = {
+								has_modifier = ut_new_dawn_core_autocratic_mod
+								scope:target_country = {
+									has_modifier = ut_new_dawn_core_communist_mod
+								}
+							}
+							AND = {
+								has_modifier = ut_new_dawn_core_fascist_mod
+								scope:target_country = {
+									has_modifier = ut_new_dawn_core_democratic_mod
+									has_modifier = ut_new_dawn_core_communist_mod
+								}
+							}
+							AND = {
+								has_modifier = ut_new_dawn_core_communist_mod
+								scope:target_country = {
+									has_modifier = ut_new_dawn_core_fascist_mod
+								}
+							}
+
+						}
+					}
+					add = {
+						desc = "UT_STANCE_OPPOSING"
+						value = -100
 					}
 				}
 				else = {
 					add = {
-						desc = "UT_BOTH_DIFFERENT_IDEOLOGY"
-						value = -100
+						desc = "UT_STANCE_NEUTRAL"
+						value = 0
 					}
 				}
 			}
