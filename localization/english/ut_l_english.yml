@@ -666,11 +666,11 @@
  law_registration_process_desc: "The country has a regulated immigration system; only after successful registration do immigrants receive residence and work rights."
 
  lawgroup_lgbt_rights: "Sexuality - Under Construction"
- lawgroup_lgbt_rights_desc: "Placeholder"
+ lawgroup_lgbt_rights_desc: "Open for feedback and suggestions"
  law_mass_surveillance: "Placeholder"
  law_mass_surveillance_desc: "Placeholder"
  law_lgbt_rights_0: "Legal Silence"
- law_lgbt_rights_0_desc: "The law is silent, but expectations are not. Same-sex desire lives in the shadows; some people conform, some live in the closet, others meet discreetly, and families or clergy - not courts do most of the policing."
+ law_lgbt_rights_0_desc: "The law is silent, but expectations are not. Same-sex desire lives in the shadows; some people conform, some live in the closet, others meet discreetly, and families or clergy - not courts do most of the policing.\nOpen for feedback and suggestions."
  law_lgbt_rights_1: "Criminalized"
  law_lgbt_rights_1_desc: "The state outlaws same-sex relations and calls it \"Sodomy\". Raids, trials, and blackmail drive communities underground while scandal and fear do the rest."
  law_lgbt_rights_2: "Decriminalized"
@@ -1304,7 +1304,7 @@
  ut_company_research: "Research Consortium"
  ut_high_tech_company_research: "Research Institute"
  pm_ut_high_speed_electric_trains: "Intercity"
- pm_ut_high_speed_electric_trains_principle_transport_3: "Intercity"
+ pm_ut_high_speed_electric_trains_principle_transport_3: "Intercity-High-Speed"
  pm_computer_bureaucrats: "Digital Administration"
 
  pm_ut_research_department: "Institute for Social Sciences"

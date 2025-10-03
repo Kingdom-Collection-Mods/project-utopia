@@ -1405,7 +1405,7 @@ ut_pm_research_institute_two = {
 	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
 
 	unlocking_technologies = {
-		nuclear_power_research
+		nuclear_power
 	}
 
 	country_modifiers = {

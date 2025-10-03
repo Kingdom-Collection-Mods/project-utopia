@@ -503,11 +503,13 @@ law_protectionism_union = {
 	}
 	
 	modifier = {
-		state_tariff_import_add = 0.60
-		state_tariff_export_add = 0.60
+		state_tariff_import_add = 0.50
+		state_tariff_export_add = 0.50
 		state_subvention_export_add = 0.50
 		state_subvention_import_add = 0.50
-		country_leverage_resistance_mult = 0.1
+		country_leverage_resistance_mult = 0.2
+		state_import_advantage_mult = -0.1
+		state_export_advantage_mult = 0.2
 
 		country_max_declared_interests_add = 3
 	}	
