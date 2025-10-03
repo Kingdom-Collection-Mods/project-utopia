@@ -170,6 +170,11 @@
 		inherent_accept_score = {
 			value = 0
 
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_BASE"
+				value = -100
+			}
+
 			# We are doing this to be able to reuse loc across treaties and diplomatic actions
 			save_temporary_scope_as = target
 			scope:other_country = {
@@ -179,42 +184,21 @@
 
 			if = {
 				limit = {
-					OR = {
-						AND = {
-							has_modifier = ut_new_dawn_core_democratic_mod
-							scope:second_country = {
-								has_modifier = ut_new_dawn_core_democratic_mod
-							}
-						}
-						AND = {
-							has_modifier = ut_new_dawn_core_autocratic_mod
-							scope:second_country = {
-								has_modifier = ut_new_dawn_core_autocratic_mod
-							}
-						}
-						AND = {
-							has_modifier = ut_new_dawn_core_fascist_mod
-							scope:second_country = {
-								has_modifier = ut_new_dawn_core_fascist_mod
-							}
-						}
-						AND = {
-							has_modifier = ut_new_dawn_core_communist_mod
-							scope:second_country = {
-								has_modifier = ut_new_dawn_core_communist_mod
-							}
-						}
-					}
+					ut_articles_mutual_accept_favorable_stance = yes
 				}
 				add = {
-					desc = "UT_BOTH_SAME_IDEOLOGY"
+					desc = "UT_STANCE_FAVORABLE"
 					value = 100
 				}
 			}
-
-			add = {
-				desc = "DIPLOMATIC_ACCEPTANCE_BASE_ADDITIONAL"
-				value = -100
+			else_if = {
+				limit = {
+					ut_articles_mutual_accept_opposing_stance = yes
+				}
+				add = {
+					desc = "UT_STANCE_OPPOSING"
+					value = -200
+				}
 			}
 
 			if = {

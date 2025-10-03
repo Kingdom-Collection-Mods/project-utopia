@@ -127,46 +127,7 @@ invite_to_power_bloc = {
 				
 				if = {
 					limit = {
-						OR = {
-							AND = {
-								scope:actor = {
-									has_modifier = ut_new_dawn_core_democratic_mod
-								}
-								scope:target_country = {
-									has_modifier = ut_new_dawn_core_democratic_mod
-								}
-							}
-							AND = {
-								scope:actor = {
-									has_modifier = ut_new_dawn_core_autocratic_mod
-								}
-								scope:target_country = {
-									OR = {
-										has_modifier = ut_new_dawn_core_autocratic_mod
-										has_modifier = ut_new_dawn_core_fascist_mod
-									}
-								}
-							}
-							AND = {
-								scope:actor = {
-									has_modifier = ut_new_dawn_core_fascist_mod
-								}
-								scope:target_country = {
-									OR = {
-										has_modifier = ut_new_dawn_core_autocratic_mod
-										has_modifier = ut_new_dawn_core_fascist_mod
-									}
-								}
-							}
-							AND = {
-								scope:actor = {
-									has_modifier = ut_new_dawn_core_communist_mod
-								}
-								scope:target_country = {
-									has_modifier = ut_new_dawn_core_communist_mod
-								}
-							}
-						}
+						ut_diplomatic_action_accept_favorable_stance = yes
 					}
 					add = {
 						desc = "UT_STANCE_FAVORABLE"
@@ -175,42 +136,7 @@ invite_to_power_bloc = {
 				}
 				else_if = {
 					limit = {
-						OR = {
-							AND = {
-								scope:actor = {
-									has_modifier = ut_new_dawn_core_democratic_mod
-								}
-								scope:target_country = {
-									has_modifier = ut_new_dawn_core_fascist_mod
-								}
-							}
-							AND = {
-								scope:actor = {
-									has_modifier = ut_new_dawn_core_autocratic_mod
-								}
-								scope:target_country = {
-									has_modifier = ut_new_dawn_core_communist_mod
-								}
-							}
-							AND = {
-								scope:actor = {
-									has_modifier = ut_new_dawn_core_fascist_mod
-								}
-								scope:target_country = {
-									has_modifier = ut_new_dawn_core_democratic_mod
-									has_modifier = ut_new_dawn_core_communist_mod
-								}
-							}
-							AND = {
-								scope:actor = {
-									has_modifier = ut_new_dawn_core_communist_mod
-								}
-								scope:target_country = {
-									has_modifier = ut_new_dawn_core_fascist_mod
-								}
-							}
-
-						}
+						ut_diplomatic_action_accept_opposing_stance = yes
 					}
 					add = {
 						desc = "UT_STANCE_OPPOSING"

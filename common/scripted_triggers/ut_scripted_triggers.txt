@@ -266,3 +266,166 @@ ut_has_new_dawn_progress_communist = {
 		"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" >= $VALUE$
 	}
 }
+
+ut_articles_mutual_accept_favorable_stance = {
+	OR = {
+		AND = {
+			scope:first_country = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+			scope:second_country = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+		}
+		AND = {
+			scope:first_country = {
+				has_modifier = ut_new_dawn_core_autocratic_mod
+			}
+			scope:second_country = {
+				OR = {
+					has_modifier = ut_new_dawn_core_autocratic_mod
+					has_modifier = ut_new_dawn_core_fascist_mod
+				}
+			}
+		}
+		AND = {
+			scope:first_country = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+			}
+			scope:second_country = {
+				OR = {
+					has_modifier = ut_new_dawn_core_autocratic_mod
+					has_modifier = ut_new_dawn_core_fascist_mod
+				}
+			}
+		}
+		AND = {
+			scope:first_country = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+			scope:second_country = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+		}
+	}
+}
+
+ut_articles_mutual_accept_opposing_stance = {
+	OR = {
+		AND = {
+			scope:first_country = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+			scope:second_country = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+			}
+		}
+		AND = {
+			scope:first_country = {
+				has_modifier = ut_new_dawn_core_autocratic_mod
+			}
+			scope:second_country = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+		}
+		AND = {
+			scope:first_country = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+			}
+			scope:second_country = {
+				OR = {
+					has_modifier = ut_new_dawn_core_democratic_mod
+					has_modifier = ut_new_dawn_core_communist_mod
+				}
+			}
+		}
+		AND = {
+			scope:first_country = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+			scope:second_country = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+			}
+		}
+	}
+}
+
+ut_diplomatic_action_accept_favorable_stance = {
+	OR = {
+		AND = {
+			scope:actor = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+			scope:target_country = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+		}
+		AND = {
+			scope:actor = {
+				has_modifier = ut_new_dawn_core_autocratic_mod
+			}
+			scope:target_country = {
+				OR = {
+					has_modifier = ut_new_dawn_core_autocratic_mod
+					has_modifier = ut_new_dawn_core_fascist_mod
+				}
+			}
+		}
+		AND = {
+			scope:actor = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+			}
+			scope:target_country = {
+				OR = {
+					has_modifier = ut_new_dawn_core_autocratic_mod
+					has_modifier = ut_new_dawn_core_fascist_mod
+				}
+			}
+		}
+		AND = {
+			scope:actor = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+			scope:target_country = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+		}
+	}
+}
+ut_diplomatic_action_accept_opposing_stance = {
+	OR = {
+		AND = {
+			scope:actor = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+			scope:target_country = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+			}
+		}
+		AND = {
+			scope:actor = {
+				has_modifier = ut_new_dawn_core_autocratic_mod
+			}
+			scope:target_country = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+		}
+		AND = {
+			scope:actor = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+			}
+			scope:target_country = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+		}
+		AND = {
+			scope:actor = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+			scope:target_country = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+			}
+		}
+	}
+}
