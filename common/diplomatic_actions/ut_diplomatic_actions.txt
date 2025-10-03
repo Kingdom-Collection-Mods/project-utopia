@@ -736,8 +736,7 @@ ut_force_become_subject = {
 			country_rank < rank_value:unrecognized_major_power
 			is_diplomatic_play_committed_participant = no
 			OR = {
-				has_law = law_type:law_cooperative_ownership
-				has_law = law_type:law_command_economy
+				has_law_or_variant = law_type:law_council_republic
 				has_modifier = ut_new_dawn_core_communist_mod
 			}
 		}
