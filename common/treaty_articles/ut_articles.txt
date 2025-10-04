@@ -1932,7 +1932,9 @@ ut_communism_article = {
 			value = 0
 
 			if = {
-				scope:target_country = { has_modifier = ut_new_dawn_core_communist_mod }
+				limit = {
+					scope:target_country = { has_modifier = ut_new_dawn_core_communist_mod }
+				}
 				add = {
 					desc = "ut_new_dawn_core_communist_mod"
 					value = 100
