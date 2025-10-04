@@ -245,6 +245,7 @@ support_ships_rockets_base = {
 
 	unlocking_technologies = {	
 		carrier_tech
+		heavy_ships_rockets_computers
 	}
 
 	modifier = {
@@ -280,6 +281,27 @@ ut_anti_tank = {
 }
 
 ut_anti_tank_guided = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/guided_missiles.dds"
+	category = military
+
+	unlocking_technologies = {	
+		ut_military_complex
+		ut_anti_tank
+	}
+
+	modifier = {
+		unit_army_offense_mult = 0.05
+		unit_kill_rate_add = 0.05
+    }
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+
+ut_anti_tank_guided_two = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/guided_missiles.dds"
 	category = military
@@ -324,6 +346,23 @@ task_forces = {
 
 	unlocking_technologies = {	
 		ut_anti_tank
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+casualty_evacuations = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/military_aviation.dds"
+	category = military
+
+	unlocking_technologies = {	
+		task_forces
+	}
+
+	modifier = {
 	}
 	
 	ai_weight = {
@@ -492,6 +531,23 @@ ut_war_planes_2 = {
 
 	unlocking_technologies = {
 		ut_war_planes
+	}
+	
+	modifier = {
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+ut_war_planes_2_1 = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/warplan_60s.dds"
+	category = military
+
+	unlocking_technologies = {
+		ut_war_planes_2
 	}
 	
 	modifier = {

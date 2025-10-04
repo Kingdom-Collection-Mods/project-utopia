@@ -79,13 +79,13 @@ combat_unit_type_armored_infantry = {
     }
     
     battle_modifier = {
-        unit_offense_add = 55
-        unit_defense_add = 65
+        unit_offense_add = 50
+        unit_defense_add = 70
         unit_morale_loss_add = 3
         unit_devastation_mult = 0.2
     }
 
-	unlocking_technologies = { ut_tank_modern }
+	unlocking_technologies = { ut_tank_diesel_engine }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/infantry_armored.dds"
@@ -261,7 +261,7 @@ combat_unit_type_motorized_artillery = {
         military_formation_movement_speed_mult = -0.1
     }
 
-	unlocking_technologies = { ut_tank_diesel_engine }
+	unlocking_technologies = { ut_anti_tank_guided }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/artillery_motorized.dds"
@@ -421,8 +421,8 @@ combat_unit_type_support_systems = {
     }
 
     battle_modifier = {
-        unit_offense_add = 55
-        unit_defense_add = 60
+        unit_offense_add = 70
+        unit_defense_add = 55
         unit_morale_loss_add = 2
         unit_devastation_mult = 0.1
         unit_occupation_mult = 0.4
@@ -439,8 +439,7 @@ combat_unit_type_support_systems = {
     }
 
     upgrades = {
-        combat_unit_type_lancers
-        combat_unit_type_light_tanks
+        combat_unit_type_advanced_support_systems
     }
 }
 
@@ -460,7 +459,7 @@ combat_unit_type_advanced_support_systems = {
     }
 
     battle_modifier = {
-        unit_offense_add = 60
+        unit_offense_add = 70
         unit_defense_add = 65
         unit_morale_loss_add = 2
         unit_devastation_mult = 0.1
