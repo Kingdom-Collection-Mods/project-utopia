@@ -58,7 +58,7 @@ ut_pm_semi_automatic_rifles = {
 	texture = "gfx/interface/icons/production_method_icons/ut_semi_auto_rifles.dds"
 
 	unlocking_technologies = {
-		ut_tank_radio
+		ut_tank_diesel_engine
 	}
 
 	building_modifiers = {

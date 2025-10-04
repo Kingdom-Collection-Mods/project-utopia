@@ -381,7 +381,6 @@ ut_tank_diesel_engine = {
 	}
 
 	modifier = {
-		military_formation_movement_speed_mult = 0.1
     }
 	
 	ai_weight = {
@@ -399,6 +398,7 @@ ut_tank_radio = {
 	}
 
 	modifier = {
+		military_formation_movement_speed_mult = 0.1
 		military_formation_organization_gain_mult = 0.2
     }
 	
@@ -417,7 +417,7 @@ ut_tank_composite_armor = {
 	}
 
 	modifier = {
-		unit_combat_unit_type_light_tanks_offense_add = 10
+		unit_army_defense_add = 5
     }
 	
 	ai_weight = {

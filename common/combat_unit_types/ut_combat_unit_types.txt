@@ -74,13 +74,13 @@ combat_unit_type_armored_infantry = {
         goods_input_ammunition_add = 3
         goods_input_oil_add = 1
         goods_input_radios_add = 1
-        goods_input_utopia_tanks_add = 3
+        goods_input_utopia_tanks_add = 2
         goods_input_electronics_add = 2
     }
     
     battle_modifier = {
         unit_offense_add = 50
-        unit_defense_add = 70
+        unit_defense_add = 65
         unit_morale_loss_add = 3
         unit_devastation_mult = 0.2
     }

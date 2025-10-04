@@ -1266,6 +1266,7 @@
  pm_hi_connected_logistics: "Connected Logistics"
 
  ut_pm_research_department: "Social Science Department"
+ ut_pm_research_department_principle_movement: "International Science Department""
 
  pm_oil_heavy_machinery_mine: "Heavy Machinery"
  pm_oil_automated_heavy_machinery_mine: "Automated Machinery"
@@ -1334,6 +1335,7 @@
  pm_shopping_district: "Shopping District"
 
  ut_pm_film_industry_art: "Movie Industry"
+ ut_pm_film_industry_art_principle_movement: "International Movie Industry"
  ut_pm_digital_art: "Movie & Video Game Industry"
 
  pm_ut_industry_plastics: "Industrial Plastics"
