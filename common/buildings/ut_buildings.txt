@@ -442,9 +442,7 @@ building_ut_research_institute = {
 		always = no
 	}
 
-	ai_value = {
-		value = 5000
-	}
+	ai_value = 50000
 }
 
 building_ut_nuclear_power_plant_construction_site = {

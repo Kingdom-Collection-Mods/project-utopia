@@ -519,7 +519,9 @@ utopia_journal_prod.40 = {
 
 	option = {
 		name = utopia.progress_c
-        default_option = yes
+		trigger = {
+			is_player = yes
+		}
         scope:ut_research_institute_site = {
         	add_modifier = {
         		name = ut_research_institute_site_mod
@@ -536,6 +538,7 @@ utopia_journal_prod.40 = {
 
 	
 	option = {
+        default_option = yes
 		trigger = {
 			capital = {
 				ut_research_institute_site_building_trigger = yes

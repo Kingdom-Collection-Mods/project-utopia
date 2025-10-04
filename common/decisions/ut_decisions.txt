@@ -104,10 +104,10 @@ ut_research_institute_found = {
 				produced_bureaucracy > 5000
 				any_country = {
 					is_ai = no
-					has_variable = skyscraper_var
+					has_variable = ut_research_institute_found_var
 				}
 			}
-			add = 50
+			add = 100
 		}
 		if = {
 			limit = {
