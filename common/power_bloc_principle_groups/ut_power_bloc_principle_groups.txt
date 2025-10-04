@@ -1,7 +1,7 @@
 ﻿### See power_bloc_principles for the individual effects
 
 principle_group_modern_trade_league = {
-	unlocking_identity = identity_trade_league
+	unlocking_identity = identity_trade_league #most identities now have custom unions, so little extra unique
 	primary_for_identity = identity_trade_league
 	levels = {
 		principle_common_financial_policy_1
@@ -11,7 +11,7 @@ principle_group_modern_trade_league = {
 }
 
 principle_group_modern_sovereign_empire = {
-	unlocking_identity = identity_sovereign_empire
+	unlocking_identity = identity_sovereign_empire #"world conquest" exclusive?
 	primary_for_identity = identity_sovereign_empire
 	levels = {
 		principle_commissariat_1
@@ -31,8 +31,8 @@ principle_group_modern_military_treaty_organization = {
 }
 
 principle_group_modern_ideological_union = {
-	unlocking_identity = identity_ideological_union
 	primary_for_identity = identity_ideological_union
+	primary_for_identity = identity_religious
 	levels = {
 		ut_modern_ideological_union_1
 		ut_modern_ideological_union_2
@@ -45,5 +45,37 @@ ut_principle_group_advanced_research = {
 		ut_principle_advanced_research_4
 		ut_principle_advanced_research_5
 		ut_principle_advanced_research_6
+	}
+}
+
+ut_principle_group_freedom_of_transport_infrastructure = {
+	levels = {
+		ut_principle_freedom_of_movement_4
+		ut_principle_freedom_of_movement_5
+		ut_principle_freedom_of_movement_6
+	}
+}
+
+ut_principle_group_war_industry = {
+	levels = {
+		ut_principle_war_industry_4
+		ut_principle_war_industry_5
+		ut_principle_war_industry_6
+	}
+}
+
+ut_principle_group_food_standardization_upgrade = {
+	levels = {
+		ut_principle_food_standardization_4
+		ut_principle_food_standardization_5
+		ut_principle_food_standardization_6
+	}
+}
+
+ut_principle_group_security_bloc = {
+	levels = {
+		ut_principle_security_bloc_4
+		ut_principle_security_bloc_5
+		ut_principle_security_bloc_6
 	}
 }
