@@ -53,6 +53,7 @@ pmg_base_building_university = {
 		pm_philosophy_department
 		pm_analytical_philosophy_department
 		ut_pm_research_department
+		ut_pm_research_department_principle_movement
 	}
 }
 

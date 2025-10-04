@@ -47,6 +47,7 @@ pmg_base_building_arts_academy = {
 		pm_photographic_art
 		pm_film_art
 		ut_pm_film_industry_art
+		ut_pm_film_industry_art_principle_movement
 		ut_pm_digital_art
 	}
 }
