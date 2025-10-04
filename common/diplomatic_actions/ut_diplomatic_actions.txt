@@ -775,6 +775,16 @@ ut_force_become_subject = {
 				value = scaled_cohesion_cost_subjugation
 			}
 		}
+		change_infamy = {
+			value = {
+				add = {
+					value = scaled_cohesion_cost_subjugation #decimal
+					multiply = 5 #x0.5
+					max = 50
+					min = 1
+				}
+			}
+		}
 
 		custom_tooltip = ut_add_new_dawn_progress_neg_50
 		ut_add_new_dawn_progress_communist = {
@@ -900,6 +910,16 @@ ut_force_regime_change = {
 
 		power_bloc = {
 			add_cohesion_percent = scaled_cohesion_cost
+		}
+		
+		change_infamy = {
+			value = {
+				add = {
+					value = scaled_cohesion_cost #decimal
+					multiply = 10
+					max = 10
+				}
+			}
 		}
 
 		custom_tooltip = ut_add_new_dawn_progress_neg_50
