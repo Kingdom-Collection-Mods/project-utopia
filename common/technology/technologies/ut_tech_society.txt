@@ -218,6 +218,7 @@ credit_cards = {
 	}
 
 	unlocking_technologies = {	
+		international_stock_exchange
 		check_payments
 	}
 	
