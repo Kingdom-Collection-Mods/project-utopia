@@ -727,9 +727,11 @@ ut_force_become_subject = {
 	}
 
 	possible = {
-		custom_tooltip = ut_has_new_dawn_progress_50
-		ut_has_new_dawn_progress_communist = {
-			VALUE = 100
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_100
+			ut_has_new_dawn_progress_communist = {
+				VALUE = 100
+			}
 		}
 		scope:target_country = {
 			is_subject = no
@@ -778,8 +780,8 @@ ut_force_become_subject = {
 		change_infamy = {
 			value = {
 				add = {
-					value = scaled_cohesion_cost_subjugation #decimal
-					multiply = 5 #x0.5
+					value = scaled_cohesion_cost_subjugation #negative decimal
+					multiply = -5 #x0.5
 					max = 50
 					min = 1
 				}
@@ -852,9 +854,11 @@ ut_force_regime_change = {
 			has_subject_relation_with = scope:target_country
 			country_rank <= rank_value:minor_power
 		}
-		custom_tooltip = ut_has_new_dawn_progress_50
-		ut_has_new_dawn_progress_fascist = {
-			VALUE = 100
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_100
+			ut_has_new_dawn_progress_fascist = {
+				VALUE = 100
+			}
 		}
 		custom_tooltip = {
 			text = "FORCE_REGIME_CHANGE_GOV_PRINCIPLES_DIST_POWER_PROGRESSIVENESS_DIFFERENCE"
@@ -915,8 +919,8 @@ ut_force_regime_change = {
 		change_infamy = {
 			value = {
 				add = {
-					value = scaled_cohesion_cost #decimal
-					multiply = 10
+					value = scaled_cohesion_cost #negative decimal
+					multiply = -10
 					max = 10
 				}
 			}

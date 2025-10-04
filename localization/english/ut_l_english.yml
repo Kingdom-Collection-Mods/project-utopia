@@ -795,6 +795,7 @@
  ut_fund_ideology_desc: "Fund aligned political groups in the target country to increase their ideological progress.\n\n$ut_fund_ideology_effect$"
  ut_fund_ideology_effect: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
 
+ ut_has_new_dawn_progress_100: "Has #b 100#! [concept_ut_nd_progress_points]"
  ut_has_new_dawn_progress_50: "Has #b 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_50: "Gains #b 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_50: "Loses #r 50#! [concept_ut_nd_progress_points]"
