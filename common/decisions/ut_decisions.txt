@@ -226,6 +226,9 @@ ut_nuclear_power_plant_location  = {
 				is_under_construction = no
 			}
 		}
+		NOT = {
+			has_journal_entry = ut_je_nuclear_power_plant_construction
+		}
 	}
 
 	when_taken = {
