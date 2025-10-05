@@ -1,4 +1,5 @@
-﻿ideology_urbanist_power_base = {
+﻿#IG Cosmopolitan
+ideology_urbanist_power_base = {
 	icon = "gfx/interface/icons/ideology_icons/paternalistic.dds"
 	lawgroup_citizenship = {
 		law_ethnostate = disapprove
@@ -25,7 +26,7 @@
 	}
 }
 
-
+#IG Rationalists
 ideology_urbanist_economy_base = {
 	icon = "gfx/interface/icons/ideology_icons/integralist.dds"
 
@@ -76,6 +77,7 @@ ideology_urbanist_economy_base = {
 	}
 }
 
+#IG Humanists
 ideology_urbanist_human_rights_base = {
 	icon = "gfx/interface/icons/ideology_icons/individualist.dds"
 	
@@ -126,7 +128,7 @@ ideology_urbanist_human_rights_base = {
 	}
 }
 
-
+#IG Liberal Democratic (unique)
 ideology_liberal_democratic = {
 	icon = "gfx/interface/icons/ideology_icons/liberal.dds"
 	
@@ -179,7 +181,7 @@ ideology_liberal_democratic = {
 	}
 }
 
-
+#IG Industrial Democratic
 ideology_plutocratic_democratic = {
 	icon = "gfx/interface/icons/ideology_icons/plutocratic.dds"
 	
@@ -208,9 +210,9 @@ ideology_plutocratic_democratic = {
 		law_per_capita_based_taxation = neutral
 		law_consumption_based_taxation = approve
 		law_land_based_taxation = neutral
-		law_proportional_taxation = approve
+		law_proportional_taxation = neutral
 		law_graduated_taxation = strongly_disapprove
-		ut_law_tax_code = strongly_approve
+		ut_law_tax_code = approve
 	}	
 	
 	lawgroup_colonization = {
@@ -219,6 +221,41 @@ ideology_plutocratic_democratic = {
 		law_decolonization = strongly_approve
 		law_colonial_resettlement = neutral
 		law_frontier_colonization = neutral
+	}
+}
+
+#IG Industrial Era 6/Non-Democratic
+ideology_plutocratic_alternative = {
+	icon = "gfx/interface/icons/ideology_icons/plutocratic.dds"
+	
+	lawgroup_distribution_of_power = {
+		law_oligarchy = approve
+		law_wealth_voting = approve
+		law_technocracy = approve
+		law_landed_voting = neutral
+		law_census_voting = approve
+		law_single_party_state = approve
+		law_autocracy = approve
+		law_universal_suffrage = neutral
+		law_anarchy = strongly_disapprove
+	}
+
+	lawgroup_governance_principles = {
+		law_monarchy = neutral			
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_corporate_state = neutral
+		law_theocracy = strongly_disapprove
+		law_council_republic = strongly_disapprove
+	}
+	
+	lawgroup_taxation = {
+		law_per_capita_based_taxation = neutral
+		law_consumption_based_taxation = approve
+		law_land_based_taxation = neutral
+		law_proportional_taxation = disapprove
+		law_graduated_taxation = strongly_disapprove
+		ut_law_tax_code = neutral
 	}
 }
 
@@ -242,6 +279,7 @@ ideology_moralist_democratic = {
 	}
 }
 
+#IG Burgeois Democratic
 ideology_reactionary_democratic = {
 	icon = "gfx/interface/icons/ideology_icons/reactionary.dds"
 	
@@ -278,6 +316,44 @@ ideology_reactionary_democratic = {
 	}
 }
 
+#IG Burgeois Era 7/Non-Democratic
+ideology_reactionary_era7 = {
+	icon = "gfx/interface/icons/ideology_icons/reactionary.dds"
+	
+	lawgroup_governance_principles = {
+		law_monarchy = neutral
+		law_theocracy = neutral		
+		law_presidential_republic = approve
+		law_parliamentary_republic = approve
+		law_corporate_state = approve
+		law_council_republic = neutral
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = neutral
+		law_neo_ethno_state = approve
+		law_national_supremacy = approve
+		law_racial_segregation = approve
+		law_cultural_exclusion = approve
+		law_multicultural = neutral	
+		law_multicultural_globalism = disapprove	
+	}
+
+	lawgroup_migration = {
+		law_closed_borders = neutral
+		law_migration_controls = strongly_approve
+		law_registration_process = strongly_approve
+		law_no_migration_controls = disapprove
+	}
+
+	lawgroup_environment_protection = {
+		law_no_environment_protection = neutral
+		law_environment_protection_institute = approve
+		law_environment_protection_institute_two = disapprove
+	}
+}
+
+#IG Army Democratic/+dem communist
 ideology_jingoist_democratic = {
 	icon = "gfx/interface/icons/ideology_icons/jingoist.dds"
 	
@@ -299,6 +375,7 @@ ideology_jingoist_democratic = {
 	}
 }
 
+#IG Unions Democratic
 ideology_socialist_democratic = {
 	icon = "gfx/interface/icons/ideology_icons/unused/social_democrat.dds"
 
@@ -368,7 +445,10 @@ ideology_socialist_democratic = {
 	}
 }
 
+#IG Unions Fascist
+#character ideology? draft?
 
+#Movement Cosmopolitan
 ut_ideology_cosmopolitan = {
 	icon = "gfx/interface/icons/ideology_icons/paternalistic.dds"
 	
@@ -404,5 +484,70 @@ ut_ideology_cosmopolitan = {
 		law_protectionism = disapprove
 		law_isolationism = strongly_disapprove
 		law_international_trade = approve
+	}
+}
+
+#IG Industrialists Era 7 (all?)
+ut_ideology_laissez_faire = {
+	icon = "gfx/interface/icons/ideology_icons/laissez_faire.dds"
+	
+	lawgroup_economic_system = {	
+		law_laissez_faire = approve
+		law_interventionism = disapprove
+		law_agrarianism = strongly_disapprove
+		law_traditionalism = strongly_disapprove	
+		law_cooperative_ownership = strongly_disapprove
+		law_command_economy = strongly_disapprove
+		law_industry_banned = strongly_disapprove
+		law_extraction_economy = strongly_disapprove
+		law_social_market_economy = disapprove 
+		law_state_capitalism_economy = neutral 
+		law_free_market_economy = strongly_approve
+		law_corporate_economy = approve #definitely not laissez-faire but good for profits
+	}
+	
+	lawgroup_trade_policy = {		
+		law_free_trade = approve	
+		law_free_trade_union= approve
+		law_protectionism_union = disapprove
+		law_mercantilism = neutral
+		law_protectionism = disapprove
+		law_isolationism = strongly_disapprove
+		law_international_trade = approve
+	}		
+		
+	lawgroup_childrens_rights = {
+		law_child_labor_allowed = approve
+		law_restricted_child_labor = neutral
+		law_compulsory_primary_school = disapprove
+		law_compulsory_secondary_school = strongly_disapprove
+		law_compulsory_tertiary_school = strongly_disapprove
+	}
+	
+	lawgroup_labor_rights = {
+		law_no_workers_rights = neutral
+		law_regulatory_bodies = disapprove
+		law_worker_protections = strongly_disapprove
+		law_ut_minimum_wage = strongly_disapprove
+	}
+
+	lawgroup_land_reform = {
+		law_collectivized_agriculture = strongly_disapprove
+		law_serfdom = disapprove
+		law_tenant_farmers = neutral
+		law_homesteading = neutral
+		law_commercialized_agriculture = approve
+	}
+
+	lawgroup_food_safety = {
+		law_no_food_safety_protection = neutral
+		law_food_safety_protection_institute = disapprove
+		law_food_safety_protection_institute_two = strongly_disapprove		
+	}	
+
+	lawgroup_environment_protection = {
+		law_no_environment_protection = neutral
+		law_environment_protection_institute = disapprove
+		law_environment_protection_institute_two = strongly_disapprove
 	}
 }
