@@ -535,7 +535,11 @@
  ideology_plutocratic_alternative: "Elitist"
  ideology_plutocratic_alternative_desc: "#lore This group believes that society should be governed by a wealthy elite who are best equipped to make decisions for the common good. They often prioritize economic growth and stability over social equality. Replaces [GetIdeology('ideology_plutocratic').GetName]. #!"
  ideology_reactionary_democratic: "Conservative"
- ideology_reactionary_democratic_desc: "#lore This group values tradition, social stability, and gradual change. They often support established institutions and may resist rapid social or political reforms. Replaces [GetIdeology('ideology_reactionary').GetName]. #!"
+ ideology_reactionary_democratic_desc: "#lore This group values tradition, social stability, and gradual change. They often support established institutions and may resist rapid social or political reforms. Replaces [GetIdeology('ideology_reactionary').GetName]. [concept_ut_nd_democrat_core] variation. #!"
+ ut_ideology_reactionary_alternative: "Conservative"
+ ut_ideology_reactionary_alternative_desc: "#lore This group values tradition, social stability, and gradual change. They often support established institutions and may resist rapid social or political reforms. Replaces [GetIdeology('ideology_reactionary').GetName]. #!"
+ ut_ideology_laissez_faire: "Laissez-Faire (Modern)"
+ ut_ideology_laissez_faire_desc: "#lore This group believes in the free flow of trade and labor forces, favoring the judgment of markets over that of governments. Replaces [GetIdeology('ideology_laissez_faire').GetName].#!"
 
  ideology_jingoist_democratic: "Security-Oriented"
  ideology_jingoist_democratic_desc: "#lore This group prioritizes national security, strong defense, and patriotism. They advocate for a robust military and may support interventionist foreign policies to protect national interests. Replaces [GetIdeology('ideology_jingoist').GetName]. #!"
@@ -556,6 +560,7 @@
  ut_movement_rationalists_name: "Rationalist Movement"
 
  ut_movement_cosmopolitan_unlock_tt: "Unlocks [GetIdeology('ut_ideology_cosmopolitan').GetName] [concept_political_movement]"
+ ut_ig_ideology_urbanist_economy_base_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_economy_base').GetName] for $ig_urbanists$"
  ut_movement_humanist_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_human_rights_base').GetName] [concept_political_movement]"
  ut_movement_rationalists_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_economy_base').GetName] [concept_political_movement]"
 
@@ -953,7 +958,7 @@
  internet: "Internet"
  internet_desc: "ARPANET packets hum through copper wires. From military code to global bonfire—fueling cat videos and revolutions alike."
  generative_ai: "Placeholder"
- generative_ai_desc: "Maybe Generative AI" 
+ generative_ai_desc: "Maybe Large Language Models" 
  software_motors_production: "Digital Control Units"
  software_motors_production_desc: "PID controllers smooth load fluctuations in real-time. Firmware updates breathe new life into old motors—if the code signatures validate."
  trucks_era_analog: "Flatbed Trucks"

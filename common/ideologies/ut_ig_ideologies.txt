@@ -317,7 +317,7 @@ ideology_reactionary_democratic = {
 }
 
 #IG Burgeois Era 7/Non-Democratic
-ideology_reactionary_era7 = {
+ut_ideology_reactionary_alternative = {
 	icon = "gfx/interface/icons/ideology_icons/reactionary.dds"
 	
 	lawgroup_governance_principles = {
@@ -508,12 +508,12 @@ ut_ideology_laissez_faire = {
 	
 	lawgroup_trade_policy = {		
 		law_free_trade = approve	
-		law_free_trade_union= approve
+		law_free_trade_union= strongly_approve
 		law_protectionism_union = disapprove
 		law_mercantilism = neutral
 		law_protectionism = disapprove
 		law_isolationism = strongly_disapprove
-		law_international_trade = approve
+		law_international_trade = strongly_approve
 	}		
 		
 	lawgroup_childrens_rights = {

@@ -621,10 +621,10 @@ political_progress_2_rationalism = {
 		}
 		every_interest_group = {
 			limit = {
-				has_ideology = ideology_reactionary
+				has_ideology = ideology:ideology_reactionary
 			}
 			remove_ideology = ideology_reactionary
-			add_ideology = ideology_reactionary_era7
+			add_ideology = ut_ideology_reactionary_alternative
 		}
 	}
 }
@@ -794,7 +794,10 @@ anti_discrimination_laws = {
 		custom_tooltip = {
 			text = ut_movement_cosmopolitan_unlock_tt
 		}
-		ig:ig_urbanists = {
+		custom_tooltip = {
+			text = ut_ig_ideology_urbanist_economy_base_unlock_tt
+		}
+		ig:ig_urbanists ?= {
 			add_ideology = ideology_urbanist_economy_base
 		}
 	}
