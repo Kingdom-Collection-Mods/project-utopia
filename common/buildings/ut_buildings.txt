@@ -499,6 +499,10 @@ building_ut_nuclear_power_plant_construction_site = {
 building_ut_nuclear_power_plant = {
 
 	building_group = bg_technology
+	
+	unlocking_technologies = {
+		nuclear_power
+	}
 
 	city_type = city
 
