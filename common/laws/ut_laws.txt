@@ -642,27 +642,29 @@ law_multicultural_globalism = {
 		country_acceptance_primary_culture_add = 100
 		country_support_separatism_resistance_mult = 0.5
 		country_support_separatism_strength_mult = -0.5
-		state_assimilation_mult = -0.5
+		state_assimilation_mult = -0.5 #-0.25
 
 		#Heritage
+		#Multiculturalism 1.10 had 40
+		#Base is 60 (t4), +15 from total separation + any positive modifier (>=5) = 80 (t5)
+		#Language more important than heritage
 		#From this block, we only apply the highest value a Pop qualifies for
-		country_acceptance_shared_heritage_trait_add = 60
-		country_acceptance_shared_heritage_trait_group_add = 50
-		country_acceptance_no_shared_heritage_trait_add = 40
+		country_acceptance_shared_heritage_trait_add = 40
+		country_acceptance_shared_heritage_trait_group_add = 40
+		country_acceptance_no_shared_heritage_trait_add = 30
 
 		#Language
 		#From this block, we only apply the highest value a Pop qualifies for
-		country_acceptance_shared_language_trait_add = 50
-		country_acceptance_shared_language_trait_group_add = 30
-		country_acceptance_no_shared_language_trait_add = 40
+		country_acceptance_shared_language_trait_add = 60
+		country_acceptance_shared_language_trait_group_add = 50
+		country_acceptance_no_shared_language_trait_add = 30
 
 		#Tradition
 		#From this block, we only apply the highest value a Pop qualifies for
 		country_acceptance_shared_tradition_trait_add = 10
-		country_acceptance_no_shared_tradition_trait_add = 0
 
 		#Fervor
-		country_primary_culture_fervor_from_laws_add = -10
+		#removed
 	}
 
 	acceptance_modifier = {
@@ -727,16 +729,16 @@ law_neo_ethno_state = {
 		country_acceptance_primary_culture_add = 100
 
 		#Heritage
-		#From this block, we only apply the highest value a Pop qualifies for
-		country_acceptance_shared_heritage_trait_add = 30
-		country_acceptance_shared_heritage_trait_group_add = 20
-		country_acceptance_no_shared_heritage_trait_add = 0
+		#Same as ethno state
+		country_acceptance_shared_heritage_trait_add = 20
+		country_acceptance_shared_heritage_trait_group_add = 10
+		country_acceptance_no_shared_heritage_trait_add = -10
 
 		#Language
-		#From this block, we only apply the highest value a Pop qualifies for
-		country_acceptance_shared_language_trait_add = 20
-		country_acceptance_shared_language_trait_group_add = 10
-		country_acceptance_no_shared_language_trait_add = 0
+		#Slightly more acceptance if shared language
+		country_acceptance_shared_language_trait_add = 25 #15
+		country_acceptance_shared_language_trait_group_add = 20 #5
+		country_acceptance_no_shared_language_trait_add = -10 #0
 
 		#Tradition
 		#From this block, we only apply the highest value a Pop qualifies for
