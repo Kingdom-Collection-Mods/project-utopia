@@ -1368,7 +1368,9 @@ ut_democracy_article = {
 			value = 0
 
 			if = {
-				scope:target_country = { has_modifier = ut_new_dawn_core_democratic_mod }
+				scope:target_country = {
+					has_modifier = ut_new_dawn_core_democratic_mod
+				}
 				add = {
 					desc = "ut_new_dawn_core_democratic_mod"
 					value = 100

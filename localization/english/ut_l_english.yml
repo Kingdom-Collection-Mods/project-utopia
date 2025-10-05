@@ -222,6 +222,7 @@
  event_new_dawn.uprising.communist_win: "Communist march on capital"
  event_new_dawn.uprising.democrat_win: "Democrat march on capital"
  event_new_dawn.uprising.autocrat_win: "Autocrat march on capital"
+ event_new_dawn.uprising.first_setback: "First setback, will not be able to suppress again (work in progress)"
 
  event_new_dawn.998.cheat: "'Rising' New Dawn (Phase 1) Cheat"
  event_new_dawn.999.cheat: "New Dawn Path to Utopia (Phase 2) Cheat"
