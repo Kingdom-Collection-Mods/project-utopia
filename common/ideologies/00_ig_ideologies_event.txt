@@ -9,7 +9,7 @@
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = neutral
 		law_equal_rights_for_women = disapprove
-		law_affirmative_equality = disapprove
+		law_affirmative_equality = strongly_disapprove
 	}
 
 	lawgroup_free_speech = {
@@ -26,9 +26,9 @@ ideology_feminist_ig = {
 	priority = 250 # Overrides other non-leader ideologies with a lower prio
 	
 	lawgroup_rights_of_women = {
-		law_womens_suffrage = strongly_approve
+		law_womens_suffrage = approve
 		law_equal_rights_for_women = strongly_approve
-		law_affirmative_equality = approve
+		law_affirmative_equality = strongly_approve
 		law_women_in_the_workplace = neutral
 		law_women_own_property = disapprove
 		law_no_womens_rights = strongly_disapprove
@@ -66,7 +66,6 @@ ideology_modernizer = {
 		law_agrarianism = disapprove
 		law_traditionalism = strongly_disapprove
 		law_laissez_faire = neutral
-		law_social_market_economy = approve
 		law_free_market_economy = neutral
 		law_corporate_economy = neutral
 		law_social_market_economy = strongly_approve

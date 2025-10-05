@@ -245,6 +245,7 @@ support_ships_rockets_base = {
 
 	unlocking_technologies = {	
 		carrier_tech
+		heavy_ships_rockets_computers
 	}
 
 	modifier = {
@@ -280,6 +281,27 @@ ut_anti_tank = {
 }
 
 ut_anti_tank_guided = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/guided_missiles.dds"
+	category = military
+
+	unlocking_technologies = {	
+		ut_military_complex
+		ut_anti_tank
+	}
+
+	modifier = {
+		unit_army_offense_mult = 0.05
+		unit_kill_rate_add = 0.05
+    }
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+
+ut_anti_tank_guided_two = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/guided_missiles.dds"
 	category = military
@@ -326,6 +348,28 @@ task_forces = {
 		ut_anti_tank
 	}
 	
+	modifier = {
+		unit_combat_unit_type_armored_infantry_offense_add = 5
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+casualty_evacuations = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/military_aviation.dds"
+	category = military
+
+	unlocking_technologies = {	
+		task_forces
+	}
+
+	modifier = {
+		unit_combat_unit_type_task_force_infantry_defense_add = 5
+	}
+	
 	ai_weight = {
 		value = 1
 	}
@@ -342,7 +386,6 @@ ut_tank_diesel_engine = {
 	}
 
 	modifier = {
-		military_formation_movement_speed_mult = 0.1
     }
 	
 	ai_weight = {
@@ -360,6 +403,7 @@ ut_tank_radio = {
 	}
 
 	modifier = {
+		military_formation_movement_speed_mult = 0.1
 		military_formation_organization_gain_mult = 0.2
     }
 	
@@ -378,7 +422,7 @@ ut_tank_composite_armor = {
 	}
 
 	modifier = {
-		unit_combat_unit_type_light_tanks_offense_add = 10
+		unit_army_defense_add = 5
     }
 	
 	ai_weight = {
@@ -492,6 +536,23 @@ ut_war_planes_2 = {
 
 	unlocking_technologies = {
 		ut_war_planes
+	}
+	
+	modifier = {
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+ut_war_planes_2_1 = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/warplan_60s.dds"
+	category = military
+
+	unlocking_technologies = {
+		ut_war_planes_2
 	}
 	
 	modifier = {

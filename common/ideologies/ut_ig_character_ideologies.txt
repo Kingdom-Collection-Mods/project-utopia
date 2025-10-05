@@ -68,9 +68,7 @@
 			limit = {
 				owner = {
 					NAND = {
-						has_law = law_type:law_environment_protection_institute
 						has_law = law_type:law_environment_protection_institute_two
-						has_law = law_type:law_food_safety_protection_institute
 						has_law = law_type:law_food_safety_protection_institute_two
 					}
 				}
@@ -137,6 +135,7 @@
 	}
 }
 
+#General Unlock, more likely if democratic
 ut_ideology_cosmopolitan_leader = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_paternalistic.dds"
 	
@@ -231,10 +230,18 @@ ut_ideology_cosmopolitan_leader = {
 		if = {
 			limit = {
 				owner = {
-					has_modifier = je_ut_new_dawn_democrat_focus
+					has_modifier = ut_new_dawn_core_democratic_mod
 				}
 			}
 			add = 75
+		}
+		if = {
+			limit = {
+				owner = {
+					has_modifier = ut_new_dawn_core_communist_mod
+				}
+			}
+			add = 25
 		}
 		if = {
 			limit = {
@@ -278,6 +285,7 @@ ut_ideology_cosmopolitan_leader = {
 	}
 }
 
+#General Unlock, more likely if Autocratic or Fascist
 ut_ideology_autocratic_leader = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_caudillismo.dds"
 	
@@ -477,6 +485,7 @@ ut_ideology_autocratic_leader = {
 	}
 }
 
+#Fascist Unlock
 ut_ideology_national_socialist_leader = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/idealogy_leader_oligarchic.dds"
 	
@@ -735,6 +744,7 @@ ut_ideology_national_socialist_leader = {
 	}	
 }
 
+#General Unlock 
 ut_ideology_economical_corporatist_leader = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_paternalistic.dds"
 	
@@ -975,7 +985,7 @@ ut_liberal_feminism_leader = {
 	}
 
 	country_trigger = {
-		has_technology_researched = feminism_2
+		has_technology_researched = feminism_3
 		# capitalism must be relevant
 		exists = ig:ig_industrialists
 		ig:ig_industrialists = {
@@ -984,7 +994,14 @@ ut_liberal_feminism_leader = {
 	}
 
 	interest_group_leader_trigger = {
-		ideology_market_liberal_valid_trigger = yes
+		OR = {
+			is_interest_group_type = ig_urbanists
+			AND = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+				is_interest_group_type = ig_trade_unions
+			}
+			ideology_market_liberal_valid_trigger = yes
+		}
 		# 
 		# OR = {
 		# 	owner = {
@@ -1152,6 +1169,26 @@ ut_liberal_feminism_leader = {
 			}
 			add = 75
 		}
+		
+		if = {
+			limit = {
+				owner = {
+					has_modifier = ut_new_dawn_core_democratic_mod
+				}
+			}
+			multiply = 1.25
+		}
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_equal_rights_for_women
+						has_technology_researched = feminism_3
+					}
+				}
+			}
+			multiply = 1.5
+		}
 		if = {
 			limit = {
 				OR = {
@@ -1265,7 +1302,17 @@ ut_radical_feminism_leader = {
 	}
 
 	interest_group_leader_trigger = {
-		ideology_radical_valid_trigger = yes
+		OR = {
+			AND = {
+				has_modifier = ut_new_dawn_core_communist_mod
+				OR  = {
+					is_interest_group_type = ig_trade_unions
+					is_interest_group_type = ig_urbanists
+				}
+			}
+			ideology_radical_valid_trigger = yes
+		}
+		
 	}
 	
 	non_interest_group_leader_trigger = {
@@ -1413,6 +1460,25 @@ ut_radical_feminism_leader = {
 		}
 		if = {
 			limit = {
+				owner = {
+					has_modifier = ut_new_dawn_core_communist_mod
+				}
+			}
+			multiply = 1.5
+		}
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_equal_rights_for_women
+						has_technology_researched = feminism_3
+					}
+				}
+			}
+			multiply = 1.5
+		}
+		if = {
+			limit = {
 				OR = {
 					has_variable = communist_ig_var
 					has_variable = chose_vanguardism
@@ -1444,6 +1510,25 @@ ut_radical_feminism_leader = {
 				}
 			}
 			multiply = 0.1
+		}
+		if = {
+			limit = {
+				owner = {
+					has_modifier = ut_new_dawn_core_communist_mod
+				}
+			}
+			multiply = 1.25
+		}
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_equal_rights_for_women
+						has_technology_researched = feminism_3
+					}
+				}
+			}
+			multiply = 1.25
 		}
 	}
 }
@@ -1505,7 +1590,16 @@ ut_social_feminism_leader = {
 	}
 
 	interest_group_leader_trigger = {
-		ideology_social_democrat_valid_trigger = yes
+		OR = {
+			AND = {
+				OR = {
+					has_modifier = ut_new_dawn_core_democratic_mod
+					has_modifier = ut_new_dawn_core_communist_mod
+				}
+				is_interest_group_type = ig_urbanists
+			}
+			ideology_social_democrat_valid_trigger = yes
+		}
 	}
 
 	non_interest_group_leader_trigger = {
@@ -1539,9 +1633,10 @@ ut_social_feminism_leader = {
 			limit = {
 				owner = {
 					NAND = {
-						has_law = law_type:law_graduated_taxation
-						has_law = law_type:law_universal_suffrage
-						has_law = law_type:law_worker_protections
+						has_law_or_variant = law_type:law_affirmative_equality
+						has_law_or_variant = law_type:law_graduated_taxation
+						has_law_or_variant = law_type:law_universal_suffrage
+						has_law_or_variant = law_type:law_ut_minimum_wage
 					}
 				}
 			}
@@ -1607,6 +1702,28 @@ ut_social_feminism_leader = {
 		}
 		if = {
 			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_equal_rights_for_women
+						has_technology_researched = feminism_3
+					}
+				}
+			}
+			multiply = 1.5
+		}
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_modifier = ut_new_dawn_core_democratic_mod
+						has_modifier = ut_new_dawn_core_communist_mod
+					}
+				}
+			}
+			multiply = 1.25
+		}
+		if = {
+			limit = {
 				OR = {
 					has_variable = communist_ig_var
 					has_variable = chose_vanguardism
@@ -1638,6 +1755,25 @@ ut_social_feminism_leader = {
 				}
 			}
 			multiply = 0.1
+		}
+		if = {
+			limit = {
+				owner = {
+					has_modifier = ut_new_dawn_core_communist_mod
+				}
+			}
+			multiply = 1.25
+		}
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_equal_rights_for_women
+						has_technology_researched = feminism_3
+					}
+				}
+			}
+			multiply = 1.25
 		}
 	}
 }

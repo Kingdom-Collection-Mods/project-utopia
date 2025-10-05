@@ -2,6 +2,7 @@
 
 ### CONSTRUCTION
 
+#Core Upgrade Trade Union (External + Internal Trade + Defense Cooperation)
 principle_common_financial_policy_1 = {
 	icon = "gfx/interface/icons/principles_icons/construction.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
@@ -29,9 +30,10 @@ principle_common_financial_policy_1 = {
 
 		# Members no longer get a penalty to Trade Advantage due to lack of interests
 		country_no_advantage_loss_from_lack_of_interest_bool = yes
-
-		#for missing production method
-		country_influence_mult = 0.05
+		
+		# Modifiers from previous level(s)
+		state_infrastructure_mult = 0.1
+		country_convoy_contribution_to_market_owner_add = 0.1
 	}
 	
 	ai_weight = {
@@ -44,7 +46,7 @@ principle_common_financial_policy_2 = {
 	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
 
 	possible = {
-		has_technology_researched = union_new_mandates
+		has_technology_researched = union_trade
 		OR = {
 			has_law = law_type:law_international_trade
 			has_law = law_type:law_free_trade_union
@@ -65,9 +67,11 @@ principle_common_financial_policy_2 = {
 
 		# Members no longer get a penalty to Trade Advantage due to lack of interests
 		country_no_advantage_loss_from_lack_of_interest_bool = yes
-
-		#for missing production method
-		country_influence_mult = 0.05
+		
+		# Modifiers from previous level(s)
+		state_infrastructure_mult = 0.1
+		country_convoy_contribution_to_market_owner_add = 0.2
+		country_company_throughput_bonus_add = 0.05
 	}
 	
 	ai_weight = {
@@ -79,8 +83,10 @@ principle_common_financial_policy_3 = {
 	icon  = "gfx/interface/icons/principles_icons/construction.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
 
+	allows_foreign_investment_in_lower_rank = yes
+
 	possible = {
-		has_technology_researched = union_new_mandates
+		has_technology_researched = union_new_mandates_two
 		OR = {
 			has_law = law_type:law_international_trade
 			has_law = law_type:law_free_trade_union
@@ -93,6 +99,7 @@ principle_common_financial_policy_3 = {
 	
 		# Also unlocks a PM that grants Trade Centers Influence, checked with trigger on PM (from level 2)
 		power_bloc_disallow_war_bool = yes
+		power_bloc_allow_foreign_investment_lower_rank_bool = yes
 	}
 	
 	member_modifier = {
@@ -101,12 +108,11 @@ principle_common_financial_policy_3 = {
 
 		# Members no longer get a penalty to Trade Advantage due to lack of interests
 		country_no_advantage_loss_from_lack_of_interest_bool = yes
-
-		#for missing production method
-		country_influence_mult = 0.1
 		
-		#
-		country_join_power_bloc_member_in_defensive_plays_bool = yes
+		# Modifiers from previous level(s)
+		state_infrastructure_mult = 0.1
+		country_convoy_contribution_to_market_owner_add = 0.2
+		country_company_throughput_bonus_add = 0.05
 	}
 	
 	ai_weight = {
@@ -114,7 +120,7 @@ principle_common_financial_policy_3 = {
 	}	
 }
 
-
+#Core Upgrade Sovereign Empire (Vassal + Exploitation + Trade League)
 principle_commissariat_1 = {
 	icon = "gfx/interface/icons/principles_icons/construction.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
@@ -125,18 +131,25 @@ principle_commissariat_1 = {
 
 	possible = {
 		has_technology_researched = union_new_mandates
-	}
-
-	power_bloc_modifier = {
-		power_bloc_customs_union_bool = yes
+		NOT = { has_modifier = ut_new_dawn_core_democratic_mod }
 	}
 
 	member_modifier = {
-		country_authority_per_subject_add = 25
+		# Modifiers from previous level(s)
+		country_authority_per_subject_add = 20
 		country_subject_income_transfer_mult = 0.25
-		country_allow_enacting_decrees_in_subject_bool = yes
 
+		# Can use decrees on subjects
+		country_allow_enacting_decrees_in_subject_bool = yes
+		
+		# Income transfer from members to leader
+		power_bloc_income_transfer_to_leader_factor = 0.05
+
+		# New
 		country_convoy_contribution_to_market_owner_add = 0.2
+
+		# New, upgrades to customs union
+		power_bloc_trade_advantage_add = 100
 	}
 	
 	ai_weight = {
@@ -146,10 +159,11 @@ principle_commissariat_1 = {
 
 principle_commissariat_2 = {
 	icon = "gfx/interface/icons/principles_icons/construction.dds"
-	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
 
 	possible = {
-		has_technology_researched = union_new_mandates
+		has_technology_researched = union_trade
+		NOT = { has_modifier = ut_new_dawn_core_democratic_mod }
 	}
 	
 	leader_modifier = {
@@ -160,16 +174,19 @@ principle_commissariat_2 = {
 		country_influence_mult = -0.1
 	}
 
-	power_bloc_modifier = {
-		power_bloc_customs_union_bool = yes
-	}
-
 	member_modifier = {
 		country_authority_per_subject_add = 25
 		country_subject_income_transfer_mult = 0.25
 		country_allow_enacting_decrees_in_subject_bool = yes
+		
+		# Income transfer from members to leader
+		power_bloc_income_transfer_to_leader_factor = 0.05
 
+		# New
 		country_convoy_contribution_to_market_owner_add = 0.2
+
+		# New, upgrades to customs union
+		power_bloc_trade_advantage_add = 200
 	}
 	
 	ai_weight = {
@@ -179,10 +196,11 @@ principle_commissariat_2 = {
 
 principle_commissariat_3 = {
 	icon = "gfx/interface/icons/principles_icons/construction.dds"
-	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
 
 	possible = {
-		has_technology_researched = union_new_mandates
+		has_technology_researched = union_new_mandates_two
+		NOT = { has_modifier = ut_new_dawn_core_democratic_mod }
 	}
 	
 	leader_modifier = {
@@ -193,6 +211,7 @@ principle_commissariat_3 = {
 		country_influence_mult = -0.2
 	}
 
+	#new
 	power_bloc_modifier = {
 		power_bloc_customs_union_bool = yes
 	}
@@ -201,8 +220,12 @@ principle_commissariat_3 = {
 		country_authority_per_subject_add = 25
 		country_subject_income_transfer_mult = 0.25
 		country_allow_enacting_decrees_in_subject_bool = yes
+		
+		# Income transfer from members to leader
+		power_bloc_income_transfer_to_leader_factor = 0.05
 
-		country_convoy_contribution_to_market_owner_add = 0.2
+		# New
+		country_convoy_contribution_to_market_owner_add = 0.3
 	}
 	
 	ai_weight = {
@@ -210,8 +233,7 @@ principle_commissariat_3 = {
 	}
 }
 
-
-
+#Core Upgrade Military Treaty (Aggressive Coordination + Defense Cooperation + Trade but should be Ideological Union)
 ut_principle_military_cooperation_1 = {
 	icon = "gfx/interface/icons/principles_icons/defensive_coorperation.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
@@ -225,6 +247,10 @@ ut_principle_military_cooperation_1 = {
 	}
 
 	power_bloc_modifier = {
+		# Modifiers from previous level(s)
+		country_initiator_war_goal_maneuver_cost_mult = -0.3
+		country_war_exhaustion_casualties_mult = -0.15
+
 		# Members cannot start wars amongst each other
 		power_bloc_disallow_war_bool = yes
 	}
@@ -244,15 +270,13 @@ ut_principle_military_cooperation_2 = {
 	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
 
 	possible = {
-		has_technology_researched = union_new_mandates
+		has_technology_researched = union_trade
 	}
 
 	power_bloc_modifier = {
 		# Modifiers from previous level(s)
 		power_bloc_disallow_war_bool = yes
-		power_bloc_trade_advantage_add = 100
-		
-		
+		power_bloc_trade_advantage_add = 150		
 	}
 
 	member_modifier = {
@@ -277,14 +301,13 @@ ut_principle_military_cooperation_3 = {
 	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
 
 	possible = {
-		has_technology_researched = union_new_mandates
+		has_technology_researched = union_new_mandates_two
 	}
 
 	power_bloc_modifier = {
 		# Modifiers from previous level(s)
 		power_bloc_disallow_war_bool = yes		
-		power_bloc_customs_union_bool = yes
-		power_bloc_trade_advantage_add = 200
+		power_bloc_trade_advantage_add = 300
 	}
 
 	member_modifier = {
@@ -293,6 +316,7 @@ ut_principle_military_cooperation_3 = {
 		
 		# Countries forced to join defensive plays against members
 		country_join_power_bloc_member_in_defensive_plays_bool = yes
+		country_infamy_generation_mult = -0.05
 	}
 	
 	leader_modifier = {
@@ -305,111 +329,7 @@ ut_principle_military_cooperation_3 = {
 	}
 }
 
-ut_principle_advanced_research_4 = {
-	icon = "gfx/interface/icons/principles_icons/advanced_research.dds"
-	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
-
-	possible = {
-		has_technology_researched = union_new_mandates
-	}
-
-	member_modifier = {
-		country_institution_size_change_speed_institution_schools_mult = 0.5
-		country_institution_cost_institution_schools_mult = -0.5
-		country_disallow_law_no_schools_bool = yes
-	}
-
-	leader_modifier = {
-		country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes
-	}
-
-	institution = institution_schools
-	institution_modifier = {
-		# School institution gives more tech spread
-		country_tech_spread_mult = 0.05
-
-		# School isntitution reduces ahead of time research penalty
-		country_ahead_of_time_research_penalty_mult = -0.05
-
-		# Increase Country max innovation
-		country_weekly_innovation_max_add = 10
-	}
-	
-	ai_weight = {
-		value = 50
-	}	
-}
-
-ut_principle_advanced_research_5 = {
-	icon = "gfx/interface/icons/principles_icons/advanced_research.dds"
-	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
-
-	possible = {
-		has_technology_researched = union_new_mandates
-	}
-
-	member_modifier = {
-		country_institution_size_change_speed_institution_schools_mult = 0.5
-		country_institution_cost_institution_schools_mult = -0.5
-		country_disallow_law_no_schools_bool = yes
-	}
-
-	leader_modifier = {
-		country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes
-	}
-
-	institution = institution_schools
-	institution_modifier = {
-		# School institution gives more tech spread
-		country_tech_spread_mult = 0.05
-
-		# School isntitution reduces ahead of time research penalty
-		country_ahead_of_time_research_penalty_mult = -0.05
-
-		# Increase Country max innovation
-		country_weekly_innovation_max_add = 15
-	}
-	
-	ai_weight = {
-		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
-	}	
-}
-
-ut_principle_advanced_research_6 = {
-	icon = "gfx/interface/icons/principles_icons/advanced_research.dds"
-	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
-
-	possible = {
-		has_technology_researched = union_new_mandates
-	}
-
-	member_modifier = {
-		country_institution_size_change_speed_institution_schools_mult = 0.5
-		country_institution_cost_institution_schools_mult = -0.5
-		country_disallow_law_no_schools_bool = yes
-	}
-
-	leader_modifier = {
-		country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes
-	}
-
-	institution = institution_schools
-	institution_modifier = {
-		# School institution gives more tech spread
-		country_tech_spread_mult = 0.10
-
-		# School isntitution reduces ahead of time research penalty
-		country_ahead_of_time_research_penalty_mult = -0.05
-
-		# Increase Country max innovation
-		country_weekly_innovation_max_add = 20
-	}
-	
-	ai_weight = {
-		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
-	}	
-}
-
+#Core Upgrade Ideological Union (Creative Legislature + Ideological Truth + Trade) maybe add Religious Convocation here?
 ut_modern_ideological_union_1 = {
 	icon = "gfx/interface/icons/principles_icons/creative_legislature.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
@@ -455,11 +375,11 @@ ut_modern_ideological_union_2 = {
 	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
 	
 	possible = {
-		has_technology_researched = union_new_mandates
+		has_technology_researched = union_trade
 	}
 
 	power_bloc_modifier = {
-		power_bloc_trade_advantage_add = 150
+		power_bloc_trade_advantage_add = 200
 		power_bloc_disallow_embargo_bool = yes
 	}
 
@@ -483,7 +403,7 @@ ut_modern_ideological_union_3 = {
 	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
 	
 	possible = {
-		has_technology_researched = union_new_mandates
+		has_technology_researched = union_new_mandates_two
 	}
 
 	leader_modifier = {
@@ -504,6 +424,539 @@ ut_modern_ideological_union_3 = {
 	non_leader_modifier = {
 		country_leader_has_law_enactment_success_mult = 0.2		
 	}
+
+	ai_weight = {
+		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}
+}
+
+#Core lol forgot Religious Convocation
+
+#Upgrade Research
+ut_principle_advanced_research_4 = {
+	icon = "gfx/interface/icons/principles_icons/advanced_research.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+
+	possible = {
+		has_technology_researched = union_new_mandates
+	}
+
+	member_modifier = {
+		country_institution_size_change_speed_institution_schools_mult = 0.5
+		country_institution_cost_institution_schools_mult = -0.5
+		country_disallow_law_no_schools_bool = yes
+	}
+
+	leader_modifier = {
+		country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes
+	}
+
+	institution = institution_schools
+	institution_modifier = {
+		# School institution gives more tech spread
+		country_tech_spread_mult = 0.05
+
+		# School isntitution reduces ahead of time research penalty
+		country_ahead_of_time_research_penalty_mult = -0.05
+
+		# Increase Country max innovation
+		country_weekly_innovation_max_add = 10
+	}
+	
+	ai_weight = {
+		value = 50
+	}	
+}
+
+ut_principle_advanced_research_5 = {
+	icon = "gfx/interface/icons/principles_icons/advanced_research.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+
+	possible = {
+		has_technology_researched = union_trade
+	}
+
+	member_modifier = {
+		country_institution_size_change_speed_institution_schools_mult = 0.5
+		country_institution_cost_institution_schools_mult = -0.5
+		country_disallow_law_no_schools_bool = yes
+	}
+
+	leader_modifier = {
+		country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes
+	}
+
+	institution = institution_schools
+	institution_modifier = {
+		# School institution gives more tech spread
+		country_tech_spread_mult = 0.05
+
+		# School isntitution reduces ahead of time research penalty
+		country_ahead_of_time_research_penalty_mult = -0.05
+
+		# Increase Country max innovation
+		country_weekly_innovation_max_add = 15
+	}
+	
+	ai_weight = {
+		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}	
+}
+
+ut_principle_advanced_research_6 = {
+	icon = "gfx/interface/icons/principles_icons/advanced_research.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+
+	possible = {
+		has_technology_researched = union_new_mandates_two
+	}
+
+	member_modifier = {
+		country_institution_size_change_speed_institution_schools_mult = 0.5
+		country_institution_cost_institution_schools_mult = -0.5
+		country_disallow_law_no_schools_bool = yes
+	}
+
+	leader_modifier = {
+		country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes
+	}
+
+	institution = institution_schools
+	institution_modifier = {
+		# School institution gives more tech spread
+		country_tech_spread_mult = 0.10
+
+		# School isntitution reduces ahead of time research penalty
+		country_ahead_of_time_research_penalty_mult = -0.05
+
+		# Increase Country max innovation
+		country_weekly_innovation_max_add = 20
+	}
+	
+	ai_weight = {
+		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}	
+}
+
+#Upgrade Freedom of Movement + Transport Infrastructure
+ut_principle_freedom_of_movement_4 = {
+	icon = "gfx/interface/icons/principles_icons/freedom_of_movement.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+	
+	possible = {
+		has_technology_researched = union_new_mandates
+		NOT = { has_modifier = ut_new_dawn_core_fascist_mod }
+	}
+
+	member_modifier = {
+		#Full bonus from freedom of movement and transport at max level
+		
+		# Modifiers from previous level(s)
+		building_port_throughput_add = 0.2
+		state_infrastructure_from_population_mult = 0.33
+		state_infrastructure_from_population_max_mult = 0.33
+
+		# Members get an increase to max EoS bonus
+		building_economy_of_scale_level_cap_add = 10
+	}
+
+	power_bloc_modifier = {
+		# Unlocks a new PM for Universities and Art Academies that increases migration attraction, unlocked per trigger in the PM
+
+		# Unlocks power-bloc wide migration
+		power_bloc_allow_wider_migration_area_bool = yes
+	}
+
+	ai_weight = {
+		value = 0 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}
+}
+
+
+ut_principle_freedom_of_movement_5 = {
+	icon = "gfx/interface/icons/principles_icons/freedom_of_movement.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+	
+	possible = {
+		has_technology_researched = union_trade
+		NOT = { has_modifier = ut_new_dawn_core_fascist_mod }
+	}
+
+	member_modifier = {
+		#Full bonus from freedom of movement and transport at max level
+		# Modifiers from previous level(s)
+		country_mass_migration_attraction_mult = 0.25
+		
+		# Modifiers from previous level(s)
+		building_port_throughput_add = 0.2
+		state_infrastructure_from_population_mult = 0.33
+		state_infrastructure_from_population_max_mult = 0.33
+
+		# Members get an increase to max EoS bonus
+		building_economy_of_scale_level_cap_add = 10
+	}
+
+	power_bloc_modifier = {
+		# Unlocks a new PM for Universities and Art Academies that increases migration attraction, unlocked per trigger in the PM
+
+		# Unlocks power-bloc wide migration
+		power_bloc_allow_wider_migration_area_bool = yes
+	}
+
+	ai_weight = {
+		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}
+}
+
+ut_principle_freedom_of_movement_6 = {
+	icon = "gfx/interface/icons/principles_icons/freedom_of_movement.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+	
+	possible = {
+		has_technology_researched = union_new_mandates_two
+		NOT = { has_modifier = ut_new_dawn_core_fascist_mod }
+	}
+
+	member_modifier = {
+		#Full bonus from freedom of movement and transport at max level
+		# Modifiers from previous level(s)
+		state_migration_quota_mult = 0.25
+		country_mass_migration_attraction_mult = 0.5
+		
+		# Modifiers from previous level(s)
+		building_port_throughput_add = 0.2
+		state_infrastructure_from_population_mult = 0.33
+		state_infrastructure_from_population_max_mult = 0.33
+
+		# Members get an increase to max EoS bonus
+		building_economy_of_scale_level_cap_add = 10
+	}
+
+	power_bloc_modifier = {
+		# Unlocks a new PM for Universities and Art Academies that increases migration attraction, unlocked per trigger in the PM
+
+		# Unlocks power-bloc wide migration
+		power_bloc_allow_wider_migration_area_bool = yes
+	}
+
+	ai_weight = {
+		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}
+}
+
+#Upgrade Military Industry + Exploit Members
+ut_principle_war_industry_4 = {
+	icon = "gfx/interface/icons/principles_icons/military_industry.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+	
+	possible = {
+		has_technology_researched = union_new_mandates
+		NOT = { has_modifier = ut_new_dawn_core_democratic_mod }
+	}
+	
+	member_modifier = {
+		# Modifiers from previous level(s)
+		building_automotive_industry_throughput_add = 0.1
+		building_arms_industry_throughput_add = 0.1
+		building_artillery_foundries_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
+		country_military_goods_cost_mult = -0.15
+
+		# Supply routes use less convoys
+		character_supply_route_cost_mult = -0.33
+
+		# Members get an unique mobilization option mechanic
+	}
+
+	ai_weight = {
+		value = 0 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}
+}
+
+ut_principle_war_industry_5 = {
+	icon = "gfx/interface/icons/principles_icons/military_industry.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+	
+	possible = {
+		has_technology_researched = union_trade
+		NOT = { has_modifier = ut_new_dawn_core_democratic_mod }
+	}
+
+	leader_modifier = {
+		# Modifiers from previous level(s)
+		country_authority_mult = 0.1
+		# Increase leader influence
+		country_influence_mult = 0.1
+	}
+	
+	member_modifier = {
+		# Modifiers from previous level(s)
+		building_automotive_industry_throughput_add = 0.1
+		building_arms_industry_throughput_add = 0.1
+		building_artillery_foundries_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
+		country_military_goods_cost_mult = -0.15
+
+		# Supply routes use less convoys
+		character_supply_route_cost_mult = -0.33
+
+		# Members get an unique mobilization option mechanic
+	}
+
+	power_bloc_modifier = {
+		power_bloc_cohesion_add = -20
+		# Income transfer from members to leader
+		power_bloc_income_transfer_to_leader_factor = 0.05
+	}
+
+	ai_weight = {
+		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}
+}
+
+ut_principle_war_industry_6 = {
+	icon = "gfx/interface/icons/principles_icons/military_industry.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+	
+	possible = {
+		has_technology_researched = union_new_mandates_two
+		NOT = { has_modifier = ut_new_dawn_core_democratic_mod }
+	}
+
+	leader_modifier = {
+		# Modifiers from previous level(s)
+		country_authority_mult = 0.2
+		# Increase leader influence
+		country_influence_mult = 0.2
+	}
+	
+	member_modifier = {
+		# Modifiers from previous level(s)
+		building_automotive_industry_throughput_add = 0.1
+		building_arms_industry_throughput_add = 0.1
+		building_artillery_foundries_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
+		country_military_goods_cost_mult = -0.15
+
+		# Supply routes use less convoys
+		character_supply_route_cost_mult = -0.33
+
+		# Members get an unique mobilization option mechanic
+	}
+
+	power_bloc_modifier = {
+		power_bloc_cohesion_add = -20
+		# Income transfer from members to leader
+		power_bloc_income_transfer_to_leader_factor = 0.05
+	}
+
+	ai_weight = {
+		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}
+}
+
+#Upgrade Food Standardization
+ut_principle_food_standardization_4 = {
+	icon = "gfx/interface/icons/principles_icons/food_standardization.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+	
+	possible = {
+		has_technology_researched = union_new_mandates
+	}
+
+	member_modifier = {
+		# Modifiers from previous level(s)
+		building_group_bg_agriculture_throughput_add = 0.1
+		state_mortality_mult = -0.1 #same
+
+		# Higher SoL
+		state_standard_of_living_add = 2 #+1
+		state_birth_rate_mult = 0.1 #+0.1
+
+		#todo unlocks a better? PM for Food Industries
+	}
+
+	ai_weight = {
+		value = 0 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}
+}
+
+ut_principle_food_standardization_5 = {
+	icon = "gfx/interface/icons/principles_icons/food_standardization.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+	
+	possible = {
+		has_technology_researched = union_trade
+	}
+
+	member_modifier = {
+		# Modifiers from previous level(s)
+		building_group_bg_agriculture_throughput_add = 0.2 #+0.1
+		building_food_industry_throughput_add = 0.1 #+0.2
+		state_mortality_mult = -0.1 #same
+
+		# Higher SoL
+		state_standard_of_living_add = 2 #+1
+		state_birth_rate_mult = 0.1 #+0.1
+
+		#todo unlocks a better? PM for Food Industries
+	}
+
+	ai_weight = {
+		value = 0 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}
+}
+
+ut_principle_food_standardization_6 = {
+	icon = "gfx/interface/icons/principles_icons/food_standardization.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+	
+	possible = {
+		has_technology_researched = union_new_mandates_two
+	}
+
+	member_modifier = {
+		# Modifiers from previous level(s)
+		building_group_bg_agriculture_throughput_add = 0.2 #+0.1
+		building_food_industry_throughput_add = 0.2 #+0.2
+		building_commercial_factory_throughput_add = 0.1 #+0.1
+		state_mortality_mult = -0.1 #same
+
+		# Higher SoL
+		state_standard_of_living_add = 2 #+1
+		state_birth_rate_mult = 0.1 #+0.1
+
+		#todo unlocks a better? PM for Food Industries
+	}
+
+	ai_weight = {
+		value = 0 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}
+}
+
+#Police Coordination + Vassalisation
+ut_principle_security_bloc_4 = {
+	icon = "gfx/interface/icons/principles_icons/vassals_subjects.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+	
+	possible = {
+		has_technology_researched = union_new_mandates
+		NOT = { has_modifier = ut_new_dawn_core_communist_mod }
+	}
+
+	member_modifier = {
+		# Modifiers from previous level(s)
+		country_authority_per_subject_add = 20
+		country_subject_income_transfer_mult = 0.15 
+
+		# Can use decrees on subjects
+		country_allow_enacting_decrees_in_subject_bool = yes
+
+		# Cheaper and faster police institution
+		country_institution_size_change_speed_institution_police_mult = 0.5
+		country_institution_cost_institution_police_mult = -0.5
+		country_disallow_law_no_police_bool = yes
+	}
+
+	leader_modifier = {
+		country_can_impose_same_lawgroup_policing_in_power_bloc_bool = yes
+	}
+
+	institution = institution_police
+	institution_modifier = {
+		# Police institution adds authority
+		country_authority_add = 10
+
+		# Police institution reduces radicalism of political movements
+		political_movement_radicalism_add = -0.05
+	}
+
+
+	ai_weight = {
+		value = 0 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}
+}
+
+ut_principle_security_bloc_5 = {
+	icon = "gfx/interface/icons/principles_icons/vassals_subjects.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+	
+	possible = {
+		has_technology_researched = union_trade
+		NOT = { has_modifier = ut_new_dawn_core_communist_mod }
+	}
+
+
+	member_modifier = {
+		# Modifiers from previous level(s)
+		country_authority_per_subject_add = 20
+		country_subject_income_transfer_mult = 0.2 
+
+		# Can use decrees on subjects
+		country_allow_enacting_decrees_in_subject_bool = yes
+
+		# Cheaper and faster police institution
+		country_institution_size_change_speed_institution_police_mult = 0.5
+		country_institution_cost_institution_police_mult = -0.5
+		country_disallow_law_no_police_bool = yes
+	}
+
+	leader_modifier = {
+		country_can_impose_same_lawgroup_policing_in_power_bloc_bool = yes
+	}
+
+	institution = institution_police
+	institution_modifier = {
+		# Police institution adds authority
+		country_authority_add = 20
+
+		# Police institution reduces radicalism of political movements
+		political_movement_radicalism_add = -0.05
+	}
+
+
+	ai_weight = {
+		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}
+}
+
+ut_principle_security_bloc_6 = {
+	icon = "gfx/interface/icons/principles_icons/vassals_subjects.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+	
+	possible = {
+		has_technology_researched = union_new_mandates_two
+		NOT = { has_modifier = ut_new_dawn_core_communist_mod }
+	}
+
+
+	member_modifier = {
+		# Modifiers from previous level(s)
+		country_authority_per_subject_add = 20
+		country_subject_income_transfer_mult = 0.25
+
+		# Can use decrees on subjects
+		country_allow_enacting_decrees_in_subject_bool = yes
+
+		# Cheaper and faster police institution
+		country_institution_size_change_speed_institution_police_mult = 0.5
+		country_institution_cost_institution_police_mult = -0.5
+		country_disallow_law_no_police_bool = yes
+	}
+
+	leader_modifier = {
+		country_can_impose_same_lawgroup_policing_in_power_bloc_bool = yes
+	}
+
+	institution = institution_police
+	institution_modifier = {
+		# Police institution adds authority
+		country_authority_add = 50
+
+		# Police institution reduces radicalism of political movements
+		political_movement_radicalism_add = -0.05
+	}
+
 
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones

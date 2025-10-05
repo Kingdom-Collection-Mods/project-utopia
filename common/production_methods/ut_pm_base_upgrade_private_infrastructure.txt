@@ -141,6 +141,39 @@ ut_pm_film_industry_art = {
 	required_input_goods = electricity
 }
 
+ut_pm_film_industry_art_principle_movement  = {
+	texture = "gfx/interface/icons/production_method_icons/film_art.dds"
+	unlocking_principles = {
+		ut_principle_freedom_of_movement_4
+		ut_principle_freedom_of_movement_5
+		ut_principle_freedom_of_movement_6
+	}
+
+	unlocking_technologies = {
+		movie_industry
+	}
+
+	building_modifiers = {
+
+		workforce_scaled = { # 1000 profit
+			goods_input_tools_add = 10 # 400
+			goods_input_paper_add = 15 # 450
+			goods_input_electricity_add = 5 # 150
+			goods_input_electronics_add = 4
+
+			goods_output_fine_art_add = 12 # 2000
+		}
+	}
+
+	state_modifiers = {
+		unscaled = {
+			state_migration_pull_mult = 0.25
+		}
+	}
+
+	required_input_goods = electricity
+}
+
 ut_pm_digital_art = {
 	texture = "gfx/interface/icons/production_method_icons/film_art.dds"
 
@@ -192,6 +225,48 @@ ut_pm_research_department = {
 
 	state_modifiers = {
 		workforce_scaled = {
+			state_pop_qualifications_mult = 0.25
+		}
+	}
+}
+
+ut_pm_research_department_principle_movement = {
+	texture = "gfx/interface/icons/production_method_icons/social_science.dds"
+	unlocking_principles = {
+		ut_principle_freedom_of_movement_4
+		ut_principle_freedom_of_movement_5
+		ut_principle_freedom_of_movement_6
+	}
+
+	unlocking_technologies = {
+		technical_scientific_school_reforms
+	}
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_weekly_innovation_add = 4
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 15
+			goods_input_computers_add = 1
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = 200
+			building_employment_laborers_add = 100
+			building_employment_academics_add = 200
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pop_qualifications_mult = 0.25
+		}
+		unscaled = {
+			state_migration_pull_mult = 0.25
 			state_pop_qualifications_mult = 0.25
 		}
 	}

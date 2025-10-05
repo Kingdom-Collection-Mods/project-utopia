@@ -496,7 +496,7 @@ je_ut_new_dawn_democratic_points_bar = {
 			}
 			multiply = {
 				desc = "ut_new_dawn_phase_2_progress_modifier"
-				value = 0.5
+				value = 0.25
 			}	
 		}
 	}
@@ -544,7 +544,7 @@ je_ut_new_dawn_autocratic_points_bar = {
 			}
 			multiply = {
 				desc = "ut_new_dawn_phase_2_progress_modifier"
-				value = 0.5
+				value = 0.25
 			}	
 		}
 		else = {
@@ -595,7 +595,7 @@ je_ut_new_dawn_fascist_points_bar = {
 			}
 			multiply = {
 				desc = "ut_new_dawn_phase_2_progress_modifier"
-				value = 0.5
+				value = 0.25
 			}	
 		}
 		else = {
@@ -646,7 +646,7 @@ je_ut_new_dawn_communist_points_bar = {
 			}
 			multiply = {
 				desc = "ut_new_dawn_phase_2_progress_modifier"
-				value = 0.5
+				value = 0.25
 			}	
 		}
 		else = {

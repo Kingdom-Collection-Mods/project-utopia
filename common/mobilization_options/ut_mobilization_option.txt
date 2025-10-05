@@ -1,0 +1,117 @@
+﻿
+ut_mobilization_option_cas_jet_planes = {
+	texture = "gfx/interface/icons/mobilization_options/aerial_reconaissance.dds"
+
+	unlocking_technologies = {
+		ut_war_planes_2
+	}
+
+	unlocking_principles = {
+		ut_principle_war_industry_4
+		ut_principle_war_industry_5
+		ut_principle_war_industry_6
+	}
+
+	possible = {
+		market ?= {
+			mg:fabric ?= {
+				has_potential_supply = yes
+			}
+			mg:oil ?= {
+				has_potential_supply = yes
+			}
+		}
+	}
+
+	on_activate_while_mobilized = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.5
+			}
+		}
+	}
+
+	on_deactivate = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.25
+			}
+		}
+	}
+
+	upkeep_modifier = {
+		goods_input_utopia_jet_planes_add = 1
+	}
+	unit_modifier = {
+		unit_occupation_mult = 1
+		military_formation_attrition_risk_mult = -0.2
+		character_battle_condition_charted_terrain_mult = 0.5
+	}
+	ai_weight = {
+		value = 1
+	}
+
+	group = special_weapons
+}
+
+ut_mobilization_option_evac_hospitals = {
+	texture = "gfx/interface/icons/mobilization_options/balloon_recon.dds"
+
+	unlocking_technologies = {
+		casualty_evacuations
+	}
+	possible = {
+		NOT = { scope:military_formation = { has_mobilization_option = mobilization_option:mobilization_option_first_aid } }
+		market ?= {
+			mg:opium ?= {
+				has_potential_supply = yes
+			}
+			mg:tools ?= {
+				has_potential_supply = yes
+			}
+		}
+	}
+	on_activate_while_mobilized = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_to_add_medic_support_tt
+			add_organization = {
+				value = organization
+				multiply = -0.25
+			}
+		}
+	}
+
+	on_deactivate = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_morale_and_organization_when_you_remove_medic_support_tt
+			every_combat_unit = {
+				add_morale = {
+					value = morale
+					multiply = -0.5
+				}
+			}
+			add_organization = {
+				value = organization
+				multiply = -0.25
+			}
+		}
+	}
+	upkeep_modifier = {
+		goods_input_liquor_add = 1
+		goods_input_opium_add = 1
+		goods_input_oil_add = 1
+		goods_input_heavy_machinery_add = 1
+	}
+	unit_modifier = {
+		unit_recovery_rate_add = 0.50
+	}
+	ai_weight = {
+		value = 1
+	}
+
+    group = medic_support
+}

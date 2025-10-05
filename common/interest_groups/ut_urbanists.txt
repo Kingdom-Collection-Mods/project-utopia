@@ -6,7 +6,7 @@
 
 	ideologies = {
 		ideology_urbanist_power_base
-		ideology_urbanist_economy_base
+		#ideology_urbanist_economy_base
 		ideology_urbanist_human_rights_base
 	}
 	

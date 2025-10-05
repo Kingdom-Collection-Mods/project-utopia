@@ -251,13 +251,23 @@
 				}
 			}
 
+			##ai gdp comparison instead of power projection
 			add = {
 				desc = "DIPLOMATIC_ACCEPTANCE_ARMY_STRENGTH"
 				value = "scope:other_country.ai_army_comparison(root)"
 				add = 0.5
 				multiply = 20
 				min = -200
-				max = 50
+				max = 25
+			}
+
+			
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_GDP"
+				value = "scope:other_country.ai_gdp_comparison(scope:root)"
+				multiply = 10
+				min = -100
+				max = 25
 			}
 
 			add = {
@@ -319,7 +329,7 @@
 					value = -50
 				}
 			}
-
+			
 			if = {
 				limit = {
 					"num_alliances_and_defensive_pacts_with_rivals(scope:other_country)" > 0
@@ -995,27 +1005,13 @@ ut_research_assistance_treaty = {
 					}
 				}
 
+				#gdp comparison
 				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_ARMY_STRENGTH"
-					value = "scope:source_country.ai_army_comparison(scope:target_country)"
-					add = 0.5
+					desc = "DIPLOMATIC_ACCEPTANCE_GDP"
+					value = "scope:source_country.ai_gdp_comparison(scope:target_country)"
+					multiply = 10
 					min = -25
-					max = 50
-				}
-
-
-				if = {
-					limit = {
-						is_subject_of = scope:source_country
-					}
-					add = {
-						desc = "DIPLOMATIC_ACCEPTANCE_LIBERTY_DESIRE"
-						value = "scope:target_country.liberty_desire"
-						subtract = 50
-						multiply = 2
-						min = -50
-						max = 25
-					}
+					max = 25
 				}
 
 				add = {
@@ -1372,7 +1368,9 @@ ut_democracy_article = {
 			value = 0
 
 			if = {
-				scope:target_country = { has_modifier = ut_new_dawn_core_democratic_mod }
+				scope:target_country = {
+					has_modifier = ut_new_dawn_core_democratic_mod
+				}
 				add = {
 					desc = "ut_new_dawn_core_democratic_mod"
 					value = 100
@@ -1932,7 +1930,9 @@ ut_communism_article = {
 			value = 0
 
 			if = {
-				scope:target_country = { has_modifier = ut_new_dawn_core_communist_mod }
+				limit = {
+					scope:target_country = { has_modifier = ut_new_dawn_core_communist_mod }
+				}
 				add = {
 					desc = "ut_new_dawn_core_communist_mod"
 					value = 100
@@ -2215,9 +2215,9 @@ ut_communism_article = {
 					add = {
 						desc = "DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION"
 						value = "scope:source_country.ai_ideological_opinion(scope:target_country)"
-						multiply = 0.25
-						max = 10
-						min = -25
+						multiply = 0.1
+						max = 20
+						min = -60
 					}
 				}
 

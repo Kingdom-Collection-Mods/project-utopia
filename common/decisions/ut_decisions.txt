@@ -104,8 +104,14 @@ ut_research_institute_found = {
 				produced_bureaucracy > 5000
 				any_country = {
 					is_ai = no
-					has_variable = skyscraper_var
+					has_variable = ut_research_institute_found_var
 				}
+			}
+			add = 100
+		}
+		if = {
+			limit = {
+				gdp > 200000000 # 200 million
 			}
 			add = 50
 		}
@@ -183,6 +189,12 @@ ut_research_nuclear_power = {
 					is_ai = no
 					has_variable = skyscraper_var
 				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				gdp > 200000000 # 200 million
 			}
 			add = 50
 		}
@@ -311,6 +323,12 @@ ut_research_high_tech_computers = {
 					is_ai = no
 					has_variable = skyscraper_var
 				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				gdp > 400000000 # 200 million
 			}
 			add = 50
 		}
