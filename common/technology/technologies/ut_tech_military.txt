@@ -367,6 +367,7 @@ casualty_evacuations = {
 	}
 
 	modifier = {
+		unit_combat_unit_type_task_force_infantry_defense_add = 5
 	}
 	
 	ai_weight = {
