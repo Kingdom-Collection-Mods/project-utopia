@@ -523,6 +523,7 @@ je_ut_new_dawn_democratic_cultural_values = {
 		}
 		ig:ig_industrialists = {
 			remove_ideology = ideology_plutocratic
+			remove_ideology = ideology_plutocratic_alternative
 			add_ideology = ideology_plutocratic_democratic
 		}
 		set_variable = je_ut_new_dawn_democratic_cultural_values_done
@@ -1055,10 +1056,14 @@ je_ut_communist_one_communist_party = {
 		}
 		every_interest_group = {
 			limit = {
-				has_ideology = ideology:ideology_plutocratic
+				OR = {
+					has_ideology = ideology:ideology_plutocratic_democratic
+					has_ideology = ideology:ideology_plutocratic
+				}
 			}
+			remove_ideology = ideology_plutocratic_democratic
 			remove_ideology = ideology_plutocratic
-			add_ideology = ideology_plutocratic_democratic
+			add_ideology = ideology_plutocratic_alternative
 		}
 		set_variable = je_ut_communist_one_communist_party_done
 	}

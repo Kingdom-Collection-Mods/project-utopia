@@ -269,7 +269,7 @@
  je_ut_new_dawn_autocrat_focus_desc: "Autokratischer Fokus ausgewählt"
  je_ut_new_dawn_communist_focus: "Kommunistischer Fokus"
  je_ut_new_dawn_communist_focus_desc: "Kommunistischer Fokus ausgewählt"
- ut_new_dawn_phase_2_progress_modifier: "x0.5"
+ ut_new_dawn_phase_2_progress_modifier: "x0.25 Multiplier"
 
  ut_new_dawn_core_fascist_mod: "Faschist"
  je_ut_new_dawn_fascist_mod: "Faschist"

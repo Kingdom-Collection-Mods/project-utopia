@@ -269,7 +269,7 @@
  je_ut_new_dawn_autocrat_focus_desc: "Autocratic focus selected"
  je_ut_new_dawn_communist_focus: "Communist Focus"
  je_ut_new_dawn_communist_focus_desc: "Communist focus selected"
- ut_new_dawn_phase_2_progress_modifier: "x0.5"
+ ut_new_dawn_phase_2_progress_modifier: "x0.25 Multiplier"
 
  ut_new_dawn_core_fascist_mod: "Fascist"
  je_ut_new_dawn_fascist_mod: "Fascist"
@@ -530,8 +530,10 @@
  ideology_liberal_democratic_desc: "#lore This group champions individual freedoms, civil rights, and democratic governance. They advocate for free markets, limited government intervention, and the protection of personal liberties. Replaces [GetIdeology('ideology_liberal').GetName]. #!"
  ideology_moralist_democratic: "Moralist-Democratic"
  ideology_moralist_democratic_desc: "#lore This group emphasizes individual freedoms, civil rights, and democratic governance. They advocate for a balanced approach to social and economic policies, promoting both personal liberty and social responsibility. Replaces [GetIdeology('ideology_moralist').GetName]. #!"
- ideology_plutocratic_democratic: "Elitist"
+ ideology_plutocratic_democratic: "Elitist-Democratic"
  ideology_plutocratic_democratic_desc: "#lore This group believes that society should be governed by a wealthy elite who are best equipped to make decisions for the common good. They often prioritize economic growth and stability over social equality. Replaces [GetIdeology('ideology_plutocratic').GetName]. #!"
+ ideology_plutocratic_alternative: "Elitist"
+ ideology_plutocratic_alternative_desc: "#lore This group believes that society should be governed by a wealthy elite who are best equipped to make decisions for the common good. They often prioritize economic growth and stability over social equality. Replaces [GetIdeology('ideology_plutocratic').GetName]. #!"
  ideology_reactionary_democratic: "Conservative"
  ideology_reactionary_democratic_desc: "#lore This group values tradition, social stability, and gradual change. They often support established institutions and may resist rapid social or political reforms. Replaces [GetIdeology('ideology_reactionary').GetName]. #!"
 
@@ -553,16 +555,20 @@
  ut_movement_humanist_name: "Humanist Movement"
  ut_movement_rationalists_name: "Rationalist Movement"
 
- ut_movement_cosmopolitan_unlock_tt: "Unlocks #BOLD Cosmopolitan#! [concept_political_movement]"
- ut_movement_humanist_unlock_tt: "Unlocks #BOLD Humanist#! [concept_political_movement]"
- ut_movement_rationalists_unlock_tt: "Unlocks #BOLD Rationalist#! [concept_political_movement]"
+ ut_movement_cosmopolitan_unlock_tt: "Unlocks [GetIdeology('ut_ideology_cosmopolitan').GetName] [concept_political_movement]"
+ ut_movement_humanist_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_human_rights_base').GetName] [concept_political_movement]"
+ ut_movement_rationalists_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_economy_base').GetName] [concept_political_movement]"
 
  ut_liberal_feminism_leader: "Liberal Feminist"
+ ut_liberal_feminism_leader_desc: "Liberal Feminist work towards Emancipation and advocate for [GetIdeology('ideology_market_liberal').GetName] reforms. More likely if [concept_ut_nd_democrat_core]."
  ut_liberal_feminism_leader_unlock_tt: "Unlocks [GetIdeology('ut_liberal_feminism_leader').GetName] [concept_ideology]"
  ut_radical_feminism_leader: "Radical Feminist"
+ ut_radical_feminism_leader_desc: "Radical Feminist work towards Emancipation and advocate for [GetIdeology('ideology_radical').GetName] reforms. More likely if [concept_ut_nd_communist_core]."
  ut_radical_feminism_leader_unlock_tt: "Unlocks [GetIdeology('ut_radical_feminism_leader').GetName] [concept_ideology]"
  ut_social_feminism_leader: "Social Feminist"
+ ut_social_feminism_leader_desc: "Social Feminist work towards Emancipation and advocate for [GetIdeology('ideology_social_democrat').GetName] reforms. More likely if [concept_ut_nd_democrat_core] or [concept_ut_nd_democrat_core]."
  ut_social_feminism_leader_unlock_tt: "Unlocks [GetIdeology('ut_social_feminism_leader').GetName] [concept_ideology]"
+ ut_increase_feminism_leader_unlock_tt: "Increases chance of all characters to spawn with feminist ideology, if issues are not addressed."
 
  lawgroup_environment_protection: "Environmental Protection"
  lawgroup_environment_protection_desc: "Laws and institutions that protect the environment, promote sustainability, and ensure ecological balance."
@@ -667,7 +673,7 @@
 
  lawgroup_lgbt_rights: "Sexuality - Under Construction"
  lawgroup_lgbt_rights_desc: "Open for feedback and suggestions"
- law_mass_surveillance: "Placeholder"
+ law_mass_surveillance: "Mass Surveillance"
  law_mass_surveillance_desc: "Placeholder"
  law_lgbt_rights_0: "Legal Silence"
  law_lgbt_rights_0_desc: "The law is silent, but expectations are not. Same-sex desire lives in the shadows; some people conform, some live in the closet, others meet discreetly, and families or clergy - not courts do most of the policing.\nOpen for feedback and suggestions."
