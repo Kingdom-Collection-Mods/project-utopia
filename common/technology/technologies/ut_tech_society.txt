@@ -527,7 +527,6 @@ feminism_2 = {
 	}
 
 	on_researched = {
-		custom_tooltip = ut_liberal_feminism_leader_unlock_tt
 		custom_tooltip = ut_radical_feminism_leader_unlock_tt
 		custom_tooltip = ut_social_feminism_leader_unlock_tt
 	}
@@ -550,6 +549,11 @@ feminism_3 = {
 		feminism_2
 	}
 	
+	on_researched = {
+		custom_tooltip = ut_liberal_feminism_leader_unlock_tt
+		custom_tooltip = ut_increase_feminism_leader_unlock_tt
+	}
+
 	ai_weight = {
 		value = 1
 	}
@@ -571,6 +575,18 @@ political_progress_1_cosmopolitan = {
 	on_researched = {
 		custom_tooltip = {
 			text = ut_ideology_cosmopolitan_leader_unlock_tt
+		}
+		if = {
+			limit = {
+				NOT = { has_variable = je_ut_new_dawn_democratic_cultural_values_done }
+			}
+			every_interest_group = {
+				limit = {
+					has_ideology = ideology:ideology_plutocratic
+				}
+				remove_ideology =ideology_plutocratic
+				add_ideology = ideology_plutocratic_alternative
+			}
 		}
 	}
 
@@ -603,6 +619,13 @@ political_progress_2_rationalism = {
 		custom_tooltip = {
 			text = ut_movement_rationalists_unlock_tt
 		}
+		every_interest_group = {
+			limit = {
+				has_ideology = ideology_reactionary
+			}
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_reactionary_era7
+		}
 	}
 }
 
@@ -617,6 +640,16 @@ political_progress_3_neoliberalism = {
 
 	unlocking_technologies = {
 		political_progress_2_rationalism
+	}
+
+	on_researched = {
+		every_interest_group = {
+			limit = {
+				has_ideology = ideology:ideology_laissez_faire
+			}
+			remove_ideology = ideology_laissez_faire
+			add_ideology = ut_ideology_laissez_faire
+		}
 	}
 	
 	ai_weight = {
@@ -760,6 +793,9 @@ anti_discrimination_laws = {
 		# }
 		custom_tooltip = {
 			text = ut_movement_cosmopolitan_unlock_tt
+		}
+		ig:ig_urbanists = {
+			add_ideology = ideology_urbanist_economy_base
 		}
 	}
 
