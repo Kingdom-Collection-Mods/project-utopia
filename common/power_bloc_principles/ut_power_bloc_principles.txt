@@ -540,7 +540,6 @@ ut_principle_advanced_research_6 = {
 
 #Upgrade Freedom of Movement + Transport Infrastructure
 ut_principle_freedom_of_movement_4 = {
-	#todo unlocks principle_transport_3 pm & Universities and Art Academies
 	icon = "gfx/interface/icons/principles_icons/freedom_of_movement.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
 	
@@ -575,7 +574,6 @@ ut_principle_freedom_of_movement_4 = {
 
 
 ut_principle_freedom_of_movement_5 = {
-	#todo unlocks principle_transport_3 pm & Universities and Art Academies
 	icon = "gfx/interface/icons/principles_icons/freedom_of_movement.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
 	
@@ -611,7 +609,6 @@ ut_principle_freedom_of_movement_5 = {
 }
 
 ut_principle_freedom_of_movement_6 = {
-	#todo unlocks principle_transport_3 pm & Universities and Art Academies
 	icon = "gfx/interface/icons/principles_icons/freedom_of_movement.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
 	
