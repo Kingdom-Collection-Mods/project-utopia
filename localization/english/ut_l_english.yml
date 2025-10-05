@@ -891,7 +891,7 @@
  ut_principle_security_bloc_6: "Security Bloc 3"
  ut_principle_security_bloc_6_desc: ""
  
- ut_mobilization_option_cas_jet_planes: "Jet Close Air Support"
+ ut_mobilization_option_cas_jet_planes: "Close Air Support"
  ut_mobilization_option_cas_jet_planes_desc: "Jet-powered close air support aircraft"
  ut_mobilization_option_evac_hospitals: "Casualty Evacuation"
  ut_mobilization_option_evac_hospitals_desc: "Emergency patient evacuation of casualties from a combat zon"
@@ -1278,7 +1278,7 @@
  pm_hi_connected_logistics: "Connected Logistics"
 
  ut_pm_research_department: "Social Science Department"
- ut_pm_research_department_principle_movement: "International Science Department""
+ ut_pm_research_department_principle_movement: "International Science Department"
 
  pm_oil_heavy_machinery_mine: "Heavy Machinery"
  pm_oil_automated_heavy_machinery_mine: "Automated Machinery"
