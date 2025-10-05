@@ -348,6 +348,10 @@ task_forces = {
 		ut_anti_tank
 	}
 	
+	modifier = {
+		unit_combat_unit_type_armored_infantry_offense_add = 5
+	}
+	
 	ai_weight = {
 		value = 1
 	}

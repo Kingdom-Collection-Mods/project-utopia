@@ -519,6 +519,14 @@ unit_combat_unit_type_light_tanks_offense_add={
 	}
 }
 
+unit_combat_unit_type_armored_infantry_offense_add={
+	decimals=0
+	color=good
+	game_data={
+		ai_value=100
+	}
+}
+
 unit_combat_unit_type_motorized_artillery_offense_add={
 	decimals=0
 	color=good

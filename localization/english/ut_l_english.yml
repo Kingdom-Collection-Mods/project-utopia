@@ -1556,5 +1556,7 @@
  unit_combat_unit_type_light_tanks_offense_add_desc: "$combat_unit_type_light_tanks$ $unit_offense_add$"
  unit_combat_unit_type_motorized_artillery_offense_add: "$combat_unit_type_motorized_artillery$ $unit_offense_add$"
  unit_combat_unit_type_motorized_artillery_offense_add_desc: "$combat_unit_type_motorized_artillery$ $unit_offense_add$"
+ unit_combat_unit_type_armored_infantry_offense_add: "$combat_unit_type_armored_infantry$ $unit_offense_add$"
+ unit_combat_unit_type_armored_infantry_offense_add_desc: "$combat_unit_type_armored_infantry$ $unit_offense_add$"
  unit_combat_unit_type_modern_submarine_offense_add: "$combat_unit_type_modern_submarine$ $unit_offense_add$"
  unit_combat_unit_type_modern_submarine_offense_add_desc: "$combat_unit_type_modern_submarine$ $unit_offense_add$"

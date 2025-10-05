@@ -461,6 +461,7 @@ pm_truck_production = {
 	
 	unlocking_technologies = { 
 		trucks_era_analog
+		ut_tank_diesel_engine
 	}
 	
 	building_modifiers = {
