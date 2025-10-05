@@ -565,13 +565,13 @@
  ut_movement_rationalists_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_economy_base').GetName] [concept_political_movement]"
 
  ut_liberal_feminism_leader: "Liberal Feminist"
- ut_liberal_feminism_leader_desc: "Liberal Feminist work towards Emancipation and advocate for [GetIdeology('ideology_market_liberal').GetName] reforms. More likely if [concept_ut_nd_democrat_core]."
+ ut_liberal_feminism_leader_desc: "Liberal Feminists work towards Emancipation and advocate for [GetIdeology('ideology_market_liberal').GetName] reforms. More likely if [concept_ut_nd_democrat_core]."
  ut_liberal_feminism_leader_unlock_tt: "Unlocks [GetIdeology('ut_liberal_feminism_leader').GetName] [concept_ideology]"
  ut_radical_feminism_leader: "Radical Feminist"
- ut_radical_feminism_leader_desc: "Radical Feminist work towards Emancipation and advocate for [GetIdeology('ideology_radical').GetName] reforms. More likely if [concept_ut_nd_communist_core]."
+ ut_radical_feminism_leader_desc: "Radical Feminists work towards Emancipation and advocate for [GetIdeology('ideology_radical').GetName] reforms. More likely if [concept_ut_nd_communist_core]."
  ut_radical_feminism_leader_unlock_tt: "Unlocks [GetIdeology('ut_radical_feminism_leader').GetName] [concept_ideology]"
  ut_social_feminism_leader: "Social Feminist"
- ut_social_feminism_leader_desc: "Social Feminist work towards Emancipation and advocate for [GetIdeology('ideology_social_democrat').GetName] reforms. More likely if [concept_ut_nd_democrat_core] or [concept_ut_nd_democrat_core]."
+ ut_social_feminism_leader_desc: "Social Feminists work towards Emancipation and advocate for [GetIdeology('ideology_social_democrat').GetName] reforms. More likely if [concept_ut_nd_democrat_core] or [concept_ut_nd_democrat_core]."
  ut_social_feminism_leader_unlock_tt: "Unlocks [GetIdeology('ut_social_feminism_leader').GetName] [concept_ideology]"
  ut_increase_feminism_leader_unlock_tt: "Increases chance of all characters to spawn with feminist ideology, if issues are not addressed."
 
@@ -894,7 +894,7 @@
  ut_mobilization_option_cas_jet_planes: "Close Air Support"
  ut_mobilization_option_cas_jet_planes_desc: "Jet-powered close air support aircraft"
  ut_mobilization_option_evac_hospitals: "Casualty Evacuation"
- ut_mobilization_option_evac_hospitals_desc: "Emergency patient evacuation of casualties from a combat zon"
+ ut_mobilization_option_evac_hospitals_desc: "Emergency patient evacuation of casualties from a combat zone."
 
 # Tech Production
  machinery_farming: "Cabin Tractors"

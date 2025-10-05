@@ -265,9 +265,6 @@ ut_pm_research_department_principle_movement = {
 		workforce_scaled = {
 			state_pop_qualifications_mult = 0.25
 		}
-	}
-
-	state_modifiers = {
 		unscaled = {
 			state_migration_pull_mult = 0.25
 			state_pop_qualifications_mult = 0.25

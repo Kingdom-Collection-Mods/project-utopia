@@ -1305,8 +1305,10 @@ ut_radical_feminism_leader = {
 		OR = {
 			AND = {
 				has_modifier = ut_new_dawn_core_communist_mod
-				is_interest_group_type = ig_trade_unions
-				is_interest_group_type = ig_urbanists
+				OR  = {
+					is_interest_group_type = ig_trade_unions
+					is_interest_group_type = ig_urbanists
+				}
 			}
 			ideology_radical_valid_trigger = yes
 		}
