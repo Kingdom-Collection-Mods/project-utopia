@@ -161,7 +161,7 @@ ut_pm_film_industry_art_principle_movement  = {
 			goods_input_electricity_add = 5 # 150
 			goods_input_electronics_add = 4
 
-			goods_output_fine_art_add = 12 # 2000
+			goods_output_fine_art_add = 14 # 2000
 		}
 	}
 
