@@ -1,4 +1,4 @@
-ig_urbanists = {
+﻿ig_urbanists = {
 	color = hsv{ 0.55 0.4 0.9 }
 	texture = "gfx/interface/icons/ig_icons/urbanists.dds"
 	layer = "revolution_dynamic_intelligentsia"
@@ -13,6 +13,13 @@ ig_urbanists = {
 	character_ideologies = {
 		ideology_moderate
 		ut_ideology_environmentalist_leader
+		ut_ideology_cosmopolitan_leader
+		ut_ideology_autocratic_leader
+		ut_ideology_national_socialist_leader
+		ut_ideology_economical_corporatist_leader
+		ut_liberal_feminism_leader
+		ut_radical_feminism_leader
+		ut_social_feminism_leader
 		ideology_authoritarian
 		ideology_corporatist_leader
 		ideology_liberal_leader
