@@ -522,7 +522,6 @@ ut_war_planes = {
 	}
 	
 	modifier = {
-		unit_occupation_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -557,7 +556,6 @@ ut_war_planes_2_1 = {
 	}
 	
 	modifier = {
-		unit_occupation_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -595,7 +593,8 @@ ut_modern_planes = {
 	
 	
 	modifier = {
-		unit_occupation_mult = 0.2
+		military_formation_attrition_risk_mult = -0.1
+		character_battle_condition_good_visibility_mult = 0.1
 	}
 
 	ai_weight = {
