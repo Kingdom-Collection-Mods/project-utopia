@@ -316,6 +316,43 @@ ideology_reactionary_democratic = {
 	}
 }
 
+#IG Burgeois Authoritarian Communist
+ideology_reactionary_communist = {
+	icon = "gfx/interface/icons/ideology_icons/reactionary.dds"
+	
+	lawgroup_governance_principles = {
+		law_monarchy = neutral
+		law_theocracy = neutral		
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_corporate_state = approve
+		law_council_republic = neutral
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = neutral
+		law_neo_ethno_state = approve
+		law_national_supremacy = approve
+		law_racial_segregation = approve
+		law_cultural_exclusion = approve
+		law_multicultural = neutral	
+		law_multicultural_globalism = disapprove	
+	}
+
+	lawgroup_migration = {
+		law_closed_borders = neutral
+		law_migration_controls = strongly_approve
+		law_registration_process = approve
+		law_no_migration_controls = disapprove
+	}
+
+	lawgroup_environment_protection = {
+		law_no_environment_protection = neutral
+		law_environment_protection_institute = approve
+		law_environment_protection_institute_two = neutral
+	}
+}
+
 #IG Burgeois Era 7/Non-Democratic
 ut_ideology_reactionary_alternative = {
 	icon = "gfx/interface/icons/ideology_icons/reactionary.dds"
@@ -445,7 +482,7 @@ ideology_socialist_democratic = {
 	}
 }
 
-
+#todo maybe for fascist?
 ideology_republican_alternative = {
 	icon = "gfx/interface/icons/ideology_icons/republican.dds"
 	#todo add anti technocrat character ideology trigger by events

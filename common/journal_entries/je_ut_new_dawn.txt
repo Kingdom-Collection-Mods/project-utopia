@@ -771,6 +771,7 @@ je_ut_new_dawn_communist = {
 		NOT = {
 			any_country = {
 				NOT = { has_law_or_variant = law_type:law_cooperative_ownership }
+				average_sol < 25
 			}
 		}
 	}

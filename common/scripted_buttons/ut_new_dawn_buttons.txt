@@ -424,7 +424,19 @@ je_ut_new_dawn_democratic_spirit = {
 			remove_ideology = ideology_liberal_modern
 			add_ideology = ideology_liberal_democratic
 		}
-		ig:ig_petty_bourgeoisie = {
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology:ideology_reactionary
+					has_ideology = ideology:ideology_reactionary_communist
+					has_ideology = ideology:ut_ideology_reactionary_alternative
+				}
+			}
+			hidden_effect = {
+				remove_ideology = ideology_reactionary
+				remove_ideology = ideology_reactionary_communist
+				remove_ideology = ut_ideology_reactionary_alternative
+			}
 			remove_ideology = ideology_reactionary
 			add_ideology = ideology_reactionary_democratic
 		}
@@ -1018,7 +1030,6 @@ je_ut_communist_one_communist_party = {
 	desc = "je_ut_communist_one_communist_party_desc"
 
 	possible = {
-		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_communist = { 
@@ -1041,10 +1052,18 @@ je_ut_communist_one_communist_party = {
 	effect = {
 		every_interest_group = {
 			limit = {
-					has_ideology = ideology:ideology_republican
+				OR = {
+					has_ideology = ideology:ideology_reactionary_democratic
+					has_ideology = ideology:ideology_reactionary
+					has_ideology = ideology:ut_ideology_reactionary_alternative
+				}
 			}
-			remove_ideology = ideology_republican
-			add_ideology = ideology_republican_alternative
+			hidden_effect = {
+				remove_ideology = ideology_reactionary_democratic
+				remove_ideology = ut_ideology_reactionary_alternative
+			}
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_reactionary_communist
 		}
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_spend_tt
@@ -1096,7 +1115,7 @@ je_ut_communist_one_block = {
 			}
 		}
 		add_modifier = {
-			name = je_ut_new_dawn_communist_one_bock_mod
+			name = je_ut_new_dawn_communist_one_block_mod
 		}
 		set_variable = je_ut_communist_one_block_done
 	}
@@ -1152,7 +1171,6 @@ je_ut_communist_a_communist_party = {
 	desc = "je_ut_communist_a_communist_party_desc"
 
 	possible = {
-		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_communist = { 
@@ -1173,6 +1191,13 @@ je_ut_communist_a_communist_party = {
 			je:je_ut_new_dawn_communist = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
+		}
+		every_interest_group = {
+			limit = {
+				has_ideology = ideology:ideology_plutocratic
+			}
+			remove_ideology =ideology_plutocratic
+			add_ideology = ideology_plutocratic_alternative
 		}
 		every_interest_group = {
 			limit = {
