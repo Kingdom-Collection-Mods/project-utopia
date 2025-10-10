@@ -152,7 +152,8 @@
  je_ut_new_dawn_immediate_tt: "$je_ut_new_dawn_reason$"
  je_ut_new_dawn_global_started_tt: "Any country has started the #b New Dawn#! event chain"
  je_ut_new_dawn_condition_tt: "Completed [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_communist_core], or [concept_ut_nd_fascist_core] [concept_ut_nd_path_to_utopia]"
- je_ut_new_dawn_effect_tt: "Achieved [concept_ut_nd_utopia]?"
+ je_ut_new_dawn_p2_condition_tt: "Achieved [concept_ut_nd_utopia]?"
+ je_ut_new_dawn_effect_tt: "[concept_ut_nd_utopia]!"
  new_dawn_mod: "New Dawn"
  new_dawn_phase_2_mod: "New Dawn: Reinforce Ideology"
 
@@ -316,6 +317,7 @@
  new_dawn_ideology_required_points_spend_tt: "Consumes #r [SCOPE.ScriptValue('new_dawn_ideology_spend_points')]#! #v #![concept_ut_nd_progress_points] to activate this step"
  new_dawn_ideology_upper_bound_tt: "Has #v [SCOPE.ScriptValue('new_dawn_ideology_upper_bound')] #![concept_ut_nd_progress_points]"
  new_dawn_ideology_milestone_done_tt: "Has #v not#! completed the [Concept('concept_ut_nd_milestones', 'Milestone')]"
+ new_dawn_ideology_previous_milestone_done_tt: "Has #v completed#! the previous [Concept('concept_ut_nd_milestones', 'Milestone')]"
 
  je_ut_new_dawn_democratic_cultural_values: "Democratic Cultural Values"
  je_ut_new_dawn_democratic_cultural_values_desc: "A democratic foundation can only thrive on cultural values that respect pluralism and individual freedoms. Leading figures in business and religion are turning toward a more democratic worldview."
@@ -377,14 +379,20 @@
 
  je_ut_communist_one_communist_party: "Command Economy"
  je_ut_communist_one_communist_party_desc: ""
+ je_ut_communist_one_communist_party_exclusive_tt: "Has #bold not#! started #bold Cooperative Economy#! path"
  je_ut_communist_a_communist_party: "Cooperative Economy"
  je_ut_communist_a_communist_party_desc: ""
- je_ut_communist_one_block: "Council Republics"
+ je_ut_communist_a_communist_party_exclusive_tt: "Has #bold not#! started #bold Command Economy#! path"
+ je_ut_communist_one_block: "Council Union"
+ je_ut_communist_one_block_desc: ""
+ je_ut_new_dawn_communist_one_bock_mod: "Council Union"
  je_ut_communist_one_block_desc: ""
  je_ut_communist_one_people: "Workers' Unity"
  je_ut_communist_one_people_desc: ""
- je_ut_communist_final: "Classless Society"
- je_ut_communist_final_desc: ""
+ je_ut_communist_socialist_expansion: "Socialist Expansion"
+ je_ut_communist_socialist_expansion_desc: ""
+ je_ut_communist_socialist_expansion_mod: "Socialist Expansion
+ je_ut_communist_world_revolution: "World Revolution"
 
  je_ut_new_dawn_fascist: "Fascism"
  je_ut_new_dawn_fascist_reason: "#italic - [Concept('concept_ut_nd_fascist_core', 'Fascist')]#!"
@@ -535,6 +543,8 @@
  ideology_plutocratic_democratic_desc: "#lore This group believes that society should be governed by a wealthy elite who are best equipped to make decisions for the common good. They often prioritize economic growth and stability over social equality. Replaces [GetIdeology('ideology_plutocratic').GetName]. #!"
  ideology_plutocratic_alternative: "Elitist"
  ideology_plutocratic_alternative_desc: "#lore This group believes that society should be governed by a wealthy elite who are best equipped to make decisions for the common good. They often prioritize economic growth and stability over social equality. Replaces [GetIdeology('ideology_plutocratic').GetName]. #!"
+ ideology_republican_alternative: "Technocrats"
+ ideology_republican_alternative_desc: "This group believes in governance by experts and technocrats, emphasizing efficiency and rational decision-making. Replaces [GetIdeology('ideology_republican').GetName]. (Lost when Path is abandoned)#!"
  ideology_reactionary_democratic: "Conservative"
  ideology_reactionary_democratic_desc: "#lore This group values tradition, social stability, and gradual change. They often support established institutions and may resist rapid social or political reforms. Replaces [GetIdeology('ideology_reactionary').GetName]. [concept_ut_nd_democrat_core] variation. #!"
  ut_ideology_reactionary_alternative: "Conservative"
@@ -808,9 +818,11 @@
  ut_fund_ideology_effect: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
 
  ut_has_new_dawn_progress_100: "Has #b 100#! [concept_ut_nd_progress_points]"
+ ut_has_new_dawn_progress_75: "Has #b 75#! [concept_ut_nd_progress_points]"
  ut_has_new_dawn_progress_50: "Has #b 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_50: "Gains #b 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_50: "Loses #r 50#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_neg_25: "Loses #r 25#! [concept_ut_nd_progress_points]"
 
  ut_force_become_subject: "Collectivize Council Republics"
  ut_force_become_subject_desc: "Force the target power bloc member to become your subject and join the Council Republic. They must be [GetLawType('law_council_republic').GetName] or [concept_ut_nd_communist_core] themselves."

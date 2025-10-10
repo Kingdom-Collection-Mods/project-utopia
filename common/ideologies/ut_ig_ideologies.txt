@@ -445,6 +445,33 @@ ideology_socialist_democratic = {
 	}
 }
 
+
+ideology_republican_alternative = {
+	icon = "gfx/interface/icons/ideology_icons/republican.dds"
+	#todo add anti technocrat character ideology trigger by events
+	
+	lawgroup_governance_principles = {	
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_corporate_state = strongly_approve
+		law_monarchy = neutral	
+		law_theocracy = neutral
+		law_council_republic = approve
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = approve
+		law_census_voting = approve
+		law_wealth_voting = neutral
+		law_landed_voting = disapprove
+		law_single_party_state = strongly_approve
+		law_technocracy = approve
+		law_oligarchy = disapprove
+		law_autocracy = disapprove
+		law_anarchy = strongly_disapprove
+	}	
+}
+
 #IG Unions Fascist
 #character ideology? draft?
 
