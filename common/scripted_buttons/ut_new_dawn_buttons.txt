@@ -1096,8 +1096,10 @@ je_ut_communist_one_block = {
 		}
 		is_power_bloc_leader = yes
 		power_bloc ?= {
-			any_power_bloc_member = {
-				is_subject_of = root
+			NOT = {
+				any_power_bloc_member = {
+					NOT = { is_subject_of = root }
+				}
 			}
 		}
 		
