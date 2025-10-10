@@ -1,4 +1,4 @@
-ig_urbanists = {
+﻿ig_urbanists = {
 	color = hsv{ 0.55 0.4 0.9 }
 	texture = "gfx/interface/icons/ig_icons/urbanists.dds"
 	layer = "revolution_dynamic_intelligentsia"
@@ -162,6 +162,23 @@ ig_urbanists = {
 		}
 
 		add = {
+			desc = "POP_ACADEMICS"
+			if = {
+				limit = {
+					owner = {
+						OR = {
+							has_law_or_variant = law_type:law_multicultural
+							has_law_or_variant = law_type:law_multicultural_globalism
+						}
+					}
+					is_pop_type = academics
+				}
+				value = 50
+			}
+		}
+		
+
+		add = {
 			desc = "POP_BUREAUCRATS"
 			if = {
 				limit = {
@@ -172,7 +189,7 @@ ig_urbanists = {
 		}
 
 		add = {
-			desc = "POP_CLERKS"
+			desc = "POP_MACHINISTS"
 			if = {
 				limit = {
 					is_pop_type = machinists
@@ -195,9 +212,26 @@ ig_urbanists = {
 			desc = "ADMINISTRATION_ROLE"
 			if = {
 				limit = {
-					is_pop_type = capitalists
+					owner = {
+						OR = {
+							has_law_or_variant = law_type:law_multicultural
+							has_law_or_variant = law_type:law_multicultural_globalism
+						}
+					}
+					OR = {
+						is_pop_type = aristocrats
+						is_pop_type = clergymen
+						is_pop_type = capitalists
+					}
+					OR = {
+						pop_employment_building_group = bg_service
+						pop_employment_building_group = bg_arts
+						pop_employment_building_group = bg_government
+						pop_employment_building_group = bg_private_infrastructure
+						pop_employment_building_group = bg_financial_districts
+					}
 				}
-				value = 25
+				value = 125
 			}
 		}
 
