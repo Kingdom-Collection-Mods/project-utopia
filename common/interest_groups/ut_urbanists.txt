@@ -1,4 +1,4 @@
-﻿ig_urbanists = {
+ig_urbanists = {
 	color = hsv{ 0.55 0.4 0.9 }
 	texture = "gfx/interface/icons/ig_icons/urbanists.dds"
 	layer = "revolution_dynamic_intelligentsia"
@@ -88,6 +88,28 @@
 
 	pop_weight = {
 		value = 0
+		
+		if = {
+			limit = {
+				strata = lower
+				standard_of_living > 10
+			}
+			add = {
+				desc = "POP_BASE_ATTRACTION"
+				value = standard_of_living
+				multiply = 2
+			}
+		}
+		else_if = {
+			limit = {
+				strata = middle
+			}
+			add = {
+				desc = "POP_BASE_ATTRACTION"
+				value = standard_of_living
+				multiply = 2
+			}
+		}
 
 		add = {
 			desc = "POP_SERVICE_WORKERS"
@@ -151,7 +173,7 @@
 
 		if = {
 			limit = {
-				literacy_rate >= 0.90
+				literacy_rate >= 0.80
 			}
 			add = {
 				desc = "POP_LITERACY"
@@ -172,20 +194,23 @@
 		}
 
 		
-		add = {
-			desc = "URBAN_POP"
-			if = {
-				limit = {
-					NOR = {
-						pop_employment_building_group = bg_agriculture
-						pop_employment_building_group = bg_ranching
-						pop_employment_building_group = bg_plantations
-					}
+		if = {
+			limit = {
+				standard_of_living >= 10
+				NOR = {
+					pop_employment_building_group = bg_agriculture
+					pop_employment_building_group = bg_ranching
+					pop_employment_building_group = bg_plantations
+					pop_employment_building_group = bg_extraction
 				}
-				value = 25
-				add = this.standard_of_living
+			}
+			add = {
+				desc = "URBAN_POP"
+				value = standard_of_living
+				multiply = 2
 			}
 		}
+
 
 		multiply = {
 			desc = "LEADER_POPULARITY"
