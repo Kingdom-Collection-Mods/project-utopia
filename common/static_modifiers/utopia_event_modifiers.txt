@@ -175,7 +175,6 @@ ut_new_dawn_core_fascist_mod = {
 
 je_ut_new_dawn_communist_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_communist.dds
-	country_leader_has_law_enactment_success_mult = 0.2
 	interest_group_ig_trade_unions_pop_attraction_mult = 0.1
 	country_society_tech_research_speed_mult = 0.05
 }
@@ -183,7 +182,13 @@ je_ut_new_dawn_communist_mod = {
 ut_new_dawn_core_communist_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_communist.dds
 }
+
 je_ut_new_dawn_communist_one_bock_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_leader_has_law_enactment_success_mult = 0.2
+}
+
+je_ut_new_dawn_communist_one_people_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	country_leverage_generation_mult = 0.25
 }

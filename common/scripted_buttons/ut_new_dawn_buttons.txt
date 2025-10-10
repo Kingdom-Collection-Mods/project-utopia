@@ -1052,11 +1052,8 @@ je_ut_communist_one_communist_party = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
 		}
-		if = {
-			limit = {
-				has_law = law_type:law_council_republic
-			}
-			activate_law = law_type:ut_law_council_presidium
+		custom_tooltip = {
+			text = je_ut_communist_one_communist_party_effect_tt
 		}
 		set_variable = je_ut_communist_one_communist_party_done
 	}
@@ -1145,7 +1142,7 @@ je_ut_communist_socialist_expansion = {
 		add_modifier = {
 			name = je_ut_communist_socialist_expansion_mod
 		}
-		set_variable = je_ut_communist_final_done
+		set_variable = je_ut_communist_socialist_expansion_done
 	}
 }
 
@@ -1223,11 +1220,8 @@ je_ut_communist_one_people = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
 		}
-		if = {
-			limit = {
-				has_law = law_type:law_council_republic
-			}
-			activate_law = law_type:ut_law_international_council
+		add_modifier = {
+			name = je_ut_new_dawn_communist_one_people_mod
 		}
 		set_variable = je_ut_communist_one_people_done
 	}
@@ -1257,7 +1251,7 @@ je_ut_communist_world_revolution = {
 		average_sol > 25
 		NOT = {
 			any_country = {
-				global_country_ranking < 10
+				country_rank >= rank_value:great_power
 				NOT = { has_law = law_type:law_cooperative_ownership }
 			}
 		}
@@ -1270,6 +1264,9 @@ je_ut_communist_world_revolution = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
 		}
-		set_variable = je_ut_communist_final_done
+		custom_tooltip = {
+			text = je_ut_communist_world_revolution_effect_tt
+		}
+		set_variable = je_ut_communist_world_revolution_done
 	}
 }
