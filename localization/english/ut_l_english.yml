@@ -261,7 +261,7 @@
  ut_nd_communist_progress_from_events: "Events and Other Effects"
  ut_new_dawn_communist_status: "Communist Ideas Are Shaping the Discourse"
  concept_ut_nd_communist_characters: "Communist Characters"
- concept_ut_nd_communist_characters_desc: "Communist character ideologies are: [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_vanguardist').GetName], and [GetIdeology('ideology_nihilist').GetName].\nIf Communist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_land_reformer').GetName], and [GetIdeology('ideology_modernizer_leader').GetName]."
+ concept_ut_nd_communist_characters_desc: "Communist character ideologies are: [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_vanguardist').GetName], and [GetIdeology('ideology_nihilist').GetName].\nIf Communist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ideology_positivist').GetName]."
 
  je_ut_new_dawn_democrat_focus: "Democratic Focus"
  je_ut_new_dawn_democrat_focus_desc: "Democratic focus selected"
@@ -281,6 +281,12 @@
  je_ut_new_dawn_autocratic_mod: "Autocratic"
  ut_new_dawn_core_democratic_mod: "Democratic"
  je_ut_new_dawn_democratic_mod: "Democratic"
+ 
+ ut_new_dawn_list_entry_start: "Ideologies:"
+ ut_new_dawn_fascist_list_entry: "[THIS.GetCountry.GetName] @ut_nd_fascist!"
+ ut_new_dawn_communist_list_entry: "[THIS.GetCountry.GetName] @ut_nd_communist!"
+ ut_new_dawn_democratic_list_entry: "[THIS.GetCountry.GetName] @ut_nd_democrat!"
+ ut_new_dawn_autocratic_list_entry: "[THIS.GetCountry.GetName] @ut_nd_autocrat!"
 
  ut_new_dawn_democrat_focus: "Democratic Focus"
  ut_new_dawn_democrat_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities] and [concept_ut_nd_milestones].#!"
@@ -336,7 +342,7 @@
  je_ut_new_dawn_democratic_final_desc: "The culmination of democratic ideals and practices, leading to a harmonious and just society."
 
  je_ut_new_dawn_autocratic: "Autocratic System"
- je_ut_new_dawn_autocratic_reason: "The people demand order, stability, and strong leadership."
+ je_ut_new_dawn_autocratic_reason: "The people demand order, stability, and strong leadership. \n #italic - [Concept('concept_ut_nd_autocrat_core', 'Autocracies')] have no [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_autocratic_complete_condition_tt: "There is no Autocratic Utopia, the entry can not be completed. They have access to repeatable actions instead."
 
  je_ut_new_dawn_emergency_powers: "Emergency Powers"
@@ -417,7 +423,7 @@
  ut_nd_autocrat_progress_from_focus: "Autocratic Focus"
  ut_nd_autocrat_progress_from_events: "Events and Other Effects"
  concept_ut_nd_autocrat_characters: "Autocratic Characters"
- concept_ut_nd_autocrat_characters_desc: "Autocratic character ideologies are: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], and [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nIf Autocrat [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], [GetIdeology('ideology_positivist').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], and [GetIdeology('ideology_luddite').GetName]."
+ concept_ut_nd_autocrat_characters_desc: "Autocratic character ideologies are: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], and [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nIf Autocrat [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], and [GetIdeology('ideology_corporatist_leader').GetName]."
  ut_new_dawn_autocrat_status: "Autocratic Ideas Shape the Discourse"
 
 #Core Ideology concepts
@@ -453,7 +459,7 @@
  ut_nd_fascist_progress_from_focus: "Fascist Focus"
  ut_nd_fascist_progress_from_events: "Events and Other Effects"
  concept_ut_nd_fascist_characters: "Fascist Characters"
- concept_ut_nd_fascist_characters_desc: "Fascist character ideologies are: [GetIdeology('ideology_ethno_nationalist').GetName] and [GetIdeology('ideology_fascist').GetName].\nIf Fascist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], and [GetIdeology('ideology_modernizer_leader').GetName]."
+ concept_ut_nd_fascist_characters_desc: "Fascist character ideologies are: [GetIdeology('ideology_ethno_nationalist').GetName] and [GetIdeology('ideology_fascist').GetName].\nIf Fascist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ut_ideology_national_socialist_leader').GetName]."
  ut_new_dawn_fascist_status: "Fascist Ideas Shape the Discourse"
 
  ut_nd_multiplier_from_service_workers_0: "x0.5 Multiplier from less than 1% $service_workers$\n$ut_nd_mp_sw_note$"
@@ -574,11 +580,15 @@
  ut_movement_cosmopolitan_name: "Cosmopolitan Movement"
  ut_movement_humanist_name: "Humanist Movement"
  ut_movement_rationalists_name: "Rationalist Movement"
+ ut_movement_conservative_name: "Conservative Movement"
+ ut_movement_sexual_liberation_name: "Sexual Liberation Movement"
 
  ut_movement_cosmopolitan_unlock_tt: "Unlocks [GetIdeology('ut_ideology_cosmopolitan').GetName] [concept_political_movement]"
  ut_ig_ideology_urbanist_economy_base_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_economy_base').GetName] for $ig_urbanists$"
  ut_movement_humanist_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_human_rights_base').GetName] [concept_political_movement]"
  ut_movement_rationalists_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_economy_base').GetName] [concept_political_movement]"
+ ut_movement_conservative_unlock_tt: "Unlocks [GetIdeology('ut_ideology_reactionary_alternative').GetName] [concept_political_movement]"
+ ut_movement_sexual_liberation_unlock_tt: "Unlocks Sexual Liberation [concept_political_movement] (wip)"
 
  ut_liberal_feminism_leader: "Liberal Feminist"
  ut_liberal_feminism_leader_desc: "Liberal Feminists work towards Emancipation and advocate for [GetIdeology('ideology_market_liberal').GetName] reforms. More likely if [concept_ut_nd_democrat_core]."
