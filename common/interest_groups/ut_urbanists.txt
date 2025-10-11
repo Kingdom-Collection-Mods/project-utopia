@@ -150,14 +150,14 @@
 			}
 		}
 
-		
+		#todo investigate currently intelligentsia small for academics but both small
 		add = {
 			desc = "POP_ACADEMICS"
 			if = {
 				limit = {
 					is_pop_type = academics
 				}
-				value = 100
+				value = 50
 			}
 		}
 
