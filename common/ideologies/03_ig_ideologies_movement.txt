@@ -751,12 +751,11 @@ ideology_feminist_movement = {
 
 	lawgroup_rights_of_women = {
 		law_womens_suffrage = approve
-		law_women_in_the_workplace = approve
-		law_women_own_property = neutral
+		law_women_in_the_workplace = neutral
+		law_women_own_property = disapprove
 		law_no_womens_rights = strongly_disapprove
 		law_affirmative_equality = strongly_approve
-		law_equal_rights_for_women = strongly_approve
-		
+		law_equal_rights_for_women = strongly_approve	
 	}
 }
 
