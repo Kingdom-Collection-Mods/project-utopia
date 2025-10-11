@@ -54,7 +54,7 @@
 	}
 	
 	interest_group_leader_weight = {
-		value = 100
+		value = 50
 		# very angry IG's more likely to turn to more radical socialism
 		if = {
 			limit = {
