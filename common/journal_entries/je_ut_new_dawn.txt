@@ -78,6 +78,32 @@
 			text = je_ut_new_dawn_effect_tt
 			ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 		}
+		if = {
+			limit = {
+				is_player = yes
+			}
+			custom_tooltip = "ut_new_dawn_list_entry_start"
+            every_in_global_list = {
+                variable = ut_new_dawn_autocratic_list
+
+                custom_tooltip = "ut_new_dawn_autocratic_list_entry" # for each print a line
+            }
+            every_in_global_list = {
+                variable = ut_new_dawn_democratic_list
+
+                custom_tooltip = "ut_new_dawn_democratic_list_entry" # for each print a line
+            }
+            every_in_global_list = {
+                variable = ut_new_dawn_fascist_list
+
+                custom_tooltip = "ut_new_dawn_fascist_list_entry" # for each print a line
+            }
+            every_in_global_list = {
+                variable = ut_new_dawn_communist_list
+
+                custom_tooltip = "ut_new_dawn_communist_list_entry" # for each print a line
+            }
+		}
 	}
 
 	status_desc = {
@@ -291,13 +317,16 @@ je_ut_new_dawn_democratic = {
 			}
 			activate_law = law_type:ut_law_monarchy_democratic
 		}
+		add_to_global_variable_list = {
+			name = ut_new_dawn_democratic_list
+			target = root
+		}
 	}
 	
 	scripted_button = je_ut_new_dawn_democratic_spirit
 	scripted_button = je_ut_new_dawn_democratic_cultural_values
 	scripted_button = je_ut_new_dawn_democratic_power_bloc
 	scripted_button = je_ut_new_dawn_democratic_fair_elections
-	scripted_button = je_ut_new_dawn_democratic_final
 
 	
 	scripted_progress_bar = je_ut_new_dawn_democratic_points_bar
@@ -315,10 +344,10 @@ je_ut_new_dawn_democratic = {
 			has_variable = je_ut_new_dawn_democratic_fair_elections_done
 			has_variable = je_ut_new_dawn_democratic_final_done
 		}
-
+		average_sol > 50
 		NOT = {
 			any_country = {
-				average_sol < 30
+				average_sol < 25
 				NOT = { has_law_or_variant = law_type:law_universal_suffrage }
 			}
 		}
@@ -375,6 +404,20 @@ je_ut_new_dawn_democratic = {
 					name = ut_new_dawn_core_democratic_mod
 				}
 			}
+			if = {
+				limit = {
+					NOT = {
+						is_target_in_global_variable_list = {
+							name = ut_new_dawn_democratic_list
+							target = root
+						}
+					}
+				}
+				add_to_global_variable_list = {
+					name = ut_new_dawn_democratic_list
+					target = root
+				}
+			}
 		}
 		random_events = {
 			400 = 0
@@ -402,6 +445,10 @@ je_ut_new_dawn_democratic = {
 				value = -120
 				name = ut_new_dawn_democrat_bar
 			}
+		}
+		remove_list_global_variable = {
+			name = ut_new_dawn_democratic_list
+			target = root
 		}
 	}
 
@@ -448,6 +495,10 @@ je_ut_new_dawn_autocratic = {
 			add_modifier = {
 				name = ut_new_dawn_core_autocratic_mod
 			}
+		}
+		add_to_global_variable_list = {
+			name = ut_new_dawn_autocratic_list
+			target = root
 		}
 	}
 
@@ -501,6 +552,21 @@ je_ut_new_dawn_autocratic = {
 					name = ut_new_dawn_core_autocratic_mod
 				}
 			}
+			
+			if = {
+				limit = {
+					NOT = {
+						is_target_in_global_variable_list = {
+							name = ut_new_dawn_autocratic_list
+							target = root
+						}
+					}
+				}
+				add_to_global_variable_list = {
+					name = ut_new_dawn_autocratic_list
+					target = root
+				}
+			}
 		}
 		random_events = {
 			400 = 0
@@ -527,6 +593,10 @@ je_ut_new_dawn_autocratic = {
 				value = -120
 				name = ut_new_dawn_autocrat_bar
 			}
+		}
+		remove_list_global_variable = {
+			name = ut_new_dawn_autocratic_list
+			target = root
 		}
 	}
 
@@ -567,6 +637,10 @@ je_ut_new_dawn_fascist = {
 			add_modifier = {
 				name = ut_new_dawn_core_fascist_mod
 			}
+		}
+		add_to_global_variable_list = {
+			name = ut_new_dawn_fascist_list
+			target = root
 		}
 	}
 	
@@ -682,6 +756,21 @@ je_ut_new_dawn_fascist = {
 					name = ut_new_dawn_core_fascist_mod
 				}
 			}
+			
+			if = {
+				limit = {
+					NOT = {
+						is_target_in_global_variable_list = {
+							name = ut_new_dawn_fascist_list
+							target = root
+						}
+					}
+				}
+				add_to_global_variable_list = {
+					name = ut_new_dawn_fascist_list
+					target = root
+				}
+			}
 		}
 		random_events = {
 			400 = 0
@@ -708,6 +797,10 @@ je_ut_new_dawn_fascist = {
 				value = -120
 				name = ut_new_dawn_fascist_bar
 			}
+		}
+		remove_list_global_variable = {
+			name = ut_new_dawn_fascist_list
+			target = root
 		}
 	}
 
@@ -782,6 +875,11 @@ je_ut_new_dawn_communist = {
 			ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 		}
 		set_variable = je_ut_new_dawn_done
+		
+		add_to_global_variable_list = {
+			name = ut_new_dawn_communist_list
+			target = root
+		}
 	}
 
 	status_desc = {
@@ -814,6 +912,20 @@ je_ut_new_dawn_communist = {
 				}
 				add_modifier = {
 					name = ut_new_dawn_core_communist_mod
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						is_target_in_global_variable_list = {
+							name = ut_new_dawn_communist_list
+							target = root
+						}
+					}
+				}
+				add_to_global_variable_list = {
+					name = ut_new_dawn_communist_list
+					target = root
 				}
 			}
 		}
@@ -858,6 +970,10 @@ je_ut_new_dawn_communist = {
 			}
 			remove_ideology = ideology_republican_alternative
 			add_ideology = ideology_republican
+		}
+		remove_list_global_variable = {
+			name = ut_new_dawn_communist_list
+			target = root
 		}
 	}
 
