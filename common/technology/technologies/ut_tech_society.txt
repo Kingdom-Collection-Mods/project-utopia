@@ -573,9 +573,8 @@ political_progress_1_cosmopolitan = {
 	}
 
 	on_researched = {
-		custom_tooltip = {
-			text = ut_ideology_cosmopolitan_leader_unlock_tt
-		}
+		custom_tooltip = ut_ideology_cosmopolitan_leader_unlock_tt
+		custom_tooltip = ut_movement_conservative_unlock_tt
 		if = {
 			limit = {
 				NOT = { has_variable = je_ut_new_dawn_democratic_cultural_values_done }
@@ -847,6 +846,7 @@ lgbt_movement = {
 		custom_tooltip = {
 			text = lgbt_movement_tt
 		}
+		custom_tooltip = ut_movement_sexual_liberation_unlock_tt
 	}
 
 	modifier = {
