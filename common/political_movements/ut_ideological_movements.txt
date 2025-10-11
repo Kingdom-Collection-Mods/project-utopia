@@ -1,9 +1,11 @@
+﻿#any new leader ideologies that should spawn on leaders must be added to new utopia movements
 ut_movement_cosmopolitan = {
 	category = movement_category_ideological
 
 	ideology = ut_ideology_cosmopolitan	
 	character_ideologies = {
 		ut_ideology_cosmopolitan_leader
+		ut_ideology_environmentalist_leader
 	}
 	
 	disband_trigger = {
@@ -205,6 +207,8 @@ ut_movement_humanist = {
 		ideology_humanitarian
 		ideology_nihilist
 		ideology_reformer
+		ut_radical_feminism_leader
+		ut_social_feminism_leader
 	}
 	
 	disband_trigger = {
@@ -368,6 +372,7 @@ ut_movement_rationalists = {
 		ideology_reformer
 		ideology_laissez_faire
 		ideology_social_democrat
+		ut_liberal_feminism_leader
 	}
 	
 	disband_trigger = {
