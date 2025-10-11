@@ -252,6 +252,12 @@ ut_fund_opposition = {
 				in_default = no
 			}
 		}
+
+		requirement_to_maintain = {
+			trigger = {
+				NOT =  { ut_target_country_favorable_stance = yes }
+			}
+		}
 	}
 
 	ai = {
