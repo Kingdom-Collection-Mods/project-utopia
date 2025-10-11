@@ -1,7 +1,8 @@
 ﻿### See power_bloc_principles for the individual effects
 
 principle_group_modern_trade_league = {
-	unlocking_identity = identity_trade_league #most identities now have custom unions, so little extra unique
+	#most identities now have custom unions, so little extra unique
+	unlocking_identity = identity_trade_league
 	primary_for_identity = identity_trade_league
 	levels = {
 		principle_common_financial_policy_1
@@ -11,7 +12,8 @@ principle_group_modern_trade_league = {
 }
 
 principle_group_modern_sovereign_empire = {
-	unlocking_identity = identity_sovereign_empire #"world conquest" exclusive?
+	#"world conquest" exclusive?
+	unlocking_identity = identity_sovereign_empire
 	primary_for_identity = identity_sovereign_empire
 	levels = {
 		principle_commissariat_1

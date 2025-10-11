@@ -1054,6 +1054,13 @@ je_ut_communist_one_communist_party = {
 			remove_ideology = ideology_reactionary
 			add_ideology = ideology_reactionary_communist
 		}
+		every_interest_group = {
+			limit = {
+				has_ideology = ideology:ideology_plutocratic
+			}
+			remove_ideology =ideology_plutocratic
+			add_ideology = ideology_plutocratic_alternative
+		}
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_spend_tt
 			je:je_ut_new_dawn_communist = {
@@ -1188,7 +1195,7 @@ je_ut_communist_a_communist_party = {
 				has_ideology = ideology:ideology_plutocratic
 			}
 			remove_ideology =ideology_plutocratic
-			add_ideology = ideology_plutocratic_alternative
+			add_ideology = ideology_plutocratic_communist
 		}
 		every_interest_group = {
 			limit = {
