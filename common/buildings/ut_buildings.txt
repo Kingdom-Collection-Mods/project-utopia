@@ -166,7 +166,7 @@ building_heavy_machinery_factory = {
 		pmg_logistics_modern_industry
 	}
 	
-	required_construction = construction_cost_modern_industry
+	required_construction = construction_cost_modern_heavy_industry
 
 	possible = {
 		owner = {
@@ -201,7 +201,7 @@ building_computer_factory = {
 		pmg_logistics_modern_industry
 	}
 	
-	required_construction = construction_cost_modern_industry
+	required_construction = construction_cost_modern_heavy_industry
 
 	possible = {
 		owner = {
@@ -272,7 +272,7 @@ building_software_company = {
 		pmg_logistics_modern_industry
 	}
 	
-	required_construction = construction_cost_modern_industry
+	required_construction = construction_cost_modern_heavy_industry
 
 	possible = {
 		owner = {
@@ -314,7 +314,7 @@ highways = {
 		pmg_highway_trucks
 	}
 
-	required_construction = construction_cost_very_high
+	required_construction = construction_cost_monument
 	
 	ai_value = {
 		value = 10 #unlikely
