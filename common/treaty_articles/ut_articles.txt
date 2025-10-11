@@ -512,7 +512,7 @@
 
 ut_research_assistance_treaty = {
 	kind = directed
-	cost = 150
+	cost = 200
 
 	relations_progress_per_day = 1
 	relations_improvement_max = 20
