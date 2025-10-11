@@ -644,17 +644,6 @@ je_ut_new_dawn_democratic_fair_elections = {
 	}
 }
 
-je_ut_new_dawn_democratic_final = {
-	name = "je_ut_new_dawn_democratic_final"
-	desc = "je_ut_new_dawn_democratic_final_desc"
-
-	possible = {
-	}
-
-	effect = {
-		set_variable = je_ut_new_dawn_democratic_final_done		
-	}
-}
 
 #Autocratic Buttons
 
@@ -681,9 +670,9 @@ je_ut_new_dawn_emergency_powers = {
 			value = 0.01
 		}
 		custom_tooltip = {
-			text = new_dawn_ideology_required_points_spend_tt
+			text = ut_add_new_dawn_progress_neg_25
 			je:je_ut_new_dawn_autocratic = {
-				add_progress = { value = -50 name = je_ut_new_dawn_autocratic_points_bar }
+				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
 			}
 		}
 	}
@@ -713,9 +702,9 @@ je_ut_new_dawn_strengthen_power = {
 		}
 		
 		custom_tooltip = {
-			text = new_dawn_ideology_required_points_spend_tt
+			text = ut_add_new_dawn_progress_neg_25
 			je:je_ut_new_dawn_autocratic = {
-				add_progress = { value = -50 name = je_ut_new_dawn_autocratic_points_bar }
+				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
 			}
 		}
 	}
@@ -745,9 +734,9 @@ je_ut_new_dawn_border_dispute = {
 		}
 		
 		custom_tooltip = {
-			text = new_dawn_ideology_required_points_spend_tt
+			text = ut_add_new_dawn_progress_neg_25
 			je:je_ut_new_dawn_autocratic = {
-				add_progress = { value = -50 name = je_ut_new_dawn_autocratic_points_bar }
+				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
 			}
 		}
 	}
@@ -781,9 +770,9 @@ je_ut_new_dawn_suppress_dissidents = {
 		}
 
 		custom_tooltip = {
-			text = new_dawn_ideology_required_points_spend_tt
+			text = ut_add_new_dawn_progress_neg_25
 			je:je_ut_new_dawn_autocratic = {
-				add_progress = { value = -50 name = je_ut_new_dawn_autocratic_points_bar }
+				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
 			}
 		}
 	}
