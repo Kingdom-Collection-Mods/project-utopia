@@ -2,6 +2,8 @@ ai_evaluate_production_method building_commercial_factory pm_consumer_goods_plas
 
 -nographics -handsoff -scripted_tests
 
+..\..\vic3-tiger.exe "D:\Freddy\Documents\Paradox Interactive\Victoria 3\mod\project-utopia" --no-color > res.txt
+
 https://github.com/kaiser-chris/gate-mod/blob/master/documentation/RESOURCES.md
 
 Very helpful for stuff like this

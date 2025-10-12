@@ -656,8 +656,6 @@ utopia_journal_prod.42 = {
 	desc = ut_je_ut_research_high_tech_computers_research.success.d
 	flavor = ut_je_ut_research_high_tech_computers_research.success.f
 
-	placement = scope:hightech_computer_site
-
 	event_image = {
 		video = "europenorthamerica_capitalists_meeting"
 	}

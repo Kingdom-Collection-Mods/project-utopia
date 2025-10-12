@@ -524,6 +524,8 @@ ut_research_assistance_treaty = {
 		friendly
 	}
 
+	maintenance_paid_by = source_country
+
 	usage_limit = once_per_treaty
 
 	mutual_exclusions = {
