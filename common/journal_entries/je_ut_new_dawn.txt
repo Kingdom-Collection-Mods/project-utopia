@@ -1,4 +1,4 @@
-﻿je_ut_new_dawn = {
+je_ut_new_dawn = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
@@ -418,6 +418,14 @@ je_ut_new_dawn_democratic = {
 					target = root
 				}
 			}
+			set_variable = {
+				name = je_ut_new_dawn_core_prev_progress
+				value = var:je_ut_new_dawn_core_progress
+			} 
+			set_variable = {
+				name = je_ut_new_dawn_core_progress
+				value = "scope:journal_entry.scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)"
+			}
 		}
 		random_events = {
 			400 = 0
@@ -566,6 +574,15 @@ je_ut_new_dawn_autocratic = {
 					name = ut_new_dawn_autocratic_list
 					target = root
 				}
+			}
+			
+			set_variable = {
+				name = je_ut_new_dawn_core_prev_progress
+				value = var:je_ut_new_dawn_core_progress
+			} 
+			set_variable = {
+				name = je_ut_new_dawn_core_progress
+				value = "scope:journal_entry.scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)"
 			}
 		}
 		random_events = {
@@ -771,6 +788,14 @@ je_ut_new_dawn_fascist = {
 					target = root
 				}
 			}
+			set_variable = {
+				name = je_ut_new_dawn_core_prev_progress
+				value = var:je_ut_new_dawn_core_progress
+			} 
+			set_variable = {
+				name = je_ut_new_dawn_core_progress
+				value = "scope:journal_entry.scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)"
+			}
 		}
 		random_events = {
 			400 = 0
@@ -891,12 +916,18 @@ je_ut_new_dawn_communist = {
 			#event_new_dawn.1
 		}
 		effect = {
-			ut_new_dawn_communist_progress = yes
+			if = {
+				limit = {
+					is_player = yes
+				}
+				ut_new_dawn_communist_progress = yes
+			}
 		}
 	}
 
 	on_monthly_pulse = {
 		effect = {
+			ut_new_dawn_communist_progress = yes
 			if = {
 				limit = {
 					NOT = { has_modifier = je_ut_new_dawn_communist_focus }
@@ -927,6 +958,15 @@ je_ut_new_dawn_communist = {
 					name = ut_new_dawn_communist_list
 					target = root
 				}
+			}
+			
+			set_variable = {
+				name = je_ut_new_dawn_core_prev_progress
+				value = var:je_ut_new_dawn_core_progress
+			} 
+			set_variable = {
+				name = je_ut_new_dawn_core_progress
+				value = "scope:journal_entry.scripted_bar_progress(je_ut_new_dawn_communist_points_bar)"
 			}
 		}
 		random_events = {

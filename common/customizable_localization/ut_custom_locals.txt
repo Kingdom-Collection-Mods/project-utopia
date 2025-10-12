@@ -1,0 +1,33 @@
+﻿ut_new_dawn_progress_trend = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+			var:je_ut_new_dawn_core_progress > 99
+		}
+
+		localization_key = ut_progress_trend_max
+	}
+
+	text = {
+		trigger = {
+			var:je_ut_new_dawn_core_progress < 30
+		}
+
+		localization_key = ut_progress_trend_critical
+	}
+
+	text = {
+		trigger = {
+			var:je_ut_new_dawn_core_progress < var:je_ut_new_dawn_core_prev_progress
+		}
+
+		localization_key = ut_progress_trend_down
+	}
+
+	text = {
+		localization_key = ut_progress_trend_up
+	}
+
+}
