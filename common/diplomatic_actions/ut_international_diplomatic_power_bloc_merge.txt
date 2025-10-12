@@ -308,7 +308,7 @@
 		}
 		
 		propose_score = {
-			value = 1
+			value = 2
 			#will do if can, but low chance
 		}
 	}

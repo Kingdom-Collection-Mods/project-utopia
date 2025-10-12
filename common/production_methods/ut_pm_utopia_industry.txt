@@ -1478,7 +1478,7 @@ ut_pm_research_institute_three = {
 }
 
 ut_pm_research_institute_no_focus = {
-	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
+	texture = "gfx/interface/icons/production_method_icons/focus_no.dds"
 
 	country_modifiers = {
 		workforce_scaled = {
@@ -1501,7 +1501,7 @@ ut_pm_research_institute_no_focus = {
 }
 
 ut_pm_research_institute_production_focus = {
-	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
+	texture = "gfx/interface/icons/production_method_icons/focus_prod.dds"
 
 	country_modifiers = {
 		workforce_scaled = {
@@ -1526,7 +1526,7 @@ ut_pm_research_institute_production_focus = {
 }
 
 ut_pm_research_institute_military_focus = {
-	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
+	texture = "gfx/interface/icons/production_method_icons/focus_mil.dds"
 
 	country_modifiers = {
 		workforce_scaled = {
@@ -1552,7 +1552,7 @@ ut_pm_research_institute_military_focus = {
 }
 
 ut_pm_research_institute_society_focus = {
-	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
+	texture = "gfx/interface/icons/production_method_icons/focus_soc.dds"
 
 	country_modifiers = {
 		workforce_scaled = {

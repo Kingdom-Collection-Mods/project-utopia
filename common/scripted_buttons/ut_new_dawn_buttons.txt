@@ -276,11 +276,13 @@ ut_new_dawn_democrat_focus = {
 					has_law = law_type:law_universal_suffrage
 					has_law = law_type:law_protected_speech
 				}
-				any_neighbouring_state = {
-					owner = {
-						OR = {
-							has_modifier = je_ut_new_dawn_fascist_focus
-							has_variable = ut_new_dawn_core_fascist_var
+				any_scope_state = {
+					any_neighbouring_state = {
+						owner = {
+							OR = {
+								has_modifier = je_ut_new_dawn_fascist_focus
+								has_variable = ut_new_dawn_core_fascist_var
+							}
 						}
 					}
 				}
@@ -422,7 +424,19 @@ je_ut_new_dawn_democratic_spirit = {
 			remove_ideology = ideology_liberal_modern
 			add_ideology = ideology_liberal_democratic
 		}
-		ig:ig_petty_bourgeoisie = {
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology:ideology_reactionary
+					has_ideology = ideology:ideology_reactionary_communist
+					has_ideology = ideology:ut_ideology_reactionary_alternative
+				}
+			}
+			hidden_effect = {
+				remove_ideology = ideology_reactionary
+				remove_ideology = ideology_reactionary_communist
+				remove_ideology = ut_ideology_reactionary_alternative
+			}
 			remove_ideology = ideology_reactionary
 			add_ideology = ideology_reactionary_democratic
 		}
@@ -630,32 +644,6 @@ je_ut_new_dawn_democratic_fair_elections = {
 	}
 }
 
-je_ut_new_dawn_democratic_final = {
-	name = "je_ut_new_dawn_democratic_final"
-	desc = "je_ut_new_dawn_democratic_final_desc"
-
-	possible = {
-		custom_tooltip = {
-			text = new_dawn_ideology_milestone_done_tt
-			NOT = { has_variable = je_ut_new_dawn_democratic_final_done }
-		}
-		custom_tooltip = {
-			text = new_dawn_ideology_required_points_tt
-			je:je_ut_new_dawn_democratic = { 
-				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
-			}
-		}
-		NOT = {
-			any_country = {
-				average_sol < 50
-			}
-		}
-	}
-
-	effect = {
-		set_variable = je_ut_new_dawn_democratic_final_done		
-	}
-}
 
 #Autocratic Buttons
 
@@ -682,9 +670,9 @@ je_ut_new_dawn_emergency_powers = {
 			value = 0.01
 		}
 		custom_tooltip = {
-			text = new_dawn_ideology_required_points_spend_tt
+			text = ut_add_new_dawn_progress_neg_25
 			je:je_ut_new_dawn_autocratic = {
-				add_progress = { value = -50 name = je_ut_new_dawn_autocratic_points_bar }
+				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
 			}
 		}
 	}
@@ -714,9 +702,9 @@ je_ut_new_dawn_strengthen_power = {
 		}
 		
 		custom_tooltip = {
-			text = new_dawn_ideology_required_points_spend_tt
+			text = ut_add_new_dawn_progress_neg_25
 			je:je_ut_new_dawn_autocratic = {
-				add_progress = { value = -50 name = je_ut_new_dawn_autocratic_points_bar }
+				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
 			}
 		}
 	}
@@ -746,9 +734,9 @@ je_ut_new_dawn_border_dispute = {
 		}
 		
 		custom_tooltip = {
-			text = new_dawn_ideology_required_points_spend_tt
+			text = ut_add_new_dawn_progress_neg_25
 			je:je_ut_new_dawn_autocratic = {
-				add_progress = { value = -50 name = je_ut_new_dawn_autocratic_points_bar }
+				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
 			}
 		}
 	}
@@ -782,9 +770,9 @@ je_ut_new_dawn_suppress_dissidents = {
 		}
 
 		custom_tooltip = {
-			text = new_dawn_ideology_required_points_spend_tt
+			text = ut_add_new_dawn_progress_neg_25
 			je:je_ut_new_dawn_autocratic = {
-				add_progress = { value = -50 name = je_ut_new_dawn_autocratic_points_bar }
+				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
 			}
 		}
 	}
@@ -1024,27 +1012,179 @@ je_ut_new_dawn_expansionism = {
 	}
 }
 
+#Communist Buttons
+#Authoritarian Communism
 je_ut_communist_one_communist_party = {
 	name = "je_ut_communist_one_communist_party"
 	desc = "je_ut_communist_one_communist_party_desc"
 
-	visible = {
-		NOT = {
-			has_variable = je_ut_communist_one_communist_party_done
-			has_variable = je_ut_communist_a_communist_party_done
-		}
-	}
-
 	possible = {
-		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_communist = { 
 				"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" >= new_dawn_ideology_required_points
 			}
 		}
+		custom_tooltip = {
+			text = je_ut_communist_one_communist_party_exclusive_tt
+			NOT = { has_variable = je_ut_communist_a_communist_party_done }
+		}
 		has_law = law_type:law_command_economy
 		has_law = law_type:law_single_party_state
+		
+		custom_tooltip = {
+			text = new_dawn_ideology_milestone_done_tt
+			NOT = { has_variable = je_ut_communist_one_communist_party_done }
+		}
+	}
+
+	effect = {
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology:ideology_reactionary_democratic
+					has_ideology = ideology:ideology_reactionary
+					has_ideology = ideology:ut_ideology_reactionary_alternative
+				}
+			}
+			hidden_effect = {
+				remove_ideology = ideology_reactionary_democratic
+				remove_ideology = ut_ideology_reactionary_alternative
+			}
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_reactionary_communist
+		}
+		every_interest_group = {
+			limit = {
+				has_ideology = ideology:ideology_plutocratic
+			}
+			remove_ideology =ideology_plutocratic
+			add_ideology = ideology_plutocratic_alternative
+		}
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_communist = {
+				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
+			}
+		}
+		custom_tooltip = {
+			text = je_ut_communist_one_communist_party_effect_tt
+		}
+		set_variable = je_ut_communist_one_communist_party_done
+	}
+}
+
+je_ut_communist_one_block = {
+	name = "je_ut_communist_one_block"
+	desc = "je_ut_communist_one_block_desc"
+
+	possible = {
+		custom_tooltip = {
+			text = new_dawn_ideology_previous_milestone_done_tt
+			has_variable = je_ut_communist_one_communist_party_done
+		}
+
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_communist = { 
+				"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		is_power_bloc_leader = yes
+		power_bloc ?= {
+			NOT = {
+				any_power_bloc_member = {
+					NOT = { is_subject_of = root }
+				}
+			}
+		}
+		
+		custom_tooltip = {
+			text = new_dawn_ideology_milestone_done_tt
+			NOT = { has_variable = je_ut_communist_one_block_done }
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_communist = {
+				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
+			}
+		}
+		add_modifier = {
+			name = je_ut_new_dawn_communist_one_block_mod
+		}
+		set_variable = je_ut_communist_one_block_done
+	}
+}
+
+je_ut_communist_socialist_expansion = {
+	name = "je_ut_communist_socialist_expansion"
+	desc = "je_ut_communist_socialist_expansion_desc"
+
+	possible = {
+		custom_tooltip = {
+			text = new_dawn_ideology_previous_milestone_done_tt
+			has_variable = je_ut_communist_one_block_done
+		}
+		
+		NOT = {
+			any_country = {
+				is_adjacent_to_country = root
+				NOT = { is_subject_of = root }
+			}
+		}
+
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_communist = { 
+				"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		
+		custom_tooltip = {
+			text = new_dawn_ideology_milestone_done_tt
+			NOT = { has_variable = je_ut_communist_socialist_expansion_done }
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_communist = {
+				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
+			}
+		}
+		add_modifier = {
+			name = je_ut_communist_socialist_expansion_mod
+		}
+		set_variable = je_ut_communist_socialist_expansion_done
+	}
+}
+
+#Democratic Communism
+je_ut_communist_a_communist_party = {
+	name = "je_ut_communist_a_communist_party"
+	desc = "je_ut_communist_a_communist_party_desc"
+
+	possible = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_communist = { 
+				"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		custom_tooltip = {
+			text = je_ut_communist_a_communist_party_exclusive_tt
+			NOT = { has_variable = je_ut_communist_one_communist_party_done }
+		}
+		has_law = law_type:law_universal_suffrage
+		has_law = law_type:law_cooperative_ownership
+		custom_tooltip = {
+			text = new_dawn_ideology_milestone_done_tt
+			NOT = { has_variable = je_ut_communist_a_communist_party_done }
+		}
 	}
 
 	effect = {
@@ -1056,87 +1196,18 @@ je_ut_communist_one_communist_party = {
 		}
 		every_interest_group = {
 			limit = {
-				OR = {
-					has_ideology = ideology:ideology_plutocratic_democratic
-					has_ideology = ideology:ideology_plutocratic
-				}
+				has_ideology = ideology:ideology_plutocratic
 			}
-			remove_ideology = ideology_plutocratic_democratic
-			remove_ideology = ideology_plutocratic
-			add_ideology = ideology_plutocratic_alternative
+			remove_ideology =ideology_plutocratic
+			add_ideology = ideology_plutocratic_communist
 		}
-		set_variable = je_ut_communist_one_communist_party_done
-	}
-}
-
-je_ut_communist_a_communist_party = {
-	name = "je_ut_communist_a_communist_party"
-	desc = "je_ut_communist_a_communist_party_desc"
-
-	visible = {
-		NOT = {
-			has_variable = je_ut_communist_one_communist_party_done
-			has_variable = je_ut_communist_a_communist_party_done
-		}
-	}
-
-	possible = {
-		always = no #disabled
-		custom_tooltip = {
-			text = new_dawn_ideology_required_points_tt
-			je:je_ut_new_dawn_communist = { 
-				"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" >= new_dawn_ideology_required_points
+		every_interest_group = {
+			limit = {
+				has_ideology = ideology:ideology_reactionary
 			}
-		}
-		has_law = law_type:law_universal_suffrage
-		has_law = law_type:law_cooperative_ownership
-	}
-
-	effect = {
-		custom_tooltip = {
-			text = new_dawn_ideology_required_points_spend_tt
-			je:je_ut_new_dawn_communist = {
-				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
-			}
+			add_ideology = ideology_urbanist_power_base
 		}
 		set_variable = je_ut_communist_a_communist_party_done
-	}
-}
-
-je_ut_communist_one_block = {
-	name = "je_ut_communist_one_block"
-	desc = "je_ut_communist_one_block_desc"
-
-	visible = {
-		NOT = {
-			has_variable = je_ut_communist_one_block_done
-		}
-	}
-
-	possible = {
-		always = no #disabled
-		custom_tooltip = {
-			text = new_dawn_ideology_required_points_tt
-			je:je_ut_new_dawn_communist = { 
-				"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" >= new_dawn_ideology_required_points
-			}
-		}
-		is_power_bloc_leader = yes
-		power_bloc ?= {
-			any_power_bloc_member = {
-				is_subject_of = root
-			}
-		}
-	}
-
-	effect = {
-		custom_tooltip = {
-			text = new_dawn_ideology_required_points_spend_tt
-			je:je_ut_new_dawn_communist = {
-				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
-			}
-		}
-		set_variable = je_ut_communist_one_block_done
 	}
 }
 
@@ -1151,16 +1222,20 @@ je_ut_communist_one_people = {
 	}
 
 	possible = {
-		always = no #disabled
+		custom_tooltip = {
+			text = new_dawn_ideology_previous_milestone_done_tt
+			has_variable = je_ut_communist_one_communist_party_done
+		}
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_communist = { 
 				"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" >= new_dawn_ideology_required_points
 			}
 		}
-		any_neighbouring_state = {
-			owner = {
-				is_in_same_power_bloc = root
+		NOT = {
+			any_country = {
+				is_adjacent_to_country = root
+				NOT = { is_in_same_power_bloc = root }
 			}
 		}
 	}
@@ -1172,31 +1247,38 @@ je_ut_communist_one_people = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
 		}
+		add_modifier = {
+			name = je_ut_new_dawn_communist_one_people_mod
+		}
 		set_variable = je_ut_communist_one_people_done
 	}
 }
 
-je_ut_communist_final = {
-	name = "je_ut_communist_final"
-	desc = "je_ut_communist_final_desc"
+je_ut_communist_world_revolution = {
+	name = "je_ut_communist_world_revolution"
+	desc = "je_ut_communist_world_revolution_desc"
 
 	visible = {
 		NOT = {
-			has_variable = je_ut_communist_final_done
+			has_variable = je_ut_communist_world_revolution_done
 		}
 	}
 
 	possible = {
-		always = no #disabled
+		custom_tooltip = {
+			text = new_dawn_ideology_previous_milestone_done_tt
+			has_variable = je_ut_communist_one_people_done
+		}
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_communist = { 
 				"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" >= new_dawn_ideology_required_points
 			}
 		}
-		standard_of_living > 50
+		average_sol > 25
 		NOT = {
 			any_country = {
+				country_rank >= rank_value:great_power
 				NOT = { has_law = law_type:law_cooperative_ownership }
 			}
 		}
@@ -1209,6 +1291,9 @@ je_ut_communist_final = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
 		}
-		set_variable = je_ut_communist_final_done
+		custom_tooltip = {
+			text = je_ut_communist_world_revolution_effect_tt
+		}
+		set_variable = je_ut_communist_world_revolution_done
 	}
 }

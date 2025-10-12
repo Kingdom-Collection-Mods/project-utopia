@@ -226,6 +226,9 @@ ut_nuclear_power_plant_location  = {
 				is_under_construction = no
 			}
 		}
+		NOT = {
+			has_journal_entry = ut_je_nuclear_power_plant_construction
+		}
 	}
 
 	when_taken = {
@@ -433,5 +436,33 @@ ut_law_tax_code_amend = {
 
 	ai_chance = {
 		value = 0
+	}
+}
+
+ut_communist_enact_law_variants = {
+	is_shown = {
+		OR = {
+			has_variable = je_ut_communist_one_communist_party_done
+			has_variable = je_ut_communist_world_revolution_done
+		}
+		has_law = law_type:law_council_republic
+	}
+
+	when_taken = {
+		if = {
+			limit = {
+				has_variable = je_ut_communist_world_revolution_done
+			}
+			activate_law = law_type:ut_law_international_council
+		}
+		else_if = {
+			limit = {
+				has_variable = je_ut_communist_one_communist_party_done
+			}
+			activate_law = law_type:ut_law_council_presidium
+		}
+	}
+	ai_chance = {
+		value = 1
 	}
 }

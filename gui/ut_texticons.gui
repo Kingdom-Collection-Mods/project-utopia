@@ -27,3 +27,40 @@ texticon = {
     fontsize = 22
   }
 }
+
+
+texticon = {
+  icon = ut_nd_communist
+  iconsize = {
+    offset = { 0 7 }
+    texture = "gfx/interface/icons/new_dawn_icons/ut_nd_communist_30.dds"
+    fontsize = 22
+  }
+}
+
+texticon = {
+  icon = ut_nd_democrat
+  iconsize = {
+    offset = { 0 7 }
+    texture = "gfx/interface/icons/new_dawn_icons/ut_nd_democrat_30.dds"
+    fontsize = 22
+  }
+}
+
+texticon = {
+  icon = ut_nd_autocrat
+  iconsize = {
+    offset = { 0 7 }
+    texture = "gfx/interface/icons/new_dawn_icons/ut_nd_autocrat_30.dds"
+    fontsize = 22
+  }
+}
+
+texticon = {
+  icon = ut_nd_fascist
+  iconsize = {
+    offset = { 0 7 }
+    texture = "gfx/interface/icons/new_dawn_icons/ut_nd_fascist_30.dds"
+    fontsize = 22
+  }
+}

@@ -124,15 +124,15 @@ modern_civil_aviation_modifier_others = {
 	country_tech_spread_add = 50
 }
 
-#deprecated
 je_ut_new_dawn_democratic_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_democrat.dds
+	unit_defense_mult = 0.1
+	country_production_tech_research_speed_mult = 0.02
+	state_pop_support_movement_liberal_mult = 0.1
 }
 
 ut_new_dawn_core_democratic_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_democrat.dds
-	unit_defense_mult = 0.1
-	country_production_tech_research_speed_mult = 0.02
 }
 
 je_ut_new_dawn_democratic_power_bloc_mod = {
@@ -145,23 +145,17 @@ je_ut_new_dawn_democratic_fair_elections_mod = {
 	country_voting_power_base_add = 5
 }
 
-#deprecated
 je_ut_new_dawn_autocratic_mod = {
-	icon = gfx/interface/icons/new_dawn_icons/ut_nd_autocrat.dds
-}
-
-ut_new_dawn_core_autocratic_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_autocrat.dds
 	country_suppression_attraction_factor = -0.25
 	country_authority_mult = 0.5
 }
 
-#deprecated
-je_ut_new_dawn_fascist_mod = {
-	icon = gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds
+ut_new_dawn_core_autocratic_mod = {
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_autocrat.dds
 }
 
-ut_new_dawn_core_fascist_mod = {
+je_ut_new_dawn_fascist_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds
 	country_liberty_desire_of_subjects_add = 0.1
 	country_infamy_generation_mult = -0.5
@@ -170,19 +164,41 @@ ut_new_dawn_core_fascist_mod = {
 	country_military_tech_research_speed_mult = 0.05
 	country_acceptance_no_shared_heritage_trait_add = -10
 	country_acceptance_no_shared_language_trait_add = -10
+	state_pop_support_movement_fascist_mult = 0.1
 }
 
-#deprecated
+ut_new_dawn_core_fascist_mod = {
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds
+}
+
+
 je_ut_new_dawn_communist_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_communist.dds
+	#core modifiers
+	country_leader_has_law_enactment_success_mult = 0.1
+	interest_group_ig_trade_unions_pop_attraction_mult = 0.1
+	country_society_tech_research_speed_mult = 0.05
+	state_pop_support_movement_socialist_mult = 0.1
 }
 
 ut_new_dawn_core_communist_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_communist.dds
-	country_leverage_generation_mult = 0.2
+	#core identifier
+}
+
+je_ut_new_dawn_communist_one_block_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	country_leader_has_law_enactment_success_mult = 0.2
-	interest_group_ig_trade_unions_pop_attraction_mult = 0.1
-	country_society_tech_research_speed_mult = 0.05
+}
+
+je_ut_new_dawn_communist_one_people_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_leverage_generation_mult = 0.25
+}
+
+je_ut_communist_socialist_expansion_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_infamy_generation_mult = -0.1
 }
 
 ut_research_high_tech_computers_research_mod = {

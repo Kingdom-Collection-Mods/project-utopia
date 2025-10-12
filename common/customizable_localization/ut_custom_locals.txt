@@ -1,0 +1,91 @@
+﻿ut_new_dawn_progress_trend = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+			var:je_ut_new_dawn_core_progress > 99
+		}
+
+		localization_key = ut_progress_trend_max
+	}
+
+	text = {
+		trigger = {
+			var:je_ut_new_dawn_core_progress < 30
+			var:je_ut_new_dawn_core_progress_diff < 0
+		}
+
+		localization_key = ut_progress_trend_critical
+	}
+
+	text = {
+		trigger = {
+			var:je_ut_new_dawn_core_progress_diff < -2
+		}
+
+		localization_key = ut_progress_trend_down4
+	}
+
+	text = {
+		trigger = {
+			var:je_ut_new_dawn_core_progress_diff < -1
+		}
+
+		localization_key = ut_progress_trend_down3
+	}
+
+	text = {
+		trigger = {
+			var:je_ut_new_dawn_core_progress_diff < -0.7
+		}
+
+		localization_key = ut_progress_trend_down2
+	}
+	
+	text = {
+		trigger = {
+			var:je_ut_new_dawn_core_progress_diff < -0.4
+		}
+
+		localization_key = ut_progress_trend_down1
+	}
+	
+	text = {
+		trigger = {
+			var:je_ut_new_dawn_core_progress_diff < 0.1
+			var:je_ut_new_dawn_core_progress_diff >  -0.1
+		}
+
+		localization_key = ut_progress_trend_neutral
+	}
+	
+	text = {
+		trigger = {
+			var:je_ut_new_dawn_core_progress_diff < 0.4
+		}
+
+		localization_key = ut_progress_trend_up1
+	}
+	
+	text = {
+		trigger = {
+			var:je_ut_new_dawn_core_progress_diff < 0.6
+		}
+
+		localization_key = ut_progress_trend_up2
+	}
+	
+	text = {
+		trigger = {
+			var:je_ut_new_dawn_core_progress_diff < 0.8
+		}
+
+		localization_key = ut_progress_trend_up3
+	}
+
+	text = {
+		localization_key = ut_progress_trend_up4
+	}
+
+}

@@ -152,7 +152,8 @@
  je_ut_new_dawn_immediate_tt: "$je_ut_new_dawn_reason$"
  je_ut_new_dawn_global_started_tt: "Any country has started the #b New Dawn#! event chain"
  je_ut_new_dawn_condition_tt: "Completed [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_communist_core], or [concept_ut_nd_fascist_core] [concept_ut_nd_path_to_utopia]"
- je_ut_new_dawn_effect_tt: "Achieved [concept_ut_nd_utopia]?"
+ je_ut_new_dawn_p2_condition_tt: "Achieved [concept_ut_nd_utopia]?"
+ je_ut_new_dawn_effect_tt: "[concept_ut_nd_utopia]!"
  new_dawn_mod: "New Dawn"
  new_dawn_phase_2_mod: "New Dawn: Reinforce Ideology"
 
@@ -260,7 +261,7 @@
  ut_nd_communist_progress_from_events: "Events and Other Effects"
  ut_new_dawn_communist_status: "Communist Ideas Are Shaping the Discourse"
  concept_ut_nd_communist_characters: "Communist Characters"
- concept_ut_nd_communist_characters_desc: "Communist character ideologies are: [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_vanguardist').GetName], and [GetIdeology('ideology_nihilist').GetName].\nIf Communist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_land_reformer').GetName], and [GetIdeology('ideology_modernizer_leader').GetName]."
+ concept_ut_nd_communist_characters_desc: "Communist character ideologies are: [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_vanguardist').GetName], and [GetIdeology('ideology_nihilist').GetName].\nIf Communist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ideology_positivist').GetName]."
 
  je_ut_new_dawn_democrat_focus: "Democratic Focus"
  je_ut_new_dawn_democrat_focus_desc: "Democratic focus selected"
@@ -280,6 +281,24 @@
  je_ut_new_dawn_autocratic_mod: "Autocratic"
  ut_new_dawn_core_democratic_mod: "Democratic"
  je_ut_new_dawn_democratic_mod: "Democratic"
+ 
+ #[THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress_diff').GetValue|+=] for actual trend value
+ ut_new_dawn_list_entry_start: "Ideology Progress:"
+ ut_new_dawn_fascist_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_fascist!"
+ ut_new_dawn_communist_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_communist!"
+ ut_new_dawn_democratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_democrat!"
+ ut_new_dawn_autocratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_autocrat!"
+ ut_progress_trend_max: "@profitability12!"
+ ut_progress_trend_critical: "@profitability1!"
+ ut_progress_trend_up4: "@profitability13!"
+ ut_progress_trend_up3: "@profitability12!"
+ ut_progress_trend_up2: "@profitability11!"
+ ut_progress_trend_up1: "@profitability9!"
+ ut_progress_trend_neutral: "@profitability7!"
+ ut_progress_trend_down1: "@profitability5!"
+ ut_progress_trend_down2: "@profitability3!"
+ ut_progress_trend_down3: "@profitability2!"
+ ut_progress_trend_down4: "@profitability1!"
 
  ut_new_dawn_democrat_focus: "Democratic Focus"
  ut_new_dawn_democrat_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities] and [concept_ut_nd_milestones].#!"
@@ -316,6 +335,7 @@
  new_dawn_ideology_required_points_spend_tt: "Consumes #r [SCOPE.ScriptValue('new_dawn_ideology_spend_points')]#! #v #![concept_ut_nd_progress_points] to activate this step"
  new_dawn_ideology_upper_bound_tt: "Has #v [SCOPE.ScriptValue('new_dawn_ideology_upper_bound')] #![concept_ut_nd_progress_points]"
  new_dawn_ideology_milestone_done_tt: "Has #v not#! completed the [Concept('concept_ut_nd_milestones', 'Milestone')]"
+ new_dawn_ideology_previous_milestone_done_tt: "Has #v completed#! the previous [Concept('concept_ut_nd_milestones', 'Milestone')]"
 
  je_ut_new_dawn_democratic_cultural_values: "Democratic Cultural Values"
  je_ut_new_dawn_democratic_cultural_values_desc: "A democratic foundation can only thrive on cultural values that respect pluralism and individual freedoms. Leading figures in business and religion are turning toward a more democratic worldview."
@@ -334,7 +354,7 @@
  je_ut_new_dawn_democratic_final_desc: "The culmination of democratic ideals and practices, leading to a harmonious and just society."
 
  je_ut_new_dawn_autocratic: "Autocratic System"
- je_ut_new_dawn_autocratic_reason: "The people demand order, stability, and strong leadership."
+ je_ut_new_dawn_autocratic_reason: "The people demand order, stability, and strong leadership. \n #italic - [Concept('concept_ut_nd_autocrat_core', 'Autocracies')] have no [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_autocratic_complete_condition_tt: "There is no Autocratic Utopia, the entry can not be completed. They have access to repeatable actions instead."
 
  je_ut_new_dawn_emergency_powers: "Emergency Powers"
@@ -377,14 +397,23 @@
 
  je_ut_communist_one_communist_party: "Command Economy"
  je_ut_communist_one_communist_party_desc: ""
+ je_ut_communist_one_communist_party_exclusive_tt: "Has #bold not#! started #bold Cooperative Economy#! path"
+ je_ut_communist_one_communist_party_effect_tt: "Unlocks [GetLawType('ut_law_council_presidium').GetName]"
  je_ut_communist_a_communist_party: "Cooperative Economy"
  je_ut_communist_a_communist_party_desc: ""
- je_ut_communist_one_block: "Council Republics"
+ je_ut_communist_a_communist_party_exclusive_tt: "Has #bold not#! started #bold Command Economy#! path"
+ je_ut_communist_one_block: "Council Union"
  je_ut_communist_one_block_desc: ""
+ je_ut_new_dawn_communist_one_block_mod: "Council Union"
  je_ut_communist_one_people: "Workers' Unity"
  je_ut_communist_one_people_desc: ""
- je_ut_communist_final: "Classless Society"
- je_ut_communist_final_desc: ""
+ je_ut_new_dawn_communist_one_people_mod: "Workers Unity"
+ je_ut_communist_socialist_expansion: "Union Expansion"
+ je_ut_communist_socialist_expansion_desc: ""
+ je_ut_communist_socialist_expansion_mod: "Union Expansion"
+ je_ut_communist_world_revolution: "World Revolution"
+ je_ut_communist_world_revolution_desc: ""
+ je_ut_communist_world_revolution_effect_tt: "Unlocks [GetLawType('ut_law_international_council').GetName]"
 
  je_ut_new_dawn_fascist: "Fascism"
  je_ut_new_dawn_fascist_reason: "#italic - [Concept('concept_ut_nd_fascist_core', 'Fascist')]#!"
@@ -406,24 +435,24 @@
  ut_nd_autocrat_progress_from_focus: "Autocratic Focus"
  ut_nd_autocrat_progress_from_events: "Events and Other Effects"
  concept_ut_nd_autocrat_characters: "Autocratic Characters"
- concept_ut_nd_autocrat_characters_desc: "Autocratic character ideologies are: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], and [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nIf Autocrat [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], [GetIdeology('ideology_positivist').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], and [GetIdeology('ideology_luddite').GetName]."
+ concept_ut_nd_autocrat_characters_desc: "Autocratic character ideologies are: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], and [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nIf Autocrat [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], and [GetIdeology('ideology_corporatist_leader').GetName]."
  ut_new_dawn_autocrat_status: "Autocratic Ideas Shape the Discourse"
 
 #Core Ideology concepts
 
  concept_ut_nd_fascist_core: "Fascism"
- concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - Annex Country (Major) - tbd\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('ut_new_dawn_core_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nOppose: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others."
+ concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - Annex Country (Major) - tbd\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nOppose: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others."
 
 
  concept_ut_nd_autocrat_core: "Autocracy"
- concept_ut_nd_autocrat_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_autocrat_progress_from_characters$\n- $ut_nd_autocrat_progress_from_igs$\n- $ut_nd_autocrat_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_abilities]#! - Preview\n - [GetLawType('ut_law_monarchy_autocratic').GetName]\n - [GetLawType('ut_law_monarchy_corporate_state').GetName]\n - #p Edicts:#! [GetStaticModifier('je_ut_new_dawn_emergency_powers_mod').GetName], [GetStaticModifier('je_ut_new_dawn_strengthen_power_mod').GetName], [GetStaticModifier('je_ut_new_dawn_border_dispute_mod').GetName],  [GetStaticModifier('je_ut_new_dawn_suppress_dissidents_mod').GetName]\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_autocrat_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('ut_new_dawn_core_autocratic_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_fascist_core], [concept_ut_nd_autocrat_core]\nNeutral: [concept_ut_nd_democrat_core]\nOppose: [concept_ut_nd_communist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nNone."
+ concept_ut_nd_autocrat_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_autocrat_progress_from_characters$\n- $ut_nd_autocrat_progress_from_igs$\n- $ut_nd_autocrat_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_abilities]#! - Preview\n - [GetLawType('ut_law_monarchy_autocratic').GetName]\n - [GetLawType('ut_law_monarchy_corporate_state').GetName]\n - #p Edicts:#! [GetStaticModifier('je_ut_new_dawn_emergency_powers_mod').GetName], [GetStaticModifier('je_ut_new_dawn_strengthen_power_mod').GetName], [GetStaticModifier('je_ut_new_dawn_border_dispute_mod').GetName],  [GetStaticModifier('je_ut_new_dawn_suppress_dissidents_mod').GetName]\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_autocrat_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_autocratic_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_fascist_core], [concept_ut_nd_autocrat_core]\nNeutral: [concept_ut_nd_democrat_core]\nOppose: [concept_ut_nd_communist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nNone."
 
 
  concept_ut_nd_democrat_core: "Democracy"
- concept_ut_nd_democrat_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_democrat_progress_from_characters$\n- $ut_nd_democrat_progress_from_igs$\n- $ut_nd_democrat_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - Preview\nUnlock Ideologies: [GetIdeology('ideology_liberal_democratic').GetName], [GetIdeology('ideology_reactionary_democratic').GetName], [GetIdeology('ideology_moralist_democratic').GetName], [GetIdeology('ideology_plutocratic_democratic').GetName], [GetIdeology('ideology_socialist_democratic').GetName], [GetIdeology('ideology_jingoist_democratic').GetName]\nUnlock Modifiers: [GetStaticModifier('je_ut_new_dawn_democratic_power_bloc_mod').GetDesc], [GetStaticModifier('je_ut_new_dawn_democratic_fair_elections_mod').GetDesc]\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n - [GetArticleType('ut_democracy_article').GetNameNoIcon]\n - [GetLawType('ut_law_monarchy_democratic').GetName]\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_democrat_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('ut_new_dawn_core_democratic_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_democrat_core]\nNeutral: [concept_ut_nd_communist_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nStrengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people."
+ concept_ut_nd_democrat_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_democrat_progress_from_characters$\n- $ut_nd_democrat_progress_from_igs$\n- $ut_nd_democrat_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - Preview\nUnlock Ideologies: [GetIdeology('ideology_liberal_democratic').GetName], [GetIdeology('ideology_reactionary_democratic').GetName], [GetIdeology('ideology_moralist_democratic').GetName], [GetIdeology('ideology_plutocratic_democratic').GetName], [GetIdeology('ideology_socialist_democratic').GetName], [GetIdeology('ideology_jingoist_democratic').GetName]\nUnlock Modifiers: [GetStaticModifier('je_ut_new_dawn_democratic_power_bloc_mod').GetDesc], [GetStaticModifier('je_ut_new_dawn_democratic_fair_elections_mod').GetDesc]\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n - [GetArticleType('ut_democracy_article').GetNameNoIcon]\n - [GetLawType('ut_law_monarchy_democratic').GetName]\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_democrat_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_democratic_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_democrat_core]\nNeutral: [concept_ut_nd_communist_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nStrengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people."
 
  concept_ut_nd_communist_core: "Communism"
- concept_ut_nd_communist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#!:\n - [GetLawType('ut_law_international_council').GetName] or [GetLawType('ut_law_council_presidium').GetName] - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#! - wip\n - [GetDiplomaticActionType('ut_force_become_subject').GetName] - Preview\n - [GetArticleType('ut_communism_article').GetNameNoIcon]\n - Force into Power Bloc - tbd\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_communist_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('ut_new_dawn_core_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_communist_core]\nNeutral: [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nBuild a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
+ concept_ut_nd_communist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#!:\n - Unlock Modifiers: [GetStaticModifier('je_ut_new_dawn_communist_one_block_mod').GetDesc], [GetStaticModifier('je_ut_new_dawn_communist_one_people_mod').GetDesc] or [GetStaticModifier('je_ut_communist_socialist_expansion_mod').GetDesc]\n - Unlock Ideologies: [GetIdeology('ideology_reactionary_communist').GetName], [GetIdeology('ideology_plutocratic_communist').GetName] or [GetIdeology('ideology_urbanist_power_base').GetName] \n - Unlocks Law Variants: [GetLawType('ut_law_international_council').GetName] or [GetLawType('ut_law_council_presidium').GetName]\n\n#bold Unlocks [concept_ut_nd_abilities]#! - wip\n - [GetDiplomaticActionType('ut_force_become_subject').GetName] - Preview\n - [GetArticleType('ut_communism_article').GetNameNoIcon]\n - Force into Power Bloc - tbd\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_communist_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_communist_core]\nNeutral: [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nBuild a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
 
  concept_ut_nd_path_to_utopia: "Path to Utopia"
  concept_ut_nd_path_to_utopia_desc: "When an ideology successfully completes the [concept_ut_new_dawn] journal entry, it can start their [concept_ut_nd_path_to_utopia] - each ideology comes with the same base set of abilities, flavored abilities, flavored modifiers and may even feature an [concept_ut_nd_utopia] to be achieved.\n\nA [Concept('concept_humiliation', 'humiliated')] country, is likely to abandon their [concept_ut_nd_path_to_utopia] and choose a new ideology.\n\n#bold Base [concept_ut_nd_abilities]:#!\n - [GetDiplomaticActionType('ut_influence_new_dawn_major_power').GetName]\n - [GetDiplomaticActionType('ut_fund_ideology').GetName]\n - [GetDiplomaticActionType('ut_fund_opposition').GetName]\n\n#b 'New Dawn' is Work in Progress#!\n#italic Note the status notes:\ntbd (To Be Determined): No actual work done\nwip (Work in Progress): Ongoing development, follow the patch notes\nPreview: Initial version available for feedback; incomplete and not final\n\nIdeologies without Preview [concept_ut_nd_milestones] or [concept_ut_nd_abilities] feature more static modifiers instead.\n\nStatus notes may be incomplete.\n\n#i If you wanna support Project Utopia - leave a like on Steam Workshop <3"
@@ -442,7 +471,7 @@
  ut_nd_fascist_progress_from_focus: "Fascist Focus"
  ut_nd_fascist_progress_from_events: "Events and Other Effects"
  concept_ut_nd_fascist_characters: "Fascist Characters"
- concept_ut_nd_fascist_characters_desc: "Fascist character ideologies are: [GetIdeology('ideology_ethno_nationalist').GetName] and [GetIdeology('ideology_fascist').GetName].\nIf Fascist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], and [GetIdeology('ideology_modernizer_leader').GetName]."
+ concept_ut_nd_fascist_characters_desc: "Fascist character ideologies are: [GetIdeology('ideology_ethno_nationalist').GetName] and [GetIdeology('ideology_fascist').GetName].\nIf Fascist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ut_ideology_national_socialist_leader').GetName]."
  ut_new_dawn_fascist_status: "Fascist Ideas Shape the Discourse"
 
  ut_nd_multiplier_from_service_workers_0: "x0.5 Multiplier from less than 1% $service_workers$\n$ut_nd_mp_sw_note$"
@@ -531,12 +560,18 @@
  ideology_liberal_democratic_desc: "#lore This group champions individual freedoms, civil rights, and democratic governance. They advocate for free markets, limited government intervention, and the protection of personal liberties. Replaces [GetIdeology('ideology_liberal').GetName]. #!"
  ideology_moralist_democratic: "Moralist-Democratic"
  ideology_moralist_democratic_desc: "#lore This group emphasizes individual freedoms, civil rights, and democratic governance. They advocate for a balanced approach to social and economic policies, promoting both personal liberty and social responsibility. Replaces [GetIdeology('ideology_moralist').GetName]. #!"
- ideology_plutocratic_democratic: "Elitist-Democratic"
- ideology_plutocratic_democratic_desc: "#lore This group believes that society should be governed by a wealthy elite who are best equipped to make decisions for the common good. They often prioritize economic growth and stability over social equality. Replaces [GetIdeology('ideology_plutocratic').GetName]. #!"
+ ideology_plutocratic_democratic: "Elitist"
+ ideology_plutocratic_democratic_desc: "#lore This group believes that society should be governed by a wealthy elite who are best equipped to make decisions for the common good. They often prioritize economic growth and stability over social equality. Replaces [GetIdeology('ideology_plutocratic').GetName]. [concept_ut_nd_democrat_core] variation.#!"
+ ideology_plutocratic_communist: "Elitist"
+ ideology_plutocratic_communist_desc: "#lore This group believes that society should be governed by a wealthy elite who are best equipped to make decisions for the common good. They often prioritize economic growth and stability over social equality. Replaces [GetIdeology('ideology_plutocratic').GetName]. [concept_ut_nd_communist_core] variation.#!"
  ideology_plutocratic_alternative: "Elitist"
  ideology_plutocratic_alternative_desc: "#lore This group believes that society should be governed by a wealthy elite who are best equipped to make decisions for the common good. They often prioritize economic growth and stability over social equality. Replaces [GetIdeology('ideology_plutocratic').GetName]. #!"
+ ideology_republican_alternative: "Technocrats"
+ ideology_republican_alternative_desc: "This group believes in governance by experts and technocrats, emphasizing efficiency and rational decision-making. Replaces [GetIdeology('ideology_republican').GetName]. (Lost when Path is abandoned)#!"
  ideology_reactionary_democratic: "Conservative"
- ideology_reactionary_democratic_desc: "#lore This group values tradition, social stability, and gradual change. They often support established institutions and may resist rapid social or political reforms. Replaces [GetIdeology('ideology_reactionary').GetName]. [concept_ut_nd_democrat_core] variation. #!"
+ ideology_reactionary_democratic_desc: "#lore This group values tradition, social stability, and gradual change. They often support established institutions and may resist rapid social or political reforms. Replaces [GetIdeology('ideology_reactionary').GetName]. [concept_ut_nd_democrat_core] variation.#!"
+ ideology_reactionary_communist: "Conservative"
+ ideology_reactionary_communist_desc: "#lore This group values tradition, social stability, and gradual change. They often support established institutions and may resist rapid social or political reforms. Replaces [GetIdeology('ideology_reactionary').GetName]. [concept_ut_nd_communist_core] variation.#!"
  ut_ideology_reactionary_alternative: "Conservative"
  ut_ideology_reactionary_alternative_desc: "#lore This group values tradition, social stability, and gradual change. They often support established institutions and may resist rapid social or political reforms. Replaces [GetIdeology('ideology_reactionary').GetName]. #!"
  ut_ideology_laissez_faire: "Laissez-Faire (Modern)"
@@ -559,11 +594,15 @@
  ut_movement_cosmopolitan_name: "Cosmopolitan Movement"
  ut_movement_humanist_name: "Humanist Movement"
  ut_movement_rationalists_name: "Rationalist Movement"
+ ut_movement_conservative_name: "Conservative Movement"
+ ut_movement_sexual_liberation_name: "Sexual Liberation Movement"
 
  ut_movement_cosmopolitan_unlock_tt: "Unlocks [GetIdeology('ut_ideology_cosmopolitan').GetName] [concept_political_movement]"
  ut_ig_ideology_urbanist_economy_base_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_economy_base').GetName] for $ig_urbanists$"
  ut_movement_humanist_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_human_rights_base').GetName] [concept_political_movement]"
  ut_movement_rationalists_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_economy_base').GetName] [concept_political_movement]"
+ ut_movement_conservative_unlock_tt: "Unlocks [GetIdeology('ut_ideology_reactionary_alternative').GetName] [concept_political_movement]"
+ ut_movement_sexual_liberation_unlock_tt: "Unlocks Sexual Liberation [concept_political_movement] (wip)"
 
  ut_liberal_feminism_leader: "Liberal Feminist"
  ut_liberal_feminism_leader_desc: "Liberal Feminists work towards Emancipation and advocate for [GetIdeology('ideology_market_liberal').GetName] reforms. More likely if [concept_ut_nd_democrat_core]."
@@ -808,9 +847,11 @@
  ut_fund_ideology_effect: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
 
  ut_has_new_dawn_progress_100: "Has #b 100#! [concept_ut_nd_progress_points]"
+ ut_has_new_dawn_progress_75: "Has #b 75#! [concept_ut_nd_progress_points]"
  ut_has_new_dawn_progress_50: "Has #b 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_50: "Gains #b 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_50: "Loses #r 50#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_neg_25: "Loses #r 25#! [concept_ut_nd_progress_points]"
 
  ut_force_become_subject: "Collectivize Council Republics"
  ut_force_become_subject_desc: "Force the target power bloc member to become your subject and join the Council Republic. They must be [GetLawType('law_council_republic').GetName] or [concept_ut_nd_communist_core] themselves."
@@ -824,7 +865,7 @@
  ut_fund_opposition_action_propose_name: "Start $ut_fund_opposition_action_name$"
  ut_fund_opposition_action_break_name: "Stop $ut_fund_opposition_action_name$"
  ut_fund_opposition_desc: "Fund the opposition in the target country to overthrow the ruling ideology.\n\n$ut_fund_opposition_effect$"
- ut_fund_opposition_effect: "2% chance per month for their core Ideology to lose #r 25#! [concept_ut_nd_progress_points] (may abort their New Dawn [concept_ut_nd_path_to_utopia] journal entry, Democracies are +50% effective against Autocratic countries)."
+ ut_fund_opposition_effect: "2% chance per month for their core Ideology to lose #r 25#! [concept_ut_nd_progress_points] (may abort their New Dawn [concept_ut_nd_path_to_utopia] journal entry, Democracies are +50% effective against Autocratic countries, +25% more effective if Online Forums and additionally Social Media is researched)."
  ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds opposition groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], this may lead to revolts in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] opposition groups reducing their ideology [concept_ut_nd_progress_points].\n\n$ut_fund_opposition_effect$"
 
 # Power Blocs
@@ -1146,8 +1187,10 @@
  movie_industry_desc: "Cinema becomes a powerful cultural force, shaping public opinion, projecting national identity, and influencing everything from fashion to politics on a global scale."
  online_forums: "Online Forums"
  online_forums_desc: "Decentralized discussion boards enable niche communities to form, debate to flourish, and new subcultures to emerge outside of traditional media structures."
+ online_forums_tt: "Fund Opposition is 1.25x more effective"
  social_media: "Social Media"
  social_media_desc: "Digital platforms revolutionize communication by enabling real-time sharing, mass mobilization, and algorithm-driven content shaping public discourse and behavior."
+ social_media_tt: "Fund Opposition is 1.5x more effective"
 
  multicultural_globalism: "Multiculturalism"
  multicultural_globalism_desc: "Multiculturalism is the recognition and support of diverse cultural identities within a society. It encourages the coexistence of different traditions, languages, and beliefs while promoting inclusion, tolerance, and equal rights for all cultural groups."
@@ -1489,6 +1532,9 @@
 
  building_heavy_machinery_factory_throughput_add: "$building_heavy_machinery_factory$ [concept_throughput]"
  building_heavy_machinery_factory_throughput_add_desc: "A bonus or penalty to both input and output of the $building_heavy_machinery_factory$."
+
+ building_group_bg_modern_industry_throughput_add: "$building_group_bg_modern_industry$ [concept_throughput]"
+ building_group_bg_modern_industry_throughput_add_desc: "A bonus or penalty to both input and output of the $building_group_bg_modern_industry$."
 
  building_plastic_factory_throughput_add: "$building_plastic_factory$ [concept_throughput]"
  building_plastic_factory_throughput_add_desc: "A bonus or penalty to both input and output of the $building_plastic_factory$."

@@ -728,9 +728,9 @@ ut_force_become_subject = {
 
 	possible = {
 		custom_tooltip = {
-			text = ut_has_new_dawn_progress_100
+			text = ut_has_new_dawn_progress_75
 			ut_has_new_dawn_progress_communist = {
-				VALUE = 100
+				VALUE = 75
 			}
 		}
 		scope:target_country = {
@@ -788,9 +788,9 @@ ut_force_become_subject = {
 			}
 		}
 
-		custom_tooltip = ut_add_new_dawn_progress_neg_50
+		custom_tooltip = ut_add_new_dawn_progress_neg_25
 		ut_add_new_dawn_progress_communist = {
-			VALUE = -50
+			VALUE = -25
 		}
 	}
 
@@ -855,9 +855,9 @@ ut_force_regime_change = {
 			country_rank <= rank_value:minor_power
 		}
 		custom_tooltip = {
-			text = ut_has_new_dawn_progress_100
+			text = ut_has_new_dawn_progress_75
 			ut_has_new_dawn_progress_fascist = {
-				VALUE = 100
+				VALUE = 75
 			}
 		}
 		custom_tooltip = {
@@ -926,9 +926,9 @@ ut_force_regime_change = {
 			}
 		}
 
-		custom_tooltip = ut_add_new_dawn_progress_neg_50
+		custom_tooltip = ut_add_new_dawn_progress_neg_25
 		ut_add_new_dawn_progress_fascist = {
-			VALUE = -50
+			VALUE = -25
 		}
 	}
 

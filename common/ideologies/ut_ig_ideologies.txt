@@ -70,7 +70,7 @@ ideology_urbanist_economy_base = {
 		law_isolationism = disapprove
 		law_protectionism = neutral
 		law_mercantilism = neutral
-		law_free_trade = approve
+		law_free_trade = neutral
 		law_free_trade_union = approve
 		law_protectionism_union = approve
 		law_international_trade = approve
@@ -224,6 +224,49 @@ ideology_plutocratic_democratic = {
 	}
 }
 
+#IG Industrial Communist
+ideology_plutocratic_communist = {
+	icon = "gfx/interface/icons/ideology_icons/plutocratic.dds"
+	
+	lawgroup_distribution_of_power = {
+		law_oligarchy = approve
+		law_wealth_voting = approve
+		law_technocracy = neutral
+		law_landed_voting = neutral
+		law_census_voting = neutral
+		law_single_party_state = approve
+		law_autocracy = disapprove
+		law_universal_suffrage = strongly_disapprove
+		law_anarchy = strongly_disapprove
+	}
+
+	lawgroup_governance_principles = {
+		law_monarchy = neutral			
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_corporate_state = disapprove
+		law_theocracy = disapprove
+		law_council_republic = disapprove
+	}
+	
+	lawgroup_taxation = {
+		law_per_capita_based_taxation = approve
+		law_consumption_based_taxation = neutral
+		law_land_based_taxation = neutral
+		law_proportional_taxation = neutral
+		law_graduated_taxation = disapprove
+		ut_law_tax_code = disapprove
+	}	
+	
+	lawgroup_colonization = {
+		law_colonial_exploitation = neutral
+		law_no_colonial_affairs = neutral
+		law_decolonization = strongly_approve
+		law_colonial_resettlement = neutral
+		law_frontier_colonization = neutral
+	}
+}
+
 #IG Industrial Era 6/Non-Democratic
 ideology_plutocratic_alternative = {
 	icon = "gfx/interface/icons/ideology_icons/plutocratic.dds"
@@ -313,6 +356,43 @@ ideology_reactionary_democratic = {
 		law_no_environment_protection = neutral
 		law_environment_protection_institute = approve
 		law_environment_protection_institute_two = disapprove
+	}
+}
+
+#IG Burgeois Authoritarian Communist
+ideology_reactionary_communist = {
+	icon = "gfx/interface/icons/ideology_icons/reactionary.dds"
+	
+	lawgroup_governance_principles = {
+		law_monarchy = neutral
+		law_theocracy = neutral		
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_corporate_state = approve
+		law_council_republic = neutral
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = neutral
+		law_neo_ethno_state = approve
+		law_national_supremacy = approve
+		law_racial_segregation = approve
+		law_cultural_exclusion = approve
+		law_multicultural = neutral	
+		law_multicultural_globalism = disapprove	
+	}
+
+	lawgroup_migration = {
+		law_closed_borders = neutral
+		law_migration_controls = strongly_approve
+		law_registration_process = approve
+		law_no_migration_controls = disapprove
+	}
+
+	lawgroup_environment_protection = {
+		law_no_environment_protection = neutral
+		law_environment_protection_institute = approve
+		law_environment_protection_institute_two = neutral
 	}
 }
 
@@ -445,6 +525,33 @@ ideology_socialist_democratic = {
 	}
 }
 
+#todo maybe for fascist?
+ideology_republican_alternative = {
+	icon = "gfx/interface/icons/ideology_icons/republican.dds"
+	#todo add anti technocrat character ideology trigger by events
+	
+	lawgroup_governance_principles = {	
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_corporate_state = strongly_approve
+		law_monarchy = neutral	
+		law_theocracy = neutral
+		law_council_republic = approve
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = approve
+		law_census_voting = approve
+		law_wealth_voting = neutral
+		law_landed_voting = disapprove
+		law_single_party_state = strongly_approve
+		law_technocracy = approve
+		law_oligarchy = disapprove
+		law_autocracy = disapprove
+		law_anarchy = strongly_disapprove
+	}	
+}
+
 #IG Unions Fascist
 #character ideology? draft?
 
@@ -517,11 +624,11 @@ ut_ideology_laissez_faire = {
 	}		
 		
 	lawgroup_childrens_rights = {
-		law_child_labor_allowed = approve
-		law_restricted_child_labor = neutral
-		law_compulsory_primary_school = disapprove
-		law_compulsory_secondary_school = strongly_disapprove
-		law_compulsory_tertiary_school = strongly_disapprove
+		law_child_labor_allowed = disapprove
+		law_restricted_child_labor = approve
+		law_compulsory_primary_school = neutral
+		law_compulsory_secondary_school = neutral
+		law_compulsory_tertiary_school = disapprove
 	}
 	
 	lawgroup_labor_rights = {

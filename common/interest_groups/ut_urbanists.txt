@@ -13,6 +13,13 @@
 	character_ideologies = {
 		ideology_moderate
 		ut_ideology_environmentalist_leader
+		ut_ideology_cosmopolitan_leader
+		ut_ideology_autocratic_leader
+		ut_ideology_national_socialist_leader
+		ut_ideology_economical_corporatist_leader
+		ut_liberal_feminism_leader
+		ut_radical_feminism_leader
+		ut_social_feminism_leader
 		ideology_authoritarian
 		ideology_corporatist_leader
 		ideology_liberal_leader
@@ -88,6 +95,50 @@
 
 	pop_weight = {
 		value = 0
+		
+		if = {
+			limit = {
+				strata = lower
+				standard_of_living > 10
+			}
+			add = {
+				desc = "POP_BASE_ATTRACTION"
+				value = standard_of_living
+				multiply = 2
+			}
+		}
+		else_if = {
+			limit = {
+				strata = lower
+				standard_of_living > 25
+			}
+			add = {
+				desc = "POP_BASE_ATTRACTION"
+				value = standard_of_living
+				multiply = 3
+			}
+		}
+		else_if = {
+			limit = {
+				strata = middle
+				standard_of_living > 25
+			}
+			add = {
+				desc = "POP_BASE_ATTRACTION"
+				value = standard_of_living
+				multiply = 4
+			}
+		}
+		else_if = {
+			limit = {
+				strata = middle
+			}
+			add = {
+				desc = "POP_BASE_ATTRACTION"
+				value = standard_of_living
+				multiply = 2
+			}
+		}
 
 		add = {
 			desc = "POP_SERVICE_WORKERS"
@@ -99,15 +150,33 @@
 			}
 		}
 
+		#todo investigate currently intelligentsia small for academics but both small
 		add = {
 			desc = "POP_ACADEMICS"
 			if = {
 				limit = {
 					is_pop_type = academics
 				}
-				value = 100
+				value = 50
 			}
 		}
+
+		add = {
+			desc = "POP_ACADEMICS"
+			if = {
+				limit = {
+					owner = {
+						OR = {
+							has_law_or_variant = law_type:law_multicultural
+							has_law_or_variant = law_type:law_multicultural_globalism
+						}
+					}
+					is_pop_type = academics
+				}
+				value = 50
+			}
+		}
+		
 
 		add = {
 			desc = "POP_BUREAUCRATS"
@@ -120,7 +189,7 @@
 		}
 
 		add = {
-			desc = "POP_CLERKS"
+			desc = "POP_MACHINISTS"
 			if = {
 				limit = {
 					is_pop_type = machinists
@@ -143,15 +212,32 @@
 			desc = "ADMINISTRATION_ROLE"
 			if = {
 				limit = {
-					is_pop_type = capitalists
+					owner = {
+						OR = {
+							has_law_or_variant = law_type:law_multicultural
+							has_law_or_variant = law_type:law_multicultural_globalism
+						}
+					}
+					OR = {
+						is_pop_type = aristocrats
+						is_pop_type = clergymen
+						is_pop_type = capitalists
+					}
+					OR = {
+						pop_employment_building_group = bg_service
+						pop_employment_building_group = bg_arts
+						pop_employment_building_group = bg_government
+						pop_employment_building_group = bg_private_infrastructure
+						pop_employment_building_group = bg_financial_districts
+					}
 				}
-				value = 25
+				value = 125
 			}
 		}
 
 		if = {
 			limit = {
-				literacy_rate >= 0.90
+				literacy_rate >= 0.80
 			}
 			add = {
 				desc = "POP_LITERACY"
@@ -172,20 +258,23 @@
 		}
 
 		
-		add = {
-			desc = "URBAN_POP"
-			if = {
-				limit = {
-					NOR = {
-						pop_employment_building_group = bg_agriculture
-						pop_employment_building_group = bg_ranching
-						pop_employment_building_group = bg_plantations
-					}
+		if = {
+			limit = {
+				standard_of_living >= 10
+				NOR = {
+					pop_employment_building_group = bg_agriculture
+					pop_employment_building_group = bg_ranching
+					pop_employment_building_group = bg_plantations
+					pop_employment_building_group = bg_extraction
 				}
-				value = 25
-				add = this.standard_of_living
+			}
+			add = {
+				desc = "URBAN_POP"
+				value = standard_of_living
+				multiply = 2
 			}
 		}
+
 
 		multiply = {
 			desc = "LEADER_POPULARITY"

@@ -512,7 +512,7 @@
 
 ut_research_assistance_treaty = {
 	kind = directed
-	cost = 150
+	cost = 200
 
 	relations_progress_per_day = 1
 	relations_improvement_max = 20
@@ -1939,305 +1939,213 @@ ut_communism_article = {
 				}
 			}
 
+			# We are doing this to be able to reuse loc across treaties and diplomatic actions
+			scope:source_country = {
+				save_temporary_scope_as = target
+			}
+			scope:target_country = {
+				save_temporary_scope_as = actor
+			}
+
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_BASE_ADDITIONAL"
+				value = -30
+			}
+
+			### Leverage
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_LEVERAGE"
+				value = "scope:target_country.power_bloc.leverage_advantage(scope:source_country)"
+				multiply = 0.5
+
+				### Leverage effect when already part of the bloc can go into negative, to help determine if they want to leave
+				if = {
+					limit = { is_in_same_power_bloc = scope:target_country	}
+					min = -200
+				}
+				else = {
+					min = 0
+				}
+
+				max = 10
+			}
+
 			if = {
 				limit = {
-					scope:source_country ?= this
+					scope:source_country = { is_in_power_bloc = yes }
 				}
 
-				# We are doing this to be able to reuse loc across treaties and diplomatic actions
-				scope:source_country = {
-					save_temporary_scope_as = target
-				}
-				scope:target_country = {
-					save_temporary_scope_as = actor
-				}
-
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_BASE_ADDITIONAL"
-					value = -30
-				}
-
-				### Leverage
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_LEVERAGE"
-					value = "scope:target_country.power_bloc.leverage_advantage(scope:source_country)"
-					multiply = 0.5
-
-					### Leverage effect when already part of the bloc can go into negative, to help determine if they want to leave
-					if = {
-						limit = { is_in_same_power_bloc = scope:target_country	}
-						min = -200
-					}
-					else = {
-						min = 0
-					}
-
-					max = 10
-				}
-
-				if = {
-					limit = {
-						scope:source_country = { is_in_power_bloc = yes }
-					}
-
-					### Cohesion of current Bloc
-					subtract = {
-						desc = "DIPLOMATIC_ACCEPTANCE_COHESION_OF_TARGET"
-						value = "scope:source_country.power_bloc.current_cohesion_number"
-						subtract = 50
-
-						### Low cohesion is more impactful than high cohesion
-						if = {
-							limit = { scope:source_country.power_bloc = { current_cohesion_number < 20 } }
-							multiply = 2
-						}
-						else_if = {
-							limit = { scope:source_country.power_bloc = { current_cohesion_number < 40 } }
-							multiply = 1.5
-						}
-						max = 25
-					}
-				}
-
-				### Cohesion
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_COHESION"
-					value = "scope:target_country.power_bloc.current_cohesion_number"
+				### Cohesion of current Bloc
+				subtract = {
+					desc = "DIPLOMATIC_ACCEPTANCE_COHESION_OF_TARGET"
+					value = "scope:source_country.power_bloc.current_cohesion_number"
 					subtract = 50
 
 					### Low cohesion is more impactful than high cohesion
 					if = {
-						limit = { scope:target_country.power_bloc ?= { current_cohesion_number < 20 } }
-						multiply = 4
+						limit = { scope:source_country.power_bloc = { current_cohesion_number < 20 } }
+						multiply = 2
 					}
 					else_if = {
-						limit = { scope:target_country.power_bloc ?= { current_cohesion_number < 40 } }
-						multiply = 2
+						limit = { scope:source_country.power_bloc = { current_cohesion_number < 40 } }
+						multiply = 1.5
 					}
-
-					### Care more about cohesion when part of bloc
-					if = {
-						limit = { is_in_same_power_bloc = scope:target_country }
-						multiply = 2
-					}
+					max = 25
 				}
+			}
 
+			### Cohesion
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_COHESION"
+				value = "scope:target_country.power_bloc.current_cohesion_number"
+				subtract = 50
+
+				### Low cohesion is more impactful than high cohesion
 				if = {
-					limit = {
-						scope:target_country.country_rank > rank_value:insignificant_power
-					}
-					add = {
-						desc = "DIPLOMATIC_ACCEPTANCE_IDENTITY_AFFINITY_TO_RANK"
-						if = {
-							limit = {
-								scope:target_country.country_rank = rank_value:great_power
-							}
-							add = modifier:power_bloc_invite_acceptance_great_power_add
-						}
-						else_if = {
-							limit = {
-								scope:target_country.country_rank = rank_value:major_power
-							}
-							add = modifier:power_bloc_invite_acceptance_major_power_add
-						}
-						else_if = {
-							limit = {
-								scope:target_country.country_rank = rank_value:minor_power
-							}
-							add = modifier:power_bloc_invite_acceptance_minor_power_add
-						}
-						else_if = {
-							limit = {
-								scope:target_country.country_rank = rank_value:unrecognized_major_power
-							}
-							add = modifier:power_bloc_invite_acceptance_unrecognized_major_power_add
-						}
-						else_if = {
-							limit = {
-								scope:target_country.country_rank = rank_value:unrecognized_regional_power
-							}
-							add = modifier:power_bloc_invite_acceptance_unrecognized_regional_power_add
-						}
-					}
+					limit = { scope:target_country.power_bloc ?= { current_cohesion_number < 20 } }
+					multiply = 4
+				}
+				else_if = {
+					limit = { scope:target_country.power_bloc ?= { current_cohesion_number < 40 } }
+					multiply = 2
 				}
 
+				### Care more about cohesion when part of bloc
+				if = {
+					limit = { is_in_same_power_bloc = scope:target_country }
+					multiply = 2
+				}
+			}
+
+			if = {
+				limit = {
+					scope:target_country.country_rank > rank_value:insignificant_power
+				}
 				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_FROM_IDENTITY"
-					scope:target_country.power_bloc = {
-						add = modifier:power_bloc_invite_acceptance_add
-					}
-				}
-
-				### How the selected identity fits them
-				add = ai_power_bloc_identity_score_treaties
-
-				### Similar to identities but considers selected principles
-				add = ai_power_bloc_principle_score_treaties
-
-				# Ideological opinion is always a factor, but much weaker for non ideological unions
-				# Score for ideological unions is handled in ai_power_bloc_identity_score script value
-				if = {
-					limit = {
-						power_bloc ?= {
-							NOT = { has_identity = identity:identity_ideological_union }
-						}
-					}
-					add = {
-						desc = "DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION"
-						value = "scope:target_country.ai_ideological_opinion(scope:source_country)"
-						multiply = 0.25
-						max = 10
-						min = -25
-					}
-				}
-
-				### Powerful Protectors is always a factor, but less so if not being invited to a sovereign empire
-				if = {
-					limit = {
-						scope:target_country.power_bloc ?= {
-							NOT = { has_identity = identity:identity_sovereign_empire }
-						}
-						has_powerful_protectors = {
-							ACTOR_SCOPE = scope:source_country
-						}
-					}
-					add = {
-						desc = "DIPLOMATIC_ACCEPTANCE_POWERFUL_PROTECTORS_THEM"
-						value = -25
-					}
-				}
-
-				### Relative rank
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_RANK"
-					value = scope:target_country.country_rank
-					subtract = 2
-					subtract = country_rank
-					multiply = 5
-				}
-
-				if = {
-					limit = {
-						gdp >= 2000000
-					}
-
-					subtract = {
-						desc = "DIPLOMATIC_ACCEPTANCE_HIGH_GDP"
-						value = gdp
-						subtract = 1000000
-						divide = 1000000
-						min = 1
-						max = 10
-					}
-				}
-
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_ATTITUDE"
+					desc = "DIPLOMATIC_ACCEPTANCE_IDENTITY_AFFINITY_TO_RANK"
 					if = {
 						limit = {
-							OR = {
-								has_attitude = {
-									who = scope:target_country
-									attitude = antagonistic
-								}
-								has_attitude = {
-									who = scope:target_country
-									attitude = domineering
-								}
-								has_attitude = {
-									who = scope:target_country
-									attitude = belligerent
-								}
-							}
+							scope:target_country.country_rank = rank_value:great_power
 						}
-						value = -200
+						add = modifier:power_bloc_invite_acceptance_great_power_add
+					}
+					else_if = {
+						limit = {
+							scope:target_country.country_rank = rank_value:major_power
+						}
+						add = modifier:power_bloc_invite_acceptance_major_power_add
+					}
+					else_if = {
+						limit = {
+							scope:target_country.country_rank = rank_value:minor_power
+						}
+						add = modifier:power_bloc_invite_acceptance_minor_power_add
+					}
+					else_if = {
+						limit = {
+							scope:target_country.country_rank = rank_value:unrecognized_major_power
+						}
+						add = modifier:power_bloc_invite_acceptance_unrecognized_major_power_add
+					}
+					else_if = {
+						limit = {
+							scope:target_country.country_rank = rank_value:unrecognized_regional_power
+						}
+						add = modifier:power_bloc_invite_acceptance_unrecognized_regional_power_add
 					}
 				}
 			}
-			else = {
-				scope:source_country = {
-					save_temporary_scope_as = actor
+
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_FROM_IDENTITY"
+				scope:target_country.power_bloc = {
+					add = modifier:power_bloc_invite_acceptance_add
 				}
-				scope:target_country = {
-					save_temporary_scope_as = target
+			}
+
+			### How the selected identity fits them
+			add = ai_power_bloc_identity_score_treaties
+
+			### Similar to identities but considers selected principles
+			add = ai_power_bloc_principle_score_treaties
+
+			# Ideological opinion is always a factor, but much weaker for non ideological unions
+			# Score for ideological unions is handled in ai_power_bloc_identity_score script value
+			if = {
+				limit = {
+					power_bloc ?= {
+						NOT = { has_identity = identity:identity_ideological_union }
+					}
+				}
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION"
+					value = "scope:target_country.ai_ideological_opinion(scope:source_country)"
+					multiply = 0.25
+					max = 10
+					min = -25
+				}
+			}
+
+			### Powerful Protectors is always a factor, but less so if not being invited to a sovereign empire
+			if = {
+				limit = {
+					scope:target_country.power_bloc ?= {
+						NOT = { has_identity = identity:identity_sovereign_empire }
+					}
+					has_powerful_protectors = {
+						ACTOR_SCOPE = scope:source_country
+					}
+				}
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_POWERFUL_PROTECTORS_THEM"
+					value = -25
+				}
+			}
+
+			### Relative rank
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_RANK"
+				value = scope:target_country.country_rank
+				subtract = 2
+				subtract = country_rank
+				multiply = 5
+			}
+
+			if = {
+				limit = {
+					gdp >= 2000000
 				}
 
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_BASE_ADDITIONAL"
-					value = -10
-				}
-
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_LEVERAGE_OF_TARGET"
-					value = "power_bloc.leverage_advantage(scope:source_country)"
-					multiply = 0.5
-					min = 0
+				subtract = {
+					desc = "DIPLOMATIC_ACCEPTANCE_HIGH_GDP"
+					value = gdp
+					subtract = 1000000
+					divide = 1000000
+					min = 1
 					max = 10
 				}
+			}
 
-				### Impact on Cohesion
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_DECREASED_COHESION"
-					value = "power_bloc.predicted_cohesion_percentage_with(scope:source_country)"
-					subtract = "power_bloc.current_cohesion_number"
-					multiply = 2 # -2 acceptance for each lost point of cohesion
-					if = {
-						limit = {
-							exists = power_bloc
-							NOT = {
-								scope:source_country.power_bloc ?= power_bloc
-							}
-						}
-						if = {
-							limit = { "power_bloc.current_cohesion_number" <= 20 }
-							multiply = 5
-						}
-						else_if = {
-							limit = { "power_bloc.current_cohesion_number" <= 40 }
-							multiply = 2
-						}
-					}
-
-					max = 0
-				}
-
-				### How we fit their selected identity
-				add = ai_accept_join_request_score_treaties
-
-				# Ideological opinion is always a factor, but much weaker for non ideological unions
-				# Score for ideological unions is handled in ai_accept_join_request_score script value
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_ATTITUDE"
 				if = {
 					limit = {
-						scope:target_country.power_bloc ?= {
-							NOT = { has_identity = identity:identity_ideological_union }
-						}
-					}
-					add = {
-						desc = "DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION"
-						value = "scope:source_country.ai_ideological_opinion(scope:target_country)"
-						multiply = 0.1
-						max = 20
-						min = -60
-					}
-				}
-
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_ATTITUDE"
-					if = {
-						limit = {
-							OR = {
-								has_attitude = {
-									who = scope:source_country
-									attitude = antagonistic
-								}
-								has_attitude = {
-									who = scope:source_country
-									attitude = belligerent
-								}
+						OR = {
+							has_attitude = {
+								who = scope:target_country
+								attitude = antagonistic
+							}
+							has_attitude = {
+								who = scope:target_country
+								attitude = domineering
+							}
+							has_attitude = {
+								who = scope:target_country
+								attitude = belligerent
 							}
 						}
-						value = -200
 					}
+					value = -200
 				}
 			}
 		}

@@ -66,6 +66,7 @@ ut_ideology_new_dawn_fascist_trigger = {
 				has_ideology = ideology:ideology_corporatist_leader
 				has_ideology = ideology:ideology_land_reformer
 				has_ideology = ideology:ideology_modernizer_leader
+				has_ideology = ideology:ut_ideology_national_socialist_leader
 			}
 		}
 	}
@@ -119,10 +120,7 @@ ut_ideology_new_dawn_autocrat_trigger = {
 				has_ideology = ideology:ideology_moderate
 				has_ideology = ideology:ideology_jingoist_leader
 				has_ideology = ideology:ideology_protectionist
-				has_ideology = ideology:ideology_positivist
 				has_ideology = ideology:ideology_corporatist_leader
-				has_ideology = ideology:ideology_land_reformer
-				has_ideology = ideology:ideology_luddite
 			}
 		}
 	}
@@ -143,6 +141,7 @@ ut_ideology_new_dawn_communist_trigger = {
 				has_ideology = ideology:ideology_moderate
 				has_ideology = ideology:ideology_land_reformer
 				has_ideology = ideology:ideology_modernizer_leader
+				has_ideology = ideology:ideology_positivist
 			}
 		}
 	}
@@ -274,7 +273,7 @@ ut_articles_mutual_accept_favorable_stance = {
 				has_modifier = ut_new_dawn_core_democratic_mod
 			}
 			scope:second_country = {
-				has_modifier = ut_new_dawn_core_democratic_mod
+				ut_has_modifier_democratic_favorable_stance = yes
 			}
 		}
 		AND = {
@@ -282,10 +281,7 @@ ut_articles_mutual_accept_favorable_stance = {
 				has_modifier = ut_new_dawn_core_autocratic_mod
 			}
 			scope:second_country = {
-				OR = {
-					has_modifier = ut_new_dawn_core_autocratic_mod
-					has_modifier = ut_new_dawn_core_fascist_mod
-				}
+				ut_has_modifier_autocratic_favorable_stance = yes
 			}
 		}
 		AND = {
@@ -293,10 +289,7 @@ ut_articles_mutual_accept_favorable_stance = {
 				has_modifier = ut_new_dawn_core_fascist_mod
 			}
 			scope:second_country = {
-				OR = {
-					has_modifier = ut_new_dawn_core_autocratic_mod
-					has_modifier = ut_new_dawn_core_fascist_mod
-				}
+				ut_has_modifier_fascist_favorable_stance = yes
 			}
 		}
 		AND = {
@@ -304,7 +297,7 @@ ut_articles_mutual_accept_favorable_stance = {
 				has_modifier = ut_new_dawn_core_communist_mod
 			}
 			scope:second_country = {
-				has_modifier = ut_new_dawn_core_communist_mod
+				ut_has_modifier_communist_favorable_stance = yes
 			}
 		}
 	}
@@ -317,7 +310,7 @@ ut_articles_mutual_accept_opposing_stance = {
 				has_modifier = ut_new_dawn_core_democratic_mod
 			}
 			scope:second_country = {
-				has_modifier = ut_new_dawn_core_fascist_mod
+				ut_has_modifier_democratic_opposing_stance = yes
 			}
 		}
 		AND = {
@@ -325,7 +318,7 @@ ut_articles_mutual_accept_opposing_stance = {
 				has_modifier = ut_new_dawn_core_autocratic_mod
 			}
 			scope:second_country = {
-				has_modifier = ut_new_dawn_core_communist_mod
+				ut_has_modifier_autocratic_opposing_stance = yes
 			}
 		}
 		AND = {
@@ -333,10 +326,7 @@ ut_articles_mutual_accept_opposing_stance = {
 				has_modifier = ut_new_dawn_core_fascist_mod
 			}
 			scope:second_country = {
-				OR = {
-					has_modifier = ut_new_dawn_core_democratic_mod
-					has_modifier = ut_new_dawn_core_communist_mod
-				}
+				ut_has_modifier_fascist_opposing_stance = yes
 			}
 		}
 		AND = {
@@ -344,7 +334,7 @@ ut_articles_mutual_accept_opposing_stance = {
 				has_modifier = ut_new_dawn_core_communist_mod
 			}
 			scope:second_country = {
-				has_modifier = ut_new_dawn_core_fascist_mod
+				ut_has_modifier_communist_opposing_stance = yes
 			}
 		}
 	}
@@ -357,7 +347,7 @@ ut_articles_directed_accept_favorable_stance = {
 				has_modifier = ut_new_dawn_core_democratic_mod
 			}
 			scope:target_country = {
-				has_modifier = ut_new_dawn_core_democratic_mod
+				ut_has_modifier_democratic_favorable_stance = yes
 			}
 		}
 		AND = {
@@ -365,10 +355,7 @@ ut_articles_directed_accept_favorable_stance = {
 				has_modifier = ut_new_dawn_core_autocratic_mod
 			}
 			scope:target_country = {
-				OR = {
-					has_modifier = ut_new_dawn_core_autocratic_mod
-					has_modifier = ut_new_dawn_core_fascist_mod
-				}
+				ut_has_modifier_autocratic_favorable_stance = yes
 			}
 		}
 		AND = {
@@ -376,10 +363,7 @@ ut_articles_directed_accept_favorable_stance = {
 				has_modifier = ut_new_dawn_core_fascist_mod
 			}
 			scope:target_country = {
-				OR = {
-					has_modifier = ut_new_dawn_core_autocratic_mod
-					has_modifier = ut_new_dawn_core_fascist_mod
-				}
+				ut_has_modifier_fascist_favorable_stance = yes
 			}
 		}
 		AND = {
@@ -387,7 +371,7 @@ ut_articles_directed_accept_favorable_stance = {
 				has_modifier = ut_new_dawn_core_communist_mod
 			}
 			scope:target_country = {
-				has_modifier = ut_new_dawn_core_communist_mod
+				ut_has_modifier_communist_favorable_stance = yes
 			}
 		}
 	}
@@ -400,7 +384,7 @@ ut_articles_directed_accept_opposing_stance = {
 				has_modifier = ut_new_dawn_core_democratic_mod
 			}
 			scope:target_country = {
-				has_modifier = ut_new_dawn_core_fascist_mod
+				ut_has_modifier_democratic_opposing_stance = yes
 			}
 		}
 		AND = {
@@ -408,7 +392,7 @@ ut_articles_directed_accept_opposing_stance = {
 				has_modifier = ut_new_dawn_core_autocratic_mod
 			}
 			scope:target_country = {
-				has_modifier = ut_new_dawn_core_communist_mod
+				ut_has_modifier_autocratic_opposing_stance = yes
 			}
 		}
 		AND = {
@@ -416,10 +400,7 @@ ut_articles_directed_accept_opposing_stance = {
 				has_modifier = ut_new_dawn_core_fascist_mod
 			}
 			scope:target_country = {
-				OR = {
-					has_modifier = ut_new_dawn_core_democratic_mod
-					has_modifier = ut_new_dawn_core_communist_mod
-				}
+				ut_has_modifier_fascist_opposing_stance = yes
 			}
 		}
 		AND = {
@@ -427,7 +408,7 @@ ut_articles_directed_accept_opposing_stance = {
 				has_modifier = ut_new_dawn_core_communist_mod
 			}
 			scope:target_country = {
-				has_modifier = ut_new_dawn_core_fascist_mod
+				ut_has_modifier_communist_opposing_stance = yes
 			}
 		}
 	}
@@ -440,7 +421,7 @@ ut_diplomatic_action_accept_favorable_stance = {
 				has_modifier = ut_new_dawn_core_democratic_mod
 			}
 			scope:target_country = {
-				has_modifier = ut_new_dawn_core_democratic_mod
+				ut_has_modifier_democratic_favorable_stance = yes
 			}
 		}
 		AND = {
@@ -448,10 +429,7 @@ ut_diplomatic_action_accept_favorable_stance = {
 				has_modifier = ut_new_dawn_core_autocratic_mod
 			}
 			scope:target_country = {
-				OR = {
-					has_modifier = ut_new_dawn_core_autocratic_mod
-					has_modifier = ut_new_dawn_core_fascist_mod
-				}
+				ut_has_modifier_autocratic_favorable_stance = yes
 			}
 		}
 		AND = {
@@ -459,10 +437,7 @@ ut_diplomatic_action_accept_favorable_stance = {
 				has_modifier = ut_new_dawn_core_fascist_mod
 			}
 			scope:target_country = {
-				OR = {
-					has_modifier = ut_new_dawn_core_autocratic_mod
-					has_modifier = ut_new_dawn_core_fascist_mod
-				}
+				ut_has_modifier_fascist_favorable_stance = yes
 			}
 		}
 		AND = {
@@ -470,11 +445,12 @@ ut_diplomatic_action_accept_favorable_stance = {
 				has_modifier = ut_new_dawn_core_communist_mod
 			}
 			scope:target_country = {
-				has_modifier = ut_new_dawn_core_communist_mod
+				ut_has_modifier_communist_favorable_stance = yes
 			}
 		}
 	}
 }
+
 ut_diplomatic_action_accept_opposing_stance = {
 	OR = {
 		AND = {
@@ -482,7 +458,7 @@ ut_diplomatic_action_accept_opposing_stance = {
 				has_modifier = ut_new_dawn_core_democratic_mod
 			}
 			scope:target_country = {
-				has_modifier = ut_new_dawn_core_fascist_mod
+				ut_has_modifier_democratic_opposing_stance = yes
 			}
 		}
 		AND = {
@@ -490,7 +466,7 @@ ut_diplomatic_action_accept_opposing_stance = {
 				has_modifier = ut_new_dawn_core_autocratic_mod
 			}
 			scope:target_country = {
-				has_modifier = ut_new_dawn_core_communist_mod
+				ut_has_modifier_autocratic_opposing_stance = yes
 			}
 		}
 		AND = {
@@ -498,8 +474,7 @@ ut_diplomatic_action_accept_opposing_stance = {
 				has_modifier = ut_new_dawn_core_fascist_mod
 			}
 			scope:target_country = {
-				has_modifier = ut_new_dawn_core_democratic_mod
-				has_modifier = ut_new_dawn_core_communist_mod
+				ut_has_modifier_fascist_opposing_stance = yes
 			}
 		}
 		AND = {
@@ -507,8 +482,113 @@ ut_diplomatic_action_accept_opposing_stance = {
 				has_modifier = ut_new_dawn_core_communist_mod
 			}
 			scope:target_country = {
-				has_modifier = ut_new_dawn_core_fascist_mod
+				ut_has_modifier_communist_opposing_stance = yes
 			}
 		}
 	}
+}
+
+ut_target_country_favorable_stance = {
+	OR = {
+		AND = {
+			has_modifier = ut_new_dawn_core_democratic_mod
+			scope:target_country = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+		}
+		AND = {
+			has_modifier = ut_new_dawn_core_autocratic_mod
+			scope:target_country = {
+				OR = {
+					has_modifier = ut_new_dawn_core_autocratic_mod
+					has_modifier = ut_new_dawn_core_fascist_mod
+				}
+			}
+		}
+		AND = {
+			has_modifier = ut_new_dawn_core_fascist_mod
+			scope:target_country = {
+				OR = {
+					has_modifier = ut_new_dawn_core_autocratic_mod
+					has_modifier = ut_new_dawn_core_fascist_mod
+				}
+			}
+		}
+		AND = {
+			has_modifier = ut_new_dawn_core_communist_mod
+			scope:target_country = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+		}
+	}
+}
+
+ut_target_country_opposing_stance = {
+	OR = {
+		AND = {
+			has_modifier = ut_new_dawn_core_democratic_mod
+			scope:target_country = {
+				ut_has_modifier_democratic_opposing_stance = yes
+			}
+		}
+		AND = {
+			has_modifier = ut_new_dawn_core_autocratic_mod
+			scope:target_country = {
+				ut_has_modifier_autocratic_opposing_stance = yes
+			}
+		}
+		AND = {
+			has_modifier = ut_new_dawn_core_fascist_mod
+			scope:target_country = {
+				ut_has_modifier_fascist_opposing_stance = yes
+			}
+		}
+		AND = {
+			has_modifier = ut_new_dawn_core_communist_mod
+			scope:target_country = {
+				ut_has_modifier_communist_opposing_stance = yes
+			}
+		}
+	}
+}
+
+ut_has_modifier_communist_favorable_stance = {
+	has_modifier = ut_new_dawn_core_communist_mod
+}
+
+ut_has_modifier_communist_opposing_stance = {
+	has_modifier = ut_new_dawn_core_fascist_mod
+}
+
+ut_has_modifier_fascist_favorable_stance = {
+	OR = {	
+		has_modifier = ut_new_dawn_core_fascist_mod
+		has_modifier = ut_new_dawn_core_autocratic_mod
+	}
+}
+
+ut_has_modifier_fascist_opposing_stance = {
+	OR = {
+		has_modifier = ut_new_dawn_core_democratic_mod
+		has_modifier = ut_new_dawn_core_communist_mod
+	}
+}
+
+ut_has_modifier_democratic_favorable_stance = {
+	has_modifier = ut_new_dawn_core_democratic_mod
+}
+
+ut_has_modifier_democratic_opposing_stance = {
+	has_modifier = ut_new_dawn_core_fascist_mod
+}
+
+ut_has_modifier_autocratic_favorable_stance = {
+	OR = {	
+		has_modifier = ut_new_dawn_core_autocratic_mod
+		has_modifier = ut_new_dawn_core_fascist_mod
+	}
+}
+
+ut_has_modifier_autocratic_opposing_stance = {
+	has_modifier = ut_new_dawn_core_communist_mod
 }
