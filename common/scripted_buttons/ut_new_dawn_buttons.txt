@@ -453,6 +453,7 @@ je_ut_new_dawn_democratic_spirit = {
 			limit = {
 				is_power_bloc_leader = yes
 				has_identity = identity:identity_sovereign_empire
+				is_ai = yes
 			}
 			if = {
 				limit = {
@@ -461,6 +462,9 @@ je_ut_new_dawn_democratic_spirit = {
 						is_power_bloc_leader = yes
 						has_modifier = ut_new_dawn_core_democratic_mod
 						save_temporary_scope_as = target_country
+						power_bloc ?= {
+							NOT = { has_identity = identity:identity_sovereign_empire }
+						}
 					}
 				}
 				
@@ -472,6 +476,9 @@ je_ut_new_dawn_democratic_spirit = {
 						is_player = no
 						is_power_bloc_leader = yes
 						save_temporary_scope_as = target_country
+						power_bloc ?= {
+							NOT = { has_identity = identity:identity_sovereign_empire }
+						}
 					}
 					root = {
 						join_power_bloc = scope:target_country
@@ -574,7 +581,9 @@ je_ut_new_dawn_democratic_power_bloc = {
 		is_subject = no
 		is_in_power_bloc = yes
 		power_bloc ?= {
-			NOT = { has_identity = identity:identity_sovereign_empire }
+			NOT = { has_principle_group = principle_group:principle_group_exploit_members }
+			#todo some better way
+			#NOT = { has_identity = identity:identity_sovereign_empire }
 		}
 	}
 
