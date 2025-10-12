@@ -421,6 +421,14 @@ je_ut_new_dawn_democratic = {
 				name = je_ut_new_dawn_core_progress
 				value = "scope:journal_entry.scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)"
 			}
+			set_variable = {
+				name = je_ut_new_dawn_core_progress_diff
+				value = var:je_ut_new_dawn_core_progress
+			}
+			change_variable = {
+				name = je_ut_new_dawn_core_progress_diff
+				subtract = var:je_ut_new_dawn_core_prev_progress
+			}
 		}
 		random_events = {
 			400 = 0
@@ -584,6 +592,14 @@ je_ut_new_dawn_autocratic = {
 			set_variable = {
 				name = je_ut_new_dawn_core_progress
 				value = "scope:journal_entry.scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)"
+			}
+			set_variable = {
+				name = je_ut_new_dawn_core_progress_diff
+				value = var:je_ut_new_dawn_core_progress
+			}
+			change_variable = {
+				name = je_ut_new_dawn_core_progress_diff
+				subtract = var:je_ut_new_dawn_core_prev_progress
 			}
 		}
 		random_events = {
@@ -792,6 +808,14 @@ je_ut_new_dawn_fascist = {
 				name = je_ut_new_dawn_core_progress
 				value = "scope:journal_entry.scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)"
 			}
+			set_variable = {
+				name = je_ut_new_dawn_core_progress_diff
+				value = var:je_ut_new_dawn_core_progress
+			}
+			change_variable = {
+				name = je_ut_new_dawn_core_progress_diff
+				subtract = var:je_ut_new_dawn_core_prev_progress
+			}
 		}
 		random_events = {
 			400 = 0
@@ -963,6 +987,14 @@ je_ut_new_dawn_communist = {
 			set_variable = {
 				name = je_ut_new_dawn_core_progress
 				value = "scope:journal_entry.scripted_bar_progress(je_ut_new_dawn_communist_points_bar)"
+			}
+			set_variable = {
+				name = je_ut_new_dawn_core_progress_diff
+				value = var:je_ut_new_dawn_core_progress
+			}
+			change_variable = {
+				name = je_ut_new_dawn_core_progress_diff
+				subtract = var:je_ut_new_dawn_core_prev_progress
 			}
 		}
 		random_events = {
