@@ -594,7 +594,8 @@ ut_modern_planes = {
 	
 	modifier = {
 		military_formation_attrition_risk_mult = -0.1
-		character_battle_condition_good_visibility_mult = 0.1
+		#todo fix (character not country scope)
+		#character_battle_condition_good_visibility_mult = 0.1
 	}
 
 	ai_weight = {

@@ -144,8 +144,8 @@ ut_fund_opposition = {
 								has_modifier = ut_new_dawn_core_autocratic_mod
 							}
 						}
-						multiply = {
-							value = local_var:progress_point_loss
+						change_local_variable = {
+							name = progress_point_loss
 							multiply = 1.5
 						}
 					}
@@ -153,8 +153,8 @@ ut_fund_opposition = {
 						limit = {
 							has_technology_researched = online_forums
 						}
-						multiply = {
-							value = local_var:progress_point_loss
+						change_local_variable = {
+							name = progress_point_loss
 							multiply = 1.25
 						}
 					}
@@ -162,8 +162,8 @@ ut_fund_opposition = {
 						limit = {
 							has_technology_researched = social_media
 						}
-						multiply = {
-							value = local_var:progress_point_loss
+						change_local_variable = {
+							name = progress_point_loss
 							multiply = 1.25
 						}
 					}
