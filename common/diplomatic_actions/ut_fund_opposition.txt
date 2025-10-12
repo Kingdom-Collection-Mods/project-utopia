@@ -145,7 +145,7 @@ ut_fund_opposition = {
 							}
 						}
 						multiply = {
-							value = progress_point_loss
+							value = local_var:progress_point_loss
 							multiply = 1.5
 						}
 					}
@@ -154,7 +154,7 @@ ut_fund_opposition = {
 							has_technology_researched = online_forums
 						}
 						multiply = {
-							value = progress_point_loss
+							value = local_var:progress_point_loss
 							multiply = 1.25
 						}
 					}
@@ -163,7 +163,7 @@ ut_fund_opposition = {
 							has_technology_researched = social_media
 						}
 						multiply = {
-							value = progress_point_loss
+							value = local_var:progress_point_loss
 							multiply = 1.25
 						}
 					}
@@ -175,7 +175,7 @@ ut_fund_opposition = {
 							je:je_ut_new_dawn_autocratic = {
 								add_progress = {
 									name = je_ut_new_dawn_autocratic_points_bar
-									value = -25
+									value = local_var:progress_point_loss
 								}
 							}
 						}
@@ -186,7 +186,7 @@ ut_fund_opposition = {
 							je:je_ut_new_dawn_democratic = {
 								add_progress = {
 									name = je_ut_new_dawn_democratic_points_bar
-									value = -25
+									value = local_var:progress_point_loss
 								}
 							}
 						}
@@ -197,7 +197,7 @@ ut_fund_opposition = {
 							je:je_ut_new_dawn_fascist = {
 								add_progress = {
 									name = je_ut_new_dawn_fascist_points_bar
-									value = -25
+									value = local_var:progress_point_loss
 								}
 							}
 						}
@@ -208,7 +208,7 @@ ut_fund_opposition = {
 							je:je_ut_new_dawn_communist = {
 								add_progress = {
 									name = je_ut_new_dawn_communist_points_bar
-									value = -25
+									value = local_var:progress_point_loss
 								}
 							}
 						}
