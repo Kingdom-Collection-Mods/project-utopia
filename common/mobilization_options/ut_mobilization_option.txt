@@ -14,10 +14,7 @@ ut_mobilization_option_cas_jet_planes = {
 
 	possible = {
 		market ?= {
-			mg:fabric ?= {
-				has_potential_supply = yes
-			}
-			mg:oil ?= {
+			mg:utopia_jet_planes ?= {
 				has_potential_supply = yes
 			}
 		}
