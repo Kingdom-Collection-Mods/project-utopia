@@ -1104,6 +1104,7 @@ je_ut_communist_one_block = {
 			NOT = {
 				any_power_bloc_member = {
 					NOT = { is_subject_of = root }
+					NOT = { this = root }
 				}
 			}
 		}
