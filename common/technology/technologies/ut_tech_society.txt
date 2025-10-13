@@ -682,6 +682,7 @@ national_socialism = {
 
 	on_researched = {
 		custom_tooltip = ut_ideology_national_socialist_leader_unlock_tt
+		custom_tooltip = ut_ideology_totalitarian_communist_leader_unlock_tt
 		custom_tooltip = ut_ideology_autocratic_leader_unlock_tt
 	}
 

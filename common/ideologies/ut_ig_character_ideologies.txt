@@ -566,7 +566,7 @@ ut_ideology_national_socialist_leader = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law = law_type:law_autocracy
+				has_law = law_type:law_single_party_state
 				OR = {
 					has_law = law_type:law_neo_ethno_state			
 					has_law = law_type:law_ethnostate
@@ -706,6 +706,180 @@ ut_ideology_national_socialist_leader = {
 						c:GER ?= this
 						c:ITA ?= this
 						has_modifier = je_ut_new_dawn_fascist_focus
+					}
+				}
+			}
+			multiply = 1.5
+		}
+		if = {
+			limit = {
+				OR = {
+					has_variable = communist_ig_var
+					has_variable = chose_vanguardism
+					has_variable = chose_anarchism
+					has_variable = chose_communism
+					has_variable = chose_ethno_nationalism
+				}
+			}
+			multiply = 0.1
+		}
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
+}
+
+#Communist Unlock
+ut_ideology_totalitarian_communist_leader = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/idealogy_leader_oligarchic.dds"
+	
+	character_ideology = yes
+
+	lawgroup_distribution_of_power = {
+		law_single_party_state = strongly_approve
+		law_autocracy = approve
+		law_oligarchy = neutral
+		law_technocracy = strongly_disapprove
+		law_anarchy = strongly_disapprove
+		law_universal_suffrage = strongly_disapprove
+		law_census_voting = strongly_disapprove
+		law_wealth_voting = strongly_disapprove
+		law_landed_voting = strongly_disapprove				
+	}
+
+	#different to nazis
+	lawgroup_citizenship = {
+		law_ethnostate = disapprove
+		law_neo_ethno_state = disapprove
+		law_national_supremacy = neutral
+		law_racial_segregation = neutral
+		law_cultural_exclusion = approve
+		law_multicultural = disapprove	
+		law_multicultural_globalism = strongly_disapprove	
+	}
+
+	lawgroup_army_model = {
+		law_mass_conscription = strongly_approve
+		law_professional_army = approve
+		law_national_militia = strongly_disapprove
+		law_peasant_levies = strongly_disapprove
+		law_task_forces = neutral
+		law_demobilized = strongly_disapprove
+	}
+
+	lawgroup_free_speech = {
+		law_protected_speech = strongly_disapprove
+		law_right_of_assembly = disapprove
+		law_censorship = neutral
+		law_outlawed_dissent = strongly_approve
+	}
+
+	#no stance on lawgroup_policing
+
+	lawgroup_governance_principles = {
+		law_theocracy = disapprove
+		law_monarchy = disapprove
+		law_presidential_republic = strongly_approve
+		law_parliamentary_republic = strongly_disapprove
+		law_corporate_state = strongly_disapprove
+		law_council_republic = approve
+		#law_corporate_state and council switched
+	}
+
+	lawgroup_migration = {
+		#adjusted
+		law_closed_borders = approve 
+		law_migration_controls = neutral
+		law_registration_process = approve
+		law_no_migration_controls = strongly_disapprove
+	}
+
+
+	country_trigger = {
+		has_technology_researched = national_socialism
+	}
+
+	interest_group_leader_trigger = {
+		ut_ideology_national_socialist_leader_trigger = yes
+	}
+	
+	non_interest_group_leader_trigger = {
+		# Agitator ideologies should disapprove of a current law
+		NAND = {
+			has_role = agitator
+			owner = {
+				has_law = law_type:law_single_party_state
+				has_law = law_type:law_command_economy
+				has_law = law_type:law_outlawed_dissent
+			}
+		}
+		interest_group = { 
+			ut_ideology_national_socialist_leader_trigger = yes
+		}
+	}
+	
+	interest_group_leader_weight = {
+		value = 0
+		# more likely if bankrupt
+		if = {
+			limit = {
+				owner = {
+					in_default = yes
+				}
+			}
+			add = 50
+		}
+		
+		# more likely if autocrat focus
+		if = {
+			limit = {
+				owner = {
+					has_modifier = je_ut_new_dawn_autocrat_focus
+				}
+			}
+			add = 25
+		}
+		
+		# more likely if nazi focus
+		if = {
+			limit = {
+				owner = {
+					has_modifier = ut_new_dawn_core_communist_mod
+					has_modifier = je_ut_new_dawn_communist_one_block_mod
+				}
+			}
+			add = 50
+		}
+		# Less likely in council republic
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:ut_law_council_presidium
+				}
+			}
+			add = 25
+		}		
+		if = { 
+			limit = {
+				owner = {
+					OR = {
+						c:RUS ?= this
+						has_modifier = je_ut_new_dawn_communist_focus
 					}
 				}
 			}

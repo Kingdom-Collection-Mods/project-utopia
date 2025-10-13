@@ -11,6 +11,7 @@
 		ideology_corporatist_leader
 		ut_ideology_autocratic_leader
 		ut_ideology_national_socialist_leader
+		ut_ideology_totalitarian_communist_leader
 	}
 
 	creation_trigger = {
