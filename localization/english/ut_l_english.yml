@@ -288,7 +288,7 @@
  ut_new_dawn_communist_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_communist!"
  ut_new_dawn_democratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_democrat!"
  ut_new_dawn_autocratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_autocrat!"
- ut_progress_trend_max: "@profitability12!"
+ ut_progress_trend_max: "@profitability10!"
  ut_progress_trend_critical: "@profitability1!"
  ut_progress_trend_up4: "@profitability13!"
  ut_progress_trend_up3: "@profitability12!"
