@@ -23,21 +23,6 @@ ut_fund_ideology = {
 		}
 	}
 
-	accept_effect = {
-		custom_tooltip = {
-			text = fund_lobbies_increase_friendly_join_weight_effect
-		}
-		custom_tooltip = {
-			text = fund_lobbies_decrease_hostile_join_weight_effect
-		}
-		custom_tooltip = {
-			text = fund_lobbies_increase_rival_hostile_join_weight_effect
-		}
-		custom_tooltip = {
-			text = fund_lobbies_decrease_rival_friendly_join_weight_effect
-		}
-	}
-
 	pact = {
 		cost = 100
 
