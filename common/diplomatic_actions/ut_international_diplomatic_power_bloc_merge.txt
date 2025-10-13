@@ -1,4 +1,4 @@
-ut_international_diplomatic_power_bloc_merge = {
+﻿ut_international_diplomatic_power_bloc_merge = {
 	groups= {
 		general
 	}
