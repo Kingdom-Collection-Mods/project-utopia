@@ -1104,6 +1104,7 @@ je_ut_communist_one_block = {
 			NOT = {
 				any_power_bloc_member = {
 					NOT = { is_subject_of = root }
+					NOT = { this = root }
 				}
 			}
 		}
@@ -1140,6 +1141,7 @@ je_ut_communist_socialist_expansion = {
 		
 		NOT = {
 			any_country = {
+				NOT = { this = root }
 				is_adjacent_to_country = root
 				NOT = { is_subject_of = root }
 			}
@@ -1233,7 +1235,7 @@ je_ut_communist_one_people = {
 	possible = {
 		custom_tooltip = {
 			text = new_dawn_ideology_previous_milestone_done_tt
-			has_variable = je_ut_communist_one_communist_party_done
+			has_variable = je_ut_communist_a_communist_party_done
 		}
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
@@ -1245,7 +1247,12 @@ je_ut_communist_one_people = {
 			any_country = {
 				is_adjacent_to_country = root
 				NOT = { is_in_same_power_bloc = root }
+				NOT = { has_modifier = ut_new_dawn_core_communist_mod }
 			}
+		}
+		custom_tooltip = {
+			text = new_dawn_ideology_milestone_done_tt
+			NOT = { has_variable = je_ut_communist_one_people_done }
 		}
 	}
 
@@ -1289,7 +1296,13 @@ je_ut_communist_world_revolution = {
 			any_country = {
 				country_rank >= rank_value:great_power
 				NOT = { has_law = law_type:law_cooperative_ownership }
+				NOT = { has_modifier = ut_new_dawn_core_communist_mod }
 			}
+		}
+		
+		custom_tooltip = {
+			text = new_dawn_ideology_milestone_done_tt
+			NOT = { has_variable = je_ut_communist_world_revolution_done }
 		}
 	}
 

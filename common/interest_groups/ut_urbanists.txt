@@ -16,6 +16,7 @@
 		ut_ideology_cosmopolitan_leader
 		ut_ideology_autocratic_leader
 		ut_ideology_national_socialist_leader
+		ut_ideology_totalitarian_communist_leader
 		ut_ideology_economical_corporatist_leader
 		ut_liberal_feminism_leader
 		ut_radical_feminism_leader

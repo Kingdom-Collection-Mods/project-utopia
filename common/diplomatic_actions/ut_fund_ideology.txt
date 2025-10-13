@@ -23,21 +23,6 @@ ut_fund_ideology = {
 		}
 	}
 
-	accept_effect = {
-		custom_tooltip = {
-			text = fund_lobbies_increase_friendly_join_weight_effect
-		}
-		custom_tooltip = {
-			text = fund_lobbies_decrease_hostile_join_weight_effect
-		}
-		custom_tooltip = {
-			text = fund_lobbies_increase_rival_hostile_join_weight_effect
-		}
-		custom_tooltip = {
-			text = fund_lobbies_decrease_rival_friendly_join_weight_effect
-		}
-	}
-
 	pact = {
 		cost = 100
 
@@ -200,15 +185,25 @@ ut_fund_ideology = {
 
 	 	requirement_to_maintain = {
 			trigger = {
-				custom_tooltip = {
-					text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT
-					scope:target_country.relations:root > relations_threshold:poor
+				NOT = {
+					scope:target_country = {
+						has_diplomatic_pact = {
+							who = root
+							type = rivalry
+						}
+					}
 				}
 			}
+		}
 
-			show_about_to_break_warning = {
-				scope:target_country.relations:root <= -17 # this is: poor + 3
-				scope:target_country.relations_change_rate:root < 0
+	 	requirement_to_maintain = {
+			trigger = {
+				NOT = {
+					has_diplomatic_pact = {
+						who = scope:target_country
+						type = rivalry
+					}
+				}
 			}
 		}
 

@@ -45,10 +45,6 @@ ut_fund_opposition = {
 
 		is_two_sided_pact = no
 
-		second_modifier = {
-			country_treaty_leverage_generation_mult = 0.1
-		}
-
 		second_foreign_pro_country_lobby_member_modifier = {
 			interest_group_pop_attraction_mult = 0.1
 		}
