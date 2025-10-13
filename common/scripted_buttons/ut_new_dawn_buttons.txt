@@ -1141,6 +1141,7 @@ je_ut_communist_socialist_expansion = {
 		
 		NOT = {
 			any_country = {
+				NOT = { this = root }
 				is_adjacent_to_country = root
 				NOT = { is_subject_of = root }
 			}
