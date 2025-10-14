@@ -1226,12 +1226,6 @@ je_ut_communist_one_people = {
 	name = "je_ut_communist_one_people"
 	desc = "je_ut_communist_one_people_desc"
 
-	visible = {
-		NOT = {
-			has_variable = je_ut_communist_one_people_done
-		}
-	}
-
 	possible = {
 		custom_tooltip = {
 			text = new_dawn_ideology_previous_milestone_done_tt
@@ -1273,12 +1267,6 @@ je_ut_communist_one_people = {
 je_ut_communist_world_revolution = {
 	name = "je_ut_communist_world_revolution"
 	desc = "je_ut_communist_world_revolution_desc"
-
-	visible = {
-		NOT = {
-			has_variable = je_ut_communist_world_revolution_done
-		}
-	}
 
 	possible = {
 		custom_tooltip = {
