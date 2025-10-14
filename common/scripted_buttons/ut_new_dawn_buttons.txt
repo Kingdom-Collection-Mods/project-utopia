@@ -685,6 +685,10 @@ je_ut_new_dawn_emergency_powers = {
 			}
 		}
 	}
+	#ai always
+	ai_chance = {
+		value = 2
+	}
 }
 
 je_ut_new_dawn_strengthen_power = {
@@ -717,6 +721,10 @@ je_ut_new_dawn_strengthen_power = {
 			}
 		}
 	}
+	#ai always
+	ai_chance = {
+		value = 2
+	}
 }
 
 je_ut_new_dawn_border_dispute = {
@@ -747,6 +755,16 @@ je_ut_new_dawn_border_dispute = {
 			je:je_ut_new_dawn_autocratic = {
 				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
 			}
+		}
+	}
+	#ai only do if low infamy
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				infamy < 5 
+			}
+			add = 5
 		}
 	}
 }
@@ -783,6 +801,24 @@ je_ut_new_dawn_suppress_dissidents = {
 			je:je_ut_new_dawn_autocratic = {
 				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
 			}
+		}
+	}
+
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				government_legitimacy < 0.5
+			}
+			add = 5
+		}
+		if = {
+			limit = {
+				radical_fraction = {
+					value >= 0.2
+				}
+			}
+			add = 5
 		}
 	}
 }
