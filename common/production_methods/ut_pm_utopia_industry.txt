@@ -828,12 +828,16 @@ pm_rare_earths_one_mine = {
 			goods_input_tools_add = 5
 			
 			# output goods
-			goods_output_rare_earths_add = 30
+			goods_output_rare_earths_add = 50
 		}
 
 		level_scaled = {
 			building_employment_shopkeepers_add = 500
 			building_employment_laborers_add = 4000 # Base -2000 logistics
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.1
 		}
 	}
 }
