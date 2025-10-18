@@ -44,7 +44,7 @@ ut_mobilization_option_cas_jet_planes = {
 		goods_input_utopia_jet_planes_add = 1
 	}
 	unit_modifier = {
-		unit_occupation_mult = 1
+		unit_provinces_captured_mult = 0.5
 		military_formation_attrition_risk_mult = -0.2
 		character_battle_condition_charted_terrain_mult = 0.5
 	}
