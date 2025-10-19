@@ -1,4 +1,4 @@
-ut_tech_preview_cheat_research = {
+﻿ut_tech_preview_cheat_research = {
 	is_shown = {
 		is_player = yes
 		NOT = { has_global_variable = ut_tech_preview_cheat_disable }
@@ -13,6 +13,7 @@ ut_tech_preview_cheat_research = {
 	when_taken = {
 		trigger_event = {
 			id = utopia_mod.2
+			popup = yes
 		}
 	}
 
@@ -39,11 +40,13 @@ ut_tech_preview_cheat_new_dawn = {
 			}
 			trigger_event = {
 				id = event_new_dawn.999
+				popup = yes
 			}
 		}
 		else = {
 			trigger_event = {
 				id = event_new_dawn.998
+				popup = yes
 			}
 		}
 	}
@@ -235,6 +238,7 @@ ut_nuclear_power_plant_location  = {
 		set_variable = ut_nuclear_power_plant_location_selecting
 		trigger_event = {
 			id = utopia_journal_prod.50
+				popup = yes
 		}
 	}
 

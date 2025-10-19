@@ -23,7 +23,10 @@
 	}
 
 	on_complete = {
-		trigger_event = { id = utopia_journal_society.1  }
+		trigger_event = {
+			id = utopia_journal_society.1
+			popup = yes  
+		}
 		set_variable = {
 			name = je_urbanist_ig_done
 		}
@@ -76,7 +79,10 @@ je_wirtschaftswunder = {
 	}
 
 	on_complete = {
-		trigger_event = { id = utopia_journal_society.2 }
+		trigger_event = {
+			id = utopia_journal_society.2
+			popup = yes
+		}
 		set_global_variable = {
 			name = je_wirtschaftswunder_done
 		}
@@ -107,7 +113,10 @@ je_wirtschaftswunder_others = {
 	}
 
 	on_complete = {
-		trigger_event = { id = utopia_journal_society.3 }
+		trigger_event = {
+			id = utopia_journal_society.3 
+			popup = yes
+		}
 		set_variable = {
 			name = je_urbanist_ig_done
 		}
@@ -132,7 +141,10 @@ je_early_civil_aviation = {
 	}
 
 	immediate = {
-		trigger_event = { id = utopia_journal_society.4 }
+		trigger_event = {
+			id = utopia_journal_society.4
+			popup = yes
+		}
 		set_variable = {
 			name = je_early_civil_aviation_done
 		}
@@ -157,7 +169,10 @@ je_modern_civil_aviation = {
 	}
 
 	immediate = {
-		trigger_event = { id = utopia_journal_society.5 }
+		trigger_event = {
+			id = utopia_journal_society.5
+			popup = yes
+		}
 		set_variable = {
 			name = je_modern_civil_aviation_done
 		}
