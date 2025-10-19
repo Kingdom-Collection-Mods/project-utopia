@@ -490,6 +490,25 @@ ut_je_research_institute_construction = {
 		
 	}
 
+	on_yearly_pulse = {
+		#todo remove backwards compatibility -19.10.25
+		effect = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				capital ={
+					create_building = {
+						building = building_ut_research_institute
+						level=1
+					}
+				}
+			}			
+		}
+		
+	}
+
+
 	fail = {
 		NOT = {
 			any_scope_state = {
