@@ -188,7 +188,7 @@ heavy_machinery_era_analog = {
 	}
 	
 	ai_weight = {
-		value = 3 # Very important
+		value = 3  # Very important
 	}
 }
 
@@ -201,7 +201,7 @@ heavy_machinery_era_analog_two = {
 	}
 	
 	ai_weight = {
-		value = 2 # Important
+		value = 2  # Important
 	}
 }
 

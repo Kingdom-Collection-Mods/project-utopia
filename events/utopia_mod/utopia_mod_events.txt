@@ -62,7 +62,7 @@ utopia_mod.2 = {
 		name = utopia.cheat
 		add_modifier = {
 			name = ut_tech_preview_cheat_research_modifier
-			days = 365
+			days = 182
 		}
 	}
 	option = {
