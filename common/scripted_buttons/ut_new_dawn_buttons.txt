@@ -791,7 +791,10 @@ je_ut_new_dawn_suppress_dissidents = {
 			value = 0.01
 		}
 		
-		trigger_event = { id = event_new_dawn.30 }
+		trigger_event = {
+			id = event_new_dawn.30
+			popup = yes
+		}
 		custom_tooltip = {
 			text = event_new_dawn.30_tt
 		}

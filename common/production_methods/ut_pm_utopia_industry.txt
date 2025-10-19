@@ -828,12 +828,16 @@ pm_rare_earths_one_mine = {
 			goods_input_tools_add = 5
 			
 			# output goods
-			goods_output_rare_earths_add = 30
+			goods_output_rare_earths_add = 50
 		}
 
 		level_scaled = {
 			building_employment_shopkeepers_add = 500
 			building_employment_laborers_add = 4000 # Base -2000 logistics
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.1
 		}
 	}
 }
@@ -853,7 +857,7 @@ pm_rare_earths_two_mine = {
 			goods_input_computers_add = 1
 			
 			# output goods
-			goods_output_rare_earths_add = 90
+			goods_output_rare_earths_add = 100
 		}
 
 		level_scaled = {
@@ -1505,6 +1509,7 @@ ut_pm_research_institute_production_focus = {
 	country_modifiers = {
 		workforce_scaled = {
 			country_production_tech_research_speed_mult = 0.1
+			interest_group_ig_rural_folk_pop_attraction_mult = 0.1
 		}
 	}
 
@@ -1530,6 +1535,7 @@ ut_pm_research_institute_military_focus = {
 	country_modifiers = {
 		workforce_scaled = {
 			country_military_tech_research_speed_mult = 0.1
+			interest_group_ig_armed_forces_pop_attraction_mult = 0.1
 		}
 	}
 
@@ -1556,6 +1562,7 @@ ut_pm_research_institute_society_focus = {
 	country_modifiers = {
 		workforce_scaled = {
 			country_society_tech_research_speed_mult = 0.1
+			interest_group_ig_intelligentsia_pop_attraction_mult = 0.1
 		}
 	}
 

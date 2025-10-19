@@ -33,6 +33,7 @@
 	on_complete = {
 		trigger_event = {
 			id = utopia_journal_prod.1
+			popup = yes
 		}
 		set_variable = {
 			name = heavy_industrial_machinery_je_done
@@ -78,6 +79,7 @@ ut_cnc_machines_je = {
 	on_complete = {
 		trigger_event = {
 			id = utopia_journal_prod.3
+			popup = yes
 		}
 		set_variable = {
 			name = cnc_machines_je_done
@@ -125,6 +127,7 @@ ut_heavy_tractors_je = {
 	on_complete = {
 		trigger_event = {
 			id = utopia_journal_prod.5
+			popup = yes
 		} 
 		set_variable = {
 			name = heavy_tractors_je_done
@@ -171,6 +174,7 @@ ut_agrarian_planes_je = {
 	on_complete = {
 		trigger_event = {
 			id = utopia_journal_prod.6
+			popup = yes
 		}
 		set_variable = {
 			name = agrarian_planes_je_done
@@ -205,6 +209,7 @@ ut_plastic_je = {
 	on_complete = {
 		trigger_event = {
 			id = utopia_journal_prod.7
+			popup = yes
 		}
 	}
 	
@@ -236,6 +241,7 @@ ut_electronics_je = {
 	on_complete = {
 		trigger_event = {
 			id = utopia_journal_prod.8
+			popup = yes
 		}
 		set_variable = {
 			name = electronics_je_done
@@ -271,6 +277,7 @@ ut_computers_je = {
 	on_complete = {
 		trigger_event = {
 			id = utopia_journal_prod.9
+			popup = yes
 		}
 		set_variable = {
 			name = computers_je_done
@@ -306,6 +313,7 @@ ut_software_je = {
 	on_complete = {
 		trigger_event = {
 			id = utopia_journal_prod.10
+			popup = yes
 		}
 	}
 	
@@ -342,6 +350,7 @@ ut_consumer_goods_simple_je = {
 	on_complete = {
 		trigger_event = {
 			id = utopia_journal_prod.11
+			popup = yes
 		}
 		set_variable = {
 			name = consumer_goods_simple_je_done
@@ -351,6 +360,7 @@ ut_consumer_goods_simple_je = {
 	on_timeout = {
 		trigger_event = {
 			id = utopia_journal_prod.4
+			popup = yes
 		}
 	}
 	
@@ -382,6 +392,7 @@ ut_consumer_goods_complex_je = {
 	on_complete = {
 		trigger_event = {
 			id = utopia_journal_prod.12
+			popup = yes
 		}
 	}
 	
@@ -489,6 +500,25 @@ ut_je_research_institute_construction = {
 		}
 		
 	}
+
+	on_yearly_pulse = {
+		#todo remove backwards compatibility -19.10.25
+		effect = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				capital ={
+					create_building = {
+						building = building_ut_research_institute
+						level=1
+					}
+				}
+			}			
+		}
+		
+	}
+
 
 	fail = {
 		NOT = {

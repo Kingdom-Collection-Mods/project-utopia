@@ -73,9 +73,9 @@
  je_group_ai_buffs: "Welle technologischer Innovationen"
 
  je_wirtschaftswunder: "Wirtschaftswunder"
- je_wirtschaftswunder_reason: "REPLACE_ME"
+ je_wirtschaftswunder_reason: ""
  je_wirtschaftswunder_others: "Wirtschaftswunder erreicht"
- je_wirtschaftswunder_others_reason: "REPLACE_ME"
+ je_wirtschaftswunder_others_reason: ""
 
  utopia_journal_society_2_wirtschaftswunder_title: "Wirtschaftswunder"
  utopia_journal_society_2_wirtschaftswunder_desc: "In einer atemberaubenden Wendung hat sich unsere Wirtschaft nicht nur erholt - sie ist regelrecht explodiert. Die Industrie boomt, die Beschäftigung ist auf Rekordniveau, und Wohlstand ist für viele kein Traum mehr, sondern tägliche Realität."
@@ -95,15 +95,15 @@
  ut_research_institute_found: "Forschungsinstitut gründen"
  ut_research_institute_found_desc: "Ein nationales [concept_ut_research_institute] soll gegründet werden, um wissenschaftliche Exzellenz zu bündeln, Grundlagenforschung zu fördern und den technologischen Fortschritt strukturell zu beschleunigen."
  ut_je_research_institute_founding: "Forschungsinstitut gründen"
- ut_je_research_institute_founding_reason: "Our nation prepares to institutionalize innovation by establishing a dedicated research institute. In an age where ideas fuel power, the foundation of such an institute marks a monumental step forward. Here, minds will be sharpened, knowledge systematized, and breakthroughs born not of accident, but design.\nThis institute will become a beacon - attracting scientists, thinkers, and technocrats from every corner of society. A crucible of curiosity, where the impossible is not denied, but studied."
- ut_je_research_institute_founding.success.d: "The research institute is operational. It provides a structured space for innovation, accelerating technological advancement and cultivating national prestige."
- ut_je_research_institute_founding.success.f: "Where once lone inventors labored in dusty basements, now entire faculties work in unison. Chalkboards filled with equations, labs humming with energy - this is no longer mere experimentation. It is organized brilliance."
+ ut_je_research_institute_founding_reason: "Unsere Nation bereitet sich darauf vor, Innovationen zu institutionalisieren, indem sie ein dediziertes Forschungsinstitut gründet. In einer Zeit, in der Ideen Macht verleihen, markiert die Gründung eines solchen Instituts einen monumentalen Schritt nach vorn. Hier werden Köpfe geschärft, Wissen systematisiert und Durchbrüche nicht durch Zufall, sondern durch Design geboren.\nDieses Institut wird zu einem Leuchtturm - es zieht Wissenschaftler, Denker und Technokraten aus allen Ecken der Gesellschaft an. Ein Schmelztiegel der Neugier, in dem das Unmögliche nicht geleugnet, sondern studiert wird."
+ ut_je_research_institute_founding.success.d: "Das Forschungsinstitut ist betriebsbereit. Es bietet einen strukturierten Raum für Innovationen, beschleunigt den technologischen Fortschritt und fördert das nationale Prestige."
+ ut_je_research_institute_founding.success.f: "Wo einst einsame Erfinder in staubigen Kellern arbeiteten, arbeiten jetzt ganze Fakultäten im Einklang. Tafelbilder gefüllt mit Gleichungen, Labore summen vor Energie - das ist nicht mehr bloße Experimentation. Es ist organisierte Brillanz."
  ut_research_institute_found_mod: "Aufbau eines Forschungsinstituts"
  ut_research_institute_found_mod_desc: "Die Grundlagen für ein nationales [concept_ut_research_institute] werden gelegt. Wissenschaftliche Netzwerke entstehen, Ressourcen werden gebündelt, und die Infrastruktur für eine Zukunft des Wissens wächst."
  ut_je_research_institute_founding_goal: "Auf den Abschluss der #BOLD 3-Jahres#!-Gründungsdauer warten"
  ut_research_institute_found_unlock_tt: "Schaltet [concept_ut_research_institute] frei"
- ut_research_institute_can_construct_tt: "Has identified and surveyed an appropriate site for a Research Institute"
- ut_research_institute_site_mod: "Research Institute Site"
+ ut_research_institute_can_construct_tt: "Hat einen geeigneten Standort für ein Forschungsinstitut identifiziert und vermessen"
+ ut_research_institute_site_mod: "Forschungsinstitutsstandort"
 
  ut_je_research_institute_construction: "Forschungsinstitut bauen"
  ut_je_research_institute_construction_reason: ""
@@ -150,7 +150,7 @@
  je_ut_new_dawn: "Neuer Aufbruch"
  je_ut_new_dawn_reason: "Der [concept_ut_nd_path_to_utopia] muss geebnet werden. Festige die Kernideologie deiner Nation. Die Ideologie bestimmt in welche Richtung sich deine Nation entwickelt.\nWähle zwischen [concept_ut_nd_fascist_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_democrat_core] und [concept_ut_nd_communist_core]."
  je_ut_new_dawn_immediate_tt: "$je_ut_new_dawn_reason$"
- je_ut_new_dawn_global_started_tt: "Any country has started the #b Neuer Aufbruch#! event chain"
+ je_ut_new_dawn_global_started_tt: "Ein Land hat die #b Neuer Aufbruch#!-Ereigniskette gestartet"
  je_ut_new_dawn_condition_tt: "Schließe [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_communist_core], oder [concept_ut_nd_fascist_core] [concept_ut_nd_path_to_utopia] ab"
  je_ut_new_dawn_p2_condition_tt: "Achieved [concept_ut_nd_utopia]?"
  je_ut_new_dawn_effect_tt: "[concept_ut_nd_utopia] erreicht?"
@@ -283,7 +283,7 @@
  je_ut_new_dawn_democratic_mod: "Demokrat"
  
  #[THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress_diff').GetValue|+=] for actual trend value
- ut_new_dawn_list_entry_start: "Ideology Progress:"
+ ut_new_dawn_list_entry_start: "Ideologischer Fortschritt:"
  ut_new_dawn_fascist_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_fascist!"
  ut_new_dawn_communist_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_communist!"
  ut_new_dawn_democratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_democrat!"
@@ -334,7 +334,8 @@
  new_dawn_ideology_required_points_tt: "Erfordert mindestens #v [SCOPE.ScriptValue('new_dawn_ideology_required_points')] Fortschrittspunkte#!"
  new_dawn_ideology_required_points_spend_tt: "Verbraucht #r [SCOPE.ScriptValue('new_dawn_ideology_spend_points')]#! #v Fortschrittspunkte#!, um diesen Schritt zu aktivieren"
  new_dawn_ideology_upper_bound_tt: "Hat #v [SCOPE.ScriptValue('new_dawn_ideology_upper_bound')] Fortschrittspunkte#!"
- new_dawn_ideology_milestone_done_tt: "Hat Aktion #v nicht#! abgeschlossen" new_dawn_ideology_previous_milestone_done_tt: "Has #v completed#! the previous [Concept('concept_ut_nd_milestones', 'Milestone')]"
+ new_dawn_ideology_milestone_done_tt: "Hat den [Concept('concept_ut_nd_milestones', 'Milestone')] #v nicht#! abgeschlossen"
+ new_dawn_ideology_previous_milestone_done_tt: "Hat #v den vorherigen [Concept('concept_ut_nd_milestones', 'Milestone')] abgeschlossen#!"
 
  je_ut_new_dawn_democratic_cultural_values: "Demokratische Kulturwerte"
  je_ut_new_dawn_democratic_cultural_values_desc: "Ein demokratisches Fundament kann nur auf kulturellen Werten gedeihen, die Pluralismus und individuelle Freiheiten respektieren. Führende Persönlichkeiten in Wirtschaft und Religion wenden sich einer demokratischeren Weltsicht zu."
@@ -352,21 +353,21 @@
  je_ut_new_dawn_democratic_final: "Utopia"
  je_ut_new_dawn_democratic_final_desc: "The culmination of democratic ideals and practices, leading to a harmonious and just society."
 
- je_ut_new_dawn_autocratic: "Autocratic System"
+ je_ut_new_dawn_autocratic: "Autokratisches System"
  je_ut_new_dawn_autocratic_reason: "The people demand order, stability, and strong leadership."
  je_ut_new_dawn_autocratic_complete_condition_tt: "There is no Autocratic Utopia, the entry can not be completed. They have access to repeatable actions instead."
 
- je_ut_new_dawn_emergency_powers: "Emergency Powers"
- je_ut_new_dawn_emergency_powers_desc: "In times of crisis, the state must act decisively. Emergency powers allow for rapid response to threats and challenges, but they also risk undermining democratic institutions."
+ je_ut_new_dawn_emergency_powers: "Notstandsbefugnisse"
+ je_ut_new_dawn_emergency_powers_desc: "In Zeiten der Krise muss der Staat entschlossen handeln. Notstandsbefugnisse ermöglichen eine schnelle Reaktion auf Bedrohungen und Herausforderungen, bergen jedoch auch das Risiko, demokratische Institutionen zu untergraben."
  je_ut_new_dawn_emergency_powers_mod: "$je_ut_new_dawn_emergency_powers$"
- je_ut_new_dawn_strengthen_power: "Strengthen Power"
- je_ut_new_dawn_strengthen_power_desc: "To maintain order and stability, the state must strengthen its power. This can be achieved through various means, including military buildup, propaganda, and suppression of dissent."
+ je_ut_new_dawn_strengthen_power: "Macht stärken"
+ je_ut_new_dawn_strengthen_power_desc: "Um Ordnung und Stabilität aufrechtzuerhalten, muss der Staat seine Macht stärken. Dies kann durch verschiedene Mittel erreicht werden, einschließlich militärischem Aufbau, Propaganda und Unterdrückung von Dissens."
  je_ut_new_dawn_strengthen_power_mod: "$je_ut_new_dawn_strengthen_power$"
- je_ut_new_dawn_border_dispute: "Border Dispute"
- je_ut_new_dawn_border_dispute_desc: "Border disputes can lead to tensions and conflicts between nations. It is important to resolve these disputes peacefully and diplomatically, but sometimes military action may be necessary to protect national interests."
+ je_ut_new_dawn_border_dispute: "Grenzkonflikt"
+ je_ut_new_dawn_border_dispute_desc: "Grenzkonflikte können zu Spannungen und Konflikten zwischen Nationen führen. Es ist wichtig, diese Konflikte friedlich und diplomatisch zu lösen, aber manchmal kann militärisches Handeln notwendig sein, um nationale Interessen zu schützen."
  je_ut_new_dawn_border_dispute_mod: "$je_ut_new_dawn_border_dispute$"
- je_ut_new_dawn_suppress_dissidents: "Suppress Dissidents"
- je_ut_new_dawn_suppress_dissidents_desc: "Dissent can undermine the stability of the state and threaten national security. Suppressing dissent is a necessary measure to maintain order and protect the nation from internal threats."
+ je_ut_new_dawn_suppress_dissidents: "Dissidenten unterdrücken"
+ je_ut_new_dawn_suppress_dissidents_desc: "Dissens kann die Stabilität des Staates untergraben und die nationale Sicherheit bedrohen. Die Unterdrückung von Dissens ist eine notwendige Maßnahme, um Ordnung aufrechtzuerhalten und die Nation vor internen Bedrohungen zu schützen."
  je_ut_new_dawn_suppress_dissidents_mod: "$je_ut_new_dawn_suppress_dissidents$"
  
  je_ut_new_dawn_outlaw_communists: "Outlaw Communists"
@@ -440,18 +441,18 @@
 #Core Ideology concepts
 
  concept_ut_nd_fascist_core: "Faschismus"
- concept_ut_nd_fascist_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Verfügbare [concept_ut_nd_milestones]#! - tbd\n\n#bold Verfügbare [concept_ut_nd_abilities]#!\n - Annex Country (Major) - tbd\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b [concept_ut_nd_focus] Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_fascist_focus').GetDesc]\n\n#b Freigeschalteter Modifikator#!\n[GetStaticModifier('ut_new_dawn_core_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nVerbündet: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nGegnerisch: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others."
+ concept_ut_nd_fascist_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Verfügbare [concept_ut_nd_milestones]#! - tbd\n\n#bold Verfügbare [concept_ut_nd_abilities]#!\n - Annex Country (Major) - tbd\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b [concept_ut_nd_focus] Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_fascist_focus').GetDesc]\n\n#b Freigeschalteter Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_fascist_focus').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nVerbündet: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nGegnerisch: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others."
 
 
  concept_ut_nd_autocrat_core: "Autokratie"
- concept_ut_nd_autocrat_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_autocrat_progress_from_characters$\n- $ut_nd_autocrat_progress_from_igs$\n- $ut_nd_autocrat_progress_from_laws$\n\n#bold Verfügbare [concept_ut_nd_abilities]#! - Preview\n - [GetLawType('ut_law_monarchy_autocratic').GetName]\n - [GetLawType('ut_law_monarchy_corporate_state').GetName]\n - #p Edicts:#! [GetStaticModifier('je_ut_new_dawn_emergency_powers_mod').GetName], [GetStaticModifier('je_ut_new_dawn_strengthen_power_mod').GetName], [GetStaticModifier('je_ut_new_dawn_border_dispute_mod').GetName],  [GetStaticModifier('je_ut_new_dawn_suppress_dissidents_mod').GetName]\n\n#b [concept_ut_nd_focus] Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_autocrat_focus').GetDesc]\n\n#b Freigeschalteter Modifikator#!\n[GetStaticModifier('ut_new_dawn_core_autocratic_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nVerbündet: [concept_ut_nd_fascist_core], [concept_ut_nd_autocrat_core]\nNeutral: [concept_ut_nd_democrat_core]\nGegnerisch: [concept_ut_nd_communist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nNone."
+ concept_ut_nd_autocrat_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_autocrat_progress_from_characters$\n- $ut_nd_autocrat_progress_from_igs$\n- $ut_nd_autocrat_progress_from_laws$\n\n#bold Verfügbare [concept_ut_nd_abilities]#! - Preview\n - [GetLawType('ut_law_monarchy_autocratic').GetName]\n - [GetLawType('ut_law_monarchy_corporate_state').GetName]\n - #p Edicts:#! [GetStaticModifier('je_ut_new_dawn_emergency_powers_mod').GetName], [GetStaticModifier('je_ut_new_dawn_strengthen_power_mod').GetName], [GetStaticModifier('je_ut_new_dawn_border_dispute_mod').GetName],  [GetStaticModifier('je_ut_new_dawn_suppress_dissidents_mod').GetName]\n\n#b [concept_ut_nd_focus] Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_autocrat_focus').GetDesc]\n\n#b Freigeschalteter Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_autocrat_focus').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nVerbündet: [concept_ut_nd_fascist_core], [concept_ut_nd_autocrat_core]\nNeutral: [concept_ut_nd_democrat_core]\nGegnerisch: [concept_ut_nd_communist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nNone."
 
 
  concept_ut_nd_democrat_core: "Demokratie"
- concept_ut_nd_democrat_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_democrat_progress_from_characters$\n- $ut_nd_democrat_progress_from_igs$\n- $ut_nd_democrat_progress_from_laws$\n\n#bold Verfügbare [concept_ut_nd_milestones]#! - Preview\nUnlock Ideologies: [GetIdeology('ideology_liberal_democratic').GetName], [GetIdeology('ideology_reactionary_democratic').GetName], [GetIdeology('ideology_moralist_democratic').GetName], [GetIdeology('ideology_plutocratic_democratic').GetName], [GetIdeology('ideology_socialist_democratic').GetName], [GetIdeology('ideology_jingoist_democratic').GetName]\nUnlock Modifikatoren: [GetStaticModifier('je_ut_new_dawn_democratic_power_bloc_mod').GetDesc], [GetStaticModifier('je_ut_new_dawn_democratic_fair_elections_mod').GetDesc]\n\n#bold Verfügbare [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n - [GetArticleType('ut_democracy_article').GetNameNoIcon]\n - [GetLawType('ut_law_monarchy_democratic').GetName]\n\n#b [concept_ut_nd_focus] Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_democrat_focus').GetDesc]\n\n#b Freigeschalteter Modifikator#!\n[GetStaticModifier('ut_new_dawn_core_democratic_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nVerbündet: [concept_ut_nd_democrat_core]\nNeutral: [concept_ut_nd_communist_core], [concept_ut_nd_autocrat_core]\nGegnerisch: [concept_ut_nd_fascist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nStrengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people."
+ concept_ut_nd_democrat_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_democrat_progress_from_characters$\n- $ut_nd_democrat_progress_from_igs$\n- $ut_nd_democrat_progress_from_laws$\n\n#bold Verfügbare [concept_ut_nd_milestones]#! - Preview\nUnlock Ideologies: [GetIdeology('ideology_liberal_democratic').GetName], [GetIdeology('ideology_reactionary_democratic').GetName], [GetIdeology('ideology_moralist_democratic').GetName], [GetIdeology('ideology_plutocratic_democratic').GetName], [GetIdeology('ideology_socialist_democratic').GetName], [GetIdeology('ideology_jingoist_democratic').GetName]\nUnlock Modifikatoren: [GetStaticModifier('je_ut_new_dawn_democratic_power_bloc_mod').GetDesc], [GetStaticModifier('je_ut_new_dawn_democratic_fair_elections_mod').GetDesc]\n\n#bold Verfügbare [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n - [GetArticleType('ut_democracy_article').GetNameNoIcon]\n - [GetLawType('ut_law_monarchy_democratic').GetName]\n\n#b [concept_ut_nd_focus] Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_democrat_focus').GetDesc]\n\n#b Freigeschalteter Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_democratic_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nVerbündet: [concept_ut_nd_democrat_core]\nNeutral: [concept_ut_nd_communist_core], [concept_ut_nd_autocrat_core]\nGegnerisch: [concept_ut_nd_fascist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nStrengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people."
 
  concept_ut_nd_communist_core: "Kommunismus"
- concept_ut_nd_communist_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Verfügbare [concept_ut_nd_milestones]#!:\n - [GetLawType('ut_law_international_council').GetName] or [GetLawType('ut_law_council_presidium').GetName] - tbd\n\n#bold Verfügbare [concept_ut_nd_abilities]#! - wip\n - [GetDiplomaticActionType('ut_force_become_subject').GetName] - Preview\n - Spread Communism - tbd\n - Force into Power Bloc - tbd\n\n#b [concept_ut_nd_focus] Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_communist_focus').GetDesc]\n\n#b Freigeschalteter Modifikator#!\n[GetStaticModifier('ut_new_dawn_core_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nVerbündet: [concept_ut_nd_communist_core]\nNeutral: [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core]\nGegnerisch: [concept_ut_nd_fascist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nBuild a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
+ concept_ut_nd_communist_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Verfügbare [concept_ut_nd_milestones]#!:\n - [GetLawType('ut_law_international_council').GetName] or [GetLawType('ut_law_council_presidium').GetName] - tbd\n\n#bold Verfügbare [concept_ut_nd_abilities]#! - wip\n - [GetDiplomaticActionType('ut_force_become_subject').GetName] - Preview\n - Spread Communism - tbd\n - Force into Power Bloc - tbd\n\n#b [concept_ut_nd_focus] Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_communist_focus').GetDesc]\n\n#b Freigeschalteter Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nVerbündet: [concept_ut_nd_communist_core]\nNeutral: [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core]\nGegnerisch: [concept_ut_nd_fascist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nBuild a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
 
  concept_ut_nd_path_to_utopia: "Pfad zur Utopie"
  concept_ut_nd_path_to_utopia_desc: "Wenn eine Ideologie erfolgreich den [concept_ut_new_dawn] Journal-Eintrag abschließt, kann sie ihren [concept_ut_nd_path_to_utopia] beginnen - jede Ideologie kommt mit dem gleichen Basis-Set an Fähigkeiten, gewürzten Fähigkeiten, gewürzten Modifikatoren und kann sogar ein [concept_ut_nd_utopia] aufweisen, das erreicht werden soll.\n\nEin [Concept('concept_humiliation', 'gedemütigtes')] Land wird wahrscheinlich seinen [concept_ut_nd_path_to_utopia] aufgeben und eine neue Ideologie wählen.\n\n#bold Basis [concept_ut_nd_abilities]:#!\n - [GetDiplomaticActionType('ut_influence_new_dawn_major_power').GetName]\n - [GetDiplomaticActionType('ut_fund_ideology').GetName]\n - [GetDiplomaticActionType('ut_fund_opposition').GetName]\n\n#b 'Neuer Aufbruch' ist in Arbeit#!\n#italic Hinweis zu den Statusnotizen:\ntbd (To Be Determined): Keine tatsächliche Arbeit geleistet\nwip (Work in Progress): Laufende Entwicklung, folgen Sie den Patchnotizen\nVorschau: Erste Version verfügbar für Feedback; unvollständig und nicht final\n\nIdeologien ohne Vorschau [concept_ut_nd_milestones] oder [concept_ut_nd_abilities] verfügen stattdessen über mehr statische Modifikatoren.\n\nStatusnotizen können unvollständig sein.\n\n#i Wenn ihr Project Utopia unterstützen möchtet - hinterlasst ein Like im Steam Workshop <3"
@@ -577,7 +578,6 @@
  ideology_reactionary_communist_desc: "#lore This group values tradition, social stability, and gradual change. They often support established institutions and may resist rapid social or political reforms. Replaces [GetIdeology('ideology_reactionary').GetName]. [concept_ut_nd_communist_core] variation.#!"
  ut_ideology_reactionary_alternative: "Conservative"
  ut_ideology_reactionary_alternative_desc: "#lore This group values tradition, social stability, and gradual change. They often support established institutions and may resist rapid social or political reforms. Replaces [GetIdeology('ideology_reactionary').GetName]. #!"
- 
  ut_ideology_laissez_faire: "Laissez-Faire (Modern)"
  ut_ideology_laissez_faire_desc: "#lore This group believes in the free flow of trade and labor forces, favoring the judgment of markets over that of governments. Replaces [GetIdeology('ideology_laissez_faire').GetName].#!"
 
@@ -659,6 +659,7 @@
  ut_tax_code_income_tax_raised: "Einkommensteuer erhöht"
  ut_tax_code_income_tax_lowered: "Einkommensteuer gesenkt"
  ut_tax_code_consumption_tax_raised: "Verbrauchsteuer erhöht"
+ ut_tax_code_consumption_tax_lowered: "Verbrauchsteuer gesenkt"
  ut_tax_code_dividend_tax_raised: "Dividendsteuer erhöht"
  ut_tax_code_dividend_tax_lowered: "Dividendsteuer gesenkt"
 
