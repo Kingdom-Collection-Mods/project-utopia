@@ -857,7 +857,7 @@ pm_rare_earths_two_mine = {
 			goods_input_computers_add = 1
 			
 			# output goods
-			goods_output_rare_earths_add = 90
+			goods_output_rare_earths_add = 100
 		}
 
 		level_scaled = {
