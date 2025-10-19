@@ -75,6 +75,7 @@ utopia_mod.2 = {
 #tax ammend
 utopia_mod.3 = {
 	type = country_event
+	placement = ROOT
 
 	event_image = {
 		video = "unspecific_trains"
@@ -82,7 +83,6 @@ utopia_mod.3 = {
 
 	duration = 3
 
-	placement = ROOT
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -99,37 +99,119 @@ utopia_mod.3 = {
 	}
 	option = {
 		name = ut_tax_code_income_tax_raised
+		trigger = {
+			OR = {
+				NOT = { has_modifier = ut_tax_code_income_tax_raised }
+				has_modifier = ut_tax_code_income_tax_lowered
+			}
+		}
+		if = {
+			limit = {
+				has_modifier = ut_tax_code_income_tax_lowered
+			}
+			remove_modifier = ut_tax_code_income_tax_lowered
+		}
+		else = {
+			add_modifier = ut_tax_code_income_tax_raised			
+		}
+		
 		add_modifier = {
-			name = ut_tax_code_income_tax_raised
-			days = 1825
+			name = ut_tax_code_changed
+			days = 1460  #4y
 		}
 	}
 	option = {
 		name = ut_tax_code_income_tax_lowered
+		trigger = {
+			OR = {
+				NOT = { has_modifier = ut_tax_code_income_tax_lowered }
+				has_modifier = ut_tax_code_income_tax_raised
+			}
+		}
+		if = {
+			limit = {
+				has_modifier = ut_tax_code_income_tax_raised
+			}
+			remove_modifier = ut_tax_code_income_tax_raised
+		}
+		else = {
+			add_modifier = ut_tax_code_income_tax_lowered			
+		}
 		add_modifier = {
-			name = ut_tax_code_income_tax_lowered
-			days = 1825
+			name = ut_tax_code_changed
+			days = 1460  #4y
 		}
 	}
+
+	#Only raisable up
 	option = {
 		name = ut_tax_code_consumption_tax_raised
+		trigger = {
+			NOT = { has_modifier = ut_tax_code_consumption_tax_raised }
+		}
+		
+		add_modifier = ut_tax_code_consumption_tax_raised
 		add_modifier = {
-			name = ut_tax_code_consumption_tax_raised
-			days = 1825
+			name = ut_tax_code_changed
+			days = 1460  #4y
 		}
 	}
+	
+	 #Only raisable remove
+	option = {
+		name = ut_tax_code_consumption_tax_lower
+		trigger = {
+			has_modifier = ut_tax_code_consumption_tax_raised
+		}
+		remove_modifier = ut_tax_code_consumption_tax_raised
+		add_modifier = {
+			name = ut_tax_code_changed
+			days = 1460  #4y
+		}
+	}
+	
 	option = {
 		name = ut_tax_code_dividend_tax_raised
+		trigger = {
+			OR = {
+				NOT = { has_modifier = ut_tax_code_dividend_tax_raised }
+				has_modifier = ut_tax_code_dividend_tax_lowered
+			}
+		}
+		if = {
+			limit = {
+				has_modifier = ut_tax_code_dividend_tax_lowered
+			}
+			remove_modifier = ut_tax_code_dividend_tax_lowered
+		}
+		else = {
+			add_modifier = ut_tax_code_dividend_tax_raised
+		}
 		add_modifier = {
-			name = ut_tax_code_dividend_tax_raised
-			days = 1825
+			name = ut_tax_code_changed
+			days = 1460  #4y
 		}
 	}
 	option = {
 		name = ut_tax_code_dividend_tax_lowered
+		trigger = {
+			OR = {
+				NOT = { has_modifier = ut_tax_code_dividend_tax_lowered }
+				has_modifier = ut_tax_code_dividend_tax_raised
+			}
+		}
+		if = {
+			limit = {
+				has_modifier = ut_tax_code_dividend_tax_raised
+			}
+			remove_modifier = ut_tax_code_dividend_tax_raised
+		}
+		else = {
+			add_modifier = ut_tax_code_dividend_tax_lowered
+		}
 		add_modifier = {
-			name = ut_tax_code_dividend_tax_lowered
-			days = 1825
+			name = ut_tax_code_changed
+			days = 1460  #4y
 		}
 	}
 	after = {

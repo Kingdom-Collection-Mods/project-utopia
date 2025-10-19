@@ -1598,6 +1598,14 @@ ut_law_tax_code = {
 			add = 750
 		}
 	}
+
+	on_deactivate = {
+		remove_modifier = ut_tax_code_income_tax_raised
+		remove_modifier = ut_tax_code_income_tax_lowered
+		remove_modifier = ut_tax_code_consumption_tax_raised
+		remove_modifier = ut_tax_code_dividend_tax_raised
+		remove_modifier = ut_tax_code_dividend_tax_lowered
+	}
 }
 
 ut_law_private_health_research = {

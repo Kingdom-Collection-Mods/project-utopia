@@ -1,4 +1,4 @@
-﻿ut_tech_preview_cheat_research = {
+ut_tech_preview_cheat_research = {
 	is_shown = {
 		is_player = yes
 		NOT = { has_global_variable = ut_tech_preview_cheat_disable }
@@ -419,11 +419,7 @@ ut_law_tax_code_amend = {
 	possible = {
 		has_law_or_variant = law_type:ut_law_tax_code
 		NOT = {
-			has_modifier = ut_tax_code_income_tax_raised
-			has_modifier = ut_tax_code_income_tax_lowered
-			has_modifier = ut_tax_code_consumption_tax_raised
-			has_modifier = ut_tax_code_dividend_tax_raised
-			has_modifier = ut_tax_code_dividend_tax_lowered
+			has_modifier = ut_tax_code_changed
 		}
 	}
 
@@ -431,6 +427,7 @@ ut_law_tax_code_amend = {
 		set_variable = ut_law_tax_code_amend_lock
 		trigger_event = {
 			id = utopia_mod.3
+				popup = yes
 		}
 	}
 

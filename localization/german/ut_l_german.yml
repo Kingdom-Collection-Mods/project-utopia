@@ -659,6 +659,7 @@
  ut_tax_code_income_tax_raised: "Einkommensteuer erhöht"
  ut_tax_code_income_tax_lowered: "Einkommensteuer gesenkt"
  ut_tax_code_consumption_tax_raised: "Verbrauchsteuer erhöht"
+ ut_tax_code_consumption_tax_lowered: "Verbrauchsteuer gesenkt"
  ut_tax_code_dividend_tax_raised: "Dividendsteuer erhöht"
  ut_tax_code_dividend_tax_lowered: "Dividendsteuer gesenkt"
 
