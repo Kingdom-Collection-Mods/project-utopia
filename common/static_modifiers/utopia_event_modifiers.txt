@@ -51,28 +51,27 @@ ut_new_dawn_focus_recently_changed = {
 je_ut_new_dawn_democrat_focus = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_democrat.dds
 	country_new_dawn_focus_selected_progress = 0.5
-	country_radicals_from_conquest_mult = 0.5
+	country_radicals_from_conquest_mult = -0.25
 	country_diplomatic_play_maneuvers_add = -25
 }
  
 je_ut_new_dawn_fascist_focus = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds
 	country_new_dawn_focus_selected_progress = 0.5
-	country_radicals_from_conquest_mult = -0.5
+	country_radicals_from_conquest_mult = 0.5
 	country_diplomatic_play_maneuvers_add = 50
 }
 
 je_ut_new_dawn_autocrat_focus = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_autocrat.dds
 	country_new_dawn_focus_selected_progress = 0.5
-	country_radicals_from_conquest_mult = -0.25
+	country_radicals_from_conquest_mult = 0.25
 	country_diplomatic_play_maneuvers_add = 50
 }
 
 je_ut_new_dawn_communist_focus = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_communist.dds
 	country_new_dawn_focus_selected_progress = 0.5
-	country_radicals_from_conquest_mult = 0.25
 }
 
 ut_new_dawn_communist_focus = {
@@ -159,7 +158,7 @@ je_ut_new_dawn_fascist_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds
 	country_liberty_desire_of_subjects_add = 0.1
 	country_infamy_generation_mult = -0.5
-	country_infamy_decay_mult = -0.5
+	country_infamy_decay_mult = -0.75
 	country_diplomatic_play_maneuvers_add = 50
 	country_military_tech_research_speed_mult = 0.05
 	country_acceptance_no_shared_heritage_trait_add = -10
@@ -189,11 +188,13 @@ ut_new_dawn_core_communist_mod = {
 je_ut_new_dawn_communist_one_block_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	country_leader_has_law_enactment_success_mult = 0.2
+	country_radicals_from_conquest_mult = 0.1
 }
 
 je_ut_new_dawn_communist_one_people_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	country_leverage_generation_mult = 0.25
+	country_radicals_from_conquest_mult = -0.1
 }
 
 je_ut_communist_socialist_expansion_mod = {
