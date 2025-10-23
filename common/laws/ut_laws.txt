@@ -1526,8 +1526,7 @@ law_registration_process = {
 	}
 
 	modifier = {
-		country_mass_migration_attraction_mult = -0.5
-		state_migration_pull_mult = -0.5
+		country_mass_migration_attraction_mult = -0.75
 		country_migration_restrictiveness_add = 20
 	}
 
