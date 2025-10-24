@@ -1374,7 +1374,7 @@ ut_democracy_article = {
 					has_modifier = ut_new_dawn_core_democratic_mod
 				}
 				add = {
-					desc = "ut_new_dawn_core_democratic_mod"
+					desc = "UT_BOTH_SAME_IDEOLOGY"
 					value = 100
 				}
 			}

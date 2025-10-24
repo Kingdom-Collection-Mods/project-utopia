@@ -398,8 +398,9 @@ je_ut_new_dawn_democratic_spirit = {
 			}
 		}
 		OR = {
-			has_law = law_type:law_parliamentary_republic
-			has_law = law_type:law_presidential_republic
+			has_law_or_variant = law_type:law_parliamentary_republic
+			has_law_or_variant = law_type:law_presidential_republic
+			has_law = law_type:ut_law_monarchy_democratic
 		}
 		NOT = {
 			any_interest_group = {

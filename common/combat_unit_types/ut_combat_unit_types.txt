@@ -780,8 +780,8 @@ combat_unit_type_modern_submarine = {
     }
 
     battle_modifier = {
-        unit_offense_add = 70
-        unit_defense_add = 20
+        unit_offense_add = 80
+        unit_defense_add = 30
         unit_morale_loss_add = 6
         unit_convoy_raiding_mult = 1.0
     }
