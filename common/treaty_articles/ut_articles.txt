@@ -185,7 +185,7 @@
 
 			# We are doing this to be able to reuse loc across treaties and diplomatic actions
 			save_temporary_scope_as = target
-			scope:other_country = {
+			scope:second_country = {
 				save_temporary_scope_as = actor
 			}
 
@@ -217,7 +217,7 @@
 
 			if = {
 				limit = {
-					has_strategic_adjacency = scope:other_country
+					has_strategic_adjacency = scope:second_country
 				}
 				add = {
 					desc = "DIPLOMATIC_ACCEPTANCE_NEIGHBORS"
@@ -231,7 +231,7 @@
 						is_country_type = recognized
 						is_country_type = colonial
 					}
-					scope:other_country = {
+					scope:second_country = {
 						is_country_type = unrecognized
 					}
 				}
@@ -254,7 +254,7 @@
 			##ai gdp comparison instead of power projection
 			add = {
 				desc = "DIPLOMATIC_ACCEPTANCE_ARMY_STRENGTH"
-				value = "scope:other_country.ai_army_comparison(root)"
+				value = "scope:second_country.ai_army_comparison(root)"
 				add = 0.5
 				multiply = 20
 				min = -200
@@ -264,7 +264,7 @@
 			
 			add = {
 				desc = "DIPLOMATIC_ACCEPTANCE_GDP"
-				value = "scope:other_country.ai_gdp_comparison(scope:root)"
+				value = "scope:second_country.ai_gdp_comparison(root)"
 				multiply = 10
 				min = -100
 				max = 25
@@ -275,7 +275,7 @@
 				if = {
 					limit = {
 						has_attitude = {
-							who = scope:other_country
+							who = scope:second_country
 							attitude = protective
 						}
 					}
@@ -285,19 +285,19 @@
 					limit = {
 						OR = {
 							has_attitude = {
-								who = scope:other_country
+								who = scope:second_country
 								attitude = antagonistic
 							}
 							has_attitude = {
-								who = scope:other_country
+								who = scope:second_country
 								attitude = domineering
 							}
 							has_attitude = {
-								who = scope:other_country
+								who = scope:second_country
 								attitude = belligerent
 							}
 							has_attitude = {
-								who = scope:other_country
+								who = scope:second_country
 								attitude = rebellious
 							}
 						}
@@ -308,11 +308,11 @@
 					limit = {
 						OR = {
 							has_attitude = {
-								who = scope:other_country
+								who = scope:second_country
 								attitude = wary
 							}
 							has_attitude = {
-								who = scope:other_country
+								who = scope:second_country
 								attitude = disinterested
 							}
 						}
@@ -322,7 +322,7 @@
 				else_if = {
 					limit = {
 						has_attitude = {
-							who = scope:other_country
+							who = scope:second_country
 							attitude = cautious
 						}
 					}
@@ -332,33 +332,33 @@
 			
 			if = {
 				limit = {
-					"num_alliances_and_defensive_pacts_with_rivals(scope:other_country)" > 0
+					"num_alliances_and_defensive_pacts_with_rivals(scope:second_country)" > 0
 				}
 				add = {
 					desc = "DIPLOMATIC_ACCEPTANCE_ALLIED_TO_RIVALS"
-					value = "num_alliances_and_defensive_pacts_with_rivals(scope:other_country)"
+					value = "num_alliances_and_defensive_pacts_with_rivals(scope:second_country)"
 					multiply = -15
 				}
 			}
 
 			if = {
 				limit = {
-					"num_alliances_and_defensive_pacts_with_allies(scope:other_country)" > 0
+					"num_alliances_and_defensive_pacts_with_allies(scope:second_country)" > 0
 				}
 				add = {
 					desc = "DIPLOMATIC_ACCEPTANCE_ALLIED_TO_ALLIES"
-					value = "num_alliances_and_defensive_pacts_with_allies(scope:other_country)"
+					value = "num_alliances_and_defensive_pacts_with_allies(scope:second_country)"
 					multiply = 10
 				}
 			}
 
 			if = {
 				limit = {
-					"num_shared_rivals(scope:other_country)" > 0
+					"num_shared_rivals(scope:second_country)" > 0
 				}
 				add = {
 					desc = "DIPLOMATIC_ACCEPTANCE_SHARED_RIVALS"
-					value = "num_shared_rivals(scope:other_country)"
+					value = "num_shared_rivals(scope:second_country)"
 					multiply = 10
 					max = 30
 				}
@@ -368,7 +368,7 @@
 				limit = {
 					NOT = {
 						any_scope_treaty = {
-							binds = scope:other_country
+							binds = scope:second_country
 							any_scope_article = {
 								has_type = defensive_pact
 							}
@@ -400,11 +400,11 @@
 			if = {
 				limit = {
 					exists = power_bloc
-					exists = scope:other_country.power_bloc			
+					exists = scope:second_country.power_bloc			
 				}
 				if = {
 					limit = {
-						power_bloc = scope:other_country.power_bloc
+						power_bloc = scope:second_country.power_bloc
 					}
 					add = {
 						desc = "DIPLOMATIC_ACCEPTANCE_SAME_POWER_BLOC"
@@ -414,7 +414,7 @@
 				else_if = {
 					limit = {
 						is_power_bloc_leader = no
-						scope:other_country = { is_power_bloc_leader = no }							
+						scope:second_country = { is_power_bloc_leader = no }							
 					}
 					add = {
 						desc = "DIPLOMATIC_ACCEPTANCE_DIFFERENT_POWER_BLOC"
