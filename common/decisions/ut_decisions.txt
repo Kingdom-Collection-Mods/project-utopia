@@ -440,6 +440,37 @@ ut_law_tax_code_amend = {
 	}
 }
 
+ut_private_construction_amend = {
+	is_shown = {
+		NOT = { has_variable = ut_private_construction_amend_lock }
+		ut_service_workers_possible = yes
+	}
+
+	possible = {
+		NOT = {
+			has_modifier = ut_private_construction_changed
+		}
+		investment_pool_net_income >= 1000000
+		OR = {
+			has_law_or_variant = law_type:law_free_market_economy
+			has_law_or_variant = law_type:law_corporate_economy
+			has_law_or_variant = law_type:law_cooperative_ownership
+		}
+	}
+
+	when_taken = {
+		set_variable = ut_private_construction_amend_lock
+		trigger_event = {
+			id = utopia_mod.4
+			popup = yes
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
 ut_communist_enact_law_variants = {
 	is_shown = {
 		OR = {

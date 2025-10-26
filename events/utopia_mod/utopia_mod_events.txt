@@ -218,3 +218,54 @@ utopia_mod.3 = {
 		remove_variable = ut_law_tax_code_amend_lock
 	}
 }
+
+#free market ammend
+utopia_mod.4 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_trains"
+	}
+
+	duration = 3
+
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	title = ut_law_tax_code
+	desc = ut_law_tax_code
+	flavor = ut_law_tax_code_desc
+
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+	option = {
+		name = ut_private_construction_amend
+		add_modifier = ut_private_construction_raised_mod
+		
+		add_modifier = {
+			name = ut_private_construction_changed
+			days = 3650
+		}
+	}
+	option = {
+		name = ut_private_construction_lower
+		trigger = {
+			has_modifier = ut_private_construction_raised_mod
+		}
+		remove_modifier = ut_private_construction_raised_mod
+		
+		add_modifier = {
+			name = ut_private_construction_changed
+			days = 3650
+		}
+	}
+	after = {
+		remove_variable = ut_private_construction_amend_lock
+	}
+}

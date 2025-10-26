@@ -670,6 +670,11 @@
  ut_tax_code_dividend_tax_raised: "Dividendsteuer erhöht"
  ut_tax_code_dividend_tax_lowered: "Dividendsteuer gesenkt"
 
+ ut_private_construction_amend: "Improve Private Construction"
+ ut_private_construction_amend_desc: "Allows private companies to construct buildings, potentially increasing efficiency but also raising costs."
+ ut_private_construction_changed: "Private Construction Changed"
+ ut_private_construction_raised_mod: "Private Construction Increased"
+
  ut_law_private_health_research: "Private Gesundheitsforschung"
  ut_law_private_health_research_desc: "Ermöglicht es privaten Unternehmen, Gesundheitsforschung durchzuführen und medizinische Behandlungen zu entwickeln, was potenziell zu Innovationen führt, aber auch ethische Bedenken aufwirft."
  ut_law_public_health_research: "Öffentliche Gesundheitsforschung"
