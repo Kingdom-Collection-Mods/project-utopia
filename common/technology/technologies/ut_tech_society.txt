@@ -1,4 +1,4 @@
-﻿##Infrastructure
+##Infrastructure
 highway_projects = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/40s_highway.dds"
@@ -109,6 +109,7 @@ civil_airlines = {
 		
 	modifier = {
 		country_max_companies_add = 1
+		country_free_charters_add = 1
 		state_infrastructure_from_population_max_add = 20
 	}
 
@@ -154,6 +155,7 @@ international_commerce = {
 		
 	modifier = {
 		country_max_companies_add = 1
+		country_free_charters_add = 1
 		state_infrastructure_from_population_max_add = 20
 	}
 
@@ -260,6 +262,7 @@ digital_trading = {
 		state_service_workers_investment_pool_efficiency_mult = 0.05
 		building_trade_center_throughput_add = 0.05
 		country_max_companies_add = 1
+		country_free_charters_add = 1
 	}
 
 	unlocking_technologies = {
