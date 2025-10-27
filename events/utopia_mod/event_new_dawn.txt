@@ -131,7 +131,7 @@ event_new_dawn.2 = {
 	duration = 3
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	gui_window = event_window_1char_tabloid
+	#gui_window = event_window_1char_tabloid
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -507,7 +507,7 @@ event_new_dawn.11 = {
 	duration = 3
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	gui_window = event_window_1char_tabloid
+	#gui_window = event_window_1char_tabloid
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -657,9 +657,7 @@ event_new_dawn.12 = {
 	duration = 3
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	gui_window = event_window_1char_tabloid
-
-	left_icon = scope:french_monarch_scope
+	#gui_window = event_window_1char_tabloid
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -801,7 +799,7 @@ event_new_dawn.30 = {
 	duration = 3
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	gui_window = event_window_1char_tabloid
+	#gui_window = event_window_1char_tabloid
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
