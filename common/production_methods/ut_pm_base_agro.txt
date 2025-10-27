@@ -255,7 +255,7 @@ smart_irrigation_building_cotton_plantation = {
 	}
 		
 	unlocking_technologies = {
-		biotechnology
+		hybrid_crops
 	}
 	
 	building_modifiers = {
@@ -285,7 +285,7 @@ smart_irrigation_building_dye_plantation = {
 	}
 		
 	unlocking_technologies = {
-		biotechnology
+		hybrid_crops
 	}
 	
 	building_modifiers = {
@@ -315,7 +315,7 @@ smart_irrigation_building_opium_plantation = {
 	}
 		
 	unlocking_technologies = {
-		biotechnology
+		hybrid_crops
 	}
 	
 	building_modifiers = {

@@ -15,13 +15,14 @@
 # 	}
 # }
 
-# pmg_base_building_cotton_plantation = {
-# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-# 	production_methods = {
-# 		default_building_cotton_plantation
-# 		automatic_irrigation_building_cotton_plantation
-# 	}
-# }
+pmg_base_building_cotton_plantation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		default_building_cotton_plantation
+		automatic_irrigation_building_cotton_plantation
+		smart_irrigation_building_cotton_plantation
+	}
+}
 
 # pmg_train_automation_building_cotton_plantation = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
@@ -48,13 +49,14 @@ pmg_base_building_dye_plantation = {
 # 	}
 # }
 
-# pmg_base_building_opium_plantation = {
-# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-# 	production_methods = {
-# 		default_building_opium_plantation
-# 		automatic_irrigation_building_opium_plantation
-# 	}
-# }
+pmg_base_building_opium_plantation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		default_building_opium_plantation
+		automatic_irrigation_building_opium_plantation
+		smart_irrigation_building_opium_plantation
+	}
+}
 
 # pmg_train_automation_building_opium_plantation = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
