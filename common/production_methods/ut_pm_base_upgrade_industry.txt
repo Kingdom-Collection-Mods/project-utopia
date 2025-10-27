@@ -1,4 +1,4 @@
-
+﻿
 pm_precision_tools_heavy_machinery = {
 	texture = "gfx/interface/icons/production_method_icons/radios.dds"
 		
@@ -47,8 +47,8 @@ pm_ut_industry_plastics = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_plastic_add = 25
-			goods_input_lead_add = 30
+			goods_input_plastic_add = 35
+			goods_input_lead_add = 20
 			
 			# output goods
 			goods_output_glass_add = 115
