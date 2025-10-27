@@ -726,14 +726,41 @@ pm_shopping_district = {
 			goods_input_computers_add = 1
 			goods_input_electricity_add = 1
 			goods_output_services_add = 90
-			goods_output_internet_add = 2
-			goods_output_consumer_goods_add = 2
+			goods_output_internet_add = 6
 		}
 
 		level_scaled = {
 			building_employment_clerks_add = 1500
 			building_employment_laborers_add = 500
 			building_employment_shopkeepers_add = 500
+			building_employment_service_workers_add = 2000 
+		}
+	}
+
+	required_input_goods = electricity
+}
+
+pm_online_shopping = {
+	texture = "gfx/interface/icons/production_method_icons/skyscraper_trade_nexus.dds"
+	unlocking_technologies = {
+		consumer_goods_main_web_products
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_glass_add = 3
+			goods_input_steel_add = 2
+			goods_input_heavy_machinery_add = 1
+			goods_input_computers_add = 1
+			goods_input_software_add = 2
+			goods_input_electricity_add = 1
+			goods_output_services_add = 100
+			goods_output_internet_add = 20
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = 1500
+			building_employment_shopkeepers_add = 1000
 			building_employment_service_workers_add = 2000 
 		}
 	}

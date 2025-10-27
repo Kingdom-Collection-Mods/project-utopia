@@ -134,6 +134,10 @@
  ut_share_nuclear_power_research_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted $ut_share_nuclear_power_research_name$."
  ut_share_nuclear_power_research_proposal_declined_name: "$ut_share_nuclear_power_research_name$ declined"
  ut_share_nuclear_power_research_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected $ut_share_nuclear_power_research_name$."
+ ut_share_nuclear_power_research_proposal_third_party_accepted_name: "$ut_share_nuclear_power_research_name$ Granted"
+ ut_share_nuclear_power_research_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] was granted $ut_share_nuclear_power_research_name$ from [INITIATOR_COUNTRY.GetName]."
+ ut_share_nuclear_power_research_proposal_third_party_declined_name: "$ut_share_nuclear_power_research_name$ Denied"
+ ut_share_nuclear_power_research_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] was denied $ut_share_nuclear_power_research_name$ from [INITIATOR_COUNTRY.GetName]."
  ut_share_nuclear_power_research_effects_desc: "REPLACE_ME"
  ut_share_nuclear_power_research_article_short_desc: "Shares Nuclear Power research with [TARGET_COUNTRY.GetNameNoFormatting]"
 
@@ -642,6 +646,9 @@
  ut_law_subjecthood_fascist: "Administrative Obedience"
  ut_law_subjecthood_fascist_desc: "All conquered peoples are subjects of the first nation."
 
+ ut_communist_enact_law_variants: "Enact Law Variants"
+ ut_communist_enact_law_variants_desc: "Allows the enactment of special law variants exclusive
+
  law_social_market_economy: "Social Market Economy"
  law_social_market_economy_desc: "A regulated market economy that combines free competition with social security to promote prosperity and social balance."
  law_free_market_economy: "Free Market Economy"
@@ -662,6 +669,12 @@
  ut_tax_code_consumption_tax_lowered: "Consumption Tax Lowered"
  ut_tax_code_dividend_tax_raised: "Dividend Tax Raised"
  ut_tax_code_dividend_tax_lowered: "Dividend Tax Lowered"
+
+ ut_private_construction_amend: "Improve Private Construction"
+ ut_private_construction_amend_desc: "Allowing for more efficient construction increases private construction spending but also raises costs."
+ ut_private_construction_changed: "Private Construction Changed"
+ ut_private_construction_raised_mod: "Private Construction Increased"
+ ut_private_construction_lower: "Decrease Private Construction"
 
  ut_law_private_health_research: "Private Health Research"
  ut_law_private_health_research_desc: "Allows private companies to conduct health research and develop medical treatments, potentially leading to innovation but also raising ethical concerns."
@@ -733,6 +746,14 @@
  law_lgbt_rights_2_desc: "Consenting adults are no longer prosecuted but there is no recognition or safety. Censorship, unequal ages of consent, “public morals” rules keep people cautious and can still lead to violence."
  law_lgbt_rights_3: "Legal Protection"
  law_lgbt_rights_3_desc: "The state forbids discrimination and recognizes basic rights. Community life emerges in public, though backlash can flare and real progress depends on further enforcement and cultural progress."
+
+ ut_lgbt_same_sex_unions: "Same-Sex Unions"
+ ut_lgbt_same_sex_unions_desc: "Legal recognition of same-sex partnerships, offering similar rights and responsibilities as heterosexual marriages."
+ ut_lgbt_same_sex_marriage: "Same-Sex Marriage"
+ ut_lgbt_same_sex_marriage_desc: "Full legal recognition and protection for same-sex marriages, including adoption rights and tax benefits."
+ ut_lgbt_sexual_self_determination: "Sexual Self-Determination"
+ ut_lgbt_sexual_self_determination_desc: "Legal recognition of the right to sexual self-determination, including protection against discrimination based on sexual orientation and gender identity."
+
  law_international_trade: "International Trade"
  law_international_trade_desc: "Regulations and agreements governing trade between nations."
 
@@ -755,6 +776,10 @@
  ut_international_diplomatic_power_bloc_merge_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our proposal to $ut_international_diplomatic_power_bloc_merge$."
  ut_international_diplomatic_power_bloc_merge_proposal_declined_name: "$ut_international_diplomatic_power_bloc_merge$ Declined"
  ut_international_diplomatic_power_bloc_merge_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to $ut_international_diplomatic_power_bloc_merge$."
+ ut_international_diplomatic_power_bloc_merge_proposal_third_party_accepted_name: "$ut_international_diplomatic_power_bloc_merge$ Granted"
+ ut_international_diplomatic_power_bloc_merge_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] was granted $ut_international_diplomatic_power_bloc_merge$ from [INITIATOR_COUNTRY.GetName]."
+ ut_international_diplomatic_power_bloc_merge_proposal_third_party_declined_name: "$ut_international_diplomatic_power_bloc_merge$ Rejected"
+ ut_international_diplomatic_power_bloc_merge_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] was rejected $ut_international_diplomatic_power_bloc_merge$ from [INITIATOR_COUNTRY.GetName]."
 
  je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Has #v $je_ut_new_dawn_democrat_focus$#! modifier"
 
@@ -768,6 +793,10 @@
  ut_influence_new_dawn_major_power_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our request to $ut_influence_new_dawn_major_power$."
  ut_influence_new_dawn_major_power_proposal_declined_name: "$ut_influence_new_dawn_major_power$ Declined"
  ut_influence_new_dawn_major_power_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our request to $ut_influence_new_dawn_major_power$."
+ ut_influence_new_dawn_major_power_proposal_third_party_accepted_name: "$ut_influence_new_dawn_major_power$ Granted"
+ ut_influence_new_dawn_major_power_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] was granted $ut_influence_new_dawn_major_power$ from [INITIATOR_COUNTRY.GetName]."
+ ut_influence_new_dawn_major_power_proposal_third_party_declined_name: "$ut_influence_new_dawn_major_power$ Rejected"
+ ut_influence_new_dawn_major_power_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] was rejected $ut_influence_new_dawn_major_power$ from [INITIATOR_COUNTRY.GetName]." 
  ut_influence_new_dawn_major_power_unlock_tt: "Unlocks: #v $ut_influence_new_dawn_major_power$#!"
 
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
@@ -839,6 +868,8 @@
  ut_fund_ideology_action_name: "$ut_fund_ideology$"
  ut_fund_ideology_action_propose_name: "Start $ut_fund_ideology_action_name$"
  ut_fund_ideology_action_break_name: "Stop $ut_fund_ideology_action_name$"
+ ut_fund_ideology_action_notification_name: "$ut_fund_ideology$ Started"
+ ut_fund_ideology_action_notification_desc: "[INITIATOR_COUNTRY.GetName] has started $ut_fund_ideology$ in [TARGET_COUNTRY.GetName]."
  ut_fund_ideology_action_notification_break_name: "$ut_fund_ideology$ Stopped"
  ut_fund_ideology_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] has stopped $ut_fund_ideology$ in [TARGET_COUNTRY.GetName]."
  ut_fund_ideology_proposal_notification_name: "$ut_fund_ideology$ Proposal"
@@ -859,9 +890,11 @@
  ut_add_new_dawn_progress_neg_25: "Loses #r 25#! [concept_ut_nd_progress_points]"
 
  ut_force_become_subject: "Collectivize Council Republics"
+ ut_force_become_subject_action_name: "$ut_force_become_subject$"
  ut_force_become_subject_desc: "Force the target power bloc member to become your subject and join the Council Republic. They must be [GetLawType('law_council_republic').GetName] or [concept_ut_nd_communist_core] themselves."
 
  ut_force_regime_change: "Order Fascist Change"
+ ut_force_regime_change_action_name: "$ut_force_regime_change$"
  ut_force_regime_change_desc: "Force a regime change in the target power bloc member to your ideology. They must be your subject or a minor nation. They will enact, [GetLawType('law_corporate_state').GetName], [GetLawType('law_extraction_economy').GetName] and [GetLawType('ut_law_subjecthood_fascist').GetName]. Will turn a [concept_protectorate] into a [concept_puppet]."
 
 
@@ -869,6 +902,10 @@
  ut_fund_opposition_action_name: "$ut_fund_opposition$"
  ut_fund_opposition_action_propose_name: "Start $ut_fund_opposition_action_name$"
  ut_fund_opposition_action_break_name: "Stop $ut_fund_opposition_action_name$"
+ ut_fund_opposition_action_notification_break_name: "$ut_fund_opposition$ Stopped"
+ ut_fund_opposition_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] has stopped $ut_fund_opposition$ in [TARGET_COUNTRY.GetName]."
+ ut_fund_opposition_action_notification_name: "$ut_fund_opposition$ Started"
+ ut_fund_opposition_action_notification_desc: "[INITIATOR_COUNTRY.GetName] has started $ut_fund_opposition$ in [TARGET_COUNTRY.GetName]."
  ut_fund_opposition_desc: "Fund the opposition in the target country to overthrow the ruling ideology.\n\n$ut_fund_opposition_effect$"
  ut_fund_opposition_effect: "2% chance per month for their core Ideology to lose #r 25#! [concept_ut_nd_progress_points] (may abort their New Dawn [concept_ut_nd_path_to_utopia] journal entry, Democracies are +50% effective against Autocratic countries, +25% more effective if Online Forums and additionally Social Media is researched)."
  ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds opposition groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], this may lead to revolts in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] opposition groups reducing their ideology [concept_ut_nd_progress_points].\n\n$ut_fund_opposition_effect$"
@@ -1394,6 +1431,7 @@
 
  pm_supermarket: "Supermarket"
  pm_shopping_district: "Shopping District"
+ pm_online_shopping: "Online Shopping"
 
  ut_pm_film_industry_art: "Movie Industry"
  ut_pm_film_industry_art_principle_movement: "International Movie Industry"

@@ -134,6 +134,10 @@
  ut_share_nuclear_power_research_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted $ut_share_nuclear_power_research_name$."
  ut_share_nuclear_power_research_proposal_declined_name: "$ut_share_nuclear_power_research_name$ declined"
  ut_share_nuclear_power_research_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected $ut_share_nuclear_power_research_name$."
+ ut_share_nuclear_power_research_proposal_third_party_accepted_name: "$ut_share_nuclear_power_research_name$ Granted"
+ ut_share_nuclear_power_research_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] was granted $ut_share_nuclear_power_research_name$ from [INITIATOR_COUNTRY.GetName]."
+ ut_share_nuclear_power_research_proposal_third_party_declined_name: "$ut_share_nuclear_power_research_name$ Denied"
+ ut_share_nuclear_power_research_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] was denied $ut_share_nuclear_power_research_name$ from [INITIATOR_COUNTRY.GetName]."
  ut_share_nuclear_power_research_effects_desc: "REPLACE_ME"
  ut_share_nuclear_power_research_article_short_desc: "REPLACE_ME"
 
@@ -375,7 +379,7 @@
  je_ut_new_dawn_form_paramilitary_groups: "Paramilitary Groups"
  je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant organizations to enforce party rule.\n\n#italic Historical Context:#!\nThe SA (Sturmabteilung), active since the 1920s, grew into a powerful paramilitary force by the early 1930s, intimidating voters and disrupting opposition meetings. On June 30, 1934, during the Night of the Long Knives, Hitler purged the SA leadership to consolidate power, elevating the more ideologically driven SS (Schutzstaffel)."
  je_ut_new_dawn_conformity: "Conformity"
- je_ut_new_dawn_conformity_desc: "Encourage strict social alignment with state ideals.\n\n#italic Historical Context:#!\nStarting in 1933, the Nazis implemented Gleichschaltung (\"coordination\"), a process of aligning all aspects of society—including media, education, culture, and religion—with Nazi ideology. Independent trade unions were banned on May 2, 1933, replaced by the state-run German Labor Front.
+ je_ut_new_dawn_conformity_desc: "Encourage strict social alignment with state ideals.\n\n#italic Historical Context:#!\nStarting in 1933, the Nazis implemented Gleichschaltung (\"coordination\"), a process of aligning all aspects of society—including media, education, culture, and religion—with Nazi ideology. Independent trade unions were banned on May 2, 1933, replaced by the state-run German Labor Front."
  je_ut_new_dawn_unite_heritage: "Unite Heritage"
  je_ut_new_dawn_unite_heritage_desc: "Create a shared national identity based on cultural myths and history.\n\n#italic Historical Context:#!\nThe Nazi regime promoted a mythic vision of Germanic history through organizations like the Ahnenerbe (founded in 1935), which spread pseudoscientific racial theories. Nazi education and propaganda glorified a supposed Aryan past to unite the population under an exclusionary, ethnonationalist identity."
  je_ut_new_dawn_volksgemeinschaft: "Us - not them."
@@ -513,8 +517,8 @@
  state_service_workers_investment_pool_efficiency_mult_desc: "Eine Erhöhung oder Verringerung der investierten Profite, die $service_workers$ zum [concept_investment_pool] beitragen."
  building_employment_service_workers_add: "$service_workers$ Per Level"
  building_employment_service_workers_add_desc: "Modifies the amount of $service_workers$ a building can hire per level."
- country_service_workers_voting_power_add: "$service_workers$ [concept_voting_power]"
- country_service_workers_voting_power_add_desc: "An increase or decrease in the [concept_voting_power] of $service_workers$"
+ country_service_workers_voting_power_add: "[concept_political_strength] from the [concept_votes] of $service_workers$"
+ country_service_workers_voting_power_add_desc: "An increase or decrease to amount of [concept_political_strength] gained from the [concept_votes] of $service_workers$ in Elections"
  building_service_workers_mortality_mult: "$service_workers$ Mortality Multiplier"
  building_service_workers_mortality_mult_desc: "An increase or decrease in the mortality rate of $service_workers$."
 
@@ -642,6 +646,9 @@
  ut_law_subjecthood_fascist: "Administrative Gehorsamkeit"
  ut_law_subjecthood_fascist_desc: "All eroberten Völker sind Subjekte der führenden Nation."
 
+ ut_communist_enact_law_variants: "Enact Law Variants"
+ ut_communist_enact_law_variants_desc: "Allows the enactment of special law variants exclusive
+
  law_social_market_economy: "Soziale Marktwirtschaft" 
  law_social_market_economy_desc: "Eine regulierte Marktwirtschaft, die freien Wettbewerb mit sozialer Absicherung verbindet, um Wohlstand und gesellschaftlichen Ausgleich zu fördern."
  law_free_market_economy: "Freie Marktwirtschaft"
@@ -662,6 +669,11 @@
  ut_tax_code_consumption_tax_lowered: "Verbrauchsteuer gesenkt"
  ut_tax_code_dividend_tax_raised: "Dividendsteuer erhöht"
  ut_tax_code_dividend_tax_lowered: "Dividendsteuer gesenkt"
+
+ ut_private_construction_amend: "Improve Private Construction"
+ ut_private_construction_amend_desc: "Allows private companies to construct buildings, potentially increasing efficiency but also raising costs."
+ ut_private_construction_changed: "Private Construction Changed"
+ ut_private_construction_raised_mod: "Private Construction Increased"
 
  ut_law_private_health_research: "Private Gesundheitsforschung"
  ut_law_private_health_research_desc: "Ermöglicht es privaten Unternehmen, Gesundheitsforschung durchzuführen und medizinische Behandlungen zu entwickeln, was potenziell zu Innovationen führt, aber auch ethische Bedenken aufwirft."
@@ -733,6 +745,14 @@
  law_lgbt_rights_2_desc: "Einvernehmliche Erwachsene werden nicht mehr strafrechtlich verfolgt, aber es gibt keine Anerkennung oder Sicherheit. Zensur, ungleiche Altersgrenzen für die Zustimmung und Regeln der \"öffentlichen Moral\" halten die Menschen vorsichtig und können immer noch zu Gewalt führen."
  law_lgbt_rights_3: "Rechtsschutz"
  law_lgbt_rights_3_desc: "Der Staat verbietet Diskriminierung und erkennt grundlegende Rechte an. Das Gemeinschaftsleben tritt öffentlich in Erscheinung, obwohl Gegenreaktionen aufflammen können und echter Fortschritt von weiterer Durchsetzung und kulturellem Fortschritt abhängt."
+
+ ut_lgbt_same_sex_unions: "Gleichgeschlechtliche Partnerschaften"
+ ut_lgbt_same_sex_unions_desc: "Gesetzliche Anerkennung gleichgeschlechtlicher Partnerschaften, die ähnliche Rechte und Pflichten wie heterosexuelle Ehen bieten."
+ ut_lgbt_same_sex_marriage: "Gleichgeschlechtliche Ehe"
+ ut_lgbt_same_sex_marriage_desc: "Vollständige rechtliche Anerkennung und Schutz für gleichgeschlechtliche Ehen, einschließlich Adoptionsrechte und steuerlicher Vorteile."
+ ut_lgbt_sexual_self_determination: "Sexuelle Selbstbestimmung"
+ ut_lgbt_sexual_self_determination_desc: "Gesetzliche Anerkennung des Rechts auf sexuelle Selbstbestimmung, einschließlich Schutz vor Diskriminierung aufgrund sexueller Orientierung und Geschlechtsidentität."
+
  law_international_trade: "Internationaler Handel"
  law_international_trade_desc: "Regelungen und Vereinbarungen, die den Handel zwischen Nationen regeln."
 
@@ -755,6 +775,10 @@
  ut_international_diplomatic_power_bloc_merge_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our proposal to $ut_international_diplomatic_power_bloc_merge$."
  ut_international_diplomatic_power_bloc_merge_proposal_declined_name: "$ut_international_diplomatic_power_bloc_merge$ Declined"
  ut_international_diplomatic_power_bloc_merge_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to $ut_international_diplomatic_power_bloc_merge$."
+ ut_international_diplomatic_power_bloc_merge_proposal_third_party_accepted_name: "$ut_international_diplomatic_power_bloc_merge$ Granted"
+ ut_international_diplomatic_power_bloc_merge_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] was granted $ut_international_diplomatic_power_bloc_merge$ from [INITIATOR_COUNTRY.GetName]."
+ ut_international_diplomatic_power_bloc_merge_proposal_third_party_declined_name: "$ut_international_diplomatic_power_bloc_merge$ Rejected"
+ ut_international_diplomatic_power_bloc_merge_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] was rejected $ut_international_diplomatic_power_bloc_merge$ from [INITIATOR_COUNTRY.GetName]."
 
  je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Has #v $je_ut_new_dawn_democrat_focus$#! modifier"
 
@@ -768,6 +792,10 @@
  ut_influence_new_dawn_major_power_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our request to $ut_influence_new_dawn_major_power$."
  ut_influence_new_dawn_major_power_proposal_declined_name: "$ut_influence_new_dawn_major_power$ Declined"
  ut_influence_new_dawn_major_power_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our request to $ut_influence_new_dawn_major_power$."
+ ut_influence_new_dawn_major_power_proposal_third_party_accepted_name: "$ut_influence_new_dawn_major_power$ Granted"
+ ut_influence_new_dawn_major_power_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] was granted $ut_influence_new_dawn_major_power$ from [INITIATOR_COUNTRY.GetName]."
+ ut_influence_new_dawn_major_power_proposal_third_party_declined_name: "$ut_influence_new_dawn_major_power$ Rejected"
+ ut_influence_new_dawn_major_power_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] was rejected $ut_influence_new_dawn_major_power$ from [INITIATOR_COUNTRY.GetName]."
  ut_influence_new_dawn_major_power_unlock_tt: "Verfügbare: #v $ut_influence_new_dawn_major_power$#!"
 
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
@@ -839,6 +867,8 @@
  ut_fund_ideology_action_name: "$ut_fund_ideology$"
  ut_fund_ideology_action_propose_name: "Start $ut_fund_ideology_action_name$"
  ut_fund_ideology_action_break_name: "Stop $ut_fund_ideology_action_name$"
+ ut_fund_ideology_action_notification_name: "$ut_fund_ideology$ Started"
+ ut_fund_ideology_action_notification_desc: "[INITIATOR_COUNTRY.GetName] has started $ut_fund_ideology$ in [TARGET_COUNTRY.GetName]."
  ut_fund_ideology_action_notification_break_name: "$ut_fund_ideology$ Stopped"
  ut_fund_ideology_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] has stopped $ut_fund_ideology$ in [TARGET_COUNTRY.GetName]."
  ut_fund_ideology_proposal_notification_name: "$ut_fund_ideology$ Proposal"
@@ -859,9 +889,11 @@
  ut_add_new_dawn_progress_neg_25: "Entferne #r 25#! [concept_ut_nd_progress_points]"
 
  ut_force_become_subject: "Räterepublik kollektivieren"
+ ut_force_become_subject_action_name: "$ut_force_become_subject$"
  ut_force_become_subject_desc: "Force the target power bloc member to become your subject and join the Council Republic. They must be Communist themselves."
 
  ut_force_regime_change: "Faschistischen Wandel erzwingen"
+ ut_force_regime_change_action_name: "$ut_force_regime_change$"
  ut_force_regime_change_desc: "Force a regime change in the target power bloc member to your ideology. They must be your subject or a minor nation. They will enact, [GetLawType('law_corporate_state').GetName], [GetLawType('law_extraction_economy').GetName] and [GetLawType('ut_law_subjecthood_fascist').GetName]. Will turn a [concept_protectorate] into a [concept_puppet]."
 
 
@@ -869,6 +901,10 @@
  ut_fund_opposition_action_name: "$ut_fund_opposition$"
  ut_fund_opposition_action_propose_name: "Start $ut_fund_opposition_action_name$"
  ut_fund_opposition_action_break_name: "Stop $ut_fund_opposition_action_name$"
+ ut_fund_opposition_action_notification_break_name: "$ut_fund_opposition$ Stopped"
+ ut_fund_opposition_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] has stopped $ut_fund_opposition$ in [TARGET_COUNTRY.GetName]."
+ ut_fund_opposition_action_notification_name: "$ut_fund_opposition$ Started"
+ ut_fund_opposition_action_notification_desc: "[INITIATOR_COUNTRY.GetName] has started $ut_fund_opposition$ in [TARGET_COUNTRY.GetName]."
  ut_fund_opposition_desc: "Fund the opposition in the target country to overthrow the ruling ideology.\n\n$ut_fund_opposition_effect$"
  ut_fund_opposition_effect: "2% chance per month for their core Ideology to lose #r 25#! [concept_ut_nd_progress_points] (may abort their New Dawn [concept_ut_nd_path_to_utopia] journal entry, Democracies are +50% effective against Autocratic countries, +25% more effective if Online Forums and additionally Social Media is researched)."
  ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds opposition groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], this may lead to revolts in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] opposition groups reducing their ideology [concept_ut_nd_progress_points].\n\n$ut_fund_opposition_effect$"
@@ -1394,6 +1430,7 @@
 
  pm_supermarket: "Supermarkt"
  pm_shopping_district: "Shopping Viertel"
+ pm_online_shopping: "Online Shopping"
  
  ut_pm_film_industry_art: "Filmindustrie"
  ut_pm_film_industry_art_principle_movement: "Internationale Filmindustrie"

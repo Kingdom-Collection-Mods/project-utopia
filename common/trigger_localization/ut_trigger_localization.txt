@@ -1,0 +1,8 @@
+﻿
+has_treaty_ut_research_assistance_treaty_with_trigger = {
+	global = has_treaty_ut_research_assistance_treaty_with_trigger
+}
+
+has_treaty_ut_research_agreement_with_trigger = {
+	global = has_treaty_ut_research_agreement_with_trigger
+}

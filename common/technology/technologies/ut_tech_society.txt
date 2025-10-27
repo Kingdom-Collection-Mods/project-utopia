@@ -45,6 +45,7 @@ heavy_machinery_builders = {
 	modifier = {
 		state_infrastructure_from_population_max_add = 20
 		state_building_construction_sector_max_level_add = 5
+		country_max_weekly_construction_progress_add = 5
 	}
 
 	unlocking_technologies = {	
@@ -64,6 +65,7 @@ highspeed_transport = {
 	modifier = {
 		state_infrastructure_from_population_max_add = 20
 		state_building_construction_sector_max_level_add = 5
+		country_max_weekly_construction_progress_add = 5
 	}
 
 	unlocking_technologies = {	
@@ -109,6 +111,7 @@ civil_airlines = {
 		
 	modifier = {
 		country_max_companies_add = 1
+		country_free_charters_add = 1
 		state_infrastructure_from_population_max_add = 20
 	}
 
@@ -154,6 +157,7 @@ international_commerce = {
 		
 	modifier = {
 		country_max_companies_add = 1
+		country_free_charters_add = 1
 		state_infrastructure_from_population_max_add = 20
 	}
 
@@ -260,6 +264,7 @@ digital_trading = {
 		state_service_workers_investment_pool_efficiency_mult = 0.05
 		building_trade_center_throughput_add = 0.05
 		country_max_companies_add = 1
+		country_free_charters_add = 1
 	}
 
 	unlocking_technologies = {

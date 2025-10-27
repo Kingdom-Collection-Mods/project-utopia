@@ -18,7 +18,7 @@ utopia_journal_society.1 = {
 			NOT = { has_technology_researched = anti_discrimination_laws }
 			can_research = anti_discrimination_laws
 		}
-		add_technology_progress = { progress = 6000 technology = anti_discrimination_laws }
+		add_technology_progress = { progress = 8000 technology = anti_discrimination_laws }
 	}
 
 	option = {
@@ -28,7 +28,7 @@ utopia_journal_society.1 = {
 			NOT = { has_technology_researched = check_payments }
 			can_research = check_payments
 		}
-		add_technology_progress = { progress = 6000 technology = check_payments }
+		add_technology_progress = { progress = 8000 technology = check_payments }
 	}
 
 	option = {
@@ -38,7 +38,7 @@ utopia_journal_society.1 = {
 			NOT = { has_technology_researched = public_universities }
 			can_research = public_universities
 		}
-		add_technology_progress = { progress = 6000 technology = public_universities }
+		add_technology_progress = { progress = 8000 technology = public_universities }
 	}
 	
 	

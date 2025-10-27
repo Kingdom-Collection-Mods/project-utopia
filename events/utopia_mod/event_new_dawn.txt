@@ -128,10 +128,14 @@ event_new_dawn.2 = {
 		}
 	}
 
+	event_image = {
+		video = "unspecific_trains"
+	}
+
 	duration = 3
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	gui_window = event_window_1char_tabloid
+	#gui_window = event_window_1char_tabloid
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -335,6 +339,10 @@ event_new_dawn.3 = {
 		}
 	}
 
+	event_image = {
+		video = "unspecific_airship"
+	}
+
 	duration = 3
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
@@ -504,10 +512,14 @@ event_new_dawn.11 = {
 	desc = event_new_dawn.11.d
 	flavor = event_new_dawn.11.f
 
+	event_image = {
+		video = "unspecific_trains"
+	}
+
 	duration = 3
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	gui_window = event_window_1char_tabloid
+	#gui_window = event_window_1char_tabloid
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -654,12 +666,14 @@ event_new_dawn.12 = {
 	title = event_new_dawn.11.t
 	desc = event_new_dawn.11.d
 
+	event_image = {
+		video = "unspecific_trains"
+	}
+
 	duration = 3
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	gui_window = event_window_1char_tabloid
-
-	left_icon = scope:french_monarch_scope
+	#gui_window = event_window_1char_tabloid
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -797,11 +811,15 @@ event_new_dawn.30 = {
 	title = event_new_dawn.30.t
 	desc = event_new_dawn.30.d
 	flavor = event_new_dawn.30.f
+	
+	event_image = {
+		video = "unspecific_trains"
+	}
 
 	duration = 3
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	gui_window = event_window_1char_tabloid
+	#gui_window = event_window_1char_tabloid
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
