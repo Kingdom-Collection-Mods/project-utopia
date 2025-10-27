@@ -28,6 +28,7 @@
 	}
 	
 	prosperity_modifier = {	
+		country_weekly_innovation_max_add = 10
 		country_tech_spread_mult = 0.2
 	}
 	
