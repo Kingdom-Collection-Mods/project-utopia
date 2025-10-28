@@ -25,14 +25,37 @@
 			is_in_power_bloc = yes
 			is_power_bloc_leader = yes
 		}
-		has_modifier = ut_new_dawn_core_democratic_mod
-		has_modifier = je_ut_new_dawn_democratic_power_bloc_mod
+		OR = {
+			AND = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+				has_modifier = je_ut_new_dawn_democratic_power_bloc_mod
+			}
+			AND = {
+				has_modifier = ut_new_dawn_core_communist_mod
+				OR = {
+					has_modifier = je_ut_new_dawn_communist_one_block_mod
+					has_modifier = je_ut_new_dawn_communist_one_people_mod
+				}
+			}
+		}
 	}
 	
 	possible = {
-		scope:target_country = {
-			is_power_bloc_leader = yes
-			has_modifier = ut_new_dawn_core_democratic_mod
+		OR = {
+			AND = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+				scope:target_country = {
+					is_power_bloc_leader = yes
+					has_modifier = ut_new_dawn_core_democratic_mod
+				}
+			}
+			AND = {
+				has_modifier = ut_new_dawn_core_communist_mod
+				scope:target_country = {
+					is_power_bloc_leader = yes
+					has_modifier = ut_new_dawn_core_communist_mod
+				}
+			}
 		}
 
 		power_bloc = {
@@ -63,6 +86,7 @@
 	}
 	
 
+	#copied from invite to power blocs but base -100->0 (reflects UT_STANCE_FAVORABLE on join/stay)
 	ai = {
 		evaluation_chance = {
 			value = 0
