@@ -34,13 +34,13 @@
 		}
 
 		multiply = {
-			desc = "HAS_POLITICAL_AGITATION"	
+			desc = "HAS_POLITICAL_ONLINE_FORUMS"	
 			value = 1.0
 			
 			if = {
 				limit = { 
 					owner = {
-						has_technology_researched = political_agitation
+						has_technology_researched = online_forums
 					}
 				}
 				value = 1.5
