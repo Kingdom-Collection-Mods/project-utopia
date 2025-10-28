@@ -508,6 +508,7 @@
  service_workers_only_icon: "@service_workers!"
  service_workers_no_icon: "Dienstleister"
  POP_SERVICE_WORKERS: "$service_workers$ [concept_profession]"
+ HAS_POLITICAL_ONLINE_FORUMS:0 "Die #v $online_forums$#! [concept_technology] ist freigeschaltet"
  SERVICE_WORKERS_QUALIFICATIONS_DESC: "Nur Bevölkerungsgruppen mit ausreichender [concept_literacy] und [concept_wealth] können zu #v $service_workers$#! werden. Das Potenzial steigt mit zunehmender [concept_literacy] und [concept_wealth]. #v $laborers$#! und #v $clerks$#! haben es besonders leicht, zu #v $service_workers$#! zu werden."
  country_service_workers_pol_str_mult: "[concept_political_strength] of $service_workers$"
  country_service_workers_pol_str_mult_desc: "An increase or decrease in the [concept_political_strength] of $service_workers$"
@@ -1612,7 +1613,7 @@
  smart_irrigation_building_silk_plantation: "Intelligente Bewässerung"
  smart_irrigation_building_vineyard_plantation: "Intelligente Bewässerung"
  smart_irrigation_building_coffee_plantation: "Intelligente Bewässerung"
- smart_irrigation_building_dye_plantation: "Intelligente Bewässerung"
+ smart_irrigation_building_opium_plantation: "Intelligente Bewässerung"
 
  agricultural_mechanization: "Schwere Traktoren"
  slow_tech_progress: "Langsamer technischer Fortschritt"
