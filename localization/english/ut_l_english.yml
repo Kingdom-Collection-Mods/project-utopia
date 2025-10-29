@@ -1363,6 +1363,9 @@
  pm_hi_individual_logistics: "Truck Logistics"
  pm_hi_just_in_time_logistics: "Just-in-Time Logistics"
  pm_hi_connected_logistics: "Connected Logistics"
+ ut_pm_plantations_individual_logistics_era_6: "Truck Logistics"
+ ut_pm_plantations_individual_logistics_era_7: "Truck Logistics"
+ ut_pm_plantations_connected_logistics: "Connected Logistics"
 
  ut_pm_research_department: "Social Science Department"
  ut_pm_research_department_principle_movement: "International Science Department"

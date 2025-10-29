@@ -1362,6 +1362,9 @@
  pm_hi_individual_logistics: "LWK Logistik"
  pm_hi_just_in_time_logistics: "Just-in-Time Logistik"
  pm_hi_connected_logistics: "Vernetzte Logistik"
+ ut_pm_plantations_individual_logistics_era_6: "LKW Logistik"
+ ut_pm_plantations_individual_logistics_era_7: "LKW Logistik"
+ ut_pm_plantations_connected_logistics: "Vernetzte Logistik"
 
  ut_pm_research_department: "Institut für Sozialwissenschaften"
  ut_pm_research_department_principle_movement: "Internationales Wissenschafts-Institut"
