@@ -970,14 +970,13 @@ law_demobilized = {
 	
 	modifier = {
 		unit_morale_loss_mult = 0.2
-		state_conscription_rate_add = 0.03
-		building_training_rate_mult = 0.5
-		country_officers_pol_str_mult = 0.5
-		country_soldiers_pol_str_mult = 0.5
+		state_conscription_rate_add = 0.01
+		country_bureaucrats_pol_str_mult = 0.2
 		state_building_barracks_max_level_add = 10
 		state_building_conscription_center_max_level_add = 10
-		country_infamy_decay_mult = -0.25
-		country_weekly_innovation_max_add = 100
+		country_infamy_generation_mult = 0.5
+		country_infamy_decay_mult = 0.25
+		country_weekly_innovation_max_add = 50
 	}
 
 	can_impose = {
