@@ -1558,8 +1558,8 @@
  goods_output_utopia_battleships_add: "@utopia_battleships! Battleship output"
  goods_output_utopia_battleships_add_desc: "The amount of @utopia_battleships! Battleship produced by buildings"
 
- goods_output_trucks_mult: "$trucks$ Goods Output"
- goods_output_trucks_mult_desc: "A bonus or penalty for the production of $trucks$."
+ goods_output_trucks_mult: "@trucks! $trucks$ Goods Output"
+ goods_output_trucks_mult_desc: "A bonus or penalty for the production of @trucks! $trucks$."
 
  state_highways_max_level_add: "Add Maximum Level for $highways$"
  state_highways_max_level_add_desc: "Increase the maximum level of $highways$ by 1."
