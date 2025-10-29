@@ -339,7 +339,7 @@ ut_consumer_goods_simple_je = {
 
 	complete = {
 		any_scope_building = {
-			is_building_type = building_electrics_industry
+			is_building_type = building_commercial_factory
 			level >= 5
 			cash_reserves_ratio > 0.25
 			weekly_profit > 0
@@ -381,8 +381,8 @@ ut_consumer_goods_complex_je = {
 
 	complete = {
 		any_scope_building = {
-			is_building_type = building_electrics_industry
-			level >= 5
+			is_building_type = building_commercial_factory
+			level >= 20
 			cash_reserves_ratio > 0.25
 			weekly_profit > 0
 			occupancy > 0.75
