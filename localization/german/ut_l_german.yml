@@ -1469,7 +1469,7 @@
  utopia_artillery: "Schwere Artillerie"
  utopia_tanks: "Schwere Panzer"
  utopia_jet_planes: "Jetflugzeuge"
- utopia_battleship: "Schlachtschiff"
+ utopia_battleships: "Schlachtschiff"
 
 #prestige goods
  prestige_good_generic_consumer_goods_simple: "Waschmaschinen"
@@ -1515,8 +1515,8 @@
  goods_input_utopia_tanks_add_desc: "Die Menge an @utopia_tanks! Panzern, die von Gebäuden verbraucht wird"
  goods_input_utopia_jet_planes_add: "@utopia_jet_planes! Jet Plane Eingang"
  goods_input_utopia_jet_planes_add_desc: "Die Menge an @utopia_jet_planes! Jet Plane, die von Gebäuden verbraucht wird"
- goods_input_utopia_battleship_add: "@utopia_battleship! Battleship Eingang"
- goods_input_utopia_battleship_add_desc: "Die Menge an @utopia_battleship! Battleship, die von Gebäuden verbraucht wird"
+ goods_input_utopia_battleships_add: "@utopia_battleships! Battleship Eingang"
+ goods_input_utopia_battleships_add_desc: "Die Menge an @utopia_battleships! Battleship, die von Gebäuden verbraucht wird"
 
  goods_output_heavy_machinery_add: "@heavy_machinery! Schwerindustriemaschinen Ausgang"
  goods_output_heavy_machinery_add_desc: "Die Menge an @heavy_machinery! Schwerindustriemaschinen, die von Gebäuden produziert wird"
@@ -1548,8 +1548,8 @@
  goods_output_utopia_tanks_add_desc: "The amount of @utopia_tanks! Tanks produced by buildings"
  goods_output_utopia_jet_planes_add: "@utopia_jet_planes! Jet Plane output"
  goods_output_utopia_jet_planes_add_desc: "The amount of @utopia_jet_planes! Jet Plane produced by buildings"
- goods_output_utopia_battleship_add: "@utopia_battleship! Battleship output"
- goods_output_utopia_battleship_add_desc: "The amount of @utopia_battleship! Battleship produced by buildings"
+ goods_output_utopia_battleships_add: "@utopia_battleships! Battleship output"
+ goods_output_utopia_battleships_add_desc: "The amount of @utopia_battleships! Battleship produced by buildings"
 
  goods_output_trucks_mult: "$trucks$ Güterausstoß"
  goods_output_trucks_mult_desc: "Ein Bonus oder Abzug für die Produktion von $trucks$."

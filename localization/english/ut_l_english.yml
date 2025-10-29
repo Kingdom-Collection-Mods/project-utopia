@@ -1470,7 +1470,7 @@
  utopia_artillery: "Heavy Artillery"
  utopia_tanks: "Heavy Tanks"
  utopia_jet_planes: "Jet Plane"
- utopia_battleship: "Battleship"
+ utopia_battleships: "Battleship"
 
 #prestige goods
  prestige_good_generic_consumer_goods_simple: "Washing Machines"
@@ -1516,8 +1516,8 @@
  goods_input_utopia_tanks_add_desc: "The amount of @utopia_tanks! Heavy Tanks consumed by buildings"
  goods_input_utopia_jet_planes_add: "@utopia_jet_planes! Jet Plane input"
  goods_input_utopia_jet_planes_add_desc: "The amount of @utopia_jet_planes! Jet Plane consumed by buildings"
- goods_input_utopia_battleship_add: "@utopia_battleship! Battleship input"
- goods_input_utopia_battleship_add_desc: "The amount of @utopia_battleship! Battleship consumed by buildings"
+ goods_input_utopia_battleships_add: "@utopia_battleships! Battleship input"
+ goods_input_utopia_battleships_add_desc: "The amount of @utopia_battleships! Battleship consumed by buildings"
 
  goods_output_heavy_machinery_add: "@heavy_machinery! Machinery output"
  goods_output_heavy_machinery_add_desc: "The amount of @heavy_machinery! Machinery produced by buildings"
@@ -1549,8 +1549,8 @@
  goods_output_utopia_tanks_add_desc: "The amount of @utopia_tanks! Heavy Tanks produced by buildings"
  goods_output_utopia_jet_planes_add: "@utopia_jet_planes! Jet Plane output"
  goods_output_utopia_jet_planes_add_desc: "The amount of @utopia_jet_planes! Jet Plane produced by buildings"
- goods_output_utopia_battleship_add: "@utopia_battleship! Battleship output"
- goods_output_utopia_battleship_add_desc: "The amount of @utopia_battleship! Battleship produced by buildings"
+ goods_output_utopia_battleships_add: "@utopia_battleships! Battleship output"
+ goods_output_utopia_battleships_add_desc: "The amount of @utopia_battleships! Battleship produced by buildings"
 
  goods_output_trucks_mult: "$trucks$ Goods Output"
  goods_output_trucks_mult_desc: "A bonus or penalty for the production of $trucks$."

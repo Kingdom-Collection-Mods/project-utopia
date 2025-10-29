@@ -559,10 +559,10 @@ combat_unit_type_missile_corvettes = {
 	max_manpower = 1000
 
     upkeep_modifier = {
-        #goods_input_utopia_battleship_add
-        goods_input_ironclads_add = 3
+        #goods_input_utopia_battleships_add
+        goods_input_utopia_battleships_add = 3
         goods_input_ammunition_add = 3
-        goods_input_artillery_add = 3
+        goods_input_utopia_artillery_add = 3
         goods_input_radios_add = 1
         goods_input_heavy_machinery_add = 1
         goods_input_electronics_add = 1
@@ -596,9 +596,9 @@ combat_unit_type_surveillance_corvettes = {
 	max_manpower = 1000
 
     upkeep_modifier = {
-        goods_input_ironclads_add = 3
+        goods_input_utopia_battleships_add = 3
         goods_input_ammunition_add = 3
-        goods_input_artillery_add = 3
+        goods_input_utopia_artillery_add = 3
         goods_input_radios_add = 1
         goods_input_heavy_machinery_add = 1
         goods_input_computers_add = 1
@@ -668,8 +668,8 @@ combat_unit_type_capital_battleship = {
 	max_manpower = 1000
 
     upkeep_modifier = {
-        goods_input_ironclads_add = 10
-		goods_input_artillery_add = 10
+        goods_input_utopia_battleships_add = 10
+		goods_input_utopia_artillery_add = 10
         goods_input_ammunition_add = 10
         goods_input_radios_add = 4
         goods_input_heavy_machinery_add = 1
@@ -770,8 +770,8 @@ combat_unit_type_modern_submarine = {
 	max_manpower = 1000
 
     upkeep_modifier = {
-        goods_input_ironclads_add = 2
-        goods_input_artillery_add = 2
+        goods_input_utopia_battleships_add = 2
+		goods_input_utopia_artillery_add = 2
         goods_input_ammunition_add = 2
 		goods_input_radios_add = 2
         goods_input_heavy_machinery_add = 1
@@ -802,10 +802,10 @@ combat_unit_type_super_carrier = {
 	max_manpower = 1000
 
     upkeep_modifier = {
-        goods_input_ironclads_add = 8
+        goods_input_utopia_battleships_add = 8
         goods_input_ammunition_add = 8
         goods_input_radios_add = 4
-        goods_input_aeroplanes_add = 10
+        goods_input_utopia_jet_planes_add = 10
         goods_input_heavy_machinery_add = 1
         goods_input_computers_add = 1
     }
