@@ -1430,6 +1430,9 @@
  ut_pm_hydraulic_recoil_mechanism: "Hydraulischer Rückstoßmechanismus"
  ut_pm_self_propelled_artillery: "Selbstfahrende Artillerie"
 
+ ut_pm_military_shipbuilding_utopia: "Schlachtschiffe"
+ ut_pm_military_shipbuilding_utopia_2: "Kriegsschiffe"
+
  pm_trade_center_trade_quantity_utopia: "Industriellerhandel"
 
  pm_supermarket: "Supermarkt"
@@ -1472,7 +1475,7 @@
  utopia_artillery: "Schwere Artillerie"
  utopia_tanks: "Schwere Panzer"
  utopia_jet_planes: "Jetflugzeuge"
- utopia_battleships: "Schlachtschiff"
+ utopia_battleships: "Schlachtschiffe"
 
 #prestige goods
  prestige_good_generic_consumer_goods_simple: "Waschmaschinen"

@@ -1431,6 +1431,9 @@
  ut_pm_hydraulic_recoil_mechanism: "Hydraulic Recoil Mechanism"
  ut_pm_self_propelled_artillery: "Self-Propelled Artillery"
 
+ ut_pm_military_shipbuilding_utopia: "Battle Ships"
+ ut_pm_military_shipbuilding_utopia_2: "War Ships"
+
  pm_trade_center_trade_quantity_utopia: "Industrial Trade"
 
  pm_supermarket: "Supermarket"

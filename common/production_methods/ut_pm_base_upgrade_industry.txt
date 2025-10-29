@@ -1089,6 +1089,7 @@ ut_pm_plantations_individual_logistics_era_6 = {
 			# input goods
 			goods_input_transportation_add = 3
 			goods_input_trucks_add = 3
+			goods_input_heavy_machinery_add = 1
 		}
 
 		level_scaled = {
@@ -1116,6 +1117,7 @@ ut_pm_plantations_individual_logistics_era_7 = {
 			# input goods
 			goods_input_transportation_add = 3
 			goods_input_trucks_add = 3
+			goods_input_heavy_machinery_add = 1
 		}
 
 		level_scaled = {
@@ -1142,6 +1144,7 @@ ut_pm_plantations_connected_logistics = {
 			# input goods
 			goods_input_transportation_add = 5
 			goods_input_trucks_add = 5
+			goods_input_heavy_machinery_add = 1
 		}
 
 		level_scaled = {

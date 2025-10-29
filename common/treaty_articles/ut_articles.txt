@@ -1,4 +1,4 @@
-﻿ut_research_agreement = {
+ut_research_agreement = {
 	kind = mutual
 	cost = 300
 
@@ -2242,6 +2242,10 @@ ut_communism_article = {
 					}
 				}
 			}
+		}
+
+		wargoal_score_multiplier = {
+			value = 1
 		}
 	}
 }
