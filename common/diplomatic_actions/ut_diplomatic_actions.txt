@@ -24,6 +24,8 @@
 			scope:actor.power_bloc ?= { has_principle = principle:ut_principle_military_cooperation_1 }
 			scope:actor.power_bloc ?= { has_principle = principle:ut_principle_military_cooperation_2 }
 			scope:actor.power_bloc ?= { has_principle = principle:ut_principle_military_cooperation_3 }
+			has_variable = je_ut_communist_one_communist_party_done
+			has_variable = je_ut_communist_a_communist_party_done
 			has_technology_researched = union_new_mandates_two
 		}
 	}
