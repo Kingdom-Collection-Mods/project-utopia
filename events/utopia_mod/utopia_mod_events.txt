@@ -235,9 +235,9 @@ utopia_mod.4 = {
 
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
-	title = ut_law_tax_code
-	desc = ut_law_tax_code
-	flavor = ut_law_tax_code_desc
+	title = ut_private_construction_amend
+	desc = ut_private_construction_amend
+	flavor = ut_private_construction_amend_desc
 
 
 	option = {

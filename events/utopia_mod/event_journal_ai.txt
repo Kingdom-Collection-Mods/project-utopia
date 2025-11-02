@@ -36,7 +36,7 @@ event_journal_ai.1 = {
 				}				
 			}
 		}
-		else_if = {
+		else = {
 			set_variable = ut_is_player
 		}
 

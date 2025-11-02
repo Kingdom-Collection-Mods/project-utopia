@@ -1393,8 +1393,10 @@ ut_democracy_article = {
 			value = 0
 
 			if = {
-				scope:target_country = {
-					has_modifier = ut_new_dawn_core_democratic_mod
+				limit = {
+					scope:target_country = {
+						has_modifier = ut_new_dawn_core_democratic_mod
+					}
 				}
 				add = {
 					desc = "UT_BOTH_SAME_IDEOLOGY"
