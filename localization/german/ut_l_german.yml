@@ -1491,8 +1491,8 @@
  prestige_good_generic_software_b2c: "Büro Software"
 
 #goods input output
- goods_input_heavy_machinery_add: "@heavy_machinery! Schwerindustriemaschinen Zufuhr"
- goods_input_heavy_machinery_add_desc: "Die Menge an @heavy_machinery! Schwerindustriemaschinen, die von Gebäuden verbraucht wird"
+ goods_input_heavy_machinery_add: "@heavy_machinery! Maschinen Zufuhr"
+ goods_input_heavy_machinery_add_desc: "Die Menge an @heavy_machinery! Maschinen, die von Gebäuden verbraucht wird"
  goods_input_plastic_add: "@plastic! Kunststoff Zufuhr"
  goods_input_plastic_add_desc: "Die Menge an @plastic! Kunststoff, die von Gebäuden verbraucht wird"
  goods_input_electronics_add: "@electronics! Elektronik Zufuhr"

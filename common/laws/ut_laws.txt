@@ -1616,10 +1616,6 @@ ut_law_private_health_research = {
 		political_progress_3_neoliberalism
 	}
 
-	can_enact = {
-		always = no
-	}
-
 	modifier = {
 		country_institution_cost_institution_health_system_mult = -0.4
 	}
@@ -1651,10 +1647,6 @@ ut_law_public_health_research = {
 
 	unlocking_technologies = {
 		epa_two
-	}
-
-	can_enact = {
-		always = no
 	}
 
 	modifier = {
