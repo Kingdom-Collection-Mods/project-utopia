@@ -47,8 +47,8 @@ pm_ut_industry_plastics = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_plastic_add = 25
-			goods_input_lead_add = 30
+			goods_input_plastic_add = 35
+			goods_input_lead_add = 20
 			
 			# output goods
 			goods_output_glass_add = 115
@@ -486,7 +486,7 @@ pm_truck_production = {
 }
 
 pm_modern_automobiles = {
-	texture = "gfx/interface/icons/production_method_icons/public_motor_carriages.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_public_motor_carriages.dds"
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -504,7 +504,7 @@ pm_modern_automobiles = {
 			goods_input_rubber_add = 5
 			goods_input_oil_add = 5
 			goods_input_electricity_add = 5
-			goods_input_heavy_machinery_add = 5
+			goods_input_heavy_machinery_add = 4
 			goods_input_aluminum_add = 5
 
 			# output goods
@@ -1069,4 +1069,86 @@ pm_automatic_power_looms_2 = {
 	}
 
 	required_input_goods = electricity
+}
+
+ut_pm_plantations_individual_logistics_era_6 = {
+	texture = "gfx/interface/icons/production_method_icons/ut_logistics_3.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	unlocking_technologies = {
+		heavy_machinery_farming
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_transportation_add = 3
+			goods_input_trucks_add = 3
+			goods_input_heavy_machinery_add = 1
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -2000
+		}
+	}
+}
+
+#same as era 6, only different tech requirement
+ut_pm_plantations_individual_logistics_era_7 = {
+	texture = "gfx/interface/icons/production_method_icons/ut_logistics_3.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	unlocking_technologies = {
+		airplane_farming
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_transportation_add = 3
+			goods_input_trucks_add = 3
+			goods_input_heavy_machinery_add = 1
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -2000
+		}
+	}
+}
+
+ut_pm_plantations_connected_logistics = {
+	texture = "gfx/interface/icons/production_method_icons/ut_logistics_5.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+
+	unlocking_technologies = {
+		drone_farming
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_transportation_add = 5
+			goods_input_trucks_add = 5
+			goods_input_heavy_machinery_add = 1
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -2500
+		}
+	}
 }

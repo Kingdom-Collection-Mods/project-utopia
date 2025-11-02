@@ -131,8 +131,8 @@ utopia_jet_planes = {
 	convoy_cost_multiplier = 2.0
 }
 
-utopia_battleship = {
-	texture = "gfx/interface/icons/goods_icons/utopia_battleship.dds"
+utopia_battleships = {
+	texture = "gfx/interface/icons/goods_icons/utopia_battleships.dds"
 	cost = 100
 	category = military
 

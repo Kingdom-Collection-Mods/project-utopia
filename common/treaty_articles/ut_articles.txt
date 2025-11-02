@@ -157,7 +157,7 @@
 		}
 
 		evaluation_chance = {
-			value = 0.1
+			value = 0.01
 
 			add = {
 				value = country_rank
@@ -168,6 +168,17 @@
 		#ai will propose
 		proposal_weight = {
 			value = 1
+			#one research agreement per country
+			if = {
+				limit = {
+					any_scope_treaty = {
+						any_scope_article = {
+							has_type = ut_research_agreement
+						}
+					}
+				}
+				multiply = 0
+			}
 		}	
 
 		article_ai_usage = {
@@ -370,14 +381,14 @@
 						any_scope_treaty = {
 							binds = scope:second_country
 							any_scope_article = {
-								has_type = defensive_pact
+								has_type = ut_research_agreement
 							}
 						}
 					}
 					any_scope_treaty = {
 						count > 0
 						any_scope_article = {
-							has_type = defensive_pact
+							has_type = ut_research_agreement
 						}
 					}
 				}
@@ -387,7 +398,7 @@
 						every_scope_treaty = {
 							limit = {
 								any_scope_article = {
-									has_type = defensive_pact
+									has_type = ut_research_agreement
 						 		}
 							}
 							add = 1
@@ -675,7 +686,7 @@ ut_research_assistance_treaty = {
 		}
 
 		evaluation_chance = {
-			value = 0.1
+			value = 0.01
 
 			add = {
 				value = country_rank
@@ -686,6 +697,18 @@ ut_research_assistance_treaty = {
 		#ai will propose
 		proposal_weight = {
 			value = 1
+			#max 5
+			if = {
+				limit = {
+					any_scope_treaty = {
+						any_scope_article = {
+							count >= 5
+							has_type = ut_research_assistance_treaty
+						}
+					}
+				}
+				multiply = 0
+			}
 		}	
 
 		article_ai_usage = {
@@ -897,14 +920,14 @@ ut_research_assistance_treaty = {
 							any_scope_treaty = {
 								binds = scope:source_country
 								any_scope_article = {
-									has_type = military_assistance
+									has_type = ut_research_assistance_treaty
 								}
 							}
 						}
 						any_scope_treaty = {
 							count > 0
 							any_scope_article = {
-								has_type = military_assistance
+								has_type = ut_research_assistance_treaty
 							}
 						}
 					}
@@ -914,7 +937,7 @@ ut_research_assistance_treaty = {
 							every_scope_treaty = {
 								limit = {
 									any_scope_article = {
-										has_type = military_assistance
+										has_type = ut_research_assistance_treaty
 									}
 								}
 								add = 1
@@ -930,7 +953,7 @@ ut_research_assistance_treaty = {
 							any_scope_treaty = {
 								count > 0
 								any_scope_article = {
-									has_type = military_assistance
+									has_type = ut_research_assistance_treaty
 								}
 							}
 						}
@@ -942,7 +965,7 @@ ut_research_assistance_treaty = {
 								every_scope_treaty = {
 									limit = {
 										any_scope_article = {
-											has_type = military_assistance
+											has_type = ut_research_assistance_treaty
 										}
 									}
 									add = 1
@@ -2219,6 +2242,10 @@ ut_communism_article = {
 					}
 				}
 			}
+		}
+
+		wargoal_score_multiplier = {
+			value = 1
 		}
 	}
 }

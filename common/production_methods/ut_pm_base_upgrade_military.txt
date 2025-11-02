@@ -175,3 +175,64 @@ ut_pm_self_propelled_artillery = {
 		}
 	}
 }
+
+
+ut_pm_military_shipbuilding_utopia = {
+	texture = "gfx/interface/icons/production_method_icons/military_shipbuilding_steam.dds"
+
+	unlocking_technologies = {
+		light_ships_rockets_machinery
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			#input goods
+			goods_input_steel_add = 40
+			goods_input_electricity_add = 30
+			goods_input_engines_add = 15
+			goods_input_heavy_machinery_add = 5
+			# output goods
+			goods_output_utopia_battleships_add = 55
+		}
+		level_scaled = {
+			# employment
+			building_employment_shopkeepers_add = 500
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 2000
+			building_employment_engineers_add = 1500
+		}
+	}
+
+	required_input_goods = electricity
+}
+
+ut_pm_military_shipbuilding_utopia_2 = {
+	texture = "gfx/interface/icons/production_method_icons/military_shipbuilding_steam_2.dds"
+
+	unlocking_technologies = {
+		ut_global_positioning_system
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			#input
+			goods_input_steel_add = 40
+			goods_input_electricity_add = 30
+			goods_input_engines_add = 15
+			goods_input_heavy_machinery_add = 5
+			goods_input_computers_add = 5
+
+			# output goods
+			goods_output_utopia_battleships_add = 70
+		}
+		level_scaled = {
+			# employment
+			building_employment_shopkeepers_add = 500
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 2000
+			building_employment_engineers_add = 2000
+		}
+	}
+
+	required_input_goods = electricity
+}

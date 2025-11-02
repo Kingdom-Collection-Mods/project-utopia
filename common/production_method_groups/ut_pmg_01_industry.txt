@@ -270,17 +270,19 @@ pmg_automobile_production = {
 # 	}
 # }
 
-# pmg_military_base = {
-# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
-# 	ai_selection = most_productive
+pmg_military_base = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
 
-# 	production_methods = {
-# 		pm_military_shipbuilding_wooden
-# 		pm_military_shipbuilding_wooden_2
-# 		pm_military_shipbuilding_steam
-# 		pm_military_shipbuilding_steam_2
-# 	}
-# }
+	production_methods = {
+		pm_military_shipbuilding_wooden
+		pm_military_shipbuilding_wooden_2
+		pm_military_shipbuilding_steam
+		pm_military_shipbuilding_steam_2
+		ut_pm_military_shipbuilding_utopia
+		ut_pm_military_shipbuilding_utopia_2
+	}
+}
 
 pmg_aeroplanes = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"

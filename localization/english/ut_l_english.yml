@@ -456,7 +456,7 @@
  concept_ut_nd_democrat_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_democrat_progress_from_characters$\n- $ut_nd_democrat_progress_from_igs$\n- $ut_nd_democrat_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - Preview\nUnlock Ideologies: [GetIdeology('ideology_liberal_democratic').GetName], [GetIdeology('ideology_reactionary_democratic').GetName], [GetIdeology('ideology_moralist_democratic').GetName], [GetIdeology('ideology_plutocratic_democratic').GetName], [GetIdeology('ideology_socialist_democratic').GetName], [GetIdeology('ideology_jingoist_democratic').GetName]\nUnlock Modifiers: [GetStaticModifier('je_ut_new_dawn_democratic_power_bloc_mod').GetDesc], [GetStaticModifier('je_ut_new_dawn_democratic_fair_elections_mod').GetDesc]\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n - [GetArticleType('ut_democracy_article').GetNameNoIcon]\n - [GetLawType('ut_law_monarchy_democratic').GetName]\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_democrat_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_democratic_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_democrat_core]\nNeutral: [concept_ut_nd_communist_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nStrengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people."
 
  concept_ut_nd_communist_core: "Communism"
- concept_ut_nd_communist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#!:\n - Unlock Modifiers: [GetStaticModifier('je_ut_new_dawn_communist_one_block_mod').GetDesc], [GetStaticModifier('je_ut_new_dawn_communist_one_people_mod').GetDesc] or [GetStaticModifier('je_ut_communist_socialist_expansion_mod').GetDesc]\n - Unlock Ideologies: [GetIdeology('ideology_reactionary_communist').GetName], [GetIdeology('ideology_plutocratic_communist').GetName] or [GetIdeology('ideology_urbanist_power_base').GetName] \n - Unlocks Law Variants: [GetLawType('ut_law_international_council').GetName] or [GetLawType('ut_law_council_presidium').GetName]\n\n#bold Unlocks [concept_ut_nd_abilities]#! - wip\n - [GetDiplomaticActionType('ut_force_become_subject').GetName] - Preview\n - [GetArticleType('ut_communism_article').GetNameNoIcon]\n - Force into Power Bloc - tbd\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_communist_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_communist_core]\nNeutral: [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nBuild a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
+ concept_ut_nd_communist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#!:\n - Unlock Modifiers: [GetStaticModifier('je_ut_new_dawn_communist_one_block_mod').GetDesc], [GetStaticModifier('je_ut_new_dawn_communist_one_people_mod').GetDesc] or [GetStaticModifier('je_ut_communist_socialist_expansion_mod').GetDesc]\n - Unlock Ideologies: [GetIdeology('ideology_reactionary_communist').GetName], [GetIdeology('ideology_plutocratic_communist').GetName] or [GetIdeology('ideology_urbanist_power_base').GetName] \n - Unlocks Law Variants: [GetLawType('ut_law_international_council').GetName] or [GetLawType('ut_law_council_presidium').GetName]\n\n#bold Unlocks [concept_ut_nd_abilities]#! - Preview\n - [GetDiplomaticActionType('ut_force_become_subject').GetName]\n - [GetArticleType('ut_communism_article').GetNameNoIcon]\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n - [GetDiplomaticActionType('ut_humiliate_power_bloc_goal').GetName]\n\n#b Focus Modifier#!\n[GetStaticModifier('je_ut_new_dawn_communist_focus').GetDesc]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_communist_core]\nNeutral: [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nBuild a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence."
 
  concept_ut_nd_path_to_utopia: "Path to Utopia"
  concept_ut_nd_path_to_utopia_desc: "When an ideology successfully completes the [concept_ut_new_dawn] journal entry, it can start their [concept_ut_nd_path_to_utopia] - each ideology comes with the same base set of abilities, flavored abilities, flavored modifiers and may even feature an [concept_ut_nd_utopia] to be achieved.\n\nA [Concept('concept_humiliation', 'humiliated')] country, is likely to abandon their [concept_ut_nd_path_to_utopia] and choose a new ideology.\n\n#bold Base [concept_ut_nd_abilities]:#!\n - [GetDiplomaticActionType('ut_influence_new_dawn_major_power').GetName]\n - [GetDiplomaticActionType('ut_fund_ideology').GetName]\n - [GetDiplomaticActionType('ut_fund_opposition').GetName]\n\n#b 'New Dawn' is Work in Progress#!\n#italic Note the status notes:\ntbd (To Be Determined): No actual work done\nwip (Work in Progress): Ongoing development, follow the patch notes\nPreview: Initial version available for feedback; incomplete and not final\n\nIdeologies without Preview [concept_ut_nd_milestones] or [concept_ut_nd_abilities] feature more static modifiers instead.\n\nStatus notes may be incomplete.\n\n#i If you wanna support Project Utopia - leave a like on Steam Workshop <3#!"
@@ -508,6 +508,7 @@
  service_workers_only_icon: "@service_workers!"
  service_workers_no_icon: "Service Workers"
  POP_SERVICE_WORKERS: "$service_workers$ [concept_profession]"
+ HAS_POLITICAL_ONLINE_FORUMS:0 "The #v $online_forums$#! [concept_technology] is unlocked"
  SERVICE_WORKERS_QUALIFICATIONS_DESC: "Only population groups with sufficient [concept_literacy] and [concept_wealth] can become #v $service_workers$#!. The potential increases with rising [concept_literacy] and [concept_wealth]. #v $laborers$#! and #v $clerks$#! find it especially easy to become #v $service_workers$#!."
  country_service_workers_pol_str_mult: "[concept_political_strength] of $service_workers$"
  country_service_workers_pol_str_mult_desc: "An increase or decrease in the [concept_political_strength] of $service_workers$"
@@ -759,19 +760,21 @@
 
 
  institution_epa: "Environmental Protection"
+ institution_epa_desc: ""
  institution_food_safety: "Food Safety"
+ institution_food_safety_desc: ""
  country_institution_epa_max_investment_add: "Max. Investment in [concept_institution] $institution_epa$"
  country_institution_food_safety_max_investment_add: "Max. Investment in [concept_institution] $institution_food_safety$"
 
 #Diplo Stuff
- ut_international_diplomatic_power_bloc_merge: "Unify Democratic Blocs"
- ut_international_diplomatic_power_bloc_merge_desc: "A proposal to unify the democratic power blocs. If accepted, the leader and all members of the target country's power bloc will join our own power bloc. They will only stay if acceptance to join your power bloc is high enough."
- ut_international_diplomatic_power_bloc_merge_effects_desc: "• An agreement under which all democratic power bloc members join the other bloc. Unlocked through the democratic New Dawn."
+ ut_international_diplomatic_power_bloc_merge: "Unify Power Blocs"
+ ut_international_diplomatic_power_bloc_merge_desc: "A proposal to unify the power blocs. If accepted, the leader and all members of the target country's power bloc will join our own power bloc. They will only stay if acceptance to join your power bloc is high enough."
+ ut_international_diplomatic_power_bloc_merge_effects_desc: "• An agreement under which all power bloc members join the other bloc. Unlocked through the democratic New Dawn."
  ut_international_diplomatic_power_bloc_merge_points_them: "[TreatyDraft.GetRightCountry.GetName]: Requires at least #v [SCOPE.ScriptValue('new_dawn_ideology_spend_points')] #![concept_ut_nd_progress_points]"
  ut_international_diplomatic_power_bloc_merge_name: "$ut_international_diplomatic_power_bloc_merge$"
- ut_international_diplomatic_power_bloc_merge_action_name: "Unify Democratic Blocs"
- ut_international_diplomatic_power_bloc_merge_proposal_notification_name: "Unify Democratic Blocs Proposal"
- ut_international_diplomatic_power_bloc_merge_proposal_notification_desc: "A proposal to unify the democratic power blocs has been sent."
+ ut_international_diplomatic_power_bloc_merge_action_name: "Unify Power Blocs"
+ ut_international_diplomatic_power_bloc_merge_proposal_notification_name: "Unify Power Blocs Proposal"
+ ut_international_diplomatic_power_bloc_merge_proposal_notification_desc: "A proposal to unify the power blocs has been sent."
  ut_international_diplomatic_power_bloc_merge_proposal_accepted_name: "$ut_international_diplomatic_power_bloc_merge$ Accepted"
  ut_international_diplomatic_power_bloc_merge_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our proposal to $ut_international_diplomatic_power_bloc_merge$."
  ut_international_diplomatic_power_bloc_merge_proposal_declined_name: "$ut_international_diplomatic_power_bloc_merge$ Declined"
@@ -1362,6 +1365,9 @@
  pm_hi_individual_logistics: "Truck Logistics"
  pm_hi_just_in_time_logistics: "Just-in-Time Logistics"
  pm_hi_connected_logistics: "Connected Logistics"
+ ut_pm_plantations_individual_logistics_era_6: "Truck Logistics"
+ ut_pm_plantations_individual_logistics_era_7: "Truck Logistics"
+ ut_pm_plantations_connected_logistics: "Connected Logistics"
 
  ut_pm_research_department: "Social Science Department"
  ut_pm_research_department_principle_movement: "International Science Department"
@@ -1427,6 +1433,9 @@
  ut_pm_hydraulic_recoil_mechanism: "Hydraulic Recoil Mechanism"
  ut_pm_self_propelled_artillery: "Self-Propelled Artillery"
 
+ ut_pm_military_shipbuilding_utopia: "Battle Ships"
+ ut_pm_military_shipbuilding_utopia_2: "War Ships"
+
  pm_trade_center_trade_quantity_utopia: "Industrial Trade"
 
  pm_supermarket: "Supermarket"
@@ -1469,7 +1478,7 @@
  utopia_artillery: "Heavy Artillery"
  utopia_tanks: "Heavy Tanks"
  utopia_jet_planes: "Jet Plane"
- utopia_battleship: "Battleship"
+ utopia_battleships: "Battleship"
 
 #prestige goods
  prestige_good_generic_consumer_goods_simple: "Washing Machines"
@@ -1515,8 +1524,8 @@
  goods_input_utopia_tanks_add_desc: "The amount of @utopia_tanks! Heavy Tanks consumed by buildings"
  goods_input_utopia_jet_planes_add: "@utopia_jet_planes! Jet Plane input"
  goods_input_utopia_jet_planes_add_desc: "The amount of @utopia_jet_planes! Jet Plane consumed by buildings"
- goods_input_utopia_battleship_add: "@utopia_battleship! Battleship input"
- goods_input_utopia_battleship_add_desc: "The amount of @utopia_battleship! Battleship consumed by buildings"
+ goods_input_utopia_battleships_add: "@utopia_battleships! Battleship input"
+ goods_input_utopia_battleships_add_desc: "The amount of @utopia_battleships! Battleship consumed by buildings"
 
  goods_output_heavy_machinery_add: "@heavy_machinery! Machinery output"
  goods_output_heavy_machinery_add_desc: "The amount of @heavy_machinery! Machinery produced by buildings"
@@ -1548,11 +1557,11 @@
  goods_output_utopia_tanks_add_desc: "The amount of @utopia_tanks! Heavy Tanks produced by buildings"
  goods_output_utopia_jet_planes_add: "@utopia_jet_planes! Jet Plane output"
  goods_output_utopia_jet_planes_add_desc: "The amount of @utopia_jet_planes! Jet Plane produced by buildings"
- goods_output_utopia_battleship_add: "@utopia_battleship! Battleship output"
- goods_output_utopia_battleship_add_desc: "The amount of @utopia_battleship! Battleship produced by buildings"
+ goods_output_utopia_battleships_add: "@utopia_battleships! Battleship output"
+ goods_output_utopia_battleships_add_desc: "The amount of @utopia_battleships! Battleship produced by buildings"
 
- goods_output_trucks_mult: "$trucks$ Goods Output"
- goods_output_trucks_mult_desc: "A bonus or penalty for the production of $trucks$."
+ goods_output_trucks_mult: "@trucks! $trucks$ Goods Output"
+ goods_output_trucks_mult_desc: "A bonus or penalty for the production of @trucks! $trucks$."
 
  state_highways_max_level_add: "Add Maximum Level for $highways$"
  state_highways_max_level_add_desc: "Increase the maximum level of $highways$ by 1."
@@ -1567,9 +1576,8 @@
  ut_heavy_machinery_company_era_6: "CraneTech Inc."
  ut_heavy_machinery_company_era_7: "TunnelBore Inc."
  ut_heavy_machinery_company_era_8: "Industrial Robotics Inc."
- ut_software_company: "Software Solutions Inc."
  ut_software_company_era_7: "Software Solutions Inc."
- ut_software_company_era_8: "Software Solutions Inc."
+ ut_software_company_era_8: "AppWorld Inc."
  ut_synthetics_company: "Synthetics Inc."
  ut_plastic_company: "Plastiform Inc."
 
@@ -1613,7 +1621,7 @@
  smart_irrigation_building_silk_plantation: "Smart Irrigation"
  smart_irrigation_building_vineyard_plantation: "Smart Irrigation"
  smart_irrigation_building_coffee_plantation: "Smart Irrigation"
- smart_irrigation_building_dye_plantation: "Smart Irrigation"
+ smart_irrigation_building_opium_plantation: "Smart Irrigation"
 
  agricultural_mechanization: "Heavy Tractors"
  slow_tech_progress: "Slow Technological Progress"

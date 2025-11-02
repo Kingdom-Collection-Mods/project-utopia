@@ -321,14 +321,14 @@ goods_input_utopia_jet_planes_add={
 	}
 }
 
-goods_output_utopia_battleship_add={
+goods_output_utopia_battleships_add={
 	decimals=1
 	color=good
 	game_data={
 		ai_value=0
 	}
 }
-goods_input_utopia_battleship_add={
+goods_input_utopia_battleships_add={
 	decimals=1
 	color=bad
 	game_data={

@@ -290,8 +290,8 @@ ideology_pious = {
 		law_public_health_insurance = neutral
 		law_no_health_system = disapprove
 		law_private_health_insurance = disapprove
-		ut_law_private_health_research = disapprove
-		ut_law_public_health_research = disapprove
+		ut_law_private_health_research = strongly_disapprove
+		ut_law_public_health_research = strongly_disapprove
 	}
 	
 	lawgroup_education_system = {
@@ -1025,7 +1025,7 @@ ideology_corporatist = {
 		law_no_health_system = disapprove
 		law_private_health_insurance = disapprove
 		ut_law_private_health_research = approve
-		ut_law_public_health_research = neutral
+		ut_law_public_health_research = disapprove
 	}
 	
 	lawgroup_education_system = {

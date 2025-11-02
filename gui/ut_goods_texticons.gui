@@ -144,9 +144,9 @@ texticon = {
 	}
 }
 texticon = {
-	icon = utopia_battleship
+	icon = utopia_battleships
 	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/utopia_battleship.dds"
+		texture = "gfx/interface/icons/goods_icons/utopia_battleships.dds"
 		size = { 25 25 }
 		offset = { 0 7 }
 		fontsize = 18
