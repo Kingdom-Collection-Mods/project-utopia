@@ -760,7 +760,9 @@
 
 
  institution_epa: "Environmental Protection"
+ institution_epa_desc: ""
  institution_food_safety: "Food Safety"
+ institution_food_safety_desc: ""
  country_institution_epa_max_investment_add: "Max. Investment in [concept_institution] $institution_epa$"
  country_institution_food_safety_max_investment_add: "Max. Investment in [concept_institution] $institution_food_safety$"
 

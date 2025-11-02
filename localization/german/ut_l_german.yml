@@ -675,6 +675,7 @@
  ut_private_construction_amend_desc: "Allows private companies to construct buildings, potentially increasing efficiency but also raising costs."
  ut_private_construction_changed: "Private Construction Changed"
  ut_private_construction_raised_mod: "Private Construction Increased"
+ ut_private_construction_lower: "Decrease Private Construction"
 
  ut_law_private_health_research: "Private Gesundheitsforschung"
  ut_law_private_health_research_desc: "Ermöglicht es privaten Unternehmen, Gesundheitsforschung durchzuführen und medizinische Behandlungen zu entwickeln, was potenziell zu Innovationen führt, aber auch ethische Bedenken aufwirft."
@@ -758,8 +759,10 @@
  law_international_trade_desc: "Regelungen und Vereinbarungen, die den Handel zwischen Nationen regeln."
 
 
- institution_epa: "Umweltschutz"
+ institution_epa: "Umweltschutz" 
+ institution_epa_desc: ""
  institution_food_safety: "Lebensmittelsicherheit"
+ institution_food_safety_desc: ""
  country_institution_epa_max_investment_add: "Max. Investition der [concept_institution] $institution_epa$"
  country_institution_food_safety_max_investment_add: "Max. Investition der [concept_institution] $institution_food_safety$"
 

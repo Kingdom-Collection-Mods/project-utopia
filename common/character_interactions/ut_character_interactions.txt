@@ -173,53 +173,53 @@ grant_leadership_to_agitator = {
 		}
 	}
 
-# 	effect = {
-# 		remove_character_role = agitator
-# 		add_character_role = politician
-# 		custom_tooltip = {
-# 			text = make_agitator_ig_leader_tt
-# 			set_as_interest_group_leader = yes
-# 		}
-# 	}
+	effect = {
+		remove_character_role = agitator
+		add_character_role = politician
+		custom_tooltip = {
+			text = make_agitator_ig_leader_tt
+			set_as_interest_group_leader = yes
+		}
+	}
 
-# 	cooldown = { days = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 
-# 	ai_chance = {
-# 		value = -50
-# 		if = {
-# 			limit = {
-# 				popularity > interest_group.leader.popularity
-# 			}
-# 			add = 25
-# 		}
-# 		if = {
-# 			limit = {
-# 				interest_group.leader.popularity <= -50
-# 			}
-# 			add = 50
-# 		}
-# 		if = {
-# 			limit = {
-# 				interest_group.leader.popularity >= 50
-# 			}
-# 			add = -50
-# 		}
-# 		if = {
-# 			limit = {
-# 				interest_group ?= {
-# 					ig_approval <= 0
-# 				}
-# 			}
-# 			add = 25
-# 		}
-# 		if = {
-# 			limit = {
-# 				this.ideology = owner.ruler.ideology
-# 			}
-# 			add = 50
-# 		}
-# 	}
-# }
+	ai_chance = {
+		value = -50
+		if = {
+			limit = {
+				popularity > interest_group.leader.popularity
+			}
+			add = 25
+		}
+		if = {
+			limit = {
+				interest_group.leader.popularity <= -50
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				interest_group.leader.popularity >= 50
+			}
+			add = -50
+		}
+		if = {
+			limit = {
+				interest_group ?= {
+					ig_approval <= 0
+				}
+			}
+			add = 25
+		}
+		if = {
+			limit = {
+				this.ideology = owner.ruler.ideology
+			}
+			add = 50
+		}
+	}
+}
 
 # grant_command_to_agitator = {
 # 	icon = "gfx/interface/character_panel/grant_command.dds"
