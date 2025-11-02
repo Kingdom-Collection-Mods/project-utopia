@@ -697,18 +697,6 @@ ut_research_assistance_treaty = {
 		#ai will propose
 		proposal_weight = {
 			value = 1
-			#max 5
-			if = {
-				limit = {
-					any_scope_treaty = {
-						any_scope_article = {
-							count >= 5
-							has_type = ut_research_assistance_treaty
-						}
-					}
-				}
-				multiply = 0
-			}
 		}	
 
 		article_ai_usage = {
