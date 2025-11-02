@@ -698,7 +698,6 @@ pm_supermarket = {
 			goods_input_electronics_add = 2
 			goods_input_electricity_add = 1
 			goods_output_services_add = 60
-			goods_output_consumer_goods_add = 2
 		}
 
 		level_scaled = {
