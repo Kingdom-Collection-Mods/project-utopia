@@ -116,12 +116,16 @@ je_ut_communist_socialist_expansion = {
 			has_variable = je_ut_communist_one_block_done
 		}
 		
-		NOT = {
-			any_country = {
-				NOT = { this = root }
-				is_adjacent_to_country = root
-				NOT = { is_subject_of = root }
-			}
+		any_country = {
+			count >= 10
+			country_rank >= rank_value:minor_power
+			is_subject_of = root
+		}
+		
+		any_country = {
+			count >= 30
+			country_rank < rank_value:minor_power
+			is_subject_of = root
 		}
 
 		custom_tooltip = {
@@ -214,12 +218,11 @@ je_ut_communist_one_people = {
 				"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" >= new_dawn_ideology_required_points
 			}
 		}
-		NOT = {
-			any_country = {
-				is_adjacent_to_country = root
-				NOT = { is_in_same_power_bloc = root }
-				NOT = { has_modifier = ut_new_dawn_core_communist_mod }
-			}
+		any_country = {
+			count >= 20
+			is_adjacent_to_country = root
+			is_in_same_power_bloc = root
+			has_modifier = ut_new_dawn_core_communist_mod
 		}
 		custom_tooltip = {
 			text = new_dawn_ideology_milestone_done_tt
