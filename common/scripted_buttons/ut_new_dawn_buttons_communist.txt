@@ -221,8 +221,10 @@ je_ut_communist_one_people = {
 		any_country = {
 			count >= 20
 			is_adjacent_to_country = root
-			is_in_same_power_bloc = root
-			has_modifier = ut_new_dawn_core_communist_mod
+			OR = {
+				is_in_same_power_bloc = root
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
 		}
 		custom_tooltip = {
 			text = new_dawn_ideology_milestone_done_tt
