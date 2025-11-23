@@ -575,8 +575,8 @@
  ideology_plutocratic_communist_desc: "#lore This group believes that society should be governed by a wealthy elite who are best equipped to make decisions for the common good. They often prioritize economic growth and stability over social equality. Replaces [GetIdeology('ideology_plutocratic').GetName]. [concept_ut_nd_communist_core] variation.#!"
  ideology_plutocratic_alternative: "Elitist"
  ideology_plutocratic_alternative_desc: "#lore This group believes that society should be governed by a wealthy elite who are best equipped to make decisions for the common good. They often prioritize economic growth and stability over social equality. Replaces [GetIdeology('ideology_plutocratic').GetName]. #!"
- ideology_republican_alternative: "Technocrats"
- ideology_republican_alternative_desc: "This group believes in governance by experts and technocrats, emphasizing efficiency and rational decision-making. Replaces [GetIdeology('ideology_republican').GetName]. (Lost when Path is abandoned)#!"
+ ideology_republican_communist: "Technocrats"
+ ideology_republican_communist_desc: "This group believes in governance by experts and technocrats, emphasizing efficiency and rational decision-making. Replaces [GetIdeology('ideology_republican').GetName]. #r Lost if $new_dawn_phase_2_mod$ fails.#!"
  ideology_reactionary_democratic: "Conservative"
  ideology_reactionary_democratic_desc: "#lore This group values tradition, social stability, and gradual change. They often support established institutions and may resist rapid social or political reforms. Replaces [GetIdeology('ideology_reactionary').GetName]. [concept_ut_nd_democrat_core] variation.#!"
  ideology_reactionary_communist: "Conservative"
@@ -599,14 +599,14 @@
  ut_ideology_laissez_faire_democratic_neoliberal_desc: "#lore This group believes in the free flow of trade and labor forces, favoring the judgment of markets over that of governments. Replaces [GetIdeology('ideology_laissez_faire').GetName]. [concept_ut_nd_democrat_core] variation.#!"
 
  ut_ideology_laissez_faire_authoritarian: "Plutocratic Liberalism"
- ut_ideology_laissez_faire_authoritarian_desc: "#lore This group believes in the free flow of trade and labor forces, favoring the judgment of markets over that of governments. Replaces [GetIdeology('ideology_laissez_faire').GetName]. [concept_ut_nd_autocrat_core] variation.#!"
+ ut_ideology_laissez_faire_authoritarian_desc: "#lore This group believes in the free flow of trade and labor forces, favoring the judgment of markets over that of governments. Replaces [GetIdeology('ideology_laissez_faire').GetName]. [concept_ut_nd_autocrat_core] variation.#!. #r Lost if $new_dawn_phase_2_mod$ fails.#!"
 
  ideology_patriotic_fascist: "Nationalist"
  ideology_patriotic_fascist_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. #!"
  ideology_patriotic_communist_national: "Patriotic (Communist)"
- ideology_patriotic_communist_national_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_communist_core] variation.#!"
+ ideology_patriotic_communist_national_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_communist_core] variation.#! #r Lost if $new_dawn_phase_2_mod$ fails.#!"
  ideology_patriotic_communist_international: "Internationalist"
- ideology_patriotic_communist_international_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_communist_core] variation.#!"
+ ideology_patriotic_communist_international_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_communist_core] variation.#!  #r Lost if $new_dawn_phase_2_mod$ fails.#!"
  ideology_patriotic_democratic: "Patriotic (Democratic)"
  ideology_patriotic_democratic_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_democrat_core] variation.#!"
 

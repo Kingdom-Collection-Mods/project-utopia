@@ -635,7 +635,7 @@ ideology_patriotic_democratic = {
 }
 
 #todo maybe for fascist?
-ideology_republican_alternative = {
+ideology_republican_communist = {
 	icon = "gfx/interface/icons/ideology_icons/republican.dds"
 	#todo add anti technocrat character ideology trigger by events
 	
