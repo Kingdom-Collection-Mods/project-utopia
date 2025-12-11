@@ -196,7 +196,7 @@ REPLACE:combat_unit_type_siege_artillery = {
     }
 }
 
-combat_uREPLACE:nit_type_heavy_tank = {
+REPLACE:combat_unit_type_heavy_tank = {
     group = combat_unit_group_artillery
 	max_manpower = 1000
 
