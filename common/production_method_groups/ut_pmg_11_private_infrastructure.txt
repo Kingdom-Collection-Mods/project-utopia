@@ -1,4 +1,4 @@
-﻿pmg_base_building_railway = {
+﻿REPLACE:pmg_base_building_railway = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
 
@@ -14,7 +14,7 @@
 	}
 }
 
-pmg_trade_quantity_trade_center = {
+REPLACE:pmg_trade_quantity_trade_center = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 	ai_selection = most_productive
 

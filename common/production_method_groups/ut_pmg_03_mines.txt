@@ -1,4 +1,4 @@
-﻿pmg_mining_equipment_building_coal_mine = {
+﻿REPLACE:pmg_mining_equipment_building_coal_mine = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_picks_and_shovels_building_coal_mine
@@ -9,7 +9,7 @@
 	}
 }
 
-# pmg_explosives_building_coal_mine = {
+# REPLACE:pmg_explosives_building_coal_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
 # 		pm_no_explosives
@@ -18,7 +18,7 @@
 # 	}
 # }
 
-# pmg_steam_automation_building_coal_mine = {
+# REPLACE:pmg_steam_automation_building_coal_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 # 	production_methods = {
 # 		pm_no_steam_automation
@@ -26,7 +26,7 @@
 # 	}
 # }
 
-# pmg_train_automation_building_coal_mine = {
+# REPLACE:pmg_train_automation_building_coal_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 # 	production_methods = {
 # 		pm_road_carts
@@ -34,7 +34,7 @@
 # 	}
 # }
 
-pmg_mining_equipment_building_iron_mine = {
+REPLACE:pmg_mining_equipment_building_iron_mine = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_picks_and_shovels_building_iron_mine
@@ -45,7 +45,7 @@ pmg_mining_equipment_building_iron_mine = {
 	}
 }
 
-# pmg_explosives_building_iron_mine = {
+# REPLACE:pmg_explosives_building_iron_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
 # 		pm_no_explosives
@@ -54,7 +54,7 @@ pmg_mining_equipment_building_iron_mine = {
 # 	}
 # }
 
-# pmg_steam_automation_building_iron_mine = {
+# REPLACE:pmg_steam_automation_building_iron_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 # 	production_methods = {
 # 		pm_no_steam_automation
@@ -62,7 +62,7 @@ pmg_mining_equipment_building_iron_mine = {
 # 	}
 # }
 
-# pmg_train_automation_building_iron_mine = {
+# REPLACE:pmg_train_automation_building_iron_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 # 	production_methods = {
 # 		pm_road_carts
@@ -70,7 +70,7 @@ pmg_mining_equipment_building_iron_mine = {
 # 	}
 # }
 
-# pmg_mining_equipment_building_lead_mine = {
+# REPLACE:pmg_mining_equipment_building_lead_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
 # 		pm_picks_and_shovels_building_lead_mine
@@ -80,7 +80,7 @@ pmg_mining_equipment_building_iron_mine = {
 # 	}
 # }
 
-# pmg_explosives_building_lead_mine = {
+# REPLACE:pmg_explosives_building_lead_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
 # 		pm_no_explosives
@@ -89,7 +89,7 @@ pmg_mining_equipment_building_iron_mine = {
 # 	}
 # }
 
-# pmg_steam_automation_building_lead_mine = {
+# REPLACE:pmg_steam_automation_building_lead_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 # 	production_methods = {
 # 		pm_no_steam_automation
@@ -97,7 +97,7 @@ pmg_mining_equipment_building_iron_mine = {
 # 	}
 # }
 
-# pmg_train_automation_building_lead_mine = {
+# REPLACE:pmg_train_automation_building_lead_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 # 	production_methods = {
 # 		pm_road_carts
@@ -105,7 +105,7 @@ pmg_mining_equipment_building_iron_mine = {
 # 	}
 # }
 
-# pmg_mining_equipment_building_sulfur_mine = {
+# REPLACE:pmg_mining_equipment_building_sulfur_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
 # 		pm_picks_and_shovels_building_sulfur_mine
@@ -115,7 +115,7 @@ pmg_mining_equipment_building_iron_mine = {
 # 	}
 # }
 
-# pmg_explosives_building_sulfur_mine = {
+# REPLACE:pmg_explosives_building_sulfur_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
 # 		pm_no_explosives
@@ -124,7 +124,7 @@ pmg_mining_equipment_building_iron_mine = {
 # 	}
 # }
 
-# pmg_steam_automation_building_sulfur_mine = {
+# REPLACE:pmg_steam_automation_building_sulfur_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 # 	production_methods = {
 # 		pm_no_steam_automation
@@ -132,7 +132,7 @@ pmg_mining_equipment_building_iron_mine = {
 # 	}
 # }
 
-# pmg_train_automation_building_sulfur_mine = {
+# REPLACE:pmg_train_automation_building_sulfur_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 # 	production_methods = {
 # 		pm_road_carts
@@ -140,7 +140,7 @@ pmg_mining_equipment_building_iron_mine = {
 # 	}
 # }
 
-# pmg_mining_equipment_building_gold_mine = {
+# REPLACE:pmg_mining_equipment_building_gold_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
 # 		pm_picks_and_shovels_building_gold_mine
@@ -150,7 +150,7 @@ pmg_mining_equipment_building_iron_mine = {
 # 	}
 # }
 
-# pmg_explosives_building_gold_mine = {
+# REPLACE:pmg_explosives_building_gold_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
 # 		pm_no_explosives
@@ -159,7 +159,7 @@ pmg_mining_equipment_building_iron_mine = {
 # 	}
 # }
 
-# pmg_steam_automation_building_gold_mine = {
+# REPLACE:pmg_steam_automation_building_gold_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 # 	production_methods = {
 # 		pm_no_steam_automation
@@ -167,7 +167,7 @@ pmg_mining_equipment_building_iron_mine = {
 # 	}
 # }
 
-# pmg_train_automation_building_gold_mine = {
+# REPLACE:pmg_train_automation_building_gold_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 # 	production_methods = {
 # 		pm_road_carts
@@ -175,7 +175,7 @@ pmg_mining_equipment_building_iron_mine = {
 # 	}
 # }
 
-# pmg_base_building_gold_field = {
+# REPLACE:pmg_base_building_gold_field = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
 # 		default_building_gold_field
