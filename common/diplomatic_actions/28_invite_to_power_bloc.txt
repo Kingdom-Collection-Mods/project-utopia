@@ -1,9 +1,9 @@
-﻿### Copied from base game and adjusted
+### Copied from base game and adjusted
 ###<<<
 ###>>>
 ###
 #vanilla
-invite_to_power_bloc = {
+REPLACE:invite_to_power_bloc = {
 	requires_approval = yes
 	can_use_obligations = yes
 	uses_random_approval = yes

@@ -1,8 +1,8 @@
-﻿movement_fascist = {
+REPLACE:movement_fascist = {
 	category = movement_category_ideological
 
 	# Fascists care about a lot of law groups, so the impact of each should be lesser
-	active_law_radicalism_multiplier = 0.5
+	active_law_radicalism_multiplier = 0.75
 
 	ideology = ideology_fascist_movement
 	character_ideologies = {
@@ -16,6 +16,7 @@
 
 	creation_trigger = {
 		has_technology_researched = political_agitation
+		country_should_exclusively_focus_on_modernization = no
 	}
 	creation_weight = {
 		value = 100
@@ -39,17 +40,15 @@
 	}
 	on_created = {
 		add_movement_enthusiasm_modifier = yes
-		owner ?= {
-			if = {
-				limit = {
+		if = {
+			limit = {
+				owner ?= {
 					any_primary_culture = {
 						has_discrimination_trait = language_lusophone
 					}
 				}
-				prev = {
-					set_core_ideology = ideology_integralist_movement
-				}
 			}
+			set_core_ideology = ideology_integralist_movement
 		}
 	}
 
@@ -393,7 +392,7 @@
 				}
 			}
 		}
-		
+
 		if = {
 			limit = {
 				owner = {
@@ -416,7 +415,7 @@
 	}
 }
 
-movement_feminist = {
+REPLACE:movement_feminist = {
 	category = movement_category_ideological
 
 	# Pretty much a single issue movement

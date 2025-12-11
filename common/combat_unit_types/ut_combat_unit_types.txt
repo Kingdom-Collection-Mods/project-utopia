@@ -1,4 +1,4 @@
-﻿###
+###
 ### Keep "unit tiers" per group in ascending order; the system will determine the default unit type for a country
 ### by the last defined unit type that it can build
 ###
@@ -6,7 +6,7 @@
 ### ARMY
 
 ### Infantry
-combat_unit_type_mechanized_infantry = {
+REPLACE:combat_unit_type_mechanized_infantry = {
     group = combat_unit_group_infantry
 	max_manpower = 1000
 
@@ -65,7 +65,7 @@ combat_unit_type_mechanized_infantry = {
     }
 }
 
-combat_unit_type_armored_infantry = {
+REPLACE:combat_unit_type_armored_infantry = {
     group = combat_unit_group_infantry
 	max_manpower = 1000
 
@@ -133,7 +133,7 @@ combat_unit_type_task_force_infantry = {
 
 ### Artillery
 
-combat_unit_type_siege_artillery = {
+REPLACE:combat_unit_type_siege_artillery = {
     group = combat_unit_group_artillery
 	max_manpower = 1000
 
@@ -196,7 +196,7 @@ combat_unit_type_siege_artillery = {
     }
 }
 
-combat_unit_type_heavy_tank = {
+combat_uREPLACE:nit_type_heavy_tank = {
     group = combat_unit_group_artillery
 	max_manpower = 1000
 
@@ -308,7 +308,7 @@ combat_unit_type_rocket_artillery = {
 
 ### Cavalry
 
-combat_unit_type_lancers = {
+REPLACE:combat_unit_type_lancers = {
     group = combat_unit_group_cavalry
 	max_manpower = 1000
 
@@ -370,7 +370,7 @@ combat_unit_type_lancers = {
     }
 }
 
-combat_unit_type_light_tanks = {
+REPLACE:combat_unit_type_light_tanks = {
     group = combat_unit_group_cavalry
 	max_manpower = 1000
 
@@ -486,7 +486,7 @@ combat_unit_type_advanced_support_systems = {
 
 ### Light ship group
 
-combat_unit_type_torpedo_boat = {
+REPLACE:combat_unit_type_torpedo_boat = {
     group = combat_unit_group_light_ship
 	max_manpower = 1000
 
@@ -519,7 +519,7 @@ combat_unit_type_torpedo_boat = {
 	}
 }
 
-combat_unit_type_scout_cruiser = {
+REPLACE:combat_unit_type_scout_cruiser = {
     group = combat_unit_group_light_ship
 	max_manpower = 1000
 
@@ -629,7 +629,7 @@ combat_unit_type_surveillance_corvettes = {
 
 ### Flagship group
 
-combat_unit_type_battleship = {
+REPLACE:combat_unit_type_battleship = {
     group = combat_unit_group_capital_ship
 	max_manpower = 1000
 
@@ -697,7 +697,7 @@ combat_unit_type_capital_battleship = {
 
 ### Support Ship group
 
-combat_unit_type_submarine = {
+REPLACE:combat_unit_type_submarine = {
     group = combat_unit_group_support_ship
 	max_manpower = 1000
 
@@ -731,7 +731,7 @@ combat_unit_type_submarine = {
     }
 }
 
-combat_unit_type_carrier = {
+REPLACE:combat_unit_type_carrier = {
     group = combat_unit_group_support_ship
 	max_manpower = 1000
 
