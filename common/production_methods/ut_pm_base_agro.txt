@@ -489,7 +489,7 @@ smart_irrigation_building_silk_plantation = {
 	}
 }
 
-smart_irrigation_building_vineyard_plantation = {
+smart_irrigation_building_vineyard = {
 	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
 
 	state_modifiers = {

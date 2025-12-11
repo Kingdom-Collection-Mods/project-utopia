@@ -886,7 +886,7 @@ law_task_forces = {
 		unit_morale_loss_mult = -0.2
 		country_officers_pol_str_mult = 1.5
 		country_soldiers_pol_str_mult = 1
-		state_building_barracks_max_level_add = 50
+		state_building_barrack_max_level_add = 50
 		state_building_conscription_center_max_level_add = 50
 	}
 
@@ -972,7 +972,7 @@ law_demobilized = {
 		unit_morale_loss_mult = 0.2
 		state_conscription_rate_add = 0.01
 		country_bureaucrats_pol_str_mult = 0.2
-		state_building_barracks_max_level_add = 10
+		state_building_barrack_max_level_add = 10
 		state_building_conscription_center_max_level_add = 10
 		country_infamy_generation_mult = 0.5
 		country_infamy_decay_mult = 0.25

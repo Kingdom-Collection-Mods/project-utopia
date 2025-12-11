@@ -372,7 +372,7 @@ building_synthetic_oil = {
 }
 
 
-building_synthetics_plants = {
+building_synthetics_plant = {
 	building_group = bg_heavy_industry
 	icon = "gfx/interface/icons/building_icons/synthetics_plants.dds"
 	city_type = city
