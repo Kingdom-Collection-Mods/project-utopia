@@ -1,4 +1,4 @@
-REPLACE:movement_fascist = {
+﻿REPLACE:movement_fascist = {
 	category = movement_category_ideological
 
 	# Fascists care about a lot of law groups, so the impact of each should be lesser

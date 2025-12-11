@@ -1,4 +1,4 @@
-### Copied from base game and adjusted
+﻿### Copied from base game and adjusted
 ###<<<
 ###>>>
 ###

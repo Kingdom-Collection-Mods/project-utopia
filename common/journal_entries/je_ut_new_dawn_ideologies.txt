@@ -1,4 +1,4 @@
-ut_je_communist_propaganda_source = {
+﻿ut_je_communist_propaganda_source = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_utopia
