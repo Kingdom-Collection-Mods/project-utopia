@@ -619,7 +619,7 @@ ut_military_complex = {
 	}
 	
 	modifier = {
-		building_munition_plants_throughput_add = 0.2
+		building_munition_plant_throughput_add = 0.2
 	}
 	
 	ai_weight = {

@@ -525,8 +525,117 @@ ideology_socialist_democratic = {
 	}
 }
 
-#todo maybe for fascist?
-ideology_republican_alternative = {
+ideology_patriotic_fascist = {
+	icon = "gfx/interface/icons/ideology_icons/patriotic.dds"
+
+	lawgroup_policing = {
+		law_militarized_police = strongly_approve
+		law_dedicated_police = neutral
+		law_local_police = disapprove
+		law_no_police = strongly_disapprove
+	}	
+
+	lawgroup_internal_security = {
+		law_secret_police = strongly_approve
+		law_national_guard = approve
+		law_no_home_affairs = disapprove
+		law_guaranteed_liberties = strongly_disapprove
+	}	
+	
+	lawgroup_free_speech = {
+		law_outlawed_dissent = strongly_approve
+		law_censorship = approve
+		law_right_of_assembly = disapprove
+		law_protected_speech = strongly_disapprove
+	}	
+}
+
+ideology_patriotic_communist_national = {
+	icon = "gfx/interface/icons/ideology_icons/patriotic.dds"
+
+	lawgroup_policing = {
+		law_militarized_police = strongly_approve
+		law_dedicated_police = approve
+		law_local_police = neutral
+		law_no_police = disapprove
+	}
+
+	lawgroup_internal_security = {
+		law_secret_police = approve
+		law_national_guard = approve
+		law_no_home_affairs = disapprove
+		law_guaranteed_liberties = strongly_disapprove
+	}
+
+	lawgroup_free_speech = {
+		law_outlawed_dissent = approve
+		law_censorship = approve
+		law_right_of_assembly = neutral
+		law_protected_speech = disapprove
+	}
+
+	lawgroup_health_system = {
+		law_private_health_insurance = neutral
+		law_no_health_system = strongly_disapprove
+		law_charitable_health_system = disapprove
+		law_public_health_insurance = neutral
+		ut_law_private_health_research = neutral
+		ut_law_public_health_research = neutral
+	}
+}
+
+ideology_patriotic_communist_international = {
+	icon = "gfx/interface/icons/ideology_icons/patriotic.dds"
+
+	lawgroup_policing = {
+		law_militarized_police = approve
+		law_dedicated_police = approve
+		law_local_police = approve
+		law_no_police = neutral
+	}	
+
+	lawgroup_internal_security = {
+		law_secret_police = approve
+		law_national_guard = strongly_approve
+		law_no_home_affairs = disapprove
+		law_guaranteed_liberties = disapprove
+	}	
+	
+	lawgroup_free_speech = {
+		law_outlawed_dissent = disapprove
+		law_censorship = neutral
+		law_right_of_assembly = approve
+		law_protected_speech = neutral
+	}
+}
+
+ideology_patriotic_democratic = {
+	icon = "gfx/interface/icons/ideology_icons/patriotic.dds"
+
+	lawgroup_policing = {
+		law_militarized_police = neutral
+		law_dedicated_police = strongly_approve
+		law_local_police = neutral
+		law_no_police = disapprove
+	}
+
+	lawgroup_internal_security = {
+		law_secret_police = neutral
+		law_national_guard = approve
+		law_no_home_affairs = disapprove
+		law_guaranteed_liberties = disapprove
+	}
+
+	lawgroup_free_speech = {
+		law_outlawed_dissent = approve
+		law_censorship = approve
+		law_right_of_assembly = approve
+		law_protected_speech = disapprove
+	}
+}
+
+
+ideology_republican_communist = {
 	icon = "gfx/interface/icons/ideology_icons/republican.dds"
 	#todo add anti technocrat character ideology trigger by events
 	
@@ -611,6 +720,209 @@ ut_ideology_laissez_faire = {
 		law_state_capitalism_economy = neutral 
 		law_free_market_economy = strongly_approve
 		law_corporate_economy = approve #definitely not laissez-faire but good for profits
+	}
+	
+	lawgroup_trade_policy = {		
+		law_free_trade = approve	
+		law_free_trade_union= strongly_approve
+		law_protectionism_union = disapprove
+		law_mercantilism = neutral
+		law_protectionism = disapprove
+		law_isolationism = strongly_disapprove
+		law_international_trade = strongly_approve
+	}		
+		
+	lawgroup_childrens_rights = {
+		law_child_labor_allowed = disapprove
+		law_restricted_child_labor = approve
+		law_compulsory_primary_school = neutral
+		law_compulsory_secondary_school = neutral
+		law_compulsory_tertiary_school = disapprove
+	}
+	
+	lawgroup_labor_rights = {
+		law_no_workers_rights = neutral
+		law_regulatory_bodies = disapprove
+		law_worker_protections = strongly_disapprove
+		law_ut_minimum_wage = strongly_disapprove
+	}
+
+	lawgroup_land_reform = {
+		law_collectivized_agriculture = strongly_disapprove
+		law_serfdom = disapprove
+		law_tenant_farmers = neutral
+		law_homesteading = neutral
+		law_commercialized_agriculture = approve
+	}
+
+	lawgroup_food_safety = {
+		law_no_food_safety_protection = neutral
+		law_food_safety_protection_institute = disapprove
+		law_food_safety_protection_institute_two = strongly_disapprove		
+	}	
+
+	lawgroup_environment_protection = {
+		law_no_environment_protection = neutral
+		law_environment_protection_institute = disapprove
+		law_environment_protection_institute_two = strongly_disapprove
+	}
+}
+
+
+#IG Industrialists Liberal (Democratic)
+ut_ideology_laissez_faire_democratic = {
+	icon = "gfx/interface/icons/ideology_icons/laissez_faire.dds"
+	
+	lawgroup_economic_system = {	
+		law_laissez_faire = approve
+		law_interventionism = disapprove
+		law_agrarianism = strongly_disapprove
+		law_traditionalism = strongly_disapprove	
+		law_cooperative_ownership = strongly_disapprove
+		law_command_economy = strongly_disapprove
+		law_industry_banned = strongly_disapprove
+		law_extraction_economy = strongly_disapprove
+		law_social_market_economy = neutral
+		law_state_capitalism_economy = neutral 
+		law_free_market_economy = strongly_approve
+		law_corporate_economy = neutral
+	}
+	
+	lawgroup_trade_policy = {		
+		law_free_trade = approve	
+		law_free_trade_union= strongly_approve
+		law_protectionism_union = disapprove
+		law_mercantilism = neutral
+		law_protectionism = disapprove
+		law_isolationism = strongly_disapprove
+		law_international_trade = strongly_approve
+	}		
+		
+	lawgroup_childrens_rights = {
+		law_child_labor_allowed = disapprove
+		law_restricted_child_labor = approve
+		law_compulsory_primary_school = neutral
+		law_compulsory_secondary_school = approve
+		law_compulsory_tertiary_school = neutral
+	}
+	
+	lawgroup_labor_rights = {
+		law_no_workers_rights = neutral
+		law_regulatory_bodies = disapprove
+		law_worker_protections = strongly_disapprove
+		law_ut_minimum_wage = strongly_disapprove
+	}
+
+	#law_serfdom-
+	lawgroup_land_reform = {
+		law_collectivized_agriculture = strongly_disapprove
+		law_serfdom = strongly_disapprove
+		law_tenant_farmers = neutral
+		law_homesteading = neutral
+		law_commercialized_agriculture = approve
+	}
+
+	#law_food_safety_protection_institute+
+	lawgroup_food_safety = {
+		law_no_food_safety_protection = neutral
+		law_food_safety_protection_institute = neutral
+		law_food_safety_protection_institute_two = strongly_disapprove		
+	}	
+
+	#law_environment_protection_institute+
+	lawgroup_environment_protection = {
+		law_no_environment_protection = neutral
+		law_environment_protection_institute = neutral
+		law_environment_protection_institute_two = strongly_disapprove
+	}
+}
+
+ut_ideology_laissez_faire_democratic_neoliberal = {
+	icon = "gfx/interface/icons/ideology_icons/laissez_faire.dds"
+	
+	#law_social_market_economy&law_state_capitalism_economy-
+	#law_corporate_economy+
+	lawgroup_economic_system = {	
+		law_laissez_faire = approve
+		law_interventionism = disapprove
+		law_agrarianism = strongly_disapprove
+		law_traditionalism = strongly_disapprove	
+		law_cooperative_ownership = strongly_disapprove
+		law_command_economy = strongly_disapprove
+		law_industry_banned = strongly_disapprove
+		law_extraction_economy = strongly_disapprove
+		law_social_market_economy = disapprove
+		law_state_capitalism_economy = disapprove 
+		law_free_market_economy = strongly_approve
+		law_corporate_economy = approve
+	}
+	
+	lawgroup_trade_policy = {		
+		law_free_trade = approve	
+		law_free_trade_union= strongly_approve
+		law_protectionism_union = disapprove
+		law_mercantilism = neutral
+		law_protectionism = disapprove
+		law_isolationism = strongly_disapprove
+		law_international_trade = strongly_approve
+	}		
+		
+	lawgroup_childrens_rights = {
+		law_child_labor_allowed = disapprove
+		law_restricted_child_labor = approve
+		law_compulsory_primary_school = neutral
+		law_compulsory_secondary_school = approve
+		law_compulsory_tertiary_school = neutral
+	}
+	
+	lawgroup_labor_rights = {
+		law_no_workers_rights = neutral
+		law_regulatory_bodies = disapprove
+		law_worker_protections = strongly_disapprove
+		law_ut_minimum_wage = strongly_disapprove
+	}
+
+	#law_serfdom-
+	lawgroup_land_reform = {
+		law_collectivized_agriculture = strongly_disapprove
+		law_serfdom = strongly_disapprove
+		law_tenant_farmers = neutral
+		law_homesteading = neutral
+		law_commercialized_agriculture = approve
+	}
+
+	#law_food_safety_protection_institute+
+	lawgroup_food_safety = {
+		law_no_food_safety_protection = neutral
+		law_food_safety_protection_institute = neutral
+		law_food_safety_protection_institute_two = strongly_disapprove		
+	}	
+
+	#law_environment_protection_institute+
+	lawgroup_environment_protection = {
+		law_no_environment_protection = neutral
+		law_environment_protection_institute = neutral
+		law_environment_protection_institute_two = strongly_disapprove
+	}
+}
+
+#IG Industrialists Interventionist (Fascist and Communist)
+ut_ideology_laissez_faire_authoritarian = {
+	icon = "gfx/interface/icons/ideology_icons/laissez_faire.dds"
+	
+	lawgroup_economic_system = {	
+		law_laissez_faire = approve
+		law_interventionism = disapprove
+		law_agrarianism = strongly_disapprove
+		law_traditionalism = strongly_disapprove	
+		law_cooperative_ownership = strongly_disapprove
+		law_command_economy = strongly_disapprove
+		law_industry_banned = strongly_disapprove
+		law_extraction_economy = strongly_disapprove
+		law_social_market_economy = disapprove 
+		law_state_capitalism_economy = neutral 
+		law_free_market_economy = approve
+		law_corporate_economy = strongly_approve
 	}
 	
 	lawgroup_trade_policy = {		

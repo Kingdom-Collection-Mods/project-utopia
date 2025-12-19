@@ -378,3 +378,11 @@ ut_private_construction_raised_mod = {
 	country_max_weekly_construction_progress_add = 5
 	state_bureaucracy_population_base_cost_factor_mult = 0.05
 }
+
+ut_communist_propaganda_failed_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+}
+
+ut_communist_propaganda_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+}

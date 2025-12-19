@@ -1,4 +1,4 @@
-﻿pmg_base_building_port = {
+﻿REPLACE:pmg_base_building_port = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
 
@@ -11,7 +11,7 @@
 	}
 }
 
-pmg_base_building_government_administration = {
+REPLACE:pmg_base_building_government_administration = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
 
@@ -24,7 +24,7 @@ pmg_base_building_government_administration = {
 	}
 }
 
-# pmg_government_administration_bureaucrat_professionalism = {
+# REPLACE:pmg_government_administration_bureaucrat_professionalism = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 # 	ai_selection = most_productive
 
@@ -34,7 +34,7 @@ pmg_base_building_government_administration = {
 # 	}
 # }
 
-# pmg_government_administration_religious_administration = {
+# REPLACE:pmg_government_administration_religious_administration = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 # 	ai_selection = most_productive
 
@@ -44,7 +44,7 @@ pmg_base_building_government_administration = {
 # 	}
 # }
 
-pmg_base_building_university = {
+REPLACE:pmg_base_building_university = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
 
@@ -57,7 +57,7 @@ pmg_base_building_university = {
 	}
 }
 
-# pmg_university_academia = {
+# REPLACE:pmg_university_academia = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 # 	ai_selection = most_productive
 
@@ -67,7 +67,7 @@ pmg_base_building_university = {
 # 	}
 # }
 
-# pmg_base_building_skyscraper = {
+# REPLACE:pmg_base_building_skyscraper = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	ai_selection = most_productive
 
@@ -77,7 +77,7 @@ pmg_base_building_university = {
 # 	}
 # }
 
-# pmg_airship_mooring_post = {
+# REPLACE:pmg_airship_mooring_post = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 # 	ai_selection = most_productive
 

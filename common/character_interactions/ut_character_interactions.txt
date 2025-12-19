@@ -12,7 +12,7 @@
 
 # #ai_chance				Scriptable value for the chance (0-100) that the AI will use this interaction when available, default 0
 
-grant_command_to_ruler = {
+REPLACE:grant_command_to_ruler = {
 	icon = "gfx/interface/character_panel/grant_command.dds"
 	clicksound = "event:/SFX/UI/Military/command_grant"
 
@@ -108,7 +108,7 @@ grant_command_to_ruler = {
 # 	}
 # }
 
-grant_leadership_to_agitator = {
+REPLACE:grant_leadership_to_agitator = {
 	icon = "gfx/interface/character_panel/grant_command_not.dds"
 	clicksound = "event:/SFX/DLC/1.3_ip1/UI/agitator_promote"
 

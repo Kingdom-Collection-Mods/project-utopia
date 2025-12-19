@@ -1,4 +1,4 @@
-﻿pmg_amenities = {
+﻿REPLACE:pmg_amenities = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_market_stalls
@@ -11,7 +11,7 @@
 	}
 }
 
-# pmg_street_lighting = {
+# REPLACE:pmg_street_lighting = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
 # 		pm_no_street_lighting
@@ -20,7 +20,7 @@
 # 	}
 # }
 
-# pmg_public_transport = {
+# REPLACE:pmg_public_transport = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 # 	production_methods = {
 # 		pm_no_public_transport
@@ -29,7 +29,7 @@
 # 	}
 # }
 
-# pmg_urban_clergy = {
+# REPLACE:pmg_urban_clergy = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 # 	production_methods = {
 # 		pm_state_urban_clergy
@@ -38,7 +38,7 @@
 # 	}
 # }
 
-pmg_base_building_arts_academy = {
+REPLACE:pmg_base_building_art_academy = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
 
@@ -53,7 +53,7 @@ pmg_base_building_arts_academy = {
 	}
 }
 
-# pmg_principle_freedom_of_movement_3 = {
+# REPLACE:pmg_principle_freedom_of_movement_3 = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	ai_selection = most_productive
 
@@ -63,7 +63,7 @@ pmg_base_building_arts_academy = {
 # 	}
 # }
 
-# pmg_ownership_building_arts_academy = {
+# REPLACE:pmg_ownership_building_art_academy = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 # 	production_methods = {
 # 		pm_traditional_patronage
@@ -72,7 +72,7 @@ pmg_base_building_arts_academy = {
 # 	}
 # }
 
-pmg_base_building_power_plant = {
+REPLACE:pmg_base_building_power_plant = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_early_power_plant

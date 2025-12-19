@@ -15,16 +15,16 @@ for file in "$directory"/*; do
         echo "Processing $file..."
 
         # Remove existing bg_bauxite_mining lines
-        sed -i '/^\s*bg_bauxite_mining = .*/d' "$file"
+        sed -i '/^\s*building_bauxite_mine = .*/d' "$file"
 
-        # Add new bg_bauxite_mining lines based on bg_sulfur_mining
+        # Add new bg_bauxite_mining lines based on building_sulfur_mine
         awk '
-            /bg_sulfur_mining = [0-9]+/ {
-                match($0, /bg_sulfur_mining = ([0-9]+)/, arr)
+            /building_sulfur_mine = [0-9]+/ {
+                match($0, /building_sulfur_mine = ([0-9]+)/, arr)
                 sulfur_value = arr[1]
                 bauxite_value = int((sulfur_value + 1) / 2)
                 print $0
-                printf "        bg_bauxite_mining = %d \n", bauxite_value, sulfur_value
+                printf "        building_bauxite_mine = %d \n", bauxite_value, sulfur_value
                 next
             }
             { print }

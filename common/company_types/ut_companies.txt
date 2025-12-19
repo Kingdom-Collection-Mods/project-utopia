@@ -6,11 +6,11 @@
 	
 	building_types = {
 		building_explosives_factory
-		building_tooling_workshops
+		building_tooling_workshop
 	}
 
 	extension_building_types = {
-		building_chemical_plants
+		building_chemical_plant
 	}
 
 	possible = { 
@@ -19,7 +19,7 @@
 			any_scope_building = {
 				OR = {
 					is_building_type = building_explosives_factory
-					is_building_type = building_chemical_plants
+					is_building_type = building_chemical_plant
 					is_building_type = building_electronic_factory
 				}
 				level >= 10
@@ -310,7 +310,7 @@ ut_heavy_machinery_company_era_6 = {
 	
 	building_types = {
 		building_heavy_machinery_factory
-		building_steel_mills
+		building_steel_mill
 	}
 	
 	extension_building_types = {
@@ -348,7 +348,7 @@ ut_heavy_machinery_company_era_7 = {
 	
 	building_types = {
 		building_heavy_machinery_factory
-		building_steel_mills
+		building_steel_mill
 	}
 	
 	extension_building_types = {
@@ -493,7 +493,7 @@ ut_synthetics_company = {
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
 	building_types = {
-		building_synthetics_plants
+		building_synthetics_plant
 		building_synthetic_oil
 	}
 	
@@ -507,7 +507,7 @@ ut_synthetics_company = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
-					is_building_type = building_synthetics_plants
+					is_building_type = building_synthetics_plant
 					is_building_type = building_synthetic_oil
 				}
 				level >= 5
@@ -516,7 +516,7 @@ ut_synthetics_company = {
 	}
 	
 	prosperity_modifier = {
-		building_synthetics_plants_throughput_add = 0.1
+		building_synthetics_plant_throughput_add = 0.1
 		building_synthetic_oil_throughput_add = 0.2
 	}	
 		

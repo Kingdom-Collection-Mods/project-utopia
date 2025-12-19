@@ -33,20 +33,50 @@ je_ut_communist_one_communist_party = {
 					has_ideology = ideology:ut_ideology_reactionary_alternative
 				}
 			}
+			remove_ideology = ideology_reactionary
 			hidden_effect = {
 				remove_ideology = ideology_reactionary_democratic
 				remove_ideology = ut_ideology_reactionary_alternative
 			}
-			remove_ideology = ideology_reactionary
 			add_ideology = ideology_reactionary_communist
 		}
 		every_interest_group = {
 			limit = {
-				has_ideology = ideology:ideology_plutocratic
+				OR = {
+					has_ideology = ideology:ideology_plutocratic
+					has_ideology = ideology:ideology_plutocratic_democratic
+					has_ideology = ideology:ideology_plutocratic_alternative
+				}
 			}
 			remove_ideology =ideology_plutocratic
+			hidden_effect = {
+				remove_ideology = ideology_plutocratic_democratic
+				remove_ideology = ideology_plutocratic_alternative
+			}
 			add_ideology = ideology_plutocratic_alternative
 		}
+		
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology:ut_ideology_laissez_faire
+					has_ideology = ideology:ut_ideology_laissez_faire_democratic
+					has_ideology = ideology:ut_ideology_laissez_faire_democratic_neoliberal
+				}
+			}
+			remove_ideology = ut_ideology_laissez_faire
+			hidden_effect = {
+				remove_ideology = ut_ideology_laissez_faire_democratic
+				remove_ideology = ut_ideology_laissez_faire_democratic_neoliberal
+			}
+			add_ideology = ut_ideology_laissez_faire_authoritarian
+		}
+		
+		ig:ig_intelligentsia = {
+			remove_ideology = ideology_republican
+			add_ideology = ideology_republican_communist
+		}
+
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_spend_tt
 			je:je_ut_new_dawn_communist = {
@@ -78,11 +108,13 @@ je_ut_communist_one_block = {
 		}
 		is_power_bloc_leader = yes
 		power_bloc ?= {
-			NOT = {
-				any_power_bloc_member = {
-					NOT = { is_subject_of = root }
-					NOT = { this = root }
-				}
+			any_power_bloc_member = {
+				country_rank >= rank_value:minor_power
+				is_subject_of = root
+			}
+			any_power_bloc_member = {
+				count >= 20
+				is_subject_of = root
 			}
 		}
 		
@@ -98,6 +130,25 @@ je_ut_communist_one_block = {
 			je:je_ut_new_dawn_communist = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
+		}
+		
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology:ideology_patriotic
+					has_ideology = ideology:ideology_patriotic_communist_international
+					has_ideology = ideology:ideology_patriotic_fascist
+					has_ideology = ideology:ideology_patriotic_democratic
+				}
+
+			}
+			remove_ideology = ideology_patriotic
+			hidden_effect = {
+				remove_ideology = ideology_patriotic_communist_international
+				remove_ideology = ideology_patriotic_fascist
+				remove_ideology = ideology_patriotic_democratic
+			}
+			add_ideology = ideology_patriotic_communist_national
 		}
 		add_modifier = {
 			name = je_ut_new_dawn_communist_one_block_mod
@@ -116,12 +167,15 @@ je_ut_communist_socialist_expansion = {
 			has_variable = je_ut_communist_one_block_done
 		}
 		
-		NOT = {
-			any_country = {
-				NOT = { this = root }
-				is_adjacent_to_country = root
-				NOT = { is_subject_of = root }
-			}
+		any_country = {
+			count >= 10
+			country_rank >= rank_value:minor_power
+			is_subject_of = root
+		}
+		
+		any_country = {
+			count >= 40
+			is_subject_of = root
 		}
 
 		custom_tooltip = {
@@ -184,16 +238,29 @@ je_ut_communist_a_communist_party = {
 		}
 		every_interest_group = {
 			limit = {
-				has_ideology = ideology:ideology_plutocratic
+				OR = {
+					has_ideology = ideology:ideology_plutocratic
+					has_ideology = ideology:ideology_plutocratic_democratic
+					has_ideology = ideology:ideology_plutocratic_alternative
+				}
 			}
 			remove_ideology =ideology_plutocratic
+			hidden_effect = {
+				remove_ideology = ideology_plutocratic_democratic
+				remove_ideology = ideology_plutocratic_alternative
+			}
 			add_ideology = ideology_plutocratic_communist
 		}
 		every_interest_group = {
 			limit = {
-				has_ideology = ideology:ideology_reactionary
+				OR = {
+					has_ideology = ideology:ideology_reactionary
+					has_ideology = ideology:ideology_reactionary_democratic
+					has_ideology = ideology:ut_ideology_reactionary_alternative
+				}
 			}
-			add_ideology = ideology_urbanist_power_base
+			#lost with journal entry
+			add_ideology = ideology_urbanist_power_base 
 		}
 		set_variable = je_ut_communist_a_communist_party_done
 	}
@@ -214,11 +281,12 @@ je_ut_communist_one_people = {
 				"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" >= new_dawn_ideology_required_points
 			}
 		}
-		NOT = {
-			any_country = {
-				is_adjacent_to_country = root
-				NOT = { is_in_same_power_bloc = root }
-				NOT = { has_modifier = ut_new_dawn_core_communist_mod }
+		any_country = {
+			count >= 20
+			is_adjacent_to_country = root
+			OR = {
+				is_in_same_power_bloc = root
+				has_modifier = ut_new_dawn_core_communist_mod
 			}
 		}
 		custom_tooltip = {
@@ -233,6 +301,23 @@ je_ut_communist_one_people = {
 			je:je_ut_new_dawn_communist = {
 				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
 			}
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology:ideology_patriotic
+					has_ideology = ideology:ideology_patriotic_communist_national
+					has_ideology = ideology:ideology_patriotic_fascist
+					has_ideology = ideology:ideology_patriotic_democratic
+				}
+			}
+			remove_ideology = ideology_patriotic
+			hidden_effect = {
+				remove_ideology = ideology_patriotic_communist_national
+				remove_ideology = ideology_patriotic_fascist
+				remove_ideology = ideology_patriotic_democratic
+			}
+			add_ideology = ideology_patriotic_communist_international
 		}
 		add_modifier = {
 			name = je_ut_new_dawn_communist_one_people_mod

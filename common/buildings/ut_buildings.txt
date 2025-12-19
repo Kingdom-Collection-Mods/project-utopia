@@ -5,6 +5,7 @@ building_bauxite_mine = {
 	city_type = none #mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium
+	terrain_manipulator = mining
 	
 	unlocking_technologies = {
 		bauxite_mining
@@ -28,6 +29,7 @@ building_rare_earths_mine = {
 	city_type = none #mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_high # construction_cost_medium
+	terrain_manipulator = mining
 	
 	unlocking_technologies = {
 		rare_earths_mining_era_analog
@@ -370,7 +372,7 @@ building_synthetic_oil = {
 }
 
 
-building_synthetics_plants = {
+building_synthetics_plant = {
 	building_group = bg_heavy_industry
 	icon = "gfx/interface/icons/building_icons/synthetics_plants.dds"
 	city_type = city

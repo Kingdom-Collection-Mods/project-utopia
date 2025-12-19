@@ -3,7 +3,7 @@
 ###>>>
 ###
 #vanilla
-invite_to_power_bloc = {
+REPLACE:invite_to_power_bloc = {
 	requires_approval = yes
 	can_use_obligations = yes
 	uses_random_approval = yes
