@@ -438,6 +438,8 @@ ut_new_dawn_communist_start_propaganda_campaign = {
 	}
 	
 	possible = {
+		#todo disabled for now
+		always = no
 		scope:target_country = {
 			country_rank <= root.country_rank
 			has_journal_entry = je_ut_new_dawn
