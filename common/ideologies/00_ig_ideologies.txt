@@ -825,47 +825,6 @@ ideology_socialist = {
 		law_free_market_economy = strongly_disapprove
 		law_corporate_economy = strongly_disapprove
 	}
-
-	lawgroup_trade_policy = {		
-		law_protectionism = approve
-		law_isolationism = neutral
-		law_mercantilism = neutral
-		law_free_trade = disapprove
-		law_free_trade_union= disapprove
-		law_protectionism_union = approve
-		law_international_trade = approve
-	}
-
-	lawgroup_taxation = {
-		law_per_capita_based_taxation = disapprove
-		law_land_based_taxation = neutral
-		law_proportional_taxation = neutral
-		law_consumption_based_taxation = neutral
-		law_graduated_taxation = approve
-		ut_law_tax_code = strongly_approve
-	}
-
-	lawgroup_labor_rights = {
-		law_no_workers_rights = disapprove
-		law_regulatory_bodies = neutral
-		law_worker_protections = approve
-		law_ut_minimum_wage = strongly_approve
-	}
-
-	lawgroup_welfare = {
-		law_old_age_pension = strongly_approve
-		law_ut_disability_insurance = strongly_approve
-		law_wage_subsidies = approve
-		law_poor_laws = neutral
-		law_no_social_security = disapprove
-		law_private_pension = strongly_disapprove
-	}
-
-	lawgroup_food_safety = {
-		law_no_food_safety_protection = neutral
-		law_food_safety_protection_institute = approve
-		law_food_safety_protection_institute_two = approve
-	}
 }
 
 ideology_reactionary = {
