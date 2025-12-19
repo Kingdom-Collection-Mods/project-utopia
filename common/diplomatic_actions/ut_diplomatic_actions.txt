@@ -417,6 +417,9 @@ ut_new_dawn_communist_start_propaganda_campaign = {
 	}
 	
 	selectable = {
+		#todo disabled for now
+		always = no
+		
 		NOT = { is_country_type = decentralized }
 		is_revolutionary = no
 		country_rank >= rank_value:great_power
