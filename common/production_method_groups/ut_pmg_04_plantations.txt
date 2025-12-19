@@ -1,8 +1,9 @@
 ﻿REPLACE:pmg_base_building_coffee_plantation = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
-		default_building_coffee_plantation
-		automatic_irrigation_building_coffee_plantation
+		coffee_plantation_dry_process
+		coffee_plantation_wet_process_manual
+		coffee_plantation_wet_process_mechanical
 		smart_irrigation_building_coffee_plantation
 	}
 }
