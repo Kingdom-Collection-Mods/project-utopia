@@ -1047,8 +1047,8 @@ je_ut_new_dawn_communist = {
 			limit = {
 				has_ideology = ideology:ut_ideology_laissez_faire_authoritarian
 			}
-			remove_ideology = ideology:ut_ideology_laissez_faire_authoritarian
-			add_ideology = ideology:ut_ideology_laissez_faire
+			remove_ideology = ut_ideology_laissez_faire_authoritarian
+			add_ideology = ut_ideology_laissez_faire
 		}
 		every_interest_group = {
 			limit = {

@@ -452,7 +452,9 @@ je_ut_new_dawn_democratic_spirit = {
 		if = {
 			limit = {
 				is_power_bloc_leader = yes
-				has_identity = identity:identity_sovereign_empire
+				power_bloc = {
+					has_identity = identity:identity_sovereign_empire
+				}
 				is_ai = yes
 			}
 			if = {
@@ -554,7 +556,9 @@ je_ut_new_dawn_democratic_cultural_values = {
 			
 			if = {
 				limit = {
-					has_technology_researched = political_progress_3_neoliberalism
+					owner = {
+						has_technology_researched = political_progress_3_neoliberalism
+					}
 				}
 				add_ideology = ut_ideology_laissez_faire_democratic_neoliberal
 			}

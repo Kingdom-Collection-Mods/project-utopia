@@ -2,7 +2,11 @@
 #####					ARTILLERY UNITS						#####
 #################################################################
 
-INJECT:military_tank_heavy_generic_diorama_entity = {
+REPLACE:military_tank_heavy_generic_diorama_entity = {
+	entity = "military_tank_heavy_generic_entity"
+
+	group = "artillery"
+	
 	trigger = {
 		OR = {
 			scope:combat_unit_type = unit_type:combat_unit_type_heavy_tank
