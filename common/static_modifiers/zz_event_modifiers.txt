@@ -1,7 +1,3 @@
-﻿
-country_humiliated = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
-	country_prestige_mult = -0.25
-	country_leverage_generation_mult = -0.25
+﻿INJECT:country_humiliated = {
 	country_new_dawn_focus_selected_progress = -10
 }
