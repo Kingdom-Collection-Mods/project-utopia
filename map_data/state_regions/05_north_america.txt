@@ -30,7 +30,7 @@ STATE_LOUISIANA = {
     capped_resources = {
         building_coal_mine = 24
         building_sulfur_mine = 32
-        building_bauxite_mine = 16 
+        building_bauxite_mine = 16
         building_logging_camp = 13
         building_fishing_wharf = 12
     }
@@ -329,6 +329,7 @@ STATE_KANSAS = {
     capped_resources = {
         building_coal_mine = 32
         building_lead_mine = 18
+        building_bauxite_mine = 9
         building_logging_camp = 7
     }
     resource = {
@@ -370,6 +371,7 @@ STATE_ARKANSAS = {
     arable_resources = { "building_rice_farm" "building_livestock_ranch" "building_cotton_plantation" "building_tobacco_plantation" }
     capped_resources = {
         building_lead_mine = 45
+        building_bauxite_mine = 23
         building_logging_camp = 11
     }
     resource = {
@@ -391,6 +393,7 @@ STATE_MISSOURI = {
     arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_cotton_plantation" "building_tobacco_plantation" "building_vineyard" }
     capped_resources = {
         building_lead_mine = 36
+        building_bauxite_mine = 18
         building_logging_camp = 16
     }
     resource = {
@@ -413,7 +416,7 @@ STATE_IOWA = {
     capped_resources = {
         building_coal_mine = 64
         building_sulfur_mine = 40
-        building_bauxite_mine = 20 
+        building_bauxite_mine = 20
         building_logging_camp = 11
     }
 }
@@ -432,7 +435,7 @@ STATE_MINNESOTA = {
     capped_resources = {
         building_iron_mine = 45
         building_sulfur_mine = 40
-        building_bauxite_mine = 20 
+        building_bauxite_mine = 20
         building_logging_camp = 40
     }
 }
@@ -451,7 +454,7 @@ STATE_WISCONSIN = {
     capped_resources = {
         building_iron_mine = 24
         building_sulfur_mine = 32
-        building_bauxite_mine = 16 
+        building_bauxite_mine = 16
         building_logging_camp = 35
     }
 }
@@ -487,7 +490,7 @@ STATE_MICHIGAN = {
     capped_resources = {
         building_iron_mine = 60
         building_sulfur_mine = 32
-        building_bauxite_mine = 16 
+        building_bauxite_mine = 16
         building_logging_camp = 50
     }
 }
@@ -506,6 +509,7 @@ STATE_OHIO = {
     capped_resources = {
         building_coal_mine = 60
         building_lead_mine = 36
+        building_bauxite_mine = 18
         building_logging_camp = 30
     }
     resource = {
@@ -589,6 +593,7 @@ STATE_ALABAMA = {
         building_coal_mine = 28
         building_iron_mine = 30
         building_lead_mine = 24
+        building_bauxite_mine = 12
         building_logging_camp = 17
         building_fishing_wharf = 3
     }
@@ -615,7 +620,7 @@ STATE_FLORIDA = {
         building_logging_camp = 23
         building_fishing_wharf = 15
         building_sulfur_mine = 42
-        building_bauxite_mine = 21 
+        building_bauxite_mine = 21
     }
     resource = {
         type = "building_oil_rig"
@@ -752,6 +757,7 @@ STATE_ILLINOIS = {
     capped_resources = {
         building_coal_mine = 60
         building_lead_mine = 90
+        building_bauxite_mine = 45
         building_logging_camp = 22
     }
 }
@@ -970,7 +976,7 @@ STATE_ONTARIO = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_tobacco_plantation" "building_vineyard" }
     capped_resources = {
         building_sulfur_mine = 48
-        building_bauxite_mine = 24 
+        building_bauxite_mine = 24
         building_logging_camp = 90
     }
     resource = {
@@ -994,6 +1000,7 @@ STATE_NEW_BRUNSWICK = {
     capped_resources = {
         building_coal_mine = 44
         building_lead_mine = 54
+        building_bauxite_mine = 27
         building_logging_camp = 30
         building_fishing_wharf = 8
     }
@@ -1043,6 +1050,7 @@ STATE_NEWFOUNDLAND = {
     capped_resources = {
         building_iron_mine = 24
         building_lead_mine = 24
+        building_bauxite_mine = 12
         building_logging_camp = 24
         building_whaling_station = 6
         building_fishing_wharf = 10
@@ -1064,7 +1072,7 @@ STATE_ALBERTA = {
     capped_resources = {
         building_coal_mine = 48
         building_sulfur_mine = 32
-        building_bauxite_mine = 16 
+        building_bauxite_mine = 16
         building_logging_camp = 70
     }
     resource = {
@@ -1088,7 +1096,7 @@ STATE_BRITISH_COLUMBIA = {
     capped_resources = {
         building_coal_mine = 28
         building_sulfur_mine = 36
-        building_bauxite_mine = 18 
+        building_bauxite_mine = 18
         building_logging_camp = 90
         building_whaling_station = 6
         building_fishing_wharf = 9
@@ -1247,7 +1255,7 @@ STATE_TEXAS = {
     capped_resources = {
         building_coal_mine = 28
         building_sulfur_mine = 36
-        building_bauxite_mine = 18 
+        building_bauxite_mine = 18
         building_logging_camp = 7
         building_fishing_wharf = 6
     }
@@ -1341,7 +1349,7 @@ STATE_CALIFORNIA = {
     capped_resources = {
         building_iron_mine = 33
         building_sulfur_mine = 40
-        building_bauxite_mine = 20 
+        building_bauxite_mine = 20
         building_logging_camp = 45
         building_fishing_wharf = 14
         building_whaling_station = 6
@@ -1405,6 +1413,7 @@ STATE_CHIHUAHUA = {
     arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_cotton_plantation" "building_dye_plantation" }
     capped_resources = {
         building_lead_mine = 18
+        building_bauxite_mine = 9
         building_logging_camp = 6
     }
 }
@@ -1523,6 +1532,7 @@ STATE_MEXICO = {
     capped_resources = {
         building_iron_mine = 9
         building_lead_mine = 12
+        building_bauxite_mine = 6
         building_logging_camp = 7
     }
     resource = {
@@ -1546,6 +1556,7 @@ STATE_VERACRUZ = {
     capped_resources = {
         building_iron_mine = 9
         building_lead_mine = 12
+        building_bauxite_mine = 6
         building_logging_camp = 6
         building_fishing_wharf = 7
     }
@@ -1575,6 +1586,7 @@ STATE_GUERRERO = {
     capped_resources = {
         building_coal_mine = 24
         building_lead_mine = 15
+        building_bauxite_mine = 8
         building_logging_camp = 8
         building_fishing_wharf = 4
     }
@@ -1609,6 +1621,7 @@ STATE_OAXACA = {
     capped_resources = {
         building_coal_mine = 24
         building_lead_mine = 15
+        building_bauxite_mine = 8
         building_logging_camp = 7
         building_fishing_wharf = 4
     }

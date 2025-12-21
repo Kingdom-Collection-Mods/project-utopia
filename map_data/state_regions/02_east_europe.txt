@@ -29,8 +29,8 @@ STATE_LOWER_SILESIA = {
         building_coal_mine = 20
         building_iron_mine = 20
         building_lead_mine = 4
+        building_bauxite_mine = 2
         building_sulfur_mine = 9
-        building_bauxite_mine = 5 
         building_logging_camp = 10
     }
 }
@@ -51,8 +51,8 @@ STATE_UPPER_SILESIA = {
         building_coal_mine = 110
         building_iron_mine = 40
         building_lead_mine = 50
+        building_bauxite_mine = 25
         building_sulfur_mine = 31
-        building_bauxite_mine = 16 
         building_logging_camp = 4
     }
 }
@@ -71,6 +71,7 @@ STATE_GREATER_POLAND = {
         building_coal_mine = 84
         building_iron_mine = 48
         building_lead_mine = 24
+        building_bauxite_mine = 12
         building_logging_camp = 9
     }
 }
@@ -89,7 +90,7 @@ STATE_LESSER_POLAND = {
         building_coal_mine = 108
         building_iron_mine = 32
         building_sulfur_mine = 32
-        building_bauxite_mine = 16 
+        building_bauxite_mine = 16
         building_logging_camp = 13
     }
 }
@@ -108,7 +109,7 @@ STATE_WEST_PRUSSIA = {
     arable_resources = { "building_rye_farm" "building_livestock_ranch" }
     capped_resources = {
         building_sulfur_mine = 40
-        building_bauxite_mine = 20 
+        building_bauxite_mine = 20
         building_logging_camp = 8
         building_fishing_wharf = 10
     }
@@ -309,6 +310,7 @@ STATE_RUTHENIA = {
     capped_resources = {
         building_coal_mine = 92
         building_lead_mine = 33
+        building_bauxite_mine = 17
         building_logging_camp = 15
     }
 }
@@ -326,6 +328,7 @@ STATE_SOUTHERN_TRANSYLVANIA = {
     capped_resources = {
         building_iron_mine = 45
         building_lead_mine = 45
+        building_bauxite_mine = 23
         building_logging_camp = 17
     }
 }
@@ -399,7 +402,7 @@ STATE_WALLACHIA = {
         building_coal_mine = 68
         building_iron_mine = 21
         building_sulfur_mine = 15
-        building_bauxite_mine = 8 
+        building_bauxite_mine = 8
         building_logging_camp = 8
     }
     resource = {

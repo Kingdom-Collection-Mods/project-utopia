@@ -11,8 +11,8 @@
     capped_resources = {
         building_iron_mine = 24
         building_lead_mine = 36
+        building_bauxite_mine = 18
         building_sulfur_mine = 80
-        building_bauxite_mine = 40 
     }
     resource = {
         type = "building_oil_rig"
@@ -47,7 +47,7 @@ STATE_SICHUAN = {
     capped_resources = {
         building_coal_mine = 60
         building_sulfur_mine = 40
-        building_bauxite_mine = 20 
+        building_bauxite_mine = 20
         building_logging_camp = 23
     }
 }
@@ -142,6 +142,7 @@ STATE_HINGGAN = {
     capped_resources = {
         building_iron_mine = 36
         building_lead_mine = 24
+        building_bauxite_mine = 12
         building_logging_camp = 6
     }
     
@@ -184,6 +185,7 @@ STATE_BEIJING = {
         building_coal_mine = 28
         building_iron_mine = 30
         building_lead_mine = 15
+        building_bauxite_mine = 8
         building_logging_camp = 2
         building_fishing_wharf = 3
     }
@@ -204,6 +206,7 @@ STATE_SHENGJING = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_silk_plantation" "building_tea_plantation" "building_tobacco_plantation" }
     capped_resources = {
         building_lead_mine = 15
+        building_bauxite_mine = 8
         building_logging_camp = 2
         building_fishing_wharf = 2
     }
@@ -230,6 +233,7 @@ STATE_OUTER_MANCHURIA = {
         building_coal_mine = 12
         building_iron_mine = 16
         building_lead_mine = 24
+        building_bauxite_mine = 12
         building_logging_camp = 20
         building_fishing_wharf = 10
     }
@@ -263,6 +267,7 @@ STATE_SOUTHERN_MANCHURIA = {
         building_coal_mine = 60
         building_iron_mine = 75
         building_lead_mine = 45
+        building_bauxite_mine = 23
         building_logging_camp = 25
         building_fishing_wharf = 8
     }
@@ -301,7 +306,7 @@ STATE_SHANXI = {
         building_coal_mine = 116
         building_iron_mine = 96
         building_sulfur_mine = 48
-        building_bauxite_mine = 24 
+        building_bauxite_mine = 24
         building_logging_camp = 7
     }
     resource = {
@@ -355,7 +360,7 @@ STATE_XIAN = {
     capped_resources = {
         building_coal_mine = 72
         building_sulfur_mine = 60
-        building_bauxite_mine = 30 
+        building_bauxite_mine = 30
         building_logging_camp = 9
     }
     resource = {
@@ -505,7 +510,7 @@ STATE_HENAN = {
     capped_resources = {
         building_coal_mine = 52
         building_sulfur_mine = 36
-        building_bauxite_mine = 18 
+        building_bauxite_mine = 18
         building_logging_camp = 11
     }
 }
@@ -527,7 +532,7 @@ STATE_ZHILI = {
         building_coal_mine = 5
         building_iron_mine = 9
         building_sulfur_mine = 36
-        building_bauxite_mine = 18 
+        building_bauxite_mine = 18
         building_logging_camp = 9
         building_fishing_wharf = 4
     }
@@ -629,7 +634,7 @@ STATE_HUNAN = {
     arable_resources = { "building_rice_farm" "building_livestock_ranch" "building_cotton_plantation" "building_silk_plantation" "building_tea_plantation" "building_tobacco_plantation" }
     capped_resources = {
         building_sulfur_mine = 44
-        building_bauxite_mine = 22 
+        building_bauxite_mine = 22
         building_logging_camp = 18
     }
 }
@@ -672,7 +677,7 @@ STATE_SHANDONG = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_silk_plantation" "building_tea_plantation" "building_tobacco_plantation" }
     capped_resources = {
         building_sulfur_mine = 32
-        building_bauxite_mine = 16 
+        building_bauxite_mine = 16
         building_logging_camp = 6
         building_fishing_wharf = 15
     }
@@ -896,6 +901,7 @@ STATE_CHIANG_MAI = {
     capped_resources = {
         building_coal_mine = 32
         building_lead_mine = 36
+        building_bauxite_mine = 18
         building_logging_camp = 18
     }
     resource = {
@@ -969,8 +975,8 @@ STATE_HOKKAIDO = {
         building_coal_mine = 36
         building_iron_mine = 33
         building_lead_mine = 36
+        building_bauxite_mine = 18
         building_sulfur_mine = 32
-        building_bauxite_mine = 16 
         building_logging_camp = 9
         building_whaling_station = 8
         building_fishing_wharf = 12
@@ -1001,6 +1007,7 @@ STATE_TOHOKU = {
     capped_resources = {
         building_iron_mine = 60
         building_lead_mine = 45
+        building_bauxite_mine = 23
         building_logging_camp = 15
         building_whaling_station = 6
         building_fishing_wharf = 15
@@ -1023,6 +1030,7 @@ STATE_KANTO = {
     capped_resources = {
         building_iron_mine = 36
         building_lead_mine = 30
+        building_bauxite_mine = 15
         building_logging_camp = 9
         building_whaling_station = 7
         building_fishing_wharf = 10
@@ -1043,6 +1051,7 @@ STATE_CHUBU = {
     arable_resources = { "building_rice_farm" "building_livestock_ranch" "building_cotton_plantation" "building_silk_plantation" "building_tea_plantation" "building_tobacco_plantation" "building_vineyard" }
     capped_resources = {
         building_lead_mine = 33
+        building_bauxite_mine = 17
         building_logging_camp = 16
         building_fishing_wharf = 16
     }
@@ -1090,8 +1099,8 @@ STATE_KYUSHU = {
         building_logging_camp = 7
         building_coal_mine = 72
         building_lead_mine = 36
+        building_bauxite_mine = 18
         building_sulfur_mine = 40
-        building_bauxite_mine = 20 
         building_fishing_wharf = 18
     }
     naval_exit_id = 3058
@@ -1128,8 +1137,8 @@ STATE_CHUGOKU = {
     arable_resources = { "building_rice_farm" "building_livestock_ranch" "building_cotton_plantation" "building_silk_plantation" "building_dye_plantation" "building_tea_plantation" "building_tobacco_plantation" }
     capped_resources = {
         building_lead_mine = 24
+        building_bauxite_mine = 12
         building_sulfur_mine = 40
-        building_bauxite_mine = 20 
         building_logging_camp = 20
         building_fishing_wharf = 12
     }
@@ -1151,7 +1160,7 @@ STATE_SHIKOKU = {
     capped_resources = {
         building_iron_mine = 24
         building_sulfur_mine = 32
-        building_bauxite_mine = 16 
+        building_bauxite_mine = 16
         building_logging_camp = 11
         building_fishing_wharf = 9
     }
@@ -1173,6 +1182,7 @@ STATE_SEOUL = {
     capped_resources = {
         building_iron_mine = 30
         building_lead_mine = 27
+        building_bauxite_mine = 14
         building_logging_camp = 14
         building_whaling_station = 4
         building_fishing_wharf = 8
@@ -1216,7 +1226,7 @@ STATE_YANGHO = {
     capped_resources = {
         building_coal_mine = 10
         building_sulfur_mine = 10
-        building_bauxite_mine = 5 
+        building_bauxite_mine = 5
         building_logging_camp = 7
         building_whaling_station = 2
         building_fishing_wharf = 6
@@ -1240,8 +1250,8 @@ STATE_SARIWON = {
         building_coal_mine = 36
         building_iron_mine = 33
         building_lead_mine = 39
+        building_bauxite_mine = 20
         building_sulfur_mine = 28
-        building_bauxite_mine = 14 
         building_logging_camp = 11
         building_fishing_wharf = 6
     }
@@ -1264,6 +1274,7 @@ STATE_PYONGYANG = {
         building_coal_mine = 60
         building_iron_mine = 36
         building_lead_mine = 36
+        building_bauxite_mine = 18
         building_logging_camp = 15
         building_fishing_wharf = 8
     }

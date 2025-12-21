@@ -144,6 +144,7 @@ STATE_UUSIMAA = {
     capped_resources = {
         building_iron_mine = 5
         building_lead_mine = 5
+        building_bauxite_mine = 3
         building_logging_camp = 36
         building_fishing_wharf = 8
     }
@@ -202,6 +203,7 @@ STATE_OSTROBOTHNIA = {
     arable_resources = { "building_rye_farm" "building_livestock_ranch" }
     capped_resources = {
         building_lead_mine = 5
+        building_bauxite_mine = 3
         building_logging_camp = 25
         building_fishing_wharf = 10
     }
@@ -265,7 +267,7 @@ STATE_KOLA = {
     capped_resources = {
         building_iron_mine = 85
         building_sulfur_mine = 10
-        building_bauxite_mine = 5 
+        building_bauxite_mine = 5
         building_logging_camp = 25
         building_fishing_wharf = 10
     }
@@ -519,7 +521,7 @@ STATE_KURSK = {
         building_logging_camp = 31
         building_iron_mine = 93
         building_sulfur_mine = 12
-        building_bauxite_mine = 6 
+        building_bauxite_mine = 6
     }
     resource = {
         type = "building_gold_field"
@@ -721,6 +723,7 @@ STATE_SEMIRECHE = {
     capped_resources = {
         building_coal_mine = 28
         building_lead_mine = 16
+        building_bauxite_mine = 8
         building_logging_camp = 4
     }
 }
@@ -739,6 +742,7 @@ STATE_JETISY = {
     capped_resources = {
         building_coal_mine = 12
         building_lead_mine = 20
+        building_bauxite_mine = 10
         building_logging_camp = 4
     }
 }
@@ -806,6 +810,7 @@ STATE_SYRDARYA = {
     capped_resources = {
         building_iron_mine = 15
         building_lead_mine = 60
+        building_bauxite_mine = 30
         building_logging_camp = 6
     }
 }
@@ -1016,7 +1021,7 @@ STATE_VYATKA = {
     capped_resources = {
         building_coal_mine = 15
         building_sulfur_mine = 10
-        building_bauxite_mine = 5 
+        building_bauxite_mine = 5
         building_logging_camp = 36
     }
     resource = {
@@ -1041,6 +1046,7 @@ STATE_UFA = {
         building_coal_mine = 10
         building_logging_camp = 25
         building_lead_mine = 16
+        building_bauxite_mine = 8
     }
     resource = {
         type = "building_oil_rig"
@@ -1109,6 +1115,7 @@ STATE_ALTAI = {
         building_iron_mine = 7
         building_logging_camp = 18
         building_lead_mine = 12
+        building_bauxite_mine = 6
     }
     resource = {
         type = "building_gold_field"
@@ -1283,7 +1290,7 @@ STATE_CHUVASHIA = {
     arable_resources = { "building_rye_farm" "building_livestock_ranch" }
     capped_resources = {
         building_sulfur_mine = 15
-        building_bauxite_mine = 8 
+        building_bauxite_mine = 8
         building_logging_camp = 25
     }
     resource = {

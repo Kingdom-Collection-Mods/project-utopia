@@ -13,6 +13,7 @@
     capped_resources = {
         building_coal_mine = 32
         building_lead_mine = 24
+        building_bauxite_mine = 12
         building_logging_camp = 17
         building_fishing_wharf = 10
     }
@@ -45,7 +46,7 @@ STATE_NORTH_BORNEO = {
     capped_resources = {
         building_iron_mine = 24
         building_sulfur_mine = 36
-        building_bauxite_mine = 18 
+        building_bauxite_mine = 18
         building_logging_camp = 20
         building_fishing_wharf = 8
     }
@@ -85,6 +86,7 @@ STATE_WEST_BORNEO = {
     arable_resources = { "building_rice_farm" "building_livestock_ranch" "building_coffee_plantation" "building_dye_plantation" "building_tea_plantation" "building_tobacco_plantation" "building_banana_plantation" }
     capped_resources = {
         building_lead_mine = 30
+        building_bauxite_mine = 15
         building_logging_camp = 17
         building_fishing_wharf = 7
     }
@@ -149,7 +151,7 @@ STATE_WEST_JAVA = {
     capped_resources = {
         building_coal_mine = 20
         building_sulfur_mine = 32
-        building_bauxite_mine = 16 
+        building_bauxite_mine = 16
         building_logging_camp = 8
         building_fishing_wharf = 11
     }
@@ -179,7 +181,7 @@ STATE_EAST_JAVA = {
     arable_resources = { "building_rice_farm" "building_livestock_ranch" "building_coffee_plantation" "building_cotton_plantation" "building_dye_plantation" "building_tea_plantation" "building_tobacco_plantation" "building_sugar_plantation" "building_banana_plantation" }
     capped_resources = {
         building_sulfur_mine = 40
-        building_bauxite_mine = 20 
+        building_bauxite_mine = 20
         building_logging_camp = 7
         building_fishing_wharf = 8
     }
@@ -208,7 +210,7 @@ STATE_CENTRAL_JAVA = {
     arable_resources = { "building_rice_farm" "building_livestock_ranch" "building_coffee_plantation" "building_cotton_plantation" "building_dye_plantation" "building_tea_plantation" "building_tobacco_plantation" "building_sugar_plantation" "building_banana_plantation" }
     capped_resources = {
         building_sulfur_mine = 32
-        building_bauxite_mine = 16 
+        building_bauxite_mine = 16
         building_logging_camp = 6
         building_fishing_wharf = 4
     }
@@ -234,7 +236,7 @@ STATE_NORTH_SUMATRA = {
     capped_resources = {
         building_coal_mine = 40
         building_sulfur_mine = 48
-        building_bauxite_mine = 24 
+        building_bauxite_mine = 24
         building_logging_camp = 29
         building_fishing_wharf = 13
     }
@@ -259,7 +261,7 @@ STATE_SOUTH_SUMATRA = {
     capped_resources = {
         building_coal_mine = 40
         building_sulfur_mine = 48
-        building_bauxite_mine = 24 
+        building_bauxite_mine = 24
         building_logging_camp = 29
         building_fishing_wharf = 13
     }
@@ -289,7 +291,7 @@ STATE_ACEH = {
     capped_resources = {
         building_iron_mine = 15
         building_sulfur_mine = 20
-        building_bauxite_mine = 10 
+        building_bauxite_mine = 10
         building_logging_camp = 14
         building_fishing_wharf = 8
     }
@@ -394,7 +396,7 @@ STATE_EASTERN_NEW_GUINEA = {
     capped_resources = {
         building_iron_mine = 24
         building_sulfur_mine = 32
-        building_bauxite_mine = 16 
+        building_bauxite_mine = 16
         building_logging_camp = 16
         building_fishing_wharf = 10
         building_whaling_station = 2
@@ -425,7 +427,7 @@ STATE_SUNDA_ISLANDS = {
     capped_resources = {
         building_iron_mine = 24
         building_sulfur_mine = 40
-        building_bauxite_mine = 20 
+        building_bauxite_mine = 20
         building_logging_camp = 17
         building_fishing_wharf = 10
     }
@@ -589,7 +591,7 @@ STATE_NAURU = {
         building_whaling_station = 3
         building_fishing_wharf = 3
         building_sulfur_mine = 12
-        building_bauxite_mine = 6 
+        building_bauxite_mine = 6
     }
     naval_exit_id = 3156
 }
@@ -649,6 +651,7 @@ STATE_KANAK = {
     arable_resources = { "building_rice_farm" "building_coffee_plantation" "building_banana_plantation" }
     capped_resources = {
         building_lead_mine = 8
+        building_bauxite_mine = 4
         building_logging_camp = 2
         building_fishing_wharf = 3
     }

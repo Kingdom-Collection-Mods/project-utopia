@@ -15,6 +15,7 @@
         building_coal_mine = 84
         building_iron_mine = 96
         building_lead_mine = 81
+        building_bauxite_mine = 41
         building_gold_mine = 2
         building_logging_camp = 27
     }
@@ -244,6 +245,7 @@ STATE_YAKUTSK = {
     capped_resources = {
         building_coal_mine = 36
         building_lead_mine = 16
+        building_bauxite_mine = 8
         building_logging_camp = 23
     }
     resource = {
@@ -276,8 +278,8 @@ STATE_TRANS_BAIKAL = {
         building_coal_mine = 80
         building_iron_mine = 33
         building_lead_mine = 28
+        building_bauxite_mine = 14
         building_sulfur_mine = 44
-        building_bauxite_mine = 22 
         building_logging_camp = 24
     }
     resource = {

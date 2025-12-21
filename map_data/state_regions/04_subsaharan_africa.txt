@@ -64,8 +64,8 @@ STATE_SENEGAL = {
     capped_resources = {
         building_iron_mine = 30
         building_sulfur_mine = 40
+        building_bauxite_mine = 20
         building_fishing_wharf = 10
-        building_bauxite_mine = 20 
     }
     resource = {
         type = "building_rubber_plantation"
@@ -288,6 +288,7 @@ STATE_NIGERIA = {
     capped_resources = {
         building_iron_mine = 45
         building_lead_mine = 45
+        building_bauxite_mine = 23
         building_logging_camp = 20
     }
     resource = {
@@ -380,7 +381,7 @@ STATE_TOGO = {
     arable_resources = { "building_millet_farm" "building_livestock_ranch" "building_coffee_plantation" "building_cotton_plantation" "building_dye_plantation" "building_tobacco_plantation" "building_sugar_plantation" "building_banana_plantation" }
     capped_resources = {
         building_sulfur_mine = 44
-        building_bauxite_mine = 22 
+        building_bauxite_mine = 22
         building_logging_camp = 11
         building_fishing_wharf = 12
     }
@@ -1029,6 +1030,7 @@ STATE_EAST_ANGOLA = {
     capped_resources = {
         building_coal_mine = 80
         building_lead_mine = 27
+        building_bauxite_mine = 14
         building_logging_camp = 11
     }
     resource = {
@@ -1100,6 +1102,7 @@ STATE_ZAMBIA = {
     capped_resources = {
         building_coal_mine = 36
         building_lead_mine = 33
+        building_bauxite_mine = 17
         building_logging_camp = 17
     }
     resource = {

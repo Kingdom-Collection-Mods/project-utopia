@@ -13,6 +13,7 @@
     capped_resources = {
         building_iron_mine = 60
         building_lead_mine = 18
+        building_bauxite_mine = 9
         building_logging_camp = 45
         building_fishing_wharf = 11
     }
@@ -156,7 +157,7 @@ STATE_WESTERN_NORWAY = {
     arable_resources = { "building_rye_farm" "building_livestock_ranch" }
     capped_resources = {
         building_sulfur_mine = 20
-        building_bauxite_mine = 10 
+        building_bauxite_mine = 10
         building_logging_camp = 22
         building_fishing_wharf = 15
     }
@@ -179,7 +180,7 @@ STATE_NORTHERN_NORWAY = {
     capped_resources = {
         building_iron_mine = 18
         building_sulfur_mine = 20
-        building_bauxite_mine = 10 
+        building_bauxite_mine = 10
         building_logging_camp = 24
         building_whaling_station = 10
         building_fishing_wharf = 10
@@ -221,7 +222,7 @@ STATE_ICELAND = {
     arable_resources = { "building_rye_farm" "building_livestock_ranch" }
     capped_resources = {
         building_sulfur_mine = 20
-        building_bauxite_mine = 10 
+        building_bauxite_mine = 10
         building_whaling_station = 5
         building_fishing_wharf = 3
     }
@@ -284,6 +285,7 @@ STATE_LANCASHIRE = {
         building_coal_mine = 100
         building_iron_mine = 60
         building_lead_mine = 45
+        building_bauxite_mine = 23
         building_logging_camp = 9
         building_fishing_wharf = 15
     }
@@ -330,6 +332,7 @@ STATE_YORKSHIRE = {
         building_coal_mine = 100
         building_iron_mine = 75
         building_lead_mine = 27
+        building_bauxite_mine = 14
         building_logging_camp = 6
         building_fishing_wharf = 7
     }
@@ -372,7 +375,7 @@ STATE_MIDLANDS = {
         building_coal_mine = 80
         building_iron_mine = 60
         building_sulfur_mine = 40
-        building_bauxite_mine = 20 
+        building_bauxite_mine = 20
         building_logging_camp = 6
         building_fishing_wharf = 2
     }
@@ -418,6 +421,7 @@ STATE_WEST_COUNTRY = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_vineyard" }
     capped_resources = {
         building_lead_mine = 60
+        building_bauxite_mine = 30
         building_logging_camp = 6
         building_fishing_wharf = 9
     }
@@ -477,6 +481,7 @@ STATE_MUNSTER = {
     arable_resources = { "building_rye_farm" "building_livestock_ranch" }
     capped_resources = {
         building_lead_mine = 24
+        building_bauxite_mine = 12
         building_logging_camp = 4
         building_fishing_wharf = 12
     }
@@ -497,6 +502,7 @@ STATE_LEINSTER = {
     capped_resources = {
         building_iron_mine = 33
         building_lead_mine = 27
+        building_bauxite_mine = 14
         building_logging_camp = 6
         building_fishing_wharf = 6
     }
@@ -516,7 +522,7 @@ STATE_CONNAUGHT = {
     arable_resources = { "building_rye_farm" "building_livestock_ranch" }
     capped_resources = {
         building_sulfur_mine = 48
-        building_bauxite_mine = 24 
+        building_bauxite_mine = 24
         building_logging_camp = 7
         building_fishing_wharf = 4
     }
@@ -612,6 +618,7 @@ STATE_RHONE = {
         building_coal_mine = 100
         building_iron_mine = 36
         building_lead_mine = 36
+        building_bauxite_mine = 18
         building_logging_camp = 14
     }
 
@@ -811,8 +818,8 @@ STATE_LORRAINE = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_vineyard" }
     capped_resources = {
         building_lead_mine = 45
+        building_bauxite_mine = 23
         building_sulfur_mine = 40
-        building_bauxite_mine = 20 
         building_iron_mine = 60
         building_logging_camp = 17
     }
@@ -933,8 +940,8 @@ STATE_WALLONIA = {
         building_coal_mine = 80
         building_iron_mine = 60
         building_lead_mine = 30
+        building_bauxite_mine = 15
         building_sulfur_mine = 30
-        building_bauxite_mine = 15 
         building_logging_camp = 17
     }
 }
@@ -990,6 +997,7 @@ STATE_BOHEMIA = {
         building_iron_mine = 45
         building_logging_camp = 17
         building_lead_mine = 8
+        building_bauxite_mine = 4
         building_gold_mine = 5
         building_rare_earths_mine = 5 
     }
@@ -1026,6 +1034,7 @@ STATE_STYRIA = {
         building_coal_mine = 40
         building_iron_mine = 24
         building_lead_mine = 24
+        building_bauxite_mine = 12
         building_logging_camp = 8
     }
 }
@@ -1122,6 +1131,7 @@ STATE_EAST_SWITZERLAND = {
     capped_resources = {
         building_iron_mine = 30
         building_lead_mine = 30
+        building_bauxite_mine = 15
         building_logging_camp = 17
     }
 }
@@ -1141,6 +1151,7 @@ STATE_WEST_SWITZERLAND = {
         building_coal_mine = 48
         building_iron_mine = 24
         building_lead_mine = 24
+        building_bauxite_mine = 12
         building_logging_camp = 6
     }
 }
@@ -1161,7 +1172,7 @@ STATE_WESTPHALIA = {
         building_coal_mine = 80
         building_iron_mine = 36
         building_sulfur_mine = 32
-        building_bauxite_mine = 16 
+        building_bauxite_mine = 16
         building_logging_camp = 24
     }
 }
@@ -1198,6 +1209,7 @@ STATE_RHINELAND = {
     capped_resources = {
         building_coal_mine = 60
         building_lead_mine = 30
+        building_bauxite_mine = 15
         building_logging_camp = 11
     }
 }
@@ -1328,6 +1340,7 @@ STATE_BRUNSWICK = {
         building_coal_mine = 40
         building_iron_mine = 45
         building_lead_mine = 45
+        building_bauxite_mine = 23
         building_logging_camp = 6
     }
 }
@@ -1347,6 +1360,7 @@ STATE_BAVARIA = {
         building_coal_mine = 60
         building_iron_mine = 30
         building_lead_mine = 30
+        building_bauxite_mine = 15
         building_logging_camp = 23
     }
     
@@ -1389,7 +1403,7 @@ STATE_SAXONY = {
         building_coal_mine = 80
         building_iron_mine = 30
         building_sulfur_mine = 80
-        building_bauxite_mine = 40 
+        building_bauxite_mine = 40
         building_logging_camp = 6
     }
     
@@ -1415,7 +1429,7 @@ STATE_HESSE = {
         building_coal_mine = 60
         building_iron_mine = 30
         building_sulfur_mine = 40
-        building_bauxite_mine = 20 
+        building_bauxite_mine = 20
         building_logging_camp = 8
     }
 }

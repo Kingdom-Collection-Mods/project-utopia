@@ -100,7 +100,7 @@ STATE_DELHI = {
     capped_resources = {
         building_logging_camp = 5
         building_sulfur_mine = 2
-        building_bauxite_mine = 1 
+        building_bauxite_mine = 1
     }
 }
 
@@ -294,7 +294,7 @@ STATE_SINDH = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_coffee_plantation" "building_cotton_plantation" "building_opium_plantation" "building_sugar_plantation" "building_tobacco_plantation" "building_banana_plantation" }
     capped_resources = {
         building_sulfur_mine = 4
-        building_bauxite_mine = 2 
+        building_bauxite_mine = 2
         building_fishing_wharf = 6
         building_logging_camp = 3
     }
@@ -315,8 +315,8 @@ STATE_RAJPUTANA = {
     capped_resources = {
         building_iron_mine = 24
         building_lead_mine = 6
+        building_bauxite_mine = 3
         building_sulfur_mine = 3
-        building_bauxite_mine = 2 
         building_logging_camp = 2
     }
 }
@@ -452,6 +452,7 @@ STATE_TRAVANCORE = {
         building_logging_camp = 11
         building_fishing_wharf = 10
         building_lead_mine = 2
+        building_bauxite_mine = 1
     }
     resource = {
         type = "building_rubber_plantation"
@@ -601,6 +602,7 @@ STATE_SHAN_STATES = {
         building_iron_mine = 8
         building_coal_mine = 5
         building_lead_mine = 34
+        building_bauxite_mine = 17
         building_logging_camp = 17
     }
     resource = {

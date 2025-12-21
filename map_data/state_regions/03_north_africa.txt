@@ -12,7 +12,7 @@
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_opium_plantation" "building_tobacco_plantation" "building_sugar_plantation" "building_banana_plantation" "building_vineyard" }
     capped_resources = {
         building_sulfur_mine = 20
-        building_bauxite_mine = 10 
+        building_bauxite_mine = 10
         building_logging_camp = 2
         building_fishing_wharf = 6
     }
@@ -104,6 +104,7 @@ STATE_SINAI = {
         building_fishing_wharf = 3
         building_iron_mine = 24
         building_lead_mine = 24
+        building_bauxite_mine = 12
     }
     naval_exit_id = 3047
 }
@@ -220,7 +221,7 @@ STATE_MARRAKECH = {
     capped_resources = {
         building_iron_mine = 30
         building_sulfur_mine = 52
-        building_bauxite_mine = 26 
+        building_bauxite_mine = 26
         building_fishing_wharf = 8
     }
     naval_exit_id = 3089
@@ -279,6 +280,7 @@ STATE_INNER_MOROCCO = {
     capped_resources = {
         building_iron_mine = 30
         building_lead_mine = 30
+        building_bauxite_mine = 15
         building_fishing_wharf = 4
         building_gold_mine = 3
         building_rare_earths_mine = 3 
@@ -303,6 +305,7 @@ STATE_ALGIERS = {
     capped_resources = {
         building_iron_mine = 10
         building_lead_mine = 7
+        building_bauxite_mine = 4
         building_logging_camp = 6
         building_fishing_wharf = 8
     }
@@ -325,8 +328,8 @@ STATE_CONSTANTINE = {
     capped_resources = {
         building_iron_mine = 55
         building_lead_mine = 19
+        building_bauxite_mine = 10
         building_sulfur_mine = 18
-        building_bauxite_mine = 9 
         building_logging_camp = 6
         building_fishing_wharf = 4
     }
@@ -371,8 +374,8 @@ STATE_TUNISIA = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_sugar_plantation" "building_vineyard" }
     capped_resources = {
         building_lead_mine = 15
+        building_bauxite_mine = 8
         building_sulfur_mine = 48
-        building_bauxite_mine = 24 
         building_logging_camp = 9
         building_fishing_wharf = 7
     }
@@ -499,7 +502,7 @@ STATE_WEST_SAHARA = {
     arable_resources = { "building_livestock_ranch" }
     capped_resources = {
         building_sulfur_mine = 36
-        building_bauxite_mine = 18 
+        building_bauxite_mine = 18
         building_fishing_wharf = 11
     }
     naval_exit_id = 3089
@@ -589,7 +592,7 @@ STATE_TIMBUKTU = {
     capped_resources = {
         building_coal_mine = 36
         building_sulfur_mine = 36
-        building_bauxite_mine = 18 
+        building_bauxite_mine = 18
     }
     resource = {
         type = "building_oil_rig"
@@ -612,8 +615,8 @@ STATE_NIGER = {
     capped_resources = {
         building_coal_mine = 36
         building_lead_mine = 18
+        building_bauxite_mine = 9
         building_sulfur_mine = 24
-        building_bauxite_mine = 12 
     }
     resource = {
         type = "building_oil_rig"
