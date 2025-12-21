@@ -26,7 +26,6 @@
 		scope:target = {
 			add_modifier = {
 				name = ut_communist_propaganda_mod
-				duration = -1
 			}
 			je:je_ut_new_dawn = {
 				add_progress = {
@@ -97,7 +96,6 @@ ut_je_communist_propaganda_target = {
 		show_as_tooltip = {
 			add_modifier = {
 				name = ut_communist_propaganda_mod
-				duration = -1
 			}
 			je:je_ut_new_dawn = {
 				add_progress = {

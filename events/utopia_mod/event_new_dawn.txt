@@ -414,7 +414,7 @@ event_new_dawn.3 = {
 			}
 			
 			custom_tooltip = {
-				text = event_new_dawn.uprising.democrats
+				text = event_new_dawn.uprising.democrat_win
 			}
 			add_journal_entry = {
 				type = je_ut_new_dawn_democratic

@@ -1189,6 +1189,7 @@ STATE_NORTHWEST_TERRITORIES = {
     capped_resources = {
         building_iron_mine = 18
         building_logging_camp = 40
+    }
     
     #unique rare earths mining small
     resource = {

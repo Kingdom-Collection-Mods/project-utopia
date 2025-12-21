@@ -32,35 +32,13 @@
 	required_input_goods = electricity
 }
 
-pm_trade_center_principle_external_trade_2 = {
-	texture = "gfx/interface/icons/production_method_icons/trade_center.dds"
-	is_hidden_when_unavailable = yes
-
+INJECT:pm_trade_center_principle_external_trade_2 = {
 	unlocking_principles = {
 		principle_external_trade_2
 		principle_external_trade_3
 		principle_common_financial_policy_1
 		principle_common_financial_policy_2
 		principle_common_financial_policy_3
-	}
-
-	country_modifiers = {
-		workforce_scaled = {
-			country_influence_add = 0.5
-		}
-	}
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_clerks_add = 800
-			building_employment_shopkeepers_add = 200
-		}
-	}
-	state_modifiers = {
-		workforce_scaled = {
-			state_weekly_trades_add = 1
-			state_trade_capacity_add = 10
-		}
 	}
 }
 

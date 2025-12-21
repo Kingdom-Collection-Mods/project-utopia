@@ -1,15 +1,9 @@
 ﻿lawgroup_environment_protection = {
 	law_group_category = human_rights
-	ideological_opinion_impact = 1.25
-	
-	progressive_movement_chance = 2.0
-	regressive_movement_chance = 0.25	
+	ideological_opinion_impact = 1
 }
 
 lawgroup_food_safety = {
 	law_group_category = human_rights
 	ideological_opinion_impact = 0.25
-	
-	progressive_movement_chance = 2.0
-	regressive_movement_chance = 0.25	
 }

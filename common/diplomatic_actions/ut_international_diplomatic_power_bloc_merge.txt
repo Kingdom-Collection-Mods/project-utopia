@@ -222,6 +222,22 @@
 			### Similar to identities but considers selected principles
 			add = ai_power_bloc_principle_score
 
+			# Ideological opinion is always a factor, but much weaker for non ideological unions
+			# Score for ideological unions is handled in ai_power_bloc_identity_score script value
+			if = {
+				limit = {
+					power_bloc ?= {
+						NOT = { has_identity = identity:identity_ideological_union }
+					}
+				}
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION"
+					value = "scope:actor.ai_ideological_opinion(root)"
+					multiply = 0.25
+					max = 25
+					min = -25
+				}
+			}
 
 			### Powerful Protectors is always a factor, but less so if not being invited to a sovereign empire
 			if = {
@@ -247,6 +263,8 @@
 				subtract = country_rank
 				multiply = 10
 			}
+
+			#rm DIPLOMATIC_ACCEPTANCE_HIGH_GDP
 
 			add = {
 				desc = "DIPLOMATIC_ACCEPTANCE_ATTITUDE"
@@ -418,6 +436,21 @@
 				}
 
 				add = 50
+			}
+		}
+
+		will_propose_even_if_not_accepted = {
+			OR = {
+				has_attitude = {
+					who = scope:target_country
+					attitude = domineering
+				}
+				power_bloc ?= {
+					leverage_advantage = {
+						target = scope:target_country
+						value >= 500
+					}
+				}
 			}
 		}
 	}

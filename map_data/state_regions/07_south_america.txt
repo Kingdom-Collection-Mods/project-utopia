@@ -1091,7 +1091,6 @@ STATE_MINAS_GERAIS = {
     arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_coffee_plantation" "building_cotton_plantation" "building_tobacco_plantation" "building_sugar_plantation" "building_banana_plantation" }
     capped_resources = {
         building_gold_mine = 2
-        building_rare_earths_mine = 2 
         building_iron_mine = 45
         building_lead_mine = 30
         building_logging_camp = 24
