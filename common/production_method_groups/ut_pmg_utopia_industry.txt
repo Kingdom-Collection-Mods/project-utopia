@@ -21,7 +21,7 @@ REPLACE:pmg_heavy_machinery_making_process = {
 	}
 }
 
-REPLACE:pmg_electronics_making_process = {
+pmg_electronics_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_electronics_circuits_process
@@ -30,7 +30,7 @@ REPLACE:pmg_electronics_making_process = {
 	}
 }
 
-REPLACE:pmg_plastic_making_process = {
+pmg_plastic_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_plastic_one_process
@@ -38,7 +38,7 @@ REPLACE:pmg_plastic_making_process = {
 	}
 }
 
-REPLACE:pmg_bauxite_making_process = {
+pmg_bauxite_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_bauxite_steam_powered_mine
@@ -47,7 +47,7 @@ REPLACE:pmg_bauxite_making_process = {
 	}
 }
 
-REPLACE:pmg_aluminum_making_process = {
+pmg_aluminum_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_aluminum_one_process
@@ -56,7 +56,7 @@ REPLACE:pmg_aluminum_making_process = {
 	}
 }
 
-REPLACE:pmg_rare_earths_making_process = {
+pmg_rare_earths_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_rare_earths_one_mine
@@ -65,7 +65,7 @@ REPLACE:pmg_rare_earths_making_process = {
 	}
 }
 
-REPLACE:pmg_computers_making_process = {
+pmg_computers_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_computers_electromechanical_process
@@ -75,7 +75,7 @@ REPLACE:pmg_computers_making_process = {
 	}
 }
 
-REPLACE:pmg_consumer_goods_making_process = {
+pmg_consumer_goods_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_consumer_goods_analog_process
@@ -84,7 +84,7 @@ REPLACE:pmg_consumer_goods_making_process = {
 	}
 }
 
-REPLACE:pmg_complex_consumer_goods_making_process = {
+pmg_complex_consumer_goods_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_complex_consumer_goods_none
@@ -94,7 +94,7 @@ REPLACE:pmg_complex_consumer_goods_making_process = {
 	}
 }
 
-REPLACE:pmg_software_making_process  = {
+pmg_software_making_process  = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_software_one_process
@@ -104,7 +104,7 @@ REPLACE:pmg_software_making_process  = {
 
 
 
-REPLACE:pmg_administration_modern_industry = {
+pmg_administration_modern_industry = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 
 	production_methods = {
@@ -115,7 +115,7 @@ REPLACE:pmg_administration_modern_industry = {
 	}
 }
 
-REPLACE:pmg_logistics_modern_industry = {
+pmg_logistics_modern_industry = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 
 	production_methods = {
@@ -127,7 +127,7 @@ REPLACE:pmg_logistics_modern_industry = {
 	}
 }
 
-REPLACE:pmg_logistics_bauxite_mine = {
+pmg_logistics_bauxite_mine = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 	production_methods = {
 		pm_hi_no_logistics
@@ -138,7 +138,7 @@ REPLACE:pmg_logistics_bauxite_mine = {
 	}
 }
 
-REPLACE:pmg_logistics_rare_earths_mine = {
+pmg_logistics_rare_earths_mine = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 	production_methods = {
 		pm_hi_no_logistics
@@ -150,7 +150,7 @@ REPLACE:pmg_logistics_rare_earths_mine = {
 }
 
 
-REPLACE:pmg_synthetic_rubber = {
+pmg_synthetic_rubber = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
 		pm_no_artificial_rubber
@@ -159,13 +159,13 @@ REPLACE:pmg_synthetic_rubber = {
 	}
 }
 
-REPLACE:pmg_highway_cars = {
+pmg_highway_cars = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
 		pm_highway_cars_one
 	}
 }
-REPLACE:pmg_highway_trucks = {
+pmg_highway_trucks = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
 		pm_highway_no_trucks
@@ -173,7 +173,7 @@ REPLACE:pmg_highway_trucks = {
 	}
 }
 
-REPLACE:pmg_synthetic_oil_making_process = {
+pmg_synthetic_oil_making_process = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
 		pm_synthetic_oil_one_process
@@ -181,7 +181,7 @@ REPLACE:pmg_synthetic_oil_making_process = {
 	}
 }
 
-REPLACE:pmg_base_building_renewable_power_plant = {
+pmg_base_building_renewable_power_plant = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
 		pm_synthetic_oil_one_process
@@ -189,7 +189,7 @@ REPLACE:pmg_base_building_renewable_power_plant = {
 	}
 }
 
-REPLACE:pmg_base_building_ut_research_institute = {
+pmg_base_building_ut_research_institute = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
 		ut_pm_research_institute_one
@@ -198,7 +198,7 @@ REPLACE:pmg_base_building_ut_research_institute = {
 	}
 }
 
-REPLACE:pmg_categories_building_ut_research_institute = {
+pmg_categories_building_ut_research_institute = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
 		ut_pm_research_institute_no_focus
@@ -208,14 +208,14 @@ REPLACE:pmg_categories_building_ut_research_institute = {
 	}
 }
 
-REPLACE:pmg_base_building_ut_nuclear_power_plant = {
+pmg_base_building_ut_nuclear_power_plant = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
 		ut_pm_nuclear_power_plant_one
 	}
 }
 
-REPLACE:pmg_base_building_ut_nuclear_power_plant_construction = {
+pmg_base_building_ut_nuclear_power_plant_construction = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
 		ut_pm_nuclear_power_plant_construction
