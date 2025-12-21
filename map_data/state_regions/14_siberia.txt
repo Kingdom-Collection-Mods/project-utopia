@@ -16,7 +16,6 @@
         building_iron_mine = 96
         building_lead_mine = 81
         building_gold_mine = 2
-        building_rare_earths_mine = 2 
         building_logging_camp = 27
     }
     resource = {
@@ -26,7 +25,7 @@
     }
     resource = {
         type = "building_rare_earths_mine"
-        discovered_amount = 6
+        discovered_amount = 8
     }
 }
 
