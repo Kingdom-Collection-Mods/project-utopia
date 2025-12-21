@@ -17,7 +17,7 @@
 	}
 
 	modifier = {
-		state_migration_push_mult = -0.25
+		#state_migration_push_mult = -0.25 modifier removed in 1.12
 		state_migration_pull_mult = -0.25
 		country_bureaucrats_pol_str_mult = 0.25
 	}
