@@ -77,12 +77,13 @@ STATE_NORRLAND = {
         building_logging_camp = 60
         building_fishing_wharf = 12
     }
-    #unique rare earths mining small
+    naval_exit_id = 3000
+
+    # calculated (rubber: 0, gold: 0, custom: 10)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 10
     }
-    naval_exit_id = 3000
 }
 
 STATE_GOTLAND = {
@@ -622,8 +623,7 @@ STATE_RHONE = {
         building_logging_camp = 14
     }
 
-    
-    #unique rare earths mining tiny
+    # calculated (rubber: 0, gold: 0, custom: 3)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 3
@@ -841,13 +841,13 @@ STATE_AQUITAINE = {
         building_logging_camp = 14
         building_fishing_wharf = 11
     }
-    
-    #unique rare earths mining tiny
+    naval_exit_id = 3029
+
+    # calculated (rubber: 0, gold: 0, custom: 3)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 3
     }
-    naval_exit_id = 3029
 }
 
 STATE_ORLEANS = {
@@ -999,7 +999,12 @@ STATE_BOHEMIA = {
         building_lead_mine = 8
         building_bauxite_mine = 4
         building_gold_mine = 5
-        building_rare_earths_mine = 5 
+    }
+
+    # calculated (rubber: 0, gold: 5, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 5
     }
 }
 
@@ -1052,9 +1057,14 @@ STATE_TYROL = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_vineyard" }
     capped_resources = {
         building_gold_mine = 2
-        building_rare_earths_mine = 2 
         building_iron_mine = 36
         building_logging_camp = 9
+    }
+
+    # calculated (rubber: 0, gold: 2, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
     }
 }
 
@@ -1363,8 +1373,8 @@ STATE_BAVARIA = {
         building_bauxite_mine = 15
         building_logging_camp = 23
     }
-    
-    #unique rare earths mining tiny
+
+    # calculated (rubber: 0, gold: 0, custom: 3)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 3
@@ -1406,8 +1416,8 @@ STATE_SAXONY = {
         building_bauxite_mine = 40
         building_logging_camp = 6
     }
-    
-    #unique rare earths mining tiny
+
+    # calculated (rubber: 0, gold: 0, custom: 3)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 3

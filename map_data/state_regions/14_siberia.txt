@@ -24,10 +24,6 @@
         depleted_type = "building_gold_mine"
         undiscovered_amount = 6
     }
-    resource = {
-        type = "building_rare_earths_mine"
-        discovered_amount = 8
-    }
 }
 
 STATE_TOMSK = {
@@ -160,11 +156,13 @@ STATE_CHUKOTKA = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 4
     }
+    naval_exit_id = 3128
+
+    # calculated (rubber: 0, gold: 4, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 4
     }
-    naval_exit_id = 3128
 }
 
 STATE_KAMCHATKA = {
@@ -190,11 +188,13 @@ STATE_KAMCHATKA = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 2
     }
+    naval_exit_id = 3118
+
+    # calculated (rubber: 0, gold: 2, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 2
     }
-    naval_exit_id = 3118
 }
 
 STATE_OKHOTSK = {
@@ -222,11 +222,13 @@ STATE_OKHOTSK = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 8
     }
+    naval_exit_id = 3118
+
+    # calculated (rubber: 0, gold: 8, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 8
     }
-    naval_exit_id = 3118
 }
 
 STATE_YAKUTSK = {
@@ -254,12 +256,14 @@ STATE_YAKUTSK = {
         undiscovered_amount = 8
     }
     resource = {
-        type = "building_rare_earths_mine"
-        discovered_amount = 8
-    }
-    resource = {
         type = "building_oil_rig"
         undiscovered_amount = 5
+    }
+
+    # calculated (rubber: 0, gold: 8, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 8
     }
 }
 

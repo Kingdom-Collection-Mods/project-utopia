@@ -373,13 +373,18 @@ STATE_GALICIA = {
     arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_vineyard" }
     capped_resources = {
         building_gold_mine = 2
-        building_rare_earths_mine = 2 
         building_iron_mine = 4
         building_logging_camp = 5
         building_fishing_wharf = 4
         building_whaling_station = 1
     }
     naval_exit_id = 3029
+
+    # calculated (rubber: 0, gold: 2, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
+    }
 }
 
 STATE_ASTURIAS = {
@@ -396,13 +401,18 @@ STATE_ASTURIAS = {
     arable_resources = { "building_maize_farm" "building_livestock_ranch" }
     capped_resources = {
         building_gold_mine = 2
-        building_rare_earths_mine = 2 
         building_coal_mine = 72
         building_iron_mine = 5
         building_logging_camp = 5
         building_fishing_wharf = 7
     }
     naval_exit_id = 3029
+
+    # calculated (rubber: 0, gold: 2, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
+    }
 }
 
 STATE_OLD_CASTILE = {
@@ -612,11 +622,16 @@ STATE_BEIRA = {
         building_bauxite_mine = 3
         building_iron_mine = 3
         building_gold_mine = 2
-        building_rare_earths_mine = 2 
         building_logging_camp = 5
         building_fishing_wharf = 4
     }
     naval_exit_id = 3029
+
+    # calculated (rubber: 0, gold: 2, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
+    }
 }
 
 STATE_ESTREMADURA = {
@@ -987,8 +1002,8 @@ STATE_WESTERN_SERBIA = {
         building_iron_mine = 24
         building_logging_camp = 13
     }
-    
-    #unique rare earths mining tiny
+
+    # calculated (rubber: 0, gold: 0, custom: 3)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 3
@@ -1229,13 +1244,18 @@ STATE_MURCIA = {
     capped_resources = {
         building_iron_mine = 7
         building_gold_mine = 2
-        building_rare_earths_mine = 2 
         building_lead_mine = 21
         building_bauxite_mine = 11
         building_logging_camp = 3
         building_fishing_wharf = 6
     }
     naval_exit_id = 3032
+
+    # calculated (rubber: 0, gold: 2, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
+    }
 }
 
 STATE_LEON = {
@@ -1272,11 +1292,16 @@ STATE_ENTRE_DOURO_E_MINHO = {
     capped_resources = {
         building_iron_mine = 26
         building_gold_mine = 2
-        building_rare_earths_mine = 2 
         building_lead_mine = 3
         building_bauxite_mine = 2
         building_logging_camp = 7
         building_fishing_wharf = 6
     }
     naval_exit_id = 3029
+
+    # calculated (rubber: 0, gold: 2, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
+    }
 }

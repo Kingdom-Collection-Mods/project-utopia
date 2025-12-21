@@ -13,13 +13,6 @@
         building_logging_camp = 9
         building_fishing_wharf = 8
     }
-
-    
-    #unique rare earths mining tiny
-    resource = {
-        type = "building_rare_earths_mine"
-        discovered_amount = 3
-    }
     naval_exit_id = 3000
 }
 
@@ -271,13 +264,13 @@ STATE_KOLA = {
         building_logging_camp = 25
         building_fishing_wharf = 10
     }
-    
-    #unique rare earths mining medium
+    naval_exit_id = 3039
+
+    # calculated (rubber: 0, gold: 0, custom: 20)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 20
     }
-    naval_exit_id = 3039
 }
 
 STATE_INGRIA = {
@@ -440,11 +433,13 @@ STATE_ARKHANGELSK = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 8
     }
+    naval_exit_id = 3039
+
+    # calculated (rubber: 0, gold: 10, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 10
     }
-    naval_exit_id = 3039
 }
 
 STATE_NOVGOROD = {
@@ -528,6 +523,8 @@ STATE_KURSK = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 3
     }
+
+    # calculated (rubber: 0, gold: 3, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 3
@@ -881,6 +878,8 @@ STATE_NORTH_CAUCASUS = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 4
     }
+
+    # calculated (rubber: 0, gold: 4, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 4
@@ -1095,6 +1094,8 @@ STATE_KRASNOYARSK = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 12
     }
+
+    # calculated (rubber: 0, gold: 12, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 12
@@ -1122,6 +1123,8 @@ STATE_ALTAI = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 3
     }
+
+    # calculated (rubber: 0, gold: 3, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 3
@@ -1148,6 +1151,8 @@ STATE_BURYATIA = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 16
     }
+
+    # calculated (rubber: 0, gold: 16, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 16
@@ -1175,6 +1180,8 @@ STATE_KOLYMA = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 16
     }
+
+    # calculated (rubber: 0, gold: 16, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 16
@@ -1203,11 +1210,13 @@ STATE_AMUR = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 18
     }
+    naval_exit_id = 3059
+
+    # calculated (rubber: 0, gold: 18, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 18
     }
-    naval_exit_id = 3059
 }
 
 STATE_CHELYABINSK = {
@@ -1233,6 +1242,8 @@ STATE_CHELYABINSK = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 9
     }
+
+    # calculated (rubber: 0, gold: 12, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 12

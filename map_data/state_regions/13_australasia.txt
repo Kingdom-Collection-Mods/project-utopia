@@ -23,10 +23,6 @@
         undiscovered_amount = 12
     }
     resource = {
-        type = "building_rare_earths_mine"
-        discovered_amount = 12
-    }
-    resource = {
         type = "building_oil_rig"
         undiscovered_amount = 30
     }
@@ -56,11 +52,13 @@ STATE_VICTORIA = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 6
     }
+    naval_exit_id = 3122
+
+    # calculated (rubber: 0, gold: 6, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 6
     }
-    naval_exit_id = 3122
 }
 
 STATE_TASMANIA = {
@@ -88,11 +86,13 @@ STATE_TASMANIA = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 6
     }
+    naval_exit_id = 3122
+
+    # calculated (rubber: 0, gold: 6, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 6
     }
-    naval_exit_id = 3122
 }
 
 STATE_QUEENSLAND = {
@@ -168,12 +168,13 @@ STATE_WESTERN_AUSTRALIA = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 8
     }
-    #unique rare earths mining extra large
+    naval_exit_id = 3123
+
+    # calculated (rubber: 0, gold: 8, custom: none)
     resource = {
         type = "building_rare_earths_mine"
-        discovered_amount = 40
+        discovered_amount = 8
     }
-    naval_exit_id = 3123
 }
 
 STATE_NORTHERN_TERRITORY = {
@@ -222,11 +223,13 @@ STATE_NORTH_ISLAND = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 4
     }
+    naval_exit_id = 3122
+
+    # calculated (rubber: 0, gold: 4, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 4
     }
-    naval_exit_id = 3122
 }
 
 STATE_SOUTH_ISLAND = {
@@ -251,10 +254,12 @@ STATE_SOUTH_ISLAND = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 6
     }
+    naval_exit_id = 3122
+
+    # calculated (rubber: 0, gold: 6, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 6
     }
-    naval_exit_id = 3122
 }
 

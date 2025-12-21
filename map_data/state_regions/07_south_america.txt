@@ -47,10 +47,6 @@ STATE_GUAYANA = {
         undiscovered_amount = 12
     }
     resource = {
-        type = "building_rare_earths_mine"
-        discovered_amount = 12
-    }
-    resource = {
         type = "building_rubber_plantation"
         undiscovered_amount = 16
     }
@@ -59,6 +55,12 @@ STATE_GUAYANA = {
         undiscovered_amount = 20
     }
     naval_exit_id = 3062
+
+    # calculated (rubber: 4, gold: 12, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 16
+    }
 }
 
 STATE_ZULIA = {
@@ -89,6 +91,12 @@ STATE_ZULIA = {
         undiscovered_amount = 100
     }
     naval_exit_id = 3025
+
+    # calculated (rubber: 1, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 1
+    }
 }
 
 STATE_MIRANDA = {
@@ -115,6 +123,12 @@ STATE_MIRANDA = {
         undiscovered_amount = 100
     }
     naval_exit_id = 3025
+
+    # calculated (rubber: 1, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 1
+    }
 }
 
 STATE_BOLIVAR = {
@@ -143,6 +157,12 @@ STATE_BOLIVAR = {
         undiscovered_amount = 50
     }
     naval_exit_id = 3025
+
+    # calculated (rubber: 4, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 4
+    }
 }
 
 STATE_ANTIOQUIA = {
@@ -172,6 +192,12 @@ STATE_ANTIOQUIA = {
         undiscovered_amount = 20
     }
     naval_exit_id = 3025
+
+    # calculated (rubber: 2, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
+    }
 }
 
 STATE_GUAVIARE = {
@@ -191,6 +217,12 @@ STATE_GUAVIARE = {
     resource = {
         type = "building_rubber_plantation"
         undiscovered_amount = 18
+    }
+
+    # calculated (rubber: 4, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 4
     }
 }
 
@@ -212,6 +244,12 @@ STATE_CUNDINAMARCA = {
     resource = {
         type = "building_rubber_plantation"
         undiscovered_amount = 10
+    }
+
+    # calculated (rubber: 2, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
     }
 }
 
@@ -238,6 +276,12 @@ STATE_CAUCA = {
         undiscovered_amount = 6
     }
     naval_exit_id = 3155
+
+    # calculated (rubber: 1, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 1
+    }
 }
 
 STATE_PASTAZA = {
@@ -311,11 +355,13 @@ STATE_ANTOFAGASTA = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 10
     }
+    naval_exit_id = 3152
+
+    # calculated (rubber: 0, gold: 10, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 10
     }
-    naval_exit_id = 3152
 }
 
 STATE_SANTA_CRUZ = {
@@ -341,6 +387,12 @@ STATE_SANTA_CRUZ = {
         type = "building_oil_rig"
         undiscovered_amount = 50
     }
+
+    # calculated (rubber: 3, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 3
+    }
 }
 
 STATE_LA_PAZ = {
@@ -356,7 +408,6 @@ STATE_LA_PAZ = {
     capped_resources = {
         building_logging_camp = 20
         building_gold_mine = 4
-        building_rare_earths_mine = 4 
     }
     resource = {
         type = "building_rubber_plantation"
@@ -365,6 +416,12 @@ STATE_LA_PAZ = {
     resource = {
         type = "building_oil_rig"
         undiscovered_amount = 50
+    }
+
+    # calculated (rubber: 2, gold: 4, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 6
     }
 }
 
@@ -384,7 +441,12 @@ STATE_POTOSI = {
         building_bauxite_mine = 6
         building_logging_camp = 9
         building_gold_mine = 4
-        building_rare_earths_mine = 4 
+    }
+
+    # calculated (rubber: 0, gold: 4, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 4
     }
 }
 
@@ -411,16 +473,17 @@ STATE_CAJAMARCA = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 4
     }
-    
-    resource = {
-        type = "building_rare_earths_mine"
-        discovered_amount = 4
-    }
     resource = {
         type = "building_oil_rig"
         undiscovered_amount = 20
     }
     naval_exit_id = 3024
+
+    # calculated (rubber: 0, gold: 4, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 4
+    }
 }
 
 STATE_LIMA = {
@@ -437,7 +500,6 @@ STATE_LIMA = {
     arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_coffee_plantation" "building_cotton_plantation" "building_dye_plantation" "building_tobacco_plantation" "building_sugar_plantation" "building_banana_plantation" "building_vineyard" }
     capped_resources = {
         building_gold_mine = 6
-        building_rare_earths_mine = 6 
         building_iron_mine = 21
         building_lead_mine = 30
         building_bauxite_mine = 15
@@ -447,6 +509,12 @@ STATE_LIMA = {
         building_fishing_wharf = 7
     }
     naval_exit_id = 3024
+
+    # calculated (rubber: 0, gold: 6, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 6
+    }
 }
 
 STATE_ICA = {
@@ -534,7 +602,12 @@ STATE_JUJUY = {
         building_bauxite_mine = 9
         building_logging_camp = 8
         building_gold_mine = 3
-        building_rare_earths_mine = 3 
+    }
+
+    # calculated (rubber: 0, gold: 3, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 3
     }
 }
 
@@ -717,8 +790,13 @@ STATE_TUCUMAN = {
         building_lead_mine = 15
         building_bauxite_mine = 8
         building_gold_mine = 3
-        building_rare_earths_mine = 3 
         building_logging_camp = 6
+    }
+
+    # calculated (rubber: 0, gold: 3, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 3
     }
 }
 
@@ -753,7 +831,6 @@ STATE_SANTIAGO = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_tobacco_plantation" "building_sugar_plantation" "building_vineyard" }
     capped_resources = {
         building_gold_mine = 5
-        building_rare_earths_mine = 5 
         building_iron_mine = 33
         building_sulfur_mine = 36
         building_bauxite_mine = 18
@@ -762,6 +839,12 @@ STATE_SANTIAGO = {
         building_fishing_wharf = 8
     }
     naval_exit_id = 3152
+
+    # calculated (rubber: 0, gold: 5, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 5
+    }
 }
 
 STATE_LOS_RIOS = {
@@ -813,14 +896,16 @@ STATE_ARAUCANIA = {
         undiscovered_amount = 4
     }
     resource = {
-        type = "building_rare_earths_mine"
-        discovered_amount = 4
-    }
-    resource = {
         type = "building_oil_rig"
         undiscovered_amount = 20
     }
     naval_exit_id = 3151
+
+    # calculated (rubber: 0, gold: 4, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 4
+    }
 }
 
 STATE_SOUTH_ATLANTIC_ISLANDS = {
@@ -871,6 +956,12 @@ STATE_PARA = {
         undiscovered_amount = 20
     }
     naval_exit_id = 3062
+
+    # calculated (rubber: 5, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 5
+    }
 }
 
 STATE_MARANHAO = {
@@ -894,6 +985,12 @@ STATE_MARANHAO = {
         discovered_amount = 16
     }
     naval_exit_id = 3062
+
+    # calculated (rubber: 4, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 4
+    }
 }
 
 STATE_AMAZONAS = {
@@ -919,6 +1016,12 @@ STATE_AMAZONAS = {
         type = "building_oil_rig"
         undiscovered_amount = 20
     }
+
+    # calculated (rubber: 6, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 6
+    }
 }
 
 STATE_ACRE = {
@@ -938,6 +1041,12 @@ STATE_ACRE = {
     resource = {
         type = "building_rubber_plantation"
         discovered_amount = 15
+    }
+
+    # calculated (rubber: 3, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 3
     }
 }
 
@@ -959,6 +1068,12 @@ STATE_GOIAS = {
     resource = {
         type = "building_rubber_plantation"
         discovered_amount = 16
+    }
+
+    # calculated (rubber: 4, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 4
     }
 }
 
@@ -984,6 +1099,12 @@ STATE_MATO_GROSSO = {
     resource = {
         type = "building_oil_rig"
         undiscovered_amount = 20
+    }
+
+    # calculated (rubber: 6, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 6
     }
 }
 
@@ -1081,6 +1202,12 @@ STATE_SAO_PAULO = {
         undiscovered_amount = 20
     }
     naval_exit_id = 3064
+
+    # calculated (rubber: 2, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
+    }
 }
 
 STATE_MINAS_GERAIS = {
@@ -1105,7 +1232,6 @@ STATE_MINAS_GERAIS = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 8
     }
-
     resource = {
         type = "building_rubber_plantation"
         discovered_amount = 7
@@ -1115,10 +1241,10 @@ STATE_MINAS_GERAIS = {
         undiscovered_amount = 20
     }
 
-    #unique rare earths mining extra large
+    # calculated (rubber: 1, gold: 10, custom: none)
     resource = {
         type = "building_rare_earths_mine"
-        discovered_amount = 40
+        discovered_amount = 11
     }
 }
 
@@ -1144,6 +1270,12 @@ STATE_RIO_DE_JANEIRO = {
         discovered_amount = 7
     }
     naval_exit_id = 3064
+
+    # calculated (rubber: 1, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 1
+    }
 }
 
 STATE_BAHIA = {
@@ -1239,6 +1371,12 @@ STATE_PIAUI = {
         discovered_amount = 4
     }
     naval_exit_id = 3063
+
+    # calculated (rubber: 1, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 1
+    }
 }
 
 STATE_PARAIBA = {

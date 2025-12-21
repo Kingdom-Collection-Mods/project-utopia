@@ -83,6 +83,12 @@ STATE_ASSAM = {
         type = "building_rubber_plantation"
         undiscovered_amount = 12
     }
+
+    # calculated (rubber: 3, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 3
+    }
 }
 
 STATE_DELHI = {
@@ -344,6 +350,12 @@ STATE_CEYLON = {
         undiscovered_amount = 12
     }
     naval_exit_id = 3049
+
+    # calculated (rubber: 3, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 3
+    }
 }
 
 STATE_INDIAN_OCEAN_TERRITORY = {
@@ -423,7 +435,6 @@ STATE_MYSORE = {
     arable_resources = { "building_rice_farm" "building_livestock_ranch" "building_coffee_plantation" "building_cotton_plantation" "building_dye_plantation" "building_tea_plantation" "building_tobacco_plantation" "building_sugar_plantation" "building_banana_plantation" "building_silk_plantation" }
     capped_resources = {
         building_gold_mine = 6
-        building_rare_earths_mine = 6 
         building_iron_mine = 24
         building_logging_camp = 14
         building_fishing_wharf = 5
@@ -433,6 +444,12 @@ STATE_MYSORE = {
         undiscovered_amount = 6
     }
     naval_exit_id = 3049
+
+    # calculated (rubber: 1, gold: 6, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 7
+    }
 }
 
 STATE_TRAVANCORE = {
@@ -459,6 +476,12 @@ STATE_TRAVANCORE = {
         undiscovered_amount = 8
     }
     naval_exit_id = 3049
+
+    # calculated (rubber: 2, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
+    }
 }
 
 STATE_MADRAS = {
@@ -483,6 +506,12 @@ STATE_MADRAS = {
         undiscovered_amount = 7
     }
     naval_exit_id = 3049
+
+    # calculated (rubber: 1, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 1
+    }
 }
 
 STATE_KURNOOL = {
@@ -535,13 +564,18 @@ STATE_BOMBAY = {
     arable_resources = { "building_rice_farm" "building_livestock_ranch" "building_coffee_plantation" "building_cotton_plantation" "building_dye_plantation" "building_tobacco_plantation" "building_sugar_plantation" "building_banana_plantation" "building_silk_plantation" "building_vineyard" }
     capped_resources = {
         building_gold_mine = 3
-        building_rare_earths_mine = 3 
         building_logging_camp = 17
         building_fishing_wharf = 12
         building_coal_mine = 12
         building_iron_mine = 23
     }
     naval_exit_id = 3048
+
+    # calculated (rubber: 0, gold: 3, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 3
+    }
 }
 # Burma
 
@@ -566,6 +600,12 @@ STATE_TENASSERIM = {
         undiscovered_amount = 16
     }
     naval_exit_id = 3051
+
+    # calculated (rubber: 4, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 4
+    }
 }
 
 STATE_KACHIN = {
@@ -583,7 +623,12 @@ STATE_KACHIN = {
         building_logging_camp = 24
         building_iron_mine = 7
         building_gold_mine = 3
-        building_rare_earths_mine = 3 
+    }
+
+    # calculated (rubber: 0, gold: 3, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 3
     }
 }
 
@@ -624,7 +669,6 @@ STATE_MANDALAY = {
     arable_resources = { "building_rice_farm" "building_livestock_ranch" "building_cotton_plantation" "building_tea_plantation" "building_sugar_plantation" "building_dye_plantation" "building_banana_plantation" "building_silk_plantation" }
     capped_resources = {
         building_gold_mine = 2
-        building_rare_earths_mine = 2 
         building_iron_mine = 16
         building_logging_camp = 20
     }
@@ -635,6 +679,12 @@ STATE_MANDALAY = {
     resource = {
         type = "building_oil_rig"
         undiscovered_amount = 26
+    }
+
+    # calculated (rubber: 5, gold: 2, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 7
     }
 }
 
@@ -663,6 +713,12 @@ STATE_PEGU = {
         undiscovered_amount = 5
     }
     naval_exit_id = 3050
+
+    # calculated (rubber: 2, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
+    }
 }
 
 STATE_ARAKAN = {
