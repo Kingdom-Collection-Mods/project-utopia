@@ -18,6 +18,14 @@ Get-ChildItem -Path $folder -Filter *.txt | ForEach-Object {
         }
     }
 
+    foreach ($block in $resourceBlocks) {
+        if ($block -match "type\s*=\s*`"$ResourceName`"") {
+            if ($block -match ' discovered_amount\s*=\s*(\d+)') {
+                $amount += [int]$matches[1]
+            }
+        }
+    }
+
     # Sum direct assignments
     foreach ($line in $content) {
         if ($line -match "$ResourceName\s*=\s*(\d+)") {
