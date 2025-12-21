@@ -1193,7 +1193,7 @@ STATE_NORTHWEST_TERRITORIES = {
     
     #unique rare earths mining small
     resource = {
-        type = "bg_rare_earths_mining"
+        type = "building_rare_earths_mine"
         discovered_amount = 10
     }
 }
