@@ -552,6 +552,7 @@ unit_combat_unit_type_modern_submarine_offense_add={
 }
 
 country_new_dawn_focus_selected_progress={
+	script_only = yes
 	decimals=1
 	color=neutral
 	game_data={
