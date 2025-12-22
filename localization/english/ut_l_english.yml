@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -604,11 +604,11 @@
 
  ideology_patriotic_fascist: "Nationalist"
  ideology_patriotic_fascist_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. #!"
- ideology_patriotic_communist_national: "Patriotic (Communist)"
+ ideology_patriotic_communist_national: "Anti-Imperialist"
  ideology_patriotic_communist_national_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_communist_core] variation.#! #r Lost if $new_dawn_phase_2_mod$ fails.#!"
  ideology_patriotic_communist_international: "Internationalist"
  ideology_patriotic_communist_international_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_communist_core] variation.#!  #r Lost if $new_dawn_phase_2_mod$ fails.#!"
- ideology_patriotic_democratic: "Patriotic (Democratic)"
+ ideology_patriotic_democratic: "Civic Patriotism"
  ideology_patriotic_democratic_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_democrat_core] variation.#!"
 
  ig_trait_urbanist_loyal: "Prestige Society"

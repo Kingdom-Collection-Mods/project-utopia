@@ -1,4 +1,4 @@
-﻿l_german:
+l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -603,18 +603,18 @@
  ut_ideology_laissez_faire_authoritarian_desc: "#lore This group believes in the free flow of trade and labor forces, favoring the judgment of markets over that of governments. Replaces [GetIdeology('ideology_laissez_faire').GetName]. [concept_ut_nd_autocrat_core] variation.#!. #r Lost if $new_dawn_phase_2_mod$ fails.#!"
 
  ideology_patriotic_fascist: "Nationalist"
- ideology_patriotic_fascist_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. #!"
- ideology_patriotic_communist_national: "Patriotic (Communist)"
- ideology_patriotic_communist_national_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_communist_core] variation.#!"
- ideology_patriotic_communist_international: "Internationalist (Communist)"
- ideology_patriotic_communist_international_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_communist_core] variation.#!"
- ideology_patriotic_democratic: "Patriotic (Democratic)"
- ideology_patriotic_democratic_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_democrat_core] variation.#!"
+ ideology_patriotic_fascist_desc: "#lore Diese Gruppe betont eine starke nationale Identität, Patriotismus und oft autoritäre Regierungsführung. Sie priorisieren nationale Einheit und können aggressive Außenpolitiken unterstützen. Ersetzt [GetIdeology('ideology_patriotic').GetName]. #!"
+ ideology_patriotic_communist_national: "Anti-Imperialistisch"
+ ideology_patriotic_communist_national_desc: "#lore Diese Gruppe betont eine starke nationale Identität, Patriotismus und oft autoritäre Regierungsführung. Sie priorisieren nationale Einheit und können aggressive Außenpolitiken unterstützen. Ersetzt [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_communist_core] variation.#! #r Lost if $new_dawn_phase_2_mod$ fails.#!"
+ ideology_patriotic_communist_international: "Internationalistisch"
+ ideology_patriotic_communist_international_desc: "#lore Diese Gruppe betont eine starke nationale Identität, Patriotismus und oft autoritäre Regierungsführung. Sie priorisieren nationale Einheit und können aggressive Außenpolitiken unterstützen. Ersetzt [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_communist_core] variation.#!  #r Lost if $new_dawn_phase_2_mod$ fails.#!"
+ ideology_patriotic_democratic: "Civic Patriotism"
+ ideology_patriotic_democratic_desc: "#lore Diese Gruppe betont eine starke nationale Identität, Patriotismus und oft autoritäre Regierungsführung. Sie priorisieren nationale Einheit und können aggressive Außenpolitiken unterstützen. Ersetzt [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_democrat_core] variation.#!"
 
  ig_trait_urbanist_loyal: "Leistungsgesellschaft"
- ig_trait_urbanist_loyal_desc: "This group advocates for the free movement of people across borders, believing it fosters cultural exchange and economic opportunity. They oppose restrictive immigration policies and emphasize international cooperation."
+ ig_trait_urbanist_loyal_desc: "Diese Gruppe setzt sich für die freie Bewegung von Menschen über Grenzen hinweg ein, da sie glaubt, dass dies den kulturellen Austausch und wirtschaftliche Chancen fördert. Sie lehnen restriktive Einwanderungspolitiken ab und betonen die internationale Zusammenarbeit."
  ig_trait_urbanist_happy: "Bildungszugang"
- ig_trait_urbanist_happy_desc: "This group champions a society driven by research, innovation, and measurable performance. They believe continuous improvement and scientific progress are key to national success."
+ ig_trait_urbanist_happy_desc: "Diese Gruppe setzt sich für eine Gesellschaft ein, die von Forschung, Innovation und messbarer Leistung angetrieben wird. Sie glauben, dass kontinuierliche Verbesserung und wissenschaftlicher Fortschritt der Schlüssel zum nationalen Erfolg sind."
  ig_trait_urbanist_unhappy: "Diskriminierung"
  ig_trait_urbanist_unhappy_desc: ""
 
