@@ -74,10 +74,6 @@ je_ut_new_dawn_communist_focus = {
 	country_new_dawn_focus_selected_progress = 0.5
 }
 
-ut_new_dawn_communist_focus = {
-	#deprecated
-}
-
 ai_great_power_buff_spread = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 150

@@ -393,10 +393,6 @@ l_english:
  je_ut_new_dawn_fascist_complete_condition_tt: "All [concept_ut_nd_milestones] complete"
  concept_ut_nd_milestones: "Milestones" 
  concept_ut_nd_milestones_desc: "Milestones are achievable one time actions. All Ideologies (except Autocracy) have unique path(s) of milestones that require different actions and provide various effects on the [concept_ut_nd_path_to_utopia]. Milestone remain activated even when losing the core ideology. \n\n #i Inspired by history #!"
- #deprecated
- concept_ut_nd_actions: "Actions"
- concept_ut_nd_actions_desc: "Repeatable Actions"
- #deprecated end
  concept_ut_nd_abilities: "Abilities"
  concept_ut_nd_abilities_desc: "One time or repeatable Actions that provide significant effects. Each Ideology has a base set and unique abilities that require different actions and provide various effects. Usually cost [concept_ut_nd_progress_points]."
 

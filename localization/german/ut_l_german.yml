@@ -393,10 +393,6 @@ l_german:
  je_ut_new_dawn_fascist_complete_condition_tt: "All [concept_ut_nd_milestones] complete"
  concept_ut_nd_milestones: "Meilensteine" 
  concept_ut_nd_milestones_desc: "Meilensteine sind einmalige Aktionen mit bestimmten Vorraussetzungen. Alle Ideologien (außer Autokratie) haben einzigartige Pfade von Meilensteinen, die unterschiedliche Aktionen erfordern und verschiedene Effekte auf den [concept_ut_nd_path_to_utopia] bieten. \n\n #i Inspiriert von der Geschichte #!"
- #deprecated
- concept_ut_nd_actions: "Actions"
- concept_ut_nd_actions_desc: "Repeatable Actions"
- #deprecated end
  concept_ut_nd_abilities: "Fähigkeiten"
  concept_ut_nd_abilities_desc: "Einmalige oder wiederholbare Fähigkeiten, die bedeutende Effekte bieten. Jede Ideologie hat einen Basissatz und einzigartige Fähigkeiten, die unterschiedliche Aktionen erfordern und verschiedene Effekte bieten - kosteten normalerweise [concept_ut_nd_progress_points]."
 
