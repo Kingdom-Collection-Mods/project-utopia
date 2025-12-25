@@ -131,15 +131,15 @@ utopia_jet_planes = {
 	convoy_cost_multiplier = 2.0
 }
 
-#deprecated
-utopia_battleship = {
-	texture = "gfx/interface/icons/goods_icons/utopia_battleships.dds"
-	cost = 100
-	category = military
-
-	prestige_factor = 10
-	traded_quantity = 3 # 280
-	convoy_cost_multiplier = 1
+soft_drinks = {
+	texture = "gfx/interface/icons/goods_icons/soft_drink.dds"
+	cost = 40
+	category = luxury
+	
+	obsession_chance = 1.5
+	prestige_factor = 3
+	convoy_cost_multiplier = 0.75
+	traded_quantity = 5 # 250
 }
 
 utopia_battleships = {

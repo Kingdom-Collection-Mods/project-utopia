@@ -336,6 +336,22 @@ goods_input_utopia_battleships_add={
 	}
 }
 
+goods_output_soft_drinks_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_soft_drinks_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
 building_commercial_factory_throughput_add={
 	decimals=0
 	color=good

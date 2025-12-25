@@ -27,6 +27,7 @@ REPLACE:pmg_distillery = {
 		pm_disabled_distillery
 		pm_pot_stills
 		pm_patent_stills
+		ut_pm_soft_drinks
 	}
 }
 
