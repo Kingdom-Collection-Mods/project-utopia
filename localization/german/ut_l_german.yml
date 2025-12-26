@@ -1296,6 +1296,7 @@
  building_synthetic_oil: "Ölraffinerie"
  building_ut_research_institute: "Forschungsinstitut"
  building_renewable_power_plant: "Erneuerbare Energieanlagen"
+ building_offshore_wind_farm: "Offshore Wind Farm"
  building_ut_nuclear_power_plant_construction_site: "Nuclear Power Plant Construction Site"
  building_ut_nuclear_power_plant: "Nuclear Power Plant"
 
@@ -1331,9 +1332,27 @@
  pmg_base_building_ut_nuclear_power_plant: "Grundwert"
  ut_pm_nuclear_power_plant_one: "Kernkraftwerk"
 
+ pmg_renewable_power_plant_wind: "Wind Power"
+ pmg_renewable_power_plant_solar: "Solar Power"
+ pmg_renewable_power_plant_hydro: "Hydro Power"
+ pmg_offshore_power_plant_wind: "Offshore Wind Power"
+
+ ut_pm_low_wind_power_plant: "Low Efficiency Wind Power Plant"
+ ut_pm_medium_wind_power_plant: "Medium Efficiency Wind Power Plant"
+ ut_pm_high_wind_power_plant: "High Efficiency Wind Power Plant"
+ ut_pm_no_solar_power_plant: "No Solar Power Plant"
+ ut_pm_low_solar_power_plant: "Low Efficiency Solar Power Plant"
+ ut_pm_medium_solar_power_plant: "Medium Efficiency Solar Power Plant"
+ ut_pm_high_solar_power_plant: "High Efficiency Solar Power Plant"
+ ut_pm_offshore_wind_power_plant: "Offshore Wind Power Plant"
+ ut_pm_hydro_power_plant: "Hydroelectric Power Plant"
+ ut_pm_no_hydro_power_plant: "No Hydroelectric Power Plant"
+
  pm_heavy_machinery_engines: "Mehrzilindermotoren"
  pm_electronics_engines: "ECU-Motoren"
  pm_computers_engines: "Komplexe ECU-Motoren"
+
+ ut_pm_soft_drinks: "Soft Drinks"
 
  pm_truck_production: "LKW-Produktion"
  pm_modern_automobiles: "Moderne Automobile"
@@ -1493,6 +1512,7 @@
  utopia_tanks: "Schwere Panzer"
  utopia_jet_planes: "Jetflugzeuge"
  utopia_battleships: "Schlachtschiffe"
+ soft_drinks: "Soft Drinks"
 
 #prestige goods
  prestige_good_generic_consumer_goods_simple: "Waschmaschinen"

@@ -378,11 +378,28 @@ building_synthetic_oil_throughput_add={
 		ai_value=0
 	}
 }
+
+building_renewable_power_plant_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
 ####
 
 
 
 state_highways_max_level_add={
+	decimals=0
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+state_building_offshore_wind_farm_max_level_add={
 	decimals=0
 	color=good
 	game_data={

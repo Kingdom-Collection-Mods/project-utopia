@@ -1634,3 +1634,242 @@ ut_pm_nuclear_power_plant_construction = {
 		}
 	}
 }
+
+ut_pm_low_wind_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_wind_1.dds"
+	
+	unlocking_geographic_regions = {
+		geographic_region_low_wind_potential
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 10 # 600
+			goods_input_heavy_machinery_add = 1
+			goods_output_electricity_add = 50 # 2400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_machinists_add = 600
+			building_employment_engineers_add = 300
+		}
+	}
+}
+
+ut_pm_medium_wind_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_wind_2.dds"
+	
+	unlocking_geographic_regions = {
+		geographic_region_medium_wind_potential
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 10 # 600
+			goods_input_heavy_machinery_add = 1
+			goods_output_electricity_add = 100 # 2400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_machinists_add = 600
+			building_employment_engineers_add = 300
+		}
+	}
+}
+
+ut_pm_high_wind_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_wind_3.dds"
+	
+	unlocking_geographic_regions = {
+		geographic_region_high_wind_potential
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 10 # 600
+			goods_input_heavy_machinery_add = 1
+			goods_output_electricity_add = 150 # 2400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_machinists_add = 600
+			building_employment_engineers_add = 300
+		}
+	}
+}
+
+ut_pm_no_solar_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_solar_0.dds"
+}
+
+ut_pm_low_solar_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_solar_1.dds"
+	
+	unlocking_geographic_regions = {
+		geographic_region_low_solar_potential
+		geographic_region_medium_solar_potential
+		geographic_region_high_solar_potential
+	}
+
+	unlocking_technologies = {
+		heavy_machinery_era_digital
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 10 # 600
+			goods_input_heavy_machinery_add = 1
+			goods_output_electricity_add = 50 # 2400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_machinists_add = 600
+			building_employment_engineers_add = 300
+		}
+	}
+}
+
+ut_pm_medium_solar_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_solar_2.dds"
+
+	unlocking_geographic_regions = {
+		geographic_region_medium_solar_potential
+		geographic_region_high_solar_potential
+	}
+
+	unlocking_technologies = {
+		heavy_machinery_era_web
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 10 # 600
+			goods_input_heavy_machinery_add = 1
+			goods_output_electricity_add = 100 # 2400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_machinists_add = 600
+			building_employment_engineers_add = 300
+		}
+	}
+}
+
+ut_pm_high_solar_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_solar_3.dds"
+
+	unlocking_geographic_regions = {
+		geographic_region_high_solar_potential
+	}
+	
+	unlocking_technologies = {
+		heavy_machinery_era_web
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 10 # 600
+			goods_input_heavy_machinery_add = 1
+			goods_output_electricity_add = 150 # 2400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_machinists_add = 600
+			building_employment_engineers_add = 300
+		}
+	}
+}
+
+ut_pm_offshore_wind_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_wind_offshore.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 10 # 600
+			goods_input_heavy_machinery_add = 1
+			goods_input_steamers_add = 1
+			goods_output_electricity_add = 200 # 2400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_machinists_add = 600
+			building_employment_engineers_add = 300
+		}
+	}
+}
+
+
+ut_pm_no_hydro_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_no_hydroelectric_plant.dds"
+}
+
+
+ut_pm_hydro_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_hydroelectric_plant.dds"
+
+	unlocking_geographic_regions = {
+		geographic_region_any_hydro_potential
+	}
+
+	building_modifiers = {
+		unscaled = {
+			goods_input_engines_add = 10 # 600
+			goods_input_heavy_machinery_add = 1
+			goods_input_steamers_add = 1
+			goods_output_electricity_add = 200 # 2400
+			
+			building_employment_laborers_add = 100
+			building_employment_machinists_add = 600
+			building_employment_engineers_add = 300
+		}
+	}
+}

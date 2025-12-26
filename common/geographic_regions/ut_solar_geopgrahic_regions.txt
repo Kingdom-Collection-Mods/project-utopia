@@ -1,0 +1,91 @@
+﻿geographic_region_high_solar_potential = {
+	short_key = "high_solar_potential_region"
+
+	strategic_regions = {
+		# Africa
+		sr:region_north_africa
+		sr:region_niger
+		sr:region_senegal
+		sr:region_nile_basin
+		sr:region_southern_africa
+		sr:region_zanj
+
+		# East Asia & Oceania
+		sr:region_indonesia
+		sr:region_indochina
+		sr:region_south_china
+		sr:region_oceania
+
+		# North America
+		sr:region_mexico
+		sr:region_caribbean
+		sr:region_central_america
+		sr:region_pacific_coast
+
+		# South America
+		sr:region_brazil
+		sr:region_gran_colombia
+		sr:region_la_plata
+	}
+}
+
+geographic_region_medium_solar_potential = {
+	short_key = "medium_solar_potential_region"
+
+	strategic_regions = {
+		# Africa
+		sr:region_ethiopia
+		sr:region_congo
+
+		# East Asia
+		sr:region_north_china
+		sr:region_japan
+		sr:region_manchuria
+
+		# Europe
+		sr:region_iberia
+		sr:region_italy
+		sr:region_occitania
+		sr:region_balkans
+		sr:region_danubia
+		sr:region_south_germany
+		sr:region_france
+
+		# North America
+		sr:region_dixie
+		sr:region_great_plains
+		sr:region_the_midwest
+
+		# South America
+		sr:region_andes
+	}
+}
+
+geographic_region_low_solar_potential = {
+	short_key = "low_solar_potential_region"
+
+	strategic_regions = {
+		# East Asia & Siberia
+		sr:region_east_siberia
+		sr:region_west_siberia
+
+		# Europe
+		sr:region_arctic_russia
+		sr:region_finland
+		sr:region_baltic
+		sr:region_baltic_states
+		sr:region_belarus
+		sr:region_poland
+		sr:region_england
+		sr:region_north_germany
+		sr:region_north_sea_coast
+		sr:region_rhine
+		sr:region_dnieper
+		sr:region_russia
+		sr:region_urals
+
+		# North America
+		sr:region_canada
+		sr:region_new_england
+	}
+}

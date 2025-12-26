@@ -517,21 +517,23 @@ building_ut_nuclear_power_plant = {
 }
 
 building_renewable_power_plant = {
-	building_group = bg_power
-	icon = "gfx/interface/icons/building_icons/power_plant.dds"
+	building_group = bg_arable_power
+	icon = "gfx/interface/icons/building_icons/energy_park.dds"
 	levels_per_mesh = 5
-
-	city_type = city
+	
+	city_type = farm
 
 	unlocking_technologies = {
-		heavy_machinery_era_digital
+		heavy_machinery_era_analog_two
 	}
 
 	production_method_groups = {
-		pmg_base_building_power_plant
+		pmg_renewable_power_plant_wind
+		pmg_renewable_power_plant_solar
+		pmg_renewable_power_plant_hydro
 	}
 
-	required_construction = construction_cost_medium
+	required_construction = construction_cost_high
 
 	ai_value = {
 		value = 1000
@@ -558,11 +560,72 @@ building_renewable_power_plant = {
 	}
 
 	can_build_government = {
-		always = no
+		always = yes
 	}
 
 	can_build_private = {
-		always = no
+		always = yes
+	}
+
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+
+building_offshore_wind_farm = {
+	building_group = bg_power
+	icon = "gfx/interface/icons/building_icons/offshore_wind_park.dds"
+	levels_per_mesh = 5
+	
+	has_max_level = yes
+
+	city_type = port
+
+	unlocking_technologies = {
+		heavy_machinery_era_digital
+	}
+
+	production_method_groups = {
+		pmg_offshore_power_plant_wind
+	}
+
+	required_construction = construction_cost_modern_industry
+
+	potential = {
+		is_coastal = yes
+	}
+
+	ai_value = {
+		value = 1000
+
+		# Need 1 level of Power Plants everywhere as its a local good and a prerequisite to enabling electricity PMs to begin with
+		if = {
+			limit = {
+				NOR = {
+					has_building = building_power_plant
+					any_scope_building = {
+						is_building_type = building_power_plant
+						is_under_construction = yes
+					}
+				}
+			}
+			add = 4000
+		}
+	}
+
+	possible = {
+		owner = {
+			NOT = { has_law = law_type:law_industry_banned }
+		}
+	}
+
+	can_build_government = {
+		always = yes
+	}
+
+	can_build_private = {
+		always = yes
 	}
 
 	ownership_type = self

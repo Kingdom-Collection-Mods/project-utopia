@@ -1,0 +1,23 @@
+﻿geographic_region_any_hydro_potential = {
+	short_key = "hydro_potential_region"
+
+	
+
+	strategic_regions = {
+		# Europe
+		sr:region_baltic          # global benchmark
+
+		# North America
+		sr:region_canada               # Quebec / BC / Labrador scale
+
+		# South America
+		sr:region_andes                # extreme head + scale
+		sr:region_la_plata             # Paraná–Paraguay mega-basin
+
+		# Africa
+		sr:region_congo                # Inga-scale, unmatched flow
+
+		# Asia
+		sr:region_south_china           # Yangtze system
+	}
+}
