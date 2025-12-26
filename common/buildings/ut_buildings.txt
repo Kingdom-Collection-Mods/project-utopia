@@ -375,8 +375,6 @@ building_synthetic_oil = {
 INJECT:building_synthetics_plant = {
 	
 	production_method_groups = {
-		pmg_synthetic_dyes
-		pmg_synthetic_silk
 		pmg_synthetic_rubber
 	}
 }
