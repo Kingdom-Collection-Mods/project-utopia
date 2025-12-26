@@ -132,7 +132,7 @@ utopia_jet_planes = {
 }
 
 soft_drinks = {
-	texture = "gfx/interface/icons/goods_icons/soft_drink.dds"
+	texture = "gfx/interface/icons/goods_icons/soft_drinks.dds"
 	cost = 40
 	category = luxury
 	

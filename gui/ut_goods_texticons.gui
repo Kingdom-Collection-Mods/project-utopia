@@ -152,3 +152,12 @@ texticon = {
 		fontsize = 18
 	}
 }
+texticon = {
+	icon = soft_drinks
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/soft_drinks.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
