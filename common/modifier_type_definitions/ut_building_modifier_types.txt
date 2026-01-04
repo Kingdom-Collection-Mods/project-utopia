@@ -352,6 +352,22 @@ goods_input_soft_drinks_add={
 	}
 }
 
+goods_output_high_voltage_electricity_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_high_voltage_electricity_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
 building_commercial_factory_throughput_add={
 	decimals=0
 	color=good

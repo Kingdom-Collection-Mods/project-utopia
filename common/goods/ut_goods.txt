@@ -151,3 +151,10 @@ utopia_battleships = {
 	traded_quantity = 3 # 280
 	convoy_cost_multiplier = 1
 }
+
+high_voltage_electricity = {
+	texture = "gfx/interface/icons/goods_icons/james_hv_power.dds"
+	cost = 30
+	category = staple
+	tradeable = no
+}

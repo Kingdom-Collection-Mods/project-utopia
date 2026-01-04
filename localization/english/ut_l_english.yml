@@ -1299,6 +1299,8 @@
  building_offshore_wind_farm: "Offshore Wind Farm"
  building_ut_nuclear_power_plant_construction_site: "Nuclear Power Plant Construction Site"
  building_ut_nuclear_power_plant: "Nuclear Power Plant"
+ building_ut_power_grid: "Power Grid"
+ building_ut_power_grid_base: "Power Grid Base"
 
  pmg_base_building_ut_research_institute: "Base"
  pmg_categories_building_ut_research_institute: "Focus"
@@ -1353,6 +1355,10 @@
  pm_computers_engines: "Complex ECU Engines"
 
  ut_pm_soft_drinks: "Soft Drinks"
+
+ pm_ut_no_high_voltage_electricity: "No High-Voltage Electricity"
+ pm_ut_high_voltage_electricity: "High-Voltage Electricity"
+ pm_ut_ultra_high_voltage_electricity: "Ultra High-Voltage Electricity"
 
  pm_truck_production: "Truck Production"
  pm_modern_automobiles: "Modern Automobiles"
@@ -1513,6 +1519,7 @@
  utopia_jet_planes: "Jet Plane"
  utopia_battleships: "Battleship"
  soft_drinks: "Soft Drinks"
+ high_voltage_electricity: "High-Voltage Electricity"
 
 #prestige goods
  prestige_good_generic_consumer_goods_simple: "Washing Machines"
