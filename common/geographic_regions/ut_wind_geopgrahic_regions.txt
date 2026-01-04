@@ -1,5 +1,5 @@
 ﻿geographic_region_high_wind_potential = {
-	short_key = "high_wind_potential_region"
+	short_key = "geographic_region_high_wind_potential"
 
 	
 
@@ -39,7 +39,7 @@
 
 
 geographic_region_medium_wind_potential = {
-	short_key = "medium_wind_potential_region"
+	short_key = "geographic_region_medium_wind_potential"
 
 	strategic_regions = {
 		# Africa
@@ -78,7 +78,7 @@ geographic_region_medium_wind_potential = {
 }
 
 geographic_region_low_wind_potential = {
-	short_key = "low_wind_potential_region"
+	short_key = "geographic_region_low_wind_potential"
 
 	strategic_regions = {
 		# Africa

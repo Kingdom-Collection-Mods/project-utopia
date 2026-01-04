@@ -155,6 +155,8 @@ utopia_battleships = {
 high_voltage_electricity = {
 	texture = "gfx/interface/icons/goods_icons/james_hv_power.dds"
 	cost = 30
-	category = staple
+	category = industrial
+
+	prestige_factor = 5
 	tradeable = no
 }

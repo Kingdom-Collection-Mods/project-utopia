@@ -265,7 +265,7 @@
  ut_nd_communist_progress_from_events: "Events and Other Effects"
  ut_new_dawn_communist_status: "Communist Ideas Are Shaping the Discourse"
  concept_ut_nd_communist_characters: "Communist Characters"
- concept_ut_nd_communist_characters_desc: "Communist character ideologies are: [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_vanguardist').GetName], and [GetIdeology('ideology_nihilist').GetName].\nIf Communist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ideology_positivist').GetName]."
+ concept_ut_nd_communist_characters_desc: "Communist [concept_character] ideologies are: [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_vanguardist').GetName], and [GetIdeology('ideology_nihilist').GetName].\nIf Communist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ideology_positivist').GetName]."
 
  je_ut_new_dawn_democrat_focus: "Democratic Focus"
  je_ut_new_dawn_democrat_focus_desc: "Democratic focus selected"
@@ -316,8 +316,8 @@
  ut_nd_democrat_progress_from_focus: "Democratic Focus"
  concept_ut_nd_democrat_interest_group_tt: "IG has leader with [concept_ut_nd_democrat_characters] ideology"
  concept_ut_nd_democrat_characters: "Democratic Characters"
- concept_ut_nd_democrat_characters_desc: "Democratic character ideologies are: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName], [GetIdeology('ideology_utopian').GetName], and [GetIdeology('ut_ideology_cosmopolitan_leader').GetName].\nIf Democrat [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_pacifist').GetName], [GetIdeology('ideology_feminist').GetName], and [GetIdeology('ideology_modernizer_leader').GetName]."
- ut_new_dawn_democrat_status: "Democratic Ideas Shape the Discourse"
+ concept_ut_nd_democrat_characters_desc: "Democratic [concept_character] ideologies are: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName], [GetIdeology('ideology_utopian').GetName], and [GetIdeology('ut_ideology_cosmopolitan_leader').GetName].\nIf Democrat [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_pacifist').GetName], [GetIdeology('ideology_feminist').GetName], and [GetIdeology('ideology_modernizer_leader').GetName]."
+ ut_new_dawn_democrat_status: "Democratic Ideas shape the Discourse"
  ut_new_dawn_democrat_status_je: "Democratic Ideas Are Taking Root"
  ut_nd_decaying_progress: "$new_dawn_phase_2_mod$"
 
@@ -436,8 +436,8 @@
  ut_nd_autocrat_progress_from_focus: "Autocratic Focus"
  ut_nd_autocrat_progress_from_events: "Events and Other Effects"
  concept_ut_nd_autocrat_characters: "Autocratic Characters"
- concept_ut_nd_autocrat_characters_desc: "Autocratic character ideologies are: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], and [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nIf Autocrat [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], and [GetIdeology('ideology_corporatist_leader').GetName]."
- ut_new_dawn_autocrat_status: "Autocratic Ideas Shape the Discourse"
+ concept_ut_nd_autocrat_characters_desc: "Autocratic [concept_character] ideologies are: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], and [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nIf Autocrat [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], and [GetIdeology('ideology_corporatist_leader').GetName]."
+ ut_new_dawn_autocrat_status: "Autocratic Ideas shape the Discourse"
 
 #Core Ideology concepts
 
@@ -472,8 +472,8 @@
  ut_nd_fascist_progress_from_focus: "Fascist Focus"
  ut_nd_fascist_progress_from_events: "Events and Other Effects"
  concept_ut_nd_fascist_characters: "Fascist Characters"
- concept_ut_nd_fascist_characters_desc: "Fascist character ideologies are: [GetIdeology('ideology_ethno_nationalist').GetName] and [GetIdeology('ideology_fascist').GetName].\nIf Fascist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ut_ideology_national_socialist_leader').GetName]."
- ut_new_dawn_fascist_status: "Fascist Ideas Shape the Discourse"
+ concept_ut_nd_fascist_characters_desc: "Fascist [concept_character] ideologies are: [GetIdeology('ideology_ethno_nationalist').GetName] and [GetIdeology('ideology_fascist').GetName].\nIf Fascist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ut_ideology_national_socialist_leader').GetName]."
+ ut_new_dawn_fascist_status: "Fascist Ideas shape the Discourse"
 
  ut_nd_multiplier_from_service_workers_0: "x0.5 Multiplier from less than 1% $service_workers$\n$ut_nd_mp_sw_note$"
  ut_nd_multiplier_from_service_workers_1: "x1.5 Multiplier from $service_workers$ share\n$ut_nd_mp_sw_note$"
@@ -1356,9 +1356,13 @@
 
  ut_pm_soft_drinks: "Soft Drinks"
 
+ pmg_ut_high_voltage_electricity: "High-Voltage"
  pm_ut_no_high_voltage_electricity: "No High-Voltage Electricity"
  pm_ut_high_voltage_electricity: "High-Voltage Electricity"
  pm_ut_ultra_high_voltage_electricity: "Ultra High-Voltage Electricity"
+
+ pmg_ut_power_grid: "Base"
+ ut_pm_power_grid_import: "Convert Electricity"
 
  pm_truck_production: "Truck Production"
  pm_modern_automobiles: "Modern Automobiles"
@@ -1701,3 +1705,13 @@
  unit_combat_unit_type_task_force_infantry_defense_add_desc: "$combat_unit_type_task_force_infantry$ $unit_defense_add$"
  unit_combat_unit_type_modern_submarine_offense_add: "$combat_unit_type_modern_submarine$ $unit_offense_add$"
  unit_combat_unit_type_modern_submarine_offense_add_desc: "$combat_unit_type_modern_submarine$ $unit_offense_add$"
+
+
+#geo regions
+ geographic_region_high_wind_potential: "High Wind Potential"
+ geographic_region_medium_wind_potential: "Medium Wind Potential"
+ geographic_region_low_wind_potential: "Low Wind Potential"
+ geographic_region_high_solar_potential: "High Solar Potential"
+ geographic_region_medium_solar_potential: "Medium Solar Potential"
+ geographic_region_low_solar_potential: "Low Solar Potential"
+ geographic_region_any_hydro_potential: "Hydro Power Potential"

@@ -1653,7 +1653,7 @@ ut_pm_low_wind_power_plant = {
 		workforce_scaled = {
 			goods_input_engines_add = 10 # 600
 			goods_input_heavy_machinery_add = 1
-			goods_output_electricity_add = 50 # 2400
+			goods_output_high_voltage_electricity_add = 50 # 2400
 		}
 
 		level_scaled = {
@@ -1681,7 +1681,7 @@ ut_pm_medium_wind_power_plant = {
 		workforce_scaled = {
 			goods_input_engines_add = 10 # 600
 			goods_input_heavy_machinery_add = 1
-			goods_output_electricity_add = 100 # 2400
+			goods_output_high_voltage_electricity_add = 100 # 2400
 		}
 
 		level_scaled = {
@@ -1709,7 +1709,7 @@ ut_pm_high_wind_power_plant = {
 		workforce_scaled = {
 			goods_input_engines_add = 10 # 600
 			goods_input_heavy_machinery_add = 1
-			goods_output_electricity_add = 150 # 2400
+			goods_output_high_voltage_electricity_add = 150 # 2400
 		}
 
 		level_scaled = {
@@ -1747,7 +1747,7 @@ ut_pm_low_solar_power_plant = {
 		workforce_scaled = {
 			goods_input_engines_add = 10 # 600
 			goods_input_heavy_machinery_add = 1
-			goods_output_electricity_add = 50 # 2400
+			goods_output_high_voltage_electricity_add = 50 # 2400
 		}
 
 		level_scaled = {
@@ -1780,7 +1780,7 @@ ut_pm_medium_solar_power_plant = {
 		workforce_scaled = {
 			goods_input_engines_add = 10 # 600
 			goods_input_heavy_machinery_add = 1
-			goods_output_electricity_add = 100 # 2400
+			goods_output_high_voltage_electricity_add = 100 # 2400
 		}
 
 		level_scaled = {
@@ -1812,7 +1812,7 @@ ut_pm_high_solar_power_plant = {
 		workforce_scaled = {
 			goods_input_engines_add = 10 # 600
 			goods_input_heavy_machinery_add = 1
-			goods_output_electricity_add = 150 # 2400
+			goods_output_high_voltage_electricity_add = 150 # 2400
 		}
 
 		level_scaled = {
@@ -1837,7 +1837,7 @@ ut_pm_offshore_wind_power_plant = {
 			goods_input_engines_add = 10 # 600
 			goods_input_heavy_machinery_add = 1
 			goods_input_steamers_add = 1
-			goods_output_electricity_add = 200 # 2400
+			goods_output_high_voltage_electricity_add = 200 # 2400
 		}
 
 		level_scaled = {
@@ -1866,7 +1866,7 @@ ut_pm_hydro_power_plant = {
 			goods_input_engines_add = 10 # 600
 			goods_input_heavy_machinery_add = 1
 			goods_input_steamers_add = 1
-			goods_output_electricity_add = 200 # 2400
+			goods_output_high_voltage_electricity_add = 200 # 2400
 			
 			building_employment_laborers_add = 100
 			building_employment_machinists_add = 600
@@ -1882,13 +1882,13 @@ ut_pm_power_grid_import = {
     building_modifiers = {
         workforce_scaled = {
             goods_input_heavy_machinery_add = 1
-            goods_input_high_voltage_electricity_add = 50
-			goods_output_electricity_add = 50
+            goods_input_high_voltage_electricity_add = 200
+			goods_output_electricity_add = 200
         }
 
         level_scaled = {
-            building_employment_machinists_add = 150
-            building_employment_engineers_add  = 100
+            building_employment_machinists_add = 700
+            building_employment_engineers_add  = 300
         }
     }
 }
@@ -1899,13 +1899,13 @@ ut_pm_power_grid_export = {
     building_modifiers = {
         workforce_scaled = {
             goods_input_heavy_machinery_add = 1
-			goods_input_electricity_add = 50
-            goods_output_high_voltage_electricity_add = 50
+			goods_input_electricity_add = 200
+            goods_output_high_voltage_electricity_add = 200
         }
 
         level_scaled = {
-            building_employment_machinists_add = 150
-            building_employment_engineers_add  = 100
+            building_employment_machinists_add = 700
+            building_employment_engineers_add  = 300
         }
     }
 
@@ -1926,7 +1926,7 @@ pm_ut_high_voltage_electricity = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_electricity_add = -100
+			goods_output_electricity_add = -100
 			goods_output_high_voltage_electricity_add = 150
 		}
 	}
@@ -1946,7 +1946,7 @@ pm_ut_ultra_high_voltage_electricity = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_electricity_add = -100
+			goods_output_electricity_add = -100
 			goods_output_high_voltage_electricity_add = 200
 		}
 	}

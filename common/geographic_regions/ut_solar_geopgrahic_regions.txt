@@ -1,5 +1,5 @@
 ﻿geographic_region_high_solar_potential = {
-	short_key = "high_solar_potential_region"
+	short_key = "geographic_region_high_solar_potential"
 
 	strategic_regions = {
 		# Africa
@@ -30,7 +30,7 @@
 }
 
 geographic_region_medium_solar_potential = {
-	short_key = "medium_solar_potential_region"
+	short_key = "geographic_region_medium_solar_potential"
 
 	strategic_regions = {
 		# Africa
@@ -62,7 +62,7 @@ geographic_region_medium_solar_potential = {
 }
 
 geographic_region_low_solar_potential = {
-	short_key = "low_solar_potential_region"
+	short_key = "geographic_region_low_solar_potential"
 
 	strategic_regions = {
 		# East Asia & Siberia
