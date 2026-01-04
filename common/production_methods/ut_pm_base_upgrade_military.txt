@@ -32,6 +32,32 @@ pm_ut_modern_tank_production = {
 	texture = "gfx/interface/icons/production_method_icons/tanks.dds"
 
 	unlocking_technologies = {
+		ut_tank_composite_armor
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_heavy_machinery_add = 1
+			goods_input_steel_add = 5
+			goods_input_aluminum_add = 5
+			goods_output_automobiles_add = -10
+
+			# output goods
+			goods_output_utopia_tanks_add = 10
+		}
+		
+		level_scaled = {
+			# employment
+			building_employment_engineers_add = 500
+		}
+	}
+}
+
+pm_ut_modern_tank_production_2 = {
+	texture = "gfx/interface/icons/production_method_icons/tanks.dds"
+
+	unlocking_technologies = {
 		ut_tank_modern
 	}
 

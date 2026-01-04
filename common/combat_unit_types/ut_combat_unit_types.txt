@@ -32,7 +32,7 @@ combat_unit_type_armored_infantry = {
         unit_devastation_mult = 0.2
     }
 
-	unlocking_technologies = { ut_tank_diesel_engine }
+	unlocking_technologies = { ut_armored_infantry }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/infantry_armored.dds"

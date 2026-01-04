@@ -1129,6 +1129,8 @@
  ut_tank_radio_desc: "Radios synchronize tank squadrons into a steel pack. Commanders coordinate pincers via Morse code while the ether overflows with interference."
  ut_tank_composite_armor: "Composite Armor"
  ut_tank_composite_armor_desc: "Ceramic plates and uranium layers welded into sandwiches. This layer-cake tech shatters shaped charges—but makes repair behind enemy lines a nightmare."
+ ut_armored_infantry: "Armored Infantry"
+ ut_armored_infantry_desc: "Infantry ride into battle on armored personnel carriers. These steel boxes protect troops from small arms fire—turning infantry assaults into mechanized blitzkriegs."
  ut_tank_modern: "Main Battle Tank"
  ut_tank_modern_desc: "120mm smoothbores fire accurately on the move. Stabilized optics, NBC protection, and multi-fuel filters make these tanks rolling fortresses of modern war."
  ut_tank_jet_engine: "Gas Turbine"
