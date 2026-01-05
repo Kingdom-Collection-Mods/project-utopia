@@ -695,6 +695,7 @@ building_ut_power_grid = {
         }
     }
     
+	#from power plants plus
     should_auto_expand = {
         occupancy >= 0.8
         OR = {
@@ -703,7 +704,7 @@ building_ut_power_grid = {
         }
         state = {
             sg:electricity = {
-                state_goods_pricier >= 0.20
+                state_goods_pricier >= 0.10
             }
             sg:high_voltage_electricity = {
                 state_goods_pricier <= 0.10
@@ -748,22 +749,5 @@ building_ut_power_grid_base = {
 			}
 			#todo maybe more
         }
-    }
-    
-    should_auto_expand = {
-        occupancy >= 0.8
-        OR = {
-            cash_reserves_ratio > 0.8
-            is_subsidized = yes
-        }
-        state = {
-            sg:electricity = {
-                state_goods_pricier >= 0.20
-            }
-            sg:high_voltage_electricity = {
-                state_goods_pricier <= 0.10
-            }
-        }
-        NOT = { is_under_construction = yes }
     }
 }

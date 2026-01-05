@@ -1893,24 +1893,24 @@ ut_pm_power_grid_import = {
     }
 }
 
-ut_pm_power_grid_export = {
-    texture = "gfx/interface/icons/production_method_icons/james_grid_power_mirrored.dds"
+# ut_pm_power_grid_export = {
+#     texture = "gfx/interface/icons/production_method_icons/james_grid_power_mirrored.dds"
     
-    building_modifiers = {
-        workforce_scaled = {
-            goods_input_heavy_machinery_add = 1
-			goods_input_electricity_add = 200
-            goods_output_high_voltage_electricity_add = 200
-        }
+#     building_modifiers = {
+#         workforce_scaled = {
+#             goods_input_heavy_machinery_add = 1
+# 			goods_input_electricity_add = 200
+#             goods_output_high_voltage_electricity_add = 200
+#         }
 
-        level_scaled = {
-            building_employment_machinists_add = 700
-            building_employment_engineers_add  = 300
-        }
-    }
+#         level_scaled = {
+#             building_employment_machinists_add = 700
+#             building_employment_engineers_add  = 300
+#         }
+#     }
 
-	required_input_goods = electricity
-}
+# 	required_input_goods = electricity
+# }
 
 
 pm_ut_no_high_voltage_electricity = {
