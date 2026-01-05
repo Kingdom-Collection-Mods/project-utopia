@@ -881,6 +881,15 @@
  ut_communism_article_desc: "Impose [GetLawType('law_council_republic').GetName] reforms on the target country."
  ut_communism_article_article_short_desc: "Spreads Communism to [TARGET_COUNTRY.GetNameNoFormatting]"
 
+ war_goal_ut_regime_change_democratic_type_name: "Democratic Regime Change" 
+ war_goal_ut_regime_change_democratic_type_desc: "Force another [concept_country] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to your own"
+ war_goal_ut_regime_change_democratic: "Democratic Regime Change in [WAR_GOAL_DRAFT.GetTarget.GetName]"
+ war_goal_ut_regime_change_democratic_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] forces [WAR_GOAL_DRAFT.GetTarget.GetName] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to their own. The following Law will be enforced:  [GetLawType('law_universal_suffrage').GetName]"
+ war_goal_ut_regime_change_communist_type_name: "Communist Regime Change" 
+ war_goal_ut_regime_change_communist_type_desc: "Force another [concept_country] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to your own"
+ war_goal_ut_regime_change_communist: "Communist Regime Change in [WAR_GOAL_DRAFT.GetTarget.GetName]"
+ war_goal_ut_regime_change_communist_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] forces [WAR_GOAL_DRAFT.GetTarget.GetName] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to their own. The following Law will be enforced:  [GetLawType('law_council_republic').GetName]"
+
  ut_fund_ideology: "Fund Ideology"
  ut_fund_ideology_action_name: "$ut_fund_ideology$"
  ut_fund_ideology_action_propose_name: "Start $ut_fund_ideology_action_name$"
