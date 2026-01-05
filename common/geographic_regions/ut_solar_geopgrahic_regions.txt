@@ -15,6 +15,12 @@
 		sr:region_indochina
 		sr:region_south_china
 		sr:region_oceania
+		sr:region_caucasus
+
+		# West Asia
+		sr:region_arabic
+		sr:region_persia
+		sr:region_central_india
 
 		# North America
 		sr:region_mexico
@@ -42,6 +48,14 @@ geographic_region_medium_solar_potential = {
 		sr:region_japan
 		sr:region_manchuria
 
+		# West Asia
+		sr:region_central_asia
+		sr:region_madras
+		sr:region_punjab
+		sr:region_himalayas
+		sr:region_anatolia
+		sr:region_bombay
+
 		# Europe
 		sr:region_iberia
 		sr:region_italy
@@ -68,6 +82,10 @@ geographic_region_low_solar_potential = {
 		# East Asia & Siberia
 		sr:region_east_siberia
 		sr:region_west_siberia
+
+		# West Asia
+		sr:region_caucasus
+		sr:region_bengal
 
 		# Europe
 		sr:region_arctic_russia
