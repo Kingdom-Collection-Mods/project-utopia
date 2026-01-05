@@ -609,8 +609,9 @@ je_ut_new_dawn_democratic_power_bloc = {
 		is_in_power_bloc = yes
 		power_bloc ?= {
 			NOT = { has_principle_group = principle_group:principle_group_exploit_members }
-			#todo some better way
-			#NOT = { has_identity = identity:identity_sovereign_empire }
+			power_bloc_leader = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
 		}
 	}
 
