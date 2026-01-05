@@ -209,7 +209,7 @@ combat_unit_type_support_systems = {
         military_formation_mobilization_speed_mult = 0.3
     }
 
-	unlocking_technologies = { ut_war_planes }
+	unlocking_technologies = { ut_war_planes_2 }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/cavalry_light_support_systems.dds"

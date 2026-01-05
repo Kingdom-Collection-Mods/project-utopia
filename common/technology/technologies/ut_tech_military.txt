@@ -552,6 +552,8 @@ ut_war_planes_2 = {
 	category = military
 
 	unlocking_technologies = {
+		ut_anti_tank 
+		#new
 		ut_war_planes
 	}
 	
@@ -587,7 +589,7 @@ ut_jet_planes = {
 
 	unlocking_technologies = {
 		ut_tank_jet_engine
-		ut_war_planes_2
+		ut_war_planes_2_1
 	}
 	
 	

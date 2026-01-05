@@ -994,6 +994,8 @@
  
  ut_mobilization_option_cas_jet_planes: "Close Air Support"
  ut_mobilization_option_cas_jet_planes_desc: "Jet-powered close air support aircraft"
+ ut_mobilization_option_cas_jet_planes_2: "Advanced Close Air Support"
+ ut_mobilization_option_cas_jet_planes_2_desc: "Advanced jet-powered close air support aircraft with improved avionics and weaponry."
  ut_mobilization_option_evac_hospitals: "Casualty Evacuation"
  ut_mobilization_option_evac_hospitals_desc: "Emergency patient evacuation of casualties from a combat zone."
 
@@ -1471,7 +1473,8 @@
  pm_precision_tools_heavy_machinery: "CNC Machines"
  pm_pre_baked_dough_pieces: "Pre-baked Dough"
 
- pm_ut_modern_tank_production: "Modern Tank Production"
+ pm_ut_modern_tank_production: "Heavy Tank Production"
+ pm_ut_modern_tank_production_2: "Modern Tank Production"
  pm_ut_jetplane_production: "Jet Production"
  ut_pm_semi_automatic_rifles: "Semi-Automatic Rifles"
  ut_pm_full_automatic_rifles: "Automatic Rifles"
@@ -1717,3 +1720,5 @@
  geographic_region_medium_solar_potential: "Medium Solar Potential"
  geographic_region_low_solar_potential: "Low Solar Potential"
  geographic_region_any_hydro_potential: "Hydro Power Potential"
+
+ utopia_mobilization_option_group: "Air Support"
