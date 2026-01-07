@@ -402,6 +402,7 @@ je_ut_new_dawn_democratic_spirit = {
 			has_law_or_variant = law_type:law_presidential_republic
 			has_law = law_type:ut_law_monarchy_democratic
 		}
+		has_law_or_variant = law_type:law_universal_suffrage
 		NOT = {
 			any_interest_group = {
 				is_in_government = yes
@@ -669,11 +670,19 @@ je_ut_new_dawn_democratic_fair_elections = {
 				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= new_dawn_ideology_required_points
 			}
 		}
-		has_law = law_type:law_universal_suffrage
+		has_law_or_variant = law_type:law_universal_suffrage
+		custom_tooltip = {
+			text = je_ut_new_dawn_democratic_fair_elections_trigger_tt
+			var:je_ut_new_dawn_democratic_fair_elections_var >= 20
+		}
 	}
 
 	effect = {
 		set_variable = je_ut_new_dawn_democratic_fair_elections_done		
+		set_variable = {
+			name = je_ut_new_dawn_democratic_fair_elections_var
+			value = 0
+		}
 		add_modifier = {
 			name = je_ut_new_dawn_democratic_fair_elections_mod
 		}

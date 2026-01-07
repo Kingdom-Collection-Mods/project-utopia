@@ -109,9 +109,9 @@
 	status_desc = {
 		first_valid = {
 			triggered_desc = {
-				desc = ut_new_dawn_democrat_status_je
+				desc = ut_new_dawn_phase_2_status_je
 				trigger = {	
-					has_journal_entry = je_ut_new_dawn_democratic
+					ut_new_dawn_has_core_trigger = yes
 				}
 			}
 			triggered_desc = { # In the lead and on the throne
@@ -433,6 +433,21 @@ je_ut_new_dawn_democratic = {
 		random_events = {
 			400 = 0
 			# 10 = french_pretenders_pulse.2
+		}
+	}
+
+	on_yearly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					has_variable = je_ut_new_dawn_democratic_fair_elections_done
+					has_law_or_variant = law_type:law_universal_suffrage
+				}
+				change_variable = {
+					name = je_ut_new_dawn_democratic_fair_elections_var
+					add = 1
+				}
+			}
 		}
 	}
 
