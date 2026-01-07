@@ -13,17 +13,6 @@ slow_tech_progress = {
 	country_weekly_innovation_max_add = 20
 }
 
-#todo remove for japan run
-new_dawn = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
-	political_movement_radicalism_add = 0.5
-	political_movement_pop_attraction_mult = 0.5
-	state_radicals_from_political_movements_mult = 0.5
-	state_radicals_and_loyalists_from_sol_change_mult = 0.25
-	country_radicals_from_legitimacy_mult = 1
-	country_law_enactment_time_mult = -0.25
-}
-
 new_dawn_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
 	political_movement_radicalism_add = 0.5
@@ -51,22 +40,16 @@ ut_new_dawn_focus_recently_changed = {
 je_ut_new_dawn_democrat_focus = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_democrat.dds
 	country_new_dawn_focus_selected_progress = 0.5
-	country_radicals_from_conquest_mult = -0.25
-	country_diplomatic_play_maneuvers_add = -25
 }
  
 je_ut_new_dawn_fascist_focus = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds
 	country_new_dawn_focus_selected_progress = 0.5
-	country_radicals_from_conquest_mult = 0.5
-	country_diplomatic_play_maneuvers_add = 50
 }
 
 je_ut_new_dawn_autocrat_focus = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_autocrat.dds
 	country_new_dawn_focus_selected_progress = 0.5
-	country_radicals_from_conquest_mult = 0.25
-	country_diplomatic_play_maneuvers_add = 50
 }
 
 je_ut_new_dawn_communist_focus = {
@@ -121,8 +104,8 @@ modern_civil_aviation_modifier_others = {
 
 je_ut_new_dawn_democratic_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_democrat.dds
-	unit_defense_mult = 0.1
-	country_production_tech_research_speed_mult = 0.02
+	unit_defense_mult = 0.05
+	country_production_tech_research_speed_mult = 0.03
 	state_pop_support_movement_liberal_mult = 0.1
 }
 
@@ -144,6 +127,8 @@ je_ut_new_dawn_autocratic_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_autocrat.dds
 	country_suppression_attraction_factor = -0.25
 	country_authority_mult = 0.5
+	country_radicals_from_conquest_mult = 0.25
+	country_diplomatic_play_maneuvers_add = 50
 }
 
 ut_new_dawn_core_autocratic_mod = {
@@ -156,10 +141,12 @@ je_ut_new_dawn_fascist_mod = {
 	country_infamy_generation_mult = -0.5
 	country_infamy_decay_mult = -0.75
 	country_diplomatic_play_maneuvers_add = 50
-	country_military_tech_research_speed_mult = 0.05
+	country_military_tech_research_speed_mult = 0.03
 	country_acceptance_no_shared_heritage_trait_add = -10
 	country_acceptance_no_shared_language_trait_add = -10
 	state_pop_support_movement_fascist_mult = 0.1
+	country_radicals_from_conquest_mult = 0.25
+	country_diplomatic_play_maneuvers_add = 50
 }
 
 ut_new_dawn_core_fascist_mod = {
@@ -172,8 +159,9 @@ je_ut_new_dawn_communist_mod = {
 	#core modifiers
 	country_leader_has_law_enactment_success_mult = 0.1
 	interest_group_ig_trade_unions_pop_attraction_mult = 0.1
-	country_society_tech_research_speed_mult = 0.05
+	country_society_tech_research_speed_mult = 0.03
 	state_pop_support_movement_socialist_mult = 0.1
+	country_radicals_from_conquest_mult = 0.25
 }
 
 ut_new_dawn_core_communist_mod = {
