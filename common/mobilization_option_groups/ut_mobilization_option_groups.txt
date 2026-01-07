@@ -1,4 +1,4 @@
-﻿utopia_mobilization_option_group = {
+﻿ut_air_support_mobilization_option_group = {
     icon = "gfx/interface/icons/generic_icons/generic_concept_icon.dds"
     weight = -100
 }

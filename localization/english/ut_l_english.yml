@@ -318,7 +318,7 @@
  concept_ut_nd_democrat_characters: "Democratic Characters"
  concept_ut_nd_democrat_characters_desc: "Democratic [concept_character] ideologies are: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName], [GetIdeology('ideology_utopian').GetName], and [GetIdeology('ut_ideology_cosmopolitan_leader').GetName].\nIf Democrat [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_pacifist').GetName], [GetIdeology('ideology_feminist').GetName], and [GetIdeology('ideology_modernizer_leader').GetName]."
  ut_new_dawn_democrat_status: "Democratic Ideas shape the Discourse"
- ut_new_dawn_democrat_status_je: "Democratic Ideas Are Taking Root"
+ ut_new_dawn_phase_2_status_je: "Ideology established"
  ut_nd_decaying_progress: "$new_dawn_phase_2_mod$"
 
  je_ut_new_dawn_democratic: "Democratic Awakening"
@@ -353,6 +353,7 @@
  je_ut_new_dawn_democratic_fair_elections_desc: "Universal suffrage forms the backbone of a just society. Institutionalizing fair elections strengthens public trust in democracy."
  je_ut_new_dawn_democratic_fair_elections_tt: "Strengthens the legitimacy of the political system through transparent and fair elections"
  je_ut_new_dawn_democratic_fair_elections_mod: "Fair Elections"
+ je_ut_new_dawn_democratic_fair_elections_trigger_tt: "Had [GetLawType('law_universal_suffrage').GetName] for at least #bold 20 years#! since #bold x#! [concept_ut_nd_milestones] has been completed (Current years: [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_democratic_fair_elections_var').GetValue|b2])"
 
  je_ut_new_dawn_democratic_final: "Utopia"
  je_ut_new_dawn_democratic_final_desc: "The culmination of democratic ideals and practices, leading to a harmonious and just society."
@@ -1177,9 +1178,10 @@
  combat_unit_type_capital_battleship: "Capital Battleships"
  combat_unit_type_modern_submarine: "Modern Submarine"
  combat_unit_type_super_carrier: "Supercarrier"
+ combat_unit_type_motorized_infantry: "Motorized Infantry"
  combat_unit_type_armored_infantry: "Armored Infantry"
  combat_unit_type_task_force_infantry: "Task Force Infantry"
- combat_unit_type_motorized_artillery: "Self-Propellent Artillery"
+ combat_unit_type_motorized_artillery: "Motorized Artillery"
  combat_unit_type_rocket_artillery: "Rocket Artillery"
  combat_unit_type_support_systems_desc: "Logistical and electronic support units that enhance the effectiveness of frontline forces."
  combat_unit_type_advanced_support_systems_desc: "Highly specialized support units equipped with cutting-edge technology to provide superior battlefield assistance."
@@ -1734,4 +1736,5 @@
  geographic_region_low_solar_potential: "Low Solar Potential"
  geographic_region_any_hydro_potential: "Hydro Power Potential"
 
- utopia_mobilization_option_group: "Air Support"
+ ut_air_support_mobilization_option_group: "Air Support"
+ ut_doctrine_mobilization_option_group: "Doctrines"

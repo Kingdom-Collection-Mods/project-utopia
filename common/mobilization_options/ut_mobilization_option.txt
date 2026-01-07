@@ -52,7 +52,7 @@
 		value = 1
 	}
 
-	group = utopia_mobilization_option_group
+	group = ut_air_support_mobilization_option_group
 }
 
 ut_mobilization_option_cas_jet_planes_2 = {
@@ -109,7 +109,7 @@ ut_mobilization_option_cas_jet_planes_2 = {
 		value = 1
 	}
 
-	group = utopia_mobilization_option_group
+	group = ut_air_support_mobilization_option_group
 }
 
 
