@@ -1,4 +1,4 @@
-﻿
+
 building_bauxite_mine = {
 	building_group = bg_bauxite_mining
 	icon = "gfx/interface/icons/building_icons/bauxite_mine.dds"
@@ -553,6 +553,12 @@ building_renewable_power_plant = {
 	possible = {
 		owner = {
 			NOT = { has_law = law_type:law_industry_banned }
+		}
+		OR = {
+			has_building = building_ut_power_grid
+			hidden_trigger = {
+				is_ai = yes
+			}
 		}
 	}
 
