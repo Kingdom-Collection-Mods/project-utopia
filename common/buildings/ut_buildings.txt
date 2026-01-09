@@ -719,7 +719,7 @@ building_ut_power_grid_base = {
 	#Utopias power grid is inspired by 1230james' PPP mod
     icon = "gfx/interface/icons/building_icons/james_PPP_power_grid.dds"
     background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
-    ownership_type = self
+    ownership_type = no_ownership
 
 	expandable = no
 	

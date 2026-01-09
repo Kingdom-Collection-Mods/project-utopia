@@ -353,6 +353,7 @@
  je_ut_new_dawn_democratic_fair_elections_desc: "Allgemeines Wahlrecht bildet das Rückgrat einer gerechten Gesellschaft. Die Institutionalisierung fairer Wahlen stärkt das Vertrauen der Bevölkerung in die Demokratie."
  je_ut_new_dawn_democratic_fair_elections_tt: "Stärkt die Legitimität des politischen Systems durch transparente und gerechte Wahlen"
  je_ut_new_dawn_democratic_fair_elections_mod: "Faire Wahlen"
+ je_ut_new_dawn_democratic_fair_elections_trigger_tt: "Had [GetLawType('law_universal_suffrage').GetName] for at least #bold 20 years#! since #bold x#! [concept_ut_nd_milestones] has been completed (Current years: [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_democratic_fair_elections_var').GetValue|b2])"
 
  je_ut_new_dawn_democratic_final: "Utopia"
  je_ut_new_dawn_democratic_final_desc: "The culmination of democratic ideals and practices, leading to a harmonious and just society."
@@ -881,6 +882,19 @@
  ut_communism_article_desc: "Zwinge das Zielland zu [GetLawType('law_council_republic').GetName] Reformen."
  ut_communism_article_article_short_desc: "Verbreitet Communismus in [TARGET_COUNTRY.GetNameNoFormatting]."
 
+ war_goal_ut_regime_change_democratic_offensive_type_name: "Democratic Regime Change" 
+ war_goal_ut_regime_change_democratic_offensive_type_desc: "Force another [concept_country] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to your own"
+ war_goal_ut_regime_change_democratic_offensive: "Democratic Regime Change in [WAR_GOAL_DRAFT.GetTarget.GetName]"
+ war_goal_ut_regime_change_democratic_offensive_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] forces [WAR_GOAL_DRAFT.GetTarget.GetName] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to their own. The following Law will be enforced:  [GetLawType('law_universal_suffrage').GetName]"
+ war_goal_ut_regime_change_democratic_defensive_type_name: "Democratic Regime Change" 
+ war_goal_ut_regime_change_democratic_defensive_type_desc: "Force another [concept_country] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to your own"
+ war_goal_ut_regime_change_democratic_defensive: "Democratic Regime Change in [WAR_GOAL_DRAFT.GetTarget.GetName]"
+ war_goal_ut_regime_change_democratic_defensive_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] forces [WAR_GOAL_DRAFT.GetTarget.GetName] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to their own. The following Law will be enforced:  [GetLawType('law_universal_suffrage').GetName]"
+ war_goal_ut_regime_change_communist_type_name: "Communist Regime Change" 
+ war_goal_ut_regime_change_communist_type_desc: "Force another [concept_country] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to your own"
+ war_goal_ut_regime_change_communist: "Communist Regime Change in [WAR_GOAL_DRAFT.GetTarget.GetName]"
+ war_goal_ut_regime_change_communist_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] forces [WAR_GOAL_DRAFT.GetTarget.GetName] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to their own. The following Law will be enforced:  [GetLawType('law_council_republic').GetName]"
+
  ut_fund_ideology: "Ideologie finanzieren"
  ut_fund_ideology_action_name: "$ut_fund_ideology$"
  ut_fund_ideology_action_propose_name: "Start $ut_fund_ideology_action_name$"
@@ -994,6 +1008,8 @@
  
  ut_mobilization_option_cas_jet_planes: "Luftnahunterstützung"
  ut_mobilization_option_cas_jet_planes_desc: "Jet-powered close air support aircraft"
+ ut_mobilization_option_cas_jet_planes_2: "Advanced Close Air Support"
+ ut_mobilization_option_cas_jet_planes_2_desc: "Advanced jet-powered close air support aircraft with improved avionics and weaponry."
  ut_mobilization_option_evac_hospitals: "Luftrettung"
  ut_mobilization_option_evac_hospitals_desc: "Emergency patient evacuation of casualties from a combat zon"
 
@@ -1129,6 +1145,8 @@
  ut_tank_radio_desc: "Funkgeräte synchronisieren Panzerschwadronen zu einem stählernen Rudel. Kommandanten koordinieren Zangenbewegungen per Morsezeichen, während der Äther vor Störsignalen überschäumt."
  ut_tank_composite_armor: "Verbundpanzerung"
  ut_tank_composite_armor_desc: "Keramikplatten und Uran-Schichten sandwichartig verschweißt. Diese Schichtkuchen-Technologie zersplittert Hohlladungsstrahlen, macht aber jede Reparatur hinterm Feind zum Albtraum."
+ ut_armored_infantry: "Armored Infantry"
+ ut_armored_infantry_desc: "Infantry ride into battle on armored personnel carriers. These steel boxes protect troops from small arms fire—turning infantry assaults into mechanized blitzkriegs."
  ut_tank_modern: "Hauptkampfpanzer"
  ut_tank_modern_desc: "120-mm-Glattrohre feuern im Fahrbetrieb präzise. Stabilisierte Zieloptiken, NBC-Schutz und Mehrstofffilter machen die Kampfpanzer zu rollenden Festungen der Moderne."
  ut_tank_jet_engine: "Gasturbine"
@@ -1160,6 +1178,7 @@
  combat_unit_type_capital_battleship: "Großschlachtschiff"
  combat_unit_type_modern_submarine: "Modernes U-Boot"
  combat_unit_type_super_carrier: "Superträger"
+ combat_unit_type_motorized_infantry: "Motorisierte Infanterie"
  combat_unit_type_armored_infantry: "Gepanzerte Infanterie"
  combat_unit_type_task_force_infantry: "Einsatzkräfte"
  combat_unit_type_motorized_artillery: "Motorisierte Artillerie"
@@ -1298,7 +1317,9 @@
  building_renewable_power_plant: "Erneuerbare Energieanlagen"
  building_offshore_wind_farm: "Offshore Wind Farm"
  building_ut_nuclear_power_plant_construction_site: "Nuclear Power Plant Construction Site"
- building_ut_nuclear_power_plant: "Nuclear Power Plant"
+ building_ut_nuclear_power_plant: "Atomkraftwerk"
+ building_ut_power_grid: "Stromnetz"
+ building_ut_power_grid_base: "Stromnetz Basis"
 
  pmg_base_building_ut_research_institute: "Grundwert"
  pmg_categories_building_ut_research_institute: "Fokus"
@@ -1353,6 +1374,14 @@
  pm_computers_engines: "Komplexe ECU-Motoren"
 
  ut_pm_soft_drinks: "Soft Drinks"
+
+ pmg_ut_high_voltage_electricity: "High-Voltage"
+ pm_ut_no_high_voltage_electricity: "No High-Voltage Electricity"
+ pm_ut_high_voltage_electricity: "High-Voltage Electricity"
+ pm_ut_ultra_high_voltage_electricity: "Ultra High-Voltage Electricity"
+
+ pmg_ut_power_grid: "Base"
+ ut_pm_power_grid_import: "Convert Electricity"
 
  pm_truck_production: "LKW-Produktion"
  pm_modern_automobiles: "Moderne Automobile"
@@ -1459,7 +1488,8 @@
  pm_precision_tools_heavy_machinery: "CNC-Maschinen"
  pm_pre_baked_dough_pieces: "Teigrohlinge"
 
- pm_ut_modern_tank_production: "Moderne Panzerproduktion"
+ pm_ut_modern_tank_production: "Schwere Panzerproduktion"
+ pm_ut_modern_tank_production_2: "Moderne Panzerproduktion"
  pm_ut_jetplane_production: "Jetproduktion"
  ut_pm_semi_automatic_rifles: "Halbautomatische Gewehre"
  ut_pm_full_automatic_rifles: "Automatische Gewehre"
@@ -1513,6 +1543,7 @@
  utopia_jet_planes: "Jetflugzeuge"
  utopia_battleships: "Schlachtschiffe"
  soft_drinks: "Soft Drinks"
+ high_voltage_electricity: "Hochspannungs-Elektrizität"
 
 #prestige goods
  prestige_good_generic_consumer_goods_simple: "Waschmaschinen"
@@ -1695,6 +1726,18 @@
  unit_combat_unit_type_modern_submarine_offense_add: "$combat_unit_type_modern_submarine$ $unit_offense_add$"
  unit_combat_unit_type_modern_submarine_offense_add_desc: "$combat_unit_type_modern_submarine$ $unit_offense_add$"
 
+
+ #geo regions
+ geographic_region_high_wind_potential: "Hohes Windpotenzial"
+ geographic_region_medium_wind_potential: "Mittleres Windpotenzial"
+ geographic_region_low_wind_potential: "Niedriges Windpotenzial"
+ geographic_region_high_solar_potential: "Hohes Solarpotenzial"
+ geographic_region_medium_solar_potential: "Mittleres Solarpotenzial"
+ geographic_region_low_solar_potential: "Niedriges Solarpotenzial"
+ geographic_region_any_hydro_potential: "Wasserkraftpotenzial"
+
+ ut_air_support_mobilization_option_group: "Luftunterstützung"
+ ut_doctrine_mobilization_option_group: "Doktrinen"
 # Demands
  demand_ban_slavery: "Forderung: Verbots der Sklaverei"
  demand_conquest: "Forderung: Eroberung"
