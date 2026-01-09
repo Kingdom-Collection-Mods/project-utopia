@@ -1600,10 +1600,10 @@ ut_pm_nuclear_power_plant_one = {
 		}
 
 		level_scaled = {
-			#sum 5000 (no admin)
+			#sum 10000 (no admin, x2)
 			building_employment_laborers_add = 2500 # Base -2000 logistics
-			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 1000
+			building_employment_machinists_add = 3000
+			building_employment_engineers_add = 4000
 			building_employment_academics_add = 500
 		}
 	}
