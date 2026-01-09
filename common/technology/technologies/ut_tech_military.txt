@@ -131,7 +131,7 @@ light_ships_rockets_machinery = {
 	}
 }
 
-light_ships_rockets_computers = {
+ut_corvettes_era_7 = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/surveillance_corvettes.dds"
 	category = military
@@ -167,13 +167,13 @@ support_ships_mine_sweeper = {
 }
 
 
-support_ships_electronic_surveillance = {
+ut_modern_submarine_era_7 = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/modern_submarine.dds"
 	category = military
 
 	unlocking_technologies = {	
-		light_ships_rockets_computers
+		ut_corvettes_era_7
 	}
 
 	modifier = {
@@ -203,7 +203,7 @@ heavy_ships_rockets_base = {
 	}
 }
 
-heavy_ships_rockets_computers = {
+ut_battleship_era_7 = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/capital_battleship.dds"
 	category = military
@@ -226,7 +226,7 @@ heavy_ships_rockets_software = {
 	category = military
 
 	unlocking_technologies = {	
-		heavy_ships_rockets_computers
+		ut_battleship_era_7
 	}
 
 	modifier = {
@@ -245,7 +245,7 @@ support_ships_rockets_base = {
 
 	unlocking_technologies = {	
 		carrier_tech
-		heavy_ships_rockets_computers
+		ut_battleship_era_7
 	}
 
 	modifier = {

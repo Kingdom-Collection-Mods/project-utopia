@@ -410,7 +410,7 @@ combat_unit_type_surveillance_corvettes = {
         military_formation_movement_speed_mult = 0.2
     }
 
-	unlocking_technologies = { light_ships_rockets_computers }
+	unlocking_technologies = { ut_corvettes_era_7 }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/light_ships_surveillance_corvettes.dds"
@@ -454,7 +454,7 @@ combat_unit_type_capital_battleship = {
         military_formation_movement_speed_mult = -0.2
     }
 
-	unlocking_technologies = { heavy_ships_rockets_computers }
+	unlocking_technologies = { ut_battleship_era_7 }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/capital_ships_capital_battleship.dds"
@@ -500,7 +500,7 @@ combat_unit_type_modern_submarine = {
         military_formation_movement_speed_mult = 0.2
     }
 
-	unlocking_technologies = { support_ships_electronic_surveillance }
+	unlocking_technologies = { ut_modern_submarine_era_7 }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/support_ships_modern_submarine.dds"

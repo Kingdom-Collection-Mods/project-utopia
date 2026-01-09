@@ -1167,9 +1167,9 @@
  ut_anti_tank_guided_software_desc: ""
  ut_military_complex: "Militärkomplex"
  ut_military_complex_desc: ""
- light_ships_rockets_computers: "Aufklärungskorvetten"
- heavy_ships_rockets_computers: "Großschlachtschiffe"
- support_ships_electronic_surveillance: "Elektronische Überwachung"
+ ut_corvettes_era_7: "Aufklärungskorvetten"
+ ut_battleship_era_7: "Großschlachtschiffe"
+ ut_modern_submarine_era_7: "Elektronische Überwachung"
 
  combat_unit_type_support_systems: "Unterstützungssysteme"
  combat_unit_type_advanced_support_systems: "Advanced Support Systems"

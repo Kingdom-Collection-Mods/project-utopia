@@ -208,6 +208,7 @@ ut_pm_military_shipbuilding_utopia = {
 
 	unlocking_technologies = {
 		light_ships_rockets_machinery
+		ut_battleship_era_7
 	}
 
 	building_modifiers = {

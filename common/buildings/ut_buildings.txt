@@ -1,4 +1,4 @@
-
+﻿
 building_bauxite_mine = {
 	building_group = bg_bauxite_mining
 	icon = "gfx/interface/icons/building_icons/bauxite_mine.dds"
