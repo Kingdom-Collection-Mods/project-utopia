@@ -1591,6 +1591,10 @@
  goods_input_utopia_jet_planes_add_desc: "The amount of @utopia_jet_planes! Jet Plane consumed by buildings"
  goods_input_utopia_battleships_add: "@utopia_battleships! Battleship input"
  goods_input_utopia_battleships_add_desc: "The amount of @utopia_battleships! Battleship consumed by buildings"
+ goods_input_high_voltage_electricity_add: "@high_voltage_electricity! High-Voltage Electricity input"
+ goods_input_high_voltage_electricity_add_desc: "The amount of @high_voltage_electricity! High-Voltage Electricity consumed by buildings"
+ goods_input_soft_drinks_add: "@soft_drinks! Soft Drinks input"
+ goods_input_soft_drinks_add_desc: "The amount of @soft_drinks! Soft Drinks consumed by buildings"
 
  goods_output_heavy_machinery_add: "@heavy_machinery! Machinery output"
  goods_output_heavy_machinery_add_desc: "The amount of @heavy_machinery! Machinery produced by buildings"
@@ -1624,6 +1628,10 @@
  goods_output_utopia_jet_planes_add_desc: "The amount of @utopia_jet_planes! Jet Plane produced by buildings"
  goods_output_utopia_battleships_add: "@utopia_battleships! Battleship output"
  goods_output_utopia_battleships_add_desc: "The amount of @utopia_battleships! Battleship produced by buildings"
+ goods_output_high_voltage_electricity_add: "@high_voltage_electricity! High-Voltage Electricity output"
+ goods_output_high_voltage_electricity_add_desc: "The amount of @high_voltage_electricity! High-Voltage Electricity produced by buildings"
+ goods_output_soft_drinks_add: "@soft_drinks! Soft Drinks output"
+ goods_output_soft_drinks_add_desc: "The amount of @soft_drinks! Soft Drinks produced by buildings"
 
  goods_output_trucks_mult: "@trucks! $trucks$ Goods Output"
  goods_output_trucks_mult_desc: "A bonus or penalty for the production of @trucks! $trucks$."
@@ -1631,7 +1639,10 @@
  state_highways_max_level_add: "Add Maximum Level for $highways$"
  state_highways_max_level_add_desc: "Increase the maximum level of $highways$ by 1."
 
-#Companies
+ state_building_offshore_wind_farm_max_level_add: "Add Maximum Level for $building_offshore_wind_farm$"
+ state_building_offshore_wind_farm_max_level_add_desc: "Increase the maximum level of $building_offshore_wind_farm$ by 1."
+
+# Companies
  ut_commercial_goods_simple_company: "ElectroNord Appliances Inc."
  ut_commercial_goods_complex_company: "ColorVision Inc."
  ut_mining_company: "CentralMetals Inc."
@@ -1678,6 +1689,9 @@
 
  building_synthetic_oil_throughput_add: "$building_synthetic_oil$ [concept_throughput]"
  building_synthetic_oil_throughput_add_desc: "A bonus or penalty to both input and output of the $building_synthetic_oil$."
+
+ building_renewable_power_plant_throughput_add: "$building_renewable_power_plant$ [concept_throughput]"
+ building_renewable_power_plant_throughput_add_desc: "A bonus or penalty to both input and output of the $building_renewable_power_plant$."
 
  smart_irrigation_building_tea_plantation: "Smart Irrigation"
  smart_irrigation_building_tobacco_plantation: "Smart Irrigation"

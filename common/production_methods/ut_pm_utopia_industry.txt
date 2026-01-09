@@ -1836,7 +1836,7 @@ ut_pm_offshore_wind_power_plant = {
 		workforce_scaled = {
 			goods_input_engines_add = 10 # 600
 			goods_input_heavy_machinery_add = 1
-			goods_output_high_voltage_electricity_add = 200 # 2400
+			goods_output_high_voltage_electricity_add = 100 # 2400
 		}
 
 		level_scaled = {

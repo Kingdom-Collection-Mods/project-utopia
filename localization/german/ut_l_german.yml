@@ -1591,6 +1591,10 @@
  goods_input_utopia_jet_planes_add_desc: "Die Menge an @utopia_jet_planes! Jet Plane, die von Gebäuden verbraucht wird"
  goods_input_utopia_battleships_add: "@utopia_battleships! Battleship Zufuhr"
  goods_input_utopia_battleships_add_desc: "Die Menge an @utopia_battleships! Battleship, die von Gebäuden verbraucht wird"
+ goods_input_high_voltage_electricity_add: "@high_voltage_electricity! High-Voltage Electricity input"
+ goods_input_high_voltage_electricity_add_desc: "The amount of @high_voltage_electricity! High-Voltage Electricity consumed by buildings"
+ goods_input_soft_drinks_add: "@soft_drinks! Soft Drinks input"
+ goods_input_soft_drinks_add_desc: "The amount of @soft_drinks! Soft Drinks consumed by buildings"
 
  goods_output_heavy_machinery_add: "@heavy_machinery! $heavy_machinery$ Ausstoß"
  goods_output_heavy_machinery_add_desc: "Die Menge an @heavy_machinery! Schwerindustriemaschinen, die das Gebäude produziert"
@@ -1624,12 +1628,19 @@
  goods_output_utopia_jet_planes_add_desc: "Die Menge an @utopia_jet_planes! Jetflugzeugen, die das Gebäude produziert"
  goods_output_utopia_battleships_add: "@utopia_battleships! $utopia_battleships$ Ausstoß"
  goods_output_utopia_battleships_add_desc: "Die Menge an @utopia_battleships! Schlachtschiffen, die das Gebäude produziert"
+ goods_output_high_voltage_electricity_add: "@high_voltage_electricity! High-Voltage Electricity output"
+ goods_output_high_voltage_electricity_add_desc: "The amount of @high_voltage_electricity! High-Voltage Electricity produced by buildings"
+ goods_output_soft_drinks_add: "@soft_drinks! Soft Drinks output"
+ goods_output_soft_drinks_add_desc: "The amount of @soft_drinks! Soft Drinks produced by buildings"
 
  goods_output_trucks_mult: "@trucks! $trucks$ Ausstoß"
  goods_output_trucks_mult_desc: "Ein Bonus oder Abzug für die Produktion von @trucks! $trucks$."
 
  state_highways_max_level_add: "Maximale Stufe für $highways$ hinzufügen"
  state_highways_max_level_add_desc: "Die maximale Stufe von $highways$ um 1 erhöhen."
+
+ state_building_offshore_wind_farm_max_level_add: "Add Maximum Level for $building_offshore_wind_farm$"
+ state_building_offshore_wind_farm_max_level_add_desc: "Increase the maximum level of $building_offshore_wind_farm$ by 1."
 
 # Companies
  ut_commercial_goods_simple_company: "ElektroNord Gerätewerk"
