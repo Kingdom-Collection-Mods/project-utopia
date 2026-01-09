@@ -75,6 +75,7 @@ chemistry = {
 	modifier = {
 		building_explosives_factory_throughput_add = 0.1
 		building_group_bg_plantations_throughput_add = 0.05
+		state_birth_rate_mult = 0.025
 	}
 	
 	ai_weight = {
@@ -90,6 +91,7 @@ high_yield_crops = {
 
 	modifier = {
 		building_group_bg_plantations_throughput_add = 0.1
+		state_birth_rate_mult = 0.025
 	}
 
 	unlocking_technologies = {	
