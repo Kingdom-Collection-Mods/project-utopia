@@ -33,39 +33,10 @@ combat_unit_type_motorized_infantry = {
         unit_devastation_mult = 0.2         #+0.1
     }
 
-	unlocking_technologies = { ut_tank_composite_armor }
+	unlocking_technologies = { ut_tank_composite_armor }    
 
     combat_unit_image = {
-        trigger = {
-            has_culture_graphics = east_asian
-        }
-        texture = "gfx/unit_illustrations/infantry_east_asian_mechanized.dds"
-    }
-
-    combat_unit_image = {
-        trigger = {
-            has_culture_graphics = south_asian
-        }
-        texture = "gfx/unit_illustrations/infantry_south_asian_mechanized.dds"
-    }
-
-    combat_unit_image = {
-        trigger = {
-            has_culture_graphics = african
-        }
-        texture = "gfx/unit_illustrations/infantry_african_mechanized.dds"
-    }
-
-    combat_unit_image = {
-        trigger = {
-            has_culture_graphics = arabic
-        }
-        texture = "gfx/unit_illustrations/infantry_arabic_mechanized.dds"
-    }
-
-    combat_unit_image = {
-		# fallback
-        texture = "gfx/unit_illustrations/infantry_eu_mechanized.dds"
+        texture = "gfx/unit_illustrations/infantry_motorized.dds"
     }
 }
 
@@ -79,6 +50,7 @@ combat_unit_type_armored_infantry = {
         goods_input_oil_add = 2             #+1
         goods_input_radios_add = 2          #+1
         goods_input_utopia_tanks_add = 2    #replaced old tanks
+        goods_input_trucks_add = 2
         goods_input_electronics_add = 2     #+1
     }
 
