@@ -293,7 +293,7 @@ ut_new_dawn_democrat_focus = {
 		}
 		
 		if = {
-			#Fascist scare if democratic them self?
+			#autocrat scare if democratic them self?
 			limit = {
 				OR = {
 					has_law = law_type:law_universal_suffrage
@@ -535,6 +535,7 @@ je_ut_new_dawn_democratic_cultural_values = {
             has_law = law_type:law_protected_speech
             has_law = law_type:law_right_of_assembly
         }
+		has_law = law_type:law_guaranteed_liberties
 		ig:ig_devout = {
 			OR = {
 				is_marginal = yes
