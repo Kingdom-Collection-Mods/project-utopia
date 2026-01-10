@@ -260,23 +260,6 @@
 					trigger_event = { id = event_new_dawn.3 popup = yes} #Coup event - fires if the leading ideology is not the one in power.
 				}
 			}
-
-			##todo figure out why yearly not working
-			if = {
-				limit = {
-					NOT = { ut_new_dawn_has_core_trigger = yes }
-					NOT = {
-						is_target_in_global_variable_list = {
-							name = ut_new_dawn_no_core_list
-							target = root
-						}
-					}
-				}
-				add_to_global_variable_list = {
-					name = ut_new_dawn_no_core_list
-					target = root
-				}
-			}
 		}
 		random_events = {
 			400 = 0
