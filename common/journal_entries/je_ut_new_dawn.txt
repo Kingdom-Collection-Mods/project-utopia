@@ -196,7 +196,7 @@
 			#progress for ai
 			if = {
 				limit = {
-					is_player = yes
+					is_player = no
 					NOT = {
 						has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 480 with one ideology. It's reset when this JE is completed, or when je_cement_the_rightful_ideology fails.
 					}
@@ -207,7 +207,7 @@
 				ut_new_dawn_communist_progress = yes
 				ut_new_dawn_autocrat_progress = yes
 			}
-			#check for idologie reached upper bound
+			#check for ideology reached upper bound
 			if = {
 				limit = {
 					scope:journal_entry = { 
