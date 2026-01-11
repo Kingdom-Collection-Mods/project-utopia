@@ -557,7 +557,9 @@ building_renewable_power_plant = {
 		OR = {
 			has_building = building_ut_power_grid
 			hidden_trigger = {
-				is_ai = yes
+				owner = {
+					is_ai = yes
+				}
 			}
 		}
 	}

@@ -159,7 +159,7 @@ utopia_mod.3 = {
 	
 	 #Only raisable remove
 	option = {
-		name = ut_tax_code_consumption_tax_lower
+		name = ut_tax_code_consumption_tax_lowered
 		trigger = {
 			has_modifier = ut_tax_code_consumption_tax_raised
 		}
