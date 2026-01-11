@@ -98,7 +98,7 @@ pm_trade_center_trade_quantity_utopia = {
 }
 
 ut_pm_film_industry_art = {
-	texture = "gfx/interface/icons/production_method_icons/film_art.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_film_industry.dds"
 
 	unlocking_technologies = {
 		movie_industry
@@ -120,7 +120,7 @@ ut_pm_film_industry_art = {
 }
 
 ut_pm_film_industry_art_principle_movement  = {
-	texture = "gfx/interface/icons/production_method_icons/film_art.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_film_industry.dds"
 	unlocking_principles = {
 		ut_principle_freedom_of_movement_4
 		ut_principle_freedom_of_movement_5
@@ -153,7 +153,7 @@ ut_pm_film_industry_art_principle_movement  = {
 }
 
 ut_pm_digital_art = {
-	texture = "gfx/interface/icons/production_method_icons/film_art.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_computer_4.dds"
 
 	unlocking_technologies = {
 		social_media

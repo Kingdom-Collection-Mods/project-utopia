@@ -426,7 +426,7 @@ pm_ut_telephones = {
 }
 
 pm_ut_radios = {
-	texture = "gfx/interface/icons/production_method_icons/radios.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_radios_2.dds"
 	unlocking_technologies = {
 		electronics
 	}	
@@ -1152,7 +1152,7 @@ ut_pm_plantations_connected_logistics = {
 }
 
 ut_pm_soft_drinks = {
-	texture = "gfx/interface/icons/production_method_icons/patent_stills.dds"
+	texture = "gfx/interface/icons/production_method_icons/vacuum_pan.dds"
 
 	unlocking_technologies = {
 		heavy_machinery_era_analog_two

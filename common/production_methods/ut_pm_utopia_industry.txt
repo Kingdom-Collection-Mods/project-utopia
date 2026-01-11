@@ -961,7 +961,7 @@ pm_aluminum_two_process = {
 }
 
 pm_aluminum_three_process = {
-	texture = "gfx/interface/icons/production_method_icons/steamworks.dds"
+	texture = "gfx/interface/icons/production_method_icons/electric_arc_process.dds"
 	unlocking_technologies = {
 		heavy_machinery_industry
 	}
