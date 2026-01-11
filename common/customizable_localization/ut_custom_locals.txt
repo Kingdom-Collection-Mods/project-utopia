@@ -143,7 +143,7 @@ ut_new_dawn_phase_1_trend = {
 	}
 
 	text = {
-		localization_key = error
+		localization_key = ut_phase_1_trend_undefined
 	}
 
 }
