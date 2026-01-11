@@ -23,10 +23,6 @@
         undiscovered_amount = 12
     }
     resource = {
-        type = "building_rare_earths_mine"
-        discovered_amount = 12
-    }
-    resource = {
         type = "building_oil_rig"
         undiscovered_amount = 30
     }
@@ -46,7 +42,7 @@ STATE_VICTORIA = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_tea_plantation" "building_sugar_plantation" "building_vineyard" }
     capped_resources = {
         building_sulfur_mine = 24
-        building_bauxite_mine = 12 
+        building_bauxite_mine = 12
         building_logging_camp = 11
         building_whaling_station = 3
         building_fishing_wharf = 8
@@ -56,11 +52,13 @@ STATE_VICTORIA = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 6
     }
+    naval_exit_id = 3122
+
+    # calculated (rubber: 0, gold: 6, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 6
     }
-    naval_exit_id = 3122
 }
 
 STATE_TASMANIA = {
@@ -78,6 +76,7 @@ STATE_TASMANIA = {
     capped_resources = {
         building_iron_mine = 15
         building_lead_mine = 15
+        building_bauxite_mine = 8
         building_logging_camp = 8
         building_whaling_station = 2
         building_fishing_wharf = 6
@@ -87,11 +86,13 @@ STATE_TASMANIA = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 6
     }
+    naval_exit_id = 3122
+
+    # calculated (rubber: 0, gold: 6, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 6
     }
-    naval_exit_id = 3122
 }
 
 STATE_QUEENSLAND = {
@@ -110,6 +111,7 @@ STATE_QUEENSLAND = {
     capped_resources = {
         building_iron_mine = 45
         building_lead_mine = 45
+        building_bauxite_mine = 23
         building_logging_camp = 5
         building_whaling_station = 3
         building_fishing_wharf = 12
@@ -133,8 +135,8 @@ STATE_SOUTH_AUSTRALIA = {
     capped_resources = {
         building_iron_mine = 30
         building_lead_mine = 36
+        building_bauxite_mine = 18
         building_sulfur_mine = 60
-        building_bauxite_mine = 30 
         building_whaling_station = 2
         building_fishing_wharf = 6
     }
@@ -166,12 +168,13 @@ STATE_WESTERN_AUSTRALIA = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 8
     }
-    #unique rare earths mining extra large
+    naval_exit_id = 3123
+
+    # calculated (rubber: 0, gold: 8, custom: none)
     resource = {
         type = "building_rare_earths_mine"
-        discovered_amount = 40
+        discovered_amount = 8
     }
-    naval_exit_id = 3123
 }
 
 STATE_NORTHERN_TERRITORY = {
@@ -220,11 +223,13 @@ STATE_NORTH_ISLAND = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 4
     }
+    naval_exit_id = 3122
+
+    # calculated (rubber: 0, gold: 4, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 4
     }
-    naval_exit_id = 3122
 }
 
 STATE_SOUTH_ISLAND = {
@@ -249,10 +254,12 @@ STATE_SOUTH_ISLAND = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 6
     }
+    naval_exit_id = 3122
+
+    # calculated (rubber: 0, gold: 6, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 6
     }
-    naval_exit_id = 3122
 }
 

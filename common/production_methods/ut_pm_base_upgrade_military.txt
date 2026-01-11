@@ -3,7 +3,7 @@ pm_ut_jetplane_production = {
 	texture = "gfx/interface/icons/production_method_icons/aeroplanes.dds"
 
 	unlocking_technologies = {
-		ut_war_planes_2
+		ut_war_planes_2_1
 	}
 
 	building_modifiers = {
@@ -29,7 +29,33 @@ pm_ut_jetplane_production = {
 }
 
 pm_ut_modern_tank_production = {
-	texture = "gfx/interface/icons/production_method_icons/tanks.dds"
+	texture = "gfx/interface/icons/production_method_icons/ut_tank_era_6.dds"
+
+	unlocking_technologies = {
+		ut_armored_infantry
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_heavy_machinery_add = 1
+			goods_input_steel_add = 5
+			goods_input_aluminum_add = 5
+			goods_output_automobiles_add = -10
+
+			# output goods
+			goods_output_utopia_tanks_add = 10
+		}
+		
+		level_scaled = {
+			# employment
+			building_employment_engineers_add = 500
+		}
+	}
+}
+
+pm_ut_modern_tank_production_2 = {
+	texture = "gfx/interface/icons/production_method_icons/ut_tank_era_7.dds"
 
 	unlocking_technologies = {
 		ut_tank_modern
@@ -58,7 +84,7 @@ ut_pm_semi_automatic_rifles = {
 	texture = "gfx/interface/icons/production_method_icons/ut_semi_auto_rifles.dds"
 
 	unlocking_technologies = {
-		ut_tank_diesel_engine
+		ut_tank_composite_armor
 	}
 
 	building_modifiers = {
@@ -182,6 +208,7 @@ ut_pm_military_shipbuilding_utopia = {
 
 	unlocking_technologies = {
 		light_ships_rockets_machinery
+		ut_battleship_era_7
 	}
 
 	building_modifiers = {

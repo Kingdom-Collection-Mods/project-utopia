@@ -6,10 +6,6 @@ concept_ut_new_dawn = {
 
 	is_loading_tip = yes
 }
-concept_ut_nd_actions = {
-	#deprecated
-	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds"
-}
 concept_ut_nd_abilities = {
 	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds"
 	is_loading_tip = yes

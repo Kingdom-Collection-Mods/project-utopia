@@ -15,6 +15,7 @@
         building_coal_mine = 84
         building_iron_mine = 96
         building_lead_mine = 81
+        building_bauxite_mine = 41
         building_gold_mine = 2
         building_logging_camp = 27
     }
@@ -22,10 +23,6 @@
         type = "building_gold_field"
         depleted_type = "building_gold_mine"
         undiscovered_amount = 6
-    }
-    resource = {
-        type = "building_rare_earths_mine"
-        discovered_amount = 8
     }
 }
 
@@ -159,11 +156,13 @@ STATE_CHUKOTKA = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 4
     }
+    naval_exit_id = 3128
+
+    # calculated (rubber: 0, gold: 4, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 4
     }
-    naval_exit_id = 3128
 }
 
 STATE_KAMCHATKA = {
@@ -189,11 +188,13 @@ STATE_KAMCHATKA = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 2
     }
+    naval_exit_id = 3118
+
+    # calculated (rubber: 0, gold: 2, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 2
     }
-    naval_exit_id = 3118
 }
 
 STATE_OKHOTSK = {
@@ -221,11 +222,13 @@ STATE_OKHOTSK = {
         depleted_type = "building_gold_mine"
         undiscovered_amount = 8
     }
+    naval_exit_id = 3118
+
+    # calculated (rubber: 0, gold: 8, custom: none)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 8
     }
-    naval_exit_id = 3118
 }
 
 STATE_YAKUTSK = {
@@ -244,6 +247,7 @@ STATE_YAKUTSK = {
     capped_resources = {
         building_coal_mine = 36
         building_lead_mine = 16
+        building_bauxite_mine = 8
         building_logging_camp = 23
     }
     resource = {
@@ -252,12 +256,14 @@ STATE_YAKUTSK = {
         undiscovered_amount = 8
     }
     resource = {
-        type = "building_rare_earths_mine"
-        discovered_amount = 8
-    }
-    resource = {
         type = "building_oil_rig"
         undiscovered_amount = 5
+    }
+
+    # calculated (rubber: 0, gold: 8, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 8
     }
 }
 
@@ -276,8 +282,8 @@ STATE_TRANS_BAIKAL = {
         building_coal_mine = 80
         building_iron_mine = 33
         building_lead_mine = 28
+        building_bauxite_mine = 14
         building_sulfur_mine = 44
-        building_bauxite_mine = 22 
         building_logging_camp = 24
     }
     resource = {

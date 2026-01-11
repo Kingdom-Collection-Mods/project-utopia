@@ -80,6 +80,7 @@ STATE_YEMEN = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_coffee_plantation" "building_tobacco_plantation" }
     capped_resources = {
         building_lead_mine = 12
+        building_bauxite_mine = 6
         building_fishing_wharf = 9
     }
     resource = {
@@ -103,7 +104,7 @@ STATE_HEDJAZ = {
     arable_resources = { "building_livestock_ranch" }
     capped_resources = {
         building_sulfur_mine = 28
-        building_bauxite_mine = 14 
+        building_bauxite_mine = 14
         building_fishing_wharf = 5
     }
     naval_exit_id = 3047
@@ -149,7 +150,7 @@ STATE_CYPRUS = {
 
 
         building_sulfur_mine = 5
-        building_bauxite_mine = 3 
+        building_bauxite_mine = 3
     }
     naval_exit_id = 3034
 }
@@ -169,7 +170,7 @@ STATE_TRANSJORDAN = {
         building_logging_camp = 2
         building_fishing_wharf = 2
         building_sulfur_mine = 12
-        building_bauxite_mine = 6 
+        building_bauxite_mine = 6
     }
     naval_exit_id = 3047
 }
@@ -190,7 +191,7 @@ STATE_PALESTINE = {
         building_logging_camp = 5
         building_fishing_wharf = 4
 		building_sulfur_mine = 9
-        building_bauxite_mine = 5 
+        building_bauxite_mine = 5
     }
     naval_exit_id = 3034
 }
@@ -280,7 +281,7 @@ STATE_MOSUL = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_tobacco_plantation" }
     capped_resources = {
         building_sulfur_mine = 36
-        building_bauxite_mine = 18 
+        building_bauxite_mine = 18
     }
     resource = {
         type = "building_oil_rig"
@@ -315,7 +316,7 @@ STATE_BASRA = {
     arable_resources = { "building_rice_farm" "building_livestock_ranch" "building_silk_plantation" "building_tobacco_plantation" }
     capped_resources = {
         building_sulfur_mine = 32
-        building_bauxite_mine = 16 
+        building_bauxite_mine = 16
         building_fishing_wharf = 6
     }
     resource = {
@@ -339,7 +340,7 @@ STATE_FARS = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_silk_plantation" "building_opium_plantation" "building_vineyard" "building_tobacco_plantation" "building_dye_plantation" }
     capped_resources = {
         building_sulfur_mine = 28
-        building_bauxite_mine = 14 
+        building_bauxite_mine = 14
         building_iron_mine = 5
         building_fishing_wharf = 7
         building_logging_camp = 6
@@ -390,7 +391,7 @@ STATE_KERMAN = {
         building_coal_mine = 14
         building_iron_mine = 40
         building_sulfur_mine = 22
-        building_bauxite_mine = 11 
+        building_bauxite_mine = 11
         building_logging_camp = 2
     }
 }
@@ -449,7 +450,7 @@ STATE_KHUZESTAN = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_opium_plantation" "building_tobacco_plantation" "building_dye_plantation" "building_sugar_plantation" "building_silk_plantation" }
     capped_resources = {
         building_sulfur_mine = 22
-        building_bauxite_mine = 11 
+        building_bauxite_mine = 11
         building_fishing_wharf = 5
         building_logging_camp = 4
     }
@@ -475,6 +476,7 @@ STATE_ISFAHAN = {
         building_coal_mine = 22
         building_iron_mine = 51
         building_lead_mine = 28
+        building_bauxite_mine = 14
         building_logging_camp = 4
     }
 }
@@ -516,6 +518,7 @@ STATE_IRAKAJEMI = {
         building_coal_mine = 28
         building_iron_mine = 7
         building_lead_mine = 10
+        building_bauxite_mine = 5
     }
 }
 
@@ -532,6 +535,7 @@ STATE_SEMNAN = {
     capped_resources = {
         building_iron_mine = 4
         building_lead_mine = 8
+        building_bauxite_mine = 4
         building_logging_camp = 4
     }
 }
@@ -550,6 +554,7 @@ STATE_TABRIZ = {
         building_coal_mine = 20
         building_iron_mine = 20
         building_lead_mine = 25
+        building_bauxite_mine = 13
         building_logging_camp = 5
     }
 }
@@ -760,6 +765,7 @@ STATE_ERZURUM = {
     capped_resources = {
         building_iron_mine = 30
         building_lead_mine = 36
+        building_bauxite_mine = 18
         building_logging_camp = 9
     }
 }

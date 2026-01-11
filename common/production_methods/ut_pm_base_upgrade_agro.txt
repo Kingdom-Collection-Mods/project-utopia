@@ -521,7 +521,7 @@ smart_irrigation_building_vineyard = {
 
 
 pm_ut_factory_farming = {
-	texture = "gfx/interface/icons/production_method_icons/mechanized_slaughtering.dds"
+	texture = "gfx/interface/icons/production_method_icons/vaccum_canning.dds"
 
 	state_modifiers = {
 		workforce_scaled = {

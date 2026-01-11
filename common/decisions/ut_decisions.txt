@@ -357,6 +357,7 @@ ut_lgbt_same_sex_unions = {
 	}
 
 	possible = {
+		always = no
 		NOT = { has_variable = ut_lgbt_same_sex_unions_var }
 	}
 
@@ -377,6 +378,7 @@ ut_lgbt_same_sex_marriage = {
 	}
 
 	possible = {
+		always = no
 		NOT = { has_variable = ut_lgbt_same_sex_marriage_var }
 	}
 
@@ -397,6 +399,7 @@ ut_lgbt_sexual_self_determination = {
 	}
 
 	possible = {
+		always = no
 		NOT = { has_variable = ut_lgbt_sexual_self_determination_var }
 	}
 

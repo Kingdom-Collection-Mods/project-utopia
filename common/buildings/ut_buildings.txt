@@ -371,12 +371,9 @@ building_synthetic_oil = {
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
 }
 
-
 INJECT:building_synthetics_plant = {
 	
 	production_method_groups = {
-		pmg_synthetic_dyes
-		pmg_synthetic_silk
 		pmg_synthetic_rubber
 	}
 }
@@ -517,21 +514,92 @@ building_ut_nuclear_power_plant = {
 }
 
 building_renewable_power_plant = {
-	building_group = bg_power
-	icon = "gfx/interface/icons/building_icons/power_plant.dds"
+	building_group = bg_arable_power
+	icon = "gfx/interface/icons/building_icons/energy_park.dds"
 	levels_per_mesh = 5
+	
+	city_type = farm
 
-	city_type = city
+	unlocking_technologies = {
+		heavy_machinery_era_analog_two
+	}
+
+	production_method_groups = {
+		pmg_renewable_power_plant_wind
+		pmg_renewable_power_plant_solar
+		pmg_renewable_power_plant_hydro
+	}
+
+	required_construction = construction_cost_high
+
+	ai_value = {
+		value = 1000
+
+		# Need 1 level of Power Plants everywhere as its a local good and a prerequisite to enabling electricity PMs to begin with
+		if = {
+			limit = {
+				NOR = {
+					has_building = building_power_plant
+					any_scope_building = {
+						is_building_type = building_power_plant
+						is_under_construction = yes
+					}
+				}
+			}
+			add = 4000
+		}
+	}
+
+	possible = {
+		owner = {
+			NOT = { has_law = law_type:law_industry_banned }
+		}
+		OR = {
+			has_building = building_ut_power_grid
+			hidden_trigger = {
+				owner = {
+					is_ai = yes
+				}
+			}
+		}
+	}
+
+	can_build_government = {
+		always = yes
+	}
+
+	can_build_private = {
+		always = yes
+	}
+
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+
+building_offshore_wind_farm = {
+	building_group = bg_power
+	icon = "gfx/interface/icons/building_icons/offshore_wind_park.dds"
+	levels_per_mesh = 5
+	
+	has_max_level = yes
+
+	city_type = port
 
 	unlocking_technologies = {
 		heavy_machinery_era_digital
 	}
 
 	production_method_groups = {
-		pmg_base_building_power_plant
+		pmg_offshore_power_plant_wind
 	}
 
-	required_construction = construction_cost_medium
+	required_construction = construction_cost_modern_industry
+
+	potential = {
+		is_coastal = yes
+	}
 
 	ai_value = {
 		value = 1000
@@ -558,14 +626,136 @@ building_renewable_power_plant = {
 	}
 
 	can_build_government = {
-		always = no
+		always = yes
 	}
 
 	can_build_private = {
-		always = no
+		always = yes
 	}
 
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+
+INJECT:building_power_plant = {
+	production_method_groups = {
+		pmg_ut_high_voltage_electricity
+	}
+}
+
+building_ut_power_grid = {
+    building_group = bg_power
+	#Utopias power grid is inspired by 1230james' PPP mod
+    icon = "gfx/interface/icons/building_icons/james_PPP_power_grid.dds"
+    background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+    ownership_type = self
+    
+    unlocking_technologies = {
+        heavy_machinery_era_analog 
+    }
+
+    production_method_groups = {
+        pmg_ut_power_grid
+    }
+    
+    required_construction = construction_cost_medium
+    
+    ai_value = {
+        value = 1000 
+
+        if = {
+            limit = {
+                NOR = {
+                    has_building = building_ut_power_grid
+                    any_scope_building = {
+                        is_building_type = building_ut_power_grid
+                        is_under_construction = yes
+                    }
+                }
+            }
+            add = 4000
+        }
+    }
+
+    possible = {
+        owner = {
+            NOT = { has_law_or_variant = law_type:law_industry_banned }
+        }
+        OR = {
+			is_capital = yes
+			has_building = building_ut_power_grid_base
+            any_neighbouring_state = {
+                owner ?= prev.owner
+				any_scope_building = {
+					is_building_type = building_ut_power_grid
+
+				}
+                # state_has_building_type_levels = {
+                #     target = bt:building_ut_power_grid
+                #     value  > 0
+                # }
+            }
+			owner = {
+				is_ai = yes
+			}
+        }
+    }
+    
+	#from power plants plus
+    should_auto_expand = {
+        occupancy >= 0.8
+        OR = {
+            cash_reserves_ratio > 0.8
+            is_subsidized = yes
+        }
+        state = {
+            sg:electricity = {
+                state_goods_pricier >= 0.10
+            }
+            sg:high_voltage_electricity = {
+                state_goods_pricier <= 0.10
+            }
+        }
+        NOT = { is_under_construction = yes }
+    }
+}
+
+building_ut_power_grid_base = {
+    building_group = bg_government
+	#Utopias power grid is inspired by 1230james' PPP mod
+    icon = "gfx/interface/icons/building_icons/james_PPP_power_grid.dds"
+    background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+    ownership_type = no_ownership
+
+	expandable = no
+	
+    unlocking_technologies = {
+        heavy_machinery_era_analog 
+    }
+
+    production_method_groups = {
+		pmg_base_building_skyscraper
+    }
+    
+    required_construction = construction_cost_modern_monument
+    
+    ai_value = {
+        value = 0
+		#ai can ignore restrictions
+    }
+
+    possible = {
+        owner = {
+            NOT = { has_law_or_variant = law_type:law_industry_banned }
+        }
+        OR = {
+			is_coastal = yes
+			NOT = {
+				has_building = building_ut_power_grid
+			}
+			#todo maybe more
+        }
+    }
 }

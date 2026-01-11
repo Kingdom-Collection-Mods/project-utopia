@@ -54,6 +54,10 @@
 			set_global_variable = je_ut_new_dawn_global_started
 			set_variable = je_ut_new_dawn_first_started
 		}
+		add_to_global_variable_list = {
+			name = ut_new_dawn_no_core_list
+			target = root
+		}
 	}
 
 	scripted_button = ut_new_dawn_fascist_focus
@@ -103,15 +107,20 @@
 
                 custom_tooltip = "ut_new_dawn_communist_list_entry" # for each print a line
             }
+            every_in_global_list = {
+                variable = ut_new_dawn_no_core_list
+				
+				custom_tooltip = "ut_new_dawn_no_core_list_entry" # for each print a line
+            }
 		}
 	}
 
 	status_desc = {
 		first_valid = {
 			triggered_desc = {
-				desc = ut_new_dawn_democrat_status_je
+				desc = ut_new_dawn_phase_2_status_je
 				trigger = {	
-					has_journal_entry = je_ut_new_dawn_democratic
+					ut_new_dawn_has_core_trigger = yes
 				}
 			}
 			triggered_desc = { # In the lead and on the throne
@@ -168,6 +177,7 @@
 		effect = {
 			if = {
 				limit = {
+					is_player = yes
 					NOT = {
 						has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 480 with one ideology. It's reset when this JE is completed, or when je_cement_the_rightful_ideology fails.
 					}
@@ -183,6 +193,21 @@
 
 	on_monthly_pulse = {
 		effect = {
+			#progress for ai
+			if = {
+				limit = {
+					is_player = no
+					NOT = {
+						has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 480 with one ideology. It's reset when this JE is completed, or when je_cement_the_rightful_ideology fails.
+					}
+				}
+				#Calculates how much the each core ideology will get next month. Updates weekly, but is not added until the monthly.
+				ut_new_dawn_fascist_progress = yes 
+				ut_new_dawn_democrat_progress = yes
+				ut_new_dawn_communist_progress = yes
+				ut_new_dawn_autocrat_progress = yes
+			}
+			#check for ideology reached upper bound
 			if = {
 				limit = {
 					scope:journal_entry = { 
@@ -252,6 +277,50 @@
 		}
 	}
 
+	on_yearly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { ut_new_dawn_has_core_trigger = yes }
+					NOT = {
+						is_target_in_global_variable_list = {
+							name = ut_new_dawn_no_core_list
+							target = root
+						}
+					}
+				}
+				add_to_global_variable_list = {
+					name = ut_new_dawn_no_core_list
+					target = root
+				}
+			}
+			if = {
+				limit = {
+					ut_new_dawn_has_core_trigger = yes
+					is_target_in_global_variable_list = {
+						name = ut_new_dawn_no_core_list
+						target = root
+					}
+				}
+				remove_list_global_variable = {
+					name = ut_new_dawn_no_core_list
+					target = root
+				}
+			}
+			#added on 11.1.26 to fix missing base, bug probably added in 9.1, can be removed later
+			if = {
+				limit = { 
+					ig:ig_urbanists = {
+						NOT = { has_ideology = ideology:ideology_urbanist_economy_base }
+					}
+				}
+				ig:ig_urbanists = {
+					add_ideology = ideology_urbanist_economy_base
+				}
+			}
+		}
+	}
+
 	weight = 100
 
 	should_be_pinned_by_default = yes
@@ -274,6 +343,10 @@ je_ut_new_dawn_democratic = {
 		remove_modifier = je_ut_new_dawn_autocrat_focus
 		remove_modifier = je_ut_new_dawn_communist_focus
 		remove_modifier = je_ut_new_dawn_fascist_focus
+		remove_list_global_variable = {
+			name = ut_new_dawn_no_core_list
+			target = root
+		}
 		
 		if = {
 			limit = {
@@ -436,6 +509,21 @@ je_ut_new_dawn_democratic = {
 		}
 	}
 
+	on_yearly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					has_variable = je_ut_new_dawn_democratic_fair_elections_done
+					has_law_or_variant = law_type:law_universal_suffrage
+				}
+				change_variable = {
+					name = je_ut_new_dawn_democratic_fair_elections_var
+					add = 1
+				}
+			}
+		}
+	}
+
 	fail = {
 		custom_tooltip = {
 			text = je_ut_new_dawn_critical_lower_bound_fail_tt
@@ -490,6 +578,10 @@ je_ut_new_dawn_autocratic = {
 		remove_modifier = je_ut_new_dawn_autocrat_focus
 		remove_modifier = je_ut_new_dawn_communist_focus
 		remove_modifier = je_ut_new_dawn_fascist_focus
+		remove_list_global_variable = {
+			name = ut_new_dawn_no_core_list
+			target = root
+		}
 		
 		if = {
 			limit = {
@@ -655,6 +747,10 @@ je_ut_new_dawn_fascist = {
 		remove_modifier = je_ut_new_dawn_autocrat_focus
 		remove_modifier = je_ut_new_dawn_communist_focus
 		remove_modifier = je_ut_new_dawn_fascist_focus
+		remove_list_global_variable = {
+			name = ut_new_dawn_no_core_list
+			target = root
+		}
 
 		if = {
 			limit = {
@@ -878,6 +974,10 @@ je_ut_new_dawn_communist = {
 		remove_modifier = je_ut_new_dawn_autocrat_focus
 		remove_modifier = je_ut_new_dawn_communist_focus
 		remove_modifier = je_ut_new_dawn_fascist_focus
+		remove_list_global_variable = {
+			name = ut_new_dawn_no_core_list
+			target = root
+		}
 		
 		if = {
 			limit = {

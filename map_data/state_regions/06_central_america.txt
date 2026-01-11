@@ -43,6 +43,12 @@ STATE_GUATEMALA = {
         undiscovered_amount = 20
     }
     naval_exit_id = 3026
+
+    # calculated (rubber: 5, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 5
+    }
 }
 
 STATE_HONDURAS = {
@@ -66,6 +72,12 @@ STATE_HONDURAS = {
         undiscovered_amount = 16
     }
     naval_exit_id = 3026
+
+    # calculated (rubber: 4, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 4
+    }
 }
 
 STATE_NICARAGUA = {
@@ -89,6 +101,12 @@ STATE_NICARAGUA = {
         undiscovered_amount = 14
     }
     naval_exit_id = 3026
+
+    # calculated (rubber: 3, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 3
+    }
 }
 
 STATE_COSTA_RICA = {
@@ -113,6 +131,12 @@ STATE_COSTA_RICA = {
         undiscovered_amount = 12
     }
     naval_exit_id = 3026
+
+    # calculated (rubber: 3, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 3
+    }
 }
 
 STATE_PANAMA = {
@@ -137,6 +161,12 @@ STATE_PANAMA = {
         undiscovered_amount = 12
     }
     naval_exit_id = 3026
+
+    # calculated (rubber: 3, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 3
+    }
 }
 
 STATE_HAITI = {
@@ -160,6 +190,12 @@ STATE_HAITI = {
         undiscovered_amount = 12
     }
     naval_exit_id = 3061
+
+    # calculated (rubber: 3, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 3
+    }
 }
 
 STATE_SANTO_DOMINGO = {
@@ -183,6 +219,12 @@ STATE_SANTO_DOMINGO = {
         undiscovered_amount = 12
     }
     naval_exit_id = 3061
+
+    # calculated (rubber: 3, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 3
+    }
 }
 
 STATE_PUERTO_RICO = {
@@ -206,6 +248,12 @@ STATE_PUERTO_RICO = {
         undiscovered_amount = 6
     }
     naval_exit_id = 3025
+
+    # calculated (rubber: 1, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 1
+    }
 }
 
 STATE_BAHAMAS = {
@@ -283,7 +331,7 @@ STATE_WESTERN_CUBA = {
         building_logging_camp = 4
         building_fishing_wharf = 7
         building_sulfur_mine = 3
-        building_bauxite_mine = 2 
+        building_bauxite_mine = 2
     }
     resource = {
         type = "building_rubber_plantation"
@@ -294,6 +342,12 @@ STATE_WESTERN_CUBA = {
         undiscovered_amount = 10
     }
     naval_exit_id = 3061
+
+    # calculated (rubber: 2, gold: 0, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
+    }
 }
 
 STATE_EASTERN_CUBA = {
@@ -312,8 +366,8 @@ STATE_EASTERN_CUBA = {
         building_coal_mine = 10
         building_iron_mine = 21
         building_lead_mine = 4
+        building_bauxite_mine = 2
         building_sulfur_mine = 2
-        building_bauxite_mine = 1 
         building_logging_camp = 8
         building_fishing_wharf = 3
     }

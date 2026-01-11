@@ -8,7 +8,35 @@
 ### Infantry
 INJECT:combat_unit_type_mechanized_infantry = {
     upgrades = {
-        combat_unit_type_armored_infantry
+        combat_unit_type_motorized_infantry
+    }
+}
+
+combat_unit_type_motorized_infantry = {
+    group = combat_unit_group_infantry
+	max_manpower = 1000
+
+    upkeep_modifier = {
+        goods_input_utopia_arms_add = 3     #replaced small arms
+        goods_input_ammunition_add = 3
+        goods_input_oil_add = 1
+        goods_input_radios_add = 1
+        goods_input_tanks_add = 2           #+1
+        goods_input_trucks_add = 2          #new
+        goods_input_electronics_add = 1     #new
+    }
+
+    battle_modifier = {
+        unit_offense_add = 70               #+20
+        unit_defense_add = 70               #+10
+        unit_morale_loss_add = 4
+        unit_devastation_mult = 0.2         #+0.1
+    }
+
+	unlocking_technologies = { ut_tank_composite_armor }    
+
+    combat_unit_image = {
+        texture = "gfx/unit_illustrations/infantry_motorized.dds"
     }
 }
 
@@ -17,22 +45,27 @@ combat_unit_type_armored_infantry = {
 	max_manpower = 1000
 
     upkeep_modifier = {
-        goods_input_utopia_arms_add = 3
+        goods_input_utopia_arms_add = 3     #replaced small arms
         goods_input_ammunition_add = 3
-        goods_input_oil_add = 1
-        goods_input_radios_add = 1
-        goods_input_utopia_tanks_add = 2
-        goods_input_electronics_add = 2
-    }
-    
-    battle_modifier = {
-        unit_offense_add = 50
-        unit_defense_add = 65
-        unit_morale_loss_add = 3
-        unit_devastation_mult = 0.2
+        goods_input_oil_add = 2             #+1
+        goods_input_radios_add = 2          #+1
+        goods_input_utopia_tanks_add = 2    #replaced old tanks
+        goods_input_trucks_add = 2
+        goods_input_electronics_add = 2     #+1
     }
 
-	unlocking_technologies = { ut_tank_diesel_engine }
+    battle_modifier = {
+        unit_offense_add = 80               #+10
+        unit_defense_add = 80               #+10
+        unit_morale_loss_add = 3            #-2
+        unit_devastation_mult = 0.2         #+0.1
+    }
+
+    formation_modifier = {
+        military_formation_movement_speed_mult = 0.1    #new
+    }
+
+	unlocking_technologies = { ut_armored_infantry }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/infantry_armored.dds"
@@ -52,19 +85,24 @@ combat_unit_type_task_force_infantry = {
     }
 
     upkeep_modifier = {
-        goods_input_utopia_arms_add = 4
-        goods_input_ammunition_add = 4
-        goods_input_oil_add = 1
-        goods_input_radios_add = 1
-        goods_input_utopia_tanks_add = 3
-        goods_input_computers_add = 1
+        goods_input_utopia_arms_add = 3
+        goods_input_ammunition_add = 3
+        goods_input_oil_add = 2
+        goods_input_radios_add = 2
+        goods_input_utopia_tanks_add = 2
+        goods_input_electronics_add = 4     #+2
+        goods_input_heavy_machinery_add = 2    #new
     }
-    
+
     battle_modifier = {
-        unit_offense_add = 60
-        unit_defense_add = 65
-        unit_morale_loss_add = 2
-        unit_devastation_mult = 0.2
+        unit_offense_add = 85               #+5
+        unit_defense_add = 85               #+5
+        unit_morale_loss_add = 2            #-1
+        unit_devastation_mult = 0.2         #+0.1
+    }
+
+    formation_modifier = {
+        military_formation_movement_speed_mult = 0.2 #+0.1
     }
 
 	unlocking_technologies = { task_forces }
@@ -97,27 +135,29 @@ combat_unit_type_motorized_artillery = {
 	max_manpower = 1000
 
     upkeep_modifier = {
-        goods_input_tanks_add = 3
-        goods_input_utopia_artillery_add = 4
+        goods_input_utopia_artillery_add = 8    #combines tank and artillery into new artillery good +1
 		goods_input_ammunition_add = 4
-        goods_input_radios_add = 1
+        goods_input_radios_add = 3              #+3
         goods_input_oil_add = 3
-        goods_input_electronics_add = 2
-        goods_input_heavy_machinery_add = 1
+        goods_input_electronics_add = 2         #new   
+        goods_input_trucks_add = 4     #new
     }
 
     battle_modifier = {
-        unit_offense_add = 75
-        unit_defense_add = 40
-        unit_morale_loss_add = 3
+        # balanced against Utopias Motorized Infantry (offensive unit)
+        unit_offense_add = 80 #+10 more then Inf
+        unit_defense_add = 50 #-20 less then Inf
+
+        #battle modifiers from heavy tank
+        unit_morale_loss_add = 3 #-1
         unit_kill_rate_add = 0.25
-        unit_morale_damage_mult = 0.15
-        unit_devastation_mult = 0.3
+        unit_morale_damage_mult = 0.3 #+0.15
+        unit_devastation_mult = 0.4 #+0.1
     }
 
     formation_modifier = {
-        military_formation_mobilization_speed_mult = -0.1
-        military_formation_movement_speed_mult = -0.1
+        military_formation_mobilization_speed_mult = -0.2
+        military_formation_movement_speed_mult = 0 #-0.2
     }
 
 	unlocking_technologies = { ut_anti_tank_guided }
@@ -135,27 +175,33 @@ combat_unit_type_rocket_artillery = {
     group = combat_unit_group_artillery
 	max_manpower = 1000
     
-    
     upkeep_modifier = {
-        goods_input_utopia_tanks_add = 3
-        goods_input_utopia_artillery_add = 5
-		goods_input_ammunition_add = 5
-        goods_input_radios_add = 1
+        goods_input_utopia_tanks_add = 2        #new
+        goods_input_utopia_artillery_add = 8
+		goods_input_ammunition_add = 5          #+1
+        goods_input_radios_add = 3
         goods_input_oil_add = 3
-        goods_input_heavy_machinery_add = 2
-        goods_input_computers_add = 2
+        goods_input_electronics_add = 2         #new   
+        goods_input_trucks_add = 6              #+2
+        goods_input_heavy_machinery_add = 2     #new
+        goods_input_computers_add = 2           #new
     }
 
     battle_modifier = {
-        unit_offense_add = 80
-        unit_defense_add = 40
-        unit_morale_loss_add = 3
+        # balanced against Utopias Armored Infantry (offensive unit)
+        unit_offense_add = 90 #+10 more then Inf
+        unit_defense_add = 60 #-20 less then Inf
+
+        #battle modifiers from heavy tank
+        unit_morale_loss_add = 2 #-1
         unit_kill_rate_add = 0.25
-        unit_morale_damage_mult = 0.2
-        unit_devastation_mult = 0.4
+        unit_morale_damage_mult = 0.3
+        unit_devastation_mult = 0.5     #+0.1
     }
 
     formation_modifier = {
+        military_formation_mobilization_speed_mult = -0.2
+        military_formation_movement_speed_mult = 0.2 #+0.2
     }
 
 	unlocking_technologies = { ut_anti_tank_guided_software }
@@ -192,24 +238,20 @@ combat_unit_type_support_systems = {
         goods_input_oil_add = 2
         goods_input_ammunition_add = 2
         goods_input_radios_add = 2
-        goods_input_aeroplanes_add = 2
-        goods_input_heavy_machinery_add = 1
-        goods_input_computers_add = 1
+        goods_input_heavy_machinery_add = 2
     }
 
     battle_modifier = {
-        unit_offense_add = 70
-        unit_defense_add = 55
+        unit_offense_add = 65
+        unit_defense_add = 80
         unit_morale_loss_add = 2
-        unit_devastation_mult = 0.1
-        unit_occupation_mult = 0.4
     }
 
     formation_modifier = {
         military_formation_mobilization_speed_mult = 0.3
     }
 
-	unlocking_technologies = { ut_war_planes }
+	unlocking_technologies = { ut_war_planes_2 }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/cavalry_light_support_systems.dds"
@@ -224,27 +266,28 @@ combat_unit_type_advanced_support_systems = {
     group = combat_unit_group_cavalry
 	max_manpower = 1000
     
+    #super expensive best late game unit
     upkeep_modifier = {
-        goods_input_utopia_tanks_add = 2
-        goods_input_utopia_artillery_add = 2
-        goods_input_oil_add = 2
-        goods_input_ammunition_add = 2
-        goods_input_radios_add = 2
-        goods_input_utopia_jet_planes_add = 2
-        goods_input_heavy_machinery_add = 1
-        goods_input_computers_add = 1
+        goods_input_utopia_tanks_add = 4
+        goods_input_utopia_artillery_add = 4
+        goods_input_oil_add = 4
+        goods_input_ammunition_add = 4
+        goods_input_radios_add = 4
+        goods_input_utopia_jet_planes_add = 4
+        goods_input_heavy_machinery_add = 4
+        goods_input_computers_add = 4
     }
 
     battle_modifier = {
-        unit_offense_add = 70
-        unit_defense_add = 65
+        unit_offense_add = 100
+        unit_defense_add = 90
         unit_morale_loss_add = 2
-        unit_devastation_mult = 0.1
-        unit_occupation_mult = 0.4
+        unit_devastation_mult = 0.5
+        unit_occupation_mult = 1
     }
 
     formation_modifier = {
-        military_formation_mobilization_speed_mult = 0.3
+        military_formation_mobilization_speed_mult = -0.3
     }
 
 	unlocking_technologies = { ut_jet_planes }
@@ -339,7 +382,7 @@ combat_unit_type_surveillance_corvettes = {
         military_formation_movement_speed_mult = 0.2
     }
 
-	unlocking_technologies = { light_ships_rockets_computers }
+	unlocking_technologies = { ut_corvettes_era_7 }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/light_ships_surveillance_corvettes.dds"
@@ -383,7 +426,7 @@ combat_unit_type_capital_battleship = {
         military_formation_movement_speed_mult = -0.2
     }
 
-	unlocking_technologies = { heavy_ships_rockets_computers }
+	unlocking_technologies = { ut_battleship_era_7 }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/capital_ships_capital_battleship.dds"
@@ -429,7 +472,7 @@ combat_unit_type_modern_submarine = {
         military_formation_movement_speed_mult = 0.2
     }
 
-	unlocking_technologies = { support_ships_electronic_surveillance }
+	unlocking_technologies = { ut_modern_submarine_era_7 }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/support_ships_modern_submarine.dds"

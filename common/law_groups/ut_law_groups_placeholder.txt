@@ -1,3 +1,0 @@
-﻿lawgroup_lgbt_rights = {
-	law_group_category = human_rights
-}

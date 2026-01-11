@@ -7,3 +7,7 @@ lawgroup_food_safety = {
 	law_group_category = human_rights
 	ideological_opinion_impact = 0.25
 }
+
+lawgroup_lgbt_rights = {
+	law_group_category = human_rights
+}

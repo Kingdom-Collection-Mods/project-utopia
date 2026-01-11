@@ -222,3 +222,54 @@ pmg_base_building_ut_nuclear_power_plant_construction = {
 		ut_pm_nuclear_power_plant_construction
 	}
 }
+
+pmg_renewable_power_plant_wind = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		ut_pm_low_wind_power_plant
+		ut_pm_medium_wind_power_plant
+		ut_pm_high_wind_power_plant
+	}
+}
+
+pmg_renewable_power_plant_solar = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		ut_pm_no_solar_power_plant
+		ut_pm_low_solar_power_plant
+		ut_pm_medium_solar_power_plant
+		ut_pm_high_solar_power_plant
+	}
+}
+
+pmg_renewable_power_plant_hydro = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		ut_pm_no_hydro_power_plant
+		ut_pm_hydro_power_plant
+	}
+}
+
+pmg_offshore_power_plant_wind = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		ut_pm_offshore_wind_power_plant
+	}
+}
+
+pmg_ut_power_grid = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		ut_pm_power_grid_import
+		#ut_pm_power_grid_export
+	}
+}
+
+pmg_ut_high_voltage_electricity = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_ut_no_high_voltage_electricity
+		pm_ut_high_voltage_electricity
+		pm_ut_ultra_high_voltage_electricity
+	}
+}

@@ -1,9 +1,8 @@
-﻿
-ut_mobilization_option_cas_jet_planes = {
+﻿ut_mobilization_option_cas_jet_planes = {
 	texture = "gfx/interface/icons/mobilization_options/aerial_reconaissance.dds"
 
 	unlocking_technologies = {
-		ut_war_planes_2
+		ut_war_planes
 	}
 
 	unlocking_principles = {
@@ -13,6 +12,64 @@ ut_mobilization_option_cas_jet_planes = {
 	}
 
 	possible = {
+		NOT = { scope:military_formation = { has_mobilization_option = mobilization_option:ut_mobilization_option_cas_jet_planes_2 } }
+		market ?= {
+			mg:utopia_jet_planes ?= {
+				has_potential_supply = yes
+			}
+		}
+	}
+
+	on_activate_while_mobilized = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.5
+			}
+		}
+	}
+
+	on_deactivate = {
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.25
+			}
+		}
+	}
+
+	upkeep_modifier = {
+		goods_input_aeroplanes_add = 1
+	}
+	unit_modifier = {
+		unit_offense_mult = 0.05
+		unit_provinces_captured_mult = 0.5
+		character_battle_condition_charted_terrain_mult = 0.5
+	}
+	ai_weight = {
+		value = 1
+	}
+
+	group = ut_air_support_mobilization_option_group
+}
+
+ut_mobilization_option_cas_jet_planes_2 = {
+	texture = "gfx/interface/icons/mobilization_options/aerial_reconaissance.dds"
+
+	unlocking_technologies = {
+		ut_jet_planes
+	}
+
+	unlocking_principles = {
+		ut_principle_war_industry_4
+		ut_principle_war_industry_5
+		ut_principle_war_industry_6
+	}
+
+	possible = {
+		NOT = { scope:military_formation = { has_mobilization_option = mobilization_option:ut_mobilization_option_cas_jet_planes } }
 		market ?= {
 			mg:utopia_jet_planes ?= {
 				has_potential_supply = yes
@@ -44,16 +101,17 @@ ut_mobilization_option_cas_jet_planes = {
 		goods_input_utopia_jet_planes_add = 1
 	}
 	unit_modifier = {
+		unit_offense_mult = 0.1
 		unit_provinces_captured_mult = 0.5
-		military_formation_attrition_risk_mult = -0.2
 		character_battle_condition_charted_terrain_mult = 0.5
 	}
 	ai_weight = {
 		value = 1
 	}
 
-	group = special_weapons
+	group = ut_air_support_mobilization_option_group
 }
+
 
 ut_mobilization_option_evac_hospitals = {
 	texture = "gfx/interface/icons/mobilization_options/balloon_recon.dds"

@@ -131,7 +131,7 @@ light_ships_rockets_machinery = {
 	}
 }
 
-light_ships_rockets_computers = {
+ut_corvettes_era_7 = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/surveillance_corvettes.dds"
 	category = military
@@ -167,13 +167,13 @@ support_ships_mine_sweeper = {
 }
 
 
-support_ships_electronic_surveillance = {
+ut_modern_submarine_era_7 = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/modern_submarine.dds"
 	category = military
 
 	unlocking_technologies = {	
-		light_ships_rockets_computers
+		ut_corvettes_era_7
 	}
 
 	modifier = {
@@ -203,7 +203,7 @@ heavy_ships_rockets_base = {
 	}
 }
 
-heavy_ships_rockets_computers = {
+ut_battleship_era_7 = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/capital_battleship.dds"
 	category = military
@@ -226,7 +226,7 @@ heavy_ships_rockets_software = {
 	category = military
 
 	unlocking_technologies = {	
-		heavy_ships_rockets_computers
+		ut_battleship_era_7
 	}
 
 	modifier = {
@@ -245,7 +245,7 @@ support_ships_rockets_base = {
 
 	unlocking_technologies = {	
 		carrier_tech
-		heavy_ships_rockets_computers
+		ut_battleship_era_7
 	}
 
 	modifier = {
@@ -271,8 +271,6 @@ ut_anti_tank = {
 	}
 
 	modifier = {
-		#unit_army_defense_mult = 0.05
-		unit_kill_rate_add = 0.05
     }
 	
 	ai_weight = {
@@ -291,8 +289,6 @@ ut_anti_tank_guided = {
 	}
 
 	modifier = {
-		#unit_army_offense_mult = 0.05
-		unit_devastation_mult = 0.05
     }
 	
 	ai_weight = {
@@ -311,9 +307,8 @@ ut_anti_tank_guided_two = {
 	}
 
 	modifier = {
-		unit_combat_unit_type_motorized_artillery_offense_add = 5
-		unit_army_offense_add = 5
-		unit_kill_rate_add = 0.05
+		building_munition_plant_throughput_add = 0.2
+		unit_devastation_mult = 0.05		
     }
 	
 	ai_weight = {
@@ -331,7 +326,6 @@ ut_anti_tank_guided_software = {
 	}
 
 	modifier = {
-		unit_army_defense_mult = 0.05
 		unit_kill_rate_add = 0.05
     }
 	
@@ -350,7 +344,6 @@ task_forces = {
 	}
 	
 	modifier = {
-		unit_combat_unit_type_armored_infantry_offense_add = 5
 	}
 	
 	ai_weight = {
@@ -423,7 +416,6 @@ ut_tank_composite_armor = {
 	}
 
 	modifier = {
-		unit_army_defense_add = 5
     }
 	
 	ai_weight = {
@@ -431,9 +423,8 @@ ut_tank_composite_armor = {
 	}
 }
 
-
-ut_tank_modern = {
-	era = era_7
+ut_armored_infantry = {
+	era = era_6
 	texture = "gfx/interface/icons/invention_icons/tank_1960s.dds"
 	category = military
 
@@ -444,7 +435,23 @@ ut_tank_modern = {
 	}
 
 	modifier = {
-		unit_combat_unit_type_motorized_artillery_offense_add = 5
+    }
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+ut_tank_modern = {
+	era = era_7
+	texture = "gfx/interface/icons/invention_icons/tank_1960s.dds"
+	category = military
+
+	unlocking_technologies = {	
+		ut_armored_infantry
+	}
+
+	modifier = {
     }
 	
 	ai_weight = {
@@ -535,6 +542,8 @@ ut_war_planes_2 = {
 	category = military
 
 	unlocking_technologies = {
+		ut_anti_tank 
+		#new
 		ut_war_planes
 	}
 	
@@ -570,7 +579,7 @@ ut_jet_planes = {
 
 	unlocking_technologies = {
 		ut_tank_jet_engine
-		ut_war_planes_2
+		ut_war_planes_2_1
 	}
 	
 	
@@ -619,7 +628,6 @@ ut_military_complex = {
 	}
 	
 	modifier = {
-		building_munition_plant_throughput_add = 0.2
 	}
 	
 	ai_weight = {

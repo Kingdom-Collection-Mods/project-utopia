@@ -120,6 +120,13 @@ ideology_liberal_modern = {
 		law_equal_rights_for_women = approve
 		law_affirmative_equality = approve
 	}
+
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = disapprove
+		law_lgbt_rights_1 = disapprove
+		law_lgbt_rights_2 = approve
+		law_lgbt_rights_3 = approve
+	}
 }
 
 ideology_egalitarian_modern = {

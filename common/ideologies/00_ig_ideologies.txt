@@ -420,6 +420,13 @@ ideology_isolationist = {
 		law_multicultural = strongly_disapprove	
 		law_multicultural_globalism = strongly_disapprove	
 	}
+
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = neutral
+		law_lgbt_rights_1 = approve
+		law_lgbt_rights_2 = disapprove
+		law_lgbt_rights_3 = strongly_disapprove
+	}
 }
 
 ideology_moralist = {
@@ -439,6 +446,13 @@ ideology_moralist = {
 		law_freedom_of_conscience = neutral
 		law_total_separation = strongly_disapprove
 		law_state_atheism = strongly_disapprove
+	}
+
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = neutral
+		law_lgbt_rights_1 = strongly_approve
+		law_lgbt_rights_2 = disapprove
+		law_lgbt_rights_3 = strongly_disapprove
 	}
 }
 
@@ -870,6 +884,13 @@ ideology_reactionary = {
 		law_no_environment_protection = neutral
 		law_environment_protection_institute = disapprove
 		law_environment_protection_institute_two = disapprove
+	}
+
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = neutral
+		law_lgbt_rights_1 = approve
+		law_lgbt_rights_2 = neutral
+		law_lgbt_rights_3 = disapprove
 	}
 }
 

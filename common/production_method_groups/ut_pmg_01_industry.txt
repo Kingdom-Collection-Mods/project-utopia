@@ -27,6 +27,7 @@ REPLACE:pmg_distillery = {
 		pm_disabled_distillery
 		pm_pot_stills
 		pm_patent_stills
+		ut_pm_soft_drinks
 	}
 }
 
@@ -299,6 +300,7 @@ REPLACE:pmg_tanks = {
 		pm_no_tank_production
 		pm_tank_production
 		pm_ut_modern_tank_production
+		pm_ut_modern_tank_production_2
 		pm_truck_production
 	}
 }

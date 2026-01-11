@@ -55,7 +55,7 @@
 	
 	interest_group_leader_weight = {
 		value = 50
-		# very angry IG's more likely to turn to more radical socialism
+		# very angry IG's more likely to turn to more radical measures
 		if = {
 			limit = {
 				NOT = { is_interest_group_type = ig_devout } # can't be radical socialists
@@ -67,13 +67,15 @@
 		if = {
 			limit = {
 				owner = {
-					NAND = {
-						has_law = law_type:law_environment_protection_institute_two
-						has_law = law_type:law_food_safety_protection_institute_two
+					NOT = {
+						AND = {
+							has_law = law_type:law_environment_protection_institute_two
+							has_law = law_type:law_food_safety_protection_institute_two
+						}
 					}
 				}
 			}
-			add = 50
+			add = 75
 		}
 		if = {
 			limit = {
@@ -402,7 +404,7 @@ ut_ideology_autocratic_leader = {
 			}
 			add = -50
 		}
-		# more likely if landowners marginalized
+		# more likely if landowners powerful
 		if = {
 			limit = {
 				owner = {
@@ -414,7 +416,7 @@ ut_ideology_autocratic_leader = {
 			add = 25
 		}
 		
-		# more likely if landowners marginalized
+		# more likely if landowners not marginalized
 		if = {
 			limit = {
 				owner = {
@@ -423,7 +425,7 @@ ut_ideology_autocratic_leader = {
 					}
 				}
 			}
-			add = 25
+			add = 50
 		}
 		# less likely for loyal IG's
 		if = {
@@ -619,7 +621,7 @@ ut_ideology_national_socialist_leader = {
 					in_default = yes
 				}
 			}
-			add = 50
+			add = 100
 		}
 		
 		# more likely if autocrat focus
@@ -639,7 +641,7 @@ ut_ideology_national_socialist_leader = {
 					has_modifier = je_ut_new_dawn_fascist_focus
 				}
 			}
-			add = 50
+			add = 75
 		}
 		# Less likely in council republic
 		if = {
@@ -668,7 +670,7 @@ ut_ideology_national_socialist_leader = {
 				}
 				is_in_government = yes
 			}
-			add = 100
+			add = 50
 		}
 		# red scare can make you more fascist
 		if = {
@@ -1458,6 +1460,13 @@ ut_radical_feminism_leader = {
 		law_equal_rights_for_women = approve
 		law_affirmative_equality = strongly_approve
 	}
+
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = strongly_disapprove
+		law_lgbt_rights_1 = strongly_disapprove
+		law_lgbt_rights_2 = approve
+		law_lgbt_rights_3 = strongly_approve
+	}
 	
 	country_trigger = {
 		has_technology_researched = feminism_2
@@ -1757,6 +1766,13 @@ ut_social_feminism_leader = {
 		law_womens_suffrage = neutral
 		law_equal_rights_for_women = strongly_approve
 		law_affirmative_equality = strongly_approve
+	}
+	
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = strongly_disapprove
+		law_lgbt_rights_1 = strongly_disapprove
+		law_lgbt_rights_2 = neutral
+		law_lgbt_rights_3 = approve
 	}
 
 	country_trigger = {

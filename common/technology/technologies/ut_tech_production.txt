@@ -75,6 +75,7 @@ chemistry = {
 	modifier = {
 		building_explosives_factory_throughput_add = 0.1
 		building_group_bg_plantations_throughput_add = 0.05
+		state_birth_rate_mult = 0.025
 	}
 	
 	ai_weight = {
@@ -90,6 +91,7 @@ high_yield_crops = {
 
 	modifier = {
 		building_group_bg_plantations_throughput_add = 0.1
+		state_birth_rate_mult = 0.025
 	}
 
 	unlocking_technologies = {	
@@ -186,6 +188,10 @@ heavy_machinery_era_analog = {
 		aluminum_base
 		arc_welding
 	}
+
+	modifier = {
+		building_renewable_power_plant_throughput_add = 0.5
+	}
 	
 	ai_weight = {
 		value = 3  # Very important
@@ -197,7 +203,8 @@ heavy_machinery_era_analog_two = {
 	texture = "gfx/interface/icons/invention_icons/crawler_tractors.dds"
 	category = production
 
-	unlocking_technologies = {	heavy_machinery_era_analog
+	unlocking_technologies = {
+		heavy_machinery_era_analog
 	}
 	
 	ai_weight = {
@@ -213,6 +220,11 @@ heavy_machinery_era_digital = {
 
 	unlocking_technologies = {	
 		heavy_machinery_era_analog_two
+	}
+
+	modifier = {
+		state_building_offshore_wind_farm_max_level_add = 5
+		building_renewable_power_plant_throughput_add = 0.5
 	}
 	
 	ai_weight = {
@@ -247,6 +259,8 @@ heavy_machinery_industry = {
 
 	modifier = {
 		building_economy_of_scale_level_cap_add = 5
+		state_building_offshore_wind_farm_max_level_add = 5
+		building_renewable_power_plant_throughput_add = 0.5
 	}
 	
 	ai_weight = {

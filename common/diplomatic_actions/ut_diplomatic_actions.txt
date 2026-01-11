@@ -81,7 +81,16 @@ ut_influence_new_dawn_major_power = {
 	potential = {
 		scope:target_country = {
 			is_subject = no
-			country_rank = rank_value:major_power
+			country_rank >= rank_value:major_power
+			OR = {
+				country_rank = rank_value:major_power
+				any_scope_treaty = {
+					binds = root
+					any_scope_article = {
+						has_type = alliance
+					}
+				}
+			}
 			NOT = { has_journal_entry = je_ut_new_dawn }
 			hidden_trigger = {
 				NOT = { has_variable = je_ut_new_dawn_done }

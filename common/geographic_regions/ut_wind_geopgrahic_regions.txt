@@ -1,0 +1,117 @@
+﻿geographic_region_high_wind_potential = {
+	short_key = "geographic_region_high_wind_potential"
+
+	
+
+	strategic_regions = {
+		# Africa
+		sr:region_north_africa
+
+		# East Asia & Oceania
+		sr:region_north_china
+		sr:region_manchuria
+		sr:region_japan
+		sr:region_oceania
+		sr:region_caucasus
+		sr:region_central_asia
+		
+		# West Asia
+		sr:region_central_asia
+
+		# Europe
+		sr:region_england
+		sr:region_france
+		sr:region_iberia
+		sr:region_north_germany
+		sr:region_poland
+		sr:region_baltic_states
+		sr:region_rhine
+		sr:region_dnieper
+		sr:region_north_sea_coast
+
+		# North America
+		sr:region_canada
+		sr:region_new_england
+		sr:region_pacific_coast
+		sr:region_great_plains
+		sr:region_the_midwest
+
+		# South America
+		sr:region_la_plata
+	}
+}
+
+
+geographic_region_medium_wind_potential = {
+	short_key = "geographic_region_medium_wind_potential"
+
+	strategic_regions = {
+		# Africa
+		sr:region_ethiopia
+		sr:region_senegal
+		sr:region_southern_africa
+		sr:region_zanj
+		sr:region_nile_basin
+		sr:region_niger
+
+		# East Asia & Oceania
+		sr:region_south_china
+		sr:region_west_siberia
+		sr:region_east_siberia
+		sr:region_indochina
+		sr:region_indonesia
+
+		# West Asia
+		sr:region_anatolia
+		sr:region_persia
+		sr:region_madras
+		sr:region_bombay
+
+		# Europe
+		sr:region_occitania
+		sr:region_finland
+		sr:region_urals
+		sr:region_russia
+		sr:region_danubia
+		sr:region_south_germany
+		sr:region_arctic_russia
+		sr:region_belarus
+		sr:region_baltic
+
+		# North America
+		sr:region_mexico
+		sr:region_caribbean
+		sr:region_dixie
+
+		# South America
+		sr:region_brazil
+	}
+}
+
+geographic_region_low_wind_potential = {
+	short_key = "geographic_region_low_wind_potential"
+
+	strategic_regions = {
+		# Africa
+		sr:region_congo
+		
+		# Europe
+		sr:region_italy
+		sr:region_balkans
+		
+		# North America
+		sr:region_central_america
+
+		# South America
+		sr:region_andes
+		sr:region_gran_colombia
+
+		# West Asia
+		sr:region_arabic
+		sr:region_caucasus
+		sr:region_bengal
+		sr:region_punjab
+		sr:region_himalayas
+		sr:region_central_india
+	}
+}

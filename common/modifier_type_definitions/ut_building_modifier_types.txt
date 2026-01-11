@@ -336,6 +336,38 @@ goods_input_utopia_battleships_add={
 	}
 }
 
+goods_output_soft_drinks_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_soft_drinks_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_output_high_voltage_electricity_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_high_voltage_electricity_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
 building_commercial_factory_throughput_add={
 	decimals=0
 	color=good
@@ -362,11 +394,28 @@ building_synthetic_oil_throughput_add={
 		ai_value=0
 	}
 }
+
+building_renewable_power_plant_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
 ####
 
 
 
 state_highways_max_level_add={
+	decimals=0
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+state_building_offshore_wind_farm_max_level_add={
 	decimals=0
 	color=good
 	game_data={

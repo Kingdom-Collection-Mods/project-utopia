@@ -12,6 +12,7 @@
     capped_resources = {
         building_iron_mine = 27
         building_lead_mine = 19
+        building_bauxite_mine = 10
         building_logging_camp = 7
     }
     resource = {
@@ -36,6 +37,7 @@ STATE_PIEDMONT = {
         building_coal_mine = 28
         building_iron_mine = 45
         building_lead_mine = 45
+        building_bauxite_mine = 23
         building_logging_camp = 8
         building_fishing_wharf = 6
     }
@@ -57,8 +59,8 @@ STATE_SARDINIA = {
         building_coal_mine = 20
         building_iron_mine = 21
         building_lead_mine = 21
+        building_bauxite_mine = 11
         building_sulfur_mine = 20
-        building_bauxite_mine = 10 
         building_logging_camp = 11
         building_fishing_wharf = 10
     }
@@ -209,6 +211,7 @@ STATE_SAVOY = {
     capped_resources = {
         building_iron_mine = 24
         building_lead_mine = 24
+        building_bauxite_mine = 12
         building_logging_camp = 11
     }
 }
@@ -248,7 +251,7 @@ STATE_TUSCANY = {
     capped_resources = {
         building_iron_mine = 60
         building_sulfur_mine = 40
-        building_bauxite_mine = 20 
+        building_bauxite_mine = 20
         building_logging_camp = 11
         building_fishing_wharf = 5
     }
@@ -268,7 +271,7 @@ STATE_ROMAGNA = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_vineyard" }
     capped_resources = {
         building_sulfur_mine = 48
-        building_bauxite_mine = 24 
+        building_bauxite_mine = 24
         building_logging_camp = 8
         building_fishing_wharf = 6
     }
@@ -308,7 +311,7 @@ STATE_VENETIA = {
     capped_resources = {
         building_coal_mine = 44
         building_sulfur_mine = 36
-        building_bauxite_mine = 18 
+        building_bauxite_mine = 18
         building_logging_camp = 7
         building_fishing_wharf = 12
     }
@@ -329,7 +332,7 @@ STATE_SICILY = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_silk_plantation" "building_sugar_plantation" "building_vineyard" }
     capped_resources = {
         building_sulfur_mine = 100
-        building_bauxite_mine = 50 
+        building_bauxite_mine = 50
         building_logging_camp = 6
         building_fishing_wharf = 10
     }
@@ -352,7 +355,7 @@ STATE_NEW_CASTILE = {
         building_coal_mine = 7
         building_iron_mine = 3
         building_sulfur_mine = 6
-        building_bauxite_mine = 3 
+        building_bauxite_mine = 3
     }
 }
 
@@ -370,13 +373,18 @@ STATE_GALICIA = {
     arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_vineyard" }
     capped_resources = {
         building_gold_mine = 2
-        building_rare_earths_mine = 2 
         building_iron_mine = 4
         building_logging_camp = 5
         building_fishing_wharf = 4
         building_whaling_station = 1
     }
     naval_exit_id = 3029
+
+    # calculated (rubber: 0, gold: 2, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
+    }
 }
 
 STATE_ASTURIAS = {
@@ -393,13 +401,18 @@ STATE_ASTURIAS = {
     arable_resources = { "building_maize_farm" "building_livestock_ranch" }
     capped_resources = {
         building_gold_mine = 2
-        building_rare_earths_mine = 2 
         building_coal_mine = 72
         building_iron_mine = 5
         building_logging_camp = 5
         building_fishing_wharf = 7
     }
     naval_exit_id = 3029
+
+    # calculated (rubber: 0, gold: 2, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
+    }
 }
 
 STATE_OLD_CASTILE = {
@@ -418,7 +431,7 @@ STATE_OLD_CASTILE = {
         building_coal_mine = 8
         building_iron_mine = 5
         building_sulfur_mine = 2
-        building_bauxite_mine = 1 
+        building_bauxite_mine = 1
         building_logging_camp = 6
         building_fishing_wharf = 3
     }
@@ -440,6 +453,7 @@ STATE_BASQUE_COUNTRY = {
     capped_resources = {
         building_coal_mine = 4
         building_lead_mine = 2
+        building_bauxite_mine = 1
         building_iron_mine = 65
         building_logging_camp = 11
         building_fishing_wharf = 10
@@ -479,6 +493,7 @@ STATE_CATALONIA = {
     capped_resources = {
         building_coal_mine = 14
         building_lead_mine = 6
+        building_bauxite_mine = 3
         building_iron_mine = 5
         building_logging_camp = 6
         building_fishing_wharf = 12
@@ -520,7 +535,7 @@ STATE_LOWER_ANDALUSIA = {
     capped_resources = {
         building_iron_mine = 4
         building_sulfur_mine = 44
-        building_bauxite_mine = 22 
+        building_bauxite_mine = 22
         building_logging_camp = 4
         building_fishing_wharf = 9
     }
@@ -541,6 +556,7 @@ STATE_UPPER_ANDALUSIA = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_silk_plantation" "building_tobacco_plantation" "building_sugar_plantation" "building_vineyard" }
     capped_resources = {
         building_lead_mine = 46
+        building_bauxite_mine = 23
         building_iron_mine = 7
         building_logging_camp = 4
         building_fishing_wharf = 8
@@ -562,7 +578,7 @@ STATE_EXTREMADURA = {
     capped_resources = {
         building_logging_camp = 13
         building_sulfur_mine = 4
-        building_bauxite_mine = 2 
+        building_bauxite_mine = 2
         building_iron_mine = 2
     }
 }
@@ -582,6 +598,7 @@ STATE_VALENCIA = {
         building_coal_mine = 12
         building_iron_mine = 8
         building_lead_mine = 5
+        building_bauxite_mine = 3
         building_logging_camp = 5
         building_fishing_wharf = 10
     }
@@ -602,13 +619,19 @@ STATE_BEIRA = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_tobacco_plantation" "building_banana_plantation" "building_vineyard" }
     capped_resources = {
         building_lead_mine = 6
+        building_bauxite_mine = 3
         building_iron_mine = 3
         building_gold_mine = 2
-        building_rare_earths_mine = 2 
         building_logging_camp = 5
         building_fishing_wharf = 4
     }
     naval_exit_id = 3029
+
+    # calculated (rubber: 0, gold: 2, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
+    }
 }
 
 STATE_ESTREMADURA = {
@@ -646,7 +669,7 @@ STATE_ALENTEJO = {
         building_coal_mine = 4
         building_iron_mine = 16
         building_sulfur_mine = 22
-        building_bauxite_mine = 11 
+        building_bauxite_mine = 11
         building_logging_camp = 2
         building_fishing_wharf = 4
     }
@@ -807,6 +830,7 @@ STATE_BOSNIA = {
     capped_resources = {
         building_iron_mine = 48
         building_lead_mine = 39
+        building_bauxite_mine = 20
         building_logging_camp = 14
     }
 }
@@ -978,8 +1002,8 @@ STATE_WESTERN_SERBIA = {
         building_iron_mine = 24
         building_logging_camp = 13
     }
-    
-    #unique rare earths mining tiny
+
+    # calculated (rubber: 0, gold: 0, custom: 3)
     resource = {
         type = "building_rare_earths_mine"
         discovered_amount = 3
@@ -1000,6 +1024,7 @@ STATE_EASTERN_SERBIA = {
     capped_resources = {
         building_coal_mine = 30
         building_lead_mine = 12
+        building_bauxite_mine = 6
         building_logging_camp = 10
     }
 }
@@ -1017,6 +1042,7 @@ STATE_KOSOVO = {
     capped_resources = {
         building_coal_mine = 10
         building_lead_mine = 24
+        building_bauxite_mine = 12
         building_logging_camp = 4
     }
 }
@@ -1088,8 +1114,8 @@ STATE_ATTICA = {
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_tobacco_plantation" "building_vineyard" }
     capped_resources = {
         building_lead_mine = 21
+        building_bauxite_mine = 11
         building_sulfur_mine = 32
-        building_bauxite_mine = 16 
         building_logging_camp = 7
         building_fishing_wharf = 8
     }
@@ -1218,12 +1244,18 @@ STATE_MURCIA = {
     capped_resources = {
         building_iron_mine = 7
         building_gold_mine = 2
-        building_rare_earths_mine = 2 
         building_lead_mine = 21
+        building_bauxite_mine = 11
         building_logging_camp = 3
         building_fishing_wharf = 6
     }
     naval_exit_id = 3032
+
+    # calculated (rubber: 0, gold: 2, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
+    }
 }
 
 STATE_LEON = {
@@ -1260,10 +1292,16 @@ STATE_ENTRE_DOURO_E_MINHO = {
     capped_resources = {
         building_iron_mine = 26
         building_gold_mine = 2
-        building_rare_earths_mine = 2 
         building_lead_mine = 3
+        building_bauxite_mine = 2
         building_logging_camp = 7
         building_fishing_wharf = 6
     }
     naval_exit_id = 3029
+
+    # calculated (rubber: 0, gold: 2, custom: none)
+    resource = {
+        type = "building_rare_earths_mine"
+        discovered_amount = 2
+    }
 }

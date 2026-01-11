@@ -961,7 +961,7 @@ pm_aluminum_two_process = {
 }
 
 pm_aluminum_three_process = {
-	texture = "gfx/interface/icons/production_method_icons/steamworks.dds"
+	texture = "gfx/interface/icons/production_method_icons/electric_arc_process.dds"
 	unlocking_technologies = {
 		heavy_machinery_industry
 	}
@@ -1239,8 +1239,8 @@ pm_heavy_machinery_oil_fired_plant = {
 		workforce_scaled = {
 			goods_input_engines_add = 12
 			goods_input_heavy_machinery_add = 4
-			goods_input_oil_add = 25
-			goods_output_electricity_add = 110
+			goods_input_oil_add = 20
+			goods_output_electricity_add = 100
 		}
 
 		level_scaled = {
@@ -1595,14 +1595,15 @@ ut_pm_nuclear_power_plant_one = {
 			goods_input_bauxite_add = 20
 			goods_input_lead_add = 30
 
-			goods_output_electricity_add = 2000
+			goods_output_electricity_add = 1000
+			goods_output_high_voltage_electricity_add = 1000
 		}
 
 		level_scaled = {
-			#sum 5000 (no admin)
+			#sum 10000 (no admin, x2)
 			building_employment_laborers_add = 2500 # Base -2000 logistics
-			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 1000
+			building_employment_machinists_add = 3000
+			building_employment_engineers_add = 4000
 			building_employment_academics_add = 500
 		}
 	}
@@ -1631,6 +1632,320 @@ ut_pm_nuclear_power_plant_construction = {
 			building_employment_machinists_add = 1000
 			building_employment_engineers_add = 1000
 			building_employment_academics_add = 500
+		}
+	}
+}
+
+ut_pm_low_wind_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_wind_1.dds"
+	
+	unlocking_geographic_regions = {
+		geographic_region_low_wind_potential
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 10 # 600
+			goods_input_heavy_machinery_add = 1
+			goods_output_high_voltage_electricity_add = 50 # 2400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_machinists_add = 600
+			building_employment_engineers_add = 300
+		}
+	}
+}
+
+ut_pm_medium_wind_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_wind_2.dds"
+	
+	unlocking_geographic_regions = {
+		geographic_region_medium_wind_potential
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 10 # 600
+			goods_input_heavy_machinery_add = 1
+			goods_output_high_voltage_electricity_add = 80 # 2400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_machinists_add = 600
+			building_employment_engineers_add = 300
+		}
+	}
+}
+
+ut_pm_high_wind_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_wind_3.dds"
+	
+	unlocking_geographic_regions = {
+		geographic_region_high_wind_potential
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 10 # 600
+			goods_input_heavy_machinery_add = 1
+			goods_output_high_voltage_electricity_add = 100 # 2400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_machinists_add = 600
+			building_employment_engineers_add = 300
+		}
+	}
+}
+
+ut_pm_no_solar_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_solar_0.dds"
+}
+
+ut_pm_low_solar_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_solar_1.dds"
+	
+	unlocking_geographic_regions = {
+		geographic_region_low_solar_potential
+		geographic_region_medium_solar_potential
+		geographic_region_high_solar_potential
+	}
+
+	unlocking_technologies = {
+		heavy_machinery_era_digital
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 10 # 600
+			goods_input_heavy_machinery_add = 1
+			goods_output_high_voltage_electricity_add = 50 # 2400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 300
+			building_employment_engineers_add = 150
+		}
+	}
+}
+
+ut_pm_medium_solar_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_solar_2.dds"
+
+	unlocking_geographic_regions = {
+		geographic_region_medium_solar_potential
+		geographic_region_high_solar_potential
+	}
+
+	unlocking_technologies = {
+		heavy_machinery_era_web
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 10 # 600
+			goods_input_heavy_machinery_add = 1
+			goods_output_high_voltage_electricity_add = 90 # 2400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 300
+			building_employment_engineers_add = 150
+		}
+	}
+}
+
+ut_pm_high_solar_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_solar_3.dds"
+
+	unlocking_geographic_regions = {
+		geographic_region_high_solar_potential
+	}
+	
+	unlocking_technologies = {
+		heavy_machinery_era_web
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 10 # 600
+			goods_input_heavy_machinery_add = 1
+			goods_output_high_voltage_electricity_add = 150 # 2400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 300
+			building_employment_engineers_add = 150
+		}
+	}
+}
+
+ut_pm_offshore_wind_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_wind_offshore.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 10 # 600
+			goods_input_heavy_machinery_add = 1
+			goods_output_high_voltage_electricity_add = 110 # 2400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_machinists_add = 600
+			building_employment_engineers_add = 300
+		}
+	}
+}
+
+
+ut_pm_no_hydro_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_no_hydroelectric_plant.dds"
+}
+
+
+ut_pm_hydro_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/ut_hydroelectric_plant.dds"
+
+	unlocking_geographic_regions = {
+		geographic_region_any_hydro_potential
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 5
+			goods_output_high_voltage_electricity_add = 20 # 2400
+        }
+
+        level_scaled = {
+			#no extra employment
+        }
+	}
+}
+
+
+ut_pm_power_grid_import = {
+    texture = "gfx/interface/icons/production_method_icons/james_grid_power.dds"
+    
+    building_modifiers = {
+        workforce_scaled = {
+            goods_input_heavy_machinery_add = 1
+			goods_input_electronics_add = 2
+            goods_input_high_voltage_electricity_add = 200
+			goods_output_electricity_add = 200
+        }
+
+        level_scaled = {
+            building_employment_machinists_add = 700
+            building_employment_engineers_add  = 300
+        }
+    }
+}
+
+# ut_pm_power_grid_export = {
+#     texture = "gfx/interface/icons/production_method_icons/james_grid_power_mirrored.dds"
+    
+#     building_modifiers = {
+#         workforce_scaled = {
+#             goods_input_heavy_machinery_add = 1
+# 			goods_input_electricity_add = 200
+#             goods_output_high_voltage_electricity_add = 200
+#         }
+
+#         level_scaled = {
+#             building_employment_machinists_add = 700
+#             building_employment_engineers_add  = 300
+#         }
+#     }
+
+# 	required_input_goods = electricity
+# }
+
+
+pm_ut_no_high_voltage_electricity = {
+    texture = "gfx/interface/icons/production_method_icons/james_local_power.dds"
+}
+
+pm_ut_high_voltage_electricity = {
+    texture = "gfx/interface/icons/production_method_icons/james_grid_capacity_2.dds"
+	unlocking_production_methods = {
+		pm_heavy_machinery_coal_fired_plant
+		pm_heavy_machinery_oil_fired_plant
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_electricity_add = -100
+			goods_output_high_voltage_electricity_add = 150
+		}
+	}
+}
+
+
+pm_ut_ultra_high_voltage_electricity = {
+    texture = "gfx/interface/icons/production_method_icons/james_grid_capacity_4.dds"
+	unlocking_technologies = {
+		heavy_machinery_era_digital
+	}
+
+	unlocking_production_methods = {
+		pm_heavy_machinery_coal_fired_plant
+		pm_heavy_machinery_oil_fired_plant
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_electricity_add = -100
+			goods_output_high_voltage_electricity_add = 200
 		}
 	}
 }
