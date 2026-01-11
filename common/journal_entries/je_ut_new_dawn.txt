@@ -307,6 +307,17 @@
 					target = root
 				}
 			}
+			#added on 11.1.26 to fix missing base, bug probably added in 9.1, can be removed later
+			if = {
+				limit = { 
+					ig:ig_urbanists = {
+						NOT = { has_ideology = ideology:ideology_urbanist_economy_base }
+					}
+				}
+				ig:ig_urbanists = {
+					add_ideology = ideology_urbanist_economy_base
+				}
+			}
 		}
 	}
 
