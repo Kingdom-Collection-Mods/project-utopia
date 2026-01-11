@@ -1458,6 +1458,13 @@ ut_radical_feminism_leader = {
 		law_equal_rights_for_women = approve
 		law_affirmative_equality = strongly_approve
 	}
+
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = strongly_disapprove
+		law_lgbt_rights_1 = strongly_disapprove
+		law_lgbt_rights_2 = approve
+		law_lgbt_rights_3 = strongly_approve
+	}
 	
 	country_trigger = {
 		has_technology_researched = feminism_2
@@ -1757,6 +1764,13 @@ ut_social_feminism_leader = {
 		law_womens_suffrage = neutral
 		law_equal_rights_for_women = strongly_approve
 		law_affirmative_equality = strongly_approve
+	}
+	
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = strongly_disapprove
+		law_lgbt_rights_1 = strongly_disapprove
+		law_lgbt_rights_2 = neutral
+		law_lgbt_rights_3 = approve
 	}
 
 	country_trigger = {

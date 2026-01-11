@@ -179,6 +179,13 @@ ideology_liberal_democratic = {
 		law_colonial_resettlement = disapprove
 		law_frontier_colonization = neutral
 	}
+
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = disapprove
+		law_lgbt_rights_1 = disapprove
+		law_lgbt_rights_2 = approve
+		law_lgbt_rights_3 = strongly_approve
+	}
 }
 
 #IG Industrial Democratic
@@ -320,6 +327,13 @@ ideology_moralist_democratic = {
 		law_total_separation = disapprove
 		law_state_atheism = strongly_disapprove
 	}
+
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = disapprove
+		law_lgbt_rights_1 = neutral
+		law_lgbt_rights_2 = neutral
+		law_lgbt_rights_3 = disapprove
+	}
 }
 
 #IG Burgeois Democratic
@@ -356,6 +370,13 @@ ideology_reactionary_democratic = {
 		law_no_environment_protection = neutral
 		law_environment_protection_institute = approve
 		law_environment_protection_institute_two = disapprove
+	}
+	
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = strongly_disapprove
+		law_lgbt_rights_1 = approve
+		law_lgbt_rights_2 = approve
+		law_lgbt_rights_3 = disapprove
 	}
 }
 
@@ -394,6 +415,13 @@ ideology_reactionary_communist = {
 		law_environment_protection_institute = approve
 		law_environment_protection_institute_two = neutral
 	}
+	
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = strongly_disapprove
+		law_lgbt_rights_1 = neutral
+		law_lgbt_rights_2 = neutral
+		law_lgbt_rights_3 = neutral
+	}
 }
 
 #IG Burgeois Era 7/Non-Democratic
@@ -430,6 +458,13 @@ ut_ideology_reactionary_alternative = {
 		law_no_environment_protection = neutral
 		law_environment_protection_institute = approve
 		law_environment_protection_institute_two = disapprove
+	}
+
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = strongly_disapprove
+		law_lgbt_rights_1 = neutral
+		law_lgbt_rights_2 = neutral
+		law_lgbt_rights_3 = disapprove
 	}
 }
 
