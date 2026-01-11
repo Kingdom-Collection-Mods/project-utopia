@@ -292,11 +292,12 @@
  ut_new_dawn_communist_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_communist!"
  ut_new_dawn_democratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_democrat!"
  ut_new_dawn_autocratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_autocrat!"
- ut_new_dawn_no_core_list_entry: "[THIS.GetCountry.GetName] is trending towards [THIS.GetCountry.GetCustom('ut_new_dawn_phase_1_trend')]"
- ut_phase_1_trend_democrat: "$concept_ut_nd_democrat_core$"
- ut_phase_1_trend_autocrat: "$concept_ut_nd_autocrat_core$"
- ut_phase_1_trend_fascist: "$concept_ut_nd_fascist_core$"
- ut_phase_1_trend_communist: "$concept_ut_nd_communist_core$"
+ ut_new_dawn_no_core_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.GetCustom('ut_new_dawn_phase_1_trend')]"
+ ut_phase_1_trend_democrat: "tendiert zu $concept_ut_nd_democrat_core$"
+ ut_phase_1_trend_autocrat: "tendiert zu $concept_ut_nd_autocrat_core$"
+ ut_phase_1_trend_fascist: "tendiert zu $concept_ut_nd_fascist_core$"
+ ut_phase_1_trend_communist: "tendiert zu $concept_ut_nd_communist_core$"
+ ut_phase_1_trend_undefined: "hat keinen klaren ideologischen Trend"
  ut_progress_trend_max: "@profitability12!"
  ut_progress_trend_critical: "@profitability1!"
  ut_progress_trend_up4: "@profitability13!"
@@ -899,6 +900,9 @@
  war_goal_ut_regime_change_communist_type_desc: "Force another [concept_country] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to your own"
  war_goal_ut_regime_change_communist: "Communist Regime Change in [WAR_GOAL_DRAFT.GetTarget.GetName]"
  war_goal_ut_regime_change_communist_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] forces [WAR_GOAL_DRAFT.GetTarget.GetName] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to their own. The following Law will be enforced:  [GetLawType('law_council_republic').GetName]"
+
+ dp_ut_fascist_annex_war: "Land überfallen"
+ dp_ut_fascist_annex_war_tooltip: "Startet ein $dp_annex_war$ [concept_diplomatic_play]"
 
  ut_fund_ideology: "Ideologie finanzieren"
  ut_fund_ideology_action_name: "$ut_fund_ideology$"
@@ -1694,6 +1698,9 @@
  
  building_synthetic_oil_throughput_add: "$building_synthetic_oil$-[concept_throughput]"
  building_synthetic_oil_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_synthetic_oil$."
+
+ building_renewable_power_plant_throughput_add: "$building_renewable_power_plant$ [concept_throughput]"
+ building_renewable_power_plant_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_renewable_power_plant$."
 
  smart_irrigation_building_tea_plantation: "Intelligente Bewässerung"
  smart_irrigation_building_tobacco_plantation: "Intelligente Bewässerung"
