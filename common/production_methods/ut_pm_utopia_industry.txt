@@ -1198,6 +1198,10 @@ pm_heavy_machinery_coal_fired_plant = {
 		heavy_machinery_era_analog
 	}
 
+	disallowing_laws = {
+		law_environment_protection_institute_two
+	}
+
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 30
