@@ -411,7 +411,7 @@ je_ut_new_dawn_democratic = {
 		}
 		custom_tooltip = {
 			text = je_ut_new_dawn_democratic_complete_condition_tt
-			has_variable = je_ut_new_dawn_democratic_spirit_done_years_var
+			has_variable = je_ut_new_dawn_democratic_spirit_done
 			has_variable = je_ut_new_dawn_democratic_cultural_values_done
 			has_variable = je_ut_new_dawn_democratic_power_bloc_done
 			has_variable = je_ut_new_dawn_democratic_fair_elections_done
@@ -513,7 +513,7 @@ je_ut_new_dawn_democratic = {
 		effect = {
 			if = {
 				limit = {
-					has_variable = je_ut_new_dawn_democratic_spirit_var
+					has_variable = je_ut_new_dawn_democratic_spirit_done
 					has_law_or_variant = law_type:law_universal_suffrage
 				}
 				if = {
