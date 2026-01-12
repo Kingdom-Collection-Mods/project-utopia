@@ -415,7 +415,6 @@ je_ut_new_dawn_democratic = {
 			has_variable = je_ut_new_dawn_democratic_cultural_values_done
 			has_variable = je_ut_new_dawn_democratic_power_bloc_done
 			has_variable = je_ut_new_dawn_democratic_fair_elections_done
-			has_variable = je_ut_new_dawn_democratic_final_done
 		}
 		average_sol > 50
 		NOT = {
