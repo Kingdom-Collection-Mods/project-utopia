@@ -6,7 +6,7 @@ je_ut_new_dawn_democratic_spirit = {
 	possible = {
 		custom_tooltip = {
 			text = new_dawn_ideology_milestone_done_tt
-			NOT = { has_variable = je_ut_new_dawn_democratic_spirit_done_years_var }
+			NOT = { has_variable = je_ut_new_dawn_democratic_spirit_var }
 		}
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
@@ -60,9 +60,9 @@ je_ut_new_dawn_democratic_spirit = {
 			remove_ideology = ideology_reactionary
 			add_ideology = ideology_reactionary_democratic
 		}
-		set_variable = je_ut_new_dawn_democratic_spirit_done_years_var
+		set_variable = je_ut_new_dawn_democratic_spirit_var
 		set_variable = {
-			name = je_ut_new_dawn_democratic_years_done_var
+			name = je_ut_new_dawn_democratic_fair_elections_trigger_var
 			value = 0
 		}
 
@@ -297,7 +297,7 @@ je_ut_new_dawn_democratic_fair_elections = {
 		has_law_or_variant = law_type:law_universal_suffrage
 		custom_tooltip = {
 			text = je_ut_new_dawn_democratic_fair_elections_trigger_tt
-			var:je_ut_new_dawn_democratic_years_done_var >= 20
+			var:je_ut_new_dawn_democratic_fair_elections_trigger_var >= 20
 		}
 	}
 

@@ -359,7 +359,7 @@
  je_ut_new_dawn_democratic_fair_elections_desc: "Universal suffrage forms the backbone of a just society. Institutionalizing fair elections strengthens public trust in democracy."
  je_ut_new_dawn_democratic_fair_elections_tt: "Strengthens the legitimacy of the political system through transparent and fair elections"
  je_ut_new_dawn_democratic_fair_elections_mod: "Fair Elections"
- je_ut_new_dawn_democratic_fair_elections_trigger_tt: "Had [GetLawType('law_universal_suffrage').GetName] for at least #bold 20 years#! since #bold $je_ut_new_dawn_democratic_spirit$#! [concept_ut_nd_milestones] has been completed (Current years: [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_democratic_years_done_var').GetValue|b2])"
+ je_ut_new_dawn_democratic_fair_elections_trigger_tt: "Had [GetLawType('law_universal_suffrage').GetName] for at least #bold 20 years#! since #bold $je_ut_new_dawn_democratic_spirit$#! [concept_ut_nd_milestones] has been completed (Current years: [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_democratic_fair_elections_trigger_var').GetValue])"
 
  je_ut_new_dawn_democratic_final: "Utopia"
  je_ut_new_dawn_democratic_final_desc: "The culmination of democratic ideals and practices, leading to a harmonious and just society."
@@ -612,7 +612,7 @@
  ideology_patriotic_communist_international: "Internationalist"
  ideology_patriotic_communist_international_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_communist_core] variation.#!  #r Lost if $new_dawn_phase_2_mod$ fails.#!"
  ideology_patriotic_democratic: "Civic Patriotism"
- ideology_patriotic_democratic_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_democrat_core] variation.#!"
+ ideology_patriotic_democratic_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_democrat_core] variation.  #r Lost if $new_dawn_phase_2_mod$ fails.#! #!"
 
  ig_trait_urbanist_loyal: "Prestige Society"
  ig_trait_urbanist_loyal_desc: "This group advocates for the free movement of people across borders, believing it fosters cultural exchange and economic opportunity. They oppose restrictive immigration policies and emphasize international cooperation."
