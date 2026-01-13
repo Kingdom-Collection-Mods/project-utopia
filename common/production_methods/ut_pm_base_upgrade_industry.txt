@@ -1166,7 +1166,7 @@ ut_pm_soft_drinks = {
 
 			# output goods
 			goods_output_soft_drinks_add = 60			# x30 =  3000
-			goods_output_groceries_add = -40			# x30 = -1200
+			goods_output_groceries_add = -30			# x30 = -1200
 		}
 
 		level_scaled = {
