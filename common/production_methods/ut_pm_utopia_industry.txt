@@ -168,7 +168,7 @@ pm_plastic_one_process = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 5
+			state_pollution_generation_add = 10
 		}
 	}
 	
@@ -202,7 +202,7 @@ pm_plastic_two_process = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 5
+			state_pollution_generation_add = 10
 		}
 	}
 	
@@ -234,7 +234,7 @@ pm_consumer_goods_analog_process = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 20
+			state_pollution_generation_add = 15
 		}
 	}
 	
@@ -496,7 +496,7 @@ pm_electronics_circuits_process = {
 
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 20
+			state_pollution_generation_add = 15
 		}
 	}
 	
@@ -529,7 +529,7 @@ pm_electronics_transistors_process = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 20
+			state_pollution_generation_add = 15
 		}
 	}
 	
@@ -564,7 +564,7 @@ pm_electronics_micro_chips_process = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 20
+			state_pollution_generation_add = 15
 		}
 	}
 	
@@ -596,7 +596,7 @@ pm_computers_electromechanical_process = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 20
+			state_pollution_generation_add = 15
 		}
 	}
 	
@@ -626,7 +626,7 @@ pm_computers_transistors_process = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 20
+			state_pollution_generation_add = 15
 		}
 	}
 	
@@ -662,7 +662,7 @@ pm_computers_integrated_chips_process  = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 20
+			state_pollution_generation_add = 15
 		}
 	}
 	
@@ -699,7 +699,7 @@ pm_computers_micro_chips_process  = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 20
+			state_pollution_generation_add = 15
 		}
 	}
 	
@@ -741,6 +741,12 @@ pm_computers_micro_chips_process  = {
 pm_bauxite_steam_powered_mine = {
 	texture = "gfx/interface/icons/production_method_icons/blister_steel_process.dds"
 
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -765,6 +771,12 @@ pm_bauxite_heavy_machinery_mine = {
 	texture = "gfx/interface/icons/production_method_icons/ut_excavator.dds"
 	unlocking_technologies = {
 		heavy_machinery_era_analog
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
 	}
 
 	building_modifiers = {
@@ -796,6 +808,12 @@ pm_bauxite_automated_heavy_machinery_mine = {
 		software
 	}
 
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -822,6 +840,12 @@ pm_bauxite_automated_heavy_machinery_mine = {
 pm_rare_earths_one_mine = {
 	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
 
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -847,6 +871,12 @@ pm_rare_earths_two_mine = {
 
 	unlocking_technologies = {
 		rare_earths_mining_era_digital
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
 	}
 
 	building_modifiers = {
@@ -876,6 +906,12 @@ pm_rare_earths_three_mine = {
 
 	unlocking_technologies = {
 		rare_earths_mining_era_connected
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
 	}
 
 	building_modifiers = {
@@ -908,6 +944,12 @@ pm_aluminum_one_process = {
 	disallowing_laws = {
 		law_environment_protection_institute_two
 		law_environment_protection_institute_three
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 25
+		}
 	}
 
 	building_modifiers = {
@@ -945,6 +987,12 @@ pm_aluminum_two_process = {
 		law_environment_protection_institute_three
 	}
 
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -980,6 +1028,12 @@ pm_aluminum_three_process = {
 		law_no_environment_protection
 	}
 
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -1005,7 +1059,7 @@ pm_aluminum_three_process = {
 	required_input_goods = electricity
 }
 
-#Disallowed by law_environment_protection_institute_three
+#Disallowed by law_environment_protection_institute_two and three
 pm_aluminum_four_process = {
 	texture = "gfx/interface/icons/production_method_icons/electric_arc_process.dds"
 	unlocking_technologies = {
@@ -1013,6 +1067,7 @@ pm_aluminum_four_process = {
 	}
 
 	disallowing_laws = {
+		law_environment_protection_institute_two
 		law_environment_protection_institute_three
 	}
 
