@@ -130,6 +130,7 @@ ideology_laissez_faire = {
 		law_no_environment_protection = neutral
 		law_environment_protection_institute = disapprove
 		law_environment_protection_institute_two = strongly_disapprove
+		law_environment_protection_institute_three = strongly_disapprove
 	}
 }
 
@@ -884,6 +885,7 @@ ideology_reactionary = {
 		law_no_environment_protection = neutral
 		law_environment_protection_institute = disapprove
 		law_environment_protection_institute_two = disapprove
+		law_environment_protection_institute_three = strongly_disapprove
 	}
 
 	lawgroup_lgbt_rights = {

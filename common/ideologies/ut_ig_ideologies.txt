@@ -367,9 +367,10 @@ ideology_reactionary_democratic = {
 	}
 
 	lawgroup_environment_protection = {
-		law_no_environment_protection = neutral
+		law_no_environment_protection = disapprove
 		law_environment_protection_institute = approve
-		law_environment_protection_institute_two = disapprove
+		law_environment_protection_institute_two = neutral
+		law_environment_protection_institute_three = disapprove
 	}
 	
 	lawgroup_lgbt_rights = {
@@ -411,9 +412,10 @@ ideology_reactionary_communist = {
 	}
 
 	lawgroup_environment_protection = {
-		law_no_environment_protection = neutral
+		law_no_environment_protection = disapprove
 		law_environment_protection_institute = approve
 		law_environment_protection_institute_two = neutral
+		law_environment_protection_institute_three = neutral
 	}
 	
 	lawgroup_lgbt_rights = {
@@ -455,9 +457,10 @@ ut_ideology_reactionary_alternative = {
 	}
 
 	lawgroup_environment_protection = {
-		law_no_environment_protection = neutral
+		law_no_environment_protection = disapprove
 		law_environment_protection_institute = approve
 		law_environment_protection_institute_two = disapprove
+		law_environment_protection_institute_three = strongly_disapprove
 	}
 
 	lawgroup_lgbt_rights = {
@@ -800,6 +803,7 @@ ut_ideology_laissez_faire = {
 		law_no_environment_protection = neutral
 		law_environment_protection_institute = disapprove
 		law_environment_protection_institute_two = strongly_disapprove
+		law_environment_protection_institute_three = strongly_disapprove
 	}
 }
 
@@ -868,7 +872,8 @@ ut_ideology_laissez_faire_democratic = {
 	lawgroup_environment_protection = {
 		law_no_environment_protection = neutral
 		law_environment_protection_institute = neutral
-		law_environment_protection_institute_two = strongly_disapprove
+		law_environment_protection_institute_two = disapprove
+		law_environment_protection_institute_three = strongly_disapprove
 	}
 }
 
@@ -935,9 +940,10 @@ ut_ideology_laissez_faire_democratic_neoliberal = {
 
 	#law_environment_protection_institute+
 	lawgroup_environment_protection = {
-		law_no_environment_protection = neutral
+		law_no_environment_protection = approve
 		law_environment_protection_institute = neutral
 		law_environment_protection_institute_two = strongly_disapprove
+		law_environment_protection_institute_three = strongly_disapprove
 	}
 }
 
@@ -1000,8 +1006,9 @@ ut_ideology_laissez_faire_authoritarian = {
 	}	
 
 	lawgroup_environment_protection = {
-		law_no_environment_protection = neutral
+		law_no_environment_protection = approve
 		law_environment_protection_institute = disapprove
 		law_environment_protection_institute_two = strongly_disapprove
+		law_environment_protection_institute_three = strongly_disapprove
 	}
 }

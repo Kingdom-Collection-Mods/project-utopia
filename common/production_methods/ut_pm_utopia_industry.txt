@@ -1,4 +1,4 @@
-﻿###Heavy Industry
+###Heavy Industry
 ##Heavy Machinery
 pm_heavy_machinery_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/airship_mooring_post.dds"
@@ -905,6 +905,11 @@ pm_rare_earths_three_mine = {
 pm_aluminum_one_process = {
 	texture = "gfx/interface/icons/production_method_icons/diesel_engines.dds"
 
+	disallowing_laws = {
+		law_environment_protection_institute_two
+		law_environment_protection_institute_three
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -933,6 +938,11 @@ pm_aluminum_two_process = {
 	texture = "gfx/interface/icons/production_method_icons/steamworks.dds"
 	unlocking_technologies = {
 		aluminum_base
+	}
+
+	disallowing_laws = {
+		law_environment_protection_institute_two
+		law_environment_protection_institute_three
 	}
 
 	building_modifiers = {
@@ -966,6 +976,10 @@ pm_aluminum_three_process = {
 		heavy_machinery_industry
 	}
 
+	disallowing_laws = {
+		law_no_environment_protection
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -977,6 +991,47 @@ pm_aluminum_three_process = {
 			
 			# output goods
 			goods_output_aluminum_add = 120
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 250
+			building_employment_service_workers_add = 250
+			building_employment_laborers_add = 2000 # Base -2000 logistics
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1500
+		}
+	}
+
+	required_input_goods = electricity
+}
+
+#Disallowed by law_environment_protection_institute_three
+pm_aluminum_four_process = {
+	texture = "gfx/interface/icons/production_method_icons/electric_arc_process.dds"
+	unlocking_technologies = {
+		heavy_machinery_industry
+	}
+
+	disallowing_laws = {
+		law_environment_protection_institute_three
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 25
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_bauxite_add = 80
+			goods_input_explosives_add = 10
+			goods_input_heavy_machinery_add = 8
+			goods_input_electricity_add = 30
+			
+			# output goods
+			goods_output_aluminum_add = 150
 		}
 
 		level_scaled = {

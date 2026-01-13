@@ -759,3 +759,12 @@ building_ut_power_grid_base = {
         }
     }
 }
+
+INJECT:building_power_plant = {
+	possible = {
+		owner = {
+			NOT = { has_law_or_variant = law_type:law_industry_banned }
+			NOT = { has_law_or_variant = law_type:law_environment_protection_institute_three }
+		}
+	}
+}

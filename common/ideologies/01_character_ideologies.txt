@@ -2277,6 +2277,7 @@ ideology_pacifist = {
 		law_no_environment_protection = neutral
 		law_environment_protection_institute = approve
 		law_environment_protection_institute_two = approve
+		law_environment_protection_institute_three = strongly_approve
 	}
 
 	interest_group_leader_trigger = {
