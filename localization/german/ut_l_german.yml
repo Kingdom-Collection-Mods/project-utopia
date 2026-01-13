@@ -736,6 +736,8 @@
  law_environment_protection_institute_desc: "Grundlegende gesetzliche Vorgaben zur Begrenzung von Umweltverschmutzung und Erhaltung natürlicher Lebensräume."
  law_environment_protection_institute_two: "Umweltschutzamt"
  law_environment_protection_institute_two_desc: "Eine behördliche Institution zur Überwachung und Durchsetzung von Umweltvorschriften sowie zur Erforschung ökologischer Risiken."
+ law_environment_protection_institute_three: "Umweltschutzregulierungen"
+ law_environment_protection_institute_three_desc: "Umfassender rechtlicher Rahmen zum Schutz der Umwelt, zur Förderung der Nachhaltigkeit und zur Sicherstellung des ökologischen Gleichgewichts."
  law_food_safety_protection_institute_two: "Lebensmittelbehörde"
  law_food_safety_protection_institute_two_desc: "Eine staatliche Behörde, die Hygienestandards und Sicherheitsvorschriften in der Lebensmittelproduktion kontrolliert."
  law_no_food_safety_protection: "Keine Lebensmittelsicherheit"
@@ -1472,6 +1474,7 @@
  pm_aluminum_one_process: "Aluminiumoxidation"
  pm_aluminum_two_process: "Hall-Héroult-Verfahren"
  pm_aluminum_three_process: "Schmelzrecycling"
+ pm_aluminum_four_process: "Industrielle Ausbeutung"
  pm_aluminum_packaging: "Aluminiumverpackung"
  pm_plastic_packaging: "Kunststoffverpackung"
  pm_synthetic_rubber_plus: "Polyester"
@@ -1761,6 +1764,7 @@
 
  ut_air_support_mobilization_option_group: "Luftunterstützung"
  ut_doctrine_mobilization_option_group: "Doktrinen"
+
 # Demands
  demand_ban_slavery: "Forderung: Verbots der Sklaverei"
  demand_conquest: "Forderung: Eroberung"
