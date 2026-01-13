@@ -639,12 +639,6 @@ building_offshore_wind_farm = {
 }
 
 
-INJECT:building_power_plant = {
-	production_method_groups = {
-		pmg_ut_high_voltage_electricity
-	}
-}
-
 building_ut_power_grid = {
     building_group = bg_power
 	#Utopias power grid is inspired by 1230james' PPP mod
@@ -758,13 +752,4 @@ building_ut_power_grid_base = {
 			#todo maybe more
         }
     }
-}
-
-INJECT:building_power_plant = {
-	possible = {
-		owner = {
-			NOT = { has_law_or_variant = law_type:law_industry_banned }
-			NOT = { has_law_or_variant = law_type:law_environment_protection_institute_three }
-		}
-	}
 }
