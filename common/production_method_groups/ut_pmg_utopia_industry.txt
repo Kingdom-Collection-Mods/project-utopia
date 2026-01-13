@@ -54,6 +54,7 @@ pmg_aluminum_making_process = {
 		pm_aluminum_one_process
 		pm_aluminum_two_process
 		pm_aluminum_three_process
+		pm_aluminum_four_process
 	}
 }
 

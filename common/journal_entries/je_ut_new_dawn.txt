@@ -415,7 +415,6 @@ je_ut_new_dawn_democratic = {
 			has_variable = je_ut_new_dawn_democratic_cultural_values_done
 			has_variable = je_ut_new_dawn_democratic_power_bloc_done
 			has_variable = je_ut_new_dawn_democratic_fair_elections_done
-			has_variable = je_ut_new_dawn_democratic_final_done
 		}
 		average_sol > 50
 		NOT = {
@@ -513,11 +512,22 @@ je_ut_new_dawn_democratic = {
 		effect = {
 			if = {
 				limit = {
-					has_variable = je_ut_new_dawn_democratic_fair_elections_done
+					has_variable = je_ut_new_dawn_democratic_spirit_done
 					has_law_or_variant = law_type:law_universal_suffrage
 				}
+				if = {
+					limit = {
+						NOT = {
+							has_variable = je_ut_new_dawn_democratic_fair_elections_trigger_var
+						}
+					}
+					set_variable = {
+						name = je_ut_new_dawn_democratic_fair_elections_trigger_var
+						value = 0
+					}
+				}
 				change_variable = {
-					name = je_ut_new_dawn_democratic_fair_elections_var
+					name = je_ut_new_dawn_democratic_fair_elections_trigger_var
 					add = 1
 				}
 			}
@@ -548,6 +558,13 @@ je_ut_new_dawn_democratic = {
 		remove_list_global_variable = {
 			name = ut_new_dawn_democratic_list
 			target = root
+		}
+		every_interest_group = {
+			limit = {
+				has_ideology = ideology:ideology_patriotic_democratic
+			}
+			remove_ideology = ideology_patriotic_democratic
+			add_ideology = ideology_patriotic
 		}
 	}
 
