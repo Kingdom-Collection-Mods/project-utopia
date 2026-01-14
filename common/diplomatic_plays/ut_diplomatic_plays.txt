@@ -5,13 +5,13 @@
 
 	selectable_in_lens = {
 		aggressive_diplomatic_plays_permitted = yes
+		has_modifier = ut_new_dawn_core_fascist_mod
 	}
 
 	possible = {
 		NOT = { is_country_type = decentralized }
 		aggressive_diplomatic_plays_permitted = yes
 		NOT = { is_subject_of = scope:target_country }
-		has_modifier = ut_new_dawn_core_fascist_mod
 		scope:target_country = {
 			NOT = { is_country_type = decentralized }
 			NOT = { is_subject_of = root }

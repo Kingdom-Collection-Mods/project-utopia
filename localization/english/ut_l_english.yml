@@ -904,7 +904,7 @@
  war_goal_ut_regime_change_communist_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] forces [WAR_GOAL_DRAFT.GetTarget.GetName] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to their own. The following Law will be enforced:  [GetLawType('law_council_republic').GetName]"
 
  dp_ut_fascist_annex_war: "Invade Country"
- dp_ut_fascist_annex_war_tooltip: "Start an $dp_annex_war$ [concept_diplomatic_play]"
+ dp_ut_fascist_annex_war_tooltip: "Start an $dp_annex_war$ [concept_diplomatic_play] (Unlocked by being Fascist)"
 
  ut_fund_ideology: "Fund Ideology"
  ut_fund_ideology_action_name: "$ut_fund_ideology$"
