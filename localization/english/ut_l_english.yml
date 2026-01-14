@@ -1394,8 +1394,8 @@
  pmg_ut_power_grid: "Base"
  ut_pm_power_grid_import: "Convert Electricity"
 
- pmg_ut_power_grid_base: "Base"
- pm_ut_power_grid_base: "Power Grid Base"
+ pmg_base_building_ut_power_grid_base: "Base"
+ pm_base_building_ut_power_grid_base: "Power Grid Base"
 
  pm_truck_production: "Truck Production"
  pm_modern_automobiles: "Modern Automobiles"
