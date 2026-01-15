@@ -116,7 +116,7 @@
 					}
 					add = {
 						desc = "UT_BOTH_DEMOCRATIC"
-						value = 100
+						value = 200
 					}
 				}
 				
