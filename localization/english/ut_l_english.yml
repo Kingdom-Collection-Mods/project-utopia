@@ -545,8 +545,8 @@
  ideology_urbanist_economy_base_desc: "Rationalist ideologies favor governance by experts and the efficient management of state and society. They rely on science-based decisions and support education, technology, and public services."
  ideology_urbanist_human_rights_base: "Humanists"
  ideology_urbanist_human_rights_base_desc: "Humanist ideologies focus on equality, social justice, and the protection of individual rights. They reject slavery and exploitation and advocate for strong social safety nets."
- ut_ideology_environmentalist_leader: "Ecologist"
- ut_ideology_environmentalist_leader_desc: "#lore Environmentalists.#!"
+ ut_ideology_environmentalist_leader: "Environmentalist"
+ ut_ideology_environmentalist_leader_desc: "Environmentalist ideologies prioritize the protection of the environment and sustainable development. They advocate for policies that address climate change, conserve natural resources, and promote ecological balance."
  ut_ideology_environmentalist_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_environmentalist_leader').GetName] [concept_ideology]"
 
  ut_ideology_cosmopolitan: "Cosmopolitan"

@@ -56,7 +56,7 @@
 	}
 	
 	interest_group_leader_weight = {
-		value = 100
+		value = 50
 		# very angry IG's more likely to turn to more radical measures
 		if = {
 			limit = {
@@ -71,13 +71,26 @@
 				owner = {
 					NOT = {
 						AND = {
-							has_law = law_type:law_environment_protection_institute_two
+							has_law = law_type:law_environment_protection_institute_three
 							has_law = law_type:law_food_safety_protection_institute_two
 						}
 					}
 				}
 			}
-			add = 75
+			add = 75 
+		}
+		if = {
+			limit = {
+				owner = {
+					NOT = {
+						AND = {
+							has_law = law_type:law_environment_protection_institute_one
+							has_law = law_type:law_food_safety_protection_institute_one
+						}
+					}
+				}
+			}
+			add = 25
 		}
 		if = {
 			limit = {
@@ -85,7 +98,7 @@
 					has_technology_researched = epa_two
 				}
 			}
-			add = 25
+			add = 50
 		}
 		
 		if = {
@@ -94,7 +107,7 @@
 					has_technology_researched = epa_three
 				}
 			}
-			add = 25
+			add = 50
 		}
 		
 		if = {
@@ -103,7 +116,7 @@
 					has_technology_researched = food_standards_one
 				}
 			}
-			add = 25
+			add = 50
 		}
 	}
 	
@@ -113,6 +126,19 @@
 		if = {
 			limit = {
 				owner = {
+					NOT = {
+						AND = {
+							has_law = law_type:law_environment_protection_institute_one
+							has_law = law_type:law_food_safety_protection_institute_one
+						}
+					}
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				owner = {
 					has_technology_researched = epa_two
 				}
 			}
@@ -125,7 +151,7 @@
 					has_technology_researched = epa_three
 				}
 			}
-			add = 25
+			add = 50
 		}
 		
 		if = {
@@ -1231,42 +1257,13 @@ ut_liberal_feminism_leader = {
 				}
 				owner = {
 					OR = {
-						has_law = law_type:law_agrarianism
-						has_law = law_type:law_traditionalism
-						has_law = law_type:law_isolationism
-						has_law = law_type:law_mercantilism
+						has_law = law_type:law_free_trade
+						has_law = law_type:law_laissez_faire
+						NOT = { has_law = law_type:law_equal_rights_for_women }
 					}
 				}
 			}
 			add = 50
-		}
-		# more likely for weaker landowers when industrialists are powerful
-		if = {
-			limit = {
-				is_interest_group_type = ig_landowners
-				is_powerful = no
-				owner = {
-					exists = ig:ig_industrialists
-					ig:ig_industrialists = {
-						is_powerful = yes
-					}
-				}
-			}
-			add = 75
-		}
-		# less likely for powerful landowners under traditional laws
-		if = {
-			limit = {
-				is_interest_group_type = ig_landowners
-				is_powerful = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_agrarianism
-						has_law = law_type:law_traditionalism
-					}
-				}
-			}
-			add = -75
 		}
 		# very unlikely in countries without a large urban center
 		if = {
@@ -1276,7 +1273,7 @@ ut_liberal_feminism_leader = {
 						any_scope_state = {
 							any_scope_building = {
 								is_building_type = building_urban_center
-								level >= 10
+								level >= 20
 							}
 						}
 					}
@@ -1306,46 +1303,13 @@ ut_liberal_feminism_leader = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_free_trade
-					has_law = law_type:law_laissez_faire
+					has_law = law_type:law_free_trade_union
+					has_law = law_type:law_free_market_economy
 					has_law = law_type:law_commercialized_agriculture
+					has_law = law_type:law_equal_rights_for_women
 				}
 			}
 			add = -75
-		}
-		# less likely for conservative French IG's
-		if = {
-			limit = {
-				owner = {
-					exists = c:FRA
-					this = c:FRA
-					has_journal_entry = je_divided_monarchists
-				}
-				OR = {
-					is_interest_group_type = ig_industrialists
-					is_interest_group_type = ig_petty_bourgeoisie
-				}
-			}
-			add = -100
-		}
-		# liberal and/or radical leaders have a higher spawn chance if the Dreyfusards won.
-		if = {
-			limit = {
-				has_variable = dreyfusard_victory
-			}
-			add = 50
-		}
-		# More likely under Alexander II
-		if = {
-			limit = {
-				owner = {
-					any_scope_character = {
-						has_template = RUS_alexander_ii
-						is_ruler = yes
-					}
-				}
-			}
-			add = 75
 		}
 		
 		if = {
@@ -1356,30 +1320,17 @@ ut_liberal_feminism_leader = {
 			}
 			multiply = 1.25
 		}
+		#extra boost if on vanilla women rights
 		if = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_equal_rights_for_women
+						has_law = law_type:law_womens_suffrage
 						has_technology_researched = feminism_3
 					}
 				}
 			}
-			multiply = 1.5
-		}
-		if = {
-			limit = {
-				OR = {
-					has_variable = communist_ig_var
-					has_variable = chose_vanguardism
-					has_variable = chose_anarchism
-					has_variable = chose_communism
-					has_variable = chose_ethno_nationalism
-					has_variable = chose_conservatism
-					has_variable = chose_fascism
-				}
-			}
-			multiply = 0.1
+			multiply = 1.25
 		}
 	}
 	
@@ -1387,19 +1338,17 @@ ut_liberal_feminism_leader = {
 		value = 100
 		if = {
 			limit = {
-				interest_group = {
-					OR = {
-						has_variable = communist_ig_var
-						has_variable = chose_vanguardism
-						has_variable = chose_anarchism
-						has_variable = chose_communism
-						has_variable = chose_ethno_nationalism
-						has_variable = chose_conservatism
-						has_variable = chose_fascism
-					}
+				owner = {
+					NOT = { has_law = law_type:law_equal_rights_for_women}
 				}
 			}
-			multiply = 0.1
+			add = 50
+		}
+		if = {
+			limit = {
+				is_female = yes
+			}
+			add = 50
 		}
 	}	
 }
@@ -1542,6 +1491,7 @@ ut_radical_feminism_leader = {
 						has_law = law_type:law_outlawed_dissent
 						has_law = law_type:law_autocracy
 						has_law = law_type:law_oligarchy
+						NOT = { has_law = law_type:law_affirmative_equality }
 					}
 					any_scope_state = {
 						is_incorporated = yes
@@ -1557,6 +1507,7 @@ ut_radical_feminism_leader = {
 					OR = {
 						has_law = law_type:law_censorship
 						has_law = law_type:law_landed_voting
+						has_law = law_type:law_census_voting
 					}
 					any_scope_state = {
 						is_incorporated = yes
@@ -1576,6 +1527,9 @@ ut_radical_feminism_leader = {
 						has_law = law_type:law_outlawed_dissent
 						has_law = law_type:law_autocracy
 						has_law = law_type:law_oligarchy
+						
+						has_law = law_type:law_women_in_the_workplace 
+						has_law = law_type:law_womens_suffrage
 					}
 				}
 			}
@@ -1586,7 +1540,7 @@ ut_radical_feminism_leader = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
-					has_technology_researched = socialism
+					has_technology_researched = political_progress_3_neoliberalism
 				}
 			}
 			add = -200
@@ -1627,22 +1581,7 @@ ut_radical_feminism_leader = {
 			}
 			multiply = { value = 0.5 }
 		}
-		# liberal and/or radical leaders have a higher spawn chance if the Dreyfusards won.
-		if = {
-			limit = {
-				has_variable = dreyfusard_victory
-			}
-			add = 50
-		}
-		# Pedro JE victory
-		if = {
-			limit = {
-				owner = {
-					has_variable = brz_enduring_empire
-				}
-			}
-			add = -25
-		}
+		
 		if = {
 			limit = {
 				owner = {
@@ -1662,39 +1601,33 @@ ut_radical_feminism_leader = {
 			}
 			multiply = 1.5
 		}
-		if = {
-			limit = {
-				OR = {
-					has_variable = communist_ig_var
-					has_variable = chose_vanguardism
-					has_variable = chose_anarchism
-					has_variable = chose_communism
-					has_variable = chose_ethno_nationalism
-					has_variable = chose_conservatism
-					has_variable = chose_fascism
-				}
-			}
-			multiply = 0.1
-		}
 	}
 	
 	non_interest_group_leader_weight = {
 		value = 100
+		
 		if = {
 			limit = {
-				interest_group = {
-					OR = {
-						has_variable = communist_ig_var
-						has_variable = chose_vanguardism
-						has_variable = chose_anarchism
-						has_variable = chose_communism
-						has_variable = chose_ethno_nationalism
-						has_variable = chose_conservatism
-						has_variable = chose_fascism
-					}
+				owner = {
+					NOT = { has_law = law_type:law_equal_rights_for_women }
+					NOT = { has_law = law_type:law_affirmative_equality }
 				}
 			}
-			multiply = 0.1
+			add = 25
+		}
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_affirmative_equality }
+				}
+			}
+			add = 25
+		}
+		if = {
+			limit = {
+				is_female = yes
+			}
+			add = 50
 		}
 		if = {
 			limit = {
@@ -1704,11 +1637,12 @@ ut_radical_feminism_leader = {
 			}
 			multiply = 1.25
 		}
+		#extra boost if on vanilla women rights
 		if = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_equal_rights_for_women
+						has_law = law_type:law_womens_suffrage
 						has_technology_researched = feminism_3
 					}
 				}
@@ -1824,20 +1758,25 @@ ut_social_feminism_leader = {
 		if = {
 			limit = {
 				owner = {
-					NAND = {
-						has_law_or_variant = law_type:law_affirmative_equality
-						has_law_or_variant = law_type:law_graduated_taxation
-						has_law_or_variant = law_type:law_universal_suffrage
-						has_law_or_variant = law_type:law_ut_minimum_wage
+					NOT = {
+						AND = {
+							has_law_or_variant = law_type:law_affirmative_equality
+							OR = {
+								has_law_or_variant = law_type:law_graduated_taxation
+								has_law_or_variant = law_type:ut_law_tax_code
+							}
+							has_law_or_variant = law_type:law_universal_suffrage
+							has_law_or_variant = law_type:law_ut_minimum_wage
+						}
 					}
 				}
 			}
 			add = 50
 		}
-		# more likely for content devout in council republic
+		# more likely for content petty bourgeoisie in council republic
 		if = {
 			limit = {
-				is_interest_group_type = ig_devout
+				is_interest_group_type = ig_petty_bourgeoisie
 				ig_approval >= 0
 				owner = {
 					has_law = law_type:law_council_republic
@@ -1862,41 +1801,21 @@ ut_social_feminism_leader = {
 				is_interest_group_type = ig_trade_unions
 				owner = {
 					has_law = law_type:law_council_republic
+					NOT = {
+						OR = {
+							has_law = law_type:law_affirmative_equality
+							has_law = law_type:law_equal_rights_for_women
+						}
+					}
 				}
 			}
 			multiply = 0.01
-		}
-		# liberal and/or radical leaders have a higher spawn chance if the Dreyfusards won.
-		if = {
-			limit = {
-				has_variable = dreyfusard_victory
-			}
-			add = 50
-		}
-		# Pedro JE victory
-		if = {
-			limit = {
-				owner = {
-					has_variable = brz_enduring_empire
-				}
-			}
-			add = 50
-		}
-		# National Liberation Alliance
-		if = {
-			limit = {
-				owner = {
-					has_variable = national_liberation_alliance_variable
-					has_journal_entry = je_new_republic
-				}
-			}
-			multiply = 1.20
 		}
 		if = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_equal_rights_for_women
+						has_law = law_type:law_womens_suffrage
 						has_technology_researched = feminism_3
 					}
 				}
@@ -1914,53 +1833,43 @@ ut_social_feminism_leader = {
 			}
 			multiply = 1.25
 		}
-		if = {
-			limit = {
-				OR = {
-					has_variable = communist_ig_var
-					has_variable = chose_vanguardism
-					has_variable = chose_anarchism
-					has_variable = chose_communism
-					has_variable = chose_ethno_nationalism
-					has_variable = chose_conservatism
-					has_variable = chose_fascism
-				}
-			}
-			multiply = 0.1
-		}
 	}
 	
 	non_interest_group_leader_weight = {
-		value = 100
+		value = 100	
+		
 		if = {
 			limit = {
-				interest_group = {
-					OR = {
-						has_variable = communist_ig_var
-						has_variable = chose_vanguardism
-						has_variable = chose_anarchism
-						has_variable = chose_communism
-						has_variable = chose_ethno_nationalism
-						has_variable = chose_conservatism
-						has_variable = chose_fascism
-					}
+				owner = {
+					NOT = { has_law = law_type:law_equal_rights_for_women }
+					NOT = { has_law = law_type:law_affirmative_equality }
 				}
 			}
-			multiply = 0.1
+			add = 50
+		}
+		if = {
+			limit = {
+				is_female = yes
+			}
+			add = 50
 		}
 		if = {
 			limit = {
 				owner = {
-					has_modifier = ut_new_dawn_core_communist_mod
+					OR = {
+						has_modifier = ut_new_dawn_core_democratic_mod
+						has_modifier = ut_new_dawn_core_communist_mod
+					}
 				}
 			}
 			multiply = 1.25
 		}
+		#extra boost if on vanilla women rights
 		if = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_equal_rights_for_women
+						has_law = law_type:law_womens_suffrage
 						has_technology_researched = feminism_3
 					}
 				}
