@@ -198,7 +198,7 @@ check_payments = {
 	modifier = {
 		state_service_workers_investment_pool_efficiency_mult = 0.05
 		country_minting_mult = 0.05
-		country_loan_interest_rate_mult = -0.01
+		country_loan_interest_rate_add = -0.02
 	}
 
 	unlocking_technologies = {	
@@ -220,7 +220,7 @@ credit_cards = {
 	modifier = {
 		state_service_workers_investment_pool_efficiency_mult = 0.05
 		country_minting_mult = 0.05
-		country_loan_interest_rate_mult = -0.01
+		country_loan_interest_rate_add = -0.02
 	}
 
 	unlocking_technologies = {	
