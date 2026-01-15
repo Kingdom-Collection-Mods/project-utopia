@@ -1,4 +1,4 @@
-﻿ig_urbanists = {
+ig_urbanists = {
 	color = hsv{ 0.55 0.4 0.9 }
 	texture = "gfx/interface/icons/ig_icons/urbanists.dds"
 	layer = "revolution_dynamic_intelligentsia"
@@ -24,7 +24,6 @@
 		ideology_authoritarian
 		ideology_corporatist_leader
 		ideology_liberal_leader
-		ideology_ethno_nationalist
 		ideology_fascist
 		ideology_feminist
 		ideology_humanitarian
