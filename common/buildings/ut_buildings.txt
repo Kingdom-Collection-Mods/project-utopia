@@ -293,7 +293,7 @@ building_software_company = {
 
 
 highways = {
-	building_group = bg_private_infrastructure	
+	building_group = bg_government	
 	icon = "gfx/interface/icons/building_icons/highways.dds"
 	
 	lens = infrastructure
