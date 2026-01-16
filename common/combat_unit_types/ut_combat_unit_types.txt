@@ -38,6 +38,10 @@ combat_unit_type_motorized_infantry = {
     combat_unit_image = {
         texture = "gfx/unit_illustrations/infantry_motorized.dds"
     }
+
+    upgrades = {
+        combat_unit_type_armored_infantry
+    }
 }
 
 combat_unit_type_armored_infantry = {
