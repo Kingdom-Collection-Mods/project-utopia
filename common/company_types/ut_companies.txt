@@ -48,6 +48,7 @@
 				level >= 10
 			}
 		}
+		country_rank >= rank_value:major_power
 	}
 
 	ai_weight = {
@@ -102,6 +103,7 @@ ut_high_tech_company_research = {
 				level >= 10
 			}
 		}
+		country_rank >= rank_value:major_power
 	}
 	
 	ai_weight = {
@@ -156,6 +158,7 @@ ut_commercial_goods_simple_company = {
 				level >= 5
 			}
 		}
+		country_rank >= rank_value:major_power
 	}
 
 	ai_weight = {
@@ -209,6 +212,7 @@ ut_commercial_goods_complex_company = {
 				level >= 10
 			}
 		}
+		country_rank >= rank_value:major_power
 	}
 
 	ai_weight = {
@@ -257,6 +261,7 @@ ut_mining_company = {
 				level >= 5
 			}
 		}
+		country_rank >= rank_value:major_power
 	}
 
 	ai_weight = {
@@ -308,6 +313,7 @@ ut_electronics_company = {
 				level >= 10
 			}
 		}
+		country_rank >= rank_value:major_power
 	}
 
 	ai_weight = {
@@ -359,11 +365,6 @@ ut_mainframe_computer_company = {
 	ai_will_do = {
 		has_technology_researched = electronics
 		has_technology_researched = rare_earths_mining_era_analog
-		OR = {
-			has_technology_researched = heavy_machinery_era_analog_two
-			has_technology_researched = electronics_motors_production
-			has_technology_researched = consumer_goods_main_house_hold_electrical
-		}
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
@@ -371,6 +372,7 @@ ut_mainframe_computer_company = {
 				level >= 10
 			}
 		}
+		country_rank >= rank_value:major_power
 	}
 
 	ai_weight = {
@@ -422,6 +424,7 @@ ut_personal_computer_company = {
 				level >= 10
 			}
 		}
+		country_rank >= rank_value:major_power
 	}
 
 	ai_weight = {
@@ -474,7 +477,8 @@ ut_heavy_machinery_company_era_6 = {
 				level >= 5
 			}
 		}
-	}	
+		country_rank >= rank_value:major_power
+	}
 
 	ai_weight = {
 		value = 5 # Higher vanilla flavored
@@ -525,6 +529,7 @@ ut_heavy_machinery_company_era_7 = {
 				level >= 5
 			}
 		}
+		country_rank >= rank_value:major_power
 	}
 
 	ai_weight = {
@@ -576,6 +581,7 @@ ut_heavy_machinery_company_era_8 = {
 				level >= 5
 			}
 		}
+		country_rank >= rank_value:major_power
 	}
 
 	ai_weight = {
@@ -626,6 +632,7 @@ ut_software_company_era_7 = {
 				level >= 5
 			}
 		}
+		country_rank >= rank_value:major_power
 	}
 
 	ai_weight = {
@@ -676,6 +683,7 @@ ut_software_company_era_8 = {
 				level >= 5
 			}
 		}
+		country_rank >= rank_value:major_power
 	}
 
 	ai_weight = {
@@ -730,6 +738,7 @@ ut_synthetics_company = {
 				level >= 5
 			}
 		}
+		country_rank >= rank_value:major_power
 	}
 
 	ai_weight = {
@@ -782,6 +791,7 @@ ut_plastic_company = {
 				level >= 5
 			}
 		}
+		country_rank >= rank_value:major_power
 	}
 
 	ai_weight = {
@@ -825,7 +835,8 @@ ut_military_complex = {
 	}	
 		
 	ai_will_do = {
-		always = no
+		has_technology_researched = ut_military_complex
+		has_modifier = ut_new_dawn_core_fascist_mod
 	}
 
 	ai_weight = {
