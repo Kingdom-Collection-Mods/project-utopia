@@ -4,6 +4,8 @@
 
 	category = bureaucrat_owned
 	
+	flavored_company = no
+
 	building_types = {
 		building_explosives_factory
 		building_tooling_workshop
@@ -16,6 +18,7 @@
 	possible = { 
 		has_technology_researched = electrical_generation
 		any_scope_state = {
+			is_incorporated = yes
 			any_scope_building = {
 				OR = {
 					is_building_type = building_explosives_factory
@@ -33,7 +36,22 @@
 	}
 	
 	ai_will_do = {
-		always = no
+		has_technology_researched = electrical_generation
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_explosives_factory
+					is_building_type = building_chemical_plant
+					is_building_type = building_electronic_factory
+				}
+				level >= 10
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 2 # Higher base value less than flavored
 	}
 }
 
@@ -43,6 +61,8 @@ ut_high_tech_company_research = {
 	
 	category = bureaucrat_owned
 	
+	flavored_company = no
+
 	building_types = {
 		building_electronic_factory
 	}
@@ -54,6 +74,7 @@ ut_high_tech_company_research = {
 	possible = { 
 		has_technology_researched = electronics
 		any_scope_state = {
+			is_incorporated = yes
 			any_scope_building = {
 				OR = {
 					is_building_type = building_electronic_factory
@@ -71,7 +92,20 @@ ut_high_tech_company_research = {
 	}	
 		
 	ai_will_do = {
-		always = no
+		has_technology_researched = electronics
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_electronic_factory
+				}
+				level >= 10
+			}
+		}
+	}
+	
+	ai_weight = {
+		value = 1 # Base Value
 	}
 }
 
@@ -80,6 +114,8 @@ ut_commercial_goods_simple_company = {
 	icon = "gfx/interface/icons/company_icons/ut_commercial_goods_simple_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
+	flavored_company = no
+
 	building_types = {
 		building_commercial_factory
 		building_food_industry
@@ -97,6 +133,7 @@ ut_commercial_goods_simple_company = {
 		has_technology_researched = consumer_goods_main_analog
 		has_technology_researched = electronics
 		any_scope_state = {
+			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_commercial_factory
 				level >= 5
@@ -110,7 +147,19 @@ ut_commercial_goods_simple_company = {
 	}	
 		
 	ai_will_do = {
-		always = no
+		has_technology_researched = consumer_goods_main_analog
+		has_technology_researched = electronics
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_commercial_factory
+				level >= 5
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 5 # Higher vanilla flavored
 	}
 }
 
@@ -119,6 +168,8 @@ ut_commercial_goods_complex_company = {
 	icon = "gfx/interface/icons/company_icons/ut_commercial_goods_complex_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
+	flavored_company = no
+
 	building_types = {
 		building_commercial_factory
 		building_electronic_factory
@@ -136,6 +187,7 @@ ut_commercial_goods_complex_company = {
 	possible = { 
 		has_technology_researched = consumer_goods_main_entertainment_electrical
 		any_scope_state = {
+			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_commercial_factory
 				level >= 10
@@ -149,7 +201,18 @@ ut_commercial_goods_complex_company = {
 	}	
 		
 	ai_will_do = {
-		always = no
+		has_technology_researched = consumer_goods_main_entertainment_electrical
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_commercial_factory
+				level >= 10
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 5 # Higher vanilla flavored
 	}
 }
 
@@ -157,6 +220,8 @@ ut_mining_company = {
 	icon = "gfx/interface/icons/company_icons/ut_mining_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
+	flavored_company = no
+
 	building_types = {
 		building_aluminum_factory
 		building_rare_earths_mine
@@ -169,6 +234,7 @@ ut_mining_company = {
 	possible = { 
 		has_technology_researched = aluminum_base
 		any_scope_state = {
+			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_aluminum_factory
 				level >= 5
@@ -183,7 +249,18 @@ ut_mining_company = {
 	}	
 	
 	ai_will_do = {
-		always = no
+		has_technology_researched = aluminum_base
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_aluminum_factory
+				level >= 5
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 5 # Higher vanilla flavored
 	}
 }
 
@@ -192,6 +269,8 @@ ut_electronics_company = {
 	icon = "gfx/interface/icons/company_icons/ut_electronics_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
+	flavored_company = no
+
 	building_types = {
 		building_electronic_factory
 	}
@@ -207,6 +286,7 @@ ut_electronics_company = {
 	possible = { 
 		has_technology_researched = computers
 		any_scope_state = {
+			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_electronic_factory
 				level >= 10
@@ -220,7 +300,18 @@ ut_electronics_company = {
 	}	
 		
 	ai_will_do = {
-		always = no
+		has_technology_researched = computers
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_electronic_factory
+				level >= 10
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 5 # Higher vanilla flavored
 	}
 }
 
@@ -229,6 +320,8 @@ ut_mainframe_computer_company = {
 	icon = "gfx/interface/icons/company_icons/ut_mainframe_computer_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
+	flavored_company = no
+
 	building_types = {
 		building_computer_factory
 	}
@@ -250,6 +343,7 @@ ut_mainframe_computer_company = {
 			has_technology_researched = consumer_goods_main_house_hold_electrical
 		}
 		any_scope_state = {
+			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_computer_factory
 				level >= 10
@@ -263,7 +357,24 @@ ut_mainframe_computer_company = {
 	}	
 		
 	ai_will_do = {
-		always = no
+		has_technology_researched = electronics
+		has_technology_researched = rare_earths_mining_era_analog
+		OR = {
+			has_technology_researched = heavy_machinery_era_analog_two
+			has_technology_researched = electronics_motors_production
+			has_technology_researched = consumer_goods_main_house_hold_electrical
+		}
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_computer_factory
+				level >= 10
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 5 # Higher vanilla flavored
 	}
 }
 
@@ -271,6 +382,8 @@ ut_personal_computer_company = {
 	icon = "gfx/interface/icons/company_icons/ut_personal_computer_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
+	flavored_company = no
+
 	building_types = {
 		building_computer_factory
 		building_commercial_factory
@@ -287,6 +400,7 @@ ut_personal_computer_company = {
 	possible = { 
 		has_technology_researched = software
 		any_scope_state = {
+			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_computer_factory
 				level >= 10
@@ -300,7 +414,18 @@ ut_personal_computer_company = {
 	}	
 		
 	ai_will_do = {
-		always = no
+		has_technology_researched = software
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_computer_factory
+				level >= 10
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 5 # Higher vanilla flavored
 	}
 }
 
@@ -308,6 +433,8 @@ ut_heavy_machinery_company_era_6 = {
 	icon = "gfx/interface/icons/company_icons/ut_heavy_machinery_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
+	flavored_company = no
+
 	building_types = {
 		building_heavy_machinery_factory
 		building_steel_mill
@@ -325,6 +452,7 @@ ut_heavy_machinery_company_era_6 = {
 	possible = { 
 		has_technology_researched = heavy_machinery_era_analog_two
 		any_scope_state = {
+			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_heavy_machinery_factory
 				level >= 5
@@ -338,14 +466,27 @@ ut_heavy_machinery_company_era_6 = {
 	}
 		
 	ai_will_do = {
-		always = no
+		has_technology_researched = heavy_machinery_era_analog_two
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_heavy_machinery_factory
+				level >= 5
+			}
+		}
 	}	
+
+	ai_weight = {
+		value = 5 # Higher vanilla flavored
+	}
 }
 
 ut_heavy_machinery_company_era_7 = {
 	icon = "gfx/interface/icons/company_icons/ut_heavy_machinery_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
+	flavored_company = no
+
 	building_types = {
 		building_heavy_machinery_factory
 		building_steel_mill
@@ -362,6 +503,7 @@ ut_heavy_machinery_company_era_7 = {
 	possible = { 
 		has_technology_researched = heavy_machinery_era_digital
 		any_scope_state = {
+			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_heavy_machinery_factory
 				level >= 5
@@ -375,7 +517,18 @@ ut_heavy_machinery_company_era_7 = {
 	}	
 		
 	ai_will_do = {
-		always = no
+		has_technology_researched = heavy_machinery_era_digital
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_heavy_machinery_factory
+				level >= 5
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 5 # Higher vanilla flavored
 	}
 }
 
@@ -383,6 +536,8 @@ ut_heavy_machinery_company_era_8 = {
 	icon = "gfx/interface/icons/company_icons/ut_heavy_machinery_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
+	flavored_company = no
+
 	building_types = {
 		building_heavy_machinery_factory
 		building_computer_factory
@@ -400,6 +555,7 @@ ut_heavy_machinery_company_era_8 = {
 	possible = { 
 		has_technology_researched = heavy_machinery_era_web
 		any_scope_state = {
+			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_heavy_machinery_factory
 				level >= 5
@@ -412,7 +568,18 @@ ut_heavy_machinery_company_era_8 = {
 	}	
 		
 	ai_will_do = {
-		always = no
+		has_technology_researched = heavy_machinery_era_web
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_heavy_machinery_factory
+				level >= 5
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 5 # Higher vanilla flavored
 	}
 }
 
@@ -420,6 +587,8 @@ ut_software_company_era_7 = {
 	icon = "gfx/interface/icons/company_icons/ut_software_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
+	flavored_company = no
+
 	building_types = {
 		building_software_company
 	}
@@ -436,6 +605,7 @@ ut_software_company_era_7 = {
 	possible = { 
 		has_technology_researched = software
 		any_scope_state = {
+			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_software_company
 				level >= 5
@@ -448,7 +618,18 @@ ut_software_company_era_7 = {
 	}	
 		
 	ai_will_do = {
-		always = no
+		has_technology_researched = software
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_software_company
+				level >= 5
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 5 # Higher vanilla flavored
 	}
 }
 
@@ -456,6 +637,8 @@ ut_software_company_era_8 = {
 	icon = "gfx/interface/icons/company_icons/ut_software_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
+	flavored_company = no
+
 	building_types = {
 		building_software_company
 	}
@@ -472,6 +655,7 @@ ut_software_company_era_8 = {
 	possible = { 
 		has_technology_researched = internet
 		any_scope_state = {
+			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_software_company
 				level >= 5
@@ -484,7 +668,18 @@ ut_software_company_era_8 = {
 	}	
 		
 	ai_will_do = {
-		always = no
+		has_technology_researched = internet
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_software_company
+				level >= 5
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 5 # Higher vanilla flavored
 	}
 }
 
@@ -492,6 +687,8 @@ ut_synthetics_company = {
 	icon = "gfx/interface/icons/company_icons/ut_synthetics_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
+	flavored_company = no
+
 	building_types = {
 		building_synthetics_plant
 		building_synthetic_oil
@@ -505,6 +702,7 @@ ut_synthetics_company = {
 	possible = { 
 		has_technology_researched = plastics_polyester
 		any_scope_state = {
+			is_incorporated = yes
 			any_scope_building = {
 				OR = {
 					is_building_type = building_synthetics_plant
@@ -521,7 +719,21 @@ ut_synthetics_company = {
 	}	
 		
 	ai_will_do = {
-		always = no
+		has_technology_researched = plastics_polyester
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_synthetics_plant
+					is_building_type = building_synthetic_oil
+				}
+				level >= 5
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 5 # Higher vanilla flavored
 	}
 }
 
@@ -529,6 +741,8 @@ ut_plastic_company = {
 	icon = "gfx/interface/icons/company_icons/ut_plastic_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
+	flavored_company = no
+
 	building_types = {
 		building_plastic_factory
 	}
@@ -545,6 +759,8 @@ ut_plastic_company = {
 	possible = { 
 		has_technology_researched = plastics_polypropylene
 		any_scope_state = {
+			is_incorporated = yes
+			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_plastic_factory
 				level >= 5
@@ -557,6 +773,62 @@ ut_plastic_company = {
 	}	
 		
 	ai_will_do = {
+		has_technology_researched = plastics_polypropylene
+		any_scope_state = {
+			is_incorporated = yes
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_plastic_factory
+				level >= 5
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 5 # Higher vanilla flavored
+	}
+}
+
+ut_military_complex = {
+	icon = "gfx/interface/icons/company_icons/ut_plastic_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = no
+
+	building_types = {
+		building_automotive_industry
+		building_arms_industry
+	}
+	
+	extension_building_types = {
+		building_artillery_foundry
+		building_munition_plant
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_software_b2c
+	}
+
+	possible = { 
+		has_technology_researched = ut_military_complex
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_automotive_industry
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		country_military_tech_research_speed_mult = 0.1
+	}	
+		
+	ai_will_do = {
 		always = no
+	}
+
+	ai_weight = {
+		value = 2 # Higher base value less than flavored
 	}
 }
