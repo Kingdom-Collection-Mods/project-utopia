@@ -363,10 +363,30 @@ ut_private_construction_raised_mod = {
 	state_bureaucracy_population_base_cost_factor_mult = 0.05
 }
 
-ut_communist_propaganda_failed_mod = {
+ut_propaganda_failed_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
 }
 
-ut_communist_propaganda_mod = {
+ut_propaganda_communist_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	state_pop_support_movement_communist_mult = 0.25
+	political_movement_radicalism_add = 0.25
+}
+
+ut_propaganda_fascist_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	state_pop_support_movement_fascist_mult = 0.25
+	political_movement_radicalism_add = 0.25
+}
+
+ut_propaganda_autocratic_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	state_pop_support_movement_fascist_mult = 0.25
+	political_movement_radicalism_add = 0.25
+}
+
+ut_propaganda_democratic_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	state_pop_support_movement_liberal_mult = 0.25
+	political_movement_radicalism_add = 0.25
 }

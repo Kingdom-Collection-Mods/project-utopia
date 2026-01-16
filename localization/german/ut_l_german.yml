@@ -825,6 +825,10 @@
  ut_influence_new_dawn_major_power_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] was rejected $ut_influence_new_dawn_major_power$ from [INITIATOR_COUNTRY.GetName]."
  ut_influence_new_dawn_major_power_unlock_tt: "Verfügbare: #v $ut_influence_new_dawn_major_power$#!"
 
+ ut_new_dawn_start_propaganda_campaign: "Start Propaganda Campaign"
+ ut_je_propaganda_source: "Conducting Propaganda Campaign"
+ ut_je_propaganda_target: "Target of Propaganda Campaign"
+
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
  UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
  UT_BOTH_DIFFERENT_IDEOLOGY: "Different ideologies"
@@ -1516,7 +1520,8 @@
 
  pm_trade_center_trade_quantity_utopia: "Industriellerhandel"
 
- pm_supermarket: "Supermarkt"
+ pm_department_store: "Kaufhäuser"
+ pm_supermarket: "Supermärkte"
  pm_shopping_district: "Shopping Viertel"
  pm_online_shopping: "Online Shopping"
  

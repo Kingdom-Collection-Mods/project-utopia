@@ -275,15 +275,15 @@
  je_ut_new_dawn_autocrat_focus_desc: "Autocratic focus selected"
  je_ut_new_dawn_communist_focus: "Communist Focus"
  je_ut_new_dawn_communist_focus_desc: "Communist focus selected"
- ut_new_dawn_phase_2_progress_modifier: "x0.25 Multiplier"
+ ut_new_dawn_phase_2_progress_modifier: "x0.25 Multiplier during $new_dawn_phase_2_mod$"
 
- ut_new_dawn_core_fascist_mod: "Fascist"
+ ut_new_dawn_core_fascist_mod: "Fascist Ideology"
  je_ut_new_dawn_fascist_mod: "Fascist"
- ut_new_dawn_core_communist_mod: "Communist"
+ ut_new_dawn_core_communist_mod: "Communist Ideology"
  je_ut_new_dawn_communist_mod: "Communist"
- ut_new_dawn_core_autocratic_mod: "Autocratic"
+ ut_new_dawn_core_autocratic_mod: "Autocratic Ideology"
  je_ut_new_dawn_autocratic_mod: "Autocratic"
- ut_new_dawn_core_democratic_mod: "Democratic"
+ ut_new_dawn_core_democratic_mod: "Democratic Ideology"
  je_ut_new_dawn_democratic_mod: "Democratic"
  
  #[THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress_diff').GetValue|+=] for actual trend value
@@ -824,6 +824,12 @@
  ut_influence_new_dawn_major_power_proposal_third_party_declined_name: "$ut_influence_new_dawn_major_power$ Rejected"
  ut_influence_new_dawn_major_power_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] was rejected $ut_influence_new_dawn_major_power$ from [INITIATOR_COUNTRY.GetName]." 
  ut_influence_new_dawn_major_power_unlock_tt: "Unlocks: #v $ut_influence_new_dawn_major_power$#!"
+
+ ut_new_dawn_start_propaganda_campaign: "Start Propaganda Campaign"
+ ut_je_propaganda_source: "Conducting Propaganda Campaign"
+ ut_je_propaganda_target: "Target of Propaganda Campaign"
+
+ ut_propaganda_communist_mod: "Communist Propaganda"
 
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
  UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
@@ -1516,7 +1522,8 @@
 
  pm_trade_center_trade_quantity_utopia: "Industrial Trade"
 
- pm_supermarket: "Supermarket"
+ pm_department_store: "Department Store"
+ pm_supermarket: "Supermarkets"
  pm_shopping_district: "Shopping District"
  pm_online_shopping: "Online Shopping"
 

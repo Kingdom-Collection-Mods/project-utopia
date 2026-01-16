@@ -1,62 +1,97 @@
-﻿ut_je_communist_propaganda_source = {
+﻿ut_je_propaganda_source = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_utopia
 
+	immediate = {
+		set_variable = {
+			name = ut_propaganda_source_var
+			value = 0
+		}
+	}
+
 	on_monthly_pulse = {
 		effect = {
 			change_variable = {
-				name = ut_communist_propaganda_var
+				name = ut_propaganda_source_var
 				add = 1
 			}
 		}
-		#todo events
 	}
 
 	complete = {
 		scope:journal_entry = { is_goal_complete = yes }
 	}
 
-	on_complete = {
-		# remove_modifier = ut_research_institute_found_mod
-		# trigger_event = { id = utopia_journal_prod.40 } # site found
-		# set_variable = ut_research_institute_found
-
-		
-		scope:target = {
-			add_modifier = {
-				name = ut_communist_propaganda_mod
+	on_complete = {	
+		if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_communist_mod
 			}
-			je:je_ut_new_dawn = {
-				add_progress = {
-					value = 60
-					name = ut_new_dawn_communist_bar
+			scope:target = {
+				add_modifier = {
+					name = ut_propaganda_communist_mod
+					days = normal_modifier_time
+					is_decaying = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+			scope:target = {
+				add_modifier = {
+					name = ut_propaganda_democratic_mod
+					days = normal_modifier_time
+					is_decaying = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+			}
+			scope:target = {
+				add_modifier = {
+					name = ut_propaganda_fascist_mod
+					days = normal_modifier_time
+					is_decaying = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_autocratic_mod
+			}
+			scope:target = {
+				add_modifier = {
+					name = ut_propaganda_autocratic_mod
+					days = normal_modifier_time
+					is_decaying = yes
 				}
 			}
 		}
 	}
 
-	invalid = {
-		OR = {
-			NOT = {
-				any_scope_state = {
-					is_split_state = no
-					is_incorporated = yes
-					ut_research_institute_site_building_trigger = yes
-				}
-			}
-			#so it finishes when cheating
-			has_variable = ut_research_institute_found_done
-		}		
+	fail = {
+		custom_tooltip = {
+			text = ut_je_propaganda_source_abort_tt
+			has_variable = ut_propaganda_source_abandon_var
+		}
+		NOT = { exists = scope:target }
 	}
 
-	on_invalid = {
-		remove_modifier = ut_research_institute_found_mod
-		remove_variable = ut_communist_propaganda_var
+	on_fail = {
+		remove_variable = ut_propaganda_source_abandon_var
+		remove_variable = ut_propaganda_source_var
+		scope:target = {
+			set_variable = ut_propaganda_target_abandon_var
+		}
 	}
 
 	current_value = {
-		value = root.var:ut_communist_propaganda_var
+		value = root.var:ut_propaganda_source_var
 	}
 
 	goal_add_value = {
@@ -70,58 +105,79 @@
 	should_be_pinned_by_default = yes
 }
 
-ut_je_communist_propaganda_target = {
+ut_je_propaganda_target = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_utopia
 
-	on_monthly_pulse = {
-		effect = {
-			set_variable = {
-				name = ut_communist_propaganda_var
-				value = scope:target.var:ut_communist_propaganda_var
-			}
-		}
-		#todo events
-	}
-
 	complete = {
-		scope:target = {
-			NOT = { has_modifier = ut_communist_propaganda_failed_mod }
-			NOT = { has_journal_entry = ut_je_communist_propaganda_source }
+		custom_tooltip = {
+			text = ut_je_propaganda_target_abort_tt
+			OR = {
+				NOT = { exists = scope:target }
+				has_variable = ut_propaganda_target_abandon_var
+			}
 		}
 	}
 
 	on_complete = {
+	}
+
+	fail = {
+		scope:journal_entry = { is_goal_complete = yes }
+	}
+
+	on_fail = {
 		show_as_tooltip = {
-			add_modifier = {
-				name = ut_communist_propaganda_mod
+			if = {
+				limit = {
+					scope:target = {
+						has_modifier = ut_new_dawn_core_communist_mod
+					}
+				}
+				add_modifier = {
+					name = ut_propaganda_communist_mod
+					days = short_modifier_time #2.5 years
+				}
 			}
-			je:je_ut_new_dawn = {
-				add_progress = {
-					value = 60
-					name = ut_new_dawn_communist_bar
+			else_if = {
+				limit = {
+					scope:target = {
+						has_modifier = ut_new_dawn_core_democrat_mod
+					}
+				}
+				add_modifier = {
+					name = ut_propaganda_democrat_mod
+					days = short_modifier_time #2.5 years
+				}
+			}
+			else_if = {
+				limit = {
+					scope:target = {
+						has_modifier = ut_new_dawn_core_fascist_mod
+					}
+				}
+				add_modifier = {
+					name = ut_propaganda_fascist_mod
+					days = short_modifier_time #2.5 years
+				}
+			}
+			else_if = {
+				limit = {
+					scope:target = {
+						has_modifier = ut_new_dawn_core_autocratic_mod
+					}
+				}
+				add_modifier = {
+					name = ut_propaganda_autocratic_mod
+					days = short_modifier_time #2.5 years
 				}
 			}
 		}
-
-		# remove_modifier = ut_research_institute_found_mod
-		# trigger_event = { id = utopia_journal_prod.40 } # site found
-		# set_variable = ut_research_institute_found
-	}
-
-	invalid = {
-		scope:target = {
-			has_modifier = ut_communist_propaganda_failed_mod
-			NOT = { has_journal_entry = ut_je_communist_propaganda_source }
-		}
-	}
-
-	on_invalid = {
 	}
 
 	current_value = {
-		value = root.var:ut_communist_propaganda_var
+		value = scope:target.var:ut_propaganda_source_var
 	}
 
 	goal_add_value = {
