@@ -605,7 +605,7 @@ ut_software_company_era_7 = {
 
 	
 	possible_prestige_goods = {
-		prestige_good_generic_software_b2b
+		prestige_good_generic_utopia_tanks
 	}
 
 	possible = { 

@@ -65,6 +65,12 @@ prestige_good_generic_software_b2b = {
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/database_software.dds"
 }
 
+prestige_good_generic_software_b2c = {
+	base_good = software
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/database_software.dds"
+}
+
 prestige_good_generic_utopia_arms = {
 	base_good = utopia_arms
 	prestige_bonus = 0.1
