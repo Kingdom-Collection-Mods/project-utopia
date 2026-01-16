@@ -587,3 +587,153 @@ ut_add_new_dawn_progress_communist = {
 		}
 	}
 }
+
+
+REPLACE:set_promised_building_group = { #Note: ig_scope
+	# First perform arable land check and set variable for staple crops. This system can be expanded to check for other resources.
+	scope:ig = {
+		set_variable = {
+			name = promised_building_group
+			value = bg:bg_staple_crops
+		}
+	}
+	if = {
+		limit = {
+			has_enough_arable_land = yes
+		}
+		set_variable = arable_land_true
+		remove_variable = promised_building_group
+	}
+	else = {
+		remove_variable = promised_building_group
+	}
+
+	#now set the desired building group
+  	if = {##Landowners and rural folk want farms.
+    	limit = {
+			is_interest_group_type = ig_landowners
+        }
+        random_list = {
+        	50 = {
+        		trigger = {
+    				has_variable = arable_land_true
+    				bg:bg_staple_crops = {
+	        			building_group_can_be_promised = yes
+        			}
+        		}
+        		set_variable = {
+	    			name = promised_building_group
+	    			value = bg:bg_staple_crops
+    			}
+        	}
+        }
+    }
+   	else_if = {##Landowners and rural folk want farms.
+    	limit = {
+			is_interest_group_type = ig_rural_folk
+        }
+        random_list = {
+        	95 = {
+        		trigger = { #arable land checked later
+    				has_variable = arable_land_true
+    				bg:bg_staple_crops = {
+	        			building_group_can_be_promised = yes
+        			}
+        		}
+        		set_variable = {
+	    			name = promised_building_group
+	    			value = bg:bg_staple_crops
+    			}
+        	}
+        }
+    }
+    else_if = {##PB want light industry
+    	limit = {
+			is_interest_group_type = ig_petty_bourgeoisie
+        }
+        random_list = {
+        	50 = {
+        		trigger = { #arable land checked later
+    				bg:bg_light_industry = {
+	        			building_group_can_be_promised = yes
+        			}
+        		}
+        		set_variable = {
+	    			name = promised_building_group
+	    			value = bg:bg_light_industry
+    			}
+        	}
+        }
+    }
+
+    else_if = {##Industrialist want Heavy industry
+    	limit = {
+			is_interest_group_type = ig_industrialists
+        }
+        random_list = {
+        	30 = {
+        		trigger = { #arable land checked later
+    				bg:bg_heavy_industry = {
+	        			building_group_can_be_promised = yes
+        			}
+        		}
+        		set_variable = {
+	    			name = promised_building_group
+	    			value = bg:bg_heavy_industry
+    			}
+        	}
+			
+        	60 = {
+        		trigger = { #arable land checked later
+    				bg:bg_modern_industry = {
+	        			building_group_can_be_promised = yes
+        			}
+        		}
+        		set_variable = {
+	    			name = promised_building_group
+	    			value = bg:bg_modern_industry
+    			}
+        	}
+        }
+    }
+    else_if = {##trade unions want jobs.
+    	limit = {
+			is_interest_group_type = ig_trade_unions
+        }
+        random_list = {
+        	10 = {
+        		trigger = { #arable land checked later
+    				bg:bg_modern_industry = {
+	        			building_group_can_be_promised = yes
+        			}
+        		}
+        		set_variable = {
+	    			name = promised_building_group
+	    			value = bg:bg_modern_industry
+    			}
+        	}
+        	30 = {
+        		trigger = { #arable land checked later
+    				bg:bg_heavy_industry = {
+	        			building_group_can_be_promised = yes
+        			}
+        		}
+        		set_variable = {
+	    			name = promised_building_group
+	    			value = bg:bg_heavy_industry
+    			}
+        	}
+        	50 = {
+        		trigger = { #arable land checked later
+    				bg:bg_light_industry = {
+	        			building_group_can_be_promised = yes
+        			}
+        		}
+        		set_variable = {
+	    			name = promised_building_group
+	    			value = bg:bg_light_industry
+    			}
+        	}
+        }
+    }
+}
