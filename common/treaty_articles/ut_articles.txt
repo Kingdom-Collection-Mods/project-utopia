@@ -1238,6 +1238,13 @@ ut_democracy_article = {
 			OR = {
 				has_modifier = ut_new_dawn_core_democratic_mod
 				NOT = { ut_new_dawn_has_core_trigger = yes }
+				AND = {
+					is_in_power_bloc = yes
+					power_bloc ?= scope:source_country.power_bloc
+					scope:source_country = {
+						is_power_bloc_leader = yes
+					}
+				}
 			}
 		}
 	}
