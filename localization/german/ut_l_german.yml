@@ -1594,6 +1594,9 @@
  prestige_good_generic_plastic: "PVC-Plastik"
  prestige_good_generic_software_b2b: "Datenbank Software"
  prestige_good_generic_software_b2c: "Büro Software"
+ prestige_good_generic_utopia_tanks: "MBT-42"
+ prestige_good_generic_utopia_arms: "Sturmgewehre"
+ prestige_good_generic_utopia_artillery: "Selbstfahrende Haubitzen"
 
 #goods input output
  goods_input_heavy_machinery_add: "@heavy_machinery! Maschinen Zufuhr"

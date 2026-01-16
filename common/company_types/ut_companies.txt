@@ -605,7 +605,7 @@ ut_software_company_era_7 = {
 
 	
 	possible_prestige_goods = {
-		prestige_good_generic_utopia_tanks
+		prestige_good_generic_software_b2b
 	}
 
 	possible = { 
@@ -816,7 +816,7 @@ ut_military_complex = {
 	}
 
 	possible_prestige_goods = {
-		prestige_good_generic_software_b2c
+		prestige_good_generic_utopia_tanks
 	}
 
 	possible = { 
@@ -836,6 +836,13 @@ ut_military_complex = {
 		
 	ai_will_do = {
 		has_technology_researched = ut_military_complex
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_automotive_industry
+				level >= 1
+			}
+		}
 		has_modifier = ut_new_dawn_core_fascist_mod
 	}
 
