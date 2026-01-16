@@ -9,7 +9,7 @@
  utopia.continue: "Continue"
  utopia.cheat: "Cheat"
  utopia.disable: "Disable"
- error: "Error" 
+ utopia.error: "Error" 
 
 # Events & Journals
  ut_heavy_industrial_machinery_je: "Heavy Industrial Machinery"
@@ -826,11 +826,26 @@
  ut_influence_new_dawn_major_power_unlock_tt: "Unlocks: #v $ut_influence_new_dawn_major_power$#!"
 
  ut_new_dawn_start_propaganda_campaign: "Start Propaganda Campaign"
- ut_je_propaganda_source: "Conducting Propaganda Campaign"
+ ut_new_dawn_start_propaganda_campaign_desc: "Start a propaganda campaign in the target country to increase the chance of revolutions. After a year the modifier is applied and the action can be used again. The modifier is stackable."
+ ut_je_propaganda_source_mod: "Conducting Propaganda Campaign"
+ ut_je_propaganda_source: "Propaganda Campaign"
+ ut_je_propaganda_source_reason: "A propaganda campaign is being conducted. A successful campaign will increase activism of movements and chance of revolutions."
+ ut_je_propaganda_source_goal: "Wait 12 months"
  ut_je_propaganda_target: "Target of Propaganda Campaign"
+ ut_je_propaganda_source_abort_tt: "Has aborted the propaganda campaign."
+
+ ut_new_dawn_propaganda_source_abort: "Abort Propaganda Campaign"
+ ut_new_dawn_propaganda_source_abort_desc: ""
+ ut_new_dawn_propaganda_source_abort_tt: "Abort the ongoing propaganda campaign."
+ ut_new_dawn_propaganda_target_defend: "Defend Against Propaganda"
+ ut_new_dawn_propaganda_target_defend_desc: ""
+ ut_new_dawn_propaganda_target_defend_tt: "The country behind the propaganda campaign must spend 10 [concept_ut_nd_progress_points] or abort the campaign."
 
  ut_propaganda_communist_mod: "Communist Propaganda"
-
+ ut_propaganda_fascist_mod: "Fascist Propaganda"
+ ut_propaganda_democratic_mod: "Democratic Propaganda"
+ ut_propaganda_autocratic_mod: "Autocratic Propaganda"
+ 
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
  UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
  UT_BOTH_DIFFERENT_IDEOLOGY: "Different ideologies"
@@ -936,6 +951,8 @@
  ut_add_new_dawn_progress_50: "Gains #b 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_50: "Loses #r 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_25: "Loses #r 25#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_neg_10: "Loses #r 10#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_neg_5: "Loses #r 5#! [concept_ut_nd_progress_points]"
 
  ut_force_become_subject: "Collectivize Council Republics"
  ut_force_become_subject_action_name: "$ut_force_become_subject$"

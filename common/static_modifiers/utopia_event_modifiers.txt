@@ -369,24 +369,29 @@ ut_propaganda_failed_mod = {
 
 ut_propaganda_communist_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-	state_pop_support_movement_communist_mult = 0.25
-	political_movement_radicalism_add = 0.25
+	state_pop_support_movement_communist_mult = 0.2
+	political_movement_radicalism_add = 0.2
 }
 
 ut_propaganda_fascist_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-	state_pop_support_movement_fascist_mult = 0.25
-	political_movement_radicalism_add = 0.25
+	state_pop_support_movement_fascist_mult = 0.2
+	political_movement_radicalism_add = 0.2
 }
 
 ut_propaganda_autocratic_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-	state_pop_support_movement_fascist_mult = 0.25
-	political_movement_radicalism_add = 0.25
+	state_pop_support_movement_fascist_mult = 0.2
+	political_movement_radicalism_add = 0.2
 }
 
 ut_propaganda_democratic_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-	state_pop_support_movement_liberal_mult = 0.25
-	political_movement_radicalism_add = 0.25
+	state_pop_support_movement_liberal_mult = 0.2
+	political_movement_radicalism_add = 0.2
+}
+
+ut_je_propaganda_source_mod = {
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds
+	country_new_dawn_focus_selected_progress = -1
 }

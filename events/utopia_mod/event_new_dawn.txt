@@ -238,7 +238,7 @@ event_new_dawn.2 = {
 		}
 		else = {
 			custom_tooltip = {
-				text = error
+				text = utopia.error
 			}
 		}
 	}
@@ -800,6 +800,55 @@ event_new_dawn.12 = {
 		name = event_new_dawn.
 		add_radicals = {
 			value = 0.01
+		}
+	}
+}
+
+#Propaganda Campaign
+event_new_dawn.20 = {
+	type = country_event
+	placement = ROOT
+	title = ut_new_dawn_propaganda_target_defend
+	desc = ut_new_dawn_propaganda_target_defend_desc
+	
+	event_image = {
+		video = "unspecific_trains"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	#gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		# by button
+	}
+
+	
+	option = {
+		name = utopia.continue
+		trigger = {
+			custom_tooltip = {
+				text = ut_has_new_dawn_progress_50
+				ut_has_new_dawn_progress_core = {
+					VALUE = 50
+				}
+			}
+		}
+		custom_tooltip = ut_add_new_dawn_progress_neg_10
+		ut_add_new_dawn_core_progress = {
+			VALUE = -10
+		}
+	}
+	
+	option = {
+		name = utopia.no
+		custom_tooltip = ut_new_dawn_propaganda_source_abort_tt 		
+		set_variable = {
+			name = ut_propaganda_source_abandon_var
 		}
 	}
 }

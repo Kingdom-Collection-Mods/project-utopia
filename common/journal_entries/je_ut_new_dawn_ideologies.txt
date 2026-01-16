@@ -10,6 +10,12 @@
 		}
 	}
 
+	modifiers_while_active = {
+		ut_je_propaganda_source_mod
+	}
+
+	scripted_button = ut_new_dawn_propaganda_source_abort
+
 	on_monthly_pulse = {
 		effect = {
 			change_variable = {
@@ -24,6 +30,9 @@
 	}
 
 	on_complete = {	
+		show_as_tooltip = {
+			remove_modifier = ut_je_propaganda_source_mod
+		}
 		if = {
 			limit = {
 				has_modifier = ut_new_dawn_core_communist_mod
@@ -77,9 +86,11 @@
 	fail = {
 		custom_tooltip = {
 			text = ut_je_propaganda_source_abort_tt
-			has_variable = ut_propaganda_source_abandon_var
+			OR = {
+				has_variable = ut_propaganda_source_abandon_var
+				NOT = { exists = scope:target }
+			}
 		}
-		NOT = { exists = scope:target }
 	}
 
 	on_fail = {
@@ -109,6 +120,19 @@ ut_je_propaganda_target = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_utopia
+
+	scripted_button = ut_new_dawn_propaganda_target_defend
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = { 
+					has_variable = ut_new_dawn_propaganda_target_defend_cooldown_var
+				}
+				remove_variable = ut_new_dawn_propaganda_target_defend_cooldown_var
+			}
+		}
+	}
 
 	complete = {
 		custom_tooltip = {
@@ -143,11 +167,11 @@ ut_je_propaganda_target = {
 			else_if = {
 				limit = {
 					scope:target = {
-						has_modifier = ut_new_dawn_core_democrat_mod
+						has_modifier = ut_new_dawn_core_democratic_mod
 					}
 				}
 				add_modifier = {
-					name = ut_propaganda_democrat_mod
+					name = ut_propaganda_democratic_mod
 					days = short_modifier_time #2.5 years
 				}
 			}

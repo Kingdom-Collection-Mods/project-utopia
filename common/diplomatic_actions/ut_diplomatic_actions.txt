@@ -475,6 +475,10 @@ ut_new_dawn_start_propaganda_campaign = {
 	}
 	
 	accept_effect = {
+		custom_tooltip = ut_add_new_dawn_progress_neg_5
+		ut_add_new_dawn_core_progress = {
+			VALUE = -5
+		}
 		add_journal_entry = {
 			type = ut_je_propaganda_source
 			target = scope:target_country
@@ -496,8 +500,14 @@ ut_new_dawn_start_propaganda_campaign = {
 	
 		
 		
-		will_propose = {  
-			always = no
+		will_propose = { 
+			has_attitude = {
+				who = scope:target_country
+				attitude = domineering
+			}
+			ut_has_new_dawn_progress_core = {
+				VALUE = 90
+			}
 		}
 		
 		propose_score = {

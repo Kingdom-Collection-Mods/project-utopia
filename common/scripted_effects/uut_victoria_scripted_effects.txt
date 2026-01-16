@@ -44,6 +44,7 @@ ut_set_new_dawn_variables = {
 }
 
 ut_new_dawn_communist_progress = { #Effects like these are run three times, one for each house. All of them function essentially the same way.
+	ut_new_dawn_common_progress = yes
 	set_variable = { name = ut_nd_communist_progress_from_characters value = 0 } #All of these variables are ephemeral and should never be manually set to anything.
 	set_variable = { name = ut_nd_communist_progress_from_igs value = 0 }
 	set_variable = { name = ut_nd_communist_progress_from_laws value = 0 }
@@ -151,6 +152,7 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 }
  
 ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
+	ut_new_dawn_common_progress = yes
 	set_variable = { name = ut_nd_democrat_progress_from_characters value = 0 }
 	set_variable = { name = ut_nd_democrat_progress_from_igs value = 0 }
 	set_variable = { name = ut_nd_democrat_progress_from_laws value = 0 }
@@ -269,6 +271,7 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 
 
 ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
+	ut_new_dawn_common_progress = yes
 	set_variable = { name = ut_nd_autocrat_progress_from_base value = 0.5 }
 	set_variable = { name = ut_nd_autocrat_progress_from_characters value = 0 }
 	set_variable = { name = ut_nd_autocrat_progress_from_igs value = 0 }
@@ -389,6 +392,7 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 }
 
 ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
+	ut_new_dawn_common_progress = yes
 	set_variable = { name = ut_nd_fascist_progress_from_characters value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_igs value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_laws value = 0 }
@@ -550,6 +554,51 @@ ut_clear_divided_new_dawn_variables = { #Clears all variables, to save memory/pe
 
 ut_freeze_new_dawn_progress = { #Used upon initiation of cement_the_rightful_dynasty, to prevent the bars from excessively accumulating.
 	set_variable = ut_new_dawn_bar_freeze
+}
+
+ut_new_dawn_common_progress = {
+	set_variable = { name = ut_nd_common_progress_from_events value = 0 }
+	if = {
+		limit = {
+			has_journal_entry = ut_je_propaganda_source
+		}
+		change_variable = { name = ut_nd_common_progress_from_events add = -1 }
+	}
+}
+
+ut_add_new_dawn_core_progress = { 
+	if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_communist_mod
+		}
+		ut_add_new_dawn_progress_communist = {
+			VALUE = $VALUE$
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_democratic_mod
+		}
+		ut_add_new_dawn_progress_democratic = {
+			VALUE = $VALUE$
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_autocratic_mod
+		}
+		ut_add_new_dawn_progress_autocratic = {
+			VALUE = $VALUE$
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_fascist_mod
+		}
+		ut_add_new_dawn_progress_fascist = {
+			VALUE = $VALUE$
+		}
+	}
 }
 
 ut_add_new_dawn_progress_autocratic = { 
