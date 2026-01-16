@@ -8,7 +8,7 @@
 
 		# Validation
 		validate_conflicts_war_goals_all
-		validate_regime_change
+		#validate_regime_change
 
 		debug
 	}
@@ -74,7 +74,7 @@ ut_regime_change_democratic_offensive = {
 
 		# Validation
 		validate_conflicts_war_goals_all
-		validate_regime_change
+		#validate_regime_change
 
 		debug
 	}
@@ -243,7 +243,7 @@ ut_regime_change_communist = {
 
 		# Validation
 		validate_conflicts_war_goals_all
-		validate_regime_change
+		#validate_regime_change
 
 		debug
 	}

@@ -32,7 +32,7 @@ INJECT:movement_feminist = {
 				}
 			}
 			multiply = {
-				value = 5
+				value = 10
 			}
 		}
 	}
