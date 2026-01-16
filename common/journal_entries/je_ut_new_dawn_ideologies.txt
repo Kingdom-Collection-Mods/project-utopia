@@ -43,6 +43,10 @@
 					days = normal_modifier_time
 					is_decaying = yes
 				}
+				custom_tooltip = ut_add_new_dawn_progress_neg_5
+				ut_add_new_dawn_core_progress = {
+					VALUE = -5
+				}
 			}
 		}
 		else_if = {
@@ -153,6 +157,10 @@ ut_je_propaganda_target = {
 
 	on_fail = {
 		show_as_tooltip = {
+			custom_tooltip = ut_add_new_dawn_progress_neg_5
+			ut_add_new_dawn_core_progress = {
+				VALUE = -5
+			}
 			if = {
 				limit = {
 					scope:target = {

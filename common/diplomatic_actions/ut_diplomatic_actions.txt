@@ -475,14 +475,15 @@ ut_new_dawn_start_propaganda_campaign = {
 	}
 	
 	accept_effect = {
-		custom_tooltip = ut_add_new_dawn_progress_neg_5
+		custom_tooltip = ut_add_new_dawn_progress_neg_10
 		ut_add_new_dawn_core_progress = {
-			VALUE = -5
+			VALUE = -10
 		}
 		add_journal_entry = {
 			type = ut_je_propaganda_source
 			target = scope:target_country
 		}
+		change_infamy = 5
 
 		scope:target_country = {
 			add_journal_entry = {

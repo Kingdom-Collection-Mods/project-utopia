@@ -854,6 +854,7 @@ pm_elastics_two = {
 
 	unlocking_production_methods = {
 		pm_heavy_machinery_textile
+		pm_plastics_textile
 	}
 	
 	building_modifiers = {
