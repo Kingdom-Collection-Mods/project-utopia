@@ -651,10 +651,6 @@ ut_principle_war_industry_4 = {
 	
 	possible = {
 		has_technology_researched = union_new_mandates
-		OR = {
-			NOT = { has_modifier = ut_new_dawn_core_democratic_mod }
-			NOT = { has_law_or_variant = law_type:law_mass_conscription }
-		}
 	}
 	
 	member_modifier = {
@@ -682,10 +678,6 @@ ut_principle_war_industry_5 = {
 	
 	possible = {
 		has_technology_researched = union_trade
-		OR = {
-			NOT = { has_modifier = ut_new_dawn_core_democratic_mod }
-			NOT = { has_law_or_variant = law_type:law_mass_conscription }
-		}
 	}
 
 	leader_modifier = {
@@ -726,10 +718,6 @@ ut_principle_war_industry_6 = {
 	
 	possible = {
 		has_technology_researched = union_new_mandates_two
-		OR = {
-			NOT = { has_modifier = ut_new_dawn_core_democratic_mod }
-			NOT = { has_law_or_variant = law_type:law_mass_conscription }
-		}
 	}
 
 	leader_modifier = {
