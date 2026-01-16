@@ -84,8 +84,8 @@
 				owner = {
 					NOT = {
 						AND = {
-							has_law = law_type:law_environment_protection_institute_one
-							has_law = law_type:law_food_safety_protection_institute_one
+							has_law = law_type:law_environment_protection_institute
+							has_law = law_type:law_food_safety_protection_institute
 						}
 					}
 				}
@@ -128,13 +128,26 @@
 				owner = {
 					NOT = {
 						AND = {
-							has_law = law_type:law_environment_protection_institute_one
-							has_law = law_type:law_food_safety_protection_institute_one
+							has_law = law_type:law_environment_protection_institute
+							has_law = law_type:law_food_safety_protection_institute
 						}
 					}
 				}
 			}
-			add = 50
+			add = 75
+		}
+		if = {
+			limit = {
+				owner = {
+					NOT = {
+						AND = {
+							has_law = law_type:law_environment_protection_institute_three
+							has_law = law_type:law_food_safety_protection_institute_two
+						}
+					}
+				}
+			}
+			add = 25
 		}
 		if = {
 			limit = {
@@ -142,7 +155,7 @@
 					has_technology_researched = epa_two
 				}
 			}
-			add = 25
+			add = 50
 		}
 		
 		if = {
@@ -151,7 +164,7 @@
 					has_technology_researched = epa_three
 				}
 			}
-			add = 50
+			add = 25
 		}
 		
 		if = {
