@@ -5,6 +5,7 @@
 		pm_market_squares
 		pm_covered_markets
 		pm_arcades
+		pm_department_store
 		pm_supermarket
 		pm_shopping_district
 		pm_online_shopping
