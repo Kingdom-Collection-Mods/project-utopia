@@ -333,7 +333,7 @@ highways = {
 		always = no
 	}
 
-	ownership_type = self
+    ownership_type = no_ownership
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_railways.dds"
 }

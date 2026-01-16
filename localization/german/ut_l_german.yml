@@ -832,6 +832,7 @@
  ut_je_propaganda_source_reason: "A propaganda campaign is being conducted. A successful campaign will increase activism of movements and chance of revolutions."
  ut_je_propaganda_source_goal: "Wait 12 months"
  ut_je_propaganda_target: "Target of Propaganda Campaign"
+ ut_je_propaganda_target_abort_tt: "The country behind the propaganda campaign has aborted the campaign."
  ut_je_propaganda_source_abort_tt: "Has aborted the propaganda campaign."
 
  ut_new_dawn_propaganda_source_abort: "Abort Propaganda Campaign"

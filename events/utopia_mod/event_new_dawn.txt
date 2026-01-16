@@ -830,6 +830,7 @@ event_new_dawn.20 = {
 	
 	option = {
 		name = utopia.continue
+		default_option = yes
 		trigger = {
 			custom_tooltip = {
 				text = ut_has_new_dawn_progress_50
