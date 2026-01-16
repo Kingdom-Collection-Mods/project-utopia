@@ -378,6 +378,12 @@ union_trade = {
 		country_leverage_generation_mult = 0.25
 	}
 
+	on_researched = {
+		custom_tooltip = {
+			text = union_new_mandates_tt_principles_upgrade
+		}
+	}
+
 	unlocking_technologies = {
 		union_new_mandates
 		check_payments
@@ -397,6 +403,9 @@ union_new_mandates_two = {
 	on_researched = {
 		custom_tooltip = {
 			text = union_new_mandates_two_tt
+		}
+		custom_tooltip = {
+			text = union_new_mandates_tt_principles_upgrade
 		}
 	}
 
