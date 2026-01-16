@@ -122,6 +122,21 @@
 				
 				if = {
 					limit = {
+						scope:actor = {
+							has_modifier = ut_new_dawn_core_communist_mod
+						}
+						scope:target_country = {
+							has_modifier = ut_new_dawn_core_communist_mod
+						}
+					}
+					add = {
+						desc = "UT_BOTH_COMMUNIST"
+						value = 100
+					}
+				}
+				
+				if = {
+					limit = {
 						ut_diplomatic_action_accept_favorable_stance = yes
 					}
 					add = {

@@ -274,7 +274,7 @@ ut_has_new_dawn_progress_core = {
 
 ut_has_new_dawn_progress_autocratic = {
 	je:je_ut_new_dawn_autocratic = {
-		"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= $VALUE$
+		"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= $VALUE$
 	}
 }
 

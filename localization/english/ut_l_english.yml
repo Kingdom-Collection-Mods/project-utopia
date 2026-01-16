@@ -852,6 +852,7 @@
  UT_BOTH_DIFFERENT_IDEOLOGY_OF_TARGET: "Both countries must have different ideologies."
 
  UT_BOTH_DEMOCRATIC: "Both [concept_ut_nd_democrat_core]"
+ UT_BOTH_COMMUNIST: "Both [concept_ut_nd_communist_core]"
 
  UT_STANCE_FAVORABLE: "Favorable [concept_ut_nd_stance]"
  UT_STANCE_NEUTRAL: "Neutral [concept_ut_nd_stance]"
