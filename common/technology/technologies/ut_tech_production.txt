@@ -190,7 +190,8 @@ heavy_machinery_era_analog = {
 	}
 
 	modifier = {
-		building_renewable_power_plant_throughput_add = 0.5
+		building_offshore_wind_farm_throughput_add = 0.25
+		building_renewable_power_plant_throughput_add = 0.25
 	}
 	
 	ai_weight = {
@@ -224,7 +225,6 @@ heavy_machinery_era_digital = {
 
 	modifier = {
 		state_building_offshore_wind_farm_max_level_add = 5
-		building_renewable_power_plant_throughput_add = 0.5
 	}
 	
 	ai_weight = {
@@ -239,6 +239,11 @@ heavy_machinery_era_web = {
 
 	unlocking_technologies = {	
 		heavy_machinery_era_digital
+	}
+
+	modifier = {
+		building_offshore_wind_farm_throughput_add = 0.25
+		building_renewable_power_plant_throughput_add = 0.25
 	}
 	
 	ai_weight = {
@@ -260,7 +265,7 @@ heavy_machinery_industry = {
 	modifier = {
 		building_economy_of_scale_level_cap_add = 5
 		state_building_offshore_wind_farm_max_level_add = 5
-		building_renewable_power_plant_throughput_add = 0.5
+		building_renewable_power_plant_throughput_add = 0.25
 	}
 	
 	ai_weight = {
