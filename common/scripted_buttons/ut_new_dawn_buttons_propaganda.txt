@@ -47,7 +47,7 @@ ut_new_dawn_propaganda_target_defend = {
 			}
 		}
 		custom_tooltip = {
-			text = cooldown
+			text = ut_new_dawn_propaganda_target_defend_cooldown_tt
 			has_variable = ut_new_dawn_propaganda_target_defend_cooldown_var
 			scope:target = {
 				NOT = { has_variable = ut_propaganda_source_abandon_var }
