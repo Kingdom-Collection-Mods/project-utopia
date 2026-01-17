@@ -74,17 +74,17 @@ prestige_good_generic_software_b2c = {
 prestige_good_generic_utopia_arms = {
 	base_good = utopia_arms
 	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/office_software.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_utopia_tanks.dds"
 }
 
 prestige_good_generic_utopia_artillery = {
 	base_good = utopia_artillery
 	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/office_software.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_utopia_tanks.dds"
 }
 
 prestige_good_generic_utopia_tanks = {
 	base_good = utopia_tanks
 	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/office_software.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_utopia_tanks.dds"
 }

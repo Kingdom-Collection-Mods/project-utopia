@@ -599,6 +599,7 @@ building_offshore_wind_farm = {
 
 	potential = {
 		is_coastal = yes
+		has_building = building_ut_power_grid
 	}
 
 	ai_value = {

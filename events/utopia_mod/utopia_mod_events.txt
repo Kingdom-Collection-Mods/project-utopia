@@ -11,7 +11,7 @@ utopia_mod.1 = {
 	}
 
 	event_image = {
-		video = "unspecific_trains"
+		video = "europenorthamerica_capitalists_meeting"
 	}
 
 	duration = 3
@@ -78,7 +78,7 @@ utopia_mod.3 = {
 	placement = ROOT
 
 	event_image = {
-		video = "unspecific_trains"
+		video = "europenorthamerica_capitalists_meeting"
 	}
 
 	duration = 3
@@ -225,7 +225,7 @@ utopia_mod.4 = {
 	placement = ROOT
 
 	event_image = {
-		video = "unspecific_trains"
+		video = "europenorthamerica_capitalists_meeting"
 	}
 
 	duration = 3

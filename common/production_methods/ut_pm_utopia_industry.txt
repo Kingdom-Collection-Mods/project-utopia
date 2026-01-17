@@ -284,10 +284,10 @@ pm_consumer_goods_electrical_process = {
 			goods_input_aluminum_add = 10
 			goods_input_heavy_machinery_add = 1
 			goods_input_electronics_add = 5
-			goods_input_electricity_add = 5
+			goods_input_electricity_add = 10
 			
 			# output goods
-			goods_output_consumer_goods_add = 80
+			goods_output_consumer_goods_add = 85
 		}
 
 		level_scaled = {
@@ -325,7 +325,7 @@ pm_consumer_goods_plastic_process = {
 			goods_input_aluminum_add = 10
 			goods_input_heavy_machinery_add = 2
 			goods_input_electronics_add = 10
-			goods_input_electricity_add = 5
+			goods_input_electricity_add = 10
 
 			# output goods
 			goods_output_consumer_goods_add = 105
@@ -404,7 +404,7 @@ pm_complex_consumer_goods_computer_process = {
 			goods_input_aluminum_add = 10
 			goods_input_heavy_machinery_add = 20
 			goods_input_electronics_add = 10
-			goods_input_electricity_add = 5
+			goods_input_electricity_add = 10
 			goods_input_computers_add = 20
 			goods_input_glass_add = 10
 			
@@ -442,7 +442,7 @@ pm_complex_consumer_goods_software_process = {
 			goods_input_aluminum_add = 10
 			goods_input_heavy_machinery_add = 20
 			goods_input_electronics_add = 10
-			goods_input_electricity_add = 5
+			goods_input_electricity_add = 10
 			goods_input_computers_add = 20
 			goods_input_software_add = 30
 			goods_input_glass_add = 10
@@ -996,9 +996,9 @@ pm_aluminum_two_process = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_bauxite_add = 60
+			goods_input_bauxite_add = 50
 			goods_input_explosives_add = 10
-			goods_input_electricity_add = 15
+			goods_input_electricity_add = 30
 			#todo after beta rework, so ai also builds this, it wont if electricity is high
 			
 			# output goods
@@ -1038,10 +1038,10 @@ pm_aluminum_three_process = {
 		workforce_scaled = {
 			# input goods
 			#todo check calc
-			goods_input_bauxite_add = 60
+			goods_input_bauxite_add = 50
 			goods_input_explosives_add = 10
 			goods_input_heavy_machinery_add = 4
-			goods_input_electricity_add = 30
+			goods_input_electricity_add = 40
 			
 			# output goods
 			goods_output_aluminum_add = 120
@@ -1080,10 +1080,10 @@ pm_aluminum_four_process = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_bauxite_add = 80
+			goods_input_bauxite_add = 70
 			goods_input_explosives_add = 10
 			goods_input_heavy_machinery_add = 8
-			goods_input_electricity_add = 30
+			goods_input_electricity_add = 40
 			
 			# output goods
 			goods_output_aluminum_add = 150
