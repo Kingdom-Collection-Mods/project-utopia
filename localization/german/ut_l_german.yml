@@ -1745,6 +1745,9 @@
  building_renewable_power_plant_throughput_add: "$building_renewable_power_plant$ [concept_throughput]"
  building_renewable_power_plant_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_renewable_power_plant$."
 
+ building_offshore_wind_farm_throughput_add: "$building_offshore_wind_farm$ [concept_throughput]"
+ building_offshore_wind_farm_throughput_add_desc: "A bonus or penalty to both input and output of the $building_offshore_wind_farm$."
+
  smart_irrigation_building_tea_plantation: "Intelligente Bewässerung"
  smart_irrigation_building_tobacco_plantation: "Intelligente Bewässerung"
  smart_irrigation_building_sugar_plantation: "Intelligente Bewässerung"
