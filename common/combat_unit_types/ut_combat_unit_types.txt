@@ -237,12 +237,12 @@ combat_unit_type_support_systems = {
 	max_manpower = 1000
     
     upkeep_modifier = {
-        goods_input_tanks_add = 2
         goods_input_utopia_artillery_add = 2
         goods_input_oil_add = 2
-        goods_input_ammunition_add = 2
+        goods_input_ammunition_add = 4
         goods_input_radios_add = 2
         goods_input_heavy_machinery_add = 2
+        goods_input_aeroplanes_add = 1
     }
 
     battle_modifier = {
