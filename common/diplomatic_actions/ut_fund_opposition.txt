@@ -1,4 +1,4 @@
-#copied from fund lobbies
+﻿#copied from fund lobbies
 ut_fund_opposition = {
 	groups= {
 		general

@@ -1,4 +1,4 @@
-namespace = event_new_dawn
+﻿namespace = event_new_dawn
 
 #New Dawn start
 event_new_dawn.1 = {
