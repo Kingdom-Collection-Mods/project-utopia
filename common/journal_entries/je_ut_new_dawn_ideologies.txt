@@ -1,5 +1,5 @@
 ﻿ut_je_propaganda_source = {
-	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
 	group = je_group_utopia
 
@@ -33,6 +33,12 @@
 		show_as_tooltip = {
 			remove_modifier = ut_je_propaganda_source_mod
 		}
+		scope:target = {
+			custom_tooltip = ut_add_new_dawn_progress_neg_5
+			ut_add_new_dawn_core_progress = {
+				VALUE = -5
+			}
+		}
 		if = {
 			limit = {
 				has_modifier = ut_new_dawn_core_communist_mod
@@ -40,12 +46,8 @@
 			scope:target = {
 				add_modifier = {
 					name = ut_propaganda_communist_mod
-					days = normal_modifier_time
+					days = 1095 #3 years
 					is_decaying = yes
-				}
-				custom_tooltip = ut_add_new_dawn_progress_neg_5
-				ut_add_new_dawn_core_progress = {
-					VALUE = -5
 				}
 			}
 		}
@@ -56,7 +58,7 @@
 			scope:target = {
 				add_modifier = {
 					name = ut_propaganda_democratic_mod
-					days = normal_modifier_time
+					days = 1095 #3 years
 					is_decaying = yes
 				}
 			}
@@ -68,7 +70,7 @@
 			scope:target = {
 				add_modifier = {
 					name = ut_propaganda_fascist_mod
-					days = normal_modifier_time
+					days = 1095 #3 years
 					is_decaying = yes
 				}
 			}
@@ -80,7 +82,7 @@
 			scope:target = {
 				add_modifier = {
 					name = ut_propaganda_autocratic_mod
-					days = normal_modifier_time
+					days = 1095 #3 years
 					is_decaying = yes
 				}
 			}
@@ -121,7 +123,7 @@
 }
 
 ut_je_propaganda_target = {
-	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
 	group = je_group_utopia
 
