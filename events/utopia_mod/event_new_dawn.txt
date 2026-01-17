@@ -854,6 +854,69 @@ event_new_dawn.20 = {
 	}
 }
 
+#fund opposition target
+event_new_dawn.21 = {
+	type = country_event
+	placement = ROOT
+	title = ut_fund_opposition
+	desc = ut_fund_opposition_target_desc
+	
+	event_image = {
+		video = "unspecific_trains"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	#gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		# by button
+	}
+
+	
+	option = {
+		name = utopia.continue
+		default_option = yes
+		ut_add_new_dawn_core_progress = {
+			VALUE = -25
+		}
+	}
+}
+
+event_new_dawn.22 = {
+	type = country_event
+	placement = ROOT
+	title = ut_fund_opposition_happened_tt
+	desc = ut_fund_opposition_happened_tt
+	
+	event_image = {
+		video = "unspecific_trains"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	#gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		# by button
+	}
+
+	
+	option = {
+		name = utopia.continue
+		default_option = yes
+		custom_tooltip = ut_fund_opposition_happened_tt
+	}
+}
+
 #Autocratic
 event_new_dawn.30 = {
 	type = country_event

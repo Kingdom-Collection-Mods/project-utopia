@@ -26,32 +26,12 @@ ut_fund_opposition = {
 	}
 
 	accept_effect = {
-		custom_tooltip = {
-			text = fund_lobbies_increase_friendly_join_weight_effect
-		}
-		custom_tooltip = {
-			text = fund_lobbies_decrease_hostile_join_weight_effect
-		}
-		custom_tooltip = {
-			text = fund_lobbies_increase_rival_hostile_join_weight_effect
-		}
-		custom_tooltip = {
-			text = fund_lobbies_decrease_rival_friendly_join_weight_effect
-		}
 	}
 
 	pact = {
 		cost = 100
 
 		is_two_sided_pact = no
-
-		second_foreign_pro_country_lobby_member_modifier = {
-			interest_group_pop_attraction_mult = 0.1
-		}
-
-		second_foreign_anti_country_lobby_member_modifier = {
-			interest_group_pop_attraction_mult = -0.1
-		}
 
 		income_transfer = 0.20
 		max_paying_country_income_to_transfer = 0.10
@@ -125,91 +105,75 @@ ut_fund_opposition = {
 
 		monthly_effect = {
 			random_list = {
-				98 = {
+				96 = {
+				}
+				1 = {
+					trigger = {
+						has_technology_researched = online_forums
+					}
+					custom_tooltip = ut_fund_opposition_effect
+					hidden_effect = {
+						trigger_event = {
+							id = event_new_dawn.22
+						}
+						scope:target_country = {
+							trigger_event = {
+								id = event_new_dawn.21
+								popup = yes
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_technology_researched = social_media
+					}
+					custom_tooltip = ut_fund_opposition_effect
+					hidden_effect = {
+						trigger_event = {
+							id = event_new_dawn.22
+						}
+						scope:target_country = {
+							trigger_event = {
+								id = event_new_dawn.21
+								popup = yes
+							}
+						}
+					}
+				}
+				2 = {
+					trigger = {
+						has_modifier = ut_new_dawn_core_democratic_mod
+						scope:target_country = {
+							has_modifier = ut_new_dawn_core_autocratic_mod
+						}
+					}
+					custom_tooltip = ut_fund_opposition_effect
+					hidden_effect = {
+						trigger_event = {
+							id = event_new_dawn.22
+						}
+						scope:target_country = {
+							trigger_event = {
+								id = event_new_dawn.21
+								popup = yes
+							}
+						}
+					}
 				}
 				2 = {
 					custom_tooltip = ut_fund_opposition_effect
-					set_variable = {
-						name = progress_point_loss
-						value = -25
-					}
-					if = {
-						limit = {
-							has_modifier = ut_new_dawn_core_democratic_mod
-							scope:target_country = {
-								has_modifier = ut_new_dawn_core_autocratic_mod
-							}
+					hidden_effect = {
+						trigger_event = {
+							id = event_new_dawn.22
 						}
-						change_variable = {
-							name = progress_point_loss
-							multiply = 1.5
-						}
-					}
-					if = {
-						limit = {
-							has_technology_researched = online_forums
-						}
-						change_variable = {
-							name = progress_point_loss
-							multiply = 1.25
-						}
-					}
-					if = {
-						limit = {
-							has_technology_researched = social_media
-						}
-						change_variable = {
-							name = progress_point_loss
-							multiply = 1.25
-						}
-					}
-					scope:target_country = {
-						if = {
-							limit = {
-								has_modifier = ut_new_dawn_core_autocratic_mod
-							}
-							je:je_ut_new_dawn_autocratic = {
-								add_progress = {
-									name = je_ut_new_dawn_autocratic_points_bar
-									value = root.var:progress_point_loss
-								}
-							}
-						}
-						else_if = {
-							limit = {
-								has_modifier = ut_new_dawn_core_democratic_mod
-							}
-							je:je_ut_new_dawn_democratic = {
-								add_progress = {
-									name = je_ut_new_dawn_democratic_points_bar
-									value = root.var:progress_point_loss
-								}
-							}
-						}
-						else_if = {
-							limit = {
-								has_modifier = ut_new_dawn_core_fascist_mod
-							}
-							je:je_ut_new_dawn_fascist = {
-								add_progress = {
-									name = je_ut_new_dawn_fascist_points_bar
-									value = root.var:progress_point_loss
-								}
-							}
-						}
-						else_if = {
-							limit = {
-								has_modifier = ut_new_dawn_core_communist_mod
-							}
-							je:je_ut_new_dawn_communist = {
-								add_progress = {
-									name = je_ut_new_dawn_communist_points_bar
-									value = root.var:progress_point_loss
-								}
+						scope:target_country = {
+							trigger_event = {
+								id = event_new_dawn.21
+								popup = yes
 							}
 						}
 					}
-					remove_variable = progress_point_loss
 				}
 			}
 		}
