@@ -29,10 +29,7 @@
 		scope:journal_entry = { is_goal_complete = yes }
 	}
 
-	on_complete = {	
-		show_as_tooltip = {
-			remove_modifier = ut_je_propaganda_source_mod
-		}
+	on_complete = {
 		scope:target = {
 			custom_tooltip = ut_add_new_dawn_progress_neg_5
 			ut_add_new_dawn_core_progress = {
