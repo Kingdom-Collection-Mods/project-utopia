@@ -973,10 +973,13 @@
  ut_fund_opposition_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] has stopped $ut_fund_opposition$ in [TARGET_COUNTRY.GetName]."
  ut_fund_opposition_action_notification_name: "$ut_fund_opposition$ Started"
  ut_fund_opposition_action_notification_desc: "[INITIATOR_COUNTRY.GetName] has started $ut_fund_opposition$ in [TARGET_COUNTRY.GetName]."
- ut_fund_opposition_desc: "Fund the opposition in the target country to overthrow the ruling ideology. May abort their New Dawn [concept_ut_nd_path_to_utopia] journal entry. (Democracies are more effective against Autocratic countries, Online Forums and Social Media increase effectiveness.)\n\n$ut_fund_opposition_effect$"
+ ut_fund_opposition_desc: "Fund the opposition in the target country to overthrow the ruling ideology. May abort their New Dawn [concept_ut_nd_path_to_utopia] journal entry. (Democracies are more effective against Autocratic countries, Online Forums and Social Media increase effectiveness.)\n\nTarget country effect: $ut_fund_opposition_effect$"
  ut_fund_opposition_effect: "Lose #r 25#! [concept_ut_nd_progress_points]"
- ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds opposition groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], this may lead to revolts in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] opposition groups reducing their ideology [concept_ut_nd_progress_points].\n\nTarget country effect: $ut_fund_opposition_effect$"
- ut_fund_opposition_target_desc: "Another country is founding opposition groups in your country, this may lead to revolts in your opposition groups reducing your ideology [concept_ut_nd_progress_points]."
+ ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds opposition groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], this may lead to revolts in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] opposition groups reducing their ideology [concept_ut_nd_progress_points]."
+ ut_fund_opposition_source_happened_title: "Funding Opposition in [SCOPE.sCountry('ut_fund_opposition_target_scope').GetName]"
+ ut_fund_opposition_source_happened_tt: "Funding Opposition in [SCOPE.sCountry('ut_fund_opposition_target_scope').GetName] was successful, they lost #r 25#! [concept_ut_nd_progress_points]"
+ ut_fund_opposition_target_happened_title: "Opposition Funded by [SCOPE.sCountry('ut_fund_opposition_source_scope').GetName]"
+ ut_fund_opposition_target_happened_desc: "[SCOPE.sCountry('ut_fund_opposition_source_scope').GetName] is founding opposition groups in our country, this may lead to revolts in your opposition groups reducing your ideology [concept_ut_nd_progress_points]."
 
 
 # Power Blocs

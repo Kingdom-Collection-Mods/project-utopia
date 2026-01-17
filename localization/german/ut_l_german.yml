@@ -951,8 +951,10 @@
  ut_has_new_dawn_progress_75: "Hat #b 75#! [concept_ut_nd_progress_points]"
  ut_has_new_dawn_progress_50: "Mindestens #b 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_50: "Füge #b 50#! [concept_ut_nd_progress_points] hinzu"
- ut_add_new_dawn_progress_neg_50: "Entferne #r 50#! [concept_ut_nd_progress_points]"
- ut_add_new_dawn_progress_neg_25: "Entferne #r 25#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_neg_50: "Verliert #r 50#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_neg_25: "Verliert #r 25#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_neg_10: "Verliert #r 10#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_neg_5: "Verliert #r 5#! [concept_ut_nd_progress_points]"
 
  ut_force_become_subject: "Räterepublik kollektivieren"
  ut_force_become_subject_action_name: "$ut_force_become_subject$"
@@ -973,8 +975,12 @@
  ut_fund_opposition_action_notification_desc: "[INITIATOR_COUNTRY.GetName] has started $ut_fund_opposition$ in [TARGET_COUNTRY.GetName]."
  ut_fund_opposition_desc: "Fund the opposition in the target country to overthrow the ruling ideology. May abort their New Dawn [concept_ut_nd_path_to_utopia] journal entry. (Democracies are more effective against Autocratic countries, Online Forums and Social Media increase effectiveness.)\n\nTarget country effect: $ut_fund_opposition_effect$"
  ut_fund_opposition_effect: "Lose #r 25#! [concept_ut_nd_progress_points]"
- ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds opposition groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], this may lead to revolts in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] opposition groups reducing their ideology [concept_ut_nd_progress_points].\n\nTarget country effect: $ut_fund_opposition_effect$"
- ut_fund_opposition_target_desc: "Another country is founding opposition groups in your country, this may lead to revolts in your opposition groups reducing your ideology [concept_ut_nd_progress_points]."
+ ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry. ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds opposition groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], this may lead to revolts in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] opposition groups reducing their ideology [concept_ut_nd_progress_points]."
+ ut_fund_opposition_source_happened_title: "Funding Opposition in [SCOPE.sCountry('ut_fund_opposition_target_scope').GetName]"
+ ut_fund_opposition_source_happened_tt: "Funding Opposition in [SCOPE.sCountry('ut_fund_opposition_target_scope').GetName] was successful, they lost #r 25#! [concept_ut_nd_progress_points]"
+ ut_fund_opposition_target_happened_title: "Opposition Funded by [SCOPE.sCountry('ut_fund_opposition_source_scope').GetName]"
+ ut_fund_opposition_target_happened_desc: "[SCOPE.sCountry('ut_fund_opposition_source_scope').GetName] is founding opposition groups in our country, this may lead to revolts in your opposition groups reducing your ideology [concept_ut_nd_progress_points]."
+
 
 #power blocs
  principle_group_modern_trade_league: "Moderne Handelsliga"
@@ -1267,6 +1273,7 @@
  digital_tax_declaration_desc: "Elektronische Formulare und automatische Plausibilitätsprüfungen modernisieren die Steuererhebung."
  union_new_mandates: "Internationales Recht"
  union_new_mandates_tt_principles: "Verfügbare neue Power Bloc [concept_power_bloc_principle]"
+ union_new_mandates_tt_principles_upgrade: "Schaltet neue Power Bloc [concept_power_bloc_principle] Stufe frei"
  union_new_mandates_tt_articles: "Verfügbare neue [concept_article]: [GetArticleType('ut_research_agreement').GetNameNoIcon], [GetArticleType('ut_research_assistance_treaty').GetNameNoIcon], und Ideologische [concept_article]"
  union_new_mandates_desc: "Supranationale Institutionen erhalten Kompetenzen in Klimapolitik und Digitalregulierung. Die Ära rein wirtschaftlicher Integration weicht ambitionierter politischer Verflechtung."
  union_new_mandates_two: "Internationale Organisation"

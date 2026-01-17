@@ -1,4 +1,4 @@
-﻿namespace = event_new_dawn
+namespace = event_new_dawn
 
 #New Dawn start
 event_new_dawn.1 = {
@@ -857,12 +857,12 @@ event_new_dawn.20 = {
 #fund opposition target
 event_new_dawn.21 = {
 	type = country_event
-	placement = ROOT
-	title = ut_fund_opposition
-	desc = ut_fund_opposition_target_desc
+	placement = scope:ut_fund_opposition_source_scope
+	title = ut_fund_opposition_target_happened_title
+	desc = ut_fund_opposition_target_happened_desc
 	
 	event_image = {
-		video = "unspecific_trains"
+		video = "unspecific_vandalized_storefront"
 	}
 
 	duration = 3
@@ -873,6 +873,13 @@ event_new_dawn.21 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
 
+	immediate = {
+		var:ut_fund_opposition_source_var = {
+			save_scope_as = ut_fund_opposition_source_scope
+		}
+		remove_variable = ut_fund_opposition_source_var
+	}
+
 	trigger = {
 		# by button
 	}
@@ -881,6 +888,7 @@ event_new_dawn.21 = {
 	option = {
 		name = utopia.continue
 		default_option = yes
+		custom_tooltip = ut_add_new_dawn_progress_neg_25
 		ut_add_new_dawn_core_progress = {
 			VALUE = -25
 		}
@@ -889,12 +897,12 @@ event_new_dawn.21 = {
 
 event_new_dawn.22 = {
 	type = country_event
-	placement = ROOT
-	title = ut_fund_opposition_happened_tt
-	desc = ut_fund_opposition_happened_tt
+	placement = scope:ut_fund_opposition_target_scope
+	title = ut_fund_opposition_source_happened_title
+	desc = ut_fund_opposition_source_happened_tt
 	
 	event_image = {
-		video = "unspecific_trains"
+		video = "unspecific_vandalized_storefront"
 	}
 
 	duration = 3
@@ -905,6 +913,13 @@ event_new_dawn.22 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
 
+	immediate = {
+		var:ut_fund_opposition_target_var = {
+			save_scope_as = ut_fund_opposition_target_scope
+		}
+		remove_variable = ut_fund_opposition_target_var
+	}
+
 	trigger = {
 		# by button
 	}
@@ -913,7 +928,7 @@ event_new_dawn.22 = {
 	option = {
 		name = utopia.continue
 		default_option = yes
-		custom_tooltip = ut_fund_opposition_happened_tt
+		custom_tooltip = ut_fund_opposition_source_happened_tt
 	}
 }
 

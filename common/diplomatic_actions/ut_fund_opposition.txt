@@ -1,4 +1,4 @@
-﻿#copied from fund lobbies
+#copied from fund lobbies
 ut_fund_opposition = {
 	groups= {
 		general
@@ -113,10 +113,18 @@ ut_fund_opposition = {
 					}
 					custom_tooltip = ut_fund_opposition_effect
 					hidden_effect = {
+						set_variable = {
+							name = ut_fund_opposition_target_var
+							value = scope:target_country
+						}
 						trigger_event = {
 							id = event_new_dawn.22
 						}
 						scope:target_country = {
+							set_variable = {
+								name = ut_fund_opposition_source_var
+								value = root
+							}
 							trigger_event = {
 								id = event_new_dawn.21
 								popup = yes
@@ -130,10 +138,18 @@ ut_fund_opposition = {
 					}
 					custom_tooltip = ut_fund_opposition_effect
 					hidden_effect = {
+						set_variable = {
+							name = ut_fund_opposition_target_var
+							value = scope:target_country
+						}
 						trigger_event = {
 							id = event_new_dawn.22
 						}
 						scope:target_country = {
+							set_variable = {
+								name = ut_fund_opposition_source_var
+								value = root
+							}
 							trigger_event = {
 								id = event_new_dawn.21
 								popup = yes
@@ -150,10 +166,18 @@ ut_fund_opposition = {
 					}
 					custom_tooltip = ut_fund_opposition_effect
 					hidden_effect = {
+						set_variable = {
+							name = ut_fund_opposition_target_var
+							value = scope:target_country
+						}
 						trigger_event = {
 							id = event_new_dawn.22
 						}
 						scope:target_country = {
+							set_variable = {
+								name = ut_fund_opposition_source_var
+								value = root
+							}
 							trigger_event = {
 								id = event_new_dawn.21
 								popup = yes
@@ -164,10 +188,18 @@ ut_fund_opposition = {
 				2 = {
 					custom_tooltip = ut_fund_opposition_effect
 					hidden_effect = {
+						set_variable = {
+							name = ut_fund_opposition_target_var
+							value = scope:target_country
+						}
 						trigger_event = {
 							id = event_new_dawn.22
 						}
 						scope:target_country = {
+							set_variable = {
+								name = ut_fund_opposition_source_var
+								value = root
+							}
 							trigger_event = {
 								id = event_new_dawn.21
 								popup = yes
