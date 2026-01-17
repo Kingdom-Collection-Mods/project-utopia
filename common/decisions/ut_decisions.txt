@@ -238,7 +238,7 @@ ut_nuclear_power_plant_location  = {
 		set_variable = ut_nuclear_power_plant_location_selecting
 		trigger_event = {
 			id = utopia_journal_prod.50
-				popup = yes
+			popup = yes
 		}
 	}
 

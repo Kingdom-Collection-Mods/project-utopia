@@ -521,6 +521,7 @@ utopia_journal_prod.40 = {
 		name = utopia.progress_c
 		trigger = {
 			is_player = yes
+			NOT = {	capital = scope:ut_research_institute_site }
 		}
         scope:ut_research_institute_site = {
         	add_modifier = {

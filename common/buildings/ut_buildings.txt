@@ -293,7 +293,7 @@ building_software_company = {
 
 
 highways = {
-	building_group = bg_private_infrastructure	
+	building_group = bg_government	
 	icon = "gfx/interface/icons/building_icons/highways.dds"
 	
 	lens = infrastructure
@@ -333,7 +333,7 @@ highways = {
 		always = no
 	}
 
-	ownership_type = self
+    ownership_type = no_ownership
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_railways.dds"
 }
@@ -719,7 +719,7 @@ building_ut_power_grid = {
 building_ut_power_grid_base = {
     building_group = bg_government
 	#Utopias power grid is inspired by 1230james' PPP mod
-    icon = "gfx/interface/icons/building_icons/james_PPP_power_grid.dds"
+    icon = "gfx/interface/icons/building_icons/power_grid_base.dds"
     background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
     ownership_type = no_ownership
 
@@ -730,7 +730,7 @@ building_ut_power_grid_base = {
     }
 
     production_method_groups = {
-		pmg_base_building_skyscraper
+		pmg_base_building_ut_power_grid_base
     }
     
     required_construction = construction_cost_modern_monument
@@ -744,12 +744,9 @@ building_ut_power_grid_base = {
         owner = {
             NOT = { has_law_or_variant = law_type:law_industry_banned }
         }
-        OR = {
-			is_coastal = yes
-			NOT = {
-				has_building = building_ut_power_grid
-			}
-			#todo maybe more
-        }
+        is_coastal = yes
+		NOT = {
+			has_building = building_ut_power_grid
+		}
     }
 }

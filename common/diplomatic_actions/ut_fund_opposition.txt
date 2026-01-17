@@ -129,7 +129,7 @@ ut_fund_opposition = {
 				}
 				2 = {
 					custom_tooltip = ut_fund_opposition_effect
-					set_local_variable = {
+					set_variable = {
 						name = progress_point_loss
 						value = -25
 					}
@@ -140,7 +140,7 @@ ut_fund_opposition = {
 								has_modifier = ut_new_dawn_core_autocratic_mod
 							}
 						}
-						change_local_variable = {
+						change_variable = {
 							name = progress_point_loss
 							multiply = 1.5
 						}
@@ -149,7 +149,7 @@ ut_fund_opposition = {
 						limit = {
 							has_technology_researched = online_forums
 						}
-						change_local_variable = {
+						change_variable = {
 							name = progress_point_loss
 							multiply = 1.25
 						}
@@ -158,7 +158,7 @@ ut_fund_opposition = {
 						limit = {
 							has_technology_researched = social_media
 						}
-						change_local_variable = {
+						change_variable = {
 							name = progress_point_loss
 							multiply = 1.25
 						}
@@ -171,7 +171,7 @@ ut_fund_opposition = {
 							je:je_ut_new_dawn_autocratic = {
 								add_progress = {
 									name = je_ut_new_dawn_autocratic_points_bar
-									value = local_var:progress_point_loss
+									value = root.var:progress_point_loss
 								}
 							}
 						}
@@ -182,7 +182,7 @@ ut_fund_opposition = {
 							je:je_ut_new_dawn_democratic = {
 								add_progress = {
 									name = je_ut_new_dawn_democratic_points_bar
-									value = local_var:progress_point_loss
+									value = root.var:progress_point_loss
 								}
 							}
 						}
@@ -193,7 +193,7 @@ ut_fund_opposition = {
 							je:je_ut_new_dawn_fascist = {
 								add_progress = {
 									name = je_ut_new_dawn_fascist_points_bar
-									value = local_var:progress_point_loss
+									value = root.var:progress_point_loss
 								}
 							}
 						}
@@ -204,11 +204,12 @@ ut_fund_opposition = {
 							je:je_ut_new_dawn_communist = {
 								add_progress = {
 									name = je_ut_new_dawn_communist_points_bar
-									value = local_var:progress_point_loss
+									value = root.var:progress_point_loss
 								}
 							}
 						}
 					}
+					remove_variable = progress_point_loss
 				}
 			}
 		}

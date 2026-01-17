@@ -242,9 +242,39 @@ ut_new_dawn_has_core_trigger = {
 	}
 }
 
+ut_has_new_dawn_progress_core = {
+	OR = {
+		AND = {
+			has_modifier = ut_new_dawn_core_autocratic_mod
+			ut_has_new_dawn_progress_autocratic = {
+				VALUE = $VALUE$
+			}
+		}
+		AND = {
+			has_modifier = ut_new_dawn_core_democratic_mod
+			ut_has_new_dawn_progress_democratic = {
+				VALUE = $VALUE$
+			}
+		}
+		AND = {
+			has_modifier = ut_new_dawn_core_fascist_mod
+			ut_has_new_dawn_progress_fascist = {
+				VALUE = $VALUE$
+			}
+		}
+		AND = {
+			has_modifier = ut_new_dawn_core_communist_mod
+			ut_has_new_dawn_progress_communist = {
+				VALUE = $VALUE$
+			}
+		}
+	}
+	
+}
+
 ut_has_new_dawn_progress_autocratic = {
 	je:je_ut_new_dawn_autocratic = {
-		"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= $VALUE$
+		"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= $VALUE$
 	}
 }
 

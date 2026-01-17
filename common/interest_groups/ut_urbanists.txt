@@ -24,7 +24,6 @@
 		ideology_authoritarian
 		ideology_corporatist_leader
 		ideology_liberal_leader
-		ideology_ethno_nationalist
 		ideology_fascist
 		ideology_feminist
 		ideology_humanitarian

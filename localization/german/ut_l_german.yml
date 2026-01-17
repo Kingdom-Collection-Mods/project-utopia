@@ -825,12 +825,35 @@
  ut_influence_new_dawn_major_power_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] was rejected $ut_influence_new_dawn_major_power$ from [INITIATOR_COUNTRY.GetName]."
  ut_influence_new_dawn_major_power_unlock_tt: "Verfügbare: #v $ut_influence_new_dawn_major_power$#!"
 
+ ut_new_dawn_start_propaganda_campaign: "Start Propaganda Campaign"
+ ut_new_dawn_start_propaganda_campaign_desc: "Start a propaganda campaign in the target country to increase the chance of revolutions. After a year the modifier is applied and the action can be used again. The modifier is stackable."
+ ut_je_propaganda_source_mod: "Conducting Propaganda Campaign"
+ ut_je_propaganda_source: "Propaganda Campaign"
+ ut_je_propaganda_source_reason: "A propaganda campaign is being conducted. A successful campaign will increase activism of movements and chance of revolutions."
+ ut_je_propaganda_source_goal: "Wait 12 months"
+ ut_je_propaganda_target: "Target of Propaganda Campaign"
+ ut_je_propaganda_target_abort_tt: "The country behind the propaganda campaign has aborted the campaign."
+ ut_je_propaganda_source_abort_tt: "Has aborted the propaganda campaign."
+
+ ut_new_dawn_propaganda_source_abort: "Abort Propaganda Campaign"
+ ut_new_dawn_propaganda_source_abort_desc: ""
+ ut_new_dawn_propaganda_source_abort_tt: "Abort the ongoing propaganda campaign."
+ ut_new_dawn_propaganda_target_defend: "Defend Against Propaganda"
+ ut_new_dawn_propaganda_target_defend_desc: ""
+ ut_new_dawn_propaganda_target_defend_tt: "The country behind the propaganda campaign must spend 10 [concept_ut_nd_progress_points] or abort the campaign."
+
+ ut_propaganda_communist_mod: "Communist Propaganda"
+ ut_propaganda_fascist_mod: "Fascist Propaganda"
+ ut_propaganda_democratic_mod: "Democratic Propaganda"
+ ut_propaganda_autocratic_mod: "Autocratic Propaganda"
+
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
  UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
  UT_BOTH_DIFFERENT_IDEOLOGY: "Different ideologies"
  UT_BOTH_DIFFERENT_IDEOLOGY_OF_TARGET: "Both countries must have different ideologies."
 
  UT_BOTH_DEMOCRATIC: "Beide [concept_ut_nd_democrat_core]"
+ UT_BOTH_COMMUNIST: "Beide [concept_ut_nd_communist_core]"
 
  UT_STANCE_FAVORABLE: "Verbündete [concept_ut_nd_stance]"
  UT_STANCE_NEUTRAL: "Neutrale [concept_ut_nd_stance]"
@@ -1394,6 +1417,9 @@
  pmg_ut_power_grid: "Base"
  ut_pm_power_grid_import: "Convert Electricity"
 
+ pmg_base_building_ut_power_grid_base: "Base"
+ pm_base_building_ut_power_grid_base: "Power Grid Base"
+
  pm_truck_production: "LKW-Produktion"
  pm_modern_automobiles: "Moderne Automobile"
 
@@ -1513,7 +1539,8 @@
 
  pm_trade_center_trade_quantity_utopia: "Industriellerhandel"
 
- pm_supermarket: "Supermarkt"
+ pm_department_store: "Kaufhäuser"
+ pm_supermarket: "Supermärkte"
  pm_shopping_district: "Shopping Viertel"
  pm_online_shopping: "Online Shopping"
  
@@ -1569,6 +1596,9 @@
  prestige_good_generic_plastic: "PVC-Plastik"
  prestige_good_generic_software_b2b: "Datenbank Software"
  prestige_good_generic_software_b2c: "Büro Software"
+ prestige_good_generic_utopia_tanks: "MBT-42"
+ prestige_good_generic_utopia_arms: "Sturmgewehre"
+ prestige_good_generic_utopia_artillery: "Selbstfahrende Haubitzen"
 
 #goods input output
  goods_input_heavy_machinery_add: "@heavy_machinery! Maschinen Zufuhr"

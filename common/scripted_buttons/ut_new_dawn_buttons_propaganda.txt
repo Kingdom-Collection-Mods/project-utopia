@@ -1,0 +1,85 @@
+﻿#Base
+ut_new_dawn_propaganda_source_abort = {
+	name = "ut_new_dawn_propaganda_source_abort"
+	desc = "ut_new_dawn_propaganda_source_abort_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		NOT = {
+			has_variable = ut_propaganda_source_abandon_var
+		}
+	}
+
+	effect = {	
+		custom_tooltip = ut_new_dawn_propaganda_source_abort_tt 		
+		set_variable = {
+			name = ut_propaganda_source_abandon_var
+		}
+	}
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				NOT = {
+					ut_has_new_dawn_progress_core = {
+						VALUE = 50
+					}
+				}
+			}
+			add = 50
+		}
+	}
+}
+
+
+ut_new_dawn_propaganda_target_defend = {
+	name = "ut_new_dawn_propaganda_target_defend"
+	desc = "ut_new_dawn_propaganda_target_defend_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_50
+			ut_has_new_dawn_progress_core = {
+				VALUE = 50
+			}
+		}
+		custom_tooltip = {
+			text = cooldown
+			has_variable = ut_new_dawn_propaganda_target_defend_cooldown_var
+			scope:target = {
+				NOT = { has_variable = ut_propaganda_source_abandon_var }
+			}
+		}
+	}
+
+	effect = {		
+		custom_tooltip = ut_add_new_dawn_progress_neg_10
+		ut_add_new_dawn_core_progress = {
+			VALUE = -10
+		}
+
+		
+		custom_tooltip = ut_new_dawn_propaganda_target_defend_tt
+		scope:target = {
+			trigger_event = {
+				id = event_new_dawn.20
+				popup = yes
+			}
+		}
+		set_variable = ut_new_dawn_propaganda_target_defend_cooldown_var
+	}
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				ut_has_new_dawn_progress_core = {
+					VALUE = 95
+				}
+			}
+			add = 50
+		}
+	}
+}

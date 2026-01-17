@@ -559,6 +559,10 @@ je_ut_new_dawn_democratic = {
 			name = ut_new_dawn_democratic_list
 			target = root
 		}
+		add_to_global_variable_list = {
+			name = ut_new_dawn_no_core_list
+			target = root
+		}
 		every_interest_group = {
 			limit = {
 				has_ideology = ideology:ideology_patriotic_democratic
@@ -566,6 +570,8 @@ je_ut_new_dawn_democratic = {
 			remove_ideology = ideology_patriotic_democratic
 			add_ideology = ideology_patriotic
 		}
+		
+		
 	}
 
 	weight = 100
@@ -739,6 +745,10 @@ je_ut_new_dawn_autocratic = {
 		}
 		remove_list_global_variable = {
 			name = ut_new_dawn_autocratic_list
+			target = root
+		}
+		add_to_global_variable_list = {
+			name = ut_new_dawn_no_core_list
 			target = root
 		}
 	}
@@ -958,6 +968,10 @@ je_ut_new_dawn_fascist = {
 		}
 		remove_list_global_variable = {
 			name = ut_new_dawn_fascist_list
+			target = root
+		}
+		add_to_global_variable_list = {
+			name = ut_new_dawn_no_core_list
 			target = root
 		}
 
@@ -1181,9 +1195,12 @@ je_ut_new_dawn_communist = {
 			remove_ideology = ideology_patriotic_communist_international
 			add_ideology = ideology_patriotic
 		}
-		
 		remove_list_global_variable = {
 			name = ut_new_dawn_communist_list
+			target = root
+		}
+		add_to_global_variable_list = {
+			name = ut_new_dawn_no_core_list
 			target = root
 		}
 	}

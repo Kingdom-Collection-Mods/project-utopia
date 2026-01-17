@@ -1,4 +1,13 @@
 ﻿REPLACE:coa_republic_trigger = {
+	NOT = {
+		AND = {
+			c:GBR ?= this
+			OR = {
+				has_law_or_variant = law_type:law_parliamentary_republic
+				has_law = law_type:ut_law_monarchy_democratic
+			}
+		}
+	}
 	OR = {
 		has_law = law_type:ut_law_monarchy_democratic
 		has_law_or_variant = law_type:law_corporate_state

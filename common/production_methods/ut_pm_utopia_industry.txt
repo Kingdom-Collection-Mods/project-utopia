@@ -1948,9 +1948,9 @@ ut_pm_offshore_wind_power_plant = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 10 # 600
-			goods_input_heavy_machinery_add = 1
-			goods_output_high_voltage_electricity_add = 110 # 2400
+			goods_input_engines_add = 10
+			goods_input_heavy_machinery_add = 2
+			goods_output_high_voltage_electricity_add = 120
 		}
 
 		level_scaled = {
@@ -1993,7 +1993,7 @@ ut_pm_power_grid_import = {
     building_modifiers = {
         workforce_scaled = {
             goods_input_heavy_machinery_add = 1
-			goods_input_electronics_add = 2
+			goods_input_electronics_add = 4
             goods_input_high_voltage_electricity_add = 200
 			goods_output_electricity_add = 200
         }
@@ -2039,7 +2039,7 @@ pm_ut_high_voltage_electricity = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_output_electricity_add = -100
-			goods_output_high_voltage_electricity_add = 150
+			goods_output_high_voltage_electricity_add = 140
 		}
 	}
 }
@@ -2059,7 +2059,38 @@ pm_ut_ultra_high_voltage_electricity = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_output_electricity_add = -100
-			goods_output_high_voltage_electricity_add = 200
+			goods_output_high_voltage_electricity_add = 180
+		}
+	}
+}
+
+pm_base_building_ut_power_grid_base = {
+	texture = "gfx/interface/icons/production_method_icons/james_grid_capacity_1.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 100
+		}
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 15
+			goods_input_steel_add = 15
+			goods_input_engines_add = 5
+			goods_input_aluminum_add = 10
+			goods_input_computers_add = 5
+			goods_input_electronics_add = 30
+			goods_input_electricity_add = 30
+			goods_input_heavy_machinery_add = 10
+		}
+
+		level_scaled = {
+			#employment 5000 (special building)
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 2000
+			building_employment_engineers_add = 1500
+			building_employment_academics_add = 500
 		}
 	}
 }

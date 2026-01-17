@@ -9,7 +9,7 @@
  utopia.continue: "Continue"
  utopia.cheat: "Cheat"
  utopia.disable: "Disable"
- error: "Error" 
+ utopia.error: "Error" 
 
 # Events & Journals
  ut_heavy_industrial_machinery_je: "Heavy Industrial Machinery"
@@ -262,7 +262,7 @@
  ut_nd_communist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_command_economy').GetName], [GetLawType('law_cooperative_ownership').GetName]"
  ut_nd_communist_progress_from_legitimacy: "[concept_legitimacy] of [concept_ut_nd_communist_characters] [concept_ruler]"
  ut_nd_communist_progress_from_focus: "Communist Focus"
- ut_nd_communist_progress_from_events: "Events and Other Effects"
+ ut_nd_communist_progress_from_events: "Events and other Effects"
  ut_new_dawn_communist_status: "Communist Ideas Are Shaping the Discourse"
  concept_ut_nd_communist_characters: "Communist Characters"
  concept_ut_nd_communist_characters_desc: "Communist [concept_character] ideologies are: [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_vanguardist').GetName], and [GetIdeology('ideology_nihilist').GetName].\nIf Communist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ideology_positivist').GetName]."
@@ -275,15 +275,15 @@
  je_ut_new_dawn_autocrat_focus_desc: "Autocratic focus selected"
  je_ut_new_dawn_communist_focus: "Communist Focus"
  je_ut_new_dawn_communist_focus_desc: "Communist focus selected"
- ut_new_dawn_phase_2_progress_modifier: "x0.25 Multiplier"
+ ut_new_dawn_phase_2_progress_modifier: "x0.25 Multiplier during $new_dawn_phase_2_mod$"
 
- ut_new_dawn_core_fascist_mod: "Fascist"
+ ut_new_dawn_core_fascist_mod: "Fascist Ideology"
  je_ut_new_dawn_fascist_mod: "Fascist"
- ut_new_dawn_core_communist_mod: "Communist"
+ ut_new_dawn_core_communist_mod: "Communist Ideology"
  je_ut_new_dawn_communist_mod: "Communist"
- ut_new_dawn_core_autocratic_mod: "Autocratic"
+ ut_new_dawn_core_autocratic_mod: "Autocratic Ideology"
  je_ut_new_dawn_autocratic_mod: "Autocratic"
- ut_new_dawn_core_democratic_mod: "Democratic"
+ ut_new_dawn_core_democratic_mod: "Democratic Ideology"
  je_ut_new_dawn_democratic_mod: "Democratic"
  
  #[THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress_diff').GetValue|+=] for actual trend value
@@ -318,7 +318,7 @@
  ut_nd_democrat_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [concept_ut_nd_democrat_characters] [concept_leader]"
  ut_nd_democrat_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_universal_suffrage').GetName], [GetLawType('law_census_voting').GetName]"
  ut_nd_democrat_progress_from_legitimacy: "[concept_legitimacy] of [concept_ut_nd_democrat_characters] [concept_ruler]"
- ut_nd_democrat_progress_from_events: "Events and Other Effects"
+ ut_nd_democrat_progress_from_events: "Events and other Effects"
  ut_nd_democrat_progress_from_focus: "Democratic Focus"
  concept_ut_nd_democrat_interest_group_tt: "IG has leader with [concept_ut_nd_democrat_characters] ideology"
  concept_ut_nd_democrat_characters: "Democratic Characters"
@@ -441,7 +441,7 @@
  ut_nd_autocrat_progress_from_legitimacy: "[concept_legitimacy] of [concept_ut_nd_autocrat_characters] [concept_ruler]"
  ut_nd_autocrat_progress_from_movements: "[concept_political_movement_support] von #bold autokratische#! [Concept('concept_political_movement','$concept_political_movements$')]"
  ut_nd_autocrat_progress_from_focus: "Autocratic Focus"
- ut_nd_autocrat_progress_from_events: "Events and Other Effects"
+ ut_nd_autocrat_progress_from_events: "Events and other Effects"
  concept_ut_nd_autocrat_characters: "Autocratic Characters"
  concept_ut_nd_autocrat_characters_desc: "Autocratic [concept_character] ideologies are: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], and [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nIf Autocrat [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], and [GetIdeology('ideology_corporatist_leader').GetName]."
  ut_new_dawn_autocrat_status: "Autocratic Ideas shape the Discourse"
@@ -477,7 +477,7 @@
  ut_nd_fascist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName]"
  ut_nd_fascist_progress_from_legitimacy: "[concept_legitimacy] of [concept_ut_nd_fascist_characters] [concept_ruler]"
  ut_nd_fascist_progress_from_focus: "Fascist Focus"
- ut_nd_fascist_progress_from_events: "Events and Other Effects"
+ ut_nd_fascist_progress_from_events: "Events and other Effects"
  concept_ut_nd_fascist_characters: "Fascist Characters"
  concept_ut_nd_fascist_characters_desc: "Fascist [concept_character] ideologies are: [GetIdeology('ideology_ethno_nationalist').GetName] and [GetIdeology('ideology_fascist').GetName].\nIf Fascist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ut_ideology_national_socialist_leader').GetName]."
  ut_new_dawn_fascist_status: "Fascist Ideas shape the Discourse"
@@ -545,8 +545,8 @@
  ideology_urbanist_economy_base_desc: "Rationalist ideologies favor governance by experts and the efficient management of state and society. They rely on science-based decisions and support education, technology, and public services."
  ideology_urbanist_human_rights_base: "Humanists"
  ideology_urbanist_human_rights_base_desc: "Humanist ideologies focus on equality, social justice, and the protection of individual rights. They reject slavery and exploitation and advocate for strong social safety nets."
- ut_ideology_environmentalist_leader: "Ecologist"
- ut_ideology_environmentalist_leader_desc: "#lore Environmentalists.#!"
+ ut_ideology_environmentalist_leader: "Environmentalist"
+ ut_ideology_environmentalist_leader_desc: "Environmentalist ideologies prioritize the protection of the environment and sustainable development. They advocate for policies that address climate change, conserve natural resources, and promote ecological balance."
  ut_ideology_environmentalist_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_environmentalist_leader').GetName] [concept_ideology]"
 
  ut_ideology_cosmopolitan: "Cosmopolitan"
@@ -825,12 +825,35 @@
  ut_influence_new_dawn_major_power_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] was rejected $ut_influence_new_dawn_major_power$ from [INITIATOR_COUNTRY.GetName]." 
  ut_influence_new_dawn_major_power_unlock_tt: "Unlocks: #v $ut_influence_new_dawn_major_power$#!"
 
+ ut_new_dawn_start_propaganda_campaign: "Start Propaganda Campaign"
+ ut_new_dawn_start_propaganda_campaign_desc: "Start a propaganda campaign in the target country to increase the chance of revolutions in the target country. After a year the modifier is applied and the action can be used again. The modifier is stackable."
+ ut_je_propaganda_source_mod: "Conducting Propaganda Campaign"
+ ut_je_propaganda_source: "Propaganda Campaign"
+ ut_je_propaganda_source_reason: "Start a propaganda campaign in the target country to increase the chance of revolutions in the target country. After a year the modifier is applied and the action can be used again. The modifier is stackable."
+ ut_je_propaganda_source_goal: "Wait 12 months"
+ ut_je_propaganda_target: "Target of Propaganda Campaign"
+ ut_je_propaganda_target_abort_tt: "The country behind the propaganda campaign has aborted the campaign."
+ ut_je_propaganda_source_abort_tt: "Has aborted the propaganda campaign."
+
+ ut_new_dawn_propaganda_source_abort: "Abort Propaganda Campaign"
+ ut_new_dawn_propaganda_source_abort_desc: ""
+ ut_new_dawn_propaganda_source_abort_tt: "Abort the ongoing propaganda campaign."
+ ut_new_dawn_propaganda_target_defend: "Defend Against Propaganda"
+ ut_new_dawn_propaganda_target_defend_desc: ""
+ ut_new_dawn_propaganda_target_defend_tt: "The country behind the propaganda campaign must spend 10 [concept_ut_nd_progress_points] or abort the campaign."
+
+ ut_propaganda_communist_mod: "Communist Propaganda"
+ ut_propaganda_fascist_mod: "Fascist Propaganda"
+ ut_propaganda_democratic_mod: "Democratic Propaganda"
+ ut_propaganda_autocratic_mod: "Autocratic Propaganda"
+ 
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
  UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
  UT_BOTH_DIFFERENT_IDEOLOGY: "Different ideologies"
  UT_BOTH_DIFFERENT_IDEOLOGY_OF_TARGET: "Both countries must have different ideologies."
 
  UT_BOTH_DEMOCRATIC: "Both [concept_ut_nd_democrat_core]"
+ UT_BOTH_COMMUNIST: "Both [concept_ut_nd_communist_core]"
 
  UT_STANCE_FAVORABLE: "Favorable [concept_ut_nd_stance]"
  UT_STANCE_NEUTRAL: "Neutral [concept_ut_nd_stance]"
@@ -904,7 +927,7 @@
  war_goal_ut_regime_change_communist_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] forces [WAR_GOAL_DRAFT.GetTarget.GetName] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to their own. The following Law will be enforced:  [GetLawType('law_council_republic').GetName]"
 
  dp_ut_fascist_annex_war: "Invade Country"
- dp_ut_fascist_annex_war_tooltip: "Start an $dp_annex_war$ [concept_diplomatic_play]"
+ dp_ut_fascist_annex_war_tooltip: "Start an $dp_annex_war$ [concept_diplomatic_play] (Unlocked by being Fascist)"
 
  ut_fund_ideology: "Fund Ideology"
  ut_fund_ideology_action_name: "$ut_fund_ideology$"
@@ -930,6 +953,8 @@
  ut_add_new_dawn_progress_50: "Gains #b 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_50: "Loses #r 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_25: "Loses #r 25#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_neg_10: "Loses #r 10#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_neg_5: "Loses #r 5#! [concept_ut_nd_progress_points]"
 
  ut_force_become_subject: "Collectivize Council Republics"
  ut_force_become_subject_action_name: "$ut_force_become_subject$"
@@ -1242,7 +1267,8 @@
  digital_tax_declaration: "Digital Tax Declaration"
  digital_tax_declaration_desc: "Electronic forms and automated plausibility checks modernize tax collection."
  union_new_mandates: "International Law"
- union_new_mandates_tt_principles: "Unlocks new Power Bloc [concept_power_bloc_principle]"
+ union_new_mandates_tt_principles: "Unlocks new Power Bloc [concept_power_bloc_principle]s"
+ union_new_mandates_tt_principles_upgrade: "Unlocks new Power Bloc [concept_power_bloc_principle] level"
  union_new_mandates_tt_articles: "Unlocks new [concept_article]: [GetArticleType('ut_research_agreement').GetNameNoIcon], [GetArticleType('ut_research_assistance_treaty').GetNameNoIcon], and Ideological [concept_article]"
  union_new_mandates_desc: "Supranational institutions gain authority over climate and digital regulation. The era of purely economic integration gives way to ambitious political entanglement."
  union_new_mandates_two: "International Organization"
@@ -1394,6 +1420,9 @@
  pmg_ut_power_grid: "Base"
  ut_pm_power_grid_import: "Convert Electricity"
 
+ pmg_base_building_ut_power_grid_base: "Base"
+ pm_base_building_ut_power_grid_base: "Power Grid Base"
+
  pm_truck_production: "Truck Production"
  pm_modern_automobiles: "Modern Automobiles"
 
@@ -1513,7 +1542,8 @@
 
  pm_trade_center_trade_quantity_utopia: "Industrial Trade"
 
- pm_supermarket: "Supermarket"
+ pm_department_store: "Department Store"
+ pm_supermarket: "Supermarkets"
  pm_shopping_district: "Shopping District"
  pm_online_shopping: "Online Shopping"
 

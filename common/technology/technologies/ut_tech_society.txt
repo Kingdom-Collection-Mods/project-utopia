@@ -198,7 +198,7 @@ check_payments = {
 	modifier = {
 		state_service_workers_investment_pool_efficiency_mult = 0.05
 		country_minting_mult = 0.05
-		country_loan_interest_rate_mult = -0.01
+		country_loan_interest_rate_add = -0.02
 	}
 
 	unlocking_technologies = {	
@@ -220,7 +220,7 @@ credit_cards = {
 	modifier = {
 		state_service_workers_investment_pool_efficiency_mult = 0.05
 		country_minting_mult = 0.05
-		country_loan_interest_rate_mult = -0.01
+		country_loan_interest_rate_add = -0.02
 	}
 
 	unlocking_technologies = {	
@@ -378,6 +378,12 @@ union_trade = {
 		country_leverage_generation_mult = 0.25
 	}
 
+	on_researched = {
+		custom_tooltip = {
+			text = union_new_mandates_tt_principles_upgrade
+		}
+	}
+
 	unlocking_technologies = {
 		union_new_mandates
 		check_payments
@@ -397,6 +403,9 @@ union_new_mandates_two = {
 	on_researched = {
 		custom_tooltip = {
 			text = union_new_mandates_two_tt
+		}
+		custom_tooltip = {
+			text = union_new_mandates_tt_principles_upgrade
 		}
 	}
 

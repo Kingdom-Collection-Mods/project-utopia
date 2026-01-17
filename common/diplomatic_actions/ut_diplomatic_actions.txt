@@ -415,7 +415,7 @@ ut_influence_new_dawn_major_power = {
 	}
 }
 
-ut_new_dawn_communist_start_propaganda_campaign = {
+ut_new_dawn_start_propaganda_campaign = {
 	groups= {
 		general
 	}
@@ -425,49 +425,69 @@ ut_new_dawn_communist_start_propaganda_campaign = {
 		union_trade
 	}
 	
-	selectable = {
-		#todo disabled for now
-		always = no
-		
+	selectable = {		
 		NOT = { is_country_type = decentralized }
 		is_revolutionary = no
 		country_rank >= rank_value:great_power
-		ut_new_dawn_has_core_trigger = yes
-		has_modifier = ut_new_dawn_core_communist_mod
+		OR = {
+			has_modifier = ut_new_dawn_core_communist_mod
+			has_modifier = ut_new_dawn_core_democratic_mod
+			has_modifier = ut_new_dawn_core_autocratic_mod
+		}
 	}
 	
 	potential = {
 		NOT = {
-			has_journal_entry = ut_je_communist_propaganda_source
+			has_journal_entry = ut_je_propaganda_source
 		}
 		scope:target_country = {
 			is_subject = no
-			NOT = { has_journal_entry = ut_je_communist_propaganda_target }
+			NOT = { has_journal_entry = ut_je_propaganda_target }
 			hidden_trigger = {
 				NOT = { has_variable = je_ut_new_dawn_done }
+			}
+		}
+		NOT = {
+			AND = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+				scope:target_country = { has_modifier = ut_new_dawn_core_democratic_mod }
+			}
+		}
+		NOT = {
+			AND = {
+				has_modifier = ut_new_dawn_core_communist_mod
+				scope:target_country = { has_modifier = ut_new_dawn_core_communist_mod }
+			}
+		}
+		NOT = {
+			AND = {
+				has_modifier = ut_new_dawn_core_autocratic_mod
+				scope:target_country = { has_modifier = ut_new_dawn_core_autocratic_mod }
 			}
 		}
 	}
 	
 	possible = {
-		#todo disabled for now
-		always = no
 		scope:target_country = {
 			country_rank <= root.country_rank
-			has_journal_entry = je_ut_new_dawn
+			ut_new_dawn_has_core_trigger = yes
 		}
 	}
 	
 	accept_effect = {
+		custom_tooltip = ut_add_new_dawn_progress_neg_10
+		ut_add_new_dawn_core_progress = {
+			VALUE = -10
+		}
 		add_journal_entry = {
-			type = ut_je_communist_propaganda_source
+			type = ut_je_propaganda_source
 			target = scope:target_country
 		}
-
+		change_infamy = 5
 
 		scope:target_country = {
 			add_journal_entry = {
-				type = ut_je_communist_propaganda_target
+				type = ut_je_propaganda_target
 				target = root
 			}
 		}
@@ -481,9 +501,13 @@ ut_new_dawn_communist_start_propaganda_campaign = {
 	
 		
 		
-		will_propose = {  
-			ut_has_new_dawn_progress_communist = {
-				VALUE = 100
+		will_propose = { 
+			has_attitude = {
+				who = scope:target_country
+				attitude = domineering
+			}
+			ut_has_new_dawn_progress_core = {
+				VALUE = 90
 			}
 		}
 		
@@ -992,9 +1016,6 @@ ut_force_regime_change = {
 		scope:target_country = {
 			activate_law = law_type:law_corporate_state
 			activate_law = law_type:law_extraction_economy
-			activate_law = law_type:law_subjecthood #DEPRECATED
-
-			#apply law_subjecthood before for backwords compatibility DEPRECATED
 			activate_law = law_type:ut_law_subjecthood_fascist
 			
 			if = {

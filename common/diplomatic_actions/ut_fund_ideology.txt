@@ -165,7 +165,7 @@ ut_fund_ideology = {
 				}
 			}
 			else = {
-				custom_tooltip = error
+				custom_tooltip = utopia.error
 			}
 		}
 
