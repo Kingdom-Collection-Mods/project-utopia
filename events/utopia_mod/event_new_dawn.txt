@@ -5,7 +5,7 @@ event_new_dawn.1 = {
 	type = country_event
 
 	event_image = {
-		video = "unspecific_trains"
+		video = "unspecific_world_fair"
 	}
 	
 	trigger = {
@@ -129,7 +129,7 @@ event_new_dawn.2 = {
 	}
 
 	event_image = {
-		video = "unspecific_trains"
+		video = "southamerica_election"
 	}
 
 	duration = 3
@@ -340,7 +340,7 @@ event_new_dawn.3 = {
 	}
 
 	event_image = {
-		video = "unspecific_airship"
+		video = "europenorthamerica_springtime_of_nations"
 	}
 
 	duration = 3
@@ -513,7 +513,7 @@ event_new_dawn.11 = {
 	flavor = event_new_dawn.11.f
 
 	event_image = {
-		video = "unspecific_trains"
+		video = "unspecific_politicians_arguing"
 	}
 
 	duration = 3
@@ -667,7 +667,7 @@ event_new_dawn.12 = {
 	desc = event_new_dawn.11.d
 
 	event_image = {
-		video = "unspecific_trains"
+		video = "unspecific_politicians_arguing"
 	}
 
 	duration = 3
@@ -812,7 +812,7 @@ event_new_dawn.20 = {
 	desc = ut_new_dawn_propaganda_target_defend_desc
 	
 	event_image = {
-		video = "unspecific_trains"
+		video = "unspecific_vandalized_storefront"
 	}
 
 	duration = 3
@@ -941,7 +941,7 @@ event_new_dawn.30 = {
 	flavor = event_new_dawn.30.f
 	
 	event_image = {
-		video = "unspecific_trains"
+		video = "unspecific_military_parade"
 	}
 
 	duration = 3
