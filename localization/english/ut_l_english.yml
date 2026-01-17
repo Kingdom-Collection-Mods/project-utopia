@@ -973,9 +973,11 @@
  ut_fund_opposition_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] has stopped $ut_fund_opposition$ in [TARGET_COUNTRY.GetName]."
  ut_fund_opposition_action_notification_name: "$ut_fund_opposition$ Started"
  ut_fund_opposition_action_notification_desc: "[INITIATOR_COUNTRY.GetName] has started $ut_fund_opposition$ in [TARGET_COUNTRY.GetName]."
- ut_fund_opposition_desc: "Fund the opposition in the target country to overthrow the ruling ideology.\n\n$ut_fund_opposition_effect$"
- ut_fund_opposition_effect: "2% chance per month for their core Ideology to lose #r 25#! [concept_ut_nd_progress_points] (may abort their New Dawn [concept_ut_nd_path_to_utopia] journal entry, Democracies are +50% effective against Autocratic countries, +25% more effective if Online Forums and additionally Social Media is researched)."
- ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds opposition groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], this may lead to revolts in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] opposition groups reducing their ideology [concept_ut_nd_progress_points].\n\n$ut_fund_opposition_effect$"
+ ut_fund_opposition_desc: "Fund the opposition in the target country to overthrow the ruling ideology. May abort their New Dawn [concept_ut_nd_path_to_utopia] journal entry. (Democracies are more effective against Autocratic countries, Online Forums and Social Media increase effectiveness.)\n\n$ut_fund_opposition_effect$"
+ ut_fund_opposition_effect: "Lose #r 25#! [concept_ut_nd_progress_points]"
+ ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds opposition groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], this may lead to revolts in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] opposition groups reducing their ideology [concept_ut_nd_progress_points].\n\nTarget country effect: $ut_fund_opposition_effect$"
+ ut_fund_opposition_target_desc: "Another country is founding opposition groups in your country, this may lead to revolts in your opposition groups reducing your ideology [concept_ut_nd_progress_points]."
+
 
 # Power Blocs
  principle_group_modern_trade_league: "Modern Trade League"
@@ -1599,6 +1601,9 @@
  prestige_good_generic_plastic: "PVC"
  prestige_good_generic_software_b2b: "Database Software"
  prestige_good_generic_software_b2c: "Office Software"
+ prestige_good_generic_utopia_tanks: "MBT-42"
+ prestige_good_generic_utopia_arms: "Assault Rifles"
+ prestige_good_generic_utopia_artillery: "Self-Propelled Howitzers"
 
 #goods input output
  goods_input_heavy_machinery_add: "@heavy_machinery! Machinery input"
