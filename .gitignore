@@ -1,4 +1,9 @@
-localization
-
-!localization/english/**
-!localization/german/**
+localization/braz_por/
+localization/french/
+localization/japanese/
+localization/korean/
+localization/polish/
+localization/russian/
+localization/simp_chinese/
+localization/spanish/
+localization/turkish/

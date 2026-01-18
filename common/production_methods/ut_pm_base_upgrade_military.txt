@@ -32,7 +32,7 @@ pm_ut_modern_tank_production = {
 	texture = "gfx/interface/icons/production_method_icons/ut_tank_era_6.dds"
 
 	unlocking_technologies = {
-		ut_armored_infantry
+		ut_tank_modern
 	}
 
 	building_modifiers = {
@@ -58,7 +58,7 @@ pm_ut_modern_tank_production_2 = {
 	texture = "gfx/interface/icons/production_method_icons/ut_tank_era_7.dds"
 
 	unlocking_technologies = {
-		ut_tank_modern
+		ut_armored_infantry
 	}
 
 	building_modifiers = {

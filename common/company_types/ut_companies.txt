@@ -13,6 +13,7 @@
 
 	extension_building_types = {
 		building_chemical_plant
+		building_offshore_wind_farm
 	}
 
 	possible = { 

@@ -530,7 +530,7 @@ ut_ideology_autocratic_leader = {
 
 #Fascist Unlock
 ut_ideology_national_socialist_leader = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/idealogy_leader_oligarchic.dds"
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_patriotic.dds"
 	
 	character_ideology = yes
 
@@ -963,7 +963,7 @@ ut_ideology_totalitarian_communist_leader = {
 
 #General Unlock 
 ut_ideology_economical_corporatist_leader = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_paternalistic.dds"
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_Loyalist.dds"
 	
 	character_ideology = yes
 	
@@ -1148,7 +1148,7 @@ ut_ideology_economical_corporatist_leader = {
 
 #copied from ideology_market_liberal
 ut_liberal_feminism_leader = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_market_liberal.dds"
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_feminist_laissez_faire.dds"
 	
 	character_ideology = yes
 
@@ -1368,7 +1368,7 @@ ut_liberal_feminism_leader = {
 
 #copied from ideology_radical
 ut_radical_feminism_leader = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_radical.dds"
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_feminist_radical.dds"
 	
 	character_ideology = yes
 
@@ -1667,7 +1667,7 @@ ut_radical_feminism_leader = {
 
 #copied from ideology_social_democrat
 ut_social_feminism_leader = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_social_democrat.dds"
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_feminist_social_democrat.dds"
 	
 	character_ideology = yes
 

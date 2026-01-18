@@ -786,8 +786,13 @@
  institution_epa_desc: ""
  institution_food_safety: "Food Safety"
  institution_food_safety_desc: ""
+ institution_migration_office: "Migration Office"
+ institution_migration_office_desc: ""
  country_institution_epa_max_investment_add: "Max. Investment in [concept_institution] $institution_epa$"
  country_institution_food_safety_max_investment_add: "Max. Investment in [concept_institution] $institution_food_safety$"
+ country_institution_migration_office_max_investment_add: "Max. Investment in [concept_institution] $institution_migration_office$"
+ country_institution_cost_institution_migration_office_mult: "@bur![Nbsp][concept_bureaucracy] Cost of [GetInstitutionType('institution_migration_office').GetName]"
+ country_institution_cost_institution_migration_office_mult_desc: "An increase or reduction to the @bur![Nbsp][concept_bureaucracy] cost of bringing [GetInstitutionType('institution_migration_office').GetName] to the citizens"
 
 #Diplo Stuff
  ut_international_diplomatic_power_bloc_merge: "Unify Power Blocs"
