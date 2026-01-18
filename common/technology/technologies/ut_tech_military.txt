@@ -423,7 +423,8 @@ ut_tank_composite_armor = {
 	}
 }
 
-ut_armored_infantry = {
+
+ut_tank_modern = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/tank_1960s.dds"
 	category = military
@@ -442,13 +443,13 @@ ut_armored_infantry = {
 	}
 }
 
-ut_tank_modern = {
+ut_armored_infantry = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/tank_1960s.dds"
 	category = military
 
 	unlocking_technologies = {	
-		ut_armored_infantry
+		ut_tank_modern
 	}
 
 	modifier = {
@@ -459,7 +460,6 @@ ut_tank_modern = {
 	}
 }
 
-
 ut_tank_jet_engine = {
 	era = era_7
 	texture = "gfx/interface/icons/invention_icons/gas_turbine.dds"
@@ -467,6 +467,7 @@ ut_tank_jet_engine = {
 
 	unlocking_technologies = {
 		ut_tank_modern
+		ut_anti_tank_guided #new
 	}
 	
 	modifier = {
@@ -484,7 +485,7 @@ ut_tank_autoloader = {
 	category = military
 
 	unlocking_technologies = {
-		ut_tank_modern
+		ut_armored_infantry
 	}
 
 	modifier = {
