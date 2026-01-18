@@ -7,3 +7,8 @@ institution_food_safety = {
 	icon = "gfx/interface/icons/institution_icons/schools.dds"
 	background_texture = "gfx/interface/illustrations/institutions/schools.dds"
 }
+
+institution_migration_office = {
+	icon = "gfx/interface/icons/institution_icons/schools.dds"
+	background_texture = "gfx/interface/illustrations/institutions/schools.dds"
+}

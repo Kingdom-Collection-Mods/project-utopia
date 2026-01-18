@@ -514,6 +514,18 @@ interest_group_ig_urbanists_approval_add={
 
 ###
 
+
+country_institution_cost_institution_migration_office_mult={
+	decimals=0
+	color=bad
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+###
+
 building_group_bg_bauxite_mining_tax_mult={
 	decimals=1
 	color=neutral

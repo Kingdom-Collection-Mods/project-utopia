@@ -1172,6 +1172,7 @@ law_environment_protection_institute  = {
 	institution_modifier = {
 		state_urbanization_per_level_mult = 0.02
 		state_pollution_reduction_health_mult = -0.02
+		building_power_plant_throughput_add = -0.01
 	}
 
 
@@ -1208,6 +1209,7 @@ law_environment_protection_institute_two  = {
 		state_pollution_reduction_health_mult = -0.04
 		building_economy_of_scale_level_cap_add = -1
 		state_mortality_mult = -0.01
+		building_power_plant_throughput_add = -0.02
 	}
 
 
@@ -1269,6 +1271,7 @@ law_environment_protection_institute_three  = {
 		state_pollution_reduction_health_mult = -0.04
 		building_economy_of_scale_level_cap_add = -1
 		state_mortality_mult = -0.01
+		building_power_plant_throughput_add = -0.03
 	}
 
 
@@ -1400,7 +1403,7 @@ law_private_pension = {
 
 	institution = institution_social_security
 	institution_modifier = {
-		state_welfare_payments_add = -0.1
+		state_welfare_payments_add = -0.05
 		state_food_security_add = 0.01
 		country_capitalists_pol_str_mult = 0.02
 		state_working_adult_ratio_add = 0.01
@@ -1442,9 +1445,11 @@ law_ut_disability_insurance = {
 
 	institution = institution_social_security
 	institution_modifier = {
+		state_welfare_payments_add = 0.1
 		state_dependent_wage_mult = 0.3
 		state_dependent_political_participation_add = 0.03
 		state_food_security_add = 0.01
+		building_minimum_wage_mult = 0.15
 	}
 
 	# Below needed since this Law changes Politial Participation
@@ -1585,8 +1590,13 @@ law_registration_process = {
 	}
 
 	modifier = {
-		country_mass_migration_attraction_mult = -1
 		country_migration_restrictiveness_add = 20
+		country_institution_cost_institution_migration_office_mult = -0.5
+	}
+	
+	institution = institution_migration_office
+	institution_modifier = {
+		country_mass_migration_attraction_mult = -0.2
 	}
 
 	ai_enact_weight_modifier = { #Petitions

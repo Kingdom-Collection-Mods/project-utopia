@@ -358,6 +358,7 @@ union_new_mandates = {
 		
 	modifier = {
 		country_infamy_generation_mult = -0.1
+		country_institution_migration_office_max_investment_add = 5
 	}
 
 	unlocking_technologies = {
