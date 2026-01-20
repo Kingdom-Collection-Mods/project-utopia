@@ -403,6 +403,15 @@ building_renewable_power_plant_throughput_add={
 		ai_value=0
 	}
 }
+
+building_offshore_wind_farm_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
 ####
 
 
@@ -498,6 +507,18 @@ interest_group_ig_urbanists_pop_attraction_mult={
 interest_group_ig_urbanists_approval_add={
 	decimals=1
 	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+###
+
+
+country_institution_cost_institution_migration_office_mult={
+	decimals=0
+	color=bad
+	percent=yes
 	game_data={
 		ai_value=0
 	}

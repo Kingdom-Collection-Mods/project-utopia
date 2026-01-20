@@ -13,6 +13,7 @@
 
 	extension_building_types = {
 		building_chemical_plant
+		building_offshore_wind_farm
 	}
 
 	possible = { 
@@ -652,6 +653,7 @@ ut_software_company_era_8 = {
 
 	extension_building_types = {
 		building_computer_factory
+		building_renewable_power_plant
 	}
 
 	

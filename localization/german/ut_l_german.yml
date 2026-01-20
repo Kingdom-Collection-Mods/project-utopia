@@ -786,8 +786,13 @@
  institution_epa_desc: ""
  institution_food_safety: "Lebensmittelsicherheit"
  institution_food_safety_desc: ""
+ institution_migration_office: "Einwanderungsbehörde"
+ institution_migration_office_desc: ""
  country_institution_epa_max_investment_add: "Max. Investition der [concept_institution] $institution_epa$"
  country_institution_food_safety_max_investment_add: "Max. Investition der [concept_institution] $institution_food_safety$"
+ country_institution_migration_office_max_investment_add: "Max. Investition der [concept_institution] $institution_migration_office$"
+ country_institution_cost_institution_migration_office_mult: "@bur![Nbsp][concept_bureaucracy] Cost of [GetInstitutionType('institution_migration_office').GetName]"
+ country_institution_cost_institution_migration_office_mult_desc: "An increase or reduction to the @bur![Nbsp][concept_bureaucracy] cost of bringing [GetInstitutionType('institution_migration_office').GetName] to the citizens"
 
 #Diplo Stuff
  ut_international_diplomatic_power_bloc_merge: "Machtblöcke vereinigen"
@@ -1211,11 +1216,14 @@
  ut_military_complex: "Militärkomplex"
  ut_military_complex_desc: ""
  ut_corvettes_era_7: "Aufklärungskorvetten"
+ ut_corvettes_era_7_desc: ""
  ut_battleship_era_7: "Großschlachtschiffe"
+ ut_battleship_era_7_desc: ""
  ut_modern_submarine_era_7: "Elektronische Überwachung"
+ ut_modern_submarine_era_7_desc: ""
 
  combat_unit_type_support_systems: "Unterstützungssysteme"
- combat_unit_type_advanced_support_systems: "Advanced Support Systems"
+ combat_unit_type_advanced_support_systems: "Fort. Unterstützungssysteme"
  combat_unit_type_missile_corvettes: "Raketenkorvetten"
  combat_unit_type_surveillance_corvettes: "Aufklärungskorvetten"
  combat_unit_type_capital_battleship: "Großschlachtschiff"
@@ -1227,7 +1235,7 @@
  combat_unit_type_motorized_artillery: "Motorisierte Artillerie"
  combat_unit_type_rocket_artillery: "Raketenartillerie"
  combat_unit_type_support_systems_desc: "Logistik- und Unterstützungseinheiten, die die Effektivität der Fronttruppen verbessern."
- combat_unit_type_advanced_support_systems_desc: "Highly specialized support units equipped with cutting-edge technology to provide superior battlefield assistance."
+ combat_unit_type_advanced_support_systems_desc: "Hochspezialisierte Unterstützungseinheiten, die mit modernster Technologie ausgestattet sind, um überlegene Hilfe auf dem Schlachtfeld zu bieten."
  combat_unit_type_missile_corvettes_desc: "Schnelle und wendige Schiffe mit Raketensystemen für rasche Seegefechte."
  combat_unit_type_surveillance_corvettes_desc: "Marineeinheiten mit fortschrittlichen Sensoren und Kommunikationssystemen zur Aufklärung und Koordination."
  combat_unit_type_capital_battleship_desc: "Schwer bewaffnete und gepanzerte Schlachtschiffe der höchsten Klasse zur Vorherrschaft in großen Seegefechten."
@@ -1744,6 +1752,9 @@
 
  building_renewable_power_plant_throughput_add: "$building_renewable_power_plant$ [concept_throughput]"
  building_renewable_power_plant_throughput_add_desc: "Ein Bonus oder Abzug sowohl auf die Zufuhr als auch auf den Ausstoß von $building_renewable_power_plant$."
+
+ building_offshore_wind_farm_throughput_add: "$building_offshore_wind_farm$ [concept_throughput]"
+ building_offshore_wind_farm_throughput_add_desc: "A bonus or penalty to both input and output of the $building_offshore_wind_farm$."
 
  smart_irrigation_building_tea_plantation: "Intelligente Bewässerung"
  smart_irrigation_building_tobacco_plantation: "Intelligente Bewässerung"
