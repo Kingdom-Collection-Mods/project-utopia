@@ -9,12 +9,21 @@ ut_new_dawn_propaganda_source_abort = {
 		NOT = {
 			has_variable = ut_propaganda_source_abandon_var
 		}
+		
+		NOT = {
+			has_variable = ut_propaganda_source_abandon_selecting
+		}
 	}
 
 	effect = {	
 		custom_tooltip = ut_new_dawn_propaganda_source_abort_tt 		
+		
 		set_variable = {
-			name = ut_propaganda_source_abandon_var
+			name = ut_propaganda_source_abandon_selecting
+		}
+		trigger_event = {
+			id = event_new_dawn.23
+			popup = yes
 		}
 	}
 	ai_chance = {

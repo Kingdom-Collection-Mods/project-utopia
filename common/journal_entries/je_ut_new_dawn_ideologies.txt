@@ -30,11 +30,20 @@
 	}
 
 	on_complete = {
+		# trigger_event = {
+		# 	id = event_new_dawn.25
+		# 	popup = yes
+		# }
 		scope:target = {
 			custom_tooltip = ut_add_new_dawn_progress_neg_5
 			ut_add_new_dawn_core_progress = {
 				VALUE = -5
 			}
+			
+			# trigger_event = {
+			# 	id = event_new_dawn.24
+			# 	popup = yes
+			# }
 		}
 		if = {
 			limit = {

@@ -804,7 +804,7 @@ event_new_dawn.12 = {
 	}
 }
 
-#Propaganda Campaign
+#Propaganda Campaign Defend as Target
 event_new_dawn.20 = {
 	type = country_event
 	placement = ROOT
@@ -854,7 +854,7 @@ event_new_dawn.20 = {
 	}
 }
 
-#fund opposition target
+#fund opposition target happened
 event_new_dawn.21 = {
 	type = country_event
 	placement = scope:ut_fund_opposition_source_scope
@@ -895,6 +895,7 @@ event_new_dawn.21 = {
 	}
 }
 
+#fund opposition source notification
 event_new_dawn.22 = {
 	type = country_event
 	placement = scope:ut_fund_opposition_target_scope
@@ -931,6 +932,107 @@ event_new_dawn.22 = {
 		custom_tooltip = ut_fund_opposition_source_happened_tt
 	}
 }
+
+# #abort propaganda campaign
+# event_new_dawn.23 = {
+# 	type = country_event
+# 	title = ut_new_dawn_propaganda_target_defend
+# 	desc = ut_new_dawn_propaganda_target_defend_desc
+	
+# 	event_image = {
+# 		video = "unspecific_vandalized_storefront"
+# 	}
+
+# 	duration = 1
+
+# 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+# 	#gui_window = event_window_1char_tabloid
+
+# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+# 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+# 	trigger = {
+# 		# by button
+# 	}
+
+	
+# 	option = {
+# 		name = utopia.yes
+# 		default_option = yes
+# 		custom_tooltip = ut_je_propaganda_source_abort_tt
+# 		set_variable = {
+# 			name = ut_propaganda_source_abandon_var
+# 		}
+# 	}
+
+# 	option = {
+# 		name = utopia.continue
+# 	}
+
+# 	after = {
+# 		remove_variable = ut_propaganda_source_abandon_selecting
+# 	}
+# }
+
+# #propaganda campaign target happened
+# event_new_dawn.24 = {
+# 	type = country_event
+# 	title = ut_propaganda_campaign_target_happened_title
+# 	desc = ut_propaganda_campaign_target_happened_desc
+	
+# 	event_image = {
+# 		video = "unspecific_vandalized_storefront"
+# 	}
+
+# 	duration = 3
+
+# 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+# 	#gui_window = event_window_1char_tabloid
+
+# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+# 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+# 	trigger = {
+# 		# by button
+# 	}
+
+	
+# 	option = {
+# 		name = utopia.continue
+# 		default_option = yes
+# 		custom_tooltip = ut_add_new_dawn_progress_neg_5
+# 	}
+# }
+
+# #propaganda campaign source notification
+# event_new_dawn.25 = {
+# 	type = country_event
+# 	title = ut_propaganda_campaign_source_happened_title
+# 	desc = ut_propaganda_campaign_source_happened_tt
+	
+# 	event_image = {
+# 		video = "unspecific_vandalized_storefront"
+# 	}
+
+# 	duration = 3
+
+# 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+# 	#gui_window = event_window_1char_tabloid
+
+# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+# 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+# 	trigger = {
+# 		# by button
+# 	}
+
+	
+# 	option = {
+# 		name = utopia.continue
+# 		default_option = yes
+# 		custom_tooltip = ut_propaganda_campaign_source_happened_tt
+# 	}
+# }
 
 #Autocratic
 event_new_dawn.30 = {
