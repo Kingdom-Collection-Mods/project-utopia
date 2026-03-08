@@ -15,9 +15,7 @@ ut_new_dawn_propaganda_source_abort = {
 		}
 	}
 
-	effect = {	
-		custom_tooltip = ut_new_dawn_propaganda_source_abort_tt 		
-		
+	effect = {
 		set_variable = {
 			name = ut_propaganda_source_abandon_selecting
 		}

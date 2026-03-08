@@ -933,46 +933,46 @@ event_new_dawn.22 = {
 	}
 }
 
-# #abort propaganda campaign
-# event_new_dawn.23 = {
-# 	type = country_event
-# 	title = ut_new_dawn_propaganda_target_defend
-# 	desc = ut_new_dawn_propaganda_target_defend_desc
+#abort propaganda campaign
+event_new_dawn.23 = {
+	type = country_event
+	title = ut_new_dawn_propaganda_source_abort
+	desc = ut_new_dawn_propaganda_source_abort_desc
 	
-# 	event_image = {
-# 		video = "unspecific_vandalized_storefront"
-# 	}
+	event_image = {
+		video = "unspecific_vandalized_storefront"
+	}
 
-# 	duration = 1
+	duration = 1
 
-# 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-# 	#gui_window = event_window_1char_tabloid
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	#gui_window = event_window_1char_tabloid
 
-# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-# 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
 
-# 	trigger = {
-# 		# by button
-# 	}
+	trigger = {
+		# by button
+	}
 
 	
-# 	option = {
-# 		name = utopia.yes
-# 		default_option = yes
-# 		custom_tooltip = ut_je_propaganda_source_abort_tt
-# 		set_variable = {
-# 			name = ut_propaganda_source_abandon_var
-# 		}
-# 	}
+	option = {
+		name = utopia.yes
+		default_option = yes
+		custom_tooltip = ut_new_dawn_propaganda_source_abort_tt 		
+		set_variable = {
+			name = ut_propaganda_source_abandon_var
+		}
+	}
 
-# 	option = {
-# 		name = utopia.continue
-# 	}
+	option = {
+		name = utopia.continue
+	}
 
-# 	after = {
-# 		remove_variable = ut_propaganda_source_abandon_selecting
-# 	}
-# }
+	after = {
+		remove_variable = ut_propaganda_source_abandon_selecting
+	}
+}
 
 # #propaganda campaign target happened
 # event_new_dawn.24 = {
