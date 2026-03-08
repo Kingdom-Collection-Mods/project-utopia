@@ -11,34 +11,34 @@ ut_new_dawn_fascist_bar = {
 		if = {
 			limit = {
 				NOT = {
-					has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
+					has_variable = ut_new_dawn_bar_freeze
 				}
 			}
 			add = {
 				desc = "ut_nd_fascist_progress_from_characters"
-				value = owner.var:ut_nd_fascist_progress_from_characters
+				value = root.var:ut_nd_fascist_progress_from_characters
 			}
 			add = {
 				desc = "ut_nd_fascist_progress_from_igs"
-				value = owner.var:ut_nd_fascist_progress_from_igs
+				value = root.var:ut_nd_fascist_progress_from_igs
 			}
 			add = {
 				desc = "ut_nd_fascist_progress_from_legitimacy"
-				value = owner.var:ut_nd_fascist_progress_from_legitimacy
+				value = root.var:ut_nd_fascist_progress_from_legitimacy
 			}
 			add = {
 				desc = "ut_nd_fascist_progress_from_laws"
-				value = owner.var:ut_nd_fascist_progress_from_laws
+				value = root.var:ut_nd_fascist_progress_from_laws
 			}
 			add = {
 				desc = "ut_nd_fascist_progress_from_focus"
-				value = owner.var:ut_nd_fascist_progress_from_focus
+				value = root.var:ut_nd_fascist_progress_from_focus
 			}
 			add = {
 				desc = "ut_nd_fascist_progress_from_events"
-				value = owner.var:ut_nd_fascist_progress_from_events
+				value = root.var:ut_nd_fascist_progress_from_events
 				add = {
-					value = owner.var:ut_nd_common_progress_from_events
+					value = root.var:ut_nd_common_progress_from_events
 				}
 			}
 			if = {
@@ -129,34 +129,34 @@ ut_new_dawn_democrat_bar = {
 		if = {
 			limit = {
 				NOT = {
-					has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
+					has_variable = ut_new_dawn_bar_freeze
 				}
 			}
 			add = {
 				desc = "ut_nd_democrat_progress_from_characters"
-				value = owner.var:ut_nd_democrat_progress_from_characters
+				value = root.var:ut_nd_democrat_progress_from_characters
 			}
 			add = {
 				desc = "ut_nd_democrat_progress_from_igs"
-				value = owner.var:ut_nd_democrat_progress_from_igs
+				value = root.var:ut_nd_democrat_progress_from_igs
 			}
 			add = {
 				desc = "ut_nd_democrat_progress_from_laws"
-				value = owner.var:ut_nd_democrat_progress_from_laws
+				value = root.var:ut_nd_democrat_progress_from_laws
 			}
 			add = {
 				desc = "ut_nd_democrat_progress_from_legitimacy"
-				value = owner.var:ut_nd_democrat_progress_from_legitimacy
+				value = root.var:ut_nd_democrat_progress_from_legitimacy
 			}
 			add = {
 				desc = "ut_nd_democrat_progress_from_focus"
-				value = owner.var:ut_nd_democrat_progress_from_focus
+				value = root.var:ut_nd_democrat_progress_from_focus
 			}
 			add = {
 				desc = "ut_nd_democrat_progress_from_events"
-				value = owner.var:ut_nd_democrat_progress_from_events
+				value = root.var:ut_nd_democrat_progress_from_events
 				add = {
-					value = owner.var:ut_nd_common_progress_from_events
+					value = root.var:ut_nd_common_progress_from_events
 				}
 			}
 			
@@ -248,34 +248,34 @@ ut_new_dawn_communist_bar = {
 		if = {
 			limit = {
 				NOT = {
-					has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
+					has_variable = ut_new_dawn_bar_freeze
 				}
 			}
 			add = {
 				desc = "ut_nd_communist_progress_from_characters"
-				value = owner.var:ut_nd_communist_progress_from_characters
+				value = root.var:ut_nd_communist_progress_from_characters
 			}
 			add = {
 				desc = "ut_nd_communist_progress_from_igs"
-				value = owner.var:ut_nd_communist_progress_from_igs
+				value = root.var:ut_nd_communist_progress_from_igs
 			}
 			add = {
 				desc = "ut_nd_communist_progress_from_legitimacy"
-				value = owner.var:ut_nd_communist_progress_from_legitimacy
+				value = root.var:ut_nd_communist_progress_from_legitimacy
 			}
 			add = {
 				desc = "ut_nd_communist_progress_from_laws"
-				value = owner.var:ut_nd_communist_progress_from_laws
+				value = root.var:ut_nd_communist_progress_from_laws
 			}
 			add = {
 				desc = "ut_nd_communist_progress_from_focus"
-				value = owner.var:ut_nd_communist_progress_from_focus
+				value = root.var:ut_nd_communist_progress_from_focus
 			}
 			add = {
 				desc = "ut_nd_communist_progress_from_events"
-				value = owner.var:ut_nd_communist_progress_from_events
+				value = root.var:ut_nd_communist_progress_from_events
 				add = {
-					value = owner.var:ut_nd_common_progress_from_events
+					value = root.var:ut_nd_common_progress_from_events
 				}
 			}
 			if = {
@@ -365,34 +365,34 @@ ut_new_dawn_autocrat_bar = {
 		if = {
 			limit = {
 				NOT = {
-					has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
+					has_variable = ut_new_dawn_bar_freeze
 				}
 			}
 			add = {
 				desc = "ut_nd_autocrat_progress_from_characters"
-				value = owner.var:ut_nd_autocrat_progress_from_characters
+				value = root.var:ut_nd_autocrat_progress_from_characters
 			}
 			add = {
 				desc = "ut_nd_autocrat_progress_from_igs"
-				value = owner.var:ut_nd_autocrat_progress_from_igs
+				value = root.var:ut_nd_autocrat_progress_from_igs
 			}
 			add = {
 				desc = "ut_nd_autocrat_progress_from_legitimacy"
-				value = owner.var:ut_nd_autocrat_progress_from_legitimacy
+				value = root.var:ut_nd_autocrat_progress_from_legitimacy
 			}
 			add = {
 				desc = "ut_nd_autocrat_progress_from_laws"
-				value = owner.var:ut_nd_autocrat_progress_from_laws
+				value = root.var:ut_nd_autocrat_progress_from_laws
 			}
 			add = {
 				desc = "ut_nd_autocrat_progress_from_focus"
-				value = owner.var:ut_nd_autocrat_progress_from_focus
+				value = root.var:ut_nd_autocrat_progress_from_focus
 			}
 			add = {
 				desc = "ut_nd_autocrat_progress_from_events"
-				value = owner.var:ut_nd_autocrat_progress_from_events
+				value = root.var:ut_nd_autocrat_progress_from_events
 				add = {
-					value = owner.var:ut_nd_common_progress_from_events
+					value = root.var:ut_nd_common_progress_from_events
 				}
 			}
 			if = {
@@ -488,25 +488,25 @@ je_ut_new_dawn_democratic_points_bar = {
 			
 			add = {
 				desc = "ut_nd_democrat_progress_from_characters"
-				value = owner.var:ut_nd_democrat_progress_from_characters
+				value = root.var:ut_nd_democrat_progress_from_characters
 			}
 			add = {
 				desc = "ut_nd_democrat_progress_from_igs"
-				value = owner.var:ut_nd_democrat_progress_from_igs
+				value = root.var:ut_nd_democrat_progress_from_igs
 			}
 			add = {
 				desc = "ut_nd_democrat_progress_from_laws"
-				value = owner.var:ut_nd_democrat_progress_from_laws
+				value = root.var:ut_nd_democrat_progress_from_laws
 			}
 			add = {
 				desc = "ut_nd_democrat_progress_from_legitimacy"
-				value = owner.var:ut_nd_democrat_progress_from_legitimacy
+				value = root.var:ut_nd_democrat_progress_from_legitimacy
 			}
 			add = {
 				desc = "ut_nd_democrat_progress_from_events"
-				value = owner.var:ut_nd_democrat_progress_from_events
+				value = root.var:ut_nd_democrat_progress_from_events
 				add = {
-					value = owner.var:ut_nd_common_progress_from_events
+					value = root.var:ut_nd_common_progress_from_events
 				}
 			}
 			multiply = {
@@ -533,31 +533,31 @@ je_ut_new_dawn_autocratic_points_bar = {
 				always = yes
 				#is_player = yes
 				#NOT = {
-				#	has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
+				#	has_variable = ut_new_dawn_bar_freeze
 				#}
 			}
 			
 			add = {
 				desc = "ut_nd_autocrat_progress_from_characters"
-				value = owner.var:ut_nd_autocrat_progress_from_characters
+				value = root.var:ut_nd_autocrat_progress_from_characters
 			}
 			add = {
 				desc = "ut_nd_autocrat_progress_from_igs"
-				value = owner.var:ut_nd_autocrat_progress_from_igs
+				value = root.var:ut_nd_autocrat_progress_from_igs
 			}
 			add = {
 				desc = "ut_nd_autocrat_progress_from_laws"
-				value = owner.var:ut_nd_autocrat_progress_from_laws
+				value = root.var:ut_nd_autocrat_progress_from_laws
 			}
 			add = {
 				desc = "ut_nd_autocrat_progress_from_legitimacy"
-				value = owner.var:ut_nd_autocrat_progress_from_legitimacy
+				value = root.var:ut_nd_autocrat_progress_from_legitimacy
 			}
 			add = {
 				desc = "ut_nd_autocrat_progress_from_events"
-				value = owner.var:ut_nd_autocrat_progress_from_events
+				value = root.var:ut_nd_autocrat_progress_from_events
 				add = {
-					value = owner.var:ut_nd_common_progress_from_events
+					value = root.var:ut_nd_common_progress_from_events
 				}
 			}
 			multiply = {
@@ -587,31 +587,31 @@ je_ut_new_dawn_fascist_points_bar = {
 				#is_player = yes
 				always = yes
 				#NOT = {
-				#	has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
+				#	has_variable = ut_new_dawn_bar_freeze
 				#}
 			}
 			
 			add = {
 				desc = "ut_nd_fascist_progress_from_characters"
-				value = owner.var:ut_nd_fascist_progress_from_characters
+				value = root.var:ut_nd_fascist_progress_from_characters
 			}
 			add = {
 				desc = "ut_nd_fascist_progress_from_igs"
-				value = owner.var:ut_nd_fascist_progress_from_igs
+				value = root.var:ut_nd_fascist_progress_from_igs
 			}
 			add = {
 				desc = "ut_nd_fascist_progress_from_laws"
-				value = owner.var:ut_nd_fascist_progress_from_laws
+				value = root.var:ut_nd_fascist_progress_from_laws
 			}
 			add = {
 				desc = "ut_nd_fascist_progress_from_legitimacy"
-				value = owner.var:ut_nd_fascist_progress_from_legitimacy
+				value = root.var:ut_nd_fascist_progress_from_legitimacy
 			}
 			add = {
 				desc = "ut_nd_fascist_progress_from_events"
-				value = owner.var:ut_nd_fascist_progress_from_events
+				value = root.var:ut_nd_fascist_progress_from_events
 				add = {
-					value = owner.var:ut_nd_common_progress_from_events
+					value = root.var:ut_nd_common_progress_from_events
 				}
 			}
 			multiply = {
@@ -641,31 +641,31 @@ je_ut_new_dawn_communist_points_bar = {
 				always = yes
 				#is_player = yes
 				#NOT = {
-				#	has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 360 with one dynasty. It's reset when this JE is completed, or when je_cement_the_rightful_dynasty fails.
+				#	has_variable = ut_new_dawn_bar_freeze
 				#}
 			}
 			
 			add = {
 				desc = "ut_nd_communist_progress_from_characters"
-				value = owner.var:ut_nd_communist_progress_from_characters
+				value = root.var:ut_nd_communist_progress_from_characters
 			}
 			add = {
 				desc = "ut_nd_communist_progress_from_igs"
-				value = owner.var:ut_nd_communist_progress_from_igs
+				value = root.var:ut_nd_communist_progress_from_igs
 			}
 			add = {
 				desc = "ut_nd_communist_progress_from_laws"
-				value = owner.var:ut_nd_communist_progress_from_laws
+				value = root.var:ut_nd_communist_progress_from_laws
 			}
 			add = {
 				desc = "ut_nd_communist_progress_from_legitimacy"
-				value = owner.var:ut_nd_communist_progress_from_legitimacy
+				value = root.var:ut_nd_communist_progress_from_legitimacy
 			}
 			add = {
 				desc = "ut_nd_communist_progress_from_events"
-				value = owner.var:ut_nd_communist_progress_from_events
+				value = root.var:ut_nd_communist_progress_from_events
 				add = {
-					value = owner.var:ut_nd_common_progress_from_events
+					value = root.var:ut_nd_common_progress_from_events
 				}
 			}
 			multiply = {
