@@ -437,9 +437,6 @@ ut_new_dawn_start_propaganda_campaign = {
 	}
 	
 	potential = {
-		NOT = {
-			has_journal_entry = ut_je_propaganda_source
-		}
 		scope:target_country = {
 			is_subject = no
 			NOT = { has_journal_entry = ut_je_propaganda_target }
@@ -468,6 +465,9 @@ ut_new_dawn_start_propaganda_campaign = {
 	}
 	
 	possible = {
+		NOT = {
+			has_journal_entry = ut_je_propaganda_source
+		}
 		scope:target_country = {
 			country_rank <= root.country_rank
 			ut_new_dawn_has_core_trigger = yes
