@@ -10,3 +10,19 @@ ut_utopia_enabled_on_game_started_action = {
 		set_global_variable = ut_utopia_enabled_on_game_started_26_03_13_var
 	}
 }
+
+on_half_yearly_pulse_state = {
+	on_actions = {
+		ut_nuclear_accident_action
+	}
+}
+
+ut_nuclear_accident_action = {	
+	#Catastrophic: 0.03% per year
+	#Mild: 1% per year
+	random_events = {
+		chance_to_happen = 1
+		5 = utopia_mod.5
+		955 = utopia_mod.6
+	}
+}
