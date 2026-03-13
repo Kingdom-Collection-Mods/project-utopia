@@ -456,8 +456,8 @@ building_ut_nuclear_power_plant_construction_site = {
 			NOT = {
 				any_scope_building = {
 					is_building_type = building_ut_nuclear_power_plant_construction_site
-					count >= 3
-					#Todo adjust based on nuclear power construction slot mod later
+					count >= 1
+					#Todo adjust based on nuclear power construction slot mod later (edit probably remain 1 slot)
 				}
 			}
 		}
