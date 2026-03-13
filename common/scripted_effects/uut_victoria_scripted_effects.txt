@@ -272,7 +272,6 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 
 ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 	ut_new_dawn_common_progress = yes
-	set_variable = { name = ut_nd_autocrat_progress_from_base value = 0.5 }
 	set_variable = { name = ut_nd_autocrat_progress_from_characters value = 0 }
 	set_variable = { name = ut_nd_autocrat_progress_from_igs value = 0 }
 	set_variable = { name = ut_nd_autocrat_progress_from_laws value = 0 }
@@ -517,6 +516,8 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 }
 
 ut_clear_divided_new_dawn_variables = { #Clears all variables, to save memory/performance. Should be executed by anything that makes Divided Monarchists irrelevant.
+	remove_variable = ut_nd_common_progress_from_events
+
 	remove_variable = ut_nd_communist_progress_from_characters 
 	remove_variable = ut_nd_communist_progress_from_igs 
 	remove_variable = ut_nd_communist_progress_from_laws 

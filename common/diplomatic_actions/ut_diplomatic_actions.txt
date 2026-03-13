@@ -224,19 +224,19 @@ ut_influence_new_dawn_major_power = {
 					limit = {
 						OR = {
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = antagonistic
 							}
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = domineering
 							}
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = belligerent
 							}
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = rebellious
 							}
 						}
@@ -247,11 +247,11 @@ ut_influence_new_dawn_major_power = {
 					limit = {
 						OR = {
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = wary
 							}
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = disinterested
 							}
 						}
@@ -261,7 +261,7 @@ ut_influence_new_dawn_major_power = {
 				else_if = {
 					limit = {
 						has_attitude = {
-							who = scope:target_country
+							who = scope:actor
 							attitude = cautious
 						}
 					}
@@ -271,19 +271,19 @@ ut_influence_new_dawn_major_power = {
 					limit = {
 						OR = {
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = protective
 							}
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = genial
 							}
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = cooperative
 							}
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = conciliatory
 							}
 						}
@@ -626,19 +626,19 @@ ut_share_nuclear_power_research = {
 					limit = {
 						OR = {
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = antagonistic
 							}
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = domineering
 							}
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = belligerent
 							}
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = rebellious
 							}
 						}
@@ -649,11 +649,11 @@ ut_share_nuclear_power_research = {
 					limit = {
 						OR = {
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = wary
 							}
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = disinterested
 							}
 						}
@@ -663,7 +663,7 @@ ut_share_nuclear_power_research = {
 				else_if = {
 					limit = {
 						has_attitude = {
-							who = scope:target_country
+							who = scope:actor
 							attitude = cautious
 						}
 					}
@@ -673,19 +673,19 @@ ut_share_nuclear_power_research = {
 					limit = {
 						OR = {
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = protective
 							}
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = genial
 							}
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = cooperative
 							}
 							has_attitude = {
-								who = scope:target_country
+								who = scope:actor
 								attitude = conciliatory
 							}
 						}

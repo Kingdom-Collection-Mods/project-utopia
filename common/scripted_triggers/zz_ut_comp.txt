@@ -1,1 +1,3 @@
-﻿utoppia_is_active_trigger = { always = yes }
+﻿REPLACE_OR_CREATE:utopia_is_active_trigger = { always = yes }
+
+REPLACE_OR_CREATE:utoppia_is_active_trigger = { always = yes } #deprecated, todo: learn to spell

@@ -581,6 +581,14 @@ country_institution_food_safety_max_investment_add={
 	}
 }
 
+country_institution_migration_office_max_investment_add={
+	decimals=0
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
 unit_combat_unit_type_light_tanks_offense_add={
 	decimals=0
 	color=good
