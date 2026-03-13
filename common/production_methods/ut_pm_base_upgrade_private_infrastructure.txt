@@ -81,7 +81,7 @@ INJECT:pm_trade_center_principle_external_trade_2 = {
 
 
 pm_trade_center_trade_quantity_utopia = {
-	texture = "gfx/interface/icons/production_method_icons/trade_quantity_4.dds"
+	texture = "gfx/interface/icons/production_method_icons/unused/automation1.dds"
 
 	unlocking_technologies = { heavy_industry_harbor }
 
@@ -93,6 +93,25 @@ pm_trade_center_trade_quantity_utopia = {
 	state_modifiers = {
 		unscaled = {
 			state_trade_quantity_mult = 1.5
+		}
+	}
+}
+
+pm_trade_center_trade_quantity_utopia_2 = {
+	texture = "gfx/interface/icons/production_method_icons/unused/automation2.dds"
+
+	unlocking_technologies = { 
+		ultra_heavy_industry_harbor
+	 }
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_merchant_marine_add = 10
+		}
+	}
+	state_modifiers = {
+		unscaled = {
+			state_trade_quantity_mult = 2
 		}
 	}
 }
