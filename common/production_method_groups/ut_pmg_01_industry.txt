@@ -328,6 +328,7 @@ REPLACE:pmg_radios_category = {
 		pm_no_radios
 		pm_radios
 		pm_ut_radios
+		pm_ut_radios_2
 	}
 }
 

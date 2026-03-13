@@ -1,4 +1,4 @@
-goods_output_heavy_machinery_add={
+﻿goods_output_heavy_machinery_add={
 	decimals=1
 	color=good
 	game_data={
