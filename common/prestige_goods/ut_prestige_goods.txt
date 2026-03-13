@@ -30,7 +30,7 @@ prestige_good_generic_computers_b2c = {
 }
 
 prestige_good_generic_electronics = {
-	base_good = furniture
+	base_good = electronics
 	prestige_bonus = 0.1
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/complex_electronics.dds"
 }
