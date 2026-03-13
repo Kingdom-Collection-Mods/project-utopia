@@ -1592,12 +1592,14 @@ law_registration_process = {
 	modifier = {
 		country_migration_restrictiveness_add = 20
 		country_mass_migration_attraction_mult = -0.2
+		state_migration_pull_mult = -0.2
 		country_institution_cost_institution_migration_office_mult = -0.5
 	}
 	
 	institution = institution_migration_office
 	institution_modifier = {
 		country_mass_migration_attraction_mult = -0.2
+		state_migration_pull_mult = -0.05
 	}
 
 	ai_enact_weight_modifier = { #Petitions
