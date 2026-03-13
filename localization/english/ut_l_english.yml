@@ -152,7 +152,7 @@
  ut_je_ut_research_high_tech_computers_research_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy)"
 
  je_ut_new_dawn: "New Dawn"
- je_ut_new_dawn_reason: "Technological and cultural progress ushers in a [concept_ut_new_dawn] of political change. The [concept_ut_nd_path_to_utopia] may be paved. Solidify your nation's core ideology. The ideology determines the direction your nation will take.\nChoose between [concept_ut_nd_fascist_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_democrat_core], and [concept_ut_nd_communist_core] [concept_ut_nd_path_to_utopia]."
+ je_ut_new_dawn_reason: "$concept_ut_new_dawn_desc$\n\n#lore [ROOT.GetCountry.GetCustom('ut_utopia_enabled_on_game_started_loc')]#!"
  je_ut_new_dawn_immediate_tt: "$je_ut_new_dawn_reason$"
  je_ut_new_dawn_global_started_tt: "Any country has started the #b New Dawn#! event chain"
  je_ut_new_dawn_condition_tt: "Completed [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_communist_core], or [concept_ut_nd_fascist_core] [concept_ut_nd_path_to_utopia]"
@@ -335,7 +335,7 @@
  concept_ut_nd_progress_points_desc: "Progress Points represent the spread of an Ideology within your nation. They are earned through various actions. During the rise of a New Dawn, they measure how interest groups and the political landscape move toward adopting an ideology. Upon overtaking a country and beginning the [concept_ut_nd_path_to_utopia], Progress Points may be spent on various actions."
 
  concept_ut_new_dawn: "New Dawn"
- concept_ut_new_dawn_desc: "$je_ut_new_dawn_reason$"
+ concept_ut_new_dawn_desc: "Technological and cultural progress ushers in a [concept_ut_new_dawn] of political change. The [concept_ut_nd_path_to_utopia] may be paved. Solidify your nation's core ideology. The ideology determines the direction your nation will take.\nChoose between [concept_ut_nd_fascist_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_democrat_core], and [concept_ut_nd_communist_core] [concept_ut_nd_path_to_utopia]."
 
  je_ut_new_dawn_democratic_complete_condition_tt: "All [concept_ut_nd_milestones] in the journal entry are completed"
 
@@ -449,7 +449,7 @@
 #Core Ideology concepts
 
  concept_ut_nd_fascist_core: "Fascism"
- concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - Annex Country (Major) - tbd\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nOppose: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others.\n\n#i Development Status: Not playable - Preview#!"
+ concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - Invade Country (Major Rank)\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\nFavorable: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nOppose: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others.\n\n#i Development Status: Not playable - Preview#!"
 
 
  concept_ut_nd_autocrat_core: "Autocracy"
@@ -467,6 +467,10 @@
 
  concept_ut_nd_utopia: "Utopia"
  concept_ut_nd_utopia_desc: "A utopia is an imagined ideal society where there is complete justice, harmony, and humans flourishing to perfection - it's as much an aspiration, as it's an inspiring vision."
+
+ ut_utopia_enabled_on_game_started_loc_yes: "Project Utopia Status: enabled since game start."
+ ut_utopia_enabled_on_game_started_loc_26_03_13_yes: "$ut_utopia_enabled_on_game_started_loc_yes$ All content available."
+ ut_utopia_enabled_on_game_started_loc_no: "Started save game before 13.03 or Project Utopia was not enabled on game start.\n#bold Important:#! New mining resources and laws require Project Utopia to be enabled since game start."
 
  ut_new_dawn_fascist_focus: "Fascist Focus"
  ut_new_dawn_fascist_focus_desc: "#italic tbd: Only preview of [concept_ut_nd_milestones] available. #!"

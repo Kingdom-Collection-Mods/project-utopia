@@ -147,3 +147,28 @@ ut_new_dawn_phase_1_trend = {
 	}
 
 }
+
+ut_utopia_enabled_on_game_started_loc = {
+	type = country
+	random_valid = no
+	
+	text = {
+		trigger = {
+			has_global_variable = ut_utopia_enabled_on_game_started_26_03_13_var
+		}
+
+		localization_key = ut_utopia_enabled_on_game_started_loc_26_03_13_yes
+	}
+
+	text = {
+		trigger = {
+			has_global_variable = ut_utopia_enabled_on_game_started_var
+		}
+
+		localization_key = ut_utopia_enabled_on_game_started_loc_yes
+	}
+
+	text = {
+		localization_key = ut_utopia_enabled_on_game_started_loc_no
+	}
+}
