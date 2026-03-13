@@ -240,7 +240,7 @@ je_ut_new_dawn_emergency_powers_mod = {
 
 je_ut_new_dawn_strengthen_power_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	country_new_dawn_focus_selected_progress = 0.5
+	country_new_dawn_progress_points_progress = 0.5
 	state_pop_support_movement_liberal_add = 0.05
 }
 
@@ -318,6 +318,34 @@ ut_released_colony = {
 	country_acceptance_no_shared_language_trait_add = -30
 }
 
+ut_new_dawn_core_external_offensive_focus_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_new_dawn_progress_points_progress = -1
+	country_new_dawn_propaganda_source_efficiency_mult = 0.25
+	country_new_dawn_fund_opposition_efficiency_mult = 0.25
+}
+
+ut_new_dawn_core_external_cooperative_focus_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_new_dawn_progress_points_progress = -1
+	country_influence_mult = 0.25
+	country_max_declared_interests_mult = 0.25
+}
+
+ut_new_dawn_core_internal_good_times_focus_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_new_dawn_progress_points_progress = -1
+	state_standard_of_living_add = 1
+	country_loyalists_from_legitimacy_mult = 0.1
+}
+
+ut_new_dawn_core_internal_bad_times_focus_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_new_dawn_progress_points_progress = 0.5
+	country_loyalists_from_legitimacy_mult = -0.1
+	state_radicals_from_political_movements_mult = 0.2
+}
+
 ut_tax_code_changed = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	state_tax_waste_add = 0.05
@@ -389,5 +417,5 @@ ut_propaganda_democratic_mod = {
 
 ut_je_propaganda_source_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds
-	country_new_dawn_focus_selected_progress = -1
+	country_new_dawn_progress_points_progress = -1
 }

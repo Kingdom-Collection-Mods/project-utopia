@@ -249,7 +249,9 @@
  ut_new_dawn_focus_freeze_tt: "Focus not deactivated"
  ut_new_dawn_focus_tt: "Country will count as selected Ideology, this can impact diplomacy. \nEnables, preventing other ideologies from taking over."
  country_new_dawn_focus_selected_progress: "Selected Ideology Progress"
- country_new_dawn_focus_selected_progress_desc: "Increases the gain of [concept_ut_nd_progress_points] towards selected Ideology."
+ country_new_dawn_focus_selected_progress_desc: "Changes the gain of [concept_ut_nd_progress_points] towards selected Ideology."
+ country_new_dawn_progress_points_progress: "[concept_ut_nd_progress_points] gain"
+ country_new_dawn_progress_points_progress_desc: "Changes the gain of [concept_ut_nd_progress_points] for core Ideology."
 
  je_ut_new_dawn_critical_lower_bound_fail_tt: "If the threshold of #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v #![concept_ut_nd_progress_points] is undercut (instant right now), event chains may undo political progress and eventually trigger a new New Dawn."
 
@@ -326,6 +328,28 @@
  ut_new_dawn_democrat_status: "Democratic Ideas shape the Discourse"
  ut_new_dawn_phase_2_status_je: "Ideology established"
  ut_nd_decaying_progress: "$new_dawn_phase_2_mod$"
+
+ ut_new_dawn_core_external_offensive_focus: "External Offensive"
+ ut_new_dawn_core_external_offensive_focus_add: "$ut_new_dawn_core_external_offensive_focus$ invest"
+ ut_new_dawn_core_external_offensive_focus_remove: "Remove $ut_new_dawn_core_external_offensive_focus$"
+ ut_new_dawn_core_external_offensive_focus_desc: ""
+ ut_new_dawn_core_external_offensive_focus_mod: "$ut_new_dawn_core_external_offensive_focus$"
+ ut_new_dawn_core_external_cooperative_focus: "External Cooperative"
+ ut_new_dawn_core_external_cooperative_focus_add: "$ut_new_dawn_core_external_cooperative_focus$ invest"
+ ut_new_dawn_core_external_cooperative_focus_remove: "Remove $ut_new_dawn_core_external_cooperative_focus$"
+ ut_new_dawn_core_external_cooperative_focus_desc: ""
+ ut_new_dawn_core_external_cooperative_focus_mod: "$ut_new_dawn_core_external_cooperative_focus$"
+ ut_new_dawn_core_internal_good_times_focus: "Internal Good Times"
+ ut_new_dawn_core_internal_good_times_focus_add: "$ut_new_dawn_core_internal_good_times_focus$ invest"
+ ut_new_dawn_core_internal_good_times_focus_remove: "Remove $ut_new_dawn_core_internal_good_times_focus$"
+ ut_new_dawn_core_internal_good_times_focus_desc: ""
+ ut_new_dawn_core_internal_good_times_focus_mod: "$ut_new_dawn_core_internal_good_times_focus$"
+ ut_new_dawn_core_internal_bad_times_focus: "Internal Bad Times"
+ ut_new_dawn_core_internal_bad_times_focus_add: "$ut_new_dawn_core_internal_bad_times_focus$ invest"
+ ut_new_dawn_core_internal_bad_times_focus_remove: "Remove $ut_new_dawn_core_internal_bad_times_focus$"
+ ut_new_dawn_core_internal_bad_times_focus_desc: ""
+ ut_new_dawn_core_internal_bad_times_focus_mod: "$ut_new_dawn_core_internal_bad_times_focus$"
+ 
 
  je_ut_new_dawn_democratic: "Democratic Awakening"
  je_ut_new_dawn_democratic_reason: "The people demand participation, transparency, and free elections. Across the country, new parties are forming, trade unions are gaining influence, and protests for civil rights are filling the streets. \n Whether this awakening leads to a stable democracy or is crushed by the old elites is now in your hands. Will you allow reform - or try to preserve the old order by any means necessary? \n #italic - [Concept('concept_ut_nd_democrat_core', 'Democratic')] [concept_ut_nd_path_to_utopia]#!"
@@ -966,6 +990,7 @@
  ut_add_new_dawn_progress_neg_25: "Loses #r 25#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_10: "Loses #r 10#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_5: "Loses #r 5#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_neg_1: "Loses #r 1#! [concept_ut_nd_progress_points]"
 
  ut_force_become_subject: "Collectivize Council Republics"
  ut_force_become_subject_action_name: "$ut_force_become_subject$"

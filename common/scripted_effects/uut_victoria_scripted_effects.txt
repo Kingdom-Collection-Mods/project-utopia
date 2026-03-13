@@ -565,6 +565,30 @@ ut_new_dawn_common_progress = {
 		}
 		change_variable = { name = ut_nd_common_progress_from_events add = -1 }
 	}
+	if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_external_offensive_focus_mod
+		}
+		change_variable = { name = ut_nd_common_progress_from_events add = -1 }
+	}
+	if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_external_cooperative_focus_mod
+		}
+		change_variable = { name = ut_nd_common_progress_from_events add = -1 }
+	}
+	if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_internal_good_times_focus_mod
+		}
+		change_variable = { name = ut_nd_common_progress_from_events add = -1 }
+	}
+	if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
+		}
+		change_variable = { name = ut_nd_common_progress_from_events add = 0.5 }
+	}
 }
 
 ut_add_new_dawn_core_progress = { 
