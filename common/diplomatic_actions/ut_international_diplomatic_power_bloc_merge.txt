@@ -239,19 +239,18 @@
 				}
 			}
 
-			### Powerful Protectors is always a factor, but less so if not being invited to a sovereign empire
 			if = {
 				limit = {
-					scope:actor.power_bloc ?= {
-						NOT = { has_identity = identity:identity_sovereign_empire }
-					}
-					has_powerful_protectors = {
-						ACTOR_SCOPE = scope:actor
+					any_scope_treaty = {
+						binds = scope:target_country
+						any_scope_article = {
+							has_type = alliance
+						}
 					}
 				}
 				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_POWERFUL_PROTECTORS_THEM"
-					value = -25
+					desc = "DIPLOMATIC_ACCEPTANCE_ALLIANCE"
+					value = 10
 				}
 			}
 

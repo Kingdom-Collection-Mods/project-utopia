@@ -32,7 +32,7 @@ heavy_industry_harbor = {
     }
 	
 	ai_weight = {
-		value = 1
+		value = 2
 	}
 }
 
@@ -50,7 +50,7 @@ ultra_heavy_industry_harbor = {
     }
 
 	ai_weight = {
-		value = 1
+		value = 2
 	}
 }
 
