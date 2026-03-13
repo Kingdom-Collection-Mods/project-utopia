@@ -1,0 +1,12 @@
+﻿on_game_started_after_lobby = {
+	on_actions = {
+		ut_utopia_enabled_on_game_started_action
+	}
+}
+
+ut_utopia_enabled_on_game_started_action = {
+	effect = {
+		set_global_variable = ut_utopia_enabled_on_game_started_var
+		set_global_variable = ut_utopia_enabled_on_game_started_26_03_13_var
+	}
+}
