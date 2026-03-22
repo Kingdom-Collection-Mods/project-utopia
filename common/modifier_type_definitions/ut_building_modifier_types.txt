@@ -653,6 +653,7 @@ country_new_dawn_propaganda_source_efficiency_mult={
 	script_only = yes
 	decimals=1
 	color=good
+	percent=yes
 	game_data={
 		ai_value=0
 	}
@@ -662,6 +663,7 @@ country_new_dawn_fund_opposition_efficiency_mult={
 	script_only = yes
 	decimals=1
 	color=good
+	percent=yes
 	game_data={
 		ai_value=0
 	}
