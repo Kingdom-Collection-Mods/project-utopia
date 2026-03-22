@@ -112,7 +112,7 @@
  ut_research_nuclear_power_desc: "Investigate the potential of nuclear fission as a powerful energy source."
  ut_je_ut_research_nuclear_power: "Nuclear Power"
  ut_je_ut_research_nuclear_power_reason: "The discovery of nuclear fission opens the door to a new era of energy production. What once was a theoretical concept becomes reality: controlled nuclear reactions that release immense amounts of energy. This is not just about power generation, but about mastering the atom itself.\nWith sufficient investment, we can lead this revolution—creating a new energy source that will change the world."
- ut_je_ut_research_nuclear_power_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy, currently: [JournalEntry.GetGoalProgressValue]/[JournalEntry.GetTotalGoalValue]))"
+ ut_je_ut_research_nuclear_power_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy, currently: [JournalEntry.GetGoalProgressValue]/[JournalEntry.GetTotalGoalValue])"
  ut_research_nuclear_power_mod: "Research Nuclear Power"
  ut_je_nuclear_power_plant_construction: "Nuclear Power Plant Construction"
  ut_je_nuclear_power_plant_construction_reason: "With the successful research into nuclear power, we are now ready to take the next step."
@@ -153,7 +153,7 @@
 
  je_ut_new_dawn: "New Dawn"
  je_ut_new_dawn_reason: "$concept_ut_new_dawn_desc$\n\n#lore [ROOT.GetCountry.GetCustom('ut_utopia_enabled_on_game_started_loc')]#!"
- je_ut_new_dawn_immediate_tt: "$je_ut_new_dawn_reason$"
+ je_ut_new_dawn_immediate_tt: "$concept_ut_new_dawn_desc$"
  je_ut_new_dawn_global_started_tt: "Any country has started the #b New Dawn#! event chain"
  je_ut_new_dawn_condition_tt: "Completed [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_communist_core], or [concept_ut_nd_fascist_core] [concept_ut_nd_path_to_utopia]"
  je_ut_new_dawn_p2_condition_tt: "Achieved [concept_ut_nd_utopia]?"
@@ -494,7 +494,7 @@
 
  ut_utopia_enabled_on_game_started_loc_yes: "Project Utopia Status: enabled since game start."
  ut_utopia_enabled_on_game_started_loc_26_03_13_yes: "$ut_utopia_enabled_on_game_started_loc_yes$ All content available."
- ut_utopia_enabled_on_game_started_loc_no: "Started save game before 13.03 or Project Utopia was not enabled on game start.\n#bold Important:#! New mining resources and laws require Project Utopia to be enabled since game start."
+ ut_utopia_enabled_on_game_started_loc_no: "Started save game before 13. March or Project Utopia was not enabled on game start.\n#bold Important:#! New mining resources and laws require Project Utopia to be enabled since game start."
 
  ut_new_dawn_fascist_focus: "Fascist Focus"
  ut_new_dawn_fascist_focus_desc: "#italic tbd: Only preview of [concept_ut_nd_milestones] available. #!"
@@ -859,16 +859,17 @@
  ut_influence_new_dawn_major_power_unlock_tt: "Unlocks: #v $ut_influence_new_dawn_major_power$#!"
 
  ut_new_dawn_start_propaganda_campaign: "Start Propaganda Campaign"
- ut_new_dawn_start_propaganda_campaign_desc: "Start a propaganda campaign in the target country to increase the chance of revolutions in the target country. The target country can defend against a propaganda campaign, which may cost us $concept_ut_nd_progress_points$. After a year the modifier is applied and the action can be used again.\n\nTarget country effect on completion: Lose [concept_ut_nd_progress_points] and gain a negative modifier"
+ ut_new_dawn_start_propaganda_campaign_desc: "Start a propaganda campaign in the target country to increase the chance of revolutions in the target country. The target country can defend against a propaganda campaign, which may cost us $concept_ut_nd_progress_points$. After a year the modifier is applied and the action can be used again.\n\nTarget country effect on completion: $ut_je_propaganda_target_effect$"
  ut_je_propaganda_source_mod: "Conducting Propaganda Campaign"
  ut_je_propaganda_source: "Propaganda Campaign"
  ut_je_propaganda_source_reason: "Started a propaganda campaign in the target country to weaken their ideology. After a year the modifier is applied and the action can be used again."
- ut_je_propaganda_source_goal: "Wait 12 months (currently [JournalEntry.GetTotalGoalValue|D] months)"
+ ut_je_propaganda_source_goal: "Complete propaganda campaign (currently [JournalEntry.GetGoalProgressValue]/[JournalEntry.GetTotalGoalValue])"
  ut_je_propaganda_source_abort_tt: "Has aborted the propaganda campaign"
  ut_je_propaganda_target: "Target of Propaganda Campaign"
- ut_je_propaganda_target_goal: "Source country has completed propaganda campaign (currently [JournalEntry.GetGoalProgressValue|D]/[JournalEntry.GetTotalGoalValue|D])."
+ ut_je_propaganda_target_goal: "Source country has completed propaganda campaign (currently [JournalEntry.GetGoalProgressValue]/[JournalEntry.GetTotalGoalValue])."
  ut_je_propaganda_target_reason: "The country behind the propaganda campaign is attempting to weaken the core ideology in our country."
  ut_je_propaganda_target_abort_tt: "The country behind the propaganda campaign has aborted the campaign."
+ ut_je_propaganda_target_effect: "$ut_add_new_dawn_progress_neg_25$ and get Propaganda [concept_modifier] for 3 years"
 
  ut_propaganda_campaign_source_happened_title: "Propaganda Campaign conducted"
  ut_propaganda_campaign_source_happened_desc: "A coordinated propaganda campaign was launched to shape public opinion and weaken the target's government's ideology."
@@ -877,7 +878,7 @@
 
  ut_propaganda_campaign_target_happened_title: "Target of Propaganda Campaign"
  ut_propaganda_campaign_target_happened_desc: "We have been targeted by a propaganda campaign. Next time we should try to defend against it to avoid losing progress points and gaining a negative modifier."
- ut_propaganda_campaign_target_happened_tt: "A propaganda campaign against us has completed. We lost progress points and gained a negative modifier."
+ ut_propaganda_campaign_target_happened_tt: "$ut_je_propaganda_target_effect$\n#lore A propaganda campaign against us has completed.#!"
 
  ut_new_dawn_propaganda_source_abort: "Abort Propaganda Campaign"
  ut_new_dawn_propaganda_source_abort_desc: ""
