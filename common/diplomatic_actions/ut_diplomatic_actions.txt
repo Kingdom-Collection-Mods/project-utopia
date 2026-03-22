@@ -440,6 +440,10 @@ ut_new_dawn_start_propaganda_campaign = {
 		scope:target_country = {
 			is_subject = no
 			NOT = { has_journal_entry = ut_je_propaganda_target }
+			NOT = { has_modifier = ut_propaganda_communist_mod }
+			NOT = { has_modifier = ut_propaganda_fascist_mod }
+			NOT = { has_modifier = ut_propaganda_democratic_mod }
+			NOT = { has_modifier = ut_propaganda_autocratic_mod }
 			hidden_trigger = {
 				NOT = { has_variable = je_ut_new_dawn_done }
 			}
