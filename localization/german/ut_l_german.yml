@@ -9,7 +9,7 @@
  utopia.continue: "Weiter"
  utopia.cheat: "Cheaten"
  utopia.disable: "Deaktivieren"
- error: "Error" 
+ utopia.error: "Error" 
 
 # Events & Journals
  ut_heavy_industrial_machinery_je: "Schwermaschinenbau"
@@ -250,6 +250,8 @@
  ut_new_dawn_focus_tt: "#v +0.5#! Fortschritt pro Monat für ausgewählte Ideologie"
  country_new_dawn_focus_selected_progress: "Ausgewählte Ideologie Fortschritt"
  country_new_dawn_focus_selected_progress_desc: "Erhöht den Zuwachs von [concept_ut_nd_progress_points] in Richtung der ausgewählten Ideologie."
+ country_new_dawn_progress_points_progress: "[concept_ut_nd_progress_points] gain"
+ country_new_dawn_progress_points_progress_desc: "Changes the gain of [concept_ut_nd_progress_points] for core Ideology."
 
  je_ut_new_dawn_critical_lower_bound_fail_tt: "Wenn der Grenzwert von #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v Fortschrittspunkten#! unterschritten wird, können Ereignissketten politischen Fortschritt rückgängig machen und schlussendlich einen neuen Neuer Aufbruch auslösen."
 
@@ -326,6 +328,28 @@
  ut_new_dawn_democrat_status: "Demokratische Ideen prägen den Diskurs"
  ut_new_dawn_democrat_status_je: "Demokratische Ideen festigen sich"
  ut_nd_decaying_progress: "$new_dawn_phase_2_mod$"
+
+ ut_new_dawn_core_external_offensive_focus: "Covert Statecraft"
+ ut_new_dawn_core_external_offensive_focus_add: "Activate #b $ut_new_dawn_core_external_offensive_focus$#!"
+ ut_new_dawn_core_external_offensive_focus_remove: "Deactivate #g $ut_new_dawn_core_external_offensive_focus$#!"
+ ut_new_dawn_core_external_offensive_focus_desc: ""
+ ut_new_dawn_core_external_offensive_focus_mod: "$ut_new_dawn_core_external_offensive_focus$"
+ ut_new_dawn_core_external_cooperative_focus: "Diplomatic Statecraft"
+ ut_new_dawn_core_external_cooperative_focus_add: "Activate #b $ut_new_dawn_core_external_cooperative_focus$#!"
+ ut_new_dawn_core_external_cooperative_focus_remove: "Deactivate #g $ut_new_dawn_core_external_cooperative_focus$#!"
+ ut_new_dawn_core_external_cooperative_focus_desc: ""
+ ut_new_dawn_core_external_cooperative_focus_mod: "$ut_new_dawn_core_external_cooperative_focus$"
+ ut_new_dawn_core_internal_good_times_focus: "Domestic Prosperity"
+ ut_new_dawn_core_internal_good_times_focus_add: "Activate #b $ut_new_dawn_core_internal_good_times_focus$#!"
+ ut_new_dawn_core_internal_good_times_focus_remove: "Deactivate #g $ut_new_dawn_core_internal_good_times_focus$#!"
+ ut_new_dawn_core_internal_good_times_focus_desc: ""
+ ut_new_dawn_core_internal_good_times_focus_mod: "$ut_new_dawn_core_internal_good_times_focus$"
+ ut_new_dawn_core_internal_bad_times_focus: "Domestic Hardship"
+ ut_new_dawn_core_internal_bad_times_focus_add: "Activate #b $ut_new_dawn_core_internal_bad_times_focus$#!"
+ ut_new_dawn_core_internal_bad_times_focus_remove: "Deactivate #g $ut_new_dawn_core_internal_bad_times_focus$#!"
+ ut_new_dawn_core_internal_bad_times_focus_desc: ""
+ ut_new_dawn_core_internal_bad_times_focus_mod: "$ut_new_dawn_core_internal_bad_times_focus$"
+
 
  je_ut_new_dawn_democratic: "Demokratischer Aufbruch"
  je_ut_new_dawn_democratic_reason: "Das Volk fordert Mitsprache, Transparenz und freie Wahlen. Überall im Land bilden sich neue Parteien, Gewerkschaften gewinnen an Einfluss, und Proteste für Bürgerrechte füllen die Straßen. \n Ob dieser Aufbruch in eine stabile Demokratie führt oder im Widerstand der alten Eliten erstickt, liegt nun in deiner Hand. Wirst du Reformen zulassen - oder versuchen, die alte Ordnung mit aller Macht zu bewahren?"
@@ -467,6 +491,10 @@
 
  concept_ut_nd_utopia: "Utopia"
  concept_ut_nd_utopia_desc: "Utopie ist eine imaginierte ideale Gesellschaft, in der es vollständige Gerechtigkeit, Harmonie und das Gedeihen der Menschen zur Perfektion gibt - sie ist ebenso sehr eine Aspiration wie eine inspirierende Vision."
+
+ ut_utopia_enabled_on_game_started_loc_yes: "Project Utopia Status: aktiviert seit Spielstart."
+ ut_utopia_enabled_on_game_started_loc_26_03_13_yes: "$ut_utopia_enabled_on_game_started_loc_yes$ Alle Inhalte verfügbar."
+ ut_utopia_enabled_on_game_started_loc_no: "Spielstand vor dem 13. März gestartet oder Project Utopia wurde beim Spielstart nicht aktiviert.\n#bold Wichtig:#! Neue Bergbau-Ressourcen und Gesetze erfordern, dass Project Utopia seit Spielstart aktiviert ist."
 
  ut_new_dawn_fascist_focus: "Faschistischer Fokus"
  ut_new_dawn_fascist_focus_desc: "#italic tbd: Only preview of [concept_ut_nd_milestones] available. #!"
@@ -831,15 +859,26 @@
  ut_influence_new_dawn_major_power_unlock_tt: "Verfügbare: #v $ut_influence_new_dawn_major_power$#!"
 
  ut_new_dawn_start_propaganda_campaign: "Start Propaganda Campaign"
- ut_new_dawn_start_propaganda_campaign_desc: "Start a propaganda campaign in the target country to increase the chance of revolutions. After a year the modifier is applied and the action can be used again. The modifier is stackable."
+ ut_new_dawn_start_propaganda_campaign_desc: "Start a propaganda campaign in the target country to increase the chance of revolutions. After a year the modifier is applied and the action can be used again.\n\nTarget country effect on completion: $ut_je_propaganda_target_effect$"
  ut_je_propaganda_source_mod: "Conducting Propaganda Campaign"
  ut_je_propaganda_source: "Propaganda Campaign"
  ut_je_propaganda_source_reason: "A propaganda campaign is being conducted. A successful campaign will increase activism of movements and chance of revolutions."
  ut_je_propaganda_source_goal: "Wait 12 months"
  ut_je_propaganda_source_abort_tt: "Has aborted the propaganda campaign."
  ut_je_propaganda_target: "Target of Propaganda Campaign"
+ ut_je_propaganda_target_goal: "Source country has completed propaganda campaign (currently [JournalEntry.GetGoalProgressValue]/[JournalEntry.GetTotalGoalValue])."
  ut_je_propaganda_target_reason: "The country behind the propaganda campaign is attempting to weaken the core ideology in our country."
  ut_je_propaganda_target_abort_tt: "The country behind the propaganda campaign has aborted the campaign."
+ ut_je_propaganda_target_effect: "$ut_add_new_dawn_progress_neg_25$ and get Propaganda [concept_modifier] for 3 years"
+
+ ut_propaganda_campaign_source_happened_title: "Propaganda Campaign conducted"
+ ut_propaganda_campaign_source_happened_desc: "A coordinated propaganda campaign was launched to shape public opinion and weaken the target's government's ideology."
+ ut_propaganda_campaign_source_happened_tt: "Propaganda campaign completed"
+ ut_propaganda_campaign_source_happened_disable_tt: "Disable Notification"
+
+ ut_propaganda_campaign_target_happened_title: "Target of Propaganda Campaign"
+ ut_propaganda_campaign_target_happened_desc: "We have been targeted by a propaganda campaign. Next time we should try to defend against it to avoid losing progress points and gaining a negative modifier."
+ ut_propaganda_campaign_target_happened_tt: "$ut_je_propaganda_target_effect$\n#lore A propaganda campaign against us has completed.#!"
 
  ut_new_dawn_propaganda_source_abort: "Abort Propaganda Campaign"
  ut_new_dawn_propaganda_source_abort_desc: ""
@@ -853,6 +892,8 @@
  ut_propaganda_fascist_mod: "Fascist Propaganda"
  ut_propaganda_democratic_mod: "Democratic Propaganda"
  ut_propaganda_autocratic_mod: "Autocratic Propaganda"
+
+ country_new_dawn_propaganda_source_efficiency_mult: "\"$ut_je_propaganda_source$\" efficiency multiplier"
 
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
  UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
@@ -962,6 +1003,7 @@
  ut_add_new_dawn_progress_neg_25: "Verliert #r 25#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_10: "Verliert #r 10#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_5: "Verliert #r 5#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_neg_1: "Verliert #r 1#! [concept_ut_nd_progress_points]"
 
  ut_force_become_subject: "Räterepublik kollektivieren"
  ut_force_become_subject_action_name: "$ut_force_become_subject$"
@@ -981,7 +1023,13 @@
  ut_fund_opposition_action_notification_name: "$ut_fund_opposition$ Started"
  ut_fund_opposition_action_notification_desc: "[INITIATOR_COUNTRY.GetName] has started $ut_fund_opposition$ in [TARGET_COUNTRY.GetName]."
  ut_fund_opposition_desc: "Fund the opposition in the target country to overthrow the ruling ideology. May abort their New Dawn [concept_ut_nd_path_to_utopia] journal entry. (Democracies are more effective against Autocratic countries, Online Forums and Social Media increase effectiveness.)\n\nTarget country effect: $ut_fund_opposition_effect$"
- ut_fund_opposition_effect: "Lose #r 25#! [concept_ut_nd_progress_points]"
+ ut_fund_opposition_effect_base: "#r 10#! [concept_ut_nd_progress_points]"
+ ut_fund_opposition_effect: "Lose $ut_fund_opposition_effect_base$"
+ ut_fund_opposition_effect_from_base: "$ut_fund_opposition_effect$ (base)"
+ ut_fund_opposition_effect_from_online_forums: "$ut_fund_opposition_effect$ (from $online_forums$)"
+ ut_fund_opposition_effect_from_social_media: "$ut_fund_opposition_effect$ (from $social_media$)"
+ ut_fund_opposition_effect_from_dem_vs_aut: "$ut_fund_opposition_effect$ (from Democratic vs Autocratic)"
+ ut_fund_opposition_effect_from_external_focus: "$ut_fund_opposition_effect$ (from $ut_new_dawn_core_external_offensive_focus$)"
  ut_fund_opposition_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds opposition groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], this may lead to revolts in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] opposition groups reducing their ideology [concept_ut_nd_progress_points]."
  ut_fund_opposition_source_happened_title: "Funding Opposition in [SCOPE.sCountry('ut_fund_opposition_target_scope').GetName]"
  ut_fund_opposition_source_happened_tt: "Funding Opposition in [SCOPE.sCountry('ut_fund_opposition_target_scope').GetName] was successful, they lost #r 25#! [concept_ut_nd_progress_points]"
@@ -1556,6 +1604,7 @@
  ut_pm_military_shipbuilding_utopia_2: "Kriegsschiffe"
 
  pm_trade_center_trade_quantity_utopia: "Industriellerhandel"
+ pm_trade_center_trade_quantity_utopia_2: "Fort. Industriellerhandel"
 
  pm_department_store: "Kaufhäuser"
  pm_supermarket: "Supermärkte"
@@ -1569,6 +1618,7 @@
  pm_ut_industry_plastics: "Industrieplastik"
  pm_ut_telephones: "Digitale Telephone"
  pm_ut_radios: "Verbesserter Funkempfänger"
+ pm_ut_radios_2: "Tragbare Radios"
  ut_company_research: "Forschungsverband"
  ut_high_tech_company_research: "Forschungsinstitut"
  pm_ut_high_speed_electric_trains: "Intercity"
