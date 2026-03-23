@@ -853,7 +853,6 @@ event_new_dawn.20 = {
 	
 	option = {
 		name = utopia.continue
-		default_option = yes
 		trigger = {
 			has_variable = ut_new_dawn_propaganda_source_defend_once_var
 			ut_has_new_dawn_progress_core = {
