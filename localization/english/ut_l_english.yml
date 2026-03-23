@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -247,7 +247,7 @@
  ut_new_dawn_focus_selected_tt: "Focus selected"
  ut_new_dawn_focus_already_selected_tt: "Focus not already selected"
  ut_new_dawn_focus_freeze_tt: "Focus not deactivated"
- ut_new_dawn_focus_tt: "Country will count as selected Ideology, this can impact diplomacy. \nEnables, preventing other ideologies from taking over."
+ ut_new_dawn_focus_tt: "#y Enables:#! Can once prevent other ideologies from taking over"
  country_new_dawn_focus_selected_progress: "Selected Ideology Progress"
  country_new_dawn_focus_selected_progress_desc: "Changes the gain of [concept_ut_nd_progress_points] towards selected Ideology."
  country_new_dawn_progress_points_progress: "[concept_ut_nd_progress_points] gain"
@@ -406,9 +406,9 @@
  je_ut_new_dawn_suppress_dissidents_mod: "$je_ut_new_dawn_suppress_dissidents$"
  
  je_ut_new_dawn_outlaw_communists: "Outlaw Communists"
- je_ut_new_dawn_outlaw_communists_desc: "Crack down on leftist movements and ban communist parties.\n\n#italic Historical Context:#!\nOn February 28, 1933, following the Reichstag Fire, the Nazis passed the Reichstag Fire Decree, suspending civil liberties and allowing the arrest of thousands of communists. The KPD (Communist Party of Germany) was soon outlawed, marking the first step in dismantling political opposition."
+ je_ut_new_dawn_outlaw_communists_desc: "Crack down on leftist movements and ban communist parties.\n\n#italic Historical Context:#!\nOn February 28, 1933, following the Reichstag Fire, the Nazis passed the Reichstag Fire Decree, suspending civil liberties and allowing the arrest of thousands of communists. The KPD (Communist Party of Germany) was soon outlawed, marking the first step in dismantling political opposition. Which 4 months later was followed by the ban of the SPD (Social Democratic Party) and another month later all parties were banned; dismantling democracy."
  je_ut_new_dawn_form_paramilitary_groups: "Paramilitary Groups"
- je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant organizations to enforce party rule.\n\n#italic Historical Context:#!\nThe SA (Sturmabteilung), active since the 1920s, grew into a powerful paramilitary force by the early 1930s, intimidating voters and disrupting opposition meetings. On June 30, 1934, during the Night of the Long Knives, Hitler purged the SA leadership to consolidate power, elevating the more ideologically driven SS (Schutzstaffel)."
+ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant organizations to enforce party rule.\n\n#italic Historical Context:#!\nThe Sturmabteilung, active since the 1920s, grew into a powerful paramilitary force by the early 1930s, intimidating voters and disrupting opposition meetings. On June 30, 1934, during the Night of the Long Knives, Hitler purged the SA leadership to consolidate power, elevating the more ideologically driven Schutzstaffel."
  je_ut_new_dawn_conformity: "Conformity"
  je_ut_new_dawn_conformity_desc: "Encourage strict social alignment with state ideals.\n\n#italic Historical Context:#!\nStarting in 1933, the Nazis implemented Gleichschaltung (\"coordination\"), a process of aligning all aspects of society—including media, education, culture, and religion—with Nazi ideology. Independent trade unions were banned on May 2, 1933, replaced by the state-run German Labor Front."
  je_ut_new_dawn_unite_heritage: "Unite Heritage"

@@ -247,7 +247,7 @@
  ut_new_dawn_focus_selected_tt: "Fokus ausgewählt"
  ut_new_dawn_focus_already_selected_tt: "Fokus nicht bereits ausgewählt"
  ut_new_dawn_focus_freeze_tt: "Fokus nicht deaktiviert"
- ut_new_dawn_focus_tt: "#v +0.5#! Fortschritt pro Monat für ausgewählte Ideologie"
+ ut_new_dawn_focus_tt: "#y Aktiviert:#! verhindere einmalig, dass andere Ideologien übernehmen"
  country_new_dawn_focus_selected_progress: "Ausgewählte Ideologie Fortschritt"
  country_new_dawn_focus_selected_progress_desc: "Erhöht den Zuwachs von [concept_ut_nd_progress_points] in Richtung der ausgewählten Ideologie."
  country_new_dawn_progress_points_progress: "[concept_ut_nd_progress_points] gain"

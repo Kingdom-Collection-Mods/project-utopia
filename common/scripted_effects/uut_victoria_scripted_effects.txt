@@ -553,7 +553,7 @@ ut_clear_divided_new_dawn_variables = { #Clears all variables, to save memory/pe
 	remove_variable = ig_weight 
 }
 
-ut_freeze_new_dawn_progress = { #Used upon initiation of cement_the_rightful_dynasty, to prevent the bars from excessively accumulating.
+ut_freeze_new_dawn_progress = { #Triggers when any ideology reaches a certain threshold in phase 1, prevents the bars from excessively accumulating and stops calculations.
 	set_variable = ut_new_dawn_bar_freeze
 }
 
