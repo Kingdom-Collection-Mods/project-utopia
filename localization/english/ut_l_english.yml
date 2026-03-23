@@ -1002,6 +1002,7 @@
  ut_add_new_dawn_progress_50: "Gains #b 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_50: "Loses #r 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_25: "Loses #r 25#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_neg_15: "Loses #r 15#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_10: "Loses #r 10#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_5: "Loses #r 5#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_1: "Loses #r 1#! [concept_ut_nd_progress_points]"

@@ -472,6 +472,12 @@ ut_new_dawn_start_propaganda_campaign = {
 		NOT = {
 			has_journal_entry = ut_je_propaganda_source
 		}
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_50
+			ut_has_new_dawn_progress_core = {
+				VALUE = 50
+			}
+		}
 		scope:target_country = {
 			country_rank <= root.country_rank
 			ut_new_dawn_has_core_trigger = yes
@@ -483,11 +489,11 @@ ut_new_dawn_start_propaganda_campaign = {
 		ut_add_new_dawn_core_progress = {
 			VALUE = -10
 		}
+		change_infamy = 5
 		add_journal_entry = {
 			type = ut_je_propaganda_source
 			target = scope:target_country
 		}
-		change_infamy = 5
 
 		scope:target_country = {
 			add_journal_entry = {
