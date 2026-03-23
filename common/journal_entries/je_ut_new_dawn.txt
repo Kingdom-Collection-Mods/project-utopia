@@ -199,6 +199,27 @@
 				ut_new_dawn_communist_progress = yes
 				ut_new_dawn_autocrat_progress = yes
 			}
+			if = {
+				limit = {
+					NOT = { has_variable = ut_new_dawn_bar_freeze }
+				}
+				set_variable = {
+					name = ut_new_dawn_fascist_bar_value
+					value = "scope:journal_entry.scripted_bar_progress(ut_new_dawn_fascist_bar)"
+				}
+				set_variable = {
+					name = ut_new_dawn_democrat_bar_value
+					value = "scope:journal_entry.scripted_bar_progress(ut_new_dawn_democrat_bar)"
+				}				
+				set_variable = {
+					name = ut_new_dawn_communist_bar_value
+					value = "scope:journal_entry.scripted_bar_progress(ut_new_dawn_communist_bar)"
+				}
+				set_variable = {
+					name = ut_new_dawn_autocrat_bar_value
+					value = "scope:journal_entry.scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+				}
+			}
 		}
 	}
 
@@ -233,7 +254,10 @@
 						has_variable = ut_new_dawn_bar_freeze
 					}
 				}
+				
 				ut_freeze_new_dawn_progress = yes #Freezes the bars so that they no longer accumulate progress on the monthly tick, and stay as they are. In the case that Cement the Rightful ideology fails, the bars will be set back.
+				
+
 				if = {
 					limit = {
 						scope:journal_entry = { 
@@ -292,18 +316,29 @@
 	on_yearly_pulse = {
 		effect = {
 			if = {
+				#Some fixes for countries in phase 1
 				limit = {
 					NOT = { ut_new_dawn_has_core_trigger = yes }
-					NOT = {
-						is_target_in_global_variable_list = {
-							name = ut_new_dawn_no_core_list
-							target = root
+				}
+				if = {
+					limit = {
+						NOT = {
+							is_target_in_global_variable_list = {
+								name = ut_new_dawn_no_core_list
+								target = root
+							}
 						}
 					}
+					add_to_global_variable_list = {
+						name = ut_new_dawn_no_core_list
+						target = root
+					}
 				}
-				add_to_global_variable_list = {
-					name = ut_new_dawn_no_core_list
-					target = root
+				if = {
+					limit = {
+						has_variable = ut_new_dawn_bar_freeze
+					}
+					remove_variable = ut_new_dawn_bar_freeze
 				}
 			}
 			if = {
@@ -794,6 +829,10 @@ je_ut_new_dawn_fascist = {
 	scripted_progress_bar = je_ut_new_dawn_fascist_points_bar
 
 	complete = {
+		custom_tooltip = {
+			text = je_ut_new_dawn_p2_condition_tt
+			always = no
+		}
 		custom_tooltip = {
 			text = je_ut_new_dawn_fascist_complete_condition_tt
 			has_variable = je_ut_new_dawn_outlaw_communists

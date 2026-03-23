@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -295,10 +295,10 @@ l_english:
  ut_new_dawn_democratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_democrat!"
  ut_new_dawn_autocratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_autocrat!"
  ut_new_dawn_no_core_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.GetCustom('ut_new_dawn_phase_1_trend')]"
- ut_phase_1_trend_democrat: "is trending towards $concept_ut_nd_democrat_core$"
- ut_phase_1_trend_autocrat: "is trending towards $concept_ut_nd_autocrat_core$"
- ut_phase_1_trend_fascist: "is trending towards $concept_ut_nd_fascist_core$"
- ut_phase_1_trend_communist: "is trending towards $concept_ut_nd_communist_core$"
+ ut_phase_1_trend_democrat: "is trending towards $concept_ut_nd_democrat_core$ ([ROOT.GetCountry.MakeScope.Var('ut_new_dawn_democrat_bar_value').GetValue|d]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
+ ut_phase_1_trend_autocrat: "is trending towards $concept_ut_nd_autocrat_core$ ([ROOT.GetCountry.MakeScope.Var('ut_new_dawn_autocrat_bar_value').GetValue|d]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
+ ut_phase_1_trend_fascist: "is trending towards $concept_ut_nd_fascist_core$ ([ROOT.GetCountry.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|d]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
+ ut_phase_1_trend_communist: "is trending towards $concept_ut_nd_communist_core$ ([ROOT.GetCountry.MakeScope.Var('ut_new_dawn_communist_bar_value').GetValue|d]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_phase_1_trend_undefined: "has no clear ideological trend"
  ut_progress_trend_max: "@profitability10!"
  ut_progress_trend_critical: "@profitability1!"
