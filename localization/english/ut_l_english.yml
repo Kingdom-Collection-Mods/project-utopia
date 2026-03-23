@@ -1043,7 +1043,7 @@
  ut_fund_opposition_source_happened_tt: "Funding Opposition in [SCOPE.sCountry('ut_fund_opposition_target_scope').GetName] was successful, they lost #r 10#! [concept_ut_nd_progress_points]"
  ut_fund_opposition_target_happened_title: "Opposition Funded by [SCOPE.sCountry('ut_fund_opposition_source_scope').GetName]"
  ut_fund_opposition_target_happened_desc: "[SCOPE.sCountry('ut_fund_opposition_source_scope').GetName] is funding opposition groups in our country, this may lead to revolts in your opposition groups reducing your ideology [concept_ut_nd_progress_points]."
- country_new_dawn_fund_opposition_efficiency_mult: "\"$ut_fund_opposition$\" efficiency"
+ country_new_dawn_fund_opposition_efficiency_mult: "\"$ut_fund_opposition$\" success chance"
 
 # Power Blocs
  principle_group_modern_trade_league: "Modern Trade League"
