@@ -92,5 +92,22 @@ ut_new_dawn_propaganda_target_defend = {
 			}
 			add = 50
 		}
+		if = {
+			limit = {
+				ut_has_new_dawn_progress_core = {
+					VALUE = 80
+				}
+			}
+			add = 5
+		}
+		if = {
+			limit = {
+				country_rank >= rank_value:great_power
+				ut_has_new_dawn_progress_core = {
+					VALUE = 70
+				}
+			}
+			add = 5
+		}
 	}
 }

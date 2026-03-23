@@ -40,6 +40,7 @@ ut_je_propaganda_source = {
 
 	on_complete = {
 		hidden_effect = {
+			remove_variable = ut_new_dawn_propaganda_source_defend_once_var
 			set_variable = {
 				name = ut_je_propaganda_source_target_var
 				value = scope:target
@@ -124,6 +125,7 @@ ut_je_propaganda_source = {
 	on_fail = {
 		remove_variable = ut_propaganda_source_abandon_var
 		remove_variable = ut_propaganda_source_var
+		remove_variable = ut_new_dawn_propaganda_source_defend_once_var
 		scope:target = {
 			set_variable = ut_propaganda_target_abandon_var
 		}
