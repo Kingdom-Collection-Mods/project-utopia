@@ -72,8 +72,8 @@ ut_je_propaganda_source = {
 			scope:target = {
 				add_modifier = {
 					name = ut_propaganda_communist_mod
-					days = 1095 #3 years
-					is_decaying = yes
+					days = 730 #2 years
+					#is_decaying = yes
 				}
 			}
 		}
@@ -84,8 +84,8 @@ ut_je_propaganda_source = {
 			scope:target = {
 				add_modifier = {
 					name = ut_propaganda_democratic_mod
-					days = 1095 #3 years
-					is_decaying = yes
+					days = 730 #2 years
+					#is_decaying = yes
 				}
 			}
 		}
@@ -96,8 +96,8 @@ ut_je_propaganda_source = {
 			scope:target = {
 				add_modifier = {
 					name = ut_propaganda_fascist_mod
-					days = 1095 #3 years
-					is_decaying = yes
+					days = 730 #2 years
+					#is_decaying = yes
 				}
 			}
 		}
@@ -108,8 +108,8 @@ ut_je_propaganda_source = {
 			scope:target = {
 				add_modifier = {
 					name = ut_propaganda_autocratic_mod
-					days = 1095 #3 years
-					is_decaying = yes
+					days = 730 #2 years
+					#is_decaying = yes
 				}
 			}
 		}

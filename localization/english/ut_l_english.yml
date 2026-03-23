@@ -296,10 +296,10 @@ l_english:
  ut_new_dawn_democratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_democrat!"
  ut_new_dawn_autocratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_autocrat!"
  ut_new_dawn_no_core_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.GetCustom('ut_new_dawn_phase_1_trend')]"
- ut_phase_1_trend_democrat: "is trending towards $concept_ut_nd_democrat_core$ ([ROOT.GetCountry.MakeScope.Var('ut_new_dawn_democrat_bar_value').GetValue|2]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
- ut_phase_1_trend_autocrat: "is trending towards $concept_ut_nd_autocrat_core$ ([ROOT.GetCountry.MakeScope.Var('ut_new_dawn_autocrat_bar_value').GetValue|2]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
- ut_phase_1_trend_fascist: "is trending towards $concept_ut_nd_fascist_core$ ([ROOT.GetCountry.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|2]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
- ut_phase_1_trend_communist: "is trending towards $concept_ut_nd_communist_core$ ([ROOT.GetCountry.MakeScope.Var('ut_new_dawn_communist_bar_value').GetValue|2]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
+ ut_phase_1_trend_democrat: "is trending towards $concept_ut_nd_democrat_core$ ([ROOT.GetCountry.MakeScope.Var('ut_new_dawn_democrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
+ ut_phase_1_trend_autocrat: "is trending towards $concept_ut_nd_autocrat_core$ ([ROOT.GetCountry.MakeScope.Var('ut_new_dawn_autocrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
+ ut_phase_1_trend_fascist: "is trending towards $concept_ut_nd_fascist_core$ ([ROOT.GetCountry.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
+ ut_phase_1_trend_communist: "is trending towards $concept_ut_nd_communist_core$ ([ROOT.GetCountry.MakeScope.Var('ut_new_dawn_communist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_phase_1_trend_undefined: "has no clear ideological trend"
  ut_progress_trend_max: "@profitability10!"
  ut_progress_trend_critical: "@profitability1!"
@@ -898,7 +898,8 @@ l_english:
  ut_propaganda_democratic_mod: "Democratic Propaganda"
  ut_propaganda_autocratic_mod: "Autocratic Propaganda"
 
- country_new_dawn_propaganda_source_efficiency_mult: "\"$ut_je_propaganda_source$\" efficiency multiplier"
+ country_new_dawn_propaganda_source_efficiency_mult: "\"$ut_je_propaganda_source$\" efficiency"
+ country_new_dawn_propaganda_source_speed_mult: "\"$ut_je_propaganda_source$\" speed"
 
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
  UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
@@ -1042,7 +1043,7 @@ l_english:
  ut_fund_opposition_source_happened_tt: "Funding Opposition in [SCOPE.sCountry('ut_fund_opposition_target_scope').GetName] was successful, they lost #r 10#! [concept_ut_nd_progress_points]"
  ut_fund_opposition_target_happened_title: "Opposition Funded by [SCOPE.sCountry('ut_fund_opposition_source_scope').GetName]"
  ut_fund_opposition_target_happened_desc: "[SCOPE.sCountry('ut_fund_opposition_source_scope').GetName] is funding opposition groups in our country, this may lead to revolts in your opposition groups reducing your ideology [concept_ut_nd_progress_points]."
- country_new_dawn_fund_opposition_efficiency_mult: "\"$ut_fund_opposition$\" efficiency multiplier"
+ country_new_dawn_fund_opposition_efficiency_mult: "\"$ut_fund_opposition$\" efficiency"
 
 # Power Blocs
  principle_group_modern_trade_league: "Modern Trade League"

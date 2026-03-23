@@ -649,6 +649,16 @@ country_new_dawn_progress_points_progress={
 	}
 }
 
+country_new_dawn_propaganda_source_speed_mult={
+	script_only = yes
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
 country_new_dawn_propaganda_source_efficiency_mult={
 	script_only = yes
 	decimals=1
