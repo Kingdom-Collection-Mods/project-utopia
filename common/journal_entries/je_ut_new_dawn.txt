@@ -199,6 +199,25 @@
 				ut_new_dawn_communist_progress = yes
 				ut_new_dawn_autocrat_progress = yes
 			}
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			#progress for ai
+			if = {
+				limit = {
+					is_player = no
+					NOT = {
+						has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 480 with one ideology. It's reset when this JE is completed, or when je_cement_the_rightful_ideology fails.
+					}
+				}
+				#Calculates how much the each core ideology will get next month. Updates weekly, but is not added until the monthly.
+				ut_new_dawn_fascist_progress = yes 
+				ut_new_dawn_democrat_progress = yes
+				ut_new_dawn_communist_progress = yes
+				ut_new_dawn_autocrat_progress = yes
+			}
 			if = {
 				limit = {
 					NOT = { has_variable = ut_new_dawn_bar_freeze }
@@ -219,25 +238,6 @@
 					name = ut_new_dawn_autocrat_bar_value
 					value = "scope:journal_entry.scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 				}
-			}
-		}
-	}
-
-	on_monthly_pulse = {
-		effect = {
-			#progress for ai
-			if = {
-				limit = {
-					is_player = no
-					NOT = {
-						has_variable = ut_new_dawn_bar_freeze #This variable stops iteration, and is granted by reaching 480 with one ideology. It's reset when this JE is completed, or when je_cement_the_rightful_ideology fails.
-					}
-				}
-				#Calculates how much the each core ideology will get next month. Updates weekly, but is not added until the monthly.
-				ut_new_dawn_fascist_progress = yes 
-				ut_new_dawn_democrat_progress = yes
-				ut_new_dawn_communist_progress = yes
-				ut_new_dawn_autocrat_progress = yes
 			}
 			#check for ideology reached upper bound
 			if = {
