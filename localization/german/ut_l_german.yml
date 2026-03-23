@@ -313,6 +313,10 @@
  ut_progress_trend_down3: "@profitability2!"
  ut_progress_trend_down4: "@profitability1!"
 
+ ut_new_dawn_ideology_status_no_new_dawn: "Keine"
+ ut_new_dawn_ideology_status_pre_new_dawn: "Viktorianisches Zeitalter"
+ ut_new_dawn_ideology_status_new_dawn_ongoing: "Im Aufbau"
+
  ut_new_dawn_democrat_focus: "Demokratischer Fokus"
  ut_new_dawn_democrat_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities] and [concept_ut_nd_milestones].#!"
  ut_new_dawn_democrat_bar: "Demokratisch"

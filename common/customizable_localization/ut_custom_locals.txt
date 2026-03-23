@@ -148,6 +148,66 @@ ut_new_dawn_phase_1_trend = {
 
 }
 
+ut_new_dawn_ideology_status = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+			NOT = { has_journal_entry = je_ut_new_dawn }
+			year > 1936
+		}
+
+		localization_key = ut_new_dawn_ideology_status_no_new_dawn
+	}
+
+	text = {
+		trigger = {
+			NOT = { has_journal_entry = je_ut_new_dawn }
+		}
+
+		localization_key = ut_new_dawn_ideology_status_pre_new_dawn
+	}
+
+	text = {
+		trigger = {
+			has_modifier = ut_new_dawn_core_fascist_mod
+		}
+
+		localization_key = concept_ut_nd_fascist_core
+	}
+
+	
+	text = {
+		trigger = {
+			has_modifier = ut_new_dawn_core_autocratic_mod
+		}
+
+		localization_key = concept_ut_nd_autocrat_core
+	}
+
+	text = {
+		trigger = {
+			has_modifier = ut_new_dawn_core_democratic_mod
+		}
+
+		localization_key = concept_ut_nd_democrat_core
+	}
+
+	text = {
+		trigger = {
+			has_modifier = ut_new_dawn_core_communist_mod
+		}
+
+		localization_key = concept_ut_nd_communist_core
+	}
+
+	text = {
+		localization_key = ut_new_dawn_ideology_status_new_dawn_ongoing
+	}
+
+}
+
 ut_utopia_enabled_on_game_started_loc = {
 	type = country
 	random_valid = no

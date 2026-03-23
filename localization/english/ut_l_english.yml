@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -312,6 +312,10 @@
  ut_progress_trend_down2: "@profitability3!"
  ut_progress_trend_down3: "@profitability2!"
  ut_progress_trend_down4: "@profitability1!"
+
+ ut_new_dawn_ideology_status_no_new_dawn: "None"
+ ut_new_dawn_ideology_status_pre_new_dawn: "Victorian Age"
+ ut_new_dawn_ideology_status_new_dawn_ongoing: "Establishing"
 
  ut_new_dawn_democrat_focus: "Democratic Focus"
  ut_new_dawn_democrat_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities] and [concept_ut_nd_milestones].#!"
