@@ -1,4 +1,4 @@
-﻿ut_je_propaganda_source = {
+ut_je_propaganda_source = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
 	group = je_group_utopia
@@ -40,6 +40,10 @@
 
 	on_complete = {
 		hidden_effect = {
+			set_variable = {
+				name = ut_je_propaganda_source_target_var
+				value = scope:target
+			}
 			trigger_event = {
 				id = event_new_dawn.25
 				popup = yes
@@ -51,6 +55,10 @@
 				VALUE = -25
 			}
 			
+			set_variable = {
+				name = ut_je_propaganda_target_source_var
+				value = root
+			}
 			trigger_event = {
 				id = event_new_dawn.24
 				popup = yes
@@ -163,7 +171,6 @@ ut_je_propaganda_target = {
 
 	on_complete = {
 		remove_variable = ut_propaganda_target_abandon_var
-		add_modifier = ut_new_dawn_core_fascist_mod
 	}
 
 	fail = {

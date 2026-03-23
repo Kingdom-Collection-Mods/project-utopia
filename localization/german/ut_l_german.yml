@@ -7,9 +7,10 @@
  utopia.progress_c: "Lang lebe die Wissenschaft"
  utopia.slow_progress: "Schritt für Schritt..."
  utopia.continue: "Weiter"
+ utopia.abort: "Abbrechen"
  utopia.cheat: "Cheaten"
  utopia.disable: "Deaktivieren"
- utopia.error: "Error" 
+ utopia.error: "Fehler" 
 
 # Events & Journals
  ut_heavy_industrial_machinery_je: "Schwermaschinenbau"

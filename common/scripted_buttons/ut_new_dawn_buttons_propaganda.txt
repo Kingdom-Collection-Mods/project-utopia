@@ -55,7 +55,7 @@ ut_new_dawn_propaganda_target_defend = {
 		}
 		custom_tooltip = {
 			text = ut_new_dawn_propaganda_target_defend_cooldown_tt
-			has_variable = ut_new_dawn_propaganda_target_defend_cooldown_var
+			NOT = { has_variable = ut_new_dawn_propaganda_target_defend_cooldown_var }
 			scope:target = {
 				NOT = { has_variable = ut_propaganda_source_abandon_var }
 			}
@@ -71,6 +71,10 @@ ut_new_dawn_propaganda_target_defend = {
 		
 		custom_tooltip = ut_new_dawn_propaganda_target_defend_tt
 		scope:target = {
+			set_variable = {
+				name = ut_new_dawn_propaganda_target_defend_source_var
+				value = root
+			}
 			trigger_event = {
 				id = event_new_dawn.20
 				popup = yes
