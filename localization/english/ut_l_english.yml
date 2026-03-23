@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -254,7 +254,7 @@ l_english:
  country_new_dawn_progress_points_progress: "[concept_ut_nd_progress_points] gain"
  country_new_dawn_progress_points_progress_desc: "Changes the gain of [concept_ut_nd_progress_points] for core Ideology."
 
- je_ut_new_dawn_critical_lower_bound_fail_tt: "If the threshold of #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v #![concept_ut_nd_progress_points] is undercut (instant right now), event chains may undo political progress and eventually trigger a new New Dawn."
+ je_ut_new_dawn_critical_lower_bound_fail_tt: "Has #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! [concept_ut_nd_progress_points]"
 
  ut_new_dawn_communist_focus: "Communist Focus"
  ut_new_dawn_communist_focus_desc: "#italic wip: Currently being worked on#!"
