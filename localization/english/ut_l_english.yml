@@ -312,6 +312,7 @@
  ut_progress_trend_down2: "@profitability3!"
  ut_progress_trend_down3: "@profitability2!"
  ut_progress_trend_down4: "@profitability1!"
+ ut_progress_trend_down_special: "@profitability1!@queue_move_down!"
 
  ut_new_dawn_ideology_status_no_new_dawn: "None"
  ut_new_dawn_ideology_status_pre_new_dawn: "Victorian Age"

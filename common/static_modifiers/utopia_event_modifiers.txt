@@ -417,5 +417,5 @@ ut_propaganda_democratic_mod = {
 
 ut_je_propaganda_source_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds
-	#country_new_dawn_progress_points_progress = -1
+	country_new_dawn_progress_points_progress = -1
 }

@@ -21,6 +21,13 @@
 
 	text = {
 		trigger = {
+			var:je_ut_new_dawn_core_progress_diff < -4 #probably some action happened like activating a milestone
+		}
+		localization_key = ut_progress_trend_down_special
+	}
+
+	text = {
+		trigger = {
 			var:je_ut_new_dawn_core_progress_diff < -2
 		}
 
