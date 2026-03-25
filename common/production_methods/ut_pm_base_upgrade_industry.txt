@@ -771,7 +771,6 @@ pm_shopping_district = {
 			goods_input_computers_add = 1
 			goods_input_electricity_add = 2
 			goods_output_services_add = 100
-			goods_output_internet_add = 6
 		}
 
 		level_scaled = {
@@ -800,13 +799,77 @@ pm_online_shopping = {
 			goods_input_software_add = 2
 			goods_input_electricity_add = 4
 			goods_output_services_add = 120
-			goods_output_internet_add = 20
 		}
 
 		level_scaled = {
 			building_employment_clerks_add = 1500
 			building_employment_shopkeepers_add = 1000
 			building_employment_service_workers_add = 2000 
+		}
+	}
+
+	required_input_goods = electricity
+}
+
+pm_ut_coper_streetlights = {
+	texture = "gfx/interface/icons/production_method_icons/electric_streetlights.dds"
+
+	city_lights_color_index = 2	# Needs to match city_graphics_data.settings color array
+
+	unlocking_technologies = {
+		electrical_generation
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_electricity_add = 6
+			goods_input_iron_add = 1
+			goods_output_services_add = 20
+			goods_output_internet_add = 20
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_engineers_add = 150
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 2
+		}
+	}
+
+	required_input_goods = electricity
+}
+
+
+pm_ut_coper_streetlights = {
+	texture = "gfx/interface/icons/production_method_icons/electric_streetlights.dds"
+
+	city_lights_color_index = 2	# Needs to match city_graphics_data.settings color array
+
+	unlocking_technologies = {
+		electrical_generation
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_electricity_add = 6
+			goods_input_rare_earths_add = 1
+			goods_output_services_add = 20
+			goods_output_internet_add = 40
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_engineers_add = 200
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 2
 		}
 	}
 
