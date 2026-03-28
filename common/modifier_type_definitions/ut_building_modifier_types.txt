@@ -629,10 +629,51 @@ unit_combat_unit_type_modern_submarine_offense_add={
 	}
 }
 
+#phase 1
 country_new_dawn_focus_selected_progress={
 	script_only = yes
 	decimals=1
-	color=neutral
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+#phase 2
+country_new_dawn_progress_points_progress={
+	script_only = yes
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+country_new_dawn_propaganda_source_speed_mult={
+	script_only = yes
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+country_new_dawn_propaganda_source_efficiency_mult={
+	script_only = yes
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+country_new_dawn_fund_opposition_efficiency_mult={
+	script_only = yes
+	decimals=1
+	color=good
+	percent=yes
 	game_data={
 		ai_value=0
 	}

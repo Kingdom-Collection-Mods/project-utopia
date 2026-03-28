@@ -22,6 +22,15 @@
 				name = ut_propaganda_source_var
 				add = 1
 			}
+			if = {
+				limit = {
+					has_modifier = ut_new_dawn_core_external_offensive_focus_mod
+				}
+				change_variable = {
+					name = ut_propaganda_source_var
+					add = 0.2
+				}
+			}
 		}
 	}
 
@@ -30,20 +39,31 @@
 	}
 
 	on_complete = {
-		# trigger_event = {
-		# 	id = event_new_dawn.25
-		# 	popup = yes
-		# }
+		hidden_effect = {
+			remove_variable = ut_new_dawn_propaganda_source_defend_once_var
+			set_variable = {
+				name = ut_je_propaganda_source_target_var
+				value = scope:target
+			}
+			trigger_event = {
+				id = event_new_dawn.25
+				popup = yes
+			}
+		}
 		scope:target = {
-			custom_tooltip = ut_add_new_dawn_progress_neg_5
+			custom_tooltip = ut_add_new_dawn_progress_neg_25
 			ut_add_new_dawn_core_progress = {
-				VALUE = -5
+				VALUE = -25
 			}
 			
-			# trigger_event = {
-			# 	id = event_new_dawn.24
-			# 	popup = yes
-			# }
+			set_variable = {
+				name = ut_je_propaganda_target_source_var
+				value = root
+			}
+			trigger_event = {
+				id = event_new_dawn.24
+				popup = yes
+			}
 		}
 		if = {
 			limit = {
@@ -52,8 +72,8 @@
 			scope:target = {
 				add_modifier = {
 					name = ut_propaganda_communist_mod
-					days = 1095 #3 years
-					is_decaying = yes
+					days = 730 #2 years
+					#is_decaying = yes
 				}
 			}
 		}
@@ -64,8 +84,8 @@
 			scope:target = {
 				add_modifier = {
 					name = ut_propaganda_democratic_mod
-					days = 1095 #3 years
-					is_decaying = yes
+					days = 730 #2 years
+					#is_decaying = yes
 				}
 			}
 		}
@@ -76,8 +96,8 @@
 			scope:target = {
 				add_modifier = {
 					name = ut_propaganda_fascist_mod
-					days = 1095 #3 years
-					is_decaying = yes
+					days = 730 #2 years
+					#is_decaying = yes
 				}
 			}
 		}
@@ -88,8 +108,8 @@
 			scope:target = {
 				add_modifier = {
 					name = ut_propaganda_autocratic_mod
-					days = 1095 #3 years
-					is_decaying = yes
+					days = 730 #2 years
+					#is_decaying = yes
 				}
 			}
 		}
@@ -98,16 +118,14 @@
 	fail = {
 		custom_tooltip = {
 			text = ut_je_propaganda_source_abort_tt
-			OR = {
-				has_variable = ut_propaganda_source_abandon_var
-				NOT = { exists = scope:target }
-			}
+			has_variable = ut_propaganda_source_abandon_var
 		}
 	}
 
 	on_fail = {
 		remove_variable = ut_propaganda_source_abandon_var
 		remove_variable = ut_propaganda_source_var
+		remove_variable = ut_new_dawn_propaganda_source_defend_once_var
 		scope:target = {
 			set_variable = ut_propaganda_target_abandon_var
 		}
@@ -149,14 +167,12 @@ ut_je_propaganda_target = {
 	complete = {
 		custom_tooltip = {
 			text = ut_je_propaganda_target_abort_tt
-			OR = {
-				NOT = { exists = scope:target }
-				has_variable = ut_propaganda_target_abandon_var
-			}
+			has_variable = ut_propaganda_target_abandon_var
 		}
 	}
 
 	on_complete = {
+		remove_variable = ut_propaganda_target_abandon_var
 	}
 
 	fail = {
@@ -165,9 +181,9 @@ ut_je_propaganda_target = {
 
 	on_fail = {
 		show_as_tooltip = {
-			custom_tooltip = ut_add_new_dawn_progress_neg_5
+			custom_tooltip = ut_add_new_dawn_progress_neg_25
 			ut_add_new_dawn_core_progress = {
-				VALUE = -5
+				VALUE = -25
 			}
 			if = {
 				limit = {

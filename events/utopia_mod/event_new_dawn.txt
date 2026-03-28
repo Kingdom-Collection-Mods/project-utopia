@@ -810,6 +810,7 @@ event_new_dawn.20 = {
 	placement = ROOT
 	title = ut_new_dawn_propaganda_target_defend
 	desc = ut_new_dawn_propaganda_target_defend_desc
+	flavor = ut_new_dawn_propaganda_target_defend_tt
 	
 	event_image = {
 		video = "unspecific_vandalized_storefront"
@@ -827,30 +828,59 @@ event_new_dawn.20 = {
 		# by button
 	}
 
+	immediate = {
+		var:ut_new_dawn_propaganda_target_defend_source_var = {
+			save_scope_as = ut_new_dawn_propaganda_target_defend_source_scope
+		}
+		remove_variable = ut_new_dawn_propaganda_target_defend_source_var
+	}
 	
 	option = {
 		name = utopia.continue
 		default_option = yes
 		trigger = {
-			custom_tooltip = {
-				text = ut_has_new_dawn_progress_50
-				ut_has_new_dawn_progress_core = {
-					VALUE = 50
-				}
+			NOT = { has_variable = ut_new_dawn_propaganda_source_defend_once_var }
+			ut_has_new_dawn_progress_core = {
+				VALUE = 50
 			}
 		}
 		custom_tooltip = ut_add_new_dawn_progress_neg_10
 		ut_add_new_dawn_core_progress = {
 			VALUE = -10
 		}
+		set_variable = ut_new_dawn_propaganda_source_defend_once_var
 	}
 	
 	option = {
-		name = utopia.no
+		name = utopia.continue
+		trigger = {
+			has_variable = ut_new_dawn_propaganda_source_defend_once_var
+			ut_has_new_dawn_progress_core = {
+				VALUE = 50
+			}
+			OR = {
+				is_player = yes
+				ut_has_new_dawn_progress_core = {
+					VALUE = 80
+				}
+			}
+		}
+		custom_tooltip = ut_add_new_dawn_progress_neg_20
+		ut_add_new_dawn_core_progress = {
+			VALUE = -20
+		}
+	}
+	
+	option = {
+		name = utopia.abort
 		custom_tooltip = ut_new_dawn_propaganda_source_abort_tt 		
 		set_variable = {
 			name = ut_propaganda_source_abandon_var
 		}
+	}
+
+	after = {
+		clear_saved_scope = ut_new_dawn_propaganda_target_defend_source_scope
 	}
 }
 
@@ -888,9 +918,9 @@ event_new_dawn.21 = {
 	option = {
 		name = utopia.continue
 		default_option = yes
-		custom_tooltip = ut_add_new_dawn_progress_neg_25
+		custom_tooltip = ut_add_new_dawn_progress_neg_10
 		ut_add_new_dawn_core_progress = {
-			VALUE = -25
+			VALUE = -10
 		}
 	}
 }
@@ -930,6 +960,10 @@ event_new_dawn.22 = {
 		name = utopia.continue
 		default_option = yes
 		custom_tooltip = ut_fund_opposition_source_happened_tt
+	}
+
+	after = {
+		clear_saved_scope = ut_fund_opposition_target_scope
 	}
 }
 
@@ -971,6 +1005,96 @@ event_new_dawn.23 = {
 
 	after = {
 		remove_variable = ut_propaganda_source_abandon_selecting
+	}
+}
+
+#propaganda campaign target happened
+event_new_dawn.24 = {
+	type = country_event
+	title = ut_propaganda_campaign_target_happened_title
+	desc = ut_propaganda_campaign_target_happened_desc
+	
+	event_image = {
+		video = "unspecific_vandalized_storefront"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	#gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		# by button
+	}
+	
+	immediate = {
+		var:ut_je_propaganda_target_source_var = {
+			save_scope_as = ut_je_propaganda_target_source_scope
+		}
+		remove_variable = ut_je_propaganda_target_source_var
+	}
+	
+	option = {
+		name = utopia.continue
+		default_option = yes
+		custom_tooltip = ut_propaganda_campaign_target_happened_tt
+	}
+
+	after = {
+		clear_saved_scope = ut_je_propaganda_target_source_scope
+	}
+}
+
+#propaganda campaign source notification
+event_new_dawn.25 = {
+	type = country_event
+	title = ut_propaganda_campaign_source_happened_title
+	desc = ut_propaganda_campaign_source_happened_desc
+	
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	#gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		NOT = {
+			has_variable = ut_propaganda_campaign_source_event_notification_disable_var
+		}
+	}
+
+	immediate = {
+		var:ut_je_propaganda_source_target_var = {
+			save_scope_as = ut_je_propaganda_source_target_scope
+		}
+		remove_variable = ut_je_propaganda_source_target_var
+	}
+
+	
+	option = {
+		name = utopia.continue
+		default_option = yes
+		custom_tooltip = ut_propaganda_campaign_source_happened_tt
+	}
+
+	option = {
+		name = utopia.disable
+		custom_tooltip = ut_propaganda_campaign_source_happened_tt
+		custom_tooltip = ut_propaganda_campaign_source_happened_disable_tt
+		set_variable = ut_propaganda_campaign_source_event_notification_disable_var
+	}
+
+	after = {
+		clear_saved_scope = ut_je_propaganda_source_target_scope
 	}
 }
 

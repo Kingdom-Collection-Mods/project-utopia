@@ -1,0 +1,232 @@
+﻿#Base
+ut_new_dawn_core_external_offensive_focus_add = {
+	name = "ut_new_dawn_core_external_offensive_focus_add"
+	desc = "ut_new_dawn_core_external_offensive_focus_desc"
+
+	visible = { 
+		ut_new_dawn_has_core_trigger = yes
+		is_player = yes
+		NOT = { has_modifier = ut_new_dawn_core_external_offensive_focus_mod }	
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_50
+			ut_has_new_dawn_progress_core = {
+				VALUE = 50
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = ut_add_new_dawn_progress_neg_1
+		ut_add_new_dawn_core_progress = {
+			VALUE = -1
+		}
+		add_modifier = ut_new_dawn_core_external_offensive_focus_mod
+	}
+	#ai never
+	ai_chance = {
+		value = 0
+	}
+}
+
+ut_new_dawn_core_external_offensive_focus_remove = {
+	name = "ut_new_dawn_core_external_offensive_focus_remove"
+	desc = "ut_new_dawn_core_external_offensive_focus_desc"
+
+	visible = { 
+		ut_new_dawn_has_core_trigger = yes
+		is_player = yes
+		has_modifier = ut_new_dawn_core_external_offensive_focus_mod		
+	}
+
+	possible = {
+	}
+
+	effect = {
+		custom_tooltip = ut_add_new_dawn_progress_neg_1
+		ut_add_new_dawn_core_progress = {
+			VALUE = -1
+		}
+		remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
+	}
+	#ai never
+	ai_chance = {
+		value = 0
+	}
+}
+
+ut_new_dawn_core_external_cooperative_focus_add = {
+	name = "ut_new_dawn_core_external_cooperative_focus_add"
+	desc = "ut_new_dawn_core_external_cooperative_focus_desc"
+
+	visible = {
+		ut_new_dawn_has_core_trigger = yes
+		is_player = yes
+		NOT = { has_modifier = ut_new_dawn_core_external_cooperative_focus_mod }		
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_50
+			ut_has_new_dawn_progress_core = {
+				VALUE = 50
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = ut_add_new_dawn_progress_neg_1
+		ut_add_new_dawn_core_progress = {
+			VALUE = -1
+		}
+		add_modifier = ut_new_dawn_core_external_cooperative_focus_mod
+	}
+	#ai never
+	ai_chance = {
+		value = 0
+	}
+}
+
+ut_new_dawn_core_external_cooperative_focus_remove = {
+	name = "ut_new_dawn_core_external_cooperative_focus_remove"
+	desc = "ut_new_dawn_core_external_cooperative_focus_desc"
+
+	visible = {
+		ut_new_dawn_has_core_trigger = yes
+		is_player = yes
+		has_modifier = ut_new_dawn_core_external_cooperative_focus_mod		
+	}
+
+	possible = {
+	}
+
+	effect = {
+		custom_tooltip = ut_add_new_dawn_progress_neg_1
+		ut_add_new_dawn_core_progress = {
+			VALUE = -1
+		}
+		remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
+	}
+	#ai never
+	ai_chance = {
+		value = 0
+	}
+}
+
+ut_new_dawn_core_internal_good_times_focus_add = {
+	name = "ut_new_dawn_core_internal_good_times_focus_add"
+	desc = "ut_new_dawn_core_internal_good_times_focus_desc"
+
+	visible = {
+		ut_new_dawn_has_core_trigger = yes
+		is_player = yes
+		NOT = { has_modifier = ut_new_dawn_core_internal_good_times_focus_mod }		
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_50
+			ut_has_new_dawn_progress_core = {
+				VALUE = 50
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = ut_add_new_dawn_progress_neg_1
+		ut_add_new_dawn_core_progress = {
+			VALUE = -1
+		}
+		add_modifier = ut_new_dawn_core_internal_good_times_focus_mod
+	}
+	#ai never
+	ai_chance = {
+		value = 0
+	}
+}
+
+ut_new_dawn_core_internal_good_times_focus_remove = {
+	name = "ut_new_dawn_core_internal_good_times_focus_remove"
+	desc = "ut_new_dawn_core_internal_good_times_focus_desc"
+
+	visible = {
+		ut_new_dawn_has_core_trigger = yes
+		is_player = yes
+		has_modifier = ut_new_dawn_core_internal_good_times_focus_mod		
+	}
+
+	possible = {
+	}
+
+	effect = {
+		custom_tooltip = ut_add_new_dawn_progress_neg_1
+		ut_add_new_dawn_core_progress = {
+			VALUE = -1
+		}
+		remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
+	}
+	#ai never
+	ai_chance = {
+		value = 0
+	}
+}
+
+ut_new_dawn_core_internal_bad_times_focus_add = {
+	name = "ut_new_dawn_core_internal_bad_times_focus_add"
+	desc = "ut_new_dawn_core_internal_bad_times_focus_desc"
+
+	visible = {
+		ut_new_dawn_has_core_trigger = yes
+		is_player = yes
+		NOT = { has_modifier = ut_new_dawn_core_internal_bad_times_focus_mod }	
+	}
+
+	possible = {	
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_50
+			ut_has_new_dawn_progress_core = {
+				VALUE = 50
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = ut_add_new_dawn_progress_neg_1
+		ut_add_new_dawn_core_progress = {
+			VALUE = -1
+		}
+		add_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
+	}
+	#ai never
+	ai_chance = {
+		value = 0
+	}
+}
+
+ut_new_dawn_core_internal_bad_times_focus_remove = {
+	name = "ut_new_dawn_core_internal_bad_times_focus_remove"
+	desc = "ut_new_dawn_core_internal_bad_times_focus_desc"
+
+	visible = {
+		ut_new_dawn_has_core_trigger = yes
+		is_player = yes
+		has_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
+	}
+
+	possible = {
+	}
+
+	effect = {
+		custom_tooltip = ut_add_new_dawn_progress_neg_1
+		ut_add_new_dawn_core_progress = {
+			VALUE = -1
+		}
+		remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
+	}
+	#ai never
+	ai_chance = {
+		value = 0
+	}
+}

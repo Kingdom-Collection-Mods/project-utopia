@@ -32,7 +32,7 @@ heavy_industry_harbor = {
     }
 	
 	ai_weight = {
-		value = 1
+		value = 2
 	}
 }
 
@@ -50,7 +50,7 @@ ultra_heavy_industry_harbor = {
     }
 
 	ai_weight = {
-		value = 1
+		value = 2
 	}
 }
 
@@ -66,7 +66,6 @@ ut_global_positioning_system = {
 	}
 	
 	modifier = {
-		building_trade_center_throughput_add = 0.1
 		military_formation_movement_speed_mult = 0.2
     }
 
@@ -86,6 +85,7 @@ ut_intermodal_container = {
 	}
 	
 	modifier = {
+		building_trade_center_throughput_add = 0.2
 		building_port_throughput_add = 0.2
     }
 

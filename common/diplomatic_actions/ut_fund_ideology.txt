@@ -45,67 +45,54 @@ ut_fund_ideology = {
 		second_country_gets_income_transfer = yes
 		income_transfer_based_on_second_country = yes
 		income_transfer_to_pops = {
-			allow_non_fully_accepted = no
+			allow_non_fully_accepted = yes
 			upper_strata_pops = {
-				value = 0.5
+				value = 1
 				if = {
 					limit = {
-						OR = {
-							has_law = law_type:law_autocracy
-							has_law = law_type:law_oligarchy
-						}
+						has_modifier = ut_new_dawn_core_autocratic_mod
 					}
-					add = 0.5
+					add = 1
 				}
 				else_if = {
 					limit = {
-						OR = {
-							has_law = law_type:law_wealth_voting
-							has_law = law_type:law_landed_voting
-						}
+						has_modifier = ut_new_dawn_core_fascist_mod
 					}
-					add = 0.25
+					add = 1
 				}
 				else_if = {
 					limit = {
-						has_law = law_type:law_anarchy
+						has_modifier = ut_new_dawn_core_communist_mod
 					}
-					subtract = 0.25
+					subtract = 0.5
 				}
 
-				max = 1
+				max = 2
 				min = 0
 			}
 			middle_strata_pops = {
-				value = 0.25
-
+				value = 1
 				if = {
 					limit = {
-						OR = {
-							has_law = law_type:law_census_voting
-							has_law = law_type:law_universal_suffrage
-						}
+						has_modifier = ut_new_dawn_core_democratic_mod
 					}
-					add = 0.25
+					add = 1
 				}
-
-				max = 1
+				max = 2
 				min = 0
 			}
+
 			lower_strata_pops = {
-				value = 0.0
+				value = 1
 
 				if = {
 					limit = {
-						OR = {
-							has_law = law_type:law_universal_suffrage
-							has_law = law_type:law_anarchy
-						}
+						has_modifier = ut_new_dawn_core_communist_mod
 					}
 					add = 0.25
 				}
 
-				max = 1
+				max = 2
 				min = 0
 			}
 		}

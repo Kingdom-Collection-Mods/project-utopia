@@ -674,14 +674,14 @@ law_multicultural_globalism = {
 		country_allow_voting_second_rate_citizen_bool = yes
 		country_allow_voting_full_acceptance_bool = yes
 
+		country_allow_assimilation_violent_hostility_bool = yes
 		country_allow_assimilation_cultural_erasure_bool = yes
 		country_allow_assimilation_open_prejudice_bool = yes
 		country_allow_assimilation_second_rate_citizen_bool = yes
 		country_allow_assimilation_full_acceptance_bool = yes
 
-		country_wage_violent_hostility_mult = -0.2
-		country_wage_cultural_erasure_mult = -0.1
-		country_wage_open_prejudice_mult = -0.05
+		country_wage_violent_hostility_mult = -0.1
+		country_wage_cultural_erasure_mult = -0.05
 
 		country_disallow_military_work_violent_hostility_bool = no
  		country_disallow_military_work_cultural_erasure_bool = no
@@ -1207,7 +1207,6 @@ law_environment_protection_institute_two  = {
 	institution_modifier = {
 		state_urbanization_per_level_mult = 0.04
 		state_pollution_reduction_health_mult = -0.04
-		building_economy_of_scale_level_cap_add = -1
 		state_mortality_mult = -0.01
 		building_power_plant_throughput_add = -0.02
 	}
@@ -1269,9 +1268,8 @@ law_environment_protection_institute_three  = {
 	institution_modifier = {
 		state_urbanization_per_level_mult = 0.04
 		state_pollution_reduction_health_mult = -0.04
-		building_economy_of_scale_level_cap_add = -1
 		state_mortality_mult = -0.01
-		building_power_plant_throughput_add = -0.03
+		building_power_plant_throughput_add = -0.05
 	}
 
 
@@ -1591,12 +1589,15 @@ law_registration_process = {
 
 	modifier = {
 		country_migration_restrictiveness_add = 20
+		country_mass_migration_attraction_mult = -0.2
+		state_migration_pull_mult = -0.2
 		country_institution_cost_institution_migration_office_mult = -0.5
 	}
 	
 	institution = institution_migration_office
 	institution_modifier = {
 		country_mass_migration_attraction_mult = -0.2
+		state_migration_pull_mult = -0.1
 	}
 
 	ai_enact_weight_modifier = { #Petitions

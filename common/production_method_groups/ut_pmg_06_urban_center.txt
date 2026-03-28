@@ -12,14 +12,16 @@
 	}
 }
 
-# REPLACE:pmg_street_lighting = {
-# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-# 	production_methods = {
-# 		pm_no_street_lighting
-# 		pm_gas_streetlights
-# 		pm_electric_streetlights
-# 	}
-# }
+REPLACE:pmg_street_lighting = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_street_lighting
+		pm_gas_streetlights
+		pm_electric_streetlights
+		pm_ut_copper_streetlights
+		pm_ut_fiber_streetlights
+	}
+}
 
 # REPLACE:pmg_public_transport = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"

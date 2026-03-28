@@ -269,3 +269,73 @@ utopia_mod.4 = {
 		remove_variable = ut_private_construction_amend_lock
 	}
 }
+
+#Major Nuclear Power Plant Accident
+utopia_mod.5 = {
+	type = state_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	duration = 3
+
+	trigger = {
+		has_building = building_ut_nuclear_power_plant
+		any_scope_building = {
+			is_building_type = building_ut_nuclear_power_plant
+			is_under_construction = no
+			occupancy > 0.5
+		}
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	title = ut_private_construction_amend
+	desc = ut_private_construction_amend
+	flavor = ut_private_construction_amend_desc
+
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}
+
+#Minor Nuclear Power Plant Accident
+utopia_mod.6 = {
+	type = state_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	duration = 3
+
+	trigger = {
+		has_building = building_ut_nuclear_power_plant
+		any_scope_building = {
+			is_building_type = building_ut_nuclear_power_plant
+			is_under_construction = no
+			occupancy > 0.5
+		}
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	title = ut_nuclear_event
+	desc = ut_private_construction_amend
+	flavor = ut_private_construction_amend_desc
+
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}

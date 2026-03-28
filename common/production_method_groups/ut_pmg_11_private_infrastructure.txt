@@ -24,5 +24,6 @@ REPLACE:pmg_trade_quantity_trade_center = {
 		pm_trade_center_trade_quantity_high
 		pm_trade_center_trade_quantity_very_high
 		pm_trade_center_trade_quantity_utopia
+		pm_trade_center_trade_quantity_utopia_2
 	}
 }
