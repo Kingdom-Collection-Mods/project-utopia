@@ -9,19 +9,21 @@
 
 		localization_key = ut_progress_trend_max
 	}
+	
 
 	text = {
 		trigger = {
-			var:je_ut_new_dawn_core_progress < 30
+			var:je_ut_new_dawn_core_progress < 10
 			var:je_ut_new_dawn_core_progress_diff < 0
 		}
 
 		localization_key = ut_progress_trend_critical
 	}
-
+	
 	text = {
 		trigger = {
-			var:je_ut_new_dawn_core_progress_diff < -4 #probably some action happened like activating a milestone
+			#probably some action happened like activating a milestone
+			var:je_ut_new_dawn_core_progress_diff < -4
 		}
 		localization_key = ut_progress_trend_down_special
 	}
