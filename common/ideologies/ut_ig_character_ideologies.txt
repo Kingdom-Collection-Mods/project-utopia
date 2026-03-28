@@ -29,7 +29,7 @@
 	lawgroup_food_safety = {
 		law_no_food_safety_protection = strongly_disapprove
 		law_food_safety_protection_institute = neutral
-		law_food_safety_protection_institute_two = neutral		
+		law_food_safety_protection_institute_two = approve
 	}
 
 	country_trigger = {
@@ -45,9 +45,10 @@
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law = law_type:law_environment_protection_institute
-				has_law = law_type:law_environment_protection_institute_two
-				has_law = law_type:law_environment_protection_institute_three
+				OR = {
+					has_law = law_type:law_environment_protection_institute_two
+					has_law = law_type:law_environment_protection_institute_three
+				}
 			}
 		}
 		interest_group = {
@@ -57,13 +58,12 @@
 	
 	interest_group_leader_weight = {
 		value = 50
-		# very angry IG's more likely to turn to more radical measures
+		# very very angry IG's more likely to turn to more radical measures
 		if = {
 			limit = {
-				NOT = { is_interest_group_type = ig_devout } # can't be radical socialists
-				ig_approval <= -5
+				ig_approval <= -10
 			}
-			add = -75
+			add = -50
 		}
 		# more likely when issues are relevant
 		if = {
@@ -82,12 +82,8 @@
 		if = {
 			limit = {
 				owner = {
-					NOT = {
-						AND = {
-							has_law = law_type:law_environment_protection_institute
-							has_law = law_type:law_food_safety_protection_institute
-						}
-					}
+					has_law = law_type:law_no_environment_protection
+					has_law = law_type:law_no_food_safety_protection
 				}
 			}
 			add = 25
@@ -96,6 +92,10 @@
 			limit = {
 				owner = {
 					has_technology_researched = epa_two
+					OR = {
+						has_law = law_type:law_no_environment_protection
+						has_law = law_type:law_environment_protection_institute
+					}
 				}
 			}
 			add = 50
@@ -105,6 +105,11 @@
 			limit = {
 				owner = {
 					has_technology_researched = epa_three
+					OR = {
+						has_law = law_type:law_no_environment_protection
+						has_law = law_type:law_environment_protection_institute
+						has_law = law_type:law_environment_protection_institute_two
+					}
 				}
 			}
 			add = 50
@@ -114,6 +119,10 @@
 			limit = {
 				owner = {
 					has_technology_researched = food_standards_one
+					OR = {
+						has_law = law_type:law_no_environment_protection
+						has_law = law_type:law_environment_protection_institute
+					}
 				}
 			}
 			add = 50
@@ -139,12 +148,8 @@
 		if = {
 			limit = {
 				owner = {
-					NOT = {
-						AND = {
-							has_law = law_type:law_environment_protection_institute_three
-							has_law = law_type:law_food_safety_protection_institute_two
-						}
-					}
+					has_law = law_type:law_no_environment_protection
+					has_law = law_type:law_no_food_safety_protection
 				}
 			}
 			add = 25
