@@ -161,7 +161,13 @@ REPLACE:grant_leadership_to_agitator = {
 		}
 		OR = {
 			is_female = no
-			scope:actor ?= { has_law_or_variant = law_type:law_womens_suffrage }
+			scope:actor ?= {				
+				OR = {
+					has_law_or_variant = law_type:law_womens_suffrage
+					has_law_or_variant = law_type:law_equal_rights_for_women
+					has_law_or_variant = law_type:law_affirmative_equality
+				}
+			}
 		}
 		custom_tooltip = {
 			text = grant_leadership_must_be_pressured_ig
