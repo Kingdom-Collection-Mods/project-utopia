@@ -1,4 +1,4 @@
-
+﻿
 pm_precision_tools_heavy_machinery = {
 	texture = "gfx/interface/icons/production_method_icons/radios.dds"
 		
@@ -912,6 +912,7 @@ pm_ut_fiber_streetlights = {
 		workforce_scaled = {
 			goods_input_electricity_add = 6
 			goods_input_rare_earths_add = 1
+			goods_input_iron_add = 1
 			goods_output_services_add = 20
 			goods_output_internet_add = 50
 		}
