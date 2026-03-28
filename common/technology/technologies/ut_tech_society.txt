@@ -752,13 +752,14 @@ online_forums = {
 		
 
 	on_researched = {
-		custom_tooltip = online_forums_tt
+		#custom_tooltip = online_forums_tt #replaced by country_new_dawn_fund_opposition_efficiency_mult
 	}
 
 	modifier = {
 		state_pop_pol_str_mult = 0.05
 		country_service_workers_pol_str_mult = 0.05
 		interest_group_ig_urbanists_pol_str_mult = 0.1
+		country_new_dawn_fund_opposition_efficiency_mult = 0.25
 	}
 
 	unlocking_technologies = {
@@ -778,13 +779,14 @@ social_media = {
 
 	on_researched = {
 		custom_tooltip = ut_movement_rationalists_unlock_tt
-		custom_tooltip = social_media_tt
+		#custom_tooltip = social_media_tt #replaced by country_new_dawn_fund_opposition_efficiency_mult
 	}
 
 	modifier = {
 		state_pop_pol_str_mult = 0.05
 		country_service_workers_pol_str_mult = 0.05
 		interest_group_ig_urbanists_pol_str_mult = 0.1
+		country_new_dawn_fund_opposition_efficiency_mult = 0.25
 	}
 
 	unlocking_technologies = {
