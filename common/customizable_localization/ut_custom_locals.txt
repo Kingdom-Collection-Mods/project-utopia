@@ -4,7 +4,8 @@
 
 	text = {
 		trigger = {
-			var:je_ut_new_dawn_core_progress > 99
+			var:je_ut_new_dawn_core_progress >= 100
+			var:je_ut_new_dawn_core_progress_diff >= 0
 		}
 
 		localization_key = ut_progress_trend_max

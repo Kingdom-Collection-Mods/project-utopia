@@ -295,7 +295,7 @@
  ut_new_dawn_communist_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_communist!"
  ut_new_dawn_democratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_democrat!"
  ut_new_dawn_autocratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] @ut_nd_autocrat!"
- ut_new_dawn_no_core_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.GetCustom('ut_new_dawn_phase_1_trend')]"
+ ut_new_dawn_no_core_list_entry: "[THIS.GetCountry.GetName] is trending towards [THIS.GetCountry.GetCustom('ut_new_dawn_phase_1_trend')]"
  ut_phase_1_trend_democrat: "tendiert zu  $concept_ut_nd_democrat_core$ (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_democrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
  ut_phase_1_trend_autocrat: "tendiert zu $concept_ut_nd_autocrat_core$ (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_autocrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
  ut_phase_1_trend_fascist: "tendiert zu  $concept_ut_nd_fascist_core$ (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
@@ -314,7 +314,7 @@
  ut_progress_trend_down3: "#tooltip:[ROOT.GetCountry.GetTooltipTag],ut_progress_trend_tooltip @profitability2!#!"
  ut_progress_trend_down4: "#tooltip:[ROOT.GetCountry.GetTooltipTag],ut_progress_trend_tooltip @profitability1!#!"
  ut_progress_trend_down_special: "#tooltip:[ROOT.GetCountry.GetTooltipTag],ut_progress_trend_tooltip @profitability1!@arrow_down_down!#!"
- ut_progress_trend_tooltip: "[Country.GetNameNoFormatting] [concept_ut_nd_progress_points] changed by #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress_diff').GetValue|2]#! last month (#v [Country.MakeScope.Var('je_ut_new_dawn_core_progress_diff_yearly').GetValue|2]#! last year)"
+ ut_progress_trend_tooltip: "[Country.GetNameNoFormatting]'s [concept_ut_nd_progress_points] changed by #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress_diff').GetValue|2]#! last month (#v [Country.MakeScope.Var('je_ut_new_dawn_core_progress_diff_yearly').GetValue|2]#! last year)"
 
  ut_new_dawn_ideology_status_no_new_dawn: "Keine"
  ut_new_dawn_ideology_status_pre_new_dawn: "Viktorianisches Zeitalter"
@@ -906,7 +906,7 @@
  ut_new_dawn_propaganda_source_abort_tt: "Abort the ongoing propaganda campaign."
  ut_new_dawn_propaganda_target_defend: "Defend Against Propaganda"
  ut_new_dawn_propaganda_target_defend_desc: ""
- ut_new_dawn_propaganda_target_defend_tt: "The country behind the propaganda campaign must spend 10 [concept_ut_nd_progress_points] or abort the campaign."
+ ut_new_dawn_propaganda_target_defend_tt: "[ROOT.GetCountry.GetName] - the country behind the propaganda campaign must spend 10 [concept_ut_nd_progress_points] or abort the campaign."
  ut_new_dawn_propaganda_target_defend_cooldown_tt: "Can only be used once per month."
 
  ut_propaganda_communist_mod: "Communist Propaganda"
@@ -1615,6 +1615,8 @@
  pm_elastics_two: "Nylonstoffe"
  pm_precision_tools_heavy_machinery: "CNC-Maschinen"
  pm_pre_baked_dough_pieces: "Teigrohlinge"
+
+ pm_automated_bakery_software: "Automatisierte Bäckerei Software"
 
  pm_ut_modern_tank_production: "Schwere Panzerproduktion"
  pm_ut_modern_tank_production_2: "Moderne Panzerproduktion"
