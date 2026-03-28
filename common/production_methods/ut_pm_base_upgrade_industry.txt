@@ -770,7 +770,7 @@ pm_shopping_district = {
 			goods_input_heavy_machinery_add = 1
 			goods_input_computers_add = 1
 			goods_input_electricity_add = 2
-			goods_output_services_add = 100
+			goods_output_services_add = 105
 		}
 
 		level_scaled = {
@@ -795,10 +795,10 @@ pm_online_shopping = {
 			goods_input_glass_add = 3
 			goods_input_steel_add = 2
 			goods_input_heavy_machinery_add = 1
-			goods_input_computers_add = 1
+			goods_input_computers_add = 2
 			goods_input_software_add = 2
 			goods_input_electricity_add = 4
-			goods_output_services_add = 120
+			goods_output_services_add = 130
 		}
 
 		level_scaled = {
@@ -812,7 +812,7 @@ pm_online_shopping = {
 }
 
 pm_ut_coper_streetlights = {
-	texture = "gfx/interface/icons/production_method_icons/electric_streetlights.dds"
+	texture = "gfx/interface/icons/production_method_icons/smoothbores.dds"
 
 	city_lights_color_index = 2	# Needs to match city_graphics_data.settings color array
 
@@ -844,8 +844,8 @@ pm_ut_coper_streetlights = {
 }
 
 
-pm_ut_coper_streetlights = {
-	texture = "gfx/interface/icons/production_method_icons/electric_streetlights.dds"
+pm_ut_fiber_streetlights = {
+	texture = "gfx/interface/icons/production_method_icons/telephone_switchboards.dds"
 
 	city_lights_color_index = 2	# Needs to match city_graphics_data.settings color array
 
@@ -858,7 +858,7 @@ pm_ut_coper_streetlights = {
 			goods_input_electricity_add = 6
 			goods_input_rare_earths_add = 1
 			goods_output_services_add = 20
-			goods_output_internet_add = 40
+			goods_output_internet_add = 50
 		}
 
 		level_scaled = {
