@@ -183,7 +183,7 @@ ut_new_dawn_ideology_status = {
 			has_modifier = ut_new_dawn_core_fascist_mod
 		}
 
-		localization_key = concept_ut_nd_fascist_core
+		localization_key = ut_new_dawn_ideology_status_fascist
 	}
 
 	
@@ -192,7 +192,7 @@ ut_new_dawn_ideology_status = {
 			has_modifier = ut_new_dawn_core_autocratic_mod
 		}
 
-		localization_key = concept_ut_nd_autocrat_core
+		localization_key = ut_new_dawn_ideology_status_autocratic
 	}
 
 	text = {
@@ -200,7 +200,7 @@ ut_new_dawn_ideology_status = {
 			has_modifier = ut_new_dawn_core_democratic_mod
 		}
 
-		localization_key = concept_ut_nd_democrat_core
+		localization_key = ut_new_dawn_ideology_status_democratic
 	}
 
 	text = {
@@ -208,7 +208,7 @@ ut_new_dawn_ideology_status = {
 			has_modifier = ut_new_dawn_core_communist_mod
 		}
 
-		localization_key = concept_ut_nd_communist_core
+		localization_key = ut_new_dawn_ideology_status_communist
 	}
 
 	text = {
