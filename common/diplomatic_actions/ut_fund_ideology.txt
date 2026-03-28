@@ -1,4 +1,4 @@
-﻿#copied from fund lobbies
+#copied from fund lobbies
 ut_fund_ideology = {
 	groups= {
 		general
@@ -104,6 +104,23 @@ ut_fund_ideology = {
 					has_modifier = ut_new_dawn_core_autocratic_mod
 				}
 				scope:target_country = {
+					if = {
+						limit = {
+							NOT = {
+								has_modifier = ut_new_dawn_focus_recently_changed
+							}
+						}
+						
+						hidden_effect = {
+							remove_modifier = je_ut_new_dawn_autocrat_focus
+							remove_modifier = je_ut_new_dawn_democrat_focus
+							remove_modifier = je_ut_new_dawn_communist_focus
+							remove_modifier = je_ut_new_dawn_fascist_focus
+						}
+						add_modifier = {
+							name = je_ut_new_dawn_autocrat_focus
+						}
+					}
 					je:je_ut_new_dawn = {
 						add_progress = {
 							name = ut_new_dawn_autocrat_bar
@@ -117,6 +134,23 @@ ut_fund_ideology = {
 					has_modifier = ut_new_dawn_core_democratic_mod
 				}
 				scope:target_country = {
+					if = {
+						limit = {
+							NOT = {
+								has_modifier = ut_new_dawn_focus_recently_changed
+							}
+						}
+						
+						hidden_effect = {
+							remove_modifier = je_ut_new_dawn_autocrat_focus
+							remove_modifier = je_ut_new_dawn_democrat_focus
+							remove_modifier = je_ut_new_dawn_communist_focus
+							remove_modifier = je_ut_new_dawn_fascist_focus
+						}
+						add_modifier = {
+							name = je_ut_new_dawn_democrat_focus
+						}
+					}
 					je:je_ut_new_dawn = {
 						add_progress = {
 							name = ut_new_dawn_democrat_bar
@@ -130,6 +164,23 @@ ut_fund_ideology = {
 					has_modifier = ut_new_dawn_core_fascist_mod
 				}
 				scope:target_country = {
+					if = {
+						limit = {
+							NOT = {
+								has_modifier = ut_new_dawn_focus_recently_changed
+							}
+						}
+						
+						hidden_effect = {
+							remove_modifier = je_ut_new_dawn_autocrat_focus
+							remove_modifier = je_ut_new_dawn_democrat_focus
+							remove_modifier = je_ut_new_dawn_communist_focus
+							remove_modifier = je_ut_new_dawn_fascist_focus
+						}
+						add_modifier = {
+							name = je_ut_new_dawn_fascist_focus
+						}
+					}
 					je:je_ut_new_dawn = {
 						add_progress = {
 							name = ut_new_dawn_fascist_bar
@@ -143,10 +194,27 @@ ut_fund_ideology = {
 					has_modifier = ut_new_dawn_core_communist_mod
 				}
 				scope:target_country = {
+					if = {
+						limit = {
+							NOT = {
+								has_modifier = ut_new_dawn_focus_recently_changed
+							}
+						}
+						
+						hidden_effect = {
+							remove_modifier = je_ut_new_dawn_autocrat_focus
+							remove_modifier = je_ut_new_dawn_democrat_focus
+							remove_modifier = je_ut_new_dawn_communist_focus
+							remove_modifier = je_ut_new_dawn_fascist_focus
+						}
+						add_modifier = {
+							name = je_ut_new_dawn_communist_focus
+						}
+					}
 					je:je_ut_new_dawn = {
 						add_progress = {
 							name = ut_new_dawn_communist_bar
-							value = 0.25
+							value = 0.35
 						}
 					}
 				}
