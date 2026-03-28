@@ -1,4 +1,4 @@
-###Heavy Industry
+﻿###Heavy Industry
 ##Heavy Machinery
 pm_heavy_machinery_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/airship_mooring_post.dds"
@@ -1169,11 +1169,13 @@ pm_hi_automated_admin = {
 		workforce_scaled = {
 			goods_input_computers_add = 5
 			goods_input_internet_add = 5
+			goods_input_software_add = 5
 		}
 
 		level_scaled = {
 			building_employment_clerks_add = 500
 			building_employment_service_workers_add = 500
+			building_employment_machinists_add = -250
 		}
 	}	
 }
