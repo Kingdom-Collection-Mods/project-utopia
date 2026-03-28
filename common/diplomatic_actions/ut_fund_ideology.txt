@@ -1,4 +1,4 @@
-#copied from fund lobbies
+﻿#copied from fund lobbies
 ut_fund_ideology = {
 	groups= {
 		general
@@ -40,7 +40,7 @@ ut_fund_ideology = {
 			interest_group_pop_attraction_mult = -0.1
 		}
 
-		income_transfer = 0.20
+		income_transfer = 0.30
 		max_paying_country_income_to_transfer = 0.10
 		second_country_gets_income_transfer = yes
 		income_transfer_based_on_second_country = yes
