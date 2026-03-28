@@ -493,8 +493,8 @@ pm_truck_production = {
 			goods_input_steel_add = 2
 
 			# output goods
-			goods_output_automobiles_add = -10
-			goods_output_trucks_add = 20
+			goods_output_automobiles_add = -20
+			goods_output_trucks_add = 30
 		}
 
 		level_scaled = {
