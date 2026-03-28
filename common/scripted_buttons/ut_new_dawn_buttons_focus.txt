@@ -1,0 +1,440 @@
+﻿#Base
+ut_new_dawn_fascist_focus = {
+	name = "ut_new_dawn_fascist_focus"
+	desc = "ut_new_dawn_fascist_focus_desc"
+
+	visible = {
+		ut_new_dawn_has_core_trigger = no
+	}
+
+	possible = {
+		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
+		custom_tooltip = {
+			text = ut_new_dawn_focus_freeze_tt
+			NOT = { has_variable = ut_new_dawn_bar_freeze }
+		}
+		# custom_tooltip = {
+		# 	text = ut_new_dawn_focus_already_selected_tt
+		# 	NOT = { has_modifier = je_ut_new_dawn_fascist_focus }
+		# }
+	}
+
+	effect = {	
+		hidden_effect = {
+			remove_modifier = je_ut_new_dawn_autocrat_focus
+			remove_modifier = je_ut_new_dawn_democrat_focus
+			remove_modifier = je_ut_new_dawn_communist_focus
+			remove_modifier = je_ut_new_dawn_fascist_focus
+		}
+		add_modifier = {
+			name = je_ut_new_dawn_fascist_focus
+		}
+		custom_tooltip = ut_new_dawn_focus_tt 		
+		add_modifier = {
+			name = ut_new_dawn_focus_recently_changed
+			days = normal_modifier_time
+		}
+	}
+	#1000 always
+	#10 very likely
+	#5 likely
+	#2 if no other reasons
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				has_modifier = je_ut_new_dawn_fascist_focus
+			}
+			add = 100
+		}
+		if = {
+			limit = {
+				OR = {
+					c:GER ?= this
+					c:ITA ?= this
+				}
+			}
+			add = 40
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_ethnostate
+			}
+			add = 40
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_national_supremacy
+					has_law = law_type:law_racial_segregation
+				}
+			}
+			add = 10
+		}
+		if = {
+			limit = {
+				ruler = {
+					ut_ideology_new_dawn_fascist_trigger = yes
+				}
+			}
+			add = 40
+		}
+		if = {
+			#Historically Germany, Italy, and Japan below in "ranking"?
+			limit = {
+				global_country_ranking <= 5
+				country_rank >= rank_value:great_power
+			}
+			add = 10
+		}
+		if = {
+			#Red scare if not socialist them self?
+			limit = {
+				NOT = { has_law = law_type:law_multicultural }
+				NOT = { has_law = law_type:law_cooperative_ownership }
+				NOT = { has_law = law_type:law_command_economy }
+				any_rival_country = {
+					OR = {
+						has_modifier = je_ut_new_dawn_communist_focus
+						has_variable = ut_new_dawn_core_communist_var
+					}
+				}
+			}
+			add = 20
+		}
+		if = {
+			#Red scare if not socialist them self?
+			limit = {
+				NOT = { has_law = law_type:law_multicultural }
+				NOT = { has_law = law_type:law_cooperative_ownership }
+				NOT = { has_law = law_type:law_command_economy }
+				any_rival_country = {
+					OR = {
+						has_modifier = je_ut_new_dawn_democrat_focus
+						has_variable = ut_new_dawn_core_democrat_var
+					}
+				}
+			}
+			add = 10
+		}
+	}
+}
+
+ut_new_dawn_autocrat_focus = {
+	name = "ut_new_dawn_autocrat_focus"
+	desc = "ut_new_dawn_autocrat_focus_desc"
+
+	visible = { 
+		ut_new_dawn_has_core_trigger = no
+	}
+
+	possible = {
+		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
+		custom_tooltip = {
+			text = ut_new_dawn_focus_freeze_tt
+			NOT = { has_variable = ut_new_dawn_bar_freeze }
+		}
+		# custom_tooltip = {
+		# 	text = ut_new_dawn_focus_already_selected_tt
+		# 	NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }
+		# }
+	}
+
+	effect = {
+		hidden_effect = {
+			remove_modifier = je_ut_new_dawn_fascist_focus
+			remove_modifier = je_ut_new_dawn_democrat_focus
+			remove_modifier = je_ut_new_dawn_communist_focus
+			remove_modifier = je_ut_new_dawn_autocrat_focus
+		}
+		add_modifier = {
+			name = je_ut_new_dawn_autocrat_focus
+		}
+		custom_tooltip = ut_new_dawn_focus_tt 		
+		add_modifier = {
+			name = ut_new_dawn_focus_recently_changed
+			days = normal_modifier_time
+		}
+	}
+	ai_chance = {
+		value = 0
+		
+		if = {
+			limit = {
+				has_modifier = je_ut_new_dawn_autocrat_focus
+			}
+			add = 100
+		}
+		if = {
+			limit = {
+				OR = {
+					c:AUS ?= this
+				}
+			}
+			add = 40
+		}
+		if = {
+			#let's stay in power, if nothing else to bother
+			limit = {
+				NOT = { has_law = law_type:law_census_voting }
+				NOT = { has_law = law_type:law_universal_suffrage }
+				OR = {
+					has_law = law_type:law_monarchy
+					has_law = law_type:law_corporate_state
+				}
+				OR = {
+					has_law = law_type:law_autocracy
+					has_law = law_type:law_oligarchy
+				}
+			}
+			add = 40
+		}
+		if = {
+			limit = {
+				ruler = {
+					ut_ideology_new_dawn_autocrat_trigger = yes
+				}
+			}
+			add = 20
+		}
+		if = {
+			limit = {
+				has_variable = je_ut_new_dawn_first_started
+			}
+			multiply = 0
+		}
+	}
+
+}
+
+ut_new_dawn_democrat_focus = {
+	name = "ut_new_dawn_democrat_focus"
+	desc = "ut_new_dawn_democrat_focus_desc"
+
+	visible = { 
+		ut_new_dawn_has_core_trigger = no
+	}
+
+	possible = {
+		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
+		custom_tooltip = {
+			text = ut_new_dawn_focus_freeze_tt
+			NOT = { has_variable = ut_new_dawn_bar_freeze }
+		}
+		# custom_tooltip = {
+		# 	text = ut_new_dawn_focus_already_selected_tt
+		# 	NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
+		# }
+	}
+
+	effect = {
+		hidden_effect = {
+			remove_modifier = je_ut_new_dawn_democrat_focus
+			remove_modifier = je_ut_new_dawn_fascist_focus
+			remove_modifier = je_ut_new_dawn_autocrat_focus
+			remove_modifier = je_ut_new_dawn_communist_focus
+		}
+		add_modifier = {
+			name = je_ut_new_dawn_democrat_focus
+		}
+		custom_tooltip = ut_new_dawn_focus_tt 		
+		add_modifier = {
+			name = ut_new_dawn_focus_recently_changed
+			days = normal_modifier_time
+		}	
+	}
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				has_modifier = je_ut_new_dawn_democrat_focus
+			}
+			add = 100
+		}
+		if = {
+			limit = {
+				c:USA ?= this
+				NOT = { exists = c:CSA }
+			}
+			add = 40
+		}
+		if = {
+			limit = {
+				c:GBR ?= this
+				exists = c:GER
+			}
+			add = 20
+		}
+		if = {
+			limit = {
+				c:GBR ?= this
+			}
+			add = 20
+		}
+		if = {
+			#Historically USA and Great Britain high "ranking"?
+			limit = {
+				global_country_ranking > 5
+			}
+			add = 20
+		}
+		if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_universal_suffrage
+					has_law = law_type:law_census_voting
+				}
+			}
+			add = 40
+		}
+		if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_landed_voting
+					has_law = law_type:law_wealth_voting
+				}
+				OR = {
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
+				}
+			}
+			add = 10
+		}
+		if = {
+			limit = {
+				ruler = {
+					ut_ideology_new_dawn_democrat_trigger = yes
+				}
+			}
+			add = 20
+		}
+		if = {
+			#Fascist scare if democratic them self?
+			limit = {
+				OR = {
+					has_law = law_type:law_census_voting
+					has_law = law_type:law_universal_suffrage
+					has_law = law_type:law_protected_speech
+				}
+				any_rival_country = {
+					OR = {
+						has_modifier = je_ut_new_dawn_fascist_focus
+						has_variable = ut_new_dawn_core_fascist_var
+					}
+				}
+			}
+			add = 20
+		}
+		
+		if = {
+			#autocrat scare if democratic them self?
+			limit = {
+				OR = {
+					has_law = law_type:law_census_voting
+					has_law = law_type:law_universal_suffrage
+					has_law = law_type:law_protected_speech
+				}
+				any_rival_country = {
+					OR = {
+						has_modifier = je_ut_new_dawn_autocrat_focus
+						has_variable = ut_new_dawn_core_autocrat_var
+					}
+				}
+			}
+			add = 10
+		}
+	}
+}
+
+ut_new_dawn_communist_focus = {
+	name = "ut_new_dawn_communist_focus"
+	desc = "ut_new_dawn_communist_focus_desc"
+
+	visible = { 
+		ut_new_dawn_has_core_trigger = no
+	}
+
+	possible = {
+		NOT = { has_modifier = ut_new_dawn_focus_recently_changed }
+		NOT = { 
+			custom_tooltip = {
+				text = ut_new_dawn_focus_freeze_tt
+				has_variable = ut_new_dawn_bar_freeze
+			}
+		}
+		# custom_tooltip = {
+		# 	text = ut_new_dawn_focus_already_selected_tt
+		# 	NOT = { has_modifier = je_ut_new_dawn_communist_focus }
+		# }
+	}
+
+	effect = {		
+		hidden_effect = {
+			remove_modifier = je_ut_new_dawn_fascist_focus
+			remove_modifier = je_ut_new_dawn_autocrat_focus
+			remove_modifier = je_ut_new_dawn_democrat_focus
+			remove_modifier = je_ut_new_dawn_communist_focus
+		}
+		add_modifier = {
+			name = je_ut_new_dawn_communist_focus
+		}
+		custom_tooltip = ut_new_dawn_focus_tt
+		add_modifier = {
+			name = ut_new_dawn_focus_recently_changed
+			days = normal_modifier_time
+		}
+	}
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				has_modifier = je_ut_new_dawn_communist_focus
+			}
+			add = 100
+		}
+		if = {
+			limit = {
+				c:RUS ?= this
+			}
+			add = 40
+		}
+		if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+			add = 40
+		}
+		
+		if = {
+			#Fascist scare if communist them self?
+			limit = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+					has_law = law_type:law_right_to_associate
+				}
+				any_rival_country = {
+					OR = {
+						has_modifier = je_ut_new_dawn_fascist_focus
+						has_variable = ut_new_dawn_core_fascist_var
+					}
+				}
+			}
+			add = 20
+		}
+		if = {
+			limit = {
+				ruler = {
+					ut_ideology_new_dawn_communist_trigger = yes
+				}
+			}
+			add = 40
+		}
+	}
+}
+
+

@@ -1,0 +1,265 @@
+#Fascist Buttons
+je_ut_new_dawn_outlaw_communists = {
+	name = "je_ut_new_dawn_outlaw_communists"
+	desc = "je_ut_new_dawn_outlaw_communists_desc"
+
+	visible = {
+		NOT = {
+			has_variable = je_ut_new_dawn_outlaw_communists_done
+		}
+	}
+
+	possible = {
+		always = no #disabled
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_fascist = { 
+				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		has_law = law_type:law_single_party_state
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_fascist = {
+				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
+			}
+		}
+		set_variable = {
+			name = je_ut_new_dawn_outlaw_communists_done
+		}
+	}
+}
+
+
+je_ut_new_dawn_form_paramilitary_groups = {
+	name = "je_ut_new_dawn_form_paramilitary_groups"
+	desc = "je_ut_new_dawn_form_paramilitary_groups_desc"
+
+	visible = {
+		NOT = {
+			has_variable = je_ut_new_dawn_form_paramilitary_groups_done
+		}
+	}
+
+	possible = {
+		always = no #disabled
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_fascist = { 
+				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		OR = {
+			has_law = law_type:law_secret_police
+			has_law = law_type:law_national_guard
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_fascist = {
+				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
+			}
+		}
+		set_variable = {
+			name = je_ut_new_dawn_form_paramilitary_groups_done
+		}
+	}
+}
+
+
+je_ut_new_dawn_conformity = {
+	name = "je_ut_new_dawn_conformity"
+	desc = "je_ut_new_dawn_conformity_desc"
+
+	visible = {
+		NOT = {
+			has_variable = je_ut_new_dawn_conformity_done
+		}
+	}
+
+	possible = {
+		always = no #disabled
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_fascist = { 
+				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		OR = {
+			has_law = law_type:law_corporate_state
+			has_law = law_type:ut_law_monarchy_corporate_state
+		}
+		#later corporate nazi state or smth
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_fascist = {
+				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
+			}
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology:ideology_patriotic
+					has_ideology = ideology:ideology_patriotic_democratic
+					has_ideology = ideology:ideology_patriotic_fascist
+				}
+			}
+			remove_ideology = ideology_patriotic
+			hidden_effect = {
+				remove_ideology = ideology_patriotic_democratic
+				remove_ideology = ideology_patriotic_fascist
+			}
+			add_ideology = ideology_patriotic_fascist
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology:ideology_laissez_faire
+					has_ideology = ideology:ut_ideology_laissez_faire
+					has_ideology = ideology:ut_ideology_laissez_faire_democratic
+					has_ideology = ideology:ut_ideology_laissez_faire_democratic_neoliberal
+				}
+			}
+			remove_ideology = ut_ideology_laissez_faire
+			hidden_effect = {
+				remove_ideology = ideology_laissez_faire
+				remove_ideology = ut_ideology_laissez_faire_democratic
+				remove_ideology = ut_ideology_laissez_faire_democratic_neoliberal
+			}
+			add_ideology = ut_ideology_laissez_faire_authoritarian
+		}
+		set_variable = {
+			name = je_ut_new_dawn_conformity_done
+		}
+	}
+}
+
+je_ut_new_dawn_unite_heritage = {
+	name = "je_ut_new_dawn_unite_heritage"
+	desc = "je_ut_new_dawn_unite_heritage_desc"
+
+	visible = {
+		NOT = {
+			has_variable = je_ut_new_dawn_unite_heritage_done
+		}
+	}
+
+	possible = {
+		always = no #disabled
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_fascist = { 
+				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		custom_tooltip = {
+			text = je_ut_new_dawn_unite_heritage_trigger_tt
+			NOT = {
+				any_state = {
+					is_homeland_of_country_cultures = c:SWE
+					NOT = { owner = root }
+				}
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_fascist = {
+				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
+			}
+		}
+		set_variable = {
+			name = je_ut_new_dawn_unite_heritage_done
+		}
+	}
+}
+
+je_ut_new_dawn_volksgemeinschaft = {
+	name = "je_ut_new_dawn_volksgemeinschaft"
+	desc = "je_ut_new_dawn_volksgemeinschaft_desc"
+
+	visible = {
+		NOT = {
+			has_variable = je_ut_new_dawn_volksgemeinschaft_done
+		}
+	}
+
+	possible = {
+		always = no #disabled
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_fascist = { 
+				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		
+		OR = {
+			has_law = law_type:law_ethnostate
+			has_law = law_type:law_neo_ethno_state
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_fascist = {
+				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
+			}
+		}
+		set_variable = {
+			name = je_ut_new_dawn_volksgemeinschaft_done
+		}
+	}
+}
+
+je_ut_new_dawn_expansionism = {
+	name = "je_ut_new_dawn_expansionism"
+	desc = "je_ut_new_dawn_expansionism_desc"
+
+	visible = {
+		NOT = {
+			has_variable = je_ut_new_dawn_expansionism_done
+		}
+	}
+
+	possible = {
+		always = no #disabled
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_fascist = { 
+				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		NOT = {
+			any_country = {
+				OR = {
+					NOT = { this = root }
+					NOT = { is_subject_of = root }
+				}
+				has_strategic_adjacency = root
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_fascist = {
+				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
+			}
+		}
+		set_variable = {
+			name = je_ut_new_dawn_expansionism_done
+		}
+	}
+}

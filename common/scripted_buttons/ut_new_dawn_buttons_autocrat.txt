@@ -1,0 +1,171 @@
+#Autocratic Buttons
+
+je_ut_new_dawn_emergency_powers = {
+	name = "je_ut_new_dawn_emergency_powers"
+	desc = "je_ut_new_dawn_emergency_powers_desc"
+
+	possible = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_autocratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		NOT = { has_modifier = je_ut_new_dawn_emergency_powers_mod }
+	}
+
+	effect = {
+		add_modifier = {
+			name = je_ut_new_dawn_emergency_powers_mod
+			days = normal_modifier_time
+		}
+		add_radicals = {
+			value = 0.01
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_progress_neg_25
+			je:je_ut_new_dawn_autocratic = {
+				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
+			}
+		}
+	}
+	#ai always
+	ai_chance = {
+		value = 2
+	}
+}
+
+je_ut_new_dawn_strengthen_power = {
+	name = "je_ut_new_dawn_strengthen_power"
+	desc = "je_ut_new_dawn_strengthen_power_desc"
+
+	possible = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_autocratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		NOT = { has_modifier = je_ut_new_dawn_strengthen_power_mod }
+	}
+
+	effect = {
+		add_modifier = {
+			name = je_ut_new_dawn_strengthen_power_mod
+			days = long_modifier_time
+		}
+		add_radicals = {
+			value = 0.01
+		}
+		
+		custom_tooltip = {
+			text = ut_add_new_dawn_progress_neg_25
+			je:je_ut_new_dawn_autocratic = {
+				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
+			}
+		}
+	}
+	#ai always
+	ai_chance = {
+		value = 2
+	}
+}
+
+je_ut_new_dawn_border_dispute = {
+	name = "je_ut_new_dawn_border_dispute"
+	desc = "je_ut_new_dawn_border_dispute_desc"
+
+	possible = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_autocratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		NOT = { has_modifier = je_ut_new_dawn_border_dispute_mod }
+	}
+
+	effect = {
+		add_modifier = {
+			name = je_ut_new_dawn_border_dispute_mod
+			days = normal_modifier_time
+		}
+		add_radicals = {
+			value = 0.01
+		}
+		
+		custom_tooltip = {
+			text = ut_add_new_dawn_progress_neg_25
+			je:je_ut_new_dawn_autocratic = {
+				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
+			}
+		}
+	}
+	#ai only do if low infamy
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				infamy < 5 
+			}
+			add = 5
+		}
+	}
+}
+
+je_ut_new_dawn_suppress_dissidents = {
+	name = "je_ut_new_dawn_suppress_dissidents"
+	desc = "je_ut_new_dawn_suppress_dissidents_desc"
+
+	possible = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_autocratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+	}
+
+	effect = {
+		add_modifier = {
+			name = je_ut_new_dawn_suppress_dissidents_mod
+			days = normal_modifier_time
+		}
+		add_radicals = {
+			value = 0.01
+		}
+		
+		trigger_event = {
+			id = event_new_dawn.30
+			popup = yes
+		}
+		custom_tooltip = {
+			text = event_new_dawn.30_tt
+		}
+
+		custom_tooltip = {
+			text = ut_add_new_dawn_progress_neg_25
+			je:je_ut_new_dawn_autocratic = {
+				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				government_legitimacy < 0.5
+			}
+			add = 5
+		}
+		if = {
+			limit = {
+				radical_fraction = {
+					value >= 0.2
+				}
+			}
+			add = 5
+		}
+	}
+}
