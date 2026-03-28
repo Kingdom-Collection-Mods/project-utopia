@@ -31,13 +31,14 @@ REPLACE:pmg_distillery = {
 	}
 }
 
-# REPLACE:pmg_automation_building_food_industry = {
-# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
-# 	production_methods = {
-# 		pm_manual_dough_processing
-# 		pm_automated_bakery
-# 	}
-# }
+REPLACE:pmg_automation_building_food_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_manual_dough_processing
+		pm_automated_bakery
+		pm_automated_bakery_softwar
+	}
+}
 
 REPLACE:pmg_base_building_textile_mill = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
@@ -144,13 +145,14 @@ REPLACE:pmg_base_building_glassworks = {
 # 	}
 # }
 
-# REPLACE:pmg_glassblowing = {
-# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
-# 	production_methods = {
-# 		pm_manual_glassblowing
-# 		pm_automatic_bottle_blowers
-# 	}
-# }
+REPLACE:pmg_glassblowing = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_manual_glassblowing
+		pm_automatic_bottle_blowers
+		pm_automatic_bottle_blowers_software
+	}
+}
 
 # REPLACE:pmg_base_building_paper_mill = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
