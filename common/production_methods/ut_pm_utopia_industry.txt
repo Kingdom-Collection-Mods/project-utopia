@@ -1,4 +1,4 @@
-﻿###Heavy Industry
+###Heavy Industry
 ##Heavy Machinery
 pm_heavy_machinery_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/airship_mooring_post.dds"
@@ -677,7 +677,7 @@ pm_computers_integrated_chips_process  = {
 			goods_input_plastic_add = 10
 			goods_input_explosives_add = 10
 			goods_input_electronics_add = 50
-			goods_input_software_add = 5
+			goods_input_software_add = 10
 			
 			# output goods
 			goods_output_computers_add = 110
@@ -713,8 +713,8 @@ pm_computers_micro_chips_process  = {
 			goods_input_electricity_add = 30
 			goods_input_plastic_add = 15
 			goods_input_explosives_add = 10
-			goods_input_electronics_add = 100
-			goods_input_rare_earths_add = 20
+			goods_input_electronics_add = 70
+			goods_input_rare_earths_add = 30
 			goods_input_software_add = 30
 
 			
