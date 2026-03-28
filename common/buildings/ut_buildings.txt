@@ -530,7 +530,7 @@ building_renewable_power_plant = {
 		pmg_renewable_power_plant_hydro
 	}
 
-	required_construction = construction_cost_high
+	required_construction = construction_cost_modern_heavy_industry
 
 	ai_value = {
 		value = 1000
@@ -595,7 +595,7 @@ building_offshore_wind_farm = {
 		pmg_offshore_power_plant_wind
 	}
 
-	required_construction = construction_cost_modern_industry
+	required_construction = construction_cost_modern_heavy_industry
 
 	potential = {
 		is_coastal = yes

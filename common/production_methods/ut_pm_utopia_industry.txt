@@ -1765,15 +1765,15 @@ ut_pm_low_wind_power_plant = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 10 # 600
-			goods_input_heavy_machinery_add = 1
-			goods_output_high_voltage_electricity_add = 50 # 2400
+			goods_input_engines_add = 50 # 600
+			goods_input_heavy_machinery_add = 5
+			goods_output_high_voltage_electricity_add = 250 # 2400
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 100
-			building_employment_machinists_add = 600
-			building_employment_engineers_add = 300
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 3000
+			building_employment_engineers_add = 1500
 		}
 	}
 }
@@ -1793,15 +1793,15 @@ ut_pm_medium_wind_power_plant = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 10 # 600
-			goods_input_heavy_machinery_add = 1
-			goods_output_high_voltage_electricity_add = 80 # 2400
+			goods_input_engines_add = 50 # 600
+			goods_input_heavy_machinery_add = 5
+			goods_output_high_voltage_electricity_add = 500 # 2400
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 100
-			building_employment_machinists_add = 600
-			building_employment_engineers_add = 300
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 3000
+			building_employment_engineers_add = 1500
 		}
 	}
 }
@@ -1821,15 +1821,15 @@ ut_pm_high_wind_power_plant = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 10 # 600
-			goods_input_heavy_machinery_add = 1
-			goods_output_high_voltage_electricity_add = 100 # 2400
+			goods_input_engines_add = 50 # 600
+			goods_input_heavy_machinery_add = 5
+			goods_output_high_voltage_electricity_add = 750 # 2400
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 100
-			building_employment_machinists_add = 600
-			building_employment_engineers_add = 300
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 3000
+			building_employment_engineers_add = 1500
 		}
 	}
 }
@@ -1859,15 +1859,15 @@ ut_pm_low_solar_power_plant = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 10 # 600
-			goods_input_heavy_machinery_add = 1
-			goods_output_high_voltage_electricity_add = 50 # 2400
+			goods_input_engines_add = 50 # 600
+			goods_input_heavy_machinery_add = 10
+			goods_output_high_voltage_electricity_add = 250 # 2400
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 50
-			building_employment_machinists_add = 300
-			building_employment_engineers_add = 150
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 3000
+			building_employment_engineers_add = 1500
 		}
 	}
 }
@@ -1892,15 +1892,15 @@ ut_pm_medium_solar_power_plant = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 10 # 600
-			goods_input_heavy_machinery_add = 1
-			goods_output_high_voltage_electricity_add = 90 # 2400
+			goods_input_engines_add = 50 # 600
+			goods_input_heavy_machinery_add = 10
+			goods_output_high_voltage_electricity_add = 450 # 2400
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 50
-			building_employment_machinists_add = 300
-			building_employment_engineers_add = 150
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 3000
+			building_employment_engineers_add = 1500
 		}
 	}
 }
@@ -1924,15 +1924,15 @@ ut_pm_high_solar_power_plant = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 10 # 600
-			goods_input_heavy_machinery_add = 1
-			goods_output_high_voltage_electricity_add = 150 # 2400
+			goods_input_engines_add = 50 # 600
+			goods_input_heavy_machinery_add = 10
+			goods_output_high_voltage_electricity_add = 600 # 2400
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 50
-			building_employment_machinists_add = 300
-			building_employment_engineers_add = 150
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 3000
+			building_employment_engineers_add = 1500
 		}
 	}
 }
@@ -1948,15 +1948,15 @@ ut_pm_offshore_wind_power_plant = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 10
-			goods_input_heavy_machinery_add = 2
-			goods_output_high_voltage_electricity_add = 120
+			goods_input_engines_add = 50
+			goods_input_heavy_machinery_add = 5
+			goods_output_high_voltage_electricity_add = 700
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 100
-			building_employment_machinists_add = 600
-			building_employment_engineers_add = 300
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 3000
+			building_employment_engineers_add = 1500
 		}
 	}
 }
@@ -1977,7 +1977,7 @@ ut_pm_hydro_power_plant = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_engines_add = 5
-			goods_output_high_voltage_electricity_add = 20 # 2400
+			goods_output_high_voltage_electricity_add = 50 # 2400
         }
 
         level_scaled = {
