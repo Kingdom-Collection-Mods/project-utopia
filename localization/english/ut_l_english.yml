@@ -1635,6 +1635,9 @@
  pm_shopping_district: "Shopping District"
  pm_online_shopping: "Online Shopping"
 
+ pm_ut_copper_streetlights: "Copper Cables"
+ pm_ut_fiber_streetlights: "Fiber Optic Cables"
+
  ut_pm_film_industry_art: "Movie Industry"
  ut_pm_film_industry_art_principle_movement: "International Movie Industry"
  ut_pm_digital_art: "Movie & Video Game Industry"

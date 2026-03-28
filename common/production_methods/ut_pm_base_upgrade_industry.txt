@@ -811,7 +811,7 @@ pm_online_shopping = {
 	required_input_goods = electricity
 }
 
-pm_ut_coper_streetlights = {
+pm_ut_copper_streetlights = {
 	texture = "gfx/interface/icons/production_method_icons/smoothbores.dds"
 
 	city_lights_color_index = 2	# Needs to match city_graphics_data.settings color array
