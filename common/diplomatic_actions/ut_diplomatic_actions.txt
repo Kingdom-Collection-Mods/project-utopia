@@ -82,6 +82,7 @@ ut_influence_new_dawn_major_power = {
 		scope:target_country = {
 			is_subject = no
 			country_rank >= rank_value:major_power
+			is_revolutionary = no
 			OR = {
 				country_rank = rank_value:major_power
 				any_scope_treaty = {
