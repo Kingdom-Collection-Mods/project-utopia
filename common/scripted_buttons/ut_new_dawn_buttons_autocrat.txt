@@ -1,4 +1,4 @@
-#Autocratic Buttons
+﻿#Autocratic Buttons
 
 je_ut_new_dawn_emergency_powers = {
 	name = "je_ut_new_dawn_emergency_powers"

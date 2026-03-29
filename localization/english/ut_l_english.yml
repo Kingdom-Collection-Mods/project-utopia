@@ -1050,7 +1050,7 @@
  ut_fund_opposition_desc: "Fund the opposition in the target country to overthrow the ruling ideology. May abort their New Dawn [concept_ut_nd_path_to_utopia] journal entry.\n\nTarget country effect on success: $ut_fund_opposition_effect$"
  ut_fund_opposition_effect_base: "#r 10#! [concept_ut_nd_progress_points]"
  ut_fund_opposition_effect: "Lose $ut_fund_opposition_effect_base$"
- ut_fund_opposition_effect_from_base: "$ut_fund_opposition_effect$ (base)"
+ ut_fund_opposition_effect_from_base: "$ut_fund_opposition_effect$ (base chance)"
  ut_fund_opposition_effect_from_online_forums: "$ut_fund_opposition_effect$ (from $online_forums$)"
  ut_fund_opposition_effect_from_social_media: "$ut_fund_opposition_effect$ (from $social_media$)"
  ut_fund_opposition_effect_from_dem_vs_aut: "$ut_fund_opposition_effect$ (from Democratic vs Autocratic)"

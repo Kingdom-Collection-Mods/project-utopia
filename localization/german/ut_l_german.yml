@@ -1016,6 +1016,7 @@
  ut_fund_ideology_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds aligned political groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], increasing [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] ideological progress in [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAdjectiveNoFormatting]'s ideology.\n\n$ut_fund_ideology_effect$"
  ut_fund_ideology_desc: "Fund aligned political groups in the target country to increase their ideological progress.\n\n$ut_fund_ideology_effect$"
  ut_fund_ideology_effect: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
+ country_new_dawn_fund_ideology_efficiency_add: "\"$ut_fund_ideology$\" efficiency"
 
  ut_has_new_dawn_progress_100: "Hat #b 100#! [concept_ut_nd_progress_points]"
  ut_has_new_dawn_progress_75: "Hat #b 75#! [concept_ut_nd_progress_points]"
@@ -1049,7 +1050,7 @@
  ut_fund_opposition_desc: "Fund the opposition in the target country to overthrow the ruling ideology. May abort their New Dawn [concept_ut_nd_path_to_utopia] journal entry. (Democracies are more effective against Autocratic countries, Online Forums and Social Media increase effectiveness.)\n\nTarget country effect: $ut_fund_opposition_effect$"
  ut_fund_opposition_effect_base: "#r 10#! [concept_ut_nd_progress_points]"
  ut_fund_opposition_effect: "Lose $ut_fund_opposition_effect_base$"
- ut_fund_opposition_effect_from_base: "$ut_fund_opposition_effect$ (base)"
+ ut_fund_opposition_effect_from_base: "$ut_fund_opposition_effect$ (base chance)"
  ut_fund_opposition_effect_from_online_forums: "$ut_fund_opposition_effect$ (from $online_forums$)"
  ut_fund_opposition_effect_from_social_media: "$ut_fund_opposition_effect$ (from $social_media$)"
  ut_fund_opposition_effect_from_dem_vs_aut: "$ut_fund_opposition_effect$ (from Democratic vs Autocratic)"
