@@ -82,6 +82,7 @@ ut_influence_new_dawn_major_power = {
 		scope:target_country = {
 			is_subject = no
 			country_rank >= rank_value:major_power
+			is_revolutionary = no
 			OR = {
 				country_rank = rank_value:major_power
 				any_scope_treaty = {
@@ -511,13 +512,11 @@ ut_new_dawn_start_propaganda_campaign = {
 	
 		
 		
-		will_propose = { 
-			has_attitude = {
-				who = scope:target_country
-				attitude = domineering
-			}
+		will_propose = {
+			country_rank >= rank_value:great_power
+			ut_target_country_opposing_stance = yes
 			ut_has_new_dawn_progress_core = {
-				VALUE = 90
+				VALUE = 100
 			}
 		}
 		
@@ -527,7 +526,54 @@ ut_new_dawn_start_propaganda_campaign = {
 				limit = {		
 					is_adjacent_to_country = scope:target_country
 				}
-				add = 10
+				add = 5
+			}
+			if = {
+				limit = {		
+					scope:target_country = {
+						is_player = yes
+					}
+				}
+				add = 1
+			}
+			if = {
+				limit = {
+					has_diplomatic_pact = {
+						who = scope:target_country
+						type = rivalry
+					}
+				}
+				add = 5
+			}
+			if = {
+				limit = {
+					has_attitude = {
+						who = scope:target_country
+						attitude = domineering
+					}
+				}
+				add = 5
+			}
+			
+			if = {
+				limit = {
+					has_attitude = {
+						who = scope:target_country
+						attitude = domineering
+					}
+				}
+				add = 5
+			}
+			
+			if = {
+				limit = {
+					scope:target_country = {
+						ut_has_new_dawn_progress_core = {
+							VALUE = 80
+						}
+					}
+				}
+				multiply = 0
 			}
 			#will do if can, but low chance
 		}

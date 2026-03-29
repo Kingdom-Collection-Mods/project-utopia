@@ -64,3 +64,13 @@ texticon = {
     fontsize = 22
   }
 }
+
+
+texticon = {
+  icon = profitabilitymax
+  iconsize = {
+    offset = { 0 28 }
+    texture = "gfx/interface/icons/generic_icons/ut_profitability_max.dds"
+    fontsize = 80
+  }
+}

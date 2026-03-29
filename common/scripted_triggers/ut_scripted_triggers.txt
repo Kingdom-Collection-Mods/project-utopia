@@ -246,12 +246,6 @@ ut_new_dawn_has_core_trigger = {
 ut_has_new_dawn_progress_core = {
 	OR = {
 		AND = {
-			has_modifier = ut_new_dawn_core_autocratic_mod
-			ut_has_new_dawn_progress_autocratic = {
-				VALUE = $VALUE$
-			}
-		}
-		AND = {
 			has_modifier = ut_new_dawn_core_democratic_mod
 			ut_has_new_dawn_progress_democratic = {
 				VALUE = $VALUE$
@@ -266,6 +260,12 @@ ut_has_new_dawn_progress_core = {
 		AND = {
 			has_modifier = ut_new_dawn_core_communist_mod
 			ut_has_new_dawn_progress_communist = {
+				VALUE = $VALUE$
+			}
+		}
+		AND = {
+			has_modifier = ut_new_dawn_core_autocratic_mod
+			ut_has_new_dawn_progress_autocratic = {
 				VALUE = $VALUE$
 			}
 		}

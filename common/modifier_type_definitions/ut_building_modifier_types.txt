@@ -678,3 +678,12 @@ country_new_dawn_fund_opposition_efficiency_mult={
 		ai_value=0
 	}
 }
+
+country_new_dawn_fund_ideology_efficiency_add={
+	script_only = yes
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}

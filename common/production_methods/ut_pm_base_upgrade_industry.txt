@@ -182,6 +182,61 @@ pm_pre_baked_dough_pieces = {
 	}
 }
 
+pm_automated_bakery_software = {
+	texture = "gfx/interface/icons/production_method_icons/automated_bakery.dds"
+
+	disallowing_laws = {
+		law_industry_banned
+	}
+
+	unlocking_technologies = {
+		software_motors_production
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 10		# x40 = 400
+			goods_input_software_add = 5
+		}
+
+		level_scaled = {
+			# profit = -400 (break-even when annual laborer wage > 8.32)
+			building_employment_laborers_add = -2500
+			building_employment_machinists_add = -500
+		}
+	}
+}
+
+pm_automatic_bottle_blowers_software = {
+	texture = "gfx/interface/icons/production_method_icons/automated_bottle_blowers.dds"
+
+	unlocking_technologies = {
+		software
+	}
+
+	disallowing_laws = {
+		law_industry_banned
+	}
+
+	state_modifiers = {
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 2
+			goods_input_engines_add = 2
+			goods_input_oil_add = 5
+			goods_input_software_add = 2
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -2500
+			building_employment_machinists_add = -500
+		}
+	}
+}
 
 
 pm_heavy_machinery_furnite = {
@@ -597,6 +652,7 @@ pm_electronics_engines = {
 			goods_input_oil_add = 40
 			goods_input_electronics_add = 10
 			goods_input_electricity_add = 20
+			goods_input_computers_add = 1
 			
 			# output goods
 			goods_output_engines_add = 155
@@ -633,6 +689,7 @@ pm_computers_engines = {
 			goods_input_oil_add = 30
 			goods_input_electronics_add = 10
 			goods_input_computers_add = 5
+			goods_input_software_add = 1
 			goods_input_electricity_add = 20
 			
 			# output goods
@@ -857,6 +914,7 @@ pm_ut_fiber_streetlights = {
 		workforce_scaled = {
 			goods_input_electricity_add = 6
 			goods_input_rare_earths_add = 1
+			goods_input_iron_add = 1
 			goods_output_services_add = 20
 			goods_output_internet_add = 50
 		}

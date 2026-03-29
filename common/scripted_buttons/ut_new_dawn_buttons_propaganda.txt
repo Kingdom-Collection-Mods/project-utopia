@@ -109,5 +109,21 @@ ut_new_dawn_propaganda_target_defend = {
 			}
 			add = 5
 		}
+		
+		if = {
+			limit = {
+				ut_has_new_dawn_progress_core = {
+					VALUE = 60
+				}
+				scope:target = {
+					NOT = {
+						ut_has_new_dawn_progress_core = {
+							VALUE = 50
+						}
+					}
+				}
+			}
+			add = 5
+		}
 	}
 }

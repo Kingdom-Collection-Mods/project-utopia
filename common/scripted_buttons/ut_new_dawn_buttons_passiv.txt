@@ -141,9 +141,17 @@ ut_new_dawn_core_internal_good_times_focus_add = {
 		}
 		add_modifier = ut_new_dawn_core_internal_good_times_focus_mod
 	}
-	#ai never
+	#ai slight change if at max
 	ai_chance = {
 		value = 0
+		if = {
+			limit = {
+				ut_has_new_dawn_progress_core = {
+					VALUE = 100
+				}
+			}
+			add = 1
+		}
 	}
 }
 
@@ -167,9 +175,19 @@ ut_new_dawn_core_internal_good_times_focus_remove = {
 		}
 		remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
 	}
-	#ai never
+	#ai remove if not max
 	ai_chance = {
 		value = 0
+		if = {
+			limit = {
+				NOT = {
+					ut_has_new_dawn_progress_core = {
+						VALUE = 90
+					}
+				}
+			}
+			add = 20
+		}
 	}
 }
 
