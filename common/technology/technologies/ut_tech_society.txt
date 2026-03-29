@@ -583,8 +583,7 @@ political_progress_1_cosmopolitan = {
 		
 	modifier = {
 		country_influence_mult = 0.25
-		country_service_workers_pol_str_mult = 0.1
-		interest_group_ig_urbanists_pol_str_mult = 0.1
+		country_agitator_slots_add = 1
 
 		state_expected_sol_from_literacy = 1 #todo: rethink, if ai techs this... no good. But good for player. 
 	}
@@ -652,6 +651,7 @@ political_progress_3_neoliberalism = {
 		
 	modifier = {
 		state_expected_sol_from_literacy = 3
+		country_agitator_slots_add = 1
 	}
 
 	unlocking_technologies = {
@@ -687,6 +687,7 @@ political_progress_4_greens = {
 		
 	modifier = {
 		state_expected_sol_from_literacy = 4
+		country_agitator_slots_add = 1
 	}
 
 	unlocking_technologies = {
@@ -734,6 +735,7 @@ movie_industry = {
 	}
 
 	modifier = {
+		country_service_workers_pol_str_mult = 0.1
 	}
 
 	unlocking_technologies = {
@@ -757,8 +759,8 @@ online_forums = {
 
 	modifier = {
 		state_pop_pol_str_mult = 0.05
-		country_service_workers_pol_str_mult = 0.05
-		interest_group_ig_urbanists_pol_str_mult = 0.1
+		country_service_workers_pol_str_mult = 0.1
+		interest_group_ig_urbanists_pol_str_mult = 0.05
 		country_new_dawn_fund_opposition_efficiency_mult = 0.25
 	}
 
@@ -784,8 +786,8 @@ social_media = {
 
 	modifier = {
 		state_pop_pol_str_mult = 0.05
-		country_service_workers_pol_str_mult = 0.05
-		interest_group_ig_urbanists_pol_str_mult = 0.1
+		country_service_workers_pol_str_mult = 0.1
+		interest_group_ig_urbanists_pol_str_mult = 0.05
 		country_new_dawn_fund_opposition_efficiency_mult = 0.25
 	}
 
