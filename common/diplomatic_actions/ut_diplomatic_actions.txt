@@ -557,16 +557,6 @@ ut_new_dawn_start_propaganda_campaign = {
 			
 			if = {
 				limit = {
-					has_attitude = {
-						who = scope:target_country
-						attitude = domineering
-					}
-				}
-				add = 5
-			}
-			
-			if = {
-				limit = {
 					scope:target_country = {
 						ut_has_new_dawn_progress_core = {
 							VALUE = 80
