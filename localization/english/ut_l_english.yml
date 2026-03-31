@@ -124,6 +124,13 @@
  ut_je_nuclear_power_plant_construction_site.success.f: "The site for the nuclear power plant has been successfully selected. The location is ideal for the construction of a facility that will provide clean and efficient energy for generations to come."
  ut_nuclear_power_plant_construction_site_mod: "Active Nuclear Power Plant Construction Site"
 
+ ut_nuclear_event_critical_title: "Nuclear Meltdown in [SCOPE.sState('nuclear_accident_state').GetName]"
+ ut_nuclear_event_critical_desc: "A critical nuclear accident has occurred at the power plant."
+ ut_nuclear_event_critical_flavor: "The consequences of the accident are severe, affecting both the local population and the environment of [SCOPE.sState('nuclear_accident_state').GetName] and beyond. The radiation release has caused widespread contamination, leading to evacuations, health crises, and long-term ecological damage. The incident serves as a stark reminder of the risks associated with nuclear energy and the importance of stringent safety measures."
+ ut_nuclear_event_minor_title: "Nuclear Incident"
+ ut_nuclear_event_minor_desc: "A minor nuclear incident has occurred at the nuclear power plant in [SCOPE.sState('nuclear_accident_state').GetName]."
+ ut_nuclear_event_minor_flavor: "The incident has been contained, but it serves as a reminder of the risks associated with nuclear energy."  
+
  ut_share_nuclear_power_research: "Share Nuclear Power Research"
  ut_share_nuclear_power_research_name: "Nuclear Power Research"
  ut_share_nuclear_power_research_desc: "Share the knowledge and advancements gained from our nuclear power research."
