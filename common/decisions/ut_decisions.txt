@@ -56,6 +56,33 @@ ut_tech_preview_cheat_new_dawn = {
 	}
 }
 
+ut_tech_preview_cheat_mining = {
+	is_shown = {
+		is_player = yes
+		NOT = { has_global_variable = ut_utopia_enabled_on_game_started_var }
+		NOT = { has_global_variable = ut_tech_preview_mining_cheat_enabled }
+		NOT = { has_building = building_bauxite_mine }
+		NOT = { has_building = building_rare_earths_mine }
+	}
+
+	possible = {
+		is_player = yes
+		NOT = { has_global_variable = ut_tech_preview_mining_cheat_enabled }
+	}
+	
+	when_taken = {
+		trigger_event = {
+			id = utopia_mod.1
+			popup = yes
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+
 ut_research_institute_found = {
 	is_shown = {
 		NOT = {

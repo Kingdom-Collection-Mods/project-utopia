@@ -1,8 +1,40 @@
 ﻿namespace = utopia_mod
 
 #unused
-# utopia_mod.1 = {
-# }
+utopia_mod.1 = {
+	type = country_event
+
+	event_image = {
+		video = "unspecific_trains"
+	}
+
+	duration = 3
+
+	placement = ROOT
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	title = utopia_mod.1.t
+	desc = utopia_mod.1.d
+	flavor = utopia_mod.1.f
+	
+	
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+	option = {
+		trigger = {
+			NOT = { has_global_variable = ut_utopia_enabled_on_game_started_var }
+			NOT = { has_global_variable = ut_tech_preview_mining_cheat_enabled }
+		}
+		name = utopia.enable
+		custom_tooltip = ut_mining_cheat_enable_tt
+		set_global_variable = ut_tech_preview_mining_cheat_enabled
+	}
+}
 
 utopia_mod.2 = {
 	type = country_event
