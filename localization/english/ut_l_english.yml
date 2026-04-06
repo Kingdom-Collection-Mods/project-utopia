@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -9,6 +9,7 @@
  utopia.continue: "Continue"
  utopia.abort: "Abort"
  utopia.cheat: "Cheat"
+ utopia.enable: "Enable"
  utopia.disable: "Disable"
  utopia.error: "Error" 
 
@@ -497,7 +498,7 @@
 #Core Ideology concepts
 
  concept_ut_nd_fascist_core: "Fascism"
- concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - Invade Country (Any lower ranked)\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_fascist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others.\n\n#i Development Status: Not playable - Preview#!"
+ concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticPlayType('dp_ut_fascist_annex_war').GetName] (Any lower ranked)\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_fascist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others.\n\n#i Development Status: Not playable - Preview#!"
  ut_nd_fascist_stance: "Favorable: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nOppose: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]"
 
 
@@ -511,11 +512,11 @@
  ut_nd_democratic_stance: "Favorable: [concept_ut_nd_democrat_core]\nNeutral: [concept_ut_nd_communist_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]"
 
  concept_ut_nd_communist_core: "Communism"
- concept_ut_nd_communist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Unlocks Authoritarian [concept_ut_nd_milestones]#!:\n - Unlock Ideologies: [GetIdeology('ideology_reactionary_communist').GetName], [GetIdeology('ideology_patriotic_communist_national').GetName]\n - Unlocks Law Variants: [GetLawType('ut_law_council_presidium').GetName]\n - Unlock Modifiers:\n[GetStaticModifier('je_ut_new_dawn_communist_one_block_mod').GetDesc]\n[GetStaticModifier('je_ut_communist_socialist_expansion_mod').GetDesc]\n\n#bold Unlocks Democratic [concept_ut_nd_milestones]#!:\n - Unlock Ideologies: [GetIdeology('ideology_plutocratic_communist').GetName], [GetIdeology('ideology_urbanist_power_base').GetName], [GetIdeology('ideology_patriotic_communist_international').GetName]\n - Unlocks Law Variants: [GetLawType('ut_law_international_council').GetName]\n - Unlock Modifiers:\n[GetStaticModifier('je_ut_new_dawn_communist_one_people_mod').GetDesc]\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_force_become_subject').GetName]\n - [GetArticleType('ut_communism_article').GetNameNoIcon]\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n - [GetDiplomaticActionType('ut_humiliate_power_bloc_goal').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_communist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nBuild a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence.\n\n#i Development Status: Playable - Almost done#!"
+ concept_ut_nd_communist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Unlocks Authoritarian [concept_ut_nd_milestones]#!:\n - Unlock Ideologies: [GetIdeology('ideology_reactionary_communist').GetName], [GetIdeology('ideology_patriotic_communist_national').GetName]\n - Unlocks Law Variants: [GetLawType('ut_law_council_presidium').GetName]\n - Unlock Modifiers:\n[GetStaticModifier('je_ut_new_dawn_communist_one_block_mod').GetDesc]\n[GetStaticModifier('je_ut_communist_socialist_expansion_mod').GetDesc]\n\n#bold Unlocks Democratic [concept_ut_nd_milestones]#!:\n - Unlock Ideologies: [GetIdeology('ideology_plutocratic_communist').GetName], [GetIdeology('ideology_urbanist_power_base').GetName], [GetIdeology('ideology_patriotic_communist_international').GetName]\n - Unlocks Law Variants: [GetLawType('ut_law_international_council').GetName]\n - Unlock Modifiers:\n[GetStaticModifier('je_ut_new_dawn_communist_one_people_mod').GetDesc]\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_force_become_subject').GetName]\n - [GetArticleType('ut_communism_article').GetNameNoIcon]\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_communist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nBuild a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence.\n\n#i Development Status: Playable - Almost done#!"
  ut_nd_communist_stance: "Favorable: [concept_ut_nd_communist_core]\nNeutral: [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]"
 
  concept_ut_nd_path_to_utopia: "Path to Utopia"
- concept_ut_nd_path_to_utopia_desc: "When an ideology successfully completes the [concept_ut_new_dawn] journal entry, it can start their [concept_ut_nd_path_to_utopia] - each ideology comes with the same base set of abilities, flavored abilities, flavored modifiers and may even feature an [concept_ut_nd_utopia] to be achieved.\n\nA [Concept('concept_humiliation', 'humiliated')] country, is likely to abandon their [concept_ut_nd_path_to_utopia] and choose a new ideology.\n\n#bold Base [concept_ut_nd_abilities]:#!\n - [GetDiplomaticActionType('ut_influence_new_dawn_major_power').GetName]\n - [GetDiplomaticActionType('ut_fund_ideology').GetName]\n - [GetDiplomaticActionType('ut_fund_opposition').GetName]\n\n#b 'New Dawn' is Work in Progress#!\n#italic Note the status notes:\ntbd (To Be Determined): No actual work done\nwip (Work in Progress): Ongoing development, follow the patch notes\nPreview: Initial version available for feedback; incomplete and not final\n\nIdeologies without Preview [concept_ut_nd_milestones] or [concept_ut_nd_abilities] feature more static modifiers instead.\n\nStatus notes may be incomplete.\n\n#i If you wanna support Project Utopia - leave a like on Steam Workshop <3#!"
+ concept_ut_nd_path_to_utopia_desc: "When an ideology successfully completes the [concept_ut_new_dawn] journal entry, it can start their [concept_ut_nd_path_to_utopia] - each ideology comes with the same base set of abilities, flavored abilities, flavored modifiers and may even feature an [concept_ut_nd_utopia] to be achieved.\n\nA [Concept('concept_humiliation', 'humiliated')] country, is likely to abandon their [concept_ut_nd_path_to_utopia] and choose a new ideology.\n\n#bold Base [concept_ut_nd_abilities]:#!\n - [GetDiplomaticActionType('ut_influence_new_dawn_major_power').GetName]\n - [GetDiplomaticActionType('ut_fund_ideology').GetName]\n - [GetDiplomaticActionType('ut_fund_opposition').GetName]\n - [GetDiplomaticActionType('ut_new_dawn_start_propaganda_campaign').GetName]\n\n#b 'New Dawn' is Work in Progress#!\n#italic Note the status notes:\ntbd (To Be Determined): No actual work done\nwip (Work in Progress): Ongoing development, follow the patch notes\nPreview: Initial version available for feedback; incomplete and not final\n\nIdeologies without Preview [concept_ut_nd_milestones] or [concept_ut_nd_abilities] feature more static modifiers instead.\n\nStatus notes may be incomplete.\n\n#i If you wanna support Project Utopia - leave a like on Steam Workshop <3#!"
 
  concept_ut_nd_utopia: "Utopia"
  concept_ut_nd_utopia_desc: "A utopia is an imagined ideal society where there is complete justice, harmony, and humans flourishing to perfection - it's as much an aspiration, as it's an inspiring vision."
@@ -897,7 +898,7 @@
  ut_je_propaganda_target_goal: "Source country has completed propaganda campaign (currently [JournalEntry.GetGoalProgressValue]/[JournalEntry.GetTotalGoalValue])."
  ut_je_propaganda_target_reason: "The country behind the propaganda campaign is attempting to weaken the core ideology in our country."
  ut_je_propaganda_target_abort_tt: "The country behind the propaganda campaign has aborted the campaign."
- ut_je_propaganda_target_effect: "$ut_add_new_dawn_progress_neg_25$ and get Propaganda [concept_modifier] for 2 years"
+ ut_je_propaganda_target_effect: "$ut_add_new_dawn_progress_neg_25$ and gets Propaganda modifier for 2 years"
 
  ut_propaganda_campaign_source_happened_title: "Propaganda Campaign conducted"
  ut_propaganda_campaign_source_happened_desc: "A coordinated propaganda campaign was launched against [SCOPE.sCountry('ut_je_propaganda_source_target_scope').GetName] to shape public opinion and weaken the target's government's ideology."
@@ -923,6 +924,7 @@
 
  country_new_dawn_propaganda_source_efficiency_mult: "\"$ut_je_propaganda_source$\" efficiency"
  country_new_dawn_propaganda_source_speed_mult: "\"$ut_je_propaganda_source$\" speed"
+ country_new_dawn_propaganda_source_speed_mult_desc: "Changes the speed at which the [GetDiplomaticActionType('ut_new_dawn_start_propaganda_campaign').GetName] progresses."
 
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
  UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
@@ -1023,7 +1025,8 @@
  ut_fund_ideology_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds aligned political groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], increasing [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] ideological progress in [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAdjectiveNoFormatting]'s ideology.\n\n$ut_fund_ideology_effect$"
  ut_fund_ideology_desc: "Fund aligned political groups in a target country without a ruling ideology to increase their ideological progress.\n\n$ut_fund_ideology_effect$"
  ut_fund_ideology_effect: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
- country_new_dawn_fund_ideology_efficiency_add: "\"$ut_fund_ideology$\" efficiency"
+ country_new_dawn_fund_ideology_efficiency_add: "[GetDiplomaticActionType('ut_fund_ideology').GetName] [concept_ut_nd_progress_points] gain"
+ country_new_dawn_fund_ideology_efficiency_add_desc: "[GetDiplomaticActionType('ut_fund_ideology').GetName] target country gains additional [concept_ut_nd_progress_points] to source country's core ideology."
 
  ut_has_new_dawn_progress_100: "Has #b 100#! [concept_ut_nd_progress_points]"
  ut_has_new_dawn_progress_75: "Has #b 75#! [concept_ut_nd_progress_points]"
@@ -1067,7 +1070,11 @@
  ut_fund_opposition_source_happened_tt: "Funding Opposition in [SCOPE.sCountry('ut_fund_opposition_target_scope').GetName] was successful, they lost #r 10#! [concept_ut_nd_progress_points]"
  ut_fund_opposition_target_happened_title: "Opposition Funded by [SCOPE.sCountry('ut_fund_opposition_source_scope').GetName]"
  ut_fund_opposition_target_happened_desc: "[SCOPE.sCountry('ut_fund_opposition_source_scope').GetName] is funding opposition groups in our country, this may lead to revolts in your opposition groups reducing your ideology [concept_ut_nd_progress_points]."
- country_new_dawn_fund_opposition_efficiency_mult: "\"$ut_fund_opposition$\" success chance"
+ country_new_dawn_fund_opposition_efficiency_mult: "\"[GetDiplomaticActionType('ut_fund_opposition').GetName]\" success chance"
+ country_new_dawn_fund_opposition_efficiency_mult_desc: "Changes the success chance of [GetDiplomaticActionType('ut_fund_opposition').GetName]."
+
+ country_new_dawn_fund_opposition_efficiency_against_autocratic_mult: "$country_new_dawn_fund_opposition_efficiency_mult$ (Against Autocracies)"
+ country_new_dawn_fund_opposition_efficiency_against_autocratic_mult_desc: "$country_new_dawn_fund_opposition_efficiency_mult_desc$ (Against [concept_ut_nd_autocrat_core] targets)"
 
 # Power Blocs
  principle_group_modern_trade_league: "Modern Trade League"

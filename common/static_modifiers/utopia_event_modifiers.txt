@@ -107,6 +107,7 @@ je_ut_new_dawn_democratic_mod = {
 	unit_defense_mult = 0.05
 	country_production_tech_research_speed_mult = 0.03
 	state_pop_support_movement_liberal_mult = 0.1
+	country_new_dawn_fund_opposition_efficiency_against_autocratic_mult = -0.25
 }
 
 ut_new_dawn_core_democratic_mod = {
