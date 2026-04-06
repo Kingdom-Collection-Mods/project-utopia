@@ -1,8 +1,6 @@
 ﻿INJECT:movement_fascist = {
+	#inject works additive here
 	character_ideologies = {
-		ideology_fascist
-		ideology_integralist
-		ideology_corporatist_leader
 		ut_ideology_autocratic_leader
 		ut_ideology_national_socialist_leader
 		ut_ideology_totalitarian_communist_leader
@@ -11,8 +9,6 @@
 
 INJECT:movement_feminist = {
 	character_ideologies = {
-		ideology_feminist
-		ideology_humanitarian
 		ut_liberal_feminism_leader
 		ut_radical_feminism_leader
 		ut_social_feminism_leader

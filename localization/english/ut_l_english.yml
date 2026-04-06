@@ -1812,11 +1812,11 @@
  ut_synthetics_company: "Synthetics Inc."
  ut_plastic_company: "Plastiform Inc."
 
+ building_group_bg_modern_industry_throughput_add: "$bg_modern_industry$ [concept_throughput]"
+ building_group_bg_modern_industry_throughput_add_desc: "A bonus or penalty to both input and output of the $bg_modern_industry$."
+
  building_heavy_machinery_factory_throughput_add: "$building_heavy_machinery_factory$ [concept_throughput]"
  building_heavy_machinery_factory_throughput_add_desc: "A bonus or penalty to both input and output of the $building_heavy_machinery_factory$."
-
- building_group_bg_modern_industry_throughput_add: "$building_group_bg_modern_industry$ [concept_throughput]"
- building_group_bg_modern_industry_throughput_add_desc: "A bonus or penalty to both input and output of the $building_group_bg_modern_industry$."
 
  building_plastic_factory_throughput_add: "$building_plastic_factory$ [concept_throughput]"
  building_plastic_factory_throughput_add_desc: "A bonus or penalty to both input and output of the $building_plastic_factory$."

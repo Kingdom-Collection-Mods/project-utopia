@@ -92,8 +92,7 @@ building_rare_earths_mine_debug = {
 
 	possible = {
 		owner = {
-			NOT = { has_global_variable = ut_utopia_enabled_on_game_started_var }
-			NOT = { has_global_variable = ut_mining_cheat_disable }
+			has_global_variable = ut_tech_preview_mining_cheat_enabled
 		}
 	}
 
