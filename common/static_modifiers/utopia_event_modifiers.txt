@@ -345,6 +345,7 @@ ut_new_dawn_core_internal_bad_times_focus_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	country_new_dawn_progress_points_progress = 0.5
 	country_loyalists_from_legitimacy_mult = -0.1
+	state_standard_of_living_add = -0.2
 	state_radicals_from_political_movements_mult = 0.2
 }
 

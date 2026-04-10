@@ -686,7 +686,7 @@ political_progress_4_greens = {
 	category = society
 		
 	modifier = {
-		state_expected_sol_from_literacy = 4
+		state_expected_sol_from_literacy = 3
 		country_agitator_slots_add = 1
 	}
 
@@ -712,7 +712,7 @@ national_socialism = {
 	}
 
 	modifier = {
-		state_expected_sol_from_literacy = 1
+		state_expected_sol_from_literacy = 3
 	}
 
 	unlocking_technologies = {

@@ -315,6 +315,28 @@
 
 	on_yearly_pulse = {
 		effect = {
+			#if frozen, update decaying values yearly (for better performance)
+			if = {
+				limit = {
+					has_variable = ut_new_dawn_bar_freeze
+				}
+				set_variable = {
+					name = ut_new_dawn_fascist_bar_value
+					value = "scope:journal_entry.scripted_bar_progress(ut_new_dawn_fascist_bar)"
+				}
+				set_variable = {
+					name = ut_new_dawn_democrat_bar_value
+					value = "scope:journal_entry.scripted_bar_progress(ut_new_dawn_democrat_bar)"
+				}				
+				set_variable = {
+					name = ut_new_dawn_communist_bar_value
+					value = "scope:journal_entry.scripted_bar_progress(ut_new_dawn_communist_bar)"
+				}
+				set_variable = {
+					name = ut_new_dawn_autocrat_bar_value
+					value = "scope:journal_entry.scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+				}
+			}
 			if = {
 				#Some fixes for countries in phase 1
 				limit = {
