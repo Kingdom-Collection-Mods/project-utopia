@@ -870,6 +870,15 @@ je_ut_new_dawn_fascist = {
 				name = ut_new_dawn_core_fascist_mod
 			}
 		}
+		set_variable = {
+			name = je_ut_new_dawn_expansionism_goal
+			value = root.num_states
+		}
+		change_variable = {
+			name = je_ut_new_dawn_expansionism_goal
+			add = 30
+		}
+			
 		add_to_global_variable_list = {
 			name = ut_new_dawn_fascist_list
 			target = root
@@ -964,6 +973,22 @@ je_ut_new_dawn_fascist = {
 					is_player = yes
 				}
 				ut_new_dawn_fascist_progress = yes
+			}
+
+			#todo deprecated, remove later
+			if = {
+				limit = {
+					NOT = { has_variable = je_ut_new_dawn_expansionism_goal }
+				}
+				
+				set_variable = {
+					name = je_ut_new_dawn_expansionism_goal
+					value = root.num_states
+				}
+				change_variable = {
+					name = je_ut_new_dawn_expansionism_goal
+					add = 30
+				}
 			}
 		}
 	}
