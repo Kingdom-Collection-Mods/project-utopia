@@ -1339,6 +1339,7 @@ event_new_dawn.998 = {
 			NOT = { has_variable = ut_new_dawn_bar_freeze }
 		}
 		set_variable = ut_new_dawn_bar_freeze
+		set_variable = ut_new_dawn_bar_freeze_cheat
 	}
 	
 	option = {
@@ -1347,6 +1348,7 @@ event_new_dawn.998 = {
 			has_variable = ut_new_dawn_bar_freeze
 		}
 		remove_variable = ut_new_dawn_bar_freeze
+		remove_variable = ut_new_dawn_bar_freeze_cheat
 	}
 
 	option = {

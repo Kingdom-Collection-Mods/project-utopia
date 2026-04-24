@@ -242,6 +242,10 @@
 			#check for ideology reached upper bound
 			if = {
 				limit = {
+					OR = {
+						has_variable = ut_new_dawn_bar_freeze_cheat
+						NOT = { has_variable = ut_new_dawn_bar_freeze }
+					}
 					scope:journal_entry = { 
 						OR = {
 							"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= new_dawn_core_upper_bound
@@ -249,9 +253,6 @@
 							"scripted_bar_progress(ut_new_dawn_communist_bar)" >= new_dawn_core_upper_bound
 							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" >= new_dawn_core_upper_bound
 						}
-					}
-					NOT = {
-						has_variable = ut_new_dawn_bar_freeze
 					}
 				}
 				
