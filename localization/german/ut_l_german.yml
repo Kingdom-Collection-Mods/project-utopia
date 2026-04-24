@@ -262,7 +262,7 @@
  country_new_dawn_progress_points_progress: "[concept_ut_nd_progress_points] Zuwachs"
  country_new_dawn_progress_points_progress_desc: "Ändert den Zuwachs von [concept_ut_nd_progress_points] für die Kernideologie."
 
- je_ut_new_dawn_critical_lower_bound_fail_tt: "Wenn der Grenzwert von #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! #v Fortschrittspunkten#! unterschritten wird, können Ereignissketten politischen Fortschritt rückgängig machen und schlussendlich einen neuen Neuer Aufbruch auslösen."
+ je_ut_new_dawn_critical_lower_bound_fail_tt: "Hat #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! [concept_ut_nd_progress_points]"
 
  ut_new_dawn_communist_focus: "Kommunistischer Fokus"
  ut_new_dawn_communist_focus_desc: "#italic wip: Currently being worked on#!"
@@ -499,7 +499,7 @@
 #Core Ideology concepts
 
  concept_ut_nd_fascist_core: "Faschismus"
- concept_ut_nd_fascist_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Verfügbare [concept_ut_nd_milestones]#! - tbd\n\n#bold Verfügbare [concept_ut_nd_abilities]#!\n - Annex Country (Major) - tbd\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b [concept_ut_nd_focus] Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_fascist_focus').GetDesc]\n\n#b Freigeschalteter Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_fascist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others.\n\n#i Development Status: Not playable - Preview#!"
+ concept_ut_nd_fascist_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Verfügbare [concept_ut_nd_milestones]#! - tbd\n\n#bold Verfügbare [concept_ut_nd_abilities]#!\n - [GetDiplomaticPlayType('dp_ut_fascist_annex_war').GetName] (Niedrigstufigere Nation)\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b [concept_ut_nd_focus] Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_fascist_focus').GetDesc]\n\n#b Freigeschalteter Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_fascist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransformiere dein Volk in eine ... Utopie, durch blinden Gehorsam, Militarismus und die rücksichtslose Unterwerfung aller, die als 'anders' gelten. Erobere die Welt. Schaffe Wohlstand und Einheit für wenige, auf Kosten der Freiheit und Würde aller anderen.\n\n#i Entwicklungsstatus: Nicht spielbar - Vorschau#!"
  ut_nd_fascist_stance: "Verbündet: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nFeindlich: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]"
 
 
@@ -553,15 +553,15 @@
  concept_ut_nd_stance: "Haltung"
  concept_ut_nd_stance_desc: "Jede Ideologie hat eine Haltung gegenüber anderen Ideologien. Die Haltung beeinflusst die Akzeptanz des Beitritts und Verbleibs in einem Machtblock sowie die meisten neuen Project Utopia-Aktionen. Work in progress."
 
- je_ai_radio_researched: "Radio Researched"
+ je_ai_radio_researched: "Radio erforscht"
  je_ai_radio_researched_reason: "REPLACE_ME"
 
- je_ai_consumer_goods_researched: "Consumer Goods researched"
+ je_ai_consumer_goods_researched: "Konsumgüter erforscht"
  je_ai_consumer_goods_researched_reason: "REPLACE_ME"
 
  je_ai_advanced_consumer_goods_researched_reason: "REPLACE_ME"
 
- je_ai_not_ai: "Human in disguise"
+ je_ai_not_ai: "Kein KI-Spieler"
  je_ai_not_ai_reason: "REPLACE_ME"
 
 # Pop and Politics
@@ -861,31 +861,31 @@
  ut_international_diplomatic_power_bloc_merge_action_name: "Machtblöcke vereinigen"
  ut_international_diplomatic_power_bloc_merge_proposal_notification_name: "Machtblöcke vereinigen - Vorschlag"
  ut_international_diplomatic_power_bloc_merge_proposal_notification_desc: "Ein Vorschlag zur Vereinigung der demokratischen Machtblöcke wurde gesendet."
- ut_international_diplomatic_power_bloc_merge_proposal_accepted_name: "$ut_international_diplomatic_power_bloc_merge$ Accepted"
- ut_international_diplomatic_power_bloc_merge_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our proposal to $ut_international_diplomatic_power_bloc_merge$."
- ut_international_diplomatic_power_bloc_merge_proposal_declined_name: "$ut_international_diplomatic_power_bloc_merge$ Declined"
- ut_international_diplomatic_power_bloc_merge_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to $ut_international_diplomatic_power_bloc_merge$."
- ut_international_diplomatic_power_bloc_merge_proposal_third_party_accepted_name: "$ut_international_diplomatic_power_bloc_merge$ Granted"
- ut_international_diplomatic_power_bloc_merge_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] was granted $ut_international_diplomatic_power_bloc_merge$ from [INITIATOR_COUNTRY.GetName]."
- ut_international_diplomatic_power_bloc_merge_proposal_third_party_declined_name: "$ut_international_diplomatic_power_bloc_merge$ Rejected"
- ut_international_diplomatic_power_bloc_merge_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] was rejected $ut_international_diplomatic_power_bloc_merge$ from [INITIATOR_COUNTRY.GetName]."
+ ut_international_diplomatic_power_bloc_merge_proposal_accepted_name: "$ut_international_diplomatic_power_bloc_merge$ akzeptiert"
+ ut_international_diplomatic_power_bloc_merge_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] hat unseren Vorschlag zu $ut_international_diplomatic_power_bloc_merge$ akzeptiert."
+ ut_international_diplomatic_power_bloc_merge_proposal_declined_name: "$ut_international_diplomatic_power_bloc_merge$ abgelehnt"
+ ut_international_diplomatic_power_bloc_merge_proposal_declined_desc: "[TARGET_COUNTRY.GetName] hat unseren Vorschlag zu $ut_international_diplomatic_power_bloc_merge$ abgelehnt."
+ ut_international_diplomatic_power_bloc_merge_proposal_third_party_accepted_name: "$ut_international_diplomatic_power_bloc_merge$ gewährt"
+ ut_international_diplomatic_power_bloc_merge_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] wurde $ut_international_diplomatic_power_bloc_merge$ von [INITIATOR_COUNTRY.GetName] gewährt."
+ ut_international_diplomatic_power_bloc_merge_proposal_third_party_declined_name: "$ut_international_diplomatic_power_bloc_merge$ verweigert"
+ ut_international_diplomatic_power_bloc_merge_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] wurde $ut_international_diplomatic_power_bloc_merge$ von [INITIATOR_COUNTRY.GetName] verweigert."
 
- je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Has #v $je_ut_new_dawn_democrat_focus$#! modifier"
+ je_ut_new_dawn_democrat_focus_them: "[TreatyDraft.GetRightCountry.GetName]: Hat #v $je_ut_new_dawn_democrat_focus$#! Modifikator"
 
  ut_influence_new_dawn_major_power: "Verbreite Neuer Aufbruch"
  ut_influence_new_dawn_major_power_desc: "Fördere deine Ideologie unter Großmächten, indem du den ersten [concept_ut_new_dawn] im Zielland startest und sie zwingst, sich auf deine Ideologie zu konzentrieren."
  ut_influence_new_dawn_major_power_action_name: "$ut_influence_new_dawn_major_power$"
  ut_influence_new_dawn_major_power_action_propose_name: "Start $ut_influence_new_dawn_major_power_action_name$"
- ut_influence_new_dawn_major_power_proposal_notification_name: "$ut_influence_new_dawn_major_power$ Proposal"
- ut_influence_new_dawn_major_power_proposal_notification_desc: "A proposal to $ut_influence_new_dawn_major_power$ in [TARGET_COUNTRY.GetName] has been sent."
- ut_influence_new_dawn_major_power_proposal_accepted_name: "$ut_influence_new_dawn_major_power$ Accepted"
- ut_influence_new_dawn_major_power_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our request to $ut_influence_new_dawn_major_power$."
- ut_influence_new_dawn_major_power_proposal_declined_name: "$ut_influence_new_dawn_major_power$ Declined"
- ut_influence_new_dawn_major_power_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our request to $ut_influence_new_dawn_major_power$."
- ut_influence_new_dawn_major_power_proposal_third_party_accepted_name: "$ut_influence_new_dawn_major_power$ Granted"
- ut_influence_new_dawn_major_power_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] was granted $ut_influence_new_dawn_major_power$ from [INITIATOR_COUNTRY.GetName]."
- ut_influence_new_dawn_major_power_proposal_third_party_declined_name: "$ut_influence_new_dawn_major_power$ Rejected"
- ut_influence_new_dawn_major_power_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] was rejected $ut_influence_new_dawn_major_power$ from [INITIATOR_COUNTRY.GetName]."
+ ut_influence_new_dawn_major_power_proposal_notification_name: "$ut_influence_new_dawn_major_power$ Vorschlag"
+ ut_influence_new_dawn_major_power_proposal_notification_desc: "Ein Vorschlag zu $ut_influence_new_dawn_major_power$ in [TARGET_COUNTRY.GetName] wurde gesendet."
+ ut_influence_new_dawn_major_power_proposal_accepted_name: "$ut_influence_new_dawn_major_power$ akzeptiert"
+ ut_influence_new_dawn_major_power_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] hat unsere Anfrage zu $ut_influence_new_dawn_major_power$ akzeptiert."
+ ut_influence_new_dawn_major_power_proposal_declined_name: "$ut_influence_new_dawn_major_power$ abgelehnt"
+ ut_influence_new_dawn_major_power_proposal_declined_desc: "[TARGET_COUNTRY.GetName] hat unsere Anfrage zu $ut_influence_new_dawn_major_power$ abgelehnt."
+ ut_influence_new_dawn_major_power_proposal_third_party_accepted_name: "$ut_influence_new_dawn_major_power$ gewährt"
+ ut_influence_new_dawn_major_power_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] wurde $ut_influence_new_dawn_major_power$ von [INITIATOR_COUNTRY.GetName] gewährt."
+ ut_influence_new_dawn_major_power_proposal_third_party_declined_name: "$ut_influence_new_dawn_major_power$ verweigert"
+ ut_influence_new_dawn_major_power_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] wurde $ut_influence_new_dawn_major_power$ von [INITIATOR_COUNTRY.GetName] verweigert."
  ut_influence_new_dawn_major_power_unlock_tt: "Verfügbare: #v $ut_influence_new_dawn_major_power$#!"
 
  ut_new_dawn_start_propaganda_campaign: "Starte Propaganda Kampagne"
