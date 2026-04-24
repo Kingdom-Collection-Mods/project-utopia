@@ -1,5 +1,6 @@
-﻿INJECT:movement_fascist = {
-	#inject works additive here
+﻿#inject works additive here
+
+INJECT:movement_fascist = {
 	character_ideologies = {
 		ut_ideology_autocratic_leader
 		ut_ideology_national_socialist_leader

@@ -1,6 +1,5 @@
 ﻿namespace = utopia_mod
 
-#unused
 utopia_mod.1 = {
 	type = country_event
 

@@ -895,12 +895,12 @@ je_ut_new_dawn_fascist = {
 		}
 		custom_tooltip = {
 			text = je_ut_new_dawn_fascist_complete_condition_tt
-			has_variable = je_ut_new_dawn_outlaw_communists
-			has_variable = je_ut_new_dawn_form_paramilitary_groups
-			has_variable = je_ut_new_dawn_conformity
-			has_variable = je_ut_new_dawn_volksgemeinschaft
-			has_variable = je_ut_new_dawn_unite_heritage
-			has_variable = je_ut_new_dawn_expansionism
+			# has_variable = je_ut_new_dawn_outlaw_communists
+			# has_variable = je_ut_new_dawn_form_paramilitary_groups
+			# has_variable = je_ut_new_dawn_conformity
+			# has_variable = je_ut_new_dawn_volksgemeinschaft
+			# has_variable = je_ut_new_dawn_unite_heritage
+			# has_variable = je_ut_new_dawn_expansionism
 		}
 		
 		custom_tooltip = {

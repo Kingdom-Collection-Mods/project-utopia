@@ -323,10 +323,10 @@ building_software_company = {
 		software
 	}
 	
+	#deprecated pmg_logistics_modern_industry should be removed
 	production_method_groups = {
 		pmg_software_making_process
 		pmg_administration_modern_industry
-		#deprecated pmg_logistics_modern_industry should be removed
 		pmg_logistics_modern_industry
 	}
 	
