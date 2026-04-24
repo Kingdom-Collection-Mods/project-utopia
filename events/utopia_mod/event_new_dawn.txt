@@ -1,4 +1,4 @@
-﻿namespace = event_new_dawn
+namespace = event_new_dawn
 
 #New Dawn start
 event_new_dawn.1 = {
@@ -1333,24 +1333,6 @@ event_new_dawn.998 = {
 		}
 	}
 	
-	option = {
-		name = event_new_dawn.cheat.freeze_new_dawn
-		trigger = {
-			NOT = { has_variable = ut_new_dawn_bar_freeze }
-		}
-		set_variable = ut_new_dawn_bar_freeze
-		set_variable = ut_new_dawn_bar_freeze_cheat
-	}
-	
-	option = {
-		name = event_new_dawn.cheat.unfreeze_new_dawn
-		trigger = {
-			has_variable = ut_new_dawn_bar_freeze
-		}
-		remove_variable = ut_new_dawn_bar_freeze
-		remove_variable = ut_new_dawn_bar_freeze_cheat
-	}
-
 	option = {
 		name = event_new_dawn.cheat.add_democratic_50
 		je:je_ut_new_dawn ?= {
