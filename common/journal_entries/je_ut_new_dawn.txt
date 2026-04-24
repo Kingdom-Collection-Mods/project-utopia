@@ -611,6 +611,13 @@ je_ut_new_dawn_democratic = {
 		remove_modifier = je_ut_new_dawn_democrat_focus
 		remove_modifier = ut_new_dawn_core_democratic_mod
 		remove_variable = ut_new_dawn_bar_freeze
+		
+		hidden_effect = {
+			remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
+			remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
+			remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
+			remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
+		}
 	
 		je:je_ut_new_dawn = {
 			add_progress = {
@@ -633,8 +640,6 @@ je_ut_new_dawn_democratic = {
 			remove_ideology = ideology_patriotic_democratic
 			add_ideology = ideology_patriotic
 		}
-		
-		
 	}
 
 	weight = 100
@@ -797,6 +802,14 @@ je_ut_new_dawn_autocratic = {
 		remove_modifier = je_ut_new_dawn_autocrat_focus
 		remove_modifier = ut_new_dawn_core_autocratic_mod
 		remove_variable = ut_new_dawn_bar_freeze
+
+		hidden_effect = {
+			remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
+			remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
+			remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
+			remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
+		}
+
 		je:je_ut_new_dawn = {
 			add_progress = {
 				value = -120
@@ -1021,6 +1034,14 @@ je_ut_new_dawn_fascist = {
 		remove_modifier = je_ut_new_dawn_fascist_focus
 		remove_modifier = ut_new_dawn_core_fascist_mod
 		remove_variable = ut_new_dawn_bar_freeze
+
+		hidden_effect = {
+			remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
+			remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
+			remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
+			remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
+		}
+
 		je:je_ut_new_dawn = {
 			add_progress = {
 				value = -120
@@ -1215,6 +1236,14 @@ je_ut_new_dawn_communist = {
 		remove_modifier = je_ut_new_dawn_communist_focus
 		remove_modifier = ut_new_dawn_core_communist_mod
 		remove_variable = ut_new_dawn_bar_freeze
+
+		hidden_effect = {
+			remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
+			remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
+			remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
+			remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
+		}
+
 		je:je_ut_new_dawn = {
 			add_progress = {
 				value = -120
