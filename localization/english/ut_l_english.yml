@@ -898,7 +898,7 @@
  ut_je_propaganda_target_goal: "Source country has completed propaganda campaign (currently [JournalEntry.GetGoalProgressValue]/[JournalEntry.GetTotalGoalValue])."
  ut_je_propaganda_target_reason: "The country behind the propaganda campaign is attempting to weaken the core ideology in our country."
  ut_je_propaganda_target_abort_tt: "The country behind the propaganda campaign has aborted the campaign."
- ut_je_propaganda_target_effect: "$ut_add_new_dawn_progress_neg_25$ and gets Propaganda modifier for 2 years"
+ ut_je_propaganda_target_effect: "$ut_add_new_dawn_progress_neg_25$ and receive the Propaganda modifier for 2 years"
 
  ut_propaganda_campaign_source_happened_title: "Propaganda Campaign conducted"
  ut_propaganda_campaign_source_happened_desc: "A coordinated propaganda campaign was launched against [SCOPE.sCountry('ut_je_propaganda_source_target_scope').GetName] to shape public opinion and weaken the target's government's ideology."
@@ -1884,7 +1884,7 @@
  ut_tech_preview_cheat_research_modifier: "Forbidden Technologies"
 
  ut_tech_preview_cheat_mining: "Project Utopia: Mining Buildings Cheat" 
- ut_tech_preview_cheat_mining_desc: "Mod possibily not enabled on game start - may enable Mining buildings that do not have placement requirements."
+ ut_tech_preview_cheat_mining_desc: "Mod possibly not enabled on game start - may enable Mining buildings that do not have placement requirements."
  ut_mining_cheat_enable_tt: "Enables [GetBuildingType('building_bauxite_mine_debug').GetName] and [GetBuildingType('building_rare_earths_mine_debug').GetName] for all countries #bold permanently#!."
  utopia_mod.1.t: "$ut_tech_preview_cheat_mining$"
  utopia_mod.1.d: "$ut_tech_preview_cheat_mining_desc$"

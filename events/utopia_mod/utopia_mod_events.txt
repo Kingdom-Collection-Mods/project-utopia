@@ -357,10 +357,6 @@ utopia_mod.6 = {
 	desc = ut_nuclear_event_minor_desc
 	flavor = ut_nuclear_event_minor_flavor
 
-	immediate = {
-		save_scope_as = nuclear_accident_state
-	}
-
 	option = {
 		name = utopia.continue
 		default_option = yes
