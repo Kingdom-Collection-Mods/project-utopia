@@ -9,6 +9,7 @@
  utopia.continue: "Weiter"
  utopia.abort: "Abbrechen"
  utopia.cheat: "Cheaten"
+ utopia.enable: "Aktivieren"
  utopia.disable: "Deaktivieren"
  utopia.error: "Fehler" 
 
@@ -124,6 +125,13 @@
  ut_je_nuclear_power_plant_construction_site.success.f: "Der Standort für das Kernkraftwerk wurde erfolgreich ausgewählt. Die Lage ist ideal für den Bau einer Anlage, die saubere und effiziente Energie für kommende Generationen bereitstellen wird."
  ut_nuclear_power_plant_construction_site_mod: "Aktiver Bauplatz für das Kernkraftwerk"
 
+ ut_nuclear_event_critical_title: "Nuclear Meltdown in [SCOPE.sState('nuclear_accident_state').GetName]"
+ ut_nuclear_event_critical_desc: "A critical nuclear accident has occurred at the power plant."
+ ut_nuclear_event_critical_flavor: "The consequences of the accident are severe, affecting both the local population and the environment of [SCOPE.sState('nuclear_accident_state').GetName] and beyond. The radiation release has caused widespread contamination, leading to evacuations, health crises, and long-term ecological damage. The incident serves as a stark reminder of the risks associated with nuclear energy and the importance of stringent safety measures."
+ ut_nuclear_event_minor_title: "Nuclear Incident"
+ ut_nuclear_event_minor_desc: "A minor nuclear incident has occurred at the nuclear power plant in [SCOPE.sState('nuclear_accident_state').GetName]."
+ ut_nuclear_event_minor_flavor: "The incident has been contained, but it serves as a reminder of the risks associated with nuclear energy."
+
  ut_share_nuclear_power_research: "Kernenergie teilen"
  ut_share_nuclear_power_research_name: "Kernforschungsprojekte"
  ut_share_nuclear_power_research_desc: "Teilen Sie das Wissen und die Fortschritte, die wir aus unserer Kernforschung gewonnen haben."
@@ -140,7 +148,7 @@
  ut_share_nuclear_power_research_proposal_third_party_declined_name: "$ut_share_nuclear_power_research_name$ Denied"
  ut_share_nuclear_power_research_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] was denied $ut_share_nuclear_power_research_name$ from [INITIATOR_COUNTRY.GetName]."
  ut_share_nuclear_power_research_effects_desc: "REPLACE_ME"
- ut_share_nuclear_power_research_article_short_desc: "REPLACE_ME"
+ ut_share_nuclear_power_research_article_short_desc: "Shares Nuclear Power research with [TARGET_COUNTRY.GetNameNoFormatting]"
 
  ut_research_high_tech_computers: "Microchips erforschen"
  ut_research_high_tech_computers_desc: "Mit dem Ziel, an der Spitze der technologischen Entwicklung zu bleiben, schlagen führende Wissenschaftler die Gründung eines nationalen Forschungszentrums für Hochleistungscomputer vor."
@@ -916,6 +924,7 @@
 
  country_new_dawn_propaganda_source_efficiency_mult: "\"$ut_je_propaganda_source$\" efficiency"
  country_new_dawn_propaganda_source_speed_mult: "\"$ut_je_propaganda_source$\" speed"
+ country_new_dawn_propaganda_source_speed_mult_desc: "Changes the speed at which the [GetDiplomaticActionType('ut_new_dawn_start_propaganda_campaign').GetName] progresses."
 
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
  UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
@@ -1016,7 +1025,8 @@
  ut_fund_ideology_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds aligned political groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], increasing [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] ideological progress in [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAdjectiveNoFormatting]'s ideology.\n\n$ut_fund_ideology_effect$"
  ut_fund_ideology_desc: "Fund aligned political groups in a target country without a ruling ideology to increase their ideological progress.\n\n$ut_fund_ideology_effect$"
  ut_fund_ideology_effect: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
- country_new_dawn_fund_ideology_efficiency_add: "\"$ut_fund_ideology$\" efficiency"
+ country_new_dawn_fund_ideology_efficiency_add: "[GetDiplomaticActionType('ut_fund_ideology').GetName] [concept_ut_nd_progress_points] gain"
+ country_new_dawn_fund_ideology_efficiency_add_desc: "[GetDiplomaticActionType('ut_fund_ideology').GetName] target country gains additional [concept_ut_nd_progress_points] to source country's core ideology."
 
  ut_has_new_dawn_progress_100: "Hat #b 100#! [concept_ut_nd_progress_points]"
  ut_has_new_dawn_progress_75: "Hat #b 75#! [concept_ut_nd_progress_points]"
@@ -1060,7 +1070,11 @@
  ut_fund_opposition_source_happened_tt: "Funding Opposition in [SCOPE.sCountry('ut_fund_opposition_target_scope').GetName] was successful, they lost #r 25#! [concept_ut_nd_progress_points]"
  ut_fund_opposition_target_happened_title: "Opposition Funded by [SCOPE.sCountry('ut_fund_opposition_source_scope').GetName]"
  ut_fund_opposition_target_happened_desc: "[SCOPE.sCountry('ut_fund_opposition_source_scope').GetName] is funding opposition groups in our country, this may lead to revolts in your opposition groups reducing your ideology [concept_ut_nd_progress_points]."
+ country_new_dawn_fund_opposition_efficiency_mult: "\"[GetDiplomaticActionType('ut_fund_opposition').GetName]\" success chance"
+ country_new_dawn_fund_opposition_efficiency_mult_desc: "Changes the success chance of [GetDiplomaticActionType('ut_fund_opposition').GetName]."
 
+ country_new_dawn_fund_opposition_efficiency_against_autocratic_mult: "$country_new_dawn_fund_opposition_efficiency_mult$ (Against Autocracies)"
+ country_new_dawn_fund_opposition_efficiency_against_autocratic_mult_desc: "$country_new_dawn_fund_opposition_efficiency_mult_desc$ (Against [concept_ut_nd_autocrat_core] targets)"
 
 #power blocs
  principle_group_modern_trade_league: "Moderne Handelsliga"
@@ -1868,6 +1882,13 @@
  utopia_mod.2.f: "Was ist Fortschritt, wenn nicht die Beherrschung der Zeit selbst? Während andere über Ethik und Gleichheit debattieren, haben wir den Schleier der Möglichkeiten durchbrochen. Mit diesem beispiellosen Anstieg an Innovationen überspringen wir Generationen langsamer, bürokratischer Entwicklung. Lassen Sie die Geschichte uns beurteilen - oder lassen Sie es keine Geschichte geben, nur die Brillanz von morgen, geschrieben in Schaltkreisen und Stahl, nicht in Tinte und Pergament. Utopia wird nicht gegeben. Es wird genommen."
  ut_tech_preview_cheat_disable_tt: "Deaktiviert den Cheat dauerhaft"
  ut_tech_preview_cheat_research_modifier: "Verbotene Technologien"
+
+ ut_tech_preview_cheat_mining: "Project Utopia: Mining Buildings Cheat" 
+ ut_tech_preview_cheat_mining_desc: "Mod possibily not enabled on game start - may enable Mining buildings that do not have placement requirements."
+ ut_mining_cheat_enable_tt: "Enables [GetBuildingType('building_bauxite_mine_debug').GetName] and [GetBuildingType('building_rare_earths_mine_debug').GetName] for all countries #bold permanently#!."
+ utopia_mod.1.t: "$ut_tech_preview_cheat_mining$"
+ utopia_mod.1.d: "$ut_tech_preview_cheat_mining_desc$"
+ utopia_mod.1.f: "The unlocked buildings [GetBuildingType('building_bauxite_mine_debug').GetName] and [GetBuildingType('building_rare_earths_mine_debug').GetName] can be placed anywhere. They are intended for trying out Project Utopia in an ongoing run. The mod is not balanced for this. Use at your own risk."
 
  ut_tech_preview_cheat_new_dawn: "Project Utopia: Neuer Aufbruch Cheat" 
  ut_tech_preview_cheat_new_dawn_desc: "Als Teil der technischen Vorschau kann man [concept_ut_new_dawn] cheaten."
