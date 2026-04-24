@@ -475,7 +475,7 @@
  je_ut_communist_world_revolution_effect_tt: "Unlocks [GetLawType('ut_law_international_council').GetName]"
 
  je_ut_new_dawn_fascist: "Fascism"
- je_ut_new_dawn_fascist_reason: "#italic - [Concept('concept_ut_nd_fascist_core', 'Fascist')]#!"
+ je_ut_new_dawn_fascist_reason: "Society has been reorganized. National identity and the nation prioritize the common good over individual interests. Critical voices are viewed as a threat, while the media and institutions are brought into line.\n\nWhether you reinforce this course and impose your will on the nations, or whether humanity's hope is restored, is now up to you. #italic - [Concept('concept_ut_nd_fascist_core', 'Fascist')]#!"
 
  je_ut_new_dawn_communist: "Communism"
  je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads. \n #italic - [Concept('concept_ut_nd_communist_core', 'Communist')] [concept_ut_nd_path_to_utopia]#!"
@@ -549,7 +549,7 @@
  ut_nd_mp_sw_note: "#italic From 0%->4% population share. Maximum Multiplier x3.#!"
 
  concept_ut_nd_focus: "Focus"
- concept_ut_nd_focus_desc: "When the #b New Dawn#! journal entry is active, focus on the New Dawn ideology becomes available. Focusing on an ideology makes it much more likely to become dominant."
+ concept_ut_nd_focus_desc: "When the #b New Dawn#! journal entry is active, focus on the New Dawn ideology becomes available. Focusing on an ideology makes it much more likely to become dominant. If the ideology becomes entrenched, the focus also remains active."
 
  concept_ut_nd_stance: "Stance"
  concept_ut_nd_stance_desc: "Each ideology has a stance towards other ideologies. The stance affects acceptance of joining and staying in a power bloc, and most new Project Utopia actions. Work in progress."

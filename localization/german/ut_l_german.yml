@@ -380,7 +380,7 @@
  
 
  je_ut_new_dawn_democratic: "Demokratischer Aufbruch"
- je_ut_new_dawn_democratic_reason: "Das Volk fordert Mitsprache, Transparenz und freie Wahlen. Überall im Land bilden sich neue Parteien, Gewerkschaften gewinnen an Einfluss, und Proteste für Bürgerrechte füllen die Straßen. \n Ob dieser Aufbruch in eine stabile Demokratie führt oder im Widerstand der alten Eliten erstickt, liegt nun in deiner Hand. Wirst du Reformen zulassen - oder versuchen, die alte Ordnung mit aller Macht zu bewahren? \n #italic - [Concept('concept_ut_nd_democrat_core', 'Demokratisch')] [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_democratic_reason: "Das Volk fordert Mitsprache, Transparenz und freie Wahlen. Überall im Land bilden sich neue Parteien, Gewerkschaften gewinnen an Einfluss, und Proteste für Bürgerrechte füllen die Straßen.\n\nOb dieser Aufbruch in eine stabile Demokratie führt oder im Widerstand der alten Eliten erstickt, liegt nun in deiner Hand. Wirst du Reformen zulassen - oder versuchen, die alte Ordnung mit aller Macht zu bewahren? \n #italic - [Concept('concept_ut_nd_democrat_core', 'Demokratisch')] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_points_bar: "Fortschrittspunkte"
  je_ut_new_dawn_points_bar_desc: "Fortschrittspunkte: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
  concept_ut_nd_progress_points: "Fortschrittspunkte"
@@ -476,10 +476,10 @@
  je_ut_communist_world_revolution_effect_tt: "Schaltet [GetLawType('ut_law_international_council').GetName] frei"
 
  je_ut_new_dawn_fascist: "Faschismus"
- je_ut_new_dawn_fascist_reason: "#italic - [Concept('concept_ut_nd_fascist_core', 'Faschistisch')]#!"
+ je_ut_new_dawn_fascist_reason: "Die Gesellschaft wurde neugeordnet. Nationale Identität und die Nation, stellen das Gemeinwohl über Einzelinteressen. Kritische Stimmen gelten als Gefahr, während Medien und Institutionen auf Linie gebracht werden.\n\nOb du diesen Kurs festigst und den Nationen deinen Willen aufzwingst oder ob der Hoffnung der Menschlichkeit zurück kommt, liegt nun bei dir. #italic - [Concept('concept_ut_nd_fascist_core', 'Faschistisch')]#!"
 
  je_ut_new_dawn_communist: "Kommunismus"
- je_ut_new_dawn_communist_reason: "Die Menschen fordern Gleichheit, Gerechtigkeit und das Ende der Klassen. Im ganzen Land bilden sich Arbeiterräte, Gewerkschaften gewinnen an Einfluss und Proteste für soziale Rechte füllen die Straßen. \n Ob dieses Erwachen führt. \n #italic - [Concept('concept_ut_nd_communist_core', 'Kommunismus')] [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_communist_reason: "Die Menschen fordern Gleichheit, Gerechtigkeit und das Ende der Klassen. Im ganzen Land bilden sich Arbeiterräte, Gewerkschaften gewinnen an Einfluss und Proteste für soziale Rechte füllen die Straßen.\n\nOb dieses Erwachen führt. \n #italic - [Concept('concept_ut_nd_communist_core', 'Kommunismus')] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_communist_complete_condition_tt: "Never (wip)"
 
  ut_new_dawn_autocrat_focus: "Autokratischer Fokus"
@@ -511,7 +511,7 @@
 
 
  concept_ut_nd_democrat_core: "Demokratie"
- concept_ut_nd_democrat_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_democrat_progress_from_characters$\n- $ut_nd_democrat_progress_from_igs$\n- $ut_nd_democrat_progress_from_laws$\n\n#bold Verfügbare [concept_ut_nd_milestones]#! - Preview\nUnlock Ideologies: [GetIdeology('ideology_liberal_democratic').GetName], [GetIdeology('ideology_reactionary_democratic').GetName], [GetIdeology('ideology_moralist_democratic').GetName], [GetIdeology('ideology_plutocratic_democratic').GetName], [GetIdeology('ideology_socialist_democratic').GetName], [GetIdeology('ideology_jingoist_democratic').GetName]\nUnlock Modifikatoren: [GetStaticModifier('je_ut_new_dawn_democratic_power_bloc_mod').GetDesc], [GetStaticModifier('je_ut_new_dawn_democratic_fair_elections_mod').GetDesc]\n\n#bold Verfügbare [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n - [GetArticleType('ut_democracy_article').GetNameNoIcon]\n - [GetLawType('ut_law_monarchy_democratic').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_democratic_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_democratic_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nStrengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people.\n\n#i Development Status: Playable - Rough edges#!"
+ concept_ut_nd_democrat_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_democrat_progress_from_characters$\n- $ut_nd_democrat_progress_from_igs$\n- $ut_nd_democrat_progress_from_laws$\n\n#bold Verfügbare [concept_ut_nd_milestones]#! - Preview\nFreischaltbare Ideologien: [GetIdeology('ideology_liberal_democratic').GetName], [GetIdeology('ideology_reactionary_democratic').GetName], [GetIdeology('ideology_moralist_democratic').GetName], [GetIdeology('ideology_plutocratic_democratic').GetName], [GetIdeology('ideology_socialist_democratic').GetName], [GetIdeology('ideology_jingoist_democratic').GetName]\nFreischaltbare Modifikatoren: [GetStaticModifier('je_ut_new_dawn_democratic_power_bloc_mod').GetDesc], [GetStaticModifier('je_ut_new_dawn_democratic_fair_elections_mod').GetDesc]\n\n#bold Verfügbare [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n - [GetArticleType('ut_democracy_article').GetNameNoIcon]\n - [GetLawType('ut_law_monarchy_democratic').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_democratic_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_democratic_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nStrengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people.\n\n#i Development Status: Playable - Rough edges#!"
  ut_nd_democratic_stance: "Verbündet: [concept_ut_nd_democrat_core]\nNeutral: [concept_ut_nd_communist_core], [concept_ut_nd_autocrat_core]\nFeindlich: [concept_ut_nd_fascist_core]"
 
  concept_ut_nd_communist_core: "Kommunismus"
@@ -550,7 +550,7 @@
  ut_nd_mp_sw_note: "#italic Von 0 %-4 % Bevölkerungsanteil. Maximaler Multiplikator x3.#!"
 
  concept_ut_nd_focus: "Fokus"
- concept_ut_nd_focus_desc: "Wenn der #b Neuer Aufbruch#! Journal-Eintrag aktiv ist, wird Fokus für die Neuer Aufbruch-Ideologie verfügbar. Der Fokus auf eine Ideologie erhöht die Wahrscheinlichkeit, dass sie dominant wird."
+ concept_ut_nd_focus_desc: "Wenn der #b Neuer Aufbruch#! Journal-Eintrag aktiv ist, wird Fokus für die Neuer Aufbruch-Ideologie verfügbar. Der Fokus auf eine Ideologie erhöht die Wahrscheinlichkeit, dass sie dominant wird. Wenn die Ideologie gefestigt wird, ist der Fokus auch aktiv."
 
  concept_ut_nd_stance: "Haltung"
  concept_ut_nd_stance_desc: "Jede Ideologie hat eine Haltung gegenüber anderen Ideologien. Die Haltung beeinflusst die Akzeptanz des Beitritts und Verbleibs in einem Machtblock sowie die meisten neuen Project Utopia-Aktionen. Work in progress."
