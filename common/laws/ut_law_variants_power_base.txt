@@ -300,7 +300,6 @@ ut_law_monarchy_corporate_state = {
 	}
 
 	is_visible = {
-		always = no #todo remove
 		ut_new_dawn_has_core_trigger = yes
 	}
 
