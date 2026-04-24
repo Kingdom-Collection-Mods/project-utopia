@@ -158,7 +158,7 @@
  ut_je_ut_research_high_tech_computers_research.success.f: "Flüssiggekühlte Prozessoren, Quantenfluktuationen, neuronale Netze - das Zeitalter der rohen Logik weicht der Eleganz synthetischen Denkens. Unsere Maschinen rechnen nicht mehr - sie modellieren Realität."
  ut_research_high_tech_computers_research_mod: "Forschung an Hochleistungscomputern"
  ut_research_high_tech_computers_research_mod_desc: "Die nationale Forschung konzentriert sich auf die Entwicklung modernster Rechentechnologien. Prototypen entstehen, Labore werden erweitert, und die Grenze zwischen Rechenleistung und Vision beginnt zu verschwimmen."
- ut_je_ut_research_high_tech_computers_research_goal: "Auf den Abschluss der #BOLD 4-Jahres#!-Forschungsdauer warten (4 years if research institute at 100% occupancy)"
+ ut_je_ut_research_high_tech_computers_research_goal: "Auf den Abschluss der #BOLD 4-Jahres#!-Forschungsdauer warten (4 Jahre wenn Forschungsinstitute bei 100% Beschäftigung)"
 
  je_ut_new_dawn: "Neuer Aufbruch"
  je_ut_new_dawn_reason: "$concept_ut_new_dawn_desc$\n\n#lore [ROOT.GetCountry.GetCustom('ut_utopia_enabled_on_game_started_loc')]#!"
@@ -258,14 +258,14 @@
  ut_new_dawn_focus_freeze_tt: "Fokus nicht deaktiviert"
  ut_new_dawn_focus_tt: "#y Aktiviert:#! verhindere einmalig, dass andere Ideologien übernehmen"
  country_new_dawn_focus_selected_progress: "Ausgewählte Ideologie Fortschritt"
- country_new_dawn_focus_selected_progress_desc: "Erhöht den Zuwachs von [concept_ut_nd_progress_points] in Richtung der ausgewählten Ideologie."
+ country_new_dawn_focus_selected_progress_desc: "Erhöht den Zuwachs von [Concept('concept_ut_nd_progress_points', 'Fortschrittspunkten')] in Richtung der ausgewählten Ideologie."
  country_new_dawn_progress_points_progress: "[concept_ut_nd_progress_points] Zuwachs"
- country_new_dawn_progress_points_progress_desc: "Ändert den Zuwachs von [concept_ut_nd_progress_points] für die Kernideologie."
+ country_new_dawn_progress_points_progress_desc: "Ändert den Zuwachs von [Concept('concept_ut_nd_progress_points', 'Fortschrittspunkten')] für die Kernideologie."
 
  je_ut_new_dawn_critical_lower_bound_fail_tt: "Hat #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! [concept_ut_nd_progress_points]"
 
  ut_new_dawn_communist_focus: "Kommunistischer Fokus"
- ut_new_dawn_communist_focus_desc: "#italic wip: Currently being worked on#!"
+ ut_new_dawn_communist_focus_desc: "#italic Vorschau: Enthält eine Basisimplementierung von [concept_ut_nd_abilities] und [concept_ut_nd_milestones].#!"
  ut_new_dawn_communist_bar: "Kommunistisch"
  ut_new_dawn_communist_bar_desc: "Kommunistischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_communist_progress_from_characters: "kombinierte [concept_popularity] von [concept_ut_nd_communist_characters]"
@@ -338,7 +338,7 @@
  ut_new_dawn_ideology_status_democratic_tt: "#b [concept_ut_nd_progress_points]#!: #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]/100#! [Country.GetCustom('ut_new_dawn_progress_trend')]\n\n#b [concept_ut_new_dawn]#!\n$ut_phase_1_trend_tooltip$\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_democratic_stance$"
 
  ut_new_dawn_democrat_focus: "Demokratischer Fokus"
- ut_new_dawn_democrat_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities] and [concept_ut_nd_milestones].#!"
+ ut_new_dawn_democrat_focus_desc: "#italic Vorschau: Enthält eine Basisimplementierung von [concept_ut_nd_abilities] und [concept_ut_nd_milestones].#!"
  ut_new_dawn_democrat_bar: "Demokratisch"
  ut_new_dawn_democrat_bar_desc: "Demokratischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_democrat_progress_from_characters: "kombinierte [concept_popularity] von [concept_ut_nd_democrat_characters]"
@@ -396,6 +396,7 @@
  new_dawn_ideology_upper_bound_tt: "Hat #v [SCOPE.ScriptValue('new_dawn_ideology_upper_bound')] Fortschrittspunkte#!"
  new_dawn_ideology_milestone_done_tt: "Hat den [Concept('concept_ut_nd_milestones', 'Meilenstein')] #v nicht#! abgeschlossen"
  new_dawn_ideology_previous_milestone_done_tt: "Hat #v den vorherigen [Concept('concept_ut_nd_milestones', 'Meilenstein')] abgeschlossen#!"
+ new_dawn_ideology_any_previous_milestone_done_tt: "Hat #v beliebigen vorherigen [Concept('concept_ut_nd_milestones', 'Meilenstein')] abgeschlossen#!"
 
  je_ut_new_dawn_democratic_cultural_values: "Demokratische Kulturwerte"
  je_ut_new_dawn_democratic_cultural_values_desc: "Ein demokratisches Fundament kann nur auf kulturellen Werten gedeihen, die Pluralismus und individuelle Freiheiten respektieren. Führende Persönlichkeiten in Wirtschaft und Religion wenden sich einer demokratischeren Weltsicht zu."
@@ -437,15 +438,15 @@
  je_ut_new_dawn_form_paramilitary_groups_desc: "Inoffizielle militärische Organisationen zur Durchsetzung der Parteiherrschaft gründen.\n\n#italic Historischer Kontext:\nDie Sturmabteilung, seit den 1920er Jahren aktiv, wuchs Anfang der 1930er Jahre zu einer mächtigen paramilitärischen Kraft heran, die Wähler einschüchterte und Oppositionstreffen störte. Am 30. Juni 1934, in der Nacht der langen Messer, säuberte Hitler die SA-Führung, um seine Macht zu festigen, und stärkte die ideologisch geprägtere Schutzstaffel.\n\nEine am Militär orientierte Parteiorganisation ist eine Dimension des Faschismus.#!"
  je_ut_new_dawn_conformity: "Gleichschaltung"
  je_ut_new_dawn_conformity_desc: "Strikte gesellschaftliche Ausrichtung an den Idealen des Staates durchsetzen.\n\n#italic Historischer Kontext:\nAb 1933 setzten die Nationalsozialisten die Gleichschaltung um - einen Prozess der Angleichung aller gesellschaftlichen Bereiche, darunter Medien, Bildung, Kultur und Religion, an die NS-Ideologie. Unabhängige Gewerkschaften wurden am 2. Mai 1933 verboten und durch die staatlich geführte Deutsche Arbeitsfront ersetzt.\n\nEin totalitäres hierarchisches Gesellschaftsmodell ist eine Dimension des Faschismus.#!"
- je_ut_new_dawn_unite_heritage: "Einheitliches Volk"
+ je_ut_new_dawn_unite_heritage: "Nationalidentität"
  je_ut_new_dawn_unite_heritage_desc: "Eine gemeinsame nationale Identität auf der Grundlage kultureller Mythen und Geschichte schaffen.\n\n#italic Historischer Kontext:\nDas NS-Regime förderte eine mythische Vision der germanischen Geschichte durch Organisationen wie das Ahnenerbe (gegründet 1935), das pseudowissenschaftliche Rassentheorien verbreitete. NS-Bildung und Propaganda verherrlichten eine vermeintliche arische Vergangenheit, um die Bevölkerung unter einer ausgrenzenden, ethnonationalistischen Identität zu vereinen.\n\nEine kulturstiftende irrationale weltliche Ersatzreligion ist eine Dimension des Faschismus.#!"
  je_ut_new_dawn_unite_heritage_trigger_tt: "Todo"
- je_ut_new_dawn_volksgemeinschaft: "Wir - die Anderen"
- je_ut_new_dawn_volksgemeinschaft_desc: "Eine rassisch definierte Volksgemeinschaft aufbauen, die Außenseiter ausschließt.\n\n#italic Historischer Kontext:\nDas Konzept der Volksgemeinschaft wurde ab 1933 genutzt, um die Einheit unter 'rassisch reinen' Deutschen zu fördern. Es schloss Juden, Sinti und Roma, Menschen mit Behinderungen und andere aus - und legte damit den Grundstein für die Nürnberger Gesetze von 1935, die Antisemitismus legalisierten und rassische Segregation institutionalisierten.\n\nDiese Ideologie bereitete den Weg für die systematische Ausgrenzung, die im Holocaust gipfelte, in dem über sechs Millionen Juden sowie andere marginalisierte Gruppen in einem staatlich geplanten Völkermord ermordet wurden.#!"
+ je_ut_new_dawn_volksgemeinschaft: "Wir und die Anderen"
+ je_ut_new_dawn_volksgemeinschaft_desc: "Eine rassisch definierte Volksgemeinschaft aufbauen, die Außenseiter ausschließt.\n\n#italic Historischer Kontext:\nDas Konzept der Volksgemeinschaft wurde ab 1933 genutzt, um die Einheit unter 'arischen' Deutschen zu fördern. Es schloss Juden, Sinti und Roma, Menschen mit Behinderungen und andere aus - und legte damit den Grundstein für die Nürnberger Gesetze von 1935, die Antisemitismus legalisierten und rassische Segregation institutionalisierten.\n\nDiese Ideologie bereitete den Weg für die systematische Ausgrenzung, die im Holocaust gipfelte, in dem über sechs Millionen Juden sowie andere marginalisierte Gruppen in einem staatlich geplanten Völkermord ermordet wurden.#!"
  je_ut_new_dawn_expansionism: "Expansionismus"
  je_ut_new_dawn_expansionism_desc: "Territoriales Wachstum für nationalen Ruhm und Lebensraum anstreben.\n\n#italic Historischer Kontext:\nGetrieben von der Ideologie des Lebensraums annektierte NS-Deutschland im März 1938 Österreich (Anschluss), übernahm im September 1938 das Sudetenland und überfiel am 1. September 1939 Polen, was den Zweiten Weltkrieg auslöste. Expansion war ein zentrales Element der nationalsozialistischen Außenpolitik mit dem Ziel, Osteuropa zu erobern und seine Bevölkerung zu vertreiben.\n\nDie faschistische Ideologie führte in den Zweiten Weltkrieg, der weltweit über 60 Millionen Menschenleben forderte.#!"
- je_ut_new_dawn_fascist_final_tt: "[concept_ut_nd_fascist_final_context]: There exists only [ROOT.GetCountry.GetName]"
- concept_ut_nd_fascist_final_context: "Tausendjähriges Reich"
+ je_ut_new_dawn_fascist_final_tt: "[concept_ut_nd_fascist_final_context]: Es existiert nur [ROOT.GetCountry.GetName]"
+ concept_ut_nd_fascist_final_context: "Eine Welt, eine Nation"
  concept_ut_nd_fascist_final_context_desc: "Die Errichtung einer dauerhaften faschistischen Ordnung unter einer einzigen Ideologie und Rasse.\n\n#italic Historischer Kontext:\nDas NS-Regime strebte ein „Tausendjähriges Reich“ an - ein totalitäres Imperium unter der Führung einer einzigen Partei, vereint unter einer rassistisch definierten Ideologie. Diese Vision trieb eine unerbittliche Militarisierung, Propaganda und Völkermord voran, mit dem Ziel, die Welt durch dauerhafte Herrschaft neu zu gestalten. Obwohl es nur 12 Jahre (1933-1945) bestand, hinterließen die Handlungen des Regimes katastrophale globale Folgen und dienen bis heute als Warnung davor.#!"
  je_ut_new_dawn_fascist_complete_condition_tt: "Alle [concept_ut_nd_milestones] abgeschlossen"
  concept_ut_nd_milestones: "Meilensteine" 
@@ -474,7 +475,7 @@
  je_ut_communist_world_revolution_effect_tt: "Schaltet [GetLawType('ut_law_international_council').GetName] frei"
 
  je_ut_new_dawn_fascist: "Faschismus"
- je_ut_new_dawn_fascist_reason: "Die Gesellschaft wurde neugeordnet. Nationale Identität und die Nation, stellen das Gemeinwohl über Einzelinteressen. Kritische Stimmen gelten als Gefahr, während Medien und Institutionen auf Linie gebracht werden.\n\nOb du diesen Kurs festigst und den Nationen deinen Willen aufzwingst oder ob der Hoffnung der Menschlichkeit zurück kommt, liegt nun bei dir. #italic - [Concept('concept_ut_nd_fascist_core', 'Faschistisch')]#!"
+ je_ut_new_dawn_fascist_reason: "Die Gesellschaft wurde neu geordnet. Nationale Identität und die Nation, stellen das Gemeinwohl über Einzelinteressen. Kritische Stimmen gelten als Gefahr, während Medien und Institutionen auf Linie gebracht werden.\n\nOb du diesen Kurs festigst und den Nationen deinen Willen aufzwingst oder ob die Menschlichkeit zurück kommt, liegt nun bei dir.\n #italic - [Concept('concept_ut_nd_fascist_core', 'Faschistisch')]#!"
 
  je_ut_new_dawn_communist: "Kommunismus"
  je_ut_new_dawn_communist_reason: "Die Menschen fordern Gleichheit, Gerechtigkeit und das Ende der Klassen. Im ganzen Land bilden sich Arbeiterräte, Gewerkschaften gewinnen an Einfluss und Proteste für soziale Rechte füllen die Straßen.\n\nWohin dieses Erwachen führt, liegt nun bei dir.\n #italic - [Concept('concept_ut_nd_communist_core', 'Kommunismus')] [concept_ut_nd_path_to_utopia]#!"
@@ -517,7 +518,7 @@
  ut_nd_communist_stance: "Verbündet: [concept_ut_nd_communist_core]\nNeutral: [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core]\nFeindlich: [concept_ut_nd_fascist_core]"
 
  concept_ut_nd_path_to_utopia: "Pfad zur Utopie"
- concept_ut_nd_path_to_utopia_desc: "Wenn eine Ideologie erfolgreich den [concept_ut_new_dawn] Journal-Eintrag abschließt, kann sie ihren [concept_ut_nd_path_to_utopia] beginnen - jede Ideologie kommt mit dem gleichen Basis-Set an Fähigkeiten, gewürzten Fähigkeiten, gewürzten Modifikatoren und kann sogar ein [concept_ut_nd_utopia] aufweisen, das erreicht werden soll.\n\nEin [Concept('concept_humiliation', 'gedemütigtes')] Land wird wahrscheinlich seinen [concept_ut_nd_path_to_utopia] aufgeben und eine neue Ideologie wählen.\n\n#bold Basis [concept_ut_nd_abilities]:#!\n - [GetDiplomaticActionType('ut_influence_new_dawn_major_power').GetName]\n - [GetDiplomaticActionType('ut_fund_ideology').GetName]\n - [GetDiplomaticActionType('ut_fund_opposition').GetName]\n\n#b 'Neuer Aufbruch' ist in Arbeit#!\n#italic Hinweis zu den Statusnotizen:\ntbd (To Be Determined): Keine tatsächliche Arbeit geleistet\nwip (Work in Progress): Laufende Entwicklung, folgen Sie den Patchnotizen\nVorschau: Erste Version verfügbar für Feedback; unvollständig und nicht final\n\nIdeologien ohne Vorschau [concept_ut_nd_milestones] oder [concept_ut_nd_abilities] verfügen stattdessen über mehr statische Modifikatoren.\n\nStatusnotizen können unvollständig sein.\n\n#i Wenn ihr Project Utopia unterstützen möchtet - hinterlasst ein Like im Steam Workshop <3"
+ concept_ut_nd_path_to_utopia_desc: "Wenn eine Ideologie erfolgreich den [concept_ut_new_dawn] Journal-Eintrag abschließt, kann sie ihren [concept_ut_nd_path_to_utopia] beginnen - jede Ideologie kommt mit dem gleichen Basis-Set an Fähigkeiten, gewürzten Fähigkeiten, gewürzten Modifikatoren und kann sogar ein [concept_ut_nd_utopia] aufweisen, das erreicht werden soll.\n\nEin [Concept('concept_humiliation', 'gedemütigtes')] Land wird wahrscheinlich seinen [concept_ut_nd_path_to_utopia] aufgeben und eine neue Ideologie wählen.\n\n#bold Basis [concept_ut_nd_abilities]:#!\n - [GetDiplomaticActionType('ut_influence_new_dawn_major_power').GetName]\n - [GetDiplomaticActionType('ut_fund_ideology').GetName]\n - [GetDiplomaticActionType('ut_fund_opposition').GetName]\n\n#b 'Neuer Aufbruch' ist in Arbeit#!\n#italic Hinweis zu den Statusnotizen:\ntbd (To Be Determined): Keine tatsächliche Arbeit geleistet\nwip (In Arbeit): Laufende Entwicklung, folgen Sie den Patchnotizen\nVorschau: Erste Version verfügbar für Feedback; unvollständig und nicht final\n\nIdeologien ohne Vorschau [concept_ut_nd_milestones] oder [concept_ut_nd_abilities] verfügen stattdessen über mehr statische Modifikatoren.\n\nStatusnotizen können unvollständig sein.\n\n#i Wenn ihr Project Utopia unterstützen möchtet - hinterlasst ein Like im Steam Workshop <3"
 
  concept_ut_nd_utopia: "Utopia"
  concept_ut_nd_utopia_desc: "Utopie ist eine imaginierte ideale Gesellschaft, in der es vollständige Gerechtigkeit, Harmonie und das Gedeihen der Menschen zur Perfektion gibt - sie ist ebenso sehr eine Aspiration wie eine inspirierende Vision."
@@ -527,7 +528,7 @@
  ut_utopia_enabled_on_game_started_loc_no: "Spielstand vor dem 13. März gestartet oder Project Utopia wurde beim Spielstart nicht aktiviert.\n#bold Wichtig:#! Neue Bergbau-Ressourcen und Gesetze erfordern, dass Project Utopia seit Spielstart aktiviert ist."
 
  ut_new_dawn_fascist_focus: "Faschistischer Fokus"
- ut_new_dawn_fascist_focus_desc: "#italic tbd: Only preview of [concept_ut_nd_milestones] available. #!"
+ ut_new_dawn_fascist_focus_desc: "#italic In Design: Nur Vorschau der [concept_ut_nd_milestones] verfügbar. #!"
  ut_new_dawn_fascist_bar: "Faschistisch"
  ut_new_dawn_fascist_bar_desc: "Faschistischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_fascist_progress_from_characters: "kombinierte [concept_popularity] von [concept_ut_nd_fascist_characters]"
@@ -750,11 +751,11 @@
  ut_tax_code_dividend_tax_raised: "Dividendsteuer erhöht"
  ut_tax_code_dividend_tax_lowered: "Dividendsteuer gesenkt"
 
- ut_private_construction_amend: "Improve Private Construction"
- ut_private_construction_amend_desc: "Allows private companies to construct buildings, potentially increasing efficiency but also raising costs."
- ut_private_construction_changed: "Private Construction Changed"
- ut_private_construction_raised_mod: "Private Construction Increased"
- ut_private_construction_lower: "Decrease Private Construction"
+ ut_private_construction_amend: "Privates Bauwesen verbessern"
+ ut_private_construction_amend_desc: "Ermöglicht es privaten Unternehmen, Gebäude zu errichten, was potenziell die Effizienz steigert, aber auch die Kosten erhöht."
+ ut_private_construction_changed: "Änderungen im privaten Bauwesen"
+ ut_private_construction_raised_mod: "Privates Bauwesen verbessert"
+ ut_private_construction_lower: "Privates Bauwesen reduzieren"
 
  ut_law_private_health_research: "Private Gesundheitsforschung"
  ut_law_private_health_research_desc: "Ermöglicht es privaten Unternehmen, Gesundheitsforschung durchzuführen und medizinische Behandlungen zu entwickeln, was potenziell zu Innovationen führt, aber auch ethische Bedenken aufwirft."
@@ -817,7 +818,7 @@
  law_registration_process_desc: "Das Land hat ein geregeltes Einwanderungssystem, erst nach erfolgreicher Registrierung erhalten Einwanderer Aufenthalts- und Arbeitsrechte."
 
  lawgroup_lgbt_rights: "Sexualität - In Arbeit"
- lawgroup_lgbt_rights_desc: "Platzhalter"
+ lawgroup_lgbt_rights_desc: "Offen für Feedback und Vorschläge"
  law_mass_surveillance: "Platzhalter"
  law_mass_surveillance_desc: "Platzhalter"
  law_lgbt_rights_0: "Gesetzliches Schweigen"
