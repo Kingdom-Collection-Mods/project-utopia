@@ -315,7 +315,7 @@
 
 	on_yearly_pulse = {
 		effect = {
-			#if frozen, update decaying values yearly (for better performance)
+			#if frozen, only update decaying values yearly (for better performance)
 			if = {
 				limit = {
 					has_variable = ut_new_dawn_bar_freeze

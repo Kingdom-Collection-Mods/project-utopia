@@ -1997,8 +1997,8 @@ ut_pm_power_grid_import = {
         workforce_scaled = {
             goods_input_heavy_machinery_add = 1
 			goods_input_electronics_add = 4
-            goods_input_high_voltage_electricity_add = 400
-			goods_output_electricity_add = 400
+            goods_input_high_voltage_electricity_add = 300
+			goods_output_electricity_add = 300
         }
 
         level_scaled = {
