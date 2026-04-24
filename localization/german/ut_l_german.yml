@@ -156,8 +156,8 @@
  ut_je_ut_research_high_tech_computers_research_reason: "Die Grenzen des Berechenbaren verschieben sich. Während konventionelle Großrechner ganze Gebäude beanspruchen und an ihre Leistungsgrenzen stoßen, ebnet ein winziger Durchbruch den Weg in eine neue Ära: Mikroprozessoren mit Strukturgrößen von nur 10 Mikrometern, leistungsfähig genug, um einstige Rechenkolosse zu übertreffen.\nDiese ersten Hochleistungsrechner im Miniaturformat versprechen revolutionäre Fortschritte in Wissenschaft, Industrie und Verteidigung. Wer jetzt investiert, kann diese Entwicklung anführen - und Maschinen erschaffen, die schneller denken als jedes menschliche Gehirn."
  ut_je_ut_research_high_tech_computers_research.success.d: "Die Entwicklung einer neuen Generation von Hochleistungscomputern ist gelungen. Diese Maschinen leisten Berechnungen in bisher unerreichter Komplexität und Geschwindigkeit."
  ut_je_ut_research_high_tech_computers_research.success.f: "Flüssiggekühlte Prozessoren, Quantenfluktuationen, neuronale Netze - das Zeitalter der rohen Logik weicht der Eleganz synthetischen Denkens. Unsere Maschinen rechnen nicht mehr - sie modellieren Realität."
- ut_research_high_tech_computers_mod: "Forschung an Hochleistungscomputern"
- ut_research_high_tech_computers_mod_desc: "Die nationale Forschung konzentriert sich auf die Entwicklung modernster Rechentechnologien. Prototypen entstehen, Labore werden erweitert, und die Grenze zwischen Rechenleistung und Vision beginnt zu verschwimmen."
+ ut_research_high_tech_computers_research_mod: "Forschung an Hochleistungscomputern"
+ ut_research_high_tech_computers_research_mod_desc: "Die nationale Forschung konzentriert sich auf die Entwicklung modernster Rechentechnologien. Prototypen entstehen, Labore werden erweitert, und die Grenze zwischen Rechenleistung und Vision beginnt zu verschwimmen."
  ut_je_ut_research_high_tech_computers_research_goal: "Auf den Abschluss der #BOLD 4-Jahres#!-Forschungsdauer warten (4 years if research institute at 100% occupancy)"
 
  je_ut_new_dawn: "Neuer Aufbruch"
@@ -322,7 +322,7 @@
  ut_progress_trend_down3: "#tooltip:[ROOT.GetCountry.GetTooltipTag],ut_progress_trend_tooltip @profitability2!#!"
  ut_progress_trend_down4: "#tooltip:[ROOT.GetCountry.GetTooltipTag],ut_progress_trend_tooltip @profitability1!#!"
  ut_progress_trend_down_special: "#tooltip:[ROOT.GetCountry.GetTooltipTag],ut_progress_trend_tooltip @profitability1!@arrow_down_down!#!"
- ut_progress_trend_tooltip: "[Country.GetNameNoFormatting]'s [concept_ut_nd_progress_points] changed by #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress_diff').GetValue|2]#! last month (#v [Country.MakeScope.Var('je_ut_new_dawn_core_progress_diff_yearly').GetValue|2]#! last year)"
+ ut_progress_trend_tooltip: "[Country.GetNameNoFormatting]'s [concept_ut_nd_progress_points] hat sich um #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress_diff').GetValue|2]#! letzten Monat geändert (#v [Country.MakeScope.Var('je_ut_new_dawn_core_progress_diff_yearly').GetValue|2]#! letztes Jahr)"
 
  ut_new_dawn_ideology_status_no_new_dawn: "Keinen"
  ut_new_dawn_ideology_status_pre_new_dawn: "Viktorianisches Zeitalter"
@@ -343,7 +343,7 @@
  ut_new_dawn_democrat_bar_desc: "Demokratischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_democrat_progress_from_characters: "kombinierte [concept_popularity] von [concept_ut_nd_democrat_characters]"
  ut_nd_democrat_progress_from_igs: "[concept_clout] von [Concept('concept_interest_group', '$concept_interest_groups$')] mit [concept_ut_nd_democrat_characters] [concept_leader]"
- ut_nd_democrat_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] beschlossen: [GetLawType('law_universal_suffrage').GetName]"
+ ut_nd_democrat_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] beschlossen: [GetLawType('law_universal_suffrage').GetName], [GetLawType('law_census_voting').GetName]"
  ut_nd_democrat_progress_from_legitimacy: "[concept_legitimacy] von [concept_ut_nd_democrat_characters] [concept_ruler]"
  ut_nd_democrat_progress_from_events: "Ereignisse und andere Effekte"
  ut_nd_democrat_progress_from_focus: "Demokratischer Fokus"
@@ -370,7 +370,7 @@
  ut_new_dawn_core_internal_good_times_focus_remove: "Deaktiviere #g $ut_new_dawn_core_internal_good_times_focus$#!"
  ut_new_dawn_core_internal_good_times_focus_desc: ""
  ut_new_dawn_core_internal_good_times_focus_mod: "$ut_new_dawn_core_internal_good_times_focus$"
- ut_new_dawn_core_internal_bad_times_focus: "Innenpolitische Entbehrung"
+ ut_new_dawn_core_internal_bad_times_focus: "Innenpolitischer Verfall"
  ut_new_dawn_core_internal_bad_times_focus_add: "Aktiviere #b $ut_new_dawn_core_internal_bad_times_focus$#!"
  ut_new_dawn_core_internal_bad_times_focus_remove: "Deaktiviere #g $ut_new_dawn_core_internal_bad_times_focus$#!"
  ut_new_dawn_core_internal_bad_times_focus_desc: ""
@@ -378,7 +378,7 @@
  
 
  je_ut_new_dawn_democratic: "Demokratischer Aufbruch"
- je_ut_new_dawn_democratic_reason: "Das Volk fordert Mitsprache, Transparenz und freie Wahlen. Überall im Land bilden sich neue Parteien, Gewerkschaften gewinnen an Einfluss, und Proteste für Bürgerrechte füllen die Straßen. \n Ob dieser Aufbruch in eine stabile Demokratie führt oder im Widerstand der alten Eliten erstickt, liegt nun in deiner Hand. Wirst du Reformen zulassen - oder versuchen, die alte Ordnung mit aller Macht zu bewahren? \n #italic - [Concept('concept_ut_nd_democrat_core', 'Democratic')] [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_democratic_reason: "Das Volk fordert Mitsprache, Transparenz und freie Wahlen. Überall im Land bilden sich neue Parteien, Gewerkschaften gewinnen an Einfluss, und Proteste für Bürgerrechte füllen die Straßen. \n Ob dieser Aufbruch in eine stabile Demokratie führt oder im Widerstand der alten Eliten erstickt, liegt nun in deiner Hand. Wirst du Reformen zulassen - oder versuchen, die alte Ordnung mit aller Macht zu bewahren? \n #italic - [Concept('concept_ut_nd_democrat_core', 'Demokratisch')] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_points_bar: "Fortschrittspunkte"
  je_ut_new_dawn_points_bar_desc: "Fortschrittspunkte: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
  concept_ut_nd_progress_points: "Fortschrittspunkte"
@@ -415,7 +415,7 @@
  je_ut_new_dawn_democratic_final_desc: "Der Höhepunkt demokratischer Ideale und Praktiken, der zu einer harmonischen und gerechten Gesellschaft führt."
 
  je_ut_new_dawn_autocratic: "Autokratisches System"
- je_ut_new_dawn_autocratic_reason: "Die Nation verlangt nach Ordnung, Stabilität und starker Führung. \n #italic - [Concept('concept_ut_nd_autocrat_core', 'Autocracies')] hat keinen [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_autocratic_reason: "Die Nation verlangt nach Ordnung, Stabilität und starker Führung. \n #italic - [Concept('concept_ut_nd_autocrat_core', 'Autokratien')] haben keinen [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_autocratic_complete_condition_tt: "Es gibt keine Autokratische Utopie, der Eintrag kann nicht abgeschlossen werden. Stattdessen gibt es wiederholbare Aktionen."
 
  je_ut_new_dawn_emergency_powers: "Notstandsbefugnisse"
@@ -493,7 +493,7 @@
  ut_nd_autocrat_progress_from_focus: "Autokratischer Fokus"
  ut_nd_autocrat_progress_from_events: "Ereignisse und andere Effekte"
  concept_ut_nd_autocrat_characters: "Autokratische Charaktere"
- concept_ut_nd_autokrat_characters_desc: "Autokratische Charakter Ideologien sind: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], und [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nWenn der autokratische [concept_ut_nd_focus] aktiv ist, sind auch enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], and [GetIdeology('ideology_corporatist_leader').GetName]."
+ concept_ut_nd_autocrat_characters_desc: "Autokratische Charakter Ideologien sind: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], und [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nWenn der autokratische [concept_ut_nd_focus] aktiv ist, sind auch enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], and [GetIdeology('ideology_corporatist_leader').GetName]."
  ut_new_dawn_autocrat_status: "Autokratische Ideen prägen den Diskurs"#Core Ideology concepts
 
 #Core Ideology concepts
@@ -540,12 +540,12 @@
  concept_ut_nd_fascist_characters_desc: "Faschistische Charakter Ideologien sind: [GetIdeology('ideology_ethno_nationalist').GetName] und [GetIdeology('ideology_fascist').GetName].\nWenn Faschistischer [concept_ut_nd_focus] aktiv ist, sind ebenfalls enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] und [GetIdeology('ut_ideology_national_socialist_leader').GetName]."
  ut_new_dawn_fascist_status: "Faschistische Ideen prägen den Diskurs"
 
- ut_nd_multiplier_from_service_workers_0: "x0.5 Multiplier from less than 1% $service_workers$\n$ut_nd_mp_sw_note$"
- ut_nd_multiplier_from_service_workers_1: "x1.5 Multiplier from $service_workers$ share\n$ut_nd_mp_sw_note$"
- ut_nd_multiplier_from_service_workers_2: "x2 Multiplier from $service_workers$ share\n$ut_nd_mp_sw_note$"
- ut_nd_multiplier_from_service_workers_3: "x2.5 Multiplier from $service_workers$ share\n$ut_nd_mp_sw_note$"
- ut_nd_multiplier_from_service_workers_4: "x3 Multiplier from $service_workers$ share\n$ut_nd_mp_sw_note$"
- ut_nd_mp_sw_note: "#italic From 0%->4% population share. Maximum Multiplier x3.#!"
+ ut_nd_multiplier_from_service_workers_0: "x0,5 Multiplikator bei weniger als 1% $service_workers$\n$ut_nd_mp_sw_note$"
+ ut_nd_multiplier_from_service_workers_1: "x1,5 Multiplikator nach $service_workers$ Anteil\n$ut_nd_mp_sw_note$"
+ ut_nd_multiplier_from_service_workers_2: "x2 Multiplikator nach $service_workers$ Anteil\n$ut_nd_mp_sw_note$"
+ ut_nd_multiplier_from_service_workers_3: "x2,5 Multiplikator nach $service_workers$ Anteil\n$ut_nd_mp_sw_note$"
+ ut_nd_multiplier_from_service_workers_4: "x3 Multiplikator nach $service_workers$ Anteil\n$ut_nd_mp_sw_note$"
+ ut_nd_mp_sw_note: "#italic Von 0 %-4 % Bevölkerungsanteil. Maximaler Multiplikator x3.#!"
 
  concept_ut_nd_focus: "Fokus"
  concept_ut_nd_focus_desc: "Wenn der #b Neuer Aufbruch#! Journal-Eintrag aktiv ist, wird Fokus für die Neuer Aufbruch-Ideologie verfügbar. Der Fokus auf eine Ideologie erhöht die Wahrscheinlichkeit, dass sie dominant wird."
@@ -679,7 +679,7 @@
  ig_trait_urbanist_unhappy: "Diskriminierung"
  ig_trait_urbanist_unhappy_desc: ""
 
- ut_movement_cosmopolitan_name: "Kosmopolitanischebewegung"
+ ut_movement_cosmopolitan_name: "Kosmopolitische Bewegung"
  ut_movement_humanist_name: "Humanistenbewegung"
  ut_movement_rationalists_name: "Rationalistenbewegung"
  ut_movement_conservative_name: "Konservative Bewegung"
@@ -952,7 +952,7 @@
  ut_humiliate_power_bloc_goal_proposal_declined_desc: "[TARGET_COUNTRY.GetName] hat die Demütigungsforderung abgelehnt."
  ut_humiliate_power_bloc_goal_proposal_notification_name: "Machtblock-Anführer demütigen - Vorschlag"
  ut_humiliate_power_bloc_goal_proposal_notification_desc: "Ein Vorschlag, [TARGET_COUNTRY.GetName] zu demütigen und sie zu zwingen, deinem Machtblock beizutreten, wurde gesendet."
- ut_humiliate_power_bloc_goal_desc: "Zwinge einen [Concept('concept_humiliation', 'gemütigten')] rivalisierenden Machtblock-Anführer, deinem Block beizutreten – dadurch wird sein Machtblock aufgelöst. Ein [Concept('concept_humiliation', 'gemütigtes')] Land gibt zudem wahrscheinlich seinen [concept_ut_nd_path_to_utopia] auf."
+ ut_humiliate_power_bloc_goal_desc: "Zwinge einen [Concept('concept_humiliation', 'gemütigten')] rivalisierenden Machtblock-Anführer, deinem Block beizutreten - dadurch wird sein Machtblock aufgelöst. Ein [Concept('concept_humiliation', 'gemütigtes')] Land gibt zudem wahrscheinlich seinen [concept_ut_nd_path_to_utopia] auf."
  ut_research_agreement: "Forschungsbündnis"
  ut_research_agreement_desc: "Beide Länder vereinbaren, Forschung und Technologie zu teilen, um ihre maximalen [concept_innovation] Fähigkeiten erheblich zu steigern."
  ut_research_agreement_article_short_desc: "[FIRST_COUNTRY.GetAdjectiveNoFormatting] bildet ein Forschungsbündnis mit [SECOND_COUNTRY.GetAdjectiveNoFormatting]."
@@ -987,11 +987,11 @@
 
  ut_democracy_article: "Demokratie verbreiten"
  ut_democracy_article_desc: "Zwinge das Zielland zu [GetLawType('law_universal_suffrage').GetName] Reformen."
- ut_democracy_article_article_short_desc: "[TARGET_COUNTRY.GetAdjectiveNoFormatting] erlässt [GetLawType('law_universal_suffrage')."
+ ut_democracy_article_article_short_desc: "Verbreitet Demokratie in [TARGET_COUNTRY.GetNameNoFormatting]"
 
  ut_communism_article: "Kommunismus verbreiten"
  ut_communism_article_desc: "Zwinge das Zielland zu [GetLawType('law_council_republic').GetName] Reformen."
- ut_communism_article_article_short_desc: "Verbreitet Communismus in [TARGET_COUNTRY.GetNameNoFormatting]."
+ ut_communism_article_article_short_desc: "Verbreitet Kommunismus in [TARGET_COUNTRY.GetNameNoFormatting]."
 
  war_goal_ut_regime_change_democratic_offensive_type_name: "Demokratischer Regimewechsel" 
  war_goal_ut_regime_change_democratic_offensive_type_desc: "Zwinge ein anderes [concept_country], seine [concept_government] und $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] zu ändern, um deiner eigenen ähnlicher zu werden"
@@ -1143,11 +1143,11 @@
  ut_principle_security_bloc_6_desc: ""
  
  ut_mobilization_option_cas_jet_planes: "Luftnahunterstützung"
- ut_mobilization_option_cas_jet_planes_desc: "Jet-powered close air support aircraft"
- ut_mobilization_option_cas_jet_planes_2: "Advanced Close Air Support"
- ut_mobilization_option_cas_jet_planes_2_desc: "Advanced jet-powered close air support aircraft with improved avionics and weaponry."
+ ut_mobilization_option_cas_jet_planes_desc: "Düsengetriebenes Erdkampfflugzeug"
+ ut_mobilization_option_cas_jet_planes_2: "Fortgeschrittene Luftnahunterstützung"
+ ut_mobilization_option_cas_jet_planes_2_desc: "Fortgeschrittene düsengetriebene Erdkampfflugzeuge mit verbesserter Avionik und Bewaffnung."
  ut_mobilization_option_evac_hospitals: "Luftrettung"
- ut_mobilization_option_evac_hospitals_desc: "Emergency patient evacuation of casualties from a combat zon"
+ ut_mobilization_option_evac_hospitals_desc: "Notfallevakuierung von Verletzten aus einer Kampfzone."
 
 # Tech Production
  machinery_farming: "Kabinentraktoren"
@@ -1545,7 +1545,7 @@
 
  pmg_computers_making_process: "Grundwert"
  pm_computers_electromechanical_process: "Elektromechanischer Computer"
- pm_computers_transistors_process: "Transitoren Computer"
+ pm_computers_transistors_process: "Transistoren Computer"
  pm_computers_integrated_chips_process: "Personal Computer"
  pm_computers_micro_chips_process: "Hightech Computer"
 
@@ -1610,7 +1610,7 @@
  pm_aluminum_packaging: "Aluminiumverpackung"
  pm_plastic_packaging: "Kunststoffverpackung"
  pm_synthetic_rubber_plus: "Polyester"
- pm_plastic_one_process: "Plyethen"
+ pm_plastic_one_process: "Polyethen"
  pm_plastic_two_process: "Polypropylen"
 
  pm_highway_cars_one: "Autobahnautos"
@@ -1700,7 +1700,7 @@
 
 #prestige goods
  prestige_good_generic_consumer_goods_simple: "Waschmaschinen"
- prestige_good_generic_consumer_goods_complex: "Farbfernsehere"
+ prestige_good_generic_consumer_goods_complex: "Farbfernseher"
  prestige_good_generic_computers_b2b: "Mainframe"
  prestige_good_generic_computers_b2c: "Personal Computer"
  prestige_good_generic_electronics: "LEDs"
@@ -1873,7 +1873,7 @@
  modern_civil_aviation_modifier_others: "Moderne zivile Luftfahrt"
 
  event_journal_ai: "Fortschrittsverbreitung"
- utopia_event_journal_ai_buff: "Welle des technlogischen Fortschritts"
+ utopia_event_journal_ai_buff: "Welle des technologischen Fortschritts"
  utopia_event_journal_ai_buff_tooltip: "KI Länder erhalten einen signifikanten Bonus auf Innovationsverteilung."
 
  ut_tech_preview_cheat_research: "Project Utopia: Technology Cheat"
@@ -1884,12 +1884,12 @@
  ut_tech_preview_cheat_disable_tt: "Deaktiviert den Cheat dauerhaft"
  ut_tech_preview_cheat_research_modifier: "Verbotene Technologien"
 
- ut_tech_preview_cheat_mining: "Project Utopia: Mining Buildings Cheat" 
- ut_tech_preview_cheat_mining_desc: "Mod possibily not enabled on game start - may enable Mining buildings that do not have placement requirements."
- ut_mining_cheat_enable_tt: "Enables [GetBuildingType('building_bauxite_mine_debug').GetName] and [GetBuildingType('building_rare_earths_mine_debug').GetName] for all countries #bold permanently#!."
+ ut_tech_preview_cheat_mining: "Project Utopia: Bergbau-Gebäude-Cheat" 
+ ut_tech_preview_cheat_mining_desc: "Mod möglicherweise beim Spielstart nicht aktiviert - kann Bergbaugebäude ohne Platzierungsvoraussetzungen freischalten."
+ ut_mining_cheat_enable_tt: "Schaltet [GetBuildingType('building_bauxite_mine_debug').GetName] und [GetBuildingType('building_rare_earths_mine_debug').GetName] für alle Länder #bold dauerhaft#! frei."
  utopia_mod.1.t: "$ut_tech_preview_cheat_mining$"
  utopia_mod.1.d: "$ut_tech_preview_cheat_mining_desc$"
- utopia_mod.1.f: "The unlocked buildings [GetBuildingType('building_bauxite_mine_debug').GetName] and [GetBuildingType('building_rare_earths_mine_debug').GetName] can be placed anywhere. They are intended for trying out Project Utopia in an ongoing run. The mod is not balanced for this. Use at your own risk."
+ utopia_mod.1.f: "Die freigeschalteten Gebäude [GetBuildingType('building_bauxite_mine_debug').GetName] und [GetBuildingType('building_rare_earths_mine_debug').GetName] können überall platziert werden. Sie sind dafür gedacht, Project Utopia in einem laufenden Spielstand auszuprobieren. Das Mod ist dafür nicht ausbalanciert. Auf eigene Gefahr verwenden."
 
  ut_tech_preview_cheat_new_dawn: "Project Utopia: Neuer Aufbruch Cheat" 
  ut_tech_preview_cheat_new_dawn_desc: "Als Teil der technischen Vorschau kann man [concept_ut_new_dawn] cheaten."
