@@ -241,6 +241,8 @@
  event_new_dawn.998.cheat: "'Rising' New Dawn (Phase 1) Cheat"
  event_new_dawn.999.cheat: "New Dawn Path to Utopia (Phase 2) Cheat"
  event_new_dawn.cheat.add_new_dawn: "Add #b New Dawn journal entry#! (on next tick)"
+ event_new_dawn.cheat.freeze_new_dawn: "Freeze Progress"
+ event_new_dawn.cheat.unfreeze_new_dawn: "Unfreeze Progress"
  event_new_dawn.cheat.add_democratic_50: "Add 50 #blue Democratic#! Progress"
  event_new_dawn.cheat.add_autocratic_50: "Add 50 #blue Autocratic#! Progress"
  event_new_dawn.cheat.add_fascist_50: "Add 50 #g Fascist#! Progress"

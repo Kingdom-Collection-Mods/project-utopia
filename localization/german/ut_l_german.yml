@@ -241,6 +241,8 @@
  event_new_dawn.998.cheat: "Neuer Aufbruch Phase 1 Cheat"
  event_new_dawn.999.cheat: "Neuer Aufbruch Phase 2 Cheat"
  event_new_dawn.cheat.add_new_dawn: "Füge #b Neuer Aufbruch Journal Eintrag#! hinzu"
+ event_new_dawn.cheat.freeze_new_dawn: "Fortschritt einfrieren"
+ event_new_dawn.cheat.unfreeze_new_dawn: "Fortschritt aktivieren"
  event_new_dawn.cheat.add_democratic_50: "Füge 50 #blue Demokratischen#! Fortschritt hinzu"
  event_new_dawn.cheat.add_autocratic_50: "Füge 50 #blue Autokratischen#! Fortschritt hinzu"
  event_new_dawn.cheat.add_fascist_50: "Füge 50 #g Faschistischen#! Fortschritt hinzu"
