@@ -638,7 +638,9 @@ je_ut_new_dawn_democratic = {
 				has_ideology = ideology:ideology_patriotic_democratic
 			}
 			remove_ideology = ideology_patriotic_democratic
-			add_ideology = ideology_patriotic
+			hidden_effect = {
+				add_ideology = ideology_patriotic
+			}
 		}
 	}
 
@@ -1061,8 +1063,10 @@ je_ut_new_dawn_fascist = {
 			limit = {
 				has_ideology = ideology:ideology_republican_communist
 			}
-			remove_ideology = ideology_republican_communist
-			add_ideology = ideology_republican
+			remove_ideology = ideology_republican_communist			
+			hidden_effect = {
+				add_ideology = ideology_republican
+			}
 		}
 	}
 
@@ -1260,28 +1264,36 @@ je_ut_new_dawn_communist = {
 				has_ideology = ideology:ideology_republican_communist
 			}
 			remove_ideology = ideology_republican_communist
-			add_ideology = ideology_republican
+			hidden_effect = {
+				add_ideology = ideology_republican	
+			}
 		}
 		every_interest_group = {
 			limit = {
 				has_ideology = ideology:ut_ideology_laissez_faire_authoritarian
 			}
 			remove_ideology = ut_ideology_laissez_faire_authoritarian
-			add_ideology = ut_ideology_laissez_faire
+			hidden_effect = {
+				add_ideology = ut_ideology_laissez_faire
+			}
 		}
 		every_interest_group = {
 			limit = {
 				has_ideology = ideology:ideology_patriotic_communist_national
 			}
 			remove_ideology = ideology_patriotic_communist_national
-			add_ideology = ideology_patriotic
+			hidden_effect = {
+				add_ideology = ideology_patriotic
+			}
 		}
 		every_interest_group = {
 			limit = {
 				has_ideology = ideology:ideology_patriotic_communist_international
 			}
 			remove_ideology = ideology_patriotic_communist_international
-			add_ideology = ideology_patriotic
+			hidden_effect = {
+				add_ideology = ideology_patriotic
+			}
 		}
 		remove_list_global_variable = {
 			name = ut_new_dawn_communist_list
