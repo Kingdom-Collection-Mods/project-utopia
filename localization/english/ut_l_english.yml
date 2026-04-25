@@ -9,6 +9,7 @@
  utopia.continue: "Continue"
  utopia.abort: "Abort"
  utopia.cheat: "Cheat"
+ utopia.enable: "Enable"
  utopia.disable: "Disable"
  utopia.error: "Error" 
 
@@ -62,7 +63,7 @@
  ut_consumer_goods_simple_je.success.d: "Mass production of basic consumer goods reliably meets the population's essential needs. Soap, clothing, tools - standardized and affordable."
  ut_consumer_goods_simple_je.success.f: "On every shelf lies a piece of stability. The everyday becomes accessible, the ordinary becomes a foundation - for a more dignified life."
  ut_consumer_goods_simple_je.fail: "Basic Consumer Goods Failed"
- ut_consumer_goods_simple_je.fail.d: "The planned production of basic consumer goods could not be realized. Technical difficulties, supply bottlenecks, and lack of coordination led to the initiative’s failure."
+ ut_consumer_goods_simple_je.fail.d: "The planned production of basic consumer goods could not be realized. Technical difficulties, supply bottlenecks, and lack of coordination led to the initiative's failure."
  ut_consumer_goods_simple_je.fail.f: "Shelves remain empty, workbenches silent. What seemed simple proved complex: Without soap, cloth, and tools, daily life becomes difficult - and trust fades with every unmet need."
 
  ut_consumer_goods_complex_je: "Advanced Consumer Goods"
@@ -114,6 +115,9 @@
  ut_je_ut_research_nuclear_power: "Nuclear Power"
  ut_je_ut_research_nuclear_power_reason: "The discovery of nuclear fission opens the door to a new era of energy production. What once was a theoretical concept becomes reality: controlled nuclear reactions that release immense amounts of energy. This is not just about power generation, but about mastering the atom itself.\nWith sufficient investment, we can lead this revolution—creating a new energy source that will change the world."
  ut_je_ut_research_nuclear_power_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy, currently: [JournalEntry.GetGoalProgressValue]/[JournalEntry.GetTotalGoalValue])"
+ ut_je_ut_nuclear_power_research: "Nuclear Power Research"
+ ut_je_ut_nuclear_power_research.success.d: "Our scientists have successfully completed the nuclear power research program. The path to harnessing nuclear energy is now open."
+ ut_je_ut_nuclear_power_research.success.f: "Years of relentless effort have culminated in this moment. The atom's energy, once only theorized, is now ours to command. A new era of powerful, efficient electricity beckons for our nation."
  ut_research_nuclear_power_mod: "Research Nuclear Power"
  ut_je_nuclear_power_plant_construction: "Nuclear Power Plant Construction"
  ut_je_nuclear_power_plant_construction_reason: "With the successful research into nuclear power, we are now ready to take the next step."
@@ -123,6 +127,13 @@
  ut_je_nuclear_power_plant_construction_site.success.d: "The site for the nuclear power plant has been successfully selected."
  ut_je_nuclear_power_plant_construction_site.success.f: "The site for the nuclear power plant has been successfully selected. The location is ideal for the construction of a facility that will provide clean and efficient energy for generations to come."
  ut_nuclear_power_plant_construction_site_mod: "Active Nuclear Power Plant Construction Site"
+
+ ut_nuclear_event_critical_title: "Nuclear Meltdown in [SCOPE.sState('nuclear_accident_state').GetName]"
+ ut_nuclear_event_critical_desc: "A critical nuclear accident has occurred at the power plant."
+ ut_nuclear_event_critical_flavor: "The consequences of the accident are severe, affecting both the local population and the environment of [SCOPE.sState('nuclear_accident_state').GetName] and beyond. The radiation release has caused widespread contamination, leading to evacuations, health crises, and long-term ecological damage. The incident serves as a stark reminder of the risks associated with nuclear energy and the importance of stringent safety measures."
+ ut_nuclear_event_minor_title: "Nuclear Incident"
+ ut_nuclear_event_minor_desc: "A minor nuclear incident has occurred at the nuclear power plant in [SCOPE.sState('nuclear_accident_state').GetName]."
+ ut_nuclear_event_minor_flavor: "The incident has been contained, but it serves as a reminder of the risks associated with nuclear energy."  
 
  ut_share_nuclear_power_research: "Share Nuclear Power Research"
  ut_share_nuclear_power_research_name: "Nuclear Power Research"
@@ -257,7 +268,7 @@
  je_ut_new_dawn_critical_lower_bound_fail_tt: "Has #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! [concept_ut_nd_progress_points]"
 
  ut_new_dawn_communist_focus: "Communist Focus"
- ut_new_dawn_communist_focus_desc: "#italic wip: Currently being worked on#!"
+ ut_new_dawn_communist_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities] and [concept_ut_nd_milestones].#!"
  ut_new_dawn_communist_bar: "Communist"
  ut_new_dawn_communist_bar_desc: "Communist Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_communist_progress_from_characters: "combined [concept_popularity] of [concept_ut_nd_communist_characters]"
@@ -324,10 +335,10 @@
  ut_new_dawn_ideology_status_autocratic: "@ut_nd_autocrat! #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_autocratic_tt $concept_ut_nd_autocrat_core$#!#! (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_autocratic_tt [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]#!#!) [ROOT.GetCountry.GetCustom('ut_new_dawn_progress_trend')]"
  ut_new_dawn_ideology_status_democratic: "@ut_nd_democrat! #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_democratic_tt $concept_ut_nd_democrat_core$#!#! (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_democratic_tt [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]#!#!) [ROOT.GetCountry.GetCustom('ut_new_dawn_progress_trend')]"
 
- ut_new_dawn_ideology_status_fascist_tt: "#b [concept_ut_nd_progress_points]#!: #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]/100#! [Country.GetCustom('ut_new_dawn_progress_trend')]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_fascist_stance$"
- ut_new_dawn_ideology_status_communist_tt: "#b [concept_ut_nd_progress_points]#!: #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]/100#! [Country.GetCustom('ut_new_dawn_progress_trend')]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_communist_stance$"
- ut_new_dawn_ideology_status_autocratic_tt: "#b [concept_ut_nd_progress_points]#!: #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]/100#! [Country.GetCustom('ut_new_dawn_progress_trend')]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_autocratic_stance$"
- ut_new_dawn_ideology_status_democratic_tt: "#b [concept_ut_nd_progress_points]#!: #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]/100#! [Country.GetCustom('ut_new_dawn_progress_trend')]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_democratic_stance$"
+ ut_new_dawn_ideology_status_fascist_tt: "#b [concept_ut_nd_progress_points]#!: #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]/100#! [Country.GetCustom('ut_new_dawn_progress_trend')]\n\n#b [concept_ut_new_dawn]#!\n$ut_phase_1_trend_tooltip$\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_fascist_stance$"
+ ut_new_dawn_ideology_status_communist_tt: "#b [concept_ut_nd_progress_points]#!: #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]/100#! [Country.GetCustom('ut_new_dawn_progress_trend')]\n\n#b [concept_ut_new_dawn]#!\n$ut_phase_1_trend_tooltip$\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_communist_stance$"
+ ut_new_dawn_ideology_status_autocratic_tt: "#b [concept_ut_nd_progress_points]#!: #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]/100#! [Country.GetCustom('ut_new_dawn_progress_trend')]\n\n#b [concept_ut_new_dawn]#!\n$ut_phase_1_trend_tooltip$\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_autocratic_stance$"
+ ut_new_dawn_ideology_status_democratic_tt: "#b [concept_ut_nd_progress_points]#!: #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]/100#! [Country.GetCustom('ut_new_dawn_progress_trend')]\n\n#b [concept_ut_new_dawn]#!\n$ut_phase_1_trend_tooltip$\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_democratic_stance$"
 
  ut_new_dawn_democrat_focus: "Democratic Focus"
  ut_new_dawn_democrat_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities] and [concept_ut_nd_milestones].#!"
@@ -387,6 +398,7 @@
  new_dawn_ideology_upper_bound_tt: "Has #v [SCOPE.ScriptValue('new_dawn_ideology_upper_bound')] #![concept_ut_nd_progress_points]"
  new_dawn_ideology_milestone_done_tt: "Has #v not#! completed the [Concept('concept_ut_nd_milestones', 'Milestone')]"
  new_dawn_ideology_previous_milestone_done_tt: "Has #v completed#! the previous [Concept('concept_ut_nd_milestones', 'Milestone')]"
+ new_dawn_ideology_any_previous_milestone_done_tt: "Has #v completed#! any previous [Concept('concept_ut_nd_milestones', 'Milestone')]"
 
  je_ut_new_dawn_democratic_cultural_values: "Democratic Cultural Values"
  je_ut_new_dawn_democratic_cultural_values_desc: "A democratic foundation can only thrive on cultural values that respect pluralism and individual freedoms. Leading figures in business and religion are turning toward a more democratic worldview."
@@ -423,21 +435,22 @@
  je_ut_new_dawn_suppress_dissidents_mod: "$je_ut_new_dawn_suppress_dissidents$"
  
  je_ut_new_dawn_outlaw_communists: "Outlaw Communists"
- je_ut_new_dawn_outlaw_communists_desc: "Crack down on leftist movements and ban communist parties.\n\n#italic Historical Context:#!\nOn February 28, 1933, following the Reichstag Fire, the Nazis passed the Reichstag Fire Decree, suspending civil liberties and allowing the arrest of thousands of communists. The KPD (Communist Party of Germany) was soon outlawed, marking the first step in dismantling political opposition. Which 4 months later was followed by the ban of the SPD (Social Democratic Party) and another month later all parties were banned; dismantling democracy."
+ je_ut_new_dawn_outlaw_communists_desc: "Crack down on leftist movements and ban communist parties.\n\n#italic Historical Context:\nOn February 28, 1933, following the Reichstag Fire, the Nazis passed the Reichstag Fire Decree, suspending civil liberties and allowing the arrest of thousands of communists. The KPD (Communist Party of Germany) was soon outlawed, marking the first step in dismantling political opposition. Which 4 months later was followed by the ban of the SPD (Social Democratic Party) and another month later all parties were banned; dismantling democracy.\n\nThe claim to totality is one dimension of fascism.#!"
  je_ut_new_dawn_form_paramilitary_groups: "Paramilitary Groups"
- je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant organizations to enforce party rule.\n\n#italic Historical Context:#!\nThe Sturmabteilung, active since the 1920s, grew into a powerful paramilitary force by the early 1930s, intimidating voters and disrupting opposition meetings. On June 30, 1934, during the Night of the Long Knives, Hitler purged the SA leadership to consolidate power, elevating the more ideologically driven Schutzstaffel."
+ je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant organizations to enforce party rule.\n\n#italic Historical Context:\nThe Sturmabteilung, active since the 1920s, grew into a powerful paramilitary force by the early 1930s, intimidating voters and disrupting opposition meetings. On June 30, 1934, during the Night of the Long Knives, Hitler purged the SA leadership to consolidate power, elevating the more ideologically driven Schutzstaffel.\n\nA party organization modeled on the military is one dimension of fascism.#!"
  je_ut_new_dawn_conformity: "Conformity"
- je_ut_new_dawn_conformity_desc: "Encourage strict social alignment with state ideals.\n\n#italic Historical Context:#!\nStarting in 1933, the Nazis implemented Gleichschaltung (\"coordination\"), a process of aligning all aspects of society—including media, education, culture, and religion—with Nazi ideology. Independent trade unions were banned on May 2, 1933, replaced by the state-run German Labor Front."
+ je_ut_new_dawn_conformity_desc: "Encourage strict social alignment with state ideals.\n\n#italic Historical Context:\nStarting in 1933, the Nazis implemented Gleichschaltung (\"coordination\"), a process of aligning all aspects of society—including media, education, culture, and religion—with Nazi ideology. Independent trade unions were banned on May 2, 1933, replaced by the state-run German Labor Front.\n\nA totalitarian, hierarchical model of society is one dimension of fascism.#!"
  je_ut_new_dawn_unite_heritage: "Unite Heritage"
- je_ut_new_dawn_unite_heritage_desc: "Create a shared national identity based on cultural myths and history.\n\n#italic Historical Context:#!\nThe Nazi regime promoted a mythic vision of Germanic history through organizations like the Ahnenerbe (founded in 1935), which spread pseudoscientific racial theories. Nazi education and propaganda glorified a supposed Aryan past to unite the population under an exclusionary, ethnonationalist identity."
+ je_ut_new_dawn_unite_heritage_desc: "Create a shared national identity based on cultural myths and history.\n\n#italic Historical Context:#!\nThe Nazi regime promoted a mythic vision of Germanic history through organizations like the Ahnenerbe (founded in 1935), which spread pseudoscientific racial theories. Nazi education and propaganda glorified a supposed Aryan past to unite the population under an exclusionary, ethnonationalist identity.\n\nA culture-shaping, irrational, secular substitute religion is one dimension of fascism."
  je_ut_new_dawn_unite_heritage_trigger_tt: "Todo"
  je_ut_new_dawn_volksgemeinschaft: "Us - not them."
- je_ut_new_dawn_volksgemeinschaft_desc: "Build a racially defined national community that excludes outsiders.\n\n#italic Historical Context:#!\nThe concept of Volksgemeinschaft (\"people's community\") was used from 1933 onward to promote unity among 'racially pure' Germans. It excluded Jews, Roma, disabled people, and others—setting the foundation for the Nuremberg Laws of 1935, which legalized antisemitism and institutionalized racial segregation.\nThis ideology laid the groundwork for systematic exclusion, culminating in the Holocaust, where over six million Jews, along with other marginalized groups, were murdered in a state-planned genocide."
+ je_ut_new_dawn_volksgemeinschaft_desc: "Build a racially defined national community that excludes outsiders.\n\n#italic Historical Context:\nThe concept of Volksgemeinschaft (\"people's community\") was used from 1933 onward to promote unity among 'racially pure' Germans. It excluded Jews, Roma, disabled people, and others—setting the foundation for the Nuremberg Laws of 1935, which legalized antisemitism and institutionalized racial segregation.\nThis ideology laid the groundwork for systematic exclusion, culminating in the Holocaust, where over six million Jews, along with other marginalized groups, were murdered in a state-planned genocide.#!"
  je_ut_new_dawn_expansionism: "Expansionism"
- je_ut_new_dawn_expansionism_desc: "Pursue territorial growth for national glory and living space.\n\n#italic Historical Context:#!\nDriven by the ideology of Lebensraum (\"living space\"), Nazi Germany annexed Austria in March 1938 (Anschluss), took the Sudetenland in September 1938, and invaded Poland on September 1, 1939, triggering World War II. Expansion was a central pillar of Nazi foreign policy, aimed at conquering Eastern Europe and displacing its populations."
+ je_ut_new_dawn_expansionism_desc: "Pursue territorial growth for national glory and living space.\n\n#italic Historical Context:\nDriven by the ideology of Lebensraum (\"living space\"), Nazi Germany annexed Austria in March 1938 (Anschluss), took the Sudetenland in September 1938, and invaded Poland on September 1, 1939, triggering World War II. Expansion was a central pillar of Nazi foreign policy, aimed at conquering Eastern Europe and displacing its populations.#!"
+ je_ut_new_dawn_expansionism_goal_tt: "Expansionism territorial goal not yet reached."
  je_ut_new_dawn_fascist_final_tt: "[concept_ut_nd_fascist_final_context]: There exists only [ROOT.GetCountry.GetName]"
  concept_ut_nd_fascist_final_context: "One World, One People"
- concept_ut_nd_fascist_final_context_desc: "Establish a permanent fascist order under a single ideology and race.\n\n#italic Historical Context:#!\nThe Nazi regime envisioned a “Thousand-Year Reich”—a totalitarian empire led by a single party, unified under a racially defined ideology. This vision drove relentless militarization, propaganda, and genocide, aiming to reshape the world through permanent domination. Though it lasted only 12 years (1933-1945), the regime’s actions left catastrophic global consequences and remain a warning of how ideology can fuel destruction."
+ concept_ut_nd_fascist_final_context_desc: "Establish a permanent fascist order under a single ideology and race.\n\n#italic Historical Context:\nThe Nazi regime envisioned a “Thousand-Year Reich” - a totalitarian empire led by a single party, unified under a racially defined ideology. This vision drove relentless militarization, propaganda, and genocide, aiming to reshape the world through permanent domination. Though it lasted only 12 years (1933-1945), the regime's actions left catastrophic global consequences and remain a warning.#!"
  je_ut_new_dawn_fascist_complete_condition_tt: "All [concept_ut_nd_milestones] complete"
  concept_ut_nd_milestones: "Milestones" 
  concept_ut_nd_milestones_desc: "Milestones are achievable one time actions. All Ideologies (except Autocracy) have unique path(s) of milestones that require different actions and provide various effects on the [concept_ut_nd_path_to_utopia]. Milestone remain activated even when losing the core ideology. \n\n #i Inspired by history #!"
@@ -465,7 +478,7 @@
  je_ut_communist_world_revolution_effect_tt: "Unlocks [GetLawType('ut_law_international_council').GetName]"
 
  je_ut_new_dawn_fascist: "Fascism"
- je_ut_new_dawn_fascist_reason: "#italic - [Concept('concept_ut_nd_fascist_core', 'Fascist')]#!"
+ je_ut_new_dawn_fascist_reason: "Society has been reorganized. National identity and the nation prioritize the common good over individual interests. Critical voices are viewed as a threat, while the media and institutions are brought into line.\n\nWhether you reinforce this course and impose your will on the nations, or whether humanity's hope is restored, is now up to you.\n#italic - [Concept('concept_ut_nd_fascist_core', 'Fascist')]#!"
 
  je_ut_new_dawn_communist: "Communism"
  je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads. \n #italic - [Concept('concept_ut_nd_communist_core', 'Communist')] [concept_ut_nd_path_to_utopia]#!"
@@ -490,7 +503,7 @@
 #Core Ideology concepts
 
  concept_ut_nd_fascist_core: "Fascism"
- concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - Invade Country (Any lower ranked)\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_fascist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others.\n\n#i Development Status: Not playable - Preview#!"
+ concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticPlayType('dp_ut_fascist_annex_war').GetName] (Any lower ranked)\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_fascist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others.\n\n#i Development Status: Not playable - Preview#!"
  ut_nd_fascist_stance: "Favorable: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nOppose: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]"
 
 
@@ -504,11 +517,11 @@
  ut_nd_democratic_stance: "Favorable: [concept_ut_nd_democrat_core]\nNeutral: [concept_ut_nd_communist_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]"
 
  concept_ut_nd_communist_core: "Communism"
- concept_ut_nd_communist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Unlocks Authoritarian [concept_ut_nd_milestones]#!:\n - Unlock Ideologies: [GetIdeology('ideology_reactionary_communist').GetName], [GetIdeology('ideology_patriotic_communist_national').GetName]\n - Unlocks Law Variants: [GetLawType('ut_law_council_presidium').GetName]\n - Unlock Modifiers:\n[GetStaticModifier('je_ut_new_dawn_communist_one_block_mod').GetDesc]\n[GetStaticModifier('je_ut_communist_socialist_expansion_mod').GetDesc]\n\n#bold Unlocks Democratic [concept_ut_nd_milestones]#!:\n - Unlock Ideologies: [GetIdeology('ideology_plutocratic_communist').GetName], [GetIdeology('ideology_urbanist_power_base').GetName], [GetIdeology('ideology_patriotic_communist_international').GetName]\n - Unlocks Law Variants: [GetLawType('ut_law_international_council').GetName]\n - Unlock Modifiers:\n[GetStaticModifier('je_ut_new_dawn_communist_one_people_mod').GetDesc]\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_force_become_subject').GetName]\n - [GetArticleType('ut_communism_article').GetNameNoIcon]\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n - [GetDiplomaticActionType('ut_humiliate_power_bloc_goal').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_communist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nBuild a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence.\n\n#i Development Status: Playable - Almost done#!"
+ concept_ut_nd_communist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Unlocks Authoritarian [concept_ut_nd_milestones]#!:\n - Unlock Ideologies: [GetIdeology('ideology_reactionary_communist').GetName], [GetIdeology('ideology_patriotic_communist_national').GetName]\n - Unlocks Law Variants: [GetLawType('ut_law_council_presidium').GetName]\n - Unlock Modifiers:\n[GetStaticModifier('je_ut_new_dawn_communist_one_block_mod').GetDesc]\n[GetStaticModifier('je_ut_communist_socialist_expansion_mod').GetDesc]\n\n#bold Unlocks Democratic [concept_ut_nd_milestones]#!:\n - Unlock Ideologies: [GetIdeology('ideology_plutocratic_communist').GetName], [GetIdeology('ideology_urbanist_power_base').GetName], [GetIdeology('ideology_patriotic_communist_international').GetName]\n - Unlocks Law Variants: [GetLawType('ut_law_international_council').GetName]\n - Unlock Modifiers:\n[GetStaticModifier('je_ut_new_dawn_communist_one_people_mod').GetDesc]\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_force_become_subject').GetName]\n - [GetArticleType('ut_communism_article').GetNameNoIcon]\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_communist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nBuild a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence.\n\n#i Development Status: Playable - Almost done#!"
  ut_nd_communist_stance: "Favorable: [concept_ut_nd_communist_core]\nNeutral: [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]"
 
  concept_ut_nd_path_to_utopia: "Path to Utopia"
- concept_ut_nd_path_to_utopia_desc: "When an ideology successfully completes the [concept_ut_new_dawn] journal entry, it can start their [concept_ut_nd_path_to_utopia] - each ideology comes with the same base set of abilities, flavored abilities, flavored modifiers and may even feature an [concept_ut_nd_utopia] to be achieved.\n\nA [Concept('concept_humiliation', 'humiliated')] country, is likely to abandon their [concept_ut_nd_path_to_utopia] and choose a new ideology.\n\n#bold Base [concept_ut_nd_abilities]:#!\n - [GetDiplomaticActionType('ut_influence_new_dawn_major_power').GetName]\n - [GetDiplomaticActionType('ut_fund_ideology').GetName]\n - [GetDiplomaticActionType('ut_fund_opposition').GetName]\n\n#b 'New Dawn' is Work in Progress#!\n#italic Note the status notes:\ntbd (To Be Determined): No actual work done\nwip (Work in Progress): Ongoing development, follow the patch notes\nPreview: Initial version available for feedback; incomplete and not final\n\nIdeologies without Preview [concept_ut_nd_milestones] or [concept_ut_nd_abilities] feature more static modifiers instead.\n\nStatus notes may be incomplete.\n\n#i If you wanna support Project Utopia - leave a like on Steam Workshop <3#!"
+ concept_ut_nd_path_to_utopia_desc: "When an ideology successfully completes the [concept_ut_new_dawn] journal entry, it can start their [concept_ut_nd_path_to_utopia] - each ideology comes with the same base set of abilities, flavored abilities, flavored modifiers and may even feature an [concept_ut_nd_utopia] to be achieved.\n\nA [Concept('concept_humiliation', 'humiliated')] country, is likely to abandon their [concept_ut_nd_path_to_utopia] and choose a new ideology.\n\n#bold Base [concept_ut_nd_abilities]:#!\n - [GetDiplomaticActionType('ut_influence_new_dawn_major_power').GetName]\n - [GetDiplomaticActionType('ut_fund_ideology').GetName]\n - [GetDiplomaticActionType('ut_fund_opposition').GetName]\n - [GetDiplomaticActionType('ut_new_dawn_start_propaganda_campaign').GetName]\n\n#b 'New Dawn' is Work in Progress#!\n#italic Note the status notes:\ntbd (To Be Determined): No actual work done\nwip (Work in Progress): Ongoing development, follow the patch notes\nPreview: Initial version available for feedback; incomplete and not final\n\nIdeologies without Preview [concept_ut_nd_milestones] or [concept_ut_nd_abilities] feature more static modifiers instead.\n\nStatus notes may be incomplete.\n\n#i If you wanna support Project Utopia - leave a like on Steam Workshop <3#!"
 
  concept_ut_nd_utopia: "Utopia"
  concept_ut_nd_utopia_desc: "A utopia is an imagined ideal society where there is complete justice, harmony, and humans flourishing to perfection - it's as much an aspiration, as it's an inspiring vision."
@@ -518,7 +531,7 @@
  ut_utopia_enabled_on_game_started_loc_no: "Started save game before 13. March or Project Utopia was not enabled on game start.\n#bold Important:#! New mining resources and laws require Project Utopia to be enabled since game start."
 
  ut_new_dawn_fascist_focus: "Fascist Focus"
- ut_new_dawn_fascist_focus_desc: "#italic tbd: Only preview of [concept_ut_nd_milestones] available. #!"
+ ut_new_dawn_fascist_focus_desc: "#italic In Design: Only preview of [concept_ut_nd_milestones] available. #!"
  ut_new_dawn_fascist_bar: "Fascist"
  ut_new_dawn_fascist_bar_desc: "Fascist Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_fascist_progress_from_characters: "combined [concept_popularity] of [concept_ut_nd_fascist_characters]"
@@ -539,7 +552,7 @@
  ut_nd_mp_sw_note: "#italic From 0%->4% population share. Maximum Multiplier x3.#!"
 
  concept_ut_nd_focus: "Focus"
- concept_ut_nd_focus_desc: "When the #b New Dawn#! journal entry is active, focus on the New Dawn ideology becomes available. Focusing on an ideology makes it much more likely to become dominant."
+ concept_ut_nd_focus_desc: "When the #b New Dawn#! journal entry is active, focus on the New Dawn ideology becomes available. Focusing on an ideology makes it much more likely to become dominant. If the ideology becomes entrenched, the focus also remains active."
 
  concept_ut_nd_stance: "Stance"
  concept_ut_nd_stance_desc: "Each ideology has a stance towards other ideologies. The stance affects acceptance of joining and staying in a power bloc, and most new Project Utopia actions. Work in progress."
@@ -881,6 +894,8 @@
 
  ut_new_dawn_start_propaganda_campaign: "Start Propaganda Campaign"
  ut_new_dawn_start_propaganda_campaign_desc: "Start a propaganda campaign in the target country to increase the chance of revolutions in the target country. The target country can defend against a propaganda campaign, which may cost us $concept_ut_nd_progress_points$. After a year the modifier is applied and the action can be used again.\n\nTarget country effect on completion: $ut_je_propaganda_target_effect$"
+ ut_new_dawn_start_propaganda_campaign_action_notification_name: "$ut_new_dawn_start_propaganda_campaign$ Started"
+ ut_new_dawn_start_propaganda_campaign_action_notification_desc: "[INITIATOR_COUNTRY.GetName] has started $ut_new_dawn_start_propaganda_campaign$ in [TARGET_COUNTRY.GetName]."
  ut_je_propaganda_source_mod: "Conducting Propaganda Campaign"
  ut_je_propaganda_source: "Propaganda Campaign"
  ut_je_propaganda_source_reason: "Started a propaganda campaign in the target country to weaken their ideology. After a year the modifier is applied and the action can be used again."
@@ -890,7 +905,7 @@
  ut_je_propaganda_target_goal: "Source country has completed propaganda campaign (currently [JournalEntry.GetGoalProgressValue]/[JournalEntry.GetTotalGoalValue])."
  ut_je_propaganda_target_reason: "The country behind the propaganda campaign is attempting to weaken the core ideology in our country."
  ut_je_propaganda_target_abort_tt: "The country behind the propaganda campaign has aborted the campaign."
- ut_je_propaganda_target_effect: "$ut_add_new_dawn_progress_neg_25$ and get Propaganda [concept_modifier] for 2 years"
+ ut_je_propaganda_target_effect: "$ut_add_new_dawn_progress_neg_25$ and receive the Propaganda modifier for 2 years"
 
  ut_propaganda_campaign_source_happened_title: "Propaganda Campaign conducted"
  ut_propaganda_campaign_source_happened_desc: "A coordinated propaganda campaign was launched against [SCOPE.sCountry('ut_je_propaganda_source_target_scope').GetName] to shape public opinion and weaken the target's government's ideology."
@@ -916,6 +931,7 @@
 
  country_new_dawn_propaganda_source_efficiency_mult: "\"$ut_je_propaganda_source$\" efficiency"
  country_new_dawn_propaganda_source_speed_mult: "\"$ut_je_propaganda_source$\" speed"
+ country_new_dawn_propaganda_source_speed_mult_desc: "Changes the speed at which the [GetDiplomaticActionType('ut_new_dawn_start_propaganda_campaign').GetName] progresses."
 
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
  UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
@@ -1016,7 +1032,8 @@
  ut_fund_ideology_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds aligned political groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], increasing [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] ideological progress in [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAdjectiveNoFormatting]'s ideology.\n\n$ut_fund_ideology_effect$"
  ut_fund_ideology_desc: "Fund aligned political groups in a target country without a ruling ideology to increase their ideological progress.\n\n$ut_fund_ideology_effect$"
  ut_fund_ideology_effect: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
- country_new_dawn_fund_ideology_efficiency_add: "\"$ut_fund_ideology$\" efficiency"
+ country_new_dawn_fund_ideology_efficiency_add: "[GetDiplomaticActionType('ut_fund_ideology').GetName] [concept_ut_nd_progress_points] gain"
+ country_new_dawn_fund_ideology_efficiency_add_desc: "[GetDiplomaticActionType('ut_fund_ideology').GetName] target country gains additional [concept_ut_nd_progress_points] to source country's core ideology."
 
  ut_has_new_dawn_progress_100: "Has #b 100#! [concept_ut_nd_progress_points]"
  ut_has_new_dawn_progress_75: "Has #b 75#! [concept_ut_nd_progress_points]"
@@ -1033,10 +1050,14 @@
  ut_force_become_subject: "Collectivize Council Republics"
  ut_force_become_subject_action_name: "$ut_force_become_subject$"
  ut_force_become_subject_desc: "Force the target power bloc member to become your subject and join the Council Republic. They must be [GetLawType('law_council_republic').GetName] or [concept_ut_nd_communist_core] themselves."
+ ut_force_become_subject_action_notification_name: "$ut_force_become_subject$"
+ ut_force_become_subject_action_notification_desc: "[INITIATOR_COUNTRY.GetName] has forced [TARGET_COUNTRY.GetName] to become a subject."
 
  ut_force_regime_change: "Order Fascist Change"
  ut_force_regime_change_action_name: "$ut_force_regime_change$"
  ut_force_regime_change_desc: "Force a regime change in the target power bloc member to your ideology. They must be your subject or a minor nation. They will enact, [GetLawType('law_corporate_state').GetName], [GetLawType('law_extraction_economy').GetName] and [GetLawType('ut_law_subjecthood_fascist').GetName]. Will turn a [concept_protectorate] into a [concept_puppet]."
+ ut_force_regime_change_action_notification_name: "$ut_force_regime_change$"
+ ut_force_regime_change_action_notification_desc: "[INITIATOR_COUNTRY.GetName] has forced a regime change in [TARGET_COUNTRY.GetName]."
 
 
  ut_fund_opposition: "Fund Opposition"
@@ -1060,7 +1081,11 @@
  ut_fund_opposition_source_happened_tt: "Funding Opposition in [SCOPE.sCountry('ut_fund_opposition_target_scope').GetName] was successful, they lost #r 10#! [concept_ut_nd_progress_points]"
  ut_fund_opposition_target_happened_title: "Opposition Funded by [SCOPE.sCountry('ut_fund_opposition_source_scope').GetName]"
  ut_fund_opposition_target_happened_desc: "[SCOPE.sCountry('ut_fund_opposition_source_scope').GetName] is funding opposition groups in our country, this may lead to revolts in your opposition groups reducing your ideology [concept_ut_nd_progress_points]."
- country_new_dawn_fund_opposition_efficiency_mult: "\"$ut_fund_opposition$\" success chance"
+ country_new_dawn_fund_opposition_efficiency_mult: "\"[GetDiplomaticActionType('ut_fund_opposition').GetName]\" success chance"
+ country_new_dawn_fund_opposition_efficiency_mult_desc: "Changes the success chance of [GetDiplomaticActionType('ut_fund_opposition').GetName]."
+
+ country_new_dawn_fund_opposition_efficiency_against_autocratic_mult: "$country_new_dawn_fund_opposition_efficiency_mult$ (Against Autocracies)"
+ country_new_dawn_fund_opposition_efficiency_against_autocratic_mult_desc: "$country_new_dawn_fund_opposition_efficiency_mult_desc$ (Against [concept_ut_nd_autocrat_core] targets)"
 
 # Power Blocs
  principle_group_modern_trade_league: "Modern Trade League"
@@ -1798,11 +1823,11 @@
  ut_synthetics_company: "Synthetics Inc."
  ut_plastic_company: "Plastiform Inc."
 
+ building_group_bg_modern_industry_throughput_add: "$bg_modern_industry$ [concept_throughput]"
+ building_group_bg_modern_industry_throughput_add_desc: "A bonus or penalty to both input and output of the $bg_modern_industry$."
+
  building_heavy_machinery_factory_throughput_add: "$building_heavy_machinery_factory$ [concept_throughput]"
  building_heavy_machinery_factory_throughput_add_desc: "A bonus or penalty to both input and output of the $building_heavy_machinery_factory$."
-
- building_group_bg_modern_industry_throughput_add: "$building_group_bg_modern_industry$ [concept_throughput]"
- building_group_bg_modern_industry_throughput_add_desc: "A bonus or penalty to both input and output of the $building_group_bg_modern_industry$."
 
  building_plastic_factory_throughput_add: "$building_plastic_factory$ [concept_throughput]"
  building_plastic_factory_throughput_add_desc: "A bonus or penalty to both input and output of the $building_plastic_factory$."
@@ -1868,6 +1893,13 @@
  utopia_mod.2.f: "What is progress, if not the mastery of time itself? While others debate ethics and equality, we have pierced the veil of possibility. With this unprecedented surge in innovation, we leapfrog generations of slow, bureaucratic development. Let history judge us — or let there be no history, only the brilliance of tomorrow, written in circuits and steel, not ink and parchment. Utopia is not given. It is taken."
  ut_tech_preview_cheat_disable_tt: "Deactivates the cheat permanently"
  ut_tech_preview_cheat_research_modifier: "Forbidden Technologies"
+
+ ut_tech_preview_cheat_mining: "Project Utopia: Mining Buildings Cheat" 
+ ut_tech_preview_cheat_mining_desc: "Mod possibly not enabled on game start - may enable Mining buildings that do not have placement requirements."
+ ut_mining_cheat_enable_tt: "Enables [GetBuildingType('building_bauxite_mine_debug').GetName] and [GetBuildingType('building_rare_earths_mine_debug').GetName] for all countries #bold permanently#!."
+ utopia_mod.1.t: "$ut_tech_preview_cheat_mining$"
+ utopia_mod.1.d: "$ut_tech_preview_cheat_mining_desc$"
+ utopia_mod.1.f: "The unlocked buildings [GetBuildingType('building_bauxite_mine_debug').GetName] and [GetBuildingType('building_rare_earths_mine_debug').GetName] can be placed anywhere. They are intended for trying out Project Utopia in an ongoing run. The mod is not balanced for this. Use at your own risk."
 
  ut_tech_preview_cheat_new_dawn: "Project Utopia: New Dawn Cheat" 
  ut_tech_preview_cheat_new_dawn_desc: "As part of the technical preview you can cheat [concept_ut_new_dawn]."

@@ -40,6 +40,8 @@ ut_set_new_dawn_variables = {
 	set_variable = { name = ut_nd_fascist_progress_from_focus value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_events value = 0 }
 
+	set_variable = { name = ut_nd_common_progress_from_events value = 0 }
+
 	set_variable = { name = ig_weight value = 0 } #This variable is used solely for mathematical purposes, and is set as equivalent to the clout of a given interest group. It exists so that IGs can be weighted higher or lower depending on whether they're in-government or not.
 }
 

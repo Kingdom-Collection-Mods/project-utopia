@@ -797,7 +797,7 @@ event_new_dawn.12 = {
 	}
 	
 	option = {
-		name = event_new_dawn.
+		name = event_new_dawn.suppress_random_decision
 		add_radicals = {
 			value = 0.01
 		}
@@ -813,7 +813,7 @@ event_new_dawn.20 = {
 	flavor = ut_new_dawn_propaganda_target_defend_tt
 	
 	event_image = {
-		video = "unspecific_vandalized_storefront"
+		video = "unspecific_politicians_arguing"
 	}
 
 	duration = 3
@@ -892,7 +892,7 @@ event_new_dawn.21 = {
 	desc = ut_fund_opposition_target_happened_desc
 	
 	event_image = {
-		video = "unspecific_vandalized_storefront"
+		video = "europenorthamerica_political_extremism"
 	}
 
 	duration = 3
@@ -933,7 +933,7 @@ event_new_dawn.22 = {
 	desc = ut_fund_opposition_source_happened_tt
 	
 	event_image = {
-		video = "unspecific_vandalized_storefront"
+		video = "europenorthamerica_political_extremism"
 	}
 
 	duration = 3
@@ -974,7 +974,7 @@ event_new_dawn.23 = {
 	desc = ut_new_dawn_propaganda_source_abort_desc
 	
 	event_image = {
-		video = "unspecific_vandalized_storefront"
+		video = "unspecific_factory_closed"
 	}
 
 	duration = 1
@@ -1055,7 +1055,7 @@ event_new_dawn.25 = {
 	desc = ut_propaganda_campaign_source_happened_desc
 	
 	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
+		video = "unspecific_vandalized_storefront"
 	}
 
 	duration = 3

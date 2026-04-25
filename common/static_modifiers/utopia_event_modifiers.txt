@@ -107,6 +107,7 @@ je_ut_new_dawn_democratic_mod = {
 	unit_defense_mult = 0.05
 	country_production_tech_research_speed_mult = 0.03
 	state_pop_support_movement_liberal_mult = 0.1
+	country_new_dawn_fund_opposition_efficiency_against_autocratic_mult = 0.25
 }
 
 ut_new_dawn_core_democratic_mod = {
@@ -344,6 +345,7 @@ ut_new_dawn_core_internal_bad_times_focus_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	country_new_dawn_progress_points_progress = 0.5
 	country_loyalists_from_legitimacy_mult = -0.1
+	state_standard_of_living_add = -0.2
 	state_radicals_from_political_movements_mult = 0.2
 }
 

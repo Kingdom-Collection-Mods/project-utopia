@@ -3,15 +3,8 @@
 utopia_mod.1 = {
 	type = country_event
 
-	trigger = {
-		NOT = { has_technology_researched = high_tech_computers }
-		has_technology_researched = rare_earths_mining_era_analog
-		has_technology_researched = computers
-		has_global_highest_innovation = yes
-	}
-
 	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
+		video = "unspecific_trains"
 	}
 
 	duration = 3
@@ -22,15 +15,23 @@ utopia_mod.1 = {
 
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
-	title = metro.1.t
-	desc = metro.1.d
-	flavor = metro.1.f
-
-
+	title = utopia_mod.1.t
+	desc = utopia_mod.1.d
+	flavor = utopia_mod.1.f
+	
+	
 	option = {
-		name = metro.1.a
+		name = utopia.continue
 		default_option = yes
-		add_technology_researched = high_tech_computers
+	}
+	option = {
+		trigger = {
+			NOT = { has_global_variable = ut_utopia_enabled_on_game_started_var }
+			NOT = { has_global_variable = ut_tech_preview_mining_cheat_enabled }
+		}
+		name = utopia.enable
+		custom_tooltip = ut_mining_cheat_enable_tt
+		set_global_variable = ut_tech_preview_mining_cheat_enabled
 	}
 }
 
@@ -276,7 +277,7 @@ utopia_mod.5 = {
 	placement = ROOT
 
 	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
+		video = "unspecific_devastation"
 	}
 
 	duration = 3
@@ -292,16 +293,35 @@ utopia_mod.5 = {
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
-	title = ut_private_construction_amend
-	desc = ut_private_construction_amend
-	flavor = ut_private_construction_amend_desc
+	title = ut_nuclear_event_critical_title
+	desc = ut_nuclear_event_critical_desc
+	flavor = ut_nuclear_event_critical_flavor
+
+	immediate = {
+		save_scope_as = nuclear_accident_state
+	}
 
 
 	option = {
 		name = utopia.continue
+		remove_building = building_ut_nuclear_power_plant
 		default_option = yes
+		kill_population_percent_in_state = {
+			percent = 0.01
+		}
+		add_devastation = 30
+		every_neighbouring_state = {
+			kill_population_percent_in_state = {
+				percent = 0.001
+			}
+			add_devastation = 10
+		}
+	}
+
+	after = {
+		clear_saved_scope = nuclear_accident_state
 	}
 }
 
@@ -311,10 +331,14 @@ utopia_mod.6 = {
 	placement = ROOT
 
 	event_image = {
-		video = "europenorthamerica_capitalists_meeting"
+		video = "unspecific_factory_closed"
 	}
 
 	duration = 3
+
+	immediate = {
+		save_scope_as = nuclear_accident_state
+	}
 
 	trigger = {
 		has_building = building_ut_nuclear_power_plant
@@ -327,15 +351,19 @@ utopia_mod.6 = {
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+	icon = "gfx/interface/icons/event_icons/event_raiding.dds"
 
-	title = ut_nuclear_event
-	desc = ut_private_construction_amend
-	flavor = ut_private_construction_amend_desc
-
+	title = ut_nuclear_event_minor_title
+	desc = ut_nuclear_event_minor_desc
+	flavor = ut_nuclear_event_minor_flavor
 
 	option = {
 		name = utopia.continue
 		default_option = yes
+		add_devastation = 10
+	}
+
+	after = {
+		clear_saved_scope = nuclear_accident_state
 	}
 }
