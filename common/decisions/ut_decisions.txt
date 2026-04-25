@@ -267,6 +267,7 @@ ut_nuclear_power_plant_location  = {
 			id = utopia_journal_prod.50
 			popup = yes
 		}
+		set_variable = ut_nuclear_power_plant_location_found_var
 	}
 
 	ai_chance = {

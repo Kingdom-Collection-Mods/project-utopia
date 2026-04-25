@@ -271,7 +271,7 @@ je_ut_new_dawn_expansionism = {
 			}
 		}
 		custom_tooltip = {
-			text = todo
+			text = je_ut_new_dawn_expansionism_goal_tt
 			var:je_ut_new_dawn_expansionism_goal > root.num_states
 		}
 		NOT = {
