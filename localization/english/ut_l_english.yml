@@ -115,6 +115,9 @@
  ut_je_ut_research_nuclear_power: "Nuclear Power"
  ut_je_ut_research_nuclear_power_reason: "The discovery of nuclear fission opens the door to a new era of energy production. What once was a theoretical concept becomes reality: controlled nuclear reactions that release immense amounts of energy. This is not just about power generation, but about mastering the atom itself.\nWith sufficient investment, we can lead this revolution—creating a new energy source that will change the world."
  ut_je_ut_research_nuclear_power_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy, currently: [JournalEntry.GetGoalProgressValue]/[JournalEntry.GetTotalGoalValue])"
+ ut_je_ut_nuclear_power_research: "Nuclear Power Research"
+ ut_je_ut_nuclear_power_research.success.d: "Our scientists have successfully completed the nuclear power research program. The path to harnessing nuclear energy is now open."
+ ut_je_ut_nuclear_power_research.success.f: "Years of relentless effort have culminated in this moment. The atom's energy, once only theorized, is now ours to command. A new era of powerful, efficient electricity beckons for our nation."
  ut_research_nuclear_power_mod: "Research Nuclear Power"
  ut_je_nuclear_power_plant_construction: "Nuclear Power Plant Construction"
  ut_je_nuclear_power_plant_construction_reason: "With the successful research into nuclear power, we are now ready to take the next step."
@@ -890,6 +893,8 @@
 
  ut_new_dawn_start_propaganda_campaign: "Start Propaganda Campaign"
  ut_new_dawn_start_propaganda_campaign_desc: "Start a propaganda campaign in the target country to increase the chance of revolutions in the target country. The target country can defend against a propaganda campaign, which may cost us $concept_ut_nd_progress_points$. After a year the modifier is applied and the action can be used again.\n\nTarget country effect on completion: $ut_je_propaganda_target_effect$"
+ ut_new_dawn_start_propaganda_campaign_action_notification_name: "$ut_new_dawn_start_propaganda_campaign$ Started"
+ ut_new_dawn_start_propaganda_campaign_action_notification_desc: "[INITIATOR_COUNTRY.GetName] has started $ut_new_dawn_start_propaganda_campaign$ in [TARGET_COUNTRY.GetName]."
  ut_je_propaganda_source_mod: "Conducting Propaganda Campaign"
  ut_je_propaganda_source: "Propaganda Campaign"
  ut_je_propaganda_source_reason: "Started a propaganda campaign in the target country to weaken their ideology. After a year the modifier is applied and the action can be used again."
@@ -1044,10 +1049,14 @@
  ut_force_become_subject: "Collectivize Council Republics"
  ut_force_become_subject_action_name: "$ut_force_become_subject$"
  ut_force_become_subject_desc: "Force the target power bloc member to become your subject and join the Council Republic. They must be [GetLawType('law_council_republic').GetName] or [concept_ut_nd_communist_core] themselves."
+ ut_force_become_subject_action_notification_name: "$ut_force_become_subject$"
+ ut_force_become_subject_action_notification_desc: "[INITIATOR_COUNTRY.GetName] has forced [TARGET_COUNTRY.GetName] to become a subject."
 
  ut_force_regime_change: "Order Fascist Change"
  ut_force_regime_change_action_name: "$ut_force_regime_change$"
  ut_force_regime_change_desc: "Force a regime change in the target power bloc member to your ideology. They must be your subject or a minor nation. They will enact, [GetLawType('law_corporate_state').GetName], [GetLawType('law_extraction_economy').GetName] and [GetLawType('ut_law_subjecthood_fascist').GetName]. Will turn a [concept_protectorate] into a [concept_puppet]."
+ ut_force_regime_change_action_notification_name: "$ut_force_regime_change$"
+ ut_force_regime_change_action_notification_desc: "[INITIATOR_COUNTRY.GetName] has forced a regime change in [TARGET_COUNTRY.GetName]."
 
 
  ut_fund_opposition: "Fund Opposition"

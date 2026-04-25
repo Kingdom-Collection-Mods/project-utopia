@@ -1,4 +1,4 @@
-namespace = event_new_dawn
+﻿namespace = event_new_dawn
 
 #New Dawn start
 event_new_dawn.1 = {
@@ -797,7 +797,7 @@ event_new_dawn.12 = {
 	}
 	
 	option = {
-		name = event_new_dawn.
+		name = event_new_dawn.suppress_random_decision
 		add_radicals = {
 			value = 0.01
 		}

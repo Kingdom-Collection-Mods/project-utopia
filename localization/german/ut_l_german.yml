@@ -115,6 +115,9 @@
  ut_je_ut_research_nuclear_power: "Kernenergie"
  ut_je_ut_research_nuclear_power_reason: "Die Entdeckung der Kernspaltung öffnet die Tür zu einer neuen Ära der Energieproduktion. Was einst ein theoretisches Konzept war, wird Realität: kontrollierte nukleare Reaktionen, die immense Energiemengen freisetzen. Es geht nicht nur um die Energieerzeugung, sondern darum, das Atom selbst zu beherrschen.\nMit ausreichenden Investitionen können wir diese Revolution anführen - eine neue Energiequelle schaffen, die die Welt verändern wird."
  ut_je_ut_research_nuclear_power_goal: "Warten auf den Abschluss der #BOLD 4-Jahres#!-Forschungsphase (4 Jahre, wenn das Forschungsinstitut zu 100 % ausgelastet ist)"
+ ut_je_ut_nuclear_power_research: "Kernenergieforschung"
+ ut_je_ut_nuclear_power_research.success.d: "Unsere Wissenschaftler haben das Kernenergieforschungsprogramm erfolgreich abgeschlossen. Der Weg zur Nutzung der Kernenergie liegt nun offen vor uns."
+ ut_je_ut_nuclear_power_research.success.f: "Jahre unermüdlicher Arbeit haben in diesem Moment gegipfelt. Die Energie des Atoms, einst nur theoretisch, gehört nun uns. Eine neue Ära leistungsstarker, effizienter Elektrizität wartet auf unser Land."
  ut_research_nuclear_power_mod: "Kernenergie erforschen"
  ut_je_nuclear_power_plant_construction: "Bau eines Kernkraftwerks"
  ut_je_nuclear_power_plant_construction_reason: "Mit der erfolgreichen Erforschung der Kernenergie sind wir nun bereit, den nächsten Schritt zu gehen."
@@ -891,6 +894,8 @@
 
  ut_new_dawn_start_propaganda_campaign: "Starte Propaganda Kampagne"
  ut_new_dawn_start_propaganda_campaign_desc: "Starte eine Propaganda-Kampagne im Zielland, um die Chance auf Revolutionen im Zielland zu erhöhen. Das Zielland kann sich gegen eine Propaganda-Kampagne verteidigen, was uns $concept_ut_nd_progress_points$ kosten kann. Nach einem Jahr wird der Modifikator angewandt und die Aktion kann erneut verwendet werden.\n\nAuswirkung auf das Zielland bei Abschluss: $ut_je_propaganda_target_effect$"
+ ut_new_dawn_start_propaganda_campaign_action_notification_name: "$ut_new_dawn_start_propaganda_campaign$ gestartet"
+ ut_new_dawn_start_propaganda_campaign_action_notification_desc: "[INITIATOR_COUNTRY.GetName] hat $ut_new_dawn_start_propaganda_campaign$ in [TARGET_COUNTRY.GetName] gestartet."
  ut_je_propaganda_source_mod: "Führt Propaganda-Kampagne durch"
  ut_je_propaganda_source: "Propaganda-Kampagne"
  ut_je_propaganda_source_reason: "Startete eine Propaganda-Kampagne im Zielland, um ihre Ideologie zu schwächen. Nach einem Jahr wird der Modifikator angewandt und die Aktion kann erneut verwendet werden."
@@ -1045,10 +1050,14 @@
  ut_force_become_subject: "Räterepublik kollektivieren"
  ut_force_become_subject_action_name: "$ut_force_become_subject$"
  ut_force_become_subject_desc: "Zwinge das Ziel-Machtblock-Mitglied, dein Subjekt zu werden und der Räterepublik beizutreten. Sie müssen selbst Kommunisten sein und [GetLawType('law_council_republic').GetName] einführen."
+ ut_force_become_subject_action_notification_name: "$ut_force_become_subject$"
+ ut_force_become_subject_action_notification_desc: "[INITIATOR_COUNTRY.GetName] hat [TARGET_COUNTRY.GetName] gezwungen, ein Subjekt zu werden."
 
  ut_force_regime_change: "Faschistischen Wandel erzwingen"
  ut_force_regime_change_action_name: "$ut_force_regime_change$"
  ut_force_regime_change_desc: "Erzwinge einen Regimewechsel beim Ziel-Machtblock-Mitglied zu deiner Ideologie. Es muss dein Subjekt oder eine Kleinnation sein. Es wird [GetLawType('law_corporate_state').GetName], [GetLawType('law_extraction_economy').GetName] und [GetLawType('ut_law_subjecthood_fascist').GetName] erlassen. Wandelt ein [concept_protectorate] in eine [concept_puppet] um."
+ ut_force_regime_change_action_notification_name: "$ut_force_regime_change$"
+ ut_force_regime_change_action_notification_desc: "[INITIATOR_COUNTRY.GetName] hat einen Regimewechsel in [TARGET_COUNTRY.GetName] erzwungen."
 
 
  ut_fund_opposition: "Opposition finanzieren"

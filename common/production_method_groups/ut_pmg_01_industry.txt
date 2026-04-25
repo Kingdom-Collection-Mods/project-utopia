@@ -36,7 +36,7 @@ REPLACE:pmg_automation_building_food_industry = {
 	production_methods = {
 		pm_manual_dough_processing
 		pm_automated_bakery
-		pm_automated_bakery_softwar
+		pm_automated_bakery_software
 	}
 }
 
