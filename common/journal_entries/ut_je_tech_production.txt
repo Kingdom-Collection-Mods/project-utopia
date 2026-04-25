@@ -572,7 +572,7 @@ ut_je_ut_research_nuclear_power = {
 	on_complete = {
 		remove_modifier = ut_research_nuclear_power_mod
 		remove_variable = ut_research_nuclear_power_var
-		add_technology_researched = nuclear_power
+		trigger_event = { id = utopia_journal_prod.41 } # nuclear found
 	}
 
 	invalid = {
