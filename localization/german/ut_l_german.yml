@@ -13,6 +13,8 @@
  utopia.disable: "Deaktivieren"
  utopia.error: "Fehler" 
 
+ utopia_path: "Pfad"
+
 # Events & Journals
  ut_heavy_industrial_machinery_je: "Schwermaschinenbau"
  ut_heavy_industrial_machinery_je_reason: "Ein bedeutsamer Wendepunkt auf dem Weg unserer Nation zur Moderne. Die Fundamente sind gelegt, die ersten Zahnräder montiert, die Öfen angeheizt - das allererste Gebäude für den Schwermaschinenbau erhebt sich nun stolz über die Skyline, ein Zeugnis menschlicher Genialität und Ambition.\nWo einst Arbeiter mit bloßen Händen schufteten, entstehen nun gewaltige Maschinen, um ihre Last zu lindern und ihre Produktivität zu vervielfachen. Auch wenn die Motoren dröhnen und die Hallen vom Klang des Stahls widerhallen, ist dieses Gebäude mehr als nur eine Fabrik. Es ist der Schmelztiegel, in dem die Zukunft geschmiedet wird."
