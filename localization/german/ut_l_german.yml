@@ -390,7 +390,7 @@
  concept_ut_new_dawn: "Neuer Aufbruch"
  concept_ut_new_dawn_desc: "Technologischer und kultureller Fortschritt läutet einen [concept_ut_new_dawn] des politischen Wandels ein. Der [concept_ut_nd_path_to_utopia] kann geebnet werden. Festige die Kernideologie deiner Nation. Die Ideologie bestimmt, in welche Richtung sich deine Nation entwickelt.\nWähle zwischen [concept_ut_nd_fascist_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_democrat_core] und [concept_ut_nd_communist_core] [concept_ut_nd_path_to_utopia]."
 
- je_ut_new_dawn_democratic_complete_condition_tt: "Alle #v Aktionen#! des Journaleintrages sind abgeschlossen"
+ je_ut_new_dawn_democratic_complete_condition_tt: "Alle [concept_ut_nd_milestones] des Journaleintrages sind abgeschlossen"
 
  je_ut_new_dawn_democratic_spirit: "Demokratischer Geist"
  je_ut_new_dawn_democratic_spirit_desc: "Ein neuer demokratischer Geist erfasst das Land, geleitet von Intellektuellen, die sich dem liberal-demokratischen Ideal verpflichtet fühlen. Der Weg nach vorne erfordert eine klare Absage an extremistische Ideologien in der Regierung."

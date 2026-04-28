@@ -12,6 +12,7 @@
  utopia.enable: "Enable"
  utopia.disable: "Disable"
  utopia.error: "Error" 
+ utopia.path: "Path" 
 
 # Events & Journals
  ut_heavy_industrial_machinery_je: "Heavy Industrial Machinery"
