@@ -127,7 +127,7 @@ Get-ChildItem -Path $FolderPath -Filter *.txt -File -Recurse | ForEach-Object {
             $leadTotal += [int]$m.Groups[1].Value
         }
 
-        $bauxiteAmount = [math]::Floor($leadTotal / 2) + $sulfurTotal
+        $bauxiteAmount = [math]::Max([math]::Floor($leadTotal / 2), $sulfurTotal)
 
         # -------------------------
         # Output

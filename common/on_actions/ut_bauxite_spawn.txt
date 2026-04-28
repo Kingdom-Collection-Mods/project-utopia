@@ -7,1259 +7,1259 @@
 ut_utopia_spawn_bauxite_action = {
 	effect = {
 		set_global_variable = ut_utopia_spawn_bauxite_on_game_started_var
-		s:STATE_SVEALAND = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 9
-			}
-		}
-		s:STATE_WESTERN_NORWAY = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 20
-			}
-		}
-		s:STATE_NORTHERN_NORWAY = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 20
-			}
-		}
-		s:STATE_ICELAND = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 20
-			}
-		}
-		s:STATE_LANCASHIRE = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 22
-			}
-		}
-		s:STATE_YORKSHIRE = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 13
-			}
-		}
-		s:STATE_MIDLANDS = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 40
-			}
-		}
-		s:STATE_WEST_COUNTRY = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 30
-			}
-		}
-		s:STATE_MUNSTER = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_LEINSTER = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 13
-			}
-		}
-		s:STATE_CONNAUGHT = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 48
-			}
-		}
-		s:STATE_RHONE = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 18
-			}
-		}
-		s:STATE_LORRAINE = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 40
-			}
-		}
-		s:STATE_WALLONIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 30
-			}
-		}
-		s:STATE_BOHEMIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 4
-			}
-		}
-		s:STATE_STYRIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_EAST_SWITZERLAND = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 15
-			}
-		}
-		s:STATE_WEST_SWITZERLAND = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_WESTPHALIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 32
-			}
-		}
-		s:STATE_RHINELAND = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 15
-			}
-		}
-		s:STATE_BRUNSWICK = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 22
-			}
-		}
-		s:STATE_BAVARIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 15
-			}
-		}
-		s:STATE_SAXONY = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 80
-			}
-		}
-		s:STATE_HESSE = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 40
-			}
-		}
-		s:STATE_LOMBARDY = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 9
-			}
-		}
-		s:STATE_PIEDMONT = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 22
-			}
-		}
-		s:STATE_SARDINIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 20
-			}
-		}
-		s:STATE_SAVOY = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_TUSCANY = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 40
-			}
-		}
-		s:STATE_ROMAGNA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 48
-			}
-		}
-		s:STATE_VENETIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 36
-			}
-		}
-		s:STATE_SICILY = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 100
-			}
-		}
-		s:STATE_NEW_CASTILE = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 6
-			}
-		}
-		s:STATE_OLD_CASTILE = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 2
-			}
-		}
-		s:STATE_BASQUE_COUNTRY = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 1
-			}
-		}
-		s:STATE_CATALONIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 3
-			}
-		}
-		s:STATE_LOWER_ANDALUSIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 44
-			}
-		}
-		s:STATE_UPPER_ANDALUSIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 23
-			}
-		}
-		s:STATE_EXTREMADURA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 4
-			}
-		}
-		s:STATE_VALENCIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 2
-			}
-		}
-		s:STATE_BEIRA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 3
-			}
-		}
-		s:STATE_ALENTEJO = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 22
-			}
-		}
-		s:STATE_BOSNIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 19
-			}
-		}
-		s:STATE_EASTERN_SERBIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 6
-			}
-		}
-		s:STATE_KOSOVO = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_ATTICA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 32
-			}
-		}
-		s:STATE_MURCIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 10
-			}
-		}
-		s:STATE_ENTRE_DOURO_E_MINHO = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 1
-			}
-		}
-		s:STATE_LOWER_SILESIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 9
-			}
-		}
-		s:STATE_UPPER_SILESIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 31
-			}
-		}
-		s:STATE_GREATER_POLAND = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_LESSER_POLAND = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 32
-			}
-		}
-		s:STATE_WEST_PRUSSIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 40
-			}
-		}
-		s:STATE_RUTHENIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 16
-			}
-		}
-		s:STATE_SOUTHERN_TRANSYLVANIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 22
-			}
-		}
-		s:STATE_WALLACHIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 15
-			}
-		}
-		s:STATE_LOWER_EGYPT = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 20
-			}
-		}
-		s:STATE_SINAI = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_MARRAKECH = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 52
-			}
-		}
-		s:STATE_INNER_MOROCCO = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 15
-			}
-		}
-		s:STATE_ALGIERS = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 3
-			}
-		}
-		s:STATE_CONSTANTINE = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 18
-			}
-		}
-		s:STATE_TUNISIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 48
-			}
-		}
-		s:STATE_WEST_SAHARA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 36
-			}
-		}
-		s:STATE_TIMBUKTU = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 36
-			}
-		}
-		s:STATE_NIGER = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 24
-			}
-		}
-		s:STATE_SENEGAL = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 40
-			}
-		}
-		s:STATE_NIGERIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 22
-			}
-		}
-		s:STATE_TOGO = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 44
-			}
-		}
-		s:STATE_EAST_ANGOLA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 13
-			}
-		}
-		s:STATE_ZAMBIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 16
-			}
-		}
-		s:STATE_LOUISIANA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 32
-			}
-		}
-		s:STATE_KANSAS = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 9
-			}
-		}
-		s:STATE_ARKANSAS = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 22
-			}
-		}
-		s:STATE_MISSOURI = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 18
-			}
-		}
-		s:STATE_IOWA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 40
-			}
-		}
-		s:STATE_MINNESOTA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 40
-			}
-		}
-		s:STATE_WISCONSIN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 32
-			}
-		}
-		s:STATE_MICHIGAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 32
-			}
-		}
-		s:STATE_OHIO = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 18
-			}
-		}
-		s:STATE_ALABAMA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_FLORIDA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 42
-			}
-		}
-		s:STATE_ILLINOIS = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 45
-			}
-		}
-		s:STATE_ONTARIO = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 48
-			}
-		}
-		s:STATE_NEW_BRUNSWICK = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 27
-			}
-		}
-		s:STATE_NEWFOUNDLAND = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_ALBERTA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 32
-			}
-		}
-		s:STATE_BRITISH_COLUMBIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 36
-			}
-		}
-		s:STATE_TEXAS = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 36
-			}
-		}
-		s:STATE_CALIFORNIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 40
-			}
-		}
-		s:STATE_CHIHUAHUA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 9
-			}
-		}
-		s:STATE_MEXICO = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 6
-			}
-		}
-		s:STATE_VERACRUZ = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 6
-			}
-		}
-		s:STATE_GUERRERO = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 7
-			}
-		}
-		s:STATE_OAXACA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 7
-			}
-		}
-		s:STATE_WESTERN_CUBA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 3
-			}
-		}
-		s:STATE_EASTERN_CUBA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 2
-			}
-		}
-		s:STATE_ZULIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 32
-			}
-		}
-		s:STATE_TARAPACA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 24
-			}
-		}
-		s:STATE_ANTOFAGASTA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 48
-			}
-		}
-		s:STATE_POTOSI = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 6
-			}
-		}
-		s:STATE_LIMA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 28
-			}
-		}
-		s:STATE_ICA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 32
-			}
-		}
-		s:STATE_AREQUIPA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 32
-			}
-		}
-		s:STATE_JUJUY = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 9
-			}
-		}
-		s:STATE_PATAGONIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 20
-			}
-		}
-		s:STATE_RIO_NEGRO = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 52
-			}
-		}
-		s:STATE_TUCUMAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 7
-			}
-		}
-		s:STATE_SANTIAGO = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 36
-			}
-		}
-		s:STATE_LOS_RIOS = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 32
-			}
-		}
-		s:STATE_ARAUCANIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 40
-			}
-		}
-		s:STATE_RIO_GRANDE_DO_SUL = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 15
-			}
-		}
-		s:STATE_MINAS_GERAIS = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 15
-			}
-		}
-		s:STATE_YEMEN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 6
-			}
-		}
-		s:STATE_HEDJAZ = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 28
-			}
-		}
-		s:STATE_CYPRUS = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 5
-			}
-		}
-		s:STATE_TRANSJORDAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_PALESTINE = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 9
-			}
-		}
-		s:STATE_MOSUL = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 36
-			}
-		}
-		s:STATE_BASRA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 32
-			}
-		}
-		s:STATE_FARS = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 28
-			}
-		}
-		s:STATE_KERMAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 22
-			}
-		}
-		s:STATE_KHUZESTAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 22
-			}
-		}
-		s:STATE_ISFAHAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 14
-			}
-		}
-		s:STATE_IRAKAJEMI = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 5
-			}
-		}
-		s:STATE_SEMNAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 4
-			}
-		}
-		s:STATE_TABRIZ = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_ERZURUM = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 18
-			}
-		}
-		s:STATE_KUBAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 13
-			}
-		}
-		s:STATE_ARMENIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 10
-			}
-		}
-		s:STATE_AZERBAIJAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 9
-			}
-		}
-		s:STATE_GREATER_CAUCASUS = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 10
-			}
-		}
-		s:STATE_SAMARA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 15
-			}
-		}
-		s:STATE_ASTRAKHAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 30
-			}
-		}
-		s:STATE_TURKMENIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 40
-			}
-		}
-		s:STATE_PASHTUNISTAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 2
-			}
-		}
-		s:STATE_CENTRAL_HIGHLANDS = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 4
-			}
-		}
-		s:STATE_HERAT = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 4
-			}
-		}
-		s:STATE_QUETTA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 4
-			}
-		}
-		s:STATE_BALUCHISTAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 5
-			}
-		}
-		s:STATE_HIMALAYAS = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 4
-			}
-		}
-		s:STATE_DELHI = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 2
-			}
-		}
-		s:STATE_SINDH = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 4
-			}
-		}
-		s:STATE_RAJPUTANA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 3
-			}
-		}
-		s:STATE_TRAVANCORE = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 1
-			}
-		}
-		s:STATE_SHAN_STATES = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 17
-			}
-		}
-		s:STATE_DZUNGARIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 80
-			}
-		}
-		s:STATE_SICHUAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 40
-			}
-		}
-		s:STATE_HINGGAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_BEIJING = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 7
-			}
-		}
-		s:STATE_SHENGJING = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 34
-			}
-		}
-		s:STATE_OUTER_MANCHURIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_SOUTHERN_MANCHURIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_NORTHERN_MANCHURIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 2
-			}
-		}
-		s:STATE_SHANXI = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 48
-			}
-		}
-		s:STATE_XIAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 60
-			}
-		}
-		s:STATE_HENAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 36
-			}
-		}
-		s:STATE_ZHILI = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 36
-			}
-		}
-		s:STATE_HUNAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 44
-			}
-		}
-		s:STATE_SHANDONG = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 32
-			}
-		}
-		s:STATE_CHIANG_MAI = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 18
-			}
-		}
-		s:STATE_SAKHALIN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 22
-			}
-		}
-		s:STATE_HOKKAIDO = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 22
-			}
-		}
-		s:STATE_TOHOKU = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 51
-			}
-		}
-		s:STATE_KANTO = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 24
-			}
-		}
-		s:STATE_TOKAI = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 19
-			}
-		}
-		s:STATE_HOKUSHINETSU = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 6
-			}
-		}
-		s:STATE_KANSAI = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 9
-			}
-		}
-		s:STATE_KYUSHU = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 31
-			}
-		}
-		s:STATE_RYUKYU_ISLANDS = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 6
-			}
-		}
-		s:STATE_CHUGOKU = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 5
-			}
-		}
-		s:STATE_SHIKOKU = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 19
-			}
-		}
-		s:STATE_SEOUL = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 13
-			}
-		}
-		s:STATE_BUSAN = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 6
-			}
-		}
-		s:STATE_YANGHO = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 6
-			}
-		}
-		s:STATE_SARIWON = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_PYONGYANG = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 7
-			}
-		}
-		s:STATE_MALAYA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_NORTH_BORNEO = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 36
-			}
-		}
-		s:STATE_WEST_BORNEO = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 15
-			}
-		}
-		s:STATE_WEST_JAVA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 32
-			}
-		}
-		s:STATE_EAST_JAVA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 40
-			}
-		}
-		s:STATE_CENTRAL_JAVA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 32
-			}
-		}
-		s:STATE_NORTH_SUMATRA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 48
-			}
-		}
-		s:STATE_SOUTH_SUMATRA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 48
-			}
-		}
-		s:STATE_ACEH = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 20
-			}
-		}
-		s:STATE_EASTERN_NEW_GUINEA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 32
-			}
-		}
-		s:STATE_SUNDA_ISLANDS = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 40
-			}
-		}
-		s:STATE_NAURU = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_KANAK = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 4
-			}
-		}
-		s:STATE_NEW_SOUTH_WALES = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_VICTORIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 24
-			}
-		}
-		s:STATE_TASMANIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 7
-			}
-		}
-		s:STATE_QUEENSLAND = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 22
-			}
-		}
-		s:STATE_SOUTH_AUSTRALIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 60
-			}
-		}
-		s:STATE_URAL = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 40
-			}
-		}
-		s:STATE_YAKUTSK = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 8
-			}
-		}
-		s:STATE_TRANS_BAIKAL = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 44
-			}
-		}
-		s:STATE_UUSIMAA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 2
-			}
-		}
-		s:STATE_OSTROBOTHNIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 2
-			}
-		}
-		s:STATE_KOLA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 10
-			}
-		}
-		s:STATE_KURSK = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 12
-			}
-		}
-		s:STATE_SEMIRECHE = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 8
-			}
-		}
-		s:STATE_JETISY = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 10
-			}
-		}
-		s:STATE_SYRDARYA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 30
-			}
-		}
-		s:STATE_VYATKA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 10
-			}
-		}
-		s:STATE_UFA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 8
-			}
-		}
-		s:STATE_ALTAI = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 6
-			}
-		}
-		s:STATE_CHUVASHIA = {
-			change_resource_potential = {
-				type = building_bauxite_mine
-				amount = 15
-			}
-		}
+        s:STATE_SVEALAND = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 9
+            }
+        }
+        s:STATE_WESTERN_NORWAY = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 20
+            }
+        }
+        s:STATE_NORTHERN_NORWAY = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 20
+            }
+        }
+        s:STATE_ICELAND = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 20
+            }
+        }
+        s:STATE_LANCASHIRE = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 22
+            }
+        }
+        s:STATE_YORKSHIRE = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 13
+            }
+        }
+        s:STATE_MIDLANDS = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 40
+            }
+        }
+        s:STATE_WEST_COUNTRY = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 30
+            }
+        }
+        s:STATE_MUNSTER = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_LEINSTER = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 13
+            }
+        }
+        s:STATE_CONNAUGHT = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 48
+            }
+        }
+        s:STATE_RHONE = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 18
+            }
+        }
+        s:STATE_LORRAINE = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 40
+            }
+        }
+        s:STATE_WALLONIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 30
+            }
+        }
+        s:STATE_BOHEMIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 4
+            }
+        }
+        s:STATE_STYRIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_EAST_SWITZERLAND = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 15
+            }
+        }
+        s:STATE_WEST_SWITZERLAND = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_WESTPHALIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 32
+            }
+        }
+        s:STATE_RHINELAND = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 15
+            }
+        }
+        s:STATE_BRUNSWICK = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 22
+            }
+        }
+        s:STATE_BAVARIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 15
+            }
+        }
+        s:STATE_SAXONY = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 80
+            }
+        }
+        s:STATE_HESSE = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 40
+            }
+        }
+        s:STATE_LOMBARDY = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 9
+            }
+        }
+        s:STATE_PIEDMONT = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 22
+            }
+        }
+        s:STATE_SARDINIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 20
+            }
+        }
+        s:STATE_SAVOY = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_TUSCANY = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 40
+            }
+        }
+        s:STATE_ROMAGNA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 48
+            }
+        }
+        s:STATE_VENETIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 36
+            }
+        }
+        s:STATE_SICILY = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 100
+            }
+        }
+        s:STATE_NEW_CASTILE = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 6
+            }
+        }
+        s:STATE_OLD_CASTILE = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 2
+            }
+        }
+        s:STATE_BASQUE_COUNTRY = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 1
+            }
+        }
+        s:STATE_CATALONIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 3
+            }
+        }
+        s:STATE_LOWER_ANDALUSIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 44
+            }
+        }
+        s:STATE_UPPER_ANDALUSIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 23
+            }
+        }
+        s:STATE_EXTREMADURA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 4
+            }
+        }
+        s:STATE_VALENCIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 2
+            }
+        }
+        s:STATE_BEIRA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 3
+            }
+        }
+        s:STATE_ALENTEJO = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 22
+            }
+        }
+        s:STATE_BOSNIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 19
+            }
+        }
+        s:STATE_EASTERN_SERBIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 6
+            }
+        }
+        s:STATE_KOSOVO = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_ATTICA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 32
+            }
+        }
+        s:STATE_MURCIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 10
+            }
+        }
+        s:STATE_ENTRE_DOURO_E_MINHO = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 1
+            }
+        }
+        s:STATE_LOWER_SILESIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 9
+            }
+        }
+        s:STATE_UPPER_SILESIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 31
+            }
+        }
+        s:STATE_GREATER_POLAND = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_LESSER_POLAND = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 32
+            }
+        }
+        s:STATE_WEST_PRUSSIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 40
+            }
+        }
+        s:STATE_RUTHENIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 16
+            }
+        }
+        s:STATE_SOUTHERN_TRANSYLVANIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 22
+            }
+        }
+        s:STATE_WALLACHIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 15
+            }
+        }
+        s:STATE_LOWER_EGYPT = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 20
+            }
+        }
+        s:STATE_SINAI = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_MARRAKECH = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 52
+            }
+        }
+        s:STATE_INNER_MOROCCO = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 15
+            }
+        }
+        s:STATE_ALGIERS = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 3
+            }
+        }
+        s:STATE_CONSTANTINE = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 18
+            }
+        }
+        s:STATE_TUNISIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 48
+            }
+        }
+        s:STATE_WEST_SAHARA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 36
+            }
+        }
+        s:STATE_TIMBUKTU = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 36
+            }
+        }
+        s:STATE_NIGER = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 24
+            }
+        }
+        s:STATE_SENEGAL = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 40
+            }
+        }
+        s:STATE_NIGERIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 22
+            }
+        }
+        s:STATE_TOGO = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 44
+            }
+        }
+        s:STATE_EAST_ANGOLA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 13
+            }
+        }
+        s:STATE_ZAMBIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 16
+            }
+        }
+        s:STATE_LOUISIANA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 32
+            }
+        }
+        s:STATE_KANSAS = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 9
+            }
+        }
+        s:STATE_ARKANSAS = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 22
+            }
+        }
+        s:STATE_MISSOURI = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 18
+            }
+        }
+        s:STATE_IOWA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 40
+            }
+        }
+        s:STATE_MINNESOTA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 40
+            }
+        }
+        s:STATE_WISCONSIN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 32
+            }
+        }
+        s:STATE_MICHIGAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 32
+            }
+        }
+        s:STATE_OHIO = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 18
+            }
+        }
+        s:STATE_ALABAMA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_FLORIDA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 42
+            }
+        }
+        s:STATE_ILLINOIS = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 45
+            }
+        }
+        s:STATE_ONTARIO = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 48
+            }
+        }
+        s:STATE_NEW_BRUNSWICK = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 27
+            }
+        }
+        s:STATE_NEWFOUNDLAND = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_ALBERTA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 32
+            }
+        }
+        s:STATE_BRITISH_COLUMBIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 36
+            }
+        }
+        s:STATE_TEXAS = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 36
+            }
+        }
+        s:STATE_CALIFORNIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 40
+            }
+        }
+        s:STATE_CHIHUAHUA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 9
+            }
+        }
+        s:STATE_MEXICO = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 6
+            }
+        }
+        s:STATE_VERACRUZ = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 6
+            }
+        }
+        s:STATE_GUERRERO = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 7
+            }
+        }
+        s:STATE_OAXACA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 7
+            }
+        }
+        s:STATE_WESTERN_CUBA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 3
+            }
+        }
+        s:STATE_EASTERN_CUBA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 2
+            }
+        }
+        s:STATE_ZULIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 32
+            }
+        }
+        s:STATE_TARAPACA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 24
+            }
+        }
+        s:STATE_ANTOFAGASTA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 48
+            }
+        }
+        s:STATE_POTOSI = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 6
+            }
+        }
+        s:STATE_LIMA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 28
+            }
+        }
+        s:STATE_ICA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 32
+            }
+        }
+        s:STATE_AREQUIPA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 32
+            }
+        }
+        s:STATE_JUJUY = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 9
+            }
+        }
+        s:STATE_PATAGONIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 20
+            }
+        }
+        s:STATE_RIO_NEGRO = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 52
+            }
+        }
+        s:STATE_TUCUMAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 7
+            }
+        }
+        s:STATE_SANTIAGO = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 36
+            }
+        }
+        s:STATE_LOS_RIOS = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 32
+            }
+        }
+        s:STATE_ARAUCANIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 40
+            }
+        }
+        s:STATE_RIO_GRANDE_DO_SUL = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 15
+            }
+        }
+        s:STATE_MINAS_GERAIS = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 15
+            }
+        }
+        s:STATE_YEMEN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 6
+            }
+        }
+        s:STATE_HEDJAZ = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 28
+            }
+        }
+        s:STATE_CYPRUS = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 5
+            }
+        }
+        s:STATE_TRANSJORDAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_PALESTINE = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 9
+            }
+        }
+        s:STATE_MOSUL = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 36
+            }
+        }
+        s:STATE_BASRA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 32
+            }
+        }
+        s:STATE_FARS = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 28
+            }
+        }
+        s:STATE_KERMAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 22
+            }
+        }
+        s:STATE_KHUZESTAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 22
+            }
+        }
+        s:STATE_ISFAHAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 14
+            }
+        }
+        s:STATE_IRAKAJEMI = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 5
+            }
+        }
+        s:STATE_SEMNAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 4
+            }
+        }
+        s:STATE_TABRIZ = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_ERZURUM = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 18
+            }
+        }
+        s:STATE_KUBAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 13
+            }
+        }
+        s:STATE_ARMENIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 10
+            }
+        }
+        s:STATE_AZERBAIJAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 9
+            }
+        }
+        s:STATE_GREATER_CAUCASUS = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 10
+            }
+        }
+        s:STATE_SAMARA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 15
+            }
+        }
+        s:STATE_ASTRAKHAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 30
+            }
+        }
+        s:STATE_TURKMENIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 40
+            }
+        }
+        s:STATE_PASHTUNISTAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 2
+            }
+        }
+        s:STATE_CENTRAL_HIGHLANDS = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 4
+            }
+        }
+        s:STATE_HERAT = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 4
+            }
+        }
+        s:STATE_QUETTA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 4
+            }
+        }
+        s:STATE_BALUCHISTAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 5
+            }
+        }
+        s:STATE_HIMALAYAS = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 4
+            }
+        }
+        s:STATE_DELHI = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 2
+            }
+        }
+        s:STATE_SINDH = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 4
+            }
+        }
+        s:STATE_RAJPUTANA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 3
+            }
+        }
+        s:STATE_TRAVANCORE = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 1
+            }
+        }
+        s:STATE_SHAN_STATES = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 17
+            }
+        }
+        s:STATE_DZUNGARIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 80
+            }
+        }
+        s:STATE_SICHUAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 40
+            }
+        }
+        s:STATE_HINGGAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_BEIJING = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 7
+            }
+        }
+        s:STATE_SHENGJING = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 34
+            }
+        }
+        s:STATE_OUTER_MANCHURIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_SOUTHERN_MANCHURIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_NORTHERN_MANCHURIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 2
+            }
+        }
+        s:STATE_SHANXI = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 48
+            }
+        }
+        s:STATE_XIAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 60
+            }
+        }
+        s:STATE_HENAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 36
+            }
+        }
+        s:STATE_ZHILI = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 36
+            }
+        }
+        s:STATE_HUNAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 44
+            }
+        }
+        s:STATE_SHANDONG = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 32
+            }
+        }
+        s:STATE_CHIANG_MAI = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 18
+            }
+        }
+        s:STATE_SAKHALIN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 22
+            }
+        }
+        s:STATE_HOKKAIDO = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 22
+            }
+        }
+        s:STATE_TOHOKU = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 51
+            }
+        }
+        s:STATE_KANTO = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 24
+            }
+        }
+        s:STATE_TOKAI = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 19
+            }
+        }
+        s:STATE_HOKUSHINETSU = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 6
+            }
+        }
+        s:STATE_KANSAI = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 9
+            }
+        }
+        s:STATE_KYUSHU = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 31
+            }
+        }
+        s:STATE_RYUKYU_ISLANDS = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 6
+            }
+        }
+        s:STATE_CHUGOKU = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 5
+            }
+        }
+        s:STATE_SHIKOKU = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 19
+            }
+        }
+        s:STATE_SEOUL = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 13
+            }
+        }
+        s:STATE_BUSAN = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 6
+            }
+        }
+        s:STATE_YANGHO = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 6
+            }
+        }
+        s:STATE_SARIWON = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_PYONGYANG = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 7
+            }
+        }
+        s:STATE_MALAYA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_NORTH_BORNEO = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 36
+            }
+        }
+        s:STATE_WEST_BORNEO = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 15
+            }
+        }
+        s:STATE_WEST_JAVA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 32
+            }
+        }
+        s:STATE_EAST_JAVA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 40
+            }
+        }
+        s:STATE_CENTRAL_JAVA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 32
+            }
+        }
+        s:STATE_NORTH_SUMATRA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 48
+            }
+        }
+        s:STATE_SOUTH_SUMATRA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 48
+            }
+        }
+        s:STATE_ACEH = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 20
+            }
+        }
+        s:STATE_EASTERN_NEW_GUINEA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 32
+            }
+        }
+        s:STATE_SUNDA_ISLANDS = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 40
+            }
+        }
+        s:STATE_NAURU = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_KANAK = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 4
+            }
+        }
+        s:STATE_NEW_SOUTH_WALES = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_VICTORIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 24
+            }
+        }
+        s:STATE_TASMANIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 7
+            }
+        }
+        s:STATE_QUEENSLAND = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 22
+            }
+        }
+        s:STATE_SOUTH_AUSTRALIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 60
+            }
+        }
+        s:STATE_URAL = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 40
+            }
+        }
+        s:STATE_YAKUTSK = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 8
+            }
+        }
+        s:STATE_TRANS_BAIKAL = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 44
+            }
+        }
+        s:STATE_UUSIMAA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 2
+            }
+        }
+        s:STATE_OSTROBOTHNIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 2
+            }
+        }
+        s:STATE_KOLA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 10
+            }
+        }
+        s:STATE_KURSK = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 12
+            }
+        }
+        s:STATE_SEMIRECHE = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 8
+            }
+        }
+        s:STATE_JETISY = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 10
+            }
+        }
+        s:STATE_SYRDARYA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 30
+            }
+        }
+        s:STATE_VYATKA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 10
+            }
+        }
+        s:STATE_UFA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 8
+            }
+        }
+        s:STATE_ALTAI = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 6
+            }
+        }
+        s:STATE_CHUVASHIA = {
+            change_resource_potential = {
+                type = building_bauxite_mine
+                amount = 15
+            }
+        }
 	}
 }
