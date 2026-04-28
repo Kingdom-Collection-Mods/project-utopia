@@ -1,0 +1,571 @@
+﻿on_game_started = {
+	on_actions = {
+		ut_utopia_spawn_rare_earths_action
+	}
+}
+
+ut_utopia_spawn_rare_earths_action = {
+	effect = {
+		set_global_variable = ut_utopia_spawn_rare_earths_on_game_started_var
+		s:STATE_NORRLAND = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 10
+			}
+		}
+		s:STATE_RHONE = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 3
+			}
+		}
+		s:STATE_AQUITAINE = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 3
+			}
+		}
+		s:STATE_BOHEMIA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 5
+			}
+		}
+		s:STATE_TYROL = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 2
+			}
+		}
+		s:STATE_BAVARIA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 3
+			}
+		}
+		s:STATE_SAXONY = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 3
+			}
+		}
+		s:STATE_GALICIA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 2
+			}
+		}
+		s:STATE_ASTURIAS = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 2
+			}
+		}
+		s:STATE_BEIRA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 2
+			}
+		}
+		s:STATE_WESTERN_SERBIA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 3
+			}
+		}
+		s:STATE_MURCIA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 2
+			}
+		}
+		s:STATE_ENTRE_DOURO_E_MINHO = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 2
+			}
+		}
+		s:STATE_INNER_MOROCCO = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 3
+			}
+		}
+		s:STATE_SOUTH_MADAGASCAR = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 20
+			}
+		}
+		s:STATE_MOCAMBIQUE = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 2
+			}
+		}
+		s:STATE_CONGO = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 20
+			}
+		}
+		s:STATE_ZAMBEZIA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 4
+			}
+		}
+		s:STATE_VRYSTAAT = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 16
+			}
+		}
+		s:STATE_TRANSVAAL = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 12
+			}
+		}
+		s:STATE_NORTHERN_CAPE = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 8
+			}
+		}
+		s:STATE_BOTSWANA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 10
+			}
+		}
+		s:STATE_ALASKA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 12
+			}
+		}
+		s:STATE_COLORADO = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 8
+			}
+		}
+		s:STATE_SOUTH_DAKOTA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 8
+			}
+		}
+		s:STATE_QUEBEC = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 10
+			}
+		}
+		s:STATE_BRITISH_COLUMBIA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 8
+			}
+		}
+		s:STATE_YUKON_TERRITORY = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 12
+			}
+		}
+		s:STATE_NORTHWEST_TERRITORIES = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 10
+			}
+		}
+		s:STATE_NEVADA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 15
+			}
+		}
+		s:STATE_ARIZONA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 5
+			}
+		}
+		s:STATE_CALIFORNIA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 42
+			}
+		}
+		s:STATE_SONORA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 6
+			}
+		}
+		s:STATE_BAJIO = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 4
+			}
+		}
+		s:STATE_GUERRERO = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 3
+			}
+		}
+		s:STATE_OAXACA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 2
+			}
+		}
+		s:STATE_ZACATECAS = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 4
+			}
+		}
+		s:STATE_BAJA_CALIFORNIA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 10
+			}
+		}
+		s:STATE_GUAYANA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 12
+			}
+		}
+		s:STATE_ANTOFAGASTA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 10
+			}
+		}
+		s:STATE_LA_PAZ = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 4
+			}
+		}
+		s:STATE_POTOSI = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 4
+			}
+		}
+		s:STATE_CAJAMARCA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 4
+			}
+		}
+		s:STATE_LIMA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 6
+			}
+		}
+		s:STATE_JUJUY = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 3
+			}
+		}
+		s:STATE_TUCUMAN = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 3
+			}
+		}
+		s:STATE_SANTIAGO = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 5
+			}
+		}
+		s:STATE_ARAUCANIA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 4
+			}
+		}
+		s:STATE_MINAS_GERAIS = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 10
+			}
+		}
+		s:STATE_GREATER_CAUCASUS = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 3
+			}
+		}
+		s:STATE_MYSORE = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 6
+			}
+		}
+		s:STATE_BOMBAY = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 3
+			}
+		}
+		s:STATE_KACHIN = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 3
+			}
+		}
+		s:STATE_MANDALAY = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 2
+			}
+		}
+		s:STATE_SICHUAN = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 20
+			}
+		}
+		s:STATE_SHAOZHOU = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 10
+			}
+		}
+		s:STATE_HINGGAN = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 30
+			}
+		}
+		s:STATE_OUTER_MANCHURIA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 8
+			}
+		}
+		s:STATE_GUANGDONG = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 10
+			}
+		}
+		s:STATE_FORMOSA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 10
+			}
+		}
+		s:STATE_TONKIN = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 20
+			}
+		}
+		s:STATE_HOKKAIDO = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 4
+			}
+		}
+		s:STATE_TOHOKU = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 2
+			}
+		}
+		s:STATE_HOKUSHINETSU = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 3
+			}
+		}
+		s:STATE_KANSAI = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 1
+			}
+		}
+		s:STATE_KYUSHU = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 1
+			}
+		}
+		s:STATE_SEOUL = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 2
+			}
+		}
+		s:STATE_SARIWON = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 2
+			}
+		}
+		s:STATE_PYONGYANG = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 5
+			}
+		}
+		s:STATE_MALAYA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 20
+			}
+		}
+		s:STATE_NORTH_BORNEO = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 8
+			}
+		}
+		s:STATE_WEST_BORNEO = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 6
+			}
+		}
+		s:STATE_NEW_SOUTH_WALES = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 12
+			}
+		}
+		s:STATE_VICTORIA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 6
+			}
+		}
+		s:STATE_TASMANIA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 6
+			}
+		}
+		s:STATE_WESTERN_AUSTRALIA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 8
+			}
+		}
+		s:STATE_NORTH_ISLAND = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 4
+			}
+		}
+		s:STATE_SOUTH_ISLAND = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 6
+			}
+		}
+		s:STATE_URAL = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 8
+			}
+		}
+		s:STATE_CHUKOTKA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 4
+			}
+		}
+		s:STATE_KAMCHATKA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 2
+			}
+		}
+		s:STATE_OKHOTSK = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 8
+			}
+		}
+		s:STATE_YAKUTSK = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 8
+			}
+		}
+		s:STATE_KOLA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 20
+			}
+		}
+		s:STATE_ARKHANGELSK = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 10
+			}
+		}
+		s:STATE_KURSK = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 3
+			}
+		}
+		s:STATE_NORTH_CAUCASUS = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 4
+			}
+		}
+		s:STATE_KRASNOYARSK = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 12
+			}
+		}
+		s:STATE_ALTAI = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 3
+			}
+		}
+		s:STATE_BURYATIA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 16
+			}
+		}
+		s:STATE_KOLYMA = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 16
+			}
+		}
+		s:STATE_AMUR = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 18
+			}
+		}
+		s:STATE_CHELYABINSK = {
+			change_resource_potential = {
+				type = building_rare_earths_mine
+				amount = 12
+			}
+		}
+
+
+	}
+}
