@@ -18,6 +18,7 @@ $customRareEarths = @{
     "STATE_TONKIN"           = 20
     "STATE_MALAYA"           = 20
     "STATE_KOLA"             = 20
+    "STATE_SICHUAN"           = 20
 
     # --- SMALL (10) ---
     "STATE_NORRLAND"              = 10
@@ -25,6 +26,9 @@ $customRareEarths = @{
     "STATE_NORTHWEST_TERRITORIES" = 10
     "STATE_BAJA_CALIFORNIA"       = 10
     "STATE_FORMOSA"               = 10
+    "STATE_GUANGDONG"             = 10
+    "STATE_SHAOZHOU"              = 10
+    "STATE_BOTSWANA"           = 10
 
     # --- TINY (3) ---
     "STATE_RHONE"          = 3
