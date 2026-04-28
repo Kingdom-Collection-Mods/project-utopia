@@ -1,4 +1,4 @@
-ideology_orleanist = { # Average Progressiveness - 12.5
+﻿ideology_orleanist = { # Average Progressiveness - 12.5
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_orleanist.dds"
 
 	character_ideology = yes
