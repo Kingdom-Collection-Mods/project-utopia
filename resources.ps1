@@ -1,7 +1,39 @@
 param(
     [Parameter(Mandatory)]
-    [string]$FolderPath
+    [string]$FolderPath,
+    
+    [Parameter(Mandatory)]
+    [int]$Resource
 )
+# ---- CUSTOM EXTRA (per state) ----
+
+$customRareEarths = @{
+    # --- LARGE (30) ---
+    "STATE_CALIFORNIA"       = 30
+    "STATE_HINGGAN"          = 30
+
+    # --- MEDIUM (20) ---
+    "STATE_SOUTH_MADAGASCAR" = 20
+    "STATE_CONGO"            = 20
+    "STATE_TONKIN"           = 20
+    "STATE_MALAYA"           = 20
+    "STATE_KOLA"             = 20
+
+    # --- SMALL (10) ---
+    "STATE_NORRLAND"              = 10
+    "STATE_QUEBEC"                = 10
+    "STATE_NORTHWEST_TERRITORIES" = 10
+    "STATE_BAJA_CALIFORNIA"       = 10
+    "STATE_FORMOSA"               = 10
+
+    # --- TINY (3) ---
+    "STATE_RHONE"          = 3
+    "STATE_AQUITAINE"      = 3
+    "STATE_BAVARIA"        = 3
+    "STATE_SAXONY"         = 3
+    "STATE_WESTERN_SERBIA" = 3
+    "STATE_TALLINN"        = 3
+}
 
 $statePattern = '(?im)^\s*(STATE_[A-Za-z0-9_]+)\s*=\s*\{'
 
@@ -45,7 +77,6 @@ Get-ChildItem -Path $FolderPath -Filter *.txt -File -Recurse | ForEach-Object {
 
             if ($blockText -match 'type\s*=\s*"building_gold_field"') {
 
-                # Try undiscovered_amount first
                 if ($blockText -match 'undiscovered_amount\s*=\s*(\d+)') {
                     $rareEarthsAmount += [int]$Matches[1]
                 }
@@ -62,6 +93,11 @@ Get-ChildItem -Path $FolderPath -Filter *.txt -File -Recurse | ForEach-Object {
             $rubberTotal += [int]$m.Groups[1].Value
         }
         $rareEarthsAmount += [math]::Floor($rubberTotal / 4)
+
+        
+        if ($customRareEarths.ContainsKey($stateName)) {
+            $rareEarthsAmount += $customRareEarths[$stateName]
+        }
 
         # -------------------------
         # Bauxite calculation
@@ -84,7 +120,7 @@ Get-ChildItem -Path $FolderPath -Filter *.txt -File -Recurse | ForEach-Object {
         # -------------------------
         # Output
         # -------------------------
-        if ($rareEarthsAmount -gt 0) {
+        if (($Resource -eq 0) -and ($rareEarthsAmount -gt 0)) {
 @"
 s:$stateName = {
     change_resource_potential = {
@@ -95,7 +131,7 @@ s:$stateName = {
 "@
         }
 
-        if ($bauxiteAmount -gt 0) {
+        if (($Resource -eq 1) -and ($bauxiteAmount -gt 0)) {
 @"
 s:$stateName = {
     change_resource_potential = {
