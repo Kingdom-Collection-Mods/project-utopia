@@ -323,11 +323,9 @@ building_software_company = {
 		software
 	}
 	
-	#deprecated pmg_logistics_modern_industry should be removed
 	production_method_groups = {
 		pmg_software_making_process
 		pmg_administration_modern_industry
-		pmg_logistics_modern_industry
 	}
 	
 	required_construction = construction_cost_modern_heavy_industry

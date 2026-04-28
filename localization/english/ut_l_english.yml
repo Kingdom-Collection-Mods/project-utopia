@@ -13,6 +13,8 @@
  utopia.disable: "Disable"
  utopia.error: "Error" 
 
+ utopia_path: "Path" 
+
 # Events & Journals
  ut_heavy_industrial_machinery_je: "Heavy Industrial Machinery"
  ut_heavy_industrial_machinery_je_reason: "A significant turning point on our nation's road to modernity. The foundations are laid, the first gears are mounted, the furnaces fired up - the very first building for heavy industrial machinery now proudly rises above the skyline, a testament to human ingenuity and ambition.\nWhere once workers toiled with bare hands, massive machines are now built to ease their burden and multiply their productivity. Even as the engines roar and the halls echo with the sound of steel, this building is more than just a factory. It is the crucible in which the future is forged."

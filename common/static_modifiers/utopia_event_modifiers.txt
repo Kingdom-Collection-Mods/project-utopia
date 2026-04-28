@@ -331,7 +331,7 @@ ut_new_dawn_core_external_cooperative_focus_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	country_new_dawn_progress_points_progress = -1
 	country_influence_mult = 0.25
-	country_max_declared_interests_mult = 0.25
+	#country_max_declared_interests_mult = 0.25 todo replace
 }
 
 ut_new_dawn_core_internal_good_times_focus_mod = {

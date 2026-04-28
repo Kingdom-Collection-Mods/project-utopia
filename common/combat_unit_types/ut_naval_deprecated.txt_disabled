@@ -1,0 +1,209 @@
+
+### NAVY
+
+### Light ship group
+
+INJECT:combat_unit_type_torpedo_boat = {
+	upgrades = {
+		combat_unit_type_destroyer
+        combat_unit_type_missile_corvettes
+	}
+}
+
+INJECT:combat_unit_type_scout_cruiser = {
+	upgrades = {
+        combat_unit_type_surveillance_corvettes
+        combat_unit_type_missile_corvettes
+	}
+}
+
+combat_unit_type_missile_corvettes = {
+    group = combat_unit_group_light_ship
+	max_manpower = 1000
+
+    upkeep_modifier = {
+        #goods_input_utopia_battleships_add
+        goods_input_utopia_battleships_add = 3
+        goods_input_ammunition_add = 3
+        goods_input_utopia_artillery_add = 3
+        goods_input_radios_add = 1
+        goods_input_heavy_machinery_add = 1
+        goods_input_electronics_add = 1
+    }
+
+    battle_modifier = {
+        unit_offense_add = 60
+        unit_defense_add = 50
+        unit_blockade_add = 40
+        unit_morale_loss_add = 6
+        unit_convoy_raiding_mult = 0.5
+    }
+
+    formation_modifier = {
+        military_formation_movement_speed_mult = 0.2
+    }
+
+	unlocking_technologies = { light_ships_rockets_machinery }
+
+    combat_unit_image = {
+        texture = "gfx/unit_illustrations/light_ships_missile_corvettes.dds"
+    }
+	
+	upgrades = {
+		combat_unit_type_surveillance_corvettes
+	}
+}
+
+combat_unit_type_surveillance_corvettes = {
+    group = combat_unit_group_light_ship
+	max_manpower = 1000
+
+    upkeep_modifier = {
+        goods_input_utopia_battleships_add = 3
+        goods_input_ammunition_add = 3
+        goods_input_utopia_artillery_add = 3
+        goods_input_radios_add = 1
+        goods_input_heavy_machinery_add = 1
+        goods_input_computers_add = 1
+    }
+
+    battle_modifier = {
+        unit_offense_add = 50
+        unit_defense_add = 60
+        unit_blockade_add = 50
+        unit_morale_loss_add = 6
+        unit_convoy_defense_mult = 0.5
+    }
+
+    formation_modifier = {
+        military_formation_movement_speed_mult = 0.2
+    }
+
+	unlocking_technologies = { ut_corvettes_era_7 }
+
+    combat_unit_image = {
+        texture = "gfx/unit_illustrations/light_ships_surveillance_corvettes.dds"
+    }
+	
+	upgrades = {
+		combat_unit_type_missile_corvettes
+	}
+}
+
+### Flagship group
+
+INJECT:combat_unit_type_battleship = {
+    upgrades = {
+        combat_unit_type_capital_battleship
+    }
+}
+
+combat_unit_type_capital_battleship = {
+    group = combat_unit_group_capital_ship
+	max_manpower = 1000
+
+    upkeep_modifier = {
+        goods_input_utopia_battleships_add = 10
+		goods_input_utopia_artillery_add = 10
+        goods_input_ammunition_add = 10
+        goods_input_radios_add = 4
+        goods_input_heavy_machinery_add = 1
+        goods_input_computers_add = 1
+    }
+
+    battle_modifier = {
+        unit_offense_add = 110
+        unit_defense_add = 110
+        unit_morale_loss_add = 4
+		unit_convoy_raiding_mult = -0.6
+        unit_blockade_add = 600
+    }
+
+    formation_modifier = {
+        military_formation_movement_speed_mult = -0.2
+    }
+
+	unlocking_technologies = { ut_battleship_era_7 }
+
+    combat_unit_image = {
+        texture = "gfx/unit_illustrations/capital_ships_capital_battleship.dds"
+    }
+}
+
+### Support Ship group
+
+INJECT:combat_unit_type_submarine = {
+    upgrades = {
+        combat_unit_type_modern_submarine
+    }
+}
+
+INJECT:combat_unit_type_carrier = {
+    upgrades = {
+        combat_unit_type_super_carrier
+    }
+}
+
+combat_unit_type_modern_submarine = {
+    group = combat_unit_group_support_ship
+	max_manpower = 1000
+
+    upkeep_modifier = {
+        goods_input_utopia_battleships_add = 2
+		goods_input_utopia_artillery_add = 2
+        goods_input_ammunition_add = 2
+		goods_input_radios_add = 2
+        goods_input_heavy_machinery_add = 1
+        goods_input_computers_add = 1
+        goods_input_rubber_add = 6
+    }
+
+    battle_modifier = {
+        unit_offense_add = 80
+        unit_defense_add = 30
+        unit_morale_loss_add = 6
+        unit_convoy_raiding_mult = 1.0
+    }
+
+    formation_modifier = {
+        military_formation_movement_speed_mult = 0.2
+    }
+
+	unlocking_technologies = { ut_modern_submarine_era_7 }
+
+    combat_unit_image = {
+        texture = "gfx/unit_illustrations/support_ships_modern_submarine.dds"
+    }
+}
+
+combat_unit_type_super_carrier = {
+    group = combat_unit_group_support_ship
+	max_manpower = 1000
+
+    upkeep_modifier = {
+        goods_input_utopia_battleships_add = 8
+        goods_input_ammunition_add = 8
+        goods_input_radios_add = 4
+        goods_input_utopia_jet_planes_add = 10
+        goods_input_heavy_machinery_add = 1
+        goods_input_computers_add = 1
+    }
+
+    battle_modifier = {
+        unit_offense_add = 140
+        unit_defense_add = 60
+        unit_morale_loss_add = 6
+		unit_convoy_defense_mult = 0.25
+    }
+
+    formation_modifier = {
+        military_formation_movement_speed_mult = -0.2
+    }
+
+	unlocking_technologies = { support_ships_rockets_base }
+
+    combat_unit_image = {
+        texture = "gfx/unit_illustrations/support_ships_super_carrier.dds"
+    }
+}
+

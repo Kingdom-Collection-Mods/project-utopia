@@ -52,12 +52,6 @@ pm_ut_industrial_port = {
 			building_employment_service_workers_add = 100
 		}
 	}
-
-	country_modifiers = {
-		workforce_scaled = {
-			country_convoys_capacity_add = 240
-		}
-	}
 	state_modifiers = {
 		workforce_scaled = {
 			state_infrastructure_add = 12

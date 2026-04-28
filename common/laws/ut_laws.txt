@@ -511,7 +511,7 @@ law_protectionism_union = {
 		state_import_advantage_mult = -0.1
 		state_export_advantage_mult = 0.2
 
-		country_max_declared_interests_add = 3
+		#country_max_declared_interests_add = 3 todo replace
 	}	
 
 	ai_enact_weight_modifier = { #Petitions
@@ -558,7 +558,7 @@ law_free_trade_union = {
 		#todo fix, power bloc mod not possible
 		#power_bloc_cohesion_add = -5
 		country_leverage_resistance_mult = -0.25
-		country_max_declared_interests_add = 2
+		#country_max_declared_interests_add = 2 todo replace
 	}	
 
 	ai_enact_weight_modifier = { #Petitions
