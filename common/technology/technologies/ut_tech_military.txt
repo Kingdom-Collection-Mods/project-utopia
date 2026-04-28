@@ -11,6 +11,7 @@ industry_harbor = {
 	
 	modifier = {
 		building_trade_center_throughput_add = 0.1
+		ship_supply_capacity_mult = 0.1
     }
 	
 	ai_weight = {
@@ -29,6 +30,7 @@ heavy_industry_harbor = {
 	}
 	
 	modifier = {
+		ship_supply_capacity_mult = 0.1
     }
 	
 	ai_weight = {
@@ -47,6 +49,7 @@ ultra_heavy_industry_harbor = {
 	}
 	
 	modifier = {
+		ship_supply_capacity_mult = 0.1
     }
 
 	ai_weight = {
@@ -66,7 +69,7 @@ ut_global_positioning_system = {
 	}
 	
 	modifier = {
-		military_formation_movement_speed_mult = 0.2
+		# military_formation_movement_speed_mult = 0.2 # todo replace
     }
 
 	ai_weight = {
@@ -106,7 +109,7 @@ light_ships_rockets_base = {
 	}
 
 	modifier = {
-		unit_navy_defense_add = 5
+		ship_armor_add = 10
     }
 	
 	ai_weight = {
@@ -158,7 +161,7 @@ support_ships_mine_sweeper = {
 	}
 
 	modifier = {
-		unit_navy_defense_add = 5
+		ship_armor_add = 10
     }
 	
 	ai_weight = {
@@ -195,7 +198,8 @@ heavy_ships_rockets_base = {
 	}
 
 	modifier = {
-		unit_navy_offense_add = 5
+		#unit_navy_offense_add = 5 todo replace
+		ship_hull_damage_add = 10
     }
 	
 	ai_weight = {
@@ -230,7 +234,8 @@ heavy_ships_rockets_software = {
 	}
 
 	modifier = {
-		unit_navy_offense_add = 5
+		#unit_navy_offense_add = 5 todo replace
+		ship_hull_damage_add = 10
     }
 	
 	ai_weight = {
@@ -250,7 +255,7 @@ support_ships_rockets_base = {
 
 	modifier = {
 		unit_combat_unit_type_modern_submarine_offense_add = 5
-		unit_navy_defense_add = 5
+		ship_armor_add = 10
     }
 	
 	ai_weight = {

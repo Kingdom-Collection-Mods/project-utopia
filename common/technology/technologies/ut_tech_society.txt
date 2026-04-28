@@ -91,7 +91,8 @@ early_civil_aviation = {
 		
 	modifier = {
 		state_migration_pull_mult = 0.05
-		country_max_declared_interests_add = 2
+		ship_interest_gain_mult = 0.1
+		#country_max_declared_interests_add = 2 todo replace
 	}
 
 	unlocking_technologies = {	
@@ -138,7 +139,8 @@ modern_civil_aviation = {
 		
 	modifier = {
 		state_migration_pull_mult = 0.05
-		country_max_declared_interests_add = 2
+		ship_interest_gain_mult = 0.1
+		#country_max_declared_interests_add = 2 todo replace
 	}
 
 	unlocking_technologies = {	
@@ -871,7 +873,8 @@ lgbt_movement = {
 
 	modifier = {
 		country_diplomatic_play_maneuvers_add = 30
-		country_max_declared_interests_add = 2	
+		ship_interest_gain_mult = 0.1
+		#country_max_declared_interests_add = 2 todo replace
 	}
 
 	unlocking_technologies = {
