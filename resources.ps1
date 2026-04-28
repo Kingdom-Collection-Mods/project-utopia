@@ -64,7 +64,8 @@ Get-ChildItem -Path $FolderPath -Filter *.txt -File -Recurse | ForEach-Object {
         # -------------------------
         # Rare Earths calculation
         # -------------------------
-        $rareEarthsAmount = 0
+        $goldTotal = 0
+        $rubberTotal = 0
 
         # --- Gold mines (simple format) ---
         $goldMineMatches = [regex]::Matches($stateBlock, "building_gold_mine\s*=\s*(\d+)")
@@ -82,21 +83,28 @@ Get-ChildItem -Path $FolderPath -Filter *.txt -File -Recurse | ForEach-Object {
             if ($blockText -match 'type\s*=\s*"building_gold_field"') {
 
                 if ($blockText -match 'undiscovered_amount\s*=\s*(\d+)') {
-                    $rareEarthsAmount += [int]$Matches[1]
+                    $goldTotal += [int]$Matches[1]
                 }
                 elseif ($blockText -match 'discovered_amount\s*=\s*(\d+)') {
-                    $rareEarthsAmount += [int]$Matches[1]
+                    $goldTotal += [int]$Matches[1]
+                }
+            }
+            
+            if ($blockText -match 'type\s*=\s*"building_rubber_plantation"') {
+
+                if ($blockText -match 'undiscovered_amount\s*=\s*(\d+)') {
+                    $rubberTotal += [int]$Matches[1]
+                }
+                elseif ($blockText -match 'discovered_amount\s*=\s*(\d+)') {
+                    $rubberTotal += [int]$Matches[1]
                 }
             }
         }
 
         # --- Rubber (4:1) ---
-        $rubberTotal = 0
-        $rubberMatches = [regex]::Matches($stateBlock, "building_rubber_plantation\s*=\s*(\d+)")
-        foreach ($m in $rubberMatches) {
-            $rubberTotal += [int]$m.Groups[1].Value
-        }
-        $rareEarthsAmount += [math]::Floor($rubberTotal / 4)
+        $rubberNetto = [math]::Floor($rubberTotal / 4)
+        $rareEarthsAmount = $goldTotal + $rubberNetto
+        
 
         
         if ($customRareEarths.ContainsKey($stateName)) {
