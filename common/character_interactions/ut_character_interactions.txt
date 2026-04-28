@@ -17,16 +17,16 @@ REPLACE:grant_command_to_ruler = {
 	clicksound = "event:/SFX/UI/Military/command_grant"
 
 	potential = {
-		is_ruler = yes
+		is_ruler_of_own_country = yes
 		NOR = {
-			has_role = general
-			has_role = admiral
+			has_role_of_type = general
+			has_role_of_type = admiral
 		}
 		owner ?= scope:actor
 	}
 
 	possible = {
-		age >= define:NCharacters|ADULT_AGE
+		is_adult = yes
 		OR = {
 			is_female = no
 			owner ?= {
@@ -114,7 +114,7 @@ REPLACE:grant_leadership_to_agitator = {
 
 	potential = {
 		has_dlc_feature = agitators
-		has_role = agitator
+		has_role_of_type = agitator
 		exists = owner
 		owner ?= scope:actor
 	}
@@ -161,7 +161,7 @@ REPLACE:grant_leadership_to_agitator = {
 		}
 		OR = {
 			is_female = no
-			scope:actor ?= {				
+			scope:actor ?= { 
 				OR = {
 					has_law_or_variant = law_type:law_womens_suffrage
 					has_law_or_variant = law_type:law_equal_rights_for_women
@@ -180,8 +180,9 @@ REPLACE:grant_leadership_to_agitator = {
 	}
 
 	effect = {
-		remove_character_role = agitator
-		add_character_role = politician
+		show_as_tooltip = {
+			remove_character_role = agitator
+		}
 		custom_tooltip = {
 			text = make_agitator_ig_leader_tt
 			set_as_interest_group_leader = yes
@@ -233,23 +234,15 @@ REPLACE:grant_command_to_agitator = {
 
 	potential = {
 		has_dlc_feature = agitators
-		has_role = agitator
-		NOT = { has_role = general }
-		NOT = { has_role = admiral }
+		has_role_of_type = agitator
+		NOT = { has_role_of_type = general }
+		NOT = { has_role_of_type = admiral }
 		owner ?= scope:actor
 	}
 
 	possible = {
-		age >= define:NCharacters|ADULT_AGE
-		OR = {
-			is_female = no
-			owner ?= {
-				OR = {
-					has_law_or_variant = law_type:law_equal_rights_for_women
-					has_law_or_variant = law_type:law_affirmative_equality
-				}
-			}
-		}
+		is_adult = yes
+		is_female = no
 		exists = owner.capital.land_hq
 	}
 
