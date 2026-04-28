@@ -82,13 +82,13 @@ ut_utopia_spawn_bauxite_action = {
 		s:STATE_LORRAINE = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 62
+				amount = 40
 			}
 		}
 		s:STATE_WALLONIA = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 45
+				amount = 30
 			}
 		}
 		s:STATE_BOHEMIA = {
@@ -166,7 +166,7 @@ ut_utopia_spawn_bauxite_action = {
 		s:STATE_SARDINIA = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 30
+				amount = 20
 			}
 		}
 		s:STATE_SAVOY = {
@@ -280,7 +280,7 @@ ut_utopia_spawn_bauxite_action = {
 		s:STATE_ATTICA = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 42
+				amount = 32
 			}
 		}
 		s:STATE_MURCIA = {
@@ -298,13 +298,13 @@ ut_utopia_spawn_bauxite_action = {
 		s:STATE_LOWER_SILESIA = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 11
+				amount = 9
 			}
 		}
 		s:STATE_UPPER_SILESIA = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 56
+				amount = 31
 			}
 		}
 		s:STATE_GREATER_POLAND = {
@@ -376,13 +376,13 @@ ut_utopia_spawn_bauxite_action = {
 		s:STATE_CONSTANTINE = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 27
+				amount = 18
 			}
 		}
 		s:STATE_TUNISIA = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 55
+				amount = 48
 			}
 		}
 		s:STATE_WEST_SAHARA = {
@@ -400,7 +400,7 @@ ut_utopia_spawn_bauxite_action = {
 		s:STATE_NIGER = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 33
+				amount = 24
 			}
 		}
 		s:STATE_SENEGAL = {
@@ -586,7 +586,7 @@ ut_utopia_spawn_bauxite_action = {
 		s:STATE_EASTERN_CUBA = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 4
+				amount = 2
 			}
 		}
 		s:STATE_ZULIA = {
@@ -616,7 +616,7 @@ ut_utopia_spawn_bauxite_action = {
 		s:STATE_LIMA = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 43
+				amount = 28
 			}
 		}
 		s:STATE_ICA = {
@@ -664,7 +664,7 @@ ut_utopia_spawn_bauxite_action = {
 		s:STATE_LOS_RIOS = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 44
+				amount = 32
 			}
 		}
 		s:STATE_ARAUCANIA = {
@@ -868,7 +868,7 @@ ut_utopia_spawn_bauxite_action = {
 		s:STATE_RAJPUTANA = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 6
+				amount = 3
 			}
 		}
 		s:STATE_TRAVANCORE = {
@@ -886,7 +886,7 @@ ut_utopia_spawn_bauxite_action = {
 		s:STATE_DZUNGARIA = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 98
+				amount = 80
 			}
 		}
 		s:STATE_SICHUAN = {
@@ -982,31 +982,31 @@ ut_utopia_spawn_bauxite_action = {
 		s:STATE_HOKKAIDO = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 25
+				amount = 22
 			}
 		}
 		s:STATE_TOHOKU = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 67
+				amount = 51
 			}
 		}
 		s:STATE_KANTO = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 45
+				amount = 24
 			}
 		}
 		s:STATE_TOKAI = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 31
+				amount = 19
 			}
 		}
 		s:STATE_HOKUSHINETSU = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 8
+				amount = 6
 			}
 		}
 		s:STATE_KANSAI = {
@@ -1018,7 +1018,7 @@ ut_utopia_spawn_bauxite_action = {
 		s:STATE_KYUSHU = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 35
+				amount = 31
 			}
 		}
 		s:STATE_RYUKYU_ISLANDS = {
@@ -1054,7 +1054,7 @@ ut_utopia_spawn_bauxite_action = {
 		s:STATE_YANGHO = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 11
+				amount = 6
 			}
 		}
 		s:STATE_SARIWON = {
@@ -1174,7 +1174,7 @@ ut_utopia_spawn_bauxite_action = {
 		s:STATE_SOUTH_AUSTRALIA = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 78
+				amount = 60
 			}
 		}
 		s:STATE_URAL = {
@@ -1192,7 +1192,7 @@ ut_utopia_spawn_bauxite_action = {
 		s:STATE_TRANS_BAIKAL = {
 			change_resource_potential = {
 				type = building_bauxite_mine
-				amount = 58
+				amount = 44
 			}
 		}
 		s:STATE_UUSIMAA = {
