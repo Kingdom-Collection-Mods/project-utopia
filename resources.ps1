@@ -8,35 +8,35 @@ param(
 # ---- CUSTOM EXTRA (per state) ----
 
 $customRareEarths = @{
-    # --- LARGE (30) ---
-    "STATE_CALIFORNIA"       = 30
-    "STATE_HINGGAN"          = 30
+    # --- LARGE (60) ---
+    "STATE_CALIFORNIA"       = 60
+    "STATE_HINGGAN"          = 60
 
-    # --- MEDIUM (20) ---
-    "STATE_SOUTH_MADAGASCAR" = 20
-    "STATE_CONGO"            = 20
-    "STATE_TONKIN"           = 20
-    "STATE_MALAYA"           = 20
-    "STATE_KOLA"             = 20
-    "STATE_SICHUAN"           = 20
+    # --- MEDIUM (40) ---
+    "STATE_SOUTH_MADAGASCAR" = 40
+    "STATE_CONGO"            = 40
+    "STATE_TONKIN"           = 40
+    "STATE_MALAYA"           = 40
+    "STATE_KOLA"             = 40
+    "STATE_SICHUAN"           = 40
 
-    # --- SMALL (10) ---
-    "STATE_NORRLAND"              = 10
-    "STATE_QUEBEC"                = 10
-    "STATE_NORTHWEST_TERRITORIES" = 10
-    "STATE_BAJA_CALIFORNIA"       = 10
-    "STATE_FORMOSA"               = 10
-    "STATE_GUANGDONG"             = 10
-    "STATE_SHAOZHOU"              = 10
-    "STATE_BOTSWANA"           = 10
+    # --- SMALL (20) ---
+    "STATE_NORRLAND"              = 20
+    "STATE_QUEBEC"                = 20
+    "STATE_NORTHWEST_TERRITORIES" = 20
+    "STATE_BAJA_CALIFORNIA"       = 20
+    "STATE_FORMOSA"               = 20
+    "STATE_GUANGDONG"             = 20
+    "STATE_SHAOZHOU"              = 20
+    "STATE_BOTSWANA"           = 20
 
-    # --- TINY (3) ---
-    "STATE_RHONE"          = 3
-    "STATE_AQUITAINE"      = 3
-    "STATE_BAVARIA"        = 3
-    "STATE_SAXONY"         = 3
-    "STATE_WESTERN_SERBIA" = 3
-    "STATE_TALLINN"        = 3
+    # --- TINY (10) ---
+    "STATE_RHONE"          = 10
+    "STATE_AQUITAINE"      = 10
+    "STATE_BAVARIA"        = 10
+    "STATE_SAXONY"         = 10
+    "STATE_WESTERN_SERBIA" = 10
+    "STATE_TALLINN"        = 10
 }
 
 $statePattern = '(?im)^\s*(STATE_[A-Za-z0-9_]+)\s*=\s*\{'
@@ -102,10 +102,10 @@ Get-ChildItem -Path $FolderPath -Filter *.txt -File -Recurse | ForEach-Object {
         }
 
         # --- Rubber (4:1) ---
-        $rubberNetto = [math]::Floor($rubberTotal / 4)
-        $rareEarthsAmount = $goldTotal + $rubberNetto
-        
+        $rubberTotal = [math]::Floor($rubberTotal / 4)
 
+
+        $rareEarthsAmount = $goldTotal + $rubberTotal
         
         if ($customRareEarths.ContainsKey($stateName)) {
             $rareEarthsAmount += $customRareEarths[$stateName]

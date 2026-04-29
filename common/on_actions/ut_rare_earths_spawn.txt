@@ -7,40 +7,40 @@
 ut_utopia_spawn_rare_earths_action = {
 	effect = {
 		set_global_variable = ut_utopia_spawn_rare_earths_on_game_started_var
-		s:STATE_NORRLAND = {
+        s:STATE_NORRLAND = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 10
+                amount = 20
             }
         }
         s:STATE_RHONE = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 3
+                amount = 10
             }
         }
         s:STATE_AQUITAINE = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 3
+                amount = 10
             }
         }
         s:STATE_BAVARIA = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 3
+                amount = 10
             }
         }
         s:STATE_SAXONY = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 3
+                amount = 10
             }
         }
         s:STATE_WESTERN_SERBIA = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 3
+                amount = 10
             }
         }
         s:STATE_IVORY_COAST = {
@@ -190,7 +190,7 @@ ut_utopia_spawn_rare_earths_action = {
         s:STATE_SOUTH_MADAGASCAR = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 24
+                amount = 44
             }
         }
         s:STATE_NORTH_MADAGASCAR = {
@@ -232,7 +232,7 @@ ut_utopia_spawn_rare_earths_action = {
         s:STATE_CONGO = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 35
+                amount = 55
             }
         }
         s:STATE_CONGO_ORIENTALE = {
@@ -328,7 +328,7 @@ ut_utopia_spawn_rare_earths_action = {
         s:STATE_BOTSWANA = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 10
+                amount = 20
             }
         }
         s:STATE_LOURENCO_MARQUES = {
@@ -358,7 +358,7 @@ ut_utopia_spawn_rare_earths_action = {
         s:STATE_QUEBEC = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 10
+                amount = 20
             }
         }
         s:STATE_BRITISH_COLUMBIA = {
@@ -376,7 +376,7 @@ ut_utopia_spawn_rare_earths_action = {
         s:STATE_NORTHWEST_TERRITORIES = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 10
+                amount = 20
             }
         }
         s:STATE_NEVADA = {
@@ -394,7 +394,7 @@ ut_utopia_spawn_rare_earths_action = {
         s:STATE_CALIFORNIA = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 42
+                amount = 72
             }
         }
         s:STATE_SONORA = {
@@ -454,7 +454,7 @@ ut_utopia_spawn_rare_earths_action = {
         s:STATE_BAJA_CALIFORNIA = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 10
+                amount = 20
             }
         }
         s:STATE_SAN_SALVADOR = {
@@ -718,19 +718,19 @@ ut_utopia_spawn_rare_earths_action = {
         s:STATE_SICHUAN = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 20
+                amount = 40
             }
         }
         s:STATE_SHAOZHOU = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 10
+                amount = 20
             }
         }
         s:STATE_HINGGAN = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 30
+                amount = 60
             }
         }
         s:STATE_OUTER_MANCHURIA = {
@@ -742,13 +742,13 @@ ut_utopia_spawn_rare_earths_action = {
         s:STATE_GUANGDONG = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 10
+                amount = 20
             }
         }
         s:STATE_FORMOSA = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 10
+                amount = 20
             }
         }
         s:STATE_CAMBODIA = {
@@ -766,7 +766,7 @@ ut_utopia_spawn_rare_earths_action = {
         s:STATE_TONKIN = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 24
+                amount = 44
             }
         }
         s:STATE_ANNAM = {
@@ -796,7 +796,7 @@ ut_utopia_spawn_rare_earths_action = {
         s:STATE_MALAYA = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 30
+                amount = 50
             }
         }
         s:STATE_NORTH_BORNEO = {
@@ -970,7 +970,7 @@ ut_utopia_spawn_rare_earths_action = {
         s:STATE_KOLA = {
             change_resource_potential = {
                 type = building_rare_earths_mine
-                amount = 20
+                amount = 40
             }
         }
         s:STATE_ARKHANGELSK = {
