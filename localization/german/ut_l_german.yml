@@ -1316,6 +1316,8 @@
  ut_anti_tank_guided_software_desc: ""
  ut_military_complex: "Militärkomplex"
  ut_military_complex_desc: ""
+ ut_military_complex_company: "Militärkomplex"
+ ut_military_complex_company_desc: ""
  ut_corvettes_era_7: "Aufklärungskorvetten"
  ut_corvettes_era_7_desc: ""
  ut_battleship_era_7: "Großschlachtschiffe"

@@ -801,7 +801,7 @@ ut_plastic_company = {
 	}
 }
 
-ut_military_complex = {
+ut_military_complex_company = {
 	icon = "gfx/interface/icons/company_icons/ut_plastic_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
