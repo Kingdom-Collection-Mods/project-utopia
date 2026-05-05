@@ -1315,6 +1315,8 @@
  ut_anti_tank_guided_software_desc: ""
  ut_military_complex: "Military Complex"
  ut_military_complex_desc: ""
+ ut_military_complex_company: "Military Complex"
+ ut_military_complex_company_desc: ""
  ut_corvettes_era_7: "Light Ship Combat Systems"
  ut_corvettes_era_7_desc: ""
  ut_battleship_era_7: "Heavy Ship Combat Systems"
@@ -1334,6 +1336,7 @@
  combat_unit_type_task_force_infantry: "Task Force Infantry"
  combat_unit_type_motorized_artillery: "Motorized Artillery"
  combat_unit_type_rocket_artillery: "Rocket Artillery"
+ combat_unit_type_advanced_marines: "Advanced Marines"
  combat_unit_type_support_systems_desc: "Logistical and electronic support units that enhance the effectiveness of frontline forces."
  combat_unit_type_advanced_support_systems_desc: "Highly specialized support units equipped with cutting-edge technology to provide superior battlefield assistance."
  combat_unit_type_missile_corvettes_desc: "Fast and agile ships armed with missile systems designed for rapid naval engagements."
@@ -1345,6 +1348,7 @@
  combat_unit_type_task_force_infantry_desc: "Highly trained, flexible units capable of executing specialized missions independently or alongside other forces."
  combat_unit_type_motorized_artillery_desc: "Artillery mounted on motor vehicles, enabling rapid deployment and repositioning on the battlefield."
  combat_unit_type_rocket_artillery_desc: "Artillery that launches volleys of rockets to saturate large areas with explosive firepower."
+ combat_unit_type_advanced_marines_desc: "Elite amphibious assault troops equipped with advanced gear and training for high-risk operations."
 
 
 # Tech Society
