@@ -1,4 +1,4 @@
-﻿# REPLACE:pmg_base_building_logging_camp = {
+﻿# INJECT:pmg_base_building_logging_camp = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
 # 		pm_simple_forestry
@@ -7,7 +7,7 @@
 # 	}
 # }
 
-# REPLACE:pmg_hardwood = {
+# INJECT:pmg_hardwood = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 # 	production_methods = {
 # 		pm_no_hardwood
@@ -16,7 +16,7 @@
 # 	}
 # }
 
-# REPLACE:pmg_equipment = {
+# INJECT:pmg_equipment = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 # 	production_methods = {
 # 		pm_no_equipment
@@ -25,7 +25,7 @@
 # 	}
 # }
 
-# REPLACE:pmg_transportation_building_logging_camp = {
+# INJECT:pmg_transportation_building_logging_camp = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 # 	production_methods = {
 # 		pm_road_carts
@@ -34,7 +34,7 @@
 # 	}
 # }
 
-# REPLACE:pmg_base_building_rubber_plantation = {
+# INJECT:pmg_base_building_rubber_plantation = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
 # 		default_building_rubber_plantation
@@ -42,17 +42,14 @@
 # 	}
 # }
 
-REPLACE:pmg_train_automation_building_rubber_plantation = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+INJECT:pmg_train_automation_building_rubber_plantation = {
 	production_methods = {
-		pm_road_carts
-		pm_steam_rail_transport
 		ut_pm_plantations_individual_logistics_era_6
 		ut_pm_plantations_connected_logistics
 	}
 }
 
-# REPLACE:pmg_base_building_fishing_wharf = {
+# INJECT:pmg_base_building_fishing_wharf = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
 # 		pm_simple_fishing
@@ -61,7 +58,7 @@ REPLACE:pmg_train_automation_building_rubber_plantation = {
 # 	}
 # }
 
-# REPLACE:pmg_refrigeration_building_fishing_wharf = {
+# INJECT:pmg_refrigeration_building_fishing_wharf = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 # 	production_methods = {
 # 		pm_unrefrigerated
@@ -71,7 +68,7 @@ REPLACE:pmg_train_automation_building_rubber_plantation = {
 # 	}
 # }
 
-# REPLACE:pmg_base_building_whaling_station = {
+# INJECT:pmg_base_building_whaling_station = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
 # 		pm_simple_whaling
@@ -80,7 +77,7 @@ REPLACE:pmg_train_automation_building_rubber_plantation = {
 # 	}
 # }
 
-# REPLACE:pmg_refrigeration_building_whaling_station = {
+# INJECT:pmg_refrigeration_building_whaling_station = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 # 	production_methods = {
 # 		pm_unrefrigerated
@@ -90,17 +87,13 @@ REPLACE:pmg_train_automation_building_rubber_plantation = {
 # 	}
 # }
 
-REPLACE:pmg_base_building_oil_rig = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+INJECT:pmg_base_building_oil_rig = {
 	production_methods = {
-		pm_steam_derricks
-		pm_combustion_derricks
-		pm_oil_heavy_machinery_mine
 		pm_oil_automated_heavy_machinery_mine
 	}
 }
 
-# REPLACE:pmg_transportation_building_oil_rig = {
+# INJECT:pmg_transportation_building_oil_rig = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 # 	production_methods = {
 # 		pm_road_carts
