@@ -1,4 +1,4 @@
-on_game_started_after_lobby = {
+﻿on_game_started_after_lobby = {
 	on_actions = {
 		ut_utopia_enabled_on_game_started_action
 	}
