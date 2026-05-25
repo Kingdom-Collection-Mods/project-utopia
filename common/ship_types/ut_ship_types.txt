@@ -1,0 +1,67 @@
+﻿### Utopia late-game naval ship types
+
+ship_type_capital_battleship = {
+
+	ship_group = ship_group_capital_ships
+
+	base_construction_cost = 220
+
+	can_be_flagship = yes
+
+	modifier = {
+		ship_construction_progress_max_add = 25
+		ship_hit_points_max_add = 6000
+		ship_crew_max_add = 1200
+		ship_movement_speed_add = 5
+		ship_supply_capacity_add = 90
+		ship_carrying_capacity_add = 3.5
+		ship_marine_capacity_add = 2
+		ship_hull_damage_add = 150
+		ship_crew_damage_add = 60
+		ship_armor_add = 130
+		ship_critical_hit_chance_add = 0.06
+		ship_critical_hit_multiplier_add = 2.5
+		ship_vulnerability_add = 110
+		ship_screening_add = 20
+		ship_readiness_gain_add = 10
+		ship_accuracy_add = 5
+		ship_visibility_add = 110
+		ship_detection_add = 60
+		ship_blockade_strength_add = 600
+
+		ship_battle_against_ship_type_torpedo_boat_accuracy_mult = -0.8
+		ship_battle_against_ship_type_torpedo_boat_destroyer_accuracy_mult = -0.8
+		ship_battle_against_ship_type_submarine_accuracy_mult = -0.8
+		ship_battle_against_ship_type_destroyer_accuracy_mult = -0.6
+	}
+
+	construction_goods = {
+		goods_input_steel_add = 3000
+		goods_input_iron_add = 1300
+		goods_input_engines_add = 2000
+        goods_input_electronics_add = 1000
+        goods_input_heavy_machinery_add = 300
+        goods_input_computers_add = 200
+	}
+
+	materiel_goods = {
+        goods_input_groceries_add = 1
+        goods_input_oil_add = 1
+        goods_input_radios_add = 0.5
+        goods_input_steel_add = 0.1
+        goods_input_ammunition_add = 0.1
+        goods_input_electronics_add = 0.5
+        goods_input_computers_add = 0.1
+        goods_input_heavy_machinery_add = 0.1
+	}
+
+	unlocking_technologies = { ut_battleship_era_7 }
+
+	icon = "gfx/interface/icons/ships/ship_category/ship_group_capital_ships.dds"
+	profile_texture = "gfx/interface/icons/ships/ship_types/silhouette_super_dreadnought.dds"
+
+	ai_weight = 2
+
+	use_modifications = no
+}
+
