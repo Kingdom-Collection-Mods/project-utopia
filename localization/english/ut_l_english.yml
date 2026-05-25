@@ -1324,6 +1324,8 @@
  ut_modern_submarine_era_7: "Electronic Surveillance Ships"
  ut_modern_submarine_era_7_desc: ""
 
+ ship_type_capital_battleship: "Capital Battleship"
+ 
  combat_unit_type_support_systems: "Support Systems"
  combat_unit_type_advanced_support_systems: "Advanced Support Systems"
  combat_unit_type_missile_corvettes: "Missile Corvettes"
