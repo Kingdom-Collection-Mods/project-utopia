@@ -874,7 +874,7 @@ pm_ut_copper_streetlights = {
 	city_lights_color_index = 2	# Needs to match city_graphics_data.settings color array
 
 	unlocking_technologies = {
-		electrical_generation
+		software
 	}
 
 	building_modifiers = {
@@ -907,7 +907,7 @@ pm_ut_fiber_streetlights = {
 	city_lights_color_index = 2	# Needs to match city_graphics_data.settings color array
 
 	unlocking_technologies = {
-		electrical_generation
+		internet
 	}
 
 	building_modifiers = {

@@ -1325,6 +1325,8 @@
  ut_modern_submarine_era_7: "Elektronische Überwachung"
  ut_modern_submarine_era_7_desc: ""
 
+ ship_type_capital_battleship: "Großschlachtschiff"
+
  combat_unit_type_support_systems: "Unterstützungssysteme"
  combat_unit_type_advanced_support_systems: "Fort. Unterstützungssysteme"
  combat_unit_type_missile_corvettes: "Raketenkorvetten"

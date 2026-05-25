@@ -1,10 +1,5 @@
-﻿REPLACE:pmg_amenities = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+﻿INJECT:pmg_amenities = {
 	production_methods = {
-		pm_market_stalls
-		pm_market_squares
-		pm_covered_markets
-		pm_arcades
 		pm_department_store
 		pm_supermarket
 		pm_shopping_district
@@ -12,18 +7,14 @@
 	}
 }
 
-REPLACE:pmg_street_lighting = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+INJECT:pmg_street_lighting = {
 	production_methods = {
-		pm_no_street_lighting
-		pm_gas_streetlights
-		pm_electric_streetlights
 		pm_ut_copper_streetlights
 		pm_ut_fiber_streetlights
 	}
 }
 
-# REPLACE:pmg_public_transport = {
+# INJECT:pmg_public_transport = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 # 	production_methods = {
 # 		pm_no_public_transport
@@ -32,7 +23,7 @@ REPLACE:pmg_street_lighting = {
 # 	}
 # }
 
-# REPLACE:pmg_urban_clergy = {
+# INJECT:pmg_urban_clergy = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 # 	production_methods = {
 # 		pm_state_urban_clergy
@@ -41,22 +32,16 @@ REPLACE:pmg_street_lighting = {
 # 	}
 # }
 
-REPLACE:pmg_base_building_art_academy = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	ai_selection = most_productive
+INJECT:pmg_base_building_art_academy = {
 
 	production_methods = {
-		pm_traditional_art
-		pm_realist_art
-		pm_photographic_art
-		pm_film_art
 		ut_pm_film_industry_art
 		ut_pm_film_industry_art_principle_movement
 		ut_pm_digital_art
 	}
 }
 
-# REPLACE:pmg_principle_freedom_of_movement_3 = {
+# INJECT:pmg_principle_freedom_of_movement_3 = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	ai_selection = most_productive
 
@@ -66,7 +51,7 @@ REPLACE:pmg_base_building_art_academy = {
 # 	}
 # }
 
-# REPLACE:pmg_ownership_building_art_academy = {
+# INJECT:pmg_ownership_building_art_academy = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 # 	production_methods = {
 # 		pm_traditional_patronage
@@ -75,12 +60,8 @@ REPLACE:pmg_base_building_art_academy = {
 # 	}
 # }
 
-REPLACE:pmg_base_building_power_plant = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+INJECT:pmg_base_building_power_plant = {
 	production_methods = {
-		pm_early_power_plant
-		pm_coal-fired_plant
-		pm_oil-fired_plant
 		pm_heavy_machinery_coal_fired_plant
 		pm_heavy_machinery_oil_fired_plant
 	}
