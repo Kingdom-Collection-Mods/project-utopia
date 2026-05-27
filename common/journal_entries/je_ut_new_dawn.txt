@@ -1,4 +1,4 @@
-je_ut_new_dawn = {
+﻿je_ut_new_dawn = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
@@ -410,7 +410,7 @@ je_ut_new_dawn = {
 
 	weight = 100
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ut_new_dawn_democratic = {
@@ -664,7 +664,7 @@ je_ut_new_dawn_democratic = {
 
 	weight = 100
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ut_new_dawn_autocratic = {
@@ -848,7 +848,7 @@ je_ut_new_dawn_autocratic = {
 
 	weight = 100
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ut_new_dawn_fascist = {
@@ -1100,7 +1100,7 @@ je_ut_new_dawn_fascist = {
 
 	weight = 100
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ut_new_dawn_communist = {
@@ -1335,5 +1335,5 @@ je_ut_new_dawn_communist = {
 
 	weight = 100
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
