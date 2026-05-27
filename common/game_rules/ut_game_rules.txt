@@ -1,0 +1,14 @@
+﻿ut_new_dawn_start_era = {
+	default = ut_new_dawn_start_era_6
+
+	ut_new_dawn_start_era_6 = {
+	}
+
+	ut_new_dawn_start_era_4 = {
+		flag = ut_new_dawn_start_era_4
+	}
+	
+	ut_new_dawn_start_era_3 = {
+		flag = ut_new_dawn_start_era_3
+	}
+}

@@ -1936,3 +1936,12 @@
 
  ut_air_support_mobilization_option_group: "Air Support"
  ut_doctrine_mobilization_option_group: "Doctrines"
+
+ #game rules
+ rule_ut_new_dawn_start_era: "$concept_ut_new_dawn$ Start Era"
+ setting_ut_new_dawn_start_era_6: "Era VI"
+ setting_ut_new_dawn_start_era_6_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] VI (1936-1961)"
+ setting_ut_new_dawn_start_era_4: "Era IV"
+ setting_ut_new_dawn_start_era_4_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] IV (1887-1911)\n@warning! Project Utopia is tested with Era VI start era."
+ setting_ut_new_dawn_start_era_3: "Era III"
+ setting_ut_new_dawn_start_era_3_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] III (1862-1886)\n@warning! Project Utopia is tested with Era VI start era"

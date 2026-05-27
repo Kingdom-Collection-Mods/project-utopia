@@ -1,4 +1,4 @@
-﻿je_ut_new_dawn = {
+je_ut_new_dawn = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
@@ -20,6 +20,8 @@
 	possible = {
 		OR = {
 			has_technology_researched = consumer_goods_main_analog
+			has_game_rule = ut_new_dawn_start_era_4
+			has_game_rule = ut_new_dawn_start_era_3
 			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
 		}
 		OR = {
@@ -37,6 +39,22 @@
 				AND = {
 					has_technology_researched = ut_military_complex
 					has_technology_researched = ut_tank_diesel_engine
+				}
+			}
+			AND = {
+				has_game_rule = ut_new_dawn_start_era_4
+				OR = {
+					has_technology_researched = telephone
+					has_technology_researched = trench_works
+					has_technology_researched = political_agitation
+				}
+			}
+			AND = {
+				has_game_rule = ut_new_dawn_start_era_3
+				OR = {
+					has_technology_researched = electrical_generation
+					has_technology_researched = electric_telegraph
+					has_technology_researched = human_rights
 				}
 			}
 			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
