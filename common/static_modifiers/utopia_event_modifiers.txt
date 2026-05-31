@@ -1,4 +1,4 @@
-﻿# Heavy Tractors
+# Diesel Tractors
 agricultural_mechanization = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	building_rye_farm_throughput_add = 0.15
@@ -15,7 +15,7 @@ slow_tech_progress = {
 
 new_dawn_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
-	political_movement_radicalism_add = 0.5
+	political_movement_radicalism_add = 0.25
 	political_movement_pop_attraction_mult = 0.5
 	state_radicals_from_political_movements_mult = 0.25
 	state_radicals_and_loyalists_from_sol_change_mult = 0.25
@@ -31,6 +31,12 @@ new_dawn_phase_2_mod = {
 	state_radicals_from_political_movements_mult = -0.25
 	state_radicals_and_loyalists_from_sol_change_mult = -0.25
 	country_law_enactment_time_mult = 0.25
+}
+
+
+new_dawn_event_radicals_mod = {
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
+	political_movement_radicalism_add = 0.25
 }
 
 ut_new_dawn_focus_recently_changed = {

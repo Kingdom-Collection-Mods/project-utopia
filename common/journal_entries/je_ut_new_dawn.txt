@@ -1,4 +1,4 @@
-je_ut_new_dawn = {
+﻿je_ut_new_dawn = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
@@ -318,7 +318,8 @@ je_ut_new_dawn = {
 		random_events = {
 			400 = 0
 			10 = event_new_dawn.11
-			1 = event_new_dawn.12
+			10 = event_new_dawn.12
+			10 = event_new_dawn.13
 			# 10 = french_pretenders_pulse.3
 			# 50 = french_pretenders_pulse.10
 			# 10 = french_pretenders_pulse.11
