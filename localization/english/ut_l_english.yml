@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -175,9 +175,12 @@
  new_dawn_mod: "New Dawn"
  new_dawn_phase_2_mod: "New Dawn: Reinforce Ideology"
 
+ new_dawn_event_radicals_mod: "New Dawn: Radicals"
+
+
  event_new_dawn.1.t: "New Dawn"
  event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
- event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. We must navigate these waters carefully, balancing the demands of the people with the needs of the state. The choices we make now will shape the future of our nation for generations to come."
+ event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. The choices we make now will shape the future of our nation for generations to come. We must choose our [concept_ut_nd_path_to_utopia] and ensure we have the according laws in place to secure our vision for the future. Other nations will choose their own paths, and the world will be reshaped by the ideologies that rise to power. The time for action is now."
  event_new_dawn.1.a: "Towards a New Dawn"
 
  event_new_dawn.2.a: "Build foundation for core ideology"
@@ -1944,7 +1947,7 @@
  rule_ut_new_dawn_start_era: "$concept_ut_new_dawn$ Start Era"
  setting_ut_new_dawn_start_era_6: "Era VI"
  setting_ut_new_dawn_start_era_6_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] VI (1936-1961)"
+ setting_ut_new_dawn_start_era_5: "Era V"
+ setting_ut_new_dawn_start_era_5_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] III (1862-1886)\n@warning! Project Utopia is tested with Era V start era"
  setting_ut_new_dawn_start_era_4: "Era IV"
  setting_ut_new_dawn_start_era_4_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] IV (1887-1911)\n@warning! Project Utopia is tested with Era VI start era."
- setting_ut_new_dawn_start_era_3: "Era III"
- setting_ut_new_dawn_start_era_3_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] III (1862-1886)\n@warning! Project Utopia is tested with Era VI start era"
