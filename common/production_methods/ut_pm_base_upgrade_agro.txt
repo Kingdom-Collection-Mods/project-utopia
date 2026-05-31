@@ -131,7 +131,7 @@ pm_farms_drone_support = {
 
 		level_scaled = {
 			building_employment_laborers_add = -2500
-			building_employment_farmers_add = -1500
+			building_employment_farmers_add = -2000
 		}
 	}
 }
@@ -210,7 +210,7 @@ pm_farms_drone_support_rice = {
 
 		level_scaled = {
 			building_employment_laborers_add = -5000
-			building_employment_farmers_add = -500
+			building_employment_farmers_add = -1000
 		}
 	}
 }

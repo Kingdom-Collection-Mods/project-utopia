@@ -29,15 +29,15 @@
  ut_cnc_machines_je.success.d: "The introduction of CNC machines marks a decisive step in the automation of our industry. Complex tasks are now executed with maximum precision and efficiency."
  ut_cnc_machines_je.success.f: "A soft hum replaces the noise of workbenches. Gears turn in sync, metal shavings dance to the rhythm of programmed perfection. Chaos is no longer in the workshop - order reigns, created not by hand, but by code."
 
- ut_heavy_tractors_je: "Heavy Tractors"
+ ut_heavy_tractors_je: "Diesel Tractors"
  ut_heavy_tractors_je_reason: "Introduction and use of powerful tractors to significantly increase agricultural productivity."
  ut_heavy_tractors_je.success.d: "The introduction of powerful tractors has noticeably increased agricultural productivity. Large fields are now worked with efficiency and reliability."
  ut_heavy_tractors_je.success.f: "The fields tremble under the weight of machines. What once took days now happens in hours. Diesel, steel, and determination carve deep furrows into the soil of the future."
 
- ut_agrarian_planes_je: "Agricultural Aircraft"
+ ut_agrarian_planes_je: "Crop Dusting"
  ut_agrarian_planes_je_reason: "Use of aircraft in agriculture - for fertilization, pest control, and seeding over large areas."
- ut_agrarian_planes_je_done: "Agricultural Aircraft Completed"
- ut_agrarian_planes_je.success.d: "With the successful deployment of agricultural aircraft, a new chapter in modern farming begins. Vast fields are now cultivated more quickly, precisely, and economically."
+ ut_agrarian_planes_je_done: "Crop Dusting Completed"
+ ut_agrarian_planes_je.success.d: "With the successful deployment of Crop Dusting, a new chapter in modern farming begins. Vast fields are now cultivated more quickly, precisely, and economically."
  ut_agrarian_planes_je.success.f: "Wings of metal circle the horizon. What once was done by hand now rains from the sky: fertilizer, seed, hope. The fields breathe technology."
 
  ut_plastic_je: "Plastics"
@@ -1164,11 +1164,11 @@
 # Tech Production
  machinery_farming: "Cabin Tractors"
  machinery_farming_desc: ""
- heavy_machinery_farming: "Heavy Tractors"
+ heavy_machinery_farming: "Diesel Tractors"
  heavy_machinery_farming_desc: ""
- airplane_farming: "Agricultural Aircraft"
+ airplane_farming: "Crop Dusting"
  airplane_farming_desc: ""
- drone_farming: "Agricultural Drones"
+ drone_farming: "Autonomous Farm Systems"
  drone_farming_desc: ""
  chemistry: "Nitrophosphate Process"
  chemistry_desc: ""
@@ -1599,13 +1599,13 @@
  pm_oil_automated_heavy_machinery_mine: "Automated Machinery"
 
  pm_high_yield_crops: "High-Yield Crops"
- pm_farms_drone_support: "Drones"
- pm_farms_plane_support: "Agricultural Aircraft"
+ pm_farms_drone_support: "Autonomous Farm Systems"
+ pm_farms_plane_support: "Crop Dusting"
  pm_high_yield_crops_rice: "High-Yield Crops"
- pm_farms_plane_support_rice: "Agricultural Aircraft"
- pm_farms_drone_support_rice: "Drones"
- pm_farms_heavy_machinery_support: "Heavy Tractors"
- pm_farms_heavy_machinery_support_rice: "Heavy Tractors"
+ pm_farms_plane_support_rice: "Crop Dusting"
+ pm_farms_drone_support_rice: "Autonomous Farm Systems"
+ pm_farms_heavy_machinery_support: "Diesel Tractors"
+ pm_farms_heavy_machinery_support_rice: "Diesel Tractors"
  pm_ut_factory_farming: "Factory Farming"
 
  pm_heavy_machinery_building_coal_mine: "Heavy Machinery"
@@ -1688,6 +1688,7 @@
  pm_ut_high_speed_electric_trains: "Intercity"
  pm_ut_high_speed_electric_trains_principle_transport_3: "Intercity-High-Speed"
  pm_computer_bureaucrats: "Digital Administration"
+ pm_internet_bureaucrats: "Connected Administration"
 
  pm_ut_research_department: "Institute for Social Sciences"
 
@@ -1879,7 +1880,7 @@
  smart_irrigation_building_coffee_plantation: "Smart Irrigation"
  smart_irrigation_building_opium_plantation: "Smart Irrigation"
 
- agricultural_mechanization: "Heavy Tractors"
+ agricultural_mechanization: "Diesel Tractors"
  slow_tech_progress: "Slow Technological Progress"
  je_ai_advanced_consumer_goods_researched: "Consumer Goods"
  ai_great_power_buff_spread: "Technological Influence (Great Power)"
@@ -1891,8 +1892,10 @@
  modern_civil_aviation_modifier_others: "Modern Civil Aviation"
 
  event_journal_ai: "Technological Progress"
+ event_journal_ai.d: "Countries receive bonuses to innovation scaled increasing with their power level."
+ event_journal_ai.f: "Technological progress spreads across the world through trade, communication, education, migration, and international cooperation. When one country develops a new invention, that knowledge can influence other nations and support their own development. While powerful countries often have greater resources to invest in research and innovation, smaller nations can also contribute by adapting, refining, and sharing technologies in unique ways. As ideas move across borders, countries become increasingly connected through innovation, creating a global exchange of knowledge."
  utopia_event_journal_ai_buff: "Wave of Innovation"
- utopia_event_journal_ai_buff_tooltip: "AI countries receive a significant bonus to innovation spread."
+ utopia_event_journal_ai_buff_tooltip: "AI countries receive a significant temporary bonus to innovation spread."
 
  ut_tech_preview_cheat_research: "Project Utopia: Technology Cheat"
  ut_tech_preview_cheat_research_desc: "As part of the technical preview you can cheat to get a ton of innovation and [Concept('concept_ut_research_institute', 'research')]."
