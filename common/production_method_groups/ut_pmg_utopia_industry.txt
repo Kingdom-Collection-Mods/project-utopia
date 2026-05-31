@@ -252,11 +252,21 @@ pmg_offshore_power_plant_wind = {
 	}
 }
 
+#deprecated - not really but rename to pmg_ut_power_grid_base
 pmg_ut_power_grid = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
 		ut_pm_power_grid_import
 		#ut_pm_power_grid_export
+	}
+}
+
+pmg_ut_power_grid_operations = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		ut_pm_power_grid_operations_analog
+		ut_pm_power_grid_operations_digital
+		ut_pm_power_grid_operations_connected
 	}
 }
 

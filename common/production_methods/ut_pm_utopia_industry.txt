@@ -475,7 +475,8 @@ pm_software_one_process = {
 			goods_input_computers_add = 20
 			
 			# output goods
-			goods_output_software_add = 100
+			#100 pre rework
+			goods_output_software_add = 50
 		}
 
 		level_scaled = {
@@ -2002,8 +2003,54 @@ ut_pm_power_grid_import = {
         }
 
         level_scaled = {
-            building_employment_machinists_add = 700
-            building_employment_engineers_add  = 300
+            building_employment_machinists_add = 1500
+            building_employment_engineers_add  = 500
+        }
+    }
+}
+
+ut_pm_power_grid_operations_analog = {
+    texture = "gfx/interface/icons/production_method_icons/james_grid_power.dds"
+    
+    building_modifiers = {
+        workforce_scaled = {
+            goods_input_telephones_add = 1
+        }
+
+        level_scaled = {
+        }
+    }
+}
+
+ut_pm_power_grid_operations_digital = {
+    texture = "gfx/interface/icons/production_method_icons/james_grid_power.dds"
+    
+    building_modifiers = {
+        workforce_scaled = {
+            goods_input_telephones_add = 1
+			goods_input_computers_add = 1
+			goods_input_software_add = 1
+        }
+
+        level_scaled = {
+            building_employment_machinists_add = -500
+        }
+    }
+}
+
+ut_pm_power_grid_operations_connected = {
+    texture = "gfx/interface/icons/production_method_icons/james_grid_power.dds"
+    
+    building_modifiers = {
+        workforce_scaled = {
+            goods_input_telephones_add = 1
+			goods_input_computers_add = 1
+			goods_input_software_add = 2
+			goods_input_internet_add = 1
+        }
+
+        level_scaled = {
+            building_employment_machinists_add = -1000
         }
     }
 }
@@ -2086,6 +2133,7 @@ pm_base_building_ut_power_grid_base = {
 			goods_input_electronics_add = 30
 			goods_input_electricity_add = 30
 			goods_input_heavy_machinery_add = 10
+			goods_input_software_add = 10
 		}
 
 		level_scaled = {
