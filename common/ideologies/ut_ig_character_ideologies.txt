@@ -1488,8 +1488,8 @@ ut_radical_feminism_leader = {
 				has_law = law_type:law_monarchy
 			}
 			OR = {
-				is_ruler = yes
-				is_heir = yes
+				is_ruler_of_own_country = yes
+				is_heir_of_own_country = yes
 			}
 		}
 		interest_group = {
