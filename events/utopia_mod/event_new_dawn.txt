@@ -627,11 +627,6 @@ event_new_dawn.11 = {
 				}
 			}
 			5 = {
-				create_character = {
-					ig_leader = yes
-					ideology = ideology_social_democrat
-					interest_group = ig_armed_forces
-				}
 				ig:ig_armed_forces = {
 					leader = {
 						set_ideology = ideology:ideology_social_democrat
@@ -663,8 +658,9 @@ event_new_dawn.11 = {
 event_new_dawn.12 = {
 	type = country_event
 	placement = ROOT
-	title = event_new_dawn.11.t
-	desc = event_new_dawn.11.d
+	title = event_new_dawn.12.t
+	desc = event_new_dawn.12.d
+	flavor = event_new_dawn.12.f
 
 	event_image = {
 		video = "unspecific_politicians_arguing"
@@ -701,10 +697,10 @@ event_new_dawn.12 = {
 		trigger = {
 			has_modifier = je_ut_new_dawn_democrat_focus
 		}
-		create_character = {
-			ig_leader = yes
-			ideology = ideology_social_democrat
-			interest_group = ig_armed_forces
+		ig:ig_armed_forces = {
+			leader = {
+				set_ideology = ideology:ideology_social_democrat
+			}
 		}
 	}
 
@@ -718,10 +714,10 @@ event_new_dawn.12 = {
 				NOT = { has_law = law_type:law_universal_suffrage }
 			}
 		}
-		create_character = {
-			ig_leader = yes
-			ideology = ut_ideology_autocratic_leader
-			interest_group = ig_armed_forces			
+		ig:ig_armed_forces = {
+			leader = {
+				set_ideology = ideology:ut_ideology_autocratic_leader
+			}
 		}
 	}
 
@@ -736,10 +732,10 @@ event_new_dawn.12 = {
 				is_in_government = yes
 			}
 		}
-		create_character = {
-			ig_leader = yes
-			ideology = ut_ideology_national_socialist_leader
-			interest_group = ig_armed_forces			
+		ig:ig_armed_forces = {
+			leader = {
+				set_ideology = ideology:ut_ideology_national_socialist_leader
+			}
 		}
 	}
 
@@ -754,10 +750,10 @@ event_new_dawn.12 = {
 				is_in_government = yes
 			}
 		}
-		create_character = {
-			ig_leader = yes
-			ideology = ideology_communist
-			interest_group = ig_armed_forces			
+		ig:ig_armed_forces = {
+			leader = {
+				set_ideology = ideology:ideology_communist
+			}
 		}
 	}
 
@@ -766,36 +762,98 @@ event_new_dawn.12 = {
 		default_option = yes
 		random_list = {
 			60 = {
-				create_character = {
-					ig_leader = yes
-					ideology = ut_ideology_autocratic_leader
-					interest_group = ig_armed_forces
+				ig:ig_armed_forces = {
+					leader = {
+						set_ideology = ideology:ut_ideology_autocratic_leader
+					}
 				}
 			}
 			30 = {
-				create_character = {
-					ig_leader = yes
-					ideology = ut_ideology_national_socialist_leader
-					interest_group = ig_armed_forces
+				ig:ig_armed_forces = {
+					leader = {
+						set_ideology = ideology:ut_ideology_national_socialist_leader
+					}
 				}
 			}
 			5 = {
-				create_character = {
-					ig_leader = yes
-					ideology = ideology_social_democrat
-					interest_group = ig_armed_forces
+				ig:ig_armed_forces = {
+					leader = {
+						set_ideology = ideology:ideology_social_democrat
+					}
 				}
 			}
 			5 = {
-				create_character = {
-					ig_leader = yes
-					ideology = ideology_communist
-					interest_group = ig_armed_forces
+				ig:ig_armed_forces = {
+					leader = {
+						set_ideology = ideology:ideology_communist
+					}
 				}
 			}
 		}
 	}
 	
+	option = {
+		name = event_new_dawn.suppress_random_decision
+		add_radicals = {
+			value = 0.01
+		}
+	}
+}
+
+
+#Radicals
+event_new_dawn.13 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.11.t
+	desc = event_new_dawn.11.d
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	#gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		NOT = { has_modifier = new_dawn_event_radicals_mod }
+	}
+
+	cancellation_trigger = {
+		always = no
+	}
+
+	immediate = {
+	}
+
+	#Suppress
+	option = {
+		highlighted_option = yes
+		trigger = {
+			ut_new_dawn_has_core_trigger = yes
+		}
+		name = utopia.suppress
+		custom_tooltip = ut_add_new_dawn_progress_neg_5
+		ut_add_new_dawn_core_progress = {
+			VALUE = -5
+		}
+	}
+
+	#Happens
+	option = {
+		default_option = yes
+		name = utopia.no
+		add_modifier = {
+			name = new_dawn_event_radicals_mod
+			days = 365
+		}
+	}
+
 	option = {
 		name = event_new_dawn.suppress_random_decision
 		add_radicals = {
