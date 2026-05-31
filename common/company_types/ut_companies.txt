@@ -74,41 +74,28 @@ ut_high_tech_company_research = {
 	}
 
 	possible = { 
-		has_technology_researched = electronics
+		has_technology_researched = radio
+		has_technology_researched = electric_railway
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
-				OR = {
-					is_building_type = building_electronic_factory
-				}
+				is_building_type = building_electronic_factory
 				level >= 10
 			}
 		}
 	}
 	
 	prosperity_modifier = {	
-		country_weekly_innovation_max_add = 100
-		state_lower_strata_expected_sol_add = 2
-		state_middle_strata_expected_sol_add = 2
-		state_upper_strata_expected_sol_add = 2
+		country_weekly_innovation_max_add = 60
+		state_expected_sol_mult = 0.1
 	}	
 		
 	ai_will_do = {
-		has_technology_researched = electronics
-		any_scope_state = {
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_electronic_factory
-				}
-				level >= 10
-			}
-		}
-		country_rank >= rank_value:major_power
+		always = no
 	}
 	
 	ai_weight = {
-		value = 1 # Base Value
+		value = 0
 	}
 }
 
