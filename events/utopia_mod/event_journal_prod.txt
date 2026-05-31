@@ -175,7 +175,7 @@ utopia_journal_prod.4 = {
 }
 
 
-# Heavy Tractors Event
+# Diesel Tractors Event
 utopia_journal_prod.5 = {
 	title = ut_heavy_tractors_je
 	desc = ut_heavy_tractors_je.success.d

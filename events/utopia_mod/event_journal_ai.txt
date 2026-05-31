@@ -2,6 +2,8 @@
 # je_urbanist_ig >1% Urbanisten
 event_journal_ai.1 = {
 	title = event_journal_ai
+	desc = event_journal_ai.d
+	flavor = event_journal_ai.f
 	type = country_event
 	event_image = { video = "unspecific_world_fair" }
 
