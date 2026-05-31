@@ -338,11 +338,11 @@ combat_unit_type_advanced_marines = {
     }
 
     battle_modifier = {
-        unit_offense_add = 50
-        unit_defense_add = 60
-        unit_morale_loss_add = 8
+        unit_offense_add = 60
+        unit_defense_add = 70
+        unit_morale_loss_add = 4
         # no naval invasion efficiency loss (vanilla marines)
-        unit_naval_invasion_efficiency_mult = 0.1
+        unit_naval_invasion_efficiency_mult = 0.2
     }
 
 	unlocking_technologies = { heavy_ships_rockets_base }
