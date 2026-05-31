@@ -1,4 +1,4 @@
-﻿
+
 building_bauxite_mine = {
 	building_group = bg_bauxite_mining
 	icon = "gfx/interface/icons/building_icons/bauxite_mine.dds"
@@ -445,7 +445,7 @@ building_ut_research_institute = {
 	downsizeable = no
 
 	unlocking_technologies = { 
-		electronics
+		nuclear_power_research
 		ut_military_complex
 		compulsory_secondary_school
 	}
@@ -461,12 +461,24 @@ building_ut_research_institute = {
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 
-	can_build_government = {
+
+    
+	# optional custom trigger (state scope) if the state is potential for this building type, i.e. can ever be built there, default yes
+	potential = {
+		# trigger definition
+		show_as_tooltip = {
+			has_journal_entry = ut_je_research_institute_construction
+		}
+	}
+
+	# optional custom trigger (state scope) if it's possible to build the building in the state now, default yes
+	possible = {
 		custom_tooltip = {
 			text = ut_research_institute_can_construct_tt
 			has_modifier = ut_research_institute_site_mod
 		}
 	}
+	
 	can_build_private = {
 		always = no
 	}
