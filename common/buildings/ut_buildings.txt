@@ -465,14 +465,12 @@ building_ut_research_institute = {
     
 	# optional custom trigger (state scope) if the state is potential for this building type, i.e. can ever be built there, default yes
 	potential = {
-		# trigger definition
-		show_as_tooltip = {
-			has_journal_entry = ut_je_research_institute_construction
-		}
+		NOT = {	has_variable = ut_research_institute_found_done }
 	}
 
 	# optional custom trigger (state scope) if it's possible to build the building in the state now, default yes
 	possible = {
+		has_journal_entry = ut_je_research_institute_construction
 		custom_tooltip = {
 			text = ut_research_institute_can_construct_tt
 			has_modifier = ut_research_institute_site_mod
