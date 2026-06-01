@@ -1,4 +1,4 @@
-
+﻿
 building_bauxite_mine = {
 	building_group = bg_bauxite_mining
 	icon = "gfx/interface/icons/building_icons/bauxite_mine.dds"
@@ -320,7 +320,7 @@ building_software_company = {
 	ai_nationalization_desire = 0.25 # AI will generally not privatize steel mills due to importance for construction
 
 	unlocking_technologies = {
-		software
+		electronics
 	}
 	
 	production_method_groups = {

@@ -192,6 +192,15 @@ goods_output_software_add={
 	}
 }
 
+goods_output_software_mult={
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
 goods_input_software_add={
 	decimals=1
 	color=bad

@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -212,8 +212,18 @@ l_english:
  event_new_dawn.3.d.f: "Order collapsed—only strength could restore the nation's soul."
 
  event_new_dawn.11.t: "Armed Forces Demand Leadership Change"
- event_new_dawn.11.f: "Senior military officials, citing the nation's instability, have demanded the resignation of the current leadership. They propose a new figurehead who better aligns with their interests."
  event_new_dawn.11.d: "When the generals speak, even presidents listen."
+ event_new_dawn.11.f: "Senior military officials, citing the nation's instability, have demanded the resignation of the current leadership. They propose a new figurehead who better aligns with their interests."
+ 
+ event_new_dawn.12.t: "Bourgeoisie Demands Leadership Change"
+ event_new_dawn.12.d: "When the bourgeoisie speaks, they form a powerful coalition."
+ event_new_dawn.12.f: "Prominent industrialists and business leaders, concerned about the direction of the country, have called for a change in leadership. They advocate for a new figurehead who will prioritize economic growth and stability."
+
+ event_new_dawn.13.t: "Radicals Uprising"
+ event_new_dawn.13.d: "Radical factions are mobilizing, threatening to overthrow the current order. They demand a change in ideology."
+ event_new_dawn.13.f: "Radical groups, fueled by frustration and a desire for change, have launched an uprising. They seek to dismantle the existing power structure and establish a new ideological order. The situation is volatile."
+
+ event_new_dawn.13.a: "Radical groups are forming"
 
  event_new_dawn.democrat_leader: "Appoint a new democratic leader"
  event_new_dawn.autocrat_leader: "Empower an autocratic figurehead"
@@ -1788,8 +1798,12 @@ l_english:
  goods_output_rare_earths_add_desc: "The amount of @rare_earths! Rare Earths produced by buildings"
  goods_output_computers_add: "@computers! Computers output"
  goods_output_computers_add_desc: "The amount of @computers! Computers produced by buildings"
+ goods_output_computers_mult: "@computers! $computers$ Computers Output"
+ goods_output_computers_mult_desc: "A bonus or penalty for the production of @computers! $computers$."
  goods_output_software_add: "@software! Software output"
  goods_output_software_add_desc: "The amount of @software! Software produced by buildings"
+ goods_output_software_mult: "@software! $software$ Software Output"
+ goods_output_software_mult_desc: "A bonus or penalty for the production of @software! $software$."
  goods_output_internet_add: "@internet! Internet output"
  goods_output_internet_add_desc: "The amount of @internet! Internet produced by buildings"
  goods_output_trucks_add: "@trucks! Trucks output"
@@ -1893,6 +1907,48 @@ l_english:
  wirtschaftswunder_others_modifier: "Economic Miracle (Influence)"
  early_civil_aviation_modifier_others: "Early Civil Aviation"
  modern_civil_aviation_modifier_others: "Modern Civil Aviation"
+
+ #je software tree
+ je_ut_software_era_6_add_decision: "Start Software Expertise technology tree"
+ je_ut_software_era_6_add_decision_desc: "Unlock the Software Expertise which provides access to foundational software concepts and prepares for modern systems design."
+ je_ut_software_era_6: "Software Expertise: Era 6"
+ je_ut_software_era_6_reason: "Advance through foundational software concepts to prepare for modern systems design."
+ je_ut_software_points_bar_era_6: "Software Expertise"
+ je_ut_software_points_bar_era_6_desc: "Software Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
+
+ je_ut_software_era_6_assembler_language: "Assembler Language"
+ je_ut_software_era_6_assembler_language_desc: "Low-level programming provides deep hardware control and optimization opportunities."
+ je_ut_software_era_6_assembler_language_mod: "$je_ut_software_era_6_assembler_language$"
+ je_ut_software_era_6_compiler: "Compilers"
+ je_ut_software_era_6_compiler_desc: "Translating high-level code into efficient machine instructions enables complex software development."
+ je_ut_software_era_6_compiler_mod: "$je_ut_software_era_6_compiler$"
+ je_ut_software_era_6_high_level_language: "High-Level Languages"
+ je_ut_software_era_6_high_level_language_desc: "High-level programming languages abstract hardware details, accelerating software creation and innovation."
+ je_ut_software_era_6_high_level_language_mod: "$je_ut_software_era_6_high_level_language$"
+ 
+ je_ut_software_era_6_required_points_tt: "Requires at least #v 100#! $je_ut_software_points_bar_era_6$"
+ je_ut_software_era_6_required_points_spend_tt: "Consumes #v 100#! $je_ut_software_points_bar_era_6$"
+
+ je_ut_software_era_7: "Software Expertise: Era 7"
+ je_ut_software_era_7_reason: "Develop modern software paradigms to complete the software expertise track."
+ je_ut_software_points_bar_era_7: "Software Expertise"
+ je_ut_software_points_bar_era_7_desc: "Software Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
+
+ je_ut_software_era_7_operating_system: "Operating System"
+ je_ut_software_era_7_operating_system_desc: "Standardized operating environments improve software deployment and reliability."
+ je_ut_software_era_7_operating_system_mod: "$je_ut_software_era_7_operating_system$"
+ je_ut_software_era_7_relational_database: "Relational Database"
+ je_ut_software_era_7_relational_database_desc: "Structured data systems enable scalable storage, querying, and business analytics."
+ je_ut_software_era_7_relational_database_mod: "$je_ut_software_era_7_relational_database$"
+ je_ut_software_era_7_object_oriented_programming: "Object-Oriented Programming"
+ je_ut_software_era_7_object_oriented_programming_desc: "Object-oriented methods accelerate complex software development and reuse."
+ je_ut_software_era_7_object_oriented_programming_mod: "$je_ut_software_era_7_object_oriented_programming$"
+ je_ut_software_era_7_required_points_tt: "Requires at least #v 1000#! $je_ut_software_points_bar_era_7$"
+ je_ut_software_era_7_required_points_spend_tt: "Consumes #v 1000#! $je_ut_software_points_bar_era_7$"
+
+ je_ut_software_points_bar_progress: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_tooltip Buildings #!#!"
+ je_ut_software_points_bar_progress_tooltip: "Sum of [concept_occupancy] times [concept_building_level].\nMaximal gain is 10 Software Expertise."
+ je_ut_software_points_bar_progress_desc: "Changes the gain of Software Expertise."
 
  event_journal_ai: "Technological Progress"
  event_journal_ai.d: "Countries receive bonuses to innovation scaled increasing with their power level."

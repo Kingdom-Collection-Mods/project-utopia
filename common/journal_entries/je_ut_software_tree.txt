@@ -1,0 +1,265 @@
+﻿je_ut_software_era_6 = {
+	icon = "gfx/interface/icons/goods_icons/software.dds"
+
+	group = je_group_technology
+	
+	modifiers_while_active = {
+	}
+	
+	is_shown_when_inactive = {
+		always = yes
+	}
+
+	possible = {
+		has_technology_researched = electronics
+	}
+
+	immediate = {
+		set_variable = {
+			name = je_ut_software_points_bar_progress
+			value = 0
+		}
+	}
+	
+	scripted_button = je_ut_software_era_6_assembler_language
+	scripted_button = je_ut_software_era_6_compiler
+	scripted_button = je_ut_software_era_6_high_level_language
+
+	scripted_progress_bar = je_ut_software_points_bar_era_6
+
+	complete = {
+		has_technology_researched = computers
+		has_modifier = je_ut_software_era_6_high_level_language_mod
+	}
+
+	on_complete = {
+		set_variable = je_ut_software_era_6_done
+		add_journal_entry = {
+			type = je_ut_software_era_7
+		}
+
+		if = {
+			limit = {
+				is_ai = yes
+				capital = {
+					NOT = { has_building = building_software_company }
+				}
+			}
+			capital = {
+				create_building = {
+					building = building_software_company
+					level = 1
+					reserves=1
+					subsidized = yes
+				}
+			}
+		}
+	}
+
+	status_desc = {
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			
+			set_variable = {
+				name = je_ut_software_points_bar_progress
+				value = 0
+			}
+
+			if = {
+				limit = {
+					is_player = yes
+				}
+				#for player
+				every_scope_building = {
+					limit = {
+						is_building_type = building_software_company
+						level >= 1
+					}
+					ROOT = {
+						set_local_variable = {
+							name = je_ut_software_points_bar_progress_loc
+							value = prev.occupancy
+						}
+						change_local_variable = {
+							name = je_ut_software_points_bar_progress_loc
+							multiply = prev.level
+						}
+						change_variable = {
+							name = je_ut_software_points_bar_progress
+							add = local_var:je_ut_software_points_bar_progress_loc
+						}
+					}
+					#cap at 10
+					if = {
+						limit = {
+							var:je_ut_software_points_bar_progress > 10
+						}
+						set_variable = {
+							name = je_ut_software_points_bar_progress
+							value = 10
+						}
+					}
+				}
+			}
+			else = {
+				#for ai flat calculations
+				set_variable = {
+					name = je_ut_software_points_bar_progress
+					value = 0.5
+				}
+				if = {
+					limit = {
+						country_rank >= rank_value:major_power
+					}
+					change_variable = {
+						name = je_ut_software_points_bar_progress
+						value = 1
+					}
+				}
+				if = {
+					limit = {
+						has_building = building_software_company
+					}
+					change_variable = {
+						name = je_ut_software_points_bar_progress
+						value = 2
+					}
+				}
+			}
+
+		}
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default_uninvolved_or_context = no
+}
+
+je_ut_software_era_7 = {
+	icon = "gfx/interface/icons/goods_icons/software.dds"
+
+	group = je_group_technology
+
+	immediate = {
+		set_variable = {
+			name = je_ut_software_points_bar_progress
+			value = 0
+		}
+	}
+
+	scripted_button = je_ut_software_era_7_operating_system
+	scripted_button = je_ut_software_era_7_relational_database
+	scripted_button = je_ut_software_era_7_object_oriented_programming
+
+	scripted_progress_bar = je_ut_software_points_bar_era_7
+
+	complete = {
+		has_modifier = je_ut_software_era_7_object_oriented_programming_mod
+		has_technology_researched = software
+	}
+
+	on_complete = {
+		set_variable = je_ut_software_era_7_done
+		remove_modifier = je_ut_software_era_7_object_oriented_programming_mod
+		add_modifier = je_ut_software_era_7_done_mod
+
+		if = {
+			limit = {
+				is_ai = yes
+				capital = {
+					NOT = { has_building = building_software_company }
+				}
+			}
+			capital = {
+				create_building = {
+					building = building_software_company
+					level = 1
+					reserves=1
+					subsidized = yes
+				}
+			}
+		}
+	}
+
+	status_desc = {
+	}
+
+	on_monthly_pulse = {
+		effect = {
+		
+			set_variable = {
+				name = je_ut_software_points_bar_progress
+				value = 0
+			}
+
+			if = {
+				limit = {
+					is_player = yes
+				}
+				#for player
+				every_scope_building = {
+					limit = {
+						is_building_type = building_software_company
+						level >= 5
+					}
+					ROOT = {
+						set_local_variable = {
+							name = je_ut_software_points_bar_progress_loc
+							value = prev.occupancy
+						}
+						change_local_variable = {
+							name = je_ut_software_points_bar_progress_loc
+							multiply = prev.level
+						}
+						change_variable = {
+							name = je_ut_software_points_bar_progress
+							add = local_var:je_ut_software_points_bar_progress_loc
+						}
+					}
+					#cap at 100
+					if = {
+						limit = {
+							var:je_ut_software_points_bar_progress > 100
+						}
+						set_variable = {
+							name = je_ut_software_points_bar_progress
+							value = 100
+						}
+					}
+				}
+			}
+			else = {
+				#for ai flat calculations
+				set_variable = {
+					name = je_ut_software_points_bar_progress
+					value = 10
+				}
+				if = {
+					limit = {
+						country_rank >= rank_value:major_power
+					}
+					change_variable = {
+						name = je_ut_software_points_bar_progress
+						value = 1
+					}
+				}
+				if = {
+					limit = {
+						has_building = building_software_company
+					}
+					change_variable = {
+						name = je_ut_software_points_bar_progress
+						value = 10
+					}
+				}
+			}
+
+		}
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default_uninvolved_or_context = no
+}

@@ -1,0 +1,91 @@
+﻿#deprecated (for og internal savegame)
+je_ut_software_points_bar = {
+	name = "je_ut_software_points_bar_era_6"
+	desc = "je_ut_software_points_bar_era_6_desc"
+
+	#for color
+	default_green = yes
+
+	monthly_progress = {
+		add = {
+			desc = "je_ut_software_points_bar_progress"
+			value = root.var:je_ut_software_points_bar_progress
+		}
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 100
+
+}
+
+je_ut_software_points_bar_era_6 = {
+	name = "je_ut_software_points_bar_era_6"
+	desc = "je_ut_software_points_bar_era_6_desc"
+
+	#for color
+	default_green = yes
+
+	monthly_progress = {
+		add = {
+			desc = "je_ut_software_points_bar_progress"
+			value = root.var:je_ut_software_points_bar_progress
+		}
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 100
+
+}
+
+
+je_ut_software_points_bar_era_7 = {
+	name = "je_ut_software_points_bar_era_7"
+	desc = "je_ut_software_points_bar_era_7_desc"
+
+	#for color
+	default_green = yes
+
+	monthly_progress = {
+		
+		add = {
+			desc = "base_value"
+			value = -20
+		}
+		add = {
+			desc = "je_ut_software_points_bar_progress"
+			value = root.var:je_ut_software_points_bar_progress
+		}
+	}
+
+	start_value = 500
+	min_value = 0
+	max_value = 1000
+
+}
+
+je_ut_software_points_bar_era_8 = {
+	name = "je_ut_software_points_bar_era_8"
+	desc = "je_ut_software_points_bar_era_8_desc"
+
+	#for color
+	default_green = yes
+
+	monthly_progress = {
+		
+		add = {
+			desc = "base_value"
+			value = -100
+		}
+		add = {
+			desc = "je_ut_software_points_bar_progress"
+			value = root.var:je_ut_software_points_bar_progress
+		}
+	}
+
+	start_value = 2000
+	min_value = 0
+	max_value = 10000
+
+}

@@ -401,6 +401,7 @@ pm_heavy_machinery_building_coal_mine = {
 			goods_input_electricity_add = 5
 			goods_input_heavy_machinery_add = 10
 			goods_input_tools_add = 10
+			goods_input_software_add = 1
 			
 			# output goods
 			goods_output_coal_add = 150
@@ -438,6 +439,7 @@ pm_heavy_machinery_building_iron_mine = {
 			goods_input_electricity_add = 5
 			goods_input_heavy_machinery_add = 10
 			goods_input_tools_add = 10
+			goods_input_software_add = 1
 			
 			# output goods
 			goods_output_iron_add = 140
@@ -581,6 +583,7 @@ pm_modern_automobiles = {
 			goods_input_electricity_add = 5
 			goods_input_heavy_machinery_add = 4
 			goods_input_aluminum_add = 5
+			goods_input_software_add = 1
 
 			# output goods
 			goods_output_automobiles_add = 70
@@ -653,6 +656,7 @@ pm_electronics_engines = {
 			goods_input_electronics_add = 10
 			goods_input_electricity_add = 20
 			goods_input_computers_add = 1
+			goods_input_software_add = 1
 			
 			# output goods
 			goods_output_engines_add = 155
@@ -689,7 +693,7 @@ pm_computers_engines = {
 			goods_input_oil_add = 30
 			goods_input_electronics_add = 10
 			goods_input_computers_add = 5
-			goods_input_software_add = 1
+			goods_input_software_add = 2
 			goods_input_electricity_add = 20
 			
 			# output goods
@@ -717,6 +721,7 @@ pm_oil_heavy_machinery_mine = {
 			# input goods
 			goods_input_heavy_machinery_add = 10
 			goods_input_electricity_add = 5
+			goods_input_software_add = 1
 			
 			# output goods
 			goods_output_oil_add = 140
@@ -827,6 +832,7 @@ pm_shopping_district = {
 			goods_input_heavy_machinery_add = 1
 			goods_input_computers_add = 1
 			goods_input_electricity_add = 2
+			goods_input_software_add = 1
 			goods_output_services_add = 105
 		}
 
@@ -853,7 +859,7 @@ pm_online_shopping = {
 			goods_input_steel_add = 2
 			goods_input_heavy_machinery_add = 1
 			goods_input_computers_add = 2
-			goods_input_software_add = 2
+			goods_input_software_add = 3
 			goods_input_electricity_add = 4
 			goods_output_services_add = 130
 		}

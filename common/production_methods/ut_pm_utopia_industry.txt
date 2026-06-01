@@ -21,6 +21,7 @@ pm_heavy_machinery_buildings = {
 			goods_input_explosives_add = 10
 			goods_input_tools_add = 30
 			goods_input_electricity_add = 40
+			goods_input_software_add = 5
 		} 
 
 		level_scaled = {
@@ -99,13 +100,14 @@ pm_heavy_machinery_electronics_process = {
 		workforce_scaled = {
 			# input goods
 			goods_input_rubber_add = 5
-			goods_input_tools_add = 15
+			goods_input_tools_add = 10
 			goods_input_steel_add = 15
 			goods_input_engines_add = 5
 			goods_input_aluminum_add = 10
 			goods_input_computers_add = 1
 			goods_input_electronics_add = 10
 			goods_input_electricity_add = 30
+			goods_input_software_add = 5
 			
 			# output goods
 			goods_output_heavy_machinery_add = 70
@@ -139,7 +141,7 @@ pm_heavy_machinery_digital_process = {
 		workforce_scaled = {
 			# input goods
 			goods_input_rubber_add = 5
-			goods_input_tools_add = 15
+			goods_input_tools_add = 10
 			goods_input_steel_add = 15
 			goods_input_engines_add = 5
 			goods_input_aluminum_add = 10

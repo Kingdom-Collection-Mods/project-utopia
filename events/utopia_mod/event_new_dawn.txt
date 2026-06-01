@@ -697,7 +697,7 @@ event_new_dawn.12 = {
 		trigger = {
 			has_modifier = je_ut_new_dawn_democrat_focus
 		}
-		ig:ig_armed_forces = {
+		ig:ig_petty_bourgeoisie = {
 			leader = {
 				set_ideology = ideology:ideology_social_democrat
 			}
@@ -714,7 +714,7 @@ event_new_dawn.12 = {
 				NOT = { has_law = law_type:law_universal_suffrage }
 			}
 		}
-		ig:ig_armed_forces = {
+		ig:ig_petty_bourgeoisie = {
 			leader = {
 				set_ideology = ideology:ut_ideology_autocratic_leader
 			}
@@ -728,11 +728,11 @@ event_new_dawn.12 = {
 		set_variable = ut_new_dawn_core_autocrat_var
 		trigger = {
 			has_modifier = je_ut_new_dawn_fascist_focus
-			ig:ig_armed_forces = {
+			ig:ig_petty_bourgeoisie = {
 				is_in_government = yes
 			}
 		}
-		ig:ig_armed_forces = {
+		ig:ig_petty_bourgeoisie = {
 			leader = {
 				set_ideology = ideology:ut_ideology_national_socialist_leader
 			}
@@ -746,11 +746,11 @@ event_new_dawn.12 = {
 		set_variable = ut_new_dawn_core_autocrat_var
 		trigger = {
 			has_modifier = je_ut_new_dawn_communist_focus
-			ig:ig_armed_forces = {
+			ig:ig_petty_bourgeoisie = {
 				is_in_government = yes
 			}
 		}
-		ig:ig_armed_forces = {
+		ig:ig_petty_bourgeoisie = {
 			leader = {
 				set_ideology = ideology:ideology_communist
 			}
@@ -762,28 +762,28 @@ event_new_dawn.12 = {
 		default_option = yes
 		random_list = {
 			60 = {
-				ig:ig_armed_forces = {
+				ig:ig_petty_bourgeoisie = {
 					leader = {
 						set_ideology = ideology:ut_ideology_autocratic_leader
 					}
 				}
 			}
 			30 = {
-				ig:ig_armed_forces = {
+				ig:ig_petty_bourgeoisie = {
 					leader = {
 						set_ideology = ideology:ut_ideology_national_socialist_leader
 					}
 				}
 			}
 			5 = {
-				ig:ig_armed_forces = {
+				ig:ig_petty_bourgeoisie = {
 					leader = {
 						set_ideology = ideology:ideology_social_democrat
 					}
 				}
 			}
 			5 = {
-				ig:ig_armed_forces = {
+				ig:ig_petty_bourgeoisie = {
 					leader = {
 						set_ideology = ideology:ideology_communist
 					}
@@ -805,11 +805,12 @@ event_new_dawn.12 = {
 event_new_dawn.13 = {
 	type = country_event
 	placement = ROOT
-	title = event_new_dawn.11.t
-	desc = event_new_dawn.11.d
+	title = event_new_dawn.13.t
+	desc = event_new_dawn.13.d
+	flavor = event_new_dawn.13.f
 
 	event_image = {
-		video = "unspecific_politicians_arguing"
+		video = "europenorthamerica_springtime_of_nations"
 	}
 
 	duration = 3
@@ -837,7 +838,7 @@ event_new_dawn.13 = {
 		trigger = {
 			ut_new_dawn_has_core_trigger = yes
 		}
-		name = utopia.suppress
+		name = je_ut_new_dawn_suppress_dissidents
 		custom_tooltip = ut_add_new_dawn_progress_neg_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = -5
@@ -847,7 +848,7 @@ event_new_dawn.13 = {
 	#Happens
 	option = {
 		default_option = yes
-		name = utopia.no
+		name = event_new_dawn.13.a
 		add_modifier = {
 			name = new_dawn_event_radicals_mod
 			days = 365

@@ -1,4 +1,4 @@
-# Diesel Tractors
+﻿# Diesel Tractors
 agricultural_mechanization = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	building_rye_farm_throughput_add = 0.15
@@ -427,4 +427,40 @@ ut_propaganda_democratic_mod = {
 ut_je_propaganda_source_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds
 	country_new_dawn_progress_points_progress = -1
+}
+
+je_ut_software_era_6_assembler_language_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	goods_output_software_mult = 0.1
+}
+
+je_ut_software_era_6_compiler_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	goods_output_software_mult = 0.2
+}
+
+je_ut_software_era_6_high_level_language_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	goods_output_software_mult = 0.3
+}
+
+
+je_ut_software_era_7_operating_system_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	goods_output_software_mult = 0.4
+}
+
+je_ut_software_era_7_relational_database_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	goods_output_software_mult = 0.5
+}
+
+je_ut_software_era_7_object_oriented_programming_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	goods_output_software_mult = 0.6
+}
+
+je_ut_software_era_7_done_mod  = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	goods_output_software_mult = 1.0
 }
