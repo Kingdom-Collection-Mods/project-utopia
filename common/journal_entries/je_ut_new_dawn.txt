@@ -492,6 +492,7 @@ je_ut_new_dawn_democratic = {
 
 	
 	scripted_progress_bar = je_ut_new_dawn_democratic_points_bar
+	scripted_progress_bar = je_ut_new_dawn_pressure_points_bar
 
 	complete = {
 		custom_tooltip = {

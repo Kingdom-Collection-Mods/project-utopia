@@ -682,3 +682,18 @@ je_ut_new_dawn_communist_points_bar = {
 	min_value = 0
 	max_value = 100 # new_dawn_core_upper_bound
 }
+
+je_ut_new_dawn_pressure_points_bar = {
+	name = "je_ut_new_dawn_pressure_points_bar"
+	desc = "je_ut_new_dawn_pressure_points_bar_desc"
+
+	default_bad = yes
+
+	monthly_progress = {
+		
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 100
+}	

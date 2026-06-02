@@ -1,4 +1,4 @@
-####Democratic Buttons####
+﻿####Democratic Buttons####
 je_ut_new_dawn_democratic_spirit = {
 	name = "je_ut_new_dawn_democratic_spirit"
 	desc = "je_ut_new_dawn_democratic_spirit_desc"
