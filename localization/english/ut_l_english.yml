@@ -284,6 +284,11 @@
 
  je_ut_new_dawn_critical_lower_bound_fail_tt: "Has #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! [concept_ut_nd_progress_points]"
 
+ je_ut_new_dawn_common_pressure_progress_from_sol_yoy: "[concept_sol] yearly change"
+ je_ut_new_dawn_common_pressure_progress_from_legitimacy: "expected [concept_legitimacy]"
+ je_ut_new_dawn_common_pressure_progress_from_expected_sol: "expected [concept_sol]"
+ je_ut_new_dawn_common_pressure_progress_from_core_progress: "[concept_ut_nd_progress_points] gained"
+
  ut_new_dawn_communist_focus: "Communist Focus"
  ut_new_dawn_communist_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities] and [concept_ut_nd_milestones].#!"
  ut_new_dawn_communist_bar: "Communist"
@@ -402,6 +407,9 @@
  je_ut_new_dawn_points_bar_desc: "Progress Points: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
  concept_ut_nd_progress_points: "Progress Points"
  concept_ut_nd_progress_points_desc: "Progress Points represent the spread of an Ideology within your nation. They are earned through various actions. During the rise of a New Dawn, they measure how interest groups and the political landscape move toward adopting an ideology. Upon overtaking a country and beginning the [concept_ut_nd_path_to_utopia], Progress Points may be spent on various actions."
+
+ je_ut_new_dawn_pressure_points_bar: "Pressure"
+ je_ut_new_dawn_pressure_points_bar_desc: "Pressure: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
 
  concept_ut_new_dawn: "New Dawn"
  concept_ut_new_dawn_desc: "Technological and cultural progress ushers in a [concept_ut_new_dawn] of political change. The [concept_ut_nd_path_to_utopia] may be paved. Solidify your nation's core ideology. The ideology determines the direction your nation will take.\nChoose between [concept_ut_nd_fascist_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_democrat_core], and [concept_ut_nd_communist_core] [concept_ut_nd_path_to_utopia]."

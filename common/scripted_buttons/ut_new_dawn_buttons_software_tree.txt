@@ -56,6 +56,9 @@ je_ut_software_era_6_2_assembler_language = {
 	}
 
 	effect = {
+		#deprecated
+		remove_modifier = je_ut_software_era_6_assembler_language_mod
+
 		remove_modifier = je_ut_software_era_6_1_assembler_language_mod
 		add_modifier = je_ut_software_era_6_2_assembler_language_mod
 		custom_tooltip = {

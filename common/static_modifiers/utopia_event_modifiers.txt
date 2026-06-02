@@ -429,6 +429,11 @@ ut_je_propaganda_source_mod = {
 	country_new_dawn_progress_points_progress = -1
 }
 
+#deprecated
+je_ut_software_era_6_assembler_language_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+}
+
 je_ut_software_era_6_1_assembler_language_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	goods_output_software_mult = 0.1
