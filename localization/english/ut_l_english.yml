@@ -87,9 +87,11 @@
 
  je_early_civil_aviation: "Early Civil Aviation"
  je_early_civil_aviation_reason: "Early civil aviation began with daring pioneers, sputtering propeller planes, and improvised runways on meadows and fields. What was once military in nature became a link between cities, people, and markets. Every flight was an adventure, every landing a triumph. In the open cockpits sat not passengers, but dreamers - and from their dreams grew an entirely new era of transportation."
+ je_early_civil_aviation_reason_event_desc: "Travel becomes easier and people become more connected across distances - so technology spreads faster, and the world becomes smaller."
 
  je_modern_civil_aviation: "Modern Civil Aviation"
  je_modern_civil_aviation_reason: "Modern civil aviation has tamed the skies. Rickety biplanes became sleek jets, mail planes became flying cities. Airports are turning into hubs of a globally connected world. What once took days now happens in hours - fast, convenient, efficient. The sky is no longer a boundary, but a passageway: for business travelers, families, dreamers, and progress itself."
+ je_modern_civil_aviation_reason_event_desc: "Travel becomes faster and more efficient, connecting people across the globe - accelerating the spread of technologies and ideas."
 
  je_urbanist_ig: "Urbanist Movement"
  je_urbanist_ig_reason: "The urbanist movement is more than architecture - it is a vision of how we live together. In growing cities, not just buildings are created, but societies. Urban planners, social reformers, and visionaries dream of urban spaces that not only function, but inspire: with parks, light, transit, and public life. The city is not only built - it is shaped, as a stage for a better future."
@@ -304,7 +306,7 @@
  je_ut_new_dawn_autocrat_focus_desc: "Autocratic focus selected"
  je_ut_new_dawn_communist_focus: "Communist Focus"
  je_ut_new_dawn_communist_focus_desc: "Communist focus selected"
- ut_new_dawn_phase_2_progress_modifier: "x0.25 Multiplier during $new_dawn_phase_2_mod$"
+ ut_new_dawn_phase_2_progress_modifier: "x0.25 Multiplier during #bold $new_dawn_phase_2_mod$#!"
 
  ut_new_dawn_core_fascist_mod: "Fascist Ideology"
  je_ut_new_dawn_fascist_mod: "Fascist"
@@ -1949,6 +1951,7 @@
  je_ut_software_points_bar_progress: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_tooltip Buildings #!#!"
  je_ut_software_points_bar_progress_tooltip: "Sum of [concept_occupancy] times [concept_building_level].\nMaximal gain is 10 Software Expertise."
  je_ut_software_points_bar_progress_desc: "Changes the gain of Software Expertise."
+ je_ut_software_points_bar_progress_no_research_institute: "has no [GetBuildingType('building_ut_research_institute').GetName]"
 
  event_journal_ai: "Technological Progress"
  event_journal_ai.d: "Countries receive bonuses to innovation scaled increasing with their power level."

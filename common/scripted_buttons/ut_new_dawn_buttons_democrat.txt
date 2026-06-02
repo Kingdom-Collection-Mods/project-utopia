@@ -1,4 +1,4 @@
-﻿####Democratic Buttons####
+####Democratic Buttons####
 je_ut_new_dawn_democratic_spirit = {
 	name = "je_ut_new_dawn_democratic_spirit"
 	desc = "je_ut_new_dawn_democratic_spirit_desc"
@@ -164,7 +164,7 @@ je_ut_new_dawn_democratic_cultural_values = {
 	}
 
 	effect = {
-		custom_tooltip = ut_influence_new_dawn_major_power_unlock_tt
+		
 		every_interest_group = {
 			limit = {
 				OR = {

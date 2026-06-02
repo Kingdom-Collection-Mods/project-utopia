@@ -31,6 +31,15 @@ je_ut_software_points_bar_era_6 = {
 			desc = "je_ut_software_points_bar_progress"
 			value = root.var:je_ut_software_points_bar_progress
 		}
+		if = {
+			limit = {
+				NOT = { has_building = building_ut_research_institute }
+			}
+			multiply = {
+				desc = "je_ut_software_points_bar_progress_no_research_institute"
+				value = 0.5
+			}
+		}
 	}
 
 	start_value = 0
@@ -56,6 +65,15 @@ je_ut_software_points_bar_era_7 = {
 		add = {
 			desc = "je_ut_software_points_bar_progress"
 			value = root.var:je_ut_software_points_bar_progress
+		}
+		if = {
+			limit = {
+				NOT = { has_building = building_ut_research_institute }
+			}
+			add = {
+				desc = "je_ut_software_points_bar_progress_no_research_institute"
+				value = -100
+			}
 		}
 	}
 
