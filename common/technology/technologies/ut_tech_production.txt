@@ -199,7 +199,7 @@ heavy_machinery_era_analog = {
 
 heavy_machinery_era_analog_two = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/crawler_tractors.dds"
+	texture = "gfx/interface/icons/invention_icons/complex_assembly_lines.dds"
 	category = production
 
 	unlocking_technologies = {
