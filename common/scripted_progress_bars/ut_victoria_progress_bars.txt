@@ -690,10 +690,25 @@ je_ut_new_dawn_pressure_points_bar = {
 	default_bad = yes
 
 	monthly_progress = {
-		
+		add = {
+			desc = "je_ut_new_dawn_common_pressure_progress_from_sol_yoy"
+			value = root.var:je_ut_new_dawn_common_pressure_progress_from_sol_yoy
+		}
+		add = {
+			desc = "je_ut_new_dawn_common_pressure_progress_from_legitimacy"
+			value = root.var:je_ut_new_dawn_common_pressure_progress_from_legitimacy
+		}
+		add = {
+			desc = "je_ut_new_dawn_common_pressure_progress_from_expected_sol"
+			value = root.var:je_ut_new_dawn_common_pressure_progress_from_expected_sol
+		}
+		add = {
+			desc = "je_ut_new_dawn_common_pressure_progress_from_core_progress"
+			value = root.var:je_ut_new_dawn_common_pressure_progress_from_core_progress
+		}
 	}
 
-	start_value = 0
+	start_value = 25
 	min_value = 0
 	max_value = 100
 }	

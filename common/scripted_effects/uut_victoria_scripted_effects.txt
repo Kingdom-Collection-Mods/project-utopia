@@ -550,7 +550,6 @@ ut_clear_divided_new_dawn_variables = { #Clears all variables, to save memory/pe
 	remove_variable = ut_nd_fascist_progress_from_legitimacy 
 	remove_variable = ut_nd_fascist_progress_from_movements 
 	remove_variable = ut_nd_fascist_progress_from_focus 
-	remove_variable = ut_nd_fascist_progress_from_events
 
 	remove_variable = ig_weight 
 }
@@ -626,6 +625,137 @@ ut_add_new_dawn_core_progress = {
 			VALUE = $VALUE$
 		}
 	}
+}
+
+ut_new_dawn_common_pressure_progress_half_yearly = {
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy value = 0 }
+	if = {
+		limit = {
+			has_variable = je_ut_new_dawn_prev_average_sol
+		}
+		
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy
+			add = root.average_sol
+			subtract = var:je_ut_new_dawn_prev_average_sol
+			#sol compared to previous half year
+
+			divide = 0.15
+			#every 0.15 SoL per Half Year expected
+			#expects 20->50 sol from 1936 to 2036, so 0.3 per year
+
+			multiply = -1
+			#negative is good value
+		}
+	}
+		
+	set_variable = { name = je_ut_new_dawn_prev_average_sol value = root.average_sol }
+}
+
+ut_new_dawn_common_pressure_progress_monthly = {
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_legitimacy value = 0 }
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_expected_sol value = 0 }
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_core_progress value = 0 }
+
+	# Low legitimacy increases pressure.
+	change_variable = {
+		name = je_ut_new_dawn_common_pressure_progress_from_legitimacy
+		add = root.government_legitimacy
+		subtract = 75
+		divide = 25
+		multiply = -1
+	}
+
+	# Gap between expected and actual SoL increases pressure.
+	set_variable = {
+		name = je_ut_new_dawn_common_pressure_temp_expected_sol_gap
+		value = root.average_expected_sol
+	}
+	change_variable = {
+		name = je_ut_new_dawn_common_pressure_temp_expected_sol_gap
+		subtract = root.average_sol
+	}
+	if = {
+		limit = {
+			var:je_ut_new_dawn_common_pressure_temp_expected_sol_gap > 5
+		}
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_expected_sol
+			add = 2
+		}
+	}
+	else_if = {
+		limit = {
+			var:je_ut_new_dawn_common_pressure_temp_expected_sol_gap > 2
+		}
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_expected_sol
+			add = 1
+		}
+	}
+	else_if = {
+		limit = {
+			var:je_ut_new_dawn_common_pressure_temp_expected_sol_gap > 0
+		}
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_expected_sol
+			add = 0.5
+		}
+	}
+	else_if = {
+		limit = {
+			var:je_ut_new_dawn_common_pressure_temp_expected_sol_gap < -2
+		}
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_expected_sol
+			add = -0.5
+		}
+	}
+
+	# Slow or negative ideology progress increases pressure.
+	if = {
+		limit = {
+			has_variable = je_ut_new_dawn_core_progress_diff
+			var:je_ut_new_dawn_core_progress_diff < -5
+		}
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_core_progress
+			add = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_variable = je_ut_new_dawn_core_progress_diff
+			var:je_ut_new_dawn_core_progress_diff < 0
+		}
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_core_progress
+			add = 1
+		}
+	}
+	else_if = {
+		limit = {
+			has_variable = je_ut_new_dawn_core_progress_diff
+			var:je_ut_new_dawn_core_progress_diff > 5
+		}
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_core_progress
+			add = -1
+		}
+	}
+	else_if = {
+		limit = {
+			has_variable = je_ut_new_dawn_core_progress_diff
+			var:je_ut_new_dawn_core_progress_diff > 2
+		}
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_core_progress
+			add = -0.5
+		}
+	}
+
+	remove_variable = je_ut_new_dawn_common_pressure_temp_sol_delta
+	remove_variable = je_ut_new_dawn_common_pressure_temp_expected_sol_gap
 }
 
 ut_add_new_dawn_progress_autocratic = { 
