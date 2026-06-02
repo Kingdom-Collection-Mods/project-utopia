@@ -47,9 +47,45 @@ pm_heavy_machinery_buildings = {
 	required_input_goods = electricity
 }
 
+pm_heavy_machinery_mechanical_process = {
+
+	texture = "gfx/interface/icons/production_method_icons/ut_heavy_machinery_1.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 25
+		}
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 15
+			goods_input_steel_add = 15
+			goods_input_engines_add = 5
+			goods_input_electricity_add = 20
+			
+			# output goods
+			goods_output_heavy_machinery_add = 30
+		}
+
+		level_scaled = {
+			#employment 4000 (full modern industry)
+			building_employment_laborers_add = 2000 # Base -2000 logistics
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1000
+		}
+	}
+
+	required_input_goods = electricity	
+}
 
 pm_heavy_machinery_analog_process = {
 	texture = "gfx/interface/icons/production_method_icons/ut_heavy_machinery_1.dds"
+	
+	unlocking_technologies = {
+		heavy_machinery_era_analog
+	}
 	
 	state_modifiers = {
 		workforce_scaled = {
