@@ -1,5 +1,4 @@
-﻿#deprecated (for og internal savegame)
-je_ut_software_points_bar = {
+﻿je_ut_software_points_bar_era_6 = {
 	name = "je_ut_software_points_bar_era_6"
 	desc = "je_ut_software_points_bar_era_6_desc"
 
@@ -8,28 +7,8 @@ je_ut_software_points_bar = {
 
 	monthly_progress = {
 		add = {
-			desc = "je_ut_software_points_bar_progress"
-			value = root.var:je_ut_software_points_bar_progress
-		}
-	}
-
-	start_value = 0
-	min_value = 0
-	max_value = 100
-
-}
-
-je_ut_software_points_bar_era_6 = {
-	name = "je_ut_software_points_bar_era_6"
-	desc = "je_ut_software_points_bar_era_6_desc"
-
-	#for color
-	default_green = yes
-
-	monthly_progress = {
-		add = {
-			desc = "je_ut_software_points_bar_progress"
-			value = root.var:je_ut_software_points_bar_progress
+			desc = "je_ut_software_points_bar_progress_buildings"
+			value = root.var:je_ut_software_points_bar_progress_buildings
 		}
 		if = {
 			limit = {
@@ -58,14 +37,20 @@ je_ut_software_points_bar_era_7 = {
 
 	monthly_progress = {
 		
-		add = {
-			desc = "base_value"
-			value = -20
+		if = {
+			limit = {
+				is_player = yes #only for player for easier ai calculations
+			}
+			add = {
+				desc = "base_value"
+				value = -10
+			}
 		}
 		add = {
-			desc = "je_ut_software_points_bar_progress"
-			value = root.var:je_ut_software_points_bar_progress
+			desc = "je_ut_software_points_bar_progress_buildings"
+			value = root.var:je_ut_software_points_bar_progress_buildings
 		}
+
 		if = {
 			limit = {
 				NOT = { has_building = building_ut_research_institute }
@@ -97,8 +82,8 @@ je_ut_software_points_bar_era_8 = {
 			value = -100
 		}
 		add = {
-			desc = "je_ut_software_points_bar_progress"
-			value = root.var:je_ut_software_points_bar_progress
+			desc = "je_ut_software_points_bar_progress_buildings"
+			value = root.var:je_ut_software_points_bar_progress_buildings
 		}
 	}
 

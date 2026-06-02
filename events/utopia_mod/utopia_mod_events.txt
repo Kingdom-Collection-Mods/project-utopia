@@ -367,3 +367,56 @@ utopia_mod.6 = {
 		clear_saved_scope = nuclear_accident_state
 	}
 }
+
+#Open Source Era 7
+utopia_mod.7 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_raiding.dds"
+
+	title = ut_open_source_era_7_title
+	desc = ut_open_source_era_7_desc
+	flavor = ut_open_source_era_7_flavor
+	
+	option = {
+		trigger = {
+			NOT = { has_global_variable = je_ut_software_era_7_1_operating_system_foss_var }
+		}
+		name = utopia.continue
+		set_global_variable = je_ut_software_era_7_1_operating_system_foss_var
+	}
+	
+	option = {
+		trigger = {
+			NOT = { has_global_variable = je_ut_software_era_7_2_relational_database_foss_var }
+		}
+		name = utopia.continue
+		set_global_variable = je_ut_software_era_7_2_relational_database_foss_var
+	}
+	
+	option = {
+		trigger = {
+			NOT = { has_global_variable = je_ut_software_era_7_3_object_oriented_programming_foss_var }
+		}
+		name = utopia.continue
+		set_global_variable = je_ut_software_era_7_3_object_oriented_programming_foss_var
+	}
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+
+	after = {
+		remove_variable = je_ut_software_era_7_open_source_button_pressed
+	}
+}

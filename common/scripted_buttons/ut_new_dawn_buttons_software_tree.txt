@@ -1,12 +1,12 @@
-﻿je_ut_software_era_6_assembler_language = {
-	name = "je_ut_software_era_6_assembler_language"
-	desc = "je_ut_software_era_6_assembler_language_desc"
+﻿je_ut_software_era_6_1_assembler_language = {
+	name = "je_ut_software_era_6_1_assembler_language"
+	desc = "je_ut_software_era_6_1_assembler_language_desc"
 
 	visible = { always = yes }
 
 	possible = {
 		NOT = {
-			has_modifier = je_ut_software_era_6_assembler_language_mod
+			has_modifier = je_ut_software_era_6_1_assembler_language_mod
 		}
 		
 		custom_tooltip = {
@@ -18,7 +18,7 @@
 	}
 
 	effect = {
-		add_modifier = je_ut_software_era_6_assembler_language_mod
+		add_modifier = je_ut_software_era_6_1_assembler_language_mod
 		custom_tooltip = {
 			text = je_ut_software_era_6_required_points_spend_tt
 			je:je_ut_software_era_6 = {
@@ -31,17 +31,17 @@
 	}
 }
 
-je_ut_software_era_6_compiler = {
-	name = "je_ut_software_era_6_compiler"
-	desc = "je_ut_software_era_6_compiler_desc"
+je_ut_software_era_6_2_assembler_language = {
+	name = "je_ut_software_era_6_2_assembler_language"
+	desc = "je_ut_software_era_6_2_assembler_language_desc"
 
 	visible = { always = yes }
 
 	possible = {
 		has_technology_researched = electronics_motors_production
-		has_modifier = je_ut_software_era_6_assembler_language_mod
+		has_modifier = je_ut_software_era_6_1_assembler_language_mod
 		NOT = {
-			has_modifier = je_ut_software_era_6_compiler_mod
+			has_modifier = je_ut_software_era_6_2_assembler_language_mod
 		}
 		
 		OR = {
@@ -56,8 +56,8 @@ je_ut_software_era_6_compiler = {
 	}
 
 	effect = {
-		remove_modifier = je_ut_software_era_6_assembler_language_mod
-		add_modifier = je_ut_software_era_6_compiler_mod
+		remove_modifier = je_ut_software_era_6_1_assembler_language_mod
+		add_modifier = je_ut_software_era_6_2_assembler_language_mod
 		custom_tooltip = {
 			text = je_ut_software_era_6_required_points_spend_tt
 			je:je_ut_software_era_6 = {
@@ -78,9 +78,9 @@ je_ut_software_era_6_high_level_language = {
 
 	possible = {
 		has_technology_researched = heavy_machinery_era_analog_two
-		has_modifier = je_ut_software_era_6_compiler_mod
+		has_modifier = je_ut_software_era_6_2_assembler_language_mod
 		NOT = {
-			has_modifier = je_ut_software_era_6_high_level_language_mod
+			has_modifier = je_ut_software_era_6_3_high_level_language_mod
 		}
 		
 		OR = {
@@ -95,8 +95,8 @@ je_ut_software_era_6_high_level_language = {
 	}
 
 	effect = {
-		remove_modifier = je_ut_software_era_6_compiler_mod
-		add_modifier = je_ut_software_era_6_high_level_language_mod
+		remove_modifier = je_ut_software_era_6_2_assembler_language_mod
+		add_modifier = je_ut_software_era_6_3_high_level_language_mod
 		custom_tooltip = {
 			text = je_ut_software_era_6_required_points_spend_tt
 			je:je_ut_software_era_6 = {
@@ -109,32 +109,37 @@ je_ut_software_era_6_high_level_language = {
 	}
 }
 
-je_ut_software_era_7_operating_system = {
-	name = "je_ut_software_era_7_operating_system"
-	desc = "je_ut_software_era_7_operating_system_desc"
+je_ut_software_era_7_1_operating_system = {
+	name = "je_ut_software_era_7_1_operating_system"
+	desc = "je_ut_software_era_7_1_operating_system_desc"
 
 	visible = { always = yes }
 
 	possible = {
 		has_technology_researched = computers
 		NOT = {
-			has_modifier = je_ut_software_era_7_operating_system_mod
+			has_modifier = je_ut_software_era_7_1_operating_system_mod
 		}
-		
-		custom_tooltip = {
-			text = je_ut_software_era_7_required_points_tt
-			je:je_ut_software_era_7 = {
-				"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 1000
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_7_required_points_tt
+				je:je_ut_software_era_7 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 1000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_7_technology_open_sourced_tt
+				has_global_variable = je_ut_software_era_7_1_operating_system_foss_var
 			}
 		}
 	}
 
 	effect = {
-		add_modifier = je_ut_software_era_7_operating_system_mod
+		add_modifier = je_ut_software_era_7_1_operating_system_mod
 		custom_tooltip = {
 			text = je_ut_software_era_7_required_points_spend_tt
 			je:je_ut_software_era_7 = {
-				add_progress = { value = -1000 name = je_ut_software_points_bar_era_6 }
+				add_progress = { value = -1000 name = je_ut_software_points_bar_era_7 }
 			}
 		}
 	}
@@ -143,34 +148,40 @@ je_ut_software_era_7_operating_system = {
 	}
 }
 
-je_ut_software_era_7_relational_database = {
-	name = "je_ut_software_era_7_relational_database"
-	desc = "je_ut_software_era_7_relational_database_desc"
+je_ut_software_era_7_2_relational_database = {
+	name = "je_ut_software_era_7_2_relational_database"
+	desc = "je_ut_software_era_7_2_relational_database_desc"
 
 	visible = { always = yes }
 
 	possible = {
 		has_technology_researched = software
-		has_modifier = je_ut_software_era_7_operating_system_mod
+		has_modifier = je_ut_software_era_7_1_operating_system_mod
 		NOT = {
-			has_modifier = je_ut_software_era_7_relational_database_mod
+			has_modifier = je_ut_software_era_7_2_relational_database_mod
 		}
 		
-		custom_tooltip = {
-			text = je_ut_software_era_7_required_points_tt
-			je:je_ut_software_era_7 = {
-				"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 1000
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_7_required_points_tt
+				je:je_ut_software_era_7 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 1000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_7_technology_open_sourced_tt
+				has_global_variable = je_ut_software_era_7_2_relational_database_foss_var
 			}
 		}
 	}
 
 	effect = {
-		remove_modifier = je_ut_software_era_7_operating_system_mod
-		add_modifier = je_ut_software_era_7_relational_database_mod
+		remove_modifier = je_ut_software_era_7_1_operating_system_mod
+		add_modifier = je_ut_software_era_7_2_relational_database_mod
 		custom_tooltip = {
 			text = je_ut_software_era_7_required_points_spend_tt
 			je:je_ut_software_era_7 = {
-				add_progress = { value = -1000 name = je_ut_software_points_bar_era_6 }
+				add_progress = { value = -1000 name = je_ut_software_points_bar_era_7 }
 			}
 		}
 	}
@@ -179,34 +190,88 @@ je_ut_software_era_7_relational_database = {
 	}
 }
 
-je_ut_software_era_7_object_oriented_programming = {
-	name = "je_ut_software_era_7_object_oriented_programming"
-	desc = "je_ut_software_era_7_object_oriented_programming_desc"
+je_ut_software_era_7_3_object_oriented_programming = {
+	name = "je_ut_software_era_7_3_object_oriented_programming"
+	desc = "je_ut_software_era_7_3_object_oriented_programming_desc"
 
 	visible = { always = yes }
 
 	possible = {
-		has_modifier = je_ut_software_era_7_relational_database_mod
+		has_modifier = je_ut_software_era_7_2_relational_database_mod
 		NOT = {
-			has_modifier = je_ut_software_era_7_object_oriented_programming_mod
+			has_modifier = je_ut_software_era_7_3_object_oriented_programming_mod
 		}
 		
-		custom_tooltip = {
-			text = je_ut_software_era_7_required_points_tt
-			je:je_ut_software_era_7 = {
-				"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 1000
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_7_required_points_tt
+				je:je_ut_software_era_7 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 1000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_7_technology_open_sourced_tt
+				has_global_variable = je_ut_software_era_7_3_object_oriented_programming_foss_var
 			}
 		}
 	}
 
 	effect = {
-		remove_modifier = je_ut_software_era_7_relational_database_mod
-		add_modifier = je_ut_software_era_7_object_oriented_programming_mod
+		remove_modifier = je_ut_software_era_7_2_relational_database_mod
+		add_modifier = je_ut_software_era_7_3_object_oriented_programming_mod
 		custom_tooltip = {
 			text = je_ut_software_era_7_required_points_spend_tt
 			je:je_ut_software_era_7 = {
-				add_progress = { value = -1000 name = je_ut_software_points_bar_era_6 }
+				add_progress = { value = -1000 name = je_ut_software_points_bar_era_7 }
 			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_7_open_source = {
+	name = "je_ut_software_era_7_open_source"
+	desc = "je_ut_software_era_7_open_source_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		hidden_trigger = {
+			NOT = {
+				has_variable = je_ut_software_era_7_open_source_button_pressed
+			}
+		}
+		OR = {
+			AND = {
+				has_modifier = je_ut_software_era_7_2_relational_database_mod
+				custom_tooltip = {
+					text = je_ut_software_era_7_technology_not_open_sourced_tt
+					NOT = { has_global_variable = je_ut_software_era_7_1_operating_system_foss_var }
+				}
+			}
+			AND = {
+				has_modifier = je_ut_software_era_7_2_relational_database_mod
+				custom_tooltip = {
+					text = je_ut_software_era_7_technology_not_open_sourced_tt
+					NOT = { has_global_variable = je_ut_software_era_7_2_relational_database_foss_var }
+				}
+			}
+			AND = {
+				has_modifier = je_ut_software_era_7_2_relational_database_mod
+				custom_tooltip = {
+					text = je_ut_software_era_7_technology_not_open_sourced_tt
+					NOT = { has_global_variable = je_ut_software_era_7_3_object_oriented_programming_foss_var }
+				}
+			}
+		}
+	}
+
+	effect = {
+		set_variable = je_ut_software_era_7_open_source_button_pressed
+		trigger_event = {
+			id = utopia_mod.7
 		}
 	}
 	ai_chance = {

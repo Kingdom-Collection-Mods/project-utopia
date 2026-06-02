@@ -16,20 +16,20 @@
 
 	immediate = {
 		set_variable = {
-			name = je_ut_software_points_bar_progress
+			name = je_ut_software_points_bar_progress_buildings
 			value = 0
 		}
 	}
 	
-	scripted_button = je_ut_software_era_6_assembler_language
-	scripted_button = je_ut_software_era_6_compiler
+	scripted_button = je_ut_software_era_6_1_assembler_language
+	scripted_button = je_ut_software_era_6_2_assembler_language
 	scripted_button = je_ut_software_era_6_high_level_language
 
 	scripted_progress_bar = je_ut_software_points_bar_era_6
 
 	complete = {
 		has_technology_researched = computers
-		has_modifier = je_ut_software_era_6_high_level_language_mod
+		has_modifier = je_ut_software_era_6_3_high_level_language_mod
 	}
 
 	on_complete = {
@@ -63,7 +63,7 @@
 		effect = {
 			
 			set_variable = {
-				name = je_ut_software_points_bar_progress
+				name = je_ut_software_points_bar_progress_buildings
 				value = 0
 			}
 
@@ -79,25 +79,25 @@
 					}
 					ROOT = {
 						set_local_variable = {
-							name = je_ut_software_points_bar_progress_loc
+							name = je_ut_software_points_bar_progress_buildings_loc
 							value = prev.occupancy
 						}
 						change_local_variable = {
-							name = je_ut_software_points_bar_progress_loc
+							name = je_ut_software_points_bar_progress_buildings_loc
 							multiply = prev.level
 						}
 						change_variable = {
-							name = je_ut_software_points_bar_progress
-							add = local_var:je_ut_software_points_bar_progress_loc
+							name = je_ut_software_points_bar_progress_buildings
+							add = local_var:je_ut_software_points_bar_progress_buildings_loc
 						}
 					}
 					#cap at 10
 					if = {
 						limit = {
-							var:je_ut_software_points_bar_progress > 10
+							var:je_ut_software_points_bar_progress_buildings > 10
 						}
 						set_variable = {
-							name = je_ut_software_points_bar_progress
+							name = je_ut_software_points_bar_progress_buildings
 							value = 10
 						}
 					}
@@ -106,7 +106,7 @@
 			else = {
 				#for ai flat calculations
 				set_variable = {
-					name = je_ut_software_points_bar_progress
+					name = je_ut_software_points_bar_progress_buildings
 					value = 0.5
 				}
 				if = {
@@ -114,7 +114,7 @@
 						country_rank >= rank_value:major_power
 					}
 					change_variable = {
-						name = je_ut_software_points_bar_progress
+						name = je_ut_software_points_bar_progress_buildings
 						value = 1
 					}
 				}
@@ -123,7 +123,7 @@
 						has_building = building_software_company
 					}
 					change_variable = {
-						name = je_ut_software_points_bar_progress
+						name = je_ut_software_points_bar_progress_buildings
 						value = 2
 					}
 				}
@@ -144,25 +144,26 @@ je_ut_software_era_7 = {
 
 	immediate = {
 		set_variable = {
-			name = je_ut_software_points_bar_progress
+			name = je_ut_software_points_bar_progress_buildings
 			value = 0
 		}
 	}
 
-	scripted_button = je_ut_software_era_7_operating_system
-	scripted_button = je_ut_software_era_7_relational_database
-	scripted_button = je_ut_software_era_7_object_oriented_programming
+	scripted_button = je_ut_software_era_7_1_operating_system
+	scripted_button = je_ut_software_era_7_2_relational_database
+	scripted_button = je_ut_software_era_7_3_object_oriented_programming
+	scripted_button = je_ut_software_era_7_open_source
 
 	scripted_progress_bar = je_ut_software_points_bar_era_7
 
 	complete = {
-		has_modifier = je_ut_software_era_7_object_oriented_programming_mod
+		has_modifier = je_ut_software_era_7_3_object_oriented_programming_mod
 		has_technology_researched = software
 	}
 
 	on_complete = {
 		set_variable = je_ut_software_era_7_done
-		remove_modifier = je_ut_software_era_7_object_oriented_programming_mod
+		remove_modifier = je_ut_software_era_7_3_object_oriented_programming_mod
 		add_modifier = je_ut_software_era_7_done_mod
 
 		if = {
@@ -190,15 +191,17 @@ je_ut_software_era_7 = {
 		effect = {
 		
 			set_variable = {
-				name = je_ut_software_points_bar_progress
+				name = je_ut_software_points_bar_progress_buildings
 				value = 0
 			}
-
 			if = {
 				limit = {
 					is_player = yes
 				}
 				#for player
+				#base for era is -10
+				#min 10 buildings
+				#only level 5+ count up to 100
 				every_scope_building = {
 					limit = {
 						is_building_type = building_software_company
@@ -214,17 +217,17 @@ je_ut_software_era_7 = {
 							multiply = prev.level
 						}
 						change_variable = {
-							name = je_ut_software_points_bar_progress
+							name = je_ut_software_points_bar_progress_buildings
 							add = local_var:je_ut_software_points_bar_progress_loc
 						}
 					}
 					#cap at 100
 					if = {
 						limit = {
-							var:je_ut_software_points_bar_progress > 100
+							var:je_ut_software_points_bar_progress_buildings > 100
 						}
 						set_variable = {
-							name = je_ut_software_points_bar_progress
+							name = je_ut_software_points_bar_progress_buildings
 							value = 100
 						}
 					}
@@ -232,16 +235,13 @@ je_ut_software_era_7 = {
 			}
 			else = {
 				#for ai flat calculations
-				set_variable = {
-					name = je_ut_software_points_bar_progress
-					value = 10
-				}
+				#base for ai is 0
 				if = {
 					limit = {
 						country_rank >= rank_value:major_power
 					}
 					change_variable = {
-						name = je_ut_software_points_bar_progress
+						name = je_ut_software_points_bar_progress_buildings
 						value = 1
 					}
 				}
@@ -250,8 +250,8 @@ je_ut_software_era_7 = {
 						has_building = building_software_company
 					}
 					change_variable = {
-						name = je_ut_software_points_bar_progress
-						value = 10
+						name = je_ut_software_points_bar_progress_buildings
+						value = 2
 					}
 				}
 			}
