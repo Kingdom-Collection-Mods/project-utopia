@@ -2041,7 +2041,7 @@ ut_pm_power_grid_import = {
         }
 
         level_scaled = {
-            building_employment_machinists_add = 1500
+            building_employment_machinists_add = 2500
             building_employment_engineers_add  = 500
         }
     }
@@ -2071,7 +2071,7 @@ ut_pm_power_grid_operations_digital = {
         }
 
         level_scaled = {
-            building_employment_machinists_add = -500
+            building_employment_machinists_add = -1000
         }
     }
 }
@@ -2088,7 +2088,7 @@ ut_pm_power_grid_operations_connected = {
         }
 
         level_scaled = {
-            building_employment_machinists_add = -1000
+            building_employment_machinists_add = -2000
         }
     }
 }
