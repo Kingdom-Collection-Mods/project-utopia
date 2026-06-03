@@ -688,6 +688,7 @@ je_ut_new_dawn_pressure_points_bar = {
 	desc = "je_ut_new_dawn_pressure_points_bar_desc"
 
 	default_bad = yes
+	is_inverted = yes
 
 	monthly_progress = {
 		add = {

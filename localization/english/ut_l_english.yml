@@ -1564,6 +1564,11 @@
  pmg_ut_power_grid: "Base"
  ut_pm_power_grid_import: "Convert Electricity"
 
+ pmg_ut_power_grid_operations: "Operations"
+ ut_pm_power_grid_operations_analog: "Analog Operations"
+ ut_pm_power_grid_operations_digital: "Digital Operations"
+ ut_pm_power_grid_operations_connected: "Connected Operations"
+
  pmg_base_building_ut_power_grid_base: "Base"
  pm_base_building_ut_power_grid_base: "Power Grid Base"
 
@@ -1576,7 +1581,7 @@
  pm_heavy_machinery_mechanical_process: "Mechanical Machines"
  pm_heavy_machinery_analog_process: "Hydraulic Machines"
  pm_heavy_machinery_electronics_process: "Electric Machines"
- pm_heavy_machinery_digital_process: "Digitized Machines"
+ pm_heavy_machinery_digital_process: "Digital Machines"
 
  pm_heavy_machinery_coal_fired_plant: "Heavy Coal Power Plant"
  pm_heavy_machinery_oil_fired_plant: "Heavy Oil Power Plant"

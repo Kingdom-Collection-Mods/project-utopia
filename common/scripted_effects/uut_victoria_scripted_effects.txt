@@ -652,6 +652,7 @@ ut_new_dawn_common_pressure_progress_monthly = {
 	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_expected_sol value = 0 }
 	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_expected_sol_gap value = 0 }
 	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_core_progress value = 0 }
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_ruler_ideology value = 0 }
 
 	# Low legitimacy increases pressure.
 	change_variable = {
@@ -675,7 +676,7 @@ ut_new_dawn_common_pressure_progress_monthly = {
 
 	if = {
 		limit = {
-			year < 1936
+			year > 1936
 		}
 		set_variable = {
 			name = je_ut_new_dawn_common_pressure_expected_sol
@@ -712,10 +713,6 @@ ut_new_dawn_common_pressure_progress_monthly = {
 		name = je_ut_new_dawn_common_pressure_progress_from_expected_sol
 		multiply = -0.5
 	}
-	change_variable = {
-		name = je_ut_new_dawn_common_pressure_progress_from_expected_sol
-		min = -1
-	}
 	
 	# Positive progress on the core ideology's progress bar reduces pressure.
 	if = {
@@ -730,6 +727,38 @@ ut_new_dawn_common_pressure_progress_monthly = {
 		change_variable = {
 			name = je_ut_new_dawn_common_pressure_progress_from_core_progress
 			multiply = -1
+		}
+	}
+
+	if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_democratic_mod
+			legitimacy > 50
+			ruler = {
+				ut_ideology_new_dawn_democrat_trigger = yes
+			}
+		}
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_ruler_ideology
+			add = -0.25
+		}
+	}
+	
+	if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_democratic_mod
+			legitimacy > 50
+			ruler = {
+				OR = {
+					ut_ideology_new_dawn_fascist_trigger = yes
+					ut_ideology_new_dawn_autocrat_trigger = yes
+					ut_ideology_new_dawn_communist_trigger = yes
+				}
+			}
+		}
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_ruler_ideology
+			add = 0.5
 		}
 	}
 }
