@@ -87,9 +87,11 @@
 
  je_early_civil_aviation: "Frühe zivile Luftfahrt"
  je_early_civil_aviation_reason: "Die frühe zivile Luftfahrt beginnt mit wagemutigen Pionieren, knatternden Propellermaschinen und improvisierten Landebahnen auf Wiesen und Feldern. Was einst militärisch geprägt war, wird nun zur Verbindung zwischen Städten, Menschen und Märkten. Jeder Flug ein Abenteuer, jede Landung ein Triumph. In den offenen Cockpits saßen keine Passagiere, sondern Träumer - und aus ihren Träumen wuchs ein ganz neues Verkehrszeitalter."
+ je_early_civil_aviation_reason_event_desc: "Reisen werden einfacher und Menschen über Entfernungen hinweg stärker verbunden - so verbreitet sich Technologie schneller, und die Welt wird kleiner."
 
  je_modern_civil_aviation: "Moderne zivile Luftfahrt"
  je_modern_civil_aviation_reason: "Die moderne zivile Luftfahrt hat den Himmel gezähmt. Aus wackeligen Doppeldeckern wurden strömungsglänzende Jets, aus Postflugzeugen fliegende Städte. Flughäfen werden zu Knotenpunkten einer global vernetzten Welt. Was früher Tage dauerte, geschieht nun in Stunden - schnell, bequem, effizient. Der Himmel ist nicht mehr Grenze, sondern Durchgang: für Geschäftsreisende, Familien, Träumer und den Fortschritt selbst."
+ je_modern_civil_aviation_reason_event_desc: "Reisen werden schneller und effizienter, verbinden Menschen weltweit und beschleunigen die Verbreitung von Technologien und Ideen."
 
  je_urbanist_ig: "Urbanebewegung"
  je_urbanist_ig_reason: "Die Urbanebewegung ist mehr als Architektur - sie ist eine Vision des Zusammenlebens. In den wachsenden Städten entstehen nicht nur Häuser, sondern Gesellschaften. Stadtplaner, Sozialreformer und Visionärinnen träumen von urbanen Räumen, die nicht nur funktionieren, sondern inspirieren: mit Parks, Licht, Nahverkehr und öffentlichem Leben. Die Stadt wird nicht nur gebaut, sie wird gestaltet - als Bühne für eine bessere Zukunft."
@@ -175,6 +177,8 @@
  new_dawn_mod: "Neuer Aufbruch"
  new_dawn_phase_2_mod: "Neuer Aufbruch: Ideologie festigen"
 
+ new_dawn_event_radicals_mod: "New Dawn: Radicals"
+
  event_new_dawn.1.t: "Neuer Aufbruch"
  event_new_dawn.1.d: "Eine neue politische Welle hat unsere Nation erfasst, und wir müssen entscheiden, wie wir darauf reagieren. Werden wir den Wandel begrüßen oder ihm widerstehen? Die Zukunft unseres Landes steht auf dem Spiel."
  event_new_dawn.1.f: "Der Neue Aufbruch ist da, und mit ihm beginnt eine neue Ära des politischen Wandels. Wir müssen diese Gewässer sorgfältig navigieren und die Forderungen des Volkes mit den Bedürfnissen des Staates in Einklang bringen. Die Entscheidungen, die wir jetzt treffen, werden die Zukunft unserer Nation für kommende Generationen prägen."
@@ -211,6 +215,16 @@
  event_new_dawn.11.t: "Streitkräfte fordern Führungswechsel"
  event_new_dawn.11.f: "Hochrangige Militäroffiziere haben unter Berufung auf die Instabilität des Landes den Rücktritt der aktuellen Führung gefordert. Sie schlagen eine neue Galionsfigur vor, die besser mit ihren Interessen übereinstimmt."
  event_new_dawn.11.d: "Wenn die Generäle sprechen, hören selbst Präsidenten zu."
+ 
+ event_new_dawn.12.t: "Bourgeoisie Demands Leadership Change"
+ event_new_dawn.12.d: "When the bourgeoisie speaks, they form a powerful coalition."
+ event_new_dawn.12.f: "Prominent industrialists and business leaders, concerned about the direction of the country, have called for a change in leadership. They advocate for a new figurehead who will prioritize economic growth and stability."
+
+ event_new_dawn.13.t: "Radicals Uprising"
+ event_new_dawn.13.d: "Radical factions are mobilizing, threatening to overthrow the current order. They demand a change in ideology."
+ event_new_dawn.13.f: "Radical groups, fueled by frustration and a desire for change, have launched an uprising. They seek to dismantle the existing power structure and establish a new ideological order. The situation is volatile."
+
+ event_new_dawn.13.a: "Radical groups are forming"
 
  event_new_dawn.democrat_leader: "Einen neuen demokratischen Anführer ernennen"
  event_new_dawn.autocrat_leader: "Eine autokratische Galionsfigur stärken"
@@ -268,6 +282,11 @@
  country_new_dawn_progress_points_progress_desc: "Ändert den Zuwachs von [Concept('concept_ut_nd_progress_points', 'Fortschrittspunkten')] für die Kernideologie."
 
  je_ut_new_dawn_critical_lower_bound_fail_tt: "Hat #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! [concept_ut_nd_progress_points]"
+
+ je_ut_new_dawn_common_pressure_progress_from_sol_yoy: "[concept_sol] yearly change"
+ je_ut_new_dawn_common_pressure_progress_from_legitimacy: "expected [concept_legitimacy]"
+ je_ut_new_dawn_common_pressure_progress_from_expected_sol: "expected [concept_sol]"
+ je_ut_new_dawn_common_pressure_progress_from_core_progress: "[concept_ut_nd_progress_points] gained"
 
  ut_new_dawn_communist_focus: "Kommunistischer Fokus"
  ut_new_dawn_communist_focus_desc: "#italic Vorschau: Enthält eine Basisimplementierung von [concept_ut_nd_abilities] und [concept_ut_nd_milestones].#!"
@@ -356,7 +375,6 @@
  concept_ut_nd_democrat_characters: "Demokratische Charaktere"
  concept_ut_nd_democrat_characters_desc: "Demokratische Charakter Ideologien sind: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName], [GetIdeology('ideology_utopian').GetName], and [GetIdeology('ut_ideology_cosmopolitan_leader').GetName].\nWenn Demokratischer [concept_ut_nd_focus] aktiv ist, umfasst auch: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_pacifist').GetName], [GetIdeology('ideology_feminist').GetName], [GetIdeology('ut_ideology_environmentalist_leader').GetName], [GetIdeology('ideology_market_liberal').GetName] und [GetIdeology('ideology_modernizer_leader').GetName]."
  ut_new_dawn_democrat_status: "Demokratische Ideen prägen den Diskurs"
- ut_new_dawn_democrat_status_je: "Demokratische Ideen festigen sich"
  ut_new_dawn_phase_2_status_je: "Ideologie etabliert"
  ut_nd_decaying_progress: "$new_dawn_phase_2_mod$"
 
@@ -388,6 +406,9 @@
  je_ut_new_dawn_points_bar_desc: "Fortschrittspunkte: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
  concept_ut_nd_progress_points: "Fortschrittspunkte"
  concept_ut_nd_progress_points_desc: "Fortschrittspunkte repräsentieren die Verbreitung einer Ideologie innerhalb deiner Nation. Sie werden durch verschiedene Aktionen verdient. Während des Aufstiegs eines Neuer Aufbruch messen sie, wie Interessengruppen und das politische Umfeld sich in Richtung der Annahme einer Ideologie bewegen. Nach der Übernahme eines Landes und dem Beginn des [concept_ut_nd_path_to_utopia] können Fortschrittspunkte für verschiedene Aktionen ausgegeben werden."
+
+ je_ut_new_dawn_pressure_points_bar: "Pressure"
+ je_ut_new_dawn_pressure_points_bar_desc: "Pressure: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
 
  concept_ut_new_dawn: "Neuer Aufbruch"
  concept_ut_new_dawn_desc: "Technologischer und kultureller Fortschritt läutet einen [concept_ut_new_dawn] des politischen Wandels ein. Der [concept_ut_nd_path_to_utopia] kann geebnet werden. Festige die Kernideologie deiner Nation. Die Ideologie bestimmt, in welche Richtung sich deine Nation entwickelt.\nWähle zwischen [concept_ut_nd_fascist_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_democrat_core] und [concept_ut_nd_communist_core] [concept_ut_nd_path_to_utopia]."
@@ -1339,6 +1360,7 @@
  combat_unit_type_task_force_infantry: "Einsatzkräfte"
  combat_unit_type_motorized_artillery: "Motorisierte Artillerie"
  combat_unit_type_rocket_artillery: "Raketenartillerie"
+ combat_unit_type_advanced_marines: "Fortgeschrittene Marines"
  combat_unit_type_support_systems_desc: "Logistik- und Unterstützungseinheiten, die die Effektivität der Fronttruppen verbessern."
  combat_unit_type_advanced_support_systems_desc: "Hochspezialisierte Unterstützungseinheiten, die mit modernster Technologie ausgestattet sind, um überlegene Hilfe auf dem Schlachtfeld zu bieten."
  combat_unit_type_missile_corvettes_desc: "Schnelle und wendige Schiffe mit Raketensystemen für rasche Seegefechte."
@@ -1350,6 +1372,7 @@
  combat_unit_type_task_force_infantry_desc: "Hochtrainierte, flexible Einheiten, die eigenständig oder gemeinsam mit anderen Kräften spezialisierte Einsätze durchführen können."
  combat_unit_type_motorized_artillery_desc: "Auf Fahrzeugen montierte Artillerie zur schnellen Verlegung und Reaktion auf dem Schlachtfeld."
  combat_unit_type_rocket_artillery_desc: "Artillerieeinheiten, die Raketensalven abfeuern, um große Flächen mit Explosivkraft zu überdecken."
+ combat_unit_type_advanced_marines_desc: "Elite-Marines, die in spezialisierten Operationen eingesetzt werden und über fortschrittliche Ausrüstung und Ausbildung verfügen."
 
 
 #Tech Society
@@ -1540,6 +1563,11 @@
  pmg_ut_power_grid: "Base"
  ut_pm_power_grid_import: "Spannungsumwandlung"
 
+ pmg_ut_power_grid_operations: "Operationen"
+ ut_pm_power_grid_operations_analog: "Analoge Operationen"
+ ut_pm_power_grid_operations_digital: "Digitale Operationen"
+ ut_pm_power_grid_operations_connected: "Vernetzte Operationen"
+
  pmg_base_building_ut_power_grid_base: "Base"
  pm_base_building_ut_power_grid_base: "Stromnetz Basis"
 
@@ -1549,7 +1577,8 @@
  pm_heavy_machinery_buildings: "Kran- und Baggerbau"
 
  pmg_heavy_machinery_making_process: "Grundwert"
- pm_heavy_machinery_analog_process: "Mechanische Maschinen"
+ pm_heavy_machinery_mechanical_process: "Mechanische Maschinen"
+ pm_heavy_machinery_analog_process: "Hydraulische Maschinen"
  pm_heavy_machinery_electronics_process: "Elektrische Maschinen"
  pm_heavy_machinery_digital_process: "Digitalisierte Maschinen"
 
@@ -1686,7 +1715,8 @@
  ut_high_tech_company_research: "Forschungsinstitut"
  pm_ut_high_speed_electric_trains: "Intercity"
  pm_ut_high_speed_electric_trains_principle_transport_3: "Intercity-Express"
- pm_computer_bureaucrats: "Digitale Organisation"
+ pm_computer_bureaucrats: "Digitale Verwaltung"
+ pm_internet_bureaucrats: "Vernetzte Verwaltung"
 
  pm_ut_research_department: "Institut für Soziale Wissenschaften"
 
@@ -1783,8 +1813,12 @@
  goods_output_rare_earths_add_desc: "Die Menge an @rare_earths! Seltene Erden, die das Gebäude produziert"
  goods_output_computers_add: "@computers! $computers$ Ausstoß"
  goods_output_computers_add_desc: "Die Menge an @computers! Computern, die das Gebäude produziert"
+ goods_output_computers_mult: "@computers! $computers$ Ausstoß"
+ goods_output_computers_mult_desc: "Ein Bonus oder Malus für die Produktion von @computers! $computers$."
  goods_output_software_add: "@software! $software$ Ausstoß"
  goods_output_software_add_desc: "Die Menge an @software! Software, die das Gebäude produziert"
+ goods_output_software_mult: "@software! $software$ Ausstoß"
+ goods_output_software_mult_desc: "Ein Bonus oder Malus für die Produktion von @software! $software$."
  goods_output_internet_add: "@internet! $internet$ Ausstoß"
  goods_output_internet_add_desc: "Die Menge an @internet! Internet, die das Gebäude produziert"
  goods_output_trucks_add: "@trucks! $trucks$ Ausstoß"
@@ -1924,19 +1958,11 @@
  ut_software_era_7_3_object_oriented_language: "Objektorientierte Programmierung"
  je_ut_software_era_7_3_object_oriented_programming_desc: "Objektorientierte Methoden beschleunigen komplexe Softwareentwicklung und Wiederverwendung."
  je_ut_software_era_7_3_object_oriented_programming_mod: "$ut_software_era_7_3_object_oriented_language$"
- je_ut_software_era_7_open_source: "Open Source"
- je_ut_software_era_7_open_source_desc: "Offene Zusammenarbeit verbreitet moderne Software-Expertise schneller im ganzen Land."
 
  je_ut_software_era_7_required_points_tt: "Erfordert mindestens #v 1000#! $je_ut_software_points_bar_era_7$"
  je_ut_software_era_7_required_points_spend_tt: "Verbraucht #v 1000#! $je_ut_software_points_bar_era_7$"
  je_ut_software_era_7_technology_open_sourced_tt: "Expertise wurde als Open Source freigegeben"
  je_ut_software_era_7_technology_not_open_sourced_tt: "Expertise wurde #r nicht#! als Open Source freigegeben"
-
- je_ut_software_points_bar_progress_buildings_era_6: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_6_tooltip Gebaude #!#!"
- je_ut_software_points_bar_progress_buildings_era_6_tooltip: "Summe aus [concept_occupancy] mal [concept_building_level].\nMaximaler Gewinn: 10 Software-Expertise."
- je_ut_software_points_bar_progress_buildings_era_7: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_7_tooltip Gebaude #!#!"
- je_ut_software_points_bar_progress_buildings_era_7_tooltip: "Summe aus [concept_occupancy] mal [concept_building_level].\nNur Gebaude mit mindestens [concept_building_level] #b 5#! werden gezaehlt.\nMaximaler Gewinn: 100 Software-Expertise."
- je_ut_software_points_bar_progress_no_research_institute: "hat kein [GetBuildingType('building_ut_research_institute').GetName]"
 
  je_ut_software_era_8: "Software-Expertise: Ära 8"
  je_ut_software_era_8_reason: "Skaliere Software-Ökosysteme durch moderne Plattform-, Cloud- und Eigentumsparadigmen."
@@ -1969,7 +1995,17 @@
  je_ut_software_era_8_technology_open_sourced_tt: "Expertise wurde als Open Source freigegeben"
  je_ut_software_era_8_technology_not_open_sourced_tt: "Expertise wurde #r nicht#! als Open Source freigegeben"
 
+ je_ut_software_points_bar_progress_buildings_era_6: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_6_tooltip Buildings #!#!"
+ je_ut_software_points_bar_progress_buildings_era_6_tooltip: "Sum of [concept_occupancy] times [concept_building_level].\nMaximum gain is 10 Software Expertise."
+ je_ut_software_points_bar_progress_buildings_era_7: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_7_tooltip Buildings #!#!"
+ je_ut_software_points_bar_progress_buildings_era_7_tooltip: "Sum of [concept_occupancy] times [concept_building_level].\nOnly buildings with at least [concept_building_level] #b 5#! are counted.\nMaximum gain is 100 Software Expertise."
+ je_ut_software_points_bar_progress_buildings_era_8: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_8_tooltip Buildings #!#!"
+ je_ut_software_points_bar_progress_buildings_era_8_tooltip: "Sum of [concept_occupancy] times [concept_building_level].\nOnly buildings with at least [concept_building_level] #b 20#! are counted.\nMaximum gain is 1000 Software Expertise."
+ je_ut_software_points_bar_progress_no_research_institute: "has no [GetBuildingType('building_ut_research_institute').GetName]"
+
  event_journal_ai: "Fortschrittsverbreitung"
+ event_journal_ai.d: "Countries receive bonuses to innovation scaled increasing with their power level."
+ event_journal_ai.f: "Technological progress spreads across the world through trade, communication, education, migration, and international cooperation. When one country develops a new invention, that knowledge can influence other nations and support their own development. While powerful countries often have greater resources to invest in research and innovation, smaller nations can also contribute by adapting, refining, and sharing technologies in unique ways. As ideas move across borders, countries become increasingly connected through innovation, creating a global exchange of knowledge."
  utopia_event_journal_ai_buff: "Welle des technologischen Fortschritts"
  utopia_event_journal_ai_buff_tooltip: "KI Länder erhalten einen signifikanten Bonus auf Innovationsverteilung."
 
@@ -2015,6 +2051,15 @@
 
  ut_air_support_mobilization_option_group: "Luftunterstützung"
  ut_doctrine_mobilization_option_group: "Doktrinen"
+
+ #game rules
+ rule_ut_new_dawn_start_era: "$concept_ut_new_dawn$ Start Era"
+ setting_ut_new_dawn_start_era_6: "Era VI"
+ setting_ut_new_dawn_start_era_6_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] VI (1936-1961)"
+ setting_ut_new_dawn_start_era_5: "Era V"
+ setting_ut_new_dawn_start_era_5_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] III (1862-1886)\n@warning! Project Utopia is tested with Era V start era"
+ setting_ut_new_dawn_start_era_4: "Era IV"
+ setting_ut_new_dawn_start_era_4_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] IV (1887-1911)\n@warning! Project Utopia is tested with Era VI start era."
 
 # Demands
  demand_ban_slavery: "Forderung: Verbots der Sklaverei"

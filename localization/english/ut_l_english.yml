@@ -179,7 +179,6 @@
 
  new_dawn_event_radicals_mod: "New Dawn: Radicals"
 
-
  event_new_dawn.1.t: "New Dawn"
  event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
  event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. The choices we make now will shape the future of our nation for generations to come. We must choose our [concept_ut_nd_path_to_utopia] and ensure we have the according laws in place to secure our vision for the future. Other nations will choose their own paths, and the world will be reshaped by the ideologies that rise to power. The time for action is now."
@@ -1814,11 +1813,11 @@
  goods_output_rare_earths_add_desc: "The amount of @rare_earths! Rare Earths produced by buildings"
  goods_output_computers_add: "@computers! Computers output"
  goods_output_computers_add_desc: "The amount of @computers! Computers produced by buildings"
- goods_output_computers_mult: "@computers! $computers$ Computers Output"
+ goods_output_computers_mult: "@computers! $computers$ Output"
  goods_output_computers_mult_desc: "A bonus or penalty for the production of @computers! $computers$."
  goods_output_software_add: "@software! Software output"
  goods_output_software_add_desc: "The amount of @software! Software produced by buildings"
- goods_output_software_mult: "@software! $software$ Software Output"
+ goods_output_software_mult: "@software! $software$ Output"
  goods_output_software_mult_desc: "A bonus or penalty for the production of @software! $software$."
  goods_output_internet_add: "@internet! Internet output"
  goods_output_internet_add_desc: "The amount of @internet! Internet produced by buildings"
@@ -1959,6 +1958,7 @@
  ut_software_era_7_3_object_oriented_language: "Object-Oriented Programming"
  je_ut_software_era_7_3_object_oriented_programming_desc: "Object-oriented methods accelerate complex software development and reuse."
  je_ut_software_era_7_3_object_oriented_programming_mod: "$ut_software_era_7_3_object_oriented_language$"
+
  je_ut_software_era_7_required_points_tt: "Requires at least #v 1000#! $je_ut_software_points_bar_era_7$"
  je_ut_software_era_7_required_points_spend_tt: "Consumes #v 1000#! $je_ut_software_points_bar_era_7$"
  je_ut_software_era_7_technology_open_sourced_tt: "Expertise has been open-sourced"
