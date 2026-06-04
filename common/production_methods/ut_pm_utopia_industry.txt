@@ -2128,6 +2128,7 @@ pm_ut_high_voltage_electricity = {
 
 	building_modifiers = {
 		workforce_scaled = {
+			goods_input_heavy_machinery_add = 1
 			goods_output_electricity_add = -100
 			goods_output_high_voltage_electricity_add = 140
 		}
@@ -2146,10 +2147,16 @@ pm_ut_ultra_high_voltage_electricity = {
 		pm_heavy_machinery_oil_fired_plant
 	}
 
+	disallowing_laws = {
+		law_environment_protection_institute_two
+		law_environment_protection_institute_three
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
+			goods_input_heavy_machinery_add = 1
 			goods_output_electricity_add = -100
-			goods_output_high_voltage_electricity_add = 180
+			goods_output_high_voltage_electricity_add = 160
 		}
 	}
 }
