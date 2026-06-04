@@ -9,11 +9,14 @@
 			has_modifier = je_ut_software_era_6_1_assembler_language_mod
 		}
 		
-		custom_tooltip = {
-			text = je_ut_software_era_6_required_points_tt
-			je:je_ut_software_era_6 = { 
-				"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 100
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_6_required_points_tt
+				je:je_ut_software_era_6 = { 
+					"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 100
+				}
 			}
+			always = yes #todo depreceated only for internal run
 		}
 	}
 
@@ -73,9 +76,9 @@ je_ut_software_era_6_2_assembler_language = {
 	}
 }
 
-je_ut_software_era_6_high_level_language = {
-	name = "je_ut_software_era_6_high_level_language"
-	desc = "je_ut_software_era_6_high_level_language_desc"
+je_ut_software_era_6_3_high_level_language = {
+	name = "je_ut_software_era_6_3_high_level_language"
+	desc = "je_ut_software_era_6_3_high_level_language_desc"
 
 	visible = { always = yes }
 
@@ -193,8 +196,8 @@ je_ut_software_era_7_2_relational_database = {
 	}
 }
 
-je_ut_software_era_7_3_object_oriented_programming = {
-	name = "je_ut_software_era_7_3_object_oriented_programming"
+ut_software_era_7_3_object_oriented_language = {
+	name = "ut_software_era_7_3_object_oriented_language"
 	desc = "je_ut_software_era_7_3_object_oriented_programming_desc"
 
 	visible = { always = yes }
@@ -281,3 +284,188 @@ je_ut_software_era_7_open_source = {
 		value = 100
 	}
 }
+
+je_ut_software_era_8_1_version_control = {
+	name = "je_ut_software_era_8_1_version_control"
+	desc = "je_ut_software_era_8_1_version_control_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_modifier = je_ut_software_era_7_3_object_oriented_programming_mod
+		NOT = {
+			has_modifier = je_ut_software_era_8_1_version_control_mod
+		}
+	}
+
+	effect = {
+		add_modifier = je_ut_software_era_8_1_version_control_mod
+		custom_tooltip = {
+			text = je_ut_software_era_8_required_points_spend_tt
+			je:je_ut_software_era_8 = {
+				add_progress = { value = -10000 name = je_ut_software_points_bar_era_8 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_8_2_no_sql = {
+	name = "je_ut_software_era_8_2_no_sql"
+	desc = "je_ut_software_era_8_2_no_sql_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_modifier = je_ut_software_era_8_1_version_control_mod
+		NOT = {
+			has_modifier = je_ut_software_era_8_2_no_sql_mod
+		}
+	}
+
+	effect = {
+		remove_modifier = je_ut_software_era_8_1_version_control_mod
+		add_modifier = je_ut_software_era_8_2_no_sql_mod
+		custom_tooltip = {
+			text = je_ut_software_era_8_required_points_spend_tt
+			je:je_ut_software_era_8 = {
+				add_progress = { value = -10000 name = je_ut_software_points_bar_era_8 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_8_3_web_standards = {
+	name = "je_ut_software_era_8_3_web_standards"
+	desc = "je_ut_software_era_8_3_web_standards_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_modifier = je_ut_software_era_8_2_no_sql_mod
+		NOT = {
+			has_modifier = je_ut_software_era_8_3_web_standards_mod
+		}
+	}
+
+	effect = {
+		remove_modifier = je_ut_software_era_8_2_no_sql_mod
+		add_modifier = je_ut_software_era_8_3_web_standards_mod
+		custom_tooltip = {
+			text = je_ut_software_era_8_required_points_spend_tt
+			je:je_ut_software_era_8 = {
+				add_progress = { value = -10000 name = je_ut_software_points_bar_era_8 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_8_4_web_software = {
+	name = "je_ut_software_era_8_4_web_software"
+	desc = "je_ut_software_era_8_4_web_software_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_modifier = je_ut_software_era_8_3_web_standards_mod
+		NOT = {
+			has_modifier = je_ut_software_era_8_4_web_software_mod
+		}
+	}
+
+	effect = {
+		remove_modifier = je_ut_software_era_8_3_web_standards_mod
+		add_modifier = je_ut_software_era_8_4_web_software_mod
+		custom_tooltip = {
+			text = je_ut_software_era_8_required_points_spend_tt
+			je:je_ut_software_era_8 = {
+				add_progress = { value = -10000 name = je_ut_software_points_bar_era_8 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_8_5_cloud_computing = {
+	name = "je_ut_software_era_8_5_cloud_computing"
+	desc = "je_ut_software_era_8_5_cloud_computing_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_modifier = je_ut_software_era_8_4_web_software_mod
+		NOT = {
+			has_modifier = je_ut_software_era_8_5_cloud_computing_mod
+		}
+	}
+
+	effect = {
+		remove_modifier = je_ut_software_era_8_4_web_software_mod
+		add_modifier = je_ut_software_era_8_5_cloud_computing_mod
+		custom_tooltip = {
+			text = je_ut_software_era_8_required_points_spend_tt
+			je:je_ut_software_era_8 = {
+				add_progress = { value = -10000 name = je_ut_software_points_bar_era_8 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_8_6_ownership_model_language = {
+	name = "je_ut_software_era_8_6_ownership_model_language"
+	desc = "je_ut_software_era_8_6_ownership_model_language_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_modifier = je_ut_software_era_8_5_cloud_computing_mod
+		NOT = {
+			has_modifier = je_ut_software_era_8_6_ownership_model_language_mod
+		}
+	}
+
+	effect = {
+		remove_modifier = je_ut_software_era_8_5_cloud_computing_mod
+		add_modifier = je_ut_software_era_8_6_ownership_model_language_mod
+		custom_tooltip = {
+			text = je_ut_software_era_8_required_points_spend_tt
+			je:je_ut_software_era_8 = {
+				add_progress = { value = -10000 name = je_ut_software_points_bar_era_8 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_8_open_source = {
+	name = "je_ut_software_era_8_open_source"
+	desc = "je_ut_software_era_8_open_source_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_modifier = je_ut_software_era_8_6_ownership_model_language_mod
+	}
+
+	effect = {
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+

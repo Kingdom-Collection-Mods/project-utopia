@@ -632,6 +632,7 @@ ut_new_dawn_common_pressure_progress_yearly = {
 	if = {
 		limit = {
 			has_variable = je_ut_new_dawn_prev_average_sol
+			je_ut_new_dawn_prev_average_sol > 0
 		}
 		
 		change_variable = {

@@ -469,3 +469,33 @@ je_ut_software_era_7_done_mod  = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	goods_output_software_mult = 1.0
 }
+
+je_ut_software_era_8_1_version_control_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	goods_output_software_mult = 0.7
+}
+
+je_ut_software_era_8_2_no_sql_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	goods_output_software_mult = 0.8
+}
+
+je_ut_software_era_8_3_web_standards_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	goods_output_software_mult = 0.9
+}
+
+je_ut_software_era_8_4_web_software_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	goods_output_software_mult = 1.0
+}
+
+je_ut_software_era_8_5_cloud_computing_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	goods_output_software_mult = 1.1
+}
+
+je_ut_software_era_8_6_ownership_model_language_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	goods_output_software_mult = 1.2
+}

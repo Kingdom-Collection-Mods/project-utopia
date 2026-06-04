@@ -7,8 +7,8 @@
 
 	monthly_progress = {
 		add = {
-			desc = "je_ut_software_points_bar_progress_buildings"
-			value = root.var:je_ut_software_points_bar_progress_buildings
+			desc = "je_ut_software_points_bar_progress_buildings_era_6"
+			value = root.var:je_ut_software_points_bar_progress_buildings_era_6
 		}
 		if = {
 			limit = {
@@ -47,8 +47,8 @@ je_ut_software_points_bar_era_7 = {
 			}
 		}
 		add = {
-			desc = "je_ut_software_points_bar_progress_buildings"
-			value = root.var:je_ut_software_points_bar_progress_buildings
+			desc = "je_ut_software_points_bar_progress_buildings_era_7"
+			value = root.var:je_ut_software_points_bar_progress_buildings_era_7
 		}
 
 		if = {
@@ -82,8 +82,8 @@ je_ut_software_points_bar_era_8 = {
 			value = -100
 		}
 		add = {
-			desc = "je_ut_software_points_bar_progress_buildings"
-			value = root.var:je_ut_software_points_bar_progress_buildings
+			desc = "je_ut_software_points_bar_progress_buildings_era_8"
+			value = root.var:je_ut_software_points_bar_progress_buildings_era_7
 		}
 	}
 
