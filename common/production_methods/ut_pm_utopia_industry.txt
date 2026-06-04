@@ -1,4 +1,4 @@
-###Heavy Industry
+﻿###Heavy Industry
 ##Heavy Machinery
 pm_heavy_machinery_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/airship_mooring_post.dds"
@@ -2073,7 +2073,7 @@ ut_pm_power_grid_operations_digital = {
         }
 
         level_scaled = {
-            building_employment_machinists_add = -1000
+            building_employment_machinists_add = -1250
         }
     }
 }
