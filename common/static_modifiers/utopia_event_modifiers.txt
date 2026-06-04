@@ -436,66 +436,62 @@ je_ut_software_era_6_assembler_language_mod = {
 
 je_ut_software_era_6_1_assembler_language_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	goods_output_software_mult = 0.1
+	goods_output_software_mult = 0.05
 }
 
 je_ut_software_era_6_2_assembler_language_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	goods_output_software_mult = 0.2
+	goods_output_software_mult = 0.1
 }
 
 je_ut_software_era_6_3_high_level_language_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	goods_output_software_mult = 0.3
+	goods_output_software_mult = 0.2
 }
 
 
 je_ut_software_era_7_1_operating_system_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	goods_output_software_mult = 0.4
+	goods_output_software_mult = 0.3
 }
 
 je_ut_software_era_7_2_relational_database_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	goods_output_software_mult = 0.5
+	goods_output_software_mult = 0.4
 }
 
 je_ut_software_era_7_3_object_oriented_programming_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	goods_output_software_mult = 0.6
+	goods_output_software_mult = 0.5
 }
 
-je_ut_software_era_7_done_mod  = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	goods_output_software_mult = 1.0
-}
 
 je_ut_software_era_8_1_version_control_mod = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	goods_output_software_mult = 0.7
-}
-
-je_ut_software_era_8_2_no_sql_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	goods_output_software_mult = 0.8
 }
 
+je_ut_software_era_8_2_no_sql_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	goods_output_software_mult = 1
+}
+
 je_ut_software_era_8_3_web_standards_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	goods_output_software_mult = 0.9
+	goods_output_software_mult = 1.2
 }
 
 je_ut_software_era_8_4_web_software_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	goods_output_software_mult = 1.0
+	goods_output_software_mult = 1.5
 }
 
 je_ut_software_era_8_5_cloud_computing_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	goods_output_software_mult = 1.1
+	goods_output_software_mult = 1.8
 }
 
 je_ut_software_era_8_6_ownership_model_language_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	goods_output_software_mult = 1.2
+	goods_output_software_mult = 2
 }
