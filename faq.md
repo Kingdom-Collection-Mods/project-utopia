@@ -1,3 +1,6 @@
+$env:PYTHONPATH = "D:\Projects\Phyton Projects\PyHelpersForPDXWikis"
+python -m vic3.PMSpreadsheet.generate_spreadsheets
+
 ai_evaluate_production_method building_commercial_factory pm_consumer_goods_plastic_process STATE_KANTO
 
 -nographics -handsoff -scripted_tests
