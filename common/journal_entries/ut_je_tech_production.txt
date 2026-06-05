@@ -1,4 +1,50 @@
-﻿ut_heavy_industrial_machinery_je = {
+﻿ut_industrial_machinery_je = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+	group = je_group_technology
+
+	weight = 100
+	should_be_pinned_by_default_uninvolved_or_context = yes
+
+	is_shown_when_inactive = {
+		always = yes
+		NOT = { has_variable = industrial_machinery_je_done }
+	}
+
+	possible = {
+		has_technology_researched = arc_welding
+		any_scope_state = {
+			has_building = building_heavy_machinery_factory
+			is_incorporated = yes
+		}
+	}
+
+	complete = {
+		any_scope_building = {
+			is_building_type = building_heavy_machinery_factory
+			level >= 1
+			occupancy > 0.75
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = utopia_journal_prod.13
+			popup = yes
+		}
+		set_variable = {
+			name = industrial_machinery_je_done
+		}
+	}
+
+	on_timeout = {
+	}
+
+	timeout = 1825  # 5 years
+}
+
+ut_heavy_industrial_machinery_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
