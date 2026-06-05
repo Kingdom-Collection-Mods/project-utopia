@@ -73,7 +73,8 @@ chemistry = {
 	}
 
 	modifier = {
-		building_explosives_factory_throughput_add = 0.1
+		building_chemical_plant_throughput_add = 0.2
+		building_explosives_factory_throughput_add = 0.2
 		building_group_bg_plantations_throughput_add = 0.05
 		state_birth_rate_mult = 0.025
 	}
@@ -190,6 +191,7 @@ heavy_machinery_era_analog = {
 	}
 
 	modifier = {
+		building_paper_mill_throughput_add = 0.2
 	}
 	
 	ai_weight = {
@@ -266,6 +268,8 @@ heavy_machinery_industry = {
 		
 		building_offshore_wind_farm_throughput_add = 0.25
 		building_renewable_power_plant_throughput_add = 0.25
+		
+		building_paper_mill_throughput_add = 0.2
 	}
 	
 	ai_weight = {
@@ -580,7 +584,7 @@ trucks_era_analog = {
 	}
 
 	modifier = {
-		building_group_bg_logging_throughput_add = 0.2
+		building_group_bg_logging_throughput_add = 0.4
 	}
 	
 	ai_weight = {
@@ -599,7 +603,7 @@ trucks_era_digital = {
 
 	modifier = {
 		goods_output_trucks_mult = 	0.2
-		building_group_bg_logging_throughput_add = 0.2
+		building_group_bg_logging_throughput_add = 0.4
 	}
 	
 	ai_weight = {
@@ -618,7 +622,7 @@ trucks_era_web = {
 
 	modifier = {
 		goods_output_trucks_mult = 	0.2
-		building_group_bg_logging_throughput_add = 0.1
+		building_group_bg_logging_throughput_add = 0.2
 	}
 	
 	ai_weight = {
