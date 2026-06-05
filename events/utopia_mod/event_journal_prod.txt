@@ -524,6 +524,7 @@ utopia_journal_prod.40 = {
 			NOT = {	capital = scope:ut_research_institute_site }
 		}
         scope:ut_research_institute_site = {
+			start_building_construction = building_ut_research_institute
         	add_modifier = {
         		name = ut_research_institute_site_mod
         	}
@@ -531,6 +532,7 @@ utopia_journal_prod.40 = {
         # show_as_tooltip = {
         # 	remove_modifier = ut_research_institute_found_mod
         # }
+		
 		add_journal_entry = {
 			type = ut_je_research_institute_construction
 			target = scope:ut_research_institute_site
@@ -547,6 +549,7 @@ utopia_journal_prod.40 = {
 		}
 		name = utopia.progress_b
         capital = {
+			start_building_construction = building_ut_research_institute
         	add_modifier = {
         		name = ut_research_institute_site_mod
         	}
@@ -557,17 +560,6 @@ utopia_journal_prod.40 = {
 		add_journal_entry = {
 			type = ut_je_research_institute_construction
         	target = capital
-		}
-		if = {
-			limit = {
-				is_ai = yes
-			}
-			capital ={
-				create_building = {
-					building = building_ut_research_institute
-					level=1
-				}
-			}
 		}
 	}
 }
