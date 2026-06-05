@@ -1350,3 +1350,60 @@ ut_pm_soft_drinks = {
 		}
 	}
 }
+
+
+pm_logging_machinery_equipment = {
+	texture = "gfx/interface/icons/production_method_icons/chainsaws.dds"
+	unlocking_technologies = {
+		trucks_era_analog
+	}
+	disallowing_laws = {
+		law_industry_banned
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_engines_add = 1
+			goods_input_oil_add = 4
+			goods_input_trucks_add = 1
+
+			goods_output_wood_add = 20
+			goods_output_hardwood_add = 10
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = -1500
+			building_employment_machinists_add = -250
+			building_employment_engineers_add = 250
+		}
+	}
+}
+
+pm_logging_heavy_machinery_equipment = {
+	texture = "gfx/interface/icons/production_method_icons/chainsaws.dds"
+	unlocking_technologies = {
+		trucks_era_digital
+	}
+	disallowing_laws = {
+		law_industry_banned
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_heavy_machinery_add = 2
+			goods_input_oil_add = 4
+			goods_input_trucks_add = 2
+
+			goods_output_wood_add = 40
+			goods_output_hardwood_add = 20
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = -1500
+			building_employment_machinists_add = -250
+			building_employment_engineers_add = 250
+		}
+	}
+}

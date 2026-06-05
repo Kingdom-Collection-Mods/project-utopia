@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -1554,6 +1554,9 @@
  pm_computers_engines: "Complex ECU Engines"
 
  ut_pm_soft_drinks: "Soft Drinks"
+
+ pm_logging_machinery_equipment: "Logging Machinery"
+ pm_logging_heavy_machinery_equipment: "Heavy Logging Machinery"
 
  pmg_ut_high_voltage_electricity: "High-Voltage"
  pm_ut_no_high_voltage_electricity: "No High-Voltage Electricity"

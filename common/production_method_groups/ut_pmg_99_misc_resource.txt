@@ -1,4 +1,4 @@
-﻿# INJECT:pmg_base_building_logging_camp = {
+# INJECT:pmg_base_building_logging_camp = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
 # 		pm_simple_forestry
@@ -16,14 +16,12 @@
 # 	}
 # }
 
-# INJECT:pmg_equipment = {
-# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
-# 	production_methods = {
-# 		pm_no_equipment
-# 		pm_steam_donkey_building_logging_camp
-# 		pm_chainsaws
-# 	}
-# }
+INJECT:pmg_equipment = {
+	production_methods = {
+		pm_logging_machinery_equipment
+		pm_logging_heavy_machinery_equipment
+	}
+}
 
 # INJECT:pmg_transportation_building_logging_camp = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"

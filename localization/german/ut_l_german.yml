@@ -1,4 +1,4 @@
-﻿l_german:
+l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -1554,6 +1554,9 @@
  pm_computers_engines: "Komplexe ECU-Motoren"
 
  ut_pm_soft_drinks: "Soft Drinks"
+
+ pm_logging_machinery_equipment: "Forstmaschinen"
+ pm_logging_heavy_machinery_equipment: "Schwerlastmaschinen"
 
  pmg_ut_high_voltage_electricity: "Hochspannung"
  pm_ut_no_high_voltage_electricity: "Keine Hochspannungs-Elektrizität"
