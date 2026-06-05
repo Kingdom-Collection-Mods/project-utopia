@@ -1387,13 +1387,14 @@ pm_logging_heavy_machinery_equipment = {
 	}
 	disallowing_laws = {
 		law_industry_banned
+		law_environment_protection_institute_three
 	}
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_heavy_machinery_add = 2
 			goods_input_oil_add = 4
-			goods_input_trucks_add = 2
+			goods_input_trucks_add = 4
 
 			goods_output_wood_add = 40
 			goods_output_hardwood_add = 20
