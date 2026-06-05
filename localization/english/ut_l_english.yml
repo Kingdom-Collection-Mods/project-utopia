@@ -1633,7 +1633,7 @@
  pm_farms_plane_support_rice: "Crop Dusting"
  pm_farms_drone_support_rice: "Autonomous Farm Systems"
  pm_farms_heavy_machinery_support: "Diesel Tractors"
- pm_farms_heavy_machinery_support_rice: "Diesel Tractors"
+ pm_farms_heavy_machinery_support_rice: "Rice Tractors"
  pm_ut_factory_farming: "Factory Farming"
 
  pm_heavy_machinery_building_coal_mine: "Heavy Machinery"
