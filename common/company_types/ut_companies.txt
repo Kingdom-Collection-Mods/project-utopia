@@ -66,10 +66,11 @@ ut_high_tech_company_research = {
 	flavored_company = no
 
 	building_types = {
-		building_electronic_factory
+		building_electrics_industry
 	}
 	
 	extension_building_types = {
+		building_electronic_factory
 		building_power_plant
 	}
 
@@ -79,8 +80,8 @@ ut_high_tech_company_research = {
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_electronic_factory
-				level >= 10
+				is_building_type = building_electrics_industry
+				level >= 20
 			}
 		}
 	}
