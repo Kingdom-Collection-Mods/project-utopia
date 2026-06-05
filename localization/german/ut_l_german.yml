@@ -1,4 +1,4 @@
-﻿l_german:
+l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -1633,7 +1633,7 @@
  pm_farms_plane_support_rice: "Agrarflugzeuge"
  pm_farms_drone_support_rice: "Drohnen"
  pm_farms_heavy_machinery_support: "Großtraktoren"
- pm_farms_heavy_machinery_support_rice: "Großtraktoren"
+ pm_farms_heavy_machinery_support_rice: "Kleintraktoren"
  pm_ut_factory_farming: "Massentierhaltung"
 
  pm_heavy_machinery_building_coal_mine: "Schwerlastmaschinen"
