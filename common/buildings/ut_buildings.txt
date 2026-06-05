@@ -461,9 +461,7 @@ building_ut_research_institute = {
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 
-
     
-	# optional custom trigger (state scope) if the state is potential for this building type, i.e. can ever be built there, default yes
 	can_build_government = {
 		custom_tooltip = {
 			text = ut_research_institute_can_construct_tt
