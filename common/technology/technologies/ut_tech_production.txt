@@ -404,7 +404,7 @@ rare_earths_mining_era_connected = {
 #Digitalization
 electronics = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/cuircit_board.dds"
+	texture = "gfx/interface/icons/invention_icons/circuit_board.dds"
 	category = production
 
 	on_researched = {
