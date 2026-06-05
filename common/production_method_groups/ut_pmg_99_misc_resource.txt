@@ -1,4 +1,4 @@
-# INJECT:pmg_base_building_logging_camp = {
+﻿# INJECT:pmg_base_building_logging_camp = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
 # 		pm_simple_forestry
@@ -32,13 +32,11 @@ INJECT:pmg_equipment = {
 # 	}
 # }
 
-# INJECT:pmg_base_building_rubber_plantation = {
-# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-# 	production_methods = {
-# 		default_building_rubber_plantation
-# 		automatic_irrigation_building_rubber_plantation
-# 	}
-# }
+INJECT:pmg_base_building_rubber_plantation = {
+	production_methods = {
+		smart_irrigation_building_rubber_plantation
+	}
+}
 
 INJECT:pmg_train_automation_building_rubber_plantation = {
 	production_methods = {
