@@ -253,7 +253,7 @@ pmg_offshore_power_plant_wind = {
 	}
 }
 
-#deprecated - not really but rename to pmg_ut_power_grid_base
+#deprecated todo, rename to pmg_ut_power_grid_base
 pmg_ut_power_grid = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
