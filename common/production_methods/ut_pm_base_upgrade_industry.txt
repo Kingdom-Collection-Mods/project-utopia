@@ -886,7 +886,7 @@ pm_ut_copper_streetlights = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_electricity_add = 6
-			goods_input_iron_add = 1
+			goods_input_electronics_add = 2
 			goods_output_services_add = 20
 			goods_output_internet_add = 20
 		}
@@ -918,11 +918,10 @@ pm_ut_fiber_streetlights = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_electricity_add = 6
-			goods_input_rare_earths_add = 1
-			goods_input_iron_add = 1
+			goods_input_electricity_add = 9
+			goods_input_electronics_add = 4
 			goods_output_services_add = 20
-			goods_output_internet_add = 50
+			goods_output_internet_add = 60
 		}
 
 		level_scaled = {
