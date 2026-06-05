@@ -131,7 +131,7 @@ ut_pm_film_industry_art = {
 			goods_input_electricity_add = 5 # 150
 			goods_input_electronics_add = 4
 
-			goods_output_fine_art_add = 14 # 2000
+			goods_output_fine_art_add = 16 # 2000
 		}
 	}
 
@@ -158,7 +158,7 @@ ut_pm_film_industry_art_principle_movement  = {
 			goods_input_electricity_add = 5 # 150
 			goods_input_electronics_add = 4
 
-			goods_output_fine_art_add = 16 # 2000
+			goods_output_fine_art_add = 18 # 2000
 		}
 	}
 
@@ -187,7 +187,7 @@ ut_pm_digital_art = {
 			goods_input_electronics_add = 5
 			goods_input_computers_add = 2
 
-			goods_output_fine_art_add = 16 # 2000
+			goods_output_fine_art_add = 18 # 2000
 		}
 	}
 
