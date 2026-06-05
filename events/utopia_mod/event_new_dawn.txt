@@ -823,6 +823,12 @@ event_new_dawn.13 = {
 
 	trigger = {
 		NOT = { has_modifier = new_dawn_event_radicals_mod }
+		OR = {
+			NOT = {	ut_new_dawn_has_core_trigger = yes }
+			ut_has_new_dawn_pressure_points = {
+				VALUE = 50
+			}
+		}
 	}
 
 	cancellation_trigger = {

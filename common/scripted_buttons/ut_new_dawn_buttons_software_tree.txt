@@ -8,15 +8,11 @@
 		NOT = {
 			has_modifier = je_ut_software_era_6_1_assembler_language_mod
 		}
-		
-		OR = {
-			custom_tooltip = {
-				text = je_ut_software_era_6_required_points_tt
-				je:je_ut_software_era_6 = { 
-					"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 100
-				}
+		custom_tooltip = {
+			text = je_ut_software_era_6_required_points_tt
+			je:je_ut_software_era_6 = { 
+				"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 100
 			}
-			always = yes #todo depreceated only for internal run
 		}
 	}
 
@@ -46,15 +42,11 @@ je_ut_software_era_6_2_assembler_language = {
 		NOT = {
 			has_modifier = je_ut_software_era_6_2_assembler_language_mod
 		}
-		
-		OR = {
-			custom_tooltip = {
-				text = je_ut_software_era_6_required_points_tt
-				je:je_ut_software_era_6 = { 
-					"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 100
-				}
+		custom_tooltip = {
+			text = je_ut_software_era_6_required_points_tt
+			je:je_ut_software_era_6 = { 
+				"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 100
 			}
-			always = yes #todo depreceated only for internal run
 		}
 	}
 
@@ -88,15 +80,11 @@ je_ut_software_era_6_3_high_level_language = {
 		NOT = {
 			has_modifier = je_ut_software_era_6_3_high_level_language_mod
 		}
-		
-		OR = {
-			custom_tooltip = {
-				text = je_ut_software_era_6_required_points_tt
-				je:je_ut_software_era_6 = { 
-					"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 100
-				}
+		custom_tooltip = {
+			text = je_ut_software_era_6_required_points_tt
+			je:je_ut_software_era_6 = { 
+				"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 100
 			}
-			always = yes #todo depreceated only for internal run
 		}
 	}
 

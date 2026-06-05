@@ -2079,6 +2079,10 @@ ut_pm_power_grid_operations_digital = {
 
 ut_pm_power_grid_operations_connected = {
     texture = "gfx/interface/icons/production_method_icons/james_grid_power.dds"
+
+	unlocking_technologies = {
+		software
+	}
     
     building_modifiers = {
         workforce_scaled = {

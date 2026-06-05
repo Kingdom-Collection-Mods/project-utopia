@@ -1,4 +1,4 @@
-﻿
+
 building_bauxite_mine = {
 	building_group = bg_bauxite_mining
 	icon = "gfx/interface/icons/building_icons/bauxite_mine.dds"
@@ -727,7 +727,7 @@ building_ut_power_grid = {
                     }
                 }
             }
-            add = 4000
+            add = 6000
         }
     }
 

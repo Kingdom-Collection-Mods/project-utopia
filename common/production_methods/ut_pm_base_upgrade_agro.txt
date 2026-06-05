@@ -499,7 +499,7 @@ pm_ut_factory_farming = {
 	}
 
 	unlocking_technologies = {
-		machinery_farming
+		heavy_machinery_farming
 	}
 
 	disallowing_laws = {
