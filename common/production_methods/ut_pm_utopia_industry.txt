@@ -118,7 +118,6 @@ pm_heavy_machinery_analog_process = {
 	required_input_goods = electricity
 }
 
-
 pm_heavy_machinery_electronics_process = {
 	texture = "gfx/interface/icons/production_method_icons/ut_heavy_machinery_2.dds"
 	
