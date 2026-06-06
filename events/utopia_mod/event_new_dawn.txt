@@ -1621,4 +1621,23 @@ event_new_dawn.999 = {
 			}
 		}
 	}
+
+	option = {
+		name = event_new_dawn.cheat.add_pressure
+		
+		custom_tooltip = ut_add_new_dawn_pressure_add_10
+		ut_add_new_dawn_pressure_points = {
+			VALUE = 10
+		}
+	}
+
+	
+	option = {
+		name = event_new_dawn.cheat.remove_pressure
+		
+		custom_tooltip = ut_add_new_dawn_pressure_remove_10
+		ut_add_new_dawn_pressure_points = {
+			VALUE = -10
+		}
+	}
 }

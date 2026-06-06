@@ -269,6 +269,8 @@ l_english:
  event_new_dawn.cheat.remove_fascist_50: "Remove 50 #g Fascist#! Progress"
  event_new_dawn.cheat.remove_communist_50: "Remove 50 #r Communist#! Progress"
  event_new_dawn.cheat.remove_focus_recently_changed: "Remove Focus Recently Changed"
+ event_new_dawn.cheat.add_pressure: "Add 10 [concept_ut_nd_pressure] Pressure"
+ event_new_dawn.cheat.remove_pressure: "Remove 10 [concept_ut_nd_pressure] Pressure"
 
  ut_new_dawn_status: "New Dawn"
  ut_new_dawn_focus_recently_changed: "Focus recently changed"
@@ -1073,6 +1075,9 @@ l_english:
  ut_add_new_dawn_progress_neg_10: "Loses #r 10#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_5: "Loses #r 5#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_1: "Loses #r 1#! [concept_ut_nd_progress_points]"
+
+ ut_add_new_dawn_pressure_add_10: "Gains #r 10#! [concept_ut_nd_pressure]"
+ ut_add_new_dawn_pressure_neg_10: "Loses #g 10#! [concept_ut_nd_pressure]"
 
  ut_force_become_subject: "Collectivize Council Republics"
  ut_force_become_subject_action_name: "$ut_force_become_subject$"
