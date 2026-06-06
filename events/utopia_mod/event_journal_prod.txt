@@ -31,6 +31,16 @@ utopia_journal_prod.1 = {
 	}
 	
 	option = {
+		name = utopia.progress_c
+		
+		trigger = {
+			NOT = { has_technology_researched = plastics_nylon }
+			can_research = plastics_nylon
+		}
+		add_technology_progress = { progress = 6000 technology = plastics_nylon }
+	}
+	
+	option = {
 		name = utopia.slow_progress
 		add_modifier = {
 			name = slow_tech_progress
@@ -87,7 +97,7 @@ utopia_journal_prod.2 = {
 	}
 
 	option = {
-		name = utopia.progress_b
+		name = utopia.continue
 		trigger = {
 			is_ai = no
 		}
