@@ -278,7 +278,7 @@ pm_heavy_machinery_textile  = {
 	texture = "gfx/interface/icons/production_method_icons/ut_cloth_machinery.dds"
 	
 	unlocking_technologies = {
-		heavy_machinery_era_analog
+		plastics_polyester
 	}
 	
 	building_modifiers = {
