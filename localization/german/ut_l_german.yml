@@ -1,4 +1,4 @@
-﻿l_german:
+l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -577,6 +577,9 @@
 
  concept_ut_nd_focus: "Fokus"
  concept_ut_nd_focus_desc: "Wenn der #b Neuer Aufbruch#! Journal-Eintrag aktiv ist, wird Fokus für die Neuer Aufbruch-Ideologie verfügbar. Der Fokus auf eine Ideologie erhöht die Wahrscheinlichkeit, dass sie dominant wird. Wenn die Ideologie gefestigt wird, ist der Fokus auch aktiv."
+
+ concept_ut_nd_pressure: "Druck"
+ concept_ut_nd_pressure_desc: "Druck"
 
  concept_ut_nd_stance: "Haltung"
  concept_ut_nd_stance_desc: "Jede Ideologie hat eine Haltung gegenüber anderen Ideologien. Die Haltung beeinflusst die Akzeptanz des Beitritts und Verbleibs in einem Machtblock sowie die meisten neuen Project Utopia-Aktionen. Work in progress."

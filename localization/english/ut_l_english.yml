@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -577,6 +577,9 @@
 
  concept_ut_nd_focus: "Focus"
  concept_ut_nd_focus_desc: "When the #b New Dawn#! journal entry is active, focus on the New Dawn ideology becomes available. Focusing on an ideology makes it much more likely to become dominant. If the ideology becomes entrenched, the focus also remains active."
+
+ concept_ut_nd_pressure: "Pressure"
+ concept_ut_nd_pressure_desc: "Pressure"
 
  concept_ut_nd_stance: "Stance"
  concept_ut_nd_stance_desc: "Each ideology has a stance towards other ideologies. The stance affects acceptance of joining and staying in a power bloc, and most new Project Utopia actions. Work in progress."
