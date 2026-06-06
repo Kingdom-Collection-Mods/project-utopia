@@ -180,6 +180,7 @@ international_stock_exchange = {
 		
 	modifier = {
 		country_free_charters_add = 1
+		state_service_workers_investment_pool_efficiency_mult = 0.05
 	}
 
 	unlocking_technologies = {	
@@ -198,7 +199,6 @@ check_payments = {
 	category = society
 		
 	modifier = {
-		state_service_workers_investment_pool_efficiency_mult = 0.05
 		country_minting_mult = 0.05
 		country_loan_interest_rate_add = -0.02
 	}
