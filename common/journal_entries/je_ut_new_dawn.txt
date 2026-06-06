@@ -628,7 +628,7 @@ je_ut_new_dawn_democratic = {
 			}
 		}
 		custom_tooltip = {
-			text = je_ut_new_dawn_critical_lower_bound_fail_tt
+			text = je_ut_new_dawn_critical_lower_bound_fail_pressure_tt
 			je:je_ut_new_dawn_democratic = { 
 				"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" > 50
 			}
