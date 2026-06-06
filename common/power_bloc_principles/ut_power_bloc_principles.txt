@@ -33,7 +33,10 @@ principle_common_financial_policy_1 = {
 		
 		# Modifiers from previous level(s)
 		state_infrastructure_mult = 0.1
-		country_convoy_contribution_to_market_owner_add = 0.1
+		building_port_throughput_add = 0.1
+
+		# Cheaper port connections
+		country_port_connection_cost_mult = -0.1
 	}
 	
 	ai_weight = {
@@ -70,8 +73,11 @@ principle_common_financial_policy_2 = {
 		
 		# Modifiers from previous level(s)
 		state_infrastructure_mult = 0.1
-		country_convoy_contribution_to_market_owner_add = 0.2
+		building_port_throughput_add = 0.1
 		country_company_throughput_bonus_add = 0.05
+
+		# Cheaper port connections
+		country_port_connection_cost_mult = -0.1
 	}
 	
 	ai_weight = {
@@ -111,8 +117,11 @@ principle_common_financial_policy_3 = {
 		
 		# Modifiers from previous level(s)
 		state_infrastructure_mult = 0.1
-		country_convoy_contribution_to_market_owner_add = 0.2
+		building_port_throughput_add = 0.1
 		country_company_throughput_bonus_add = 0.05
+		
+		# Cheaper port connections
+		country_port_connection_cost_mult = -0.25
 	}
 	
 	ai_weight = {
@@ -151,7 +160,7 @@ principle_commissariat_1 = {
 		country_allow_enacting_decrees_in_subject_bool = yes
 
 		# New
-		country_convoy_contribution_to_market_owner_add = 0.2
+		ship_interest_gain_mult = 0.05
 	}
 	
 	ai_weight = {
@@ -190,7 +199,7 @@ principle_commissariat_2 = {
 		country_allow_enacting_decrees_in_subject_bool = yes
 
 		# New
-		country_convoy_contribution_to_market_owner_add = 0.2
+		ship_interest_gain_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -229,7 +238,7 @@ principle_commissariat_3 = {
 		country_allow_enacting_decrees_in_subject_bool = yes
 
 		# New
-		country_convoy_contribution_to_market_owner_add = 0.3
+		ship_interest_gain_mult = 0.2
 	}
 	
 	ai_weight = {
@@ -658,11 +667,11 @@ ut_principle_war_industry_4 = {
 		building_automotive_industry_throughput_add = 0.1
 		building_arms_industry_throughput_add = 0.1
 		building_artillery_foundry_throughput_add = 0.1
-		building_military_shipyard_throughput_add = 0.1
+		country_flagship_interest_gain_mult = 0.1
 		country_military_goods_cost_mult = -0.15
 
 		# Supply routes use less convoys
-		character_supply_route_cost_mult = -0.33
+		country_port_connection_cost_mult = -0.1
 
 		# Members get an unique mobilization option mechanic
 	}
@@ -692,11 +701,11 @@ ut_principle_war_industry_5 = {
 		building_automotive_industry_throughput_add = 0.1
 		building_arms_industry_throughput_add = 0.1
 		building_artillery_foundry_throughput_add = 0.1
-		building_military_shipyard_throughput_add = 0.1
+		country_flagship_interest_gain_mult = 0.1
 		country_military_goods_cost_mult = -0.15
 
 		# Supply routes use less convoys
-		character_supply_route_cost_mult = -0.33
+		country_port_connection_cost_mult = -0.1
 
 		# Members get an unique mobilization option mechanic
 	}
@@ -732,11 +741,11 @@ ut_principle_war_industry_6 = {
 		building_automotive_industry_throughput_add = 0.1
 		building_arms_industry_throughput_add = 0.1
 		building_artillery_foundry_throughput_add = 0.1
-		building_military_shipyard_throughput_add = 0.1
+		country_flagship_interest_gain_mult = 0.1
 		country_military_goods_cost_mult = -0.15
 
 		# Supply routes use less convoys
-		character_supply_route_cost_mult = -0.33
+		country_port_connection_cost_mult = -0.1
 
 		# Members get an unique mobilization option mechanic
 	}
