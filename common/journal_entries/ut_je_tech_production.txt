@@ -595,6 +595,9 @@ ut_je_ut_research_nuclear_power = {
 			every_scope_building = {
 				limit = {
 					is_building_type = building_ut_research_institute
+					NOT = {
+						building_has_goods_shortage = yes
+					}
 				}
 				ROOT = {
 					change_variable = {

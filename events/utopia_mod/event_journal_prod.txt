@@ -575,10 +575,10 @@ utopia_journal_prod.40 = {
 			NOT = {	capital = scope:ut_research_institute_site }
 		}
         scope:ut_research_institute_site = {
-			start_building_construction = building_ut_research_institute
         	add_modifier = {
         		name = ut_research_institute_site_mod
         	}
+			start_building_construction = building_ut_research_institute
         }
         # show_as_tooltip = {
         # 	remove_modifier = ut_research_institute_found_mod
@@ -600,10 +600,10 @@ utopia_journal_prod.40 = {
 		}
 		name = utopia.progress_b
         capital = {
-			start_building_construction = building_ut_research_institute
         	add_modifier = {
         		name = ut_research_institute_site_mod
         	}
+			start_building_construction = building_ut_research_institute
         }
         # show_as_tooltip = {
         # 	remove_modifier = ut_research_institute_found_mod

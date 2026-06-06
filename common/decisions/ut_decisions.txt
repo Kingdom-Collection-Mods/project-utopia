@@ -178,9 +178,7 @@ ut_research_nuclear_power = {
 				is_building_type = building_power_plant
 				level >= 20
 			}
-			any_scope_building = {
-				is_building_type = building_ut_research_institute
-			}
+			has_building = building_ut_research_institute
 		}
 		OR = {
 			has_global_highest_innovation = yes
