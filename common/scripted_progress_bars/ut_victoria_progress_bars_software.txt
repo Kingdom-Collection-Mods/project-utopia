@@ -7,6 +7,10 @@
 
 	monthly_progress = {
 		add = {
+			desc = "base_value"
+			value = 0.5
+		}
+		add = {
 			desc = "je_ut_software_points_bar_progress_buildings_era_6"
 			value = root.var:je_ut_software_points_bar_progress_buildings_era_6
 		}
