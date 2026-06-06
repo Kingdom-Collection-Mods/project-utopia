@@ -92,6 +92,8 @@ je_wirtschaftswunder = {
 	}
 
 	timeout = 3650
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_wirtschaftswunder_others = {
@@ -123,6 +125,8 @@ je_wirtschaftswunder_others = {
 	}
 
 	timeout = 7300
+	
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_early_civil_aviation = {

@@ -101,7 +101,7 @@
  ut_research_institute_found: "Found Research Institute"
  ut_research_institute_found_desc: "A national [concept_ut_research_institute] is to be established to consolidate scientific excellence, promote fundamental research, and structurally accelerate technological progress. The construction of this institution marks a milestone on the path to a knowledge-based society."
  ut_je_research_institute_founding: "Founding a Research Institute"
- ut_je_research_institute_founding_reason: "Our nation prepares to institutionalize innovation by establishing a dedicated research institute. In an age where ideas fuel power, the foundation of such an institute marks a monumental step forward. Here, minds will be sharpened, knowledge systematized, and breakthroughs born not of accident, but design.\nThis institute will become a beacon - attracting scientists, thinkers, and technocrats from every corner of society. A crucible of curiosity, where the impossible is not denied, but studied."
+ ut_je_research_institute_founding_reason: "Our nation prepares to institutionalize innovation by establishing a dedicated research institute. In an age where ideas fuel power, the foundation of such an institute marks a monumental step forward. Here, minds will be sharpened, knowledge systematized, and breakthroughs born not of accident, but design."
  ut_je_research_institute_founding.success.d: "The research institute is operational. It provides a structured space for innovation, accelerating technological advancement and cultivating national prestige."
  ut_je_research_institute_founding.success.f: "Where once lone inventors labored in dusty basements, now entire faculties work in unison. Chalkboards filled with equations, labs humming with energy - this is no longer mere experimentation. It is organized brilliance."
  ut_research_institute_found_mod: "Research Institute Initiative"
@@ -298,7 +298,7 @@
  ut_nd_communist_progress_from_legitimacy: "[concept_legitimacy] of [concept_ut_nd_communist_characters] [concept_ruler]"
  ut_nd_communist_progress_from_focus: "Communist Focus"
  ut_nd_communist_progress_from_events: "Events and other Effects"
- ut_new_dawn_communist_status: "Communist Ideas Are Shaping the Discourse"
+ ut_new_dawn_communist_status: "Communist Ideas shape the discourse"
  concept_ut_nd_communist_characters: "Communist Characters"
  concept_ut_nd_communist_characters_desc: "Communist [concept_character] ideologies are: [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_vanguardist').GetName], and [GetIdeology('ideology_nihilist').GetName].\nIf Communist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ideology_positivist').GetName]."
 
@@ -374,7 +374,7 @@
  concept_ut_nd_democrat_interest_group_tt: "IG has leader with [concept_ut_nd_democrat_characters] ideology"
  concept_ut_nd_democrat_characters: "Democratic Characters"
  concept_ut_nd_democrat_characters_desc: "Democratic [concept_character] ideologies are: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName], [GetIdeology('ideology_utopian').GetName], and [GetIdeology('ut_ideology_cosmopolitan_leader').GetName].\nIf Democrat [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_pacifist').GetName], [GetIdeology('ideology_feminist').GetName], [GetIdeology('ut_ideology_environmentalist_leader').GetName], [GetIdeology('ideology_market_liberal').GetName] and [GetIdeology('ideology_modernizer_leader').GetName]."
- ut_new_dawn_democrat_status: "Democratic Ideas shape the Discourse"
+ ut_new_dawn_democrat_status: "Democratic Ideas shape the discourse"
  ut_new_dawn_phase_2_status_je: "Ideology established"
  ut_nd_decaying_progress: "$new_dawn_phase_2_mod$"
 
@@ -522,7 +522,7 @@
  ut_nd_autocrat_progress_from_events: "Events and other Effects"
  concept_ut_nd_autocrat_characters: "Autocratic Characters"
  concept_ut_nd_autocrat_characters_desc: "Autocratic [concept_character] ideologies are: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], and [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nIf Autocrat [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], and [GetIdeology('ideology_corporatist_leader').GetName]."
- ut_new_dawn_autocrat_status: "Autocratic Ideas shape the Discourse"
+ ut_new_dawn_autocrat_status: "Autocratic Ideas shape the discourse"
 
 #Core Ideology concepts
 
@@ -566,7 +566,7 @@
  ut_nd_fascist_progress_from_events: "Events and other Effects"
  concept_ut_nd_fascist_characters: "Fascist Characters"
  concept_ut_nd_fascist_characters_desc: "Fascist [concept_character] ideologies are: [GetIdeology('ideology_ethno_nationalist').GetName] and [GetIdeology('ideology_fascist').GetName].\nIf Fascist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ut_ideology_national_socialist_leader').GetName]."
- ut_new_dawn_fascist_status: "Fascist Ideas shape the Discourse"
+ ut_new_dawn_fascist_status: "Fascist Ideas shape the discourse"
 
  ut_nd_multiplier_from_service_workers_0: "x0.5 Multiplier from less than 1% $service_workers$\n$ut_nd_mp_sw_note$"
  ut_nd_multiplier_from_service_workers_1: "x1.5 Multiplier from $service_workers$ share\n$ut_nd_mp_sw_note$"

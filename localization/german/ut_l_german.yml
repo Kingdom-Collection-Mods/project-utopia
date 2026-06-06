@@ -2065,6 +2065,12 @@
  setting_ut_new_dawn_start_era_4: "Era IV"
  setting_ut_new_dawn_start_era_4_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] IV (1887-1911)\n@warning! Project Utopia is tested with Era VI start era."
 
+ rule_ut_new_dawn_historical_focus: "Historical $concept_ut_nd_focus$"
+ setting_ut_new_dawn_historical_focus_yes: "Enabled"
+ setting_ut_new_dawn_historical_focus_yes_desc: "Selected countries have a higher chance to select their historical $concept_ut_nd_focus$"
+ setting_ut_new_dawn_historical_focus_no: "Disabled"
+ setting_ut_new_dawn_historical_focus_no_desc: "All countries have the same chance to select their focus.\n@warning! Project Utopia is tested with historical focuses enabled."
+
 # Demands
  demand_ban_slavery: "Forderung: Verbots der Sklaverei"
  demand_conquest: "Forderung: Eroberung"

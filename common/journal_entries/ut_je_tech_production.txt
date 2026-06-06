@@ -508,7 +508,7 @@ ut_je_research_institute_founding = {
 	}
 
 	goal_add_value = {
-		value = 48
+		value = 36
 	}
 
 	progressbar = yes
