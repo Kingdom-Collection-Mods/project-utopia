@@ -70,7 +70,7 @@ combat_unit_type_armored_infantry = {
     }
 
     formation_modifier = {
-        military_formation_movement_speed_mult = 0.1    #new
+        military_formation_army_movement_speed_mult = 0.1    #new
     }
 
 	unlocking_technologies = { ut_armored_infantry }
@@ -112,7 +112,7 @@ combat_unit_type_task_force_infantry = {
     }
 
     formation_modifier = {
-        military_formation_movement_speed_mult = 0.2 #+0.1
+        military_formation_army_movement_speed_mult = 0.2 #+0.1
     }
 
 	unlocking_technologies = { task_forces }
@@ -169,7 +169,7 @@ combat_unit_type_motorized_artillery = {
 
     formation_modifier = {
         military_formation_mobilization_speed_mult = -0.2
-        military_formation_movement_speed_mult = 0 #-0.2
+        military_formation_army_movement_speed_mult = 0 #-0.2
     }
 
 	unlocking_technologies = { ut_anti_tank_guided }
@@ -215,7 +215,7 @@ combat_unit_type_rocket_artillery = {
 
     formation_modifier = {
         military_formation_mobilization_speed_mult = -0.2
-        military_formation_movement_speed_mult = 0.2 #+0.2
+        military_formation_army_movement_speed_mult = 0.2 #+0.2
     }
 
 	unlocking_technologies = { ut_anti_tank_guided_software }
