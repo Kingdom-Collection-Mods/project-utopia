@@ -637,6 +637,11 @@ ut_new_dawn_common_pressure_progress_yearly = {
 		
 		change_variable = {
 			name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy
+			add = root.average_sol
+		}
+		
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy
 			subtract = var:je_ut_new_dawn_prev_average_sol
 		}
 		change_variable = {
@@ -800,6 +805,20 @@ ut_add_new_dawn_progress_communist = {
 	}
 }
 
+
+ut_add_new_dawn_pressure_points = {
+	if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_democratic_mod
+		}
+		je:je_ut_new_dawn_democratic = {
+			add_progress = {
+				name = je_ut_new_dawn_pressure_points_bar
+				value = $VALUE$
+			}
+		}
+	}
+}
 
 REPLACE:set_promised_building_group = { #Note: ig_scope
 	# First perform arable land check and set variable for staple crops. This system can be expanded to check for other resources.
