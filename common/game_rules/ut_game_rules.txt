@@ -12,3 +12,14 @@
 	}
 	
 }
+
+ut_new_dawn_historical_focus = {
+	default = ut_new_dawn_historical_focus_yes
+
+	ut_new_dawn_historical_focus_yes = {
+	}
+
+	ut_new_dawn_historical_focus_no = {
+		flag = ut_new_dawn_historical_focus_no
+	}	
+}
