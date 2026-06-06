@@ -319,7 +319,7 @@
 			400 = 0
 			10 = event_new_dawn.11
 			10 = event_new_dawn.12
-			10 = event_new_dawn.13
+			10 = event_new_dawn.13   #Radicals
 			# 10 = french_pretenders_pulse.3
 			# 50 = french_pretenders_pulse.10
 			# 10 = french_pretenders_pulse.11
@@ -625,6 +625,12 @@ je_ut_new_dawn_democratic = {
 			text = je_ut_new_dawn_critical_lower_bound_fail_tt
 			je:je_ut_new_dawn_democratic = { 
 				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" <= new_dawn_ideology_critical_lower_bound
+			}
+		}
+		custom_tooltip = {
+			text = je_ut_new_dawn_critical_lower_bound_fail_tt
+			je:je_ut_new_dawn_democratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" > 50
 			}
 		}
 	}
