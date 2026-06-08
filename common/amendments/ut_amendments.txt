@@ -5,26 +5,23 @@
         law_lgbt_rights_3
     }
 
- 
-
-    modifier = {}
+    modifier = {
+        state_standard_of_living_add = 0.5
+    }
 
     possible = {
         always = yes
     }
 
- 
 
-    can_repeal = {
-        always = yes
+    would_sponsor = {
+		ROOT = {
+            AND = {
+                exists = scope:approval
+                scope:approval > 0
+            }
+        }
     }
-
- 
-
-    ai_will_revoke = {
-        always = no
-    }
-
 }
 
 ut_lgbt_same_sex_marriage_amendment = {
@@ -37,53 +34,74 @@ ut_lgbt_same_sex_marriage_amendment = {
         law_lgbt_rights_3
     }
 
- 
-
-    modifier = {}
+    modifier = {
+        state_standard_of_living_add = 0.5
+    }
 
     possible = {
         NOT = { has_law = law_type:law_state_atheism }
     }
 
-
-    can_repeal = {       always = yes    }
- 
-
-    ai_will_revoke = {
-
-        always = no
-
+    would_sponsor = {
+		ROOT = {
+            AND = {
+                exists = scope:approval
+                scope:approval > 0
+            }
+        }
     }
-
 }
 
 ut_lgbt_sexual_self_determination_amendment = {
 
     parent = law_lgbt_rights_3 # optional reference to a law that dictates what stances IGs and movements have toward this amendment
-
- 
-
+    
     allowed_laws = {
         law_lgbt_rights_3
     }
-
- 
-
-    modifier = {}
+    
+    modifier = {
+        state_standard_of_living_add = 0.5
+    }
 
     possible = {
         NOT = { has_law_or_variant = law_type:law_state_religion }
     }
 
- 
-
-    can_repeal = {
-        always = yes
+    would_sponsor = {
+		ROOT = {
+            AND = {
+                exists = scope:approval
+                scope:approval > 0
+            }
+        }
     }
+}
 
- 
+amendment_council_republic_democratic = {
+	parent = law_parliamentary_republic
 
-    ai_will_revoke = {
-        always = no
-    }
+	allowed_laws = {
+        law_council_republic
+	}
+
+	modifier = {
+        interest_group_ig_trade_unions_pol_str_mult = -0.1
+	}
+
+	possible = {
+        has_modifier = ut_new_dawn_core_democratic_mod
+	}
+
+	would_sponsor = {
+		ROOT = {
+            is_interest_group_type = ig_petty_bourgeoisie
+            AND = {
+                exists = scope:approval
+                scope:approval > 0
+            }
+        }
+    }										
+
+	amendment_activism_multiplier = 0.5
 }
