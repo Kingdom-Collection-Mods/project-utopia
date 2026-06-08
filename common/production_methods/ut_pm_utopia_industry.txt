@@ -2049,7 +2049,7 @@ ut_pm_power_grid_import = {
 }
 
 ut_pm_power_grid_operations_analog = {
-    texture = "gfx/interface/icons/production_method_icons/james_grid_power.dds"
+    texture = "gfx/interface/icons/production_method_icons/vertical_filing_cabinets.dds"
     
     building_modifiers = {
         workforce_scaled = {
@@ -2062,7 +2062,7 @@ ut_pm_power_grid_operations_analog = {
 }
 
 ut_pm_power_grid_operations_digital = {
-    texture = "gfx/interface/icons/production_method_icons/james_grid_power.dds"
+    texture = "gfx/interface/icons/production_method_icons/telephone_switchboards.dds"
     
     building_modifiers = {
         workforce_scaled = {
@@ -2078,7 +2078,7 @@ ut_pm_power_grid_operations_digital = {
 }
 
 ut_pm_power_grid_operations_connected = {
-    texture = "gfx/interface/icons/production_method_icons/james_grid_power.dds"
+    texture = "gfx/interface/icons/production_method_icons/telephones.dds"
 
 	unlocking_technologies = {
 		software
