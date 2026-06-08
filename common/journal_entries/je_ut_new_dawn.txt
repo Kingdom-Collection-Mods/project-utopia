@@ -324,9 +324,9 @@
 			#Pressure Events
 			#Generic Bad (>50 pressure)
 			10 = event_new_dawn.120   #Approval crisis
-			5 = event_new_dawn.121   #Core progress setback
-			5 = event_new_dawn.122   #Emergency spending
-			10 = event_new_dawn.123   #Innovation disruption
+			1 = event_new_dawn.121   #Core progress setback
+			1 = event_new_dawn.122   #Emergency spending
+			5 = event_new_dawn.123   #Innovation disruption
 			0 = event_new_dawn.124   #Placeholder ideology rollback
 		}
 	}

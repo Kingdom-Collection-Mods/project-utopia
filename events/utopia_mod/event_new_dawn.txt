@@ -958,7 +958,6 @@ event_new_dawn.121 = {
 
 		ut_new_dawn_has_core_trigger = yes
 
-		NOT = { has_modifier = new_dawn_event_disapproval_mod }
 		ut_new_dawn_has_core_trigger = yes
 		ut_has_new_dawn_pressure_points = {
 			VALUE = 50
@@ -968,7 +967,6 @@ event_new_dawn.121 = {
 	#Setback
 	option = {
 		default_option = yes
-		highlighted_option = yes
 		name = event_new_dawn.121.a
 		custom_tooltip = ut_add_new_dawn_progress_neg_5
 		ut_add_new_dawn_core_progress = {
@@ -1010,7 +1008,6 @@ event_new_dawn.122 = {
 
 		ut_new_dawn_has_core_trigger = yes
 
-		NOT = { has_modifier = new_dawn_event_disapproval_mod }
 		ut_new_dawn_has_core_trigger = yes
 		ut_has_new_dawn_pressure_points = {
 			VALUE = 50
