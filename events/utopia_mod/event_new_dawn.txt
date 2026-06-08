@@ -1054,20 +1054,34 @@ event_new_dawn.123 = {
 		NOT = { has_modifier = new_dawn_event_innovation_max_reduced_mod }
 		ut_new_dawn_has_core_trigger = yes
 		ut_has_new_dawn_pressure_points = {
-			VALUE = 50
+			VALUE = 75
 		}
 	}
 
 	immediate = {
 	}
+	
+	option = {
+		name = je_ut_new_dawn_suppress_dissidents
+		custom_tooltip = ut_add_new_dawn_progress_neg_5
+		ut_add_new_dawn_core_progress = {
+			VALUE = -10
+		}
+	}
 
 	option = {
 		default_option = yes
-		highlighted_option = yes
 		name = event_new_dawn.123.a
 		add_modifier = {
 			name = new_dawn_event_innovation_max_reduced_mod
 			days = 730
+		}
+	}
+	
+	option = {
+		name = event_new_dawn.suppress_random_decision
+		add_radicals = {
+			value = 0.02
 		}
 	}
 }
