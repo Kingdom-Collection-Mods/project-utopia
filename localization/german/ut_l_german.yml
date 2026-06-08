@@ -1,4 +1,4 @@
-l_german:
+﻿l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -176,8 +176,10 @@ l_german:
  je_ut_new_dawn_effect_tt: "[concept_ut_nd_utopia]!"
  new_dawn_mod: "Neuer Aufbruch"
  new_dawn_phase_2_mod: "Neuer Aufbruch: Ideologie festigen"
+ new_dawn_event_disapproval_mod: "Neuer Aufbruch: Breite Ablehnung"
+ new_dawn_event_innovation_max_reduced_mod: "Neuer Aufbruch: Forschung gestört"
 
- new_dawn_event_radicals_mod: "New Dawn: Radicals"
+ new_dawn_event_radicals_mod: "Neuer Aufbruch: Radikale"
 
  event_new_dawn.1.t: "Neuer Aufbruch"
  event_new_dawn.1.d: "Eine neue politische Welle hat unsere Nation erfasst, und wir müssen entscheiden, wie wir darauf reagieren. Werden wir den Wandel begrüßen oder ihm widerstehen? Die Zukunft unseres Landes steht auf dem Spiel."
@@ -225,6 +227,32 @@ l_german:
  event_new_dawn.13.f: "Radical groups, fueled by frustration and a desire for change, have launched an uprising. They seek to dismantle the existing power structure and establish a new ideological order. The situation is volatile."
 
  event_new_dawn.13.a: "Radical groups are forming"
+
+ event_new_dawn.120.t: "Crisis of Confidence"
+ event_new_dawn.120.d: "Public trust in established leadership is eroding, and major interest groups are voicing broad disapproval."
+ event_new_dawn.120.f: "The issue is less an organized uprising and more a widening legitimacy crisis. Newspapers, assemblies, and political clubs now echo the same accusation: the current course no longer represents the nation's interests."
+ event_new_dawn.120.a: "Confidence in the government declines"
+
+ event_new_dawn.121.t: "Program Setback"
+ event_new_dawn.121.d: "Administrative confusion and infighting have slowed implementation of our core agenda."
+ event_new_dawn.121.f: "Competing ministries, procedural delays, and internal sabotage have drained momentum from the program. Unless discipline is restored, our core ideological project will lose ground."
+ event_new_dawn.121.a: "We lose momentum"
+
+ event_new_dawn.122.t: "Emergency Expenditure"
+ event_new_dawn.122.d: "A sudden crisis has forced the government to authorize extraordinary spending."
+ event_new_dawn.122.f: "Supply breakdowns, emergency procurement, and rapidly escalating costs have left no room for delay. The treasury must absorb a heavy one-time burden to keep the state apparatus functioning."
+ event_new_dawn.122.a: "Approve emergency funding"
+
+ event_new_dawn.123.t: "Research Network Disrupted"
+ event_new_dawn.123.d: "Institutional disruptions and political friction are reducing national research capacity."
+ event_new_dawn.123.f: "Universities are understaffed, archives are delayed, and technical committees are deadlocked. The innovation apparatus remains active, but its maximum output has fallen noticeably."
+ event_new_dawn.123.a: "Research output slows"
+
+ event_new_dawn.124.t: "Ideological Revision (Placeholder)"
+ event_new_dawn.124.d: "A draft mechanism for rolling back ideological progress is under design."
+ event_new_dawn.124.f: "This event currently serves as a placeholder for a future system that can directly undo ideological progress under specific circumstances."
+ event_new_dawn.124.a: "Acknowledge placeholder"
+ event_new_dawn.124.placeholder_tt: "Placeholder effect only. No ideological rollback is applied yet."
 
  event_new_dawn.democrat_leader: "Einen neuen demokratischen Anführer ernennen"
  event_new_dawn.autocrat_leader: "Eine autokratische Galionsfigur stärken"
@@ -745,6 +773,9 @@ l_german:
  ut_law_monarchy_democratic: "Konstitutionelle Monarchie"
  ut_law_monarchy_democratic_desc: "Ein System, in dem die Macht des Monarchen keine wirkliche politische Macht hat und ein gewähltes Parlament die Autorität innehat."
 
+ ut_law_council_republic_democratic: "Constitutional Council Republic"
+ ut_law_council_republic_democratic_desc: "A system where a council is elected to govern the country, with limited powers and checks and balances in place to prevent abuse of power."
+
  ut_law_monarchy_autocratic: "Absolute Monarchie"
  ut_law_monarchy_autocratic_desc: "Ein System, in dem der Monarch die höchste Autorität innehat."
 
@@ -1076,8 +1107,11 @@ l_german:
  ut_add_new_dawn_progress_neg_10: "Verliert #r 10#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_5: "Verliert #r 5#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_1: "Verliert #r 1#! [concept_ut_nd_progress_points]"
- ut_add_new_dawn_pressure_add_10: "Erhält #r 10#! [concept_ut_nd_pressure] Druck"
- ut_add_new_dawn_pressure_neg_10: "Verliere #g 10#! [concept_ut_nd_pressure]"
+
+ ut_has_new_dawn_pressure_50: "Hat #b 50#! [concept_ut_nd_pressure]"
+ ut_has_new_dawn_pressure_75: "Hat #b 75#! [concept_ut_nd_pressure]"
+ ut_has_new_dawn_pressure_90: "Hat #b 90#! [concept_ut_nd_pressure]"
+ ut_has_new_dawn_pressure_max: "Hat #b 100#! [concept_ut_nd_pressure]"
 
  ut_force_become_subject: "Räterepublik kollektivieren"
  ut_force_become_subject_action_name: "$ut_force_become_subject$"

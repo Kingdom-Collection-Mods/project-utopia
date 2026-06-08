@@ -86,6 +86,7 @@
 	scripted_button = ut_new_dawn_autocrat_focus
 	scripted_button = ut_new_dawn_democrat_focus
 	scripted_button = ut_new_dawn_communist_focus
+	
 	scripted_button = ut_new_dawn_core_external_offensive_focus_add
 	scripted_button = ut_new_dawn_core_external_offensive_focus_remove
 	scripted_button = ut_new_dawn_core_internal_good_times_focus_add

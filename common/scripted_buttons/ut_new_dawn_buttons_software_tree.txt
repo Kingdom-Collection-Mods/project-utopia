@@ -1,4 +1,4 @@
-﻿je_ut_software_era_6_1_assembler_language = {
+je_ut_software_era_6_1_assembler_language = {
 	name = "je_ut_software_era_6_1_assembler_language"
 	desc = "je_ut_software_era_6_1_assembler_language_desc"
 
@@ -7,6 +7,14 @@
 	possible = {
 		NOT = {
 			has_modifier = je_ut_software_era_6_1_assembler_language_mod
+		}
+		hidden_trigger = {
+			NOT = {
+				has_modifier = je_ut_software_era_6_2_assembler_language_mod
+			}
+			NOT = {
+				has_modifier = je_ut_software_era_6_3_high_level_language_mod
+			}
 		}
 		custom_tooltip = {
 			text = je_ut_software_era_6_required_points_tt
@@ -111,6 +119,7 @@ je_ut_software_era_7_1_operating_system = {
 
 	possible = {
 		has_technology_researched = computers
+		has_modifier = je_ut_software_era_6_3_high_level_language_mod
 		NOT = {
 			has_modifier = je_ut_software_era_7_1_operating_system_mod
 		}
@@ -129,6 +138,7 @@ je_ut_software_era_7_1_operating_system = {
 	}
 
 	effect = {
+		remove_modifier = je_ut_software_era_6_3_high_level_language_mod
 		add_modifier = je_ut_software_era_7_1_operating_system_mod
 		custom_tooltip = {
 			text = je_ut_software_era_7_required_points_spend_tt
@@ -287,6 +297,7 @@ je_ut_software_era_8_1_version_control = {
 	}
 
 	effect = {
+		remove_modifier = je_ut_software_era_7_3_object_oriented_programming_mod
 		add_modifier = je_ut_software_era_8_1_version_control_mod
 		custom_tooltip = {
 			text = je_ut_software_era_8_required_points_spend_tt

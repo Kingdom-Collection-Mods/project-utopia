@@ -27,5 +27,5 @@ $missing = $enData | Where-Object {
 
 "Missing count: $($missing.Count)"
 $missing | ForEach-Object {
-    Write-Output "$($_.Key) @ $($_.Index)"
+    Write-Output "$($_.Key) @ localization\german\ut_l_german.yml:$($_.Index)"
 }

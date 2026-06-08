@@ -951,7 +951,7 @@ pm_rare_earths_three_mine = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 15
+			state_pollution_generation_add = 20
 		}
 	}
 
@@ -961,7 +961,7 @@ pm_rare_earths_three_mine = {
 			goods_input_heavy_machinery_add = 10
 			goods_input_computers_add = 5
 			goods_input_software_add = 10
-			goods_input_electricity_add = 10
+			goods_input_electricity_add = 20
 			
 			# output goods
 			goods_output_rare_earths_add = 150
