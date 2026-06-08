@@ -773,8 +773,8 @@
  ut_law_monarchy_democratic: "Konstitutionelle Monarchie"
  ut_law_monarchy_democratic_desc: "Ein System, in dem die Macht des Monarchen keine wirkliche politische Macht hat und ein gewähltes Parlament die Autorität innehat."
 
- ut_law_council_republic_democratic: "Constitutional Council Republic"
- ut_law_council_republic_democratic_desc: "A system where a council is elected to govern the country, with limited powers and checks and balances in place to prevent abuse of power."
+ amendment_council_republic_democratic: "Constitutional Council Republic"
+ amendment_council_republic_democratic_desc: "A system where a council is elected to govern the country, with limited powers and checks and balances in place to prevent abuse of power."
 
  ut_law_monarchy_autocratic: "Absolute Monarchie"
  ut_law_monarchy_autocratic_desc: "Ein System, in dem der Monarch die höchste Autorität innehat."

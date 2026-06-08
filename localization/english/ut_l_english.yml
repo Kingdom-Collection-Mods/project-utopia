@@ -773,8 +773,8 @@
  ut_law_monarchy_democratic: "Constitutional Monarchy"
  ut_law_monarchy_democratic_desc: "A system where the monarch's powers has no real political power and an elected parliament holds authority."
 
- ut_law_council_republic_democratic: "Constitutional Council Republic"
- ut_law_council_republic_democratic_desc: "A system where a council is elected to govern the country, with limited powers and checks and balances in place to prevent abuse of power."
+ amendment_council_republic_democratic: "Constitutional Council Republic"
+ amendment_council_republic_democratic_desc: "A system where a council is elected to govern the country, with limited powers and checks and balances in place to prevent abuse of power."
 
  ut_law_monarchy_autocratic: "Absolute Monarchy"
  ut_law_monarchy_autocratic_desc: "A system where the monarch holds supreme authority."
@@ -1061,11 +1061,11 @@
  ut_communism_article_article_short_desc: "Spreads Communism to [TARGET_COUNTRY.GetNameNoFormatting]"
 
  war_goal_ut_regime_change_democratic_offensive_type_name: "Democratic Regime Change" 
- war_goal_ut_regime_change_democratic_offensive_type_desc: "Force another [concept_country] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to your own"
+ war_goal_ut_regime_change_democratic_offensive_type_desc: "Force another [concept_country] to change their $POWER_STRUCTURE$ to [GetLawType('law_universal_suffrage').GetName]"
  war_goal_ut_regime_change_democratic_offensive: "Democratic Regime Change in [WAR_GOAL_DRAFT.GetTarget.GetName]"
  war_goal_ut_regime_change_democratic_offensive_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] forces [WAR_GOAL_DRAFT.GetTarget.GetName] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to their own. The following Law will be enforced:  [GetLawType('law_universal_suffrage').GetName]"
  war_goal_ut_regime_change_democratic_defensive_type_name: "Democratic Regime Change" 
- war_goal_ut_regime_change_democratic_defensive_type_desc: "Force another [concept_country] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to your own"
+ war_goal_ut_regime_change_democratic_defensive_type_desc: "Force an attacking [concept_country] to change their $POWER_STRUCTURE$ to [GetLawType('law_universal_suffrage').GetName]"
  war_goal_ut_regime_change_democratic_defensive: "Democratic Regime Change in [WAR_GOAL_DRAFT.GetTarget.GetName]"
  war_goal_ut_regime_change_democratic_defensive_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] forces [WAR_GOAL_DRAFT.GetTarget.GetName] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to their own. The following Law will be enforced:  [GetLawType('law_universal_suffrage').GetName]"
  war_goal_ut_regime_change_communist_type_name: "Communist Regime Change" 

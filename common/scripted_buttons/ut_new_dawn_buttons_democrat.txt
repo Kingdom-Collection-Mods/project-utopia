@@ -18,6 +18,12 @@ je_ut_new_dawn_democratic_spirit = {
 			has_law_or_variant = law_type:law_parliamentary_republic
 			has_law_or_variant = law_type:law_presidential_republic
 			has_law = law_type:ut_law_monarchy_democratic
+			
+			active_law:lawgroup_governance_principles ?= {
+				OR = {
+					has_amendment = amendment_council_republic_democratic
+				}
+			}
 		}
 		has_law_or_variant = law_type:law_universal_suffrage
 		NOT = {
