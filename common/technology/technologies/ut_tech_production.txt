@@ -11,6 +11,7 @@ machinery_farming = {
 
 	modifier = {
 		building_group_bg_agriculture_throughput_add = 0.1
+		building_fishing_wharf_throughput_add = 0.2
 	}
 	
 	ai_weight = {
@@ -25,6 +26,10 @@ heavy_machinery_farming = {
 
 	unlocking_technologies = {	
 		machinery_farming
+	}
+
+	modifier = {
+		building_fishing_wharf_throughput_add = 0.2
 	}
 	
 	ai_weight = {
@@ -41,6 +46,10 @@ airplane_farming = {
 		heavy_machinery_farming
 	}
 	
+	modifier = {
+		building_fishing_wharf_throughput_add = 0.2
+	}
+
 	ai_weight = {
 		value = 1
 	}
@@ -56,6 +65,10 @@ drone_farming = {
 		airplane_farming
 	}
 	
+	modifier = {
+		building_fishing_wharf_throughput_add = 0.4
+	}
+
 	ai_weight = {
 		value = 1
 	}
