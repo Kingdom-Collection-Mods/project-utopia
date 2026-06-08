@@ -1,5 +1,6 @@
-﻿namespace = event_new_dawn
+namespace = event_new_dawn
 
+#Journal Entries core direct trigger events 1-99
 #New Dawn start
 event_new_dawn.1 = {
 	type = country_event
@@ -142,10 +143,6 @@ event_new_dawn.2 = {
 
 	trigger = {
 		# triggered by new dawn journal entry
-	}
-
-	cancellation_trigger = {
-		always = no
 	}
 
 	immediate = {
@@ -357,10 +354,6 @@ event_new_dawn.3 = {
 		# triggered by Divided Monarchy Journal Entry
 	}
 
-	cancellation_trigger = {
-		always = no
-	}
-
 	immediate = {
 		
 	}
@@ -503,8 +496,7 @@ event_new_dawn.3 = {
 	}
 }
 
-#Interest Group Events Core Ideology
-#Armed Forces
+# Armed Forces
 event_new_dawn.11 = {
 	type = country_event
 	placement = ROOT
@@ -530,10 +522,6 @@ event_new_dawn.11 = {
 		ig:ig_armed_forces = {
 			is_marginal = no
 		}
-	}
-
-	cancellation_trigger = {
-		always = no
 	}
 
 	immediate = {
@@ -654,7 +642,7 @@ event_new_dawn.11 = {
 	}
 }
 
-#Petite Bourgeoisie
+# Petite Bourgeoisie
 event_new_dawn.12 = {
 	type = country_event
 	placement = ROOT
@@ -680,10 +668,6 @@ event_new_dawn.12 = {
 		ig:ig_petty_bourgeoisie = {
 			is_marginal = no
 		}
-	}
-
-	cancellation_trigger = {
-		always = no
 	}
 
 	immediate = {
