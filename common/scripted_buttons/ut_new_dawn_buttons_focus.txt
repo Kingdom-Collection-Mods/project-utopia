@@ -45,7 +45,7 @@ ut_new_dawn_fascist_focus = {
 			limit = {
 				has_modifier = je_ut_new_dawn_fascist_focus
 			}
-			add = 100
+			add = 25
 		}
 		if = {
 			limit = {
@@ -92,7 +92,7 @@ ut_new_dawn_fascist_focus = {
 		if = {
 			#Red scare if not socialist them self?
 			limit = {
-				NOT = { has_law = law_type:law_multicultural }
+				NOT = { has_law = law_type:law_universal_suffrage }
 				NOT = { has_law = law_type:law_cooperative_ownership }
 				NOT = { has_law = law_type:law_command_economy }
 				any_rival_country = {
@@ -107,7 +107,7 @@ ut_new_dawn_fascist_focus = {
 		if = {
 			#Red scare if not socialist them self?
 			limit = {
-				NOT = { has_law = law_type:law_multicultural }
+				NOT = { has_law = law_type:law_universal_suffrage }
 				NOT = { has_law = law_type:law_cooperative_ownership }
 				NOT = { has_law = law_type:law_command_economy }
 				any_rival_country = {
@@ -160,12 +160,11 @@ ut_new_dawn_autocrat_focus = {
 	}
 	ai_chance = {
 		value = 0
-		
 		if = {
 			limit = {
 				has_modifier = je_ut_new_dawn_autocrat_focus
 			}
-			add = 100
+			add = 25
 		}
 		if = {
 			limit = {
@@ -252,7 +251,7 @@ ut_new_dawn_democrat_focus = {
 			limit = {
 				has_modifier = je_ut_new_dawn_democrat_focus
 			}
-			add = 100
+			add = 25
 		}
 		if = {
 			limit = {
@@ -282,7 +281,7 @@ ut_new_dawn_democrat_focus = {
 			limit = {
 				global_country_ranking > 5
 			}
-			add = 20
+			add = 10
 		}
 		if = {
 			limit = {
@@ -401,7 +400,7 @@ ut_new_dawn_communist_focus = {
 			limit = {
 				has_modifier = je_ut_new_dawn_communist_focus
 			}
-			add = 100
+			add = 25
 		}
 		if = {
 			limit = {
@@ -424,6 +423,14 @@ ut_new_dawn_communist_focus = {
 				has_law = law_type:law_council_republic
 			}
 			add = 20
+		}
+		if = {
+			#to balance with fascism
+			limit = {
+				global_country_ranking <= 5
+				country_rank >= rank_value:great_power
+			}
+			add = 5
 		}
 		if = {
 			#Fascist scare if communist them self?
