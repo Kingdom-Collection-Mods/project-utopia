@@ -1,4 +1,4 @@
-﻿l_german:
+l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -1922,6 +1922,7 @@
  smart_irrigation_building_rubber_plantation: "Intelligente Bewässerung"
  smart_irrigation_building_vineyard: "Intelligente Bewässerung"
  smart_irrigation_building_coffee_plantation: "Intelligente Bewässerung"
+ smart_irrigation_building_cotton_plantation: "Intelligente Bewässerung"
  smart_irrigation_building_opium_plantation: "Intelligente Bewässerung"
 
  agricultural_mechanization: "Schwere Traktoren"
