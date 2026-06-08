@@ -178,6 +178,8 @@
  new_dawn_phase_2_mod: "New Dawn: Reinforce Ideology"
 
  new_dawn_event_radicals_mod: "New Dawn: Radicals"
+ new_dawn_event_disapproval_mod: "New Dawn: Broad Disapproval"
+ new_dawn_event_innovation_max_reduced_mod: "New Dawn: Research Disruption"
 
  event_new_dawn.1.t: "New Dawn"
  event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
@@ -225,6 +227,32 @@
  event_new_dawn.13.f: "Radical groups, fueled by frustration and a desire for change, have launched an uprising. They seek to dismantle the existing power structure and establish a new ideological order. The situation is volatile."
 
  event_new_dawn.13.a: "Radical groups are forming"
+
+ event_new_dawn.120.t: "Crisis of Confidence"
+ event_new_dawn.120.d: "Public trust in established leadership is eroding, and major interest groups are voicing broad disapproval."
+ event_new_dawn.120.f: "The issue is less an organized uprising and more a widening legitimacy crisis. Newspapers, assemblies, and political clubs now echo the same accusation: the current course no longer represents the nation's interests."
+ event_new_dawn.120.a: "Confidence in the government declines"
+
+ event_new_dawn.121.t: "Program Setback"
+ event_new_dawn.121.d: "Administrative confusion and infighting have slowed implementation of our core agenda."
+ event_new_dawn.121.f: "Competing ministries, procedural delays, and internal sabotage have drained momentum from the program. Unless discipline is restored, our core ideological project will lose ground."
+ event_new_dawn.121.a: "We lose momentum"
+
+ event_new_dawn.122.t: "Emergency Expenditure"
+ event_new_dawn.122.d: "A sudden crisis has forced the government to authorize extraordinary spending."
+ event_new_dawn.122.f: "Supply breakdowns, emergency procurement, and rapidly escalating costs have left no room for delay. The treasury must absorb a heavy one-time burden to keep the state apparatus functioning."
+ event_new_dawn.122.a: "Approve emergency funding"
+
+ event_new_dawn.123.t: "Research Network Disrupted"
+ event_new_dawn.123.d: "Institutional disruptions and political friction are reducing national research capacity."
+ event_new_dawn.123.f: "Universities are understaffed, archives are delayed, and technical committees are deadlocked. The innovation apparatus remains active, but its maximum output has fallen noticeably."
+ event_new_dawn.123.a: "Research output slows"
+
+ event_new_dawn.124.t: "Ideological Revision (Placeholder)"
+ event_new_dawn.124.d: "A draft mechanism for rolling back ideological progress is under design."
+ event_new_dawn.124.f: "This event currently serves as a placeholder for a future system that can directly undo ideological progress under specific circumstances."
+ event_new_dawn.124.a: "Acknowledge placeholder"
+ event_new_dawn.124.placeholder_tt: "Placeholder effect only. No ideological rollback is applied yet."
 
  event_new_dawn.democrat_leader: "Appoint a new democratic leader"
  event_new_dawn.autocrat_leader: "Empower an autocratic figurehead"
@@ -1077,6 +1105,10 @@
  ut_add_new_dawn_progress_neg_5: "Loses #r 5#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_1: "Loses #r 1#! [concept_ut_nd_progress_points]"
 
+ ut_has_new_dawn_pressure_50: "Has #b 50#! [concept_ut_nd_pressure]"
+ ut_has_new_dawn_pressure_75: "Has #b 75#! [concept_ut_nd_pressure]"
+ ut_has_new_dawn_pressure_90: "Has #b 90#! [concept_ut_nd_pressure]"
+ ut_has_new_dawn_pressure_max: "Has #b 100#! [concept_ut_nd_pressure]"
  ut_add_new_dawn_pressure_add_10: "Gains #r 10#! [concept_ut_nd_pressure]"
  ut_add_new_dawn_pressure_neg_10: "Loses #g 10#! [concept_ut_nd_pressure]"
 

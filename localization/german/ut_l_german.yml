@@ -264,11 +264,13 @@
  event_new_dawn.cheat.add_autocratic_50: "Füge 50 #blue Autokratischen#! Fortschritt hinzu"
  event_new_dawn.cheat.add_fascist_50: "Füge 50 #g Faschistischen#! Fortschritt hinzu"
  event_new_dawn.cheat.add_communist_50: "Füge 50 #r Kommunistischen#! Fortschritt hinzu"
+ event_new_dawn.cheat.add_pressure: "Füge 10 [concept_ut_nd_pressure] Druck hinzu"
  event_new_dawn.cheat.remove_democratic_50: "Entferne 50 #blue Demokratischen#! Fortschritt"
  event_new_dawn.cheat.remove_autocratic_50: "Entferne 50 #blue Autokratischen#! Fortschritt"
  event_new_dawn.cheat.remove_fascist_50: "Entferne 50 #g Faschistischen#! Fortschritt"
  event_new_dawn.cheat.remove_communist_50: "Entferne 50 #r Kommunistischen#! Fortschritt"
  event_new_dawn.cheat.remove_focus_recently_changed: "Entferne Fokus kürzlich geändert"
+ event_new_dawn.cheat.remove_pressure: "Entferne 10 [concept_ut_nd_pressure] Druck"
 
  ut_new_dawn_status: "Neuer Aufbruch"
  ut_new_dawn_focus_recently_changed: "Fokus kürzlich geändert"
@@ -282,6 +284,7 @@
  country_new_dawn_progress_points_progress_desc: "Ändert den Zuwachs von [Concept('concept_ut_nd_progress_points', 'Fortschrittspunkten')] für die Kernideologie."
 
  je_ut_new_dawn_critical_lower_bound_fail_tt: "Hat #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! [concept_ut_nd_progress_points]"
+ je_ut_new_dawn_critical_lower_bound_fail_pressure_tt: "Hat #r 50#! [concept_ut_nd_pressure] Druck"
 
  je_ut_new_dawn_common_pressure_progress_from_sol_yoy: "[concept_sol] yearly change"
  je_ut_new_dawn_common_pressure_progress_from_legitimacy: "expected [concept_legitimacy]"
@@ -1073,6 +1076,8 @@
  ut_add_new_dawn_progress_neg_10: "Verliert #r 10#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_5: "Verliert #r 5#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_1: "Verliert #r 1#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_pressure_add_10: "Erhält #r 10#! [concept_ut_nd_pressure] Druck"
+ ut_add_new_dawn_pressure_neg_10: "Verliere #g 10#! [concept_ut_nd_pressure]"
 
  ut_force_become_subject: "Räterepublik kollektivieren"
  ut_force_become_subject_action_name: "$ut_force_become_subject$"

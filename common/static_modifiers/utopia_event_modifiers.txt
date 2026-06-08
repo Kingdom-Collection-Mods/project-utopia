@@ -39,6 +39,16 @@ new_dawn_event_radicals_mod = {
 	political_movement_radicalism_add = 0.25
 }
 
+new_dawn_event_disapproval_mod = {
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
+	interest_group_approval_add = -2
+}
+
+new_dawn_event_innovation_max_reduced_mod = {
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
+	country_weekly_innovation_max_add = -40
+}
+
 ut_new_dawn_focus_recently_changed = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 }

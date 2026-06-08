@@ -1,4 +1,4 @@
-namespace = event_new_dawn
+﻿namespace = event_new_dawn
 
 #Journal Entries core direct trigger events 1-99
 #New Dawn start
@@ -817,11 +817,88 @@ event_new_dawn.13 = {
 		}
 	}
 
-	cancellation_trigger = {
-		always = no
+	#Suppress
+	option = {
+		highlighted_option = yes
+		trigger = {
+			ut_new_dawn_has_core_trigger = yes
+			custom_tooltip = {
+				text = ut_has_new_dawn_pressure_50
+				NOT = {
+					ut_has_new_dawn_pressure_points = {
+						VALUE = 50
+					}
+				}
+			}
+		}
+		name = je_ut_new_dawn_suppress_dissidents
+		custom_tooltip = ut_add_new_dawn_progress_neg_5
+		ut_add_new_dawn_core_progress = {
+			VALUE = -5
+		}
 	}
 
-	immediate = {
+	#Happens
+	option = {
+		default_option = yes
+		name = event_new_dawn.13.a
+		if = {
+			limit = {
+				ut_has_new_dawn_pressure_points = {
+					VALUE = 75
+				}
+			}
+			add_modifier = {
+				name = new_dawn_event_radicals_mod
+				days = 730
+			}
+		}
+		else = {
+			add_modifier = {
+				name = new_dawn_event_radicals_mod
+				days = 365
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.suppress_random_decision
+		add_radicals = {
+			value = 0.01
+		}
+	}
+}
+
+#Approval Crisis
+event_new_dawn.120 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.120.t
+	desc = event_new_dawn.120.d
+	flavor = event_new_dawn.120.f
+
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	#gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		# too much for ai
+		is_ai = no
+
+		ut_new_dawn_has_core_trigger = yes
+
+		NOT = { has_modifier = new_dawn_event_disapproval_mod }
+		ut_has_new_dawn_pressure_points = {
+			VALUE = 50
+		}
 	}
 
 	#Suppress
@@ -840,9 +917,9 @@ event_new_dawn.13 = {
 	#Happens
 	option = {
 		default_option = yes
-		name = event_new_dawn.13.a
+		name = event_new_dawn.120.a
 		add_modifier = {
-			name = new_dawn_event_radicals_mod
+			name = new_dawn_event_disapproval_mod
 			days = 365
 		}
 	}
@@ -852,6 +929,189 @@ event_new_dawn.13 = {
 		add_radicals = {
 			value = 0.01
 		}
+	}
+}
+
+#Core Progress Setback
+event_new_dawn.121 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.121.t
+	desc = event_new_dawn.121.d
+	flavor = event_new_dawn.121.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	#gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		# too much for ai
+		is_ai = no
+
+		ut_new_dawn_has_core_trigger = yes
+
+		NOT = { has_modifier = new_dawn_event_disapproval_mod }
+		ut_new_dawn_has_core_trigger = yes
+		ut_has_new_dawn_pressure_points = {
+			VALUE = 50
+		}
+	}
+
+	#Setback
+	option = {
+		default_option = yes
+		highlighted_option = yes
+		name = event_new_dawn.121.a
+		custom_tooltip = ut_add_new_dawn_progress_neg_5
+		ut_add_new_dawn_core_progress = {
+			VALUE = -5
+		}
+	}
+
+	option = {
+		name = event_new_dawn.suppress_random_decision
+		add_radicals = {
+			value = 0.01
+		}
+	}
+}
+
+#Emergency Expenditure
+event_new_dawn.122 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.122.t
+	desc = event_new_dawn.122.d
+	flavor = event_new_dawn.122.f
+
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	#gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		# too much for ai
+		is_ai = no
+
+		ut_new_dawn_has_core_trigger = yes
+
+		NOT = { has_modifier = new_dawn_event_disapproval_mod }
+		ut_new_dawn_has_core_trigger = yes
+		ut_has_new_dawn_pressure_points = {
+			VALUE = 50
+		}
+	}
+
+	option = {
+		default_option = yes
+		highlighted_option = yes
+		name = event_new_dawn.122.a
+		add_treasury = -25000
+	}
+}
+
+#Innovation Disruption
+event_new_dawn.123 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.123.t
+	desc = event_new_dawn.123.d
+	flavor = event_new_dawn.123.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	#gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		# too much for ai
+		is_ai = no
+
+		ut_new_dawn_has_core_trigger = yes
+
+		NOT = { has_modifier = new_dawn_event_innovation_max_reduced_mod }
+		ut_new_dawn_has_core_trigger = yes
+		ut_has_new_dawn_pressure_points = {
+			VALUE = 50
+		}
+	}
+
+	immediate = {
+	}
+
+	option = {
+		default_option = yes
+		highlighted_option = yes
+		name = event_new_dawn.123.a
+		add_modifier = {
+			name = new_dawn_event_innovation_max_reduced_mod
+			days = 730
+		}
+	}
+}
+
+#Placeholder Ideology Rollback
+event_new_dawn.124 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.124.t
+	desc = event_new_dawn.124.d
+	flavor = event_new_dawn.124.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	#gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		# too much for ai
+		is_ai = no
+		NOT = { has_variable = event_new_dawn_18_done }
+		ut_new_dawn_has_core_trigger = yes
+	}
+
+	immediate = {
+		set_variable = event_new_dawn_18_done
+	}
+
+	option = {
+		default_option = yes
+		highlighted_option = yes
+		name = event_new_dawn.124.a
+		custom_tooltip = event_new_dawn.124.placeholder_tt
+		# Placeholder: hook ideological rollback effect here when designed.
+		# ut_add_new_dawn_core_progress = {
+		# 	VALUE = -25
+		# }
 	}
 }
 

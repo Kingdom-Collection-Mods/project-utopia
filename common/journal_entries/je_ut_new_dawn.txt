@@ -320,16 +320,14 @@
 			10 = event_new_dawn.11
 			10 = event_new_dawn.12
 			10 = event_new_dawn.13   #Radicals
-			# 10 = french_pretenders_pulse.3
-			# 50 = french_pretenders_pulse.10
-			# 10 = french_pretenders_pulse.11
-			# 10 = french_pretenders_pulse.12
-			# 10 = french_pretenders_pulse.13
-			# 10 = french_pretenders_pulse.14
-			# 10 = french_pretenders_pulse.15
-			# 10 = french_pretenders_pulse.16
-			# 10 = french_pretenders_pulse.17
-			# 10 = french_pretenders_pulse.18
+
+			#Pressure Events
+			#Generic Bad (>50 pressure)
+			10 = event_new_dawn.120   #Approval crisis
+			5 = event_new_dawn.121   #Core progress setback
+			5 = event_new_dawn.122   #Emergency spending
+			10 = event_new_dawn.123   #Innovation disruption
+			0 = event_new_dawn.124   #Placeholder ideology rollback
 		}
 	}
 
