@@ -2152,7 +2152,7 @@ pm_ut_ultra_high_voltage_electricity = {
 
 	disallowing_laws = {
 		law_environment_protection_institute_two
-		law_environment_protection_institute_three
+		#banned at law_environment_protection_institute_three
 	}
 
 	building_modifiers = {

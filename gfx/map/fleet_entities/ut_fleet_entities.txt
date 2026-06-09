@@ -4,7 +4,7 @@ ship_type_capital_battleship = {
 	weapon_type = turret
 	hull_type = steel
 	motion_intensity = 0.7
-	length = 9.0
+	length = 10.0
 
 	entity = "superdreadnought_base_entity"
 
