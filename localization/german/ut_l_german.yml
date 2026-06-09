@@ -792,7 +792,10 @@
  ut_law_subjecthood_fascist_desc: "All eroberten Völker sind Subjekte der führenden Nation."
 
  ut_communist_enact_law_variants: "Gesetz-Varianten erlassen"
- ut_communist_enact_law_variants_desc: "Erlaubt den Erlass besonderer Gesetzesvarianten, die
+ ut_communist_enact_law_variants_desc: "Erlaubt den Erlass besonderer Gesetzesvarianten, die auf [concept_ut_nd_communist_core] Pfad zugeschnitten sind, um die Bedürfnisse und Werte der Bevölkerung besser zu erfüllen."
+
+ ut_democrat_enact_law_variants: "Gesetz-Varianten erlassen"
+ ut_democrat_enact_law_variants_desc: "Erlaubt den Erlass besonderer Gesetzesvarianten, die auf [concept_ut_nd_democrat_core] Pfad zugeschnitten sind, um die Bedürfnisse und Werte der Bevölkerung besser zu erfüllen."
 
  law_social_market_economy: "Soziale Marktwirtschaft" 
  law_social_market_economy_desc: "Eine regulierte Marktwirtschaft, die freien Wettbewerb mit sozialer Absicherung verbindet, um Wohlstand und gesellschaftlichen Ausgleich zu fördern."
@@ -1112,6 +1115,10 @@
  ut_has_new_dawn_pressure_75: "Hat #b 75#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_90: "Hat #b 90#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_max: "Hat #b 100#! [concept_ut_nd_pressure]"
+
+ ut_add_new_dawn_pressure_add_1: "Erhöht [concept_ut_nd_pressure] um #g 1#!"
+ ut_add_new_dawn_pressure_add_10: "Erhöht [concept_ut_nd_pressure] um #g 10#!"
+ ut_add_new_dawn_pressure_remove_10: "Verringert [concept_ut_nd_pressure] um #r 10#!"
 
  ut_force_become_subject: "Räterepublik kollektivieren"
  ut_force_become_subject_action_name: "$ut_force_become_subject$"
@@ -2003,8 +2010,10 @@
  je_ut_software_era_7_2_relational_database_desc: "Strukturierte Datensysteme ermoglichen skalierbare Speicherung, Abfragen und Geschaftsanalysen."
  je_ut_software_era_7_2_relational_database_mod: "$je_ut_software_era_7_2_relational_database$"
  je_ut_software_era_7_3_object_oriented_language: "Objektorientierte Programmierung"
- je_ut_software_era_7_3_object_oriented_programming_desc: "Objektorientierte Methoden beschleunigen komplexe Softwareentwicklung und Wiederverwendung."
- je_ut_software_era_7_3_object_oriented_language_mod: "$ut_software_era_7_3_object_oriented_language$"
+ je_ut_software_era_7_3_object_oriented_language_desc: "Objektorientierte Methoden beschleunigen komplexe Softwareentwicklung und Wiederverwendung."
+ je_ut_software_era_7_3_object_oriented_language_mod: "$je_ut_software_era_7_3_object_oriented_language$"
+ je_ut_software_era_7_open_source: "Open Source"
+ je_ut_software_era_7_open_source_desc: "Offene Zusammenarbeit verbreitet Software-Expertise über den gesamten Globus."
 
  je_ut_software_era_7_required_points_tt: "Erfordert mindestens #v 1000#! $je_ut_software_points_bar_era_7$"
  je_ut_software_era_7_required_points_spend_tt: "Verbraucht #v 1000#! $je_ut_software_points_bar_era_7$"

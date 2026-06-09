@@ -1,4 +1,4 @@
-je_ut_software_era_6_1_assembler_language = {
+﻿je_ut_software_era_6_1_assembler_language = {
 	name = "je_ut_software_era_6_1_assembler_language"
 	desc = "je_ut_software_era_6_1_assembler_language_desc"
 
@@ -196,7 +196,7 @@ je_ut_software_era_7_2_relational_database = {
 
 je_ut_software_era_7_3_object_oriented_language = {
 	name = "je_ut_software_era_7_3_object_oriented_language"
-	desc = "je_ut_software_era_7_3_object_oriented_programming_desc"
+	desc = "je_ut_software_era_7_3_object_oriented_language_desc"
 
 	visible = { always = yes }
 

@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -359,12 +359,12 @@ l_english:
  ut_new_dawn_democratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] [Concept('concept_ut_nd_democrat_core', '@ut_nd_democrat!')]"
  ut_new_dawn_autocratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] [Concept('concept_ut_nd_autocrat_core', '@ut_nd_autocrat!')]"
  ut_new_dawn_no_core_list_entry: "[THIS.GetCountry.GetName] is trending towards [THIS.GetCountry.GetCustom('ut_new_dawn_phase_1_trend')]"
- ut_phase_1_trend_democrat: "$concept_ut_nd_democrat_core$ (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_democrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
- ut_phase_1_trend_autocrat: "$concept_ut_nd_autocrat_core$ (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_autocrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
- ut_phase_1_trend_fascist: "$concept_ut_nd_fascist_core$ (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
- ut_phase_1_trend_communist: "$concept_ut_nd_communist_core$ (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_communist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
+ ut_phase_1_trend_democrat: "[concept_ut_nd_democrat_core] (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_democrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
+ ut_phase_1_trend_autocrat: "[concept_ut_nd_autocrat_core] (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_autocrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
+ ut_phase_1_trend_fascist: "[concept_ut_nd_fascist_core] (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
+ ut_phase_1_trend_communist: "[concept_ut_nd_communist_core] (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_communist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
  ut_phase_1_trend_undefined: "unclear ideology (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip ?#!#!)"
- ut_phase_1_trend_tooltip: "$concept_ut_nd_democrat_core$: [Country.MakeScope.Var('ut_new_dawn_democrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n$concept_ut_nd_autocrat_core$: [Country.MakeScope.Var('ut_new_dawn_autocrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n$concept_ut_nd_fascist_core$: [Country.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n$concept_ut_nd_communist_core$: [Country.MakeScope.Var('ut_new_dawn_communist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]"
+ ut_phase_1_trend_tooltip: "[concept_ut_nd_democrat_core]: [Country.MakeScope.Var('ut_new_dawn_democrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_autocrat_core]: [Country.MakeScope.Var('ut_new_dawn_autocrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_fascist_core]: [Country.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_communist_core]: [Country.MakeScope.Var('ut_new_dawn_communist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]"
  ut_progress_trend_max: "#tooltip:[ROOT.GetCountry.GetTooltipTag],ut_progress_trend_tooltip @profitabilitymax!#!"
  ut_progress_trend_critical: "#tooltip:[ROOT.GetCountry.GetTooltipTag],ut_progress_trend_tooltip @profitability1!@warning!#!"
  ut_progress_trend_up4: "#tooltip:[ROOT.GetCountry.GetTooltipTag],ut_progress_trend_tooltip @profitability13!#!"
@@ -2000,7 +2000,7 @@ l_english:
  je_ut_software_era_7: "Software Expertise: Era 7"
  je_ut_software_era_7_reason: "Develop modern software paradigms to complete the software expertise track."
  je_ut_software_points_bar_era_7: "Software Expertise"
- je_ut_software_points_bar_era_7_desc: "Software Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
+ je_ut_software_points_bar_era_7_desc: "Software Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/1000)"
 
  je_ut_software_era_7_1_operating_system: "Operating System"
  je_ut_software_era_7_1_operating_system_desc: "Standardized operating environments improve software deployment and reliability."
@@ -2009,8 +2009,10 @@ l_english:
  je_ut_software_era_7_2_relational_database_desc: "Structured data systems enable scalable storage, querying, and business analytics."
  je_ut_software_era_7_2_relational_database_mod: "$je_ut_software_era_7_2_relational_database$"
  je_ut_software_era_7_3_object_oriented_language: "Object-Oriented Programming"
- je_ut_software_era_7_3_object_oriented_programming_desc: "Object-oriented methods accelerate complex software development and reuse."
- je_ut_software_era_7_3_object_oriented_language_mod: "$ut_software_era_7_3_object_oriented_language$"
+ je_ut_software_era_7_3_object_oriented_language_desc: "Object-oriented methods accelerate complex software development and reuse."
+ je_ut_software_era_7_3_object_oriented_language_mod: "$je_ut_software_era_7_3_object_oriented_language$"
+ je_ut_software_era_7_open_source: "Open Source Expertise"
+ je_ut_software_era_7_open_source_desc: "Open collaboration spreads software expertise across the entire globe."
 
  je_ut_software_era_7_required_points_tt: "Requires at least #v 1000#! $je_ut_software_points_bar_era_7$"
  je_ut_software_era_7_required_points_spend_tt: "Consumes #v 1000#! $je_ut_software_points_bar_era_7$"
@@ -2041,7 +2043,7 @@ l_english:
  je_ut_software_era_8_6_ownership_model_language_desc: "Ownership-based programming models improve reliability, performance, and memory safety."
  je_ut_software_era_8_6_ownership_model_language_mod: "$je_ut_software_era_8_6_ownership_model_language$"
  je_ut_software_era_8_open_source: "Open Source"
- je_ut_software_era_8_open_source_desc: "Open collaboration spreads advanced software expertise across the entire continent."
+ je_ut_software_era_8_open_source_desc: "Open collaboration spreads advanced software expertise across the entire globe."
 
  je_ut_software_era_8_required_points_tt: "Requires at least #v 10000#! $je_ut_software_points_bar_era_8$"
  je_ut_software_era_8_required_points_spend_tt: "Consumes #v 10000#! $je_ut_software_points_bar_era_8$"
@@ -2050,9 +2052,9 @@ l_english:
 
  je_ut_software_points_bar_progress_buildings_era_6: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_6_tooltip Buildings #!#!"
  je_ut_software_points_bar_progress_buildings_era_6_tooltip: "Sum of [concept_occupancy] times [concept_building_level].\nMaximum gain is 10 Software Expertise."
- je_ut_software_points_bar_progress_buildings_era_7: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_7_tooltip Buildings #!#!"
+ je_ut_software_points_bar_progress_buildings_era_7: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_7_tooltip Buildings #!#! (at least [concept_building_level] 5)"
  je_ut_software_points_bar_progress_buildings_era_7_tooltip: "Sum of [concept_occupancy] times [concept_building_level].\nOnly buildings with at least [concept_building_level] #b 5#! are counted.\nMaximum gain is 100 Software Expertise."
- je_ut_software_points_bar_progress_buildings_era_8: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_8_tooltip Buildings #!#!"
+ je_ut_software_points_bar_progress_buildings_era_8: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_8_tooltip Buildings #!#! (at least [concept_building_level] 20)"
  je_ut_software_points_bar_progress_buildings_era_8_tooltip: "Sum of [concept_occupancy] times [concept_building_level].\nOnly buildings with at least [concept_building_level] #b 20#! are counted.\nMaximum gain is 1000 Software Expertise."
  je_ut_software_points_bar_progress_no_research_institute: "has no [GetBuildingType('building_ut_research_institute').GetName]"
 

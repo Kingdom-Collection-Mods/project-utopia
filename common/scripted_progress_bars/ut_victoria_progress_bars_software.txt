@@ -40,16 +40,11 @@ je_ut_software_points_bar_era_7 = {
 	default_green = yes
 
 	monthly_progress = {
-		
-		if = {
-			limit = {
-				is_player = yes #only for player for easier ai calculations
-			}
-			add = {
-				desc = "base_value"
-				value = -10
-			}
+		add = {
+			desc = "base_value"
+			value = -1
 		}
+
 		add = {
 			desc = "je_ut_software_points_bar_progress_buildings_era_7"
 			value = root.var:je_ut_software_points_bar_progress_buildings_era_7
@@ -66,7 +61,7 @@ je_ut_software_points_bar_era_7 = {
 		}
 	}
 
-	start_value = 500
+	start_value = 200
 	min_value = 0
 	max_value = 1000
 
@@ -87,7 +82,7 @@ je_ut_software_points_bar_era_8 = {
 		}
 		add = {
 			desc = "je_ut_software_points_bar_progress_buildings_era_8"
-			value = root.var:je_ut_software_points_bar_progress_buildings_era_7
+			value = root.var:je_ut_software_points_bar_progress_buildings_era_8
 		}
 	}
 

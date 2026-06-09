@@ -164,9 +164,10 @@ je_ut_software_era_7 = {
 	}
 
 	on_complete = {
-		set_variable = je_ut_software_era_7_done
-		remove_modifier = je_ut_software_era_7_3_object_oriented_language_mod
-		add_modifier = je_ut_software_era_7_done_mod
+		add_journal_entry = {
+			type = je_ut_software_era_8
+		}
+		
 		remove_variable = je_ut_software_points_bar_progress_buildings_era_7
 
 		if = {
@@ -289,33 +290,9 @@ je_ut_software_era_8 = {
 	scripted_progress_bar = je_ut_software_points_bar_era_8
 
 	complete = {
-		has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
-		has_technology_researched = software
-		always = no #todo to era 8 before public
+		always = no
 	}
 
-	on_complete = {
-		set_variable = je_ut_software_era_7_done
-		remove_modifier = je_ut_software_era_7_3_object_oriented_language_mod
-		add_modifier = je_ut_software_era_7_done_mod
-
-		if = {
-			limit = {
-				is_ai = yes
-				capital = {
-					NOT = { has_building = building_software_company }
-				}
-			}
-			capital = {
-				create_building = {
-					building = building_software_company
-					level = 1
-					reserves=1
-					subsidized = yes
-				}
-			}
-		}
-	}
 
 	status_desc = {
 	}
@@ -324,7 +301,7 @@ je_ut_software_era_8 = {
 		effect = {
 		
 			set_variable = {
-				name = je_ut_software_points_bar_progress_buildings_era_7
+				name = je_ut_software_points_bar_progress_buildings_era_8
 				value = 0
 			}
 			if = {
@@ -350,22 +327,23 @@ je_ut_software_era_8 = {
 							multiply = prev.level
 						}
 						change_variable = {
-							name = je_ut_software_points_bar_progress_buildings_era_7
+							name = je_ut_software_points_bar_progress_buildings_era_8
 							add = local_var:je_ut_software_points_bar_progress_loc
 						}
 					}
 					#cap at 100
 					if = {
 						limit = {
-							var:je_ut_software_points_bar_progress_buildings_era_7 > 100
+							var:je_ut_software_points_bar_progress_buildings_era_8 > 100
 						}
 						set_variable = {
-							name = je_ut_software_points_bar_progress_buildings_era_7
+							name = je_ut_software_points_bar_progress_buildings_era_8
 							value = 100
 						}
 					}
 				}
 			}
+			#todo values ai 78
 			else = {
 				#for ai flat calculations
 				#base for ai is 0
@@ -374,7 +352,7 @@ je_ut_software_era_8 = {
 						country_rank >= rank_value:major_power
 					}
 					change_variable = {
-						name = je_ut_software_points_bar_progress_buildings_era_7
+						name = je_ut_software_points_bar_progress_buildings_era_8
 						value = 1
 					}
 				}
@@ -383,7 +361,7 @@ je_ut_software_era_8 = {
 						has_building = building_software_company
 					}
 					change_variable = {
-						name = je_ut_software_points_bar_progress_buildings_era_7
+						name = je_ut_software_points_bar_progress_buildings_era_8
 						value = 2
 					}
 				}
