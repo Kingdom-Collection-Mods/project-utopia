@@ -2002,9 +2002,9 @@
  je_ut_software_era_7_2_relational_database: "Relationale Datenbank"
  je_ut_software_era_7_2_relational_database_desc: "Strukturierte Datensysteme ermoglichen skalierbare Speicherung, Abfragen und Geschaftsanalysen."
  je_ut_software_era_7_2_relational_database_mod: "$je_ut_software_era_7_2_relational_database$"
- ut_software_era_7_3_object_oriented_language: "Objektorientierte Programmierung"
+ je_ut_software_era_7_3_object_oriented_language: "Objektorientierte Programmierung"
  je_ut_software_era_7_3_object_oriented_programming_desc: "Objektorientierte Methoden beschleunigen komplexe Softwareentwicklung und Wiederverwendung."
- je_ut_software_era_7_3_object_oriented_programming_mod: "$ut_software_era_7_3_object_oriented_language$"
+ je_ut_software_era_7_3_object_oriented_language_mod: "$ut_software_era_7_3_object_oriented_language$"
 
  je_ut_software_era_7_required_points_tt: "Erfordert mindestens #v 1000#! $je_ut_software_points_bar_era_7$"
  je_ut_software_era_7_required_points_spend_tt: "Verbraucht #v 1000#! $je_ut_software_points_bar_era_7$"

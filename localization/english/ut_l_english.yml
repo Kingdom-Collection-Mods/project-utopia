@@ -610,7 +610,7 @@
  concept_ut_nd_focus_desc: "When the #b New Dawn#! journal entry is active, focus on the New Dawn ideology becomes available. Focusing on an ideology makes it much more likely to become dominant. If the ideology becomes entrenched, the focus also remains active."
 
  concept_ut_nd_pressure: "Pressure"
- concept_ut_nd_pressure_desc: "Pressure"
+ concept_ut_nd_pressure_desc: "Pressure represents the degree of friction a nation faces. It measures the strength of internal forces attempting to erode your country's ideology, pushing it toward a new political identity.\n\nIf active, events can happen:\n- Pressure <25: Positive events can happen\n- Pressure >50: Negative events can happen\n- Pressure >75: Very negative events can happen"
 
  concept_ut_nd_stance: "Stance"
  concept_ut_nd_stance_desc: "Each ideology has a stance towards other ideologies. The stance affects acceptance of joining and staying in a power bloc, and most new Project Utopia actions. Work in progress."
@@ -2005,9 +2005,9 @@
  je_ut_software_era_7_2_relational_database: "Relational Database"
  je_ut_software_era_7_2_relational_database_desc: "Structured data systems enable scalable storage, querying, and business analytics."
  je_ut_software_era_7_2_relational_database_mod: "$je_ut_software_era_7_2_relational_database$"
- ut_software_era_7_3_object_oriented_language: "Object-Oriented Programming"
+ je_ut_software_era_7_3_object_oriented_language: "Object-Oriented Programming"
  je_ut_software_era_7_3_object_oriented_programming_desc: "Object-oriented methods accelerate complex software development and reuse."
- je_ut_software_era_7_3_object_oriented_programming_mod: "$ut_software_era_7_3_object_oriented_language$"
+ je_ut_software_era_7_3_object_oriented_language_mod: "$ut_software_era_7_3_object_oriented_language$"
 
  je_ut_software_era_7_required_points_tt: "Requires at least #v 1000#! $je_ut_software_points_bar_era_7$"
  je_ut_software_era_7_required_points_spend_tt: "Consumes #v 1000#! $je_ut_software_points_bar_era_7$"

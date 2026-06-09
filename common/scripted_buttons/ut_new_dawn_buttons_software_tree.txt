@@ -194,8 +194,8 @@ je_ut_software_era_7_2_relational_database = {
 	}
 }
 
-ut_software_era_7_3_object_oriented_language = {
-	name = "ut_software_era_7_3_object_oriented_language"
+je_ut_software_era_7_3_object_oriented_language = {
+	name = "je_ut_software_era_7_3_object_oriented_language"
 	desc = "je_ut_software_era_7_3_object_oriented_programming_desc"
 
 	visible = { always = yes }
@@ -203,7 +203,7 @@ ut_software_era_7_3_object_oriented_language = {
 	possible = {
 		has_modifier = je_ut_software_era_7_2_relational_database_mod
 		NOT = {
-			has_modifier = je_ut_software_era_7_3_object_oriented_programming_mod
+			has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
 		}
 		
 		OR = {
@@ -222,7 +222,7 @@ ut_software_era_7_3_object_oriented_language = {
 
 	effect = {
 		remove_modifier = je_ut_software_era_7_2_relational_database_mod
-		add_modifier = je_ut_software_era_7_3_object_oriented_programming_mod
+		add_modifier = je_ut_software_era_7_3_object_oriented_language_mod
 		custom_tooltip = {
 			text = je_ut_software_era_7_required_points_spend_tt
 			je:je_ut_software_era_7 = {
@@ -290,14 +290,14 @@ je_ut_software_era_8_1_version_control = {
 	visible = { always = yes }
 
 	possible = {
-		has_modifier = je_ut_software_era_7_3_object_oriented_programming_mod
+		has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
 		NOT = {
 			has_modifier = je_ut_software_era_8_1_version_control_mod
 		}
 	}
 
 	effect = {
-		remove_modifier = je_ut_software_era_7_3_object_oriented_programming_mod
+		remove_modifier = je_ut_software_era_7_3_object_oriented_language_mod
 		add_modifier = je_ut_software_era_8_1_version_control_mod
 		custom_tooltip = {
 			text = je_ut_software_era_8_required_points_spend_tt

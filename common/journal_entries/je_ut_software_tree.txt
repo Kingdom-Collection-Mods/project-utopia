@@ -165,7 +165,7 @@ je_ut_software_era_7 = {
 
 	on_complete = {
 		set_variable = je_ut_software_era_7_done
-		remove_modifier = je_ut_software_era_7_3_object_oriented_programming_mod
+		remove_modifier = je_ut_software_era_7_3_object_oriented_language_mod
 		add_modifier = je_ut_software_era_7_done_mod
 		remove_variable = je_ut_software_points_bar_progress_buildings_era_7
 
@@ -289,14 +289,14 @@ je_ut_software_era_8 = {
 	scripted_progress_bar = je_ut_software_points_bar_era_8
 
 	complete = {
-		has_modifier = je_ut_software_era_7_3_object_oriented_programming_mod
+		has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
 		has_technology_researched = software
 		always = no #todo to era 8 before public
 	}
 
 	on_complete = {
 		set_variable = je_ut_software_era_7_done
-		remove_modifier = je_ut_software_era_7_3_object_oriented_programming_mod
+		remove_modifier = je_ut_software_era_7_3_object_oriented_language_mod
 		add_modifier = je_ut_software_era_7_done_mod
 
 		if = {

@@ -470,7 +470,7 @@ je_ut_software_era_7_2_relational_database_mod = {
 	goods_output_software_mult = 0.4
 }
 
-je_ut_software_era_7_3_object_oriented_programming_mod = {
+je_ut_software_era_7_3_object_oriented_language_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	goods_output_software_mult = 0.5
 }
