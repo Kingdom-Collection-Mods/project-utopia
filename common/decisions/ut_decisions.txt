@@ -500,11 +500,59 @@ ut_private_construction_amend = {
 	}
 }
 
+ut_democrat_enact_law_variants = {
+	is_shown = {
+		has_law = law_type:law_council_republic
+		active_law:lawgroup_governance_principles ?= {
+			NOT = {
+				has_amendment = amendment_council_republic_democratic
+			}
+		}
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_100
+			je:je_ut_new_dawn_democratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= 100
+			}
+		}
+	}
+
+	possible = {
+		has_law = law_type:law_council_republic
+	}
+
+	when_taken = {
+		ig:ig_petty_bourgeoisie ?= {
+			save_scope_as = petty_bourgeoisie_ig
+		}
+		active_law:lawgroup_governance_principles ?= {
+			add_amendment = {
+				type = amendment_council_republic_democratic
+				sponsor = scope:petty_bourgeoisie_ig
+			}
+		}
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_democratic = {
+				add_progress = { value = -50 name = je_ut_new_dawn_democratic_points_bar }
+			}
+		}
+	}
+	ai_chance = {
+		value = 1
+	}
+}
+
 ut_communist_enact_law_variants = {
 	is_shown = {
 		OR = {
 			has_variable = je_ut_communist_one_communist_party_done
 			has_variable = je_ut_communist_world_revolution_done
+		}
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_100
+			je:je_ut_new_dawn_communist = { 
+				"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" >= 100
+			}
 		}
 	}
 
@@ -524,6 +572,13 @@ ut_communist_enact_law_variants = {
 				has_variable = je_ut_communist_one_communist_party_done
 			}
 			activate_law = law_type:ut_law_council_presidium
+		}
+		
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_communist = {
+				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
+			}
 		}
 	}
 	ai_chance = {

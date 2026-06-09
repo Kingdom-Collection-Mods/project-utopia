@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -792,7 +792,10 @@
  ut_law_subjecthood_fascist_desc: "All conquered peoples are subjects of the first nation."
 
  ut_communist_enact_law_variants: "Enact Law Variants"
- ut_communist_enact_law_variants_desc: "Allows the enactment of special law variants exclusive
+ ut_communist_enact_law_variants_desc: "Allows the enactment of special law variants exclusive to the [concept_ut_nd_communist_core] path."
+
+ ut_democrat_enact_law_variants: "Enact Law Variants"
+ ut_democrat_enact_law_variants_desc: "Allows the enactment of special law variants exclusive to the [concept_ut_nd_democrat_core] path."
 
  law_social_market_economy: "Social Market Economy"
  law_social_market_economy_desc: "A regulated market economy that combines free competition with social security to promote prosperity and social balance."
