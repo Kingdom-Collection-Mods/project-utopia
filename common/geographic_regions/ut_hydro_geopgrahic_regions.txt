@@ -5,7 +5,7 @@
 
 	strategic_regions = {
 		# Europe
-		sr:region_baltic          # global benchmark
+		sr:region_northern_europe          # global benchmark
 
 		# North America
 		sr:region_canada               # Quebec / BC / Labrador scale
@@ -15,7 +15,7 @@
 		sr:region_la_plata             # Paraná–Paraguay mega-basin
 
 		# Africa
-		sr:region_congo                # Inga-scale, unmatched flow
+		#sr:region_congo                # Inga-scale, unmatched flow
 
 		# Asia
 		sr:region_south_china           # Yangtze system
