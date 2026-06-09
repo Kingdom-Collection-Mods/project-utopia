@@ -116,7 +116,7 @@
 					}
 					change_variable = {
 						name = je_ut_software_points_bar_progress_buildings_era_6
-						value = 1
+						add = 1
 					}
 				}
 				if = {
@@ -125,7 +125,7 @@
 					}
 					change_variable = {
 						name = je_ut_software_points_bar_progress_buildings_era_6
-						value = 2
+						add = 2
 					}
 				}
 			}
@@ -135,7 +135,7 @@
 
 	weight = 100
 
-	should_be_pinned_by_default_uninvolved_or_context = no
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ut_software_era_7 = {
@@ -193,7 +193,6 @@ je_ut_software_era_7 = {
 
 	on_monthly_pulse = {
 		effect = {
-		
 			set_variable = {
 				name = je_ut_software_points_bar_progress_buildings_era_7
 				value = 0
@@ -246,7 +245,7 @@ je_ut_software_era_7 = {
 					}
 					change_variable = {
 						name = je_ut_software_points_bar_progress_buildings_era_7
-						value = 1
+						add = 5
 					}
 				}
 				if = {
@@ -255,7 +254,7 @@ je_ut_software_era_7 = {
 					}
 					change_variable = {
 						name = je_ut_software_points_bar_progress_buildings_era_7
-						value = 2
+						add = 20
 					}
 				}
 			}
@@ -264,7 +263,7 @@ je_ut_software_era_7 = {
 
 	weight = 100
 
-	should_be_pinned_by_default_uninvolved_or_context = no
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ut_software_era_8 = {
@@ -343,7 +342,6 @@ je_ut_software_era_8 = {
 					}
 				}
 			}
-			#todo values ai 78
 			else = {
 				#for ai flat calculations
 				#base for ai is 0
@@ -353,16 +351,21 @@ je_ut_software_era_8 = {
 					}
 					change_variable = {
 						name = je_ut_software_points_bar_progress_buildings_era_8
-						value = 1
+						add = 20
 					}
 				}
 				if = {
 					limit = {
-						has_building = building_software_company
+						NOT = { has_modifier = je_ut_software_era_8_6_ownership_model_language_mod }
+						any_scope_building = {
+							is_building_type = building_software_company
+							level >= 20
+							occupancy > 0.25
+						}
 					}
 					change_variable = {
 						name = je_ut_software_points_bar_progress_buildings_era_8
-						value = 2
+						add = 100
 					}
 				}
 			}
@@ -372,5 +375,5 @@ je_ut_software_era_8 = {
 
 	weight = 100
 
-	should_be_pinned_by_default_uninvolved_or_context = no
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

@@ -505,7 +505,7 @@ ut_democrat_enact_law_variants = {
 		has_law = law_type:law_council_republic
 		active_law:lawgroup_governance_principles ?= {
 			NOT = {
-				has_amendment = amendment_council_republic_democratic
+				has_amendment = amendment_type:amendment_council_republic_democratic
 			}
 		}
 		custom_tooltip = {

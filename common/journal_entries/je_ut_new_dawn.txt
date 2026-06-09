@@ -328,7 +328,7 @@
 			1 = event_new_dawn.121   #Core progress setback
 			1 = event_new_dawn.122   #Emergency spending
 			5 = event_new_dawn.123   #Innovation disruption
-			0 = event_new_dawn.124   #Placeholder ideology rollback
+			1 = event_new_dawn.124   #Placeholder ideology rollback
 		}
 	}
 

@@ -405,7 +405,7 @@ ut_tank_radio = {
 	}
 
 	modifier = {
-		military_formation_movement_speed_mult = 0.1
+		military_formation_army_movement_speed_add = 0.1
 		military_formation_organization_gain_mult = 0.2
     }
 	
@@ -479,7 +479,7 @@ ut_tank_jet_engine = {
 	}
 	
 	modifier = {
-		military_formation_movement_speed_mult = 0.1
+		military_formation_army_movement_speed_add = 0.1
     }
 	
 	ai_weight = {

@@ -458,11 +458,12 @@ je_ut_software_era_8_open_source = {
 	visible = { always = yes }
 
 	possible = {
-		has_modifier = je_ut_software_era_8_6_ownership_model_language_mod
+		always = no
 	}
 
 	effect = {
 	}
+
 	ai_chance = {
 		value = 100
 	}

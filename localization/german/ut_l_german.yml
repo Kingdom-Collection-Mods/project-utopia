@@ -1396,6 +1396,7 @@
  ut_modern_submarine_era_7_desc: ""
 
  ship_type_capital_battleship: "Großschlachtschiff"
+ ship_type_capital_battleship_desc: "Schwer bewaffnete und gepanzerte Schlachtschiffe der höchsten Klasse zur Vorherrschaft in großen Seegefechten."
 
  combat_unit_type_support_systems: "Unterstützungssysteme"
  combat_unit_type_advanced_support_systems: "Fort. Unterstützungssysteme"
@@ -2014,6 +2015,10 @@
  je_ut_software_era_7_3_object_oriented_language_mod: "$je_ut_software_era_7_3_object_oriented_language$"
  je_ut_software_era_7_open_source: "Open Source"
  je_ut_software_era_7_open_source_desc: "Offene Zusammenarbeit verbreitet Software-Expertise über den gesamten Globus."
+
+ ut_open_source_era_7_title: "Open Source Expertise"
+ ut_open_source_era_7_desc: "Offene Zusammenarbeit verbreitet Software-Expertise über den gesamten Globus."
+ ut_open_source_era_7_flavor: "Offene Zusammenarbeit verbreitet Software-Expertise über den gesamten Globus. Open-Source-Software wird oft in einer öffentlichen, kollaborativen Weise entwickelt, die es jedem ermöglicht, Verbesserungen beizutragen oder die Software frei zu nutzen. Dieser Ansatz hat zu schneller Innovation und weit verbreiteter Adoption von Softwaretechnologien geführt, wodurch fortgeschrittene Software-Expertise für Einzelpersonen und Organisationen weltweit zugänglich wird."
 
  je_ut_software_era_7_required_points_tt: "Erfordert mindestens #v 1000#! $je_ut_software_points_bar_era_7$"
  je_ut_software_era_7_required_points_spend_tt: "Verbraucht #v 1000#! $je_ut_software_points_bar_era_7$"

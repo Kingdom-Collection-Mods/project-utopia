@@ -387,11 +387,12 @@ utopia_mod.7 = {
 	desc = ut_open_source_era_7_desc
 	flavor = ut_open_source_era_7_flavor
 	
+	#todo add tooltip for player on what the positive follow-up effects are
 	option = {
 		trigger = {
 			NOT = { has_global_variable = je_ut_software_era_7_1_operating_system_foss_var }
 		}
-		name = utopia.continue
+		name = je_ut_software_era_7_open_source
 		set_global_variable = je_ut_software_era_7_1_operating_system_foss_var
 	}
 	
@@ -399,7 +400,7 @@ utopia_mod.7 = {
 		trigger = {
 			NOT = { has_global_variable = je_ut_software_era_7_2_relational_database_foss_var }
 		}
-		name = utopia.continue
+		name = je_ut_software_era_7_open_source
 		set_global_variable = je_ut_software_era_7_2_relational_database_foss_var
 	}
 	
@@ -407,7 +408,7 @@ utopia_mod.7 = {
 		trigger = {
 			NOT = { has_global_variable = je_ut_software_era_7_3_object_oriented_programming_foss_var }
 		}
-		name = utopia.continue
+		name = je_ut_software_era_7_open_source
 		set_global_variable = je_ut_software_era_7_3_object_oriented_programming_foss_var
 	}
 

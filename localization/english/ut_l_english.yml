@@ -1395,6 +1395,7 @@
  ut_modern_submarine_era_7_desc: ""
 
  ship_type_capital_battleship: "Capital Battleship"
+ ship_type_capital_battleship_desc: "Heavily armed and armored flagship-class vessels designed for domination in major sea battles."
  
  combat_unit_type_support_systems: "Support Systems"
  combat_unit_type_advanced_support_systems: "Advanced Support Systems"
@@ -2013,6 +2014,10 @@
  je_ut_software_era_7_3_object_oriented_language_mod: "$je_ut_software_era_7_3_object_oriented_language$"
  je_ut_software_era_7_open_source: "Open Source Expertise"
  je_ut_software_era_7_open_source_desc: "Open collaboration spreads software expertise across the entire globe."
+
+ ut_open_source_era_7_title: "Open Source Expertise"
+ ut_open_source_era_7_desc: "Open collaboration spreads software expertise across the entire globe."
+ ut_open_source_era_7_flavor: "Open collaboration spreads software expertise across the entire globe. Open source software is often developed in a public, collaborative manner, allowing anyone to contribute improvements or use the software freely. This approach has led to rapid innovation and widespread adoption of software technologies, making advanced software expertise accessible to individuals and organizations worldwide."
 
  je_ut_software_era_7_required_points_tt: "Requires at least #v 1000#! $je_ut_software_points_bar_era_7$"
  je_ut_software_era_7_required_points_spend_tt: "Consumes #v 1000#! $je_ut_software_points_bar_era_7$"
