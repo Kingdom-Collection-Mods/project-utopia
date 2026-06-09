@@ -808,7 +808,7 @@ ut_ideology_laissez_faire = {
 		law_collectivized_agriculture = strongly_disapprove
 		law_serfdom = disapprove
 		law_tenant_farmers = neutral
-		law_homesteading = neutral
+		law_peasant_proprietorship = neutral
 		law_commercialized_agriculture = approve
 	}
 
@@ -876,7 +876,7 @@ ut_ideology_laissez_faire_democratic = {
 		law_collectivized_agriculture = strongly_disapprove
 		law_serfdom = strongly_disapprove
 		law_tenant_farmers = neutral
-		law_homesteading = neutral
+		law_peasant_proprietorship = neutral
 		law_commercialized_agriculture = approve
 	}
 
@@ -946,7 +946,7 @@ ut_ideology_laissez_faire_democratic_neoliberal = {
 		law_collectivized_agriculture = strongly_disapprove
 		law_serfdom = strongly_disapprove
 		law_tenant_farmers = neutral
-		law_homesteading = neutral
+		law_peasant_proprietorship = neutral
 		law_commercialized_agriculture = approve
 	}
 
@@ -1014,7 +1014,7 @@ ut_ideology_laissez_faire_authoritarian = {
 		law_collectivized_agriculture = strongly_disapprove
 		law_serfdom = disapprove
 		law_tenant_farmers = neutral
-		law_homesteading = neutral
+		law_peasant_proprietorship = neutral
 		law_commercialized_agriculture = approve
 	}
 
