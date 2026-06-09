@@ -13,7 +13,7 @@ ut_set_new_dawn_variables = {
 	set_variable = { name = ut_nd_communist_progress_from_focus value = 0 } #Final element in the progress bar. This is defined by various effects, and is based solely on scripted effects. This is how designers can manually grant ticking bonuses or maluses to this mechanic.
 	set_variable = { name = ut_nd_communist_progress_from_events value = 0 }
 
-	#Moderate Variables
+	#Democrat Variables
 	set_variable = { name = ut_nd_democrat_progress_from_characters value = 0 } 
 	set_variable = { name = ut_nd_democrat_progress_from_igs value = 0 }
 	set_variable = { name = ut_nd_democrat_progress_from_laws value = 0 } #These variables use the same scheme as the Communist ones, with the exception that Moderates derive from the sum of light/heavy industry building levels in France.

@@ -425,7 +425,7 @@ je_ut_new_dawn_democratic = {
 	}
 
 	immediate = {
-		ut_set_new_dawn_variables = yes
+		ut_new_dawn_democrat_progress = yes
 		
 		remove_modifier = je_ut_new_dawn_democrat_focus
 		remove_modifier = je_ut_new_dawn_autocrat_focus
@@ -699,7 +699,7 @@ je_ut_new_dawn_autocratic = {
 	scripted_button = je_ut_new_dawn_suppress_dissidents
 
 	immediate = {
-		ut_set_new_dawn_variables = yes
+		ut_new_dawn_autocrat_progress = yes
 
 		remove_modifier = je_ut_new_dawn_democrat_focus
 		remove_modifier = je_ut_new_dawn_autocrat_focus
@@ -878,7 +878,8 @@ je_ut_new_dawn_fascist = {
 	}
 
 	immediate = {
-		ut_set_new_dawn_variables = yes
+		ut_new_dawn_fascist_progress = yes
+
 		remove_modifier = je_ut_new_dawn_democrat_focus
 		remove_modifier = je_ut_new_dawn_autocrat_focus
 		remove_modifier = je_ut_new_dawn_communist_focus
@@ -1136,7 +1137,8 @@ je_ut_new_dawn_communist = {
 	}
 
 	immediate = {
-		ut_set_new_dawn_variables = yes
+		ut_new_dawn_communist_progress = yes
+
 		remove_modifier = je_ut_new_dawn_democrat_focus
 		remove_modifier = je_ut_new_dawn_autocrat_focus
 		remove_modifier = je_ut_new_dawn_communist_focus

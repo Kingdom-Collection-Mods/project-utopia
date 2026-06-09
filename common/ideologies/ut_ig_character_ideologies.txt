@@ -372,7 +372,7 @@ ut_ideology_autocratic_leader = {
 		law_collectivized_agriculture = strongly_disapprove
 		law_tenant_farmers = approve
 		law_commercialized_agriculture = approve
-		law_homesteading = strongly_disapprove
+		law_peasant_proprietorship = strongly_disapprove
 	}		
 
 	lawgroup_free_speech = {
@@ -1193,7 +1193,7 @@ ut_liberal_feminism_leader = {
 		law_collectivized_agriculture = strongly_disapprove
 		law_serfdom = strongly_disapprove
 		law_tenant_farmers = disapprove
-		law_homesteading = disapprove
+		law_peasant_proprietorship = disapprove
 		law_commercialized_agriculture = approve
 	}
 
