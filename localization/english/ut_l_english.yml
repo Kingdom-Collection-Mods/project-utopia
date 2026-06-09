@@ -16,6 +16,9 @@
  utopia_path: "Path" 
 
 # Events & Journals
+ ut_industrial_machinery_je: "Industrial Machinery"
+ ut_industrial_machinery_je_reason: "The dawn of the industrial age is marked by the rise of machinery that transforms production. From steam engines to assembly lines, these innovations revolutionize how goods are made, increasing efficiency and enabling mass production. The industrial machinery era is not just about tools; it's about a fundamental shift in society, economy, and the very fabric of daily life."
+ 
  ut_heavy_industrial_machinery_je: "Heavy Industrial Machinery"
  ut_heavy_industrial_machinery_je_reason: "A significant turning point on our nation's road to modernity. The foundations are laid, the first gears are mounted, the furnaces fired up - the very first building for heavy industrial machinery now proudly rises above the skyline, a testament to human ingenuity and ambition.\nWhere once workers toiled with bare hands, massive machines are now built to ease their burden and multiply their productivity. Even as the engines roar and the halls echo with the sound of steel, this building is more than just a factory. It is the crucible in which the future is forged."
  ut_heavy_industrial_machinery_je.success.d: "The foundations are laid, the machines installed. Our nation now proudly stands at the forefront of industrial progress with the opening of its first heavy machinery factory."
@@ -359,10 +362,10 @@
  ut_new_dawn_democratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] [Concept('concept_ut_nd_democrat_core', '@ut_nd_democrat!')]"
  ut_new_dawn_autocratic_list_entry: "[THIS.GetCountry.GetName] [THIS.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|b2] [THIS.GetCountry.GetCustom('ut_new_dawn_progress_trend')] [Concept('concept_ut_nd_autocrat_core', '@ut_nd_autocrat!')]"
  ut_new_dawn_no_core_list_entry: "[THIS.GetCountry.GetName] is trending towards [THIS.GetCountry.GetCustom('ut_new_dawn_phase_1_trend')]"
- ut_phase_1_trend_democrat: "[concept_ut_nd_democrat_core] (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_democrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
- ut_phase_1_trend_autocrat: "[concept_ut_nd_autocrat_core] (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_autocrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
- ut_phase_1_trend_fascist: "[concept_ut_nd_fascist_core] (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
- ut_phase_1_trend_communist: "[concept_ut_nd_communist_core] (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_communist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
+ ut_phase_1_trend_democrat: "$concept_ut_nd_democrat_core$ (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_democrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
+ ut_phase_1_trend_autocrat: "$concept_ut_nd_autocrat_core$ (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_autocrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
+ ut_phase_1_trend_fascist: "$concept_ut_nd_fascist_core$ (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
+ ut_phase_1_trend_communist: "$concept_ut_nd_communist_core$ (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_communist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
  ut_phase_1_trend_undefined: "unclear ideology (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip ?#!#!)"
  ut_phase_1_trend_tooltip: "[concept_ut_nd_democrat_core]: [Country.MakeScope.Var('ut_new_dawn_democrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_autocrat_core]: [Country.MakeScope.Var('ut_new_dawn_autocrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_fascist_core]: [Country.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_communist_core]: [Country.MakeScope.Var('ut_new_dawn_communist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]"
  ut_progress_trend_max: "#tooltip:[ROOT.GetCountry.GetTooltipTag],ut_progress_trend_tooltip @profitabilitymax!#!"
@@ -432,7 +435,7 @@
  
 
  je_ut_new_dawn_democratic: "Democratic Awakening"
- je_ut_new_dawn_democratic_reason: "The people demand participation, transparency, and free elections. Across the country, new parties are forming, trade unions are gaining influence, and protests for civil rights are filling the streets. \n Whether this awakening leads to a stable democracy or is crushed by the old elites is now in your hands. Will you allow reform - or try to preserve the old order by any means necessary? \n #italic - [Concept('concept_ut_nd_democrat_core', 'Democratic')] [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_democratic_reason: "The people demand participation, transparency, and free elections. Across the country, new parties are forming, trade unions are gaining influence, and protests for civil rights are filling the streets. \n Whether this awakening leads to a stable democracy or is crushed by the old elites is now in your hands. Will you allow reform - or try to preserve the old order by any means necessary?\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')] \n\n #italic - [Concept('concept_ut_nd_democrat_core', 'Democratic')] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_points_bar: "Progress Points"
  je_ut_new_dawn_points_bar_desc: "Progress Points: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
  concept_ut_nd_progress_points: "Progress Points"
@@ -440,6 +443,11 @@
 
  je_ut_new_dawn_pressure_points_bar: "Pressure"
  je_ut_new_dawn_pressure_points_bar_desc: "Pressure: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
+
+ ut_new_dawn_pressure_status_good: "[concept_ut_nd_pressure]: #g low#!"
+ ut_new_dawn_pressure_status_neutral: "[concept_ut_nd_pressure]: neutral"
+ ut_new_dawn_pressure_status_bad: "[concept_ut_nd_pressure]: #r high#!"
+ ut_new_dawn_pressure_status_very_bad: "[concept_ut_nd_pressure]: #r very high#!"
 
  concept_ut_new_dawn: "New Dawn"
  concept_ut_new_dawn_desc: "Technological and cultural progress ushers in a [concept_ut_new_dawn] of political change. The [concept_ut_nd_path_to_utopia] may be paved. Solidify your nation's core ideology. The ideology determines the direction your nation will take.\nChoose between [concept_ut_nd_fascist_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_democrat_core], and [concept_ut_nd_communist_core] [concept_ut_nd_path_to_utopia]."

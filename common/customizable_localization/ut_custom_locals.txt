@@ -218,6 +218,44 @@ ut_new_dawn_ideology_status = {
 
 }
 
+ut_new_dawn_pressure_status = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+			ut_has_new_dawn_pressure_points = {
+				VALUE = 90
+			}
+		}
+
+		localization_key = ut_new_dawn_pressure_status_very_bad
+	}
+
+	text = {
+		trigger = {
+			ut_has_new_dawn_pressure_points = {
+				VALUE = 50
+			}
+		}
+
+		localization_key = ut_new_dawn_pressure_status_bad
+	}
+
+	text = {
+		trigger = {
+			ut_has_new_dawn_pressure_points = {
+				VALUE = 25
+			}
+		}
+
+		localization_key = ut_new_dawn_pressure_status_neutral
+	}	
+	text = {
+		localization_key = ut_new_dawn_pressure_status_good
+	}
+}
+
 ut_utopia_enabled_on_game_started_loc = {
 	type = country
 	random_valid = no
