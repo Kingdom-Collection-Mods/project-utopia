@@ -1,6 +1,6 @@
 $repoRoot = Split-Path -Parent $PSScriptRoot
-$en = Join-Path $repoRoot 'localization\english\ut_l_english.yml'
-$de = Join-Path $repoRoot 'localization\german\ut_l_german.yml'
+$en = Join-Path $repoRoot 'project-utopia\localization\english\ut_l_english.yml'
+$de = Join-Path $repoRoot 'project-utopia\localization\german\ut_l_german.yml'
 
 $pattern = '^\s*([^#\s][^:]*):'
 

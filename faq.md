@@ -1,4 +1,7 @@
 $env:PYTHONPATH = "D:\Projects\Phyton Projects\PyHelpersForPDXWikis"
+
+#check out PyHelpersForPDXWikis: https://github.com/Kingdom-Collection-Mods/PyHelpersForPDXWikis/tree/multi-mod (og by grotaclas)
+
 python -m vic3.PMSpreadsheet.generate_spreadsheets
 
 ai_evaluate_production_method building_commercial_factory pm_consumer_goods_plastic_process STATE_KANTO
