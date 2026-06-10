@@ -159,7 +159,7 @@ je_ut_software_era_7 = {
 
 	complete = {
 		has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
-		has_technology_researched = software
+		has_technology_researched = internet
 		always = no #todo to era 8 before public
 	}
 

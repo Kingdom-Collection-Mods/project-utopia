@@ -1,5 +1,6 @@
-$en = 'd:\Freddy\Documents\Paradox Interactive\Victoria 3\mod\project-utopia\localization\english\ut_l_english.yml'
-$de = 'd:\Freddy\Documents\Paradox Interactive\Victoria 3\mod\project-utopia\localization\german\ut_l_german.yml'
+$repoRoot = Split-Path -Parent $PSScriptRoot
+$en = Join-Path $repoRoot 'localization\english\ut_l_english.yml'
+$de = Join-Path $repoRoot 'localization\german\ut_l_german.yml'
 
 $pattern = '^\s*([^#\s][^:]*):'
 

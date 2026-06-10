@@ -121,7 +121,7 @@
  ut_research_nuclear_power_desc: "Investigate the potential of nuclear fission as a powerful energy source."
  ut_je_ut_research_nuclear_power: "Nuclear Power"
  ut_je_ut_research_nuclear_power_reason: "The discovery of nuclear fission opens the door to a new era of energy production. What once was a theoretical concept becomes reality: controlled nuclear reactions that release immense amounts of energy. This is not just about power generation, but about mastering the atom itself.\nWith sufficient investment, we can lead this revolution—creating a new energy source that will change the world."
- ut_je_ut_research_nuclear_power_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy without[concept_shortage]."
+ ut_je_ut_research_nuclear_power_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy without [concept_shortage]."
  ut_je_ut_nuclear_power_research: "Nuclear Power Research"
  ut_je_ut_nuclear_power_research.success.d: "Our scientists have successfully completed the nuclear power research program. The path to harnessing nuclear energy is now open."
  ut_je_ut_nuclear_power_research.success.f: "Years of relentless effort have culminated in this moment. The atom's energy, once only theorized, is now ours to command. A new era of powerful, efficient electricity beckons for our nation."
@@ -168,7 +168,7 @@
  ut_je_ut_research_high_tech_computers_research.success.f: "Liquid-cooled processors, quantum fluctuations, neural networks—the age of raw logic yields to the elegance of synthetic thinking. Our machines no longer calculate—they model reality."
  ut_research_high_tech_computers_research_mod: "High-Tech Computer Research"
  ut_research_high_tech_computers_research_mod_desc: "National research is focused on developing cutting-edge computing technologies. Prototypes are being built, labs are expanding, and the line between computational power and vision begins to blur."
- ut_je_ut_research_high_tech_computers_research_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy without[concept_shortage])"
+ ut_je_ut_research_high_tech_computers_research_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy without [concept_shortage])"
 
  je_ut_new_dawn: "New Dawn"
  je_ut_new_dawn_reason: "$concept_ut_new_dawn_desc$\n\n#lore [ROOT.GetCountry.GetCustom('ut_utopia_enabled_on_game_started_loc')]#!"
