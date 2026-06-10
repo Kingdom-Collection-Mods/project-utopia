@@ -606,3 +606,33 @@ je_ut_software_era_6_add_decision = {
 		value = 1
 	}	
 }
+je_ut_new_dawn_core_abilities_add_decision = {
+	is_shown = {
+		OR = {
+			has_journal_entry = je_ut_new_dawn_autocratic
+			has_journal_entry = je_ut_new_dawn_democratic
+			has_journal_entry = je_ut_new_dawn_fascist
+			has_journal_entry = je_ut_new_dawn_communist
+		}
+		NOT = { has_journal_entry = je_ut_new_dawn_core_abilities }
+	}
+
+	possible = {
+		OR = {
+			has_journal_entry = je_ut_new_dawn_autocratic
+			has_journal_entry = je_ut_new_dawn_democratic
+			has_journal_entry = je_ut_new_dawn_fascist
+			has_journal_entry = je_ut_new_dawn_communist
+		}
+		NOT = { has_journal_entry = je_ut_new_dawn_core_abilities }
+	}
+
+	when_taken = {
+		add_journal_entry = {
+			type = je_ut_new_dawn_core_abilities
+		}
+	}
+	ai_chance = {
+		value = 1
+	}
+}

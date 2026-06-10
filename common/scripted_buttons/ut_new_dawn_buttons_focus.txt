@@ -4,7 +4,8 @@ ut_new_dawn_fascist_focus = {
 	desc = "ut_new_dawn_fascist_focus_desc"
 
 	visible = {
-		ut_new_dawn_has_core_trigger = no
+		always = yes
+		# ut_new_dawn_has_core_trigger = no
 	}
 
 	possible = {
@@ -127,7 +128,8 @@ ut_new_dawn_autocrat_focus = {
 	desc = "ut_new_dawn_autocrat_focus_desc"
 
 	visible = { 
-		ut_new_dawn_has_core_trigger = no
+		always = yes
+		# ut_new_dawn_has_core_trigger = no
 	}
 
 	possible = {
@@ -214,7 +216,8 @@ ut_new_dawn_democrat_focus = {
 	desc = "ut_new_dawn_democrat_focus_desc"
 
 	visible = { 
-		ut_new_dawn_has_core_trigger = no
+		always = yes
+		# ut_new_dawn_has_core_trigger = no
 	}
 
 	possible = {
@@ -361,7 +364,8 @@ ut_new_dawn_communist_focus = {
 	desc = "ut_new_dawn_communist_focus_desc"
 
 	visible = { 
-		ut_new_dawn_has_core_trigger = no
+		always = yes
+		# ut_new_dawn_has_core_trigger = no
 	}
 
 	possible = {

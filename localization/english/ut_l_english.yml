@@ -411,7 +411,7 @@
  ut_phase_1_trend_fascist: "$concept_ut_nd_fascist_core$ (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
  ut_phase_1_trend_communist: "$concept_ut_nd_communist_core$ (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_communist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
  ut_phase_1_trend_undefined: "unclear ideology (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip ?#!#!)"
- ut_phase_1_trend_tooltip: "[concept_ut_nd_democrat_core]: [Country.MakeScope.Var('ut_new_dawn_democrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_autocrat_core]: [Country.MakeScope.Var('ut_new_dawn_autocrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_fascist_core]: [Country.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_communist_core]: [Country.MakeScope.Var('ut_new_dawn_communist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_focus]: [ROOT.GetCountry.GetCustom('ut_new_dawn_phase_1_focus')]"
+ ut_phase_1_trend_tooltip: "[concept_ut_nd_democrat_core]: [Country.MakeScope.Var('ut_new_dawn_democrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_autocrat_core]: [Country.MakeScope.Var('ut_new_dawn_autocrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_fascist_core]: [Country.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_communist_core]: [Country.MakeScope.Var('ut_new_dawn_communist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_focus]: [Country.GetCustom('ut_new_dawn_phase_1_focus')]"
  ut_progress_trend_max: "#tooltip:[ROOT.GetCountry.GetTooltipTag],ut_progress_trend_tooltip @profitabilitymax!#!"
  ut_progress_trend_critical: "#tooltip:[ROOT.GetCountry.GetTooltipTag],ut_progress_trend_tooltip @profitability1!@warning!#!"
  ut_progress_trend_up4: "#tooltip:[ROOT.GetCountry.GetTooltipTag],ut_progress_trend_tooltip @profitability13!#!"
@@ -2029,6 +2029,12 @@
  wirtschaftswunder_others_modifier: "Economic Miracle (Influence)"
  early_civil_aviation_modifier_others: "Early Civil Aviation"
  modern_civil_aviation_modifier_others: "Modern Civil Aviation"
+
+ #backwards compatibility
+ je_ut_new_dawn_core_abilities: "New Dawn Edicts"
+ je_ut_new_dawn_core_abilities_reason: "So be it."
+ je_ut_new_dawn_core_abilities_add_decision: "Add New Dawn Core Abilities"
+ je_ut_new_dawn_core_abilities_add_decision_desc: "Unlock the New Dawn Core [concept_ut_nd_abilities]."
 
  #je software tree
  je_ut_software_era_6_add_decision: "Start Software Expertise technology tree"
