@@ -994,6 +994,7 @@
  ut_new_dawn_propaganda_target_defend: "Defend Against Propaganda"
  ut_new_dawn_propaganda_target_defend_desc: "[SCOPE.sCountry('ut_new_dawn_propaganda_target_defend_source_scope').GetName] spend #r 10#! [concept_ut_nd_progress_points] to defend against the ongoing propaganda campaign."
  ut_new_dawn_propaganda_target_defend_tt: "You must spend 10 [concept_ut_nd_progress_points] or abort the campaign.\n\n #lore Cost increases to 20 $concept_ut_nd_progress_points$ on consecutive attempts to continue.#!"
+ ut_new_dawn_propaganda_source_defend_once_tt: "First defense attempt (consecutive attempts will cost 20 [concept_ut_nd_progress_points])"
  ut_new_dawn_propaganda_target_defend_cooldown_tt: "Can only be used once per month."
 
  ut_propaganda_communist_mod: "Communist Propaganda"

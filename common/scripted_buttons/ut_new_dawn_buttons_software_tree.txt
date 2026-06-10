@@ -127,7 +127,7 @@ je_ut_software_era_7_1_operating_system = {
 			custom_tooltip = {
 				text = je_ut_software_era_7_required_points_tt
 				je:je_ut_software_era_7 = {
-					"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 1000
+					"scripted_bar_progress(je_ut_software_points_bar_era_7)" >= 1000
 				}
 			}
 			custom_tooltip = {
@@ -294,6 +294,17 @@ je_ut_software_era_8_1_version_control = {
 		NOT = {
 			has_modifier = je_ut_software_era_8_1_version_control_mod
 		}
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_8_required_points_tt
+				je:je_ut_software_era_8 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_8)" >= 10000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_8_technology_open_sourced_tt
+			}
+		}
 	}
 
 	effect = {
@@ -321,6 +332,17 @@ je_ut_software_era_8_2_no_sql = {
 		has_modifier = je_ut_software_era_8_1_version_control_mod
 		NOT = {
 			has_modifier = je_ut_software_era_8_2_no_sql_mod
+		}
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_8_required_points_tt
+				je:je_ut_software_era_8 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_8)" >= 10000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_8_technology_open_sourced_tt
+			}
 		}
 	}
 
@@ -350,6 +372,17 @@ je_ut_software_era_8_3_web_standards = {
 		NOT = {
 			has_modifier = je_ut_software_era_8_3_web_standards_mod
 		}
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_8_required_points_tt
+				je:je_ut_software_era_8 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_8)" >= 10000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_8_technology_open_sourced_tt
+			}
+		}
 	}
 
 	effect = {
@@ -377,6 +410,17 @@ je_ut_software_era_8_4_web_software = {
 		has_modifier = je_ut_software_era_8_3_web_standards_mod
 		NOT = {
 			has_modifier = je_ut_software_era_8_4_web_software_mod
+		}
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_8_required_points_tt
+				je:je_ut_software_era_8 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_8)" >= 10000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_8_technology_open_sourced_tt
+			}
 		}
 	}
 
@@ -406,6 +450,17 @@ je_ut_software_era_8_5_cloud_computing = {
 		NOT = {
 			has_modifier = je_ut_software_era_8_5_cloud_computing_mod
 		}
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_8_required_points_tt
+				je:je_ut_software_era_8 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_8)" >= 10000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_8_technology_open_sourced_tt
+			}
+		}
 	}
 
 	effect = {
@@ -433,6 +488,17 @@ je_ut_software_era_8_6_ownership_model_language = {
 		has_modifier = je_ut_software_era_8_5_cloud_computing_mod
 		NOT = {
 			has_modifier = je_ut_software_era_8_6_ownership_model_language_mod
+		}
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_8_required_points_tt
+				je:je_ut_software_era_8 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_8)" >= 10000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_8_technology_open_sourced_tt
+			}
 		}
 	}
 
