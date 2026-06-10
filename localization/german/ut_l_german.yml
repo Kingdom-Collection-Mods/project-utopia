@@ -221,9 +221,9 @@
  event_new_dawn.11.f: "Hochrangige Militäroffiziere haben unter Berufung auf die Instabilität des Landes den Rücktritt der aktuellen Führung gefordert. Sie schlagen eine neue Galionsfigur vor, die besser mit ihren Interessen übereinstimmt."
  event_new_dawn.11.d: "Wenn die Generäle sprechen, hören selbst Präsidenten zu."
  
- event_new_dawn.12.t: "Bourgeoisie Demands Leadership Change"
- event_new_dawn.12.d: "When the bourgeoisie speaks, they form a powerful coalition."
- event_new_dawn.12.f: "Prominent industrialists and business leaders, concerned about the direction of the country, have called for a change in leadership. They advocate for a new figurehead who will prioritize economic growth and stability."
+ event_new_dawn.12.t: "Bürgertum fordert Führungswechsel"
+ event_new_dawn.12.d: "Wenn das Bürgertum spricht, formiert es eine mächtige Koalition."
+ event_new_dawn.12.f: "Einflussreiche Industrielle und Geschäftsleute haben aus Sorge über den Kurs des Landes einen Führungswechsel gefordert. Sie setzen sich für eine neue Galionsfigur ein, die wirtschaftliches Wachstum und Stabilität priorisiert."
 
  event_new_dawn.13.t: "Radicals Uprising"
  event_new_dawn.13.d: "Radical factions are mobilizing, threatening to overthrow the current order. They demand a change in ideology."
