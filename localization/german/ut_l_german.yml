@@ -2122,13 +2122,13 @@
  ut_doctrine_mobilization_option_group: "Doktrinen"
 
  #game rules
- rule_ut_new_dawn_start_era: "$concept_ut_new_dawn$ Start Era"
- setting_ut_new_dawn_start_era_6: "Era VI"
- setting_ut_new_dawn_start_era_6_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] VI (1936-1961)"
- setting_ut_new_dawn_start_era_5: "Era V"
- setting_ut_new_dawn_start_era_5_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] III (1862-1886)\n@warning! Project Utopia is tested with Era V start era"
- setting_ut_new_dawn_start_era_4: "Era IV"
- setting_ut_new_dawn_start_era_4_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] IV (1887-1911)\n@warning! Project Utopia is tested with Era VI start era."
+ rule_ut_new_dawn_start_era: "$concept_ut_new_dawn$ Start Ära"
+ setting_ut_new_dawn_start_era_6: "Ära VI"
+ setting_ut_new_dawn_start_era_6_desc: "[concept_ut_new_dawn] wird in [concept_technology_era] VI (1936-1961) freigeschaltet"
+ setting_ut_new_dawn_start_era_5: "Ära V"
+ setting_ut_new_dawn_start_era_5_desc: "[concept_ut_new_dawn] wird in [concept_technology_era] V (1912-1935) freigeschaltet\n@warning! Project Utopia wurde mit Start Ära VI getestet"
+ setting_ut_new_dawn_start_era_4: "Ära IV"
+ setting_ut_new_dawn_start_era_4_desc: "[concept_ut_new_dawn] wird in [concept_technology_era] IV (1887-1911) freigeschaltet\n@warning! Project Utopia wurde mit Start Ära VI getestet"
 
  rule_ut_new_dawn_historical_focus: "Historical $concept_ut_nd_focus$"
  setting_ut_new_dawn_historical_focus_yes: "Enabled"
