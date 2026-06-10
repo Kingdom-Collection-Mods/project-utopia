@@ -225,11 +225,11 @@
  event_new_dawn.12.d: "Wenn das Bürgertum spricht, formiert es eine mächtige Koalition."
  event_new_dawn.12.f: "Einflussreiche Industrielle und Geschäftsleute haben aus Sorge über den Kurs des Landes einen Führungswechsel gefordert. Sie setzen sich für eine neue Galionsfigur ein, die wirtschaftliches Wachstum und Stabilität priorisiert."
 
- event_new_dawn.13.t: "Radicals Uprising"
- event_new_dawn.13.d: "Radical factions are mobilizing, threatening to overthrow the current order. They demand a change in ideology."
- event_new_dawn.13.f: "Radical groups, fueled by frustration and a desire for change, have launched an uprising. They seek to dismantle the existing power structure and establish a new ideological order. The situation is volatile."
-
- event_new_dawn.13.a: "Radical groups are forming"
+ event_new_dawn.13.t: "Aufstand der Radikalen"
+ event_new_dawn.13.d: "Radikale Fraktionen mobilisieren sich und drohen, die bestehende Ordnung zu stürzen. Sie fordern einen Ideologiewechsel."
+ event_new_dawn.13.f: "Radikale Gruppen, angetrieben von Frustration und dem Wunsch nach Veränderung, haben einen Aufstand begonnen. Sie wollen die bestehende Machtstruktur zerschlagen und eine neue ideologische Ordnung errichten. Die Lage ist volatil."
+ 
+ event_new_dawn.13.a: "Radikale Gruppen formieren sich"
 
  event_new_dawn.120.t: "Crisis of Confidence"
  event_new_dawn.120.d: "Public trust in established leadership is eroding, and major interest groups are voicing broad disapproval."
