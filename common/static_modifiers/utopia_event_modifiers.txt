@@ -49,6 +49,34 @@ new_dawn_event_innovation_max_reduced_mod = {
 	country_weekly_innovation_max_add = -40
 }
 
+new_dawn_event_enthusiasm_mod = {
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
+	country_weekly_innovation_max_add = 20
+}
+
+new_dawn_event_social_harmony_mod = {
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
+	country_law_enactment_time_mult = -0.2
+}
+
+new_dawn_event_cultural_awakening_mod = {
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
+	state_radicals_and_loyalists_from_sol_change_mult = 0.2
+	country_prestige_mult = 0.05
+}
+
+new_dawn_event_constitutional_crisis_mod = {
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
+	interest_group_approval_add = -2
+	political_movement_radicalism_add = 0.25
+}
+
+new_dawn_event_emergency_decree_mod = {
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
+	building_throughput_add = -0.1
+	country_loan_interest_rate_mult = 0.1
+}
+
 ut_new_dawn_focus_recently_changed = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 }

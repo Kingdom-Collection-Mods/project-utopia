@@ -323,12 +323,22 @@
 			10 = event_new_dawn.13   #Radicals
 
 			#Pressure Events
+			#Generic Good (<25 pressure)
+			1 = event_new_dawn.101   #Popular enthusiasm
+			1 = event_new_dawn.102   #Social cohesion
+			1 = event_new_dawn.103   #Treasury surplus
+			1 = event_new_dawn.104   #Cultural awakening
+
 			#Generic Bad (>50 pressure)
 			10 = event_new_dawn.120   #Approval crisis
 			1 = event_new_dawn.121   #Core progress setback
 			1 = event_new_dawn.122   #Emergency spending
 			5 = event_new_dawn.123   #Innovation disruption
 			1 = event_new_dawn.124   #Placeholder ideology rollback
+
+			#Generic Very Bad (>75 pressure)
+			1 = event_new_dawn.140   #Constitutional crisis
+			1 = event_new_dawn.141   #State of emergency
 		}
 	}
 

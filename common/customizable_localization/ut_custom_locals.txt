@@ -158,6 +158,43 @@ ut_new_dawn_phase_1_trend = {
 
 }
 
+ut_new_dawn_phase_1_focus = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+			has_modifier = je_ut_new_dawn_democrat_focus
+		}
+
+		localization_key = concept_ut_nd_democrat_core
+	}
+
+	text = {
+		trigger = {
+			has_modifier = je_ut_new_dawn_autocrat_focus
+		}
+
+		localization_key = concept_ut_nd_autocrat_core
+	}
+	
+	text = {
+		trigger = {
+			has_modifier = je_ut_new_dawn_fascist_focus
+		}
+		localization_key = concept_ut_nd_fascist_core
+	}
+
+	text = {
+		trigger = {
+			has_modifier = je_ut_new_dawn_communist_focus
+		}
+		localization_key = concept_ut_nd_communist_core
+	}
+	text = {
+		localization_key = ut_pm_research_institute_no_focus
+	}
+}
 ut_new_dawn_ideology_status = {
 	type = country
 	random_valid = no

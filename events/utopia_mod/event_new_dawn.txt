@@ -875,6 +875,199 @@ event_new_dawn.13 = {
 	}
 }
 
+
+#Popular Enthusiasm
+event_new_dawn.101 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.101.t
+	desc = event_new_dawn.101.d
+	flavor = event_new_dawn.101.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		is_ai = no
+		ut_new_dawn_has_core_trigger = yes
+		NOT = { has_modifier = new_dawn_event_enthusiasm_mod }
+		NOT = {
+			ut_has_new_dawn_pressure_points = {
+				VALUE = 25
+			}
+		}
+	}
+
+	option = {
+		highlighted_option = yes
+		default_option = yes
+		name = event_new_dawn.101.a
+		add_modifier = {
+			name = new_dawn_event_enthusiasm_mod
+			days = 365
+		}
+	}
+
+	option = {
+		name = event_new_dawn.101.b
+		custom_tooltip = ut_add_new_dawn_progress_add_5
+		ut_add_new_dawn_core_progress = {
+			VALUE = 5
+		}
+	}
+}
+
+#Social Cohesion
+event_new_dawn.102 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.102.t
+	desc = event_new_dawn.102.d
+	flavor = event_new_dawn.102.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		is_ai = no
+		ut_new_dawn_has_core_trigger = yes
+		NOT = { has_modifier = new_dawn_event_social_harmony_mod }
+		NOT = {
+			ut_has_new_dawn_pressure_points = {
+				VALUE = 25
+			}
+		}
+	}
+
+	option = {
+		highlighted_option = yes
+		default_option = yes
+		name = event_new_dawn.102.a
+		add_modifier = {
+			name = new_dawn_event_social_harmony_mod
+			days = 365
+		}
+	}
+
+	option = {
+		name = event_new_dawn.102.b
+		custom_tooltip = ut_add_new_dawn_progress_add_5
+		ut_add_new_dawn_core_progress = {
+			VALUE = 5
+		}
+	}
+}
+
+#Treasury Surplus
+event_new_dawn.103 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.103.t
+	desc = event_new_dawn.103.d
+	flavor = event_new_dawn.103.f
+
+	event_image = {
+		video = "unspecific_factory_construction"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		is_ai = no
+		ut_new_dawn_has_core_trigger = yes
+		NOT = {
+			ut_has_new_dawn_pressure_points = {
+				VALUE = 25
+			}
+		}
+	}
+
+	option = {
+		highlighted_option = yes
+		default_option = yes
+		name = event_new_dawn.103.a
+		add_treasury = 25000
+	}
+
+	option = {
+		name = event_new_dawn.103.b
+		custom_tooltip = ut_add_new_dawn_progress_add_5
+		ut_add_new_dawn_core_progress = {
+			VALUE = 5
+		}
+	}
+}
+
+#Cultural Awakening
+event_new_dawn.104 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.104.t
+	desc = event_new_dawn.104.d
+	flavor = event_new_dawn.104.f
+
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		is_ai = no
+		ut_new_dawn_has_core_trigger = yes
+		NOT = { has_modifier = new_dawn_event_cultural_awakening_mod }
+		NOT = {
+			ut_has_new_dawn_pressure_points = {
+				VALUE = 25
+			}
+		}
+	}
+
+	option = {
+		highlighted_option = yes
+		default_option = yes
+		name = event_new_dawn.104.a
+		add_modifier = {
+			name = new_dawn_event_cultural_awakening_mod
+			days = 365
+		}
+	}
+
+	option = {
+		name = event_new_dawn.104.b
+		custom_tooltip = ut_add_new_dawn_progress_add_5
+		ut_add_new_dawn_core_progress = {
+			VALUE = 5
+		}
+	}
+}
+
 #Approval Crisis
 event_new_dawn.120 = {
 	type = country_event
@@ -964,7 +1157,6 @@ event_new_dawn.121 = {
 
 		ut_new_dawn_has_core_trigger = yes
 
-		ut_new_dawn_has_core_trigger = yes
 		ut_has_new_dawn_pressure_points = {
 			VALUE = 50
 		}
@@ -1014,7 +1206,6 @@ event_new_dawn.122 = {
 
 		ut_new_dawn_has_core_trigger = yes
 
-		ut_new_dawn_has_core_trigger = yes
 		ut_has_new_dawn_pressure_points = {
 			VALUE = 50
 		}
@@ -1139,6 +1330,124 @@ event_new_dawn.124 = {
 		# ut_add_new_dawn_core_progress = {
 		# 	VALUE = -25
 		# }
+	}
+}
+
+#Constitutional Crisis
+event_new_dawn.140 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.140.t
+	desc = event_new_dawn.140.d
+	flavor = event_new_dawn.140.f
+
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		is_ai = no
+		ut_new_dawn_has_core_trigger = yes
+		NOT = { has_modifier = new_dawn_event_constitutional_crisis_mod }
+		ut_has_new_dawn_pressure_points = {
+			VALUE = 75
+		}
+	}
+
+	option = {
+		default_option = yes
+		name = event_new_dawn.140.a
+		add_modifier = {
+			name = new_dawn_event_constitutional_crisis_mod
+			days = 365
+		}
+	}
+
+	option = {
+		highlighted_option = yes
+		name = event_new_dawn.140.b
+		trigger = {
+			custom_tooltip = {
+				text = ut_has_new_dawn_progress_50
+				ut_has_new_dawn_progress_core = {
+					VALUE = 50
+				}
+			}
+		}
+		custom_tooltip = ut_add_new_dawn_progress_neg_10
+		ut_add_new_dawn_core_progress = {
+			VALUE = -10
+		}
+	}
+}
+
+#State of Emergency
+event_new_dawn.141 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.141.t
+	desc = event_new_dawn.141.d
+	flavor = event_new_dawn.141.f
+
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		is_ai = no
+		ut_new_dawn_has_core_trigger = yes
+		NOT = { has_modifier = new_dawn_event_emergency_decree_mod }
+		ut_has_new_dawn_pressure_points = {
+			VALUE = 75
+		}
+	}
+
+	option = {
+		default_option = yes
+		name = event_new_dawn.141.a
+		add_modifier = {
+			name = new_dawn_event_emergency_decree_mod
+			days = 365
+		}
+		add_treasury = -25000
+	}
+
+	option = {
+		highlighted_option = yes
+		name = event_new_dawn.141.b
+		trigger = {
+			custom_tooltip = {
+				text = ut_has_new_dawn_progress_50
+				ut_has_new_dawn_progress_core = {
+					VALUE = 50
+				}
+			}
+		}
+		custom_tooltip = ut_add_new_dawn_progress_neg_10
+		ut_add_new_dawn_core_progress = {
+			VALUE = -10
+		}
+	}
+	
+	option = {
+		name = event_new_dawn.suppress_random_decision
+		add_radicals = {
+			value = 0.05
+		}
 	}
 }
 
