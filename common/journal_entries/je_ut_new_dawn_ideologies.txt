@@ -246,3 +246,170 @@ ut_je_propaganda_target = {
 
 	should_be_pinned_by_default_uninvolved_or_context = yes
 }
+
+ut_je_ally_influence_petition = {
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_utopia
+
+    scripted_button = je_government_petition_go_away_button
+    scripted_button = je_government_petition_extension_button
+
+    modifiers_while_active = {
+    }
+
+    immediate = {
+    }
+
+    status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = je_government_petition_status
+				trigger = {
+					has_modifier = ut_new_dawn_core_communist_mod
+				}
+			}
+			
+			triggered_desc = {
+				desc = je_government_petition_status
+				trigger = {
+					has_modifier = ut_new_dawn_core_democratic_mod
+				}
+			}
+			
+			triggered_desc = {
+				desc = error
+			}
+		}
+	}
+
+    complete = {
+		trigger_if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+			scope:target = {
+				OR = {
+					has_law_or_variant = law_type:law_universal_suffrage
+					any_scope_treaty = {
+						any_scope_article = {
+							has_type = ut_democracy_article
+						}
+					}
+				}
+				trigger_if = {
+					limit = {
+						country_rank >= rank_value:great_power
+					}
+					has_modifier = ut_new_dawn_core_democratic_mod
+				}
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+			scope:target = {
+				OR = {
+					has_law_or_variant = law_type:law_council_republic
+					any_scope_treaty = {
+						any_scope_article = {
+							has_type = ut_communism_article
+						}
+					}
+				}
+				trigger_if = {
+					limit = {
+						country_rank >= rank_value:great_power
+					}
+					has_modifier = ut_new_dawn_core_communist_mod
+				}
+			}
+		}
+    }
+
+    on_complete = {
+		custom_tooltip = ut_add_new_dawn_progress_5
+		ut_add_new_dawn_core_progress = { 
+			VALUE = 5
+		}
+		add_modifier = {
+			name = modifier_successfully_met_petition_legitimacy
+			days = long_modifier_time
+			multiplier = {
+				value = 0.5
+				if = {
+					limit = {
+						scope:journal_entry ?= {
+							has_variable = asked_for_extension_var
+						}
+					}
+					divide = 2
+				}
+			}
+			is_decaying = yes
+		}
+    }
+
+    invalid = {
+		trigger_if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+			NOT = { has_modifier = ut_new_dawn_core_democratic_mod }
+		}
+		trigger_else_if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+			NOT = { has_modifier = ut_new_dawn_core_communist_mod }
+		}
+		trigger_else = {
+			always = yes
+		}
+    }
+
+    fail = {
+		custom_tooltip = {
+			text = has_been_abandoned_tt
+			scope:journal_entry ?= {
+				has_variable = has_been_abandoned
+			}
+		}
+    }
+
+    on_timeout = {
+		custom_tooltip = ut_add_new_dawn_progress_neg_5
+		ut_add_new_dawn_core_progress = { 
+			VALUE = -5
+		}
+    }
+
+    on_fail = {
+		custom_tooltip = ut_add_new_dawn_progress_neg_5
+		ut_add_new_dawn_core_progress = { 
+			VALUE = -5
+		}
+    }
+
+    on_invalid = {
+    }
+
+    timeout = {
+        value = 1825 # 5 years
+        if = {
+            limit = {
+                scope:journal_entry = {
+                    has_variable = asked_for_extension_var
+                }
+            }
+            add = 1095
+        }
+    }
+
+    weight = 1000
+
+    	
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}

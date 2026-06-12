@@ -1,4 +1,4 @@
-namespace = event_new_dawn
+﻿namespace = event_new_dawn
 
 #Journal Entries core direct trigger events 1-99
 #New Dawn start
@@ -918,7 +918,7 @@ event_new_dawn.101 = {
 
 	option = {
 		name = event_new_dawn.101.b
-		custom_tooltip = ut_add_new_dawn_progress_add_5
+		custom_tooltip = ut_add_new_dawn_progress_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = 5
 		}
@@ -1310,26 +1310,63 @@ event_new_dawn.124 = {
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
 
 	trigger = {
-		always = no
-		# too much for ai
 		is_ai = no
 		NOT = { has_variable = event_new_dawn_18_done }
 		ut_new_dawn_has_core_trigger = yes
+		OR = {
+			has_modifier = ut_new_dawn_core_democratic_mod
+			has_modifier = ut_new_dawn_core_communist_mod
+		}
+		is_power_bloc_leader = yes
+		OR = {
+			AND = {
+				has_modifier = ut_new_dawn_core_communist_mod
+				power_bloc ?={
+					any_power_bloc_member = {
+						NOT = { has_law_or_variant = law_type:law_council_republic }
+					}
+				}
+			}
+			AND = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+				power_bloc ?={
+					any_power_bloc_member = {
+						NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+					}
+				}
+			}
+		}
 	}
 
 	immediate = {
-		set_variable = event_new_dawn_18_done
+		if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+			power_bloc ?= {
+				random_power_bloc_member = {
+					save_scope_as = convert_target_scope
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+			power_bloc ?= {
+				random_power_bloc_member = {
+					save_scope_as = convert_target_scope
+				}
+			}
+		}
 	}
 
 	option = {
-		default_option = yes
-		highlighted_option = yes
-		name = event_new_dawn.124.a
-		custom_tooltip = event_new_dawn.124.placeholder_tt
-		# Placeholder: hook ideological rollback effect here when designed.
-		# ut_add_new_dawn_core_progress = {
-		# 	VALUE = -25
-		# }
+		name = ut_new_dawn_core_communist_mod
+		add_journal_entry = {
+			type = ut_je_communist_ally_influence_petition
+			target = scope:convert_target_scope
+		}
 	}
 }
 

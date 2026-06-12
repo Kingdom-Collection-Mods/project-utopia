@@ -293,6 +293,12 @@
  event_new_dawn.141.a: "Issue emergency decrees and absorb the economic cost"
  event_new_dawn.141.b: "Negotiate with dissenters — concede ground to restore order"
 
+ new_dawn_event_enthusiasm_mod: "New Dawn: Popular Enthusiasm"
+ new_dawn_event_social_harmony_mod: "New Dawn: Social Harmony"
+ new_dawn_event_cultural_awakening_mod: "New Dawn: Cultural Awakening"
+ new_dawn_event_constitutional_crisis_mod: "New Dawn: Constitutional Crisis"
+ new_dawn_event_emergency_decree_mod: "New Dawn: State of Emergency"
+
  event_new_dawn.democrat_leader: "Einen neuen demokratischen Anführer ernennen"
  event_new_dawn.autocrat_leader: "Eine autokratische Galionsfigur stärken"
  event_new_dawn.random_decision: "Das Ergebnis sich organisch entfalten lassen"
@@ -1030,6 +1036,7 @@
  ut_new_dawn_propaganda_target_defend: "Gegen Propaganda verteidigen"
  ut_new_dawn_propaganda_target_defend_desc: "[SCOPE.sCountry('ut_new_dawn_propaganda_target_defend_source_scope').GetName] gibt #r 10#! [concept_ut_nd_progress_points] aus, um sich gegen die laufende Propaganda-Kampagne zu verteidigen."
  ut_new_dawn_propaganda_target_defend_tt: "Es müssen 10 [concept_ut_nd_progress_points] ausgegeben werden oder die Kampagne wird abgebrochen.\n\n #lore Die Kosten steigen bei aufeinanderfolgenden Verteidigungsversuchen auf 20 $concept_ut_nd_progress_points$.#!"
+ ut_new_dawn_propaganda_source_defend_once_tt: "Erster Verteidigungsversuch (weitere Versuche kosten 20 [concept_ut_nd_progress_points])"
  ut_new_dawn_propaganda_target_defend_cooldown_tt: "Kann nur einmal pro Monat verwendet werden."
 
  ut_propaganda_communist_mod: "Kommunistische Propaganda"
@@ -1040,6 +1047,11 @@
  country_new_dawn_propaganda_source_efficiency_mult: "\"$ut_je_propaganda_source$\" Effizienz"
  country_new_dawn_propaganda_source_speed_mult: "\"$ut_je_propaganda_source$\" Geschwindigkeit"
  country_new_dawn_propaganda_source_speed_mult_desc: "Ändert die Geschwindigkeit, mit der die [GetDiplomaticActionType('ut_new_dawn_start_propaganda_campaign').GetName] voranschreitet."
+
+ ut_je_ally_influence_petition: "[ROOT.GetCountry.GetCustom('ut_new_dawn_ideology_status')] Petition"
+ ut_je_ally_influence_petition_communist: "The [ROOT.GetCountry.GetCustom('ut_new_dawn_ideology_status')] are petitioning for . to pass [GetLawType('law_council_republic').GetName]."
+ ut_je_ally_influence_petition_democratic: "The [ROOT.GetCountry.GetCustom('ut_new_dawn_ideology_status')] are petitioning for . to pass [GetLawType('law_universal_suffrage').GetName]."
+ ut_je_ally_influence_petition_reason: "To spread our [ROOT.GetCountry.GetCustom('ut_new_dawn_ideology_status')] ideology, we best influence them to enact our core law.\n\nIf we succeed, [ROOT.GetCountry.GetCustom('ut_new_dawn_ideology_status')] will be spread further."
 
  UT_BOTH_SAME_IDEOLOGY: "Gleiche Ideologie"
  UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Beide Länder müssen dieselbe Ideologie teilen."
@@ -1147,6 +1159,7 @@
  ut_has_new_dawn_progress_75: "Hat #b 75#! [concept_ut_nd_progress_points]"
  ut_has_new_dawn_progress_50: "Mindestens #b 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_50: "Füge #b 50#! [concept_ut_nd_progress_points] hinzu"
+ ut_add_new_dawn_progress_5: "Füge #b 5#! [concept_ut_nd_progress_points] hinzu"
  ut_add_new_dawn_progress_neg_50: "Verliert #r 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_25: "Verliert #r 25#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_20: "Verliert #r 20#! [concept_ut_nd_progress_points]"
@@ -1421,7 +1434,9 @@
  ut_war_planes: "Kriegsflugzeuge"
  ut_war_planes_desc: "Doppeldecker-Jäger kämpfen mit Maschinengewehren durch Propellerkreise. Luftduelle folgen noch dem Ritual ritterlicher Einzelkämpfe, bis Formationstaktiken den Himmel militarisieren."
  ut_war_planes_2: "Fortgeschrittene Kriegsflugzeuge"
+ ut_war_planes_2_desc: "Strahltriebwerke zerreißen den Schallvorhang. MiG-15 und F-86 schreiben Dogfights in Überschallkurven, wo Sekundenverzögerungen zum Flammengrab werden."
  ut_war_planes_2_1: "Sehr fortgeschrittene Kriegsflugzeuge"
+ ut_war_planes_2_1_desc: ""
  ut_jet_planes: "Jetflugzeuge"
  ut_jet_planes_desc: "Strahltriebwerke zerreißen den Schallvorhang. MiG-15 und F-86 schreiben Dogfights in Überschallkurven, wo Sekundenverzögerungen zum Flammengrab werden."
  ut_modern_planes: "Moderne Kampfflugzeuge"

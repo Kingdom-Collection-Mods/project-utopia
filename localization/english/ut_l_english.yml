@@ -299,8 +299,6 @@
  new_dawn_event_constitutional_crisis_mod: "New Dawn: Constitutional Crisis"
  new_dawn_event_emergency_decree_mod: "New Dawn: State of Emergency"
 
- ut_add_new_dawn_progress_add_5: "Gain ideological programme progress (+5)"
-
  event_new_dawn.democrat_leader: "Appoint a new democratic leader"
  event_new_dawn.autocrat_leader: "Empower an autocratic figurehead"
  event_new_dawn.random_decision: "Let the outcome be decided organically"
@@ -1050,6 +1048,11 @@
  country_new_dawn_propaganda_source_speed_mult: "\"$ut_je_propaganda_source$\" speed"
  country_new_dawn_propaganda_source_speed_mult_desc: "Changes the speed at which the [GetDiplomaticActionType('ut_new_dawn_start_propaganda_campaign').GetName] progresses."
 
+ ut_je_ally_influence_petition: "[ROOT.GetCountry.GetCustom('ut_new_dawn_ideology_status')] Petition"
+ ut_je_ally_influence_petition_communist: "The [ROOT.GetCountry.GetCustom('ut_new_dawn_ideology_status')] are petitioning for . to pass [GetLawType('law_council_republic').GetName]."
+ ut_je_ally_influence_petition_democratic: "The [ROOT.GetCountry.GetCustom('ut_new_dawn_ideology_status')] are petitioning for . to pass [GetLawType('law_universal_suffrage').GetName]."
+ ut_je_ally_influence_petition_reason: "To spread our [ROOT.GetCountry.GetCustom('ut_new_dawn_ideology_status')] ideology, we best influence them to enact our core law.\n\nIf we succeed, [ROOT.GetCountry.GetCustom('ut_new_dawn_ideology_status')] will be spread further."
+
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
  UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
  UT_BOTH_DIFFERENT_IDEOLOGY: "Different ideologies"
@@ -1429,7 +1432,9 @@
  ut_war_planes: "Warplanes"
  ut_war_planes_desc: ""
  ut_war_planes_2: "Anti-Air Guns"
+ ut_war_planes_2_desc: ""
  ut_war_planes_2_1: "Advanced Warplanes"
+ ut_war_planes_2_1_desc: ""
  ut_jet_planes: "Jet Aircraft"
  ut_jet_planes_desc: ""
  ut_modern_planes: "Modern Aircraft"
