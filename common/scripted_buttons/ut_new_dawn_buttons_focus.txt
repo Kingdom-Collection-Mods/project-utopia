@@ -288,21 +288,16 @@ ut_new_dawn_democrat_focus = {
 		}
 		if = {
 			limit = {
-				OR = {
-					has_law = law_type:law_universal_suffrage
-					has_law = law_type:law_census_voting
-				}
+				has_law = law_type:law_universal_suffrage
 			}
 			add = 40
 		}
+		
 		if = {
 			limit = {
-				OR = {
-					has_law = law_type:law_landed_voting
-					has_law = law_type:law_wealth_voting
-				}
+				has_law = law_type:law_census_voting
 			}
-			add = 10
+			add = 20
 		}
 		if = {
 			limit = {
@@ -311,7 +306,7 @@ ut_new_dawn_democrat_focus = {
 					has_law = law_type:law_parliamentary_republic
 				}
 			}
-			add = 10
+			add = 20
 		}
 		if = {
 			limit = {
@@ -420,13 +415,13 @@ ut_new_dawn_communist_focus = {
 					has_law = law_type:law_command_economy
 				}
 			}
-			add = 40
+			add = 20
 		}
 		if = {
 			limit = {
 				has_law = law_type:law_council_republic
 			}
-			add = 20
+			add = 40
 		}
 		if = {
 			#to balance with fascism
