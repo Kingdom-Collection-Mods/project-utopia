@@ -60,3 +60,8 @@ concept_ut_research_institute = {
 	texture = "gfx/interface/icons/building_icons/research_institute.dds"
 	is_loading_tip = yes
 }
+
+concept_ut_nd_core_laws = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds"
+	is_loading_tip = yes
+}
