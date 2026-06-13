@@ -258,7 +258,7 @@
  event_new_dawn.105.t: "Spread Ideology Abroad"
  event_new_dawn.105.d: "Our ideological vision should be shared with the world. There is an opportunity to export our ideas and gain influence in other countries."
  event_new_dawn.105.f: "Our diplomats and cultural emissaries are actively promoting our ideology on the international stage. Some foreign governments are receptive, while others are resistant. The potential for expanding our influence is significant, but it requires careful navigation of global politics."
- event_new_dawn.105.a: "Promote our ideology diplomatically"
+ event_new_dawn.105.a: "Promote our ideology diplomatically in [SCOPE.sCountry('convert_target_scope').GetName]"
  event_new_dawn.105.b: "Promote ideology internally"
 
  event_new_dawn.106.t: "[SCOPE.gsInterestGroup('government_petition_ig').GetName] Petition"
@@ -1069,10 +1069,10 @@
  country_new_dawn_propaganda_source_speed_mult: "\"$ut_je_propaganda_source$\" speed"
  country_new_dawn_propaganda_source_speed_mult_desc: "Changes the speed at which the [GetDiplomaticActionType('ut_new_dawn_start_propaganda_campaign').GetName] progresses."
 
- ut_je_ally_influence_petition: "[ROOT.GetCountry.GetCustom('ut_new_dawn_ideology_status')] Petition"
- ut_je_ally_influence_petition_communist: "The [ROOT.GetCountry.GetCustom('ut_new_dawn_ideology_status')] are petitioning for . to pass [GetLawType('law_council_republic').GetName]."
- ut_je_ally_influence_petition_democratic: "The [ROOT.GetCountry.GetCustom('ut_new_dawn_ideology_status')] are petitioning for . to pass [GetLawType('law_universal_suffrage').GetName]."
- ut_je_ally_influence_petition_reason: "To spread our [ROOT.GetCountry.GetCustom('ut_new_dawn_ideology_status')] ideology, we best influence them to enact our core law.\n\nIf we succeed, [ROOT.GetCountry.GetCustom('ut_new_dawn_ideology_status')] will be spread further."
+ ut_je_ally_influence_petition: "[ROOT.GetCountry.GetCustom('ut_new_dawn_phase_1_focus')] Petition"
+ ut_je_ally_influence_petition_communist: "The [ROOT.GetCountry.GetCustom('ut_new_dawn_phase_1_focus')] movement is petitioning for [SCOPE.sCountry('convert_target_scope').GetName] to pass [GetLawType('law_council_republic').GetName]."
+ ut_je_ally_influence_petition_democratic: "The [ROOT.GetCountry.GetCustom('ut_new_dawn_phase_1_focus')] movement is petitioning for [SCOPE.sCountry('convert_target_scope').GetName] to pass [GetLawType('law_universal_suffrage').GetName]."
+ ut_je_ally_influence_petition_reason: "To spread our [ROOT.GetCountry.GetCustom('ut_new_dawn_phase_1_focus')] ideology [SCOPE.sCountry('convert_target_scope').GetName], we best influence them to enact our [concept_ut_nd_core_laws].\n\nIf we succeed, [ROOT.GetCountry.GetCustom('ut_new_dawn_phase_1_focus')] will be spread further."
 
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
  UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."

@@ -259,19 +259,22 @@ ut_je_ally_influence_petition = {
     }
 
     immediate = {
+		scope:target = {
+			save_scope_as = convert_target_scope
+		}
     }
 
     status_desc = {
 		first_valid = {
 			triggered_desc = {
-				desc = je_government_petition_status
+				desc = ut_je_ally_influence_petition_communist
 				trigger = {
 					has_modifier = ut_new_dawn_core_communist_mod
 				}
 			}
 			
 			triggered_desc = {
-				desc = je_government_petition_status
+				desc = ut_je_ally_influence_petition_democratic
 				trigger = {
 					has_modifier = ut_new_dawn_core_democratic_mod
 				}
@@ -370,6 +373,7 @@ ut_je_ally_influence_petition = {
     }
 
     fail = {
+		exists = scope:convert_target_scope
 		custom_tooltip = {
 			text = has_been_abandoned_tt
 			scope:journal_entry ?= {

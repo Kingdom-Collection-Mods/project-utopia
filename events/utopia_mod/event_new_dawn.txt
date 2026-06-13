@@ -890,7 +890,7 @@ event_new_dawn.101 = {
 
 	duration = 3
 
-	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -939,7 +939,7 @@ event_new_dawn.102 = {
 
 	duration = 3
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -956,7 +956,6 @@ event_new_dawn.102 = {
 	}
 
 	option = {
-		highlighted_option = yes
 		default_option = yes
 		name = event_new_dawn.102.a
 		add_modifier = {
@@ -988,7 +987,7 @@ event_new_dawn.103 = {
 
 	duration = 3
 
-	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -1004,12 +1003,11 @@ event_new_dawn.103 = {
 	}
 
 	option = {
-		highlighted_option = yes
 		default_option = yes
 		name = event_new_dawn.103.a
 		add_treasury = {
 			value = yearly_gross_income
-			multiply = 0.5
+			multiply = 0.25
 		}
 	}
 
@@ -1031,12 +1029,12 @@ event_new_dawn.104 = {
 	flavor = event_new_dawn.104.f
 
 	event_image = {
-		video = "europenorthamerica_springtime_of_nations"
+		video = "unspecific_world_fair"
 	}
 
 	duration = 3
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -1053,7 +1051,6 @@ event_new_dawn.104 = {
 	}
 
 	option = {
-		highlighted_option = yes
 		default_option = yes
 		name = event_new_dawn.104.a
 		add_modifier = {
@@ -1085,7 +1082,7 @@ event_new_dawn.105 = {
 
 	duration = 3
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 	#gui_window = event_window_1char_tabloid
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -1105,12 +1102,16 @@ event_new_dawn.105 = {
 			has_modifier = ut_new_dawn_core_democratic_mod
 			has_modifier = ut_new_dawn_core_communist_mod
 		}
+		NOT = {
+			has_journal_entry = ut_je_ally_influence_petition
+		}
 		is_power_bloc_leader = yes
 		OR = {
 			AND = {
 				has_modifier = ut_new_dawn_core_communist_mod
 				power_bloc ?={
 					any_power_bloc_member = {
+						is_subject = no
 						NOT = { has_law_or_variant = law_type:law_council_republic }
 					}
 				}
@@ -1119,6 +1120,7 @@ event_new_dawn.105 = {
 				has_modifier = ut_new_dawn_core_democratic_mod
 				power_bloc ?={
 					any_power_bloc_member = {
+						is_subject = no
 						NOT = { has_law_or_variant = law_type:law_universal_suffrage }
 					}
 				}
@@ -1133,6 +1135,10 @@ event_new_dawn.105 = {
 			}
 			power_bloc ?= {
 				random_power_bloc_member = {
+					limit = {
+						is_subject = no
+						NOT = { has_law_or_variant = law_type:law_council_republic }						
+					}
 					save_scope_as = convert_target_scope
 				}
 			}
@@ -1143,6 +1149,10 @@ event_new_dawn.105 = {
 			}
 			power_bloc ?= {
 				random_power_bloc_member = {
+					limit = {
+						is_subject = no
+						NOT = { has_law_or_variant = law_type:law_universal_suffrage }						
+					}
 					save_scope_as = convert_target_scope
 				}
 			}
@@ -1150,6 +1160,9 @@ event_new_dawn.105 = {
 	}
 
 	option = {
+		trigger = {
+			exists = scope:convert_target_scope
+		}
 		default_option = yes
 		name = event_new_dawn.105.a
 		add_journal_entry = {
@@ -1177,7 +1190,7 @@ event_new_dawn.106 = {
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	title = event_new_dawn.106.t
 	desc = {
@@ -1456,8 +1469,7 @@ event_new_dawn.120 = {
 
 	duration = 3
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	#gui_window = event_window_1char_tabloid
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -1519,8 +1531,7 @@ event_new_dawn.121 = {
 
 	duration = 3
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	#gui_window = event_window_1char_tabloid
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -1568,8 +1579,7 @@ event_new_dawn.122 = {
 
 	duration = 3
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	#gui_window = event_window_1char_tabloid
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -1587,11 +1597,10 @@ event_new_dawn.122 = {
 
 	option = {
 		default_option = yes
-		highlighted_option = yes
 		name = event_new_dawn.122.a
 		add_treasury = {
 			value = yearly_gross_income
-			multiply = -0.25 # 1.5
+			multiply = -0.1
 		}
 	}
 }
@@ -1610,8 +1619,7 @@ event_new_dawn.123 = {
 
 	duration = 3
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	#gui_window = event_window_1char_tabloid
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -1680,8 +1688,7 @@ event_new_dawn.124 = {
 
 	duration = 3
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	#gui_window = event_window_1char_tabloid
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -1736,7 +1743,7 @@ event_new_dawn.140 = {
 
 	duration = 3
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -1791,7 +1798,7 @@ event_new_dawn.141 = {
 
 	duration = 3
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
@@ -1814,7 +1821,7 @@ event_new_dawn.141 = {
 		}
 		add_treasury = {
 			value = yearly_gross_income
-			multiply = -0.25 # 1.5
+			multiply = -0.1
 		}
 	}
 

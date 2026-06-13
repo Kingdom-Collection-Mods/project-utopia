@@ -255,6 +255,19 @@
  event_new_dawn.104.a: "Celebrate and encourage this cultural movement"
  event_new_dawn.104.b: "Harness national pride to accelerate the ideological programme"
 
+ event_new_dawn.105.t: "Spread Ideology Abroad"
+ event_new_dawn.105.d: "Our ideological vision should be shared with the world. There is an opportunity to export our ideas and gain influence in other countries."
+ event_new_dawn.105.f: "Our diplomats and cultural emissaries are actively promoting our ideology on the international stage. Some foreign governments are receptive, while others are resistant. The potential for expanding our influence is significant, but it requires careful navigation of global politics."
+ event_new_dawn.105.a: "Promote our ideology diplomatically in [SCOPE.sCountry('convert_target_scope').GetName]"
+ event_new_dawn.105.b: "Promote ideology internally"
+
+ event_new_dawn.106.t: "[SCOPE.gsInterestGroup('government_petition_ig').GetName] Petition"
+ event_new_dawn.106.d: "Representing our ideological enthusiasm in the [SCOPE.gsInterestGroup('government_petition_ig').GetName], [SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetFullName] has issued a formal petition to the [ROOT.GetCountry.GetAdjective] government to pass [SCOPE.sLaw('government_petition_law').GetName]."
+ event_new_dawn.106.d.none: "Representing our ideological enthusiasm the people celebrate."
+ event_new_dawn.106.f: "Er, one last matter for the day, sir. Members of your constituency arrived this morning. They're delighted by our ideological progress and propose new legislation.\n\nIs that it? What a delight!"
+ event_new_dawn.106.f.none: "Our people are happy we have build a solid ideological foundation. They have no specific demands, but they want to celebrate our progress."
+ event_new_dawn.106.z: "Let's celebrate!"
+
  event_new_dawn.120.t: "Crisis of Confidence"
  event_new_dawn.120.d: "Public trust in established leadership is eroding, and major interest groups are voicing broad disapproval."
  event_new_dawn.120.f: "The issue is less an organized uprising and more a widening legitimacy crisis. Newspapers, assemblies, and political clubs now echo the same accusation: the current course no longer represents the nation's interests."
@@ -664,6 +677,14 @@
 
  concept_ut_nd_stance: "Haltung"
  concept_ut_nd_stance_desc: "Jede Ideologie hat eine Haltung gegenüber anderen Ideologien. Die Haltung beeinflusst die Akzeptanz des Beitritts und Verbleibs in einem Machtblock sowie die meisten neuen Project Utopia-Aktionen. Work in progress."
+ 
+ concept_ut_nd_core_laws: "Kern-Gesetzte"
+ concept_ut_nd_core_laws_desc: "Das Kern-Gesetz einer Ideologie ist entscheidend für ihre Verbreitung und beeinflusst stark [concept_ut_new_dawn].\n\nKommunistisches Kern-Gesetz: $ut_nd_core_laws_communist$\nDemokratisches Kern-Gesetz: $ut_nd_core_laws_democrat$\nAutokratisches Kern-Gesetz: $ut_nd_core_laws_autocrat$\nFaschistisches Kern-Gesetz: $ut_nd_core_laws_fascist$"
+
+ ut_nd_core_laws_communist: "[GetLawType('law_command_economy').GetName], [GetLawType('law_cooperative_ownership').GetName]"
+ ut_nd_core_laws_democrat: "[GetLawType('law_universal_suffrage').GetName], [GetLawType('law_census_voting').GetName]"
+ ut_nd_core_laws_autocrat: "[GetLawType('law_monarchy').GetName], [GetLawType('law_autocracy').GetName]"
+ ut_nd_core_laws_fascist: "[GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName]"
 
  je_ai_radio_researched: "Radio erforscht"
  je_ai_radio_researched_reason: "REPLACE_ME"
@@ -2036,6 +2057,12 @@
  wirtschaftswunder_others_modifier: "Wirtschaftswunder (Einfluss)"
  early_civil_aviation_modifier_others: "Frühe zivile Luftfahrt"
  modern_civil_aviation_modifier_others: "Moderne zivile Luftfahrt"
+
+ #backwards compatibility
+ je_ut_new_dawn_core_abilities: "New Dawn Edicts"
+ je_ut_new_dawn_core_abilities_reason: "So be it."
+ je_ut_new_dawn_core_abilities_add_decision: "Add New Dawn Core Abilities"
+ je_ut_new_dawn_core_abilities_add_decision_desc: "Unlock the New Dawn Core [concept_ut_nd_abilities]."
 
  #je software tree
  je_ut_software_era_6_add_decision: "Software-Expertise-Technologiebaum starten"

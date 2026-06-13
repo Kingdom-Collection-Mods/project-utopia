@@ -4,6 +4,7 @@
 
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress >= 100
 			var:je_ut_new_dawn_core_progress_diff >= 0
 		}
@@ -14,6 +15,7 @@
 
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress < 10
 			var:je_ut_new_dawn_core_progress_diff < 0
 		}
@@ -23,6 +25,7 @@
 	
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			#probably some action happened like activating a milestone
 			var:je_ut_new_dawn_core_progress_diff < -4
 		}
@@ -31,6 +34,7 @@
 
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress_diff < -2
 		}
 
@@ -39,6 +43,7 @@
 
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress_diff < -1
 		}
 
@@ -47,6 +52,7 @@
 
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress_diff < -0.7
 		}
 
@@ -55,6 +61,7 @@
 	
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress_diff < -0.4
 		}
 
@@ -63,6 +70,7 @@
 	
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress_diff < 0.1
 			var:je_ut_new_dawn_core_progress_diff >  -0.1
 		}
@@ -72,6 +80,7 @@
 	
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress_diff < 0.4
 		}
 
@@ -80,6 +89,7 @@
 	
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress_diff < 0.6
 		}
 
@@ -88,6 +98,7 @@
 	
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress_diff < 1
 		}
 
