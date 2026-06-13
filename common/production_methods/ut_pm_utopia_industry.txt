@@ -719,7 +719,7 @@ pm_computers_integrated_chips_process  = {
 			goods_input_heavy_machinery_add = 4
 			
 			# output goods
-			goods_output_computers_add = 120
+			goods_output_computers_add = 140
 		}
 
 		level_scaled = {
