@@ -304,7 +304,8 @@ civilian_planes = {
 	category = production
 
 	modifier = {
-		goods_output_aeroplanes_mult = 0.1
+		goods_output_aeroplanes_mult = 0.2
+		building_urban_center_throughput_add = 0.2
 	}
 
 	unlocking_technologies = {	
@@ -322,7 +323,8 @@ civilian_drones = {
 	category = production
 
 	modifier = {
-		goods_output_aeroplanes_mult = 0.1
+		goods_output_aeroplanes_mult = 0.2
+		building_urban_center_throughput_add = 0.2
 	}
 
 	unlocking_technologies = {	
