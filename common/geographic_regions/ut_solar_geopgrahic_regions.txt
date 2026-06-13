@@ -3,32 +3,34 @@
 
 	strategic_regions = {
 		# Africa
-		sr:region_north_africa
-		sr:region_equatorial_africa
 		sr:region_east_africa
 		sr:region_nile_basin
+		sr:region_north_africa
 		sr:region_southern_africa
+		sr:region_west_africa
 
-		# East Asia & Oceania
-		sr:region_indonesia
-		sr:region_indochina
-		sr:region_south_china
-		sr:region_oceania
-		
-		sr:region_north_india
-
-		# West Asia
-		sr:region_greater_persia
+		# Middle East & Central Asia
 		sr:region_arabia
+		sr:region_central_asia
+		sr:region_greater_persia
+		sr:region_near_east
+
+		# South Asia
+		sr:region_north_india
+		sr:region_south_india
+
+		# Europe
+		sr:region_southern_europe
 
 		# North America
-		sr:region_central_america
+		sr:region_great_plains
 		sr:region_pacific_coast
 
 		# South America
-		sr:region_brazil
-		sr:region_gran_colombia
-		sr:region_la_plata
+		sr:region_andes
+
+		# Oceania
+		sr:region_oceania
 	}
 }
 
@@ -36,29 +38,25 @@ geographic_region_medium_solar_potential = {
 	short_key = "geographic_region_medium_solar_potential"
 
 	strategic_regions = {
-
-		# East Asia
-		sr:region_north_china
-		sr:region_northeast_asia
-		
-		# West Asia
-		sr:region_central_asia
-		sr:region_south_india
-		sr:region_himalayas
+		# Africa
+		sr:region_equatorial_africa
 
 		# Europe
-		sr:region_southern_europe
 		sr:region_balkans
-		sr:region_central_europe
-		sr:region_eastern_europe
-
-		# North America
-		sr:region_atlantic_coast
-		sr:region_great_plains
-		sr:region_pacific_coast
 
 		# South America
-		sr:region_andes
+		sr:region_brazil
+		sr:region_gran_colombia
+		sr:region_la_plata
+
+		# North America & Caribbean
+		sr:region_central_america
+
+		# Central, South & East Asia
+		sr:region_himalayas
+		sr:region_indochina
+		sr:region_north_china
+		sr:region_south_china
 	}
 }
 
@@ -66,17 +64,22 @@ geographic_region_low_solar_potential = {
 	short_key = "geographic_region_low_solar_potential"
 
 	strategic_regions = {
-		# East Asia & Siberia
-		sr:region_siberia
-
-		# West Asia
-		sr:region_russia
+		# North America
+		sr:region_atlantic_coast
+		sr:region_canada
 
 		# Europe
+		sr:region_central_europe
+		sr:region_eastern_europe
 		sr:region_northern_europe
-		sr:region_russia
+		sr:region_western_europe
 
-		# North America
-		sr:region_canada
+		# East Asia & Oceania
+		sr:region_indonesia
+		sr:region_northeast_asia
+
+		# Russia & Siberia
+		sr:region_russia
+		sr:region_siberia
 	}
 }

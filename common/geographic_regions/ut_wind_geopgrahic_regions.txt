@@ -1,35 +1,31 @@
 ﻿geographic_region_high_wind_potential = {
 	short_key = "geographic_region_high_wind_potential"
 
-	
-
 	strategic_regions = {
 		# Africa
 		sr:region_north_africa
+		sr:region_southern_africa
 
-		# East Asia & Oceania
-		sr:region_north_china
-		sr:region_northeast_asia
-		sr:region_oceania
+		# Americas
+		sr:region_atlantic_coast
+		sr:region_canada
+		sr:region_great_plains
+		sr:region_la_plata
+		sr:region_pacific_coast
+
+		# Asia
 		sr:region_central_asia
+		sr:region_northeast_asia
+		sr:region_siberia
 
 		# Europe
 		sr:region_northern_europe
-		sr:region_southern_europe
-		sr:region_central_europe
-		sr:region_eastern_europe
+		sr:region_western_europe
 
-		# North America
-		sr:region_canada
-		sr:region_atlantic_coast
-		sr:region_pacific_coast
-		sr:region_great_plains
-
-		# South America
-		sr:region_la_plata
+		# East Asia & Oceania
+		sr:region_oceania
 	}
 }
-
 
 geographic_region_medium_wind_potential = {
 	short_key = "geographic_region_medium_wind_potential"
@@ -37,34 +33,30 @@ geographic_region_medium_wind_potential = {
 	strategic_regions = {
 		# Africa
 		sr:region_east_africa
-		sr:region_west_africa
-		sr:region_southern_africa
 		sr:region_nile_basin
+		sr:region_west_africa
 
-		# East Asia & Oceania
-		sr:region_south_china
-		sr:region_siberia
-		sr:region_indochina
-		sr:region_indonesia
+		# Americas
+		sr:region_brazil
+		sr:region_central_america
+		sr:region_andes
 
-		# West Asia
+		# Asia
 		sr:region_arabia
 		sr:region_greater_persia
+		sr:region_himalayas
+		sr:region_near_east
+		sr:region_north_china
+		sr:region_north_india
+		sr:region_russia
+		sr:region_south_china
 		sr:region_south_india
 
 		# Europe
-		sr:region_southern_europe
-		sr:region_northern_europe
-		sr:region_russia
+		sr:region_balkans
 		sr:region_central_europe
 		sr:region_eastern_europe
-
-		# North America
-		sr:region_central_america
-		sr:region_atlantic_coast
-
-		# South America
-		sr:region_brazil
+		sr:region_southern_europe
 	}
 }
 
@@ -74,23 +66,12 @@ geographic_region_low_wind_potential = {
 	strategic_regions = {
 		# Africa
 		sr:region_equatorial_africa
-		
-		# Europe
-		sr:region_southern_europe
-		sr:region_balkans
-		
-		# North America
-		sr:region_central_america
 
-		# South America
-		sr:region_andes
+		# Americas
 		sr:region_gran_colombia
 
-		# West Asia
-		sr:region_arabia
-		sr:region_russia
-		sr:region_north_india
-		sr:region_himalayas
-		sr:region_south_india
+		# Asia
+		sr:region_indochina
+		sr:region_indonesia
 	}
 }
