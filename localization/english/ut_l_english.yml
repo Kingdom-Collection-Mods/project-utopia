@@ -288,11 +288,10 @@
  event_new_dawn.123.f: "Universities are understaffed, archives are delayed, and technical committees are deadlocked. The innovation apparatus remains active, but its maximum output has fallen noticeably."
  event_new_dawn.123.a: "Research output slows"
 
- event_new_dawn.124.t: "Ideological Revision (Placeholder)"
- event_new_dawn.124.d: "A draft mechanism for rolling back ideological progress is under design."
- event_new_dawn.124.f: "This event currently serves as a placeholder for a future system that can directly undo ideological progress under specific circumstances."
- event_new_dawn.124.a: "Acknowledge placeholder"
- event_new_dawn.124.placeholder_tt: "Placeholder effect only. No ideological rollback is applied yet."
+ event_new_dawn.124.t: "Pressure Increases"
+ event_new_dawn.124.d: "Ideological pressure is mounting from various radical groups, threatening to undo our progress."
+ event_new_dawn.124.f: "The coalition that sustains our programme is showing signs of strain. Factions within the armed forces, industrialists, and intellectuals are voicing increasing demands. If these pressures are not managed carefully, they could fracture the support base for our vision."
+ event_new_dawn.124.a: "Pressure from radical groups increases"
 
  event_new_dawn.140.t: "Constitutional Crisis"
  event_new_dawn.140.d: "Deep political divisions have erupted into a full constitutional crisis. The legitimacy of the existing order is openly challenged."
@@ -1194,6 +1193,7 @@
  ut_has_new_dawn_pressure_90: "Has #b 90#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_max: "Has #b 100#! [concept_ut_nd_pressure]"
  ut_add_new_dawn_pressure_add_1: "Gains #r 1#! [concept_ut_nd_pressure]"
+ ut_add_new_dawn_pressure_add_5: "Gains #r 5#! [concept_ut_nd_pressure]"
  ut_add_new_dawn_pressure_add_10: "Gains #r 10#! [concept_ut_nd_pressure]"
  ut_add_new_dawn_pressure_remove_10: "Loses #g 10#! [concept_ut_nd_pressure]"
 

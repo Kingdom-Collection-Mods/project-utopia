@@ -281,7 +281,7 @@ ut_je_ally_influence_petition = {
 			}
 			
 			triggered_desc = {
-				desc = error
+				desc = utopia.error
 			}
 		}
 	}

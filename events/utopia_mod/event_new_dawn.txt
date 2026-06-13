@@ -1221,7 +1221,7 @@ event_new_dawn.106 = {
 								has_law_or_variant = law_type:law_command_economy
 							}
 						}
-						has_modifier = ut_new_dawn_core_autocrat_mod
+						has_modifier = ut_new_dawn_core_autocratic_mod
 					}
 				}
 			}
@@ -1258,7 +1258,7 @@ event_new_dawn.106 = {
 								has_law_or_variant = law_type:law_command_economy
 							}
 						}
-						has_modifier = ut_new_dawn_core_autocrat_mod
+						has_modifier = ut_new_dawn_core_autocratic_mod
 					}
 				}
 			}
@@ -1538,10 +1538,15 @@ event_new_dawn.120 = {
 
 	#Suppress
 	option = {
-		highlighted_option = yes
 		trigger = {
-			ut_new_dawn_has_core_trigger = yes
+			custom_tooltip = {
+				text = ut_has_new_dawn_progress_50
+				ut_has_new_dawn_progress_core = {
+					VALUE = 50
+				}
+			}
 		}
+		highlighted_option = yes
 		name = je_ut_new_dawn_suppress_dissidents
 		custom_tooltip = ut_add_new_dawn_progress_neg_5
 		ut_add_new_dawn_core_progress = {
@@ -1593,20 +1598,19 @@ event_new_dawn.121 = {
 		ut_new_dawn_has_core_trigger = yes
 
 		ut_has_new_dawn_pressure_points = {
-			VALUE = 50
+			VALUE = 10
 		}
 	}
 
-	#Setback
+	#Forced Setback
 	option = {
-		default_option = yes
-		name = event_new_dawn.121.a
+		name = je_ut_new_dawn_suppress_dissidents
 		custom_tooltip = ut_add_new_dawn_progress_neg_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = -5
 		}
 	}
-
+	
 	option = {
 		name = event_new_dawn.suppress_random_decision
 		add_radicals = {
@@ -1646,11 +1650,35 @@ event_new_dawn.122 = {
 	}
 
 	option = {
+		trigger = {
+			custom_tooltip = {
+				text = ut_has_new_dawn_progress_50
+				ut_has_new_dawn_progress_core = {
+					VALUE = 50
+				}
+			}
+		}
+		highlighted_option = yes
+		name = je_ut_new_dawn_suppress_dissidents
+		custom_tooltip = ut_add_new_dawn_progress_neg_5
+		ut_add_new_dawn_core_progress = {
+			VALUE = -5
+		}
+	}
+
+	option = {
 		default_option = yes
 		name = event_new_dawn.122.a
 		add_treasury = {
 			value = yearly_gross_income
 			multiply = -0.1
+		}
+	}
+	
+	option = {
+		name = event_new_dawn.suppress_random_decision
+		add_radicals = {
+			value = 0.01
 		}
 	}
 }
@@ -1664,7 +1692,7 @@ event_new_dawn.123 = {
 	flavor = event_new_dawn.123.f
 
 	event_image = {
-		video = "unspecific_world_fair"
+		video = "unspecific_factory_closed"
 	}
 
 	duration = 3
@@ -1701,9 +1729,9 @@ event_new_dawn.123 = {
 		}
 		highlighted_option = yes
 		name = je_ut_new_dawn_suppress_dissidents
-		custom_tooltip = ut_add_new_dawn_progress_neg_10
+		custom_tooltip = ut_add_new_dawn_progress_neg_5
 		ut_add_new_dawn_core_progress = {
-			VALUE = -10
+			VALUE = -5
 		}
 	}
 
@@ -1719,7 +1747,7 @@ event_new_dawn.123 = {
 	option = {
 		name = event_new_dawn.suppress_random_decision
 		add_radicals = {
-			value = 0.02
+			value = 0.01
 		}
 	}
 }
@@ -1759,6 +1787,23 @@ event_new_dawn.124 = {
 	}
 
 	option = {
+		trigger = {
+			custom_tooltip = {
+				text = ut_has_new_dawn_progress_50
+				ut_has_new_dawn_progress_core = {
+					VALUE = 50
+				}
+			}
+		}
+		highlighted_option = yes
+		name = je_ut_new_dawn_suppress_dissidents
+		custom_tooltip = ut_add_new_dawn_progress_neg_5
+		ut_add_new_dawn_core_progress = {
+			VALUE = -5
+		}
+	}
+	
+	option = {
 		name = event_new_dawn.124.a
 		custom_tooltip = {
 			text = ut_add_new_dawn_pressure_add_5
@@ -1767,14 +1812,11 @@ event_new_dawn.124 = {
 			}
 		}
 	}
-
+	
 	option = {
-		name = event_new_dawn.124.b
-		custom_tooltip = {
-			text = ut_add_new_dawn_progress_neg_10
-			ut_add_new_dawn_core_progress = {
-				VALUE = -10
-			}
+		name = event_new_dawn.suppress_random_decision
+		add_radicals = {
+			value = 0.01
 		}
 	}
 }

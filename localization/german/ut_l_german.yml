@@ -1195,6 +1195,7 @@
  ut_has_new_dawn_pressure_max: "Hat #b 100#! [concept_ut_nd_pressure]"
 
  ut_add_new_dawn_pressure_add_1: "Erhöht [concept_ut_nd_pressure] um #r 1#!"
+ ut_add_new_dawn_pressure_add_5: "Erhöht [concept_ut_nd_pressure] um #r 5#!"
  ut_add_new_dawn_pressure_add_10: "Erhöht [concept_ut_nd_pressure] um #r 10#!"
  ut_add_new_dawn_pressure_remove_10: "Verringert [concept_ut_nd_pressure] um #g 10#!"
 
