@@ -907,7 +907,6 @@ event_new_dawn.101 = {
 	}
 
 	option = {
-		highlighted_option = yes
 		default_option = yes
 		name = event_new_dawn.101.a
 		add_modifier = {
@@ -1196,23 +1195,74 @@ event_new_dawn.106 = {
 	desc = {
 		first_valid = {
 			triggered_desc = {
-				desc = event_new_dawn.106.d
+				desc = event_new_dawn.106.d.none
 				trigger = {
-					exists = government_petition_ig
+					OR = {
+						AND = {
+							has_modifier = ut_new_dawn_core_democratic_mod
+							has_law_or_variant = law_type:law_universal_suffrage
+							OR = {
+								has_law_or_variant = law_type:law_parliamentary_republic
+								has_law_or_variant = law_type:law_presidential_republic
+							}
+						}
+						AND = {
+							has_modifier = ut_new_dawn_core_fascist_mod
+							OR = {
+								has_law_or_variant = law_type:law_ethnostate
+								has_law_or_variant = law_type:law_neo_ethno_state
+							}
+						}
+						AND = {
+							has_modifier = ut_new_dawn_core_communist_mod
+							has_law_or_variant = law_type:law_cooperative_ownership
+							OR = {
+								has_law_or_variant = law_type:law_council_republic
+								has_law_or_variant = law_type:law_command_economy
+							}
+						}
+						has_modifier = ut_new_dawn_core_autocrat_mod
+					}
 				}
 			}
-			desc = event_new_dawn.106.d.none
+
+			desc = event_new_dawn.106.d
 		}
 	}
 	flavor = {
 		first_valid = {
 			triggered_desc = {
-				desc = event_new_dawn.106.f
+				desc = event_new_dawn.106.f.none
 				trigger = {
-					exists = government_petition_ig
+					OR = {
+						AND = {
+							has_modifier = ut_new_dawn_core_democratic_mod
+							has_law_or_variant = law_type:law_universal_suffrage
+							OR = {
+								has_law_or_variant = law_type:law_parliamentary_republic
+								has_law_or_variant = law_type:law_presidential_republic
+							}
+						}
+						AND = {
+							has_modifier = ut_new_dawn_core_fascist_mod
+							OR = {
+								has_law_or_variant = law_type:law_ethnostate
+								has_law_or_variant = law_type:law_neo_ethno_state
+							}
+						}
+						AND = {
+							has_modifier = ut_new_dawn_core_communist_mod
+							has_law_or_variant = law_type:law_cooperative_ownership
+							OR = {
+								has_law_or_variant = law_type:law_council_republic
+								has_law_or_variant = law_type:law_command_economy
+							}
+						}
+						has_modifier = ut_new_dawn_core_autocrat_mod
+					}
 				}
 			}
-			desc = event_new_dawn.106.f.none
+			desc = event_new_dawn.106.f
 		}
 	}
 
