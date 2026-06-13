@@ -786,7 +786,7 @@ ut_ideology_laissez_faire = {
 		law_mercantilism = neutral
 		law_protectionism = disapprove
 		law_isolationism = strongly_disapprove
-		law_international_trade = strongly_approve
+		law_international_trade = approve
 	}		
 		
 	lawgroup_childrens_rights = {
@@ -853,7 +853,7 @@ ut_ideology_laissez_faire_democratic = {
 		law_mercantilism = neutral
 		law_protectionism = disapprove
 		law_isolationism = strongly_disapprove
-		law_international_trade = strongly_approve
+		law_international_trade = approve
 	}		
 		
 	lawgroup_childrens_rights = {
@@ -923,7 +923,7 @@ ut_ideology_laissez_faire_democratic_neoliberal = {
 		law_mercantilism = neutral
 		law_protectionism = disapprove
 		law_isolationism = strongly_disapprove
-		law_international_trade = strongly_approve
+		law_international_trade = approve
 	}		
 		
 	lawgroup_childrens_rights = {
