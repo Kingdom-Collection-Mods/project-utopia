@@ -193,6 +193,10 @@ pm_automated_bakery_software = {
 		software_motors_production
 	}
 
+	unlocking_production_methods = {
+		pm_pre_baked_dough_pieces
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -204,6 +208,7 @@ pm_automated_bakery_software = {
 			# profit = -400 (break-even when annual laborer wage > 8.32)
 			building_employment_laborers_add = -2500
 			building_employment_machinists_add = -500
+			building_employment_service_workers_add = -250
 		}
 	}
 }
