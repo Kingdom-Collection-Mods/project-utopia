@@ -255,6 +255,19 @@
  event_new_dawn.104.a: "Celebrate and encourage this cultural movement"
  event_new_dawn.104.b: "Harness national pride to accelerate the ideological programme"
 
+ event_new_dawn.105.t: "Spread Ideology Abroad"
+ event_new_dawn.105.d: "Our ideological vision should be shared with the world. There is an opportunity to export our ideas and gain influence in other countries."
+ event_new_dawn.105.f: "Our diplomats and cultural emissaries are actively promoting our ideology on the international stage. Some foreign governments are receptive, while others are resistant. The potential for expanding our influence is significant, but it requires careful navigation of global politics."
+ event_new_dawn.105.a: "Promote our ideology diplomatically"
+ event_new_dawn.105.b: "Promote ideology internally"
+
+ event_new_dawn.106.t: "[SCOPE.gsInterestGroup('government_petition_ig').GetName] Petition"
+ event_new_dawn.106.d: "Representing our ideological enthusiasm in the [SCOPE.gsInterestGroup('government_petition_ig').GetName], [SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetFullName] has issued a formal petition to the [ROOT.GetCountry.GetAdjective] government to pass [SCOPE.sLaw('government_petition_law').GetName]."
+ event_new_dawn.106.d.none: "Representing our ideological enthusiasm the people celebrate."
+ event_new_dawn.106.f: "Er, one last matter for the day, sir. Members of your constituency arrived this morning. They're delighted by our ideological progress and propose new legislation.\n\nIs that it? What a delight!"
+ event_new_dawn.106.f.none: "Our people are happy we have build a solid ideological foundation. They have no specific demands, but they want to celebrate our progress."
+ event_new_dawn.106.z: "Let's celebrate!"
+
  event_new_dawn.120.t: "Crisis of Confidence"
  event_new_dawn.120.d: "Public trust in established leadership is eroding, and major interest groups are voicing broad disapproval."
  event_new_dawn.120.f: "The issue is less an organized uprising and more a widening legitimacy crisis. Newspapers, assemblies, and political clubs now echo the same accusation: the current course no longer represents the nation's interests."
@@ -1167,6 +1180,7 @@
  ut_has_new_dawn_progress_75: "Has #b 75#! [concept_ut_nd_progress_points]"
  ut_has_new_dawn_progress_50: "Has #b 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_50: "Gains #b 50#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_5: "Gains #b 5#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_50: "Loses #r 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_25: "Loses #r 25#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_20: "Loses #r 20#! [concept_ut_nd_progress_points]"

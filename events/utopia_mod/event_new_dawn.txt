@@ -983,7 +983,7 @@ event_new_dawn.103 = {
 	flavor = event_new_dawn.103.f
 
 	event_image = {
-		video = "unspecific_factory_construction"
+		video = "unspecific_automobile"
 	}
 
 	duration = 3
@@ -1007,7 +1007,10 @@ event_new_dawn.103 = {
 		highlighted_option = yes
 		default_option = yes
 		name = event_new_dawn.103.a
-		add_treasury = 25000
+		add_treasury = {
+			value = yearly_gross_income
+			multiply = 0.5
+		}
 	}
 
 	option = {
@@ -1064,6 +1067,377 @@ event_new_dawn.104 = {
 		custom_tooltip = ut_add_new_dawn_progress_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = 5
+		}
+	}
+}
+
+# Spread Ideology Petition
+event_new_dawn.105 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.105.t
+	desc = event_new_dawn.105.d
+	flavor = event_new_dawn.105.f
+
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	#gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		is_ai = no
+		
+		NOT = {
+			ut_has_new_dawn_pressure_points = {
+				VALUE = 25
+			}
+		}
+
+		ut_new_dawn_has_core_trigger = yes
+		OR = {
+			has_modifier = ut_new_dawn_core_democratic_mod
+			has_modifier = ut_new_dawn_core_communist_mod
+		}
+		is_power_bloc_leader = yes
+		OR = {
+			AND = {
+				has_modifier = ut_new_dawn_core_communist_mod
+				power_bloc ?={
+					any_power_bloc_member = {
+						NOT = { has_law_or_variant = law_type:law_council_republic }
+					}
+				}
+			}
+			AND = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+				power_bloc ?={
+					any_power_bloc_member = {
+						NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+			power_bloc ?= {
+				random_power_bloc_member = {
+					save_scope_as = convert_target_scope
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+			power_bloc ?= {
+				random_power_bloc_member = {
+					save_scope_as = convert_target_scope
+				}
+			}
+		}
+	}
+
+	option = {
+		default_option = yes
+		name = event_new_dawn.105.a
+		add_journal_entry = {
+			type = ut_je_ally_influence_petition
+			target = scope:convert_target_scope
+		}
+	}
+
+	option = {
+		name = event_new_dawn.105.b
+		custom_tooltip = ut_add_new_dawn_progress_5
+		ut_add_new_dawn_core_progress = { 
+			VALUE = 5
+		}
+	}
+}
+
+# Law Petition
+event_new_dawn.106 = {
+	type = country_event
+	placement = root
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	title = event_new_dawn.106.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = event_new_dawn.106.d
+				trigger = {
+					exists = government_petition_ig
+				}
+			}
+			desc = event_new_dawn.106.d.none
+		}
+	}
+	flavor = {
+		first_valid = {
+			triggered_desc = {
+				desc = event_new_dawn.106.f
+				trigger = {
+					exists = government_petition_ig
+				}
+			}
+			desc = event_new_dawn.106.f.none
+		}
+	}
+
+	duration = 3
+
+	trigger = {
+		#also for ai
+		NOT = {
+			ut_has_new_dawn_pressure_points = {
+				VALUE = 25
+			}
+		}
+		NOT = {
+			has_journal_entry = je_government_petition
+		}
+		legitimacy >= 50
+	}
+
+	cancellation_trigger = {
+		has_journal_entry = je_government_petition
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+				is_player = yes
+				#ai hard progresses on core and secondary laws instead
+			}
+			random_interest_group = {
+				limit = {
+					ig_counts_as_marginal = no
+					any_preferred_law = {
+						law_is_valid_for_ig_petition = yes
+						OR = {
+							type ?= law_type:law_universal_suffrage
+							type ?= law_type:law_presidential_republic
+							type ?= law_type:law_parliamentary_republic
+						}
+					}
+				}
+				save_scope_as = government_petition_ig
+				ordered_preferred_law = {
+					limit = {
+						law_is_valid_for_ig_petition = yes
+						OR = {
+							type ?= law_type:law_universal_suffrage
+							type ?= law_type:law_presidential_republic
+							type ?= law_type:law_parliamentary_republic
+						}
+					}
+					min = 0
+					max = 2
+					check_range_bounds = no
+					save_scope_as = government_petition_law
+				}
+				ordered_preferred_law = {
+					limit = {
+						law_is_valid_for_ig_petition = yes
+						OR = {
+							type ?= law_type:law_universal_suffrage
+							type ?= law_type:law_presidential_republic
+							type ?= law_type:law_parliamentary_republic
+						}
+						NOT = {
+							scope:government_petition_law ?= THIS
+						}
+					}
+					min = 1
+					max = 3
+					check_range_bounds = no
+					save_scope_as = government_petition_law_2
+				}
+				set_variable = { name = petitioning_ig days = 100 }
+			}
+		}
+		else_if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+				is_player = yes
+			}
+			random_interest_group = {
+				limit = {
+					ig_counts_as_marginal = no
+					any_preferred_law = {
+						law_is_valid_for_ig_petition = yes
+						OR = {
+							type ?= law_type:law_ethnostate
+							type ?= law_type:law_neo_ethno_state
+						}
+					}
+				}
+				save_scope_as = government_petition_ig
+				ordered_preferred_law = {
+					limit = {
+						law_is_valid_for_ig_petition = yes
+						OR = {
+							type ?= law_type:law_ethnostate
+							type ?= law_type:law_neo_ethno_state
+						}
+					}
+					min = 0
+					max = 2
+					check_range_bounds = no
+					save_scope_as = government_petition_law
+				}
+				set_variable = { name = petitioning_ig days = 100 }
+			}
+		}
+		else_if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_communist_mod
+				is_player = yes
+			}
+			random_interest_group = {
+				limit = {
+					ig_counts_as_marginal = no
+					any_preferred_law = {
+						law_is_valid_for_ig_petition = yes
+						OR = {
+							type ?= law_type:law_council_republic
+							type ?= law_type:law_command_economy
+							type ?= law_type:law_cooperative_ownership
+						}
+					}
+				}
+				save_scope_as = government_petition_ig
+				ordered_preferred_law = {
+					limit = {
+						law_is_valid_for_ig_petition = yes
+						OR = {
+							type ?= law_type:law_council_republic
+							type ?= law_type:law_command_economy
+							type ?= law_type:law_cooperative_ownership
+						}
+					}
+					min = 0
+					max = 2
+					check_range_bounds = no
+					save_scope_as = government_petition_law
+				}
+				set_variable = { name = petitioning_ig days = 100 }
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			exists = scope:government_petition_law			
+		}
+		name = government_petition_events.1.a
+		default_option = yes
+        if = {
+            limit = {
+                exists = scope:government_petition_law
+            }
+            set_variable = { name = desired_law_var value = scope:government_petition_law }
+        }
+		custom_tooltip = government_petition_tt
+		add_journal_entry = {
+			type = je_government_petition
+		}
+		custom_tooltip = government_petition_active_warning_tt
+		show_as_tooltip = {
+			add_modifier = {
+				name = modifier_active_government_petition
+			}
+		}
+	}
+
+	option = {
+		name = government_petition_events.1.b
+		trigger = {
+			exists = scope:government_petition_law_2
+		}
+        if = {
+            limit = {
+                exists = scope:government_petition_law_2
+            }
+            set_variable = { name = desired_law_var value = scope:government_petition_law_2 }
+        }
+		custom_tooltip = government_petition_2_tt
+		add_journal_entry = {
+			type = je_government_petition
+		}
+		custom_tooltip = government_petition_active_warning_tt
+		show_as_tooltip = {
+			add_modifier = {
+				name = modifier_active_government_petition
+			}
+		}
+	}
+
+	option = {
+		default_option = yes
+		name = event_new_dawn.106.z
+
+		custom_tooltip = ut_add_new_dawn_progress_5
+		ut_add_new_dawn_core_progress = {
+			VALUE = 5
+		}
+
+		if = {
+			limit = { 
+				is_ai = yes
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_law_or_variant = law_type:law_universal_suffrage
+					}
+				}
+				activate_law = law_type:law_universal_suffrage
+			}
+			else_if = {
+				limit = {
+					NOT = { has_law_or_variant = law_type:law_presidential_republic }
+					NOT = { has_law_or_variant = law_type:law_parliamentary_republic }
+				}
+				random_list = {
+					50 = {
+						activate_law = law_type:law_presidential_republic
+					}
+					50 = {
+						activate_law = law_type:law_parliamentary_republic
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_law_or_variant = law_type:law_colonial_resettlement
+						has_law_or_variant = law_type:law_colonial_exploitation
+						has_law_or_variant = law_type:law_frontier_colonization
+					}
+				}
+				activate_law = law_type:law_decolonization
+			}
 		}
 	}
 }
@@ -1215,7 +1589,10 @@ event_new_dawn.122 = {
 		default_option = yes
 		highlighted_option = yes
 		name = event_new_dawn.122.a
-		add_treasury = -25000
+		add_treasury = {
+			value = yearly_gross_income
+			multiply = -0.25 # 1.5
+		}
 	}
 }
 
@@ -1289,7 +1666,7 @@ event_new_dawn.123 = {
 	}
 }
 
-#Placeholder Ideology Rollback
+#Riots and pressure increases
 event_new_dawn.124 = {
 	type = country_event
 	placement = ROOT
@@ -1311,61 +1688,36 @@ event_new_dawn.124 = {
 
 	trigger = {
 		is_ai = no
-		NOT = { has_variable = event_new_dawn_18_done }
+		
 		ut_new_dawn_has_core_trigger = yes
-		OR = {
-			has_modifier = ut_new_dawn_core_democratic_mod
-			has_modifier = ut_new_dawn_core_communist_mod
-		}
-		is_power_bloc_leader = yes
-		OR = {
-			AND = {
-				has_modifier = ut_new_dawn_core_communist_mod
-				power_bloc ?={
-					any_power_bloc_member = {
-						NOT = { has_law_or_variant = law_type:law_council_republic }
-					}
-				}
-			}
-			AND = {
-				has_modifier = ut_new_dawn_core_democratic_mod
-				power_bloc ?={
-					any_power_bloc_member = {
-						NOT = { has_law_or_variant = law_type:law_universal_suffrage }
-					}
-				}
-			}
-		}
-	}
 
-	immediate = {
-		if = {
-			limit = {
-				has_modifier = ut_new_dawn_core_communist_mod
-			}
-			power_bloc ?= {
-				random_power_bloc_member = {
-					save_scope_as = convert_target_scope
-				}
-			}
+		ut_has_new_dawn_pressure_points = {
+			VALUE = 75
 		}
-		else_if = {
-			limit = {
-				has_modifier = ut_new_dawn_core_democratic_mod
-			}
-			power_bloc ?= {
-				random_power_bloc_member = {
-					save_scope_as = convert_target_scope
-				}
+		NOT = {
+			ut_has_new_dawn_pressure_points = {
+				VALUE = 90
 			}
 		}
 	}
 
 	option = {
-		name = ut_new_dawn_core_communist_mod
-		add_journal_entry = {
-			type = ut_je_communist_ally_influence_petition
-			target = scope:convert_target_scope
+		name = event_new_dawn.124.a
+		custom_tooltip = {
+			text = ut_add_new_dawn_pressure_add_5
+			ut_add_new_dawn_pressure_points = {
+				VALUE = 5
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.124.b
+		custom_tooltip = {
+			text = ut_add_new_dawn_progress_neg_10
+			ut_add_new_dawn_core_progress = {
+				VALUE = -10
+			}
 		}
 	}
 }
@@ -1460,7 +1812,10 @@ event_new_dawn.141 = {
 			name = new_dawn_event_emergency_decree_mod
 			days = 365
 		}
-		add_treasury = -25000
+		add_treasury = {
+			value = yearly_gross_income
+			multiply = -0.25 # 1.5
+		}
 	}
 
 	option = {

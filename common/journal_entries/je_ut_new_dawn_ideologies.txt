@@ -249,7 +249,6 @@ ut_je_propaganda_target = {
 
 ut_je_ally_influence_petition = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
-    icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	group = je_group_utopia
 
