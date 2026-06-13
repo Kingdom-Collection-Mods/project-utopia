@@ -215,7 +215,7 @@ je_ut_software_era_7_3_object_oriented_language = {
 			}
 			custom_tooltip = {
 				text = je_ut_software_era_7_technology_open_sourced_tt
-				has_global_variable = je_ut_software_era_7_3_object_oriented_programming_foss_var
+				has_global_variable = je_ut_software_era_7_3_object_oriented_language_foss_var
 			}
 		}
 	}
@@ -266,7 +266,7 @@ je_ut_software_era_7_open_source = {
 				has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
 				custom_tooltip = {
 					text = je_ut_software_era_7_technology_not_open_sourced_tt
-					NOT = { has_global_variable = je_ut_software_era_7_3_object_oriented_programming_foss_var }
+					NOT = { has_global_variable = je_ut_software_era_7_3_object_oriented_language_foss_var }
 				}
 			}
 		}

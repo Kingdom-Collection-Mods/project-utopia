@@ -391,7 +391,11 @@ utopia_mod.7 = {
 	option = {
 		trigger = {
 			NOT = { has_global_variable = je_ut_software_era_7_1_operating_system_foss_var }
-			has_modifier = je_ut_software_era_7_1_operating_system_mod
+			OR = {
+				has_modifier = je_ut_software_era_7_1_operating_system_mod
+				has_modifier = je_ut_software_era_7_2_relational_database_mod
+				has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
+			}
 		}
 		name = je_ut_software_era_7_1_operating_system
 		set_global_variable = je_ut_software_era_7_1_operating_system_foss_var
@@ -401,7 +405,10 @@ utopia_mod.7 = {
 	option = {
 		trigger = {
 			NOT = { has_global_variable = je_ut_software_era_7_2_relational_database_foss_var }
-			has_modifier = je_ut_software_era_7_2_relational_database_mod
+			OR = {
+				has_modifier = je_ut_software_era_7_2_relational_database_mod
+				has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
+			}
 		}
 		name = je_ut_software_era_7_2_relational_database
 		set_global_variable = je_ut_software_era_7_2_relational_database_foss_var
@@ -410,11 +417,11 @@ utopia_mod.7 = {
 	
 	option = {
 		trigger = {
-			NOT = { has_global_variable = je_ut_software_era_7_3_object_oriented_programming_foss_var }
+			NOT = { has_global_variable = je_ut_software_era_7_3_object_oriented_language_foss_var }
 			has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
 		}
-		name = je_ut_software_era_7_3_object_oriented_programming
-		set_global_variable = je_ut_software_era_7_3_object_oriented_programming_foss_var
+		name = je_ut_software_era_7_3_object_oriented_language
+		set_global_variable = je_ut_software_era_7_3_object_oriented_language_foss_var
 		custom_tooltip = je_ut_software_era_7_technology_open_source_tt
 	}
 
