@@ -41,21 +41,33 @@
 					has_technology_researched = ut_tank_diesel_engine
 				}
 			}
-			AND = {
-				has_game_rule = ut_new_dawn_start_era_5
-				has_technology_researched = consumer_goods_main_analog
-				OR = {
-					has_technology_researched = compression_ignition
-					has_technology_researched = nco_training
-					has_technology_researched = mass_propaganda
+			trigger_if = {
+				limit = {
+					has_game_rule = ut_new_dawn_start_era_5				
+				}
+				AND = {
+					has_technology_researched = consumer_goods_main_analog
+					OR = {
+						has_technology_researched = compression_ignition
+						has_technology_researched = nco_training
+						has_technology_researched = mass_propaganda
+					}
 				}
 			}
-			AND = {
-				has_game_rule = ut_new_dawn_start_era_4
+			trigger_else_if = {
+				limit = {
+					has_game_rule = ut_new_dawn_start_era_4
+				}
 				OR = {
 					has_technology_researched = telephone
 					has_technology_researched = trench_works
 					has_technology_researched = political_agitation
+				}	
+			}
+			trigger_else = {
+				OR = {
+					has_game_rule = ut_new_dawn_start_era_4
+					has_game_rule = ut_new_dawn_start_era_5
 				}
 			}
 			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
