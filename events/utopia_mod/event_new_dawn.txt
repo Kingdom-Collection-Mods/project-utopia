@@ -1604,6 +1604,7 @@ event_new_dawn.121 = {
 
 	#Forced Setback
 	option = {
+		default_option = yes
 		name = je_ut_new_dawn_suppress_dissidents
 		custom_tooltip = ut_add_new_dawn_progress_neg_5
 		ut_add_new_dawn_core_progress = {
@@ -1805,6 +1806,7 @@ event_new_dawn.124 = {
 	
 	option = {
 		name = event_new_dawn.124.a
+		default_option = yes
 		custom_tooltip = {
 			text = ut_add_new_dawn_pressure_add_5
 			ut_add_new_dawn_pressure_points = {
