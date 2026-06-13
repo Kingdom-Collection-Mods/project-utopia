@@ -16,6 +16,9 @@
  utopia_path: "Path" 
 
 # Events & Journals
+ ut_industrial_machinery_je: "Industrial Machinery"
+ ut_industrial_machinery_je_reason: "The dawn of the industrial age is marked by the rise of machinery that transforms production. From steam engines to assembly lines, these innovations revolutionize how goods are made, increasing efficiency and enabling mass production. The industrial machinery era is not just about tools; it's about a fundamental shift in society, economy, and the very fabric of daily life."
+ 
  ut_heavy_industrial_machinery_je: "Heavy Industrial Machinery"
  ut_heavy_industrial_machinery_je_reason: "A significant turning point on our nation's road to modernity. The foundations are laid, the first gears are mounted, the furnaces fired up - the very first building for heavy industrial machinery now proudly rises above the skyline, a testament to human ingenuity and ambition.\nWhere once workers toiled with bare hands, massive machines are now built to ease their burden and multiply their productivity. Even as the engines roar and the halls echo with the sound of steel, this building is more than just a factory. It is the crucible in which the future is forged."
  ut_heavy_industrial_machinery_je.success.d: "The foundations are laid, the machines installed. Our nation now proudly stands at the forefront of industrial progress with the opening of its first heavy machinery factory."
@@ -29,15 +32,15 @@
  ut_cnc_machines_je.success.d: "The introduction of CNC machines marks a decisive step in the automation of our industry. Complex tasks are now executed with maximum precision and efficiency."
  ut_cnc_machines_je.success.f: "A soft hum replaces the noise of workbenches. Gears turn in sync, metal shavings dance to the rhythm of programmed perfection. Chaos is no longer in the workshop - order reigns, created not by hand, but by code."
 
- ut_heavy_tractors_je: "Heavy Tractors"
+ ut_heavy_tractors_je: "Diesel Tractors"
  ut_heavy_tractors_je_reason: "Introduction and use of powerful tractors to significantly increase agricultural productivity."
  ut_heavy_tractors_je.success.d: "The introduction of powerful tractors has noticeably increased agricultural productivity. Large fields are now worked with efficiency and reliability."
  ut_heavy_tractors_je.success.f: "The fields tremble under the weight of machines. What once took days now happens in hours. Diesel, steel, and determination carve deep furrows into the soil of the future."
 
- ut_agrarian_planes_je: "Agricultural Aircraft"
+ ut_agrarian_planes_je: "Crop Dusting"
  ut_agrarian_planes_je_reason: "Use of aircraft in agriculture - for fertilization, pest control, and seeding over large areas."
- ut_agrarian_planes_je_done: "Agricultural Aircraft Completed"
- ut_agrarian_planes_je.success.d: "With the successful deployment of agricultural aircraft, a new chapter in modern farming begins. Vast fields are now cultivated more quickly, precisely, and economically."
+ ut_agrarian_planes_je_done: "Crop Dusting Completed"
+ ut_agrarian_planes_je.success.d: "With the successful deployment of Crop Dusting, a new chapter in modern farming begins. Vast fields are now cultivated more quickly, precisely, and economically."
  ut_agrarian_planes_je.success.f: "Wings of metal circle the horizon. What once was done by hand now rains from the sky: fertilizer, seed, hope. The fields breathe technology."
 
  ut_plastic_je: "Plastics"
@@ -77,9 +80,9 @@
  je_group_ai_buffs: "Wave of Technological Innovation"
 
  je_wirtschaftswunder: "Economic Miracle"
- je_wirtschaftswunder_reason: "REPLACE_ME"
+ je_wirtschaftswunder_reason: ""
  je_wirtschaftswunder_others: "Economic Miracle Achieved"
- je_wirtschaftswunder_others_reason: "REPLACE_ME"
+ je_wirtschaftswunder_others_reason: ""
 
  utopia_journal_society_2_wirtschaftswunder_title: "Economic Miracle"
  utopia_journal_society_2_wirtschaftswunder_desc: "In a breathtaking turn of events, our economy has not only recovered - it has exploded. Industry is booming, employment is at record levels, and prosperity is no longer a dream for many, but a daily reality."
@@ -87,9 +90,11 @@
 
  je_early_civil_aviation: "Early Civil Aviation"
  je_early_civil_aviation_reason: "Early civil aviation began with daring pioneers, sputtering propeller planes, and improvised runways on meadows and fields. What was once military in nature became a link between cities, people, and markets. Every flight was an adventure, every landing a triumph. In the open cockpits sat not passengers, but dreamers - and from their dreams grew an entirely new era of transportation."
+ je_early_civil_aviation_reason_event_desc: "Travel becomes easier and people become more connected across distances - so technology spreads faster, and the world becomes smaller."
 
  je_modern_civil_aviation: "Modern Civil Aviation"
  je_modern_civil_aviation_reason: "Modern civil aviation has tamed the skies. Rickety biplanes became sleek jets, mail planes became flying cities. Airports are turning into hubs of a globally connected world. What once took days now happens in hours - fast, convenient, efficient. The sky is no longer a boundary, but a passageway: for business travelers, families, dreamers, and progress itself."
+ je_modern_civil_aviation_reason_event_desc: "Travel becomes faster and more efficient, connecting people across the globe - accelerating the spread of technologies and ideas."
 
  je_urbanist_ig: "Urbanist Movement"
  je_urbanist_ig_reason: "The urbanist movement is more than architecture - it is a vision of how we live together. In growing cities, not just buildings are created, but societies. Urban planners, social reformers, and visionaries dream of urban spaces that not only function, but inspire: with parks, light, transit, and public life. The city is not only built - it is shaped, as a stage for a better future."
@@ -99,7 +104,7 @@
  ut_research_institute_found: "Found Research Institute"
  ut_research_institute_found_desc: "A national [concept_ut_research_institute] is to be established to consolidate scientific excellence, promote fundamental research, and structurally accelerate technological progress. The construction of this institution marks a milestone on the path to a knowledge-based society."
  ut_je_research_institute_founding: "Founding a Research Institute"
- ut_je_research_institute_founding_reason: "Our nation prepares to institutionalize innovation by establishing a dedicated research institute. In an age where ideas fuel power, the foundation of such an institute marks a monumental step forward. Here, minds will be sharpened, knowledge systematized, and breakthroughs born not of accident, but design.\nThis institute will become a beacon - attracting scientists, thinkers, and technocrats from every corner of society. A crucible of curiosity, where the impossible is not denied, but studied."
+ ut_je_research_institute_founding_reason: "Our nation prepares to institutionalize innovation by establishing a dedicated research institute. In an age where ideas fuel power, the foundation of such an institute marks a monumental step forward. Here, minds will be sharpened, knowledge systematized, and breakthroughs born not of accident, but design."
  ut_je_research_institute_founding.success.d: "The research institute is operational. It provides a structured space for innovation, accelerating technological advancement and cultivating national prestige."
  ut_je_research_institute_founding.success.f: "Where once lone inventors labored in dusty basements, now entire faculties work in unison. Chalkboards filled with equations, labs humming with energy - this is no longer mere experimentation. It is organized brilliance."
  ut_research_institute_found_mod: "Research Institute Initiative"
@@ -116,7 +121,7 @@
  ut_research_nuclear_power_desc: "Investigate the potential of nuclear fission as a powerful energy source."
  ut_je_ut_research_nuclear_power: "Nuclear Power"
  ut_je_ut_research_nuclear_power_reason: "The discovery of nuclear fission opens the door to a new era of energy production. What once was a theoretical concept becomes reality: controlled nuclear reactions that release immense amounts of energy. This is not just about power generation, but about mastering the atom itself.\nWith sufficient investment, we can lead this revolution—creating a new energy source that will change the world."
- ut_je_ut_research_nuclear_power_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy, currently: [JournalEntry.GetGoalProgressValue]/[JournalEntry.GetTotalGoalValue])"
+ ut_je_ut_research_nuclear_power_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy without [concept_shortage]."
  ut_je_ut_nuclear_power_research: "Nuclear Power Research"
  ut_je_ut_nuclear_power_research.success.d: "Our scientists have successfully completed the nuclear power research program. The path to harnessing nuclear energy is now open."
  ut_je_ut_nuclear_power_research.success.f: "Years of relentless effort have culminated in this moment. The atom's energy, once only theorized, is now ours to command. A new era of powerful, efficient electricity beckons for our nation."
@@ -152,7 +157,7 @@
  ut_share_nuclear_power_research_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] was granted $ut_share_nuclear_power_research_name$ from [INITIATOR_COUNTRY.GetName]."
  ut_share_nuclear_power_research_proposal_third_party_declined_name: "$ut_share_nuclear_power_research_name$ Denied"
  ut_share_nuclear_power_research_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] was denied $ut_share_nuclear_power_research_name$ from [INITIATOR_COUNTRY.GetName]."
- ut_share_nuclear_power_research_effects_desc: "REPLACE_ME"
+ ut_share_nuclear_power_research_effects_desc: ""
  ut_share_nuclear_power_research_article_short_desc: "Shares Nuclear Power research with [TARGET_COUNTRY.GetNameNoFormatting]"
 
  ut_research_high_tech_computers: "Research High-Tech Computers"
@@ -163,7 +168,7 @@
  ut_je_ut_research_high_tech_computers_research.success.f: "Liquid-cooled processors, quantum fluctuations, neural networks—the age of raw logic yields to the elegance of synthetic thinking. Our machines no longer calculate—they model reality."
  ut_research_high_tech_computers_research_mod: "High-Tech Computer Research"
  ut_research_high_tech_computers_research_mod_desc: "National research is focused on developing cutting-edge computing technologies. Prototypes are being built, labs are expanding, and the line between computational power and vision begins to blur."
- ut_je_ut_research_high_tech_computers_research_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy)"
+ ut_je_ut_research_high_tech_computers_research_goal: "Wait for the completion of the #BOLD 4-year#! research phase (4 years if research institute at 100% occupancy without [concept_shortage])"
 
  je_ut_new_dawn: "New Dawn"
  je_ut_new_dawn_reason: "$concept_ut_new_dawn_desc$\n\n#lore [ROOT.GetCountry.GetCustom('ut_utopia_enabled_on_game_started_loc')]#!"
@@ -175,9 +180,13 @@
  new_dawn_mod: "New Dawn"
  new_dawn_phase_2_mod: "New Dawn: Reinforce Ideology"
 
+ new_dawn_event_radicals_mod: "New Dawn: Radicals"
+ new_dawn_event_disapproval_mod: "New Dawn: Broad Disapproval"
+ new_dawn_event_innovation_max_reduced_mod: "New Dawn: Research Disruption"
+
  event_new_dawn.1.t: "New Dawn"
  event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
- event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. We must navigate these waters carefully, balancing the demands of the people with the needs of the state. The choices we make now will shape the future of our nation for generations to come."
+ event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. The choices we make now will shape the future of our nation for generations to come. We must choose our [concept_ut_nd_path_to_utopia] and ensure we have the according laws in place to secure our vision for the future. Other nations will choose their own paths, and the world will be reshaped by the ideologies that rise to power. The time for action is now."
  event_new_dawn.1.a: "Towards a New Dawn"
 
  event_new_dawn.2.a: "Build foundation for core ideology"
@@ -209,8 +218,98 @@
  event_new_dawn.3.d.f: "Order collapsed—only strength could restore the nation's soul."
 
  event_new_dawn.11.t: "Armed Forces Demand Leadership Change"
- event_new_dawn.11.f: "Senior military officials, citing the nation's instability, have demanded the resignation of the current leadership. They propose a new figurehead who better aligns with their interests."
  event_new_dawn.11.d: "When the generals speak, even presidents listen."
+ event_new_dawn.11.f: "Senior military officials, citing the nation's instability, have demanded the resignation of the current leadership. They propose a new figurehead who better aligns with their interests."
+ 
+ event_new_dawn.12.t: "Bourgeoisie Demands Leadership Change"
+ event_new_dawn.12.d: "When the bourgeoisie speaks, they form a powerful coalition."
+ event_new_dawn.12.f: "Prominent industrialists and business leaders, concerned about the direction of the country, have called for a change in leadership. They advocate for a new figurehead who will prioritize economic growth and stability."
+
+ event_new_dawn.13.t: "Radicals Uprising"
+ event_new_dawn.13.d: "Radical factions are mobilizing, threatening to overthrow the current order. They demand a change in ideology."
+ event_new_dawn.13.f: "Radical groups, fueled by frustration and a desire for change, have launched an uprising. They seek to dismantle the existing power structure and establish a new ideological order. The situation is volatile."
+
+ event_new_dawn.13.a: "Radical groups are forming"
+
+ event_new_dawn.101.t: "Wave of Popular Enthusiasm"
+ event_new_dawn.101.d: "A groundswell of public excitement has taken hold as our ideological program resonates deeply with the population."
+ event_new_dawn.101.f: "Newspapers praise the direction of the state, public lectures draw overflowing crowds, and a new generation of thinkers is emerging from the academic institutions. Our researchers and theorists are energised and producing at a remarkable pace."
+ event_new_dawn.101.a: "Channel this energy into our research institutions"
+ event_new_dawn.101.b: "Direct the enthusiasm towards our ideological programme"
+
+ event_new_dawn.102.t: "A Season of Social Harmony"
+ event_new_dawn.102.d: "Tensions between major factions have subsided. Political rivals are cooperating, and the public broadly approves of the current course."
+ event_new_dawn.102.f: "A rare alignment of interests has produced a period of calm. Interest groups voice fewer grievances, coalitions are holding, and the government's authority is unchallenged. There is an opportunity here to consolidate what has been built."
+ event_new_dawn.102.a: "Enjoy the goodwill while it lasts"
+ event_new_dawn.102.b: "Use the stability to advance our ideological goals"
+
+ event_new_dawn.103.t: "State Treasury Surplus"
+ event_new_dawn.103.d: "Efficient administration and strong economic performance have produced an unexpected surplus in the national treasury."
+ event_new_dawn.103.f: "A combination of robust tax revenues, disciplined spending, and favourable trade conditions has left the state with more funds than anticipated. The question is whether to distribute this windfall broadly or invest it strategically."
+ event_new_dawn.103.a: "Reinvest the surplus into public programmes"
+ event_new_dawn.103.b: "Fund ideological institutions and advance our programme"
+
+ event_new_dawn.104.t: "Cultural Awakening"
+ event_new_dawn.104.d: "A vibrant cultural renaissance is sweeping through the nation, strengthening national identity and deepening loyalty to the state."
+ event_new_dawn.104.f: "Artists, writers, and intellectuals are producing works that celebrate the new national vision. Citizens feel a renewed sense of belonging and purpose. The people are not merely tolerating the programme — they are embracing it."
+ event_new_dawn.104.a: "Celebrate and encourage this cultural movement"
+ event_new_dawn.104.b: "Harness national pride to accelerate the ideological programme"
+
+ event_new_dawn.105.t: "Spread Ideology Abroad"
+ event_new_dawn.105.d: "Our ideological vision should be shared with the world. There is an opportunity to export our ideas and gain influence in other countries."
+ event_new_dawn.105.f: "Our diplomats and cultural emissaries are actively promoting our ideology on the international stage. Some foreign governments are receptive, while others are resistant. The potential for expanding our influence is significant, but it requires careful navigation of global politics."
+ event_new_dawn.105.a: "Promote our ideology diplomatically in [SCOPE.sCountry('convert_target_scope').GetName]"
+ event_new_dawn.105.b: "Promote ideology internally"
+
+ event_new_dawn.106.t: "[SCOPE.gsInterestGroup('government_petition_ig').GetName] Petition"
+ event_new_dawn.106.d: "Representing our ideological enthusiasm in the [SCOPE.gsInterestGroup('government_petition_ig').GetName], [SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetFullName] has issued a formal petition to the [ROOT.GetCountry.GetAdjective] government to pass [SCOPE.sLaw('government_petition_law').GetName]."
+ event_new_dawn.106.d.none: "Representing our ideological enthusiasm the people celebrate."
+ event_new_dawn.106.f: "Er, one last matter for the day, sir. Members of your constituency arrived this morning. They're delighted by our ideological progress and propose new legislation.\n\nIs that it? What a delight!"
+ event_new_dawn.106.f.none: "Our people are happy we have build a solid ideological foundation. They have no specific demands, but they want to celebrate our progress."
+ event_new_dawn.106.z: "Let's celebrate!"
+
+ event_new_dawn.120.t: "Crisis of Confidence"
+ event_new_dawn.120.d: "Public trust in established leadership is eroding, and major interest groups are voicing broad disapproval."
+ event_new_dawn.120.f: "The issue is less an organized uprising and more a widening legitimacy crisis. Newspapers, assemblies, and political clubs now echo the same accusation: the current course no longer represents the nation's interests."
+ event_new_dawn.120.a: "Confidence in the government declines"
+
+ event_new_dawn.121.t: "Program Setback"
+ event_new_dawn.121.d: "Administrative confusion and infighting have slowed implementation of our core agenda."
+ event_new_dawn.121.f: "Competing ministries, procedural delays, and internal sabotage have drained momentum from the program. Unless discipline is restored, our core ideological project will lose ground."
+ event_new_dawn.121.a: "We lose momentum"
+
+ event_new_dawn.122.t: "Emergency Expenditure"
+ event_new_dawn.122.d: "A sudden crisis has forced the government to authorize extraordinary spending."
+ event_new_dawn.122.f: "Supply breakdowns, emergency procurement, and rapidly escalating costs have left no room for delay. The treasury must absorb a heavy one-time burden to keep the state apparatus functioning."
+ event_new_dawn.122.a: "Approve emergency funding"
+
+ event_new_dawn.123.t: "Research Network Disrupted"
+ event_new_dawn.123.d: "Institutional disruptions and political friction are reducing national research capacity."
+ event_new_dawn.123.f: "Universities are understaffed, archives are delayed, and technical committees are deadlocked. The innovation apparatus remains active, but its maximum output has fallen noticeably."
+ event_new_dawn.123.a: "Research output slows"
+
+ event_new_dawn.124.t: "Pressure Increases"
+ event_new_dawn.124.d: "Ideological pressure is mounting from various radical groups, threatening to undo our progress."
+ event_new_dawn.124.f: "The coalition that sustains our programme is showing signs of strain. Factions within the armed forces, industrialists, and intellectuals are voicing increasing demands. If these pressures are not managed carefully, they could fracture the support base for our vision."
+ event_new_dawn.124.a: "Pressure from radical groups increases"
+
+ event_new_dawn.140.t: "Constitutional Crisis"
+ event_new_dawn.140.d: "Deep political divisions have erupted into a full constitutional crisis. The legitimacy of the existing order is openly challenged."
+ event_new_dawn.140.f: "Factions within major interest groups have broken with the government, publishing manifestos and calling for fundamental reform. Moderate voices are being drowned out. Unless handled carefully, this crisis could permanently fracture the coalition that sustains our programme."
+ event_new_dawn.140.a: "Weather the storm — hold the line"
+ event_new_dawn.140.b: "Make strategic concessions to reduce tensions"
+
+ event_new_dawn.141.t: "State of Emergency Declared"
+ event_new_dawn.141.d: "Widespread unrest and institutional breakdown have forced the government to declare a state of emergency, suspending normal economic activity."
+ event_new_dawn.141.f: "Strikes, protests, and factory slowdowns have paralysed key industries. Emergency decrees are being issued but enforcement is costly. The treasury is being drained to maintain order, and the disruption to production and revenue is becoming impossible to ignore."
+ event_new_dawn.141.a: "Issue emergency decrees and absorb the economic cost"
+ event_new_dawn.141.b: "Negotiate with dissenters — concede ground to restore order"
+
+ new_dawn_event_enthusiasm_mod: "New Dawn: Popular Enthusiasm"
+ new_dawn_event_social_harmony_mod: "New Dawn: Social Harmony"
+ new_dawn_event_cultural_awakening_mod: "New Dawn: Cultural Awakening"
+ new_dawn_event_constitutional_crisis_mod: "New Dawn: Constitutional Crisis"
+ new_dawn_event_emergency_decree_mod: "New Dawn: State of Emergency"
 
  event_new_dawn.democrat_leader: "Appoint a new democratic leader"
  event_new_dawn.autocrat_leader: "Empower an autocratic figurehead"
@@ -255,6 +354,8 @@
  event_new_dawn.cheat.remove_fascist_50: "Remove 50 #g Fascist#! Progress"
  event_new_dawn.cheat.remove_communist_50: "Remove 50 #r Communist#! Progress"
  event_new_dawn.cheat.remove_focus_recently_changed: "Remove Focus Recently Changed"
+ event_new_dawn.cheat.add_pressure: "Add 10 [concept_ut_nd_pressure] Pressure"
+ event_new_dawn.cheat.remove_pressure: "Remove 10 [concept_ut_nd_pressure] Pressure"
 
  ut_new_dawn_status: "New Dawn"
  ut_new_dawn_focus_recently_changed: "Focus recently changed"
@@ -268,6 +369,12 @@
  country_new_dawn_progress_points_progress_desc: "Changes the gain of [concept_ut_nd_progress_points] for core Ideology."
 
  je_ut_new_dawn_critical_lower_bound_fail_tt: "Has #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! [concept_ut_nd_progress_points]"
+ je_ut_new_dawn_critical_lower_bound_fail_pressure_tt: "Has #r 50#! [concept_ut_nd_pressure] Pressure"
+
+ je_ut_new_dawn_common_pressure_progress_from_sol_yoy: "[concept_sol] yearly change"
+ je_ut_new_dawn_common_pressure_progress_from_legitimacy: "expected [concept_legitimacy]"
+ je_ut_new_dawn_common_pressure_progress_from_expected_sol: "expected [concept_sol]"
+ je_ut_new_dawn_common_pressure_progress_from_core_progress: "[concept_ut_nd_progress_points] gained"
 
  ut_new_dawn_communist_focus: "Communist Focus"
  ut_new_dawn_communist_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities] and [concept_ut_nd_milestones].#!"
@@ -275,11 +382,11 @@
  ut_new_dawn_communist_bar_desc: "Communist Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_communist_progress_from_characters: "combined [concept_popularity] of [concept_ut_nd_communist_characters]"
  ut_nd_communist_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [concept_ut_nd_communist_characters] [concept_leader]"
- ut_nd_communist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_command_economy').GetName], [GetLawType('law_cooperative_ownership').GetName]"
+ ut_nd_communist_progress_from_laws: "[concept_ut_nd_core_laws] enacted: $ut_nd_core_laws_communist$"
  ut_nd_communist_progress_from_legitimacy: "[concept_legitimacy] of [concept_ut_nd_communist_characters] [concept_ruler]"
  ut_nd_communist_progress_from_focus: "Communist Focus"
  ut_nd_communist_progress_from_events: "Events and other Effects"
- ut_new_dawn_communist_status: "Communist Ideas Are Shaping the Discourse"
+ ut_new_dawn_communist_status: "Communist Ideas shape the discourse"
  concept_ut_nd_communist_characters: "Communist Characters"
  concept_ut_nd_communist_characters_desc: "Communist [concept_character] ideologies are: [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_vanguardist').GetName], and [GetIdeology('ideology_nihilist').GetName].\nIf Communist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ideology_positivist').GetName]."
 
@@ -291,7 +398,7 @@
  je_ut_new_dawn_autocrat_focus_desc: "Autocratic focus selected"
  je_ut_new_dawn_communist_focus: "Communist Focus"
  je_ut_new_dawn_communist_focus_desc: "Communist focus selected"
- ut_new_dawn_phase_2_progress_modifier: "x0.25 Multiplier during $new_dawn_phase_2_mod$"
+ ut_new_dawn_phase_2_progress_modifier: "x0.25 Multiplier during #bold $new_dawn_phase_2_mod$#!"
 
  ut_new_dawn_core_fascist_mod: "Fascist Ideology"
  je_ut_new_dawn_fascist_mod: "Fascist"
@@ -314,7 +421,7 @@
  ut_phase_1_trend_fascist: "$concept_ut_nd_fascist_core$ (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
  ut_phase_1_trend_communist: "$concept_ut_nd_communist_core$ (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip [ROOT.GetCountry.MakeScope.Var('ut_new_dawn_communist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]#!#!)"
  ut_phase_1_trend_undefined: "unclear ideology (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_phase_1_trend_tooltip ?#!#!)"
- ut_phase_1_trend_tooltip: "$concept_ut_nd_democrat_core$: [Country.MakeScope.Var('ut_new_dawn_democrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n$concept_ut_nd_autocrat_core$: [Country.MakeScope.Var('ut_new_dawn_autocrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n$concept_ut_nd_fascist_core$: [Country.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n$concept_ut_nd_communist_core$: [Country.MakeScope.Var('ut_new_dawn_communist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]"
+ ut_phase_1_trend_tooltip: "[concept_ut_nd_focus]: [Country.GetCustom('ut_new_dawn_phase_1_focus')]\n\n[concept_ut_nd_democrat_core]: [Country.MakeScope.Var('ut_new_dawn_democrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_autocrat_core]: [Country.MakeScope.Var('ut_new_dawn_autocrat_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_fascist_core]: [Country.MakeScope.Var('ut_new_dawn_fascist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]\n[concept_ut_nd_communist_core]: [Country.MakeScope.Var('ut_new_dawn_communist_bar_value').GetValue|0]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')]"
  ut_progress_trend_max: "#tooltip:[ROOT.GetCountry.GetTooltipTag],ut_progress_trend_tooltip @profitabilitymax!#!"
  ut_progress_trend_critical: "#tooltip:[ROOT.GetCountry.GetTooltipTag],ut_progress_trend_tooltip @profitability1!@warning!#!"
  ut_progress_trend_up4: "#tooltip:[ROOT.GetCountry.GetTooltipTag],ut_progress_trend_tooltip @profitability13!#!"
@@ -348,14 +455,14 @@
  ut_new_dawn_democrat_bar_desc: "Democratic Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_democrat_progress_from_characters: "combined [concept_popularity] of [concept_ut_nd_democrat_characters]"
  ut_nd_democrat_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [concept_ut_nd_democrat_characters] [concept_leader]"
- ut_nd_democrat_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_universal_suffrage').GetName], [GetLawType('law_census_voting').GetName]"
+ ut_nd_democrat_progress_from_laws: "[concept_ut_nd_core_laws] enacted: $ut_nd_core_laws_democrat$"
  ut_nd_democrat_progress_from_legitimacy: "[concept_legitimacy] of [concept_ut_nd_democrat_characters] [concept_ruler]"
  ut_nd_democrat_progress_from_events: "Events and other Effects"
  ut_nd_democrat_progress_from_focus: "Democratic Focus"
  concept_ut_nd_democrat_interest_group_tt: "IG has leader with [concept_ut_nd_democrat_characters] ideology"
  concept_ut_nd_democrat_characters: "Democratic Characters"
  concept_ut_nd_democrat_characters_desc: "Democratic [concept_character] ideologies are: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName], [GetIdeology('ideology_utopian').GetName], and [GetIdeology('ut_ideology_cosmopolitan_leader').GetName].\nIf Democrat [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_pacifist').GetName], [GetIdeology('ideology_feminist').GetName], [GetIdeology('ut_ideology_environmentalist_leader').GetName], [GetIdeology('ideology_market_liberal').GetName] and [GetIdeology('ideology_modernizer_leader').GetName]."
- ut_new_dawn_democrat_status: "Democratic Ideas shape the Discourse"
+ ut_new_dawn_democrat_status: "Democratic Ideas shape the discourse"
  ut_new_dawn_phase_2_status_je: "Ideology established"
  ut_nd_decaying_progress: "$new_dawn_phase_2_mod$"
 
@@ -382,11 +489,19 @@
  
 
  je_ut_new_dawn_democratic: "Democratic Awakening"
- je_ut_new_dawn_democratic_reason: "The people demand participation, transparency, and free elections. Across the country, new parties are forming, trade unions are gaining influence, and protests for civil rights are filling the streets. \n Whether this awakening leads to a stable democracy or is crushed by the old elites is now in your hands. Will you allow reform - or try to preserve the old order by any means necessary? \n #italic - [Concept('concept_ut_nd_democrat_core', 'Democratic')] [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_democratic_reason: "The people demand participation, transparency, and free elections. Across the country, new parties are forming, trade unions are gaining influence, and protests for civil rights are filling the streets. \n Whether this awakening leads to a stable democracy or is crushed by the old elites is now in your hands. Will you allow reform - or try to preserve the old order by any means necessary?\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')] \n\n #italic - [Concept('concept_ut_nd_democrat_core', 'Democratic')] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_points_bar: "Progress Points"
  je_ut_new_dawn_points_bar_desc: "Progress Points: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
  concept_ut_nd_progress_points: "Progress Points"
  concept_ut_nd_progress_points_desc: "Progress Points represent the spread of an Ideology within your nation. They are earned through various actions. During the rise of a New Dawn, they measure how interest groups and the political landscape move toward adopting an ideology. Upon overtaking a country and beginning the [concept_ut_nd_path_to_utopia], Progress Points may be spent on various actions."
+
+ je_ut_new_dawn_pressure_points_bar: "Pressure"
+ je_ut_new_dawn_pressure_points_bar_desc: "Pressure: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
+
+ ut_new_dawn_pressure_status_good: "[concept_ut_nd_pressure]: #g Low#!"
+ ut_new_dawn_pressure_status_neutral: "[concept_ut_nd_pressure]: Neutral"
+ ut_new_dawn_pressure_status_bad: "[concept_ut_nd_pressure]: #r High#!"
+ ut_new_dawn_pressure_status_very_bad: "[concept_ut_nd_pressure]: #r Very High#!"
 
  concept_ut_new_dawn: "New Dawn"
  concept_ut_new_dawn_desc: "Technological and cultural progress ushers in a [concept_ut_new_dawn] of political change. The [concept_ut_nd_path_to_utopia] may be paved. Solidify your nation's core ideology. The ideology determines the direction your nation will take.\nChoose between [concept_ut_nd_fascist_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_democrat_core], and [concept_ut_nd_communist_core] [concept_ut_nd_path_to_utopia]."
@@ -493,14 +608,14 @@
  ut_new_dawn_autocrat_bar_desc: "Autocratic Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_autocrat_progress_from_characters: "combined [concept_popularity] of [concept_ut_nd_autocrat_characters]"
  ut_nd_autocrat_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [concept_ut_nd_autocrat_characters] [concept_leader]"
- ut_nd_autocrat_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_monarchy').GetName], [GetLawType('law_autocracy').GetName]"
+ ut_nd_autocrat_progress_from_laws: "[concept_ut_nd_core_laws] enacted: $ut_nd_core_laws_autocrat$"
  ut_nd_autocrat_progress_from_legitimacy: "[concept_legitimacy] of [concept_ut_nd_autocrat_characters] [concept_ruler]"
  ut_nd_autocrat_progress_from_movements: "[concept_political_movement_support] von #bold autokratische#! [Concept('concept_political_movement','$concept_political_movements$')]"
  ut_nd_autocrat_progress_from_focus: "Autocratic Focus"
  ut_nd_autocrat_progress_from_events: "Events and other Effects"
  concept_ut_nd_autocrat_characters: "Autocratic Characters"
  concept_ut_nd_autocrat_characters_desc: "Autocratic [concept_character] ideologies are: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], and [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nIf Autocrat [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], and [GetIdeology('ideology_corporatist_leader').GetName]."
- ut_new_dawn_autocrat_status: "Autocratic Ideas shape the Discourse"
+ ut_new_dawn_autocrat_status: "Autocratic Ideas shape the discourse"
 
 #Core Ideology concepts
 
@@ -515,7 +630,7 @@
 
 
  concept_ut_nd_democrat_core: "Democracy"
- concept_ut_nd_democrat_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_democrat_progress_from_characters$\n- $ut_nd_democrat_progress_from_igs$\n- $ut_nd_democrat_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#!\nUnlock Ideologies: [GetIdeology('ideology_liberal_democratic').GetName], [GetIdeology('ideology_reactionary_democratic').GetName], [GetIdeology('ideology_moralist_democratic').GetName], [GetIdeology('ideology_plutocratic_democratic').GetName], [GetIdeology('ideology_socialist_democratic').GetName], [GetIdeology('ideology_jingoist_democratic').GetName]\nUnlock Modifiers: [GetStaticModifier('je_ut_new_dawn_democratic_power_bloc_mod').GetDesc], [GetStaticModifier('je_ut_new_dawn_democratic_fair_elections_mod').GetDesc]\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n - [GetArticleType('ut_democracy_article').GetNameNoIcon]\n - [GetLawType('ut_law_monarchy_democratic').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_democratic_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_democratic_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nStrengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people.\n\n#i Development Status: Playable - Rough edges#!"
+ concept_ut_nd_democrat_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_democrat_progress_from_characters$\n- $ut_nd_democrat_progress_from_igs$\n- $ut_nd_democrat_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#!\nUnlock Ideologies: [GetIdeology('ideology_liberal_democratic').GetName], [GetIdeology('ideology_reactionary_democratic').GetName], [GetIdeology('ideology_moralist_democratic').GetName], [GetIdeology('ideology_plutocratic_democratic').GetName], [GetIdeology('ideology_socialist_democratic').GetName], [GetIdeology('ideology_jingoist_democratic').GetName]\nUnlock Modifiers: [GetStaticModifier('je_ut_new_dawn_democratic_power_bloc_mod').GetDesc], [GetStaticModifier('je_ut_new_dawn_democratic_fair_elections_mod').GetDesc]\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n - [GetArticleType('ut_democracy_article').GetNameNoIcon]\n - [GetLawType('ut_law_monarchy_democratic').GetName]\n - [concept_amendment] $amendment_council_republic_democratic$ \n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_democratic_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_democratic_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nStrengthen democratic institutions and create a just, free society where all citizens experience participation, dignity, and opportunity. Lead your people to a utopia based on equality, openness, and the will of the people.\n\n#i Development Status: Playable - Rough edges#!"
  ut_nd_democratic_stance: "Favorable: [concept_ut_nd_democrat_core]\nNeutral: [concept_ut_nd_communist_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]"
 
  concept_ut_nd_communist_core: "Communism"
@@ -538,13 +653,13 @@
  ut_new_dawn_fascist_bar_desc: "Fascist Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
  ut_nd_fascist_progress_from_characters: "combined [concept_popularity] of [concept_ut_nd_fascist_characters]"
  ut_nd_fascist_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [concept_ut_nd_fascist_characters] [concept_leader]"
- ut_nd_fascist_progress_from_laws: "[Concept('concept_law', '$concept_laws$')] enacted: [GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName]"
+ ut_nd_fascist_progress_from_laws: "[concept_ut_nd_core_laws] enacted: $ut_nd_core_laws_fascist$"
  ut_nd_fascist_progress_from_legitimacy: "[concept_legitimacy] of [concept_ut_nd_fascist_characters] [concept_ruler]"
  ut_nd_fascist_progress_from_focus: "Fascist Focus"
  ut_nd_fascist_progress_from_events: "Events and other Effects"
  concept_ut_nd_fascist_characters: "Fascist Characters"
  concept_ut_nd_fascist_characters_desc: "Fascist [concept_character] ideologies are: [GetIdeology('ideology_ethno_nationalist').GetName] and [GetIdeology('ideology_fascist').GetName].\nIf Fascist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ut_ideology_national_socialist_leader').GetName]."
- ut_new_dawn_fascist_status: "Fascist Ideas shape the Discourse"
+ ut_new_dawn_fascist_status: "Fascist Ideas shape the discourse"
 
  ut_nd_multiplier_from_service_workers_0: "x0.5 Multiplier from less than 1% $service_workers$\n$ut_nd_mp_sw_note$"
  ut_nd_multiplier_from_service_workers_1: "x1.5 Multiplier from $service_workers$ share\n$ut_nd_mp_sw_note$"
@@ -556,19 +671,30 @@
  concept_ut_nd_focus: "Focus"
  concept_ut_nd_focus_desc: "When the #b New Dawn#! journal entry is active, focus on the New Dawn ideology becomes available. Focusing on an ideology makes it much more likely to become dominant. If the ideology becomes entrenched, the focus also remains active."
 
+ concept_ut_nd_pressure: "Pressure"
+ concept_ut_nd_pressure_desc: "Pressure represents the degree of friction a nation faces. It measures the strength of internal forces attempting to erode your country's ideology, pushing it toward a new political identity.\n\nIf active, events can happen:\n- Pressure <25: Positive events can happen\n- Pressure >50: Negative events can happen\n- Pressure >75: Very negative events can happen"
+
  concept_ut_nd_stance: "Stance"
  concept_ut_nd_stance_desc: "Each ideology has a stance towards other ideologies. The stance affects acceptance of joining and staying in a power bloc, and most new Project Utopia actions. Work in progress."
+ 
+ concept_ut_nd_core_laws: "Core Laws"
+ concept_ut_nd_core_laws_desc: "The core law of an ideology is essential for its spread and heavily influences [concept_ut_new_dawn].\n\nCommunist Core: $ut_nd_core_laws_communist$\nDemocratic Core: $ut_nd_core_laws_democrat$\nAutocratic Core: $ut_nd_core_laws_autocrat$\nFascist Core: $ut_nd_core_laws_fascist$"
+
+ ut_nd_core_laws_communist: "[GetLawType('law_command_economy').GetName], [GetLawType('law_cooperative_ownership').GetName]"
+ ut_nd_core_laws_democrat: "[GetLawType('law_universal_suffrage').GetName], [GetLawType('law_census_voting').GetName]"
+ ut_nd_core_laws_autocrat: "[GetLawType('law_monarchy').GetName], [GetLawType('law_autocracy').GetName]"
+ ut_nd_core_laws_fascist: "[GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName]"
 
  je_ai_radio_researched: "Radio Researched"
- je_ai_radio_researched_reason: "REPLACE_ME"
+ je_ai_radio_researched_reason: ""
 
  je_ai_consumer_goods_researched: "Consumer Goods researched"
- je_ai_consumer_goods_researched_reason: "REPLACE_ME"
+ je_ai_consumer_goods_researched_reason: ""
 
- je_ai_advanced_consumer_goods_researched_reason: "REPLACE_ME"
+ je_ai_advanced_consumer_goods_researched_reason: ""
 
  je_ai_not_ai: "Human in disguise"
- je_ai_not_ai_reason: "REPLACE_ME"
+ je_ai_not_ai_reason: ""
 
 # Pop and Politics
  service_workers: "@service_workers! $service_workers_no_icon$"
@@ -717,6 +843,9 @@
  ut_law_monarchy_democratic: "Constitutional Monarchy"
  ut_law_monarchy_democratic_desc: "A system where the monarch's powers has no real political power and an elected parliament holds authority."
 
+ amendment_council_republic_democratic: "Constitutional Council Republic"
+ amendment_council_republic_democratic_desc: "A system where a council is elected to govern the country, with limited powers and checks and balances in place to prevent abuse of power."
+
  ut_law_monarchy_autocratic: "Absolute Monarchy"
  ut_law_monarchy_autocratic_desc: "A system where the monarch holds supreme authority."
  
@@ -733,7 +862,10 @@
  ut_law_subjecthood_fascist_desc: "All conquered peoples are subjects of the first nation."
 
  ut_communist_enact_law_variants: "Enact Law Variants"
- ut_communist_enact_law_variants_desc: "Allows the enactment of special law variants exclusive
+ ut_communist_enact_law_variants_desc: "Allows the enactment of special law variants exclusive to the [concept_ut_nd_communist_core] path."
+
+ ut_democrat_enact_law_variants: "Enact Law Variants"
+ ut_democrat_enact_law_variants_desc: "Allows the enactment of special law variants exclusive to the [concept_ut_nd_democrat_core] path."
 
  law_social_market_economy: "Social Market Economy"
  law_social_market_economy_desc: "A regulated market economy that combines free competition with social security to promote prosperity and social balance."
@@ -924,6 +1056,7 @@
  ut_new_dawn_propaganda_target_defend: "Defend Against Propaganda"
  ut_new_dawn_propaganda_target_defend_desc: "[SCOPE.sCountry('ut_new_dawn_propaganda_target_defend_source_scope').GetName] spend #r 10#! [concept_ut_nd_progress_points] to defend against the ongoing propaganda campaign."
  ut_new_dawn_propaganda_target_defend_tt: "You must spend 10 [concept_ut_nd_progress_points] or abort the campaign.\n\n #lore Cost increases to 20 $concept_ut_nd_progress_points$ on consecutive attempts to continue.#!"
+ ut_new_dawn_propaganda_source_defend_once_tt: "First defense attempt (consecutive attempts will cost 20 [concept_ut_nd_progress_points])"
  ut_new_dawn_propaganda_target_defend_cooldown_tt: "Can only be used once per month."
 
  ut_propaganda_communist_mod: "Communist Propaganda"
@@ -934,6 +1067,11 @@
  country_new_dawn_propaganda_source_efficiency_mult: "\"$ut_je_propaganda_source$\" efficiency"
  country_new_dawn_propaganda_source_speed_mult: "\"$ut_je_propaganda_source$\" speed"
  country_new_dawn_propaganda_source_speed_mult_desc: "Changes the speed at which the [GetDiplomaticActionType('ut_new_dawn_start_propaganda_campaign').GetName] progresses."
+
+ ut_je_ally_influence_petition: "[ROOT.GetCountry.GetCustom('ut_new_dawn_phase_1_focus')] Petition"
+ ut_je_ally_influence_petition_communist: "The [ROOT.GetCountry.GetCustom('ut_new_dawn_phase_1_focus')] movement is petitioning for [SCOPE.sCountry('convert_target_scope').GetName] to pass [GetLawType('law_council_republic').GetName]."
+ ut_je_ally_influence_petition_democratic: "The [ROOT.GetCountry.GetCustom('ut_new_dawn_phase_1_focus')] movement is petitioning for [SCOPE.sCountry('convert_target_scope').GetName] to pass [GetLawType('law_universal_suffrage').GetName]."
+ ut_je_ally_influence_petition_reason: "To spread our [ROOT.GetCountry.GetCustom('ut_new_dawn_phase_1_focus')] ideology [SCOPE.sCountry('convert_target_scope').GetName], we best influence them to enact our [concept_ut_nd_core_laws].\n\nIf we succeed, [ROOT.GetCountry.GetCustom('ut_new_dawn_phase_1_focus')] will be spread further."
 
  UT_BOTH_SAME_IDEOLOGY: "Both same ideology"
  UT_BOTH_SAME_IDEOLOGY_OF_TARGET: "Both countries must share the same ideology."
@@ -1002,13 +1140,13 @@
  ut_communism_article_article_short_desc: "Spreads Communism to [TARGET_COUNTRY.GetNameNoFormatting]"
 
  war_goal_ut_regime_change_democratic_offensive_type_name: "Democratic Regime Change" 
- war_goal_ut_regime_change_democratic_offensive_type_desc: "Force another [concept_country] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to your own"
+ war_goal_ut_regime_change_democratic_offensive_type_desc: "Force another [concept_country] to change their $POWER_STRUCTURE$ to [GetLawType('law_universal_suffrage').GetName]"
  war_goal_ut_regime_change_democratic_offensive: "Democratic Regime Change in [WAR_GOAL_DRAFT.GetTarget.GetName]"
- war_goal_ut_regime_change_democratic_offensive_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] forces [WAR_GOAL_DRAFT.GetTarget.GetName] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to their own. The following Law will be enforced:  [GetLawType('law_universal_suffrage').GetName]"
+ war_goal_ut_regime_change_democratic_offensive_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] forces [WAR_GOAL_DRAFT.GetTarget.GetName] to change their [concept_government] and $POWER_STRUCTURE$ [concept_ut_nd_core_laws] to be more similar to their own. The following Law will be enforced:  [GetLawType('law_universal_suffrage').GetName]"
  war_goal_ut_regime_change_democratic_defensive_type_name: "Democratic Regime Change" 
- war_goal_ut_regime_change_democratic_defensive_type_desc: "Force another [concept_country] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to your own"
+ war_goal_ut_regime_change_democratic_defensive_type_desc: "Force an attacking [concept_country] to change their $POWER_STRUCTURE$ to [GetLawType('law_universal_suffrage').GetName]"
  war_goal_ut_regime_change_democratic_defensive: "Democratic Regime Change in [WAR_GOAL_DRAFT.GetTarget.GetName]"
- war_goal_ut_regime_change_democratic_defensive_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] forces [WAR_GOAL_DRAFT.GetTarget.GetName] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to their own. The following Law will be enforced:  [GetLawType('law_universal_suffrage').GetName]"
+ war_goal_ut_regime_change_democratic_defensive_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] forces [WAR_GOAL_DRAFT.GetTarget.GetName] to change their [concept_government] and $POWER_STRUCTURE$ [concept_ut_nd_core_laws] to be more similar to their own. The following Law will be enforced:  [GetLawType('law_universal_suffrage').GetName]"
  war_goal_ut_regime_change_communist_type_name: "Communist Regime Change" 
  war_goal_ut_regime_change_communist_type_desc: "Force another [concept_country] to change their [concept_government] and $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] to be more similar to your own"
  war_goal_ut_regime_change_communist: "Communist Regime Change in [WAR_GOAL_DRAFT.GetTarget.GetName]"
@@ -1041,6 +1179,7 @@
  ut_has_new_dawn_progress_75: "Has #b 75#! [concept_ut_nd_progress_points]"
  ut_has_new_dawn_progress_50: "Has #b 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_50: "Gains #b 50#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_progress_5: "Gains #b 5#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_50: "Loses #r 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_25: "Loses #r 25#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_20: "Loses #r 20#! [concept_ut_nd_progress_points]"
@@ -1048,6 +1187,15 @@
  ut_add_new_dawn_progress_neg_10: "Loses #r 10#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_5: "Loses #r 5#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_1: "Loses #r 1#! [concept_ut_nd_progress_points]"
+
+ ut_has_new_dawn_pressure_50: "Has #b 50#! [concept_ut_nd_pressure]"
+ ut_has_new_dawn_pressure_75: "Has #b 75#! [concept_ut_nd_pressure]"
+ ut_has_new_dawn_pressure_90: "Has #b 90#! [concept_ut_nd_pressure]"
+ ut_has_new_dawn_pressure_max: "Has #b 100#! [concept_ut_nd_pressure]"
+ ut_add_new_dawn_pressure_add_1: "Gains #r 1#! [concept_ut_nd_pressure]"
+ ut_add_new_dawn_pressure_add_5: "Gains #r 5#! [concept_ut_nd_pressure]"
+ ut_add_new_dawn_pressure_add_10: "Gains #r 10#! [concept_ut_nd_pressure]"
+ ut_add_new_dawn_pressure_remove_10: "Loses #g 10#! [concept_ut_nd_pressure]"
 
  ut_force_become_subject: "Collectivize Council Republics"
  ut_force_become_subject_action_name: "$ut_force_become_subject$"
@@ -1164,11 +1312,11 @@
 # Tech Production
  machinery_farming: "Cabin Tractors"
  machinery_farming_desc: ""
- heavy_machinery_farming: "Heavy Tractors"
+ heavy_machinery_farming: "Diesel Tractors"
  heavy_machinery_farming_desc: ""
- airplane_farming: "Agricultural Aircraft"
+ airplane_farming: "Crop Dusting"
  airplane_farming_desc: ""
- drone_farming: "Agricultural Drones"
+ drone_farming: "Autonomous Farm Systems"
  drone_farming_desc: ""
  chemistry: "Nitrophosphate Process"
  chemistry_desc: ""
@@ -1306,7 +1454,9 @@
  ut_war_planes: "Warplanes"
  ut_war_planes_desc: ""
  ut_war_planes_2: "Anti-Air Guns"
+ ut_war_planes_2_desc: ""
  ut_war_planes_2_1: "Advanced Warplanes"
+ ut_war_planes_2_1_desc: ""
  ut_jet_planes: "Jet Aircraft"
  ut_jet_planes_desc: ""
  ut_modern_planes: "Modern Aircraft"
@@ -1325,6 +1475,7 @@
  ut_modern_submarine_era_7_desc: ""
 
  ship_type_capital_battleship: "Capital Battleship"
+ ship_type_capital_battleship_desc: "Heavily armed and armored flagship-class vessels designed for domination in major sea battles."
  
  combat_unit_type_support_systems: "Support Systems"
  combat_unit_type_advanced_support_systems: "Advanced Support Systems"
@@ -1533,6 +1684,9 @@
 
  ut_pm_soft_drinks: "Soft Drinks"
 
+ pm_logging_machinery_equipment: "Logging Machinery"
+ pm_logging_heavy_machinery_equipment: "Heavy Logging Machinery"
+
  pmg_ut_high_voltage_electricity: "High-Voltage"
  pm_ut_no_high_voltage_electricity: "No High-Voltage Electricity"
  pm_ut_high_voltage_electricity: "High-Voltage Electricity"
@@ -1540,6 +1694,11 @@
 
  pmg_ut_power_grid: "Base"
  ut_pm_power_grid_import: "Convert Electricity"
+
+ pmg_ut_power_grid_operations: "Operations"
+ ut_pm_power_grid_operations_analog: "Analog Operations"
+ ut_pm_power_grid_operations_digital: "Digital Operations"
+ ut_pm_power_grid_operations_connected: "Connected Operations"
 
  pmg_base_building_ut_power_grid_base: "Base"
  pm_base_building_ut_power_grid_base: "Power Grid Base"
@@ -1550,9 +1709,10 @@
  pm_heavy_machinery_buildings: "Crane and Excavator Construction"
 
  pmg_heavy_machinery_making_process: "Base"
- pm_heavy_machinery_analog_process: "Mechanical Machines"
+ pm_heavy_machinery_mechanical_process: "Mechanical Machines"
+ pm_heavy_machinery_analog_process: "Hydraulic Machines"
  pm_heavy_machinery_electronics_process: "Electric Machines"
- pm_heavy_machinery_digital_process: "Digitized Machines"
+ pm_heavy_machinery_digital_process: "Digital Machines"
 
  pm_heavy_machinery_coal_fired_plant: "Heavy Coal Power Plant"
  pm_heavy_machinery_oil_fired_plant: "Heavy Oil Power Plant"
@@ -1599,13 +1759,13 @@
  pm_oil_automated_heavy_machinery_mine: "Automated Machinery"
 
  pm_high_yield_crops: "High-Yield Crops"
- pm_farms_drone_support: "Drones"
- pm_farms_plane_support: "Agricultural Aircraft"
+ pm_farms_drone_support: "Autonomous Farm Systems"
+ pm_farms_plane_support: "Crop Dusting"
  pm_high_yield_crops_rice: "High-Yield Crops"
- pm_farms_plane_support_rice: "Agricultural Aircraft"
- pm_farms_drone_support_rice: "Drones"
- pm_farms_heavy_machinery_support: "Heavy Tractors"
- pm_farms_heavy_machinery_support_rice: "Heavy Tractors"
+ pm_farms_plane_support_rice: "Crop Dusting"
+ pm_farms_drone_support_rice: "Autonomous Farm Systems"
+ pm_farms_heavy_machinery_support: "Diesel Tractors"
+ pm_farms_heavy_machinery_support_rice: "Rice Tractors"
  pm_ut_factory_farming: "Factory Farming"
 
  pm_heavy_machinery_building_coal_mine: "Heavy Machinery"
@@ -1684,10 +1844,11 @@
  pm_ut_radios: "Enhanced Radio Receiver"
  pm_ut_radios_2: "Portable Radios"
  ut_company_research: "Research Consortium"
- ut_high_tech_company_research: "Research Institute"
+ ut_high_tech_company_research: "Research Joint Venture"
  pm_ut_high_speed_electric_trains: "Intercity"
  pm_ut_high_speed_electric_trains_principle_transport_3: "Intercity-High-Speed"
  pm_computer_bureaucrats: "Digital Administration"
+ pm_internet_bureaucrats: "Connected Administration"
 
  pm_ut_research_department: "Institute for Social Sciences"
 
@@ -1784,8 +1945,12 @@
  goods_output_rare_earths_add_desc: "The amount of @rare_earths! Rare Earths produced by buildings"
  goods_output_computers_add: "@computers! Computers output"
  goods_output_computers_add_desc: "The amount of @computers! Computers produced by buildings"
+ goods_output_computers_mult: "@computers! $computers$ Output"
+ goods_output_computers_mult_desc: "A bonus or penalty for the production of @computers! $computers$."
  goods_output_software_add: "@software! Software output"
  goods_output_software_add_desc: "The amount of @software! Software produced by buildings"
+ goods_output_software_mult: "@software! $software$ Output"
+ goods_output_software_mult_desc: "A bonus or penalty for the production of @software! $software$."
  goods_output_internet_add: "@internet! Internet output"
  goods_output_internet_add_desc: "The amount of @internet! Internet produced by buildings"
  goods_output_trucks_add: "@trucks! Trucks output"
@@ -1875,11 +2040,13 @@
  smart_irrigation_building_sugar_plantation: "Smart Irrigation"
  smart_irrigation_building_banana_plantation: "Smart Irrigation"
  smart_irrigation_building_silk_plantation: "Smart Irrigation"
+ smart_irrigation_building_rubber_plantation: "Smart Irrigation"
  smart_irrigation_building_vineyard: "Smart Irrigation"
  smart_irrigation_building_coffee_plantation: "Smart Irrigation"
+ smart_irrigation_building_cotton_plantation: "Smart Irrigation"
  smart_irrigation_building_opium_plantation: "Smart Irrigation"
 
- agricultural_mechanization: "Heavy Tractors"
+ agricultural_mechanization: "Diesel Tractors"
  slow_tech_progress: "Slow Technological Progress"
  je_ai_advanced_consumer_goods_researched: "Consumer Goods"
  ai_great_power_buff_spread: "Technological Influence (Great Power)"
@@ -1890,9 +2057,103 @@
  early_civil_aviation_modifier_others: "Early Civil Aviation"
  modern_civil_aviation_modifier_others: "Modern Civil Aviation"
 
+ #backwards compatibility
+ je_ut_new_dawn_core_abilities: "New Dawn: Abilities"
+ je_ut_new_dawn_core_abilities_reason: "$concept_ut_nd_abilities_desc$"
+ je_ut_new_dawn_core_abilities_add_decision: "Add New Dawn Core Abilities"
+ je_ut_new_dawn_core_abilities_add_decision_desc: "Unlock the New Dawn Core [concept_ut_nd_abilities]."
+
+ #je software tree
+ je_ut_software_era_6_add_decision: "Start Software Expertise technology tree"
+ je_ut_software_era_6_add_decision_desc: "Unlock the Software Expertise which provides access to foundational software concepts and prepares for modern systems design."
+ je_ut_software_era_6: "Software Expertise: Era 6"
+ je_ut_software_era_6_reason: "Advance through foundational software concepts to prepare for modern systems design."
+ je_ut_software_points_bar_era_6: "Software Expertise"
+ je_ut_software_points_bar_era_6_desc: "Software Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
+
+ je_ut_software_era_6_1_assembler_language: "Assembler Language"
+ je_ut_software_era_6_1_assembler_language_desc: "Low-level programming provides deep hardware control and optimization opportunities."
+ je_ut_software_era_6_1_assembler_language_mod: "$je_ut_software_era_6_1_assembler_language$"
+ je_ut_software_era_6_2_assembler_language: "Compilers"
+ je_ut_software_era_6_2_assembler_language_desc: "Translating high-level code into efficient machine instructions enables complex software development."
+ je_ut_software_era_6_2_assembler_language_mod: "$je_ut_software_era_6_2_assembler_language$"
+ je_ut_software_era_6_3_high_level_language: "High-Level Languages"
+ je_ut_software_era_6_3_high_level_language_desc: "High-level programming languages abstract hardware details, accelerating software creation and innovation."
+ je_ut_software_era_6_3_high_level_language_mod: "$je_ut_software_era_6_3_high_level_language$"
+ 
+ je_ut_software_era_6_required_points_tt: "Requires at least #v 100#! $je_ut_software_points_bar_era_6$"
+ je_ut_software_era_6_required_points_spend_tt: "Consumes #v 100#! $je_ut_software_points_bar_era_6$"
+
+ je_ut_software_era_7: "Software Expertise: Era 7"
+ je_ut_software_era_7_reason: "Develop modern software paradigms to complete the software expertise track."
+ je_ut_software_points_bar_era_7: "Software Expertise"
+ je_ut_software_points_bar_era_7_desc: "Software Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/1000)"
+
+ je_ut_software_era_7_1_operating_system: "Operating System"
+ je_ut_software_era_7_1_operating_system_desc: "Standardized operating environments improve software deployment and reliability."
+ je_ut_software_era_7_1_operating_system_mod: "$je_ut_software_era_7_1_operating_system$"
+ je_ut_software_era_7_2_relational_database: "Relational Database"
+ je_ut_software_era_7_2_relational_database_desc: "Structured data systems enable scalable storage, querying, and business analytics."
+ je_ut_software_era_7_2_relational_database_mod: "$je_ut_software_era_7_2_relational_database$"
+ je_ut_software_era_7_3_object_oriented_language: "Object-Oriented Programming"
+ je_ut_software_era_7_3_object_oriented_language_desc: "Object-oriented methods accelerate complex software development and reuse."
+ je_ut_software_era_7_3_object_oriented_language_mod: "$je_ut_software_era_7_3_object_oriented_language$"
+ je_ut_software_era_7_open_source: "Open Source Expertise"
+ je_ut_software_era_7_open_source_desc: "Open collaboration spreads software expertise across the entire globe."
+
+ ut_open_source_era_7_title: "Open Source Expertise"
+ ut_open_source_era_7_desc: "Open collaboration spreads software expertise across the entire globe."
+ ut_open_source_era_7_flavor: "Open collaboration spreads software expertise across the entire globe. Open source software is often developed in a public, collaborative manner, allowing anyone to contribute improvements or use the software freely. This approach has led to rapid innovation and widespread adoption of software technologies, making advanced software expertise accessible to individuals and organizations worldwide."
+
+ je_ut_software_era_7_required_points_tt: "Requires at least #v 1000#! $je_ut_software_points_bar_era_7$"
+ je_ut_software_era_7_required_points_spend_tt: "Consumes #v 1000#! $je_ut_software_points_bar_era_7$"
+ je_ut_software_era_7_technology_open_sourced_tt: "Expertise has been open-sourced"
+ je_ut_software_era_7_technology_not_open_sourced_tt: "Expertise has #r not#! been open-sourced"
+
+ je_ut_software_era_8: "Software Expertise: Era 8"
+ je_ut_software_era_8_reason: "Scale software ecosystems through modern platform, cloud, and ownership paradigms."
+ je_ut_software_points_bar_era_8: "Software Expertise"
+ je_ut_software_points_bar_era_8_desc: "Software Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/10000)"
+
+ je_ut_software_era_8_1_version_control: "Version Control"
+ je_ut_software_era_8_1_version_control_desc: "Version control systems enable collaborative development, safer releases, and rapid iteration."
+ je_ut_software_era_8_1_version_control_mod: "$je_ut_software_era_8_1_version_control$"
+ je_ut_software_era_8_2_no_sql: "NoSQL Databases"
+ je_ut_software_era_8_2_no_sql_desc: "Flexible data models improve scalability for distributed and high-throughput applications."
+ je_ut_software_era_8_2_no_sql_mod: "$je_ut_software_era_8_2_no_sql$"
+ je_ut_software_era_8_3_web_standards: "Web Standards"
+ je_ut_software_era_8_3_web_standards_desc: "Shared standards make web platforms interoperable, secure, and globally accessible."
+ je_ut_software_era_8_3_web_standards_mod: "$je_ut_software_era_8_3_web_standards$"
+ je_ut_software_era_8_4_web_software: "Web Software"
+ je_ut_software_era_8_4_web_software_desc: "Web-native applications accelerate service delivery across borders and industries."
+ je_ut_software_era_8_4_web_software_mod: "$je_ut_software_era_8_4_web_software$"
+ je_ut_software_era_8_5_cloud_computing: "Cloud Computing"
+ je_ut_software_era_8_5_cloud_computing_desc: "Cloud infrastructure centralizes compute resources and enables elastic software operations."
+ je_ut_software_era_8_5_cloud_computing_mod: "$je_ut_software_era_8_5_cloud_computing$"
+ je_ut_software_era_8_6_ownership_model_language: "Ownership Model Languages"
+ je_ut_software_era_8_6_ownership_model_language_desc: "Ownership-based programming models improve reliability, performance, and memory safety."
+ je_ut_software_era_8_6_ownership_model_language_mod: "$je_ut_software_era_8_6_ownership_model_language$"
+ je_ut_software_era_8_open_source: "Open Source"
+ je_ut_software_era_8_open_source_desc: "Open collaboration spreads advanced software expertise across the entire globe."
+
+ je_ut_software_era_8_required_points_tt: "Requires at least #v 10000#! $je_ut_software_points_bar_era_8$"
+ je_ut_software_era_8_required_points_spend_tt: "Consumes #v 10000#! $je_ut_software_points_bar_era_8$"
+ je_ut_software_era_8_technology_open_sourced_tt: "Expertise has been open-sourced"
+ je_ut_software_era_8_technology_not_open_sourced_tt: "Expertise has #r not#! been open-sourced"
+
+ je_ut_software_points_bar_progress_buildings_era_6: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_6_tooltip Buildings #!#!"
+ je_ut_software_points_bar_progress_buildings_era_6_tooltip: "Sum of [concept_occupancy] times [concept_building_level].\nMaximum gain is 10 Software Expertise."
+ je_ut_software_points_bar_progress_buildings_era_7: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_7_tooltip Buildings #!#! (at least [concept_building_level] 5)"
+ je_ut_software_points_bar_progress_buildings_era_7_tooltip: "Sum of [concept_occupancy] times [concept_building_level].\nOnly buildings with at least [concept_building_level] #b 5#! are counted.\nMaximum gain is 100 Software Expertise."
+ je_ut_software_points_bar_progress_buildings_era_8: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_8_tooltip Buildings #!#! (at least [concept_building_level] 20)"
+ je_ut_software_points_bar_progress_buildings_era_8_tooltip: "Sum of [concept_occupancy] times [concept_building_level].\nOnly buildings with at least [concept_building_level] #b 20#! are counted.\nMaximum gain is 1000 Software Expertise."
+ je_ut_software_points_bar_progress_no_research_institute: "has no [GetBuildingType('building_ut_research_institute').GetName]"
+
  event_journal_ai: "Technological Progress"
+ event_journal_ai.d: "Countries receive bonuses to innovation scaled increasing with their power level."
+ event_journal_ai.f: "Technological progress spreads across the world through trade, communication, education, migration, and international cooperation. When one country develops a new invention, that knowledge can influence other nations and support their own development. While powerful countries often have greater resources to invest in research and innovation, smaller nations can also contribute by adapting, refining, and sharing technologies in unique ways. As ideas move across borders, countries become increasingly connected through innovation, creating a global exchange of knowledge."
  utopia_event_journal_ai_buff: "Wave of Innovation"
- utopia_event_journal_ai_buff_tooltip: "AI countries receive a significant bonus to innovation spread."
+ utopia_event_journal_ai_buff_tooltip: "AI countries receive a significant temporary bonus to innovation spread."
 
  ut_tech_preview_cheat_research: "Project Utopia: Technology Cheat"
  ut_tech_preview_cheat_research_desc: "As part of the technical preview you can cheat to get a ton of innovation and [Concept('concept_ut_research_institute', 'research')]."
@@ -1936,3 +2197,18 @@
 
  ut_air_support_mobilization_option_group: "Air Support"
  ut_doctrine_mobilization_option_group: "Doctrines"
+
+ #game rules
+ rule_ut_new_dawn_start_era: "$concept_ut_new_dawn$ Start Era"
+ setting_ut_new_dawn_start_era_6: "Era VI"
+ setting_ut_new_dawn_start_era_6_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] VI (1936-1961)"
+ setting_ut_new_dawn_start_era_5: "Era V"
+ setting_ut_new_dawn_start_era_5_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] V (1912-1935)\n@warning! Project Utopia is tested with Era V start era"
+ setting_ut_new_dawn_start_era_4: "Era IV"
+ setting_ut_new_dawn_start_era_4_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] IV (1887-1911)\n@warning! Project Utopia is tested with Era VI start era."
+
+ rule_ut_new_dawn_historical_focus: "Historical $concept_ut_nd_focus$"
+ setting_ut_new_dawn_historical_focus_yes: "Enabled"
+ setting_ut_new_dawn_historical_focus_yes_desc: "Selected AI nations have a higher chance to select their historical [concept_ut_nd_focus]."
+ setting_ut_new_dawn_historical_focus_no: "Disabled"
+ setting_ut_new_dawn_historical_focus_no_desc: "All AI nations have the same chance to select their focus.\n@warning! Project Utopia is tested with historical [concept_ut_nd_focus] enabled."

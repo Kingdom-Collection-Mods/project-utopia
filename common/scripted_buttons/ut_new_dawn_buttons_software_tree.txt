@@ -1,0 +1,537 @@
+﻿je_ut_software_era_6_1_assembler_language = {
+	name = "je_ut_software_era_6_1_assembler_language"
+	desc = "je_ut_software_era_6_1_assembler_language_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		NOT = {
+			has_modifier = je_ut_software_era_6_1_assembler_language_mod
+		}
+		hidden_trigger = {
+			NOT = {
+				has_modifier = je_ut_software_era_6_2_assembler_language_mod
+			}
+			NOT = {
+				has_modifier = je_ut_software_era_6_3_high_level_language_mod
+			}
+		}
+		custom_tooltip = {
+			text = je_ut_software_era_6_required_points_tt
+			je:je_ut_software_era_6 = { 
+				"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 100
+			}
+		}
+	}
+
+	effect = {
+		add_modifier = je_ut_software_era_6_1_assembler_language_mod
+		custom_tooltip = {
+			text = je_ut_software_era_6_required_points_spend_tt
+			je:je_ut_software_era_6 = {
+				add_progress = { value = -100 name = je_ut_software_points_bar_era_6 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_6_2_assembler_language = {
+	name = "je_ut_software_era_6_2_assembler_language"
+	desc = "je_ut_software_era_6_2_assembler_language_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_technology_researched = electronics_motors_production
+		has_modifier = je_ut_software_era_6_1_assembler_language_mod
+		NOT = {
+			has_modifier = je_ut_software_era_6_2_assembler_language_mod
+		}
+		custom_tooltip = {
+			text = je_ut_software_era_6_required_points_tt
+			je:je_ut_software_era_6 = { 
+				"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 100
+			}
+		}
+	}
+
+	effect = {
+		#deprecated
+		remove_modifier = je_ut_software_era_6_assembler_language_mod
+
+		remove_modifier = je_ut_software_era_6_1_assembler_language_mod
+		add_modifier = je_ut_software_era_6_2_assembler_language_mod
+		custom_tooltip = {
+			text = je_ut_software_era_6_required_points_spend_tt
+			je:je_ut_software_era_6 = {
+				add_progress = { value = -100 name = je_ut_software_points_bar_era_6 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_6_3_high_level_language = {
+	name = "je_ut_software_era_6_3_high_level_language"
+	desc = "je_ut_software_era_6_3_high_level_language_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_technology_researched = heavy_machinery_era_analog_two
+		has_modifier = je_ut_software_era_6_2_assembler_language_mod
+		NOT = {
+			has_modifier = je_ut_software_era_6_3_high_level_language_mod
+		}
+		custom_tooltip = {
+			text = je_ut_software_era_6_required_points_tt
+			je:je_ut_software_era_6 = { 
+				"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 100
+			}
+		}
+	}
+
+	effect = {
+		remove_modifier = je_ut_software_era_6_2_assembler_language_mod
+		add_modifier = je_ut_software_era_6_3_high_level_language_mod
+		custom_tooltip = {
+			text = je_ut_software_era_6_required_points_spend_tt
+			je:je_ut_software_era_6 = {
+				add_progress = { value = -100 name = je_ut_software_points_bar_era_6 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_7_1_operating_system = {
+	name = "je_ut_software_era_7_1_operating_system"
+	desc = "je_ut_software_era_7_1_operating_system_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_technology_researched = computers
+		has_modifier = je_ut_software_era_6_3_high_level_language_mod
+		NOT = {
+			has_modifier = je_ut_software_era_7_1_operating_system_mod
+		}
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_7_required_points_tt
+				je:je_ut_software_era_7 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_7)" >= 1000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_7_technology_open_sourced_tt
+				has_global_variable = je_ut_software_era_7_1_operating_system_foss_var
+			}
+		}
+	}
+
+	effect = {
+		remove_modifier = je_ut_software_era_6_3_high_level_language_mod
+		add_modifier = je_ut_software_era_7_1_operating_system_mod
+		custom_tooltip = {
+			text = je_ut_software_era_7_required_points_spend_tt
+			je:je_ut_software_era_7 = {
+				add_progress = { value = -1000 name = je_ut_software_points_bar_era_7 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_7_2_relational_database = {
+	name = "je_ut_software_era_7_2_relational_database"
+	desc = "je_ut_software_era_7_2_relational_database_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_modifier = je_ut_software_era_7_1_operating_system_mod
+		NOT = {
+			has_modifier = je_ut_software_era_7_2_relational_database_mod
+		}
+		
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_7_required_points_tt
+				je:je_ut_software_era_7 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_7)" >= 1000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_7_technology_open_sourced_tt
+				has_global_variable = je_ut_software_era_7_2_relational_database_foss_var
+			}
+		}
+	}
+
+	effect = {
+		remove_modifier = je_ut_software_era_7_1_operating_system_mod
+		add_modifier = je_ut_software_era_7_2_relational_database_mod
+		custom_tooltip = {
+			text = je_ut_software_era_7_required_points_spend_tt
+			je:je_ut_software_era_7 = {
+				add_progress = { value = -1000 name = je_ut_software_points_bar_era_7 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_7_3_object_oriented_language = {
+	name = "je_ut_software_era_7_3_object_oriented_language"
+	desc = "je_ut_software_era_7_3_object_oriented_language_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_technology_researched = software
+		has_modifier = je_ut_software_era_7_2_relational_database_mod
+		NOT = {
+			has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
+		}
+		
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_7_required_points_tt
+				je:je_ut_software_era_7 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_7)" >= 1000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_7_technology_open_sourced_tt
+				has_global_variable = je_ut_software_era_7_3_object_oriented_programming_foss_var
+			}
+		}
+	}
+
+	effect = {
+		remove_modifier = je_ut_software_era_7_2_relational_database_mod
+		add_modifier = je_ut_software_era_7_3_object_oriented_language_mod
+		custom_tooltip = {
+			text = je_ut_software_era_7_required_points_spend_tt
+			je:je_ut_software_era_7 = {
+				add_progress = { value = -1000 name = je_ut_software_points_bar_era_7 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_7_open_source = {
+	name = "je_ut_software_era_7_open_source"
+	desc = "je_ut_software_era_7_open_source_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		hidden_trigger = {
+			NOT = {
+				has_variable = je_ut_software_era_7_open_source_button_pressed
+			}
+		}
+		OR = {
+			AND = {
+				has_modifier = je_ut_software_era_7_2_relational_database_mod
+				custom_tooltip = {
+					text = je_ut_software_era_7_technology_not_open_sourced_tt
+					NOT = { has_global_variable = je_ut_software_era_7_1_operating_system_foss_var }
+				}
+			}
+			AND = {
+				has_modifier = je_ut_software_era_7_2_relational_database_mod
+				custom_tooltip = {
+					text = je_ut_software_era_7_technology_not_open_sourced_tt
+					NOT = { has_global_variable = je_ut_software_era_7_2_relational_database_foss_var }
+				}
+			}
+			AND = {
+				has_modifier = je_ut_software_era_7_2_relational_database_mod
+				custom_tooltip = {
+					text = je_ut_software_era_7_technology_not_open_sourced_tt
+					NOT = { has_global_variable = je_ut_software_era_7_3_object_oriented_programming_foss_var }
+				}
+			}
+		}
+	}
+
+	effect = {
+		set_variable = je_ut_software_era_7_open_source_button_pressed
+		trigger_event = {
+			id = utopia_mod.7
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_8_1_version_control = {
+	name = "je_ut_software_era_8_1_version_control"
+	desc = "je_ut_software_era_8_1_version_control_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
+		NOT = {
+			has_modifier = je_ut_software_era_8_1_version_control_mod
+		}
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_8_required_points_tt
+				je:je_ut_software_era_8 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_8)" >= 10000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_8_technology_open_sourced_tt
+			}
+		}
+	}
+
+	effect = {
+		remove_modifier = je_ut_software_era_7_3_object_oriented_language_mod
+		add_modifier = je_ut_software_era_8_1_version_control_mod
+		custom_tooltip = {
+			text = je_ut_software_era_8_required_points_spend_tt
+			je:je_ut_software_era_8 = {
+				add_progress = { value = -10000 name = je_ut_software_points_bar_era_8 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_8_2_no_sql = {
+	name = "je_ut_software_era_8_2_no_sql"
+	desc = "je_ut_software_era_8_2_no_sql_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_modifier = je_ut_software_era_8_1_version_control_mod
+		NOT = {
+			has_modifier = je_ut_software_era_8_2_no_sql_mod
+		}
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_8_required_points_tt
+				je:je_ut_software_era_8 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_8)" >= 10000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_8_technology_open_sourced_tt
+			}
+		}
+	}
+
+	effect = {
+		remove_modifier = je_ut_software_era_8_1_version_control_mod
+		add_modifier = je_ut_software_era_8_2_no_sql_mod
+		custom_tooltip = {
+			text = je_ut_software_era_8_required_points_spend_tt
+			je:je_ut_software_era_8 = {
+				add_progress = { value = -10000 name = je_ut_software_points_bar_era_8 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_8_3_web_standards = {
+	name = "je_ut_software_era_8_3_web_standards"
+	desc = "je_ut_software_era_8_3_web_standards_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_modifier = je_ut_software_era_8_2_no_sql_mod
+		NOT = {
+			has_modifier = je_ut_software_era_8_3_web_standards_mod
+		}
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_8_required_points_tt
+				je:je_ut_software_era_8 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_8)" >= 10000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_8_technology_open_sourced_tt
+			}
+		}
+	}
+
+	effect = {
+		remove_modifier = je_ut_software_era_8_2_no_sql_mod
+		add_modifier = je_ut_software_era_8_3_web_standards_mod
+		custom_tooltip = {
+			text = je_ut_software_era_8_required_points_spend_tt
+			je:je_ut_software_era_8 = {
+				add_progress = { value = -10000 name = je_ut_software_points_bar_era_8 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_8_4_web_software = {
+	name = "je_ut_software_era_8_4_web_software"
+	desc = "je_ut_software_era_8_4_web_software_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_modifier = je_ut_software_era_8_3_web_standards_mod
+		NOT = {
+			has_modifier = je_ut_software_era_8_4_web_software_mod
+		}
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_8_required_points_tt
+				je:je_ut_software_era_8 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_8)" >= 10000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_8_technology_open_sourced_tt
+			}
+		}
+	}
+
+	effect = {
+		remove_modifier = je_ut_software_era_8_3_web_standards_mod
+		add_modifier = je_ut_software_era_8_4_web_software_mod
+		custom_tooltip = {
+			text = je_ut_software_era_8_required_points_spend_tt
+			je:je_ut_software_era_8 = {
+				add_progress = { value = -10000 name = je_ut_software_points_bar_era_8 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_8_5_cloud_computing = {
+	name = "je_ut_software_era_8_5_cloud_computing"
+	desc = "je_ut_software_era_8_5_cloud_computing_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_modifier = je_ut_software_era_8_4_web_software_mod
+		NOT = {
+			has_modifier = je_ut_software_era_8_5_cloud_computing_mod
+		}
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_8_required_points_tt
+				je:je_ut_software_era_8 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_8)" >= 10000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_8_technology_open_sourced_tt
+			}
+		}
+	}
+
+	effect = {
+		remove_modifier = je_ut_software_era_8_4_web_software_mod
+		add_modifier = je_ut_software_era_8_5_cloud_computing_mod
+		custom_tooltip = {
+			text = je_ut_software_era_8_required_points_spend_tt
+			je:je_ut_software_era_8 = {
+				add_progress = { value = -10000 name = je_ut_software_points_bar_era_8 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_8_6_ownership_model_language = {
+	name = "je_ut_software_era_8_6_ownership_model_language"
+	desc = "je_ut_software_era_8_6_ownership_model_language_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		has_modifier = je_ut_software_era_8_5_cloud_computing_mod
+		NOT = {
+			has_modifier = je_ut_software_era_8_6_ownership_model_language_mod
+		}
+		OR = {
+			custom_tooltip = {
+				text = je_ut_software_era_8_required_points_tt
+				je:je_ut_software_era_8 = {
+					"scripted_bar_progress(je_ut_software_points_bar_era_8)" >= 10000
+				}
+			}
+			custom_tooltip = {
+				text = je_ut_software_era_8_technology_open_sourced_tt
+			}
+		}
+	}
+
+	effect = {
+		remove_modifier = je_ut_software_era_8_5_cloud_computing_mod
+		add_modifier = je_ut_software_era_8_6_ownership_model_language_mod
+		custom_tooltip = {
+			text = je_ut_software_era_8_required_points_spend_tt
+			je:je_ut_software_era_8 = {
+				add_progress = { value = -10000 name = je_ut_software_points_bar_era_8 }
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_ut_software_era_8_open_source = {
+	name = "je_ut_software_era_8_open_source"
+	desc = "je_ut_software_era_8_open_source_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		always = no
+	}
+
+	effect = {
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+

@@ -49,6 +49,10 @@ ut_new_dawn_core_external_offensive_focus_remove = {
 		ut_add_new_dawn_core_progress = {
 			VALUE = -1
 		}
+		custom_tooltip = ut_add_new_dawn_pressure_add_1
+		ut_add_new_dawn_pressure_points = {
+			VALUE = 1
+		}
 		remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
 	}
 	#ai never
@@ -106,6 +110,10 @@ ut_new_dawn_core_external_cooperative_focus_remove = {
 		custom_tooltip = ut_add_new_dawn_progress_neg_1
 		ut_add_new_dawn_core_progress = {
 			VALUE = -1
+		}
+		custom_tooltip = ut_add_new_dawn_pressure_add_1
+		ut_add_new_dawn_pressure_points = {
+			VALUE = 1
 		}
 		remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
 	}
@@ -172,6 +180,10 @@ ut_new_dawn_core_internal_good_times_focus_remove = {
 		custom_tooltip = ut_add_new_dawn_progress_neg_1
 		ut_add_new_dawn_core_progress = {
 			VALUE = -1
+		}
+		custom_tooltip = ut_add_new_dawn_pressure_add_1
+		ut_add_new_dawn_pressure_points = {
+			VALUE = 1
 		}
 		remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
 	}
@@ -240,6 +252,10 @@ ut_new_dawn_core_internal_bad_times_focus_remove = {
 		custom_tooltip = ut_add_new_dawn_progress_neg_1
 		ut_add_new_dawn_core_progress = {
 			VALUE = -1
+		}
+		custom_tooltip = ut_add_new_dawn_pressure_add_1
+		ut_add_new_dawn_pressure_points = {
+			VALUE = 1
 		}
 		remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
 	}

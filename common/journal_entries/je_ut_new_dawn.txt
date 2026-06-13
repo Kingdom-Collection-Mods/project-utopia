@@ -20,6 +20,8 @@
 	possible = {
 		OR = {
 			has_technology_researched = consumer_goods_main_analog
+			has_game_rule = ut_new_dawn_start_era_4
+			has_game_rule = ut_new_dawn_start_era_5
 			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
 		}
 		OR = {
@@ -37,6 +39,35 @@
 				AND = {
 					has_technology_researched = ut_military_complex
 					has_technology_researched = ut_tank_diesel_engine
+				}
+			}
+			trigger_if = {
+				limit = {
+					has_game_rule = ut_new_dawn_start_era_5				
+				}
+				AND = {
+					has_technology_researched = consumer_goods_main_analog
+					OR = {
+						has_technology_researched = compression_ignition
+						has_technology_researched = nco_training
+						has_technology_researched = mass_propaganda
+					}
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					has_game_rule = ut_new_dawn_start_era_4
+				}
+				OR = {
+					has_technology_researched = telephone
+					has_technology_researched = trench_works
+					has_technology_researched = political_agitation
+				}	
+			}
+			trigger_else = {
+				OR = {
+					has_game_rule = ut_new_dawn_start_era_4
+					has_game_rule = ut_new_dawn_start_era_5
 				}
 			}
 			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
@@ -67,14 +98,15 @@
 	scripted_button = ut_new_dawn_autocrat_focus
 	scripted_button = ut_new_dawn_democrat_focus
 	scripted_button = ut_new_dawn_communist_focus
-	scripted_button = ut_new_dawn_core_external_offensive_focus_add
-	scripted_button = ut_new_dawn_core_external_offensive_focus_remove
-	scripted_button = ut_new_dawn_core_internal_good_times_focus_add
-	scripted_button = ut_new_dawn_core_internal_good_times_focus_remove
-	scripted_button = ut_new_dawn_core_external_cooperative_focus_add
-	scripted_button = ut_new_dawn_core_external_cooperative_focus_remove
-	scripted_button = ut_new_dawn_core_internal_bad_times_focus_add
-	scripted_button = ut_new_dawn_core_internal_bad_times_focus_remove
+	
+	# scripted_button = ut_new_dawn_core_external_offensive_focus_add
+	# scripted_button = ut_new_dawn_core_external_offensive_focus_remove
+	# scripted_button = ut_new_dawn_core_internal_good_times_focus_add
+	# scripted_button = ut_new_dawn_core_internal_good_times_focus_remove
+	# scripted_button = ut_new_dawn_core_external_cooperative_focus_add
+	# scripted_button = ut_new_dawn_core_external_cooperative_focus_remove
+	# scripted_button = ut_new_dawn_core_internal_bad_times_focus_add
+	# scripted_button = ut_new_dawn_core_internal_bad_times_focus_remove
 
 	scripted_progress_bar = ut_new_dawn_fascist_bar
 	scripted_progress_bar = ut_new_dawn_autocrat_bar
@@ -299,17 +331,28 @@
 		random_events = {
 			400 = 0
 			10 = event_new_dawn.11
-			1 = event_new_dawn.12
-			# 10 = french_pretenders_pulse.3
-			# 50 = french_pretenders_pulse.10
-			# 10 = french_pretenders_pulse.11
-			# 10 = french_pretenders_pulse.12
-			# 10 = french_pretenders_pulse.13
-			# 10 = french_pretenders_pulse.14
-			# 10 = french_pretenders_pulse.15
-			# 10 = french_pretenders_pulse.16
-			# 10 = french_pretenders_pulse.17
-			# 10 = french_pretenders_pulse.18
+			10 = event_new_dawn.12
+			10 = event_new_dawn.13   #Radicals
+
+			#Pressure Events
+			#Generic Good (<25 pressure)
+			1 = event_new_dawn.101   #Popular enthusiasm
+			1 = event_new_dawn.102   #Social cohesion
+			1 = event_new_dawn.103   #Treasury surplus
+			1 = event_new_dawn.104   #Cultural awakening
+			1 = event_new_dawn.105   #Spread Ideology Petition
+			2 = event_new_dawn.106   #Core/Secondary Law Petition (AI hard progresses on core laws)
+
+			#Generic Bad (>50 pressure)
+			10 = event_new_dawn.120   #Approval crisis
+			1 = event_new_dawn.121   #Core progress setback
+			1 = event_new_dawn.122   #Emergency spending
+			5 = event_new_dawn.123   #Innovation disruption
+			1 = event_new_dawn.124   #Pressure
+
+			#Generic Very Bad (>75 pressure)
+			1 = event_new_dawn.140   #Constitutional crisis
+			1 = event_new_dawn.141   #State of emergency
 		}
 	}
 
@@ -392,8 +435,44 @@
 
 	weight = 100
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
+
+je_ut_new_dawn_core_abilities = {
+	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
+
+	group = je_group_utopia
+
+	immediate = {
+	}
+	
+	scripted_button = ut_new_dawn_core_external_offensive_focus_add
+	scripted_button = ut_new_dawn_core_external_offensive_focus_remove
+	scripted_button = ut_new_dawn_core_internal_good_times_focus_add
+	scripted_button = ut_new_dawn_core_internal_good_times_focus_remove
+	scripted_button = ut_new_dawn_core_external_cooperative_focus_add
+	scripted_button = ut_new_dawn_core_external_cooperative_focus_remove
+	scripted_button = ut_new_dawn_core_internal_bad_times_focus_add
+	scripted_button = ut_new_dawn_core_internal_bad_times_focus_remove
+
+	complete = {
+		always = no
+	}
+
+	fail = {
+		NOT = {
+			has_journal_entry = je_ut_new_dawn_autocratic
+			has_journal_entry = je_ut_new_dawn_democratic
+			has_journal_entry = je_ut_new_dawn_fascist
+			has_journal_entry = je_ut_new_dawn_communist
+		}
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default_uninvolved_or_context = no
+}
+
 
 je_ut_new_dawn_democratic = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_nd_democrat.dds"
@@ -406,7 +485,10 @@ je_ut_new_dawn_democratic = {
 	}
 
 	immediate = {
-		ut_set_new_dawn_variables = yes
+		ut_new_dawn_democrat_progress = yes
+		add_journal_entry = {
+			type = je_ut_new_dawn_core_abilities
+		}
 		
 		remove_modifier = je_ut_new_dawn_democrat_focus
 		remove_modifier = je_ut_new_dawn_autocrat_focus
@@ -472,6 +554,7 @@ je_ut_new_dawn_democratic = {
 
 	
 	scripted_progress_bar = je_ut_new_dawn_democratic_points_bar
+	scripted_progress_bar = je_ut_new_dawn_pressure_points_bar
 
 	complete = {
 		custom_tooltip = {
@@ -486,10 +569,16 @@ je_ut_new_dawn_democratic = {
 			has_variable = je_ut_new_dawn_democratic_fair_elections_done
 		}
 		average_sol > 50
-		NOT = {
-			any_country = {
-				average_sol < 25
-				NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+		
+		trigger_if = {
+			limit = {
+				is_player = yes
+			}
+			NOT = {
+				any_country = {
+					average_sol < 25
+					NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+				}
 			}
 		}
 	}
@@ -523,6 +612,7 @@ je_ut_new_dawn_democratic = {
 	on_monthly_pulse = {
 		effect = {
 			ut_new_dawn_democrat_progress = yes
+			ut_new_dawn_common_pressure_progress_monthly = yes
 			if = {
 				limit = {
 					NOT = { has_modifier = je_ut_new_dawn_democrat_focus }
@@ -556,6 +646,7 @@ je_ut_new_dawn_democratic = {
 
 	on_yearly_pulse = {
 		effect = {
+			ut_new_dawn_common_pressure_progress_yearly = yes
 			set_variable = {
 				name = je_ut_new_dawn_core_prev_progress_yearly
 				value = var:je_ut_new_dawn_core_progress_yearly
@@ -604,6 +695,12 @@ je_ut_new_dawn_democratic = {
 				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" <= new_dawn_ideology_critical_lower_bound
 			}
 		}
+		custom_tooltip = {
+			text = je_ut_new_dawn_critical_lower_bound_fail_pressure_tt
+			je:je_ut_new_dawn_democratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" > 50
+			}
+		}
 	}
 
 	# effect which is executed when 'fail' trigger becomes true
@@ -646,7 +743,7 @@ je_ut_new_dawn_democratic = {
 
 	weight = 100
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ut_new_dawn_autocratic = {
@@ -665,7 +762,10 @@ je_ut_new_dawn_autocratic = {
 	scripted_button = je_ut_new_dawn_suppress_dissidents
 
 	immediate = {
-		ut_set_new_dawn_variables = yes
+		ut_new_dawn_autocrat_progress = yes
+		add_journal_entry = {
+			type = je_ut_new_dawn_core_abilities
+		}
 
 		remove_modifier = je_ut_new_dawn_democrat_focus
 		remove_modifier = je_ut_new_dawn_autocrat_focus
@@ -830,7 +930,7 @@ je_ut_new_dawn_autocratic = {
 
 	weight = 100
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ut_new_dawn_fascist = {
@@ -844,7 +944,11 @@ je_ut_new_dawn_fascist = {
 	}
 
 	immediate = {
-		ut_set_new_dawn_variables = yes
+		ut_new_dawn_fascist_progress = yes
+		add_journal_entry = {
+			type = je_ut_new_dawn_core_abilities
+		}
+
 		remove_modifier = je_ut_new_dawn_democrat_focus
 		remove_modifier = je_ut_new_dawn_autocrat_focus
 		remove_modifier = je_ut_new_dawn_communist_focus
@@ -940,12 +1044,18 @@ je_ut_new_dawn_fascist = {
 			target = root.ruler.culture
 			value >= 100
 		}
-		custom_tooltip = {
-			text = je_ut_new_dawn_fascist_final_tt
-			
-			NOT = {
-				any_country = {
-					NOT = { root = this }
+		
+		trigger_if = {
+			limit = {
+				is_player = yes
+			}
+			custom_tooltip = {
+				text = je_ut_new_dawn_fascist_final_tt
+				
+				NOT = {
+					any_country = {
+						NOT = { root = this }
+					}
 				}
 			}
 		}
@@ -1082,7 +1192,7 @@ je_ut_new_dawn_fascist = {
 
 	weight = 100
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_ut_new_dawn_communist = {
@@ -1096,7 +1206,11 @@ je_ut_new_dawn_communist = {
 	}
 
 	immediate = {
-		ut_set_new_dawn_variables = yes
+		ut_new_dawn_communist_progress = yes
+		add_journal_entry = {
+			type = je_ut_new_dawn_core_abilities
+		}
+
 		remove_modifier = je_ut_new_dawn_democrat_focus
 		remove_modifier = je_ut_new_dawn_autocrat_focus
 		remove_modifier = je_ut_new_dawn_communist_focus
@@ -1141,10 +1255,15 @@ je_ut_new_dawn_communist = {
 			always = no
 		}
 		average_sol > 50
-		NOT = {
-			any_country = {
-				NOT = { has_law_or_variant = law_type:law_cooperative_ownership }
-				average_sol < 25
+		trigger_if = {
+			limit = {
+				is_player = yes
+			}
+			NOT = {
+				any_country = {
+					NOT = { has_law_or_variant = law_type:law_cooperative_ownership }
+					average_sol < 25
+				}
 			}
 		}
 	}
@@ -1317,5 +1436,5 @@ je_ut_new_dawn_communist = {
 
 	weight = 100
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

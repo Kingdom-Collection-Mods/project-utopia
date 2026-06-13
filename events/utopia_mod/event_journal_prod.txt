@@ -31,6 +31,16 @@ utopia_journal_prod.1 = {
 	}
 	
 	option = {
+		name = utopia.progress_c
+		
+		trigger = {
+			NOT = { has_technology_researched = plastics_nylon }
+			can_research = plastics_nylon
+		}
+		add_technology_progress = { progress = 6000 technology = plastics_nylon }
+	}
+	
+	option = {
 		name = utopia.slow_progress
 		add_modifier = {
 			name = slow_tech_progress
@@ -87,7 +97,7 @@ utopia_journal_prod.2 = {
 	}
 
 	option = {
-		name = utopia.progress_b
+		name = utopia.continue
 		trigger = {
 			is_ai = no
 		}
@@ -175,7 +185,7 @@ utopia_journal_prod.4 = {
 }
 
 
-# Heavy Tractors Event
+# Diesel Tractors Event
 utopia_journal_prod.5 = {
 	title = ut_heavy_tractors_je
 	desc = ut_heavy_tractors_je.success.d
@@ -474,6 +484,47 @@ utopia_journal_prod.12 = {
 	}	
 }
 
+# Machinery Pre Era 6
+
+utopia_journal_prod.13 = {
+	title = ut_heavy_industrial_machinery_je
+	desc = ut_heavy_industrial_machinery_je.success.d
+	flavor = ut_heavy_industrial_machinery_je.success.f
+
+	type = country_event
+	event_image = { video = "unspecific_gears_pistons" }
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+	duration = 3
+	
+	option = {
+		name = utopia.progress_a
+		default_option = yes
+		trigger = {
+			NOT = { has_technology_researched = heavy_machinery_era_analog }
+			can_research = heavy_machinery_era_analog
+		}
+		add_technology_progress = { progress = 6000 technology = heavy_machinery_era_analog }
+	}
+	
+	option = {
+		name = utopia.progress_b
+		
+		trigger = {
+			NOT = { has_technology_researched = electronics }
+			can_research = electronics
+		}
+		add_technology_progress = { progress = 6000 technology = electronics }
+	}
+	
+	option = {
+		name = utopia.slow_progress
+		add_modifier = {
+			name = slow_tech_progress
+			days = normal_modifier_time
+		}
+	}	
+}
+
 #research institute
 
 utopia_journal_prod.40 = {
@@ -527,10 +578,12 @@ utopia_journal_prod.40 = {
         	add_modifier = {
         		name = ut_research_institute_site_mod
         	}
+			start_building_construction = building_ut_research_institute
         }
         # show_as_tooltip = {
         # 	remove_modifier = ut_research_institute_found_mod
         # }
+		
 		add_journal_entry = {
 			type = ut_je_research_institute_construction
 			target = scope:ut_research_institute_site
@@ -550,6 +603,7 @@ utopia_journal_prod.40 = {
         	add_modifier = {
         		name = ut_research_institute_site_mod
         	}
+			start_building_construction = building_ut_research_institute
         }
         # show_as_tooltip = {
         # 	remove_modifier = ut_research_institute_found_mod
@@ -557,17 +611,6 @@ utopia_journal_prod.40 = {
 		add_journal_entry = {
 			type = ut_je_research_institute_construction
         	target = capital
-		}
-		if = {
-			limit = {
-				is_ai = yes
-			}
-			capital ={
-				create_building = {
-					building = building_ut_research_institute
-					level=1
-				}
-			}
 		}
 	}
 }

@@ -142,6 +142,7 @@
 	}
 }
 
+
 ut_law_monarchy_autocratic = {
 	group = lawgroup_governance_principles
 	parent = law_monarchy

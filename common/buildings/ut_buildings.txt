@@ -214,7 +214,7 @@ building_heavy_machinery_factory = {
 	ai_nationalization_desire = 0.25 # AI will generally not privatize steel mills due to importance for construction
 
 	unlocking_technologies = {
-		heavy_machinery_era_analog
+		arc_welding
 	}
 	
 	production_method_groups = {
@@ -320,7 +320,7 @@ building_software_company = {
 	ai_nationalization_desire = 0.25 # AI will generally not privatize steel mills due to importance for construction
 
 	unlocking_technologies = {
-		software
+		electronics
 	}
 	
 	production_method_groups = {
@@ -445,7 +445,7 @@ building_ut_research_institute = {
 	downsizeable = no
 
 	unlocking_technologies = { 
-		electronics
+		nuclear_power_research
 		ut_military_complex
 		compulsory_secondary_school
 	}
@@ -461,12 +461,14 @@ building_ut_research_institute = {
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 
+    
 	can_build_government = {
 		custom_tooltip = {
 			text = ut_research_institute_can_construct_tt
 			has_modifier = ut_research_institute_site_mod
 		}
 	}
+	
 	can_build_private = {
 		always = no
 	}
@@ -707,6 +709,7 @@ building_ut_power_grid = {
 
     production_method_groups = {
         pmg_ut_power_grid
+		pmg_ut_power_grid_operations
     }
     
     required_construction = construction_cost_medium
@@ -724,7 +727,7 @@ building_ut_power_grid = {
                     }
                 }
             }
-            add = 4000
+            add = 6000
         }
     }
 

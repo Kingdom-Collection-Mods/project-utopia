@@ -18,9 +18,10 @@
 	
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_paper_add = 20
+			goods_input_paper_add = 10
 			goods_input_telephones_add = 5
 			goods_input_computers_add = 2
+			goods_input_software_add = 1
 		}
 
 		level_scaled = {
@@ -29,6 +30,40 @@
 		}
 	}	
 }
+
+pm_internet_bureaucrats = {
+	texture = "gfx/interface/icons/production_method_icons/telephone_switchboards.dds"
+	unlocking_technologies = {
+		digital_tax_declaration
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_bureaucracy_add = 120
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_tax_capacity_add = 50
+		}		
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 10
+			goods_input_computers_add = 4
+			goods_input_software_add = 4
+			goods_input_internet_add = 1
+		}
+
+		level_scaled = {
+			building_employment_service_workers_add = 100
+			building_employment_clerks_add = 400
+		}
+	}	
+}
+
 
 pm_ut_industrial_port = {
 	texture = "gfx/interface/icons/production_method_icons/modern_port.dds"

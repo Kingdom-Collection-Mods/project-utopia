@@ -1,0 +1,25 @@
+﻿ut_new_dawn_start_era = {
+	default = ut_new_dawn_start_era_6
+
+	ut_new_dawn_start_era_6 = {
+	}
+	ut_new_dawn_start_era_5 = {
+		flag = ut_new_dawn_start_era_5
+	}
+
+	ut_new_dawn_start_era_4 = {
+		flag = ut_new_dawn_start_era_4
+	}
+	
+}
+
+ut_new_dawn_historical_focus = {
+	default = ut_new_dawn_historical_focus_yes
+
+	ut_new_dawn_historical_focus_yes = {
+	}
+
+	ut_new_dawn_historical_focus_no = {
+		flag = ut_new_dawn_historical_focus_no
+	}	
+}

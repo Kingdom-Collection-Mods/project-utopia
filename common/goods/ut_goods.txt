@@ -142,6 +142,7 @@ soft_drinks = {
 	traded_quantity = 5 # 250
 }
 
+#deprecated
 utopia_battleships = {
 	texture = "gfx/interface/icons/goods_icons/utopia_battleships.dds"
 	cost = 100

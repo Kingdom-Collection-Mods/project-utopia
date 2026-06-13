@@ -297,6 +297,17 @@ ut_has_new_dawn_progress_communist = {
 	}
 }
 
+ut_has_new_dawn_pressure_points = {
+	OR = {
+		AND = {
+			has_modifier = ut_new_dawn_core_democratic_mod
+			je:je_ut_new_dawn_democratic = {
+				"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" >= $VALUE$
+			}
+		}
+	}
+}
+
 ut_articles_mutual_accept_favorable_stance = {
 	OR = {
 		AND = {

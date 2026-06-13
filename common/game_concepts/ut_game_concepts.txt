@@ -49,11 +49,19 @@ concept_ut_nd_utopia = {
 	is_loading_tip = yes
 }
 concept_ut_nd_focus = {}
+
+concept_ut_nd_pressure = {}
+
 concept_ut_nd_stance = {
 	texture = "gfx/interface/icons/ai_attitude_icons/cooperative.dds"
 }
 
 concept_ut_research_institute = {
 	texture = "gfx/interface/icons/building_icons/research_institute.dds"
+	is_loading_tip = yes
+}
+
+concept_ut_nd_core_laws = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds"
 	is_loading_tip = yes
 }

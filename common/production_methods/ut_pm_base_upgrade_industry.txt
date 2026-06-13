@@ -35,7 +35,7 @@ pm_ut_industry_plastics = {
 	texture = "gfx/interface/icons/production_method_icons/ut_plastic_mass_production.dds"
 	
 	unlocking_technologies = {
-		plastics_polyester #todo: rework floatglasverfahren im machinery tree (industriell ab 60er)
+		plastics_polypropylene #todo: rework floatglasverfahren im machinery tree (industriell ab 60er)
 	}
 	
 	state_modifiers = {
@@ -193,6 +193,10 @@ pm_automated_bakery_software = {
 		software_motors_production
 	}
 
+	unlocking_production_methods = {
+		pm_pre_baked_dough_pieces
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -204,6 +208,7 @@ pm_automated_bakery_software = {
 			# profit = -400 (break-even when annual laborer wage > 8.32)
 			building_employment_laborers_add = -2500
 			building_employment_machinists_add = -500
+			building_employment_service_workers_add = -250
 		}
 	}
 }
@@ -278,7 +283,7 @@ pm_heavy_machinery_textile  = {
 	texture = "gfx/interface/icons/production_method_icons/ut_cloth_machinery.dds"
 	
 	unlocking_technologies = {
-		heavy_machinery_era_analog
+		plastics_polyester
 	}
 	
 	building_modifiers = {
@@ -401,6 +406,7 @@ pm_heavy_machinery_building_coal_mine = {
 			goods_input_electricity_add = 5
 			goods_input_heavy_machinery_add = 10
 			goods_input_tools_add = 10
+			goods_input_software_add = 1
 			
 			# output goods
 			goods_output_coal_add = 150
@@ -438,6 +444,7 @@ pm_heavy_machinery_building_iron_mine = {
 			goods_input_electricity_add = 5
 			goods_input_heavy_machinery_add = 10
 			goods_input_tools_add = 10
+			goods_input_software_add = 1
 			
 			# output goods
 			goods_output_iron_add = 140
@@ -581,6 +588,7 @@ pm_modern_automobiles = {
 			goods_input_electricity_add = 5
 			goods_input_heavy_machinery_add = 4
 			goods_input_aluminum_add = 5
+			goods_input_software_add = 1
 
 			# output goods
 			goods_output_automobiles_add = 70
@@ -653,6 +661,7 @@ pm_electronics_engines = {
 			goods_input_electronics_add = 10
 			goods_input_electricity_add = 20
 			goods_input_computers_add = 1
+			goods_input_software_add = 1
 			
 			# output goods
 			goods_output_engines_add = 155
@@ -689,7 +698,7 @@ pm_computers_engines = {
 			goods_input_oil_add = 30
 			goods_input_electronics_add = 10
 			goods_input_computers_add = 5
-			goods_input_software_add = 1
+			goods_input_software_add = 2
 			goods_input_electricity_add = 20
 			
 			# output goods
@@ -717,6 +726,7 @@ pm_oil_heavy_machinery_mine = {
 			# input goods
 			goods_input_heavy_machinery_add = 10
 			goods_input_electricity_add = 5
+			goods_input_software_add = 1
 			
 			# output goods
 			goods_output_oil_add = 140
@@ -827,6 +837,7 @@ pm_shopping_district = {
 			goods_input_heavy_machinery_add = 1
 			goods_input_computers_add = 1
 			goods_input_electricity_add = 2
+			goods_input_software_add = 1
 			goods_output_services_add = 105
 		}
 
@@ -853,7 +864,7 @@ pm_online_shopping = {
 			goods_input_steel_add = 2
 			goods_input_heavy_machinery_add = 1
 			goods_input_computers_add = 2
-			goods_input_software_add = 2
+			goods_input_software_add = 3
 			goods_input_electricity_add = 4
 			goods_output_services_add = 130
 		}
@@ -880,7 +891,7 @@ pm_ut_copper_streetlights = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_electricity_add = 6
-			goods_input_iron_add = 1
+			goods_input_electronics_add = 2
 			goods_output_services_add = 20
 			goods_output_internet_add = 20
 		}
@@ -912,11 +923,10 @@ pm_ut_fiber_streetlights = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_electricity_add = 6
-			goods_input_rare_earths_add = 1
-			goods_input_iron_add = 1
+			goods_input_electricity_add = 9
+			goods_input_electronics_add = 4
 			goods_output_services_add = 20
-			goods_output_internet_add = 50
+			goods_output_internet_add = 60
 		}
 
 		level_scaled = {
@@ -995,6 +1005,7 @@ pm_elastics_two = {
 	}
 
 	unlocking_production_methods = {
+		pm_electric_sewing_machines
 		pm_heavy_machinery_textile
 		pm_plastics_textile
 	}
@@ -1342,6 +1353,64 @@ ut_pm_soft_drinks = {
 			building_employment_shopkeepers_add = 200	# x2.0 = 400 laborer wages
 			building_employment_machinists_add = 300	# x1.5 = 750 laborer wages
 			building_employment_engineers_add = 200		# x3.0 = 600 laborer wages
+		}
+	}
+}
+
+
+pm_logging_machinery_equipment = {
+	texture = "gfx/interface/icons/production_method_icons/chainsaws.dds"
+	unlocking_technologies = {
+		trucks_era_analog
+	}
+	disallowing_laws = {
+		law_industry_banned
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_engines_add = 1
+			goods_input_oil_add = 4
+			goods_input_trucks_add = 1
+
+			goods_output_wood_add = 20
+			goods_output_hardwood_add = 10
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = -1500
+			building_employment_machinists_add = -250
+			building_employment_engineers_add = 250
+		}
+	}
+}
+
+pm_logging_heavy_machinery_equipment = {
+	texture = "gfx/interface/icons/production_method_icons/chainsaws.dds"
+	unlocking_technologies = {
+		trucks_era_digital
+	}
+	disallowing_laws = {
+		law_industry_banned
+		law_environment_protection_institute_three
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_heavy_machinery_add = 2
+			goods_input_oil_add = 4
+			goods_input_trucks_add = 4
+
+			goods_output_wood_add = 40
+			goods_output_hardwood_add = 20
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = -1500
+			building_employment_machinists_add = -250
+			building_employment_engineers_add = 250
 		}
 	}
 }

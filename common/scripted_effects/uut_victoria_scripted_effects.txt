@@ -13,7 +13,7 @@ ut_set_new_dawn_variables = {
 	set_variable = { name = ut_nd_communist_progress_from_focus value = 0 } #Final element in the progress bar. This is defined by various effects, and is based solely on scripted effects. This is how designers can manually grant ticking bonuses or maluses to this mechanic.
 	set_variable = { name = ut_nd_communist_progress_from_events value = 0 }
 
-	#Moderate Variables
+	#Democrat Variables
 	set_variable = { name = ut_nd_democrat_progress_from_characters value = 0 } 
 	set_variable = { name = ut_nd_democrat_progress_from_igs value = 0 }
 	set_variable = { name = ut_nd_democrat_progress_from_laws value = 0 } #These variables use the same scheme as the Communist ones, with the exception that Moderates derive from the sum of light/heavy industry building levels in France.
@@ -550,7 +550,6 @@ ut_clear_divided_new_dawn_variables = { #Clears all variables, to save memory/pe
 	remove_variable = ut_nd_fascist_progress_from_legitimacy 
 	remove_variable = ut_nd_fascist_progress_from_movements 
 	remove_variable = ut_nd_fascist_progress_from_focus 
-	remove_variable = ut_nd_fascist_progress_from_events
 
 	remove_variable = ig_weight 
 }
@@ -628,6 +627,159 @@ ut_add_new_dawn_core_progress = {
 	}
 }
 
+ut_new_dawn_common_pressure_progress_yearly = {
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy value = 0 }
+	if = {
+		limit = {
+			has_variable = je_ut_new_dawn_prev_average_sol
+			var:je_ut_new_dawn_prev_average_sol > 0
+		}
+		
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy
+			add = root.average_sol
+		}
+		
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy
+			subtract = var:je_ut_new_dawn_prev_average_sol
+		}
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy
+			divide = -0.3
+		}
+		#if it adds pressure, it is multiplied by 0.5x
+		if = {
+			limit = {
+				var:je_ut_new_dawn_common_pressure_progress_from_sol_yoy > 0
+			}
+			
+			change_variable = {
+				name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy
+				multiply = 0.5
+			}
+		}
+	}
+		
+	set_variable = { name = je_ut_new_dawn_prev_average_sol value = root.average_sol }
+}
+
+ut_new_dawn_common_pressure_progress_monthly = {
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_legitimacy value = 0 }
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_expected_sol value = 0 }
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_expected_sol_gap value = 0 }
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_core_progress value = 0 }
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_ruler_ideology value = 0 }
+
+	# Low legitimacy increases pressure.
+	change_variable = {
+		name = je_ut_new_dawn_common_pressure_progress_from_legitimacy
+		add = root.government_legitimacy
+	}
+	change_variable = {
+		name = je_ut_new_dawn_common_pressure_progress_from_legitimacy
+		subtract = 75
+	}
+	change_variable = {
+		name = je_ut_new_dawn_common_pressure_progress_from_legitimacy
+		divide = -25
+	}
+
+	# Gap between expected and actual SoL increases pressure.
+	set_variable = {
+		name = je_ut_new_dawn_common_pressure_utopia_sol
+		value = 50
+	}
+
+	if = {
+		limit = {
+			year > 1936
+		}
+		set_variable = {
+			name = je_ut_new_dawn_common_pressure_expected_sol
+			value = 10
+		}
+	}
+	else = {
+		set_variable = {
+			name = je_ut_new_dawn_common_pressure_expected_sol
+			value = 20
+		}
+	}
+
+	change_variable = {
+		name = je_ut_new_dawn_common_pressure_progress_from_expected_sol
+		add = root.average_sol
+	}
+	change_variable = {
+		name = je_ut_new_dawn_common_pressure_progress_from_expected_sol
+		subtract = var:je_ut_new_dawn_common_pressure_expected_sol
+	}
+	
+	
+	change_variable = {
+		name = je_ut_new_dawn_common_pressure_utopia_sol
+		subtract = var:je_ut_new_dawn_common_pressure_expected_sol
+	}
+
+	change_variable = {
+		name = je_ut_new_dawn_common_pressure_progress_from_expected_sol
+		divide = var:je_ut_new_dawn_common_pressure_utopia_sol 
+	}
+	change_variable = {
+		name = je_ut_new_dawn_common_pressure_progress_from_expected_sol
+		multiply = -0.5
+	}
+	
+	# Positive progress on the core ideology's progress bar reduces pressure.
+	if = {
+		limit = {
+			has_variable = je_ut_new_dawn_core_progress_diff
+			var:je_ut_new_dawn_core_progress_diff > 0
+		}
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_core_progress
+			add = var:je_ut_new_dawn_core_progress_diff
+		}
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_core_progress
+			multiply = -1
+		}
+	}
+
+	if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_democratic_mod
+			legitimacy > 50
+			ruler = {
+				ut_ideology_new_dawn_democrat_trigger = yes
+			}
+		}
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_ruler_ideology
+			add = -0.25
+		}
+	}
+	
+	if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_democratic_mod
+			legitimacy > 50
+			ruler = {
+				OR = {
+					ut_ideology_new_dawn_fascist_trigger = yes
+					ut_ideology_new_dawn_autocrat_trigger = yes
+					ut_ideology_new_dawn_communist_trigger = yes
+				}
+			}
+		}
+		change_variable = {
+			name = je_ut_new_dawn_common_pressure_progress_from_ruler_ideology
+			add = 0.5
+		}
+	}
+}
+
 ut_add_new_dawn_progress_autocratic = { 
 	je:je_ut_new_dawn_autocratic = {
 		add_progress = {
@@ -664,6 +816,20 @@ ut_add_new_dawn_progress_communist = {
 	}
 }
 
+
+ut_add_new_dawn_pressure_points = {
+	if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_democratic_mod
+		}
+		je:je_ut_new_dawn_democratic = {
+			add_progress = {
+				name = je_ut_new_dawn_pressure_points_bar
+				value = $VALUE$
+			}
+		}
+	}
+}
 
 REPLACE:set_promised_building_group = { #Note: ig_scope
 	# First perform arable land check and set variable for staple crops. This system can be expanded to check for other resources.

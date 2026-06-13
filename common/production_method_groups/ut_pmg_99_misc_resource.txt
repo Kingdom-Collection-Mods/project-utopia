@@ -16,14 +16,12 @@
 # 	}
 # }
 
-# INJECT:pmg_equipment = {
-# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
-# 	production_methods = {
-# 		pm_no_equipment
-# 		pm_steam_donkey_building_logging_camp
-# 		pm_chainsaws
-# 	}
-# }
+INJECT:pmg_equipment = {
+	production_methods = {
+		pm_logging_machinery_equipment
+		pm_logging_heavy_machinery_equipment
+	}
+}
 
 # INJECT:pmg_transportation_building_logging_camp = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
@@ -34,13 +32,11 @@
 # 	}
 # }
 
-# INJECT:pmg_base_building_rubber_plantation = {
-# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-# 	production_methods = {
-# 		default_building_rubber_plantation
-# 		automatic_irrigation_building_rubber_plantation
-# 	}
-# }
+INJECT:pmg_base_building_rubber_plantation = {
+	production_methods = {
+		smart_irrigation_building_rubber_plantation
+	}
+}
 
 INJECT:pmg_train_automation_building_rubber_plantation = {
 	production_methods = {

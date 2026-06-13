@@ -4,7 +4,8 @@ ut_new_dawn_fascist_focus = {
 	desc = "ut_new_dawn_fascist_focus_desc"
 
 	visible = {
-		ut_new_dawn_has_core_trigger = no
+		always = yes
+		# ut_new_dawn_has_core_trigger = no
 	}
 
 	possible = {
@@ -45,10 +46,11 @@ ut_new_dawn_fascist_focus = {
 			limit = {
 				has_modifier = je_ut_new_dawn_fascist_focus
 			}
-			add = 100
+			add = 25
 		}
 		if = {
 			limit = {
+				NOT = { has_game_rule = ut_new_dawn_historical_focus_no }
 				OR = {
 					c:GER ?= this
 					c:ITA ?= this
@@ -70,7 +72,7 @@ ut_new_dawn_fascist_focus = {
 					has_law = law_type:law_racial_segregation
 				}
 			}
-			add = 10
+			add = 5
 		}
 		if = {
 			limit = {
@@ -78,7 +80,7 @@ ut_new_dawn_fascist_focus = {
 					ut_ideology_new_dawn_fascist_trigger = yes
 				}
 			}
-			add = 40
+			add = 30
 		}
 		if = {
 			#Historically Germany, Italy, and Japan below in "ranking"?
@@ -91,7 +93,7 @@ ut_new_dawn_fascist_focus = {
 		if = {
 			#Red scare if not socialist them self?
 			limit = {
-				NOT = { has_law = law_type:law_multicultural }
+				NOT = { has_law = law_type:law_universal_suffrage }
 				NOT = { has_law = law_type:law_cooperative_ownership }
 				NOT = { has_law = law_type:law_command_economy }
 				any_rival_country = {
@@ -106,7 +108,7 @@ ut_new_dawn_fascist_focus = {
 		if = {
 			#Red scare if not socialist them self?
 			limit = {
-				NOT = { has_law = law_type:law_multicultural }
+				NOT = { has_law = law_type:law_universal_suffrage }
 				NOT = { has_law = law_type:law_cooperative_ownership }
 				NOT = { has_law = law_type:law_command_economy }
 				any_rival_country = {
@@ -126,7 +128,8 @@ ut_new_dawn_autocrat_focus = {
 	desc = "ut_new_dawn_autocrat_focus_desc"
 
 	visible = { 
-		ut_new_dawn_has_core_trigger = no
+		always = yes
+		# ut_new_dawn_has_core_trigger = no
 	}
 
 	possible = {
@@ -159,15 +162,15 @@ ut_new_dawn_autocrat_focus = {
 	}
 	ai_chance = {
 		value = 0
-		
 		if = {
 			limit = {
 				has_modifier = je_ut_new_dawn_autocrat_focus
 			}
-			add = 100
+			add = 25
 		}
 		if = {
 			limit = {
+				NOT = { has_game_rule = ut_new_dawn_historical_focus_no }
 				OR = {
 					c:AUS ?= this
 				}
@@ -188,7 +191,7 @@ ut_new_dawn_autocrat_focus = {
 					has_law = law_type:law_oligarchy
 				}
 			}
-			add = 40
+			add = 30
 		}
 		if = {
 			limit = {
@@ -196,7 +199,7 @@ ut_new_dawn_autocrat_focus = {
 					ut_ideology_new_dawn_autocrat_trigger = yes
 				}
 			}
-			add = 20
+			add = 30
 		}
 		if = {
 			limit = {
@@ -213,7 +216,8 @@ ut_new_dawn_democrat_focus = {
 	desc = "ut_new_dawn_democrat_focus_desc"
 
 	visible = { 
-		ut_new_dawn_has_core_trigger = no
+		always = yes
+		# ut_new_dawn_has_core_trigger = no
 	}
 
 	possible = {
@@ -250,10 +254,11 @@ ut_new_dawn_democrat_focus = {
 			limit = {
 				has_modifier = je_ut_new_dawn_democrat_focus
 			}
-			add = 100
+			add = 25
 		}
 		if = {
 			limit = {
+				NOT = { has_game_rule = ut_new_dawn_historical_focus_no }
 				c:USA ?= this
 				NOT = { exists = c:CSA }
 			}
@@ -261,6 +266,7 @@ ut_new_dawn_democrat_focus = {
 		}
 		if = {
 			limit = {
+				NOT = { has_game_rule = ut_new_dawn_historical_focus_no }
 				c:GBR ?= this
 				exists = c:GER
 			}
@@ -268,6 +274,7 @@ ut_new_dawn_democrat_focus = {
 		}
 		if = {
 			limit = {
+				NOT = { has_game_rule = ut_new_dawn_historical_focus_no }
 				c:GBR ?= this
 			}
 			add = 20
@@ -277,29 +284,29 @@ ut_new_dawn_democrat_focus = {
 			limit = {
 				global_country_ranking > 5
 			}
+			add = 10
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_universal_suffrage
+			}
+			add = 40
+		}
+		
+		if = {
+			limit = {
+				has_law = law_type:law_census_voting
+			}
 			add = 20
 		}
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_universal_suffrage
-					has_law = law_type:law_census_voting
-				}
-			}
-			add = 40
-		}
-		if = {
-			limit = {
-				OR = {
-					has_law = law_type:law_landed_voting
-					has_law = law_type:law_wealth_voting
-				}
-				OR = {
 					has_law = law_type:law_presidential_republic
 					has_law = law_type:law_parliamentary_republic
 				}
 			}
-			add = 10
+			add = 20
 		}
 		if = {
 			limit = {
@@ -307,7 +314,7 @@ ut_new_dawn_democrat_focus = {
 					ut_ideology_new_dawn_democrat_trigger = yes
 				}
 			}
-			add = 20
+			add = 30
 		}
 		if = {
 			#Fascist scare if democratic them self?
@@ -352,7 +359,8 @@ ut_new_dawn_communist_focus = {
 	desc = "ut_new_dawn_communist_focus_desc"
 
 	visible = { 
-		ut_new_dawn_has_core_trigger = no
+		always = yes
+		# ut_new_dawn_has_core_trigger = no
 	}
 
 	possible = {
@@ -391,10 +399,11 @@ ut_new_dawn_communist_focus = {
 			limit = {
 				has_modifier = je_ut_new_dawn_communist_focus
 			}
-			add = 100
+			add = 25
 		}
 		if = {
 			limit = {
+				NOT = { has_game_rule = ut_new_dawn_historical_focus_no }
 				c:RUS ?= this
 			}
 			add = 40
@@ -408,7 +417,20 @@ ut_new_dawn_communist_focus = {
 			}
 			add = 40
 		}
-		
+		if = {
+			limit = {
+				has_law = law_type:law_council_republic
+			}
+			add = 20
+		}
+		if = {
+			#to balance with fascism
+			limit = {
+				global_country_ranking <= 5
+				country_rank >= rank_value:great_power
+			}
+			add = 5
+		}
 		if = {
 			#Fascist scare if communist them self?
 			limit = {
@@ -432,7 +454,7 @@ ut_new_dawn_communist_focus = {
 					ut_ideology_new_dawn_communist_trigger = yes
 				}
 			}
-			add = 40
+			add = 30
 		}
 	}
 }

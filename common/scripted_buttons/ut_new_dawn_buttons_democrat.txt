@@ -18,6 +18,10 @@ je_ut_new_dawn_democratic_spirit = {
 			has_law_or_variant = law_type:law_parliamentary_republic
 			has_law_or_variant = law_type:law_presidential_republic
 			has_law = law_type:ut_law_monarchy_democratic
+			
+			active_law:lawgroup_governance_principles ?= {
+				has_amendment = amendment_type:amendment_council_republic_democratic
+			}
 		}
 		has_law_or_variant = law_type:law_universal_suffrage
 		NOT = {
@@ -164,7 +168,7 @@ je_ut_new_dawn_democratic_cultural_values = {
 	}
 
 	effect = {
-		custom_tooltip = ut_influence_new_dawn_major_power_unlock_tt
+		
 		every_interest_group = {
 			limit = {
 				OR = {

@@ -164,7 +164,7 @@ utopia_journal_society.4 = { #Early Civil Aviation Others
 	placement = ROOT
 
 	title = early_civil_aviation
-	desc = early_civil_aviation
+	desc = je_early_civil_aviation_reason_event_desc
 	flavor = je_early_civil_aviation_reason
 
 	immediate = {
@@ -197,7 +197,7 @@ utopia_journal_society.5 = { #Modern Civil Aviation Others
 	placement = ROOT
 
 	title = modern_civil_aviation
-	desc = modern_civil_aviation
+	desc = je_modern_civil_aviation_reason_event_desc
 	flavor = je_modern_civil_aviation_reason
 
 	immediate = {

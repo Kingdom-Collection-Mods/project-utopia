@@ -1,0 +1,111 @@
+﻿je_ut_software_points_bar_era_6 = {
+	name = "je_ut_software_points_bar_era_6"
+	desc = "je_ut_software_points_bar_era_6_desc"
+
+	#for color
+	default_green = yes
+
+	monthly_progress = {
+		add = {
+			desc = "base_value"
+			value = 0.5
+		}
+		add = {
+			desc = "je_ut_software_points_bar_progress_buildings_era_6"
+			value = root.var:je_ut_software_points_bar_progress_buildings_era_6
+		}
+		if = {
+			limit = {
+				NOT = { has_building = building_ut_research_institute }
+			}
+			multiply = {
+				desc = "je_ut_software_points_bar_progress_no_research_institute"
+				value = 0.5
+			}
+		}
+		if = {
+			limit = {
+				has_technology_researched = computers
+			}
+			add = {
+				desc = "computers"
+				value = 100
+			}
+		}
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 100
+
+}
+
+
+je_ut_software_points_bar_era_7 = {
+	name = "je_ut_software_points_bar_era_7"
+	desc = "je_ut_software_points_bar_era_7_desc"
+
+	#for color
+	default_green = yes
+
+	monthly_progress = {
+		add = {
+			desc = "base_value"
+			value = -1
+		}
+
+		add = {
+			desc = "je_ut_software_points_bar_progress_buildings_era_7"
+			value = root.var:je_ut_software_points_bar_progress_buildings_era_7
+		}
+
+		if = {
+			limit = {
+				NOT = { has_building = building_ut_research_institute }
+			}
+			add = {
+				desc = "je_ut_software_points_bar_progress_no_research_institute"
+				value = -100
+			}
+		}
+		if = {
+			limit = {
+				has_technology_researched = internet
+			}
+			add = {
+				desc = "internet"
+				value = 100
+			}
+		}
+	}
+
+	start_value = 200
+	min_value = 0
+	max_value = 1000
+
+}
+
+je_ut_software_points_bar_era_8 = {
+	name = "je_ut_software_points_bar_era_8"
+	desc = "je_ut_software_points_bar_era_8_desc"
+
+	#for color
+	default_green = yes
+
+	monthly_progress = {
+		
+		add = {
+			desc = "base_value"
+			value = -100
+		}
+		add = {
+			desc = "je_ut_software_points_bar_progress_buildings_era_8"
+			value = root.var:je_ut_software_points_bar_progress_buildings_era_8
+		}
+	}
+
+	start_value = 2000
+	min_value = 0
+	max_value = 10000
+
+}

@@ -4,7 +4,7 @@ ship_type_capital_battleship = {
 
 	ship_group = ship_group_capital_ships
 
-	base_construction_cost = 220
+	base_construction_cost = 200
 
 	can_be_flagship = yes
 
@@ -62,6 +62,59 @@ ship_type_capital_battleship = {
 
 	ai_weight = 2
 
-	use_modifications = no
+    modifications = {
+        ship_mod_slot_armor = {
+            ship_mod_super_dreadnought_armor_light
+            ship_mod_super_dreadnought_armor_medium
+            ship_mod_super_dreadnought_armor_high
+        }
+        ship_mod_slot_guns = {
+            ship_mod_super_dreadnought_guns_light
+            ship_mod_super_dreadnought_guns_medium
+            ship_mod_super_dreadnought_guns_high
+        }
+        ship_mod_slot_propulsion = {
+            ship_mod_super_dreadnought_propulsion_light
+            ship_mod_super_dreadnought_propulsion_medium
+            ship_mod_super_dreadnought_propulsion_high
+        }
+        ship_mod_slot_range = {
+            ship_mod_super_dreadnought_range_light
+            ship_mod_super_dreadnought_range_medium
+            ship_mod_super_dreadnought_range_high
+        }
+        ship_mod_slot_utility_1 = {
+            utility_mod_patrol_boats
+            utility_mod_landing_skiffs
+            utility_mod_fire_suppression
+            utility_mod_extended_sick_bay
+            utility_mod_torpedo_nets
+            utility_mod_fire_control_system
+            utility_mod_advanced_explosives
+            utility_mod_camouflage
+        }
+        ship_mod_slot_utility_2 = {
+            utility_mod_patrol_boats
+            utility_mod_landing_skiffs
+            utility_mod_fire_suppression
+            utility_mod_extended_sick_bay
+            utility_mod_torpedo_nets
+            utility_mod_range_finder
+            utility_mod_fire_control_system
+            utility_mod_advanced_explosives
+            utility_mod_camouflage
+        }
+        ship_mod_slot_utility_3 = {
+            utility_mod_patrol_boats
+            utility_mod_landing_skiffs
+            utility_mod_fire_suppression
+            utility_mod_extended_sick_bay
+            utility_mod_torpedo_nets
+            utility_mod_range_finder
+            utility_mod_fire_control_system
+            utility_mod_advanced_explosives
+            utility_mod_camouflage
+        }
+    }
 }
 

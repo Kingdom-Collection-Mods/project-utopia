@@ -9,6 +9,7 @@ INJECT:pmg_base_building_government_administration = {
 
 	production_methods = {
 		pm_computer_bureaucrats
+		pm_internet_bureaucrats
 	}
 }
 

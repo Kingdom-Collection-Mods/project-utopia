@@ -4,6 +4,7 @@
 
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress >= 100
 			var:je_ut_new_dawn_core_progress_diff >= 0
 		}
@@ -14,6 +15,7 @@
 
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress < 10
 			var:je_ut_new_dawn_core_progress_diff < 0
 		}
@@ -23,6 +25,7 @@
 	
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			#probably some action happened like activating a milestone
 			var:je_ut_new_dawn_core_progress_diff < -4
 		}
@@ -31,6 +34,7 @@
 
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress_diff < -2
 		}
 
@@ -39,6 +43,7 @@
 
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress_diff < -1
 		}
 
@@ -47,6 +52,7 @@
 
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress_diff < -0.7
 		}
 
@@ -55,6 +61,7 @@
 	
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress_diff < -0.4
 		}
 
@@ -63,6 +70,7 @@
 	
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress_diff < 0.1
 			var:je_ut_new_dawn_core_progress_diff >  -0.1
 		}
@@ -72,6 +80,7 @@
 	
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress_diff < 0.4
 		}
 
@@ -80,6 +89,7 @@
 	
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress_diff < 0.6
 		}
 
@@ -88,6 +98,7 @@
 	
 	text = {
 		trigger = {
+			has_variable = je_ut_new_dawn_core_progress_diff
 			var:je_ut_new_dawn_core_progress_diff < 1
 		}
 
@@ -158,6 +169,43 @@ ut_new_dawn_phase_1_trend = {
 
 }
 
+ut_new_dawn_phase_1_focus = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+			has_modifier = je_ut_new_dawn_democrat_focus
+		}
+
+		localization_key = concept_ut_nd_democrat_core
+	}
+
+	text = {
+		trigger = {
+			has_modifier = je_ut_new_dawn_autocrat_focus
+		}
+
+		localization_key = concept_ut_nd_autocrat_core
+	}
+	
+	text = {
+		trigger = {
+			has_modifier = je_ut_new_dawn_fascist_focus
+		}
+		localization_key = concept_ut_nd_fascist_core
+	}
+
+	text = {
+		trigger = {
+			has_modifier = je_ut_new_dawn_communist_focus
+		}
+		localization_key = concept_ut_nd_communist_core
+	}
+	text = {
+		localization_key = ut_pm_research_institute_no_focus
+	}
+}
 ut_new_dawn_ideology_status = {
 	type = country
 	random_valid = no
@@ -216,6 +264,44 @@ ut_new_dawn_ideology_status = {
 		localization_key = ut_new_dawn_ideology_status_new_dawn_ongoing
 	}
 
+}
+
+ut_new_dawn_pressure_status = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+			ut_has_new_dawn_pressure_points = {
+				VALUE = 90
+			}
+		}
+
+		localization_key = ut_new_dawn_pressure_status_very_bad
+	}
+
+	text = {
+		trigger = {
+			ut_has_new_dawn_pressure_points = {
+				VALUE = 50
+			}
+		}
+
+		localization_key = ut_new_dawn_pressure_status_bad
+	}
+
+	text = {
+		trigger = {
+			ut_has_new_dawn_pressure_points = {
+				VALUE = 25
+			}
+		}
+
+		localization_key = ut_new_dawn_pressure_status_neutral
+	}	
+	text = {
+		localization_key = ut_new_dawn_pressure_status_good
+	}
 }
 
 ut_utopia_enabled_on_game_started_loc = {

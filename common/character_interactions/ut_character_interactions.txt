@@ -517,7 +517,7 @@ REPLACE:grant_command_to_agitator = {
 # 		# Cannot exile pure commanders, we have the retire interaction for that
 # 		OR = {
 # 			has_role = politician
-# 			has_role = agitator
+# 			has_role_of_type = agitator
 # 		}
 # 	}
 
@@ -533,7 +533,7 @@ REPLACE:grant_command_to_agitator = {
 # 		is_busy = no
 # 		trigger_if = {
 # 			limit = {
-# 				has_role = agitator
+# 				has_role_of_type = agitator
 # 			}
 
 # 			political_movement ?= { is_insurrectionary = no }
@@ -658,7 +658,7 @@ REPLACE:grant_command_to_agitator = {
 # 		hidden_effect = {
 # 			if = {
 # 				limit = {
-# 					NOT = { has_role = agitator }
+# 					NOT = { has_role_of_type = agitator }
 # 				}
 # 				add_character_role = agitator
 # 			}
@@ -917,7 +917,7 @@ REPLACE:grant_command_to_agitator = {
 
 # 			if = { # Be less inclined to toss out politicians
 # 				limit = {
-# 					NOT = { has_role = agitator }
+# 					NOT = { has_role_of_type = agitator }
 # 				}
 # 				multiply = 0.25
 # 			}
@@ -1283,7 +1283,7 @@ REPLACE:grant_command_to_agitator = {
 
 # 	potential = {
 # 		is_in_exile_pool = no
-# 		has_role = agitator
+# 		has_role_of_type = agitator
 # 		NOT = { has_role = general }
 # 		NOT = { has_role = admiral }
 # 		NOT = { has_role = politician }

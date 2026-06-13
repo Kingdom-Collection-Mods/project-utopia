@@ -70,7 +70,7 @@ combat_unit_type_armored_infantry = {
     }
 
     formation_modifier = {
-        military_formation_movement_speed_mult = 0.1    #new
+        military_formation_army_movement_speed_mult = 0.1    #new
     }
 
 	unlocking_technologies = { ut_armored_infantry }
@@ -112,7 +112,7 @@ combat_unit_type_task_force_infantry = {
     }
 
     formation_modifier = {
-        military_formation_movement_speed_mult = 0.2 #+0.1
+        military_formation_army_movement_speed_mult = 0.2 #+0.1
     }
 
 	unlocking_technologies = { task_forces }
@@ -169,7 +169,7 @@ combat_unit_type_motorized_artillery = {
 
     formation_modifier = {
         military_formation_mobilization_speed_mult = -0.2
-        military_formation_movement_speed_mult = 0 #-0.2
+        military_formation_army_movement_speed_mult = 0 #-0.2
     }
 
 	unlocking_technologies = { ut_anti_tank_guided }
@@ -215,7 +215,7 @@ combat_unit_type_rocket_artillery = {
 
     formation_modifier = {
         military_formation_mobilization_speed_mult = -0.2
-        military_formation_movement_speed_mult = 0.2 #+0.2
+        military_formation_army_movement_speed_mult = 0.2 #+0.2
     }
 
 	unlocking_technologies = { ut_anti_tank_guided_software }
@@ -338,11 +338,11 @@ combat_unit_type_advanced_marines = {
     }
 
     battle_modifier = {
-        unit_offense_add = 50
-        unit_defense_add = 60
-        unit_morale_loss_add = 8
+        unit_offense_add = 60
+        unit_defense_add = 70
+        unit_morale_loss_add = 4
         # no naval invasion efficiency loss (vanilla marines)
-        unit_naval_invasion_efficiency_mult = 0.1
+        unit_naval_invasion_efficiency_mult = 0.2
     }
 
 	unlocking_technologies = { heavy_ships_rockets_base }

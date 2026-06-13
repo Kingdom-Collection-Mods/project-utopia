@@ -93,7 +93,7 @@ ut_research_institute_found = {
 
 	possible = {
 		OR = {
-			has_technology_researched = electronics
+			has_technology_researched = nuclear_power_research
 			has_technology_researched = ut_military_complex
 			has_technology_researched = compulsory_secondary_school			
 		}
@@ -178,9 +178,7 @@ ut_research_nuclear_power = {
 				is_building_type = building_power_plant
 				level >= 20
 			}
-			any_scope_building = {
-				is_building_type = building_ut_research_institute
-			}
+			has_building = building_ut_research_institute
 		}
 		OR = {
 			has_global_highest_innovation = yes
@@ -502,11 +500,59 @@ ut_private_construction_amend = {
 	}
 }
 
+ut_democrat_enact_law_variants = {
+	is_shown = {
+		has_law = law_type:law_council_republic
+		active_law:lawgroup_governance_principles ?= {
+			NOT = {
+				has_amendment = amendment_type:amendment_council_republic_democratic
+			}
+		}
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_100
+			je:je_ut_new_dawn_democratic = { 
+				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= 100
+			}
+		}
+	}
+
+	possible = {
+		has_law = law_type:law_council_republic
+	}
+
+	when_taken = {
+		ig:ig_petty_bourgeoisie ?= {
+			save_scope_as = petty_bourgeoisie_ig
+		}
+		active_law:lawgroup_governance_principles ?= {
+			add_amendment = {
+				type = amendment_council_republic_democratic
+				sponsor = scope:petty_bourgeoisie_ig
+			}
+		}
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_democratic = {
+				add_progress = { value = -50 name = je_ut_new_dawn_democratic_points_bar }
+			}
+		}
+	}
+	ai_chance = {
+		value = 1
+	}
+}
+
 ut_communist_enact_law_variants = {
 	is_shown = {
 		OR = {
 			has_variable = je_ut_communist_one_communist_party_done
 			has_variable = je_ut_communist_world_revolution_done
+		}
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_100
+			je:je_ut_new_dawn_communist = { 
+				"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" >= 100
+			}
 		}
 	}
 
@@ -526,6 +572,64 @@ ut_communist_enact_law_variants = {
 				has_variable = je_ut_communist_one_communist_party_done
 			}
 			activate_law = law_type:ut_law_council_presidium
+		}
+		
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_communist = {
+				add_progress = { value = -50 name = je_ut_new_dawn_communist_points_bar }
+			}
+		}
+	}
+	ai_chance = {
+		value = 1
+	}
+}
+
+je_ut_software_era_6_add_decision = {
+	is_shown = {
+		has_technology_researched = electronics
+		NOT = { has_variable = je_ut_software_era_6_done }
+	}
+
+	possible = {
+		has_technology_researched = electronics
+		NOT = { has_journal_entry = je_ut_software_era_6 }
+	}
+
+	when_taken = {
+		add_journal_entry = {
+			type = je_ut_software_era_6
+		}
+	}
+	ai_chance = {
+		value = 1
+	}	
+}
+je_ut_new_dawn_core_abilities_add_decision = {
+	is_shown = {
+		OR = {
+			has_journal_entry = je_ut_new_dawn_autocratic
+			has_journal_entry = je_ut_new_dawn_democratic
+			has_journal_entry = je_ut_new_dawn_fascist
+			has_journal_entry = je_ut_new_dawn_communist
+		}
+		NOT = { has_journal_entry = je_ut_new_dawn_core_abilities }
+	}
+
+	possible = {
+		OR = {
+			has_journal_entry = je_ut_new_dawn_autocratic
+			has_journal_entry = je_ut_new_dawn_democratic
+			has_journal_entry = je_ut_new_dawn_fascist
+			has_journal_entry = je_ut_new_dawn_communist
+		}
+		NOT = { has_journal_entry = je_ut_new_dawn_core_abilities }
+	}
+
+	when_taken = {
+		add_journal_entry = {
+			type = je_ut_new_dawn_core_abilities
 		}
 	}
 	ai_chance = {

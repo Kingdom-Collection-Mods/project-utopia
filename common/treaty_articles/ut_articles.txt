@@ -1227,6 +1227,7 @@ ut_democracy_article = {
 			NOT = { has_law = law_type:law_isolationism }
 			NOT = { has_modifier = ut_new_dawn_core_fascist_mod }
 			NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+			is_subject = no
 		}
 	}
 
@@ -1795,6 +1796,10 @@ ut_communism_article = {
 		NOT = { has_law = law_type:law_isolationism }
 		has_modifier = ut_new_dawn_core_communist_mod
 		scope:other_country = {
+			OR = {
+				is_subject = no
+				is_subject_of = root	
+			}
 			NOT = { has_law = law_type:law_isolationism }
 			NOT = { has_modifier = ut_new_dawn_core_fascist_mod }
 			NOT = { has_law_or_variant = law_type:law_council_republic }
