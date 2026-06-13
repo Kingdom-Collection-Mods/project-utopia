@@ -709,7 +709,7 @@ je_ut_new_dawn_pressure_points_bar = {
 		}
 	}
 
-	start_value = 25
+	start_value = 20
 	min_value = 0
 	max_value = 100
 }	
