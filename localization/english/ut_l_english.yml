@@ -2209,6 +2209,6 @@
 
  rule_ut_new_dawn_historical_focus: "Historical $concept_ut_nd_focus$"
  setting_ut_new_dawn_historical_focus_yes: "Enabled"
- setting_ut_new_dawn_historical_focus_yes_desc: "Selected AI nations have a higher chance to select their historical $concept_ut_nd_focus$"
+ setting_ut_new_dawn_historical_focus_yes_desc: "Selected AI nations have a higher chance to select their historical [concept_ut_nd_focus]."
  setting_ut_new_dawn_historical_focus_no: "Disabled"
- setting_ut_new_dawn_historical_focus_no_desc: "All AI nations have the same chance to select their focus.\n@warning! Project Utopia is tested with historical focuses enabled."
+ setting_ut_new_dawn_historical_focus_no_desc: "All AI nations have the same chance to select their focus.\n@warning! Project Utopia is tested with historical [concept_ut_nd_focus] enabled."
