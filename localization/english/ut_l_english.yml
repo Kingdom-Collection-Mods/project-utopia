@@ -498,10 +498,10 @@
  je_ut_new_dawn_pressure_points_bar: "Pressure"
  je_ut_new_dawn_pressure_points_bar_desc: "Pressure: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
 
- ut_new_dawn_pressure_status_good: "[concept_ut_nd_pressure]: #g low#!"
- ut_new_dawn_pressure_status_neutral: "[concept_ut_nd_pressure]: neutral"
- ut_new_dawn_pressure_status_bad: "[concept_ut_nd_pressure]: #r high#!"
- ut_new_dawn_pressure_status_very_bad: "[concept_ut_nd_pressure]: #r very high#!"
+ ut_new_dawn_pressure_status_good: "[concept_ut_nd_pressure]: #g Low#!"
+ ut_new_dawn_pressure_status_neutral: "[concept_ut_nd_pressure]: Neutral"
+ ut_new_dawn_pressure_status_bad: "[concept_ut_nd_pressure]: #r High#!"
+ ut_new_dawn_pressure_status_very_bad: "[concept_ut_nd_pressure]: #r Very High#!"
 
  concept_ut_new_dawn: "New Dawn"
  concept_ut_new_dawn_desc: "Technological and cultural progress ushers in a [concept_ut_new_dawn] of political change. The [concept_ut_nd_path_to_utopia] may be paved. Solidify your nation's core ideology. The ideology determines the direction your nation will take.\nChoose between [concept_ut_nd_fascist_core], [concept_ut_nd_autocrat_core], [concept_ut_nd_democrat_core], and [concept_ut_nd_communist_core] [concept_ut_nd_path_to_utopia]."
@@ -2058,8 +2058,8 @@
  modern_civil_aviation_modifier_others: "Modern Civil Aviation"
 
  #backwards compatibility
- je_ut_new_dawn_core_abilities: "New Dawn Edicts"
- je_ut_new_dawn_core_abilities_reason: "So be it."
+ je_ut_new_dawn_core_abilities: "New Dawn: Abilities"
+ je_ut_new_dawn_core_abilities_reason: "$concept_ut_nd_abilities_desc$"
  je_ut_new_dawn_core_abilities_add_decision: "Add New Dawn Core Abilities"
  je_ut_new_dawn_core_abilities_add_decision_desc: "Unlock the New Dawn Core [concept_ut_nd_abilities]."
 
