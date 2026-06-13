@@ -628,25 +628,53 @@ ut_add_new_dawn_core_progress = {
 }
 
 ut_new_dawn_common_pressure_progress_yearly = {
-	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy value = 0 }
 	if = {
 		limit = {
-			has_variable = je_ut_new_dawn_prev_average_sol
-			var:je_ut_new_dawn_prev_average_sol > 0
+			has_variable = je_ut_new_dawn_this_average_sol
+			var:je_ut_new_dawn_this_average_sol > 0
 		}
+		set_variable = { name = je_ut_new_dawn_prev_average_sol value = je_ut_new_dawn_this_average_sol }
+	}
 		
+	set_variable = { name = je_ut_new_dawn_this_average_sol value = root.average_sol }
+}
+
+ut_new_dawn_common_pressure_progress_monthly = {
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy value = 0 }
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_legitimacy value = 0 }
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_expected_sol value = 0 }
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_expected_sol_gap value = 0 }
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_core_progress value = 0 }
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_ruler_ideology value = 0 }
+
+	if = {
+		limit = {
+			has_variable = je_ut_new_dawn_this_average_sol
+		}
 		change_variable = {
 			name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy
 			add = root.average_sol
 		}
 		
-		change_variable = {
-			name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy
-			subtract = var:je_ut_new_dawn_prev_average_sol
+		if = {
+			limit = {
+				has_variable = je_ut_new_dawn_prev_average_sol
+				var:je_ut_new_dawn_prev_average_sol > 0
+			}
+			change_variable = {
+				name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy
+				subtract = var:je_ut_new_dawn_prev_average_sol
+			}
+		}
+		else = {
+			change_variable = {
+				name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy
+				subtract = var:je_ut_new_dawn_this_average_sol
+			}
 		}
 		change_variable = {
 			name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy
-			divide = -0.3
+			divide = -0.5
 		}
 		#if it adds pressure, it is multiplied by 0.5x
 		if = {
@@ -659,17 +687,29 @@ ut_new_dawn_common_pressure_progress_yearly = {
 				multiply = 0.5
 			}
 		}
-	}
 		
-	set_variable = { name = je_ut_new_dawn_prev_average_sol value = root.average_sol }
-}
-
-ut_new_dawn_common_pressure_progress_monthly = {
-	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_legitimacy value = 0 }
-	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_expected_sol value = 0 }
-	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_expected_sol_gap value = 0 }
-	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_core_progress value = 0 }
-	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_ruler_ideology value = 0 }
+		#max/min -5/+5
+		if = {
+			limit = {
+				var:je_ut_new_dawn_common_pressure_progress_from_sol_yoy < -10
+			}
+			
+			set_variable = {
+				name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy
+				value = -10
+			}
+		}
+		else_if = {
+			limit = {
+				var:je_ut_new_dawn_common_pressure_progress_from_sol_yoy > 10
+			}
+			
+			set_variable = {
+				name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy
+				value = 10
+			}
+		}
+	}
 
 	# Low legitimacy increases pressure.
 	change_variable = {
