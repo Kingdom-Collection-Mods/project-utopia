@@ -1945,11 +1945,11 @@
  goods_output_rare_earths_add_desc: "The amount of @rare_earths! Rare Earths produced by buildings"
  goods_output_computers_add: "@computers! Computers output"
  goods_output_computers_add_desc: "The amount of @computers! Computers produced by buildings"
- goods_output_computers_mult: "@computers! $computers$ Output"
+ goods_output_computers_mult: "@computers! $computers$ output"
  goods_output_computers_mult_desc: "A bonus or penalty for the production of @computers! $computers$."
  goods_output_software_add: "@software! Software output"
  goods_output_software_add_desc: "The amount of @software! Software produced by buildings"
- goods_output_software_mult: "@software! $software$ Output"
+ goods_output_software_mult: "@software! $software$ output"
  goods_output_software_mult_desc: "A bonus or penalty for the production of @software! $software$."
  goods_output_internet_add: "@internet! Internet output"
  goods_output_internet_add_desc: "The amount of @internet! Internet produced by buildings"
@@ -2107,6 +2107,7 @@
 
  je_ut_software_era_7_required_points_tt: "Requires at least #v 1000#! $je_ut_software_points_bar_era_7$"
  je_ut_software_era_7_required_points_spend_tt: "Consumes #v 1000#! $je_ut_software_points_bar_era_7$"
+ je_ut_software_era_7_technology_open_source_tt: "Open Source Expertise"
  je_ut_software_era_7_technology_open_sourced_tt: "Expertise has been open-sourced"
  je_ut_software_era_7_technology_not_open_sourced_tt: "Expertise has #r not#! been open-sourced"
 
