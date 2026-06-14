@@ -23,6 +23,7 @@ ut_fund_opposition = {
 			has_journal_entry = je_ut_new_dawn
 			ut_new_dawn_has_core_trigger = yes
 		}
+		highest_overlapping_interest_tier = { target = scope:target_country value >= 1 }
 	}
 
 	accept_effect = {

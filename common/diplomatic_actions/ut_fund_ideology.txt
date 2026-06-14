@@ -21,6 +21,7 @@ ut_fund_ideology = {
 			is_revolutionary = no
 			has_journal_entry = je_ut_new_dawn
 		}
+		highest_overlapping_interest_tier = { target = scope:target_country value >= 1 }
 	}
 
 	pact = {

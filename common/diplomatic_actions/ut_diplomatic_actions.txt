@@ -97,6 +97,7 @@ ut_influence_new_dawn_major_power = {
 				NOT = { has_variable = je_ut_new_dawn_done }
 			}
 		}
+		highest_overlapping_interest_tier = { target = scope:target_country value >= 1 }
 	}
 	
 	possible = {
@@ -467,6 +468,7 @@ ut_new_dawn_start_propaganda_campaign = {
 				scope:target_country = { has_modifier = ut_new_dawn_core_autocratic_mod }
 			}
 		}
+		highest_overlapping_interest_tier = { target = scope:target_country value >= 1 }
 	}
 	
 	possible = {
@@ -595,6 +597,7 @@ ut_share_nuclear_power_research = {
 	}
 	
 	possible = {
+		highest_overlapping_interest_tier = { target = scope:target_country value >= 3 }
 	}
 	
 	accept_effect = {
