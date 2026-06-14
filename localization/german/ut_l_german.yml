@@ -493,7 +493,7 @@
  
 
  je_ut_new_dawn_democratic: "Demokratischer Aufbruch"
- je_ut_new_dawn_democratic_reason: "Das Volk fordert Mitsprache, Transparenz und freie Wahlen. Überall im Land bilden sich neue Parteien, Gewerkschaften gewinnen an Einfluss, und Proteste für Bürgerrechte füllen die Straßen.\n\nOb dieser Aufbruch in eine stabile Demokratie führt oder im Widerstand der alten Eliten erstickt, liegt nun in deiner Hand. Wirst du Reformen zulassen - oder versuchen, die alte Ordnung mit aller Macht zu bewahren?\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')] \n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n #italic - [Concept('concept_ut_nd_democrat_core', 'Demokratisch')] [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_democratic_reason: "Das Volk fordert Mitsprache, Transparenz und freie Wahlen. Überall im Land bilden sich neue Parteien, Gewerkschaften gewinnen an Einfluss, und Proteste für Bürgerrechte füllen die Straßen.\n\nOb dieser Aufbruch in eine stabile Demokratie führt oder im Widerstand der alten Eliten erstickt, liegt nun in deiner Hand. Wirst du Reformen zulassen - oder versuchen, die alte Ordnung mit aller Macht zu bewahren?\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n #italic - [Concept('concept_ut_nd_democrat_core', 'Demokratisch')] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_points_bar: "Fortschrittspunkte"
  je_ut_new_dawn_points_bar_desc: "Fortschrittspunkte: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
  concept_ut_nd_progress_points: "Fortschrittspunkte"
