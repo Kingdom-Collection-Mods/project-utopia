@@ -744,7 +744,9 @@ ut_je_nuclear_power_plant_construction = {
 					NOT = { has_building = building_ut_nuclear_power_plant }
 				}
 			}
-			start_building_construction = building_ut_nuclear_power_plant
+			scope:target = {
+				start_building_construction = building_ut_nuclear_power_plant
+			}
 		}
 	}
 
