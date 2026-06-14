@@ -633,7 +633,7 @@ ut_new_dawn_common_pressure_progress_yearly = {
 			has_variable = je_ut_new_dawn_this_average_sol
 			var:je_ut_new_dawn_this_average_sol > 0
 		}
-		set_variable = { name = je_ut_new_dawn_prev_average_sol value = je_ut_new_dawn_this_average_sol }
+		set_variable = { name = je_ut_new_dawn_prev_average_sol value = var:je_ut_new_dawn_this_average_sol }
 	}
 		
 	set_variable = { name = je_ut_new_dawn_this_average_sol value = root.average_sol }

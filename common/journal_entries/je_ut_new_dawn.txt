@@ -874,6 +874,7 @@ je_ut_new_dawn_autocratic = {
 
 	on_yearly_pulse = {
 		effect = {
+			ut_new_dawn_common_pressure_progress_yearly = yes
 			set_variable = {
 				name = je_ut_new_dawn_core_prev_progress_yearly
 				value = var:je_ut_new_dawn_core_progress_yearly
@@ -1128,6 +1129,7 @@ je_ut_new_dawn_fascist = {
 
 	on_yearly_pulse = {
 		effect = {
+			ut_new_dawn_common_pressure_progress_yearly = yes
 			set_variable = {
 				name = je_ut_new_dawn_core_prev_progress_yearly
 				value = var:je_ut_new_dawn_core_progress_yearly
@@ -1343,6 +1345,7 @@ je_ut_new_dawn_communist = {
 
 	on_yearly_pulse = {
 		effect = {
+			ut_new_dawn_common_pressure_progress_yearly = yes
 			#debug deprecated, was only bc was set wrong on immediate before 14-06-26
 			if = {
 				limit = {
