@@ -259,14 +259,21 @@ je_ut_software_era_7_open_source = {
 				has_modifier = je_ut_software_era_7_2_relational_database_mod
 				custom_tooltip = {
 					text = je_ut_software_era_7_technology_not_open_sourced_tt
-					NOT = { has_global_variable = je_ut_software_era_7_2_relational_database_foss_var }
+					OR = {
+						NOT = { has_global_variable = je_ut_software_era_7_1_operating_system_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_7_2_relational_database_foss_var }
+					}
 				}
 			}
 			AND = {
 				has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
 				custom_tooltip = {
 					text = je_ut_software_era_7_technology_not_open_sourced_tt
-					NOT = { has_global_variable = je_ut_software_era_7_3_object_oriented_language_foss_var }
+					OR = {
+						NOT = { has_global_variable = je_ut_software_era_7_1_operating_system_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_7_2_relational_database_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_7_3_object_oriented_language_foss_var }
+					}
 				}
 			}
 		}
