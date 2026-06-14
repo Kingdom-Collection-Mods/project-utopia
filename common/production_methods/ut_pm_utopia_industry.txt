@@ -1534,6 +1534,7 @@ ut_pm_research_institute_one = {
 	country_modifiers = {
 		workforce_scaled = {
 			country_weekly_innovation_max_add = 25
+			country_weekly_innovation_add = 50
 		}
 	}
 
@@ -1571,6 +1572,7 @@ ut_pm_research_institute_two = {
 	country_modifiers = {
 		workforce_scaled = {
 			country_weekly_innovation_max_add = 50
+			country_weekly_innovation_add = 100
 		}
 	}
 
@@ -1609,6 +1611,7 @@ ut_pm_research_institute_three = {
 	country_modifiers = {
 		workforce_scaled = {
 			country_weekly_innovation_max_add = 100
+			country_weekly_innovation_add = 100
 		}
 	}
 
