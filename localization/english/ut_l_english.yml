@@ -493,7 +493,7 @@
  
 
  je_ut_new_dawn_democratic: "Democratic Awakening"
- je_ut_new_dawn_democratic_reason: "The people demand participation, transparency, and free elections. Across the country, new parties are forming, trade unions are gaining influence, and protests for civil rights are filling the streets. \n Whether this awakening leads to a stable democracy or is crushed by the old elites is now in your hands. Will you allow reform - or try to preserve the old order by any means necessary?\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')] \n\n #italic - [Concept('concept_ut_nd_democrat_core', 'Democratic')] [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_democratic_reason: "The people demand participation, transparency, and free elections. Across the country, new parties are forming, trade unions are gaining influence, and protests for civil rights are filling the streets. \n Whether this awakening leads to a stable democracy or is crushed by the old elites is now in your hands. Will you allow reform - or try to preserve the old order by any means necessary?\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n #italic - [Concept('concept_ut_nd_democrat_core', 'Democratic')] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_points_bar: "Progress Points"
  je_ut_new_dawn_points_bar_desc: "Progress Points: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
  concept_ut_nd_progress_points: "Progress Points"
@@ -539,7 +539,7 @@
  je_ut_new_dawn_democratic_final_desc: "The culmination of democratic ideals and practices, leading to a harmonious and just society."
 
  je_ut_new_dawn_autocratic: "Autocratic System"
- je_ut_new_dawn_autocratic_reason: "The people demand order, stability, and strong leadership. \n #italic - [Concept('concept_ut_nd_autocrat_core', 'Autocracies')] have no [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_autocratic_reason: "The people demand order, stability, and strong leadership.\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n #italic - [Concept('concept_ut_nd_autocrat_core', 'Autocracies')] have no [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_autocratic_complete_condition_tt: "There is no Autocratic Utopia, the entry can not be completed. They have access to repeatable actions instead."
 
  je_ut_new_dawn_emergency_powers: "Emergency Powers"
@@ -602,7 +602,7 @@
  je_ut_new_dawn_fascist_reason: "Society has been reorganized. National identity and the nation prioritize the common good over individual interests. Critical voices are viewed as a threat, while the media and institutions are brought into line.\n\nWhether you reinforce this course and impose your will on the nations, or whether humanity's hope is restored, is now up to you.\n#italic - [Concept('concept_ut_nd_fascist_core', 'Fascist')]#!"
 
  je_ut_new_dawn_communist: "Communism"
- je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads. \n #italic - [Concept('concept_ut_nd_communist_core', 'Communist')] [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets.\nWhere this awakening leads is now up to you.\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n #italic - [Concept('concept_ut_nd_communist_core', 'Communist')] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_communist_complete_condition_tt: "Never (wip)"
 
  ut_new_dawn_autocrat_focus: "Autocratic Focus"
@@ -624,7 +624,7 @@
 #Core Ideology concepts
 
  concept_ut_nd_fascist_core: "Fascism"
- concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticPlayType('dp_ut_fascist_annex_war').GetName] (Any lower ranked)\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_fascist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others.\n\n#i Development Status: Not playable - Preview#!"
+ concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticPlayType('dp_ut_fascist_annex_war').GetName] (Any lower ranked)\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_fascist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others.\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n#i Development Status: Not playable - Preview#!"
  ut_nd_fascist_stance: "Favorable: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nOppose: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]"
 
 

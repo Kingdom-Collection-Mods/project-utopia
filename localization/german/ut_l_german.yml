@@ -493,7 +493,7 @@
  
 
  je_ut_new_dawn_democratic: "Demokratischer Aufbruch"
- je_ut_new_dawn_democratic_reason: "Das Volk fordert Mitsprache, Transparenz und freie Wahlen. Überall im Land bilden sich neue Parteien, Gewerkschaften gewinnen an Einfluss, und Proteste für Bürgerrechte füllen die Straßen.\n\nOb dieser Aufbruch in eine stabile Demokratie führt oder im Widerstand der alten Eliten erstickt, liegt nun in deiner Hand. Wirst du Reformen zulassen - oder versuchen, die alte Ordnung mit aller Macht zu bewahren?\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')] \n\n #italic - [Concept('concept_ut_nd_democrat_core', 'Demokratisch')] [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_democratic_reason: "Das Volk fordert Mitsprache, Transparenz und freie Wahlen. Überall im Land bilden sich neue Parteien, Gewerkschaften gewinnen an Einfluss, und Proteste für Bürgerrechte füllen die Straßen.\n\nOb dieser Aufbruch in eine stabile Demokratie führt oder im Widerstand der alten Eliten erstickt, liegt nun in deiner Hand. Wirst du Reformen zulassen - oder versuchen, die alte Ordnung mit aller Macht zu bewahren?\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')] \n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n #italic - [Concept('concept_ut_nd_democrat_core', 'Demokratisch')] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_points_bar: "Fortschrittspunkte"
  je_ut_new_dawn_points_bar_desc: "Fortschrittspunkte: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
  concept_ut_nd_progress_points: "Fortschrittspunkte"
@@ -539,7 +539,7 @@
  je_ut_new_dawn_democratic_final_desc: "Der Höhepunkt demokratischer Ideale und Praktiken, der zu einer harmonischen und gerechten Gesellschaft führt."
 
  je_ut_new_dawn_autocratic: "Autokratisches System"
- je_ut_new_dawn_autocratic_reason: "Die Nation verlangt nach Ordnung, Stabilität und starker Führung. \n #italic - [Concept('concept_ut_nd_autocrat_core', 'Autokratien')] haben keinen [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_autocratic_reason: "Die Nation verlangt nach Ordnung, Stabilität und starker Führung. \n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n #italic - [Concept('concept_ut_nd_autocrat_core', 'Autokratien')] haben keinen [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_autocratic_complete_condition_tt: "Es gibt keine Autokratische Utopie, der Eintrag kann nicht abgeschlossen werden. Stattdessen gibt es wiederholbare Aktionen."
 
  je_ut_new_dawn_emergency_powers: "Notstandsbefugnisse"
@@ -599,10 +599,10 @@
  je_ut_communist_world_revolution_effect_tt: "Schaltet [GetLawType('ut_law_international_council').GetName] frei"
 
  je_ut_new_dawn_fascist: "Faschismus"
- je_ut_new_dawn_fascist_reason: "Die Gesellschaft wurde neu geordnet. Nationale Identität und die Nation, stellen das Gemeinwohl über Einzelinteressen. Kritische Stimmen gelten als Gefahr, während Medien und Institutionen auf Linie gebracht werden.\n\nOb du diesen Kurs festigst und den Nationen deinen Willen aufzwingst oder ob die Menschlichkeit zurück kommt, liegt nun bei dir.\n #italic - [Concept('concept_ut_nd_fascist_core', 'Faschistisch')]#!"
+ je_ut_new_dawn_fascist_reason: "Die Gesellschaft wurde neu geordnet. Nationale Identität und die Nation, stellen das Gemeinwohl über Einzelinteressen. Kritische Stimmen gelten als Gefahr, während Medien und Institutionen auf Linie gebracht werden.\n\nOb du diesen Kurs festigst und den Nationen deinen Willen aufzwingst oder ob die Menschlichkeit zurück kommt, liegt nun bei dir.\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n #italic - [Concept('concept_ut_nd_fascist_core', 'Faschistisch')]#!"
 
  je_ut_new_dawn_communist: "Kommunismus"
- je_ut_new_dawn_communist_reason: "Die Menschen fordern Gleichheit, Gerechtigkeit und das Ende der Klassen. Im ganzen Land bilden sich Arbeiterräte, Gewerkschaften gewinnen an Einfluss und Proteste für soziale Rechte füllen die Straßen.\n\nWohin dieses Erwachen führt, liegt nun bei dir.\n #italic - [Concept('concept_ut_nd_communist_core', 'Kommunismus')] [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_communist_reason: "Die Menschen fordern Gleichheit, Gerechtigkeit und das Ende der Klassen. Im ganzen Land bilden sich Arbeiterräte, Gewerkschaften gewinnen an Einfluss und Proteste für soziale Rechte füllen die Straßen.\n\nWohin dieses Erwachen führt, liegt nun bei dir.\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n #italic - [Concept('concept_ut_nd_communist_core', 'Kommunismus')] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_communist_complete_condition_tt: "Never (wip)"
 
  ut_new_dawn_autocrat_focus: "Autokratischer Fokus"
