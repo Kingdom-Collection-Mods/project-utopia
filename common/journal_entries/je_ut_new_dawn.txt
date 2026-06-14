@@ -1,4 +1,4 @@
-je_ut_new_dawn = {
+﻿je_ut_new_dawn = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
@@ -341,14 +341,14 @@ je_ut_new_dawn = {
 			1 = event_new_dawn.102   #Social cohesion
 			1 = event_new_dawn.103   #Treasury surplus
 			1 = event_new_dawn.104   #Cultural awakening
-			2 = event_new_dawn.105   #Spread Ideology Petition
+			1 = event_new_dawn.105   #Spread Ideology Petition
 			2 = event_new_dawn.106   #Core/Secondary Law Petition (AI hard progresses on core laws)
 
 			#Generic Bad (>50 pressure)
 			10 = event_new_dawn.120   #Approval crisis
 			1 = event_new_dawn.121   #Core progress setback
 			1 = event_new_dawn.122   #Emergency spending
-			5 = event_new_dawn.123   #Innovation disruption
+			2 = event_new_dawn.123   #Innovation disruption
 			1 = event_new_dawn.124   #Pressure
 
 			#Generic Very Bad (>75 pressure)
