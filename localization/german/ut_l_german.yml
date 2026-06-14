@@ -371,11 +371,14 @@
 
  je_ut_new_dawn_critical_lower_bound_fail_tt: "Hat #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! [concept_ut_nd_progress_points]"
  je_ut_new_dawn_critical_lower_bound_fail_pressure_tt: "Hat #r 50#! [concept_ut_nd_pressure] Druck"
-
- je_ut_new_dawn_common_pressure_progress_from_sol_yoy: "[concept_sol] yearly change"
- je_ut_new_dawn_common_pressure_progress_from_legitimacy: "expected [concept_legitimacy]"
- je_ut_new_dawn_common_pressure_progress_from_expected_sol: "expected [concept_sol]"
- je_ut_new_dawn_common_pressure_progress_from_core_progress: "[concept_ut_nd_progress_points] gained"
+ je_ut_new_dawn_common_pressure_progress_from_sol_yoy: "[concept_sol] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_sol_yoy_tooltip yearly change#!#!"
+ je_ut_new_dawn_common_pressure_progress_from_sol_yoy_tooltip: "Every 1 yearly [concept_sol] increase decreases pressure by 2 points. $concept_sol$ loss increases pressure. Last year's [concept_sol]: [Country.MakeScope.Var('je_ut_new_dawn_prev_average_sol').GetValue]."
+ je_ut_new_dawn_common_pressure_progress_from_legitimacy: "#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_legitimacy_tooltip expected#!#! [concept_legitimacy]"
+ je_ut_new_dawn_common_pressure_progress_from_legitimacy_tooltip: "100 [concept_legitimacy] reduces pressure by 1.\n75   [concept_legitimacy] is neutral.\n0     [concept_legitimacy] increases pressure by 3."
+ je_ut_new_dawn_common_pressure_progress_from_expected_sol: "#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_expected_sol_tooltip expected#!#! [concept_sol]"
+ je_ut_new_dawn_common_pressure_progress_from_expected_sol_tooltip: "Expected [concept_sol] starts at 0 and is increased by Society [concept_technology]. 50 [concept_sol] reduces pressure by 1."
+ je_ut_new_dawn_common_pressure_progress_from_core_progress: "[concept_ut_nd_progress_points] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_core_progress_tooltip gained#!#!"
+ je_ut_new_dawn_common_pressure_progress_from_core_progress_tooltip: "Every 1 [concept_ut_nd_progress_points] gained decreases pressure by 0.5 points."
 
  ut_new_dawn_communist_focus: "Kommunistischer Fokus"
  ut_new_dawn_communist_focus_desc: "#italic Vorschau: Enthält eine Basisimplementierung von [concept_ut_nd_abilities] und [concept_ut_nd_milestones].#!"
@@ -673,7 +676,7 @@
  concept_ut_nd_focus_desc: "Wenn der #b Neuer Aufbruch#! Journal-Eintrag aktiv ist, wird Fokus für die Neuer Aufbruch-Ideologie verfügbar. Der Fokus auf eine Ideologie erhöht die Wahrscheinlichkeit, dass sie dominant wird. Wenn die Ideologie gefestigt wird, ist der Fokus auch aktiv."
 
  concept_ut_nd_pressure: "Druck"
- concept_ut_nd_pressure_desc: "Druck"
+ concept_ut_nd_pressure_desc: "Druck repräsentiert den Grad der Reibung, dem eine Nation ausgesetzt ist. Er misst die Stärke der internen Kräfte, die versuchen, die Ideologie Ihres Landes zu untergraben und es zu einer neuen politischen Identität zu drängen.\n\nWenn aktiv, können Ereignisse auftreten:\n- Druck <25: Positive Ereignisse können auftreten\n- Druck >50: Negative Ereignisse können auftreten\n- Druck >75: Sehr negative Ereignisse können auftreten\n\n#b KI-Nationen haben keinen [concept_ut_nd_pressure] und erleben keine Druckereignisse.#!"
 
  concept_ut_nd_stance: "Haltung"
  concept_ut_nd_stance_desc: "Jede Ideologie hat eine Haltung gegenüber anderen Ideologien. Die Haltung beeinflusst die Akzeptanz des Beitritts und Verbleibs in einem Machtblock sowie die meisten neuen Project Utopia-Aktionen. Work in progress."
@@ -2109,13 +2112,14 @@
 
  je_ut_software_era_7_required_points_tt: "Erfordert mindestens #v 1000#! $je_ut_software_points_bar_era_7$"
  je_ut_software_era_7_required_points_spend_tt: "Verbraucht #v 1000#! $je_ut_software_points_bar_era_7$"
+ je_ut_software_era_7_technology_open_source_tt: "Open Source Expertise freigegeben"
  je_ut_software_era_7_technology_open_sourced_tt: "Expertise wurde als Open Source freigegeben"
  je_ut_software_era_7_technology_not_open_sourced_tt: "Expertise wurde #r nicht#! als Open Source freigegeben"
 
  je_ut_software_era_8: "Software-Expertise: Ära 8"
  je_ut_software_era_8_reason: "Skaliere Software-Ökosysteme durch moderne Plattform-, Cloud- und Eigentumsparadigmen."
  je_ut_software_points_bar_era_8: "Software-Expertise"
- je_ut_software_points_bar_era_8_desc: "Software-Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/10000)"
+ je_ut_software_points_bar_era_8_desc: "Software-Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/10.000)"
 
  je_ut_software_era_8_1_version_control: "Versionskontrolle"
  je_ut_software_era_8_1_version_control_desc: "Versionskontrollsysteme ermöglichen kollaborative Entwicklung, sicherere Releases und schnellere Iterationen."
