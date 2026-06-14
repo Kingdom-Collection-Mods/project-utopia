@@ -10,9 +10,14 @@
 			desc = "base_value"
 			value = 0.5
 		}
-		add = {
-			desc = "je_ut_software_points_bar_progress_buildings_era_6"
-			value = root.var:je_ut_software_points_bar_progress_buildings_era_6
+		if = {
+			limit = {
+				has_variable = je_ut_software_points_bar_progress_buildings_era_6
+			}
+			add = {
+				desc = "je_ut_software_points_bar_progress_buildings_era_6"
+				value = root.var:je_ut_software_points_bar_progress_buildings_era_6
+			}
 		}
 		if = {
 			limit = {
@@ -54,9 +59,14 @@ je_ut_software_points_bar_era_7 = {
 			value = -1
 		}
 
-		add = {
-			desc = "je_ut_software_points_bar_progress_buildings_era_7"
-			value = root.var:je_ut_software_points_bar_progress_buildings_era_7
+		if = {
+			limit = {
+				has_variable = je_ut_software_points_bar_progress_buildings_era_7
+			}
+			add = {
+				desc = "je_ut_software_points_bar_progress_buildings_era_7"
+				value = root.var:je_ut_software_points_bar_progress_buildings_era_7
+			}
 		}
 
 		if = {
@@ -98,9 +108,14 @@ je_ut_software_points_bar_era_8 = {
 			desc = "base_value"
 			value = -100
 		}
-		add = {
-			desc = "je_ut_software_points_bar_progress_buildings_era_8"
-			value = root.var:je_ut_software_points_bar_progress_buildings_era_8
+		if = {
+			limit = {
+				has_variable = je_ut_software_points_bar_progress_buildings_era_8
+			}
+			add = {
+				desc = "je_ut_software_points_bar_progress_buildings_era_8"
+				value = root.var:je_ut_software_points_bar_progress_buildings_era_8
+			}
 		}
 	}
 

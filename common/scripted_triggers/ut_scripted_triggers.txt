@@ -305,6 +305,24 @@ ut_has_new_dawn_pressure_points = {
 				"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" >= $VALUE$
 			}
 		}
+		AND = {
+			has_modifier = ut_new_dawn_core_fascist_mod
+			je:je_ut_new_dawn_fascist = {
+				"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" >= $VALUE$
+			}
+		}
+		AND = {
+			has_modifier = ut_new_dawn_core_communist_mod
+			je:je_ut_new_dawn_communist = {
+				"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" >= $VALUE$
+			}
+		}
+		AND = {
+			has_modifier = ut_new_dawn_core_autocratic_mod
+			je:je_ut_new_dawn_autocratic = {
+				"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" >= $VALUE$
+			}
+		}
 	}
 }
 

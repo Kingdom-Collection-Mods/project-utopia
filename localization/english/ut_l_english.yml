@@ -371,10 +371,14 @@
  je_ut_new_dawn_critical_lower_bound_fail_tt: "Has #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! [concept_ut_nd_progress_points]"
  je_ut_new_dawn_critical_lower_bound_fail_pressure_tt: "Has #r 50#! [concept_ut_nd_pressure] Pressure"
 
- je_ut_new_dawn_common_pressure_progress_from_sol_yoy: "[concept_sol] yearly change"
- je_ut_new_dawn_common_pressure_progress_from_legitimacy: "expected [concept_legitimacy]"
- je_ut_new_dawn_common_pressure_progress_from_expected_sol: "expected [concept_sol]"
- je_ut_new_dawn_common_pressure_progress_from_core_progress: "[concept_ut_nd_progress_points] gained"
+ je_ut_new_dawn_common_pressure_progress_from_sol_yoy: "[concept_sol] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_sol_yoy_tooltip yearly change#!#!"
+ je_ut_new_dawn_common_pressure_progress_from_sol_yoy_tooltip: "Every 1 yearly [concept_sol] increase decreases pressure by 2 points. $concept_sol$ loss increases pressure. Last year's [concept_sol]: [Country.MakeScope.Var('je_ut_new_dawn_prev_average_sol').GetValue|1]"
+ je_ut_new_dawn_common_pressure_progress_from_legitimacy: "#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_legitimacy_tooltip expected#!#! [concept_legitimacy]"
+ je_ut_new_dawn_common_pressure_progress_from_legitimacy_tooltip: "100 [concept_legitimacy] reduces pressure by 1.\n75   [concept_legitimacy] is neutral.\n0     [concept_legitimacy] increases pressure by 3."
+ je_ut_new_dawn_common_pressure_progress_from_expected_sol: "#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_expected_sol_tooltip expected#!#! [concept_sol]"
+ je_ut_new_dawn_common_pressure_progress_from_expected_sol_tooltip: "Expected [concept_sol] is [Country.MakeScope.Var('je_ut_new_dawn_common_pressure_expected_sol').GetValue] and is increased by Society [concept_technology]. 50 [concept_sol] reduces pressure by 1."
+ je_ut_new_dawn_common_pressure_progress_from_core_progress: "[concept_ut_nd_progress_points] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_core_progress_tooltip gained#!#!"
+ je_ut_new_dawn_common_pressure_progress_from_core_progress_tooltip: "Every 1 [concept_ut_nd_progress_points] gained decreases pressure by 0.5 points."
 
  ut_new_dawn_communist_focus: "Communist Focus"
  ut_new_dawn_communist_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities] and [concept_ut_nd_milestones].#!"
@@ -489,7 +493,7 @@
  
 
  je_ut_new_dawn_democratic: "Democratic Awakening"
- je_ut_new_dawn_democratic_reason: "The people demand participation, transparency, and free elections. Across the country, new parties are forming, trade unions are gaining influence, and protests for civil rights are filling the streets. \n Whether this awakening leads to a stable democracy or is crushed by the old elites is now in your hands. Will you allow reform - or try to preserve the old order by any means necessary?\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')] \n\n #italic - [Concept('concept_ut_nd_democrat_core', 'Democratic')] [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_democratic_reason: "The people demand participation, transparency, and free elections. Across the country, new parties are forming, trade unions are gaining influence, and protests for civil rights are filling the streets. \n Whether this awakening leads to a stable democracy or is crushed by the old elites is now in your hands. Will you allow reform - or try to preserve the old order by any means necessary?\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n #italic - [Concept('concept_ut_nd_democrat_core', 'Democratic')] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_points_bar: "Progress Points"
  je_ut_new_dawn_points_bar_desc: "Progress Points: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
  concept_ut_nd_progress_points: "Progress Points"
@@ -535,7 +539,7 @@
  je_ut_new_dawn_democratic_final_desc: "The culmination of democratic ideals and practices, leading to a harmonious and just society."
 
  je_ut_new_dawn_autocratic: "Autocratic System"
- je_ut_new_dawn_autocratic_reason: "The people demand order, stability, and strong leadership. \n #italic - [Concept('concept_ut_nd_autocrat_core', 'Autocracies')] have no [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_autocratic_reason: "The people demand order, stability, and strong leadership.\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n #italic - [Concept('concept_ut_nd_autocrat_core', 'Autocracies')] have no [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_autocratic_complete_condition_tt: "There is no Autocratic Utopia, the entry can not be completed. They have access to repeatable actions instead."
 
  je_ut_new_dawn_emergency_powers: "Emergency Powers"
@@ -598,7 +602,7 @@
  je_ut_new_dawn_fascist_reason: "Society has been reorganized. National identity and the nation prioritize the common good over individual interests. Critical voices are viewed as a threat, while the media and institutions are brought into line.\n\nWhether you reinforce this course and impose your will on the nations, or whether humanity's hope is restored, is now up to you.\n#italic - [Concept('concept_ut_nd_fascist_core', 'Fascist')]#!"
 
  je_ut_new_dawn_communist: "Communism"
- je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets. \n Whether this awakening leads. \n #italic - [Concept('concept_ut_nd_communist_core', 'Communist')] [concept_ut_nd_path_to_utopia]#!"
+ je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets.\nWhere this awakening leads is now up to you.\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n #italic - [Concept('concept_ut_nd_communist_core', 'Communist')] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_communist_complete_condition_tt: "Never (wip)"
 
  ut_new_dawn_autocrat_focus: "Autocratic Focus"
@@ -620,7 +624,7 @@
 #Core Ideology concepts
 
  concept_ut_nd_fascist_core: "Fascism"
- concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticPlayType('dp_ut_fascist_annex_war').GetName] (Any lower ranked)\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_fascist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others.\n\n#i Development Status: Not playable - Preview#!"
+ concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticPlayType('dp_ut_fascist_annex_war').GetName] (Any lower ranked)\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_fascist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others.\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n#i Development Status: Not playable - Preview#!"
  ut_nd_fascist_stance: "Favorable: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nOppose: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]"
 
 
@@ -672,7 +676,7 @@
  concept_ut_nd_focus_desc: "When the #b New Dawn#! journal entry is active, focus on the New Dawn ideology becomes available. Focusing on an ideology makes it much more likely to become dominant. If the ideology becomes entrenched, the focus also remains active."
 
  concept_ut_nd_pressure: "Pressure"
- concept_ut_nd_pressure_desc: "Pressure represents the degree of friction a nation faces. It measures the strength of internal forces attempting to erode your country's ideology, pushing it toward a new political identity.\n\nIf active, events can happen:\n- Pressure <25: Positive events can happen\n- Pressure >50: Negative events can happen\n- Pressure >75: Very negative events can happen"
+ concept_ut_nd_pressure_desc: "Pressure represents the degree of friction a nation faces. It measures the strength of internal forces attempting to erode your country's ideology, pushing it toward a new political identity.\n\nIf active, events can happen:\n- Pressure <25: Positive events can happen\n- Pressure >50: Negative events can happen\n- Pressure >75: Very negative events can happen\n\n#b AI nations do not have [concept_ut_nd_pressure] and do not experience pressure events.#!"
 
  concept_ut_nd_stance: "Stance"
  concept_ut_nd_stance_desc: "Each ideology has a stance towards other ideologies. The stance affects acceptance of joining and staying in a power bloc, and most new Project Utopia actions. Work in progress."
@@ -1945,11 +1949,11 @@
  goods_output_rare_earths_add_desc: "The amount of @rare_earths! Rare Earths produced by buildings"
  goods_output_computers_add: "@computers! Computers output"
  goods_output_computers_add_desc: "The amount of @computers! Computers produced by buildings"
- goods_output_computers_mult: "@computers! $computers$ Output"
+ goods_output_computers_mult: "@computers! $computers$ output"
  goods_output_computers_mult_desc: "A bonus or penalty for the production of @computers! $computers$."
  goods_output_software_add: "@software! Software output"
  goods_output_software_add_desc: "The amount of @software! Software produced by buildings"
- goods_output_software_mult: "@software! $software$ Output"
+ goods_output_software_mult: "@software! $software$ output"
  goods_output_software_mult_desc: "A bonus or penalty for the production of @software! $software$."
  goods_output_internet_add: "@internet! Internet output"
  goods_output_internet_add_desc: "The amount of @internet! Internet produced by buildings"
@@ -2107,13 +2111,14 @@
 
  je_ut_software_era_7_required_points_tt: "Requires at least #v 1000#! $je_ut_software_points_bar_era_7$"
  je_ut_software_era_7_required_points_spend_tt: "Consumes #v 1000#! $je_ut_software_points_bar_era_7$"
+ je_ut_software_era_7_technology_open_source_tt: "Open Source Expertise"
  je_ut_software_era_7_technology_open_sourced_tt: "Expertise has been open-sourced"
  je_ut_software_era_7_technology_not_open_sourced_tt: "Expertise has #r not#! been open-sourced"
 
  je_ut_software_era_8: "Software Expertise: Era 8"
  je_ut_software_era_8_reason: "Scale software ecosystems through modern platform, cloud, and ownership paradigms."
  je_ut_software_points_bar_era_8: "Software Expertise"
- je_ut_software_points_bar_era_8_desc: "Software Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/10000)"
+ je_ut_software_points_bar_era_8_desc: "Software Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/10,000)"
 
  je_ut_software_era_8_1_version_control: "Version Control"
  je_ut_software_era_8_1_version_control_desc: "Version control systems enable collaborative development, safer releases, and rapid iteration."
@@ -2160,6 +2165,9 @@
  utopia_mod.2.t: "Securing a Technological Edge"
  utopia_mod.2.d: "Through unofficial channels, your administration gains access to an overwhelming influx of innovation. Though far from legitimate, this shortcut offers a glimpse into the future — one you can now shape with unfair advantage."
  utopia_mod.2.f: "What is progress, if not the mastery of time itself? While others debate ethics and equality, we have pierced the veil of possibility. With this unprecedented surge in innovation, we leapfrog generations of slow, bureaucratic development. Let history judge us — or let there be no history, only the brilliance of tomorrow, written in circuits and steel, not ink and parchment. Utopia is not given. It is taken."
+ utopia_mod.2.a: "Cheat yourself"
+ utopia_mod.2.b: "Cheat all AI"
+ utopia_mod.2.c: "Cheat [concept_great_power] AI"
  ut_tech_preview_cheat_disable_tt: "Deactivates the cheat permanently"
  ut_tech_preview_cheat_research_modifier: "Forbidden Technologies"
 

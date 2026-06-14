@@ -737,6 +737,19 @@ ut_je_nuclear_power_plant_construction = {
 
 	group = je_group_technology
 
+	immediate = {
+		if = {
+			limit = {
+				scope:target = {
+					NOT = { has_building = building_ut_nuclear_power_plant }
+				}
+			}
+			scope:target = {
+				start_building_construction = building_ut_nuclear_power_plant
+			}
+		}
+	}
+
 	complete = {
 		scope:target = {
 			any_scope_building = {

@@ -577,7 +577,7 @@ building_renewable_power_plant = {
 	city_type = farm
 
 	unlocking_technologies = {
-		heavy_machinery_era_analog_two
+		heavy_machinery_era_digital
 	}
 
 	production_method_groups = {
@@ -644,7 +644,7 @@ building_offshore_wind_farm = {
 	city_type = port
 
 	unlocking_technologies = {
-		heavy_machinery_era_digital
+		heavy_machinery_industry
 	}
 
 	production_method_groups = {

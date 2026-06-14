@@ -60,10 +60,35 @@ utopia_mod.2 = {
 		default_option = yes
 	}
 	option = {
-		name = utopia.cheat
+		name = utopia_mod.2.a
 		add_modifier = {
 			name = ut_tech_preview_cheat_research_modifier
-			days = 182
+			days = 180
+		}
+	}
+	option = {
+		name = utopia_mod.2.b
+		every_country = {
+			limit = {
+				is_ai = yes
+			}
+			add_modifier = {
+				name = ut_tech_preview_cheat_research_modifier
+				days = 90
+			}
+		}
+	}
+	option = {
+		name = utopia_mod.2.c
+		every_country = {
+			limit = {
+				is_ai = yes
+				country_rank >= rank_value:great_power
+			}
+			add_modifier = {
+				name = ut_tech_preview_cheat_research_modifier
+				days = 90
+			}
 		}
 	}
 	option = {
@@ -381,7 +406,7 @@ utopia_mod.7 = {
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	icon = "gfx/interface/icons/event_icons/event_raiding.dds"
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	title = ut_open_source_era_7_title
 	desc = ut_open_source_era_7_desc
@@ -391,25 +416,38 @@ utopia_mod.7 = {
 	option = {
 		trigger = {
 			NOT = { has_global_variable = je_ut_software_era_7_1_operating_system_foss_var }
+			OR = {
+				has_modifier = je_ut_software_era_7_1_operating_system_mod
+				has_modifier = je_ut_software_era_7_2_relational_database_mod
+				has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
+			}
 		}
-		name = je_ut_software_era_7_open_source
+		name = je_ut_software_era_7_1_operating_system
 		set_global_variable = je_ut_software_era_7_1_operating_system_foss_var
+		custom_tooltip = je_ut_software_era_7_technology_open_source_tt
 	}
 	
 	option = {
 		trigger = {
 			NOT = { has_global_variable = je_ut_software_era_7_2_relational_database_foss_var }
+			OR = {
+				has_modifier = je_ut_software_era_7_2_relational_database_mod
+				has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
+			}
 		}
-		name = je_ut_software_era_7_open_source
+		name = je_ut_software_era_7_2_relational_database
 		set_global_variable = je_ut_software_era_7_2_relational_database_foss_var
+		custom_tooltip = je_ut_software_era_7_technology_open_source_tt
 	}
 	
 	option = {
 		trigger = {
-			NOT = { has_global_variable = je_ut_software_era_7_3_object_oriented_programming_foss_var }
+			NOT = { has_global_variable = je_ut_software_era_7_3_object_oriented_language_foss_var }
+			has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
 		}
-		name = je_ut_software_era_7_open_source
-		set_global_variable = je_ut_software_era_7_3_object_oriented_programming_foss_var
+		name = je_ut_software_era_7_3_object_oriented_language
+		set_global_variable = je_ut_software_era_7_3_object_oriented_language_foss_var
+		custom_tooltip = je_ut_software_era_7_technology_open_source_tt
 	}
 
 	option = {

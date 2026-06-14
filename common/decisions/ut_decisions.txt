@@ -174,18 +174,26 @@ ut_research_nuclear_power = {
 		any_scope_state = {
 			is_incorporated = yes
 			is_split_state = no
-			any_scope_building = {
-				is_building_type = building_power_plant
-				level >= 20
+			OR = {
+				any_scope_building = {
+					is_building_type = building_power_plant
+					level >= 25
+				}
+				AND = {
+					any_scope_building = {
+						is_building_type = building_power_plant
+						level >= 10
+					}
+					has_building = building_ut_research_institute
+				}
 			}
-			has_building = building_ut_research_institute
 		}
 		OR = {
 			has_global_highest_innovation = yes
 			any_scope_building = {
 				is_building_type = building_rare_earths_mine
 				level >= 1
-				has_active_production_method = pm_rare_earths_two_mine
+				has_active_production_method = pm_rare_earths_one_mine
 			}
 		}
 	}
@@ -311,12 +319,15 @@ ut_research_high_tech_computers = {
 		any_scope_state = {
 			is_incorporated = yes
 			is_split_state = no
-			any_scope_building = {
-				is_building_type = building_computer_factory
-				level >= 10
-			}
-			any_scope_building = {
-				is_building_type = building_ut_research_institute
+			OR = {
+				any_scope_building = {
+					is_building_type = building_computer_factory
+					level >= 10
+				}
+				AND = {
+					has_building = building_computer_factory
+					has_building = building_ut_research_institute
+				}
 			}
 		}
 		OR = {
@@ -502,6 +513,10 @@ ut_private_construction_amend = {
 
 ut_democrat_enact_law_variants = {
 	is_shown = {
+		has_modifier = ut_new_dawn_core_democratic_mod
+	}
+
+	possible = {
 		has_law = law_type:law_council_republic
 		active_law:lawgroup_governance_principles ?= {
 			NOT = {
@@ -514,10 +529,6 @@ ut_democrat_enact_law_variants = {
 				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" >= 100
 			}
 		}
-	}
-
-	possible = {
-		has_law = law_type:law_council_republic
 	}
 
 	when_taken = {

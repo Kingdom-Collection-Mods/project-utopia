@@ -95,6 +95,7 @@
 					#cap at 10
 					if = {
 						limit = {
+							has_variable = je_ut_software_points_bar_progress_buildings_era_6
 							var:je_ut_software_points_bar_progress_buildings_era_6 > 10
 						}
 						set_variable = {
@@ -226,6 +227,7 @@ je_ut_software_era_7 = {
 					#cap at 100
 					if = {
 						limit = {
+							has_variable = je_ut_software_points_bar_progress_buildings_era_7
 							var:je_ut_software_points_bar_progress_buildings_era_7 > 100
 						}
 						set_variable = {
@@ -332,6 +334,7 @@ je_ut_software_era_8 = {
 					#cap at 100
 					if = {
 						limit = {
+							has_variable = je_ut_software_points_bar_progress_buildings_era_8
 							var:je_ut_software_points_bar_progress_buildings_era_8 > 100
 						}
 						set_variable = {
@@ -350,7 +353,7 @@ je_ut_software_era_8 = {
 					}
 					change_variable = {
 						name = je_ut_software_points_bar_progress_buildings_era_8
-						add = 20
+						add = 100
 					}
 				}
 				if = {

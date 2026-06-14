@@ -719,7 +719,7 @@ pm_computers_integrated_chips_process  = {
 			goods_input_heavy_machinery_add = 4
 			
 			# output goods
-			goods_output_computers_add = 120
+			goods_output_computers_add = 130
 		}
 
 		level_scaled = {
@@ -1534,6 +1534,7 @@ ut_pm_research_institute_one = {
 	country_modifiers = {
 		workforce_scaled = {
 			country_weekly_innovation_max_add = 25
+			country_weekly_innovation_add = 50
 		}
 	}
 
@@ -1571,6 +1572,7 @@ ut_pm_research_institute_two = {
 	country_modifiers = {
 		workforce_scaled = {
 			country_weekly_innovation_max_add = 50
+			country_weekly_innovation_add = 100
 		}
 	}
 
@@ -1609,6 +1611,7 @@ ut_pm_research_institute_three = {
 	country_modifiers = {
 		workforce_scaled = {
 			country_weekly_innovation_max_add = 100
+			country_weekly_innovation_add = 100
 		}
 	}
 

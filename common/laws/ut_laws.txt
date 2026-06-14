@@ -1448,6 +1448,7 @@ law_ut_disability_insurance = {
 		state_dependent_political_participation_add = 0.03
 		state_food_security_add = 0.01
 		building_minimum_wage_mult = 0.15
+		state_working_adult_ratio_add = 0.01
 	}
 
 	# Below needed since this Law changes Politial Participation
@@ -1700,6 +1701,7 @@ ut_law_private_health_research = {
 		state_mortality_wealth_mult = -0.005
 		state_pollution_reduction_health_mult = -0.1
 		state_upper_strata_standard_of_living_add = 1
+		state_working_adult_ratio_add = 0.02
 	}
 
 	ai_enact_weight_modifier = { #Petitions
@@ -1732,6 +1734,7 @@ ut_law_public_health_research = {
 		state_mortality_mult = -0.05
 		state_pollution_reduction_health_mult = -0.15
 		state_standard_of_living_add = 1
+		state_working_adult_ratio_add = 0.01
 	}
 
 	ai_enact_weight_modifier = { #Petitions

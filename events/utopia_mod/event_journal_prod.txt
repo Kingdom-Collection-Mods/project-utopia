@@ -117,9 +117,13 @@ utopia_journal_prod.3 = {
 	option = {
 		name = utopia.progress_a
 		default_option = yes
+		highlighted_option = yes
 		trigger = {
-			NOT = { has_technology_researched = heavy_machinery_industry }
-			can_research = heavy_machinery_industry
+			hidden_trigger = {
+				NOT = { has_technology_researched = heavy_machinery_industry }
+				can_research = heavy_machinery_industry
+			}
+			has_technology_researched = computers
 		}
 		add_technology_progress = { progress = 6000 technology = heavy_machinery_industry }
 	}

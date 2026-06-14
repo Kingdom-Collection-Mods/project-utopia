@@ -329,7 +329,8 @@
 			}
 		}
 		random_events = {
-			400 = 0
+			#og was 400
+			200 = 0
 			10 = event_new_dawn.11
 			10 = event_new_dawn.12
 			10 = event_new_dawn.13   #Radicals
@@ -347,12 +348,12 @@
 			10 = event_new_dawn.120   #Approval crisis
 			1 = event_new_dawn.121   #Core progress setback
 			1 = event_new_dawn.122   #Emergency spending
-			5 = event_new_dawn.123   #Innovation disruption
+			2 = event_new_dawn.123   #Innovation disruption
 			1 = event_new_dawn.124   #Pressure
 
 			#Generic Very Bad (>75 pressure)
-			1 = event_new_dawn.140   #Constitutional crisis
-			1 = event_new_dawn.141   #State of emergency
+			2 = event_new_dawn.140   #Constitutional crisis
+			2 = event_new_dawn.141   #State of emergency
 		}
 	}
 
@@ -800,6 +801,7 @@ je_ut_new_dawn_autocratic = {
 
 	
 	scripted_progress_bar = je_ut_new_dawn_autocratic_points_bar
+	scripted_progress_bar = je_ut_new_dawn_pressure_points_bar
 
 	complete = {
 		custom_tooltip = {
@@ -837,6 +839,7 @@ je_ut_new_dawn_autocratic = {
 	on_monthly_pulse = {
 		effect = {
 			ut_new_dawn_autocrat_progress = yes
+			ut_new_dawn_common_pressure_progress_monthly = yes
 			if = {
 				limit = {
 					NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }
@@ -871,6 +874,7 @@ je_ut_new_dawn_autocratic = {
 
 	on_yearly_pulse = {
 		effect = {
+			ut_new_dawn_common_pressure_progress_yearly = yes
 			set_variable = {
 				name = je_ut_new_dawn_core_prev_progress_yearly
 				value = var:je_ut_new_dawn_core_progress_yearly
@@ -1015,6 +1019,7 @@ je_ut_new_dawn_fascist = {
 	
 	
 	scripted_progress_bar = je_ut_new_dawn_fascist_points_bar
+	scripted_progress_bar = je_ut_new_dawn_pressure_points_bar
 
 	complete = {
 		custom_tooltip = {
@@ -1090,6 +1095,7 @@ je_ut_new_dawn_fascist = {
 	on_monthly_pulse = {
 		effect = {
 			ut_new_dawn_fascist_progress = yes
+			ut_new_dawn_common_pressure_progress_monthly = yes
 			if = {
 				limit = {
 					NOT = { has_modifier = je_ut_new_dawn_fascist_focus }
@@ -1123,6 +1129,7 @@ je_ut_new_dawn_fascist = {
 
 	on_yearly_pulse = {
 		effect = {
+			ut_new_dawn_common_pressure_progress_yearly = yes
 			set_variable = {
 				name = je_ut_new_dawn_core_prev_progress_yearly
 				value = var:je_ut_new_dawn_core_progress_yearly
@@ -1220,6 +1227,11 @@ je_ut_new_dawn_communist = {
 			target = root
 		}
 		
+		add_to_global_variable_list = {
+			name = ut_new_dawn_communist_list
+			target = root
+		}
+		
 		if = {
 			limit = {
 				NOT = { has_modifier = je_ut_new_dawn_communist_focus }	
@@ -1248,6 +1260,7 @@ je_ut_new_dawn_communist = {
 	scripted_button = je_ut_communist_world_revolution
 
 	scripted_progress_bar = je_ut_new_dawn_communist_points_bar
+	scripted_progress_bar = je_ut_new_dawn_pressure_points_bar
 
 	complete = {
 		custom_tooltip = {
@@ -1274,11 +1287,6 @@ je_ut_new_dawn_communist = {
 			ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 		}
 		set_variable = je_ut_new_dawn_done
-		
-		add_to_global_variable_list = {
-			name = ut_new_dawn_communist_list
-			target = root
-		}
 	}
 
 	status_desc = {
@@ -1302,6 +1310,7 @@ je_ut_new_dawn_communist = {
 	on_monthly_pulse = {
 		effect = {
 			ut_new_dawn_communist_progress = yes
+			ut_new_dawn_common_pressure_progress_monthly = yes
 			if = {
 				limit = {
 					NOT = { has_modifier = je_ut_new_dawn_communist_focus }
@@ -1336,6 +1345,23 @@ je_ut_new_dawn_communist = {
 
 	on_yearly_pulse = {
 		effect = {
+			ut_new_dawn_common_pressure_progress_yearly = yes
+			#debug deprecated, was only bc was set wrong on immediate before 14-06-26
+			if = {
+				limit = {
+					NOT = {
+						is_target_in_global_variable_list = {
+							name = ut_new_dawn_communist_list
+							target = root
+						}	
+					}
+				}
+				add_to_global_variable_list = {
+					name = ut_new_dawn_communist_list
+					target = root
+				}
+			}
+			#debug end
 			set_variable = {
 				name = je_ut_new_dawn_core_prev_progress_yearly
 				value = var:je_ut_new_dawn_core_progress_yearly
