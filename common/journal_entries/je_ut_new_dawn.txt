@@ -801,6 +801,7 @@ je_ut_new_dawn_autocratic = {
 
 	
 	scripted_progress_bar = je_ut_new_dawn_autocratic_points_bar
+	scripted_progress_bar = je_ut_new_dawn_pressure_points_bar
 
 	complete = {
 		custom_tooltip = {
@@ -1016,6 +1017,7 @@ je_ut_new_dawn_fascist = {
 	
 	
 	scripted_progress_bar = je_ut_new_dawn_fascist_points_bar
+	scripted_progress_bar = je_ut_new_dawn_pressure_points_bar
 
 	complete = {
 		custom_tooltip = {
@@ -1254,6 +1256,7 @@ je_ut_new_dawn_communist = {
 	scripted_button = je_ut_communist_world_revolution
 
 	scripted_progress_bar = je_ut_new_dawn_communist_points_bar
+	scripted_progress_bar = je_ut_new_dawn_pressure_points_bar
 
 	complete = {
 		custom_tooltip = {
