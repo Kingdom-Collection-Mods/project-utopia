@@ -2228,9 +2228,61 @@ event_new_dawn.25 = {
 
 	
 	option = {
-		name = utopia.continue
+		name = ut_propaganda_campaign_source_happened_tt
 		default_option = yes
-		custom_tooltip = ut_propaganda_campaign_source_happened_tt
+		show_as_tooltip = {
+			if = {
+				limit = {
+					has_modifier = ut_new_dawn_core_communist_mod
+				}
+				scope:ut_je_propaganda_source_target_scope = {
+					add_modifier = {
+						name = ut_propaganda_communist_mod
+						days = 730 #2 years
+						#is_decaying = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_modifier = ut_new_dawn_core_democratic_mod
+				}
+				scope:ut_je_propaganda_source_target_scope = {
+					add_modifier = {
+						name = ut_propaganda_democratic_mod
+						days = 730 #2 years
+						#is_decaying = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_modifier = ut_new_dawn_core_fascist_mod
+				}
+				scope:ut_je_propaganda_source_target_scope = {
+					add_modifier = {
+						name = ut_propaganda_fascist_mod
+						days = 730 #2 years
+						#is_decaying = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_modifier = ut_new_dawn_core_autocratic_mod
+				}
+				scope:ut_je_propaganda_source_target_scope = {
+					add_modifier = {
+						name = ut_propaganda_autocratic_mod
+						days = 730 #2 years
+						#is_decaying = yes
+					}
+				}
+			}
+			scope:ut_je_propaganda_source_target_scope = {
+				custom_tooltip = ut_add_new_dawn_progress_neg_25
+			}
+		}
 	}
 
 	option = {
