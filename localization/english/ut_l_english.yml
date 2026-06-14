@@ -372,7 +372,7 @@
  je_ut_new_dawn_critical_lower_bound_fail_pressure_tt: "Has #r 50#! [concept_ut_nd_pressure] Pressure"
 
  je_ut_new_dawn_common_pressure_progress_from_sol_yoy: "[concept_sol] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_sol_yoy_tooltip yearly change#!#!"
- je_ut_new_dawn_common_pressure_progress_from_sol_yoy_tooltip: "Every 1 yearly [concept_sol] increase decreases pressure by 2 points. $concept_sol$ loss increases pressure. Last year's [concept_sol]: [Country.MakeScope('je_ut_new_dawn_prev_average_sol').GetValue]."
+ je_ut_new_dawn_common_pressure_progress_from_sol_yoy_tooltip: "Every 1 yearly [concept_sol] increase decreases pressure by 2 points. $concept_sol$ loss increases pressure. Last year's [concept_sol]: [Country.MakeScope.Var('je_ut_new_dawn_prev_average_sol').GetValue]."
  je_ut_new_dawn_common_pressure_progress_from_legitimacy: "#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_legitimacy_tooltip expected#!#! [concept_legitimacy]"
  je_ut_new_dawn_common_pressure_progress_from_legitimacy_tooltip: "100 [concept_legitimacy] reduces pressure by 1.\n75   [concept_legitimacy] is neutral.\n0     [concept_legitimacy] increases pressure by 3."
  je_ut_new_dawn_common_pressure_progress_from_expected_sol: "#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_expected_sol_tooltip expected#!#! [concept_sol]"
