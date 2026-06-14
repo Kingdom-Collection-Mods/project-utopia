@@ -1369,9 +1369,9 @@ pm_logging_machinery_equipment = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_engines_add = 1
+			goods_input_engines_add = 2
 			goods_input_oil_add = 4
-			goods_input_trucks_add = 1
+			goods_input_trucks_add = 2
 
 			goods_output_wood_add = 20
 			goods_output_hardwood_add = 10
