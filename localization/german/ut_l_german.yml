@@ -2162,6 +2162,9 @@
  utopia_mod.2.t: "Technologischen Vorsprung sichern"
  utopia_mod.2.d: "Durch inoffizielle Kanäle erhält Ihre Verwaltung Zugang zu einem überwältigenden Zustrom von Innovationen. Obwohl alles andere als legitim, bietet dieser Shortcut einen Einblick in die Zukunft - eine Zukunft, die Sie nun mit unfairen Vorteilen gestalten können."
  utopia_mod.2.f: "Was ist Fortschritt, wenn nicht die Beherrschung der Zeit selbst? Während andere über Ethik und Gleichheit debattieren, haben wir den Schleier der Möglichkeiten durchbrochen. Mit diesem beispiellosen Anstieg an Innovationen überspringen wir Generationen langsamer, bürokratischer Entwicklung. Lassen Sie die Geschichte uns beurteilen - oder lassen Sie es keine Geschichte geben, nur die Brillanz von morgen, geschrieben in Schaltkreisen und Stahl, nicht in Tinte und Pergament. Utopia wird nicht gegeben. Es wird genommen."
+ utopia_mod.2.a: "Cheat yourself"
+ utopia_mod.2.b: "Cheat all"
+ utopia_mod.2.c: "Cheat [concept_great_power] AI"
  ut_tech_preview_cheat_disable_tt: "Deaktiviert den Cheat dauerhaft"
  ut_tech_preview_cheat_research_modifier: "Verbotene Technologien"
 
