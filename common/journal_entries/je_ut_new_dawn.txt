@@ -329,7 +329,8 @@
 			}
 		}
 		random_events = {
-			400 = 0
+			#og was 400
+			200 = 0
 			10 = event_new_dawn.11
 			10 = event_new_dawn.12
 			10 = event_new_dawn.13   #Radicals
@@ -340,7 +341,7 @@
 			1 = event_new_dawn.102   #Social cohesion
 			1 = event_new_dawn.103   #Treasury surplus
 			1 = event_new_dawn.104   #Cultural awakening
-			1 = event_new_dawn.105   #Spread Ideology Petition
+			2 = event_new_dawn.105   #Spread Ideology Petition
 			2 = event_new_dawn.106   #Core/Secondary Law Petition (AI hard progresses on core laws)
 
 			#Generic Bad (>50 pressure)
@@ -351,8 +352,8 @@
 			1 = event_new_dawn.124   #Pressure
 
 			#Generic Very Bad (>75 pressure)
-			1 = event_new_dawn.140   #Constitutional crisis
-			1 = event_new_dawn.141   #State of emergency
+			2 = event_new_dawn.140   #Constitutional crisis
+			2 = event_new_dawn.141   #State of emergency
 		}
 	}
 
