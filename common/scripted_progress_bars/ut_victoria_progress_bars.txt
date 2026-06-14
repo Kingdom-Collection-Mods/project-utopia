@@ -13,6 +13,13 @@ ut_new_dawn_fascist_bar = {
 				NOT = {
 					has_variable = ut_new_dawn_bar_freeze
 				}
+				has_variable = ut_nd_fascist_progress_from_characters
+				has_variable = ut_nd_fascist_progress_from_igs
+				has_variable = ut_nd_fascist_progress_from_legitimacy
+				has_variable = ut_nd_fascist_progress_from_laws
+				has_variable = ut_nd_fascist_progress_from_focus
+				has_variable = ut_nd_fascist_progress_from_events
+				has_variable = ut_nd_common_progress_from_events
 			}
 			add = {
 				desc = "ut_nd_fascist_progress_from_characters"
@@ -131,6 +138,13 @@ ut_new_dawn_democrat_bar = {
 				NOT = {
 					has_variable = ut_new_dawn_bar_freeze
 				}
+				has_variable = ut_nd_democrat_progress_from_characters
+				has_variable = ut_nd_democrat_progress_from_igs
+				has_variable = ut_nd_democrat_progress_from_laws
+				has_variable = ut_nd_democrat_progress_from_legitimacy
+				has_variable = ut_nd_democrat_progress_from_focus
+				has_variable = ut_nd_democrat_progress_from_events
+				has_variable = ut_nd_common_progress_from_events
 			}
 			add = {
 				desc = "ut_nd_democrat_progress_from_characters"
@@ -250,6 +264,13 @@ ut_new_dawn_communist_bar = {
 				NOT = {
 					has_variable = ut_new_dawn_bar_freeze
 				}
+				has_variable = ut_nd_communist_progress_from_characters
+				has_variable = ut_nd_communist_progress_from_igs
+				has_variable = ut_nd_communist_progress_from_legitimacy
+				has_variable = ut_nd_communist_progress_from_laws
+				has_variable = ut_nd_communist_progress_from_focus
+				has_variable = ut_nd_communist_progress_from_events
+				has_variable = ut_nd_common_progress_from_events
 			}
 			add = {
 				desc = "ut_nd_communist_progress_from_characters"
@@ -367,6 +388,13 @@ ut_new_dawn_autocrat_bar = {
 				NOT = {
 					has_variable = ut_new_dawn_bar_freeze
 				}
+				has_variable = ut_nd_autocrat_progress_from_characters
+				has_variable = ut_nd_autocrat_progress_from_igs
+				has_variable = ut_nd_autocrat_progress_from_legitimacy
+				has_variable = ut_nd_autocrat_progress_from_laws
+				has_variable = ut_nd_autocrat_progress_from_focus
+				has_variable = ut_nd_autocrat_progress_from_events
+				has_variable = ut_nd_common_progress_from_events
 			}
 			add = {
 				desc = "ut_nd_autocrat_progress_from_characters"
