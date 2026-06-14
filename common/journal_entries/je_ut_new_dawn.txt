@@ -839,6 +839,7 @@ je_ut_new_dawn_autocratic = {
 	on_monthly_pulse = {
 		effect = {
 			ut_new_dawn_autocrat_progress = yes
+			ut_new_dawn_common_pressure_progress_monthly = yes
 			if = {
 				limit = {
 					NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }
@@ -1093,6 +1094,7 @@ je_ut_new_dawn_fascist = {
 	on_monthly_pulse = {
 		effect = {
 			ut_new_dawn_fascist_progress = yes
+			ut_new_dawn_common_pressure_progress_monthly = yes
 			if = {
 				limit = {
 					NOT = { has_modifier = je_ut_new_dawn_fascist_focus }
@@ -1306,6 +1308,7 @@ je_ut_new_dawn_communist = {
 	on_monthly_pulse = {
 		effect = {
 			ut_new_dawn_communist_progress = yes
+			ut_new_dawn_common_pressure_progress_monthly = yes
 			if = {
 				limit = {
 					NOT = { has_modifier = je_ut_new_dawn_communist_focus }
