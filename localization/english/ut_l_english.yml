@@ -1501,6 +1501,7 @@
  combat_unit_type_capital_battleship_desc: "Heavily armed and armored flagship-class vessels designed for domination in major sea battles."
  combat_unit_type_modern_submarine_desc: "Stealthy underwater vessels equipped with torpedoes and cruise missiles for strategic strikes."
  combat_unit_type_super_carrier_desc: "Massive carriers that serve as mobile airbases, projecting power across vast distances."
+ combat_unit_type_motorized_infantry_desc: "Infantry units equipped with motor vehicles for increased mobility and rapid deployment."
  combat_unit_type_armored_infantry_desc: "Infantry units outfitted with heavy personal armor and integrated support systems for increased survivability."
  combat_unit_type_task_force_infantry_desc: "Highly trained, flexible units capable of executing specialized missions independently or alongside other forces."
  combat_unit_type_motorized_artillery_desc: "Artillery mounted on motor vehicles, enabling rapid deployment and repositioning on the battlefield."
@@ -1934,6 +1935,13 @@
  goods_input_high_voltage_electricity_add_desc: "The amount of @high_voltage_electricity! High-Voltage Electricity consumed by buildings"
  goods_input_soft_drinks_add: "@soft_drinks! Soft Drinks input"
  goods_input_soft_drinks_add_desc: "The amount of @soft_drinks! Soft Drinks consumed by buildings"
+
+ goods_input_utopia_arms_mult: "@utopia_arms! Infantry Equipment input"
+ goods_input_utopia_arms_mult_desc: "The amount of @utopia_arms! Infantry Equipment consumed by buildings"
+ goods_input_utopia_artillery_mult: "@utopia_artillery! Heavy Artillery input"
+ goods_input_utopia_artillery_mult_desc: "The amount of @utopia_artillery! Heavy Artillery consumed by buildings"
+ goods_input_utopia_tanks_mult: "@utopia_tanks! Heavy Tanks input"
+ goods_input_utopia_tanks_mult_desc: "The amount of @utopia_tanks! Heavy Tanks consumed by buildings"
 
  goods_output_heavy_machinery_add: "@heavy_machinery! Machinery output"
  goods_output_heavy_machinery_add_desc: "The amount of @heavy_machinery! Machinery produced by buildings"

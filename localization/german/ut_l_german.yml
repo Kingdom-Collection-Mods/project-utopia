@@ -1936,6 +1936,13 @@
  goods_input_soft_drinks_add: "@soft_drinks! Soft Drinks Zufuhr"
  goods_input_soft_drinks_add_desc: "Die Menge an @soft_drinks! Soft Drinks, die von Gebäuden verbraucht wird"
 
+ goods_input_utopia_arms_mult: "@utopia_arms! Infantry Equipment input"
+ goods_input_utopia_arms_mult_desc: "The amount of @utopia_arms! Infantry Equipment consumed by buildings"
+ goods_input_utopia_artillery_mult: "@utopia_artillery! Heavy Artillery input"
+ goods_input_utopia_artillery_mult_desc: "The amount of @utopia_artillery! Heavy Artillery consumed by buildings"
+ goods_input_utopia_tanks_mult: "@utopia_tanks! Heavy Tanks input"
+ goods_input_utopia_tanks_mult_desc: "The amount of @utopia_tanks! Heavy Tanks consumed by buildings"
+
  goods_output_heavy_machinery_add: "@heavy_machinery! $heavy_machinery$ Ausstoß"
  goods_output_heavy_machinery_add_desc: "Die Menge an @heavy_machinery! Schwerindustriemaschinen, die das Gebäude produziert"
  goods_output_plastic_add: "@plastic! $plastic$ Ausstoß"
