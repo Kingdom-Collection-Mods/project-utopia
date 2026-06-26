@@ -273,10 +273,10 @@ ideology_communist_movement = {
 	icon = "gfx/interface/icons/ideology_icons/communist.dds"
 
 	lawgroup_labor_rights = {
-		law_worker_protections = strongly_approve
+		law_worker_protections = approve
 		law_ut_minimum_wage = strongly_approve
-		law_regulatory_bodies = approve
-		law_no_workers_rights = neutral
+		law_regulatory_bodies = neutral
+		law_no_workers_rights = disapprove
 	}
 
 	lawgroup_governance_principles = {
