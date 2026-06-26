@@ -652,3 +652,10 @@ ut_has_modifier_autocratic_favorable_stance = {
 ut_has_modifier_autocratic_opposing_stance = {
 	has_modifier = ut_new_dawn_core_communist_mod
 }
+
+ut_has_ideology_any_liberal = {
+	OR = {
+		has_ideology = ideology:ideology_liberal
+		has_ideology = ideology:ideology_liberal_democratic
+	}
+}

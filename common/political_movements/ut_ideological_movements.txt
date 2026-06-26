@@ -32,6 +32,7 @@ ut_movement_cosmopolitan = {
 			has_ideology = ideology:ideology_humanitarian
 			has_ideology = ideology:ideology_humanitarian_royalist
 			has_ideology = ideology:ut_social_feminism_leader
+			ut_has_ideology_any_liberal = yes
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_trade_unions
@@ -48,6 +49,7 @@ ut_movement_cosmopolitan = {
 					has_ideology = ideology:ideology_humanitarian
 					has_ideology = ideology:ideology_humanitarian_royalist
 					has_ideology = ideology:ut_social_feminism_leader
+					ut_has_ideology_any_liberal = yes
 				}
 			}
 			multiply = {
@@ -148,6 +150,7 @@ ut_movement_cosmopolitan = {
 					is_pop_type = academics
 				}
 				add = {
+					#very high
 					value = 50
 					desc = "POP_ACADEMICS"
 				}
@@ -157,7 +160,8 @@ ut_movement_cosmopolitan = {
 					is_pop_type = service_workers
 				}
 				add = {
-					value = 25
+					#little higher
+					value = 35
 					desc = "POP_SERVICE_WORKERS"
 				}
 			}
@@ -166,7 +170,8 @@ ut_movement_cosmopolitan = {
 					is_pop_type = engineers
 				}
 				add = {
-					value = 25
+					#little lower
+					value = 15
 					desc = "POP_BUREAUCRATS"
 				}
 			}
@@ -272,7 +277,7 @@ ut_movement_humanist = {
 			has_ideology = ideology:ideology_humanitarian_royalist
 			has_ideology = ideology:ideology_nihilist
 			has_ideology = ideology:ideology_reformer
-			has_ideology = ideology:ut_liberal_feminism_leader
+			has_ideology = ideology:ut_social_feminism_leader
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_trade_unions
@@ -290,8 +295,7 @@ ut_movement_humanist = {
 					has_ideology = ideology:ideology_humanitarian
 					has_ideology = ideology:ideology_humanitarian_royalist
 					has_ideology = ideology:ideology_nihilist
-					has_ideology = ideology:ideology_reformer
-					has_ideology = ideology:ut_liberal_feminism_leader
+					has_ideology = ideology:ut_social_feminism_leader
 				}
 			}
 			multiply = {
@@ -377,7 +381,8 @@ ut_movement_humanist = {
 					is_pop_type = academics
 				}
 				add = {
-					value = 25
+					#high support
+					value = 40
 					desc = "POP_ACADEMICS"
 				}
 			}
@@ -391,7 +396,8 @@ ut_movement_humanist = {
 					is_pop_type = clerks
 				}
 				add = {
-					value = 9
+					#less likely to be humanist
+					value = 0
 					desc = "POP_CLERKS"
 				}
 			}
@@ -473,10 +479,10 @@ ut_movement_rationalists = {
 			has_ideology = ideology:ideology_reformer
 			has_ideology = ideology:ideology_laissez_faire
 			has_ideology = ideology:ideology_social_democrat
-			has_ideology = ideology:ut_radical_feminism_leader
+			has_ideology = ideology:ideology_market_liberal
+			has_ideology = ideology:ut_liberal_feminism_leader
 			OR = {
 				is_interest_group_type = ig_intelligentsia
-				is_interest_group_type = ig_trade_unions
 				is_interest_group_type = ig_urbanists
 				is_interest_group_type = ig_industrialists
 				is_interest_group_type = ig_petty_bourgeoisie
@@ -573,7 +579,8 @@ ut_movement_rationalists = {
 					is_pop_type = capitalists
 				}
 				add = {
-					value = 15
+					#quite likely
+					value = 30
 					desc = "POP_CAPITALISTS"
 				}
 			}
@@ -581,20 +588,9 @@ ut_movement_rationalists = {
 				limit = {
 					is_pop_type = aristocrats
 				}
-				if = {
-					limit = {
-						owner ?= {
-							has_journal_entry = je_great_reformer
-						}
-					}
-					add = {
-						value = 25
-						desc = "POP_ARISTOCRATS"
-					}
-				}
 				else = {
 					add = {
-						value = 10
+						value = 0
 						desc = "POP_ARISTOCRATS"
 					}
 				}
@@ -618,7 +614,8 @@ ut_movement_rationalists = {
 					is_pop_type = academics
 				}
 				add = {
-					value = 25
+					#little likelier
+					value = 35
 					desc = "POP_ACADEMICS"
 				}
 			}
@@ -627,7 +624,7 @@ ut_movement_rationalists = {
 					is_pop_type = bureaucrats
 				}
 				add = {
-					value = 15
+					value = 20
 					desc = "POP_BUREAUCRATS"
 				}
 			}
@@ -636,8 +633,8 @@ ut_movement_rationalists = {
 					is_pop_type = engineers
 				}
 				add = {
-					value = 25
-					desc = "POP_BUREAUCRATS"
+					value = 30
+					desc = "POP_ENGINEERS"
 				}
 			}
 			else = {
@@ -671,7 +668,7 @@ ut_movement_rationalists = {
 			}
 			else = {
 				add = {
-					value = 3
+					value = 0
 					desc = "LOWER_NO_ICON"
 				}
 			}
