@@ -1716,6 +1716,7 @@ ideology_japan_hierarchic = {
 		law_no_social_security = approve
 		law_poor_laws = neutral
 		law_wage_subsidies = disapprove
+		law_old_age_pension = disapprove
 		law_ut_disability_insurance = strongly_disapprove
 		law_private_pension = neutral
 	}

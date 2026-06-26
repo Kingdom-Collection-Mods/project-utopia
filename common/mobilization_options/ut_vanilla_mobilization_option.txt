@@ -1,0 +1,23 @@
+﻿INJECT:mobilization_option_basic_supplies = {
+	upkeep_modifier_unscaled = {
+		goods_input_utopia_arms_mult = 0.25
+		goods_input_utopia_artillery_mult = 0.25
+		goods_input_utopia_tanks_mult = 0.25
+	}
+}
+
+INJECT:mobilization_option_extra_supplies = {
+	upkeep_modifier_unscaled = {
+		goods_input_utopia_arms_mult = 0.5
+		goods_input_utopia_artillery_mult = 0.5
+		goods_input_utopia_tanks_mult = 0.5
+	}
+}
+
+INJECT:mobilization_option_luxurious_supplies = {
+	upkeep_modifier_unscaled = {
+		goods_input_utopia_arms_mult = 0.5
+		goods_input_utopia_artillery_mult = 0.5
+		goods_input_utopia_tanks_mult = 0.5
+	}
+}

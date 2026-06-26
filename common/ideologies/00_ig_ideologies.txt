@@ -198,7 +198,7 @@ ideology_individualist = {
 		law_wage_subsidies = disapprove
 		law_old_age_pension = strongly_disapprove
 		law_ut_disability_insurance = strongly_disapprove
-		law_private_pension = approve
+		law_private_pension = strongly_approve
 	}
 	
 	lawgroup_health_system = {
@@ -212,7 +212,7 @@ ideology_individualist = {
 	
 	lawgroup_education_system = {
 		law_private_schools = approve
-		law_public_university = neutral
+		law_public_university = disapprove
 		law_public_schools = neutral
 		law_private_universities = approve
 		law_religious_schools = neutral
@@ -730,7 +730,7 @@ ideology_anti_clerical = {
 	
 	lawgroup_education_system = {
 		law_public_schools = approve
-		law_public_university = approve
+		law_public_university = strongly_approve
 		law_private_schools = approve
 		law_private_universities = approve
 		law_no_schools = disapprove
