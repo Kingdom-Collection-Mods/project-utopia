@@ -1502,6 +1502,7 @@
  combat_unit_type_capital_battleship_desc: "Schwer bewaffnete und gepanzerte Schlachtschiffe der höchsten Klasse zur Vorherrschaft in großen Seegefechten."
  combat_unit_type_modern_submarine_desc: "Moderne U-Boote mit Torpedos und Marschflugkörpern für verdeckte und strategische Angriffe."
  combat_unit_type_super_carrier_desc: "Gigantische Flugzeugträger, die als mobile Luftwaffenstützpunkte zur Machtdemonstration über große Distanzen dienen."
+ combat_unit_type_motorized_infantry_desc: "Infanterieeinheiten, die auf motorisierten Fahrzeugen transportiert werden, um schnelle Bewegungen und flexible Einsatzmöglichkeiten zu gewährleisten."
  combat_unit_type_armored_infantry_desc: "Infanterieeinheiten mit schwerer persönlicher Panzerung und integrierten Unterstützungssystemen für erhöhte Überlebensfähigkeit."
  combat_unit_type_task_force_infantry_desc: "Hochtrainierte, flexible Einheiten, die eigenständig oder gemeinsam mit anderen Kräften spezialisierte Einsätze durchführen können."
  combat_unit_type_motorized_artillery_desc: "Auf Fahrzeugen montierte Artillerie zur schnellen Verlegung und Reaktion auf dem Schlachtfeld."
