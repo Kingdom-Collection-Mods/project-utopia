@@ -376,7 +376,7 @@
  je_ut_new_dawn_common_pressure_progress_from_legitimacy: "#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_legitimacy_tooltip expected#!#! [concept_legitimacy]"
  je_ut_new_dawn_common_pressure_progress_from_legitimacy_tooltip: "100 [concept_legitimacy] reduces pressure by 1.\n75   [concept_legitimacy] is neutral.\n0     [concept_legitimacy] increases pressure by 3."
  je_ut_new_dawn_common_pressure_progress_from_expected_sol: "#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_expected_sol_tooltip expected#!#! [concept_sol]"
- je_ut_new_dawn_common_pressure_progress_from_expected_sol_tooltip: "Expected [concept_sol] is [Country.MakeScope.Var('je_ut_new_dawn_common_pressure_expected_sol').GetValue] and is increased by Society [concept_technology]. 50 [concept_sol] reduces pressure by 1."
+ je_ut_new_dawn_common_pressure_progress_from_expected_sol_tooltip: "Expected [concept_sol] is [Country.MakeScope.Var('je_ut_new_dawn_common_pressure_expected_sol').GetValue] and is increased by Society [concept_technology]. 50 [concept_sol] reduces pressure by 0.5."
  je_ut_new_dawn_common_pressure_progress_from_core_progress: "[concept_ut_nd_progress_points] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_core_progress_tooltip gained#!#!"
  je_ut_new_dawn_common_pressure_progress_from_core_progress_tooltip: "Every 1 [concept_ut_nd_progress_points] gained decreases pressure by 0.5 points."
 
@@ -993,6 +993,8 @@
  country_institution_migration_office_max_investment_add: "Max. Investment in [concept_institution] $institution_migration_office$"
  country_institution_cost_institution_migration_office_mult: "@bur![Nbsp][concept_bureaucracy] Cost of [GetInstitutionType('institution_migration_office').GetName]"
  country_institution_cost_institution_migration_office_mult_desc: "An increase or reduction to the @bur![Nbsp][concept_bureaucracy] cost of bringing [GetInstitutionType('institution_migration_office').GetName] to the citizens"
+ country_institution_size_change_speed_institution_migration_office_mult: "Institution Size Change Speed for [GetInstitutionType('institution_migration_office').GetName]"
+ country_institution_size_change_speed_institution_migration_office_mult_desc: "How fast you change the size of [GetInstitutionType('institution_migration_office').GetName]"
 
 #Diplo Stuff
  ut_international_diplomatic_power_bloc_merge: "Unify Power Blocs"

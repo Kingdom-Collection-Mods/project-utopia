@@ -993,6 +993,8 @@
  country_institution_migration_office_max_investment_add: "Max. Investition der [concept_institution] $institution_migration_office$"
  country_institution_cost_institution_migration_office_mult: "@bur![Nbsp][concept_bureaucracy] Kosten von [GetInstitutionType('institution_migration_office').GetName]"
  country_institution_cost_institution_migration_office_mult_desc: "Eine Erhöhung oder Verringerung der @bur![Nbsp][concept_bureaucracy]-Kosten für den Ausbau von [GetInstitutionType('institution_migration_office').GetName]"
+ country_institution_size_change_speed_institution_migration_office_mult: "Geschwindigkeit der Änderung der [GetInstitutionType('institution_migration_office').GetName]"
+ country_institution_size_change_speed_institution_migration_office_mult_desc: "Wie schnell Sie die Größe von [GetInstitutionType('institution_migration_office').GetName] ändern"
 
 #Diplo Stuff
  ut_international_diplomatic_power_bloc_merge: "Machtblöcke vereinigen"
