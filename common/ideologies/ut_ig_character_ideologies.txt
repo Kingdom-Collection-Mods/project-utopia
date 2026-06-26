@@ -1183,9 +1183,10 @@ ut_liberal_feminism_leader = {
 	#no lawgroup_trade_policy
 
 	lawgroup_labor_rights = {
+		law_no_workers_rights = neutral
 		law_regulatory_bodies = neutral
 		law_worker_protections = disapprove
-		law_ut_minimum_wage = disapprove
+		law_ut_minimum_wage = strongly_disapprove
 	}
 
 	#more against old laws
