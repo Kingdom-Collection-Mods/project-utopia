@@ -677,7 +677,7 @@ ut_new_dawn_common_pressure_progress_monthly = {
 			}
 			change_variable = {
 				name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy
-				divide = -0.5
+				divide = -1
 			}
 			#if it adds pressure, it is multiplied by 0.5x
 			if = {
