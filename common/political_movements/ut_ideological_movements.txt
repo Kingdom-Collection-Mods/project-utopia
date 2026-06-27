@@ -316,7 +316,6 @@ ut_movement_humanist = {
 		movement_support_high_literacy
 		movement_support_high_urbanization
 		movement_support_academics
-		movement_support_clerks
 	}
 	
 	pop_support_weight = {
@@ -517,7 +516,6 @@ ut_movement_rationalists = {
 		movement_support_high_urbanization
 		movement_support_high_literacy
 		movement_support_capitalists
-		movement_support_aristocrats
 		movement_support_officers
 		movement_support_academics
 		movement_support_bureaucrats
@@ -723,8 +721,9 @@ ut_movement_conservative = {
 	creation_trigger = {
 		has_technology_researched = political_progress_1_cosmopolitan
 	}
+
 	creation_weight = {
-		value = 100
+		value = 500
 		if = {
 			limit = {
 				owner ?= { # If a movement of this type exists in a neighbouring country, make it more likely to spawn here as well
@@ -836,7 +835,6 @@ ut_movement_conservative = {
 		movement_support_shopkeepers
 		movement_support_farmers
 		movement_support_clerks
-		movement_support_laborers
 		movement_support_soldiers
 		movement_support_peasants
 	}
