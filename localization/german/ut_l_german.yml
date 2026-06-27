@@ -2122,9 +2122,9 @@
 
  je_ut_software_era_7_required_points_tt: "Erfordert mindestens #v 1000#! $je_ut_software_points_bar_era_7$"
  je_ut_software_era_7_required_points_spend_tt: "Verbraucht #v 1000#! $je_ut_software_points_bar_era_7$"
- je_ut_software_era_7_technology_open_source_tt: "Open Source Expertise freigegeben"
- je_ut_software_era_7_technology_open_sourced_tt: "Expertise wurde als Open Source freigegeben"
- je_ut_software_era_7_technology_not_open_sourced_tt: "Expertise wurde #r nicht#! als Open Source freigegeben"
+ je_ut_software_technology_open_source_tt: "Open Source Expertise freigegeben"
+ je_ut_software_technology_open_sourced_tt: "Expertise wurde als Open Source freigegeben"
+ je_ut_software_technology_not_open_sourced_tt: "Expertise wurde #r nicht#! als Open Source freigegeben"
 
  je_ut_software_era_8: "Software-Expertise: Ära 8"
  je_ut_software_era_8_reason: "Skaliere Software-Ökosysteme durch moderne Plattform-, Cloud- und Eigentumsparadigmen."
@@ -2154,8 +2154,8 @@
 
  je_ut_software_era_8_required_points_tt: "Erfordert mindestens #v 10000#! $je_ut_software_points_bar_era_8$"
  je_ut_software_era_8_required_points_spend_tt: "Verbraucht #v 10000#! $je_ut_software_points_bar_era_8$"
- je_ut_software_era_8_technology_open_sourced_tt: "Expertise wurde als Open Source freigegeben"
- je_ut_software_era_8_technology_not_open_sourced_tt: "Expertise wurde #r nicht#! als Open Source freigegeben"
+ je_ut_software_technology_open_sourced_tt: "Expertise wurde als Open Source freigegeben"
+ je_ut_software_technology_not_open_sourced_tt: "Expertise wurde #r nicht#! als Open Source freigegeben"
 
  je_ut_software_points_bar_progress_buildings_era_6: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_6_tooltip Gebäude #!#!"
  je_ut_software_points_bar_progress_buildings_era_6_tooltip: "Summe aus [concept_occupancy] mal [concept_building_level].\nMaximaler Gewinn: 10 Software-Expertise."
