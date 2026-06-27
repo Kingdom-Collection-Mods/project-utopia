@@ -2123,14 +2123,19 @@
 
  je_ut_software_era_7_required_points_tt: "Requires at least #v 1000#! $je_ut_software_points_bar_era_7$"
  je_ut_software_era_7_required_points_spend_tt: "Consumes #v 1000#! $je_ut_software_points_bar_era_7$"
- je_ut_software_era_7_technology_open_source_tt: "Open Source Expertise"
- je_ut_software_era_7_technology_open_sourced_tt: "Expertise has been open-sourced"
- je_ut_software_era_7_technology_not_open_sourced_tt: "Expertise has #r not#! been open-sourced"
+
+ je_ut_software_technology_open_source_tt: "Open Source Expertise"
+ je_ut_software_technology_open_sourced_tt: "Expertise has been open-sourced"
+ je_ut_software_technology_not_open_sourced_tt: "Expertise has #r not#! been open-sourced"
 
  je_ut_software_era_8: "Software Expertise: Era 8"
  je_ut_software_era_8_reason: "Scale software ecosystems through modern platform, cloud, and ownership paradigms."
  je_ut_software_points_bar_era_8: "Software Expertise"
  je_ut_software_points_bar_era_8_desc: "Software Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/10,000)"
+
+ ut_open_source_era_8_title: "Open Source Expertise"
+ ut_open_source_era_8_desc: "Open collaboration spreads software expertise across the entire globe and enables the development of modern software ecosystems."
+ ut_open_source_era_8_flavor: "Open collaboration spreads software expertise across the entire globe and enables the development of modern software ecosystems. Open source software is often developed in a public, collaborative manner, allowing anyone to contribute improvements or use the software freely. This approach has led to rapid innovation and widespread adoption of software technologies, making advanced software expertise accessible to individuals and organizations worldwide."
 
  je_ut_software_era_8_1_version_control: "Version Control"
  je_ut_software_era_8_1_version_control_desc: "Version control systems enable collaborative development, safer releases, and rapid iteration."
@@ -2155,8 +2160,6 @@
 
  je_ut_software_era_8_required_points_tt: "Requires at least #v 10000#! $je_ut_software_points_bar_era_8$"
  je_ut_software_era_8_required_points_spend_tt: "Consumes #v 10000#! $je_ut_software_points_bar_era_8$"
- je_ut_software_era_8_technology_open_sourced_tt: "Expertise has been open-sourced"
- je_ut_software_era_8_technology_not_open_sourced_tt: "Expertise has #r not#! been open-sourced"
 
  je_ut_software_points_bar_progress_buildings_era_6: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_6_tooltip Buildings #!#!"
  je_ut_software_points_bar_progress_buildings_era_6_tooltip: "Sum of [concept_occupancy] times [concept_building_level].\nMaximum gain is 10 Software Expertise."

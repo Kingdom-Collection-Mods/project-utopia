@@ -131,7 +131,7 @@ je_ut_software_era_7_1_operating_system = {
 				}
 			}
 			custom_tooltip = {
-				text = je_ut_software_era_7_technology_open_sourced_tt
+				text = je_ut_software_technology_open_sourced_tt
 				has_global_variable = je_ut_software_era_7_1_operating_system_foss_var
 			}
 		}
@@ -172,7 +172,7 @@ je_ut_software_era_7_2_relational_database = {
 				}
 			}
 			custom_tooltip = {
-				text = je_ut_software_era_7_technology_open_sourced_tt
+				text = je_ut_software_technology_open_sourced_tt
 				has_global_variable = je_ut_software_era_7_2_relational_database_foss_var
 			}
 		}
@@ -214,7 +214,7 @@ je_ut_software_era_7_3_object_oriented_language = {
 				}
 			}
 			custom_tooltip = {
-				text = je_ut_software_era_7_technology_open_sourced_tt
+				text = je_ut_software_technology_open_sourced_tt
 				has_global_variable = je_ut_software_era_7_3_object_oriented_language_foss_var
 			}
 		}
@@ -251,14 +251,14 @@ je_ut_software_era_7_open_source = {
 			AND = {
 				has_modifier = je_ut_software_era_7_1_operating_system_mod
 				custom_tooltip = {
-					text = je_ut_software_era_7_technology_not_open_sourced_tt
+					text = je_ut_software_technology_not_open_sourced_tt
 					NOT = { has_global_variable = je_ut_software_era_7_1_operating_system_foss_var }
 				}
 			}
 			AND = {
 				has_modifier = je_ut_software_era_7_2_relational_database_mod
 				custom_tooltip = {
-					text = je_ut_software_era_7_technology_not_open_sourced_tt
+					text = je_ut_software_technology_not_open_sourced_tt
 					OR = {
 						NOT = { has_global_variable = je_ut_software_era_7_1_operating_system_foss_var }
 						NOT = { has_global_variable = je_ut_software_era_7_2_relational_database_foss_var }
@@ -268,7 +268,7 @@ je_ut_software_era_7_open_source = {
 			AND = {
 				has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
 				custom_tooltip = {
-					text = je_ut_software_era_7_technology_not_open_sourced_tt
+					text = je_ut_software_technology_not_open_sourced_tt
 					OR = {
 						NOT = { has_global_variable = je_ut_software_era_7_1_operating_system_foss_var }
 						NOT = { has_global_variable = je_ut_software_era_7_2_relational_database_foss_var }
@@ -309,8 +309,8 @@ je_ut_software_era_8_1_version_control = {
 				}
 			}
 			custom_tooltip = {
-				text = je_ut_software_era_8_technology_open_sourced_tt
-				always = no
+				text = je_ut_software_technology_open_sourced_tt
+				has_global_variable = je_ut_software_era_8_1_version_control_foss_var
 			}
 		}
 	}
@@ -349,8 +349,8 @@ je_ut_software_era_8_2_no_sql = {
 				}
 			}
 			custom_tooltip = {
-				text = je_ut_software_era_8_technology_open_sourced_tt
-				always = no
+				text = je_ut_software_technology_open_sourced_tt
+				has_global_variable = je_ut_software_era_8_2_no_sql_foss_var
 			}
 		}
 	}
@@ -389,8 +389,8 @@ je_ut_software_era_8_3_web_standards = {
 				}
 			}
 			custom_tooltip = {
-				text = je_ut_software_era_8_technology_open_sourced_tt
-				always = no
+				text = je_ut_software_technology_open_sourced_tt
+				has_global_variable = je_ut_software_era_8_3_web_standards_foss_var
 			}
 		}
 	}
@@ -429,8 +429,8 @@ je_ut_software_era_8_4_web_software = {
 				}
 			}
 			custom_tooltip = {
-				text = je_ut_software_era_8_technology_open_sourced_tt
-				always = no
+				text = je_ut_software_technology_open_sourced_tt
+				has_global_variable = je_ut_software_era_8_4_web_software_foss_var
 			}
 		}
 	}
@@ -469,8 +469,8 @@ je_ut_software_era_8_5_cloud_computing = {
 				}
 			}
 			custom_tooltip = {
-				text = je_ut_software_era_8_technology_open_sourced_tt
-				always = no
+				text = je_ut_software_technology_open_sourced_tt
+				has_global_variable = je_ut_software_era_8_5_cloud_computing_foss_var
 			}
 		}
 	}
@@ -509,8 +509,8 @@ je_ut_software_era_8_6_ownership_model_language = {
 				}
 			}
 			custom_tooltip = {
-				text = je_ut_software_era_8_technology_open_sourced_tt
-				always = no
+				text = je_ut_software_technology_open_sourced_tt
+				has_global_variable = je_ut_software_era_8_6_ownership_model_language_foss_var
 			}
 		}
 	}
@@ -537,12 +537,88 @@ je_ut_software_era_8_open_source = {
 	visible = { always = yes }
 
 	possible = {
-		always = no
+		hidden_trigger = {
+			NOT = {
+				has_variable = je_ut_software_era_8_open_source_button_pressed
+			}
+		}
+		OR = {
+			AND = {
+				has_modifier = je_ut_software_era_8_1_version_control_mod
+				custom_tooltip = {
+					text = je_ut_software_technology_not_open_sourced_tt
+					NOT = { has_global_variable = je_ut_software_era_8_1_version_control_foss_var }
+				}
+			}
+			AND = {
+				has_modifier = je_ut_software_era_8_2_no_sql_mod
+				custom_tooltip = {
+					text = je_ut_software_technology_not_open_sourced_tt
+					OR = {
+						NOT = { has_global_variable = je_ut_software_era_8_1_version_control_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_8_2_no_sql_foss_var }
+					}
+				}
+			}
+			AND = {
+				has_modifier = je_ut_software_era_8_3_web_standards_mod
+				custom_tooltip = {
+					text = je_ut_software_technology_not_open_sourced_tt
+					OR = {
+						NOT = { has_global_variable = je_ut_software_era_8_1_version_control_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_8_2_no_sql_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_8_3_web_standards_foss_var }
+					}
+				}
+			}
+			AND = {
+				has_modifier = je_ut_software_era_8_4_web_software_mod
+				custom_tooltip = {
+					text = je_ut_software_technology_not_open_sourced_tt
+					OR = {
+						NOT = { has_global_variable = je_ut_software_era_8_1_version_control_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_8_2_no_sql_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_8_3_web_standards_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_8_4_web_software_foss_var }
+					}
+				}
+			}
+			AND = {
+				has_modifier = je_ut_software_era_8_5_cloud_computing_mod
+				custom_tooltip = {
+					text = je_ut_software_technology_not_open_sourced_tt
+					OR = {
+						NOT = { has_global_variable = je_ut_software_era_8_1_version_control_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_8_2_no_sql_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_8_3_web_standards_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_8_4_web_software_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_8_5_cloud_computing_foss_var }
+					}
+				}
+			}
+			AND = {
+				has_modifier = je_ut_software_era_8_6_ownership_model_language_mod
+				custom_tooltip = {
+					text = je_ut_software_technology_not_open_sourced_tt
+					OR = {
+						NOT = { has_global_variable = je_ut_software_era_8_1_version_control_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_8_2_no_sql_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_8_3_web_standards_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_8_4_web_software_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_8_5_cloud_computing_foss_var }
+						NOT = { has_global_variable = je_ut_software_era_8_6_ownership_model_language_foss_var }
+					}
+				}
+			}
+		}
 	}
 
 	effect = {
+		set_variable = je_ut_software_era_8_open_source_button_pressed
+		trigger_event = {
+			id = utopia_mod.8
+		}
 	}
-
 	ai_chance = {
 		value = 100
 	}
