@@ -1596,13 +1596,13 @@ law_registration_process = {
 		country_mass_migration_attraction_mult = -0.2
 		state_migration_pull_mult = -0.2
 		country_institution_cost_institution_migration_office_mult = -0.5
-		country_institution_size_change_speed_institution_migration_office_mult = -0.5
+		country_institution_size_change_speed_institution_migration_office_mult = 0.5
 	}
 	
 	institution = institution_migration_office
 	institution_modifier = {
 		country_mass_migration_attraction_mult = -0.2
-		state_migration_pull_mult = -0.1
+		state_migration_pull_mult = -0.2
 	}
 
 	ai_enact_weight_modifier = { #Petitions
@@ -1611,6 +1611,12 @@ law_registration_process = {
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
+		}
+	}
+	on_enact = {
+		change_institution_investment_level = {
+			institution = institution_migration_office
+			investment = 2
 		}
 	}
 }
