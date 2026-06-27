@@ -372,7 +372,7 @@
  je_ut_new_dawn_critical_lower_bound_fail_tt: "Hat #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! [concept_ut_nd_progress_points]"
  je_ut_new_dawn_critical_lower_bound_fail_pressure_tt: "Hat #r 50#! [concept_ut_nd_pressure] Druck"
  je_ut_new_dawn_common_pressure_progress_from_sol_yoy: "[concept_sol] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_sol_yoy_tooltip jährliche Veränderung#!#!"
- je_ut_new_dawn_common_pressure_progress_from_sol_yoy_tooltip: "Jeder jährliche Anstieg von [concept_sol] um 1 senkt den Druck um 2 Punkte. Ein Verlust von $concept_sol$ erhöht den Druck. [concept_sol] im letzten Jahr: [Country.MakeScope.Var('je_ut_new_dawn_prev_average_sol').GetValue|1]"
+ je_ut_new_dawn_common_pressure_progress_from_sol_yoy_tooltip: "Jeder jährliche Anstieg von [concept_sol] um 1 senkt den Druck um 1 Punkte. Ein Verlust von $concept_sol$ erhöht den Druck. [concept_sol] im letzten Jahr: [Country.MakeScope.Var('je_ut_new_dawn_prev_average_sol').GetValue|1]"
  je_ut_new_dawn_common_pressure_progress_from_legitimacy: "#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_legitimacy_tooltip erwartet#!#! [concept_legitimacy]"
  je_ut_new_dawn_common_pressure_progress_from_legitimacy_tooltip: "100 [concept_legitimacy] senken den Druck um 1.\n75   [concept_legitimacy] sind neutral.\n0     [concept_legitimacy] erhöhen den Druck um 3."
  je_ut_new_dawn_common_pressure_progress_from_expected_sol: "#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_expected_sol_tooltip erwartet#!#! [concept_sol]"
