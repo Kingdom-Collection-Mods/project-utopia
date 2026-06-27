@@ -1,4 +1,4 @@
-###Heavy Industry
+﻿###Heavy Industry
 ##Heavy Machinery
 pm_heavy_machinery_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/airship_mooring_post.dds"
@@ -89,7 +89,7 @@ pm_heavy_machinery_analog_process = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 25
+			state_pollution_generation_add = 20
 		}
 	}
 	
@@ -127,7 +127,7 @@ pm_heavy_machinery_electronics_process = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 25
+			state_pollution_generation_add = 15
 		}
 	}
 	
@@ -1114,7 +1114,7 @@ pm_aluminum_four_process = {
 
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 25
+			state_pollution_generation_add = 30
 		}
 	}
 
