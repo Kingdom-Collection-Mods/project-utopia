@@ -1,4 +1,4 @@
-﻿l_german:
+l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -381,6 +381,8 @@
  je_ut_new_dawn_common_pressure_progress_from_expected_sol_tooltip: "Erwarteter [concept_sol] startet bei 0 und wird durch Gesellschafts-[concept_technology] erhöht. 50 [concept_sol] senken den Druck um 0.5."
  je_ut_new_dawn_common_pressure_progress_from_core_progress: "[concept_ut_nd_progress_points] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_core_progress_tooltip gewonnen#!#!"
  je_ut_new_dawn_common_pressure_progress_from_core_progress_tooltip: "Jeder gewonnene [concept_ut_nd_progress_points] senkt den Druck um 0,5 Punkte."
+
+ country_expected_sol_for_new_dawn_pressure: "Erwarteter [concept_sol] für [concept_ut_nd_pressure]"
 
  ut_new_dawn_communist_focus: "Kommunistischer Fokus"
  ut_new_dawn_communist_focus_desc: "#italic Vorschau: Enthält eine Basisimplementierung von [concept_ut_nd_abilities] und [concept_ut_nd_milestones].#!"
@@ -810,6 +812,16 @@
  ideology_patriotic_democratic: "Bürgerlicher Patriotismus"
  ideology_patriotic_democratic_desc: "#lore Diese Gruppe betont eine starke nationale Identität, Patriotismus und oft autoritäre Regierungsführung. Sie priorisieren nationale Einheit und können aggressive Außenpolitiken unterstützen. Ersetzt [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_democrat_core] variation.#!"
 
+ ut_ideology_environmentalist_movement: "Umweltschutz"
+ ut_ideology_environmentalist_movement_desc: "Umweltschutzideologien legen den Schwerpunkt auf den Schutz der Umwelt und eine nachhaltige Entwicklung. Sie setzen sich für politische Maßnahmen ein, die dem Klimawandel entgegenwirken, natürliche Ressourcen schonen und das ökologische Gleichgewicht fördern."
+
+ ut_ideology_sexual_liberation_movement: "Sexual Liberation"
+ ut_ideology_sexual_liberation_movement_desc: "Sexual Liberation ideologies advocate for the freedom of individuals to express their sexuality without societal constraints. They support all sexual rights and aim to eliminate discrimination based on sexual orientation and gender identity."
+
+ ut_ideology_conservative_movement: "Konservativ"
+ ut_ideology_conservative_movement_desc: "Konservative Ideologien betonen die Bewahrung traditioneller Institutionen, Werte und Praktiken. Sie setzen sich für schrittweise Veränderungen ein und priorisieren oft Stabilität, Ordnung und Kontinuität in der Gesellschaft."
+
+
  ig_trait_urbanist_loyal: "Leistungsgesellschaft"
  ig_trait_urbanist_loyal_desc: "Diese Gruppe setzt sich für die freie Bewegung von Menschen über Grenzen hinweg ein, da sie glaubt, dass dies den kulturellen Austausch und wirtschaftliche Chancen fördert. Sie lehnen restriktive Einwanderungspolitiken ab und betonen die internationale Zusammenarbeit."
  ig_trait_urbanist_happy: "Bildungszugang"
@@ -822,13 +834,15 @@
  ut_movement_rationalists_name: "Rationalistenbewegung"
  ut_movement_conservative_name: "Konservative Bewegung"
  ut_movement_sexual_liberation_name: "Sexuelle Befreiungsbewegung"
+ ut_movement_environmentalist_name: "Umweltbewegung"
 
  ut_movement_cosmopolitan_unlock_tt: "Schaltet [GetIdeology('ut_ideology_cosmopolitan').GetName] [concept_political_movement] frei"
  ut_ig_ideology_urbanist_economy_base_unlock_tt: "Schaltet [GetIdeology('ideology_urbanist_economy_base').GetName] für $ig_urbanists$ frei"
  ut_movement_humanist_unlock_tt: "Schaltet [GetIdeology('ideology_urbanist_human_rights_base').GetName] [concept_political_movement] frei"
  ut_movement_rationalists_unlock_tt: "Schaltet [GetIdeology('ideology_urbanist_economy_base').GetName] [concept_political_movement] frei"
  ut_movement_conservative_unlock_tt: "Schaltet [GetIdeology('ut_ideology_reactionary_alternative').GetName] [concept_political_movement] frei"
- ut_movement_sexual_liberation_unlock_tt: "Schaltet Sexuelle Befreiung [concept_political_movement] frei (in Arbeit)"
+ ut_movement_sexual_liberation_unlock_tt: "Schaltet Sexuelle Befreiung [concept_political_movement] frei"
+ ut_movement_environmentalist_unlock_tt: "Schaltet Umweltschutz [concept_political_movement] frei"
 
  ut_liberal_feminism_leader: "Liberale Feministin"
  ut_liberal_feminism_leader_desc: "Liberale Feministinnen setzen sich für Emanzipation ein und befürworten [GetIdeology('ideology_market_liberal').GetName]-Reformen. Wahrscheinlicher bei [concept_ut_nd_democrat_core]."
@@ -1179,7 +1193,8 @@
  ut_fund_ideology_proposal_declined_desc: "[TARGET_COUNTRY.GetName] hat unseren Vorschlag zu $ut_fund_ideology$ abgelehnt."
  ut_fund_ideology_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] finanziert politisch nahestehende Gruppen in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] und erhöht so den ideologischen Fortschritt von [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] in Richtung der Ideologie von [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAdjectiveNoFormatting].\n\n$ut_fund_ideology_effect$"
  ut_fund_ideology_desc: "Finanziere politisch nahestehende Gruppen in einem Zielland ohne herrschende Ideologie, um deren ideologischen Fortschritt zu steigern.\n\n$ut_fund_ideology_effect$"
- ut_fund_ideology_effect: "Zielland erhält #g 0,25#! [concept_ut_nd_progress_points] für die Kernideologie des Quelllandes."
+ ut_fund_ideology_effect_progress: "Zielland erhält #g 0,25#! [concept_ut_nd_progress_points] für die Kernideologie des Quelllandes."
+ ut_fund_ideology_effect_focus: "Zielland [Concept('concept_ut_nd_focus', 'fokusiert')] auf die Ideologie des Quelllandes, wenn nicht auf Abklingzeit."
  country_new_dawn_fund_ideology_efficiency_add: "[GetDiplomaticActionType('ut_fund_ideology').GetName] [concept_ut_nd_progress_points] Gewinn"
  country_new_dawn_fund_ideology_efficiency_add_desc: "Das Zielland von [GetDiplomaticActionType('ut_fund_ideology').GetName] erhält zusätzliche [concept_ut_nd_progress_points] in Richtung der Kernideologie des Quelllandes."
 

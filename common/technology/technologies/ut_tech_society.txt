@@ -1,4 +1,4 @@
-﻿##Infrastructure
+##Infrastructure
 highway_projects = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/40s_highway.dds"
@@ -499,6 +499,10 @@ epa_two = {
 
 	unlocking_technologies = {
 		epa_one
+	}
+
+	on_researched = {
+		custom_tooltip = ut_movement_environmentalist_unlock_tt
 	}
 	
 	ai_weight = {

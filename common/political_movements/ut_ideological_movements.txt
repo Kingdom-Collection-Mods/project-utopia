@@ -702,7 +702,7 @@ ut_movement_rationalists = {
 ut_movement_conservative = {
 	category = movement_category_ideological
 
-	ideology = ut_ideology_reactionary_alternative
+	ideology = ut_ideology_conservative_movement
 	character_ideologies = {
 		ideology_traditionalist
 		ideology_protectionist
@@ -897,14 +897,14 @@ ut_movement_conservative = {
 					is_pop_type = aristocrats
 				}
 				add = {
-					value = 15
+					value = 30
 					desc = "POP_ARISTOCRATS"
 				}
 			}
 			else = {
 				add = {
-					value = 6
-					desc = "UPPER_NO_ICON"
+					value = 30
+					desc = "POP_CAPITALISTS"
 				}
 			}
 		}
@@ -917,7 +917,8 @@ ut_movement_conservative = {
 					is_pop_type = clergymen
 				}
 				add = {
-					value = 15
+					#religious backbone of conservatism
+					value = 30
 					desc = "POP_CLERGYMEN"
 				}
 			}
@@ -926,7 +927,7 @@ ut_movement_conservative = {
 					is_pop_type = shopkeepers
 				}
 				add = {
-					value = 12
+					value = 30
 					desc = "POP_SHOPKEEPERS"
 				}
 			}
@@ -935,7 +936,7 @@ ut_movement_conservative = {
 					is_pop_type = farmers
 				}
 				add = {
-					value = 20
+					value = 25
 					desc = "POP_FARMERS"
 				}
 			}
@@ -964,7 +965,8 @@ ut_movement_conservative = {
 					is_pop_type = laborers
 				}
 				add = {
-					value = -3
+					#rural / uneducated traditionalist working class backs conservatism
+					value = 8
 					desc = "POP_LABORERS"
 				}
 			}
@@ -973,7 +975,8 @@ ut_movement_conservative = {
 					is_pop_type = soldiers
 				}
 				add = {
-					value = 10
+					#jingoist leaning
+					value = 12
 					desc = "POP_SOLDIERS"
 				}
 			}
@@ -982,7 +985,8 @@ ut_movement_conservative = {
 					is_pop_type = peasants
 				}
 				add = {
-					value = 12
+					#rural traditionalist backbone
+					value = 18
 					desc = "POP_PEASANTS"
 				}
 			}
@@ -1265,7 +1269,7 @@ ut_movement_sexual_liberation = {
 					is_pop_type = service_workers
 				}
 				add = {
-					value = 30
+					value = 25
 					desc = "POP_SERVICE_WORKERS"
 				}
 			}
