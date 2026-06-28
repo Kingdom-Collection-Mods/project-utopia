@@ -734,6 +734,18 @@ ut_movement_conservative = {
 				value = 2
 			}
 		}
+		if = {
+			limit = {
+				owner ?= { 
+					OR = {
+						has_modifier = ut_new_dawn_core_democratic_mod
+					}
+				}
+			}
+			multiply = {
+				value = 2
+			}
+		}
 	}
 	on_created = {
 		add_movement_enthusiasm_modifier = yes
@@ -1072,8 +1084,8 @@ ut_movement_sexual_liberation = {
 
 	ideology = ut_ideology_sexual_liberation_movement
 	character_ideologies = {
-		ideology_liberal_modern
-		ideology_liberal_democratic
+		ideology_liberal_leader
+		ut_liberal_feminism_leader
 		ut_radical_feminism_leader
 		ut_social_feminism_leader
 	}
@@ -1127,8 +1139,7 @@ ut_movement_sexual_liberation = {
 			has_ideology = ideology:ut_radical_feminism_leader
 			has_ideology = ideology:ut_social_feminism_leader
 			has_ideology = ideology:ut_ideology_cosmopolitan_leader
-			has_ideology = ideology:ideology_liberal_modern
-			has_ideology = ideology:ideology_liberal_democratic
+			has_ideology = ideology:ideology_liberal_leader
 			has_ideology = ideology:ideology_socialist_democratic
 			has_ideology = ideology:ideology_humanitarian
 			has_ideology = ideology:ideology_humanitarian_royalist
@@ -1301,13 +1312,22 @@ ut_movement_sexual_liberation = {
 					is_pop_type = clerks
 				}
 				add = {
-					value = 15
+					value = 9
 					desc = "POP_CLERKS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = soldiers
+				}
+				add = {
+					value = 6
+					desc = "POP_SOLDIERS"
 				}
 			}
 			else = {
 				add = {
-					value = 10
+					value = 3
 					desc = "LOWER_NO_ICON"
 				}
 			}
@@ -1409,16 +1429,18 @@ ut_movement_environmentalist = {
 	ideology = ut_ideology_environmentalist_movement
 	character_ideologies = {
 		ut_ideology_environmentalist_leader
+		ideology_pacifist
 	}
 
 	disband_trigger = {
+		has_law_or_variant = law_type:law_environment_protection_institute_three
 	}
 	on_disbanded = {}
 
 	creation_trigger = {
-		always = no
 		has_technology_researched = epa_two
 	}
+
 	creation_weight = {
 		value = 500
 		if = {
@@ -1446,6 +1468,7 @@ ut_movement_environmentalist = {
 	character_support_trigger = {
 		OR = {
 			has_ideology = ideology:ut_ideology_environmentalist_leader
+			has_ideology = ideology:ideology_pacifist
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_trade_unions

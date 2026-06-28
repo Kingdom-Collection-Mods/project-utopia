@@ -1,5 +1,5 @@
 ﻿ut_ideology_environmentalist_movement = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_Agrarian.dds"
+	icon = "gfx/interface/icons/ideology_icons/agrarian.dds"
 
 	lawgroup_environment_protection = {
 		law_no_environment_protection = strongly_disapprove
@@ -32,7 +32,7 @@
 }
 
 ut_ideology_sexual_liberation_movement = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_Agrarian.dds"
+	icon = "gfx/interface/icons/ideology_icons/individualist.dds"
 
 	lawgroup_lgbt_rights = {
 		law_lgbt_rights_0 = strongly_disapprove
