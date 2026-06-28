@@ -283,6 +283,7 @@ je_ut_software_era_7_open_source = {
 		set_variable = je_ut_software_era_7_open_source_button_pressed
 		trigger_event = {
 			id = utopia_mod.7
+			popup = yes
 		}
 	}
 	ai_chance = {
@@ -617,6 +618,7 @@ je_ut_software_era_8_open_source = {
 		set_variable = je_ut_software_era_8_open_source_button_pressed
 		trigger_event = {
 			id = utopia_mod.8
+			popup = yes
 		}
 	}
 	ai_chance = {
