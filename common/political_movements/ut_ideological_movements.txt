@@ -1,4 +1,4 @@
-#any new leader ideologies that should spawn on leaders must be added to new utopia movements
+﻿#any new leader ideologies that should spawn on leaders must be added to new utopia movements
 ut_movement_cosmopolitan = {
 	category = movement_category_ideological
 
@@ -61,6 +61,7 @@ ut_movement_cosmopolitan = {
 	
 	pop_support_trigger = {
 		NOR = {
+			is_pop_type = aristocrats
 			is_pop_type = clergymen
 			is_pop_type = peasants
 			is_pop_type = slaves
@@ -307,7 +308,9 @@ ut_movement_humanist = {
 	
 	pop_support_trigger = {
 		NOR = {
+			is_pop_type = officers
 			is_pop_type = peasants
+			is_pop_type = clerks
 			is_pop_type = slaves
 		}
 	}
@@ -453,7 +456,7 @@ ut_movement_rationalists = {
 	ideology = ideology_urbanist_economy_base
 	character_ideologies = {
 		ideology_reformer
-		ideology_laissez_faire
+		ideology_market_liberal
 		ideology_social_democrat
 		ut_liberal_feminism_leader
 	}
@@ -476,7 +479,6 @@ ut_movement_rationalists = {
 	character_support_trigger = {
 		OR = {
 			has_ideology = ideology:ideology_reformer
-			has_ideology = ideology:ideology_laissez_faire
 			has_ideology = ideology:ideology_social_democrat
 			has_ideology = ideology:ideology_market_liberal
 			has_ideology = ideology:ut_liberal_feminism_leader
@@ -494,7 +496,7 @@ ut_movement_rationalists = {
 			limit = {
 				OR = {
 					has_ideology = ideology:ideology_reformer
-					has_ideology = ideology:ideology_laissez_faire
+					has_ideology = ideology:ideology_market_liberal
 					has_ideology = ideology:ideology_social_democrat
 				}
 			}
@@ -506,7 +508,9 @@ ut_movement_rationalists = {
 	
 	pop_support_trigger = {
 		NOR = {
+			is_pop_type = aristocrats
 			is_pop_type = clergymen
+			is_pop_type = laborers
 			is_pop_type = peasants
 			is_pop_type = slaves
 		}
@@ -756,9 +760,10 @@ ut_movement_conservative = {
 			has_ideology = ideology:ideology_authoritarian
 			has_ideology = ideology:ideology_luddite
 			has_ideology = ideology:ideology_jingoist_leader
+			ut_has_ideology_any_plutocratic = yes
 			scope:interest_group ?= {
 				OR = {
-					has_ideology = ideology:ideology_reactionary
+					ut_has_ideology_any_reactionary = yes
 					has_ideology = ideology:ideology_patriarchal
 				}
 			}
@@ -1075,25 +1080,37 @@ ut_movement_conservative = {
 #based on anti slavery
 ut_movement_sexual_liberation = {
 	category = movement_category_ideological
-	can_have_slave_supporters = yes
 
-	ideology = ideology_anti_slavery_movement
+	ideology = ut_ideology_sexual_liberation_movement
 	character_ideologies = {
-		ideology_humanitarian
+		ideology_liberal_modern
+		ideology_liberal_democratic
+		ut_radical_feminism_leader
+		ut_social_feminism_leader
 	}
 
 	disband_trigger = {
-		has_law_or_variant = law_type:law_slavery_banned
+		has_law_or_variant = law_type:law_lgbt_rights_3
+		
+		#todo rework later, when there is a more transparent way to the player to get these amendments
+		active_law:lawgroup_lgbt_rights ?= {
+			OR = {
+				has_amendment = amendment_type:ut_lgbt_same_sex_unions_amendment
+				has_amendment = amendment_type:ut_lgbt_same_sex_marriage_amendment
+				has_amendment = amendment_type:ut_lgbt_sexual_self_determination_amendment
+			}
+		}
 	}
 	on_disbanded = {}
 
 	creation_trigger = {
-		always = no
-		NOT = { has_law_or_variant = law_type:law_lgbt_rights_1 }
-		has_technology_researched = empiricism
+		NOT = { has_modifier = ut_new_dawn_core_autocratic_mod }
+		NOT = { has_modifier = ut_new_dawn_core_fascist_mod }
+		has_technology_researched = lgbt_movement
 	}
+
 	creation_weight = {
-		value = 100
+		value = 500
 		if = {
 			limit = {
 				owner ?= { # If a movement of this type exists in a neighbouring country, make it more likely to spawn here as well
@@ -1118,12 +1135,18 @@ ut_movement_sexual_liberation = {
 
 	character_support_trigger = {
 		OR = {
-			has_ideology = ideology:ideology_abolitionist
+			has_ideology = ideology:ut_radical_feminism_leader
+			has_ideology = ideology:ut_social_feminism_leader
+			has_ideology = ideology:ut_ideology_cosmopolitan_leader
+			has_ideology = ideology:ideology_liberal_modern
+			has_ideology = ideology:ideology_liberal_democratic
+			has_ideology = ideology:ideology_socialist_democratic
 			has_ideology = ideology:ideology_humanitarian
 			has_ideology = ideology:ideology_humanitarian_royalist
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_urbanists
 			}
 		}
 	}
@@ -1132,14 +1155,21 @@ ut_movement_sexual_liberation = {
 		if = {
 			limit = {
 				OR = {
-					has_ideology = ideology:ideology_abolitionist
-					has_ideology = ideology:ideology_humanitarian
-					has_ideology = ideology:ideology_humanitarian_royalist
+					has_ideology = ideology:ideology_liberal_modern
+					has_ideology = ideology:ideology_liberal_democratic
+					has_ideology = ideology:ut_radical_feminism_leader
+					has_ideology = ideology:ut_social_feminism_leader
 				}
 			}
 			multiply = {
-				value = 5
+				value = 2
 			}
+		}
+	}
+
+	pop_support_trigger = {
+		NOT = {
+			is_pop_type = clergymen
 		}
 	}
 
@@ -1148,11 +1178,10 @@ ut_movement_sexual_liberation = {
 		movement_support_high_literacy
 		movement_support_capitalists
 		movement_support_academics
-		movement_support_clergymen
+		movement_support_engineers
 		movement_support_bureaucrats
+		movement_support_service_workers
 		movement_support_clerks
-		movement_support_slaves
-		movement_support_je_acw_countdown
 	}
 
 	pop_support_weight = {
@@ -1194,7 +1223,7 @@ ut_movement_sexual_liberation = {
 		}
 		add = {
 			desc = "URBAN_STATE"
-			value = 3
+			value = 20
 			multiply = state.state_urbanization_rate
 		}
 
@@ -1207,7 +1236,7 @@ ut_movement_sexual_liberation = {
 					is_pop_type = capitalists
 				}
 				add = {
-					value = 12
+					value = 6
 					desc = "POP_CAPITALISTS"
 				}
 			}
@@ -1227,8 +1256,26 @@ ut_movement_sexual_liberation = {
 					is_pop_type = academics
 				}
 				add = {
-					value = 30
+					value = 25
 					desc = "POP_ACADEMICS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = service_workers
+				}
+				add = {
+					value = 30
+					desc = "POP_SERVICE_WORKERS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = engineers
+				}
+				add = {
+					value = 10
+					desc = "POP_ENGINEERS"
 				}
 			}
 			else_if = {
@@ -1236,7 +1283,7 @@ ut_movement_sexual_liberation = {
 					is_pop_type = clergymen
 				}
 				add = {
-					value = 30
+					value = 0
 					desc = "POP_CLERGYMEN"
 				}
 			}
@@ -1245,7 +1292,7 @@ ut_movement_sexual_liberation = {
 					is_pop_type = bureaucrats
 				}
 				add = {
-					value = 15
+					value = 10
 					desc = "POP_BUREAUCRATS"
 				}
 			}
@@ -1269,116 +1316,10 @@ ut_movement_sexual_liberation = {
 					desc = "POP_CLERKS"
 				}
 			}
-			else_if = {
-				limit = {
-					is_pop_type = slaves
-				}
-				add = {
-					value = 50
-					desc = "POP_SLAVES"
-				}
-			}
 			else = {
 				add = {
 					value = 10
 					desc = "LOWER_NO_ICON"
-				}
-			}
-		}
-
-		if = {
-			limit = {
-				owner = {
-					OR = {
-						has_law_or_variant = law_type:law_legacy_slavery
-						has_law_or_variant = law_type:law_colonial_slavery
-					}
-					OR = {
-						country_has_primary_culture = cu:yankee
-						country_has_primary_culture = cu:dixie
-					}
-				}
-			}
-			multiply = {
-				desc = "SLAVE_STATE"
-				value = 1.0
-
-				if = {
-					limit = {
-						state = { is_slave_state = yes }
-					}
-
-					if = {
-						limit = {
-							OR = {
-								is_pop_type = aristocrats
-								is_pop_type = clergymen
-								is_pop_type = officers
-								is_pop_type = farmers
-							}
-						}
-
-						subtract = 0.95
-					}
-					else = {
-						subtract = 0.75
-					}
-				}
-			}
-		}
-		else = {
-			multiply = {
-				desc = "SLAVE_STATE"
-				value = 1.0
-				if = {
-					limit = {
-						state = { is_slave_state = yes }
-						OR = {
-							is_pop_type = aristocrats
-							is_pop_type = clergymen
-							is_pop_type = officers
-							is_pop_type = farmers
-						}
-					}
-					subtract = 0.5
-				}
-			}
-		}
-
-		if = {
-			limit = {
-				owner ?= { has_journal_entry = je_acw_countdown }
-			}
-
-			multiply = {
-				value = 3.0
-				desc = "je_acw_countdown"
-			}
-		}
-
-		if = { # Colonial slavery is out of sight and out of mind
-			limit = {
-				owner ?= { has_law_or_variant = law_type:law_colonial_slavery }
-			}
-			if = {
-				limit = {
-					owner ?= {
-						any_political_movement = { # Pops would rather support liberal/radical movements if slavery is confined to the colonies
-							OR = {
-								is_political_movement_type = movement_liberal
-								is_political_movement_type = movement_radical
-								is_political_movement_type = movement_labor
-							}
-						}
-					}
-				}
-				multiply = {
-					value = 0.5
-				}
-			}
-			else = {
-				multiply = {
-					value = 0.75
 				}
 			}
 		}
@@ -1392,8 +1333,8 @@ ut_movement_sexual_liberation = {
 		if = {
 			limit = {
 				owner ?= {
-					has_law_commitment = law_type:law_slavery_banned
-	}
+					has_law_commitment = law_type:law_lgbt_rights_3
+				}
 			}
 			multiply = {
 				desc = "law_commitment"
@@ -1413,141 +1354,29 @@ ut_movement_sexual_liberation = {
 
 		state_weight = {
 			value = 1
-			if = {
-			   limit = {
-					is_slave_state = yes
-					NOT = { has_variable = former_free_state }
-			   }
-			   if = {
-					limit = {
-						owner ?= {
-							OR = {
-								has_journal_entry = je_acw_countdown
-								OR = {
-									has_law_or_variant = law_type:law_legacy_slavery
-									has_law_or_variant = law_type:law_colonial_slavery
-								}
-								has_variable = slavery_recently_enacted
-							}
-							any_scope_state = {
-								OR = {
-								   is_slave_state = no
-								   has_variable = former_free_state
-								}
-							}
-						}
-					}
-					multiply = 0.0
-				}
-				else = {
-					multiply = 0.25
-				}
-			}
-
-			if = {
-				limit = { is_capital = yes }
-				if = {
-					limit = { owner ?= { has_law_or_variant = law_type:law_slavery_banned } }
-					multiply = 10.0
-				}
-				else = {
-					multiply = 0.1
-				}
-			}
 		}
 	}
 
 	secession = {
 		possible = {
 			political_movement_support >= 0.05
-			OR = {
-				scope:clout <= 0
-				owner = {
-					OR = {
-						has_journal_entry = je_acw_countdown
-						OR = {
-							has_law_or_variant = law_type:law_legacy_slavery
-							has_law_or_variant = law_type:law_colonial_slavery
-						}
-						has_variable = slavery_recently_enacted
-					}
-				}
-			}
 		}
 
 		weight = {
 			value = 50
-
-			if = {
-				limit = {
-					OR = {
-						owner ?= {
-							has_journal_entry = je_acw_countdown
-						}
-						scope:clout <= 0
-					}
-				}
-				add = 1000
-			}
 		}
 
-		forced_tags = {
-			FSA = {
-				trigger = {
-					owner ?= { has_journal_entry = je_acw_countdown }
-				}
-				weight = 1000
-			}
-			BHT = {
-				trigger = {
-					owner ?= { c:BIC ?= this }
-				}
-				weight = 1000
-			}
-		}
+		# forced_tags = {
+		# 	FSA = {
+		# 		trigger = {
+		# 			owner ?= { has_journal_entry = je_acw_countdown }
+		# 		}
+		# 		weight = 1000
+		# 	}
+		# }
 
 		state_weight = {
 			value = 1
-			if = {
-			   limit = {
-					is_slave_state = yes
-					NOT = { has_variable = former_free_state }
-			   }
-			   if = {
-					limit = {
-						owner ?= {
-							OR = {
-								has_journal_entry = je_acw_countdown
-								OR = {
-									has_law_or_variant = law_type:law_legacy_slavery
-									has_law_or_variant = law_type:law_colonial_slavery
-								}
-								has_variable = slavery_recently_enacted
-							}
-							any_scope_state = {
-								OR = {
-								   is_slave_state = no
-								   has_variable = former_free_state
-								}
-							}
-						}
-					}
-					multiply = 0.0
-				}
-				else = {
-					multiply = 0.25
-				}
-			}
-
-			# New York should be FSA capital
-			if = {
-				limit = {
-					owner ?= { has_journal_entry = je_acw_countdown }
-					state_region = s:STATE_NEW_YORK
-				}
-
-				multiply = 10.0
-			}
 		}
 	}
 
@@ -1556,60 +1385,19 @@ ut_movement_sexual_liberation = {
 			limit = {
 				owner.ruler ?= {
 					OR = {
-						has_ideology = ideology:ideology_jacksonian_democrat
-						has_ideology = ideology:ideology_slaver
-						AND = {
-							NOR = {
-								has_ideology = ideology:ideology_abolitionist
-								has_ideology = ideology:ideology_utilitarian_leader
-								has_ideology = ideology:ideology_utopian
-							}
-							interest_group = {
-								OR = {
-									has_ideology = ideology:ideology_pro_slavery
-									has_ideology = ideology:ideology_pro_slavery_colonial
-								}
-							}
-						}
+						ut_has_ideology_any_reactionary = yes
+						has_ideology = ideology:ideology_moralist
+						has_ideology = ideology:ideology_moralist_democratic
 					}
 				}
 			}
 
 			add = {
 				value = 0.1
-				desc = "RULER_IS_PRO_SLAVERY"
+				desc = "RULER_IS_ANTI_LGBT"
 			}
 		}
 
-		if = {
-			limit = {
-				owner ?= {
-					pop_type_percent_country = {
-						pop_type = slaves
-						percent > 0
-					}
-				}
-			}
-			add = {
-				value = 10
-				subtract = "owner.average_sol_for_slaves"
-				multiply = 0.05
-				max = 0.5
-				min = -0.25
-				desc = "STANDARD_OF_LIVING_FOR_SLAVES"
-			}
-		}
-
-		if = {
-			limit = {
-				owner ?= { has_journal_entry = je_acw_countdown }
-			}
-
-			add = {
-				value = 0.2
-				desc = "je_acw_countdown"
-			}
-		}
 
 		if = {
 			limit = {
@@ -1618,7 +1406,7 @@ ut_movement_sexual_liberation = {
 						owner = {
 							NOT = { THIS = ROOT.owner }
 							any_political_movement = {
-								is_political_movement_type = movement_anti_slavery
+								is_political_movement_type = ut_movement_sexual_liberation
 								is_insurrectionary = yes
 							}
 						}
@@ -1629,6 +1417,268 @@ ut_movement_sexual_liberation = {
 				desc = "NEIGHBOURING_COUNTRY_WITH_REVOLUTION"
 				value = 0.15
 			}
+		}
+	}
+}
+
+
+#based on environmentalist
+ut_movement_environmentalist = {
+	category = movement_category_ideological
+
+	ideology = ut_ideology_environmentalist_movement
+	character_ideologies = {
+		ut_ideology_environmentalist_leader
+	}
+
+	disband_trigger = {
+	}
+	on_disbanded = {}
+
+	creation_trigger = {
+		always = no
+		has_technology_researched = epa_two
+	}
+	creation_weight = {
+		value = 500
+		if = {
+			limit = {
+				owner ?= {
+					any_neighbouring_state = {
+						owner = {
+							prestige > ROOT.owner.prestige
+							any_political_movement = {
+								is_political_movement_type = ut_movement_environmentalist
+							}
+						}
+					}
+				}
+			}
+			multiply = {
+				value = 2
+			}
+		}
+	}
+	on_created = {
+		add_movement_enthusiasm_modifier = yes
+	}
+
+	character_support_trigger = {
+		OR = {
+			has_ideology = ideology:ut_ideology_environmentalist_leader
+			OR = {
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_urbanists
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
+		}
+	}
+	character_support_weight = {
+		value = 200
+		if = {
+			limit = {
+				has_ideology = ideology:ut_ideology_environmentalist_leader
+			}
+			multiply = {
+				value = 5
+			}
+		}
+	}
+
+	pop_support_trigger = {
+		NOR = {
+			is_pop_type = aristocrats
+			is_pop_type = capitalists
+			is_pop_type = peasants
+			is_pop_type = slaves
+		}
+	}
+
+	pop_support_factors = {
+		movement_support_high_urbanization
+		movement_support_high_literacy
+		movement_support_academics
+		movement_support_engineers
+		movement_support_clerks
+		movement_support_bureaucrats
+		movement_support_service_workers
+		movement_support_soldiers
+	}
+
+	pop_support_weight = {
+		if = {
+			limit = {
+				exists = scope:political_movement
+				scope:political_movement ?= {
+					OR = {
+						is_being_suppressed = yes
+						is_being_bolstered = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					scope:political_movement = {
+						is_being_suppressed = yes
+					}
+				}
+				add = {
+					value = suppression_base_value
+					multiply = {
+						value = -0.5
+						add = owner.modifier:country_suppression_attraction_factor
+					}
+					desc = "concept_suppressed"
+				}
+			}
+			else = {
+				add = {
+					value = bolstering_base_value
+					multiply = {
+						value = 0.5
+						add = owner.modifier:country_bolster_attraction_factor
+					}
+					desc = "concept_bolstered"
+				}
+			}
+		}
+
+		add = {
+			desc = "URBAN_STATE"
+			value = 10
+			multiply = state.state_urbanization_rate
+		}
+
+		if = {
+			limit = {
+				strata = upper
+			}
+			multiply = {
+				value = 0.10
+				desc = "POP_UPPER_NO_ICON"
+			}
+		}
+		else_if = {
+			limit = {
+				strata = middle
+			}
+			if = {
+				limit = {
+					is_pop_type = academics
+				}
+				add = {
+					value = 30
+					desc = "POP_ACADEMICS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = engineers
+				}
+				add = {
+					value = 35
+					desc = "POP_ENGINEERS"
+				}
+			}
+			else = {
+				add = {
+					value = 8
+					desc = "MIDDLE_NO_ICON"
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				strata = lower
+			}
+			if = {
+				limit = {
+					is_pop_type = clerks
+				}
+				add = {
+					value = 12
+					desc = "POP_CLERKS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = bureaucrats
+				}
+				add = {
+					value = 10
+					desc = "POP_BUREAUCRATS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = service_workers
+				}
+				add = {
+					value = 15
+					desc = "POP_SERVICE_WORKERS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = soldiers
+				}
+				add = {
+					value = 6
+					desc = "POP_SOLDIERS"
+				}
+			}
+			else = {
+				add = {
+					value = 3
+					desc = "LOWER_NO_ICON"
+				}
+			}
+		}
+
+		multiply = { # Illiterate pops participate at 1/10 the rate of fully literate pops
+			desc = "POP_LITERACY"
+			value = literacy_rate
+			add = 0.10
+		}
+
+		# Farmers and machinists are less likely to support environmentalism
+		if = {
+			limit = {
+				OR = {
+					is_pop_type = farmers
+					is_pop_type = machinists
+				}
+			}
+			multiply = {
+				value = 0.5
+				desc = "POP_PRIMARY_SECTOR"
+			}
+		}
+	}
+
+	revolution = {
+		possible = {
+			political_movement_support >= 0.05
+		}
+
+		weight = {
+			value = 100
+		}
+
+		state_weight = {
+			value = 1
+		}
+	}
+
+	secession = {
+		possible = {
+			political_movement_support >= 0.05
+			scope:clout <= 0
+		}
+
+		weight = {
+			value = 1000
 		}
 	}
 }

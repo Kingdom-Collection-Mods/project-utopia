@@ -1,4 +1,4 @@
-﻿ut_ideology_environmentalist_movement = {
+ut_ideology_environmentalist_movement = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_Agrarian.dds"
 
 	lawgroup_environment_protection = {
@@ -28,5 +28,23 @@
 		law_no_food_safety_protection = strongly_disapprove
 		law_food_safety_protection_institute = neutral
 		law_food_safety_protection_institute_two = approve		
+	}
+}
+
+ut_ideology_sexual_liberation_movement = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_Agrarian.dds"
+
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = strongly_disapprove
+		law_lgbt_rights_1 = strongly_disapprove
+		law_lgbt_rights_2 = neutral
+		law_lgbt_rights_3 = strongly_approve
+	}
+
+	lawgroup_free_speech = {
+		law_outlawed_dissent = strongly_disapprove
+		law_censorship = disapprove
+		law_right_of_assembly = approve
+		law_protected_speech = approve
 	}
 }
