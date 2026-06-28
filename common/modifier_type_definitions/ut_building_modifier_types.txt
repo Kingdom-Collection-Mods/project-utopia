@@ -1,4 +1,4 @@
-goods_output_heavy_machinery_add={
+﻿goods_output_heavy_machinery_add={
 	decimals=1
 	color=good
 	game_data={
@@ -747,6 +747,15 @@ country_new_dawn_fund_ideology_efficiency_add={
 	script_only = yes
 	decimals=1
 	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+country_expected_sol_for_new_dawn_pressure={
+	script_only = yes
+	decimals=1
+	color=neutral
 	game_data={
 		ai_value=0
 	}

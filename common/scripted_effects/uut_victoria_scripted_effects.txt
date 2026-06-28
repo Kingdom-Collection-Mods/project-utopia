@@ -730,17 +730,39 @@ ut_new_dawn_common_pressure_progress_monthly = {
 
 		# Gap between expected and actual SoL increases pressure.
 		set_variable = {
+			#only for player display, not for calculation
 			name = je_ut_new_dawn_common_pressure_utopia_sol
 			value = 50
 		}
 
-		if = {
+		if ={
 			limit = {
+				has_technology_researched = anti_multicultural_globalism
 				has_technology_researched = political_progress_4_greens
 			}
 			set_variable = {
 				name = je_ut_new_dawn_common_pressure_expected_sol
+				value = 40
+			}
+			change_variable = {
+				name = je_ut_new_dawn_common_pressure_utopia_sol
+				add = 40
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_technology_researched = anti_multicultural_globalism
+					has_technology_researched = political_progress_4_greens
+				}
+			}
+			set_variable = {
+				name = je_ut_new_dawn_common_pressure_expected_sol
 				value = 30
+			}
+			change_variable = {
+				name = je_ut_new_dawn_common_pressure_utopia_sol
+				add = 30
 			}
 		}
 		else_if = {
@@ -751,6 +773,10 @@ ut_new_dawn_common_pressure_progress_monthly = {
 				name = je_ut_new_dawn_common_pressure_expected_sol
 				value = 20
 			}
+			change_variable = {
+				name = je_ut_new_dawn_common_pressure_utopia_sol
+				add = 20
+			}
 		}
 		else_if = {
 			limit = {
@@ -759,6 +785,10 @@ ut_new_dawn_common_pressure_progress_monthly = {
 			set_variable = {
 				name = je_ut_new_dawn_common_pressure_expected_sol
 				value = 10
+			}
+			change_variable = {
+				name = je_ut_new_dawn_common_pressure_utopia_sol
+				add = 10
 			}
 		}
 		else = {
@@ -776,16 +806,11 @@ ut_new_dawn_common_pressure_progress_monthly = {
 			name = je_ut_new_dawn_common_pressure_progress_from_expected_sol
 			subtract = var:je_ut_new_dawn_common_pressure_expected_sol
 		}
-		
-		
-		change_variable = {
-			name = je_ut_new_dawn_common_pressure_utopia_sol
-			subtract = var:je_ut_new_dawn_common_pressure_expected_sol
-		}
 
 		change_variable = {
 			name = je_ut_new_dawn_common_pressure_progress_from_expected_sol
-			divide = var:je_ut_new_dawn_common_pressure_utopia_sol 
+			divide = 50
+			#gap is always 50
 		}
 		change_variable = {
 			name = je_ut_new_dawn_common_pressure_progress_from_expected_sol
