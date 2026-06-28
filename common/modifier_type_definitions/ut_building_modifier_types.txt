@@ -1,4 +1,4 @@
-﻿goods_output_heavy_machinery_add={
+goods_output_heavy_machinery_add={
 	decimals=1
 	color=good
 	game_data={
@@ -320,6 +320,15 @@ goods_input_utopia_artillery_mult={
 goods_output_utopia_tanks_add={
 	decimals=1
 	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_output_utopia_tanks_mult={
+	decimals=0
+	color=good
+	percent=yes
 	game_data={
 		ai_value=0
 	}

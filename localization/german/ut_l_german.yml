@@ -1,4 +1,4 @@
-l_german:
+﻿l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -2004,6 +2004,8 @@ l_german:
  goods_output_soft_drinks_add: "@soft_drinks! Soft Drinks Ausstoß"
  goods_output_soft_drinks_add_desc: "Die Menge an @soft_drinks! Soft Drinks, die das Gebäude produziert"
 
+ goods_output_utopia_tanks_mult: "@utopia_tanks! $utopia_tanks$ Ausstoß"
+ goods_output_utopia_tanks_mult_desc: "Ein Bonus oder Abzug für die Produktion von @utopia_tanks! $utopia_tanks$."
  goods_output_trucks_mult: "@trucks! $trucks$ Ausstoß"
  goods_output_trucks_mult_desc: "Ein Bonus oder Abzug für die Produktion von @trucks! $trucks$."
 
