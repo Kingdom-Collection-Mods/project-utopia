@@ -1,4 +1,4 @@
-### See power_bloc_principle_groups for grouping, primary groups for identities etc.
+﻿### See power_bloc_principle_groups for grouping, primary groups for identities etc.
 
 ### CONSTRUCTION
 
@@ -328,6 +328,8 @@ ut_principle_military_cooperation_3 = {
 		# Countries forced to join defensive plays against members
 		country_join_power_bloc_member_in_defensive_plays_bool = yes
 		country_infamy_generation_mult = -0.05
+
+		country_join_power_bloc_member_in_plays_bool = yes
 	}
 	
 	leader_modifier = {
