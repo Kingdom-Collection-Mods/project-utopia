@@ -1355,15 +1355,6 @@ ut_movement_sexual_liberation = {
 			value = 50
 		}
 
-		# forced_tags = {
-		# 	FSA = {
-		# 		trigger = {
-		# 			owner ?= { has_journal_entry = je_acw_countdown }
-		# 		}
-		# 		weight = 1000
-		# 	}
-		# }
-
 		state_weight = {
 			value = 1
 		}
