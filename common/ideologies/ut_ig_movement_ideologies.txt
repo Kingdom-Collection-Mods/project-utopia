@@ -1,4 +1,4 @@
-ut_ideology_environmentalist_movement = {
+﻿ut_ideology_environmentalist_movement = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_Agrarian.dds"
 
 	lawgroup_environment_protection = {
@@ -46,5 +46,37 @@ ut_ideology_sexual_liberation_movement = {
 		law_censorship = disapprove
 		law_right_of_assembly = approve
 		law_protected_speech = approve
+	}
+}
+
+ut_ideology_conservative_movement = {
+	icon = "gfx/interface/icons/ideology_icons/reactionary.dds"
+
+	lawgroup_governance_principles = {
+		law_monarchy = approve
+		law_theocracy = approve
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_corporate_state = neutral
+		law_social_monarchy = approve
+		law_council_republic = disapprove
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = approve
+		law_neo_ethno_state = approve
+		law_national_supremacy = strongly_approve
+		law_subjecthood = neutral
+		law_racial_segregation = approve
+		law_cultural_exclusion = neutral
+		law_multicultural = disapprove
+		law_multicultural_globalism = disapprove
+	}
+
+	lawgroup_migration = {
+		law_closed_borders = approve
+		law_migration_controls = strongly_approve
+		law_registration_process = strongly_approve
+		law_no_migration_controls = disapprove
 	}
 }
