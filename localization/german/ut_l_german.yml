@@ -263,9 +263,11 @@
 
  event_new_dawn.106.t: "Petition von [SCOPE.gsInterestGroup('government_petition_ig').GetName]"
  event_new_dawn.106.d: "Als Ausdruck unserer ideologischen Begeisterung in [SCOPE.gsInterestGroup('government_petition_ig').GetName] hat [SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetFullName] eine formelle Petition an die [ROOT.GetCountry.GetAdjective]-Regierung gerichtet, um [SCOPE.sLaw('government_petition_law').GetName] zu verabschieden."
- event_new_dawn.106.d.none: "Als Ausdruck unserer ideologischen Begeisterung feiert das Volk."
+ event_new_dawn.106.d.done: "Als Ausdruck unserer ideologischen Begeisterung feiert das Volk."
+ event_new_dawn.106.d.no_support: "Keine Interessengruppe unterstützt derzeit neue Gesetzgebung, aber das Volk ist gespannt darauf, unseren ideologischen Fortschritt zu feiern."
  event_new_dawn.106.f: "Ähm, noch eine letzte Angelegenheit für heute, Sir. Mitglieder Ihrer Wählerschaft sind heute Morgen eingetroffen. Sie sind von unserem ideologischen Fortschritt begeistert und schlagen neue Gesetzgebung vor.\n\nIst das alles? Was für eine Freude!"
- event_new_dawn.106.f.none: "Unser Volk ist froh, dass wir ein solides ideologisches Fundament aufgebaut haben. Es hat keine konkreten Forderungen, möchte aber unseren Fortschritt feiern."
+ event_new_dawn.106.f.done: "Unser Volk ist froh, dass wir ein solides ideologisches Fundament aufgebaut haben. Es hat keine konkreten Forderungen, möchte aber unseren Fortschritt feiern."
+ event_new_dawn.106.f.no_support: "Unser Volk ist gespannt darauf, unseren ideologischen Fortschritt zu unterstützen, aber keine Interessengruppe unterstützt derzeit neue Gesetzgebung. Lasst uns unseren Fortschritt feiern und weiterhin ein solides ideologisches Fundament aufbauen."
  event_new_dawn.106.z: "Lasst uns feiern!"
 
  event_new_dawn.120.t: "Vertrauenskrise"
@@ -2131,6 +2133,11 @@
  je_ut_software_points_bar_era_8: "Software-Expertise"
  je_ut_software_points_bar_era_8_desc: "Software-Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/10.000)"
 
+
+ ut_open_source_era_8_title: "Open Source Expertise"
+ ut_open_source_era_8_desc: "Offene Zusammenarbeit verbreitet Software-Expertise über den gesamten Globus und ermöglicht die Entwicklung moderner Software-Ökosysteme."
+ ut_open_source_era_8_flavor: "Offene Zusammenarbeit verbreitet Software-Expertise über den gesamten Globus und ermöglicht die Entwicklung moderner Software-Ökosysteme. Open-Source-Software wird oft in einer öffentlichen, kollaborativen Weise entwickelt, die es jedem ermöglicht, Verbesserungen beizutragen oder die Software frei zu nutzen. Dieser Ansatz hat zu schneller Innovation und weit verbreiteter Adoption von Softwaretechnologien geführt, wodurch fortgeschrittene Software-Expertise für Einzelpersonen und Organisationen weltweit zugänglich wird."
+
  je_ut_software_era_8_1_version_control: "Versionskontrolle"
  je_ut_software_era_8_1_version_control_desc: "Versionskontrollsysteme ermöglichen kollaborative Entwicklung, sicherere Releases und schnellere Iterationen."
  je_ut_software_era_8_1_version_control_mod: "$je_ut_software_era_8_1_version_control$"
@@ -2154,8 +2161,6 @@
 
  je_ut_software_era_8_required_points_tt: "Erfordert mindestens #v 10000#! $je_ut_software_points_bar_era_8$"
  je_ut_software_era_8_required_points_spend_tt: "Verbraucht #v 10000#! $je_ut_software_points_bar_era_8$"
- je_ut_software_technology_open_sourced_tt: "Expertise wurde als Open Source freigegeben"
- je_ut_software_technology_not_open_sourced_tt: "Expertise wurde #r nicht#! als Open Source freigegeben"
 
  je_ut_software_points_bar_progress_buildings_era_6: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_6_tooltip Gebäude #!#!"
  je_ut_software_points_bar_progress_buildings_era_6_tooltip: "Summe aus [concept_occupancy] mal [concept_building_level].\nMaximaler Gewinn: 10 Software-Expertise."

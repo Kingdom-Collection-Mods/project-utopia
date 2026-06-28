@@ -1200,6 +1200,7 @@
  ut_has_new_dawn_pressure_75: "Has #b 75#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_90: "Has #b 90#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_max: "Has #b 100#! [concept_ut_nd_pressure]"
+
  ut_add_new_dawn_pressure_add_1: "Gains #r 1#! [concept_ut_nd_pressure]"
  ut_add_new_dawn_pressure_add_5: "Gains #r 5#! [concept_ut_nd_pressure]"
  ut_add_new_dawn_pressure_add_10: "Gains #r 10#! [concept_ut_nd_pressure]"
@@ -2105,8 +2106,8 @@
  je_ut_software_points_bar_era_7: "Software Expertise"
  je_ut_software_points_bar_era_7_desc: "Software Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/1000)"
 
- je_ut_software_era_7_1_operating_system: "Operating System"
- je_ut_software_era_7_1_operating_system_desc: "Standardized operating environments improve software deployment and reliability."
+ : "Operating System"
+ je_ut_software_era_7_1_operating_system_desc: "Standardized operating environments improve software deployment and reliability.je_ut_software_era_7_1_operating_system"
  je_ut_software_era_7_1_operating_system_mod: "$je_ut_software_era_7_1_operating_system$"
  je_ut_software_era_7_2_relational_database: "Relational Database"
  je_ut_software_era_7_2_relational_database_desc: "Structured data systems enable scalable storage, querying, and business analytics."
