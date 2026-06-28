@@ -263,11 +263,11 @@
 
  event_new_dawn.106.t: "[SCOPE.gsInterestGroup('government_petition_ig').GetName] Petition"
  event_new_dawn.106.d: "Representing our ideological enthusiasm in the [SCOPE.gsInterestGroup('government_petition_ig').GetName], [SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetFullName] has issued a formal petition to the [ROOT.GetCountry.GetAdjective] government to pass [SCOPE.sLaw('government_petition_law').GetName]."
- event_new_dawn.106.d.done: "Representing our ideological enthusiasm the people celebrate."
+ event_new_dawn.106.d.done: "Representing our ideological enthusiasm, the people celebrate."
  event_new_dawn.106.d.no_support: "No interest group is currently supporting new legislation, but the people are eager to celebrate our ideological progress."
  event_new_dawn.106.f: "Er, one last matter for the day, sir. Members of your constituency arrived this morning. They're delighted by our ideological progress and propose new legislation.\n\nIs that it? What a delight!"
- event_new_dawn.106.f.done: "Our people are happy we have build a solid ideological foundation. They have no specific demands, but they want to celebrate our progress."
- event_new_dawn.106.f.no_support: "Our people are eager to support our ideological progress, but no interest group is currently supporting new legislation. Let's celebrate our progress and continue to build a solid ideological foundation."
+ event_new_dawn.106.f.done: "Our people are happy we have built a solid ideological foundation. They have no specific demands, but they want to celebrate our progress."
+ event_new_dawn.106.f.no_support: "Our people are eager to support our ideological progress, but no interest group is currently supporting new legislation. Let's celebrate our progress and continue to built a solid ideological foundation."
  event_new_dawn.106.z: "Let's celebrate!"
 
  event_new_dawn.120.t: "Crisis of Confidence"
