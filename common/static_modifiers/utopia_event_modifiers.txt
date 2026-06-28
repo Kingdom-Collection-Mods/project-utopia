@@ -377,12 +377,14 @@ ut_new_dawn_core_external_offensive_focus_mod = {
 	country_new_dawn_progress_points_progress = -1
 	country_new_dawn_propaganda_source_speed_mult = 0.2
 	country_new_dawn_fund_opposition_efficiency_mult = 0.25
+	country_leverage_generation_mult = 0.2
 }
 
 ut_new_dawn_core_external_cooperative_focus_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	country_new_dawn_progress_points_progress = -1
 	country_influence_mult = 0.25
+	country_leverage_generation_mult = 0.25
 	#country_max_declared_interests_mult = 0.25 todo replace
 }
 
