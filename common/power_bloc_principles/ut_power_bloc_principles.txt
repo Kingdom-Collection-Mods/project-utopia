@@ -325,10 +325,7 @@ ut_principle_military_cooperation_3 = {
 		country_military_goods_cost_mult = -0.15
 		country_military_tech_spread_mult = 0.1
 		
-		# Countries forced to join defensive plays against members
-		country_join_power_bloc_member_in_defensive_plays_bool = yes
-		country_infamy_generation_mult = -0.05
-
+		# Countries join defensive and offensive plays from members
 		country_join_power_bloc_member_in_plays_bool = yes
 	}
 	
