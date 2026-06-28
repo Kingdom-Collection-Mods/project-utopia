@@ -2106,7 +2106,7 @@
  je_ut_software_points_bar_era_7: "Software Expertise"
  je_ut_software_points_bar_era_7_desc: "Software Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/1000)"
 
- : "Operating System"
+ je_ut_software_era_7_1_operating_system: "Operating System"
  je_ut_software_era_7_1_operating_system_desc: "Standardized operating environments improve software deployment and reliability.je_ut_software_era_7_1_operating_system"
  je_ut_software_era_7_1_operating_system_mod: "$je_ut_software_era_7_1_operating_system$"
  je_ut_software_era_7_2_relational_database: "Relational Database"
