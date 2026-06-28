@@ -1,4 +1,4 @@
-﻿### See power_bloc_principle_groups for grouping, primary groups for identities etc.
+### See power_bloc_principle_groups for grouping, primary groups for identities etc.
 
 ### CONSTRUCTION
 
@@ -122,6 +122,8 @@ principle_common_financial_policy_3 = {
 		
 		# Cheaper port connections
 		country_port_connection_cost_mult = -0.25
+		
+		country_join_power_bloc_member_in_defensive_plays_bool = yes
 	}
 	
 	ai_weight = {
