@@ -586,17 +586,6 @@ ut_movement_rationalists = {
 					desc = "POP_CAPITALISTS"
 				}
 			}
-			if = {
-				limit = {
-					is_pop_type = aristocrats
-				}
-				else = {
-					add = {
-						value = 0
-						desc = "POP_ARISTOCRATS"
-					}
-				}
-			}
 		}
 		else_if = {
 			limit = {
