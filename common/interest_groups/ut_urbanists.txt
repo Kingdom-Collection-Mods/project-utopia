@@ -146,12 +146,10 @@
 				limit = {
 					is_pop_type = service_workers
 				}
-				value = 150
+				value = 100
 			}
 		}
 
-
-		#todo investigate currently intelligentsia small for academics but both small
 		add = {
 			desc = "POP_ACADEMICS"
 			if = {
@@ -216,7 +214,7 @@
 						pop_employment_building_group = bg_financial_districts
 					}
 				}
-				value = 125
+				value = 100
 			}
 		}
 
@@ -287,6 +285,7 @@
 				value = 0.0
 			}
 		}
+		
 		if = {
 			limit = {
 				scope:interest_group = {
