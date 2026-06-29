@@ -884,7 +884,7 @@ ut_movement_conservative = {
 		}
 
 		add = {
-			value = 1
+			value = 5
 			desc = "POP_BASE_SUPPORT"
 		}
 
@@ -942,7 +942,7 @@ ut_movement_conservative = {
 			}
 			else = {
 				add = {
-					value = 9
+					value = 10
 					desc = "MIDDLE_NO_ICON"
 				}
 			}
@@ -956,7 +956,7 @@ ut_movement_conservative = {
 					is_pop_type = clerks
 				}
 				add = {
-					value = 10
+					value = 20
 					desc = "POP_CLERKS"
 				}
 			}
@@ -966,7 +966,7 @@ ut_movement_conservative = {
 				}
 				add = {
 					#rural / uneducated traditionalist working class backs conservatism
-					value = 8
+					value = 5
 					desc = "POP_LABORERS"
 				}
 			}
@@ -975,8 +975,7 @@ ut_movement_conservative = {
 					is_pop_type = soldiers
 				}
 				add = {
-					#jingoist leaning
-					value = 12
+					value = 15
 					desc = "POP_SOLDIERS"
 				}
 			}
@@ -985,9 +984,17 @@ ut_movement_conservative = {
 					is_pop_type = peasants
 				}
 				add = {
-					#rural traditionalist backbone
-					value = 18
+					value = 10
 					desc = "POP_PEASANTS"
+				}
+			}
+			else_if = {
+				limit = {
+					is_pop_type = machinists
+				}
+				add = {
+					value = 10
+					desc = "POP_MACHINISTS"
 				}
 			}
 			else = {
