@@ -1,0 +1,304 @@
+# Project Utopia - Late Game & Futuristic Formable Nations
+# These formables become available in the later eras (1936+, Eras 6-8)
+# and leverage the new technologies, goods, and mechanics added by Utopia.
+# Requires union_new_mandates / union_new_mandates_two (your mod's international
+# cooperation techs) or vanilla pan-nationalism as prerequisites.
+
+### EUROPEAN FEDERATION
+EUR = {
+	use_culture_states = yes
+
+	is_major_formation = yes
+
+	unification_play = dp_unify_european_federation
+	leadership_play = dp_leadership_european_federation
+
+	required_states_fraction = 0.75
+
+	ai_will_do = {
+		has_technology_researched = union_new_mandates
+	}
+
+	potential = {
+		has_technology_researched = union_new_mandates
+		has_dlc_feature = rp1_content
+	}
+
+	possible = {
+		has_technology_researched = union_new_mandates
+		is_in_geographic_region = geographic_region_europe
+		capital = { is_in_geographic_region = geographic_region_europe }
+		NOT = {
+			is_subject = yes
+		}
+		country_rank >= rank_value:major_power
+	}
+
+	max_num_formation_candidates = 5
+	can_be_formation_candidate = {
+		country_rank >= rank_value:major_power
+		is_in_geographic_region = geographic_region_europe
+		has_technology_researched = union_new_mandates
+	}
+
+	can_be_unification_target = {
+		is_in_geographic_region = geographic_region_europe
+		has_technology_researched = union_new_mandates
+	}
+
+	should_target_state_in_unification_play = {}
+}
+
+### AFRICAN UNION
+AFU = {
+	use_culture_states = yes
+
+	is_major_formation = yes
+
+	unification_play = dp_unify_african_union
+	leadership_play = dp_leadership_african_union
+
+	required_states_fraction = 0.65
+
+	ai_will_do = {
+		has_technology_researched = union_new_mandates
+	}
+
+	potential = {
+		has_technology_researched = union_new_mandates
+	}
+
+	possible = {
+		has_technology_researched = union_new_mandates
+		OR = {
+			capital = { is_in_geographic_region = geographic_region_africa }
+			capital = { is_in_geographic_region = geographic_region_subsaharan_africa }
+		}
+		NOT = {
+			is_subject = yes
+		}
+		country_rank >= rank_value:major_power
+	}
+
+	max_num_formation_candidates = 3
+	can_be_formation_candidate = {
+		country_rank >= rank_value:major_power
+		OR = {
+			capital = { is_in_geographic_region = geographic_region_africa }
+			capital = { is_in_geographic_region = geographic_region_subsaharan_africa }
+		}
+		has_technology_researched = union_new_mandates
+	}
+
+	should_target_state_in_unification_play = {}
+}
+
+### PAN-ASIAN COOPERATION
+ASI = {
+	use_culture_states = yes
+
+	is_major_formation = yes
+
+	unification_play = dp_unify_pan_asia
+	leadership_play = dp_leadership_pan_asia
+
+	required_states_fraction = 0.7
+
+	ai_will_do = {
+		has_technology_researched = union_new_mandates
+	}
+
+	potential = {
+		has_technology_researched = union_new_mandates
+	}
+
+	possible = {
+		has_technology_researched = union_new_mandates
+		capital = { is_in_geographic_region = geographic_region_asia }
+		NOT = {
+			is_subject = yes
+		}
+		country_rank >= rank_value:major_power
+	}
+
+	max_num_formation_candidates = 4
+	can_be_formation_candidate = {
+		country_rank >= rank_value:major_power
+		capital = { is_in_geographic_region = geographic_region_asia }
+		has_technology_researched = union_new_mandates
+	}
+
+	should_target_state_in_unification_play = {}
+}
+
+### LATIN AMERICAN INTEGRATION
+LAT = {
+	use_culture_states = yes
+
+	is_major_formation = yes
+
+	unification_play = dp_unify_latin_america
+	leadership_play = dp_leadership_latin_america
+
+	required_states_fraction = 0.7
+
+	ai_will_do = {
+		has_technology_researched = union_new_mandates
+	}
+
+	potential = {
+		has_technology_researched = union_new_mandates
+	}
+
+	possible = {
+		has_technology_researched = union_new_mandates
+		capital = { is_in_geographic_region = geographic_region_latin_america }
+		NOT = {
+			is_subject = yes
+		}
+		country_rank >= rank_value:major_power
+	}
+
+	max_num_formation_candidates = 3
+	can_be_formation_candidate = {
+		country_rank >= rank_value:major_power
+		capital = { is_in_geographic_region = geographic_region_latin_america }
+		has_technology_researched = union_new_mandates
+	}
+
+	should_target_state_in_unification_play = {}
+}
+
+### OCEANIC FEDERATION
+OCE = {
+	use_culture_states = yes
+
+	is_major_formation = yes
+
+	unification_play = dp_unify_oceania
+	leadership_play = dp_leadership_oceania
+
+	required_states_fraction = 0.75
+
+	ai_will_do = {
+		has_technology_researched = union_new_mandates
+	}
+
+	potential = {
+		has_technology_researched = union_new_mandates
+		has_dlc_feature = rp1_content
+	}
+
+	possible = {
+		has_technology_researched = union_new_mandates
+		OR = {
+			c:AST ?= this
+			c:NWZ ?= this
+			c:HLD ?= this
+			c:PLI ?= this
+			c:HAW ?= this
+		}
+		NOT = {
+			is_subject = yes
+		}
+		country_rank >= rank_value:major_power
+	}
+
+	max_num_formation_candidates = 2
+	can_be_formation_candidate = {
+		country_rank >= rank_value:major_power
+		OR = {
+			c:AST ?= this
+			c:NWZ ?= this
+		}
+		has_technology_researched = union_new_mandates
+	}
+
+	should_target_state_in_unification_play = {}
+}
+
+### PACIFIC RIM ALLIANCE
+PRI = {
+	use_culture_states = yes
+
+	is_major_formation = yes
+
+	unification_play = dp_unify_pacific_rim
+	leadership_play = dp_leadership_pacific_rim
+
+	required_states_fraction = 0.7
+
+	ai_will_do = {
+		has_technology_researched = union_new_mandates
+	}
+
+	potential = {
+		has_technology_researched = union_new_mandates
+		has_dlc_feature = rp1_content
+	}
+
+	possible = {
+		has_technology_researched = union_new_mandates
+		OR = {
+			c:JAP ?= this
+			c:CHI ?= this
+			c:KOR ?= this
+			c:USA ?= this
+			c:CAN ?= this
+			c:MEX ?= this
+			c:AST ?= this
+		}
+		NOT = {
+			is_subject = yes
+		}
+		country_rank >= rank_value:major_power
+	}
+
+	max_num_formation_candidates = 3
+	can_be_formation_candidate = {
+		country_rank >= rank_value:major_power
+		OR = {
+			c:JAP ?= this
+			c:CHI ?= this
+			c:KOR ?= this
+			c:USA ?= this
+			c:CAN ?= this
+			c:AST ?= this
+		}
+		has_technology_researched = union_new_mandates
+	}
+
+	should_target_state_in_unification_play = {}
+}
+
+### ARCTIC COUNCIL
+ARC = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.5
+
+	ai_will_do = {
+		always = yes
+	}
+
+	potential = {
+		has_technology_researched = union_new_mandates
+	}
+
+	possible = {
+		has_technology_researched = union_new_mandates
+		OR = {
+			country_has_primary_culture = cu:swedish
+			country_has_primary_culture = cu:norwegian
+			country_has_primary_culture = cu:danish
+			country_has_primary_culture = cu:icelandic
+			country_has_primary_culture = cu:russian
+			country_has_primary_culture = cu:canadian
+			c:USA ?= this
+		}
+		NOT = {
+			is_subject = yes
+		}
+		country_rank >= rank_value:major_power
+	}
+}

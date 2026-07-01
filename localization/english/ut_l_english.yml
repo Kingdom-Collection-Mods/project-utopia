@@ -15,6 +15,49 @@
 
  utopia_path: "Path" 
 
+# Country Formations
+ ut_country_formation: "Country Formation"
+ 
+ ### European Federation
+ EUR: "European Federation"
+ EUR_ADJ: "European"
+ EUR_DEF: "the European Federation"
+ 
+ ### African Union
+ AFU: "African Union"
+ AFU_ADJ: "Pan-African"
+ AFU_DEF: "the African Union"
+ 
+ ### Pan-Asian Cooperation
+ ASI: "Pan-Asian Cooperation"
+ ASI_ADJ: "Pan-Asian"
+ ASI_DEF: "the Pan-Asian Cooperation"
+ 
+ ### Latin American Integration
+ LAT: "Latin American Union"
+ LAT_ADJ: "Latin American"
+ LAT_DEF: "the Latin American Union"
+ 
+ ### Oceanic Federation
+ OCE: "Oceanic Federation"
+ OCE_ADJ: "Oceanic"
+ OCE_DEF: "the Oceanic Federation"
+ 
+ ### Pacific Rim Alliance
+ PRI: "Pacific Rim Alliance"
+ PRI_ADJ: "Pacific Rim"
+ PRI_DEF: "the Pacific Rim Alliance"
+ 
+ ### Arctic Council
+ ARC: "Arctic Council"
+ ARC_ADJ: "Arctic"
+ ARC_DEF: "the Arctic Council"
+ 
+ ### Cyberstate
+ CYB: "Cyberstate"
+ CYB_ADJ: "Cyberstate"
+ CYB_DEF: "the Cyberstate"
+
 # Events & Journals
  ut_industrial_machinery_je: "Industrial Machinery"
  ut_industrial_machinery_je_reason: "The dawn of the industrial age is marked by the rise of machinery that transforms production. From steam engines to assembly lines, these innovations revolutionize how goods are made, increasing efficiency and enabling mass production. The industrial machinery era is not just about tools; it's about a fundamental shift in society, economy, and the very fabric of daily life."
