@@ -610,7 +610,7 @@
  je_ut_new_dawn_communist_complete_condition_tt: "Never (wip)"
 
  ut_new_dawn_autocrat_focus: "Autokratischer Fokus"
- ut_new_dawn_autocrat_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities].#!"
+ ut_new_dawn_autocrat_focus_desc: "#italic Vorschau: Enthält eine Basisimplementierung von [concept_ut_nd_abilities].#!"
 
  ut_new_dawn_autocrat_bar: "Autokratisch"
  ut_new_dawn_autocrat_bar_desc: "Autokratischer Fortschritt: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
@@ -816,7 +816,7 @@
  ut_ideology_environmentalist_movement_desc: "Umweltschutzideologien legen den Schwerpunkt auf den Schutz der Umwelt und eine nachhaltige Entwicklung. Sie setzen sich für politische Maßnahmen ein, die dem Klimawandel entgegenwirken, natürliche Ressourcen schonen und das ökologische Gleichgewicht fördern."
 
  ut_ideology_sexual_liberation_movement: "Sexual Liberation"
- ut_ideology_sexual_liberation_movement_desc: "Sexual Liberation ideologies advocate for the freedom of individuals to express their sexuality without societal constraints. They support all sexual rights and aim to eliminate discrimination based on sexual orientation and gender identity."
+ ut_ideology_sexual_liberation_movement_desc: "Sexuelle Befreiungsideologien setzen sich für die Freiheit des Einzelnen ein, seine Sexualität ohne gesellschaftliche Zwänge auszuleben. Sie unterstützen alle sexuellen Rechte und zielen darauf ab, Diskriminierung aufgrund sexueller Orientierung und Geschlechtsidentität zu beseitigen."
 
  ut_ideology_conservative_movement: "Konservativ"
  ut_ideology_conservative_movement_desc: "Konservative Ideologien betonen die Bewahrung traditioneller Institutionen, Werte und Praktiken. Sie setzen sich für schrittweise Veränderungen ein und priorisieren oft Stabilität, Ordnung und Kontinuität in der Gesellschaft."
@@ -2095,7 +2095,7 @@
  je_ut_new_dawn_core_abilities: "New Dawn: Abilities"
  je_ut_new_dawn_core_abilities_reason: "So be it."
  je_ut_new_dawn_core_abilities_add_decision: "Add New Dawn Core Abilities"
- je_ut_new_dawn_core_abilities_add_decision_desc: "Unlock the New Dawn Core [concept_ut_nd_abilities]."
+ je_ut_new_dawn_core_abilities_add_decision_desc: "Schaltet die Neuer Aufbruch Kern-[concept_ut_nd_abilities] frei."
 
  #je software tree
  je_ut_software_era_6_add_decision: "Software-Expertise-Technologiebaum starten"
@@ -2250,9 +2250,9 @@
 
  rule_ut_new_dawn_historical_focus: "Historical $concept_ut_nd_focus$"
  setting_ut_new_dawn_historical_focus_yes: "Enabled"
- setting_ut_new_dawn_historical_focus_yes_desc: "Selected AI nations have a higher chance to select their historical $concept_ut_nd_focus$"
+ setting_ut_new_dawn_historical_focus_yes_desc: "Ausgewählte KI-Nationen haben eine höhere Chance, ihren historischen $concept_ut_nd_focus$ zu wählen"
  setting_ut_new_dawn_historical_focus_no: "Disabled"
- setting_ut_new_dawn_historical_focus_no_desc: "All AI nations have the same chance to select their focus.\n@warning! Project Utopia is tested with historical focuses enabled."
+ setting_ut_new_dawn_historical_focus_no_desc: "Alle KI-Nationen haben die gleiche Chance, ihren Fokus zu wählen.\n@warning! Project Utopia wurde mit historischen Fokus getestet."
 
 # Demands
  demand_ban_slavery: "Forderung: Verbots der Sklaverei"
