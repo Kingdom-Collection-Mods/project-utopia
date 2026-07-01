@@ -969,7 +969,7 @@
  law_ut_minimum_wage_desc: ""
  law_decolonization: "Decolonization"
  law_decolonization_desc: "This country actively promotes the independence of its former colonies."
- law_decolonization_effect_tt: "Every subject will become independent. If you are on the Communist path, they will join your power bloc."
+ law_decolonization_effect_tt: "Every colonial subject will become independent. If you are on the Communist path, they will join your power bloc."
  law_registration_process: "Qualified Migration"
  law_registration_process_desc: "The country has a regulated immigration system; only after successful registration do immigrants receive residence and work rights."
 
