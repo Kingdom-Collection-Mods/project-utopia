@@ -112,7 +112,7 @@ pm_farms_drone_support = {
 
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 5
 		}
 	}
 
@@ -192,7 +192,7 @@ pm_farms_drone_support_rice = {
 
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 5
 		}
 	}
 

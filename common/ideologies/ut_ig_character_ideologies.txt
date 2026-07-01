@@ -57,13 +57,36 @@
 	}
 	
 	interest_group_leader_weight = {
-		value = 50
+		value = 0
+		if = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_urbanists
+				}
+			}
+			add = 50
+		}
+		
+		if = {
+			limit = {
+				ig_approval > happy
+				OR = {
+					is_interest_group_type = ig_devout
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_trade_unions
+				}
+			}
+			add = 50
+		}
+
+
 		# very very angry IG's more likely to turn to more radical measures
 		if = {
 			limit = {
-				ig_approval <= -10
+				ig_approval <= -5
 			}
-			add = -50
+			add = -100
 		}
 		# more likely when issues are relevant
 		if = {
@@ -77,7 +100,7 @@
 					}
 				}
 			}
-			add = 75 
+			add = 50
 		}
 		if = {
 			limit = {
@@ -86,7 +109,7 @@
 					has_law = law_type:law_no_food_safety_protection
 				}
 			}
-			add = 25
+			add = 50
 		}
 		if = {
 			limit = {
@@ -143,7 +166,7 @@
 					}
 				}
 			}
-			add = 75
+			add = 50
 		}
 		if = {
 			limit = {
@@ -152,7 +175,7 @@
 					has_law = law_type:law_no_food_safety_protection
 				}
 			}
-			add = 25
+			add = 50
 		}
 		if = {
 			limit = {
@@ -250,14 +273,24 @@ ut_ideology_cosmopolitan_leader = {
 	}
 	
 	interest_group_leader_weight = {
-		value = 50
+		value = 0
+
+		if = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_urbanists
+				}
+			}
+			add = 50
+		}
+
 		# very angry IG's more likely to turn to more radical socialism
 		if = {
 			limit = {
-				NOT = { is_interest_group_type = ig_devout } # can't be radical socialists
 				ig_approval <= -5
 			}
-			add = -75
+			add = -100
 		}
 		# more likely when issues are relevant
 		if = {
@@ -268,6 +301,7 @@ ut_ideology_cosmopolitan_leader = {
 						OR = {
 							has_law = law_type:law_free_trade_union
 							has_law = law_type:law_protectionism_union
+							has_law = law_type:law_international_trade
 						}
 					}
 				}
@@ -281,7 +315,7 @@ ut_ideology_cosmopolitan_leader = {
 					has_modifier = ut_new_dawn_core_democratic_mod
 				}
 			}
-			add = 75
+			add = 50
 		}
 		if = {
 			limit = {

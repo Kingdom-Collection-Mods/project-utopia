@@ -424,7 +424,7 @@ utopia_mod.7 = {
 		}
 		name = je_ut_software_era_7_1_operating_system
 		set_global_variable = je_ut_software_era_7_1_operating_system_foss_var
-		custom_tooltip = je_ut_software_era_7_technology_open_source_tt
+		custom_tooltip = je_ut_software_technology_open_source_tt
 	}
 	
 	option = {
@@ -437,7 +437,7 @@ utopia_mod.7 = {
 		}
 		name = je_ut_software_era_7_2_relational_database
 		set_global_variable = je_ut_software_era_7_2_relational_database_foss_var
-		custom_tooltip = je_ut_software_era_7_technology_open_source_tt
+		custom_tooltip = je_ut_software_technology_open_source_tt
 	}
 	
 	option = {
@@ -447,7 +447,7 @@ utopia_mod.7 = {
 		}
 		name = je_ut_software_era_7_3_object_oriented_language
 		set_global_variable = je_ut_software_era_7_3_object_oriented_language_foss_var
-		custom_tooltip = je_ut_software_era_7_technology_open_source_tt
+		custom_tooltip = je_ut_software_technology_open_source_tt
 	}
 
 	option = {
@@ -457,5 +457,119 @@ utopia_mod.7 = {
 
 	after = {
 		remove_variable = je_ut_software_era_7_open_source_button_pressed
+	}
+}
+
+#Open Source Era 8
+utopia_mod.8 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	title = ut_open_source_era_8_title
+	desc = ut_open_source_era_8_desc
+	flavor = ut_open_source_era_8_flavor
+	
+	option = {
+		trigger = {
+			NOT = { has_global_variable = je_ut_software_era_8_1_version_control_foss_var }
+			OR = {
+				has_modifier = je_ut_software_era_8_1_version_control_mod
+				has_modifier = je_ut_software_era_8_2_no_sql_mod
+				has_modifier = je_ut_software_era_8_3_web_standards_mod
+				has_modifier = je_ut_software_era_8_4_web_software_mod
+				has_modifier = je_ut_software_era_8_5_cloud_computing_mod
+				has_modifier = je_ut_software_era_8_6_ownership_model_language_mod
+			}
+		}
+		name = je_ut_software_era_8_1_version_control
+		set_global_variable = je_ut_software_era_8_1_version_control_foss_var
+		custom_tooltip = je_ut_software_technology_open_source_tt
+	}
+	
+	option = {
+		trigger = {
+			NOT = { has_global_variable = je_ut_software_era_8_2_no_sql_foss_var }
+			OR = {
+				has_modifier = je_ut_software_era_8_2_no_sql_mod
+				has_modifier = je_ut_software_era_8_3_web_standards_mod
+				has_modifier = je_ut_software_era_8_4_web_software_mod
+				has_modifier = je_ut_software_era_8_5_cloud_computing_mod
+				has_modifier = je_ut_software_era_8_6_ownership_model_language_mod
+			}
+		}
+		name = je_ut_software_era_8_2_no_sql
+		set_global_variable = je_ut_software_era_8_2_no_sql_foss_var
+		custom_tooltip = je_ut_software_technology_open_source_tt
+	}
+	
+	option = {
+		trigger = {
+			NOT = { has_global_variable = je_ut_software_era_8_3_web_standards_foss_var }
+			OR = {
+				has_modifier = je_ut_software_era_8_3_web_standards_mod
+				has_modifier = je_ut_software_era_8_4_web_software_mod
+				has_modifier = je_ut_software_era_8_5_cloud_computing_mod
+				has_modifier = je_ut_software_era_8_6_ownership_model_language_mod
+			}
+		}
+		name = je_ut_software_era_8_3_web_standards
+		set_global_variable = je_ut_software_era_8_3_web_standards_foss_var
+		custom_tooltip = je_ut_software_technology_open_source_tt
+	}
+	
+	option = {
+		trigger = {
+			NOT = { has_global_variable = je_ut_software_era_8_4_web_software_foss_var }
+			OR = {
+				has_modifier = je_ut_software_era_8_4_web_software_mod
+				has_modifier = je_ut_software_era_8_5_cloud_computing_mod
+				has_modifier = je_ut_software_era_8_6_ownership_model_language_mod
+			}
+		}
+		name = je_ut_software_era_8_4_web_software
+		set_global_variable = je_ut_software_era_8_4_web_software_foss_var
+		custom_tooltip = je_ut_software_technology_open_source_tt
+	}
+	
+	option = {
+		trigger = {
+			NOT = { has_global_variable = je_ut_software_era_8_5_cloud_computing_foss_var }
+			OR = {
+				has_modifier = je_ut_software_era_8_5_cloud_computing_mod
+				has_modifier = je_ut_software_era_8_6_ownership_model_language_mod
+			}
+		}
+		name = je_ut_software_era_8_5_cloud_computing
+		set_global_variable = je_ut_software_era_8_5_cloud_computing_foss_var
+		custom_tooltip = je_ut_software_technology_open_source_tt
+	}
+	
+	option = {
+		trigger = {
+			NOT = { has_global_variable = je_ut_software_era_8_6_ownership_model_language_foss_var }
+			has_modifier = je_ut_software_era_8_6_ownership_model_language_mod
+		}
+		name = je_ut_software_era_8_6_ownership_model_language
+		set_global_variable = je_ut_software_era_8_6_ownership_model_language_foss_var
+		custom_tooltip = je_ut_software_technology_open_source_tt
+	}
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+
+	after = {
+		remove_variable = je_ut_software_era_8_open_source_button_pressed
 	}
 }

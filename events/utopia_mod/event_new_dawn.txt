@@ -1195,7 +1195,7 @@ event_new_dawn.106 = {
 	desc = {
 		first_valid = {
 			triggered_desc = {
-				desc = event_new_dawn.106.d.none
+				desc = event_new_dawn.106.d.done
 				trigger = {
 					OR = {
 						AND = {
@@ -1225,6 +1225,12 @@ event_new_dawn.106 = {
 					}
 				}
 			}
+			triggered_desc = {
+				desc = event_new_dawn.106.d.no_support
+				trigger = {
+					NOT = { exists = scope:government_petition_law}
+				}
+			}
 
 			desc = event_new_dawn.106.d
 		}
@@ -1232,7 +1238,7 @@ event_new_dawn.106 = {
 	flavor = {
 		first_valid = {
 			triggered_desc = {
-				desc = event_new_dawn.106.f.none
+				desc = event_new_dawn.106.f.done
 				trigger = {
 					OR = {
 						AND = {
@@ -1260,6 +1266,13 @@ event_new_dawn.106 = {
 						}
 						has_modifier = ut_new_dawn_core_autocratic_mod
 					}
+				}
+			}
+			
+			triggered_desc = {
+				desc = event_new_dawn.106.f.no_support
+				trigger = {
+					NOT = { exists = scope:government_petition_law}
 				}
 			}
 			desc = event_new_dawn.106.f

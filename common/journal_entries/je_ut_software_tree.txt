@@ -331,16 +331,17 @@ je_ut_software_era_8 = {
 							add = local_var:je_ut_software_points_bar_progress_loc
 						}
 					}
-					#cap at 100
-					if = {
-						limit = {
-							has_variable = je_ut_software_points_bar_progress_buildings_era_8
-							var:je_ut_software_points_bar_progress_buildings_era_8 > 100
-						}
-						set_variable = {
-							name = je_ut_software_points_bar_progress_buildings_era_8
-							value = 100
-						}
+				}
+				
+				#cap at 100
+				if = {
+					limit = {
+						has_variable = je_ut_software_points_bar_progress_buildings_era_8
+						var:je_ut_software_points_bar_progress_buildings_era_8 > 100
+					}
+					set_variable = {
+						name = je_ut_software_points_bar_progress_buildings_era_8
+						value = 100
 					}
 				}
 			}

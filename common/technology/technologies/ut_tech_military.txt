@@ -334,7 +334,6 @@ ut_anti_tank_guided_software = {
 	}
 
 	modifier = {
-		unit_kill_rate_add = 0.05
     }
 	
 	ai_weight = {
@@ -480,6 +479,7 @@ ut_tank_jet_engine = {
 	
 	modifier = {
 		military_formation_army_movement_speed_mult = 0.1
+		military_formation_attrition_risk_mult = -0.1
     }
 	
 	ai_weight = {
@@ -519,6 +519,7 @@ ut_tank_future = {
 	
 	modifier = {
 		unit_army_offense_add = 5
+		goods_output_utopia_tanks_mult = 0.25
     }
 
 	ai_weight = {
@@ -611,7 +612,6 @@ ut_modern_planes = {
 	
 	
 	modifier = {
-		military_formation_attrition_risk_mult = -0.1
 		#todo fix (character not country scope)
 		#character_battle_condition_good_visibility_mult = 0.1
 	}

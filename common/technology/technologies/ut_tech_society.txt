@@ -500,6 +500,10 @@ epa_two = {
 	unlocking_technologies = {
 		epa_one
 	}
+
+	on_researched = {
+		custom_tooltip = ut_movement_environmentalist_unlock_tt
+	}
 	
 	ai_weight = {
 		value = 1
@@ -586,7 +590,8 @@ political_progress_1_cosmopolitan = {
 		country_influence_mult = 0.25
 		country_agitator_slots_add = 1
 
-		state_expected_sol_from_literacy = 1 #todo: rethink, if ai techs this... no good. But good for player. 
+		state_expected_sol_from_literacy = 1 #todo: rethink, if ai techs this... no good. But good for player.
+		country_expected_sol_for_new_dawn_pressure = 10
 	}
 
 	on_researched = {
@@ -622,6 +627,7 @@ political_progress_2_rationalism = {
 		
 	modifier = {
 		state_expected_sol_from_literacy = 2
+		country_expected_sol_for_new_dawn_pressure = 10
 	}
 
 	unlocking_technologies = {
@@ -653,6 +659,7 @@ political_progress_3_neoliberalism = {
 	modifier = {
 		state_expected_sol_from_literacy = 3
 		country_agitator_slots_add = 1
+		country_expected_sol_for_new_dawn_pressure = 10
 	}
 
 	unlocking_technologies = {
@@ -689,6 +696,7 @@ political_progress_4_greens = {
 	modifier = {
 		state_expected_sol_from_literacy = 3
 		country_agitator_slots_add = 1
+		country_expected_sol_for_new_dawn_pressure = 10
 	}
 
 	unlocking_technologies = {
@@ -914,6 +922,7 @@ anti_multicultural_globalism = {
 	modifier = {
 		state_expected_sol_from_literacy = 2 #todo: does not really fit here
 		country_infamy_generation_mult = -0.1
+		country_expected_sol_for_new_dawn_pressure = 10
 	}
 
 	unlocking_technologies = {

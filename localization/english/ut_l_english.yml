@@ -263,9 +263,11 @@
 
  event_new_dawn.106.t: "[SCOPE.gsInterestGroup('government_petition_ig').GetName] Petition"
  event_new_dawn.106.d: "Representing our ideological enthusiasm in the [SCOPE.gsInterestGroup('government_petition_ig').GetName], [SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetFullName] has issued a formal petition to the [ROOT.GetCountry.GetAdjective] government to pass [SCOPE.sLaw('government_petition_law').GetName]."
- event_new_dawn.106.d.none: "Representing our ideological enthusiasm the people celebrate."
+ event_new_dawn.106.d.done: "Representing our ideological enthusiasm, the people celebrate."
+ event_new_dawn.106.d.no_support: "No interest group is currently supporting new legislation, but the people are eager to celebrate our ideological progress."
  event_new_dawn.106.f: "Er, one last matter for the day, sir. Members of your constituency arrived this morning. They're delighted by our ideological progress and propose new legislation.\n\nIs that it? What a delight!"
- event_new_dawn.106.f.none: "Our people are happy we have build a solid ideological foundation. They have no specific demands, but they want to celebrate our progress."
+ event_new_dawn.106.f.done: "Our people are happy we have built a solid ideological foundation. They have no specific demands, but they want to celebrate our progress."
+ event_new_dawn.106.f.no_support: "Our people are eager to support our ideological progress, but no interest group is currently supporting new legislation. Let's celebrate our progress and continue to built a solid ideological foundation."
  event_new_dawn.106.z: "Let's celebrate!"
 
  event_new_dawn.120.t: "Crisis of Confidence"
@@ -372,14 +374,16 @@
  je_ut_new_dawn_critical_lower_bound_fail_pressure_tt: "Has #r 50#! [concept_ut_nd_pressure] Pressure"
 
  je_ut_new_dawn_common_pressure_progress_from_sol_yoy: "[concept_sol] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_sol_yoy_tooltip yearly change#!#!"
- je_ut_new_dawn_common_pressure_progress_from_sol_yoy_tooltip: "Every 1 yearly [concept_sol] increase decreases pressure by 2 points. $concept_sol$ loss increases pressure. Last year's [concept_sol]: [Country.MakeScope.Var('je_ut_new_dawn_prev_average_sol').GetValue|1]"
+ je_ut_new_dawn_common_pressure_progress_from_sol_yoy_tooltip: "Every 1 yearly [concept_sol] increase decreases pressure by 1 points. $concept_sol$ loss increases pressure. Last year's [concept_sol]: [Country.MakeScope.Var('je_ut_new_dawn_prev_average_sol').GetValue|1]"
  je_ut_new_dawn_common_pressure_progress_from_legitimacy: "#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_legitimacy_tooltip expected#!#! [concept_legitimacy]"
  je_ut_new_dawn_common_pressure_progress_from_legitimacy_tooltip: "100 [concept_legitimacy] reduces pressure by 1.\n75   [concept_legitimacy] is neutral.\n0     [concept_legitimacy] increases pressure by 3."
  je_ut_new_dawn_common_pressure_progress_from_expected_sol: "#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_expected_sol_tooltip expected#!#! [concept_sol]"
- je_ut_new_dawn_common_pressure_progress_from_expected_sol_tooltip: "Expected [concept_sol] is [Country.MakeScope.Var('je_ut_new_dawn_common_pressure_expected_sol').GetValue] and is increased by Society [concept_technology]. 50 [concept_sol] reduces pressure by 1."
+ je_ut_new_dawn_common_pressure_progress_from_expected_sol_tooltip: "Expected [concept_sol] is [Country.MakeScope.Var('je_ut_new_dawn_common_pressure_expected_sol').GetValue].\n[Country.MakeScope.Var('je_ut_new_dawn_common_pressure_utopia_sol').GetValue] [concept_sol] reduces pressure by 0.5."
  je_ut_new_dawn_common_pressure_progress_from_core_progress: "[concept_ut_nd_progress_points] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_core_progress_tooltip gained#!#!"
  je_ut_new_dawn_common_pressure_progress_from_core_progress_tooltip: "Every 1 [concept_ut_nd_progress_points] gained decreases pressure by 0.5 points."
 
+ country_expected_sol_for_new_dawn_pressure: "Expected [concept_sol] for [concept_ut_nd_pressure]"
+ 
  ut_new_dawn_communist_focus: "Communist Focus"
  ut_new_dawn_communist_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities] and [concept_ut_nd_milestones].#!"
  ut_new_dawn_communist_bar: "Communist"
@@ -808,6 +812,15 @@
  ideology_patriotic_democratic: "Civic Patriotism"
  ideology_patriotic_democratic_desc: "#lore This group emphasizes strong national identity, patriotism, and often authoritarian governance. They prioritize national unity and may support aggressive foreign policies. Replaces [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_democrat_core] variation.  #r Lost if $new_dawn_phase_2_mod$ fails.#! #!"
 
+ ut_ideology_environmentalist_movement: "Environmentalist"
+ ut_ideology_environmentalist_movement_desc: "Environmentalist ideologies prioritize the protection of the environment and sustainable development. They advocate for policies that address climate change, conserve natural resources, and promote ecological balance."
+
+ ut_ideology_sexual_liberation_movement: "Sexual Liberation"
+ ut_ideology_sexual_liberation_movement_desc: "Sexual Liberation ideologies advocate for the freedom of individuals to express their sexuality without societal constraints. They support all sexual rights and aim to eliminate discrimination based on sexual orientation and gender identity."
+
+ ut_ideology_conservative_movement: "Conservative"
+ ut_ideology_conservative_movement_desc: "Conservative ideologies emphasize the preservation of traditional institutions, values, and practices. They advocate for gradual change and often prioritize stability, order, and continuity in society."
+
  ig_trait_urbanist_loyal: "Prestige Society"
  ig_trait_urbanist_loyal_desc: "This group advocates for the free movement of people across borders, believing it fosters cultural exchange and economic opportunity. They oppose restrictive immigration policies and emphasize international cooperation."
  ig_trait_urbanist_happy: "Access to Education"
@@ -820,13 +833,15 @@
  ut_movement_rationalists_name: "Rationalist Movement"
  ut_movement_conservative_name: "Conservative Movement"
  ut_movement_sexual_liberation_name: "Sexual Liberation Movement"
+ ut_movement_environmentalist_name: "Environmentalist Movement"
 
  ut_movement_cosmopolitan_unlock_tt: "Unlocks [GetIdeology('ut_ideology_cosmopolitan').GetName] [concept_political_movement]"
  ut_ig_ideology_urbanist_economy_base_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_economy_base').GetName] for $ig_urbanists$"
  ut_movement_humanist_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_human_rights_base').GetName] [concept_political_movement]"
  ut_movement_rationalists_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_economy_base').GetName] [concept_political_movement]"
  ut_movement_conservative_unlock_tt: "Unlocks [GetIdeology('ut_ideology_reactionary_alternative').GetName] [concept_political_movement]"
- ut_movement_sexual_liberation_unlock_tt: "Unlocks Sexual Liberation [concept_political_movement] (wip)"
+ ut_movement_sexual_liberation_unlock_tt: "Unlocks Sexual Liberation [concept_political_movement]"
+ ut_movement_environmentalist_unlock_tt: "Unlocks Environmentalist [concept_political_movement]"
 
  ut_liberal_feminism_leader: "Liberal Feminist"
  ut_liberal_feminism_leader_desc: "Liberal Feminists work towards Emancipation and advocate for [GetIdeology('ideology_market_liberal').GetName] reforms. More likely if [concept_ut_nd_democrat_core]."
@@ -954,7 +969,7 @@
  law_ut_minimum_wage_desc: ""
  law_decolonization: "Decolonization"
  law_decolonization_desc: "This country actively promotes the independence of its former colonies."
- law_decolonization_effect_tt: "Every subject will become independent. If you are on the Communist path, they will join your power bloc."
+ law_decolonization_effect_tt: "Every colonial subject will become independent. If you are on the Communist path, they will join your power bloc."
  law_registration_process: "Qualified Migration"
  law_registration_process_desc: "The country has a regulated immigration system; only after successful registration do immigrants receive residence and work rights."
 
@@ -993,6 +1008,8 @@
  country_institution_migration_office_max_investment_add: "Max. Investment in [concept_institution] $institution_migration_office$"
  country_institution_cost_institution_migration_office_mult: "@bur![Nbsp][concept_bureaucracy] Cost of [GetInstitutionType('institution_migration_office').GetName]"
  country_institution_cost_institution_migration_office_mult_desc: "An increase or reduction to the @bur![Nbsp][concept_bureaucracy] cost of bringing [GetInstitutionType('institution_migration_office').GetName] to the citizens"
+ country_institution_size_change_speed_institution_migration_office_mult: "Institution Size Change Speed for [GetInstitutionType('institution_migration_office').GetName]"
+ country_institution_size_change_speed_institution_migration_office_mult_desc: "How fast you change the size of [GetInstitutionType('institution_migration_office').GetName]"
 
 #Diplo Stuff
  ut_international_diplomatic_power_bloc_merge: "Unify Power Blocs"
@@ -1174,8 +1191,9 @@
  ut_fund_ideology_proposal_declined_name: "$ut_fund_ideology$ Declined"
  ut_fund_ideology_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to $ut_fund_ideology$."
  ut_fund_ideology_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds aligned political groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], increasing [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] ideological progress in [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAdjectiveNoFormatting]'s ideology.\n\n$ut_fund_ideology_effect$"
- ut_fund_ideology_desc: "Fund aligned political groups in a target country without a ruling ideology to increase their ideological progress.\n\n$ut_fund_ideology_effect$"
- ut_fund_ideology_effect: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
+ ut_fund_ideology_desc: "Fund aligned political groups in a target country without a ruling ideology to increase their ideological progress and influence their [concept_ut_nd_focus].\n\n$ut_fund_ideology_effect$"
+ ut_fund_ideology_effect_progress: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
+ ut_fund_ideology_effect_focus: "Target country [Concept('concept_ut_nd_focus', 'focuses')] on source country's ideology, when not on cooldown."
  country_new_dawn_fund_ideology_efficiency_add: "[GetDiplomaticActionType('ut_fund_ideology').GetName] [concept_ut_nd_progress_points] gain"
  country_new_dawn_fund_ideology_efficiency_add_desc: "[GetDiplomaticActionType('ut_fund_ideology').GetName] target country gains additional [concept_ut_nd_progress_points] to source country's core ideology."
 
@@ -1196,6 +1214,7 @@
  ut_has_new_dawn_pressure_75: "Has #b 75#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_90: "Has #b 90#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_max: "Has #b 100#! [concept_ut_nd_pressure]"
+
  ut_add_new_dawn_pressure_add_1: "Gains #r 1#! [concept_ut_nd_pressure]"
  ut_add_new_dawn_pressure_add_5: "Gains #r 5#! [concept_ut_nd_pressure]"
  ut_add_new_dawn_pressure_add_10: "Gains #r 10#! [concept_ut_nd_pressure]"
@@ -1984,6 +2003,8 @@
  goods_output_soft_drinks_add: "@soft_drinks! Soft Drinks output"
  goods_output_soft_drinks_add_desc: "The amount of @soft_drinks! Soft Drinks produced by buildings"
 
+ goods_output_utopia_tanks_mult: "@utopia_tanks! Heavy Tanks Output"
+ goods_output_utopia_tanks_mult_desc: "A bonus or penalty for the production of @utopia_tanks! $utopia_tanks$."
  goods_output_trucks_mult: "@trucks! $trucks$ Goods Output"
  goods_output_trucks_mult_desc: "A bonus or penalty for the production of @trucks! $trucks$."
 
@@ -2102,7 +2123,7 @@
  je_ut_software_points_bar_era_7_desc: "Software Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/1000)"
 
  je_ut_software_era_7_1_operating_system: "Operating System"
- je_ut_software_era_7_1_operating_system_desc: "Standardized operating environments improve software deployment and reliability."
+ je_ut_software_era_7_1_operating_system_desc: "Standardized operating environments improve software deployment and reliability.je_ut_software_era_7_1_operating_system"
  je_ut_software_era_7_1_operating_system_mod: "$je_ut_software_era_7_1_operating_system$"
  je_ut_software_era_7_2_relational_database: "Relational Database"
  je_ut_software_era_7_2_relational_database_desc: "Structured data systems enable scalable storage, querying, and business analytics."
@@ -2119,14 +2140,19 @@
 
  je_ut_software_era_7_required_points_tt: "Requires at least #v 1000#! $je_ut_software_points_bar_era_7$"
  je_ut_software_era_7_required_points_spend_tt: "Consumes #v 1000#! $je_ut_software_points_bar_era_7$"
- je_ut_software_era_7_technology_open_source_tt: "Open Source Expertise"
- je_ut_software_era_7_technology_open_sourced_tt: "Expertise has been open-sourced"
- je_ut_software_era_7_technology_not_open_sourced_tt: "Expertise has #r not#! been open-sourced"
+
+ je_ut_software_technology_open_source_tt: "Open Source Expertise"
+ je_ut_software_technology_open_sourced_tt: "Expertise has been open-sourced"
+ je_ut_software_technology_not_open_sourced_tt: "Expertise has #r not#! been open-sourced"
 
  je_ut_software_era_8: "Software Expertise: Era 8"
  je_ut_software_era_8_reason: "Scale software ecosystems through modern platform, cloud, and ownership paradigms."
  je_ut_software_points_bar_era_8: "Software Expertise"
  je_ut_software_points_bar_era_8_desc: "Software Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/10,000)"
+
+ ut_open_source_era_8_title: "Open Source Expertise"
+ ut_open_source_era_8_desc: "Open collaboration spreads software expertise across the entire globe and enables the development of modern software ecosystems."
+ ut_open_source_era_8_flavor: "Open collaboration spreads software expertise across the entire globe and enables the development of modern software ecosystems. Open source software is often developed in a public, collaborative manner, allowing anyone to contribute improvements or use the software freely. This approach has led to rapid innovation and widespread adoption of software technologies, making advanced software expertise accessible to individuals and organizations worldwide."
 
  je_ut_software_era_8_1_version_control: "Version Control"
  je_ut_software_era_8_1_version_control_desc: "Version control systems enable collaborative development, safer releases, and rapid iteration."
@@ -2151,8 +2177,6 @@
 
  je_ut_software_era_8_required_points_tt: "Requires at least #v 10000#! $je_ut_software_points_bar_era_8$"
  je_ut_software_era_8_required_points_spend_tt: "Consumes #v 10000#! $je_ut_software_points_bar_era_8$"
- je_ut_software_era_8_technology_open_sourced_tt: "Expertise has been open-sourced"
- je_ut_software_era_8_technology_not_open_sourced_tt: "Expertise has #r not#! been open-sourced"
 
  je_ut_software_points_bar_progress_buildings_era_6: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_6_tooltip Buildings #!#!"
  je_ut_software_points_bar_progress_buildings_era_6_tooltip: "Sum of [concept_occupancy] times [concept_building_level].\nMaximum gain is 10 Software Expertise."
