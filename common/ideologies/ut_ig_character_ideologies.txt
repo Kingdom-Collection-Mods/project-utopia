@@ -45,10 +45,7 @@
 		NAND = {
 			has_role_of_type = agitator
 			owner = {
-				OR = {
-					has_law = law_type:law_environment_protection_institute_two
-					has_law = law_type:law_environment_protection_institute_three
-				}
+				has_law = law_type:law_environment_protection_institute_three
 			}
 		}
 		interest_group = {
@@ -106,7 +103,6 @@
 			limit = {
 				owner = {
 					has_law = law_type:law_no_environment_protection
-					has_law = law_type:law_no_food_safety_protection
 				}
 			}
 			add = 50
@@ -153,21 +149,21 @@
 	}
 	
 	non_interest_group_leader_weight = {
-		value = 50
+		value = 0
 		
+		#base 50 if not on epa 2/3
 		if = {
 			limit = {
 				owner = {
-					NOT = {
-						AND = {
-							has_law = law_type:law_environment_protection_institute
-							has_law = law_type:law_food_safety_protection_institute
-						}
+					NOR = {
+						has_law = law_type:law_environment_protection_institute_two
+						has_law = law_type:law_environment_protection_institute_three
 					}
 				}
 			}
 			add = 50
 		}
+		#boost without epa/food
 		if = {
 			limit = {
 				owner = {
@@ -181,6 +177,10 @@
 			limit = {
 				owner = {
 					has_technology_researched = epa_two
+					NOR = {
+						has_law = law_type:law_environment_protection_institute_two
+						has_law = law_type:law_environment_protection_institute_three
+					}
 				}
 			}
 			add = 50
@@ -189,16 +189,8 @@
 		if = {
 			limit = {
 				owner = {
+					NOT = { has_law = law_type:law_environment_protection_institute_three }
 					has_technology_researched = epa_three
-				}
-			}
-			add = 25
-		}
-		
-		if = {
-			limit = {
-				owner = {
-					has_technology_researched = food_standards_one
 				}
 			}
 			add = 25
@@ -1273,10 +1265,13 @@ ut_liberal_feminism_leader = {
 		NAND = {
 			has_role_of_type = agitator
 			owner = {
-				has_law = law_type:law_laissez_faire
-				has_law = law_type:law_child_labor_allowed
-				has_law = law_type:law_free_trade
+				has_law = law_type:law_free_market_economy
+				OR = {
+					has_law = law_type:law_compulsory_primary_school
+					has_law = law_type:law_compulsory_secondary_school
+				}
 				has_law = law_type:law_commercialized_agriculture
+				has_law = law_type:law_equal_rights_for_women
 			}
 		}
 		interest_group = {
@@ -1341,7 +1336,7 @@ ut_liberal_feminism_leader = {
 					is_country_type = unrecognized
 				}
 			}
-			add = -50
+			add = -100
 		}
 		# More likely for GP's
 		if = {
@@ -1377,10 +1372,9 @@ ut_liberal_feminism_leader = {
 		if = {
 			limit = {
 				owner = {
-					OR = {
-						has_law = law_type:law_womens_suffrage
-						has_technology_researched = feminism_3
-					}
+					NOT = { has_law = law_type:law_equal_rights_for_women }
+					NOT = { has_law = law_type:law_affirmative_equality }
+					has_technology_researched = feminism_3
 				}
 			}
 			multiply = 1.25
@@ -1473,31 +1467,19 @@ ut_radical_feminism_leader = {
 	}
 	
 	country_trigger = {
-		has_technology_researched = feminism_2
-		
-		# Invalid for pre-ACW USA
-		NOT = {
-			AND = {
-				exists = c:USA
-				OR = {
-					c:USA = this
-					civil_war_origin_country ?= c:USA
-				}
-			}
-			has_journal_entry = je_acw_countdown
-		}		
+		has_technology_researched = feminism_2	
 	}
 
 	interest_group_leader_trigger = {
 		OR = {
 			AND = {
 				has_modifier = ut_new_dawn_core_communist_mod
-				OR  = {
-					is_interest_group_type = ig_trade_unions
-					is_interest_group_type = ig_urbanists
-				}
+				ideology_radical_valid_trigger = yes
 			}
-			ideology_radical_valid_trigger = yes
+			OR  = {
+				is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_urbanists
+			}
 		}
 		
 	}
@@ -1507,20 +1489,23 @@ ut_radical_feminism_leader = {
 		NAND = {
 			has_role_of_type = agitator
 			owner = {
-				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
-				}
 				has_law = law_type:law_universal_suffrage
 				has_law = law_type:law_protected_speech
 				has_law = law_type:law_guaranteed_liberties
+
+				has_law = law_type:law_affirmative_equality
+				has_law = law_type:law_lgbt_rights_3
 			}
 		}
 
-		# Monarchs cannot be republicans
+		# Monarchs and Fascist cannot be republicans
 		NOT = {
 			owner = {
-				has_law = law_type:law_monarchy
+				OR = {
+					has_law = law_type:law_monarchy
+					has_modifier = ut_new_dawn_core_fascist_mod
+					has_modifier = ut_new_dawn_core_autocratic_mod
+				}
 			}
 			OR = {
 				is_ruler_of_own_country = yes
@@ -1588,41 +1573,15 @@ ut_radical_feminism_leader = {
 			}
 			add = -75
 		}
-		# very unlikely for trade unions after socialism is researched
+		# very unlikely for any but trade unions after neoliberalism is researched
 		if = {
 			limit = {
-				is_interest_group_type = ig_trade_unions
+				NOT = { is_interest_group_type = ig_trade_unions }
 				owner = {
 					has_technology_researched = political_progress_3_neoliberalism
 				}
 			}
 			add = -200
-		}
-		if = {
-			limit = {
-				owner = {
-					has_global_variable = peoples_springtime_happening
-					capital = {
-					 	OR = {
-							is_in_geographic_region = geographic_region_north_germany_old
-							is_in_geographic_region = geographic_region_south_germany_old
-							is_in_geographic_region = geographic_region_england_old
-							is_in_geographic_region = geographic_region_iberia_old
-							is_in_geographic_region = geographic_region_france_old
-							is_in_geographic_region = geographic_region_occitania_old
-							is_in_geographic_region = geographic_region_rhine_old
-							is_in_geographic_region = geographic_region_italy_old
-							is_in_geographic_region = geographic_region_poland_old
-							is_in_geographic_region = geographic_region_danubia_old
-							is_in_geographic_region = geographic_region_balkans_old
-							is_in_geographic_region = geographic_region_baltic_old
-						}
-					}
-				}
-			}
-			multiply = {
-				value = 2.5
-			}
 		}
 		if = {
 			limit = {
@@ -1636,22 +1595,29 @@ ut_radical_feminism_leader = {
 			}
 			multiply = { value = 0.5 }
 		}
-		
+		if = {
+			limit = {
+				OR = {
+					has_modifier = ut_new_dawn_core_fascist_mod
+					has_modifier = ut_new_dawn_core_autocratic_mod
+				}
+			}
+			multiply = 0.1
+		}
 		if = {
 			limit = {
 				owner = {
 					has_modifier = ut_new_dawn_core_communist_mod
 				}
 			}
-			multiply = 1.5
+			multiply = 1.25
 		}
 		if = {
 			limit = {
 				owner = {
-					OR = {
-						has_law = law_type:law_equal_rights_for_women
-						has_technology_researched = feminism_3
-					}
+					NOT = { has_law = law_type:law_equal_rights_for_women }
+					NOT = { has_law = law_type:law_affirmative_equality }
+					has_technology_researched = feminism_3
 				}
 			}
 			multiply = 1.5
@@ -1686,6 +1652,15 @@ ut_radical_feminism_leader = {
 		}
 		if = {
 			limit = {
+				OR = {
+					has_modifier = ut_new_dawn_core_fascist_mod
+					has_modifier = ut_new_dawn_core_autocratic_mod
+				}
+			}
+			multiply = 0.1
+		}
+		if = {
+			limit = {
 				owner = {
 					has_modifier = ut_new_dawn_core_communist_mod
 				}
@@ -1696,10 +1671,9 @@ ut_radical_feminism_leader = {
 		if = {
 			limit = {
 				owner = {
-					OR = {
-						has_law = law_type:law_womens_suffrage
-						has_technology_researched = feminism_3
-					}
+					NOT = { has_law = law_type:law_equal_rights_for_women }
+					NOT = { has_law = law_type:law_affirmative_equality }
+					has_technology_researched = feminism_3
 				}
 			}
 			multiply = 1.25
@@ -1837,56 +1811,35 @@ ut_social_feminism_leader = {
 					has_law = law_type:law_council_republic
 				}
 			}
-			add = 75
+			add = 50
 		}
 		# more likely for content trade unions outside of council republic
 		if = {
 			limit = {
 				is_interest_group_type = ig_trade_unions
 				ig_approval >= 0
-				owner = {
-					NOT = { has_law = law_type:law_council_republic }
-				}
 			}
-			add = 75
+			add = 25
 		}
 		# extremely unlikely for trade unions in council republic
 		if = {
 			limit = {
-				is_interest_group_type = ig_trade_unions
-				owner = {
-					has_law = law_type:law_council_republic
-					NOT = {
-						OR = {
-							has_law = law_type:law_affirmative_equality
-							has_law = law_type:law_equal_rights_for_women
-						}
-					}
+				OR = {
+					has_modifier = ut_new_dawn_core_fascist_mod
+					has_modifier = ut_new_dawn_core_autocratic_mod
 				}
 			}
-			multiply = 0.01
+			multiply = 0.1
 		}
 		if = {
 			limit = {
 				owner = {
-					OR = {
-						has_law = law_type:law_womens_suffrage
-						has_technology_researched = feminism_3
-					}
+					NOT = { has_law = law_type:law_equal_rights_for_women }
+					NOT = { has_law = law_type:law_affirmative_equality }
+					has_technology_researched = feminism_3
 				}
 			}
 			multiply = 1.5
-		}
-		if = {
-			limit = {
-				owner = {
-					OR = {
-						has_modifier = ut_new_dawn_core_democratic_mod
-						has_modifier = ut_new_dawn_core_communist_mod
-					}
-				}
-			}
-			multiply = 1.25
 		}
 	}
 	
@@ -1910,23 +1863,20 @@ ut_social_feminism_leader = {
 		}
 		if = {
 			limit = {
-				owner = {
-					OR = {
-						has_modifier = ut_new_dawn_core_democratic_mod
-						has_modifier = ut_new_dawn_core_communist_mod
-					}
+				OR = {
+					has_modifier = ut_new_dawn_core_fascist_mod
+					has_modifier = ut_new_dawn_core_autocratic_mod
 				}
 			}
-			multiply = 1.25
+			multiply = 0.1
 		}
 		#extra boost if on vanilla women rights
 		if = {
 			limit = {
 				owner = {
-					OR = {
-						has_law = law_type:law_womens_suffrage
-						has_technology_researched = feminism_3
-					}
+					NOT = { has_law = law_type:law_equal_rights_for_women }
+					NOT = { has_law = law_type:law_affirmative_equality }
+					has_technology_researched = feminism_3
 				}
 			}
 			multiply = 1.25
