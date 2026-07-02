@@ -816,7 +816,7 @@
  ut_ideology_environmentalist_movement_desc: "Environmentalist ideologies prioritize the protection of the environment and sustainable development. They advocate for policies that address climate change, conserve natural resources, and promote ecological balance."
 
  ut_ideology_sexual_liberation_movement: "Sexual Liberation"
- ut_ideology_sexual_liberation_movement_desc: "Sexual Liberation ideologies advocate for the freedom of individuals to express their sexuality without societal constraints. They support all sexual rights and aim to eliminate discrimination based on sexual orientation and gender identity."
+ ut_ideology_sexual_liberation_movement_desc: "Sexual Liberation ideologies advocate for the freedom of individuals to express their sexuality without societal constraints. They support all sexual rights and aim to eliminate discrimination based on sexual orientation and gender identity.\nBlocked by [concept_ut_nd_autocrat_core] and [concept_ut_nd_fascist_core]."
 
  ut_ideology_conservative_movement: "Conservative"
  ut_ideology_conservative_movement_desc: "Conservative ideologies emphasize the preservation of traditional institutions, values, and practices. They advocate for gradual change and often prioritize stability, order, and continuity in society."
