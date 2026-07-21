@@ -122,6 +122,8 @@ principle_common_financial_policy_3 = {
 		
 		# Cheaper port connections
 		country_port_connection_cost_mult = -0.25
+		
+		country_join_power_bloc_member_in_defensive_plays_bool = yes
 	}
 	
 	ai_weight = {
@@ -323,9 +325,8 @@ ut_principle_military_cooperation_3 = {
 		country_military_goods_cost_mult = -0.15
 		country_military_tech_spread_mult = 0.1
 		
-		# Countries forced to join defensive plays against members
-		country_join_power_bloc_member_in_defensive_plays_bool = yes
-		country_infamy_generation_mult = -0.05
+		# Countries join defensive and offensive plays from members
+		country_join_power_bloc_member_in_plays_bool = yes
 	}
 	
 	leader_modifier = {

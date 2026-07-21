@@ -52,12 +52,13 @@ new_dawn_event_innovation_max_reduced_mod = {
 
 new_dawn_event_enthusiasm_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
-	country_weekly_innovation_max_add = 20
+	country_weekly_innovation_max_add = 30
 }
 
 new_dawn_event_social_harmony_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
-	country_law_enactment_speed_mult = -0.25
+	country_law_enactment_speed_mult = 0.25
+	country_law_enactment_stall_mult = -0.25
 }
 
 new_dawn_event_cultural_awakening_mod = {
@@ -106,20 +107,20 @@ ai_great_power_buff_spread = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 150
 	country_weekly_innovation_max_add = 50
-	country_weekly_innovation_add = 50
+	country_weekly_innovation_add = 100
 }
 
 ai_major_power_buff_spread = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 100
 	country_weekly_innovation_max_add = 25
-	country_weekly_innovation_add = 50
+	country_weekly_innovation_add = 100
 }
 
 ai_below_major_power_buff_spread = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 50
-	country_weekly_innovation_add = 50
+	country_weekly_innovation_add = 100
 }
 
 
@@ -138,16 +139,19 @@ wirtschaftswunder_modifier = {
 wirtschaftswunder_others_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	country_tech_spread_add = 50
+	country_weekly_innovation_add = 400
 }
 
 early_civil_aviation_modifier_others = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 50
+	country_weekly_innovation_add = 50
 }
 
 modern_civil_aviation_modifier_others = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 50
+	country_weekly_innovation_add = 50
 }
 
 je_ut_new_dawn_democratic_mod = {
@@ -373,12 +377,14 @@ ut_new_dawn_core_external_offensive_focus_mod = {
 	country_new_dawn_progress_points_progress = -1
 	country_new_dawn_propaganda_source_speed_mult = 0.2
 	country_new_dawn_fund_opposition_efficiency_mult = 0.25
+	country_leverage_generation_mult = 0.2
 }
 
 ut_new_dawn_core_external_cooperative_focus_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	country_new_dawn_progress_points_progress = -1
 	country_influence_mult = 0.25
+	country_leverage_generation_mult = 0.25
 	#country_max_declared_interests_mult = 0.25 todo replace
 }
 

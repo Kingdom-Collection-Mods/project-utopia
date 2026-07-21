@@ -325,6 +325,15 @@ goods_output_utopia_tanks_add={
 	}
 }
 
+goods_output_utopia_tanks_mult={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
 goods_input_utopia_tanks_add={
 	decimals=1
 	color=bad
@@ -560,6 +569,15 @@ country_institution_cost_institution_migration_office_mult={
 	}
 }
 
+country_institution_size_change_speed_institution_migration_office_mult={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
 ###
 
 building_group_bg_bauxite_mining_tax_mult={
@@ -729,6 +747,15 @@ country_new_dawn_fund_ideology_efficiency_add={
 	script_only = yes
 	decimals=1
 	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+country_expected_sol_for_new_dawn_pressure={
+	script_only = yes
+	decimals=1
+	color=neutral
 	game_data={
 		ai_value=0
 	}

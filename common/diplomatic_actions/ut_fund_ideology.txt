@@ -99,7 +99,8 @@ ut_fund_ideology = {
 		}
 
 		monthly_effect = {
-			custom_tooltip = ut_fund_ideology_effect
+			custom_tooltip = ut_fund_ideology_effect_progress
+			custom_tooltip = ut_fund_ideology_effect_focus
 			if = {
 				limit = {
 					has_modifier = ut_new_dawn_core_autocratic_mod

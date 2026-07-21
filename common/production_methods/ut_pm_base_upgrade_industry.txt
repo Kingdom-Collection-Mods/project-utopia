@@ -40,7 +40,7 @@ pm_ut_industry_plastics = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 15
+			state_pollution_generation_add = 10
 		}
 	}
 
