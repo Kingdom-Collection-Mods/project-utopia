@@ -235,6 +235,7 @@ je_ut_new_dawn_communist_one_people_mod = {
 	country_radicals_from_conquest_mult = -0.1
 }
 
+#deprecated rename to je_ut_new_dawn_communist_expansion_mod
 je_ut_communist_socialist_expansion_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	country_infamy_generation_mult = -0.1
