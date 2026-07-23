@@ -1488,6 +1488,7 @@ ut_movement_environmentalist = {
 			}
 		}
 	}
+	
 	character_support_weight = {
 		value = 200
 		if = {
@@ -1693,6 +1694,66 @@ ut_movement_environmentalist = {
 
 		weight = {
 			value = 1000
+		}
+	}
+}
+
+ut_movement_decolonization = {
+	movement_category = movement_category_ideological
+
+	ideology = ut_ideology_decolonization_movement
+	character_ideologies = {
+		ideology_pacifist
+	}
+	
+	creation_weight = {
+		value = 0
+		if = {
+			limit = {
+				owner ?= {
+					any_subject_or_below = {
+						OR = {
+							is_subject_type = subject_type_colony
+							is_subject_type = subject_type_chartered_company
+						}
+					}
+				}
+			}
+			add = 1000
+		}
+	}
+
+	creation_trigger = {
+		has_technology_researched = union_new_mandates
+	}
+	
+	on_created = {
+		#add_movement_enthusiasm_modifier = yes
+	}
+
+	
+	character_support_trigger = {
+		OR = {
+			has_ideology = ideology:ideology_pacifist
+			has_ideology = ideology:ideology_pacifist
+			OR = {
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_urbanists
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
+		}
+	}
+	
+	character_support_weight = {
+		value = 200
+		if = {
+			limit = {
+				has_ideology = ideology:ut_ideology_environmentalist_leader
+			}
+			multiply = {
+				value = 5
+			}
 		}
 	}
 }
