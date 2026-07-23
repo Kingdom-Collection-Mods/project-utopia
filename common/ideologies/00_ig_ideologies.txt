@@ -450,7 +450,7 @@ ideology_isolationist = {
 	lawgroup_colonization = {
 		law_frontier_colonization = strongly_approve
 		law_no_colonial_affairs = approve
-		law_decolonization = neutral
+		law_decolonization = approve
 		law_colonial_resettlement = disapprove
 		law_colonial_exploitation = disapprove
 	}
