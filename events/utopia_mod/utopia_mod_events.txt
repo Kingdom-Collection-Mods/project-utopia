@@ -33,6 +33,20 @@ utopia_mod.1 = {
 		custom_tooltip = ut_mining_cheat_enable_tt
 		set_global_variable = ut_tech_preview_mining_cheat_enabled
 	}
+	
+	option = {
+		trigger = {
+			NOT = { has_global_variable = ut_utopia_enabled_on_game_started_var }
+			NOT = { has_global_variable = ut_utopia_mining_enabled_post_game_start_var }
+		}
+		name = utopia.enable
+		set_global_variable = ut_utopia_mining_enabled_post_game_start_var
+		ut_utopia_spawn_rare_earths_effect = yes
+		ut_utopia_spawn_bauxite_effect = yes
+	}
+	after = {
+		remove_variable = ut_tech_preview_cheat_mining_selecting
+	}
 }
 
 utopia_mod.2 = {

@@ -1,4 +1,4 @@
-ut_tech_preview_cheat_research = {
+﻿ut_tech_preview_cheat_research = {
 	is_shown = {
 		is_player = yes
 		NOT = { has_global_variable = ut_tech_preview_cheat_disable }
@@ -60,14 +60,17 @@ ut_tech_preview_cheat_mining = {
 	is_shown = {
 		is_player = yes
 		NOT = { has_global_variable = ut_utopia_enabled_on_game_started_var }
-		NOT = { has_global_variable = ut_tech_preview_mining_cheat_enabled }
+		OR = {
+			NOT = { has_global_variable = ut_tech_preview_mining_cheat_enabled }
+			NOT = { has_global_variable = ut_utopia_mining_enabled_post_game_start_var }
+		}
 		NOT = { has_building = building_bauxite_mine }
 		NOT = { has_building = building_rare_earths_mine }
 	}
 
 	possible = {
 		is_player = yes
-		NOT = { has_global_variable = ut_tech_preview_mining_cheat_enabled }
+		NOT = { has_variable = ut_tech_preview_cheat_mining_selecting }
 	}
 	
 	when_taken = {
@@ -75,6 +78,7 @@ ut_tech_preview_cheat_mining = {
 			id = utopia_mod.1
 			popup = yes
 		}
+		set_variable = ut_tech_preview_cheat_mining_selecting
 	}
 
 	ai_chance = {
