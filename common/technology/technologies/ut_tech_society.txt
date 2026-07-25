@@ -770,6 +770,20 @@ online_forums = {
 
 	on_researched = {
 		#custom_tooltip = online_forums_tt #replaced by country_new_dawn_fund_opposition_efficiency_mult
+		if = {
+			limit = {
+				any_political_movement = {
+					is_political_movement_type = movement_reactionary
+				}
+			}
+			random_political_movement = {
+				limit = {
+					is_political_movement_type = movement_reactionary
+					has_core_ideology = ideology:ideology_reactionary_movement
+				}
+				set_core_ideology = ut_ideology_reactionary_movement_era_8
+			}
+		}
 	}
 
 	modifier = {

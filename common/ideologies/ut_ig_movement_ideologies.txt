@@ -94,3 +94,42 @@ ut_ideology_conservative_movement = {
 		law_lgbt_rights_3 = strongly_disapprove
 	}
 }
+
+ut_ideology_reactionary_movement_era_8 = {
+	icon = "gfx/interface/icons/ideology_icons/reactionary.dds"
+
+	lawgroup_governance_principles = {
+		law_monarchy = neutral
+		law_theocracy = neutral
+		law_presidential_republic = disapprove
+		law_parliamentary_republic = disapprove
+		law_corporate_state = approve
+		law_social_monarchy = neutral
+		law_council_republic = strongly_disapprove
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = approve
+		law_neo_ethno_state = strongly_approve
+		law_national_supremacy = approve
+		law_subjecthood = neutral
+		law_racial_segregation = approve
+		law_cultural_exclusion = neutral
+		law_multicultural = strongly_disapprove
+		law_multicultural_globalism = strongly_disapprove
+	}
+
+	lawgroup_migration = {
+		law_closed_borders = strongly_approve
+		law_migration_controls = approve
+		law_registration_process = approve
+		law_no_migration_controls = disapprove
+	}
+
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = disapprove
+		law_lgbt_rights_1 = approve
+		law_lgbt_rights_2 = neutral
+		law_lgbt_rights_3 = disapprove
+	}
+}
