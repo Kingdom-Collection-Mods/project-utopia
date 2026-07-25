@@ -6,7 +6,7 @@
     }
 
     modifier = {
-        state_standard_of_living_add = 0.5
+        state_standard_of_living_add = 0.2
     }
 
     possible = {
@@ -35,7 +35,7 @@ ut_lgbt_same_sex_marriage_amendment = {
     }
 
     modifier = {
-        state_standard_of_living_add = 0.5
+        state_standard_of_living_add = 0.4
     }
 
     possible = {
@@ -61,7 +61,7 @@ ut_lgbt_sexual_self_determination_amendment = {
     }
     
     modifier = {
-        state_standard_of_living_add = 0.5
+        state_standard_of_living_add = 0.1
     }
 
     possible = {

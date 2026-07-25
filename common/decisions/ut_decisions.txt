@@ -394,13 +394,31 @@ ut_lgbt_same_sex_unions = {
 	}
 
 	possible = {
-		always = no
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_100
+			ut_has_new_dawn_progress_core = {
+				VALUE = 100
+			}
+		}
+		
 		NOT = { has_variable = ut_lgbt_same_sex_unions_var }
 	}
 
 	when_taken = {
 		set_variable = {
 			name = ut_lgbt_same_sex_unions_var
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_progress_neg_50
+			ut_add_new_dawn_core_progress = {
+				VALUE = 50
+			}
+		}
+		active_law:lawgroup_lgbt_rights ?= {
+			add_amendment = {
+				type = ut_lgbt_same_sex_unions_amendment
+				sponsor = ig:ig_urbanists
+			}
 		}
 	}
 
@@ -412,16 +430,37 @@ ut_lgbt_same_sex_unions = {
 ut_lgbt_same_sex_marriage = {
 	is_shown = {
 		has_law = law_type:law_lgbt_rights_3
+		has_variable = ut_lgbt_same_sex_unions_var
 	}
 
 	possible = {
-		always = no
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_100
+			ut_has_new_dawn_progress_core = {
+				VALUE = 100
+			}
+		}
 		NOT = { has_variable = ut_lgbt_same_sex_marriage_var }
 	}
 
 	when_taken = {
 		set_variable = {
 			name = ut_lgbt_same_sex_marriage_var
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_progress_neg_50
+			ut_add_new_dawn_core_progress = {
+				VALUE = 50
+			}
+		}
+		active_law:lawgroup_lgbt_rights ?= {
+			every_scope_amendment = {
+				remove_amendment = yes
+			}
+			add_amendment = {
+				type = ut_lgbt_same_sex_marriage_amendment
+				sponsor = ig:ig_urbanists
+			}
 		}
 	}
 
@@ -433,16 +472,34 @@ ut_lgbt_same_sex_marriage = {
 ut_lgbt_sexual_self_determination = {
 	is_shown = {
 		has_law = law_type:law_lgbt_rights_3
+		has_variable = ut_lgbt_same_sex_marriage_var
 	}
 
 	possible = {
-		always = no
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_100
+			ut_has_new_dawn_progress_core = {
+				VALUE = 100
+			}
+		}
 		NOT = { has_variable = ut_lgbt_sexual_self_determination_var }
 	}
 
 	when_taken = {
 		set_variable = {
 			name = ut_lgbt_sexual_self_determination_var
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_progress_neg_50
+			ut_add_new_dawn_core_progress = {
+				VALUE = 50
+			}
+		}
+		active_law:lawgroup_lgbt_rights ?= {
+			add_amendment = {
+				type = ut_lgbt_sexual_self_determination_amendment
+				sponsor = ig:ig_urbanists
+			}
 		}
 	}
 
