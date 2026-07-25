@@ -994,10 +994,16 @@
 
  ut_lgbt_same_sex_unions: "Same-Sex Unions"
  ut_lgbt_same_sex_unions_desc: "Legal recognition of same-sex partnerships, offering similar rights and responsibilities as heterosexual marriages."
+ ut_lgbt_same_sex_unions_amendment: "$ut_lgbt_same_sex_unions$"
+ ut_lgbt_same_sex_unions_amendment_desc: "$ut_lgbt_same_sex_unions_desc$\nUnlocks: [GetAmendmentType('ut_lgbt_same_sex_marriage_amendment').GetName]"
  ut_lgbt_same_sex_marriage: "Same-Sex Marriage"
  ut_lgbt_same_sex_marriage_desc: "Full legal recognition and protection for same-sex marriages, including adoption rights and tax benefits."
+ ut_lgbt_same_sex_marriage_amendment: "$ut_lgbt_same_sex_marriage$"
+ ut_lgbt_same_sex_marriage_amendment_desc: "$ut_lgbt_same_sex_marriage_desc$\nUnlocks: [GetAmendmentType('ut_lgbt_same_sex_marriage_amendment').GetName]"
  ut_lgbt_sexual_self_determination: "Sexual Self-Determination"
  ut_lgbt_sexual_self_determination_desc: "Legal recognition of the right to sexual self-determination, including protection against discrimination based on sexual orientation and gender identity."
+ ut_lgbt_sexual_self_determination_amendment: "$ut_lgbt_sexual_self_determination$"
+ ut_lgbt_sexual_self_determination_amendment_desc: "$ut_lgbt_sexual_self_determination_desc$"
 
  law_international_trade: "International Trade"
  law_international_trade_desc: "Regulations and agreements governing trade between nations."

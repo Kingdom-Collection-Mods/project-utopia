@@ -1,4 +1,4 @@
-utopia_track_01 = {
+﻿utopia_track_01 = {
 	#credits = https://pixabay.com/music/main-title-steampunk-victorian-orchestra-183196/
 	#license Pixabay Content License (https://pixabay.com/service/license-summary/)
 	music = "file:/music/luis_humanoide-steampunk-victorian-orchestra-183196.ogg"
