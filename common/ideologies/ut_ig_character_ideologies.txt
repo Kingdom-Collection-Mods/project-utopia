@@ -433,6 +433,7 @@ ut_ideology_autocratic_leader = {
 				OR = {
 					has_law = law_type:law_oligarchy
 					has_law = law_type:law_autocracy
+					has_law = law_type:law_single_party_state
 				}
 			}
 		}
@@ -452,6 +453,7 @@ ut_ideology_autocratic_leader = {
 						has_law = law_type:law_oligarchy
 						has_law = law_type:law_secret_police
 						has_law = law_type:law_outlawed_dissent
+						has_law = law_type:law_single_party_state
 					} 
 					NOT = {
 						NOT = { has_modifier = je_ut_new_dawn_autocrat_focus }
@@ -459,6 +461,7 @@ ut_ideology_autocratic_leader = {
 							OR = {
 								has_law = law_type:law_autocracy
 								has_law = law_type:law_oligarchy
+								has_law = law_type:law_single_party_state
 							}
 							has_law = law_type:law_secret_police
 							has_law = law_type:law_outlawed_dissent
@@ -803,17 +806,9 @@ ut_ideology_national_socialist_leader = {
 		value = 100
 		if = {
 			limit = {
-				interest_group = {
-					OR = {
-						has_variable = communist_ig_var
-						has_variable = chose_vanguardism
-						has_variable = chose_anarchism
-						has_variable = chose_communism
-						has_variable = chose_ethno_nationalism
-					}
-				}
+				NOT = { has_modifier = ut_new_dawn_core_fascist_mod }
 			}
-			multiply = 0.1
+			multiply = 0.5
 		}
 	}	
 }
@@ -975,19 +970,12 @@ ut_ideology_totalitarian_communist_leader = {
 	
 	non_interest_group_leader_weight = {
 		value = 100
+		
 		if = {
 			limit = {
-				interest_group = {
-					OR = {
-						has_variable = communist_ig_var
-						has_variable = chose_vanguardism
-						has_variable = chose_anarchism
-						has_variable = chose_communism
-						has_variable = chose_ethno_nationalism
-					}
-				}
+				NOT = { has_modifier = ut_new_dawn_core_communist_mod }
 			}
-			multiply = 0.1
+			multiply = 0.5
 		}
 	}	
 }
@@ -1172,7 +1160,7 @@ ut_ideology_economical_corporatist_leader = {
 					}
 				}
 			}
-			multiply = 0.1
+			multiply = 0.5
 		}
 	}
 }
