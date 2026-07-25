@@ -821,6 +821,12 @@
  ut_ideology_conservative_movement: "Konservativ"
  ut_ideology_conservative_movement_desc: "Konservative Ideologien betonen die Bewahrung traditioneller Institutionen, Werte und Praktiken. Sie setzen sich für schrittweise Veränderungen ein und priorisieren oft Stabilität, Ordnung und Kontinuität in der Gesellschaft."
 
+ ut_ideology_liberal_movement_modern: "$ideology_liberal_movement$"
+ ut_ideology_liberal_movement_modern_desc: "$ideology_liberal_movement_desc$"
+
+ ut_ideology_reactionary_movement_modern: "$ideology_reactionary_movement$"
+ ut_ideology_reactionary_movement_modern_desc: "$ideology_reactionary_movement_desc$"
+
 
  ig_trait_urbanist_loyal: "Leistungsgesellschaft"
  ig_trait_urbanist_loyal_desc: "Diese Gruppe setzt sich für die freie Bewegung von Menschen über Grenzen hinweg ein, da sie glaubt, dass dies den kulturellen Austausch und wirtschaftliche Chancen fördert. Sie lehnen restriktive Einwanderungspolitiken ab und betonen die internationale Zusammenarbeit."
@@ -989,10 +995,16 @@
 
  ut_lgbt_same_sex_unions: "Gleichgeschlechtliche Partnerschaften"
  ut_lgbt_same_sex_unions_desc: "Gesetzliche Anerkennung gleichgeschlechtlicher Partnerschaften, die ähnliche Rechte und Pflichten wie heterosexuelle Ehen bieten."
+ ut_lgbt_same_sex_unions_amendment: "$ut_lgbt_same_sex_unions$"
+ ut_lgbt_same_sex_unions_amendment_desc: "$ut_lgbt_same_sex_unions_desc$\nUnlocks: [GetAmendmentType('ut_lgbt_same_sex_marriage_amendment').GetName]"
  ut_lgbt_same_sex_marriage: "Gleichgeschlechtliche Ehe"
  ut_lgbt_same_sex_marriage_desc: "Vollständige rechtliche Anerkennung und Schutz für gleichgeschlechtliche Ehen, einschließlich Adoptionsrechte und steuerlicher Vorteile."
+ ut_lgbt_same_sex_marriage_amendment: "$ut_lgbt_same_sex_marriage$"
+ ut_lgbt_same_sex_marriage_amendment_desc: "$ut_lgbt_same_sex_marriage_desc$.\nUnlocks: [GetAmendmentType('ut_lgbt_sexual_self_determination').GetName]"
  ut_lgbt_sexual_self_determination: "Sexuelle Selbstbestimmung"
  ut_lgbt_sexual_self_determination_desc: "Gesetzliche Anerkennung des Rechts auf sexuelle Selbstbestimmung, einschließlich Schutz vor Diskriminierung aufgrund sexueller Orientierung und Geschlechtsidentität."
+ ut_lgbt_sexual_self_determination_amendment: "$ut_lgbt_sexual_self_determination$"
+ ut_lgbt_sexual_self_determination_amendment_desc: "$ut_lgbt_sexual_self_determination_desc$."
 
  law_international_trade: "Internationaler Handel"
  law_international_trade_desc: "Regelungen und Vereinbarungen, die den Handel zwischen Nationen regeln."
@@ -2253,6 +2265,20 @@
  setting_ut_new_dawn_historical_focus_yes_desc: "Ausgewählte KI-Nationen haben eine höhere Chance, ihren historischen $concept_ut_nd_focus$ zu wählen"
  setting_ut_new_dawn_historical_focus_no: "Disabled"
  setting_ut_new_dawn_historical_focus_no_desc: "Alle KI-Nationen haben die gleiche Chance, ihren Fokus zu wählen.\n@warning! Project Utopia wurde mit historischen Fokus getestet."
+
+ # Music
+ project_utopia_ost: "Project Utopia Soundtrack"
+
+ music_luis_humanoide_steampunk_victorian_orchestra_183196: "Victorian Orchestra - Luis Humanoide"
+ music_good_b_music_tree_of_life_inspiring_violin_382514: "Tree of Life - Good B"
+ music_restum_anoush_violin_in_painsad_violin_268426: "In Pain - Restum Anoush"
+ music_juan_sanchez_music_idyllic_113278: "Idyllic - Juan Sanchez"
+ music_sergepavkinmusic_hold_the_sky_148780: "Hold the Sky - Serge Pavkin"
+ music_trtasfiq_violin_and_piano_harmony_instrumental_music_for_focus_281403: "Harmony - Nabil"
+ music_internationale_orchestral_arrangement: "The Internationale (Communist Theme)"
+ music_abydos_music_ode_to_joy_beethoven_193117: "Ode to Joy (Democrat Theme)"
+ music_god_save_the_king_band_of_the_grenadier_guards_1930s_instrumental: "God Save the King (Autocrat Theme)"
+ music_horst_wessel_lied_instrumental: "Horst Wessel Song (Fascist Theme)"
 
 # Demands
  demand_ban_slavery: "Forderung: Verbots der Sklaverei"
