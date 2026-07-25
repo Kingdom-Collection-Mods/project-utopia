@@ -828,9 +828,9 @@
  ig_trait_urbanist_unhappy: "Discrimination"
  ig_trait_urbanist_unhappy_desc: ""
 
- ut_movement_cosmopolitan_name: "Cosmopolitan Movement"
+ ut_movement_cosmopolitan_name: "Urban Movement"
  ut_movement_humanist_name: "Civil Rights Movement"
- ut_movement_rationalists_name: "Rationalist Movement"
+ ut_movement_rationalists_name: "Reformer Movement"
  ut_movement_conservative_name: "Conservative Movement"
  ut_movement_sexual_liberation_name: "Sexual Liberation Movement"
  ut_movement_environmentalist_name: "Environmentalist Movement"
