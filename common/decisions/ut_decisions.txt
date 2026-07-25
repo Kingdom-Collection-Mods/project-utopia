@@ -1,4 +1,4 @@
-﻿ut_tech_preview_cheat_research = {
+ut_tech_preview_cheat_research = {
 	is_shown = {
 		is_player = yes
 		NOT = { has_global_variable = ut_tech_preview_cheat_disable }
@@ -482,6 +482,7 @@ ut_lgbt_sexual_self_determination = {
 				VALUE = 100
 			}
 		}
+		has_technology_researched = political_progress_4_greens
 		NOT = { has_variable = ut_lgbt_sexual_self_determination_var }
 	}
 

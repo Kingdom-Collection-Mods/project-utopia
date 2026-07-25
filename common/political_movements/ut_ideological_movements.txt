@@ -1143,7 +1143,6 @@ ut_movement_sexual_liberation = {
 	disband_trigger = {
 		has_law_or_variant = law_type:law_lgbt_rights_3
 		
-		#todo rework later, when there is a more transparent way to the player to get these amendments
 		active_law:lawgroup_lgbt_rights ?= {
 			OR = {
 				has_amendment = amendment_type:ut_lgbt_same_sex_unions_amendment
