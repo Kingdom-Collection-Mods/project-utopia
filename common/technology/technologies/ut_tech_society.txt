@@ -781,7 +781,7 @@ online_forums = {
 					is_political_movement_type = movement_reactionary
 					has_core_ideology = ideology:ideology_reactionary_movement
 				}
-				set_core_ideology = ut_ideology_reactionary_movement_era_8
+				set_core_ideology = ut_ideology_reactionary_movement_modern
 			}
 		}
 	}
@@ -847,6 +847,21 @@ anti_discrimination_laws = {
 		}
 		ig:ig_urbanists ?= {
 			add_ideology = ideology_urbanist_economy_base
+		}
+
+		if = {
+			limit = {
+				any_political_movement = {
+					is_political_movement_type = movement_liberal
+				}
+			}
+			random_political_movement = {
+				limit = {
+					is_political_movement_type = movement_liberal
+					has_core_ideology = ideology:ideology_liberal_movement
+				}
+				set_core_ideology = ut_ideology_liberal_movement_modern
+			}
 		}
 	}
 
