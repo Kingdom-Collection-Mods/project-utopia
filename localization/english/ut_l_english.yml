@@ -100,7 +100,7 @@
  je_urbanist_ig_reason: "The urbanist movement is more than architecture - it is a vision of how we live together. In growing cities, not just buildings are created, but societies. Urban planners, social reformers, and visionaries dream of urban spaces that not only function, but inspire: with parks, light, transit, and public life. The city is not only built - it is shaped, as a stage for a better future."
 
  concept_ut_research_institute: "Research Institute"
- concept_ut_research_institute_desc: "When unlocked, an initiative to found a [GetBuildingType('building_ut_research_institute').GetName] can be started via [concept_decision]. The Institute then needs to be constructed. The institute is a major source of $country_weekly_innovation_max_add$. Large research projects can be unlocked. \n\nEra 6 (1936-1961): [GetTechnology('nuclear_power').GetName] \nEra 7 (1962-1986): [GetTechnology('high_tech_computers').GetName] (~10µm)\nEra 8 (beyond 1987): [GetTechnology('generative_ai').GetName]\n\nWork in progress."
+ concept_ut_research_institute_desc: "When unlocked, an initiative to found a [GetBuildingType('building_ut_research_institute').GetName] can be started via [concept_decision]. The Institute then needs to be constructed. The institute is a major source of $country_weekly_innovation_max_add$. Large research projects can be unlocked. \n\nEra 6 (1936-1961): [GetTechnology('nuclear_power').GetName] \nEra 7 (1962-1986): [GetTechnology('high_tech_computers').GetName]\n\nWork in progress."
  ut_research_institute_found: "Found Research Institute"
  ut_research_institute_found_desc: "A national [concept_ut_research_institute] is to be established to consolidate scientific excellence, promote fundamental research, and structurally accelerate technological progress. The construction of this institution marks a milestone on the path to a knowledge-based society."
  ut_je_research_institute_founding: "Founding a Research Institute"
@@ -816,10 +816,16 @@
  ut_ideology_environmentalist_movement_desc: "Environmentalist ideologies prioritize the protection of the environment and sustainable development. They advocate for policies that address climate change, conserve natural resources, and promote ecological balance."
 
  ut_ideology_sexual_liberation_movement: "Sexual Liberation"
- ut_ideology_sexual_liberation_movement_desc: "Sexual Liberation ideologies advocate for the freedom of individuals to express their sexuality without societal constraints. They support all sexual rights and aim to eliminate discrimination based on sexual orientation and gender identity.\nBlocked by [concept_ut_nd_autocrat_core] and [concept_ut_nd_fascist_core]."
+ ut_ideology_sexual_liberation_movement_desc: "Sexual Liberation ideologies advocate for the freedom of individuals to express their sexuality without societal constraints. They support all sexual rights and aim to eliminate discrimination based on sexual orientation and gender identity.\nFormation blocked by [concept_ut_nd_autocrat_core] and [concept_ut_nd_fascist_core]."
 
  ut_ideology_conservative_movement: "Conservative"
  ut_ideology_conservative_movement_desc: "Conservative ideologies emphasize the preservation of traditional institutions, values, and practices. They advocate for gradual change and often prioritize stability, order, and continuity in society."
+
+ ut_ideology_liberal_movement_modern: "$ideology_liberal_movement$"
+ ut_ideology_liberal_movement_modern_desc: "$ideology_liberal_movement_desc$"
+
+ ut_ideology_reactionary_movement_modern: "$ideology_reactionary_movement$"
+ ut_ideology_reactionary_movement_modern_desc: "$ideology_reactionary_movement_desc$"
 
  ig_trait_urbanist_loyal: "Prestige Society"
  ig_trait_urbanist_loyal_desc: "This group advocates for the free movement of people across borders, believing it fosters cultural exchange and economic opportunity. They oppose restrictive immigration policies and emphasize international cooperation."
@@ -973,12 +979,12 @@
  law_registration_process: "Qualified Migration"
  law_registration_process_desc: "The country has a regulated immigration system; only after successful registration do immigrants receive residence and work rights."
 
- lawgroup_lgbt_rights: "Sexuality - Under Construction"
+ lawgroup_lgbt_rights: "Sexual Expression"
  lawgroup_lgbt_rights_desc: "Open for feedback and suggestions"
  law_mass_surveillance: "Mass Surveillance"
  law_mass_surveillance_desc: "Placeholder"
  law_lgbt_rights_0: "Legal Silence"
- law_lgbt_rights_0_desc: "The law is silent, but expectations are not. Same-sex desire lives in the shadows; some people conform, some live in the closet, others meet discreetly, and families or clergy - not courts do most of the policing.\nOpen for feedback and suggestions."
+ law_lgbt_rights_0_desc: "The law is silent, but expectations are not. Same-sex desire lives in the shadows; some people conform, some live in the closet, others meet discreetly, and families or clergy - not courts do most of the policing."
  law_lgbt_rights_1: "Criminalized"
  law_lgbt_rights_1_desc: "The state outlaws same-sex relations and calls it \"Sodomy\". Raids, trials, and blackmail drive communities underground while scandal and fear do the rest."
  law_lgbt_rights_2: "Decriminalized"
@@ -1382,7 +1388,7 @@
  computers: "Computers"
  computers_desc: ""
  high_tech_computers: "High-Tech Computers"
- high_tech_computers_desc: ""
+ high_tech_computers_desc: " (~10µm)"
  software: "Software"
  software_desc: ""
  computers_steel_production: "Control Units"
