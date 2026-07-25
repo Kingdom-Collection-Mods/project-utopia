@@ -1,0 +1,134 @@
+utopia_track_01 = {
+	#credits = https://pixabay.com/music/main-title-steampunk-victorian-orchestra-183196/
+	#license Pixabay Content License (https://pixabay.com/service/license-summary/)
+	music = "file:/music/luis_humanoide-steampunk-victorian-orchestra-183196.ogg"
+	name = "music_luis_humanoide_steampunk_victorian_orchestra_183196"
+	pause_factor = 50
+	mood = yes
+	can_be_interrupted = yes
+	is_valid = {
+		has_technology_researched = consumer_goods_main_analog
+	}
+}
+
+utopia_track_02 = {
+	#credits = https://pixabay.com/music/main-title-good-b-music-tree-of-life-inspiring-violin-382514/
+	#license Pixabay Content License (https://pixabay.com/service/license-summary/)
+	music = "file:/music/good_b_music-tree-of-life-inspiring-violin-382514.ogg"
+	name = "music_good_b_music_tree_of_life_inspiring_violin_382514"
+	pause_factor = 50
+	mood = yes
+	can_be_interrupted = yes
+	is_valid = {
+		has_technology_researched = consumer_goods_main_analog
+	}
+}
+
+utopia_track_03 = {
+	#credits = https://pixabay.com/music/main-title-restum-anoush-violin-in-painsad-violin-268426/
+	#license Pixabay Content License (https://pixabay.com/service/license-summary/)
+	music = "file:/music/restum-anoush-violin-in-painsad-violin-268426.ogg"
+	name = "music_restum_anoush_violin_in_painsad_violin_268426"
+	pause_factor = 50
+	mood = yes
+	can_be_interrupted = yes
+	is_valid = {
+		has_technology_researched = consumer_goods_main_analog
+	}
+}
+
+utopia_track_04 = {
+	#credits = https://pixabay.com/music/main-title-juan-sanchez-music-idyllic-113278/
+	#license Pixabay Content License (https://pixabay.com/service/license-summary/)
+	music = "file:/music/juan_sanchez_music-idyllic-113278.ogg"
+	name = "music_juan_sanchez_music_idyllic_113278"
+	pause_factor = 50
+	mood = yes
+	can_be_interrupted = yes
+	is_valid = {
+		has_technology_researched = consumer_goods_main_analog
+	}
+}
+
+utopia_track_05 = {
+	#credits = https://pixabay.com/music/main-title-sergepavkinmusic-hold-the-sky-148780/
+	#license Pixabay Content License (https://pixabay.com/service/license-summary/)
+	music = "file:/music/sergepavkinmusic-hold-the-sky-148780.ogg"
+	name = "music_sergepavkinmusic_hold_the_sky_148780"
+	pause_factor = 50
+	mood = yes
+	can_be_interrupted = yes
+	is_valid = {
+		has_technology_researched = consumer_goods_main_analog
+	}
+}
+
+utopia_track_06 = {
+	#credits = https://pixabay.com/music/main-title-trtasfiq-violin-and-piano-harmony-instrumental-music-for-focus-281403/
+	#license Pixabay Content License (https://pixabay.com/service/license-summary/)
+	music = "file:/music/trtasfiq-violin-and-piano-harmony-instrumental-music-for-focus-281403.ogg"
+	name = "music_trtasfiq_violin_and_piano_harmony_instrumental_music_for_focus_281403"
+	pause_factor = 50
+	mood = yes
+	can_be_interrupted = yes
+	is_valid = {
+		has_technology_researched = consumer_goods_main_analog
+	}
+}
+
+utopia_track_democrat_01 = {
+	#credits = https://pixabay.com/music/main-title-abydos-music-ode-to-joy-beethoven-193117/
+	#license Pixabay Content License (https://pixabay.com/service/license-summary/)
+	music = "file:/music/abydos_music-ode-to-joy-beethoven-193117.ogg"
+	name = "music_abydos_music_ode_to_joy_beethoven_193117"
+	pause_factor = 50
+	mood = yes
+	can_be_interrupted = yes
+	years = 2
+	is_valid = {
+		has_modifier = ut_new_dawn_core_democratic_mod
+	}
+}
+
+utopia_track_communist_01 = {
+	#credits = https://commons.wikimedia.org/wiki/File:Internationale_orchestral_arrangement.ogg 
+	#        = https://commons.wikimedia.org/wiki/File:The_Internationale_(1977_instrumental).ogg
+	#by Jerry Engelbach
+	music = "file:/music/The_Internationale_1977_instrumental.ogg"
+	name = "music_internationale_orchestral_arrangement"
+	pause_factor = 50
+	mood = yes
+	can_be_interrupted = yes
+	years = 2
+	is_valid = {
+		has_modifier = ut_new_dawn_core_communist_mod
+	}
+}
+
+utopia_track_autocrat_01 = {
+	#credits = https://commons.wikimedia.org/wiki/File:God_Save_The_King_(Band_of_the_Grenadier_Guards,_1930s_instrumental).oga
+	#public domain
+	music = "file:/music/God_Save_The_King_Band_of_the_Grenadier_Guards_1930s_instrumental.ogg"
+	name = "music_god_save_the_king_band_of_the_grenadier_guards_1930s_instrumental"
+	pause_factor = 50
+	mood = yes
+	can_be_interrupted = yes
+	years = 2
+	is_valid = {
+		has_modifier = ut_new_dawn_core_autocratic_mod
+	}
+}
+
+utopia_track_fascist_01 = {
+	#credits = https://commons.wikimedia.org/wiki/File:Horst-Wessel-Lied(Instrumental).ogg
+	#license CC0
+	music = "file:/music/Horst-Wessel-Lied(Instrumental).ogg"
+	name = "music_horst_wessel_lied_instrumental"
+	pause_factor = 50
+	mood = yes
+	can_be_interrupted = yes
+	years = 2
+	is_valid = {
+		has_modifier = ut_new_dawn_core_fascist_mod
+	}
+}

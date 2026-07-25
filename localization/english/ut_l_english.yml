@@ -829,7 +829,7 @@
  ig_trait_urbanist_unhappy_desc: ""
 
  ut_movement_cosmopolitan_name: "Cosmopolitan Movement"
- ut_movement_humanist_name: "Humanist Movement"
+ ut_movement_humanist_name: "Civil Rights Movement"
  ut_movement_rationalists_name: "Rationalist Movement"
  ut_movement_conservative_name: "Conservative Movement"
  ut_movement_sexual_liberation_name: "Sexual Liberation Movement"
@@ -2252,3 +2252,17 @@
  setting_ut_new_dawn_historical_focus_yes_desc: "Selected AI nations have a higher chance to select their historical [concept_ut_nd_focus]."
  setting_ut_new_dawn_historical_focus_no: "Disabled"
  setting_ut_new_dawn_historical_focus_no_desc: "All AI nations have the same chance to select their focus.\n@warning! Project Utopia is tested with historical [concept_ut_nd_focus] enabled."
+
+ # Music
+ project_utopia_ost: "Project Utopia Soundtrack"
+
+ music_luis_humanoide_steampunk_victorian_orchestra_183196: "Victorian Orchestra - Luis Humanoide"
+ music_good_b_music_tree_of_life_inspiring_violin_382514: "Tree of Life - Good B"
+ music_restum_anoush_violin_in_painsad_violin_268426: "In Pain - Restum Anoush"
+ music_juan_sanchez_music_idyllic_113278: "Idyllic - Juan Sanchez"
+ music_sergepavkinmusic_hold_the_sky_148780: "Hold the Sky - Serge Pavkin"
+ music_trtasfiq_violin_and_piano_harmony_instrumental_music_for_focus_281403: "Harmony - Nabil"
+ music_internationale_orchestral_arrangement: "The Internationale (Communist Theme)"
+ music_abydos_music_ode_to_joy_beethoven_193117: "Ode to Joy (Democrat Theme)"
+ music_god_save_the_king_band_of_the_grenadier_guards_1930s_instrumental: "God Save the King (Autocrat Theme)"
+ music_horst_wessel_lied_instrumental: "Horst Wessel Song (Fascist Theme)"
