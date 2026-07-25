@@ -1,4 +1,4 @@
-﻿ut_ideology_environmentalist_movement = {
+ut_ideology_environmentalist_movement = {
 	icon = "gfx/interface/icons/ideology_icons/agrarian.dds"
 
 	lawgroup_environment_protection = {
@@ -15,13 +15,6 @@
 		law_peasant_levies = neutral
 		law_task_forces = neutral
 		law_demobilized = approve		
-	} 
-
-	lawgroup_labor_rights = {
-		law_worker_protections = neutral
-		law_ut_minimum_wage = neutral
-		law_regulatory_bodies = disapprove
-		law_no_workers_rights = disapprove
 	}
 
 	lawgroup_food_safety = {
