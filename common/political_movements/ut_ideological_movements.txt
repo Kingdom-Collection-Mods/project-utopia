@@ -1,4 +1,6 @@
 ﻿#any new leader ideologies that should spawn on leaders must be added to new utopia movements
+
+# Urban movement
 ut_movement_cosmopolitan = {
 	category = movement_category_ideological
 
@@ -152,7 +154,7 @@ ut_movement_cosmopolitan = {
 				}
 				add = {
 					#very high
-					value = 50
+					value = 40
 					desc = "POP_ACADEMICS"
 				}
 			}
@@ -162,7 +164,7 @@ ut_movement_cosmopolitan = {
 				}
 				add = {
 					#little higher
-					value = 35
+					value = 30
 					desc = "POP_SERVICE_WORKERS"
 				}
 			}
@@ -192,7 +194,7 @@ ut_movement_cosmopolitan = {
 					is_pop_type = clerks
 				}
 				add = {
-					value = 9
+					value = 10
 					desc = "POP_CLERKS"
 				}
 			}
@@ -201,13 +203,13 @@ ut_movement_cosmopolitan = {
 					is_pop_type = soldiers
 				}
 				add = {
-					value = 6
+					value = 5
 					desc = "POP_SOLDIERS"
 				}
 			}
 			else = {
 				add = {
-					value = 3
+					value = 0
 					desc = "LOWER_NO_ICON"
 				}
 			}
@@ -246,6 +248,7 @@ ut_movement_cosmopolitan = {
 	}
 }
 
+# Civial Rights Movement
 ut_movement_humanist = {
 	category = movement_category_ideological
 
@@ -319,6 +322,9 @@ ut_movement_humanist = {
 		movement_support_high_literacy
 		movement_support_high_urbanization
 		movement_support_academics
+		movement_support_service_workers
+		movement_support_clerks
+		movement_support_machinists
 	}
 	
 	pop_support_weight = {
@@ -388,6 +394,22 @@ ut_movement_humanist = {
 					desc = "POP_ACADEMICS"
 				}
 			}
+			else_if = {
+				limit = {
+					is_pop_type = service_workers
+				}
+				add = {
+					#little likely to be humanist
+					value = 20
+					desc = "POP_SERVICE_WORKERS"
+				}
+			}
+			else = {
+				add = {
+					value = 5
+					desc = "MIDDLE_NO_ICON"
+				}
+			}
 		}
 		else_if = {
 			limit = {
@@ -398,9 +420,25 @@ ut_movement_humanist = {
 					is_pop_type = clerks
 				}
 				add = {
-					#less likely to be humanist
-					value = 0
+					#little likely to be humanist
+					value = 20
 					desc = "POP_CLERKS"
+				}
+			}
+			if = {
+				limit = {
+					is_pop_type = machinists
+				}
+				add = {
+					#likely to be humanist
+					value = 20
+					desc = "POP_MACHINISTS"
+				}
+			}
+			else = {
+				add = {
+					value = 10
+					desc = "LOWER_NO_ICON"
 				}
 			}
 		}
@@ -450,6 +488,7 @@ ut_movement_humanist = {
 	}
 }
 
+# Reformer Movement
 ut_movement_rationalists = {
 	category = movement_category_ideological
 
@@ -568,7 +607,7 @@ ut_movement_rationalists = {
 
 		add = {
 			desc = "URBAN_STATE"
-			value = 10
+			value = 5
 			multiply = state.state_urbanization_rate
 		}
 
@@ -644,7 +683,7 @@ ut_movement_rationalists = {
 					is_pop_type = clerks
 				}
 				add = {
-					value = 9
+					value = 10
 					desc = "POP_CLERKS"
 				}
 			}
@@ -653,7 +692,7 @@ ut_movement_rationalists = {
 					is_pop_type = soldiers
 				}
 				add = {
-					value = 6
+					value = 5
 					desc = "POP_SOLDIERS"
 				}
 			}
@@ -1349,6 +1388,7 @@ ut_movement_sexual_liberation = {
 			value = literacy_rate
 			add = 0.10
 		}
+
 
 		if = {
 			limit = {
