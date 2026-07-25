@@ -88,7 +88,7 @@ chemistry = {
 	modifier = {
 		building_chemical_plant_throughput_add = 0.2
 		building_group_bg_plantations_throughput_add = 0.05
-		state_birth_rate_mult = 0.025
+		#state_birth_rate_mult = 0.025
 	}
 	
 	ai_weight = {
@@ -105,7 +105,7 @@ high_yield_crops = {
 	modifier = {
 		building_chemical_plant_throughput_add = 0.2
 		building_group_bg_plantations_throughput_add = 0.1
-		state_birth_rate_mult = 0.025
+		#state_birth_rate_mult = 0.025
 	}
 
 	unlocking_technologies = {	
@@ -577,9 +577,10 @@ generative_ai = {
 	category = production
 	can_research = no
 
-	unlocking_technologies = {	
-		internet
-	}
+	# todo
+	# unlocking_technologies = {	
+	# 	internet
+	# }
 	
 	ai_weight = {
 		value = 1
