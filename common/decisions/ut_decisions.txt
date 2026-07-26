@@ -1,4 +1,4 @@
-ut_tech_preview_cheat_research = {
+﻿ut_tech_preview_cheat_research = {
 	is_shown = {
 		is_player = yes
 		NOT = { has_global_variable = ut_tech_preview_cheat_disable }

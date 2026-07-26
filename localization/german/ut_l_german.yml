@@ -861,6 +861,14 @@
  ut_social_feminism_leader_unlock_tt: "Schaltet [GetIdeology('ut_social_feminism_leader').GetName] [concept_ideology] frei"
  ut_increase_feminism_leader_unlock_tt: "Erhöht die Wahrscheinlichkeit, dass alle Charaktere mit feministischer Ideologie spawnen, wenn Probleme nicht angegangen werden."
 
+ ut_ideology_progressive_leader: "Progressive"
+ ut_ideology_progressive_leader_desc: "Progressive ideologies advocate for social reform, equality, and the protection of individual rights. They support policies that promote social justice, environmental sustainability, and inclusive governance."
+ ut_ideology_progressive_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_progressive_leader').GetName] [concept_ideology]"
+
+ ut_ideology_conservative_leader: "Conservative"
+ ut_ideology_conservative_leader_desc: "Conservative ideologies emphasize the preservation of traditional institutions, values, and practices. They advocate for gradual change and often prioritize stability, order, and continuity in society."
+ ut_ideology_conservative_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_conservative_leader').GetName] [concept_ideology]"
+
  lawgroup_environment_protection: "Umweltschutz"
  lawgroup_environment_protection_desc: "Gesetze und Institutionen, die die Umwelt schützen, Nachhaltigkeit fördern und das ökologische Gleichgewicht sicherstellen."
  lawgroup_food_safety: "Lebensmittelsicherheit"
@@ -1008,6 +1016,9 @@
 
  law_international_trade: "Internationaler Handel"
  law_international_trade_desc: "Regelungen und Vereinbarungen, die den Handel zwischen Nationen regeln."
+
+ ut_law_international_navy: "International Navy"
+ ut_law_international_navy_desc: "A multinational naval force that operates under a unified command structure to ensure maritime security and protect international shipping lanes."
 
 
  institution_epa: "Umweltschutz" 
@@ -2227,6 +2238,7 @@
  ut_tech_preview_cheat_new_dawn_desc: "Als Teil der technischen Vorschau kann man [concept_ut_new_dawn] cheaten."
 
  ut_debug_apply_patch: "Patch anwenden"
+ ut_debug_apply_patch_desc: "Patch 12 \"Ideologien und Bewegungen\" auf das Spiel anwenden."
 
 # units modifiers
  unit_combat_unit_type_light_tanks_offense_add: "$combat_unit_type_light_tanks$ $unit_offense_add$"
