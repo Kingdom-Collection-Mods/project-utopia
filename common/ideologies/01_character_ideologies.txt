@@ -2582,6 +2582,7 @@ ideology_pacifist = { # Average Progressiveness - 0
 		law_jeune_ecole = neutral
 		law_professional_navy = disapprove
 		law_diplomatic_navy = approve
+		ut_law_international_navy = strongly_approve
 	}
 
 	lawgroup_colonization = {
@@ -2851,6 +2852,7 @@ ideology_jingoist_leader = { # Average Progressiveness - 12.5
 		law_jeune_ecole = neutral
 		law_professional_navy = strongly_approve
 		law_diplomatic_navy = approve
+		ut_law_international_navy = neutral
 	}
 
 	lawgroup_colonization = {
@@ -6097,6 +6099,7 @@ ideology_market_liberal = { # Average Progressiveness - 4
 		law_jeune_ecole = neutral
 		law_professional_navy = disapprove
 		law_diplomatic_navy = neutral
+		ut_law_international_navy = approve
 	}
 
 	lawgroup_labor_rights = {
@@ -11982,6 +11985,7 @@ ideology_mitogaku = { # Average Progressiveness - 20.83
 		law_jeune_ecole = approve
 		law_professional_navy = neutral
 		law_diplomatic_navy = neutral
+		ut_law_international_navy = neutral
 	}
 
 	lawgroup_edo_social_system = {
@@ -12126,6 +12130,7 @@ ideology_shojoi = { # Average Progressiveness - -16.66
 		law_jeune_ecole = approve
 		law_professional_navy = neutral
 		law_diplomatic_navy = neutral
+		ut_law_international_navy = neutral
 	}
 
 	country_trigger = {

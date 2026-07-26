@@ -583,6 +583,7 @@ ideology_patriotic_fascist = {
 		law_jeune_ecole = strongly_approve
 		law_professional_navy = strongly_approve
 		law_diplomatic_navy = neutral
+		ut_law_international_navy = neutral
 	}
 }
 
@@ -624,6 +625,7 @@ ideology_patriotic_communist_national = {
 		law_jeune_ecole = approve
 		law_professional_navy = approve
 		law_diplomatic_navy = strongly_approve
+		ut_law_international_navy = approve
 	}
 }
 
@@ -656,6 +658,7 @@ ideology_patriotic_communist_international = {
 		law_jeune_ecole = disapprove
 		law_professional_navy = neutral
 		law_diplomatic_navy = strongly_approve
+		ut_law_international_navy = strongly_approve
 	}
 }
 
@@ -688,6 +691,7 @@ ideology_patriotic_democratic = {
 		law_jeune_ecole = neutral
 		law_professional_navy = approve
 		law_diplomatic_navy = strongly_approve
+		ut_law_international_navy = strongly_approve
 	}
 }
 

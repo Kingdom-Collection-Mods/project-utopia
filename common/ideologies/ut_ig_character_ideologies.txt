@@ -146,6 +146,16 @@
 			}
 			add = 50
 		}
+
+		if = {
+			limit = {
+				OR = {
+					has_modifier = ut_new_dawn_core_autocratic_mod
+					has_modifier = ut_new_dawn_core_fascist_mod
+				}
+			}
+			multiply = 0.5
+		}
 	}
 	
 	non_interest_group_leader_weight = {
@@ -194,6 +204,16 @@
 				}
 			}
 			add = 25
+		}
+
+		if = {
+			limit = {
+				OR = {
+					has_modifier = ut_new_dawn_core_autocratic_mod
+					has_modifier = ut_new_dawn_core_fascist_mod
+				}
+			}
+			multiply = 0.5
 		}
 	}
 }
@@ -1114,17 +1134,16 @@ ut_ideology_economical_corporatist_leader = {
 			}
 			add = 25
 		}
-		# conservative and/or reactionary leaders have a higher spawn chance if the Anti-Dreyfusards won
 		if = {
 			limit = {
-				has_variable = anti_dreyfusard_victory
+				has_modifier = ut_new_dawn_core_democratic_mod
 			}
 			add = 25
 		}
 		# corporatist boosts
 		if = {
 			limit = {
-				has_variable = corporatist_leaders_boost
+				has_modifier = ut_new_dawn_core_autocratic_mod
 			}
 			add = 50
 		}
@@ -1140,7 +1159,7 @@ ut_ideology_economical_corporatist_leader = {
 					has_variable = chose_fascism
 				}
 			}
-			multiply = 0.1
+			multiply = 0.5
 		}
 	}
 	
@@ -1870,4 +1889,8 @@ ut_social_feminism_leader = {
 			multiply = 1.25
 		}
 	}
+}
+
+ut_ideology_progressive_leader = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_progressive.dds"
 }

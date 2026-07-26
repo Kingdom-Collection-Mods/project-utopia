@@ -1346,6 +1346,7 @@ ideology_bonapartist_movement = {
 		law_jeune_ecole = neutral
 		law_professional_navy = approve
 		law_diplomatic_navy = approve
+		ut_law_international_navy = approve
 	}
 
 	lawgroup_economic_system = {
@@ -1824,6 +1825,7 @@ ideology_meiji_restorationist_movement_shojoi = {
 		law_jeune_ecole = approve
 		law_professional_navy = neutral
 		law_diplomatic_navy = neutral
+		ut_law_international_navy = neutral
 	}
 
 	lawgroup_edo_social_system = {
@@ -1873,6 +1875,7 @@ ideology_meiji_restorationist_movement_daijoi = {
 		law_jeune_ecole = neutral
 		law_professional_navy = approve
 		law_diplomatic_navy = approve
+		ut_law_international_navy = neutral
 	}
 
 	lawgroup_edo_social_system = {
@@ -1928,6 +1931,7 @@ ideology_tokugawa_loyalist_movement = {
 		law_jeune_ecole = neutral
 		law_professional_navy = disapprove
 		law_diplomatic_navy = disapprove
+		ut_law_international_navy = neutral
 	}
 
 	lawgroup_labour_associations = {
@@ -1980,6 +1984,7 @@ ideology_tokugawa_loyalist_movement_2 = {
 		law_jeune_ecole = approve
 		law_professional_navy = neutral
 		law_diplomatic_navy = neutral
+		ut_law_international_navy = neutral
 	}
 
 	lawgroup_labour_associations = {

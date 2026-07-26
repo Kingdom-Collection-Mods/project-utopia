@@ -103,6 +103,7 @@ ideology_laissez_faire = {
 		law_jeune_ecole = neutral
 		law_professional_navy = disapprove
 		law_diplomatic_navy = neutral
+		ut_law_international_navy = approve
 	}
 
 	lawgroup_childrens_rights = {
@@ -477,6 +478,7 @@ ideology_isolationist = {
 		law_jeune_ecole = neutral
 		law_professional_navy = disapprove
 		law_diplomatic_navy = neutral
+		ut_law_international_navy = disapprove
 	}
 
 	lawgroup_citizenship = {
@@ -628,6 +630,7 @@ ideology_patriotic = {
 		law_jeune_ecole = neutral
 		law_professional_navy = strongly_approve
 		law_diplomatic_navy = approve
+		ut_law_international_navy = approve
 	}
 }
 

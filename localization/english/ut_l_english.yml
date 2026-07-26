@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -1008,6 +1008,8 @@
  law_international_trade: "International Trade"
  law_international_trade_desc: "Regulations and agreements governing trade between nations."
 
+ ut_law_international_navy: "International Navy"
+ ut_law_international_navy_desc: "A multinational naval force that operates under a unified command structure to ensure maritime security and protect international shipping lanes."
 
  institution_epa: "Environmental Protection"
  institution_epa_desc: ""
