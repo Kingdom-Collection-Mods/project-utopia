@@ -1,4 +1,4 @@
-﻿ut_tech_preview_cheat_research = {
+ut_tech_preview_cheat_research = {
 	is_shown = {
 		is_player = yes
 		NOT = { has_global_variable = ut_tech_preview_cheat_disable }
@@ -428,6 +428,14 @@ ut_lgbt_same_sex_unions = {
 
 	ai_chance = {
 		value = 0
+		if = {
+			limit = {
+				ruler ?= {
+					has_ideology = ideology:ut_ideology_liberal_movement_mod
+				}
+			}
+			add = 50
+		}
 	}
 }
 
@@ -704,6 +712,73 @@ je_ut_new_dawn_core_abilities_add_decision = {
 		add_journal_entry = {
 			type = je_ut_new_dawn_core_abilities
 		}
+	}
+	ai_chance = {
+		value = 1
+	}
+}
+
+ut_debug_apply_patch = {
+	is_shown = {
+		NOT = { has_global_variable = ut_utopia_enabled_on_game_started_patch_12_var }
+		NOT = { has_variable = ut_utopia_applied_post_game_start_patch_12_var }
+		OR = {
+			AND = {
+				has_technology_researched = online_forums
+				NOT = {
+					any_political_movement = {
+						has_core_ideology = ideology:ut_ideology_reactionary_movement_modern
+					}
+				}
+			}
+			AND = {
+				has_technology_researched = anti_discrimination_laws
+				NOT = {
+					any_political_movement = {
+						has_core_ideology = ideology:ut_ideology_liberal_movement_modern
+					}
+				}
+			}
+		}
+	}
+	possible = {
+		OR = {
+			NOT = {
+				any_political_movement = {
+					has_core_ideology = ideology:ut_ideology_reactionary_movement_modern
+				}
+			}
+			NOT = {
+				any_political_movement = {
+					has_core_ideology = ideology:ut_ideology_liberal_movement_modern
+				}
+			}
+		}
+	}
+	when_taken = {
+		if = {
+			limit = {
+				has_technology_researched = online_forums				
+			}
+			random_political_movement = {
+				limit = {
+					has_core_ideology = ideology:ideology_reactionary_movement
+				}
+				set_core_ideology = ut_ideology_reactionary_movement_modern
+			}
+		}
+		if = {
+			limit = {
+				has_technology_researched = anti_discrimination_laws
+			}
+			random_political_movement = {
+				limit = {
+					has_core_ideology = ideology:ideology_liberal_movement
+				}
+				set_core_ideology = ut_ideology_liberal_movement_modern
+			}
+		}
+		set_variable = ut_utopia_applied_post_game_start_patch_12_var
 	}
 	ai_chance = {
 		value = 1

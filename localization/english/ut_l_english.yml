@@ -2227,6 +2227,9 @@
  ut_tech_preview_cheat_new_dawn: "Project Utopia: New Dawn Cheat" 
  ut_tech_preview_cheat_new_dawn_desc: "As part of the technical preview you can cheat [concept_ut_new_dawn]."
 
+ ut_debug_apply_patch: "Apply Patch"
+ ut_debug_apply_patch_desc: "Apply patch 12 to the game."
+
 # units modifiers
  unit_combat_unit_type_light_tanks_offense_add: "$combat_unit_type_light_tanks$ $unit_offense_add$"
  unit_combat_unit_type_light_tanks_offense_add_desc: "$combat_unit_type_light_tanks$ $unit_offense_add$"
