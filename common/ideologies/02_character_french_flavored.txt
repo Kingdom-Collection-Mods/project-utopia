@@ -611,6 +611,7 @@ ideology_bonapartist = { # Average Progressiveness - 29
 		law_jeune_ecole = neutral
 		law_professional_navy = approve
 		law_diplomatic_navy = approve
+		ut_law_international_navy = approve
 	}
 
 	lawgroup_economic_system = {

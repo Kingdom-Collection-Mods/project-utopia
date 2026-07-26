@@ -1776,6 +1776,13 @@ ut_law_international_navy = {
 		}
 	}
 
+	can_enact = {
+		is_in_power_bloc = yes
+		power_bloc ?= {
+			has_principle_group = principle_group:principle_group_modern_trade_league
+		}
+	}
+
 	modifier = {
 		country_ship_group_supply_ships_construction_efficiency_add = 0.3
 		building_naval_administration_hiring_rate_mult = 0.1

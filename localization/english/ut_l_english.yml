@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -1204,8 +1204,8 @@ l_english:
  ut_fund_ideology_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our proposal to $ut_fund_ideology$."
  ut_fund_ideology_proposal_declined_name: "$ut_fund_ideology$ Declined"
  ut_fund_ideology_proposal_declined_desc: "[TARGET_COUNTRY.GetName] rejected our proposal to $ut_fund_ideology$."
- ut_fund_ideology_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds aligned political groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], increasing [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] ideological progress in [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAdjectiveNoFormatting]'s ideology.\n\n$ut_fund_ideology_effect$"
- ut_fund_ideology_desc: "Fund aligned political groups in a target country without a ruling ideology to increase their ideological progress and influence their [concept_ut_nd_focus].\n\n$ut_fund_ideology_effect$"
+ ut_fund_ideology_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] funds aligned political groups in [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName], increasing [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjectiveNoFormatting] ideological progress in [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAdjectiveNoFormatting]'s ideology.\n\n$ut_fund_ideology_effect_progress$"
+ ut_fund_ideology_desc: "Fund aligned political groups in a target country without a ruling ideology to increase their ideological progress and influence their [concept_ut_nd_focus].\n\n$ut_fund_ideology_effect_progress$"
  ut_fund_ideology_effect_progress: "Target country gains #g 0.25#! [concept_ut_nd_progress_points] to source country's core ideology."
  ut_fund_ideology_effect_focus: "Target country [Concept('concept_ut_nd_focus', 'focuses')] on source country's ideology, when not on cooldown."
  country_new_dawn_fund_ideology_efficiency_add: "[GetDiplomaticActionType('ut_fund_ideology').GetName] [concept_ut_nd_progress_points] gain"
