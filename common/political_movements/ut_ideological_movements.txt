@@ -255,7 +255,6 @@ ut_movement_humanist = {
 	ideology = ideology_urbanist_human_rights_base
 	character_ideologies = {
 		ideology_humanitarian
-		ideology_nihilist
 		ideology_reformer
 		ut_radical_feminism_leader
 		ut_social_feminism_leader
