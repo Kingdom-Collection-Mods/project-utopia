@@ -778,6 +778,25 @@ ut_debug_apply_patch = {
 				set_core_ideology = ut_ideology_liberal_movement_modern
 			}
 		}
+		random_political_movement = {
+			limit = {
+				has_core_ideology = ideology:ideology_urbanist_human_rights_base
+			}
+			add_character_ideology = ut_ideology_progressive_leader
+		}
+		random_political_movement = {
+			limit = {
+				has_core_ideology = ideology:ideology_urbanist_economy_base
+			}
+			add_character_ideology = ut_ideology_conservative_leader
+			add_character_ideology = ut_ideology_progressive_leader
+		}
+		random_political_movement = {
+			limit = {
+				has_core_ideology = ideology:ut_ideology_conservative_movement
+			}
+			add_character_ideology = ut_ideology_conservative_leader
+		}
 		set_variable = ut_utopia_applied_post_game_start_patch_12_var
 	}
 	ai_chance = {

@@ -9,6 +9,34 @@
 	}
 }
 
+ut_ideology_progressive_valid_trigger = {
+	OR = {
+		is_interest_group_type = ig_intelligentsia
+		is_interest_group_type = ig_trade_unions
+		is_interest_group_type = ig_urbanists
+	}
+}
+
+
+ut_ideology_conservative_valid_trigger = {
+	OR = {
+		is_interest_group_type = ig_rural_folk
+		is_interest_group_type = ig_armed_forces
+		is_interest_group_type = ig_petty_bourgeoisie
+		is_interest_group_type = ig_landowners
+		is_interest_group_type = ig_devout
+		AND = {
+			owner = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+			OR = {
+				is_interest_group_type = ig_urbanists
+				is_interest_group_type = ig_trade_unions
+			}
+		}
+	}
+}
+
 ut_ideology_cosmopolitan_valid_trigger = {
 	OR = {
 		is_interest_group_type = ig_intelligentsia

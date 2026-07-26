@@ -254,6 +254,7 @@ ut_movement_humanist = {
 
 	ideology = ideology_urbanist_human_rights_base
 	character_ideologies = {
+		ut_ideology_progressive_leader
 		ideology_humanitarian
 		ideology_reformer
 		ut_radical_feminism_leader
@@ -493,6 +494,8 @@ ut_movement_rationalists = {
 
 	ideology = ideology_urbanist_economy_base
 	character_ideologies = {
+		ut_ideology_conservative_leader
+		ut_ideology_progressive_leader
 		ideology_reformer
 		ideology_market_liberal
 		ideology_social_democrat
@@ -742,6 +745,7 @@ ut_movement_conservative = {
 
 	ideology = ut_ideology_conservative_movement
 	character_ideologies = {
+		ut_ideology_conservative_leader
 		ideology_traditionalist
 		ideology_protectionist
 		ideology_authoritarian
@@ -974,7 +978,7 @@ ut_movement_conservative = {
 					is_pop_type = farmers
 				}
 				add = {
-					value = 25
+					value = 30
 					desc = "POP_FARMERS"
 				}
 			}
@@ -1013,7 +1017,7 @@ ut_movement_conservative = {
 					is_pop_type = soldiers
 				}
 				add = {
-					value = 15
+					value = 20
 					desc = "POP_SOLDIERS"
 				}
 			}
@@ -1037,7 +1041,7 @@ ut_movement_conservative = {
 			}
 			else = {
 				add = {
-					value = 3
+					value = 5
 					desc = "LOWER_NO_ICON"
 				}
 			}
@@ -1133,8 +1137,7 @@ ut_movement_sexual_liberation = {
 
 	ideology = ut_ideology_sexual_liberation_movement
 	character_ideologies = {
-		ideology_liberal_leader
-		ut_liberal_feminism_leader
+		ut_ideology_progressive_leader
 		ut_radical_feminism_leader
 		ut_social_feminism_leader
 	}
@@ -1153,13 +1156,15 @@ ut_movement_sexual_liberation = {
 	on_disbanded = {}
 
 	creation_trigger = {
-		NOT = { has_modifier = ut_new_dawn_core_autocratic_mod }
-		NOT = { has_modifier = ut_new_dawn_core_fascist_mod }
+		OR = {
+			has_modifier = ut_new_dawn_core_democratic_mod
+			has_modifier = ut_new_dawn_core_communist_mod
+		}
 		has_technology_researched = lgbt_movement
 	}
 
 	creation_weight = {
-		value = 500
+		value = 100
 		if = {
 			limit = {
 				owner ?= { # If a movement of this type exists in a neighbouring country, make it more likely to spawn here as well
@@ -1177,6 +1182,13 @@ ut_movement_sexual_liberation = {
 				value = 2
 			}
 		}
+		if = {
+			limit = {
+				#suppressed if criminalized
+				NOT = { has_law_or_variant = law_type:law_lgbt_rights_1 }
+			}
+			add = 500
+		}
 	}
 	on_created = {
 		add_movement_enthusiasm_modifier = yes
@@ -1186,11 +1198,8 @@ ut_movement_sexual_liberation = {
 		OR = {
 			has_ideology = ideology:ut_radical_feminism_leader
 			has_ideology = ideology:ut_social_feminism_leader
-			has_ideology = ideology:ut_ideology_cosmopolitan_leader
-			has_ideology = ideology:ideology_liberal_leader
+			has_ideology = ideology:ut_ideology_progressive_leader
 			has_ideology = ideology:ideology_socialist_democratic
-			has_ideology = ideology:ideology_humanitarian
-			has_ideology = ideology:ideology_humanitarian_royalist
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_trade_unions
@@ -1203,8 +1212,7 @@ ut_movement_sexual_liberation = {
 		if = {
 			limit = {
 				OR = {
-					has_ideology = ideology:ideology_liberal_modern
-					has_ideology = ideology:ideology_liberal_democratic
+					has_ideology = ideology:ut_ideology_progressive_leader
 					has_ideology = ideology:ut_radical_feminism_leader
 					has_ideology = ideology:ut_social_feminism_leader
 				}
