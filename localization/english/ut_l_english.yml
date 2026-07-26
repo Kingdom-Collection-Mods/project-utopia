@@ -816,7 +816,7 @@
  ut_ideology_environmentalist_movement_desc: "Environmentalist ideologies prioritize the protection of the environment and sustainable development. They advocate for policies that address climate change, conserve natural resources, and promote ecological balance."
 
  ut_ideology_sexual_liberation_movement: "Sexual Liberation"
- ut_ideology_sexual_liberation_movement_desc: "Sexual Liberation ideologies advocate for the freedom of individuals to express their sexuality without societal constraints. They support all sexual rights and aim to eliminate discrimination based on sexual orientation and gender identity.\nFormation blocked by [concept_ut_nd_autocrat_core] and [concept_ut_nd_fascist_core]."
+ ut_ideology_sexual_liberation_movement_desc: "Sexual Liberation ideologies advocate for the freedom of individuals to express their sexuality without societal constraints. They support all sexual rights and aim to eliminate discrimination based on sexual orientation and gender identity.\nFormation unlocked by [concept_ut_nd_democrat_core] and [concept_ut_nd_communist_core]."
 
  ut_ideology_conservative_movement: "Conservative"
  ut_ideology_conservative_movement_desc: "Conservative ideologies emphasize the preservation of traditional institutions, values, and practices. They advocate for gradual change and often prioritize stability, order, and continuity in society."
@@ -845,9 +845,9 @@
  ut_ig_ideology_urbanist_economy_base_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_economy_base').GetName] for $ig_urbanists$"
  ut_movement_humanist_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_human_rights_base').GetName] [concept_political_movement]"
  ut_movement_rationalists_unlock_tt: "Unlocks [GetIdeology('ideology_urbanist_economy_base').GetName] [concept_political_movement]"
- ut_movement_conservative_unlock_tt: "Unlocks [GetIdeology('ut_ideology_reactionary_alternative').GetName] [concept_political_movement]"
- ut_movement_sexual_liberation_unlock_tt: "Unlocks Sexual Liberation [concept_political_movement]"
- ut_movement_environmentalist_unlock_tt: "Unlocks Environmentalist [concept_political_movement]"
+ ut_movement_conservative_unlock_tt: "Unlocks [GetIdeology('ut_ideology_conservative_movement').GetName] [concept_political_movement]"
+ ut_movement_sexual_liberation_unlock_tt: "Unlocks [GetIdeology('ut_ideology_sexual_liberation_movement').GetName] [concept_political_movement]"
+ ut_movement_environmentalist_unlock_tt: "Unlocks [GetIdeology('ut_ideology_environmentalist_movement').GetName] [concept_political_movement]"
 
  ut_liberal_feminism_leader: "Liberal Feminist"
  ut_liberal_feminism_leader_desc: "Liberal Feminists work towards Emancipation and advocate for [GetIdeology('ideology_market_liberal').GetName] reforms. More likely if [concept_ut_nd_democrat_core]."
@@ -859,6 +859,14 @@
  ut_social_feminism_leader_desc: "Social Feminists work towards Emancipation and advocate for [GetIdeology('ideology_social_democrat').GetName] reforms. More likely if [concept_ut_nd_democrat_core] or [ut_new_dawn_core_communist_mod]."
  ut_social_feminism_leader_unlock_tt: "Unlocks [GetIdeology('ut_social_feminism_leader').GetName] [concept_ideology]"
  ut_increase_feminism_leader_unlock_tt: "Increases chance of all characters to spawn with feminist ideology, if issues are not addressed."
+
+ ut_ideology_progressive_leader: "Progressive"
+ ut_ideology_progressive_leader_desc: "Progressive ideologies advocate for social reform, equality, and the protection of individual rights. They support policies that promote social justice, environmental sustainability, and inclusive governance."
+ ut_ideology_progressive_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_progressive_leader').GetName] [concept_ideology]"
+
+ ut_ideology_conservative_leader: "Conservative"
+ ut_ideology_conservative_leader_desc: "Conservative ideologies emphasize the preservation of traditional institutions, values, and practices. They advocate for gradual change and often prioritize stability, order, and continuity in society."
+ ut_ideology_conservative_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_conservative_leader').GetName] [concept_ideology]"
 
  lawgroup_environment_protection: "Environmental Protection"
  lawgroup_environment_protection_desc: "Laws and institutions that protect the environment, promote sustainability, and ensure ecological balance."

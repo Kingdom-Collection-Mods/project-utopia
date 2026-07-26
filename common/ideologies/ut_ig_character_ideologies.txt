@@ -1893,4 +1893,385 @@ ut_social_feminism_leader = {
 
 ut_ideology_progressive_leader = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_progressive.dds"
+	
+	character_ideology = yes
+
+	lawgroup_rights_of_women = {
+		law_no_womens_rights = strongly_disapprove
+		law_women_own_property = strongly_disapprove
+		law_women_in_the_workplace = strongly_disapprove
+		law_womens_suffrage = disapprove
+		law_equal_rights_for_women = approve
+		law_affirmative_equality = strongly_approve
+	}
+
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = strongly_disapprove
+		law_lgbt_rights_1 = strongly_disapprove
+		law_lgbt_rights_2 = neutral
+		law_lgbt_rights_3 = strongly_approve
+	}
+
+	lawgroup_free_speech = {
+		law_protected_speech = strongly_approve
+		law_right_of_assembly = approve
+		law_censorship = strongly_disapprove
+		law_outlawed_dissent = strongly_disapprove
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = strongly_disapprove
+		law_subjecthood = strongly_disapprove
+		law_neo_ethno_state = strongly_disapprove
+		law_national_supremacy = strongly_disapprove
+		law_racial_segregation = strongly_disapprove
+		law_cultural_exclusion = disapprove
+		law_multicultural = approve
+		law_multicultural_globalism = strongly_approve
+	}
+
+	country_trigger = {
+		has_technology_researched = emancipation_movement
+	}
+
+	interest_group_leader_trigger = {
+		ut_ideology_progressive_valid_trigger = yes
+	}
+
+	non_interest_group_leader_trigger = {
+		# Agitator ideologies should disapprove of a current law
+		NAND = {
+			has_role_of_type = agitator
+			owner = {
+				has_law = law_type:law_affirmative_equality
+				has_law = law_type:law_lgbt_rights_3
+				has_law = law_type:law_protected_speech
+				has_law = law_type:law_multicultural_globalism
+			}
+		}
+		interest_group = {
+			ut_ideology_progressive_valid_trigger = yes
+		}
+	}
+	
+	interest_group_leader_weight = {
+		value = 0
+		if = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_urbanists
+				}
+			}
+			add = 50
+		}
+
+
+		# very very angry IG's more likely to turn to more radical measures
+		if = {
+			limit = {
+				ig_approval <= -5
+			}
+			add = -50
+		}
+		# more likely when issues are relevant
+		if = {
+			limit = {
+				owner = {
+					NOT = {
+						AND = {
+							has_law = law_type:law_affirmative_equality
+							has_law = law_type:law_lgbt_rights_3
+							has_law = law_type:law_protected_speech
+							has_law = law_type:law_multicultural_globalism
+						}
+					}
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_lgbt_rights_3 }
+					NOT = { has_law = law_type:law_protected_speech }
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				owner = {
+					has_technology_researched = lgbt_movement
+					NOT = {
+						AND = {
+							has_law = law_type:law_affirmative_equality
+							has_law = law_type:law_lgbt_rights_3
+							has_law = law_type:law_protected_speech
+							has_law = law_type:law_multicultural_globalism
+						}
+					}
+				}
+			}
+			add = 50
+		}
+
+		if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+			multiply = 0.5
+		}
+
+		if = {
+			limit = {
+				OR = {
+					has_modifier = ut_new_dawn_core_autocratic_mod
+					has_modifier = ut_new_dawn_core_fascist_mod
+				}
+			}
+			multiply = 0.25
+		}
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 0
+		
+		if = {
+			limit = {
+				owner = {
+					NOT = {
+						AND = {
+							has_law = law_type:law_affirmative_equality
+							has_law = law_type:law_lgbt_rights_3
+							has_law = law_type:law_protected_speech
+							has_law = law_type:law_multicultural_globalism
+						}
+					}
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_lgbt_rights_3 }
+					NOT = { has_law = law_type:law_protected_speech }
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				owner = {
+					has_technology_researched = lgbt_movement
+					NOT = {
+						AND = {
+							has_law = law_type:law_affirmative_equality
+							has_law = law_type:law_lgbt_rights_3
+							has_law = law_type:law_protected_speech
+							has_law = law_type:law_multicultural_globalism
+						}
+					}
+				}
+			}
+			add = 50
+		}
+
+		if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+			multiply = 0.5
+		}
+
+		if = {
+			limit = {
+				OR = {
+					has_modifier = ut_new_dawn_core_autocratic_mod
+					has_modifier = ut_new_dawn_core_fascist_mod
+				}
+			}
+			multiply = 0.25
+		}
+	}
+}
+
+#based on ideology_traditionalist
+ut_ideology_conservative_leader = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_traditionalist.dds"
+
+	character_ideology = yes
+	
+	lawgroup_governance_principles = {
+		law_monarchy = neutral
+		law_theocracy = neutral		
+		law_presidential_republic = approve
+		law_parliamentary_republic = approve
+		law_corporate_state = approve
+		law_council_republic = neutral
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = neutral
+		law_neo_ethno_state = approve
+		law_national_supremacy = approve
+		law_racial_segregation = approve
+		law_cultural_exclusion = approve
+		law_multicultural = neutral	
+		law_multicultural_globalism = disapprove	
+	}
+
+	lawgroup_migration = {
+		law_closed_borders = neutral
+		law_migration_controls = strongly_approve
+		law_registration_process = strongly_approve
+		law_no_migration_controls = disapprove
+	}
+
+	lawgroup_environment_protection = {
+		law_no_environment_protection = disapprove
+		law_environment_protection_institute = approve
+		law_environment_protection_institute_two = disapprove
+		law_environment_protection_institute_three = strongly_disapprove
+	}
+
+	lawgroup_lgbt_rights = {
+		law_lgbt_rights_0 = strongly_disapprove
+		law_lgbt_rights_1 = neutral
+		law_lgbt_rights_2 = neutral
+		law_lgbt_rights_3 = disapprove
+	}
+
+	lawgroup_rights_of_women = {
+		law_no_womens_rights = neutral
+		law_women_own_property = neutral
+		law_women_in_the_workplace = neutral
+		law_womens_suffrage = neutral
+		law_equal_rights_for_women = disapprove
+		law_affirmative_equality = strongly_disapprove
+	}
+
+	lawgroup_church_and_state = {
+		law_state_religion = approve
+		law_freedom_of_conscience = neutral
+		law_total_separation = disapprove
+		law_state_atheism = strongly_disapprove
+	}
+
+	lawgroup_labour_associations = {
+		law_combination_acts = neutral
+		law_guild_system = neutral
+		law_anti_strike_laws = approve
+		law_corporatized_unions = approve
+		law_right_to_associate = strongly_disapprove
+		law_factory_councils = strongly_disapprove
+	}
+
+	lawgroup_caste_hegemony = {
+		law_hindu_caste_enforced = strongly_approve
+		law_hindu_caste_codified = approve
+		law_hindu_caste_not_enforced = disapprove
+		law_affirmative_action = strongly_disapprove
+	}
+
+	lawgroup_edo_social_system = {
+		law_strict_edo_system = strongly_approve
+		law_intermediate_edo_system = disapprove
+		law_lax_edo_system = strongly_disapprove
+	}
+
+	country_trigger = {
+		has_technology_researched = political_progress_2_rationalism
+	}
+
+	interest_group_leader_trigger = {
+		ut_ideology_conservative_valid_trigger = yes
+	}
+
+	non_interest_group_leader_trigger = {
+		# Agitators should have an ideology at odds with current laws
+		NAND = {
+			has_role_of_type = agitator
+			owner = {
+				NOT = { has_law_or_variant = law_type:law_affirmative_equality }
+				NOT = { has_law_or_variant = law_type:law_environment_protection_institute_three }
+				NOT = { has_law_or_variant = law_type:law_lgbt_rights_3 }
+				NOT = { has_law_or_variant = law_type:law_multicultural_globalism }
+				NOT = { has_law_or_variant = law_type:law_right_to_associate }
+			}
+		}
+		interest_group ?= {
+			ut_ideology_conservative_valid_trigger = yes
+		}
+	}
+
+	interest_group_leader_weight = {
+		value = {
+			add = 50
+			desc = "base_value"
+		}
+		# More likely if issues are relevant
+		if = {
+			limit = {
+				NOT = { has_law_or_variant = law_type:law_affirmative_equality }
+				NOT = { has_law_or_variant = law_type:law_environment_protection_institute_three }
+				NOT = { has_law_or_variant = law_type:law_lgbt_rights_3 }
+				NOT = { has_law_or_variant = law_type:law_multicultural_globalism }
+				NOT = { has_law_or_variant = law_type:law_right_to_associate }
+			}
+			add = {
+				value = 50
+				desc = "RELEVANT_ISSUES"
+			}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					has_variable = communist_ig_var
+					has_variable = chose_vanguardism
+					has_variable = chose_anarchism
+					has_variable = chose_communism
+					has_variable = chose_ethno_nationalism
+					has_variable = chose_fascism
+				}
+			}
+			multiply = {
+				multiply = 0.1
+				desc = "CHOSE_A_DIFFERENT_PATH"
+			}
+		}
+	}
+
+	non_interest_group_leader_weight = {
+		value = 100
+		# More likely if issues are relevant
+		if = {
+			limit = {
+				NOT = { has_law_or_variant = law_type:law_affirmative_equality }
+				NOT = { has_law_or_variant = law_type:law_environment_protection_institute_three }
+				NOT = { has_law_or_variant = law_type:law_lgbt_rights_3 }
+				NOT = { has_law_or_variant = law_type:law_multicultural_globalism }
+				NOT = { has_law_or_variant = law_type:law_right_to_associate }
+			}
+			add = 50
+		}
+		
+		if = {
+			limit = {
+				interest_group ?= {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}
 }

@@ -647,6 +647,9 @@ political_progress_2_rationalism = {
 		custom_tooltip = {
 			text = ut_movement_rationalists_unlock_tt
 		}
+		custom_tooltip = {
+			text = ut_ideology_conservative_leader_unlock_tt
+		}
 		every_interest_group = {
 			limit = {
 				has_ideology = ideology:ideology_reactionary
@@ -883,9 +886,8 @@ emancipation_movement = {
 	category = society
 		
 	on_researched = {
-		custom_tooltip = {
-			text = lgbt_movement_tt
-		}
+		custom_tooltip = lgbt_movement_tt
+		custom_tooltip = ut_ideology_progressive_leader_unlock_tt
 	}
 
 	modifier = {
