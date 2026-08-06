@@ -731,6 +731,22 @@ ut_new_dawn_common_pressure_progress_monthly = {
 			}
 			set_variable = {
 				name = je_ut_new_dawn_common_pressure_expected_sol
+				value = 50
+			}
+			change_variable = {
+				name = je_ut_new_dawn_common_pressure_utopia_sol
+				add = 50
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_technology_researched = anti_multicultural_globalism
+					has_technology_researched = political_progress_4_greens
+				}
+			}
+			set_variable = {
+				name = je_ut_new_dawn_common_pressure_expected_sol
 				value = 40
 			}
 			change_variable = {
@@ -740,10 +756,7 @@ ut_new_dawn_common_pressure_progress_monthly = {
 		}
 		else_if = {
 			limit = {
-				OR = {
-					has_technology_researched = anti_multicultural_globalism
-					has_technology_researched = political_progress_4_greens
-				}
+				has_technology_researched = political_progress_3_neoliberalism
 			}
 			set_variable = {
 				name = je_ut_new_dawn_common_pressure_expected_sol
@@ -756,7 +769,7 @@ ut_new_dawn_common_pressure_progress_monthly = {
 		}
 		else_if = {
 			limit = {
-				has_technology_researched = political_progress_3_neoliberalism
+				has_technology_researched = political_progress_2_rationalism
 			}
 			set_variable = {
 				name = je_ut_new_dawn_common_pressure_expected_sol

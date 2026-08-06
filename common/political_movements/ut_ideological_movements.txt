@@ -248,7 +248,7 @@ ut_movement_cosmopolitan = {
 	}
 }
 
-# Civial Rights Movement
+# Civil Rights Movement
 ut_movement_humanist = {
 	category = movement_category_ideological
 
