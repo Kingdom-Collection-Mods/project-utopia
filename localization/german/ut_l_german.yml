@@ -815,7 +815,7 @@
  ut_ideology_environmentalist_movement: "Umweltschutz"
  ut_ideology_environmentalist_movement_desc: "Umweltschutzideologien legen den Schwerpunkt auf den Schutz der Umwelt und eine nachhaltige Entwicklung. Sie setzen sich für politische Maßnahmen ein, die dem Klimawandel entgegenwirken, natürliche Ressourcen schonen und das ökologische Gleichgewicht fördern."
 
- ut_ideology_sexual_liberation_movement: "Sexual Liberation"
+ ut_ideology_sexual_liberation_movement: "Sexuelle Befreiung"
  ut_ideology_sexual_liberation_movement_desc: "Sexuelle Befreiungsideologien setzen sich für die Freiheit des Einzelnen ein, seine Sexualität ohne gesellschaftliche Zwänge auszuleben. Sie unterstützen alle sexuellen Rechte und zielen darauf ab, Diskriminierung aufgrund sexueller Orientierung und Geschlechtsidentität zu beseitigen."
 
  ut_ideology_conservative_movement: "Konservativ"
@@ -862,12 +862,12 @@
  ut_increase_feminism_leader_unlock_tt: "Erhöht die Wahrscheinlichkeit, dass alle Charaktere mit feministischer Ideologie spawnen, wenn Probleme nicht angegangen werden."
 
  ut_ideology_progressive_leader: "Progressive"
- ut_ideology_progressive_leader_desc: "Progressive ideologies advocate for social reform, equality, and the protection of individual rights. They support policies that promote social justice, environmental sustainability, and inclusive governance."
- ut_ideology_progressive_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_progressive_leader').GetName] [concept_ideology]"
+ ut_ideology_progressive_leader_desc: "Progressive Ideologien setzen sich für soziale Reformen, Gleichheit und den Schutz individueller Rechte ein. Sie unterstützen Maßnahmen, die soziale Gerechtigkeit, ökologische Nachhaltigkeit und inklusive Regierungsführung fördern."
+ ut_ideology_progressive_leader_unlock_tt: "Schaltet [GetIdeology('ut_ideology_progressive_leader').GetName] [concept_ideology] frei"
 
- ut_ideology_conservative_leader: "Conservative"
- ut_ideology_conservative_leader_desc: "Conservative ideologies emphasize the preservation of traditional institutions, values, and practices. They advocate for gradual change and often prioritize stability, order, and continuity in society."
- ut_ideology_conservative_leader_unlock_tt: "Unlocks [GetIdeology('ut_ideology_conservative_leader').GetName] [concept_ideology]"
+ ut_ideology_conservative_leader: "Konservative"
+ ut_ideology_conservative_leader_desc: "Konservative Ideologien betonen die Bewahrung traditioneller Institutionen, Werte und Praktiken. Sie befürworten schrittweise Veränderungen und priorisieren oft Stabilität, Ordnung und Kontinuität in der Gesellschaft."
+ ut_ideology_conservative_leader_unlock_tt: "Schaltet [GetIdeology('ut_ideology_conservative_leader').GetName] [concept_ideology] frei"
 
  lawgroup_environment_protection: "Umweltschutz"
  lawgroup_environment_protection_desc: "Gesetze und Institutionen, die die Umwelt schützen, Nachhaltigkeit fördern und das ökologische Gleichgewicht sicherstellen."
@@ -1004,11 +1004,11 @@
  ut_lgbt_same_sex_unions: "Gleichgeschlechtliche Partnerschaften"
  ut_lgbt_same_sex_unions_desc: "Gesetzliche Anerkennung gleichgeschlechtlicher Partnerschaften, die ähnliche Rechte und Pflichten wie heterosexuelle Ehen bieten."
  ut_lgbt_same_sex_unions_amendment: "$ut_lgbt_same_sex_unions$"
- ut_lgbt_same_sex_unions_amendment_desc: "$ut_lgbt_same_sex_unions_desc$\nUnlocks: [GetAmendmentType('ut_lgbt_same_sex_marriage_amendment').GetName]"
+ ut_lgbt_same_sex_unions_amendment_desc: "$ut_lgbt_same_sex_unions_desc$\nSchaltet frei: [GetAmendmentType('ut_lgbt_same_sex_marriage_amendment').GetName]"
  ut_lgbt_same_sex_marriage: "Gleichgeschlechtliche Ehe"
  ut_lgbt_same_sex_marriage_desc: "Vollständige rechtliche Anerkennung und Schutz für gleichgeschlechtliche Ehen, einschließlich Adoptionsrechte und steuerlicher Vorteile."
  ut_lgbt_same_sex_marriage_amendment: "$ut_lgbt_same_sex_marriage$"
- ut_lgbt_same_sex_marriage_amendment_desc: "$ut_lgbt_same_sex_marriage_desc$.\nUnlocks: [GetAmendmentType('ut_lgbt_sexual_self_determination').GetName]"
+ ut_lgbt_same_sex_marriage_amendment_desc: "$ut_lgbt_same_sex_marriage_desc$.\nSchaltet frei: [GetAmendmentType('ut_lgbt_sexual_self_determination_amendment').GetName]"
  ut_lgbt_sexual_self_determination: "Sexuelle Selbstbestimmung"
  ut_lgbt_sexual_self_determination_desc: "Gesetzliche Anerkennung des Rechts auf sexuelle Selbstbestimmung, einschließlich Schutz vor Diskriminierung aufgrund sexueller Orientierung und Geschlechtsidentität."
  ut_lgbt_sexual_self_determination_amendment: "$ut_lgbt_sexual_self_determination$"
@@ -1017,8 +1017,8 @@
  law_international_trade: "Internationaler Handel"
  law_international_trade_desc: "Regelungen und Vereinbarungen, die den Handel zwischen Nationen regeln."
 
- ut_law_international_navy: "International Navy"
- ut_law_international_navy_desc: "A multinational naval force that operates under a unified command structure to ensure maritime security and protect international shipping lanes."
+ ut_law_international_navy: "Internationale Marine"
+ ut_law_international_navy_desc: "Eine multinationale Seestreitkraft, die unter einer einheitlichen Kommandostruktur operiert, um die maritime Sicherheit zu gewährleisten und internationale Schifffahrtsrouten zu schützen."
 
 
  institution_epa: "Umweltschutz" 

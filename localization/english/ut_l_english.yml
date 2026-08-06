@@ -267,7 +267,7 @@
  event_new_dawn.106.d.no_support: "No interest group is currently supporting new legislation, but the people are eager to celebrate our ideological progress."
  event_new_dawn.106.f: "Er, one last matter for the day, sir. Members of your constituency arrived this morning. They're delighted by our ideological progress and propose new legislation.\n\nIs that it? What a delight!"
  event_new_dawn.106.f.done: "Our people are happy we have built a solid ideological foundation. They have no specific demands, but they want to celebrate our progress."
- event_new_dawn.106.f.no_support: "Our people are eager to support our ideological progress, but no interest group is currently supporting new legislation. Let's celebrate our progress and continue to built a solid ideological foundation."
+ event_new_dawn.106.f.no_support: "Our people are eager to support our ideological progress, but no interest group is currently supporting new legislation. Let's celebrate our progress and continue to build a solid ideological foundation."
  event_new_dawn.106.z: "Let's celebrate!"
 
  event_new_dawn.120.t: "Crisis of Confidence"
@@ -1007,7 +1007,7 @@
  ut_lgbt_same_sex_marriage: "Same-Sex Marriage"
  ut_lgbt_same_sex_marriage_desc: "Full legal recognition and protection for same-sex marriages, including adoption rights and tax benefits."
  ut_lgbt_same_sex_marriage_amendment: "$ut_lgbt_same_sex_marriage$"
- ut_lgbt_same_sex_marriage_amendment_desc: "$ut_lgbt_same_sex_marriage_desc$\nUnlocks: [GetAmendmentType('ut_lgbt_sexual_self_determination').GetName]"
+ ut_lgbt_same_sex_marriage_amendment_desc: "$ut_lgbt_same_sex_marriage_desc$\nUnlocks: [GetAmendmentType('ut_lgbt_sexual_self_determination_amendment').GetName]"
  ut_lgbt_sexual_self_determination: "Sexual Self-Determination"
  ut_lgbt_sexual_self_determination_desc: "Legal recognition of the right to sexual self-determination, including protection against discrimination based on sexual orientation and gender identity."
  ut_lgbt_sexual_self_determination_amendment: "$ut_lgbt_sexual_self_determination$"
@@ -2145,7 +2145,7 @@
  je_ut_software_points_bar_era_7_desc: "Software Expertise: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/1000)"
 
  je_ut_software_era_7_1_operating_system: "Operating System"
- je_ut_software_era_7_1_operating_system_desc: "Standardized operating environments improve software deployment and reliability.je_ut_software_era_7_1_operating_system"
+ je_ut_software_era_7_1_operating_system_desc: "Standardized operating environments improve software deployment and reliability."
  je_ut_software_era_7_1_operating_system_mod: "$je_ut_software_era_7_1_operating_system$"
  je_ut_software_era_7_2_relational_database: "Relational Database"
  je_ut_software_era_7_2_relational_database_desc: "Structured data systems enable scalable storage, querying, and business analytics."
