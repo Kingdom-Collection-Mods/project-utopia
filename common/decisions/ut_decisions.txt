@@ -415,7 +415,7 @@ ut_lgbt_same_sex_unions = {
 		custom_tooltip = {
 			text = ut_add_new_dawn_progress_neg_50
 			ut_add_new_dawn_core_progress = {
-				VALUE = 50
+				VALUE = -50
 			}
 		}
 		active_law:lawgroup_lgbt_rights ?= {
@@ -462,7 +462,7 @@ ut_lgbt_same_sex_marriage = {
 		custom_tooltip = {
 			text = ut_add_new_dawn_progress_neg_50
 			ut_add_new_dawn_core_progress = {
-				VALUE = 50
+				VALUE = -50
 			}
 		}
 		active_law:lawgroup_lgbt_rights ?= {
@@ -505,7 +505,7 @@ ut_lgbt_sexual_self_determination = {
 		custom_tooltip = {
 			text = ut_add_new_dawn_progress_neg_50
 			ut_add_new_dawn_core_progress = {
-				VALUE = 50
+				VALUE = -50
 			}
 		}
 		active_law:lawgroup_lgbt_rights ?= {

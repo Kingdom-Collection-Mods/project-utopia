@@ -739,7 +739,10 @@ je_ut_new_dawn_pressure_points_bar = {
 			limit = {
 				is_ai = yes
 			}
-			value = -1
+			add = {
+				desc = "ut_nd_decaying_progress"
+				value = -1
+			}
 		}
 	}
 
