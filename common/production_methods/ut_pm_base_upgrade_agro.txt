@@ -256,7 +256,7 @@ smart_irrigation_building_cotton_plantation = {
 	}
 
 	unlocking_technologies = {
-		pumpjacks
+		hybrid_crops
 	}
 
 	building_modifiers = {
