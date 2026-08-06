@@ -425,7 +425,7 @@ ut_movement_humanist = {
 					desc = "POP_CLERKS"
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					is_pop_type = machinists
 				}
@@ -964,7 +964,7 @@ ut_movement_conservative = {
 					desc = "POP_CLERGYMEN"
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					is_pop_type = shopkeepers
 				}
@@ -1279,7 +1279,7 @@ ut_movement_sexual_liberation = {
 		}
 		add = {
 			desc = "URBAN_STATE"
-			value = 20
+			value = 10
 			multiply = state.state_urbanization_rate
 		}
 
@@ -1312,7 +1312,7 @@ ut_movement_sexual_liberation = {
 					is_pop_type = academics
 				}
 				add = {
-					value = 25
+					value = 20
 					desc = "POP_ACADEMICS"
 				}
 			}
@@ -1321,7 +1321,7 @@ ut_movement_sexual_liberation = {
 					is_pop_type = service_workers
 				}
 				add = {
-					value = 25
+					value = 20
 					desc = "POP_SERVICE_WORKERS"
 				}
 			}
