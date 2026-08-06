@@ -431,7 +431,12 @@ ut_lgbt_same_sex_unions = {
 		if = {
 			limit = {
 				ruler ?= {
-					has_ideology = ideology:ut_ideology_liberal_movement_mod
+					OR = {
+						has_ideology = ideology:ut_radical_feminism_leader
+						has_ideology = ideology:ut_social_feminism_leader
+						has_ideology = ideology:ut_ideology_progressive_leader
+						has_ideology = ideology:ideology_socialist_democratic
+					}
 				}
 			}
 			add = 50

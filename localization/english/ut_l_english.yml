@@ -1079,7 +1079,6 @@
  ut_je_propaganda_source_goal: "Completed propaganda campaign (currently [JournalEntry.GetGoalProgressValue]/[JournalEntry.GetTotalGoalValue])"
  ut_je_propaganda_source_abort_tt: "Has aborted the propaganda campaign"
  ut_je_propaganda_target: "Target of Propaganda Campaign"
- ut_je_propaganda_target_goal: "Source country has completed propaganda campaign (currently [JournalEntry.GetGoalProgressValue]/[JournalEntry.GetTotalGoalValue])."
  ut_je_propaganda_target_reason: "The country behind the propaganda campaign is attempting to weaken the core ideology in our country."
  ut_je_propaganda_target_abort_tt: "The country behind the propaganda campaign has aborted the campaign."
  ut_je_propaganda_target_effect: "$ut_add_new_dawn_progress_neg_25$ and receive the Propaganda modifier for 2 years"
@@ -1648,6 +1647,11 @@
  compulsory_tertiary_school_desc: ""
  technical_scientific_school_reforms: "Technical-Scientific School Reform"
  technical_scientific_school_reforms_desc: ""
+
+# Characters
+ de_Gaulle: "de Gaulle"
+ Friedman: "Friedman"
+ de_Beauvoir: "de Beauvoir"
 
 # Buildings & Tech
  bg_modern_industry: "Building Group Modern Industry"

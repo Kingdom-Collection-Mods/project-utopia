@@ -1081,7 +1081,6 @@
  ut_je_propaganda_source_goal: "Propaganda-Kampagne abgeschlossen (aktuell [JournalEntry.GetGoalProgressValue]/[JournalEntry.GetTotalGoalValue])"
  ut_je_propaganda_source_abort_tt: "Hat die Propaganda-Kampagne abgebrochen"
  ut_je_propaganda_target: "Ziel der Propaganda-Kampagne"
- ut_je_propaganda_target_goal: "Quellland hat Propaganda-Kampagne abgeschlossen (aktuell [JournalEntry.GetGoalProgressValue]/[JournalEntry.GetTotalGoalValue])."
  ut_je_propaganda_target_reason: "Das Land hinter der Propaganda-Kampagne versucht, die Kernideologie in unserem Land zu schwächen."
  ut_je_propaganda_target_abort_tt: "Das Land hinter der Propaganda-Kampagne hat die Kampagne abgebrochen."
  ut_je_propaganda_target_effect: "$ut_add_new_dawn_progress_neg_25$ und erhalte Propaganda [concept_modifier] für 2 Jahre"
@@ -1650,6 +1649,11 @@
  compulsory_tertiary_school_desc: "Der Hochschulabschluss wird zur gesellschaftlichen Norm. Campus-Städte boomen, während Akademikerüberschüsse prekäre Taxifahrer-Doktoranden hervorbringen."
  technical_scientific_school_reforms: "Technisch Wissenschaftliche Schulreform"
  technical_scientific_school_reforms_desc: "Bildungspläne werden grundlegend überarbeitet, um technisches Verständnis, digitale Kompetenzen und wissenschaftliches Denken vom frühen Kindesalter an zu fördern. Ziel ist eine zukunftsorientierte, innovationsgetriebene Gesellschaft."
+
+# Characters
+ de_Gaulle: "de Gaulle"
+ Friedman: "Friedman"
+ de_Beauvoir: "de Beauvoir"
 
 # Gebaeude und Technik
  bg_modern_industry: "Gebäudegruppe Modern Industrie"
