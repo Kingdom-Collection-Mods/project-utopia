@@ -342,6 +342,10 @@ nuclear_power_research = {
 	texture = "gfx/interface/icons/invention_icons/nuclear_power_research.dds"
 	category = production
 
+	on_researched = {
+		custom_tooltip = ut_research_institute_found_unlock_tt
+	}
+
 	unlocking_technologies = {	
 		oil_turbine
 	}
@@ -437,9 +441,6 @@ electronics = {
 	category = production
 
 	on_researched = {
-		custom_tooltip = {
-			text = ut_research_institute_found_unlock_tt
-		}
 	}
 
 	unlocking_technologies = {	
