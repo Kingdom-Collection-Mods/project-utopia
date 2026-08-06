@@ -418,6 +418,7 @@ je_ut_software_era_8_4_web_software = {
 	visible = { always = yes }
 
 	possible = {
+		has_technology_researched = data_science
 		has_modifier = je_ut_software_era_8_3_web_standards_mod
 		NOT = {
 			has_modifier = je_ut_software_era_8_4_web_software_mod
@@ -458,6 +459,7 @@ je_ut_software_era_8_5_cloud_computing = {
 	visible = { always = yes }
 
 	possible = {
+		has_technology_researched = data_science
 		has_modifier = je_ut_software_era_8_4_web_software_mod
 		NOT = {
 			has_modifier = je_ut_software_era_8_5_cloud_computing_mod
@@ -498,6 +500,7 @@ je_ut_software_era_8_6_ownership_model_language = {
 	visible = { always = yes }
 
 	possible = {
+		has_technology_researched = data_science
 		has_modifier = je_ut_software_era_8_5_cloud_computing_mod
 		NOT = {
 			has_modifier = je_ut_software_era_8_6_ownership_model_language_mod

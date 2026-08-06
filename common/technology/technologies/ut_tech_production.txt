@@ -572,16 +572,14 @@ internet = {
 	}
 }
 
-generative_ai = {
+data_science = {
 	era = era_8
 	texture = "gfx/interface/icons/invention_icons/software_box.dds"
 	category = production
-	can_research = no
 
-	# todo
-	# unlocking_technologies = {	
-	# 	internet
-	# }
+	unlocking_technologies = {	
+		internet
+	}
 	
 	ai_weight = {
 		value = 1
