@@ -112,7 +112,7 @@ pm_farms_drone_support = {
 
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 5
 		}
 	}
 
@@ -192,7 +192,7 @@ pm_farms_drone_support_rice = {
 
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 5
 		}
 	}
 
@@ -256,7 +256,7 @@ smart_irrigation_building_cotton_plantation = {
 	}
 
 	unlocking_technologies = {
-		pumpjacks
+		hybrid_crops
 	}
 
 	building_modifiers = {

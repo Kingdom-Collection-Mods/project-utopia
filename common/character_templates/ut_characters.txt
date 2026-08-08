@@ -1,7 +1,7 @@
 ﻿#france
 ut_agitator_charles_de_gaulle = {
 	first_name = Charles
-	last_name = de-Gaulle
+	last_name = de_Gaulle
 	historical = yes
 	culture = cu:french
 	religion = rel:catholic
@@ -104,7 +104,7 @@ ut_agitator_martin_luther_king_jr = {
 #todo below research and refine - generics
 ut_agitator_simone_de_beauvoir = {
 	first_name = Simone
-	last_name = de-Beauvoir
+	last_name = de_Beauvoir
 	historical = yes
 	culture = cu:french
 	religion = rel:atheist

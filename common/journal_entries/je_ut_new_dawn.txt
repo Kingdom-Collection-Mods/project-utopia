@@ -715,6 +715,14 @@ je_ut_new_dawn_democratic = {
 			remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
 			remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
 			remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
+
+			remove_variable = je_ut_new_dawn_democratic_spirit_done
+			remove_variable = je_ut_new_dawn_democratic_cultural_values_done
+			remove_variable = je_ut_new_dawn_democratic_power_bloc_done
+			remove_variable = je_ut_new_dawn_democratic_fair_elections_done
+
+			remove_modifier = je_ut_new_dawn_democratic_power_bloc_mod
+			remove_modifier = je_ut_new_dawn_democratic_fair_elections_mod
 		}
 	
 		je:je_ut_new_dawn = {
@@ -914,6 +922,11 @@ je_ut_new_dawn_autocratic = {
 			remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
 			remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
 			remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
+
+			remove_modifier = je_ut_new_dawn_emergency_powers_mod
+			remove_modifier = je_ut_new_dawn_strengthen_power_mod
+			remove_modifier = je_ut_new_dawn_border_dispute_mod
+			remove_modifier = je_ut_new_dawn_suppress_dissidents_mod
 		}
 
 		je:je_ut_new_dawn = {
@@ -1401,6 +1414,17 @@ je_ut_new_dawn_communist = {
 			remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
 			remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
 			remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
+
+			remove_variable = je_ut_communist_one_communist_party_done
+			remove_variable = je_ut_communist_a_communist_party_done
+			remove_variable = je_ut_communist_one_block_done
+			remove_variable = je_ut_communist_one_people_done
+			remove_variable = je_ut_communist_socialist_expansion_done
+			remove_variable = je_ut_communist_world_revolution_done
+
+			remove_modifier = je_ut_new_dawn_communist_one_block_mod
+			remove_modifier = je_ut_new_dawn_communist_one_people_mod
+			remove_modifier = je_ut_communist_socialist_expansion_mod
 		}
 
 		je:je_ut_new_dawn = {

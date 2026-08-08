@@ -60,14 +60,17 @@ ut_tech_preview_cheat_mining = {
 	is_shown = {
 		is_player = yes
 		NOT = { has_global_variable = ut_utopia_enabled_on_game_started_var }
-		NOT = { has_global_variable = ut_tech_preview_mining_cheat_enabled }
+		OR = {
+			NOT = { has_global_variable = ut_tech_preview_mining_cheat_enabled }
+			NOT = { has_global_variable = ut_utopia_mining_enabled_post_game_start_var }
+		}
 		NOT = { has_building = building_bauxite_mine }
 		NOT = { has_building = building_rare_earths_mine }
 	}
 
 	possible = {
 		is_player = yes
-		NOT = { has_global_variable = ut_tech_preview_mining_cheat_enabled }
+		NOT = { has_variable = ut_tech_preview_cheat_mining_selecting }
 	}
 	
 	when_taken = {
@@ -75,6 +78,7 @@ ut_tech_preview_cheat_mining = {
 			id = utopia_mod.1
 			popup = yes
 		}
+		set_variable = ut_tech_preview_cheat_mining_selecting
 	}
 
 	ai_chance = {
@@ -394,7 +398,13 @@ ut_lgbt_same_sex_unions = {
 	}
 
 	possible = {
-		always = no
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_100
+			ut_has_new_dawn_progress_core = {
+				VALUE = 100
+			}
+		}
+		
 		NOT = { has_variable = ut_lgbt_same_sex_unions_var }
 	}
 
@@ -402,26 +412,72 @@ ut_lgbt_same_sex_unions = {
 		set_variable = {
 			name = ut_lgbt_same_sex_unions_var
 		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_progress_neg_50
+			ut_add_new_dawn_core_progress = {
+				VALUE = -50
+			}
+		}
+		active_law:lawgroup_lgbt_rights ?= {
+			add_amendment = {
+				type = ut_lgbt_same_sex_unions_amendment
+				sponsor = ig:ig_urbanists
+			}
+		}
 	}
 
 	ai_chance = {
 		value = 0
+		if = {
+			limit = {
+				ruler ?= {
+					OR = {
+						has_ideology = ideology:ut_radical_feminism_leader
+						has_ideology = ideology:ut_social_feminism_leader
+						has_ideology = ideology:ut_ideology_progressive_leader
+						has_ideology = ideology:ideology_socialist_democratic
+					}
+				}
+			}
+			add = 50
+		}
 	}
 }
 
 ut_lgbt_same_sex_marriage = {
 	is_shown = {
 		has_law = law_type:law_lgbt_rights_3
+		has_variable = ut_lgbt_same_sex_unions_var
 	}
 
 	possible = {
-		always = no
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_100
+			ut_has_new_dawn_progress_core = {
+				VALUE = 100
+			}
+		}
 		NOT = { has_variable = ut_lgbt_same_sex_marriage_var }
 	}
 
 	when_taken = {
 		set_variable = {
 			name = ut_lgbt_same_sex_marriage_var
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_progress_neg_50
+			ut_add_new_dawn_core_progress = {
+				VALUE = -50
+			}
+		}
+		active_law:lawgroup_lgbt_rights ?= {
+			every_scope_amendment = {
+				remove_amendment = yes
+			}
+			add_amendment = {
+				type = ut_lgbt_same_sex_marriage_amendment
+				sponsor = ig:ig_urbanists
+			}
 		}
 	}
 
@@ -433,16 +489,35 @@ ut_lgbt_same_sex_marriage = {
 ut_lgbt_sexual_self_determination = {
 	is_shown = {
 		has_law = law_type:law_lgbt_rights_3
+		has_variable = ut_lgbt_same_sex_marriage_var
 	}
 
 	possible = {
-		always = no
+		custom_tooltip = {
+			text = ut_has_new_dawn_progress_100
+			ut_has_new_dawn_progress_core = {
+				VALUE = 100
+			}
+		}
+		has_technology_researched = political_progress_4_greens
 		NOT = { has_variable = ut_lgbt_sexual_self_determination_var }
 	}
 
 	when_taken = {
 		set_variable = {
 			name = ut_lgbt_sexual_self_determination_var
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_progress_neg_50
+			ut_add_new_dawn_core_progress = {
+				VALUE = -50
+			}
+		}
+		active_law:lawgroup_lgbt_rights ?= {
+			add_amendment = {
+				type = ut_lgbt_sexual_self_determination_amendment
+				sponsor = ig:ig_urbanists
+			}
 		}
 	}
 
@@ -642,6 +717,92 @@ je_ut_new_dawn_core_abilities_add_decision = {
 		add_journal_entry = {
 			type = je_ut_new_dawn_core_abilities
 		}
+	}
+	ai_chance = {
+		value = 1
+	}
+}
+
+ut_debug_apply_patch = {
+	is_shown = {
+		NOT = { has_global_variable = ut_utopia_enabled_on_game_started_patch_12_var }
+		NOT = { has_variable = ut_utopia_applied_post_game_start_patch_12_var }
+		OR = {
+			AND = {
+				has_technology_researched = online_forums
+				NOT = {
+					any_political_movement = {
+						has_core_ideology = ideology:ut_ideology_reactionary_movement_modern
+					}
+				}
+			}
+			AND = {
+				has_technology_researched = anti_discrimination_laws
+				NOT = {
+					any_political_movement = {
+						has_core_ideology = ideology:ut_ideology_liberal_movement_modern
+					}
+				}
+			}
+		}
+	}
+	possible = {
+		OR = {
+			NOT = {
+				any_political_movement = {
+					has_core_ideology = ideology:ut_ideology_reactionary_movement_modern
+				}
+			}
+			NOT = {
+				any_political_movement = {
+					has_core_ideology = ideology:ut_ideology_liberal_movement_modern
+				}
+			}
+		}
+	}
+	when_taken = {
+		if = {
+			limit = {
+				has_technology_researched = online_forums				
+			}
+			random_political_movement = {
+				limit = {
+					has_core_ideology = ideology:ideology_reactionary_movement
+				}
+				set_core_ideology = ut_ideology_reactionary_movement_modern
+			}
+		}
+		if = {
+			limit = {
+				has_technology_researched = anti_discrimination_laws
+			}
+			random_political_movement = {
+				limit = {
+					has_core_ideology = ideology:ideology_liberal_movement
+				}
+				set_core_ideology = ut_ideology_liberal_movement_modern
+			}
+		}
+		random_political_movement = {
+			limit = {
+				has_core_ideology = ideology:ideology_urbanist_human_rights_base
+			}
+			add_character_ideology = ut_ideology_progressive_leader
+		}
+		random_political_movement = {
+			limit = {
+				has_core_ideology = ideology:ideology_urbanist_economy_base
+			}
+			add_character_ideology = ut_ideology_conservative_leader
+			add_character_ideology = ut_ideology_progressive_leader
+		}
+		random_political_movement = {
+			limit = {
+				has_core_ideology = ideology:ut_ideology_conservative_movement
+			}
+			add_character_ideology = ut_ideology_conservative_leader
+		}
+		set_variable = ut_utopia_applied_post_game_start_patch_12_var
 	}
 	ai_chance = {
 		value = 1

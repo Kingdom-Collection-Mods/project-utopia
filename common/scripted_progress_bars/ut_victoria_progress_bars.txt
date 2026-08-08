@@ -735,6 +735,15 @@ je_ut_new_dawn_pressure_points_bar = {
 			desc = "je_ut_new_dawn_common_pressure_progress_from_core_progress"
 			value = root.var:je_ut_new_dawn_common_pressure_progress_from_core_progress
 		}
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			add = {
+				desc = "ut_nd_decaying_progress"
+				value = -1
+			}
+		}
 	}
 
 	start_value = 20

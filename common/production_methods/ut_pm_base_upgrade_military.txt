@@ -17,7 +17,7 @@ pm_ut_jetplane_production = {
 			goods_output_automobiles_add = -10
 
 			# output goods
-			goods_output_utopia_jet_planes_add=10
+			goods_output_utopia_jet_planes_add = 10
 		}
 
 		level_scaled = {

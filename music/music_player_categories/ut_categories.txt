@@ -1,0 +1,16 @@
+﻿category = {
+	id = "mx_category_utopia"
+	name = "project_utopia_ost"
+	tracks = {
+		"utopia_track_01"
+		"utopia_track_02"
+		"utopia_track_03"
+		"utopia_track_04"
+		"utopia_track_05"
+		"utopia_track_06"
+		"utopia_track_democrat_01"
+		"utopia_track_communist_01"
+		"utopia_track_autocrat_01"
+		#"utopia_track_fascist_01" todo coming with patch 13
+	}
+}

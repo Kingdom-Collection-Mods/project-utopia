@@ -1,4 +1,10 @@
 ﻿##Infrastructure
+INJECT:modern_sewerage = {
+	modifier = {
+		state_pollution_reduction_health_mult = 0.1
+	}
+}
+
 highway_projects = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/40s_highway.dds"
@@ -7,7 +13,7 @@ highway_projects = {
 	modifier = {
 		state_highways_max_level_add = 3
 		state_infrastructure_from_automobiles_consumption_add = 0.1
-		state_building_construction_sector_max_level_add = 5
+		state_building_construction_sector_max_level_add = 10
 	}
 	
 	unlocking_technologies = {	
@@ -26,6 +32,7 @@ intercity_transport = {
 	
 	modifier = {
 		state_infrastructure_from_population_max_add = 20
+		state_building_construction_sector_max_level_add = 5
 	}
 
 	unlocking_technologies = {	
@@ -500,6 +507,10 @@ epa_two = {
 	unlocking_technologies = {
 		epa_one
 	}
+
+	on_researched = {
+		custom_tooltip = ut_movement_environmentalist_unlock_tt
+	}
 	
 	ai_weight = {
 		value = 1
@@ -586,7 +597,8 @@ political_progress_1_cosmopolitan = {
 		country_influence_mult = 0.25
 		country_agitator_slots_add = 1
 
-		state_expected_sol_from_literacy = 1 #todo: rethink, if ai techs this... no good. But good for player. 
+		state_expected_sol_from_literacy = 1 #todo: rethink, if ai techs this... no good. But good for player.
+		country_expected_sol_for_new_dawn_pressure = 10
 	}
 
 	on_researched = {
@@ -622,6 +634,7 @@ political_progress_2_rationalism = {
 		
 	modifier = {
 		state_expected_sol_from_literacy = 2
+		country_expected_sol_for_new_dawn_pressure = 10
 	}
 
 	unlocking_technologies = {
@@ -634,6 +647,9 @@ political_progress_2_rationalism = {
 	on_researched = {
 		custom_tooltip = {
 			text = ut_movement_rationalists_unlock_tt
+		}
+		custom_tooltip = {
+			text = ut_ideology_conservative_leader_unlock_tt
 		}
 		every_interest_group = {
 			limit = {
@@ -653,6 +669,7 @@ political_progress_3_neoliberalism = {
 	modifier = {
 		state_expected_sol_from_literacy = 3
 		country_agitator_slots_add = 1
+		country_expected_sol_for_new_dawn_pressure = 10
 	}
 
 	unlocking_technologies = {
@@ -689,6 +706,7 @@ political_progress_4_greens = {
 	modifier = {
 		state_expected_sol_from_literacy = 3
 		country_agitator_slots_add = 1
+		country_expected_sol_for_new_dawn_pressure = 10
 	}
 
 	unlocking_technologies = {
@@ -756,6 +774,20 @@ online_forums = {
 
 	on_researched = {
 		#custom_tooltip = online_forums_tt #replaced by country_new_dawn_fund_opposition_efficiency_mult
+		if = {
+			limit = {
+				any_political_movement = {
+					is_political_movement_type = movement_reactionary
+				}
+			}
+			random_political_movement = {
+				limit = {
+					is_political_movement_type = movement_reactionary
+					has_core_ideology = ideology:ideology_reactionary_movement
+				}
+				set_core_ideology = ut_ideology_reactionary_movement_modern
+			}
+		}
 	}
 
 	modifier = {
@@ -820,6 +852,21 @@ anti_discrimination_laws = {
 		ig:ig_urbanists ?= {
 			add_ideology = ideology_urbanist_economy_base
 		}
+
+		if = {
+			limit = {
+				any_political_movement = {
+					is_political_movement_type = movement_liberal
+				}
+			}
+			random_political_movement = {
+				limit = {
+					is_political_movement_type = movement_liberal
+					has_core_ideology = ideology:ideology_liberal_movement
+				}
+				set_core_ideology = ut_ideology_liberal_movement_modern
+			}
+		}
 	}
 
 	modifier = {
@@ -840,9 +887,8 @@ emancipation_movement = {
 	category = society
 		
 	on_researched = {
-		custom_tooltip = {
-			text = lgbt_movement_tt
-		}
+		custom_tooltip = lgbt_movement_tt
+		custom_tooltip = ut_ideology_progressive_leader_unlock_tt
 	}
 
 	modifier = {
@@ -914,6 +960,7 @@ anti_multicultural_globalism = {
 	modifier = {
 		state_expected_sol_from_literacy = 2 #todo: does not really fit here
 		country_infamy_generation_mult = -0.1
+		country_expected_sol_for_new_dawn_pressure = 10
 	}
 
 	unlocking_technologies = {
