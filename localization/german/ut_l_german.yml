@@ -383,6 +383,7 @@
  je_ut_new_dawn_common_pressure_progress_from_core_progress_tooltip: "Jeder gewonnene [concept_ut_nd_progress_points] senkt den Druck um 0,5 Punkte."
 
  country_expected_sol_for_new_dawn_pressure: "Erwarteter [concept_sol] für [concept_ut_nd_pressure]"
+ country_expected_sol_for_new_dawn_pressure_desc: "Ändert den erwarteten [concept_sol] für die Berechnung von [concept_ut_nd_pressure]."
 
  ut_new_dawn_communist_focus: "Kommunistischer Fokus"
  ut_new_dawn_communist_focus_desc: "#italic Vorschau: Enthält eine Basisimplementierung von [concept_ut_nd_abilities] und [concept_ut_nd_milestones].#!"
@@ -837,6 +838,7 @@
 
  ut_movement_cosmopolitan_name: "Kosmopolitische Bewegung"
  ut_movement_humanist_name: "Humanistenbewegung"
+ ut_movement_rationalists: "$ut_movement_rationalists_name$"
  ut_movement_rationalists_name: "Rationalistenbewegung"
  ut_movement_conservative_name: "Konservative Bewegung"
  ut_movement_sexual_liberation_name: "Sexuelle Befreiungsbewegung"
