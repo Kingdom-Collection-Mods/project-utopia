@@ -91,10 +91,9 @@ utopia_track_democrat_01 = {
 }
 
 utopia_track_communist_01 = {
-	#credits = https://commons.wikimedia.org/wiki/File:Internationale_orchestral_arrangement.ogg 
-	#        = https://commons.wikimedia.org/wiki/File:The_Internationale_(1977_instrumental).ogg
+	#credits = https://commons.wikimedia.org/wiki/File:The_Internationale_(1977_instrumental).ogg
 	#by Jerry Engelbach
-	music = "file:/music/The_Internationale_1977_instrumental.ogg"
+	music = "file:/music/The_Internationale_(1977_instrumental).ogg"
 	name = "music_internationale_orchestral_arrangement"
 	pause_factor = 50
 	mood = yes
