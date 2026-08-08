@@ -38,8 +38,11 @@
 	}
 	
 	accept_effect = {
-		scope:target_country = {
-			join_power_bloc = root
+		custom_tooltip = {
+			text = ut_humiliate_power_bloc_goal_tt
+			scope:target_country = {
+				join_power_bloc = root
+			}
 		}
 	}
 
@@ -855,7 +858,7 @@ ut_share_nuclear_power_research = {
 		will_propose = {  
 			would_accept_diplomatic_action = {
 				actor = scope:target_country
-				type = ut_international_diplomatic_power_bloc_merge
+				type = ut_share_nuclear_power_research
 			}
 		}
 		
