@@ -111,6 +111,8 @@
  ut_research_institute_found_mod_desc: "Die Grundlagen für ein nationales [concept_ut_research_institute] werden gelegt. Wissenschaftliche Netzwerke entstehen, Ressourcen werden gebündelt, und die Infrastruktur für eine Zukunft des Wissens wächst."
  ut_je_research_institute_founding_goal: "Auf den Abschluss der #BOLD 3-Jahres#!-Gründungsdauer warten"
  ut_research_institute_found_unlock_tt: "Schaltet [concept_ut_research_institute] frei (max. 1 pro Land)"
+ ut_research_institute_nuclear_power_unlock_tt: "Schaltet die Forschung [GetTechnology('nuclear_power').GetName] im [concept_ut_research_institute] frei"
+ ut_research_institute_high_tech_computers_unlock_tt: "Schaltet die Forschung [GetTechnology('high_tech_computers').GetName] im [concept_ut_research_institute] frei"
  ut_research_institute_can_construct_tt: "Hat einen geeigneten Standort für ein Forschungsinstitut identifiziert und vermessen"
  ut_research_institute_site_mod: "Forschungsinstitutsstandort"
 

@@ -111,6 +111,8 @@
  ut_research_institute_found_mod_desc: "The foundations for a national research institute are being laid. Scientific networks are emerging, resources are being pooled, and the infrastructure for a future of knowledge is growing."
  ut_je_research_institute_founding_goal: "Wait for the completion of the #BOLD 3-year#! founding phase"
  ut_research_institute_found_unlock_tt: "Unlocks [concept_ut_research_institute] (max. 1 per country)"
+ ut_research_institute_nuclear_power_unlock_tt: "Unlocks researching [GetTechnology('nuclear_power').GetName] in [concept_ut_research_institute]"
+ ut_research_institute_high_tech_computers_unlock_tt: "Unlocks researching [GetTechnology('high_tech_computers').GetName] in [concept_ut_research_institute]"
  ut_research_institute_can_construct_tt: "Has identified and surveyed an appropriate site for a Research Institute"
  ut_research_institute_site_mod: "Research Institute Site"
 
