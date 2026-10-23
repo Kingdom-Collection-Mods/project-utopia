@@ -147,6 +147,10 @@ ideology_interventionist = {
 	icon = "gfx/interface/icons/ideology_icons/protectionism.dds"
 
 	lawgroup_economic_system = {
+		law_social_market_economy = approve
+		law_corporate_economy = approve
+		law_free_market_economy = approve
+		law_state_capitalism_economy = approve
 		law_laissez_faire = approve
 		law_interventionism = strongly_approve
 		law_agrarianism = neutral
@@ -176,6 +180,7 @@ ideology_interventionist = {
 	}
 
 	lawgroup_labor_rights = {
+		law_ut_minimum_wage = strongly_disapprove
 		law_no_workers_rights = neutral
 		law_regulatory_bodies = disapprove
 		law_worker_protections = strongly_disapprove
@@ -612,6 +617,7 @@ ideology_patriotic = {
 	}	
 
 	lawgroup_internal_security = {
+		law_mass_surveillance = approve
 		law_secret_police = approve
 		law_national_guard = approve
 		law_no_home_affairs = disapprove
@@ -697,6 +703,7 @@ ideology_liberal = {
 	}
 
 	lawgroup_internal_security = {
+		law_mass_surveillance = strongly_disapprove
 		law_guaranteed_liberties = approve
 		law_national_guard = neutral
 		law_no_home_affairs = neutral

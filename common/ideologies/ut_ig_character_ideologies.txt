@@ -427,8 +427,9 @@ ut_ideology_autocratic_leader = {
 		law_censorship = approve
 		law_outlawed_dissent = strongly_approve
 	}
-	
+
 	lawgroup_internal_security = {
+		law_mass_surveillance = strongly_approve
 		law_guaranteed_liberties = strongly_disapprove
 		law_no_home_affairs = disapprove
 		law_national_guard = approve
@@ -1433,8 +1434,9 @@ ut_radical_feminism_leader = {
 		law_censorship = disapprove
 		law_outlawed_dissent = strongly_disapprove
 	}
-	
+
 	lawgroup_internal_security = {
+		law_mass_surveillance = strongly_disapprove
 		law_guaranteed_liberties = strongly_approve
 		law_no_home_affairs = approve
 		law_national_guard = strongly_disapprove

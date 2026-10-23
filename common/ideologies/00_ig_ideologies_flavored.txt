@@ -1062,6 +1062,8 @@ ideology_magnatial = {
 	}
 
 	lawgroup_trade_policy = {
+		law_protectionism_union = approve
+		law_free_trade_union = disapprove
 		law_isolationism = neutral
 		law_mercantilism = approve
 		law_protectionism = approve
@@ -1214,6 +1216,7 @@ ideology_carlist_ig_2 = {
 	}
 
 	lawgroup_bureaucracy = {
+		law_privatized_bureaucrats = neutral
 		law_hereditary_bureaucrats = approve
 		law_appointed_bureaucrats = neutral
 		law_elected_bureaucrats = disapprove
@@ -1325,6 +1328,7 @@ ideology_military_absolutist = {
 	}
 
 	lawgroup_internal_security = {
+		law_mass_surveillance = approve
 		law_secret_police = approve
 		law_national_guard = approve
 		law_no_home_affairs = disapprove
@@ -1445,6 +1449,7 @@ ideology_ilustrado = { 	# Flavoured variant of Liberal for the Philippines
 	}
 
 	lawgroup_internal_security = {
+		law_mass_surveillance = strongly_disapprove
 		law_guaranteed_liberties = approve
 		law_national_guard = neutral
 		law_no_home_affairs = neutral
@@ -1688,6 +1693,8 @@ ideology_japan_hierarchic = {
 	icon = "gfx/interface/icons/ideology_icons/hierarchic.dds"
 
 	lawgroup_army_model = {
+		law_task_forces = neutral
+		law_demobilized = approve
 		law_peasant_levies = approve
 		law_professional_army = neutral
 		law_national_militia = neutral
@@ -1753,6 +1760,8 @@ ideology_japan_hierarchic_2 = {
 	icon = "gfx/interface/icons/ideology_icons/hierarchic.dds"
 
 	lawgroup_army_model = {
+		law_task_forces = neutral
+		law_demobilized = approve
 		law_peasant_levies = approve
 		law_professional_army = neutral
 		law_national_militia = neutral
