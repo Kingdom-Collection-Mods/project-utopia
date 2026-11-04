@@ -40,8 +40,12 @@
 	accept_effect = {
 		custom_tooltip = {
 			text = ut_humiliate_power_bloc_goal_tt
+			# scope:target_country = {
+			# 	join_power_bloc = root
+			# }
+		
 			scope:target_country = {
-				join_power_bloc = root
+				destroy_power_bloc = yes	
 			}
 		}
 	}
