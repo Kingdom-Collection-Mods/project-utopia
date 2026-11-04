@@ -18,23 +18,30 @@
 		}
 	}
 
-	complete = {
-		any_scope_building = {
-			is_building_type = building_heavy_machinery_factory
-			level >= 1
-			occupancy > 0.75
-			cash_reserves_ratio > 0.25
-			weekly_profit > 0
-		}
-	}
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			any_scope_building = {
+				is_building_type = building_heavy_machinery_factory
+				level >= 1
+				occupancy > 0.75
+				cash_reserves_ratio > 0.25
+				weekly_profit > 0
+			}
 
-	on_complete = {
-		trigger_event = {
-			id = utopia_journal_prod.13
-			popup = yes
 		}
-		set_variable = {
-			name = industrial_machinery_je_done
+		effect = {
+			trigger_event = {
+				id = utopia_journal_prod.13
+				popup = yes
+			}
+			set_variable = {
+				name = industrial_machinery_je_done
+			}
+
 		}
 	}
 
@@ -64,23 +71,30 @@ ut_heavy_industrial_machinery_je = {
 		}
 	}
 
-	complete = {
-		any_scope_building = {
-			is_building_type = building_heavy_machinery_factory
-			level >= 5
-			occupancy > 0.75
-			cash_reserves_ratio > 0.25
-			weekly_profit > 0
-		}
-	}
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			any_scope_building = {
+				is_building_type = building_heavy_machinery_factory
+				level >= 5
+				occupancy > 0.75
+				cash_reserves_ratio > 0.25
+				weekly_profit > 0
+			}
 
-	on_complete = {
-		trigger_event = {
-			id = utopia_journal_prod.1
-			popup = yes
 		}
-		set_variable = {
-			name = heavy_industrial_machinery_je_done
+		effect = {
+			trigger_event = {
+				id = utopia_journal_prod.1
+				popup = yes
+			}
+			set_variable = {
+				name = heavy_industrial_machinery_je_done
+			}
+
 		}
 	}
 
@@ -110,27 +124,33 @@ ut_cnc_machines_je = {
 		has_variable = heavy_industrial_machinery_je_done
 	}
 
-	complete = {
-		any_scope_building = {
-			is_building_type = building_heavy_machinery_factory
-			level >= 8
-			occupancy > 0.90
-			cash_reserves_ratio > 0.30
-			has_active_production_method = pm_heavy_machinery_electronics_process
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			any_scope_building = {
+				is_building_type = building_heavy_machinery_factory
+				level >= 8
+				occupancy > 0.90
+				cash_reserves_ratio > 0.30
+				has_active_production_method = pm_heavy_machinery_electronics_process
+			}
+
+		}
+		effect = {
+			trigger_event = {
+				id = utopia_journal_prod.3
+				popup = yes
+			}
+			set_variable = {
+				name = cnc_machines_je_done
+			}
+
 		}
 	}
 
-	on_complete = {
-		trigger_event = {
-			id = utopia_journal_prod.3
-			popup = yes
-		}
-		set_variable = {
-			name = cnc_machines_je_done
-		}
-	}
-
-	
 	timeout = 3650
 }
 
@@ -147,37 +167,44 @@ ut_heavy_tractors_je = {
 		has_technology_researched = heavy_machinery_farming
 	}
 
-	complete = {
-		any_scope_building = {
-			filter = {
-				OR = {
-					is_building_type = building_rye_farm
-					is_building_type = building_wheat_farm
-					is_building_type = building_maize_farm
-					is_building_type = building_millet_farm
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			any_scope_building = {
+				filter = {
+					OR = {
+						is_building_type = building_rye_farm
+						is_building_type = building_wheat_farm
+						is_building_type = building_maize_farm
+						is_building_type = building_millet_farm
+					}
 				}
+				percent >= 0.5
+				OR = {
+					has_active_production_method = pm_farms_heavy_machinery_support
+					has_active_production_method = pm_farms_heavy_machinery_support_rice
+				}
+				cash_reserves_ratio > 0.25
+				weekly_profit > 0
+				occupancy > 0.75
 			}
-			percent >= 0.5
-			OR = {
-				has_active_production_method = pm_farms_heavy_machinery_support
-				has_active_production_method = pm_farms_heavy_machinery_support_rice
+
+		}
+		effect = {
+			trigger_event = {
+				id = utopia_journal_prod.5
+				popup = yes
 			}
-			cash_reserves_ratio > 0.25
-			weekly_profit > 0
-			occupancy > 0.75
+			set_variable = {
+				name = heavy_tractors_je_done
+			}
+
 		}
 	}
 
-	on_complete = {
-		trigger_event = {
-			id = utopia_journal_prod.5
-			popup = yes
-		} 
-		set_variable = {
-			name = heavy_tractors_je_done
-		}
-	}
-	
 	timeout = 3650
 }
 
@@ -194,37 +221,44 @@ ut_agrarian_planes_je = {
 		has_variable = heavy_tractors_je_done
 	}
 
-	complete = {
-		any_scope_building = {
-			filter = {
-				OR = {
-					is_building_type = building_rye_farm
-					is_building_type = building_wheat_farm
-					is_building_type = building_maize_farm
-					is_building_type = building_millet_farm
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			any_scope_building = {
+				filter = {
+					OR = {
+						is_building_type = building_rye_farm
+						is_building_type = building_wheat_farm
+						is_building_type = building_maize_farm
+						is_building_type = building_millet_farm
+					}
 				}
+				percent >= 0.5
+				OR = {
+					has_active_production_method = pm_farms_plane_support
+					has_active_production_method = pm_farms_plane_support_rice
+				}
+				cash_reserves_ratio > 0.25
+				weekly_profit > 0
+				occupancy > 0.75
 			}
-			percent >= 0.5
-			OR = {
-				has_active_production_method = pm_farms_plane_support
-				has_active_production_method = pm_farms_plane_support_rice
+
+		}
+		effect = {
+			trigger_event = {
+				id = utopia_journal_prod.6
+				popup = yes
 			}
-			cash_reserves_ratio > 0.25
-			weekly_profit > 0
-			occupancy > 0.75
+			set_variable = {
+				name = agrarian_planes_je_done
+			}
+
 		}
 	}
 
-	on_complete = {
-		trigger_event = {
-			id = utopia_journal_prod.6
-			popup = yes
-		}
-		set_variable = {
-			name = agrarian_planes_je_done
-		}
-	}
-	
 	timeout = 3650
 }
 
@@ -240,23 +274,30 @@ ut_plastic_je = {
 		has_technology_researched = plastics_nylon
 	}
 
-	complete = {
-		any_scope_building = {
-			is_building_type = building_plastic_factory
-			level >= 5
-			occupancy > 0.75
-			has_active_production_method = pm_plastic_one_process
-			weekly_profit > 500
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			any_scope_building = {
+				is_building_type = building_plastic_factory
+				level >= 5
+				occupancy > 0.75
+				has_active_production_method = pm_plastic_one_process
+				weekly_profit > 500
+			}
+
+		}
+		effect = {
+			trigger_event = {
+				id = utopia_journal_prod.7
+				popup = yes
+			}
+
 		}
 	}
 
-	on_complete = {
-		trigger_event = {
-			id = utopia_journal_prod.7
-			popup = yes
-		}
-	}
-	
 	timeout = 3650
 }
 
@@ -272,26 +313,33 @@ ut_electronics_je = {
 		has_technology_researched = electronics
 	}
 
-	complete = {
-		any_scope_building = {
-			is_building_type = building_electrics_industry
-			level >= 5
-			cash_reserves_ratio > 0.25
-			weekly_profit > 0
-			occupancy > 0.75
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			any_scope_building = {
+				is_building_type = building_electrics_industry
+				level >= 5
+				cash_reserves_ratio > 0.25
+				weekly_profit > 0
+				occupancy > 0.75
+			}
+
+		}
+		effect = {
+			trigger_event = {
+				id = utopia_journal_prod.8
+				popup = yes
+			}
+			set_variable = {
+				name = electronics_je_done
+			}
+
 		}
 	}
 
-	on_complete = {
-		trigger_event = {
-			id = utopia_journal_prod.8
-			popup = yes
-		}
-		set_variable = {
-			name = electronics_je_done
-		}
-	}
-	
 	timeout = 3650
 }
 
@@ -308,26 +356,33 @@ ut_computers_je = {
 		has_variable = electronics_je_done
 	}
 
-	complete = {
-		any_scope_building = {
-			is_building_type = building_electrics_industry
-			level >= 5
-			cash_reserves_ratio > 0.25
-			weekly_profit > 0
-			occupancy > 0.75
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			any_scope_building = {
+				is_building_type = building_electrics_industry
+				level >= 5
+				cash_reserves_ratio > 0.25
+				weekly_profit > 0
+				occupancy > 0.75
+			}
+
+		}
+		effect = {
+			trigger_event = {
+				id = utopia_journal_prod.9
+				popup = yes
+			}
+			set_variable = {
+				name = computers_je_done
+			}
+
 		}
 	}
 
-	on_complete = {
-		trigger_event = {
-			id = utopia_journal_prod.9
-			popup = yes
-		}
-		set_variable = {
-			name = computers_je_done
-		}
-	}
-	
 	timeout = 3650
 }
 
@@ -344,23 +399,30 @@ ut_software_je = {
 		has_variable = computers_je_done
 	}
 
-	complete = {
-		any_scope_building = {
-			is_building_type = building_electrics_industry
-			level >= 5
-			cash_reserves_ratio > 0.25
-			weekly_profit > 0
-			occupancy > 0.75
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			any_scope_building = {
+				is_building_type = building_electrics_industry
+				level >= 5
+				cash_reserves_ratio > 0.25
+				weekly_profit > 0
+				occupancy > 0.75
+			}
+
+		}
+		effect = {
+			trigger_event = {
+				id = utopia_journal_prod.10
+				popup = yes
+			}
+
 		}
 	}
 
-	on_complete = {
-		trigger_event = {
-			id = utopia_journal_prod.10
-			popup = yes
-		}
-	}
-	
 	timeout = 3650
 }
 
@@ -379,26 +441,33 @@ ut_consumer_goods_simple_je = {
 		has_technology_researched = consumer_goods_main_analog
 	}
 
-	complete = {
-		any_scope_building = {
-			is_building_type = building_commercial_factory
-			level >= 5
-			cash_reserves_ratio > 0.25
-			weekly_profit > 0
-			occupancy > 0.75
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			any_scope_building = {
+				is_building_type = building_commercial_factory
+				level >= 5
+				cash_reserves_ratio > 0.25
+				weekly_profit > 0
+				occupancy > 0.75
+			}
+
+		}
+		effect = {
+			trigger_event = {
+				id = utopia_journal_prod.11
+				popup = yes
+			}
+			set_variable = {
+				name = consumer_goods_simple_je_done
+			}
+
 		}
 	}
 
-	on_complete = {
-		trigger_event = {
-			id = utopia_journal_prod.11
-			popup = yes
-		}
-		set_variable = {
-			name = consumer_goods_simple_je_done
-		}
-	}
-	
 	on_timeout = {
 		trigger_event = {
 			id = utopia_journal_prod.4
@@ -421,23 +490,30 @@ ut_consumer_goods_complex_je = {
 		has_technology_researched = consumer_goods_main_house_hold_electrical
 	}
 
-	complete = {
-		any_scope_building = {
-			is_building_type = building_commercial_factory
-			level >= 20
-			cash_reserves_ratio > 0.25
-			weekly_profit > 0
-			occupancy > 0.75
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			any_scope_building = {
+				is_building_type = building_commercial_factory
+				level >= 20
+				cash_reserves_ratio > 0.25
+				weekly_profit > 0
+				occupancy > 0.75
+			}
+
+		}
+		effect = {
+			trigger_event = {
+				id = utopia_journal_prod.12
+				popup = yes
+			}
+
 		}
 	}
 
-	on_complete = {
-		trigger_event = {
-			id = utopia_journal_prod.12
-			popup = yes
-		}
-	}
-	
 	timeout = 3650
 }
 
@@ -456,51 +532,63 @@ ut_je_research_institute_founding = {
 		}
 	}
 
-	complete = {
-		scope:journal_entry = { is_goal_complete = yes }
-		any_scope_state = {
-			is_split_state = no
-			is_incorporated = yes
-			OR = {
-				any_scope_building = {
-					is_building_type = building_heavy_machinery_factory
-					level >= 10
-				}
-				any_scope_building = {
-					is_building_type = building_electronic_factory
-					level >= 5
-				}
-				any_scope_building = {
-					is_building_type = building_computer_factory
-					level >= 1
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			scope:journal_entry = { is_goal_complete = yes }
+			any_scope_state = {
+				is_split_state = no
+				is_incorporated = yes
+				OR = {
+					any_scope_building = {
+						is_building_type = building_heavy_machinery_factory
+						level >= 10
+					}
+					any_scope_building = {
+						is_building_type = building_electronic_factory
+						level >= 5
+					}
+					any_scope_building = {
+						is_building_type = building_computer_factory
+						level >= 1
+					}
 				}
 			}
+
+		}
+		effect = {
+			remove_modifier = ut_research_institute_found_mod
+			trigger_event = { id = utopia_journal_prod.40 } # site found
+			set_variable = ut_research_institute_found
+
 		}
 	}
 
-	on_complete = {
-		remove_modifier = ut_research_institute_found_mod
-		trigger_event = { id = utopia_journal_prod.40 } # site found
-		set_variable = ut_research_institute_found
-	}
-
-	invalid = {
-		OR = {
-			NOT = {
-				any_scope_state = {
-					is_split_state = no
-					is_incorporated = yes
-					ut_research_institute_site_building_trigger = yes
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = je_standard_failure_conclusion_desc
+		trigger = {
+			OR = {
+				NOT = {
+					any_scope_state = {
+						is_split_state = no
+						is_incorporated = yes
+						ut_research_institute_site_building_trigger = yes
+					}
 				}
+				#so it finishes when cheating
+				has_variable = ut_research_institute_found_done
 			}
-			#so it finishes when cheating
-			has_variable = ut_research_institute_found_done
-		}		
-	}
 
-	on_invalid = {
-		remove_modifier = ut_research_institute_found_mod
-		remove_variable = ut_research_institute_found_var
+		}
+		effect = {
+			remove_modifier = ut_research_institute_found_mod
+			remove_variable = ut_research_institute_found_var
+
+		}
 	}
 
 	current_value = {
@@ -523,9 +611,22 @@ ut_je_research_institute_construction = {
 
 	group = je_group_technology
 
-	complete = {
-		OR = {
-			scope:target = {
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			OR = {
+				scope:target = {
+					any_scope_building = {
+						is_building_type = building_ut_research_institute
+						is_under_construction = no
+						occupancy > 0.75
+					}
+				}
+
+				#todo remove  only to fix bug with missing target
 				any_scope_building = {
 					is_building_type = building_ut_research_institute
 					is_under_construction = no
@@ -533,14 +634,16 @@ ut_je_research_institute_construction = {
 				}
 			}
 
-			#todo remove  only to fix bug with missing target
-			any_scope_building = {
-				is_building_type = building_ut_research_institute
-				is_under_construction = no
-				occupancy > 0.75
-			}
+
 		}
-		
+		effect = {
+			remove_variable = ut_research_institute_found_var
+			set_variable = ut_research_institute_found_done
+			scope:target = {
+				remove_modifier = ut_research_institute_site_mod
+			}
+
+		}
 	}
 
 	on_yearly_pulse = {
@@ -562,23 +665,22 @@ ut_je_research_institute_construction = {
 	}
 
 
-	fail = {
-		NOT = {
-			any_scope_state = {
-				has_modifier = ut_research_institute_site_mod
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		color = "blue_negative"
+		conclusion_desc = je_standard_failure_conclusion_desc
+		trigger = {
+			NOT = {
+				any_scope_state = {
+					has_modifier = ut_research_institute_site_mod
+				}
 			}
+
 		}
-	}
+		effect = {
+			remove_variable = ut_research_institute_found_var
 
-	on_fail = {
-		remove_variable = ut_research_institute_found_var
-	}
-
-	on_complete = {
-		remove_variable = ut_research_institute_found_var
-		set_variable = ut_research_institute_found_done
-		scope:target = {
-			remove_modifier = ut_research_institute_site_mod
 		}
 	}
 
@@ -609,37 +711,49 @@ ut_je_ut_research_nuclear_power = {
 		}
 	}
 
-	complete = {
-		scope:journal_entry = { is_goal_complete = yes }
-		any_scope_state = {
-			any_scope_building = {
-				is_building_type = building_ut_research_institute
-			}
-		}
-	}
-
-	on_complete = {
-		remove_modifier = ut_research_nuclear_power_mod
-		remove_variable = ut_research_nuclear_power_var
-		trigger_event = { id = utopia_journal_prod.41 } # nuclear found
-	}
-
-	invalid = {
-		OR = {
-			NOT = {
-				any_scope_state = {
-					any_scope_building = {
-						is_building_type = building_ut_research_institute
-					}
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			scope:journal_entry = { is_goal_complete = yes }
+			any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_ut_research_institute
 				}
 			}
-			has_technology_researched = nuclear_power
+
+		}
+		effect = {
+			remove_modifier = ut_research_nuclear_power_mod
+			remove_variable = ut_research_nuclear_power_var
+			trigger_event = { id = utopia_journal_prod.41 } # nuclear found
+
 		}
 	}
 
-	on_invalid = {
-		remove_modifier = ut_research_nuclear_power_mod
-		remove_variable = ut_research_nuclear_power_var
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = je_standard_failure_conclusion_desc
+		trigger = {
+			OR = {
+				NOT = {
+					any_scope_state = {
+						any_scope_building = {
+							is_building_type = building_ut_research_institute
+						}
+					}
+				}
+				has_technology_researched = nuclear_power
+			}
+
+		}
+		effect = {
+			remove_modifier = ut_research_nuclear_power_mod
+			remove_variable = ut_research_nuclear_power_var
+
+		}
 	}
 
 	current_value = {
@@ -681,25 +795,13 @@ ut_je_ut_research_high_tech_computers_research = {
 		}
 	}
 
-	complete = {
-		scope:journal_entry = { is_goal_complete = yes }
-		any_scope_state = {
-			is_split_state = no
-			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_computer_factory
-				level >= 10
-			}
-		}
-	}
-
-	on_complete = {
-		remove_modifier = ut_research_high_tech_computers_research_mod
-		trigger_event = { id = utopia_journal_prod.42 } # site found
-	}
-
-	invalid = {
-		NOT = {
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			scope:journal_entry = { is_goal_complete = yes }
 			any_scope_state = {
 				is_split_state = no
 				is_incorporated = yes
@@ -708,12 +810,36 @@ ut_je_ut_research_high_tech_computers_research = {
 					level >= 10
 				}
 			}
+
+		}
+		effect = {
+			remove_modifier = ut_research_high_tech_computers_research_mod
+			trigger_event = { id = utopia_journal_prod.42 } # site found
+
 		}
 	}
 
-	on_invalid = {
-		remove_modifier = ut_research_high_tech_computers_research_mod
-		remove_variable = ut_research_high_tech_computers_var
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = je_standard_failure_conclusion_desc
+		trigger = {
+			NOT = {
+				any_scope_state = {
+					is_split_state = no
+					is_incorporated = yes
+					any_scope_building = {
+						is_building_type = building_computer_factory
+						level >= 10
+					}
+				}
+			}
+
+		}
+		effect = {
+			remove_modifier = ut_research_high_tech_computers_research_mod
+			remove_variable = ut_research_high_tech_computers_var
+
+		}
 	}
 
 	current_value = {
@@ -750,36 +876,50 @@ ut_je_nuclear_power_plant_construction = {
 		}
 	}
 
-	complete = {
-		scope:target = {
-			any_scope_building = {
-				is_building_type = building_ut_nuclear_power_plant
-				is_under_construction = no
-			}
-		}
-	}
-
-	fail = {
-		NOT = {
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
 			scope:target = {
-				has_modifier = ut_nuclear_power_plant_construction_site_mod
-				has_building = building_ut_nuclear_power_plant_construction_site
+				any_scope_building = {
+					is_building_type = building_ut_nuclear_power_plant
+					is_under_construction = no
+				}
 			}
+
+		}
+		effect = {
+			remove_variable = ut_nuclear_power_plant_location_found_var
+			scope:target = {
+				remove_modifier = ut_nuclear_power_plant_construction_site_mod
+				remove_building = building_ut_nuclear_power_plant_construction_site
+			}
+
 		}
 	}
 
-	on_fail = {
-		remove_variable = ut_nuclear_power_plant_location_found_var
-		scope:target = {
-			remove_modifier = ut_nuclear_power_plant_construction_site_mod
-		}
-	}
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		color = "blue_negative"
+		conclusion_desc = je_standard_failure_conclusion_desc
+		trigger = {
+			NOT = {
+				scope:target = {
+					has_modifier = ut_nuclear_power_plant_construction_site_mod
+					has_building = building_ut_nuclear_power_plant_construction_site
+				}
+			}
 
-	on_complete = {
-		remove_variable = ut_nuclear_power_plant_location_found_var
-		scope:target = {
-			remove_modifier = ut_nuclear_power_plant_construction_site_mod
-			remove_building = building_ut_nuclear_power_plant_construction_site
+		}
+		effect = {
+			remove_variable = ut_nuclear_power_plant_location_found_var
+			scope:target = {
+				remove_modifier = ut_nuclear_power_plant_construction_site_mod
+			}
+
 		}
 	}
 

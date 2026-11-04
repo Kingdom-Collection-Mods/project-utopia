@@ -34,100 +34,114 @@
 		}
 	}
 
-	complete = {
-		scope:journal_entry = { is_goal_complete = yes }
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			scope:journal_entry = { is_goal_complete = yes }
+
+		}
+		effect = {
+			hidden_effect = {
+				remove_variable = ut_new_dawn_propaganda_source_defend_once_var
+				set_variable = {
+					name = ut_je_propaganda_source_target_var
+					value = scope:target
+				}
+				trigger_event = {
+					id = event_new_dawn.25
+					popup = yes
+				}
+			}
+			scope:target = {
+				custom_tooltip = ut_add_new_dawn_progress_neg_25
+				ut_add_new_dawn_core_progress = {
+					VALUE = -25
+				}
+
+				set_variable = {
+					name = ut_je_propaganda_target_source_var
+					value = root
+				}
+				trigger_event = {
+					id = event_new_dawn.24
+					popup = yes
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = ut_new_dawn_core_communist_mod
+				}
+				scope:target = {
+					add_modifier = {
+						name = ut_propaganda_communist_mod
+						days = 730 #2 years
+						#is_decaying = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_modifier = ut_new_dawn_core_democratic_mod
+				}
+				scope:target = {
+					add_modifier = {
+						name = ut_propaganda_democratic_mod
+						days = 730 #2 years
+						#is_decaying = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_modifier = ut_new_dawn_core_fascist_mod
+				}
+				scope:target = {
+					add_modifier = {
+						name = ut_propaganda_fascist_mod
+						days = 730 #2 years
+						#is_decaying = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_modifier = ut_new_dawn_core_autocratic_mod
+				}
+				scope:target = {
+					add_modifier = {
+						name = ut_propaganda_autocratic_mod
+						days = 730 #2 years
+						#is_decaying = yes
+					}
+				}
+			}
+
+		}
 	}
 
-	on_complete = {
-		hidden_effect = {
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		color = "blue_negative"
+		conclusion_desc = je_standard_failure_conclusion_desc
+		trigger = {
+			custom_tooltip = {
+				text = ut_je_propaganda_source_abort_tt
+				has_variable = ut_propaganda_source_abandon_var
+			}
+
+		}
+		effect = {
+			remove_variable = ut_propaganda_source_abandon_var
+			remove_variable = ut_propaganda_source_var
 			remove_variable = ut_new_dawn_propaganda_source_defend_once_var
-			set_variable = {
-				name = ut_je_propaganda_source_target_var
-				value = scope:target
-			}
-			trigger_event = {
-				id = event_new_dawn.25
-				popup = yes
-			}
-		}
-		scope:target = {
-			custom_tooltip = ut_add_new_dawn_progress_neg_25
-			ut_add_new_dawn_core_progress = {
-				VALUE = -25
-			}
-			
-			set_variable = {
-				name = ut_je_propaganda_target_source_var
-				value = root
-			}
-			trigger_event = {
-				id = event_new_dawn.24
-				popup = yes
-			}
-		}
-		if = {
-			limit = {
-				has_modifier = ut_new_dawn_core_communist_mod
-			}
 			scope:target = {
-				add_modifier = {
-					name = ut_propaganda_communist_mod
-					days = 730 #2 years
-					#is_decaying = yes
-				}
+				set_variable = ut_propaganda_target_abandon_var
 			}
-		}
-		else_if = {
-			limit = {
-				has_modifier = ut_new_dawn_core_democratic_mod
-			}
-			scope:target = {
-				add_modifier = {
-					name = ut_propaganda_democratic_mod
-					days = 730 #2 years
-					#is_decaying = yes
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_modifier = ut_new_dawn_core_fascist_mod
-			}
-			scope:target = {
-				add_modifier = {
-					name = ut_propaganda_fascist_mod
-					days = 730 #2 years
-					#is_decaying = yes
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_modifier = ut_new_dawn_core_autocratic_mod
-			}
-			scope:target = {
-				add_modifier = {
-					name = ut_propaganda_autocratic_mod
-					days = 730 #2 years
-					#is_decaying = yes
-				}
-			}
-		}
-	}
 
-	fail = {
-		custom_tooltip = {
-			text = ut_je_propaganda_source_abort_tt
-			has_variable = ut_propaganda_source_abandon_var
-		}
-	}
-
-	on_fail = {
-		remove_variable = ut_propaganda_source_abandon_var
-		remove_variable = ut_propaganda_source_var
-		remove_variable = ut_new_dawn_propaganda_source_defend_once_var
-		scope:target = {
-			set_variable = ut_propaganda_target_abandon_var
 		}
 	}
 
@@ -164,71 +178,85 @@ ut_je_propaganda_target = {
 		}
 	}
 
-	complete = {
-		custom_tooltip = {
-			text = ut_je_propaganda_target_abort_tt
-			has_variable = ut_propaganda_target_abandon_var
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			custom_tooltip = {
+				text = ut_je_propaganda_target_abort_tt
+				has_variable = ut_propaganda_target_abandon_var
+			}
+
+		}
+		effect = {
+			remove_variable = ut_propaganda_target_abandon_var
+
 		}
 	}
 
-	on_complete = {
-		remove_variable = ut_propaganda_target_abandon_var
-	}
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		color = "blue_negative"
+		conclusion_desc = je_standard_failure_conclusion_desc
+		trigger = {
+			scope:journal_entry = { is_goal_complete = yes }
 
-	fail = {
-		scope:journal_entry = { is_goal_complete = yes }
-	}
+		}
+		effect = {
+			show_as_tooltip = {
+				custom_tooltip = ut_add_new_dawn_progress_neg_25
+				ut_add_new_dawn_core_progress = {
+					VALUE = -25
+				}
+				if = {
+					limit = {
+						scope:target = {
+							has_modifier = ut_new_dawn_core_communist_mod
+						}
+					}
+					add_modifier = {
+						name = ut_propaganda_communist_mod
+						days = short_modifier_time #2.5 years
+					}
+				}
+				else_if = {
+					limit = {
+						scope:target = {
+							has_modifier = ut_new_dawn_core_democratic_mod
+						}
+					}
+					add_modifier = {
+						name = ut_propaganda_democratic_mod
+						days = short_modifier_time #2.5 years
+					}
+				}
+				else_if = {
+					limit = {
+						scope:target = {
+							has_modifier = ut_new_dawn_core_fascist_mod
+						}
+					}
+					add_modifier = {
+						name = ut_propaganda_fascist_mod
+						days = short_modifier_time #2.5 years
+					}
+				}
+				else_if = {
+					limit = {
+						scope:target = {
+							has_modifier = ut_new_dawn_core_autocratic_mod
+						}
+					}
+					add_modifier = {
+						name = ut_propaganda_autocratic_mod
+						days = short_modifier_time #2.5 years
+					}
+				}
+			}
 
-	on_fail = {
-		show_as_tooltip = {
-			custom_tooltip = ut_add_new_dawn_progress_neg_25
-			ut_add_new_dawn_core_progress = {
-				VALUE = -25
-			}
-			if = {
-				limit = {
-					scope:target = {
-						has_modifier = ut_new_dawn_core_communist_mod
-					}
-				}
-				add_modifier = {
-					name = ut_propaganda_communist_mod
-					days = short_modifier_time #2.5 years
-				}
-			}
-			else_if = {
-				limit = {
-					scope:target = {
-						has_modifier = ut_new_dawn_core_democratic_mod
-					}
-				}
-				add_modifier = {
-					name = ut_propaganda_democratic_mod
-					days = short_modifier_time #2.5 years
-				}
-			}
-			else_if = {
-				limit = {
-					scope:target = {
-						has_modifier = ut_new_dawn_core_fascist_mod
-					}
-				}
-				add_modifier = {
-					name = ut_propaganda_fascist_mod
-					days = short_modifier_time #2.5 years
-				}
-			}
-			else_if = {
-				limit = {
-					scope:target = {
-						has_modifier = ut_new_dawn_core_autocratic_mod
-					}
-				}
-				add_modifier = {
-					name = ut_propaganda_autocratic_mod
-					days = short_modifier_time #2.5 years
-				}
-			}
 		}
 	}
 
@@ -286,100 +314,167 @@ ut_je_ally_influence_petition = {
 		}
 	}
 
-    complete = {
-		trigger_if = {
-			limit = {
-				has_modifier = ut_new_dawn_core_democratic_mod
-			}
-			scope:target = {
-				OR = {
-					has_law_or_variant = law_type:law_universal_suffrage
-					any_scope_treaty = {
-						any_scope_article = {
-							has_type = ut_democracy_article
-						}
-					}
-				}
-				trigger_if = {
-					limit = {
-						country_rank >= rank_value:great_power
-					}
+    outcome = {
+        header = je_standard_completion_header
+        effect_header = je_standard_on_completion_header
+        color = "gold_positive"
+        conclusion_desc = je_standard_completion_conclusion_desc
+        event_outcome_desc = {
+            first_valid = {
+                triggered_desc = {
+                    desc = ut_je_ally_influence_petition_communist
+                    trigger = {
+                        has_modifier = ut_new_dawn_core_communist_mod
+                    }
+                }
+                triggered_desc = {
+                    desc = ut_je_ally_influence_petition_democratic
+                    trigger = {
+                        has_modifier = ut_new_dawn_core_democratic_mod
+                    }
+                }
+                triggered_desc = {
+                    desc = utopia.error
+                }
+            }
+        }
+        trigger = {
+			trigger_if = {
+				limit = {
 					has_modifier = ut_new_dawn_core_democratic_mod
 				}
-			}
-		}
-		trigger_if = {
-			limit = {
-				has_modifier = ut_new_dawn_core_communist_mod
-			}
-			scope:target = {
-				OR = {
-					has_law_or_variant = law_type:law_council_republic
-					any_scope_treaty = {
-						any_scope_article = {
-							has_type = ut_communism_article
+				scope:target = {
+					OR = {
+						has_law_or_variant = law_type:law_universal_suffrage
+						any_scope_treaty = {
+							any_scope_article = {
+								has_type = ut_democracy_article
+							}
 						}
 					}
-				}
-				trigger_if = {
-					limit = {
-						country_rank >= rank_value:great_power
+					trigger_if = {
+						limit = {
+							country_rank >= rank_value:great_power
+						}
+						has_modifier = ut_new_dawn_core_democratic_mod
 					}
+				}
+			}
+			trigger_if = {
+				limit = {
 					has_modifier = ut_new_dawn_core_communist_mod
 				}
-			}
-		}
-    }
-
-    on_complete = {
-		custom_tooltip = ut_add_new_dawn_progress_5
-		ut_add_new_dawn_core_progress = { 
-			VALUE = 5
-		}
-		add_modifier = {
-			name = modifier_successfully_met_petition_legitimacy
-			days = long_modifier_time
-			multiplier = {
-				value = 0.5
-				if = {
-					limit = {
-						scope:journal_entry ?= {
-							has_variable = asked_for_extension_var
+				scope:target = {
+					OR = {
+						has_law_or_variant = law_type:law_council_republic
+						any_scope_treaty = {
+							any_scope_article = {
+								has_type = ut_communism_article
+							}
 						}
 					}
-					divide = 2
+					trigger_if = {
+						limit = {
+							country_rank >= rank_value:great_power
+						}
+						has_modifier = ut_new_dawn_core_communist_mod
+					}
 				}
 			}
-			is_decaying = yes
-		}
+
+        }
+        effect = {
+			custom_tooltip = ut_add_new_dawn_progress_5
+			ut_add_new_dawn_core_progress = {
+				VALUE = 5
+			}
+			add_modifier = {
+				name = modifier_successfully_met_petition_legitimacy
+				days = long_modifier_time
+				multiplier = {
+					value = 0.5
+					if = {
+						limit = {
+							scope:journal_entry ?= {
+								has_variable = asked_for_extension_var
+							}
+						}
+						divide = 2
+					}
+				}
+				is_decaying = yes
+			}
+
+        }
     }
 
-    invalid = {
-		trigger_if = {
-			limit = {
-				has_modifier = ut_new_dawn_core_democratic_mod
+    outcome = {
+        flags = { hidden invalid_outcome }
+        conclusion_desc = je_standard_failure_conclusion_desc
+        trigger = {
+			trigger_if = {
+				limit = {
+					has_modifier = ut_new_dawn_core_democratic_mod
+				}
+				NOT = { has_modifier = ut_new_dawn_core_democratic_mod }
 			}
-			NOT = { has_modifier = ut_new_dawn_core_democratic_mod }
-		}
-		trigger_else_if = {
-			limit = {
-				has_modifier = ut_new_dawn_core_communist_mod
+			trigger_else_if = {
+				limit = {
+					has_modifier = ut_new_dawn_core_communist_mod
+				}
+				NOT = { has_modifier = ut_new_dawn_core_communist_mod }
 			}
-			NOT = { has_modifier = ut_new_dawn_core_communist_mod }
-		}
-		trigger_else = {
-			always = yes
-		}
+			trigger_else = {
+				always = yes
+			}
+
+        }
+        effect = {
+
+        }
     }
 
-    fail = {
-		exists = scope:convert_target_scope
-		custom_tooltip = {
-			text = has_been_abandoned_tt
-			scope:journal_entry ?= {
-				has_variable = has_been_abandoned
+    outcome = {
+        header = je_standard_failure_header
+        effect_header = je_standard_on_failure_header
+        color = "blue_negative"
+        conclusion_desc = je_standard_failure_conclusion_desc
+        event_outcome_desc = {
+            first_valid = {
+                triggered_desc = {
+                    desc = ut_je_ally_influence_petition_communist
+                    trigger = {
+                        has_modifier = ut_new_dawn_core_communist_mod
+                    }
+                }
+                triggered_desc = {
+                    desc = ut_je_ally_influence_petition_democratic
+                    trigger = {
+                        has_modifier = ut_new_dawn_core_democratic_mod
+                    }
+                }
+                triggered_desc = {
+                    desc = utopia.error
+                }
+            }
+        }
+        trigger = {
+			exists = scope:convert_target_scope
+			custom_tooltip = {
+				text = has_been_abandoned_tt
+				scope:journal_entry ?= {
+					has_variable = has_been_abandoned
+				}
 			}
-		}
+
+        }
+        effect = {
+			custom_tooltip = ut_add_new_dawn_progress_neg_5
+			ut_add_new_dawn_core_progress = {
+				VALUE = -5
+			}
+
+        }
     }
 
     on_timeout = {
@@ -389,15 +484,9 @@ ut_je_ally_influence_petition = {
 		}
     }
 
-    on_fail = {
-		custom_tooltip = ut_add_new_dawn_progress_neg_5
-		ut_add_new_dawn_core_progress = { 
-			VALUE = -5
-		}
-    }
 
-    on_invalid = {
-    }
+
+
 
     timeout = {
         value = 1825 # 5 years
@@ -413,6 +502,6 @@ ut_je_ally_influence_petition = {
 
     weight = 1000
 
-    	
+
 	should_be_pinned_by_default_uninvolved_or_context = yes
 }

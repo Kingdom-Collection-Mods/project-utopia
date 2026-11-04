@@ -27,33 +27,40 @@
 
 	scripted_progress_bar = je_ut_software_points_bar_era_6
 
-	complete = {
-		has_technology_researched = computers
-		has_modifier = je_ut_software_era_6_3_high_level_language_mod
-	}
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			has_technology_researched = computers
+			has_modifier = je_ut_software_era_6_3_high_level_language_mod
 
-	on_complete = {
-		set_variable = je_ut_software_era_6_done
-		add_journal_entry = {
-			type = je_ut_software_era_7
 		}
-		remove_variable = je_ut_software_points_bar_progress_buildings_era_6
+		effect = {
+			set_variable = je_ut_software_era_6_done
+			add_journal_entry = {
+				type = je_ut_software_era_7
+			}
+			remove_variable = je_ut_software_points_bar_progress_buildings_era_6
 
-		if = {
-			limit = {
-				is_ai = yes
+			if = {
+				limit = {
+					is_ai = yes
+					capital = {
+						NOT = { has_building = building_software_company }
+					}
+				}
 				capital = {
-					NOT = { has_building = building_software_company }
+					create_building = {
+						building = building_software_company
+						level = 1
+						reserves=1
+						subsidized = yes
+					}
 				}
 			}
-			capital = {
-				create_building = {
-					building = building_software_company
-					level = 1
-					reserves=1
-					subsidized = yes
-				}
-			}
+
 		}
 	}
 
@@ -158,33 +165,40 @@ je_ut_software_era_7 = {
 
 	scripted_progress_bar = je_ut_software_points_bar_era_7
 
-	complete = {
-		has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
-		has_technology_researched = internet
-	}
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
+			has_technology_researched = internet
 
-	on_complete = {
-		add_journal_entry = {
-			type = je_ut_software_era_8
 		}
-		
-		remove_variable = je_ut_software_points_bar_progress_buildings_era_7
+		effect = {
+			add_journal_entry = {
+				type = je_ut_software_era_8
+			}
 
-		if = {
-			limit = {
-				is_ai = yes
+			remove_variable = je_ut_software_points_bar_progress_buildings_era_7
+
+			if = {
+				limit = {
+					is_ai = yes
+					capital = {
+						NOT = { has_building = building_software_company }
+					}
+				}
 				capital = {
-					NOT = { has_building = building_software_company }
+					create_building = {
+						building = building_software_company
+						level = 1
+						reserves=1
+						subsidized = yes
+					}
 				}
 			}
-			capital = {
-				create_building = {
-					building = building_software_company
-					level = 1
-					reserves=1
-					subsidized = yes
-				}
-			}
+
 		}
 	}
 
@@ -289,10 +303,18 @@ je_ut_software_era_8 = {
 
 	scripted_progress_bar = je_ut_software_points_bar_era_8
 
-	complete = {
-		always = no
-	}
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			always = no
 
+		}
+		effect = {
+		}
+	}
 
 	status_desc = {
 	}

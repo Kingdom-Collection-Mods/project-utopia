@@ -113,48 +113,55 @@
 	scripted_progress_bar = ut_new_dawn_democrat_bar #ut_new_dawn_democrat_bar
 	scripted_progress_bar = ut_new_dawn_communist_bar
 
-	complete = {
-		custom_tooltip = {
-			text = je_ut_new_dawn_condition_tt
-			has_variable = je_ut_new_dawn_done #Can only ever complete upon finishing the Cement the Rightful ideology journal entry.
-		}
-	}
-
-	on_complete = {
-		custom_tooltip = {
-			text = je_ut_new_dawn_effect_tt
-			ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
-		}
-		if = {
-			limit = {
-				is_player = yes
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			custom_tooltip = {
+				text = je_ut_new_dawn_condition_tt
+				has_variable = je_ut_new_dawn_done #Can only ever complete upon finishing the Cement the Rightful ideology journal entry.
 			}
-			custom_tooltip = "ut_new_dawn_list_entry_start"
-            every_in_global_list = {
-                variable = ut_new_dawn_autocratic_list
 
-                custom_tooltip = "ut_new_dawn_autocratic_list_entry" # for each print a line
-            }
-            every_in_global_list = {
-                variable = ut_new_dawn_democratic_list
+		}
+		effect = {
+			custom_tooltip = {
+				text = je_ut_new_dawn_effect_tt
+				ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+			}
+			if = {
+				limit = {
+					is_player = yes
+				}
+				custom_tooltip = "ut_new_dawn_list_entry_start"
+	            every_in_global_list = {
+	                variable = ut_new_dawn_autocratic_list
 
-                custom_tooltip = "ut_new_dawn_democratic_list_entry" # for each print a line
-            }
-            every_in_global_list = {
-                variable = ut_new_dawn_fascist_list
+	                custom_tooltip = "ut_new_dawn_autocratic_list_entry" # for each print a line
+	            }
+	            every_in_global_list = {
+	                variable = ut_new_dawn_democratic_list
 
-                custom_tooltip = "ut_new_dawn_fascist_list_entry" # for each print a line
-            }
-            every_in_global_list = {
-                variable = ut_new_dawn_communist_list
+	                custom_tooltip = "ut_new_dawn_democratic_list_entry" # for each print a line
+	            }
+	            every_in_global_list = {
+	                variable = ut_new_dawn_fascist_list
 
-                custom_tooltip = "ut_new_dawn_communist_list_entry" # for each print a line
-            }
-            every_in_global_list = {
-                variable = ut_new_dawn_no_core_list
-				
-				custom_tooltip = "ut_new_dawn_no_core_list_entry" # for each print a line
-            }
+	                custom_tooltip = "ut_new_dawn_fascist_list_entry" # for each print a line
+	            }
+	            every_in_global_list = {
+	                variable = ut_new_dawn_communist_list
+
+	                custom_tooltip = "ut_new_dawn_communist_list_entry" # for each print a line
+	            }
+	            every_in_global_list = {
+	                variable = ut_new_dawn_no_core_list
+
+					custom_tooltip = "ut_new_dawn_no_core_list_entry" # for each print a line
+	            }
+			}
+
 		}
 	}
 
@@ -456,16 +463,34 @@ je_ut_new_dawn_core_abilities = {
 	scripted_button = ut_new_dawn_core_internal_bad_times_focus_add
 	scripted_button = ut_new_dawn_core_internal_bad_times_focus_remove
 
-	complete = {
-		always = no
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			always = no
+
+		}
+		effect = {
+		}
 	}
 
-	fail = {
-		NOT = {
-			has_journal_entry = je_ut_new_dawn_autocratic
-			has_journal_entry = je_ut_new_dawn_democratic
-			has_journal_entry = je_ut_new_dawn_fascist
-			has_journal_entry = je_ut_new_dawn_communist
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		color = "blue_negative"
+		conclusion_desc = je_standard_failure_conclusion_desc
+		trigger = {
+			NOT = {
+				has_journal_entry = je_ut_new_dawn_autocratic
+				has_journal_entry = je_ut_new_dawn_democratic
+				has_journal_entry = je_ut_new_dawn_fascist
+				has_journal_entry = je_ut_new_dawn_communist
+			}
+
+		}
+		effect = {
 		}
 	}
 
@@ -557,39 +582,46 @@ je_ut_new_dawn_democratic = {
 	scripted_progress_bar = je_ut_new_dawn_democratic_points_bar
 	scripted_progress_bar = je_ut_new_dawn_pressure_points_bar
 
-	complete = {
-		custom_tooltip = {
-			text = je_ut_new_dawn_p2_condition_tt
-			always = no
-		}
-		custom_tooltip = {
-			text = je_ut_new_dawn_democratic_complete_condition_tt
-			has_variable = je_ut_new_dawn_democratic_spirit_done
-			has_variable = je_ut_new_dawn_democratic_cultural_values_done
-			has_variable = je_ut_new_dawn_democratic_power_bloc_done
-			has_variable = je_ut_new_dawn_democratic_fair_elections_done
-		}
-		average_sol > 50
-		
-		trigger_if = {
-			limit = {
-				is_player = yes
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			custom_tooltip = {
+				text = je_ut_new_dawn_p2_condition_tt
+				always = no
 			}
-			NOT = {
-				any_country = {
-					average_sol < 25
-					NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+			custom_tooltip = {
+				text = je_ut_new_dawn_democratic_complete_condition_tt
+				has_variable = je_ut_new_dawn_democratic_spirit_done
+				has_variable = je_ut_new_dawn_democratic_cultural_values_done
+				has_variable = je_ut_new_dawn_democratic_power_bloc_done
+				has_variable = je_ut_new_dawn_democratic_fair_elections_done
+			}
+			average_sol > 50
+
+			trigger_if = {
+				limit = {
+					is_player = yes
+				}
+				NOT = {
+					any_country = {
+						average_sol < 25
+						NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+					}
 				}
 			}
-		}
-	}
 
-	on_complete = {
-		custom_tooltip = {
-			text = je_ut_new_dawn_effect_tt
-			ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 		}
-		set_variable = je_ut_new_dawn_done
+		effect = {
+			custom_tooltip = {
+				text = je_ut_new_dawn_effect_tt
+				ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+			}
+			set_variable = je_ut_new_dawn_done
+
+		}
 	}
 
 	status_desc = {
@@ -689,64 +721,70 @@ je_ut_new_dawn_democratic = {
 		}
 	}
 
-	fail = {
-		custom_tooltip = {
-			text = je_ut_new_dawn_critical_lower_bound_fail_tt
-			je:je_ut_new_dawn_democratic = { 
-				"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" <= new_dawn_ideology_critical_lower_bound
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		color = "blue_negative"
+		conclusion_desc = je_standard_failure_conclusion_desc
+		trigger = {
+			custom_tooltip = {
+				text = je_ut_new_dawn_critical_lower_bound_fail_tt
+				je:je_ut_new_dawn_democratic = {
+					"scripted_bar_progress(je_ut_new_dawn_democratic_points_bar)" <= new_dawn_ideology_critical_lower_bound
+				}
 			}
-		}
-		custom_tooltip = {
-			text = je_ut_new_dawn_critical_lower_bound_fail_pressure_tt
-			je:je_ut_new_dawn_democratic = { 
-				"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" > 50
+			custom_tooltip = {
+				text = je_ut_new_dawn_critical_lower_bound_fail_pressure_tt
+				je:je_ut_new_dawn_democratic = {
+					"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" > 50
+				}
 			}
-		}
-	}
 
-	# effect which is executed when 'fail' trigger becomes true
-	on_fail = {
-		remove_modifier = je_ut_new_dawn_democrat_focus
-		remove_modifier = ut_new_dawn_core_democratic_mod
-		remove_variable = ut_new_dawn_bar_freeze
-		
-		hidden_effect = {
-			remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
-			remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
-			remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
-			remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
+		}
+		effect = {
+			remove_modifier = je_ut_new_dawn_democrat_focus
+			remove_modifier = ut_new_dawn_core_democratic_mod
+			remove_variable = ut_new_dawn_bar_freeze
 
-			remove_variable = je_ut_new_dawn_democratic_spirit_done
-			remove_variable = je_ut_new_dawn_democratic_cultural_values_done
-			remove_variable = je_ut_new_dawn_democratic_power_bloc_done
-			remove_variable = je_ut_new_dawn_democratic_fair_elections_done
-
-			remove_modifier = je_ut_new_dawn_democratic_power_bloc_mod
-			remove_modifier = je_ut_new_dawn_democratic_fair_elections_mod
-		}
-	
-		je:je_ut_new_dawn = {
-			add_progress = {
-				value = -120
-				name = ut_new_dawn_democrat_bar
-			}
-		}
-		remove_list_global_variable = {
-			name = ut_new_dawn_democratic_list
-			target = root
-		}
-		add_to_global_variable_list = {
-			name = ut_new_dawn_no_core_list
-			target = root
-		}
-		every_interest_group = {
-			limit = {
-				has_ideology = ideology:ideology_patriotic_democratic
-			}
-			remove_ideology = ideology_patriotic_democratic
 			hidden_effect = {
-				add_ideology = ideology_patriotic
+				remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
+				remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
+				remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
+				remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
+
+				remove_variable = je_ut_new_dawn_democratic_spirit_done
+				remove_variable = je_ut_new_dawn_democratic_cultural_values_done
+				remove_variable = je_ut_new_dawn_democratic_power_bloc_done
+				remove_variable = je_ut_new_dawn_democratic_fair_elections_done
+
+				remove_modifier = je_ut_new_dawn_democratic_power_bloc_mod
+				remove_modifier = je_ut_new_dawn_democratic_fair_elections_mod
 			}
+
+			je:je_ut_new_dawn = {
+				add_progress = {
+					value = -120
+					name = ut_new_dawn_democrat_bar
+				}
+			}
+			remove_list_global_variable = {
+				name = ut_new_dawn_democratic_list
+				target = root
+			}
+			add_to_global_variable_list = {
+				name = ut_new_dawn_no_core_list
+				target = root
+			}
+			every_interest_group = {
+				limit = {
+					has_ideology = ideology:ideology_patriotic_democratic
+				}
+				remove_ideology = ideology_patriotic_democratic
+				hidden_effect = {
+					add_ideology = ideology_patriotic
+				}
+			}
+
 		}
 	}
 
@@ -811,10 +849,19 @@ je_ut_new_dawn_autocratic = {
 	scripted_progress_bar = je_ut_new_dawn_autocratic_points_bar
 	scripted_progress_bar = je_ut_new_dawn_pressure_points_bar
 
-	complete = {
-		custom_tooltip = {
-			text = je_ut_new_dawn_autocratic_complete_condition_tt
-			always = no
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			custom_tooltip = {
+				text = je_ut_new_dawn_autocratic_complete_condition_tt
+				always = no
+			}
+
+		}
+		effect = {
 		}
 	}
 
@@ -902,46 +949,52 @@ je_ut_new_dawn_autocratic = {
 		}
 	}
 
-	fail = {
-		custom_tooltip = {
-			text = je_ut_new_dawn_critical_lower_bound_fail_tt
-			je:je_ut_new_dawn_autocratic = { 
-				"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" <= new_dawn_ideology_critical_lower_bound
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		color = "blue_negative"
+		conclusion_desc = je_standard_failure_conclusion_desc
+		trigger = {
+			custom_tooltip = {
+				text = je_ut_new_dawn_critical_lower_bound_fail_tt
+				je:je_ut_new_dawn_autocratic = {
+					"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" <= new_dawn_ideology_critical_lower_bound
+				}
 			}
+
 		}
-	}
+		effect = {
+			remove_modifier = je_ut_new_dawn_autocrat_focus
+			remove_modifier = ut_new_dawn_core_autocratic_mod
+			remove_variable = ut_new_dawn_bar_freeze
 
-	# effect which is executed when 'fail' trigger becomes true
-	on_fail = {
-		remove_modifier = je_ut_new_dawn_autocrat_focus
-		remove_modifier = ut_new_dawn_core_autocratic_mod
-		remove_variable = ut_new_dawn_bar_freeze
+			hidden_effect = {
+				remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
+				remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
+				remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
+				remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
 
-		hidden_effect = {
-			remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
-			remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
-			remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
-			remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
-
-			remove_modifier = je_ut_new_dawn_emergency_powers_mod
-			remove_modifier = je_ut_new_dawn_strengthen_power_mod
-			remove_modifier = je_ut_new_dawn_border_dispute_mod
-			remove_modifier = je_ut_new_dawn_suppress_dissidents_mod
-		}
-
-		je:je_ut_new_dawn = {
-			add_progress = {
-				value = -120
-				name = ut_new_dawn_autocrat_bar
+				remove_modifier = je_ut_new_dawn_emergency_powers_mod
+				remove_modifier = je_ut_new_dawn_strengthen_power_mod
+				remove_modifier = je_ut_new_dawn_border_dispute_mod
+				remove_modifier = je_ut_new_dawn_suppress_dissidents_mod
 			}
-		}
-		remove_list_global_variable = {
-			name = ut_new_dawn_autocratic_list
-			target = root
-		}
-		add_to_global_variable_list = {
-			name = ut_new_dawn_no_core_list
-			target = root
+
+			je:je_ut_new_dawn = {
+				add_progress = {
+					value = -120
+					name = ut_new_dawn_autocrat_bar
+				}
+			}
+			remove_list_global_variable = {
+				name = ut_new_dawn_autocratic_list
+				target = root
+			}
+			add_to_global_variable_list = {
+				name = ut_new_dawn_no_core_list
+				target = root
+			}
+
 		}
 	}
 
@@ -1034,57 +1087,64 @@ je_ut_new_dawn_fascist = {
 	scripted_progress_bar = je_ut_new_dawn_fascist_points_bar
 	scripted_progress_bar = je_ut_new_dawn_pressure_points_bar
 
-	complete = {
-		custom_tooltip = {
-			text = je_ut_new_dawn_p2_condition_tt
-			always = no
-		}
-		custom_tooltip = {
-			text = je_ut_new_dawn_fascist_complete_condition_tt
-			always = no
-			# has_variable = je_ut_new_dawn_outlaw_communists
-			# has_variable = je_ut_new_dawn_form_paramilitary_groups
-			# has_variable = je_ut_new_dawn_conformity
-			# has_variable = je_ut_new_dawn_volksgemeinschaft
-			# has_variable = je_ut_new_dawn_unite_heritage
-			# has_variable = je_ut_new_dawn_expansionism
-		}
-		
-		custom_tooltip = {
-			text = new_dawn_ideology_upper_bound_tt
-			je:je_ut_new_dawn_fascist = { 
-				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_upper_bound
-			}
-		}
-
-		
-		average_sol_for_culture = {
-			target = root.ruler.culture
-			value >= 100
-		}
-		
-		trigger_if = {
-			limit = {
-				is_player = yes
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			custom_tooltip = {
+				text = je_ut_new_dawn_p2_condition_tt
+				always = no
 			}
 			custom_tooltip = {
-				text = je_ut_new_dawn_fascist_final_tt
-				
-				NOT = {
-					any_country = {
-						NOT = { root = this }
+				text = je_ut_new_dawn_fascist_complete_condition_tt
+				always = no
+				# has_variable = je_ut_new_dawn_outlaw_communists
+				# has_variable = je_ut_new_dawn_form_paramilitary_groups
+				# has_variable = je_ut_new_dawn_conformity
+				# has_variable = je_ut_new_dawn_volksgemeinschaft
+				# has_variable = je_ut_new_dawn_unite_heritage
+				# has_variable = je_ut_new_dawn_expansionism
+			}
+
+			custom_tooltip = {
+				text = new_dawn_ideology_upper_bound_tt
+				je:je_ut_new_dawn_fascist = {
+					"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_upper_bound
+				}
+			}
+
+
+			average_sol_for_culture = {
+				target = root.ruler.culture
+				value >= 100
+			}
+
+			trigger_if = {
+				limit = {
+					is_player = yes
+				}
+				custom_tooltip = {
+					text = je_ut_new_dawn_fascist_final_tt
+
+					NOT = {
+						any_country = {
+							NOT = { root = this }
+						}
 					}
 				}
 			}
-		}
-	}
 
-	on_complete = {
-		custom_tooltip = {
-			text = je_ut_new_dawn_effect_tt
-			ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 		}
-		set_variable = je_ut_new_dawn_done
+		effect = {
+			custom_tooltip = {
+				text = je_ut_new_dawn_effect_tt
+				ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+			}
+			set_variable = je_ut_new_dawn_done
+
+		}
 	}
 
 	status_desc = {
@@ -1162,51 +1222,57 @@ je_ut_new_dawn_fascist = {
 		}
 	}
 
-	fail = {
-		custom_tooltip = {
-			text = je_ut_new_dawn_critical_lower_bound_fail_tt
-			je:je_ut_new_dawn_fascist  = { 
-				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" <= new_dawn_ideology_critical_lower_bound
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		color = "blue_negative"
+		conclusion_desc = je_standard_failure_conclusion_desc
+		trigger = {
+			custom_tooltip = {
+				text = je_ut_new_dawn_critical_lower_bound_fail_tt
+				je:je_ut_new_dawn_fascist  = {
+					"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" <= new_dawn_ideology_critical_lower_bound
+				}
 			}
-		}
-	}
 
-	# effect which is executed when 'fail' trigger becomes true
-	on_fail = {
-		remove_modifier = je_ut_new_dawn_fascist_focus
-		remove_modifier = ut_new_dawn_core_fascist_mod
-		remove_variable = ut_new_dawn_bar_freeze
+		}
+		effect = {
+			remove_modifier = je_ut_new_dawn_fascist_focus
+			remove_modifier = ut_new_dawn_core_fascist_mod
+			remove_variable = ut_new_dawn_bar_freeze
 
-		hidden_effect = {
-			remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
-			remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
-			remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
-			remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
-		}
-
-		je:je_ut_new_dawn = {
-			add_progress = {
-				value = -120
-				name = ut_new_dawn_fascist_bar
-			}
-		}
-		remove_list_global_variable = {
-			name = ut_new_dawn_fascist_list
-			target = root
-		}
-		add_to_global_variable_list = {
-			name = ut_new_dawn_no_core_list
-			target = root
-		}
-
-		every_interest_group = {
-			limit = {
-				has_ideology = ideology:ideology_republican_communist
-			}
-			remove_ideology = ideology_republican_communist			
 			hidden_effect = {
-				add_ideology = ideology_republican
+				remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
+				remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
+				remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
+				remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
 			}
+
+			je:je_ut_new_dawn = {
+				add_progress = {
+					value = -120
+					name = ut_new_dawn_fascist_bar
+				}
+			}
+			remove_list_global_variable = {
+				name = ut_new_dawn_fascist_list
+				target = root
+			}
+			add_to_global_variable_list = {
+				name = ut_new_dawn_no_core_list
+				target = root
+			}
+
+			every_interest_group = {
+				limit = {
+					has_ideology = ideology:ideology_republican_communist
+				}
+				remove_ideology = ideology_republican_communist
+				hidden_effect = {
+					add_ideology = ideology_republican
+				}
+			}
+
 		}
 	}
 
@@ -1275,31 +1341,38 @@ je_ut_new_dawn_communist = {
 	scripted_progress_bar = je_ut_new_dawn_communist_points_bar
 	scripted_progress_bar = je_ut_new_dawn_pressure_points_bar
 
-	complete = {
-		custom_tooltip = {
-			text = je_ut_new_dawn_p2_condition_tt
-			always = no
-		}
-		average_sol > 50
-		trigger_if = {
-			limit = {
-				is_player = yes
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			custom_tooltip = {
+				text = je_ut_new_dawn_p2_condition_tt
+				always = no
 			}
-			NOT = {
-				any_country = {
-					NOT = { has_law_or_variant = law_type:law_cooperative_ownership }
-					average_sol < 25
+			average_sol > 50
+			trigger_if = {
+				limit = {
+					is_player = yes
+				}
+				NOT = {
+					any_country = {
+						NOT = { has_law_or_variant = law_type:law_cooperative_ownership }
+						average_sol < 25
+					}
 				}
 			}
-		}
-	}
 
-	on_complete = {
-		custom_tooltip = {
-			text = je_ut_new_dawn_effect_tt
-			ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 		}
-		set_variable = je_ut_new_dawn_done
+		effect = {
+			custom_tooltip = {
+				text = je_ut_new_dawn_effect_tt
+				ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+			}
+			set_variable = je_ut_new_dawn_done
+
+		}
 	}
 
 	status_desc = {
@@ -1394,93 +1467,99 @@ je_ut_new_dawn_communist = {
 		}
 	}
 
-	fail = {
-		custom_tooltip = {
-			text = je_ut_new_dawn_critical_lower_bound_fail_tt
-			je:je_ut_new_dawn_communist = { 
-				"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" <= new_dawn_ideology_critical_lower_bound
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		color = "blue_negative"
+		conclusion_desc = je_standard_failure_conclusion_desc
+		trigger = {
+			custom_tooltip = {
+				text = je_ut_new_dawn_critical_lower_bound_fail_tt
+				je:je_ut_new_dawn_communist = {
+					"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" <= new_dawn_ideology_critical_lower_bound
+				}
 			}
+
 		}
-	}
+		effect = {
+			remove_modifier = je_ut_new_dawn_communist_focus
+			remove_modifier = ut_new_dawn_core_communist_mod
+			remove_variable = ut_new_dawn_bar_freeze
 
-	# effect which is executed when 'fail' trigger becomes true
-	on_fail = {
-		remove_modifier = je_ut_new_dawn_communist_focus
-		remove_modifier = ut_new_dawn_core_communist_mod
-		remove_variable = ut_new_dawn_bar_freeze
-
-		hidden_effect = {
-			remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
-			remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
-			remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
-			remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
-
-			remove_variable = je_ut_communist_one_communist_party_done
-			remove_variable = je_ut_communist_a_communist_party_done
-			remove_variable = je_ut_communist_one_block_done
-			remove_variable = je_ut_communist_one_people_done
-			remove_variable = je_ut_communist_socialist_expansion_done
-			remove_variable = je_ut_communist_world_revolution_done
-
-			remove_modifier = je_ut_new_dawn_communist_one_block_mod
-			remove_modifier = je_ut_new_dawn_communist_one_people_mod
-			remove_modifier = je_ut_communist_socialist_expansion_mod
-		}
-
-		je:je_ut_new_dawn = {
-			add_progress = {
-				value = -120
-				name = ut_new_dawn_communist_bar
-			}
-		}
-		
-		ig:ig_petty_bourgeoisie = {
-			remove_ideology = ideology_urbanist_power_base
-		}
-		
-		every_interest_group = {
-			limit = {
-				has_ideology = ideology:ideology_republican_communist
-			}
-			remove_ideology = ideology_republican_communist
 			hidden_effect = {
-				add_ideology = ideology_republican	
+				remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
+				remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
+				remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod
+				remove_modifier = ut_new_dawn_core_internal_good_times_focus_mod
+
+				remove_variable = je_ut_communist_one_communist_party_done
+				remove_variable = je_ut_communist_a_communist_party_done
+				remove_variable = je_ut_communist_one_block_done
+				remove_variable = je_ut_communist_one_people_done
+				remove_variable = je_ut_communist_socialist_expansion_done
+				remove_variable = je_ut_communist_world_revolution_done
+
+				remove_modifier = je_ut_new_dawn_communist_one_block_mod
+				remove_modifier = je_ut_new_dawn_communist_one_people_mod
+				remove_modifier = je_ut_communist_socialist_expansion_mod
 			}
-		}
-		every_interest_group = {
-			limit = {
-				has_ideology = ideology:ut_ideology_laissez_faire_authoritarian
+
+			je:je_ut_new_dawn = {
+				add_progress = {
+					value = -120
+					name = ut_new_dawn_communist_bar
+				}
 			}
-			remove_ideology = ut_ideology_laissez_faire_authoritarian
-			hidden_effect = {
-				add_ideology = ut_ideology_laissez_faire
+
+			ig:ig_petty_bourgeoisie = {
+				remove_ideology = ideology_urbanist_power_base
 			}
-		}
-		every_interest_group = {
-			limit = {
-				has_ideology = ideology:ideology_patriotic_communist_national
+
+			every_interest_group = {
+				limit = {
+					has_ideology = ideology:ideology_republican_communist
+				}
+				remove_ideology = ideology_republican_communist
+				hidden_effect = {
+					add_ideology = ideology_republican
+				}
 			}
-			remove_ideology = ideology_patriotic_communist_national
-			hidden_effect = {
-				add_ideology = ideology_patriotic
+			every_interest_group = {
+				limit = {
+					has_ideology = ideology:ut_ideology_laissez_faire_authoritarian
+				}
+				remove_ideology = ut_ideology_laissez_faire_authoritarian
+				hidden_effect = {
+					add_ideology = ut_ideology_laissez_faire
+				}
 			}
-		}
-		every_interest_group = {
-			limit = {
-				has_ideology = ideology:ideology_patriotic_communist_international
+			every_interest_group = {
+				limit = {
+					has_ideology = ideology:ideology_patriotic_communist_national
+				}
+				remove_ideology = ideology_patriotic_communist_national
+				hidden_effect = {
+					add_ideology = ideology_patriotic
+				}
 			}
-			remove_ideology = ideology_patriotic_communist_international
-			hidden_effect = {
-				add_ideology = ideology_patriotic
+			every_interest_group = {
+				limit = {
+					has_ideology = ideology:ideology_patriotic_communist_international
+				}
+				remove_ideology = ideology_patriotic_communist_international
+				hidden_effect = {
+					add_ideology = ideology_patriotic
+				}
 			}
-		}
-		remove_list_global_variable = {
-			name = ut_new_dawn_communist_list
-			target = root
-		}
-		add_to_global_variable_list = {
-			name = ut_new_dawn_no_core_list
-			target = root
+			remove_list_global_variable = {
+				name = ut_new_dawn_communist_list
+				target = root
+			}
+			add_to_global_variable_list = {
+				name = ut_new_dawn_no_core_list
+				target = root
+			}
+
 		}
 	}
 
