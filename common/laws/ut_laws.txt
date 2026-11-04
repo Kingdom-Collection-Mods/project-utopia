@@ -1786,7 +1786,7 @@ ut_law_international_navy = {
 	modifier = {
 		country_ship_group_supply_ships_construction_efficiency_add = 0.3
 		building_naval_administration_hiring_rate_mult = 0.1
-		ship_interest_gain_mult = 0.1
+		ship_power_projection_mult = 0.1
 	}
 
 	on_enact = {
