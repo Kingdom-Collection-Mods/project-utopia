@@ -587,7 +587,6 @@ ideology_corporatist_movement = {
 ideology_liberal_movement = {
 	icon = "gfx/interface/icons/ideology_icons/liberal.dds"
 	lawgroup_internal_security = {
-		law_mass_surveillance = strongly_disapprove
 		law_national_guard = approve
 		law_guaranteed_liberties = approve
 		law_no_home_affairs = disapprove
@@ -673,7 +672,6 @@ ideology_radical_movement = {
 	}
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = strongly_disapprove
 		law_national_guard = approve
 		law_guaranteed_liberties = approve
 		law_no_home_affairs = neutral
@@ -1081,7 +1079,6 @@ ideology_liberal_republican_movement = {
 	}
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = strongly_disapprove
 		law_national_guard = approve
 		law_guaranteed_liberties = approve
 		law_no_home_affairs = disapprove
@@ -1454,7 +1451,6 @@ ideology_national_liberal_movement = {
 	icon = "gfx/interface/icons/ideology_icons/sovereignist.dds"
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = strongly_disapprove
 		law_national_guard = approve
 		law_guaranteed_liberties = approve
 		law_no_home_affairs = disapprove
@@ -2014,7 +2010,6 @@ ideology_tokugawa_loyalist_movement = {
 	}
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = approve
 		law_national_guard = disapprove
 		law_guaranteed_liberties = strongly_disapprove
 		law_no_home_affairs = neutral
@@ -2070,7 +2065,6 @@ ideology_tokugawa_loyalist_movement_2 = {
 	}
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = approve
 		law_national_guard = neutral
 		law_guaranteed_liberties = strongly_disapprove
 		law_no_home_affairs = disapprove

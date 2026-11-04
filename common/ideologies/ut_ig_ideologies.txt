@@ -150,7 +150,6 @@ ideology_liberal_democratic = {
 	}
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = disapprove
 		law_guaranteed_liberties = strongly_approve
 		law_no_home_affairs = neutral
 		law_national_guard = disapprove
@@ -566,7 +565,6 @@ ideology_patriotic_fascist = {
 	}	
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = strongly_approve
 		law_secret_police = strongly_approve
 		law_national_guard = approve
 		law_no_home_affairs = disapprove
@@ -600,7 +598,6 @@ ideology_patriotic_communist_national = {
 	}
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = approve
 		law_secret_police = approve
 		law_national_guard = approve
 		law_no_home_affairs = disapprove
@@ -643,7 +640,6 @@ ideology_patriotic_communist_international = {
 	}	
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = approve
 		law_secret_police = approve
 		law_national_guard = strongly_approve
 		law_no_home_affairs = disapprove
@@ -677,7 +673,6 @@ ideology_patriotic_democratic = {
 	}
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = neutral
 		law_secret_police = neutral
 		law_national_guard = approve
 		law_no_home_affairs = disapprove

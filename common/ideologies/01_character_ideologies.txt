@@ -1213,7 +1213,6 @@ ideology_radical = { # Average Progressiveness - 62.5
 	}
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = strongly_disapprove
 		law_guaranteed_liberties = strongly_approve
 		law_no_home_affairs = neutral
 		law_national_guard = approve
@@ -4622,7 +4621,6 @@ ideology_fascist = { # Average Progressiveness - 4.17
 	character_ideology = yes
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = strongly_approve
 		law_guaranteed_liberties = strongly_disapprove
 		law_no_home_affairs = neutral
 		law_national_guard = approve
@@ -6779,7 +6777,6 @@ ideology_authoritarian = { # Average Progressiveness - -27.77
 	}
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = strongly_approve
 		law_guaranteed_liberties = strongly_disapprove
 		law_no_home_affairs = neutral
 		law_national_guard = approve
@@ -7396,7 +7393,6 @@ ideology_humanitarian = { # Average Progressiveness - 66.66
 	}
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = strongly_disapprove
 		law_guaranteed_liberties = approve
 		law_national_guard = neutral
 		law_no_home_affairs = neutral
@@ -8415,7 +8411,6 @@ ideology_integralist = { # Average Progressiveness - -41.66
 	character_ideology = yes
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = strongly_approve
 		law_guaranteed_liberties = strongly_disapprove
 		law_no_home_affairs = neutral
 		law_national_guard = approve
@@ -8957,7 +8952,6 @@ ideology_liberal_leader = { # Average Progressiveness - 64.06
 	}
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = disapprove
 		law_guaranteed_liberties = strongly_approve
 		law_no_home_affairs = neutral
 		law_national_guard = approve
@@ -9873,7 +9867,6 @@ ideology_despotic_utopian = { # Average Progressiveness - 7.5
 	}
 
 	lawgroup_internal_security = {
-		law_mass_surveillance = strongly_approve
 		law_guaranteed_liberties = strongly_disapprove
 		law_no_home_affairs = neutral
 		law_national_guard = approve
