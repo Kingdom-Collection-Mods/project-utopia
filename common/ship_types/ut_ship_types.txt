@@ -3,6 +3,7 @@
 ship_type_capital_battleship = {
 
 	ship_group = ship_group_capital_ships
+    ai_ship_category = ai_ship_category_battle_line
 
     modification_construction_cost = 300
 
