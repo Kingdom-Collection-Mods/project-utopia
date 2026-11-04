@@ -9,6 +9,9 @@
 	is_valid = {
 		has_technology_researched = consumer_goods_main_analog
 	}
+	weight = {
+        value = 50
+	}
 }
 
 utopia_track_02 = {
@@ -21,6 +24,9 @@ utopia_track_02 = {
 	can_be_interrupted = yes
 	is_valid = {
 		has_technology_researched = consumer_goods_main_analog
+	}
+	weight = {
+        value = 50
 	}
 }
 
@@ -35,6 +41,9 @@ utopia_track_03 = {
 	is_valid = {
 		has_technology_researched = consumer_goods_main_analog
 	}
+	weight = {
+        value = 50
+	}
 }
 
 utopia_track_04 = {
@@ -47,6 +56,9 @@ utopia_track_04 = {
 	can_be_interrupted = yes
 	is_valid = {
 		has_technology_researched = consumer_goods_main_analog
+	}
+	weight = {
+        value = 50
 	}
 }
 
@@ -61,6 +73,9 @@ utopia_track_05 = {
 	is_valid = {
 		has_technology_researched = consumer_goods_main_analog
 	}
+	weight = {
+        value = 50
+	}
 }
 
 utopia_track_06 = {
@@ -73,6 +88,9 @@ utopia_track_06 = {
 	can_be_interrupted = yes
 	is_valid = {
 		has_technology_researched = consumer_goods_main_analog
+	}
+	weight = {
+        value = 50
 	}
 }
 
@@ -88,6 +106,15 @@ utopia_track_democrat_01 = {
 	is_valid = {
 		has_modifier = ut_new_dawn_core_democratic_mod
 	}
+	weight = {
+        value = 0
+		if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+			add = 100
+		}
+	}
 }
 
 utopia_track_communist_01 = {
@@ -101,6 +128,15 @@ utopia_track_communist_01 = {
 	years = 2
 	is_valid = {
 		has_modifier = ut_new_dawn_core_communist_mod
+	}
+	weight = {
+        value = 0
+		if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_communist_mod
+			}
+			add = 100
+		}
 	}
 }
 
@@ -116,6 +152,15 @@ utopia_track_autocrat_01 = {
 	is_valid = {
 		has_modifier = ut_new_dawn_core_autocratic_mod
 	}
+	weight = {
+        value = 0
+		if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_autocratic_mod
+			}
+			add = 100
+		}
+	}
 }
 
 utopia_track_fascist_01 = {
@@ -129,5 +174,14 @@ utopia_track_fascist_01 = {
 	years = 2
 	is_valid = {
 		has_modifier = ut_new_dawn_core_fascist_mod
+	}
+	weight = {
+        value = 0
+		if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+			}
+			add = 100
+		}
 	}
 }
