@@ -1086,6 +1086,7 @@
  ut_je_propaganda_target_reason: "The country behind the propaganda campaign is attempting to weaken the core ideology in our country."
  ut_je_propaganda_target_abort_tt: "The country behind the propaganda campaign has aborted the campaign."
  ut_je_propaganda_target_effect: "$ut_add_new_dawn_progress_neg_25$ and receive the Propaganda modifier for 2 years"
+ ut_je_propaganda_target_goal: "Defend against propaganda campaign"
 
  ut_propaganda_campaign_source_happened_title: "Propaganda Campaign conducted"
  ut_propaganda_campaign_source_happened_desc: "A coordinated propaganda campaign was launched against [SCOPE.sCountry('ut_je_propaganda_source_target_scope').GetName] to shape public opinion and weaken the target's government's ideology."

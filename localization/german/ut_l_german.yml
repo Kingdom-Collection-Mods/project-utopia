@@ -1088,6 +1088,7 @@
  ut_je_propaganda_target_reason: "Das Land hinter der Propaganda-Kampagne versucht, die Kernideologie in unserem Land zu schwächen."
  ut_je_propaganda_target_abort_tt: "Das Land hinter der Propaganda-Kampagne hat die Kampagne abgebrochen."
  ut_je_propaganda_target_effect: "$ut_add_new_dawn_progress_neg_25$ und erhalte Propaganda [concept_modifier] für 2 Jahre"
+ ut_je_propaganda_target_goal: "Sich gegen die Propaganda-Kampagne verteidigen"
 
  ut_propaganda_campaign_source_happened_title: "Propaganda-Kampagne durchgeführt"
  ut_propaganda_campaign_source_happened_desc: "Eine koordinierte Propaganda-Kampagne wurde gegen [SCOPE.sCountry('ut_je_propaganda_source_target_scope').GetName] gestartet, um die öffentliche Meinung zu beeinflussen und die Ideologie der Zielregierung zu schwächen."
