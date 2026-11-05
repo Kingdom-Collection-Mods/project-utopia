@@ -795,7 +795,7 @@
  ideology_jingoist_democratic_desc: "#lore This group prioritizes national security, strong defense, and patriotism. They advocate for a robust military and may support interventionist foreign policies to protect national interests. Replaces [GetIdeology('ideology_jingoist').GetName]. #!"
 
  ideology_socialist_democratic: "Social Democratic"
- ideology_socialist_democratic_desc: "#lore This group advocates for social justice, economic equality, and the protection of workers' rights. They support a mixed economy with significant government intervention to ensure social welfare and reduce inequality. Replaces [GetIdeology('ideology_socialist').GetName]. #!"
+ ideology_socialist_democratic_desc: "#lore This group advocates for social justice, economic equality, and the protection of workers' rights. They support a mixed economy with significant government intervention to ensure social welfare and reduce inequality.#!"
 
  ut_ideology_laissez_faire_democratic: "Liberal"
  ut_ideology_laissez_faire_democratic_desc: "#lore This group believes in the free flow of trade and labor forces, favoring the judgment of markets over that of governments. Replaces [GetIdeology('ideology_laissez_faire').GetName]. [concept_ut_nd_democrat_core] variation.#!"
