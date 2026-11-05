@@ -1,4 +1,4 @@
-ideology_child = {
+﻿ideology_child = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/child.dds"
 
 	show_in_list = no
