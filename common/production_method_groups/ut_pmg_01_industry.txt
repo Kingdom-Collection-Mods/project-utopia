@@ -191,14 +191,14 @@ INJECT:pmg_automobile_production = {
 # 	}
 # }
 
-INJECT:pmg_military_base = {
-	ai_selection = most_productive
+# INJECT:pmg_military_base = {
+# 	ai_selection = most_productive
 
-	production_methods = {
-		ut_pm_military_shipbuilding_utopia
-		ut_pm_military_shipbuilding_utopia_2
-	}
-}
+# 	production_methods = {
+# 		ut_pm_military_shipbuilding_utopia
+# 		ut_pm_military_shipbuilding_utopia_2
+# 	}
+# }
 
 INJECT:pmg_aeroplanes = {
 	production_methods = {
