@@ -20,6 +20,8 @@
 		trigger_event = { id = event_journal_ai.1 }
 	}
 
+	timeout = 1
+
 	outcome = {
 		header = JOURNAL_ENTRY_TIMEOUT
 		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
@@ -30,8 +32,6 @@
 			set_variable = je_ai_radio_researched_done	
 		}
 	}
-
-	timeout = 1
 }
 
 je_ai_consumer_goods_researched = {
@@ -55,6 +55,8 @@ je_ai_consumer_goods_researched = {
 	immediate = {
 		trigger_event = { id = event_journal_ai.1 }
 	}
+
+	timeout = 1
 	
 	outcome = {
 		header = JOURNAL_ENTRY_TIMEOUT
@@ -65,8 +67,6 @@ je_ai_consumer_goods_researched = {
 			set_variable = je_ai_consumer_goods_researched_done
 		}
 	}
-
-	timeout = 1
 }
 
 
@@ -94,6 +94,17 @@ je_ai_advanced_consumer_goods_researched = {
 	}
 
 	timeout = 1
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }
 
 je_ai_not_ai = {
@@ -126,4 +137,15 @@ je_ai_not_ai = {
 	}
 
 	timeout = 1
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }

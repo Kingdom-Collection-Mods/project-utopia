@@ -40,6 +40,17 @@
 	}
 
 	timeout = 7300
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }
 
 je_wirtschaftswunder = {
@@ -107,6 +118,17 @@ je_wirtschaftswunder = {
 
 	timeout = 3650
 
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
+
 	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
@@ -146,6 +168,17 @@ je_wirtschaftswunder_others = {
 	}
 
 	timeout = 7300
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 	
 	should_be_pinned_by_default_uninvolved_or_context = yes
 }
@@ -176,6 +209,17 @@ je_early_civil_aviation = {
 	}
 
 	timeout = 1
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }
 
 je_modern_civil_aviation = {
@@ -204,4 +248,15 @@ je_modern_civil_aviation = {
 	}
 
 	timeout = 1
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }

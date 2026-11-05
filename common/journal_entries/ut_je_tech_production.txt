@@ -46,6 +46,17 @@
 	}
 
 	timeout = 1825  # 5 years
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }
 
 ut_heavy_industrial_machinery_je = {
@@ -95,6 +106,8 @@ ut_heavy_industrial_machinery_je = {
 		}
 	}
 
+	timeout = 1825  # 5 years
+
 	outcome = {
 		header = JOURNAL_ENTRY_TIMEOUT
 		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
@@ -106,8 +119,6 @@ ut_heavy_industrial_machinery_je = {
 			}
 		}
 	}
-
-	timeout = 1825  # 5 years
 }
 
 ut_cnc_machines_je = {
@@ -155,6 +166,17 @@ ut_cnc_machines_je = {
 	}
 
 	timeout = 3650
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }
 
 ut_heavy_tractors_je = {
@@ -209,6 +231,17 @@ ut_heavy_tractors_je = {
 	}
 
 	timeout = 3650
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }
 
 ut_agrarian_planes_je = {
@@ -263,6 +296,17 @@ ut_agrarian_planes_je = {
 	}
 
 	timeout = 3650
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }
 
 ut_plastic_je = {
@@ -302,6 +346,17 @@ ut_plastic_je = {
 	}
 
 	timeout = 3650
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }
 
 ut_electronics_je = {
@@ -344,6 +399,17 @@ ut_electronics_je = {
 	}
 
 	timeout = 3650
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }
 
 ut_computers_je = {
@@ -387,6 +453,17 @@ ut_computers_je = {
 	}
 
 	timeout = 3650
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }
 
 ut_software_je = {
@@ -427,6 +504,17 @@ ut_software_je = {
 	}
 
 	timeout = 3650
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }
 
 ut_consumer_goods_simple_je = {
@@ -470,6 +558,8 @@ ut_consumer_goods_simple_je = {
 
 		}
 	}
+	
+	timeout = 1825  # 5 years
 
 	outcome = {
 		header = JOURNAL_ENTRY_TIMEOUT
@@ -483,8 +573,6 @@ ut_consumer_goods_simple_je = {
 			}
 		}
 	}
-	
-	timeout = 1825  # 5 years
 }
 
 ut_consumer_goods_complex_je = {
@@ -524,6 +612,17 @@ ut_consumer_goods_complex_je = {
 	}
 
 	timeout = 3650
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }
 
 
