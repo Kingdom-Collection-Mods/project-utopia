@@ -1,4 +1,4 @@
-je_urbanist_ig = {
+﻿je_urbanist_ig = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_internal_affairs
@@ -67,12 +67,14 @@ je_wirtschaftswunder = {
 	}
 
 	is_shown_when_inactive = {
-		has_technology_researched = atmospheric_engine
+		has_technology_researched = electric_arc_process
 	}
 
 	possible = {
-		NOT = {	has_global_variable = je_wirtschaftswunder_done	}
 		has_technology_researched = heavy_machinery_era_analog
+		hidden_trigger = {
+			NOT = {	has_global_variable = je_wirtschaftswunder_done	}
+		}
 	}
 
 	outcome = {
