@@ -537,7 +537,8 @@ event_new_dawn.11 = {
 		}		
 		ig:ig_armed_forces = {
 			leader = {
-				set_ideology = ideology:ideology_social_democrat
+				#set_ideology = ideology:ideology_social_democrat todo 1.15 revisit
+				set_ideology = ideology:ideology_liberal_leader
 			}
 		}
 	}
@@ -617,7 +618,8 @@ event_new_dawn.11 = {
 			5 = {
 				ig:ig_armed_forces = {
 					leader = {
-						set_ideology = ideology:ideology_social_democrat
+						#set_ideology = ideology:ideology_social_democrat todo 1.15 revisit
+						set_ideology = ideology:ideology_liberal_leader
 					}
 				}
 			}
@@ -683,7 +685,8 @@ event_new_dawn.12 = {
 		}
 		ig:ig_petty_bourgeoisie = {
 			leader = {
-				set_ideology = ideology:ideology_social_democrat
+				#set_ideology = ideology:ideology_social_democrat todo 1.15 revisit
+				set_ideology = ideology:ideology_liberal_leader
 			}
 		}
 	}
@@ -762,7 +765,8 @@ event_new_dawn.12 = {
 			5 = {
 				ig:ig_petty_bourgeoisie = {
 					leader = {
-						set_ideology = ideology:ideology_social_democrat
+						#set_ideology = ideology:ideology_social_democrat todo 1.15 revisit
+						set_ideology = ideology:ideology_liberal_leader
 					}
 				}
 			}

@@ -225,6 +225,21 @@ REPLACE:grant_leadership_to_agitator = {
 			}
 			add = 50
 		}
+		if = {
+			limit = {
+				character_matches_divided_monarchists_ai_path = yes
+				interest_group.leader ?= {
+					NOT = { character_matches_divided_monarchists_ai_path = yes }
+				}
+			}
+			add = 100
+		}
+		if = {
+			limit = {
+				character_is_rival_french_house = yes
+			}
+			multiply = 0
+		}
 	}
 }
 
@@ -242,8 +257,25 @@ REPLACE:grant_command_to_agitator = {
 
 	possible = {
 		is_adult = yes
-		is_female = no
+		OR = {
+			is_female = no
+			owner ?= {
+				OR = {
+					has_law_or_variant = law_type:law_womens_suffrage
+					has_law_or_variant = law_type:law_equal_rights_for_women
+					has_law_or_variant = law_type:law_affirmative_equality
+				}
+			}
+		}
 		exists = owner.capital.land_hq
+		trigger_if = {
+    		limit = {
+        		has_template = nemo_prince
+			}
+    		NOT = {
+        		has_template = nemo_prince
+    		}
+		}
 	}
 
 	effect = {
@@ -289,6 +321,13 @@ REPLACE:grant_command_to_agitator = {
 				}
 			}
 			add = 100
+		}
+		if = {
+			limit = {
+				character_matches_divided_monarchists_ai_path = yes
+				has_commander_traits = yes
+			}
+			add = 50
 		}
 	}
 }

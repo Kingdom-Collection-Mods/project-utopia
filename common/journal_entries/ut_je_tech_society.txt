@@ -3,6 +3,10 @@
 
 	group = je_group_internal_affairs
 
+	activation_description = {
+		always = yes
+	}
+
 	is_shown_when_inactive = {
 		is_player = yes
 		NOT = { has_variable = je_urbanist_ig_done }
@@ -10,35 +14,57 @@
 
 	possible = {
 		pop_type_percent_country = {
-			pop_type = service_workers
-			percent > 0.01
+			target = pop_type:service_workers
+			value > 0.01
 		}
 	}
 
-	complete = {
-		pop_type_percent_country = {
-			pop_type = service_workers
-			percent > 0.1
-		}
-	}
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			pop_type_percent_country = {
+				target = pop_type:service_workers
+				value > 0.1
+			}
 
-	on_complete = {
-		trigger_event = {
-			id = utopia_journal_society.1
-			popup = yes  
 		}
-		set_variable = {
-			name = je_urbanist_ig_done
+		effect = {
+			trigger_event = {
+				id = utopia_journal_society.1
+				popup = yes
+			}
+			set_variable = {
+				name = je_urbanist_ig_done
+			}
+
 		}
 	}
 
 	timeout = 7300
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }
 
 je_wirtschaftswunder = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_utopia
+
+	activation_description = {
+		always = yes
+	}
 
 	is_shown_when_inactive = {
 		has_technology_researched = atmospheric_engine
@@ -49,49 +75,67 @@ je_wirtschaftswunder = {
 		has_technology_researched = heavy_machinery_era_analog
 	}
 
-	complete = {
-		country_rank >= rank_value:major_power
-		pop_type_percent_country = {
-			pop_type = service_workers
-			percent > 0.05
-		}
-		any_scope_building = {
-			is_building_type = building_heavy_machinery_factory
-			level >= 10
-			occupancy > 0.75
-			cash_reserves_ratio > 0.25
-			weekly_profit > 0
-		}
-		any_scope_building = {
-			is_building_type = building_commercial_factory
-			level >= 10
-			occupancy > 0.75
-			cash_reserves_ratio > 0.25
-			weekly_profit > 0
-		}
-		any_scope_building = {
-			is_building_type = building_electronic_factory
-			level >= 10
-			occupancy > 0.75
-			cash_reserves_ratio > 0.25
-			weekly_profit > 0
-		}
-	}
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			country_rank >= rank_value:major_power
+			pop_type_percent_country = {
+				target = pop_type:service_workers
+				value > 0.05
+			}
+			any_scope_building = {
+				is_building_type = building_heavy_machinery_factory
+				level >= 10
+				occupancy > 0.75
+				cash_reserves_ratio > 0.25
+				weekly_profit > 0
+			}
+			any_scope_building = {
+				is_building_type = building_commercial_factory
+				level >= 10
+				occupancy > 0.75
+				cash_reserves_ratio > 0.25
+				weekly_profit > 0
+			}
+			any_scope_building = {
+				is_building_type = building_electronic_factory
+				level >= 10
+				occupancy > 0.75
+				cash_reserves_ratio > 0.25
+				weekly_profit > 0
+			}
 
-	on_complete = {
-		trigger_event = {
-			id = utopia_journal_society.2
-			popup = yes
 		}
-		set_global_variable = {
-			name = je_wirtschaftswunder_done
-		}
-		set_variable = {
-			name = je_wirtschaftswunder_successful
+		effect = {
+			trigger_event = {
+				id = utopia_journal_society.2
+				popup = yes
+			}
+			set_global_variable = {
+				name = je_wirtschaftswunder_done
+			}
+			set_variable = {
+				name = je_wirtschaftswunder_successful
+			}
+
 		}
 	}
 
 	timeout = 3650
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 
 	should_be_pinned_by_default_uninvolved_or_context = yes
 }
@@ -100,6 +144,10 @@ je_wirtschaftswunder_others = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_utopia
+
+	activation_description = {
+		always = yes
+	}
 
 	is_shown_when_inactive = {
 		has_technology_researched = atmospheric_engine
@@ -110,21 +158,39 @@ je_wirtschaftswunder_others = {
 		NOT = { has_variable = je_wirtschaftswunder_successful }
 	}
 
-	complete = {
-		country_rank >= rank_value:major_power
-	}
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			country_rank >= rank_value:major_power
 
-	on_complete = {
-		trigger_event = {
-			id = utopia_journal_society.3 
-			popup = yes
 		}
-		set_variable = {
-			name = je_urbanist_ig_done
+		effect = {
+			trigger_event = {
+				id = utopia_journal_society.3
+				popup = yes
+			}
+			set_variable = {
+				name = je_urbanist_ig_done
+			}
+
 		}
 	}
 
 	timeout = 7300
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 	
 	should_be_pinned_by_default_uninvolved_or_context = yes
 }
@@ -133,6 +199,10 @@ je_early_civil_aviation = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_utopia
+
+	activation_description = {
+		always = yes
+	}
 
 	is_shown_when_inactive = {
 		NOT = {	has_variable = je_early_civil_aviation_done	}
@@ -155,12 +225,27 @@ je_early_civil_aviation = {
 	}
 
 	timeout = 1
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }
 
 je_modern_civil_aviation = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_utopia
+
+	activation_description = {
+		always = yes
+	}
 
 	is_shown_when_inactive = {
 		NOT = {	has_variable = je_modern_civil_aviation_done	}
@@ -183,4 +268,15 @@ je_modern_civil_aviation = {
 	}
 
 	timeout = 1
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			#nothing on timeout
+		}
+	}
 }

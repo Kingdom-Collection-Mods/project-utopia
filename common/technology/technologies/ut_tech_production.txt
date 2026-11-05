@@ -344,6 +344,7 @@ nuclear_power_research = {
 
 	on_researched = {
 		custom_tooltip = ut_research_institute_found_unlock_tt
+		custom_tooltip = ut_research_institute_nuclear_power_unlock_tt
 	}
 
 	unlocking_technologies = {	
@@ -462,6 +463,10 @@ computers = {
 		building_economy_of_scale_level_cap_add = 5
 	}
 	
+	on_researched = {
+		custom_tooltip = ut_research_institute_high_tech_computers_unlock_tt
+	}
+
 	unlocking_technologies = {	
 		nuclear_power_research
 		electronics

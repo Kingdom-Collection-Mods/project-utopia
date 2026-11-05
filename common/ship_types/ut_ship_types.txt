@@ -3,10 +3,11 @@
 ship_type_capital_battleship = {
 
 	ship_group = ship_group_capital_ships
+    ai_ship_category = ai_ship_category_battle_line
 
-	base_construction_cost = 200
+    modification_construction_cost = 300
 
-	can_be_flagship = yes
+    can_be_flagship = yes
 
 	modifier = {
 		ship_construction_progress_max_add = 25

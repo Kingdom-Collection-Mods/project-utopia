@@ -1,3 +1,6 @@
 ﻿je_group_utopia = {
 	context = country
+	
+    illustration = "gfx/interface/illustrations/journal/je_group_illu_international_situations.dds"
+    themed = yes
 }

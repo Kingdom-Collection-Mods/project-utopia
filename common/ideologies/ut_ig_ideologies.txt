@@ -63,7 +63,7 @@ ideology_urbanist_economy_base = {
 		law_private_schools = neutral
 		law_private_universities = neutral
 		law_public_schools = approve
-		law_public_university = strongly_approve
+		law_public_universities = strongly_approve
 	}
 
 	lawgroup_trade_policy = {		
@@ -148,7 +148,7 @@ ideology_liberal_democratic = {
 		law_local_police = disapprove
 		law_militarized_police = strongly_disapprove
 	}
-	
+
 	lawgroup_internal_security = {
 		law_guaranteed_liberties = strongly_approve
 		law_no_home_affairs = neutral
@@ -577,7 +577,7 @@ ideology_patriotic_fascist = {
 		law_right_of_assembly = disapprove
 		law_protected_speech = strongly_disapprove
 	}	
-	
+
 	lawgroup_navy_model = {
 		law_merchant_navy = strongly_disapprove
 		law_jeune_ecole = strongly_approve
@@ -619,7 +619,7 @@ ideology_patriotic_communist_national = {
 		ut_law_private_health_research = neutral
 		ut_law_public_health_research = neutral
 	}
-	
+
 	lawgroup_navy_model = {
 		law_merchant_navy = strongly_disapprove
 		law_jeune_ecole = approve
@@ -652,7 +652,7 @@ ideology_patriotic_communist_international = {
 		law_right_of_assembly = approve
 		law_protected_speech = neutral
 	}
-	
+
 	lawgroup_navy_model = {
 		law_merchant_navy = strongly_disapprove
 		law_jeune_ecole = disapprove

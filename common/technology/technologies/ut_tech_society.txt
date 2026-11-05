@@ -98,7 +98,7 @@ early_civil_aviation = {
 		
 	modifier = {
 		state_migration_pull_mult = 0.05
-		ship_interest_gain_mult = 0.1
+		#ship_interest_gain_mult = 0.1 todo replace
 		#country_max_declared_interests_add = 2 todo replace
 	}
 
@@ -146,7 +146,7 @@ modern_civil_aviation = {
 		
 	modifier = {
 		state_migration_pull_mult = 0.05
-		ship_interest_gain_mult = 0.1
+		#ship_interest_gain_mult = 0.1 todo replace
 		#country_max_declared_interests_add = 2 todo replace
 	}
 
@@ -918,7 +918,7 @@ lgbt_movement = {
 
 	modifier = {
 		country_diplomatic_play_maneuvers_add = 30
-		ship_interest_gain_mult = 0.1
+		#ship_interest_gain_mult = 0.1 todo replace
 		#country_max_declared_interests_add = 2 todo replace
 	}
 

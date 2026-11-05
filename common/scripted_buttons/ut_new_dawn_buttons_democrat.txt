@@ -317,7 +317,8 @@ je_ut_new_dawn_democratic_fair_elections = {
 		}
 
 		ig:ig_trade_unions = {
-			remove_ideology = ideology_socialist
+			#todo check if its ok to remove ideology_communist in 1.15 and how that works
+			remove_ideology = ideology_communist
 			add_ideology = ideology_socialist_democratic
 		}
 		

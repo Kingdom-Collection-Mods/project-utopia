@@ -708,7 +708,7 @@ building_ut_power_grid = {
     }
 
     production_method_groups = {
-        pmg_ut_power_grid
+        pmg_ut_power_grid_base
 		pmg_ut_power_grid_operations
     }
     

@@ -111,6 +111,8 @@
  ut_research_institute_found_mod_desc: "Die Grundlagen für ein nationales [concept_ut_research_institute] werden gelegt. Wissenschaftliche Netzwerke entstehen, Ressourcen werden gebündelt, und die Infrastruktur für eine Zukunft des Wissens wächst."
  ut_je_research_institute_founding_goal: "Auf den Abschluss der #BOLD 3-Jahres#!-Gründungsdauer warten"
  ut_research_institute_found_unlock_tt: "Schaltet [concept_ut_research_institute] frei (max. 1 pro Land)"
+ ut_research_institute_nuclear_power_unlock_tt: "Schaltet die Forschung [GetTechnology('nuclear_power').GetName] im [concept_ut_research_institute] frei"
+ ut_research_institute_high_tech_computers_unlock_tt: "Schaltet die Forschung [GetTechnology('high_tech_computers').GetName] im [concept_ut_research_institute] frei"
  ut_research_institute_can_construct_tt: "Hat einen geeigneten Standort für ein Forschungsinstitut identifiziert und vermessen"
  ut_research_institute_site_mod: "Forschungsinstitutsstandort"
 
@@ -598,7 +600,7 @@
  je_ut_new_dawn_communist_one_people_mod: "Arbeitenden Einheit"
  je_ut_communist_socialist_expansion: "Unions Erweiterung"
  je_ut_communist_socialist_expansion_desc: ""
- je_ut_communist_socialist_expansion_mod: "Union Expansion"
+ je_ut_new_dawn_communist_expansion_mod: "Union Expansion"
  je_ut_communist_world_revolution: "Weltrevolution"
  je_ut_communist_world_revolution_desc: ""
  je_ut_communist_world_revolution_effect_tt: "Schaltet [GetLawType('ut_law_international_council').GetName] frei"
@@ -643,7 +645,7 @@
  ut_nd_democratic_stance: "Verbündet: [concept_ut_nd_democrat_core]\nNeutral: [concept_ut_nd_communist_core], [concept_ut_nd_autocrat_core]\nFeindlich: [concept_ut_nd_fascist_core]"
 
  concept_ut_nd_communist_core: "Kommunismus"
- concept_ut_nd_communist_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Schaltet autoritäre [concept_ut_nd_milestones] frei#!:\n - Freischaltbare Ideologien: [GetIdeology('ideology_reactionary_communist').GetName], [GetIdeology('ideology_patriotic_communist_national').GetName]\n - Gesetzvarianten freischalten: [GetLawType('ut_law_council_presidium').GetName]\n - Freischaltbare Modifikatoren: [GetStaticModifier('je_ut_new_dawn_communist_one_block_mod').GetDesc]\n[GetStaticModifier('je_ut_communist_socialist_expansion_mod').GetDesc]\n\n#bold Demokratische [concept_ut_nd_milestones] freischalten#!:\n - Ideologien freischalten: [GetIdeology('ideology_plutocratic_communist').GetName], [GetIdeology('ideology_urbanist_power_base').GetName], [GetIdeology('ideology_patriotic_communist_international').GetName]\n - Gesetzesvarianten freischalten: [GetLawType('ut_law_international_council').GetName] \n - Modifikatoren freischalten: [GetStaticModifier('je_ut_new_dawn_communist_one_people_mod').GetDesc]\n\n#bold Verfügbare [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_force_become_subject').GetName]\n - [GetArticleType('ut_communism_article').GetNameNoIcon] \n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n\n#b Freigeschalteter Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_communist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nErrichte eine klassenlose Gesellschaft, in der alle Produktionsmittel gemeinschaftlich besessen werden. Führe dein Volk zu einer Utopie, in der Gleichheit und Solidarität die Grundlage des Zusammenlebens bilden.\n\n#i Entwicklungsstatus: Spielbar - fast abgeschlossen#!"
+ concept_ut_nd_communist_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Schaltet autoritäre [concept_ut_nd_milestones] frei#!:\n - Freischaltbare Ideologien: [GetIdeology('ideology_reactionary_communist').GetName], [GetIdeology('ideology_patriotic_communist_national').GetName]\n - Gesetzvarianten freischalten: [GetLawType('ut_law_council_presidium').GetName]\n - Freischaltbare Modifikatoren: [GetStaticModifier('je_ut_new_dawn_communist_one_block_mod').GetDesc]\n[GetStaticModifier('je_ut_new_dawn_communist_expansion_mod').GetDesc]\n\n#bold Demokratische [concept_ut_nd_milestones] freischalten#!:\n - Ideologien freischalten: [GetIdeology('ideology_plutocratic_communist').GetName], [GetIdeology('ideology_urbanist_power_base').GetName], [GetIdeology('ideology_patriotic_communist_international').GetName]\n - Gesetzesvarianten freischalten: [GetLawType('ut_law_international_council').GetName] \n - Modifikatoren freischalten: [GetStaticModifier('je_ut_new_dawn_communist_one_people_mod').GetDesc]\n\n#bold Verfügbare [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_force_become_subject').GetName]\n - [GetArticleType('ut_communism_article').GetNameNoIcon] \n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n\n#b Freigeschalteter Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_communist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nErrichte eine klassenlose Gesellschaft, in der alle Produktionsmittel gemeinschaftlich besessen werden. Führe dein Volk zu einer Utopie, in der Gleichheit und Solidarität die Grundlage des Zusammenlebens bilden.\n\n#i Entwicklungsstatus: Spielbar - fast abgeschlossen#!"
  ut_nd_communist_stance: "Verbündet: [concept_ut_nd_communist_core]\nNeutral: [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core]\nFeindlich: [concept_ut_nd_fascist_core]"
 
  concept_ut_nd_path_to_utopia: "Pfad zur Utopie"
@@ -793,7 +795,7 @@
  ideology_jingoist_democratic_desc: "#lore Diese Gruppe priorisiert nationale Sicherheit, starke Verteidigung und Patriotismus. Sie befürwortet ein robustes Militär und kann interventionistische Außenpolitiken unterstützen, um nationale Interessen zu schützen. Ersetzt [GetIdeology('ideology_jingoist').GetName]. #!"
 
  ideology_socialist_democratic: "Sozialdemokratisch"
- ideology_socialist_democratic_desc: "#lore Diese Gruppe setzt sich für soziale Gerechtigkeit, wirtschaftliche Gleichheit und den Schutz von Arbeitnehmerrechten ein. Sie unterstützt eine gemischte Wirtschaft mit bedeutenden staatlichen Eingriffen, um soziale Wohlfahrt zu gewährleisten und Ungleichheit zu reduzieren. Ersetzt [GetIdeology('ideology_socialist').GetName]. #!"
+ ideology_socialist_democratic_desc: "#lore Diese Gruppe setzt sich für soziale Gerechtigkeit, wirtschaftliche Gleichheit und den Schutz von Arbeitnehmerrechten ein. Sie unterstützt eine gemischte Wirtschaft mit bedeutenden staatlichen Eingriffen, um soziale Wohlfahrt zu gewährleisten und Ungleichheit zu reduzieren.#!"
 
  ut_ideology_laissez_faire_democratic: "Liberal"
  ut_ideology_laissez_faire_democratic_desc: "#lore Diese Gruppe glaubt an den freien Fluss von Handel und Arbeitskräften und bevorzugt das Urteil der Märkte gegenüber dem der Regierungen. Ersetzt [GetIdeology('ideology_laissez_faire').GetName]. [concept_ut_nd_democrat_core] Variante.#!"
@@ -943,8 +945,8 @@
  law_compulsory_secondary_school_desc: "Staatlich verpflichtende Sekundarbildung, um allen Bürgern grundlegende Qualifikationen für gesellschaftliche Teilhabe zu sichern."
  law_compulsory_tertiary_school: "Hochschulpflicht"
  law_compulsory_tertiary_school_desc: "Verpflichtende Hochschulbildung zur Förderung von Fachwissen und technologischem Fortschritt."
- law_public_university: "Öffentliche Universitäten"
- law_public_university_desc: "Staatlich finanzierte Hochschulen, die Bildung unabhängig von sozialer Herkunft zugänglich machen und Forschung fördern."
+ law_public_universities: "Öffentliche Universitäten"
+ law_public_universities_desc: "Staatlich finanzierte Hochschulen, die Bildung unabhängig von sozialer Herkunft zugänglich machen und Forschung fördern."
  law_private_universities: "Private Universitäten"
  law_private_universities_desc: ""
  law_task_forces: "Einsatzgruppen"
@@ -1086,6 +1088,7 @@
  ut_je_propaganda_target_reason: "Das Land hinter der Propaganda-Kampagne versucht, die Kernideologie in unserem Land zu schwächen."
  ut_je_propaganda_target_abort_tt: "Das Land hinter der Propaganda-Kampagne hat die Kampagne abgebrochen."
  ut_je_propaganda_target_effect: "$ut_add_new_dawn_progress_neg_25$ und erhalte Propaganda [concept_modifier] für 2 Jahre"
+ ut_je_propaganda_target_goal: "Sich gegen die Propaganda-Kampagne verteidigen"
 
  ut_propaganda_campaign_source_happened_title: "Propaganda-Kampagne durchgeführt"
  ut_propaganda_campaign_source_happened_desc: "Eine koordinierte Propaganda-Kampagne wurde gegen [SCOPE.sCountry('ut_je_propaganda_source_target_scope').GetName] gestartet, um die öffentliche Meinung zu beeinflussen und die Ideologie der Zielregierung zu schwächen."
@@ -1653,7 +1656,6 @@
  technical_scientific_school_reforms_desc: "Bildungspläne werden grundlegend überarbeitet, um technisches Verständnis, digitale Kompetenzen und wissenschaftliches Denken vom frühen Kindesalter an zu fördern. Ziel ist eine zukunftsorientierte, innovationsgetriebene Gesellschaft."
 
 # Characters
- Friedman: "Friedman"
  de_Beauvoir: "de Beauvoir"
 
 # Gebaeude und Technik
@@ -1745,7 +1747,7 @@
  pm_ut_high_voltage_electricity: "Hochspannungs-Elektrizität"
  pm_ut_ultra_high_voltage_electricity: "Ultra-Hochspannungs-Elektrizität"
 
- pmg_ut_power_grid: "Base"
+ pmg_ut_power_grid_base: "Base"
  ut_pm_power_grid_import: "Spannungsumwandlung"
 
  pmg_ut_power_grid_operations: "Operationen"

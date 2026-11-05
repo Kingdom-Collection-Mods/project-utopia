@@ -427,7 +427,7 @@ ut_ideology_autocratic_leader = {
 		law_censorship = approve
 		law_outlawed_dissent = strongly_approve
 	}
-	
+
 	lawgroup_internal_security = {
 		law_guaranteed_liberties = strongly_disapprove
 		law_no_home_affairs = disapprove
@@ -1017,7 +1017,7 @@ ut_ideology_economical_corporatist_leader = {
 	
 	lawgroup_education_system = {
 		law_public_schools = approve
-		law_public_university = neutral
+		law_public_universities = neutral
 		law_religious_schools = approve
 		law_private_schools = neutral
 		law_private_universities = neutral	
@@ -1433,7 +1433,7 @@ ut_radical_feminism_leader = {
 		law_censorship = disapprove
 		law_outlawed_dissent = strongly_disapprove
 	}
-	
+
 	lawgroup_internal_security = {
 		law_guaranteed_liberties = strongly_approve
 		law_no_home_affairs = approve
@@ -1443,7 +1443,7 @@ ut_radical_feminism_leader = {
 	
 	lawgroup_education_system = {
 		law_public_schools = neutral
-		law_public_university = approve
+		law_public_universities = approve
 		law_private_schools = disapprove
 		law_private_universities = disapprove
 		law_no_schools = disapprove
@@ -1760,7 +1760,7 @@ ut_social_feminism_leader = {
 				}
 				is_interest_group_type = ig_urbanists
 			}
-			ideology_social_democrat_valid_trigger = yes
+			ideology_state_socialist_valid_trigger = yes
 		}
 	}
 
@@ -1776,7 +1776,7 @@ ut_social_feminism_leader = {
 			}
 		}
 		interest_group = {
-			ideology_social_democrat_valid_trigger = yes
+			ideology_state_socialist_valid_trigger = yes
 		}
 	}
 	
