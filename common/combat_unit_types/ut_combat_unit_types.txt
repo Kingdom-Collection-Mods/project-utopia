@@ -15,7 +15,7 @@ INJECT:combat_unit_type_mechanized_infantry = {
 combat_unit_type_motorized_infantry = {
     group = combat_unit_group_infantry
 	max_manpower = 1000
-    supply_capacity = 40
+    supply_capacity = 80
 
     upkeep_modifier = {
         goods_input_utopia_arms_add = 3     #replaced small arms
@@ -49,7 +49,7 @@ combat_unit_type_motorized_infantry = {
 combat_unit_type_armored_infantry = {
     group = combat_unit_group_infantry
 	max_manpower = 1000
-    supply_capacity = 45
+    supply_capacity = 80
 
     upkeep_modifier = {
         goods_input_utopia_arms_add = 3     #replaced small arms
@@ -143,7 +143,7 @@ INJECT:combat_unit_type_heavy_tank = {
 combat_unit_type_motorized_artillery = {
     group = combat_unit_group_artillery
 	max_manpower = 1000
-    supply_capacity = 45
+	supply_capacity = 120
 
     upkeep_modifier = {
         goods_input_utopia_artillery_add = 8    #combines tank and artillery into new artillery good +1
@@ -186,7 +186,7 @@ combat_unit_type_motorized_artillery = {
 combat_unit_type_rocket_artillery = {
     group = combat_unit_group_artillery
 	max_manpower = 1000
-    supply_capacity = 50
+	supply_capacity = 120
     
     upkeep_modifier = {
         goods_input_utopia_tanks_add = 2        #new
@@ -245,6 +245,7 @@ INJECT:combat_unit_type_light_tanks = {
 combat_unit_type_support_systems = {
     group = combat_unit_group_cavalry
 	max_manpower = 1000
+	supply_capacity = 120
     
     upkeep_modifier = {
         goods_input_utopia_artillery_add = 2
@@ -280,6 +281,7 @@ combat_unit_type_support_systems = {
 combat_unit_type_advanced_support_systems = {
     group = combat_unit_group_cavalry
 	max_manpower = 1000
+	supply_capacity = 120
     
     #super expensive best late game unit
     upkeep_modifier = {
@@ -328,7 +330,7 @@ INJECT:combat_unit_type_high_tier_marines = {
 combat_unit_type_advanced_marines = {
 	group = combat_unit_group_marines
 	max_manpower = 1000
-	supply_capacity = 30
+	supply_capacity = 60
 
 	conscript_peasant_levies = yes
 
