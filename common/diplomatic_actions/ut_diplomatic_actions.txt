@@ -115,8 +115,8 @@ ut_influence_new_dawn_major_power = {
 			}
 			ut_service_workers_possible = yes
 			pop_type_percent_country = {
-				pop_type = service_workers
-				percent > 0.01
+				target = pop_type:service_workers
+				value > 0.01
 			}
 		}
 	}

@@ -10,8 +10,8 @@
 
 	possible = {
 		pop_type_percent_country = {
-			pop_type = service_workers
-			percent > 0.01
+			target = pop_type:service_workers
+			value > 0.01
 		}
 	}
 
@@ -22,8 +22,8 @@
 		conclusion_desc = je_standard_completion_conclusion_desc
 		trigger = {
 			pop_type_percent_country = {
-				pop_type = service_workers
-				percent > 0.1
+				target = pop_type:service_workers
+				value > 0.1
 			}
 
 		}
@@ -64,8 +64,8 @@ je_wirtschaftswunder = {
 		trigger = {
 			country_rank >= rank_value:major_power
 			pop_type_percent_country = {
-				pop_type = service_workers
-				percent > 0.05
+				target = pop_type:service_workers
+				value > 0.05
 			}
 			any_scope_building = {
 				is_building_type = building_heavy_machinery_factory

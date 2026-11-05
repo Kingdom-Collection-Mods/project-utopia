@@ -58,8 +58,8 @@ ut_new_dawn_fascist_bar = {
 				if ={
 					limit = {
 						pop_type_percent_country = {
-							pop_type = service_workers
-							percent < 0.01
+							target = pop_type:service_workers
+							value < 0.01
 						}
 					}
 					multiply = {
@@ -70,8 +70,8 @@ ut_new_dawn_fascist_bar = {
 				else_if = {
 					limit = {
 						pop_type_percent_country = {
-							pop_type = service_workers
-							percent < 0.02
+							target = pop_type:service_workers
+							value < 0.02
 						}
 					}
 					multiply = {
@@ -82,8 +82,8 @@ ut_new_dawn_fascist_bar = {
 				else_if = {
 					limit = {
 						pop_type_percent_country = {
-							pop_type = service_workers
-							percent < 0.03
+							target = pop_type:service_workers
+							value < 0.03
 						}
 					}
 					multiply = {
@@ -94,8 +94,8 @@ ut_new_dawn_fascist_bar = {
 				else_if = {
 					limit = {
 						pop_type_percent_country = {
-							pop_type = service_workers
-							percent < 0.04
+							target = pop_type:service_workers
+							value < 0.04
 						}
 					}
 					multiply = {
@@ -184,8 +184,8 @@ ut_new_dawn_democrat_bar = {
 				if ={
 					limit = {
 						pop_type_percent_country = {
-							pop_type = service_workers
-							percent < 0.01
+							target = pop_type:service_workers
+							value < 0.01
 						}
 					}
 					multiply = {
@@ -196,8 +196,8 @@ ut_new_dawn_democrat_bar = {
 				else_if = {
 					limit = {
 						pop_type_percent_country = {
-							pop_type = service_workers
-							percent < 0.02
+							target = pop_type:service_workers
+							value < 0.02
 						}
 					}
 					multiply = {
@@ -208,8 +208,8 @@ ut_new_dawn_democrat_bar = {
 				else_if = {
 					limit = {
 						pop_type_percent_country = {
-							pop_type = service_workers
-							percent < 0.03
+							target = pop_type:service_workers
+							value < 0.03
 						}
 					}
 					multiply = {
@@ -220,8 +220,8 @@ ut_new_dawn_democrat_bar = {
 				else_if = {
 					limit = {
 						pop_type_percent_country = {
-							pop_type = service_workers
-							percent < 0.04
+							target = pop_type:service_workers
+							value < 0.04
 						}
 					}
 					multiply = {
@@ -309,8 +309,8 @@ ut_new_dawn_communist_bar = {
 				if ={
 					limit = {
 						pop_type_percent_country = {
-							pop_type = service_workers
-							percent < 0.01
+							target = pop_type:service_workers
+							value < 0.01
 						}
 					}
 					multiply = {
@@ -321,8 +321,8 @@ ut_new_dawn_communist_bar = {
 				else_if = {
 					limit = {
 						pop_type_percent_country = {
-							pop_type = service_workers
-							percent < 0.02
+							target = pop_type:service_workers
+							value < 0.02
 						}
 					}
 					multiply = {
@@ -333,8 +333,8 @@ ut_new_dawn_communist_bar = {
 				else_if = {
 					limit = {
 						pop_type_percent_country = {
-							pop_type = service_workers
-							percent < 0.03
+							target = pop_type:service_workers
+							value < 0.03
 						}
 					}
 					multiply = {
@@ -345,8 +345,8 @@ ut_new_dawn_communist_bar = {
 				else_if = {
 					limit = {
 						pop_type_percent_country = {
-							pop_type = service_workers
-							percent < 0.04
+							target = pop_type:service_workers
+							value < 0.04
 						}
 					}
 					multiply = {
@@ -433,8 +433,8 @@ ut_new_dawn_autocrat_bar = {
 				if ={
 					limit = {
 						pop_type_percent_country = {
-							pop_type = service_workers
-							percent < 0.01
+							target = pop_type:service_workers
+							value < 0.01
 						}
 					}
 					multiply = {
@@ -445,8 +445,8 @@ ut_new_dawn_autocrat_bar = {
 				else_if = {
 					limit = {
 						pop_type_percent_country = {
-							pop_type = service_workers
-							percent < 0.02
+							target = pop_type:service_workers
+							value < 0.02
 						}
 					}
 					multiply = {
@@ -457,8 +457,8 @@ ut_new_dawn_autocrat_bar = {
 				else_if = {
 					limit = {
 						pop_type_percent_country = {
-							pop_type = service_workers
-							percent < 0.03
+							target = pop_type:service_workers
+							value < 0.03
 						}
 					}
 					multiply = {
@@ -469,8 +469,8 @@ ut_new_dawn_autocrat_bar = {
 				else_if = {
 					limit = {
 						pop_type_percent_country = {
-							pop_type = service_workers
-							percent < 0.04
+							target = pop_type:service_workers
+							value < 0.04
 						}
 					}
 					multiply = {

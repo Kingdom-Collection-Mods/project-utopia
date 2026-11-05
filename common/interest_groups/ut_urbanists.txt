@@ -78,8 +78,8 @@
 				literacy_rate > 0.75
 				owner = {
 					pop_type_percent_country = {
-						pop_type = service_workers
-						percent > 0.01
+						target = pop_type:service_workers
+						value > 0.01
 					}
 				}
 				OR = {
