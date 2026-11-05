@@ -1,4 +1,4 @@
-je_ut_new_dawn = {
+﻿je_ut_new_dawn = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
@@ -23,27 +23,25 @@ je_ut_new_dawn = {
 
 	possible = {
 		OR = {
-			has_technology_researched = consumer_goods_main_analog
-			has_game_rule = ut_new_dawn_start_era_4
-			has_game_rule = ut_new_dawn_start_era_5
+			has_technology_researched = consumer_goods_main_analog			
+			trigger_if = {
+				limit = {
+					has_game_rule = ut_new_dawn_start_era_4		
+				}
+				has_game_rule = ut_new_dawn_start_era_4		
+			}
+			trigger_else_if = {
+				limit = {
+					has_game_rule = ut_new_dawn_start_era_5
+				}
+				has_game_rule = ut_new_dawn_start_era_5
+			}
 			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
 		}
 		OR = {
 			custom_tooltip = {
 				text = je_ut_new_dawn_global_started_tt
 				has_global_variable = je_ut_new_dawn_global_started
-			}
-			OR = {
-				has_technology_researched = heavy_machinery_era_analog
-				has_technology_researched = consumer_goods_main_house_hold_electrical
-				has_technology_researched = nuclear_power
-				has_technology_researched = union_trade
-				has_technology_researched = national_socialism
-				has_technology_researched = emancipation_movement
-				AND = {
-					has_technology_researched = ut_military_complex
-					has_technology_researched = ut_tank_diesel_engine
-				}
 			}
 			trigger_if = {
 				limit = {
@@ -70,8 +68,21 @@ je_ut_new_dawn = {
 			}
 			trigger_else = {
 				OR = {
-					has_game_rule = ut_new_dawn_start_era_4
-					has_game_rule = ut_new_dawn_start_era_5
+					has_technology_researched = heavy_machinery_era_analog
+					has_technology_researched = consumer_goods_main_house_hold_electrical
+					has_technology_researched = nuclear_power
+					has_technology_researched = union_trade
+					has_technology_researched = national_socialism
+					has_technology_researched = emancipation_movement
+					AND = {
+						has_technology_researched = ut_military_complex
+						has_technology_researched = ut_tank_diesel_engine
+					}
+					
+					OR = {
+						has_game_rule = ut_new_dawn_start_era_4
+						has_game_rule = ut_new_dawn_start_era_5
+					}
 				}
 			}
 			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
