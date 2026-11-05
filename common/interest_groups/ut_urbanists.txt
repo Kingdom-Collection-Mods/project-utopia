@@ -31,7 +31,7 @@
 		ideology_positivist
 		ideology_reformer
 		ideology_republican_leader
-		ideology_social_democrat
+		#ideology_social_democrat todo add ut ideology_social_democrat
 		ideology_sovereignist_leader
 	}
 

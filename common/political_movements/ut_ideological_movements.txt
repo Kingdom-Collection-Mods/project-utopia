@@ -498,7 +498,7 @@ ut_movement_rationalists = {
 		ut_ideology_progressive_leader
 		ideology_reformer
 		ideology_market_liberal
-		ideology_social_democrat
+		#ideology_social_democrat todo add ut ideology_social_democrat
 		ut_liberal_feminism_leader
 	}
 	
@@ -520,7 +520,7 @@ ut_movement_rationalists = {
 	character_support_trigger = {
 		OR = {
 			has_ideology = ideology:ideology_reformer
-			has_ideology = ideology:ideology_social_democrat
+			#has_ideology = ideology:ideology_social_democrat todo add ut ideology_social_democrat
 			has_ideology = ideology:ideology_market_liberal
 			has_ideology = ideology:ut_liberal_feminism_leader
 			OR = {
@@ -538,7 +538,7 @@ ut_movement_rationalists = {
 				OR = {
 					has_ideology = ideology:ideology_reformer
 					has_ideology = ideology:ideology_market_liberal
-					has_ideology = ideology:ideology_social_democrat
+					#has_ideology = ideology:ideology_social_democrat
 				}
 			}
 			multiply = {
