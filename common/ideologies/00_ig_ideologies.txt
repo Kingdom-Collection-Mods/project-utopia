@@ -197,7 +197,7 @@ ideology_individualist = {
 		law_public_schools = neutral
 		law_religious_schools = neutral
 		law_no_schools = disapprove
-		law_public_university = neutral
+		law_public_universities = neutral
 		law_private_universities = approve
 	}
 
@@ -332,7 +332,7 @@ ideology_oligarchic = {
 		law_no_schools = neutral
 		law_public_schools = approve
 		law_private_schools = approve
-		law_public_university = disapprove
+		law_public_universities = disapprove
 		law_private_universities = approve	
 	}
 
@@ -354,7 +354,7 @@ ideology_pious = {
 		law_no_schools = neutral
 		law_public_schools = disapprove
 		law_private_schools = disapprove
-		law_public_university = strongly_disapprove
+		law_public_universities = strongly_disapprove
 		law_private_universities = strongly_disapprove	
 	}
 
@@ -796,7 +796,7 @@ ideology_anti_clerical = {
 		law_private_schools = approve
 		law_no_schools = disapprove
 		law_religious_schools = disapprove
-		law_public_university = strongly_approve
+		law_public_universities = strongly_approve
 		law_private_universities = approve
 	}
 }
@@ -903,7 +903,7 @@ ideology_egalitarian = {
 		law_private_schools = disapprove
 		law_religious_schools = neutral
 		law_no_schools = disapprove
-		law_public_university = approve
+		law_public_universities = approve
 		law_private_universities = disapprove
 	}
 
@@ -1241,7 +1241,7 @@ ideology_corporatist = {
 		law_no_schools = neutral
 		law_public_schools = disapprove
 		law_private_schools = disapprove
-		law_public_university = strongly_disapprove
+		law_public_universities = strongly_disapprove
 		law_private_universities = neutral
 	}
 
@@ -1438,7 +1438,7 @@ ideology_materialist = {
 		law_private_schools = disapprove
 		law_no_schools = strongly_disapprove
 		law_religious_schools = strongly_disapprove
-		law_public_university = approve
+		law_public_universities = approve
 		law_private_universities = disapprove
 	}
 

@@ -1311,7 +1311,7 @@ ideology_radical = { # Average Progressiveness - 62.5
 		law_private_schools = neutral
 		law_no_schools = disapprove
 		law_religious_schools = disapprove
-		law_public_university = approve
+		law_public_universities = approve
 		law_private_universities = neutral
 	}
 
@@ -10164,7 +10164,7 @@ ideology_corporatist_leader = { # Average Progressiveness - 42.5
 		law_religious_schools = approve
 		law_private_schools = neutral
 		law_no_schools = disapprove
-		law_public_university = neutral
+		law_public_universities = neutral
 		law_private_universities = neutral	
 	}
 
@@ -11077,7 +11077,7 @@ ideology_utilitarian_leader = { # Average Progressiveness - 54.16
 		law_private_schools = neutral
 		law_religious_schools = neutral
 		law_no_schools = disapprove
-		law_public_university = strongly_approve
+		law_public_universities = strongly_approve
 		law_private_universities = neutral
 	}
 
@@ -11595,7 +11595,7 @@ ideology_modernizer_leader = { # Average Progressiveness - 35.71
 		law_private_schools = neutral
 		law_religious_schools = neutral
 		law_no_schools = disapprove
-		law_public_university = strongly_approve
+		law_public_universities = strongly_approve
 		law_private_universities = neutral
 	}
 
@@ -12917,7 +12917,7 @@ ideology_ilustrado_leader = { 	# Flavoured variant of Liberal and Anti-Clerical 
 		law_private_schools = approve
 		law_no_schools = disapprove
 		law_religious_schools = neutral
-		law_public_university = strongly_approve
+		law_public_universities = strongly_approve
 		law_private_universities = approve
 	}
 
@@ -13050,7 +13050,7 @@ ideology_mitogaku = { # Average Progressiveness - 10.71
 		law_private_schools = neutral
 		law_religious_schools = neutral
 		law_no_schools = disapprove
-		law_public_university = approve
+		law_public_universities = approve
 		law_private_universities = neutral
 	}
 

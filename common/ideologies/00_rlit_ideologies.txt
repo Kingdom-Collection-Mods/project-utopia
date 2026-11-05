@@ -57,7 +57,7 @@ ideology_spiritual = {
 		law_no_schools = disapprove
 		law_religious_schools = strongly_approve
 		law_private_universities = disapprove
-		law_public_university = approve
+		law_public_universities = approve
 	}
 
 	lawgroup_army_model = {

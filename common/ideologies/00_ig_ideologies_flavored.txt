@@ -863,7 +863,7 @@ ideology_utilitarian_millian = { # Replaces Malthusian, for the Industrialists
 		law_private_schools = neutral
 		law_religious_schools = neutral
 		law_no_schools = disapprove
-		law_public_university = approve
+		law_public_universities = approve
 		law_private_universities = neutral
 	}
 
@@ -1007,7 +1007,7 @@ ideology_malthusian = {
 		law_religious_schools = neutral
 		law_no_schools = neutral
 		law_private_universities = approve
-		law_public_university = neutral
+		law_public_universities = neutral
 	}
 
 	lawgroup_health_system = {

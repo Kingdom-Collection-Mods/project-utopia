@@ -775,7 +775,7 @@ ideology_corporatist_movement = {
 		law_private_schools = neutral
 		law_no_schools = disapprove
 		law_private_universities = strongly_approve
-		law_public_university = approve
+		law_public_universities = approve
 	}
 
 	lawgroup_labor_rights = {
@@ -903,7 +903,7 @@ ideology_radical_movement = {
 		law_no_schools = disapprove
 		law_religious_schools = disapprove
 		law_private_universities = disapprove
-		law_public_university = approve
+		law_public_universities = approve
 	}
 
 	lawgroup_free_speech = {
@@ -1183,7 +1183,7 @@ ideology_modernizer_movement_2 = { # Level two moderniser movement - less crucia
 		law_religious_schools = neutral
 		law_no_schools = disapprove
 		law_private_universities = neutral
-		law_public_university = approve
+		law_public_universities = approve
 	}
 
 	lawgroup_childrens_rights = {
@@ -1218,7 +1218,7 @@ ideology_traditionalist_movement = {
 		law_public_schools = disapprove
 		law_private_schools = disapprove
 		law_private_universities = disapprove
-		law_public_university = disapprove
+		law_public_universities = disapprove
 	}
 
 	lawgroup_health_system = {
@@ -1263,7 +1263,7 @@ ideology_traditionalist_minoritarian_movement = {
 		law_public_schools = neutral
 		law_private_schools = neutral
 		law_private_universities = neutral
-		law_public_university = neutral
+		law_public_universities = neutral
 	}
 
 	lawgroup_health_system = {
@@ -1488,7 +1488,7 @@ ideology_utilitarian_movement = {
 		law_religious_schools = neutral
 		law_no_schools = disapprove
 		law_private_universities = neutral
-		law_public_university = approve
+		law_public_universities = approve
 	}
 
 	lawgroup_childrens_rights = {
@@ -1736,7 +1736,7 @@ ideology_national_liberal_movement = {
 		law_no_schools = disapprove
 		law_religious_schools = disapprove
 		law_private_universities = neutral
-		law_public_university = approve
+		law_public_universities = approve
 	}
 
 	lawgroup_free_speech = {
