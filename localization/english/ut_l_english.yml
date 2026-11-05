@@ -600,7 +600,7 @@
  je_ut_new_dawn_communist_one_people_mod: "Workers Unity"
  je_ut_communist_socialist_expansion: "Union Expansion"
  je_ut_communist_socialist_expansion_desc: ""
- je_ut_communist_socialist_expansion_mod: "Union Expansion"
+ je_ut_new_dawn_communist_expansion_mod: "Union Expansion"
  je_ut_communist_world_revolution: "World Revolution"
  je_ut_communist_world_revolution_desc: ""
  je_ut_communist_world_revolution_effect_tt: "Unlocks [GetLawType('ut_law_international_council').GetName]"
@@ -645,7 +645,7 @@
  ut_nd_democratic_stance: "Favorable: [concept_ut_nd_democrat_core]\nNeutral: [concept_ut_nd_communist_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]"
 
  concept_ut_nd_communist_core: "Communism"
- concept_ut_nd_communist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Unlocks Authoritarian [concept_ut_nd_milestones]#!:\n - Unlock Ideologies: [GetIdeology('ideology_reactionary_communist').GetName], [GetIdeology('ideology_patriotic_communist_national').GetName]\n - Unlocks Law Variants: [GetLawType('ut_law_council_presidium').GetName]\n - Unlock Modifiers:\n[GetStaticModifier('je_ut_new_dawn_communist_one_block_mod').GetDesc]\n[GetStaticModifier('je_ut_communist_socialist_expansion_mod').GetDesc]\n\n#bold Unlocks Democratic [concept_ut_nd_milestones]#!:\n - Unlock Ideologies: [GetIdeology('ideology_plutocratic_communist').GetName], [GetIdeology('ideology_urbanist_power_base').GetName], [GetIdeology('ideology_patriotic_communist_international').GetName]\n - Unlocks Law Variants: [GetLawType('ut_law_international_council').GetName]\n - Unlock Modifiers:\n[GetStaticModifier('je_ut_new_dawn_communist_one_people_mod').GetDesc]\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_force_become_subject').GetName]\n - [GetArticleType('ut_communism_article').GetNameNoIcon]\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_communist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nBuild a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence.\n\n#i Development Status: Playable - Almost done#!"
+ concept_ut_nd_communist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Unlocks Authoritarian [concept_ut_nd_milestones]#!:\n - Unlock Ideologies: [GetIdeology('ideology_reactionary_communist').GetName], [GetIdeology('ideology_patriotic_communist_national').GetName]\n - Unlocks Law Variants: [GetLawType('ut_law_council_presidium').GetName]\n - Unlock Modifiers:\n[GetStaticModifier('je_ut_new_dawn_communist_one_block_mod').GetDesc]\n[GetStaticModifier('je_ut_new_dawn_communist_expansion_mod').GetDesc]\n\n#bold Unlocks Democratic [concept_ut_nd_milestones]#!:\n - Unlock Ideologies: [GetIdeology('ideology_plutocratic_communist').GetName], [GetIdeology('ideology_urbanist_power_base').GetName], [GetIdeology('ideology_patriotic_communist_international').GetName]\n - Unlocks Law Variants: [GetLawType('ut_law_international_council').GetName]\n - Unlock Modifiers:\n[GetStaticModifier('je_ut_new_dawn_communist_one_people_mod').GetDesc]\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_force_become_subject').GetName]\n - [GetArticleType('ut_communism_article').GetNameNoIcon]\n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_communist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nBuild a classless society where all means of production are collectively owned. Lead your people to a utopia where equality and solidarity form the foundation of coexistence.\n\n#i Development Status: Playable - Almost done#!"
  ut_nd_communist_stance: "Favorable: [concept_ut_nd_communist_core]\nNeutral: [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_fascist_core]"
 
  concept_ut_nd_path_to_utopia: "Path to Utopia"
@@ -1745,7 +1745,7 @@
  pm_ut_high_voltage_electricity: "High-Voltage Electricity"
  pm_ut_ultra_high_voltage_electricity: "Ultra High-Voltage Electricity"
 
- pmg_ut_power_grid: "Base"
+ pmg_ut_power_grid_base: "Base"
  ut_pm_power_grid_import: "Convert Electricity"
 
  pmg_ut_power_grid_operations: "Operations"

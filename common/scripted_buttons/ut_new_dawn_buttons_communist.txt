@@ -199,7 +199,7 @@ je_ut_communist_socialist_expansion = {
 			}
 		}
 		add_modifier = {
-			name = je_ut_communist_socialist_expansion_mod
+			name = je_ut_new_dawn_communist_expansion_mod
 		}
 		set_variable = je_ut_communist_socialist_expansion_done
 	}

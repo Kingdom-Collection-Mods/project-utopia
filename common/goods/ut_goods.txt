@@ -142,16 +142,6 @@ soft_drinks = {
 	traded_quantity = 5 # 250
 }
 
-#deprecated
-utopia_battleships = {
-	texture = "gfx/interface/icons/goods_icons/utopia_battleships.dds"
-	cost = 100
-	category = military
-
-	prestige_factor = 10
-	traded_quantity = 3 # 280
-	convoy_cost_multiplier = 1
-}
 
 high_voltage_electricity = {
 	texture = "gfx/interface/icons/goods_icons/james_hv_power.dds"

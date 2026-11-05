@@ -600,7 +600,7 @@
  je_ut_new_dawn_communist_one_people_mod: "Arbeitenden Einheit"
  je_ut_communist_socialist_expansion: "Unions Erweiterung"
  je_ut_communist_socialist_expansion_desc: ""
- je_ut_communist_socialist_expansion_mod: "Union Expansion"
+ je_ut_new_dawn_communist_expansion_mod: "Union Expansion"
  je_ut_communist_world_revolution: "Weltrevolution"
  je_ut_communist_world_revolution_desc: ""
  je_ut_communist_world_revolution_effect_tt: "Schaltet [GetLawType('ut_law_international_council').GetName] frei"
@@ -645,7 +645,7 @@
  ut_nd_democratic_stance: "Verbündet: [concept_ut_nd_democrat_core]\nNeutral: [concept_ut_nd_communist_core], [concept_ut_nd_autocrat_core]\nFeindlich: [concept_ut_nd_fascist_core]"
 
  concept_ut_nd_communist_core: "Kommunismus"
- concept_ut_nd_communist_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Schaltet autoritäre [concept_ut_nd_milestones] frei#!:\n - Freischaltbare Ideologien: [GetIdeology('ideology_reactionary_communist').GetName], [GetIdeology('ideology_patriotic_communist_national').GetName]\n - Gesetzvarianten freischalten: [GetLawType('ut_law_council_presidium').GetName]\n - Freischaltbare Modifikatoren: [GetStaticModifier('je_ut_new_dawn_communist_one_block_mod').GetDesc]\n[GetStaticModifier('je_ut_communist_socialist_expansion_mod').GetDesc]\n\n#bold Demokratische [concept_ut_nd_milestones] freischalten#!:\n - Ideologien freischalten: [GetIdeology('ideology_plutocratic_communist').GetName], [GetIdeology('ideology_urbanist_power_base').GetName], [GetIdeology('ideology_patriotic_communist_international').GetName]\n - Gesetzesvarianten freischalten: [GetLawType('ut_law_international_council').GetName] \n - Modifikatoren freischalten: [GetStaticModifier('je_ut_new_dawn_communist_one_people_mod').GetDesc]\n\n#bold Verfügbare [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_force_become_subject').GetName]\n - [GetArticleType('ut_communism_article').GetNameNoIcon] \n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n\n#b Freigeschalteter Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_communist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nErrichte eine klassenlose Gesellschaft, in der alle Produktionsmittel gemeinschaftlich besessen werden. Führe dein Volk zu einer Utopie, in der Gleichheit und Solidarität die Grundlage des Zusammenlebens bilden.\n\n#i Entwicklungsstatus: Spielbar - fast abgeschlossen#!"
+ concept_ut_nd_communist_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_communist_progress_from_characters$\n- $ut_nd_communist_progress_from_igs$\n- $ut_nd_communist_progress_from_laws$\n\n#bold Schaltet autoritäre [concept_ut_nd_milestones] frei#!:\n - Freischaltbare Ideologien: [GetIdeology('ideology_reactionary_communist').GetName], [GetIdeology('ideology_patriotic_communist_national').GetName]\n - Gesetzvarianten freischalten: [GetLawType('ut_law_council_presidium').GetName]\n - Freischaltbare Modifikatoren: [GetStaticModifier('je_ut_new_dawn_communist_one_block_mod').GetDesc]\n[GetStaticModifier('je_ut_new_dawn_communist_expansion_mod').GetDesc]\n\n#bold Demokratische [concept_ut_nd_milestones] freischalten#!:\n - Ideologien freischalten: [GetIdeology('ideology_plutocratic_communist').GetName], [GetIdeology('ideology_urbanist_power_base').GetName], [GetIdeology('ideology_patriotic_communist_international').GetName]\n - Gesetzesvarianten freischalten: [GetLawType('ut_law_international_council').GetName] \n - Modifikatoren freischalten: [GetStaticModifier('je_ut_new_dawn_communist_one_people_mod').GetDesc]\n\n#bold Verfügbare [concept_ut_nd_abilities]#!\n - [GetDiplomaticActionType('ut_force_become_subject').GetName]\n - [GetArticleType('ut_communism_article').GetNameNoIcon] \n - [GetDiplomaticActionType('ut_international_diplomatic_power_bloc_merge').GetName]\n\n#b Freigeschalteter Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_communist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_communist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nErrichte eine klassenlose Gesellschaft, in der alle Produktionsmittel gemeinschaftlich besessen werden. Führe dein Volk zu einer Utopie, in der Gleichheit und Solidarität die Grundlage des Zusammenlebens bilden.\n\n#i Entwicklungsstatus: Spielbar - fast abgeschlossen#!"
  ut_nd_communist_stance: "Verbündet: [concept_ut_nd_communist_core]\nNeutral: [concept_ut_nd_democrat_core], [concept_ut_nd_autocrat_core]\nFeindlich: [concept_ut_nd_fascist_core]"
 
  concept_ut_nd_path_to_utopia: "Pfad zur Utopie"
@@ -1746,7 +1746,7 @@
  pm_ut_high_voltage_electricity: "Hochspannungs-Elektrizität"
  pm_ut_ultra_high_voltage_electricity: "Ultra-Hochspannungs-Elektrizität"
 
- pmg_ut_power_grid: "Base"
+ pmg_ut_power_grid_base: "Base"
  ut_pm_power_grid_import: "Spannungsumwandlung"
 
  pmg_ut_power_grid_operations: "Operationen"

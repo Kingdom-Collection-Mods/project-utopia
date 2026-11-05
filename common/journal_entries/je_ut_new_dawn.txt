@@ -1456,22 +1456,6 @@ je_ut_new_dawn_communist = {
 	on_yearly_pulse = {
 		effect = {
 			ut_new_dawn_common_pressure_progress_yearly = yes
-			#debug deprecated, was only bc was set wrong on immediate before 14-06-26
-			if = {
-				limit = {
-					NOT = {
-						is_target_in_global_variable_list = {
-							name = ut_new_dawn_communist_list
-							target = root
-						}	
-					}
-				}
-				add_to_global_variable_list = {
-					name = ut_new_dawn_communist_list
-					target = root
-				}
-			}
-			#debug end
 			set_variable = {
 				name = je_ut_new_dawn_core_prev_progress_yearly
 				value = var:je_ut_new_dawn_core_progress_yearly
@@ -1525,7 +1509,7 @@ je_ut_new_dawn_communist = {
 
 				remove_modifier = je_ut_new_dawn_communist_one_block_mod
 				remove_modifier = je_ut_new_dawn_communist_one_people_mod
-				remove_modifier = je_ut_communist_socialist_expansion_mod
+				remove_modifier = je_ut_new_dawn_communist_expansion_mod
 			}
 
 			je:je_ut_new_dawn = {
