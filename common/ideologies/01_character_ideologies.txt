@@ -6894,7 +6894,6 @@ ideology_market_liberal = { # Average Progressiveness - 3.57
 		law_compulsory_secondary_school = strongly_disapprove
 		law_compulsory_tertiary_school = strongly_disapprove
 	}
-	}
 
 	lawgroup_labour_associations = {
 		law_combination_acts = approve

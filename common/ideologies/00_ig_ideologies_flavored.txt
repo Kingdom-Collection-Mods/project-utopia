@@ -1452,7 +1452,6 @@ ideology_cartist = {
 		law_communal_administration = strongly_disapprove
 		law_privatized_bureaucrats = strongly_disapprove
 	}
-	}
 
 	lawgroup_taxation = {
 		law_per_capita_based_taxation = approve
