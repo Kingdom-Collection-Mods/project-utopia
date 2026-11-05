@@ -43,10 +43,12 @@
 			# scope:target_country = {
 			# 	join_power_bloc = root
 			# }
+		}
 		
-			scope:target_country = {
-				destroy_power_bloc = yes	
-			}
+		scope:target_country = {
+			power_bloc ?= {
+				destroy_power_bloc = yes
+			}	
 		}
 	}
 
