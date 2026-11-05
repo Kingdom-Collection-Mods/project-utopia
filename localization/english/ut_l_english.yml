@@ -656,7 +656,8 @@ l_english:
  concept_ut_nd_utopia_desc: "A utopia is an imagined ideal society where there is complete justice, harmony, and humans flourishing to perfection - it's as much an aspiration, as it's an inspiring vision."
 
  ut_utopia_enabled_on_game_started_loc_yes: "Project Utopia Status: enabled since game start."
- ut_utopia_enabled_on_game_started_loc_26_03_13_yes: "$ut_utopia_enabled_on_game_started_loc_yes$ All content available."
+ ut_utopia_enabled_on_game_started_loc_patch_12: "Project Utopia Status: enabled since game start. Warning, started with 1.13/1.14 version (Patch 12)."
+ ut_utopia_enabled_on_game_started_loc_latest_yes: "$ut_utopia_enabled_on_game_started_loc_yes$ All content available."
  ut_utopia_enabled_on_game_started_loc_no: "Started save game before 13. March or Project Utopia was not enabled on game start.\n#bold Important:#! New mining resources and laws require Project Utopia to be enabled since game start."
 
  ut_new_dawn_fascist_focus: "Fascist Focus"

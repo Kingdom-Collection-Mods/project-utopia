@@ -310,10 +310,18 @@ ut_utopia_enabled_on_game_started_loc = {
 	
 	text = {
 		trigger = {
-			has_global_variable = ut_utopia_enabled_on_game_started_26_03_13_var
+			has_global_variable = ut_utopia_enabled_on_game_started_26_11_05_var
 		}
 
-		localization_key = ut_utopia_enabled_on_game_started_loc_26_03_13_yes
+		localization_key = ut_utopia_enabled_on_game_started_loc_latest_yes
+	}
+
+	text = {
+		trigger = {
+			has_global_variable = ut_utopia_enabled_on_game_started_patch_12_var
+		}
+
+		localization_key = ut_utopia_enabled_on_game_started_loc_patch_12
 	}
 
 	text = {
