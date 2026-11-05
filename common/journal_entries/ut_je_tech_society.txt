@@ -1,4 +1,4 @@
-﻿je_urbanist_ig = {
+je_urbanist_ig = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_internal_affairs
@@ -198,7 +198,7 @@ je_wirtschaftswunder_others = {
 je_early_civil_aviation = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
-	group = je_group_utopia
+	group = je_group_technology
 
 	activation_description = {
 		always = yes
@@ -241,7 +241,7 @@ je_early_civil_aviation = {
 je_modern_civil_aviation = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
-	group = je_group_utopia
+	group = je_group_technology
 
 	activation_description = {
 		always = yes
