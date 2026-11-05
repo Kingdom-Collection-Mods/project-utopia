@@ -20,8 +20,15 @@
 		trigger_event = { id = event_journal_ai.1 }
 	}
 
-	on_timeout = {
-		set_variable = je_ai_radio_researched_done		
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+
+		effect = {
+			set_variable = je_ai_radio_researched_done	
+		}
 	}
 
 	timeout = 1
@@ -48,9 +55,15 @@ je_ai_consumer_goods_researched = {
 	immediate = {
 		trigger_event = { id = event_journal_ai.1 }
 	}
-
-	on_timeout = {
-		set_variable = je_ai_consumer_goods_researched_done		
+	
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+		effect = {
+			set_variable = je_ai_consumer_goods_researched_done
+		}
 	}
 
 	timeout = 1

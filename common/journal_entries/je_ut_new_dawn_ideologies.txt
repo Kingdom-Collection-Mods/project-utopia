@@ -477,17 +477,6 @@ ut_je_ally_influence_petition = {
         }
     }
 
-    on_timeout = {
-		custom_tooltip = ut_add_new_dawn_progress_neg_5
-		ut_add_new_dawn_core_progress = { 
-			VALUE = -5
-		}
-    }
-
-
-
-
-
     timeout = {
         value = 1825 # 5 years
         if = {
@@ -499,6 +488,19 @@ ut_je_ally_influence_petition = {
             add = 1095
         }
     }
+
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+		effect = {
+			custom_tooltip = ut_add_new_dawn_progress_neg_5
+			ut_add_new_dawn_core_progress = { 
+				VALUE = -5
+			}
+		}
+	}
 
     weight = 1000
 

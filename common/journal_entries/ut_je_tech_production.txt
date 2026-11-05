@@ -45,9 +45,6 @@
 		}
 	}
 
-	on_timeout = {
-	}
-
 	timeout = 1825  # 5 years
 }
 
@@ -98,9 +95,15 @@ ut_heavy_industrial_machinery_je = {
 		}
 	}
 
-	on_timeout = {
-		trigger_event = {
-			id = utopia_journal_prod.2
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+		effect = {
+			trigger_event = {
+				id = utopia_journal_prod.2
+			}
 		}
 	}
 
@@ -468,10 +471,16 @@ ut_consumer_goods_simple_je = {
 		}
 	}
 
-	on_timeout = {
-		trigger_event = {
-			id = utopia_journal_prod.4
-			popup = yes
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+		effect = {
+			trigger_event = {
+				id = utopia_journal_prod.4
+				popup = yes
+			}
 		}
 	}
 	
