@@ -2,6 +2,10 @@
 	icon = "gfx/interface/icons/goods_icons/software.dds"
 
 	group = je_group_technology
+
+	activation_description = {
+		always = yes
+	}
 	
 	modifiers_while_active = {
 	}
@@ -151,6 +155,10 @@ je_ut_software_era_7 = {
 
 	group = je_group_technology
 
+	activation_description = {
+		always = yes
+	}
+
 	immediate = {
 		set_variable = {
 			name = je_ut_software_points_bar_progress_buildings_era_7
@@ -285,6 +293,10 @@ je_ut_software_era_8 = {
 	icon = "gfx/interface/icons/goods_icons/software.dds"
 
 	group = je_group_technology
+
+	activation_description = {
+		always = yes
+	}
 
 	immediate = {
 		set_variable = {

@@ -3,6 +3,10 @@
 
 	group = je_group_ai_buffs
 
+	activation_description = {
+		always = yes
+	}
+
 	is_shown_when_inactive = {
 		NOT = { has_modifier = ai_great_power_buff_spread }
 		NOT = { has_modifier = ai_major_power_buff_spread }
@@ -38,6 +42,10 @@ je_ai_consumer_goods_researched = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_ai_buffs
+
+	activation_description = {
+		always = yes
+	}
 
 	is_shown_when_inactive = {
 		NOT = { has_modifier = ai_great_power_buff_spread }
@@ -75,6 +83,10 @@ je_ai_advanced_consumer_goods_researched = {
 
 	group = je_group_ai_buffs
 
+	activation_description = {
+		always = yes
+	}
+
 	is_shown_when_inactive = {
 		NOT = { has_modifier = ai_great_power_buff_spread }
 		NOT = { has_modifier = ai_major_power_buff_spread }
@@ -111,6 +123,10 @@ je_ai_not_ai = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_ai_buffs
+
+	activation_description = {
+		always = yes
+	}
 
 	is_shown_when_inactive = {
 		OR = {

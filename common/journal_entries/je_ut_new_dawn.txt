@@ -2,6 +2,10 @@
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
+
+	activation_description = {
+		always = yes
+	}
 	
 
 	is_shown_when_inactive = {
@@ -451,6 +455,10 @@ je_ut_new_dawn_core_abilities = {
 
 	group = je_group_utopia
 
+	activation_description = {
+		always = yes
+	}
+
 	immediate = {
 	}
 	
@@ -504,6 +512,10 @@ je_ut_new_dawn_democratic = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_nd_democrat.dds"
 
 	group = je_group_utopia
+
+	activation_description = {
+		always = yes
+	}
 	
 	modifiers_while_active = {
 		new_dawn_phase_2_mod
@@ -798,6 +810,10 @@ je_ut_new_dawn_autocratic = {
 
 	group = je_group_utopia
 
+	activation_description = {
+		always = yes
+	}
+
 	modifiers_while_active = {
 		new_dawn_phase_2_mod
 		je_ut_new_dawn_autocratic_mod
@@ -1007,6 +1023,10 @@ je_ut_new_dawn_fascist = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds"
 
 	group = je_group_utopia
+
+	activation_description = {
+		always = yes
+	}
 
 	modifiers_while_active = {
 		new_dawn_phase_2_mod
@@ -1285,6 +1305,10 @@ je_ut_new_dawn_communist = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_nd_communist.dds"
 
 	group = je_group_utopia
+
+	activation_description = {
+		always = yes
+	}
 
 	modifiers_while_active = {
 		new_dawn_phase_2_mod

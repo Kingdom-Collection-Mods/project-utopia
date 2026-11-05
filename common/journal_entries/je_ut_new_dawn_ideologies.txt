@@ -3,6 +3,10 @@
 
 	group = je_group_utopia
 
+	activation_description = {
+		always = yes
+	}
+
 	immediate = {
 		set_variable = {
 			name = ut_propaganda_source_var
@@ -165,6 +169,10 @@ ut_je_propaganda_target = {
 
 	group = je_group_utopia
 
+	activation_description = {
+		always = yes
+	}
+
 	scripted_button = ut_new_dawn_propaganda_target_defend
 
 	on_monthly_pulse = {
@@ -279,6 +287,10 @@ ut_je_ally_influence_petition = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
+
+	activation_description = {
+		always = yes
+	}
 
     scripted_button = je_government_petition_go_away_button
     scripted_button = je_government_petition_extension_button

@@ -2,6 +2,10 @@
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
+	activation_description = {
+		always = yes
+	}
+
 	weight = 100
 	should_be_pinned_by_default_uninvolved_or_context = yes
 
@@ -62,6 +66,10 @@
 ut_heavy_industrial_machinery_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
+
+	activation_description = {
+		always = yes
+	}
 
 	weight = 100
 	should_be_pinned_by_default_uninvolved_or_context = yes
@@ -125,6 +133,10 @@ ut_cnc_machines_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
+	activation_description = {
+		always = yes
+	}
+
 	is_shown_when_inactive = {
 		has_variable = heavy_industrial_machinery_je_done
 		NOT = { has_variable = cnc_machines_je_done }
@@ -182,6 +194,10 @@ ut_cnc_machines_je = {
 ut_heavy_tractors_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
+
+	activation_description = {
+		always = yes
+	}
 
 	is_shown_when_inactive = {
 		has_technology_researched = mechanized_farming
@@ -248,6 +264,10 @@ ut_agrarian_planes_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
+	activation_description = {
+		always = yes
+	}
+
 	is_shown_when_inactive = {
 		has_variable = heavy_tractors_je_done
 	}
@@ -313,6 +333,10 @@ ut_plastic_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
+	activation_description = {
+		always = yes
+	}
+
 	is_shown_when_inactive = {
 		has_technology_researched = art_silk
 	}
@@ -362,6 +386,10 @@ ut_plastic_je = {
 ut_electronics_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
+
+	activation_description = {
+		always = yes
+	}
 
 	is_shown_when_inactive = {
 		has_technology_researched = electric_railway
@@ -415,6 +443,10 @@ ut_electronics_je = {
 ut_computers_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
+
+	activation_description = {
+		always = yes
+	}
 
 	is_shown_when_inactive = {
 		has_variable =  electronics_je_done
@@ -470,6 +502,10 @@ ut_software_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
+	activation_description = {
+		always = yes
+	}
+
 	is_shown_when_inactive = {
 		has_variable =  computers_je_done
 	}
@@ -520,6 +556,10 @@ ut_software_je = {
 ut_consumer_goods_simple_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
+
+	activation_description = {
+		always = yes
+	}
 
 	weight = 100
 	should_be_pinned_by_default_uninvolved_or_context = yes
@@ -579,6 +619,10 @@ ut_consumer_goods_complex_je = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	group = je_group_technology
 
+	activation_description = {
+		always = yes
+	}
+
 	is_shown_when_inactive = {
 		has_variable = consumer_goods_simple_je_done
 	}
@@ -630,6 +674,10 @@ ut_je_research_institute_founding = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_technology
+
+	activation_description = {
+		always = yes
+	}
 
 	on_monthly_pulse = {
 		effect = {
@@ -719,6 +767,10 @@ ut_je_research_institute_construction = {
 
 	group = je_group_technology
 
+	activation_description = {
+		always = yes
+	}
+
 	outcome = {
 		header = je_standard_completion_header
 		effect_header = je_standard_on_completion_header
@@ -799,6 +851,10 @@ ut_je_ut_research_nuclear_power = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_technology
+
+	activation_description = {
+		always = yes
+	}
 
 	on_monthly_pulse = {
 		effect = {
@@ -883,6 +939,10 @@ ut_je_ut_research_high_tech_computers_research = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_technology
+
+	activation_description = {
+		always = yes
+	}
 
 	on_monthly_pulse = {
 		effect = {
@@ -970,6 +1030,10 @@ ut_je_nuclear_power_plant_construction = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
 	group = je_group_technology
+
+	activation_description = {
+		always = yes
+	}
 
 	immediate = {
 		if = {
