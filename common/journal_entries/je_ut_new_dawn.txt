@@ -1,4 +1,4 @@
-﻿je_ut_new_dawn = {
+je_ut_new_dawn = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
@@ -91,6 +91,16 @@
 			}
 			set_global_variable = je_ut_new_dawn_global_started
 			set_variable = je_ut_new_dawn_first_started
+			save_scope_as = je_ut_new_dawn_first_started_scope
+			every_country = {
+				limit = {
+					is_player = yes
+				}
+				trigger_event = {
+					id = event_new_dawn.1
+					popup = yes
+				}
+			}
 		}
 		add_to_global_variable_list = {
 			name = ut_new_dawn_no_core_list

@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -187,9 +187,10 @@
  new_dawn_event_innovation_max_reduced_mod: "New Dawn: Research Disruption"
 
  event_new_dawn.1.t: "New Dawn"
- event_new_dawn.1.d: "A new political wave has emerged in our nation, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
+ event_new_dawn.1.d: "A new political wave has emerged, and we must decide how to respond. Will we embrace the change, or resist it? The future of our country hangs in the balance."
  event_new_dawn.1.f: "The New Dawn has arrived, and with it comes a new era of political change. The choices we make now will shape the future of our nation for generations to come. We must choose our [concept_ut_nd_path_to_utopia] and ensure we have the according laws in place to secure our vision for the future. Other nations will choose their own paths, and the world will be reshaped by the ideologies that rise to power. The time for action is now."
  event_new_dawn.1.a: "Towards a New Dawn"
+ event_new_dawn.1.a.tt: "[concept_ut_new_dawn] has started in [SCOPE.sCountry('je_ut_new_dawn_first_started_scope').GetName]"
 
  event_new_dawn.2.a: "Build foundation for core ideology"
  

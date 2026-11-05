@@ -8,10 +8,8 @@ event_new_dawn.1 = {
 	event_image = {
 		video = "unspecific_world_fair"
 	}
-	
-	trigger = {
-		NOT = { has_variable = event_new_dawn_started }
-	}
+
+	fire_only_once = yes
 
 	duration = 3
 
@@ -24,14 +22,11 @@ event_new_dawn.1 = {
 	title = event_new_dawn.1.t
 	desc = event_new_dawn.1.d
 	flavor = event_new_dawn.1.f
-	
-	immediate = {
-		set_variable = event_new_dawn_started
-	}
 
 	option = {
 		name = event_new_dawn.1.a
 		default_option = yes
+		custom_tooltip = event_new_dawn.1.a.tt
 	}
 }
 
