@@ -32,7 +32,7 @@ je_ut_new_dawn_democratic_spirit = {
 						has_ideology = ideology:ideology_fascist
 						has_ideology = ideology:ideology_integralist
 						has_ideology = ideology:ideology_ethno_nationalist
-						has_ideology = ideology:ideology_communist
+						has_ideology = ideology:ideology_communist_leader
 						has_ideology = ideology:ideology_vanguardist
 						has_ideology = ideology:ideology_anarchist
 					}

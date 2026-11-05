@@ -592,7 +592,7 @@ event_new_dawn.11 = {
 		}
 		ig:ig_armed_forces = {
 			leader = {
-				set_ideology = ideology:ideology_communist
+				set_ideology = ideology:ideology_communist_leader
 			}
 		}
 	}
@@ -626,7 +626,7 @@ event_new_dawn.11 = {
 			5 = {
 				ig:ig_armed_forces = {
 					leader = {
-						set_ideology = ideology:ideology_communist
+						set_ideology = ideology:ideology_communist_leader
 					}
 				}
 			}
@@ -739,7 +739,7 @@ event_new_dawn.12 = {
 		}
 		ig:ig_petty_bourgeoisie = {
 			leader = {
-				set_ideology = ideology:ideology_communist
+				set_ideology = ideology:ideology_communist_leader
 			}
 		}
 	}
@@ -773,7 +773,7 @@ event_new_dawn.12 = {
 			5 = {
 				ig:ig_petty_bourgeoisie = {
 					leader = {
-						set_ideology = ideology:ideology_communist
+						set_ideology = ideology:ideology_communist_leader
 					}
 				}
 			}
