@@ -1,4 +1,4 @@
-﻿ideology_child = {
+ideology_child = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/child.dds"
 
 	show_in_list = no
@@ -165,7 +165,6 @@ ideology_traditionalist = { # Average Progressiveness - -70
 		law_womens_suffrage = strongly_disapprove
 		law_equal_rights_for_women = strongly_disapprove
 		law_affirmative_equality = strongly_disapprove
-	}
 	}
 
 	lawgroup_labour_associations = {
