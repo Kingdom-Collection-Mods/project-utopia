@@ -1,4 +1,4 @@
-# Based on Made Divided Monarchists by Victoria/Pacifica/AcresOfAsteraceae
+﻿# Based on Made Divided Monarchists by Victoria/Pacifica/AcresOfAsteraceae
 # Together with ideologies and hegemon mechanic from EU4 creatin New Dawn journal chapter.
 # 
 # Refer to comments here and in 02_french_monarchism to get an idea as to how this works.
@@ -592,6 +592,44 @@ ut_new_dawn_common_progress = {
 	}
 }
 
+ut_add_new_dawn_focus_progress = { 
+	if = {
+		limit = {
+			has_modifier = je_ut_new_dawn_communist_focus
+		}
+		ut_add_new_dawn_initiation_progress_communist = {
+			VALUE = $VALUE$
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = je_ut_new_dawn_democrat_focus
+		}
+		ut_add_new_dawn_initiation_progress_democrat = {
+			VALUE = $VALUE$
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = je_ut_new_dawn_autocrat_focus
+		}
+		ut_add_new_dawn_initiation_progress_autocrat = {
+			VALUE = $VALUE$
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = je_ut_new_dawn_fascist_focus
+		}
+		ut_add_new_dawn_initiation_progress_fascist = {
+			VALUE = $VALUE$
+		}
+	}
+	else = {
+		custom_tooltip = ut_pm_research_institute_no_focus
+	}
+}
+
 ut_add_new_dawn_core_progress = { 
 	if = {
 		limit = {
@@ -865,6 +903,42 @@ ut_new_dawn_common_pressure_progress_monthly = {
 				name = je_ut_new_dawn_common_pressure_progress_from_ruler_ideology
 				add = 0.5
 			}
+		}
+	}
+}
+
+ut_add_new_dawn_initiation_progress_autocrat = {
+	je:je_ut_new_dawn = {
+		add_progress = {
+			name = ut_new_dawn_autocrat_bar
+			value = $VALUE$
+		}
+	}
+}
+
+ut_add_new_dawn_initiation_progress_democrat = {
+	je:je_ut_new_dawn = {
+		add_progress = {
+			name = ut_new_dawn_democrat_bar
+			value = $VALUE$
+		}
+	}
+}
+
+ut_add_new_dawn_initiation_progress_fascist = {
+	je:je_ut_new_dawn = {
+		add_progress = {
+			name = ut_new_dawn_fascist_bar
+			value = $VALUE$
+		}
+	}
+}
+
+ut_add_new_dawn_initiation_progress_communist = {
+	je:je_ut_new_dawn = {
+		add_progress = {
+			name = ut_new_dawn_communist_bar
+			value = $VALUE$
 		}
 	}
 }

@@ -1,4 +1,4 @@
-﻿l_german:
+l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -1238,6 +1238,17 @@
  ut_add_new_dawn_progress_neg_5: "Verliert #r 5#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_1: "Verliert #r 1#! [concept_ut_nd_progress_points]"
 
+ ut_add_new_dawn_p1_progress_communist_5: "Erhält #g 5#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_democrat_5: "Erhält #g 5#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_autocrat_5: "Erhält #g 5#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_fascist_5: "Erhält #g 5#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
+
+ ut_add_new_dawn_p1_progress_communist_neg_10: "Verliert #r 10#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_democrat_neg_10: "Verliert #r 10#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_autocrat_neg_10: "Verliert #r 10#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_fascist_neg_10: "Verliert #r 10#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_focus_5: "Erhält #g 5#! [concept_ut_nd_progress_points] für die Ideologie im [concept_ut_nd_focus]"
+
  ut_has_new_dawn_pressure_50: "Hat #b 50#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_75: "Hat #b 75#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_90: "Hat #b 90#! [concept_ut_nd_pressure]"
@@ -1247,6 +1258,7 @@
  ut_add_new_dawn_pressure_add_5: "Erhöht [concept_ut_nd_pressure] um #r 5#!"
  ut_add_new_dawn_pressure_add_10: "Erhöht [concept_ut_nd_pressure] um #r 10#!"
  ut_add_new_dawn_pressure_remove_10: "Verringert [concept_ut_nd_pressure] um #g 10#!"
+
 
  ut_force_become_subject: "Räterepublik kollektivieren"
  ut_force_become_subject_action_name: "$ut_force_become_subject$"

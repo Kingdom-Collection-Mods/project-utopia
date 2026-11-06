@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -1239,6 +1239,18 @@
  ut_add_new_dawn_progress_neg_10: "Loses #r 10#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_5: "Loses #r 5#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_1: "Loses #r 1#! [concept_ut_nd_progress_points]"
+
+ ut_add_new_dawn_p1_progress_communist_5: "Gains #b 5#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_democrat_5: "Gains #b 5#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_autocrat_5: "Gains #b 5#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_fascist_5: "Gains #b 5#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
+
+ ut_add_new_dawn_p1_progress_communist_neg_10: "Loses #r 10#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_democrat_neg_10: "Loses #r 10#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_autocrat_neg_10: "Loses #r 10#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_fascist_neg_10: "Loses #r 10#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_focus_5: "Gains #g 5#! [concept_ut_nd_progress_points] to [concept_ut_nd_focus] Ideology"
+ ut_add_new_dawn_p1_progress_focus_10: "Gains #g 10#! [concept_ut_nd_progress_points] to [concept_ut_nd_focus] Ideology"
 
  ut_has_new_dawn_pressure_50: "Has #b 50#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_75: "Has #b 75#! [concept_ut_nd_pressure]"
