@@ -542,3 +542,8 @@ je_ut_software_era_8_6_ownership_model_language_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	goods_output_software_mult = 2
 }
+
+ut_new_dawn_early_game_rule_unlock_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_weekly_innovation_add = -50
+}
