@@ -21,7 +21,7 @@ new_dawn_mod = {
 	state_radicals_from_political_movements_mult = 0.25
 	state_radicals_and_loyalists_from_sol_change_mult = 0.25
 	country_radicals_from_legitimacy_mult = 0.5
-	country_law_enactment_speed_mult = -0.33
+	country_law_enactment_speed_mult = 0.25
 }
 
 
@@ -31,7 +31,7 @@ new_dawn_phase_2_mod = {
 	political_movement_pop_attraction_mult = -0.25
 	state_radicals_from_political_movements_mult = -0.25
 	state_radicals_and_loyalists_from_sol_change_mult = -0.25
-	country_law_enactment_speed_mult = 0.33
+	country_law_enactment_speed_mult = -0.5
 }
 
 
