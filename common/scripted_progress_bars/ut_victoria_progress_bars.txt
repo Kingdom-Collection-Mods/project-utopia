@@ -5,7 +5,10 @@ ut_new_dawn_fascist_bar = {
 	desc = "ut_new_dawn_fascist_bar_desc"
 
 	#for color
-	default_green = yes
+	progress_texture = "gfx/interface/progressbar/progressbar_green.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_green_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_green_glow_line.dds"
 
 	monthly_progress = {
 		if = {
@@ -130,7 +133,10 @@ ut_new_dawn_democrat_bar = {
 	desc = "ut_new_dawn_democrat_bar_desc"
 
 	#for color
-	default = yes
+	progress_texture = "gfx/interface/progressbar/progressbar_default.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_default_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_default_glow_line.dds"
 
 	monthly_progress = {
 		if = {
@@ -256,7 +262,10 @@ ut_new_dawn_communist_bar = {
 	desc = "ut_new_dawn_communist_bar_desc"
 
 	#for color
-	default_bad = yes
+	progress_texture = "gfx/interface/progressbar/progressbar_bad.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_bad_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_bad_glow_line.dds"
 
 	monthly_progress = {
 		if = {
@@ -380,7 +389,10 @@ ut_new_dawn_autocrat_bar = {
 	name = "ut_new_dawn_autocrat_bar"
 	desc = "ut_new_dawn_autocrat_bar_desc"
 
-	default = yes
+	progress_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue_glow_line.dds"
 
 	monthly_progress = {
 		if = {
@@ -553,7 +565,10 @@ je_ut_new_dawn_autocratic_points_bar = {
 	name = "je_ut_new_dawn_points_bar"
 	desc = "je_ut_new_dawn_points_bar_desc"
 
-	default = yes
+	progress_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue_glow_line.dds"
 
 	monthly_progress = {
 		if = {
