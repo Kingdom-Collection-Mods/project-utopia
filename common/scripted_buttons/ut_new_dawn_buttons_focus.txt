@@ -110,7 +110,7 @@ ut_new_dawn_fascist_focus = {
 				any_rival_country = {
 					OR = {
 						has_modifier = je_ut_new_dawn_communist_focus
-						has_variable = ut_new_dawn_core_communist_var
+						has_modifier = ut_new_dawn_core_communist_mod
 					}
 				}
 			}
@@ -123,7 +123,7 @@ ut_new_dawn_fascist_focus = {
 				any_rival_country = {
 					OR = {
 						has_modifier = je_ut_new_dawn_democrat_focus
-						has_variable = ut_new_dawn_core_democrat_var
+						has_modifier = ut_new_dawn_core_democrat_mod
 					}
 				}
 			}
@@ -350,7 +350,7 @@ ut_new_dawn_democrat_focus = {
 				any_rival_country = {
 					OR = {
 						has_modifier = je_ut_new_dawn_fascist_focus
-						has_variable = ut_new_dawn_core_fascist_var
+						has_modifier = ut_new_dawn_core_fascist_mod
 					}
 				}
 			}
@@ -368,7 +368,7 @@ ut_new_dawn_democrat_focus = {
 				any_rival_country = {
 					OR = {
 						has_modifier = je_ut_new_dawn_autocrat_focus
-						has_variable = ut_new_dawn_core_autocrat_var
+						has_modifier = ut_new_dawn_core_autocratic_mod
 					}
 				}
 			}
@@ -391,7 +391,7 @@ ut_new_dawn_democrat_focus = {
 					country_rank >= rank_value:major_power
 					OR = {
 						has_modifier = je_ut_new_dawn_democrat_focus
-						has_variable = ut_new_dawn_core_democrat_var
+						has_modifier = ut_new_dawn_core_democratic_mod
 					}
 				}
 			}
@@ -498,7 +498,7 @@ ut_new_dawn_communist_focus = {
 				any_rival_country = {
 					OR = {
 						has_modifier = je_ut_new_dawn_fascist_focus
-						has_variable = ut_new_dawn_core_fascist_var
+						has_modifier = ut_new_dawn_core_fascist_mod
 					}
 				}
 			}
