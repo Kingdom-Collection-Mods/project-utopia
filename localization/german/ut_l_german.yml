@@ -1,4 +1,4 @@
-﻿l_german:
+l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -243,11 +243,12 @@
  event_new_dawn.13.d: "Wenn die Industrie spricht, hört die Wirtschaft der Nation zu."
  event_new_dawn.13.f: "Einflussreiche Industrielle und Geschäftsleute haben einen Führungswechsel gefordert. Sie suchen eine neue Galionsfigur, die wirtschaftliches Wachstum, Investitionen und Stabilität priorisiert."
 
- event_new_dawn.20.t: "Aufstand der Radikalen"
- event_new_dawn.20.d: "Radikale Fraktionen mobilisieren sich und drohen, die bestehende Ordnung zu stürzen. Sie fordern einen Ideologiewechsel."
- event_new_dawn.20.f: "Radikale Gruppen, angetrieben von Frustration und dem Wunsch nach Veränderung, haben einen Aufstand begonnen. Sie wollen die bestehende Machtstruktur zerschlagen und eine neue ideologische Ordnung errichten. Die Lage ist volatil."
+ event_new_dawn.50.t: "Aufstand der Radikalen"
+ event_new_dawn.50.d: "Radikale Fraktionen mobilisieren sich und drohen, die bestehende Ordnung zu stürzen. Sie fordern einen Ideologiewechsel."
+ event_new_dawn.50.f: "Radikale Gruppen, angetrieben von Frustration und dem Wunsch nach Veränderung, haben einen Aufstand begonnen. Sie wollen die bestehende Machtstruktur zerschlagen und eine neue ideologische Ordnung errichten. Die Lage ist volatil."
  
- event_new_dawn.20.a: "Radikale Gruppen formieren sich"
+ event_new_dawn.50.a: "Radikale Gruppen formieren sich"
+
 
  event_new_dawn.101.t: "Welle der Begeisterung"
  event_new_dawn.101.d: "Eine Welle öffentlicher Begeisterung hat das Land erfasst, da unser ideologisches Programm in der Bevölkerung großen Anklang findet."

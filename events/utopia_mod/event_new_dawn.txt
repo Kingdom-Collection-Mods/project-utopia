@@ -1,4 +1,4 @@
-﻿namespace = event_new_dawn
+namespace = event_new_dawn
 
 #Journal Entries core direct trigger events 1-99
 #New Dawn start
@@ -1941,12 +1941,12 @@ event_new_dawn.16 = {
 
 
 #Radicals
-event_new_dawn.20 = {
+event_new_dawn.50 = {
 	type = country_event
 	placement = ROOT
-	title = event_new_dawn.20.t
-	desc = event_new_dawn.20.d
-	flavor = event_new_dawn.20.f
+	title = event_new_dawn.50.t
+	desc = event_new_dawn.50.d
+	flavor = event_new_dawn.50.f
 
 	event_image = {
 		video = "europenorthamerica_springtime_of_nations"
@@ -2002,7 +2002,7 @@ event_new_dawn.20 = {
 	#Happens
 	option = {
 		default_option = yes
-		name = event_new_dawn.20.a
+		name = event_new_dawn.50.a
 		if = {
 			limit = {
 				ut_has_new_dawn_pressure_points = {
