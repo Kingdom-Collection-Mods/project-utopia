@@ -1964,6 +1964,7 @@ event_new_dawn.50 = {
 		# too much for ai
 		is_ai = no
 		NOT = { has_modifier = new_dawn_event_radicals_mod }
+		NOT = { has_modifier = new_dawn_event_suppress_radicals_mod }
 		OR = {
 			NOT = {	ut_new_dawn_has_core_trigger = yes }
 			ut_has_new_dawn_pressure_points = {
@@ -2026,6 +2027,10 @@ event_new_dawn.50 = {
 		name = event_new_dawn.suppress_random_decision
 		add_radicals = {
 			value = 0.01
+		}
+		add_modifier = {
+			name = new_dawn_event_suppress_radicals_mod
+			days = 365
 		}
 	}
 }

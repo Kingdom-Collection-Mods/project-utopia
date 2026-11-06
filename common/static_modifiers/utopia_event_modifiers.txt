@@ -40,6 +40,10 @@ new_dawn_event_radicals_mod = {
 	political_movement_radicalism_add = 0.25
 }
 
+new_dawn_event_suppress_radicals_mod = {
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
+}
+
 new_dawn_event_disapproval_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
 	interest_group_approval_add = -2

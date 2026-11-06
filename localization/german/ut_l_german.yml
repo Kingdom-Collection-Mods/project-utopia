@@ -185,6 +185,7 @@
  new_dawn_event_innovation_max_reduced_mod: "Neuer Aufbruch: Forschung gestört"
 
  new_dawn_event_radicals_mod: "Neuer Aufbruch: Radikale"
+ new_dawn_event_suppress_radicals_mod: "Neuer Aufbruch: Radikale unterdrücken"
 
  event_new_dawn.1.t: "Neuer Aufbruch"
  event_new_dawn.1.d: "Eine neue politische Welle hat unsere Nation erfasst, und wir müssen entscheiden, wie wir darauf reagieren. Werden wir den Wandel begrüßen oder ihm widerstehen? Die Zukunft unseres Landes steht auf dem Spiel."
