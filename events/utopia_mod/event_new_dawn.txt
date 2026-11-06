@@ -1020,14 +1020,14 @@ event_new_dawn.13 = {
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
 
 	trigger = {
-		NOT = { has_variable = event_new_dawn_16_done }
+		NOT = { has_variable = event_new_dawn_13_done }
 		ig:ig_industrialists = {
 			is_marginal = no
 		}
 	}
 
 	immediate = {
-		set_variable = event_new_dawn_16_done
+		set_variable = event_new_dawn_13_done
 	}
 
 	#Ideology already aligns
@@ -2056,7 +2056,7 @@ event_new_dawn.51 = {
 
 	trigger = {
 		is_ai = no
-		ut_new_dawn_has_core_trigger = yes
+		NOT = { ut_new_dawn_has_core_trigger = yes }
 	}
 
 	option = {

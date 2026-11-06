@@ -123,7 +123,7 @@ ut_new_dawn_fascist_focus = {
 				any_rival_country = {
 					OR = {
 						has_modifier = je_ut_new_dawn_democrat_focus
-						has_modifier = ut_new_dawn_core_democrat_mod
+						has_modifier = ut_new_dawn_core_democratic_mod
 					}
 				}
 			}
@@ -518,7 +518,7 @@ ut_new_dawn_communist_focus = {
 					country_rank >= rank_value:major_power
 					OR = {
 						has_modifier = je_ut_new_dawn_communist_focus
-						has_variable = ut_new_dawn_core_communist_var
+						has_modifier = ut_new_dawn_core_communist_mod
 					}
 				}
 			}

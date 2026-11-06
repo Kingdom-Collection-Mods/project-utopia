@@ -1526,7 +1526,7 @@ law_decolonization = {
 				limit = {
 					ROOT = {
 						is_in_power_bloc = yes
-						has_variable = ut_new_dawn_core_communist_var
+						has_modifier = ut_new_dawn_core_communist_mod
 					}
 				}
 				join_power_bloc = ROOT
@@ -1548,8 +1548,8 @@ law_decolonization = {
 	
 	ai_will_do = {
 		OR = {
-			has_variable = ut_new_dawn_core_democrat_var
-			has_variable = ut_new_dawn_core_communist_var
+			has_modifier = ut_new_dawn_core_democratic_mod
+			has_modifier = ut_new_dawn_core_communist_mod
 		}
 	}
 
