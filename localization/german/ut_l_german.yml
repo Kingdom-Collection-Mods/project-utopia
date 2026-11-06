@@ -249,6 +249,14 @@ l_german:
  
  event_new_dawn.50.a: "Radikale Gruppen formieren sich"
 
+ event_new_dawn.51.t: "Eine neue Stimme in der Presse"
+ event_new_dawn.51.d: "Eine weit verbreitete Zeitung hat eine Reihe von Artikeln über die Zukunft der Nation veröffentlicht und damit im ganzen Land eine lebhafte Debatte ausgelöst."
+ event_new_dawn.51.f: "Die Leitartikel der Zeitung präsentieren konkurrierende Vorstellungen von der Zukunft des Landes. Leser versammeln sich in Cafés und öffentlichen Sälen, um die Ideen zu diskutieren, und jede Bewegung sieht die Chance, neue Unterstützung zu gewinnen."
+ event_new_dawn.51.dem: "Die demokratische Vision fördern"
+ event_new_dawn.51.aut: "Die autokratische Vision fördern"
+ event_new_dawn.51.com: "Die kommunistische Vision fördern"
+ event_new_dawn.51.fas: "Die faschistische Vision fördern"
+ event_new_dawn.51.random: "Nicht in die Presse eingreifen"
 
  event_new_dawn.101.t: "Welle der Begeisterung"
  event_new_dawn.101.d: "Eine Welle öffentlicher Begeisterung hat das Land erfasst, da unser ideologisches Programm in der Bevölkerung großen Anklang findet."
@@ -1261,6 +1269,14 @@ l_german:
  ut_add_new_dawn_p1_progress_democrat_5: "Erhält #g 5#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"
  ut_add_new_dawn_p1_progress_autocrat_5: "Erhält #g 5#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
  ut_add_new_dawn_p1_progress_fascist_5: "Erhält #g 5#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_democrat_10: "Erhält #g 10#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_autocrat_10: "Erhält #g 10#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_communist_10: "Erhält #g 10#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_fascist_10: "Erhält #g 10#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_democrat_neg_5: "Verliert #r 5#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_autocrat_neg_5: "Verliert #r 5#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_communist_neg_5: "Verliert #r 5#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_fascist_neg_5: "Verliert #r 5#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
 
  ut_add_new_dawn_p1_progress_communist_neg_10: "Verliert #r 10#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
  ut_add_new_dawn_p1_progress_democrat_neg_10: "Verliert #r 10#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"

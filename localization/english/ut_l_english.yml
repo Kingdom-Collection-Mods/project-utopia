@@ -250,6 +250,15 @@ l_english:
 
  event_new_dawn.50.a: "Radical groups are forming"
 
+ event_new_dawn.51.t: "A New Voice in the Press"
+ event_new_dawn.51.d: "A widely circulated newspaper has published a series of articles on the future of the nation, sparking a lively debate across the country."
+ event_new_dawn.51.f: "The newspaper's editorial pages are filled with competing visions for the country's future. Readers gather in cafes and public halls to discuss the ideas, and each movement sees an opportunity to win new support."
+ event_new_dawn.51.dem: "Promote the democratic vision"
+ event_new_dawn.51.aut: "Promote the autocratic vision"
+ event_new_dawn.51.com: "Promote the communist vision"
+ event_new_dawn.51.fas: "Promote the fascist vision"
+ event_new_dawn.51.random: "Do not interfere with the press"
+
  event_new_dawn.101.t: "Wave of Popular Enthusiasm"
  event_new_dawn.101.d: "A groundswell of public excitement has taken hold as our ideological program resonates deeply with the population."
  event_new_dawn.101.f: "Newspapers praise the direction of the state, public lectures draw overflowing crowds, and a new generation of thinkers is emerging from the academic institutions. Our researchers and theorists are energised and producing at a remarkable pace."
@@ -1263,6 +1272,14 @@ l_english:
  ut_add_new_dawn_p1_progress_democrat_5: "Gains #b 5#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"
  ut_add_new_dawn_p1_progress_autocrat_5: "Gains #b 5#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
  ut_add_new_dawn_p1_progress_fascist_5: "Gains #b 5#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_democrat_10: "Gains #b 10#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_autocrat_10: "Gains #b 10#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_communist_10: "Gains #b 10#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_fascist_10: "Gains #b 10#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_democrat_neg_5: "Loses #r 5#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_autocrat_neg_5: "Loses #r 5#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_communist_neg_5: "Loses #r 5#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_fascist_neg_5: "Loses #r 5#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
 
  ut_add_new_dawn_p1_progress_communist_neg_10: "Loses #r 10#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
  ut_add_new_dawn_p1_progress_democrat_neg_10: "Loses #r 10#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"

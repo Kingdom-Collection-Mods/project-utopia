@@ -2030,6 +2030,96 @@ event_new_dawn.50 = {
 	}
 }
 
+#News Incident
+event_new_dawn.51 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.51.t
+	desc = event_new_dawn.51.d
+	flavor = event_new_dawn.51.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		is_ai = no
+		ut_new_dawn_has_core_trigger = yes
+	}
+
+	option = {
+		name = event_new_dawn.51.dem
+		custom_tooltip = ut_add_new_dawn_p1_progress_democrat_5
+		ut_add_new_dawn_initiation_progress_democrat = {
+			VALUE = 5
+		}
+	}
+
+	option = {
+		name = event_new_dawn.51.aut
+		custom_tooltip = ut_add_new_dawn_p1_progress_autocrat_5
+		ut_add_new_dawn_initiation_progress_autocrat = {
+			VALUE = 5
+		}
+	}
+
+	option = {
+		name = event_new_dawn.51.com
+		custom_tooltip = ut_add_new_dawn_p1_progress_communist_5
+		ut_add_new_dawn_initiation_progress_communist = {
+			VALUE = 5
+		}
+	}
+
+	option = {
+		name = event_new_dawn.51.fas
+		custom_tooltip = ut_add_new_dawn_p1_progress_fascist_5
+		ut_add_new_dawn_initiation_progress_fascist = {
+			VALUE = 5
+		}
+	}
+	option = {
+		name = event_new_dawn.51.random
+		default_option = yes
+		add_radicals = {
+			value = -0.005
+		}
+		random_list = {
+			25 = {
+				custom_tooltip = ut_add_new_dawn_p1_progress_fascist_5
+				ut_add_new_dawn_initiation_progress_fascist = {
+					VALUE = 5
+				}
+			}
+			25 = {
+				custom_tooltip = ut_add_new_dawn_p1_progress_democrat_5
+				ut_add_new_dawn_initiation_progress_democrat = {
+					VALUE = 5
+				}
+			}
+			25 = {
+				custom_tooltip = ut_add_new_dawn_p1_progress_autocrat_5
+				ut_add_new_dawn_initiation_progress_autocrat = {
+					VALUE = 5
+				}
+			}
+			25 = {
+				custom_tooltip = ut_add_new_dawn_p1_progress_communist_5
+				ut_add_new_dawn_initiation_progress_communist = {
+					VALUE = 5
+				}
+			}
+		}
+	}
+}
+
 
 #Popular Enthusiasm
 event_new_dawn.101 = {

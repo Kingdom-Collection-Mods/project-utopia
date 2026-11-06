@@ -372,6 +372,7 @@ je_ut_new_dawn = {
 			10 = event_new_dawn.16
 
 			10 = event_new_dawn.50   #Radicals
+			1 = event_new_dawn.51   #News incident
 
 			#Pressure Events
 			#Generic Good (<25 pressure)
