@@ -1,0 +1,6 @@
+﻿colors = {
+    ut_fascist_green = rgb{ 27 86 44 }
+    ut_autocrat_blue = rgb{ 22 41 110 }
+    ut_democrat_blue = rgb{ 41 79 91 }
+    ut_communist_red = rgb{ 116 49 47 }
+}

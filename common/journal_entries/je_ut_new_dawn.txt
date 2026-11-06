@@ -466,6 +466,53 @@
 		}
 	}
 
+	map_color = {
+		if = {
+			limit = {
+				owner ?= { 
+					OR = {
+						has_modifier = je_ut_new_dawn_autocrat_focus
+						has_modifier = ut_new_dawn_core_autocratic_mod
+					}
+				}
+			}
+			value = ut_autocrat_blue
+		}
+		else_if = {
+			limit = {
+				owner ?= { 
+					OR = {
+						has_modifier = je_ut_new_dawn_communist_focus
+						has_modifier = ut_new_dawn_core_communist_mod
+					}
+				}
+			}
+			value = ut_communist_red
+		}
+		else_if = {
+			limit = {
+				owner ?= { 
+					OR = {
+						has_modifier = je_ut_new_dawn_fascist_focus
+						has_modifier = ut_new_dawn_core_fascist_mod
+					}
+				}
+			}
+			value = ut_fascist_green
+		}
+		else_if = {
+			limit = {
+				owner ?= { 
+					OR = {
+						has_modifier = je_ut_new_dawn_democrat_focus
+						has_modifier = ut_new_dawn_core_democratic_mod
+					}
+				}
+			}
+			value = ut_democrat_blue
+		}
+	}
+
 	weight = 100
 
 	should_be_pinned_by_default_uninvolved_or_context = yes
