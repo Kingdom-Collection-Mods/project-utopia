@@ -60,6 +60,19 @@ ut_new_dawn_fascist_bar = {
 			else = {
 				if ={
 					limit = {
+						OR = {
+							has_game_rule = ut_new_dawn_start_era_4
+							has_game_rule = ut_new_dawn_start_era_5
+						}
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					#no malus if starting era 4 or 5
+				}
+				else_if ={
+					limit = {
 						pop_type_percent_country = {
 							target = pop_type:service_workers
 							value < 0.01
@@ -189,6 +202,19 @@ ut_new_dawn_democrat_bar = {
 			else = {
 				if ={
 					limit = {
+						OR = {
+							has_game_rule = ut_new_dawn_start_era_4
+							has_game_rule = ut_new_dawn_start_era_5
+						}
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					#no malus if starting era 4 or 5
+				}
+				else_if ={
+					limit = {
 						pop_type_percent_country = {
 							target = pop_type:service_workers
 							value < 0.01
@@ -314,8 +340,21 @@ ut_new_dawn_communist_bar = {
 				}
 				multiply = 2
 			}
-			else = {
+			else = {				
 				if ={
+					limit = {
+						OR = {
+							has_game_rule = ut_new_dawn_start_era_4
+							has_game_rule = ut_new_dawn_start_era_5
+						}
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					#no malus if starting era 4 or 5
+				}
+				else_if ={
 					limit = {
 						pop_type_percent_country = {
 							target = pop_type:service_workers
@@ -447,11 +486,9 @@ ut_new_dawn_autocrat_bar = {
 			else = {
 				if ={
 					limit = {
-						NOT = {
-							OR = {
-								has_game_rule = ut_new_dawn_start_era_4
-								has_game_rule = ut_new_dawn_start_era_5
-							}
+						OR = {
+							has_game_rule = ut_new_dawn_start_era_4
+							has_game_rule = ut_new_dawn_start_era_5
 						}
 						pop_type_percent_country = {
 							target = pop_type:service_workers
