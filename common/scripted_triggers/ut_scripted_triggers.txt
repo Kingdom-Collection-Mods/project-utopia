@@ -83,6 +83,7 @@ ut_ideology_new_dawn_fascist_trigger = {
 	OR = {
 		has_ideology = ideology:ideology_ethno_nationalist
 		has_ideology = ideology:ideology_fascist
+		has_ideology = ideology:ut_ideology_national_socialist_leader
 		AND = {
 			ROOT = {		
 				has_modifier = je_ut_new_dawn_fascist_focus
@@ -92,8 +93,10 @@ ut_ideology_new_dawn_fascist_trigger = {
 				has_ideology = ideology:ideology_corporatist_leader
 				has_ideology = ideology:ideology_land_reformer
 				has_ideology = ideology:ideology_modernizer_leader
-				has_ideology = ideology:ut_ideology_national_socialist_leader
+				has_ideology = ideology:ideology_jingoist_leader
 				has_ideology = ideology:ideology_shojoi
+				has_ideology = ideology:ideology_despotic_utopian
+				has_ideology = ideology:ideology_carlist
 			}
 		}
 	}
@@ -104,9 +107,8 @@ ut_ideology_new_dawn_democrat_trigger = {
 		has_ideology = ideology:ideology_liberal_leader
 		has_ideology = ideology:ideology_humanitarian
 		has_ideology = ideology:ideology_republican_leader
-		#has_ideology = ideology:ideology_social_democrat
-		has_ideology = ideology:ideology_utopian
 		has_ideology = ideology:ut_ideology_cosmopolitan_leader
+		has_ideology = ideology:ideology_ilustrado
 		AND = {
 			custom_tooltip = {
 				text = ut_new_dawn_focus_selected_tt
@@ -123,6 +125,8 @@ ut_ideology_new_dawn_democrat_trigger = {
 				has_ideology = ideology:ideology_modernizer_leader
 				has_ideology = ideology:ideology_market_liberal
 				has_ideology = ideology:ut_ideology_environmentalist_leader
+				has_ideology = ideology:ideology_sovereignist_leader
+				has_ideology = ideology:ideology_utilitarian_leader
 			}
 		}
 	}
@@ -132,11 +136,11 @@ ut_ideology_new_dawn_democrat_trigger = {
 ut_ideology_new_dawn_autocrat_trigger = {
 	OR = {
 		has_ideology = ideology:ideology_authoritarian
-		has_ideology = ideology:ideology_humanitarian_royalist
 		has_ideology = ideology:ideology_integralist
 		has_ideology = ideology:ideology_royalist
 		has_ideology = ideology:ideology_traditionalist
 		has_ideology = ideology:ideology_traditionalist_minoritarian
+		has_ideology = ideology:ideology_slaver
 		AND = {
 			custom_tooltip = {
 				text = ut_new_dawn_focus_selected_tt
@@ -146,10 +150,19 @@ ut_ideology_new_dawn_autocrat_trigger = {
 			}
 			OR = {
 				has_ideology = ideology:ideology_moderate
+				has_ideology = ideology:ideology_humanitarian_royalist
+				has_ideology = ideology:ideology_theocrat
 				has_ideology = ideology:ideology_jingoist_leader
 				has_ideology = ideology:ideology_protectionist
 				has_ideology = ideology:ideology_corporatist_leader
 				has_ideology = ideology:ideology_mitogaku
+				has_ideology = ideology:ideology_bonapartist
+				has_ideology = ideology:ideology_legitimist
+				has_ideology = ideology:ideology_orleanist
+				has_ideology = ideology:ideology_jacksonian_democrat
+				has_ideology = ideology:ideology_despotic_utopian
+				has_ideology = ideology:ideology_carlist
+				has_ideology = ideology:ideology_miguelist
 			}
 		}
 	}
@@ -162,6 +175,8 @@ ut_ideology_new_dawn_communist_trigger = {
 		has_ideology = ideology:ideology_communist_leader
 		has_ideology = ideology:ideology_vanguardist
 		has_ideology = ideology:ideology_nihilist
+		has_ideology = ideology:ideology_state_socialist
+		has_ideology = ideology:ideology_utilitarian_leader
 		AND = {
 			ROOT = {
 				has_modifier = je_ut_new_dawn_communist_focus
@@ -171,6 +186,8 @@ ut_ideology_new_dawn_communist_trigger = {
 				has_ideology = ideology:ideology_land_reformer
 				has_ideology = ideology:ideology_modernizer_leader
 				has_ideology = ideology:ideology_positivist
+				has_ideology = ideology:ideology_luddite
+				has_ideology = ideology:ideology_sovereignist_leader
 			}
 		}
 	}

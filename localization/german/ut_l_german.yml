@@ -1,4 +1,4 @@
-﻿l_german:
+l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -438,7 +438,7 @@
  ut_nd_communist_progress_from_events: "Ereignisse und andere Effekte"
  ut_new_dawn_communist_status: "Kommunistische Ideen prägen den Diskurs"
  concept_ut_nd_communist_characters: "Kommunistische Charaktere"
- concept_ut_nd_communist_characters_desc: "Kommunistische [concept_character] [Concept('concept_ideology', '$concept_ideologies$')] sind: [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_vanguardist').GetName], and [GetIdeology('ideology_nihilist').GetName].\nWenn Kommunistischer [concept_ut_nd_focus] aktiv ist, sind ebenfalls enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ideology_positivist').GetName]."
+ concept_ut_nd_communist_characters_desc: "Kommunistische [concept_character] [Concept('concept_ideology', '$concept_ideologies$')] sind: [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_communist_leader').GetName], [GetIdeology('ideology_vanguardist').GetName], [GetIdeology('ideology_nihilist').GetName], [GetIdeology('ideology_state_socialist').GetName] und [GetIdeology('ideology_utilitarian_leader').GetName].\nWenn Kommunistischer [concept_ut_nd_focus] aktiv ist, sind ebenfalls enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName], [GetIdeology('ideology_positivist').GetName], [GetIdeology('ideology_luddite').GetName] und [GetIdeology('ideology_sovereignist_leader').GetName]."
 
  je_ut_new_dawn_democrat_focus: "Demokratischer Fokus"
  je_ut_new_dawn_democrat_focus_desc: "Demokratischer Fokus ausgewählt"
@@ -511,7 +511,7 @@
  ut_nd_democrat_progress_from_focus: "Demokratischer Fokus"
  concept_ut_nd_democrat_interest_group_tt: "IG hat Anführer mit [concept_ut_nd_democrat_characters] Ideologie"
  concept_ut_nd_democrat_characters: "Demokratische Charaktere"
- concept_ut_nd_democrat_characters_desc: "Demokratische Charakter Ideologien sind: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName], [GetIdeology('ideology_utopian').GetName], and [GetIdeology('ut_ideology_cosmopolitan_leader').GetName].\nWenn Demokratischer [concept_ut_nd_focus] aktiv ist, umfasst auch: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_pacifist').GetName], [GetIdeology('ideology_feminist').GetName], [GetIdeology('ut_ideology_environmentalist_leader').GetName], [GetIdeology('ideology_market_liberal').GetName] und [GetIdeology('ideology_modernizer_leader').GetName]."
+ concept_ut_nd_democrat_characters_desc: "Demokratische Charakter Ideologien sind: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ut_ideology_cosmopolitan_leader').GetName], and [GetIdeology('ideology_ilustrado').GetName].\nWenn Demokratischer [concept_ut_nd_focus] aktiv ist, umfasst auch: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_pacifist').GetName], [GetIdeology('ideology_feminist').GetName], [GetIdeology('ut_ideology_environmentalist_leader').GetName], [GetIdeology('ideology_market_liberal').GetName], [GetIdeology('ideology_modernizer_leader').GetName], [GetIdeology('ideology_sovereignist_leader').GetName] und [GetIdeology('ideology_utilitarian_leader').GetName]."
  ut_new_dawn_democrat_status: "Demokratische Ideen prägen den Diskurs"
  ut_new_dawn_phase_2_status_je: "Ideologie etabliert"
  ut_nd_decaying_progress: "$new_dawn_phase_2_mod$"
@@ -664,7 +664,7 @@
  ut_nd_autocrat_progress_from_focus: "Autokratischer Fokus"
  ut_nd_autocrat_progress_from_events: "Ereignisse und andere Effekte"
  concept_ut_nd_autocrat_characters: "Autokratische Charaktere"
- concept_ut_nd_autocrat_characters_desc: "Autokratische Charakter Ideologien sind: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], und [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nWenn der autokratische [concept_ut_nd_focus] aktiv ist, sind auch enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], [GetIdeology('ideology_corporatist_leader').GetName] und [GetIdeology('ideology_mitogaku').GetName."
+ concept_ut_nd_autocrat_characters_desc: "Autokratische Charakter Ideologien sind: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], [GetIdeology('ideology_traditionalist_minoritarian').GetName] und [GetIdeology('ideology_slaver').GetName].\nWenn der autokratische [concept_ut_nd_focus] aktiv ist, sind auch enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_theocrat').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_mitogaku').GetName], [GetIdeology('ideology_bonapartist').GetName], [GetIdeology('ideology_legitimist').GetName], [GetIdeology('ideology_orleanist').GetName], [GetIdeology('ideology_jacksonian_democrat').GetName], [GetIdeology('ideology_despotic_utopian').GetName], [GetIdeology('ideology_carlist').GetName] und [GetIdeology('ideology_miguelist').GetName]."
  ut_new_dawn_autocrat_status: "Autokratische Ideen prägen den Diskurs"#Core Ideology concepts
 
 #Core Ideology concepts
@@ -709,7 +709,7 @@
  ut_nd_fascist_progress_from_focus: "Faschistischer Fokus"
  ut_nd_fascist_progress_from_events: "Ereignisse und andere Effekte"
  concept_ut_nd_fascist_characters: "Faschistische Charaktere"
- concept_ut_nd_fascist_characters_desc: "Faschistische Charakter Ideologien sind: [GetIdeology('ideology_ethno_nationalist').GetName] und [GetIdeology('ideology_fascist').GetName].\nWenn Faschistischer [concept_ut_nd_focus] aktiv ist, sind ebenfalls enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName], [GetIdeology('ideology_shojoi').GetName] und [GetIdeology('ut_ideology_national_socialist_leader').GetName]."
+ concept_ut_nd_fascist_characters_desc: "Faschistische Charakter Ideologien sind: [GetIdeology('ideology_ethno_nationalist').GetName], [GetIdeology('ut_ideology_national_socialist_leader').GetName] und [GetIdeology('ideology_fascist').GetName].\nWenn Faschistischer [concept_ut_nd_focus] aktiv ist, sind ebenfalls enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_shojoi').GetName], [GetIdeology('ideology_despotic_utopian').GetName] und [GetIdeology('ideology_carlist').GetName]."
  ut_new_dawn_fascist_status: "Faschistische Ideen prägen den Diskurs"
 
  ut_nd_multiplier_from_is_ai: "x2 Multiplikator für KI-Nationen"
