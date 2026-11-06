@@ -469,9 +469,14 @@
 	map_color = {
 		if = {
 			limit = {
-				owner ?= { 
-					OR = {
-						has_modifier = je_ut_new_dawn_autocrat_focus
+				OR = {
+					AND = {
+						is_capital = yes
+						owner ?= {
+							has_modifier = je_ut_new_dawn_autocrat_focus
+						}
+					}
+					owner ?= {
 						has_modifier = ut_new_dawn_core_autocratic_mod
 					}
 				}
@@ -480,9 +485,14 @@
 		}
 		else_if = {
 			limit = {
-				owner ?= { 
-					OR = {
-						has_modifier = je_ut_new_dawn_communist_focus
+				OR = {
+					AND = {
+						is_capital = yes
+						owner ?= {
+							has_modifier = je_ut_new_dawn_communist_focus
+						}
+					}
+					owner ?= {
 						has_modifier = ut_new_dawn_core_communist_mod
 					}
 				}
@@ -491,9 +501,14 @@
 		}
 		else_if = {
 			limit = {
-				owner ?= { 
-					OR = {
-						has_modifier = je_ut_new_dawn_fascist_focus
+				OR = {
+					AND = {
+						is_capital = yes
+						owner ?= {
+							has_modifier = je_ut_new_dawn_fascist_focus
+						}
+					}
+					owner ?= {
 						has_modifier = ut_new_dawn_core_fascist_mod
 					}
 				}
@@ -502,14 +517,27 @@
 		}
 		else_if = {
 			limit = {
-				owner ?= { 
-					OR = {
-						has_modifier = je_ut_new_dawn_democrat_focus
+				OR = {
+					AND = {
+						is_capital = yes
+						owner ?= {
+							has_modifier = je_ut_new_dawn_democrat_focus
+						}
+					}
+					owner ?= {
 						has_modifier = ut_new_dawn_core_democratic_mod
 					}
 				}
 			}
 			value = ut_democrat_blue
+		}
+		else_if = {
+			limit = {
+				owner ?= {
+					has_journal_entry = je_ut_new_dawn
+				}
+			}
+			value = ut_no_focus_grey
 		}
 	}
 
