@@ -60,6 +60,18 @@ ut_new_dawn_fascist_focus = {
 		}
 		if = {
 			limit = {
+				NOT = { has_game_rule = ut_new_dawn_historical_focus_no }
+				OR = {
+					c:JAP ?= this
+					c:HUN ?= this
+					c:FIN ?= this
+				}
+			}
+			add = 10
+		}
+
+		if = {
+			limit = {
 				has_law = law_type:law_ethnostate
 			}
 			add = 40
@@ -85,15 +97,14 @@ ut_new_dawn_fascist_focus = {
 		if = {
 			#Historically Germany, Italy, and Japan below in "ranking"?
 			limit = {
-				global_country_ranking <= 5
+				global_country_ranking >= 5
 				country_rank >= rank_value:great_power
 			}
 			add = 10
 		}
 		if = {
-			#Red scare if not socialist them self?
+			#Red scare if not socialist them self
 			limit = {
-				NOT = { has_law = law_type:law_universal_suffrage }
 				NOT = { has_law = law_type:law_cooperative_ownership }
 				NOT = { has_law = law_type:law_command_economy }
 				any_rival_country = {
@@ -106,11 +117,9 @@ ut_new_dawn_fascist_focus = {
 			add = 20
 		}
 		if = {
-			#Red scare if not socialist them self?
+			#Dem scare if not democratic them self
 			limit = {
 				NOT = { has_law = law_type:law_universal_suffrage }
-				NOT = { has_law = law_type:law_cooperative_ownership }
-				NOT = { has_law = law_type:law_command_economy }
 				any_rival_country = {
 					OR = {
 						has_modifier = je_ut_new_dawn_democrat_focus
@@ -173,9 +182,14 @@ ut_new_dawn_autocrat_focus = {
 				NOT = { has_game_rule = ut_new_dawn_historical_focus_no }
 				OR = {
 					c:AUS ?= this
+					c:SPA ?= this
+					c:CHI ?= this
+					c:RUS ?= this
+					c:SWE ?= this
+					c:POR ?= this
 				}
 			}
-			add = 40
+			add = 10
 		}
 		if = {
 			#let's stay in power, if nothing else to bother
@@ -262,7 +276,7 @@ ut_new_dawn_democrat_focus = {
 				c:USA ?= this
 				NOT = { exists = c:CSA }
 			}
-			add = 40
+			add = 30
 		}
 		if = {
 			limit = {
@@ -270,19 +284,28 @@ ut_new_dawn_democrat_focus = {
 				c:GBR ?= this
 				exists = c:GER
 			}
-			add = 20
+			add = 30
 		}
 		if = {
 			limit = {
 				NOT = { has_game_rule = ut_new_dawn_historical_focus_no }
-				c:GBR ?= this
+				OR = {
+					c:USA ?= this
+					c:GBR ?= this
+					c:FRA ?= this
+					c:POL ?= this
+					c:BEL ?= this
+					c:NET ?= this
+					c:NOR ?= this
+					c:DEN ?= this
+				}
 			}
-			add = 20
+			add = 10
 		}
 		if = {
 			#Historically USA and Great Britain high "ranking"?
 			limit = {
-				global_country_ranking > 5
+				global_country_ranking < 5
 			}
 			add = 10
 		}
@@ -351,6 +374,29 @@ ut_new_dawn_democrat_focus = {
 			}
 			add = 10
 		}
+
+		if = {
+			#democratic wave if major ally democratic and no core law of other path
+			limit = {
+				NOR = {
+					has_law = law_type:law_ethnostate
+					has_law = law_type:law_neo_ethno_state
+					has_law = law_type:law_autocracy
+					has_law = law_type:law_oligarchy
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+					has_law = law_type:law_council_republic
+				}
+				any_scope_ally = {
+					country_rank >= rank_value:major_power
+					OR = {
+						has_modifier = je_ut_new_dawn_democrat_focus
+						has_variable = ut_new_dawn_core_democrat_var
+					}
+				}
+			}
+			add = 10
+		}
 	}
 }
 
@@ -410,6 +456,16 @@ ut_new_dawn_communist_focus = {
 		}
 		if = {
 			limit = {
+				NOT = { has_game_rule = ut_new_dawn_historical_focus_no }
+				OR = {
+					c:FRA ?= this
+					c:CHI ?= this
+				}
+			}
+			add = 10
+		}
+		if = {
+			limit = {
 				OR = {
 					has_law = law_type:law_cooperative_ownership
 					has_law = law_type:law_command_economy
@@ -426,13 +482,13 @@ ut_new_dawn_communist_focus = {
 		if = {
 			#to balance with fascism
 			limit = {
-				global_country_ranking <= 5
+				global_country_ranking >= 5
 				country_rank >= rank_value:great_power
 			}
 			add = 5
 		}
 		if = {
-			#Fascist scare if communist them self?
+			#Fascist scare if communist them self
 			limit = {
 				OR = {
 					has_law = law_type:law_cooperative_ownership
@@ -447,6 +503,26 @@ ut_new_dawn_communist_focus = {
 				}
 			}
 			add = 20
+		}
+		if = {
+			#communist wave if major ally communist and no core law of other path
+			limit = {
+				NOR = {
+					has_law = law_type:law_neo_ethno_state
+					has_law = law_type:law_ethnostate
+					has_law = law_type:law_autocracy
+					has_law = law_type:law_oligarchy
+					#democratic core laws are ok
+				}
+				any_scope_ally = {
+					country_rank >= rank_value:major_power
+					OR = {
+						has_modifier = je_ut_new_dawn_communist_focus
+						has_variable = ut_new_dawn_core_communist_var
+					}
+				}
+			}
+			add = 10
 		}
 		if = {
 			limit = {
