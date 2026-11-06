@@ -1,4 +1,4 @@
-je_ut_new_dawn = {
+﻿je_ut_new_dawn = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
@@ -363,9 +363,15 @@ je_ut_new_dawn = {
 		random_events = {
 			#og was 400
 			200 = 0
+			#IG Leader Ideological Change
 			10 = event_new_dawn.11
 			10 = event_new_dawn.12
-			10 = event_new_dawn.13   #Radicals
+			10 = event_new_dawn.13
+			10 = event_new_dawn.14
+			10 = event_new_dawn.15
+			10 = event_new_dawn.16
+
+			10 = event_new_dawn.20   #Radicals
 
 			#Pressure Events
 			#Generic Good (<25 pressure)

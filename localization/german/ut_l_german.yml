@@ -1,4 +1,4 @@
-l_german:
+﻿l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -227,11 +227,27 @@ l_german:
  event_new_dawn.12.d: "Wenn das Bürgertum spricht, formiert es eine mächtige Koalition."
  event_new_dawn.12.f: "Einflussreiche Industrielle und Geschäftsleute haben aus Sorge über den Kurs des Landes einen Führungswechsel gefordert. Sie setzen sich für eine neue Galionsfigur ein, die wirtschaftliches Wachstum und Stabilität priorisiert."
 
- event_new_dawn.13.t: "Aufstand der Radikalen"
- event_new_dawn.13.d: "Radikale Fraktionen mobilisieren sich und drohen, die bestehende Ordnung zu stürzen. Sie fordern einen Ideologiewechsel."
- event_new_dawn.13.f: "Radikale Gruppen, angetrieben von Frustration und dem Wunsch nach Veränderung, haben einen Aufstand begonnen. Sie wollen die bestehende Machtstruktur zerschlagen und eine neue ideologische Ordnung errichten. Die Lage ist volatil."
+ event_new_dawn.14.t: "Intellektuelle fordert Führungswechsel"
+ event_new_dawn.14.d: "Wenn die Intellektuellen sprechen, prägen ihre Ideen die Nation."
+ event_new_dawn.14.f: "Einflussreiche Gelehrte, Schriftsteller und Reformer haben einen Führungswechsel gefordert. Sie suchen eine neue Galionsfigur, die Bildung, Wissen und ihre Vision für die Zukunft des Landes fördert."
+
+ event_new_dawn.15.t: "Gewerkschaften fordern Führungswechsel"
+ event_new_dawn.15.d: "Wenn sich die Arbeiter organisieren, lassen sich ihre Forderungen nicht ignorieren."
+ event_new_dawn.15.f: "Gewerkschaftsführer haben im Namen der Arbeiter im ganzen Land einen Führungswechsel gefordert. Sie verlangen eine neue Galionsfigur, die die Interessen der Arbeiter verteidigt und ihre Lebensbedingungen verbessert."
+
+ event_new_dawn.16.t: "Landbevölkerung fordert Führungswechsel"
+ event_new_dawn.16.d: "Wenn das Land spricht, muss die Nation zuhören."
+ event_new_dawn.16.f: "Vertreter ländlicher Gemeinden haben einen Führungswechsel gefordert. Sie verlangen eine neue Galionsfigur, die die Bauern schützt, örtliche Gemeinschaften stärkt und sich den Bedürfnissen des Landes annimmt."
+
+ event_new_dawn.13.t: "Industrielle fordern Führungswechsel"
+ event_new_dawn.13.d: "Wenn die Industrie spricht, hört die Wirtschaft der Nation zu."
+ event_new_dawn.13.f: "Einflussreiche Industrielle und Geschäftsleute haben einen Führungswechsel gefordert. Sie suchen eine neue Galionsfigur, die wirtschaftliches Wachstum, Investitionen und Stabilität priorisiert."
+
+ event_new_dawn.20.t: "Aufstand der Radikalen"
+ event_new_dawn.20.d: "Radikale Fraktionen mobilisieren sich und drohen, die bestehende Ordnung zu stürzen. Sie fordern einen Ideologiewechsel."
+ event_new_dawn.20.f: "Radikale Gruppen, angetrieben von Frustration und dem Wunsch nach Veränderung, haben einen Aufstand begonnen. Sie wollen die bestehende Machtstruktur zerschlagen und eine neue ideologische Ordnung errichten. Die Lage ist volatil."
  
- event_new_dawn.13.a: "Radikale Gruppen formieren sich"
+ event_new_dawn.20.a: "Radikale Gruppen formieren sich"
 
  event_new_dawn.101.t: "Welle der Begeisterung"
  event_new_dawn.101.d: "Eine Welle öffentlicher Begeisterung hat das Land erfasst, da unser ideologisches Programm in der Bevölkerung großen Anklang findet."
@@ -318,6 +334,8 @@ l_german:
 
  event_new_dawn.democrat_leader: "Einen neuen demokratischen Anführer ernennen"
  event_new_dawn.autocrat_leader: "Eine autokratische Galionsfigur stärken"
+ event_new_dawn.fascist_leader: "Eine faschistische Galionsfigur stärken"
+ event_new_dawn.communist_leader: "Eine kommunistische Galionsfigur stärken"
  event_new_dawn.random_decision: "Das Ergebnis sich organisch entfalten lassen"
  event_new_dawn.suppress_random_decision: "Unbeabsichtigte Führungswechsel verhindern"
 

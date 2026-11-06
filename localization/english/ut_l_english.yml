@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -228,11 +228,27 @@ l_english:
  event_new_dawn.12.d: "When the bourgeoisie speaks, they form a powerful coalition."
  event_new_dawn.12.f: "Prominent industrialists and business leaders, concerned about the direction of the country, have called for a change in leadership. They advocate for a new figurehead who will prioritize economic growth and stability."
 
- event_new_dawn.13.t: "Radicals Uprising"
- event_new_dawn.13.d: "Radical factions are mobilizing, threatening to overthrow the current order. They demand a change in ideology."
- event_new_dawn.13.f: "Radical groups, fueled by frustration and a desire for change, have launched an uprising. They seek to dismantle the existing power structure and establish a new ideological order. The situation is volatile."
+ event_new_dawn.14.t: "Intelligentsia Demands Leadership Change"
+ event_new_dawn.14.d: "When the intelligentsia speaks, their ideas shape the nation."
+ event_new_dawn.14.f: "Influential scholars, writers, and reformers have called for a change in leadership. They seek a new figurehead who will champion education, knowledge, and their vision for the country's future."
 
- event_new_dawn.13.a: "Radical groups are forming"
+ event_new_dawn.15.t: "Trade Unions Demand Leadership Change"
+ event_new_dawn.15.d: "When the workers organize, their demands cannot be ignored."
+ event_new_dawn.15.f: "Trade union leaders, speaking on behalf of workers across the country, have called for a change in leadership. They demand a new figurehead who will defend workers' interests and improve their conditions."
+
+ event_new_dawn.16.t: "Rural Folk Demand Leadership Change"
+ event_new_dawn.16.d: "When the countryside speaks, the nation must listen."
+ event_new_dawn.16.f: "Representatives of rural communities have called for a change in leadership. They demand a new figurehead who will protect farmers, strengthen local communities, and address the needs of the countryside."
+
+ event_new_dawn.13.t: "Industrialists Demand Leadership Change"
+ event_new_dawn.13.d: "When industry speaks, the nation's economy listens."
+ event_new_dawn.13.f: "Prominent industrialists and business leaders have called for a change in leadership. They seek a new figurehead who will prioritize economic growth, investment, and stability."
+
+ event_new_dawn.20.t: "Radicals Uprising"
+ event_new_dawn.20.d: "Radical factions are mobilizing, threatening to overthrow the current order. They demand a change in ideology."
+ event_new_dawn.20.f: "Radical groups, fueled by frustration and a desire for change, have launched an uprising. They seek to dismantle the existing power structure and establish a new ideological order. The situation is volatile."
+
+ event_new_dawn.20.a: "Radical groups are forming"
 
  event_new_dawn.101.t: "Wave of Popular Enthusiasm"
  event_new_dawn.101.d: "A groundswell of public excitement has taken hold as our ideological program resonates deeply with the population."
@@ -316,8 +332,11 @@ l_english:
  new_dawn_event_constitutional_crisis_mod: "New Dawn: Constitutional Crisis"
  new_dawn_event_emergency_decree_mod: "New Dawn: State of Emergency"
 
+ event_new_dawn.aligned_leader: "Leader is loyal to our ideology"
  event_new_dawn.democrat_leader: "Appoint a new democratic leader"
  event_new_dawn.autocrat_leader: "Empower an autocratic figurehead"
+ event_new_dawn.fascist_leader: "Empower a fascist figurehead"
+ event_new_dawn.communist_leader: "Empower a communist figurehead"
  event_new_dawn.random_decision: "Let the outcome be decided organically"
  event_new_dawn.suppress_random_decision: "Prevent unintended shifts in leadership"
 
