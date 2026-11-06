@@ -723,6 +723,97 @@ je_ut_new_dawn_core_abilities_add_decision = {
 	}
 }
 
+ut_new_dawn_early_game_rule_unlock = {
+	is_shown = {
+		OR = {
+			has_game_rule = ut_new_dawn_start_era_4
+			has_game_rule = ut_new_dawn_start_era_5
+		}
+	}
+	possible = {
+		NOT = { has_modifier = ut_new_dawn_early_game_rule_unlock_mod }
+		trigger_if = {
+			limit = {
+				has_game_rule = ut_new_dawn_start_era_4
+			}
+			OR = {
+				AND = {
+					has_technology_researched = pan_nationalism
+					NOT = { has_technology_researched = union_new_mandates }
+				}
+				AND = {
+					has_technology_researched = multilateral_alliances
+					NOT = { has_technology_researched = union_trade }
+				}
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_game_rule = ut_new_dawn_start_era_5
+			}
+			OR = {
+				AND = {
+					has_technology_researched = pan_nationalism
+					NOT = { has_technology_researched = union_new_mandates }
+				}
+				AND = {
+					has_technology_researched = multilateral_alliances
+					NOT = { has_technology_researched = union_trade }
+				}
+			}
+		}
+		trigger_else = {
+			always = no
+		}
+	}
+	when_taken = {
+		add_modifier = {
+			name = "ut_new_dawn_early_game_rule_unlock_mod"
+			duration = 1825
+			is_decaying = yes
+		}
+		if = {
+			limit = {
+				has_game_rule = ut_new_dawn_start_era_4
+			}
+			if = {
+				limit = {
+					has_technology_researched = pan_nationalism
+					NOT = { has_technology_researched = union_new_mandates }
+				}
+				add_technology_researched = union_new_mandates
+			}
+			else_if = {
+				limit = {
+					has_technology_researched = multilateral_alliances
+					NOT = { has_technology_researched = union_trade }
+				}
+				add_technology_researched = union_trade
+			}
+
+		}
+		else_if = {
+			limit = {
+				has_game_rule = ut_new_dawn_start_era_5
+			}
+			if = {
+				limit = {
+					has_technology_researched = pan_nationalism
+					NOT = { has_technology_researched = union_new_mandates }
+				}
+				add_technology_researched = union_new_mandates
+			}
+			else_if = {
+				limit = {
+					has_technology_researched = multilateral_alliances
+					NOT = { has_technology_researched = union_trade }
+				}
+				add_technology_researched = union_trade
+			}
+		}
+	}
+}
+
 ut_debug_apply_patch = {
 	is_shown = {
 		NOT = { has_global_variable = ut_utopia_enabled_on_game_started_patch_12_var }
@@ -806,65 +897,5 @@ ut_debug_apply_patch = {
 	}
 	ai_chance = {
 		value = 1
-	}
-}
-
-ut_new_dawn_early_game_rule_unlock = {
-	is_shown = {
-		OR = {
-			has_game_rule = ut_new_dawn_start_era_4
-			has_game_rule = ut_new_dawn_start_era_5
-		}
-	}
-	possible = {
-		NOT = { has_modifier = ut_new_dawn_early_game_rule_unlock_mod }
-		trigger_if = {
-			limit = {
-				has_game_rule = ut_new_dawn_start_era_4
-			}
-			OR = {
-				AND = {
-					has_technology_researched = pan_nationalism
-					NOT = { has_technology_researched = union_new_mandates }
-				}
-				AND = {
-					has_technology_researched = multilateral_alliances
-					NOT = { has_technology_researched = union_trade }
-				}
-			}
-		}
-		trigger_else_if = {
-			limit = {
-				has_game_rule = ut_new_dawn_start_era_5
-			}
-			OR = {
-				AND = {
-					has_technology_researched = pan_nationalism
-					NOT = { has_technology_researched = union_new_mandates }
-				}
-				AND = {
-					has_technology_researched = multilateral_alliances
-					NOT = { has_technology_researched = union_trade }
-				}
-			}
-		}
-		trigger_else = {
-			always = no
-		}
-	}
-	when_taken = {
-		add_modifier = {
-			name = "ut_new_dawn_early_game_rule_unlock_mod"
-			duration = 1825
-			is_decaying = yes
-		}
-		if = {
-			limit = {
-				has_game_rule = ut_new_dawn_start_era_4
-				has_technology_researched = pan_nationalism
-				NOT = { has_technology_researched = union_new_mandates }
-			}
-			add_technology_researched = union_new_mandates
-		}
 	}
 }
