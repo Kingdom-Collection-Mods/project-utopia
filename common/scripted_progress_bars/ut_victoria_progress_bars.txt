@@ -438,11 +438,29 @@ ut_new_dawn_autocrat_bar = {
 			if = {
 				limit = {
 					is_ai = yes
+				}				
+				multiply = {
+					desc = "ut_nd_multiplier_from_service_workers_0"
+					value = 2
 				}
-				multiply = 2
 			}
 			else = {
 				if ={
+					limit = {
+						NOT = {
+							OR = {
+								has_game_rule = ut_new_dawn_start_era_4
+								has_game_rule = ut_new_dawn_start_era_5
+							}
+						}
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					#no malus if starting era 4 or 5
+				}
+				else_if ={
 					limit = {
 						pop_type_percent_country = {
 							target = pop_type:service_workers

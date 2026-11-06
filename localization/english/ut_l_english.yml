@@ -674,6 +674,7 @@
  concept_ut_nd_fascist_characters_desc: "Fascist [concept_character] ideologies are: [GetIdeology('ideology_ethno_nationalist').GetName] and [GetIdeology('ideology_fascist').GetName].\nIf Fascist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ut_ideology_national_socialist_leader').GetName]."
  ut_new_dawn_fascist_status: "Fascist Ideas shape the discourse"
 
+ ut_nd_multiplier_from_is_ai: "x2 Multiplier for AI nations"
  ut_nd_multiplier_from_service_workers_0: "x0.5 Multiplier from less than 1% $service_workers$\n$ut_nd_mp_sw_note$"
  ut_nd_multiplier_from_service_workers_1: "x1.5 Multiplier from $service_workers$ share\n$ut_nd_mp_sw_note$"
  ut_nd_multiplier_from_service_workers_2: "x2 Multiplier from $service_workers$ share\n$ut_nd_mp_sw_note$"
@@ -2278,9 +2279,9 @@
  setting_ut_new_dawn_start_era_6: "Era VI"
  setting_ut_new_dawn_start_era_6_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] VI (1936-1961)"
  setting_ut_new_dawn_start_era_5: "Era V"
- setting_ut_new_dawn_start_era_5_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] V (1912-1935)\n@warning! Project Utopia is tested with Era VI start era"
+ setting_ut_new_dawn_start_era_5_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] V (1912-1935)\n@warning! Impacts game balance"
  setting_ut_new_dawn_start_era_4: "Era IV"
- setting_ut_new_dawn_start_era_4_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] IV (1887-1911)\n@warning! Project Utopia is tested with Era VI start era."
+ setting_ut_new_dawn_start_era_4_desc: "[concept_ut_new_dawn] is unlocked in [concept_technology_era] IV (1887-1911)\n@warning! Will highly impact game balance"
 
  rule_ut_new_dawn_historical_focus: "Historical $concept_ut_nd_focus$"
  setting_ut_new_dawn_historical_focus_yes: "Enabled"
