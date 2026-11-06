@@ -743,6 +743,7 @@ ut_new_dawn_early_game_rule_unlock = {
 					NOT = { has_technology_researched = union_new_mandates }
 				}
 				AND = {
+					has_technology_researched = union_new_mandates
 					has_technology_researched = multilateral_alliances
 					NOT = { has_technology_researched = union_trade }
 				}
@@ -771,7 +772,7 @@ ut_new_dawn_early_game_rule_unlock = {
 	when_taken = {
 		add_modifier = {
 			name = "ut_new_dawn_early_game_rule_unlock_mod"
-			duration = 1825
+			days = 1825
 			is_decaying = yes
 		}
 		if = {
@@ -788,6 +789,7 @@ ut_new_dawn_early_game_rule_unlock = {
 			else_if = {
 				limit = {
 					has_technology_researched = multilateral_alliances
+					has_technology_researched = union_new_mandates
 					NOT = { has_technology_researched = union_trade }
 				}
 				add_technology_researched = union_trade
