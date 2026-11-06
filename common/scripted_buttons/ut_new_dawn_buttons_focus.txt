@@ -46,7 +46,7 @@ ut_new_dawn_fascist_focus = {
 			limit = {
 				has_modifier = je_ut_new_dawn_fascist_focus
 			}
-			add = 25
+			add = 20
 		}
 		if = {
 			limit = {
@@ -56,7 +56,7 @@ ut_new_dawn_fascist_focus = {
 					c:ITA ?= this
 				}
 			}
-			add = 40
+			add = 30
 		}
 		if = {
 			limit = {
@@ -92,7 +92,7 @@ ut_new_dawn_fascist_focus = {
 					ut_ideology_new_dawn_fascist_trigger = yes
 				}
 			}
-			add = 30
+			add = 25
 		}
 		if = {
 			#Historically Germany, Italy, and Japan below in "ranking"?
@@ -100,7 +100,7 @@ ut_new_dawn_fascist_focus = {
 				global_country_ranking >= 5
 				country_rank >= rank_value:great_power
 			}
-			add = 10
+			add = 5
 		}
 		if = {
 			#Red scare if not socialist them self
@@ -175,7 +175,7 @@ ut_new_dawn_autocrat_focus = {
 			limit = {
 				has_modifier = je_ut_new_dawn_autocrat_focus
 			}
-			add = 25
+			add = 20
 		}
 		if = {
 			limit = {
@@ -213,7 +213,7 @@ ut_new_dawn_autocrat_focus = {
 					ut_ideology_new_dawn_autocrat_trigger = yes
 				}
 			}
-			add = 30
+			add = 25
 		}
 		if = {
 			limit = {
@@ -268,7 +268,7 @@ ut_new_dawn_democrat_focus = {
 			limit = {
 				has_modifier = je_ut_new_dawn_democrat_focus
 			}
-			add = 25
+			add = 20
 		}
 		if = {
 			limit = {
@@ -276,7 +276,7 @@ ut_new_dawn_democrat_focus = {
 				c:USA ?= this
 				NOT = { exists = c:CSA }
 			}
-			add = 30
+			add = 20
 		}
 		if = {
 			limit = {
@@ -284,7 +284,7 @@ ut_new_dawn_democrat_focus = {
 				c:GBR ?= this
 				exists = c:GER
 			}
-			add = 30
+			add = 20
 		}
 		if = {
 			limit = {
@@ -445,14 +445,14 @@ ut_new_dawn_communist_focus = {
 			limit = {
 				has_modifier = je_ut_new_dawn_communist_focus
 			}
-			add = 25
+			add = 20
 		}
 		if = {
 			limit = {
 				NOT = { has_game_rule = ut_new_dawn_historical_focus_no }
 				c:RUS ?= this
 			}
-			add = 40
+			add = 30
 		}
 		if = {
 			limit = {
@@ -530,7 +530,7 @@ ut_new_dawn_communist_focus = {
 					ut_ideology_new_dawn_communist_trigger = yes
 				}
 			}
-			add = 30
+			add = 25
 		}
 	}
 }
