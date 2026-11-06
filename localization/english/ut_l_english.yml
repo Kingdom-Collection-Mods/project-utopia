@@ -2182,7 +2182,8 @@
  modern_civil_aviation_modifier_others: "Modern Civil Aviation"
 
  ut_new_dawn_early_game_rule_unlock: "Unlock New Dawn Diplomatic Actions"
- ut_new_dawn_early_game_rule_unlock_desc: "Unlock the technologies required for diplomatic actions in the New Dawn scenario. Available due to Start Era game rule."
+ ut_new_dawn_early_game_rule_unlock_desc: "Unlock the technologies required for diplomatic actions in the New Dawn scenario."
+ ut_new_dawn_early_game_rule_unlock_mod: "Diplomatic Advances"
 
  #backwards compatibility
  je_ut_new_dawn_core_abilities: "New Dawn: Abilities"

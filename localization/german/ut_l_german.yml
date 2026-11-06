@@ -191,6 +191,7 @@
  event_new_dawn.1.d: "Eine neue politische Welle hat unsere Nation erfasst, und wir müssen entscheiden, wie wir darauf reagieren. Werden wir den Wandel begrüßen oder ihm widerstehen? Die Zukunft unseres Landes steht auf dem Spiel."
  event_new_dawn.1.f: "Der Neue Aufbruch ist da, und mit ihm beginnt eine neue Ära des politischen Wandels. Wir müssen diese Gewässer sorgfältig navigieren und die Forderungen des Volkes mit den Bedürfnissen des Staates in Einklang bringen. Die Entscheidungen, die wir jetzt treffen, werden die Zukunft unserer Nation für kommende Generationen prägen."
  event_new_dawn.1.a: "Auf zum Neuen Aufbruch"
+ event_new_dawn.1.a.tt: "[concept_ut_new_dawn] hat in [SCOPE.sCountry('je_ut_new_dawn_first_started_scope').GetName] begonnen"
 
  event_new_dawn.2.a: "Grundlage für die Kernideologie schaffen"
  
@@ -351,6 +352,7 @@
  new_dawn_event_constitutional_crisis_mod: "Neuer Aufbruch: Verfassungskrise"
  new_dawn_event_emergency_decree_mod: "Neuer Aufbruch: Ausnahmezustand"
 
+ event_new_dawn.aligned_leader: "Anführer ist unserer Ideologie treu"
  event_new_dawn.democrat_leader: "Einen neuen demokratischen Anführer ernennen"
  event_new_dawn.autocrat_leader: "Eine autokratische Galionsfigur stärken"
  event_new_dawn.fascist_leader: "Eine faschistische Galionsfigur stärken"
@@ -692,8 +694,9 @@
  concept_ut_nd_utopia_desc: "Utopie ist eine imaginierte ideale Gesellschaft, in der es vollständige Gerechtigkeit, Harmonie und das Gedeihen der Menschen zur Perfektion gibt - sie ist ebenso sehr eine Aspiration wie eine inspirierende Vision."
 
  ut_utopia_enabled_on_game_started_loc_yes: "Project Utopia Status: aktiviert seit Spielstart."
- ut_utopia_enabled_on_game_started_loc_26_03_13_yes: "$ut_utopia_enabled_on_game_started_loc_yes$ Alle Inhalte verfügbar."
- ut_utopia_enabled_on_game_started_loc_no: "Spielstand vor dem 13. März gestartet oder Project Utopia wurde beim Spielstart nicht aktiviert.\n#bold Wichtig:#! Neue Bergbau-Ressourcen und Gesetze erfordern, dass Project Utopia seit Spielstart aktiviert ist."
+ ut_utopia_enabled_on_game_started_loc_patch_12: "Status von Projekt Utopia: seit Spielstart aktiviert. Achtung, gestartet mit Version 1.13/1.14 (Patch 12)."
+ ut_utopia_enabled_on_game_started_loc_latest_yes: "$ut_utopia_enabled_on_game_started_loc_yes$ Alle Inhalte verfügbar."
+ ut_utopia_enabled_on_game_started_loc_no: "Das Spiel wurde vor dem 13. März gestartet oder Project Utopia war beim Spielstart nicht aktiviert.\n#bold Wichtig:#! Für neue Abbauressourcen und Gesetze muss Project Utopia bereits beim Spielstart aktiviert sein."
 
  ut_new_dawn_fascist_focus: "Faschistischer Fokus"
  ut_new_dawn_fascist_focus_desc: "#italic In Design: Nur Vorschau der [concept_ut_nd_milestones] verfügbar. #!"
@@ -709,6 +712,7 @@
  concept_ut_nd_fascist_characters_desc: "Faschistische Charakter Ideologien sind: [GetIdeology('ideology_ethno_nationalist').GetName] und [GetIdeology('ideology_fascist').GetName].\nWenn Faschistischer [concept_ut_nd_focus] aktiv ist, sind ebenfalls enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] und [GetIdeology('ut_ideology_national_socialist_leader').GetName]."
  ut_new_dawn_fascist_status: "Faschistische Ideen prägen den Diskurs"
 
+ ut_nd_multiplier_from_is_ai: "x2 Multiplikator für KI-Nationen"
  ut_nd_multiplier_from_service_workers_0: "x0,5 Multiplikator bei weniger als 1% $service_workers$\n$ut_nd_mp_sw_note$"
  ut_nd_multiplier_from_service_workers_1: "x1,5 Multiplikator nach $service_workers$ Anteil\n$ut_nd_mp_sw_note$"
  ut_nd_multiplier_from_service_workers_2: "x2 Multiplikator nach $service_workers$ Anteil\n$ut_nd_mp_sw_note$"
@@ -1184,6 +1188,7 @@
  ut_humiliate_power_bloc_goal_proposal_declined_desc: "[TARGET_COUNTRY.GetName] hat die Demütigungsforderung abgelehnt."
  ut_humiliate_power_bloc_goal_proposal_notification_name: "Machtblock-Anführer demütigen - Vorschlag"
  ut_humiliate_power_bloc_goal_proposal_notification_desc: "Ein Vorschlag, [TARGET_COUNTRY.GetName] zu demütigen und sie zu zwingen, deinem Machtblock beizutreten, wurde gesendet."
+ ut_humiliate_power_bloc_goal_tt: "Forces [TARGET_COUNTRY.GetName] to dissolve their power bloc.\nThey will join your power bloc to dissolve their own, but are likely to leave yours afterward."
  ut_humiliate_power_bloc_goal_desc: "Zwinge einen [Concept('concept_humiliation', 'gemütigten')] rivalisierenden Machtblock-Anführer, deinem Block beizutreten - dadurch wird sein Machtblock aufgelöst. Ein [Concept('concept_humiliation', 'gemütigtes')] Land gibt zudem wahrscheinlich seinen [concept_ut_nd_path_to_utopia] auf."
  ut_research_agreement: "Forschungsbündnis"
  ut_research_agreement_desc: "Beide Länder vereinbaren, Forschung und Technologie zu teilen, um ihre maximalen [concept_innovation] Fähigkeiten erheblich zu steigern."
@@ -1293,6 +1298,7 @@
  ut_add_new_dawn_p1_progress_autocrat_neg_10: "Verliert #r 10#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
  ut_add_new_dawn_p1_progress_fascist_neg_10: "Verliert #r 10#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
  ut_add_new_dawn_p1_progress_focus_5: "Erhält #g 5#! [concept_ut_nd_progress_points] für die Ideologie im [concept_ut_nd_focus]"
+ ut_add_new_dawn_p1_progress_focus_10: "Gains #g 10#! [concept_ut_nd_progress_points] to [concept_ut_nd_focus] Ideology"
 
  ut_has_new_dawn_pressure_50: "Hat #b 50#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_75: "Hat #b 75#! [concept_ut_nd_pressure]"
@@ -2177,6 +2183,10 @@
  wirtschaftswunder_others_modifier: "Wirtschaftswunder (Einfluss)"
  early_civil_aviation_modifier_others: "Frühe zivile Luftfahrt"
  modern_civil_aviation_modifier_others: "Moderne zivile Luftfahrt"
+
+ ut_new_dawn_early_game_rule_unlock: "Unlock New Dawn Diplomatic Actions"
+ ut_new_dawn_early_game_rule_unlock_desc: "Unlock the technologies required for diplomatic actions in the New Dawn scenario."
+ ut_new_dawn_early_game_rule_unlock_mod: "Diplomatic Advances"
 
  #backwards compatibility
  je_ut_new_dawn_core_abilities: "New Dawn: Abilities"
