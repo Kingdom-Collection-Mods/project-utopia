@@ -1,4 +1,4 @@
-﻿# Based on Made Divided Monarchists by Victoria/Pacifica/AcresOfAsteraceae
+# Based on Made Divided Monarchists by Victoria/Pacifica/AcresOfAsteraceae
 # Together with ideologies and hegemon mechanic from EU4 creatin New Dawn journal chapter.
 # 
 # Refer to comments here and in 02_french_monarchism to get an idea as to how this works.
@@ -517,7 +517,7 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 	}
 }
 
-ut_clear_divided_new_dawn_variables = { #Clears all variables, to save memory/performance. Should be executed by anything that makes Divided Monarchists irrelevant.
+ut_clear_new_dawn_variables = { #Clears all variables, to save memory/performance. Should be executed by anything that makes Divided Monarchists irrelevant.
 	remove_variable = ut_nd_common_progress_from_events
 
 	remove_variable = ut_nd_communist_progress_from_characters 

@@ -1,4 +1,4 @@
-﻿je_ut_new_dawn = {
+je_ut_new_dawn = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
@@ -153,7 +153,7 @@
 		effect = {
 			custom_tooltip = {
 				text = je_ut_new_dawn_effect_tt
-				ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+				ut_clear_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 			}
 			if = {
 				limit = {
@@ -725,7 +725,7 @@ je_ut_new_dawn_democratic = {
 		effect = {
 			custom_tooltip = {
 				text = je_ut_new_dawn_effect_tt
-				ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+				ut_clear_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 			}
 			set_variable = je_ut_new_dawn_done
 
@@ -980,7 +980,7 @@ je_ut_new_dawn_autocratic = {
 	# on_complete = {
 	# 	custom_tooltip = {
 	# 		text = je_ut_new_dawn_effect_tt
-	# 		ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+	# 		ut_clear_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 	# 	}
 	# 	set_variable = je_ut_new_dawn_done
 	# }
@@ -1256,7 +1256,7 @@ je_ut_new_dawn_fascist = {
 		effect = {
 			custom_tooltip = {
 				text = je_ut_new_dawn_effect_tt
-				ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+				ut_clear_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 			}
 			set_variable = je_ut_new_dawn_done
 
@@ -1488,7 +1488,7 @@ je_ut_new_dawn_communist = {
 		effect = {
 			custom_tooltip = {
 				text = je_ut_new_dawn_effect_tt
-				ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+				ut_clear_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 			}
 			set_variable = je_ut_new_dawn_done
 
