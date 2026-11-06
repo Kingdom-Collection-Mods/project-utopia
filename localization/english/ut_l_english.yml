@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -258,6 +258,15 @@ l_english:
  event_new_dawn.51.com: "Promote the communist vision"
  event_new_dawn.51.fas: "Promote the fascist vision"
  event_new_dawn.51.random: "Do not interfere with the press"
+
+ event_new_dawn.52.t: "Favorable News Reports"
+ event_new_dawn.52.d: "A series of newspaper reports has brought renewed attention to our ideological program. We can use the coverage to advance our focus, but only at the expense of a rival ideology."
+ event_new_dawn.52.f: "Editors have agreed to give prominent coverage to the government's favored ideology. In exchange, they ask us to decide which competing movement should lose its platform."
+ event_new_dawn.52.a: "Run an Anti-Democracy campaign"
+ event_new_dawn.52.b: "Run an Anti-Autocracy campaign"
+ event_new_dawn.52.c: "Run a Red Scare campaign"
+ event_new_dawn.52.e: "Run an Anti-Fascist campaign"
+ event_new_dawn.52.g: "Abstain from a smear campaign"
 
  event_new_dawn.101.t: "Wave of Popular Enthusiasm"
  event_new_dawn.101.d: "A groundswell of public excitement has taken hold as our ideological program resonates deeply with the population."

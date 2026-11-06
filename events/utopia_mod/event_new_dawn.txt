@@ -2120,6 +2120,155 @@ event_new_dawn.51 = {
 	}
 }
 
+#Favorable News Reports
+event_new_dawn.52 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.52.t
+	desc = event_new_dawn.52.d
+	flavor = event_new_dawn.52.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		is_ai = no
+		NOT = { ut_new_dawn_has_core_trigger = yes }
+		OR = {
+			has_modifier = je_ut_new_dawn_democrat_focus
+			has_modifier = je_ut_new_dawn_autocrat_focus
+			has_modifier = je_ut_new_dawn_communist_focus
+			has_modifier = je_ut_new_dawn_fascist_focus
+		}
+	}
+
+	option = {
+		name = event_new_dawn.52.a
+		trigger = { NOT = { has_modifier = je_ut_new_dawn_democrat_focus } }
+		if = {
+			limit = { has_modifier = je_ut_new_dawn_democrat_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_democrat = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_autocrat_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_autocrat = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_communist_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_communist = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_fascist_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_fascist = { VALUE = 5 }
+		}
+		custom_tooltip = ut_add_new_dawn_p1_progress_democrat_neg_5
+		ut_add_new_dawn_initiation_progress_democrat = { VALUE = -5 }
+	}
+
+	option = {
+		name = event_new_dawn.52.b
+		trigger = { NOT = { has_modifier = je_ut_new_dawn_autocrat_focus } }
+		if = {
+			limit = { has_modifier = je_ut_new_dawn_democrat_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_democrat = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_autocrat_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_autocrat = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_communist_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_communist = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_fascist_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_fascist = { VALUE = 5 }
+		}
+		custom_tooltip = ut_add_new_dawn_p1_progress_autocrat_neg_5
+		ut_add_new_dawn_initiation_progress_autocrat = { VALUE = -5 }
+	}
+
+	option = {
+		name = event_new_dawn.52.c
+		trigger = { NOT = { has_modifier = je_ut_new_dawn_communist_focus } }
+		if = {
+			limit = { has_modifier = je_ut_new_dawn_democrat_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_democrat = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_autocrat_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_autocrat = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_communist_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_communist = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_fascist_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_fascist = { VALUE = 5 }
+		}
+		custom_tooltip = ut_add_new_dawn_p1_progress_communist_neg_5
+		ut_add_new_dawn_initiation_progress_communist = { VALUE = -5 }
+	}
+
+	option = {
+		name = event_new_dawn.52.e
+		trigger = { NOT = { has_modifier = je_ut_new_dawn_fascist_focus } }
+		if = {
+			limit = { has_modifier = je_ut_new_dawn_democrat_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_democrat = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_autocrat_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_autocrat = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_communist_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_communist = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_fascist_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_fascist = { VALUE = 5 }
+		}
+		custom_tooltip = ut_add_new_dawn_p1_progress_fascist_neg_5
+		ut_add_new_dawn_initiation_progress_fascist = { VALUE = -5 }
+	}
+
+	
+	option = {
+		default_option = yes
+		name = event_new_dawn.52.g
+
+		add_radicals = {
+			value = -0.005			
+		}
+	}
+}
+
 
 #Popular Enthusiasm
 event_new_dawn.101 = {

@@ -1,4 +1,4 @@
-l_german:
+﻿l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -257,6 +257,15 @@ l_german:
  event_new_dawn.51.com: "Die kommunistische Vision fördern"
  event_new_dawn.51.fas: "Die faschistische Vision fördern"
  event_new_dawn.51.random: "Nicht in die Presse eingreifen"
+
+ event_new_dawn.52.t: "Bevorzugte Nachrichtenberichte"
+ event_new_dawn.52.d: "Eine Reihe von Zeitungsberichten hat unserem ideologischen Programm neue Aufmerksamkeit verschafft. Wir können die Berichterstattung nutzen, um unseren Schwerpunkt voranzubringen, allerdings nur auf Kosten einer rivalisierenden Ideologie."
+ event_new_dawn.52.f: "Die Herausgeber haben zugestimmt, der bevorzugten Ideologie der Regierung große Aufmerksamkeit zu widmen. Im Gegenzug sollen wir entscheiden, welche konkurrierende Bewegung an Einfluss verlieren soll."
+ event_new_dawn.52.a: "Führe eine Anti-Demokratie Kampagne"
+ event_new_dawn.52.b: "Führe eine Anti-Autokratie Kampagne"
+ event_new_dawn.52.c: "Führe eine Rote-Socken Kampagne"
+ event_new_dawn.52.e: "Führe eine Anti-Faschismus Kampagne"
+ event_new_dawn.52.g: "Verzichte auf eine Schmierkampagne"
 
  event_new_dawn.101.t: "Welle der Begeisterung"
  event_new_dawn.101.d: "Eine Welle öffentlicher Begeisterung hat das Land erfasst, da unser ideologisches Programm in der Bevölkerung großen Anklang findet."
