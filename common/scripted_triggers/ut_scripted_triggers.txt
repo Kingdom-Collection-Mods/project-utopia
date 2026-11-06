@@ -93,6 +93,7 @@ ut_ideology_new_dawn_fascist_trigger = {
 				has_ideology = ideology:ideology_land_reformer
 				has_ideology = ideology:ideology_modernizer_leader
 				has_ideology = ideology:ut_ideology_national_socialist_leader
+				has_ideology = ideology:ideology_shojoi
 			}
 		}
 	}
@@ -148,6 +149,7 @@ ut_ideology_new_dawn_autocrat_trigger = {
 				has_ideology = ideology:ideology_jingoist_leader
 				has_ideology = ideology:ideology_protectionist
 				has_ideology = ideology:ideology_corporatist_leader
+				has_ideology = ideology:ideology_mitogaku
 			}
 		}
 	}

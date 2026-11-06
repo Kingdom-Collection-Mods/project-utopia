@@ -664,7 +664,7 @@
  ut_nd_autocrat_progress_from_focus: "Autokratischer Fokus"
  ut_nd_autocrat_progress_from_events: "Ereignisse und andere Effekte"
  concept_ut_nd_autocrat_characters: "Autokratische Charaktere"
- concept_ut_nd_autocrat_characters_desc: "Autokratische Charakter Ideologien sind: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], und [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nWenn der autokratische [concept_ut_nd_focus] aktiv ist, sind auch enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], and [GetIdeology('ideology_corporatist_leader').GetName]."
+ concept_ut_nd_autocrat_characters_desc: "Autokratische Charakter Ideologien sind: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], und [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nWenn der autokratische [concept_ut_nd_focus] aktiv ist, sind auch enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], [GetIdeology('ideology_corporatist_leader').GetName] und [GetIdeology('ideology_mitogaku').GetName."
  ut_new_dawn_autocrat_status: "Autokratische Ideen prägen den Diskurs"#Core Ideology concepts
 
 #Core Ideology concepts
@@ -709,7 +709,7 @@
  ut_nd_fascist_progress_from_focus: "Faschistischer Fokus"
  ut_nd_fascist_progress_from_events: "Ereignisse und andere Effekte"
  concept_ut_nd_fascist_characters: "Faschistische Charaktere"
- concept_ut_nd_fascist_characters_desc: "Faschistische Charakter Ideologien sind: [GetIdeology('ideology_ethno_nationalist').GetName] und [GetIdeology('ideology_fascist').GetName].\nWenn Faschistischer [concept_ut_nd_focus] aktiv ist, sind ebenfalls enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] und [GetIdeology('ut_ideology_national_socialist_leader').GetName]."
+ concept_ut_nd_fascist_characters_desc: "Faschistische Charakter Ideologien sind: [GetIdeology('ideology_ethno_nationalist').GetName] und [GetIdeology('ideology_fascist').GetName].\nWenn Faschistischer [concept_ut_nd_focus] aktiv ist, sind ebenfalls enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName], [GetIdeology('ideology_shojoi').GetName] und [GetIdeology('ut_ideology_national_socialist_leader').GetName]."
  ut_new_dawn_fascist_status: "Faschistische Ideen prägen den Diskurs"
 
  ut_nd_multiplier_from_is_ai: "x2 Multiplikator für KI-Nationen"
