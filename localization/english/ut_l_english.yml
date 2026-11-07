@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -601,6 +601,16 @@
  je_ut_new_dawn_suppress_dissidents: "Suppress Dissidents"
  je_ut_new_dawn_suppress_dissidents_desc: "Dissent can undermine the stability of the state and threaten national security. Suppressing dissent is a necessary measure to maintain order and protect the nation from internal threats."
  je_ut_new_dawn_suppress_dissidents_mod: "$je_ut_new_dawn_suppress_dissidents$"
+ je_ut_new_dawn_suppress_dissidents_self_mod: "Crackdown on Dissent"
+ je_ut_new_dawn_suppress_dissidents_armed_forces_mod: "$event_new_dawn.30.o.armed_forces$"
+ je_ut_new_dawn_suppress_dissidents_urbanists_mod: "$event_new_dawn.30.o.urbanists$"
+ je_ut_new_dawn_suppress_dissidents_devout_mod: "$event_new_dawn.30.o.devout$"
+ je_ut_new_dawn_suppress_dissidents_industrialists_mod: "$event_new_dawn.30.o.industrialists$"
+ je_ut_new_dawn_suppress_dissidents_intelligentsia_mod: "$event_new_dawn.30.o.intelligentsia$"
+ je_ut_new_dawn_suppress_dissidents_landowners_mod: "$event_new_dawn.30.o.landowners$"
+ je_ut_new_dawn_suppress_dissidents_petty_bourgeoisie_mod: "$event_new_dawn.30.o.petty_bourgeoisie$"
+ je_ut_new_dawn_suppress_dissidents_rural_folk_mod: "$event_new_dawn.30.o.rural_folk$"
+ je_ut_new_dawn_suppress_dissidents_trade_unions_mod: "$event_new_dawn.30.o.trade_unions$"
  
  je_ut_new_dawn_outlaw_communists: "Outlaw Communists"
  je_ut_new_dawn_outlaw_communists_desc: "Crack down on leftist movements and ban communist parties.\n\n#italic Historical Context:\nOn February 28, 1933, following the Reichstag Fire, the Nazis passed the Reichstag Fire Decree, suspending civil liberties and allowing the arrest of thousands of communists. The KPD (Communist Party of Germany) was soon outlawed, marking the first step in dismantling political opposition. Which 4 months later was followed by the ban of the SPD (Social Democratic Party) and another month later all parties were banned; dismantling democracy.\n\nThe claim to totality is one dimension of fascism.#!"
