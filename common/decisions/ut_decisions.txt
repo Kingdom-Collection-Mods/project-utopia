@@ -732,6 +732,7 @@ ut_new_dawn_early_game_rule_unlock = {
 	}
 	possible = {
 		NOT = { has_modifier = ut_new_dawn_early_game_rule_unlock_mod }
+		ut_new_dawn_has_core_trigger = yes
 		trigger_if = {
 			limit = {
 				has_game_rule = ut_new_dawn_start_era_4
