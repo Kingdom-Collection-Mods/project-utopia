@@ -227,19 +227,21 @@ ut_new_dawn_has_autocrat_core_laws_trigger = {
 			has_law_or_variant = law_type:law_autocracy
 			has_law_or_variant = law_type:law_oligarchy
 		}
+		#todo investigate if this is the best to say autocratic alignment by government not possible if universal suffrage
 		NOT = { has_law_or_variant = law_type:law_universal_suffrage }
 	}
 }
 
-ut_new_dawn_has_autocrat_secondary_core_laws_trigger = {
-	AND = {
-		OR = {
-			has_law_or_variant = law_type:law_technocracy
-			has_law_or_variant = law_type:law_theocracy
-		}
-		NOT = { has_law_or_variant = law_type:law_universal_suffrage }
-	}
-}
+# todo do something for law_technocracy and theocracy alignment to autocracy or more
+# ut_new_dawn_has_autocrat_secondary_core_laws_trigger = {
+# 	AND = {
+# 		OR = {
+# 			has_law_or_variant = law_type:law_technocracy
+# 			has_law_or_variant = law_type:law_theocracy
+# 		}
+# 		NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+# 	}
+# }
 
 ut_new_dawn_has_fascist_core_laws_trigger = {
 	OR = {
@@ -709,10 +711,7 @@ ut_has_modifier_communist_opposing_stance = {
 }
 
 ut_has_modifier_fascist_favorable_stance = {
-	OR = {	
-		has_modifier = ut_new_dawn_core_fascist_mod
-		has_modifier = ut_new_dawn_core_autocratic_mod
-	}
+	has_modifier = ut_new_dawn_core_fascist_mod
 }
 
 ut_has_modifier_fascist_opposing_stance = {

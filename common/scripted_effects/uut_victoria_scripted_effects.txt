@@ -1,4 +1,4 @@
-# Based on Made Divided Monarchists by Victoria/Pacifica/AcresOfAsteraceae
+﻿# Based on Made Divided Monarchists by Victoria/Pacifica/AcresOfAsteraceae
 # Together with ideologies and hegemon mechanic from EU4 creatin New Dawn journal chapter.
 # 
 # Refer to comments here and in 02_french_monarchism to get an idea as to how this works.
@@ -8,6 +8,7 @@ ut_set_new_dawn_variables = {
 	set_variable = { name = ut_nd_communist_progress_from_characters value = 0 } #Progress-from-character component. This updates with the combined popularities of every Communist character later on, and is used to calculate monthly progress in the progress bar.
 	set_variable = { name = ut_nd_communist_progress_from_igs value = 0 } #Progress-from-IG component. This updates with the combined clout of every Communist IG later on, and is used to calculate monthly progress in the progress bar.
 	set_variable = { name = ut_nd_communist_progress_from_core_laws value = 0 } #Progress-from-military-building component. This updates with the sum of military building levels in France later on, and is used to calculate monthly progress in the progress bar.
+	set_variable = { name = ut_nd_communist_progress_from_opposing_laws value = 0 }
 	set_variable = { name = ut_nd_communist_progress_from_legitimacy value = 0 } #Progress-from-legitimacy component. This updates with the current government legitimacy, and is also used to calculate monthly progress in the progress bar.
 	set_variable = { name = ut_nd_communist_progress_from_movements value = 0 } #Progress-from-movements component. This depends upon the support of various movements, and is also used to calculate monthly progress in the progress bar.
 	set_variable = { name = ut_nd_communist_progress_from_focus value = 0 } #Final element in the progress bar. This is defined by various effects, and is based solely on scripted effects. This is how designers can manually grant ticking bonuses or maluses to this mechanic.
@@ -17,6 +18,7 @@ ut_set_new_dawn_variables = {
 	set_variable = { name = ut_nd_democrat_progress_from_characters value = 0 } 
 	set_variable = { name = ut_nd_democrat_progress_from_igs value = 0 }
 	set_variable = { name = ut_nd_democrat_progress_from_core_laws value = 0 } #These variables use the same scheme as the Communist ones, with the exception that Moderates derive from the sum of light/heavy industry building levels in France.
+	set_variable = { name = ut_nd_democrat_progress_from_opposing_laws value = 0 }
 	set_variable = { name = ut_nd_democrat_progress_from_legitimacy value = 0 }
 	set_variable = { name = ut_nd_democrat_progress_from_movements value = 0 }
 	set_variable = { name = ut_nd_democrat_progress_from_focus value = 0 }
@@ -26,6 +28,7 @@ ut_set_new_dawn_variables = {
 	set_variable = { name = ut_nd_autocrat_progress_from_characters value = 0 }
 	set_variable = { name = ut_nd_autocrat_progress_from_igs value = 0 }
 	set_variable = { name = ut_nd_autocrat_progress_from_core_laws value = 0 }
+	set_variable = { name = ut_nd_autocrat_progress_from_opposing_laws value = 0 }
 	set_variable = { name = ut_nd_autocrat_progress_from_legitimacy value = 0 }
 	set_variable = { name = ut_nd_autocrat_progress_from_movements value = 0 }
 	set_variable = { name = ut_nd_autocrat_progress_from_focus value = 0 }
@@ -35,6 +38,7 @@ ut_set_new_dawn_variables = {
 	set_variable = { name = ut_nd_fascist_progress_from_characters value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_igs value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_core_laws value = 0 } #These variables use the same scheme as the Communist ones, with the exception that Fascists derive from the sum of agricultural building levels in France.
+	set_variable = { name = ut_nd_fascist_progress_from_opposing_laws value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_legitimacy value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_movements value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_focus value = 0 }
@@ -50,6 +54,7 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 	set_variable = { name = ut_nd_communist_progress_from_characters value = 0 } #All of these variables are ephemeral and should never be manually set to anything.
 	set_variable = { name = ut_nd_communist_progress_from_igs value = 0 }
 	set_variable = { name = ut_nd_communist_progress_from_core_laws value = 0 }
+	set_variable = { name = ut_nd_communist_progress_from_opposing_laws value = 0 }
 	set_variable = { name = ut_nd_communist_progress_from_focus value = 0 }
 	set_variable = { name = ut_nd_communist_progress_from_movements value = 0 }
 	set_variable = { name = ut_nd_communist_progress_from_legitimacy value = root.government_legitimacy } #Government legitimacy is a single constant, and so this variable is set immediately rather than needing a calculation.
@@ -110,6 +115,29 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 		change_variable = { name = ut_nd_communist_progress_from_core_laws add = -0.5 }
 	}
 
+	# From Opposing Laws Hostile
+	if = {
+		limit = {
+			ut_new_dawn_has_fascist_core_laws_trigger = yes
+		}
+		change_variable = { name = ut_nd_communist_progress_from_opposing_laws add = -0.5 }
+	}
+	# From Opposing Laws Neutral
+	if = {
+		limit = {
+			has_variable = je_ut_communist_one_communist_party_done
+			ut_new_dawn_has_autocrat_core_laws_trigger = yes
+		}
+		change_variable = { name = ut_nd_communist_progress_from_opposing_laws add = -0.1 }
+	}
+	if = {
+		limit = {
+			has_variable = je_ut_communist_a_communist_party_done
+			ut_new_dawn_has_democrat_core_laws_trigger = yes
+		}
+		change_variable = { name = ut_nd_communist_progress_from_opposing_laws add = -0.1 }
+	}
+
 	# From Movements
 	# From Legitimacy
 	change_variable = { name = ut_nd_communist_progress_from_legitimacy divide = 100 } #Legitimacy divided by 100, to make it minimum 0 and maximum 1.
@@ -150,6 +178,7 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 	set_variable = { name = ut_nd_democrat_progress_from_characters value = 0 }
 	set_variable = { name = ut_nd_democrat_progress_from_igs value = 0 }
 	set_variable = { name = ut_nd_democrat_progress_from_core_laws value = 0 }
+	set_variable = { name = ut_nd_democrat_progress_from_opposing_laws value = 0 }
 	set_variable = { name = ut_nd_democrat_progress_from_movements value = 0 }
 	set_variable = { name = ut_nd_democrat_progress_from_focus value = 0 }
 	set_variable = { name = ut_nd_democrat_progress_from_legitimacy value = root.government_legitimacy }
@@ -219,6 +248,29 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 		}
 		change_variable = { name = ut_nd_democrat_progress_from_core_laws add = -0.5 }
 	}
+
+	# From Opposing Laws Hostile
+	if = {
+		limit = {
+			ut_new_dawn_has_fascist_core_laws_trigger = yes
+		}
+		change_variable = { name = ut_nd_democrat_progress_from_opposing_laws add = -0.5 }
+	}
+	# From Opposing Laws Neutral
+	if = {
+		limit = {
+			ut_new_dawn_has_autocrat_core_laws_trigger = yes
+		}
+		change_variable = { name = ut_nd_democrat_progress_from_opposing_laws add = -0.1 }
+	}
+	if = {
+		#todo rework, maybe red sock mechanic or smth
+		limit = {
+			ut_new_dawn_has_communist_core_laws_trigger = yes
+		}
+		change_variable = { name = ut_nd_democrat_progress_from_opposing_laws add = -0.1 }
+	}
+
 	# From Movements
 	# From Legitimacy
 	change_variable = { name = ut_nd_democrat_progress_from_legitimacy divide = 100 }
@@ -262,6 +314,7 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 	set_variable = { name = ut_nd_autocrat_progress_from_characters value = 0 }
 	set_variable = { name = ut_nd_autocrat_progress_from_igs value = 0 }
 	set_variable = { name = ut_nd_autocrat_progress_from_core_laws value = 0 }
+	set_variable = { name = ut_nd_autocrat_progress_from_opposing_laws value = 0 }
 	set_variable = { name = ut_nd_autocrat_progress_from_movements value = 0 }
 	set_variable = { name = ut_nd_autocrat_progress_from_focus value = 0 }
 	set_variable = { name = ut_nd_autocrat_progress_from_legitimacy value = root.government_legitimacy }
@@ -319,17 +372,30 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 	}
 	else_if = {
 		limit = {
-			ut_new_dawn_has_autocrat_secondary_core_laws_trigger = yes
-		}
-		ROOT = {
-			change_variable = { name = ut_nd_autocrat_progress_from_core_laws add = 0.5 }
-		}
-	}
-	else_if = {
-		limit = {
 			has_modifier = ut_new_dawn_core_autocratic_mod
 		}
 		change_variable = { name = ut_nd_autocrat_progress_from_core_laws add = -0.5 }
+	}
+	# From Opposing Laws Hostile
+	if = {
+		limit = {
+			ut_new_dawn_has_communist_core_laws_trigger = yes
+		}
+		change_variable = { name = ut_nd_autocrat_progress_from_opposing_laws add = -0.5 }
+	}
+
+	# From Opposing Laws Neutral
+	if = {
+		limit = {
+			ut_new_dawn_has_democrat_core_laws_trigger = yes
+		}
+		change_variable = { name = ut_nd_autocrat_progress_from_opposing_laws add = -0.1 }
+	}
+	else_if = {
+		limit = {
+			ut_new_dawn_has_democrat_secondary_core_laws_trigger = yes
+		}
+		change_variable = { name = ut_nd_autocrat_progress_from_opposing_laws add = -0.05 }
 	}
 	
 	# From Movements
@@ -381,6 +447,7 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 	set_variable = { name = ut_nd_fascist_progress_from_characters value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_igs value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_core_laws value = 0 }
+	set_variable = { name = ut_nd_fascist_progress_from_opposing_laws value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_movements value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_focus value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_legitimacy value = root.government_legitimacy }
@@ -439,6 +506,32 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 			has_modifier = ut_new_dawn_core_fascist_mod
 		}
 		change_variable = { name = ut_nd_fascist_progress_from_core_laws add = -0.5 }
+	}
+	# From Opposing Laws Hostile
+	if = {
+		limit = {
+			ut_new_dawn_has_communist_core_laws_trigger = yes
+		}
+		change_variable = { name = ut_nd_fascist_progress_from_opposing_laws add = -0.5 }
+	}
+	if = {
+		limit = {
+			ut_new_dawn_has_democrat_core_laws_trigger = yes
+		}
+		change_variable = { name = ut_nd_fascist_progress_from_opposing_laws add = -0.5 }
+	}
+	else_if = {
+		limit = {
+			ut_new_dawn_has_democrat_secondary_core_laws_trigger = yes
+		}
+		change_variable = { name = ut_nd_fascist_progress_from_opposing_laws add = -0.1 }
+	}
+	# From Opposing Laws Neutral
+	if = {
+		limit = {
+			ut_new_dawn_has_autocrat_core_laws_trigger = yes
+		}
+		change_variable = { name = ut_nd_fascist_progress_from_opposing_laws add = -0.1 }
 	}
 	# From Movements
 	if = {
@@ -1073,6 +1166,39 @@ ut_add_new_dawn_pressure_points = {
 			has_modifier = ut_new_dawn_core_democratic_mod
 		}
 		je:je_ut_new_dawn_democratic = {
+			add_progress = {
+				name = je_ut_new_dawn_pressure_points_bar
+				value = $VALUE$
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_autocratic_mod
+		}
+		je:je_ut_new_dawn_autocratic = {
+			add_progress = {
+				name = je_ut_new_dawn_pressure_points_bar
+				value = $VALUE$
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_fascist_mod
+		}
+		je:je_ut_new_dawn_fascist = {
+			add_progress = {
+				name = je_ut_new_dawn_pressure_points_bar
+				value = $VALUE$
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = ut_new_dawn_core_communist_mod
+		}
+		je:je_ut_new_dawn_communist = {
 			add_progress = {
 				name = je_ut_new_dawn_pressure_points_bar
 				value = $VALUE$

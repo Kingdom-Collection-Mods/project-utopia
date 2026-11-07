@@ -440,6 +440,8 @@
  ut_nd_communist_progress_from_characters: "kombinierte [concept_popularity] von [concept_ut_nd_communist_characters]"
  ut_nd_communist_progress_from_igs: "[concept_clout] von [Concept('concept_interest_group', '$concept_interest_groups$')] mit [concept_ut_nd_communist_characters] [concept_leader]"
  ut_nd_communist_progress_from_core_laws: "[Concept('concept_law', '$concept_laws$')] beschlossen: [GetLawType('law_command_economy').GetName], [GetLawType('law_cooperative_ownership').GetName]"
+ ut_nd_communist_progress_from_opposing_laws: "[concept_ut_nd_core_laws] of an [Concept('concept_ut_nd_stance_communist', 'Opposing Ideology')] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_nd_communist_progress_from_opposing_laws_tt enacted#!#!"
+ ut_nd_communist_progress_from_opposing_laws_tt: "Strongly opposes: $ut_nd_core_laws_fascist$\nMildly opposes, if democratic path: $ut_nd_core_laws_autocrat$\nMildly opposes, if autocratic path: $ut_nd_core_laws_democrat$"
  ut_nd_communist_progress_from_legitimacy: "[concept_legitimacy] von [concept_ut_nd_communist_characters] [concept_ruler]"
  ut_nd_communist_progress_from_focus: "Kommunistischer Fokus"
  ut_nd_communist_progress_from_events: "Ereignisse und andere Effekte"
@@ -519,6 +521,8 @@
  ut_nd_democrat_progress_from_characters: "kombinierte [concept_popularity] von [concept_ut_nd_democrat_characters]"
  ut_nd_democrat_progress_from_igs: "[concept_clout] von [Concept('concept_interest_group', '$concept_interest_groups$')] mit [concept_ut_nd_democrat_characters] [concept_leader]"
  ut_nd_democrat_progress_from_core_laws: "[Concept('concept_law', '$concept_laws$')] beschlossen: [GetLawType('law_universal_suffrage').GetName], [GetLawType('law_census_voting').GetName]"
+ ut_nd_democrat_progress_from_opposing_laws: "[concept_ut_nd_core_laws] of an [Concept('concept_ut_nd_stance_democrat', 'Opposing Ideology')] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_nd_democrat_progress_from_opposing_laws_tt enacted#!#!"
+ ut_nd_democrat_progress_from_opposing_laws_tt: "Strongly opposes: $ut_nd_core_laws_fascist$\nMildly opposes: $ut_nd_core_laws_communist$, $ut_nd_core_laws_autocrat$"
  ut_nd_democrat_progress_from_legitimacy: "[concept_legitimacy] von [concept_ut_nd_democrat_characters] [concept_ruler]"
  ut_nd_democrat_progress_from_events: "Ereignisse und andere Effekte"
  ut_nd_democrat_progress_from_focus: "Demokratischer Fokus"
@@ -682,6 +686,8 @@
  ut_nd_autocrat_progress_from_characters: "kombinierte [concept_popularity] von [concept_ut_nd_autocrat_characters]"
  ut_nd_autocrat_progress_from_igs: "[concept_clout] von [Concept('concept_interest_group', '$concept_interest_groups$')] mit [concept_ut_nd_autocrat_characters] [concept_leader]"
  ut_nd_autocrat_progress_from_core_laws: "[Concept('concept_law', '$concept_laws$')] beschlossen: [GetLawType('law_monarchy').GetName] und [GetLawType('law_autocracy').GetName]"
+ ut_nd_autocrat_progress_from_opposing_laws: "[concept_ut_nd_core_laws] of an [Concept('concept_ut_nd_stance_autocrat', 'Opposing Ideology')] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_nd_autocrat_progress_from_opposing_laws_tt enacted#!#!"
+ ut_nd_autocrat_progress_from_opposing_laws_tt: "Strongly opposes: $ut_nd_core_laws_communist$\nMildly opposes: $ut_nd_core_laws_democrat$"
  ut_nd_autocrat_progress_from_legitimacy: "[concept_legitimacy] von [concept_ut_nd_autocrat_characters] [concept_ruler]"
  ut_nd_autocrat_progress_from_movements: "[concept_political_movement_support] von #bold autokratische#! [Concept('concept_political_movement','$concept_political_movements$')]"
  ut_nd_autocrat_progress_from_focus: "Autokratischer Fokus"
@@ -694,7 +700,7 @@
 
  concept_ut_nd_fascist_core: "Faschismus"
  concept_ut_nd_fascist_core_desc: "#bold Ideologischer [concept_ut_nd_progress_points] Zuwachs#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_core_laws$\n\n#bold Verfügbare [concept_ut_nd_milestones]#! - offen\n\n#bold Verfügbare [concept_ut_nd_abilities]#!\n - [GetDiplomaticPlayType('dp_ut_fascist_annex_war').GetName] (Niedrigstufigere Nation)\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Freigeschalteter Modifikator#!\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_fascist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransformiere dein Volk in eine ... Utopie, durch blinden Gehorsam, Militarismus und die rücksichtslose Unterwerfung aller, die als 'anders' gelten. Erobere die Welt. Schaffe Wohlstand und Einheit für wenige, auf Kosten der Freiheit und Würde aller anderen.\n\n#i Entwicklungsstatus: Nicht spielbar - Vorschau#!"
- ut_nd_fascist_stance: "Verbündet: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nFeindlich: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]"
+ ut_nd_fascist_stance: "Verbündet: [concept_ut_nd_fascist_core]\nNeutral:[concept_ut_nd_autocrat_core]\nFeindlich: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]"
 
 
  concept_ut_nd_autocrat_core: "Autokratie"
@@ -728,6 +734,8 @@
  ut_nd_fascist_progress_from_characters: "kombinierte [concept_popularity] von [concept_ut_nd_fascist_characters]"
  ut_nd_fascist_progress_from_igs: "[concept_clout] von [Concept('concept_interest_group', '$concept_interest_groups$')] mit [concept_ut_nd_fascist_characters] [concept_leader]"
  ut_nd_fascist_progress_from_core_laws: "[Concept('concept_law', '$concept_laws$')] beschlossen: [GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName]"
+ ut_nd_fascist_progress_from_opposing_laws: "[concept_ut_nd_core_laws] of an [Concept('concept_ut_nd_stance_fascist', 'Opposing Ideology')] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_nd_fascist_progress_from_opposing_laws_tt enacted#!#!"
+ ut_nd_fascist_progress_from_opposing_laws_tt: "Strongly opposes: $ut_nd_core_laws_communist$, $ut_nd_core_laws_democrat$\nMildly opposes: $ut_nd_core_laws_autocrat$"
  ut_nd_fascist_progress_from_legitimacy: "[concept_legitimacy] von [concept_ut_nd_fascist_characters] [concept_ruler]"
  ut_nd_fascist_progress_from_focus: "Faschistischer Fokus"
  ut_nd_fascist_progress_from_events: "Ereignisse und andere Effekte"
@@ -749,8 +757,22 @@
  concept_ut_nd_pressure: "Druck"
  concept_ut_nd_pressure_desc: "Druck repräsentiert den Grad der Reibung, dem eine Nation ausgesetzt ist. Er misst die Stärke der internen Kräfte, die versuchen, die Ideologie Ihres Landes zu untergraben und es zu einer neuen politischen Identität zu drängen.\n\nWenn aktiv, können Ereignisse auftreten:\n- Druck <25: Positive Ereignisse können auftreten\n- Druck >50: Negative Ereignisse können auftreten\n- Druck >75: Sehr negative Ereignisse können auftreten\n\n#b KI-Nationen haben keinen [concept_ut_nd_pressure] und erleben keine Druckereignisse.#!"
 
+ concept_ut_nd_stance_default_desc: "Jede Ideologie hat eine Haltung gegenüber anderen Ideologien. Die Haltung beeinflusst die Akzeptanz des Beitritts und Verbleibs in einem Machtblock, den ideologischen Stand zu Gesetzen, sowie die meisten neuen Project Utopia-Aktionen."
+
  concept_ut_nd_stance: "Haltung"
- concept_ut_nd_stance_desc: "Jede Ideologie hat eine Haltung gegenüber anderen Ideologien. Die Haltung beeinflusst die Akzeptanz des Beitritts und Verbleibs in einem Machtblock sowie die meisten neuen Project Utopia-Aktionen. In Arbeit."
+ concept_ut_nd_stance_desc: "$concept_ut_nd_stance_default_desc$\n\n[concept_ut_nd_stance_democrat], [concept_ut_nd_stance_fascist], [concept_ut_nd_stance_communist], [concept_ut_nd_stance_autocrat]. In Arbeit, Arbeit."
+ 
+ concept_ut_nd_stance_democrat: "Democrat Stance"
+ concept_ut_nd_stance_democrat_desc: "$concept_ut_nd_stance_default_desc$\n$ut_nd_democratic_stance$"
+
+ concept_ut_nd_stance_fascist: "Fascist Stance"
+ concept_ut_nd_stance_fascist_desc: "$concept_ut_nd_stance_default_desc$\n$ut_nd_fascist_stance$"
+
+ concept_ut_nd_stance_communist: "Communist Stance"
+ concept_ut_nd_stance_communist_desc: "$concept_ut_nd_stance_default_desc$\n$ut_nd_communist_stance$"
+
+ concept_ut_nd_stance_autocrat: "Autocrat Stance"
+ concept_ut_nd_stance_autocrat_desc: "$concept_ut_nd_stance_default_desc$\n$ut_nd_autocratic_stance$"
  
  concept_ut_nd_core_laws: "Kern-Gesetzte"
  concept_ut_nd_core_laws_desc: "Das Kern-Gesetz einer Ideologie ist entscheidend für ihre Verbreitung und beeinflusst stark [concept_ut_new_dawn].\n\nKommunistisches Kern-Gesetz: $ut_nd_core_laws_communist$\nDemokratisches Kern-Gesetz: $ut_nd_core_laws_democrat$\nAutokratisches Kern-Gesetz: $ut_nd_core_laws_autocrat$\nFaschistisches Kern-Gesetz: $ut_nd_core_laws_fascist$"

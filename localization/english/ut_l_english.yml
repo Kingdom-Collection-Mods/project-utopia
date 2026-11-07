@@ -440,6 +440,9 @@
  ut_nd_communist_progress_from_characters: "combined [concept_popularity] of [concept_ut_nd_communist_characters]"
  ut_nd_communist_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [concept_ut_nd_communist_characters] [concept_leader]"
  ut_nd_communist_progress_from_core_laws: "[concept_ut_nd_core_laws] enacted: $ut_nd_core_laws_communist$"
+ ut_nd_communist_progress_from_opposing_laws: "[concept_ut_nd_core_laws] of an [Concept('concept_ut_nd_stance_communist', 'Opposing Ideology')] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_nd_communist_progress_from_opposing_laws_tt enacted#!#!"
+ ut_nd_communist_progress_from_opposing_laws_tt: "Strongly opposes: $ut_nd_core_laws_fascist$\nMildly opposes, if democratic path: $ut_nd_core_laws_autocrat$\nMildly opposes, if autocratic path: $ut_nd_core_laws_democrat$"
+ 
  ut_nd_communist_progress_from_legitimacy: "[concept_legitimacy] of [concept_ut_nd_communist_characters] [concept_ruler]"
  ut_nd_communist_progress_from_focus: "Communist Focus"
  ut_nd_communist_progress_from_events: "Events and other Effects"
@@ -519,6 +522,8 @@
  ut_nd_democrat_progress_from_characters: "combined [concept_popularity] of [concept_ut_nd_democrat_characters]"
  ut_nd_democrat_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [concept_ut_nd_democrat_characters] [concept_leader]"
  ut_nd_democrat_progress_from_core_laws: "[concept_ut_nd_core_laws] enacted: $ut_nd_core_laws_democrat$"
+ ut_nd_democrat_progress_from_opposing_laws: "[concept_ut_nd_core_laws] of an [Concept('concept_ut_nd_stance_democrat', 'Opposing Ideology')] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_nd_democrat_progress_from_opposing_laws_tt enacted#!#!"
+ ut_nd_democrat_progress_from_opposing_laws_tt: "Strongly opposes: $ut_nd_core_laws_fascist$\nMildly opposes: $ut_nd_core_laws_communist$, $ut_nd_core_laws_autocrat$"
  ut_nd_democrat_progress_from_legitimacy: "[concept_legitimacy] of [concept_ut_nd_democrat_characters] [concept_ruler]"
  ut_nd_democrat_progress_from_events: "Events and other Effects"
  ut_nd_democrat_progress_from_focus: "Democratic Focus"
@@ -682,6 +687,9 @@
  ut_nd_autocrat_progress_from_characters: "combined [concept_popularity] of [concept_ut_nd_autocrat_characters]"
  ut_nd_autocrat_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [concept_ut_nd_autocrat_characters] [concept_leader]"
  ut_nd_autocrat_progress_from_core_laws: "[concept_ut_nd_core_laws] enacted: $ut_nd_core_laws_autocrat$"
+ ut_nd_autocrat_progress_from_opposing_laws: "[concept_ut_nd_core_laws] of an [Concept('concept_ut_nd_stance_autocrat', 'Opposing Ideology')] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_nd_autocrat_progress_from_opposing_laws_tt enacted#!#!"
+ ut_nd_autocrat_progress_from_opposing_laws_tt: "Strongly opposes: $ut_nd_core_laws_communist$\nMildly opposes: $ut_nd_core_laws_democrat$"
+
  ut_nd_autocrat_progress_from_legitimacy: "[concept_legitimacy] of [concept_ut_nd_autocrat_characters] [concept_ruler]"
  ut_nd_autocrat_progress_from_movements: "[concept_political_movement_support] von #bold autokratische#! [Concept('concept_political_movement','$concept_political_movements$')]"
  ut_nd_autocrat_progress_from_focus: "Autocratic Focus"
@@ -694,7 +702,7 @@
 
  concept_ut_nd_fascist_core: "Fascism"
  concept_ut_nd_fascist_core_desc: "#bold Ideological [concept_ut_nd_progress_points] Gain#!\n- $ut_nd_fascist_progress_from_characters$\n- $ut_nd_fascist_progress_from_igs$\n- $ut_nd_fascist_progress_from_core_laws$\n\n#bold Unlocks [concept_ut_nd_milestones]#! - tbd\n\n#bold Unlocks [concept_ut_nd_abilities]#!\n - [GetDiplomaticPlayType('dp_ut_fascist_annex_war').GetName] (Any lower ranked)\n - [GetDiplomaticActionType('ut_force_regime_change').GetName]\n\n#b Unlocks Modifier#!\n[GetStaticModifier('je_ut_new_dawn_fascist_mod').GetDesc]\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_fascist_stance$\n\n#b [concept_ut_nd_path_to_utopia]#!\nTransform your people into a ... utopia, through blind obedience, militarism, and the ruthless subjugation of all who are deemed 'different'. Conquer the world. Create prosperity and unity for the few, at the cost of freedom and dignity for all others.\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n#i Development Status: Not playable - Preview#!"
- ut_nd_fascist_stance: "Favorable: [concept_ut_nd_autocrat_core], [concept_ut_nd_fascist_core]\nOppose: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]"
+ ut_nd_fascist_stance: "Favorable: [concept_ut_nd_fascist_core]\nNeutral: [concept_ut_nd_autocrat_core]\nOppose: [concept_ut_nd_democrat_core], [concept_ut_nd_communist_core]"
 
 
  concept_ut_nd_autocrat_core: "Autocracy"
@@ -728,6 +736,9 @@
  ut_nd_fascist_progress_from_characters: "combined [concept_popularity] of [concept_ut_nd_fascist_characters]"
  ut_nd_fascist_progress_from_igs: "[concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] with [concept_ut_nd_fascist_characters] [concept_leader]"
  ut_nd_fascist_progress_from_core_laws: "[concept_ut_nd_core_laws] enacted: $ut_nd_core_laws_fascist$"
+ ut_nd_fascist_progress_from_opposing_laws: "[concept_ut_nd_core_laws] of an [Concept('concept_ut_nd_stance_fascist', 'Opposing Ideology')] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_nd_fascist_progress_from_opposing_laws_tt enacted#!#!"
+ ut_nd_fascist_progress_from_opposing_laws_tt: "Strongly opposes: $ut_nd_core_laws_communist$, $ut_nd_core_laws_democrat$\nMildly opposes: $ut_nd_core_laws_autocrat$"
+ 
  ut_nd_fascist_progress_from_legitimacy: "[concept_legitimacy] of [concept_ut_nd_fascist_characters] [concept_ruler]"
  ut_nd_fascist_progress_from_focus: "Fascist Focus"
  ut_nd_fascist_progress_from_events: "Events and other Effects"
@@ -749,15 +760,29 @@
  concept_ut_nd_pressure: "Pressure"
  concept_ut_nd_pressure_desc: "Pressure represents the degree of friction a nation faces. It measures the strength of internal forces attempting to erode your country's ideology, pushing it toward a new political identity.\n\nIf active, events can happen:\n- Pressure <25: Positive events can happen\n- Pressure >50: Negative events can happen\n- Pressure >75: Very negative events can happen\n\n#b AI nations do not have [concept_ut_nd_pressure] and do not experience pressure events.#!"
 
+ concept_ut_nd_stance_default_desc: "Each ideology has a stance towards other ideologies. The stance affects acceptance of joining and staying in a power bloc, ideological law stances, and most new Project Utopia actions."
+
  concept_ut_nd_stance: "Stance"
- concept_ut_nd_stance_desc: "Each ideology has a stance towards other ideologies. The stance affects acceptance of joining and staying in a power bloc, and most new Project Utopia actions. Work in progress."
+ concept_ut_nd_stance_desc: "$concept_ut_nd_stance_default_desc$\n\n[concept_ut_nd_stance_democrat], [concept_ut_nd_stance_fascist], [concept_ut_nd_stance_communist], [concept_ut_nd_stance_autocrat]. Work in progress."
  
+ concept_ut_nd_stance_democrat: "Democrat Stance"
+ concept_ut_nd_stance_democrat_desc: "$concept_ut_nd_stance_default_desc$\n$ut_nd_democratic_stance$"
+
+ concept_ut_nd_stance_fascist: "Fascist Stance"
+ concept_ut_nd_stance_fascist_desc: "$concept_ut_nd_stance_default_desc$\n$ut_nd_fascist_stance$"
+
+ concept_ut_nd_stance_communist: "Communist Stance"
+ concept_ut_nd_stance_communist_desc: "$concept_ut_nd_stance_default_desc$\n$ut_nd_communist_stance$"
+
+ concept_ut_nd_stance_autocrat: "Autocrat Stance"
+ concept_ut_nd_stance_autocrat_desc: "$concept_ut_nd_stance_default_desc$\n$ut_nd_autocratic_stance$"
+
  concept_ut_nd_core_laws: "Core Laws"
  concept_ut_nd_core_laws_desc: "The core law of an ideology is essential for its spread and heavily influences [concept_ut_new_dawn].\n\nCommunist Core: $ut_nd_core_laws_communist$\nDemocratic Core: $ut_nd_core_laws_democrat$\nAutocratic Core: $ut_nd_core_laws_autocrat$\nFascist Core: $ut_nd_core_laws_fascist$"
 
  ut_nd_core_laws_communist: "[GetLawType('law_command_economy').GetName], [GetLawType('law_cooperative_ownership').GetName]"
- ut_nd_core_laws_democrat: "[GetLawType('law_universal_suffrage').GetName], [GetLawType('law_census_voting').GetName]"
- ut_nd_core_laws_autocrat: "[GetLawType('law_monarchy').GetName], [GetLawType('law_autocracy').GetName]"
+ ut_nd_core_laws_democrat: "[GetLawType('law_universal_suffrage').GetName], ([GetLawType('law_census_voting').GetName])"
+ ut_nd_core_laws_autocrat: "[GetLawType('law_monarchy').GetName], [GetLawType('law_autocracy').GetName], [GetLawType('law_oligarchy').GetName]"
  ut_nd_core_laws_fascist: "[GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName]"
 
  je_ai_radio_researched: "Radio Researched"
@@ -2296,11 +2321,11 @@
  je_ut_software_era_8_required_points_tt: "Requires at least #v 10000#! $je_ut_software_points_bar_era_8$"
  je_ut_software_era_8_required_points_spend_tt: "Consumes #v 10000#! $je_ut_software_points_bar_era_8$"
 
- je_ut_software_points_bar_progress_buildings_era_6: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_6_tooltip Buildings #!#!"
+ je_ut_software_points_bar_progress_buildings_era_6: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_6_tooltip Buildings#!#!"
  je_ut_software_points_bar_progress_buildings_era_6_tooltip: "Sum of [concept_occupancy] times [concept_building_level].\nMaximum gain is 10 Software Expertise."
- je_ut_software_points_bar_progress_buildings_era_7: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_7_tooltip Buildings #!#! (at least [concept_building_level] 5)"
+ je_ut_software_points_bar_progress_buildings_era_7: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_7_tooltip Buildings#!#! (at least [concept_building_level] 5)"
  je_ut_software_points_bar_progress_buildings_era_7_tooltip: "Sum of [concept_occupancy] times [concept_building_level].\nOnly buildings with at least [concept_building_level] #b 5#! are counted.\nMaximum gain is 100 Software Expertise."
- je_ut_software_points_bar_progress_buildings_era_8: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_8_tooltip Buildings #!#! (at least [concept_building_level] 20)"
+ je_ut_software_points_bar_progress_buildings_era_8: "[GetBuildingType('building_software_company').GetName] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_software_points_bar_progress_buildings_era_8_tooltip Buildings#!#! (at least [concept_building_level] 20)"
  je_ut_software_points_bar_progress_buildings_era_8_tooltip: "Sum of [concept_occupancy] times [concept_building_level].\nOnly buildings with at least [concept_building_level] #b 20#! are counted.\nMaximum gain is 1000 Software Expertise."
  je_ut_software_points_bar_progress_no_research_institute: "has no [GetBuildingType('building_ut_research_institute').GetName]"
 
