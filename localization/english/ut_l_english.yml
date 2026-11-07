@@ -766,16 +766,16 @@
  concept_ut_nd_stance_desc: "$concept_ut_nd_stance_default_desc$\n\n[concept_ut_nd_stance_democrat], [concept_ut_nd_stance_fascist], [concept_ut_nd_stance_communist], [concept_ut_nd_stance_autocrat]. Work in progress."
  
  concept_ut_nd_stance_democrat: "Democrat Stance"
- concept_ut_nd_stance_democrat_desc: "$concept_ut_nd_stance_default_desc$\n$ut_nd_democratic_stance$"
+ concept_ut_nd_stance_democrat_desc: "$concept_ut_nd_stance_default_desc$\n\n$ut_nd_democratic_stance$"
 
  concept_ut_nd_stance_fascist: "Fascist Stance"
- concept_ut_nd_stance_fascist_desc: "$concept_ut_nd_stance_default_desc$\n$ut_nd_fascist_stance$"
+ concept_ut_nd_stance_fascist_desc: "$concept_ut_nd_stance_default_desc$\n\n$ut_nd_fascist_stance$"
 
  concept_ut_nd_stance_communist: "Communist Stance"
- concept_ut_nd_stance_communist_desc: "$concept_ut_nd_stance_default_desc$\n$ut_nd_communist_stance$"
+ concept_ut_nd_stance_communist_desc: "$concept_ut_nd_stance_default_desc$\n\n$ut_nd_communist_stance$"
 
  concept_ut_nd_stance_autocrat: "Autocrat Stance"
- concept_ut_nd_stance_autocrat_desc: "$concept_ut_nd_stance_default_desc$\n$ut_nd_autocratic_stance$"
+ concept_ut_nd_stance_autocrat_desc: "$concept_ut_nd_stance_default_desc$\n\n$ut_nd_autocratic_stance$"
 
  concept_ut_nd_core_laws: "Core Laws"
  concept_ut_nd_core_laws_desc: "The core law of an ideology is essential for its spread and heavily influences [concept_ut_new_dawn].\n\nCommunist Core: $ut_nd_core_laws_communist$\nDemocratic Core: $ut_nd_core_laws_democrat$\nAutocratic Core: $ut_nd_core_laws_autocrat$\nFascist Core: $ut_nd_core_laws_fascist$"
