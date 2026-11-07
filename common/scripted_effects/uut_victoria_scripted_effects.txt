@@ -1,4 +1,4 @@
-﻿# Based on Made Divided Monarchists by Victoria/Pacifica/AcresOfAsteraceae
+# Based on Made Divided Monarchists by Victoria/Pacifica/AcresOfAsteraceae
 # Together with ideologies and hegemon mechanic from EU4 creatin New Dawn journal chapter.
 # 
 # Refer to comments here and in 02_french_monarchism to get an idea as to how this works.
@@ -106,18 +106,13 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 		}
 		change_variable = { name = ut_nd_communist_progress_from_core_laws add = 1 }
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_modifier = ut_new_dawn_core_communist_mod
-			NOT = {
-				OR = {
-					has_law_or_variant = law_type:law_command_economy
-					has_law_or_variant = law_type:law_cooperative_ownership
-				}
-			}
 		}
 		change_variable = { name = ut_nd_communist_progress_from_core_laws add = -0.5 }
 	}
+
 	# From Movements
 	# From Legitimacy
 	change_variable = { name = ut_nd_communist_progress_from_legitimacy divide = 100 } #Legitimacy divided by 100, to make it minimum 0 and maximum 1.
@@ -213,8 +208,7 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 			change_variable = { name = ut_nd_democrat_progress_from_core_laws add = 1 }
 		}
 	}
-	
-	if = {
+	else_if = {
 		limit = {
 			has_law_or_variant = law_type:law_census_voting
 		}
@@ -222,15 +216,9 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 			change_variable = { name = ut_nd_democrat_progress_from_core_laws add = 0.5 }
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_modifier = ut_new_dawn_core_democratic_mod
-			NOT = { 
-				OR = {
-					has_law_or_variant = law_type:law_universal_suffrage
-					has_law_or_variant = law_type:law_census_voting
-				}
-			}
 		}
 		change_variable = { name = ut_nd_democrat_progress_from_core_laws add = -0.5 }
 	}
@@ -329,6 +317,7 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 			OR = {
 				has_law_or_variant = law_type:law_monarchy
 				has_law_or_variant = law_type:law_autocracy
+				has_law_or_variant = law_type:law_oligarchy
 			}
 			NOT = { has_law_or_variant = law_type:law_universal_suffrage }
 		}
@@ -336,18 +325,25 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 			change_variable = { name = ut_nd_autocrat_progress_from_core_laws add = 1 }
 		}
 	}
-	if = {
+	else_if = {
+		limit = {
+			OR = {
+				has_law_or_variant = law_type:law_technocracy
+				has_law_or_variant = law_type:law_theocracy
+			}
+			NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+		}
+		ROOT = {
+			change_variable = { name = ut_nd_autocrat_progress_from_core_laws add = 0.5 }
+		}
+	}
+	else_if = {
 		limit = {
 			has_modifier = ut_new_dawn_core_autocratic_mod
-			NOT = {
-				OR = {
-					has_law_or_variant = law_type:law_monarchy
-					has_law_or_variant = law_type:law_autocracy
-				}
-			}
 		}
 		change_variable = { name = ut_nd_autocrat_progress_from_core_laws add = -0.5 }
 	}
+	
 	# From Movements
 	# From Legitimacy
 	change_variable = { name = ut_nd_autocrat_progress_from_legitimacy divide = 100 }
@@ -453,15 +449,9 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 		}
 		change_variable = { name = ut_nd_fascist_progress_from_core_laws add = 1 }
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_modifier = ut_new_dawn_core_fascist_mod
-			NOT = {
-				OR = {
-					has_law_or_variant = law_type:law_ethnostate
-					has_law_or_variant = law_type:law_neo_ethno_state
-				}
-			}
 		}
 		change_variable = { name = ut_nd_fascist_progress_from_core_laws add = -0.5 }
 	}
