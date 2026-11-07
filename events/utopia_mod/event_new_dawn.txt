@@ -3765,8 +3765,9 @@ event_new_dawn.30 = {
 	
 	option = {
 		name = event_new_dawn.30.o.urbanists
+		highlighted_option = yes
 		trigger = {
-			ig:ig_urbanists = {
+			ig:ig_urbanists ?= {
 				is_in_government = no
 				is_marginal = no
 			}
@@ -3782,6 +3783,7 @@ event_new_dawn.30 = {
 	
 	option = {
 		name = event_new_dawn.30.o.armed_forces
+		highlighted_option = yes
 		trigger = {
 			ig:ig_armed_forces = {
 				is_in_government = no
@@ -3799,6 +3801,7 @@ event_new_dawn.30 = {
 
 	option = {
 		name = event_new_dawn.30.o.devout
+		highlighted_option = yes
 		trigger = {
 			ig:ig_devout = {
 				is_in_government = no
@@ -3816,6 +3819,7 @@ event_new_dawn.30 = {
 
 	option = {
 		name = event_new_dawn.30.o.industrialists
+		highlighted_option = yes
 		trigger = {
 			ig:ig_industrialists = {
 				is_in_government = no
@@ -3833,6 +3837,7 @@ event_new_dawn.30 = {
 
 	option = {
 		name = event_new_dawn.30.o.intelligentsia
+		highlighted_option = yes
 		trigger = {
 			ig:ig_intelligentsia = {
 				is_in_government = no
@@ -3850,6 +3855,7 @@ event_new_dawn.30 = {
 
 	option = {
 		name = event_new_dawn.30.o.landowners
+		highlighted_option = yes
 		trigger = {
 			ig:ig_landowners = {
 				is_in_government = no
@@ -3867,6 +3873,7 @@ event_new_dawn.30 = {
 
 	option = {
 		name = event_new_dawn.30.o.petty_bourgeoisie
+		highlighted_option = yes
 		trigger = {
 			ig:ig_petty_bourgeoisie = {
 				is_in_government = no
@@ -3884,6 +3891,7 @@ event_new_dawn.30 = {
 
 	option = {
 		name = event_new_dawn.30.o.rural_folk
+		highlighted_option = yes
 		trigger = {
 			ig:ig_rural_folk = {
 				is_in_government = no
@@ -3901,6 +3909,7 @@ event_new_dawn.30 = {
 
 	option = {
 		name = event_new_dawn.30.o.trade_unions
+		highlighted_option = yes
 		trigger = {
 			ig:ig_trade_unions = {
 				is_in_government = no
