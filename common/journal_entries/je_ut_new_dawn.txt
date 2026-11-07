@@ -1,4 +1,4 @@
-﻿je_ut_new_dawn = {
+je_ut_new_dawn = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
@@ -546,6 +546,88 @@
 				}
 			}
 			value = ut_no_focus_grey
+		}
+	}
+
+	
+	
+	map_color_second = {
+		if = {
+			limit = {
+				owner ?= {
+					NOT = { ut_new_dawn_has_core_trigger = yes }
+				}
+			}
+			if = {
+				limit = {
+					owner ?= {
+						je:je_ut_new_dawn = {
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+						}
+					}
+				}
+				value = ut_autocrat_blue
+			}
+			else_if = {
+				limit = {
+					owner ?= {
+						je:je_ut_new_dawn = {
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+						}
+					}
+				}
+				value = ut_communist_red
+			}
+			else_if = {
+				limit = {
+					owner ?= {
+						je:je_ut_new_dawn = {
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+						}
+					}
+				}
+				value = ut_fascist_green
+			}
+			else_if = {
+				limit = {
+					owner ?= {
+						je:je_ut_new_dawn = {
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+						}
+					}
+				}
+				value = ut_democrat_blue
+			}
+		}
+		else_if = {
+			limit = {
+				owner ?= {
+					has_journal_entry = je_ut_new_dawn
+					NOT = { ut_new_dawn_has_core_trigger = yes }
+				}
+			}
+			value = ut_no_focus_grey
+		}
+	}
+
+	map_tooltip = {
+		owner ?= {
+			save_scope_as = relevant_country
+			#custom_tooltip_no_bullet = "reform_or_revolution_map_debug_tooltip"
+			if = {
+				limit = {
+					has_journal_entry = je_ut_new_dawn
+				}
+				custom_tooltip_no_bullet = "je_ut_new_dawn_map_tooltip"
+			}
 		}
 	}
 
