@@ -110,7 +110,7 @@
 	}
 
 }
-
+#todo better api names
 ut_new_dawn_phase_1_trend = {
 	type = country
 	random_valid = no
@@ -169,6 +169,147 @@ ut_new_dawn_phase_1_trend = {
 
 }
 
+ut_new_dawn_phase_1_trend_short = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+			je:je_ut_new_dawn = {
+				"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+				"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+				"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+			}
+		}
+
+		localization_key = ut_phase_1_trend_democrat_short
+	}
+
+	text = {
+		trigger = {
+			je:je_ut_new_dawn = {
+				"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+				"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+				"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+			}
+		}
+
+		localization_key = ut_phase_1_trend_autocrat_short
+	}
+	
+	text = {
+		trigger = {
+			je:je_ut_new_dawn = {
+				"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+				"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)" 
+				"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+			}
+		}
+
+		localization_key = ut_phase_1_trend_fascist_short
+	}
+	
+	text = {
+		trigger = {
+			je:je_ut_new_dawn = {
+				"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+				"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+				"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+			}
+		}
+
+		localization_key = ut_phase_1_trend_communist_short
+	}
+
+	text = {
+		localization_key = ut_phase_1_trend_undefined
+	}
+
+}
+
+ut_new_dawn_phase_1_trend_focus = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					has_modifier = je_ut_new_dawn_democrat_focus
+					je:je_ut_new_dawn = {
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+					}
+				}
+				AND = {
+					has_modifier = je_ut_new_dawn_autocrat_focus
+					je:je_ut_new_dawn = {
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+					}
+				}
+				AND = {
+					has_modifier = je_ut_new_dawn_fascist_focus
+					je:je_ut_new_dawn = {
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)" 
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+					}
+				}
+				AND = {
+					has_modifier = je_ut_new_dawn_communist_focus
+					je:je_ut_new_dawn = {
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+					}
+				}
+			}
+		}
+
+		localization_key = ut_phase_1_trend_focus_on_focus
+	}
+
+	text = {
+		trigger = {
+			has_modifier = je_ut_new_dawn_democrat_focus
+		}
+
+		localization_key = concept_ut_nd_democrat_core
+	}
+	
+	text = {
+		trigger = {
+			has_modifier = je_ut_new_dawn_fascist_focus
+		}
+
+		localization_key = concept_ut_nd_fascist_core
+	}
+	
+	text = {
+		trigger = {
+			has_modifier = je_ut_new_dawn_communist_focus
+		}
+
+		localization_key = concept_ut_nd_communist_core
+	}
+	
+	text = {
+		trigger = {
+			has_modifier = je_ut_new_dawn_autocrat_focus
+		}
+
+		localization_key = concept_ut_nd_autocrat_core
+	}
+
+	text = {
+		localization_key = ut_pm_research_institute_no_focus
+	}
+
+}
+
 ut_new_dawn_phase_1_focus = {
 	type = country
 	random_valid = no
@@ -206,6 +347,7 @@ ut_new_dawn_phase_1_focus = {
 		localization_key = ut_pm_research_institute_no_focus
 	}
 }
+
 ut_new_dawn_ideology_status = {
 	type = country
 	random_valid = no
