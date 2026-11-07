@@ -1,4 +1,4 @@
-je_ut_new_dawn = {
+﻿je_ut_new_dawn = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
@@ -364,14 +364,14 @@ je_ut_new_dawn = {
 			#og was 400
 			200 = 0
 			#IG Leader Ideological Change
-			10 = event_new_dawn.11
-			10 = event_new_dawn.12
-			10 = event_new_dawn.13
-			10 = event_new_dawn.14
-			10 = event_new_dawn.15
-			10 = event_new_dawn.16
+			5 = event_new_dawn.11
+			5 = event_new_dawn.12
+			5 = event_new_dawn.13
+			5 = event_new_dawn.14
+			5 = event_new_dawn.15
+			5 = event_new_dawn.16
 
-			10 = event_new_dawn.50   #Radicals
+			5 = event_new_dawn.50   #Radicals
 			1 = event_new_dawn.51   #News incident
 			1 = event_new_dawn.52   #Favorable news reports
 
