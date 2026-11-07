@@ -1,4 +1,4 @@
-l_german:
+﻿l_german:
 # Generics
  utopia.yes: "Ja"
  utopia.no: "Nein"
@@ -423,6 +423,12 @@ l_german:
  je_ut_new_dawn_common_pressure_progress_from_expected_sol_tooltip: "Erwarteter [concept_sol] startet bei 0 und wird durch Gesellschafts-[concept_technology] erhöht. 50 [concept_sol] senken den Druck um 0.5."
  je_ut_new_dawn_common_pressure_progress_from_core_progress: "[concept_ut_nd_progress_points] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_core_progress_tooltip gewonnen#!#!"
  je_ut_new_dawn_common_pressure_progress_from_core_progress_tooltip: "Jeder gewonnene [concept_ut_nd_progress_points] senkt den Druck um 0,5 Punkte."
+ je_ut_new_dawn_common_pressure_progress_from_war_support: "#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_war_support_tooltip low#!#! [concept_war_support]"
+ je_ut_new_dawn_common_pressure_progress_from_war_support_tooltip: "Niedriger $concept_war_support$ erhöht den Druck:\n <75%: 0.25 [concept_ut_nd_pressure]\n <50%: 0.5 [concept_ut_nd_pressure]\n <25%: 1 [concept_ut_nd_pressure]"
+ je_ut_new_dawn_common_pressure_progress_from_insurrectionary_movement: "[Concept('concept_insurrection', 'insurrectionist')] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_insurrectionary_movement_tooltip $concept_political_movement$#!#!"
+ je_ut_new_dawn_common_pressure_progress_from_insurrectionary_movement_tooltip: "Insurrectionary movements increase pressure according to their [concept_political_movement_support]:\n>25%: 2 [concept_ut_nd_pressure]\n24-10%: 1 [concept_ut_nd_pressure]\n<10%: 0.5  [concept_ut_nd_pressure]"
+ je_ut_new_dawn_common_pressure_progress_from_high_radicalism_movement: "[Concept('concept_activism', 'high activism')] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_high_radicalism_movement_tooltip $concept_political_movement$#!#!"
+ je_ut_new_dawn_common_pressure_progress_from_high_radicalism_movement_tooltip: "Für jede [concept_political_movement] mit mindestens 50% [concept_activism]:\n[concept_activism] * ([concept_political_movement_support] / 25%)"
 
  country_expected_sol_for_new_dawn_pressure: "Erwarteter [concept_sol] für [concept_ut_nd_pressure]"
  country_expected_sol_for_new_dawn_pressure_desc: "Ändert den erwarteten [concept_sol] für die Berechnung von [concept_ut_nd_pressure]."

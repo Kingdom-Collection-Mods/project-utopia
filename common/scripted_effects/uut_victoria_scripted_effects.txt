@@ -678,12 +678,17 @@ ut_new_dawn_common_pressure_progress_yearly = {
 }
 
 ut_new_dawn_common_pressure_progress_monthly = {
+	#base
 	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_sol_yoy value = 0 }
 	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_legitimacy value = 0 }
 	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_expected_sol value = 0 }
 	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_expected_sol_gap value = 0 }
 	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_core_progress value = 0 }
-	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_ruler_ideology value = 0 }
+
+	#events/temporary
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_war_support value = 0 }
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_high_radicalism_movement value = 0 }
+	set_variable = { name = je_ut_new_dawn_common_pressure_progress_from_insurrectionary_movement value = 0 }
 	if = {
 		limit = {
 			is_player = yes
@@ -872,36 +877,143 @@ ut_new_dawn_common_pressure_progress_monthly = {
 				multiply = -0.5
 			}
 		}
-
 		if = {
 			limit = {
-				has_modifier = ut_new_dawn_core_democratic_mod
-				legitimacy > 50
-				ruler = {
-					ut_ideology_new_dawn_democrat_trigger = yes
-				}
-			}
-			change_variable = {
-				name = je_ut_new_dawn_common_pressure_progress_from_ruler_ideology
-				add = -0.25
-			}
-		}
-		
-		if = {
-			limit = {
-				has_modifier = ut_new_dawn_core_democratic_mod
-				legitimacy > 50
-				ruler = {
-					OR = {
-						ut_ideology_new_dawn_fascist_trigger = yes
-						ut_ideology_new_dawn_autocrat_trigger = yes
-						ut_ideology_new_dawn_communist_trigger = yes
+				is_at_war = yes
+				any_scope_war = {
+					#attacker_warleader ?= { this = ROOT.owner }
+					has_war_support = {
+						target = root.owner
+						value < 25
 					}
 				}
 			}
 			change_variable = {
-				name = je_ut_new_dawn_common_pressure_progress_from_ruler_ideology
+				name = je_ut_new_dawn_common_pressure_progress_from_war_support
+				add = 2
+			}
+		}
+		else_if = {
+			limit = {
+				is_at_war = yes
+				any_scope_war = {
+					#attacker_warleader ?= { this = ROOT.owner }
+					has_war_support = {
+						target = root.owner
+						value < 50
+					}
+				}
+			}
+			change_variable = {
+				name = je_ut_new_dawn_common_pressure_progress_from_war_support
+				add = 1
+			}
+		}
+		else_if = {
+			limit = {
+				is_at_war = yes
+				any_scope_war = {
+					#attacker_warleader ?= { this = ROOT.owner }
+					has_war_support = {
+						target = root.owner
+						value < 75
+					}
+				}
+			}
+			change_variable = {
+				name = je_ut_new_dawn_common_pressure_progress_from_war_support
 				add = 0.5
+			}
+		}
+
+		if = {
+			limit = {
+				any_political_movement = {
+					is_insurrectionary = no
+					political_movement_radicalism >= 0.5
+				}
+			}
+			every_political_movement = {
+				limit = {
+					is_insurrectionary = no
+					political_movement_radicalism >= 0.5
+				}
+				ROOT = {
+					change_variable = {
+						name = je_ut_new_dawn_common_pressure_progress_from_high_radicalism_movement
+						add = {
+							value = prev.political_movement_radicalism
+							multiply = {
+								value = prev.political_movement_support
+								divide = 0.25
+							}
+						}
+					}
+				}
+			}
+		}
+		
+
+		if = {
+			limit = {
+				any_political_movement = {
+					is_insurrectionary = yes
+					political_movement_support >= 0.25
+				}
+			}
+			every_political_movement = {
+				limit = {
+					is_insurrectionary = yes
+					political_movement_support >= 0.25
+				}
+				ROOT = {
+					change_variable = {
+						name = je_ut_new_dawn_common_pressure_progress_from_insurrectionary_movement
+						add = 2
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				any_political_movement = {
+					is_insurrectionary = yes
+					political_movement_support < 0.25
+					political_movement_support >= 0.10
+				}
+			}
+			every_political_movement = {
+				limit = {
+					is_insurrectionary = yes
+					political_movement_support < 0.25
+					political_movement_support >= 0.10
+				}
+				ROOT = {
+					change_variable = {
+						name = je_ut_new_dawn_common_pressure_progress_from_insurrectionary_movement
+						add = 1
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				any_political_movement = {
+					is_insurrectionary = yes
+					political_movement_support < 0.10
+				}
+			}
+			every_political_movement = {
+				limit = {
+					is_insurrectionary = yes
+					political_movement_support < 0.10
+				}
+				ROOT = {
+					change_variable = {
+						name = je_ut_new_dawn_common_pressure_progress_from_insurrectionary_movement
+						add = 0.5
+					}
+				}
 			}
 		}
 	}
