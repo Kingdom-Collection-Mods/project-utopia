@@ -205,6 +205,49 @@ ut_ideology_new_dawn_autocrat_laws_trigger = {
 ut_ideology_new_dawn_monarchist_laws_trigger = {
 }
 
+ut_new_dawn_has_communist_core_laws_trigger = {
+	OR = {
+		has_law_or_variant = law_type:law_command_economy
+		has_law_or_variant = law_type:law_cooperative_ownership
+	}
+}
+
+ut_new_dawn_has_democrat_core_laws_trigger = {
+	has_law_or_variant = law_type:law_universal_suffrage
+}
+
+ut_new_dawn_has_democrat_secondary_core_laws_trigger = {
+	has_law_or_variant = law_type:law_census_voting
+}
+
+ut_new_dawn_has_autocrat_core_laws_trigger = {
+	AND = {
+		OR = {
+			has_law_or_variant = law_type:law_monarchy
+			has_law_or_variant = law_type:law_autocracy
+			has_law_or_variant = law_type:law_oligarchy
+		}
+		NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+	}
+}
+
+ut_new_dawn_has_autocrat_secondary_core_laws_trigger = {
+	AND = {
+		OR = {
+			has_law_or_variant = law_type:law_technocracy
+			has_law_or_variant = law_type:law_theocracy
+		}
+		NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+	}
+}
+
+ut_new_dawn_has_fascist_core_laws_trigger = {
+	OR = {
+		has_law_or_variant = law_type:law_ethnostate
+		has_law_or_variant = law_type:law_neo_ethno_state
+	}
+}
+
 ut_service_workers_possible = {
 	OR = {
 		has_technology_researched = consumer_goods_main_analog

@@ -99,10 +99,7 @@ ut_new_dawn_communist_progress = { #Effects like these are run three times, one 
 	# From Laws
 	if = {
 		limit = {
-			OR = {
-				has_law_or_variant = law_type:law_command_economy
-				has_law_or_variant = law_type:law_cooperative_ownership
-			}
+			ut_new_dawn_has_communist_core_laws_trigger = yes
 		}
 		change_variable = { name = ut_nd_communist_progress_from_core_laws add = 1 }
 	}
@@ -202,7 +199,7 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 	# From Laws
 	if = {
 		limit = {
-			has_law_or_variant = law_type:law_universal_suffrage
+			ut_new_dawn_has_democrat_core_laws_trigger = yes
 		}
 		ROOT = {
 			change_variable = { name = ut_nd_democrat_progress_from_core_laws add = 1 }
@@ -210,7 +207,7 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 	}
 	else_if = {
 		limit = {
-			has_law_or_variant = law_type:law_census_voting
+			ut_new_dawn_has_democrat_secondary_core_laws_trigger = yes
 		}
 		ROOT = {
 			change_variable = { name = ut_nd_democrat_progress_from_core_laws add = 0.5 }
@@ -314,12 +311,7 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 	# From Laws
 	if = {
 		limit = {
-			OR = {
-				has_law_or_variant = law_type:law_monarchy
-				has_law_or_variant = law_type:law_autocracy
-				has_law_or_variant = law_type:law_oligarchy
-			}
-			NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+			ut_new_dawn_has_autocrat_core_laws_trigger = yes
 		}
 		ROOT = {
 			change_variable = { name = ut_nd_autocrat_progress_from_core_laws add = 1 }
@@ -327,11 +319,7 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 	}
 	else_if = {
 		limit = {
-			OR = {
-				has_law_or_variant = law_type:law_technocracy
-				has_law_or_variant = law_type:law_theocracy
-			}
-			NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+			ut_new_dawn_has_autocrat_secondary_core_laws_trigger = yes
 		}
 		ROOT = {
 			change_variable = { name = ut_nd_autocrat_progress_from_core_laws add = 0.5 }
@@ -442,10 +430,7 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 	# From Laws
 	if = {
 		limit = {
-			OR = {
-				has_law_or_variant = law_type:law_ethnostate
-				has_law_or_variant = law_type:law_neo_ethno_state
-			}
+			ut_new_dawn_has_fascist_core_laws_trigger = yes
 		}
 		change_variable = { name = ut_nd_fascist_progress_from_core_laws add = 1 }
 	}
