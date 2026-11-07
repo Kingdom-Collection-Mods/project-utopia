@@ -39,7 +39,7 @@ ut_agitator_fidel_castro = {
 	religion = rel:atheist
 	female = no
 	interest_group = ig_trade_unions
-	ideology = ideology_communist
+	ideology = ideology_communist_leader
 	birth_date = 1926.8.13
 	traits = {
 		persistent

@@ -1784,6 +1784,8 @@ ideology_japan_hierarchic = {
 		law_racial_segregation = neutral
 		law_cultural_exclusion = neutral
 		law_multicultural = disapprove
+		law_multicultural_globalism = strongly_disapprove
+		law_neo_ethno_state = approve
 	}
 
 	lawgroup_edo_social_system = {
@@ -1807,6 +1809,9 @@ ideology_japan_hierarchic = {
 		law_mercantilism = neutral
 		law_protectionism = disapprove
 		law_free_trade = strongly_disapprove
+		law_international_trade = disapprove
+		law_protectionism_union = neutral
+		law_free_trade_union = strongly_disapprove
 	}
 
 	lawgroup_taxation = {

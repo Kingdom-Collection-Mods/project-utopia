@@ -23,27 +23,25 @@
 
 	possible = {
 		OR = {
-			has_technology_researched = consumer_goods_main_analog
-			has_game_rule = ut_new_dawn_start_era_4
-			has_game_rule = ut_new_dawn_start_era_5
+			has_technology_researched = consumer_goods_main_analog			
+			trigger_if = {
+				limit = {
+					has_game_rule = ut_new_dawn_start_era_4		
+				}
+				has_game_rule = ut_new_dawn_start_era_4		
+			}
+			trigger_else_if = {
+				limit = {
+					has_game_rule = ut_new_dawn_start_era_5
+				}
+				has_game_rule = ut_new_dawn_start_era_5
+			}
 			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
 		}
 		OR = {
 			custom_tooltip = {
 				text = je_ut_new_dawn_global_started_tt
 				has_global_variable = je_ut_new_dawn_global_started
-			}
-			OR = {
-				has_technology_researched = heavy_machinery_era_analog
-				has_technology_researched = consumer_goods_main_house_hold_electrical
-				has_technology_researched = nuclear_power
-				has_technology_researched = union_trade
-				has_technology_researched = national_socialism
-				has_technology_researched = emancipation_movement
-				AND = {
-					has_technology_researched = ut_military_complex
-					has_technology_researched = ut_tank_diesel_engine
-				}
 			}
 			trigger_if = {
 				limit = {
@@ -70,8 +68,21 @@
 			}
 			trigger_else = {
 				OR = {
-					has_game_rule = ut_new_dawn_start_era_4
-					has_game_rule = ut_new_dawn_start_era_5
+					has_technology_researched = heavy_machinery_era_analog
+					has_technology_researched = consumer_goods_main_house_hold_electrical
+					has_technology_researched = nuclear_power
+					has_technology_researched = union_trade
+					has_technology_researched = national_socialism
+					has_technology_researched = emancipation_movement
+					AND = {
+						has_technology_researched = ut_military_complex
+						has_technology_researched = ut_tank_diesel_engine
+					}
+					
+					OR = {
+						has_game_rule = ut_new_dawn_start_era_4
+						has_game_rule = ut_new_dawn_start_era_5
+					}
 				}
 			}
 			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
@@ -91,6 +102,16 @@
 			}
 			set_global_variable = je_ut_new_dawn_global_started
 			set_variable = je_ut_new_dawn_first_started
+			save_scope_as = je_ut_new_dawn_first_started_scope
+			every_country = {
+				limit = {
+					is_player = yes
+				}
+				trigger_event = {
+					id = event_new_dawn.1
+					popup = yes
+				}
+			}
 		}
 		add_to_global_variable_list = {
 			name = ut_new_dawn_no_core_list
@@ -132,7 +153,7 @@
 		effect = {
 			custom_tooltip = {
 				text = je_ut_new_dawn_effect_tt
-				ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+				ut_clear_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 			}
 			if = {
 				limit = {
@@ -342,9 +363,17 @@
 		random_events = {
 			#og was 400
 			200 = 0
-			10 = event_new_dawn.11
-			10 = event_new_dawn.12
-			10 = event_new_dawn.13   #Radicals
+			#IG Leader Ideological Change
+			5 = event_new_dawn.11
+			5 = event_new_dawn.12
+			5 = event_new_dawn.13
+			5 = event_new_dawn.14
+			5 = event_new_dawn.15
+			5 = event_new_dawn.16
+
+			5 = event_new_dawn.50   #Radicals
+			1 = event_new_dawn.51   #News incident
+			1 = event_new_dawn.52   #Favorable news reports
 
 			#Pressure Events
 			#Generic Good (<25 pressure)
@@ -441,6 +470,163 @@
 				ig:ig_urbanists = {
 					add_ideology = ideology_urbanist_economy_base
 				}
+			}
+		}
+	}
+
+	map_color = {
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						is_capital = yes
+						owner ?= {
+							has_modifier = je_ut_new_dawn_autocrat_focus
+						}
+					}
+					owner ?= {
+						has_modifier = ut_new_dawn_core_autocratic_mod
+					}
+				}
+			}
+			value = ut_autocrat_blue
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						is_capital = yes
+						owner ?= {
+							has_modifier = je_ut_new_dawn_communist_focus
+						}
+					}
+					owner ?= {
+						has_modifier = ut_new_dawn_core_communist_mod
+					}
+				}
+			}
+			value = ut_communist_red
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						is_capital = yes
+						owner ?= {
+							has_modifier = je_ut_new_dawn_fascist_focus
+						}
+					}
+					owner ?= {
+						has_modifier = ut_new_dawn_core_fascist_mod
+					}
+				}
+			}
+			value = ut_fascist_green
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						is_capital = yes
+						owner ?= {
+							has_modifier = je_ut_new_dawn_democrat_focus
+						}
+					}
+					owner ?= {
+						has_modifier = ut_new_dawn_core_democratic_mod
+					}
+				}
+			}
+			value = ut_democrat_blue
+		}
+		else_if = {
+			limit = {
+				owner ?= {
+					has_journal_entry = je_ut_new_dawn
+				}
+			}
+			value = ut_no_focus_grey
+		}
+	}
+
+	
+	
+	map_color_second = {
+		if = {
+			limit = {
+				owner ?= {
+					NOT = { ut_new_dawn_has_core_trigger = yes }
+				}
+			}
+			if = {
+				limit = {
+					owner ?= {
+						je:je_ut_new_dawn = {
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+						}
+					}
+				}
+				value = ut_autocrat_blue
+			}
+			else_if = {
+				limit = {
+					owner ?= {
+						je:je_ut_new_dawn = {
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+						}
+					}
+				}
+				value = ut_communist_red
+			}
+			else_if = {
+				limit = {
+					owner ?= {
+						je:je_ut_new_dawn = {
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)" 
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+						}
+					}
+				}
+				value = ut_fascist_green
+			}
+			else_if = {
+				limit = {
+					owner ?= {
+						je:je_ut_new_dawn = {
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+						}
+					}
+				}
+				value = ut_democrat_blue
+			}
+		}
+		else_if = {
+			limit = {
+				owner ?= {
+					has_journal_entry = je_ut_new_dawn
+					NOT = { ut_new_dawn_has_core_trigger = yes }
+				}
+			}
+			value = ut_no_focus_grey
+		}
+	}
+
+	map_tooltip = {
+		owner ?= {
+			save_scope_as = relevant_country
+			#custom_tooltip_no_bullet = "reform_or_revolution_map_debug_tooltip"
+			if = {
+				limit = {
+					has_journal_entry = je_ut_new_dawn
+				}
+				custom_tooltip_no_bullet = "je_ut_new_dawn_map_tooltip"
 			}
 		}
 	}
@@ -629,7 +815,7 @@ je_ut_new_dawn_democratic = {
 		effect = {
 			custom_tooltip = {
 				text = je_ut_new_dawn_effect_tt
-				ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+				ut_clear_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 			}
 			set_variable = je_ut_new_dawn_done
 
@@ -884,7 +1070,7 @@ je_ut_new_dawn_autocratic = {
 	# on_complete = {
 	# 	custom_tooltip = {
 	# 		text = je_ut_new_dawn_effect_tt
-	# 		ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+	# 		ut_clear_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 	# 	}
 	# 	set_variable = je_ut_new_dawn_done
 	# }
@@ -1160,7 +1346,7 @@ je_ut_new_dawn_fascist = {
 		effect = {
 			custom_tooltip = {
 				text = je_ut_new_dawn_effect_tt
-				ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+				ut_clear_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 			}
 			set_variable = je_ut_new_dawn_done
 
@@ -1392,7 +1578,7 @@ je_ut_new_dawn_communist = {
 		effect = {
 			custom_tooltip = {
 				text = je_ut_new_dawn_effect_tt
-				ut_clear_divided_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+				ut_clear_new_dawn_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
 			}
 			set_variable = je_ut_new_dawn_done
 

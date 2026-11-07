@@ -5,7 +5,10 @@ ut_new_dawn_fascist_bar = {
 	desc = "ut_new_dawn_fascist_bar_desc"
 
 	#for color
-	default_green = yes
+	progress_texture = "gfx/interface/progressbar/progressbar_green.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_green_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_green_glow_line.dds"
 
 	monthly_progress = {
 		if = {
@@ -56,6 +59,19 @@ ut_new_dawn_fascist_bar = {
 			}
 			else = {
 				if ={
+					limit = {
+						OR = {
+							has_game_rule = ut_new_dawn_start_era_4
+							has_game_rule = ut_new_dawn_start_era_5
+						}
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					#no malus if starting era 4 or 5
+				}
+				else_if ={
 					limit = {
 						pop_type_percent_country = {
 							target = pop_type:service_workers
@@ -130,7 +146,10 @@ ut_new_dawn_democrat_bar = {
 	desc = "ut_new_dawn_democrat_bar_desc"
 
 	#for color
-	default = yes
+	progress_texture = "gfx/interface/progressbar/progressbar_default.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_default_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_default_glow_line.dds"
 
 	monthly_progress = {
 		if = {
@@ -182,6 +201,19 @@ ut_new_dawn_democrat_bar = {
 			}
 			else = {
 				if ={
+					limit = {
+						OR = {
+							has_game_rule = ut_new_dawn_start_era_4
+							has_game_rule = ut_new_dawn_start_era_5
+						}
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					#no malus if starting era 4 or 5
+				}
+				else_if ={
 					limit = {
 						pop_type_percent_country = {
 							target = pop_type:service_workers
@@ -256,7 +288,10 @@ ut_new_dawn_communist_bar = {
 	desc = "ut_new_dawn_communist_bar_desc"
 
 	#for color
-	default_bad = yes
+	progress_texture = "gfx/interface/progressbar/progressbar_bad.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_bad_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_bad_glow_line.dds"
 
 	monthly_progress = {
 		if = {
@@ -305,8 +340,21 @@ ut_new_dawn_communist_bar = {
 				}
 				multiply = 2
 			}
-			else = {
+			else = {				
 				if ={
+					limit = {
+						OR = {
+							has_game_rule = ut_new_dawn_start_era_4
+							has_game_rule = ut_new_dawn_start_era_5
+						}
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					#no malus if starting era 4 or 5
+				}
+				else_if ={
 					limit = {
 						pop_type_percent_country = {
 							target = pop_type:service_workers
@@ -380,7 +428,10 @@ ut_new_dawn_autocrat_bar = {
 	name = "ut_new_dawn_autocrat_bar"
 	desc = "ut_new_dawn_autocrat_bar_desc"
 
-	default = yes
+	progress_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue_glow_line.dds"
 
 	monthly_progress = {
 		if = {
@@ -426,11 +477,27 @@ ut_new_dawn_autocrat_bar = {
 			if = {
 				limit = {
 					is_ai = yes
+				}				
+				multiply = {
+					desc = "ut_nd_multiplier_from_service_workers_0"
+					value = 2
 				}
-				multiply = 2
 			}
 			else = {
 				if ={
+					limit = {
+						OR = {
+							has_game_rule = ut_new_dawn_start_era_4
+							has_game_rule = ut_new_dawn_start_era_5
+						}
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					#no malus if starting era 4 or 5
+				}
+				else_if ={
 					limit = {
 						pop_type_percent_country = {
 							target = pop_type:service_workers
@@ -553,7 +620,10 @@ je_ut_new_dawn_autocratic_points_bar = {
 	name = "je_ut_new_dawn_points_bar"
 	desc = "je_ut_new_dawn_points_bar_desc"
 
-	default = yes
+	progress_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue_glow_line.dds"
 
 	monthly_progress = {
 		if = {

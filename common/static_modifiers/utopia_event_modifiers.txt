@@ -21,7 +21,7 @@ new_dawn_mod = {
 	state_radicals_from_political_movements_mult = 0.25
 	state_radicals_and_loyalists_from_sol_change_mult = 0.25
 	country_radicals_from_legitimacy_mult = 0.5
-	country_law_enactment_speed_mult = -0.33
+	country_law_enactment_speed_mult = 0.25
 }
 
 
@@ -31,13 +31,17 @@ new_dawn_phase_2_mod = {
 	political_movement_pop_attraction_mult = -0.25
 	state_radicals_from_political_movements_mult = -0.25
 	state_radicals_and_loyalists_from_sol_change_mult = -0.25
-	country_law_enactment_speed_mult = 0.33
+	country_law_enactment_speed_mult = -0.5
 }
 
 
 new_dawn_event_radicals_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
 	political_movement_radicalism_add = 0.25
+}
+
+new_dawn_event_suppress_radicals_mod = {
+	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
 }
 
 new_dawn_event_disapproval_mod = {
@@ -182,6 +186,7 @@ je_ut_new_dawn_autocratic_mod = {
 	country_authority_mult = 0.5
 	country_radicals_from_conquest_mult = 0.25
 	country_diplomatic_play_maneuvers_add = 50
+	state_pop_support_movement_liberal_mult = -0.05
 }
 
 ut_new_dawn_core_autocratic_mod = {
@@ -286,16 +291,21 @@ ut_nuclear_power_site_mod = {
 
 je_ut_new_dawn_emergency_powers_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	country_law_enactment_speed_mult = -0.33
+	country_law_enactment_speed_mult = 0.25
 	country_law_enactment_stall_mult = -0.25
 	interest_group_in_government_approval_add = 2
-	state_pop_support_movement_liberal_add = 0.05
+	state_pop_support_movement_liberal_mult = 0.05
+	state_pop_support_movement_radical_mult = 0.05
+	state_pop_support_movement_socialist_mult = 0.05
+	
 }
 
 je_ut_new_dawn_strengthen_power_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	country_new_dawn_progress_points_progress = 0.5
-	state_pop_support_movement_liberal_add = 0.05
+	state_pop_support_movement_liberal_mult = 0.05
+	state_pop_support_movement_radical_mult = 0.05
+	state_pop_support_movement_socialist_mult = 0.05
 }
 
 je_ut_new_dawn_border_dispute_mod = {
@@ -305,12 +315,16 @@ je_ut_new_dawn_border_dispute_mod = {
 	country_diplomatic_play_maneuvers_add = 50
 	country_radicals_from_conquest_mult = -0.5
 	unit_defense_mult = 0.1
-	state_pop_support_movement_liberal_add = 0.05
+	state_pop_support_movement_liberal_mult = 0.05
+	state_pop_support_movement_radical_mult = 0.05
+	state_pop_support_movement_socialist_mult = 0.05
 }
 
 je_ut_new_dawn_suppress_dissidents_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	state_pop_support_movement_liberal_add = 0.05
+	state_pop_support_movement_liberal_mult = 0.05
+	state_pop_support_movement_radical_mult = 0.05
+	state_pop_support_movement_socialist_mult = 0.05
 }
 
 je_ut_new_dawn_suppress_dissidents_self_mod = {
@@ -537,4 +551,9 @@ je_ut_software_era_8_5_cloud_computing_mod = {
 je_ut_software_era_8_6_ownership_model_language_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	goods_output_software_mult = 2
+}
+
+ut_new_dawn_early_game_rule_unlock_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_weekly_innovation_add = -50
 }

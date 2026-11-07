@@ -185,11 +185,13 @@
  new_dawn_event_innovation_max_reduced_mod: "Neuer Aufbruch: Forschung gestört"
 
  new_dawn_event_radicals_mod: "Neuer Aufbruch: Radikale"
+ new_dawn_event_suppress_radicals_mod: "Neuer Aufbruch: Radikale unterdrücken"
 
  event_new_dawn.1.t: "Neuer Aufbruch"
  event_new_dawn.1.d: "Eine neue politische Welle hat unsere Nation erfasst, und wir müssen entscheiden, wie wir darauf reagieren. Werden wir den Wandel begrüßen oder ihm widerstehen? Die Zukunft unseres Landes steht auf dem Spiel."
  event_new_dawn.1.f: "Der Neue Aufbruch ist da, und mit ihm beginnt eine neue Ära des politischen Wandels. Wir müssen diese Gewässer sorgfältig navigieren und die Forderungen des Volkes mit den Bedürfnissen des Staates in Einklang bringen. Die Entscheidungen, die wir jetzt treffen, werden die Zukunft unserer Nation für kommende Generationen prägen."
  event_new_dawn.1.a: "Auf zum Neuen Aufbruch"
+ event_new_dawn.1.a.tt: "[concept_ut_new_dawn] hat in [SCOPE.sCountry('je_ut_new_dawn_first_started_scope').GetName] begonnen"
 
  event_new_dawn.2.a: "Grundlage für die Kernideologie schaffen"
  
@@ -227,11 +229,45 @@
  event_new_dawn.12.d: "Wenn das Bürgertum spricht, formiert es eine mächtige Koalition."
  event_new_dawn.12.f: "Einflussreiche Industrielle und Geschäftsleute haben aus Sorge über den Kurs des Landes einen Führungswechsel gefordert. Sie setzen sich für eine neue Galionsfigur ein, die wirtschaftliches Wachstum und Stabilität priorisiert."
 
- event_new_dawn.13.t: "Aufstand der Radikalen"
- event_new_dawn.13.d: "Radikale Fraktionen mobilisieren sich und drohen, die bestehende Ordnung zu stürzen. Sie fordern einen Ideologiewechsel."
- event_new_dawn.13.f: "Radikale Gruppen, angetrieben von Frustration und dem Wunsch nach Veränderung, haben einen Aufstand begonnen. Sie wollen die bestehende Machtstruktur zerschlagen und eine neue ideologische Ordnung errichten. Die Lage ist volatil."
+ event_new_dawn.14.t: "Intellektuelle fordert Führungswechsel"
+ event_new_dawn.14.d: "Wenn die Intellektuellen sprechen, prägen ihre Ideen die Nation."
+ event_new_dawn.14.f: "Einflussreiche Gelehrte, Schriftsteller und Reformer haben einen Führungswechsel gefordert. Sie suchen eine neue Galionsfigur, die Bildung, Wissen und ihre Vision für die Zukunft des Landes fördert."
+
+ event_new_dawn.15.t: "Gewerkschaften fordern Führungswechsel"
+ event_new_dawn.15.d: "Wenn sich die Arbeiter organisieren, lassen sich ihre Forderungen nicht ignorieren."
+ event_new_dawn.15.f: "Gewerkschaftsführer haben im Namen der Arbeiter im ganzen Land einen Führungswechsel gefordert. Sie verlangen eine neue Galionsfigur, die die Interessen der Arbeiter verteidigt und ihre Lebensbedingungen verbessert."
+
+ event_new_dawn.16.t: "Landbevölkerung fordert Führungswechsel"
+ event_new_dawn.16.d: "Wenn das Land spricht, muss die Nation zuhören."
+ event_new_dawn.16.f: "Vertreter ländlicher Gemeinden haben einen Führungswechsel gefordert. Sie verlangen eine neue Galionsfigur, die die Bauern schützt, örtliche Gemeinschaften stärkt und sich den Bedürfnissen des Landes annimmt."
+
+ event_new_dawn.13.t: "Industrielle fordern Führungswechsel"
+ event_new_dawn.13.d: "Wenn die Industrie spricht, hört die Wirtschaft der Nation zu."
+ event_new_dawn.13.f: "Einflussreiche Industrielle und Geschäftsleute haben einen Führungswechsel gefordert. Sie suchen eine neue Galionsfigur, die wirtschaftliches Wachstum, Investitionen und Stabilität priorisiert."
+
+ event_new_dawn.50.t: "Aufstand der Radikalen"
+ event_new_dawn.50.d: "Radikale Fraktionen mobilisieren sich und drohen, die bestehende Ordnung zu stürzen. Sie fordern einen Ideologiewechsel."
+ event_new_dawn.50.f: "Radikale Gruppen, angetrieben von Frustration und dem Wunsch nach Veränderung, haben einen Aufstand begonnen. Sie wollen die bestehende Machtstruktur zerschlagen und eine neue ideologische Ordnung errichten. Die Lage ist volatil."
  
- event_new_dawn.13.a: "Radikale Gruppen formieren sich"
+ event_new_dawn.50.a: "Radikale Gruppen formieren sich"
+
+ event_new_dawn.51.t: "Eine neue Stimme in der Presse"
+ event_new_dawn.51.d: "Eine weit verbreitete Zeitung hat eine Reihe von Artikeln über die Zukunft der Nation veröffentlicht und damit im ganzen Land eine lebhafte Debatte ausgelöst."
+ event_new_dawn.51.f: "Die Leitartikel der Zeitung präsentieren konkurrierende Vorstellungen von der Zukunft des Landes. Leser versammeln sich in Cafés und öffentlichen Sälen, um die Ideen zu diskutieren, und jede Bewegung sieht die Chance, neue Unterstützung zu gewinnen."
+ event_new_dawn.51.dem: "Die demokratische Vision fördern"
+ event_new_dawn.51.aut: "Die autokratische Vision fördern"
+ event_new_dawn.51.com: "Die kommunistische Vision fördern"
+ event_new_dawn.51.fas: "Die faschistische Vision fördern"
+ event_new_dawn.51.random: "Nicht in die Presse eingreifen"
+
+ event_new_dawn.52.t: "Bevorzugte Nachrichtenberichte"
+ event_new_dawn.52.d: "Eine Reihe von Zeitungsberichten hat unserem ideologischen Programm neue Aufmerksamkeit verschafft. Wir können die Berichterstattung nutzen, um unseren Schwerpunkt voranzubringen, allerdings nur auf Kosten einer rivalisierenden Ideologie."
+ event_new_dawn.52.f: "Die Herausgeber haben zugestimmt, der bevorzugten Ideologie der Regierung große Aufmerksamkeit zu widmen. Im Gegenzug sollen wir entscheiden, welche konkurrierende Bewegung an Einfluss verlieren soll."
+ event_new_dawn.52.a: "Führe eine Anti-Demokratie Kampagne"
+ event_new_dawn.52.b: "Führe eine Anti-Autokratie Kampagne"
+ event_new_dawn.52.c: "Führe eine Rote-Socken Kampagne"
+ event_new_dawn.52.e: "Führe eine Anti-Faschismus Kampagne"
+ event_new_dawn.52.g: "Verzichte auf eine Schmierkampagne"
 
  event_new_dawn.101.t: "Welle der Begeisterung"
  event_new_dawn.101.d: "Eine Welle öffentlicher Begeisterung hat das Land erfasst, da unser ideologisches Programm in der Bevölkerung großen Anklang findet."
@@ -316,8 +352,11 @@
  new_dawn_event_constitutional_crisis_mod: "Neuer Aufbruch: Verfassungskrise"
  new_dawn_event_emergency_decree_mod: "Neuer Aufbruch: Ausnahmezustand"
 
+ event_new_dawn.aligned_leader: "Anführer ist unserer Ideologie treu"
  event_new_dawn.democrat_leader: "Einen neuen demokratischen Anführer ernennen"
  event_new_dawn.autocrat_leader: "Eine autokratische Galionsfigur stärken"
+ event_new_dawn.fascist_leader: "Eine faschistische Galionsfigur stärken"
+ event_new_dawn.communist_leader: "Eine kommunistische Galionsfigur stärken"
  event_new_dawn.random_decision: "Das Ergebnis sich organisch entfalten lassen"
  event_new_dawn.suppress_random_decision: "Unbeabsichtigte Führungswechsel verhindern"
 
@@ -399,7 +438,7 @@
  ut_nd_communist_progress_from_events: "Ereignisse und andere Effekte"
  ut_new_dawn_communist_status: "Kommunistische Ideen prägen den Diskurs"
  concept_ut_nd_communist_characters: "Kommunistische Charaktere"
- concept_ut_nd_communist_characters_desc: "Kommunistische [concept_character] [Concept('concept_ideology', '$concept_ideologies$')] sind: [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_vanguardist').GetName], and [GetIdeology('ideology_nihilist').GetName].\nWenn Kommunistischer [concept_ut_nd_focus] aktiv ist, sind ebenfalls enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] and [GetIdeology('ideology_positivist').GetName]."
+ concept_ut_nd_communist_characters_desc: "Kommunistische [concept_character] [Concept('concept_ideology', '$concept_ideologies$')] sind: [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_communist_leader').GetName], [GetIdeology('ideology_vanguardist').GetName], [GetIdeology('ideology_nihilist').GetName], [GetIdeology('ideology_state_socialist').GetName] und [GetIdeology('ideology_utilitarian_leader').GetName].\nWenn Kommunistischer [concept_ut_nd_focus] aktiv ist, sind ebenfalls enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName], [GetIdeology('ideology_positivist').GetName], [GetIdeology('ideology_luddite').GetName] und [GetIdeology('ideology_sovereignist_leader').GetName]."
 
  je_ut_new_dawn_democrat_focus: "Demokratischer Fokus"
  je_ut_new_dawn_democrat_focus_desc: "Demokratischer Fokus ausgewählt"
@@ -450,10 +489,10 @@
  ut_new_dawn_ideology_status_no_new_dawn: "Keinen"
  ut_new_dawn_ideology_status_pre_new_dawn: "Viktorianisches Zeitalter"
  ut_new_dawn_ideology_status_new_dawn_ongoing: "[ROOT.GetCountry.GetCustom('ut_new_dawn_phase_1_trend')] im Aufbau"
- ut_new_dawn_ideology_status_fascist: "@ut_nd_fascist! #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_fascist_tt $concept_ut_nd_fascist_core$#!#! (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_fascist_tt [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]#!#!) [ROOT.GetCountry.GetCustom('ut_new_dawn_progress_trend')]"
- ut_new_dawn_ideology_status_communist: "@ut_nd_communist! #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_communist_tt $concept_ut_nd_communist_core$#!#! (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_communist_tt [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]#!#!) [ROOT.GetCountry.GetCustom('ut_new_dawn_progress_trend')]"
- ut_new_dawn_ideology_status_autocratic: "@ut_nd_autocrat! #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_autocratic_tt $concept_ut_nd_autocrat_core$#!#! (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_autocratic_tt [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]#!#!) [ROOT.GetCountry.GetCustom('ut_new_dawn_progress_trend')]"
- ut_new_dawn_ideology_status_democratic: "@ut_nd_democrat! #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_democratic_tt $concept_ut_nd_democrat_core$#!#! (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_democratic_tt [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]#!#!) [ROOT.GetCountry.GetCustom('ut_new_dawn_progress_trend')]"
+ ut_new_dawn_ideology_status_fascist: "@ut_nd_fascist! #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_fascist_tt $concept_ut_nd_fascist_core$#!#! (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_fascist_tt [ROOT.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]#!#!) [ROOT.GetCountry.GetCustom('ut_new_dawn_progress_trend')]"
+ ut_new_dawn_ideology_status_communist: "@ut_nd_communist! #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_communist_tt $concept_ut_nd_communist_core$#!#! (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_communist_tt [ROOT.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]#!#!) [ROOT.GetCountry.GetCustom('ut_new_dawn_progress_trend')]"
+ ut_new_dawn_ideology_status_autocratic: "@ut_nd_autocrat! #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_autocratic_tt $concept_ut_nd_autocrat_core$#!#! (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_autocratic_tt [ROOT.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]#!#!) [ROOT.GetCountry.GetCustom('ut_new_dawn_progress_trend')]"
+ ut_new_dawn_ideology_status_democratic: "@ut_nd_democrat! #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_democratic_tt $concept_ut_nd_democrat_core$#!#! (#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],ut_new_dawn_ideology_status_democratic_tt [ROOT.GetCountry.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]#!#!) [ROOT.GetCountry.GetCustom('ut_new_dawn_progress_trend')]"
 
  ut_new_dawn_ideology_status_fascist_tt: "#b [concept_ut_nd_progress_points]#!: #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]/100#! [Country.GetCustom('ut_new_dawn_progress_trend')]\n\n#b [concept_ut_new_dawn]#!\n$ut_phase_1_trend_tooltip$\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_fascist_stance$"
  ut_new_dawn_ideology_status_communist_tt: "#b [concept_ut_nd_progress_points]#!: #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]/100#! [Country.GetCustom('ut_new_dawn_progress_trend')]\n\n#b [concept_ut_new_dawn]#!\n$ut_phase_1_trend_tooltip$\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_communist_stance$"
@@ -472,7 +511,7 @@
  ut_nd_democrat_progress_from_focus: "Demokratischer Fokus"
  concept_ut_nd_democrat_interest_group_tt: "IG hat Anführer mit [concept_ut_nd_democrat_characters] Ideologie"
  concept_ut_nd_democrat_characters: "Demokratische Charaktere"
- concept_ut_nd_democrat_characters_desc: "Demokratische Charakter Ideologien sind: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ideology_social_democrat').GetName], [GetIdeology('ideology_utopian').GetName], and [GetIdeology('ut_ideology_cosmopolitan_leader').GetName].\nWenn Demokratischer [concept_ut_nd_focus] aktiv ist, umfasst auch: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_pacifist').GetName], [GetIdeology('ideology_feminist').GetName], [GetIdeology('ut_ideology_environmentalist_leader').GetName], [GetIdeology('ideology_market_liberal').GetName] und [GetIdeology('ideology_modernizer_leader').GetName]."
+ concept_ut_nd_democrat_characters_desc: "Demokratische Charakter Ideologien sind: [GetIdeology('ideology_liberal_leader').GetName], [GetIdeology('ideology_humanitarian').GetName], [GetIdeology('ideology_republican_leader').GetName], [GetIdeology('ut_ideology_cosmopolitan_leader').GetName], und [GetIdeology('ideology_ilustrado').GetName].\nWenn Demokratischer [concept_ut_nd_focus] aktiv ist, umfasst auch: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_pacifist').GetName], [GetIdeology('ideology_feminist').GetName], [GetIdeology('ut_ideology_environmentalist_leader').GetName], [GetIdeology('ideology_market_liberal').GetName], [GetIdeology('ideology_modernizer_leader').GetName], [GetIdeology('ideology_sovereignist_leader').GetName] und [GetIdeology('ideology_utilitarian_leader').GetName]."
  ut_new_dawn_democrat_status: "Demokratische Ideen prägen den Diskurs"
  ut_new_dawn_phase_2_status_je: "Ideologie etabliert"
  ut_nd_decaying_progress: "$new_dawn_phase_2_mod$"
@@ -561,6 +600,16 @@
  je_ut_new_dawn_suppress_dissidents: "Dissidenten unterdrücken"
  je_ut_new_dawn_suppress_dissidents_desc: "Dissens kann die Stabilität des Staates untergraben und die nationale Sicherheit bedrohen. Die Unterdrückung von Dissens ist eine notwendige Maßnahme, um Ordnung aufrechtzuerhalten und die Nation vor internen Bedrohungen zu schützen."
  je_ut_new_dawn_suppress_dissidents_mod: "$je_ut_new_dawn_suppress_dissidents$"
+ je_ut_new_dawn_suppress_dissidents_self_mod: "Vorgehen gegen Dissens"
+ je_ut_new_dawn_suppress_dissidents_armed_forces_mod: "$event_new_dawn.30.o.armed_forces$"
+ je_ut_new_dawn_suppress_dissidents_urbanists_mod: "$event_new_dawn.30.o.urbanists$"
+ je_ut_new_dawn_suppress_dissidents_devout_mod: "$event_new_dawn.30.o.devout$"
+ je_ut_new_dawn_suppress_dissidents_industrialists_mod: "$event_new_dawn.30.o.industrialists$"
+ je_ut_new_dawn_suppress_dissidents_intelligentsia_mod: "$event_new_dawn.30.o.intelligentsia$"
+ je_ut_new_dawn_suppress_dissidents_landowners_mod: "$event_new_dawn.30.o.landowners$"
+ je_ut_new_dawn_suppress_dissidents_petty_bourgeoisie_mod: "$event_new_dawn.30.o.petty_bourgeoisie$"
+ je_ut_new_dawn_suppress_dissidents_rural_folk_mod: "$event_new_dawn.30.o.rural_folk$"
+ je_ut_new_dawn_suppress_dissidents_trade_unions_mod: "$event_new_dawn.30.o.trade_unions$"
  
  je_ut_new_dawn_outlaw_communists: "Kommunisten verbieten"
  je_ut_new_dawn_outlaw_communists_desc: "Linke Bewegungen bekämpfen und kommunistische Parteien verbieten.\n\n#italic Historischer Kontext:\nAm 28. Februar 1933 verabschiedeten die Nazis nach dem Reichstagsbrand die Reichstagsbrandverordnung, die Bürgerrechte aussetzte und die Verhaftung Tausender Kommunisten ermöglichte. Die KPD (Kommunistische Partei Deutschlands) wurde bald verboten - der erste Schritt zur Zerschlagung der politischen Opposition. Vier Monate später folgte das Verbot der SPD (Sozialdemokratische Partei Deutschlands), und einen Monat darauf wurden alle Parteien verboten - die Demokratie wurde zerstört.\n\nDer Totalitätsanspruch ist eine Dimension des Faschismus.#!"
@@ -625,7 +674,7 @@
  ut_nd_autocrat_progress_from_focus: "Autokratischer Fokus"
  ut_nd_autocrat_progress_from_events: "Ereignisse und andere Effekte"
  concept_ut_nd_autocrat_characters: "Autokratische Charaktere"
- concept_ut_nd_autocrat_characters_desc: "Autokratische Charakter Ideologien sind: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], und [GetIdeology('ideology_traditionalist_minoritarian').GetName].\nWenn der autokratische [concept_ut_nd_focus] aktiv ist, sind auch enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], and [GetIdeology('ideology_corporatist_leader').GetName]."
+ concept_ut_nd_autocrat_characters_desc: "Autokratische Charakter Ideologien sind: [GetIdeology('ideology_authoritarian').GetName], [GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_royalist').GetName], [GetIdeology('ideology_traditionalist').GetName], [GetIdeology('ideology_traditionalist_minoritarian').GetName] und [GetIdeology('ideology_slaver').GetName].\nWenn der autokratische [concept_ut_nd_focus] aktiv ist, sind auch enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_humanitarian_royalist').GetName], [GetIdeology('ideology_theocrat').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_protectionist').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_mitogaku').GetName], [GetIdeology('ideology_bonapartist').GetName], [GetIdeology('ideology_legitimist').GetName], [GetIdeology('ideology_orleanist').GetName], [GetIdeology('ideology_jacksonian_democrat').GetName], [GetIdeology('ideology_despotic_utopian').GetName], [GetIdeology('ideology_carlist').GetName] und [GetIdeology('ideology_miguelist').GetName]."
  ut_new_dawn_autocrat_status: "Autokratische Ideen prägen den Diskurs"#Core Ideology concepts
 
 #Core Ideology concepts
@@ -655,8 +704,9 @@
  concept_ut_nd_utopia_desc: "Utopie ist eine imaginierte ideale Gesellschaft, in der es vollständige Gerechtigkeit, Harmonie und das Gedeihen der Menschen zur Perfektion gibt - sie ist ebenso sehr eine Aspiration wie eine inspirierende Vision."
 
  ut_utopia_enabled_on_game_started_loc_yes: "Project Utopia Status: aktiviert seit Spielstart."
- ut_utopia_enabled_on_game_started_loc_26_03_13_yes: "$ut_utopia_enabled_on_game_started_loc_yes$ Alle Inhalte verfügbar."
- ut_utopia_enabled_on_game_started_loc_no: "Spielstand vor dem 13. März gestartet oder Project Utopia wurde beim Spielstart nicht aktiviert.\n#bold Wichtig:#! Neue Bergbau-Ressourcen und Gesetze erfordern, dass Project Utopia seit Spielstart aktiviert ist."
+ ut_utopia_enabled_on_game_started_loc_patch_12: "Status von Projekt Utopia: seit Spielstart aktiviert. Achtung, gestartet mit Version 1.13/1.14 (Patch 12)."
+ ut_utopia_enabled_on_game_started_loc_latest_yes: "$ut_utopia_enabled_on_game_started_loc_yes$ Alle Inhalte verfügbar."
+ ut_utopia_enabled_on_game_started_loc_no: "Das Spiel wurde vor dem 13. März gestartet oder Project Utopia war beim Spielstart nicht aktiviert.\n#bold Wichtig:#! Für neue Abbauressourcen und Gesetze muss Project Utopia bereits beim Spielstart aktiviert sein."
 
  ut_new_dawn_fascist_focus: "Faschistischer Fokus"
  ut_new_dawn_fascist_focus_desc: "#italic In Design: Nur Vorschau der [concept_ut_nd_milestones] verfügbar. #!"
@@ -669,9 +719,10 @@
  ut_nd_fascist_progress_from_focus: "Faschistischer Fokus"
  ut_nd_fascist_progress_from_events: "Ereignisse und andere Effekte"
  concept_ut_nd_fascist_characters: "Faschistische Charaktere"
- concept_ut_nd_fascist_characters_desc: "Faschistische Charakter Ideologien sind: [GetIdeology('ideology_ethno_nationalist').GetName] und [GetIdeology('ideology_fascist').GetName].\nWenn Faschistischer [concept_ut_nd_focus] aktiv ist, sind ebenfalls enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName] und [GetIdeology('ut_ideology_national_socialist_leader').GetName]."
+ concept_ut_nd_fascist_characters_desc: "Faschistische Charakter Ideologien sind: [GetIdeology('ideology_ethno_nationalist').GetName], [GetIdeology('ut_ideology_national_socialist_leader').GetName] und [GetIdeology('ideology_fascist').GetName].\nWenn Faschistischer [concept_ut_nd_focus] aktiv ist, sind ebenfalls enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_shojoi').GetName], [GetIdeology('ideology_despotic_utopian').GetName] und [GetIdeology('ideology_carlist').GetName]."
  ut_new_dawn_fascist_status: "Faschistische Ideen prägen den Diskurs"
 
+ ut_nd_multiplier_from_is_ai: "x2 Multiplikator für KI-Nationen"
  ut_nd_multiplier_from_service_workers_0: "x0,5 Multiplikator bei weniger als 1% $service_workers$\n$ut_nd_mp_sw_note$"
  ut_nd_multiplier_from_service_workers_1: "x1,5 Multiplikator nach $service_workers$ Anteil\n$ut_nd_mp_sw_note$"
  ut_nd_multiplier_from_service_workers_2: "x2 Multiplikator nach $service_workers$ Anteil\n$ut_nd_mp_sw_note$"
@@ -1147,6 +1198,7 @@
  ut_humiliate_power_bloc_goal_proposal_declined_desc: "[TARGET_COUNTRY.GetName] hat die Demütigungsforderung abgelehnt."
  ut_humiliate_power_bloc_goal_proposal_notification_name: "Machtblock-Anführer demütigen - Vorschlag"
  ut_humiliate_power_bloc_goal_proposal_notification_desc: "Ein Vorschlag, [TARGET_COUNTRY.GetName] zu demütigen und sie zu zwingen, deinem Machtblock beizutreten, wurde gesendet."
+ ut_humiliate_power_bloc_goal_tt: "Forces [TARGET_COUNTRY.GetName] to dissolve their power bloc.\nThey will join your power bloc to dissolve their own, but are likely to leave yours afterward."
  ut_humiliate_power_bloc_goal_desc: "Zwinge einen [Concept('concept_humiliation', 'gemütigten')] rivalisierenden Machtblock-Anführer, deinem Block beizutreten - dadurch wird sein Machtblock aufgelöst. Ein [Concept('concept_humiliation', 'gemütigtes')] Land gibt zudem wahrscheinlich seinen [concept_ut_nd_path_to_utopia] auf."
  ut_research_agreement: "Forschungsbündnis"
  ut_research_agreement_desc: "Beide Länder vereinbaren, Forschung und Technologie zu teilen, um ihre maximalen [concept_innovation] Fähigkeiten erheblich zu steigern."
@@ -1238,6 +1290,26 @@
  ut_add_new_dawn_progress_neg_5: "Verliert #r 5#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_progress_neg_1: "Verliert #r 1#! [concept_ut_nd_progress_points]"
 
+ ut_add_new_dawn_p1_progress_communist_5: "Erhält #g 5#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_democrat_5: "Erhält #g 5#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_autocrat_5: "Erhält #g 5#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_fascist_5: "Erhält #g 5#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_democrat_10: "Erhält #g 10#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_autocrat_10: "Erhält #g 10#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_communist_10: "Erhält #g 10#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_fascist_10: "Erhält #g 10#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_democrat_neg_5: "Verliert #r 5#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_autocrat_neg_5: "Verliert #r 5#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_communist_neg_5: "Verliert #r 5#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_fascist_neg_5: "Verliert #r 5#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
+
+ ut_add_new_dawn_p1_progress_communist_neg_10: "Verliert #r 10#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_democrat_neg_10: "Verliert #r 10#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_autocrat_neg_10: "Verliert #r 10#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_fascist_neg_10: "Verliert #r 10#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_focus_5: "Erhält #g 5#! [concept_ut_nd_progress_points] für die Ideologie im [concept_ut_nd_focus]"
+ ut_add_new_dawn_p1_progress_focus_10: "Gains #g 10#! [concept_ut_nd_progress_points] to [concept_ut_nd_focus] Ideology"
+
  ut_has_new_dawn_pressure_50: "Hat #b 50#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_75: "Hat #b 75#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_90: "Hat #b 90#! [concept_ut_nd_pressure]"
@@ -1247,6 +1319,7 @@
  ut_add_new_dawn_pressure_add_5: "Erhöht [concept_ut_nd_pressure] um #r 5#!"
  ut_add_new_dawn_pressure_add_10: "Erhöht [concept_ut_nd_pressure] um #r 10#!"
  ut_add_new_dawn_pressure_remove_10: "Verringert [concept_ut_nd_pressure] um #g 10#!"
+
 
  ut_force_become_subject: "Räterepublik kollektivieren"
  ut_force_become_subject_action_name: "$ut_force_become_subject$"
@@ -2120,6 +2193,10 @@
  wirtschaftswunder_others_modifier: "Wirtschaftswunder (Einfluss)"
  early_civil_aviation_modifier_others: "Frühe zivile Luftfahrt"
  modern_civil_aviation_modifier_others: "Moderne zivile Luftfahrt"
+
+ ut_new_dawn_early_game_rule_unlock: "Unlock New Dawn Diplomatic Actions"
+ ut_new_dawn_early_game_rule_unlock_desc: "Unlock the technologies required for diplomatic actions in the New Dawn scenario."
+ ut_new_dawn_early_game_rule_unlock_mod: "Diplomatic Advances"
 
  #backwards compatibility
  je_ut_new_dawn_core_abilities: "New Dawn: Abilities"
