@@ -46,7 +46,7 @@ ut_new_dawn_fascist_focus = {
 			limit = {
 				has_modifier = je_ut_new_dawn_fascist_focus
 			}
-			add = 25
+			add = 20
 		}
 		if = {
 			limit = {
@@ -56,8 +56,20 @@ ut_new_dawn_fascist_focus = {
 					c:ITA ?= this
 				}
 			}
-			add = 40
+			add = 30
 		}
+		if = {
+			limit = {
+				NOT = { has_game_rule = ut_new_dawn_historical_focus_no }
+				OR = {
+					c:JAP ?= this
+					c:HUN ?= this
+					c:FIN ?= this
+				}
+			}
+			add = 10
+		}
+
 		if = {
 			limit = {
 				has_law = law_type:law_ethnostate
@@ -80,45 +92,55 @@ ut_new_dawn_fascist_focus = {
 					ut_ideology_new_dawn_fascist_trigger = yes
 				}
 			}
-			add = 30
+			add = 25
 		}
 		if = {
 			#Historically Germany, Italy, and Japan below in "ranking"?
 			limit = {
-				global_country_ranking <= 5
+				global_country_ranking >= 5
 				country_rank >= rank_value:great_power
 			}
-			add = 10
+			add = 5
 		}
 		if = {
-			#Red scare if not socialist them self?
+			#Red scare if not socialist them self
 			limit = {
-				NOT = { has_law = law_type:law_universal_suffrage }
 				NOT = { has_law = law_type:law_cooperative_ownership }
 				NOT = { has_law = law_type:law_command_economy }
 				any_rival_country = {
 					OR = {
 						has_modifier = je_ut_new_dawn_communist_focus
-						has_variable = ut_new_dawn_core_communist_var
+						has_modifier = ut_new_dawn_core_communist_mod
 					}
 				}
 			}
 			add = 20
 		}
 		if = {
-			#Red scare if not socialist them self?
+			#Dem scare if not democratic them self
 			limit = {
 				NOT = { has_law = law_type:law_universal_suffrage }
-				NOT = { has_law = law_type:law_cooperative_ownership }
-				NOT = { has_law = law_type:law_command_economy }
 				any_rival_country = {
 					OR = {
 						has_modifier = je_ut_new_dawn_democrat_focus
-						has_variable = ut_new_dawn_core_democrat_var
+						has_modifier = ut_new_dawn_core_democratic_mod
 					}
 				}
 			}
 			add = 10
+		}
+		#For Rule Start Era 4/5, so monarchies are more likely to choose autocrat focus then fascist
+		if = {
+			limit = {
+				NOT = { has_technology_researched = political_agitation }
+			}
+			add = -10
+		}
+		if = {
+			limit = {
+				NOT = { has_technology_researched = mass_propaganda }
+			}
+			add = -10
 		}
 	}
 }
@@ -166,16 +188,21 @@ ut_new_dawn_autocrat_focus = {
 			limit = {
 				has_modifier = je_ut_new_dawn_autocrat_focus
 			}
-			add = 25
+			add = 20
 		}
 		if = {
 			limit = {
 				NOT = { has_game_rule = ut_new_dawn_historical_focus_no }
 				OR = {
 					c:AUS ?= this
+					c:SPA ?= this
+					c:CHI ?= this
+					c:RUS ?= this
+					c:SWE ?= this
+					c:POR ?= this
 				}
 			}
-			add = 40
+			add = 10
 		}
 		if = {
 			#let's stay in power, if nothing else to bother
@@ -199,7 +226,7 @@ ut_new_dawn_autocrat_focus = {
 					ut_ideology_new_dawn_autocrat_trigger = yes
 				}
 			}
-			add = 30
+			add = 25
 		}
 		if = {
 			limit = {
@@ -254,7 +281,7 @@ ut_new_dawn_democrat_focus = {
 			limit = {
 				has_modifier = je_ut_new_dawn_democrat_focus
 			}
-			add = 25
+			add = 20
 		}
 		if = {
 			limit = {
@@ -262,7 +289,7 @@ ut_new_dawn_democrat_focus = {
 				c:USA ?= this
 				NOT = { exists = c:CSA }
 			}
-			add = 40
+			add = 20
 		}
 		if = {
 			limit = {
@@ -275,14 +302,23 @@ ut_new_dawn_democrat_focus = {
 		if = {
 			limit = {
 				NOT = { has_game_rule = ut_new_dawn_historical_focus_no }
-				c:GBR ?= this
+				OR = {
+					c:USA ?= this
+					c:GBR ?= this
+					c:FRA ?= this
+					c:POL ?= this
+					c:BEL ?= this
+					c:NET ?= this
+					c:NOR ?= this
+					c:DEN ?= this
+				}
 			}
-			add = 20
+			add = 10
 		}
 		if = {
 			#Historically USA and Great Britain high "ranking"?
 			limit = {
-				global_country_ranking > 5
+				global_country_ranking < 5
 			}
 			add = 10
 		}
@@ -327,7 +363,7 @@ ut_new_dawn_democrat_focus = {
 				any_rival_country = {
 					OR = {
 						has_modifier = je_ut_new_dawn_fascist_focus
-						has_variable = ut_new_dawn_core_fascist_var
+						has_modifier = ut_new_dawn_core_fascist_mod
 					}
 				}
 			}
@@ -345,7 +381,30 @@ ut_new_dawn_democrat_focus = {
 				any_rival_country = {
 					OR = {
 						has_modifier = je_ut_new_dawn_autocrat_focus
-						has_variable = ut_new_dawn_core_autocrat_var
+						has_modifier = ut_new_dawn_core_autocratic_mod
+					}
+				}
+			}
+			add = 10
+		}
+
+		if = {
+			#democratic wave if major ally democratic and no core law of other path
+			limit = {
+				NOR = {
+					has_law = law_type:law_ethnostate
+					has_law = law_type:law_neo_ethno_state
+					has_law = law_type:law_autocracy
+					has_law = law_type:law_oligarchy
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+					has_law = law_type:law_council_republic
+				}
+				any_scope_ally = {
+					country_rank >= rank_value:major_power
+					OR = {
+						has_modifier = je_ut_new_dawn_democrat_focus
+						has_modifier = ut_new_dawn_core_democratic_mod
 					}
 				}
 			}
@@ -399,14 +458,24 @@ ut_new_dawn_communist_focus = {
 			limit = {
 				has_modifier = je_ut_new_dawn_communist_focus
 			}
-			add = 25
+			add = 20
 		}
 		if = {
 			limit = {
 				NOT = { has_game_rule = ut_new_dawn_historical_focus_no }
 				c:RUS ?= this
 			}
-			add = 40
+			add = 30
+		}
+		if = {
+			limit = {
+				NOT = { has_game_rule = ut_new_dawn_historical_focus_no }
+				OR = {
+					c:FRA ?= this
+					c:CHI ?= this
+				}
+			}
+			add = 10
 		}
 		if = {
 			limit = {
@@ -426,13 +495,13 @@ ut_new_dawn_communist_focus = {
 		if = {
 			#to balance with fascism
 			limit = {
-				global_country_ranking <= 5
+				global_country_ranking >= 5
 				country_rank >= rank_value:great_power
 			}
 			add = 5
 		}
 		if = {
-			#Fascist scare if communist them self?
+			#Fascist scare if communist them self
 			limit = {
 				OR = {
 					has_law = law_type:law_cooperative_ownership
@@ -442,11 +511,31 @@ ut_new_dawn_communist_focus = {
 				any_rival_country = {
 					OR = {
 						has_modifier = je_ut_new_dawn_fascist_focus
-						has_variable = ut_new_dawn_core_fascist_var
+						has_modifier = ut_new_dawn_core_fascist_mod
 					}
 				}
 			}
 			add = 20
+		}
+		if = {
+			#communist wave if major ally communist and no core law of other path
+			limit = {
+				NOR = {
+					has_law = law_type:law_neo_ethno_state
+					has_law = law_type:law_ethnostate
+					has_law = law_type:law_autocracy
+					has_law = law_type:law_oligarchy
+					#democratic core laws are ok
+				}
+				any_scope_ally = {
+					country_rank >= rank_value:major_power
+					OR = {
+						has_modifier = je_ut_new_dawn_communist_focus
+						has_modifier = ut_new_dawn_core_communist_mod
+					}
+				}
+			}
+			add = 10
 		}
 		if = {
 			limit = {
@@ -454,7 +543,14 @@ ut_new_dawn_communist_focus = {
 					ut_ideology_new_dawn_communist_trigger = yes
 				}
 			}
-			add = 30
+			add = 25
+		}
+		#For Rule Start Era 4/5, so monarchies are more likely to choose autocrat/democrat focus then communist
+		if = {
+			limit = {
+				NOT = { has_technology_researched = political_agitation }
+			}
+			add = -10
 		}
 	}
 }

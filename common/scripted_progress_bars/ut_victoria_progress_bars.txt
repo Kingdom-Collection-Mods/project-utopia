@@ -5,7 +5,10 @@ ut_new_dawn_fascist_bar = {
 	desc = "ut_new_dawn_fascist_bar_desc"
 
 	#for color
-	default_green = yes
+	progress_texture = "gfx/interface/progressbar/progressbar_green.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_green_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_green_glow_line.dds"
 
 	monthly_progress = {
 		if = {
@@ -16,7 +19,7 @@ ut_new_dawn_fascist_bar = {
 				has_variable = ut_nd_fascist_progress_from_characters
 				has_variable = ut_nd_fascist_progress_from_igs
 				has_variable = ut_nd_fascist_progress_from_legitimacy
-				has_variable = ut_nd_fascist_progress_from_laws
+				has_variable = ut_nd_fascist_progress_from_core_laws
 				has_variable = ut_nd_fascist_progress_from_focus
 				has_variable = ut_nd_fascist_progress_from_events
 				has_variable = ut_nd_common_progress_from_events
@@ -34,8 +37,8 @@ ut_new_dawn_fascist_bar = {
 				value = root.var:ut_nd_fascist_progress_from_legitimacy
 			}
 			add = {
-				desc = "ut_nd_fascist_progress_from_laws"
-				value = root.var:ut_nd_fascist_progress_from_laws
+				desc = "ut_nd_fascist_progress_from_core_laws"
+				value = root.var:ut_nd_fascist_progress_from_core_laws
 			}
 			add = {
 				desc = "ut_nd_fascist_progress_from_focus"
@@ -56,6 +59,19 @@ ut_new_dawn_fascist_bar = {
 			}
 			else = {
 				if ={
+					limit = {
+						OR = {
+							has_game_rule = ut_new_dawn_start_era_4
+							has_game_rule = ut_new_dawn_start_era_5
+						}
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					#no malus if starting era 4 or 5
+				}
+				else_if ={
 					limit = {
 						pop_type_percent_country = {
 							target = pop_type:service_workers
@@ -130,7 +146,10 @@ ut_new_dawn_democrat_bar = {
 	desc = "ut_new_dawn_democrat_bar_desc"
 
 	#for color
-	default = yes
+	progress_texture = "gfx/interface/progressbar/progressbar_default.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_default_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_default_glow_line.dds"
 
 	monthly_progress = {
 		if = {
@@ -140,7 +159,7 @@ ut_new_dawn_democrat_bar = {
 				}
 				has_variable = ut_nd_democrat_progress_from_characters
 				has_variable = ut_nd_democrat_progress_from_igs
-				has_variable = ut_nd_democrat_progress_from_laws
+				has_variable = ut_nd_democrat_progress_from_core_laws
 				has_variable = ut_nd_democrat_progress_from_legitimacy
 				has_variable = ut_nd_democrat_progress_from_focus
 				has_variable = ut_nd_democrat_progress_from_events
@@ -155,8 +174,8 @@ ut_new_dawn_democrat_bar = {
 				value = root.var:ut_nd_democrat_progress_from_igs
 			}
 			add = {
-				desc = "ut_nd_democrat_progress_from_laws"
-				value = root.var:ut_nd_democrat_progress_from_laws
+				desc = "ut_nd_democrat_progress_from_core_laws"
+				value = root.var:ut_nd_democrat_progress_from_core_laws
 			}
 			add = {
 				desc = "ut_nd_democrat_progress_from_legitimacy"
@@ -182,6 +201,19 @@ ut_new_dawn_democrat_bar = {
 			}
 			else = {
 				if ={
+					limit = {
+						OR = {
+							has_game_rule = ut_new_dawn_start_era_4
+							has_game_rule = ut_new_dawn_start_era_5
+						}
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					#no malus if starting era 4 or 5
+				}
+				else_if ={
 					limit = {
 						pop_type_percent_country = {
 							target = pop_type:service_workers
@@ -256,7 +288,10 @@ ut_new_dawn_communist_bar = {
 	desc = "ut_new_dawn_communist_bar_desc"
 
 	#for color
-	default_bad = yes
+	progress_texture = "gfx/interface/progressbar/progressbar_bad.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_bad_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_bad_glow_line.dds"
 
 	monthly_progress = {
 		if = {
@@ -267,7 +302,7 @@ ut_new_dawn_communist_bar = {
 				has_variable = ut_nd_communist_progress_from_characters
 				has_variable = ut_nd_communist_progress_from_igs
 				has_variable = ut_nd_communist_progress_from_legitimacy
-				has_variable = ut_nd_communist_progress_from_laws
+				has_variable = ut_nd_communist_progress_from_core_laws
 				has_variable = ut_nd_communist_progress_from_focus
 				has_variable = ut_nd_communist_progress_from_events
 				has_variable = ut_nd_common_progress_from_events
@@ -285,8 +320,8 @@ ut_new_dawn_communist_bar = {
 				value = root.var:ut_nd_communist_progress_from_legitimacy
 			}
 			add = {
-				desc = "ut_nd_communist_progress_from_laws"
-				value = root.var:ut_nd_communist_progress_from_laws
+				desc = "ut_nd_communist_progress_from_core_laws"
+				value = root.var:ut_nd_communist_progress_from_core_laws
 			}
 			add = {
 				desc = "ut_nd_communist_progress_from_focus"
@@ -305,8 +340,21 @@ ut_new_dawn_communist_bar = {
 				}
 				multiply = 2
 			}
-			else = {
+			else = {				
 				if ={
+					limit = {
+						OR = {
+							has_game_rule = ut_new_dawn_start_era_4
+							has_game_rule = ut_new_dawn_start_era_5
+						}
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					#no malus if starting era 4 or 5
+				}
+				else_if ={
 					limit = {
 						pop_type_percent_country = {
 							target = pop_type:service_workers
@@ -380,7 +428,10 @@ ut_new_dawn_autocrat_bar = {
 	name = "ut_new_dawn_autocrat_bar"
 	desc = "ut_new_dawn_autocrat_bar_desc"
 
-	default = yes
+	progress_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue_glow_line.dds"
 
 	monthly_progress = {
 		if = {
@@ -391,7 +442,7 @@ ut_new_dawn_autocrat_bar = {
 				has_variable = ut_nd_autocrat_progress_from_characters
 				has_variable = ut_nd_autocrat_progress_from_igs
 				has_variable = ut_nd_autocrat_progress_from_legitimacy
-				has_variable = ut_nd_autocrat_progress_from_laws
+				has_variable = ut_nd_autocrat_progress_from_core_laws
 				has_variable = ut_nd_autocrat_progress_from_focus
 				has_variable = ut_nd_autocrat_progress_from_events
 				has_variable = ut_nd_common_progress_from_events
@@ -409,8 +460,8 @@ ut_new_dawn_autocrat_bar = {
 				value = root.var:ut_nd_autocrat_progress_from_legitimacy
 			}
 			add = {
-				desc = "ut_nd_autocrat_progress_from_laws"
-				value = root.var:ut_nd_autocrat_progress_from_laws
+				desc = "ut_nd_autocrat_progress_from_core_laws"
+				value = root.var:ut_nd_autocrat_progress_from_core_laws
 			}
 			add = {
 				desc = "ut_nd_autocrat_progress_from_focus"
@@ -426,11 +477,27 @@ ut_new_dawn_autocrat_bar = {
 			if = {
 				limit = {
 					is_ai = yes
+				}				
+				multiply = {
+					desc = "ut_nd_multiplier_from_service_workers_0"
+					value = 2
 				}
-				multiply = 2
 			}
 			else = {
 				if ={
+					limit = {
+						OR = {
+							has_game_rule = ut_new_dawn_start_era_4
+							has_game_rule = ut_new_dawn_start_era_5
+						}
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					#no malus if starting era 4 or 5
+				}
+				else_if ={
 					limit = {
 						pop_type_percent_country = {
 							target = pop_type:service_workers
@@ -523,8 +590,12 @@ je_ut_new_dawn_democratic_points_bar = {
 				value = root.var:ut_nd_democrat_progress_from_igs
 			}
 			add = {
-				desc = "ut_nd_democrat_progress_from_laws"
-				value = root.var:ut_nd_democrat_progress_from_laws
+				desc = "ut_nd_democrat_progress_from_core_laws"
+				value = root.var:ut_nd_democrat_progress_from_core_laws
+			}
+			add = {
+				desc = "ut_nd_democrat_progress_from_opposing_laws"
+				value = root.var:ut_nd_democrat_progress_from_opposing_laws
 			}
 			add = {
 				desc = "ut_nd_democrat_progress_from_legitimacy"
@@ -553,7 +624,10 @@ je_ut_new_dawn_autocratic_points_bar = {
 	name = "je_ut_new_dawn_points_bar"
 	desc = "je_ut_new_dawn_points_bar_desc"
 
-	default = yes
+	progress_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue_glow_line.dds"
 
 	monthly_progress = {
 		if = {
@@ -574,8 +648,12 @@ je_ut_new_dawn_autocratic_points_bar = {
 				value = root.var:ut_nd_autocrat_progress_from_igs
 			}
 			add = {
-				desc = "ut_nd_autocrat_progress_from_laws"
-				value = root.var:ut_nd_autocrat_progress_from_laws
+				desc = "ut_nd_autocrat_progress_from_core_laws"
+				value = root.var:ut_nd_autocrat_progress_from_core_laws
+			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_opposing_laws"
+				value = root.var:ut_nd_autocrat_progress_from_opposing_laws
 			}
 			add = {
 				desc = "ut_nd_autocrat_progress_from_legitimacy"
@@ -628,8 +706,12 @@ je_ut_new_dawn_fascist_points_bar = {
 				value = root.var:ut_nd_fascist_progress_from_igs
 			}
 			add = {
-				desc = "ut_nd_fascist_progress_from_laws"
-				value = root.var:ut_nd_fascist_progress_from_laws
+				desc = "ut_nd_fascist_progress_from_core_laws"
+				value = root.var:ut_nd_fascist_progress_from_core_laws
+			}
+			add = {
+				desc = "ut_nd_fascist_progress_from_opposing_laws"
+				value = root.var:ut_nd_fascist_progress_from_opposing_laws
 			}
 			add = {
 				desc = "ut_nd_fascist_progress_from_legitimacy"
@@ -682,8 +764,12 @@ je_ut_new_dawn_communist_points_bar = {
 				value = root.var:ut_nd_communist_progress_from_igs
 			}
 			add = {
-				desc = "ut_nd_communist_progress_from_laws"
-				value = root.var:ut_nd_communist_progress_from_laws
+				desc = "ut_nd_communist_progress_from_core_laws"
+				value = root.var:ut_nd_communist_progress_from_core_laws
+			}
+			add = {
+				desc = "ut_nd_communist_progress_from_opposing_laws"
+				value = root.var:ut_nd_communist_progress_from_opposing_laws
 			}
 			add = {
 				desc = "ut_nd_communist_progress_from_legitimacy"
@@ -735,6 +821,20 @@ je_ut_new_dawn_pressure_points_bar = {
 			desc = "je_ut_new_dawn_common_pressure_progress_from_core_progress"
 			value = root.var:je_ut_new_dawn_common_pressure_progress_from_core_progress
 		}
+		
+		add = {
+			desc = "je_ut_new_dawn_common_pressure_progress_from_war_support"
+			value = root.var:je_ut_new_dawn_common_pressure_progress_from_war_support
+		}
+		add = {
+			desc = "je_ut_new_dawn_common_pressure_progress_from_high_radicalism_movement"
+			value = root.var:je_ut_new_dawn_common_pressure_progress_from_high_radicalism_movement
+		}
+		add = {
+			desc = "je_ut_new_dawn_common_pressure_progress_from_insurrectionary_movement"
+			value = root.var:je_ut_new_dawn_common_pressure_progress_from_insurrectionary_movement
+		}
+		
 		if = {
 			limit = {
 				is_ai = yes

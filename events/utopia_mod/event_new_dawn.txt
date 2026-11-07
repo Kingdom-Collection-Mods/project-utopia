@@ -8,10 +8,8 @@ event_new_dawn.1 = {
 	event_image = {
 		video = "unspecific_world_fair"
 	}
-	
-	trigger = {
-		NOT = { has_variable = event_new_dawn_started }
-	}
+
+	fire_only_once = yes
 
 	duration = 3
 
@@ -24,14 +22,11 @@ event_new_dawn.1 = {
 	title = event_new_dawn.1.t
 	desc = event_new_dawn.1.d
 	flavor = event_new_dawn.1.f
-	
-	immediate = {
-		set_variable = event_new_dawn_started
-	}
 
 	option = {
 		name = event_new_dawn.1.a
 		default_option = yes
+		custom_tooltip = event_new_dawn.1.a.tt
 	}
 }
 
@@ -527,30 +522,85 @@ event_new_dawn.11 = {
 	immediate = {
 		set_variable = event_new_dawn_11_done
 	}
+	
+	#Ideology already aligns
+	
+	option = {
+		name = event_new_dawn.aligned_leader
+		highlighted_option = yes
+		trigger = {
+			trigger_if = {
+				limit = { has_modifier = je_ut_new_dawn_communist_focus }
+				ig:ig_armed_forces = {
+					leader = { ut_ideology_new_dawn_communist_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_democrat_focus }
+				ig:ig_armed_forces = {
+					leader = { ut_ideology_new_dawn_democrat_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_autocrat_focus }
+				ig:ig_armed_forces = {
+					leader = { ut_ideology_new_dawn_autocrat_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_fascist_focus }
+				ig:ig_armed_forces = {
+					leader = { ut_ideology_new_dawn_fascist_trigger = yes }
+				}
+			}
+			trigger_else = { always = no }
+		}
+		
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_focus_10
+			ut_add_new_dawn_focus_progress = {
+				VALUE = 10
+			}
+		}
+	}
 
 	#Democrats
 	option = {
-		name = event_new_dawn.democrat_leader # Long live the Orleanists!s_variable = orleanist_restoration_var
-		set_variable = ut_new_dawn_core_democrat_var
+		name = event_new_dawn.democrat_leader
+		highlighted_option = yes
 		trigger = {
-			has_modifier = je_ut_new_dawn_democrat_focus
+			OR = {
+				has_modifier = je_ut_new_dawn_democrat_focus
+				has_law_or_variant = law_type:law_universal_suffrage
+			}
+			ig:ig_armed_forces = {
+				is_in_government = yes
+			}
 		}		
 		ig:ig_armed_forces = {
 			leader = {
-				#set_ideology = ideology:ideology_social_democrat todo 1.15 revisit
 				set_ideology = ideology:ideology_liberal_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_democrat_neg_10
+			ut_add_new_dawn_initiation_progress_democrat = {
+				VALUE = -10
 			}
 		}
 	}
 
 	#Autocrats
 	option = {
-		name = event_new_dawn.autocrat_leader # Long live the Orleanists!
-		set_variable = ut_new_dawn_core_autocrat_var
+		name = event_new_dawn.autocrat_leader
+		highlighted_option = yes
 		trigger = {
 			OR = {
 				has_modifier = je_ut_new_dawn_autocrat_focus
-				NOT = { has_law = law_type:law_universal_suffrage }
+				NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+			}
+			ig:ig_armed_forces = {
+				is_in_government = yes
 			}
 		}
 		ig:ig_armed_forces = {
@@ -558,15 +608,24 @@ event_new_dawn.11 = {
 				set_ideology = ideology:ut_ideology_autocratic_leader
 			}
 		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_autocrat_neg_10
+			ut_add_new_dawn_initiation_progress_autocrat = {
+				VALUE = -10
+			}
+		}
 	}
 
 
 	#Fascist
 	option = {
-		name = french_pretenders.1.b # Long live the Orleanists!
-		set_variable = ut_new_dawn_core_autocrat_var
+		name = event_new_dawn.fascist_leader
+		highlighted_option = yes
 		trigger = {
-			has_modifier = je_ut_new_dawn_fascist_focus
+			OR = {
+				has_modifier = je_ut_new_dawn_fascist_focus
+				has_law_or_variant = law_type:law_ethnostate
+			}
 			ig:ig_armed_forces = {
 				is_in_government = yes
 			}
@@ -577,22 +636,38 @@ event_new_dawn.11 = {
 				set_ideology = ideology:ut_ideology_national_socialist_leader
 			}
 		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_fascist_neg_10
+			ut_add_new_dawn_initiation_progress_fascist = {
+				VALUE = -10
+			}
+		}
 	}
 
 	
 	#Communist
 	option = {
-		name = french_pretenders.1.b # Long live the Orleanists!
-		set_variable = ut_new_dawn_core_autocrat_var
+		name = event_new_dawn.communist_leader
+		highlighted_option = yes
 		trigger = {
-			has_modifier = je_ut_new_dawn_communist_focus
+			OR = {
+				has_modifier = je_ut_new_dawn_communist_focus
+				has_law_or_variant = law_type:law_cooperative_ownership
+				has_law_or_variant = law_type:law_command_economy
+			}
 			ig:ig_armed_forces = {
 				is_in_government = yes
 			}
 		}
 		ig:ig_armed_forces = {
 			leader = {
-				set_ideology = ideology:ideology_communist
+				set_ideology = ideology:ideology_communist_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_communist_neg_10
+			ut_add_new_dawn_initiation_progress_communist = {
+				VALUE = -10
 			}
 		}
 	}
@@ -607,6 +682,12 @@ event_new_dawn.11 = {
 						set_ideology = ideology:ut_ideology_autocratic_leader
 					}
 				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_autocrat_5
+					ut_add_new_dawn_initiation_progress_autocrat = {
+						VALUE = 5
+					}
+				}
 			}
 			20 = {
 				ig:ig_armed_forces = {
@@ -614,24 +695,46 @@ event_new_dawn.11 = {
 						set_ideology = ideology:ut_ideology_national_socialist_leader
 					}
 				}
-			}
-			5 = {
-				ig:ig_armed_forces = {
-					leader = {
-						#set_ideology = ideology:ideology_social_democrat todo 1.15 revisit
-						set_ideology = ideology:ideology_liberal_leader
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_fascist_5
+					ut_add_new_dawn_initiation_progress_fascist = {
+						VALUE = 5
 					}
 				}
 			}
 			5 = {
 				ig:ig_armed_forces = {
 					leader = {
-						set_ideology = ideology:ideology_communist
+						set_ideology = ideology:ideology_liberal_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_democrat_5
+					ut_add_new_dawn_initiation_progress_democrat = {
+						VALUE = 5
+					}
+				}
+			}
+			5 = {
+				ig:ig_armed_forces = {
+					leader = {
+						set_ideology = ideology:ideology_communist_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_communist_5
+					ut_add_new_dawn_initiation_progress_communist = {
+						VALUE = 5
 					}
 				}
 			}
 			20 = {
-
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_focus_5
+					ut_add_new_dawn_focus_progress = {
+						VALUE = 5
+					}
+				}
 			}
 		}
 	}
@@ -677,28 +780,81 @@ event_new_dawn.12 = {
 	}
 
 	#Democrats
+	#Ideology already aligns
 	option = {
-		name = event_new_dawn.democrat_leader # Long live the Orleanists!s_variable = orleanist_restoration_var
-		set_variable = ut_new_dawn_core_democrat_var
+		name = event_new_dawn.aligned_leader
+		highlighted_option = yes
 		trigger = {
-			has_modifier = je_ut_new_dawn_democrat_focus
+			trigger_if = {
+				limit = { has_modifier = je_ut_new_dawn_communist_focus }
+				ig:ig_petty_bourgeoisie = {
+					leader = { ut_ideology_new_dawn_communist_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_democrat_focus }
+				ig:ig_petty_bourgeoisie = {
+					leader = { ut_ideology_new_dawn_democrat_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_autocrat_focus }
+				ig:ig_petty_bourgeoisie = {
+					leader = { ut_ideology_new_dawn_autocrat_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_fascist_focus }
+				ig:ig_petty_bourgeoisie = {
+					leader = { ut_ideology_new_dawn_fascist_trigger = yes }
+				}
+			}
+			trigger_else = { always = no }
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_focus_10
+			ut_add_new_dawn_focus_progress = {
+				VALUE = 10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.democrat_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_democrat_focus
+				has_law_or_variant = law_type:law_universal_suffrage
+			}
+			ig:ig_petty_bourgeoisie = {
+				is_in_government = yes
+			}
 		}
 		ig:ig_petty_bourgeoisie = {
 			leader = {
-				#set_ideology = ideology:ideology_social_democrat todo 1.15 revisit
 				set_ideology = ideology:ideology_liberal_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_democrat_neg_10
+			ut_add_new_dawn_initiation_progress_democrat = {
+				VALUE = -10
 			}
 		}
 	}
 
 	#Autocrats
 	option = {
-		name = french_pretenders.1.b # Long live the Orleanists!
-		set_variable = ut_new_dawn_core_autocrat_var
+		name = event_new_dawn.autocrat_leader
+		highlighted_option = yes
 		trigger = {
 			OR = {
 				has_modifier = je_ut_new_dawn_autocrat_focus
-				NOT = { has_law = law_type:law_universal_suffrage }
+				NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+			}
+			ig:ig_petty_bourgeoisie = {
+				is_in_government = yes
 			}
 		}
 		ig:ig_petty_bourgeoisie = {
@@ -706,15 +862,24 @@ event_new_dawn.12 = {
 				set_ideology = ideology:ut_ideology_autocratic_leader
 			}
 		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_autocrat_neg_10
+			ut_add_new_dawn_initiation_progress_autocrat = {
+				VALUE = -10
+			}
+		}
 	}
 
 
 	#Fascist
 	option = {
-		name = french_pretenders.1.b # Long live the Orleanists!
-		set_variable = ut_new_dawn_core_autocrat_var
+		name = event_new_dawn.fascist_leader
+		highlighted_option = yes
 		trigger = {
-			has_modifier = je_ut_new_dawn_fascist_focus
+			OR = {
+				has_modifier = je_ut_new_dawn_fascist_focus
+				has_law_or_variant = law_type:law_ethnostate
+			}
 			ig:ig_petty_bourgeoisie = {
 				is_in_government = yes
 			}
@@ -724,22 +889,38 @@ event_new_dawn.12 = {
 				set_ideology = ideology:ut_ideology_national_socialist_leader
 			}
 		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_fascist_neg_10
+			ut_add_new_dawn_initiation_progress_fascist = {
+				VALUE = -10
+			}
+		}
 	}
 
 	
 	#Communist
 	option = {
-		name = french_pretenders.1.b # Long live the Orleanists!
-		set_variable = ut_new_dawn_core_autocrat_var
+		name = event_new_dawn.communist_leader
+		highlighted_option = yes
 		trigger = {
-			has_modifier = je_ut_new_dawn_communist_focus
+			OR = {
+				has_modifier = je_ut_new_dawn_communist_focus
+				has_law_or_variant = law_type:law_cooperative_ownership
+				has_law_or_variant = law_type:law_command_economy
+			}
 			ig:ig_petty_bourgeoisie = {
 				is_in_government = yes
 			}
 		}
 		ig:ig_petty_bourgeoisie = {
 			leader = {
-				set_ideology = ideology:ideology_communist
+				set_ideology = ideology:ideology_communist_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_communist_neg_10
+			ut_add_new_dawn_initiation_progress_communist = {
+				VALUE = -10
 			}
 		}
 	}
@@ -748,32 +929,63 @@ event_new_dawn.12 = {
 		name = event_new_dawn.random_decision
 		default_option = yes
 		random_list = {
-			60 = {
+			20 = {
 				ig:ig_petty_bourgeoisie = {
 					leader = {
 						set_ideology = ideology:ut_ideology_autocratic_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_autocrat_5
+					ut_add_new_dawn_initiation_progress_autocrat = {
+						VALUE = 5
+					}
+				}
+			}
+			20 = {
+				ig:ig_petty_bourgeoisie = {
+					leader = {
+						set_ideology = ideology:ut_ideology_national_socialist_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_fascist_5
+					ut_add_new_dawn_initiation_progress_fascist = {
+						VALUE = 5
 					}
 				}
 			}
 			30 = {
 				ig:ig_petty_bourgeoisie = {
 					leader = {
-						set_ideology = ideology:ut_ideology_national_socialist_leader
-					}
-				}
-			}
-			5 = {
-				ig:ig_petty_bourgeoisie = {
-					leader = {
-						#set_ideology = ideology:ideology_social_democrat todo 1.15 revisit
 						set_ideology = ideology:ideology_liberal_leader
 					}
 				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_democrat_5
+					ut_add_new_dawn_initiation_progress_democrat = {
+						VALUE = 5
+					}
+				}
 			}
-			5 = {
+			10 = {
 				ig:ig_petty_bourgeoisie = {
 					leader = {
-						set_ideology = ideology:ideology_communist
+						set_ideology = ideology:ideology_communist_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_communist_5
+					ut_add_new_dawn_initiation_progress_communist = {
+						VALUE = 5
+					}
+				}
+			}
+			20 = {
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_focus_5
+					ut_add_new_dawn_focus_progress = {
+						VALUE = 5
 					}
 				}
 			}
@@ -788,14 +1000,953 @@ event_new_dawn.12 = {
 	}
 }
 
-
-#Radicals
+# Industrialists
 event_new_dawn.13 = {
 	type = country_event
 	placement = ROOT
 	title = event_new_dawn.13.t
 	desc = event_new_dawn.13.d
 	flavor = event_new_dawn.13.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		NOT = { has_variable = event_new_dawn_13_done }
+		ig:ig_industrialists = {
+			is_marginal = no
+		}
+	}
+
+	immediate = {
+		set_variable = event_new_dawn_13_done
+	}
+
+	#Ideology already aligns
+	option = {
+		name = event_new_dawn.aligned_leader
+		highlighted_option = yes
+		trigger = {
+			trigger_if = {
+				limit = { has_modifier = je_ut_new_dawn_communist_focus }
+				ig:ig_industrialists = {
+					leader = { ut_ideology_new_dawn_communist_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_democrat_focus }
+				ig:ig_industrialists = {
+					leader = { ut_ideology_new_dawn_democrat_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_autocrat_focus }
+				ig:ig_industrialists = {
+					leader = { ut_ideology_new_dawn_autocrat_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_fascist_focus }
+				ig:ig_industrialists = {
+					leader = { ut_ideology_new_dawn_fascist_trigger = yes }
+				}
+			}
+			trigger_else = { always = no }
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_focus_10
+			ut_add_new_dawn_focus_progress = {
+				VALUE = 10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.democrat_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_democrat_focus
+				has_law_or_variant = law_type:law_universal_suffrage
+			}
+			ig:ig_industrialists = {
+				is_in_government = yes
+			}
+		}
+		ig:ig_industrialists = {
+			leader = {
+				set_ideology = ideology:ideology_liberal_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_democrat_neg_10
+			ut_add_new_dawn_initiation_progress_democrat = {
+				VALUE = -10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.autocrat_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_autocrat_focus
+				NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+			}
+			ig:ig_industrialists = {
+				is_in_government = yes
+			}
+		}
+		ig:ig_industrialists = {
+			leader = {
+				set_ideology = ideology:ut_ideology_autocratic_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_autocrat_neg_10
+			ut_add_new_dawn_initiation_progress_autocrat = {
+				VALUE = -10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.fascist_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_fascist_focus
+				has_law_or_variant = law_type:law_ethnostate
+			}
+			ig:ig_industrialists = {
+				is_in_government = yes
+			}
+		}
+		ig:ig_industrialists = {
+			leader = {
+				set_ideology = ideology:ut_ideology_national_socialist_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_fascist_neg_10
+			ut_add_new_dawn_initiation_progress_fascist = {
+				VALUE = -10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.communist_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_communist_focus
+				has_law_or_variant = law_type:law_cooperative_ownership
+				has_law_or_variant = law_type:law_command_economy
+			}
+			ig:ig_industrialists = {
+				is_in_government = yes
+			}
+		}
+		ig:ig_industrialists = {
+			leader = {
+				set_ideology = ideology:ideology_communist_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_communist_neg_10
+			ut_add_new_dawn_initiation_progress_communist = {
+				VALUE = -10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.random_decision
+		default_option = yes
+		random_list = {
+			40 = {
+				ig:ig_industrialists = {
+					leader = {
+						set_ideology = ideology:ut_ideology_autocratic_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_autocrat_5
+					ut_add_new_dawn_initiation_progress_autocrat = {
+						VALUE = 5
+					}
+				}
+			}
+			40 = {
+				ig:ig_industrialists = {
+					leader = {
+						set_ideology = ideology:ut_ideology_national_socialist_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_fascist_5
+					ut_add_new_dawn_initiation_progress_fascist = {
+						VALUE = 5
+					}
+				}
+			}
+			20 = {
+				ig:ig_industrialists = {
+					leader = {
+						set_ideology = ideology:ideology_liberal_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_democrat_5
+					ut_add_new_dawn_initiation_progress_democrat = {
+						VALUE = 5
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.suppress_random_decision
+		add_radicals = {
+			value = 0.01
+		}
+	}
+}
+
+# Intelligentsia
+event_new_dawn.14 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.14.t
+	desc = event_new_dawn.14.d
+	flavor = event_new_dawn.14.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		NOT = { has_variable = event_new_dawn_14_done }
+		ig:ig_intelligentsia = {
+			is_marginal = no
+		}
+	}
+
+	immediate = {
+		set_variable = event_new_dawn_14_done
+	}
+
+	#Ideology already aligns
+	option = {
+		name = event_new_dawn.aligned_leader
+		highlighted_option = yes
+		trigger = {
+			trigger_if = {
+				limit = { has_modifier = je_ut_new_dawn_communist_focus }
+				ig:ig_intelligentsia = {
+					leader = { ut_ideology_new_dawn_communist_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_democrat_focus }
+				ig:ig_intelligentsia = {
+					leader = { ut_ideology_new_dawn_democrat_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_autocrat_focus }
+				ig:ig_intelligentsia = {
+					leader = { ut_ideology_new_dawn_autocrat_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_fascist_focus }
+				ig:ig_intelligentsia = {
+					leader = { ut_ideology_new_dawn_fascist_trigger = yes }
+				}
+			}
+			trigger_else = { always = no }
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_focus_10
+			ut_add_new_dawn_focus_progress = {
+				VALUE = 10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.democrat_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_democrat_focus
+				has_law_or_variant = law_type:law_universal_suffrage
+			}
+			ig:ig_intelligentsia = {
+				is_in_government = yes
+			}
+		}
+		ig:ig_intelligentsia = {
+			leader = {
+				set_ideology = ideology:ideology_liberal_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_democrat_neg_10
+			ut_add_new_dawn_initiation_progress_democrat = {
+				VALUE = -10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.autocrat_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_autocrat_focus
+				NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+			}
+			ig:ig_intelligentsia = {
+				is_in_government = yes
+			}
+		}
+		ig:ig_intelligentsia = {
+			leader = {
+				set_ideology = ideology:ut_ideology_autocratic_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_autocrat_neg_10
+			ut_add_new_dawn_initiation_progress_autocrat = {
+				VALUE = -10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.fascist_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_fascist_focus
+				has_law_or_variant = law_type:law_ethnostate
+			}
+			ig:ig_intelligentsia = {
+				is_in_government = yes
+			}
+		}
+		ig:ig_intelligentsia = {
+			leader = {
+				set_ideology = ideology:ut_ideology_national_socialist_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_fascist_neg_10
+			ut_add_new_dawn_initiation_progress_fascist = {
+				VALUE = -10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.communist_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_communist_focus
+				has_law_or_variant = law_type:law_cooperative_ownership
+				has_law_or_variant = law_type:law_command_economy
+			}
+			ig:ig_intelligentsia = {
+				is_in_government = yes
+			}
+		}
+		ig:ig_intelligentsia = {
+			leader = {
+				set_ideology = ideology:ideology_communist_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_communist_neg_10
+			ut_add_new_dawn_initiation_progress_communist = {
+				VALUE = -10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.random_decision
+		default_option = yes
+		random_list = {
+			30 = {
+				ig:ig_intelligentsia = {
+					leader = {
+						set_ideology = ideology:ut_ideology_national_socialist_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_fascist_5
+					ut_add_new_dawn_initiation_progress_fascist = {
+						VALUE = 5
+					}
+				}
+			}
+			40 = {
+				ig:ig_intelligentsia = {
+					leader = {
+						set_ideology = ideology:ideology_liberal_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_democrat_5
+					ut_add_new_dawn_initiation_progress_democrat = {
+						VALUE = 5
+					}
+				}
+			}
+			20 = {
+				ig:ig_intelligentsia = {
+					leader = {
+						set_ideology = ideology:ideology_communist_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_communist_5
+					ut_add_new_dawn_initiation_progress_communist = {
+						VALUE = 5
+					}
+				}
+			}
+			10 = {
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_focus_5
+					ut_add_new_dawn_focus_progress = {
+						VALUE = 5
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.suppress_random_decision
+		add_radicals = {
+			value = 0.01
+		}
+	}
+}
+
+# Trade Unions
+event_new_dawn.15 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.15.t
+	desc = event_new_dawn.15.d
+	flavor = event_new_dawn.15.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		NOT = { has_variable = event_new_dawn_15_done }
+		ig:ig_trade_unions = {
+			is_marginal = no
+		}
+	}
+
+	immediate = {
+		set_variable = event_new_dawn_15_done
+	}
+
+	#Ideology already aligns
+	option = {
+		name = event_new_dawn.aligned_leader
+		highlighted_option = yes
+		trigger = {
+			trigger_if = {
+				limit = { has_modifier = je_ut_new_dawn_communist_focus }
+				ig:ig_trade_unions = {
+					leader = { ut_ideology_new_dawn_communist_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_democrat_focus }
+				ig:ig_trade_unions = {
+					leader = { ut_ideology_new_dawn_democrat_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_autocrat_focus }
+				ig:ig_trade_unions = {
+					leader = { ut_ideology_new_dawn_autocrat_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_fascist_focus }
+				ig:ig_trade_unions = {
+					leader = { ut_ideology_new_dawn_fascist_trigger = yes }
+				}
+			}
+			trigger_else = { always = no }
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_focus_10
+			ut_add_new_dawn_focus_progress = {
+				VALUE = 10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.democrat_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_democrat_focus
+				has_law_or_variant = law_type:law_universal_suffrage
+			}
+			ig:ig_trade_unions = {
+				is_in_government = yes
+			}
+		}
+		ig:ig_trade_unions = {
+			leader = {
+				set_ideology = ideology:ideology_liberal_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_democrat_neg_10
+			ut_add_new_dawn_initiation_progress_democrat = {
+				VALUE = -10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.autocrat_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_autocrat_focus
+				NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+			}
+			ig:ig_trade_unions = {
+				is_in_government = yes
+			}
+		}
+		ig:ig_trade_unions = {
+			leader = {
+				set_ideology = ideology:ut_ideology_autocratic_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_autocrat_neg_10
+			ut_add_new_dawn_initiation_progress_autocrat = {
+				VALUE = -10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.fascist_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_fascist_focus
+				has_law_or_variant = law_type:law_ethnostate
+			}
+			ig:ig_trade_unions = {
+				is_in_government = yes
+			}
+		}
+		ig:ig_trade_unions = {
+			leader = {
+				set_ideology = ideology:ut_ideology_national_socialist_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_fascist_neg_10
+			ut_add_new_dawn_initiation_progress_fascist = {
+				VALUE = -10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.communist_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_communist_focus
+				has_law_or_variant = law_type:law_cooperative_ownership
+				has_law_or_variant = law_type:law_command_economy
+			}
+			ig:ig_trade_unions = {
+				is_in_government = yes
+			}
+		}
+		ig:ig_trade_unions = {
+			leader = {
+				set_ideology = ideology:ideology_communist_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_communist_neg_10
+			ut_add_new_dawn_initiation_progress_communist = {
+				VALUE = -10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.random_decision
+		default_option = yes
+		random_list = {
+			0 = {
+				ig:ig_trade_unions = {
+					leader = {
+						set_ideology = ideology:ut_ideology_autocratic_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_autocrat_5
+					ut_add_new_dawn_initiation_progress_autocrat = {
+						VALUE = 5
+					}
+				}
+			}
+			20 = {
+				ig:ig_trade_unions = {
+					leader = {
+						set_ideology = ideology:ut_ideology_national_socialist_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_fascist_5
+					ut_add_new_dawn_initiation_progress_fascist = {
+						VALUE = 5
+					}
+				}
+			}
+			20 = {
+				ig:ig_trade_unions = {
+					leader = {
+						set_ideology = ideology:ideology_liberal_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_democrat_5
+					ut_add_new_dawn_initiation_progress_democrat = {
+						VALUE = 5
+					}
+				}
+			}
+			60 = {
+				ig:ig_trade_unions = {
+					leader = {
+						set_ideology = ideology:ideology_communist_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_communist_5
+					ut_add_new_dawn_initiation_progress_communist = {
+						VALUE = 5
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.suppress_random_decision
+		add_radicals = {
+			value = 0.01
+		}
+	}
+}
+
+# Rural Folk
+event_new_dawn.16 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.16.t
+	desc = event_new_dawn.16.d
+	flavor = event_new_dawn.16.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		NOT = { has_variable = event_new_dawn_16_done }
+		ig:ig_rural_folk = {
+			is_marginal = no
+		}
+	}
+
+	immediate = {
+		set_variable = event_new_dawn_16_done
+	}
+
+	#Ideology already aligns
+	option = {
+		name = event_new_dawn.aligned_leader
+		highlighted_option = yes
+		trigger = {
+			trigger_if = {
+				limit = { has_modifier = je_ut_new_dawn_communist_focus }
+				ig:ig_rural_folk = {
+					leader = { ut_ideology_new_dawn_communist_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_democrat_focus }
+				ig:ig_rural_folk = {
+					leader = { ut_ideology_new_dawn_democrat_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_autocrat_focus }
+				ig:ig_rural_folk = {
+					leader = { ut_ideology_new_dawn_autocrat_trigger = yes }
+				}
+			}
+			trigger_else_if = {
+				limit = { has_modifier = je_ut_new_dawn_fascist_focus }
+				ig:ig_rural_folk = {
+					leader = { ut_ideology_new_dawn_fascist_trigger = yes }
+				}
+			}
+			trigger_else = { always = no }
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_focus_10
+			ut_add_new_dawn_focus_progress = {
+				VALUE = 10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.democrat_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_democrat_focus
+				has_law_or_variant = law_type:law_universal_suffrage
+			}
+			ig:ig_rural_folk = {
+				is_in_government = yes
+			}
+		}
+		ig:ig_rural_folk = {
+			leader = {
+				set_ideology = ideology:ideology_liberal_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_democrat_neg_10
+			ut_add_new_dawn_initiation_progress_democrat = {
+				VALUE = -10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.autocrat_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_autocrat_focus
+				NOT = { has_law_or_variant = law_type:law_universal_suffrage }
+			}
+			ig:ig_rural_folk = {
+				is_in_government = yes
+			}
+		}
+		ig:ig_rural_folk = {
+			leader = {
+				set_ideology = ideology:ut_ideology_autocratic_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_autocrat_neg_10
+			ut_add_new_dawn_initiation_progress_autocrat = {
+				VALUE = -10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.fascist_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_fascist_focus
+				has_law_or_variant = law_type:law_ethnostate
+			}
+			ig:ig_rural_folk = {
+				is_in_government = yes
+			}
+		}
+		ig:ig_rural_folk = {
+			leader = {
+				set_ideology = ideology:ut_ideology_national_socialist_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_fascist_neg_10
+			ut_add_new_dawn_initiation_progress_fascist = {
+				VALUE = -10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.communist_leader
+		highlighted_option = yes
+		trigger = {
+			OR = {
+				has_modifier = je_ut_new_dawn_communist_focus
+				has_law_or_variant = law_type:law_cooperative_ownership
+				has_law_or_variant = law_type:law_command_economy
+			}
+			ig:ig_rural_folk = {
+				is_in_government = yes
+			}
+		}
+		ig:ig_rural_folk = {
+			leader = {
+				set_ideology = ideology:ideology_communist_leader
+			}
+		}
+		custom_tooltip = {
+			text = ut_add_new_dawn_p1_progress_communist_neg_10
+			ut_add_new_dawn_initiation_progress_communist = {
+				VALUE = -10
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.random_decision
+		default_option = yes
+		random_list = {
+			40 = { # Localist and traditional rural leadership
+				ig:ig_rural_folk = {
+					leader = {
+						set_ideology = ideology:ut_ideology_autocratic_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_autocrat_5
+					ut_add_new_dawn_initiation_progress_autocrat = {
+						VALUE = 5
+					}
+				}
+			}
+			10 = { # Nationalism is possible, but not the Rural Folk's defining stance
+				ig:ig_rural_folk = {
+					leader = {
+						set_ideology = ideology:ut_ideology_national_socialist_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_fascist_5
+					ut_add_new_dawn_initiation_progress_fascist = {
+						VALUE = 5
+					}
+				}
+			}
+			20 = { # Agrarian reform and peasant proprietorship
+				ig:ig_rural_folk = {
+					leader = {
+						set_ideology = ideology:ideology_liberal_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_democrat_5
+					ut_add_new_dawn_initiation_progress_democrat = {
+						VALUE = 5
+					}
+				}
+			}
+			10 = { # Smaller chance for radical peasant movements
+				ig:ig_rural_folk = {
+					leader = {
+						set_ideology = ideology:ideology_communist_leader
+					}
+				}
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_communist_5
+					ut_add_new_dawn_initiation_progress_communist = {
+						VALUE = 5
+					}
+				}
+			}
+			20 = {
+				custom_tooltip = {
+					text = ut_add_new_dawn_p1_progress_focus_5
+					ut_add_new_dawn_focus_progress = {
+						VALUE = 5
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.suppress_random_decision
+		add_radicals = {
+			value = 0.01
+		}
+	}
+}
+
+
+
+#Radicals
+event_new_dawn.50 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.50.t
+	desc = event_new_dawn.50.d
+	flavor = event_new_dawn.50.f
 
 	event_image = {
 		video = "europenorthamerica_springtime_of_nations"
@@ -813,6 +1964,7 @@ event_new_dawn.13 = {
 		# too much for ai
 		is_ai = no
 		NOT = { has_modifier = new_dawn_event_radicals_mod }
+		NOT = { has_modifier = new_dawn_event_suppress_radicals_mod }
 		OR = {
 			NOT = {	ut_new_dawn_has_core_trigger = yes }
 			ut_has_new_dawn_pressure_points = {
@@ -851,7 +2003,7 @@ event_new_dawn.13 = {
 	#Happens
 	option = {
 		default_option = yes
-		name = event_new_dawn.13.a
+		name = event_new_dawn.50.a
 		if = {
 			limit = {
 				ut_has_new_dawn_pressure_points = {
@@ -875,6 +2027,249 @@ event_new_dawn.13 = {
 		name = event_new_dawn.suppress_random_decision
 		add_radicals = {
 			value = 0.01
+		}
+		add_modifier = {
+			name = new_dawn_event_suppress_radicals_mod
+			days = 365
+		}
+	}
+}
+
+#News Incident
+event_new_dawn.51 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.51.t
+	desc = event_new_dawn.51.d
+	flavor = event_new_dawn.51.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		is_ai = no
+		NOT = { ut_new_dawn_has_core_trigger = yes }
+	}
+
+	option = {
+		name = event_new_dawn.51.dem
+		custom_tooltip = ut_add_new_dawn_p1_progress_democrat_5
+		ut_add_new_dawn_initiation_progress_democrat = {
+			VALUE = 5
+		}
+	}
+
+	option = {
+		name = event_new_dawn.51.aut
+		custom_tooltip = ut_add_new_dawn_p1_progress_autocrat_5
+		ut_add_new_dawn_initiation_progress_autocrat = {
+			VALUE = 5
+		}
+	}
+
+	option = {
+		name = event_new_dawn.51.com
+		custom_tooltip = ut_add_new_dawn_p1_progress_communist_5
+		ut_add_new_dawn_initiation_progress_communist = {
+			VALUE = 5
+		}
+	}
+
+	option = {
+		name = event_new_dawn.51.fas
+		custom_tooltip = ut_add_new_dawn_p1_progress_fascist_5
+		ut_add_new_dawn_initiation_progress_fascist = {
+			VALUE = 5
+		}
+	}
+	option = {
+		name = event_new_dawn.51.random
+		default_option = yes
+		add_radicals = {
+			value = -0.005
+		}
+		random_list = {
+			25 = {
+				custom_tooltip = ut_add_new_dawn_p1_progress_fascist_5
+				ut_add_new_dawn_initiation_progress_fascist = {
+					VALUE = 5
+				}
+			}
+			25 = {
+				custom_tooltip = ut_add_new_dawn_p1_progress_democrat_5
+				ut_add_new_dawn_initiation_progress_democrat = {
+					VALUE = 5
+				}
+			}
+			25 = {
+				custom_tooltip = ut_add_new_dawn_p1_progress_autocrat_5
+				ut_add_new_dawn_initiation_progress_autocrat = {
+					VALUE = 5
+				}
+			}
+			25 = {
+				custom_tooltip = ut_add_new_dawn_p1_progress_communist_5
+				ut_add_new_dawn_initiation_progress_communist = {
+					VALUE = 5
+				}
+			}
+		}
+	}
+}
+
+#Favorable News Reports
+event_new_dawn.52 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.52.t
+	desc = event_new_dawn.52.d
+	flavor = event_new_dawn.52.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		is_ai = no
+		NOT = { ut_new_dawn_has_core_trigger = yes }
+		OR = {
+			has_modifier = je_ut_new_dawn_democrat_focus
+			has_modifier = je_ut_new_dawn_autocrat_focus
+			has_modifier = je_ut_new_dawn_communist_focus
+			has_modifier = je_ut_new_dawn_fascist_focus
+		}
+	}
+
+	option = {
+		name = event_new_dawn.52.a
+		trigger = { NOT = { has_modifier = je_ut_new_dawn_democrat_focus } }
+		if = {
+			limit = { has_modifier = je_ut_new_dawn_democrat_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_democrat = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_autocrat_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_autocrat = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_communist_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_communist = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_fascist_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_fascist = { VALUE = 5 }
+		}
+		custom_tooltip = ut_add_new_dawn_p1_progress_democrat_neg_5
+		ut_add_new_dawn_initiation_progress_democrat = { VALUE = -5 }
+	}
+
+	option = {
+		name = event_new_dawn.52.b
+		trigger = { NOT = { has_modifier = je_ut_new_dawn_autocrat_focus } }
+		if = {
+			limit = { has_modifier = je_ut_new_dawn_democrat_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_democrat = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_autocrat_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_autocrat = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_communist_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_communist = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_fascist_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_fascist = { VALUE = 5 }
+		}
+		custom_tooltip = ut_add_new_dawn_p1_progress_autocrat_neg_5
+		ut_add_new_dawn_initiation_progress_autocrat = { VALUE = -5 }
+	}
+
+	option = {
+		name = event_new_dawn.52.c
+		trigger = { NOT = { has_modifier = je_ut_new_dawn_communist_focus } }
+		if = {
+			limit = { has_modifier = je_ut_new_dawn_democrat_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_democrat = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_autocrat_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_autocrat = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_communist_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_communist = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_fascist_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_fascist = { VALUE = 5 }
+		}
+		custom_tooltip = ut_add_new_dawn_p1_progress_communist_neg_5
+		ut_add_new_dawn_initiation_progress_communist = { VALUE = -5 }
+	}
+
+	option = {
+		name = event_new_dawn.52.e
+		trigger = { NOT = { has_modifier = je_ut_new_dawn_fascist_focus } }
+		if = {
+			limit = { has_modifier = je_ut_new_dawn_democrat_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_democrat = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_autocrat_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_autocrat = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_communist_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_communist = { VALUE = 5 }
+		}
+		else_if = {
+			limit = { has_modifier = je_ut_new_dawn_fascist_focus }
+			custom_tooltip = ut_add_new_dawn_p1_progress_focus_5
+			ut_add_new_dawn_initiation_progress_fascist = { VALUE = 5 }
+		}
+		custom_tooltip = ut_add_new_dawn_p1_progress_fascist_neg_5
+		ut_add_new_dawn_initiation_progress_fascist = { VALUE = -5 }
+	}
+
+	
+	option = {
+		default_option = yes
+		name = event_new_dawn.52.g
+
+		add_radicals = {
+			value = -0.005			
 		}
 	}
 }
@@ -1287,6 +2682,35 @@ event_new_dawn.106 = {
 
 	trigger = {
 		#also for ai
+		ut_new_dawn_has_core_trigger = yes
+		NOT = {
+			OR = {
+				AND = {
+					has_modifier = ut_new_dawn_core_democratic_mod
+					has_law_or_variant = law_type:law_universal_suffrage
+					OR = {
+						has_law_or_variant = law_type:law_parliamentary_republic
+						has_law_or_variant = law_type:law_presidential_republic
+					}
+				}
+				AND = {
+					has_modifier = ut_new_dawn_core_fascist_mod
+					OR = {
+						has_law_or_variant = law_type:law_ethnostate
+						has_law_or_variant = law_type:law_neo_ethno_state
+					}
+				}
+				AND = {
+					has_modifier = ut_new_dawn_core_communist_mod
+					has_law_or_variant = law_type:law_cooperative_ownership
+					OR = {
+						has_law_or_variant = law_type:law_council_republic
+						has_law_or_variant = law_type:law_command_economy
+					}
+				}
+				has_modifier = ut_new_dawn_core_autocratic_mod
+			}
+		}
 		NOT = {
 			ut_has_new_dawn_pressure_points = {
 				VALUE = 25
@@ -2341,8 +3765,9 @@ event_new_dawn.30 = {
 	
 	option = {
 		name = event_new_dawn.30.o.urbanists
+		highlighted_option = yes
 		trigger = {
-			ig:ig_urbanists = {
+			ig:ig_urbanists ?= {
 				is_in_government = no
 				is_marginal = no
 			}
@@ -2358,6 +3783,7 @@ event_new_dawn.30 = {
 	
 	option = {
 		name = event_new_dawn.30.o.armed_forces
+		highlighted_option = yes
 		trigger = {
 			ig:ig_armed_forces = {
 				is_in_government = no
@@ -2375,6 +3801,7 @@ event_new_dawn.30 = {
 
 	option = {
 		name = event_new_dawn.30.o.devout
+		highlighted_option = yes
 		trigger = {
 			ig:ig_devout = {
 				is_in_government = no
@@ -2392,6 +3819,7 @@ event_new_dawn.30 = {
 
 	option = {
 		name = event_new_dawn.30.o.industrialists
+		highlighted_option = yes
 		trigger = {
 			ig:ig_industrialists = {
 				is_in_government = no
@@ -2409,6 +3837,7 @@ event_new_dawn.30 = {
 
 	option = {
 		name = event_new_dawn.30.o.intelligentsia
+		highlighted_option = yes
 		trigger = {
 			ig:ig_intelligentsia = {
 				is_in_government = no
@@ -2426,6 +3855,7 @@ event_new_dawn.30 = {
 
 	option = {
 		name = event_new_dawn.30.o.landowners
+		highlighted_option = yes
 		trigger = {
 			ig:ig_landowners = {
 				is_in_government = no
@@ -2443,6 +3873,7 @@ event_new_dawn.30 = {
 
 	option = {
 		name = event_new_dawn.30.o.petty_bourgeoisie
+		highlighted_option = yes
 		trigger = {
 			ig:ig_petty_bourgeoisie = {
 				is_in_government = no
@@ -2460,6 +3891,7 @@ event_new_dawn.30 = {
 
 	option = {
 		name = event_new_dawn.30.o.rural_folk
+		highlighted_option = yes
 		trigger = {
 			ig:ig_rural_folk = {
 				is_in_government = no
@@ -2477,6 +3909,7 @@ event_new_dawn.30 = {
 
 	option = {
 		name = event_new_dawn.30.o.trade_unions
+		highlighted_option = yes
 		trigger = {
 			ig:ig_trade_unions = {
 				is_in_government = no
@@ -2667,7 +4100,6 @@ event_new_dawn.999 = {
 		name = utopia.continue
 		default_option = yes
 	}
-	
 	option = {
 		trigger = {
 			has_journal_entry = je_ut_new_dawn_democratic
