@@ -169,7 +169,7 @@ ut_new_dawn_phase_1_trend = {
 
 }
 
-ut_new_dawn_phase_1_trend_short = {
+ut_new_dawn_phase_1_trend_detailed = {
 	type = country
 	random_valid = no
 
@@ -182,7 +182,7 @@ ut_new_dawn_phase_1_trend_short = {
 			}
 		}
 
-		localization_key = ut_phase_1_trend_democrat_short
+		localization_key = ut_phase_1_trend_democrat_detailed
 	}
 
 	text = {
@@ -194,7 +194,7 @@ ut_new_dawn_phase_1_trend_short = {
 			}
 		}
 
-		localization_key = ut_phase_1_trend_autocrat_short
+		localization_key = ut_phase_1_trend_autocrat_detailed
 	}
 	
 	text = {
@@ -206,7 +206,7 @@ ut_new_dawn_phase_1_trend_short = {
 			}
 		}
 
-		localization_key = ut_phase_1_trend_fascist_short
+		localization_key = ut_phase_1_trend_fascist_detailed
 	}
 	
 	text = {
@@ -218,7 +218,7 @@ ut_new_dawn_phase_1_trend_short = {
 			}
 		}
 
-		localization_key = ut_phase_1_trend_communist_short
+		localization_key = ut_phase_1_trend_communist_detailed
 	}
 
 	text = {
@@ -226,6 +226,7 @@ ut_new_dawn_phase_1_trend_short = {
 	}
 
 }
+
 
 ut_new_dawn_phase_1_trend_focus = {
 	type = country
