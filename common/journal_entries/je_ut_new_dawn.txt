@@ -933,8 +933,11 @@ je_ut_new_dawn_democratic = {
 			}
 			custom_tooltip = {
 				text = je_ut_new_dawn_critical_lower_bound_fail_pressure_tt
-				je:je_ut_new_dawn_democratic = {
-					"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" > 50
+				OR = {
+					is_ai = yes
+					je:je_ut_new_dawn_democratic = {
+						"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" > 50
+					}
 				}
 			}
 
@@ -1164,6 +1167,15 @@ je_ut_new_dawn_autocratic = {
 				}
 			}
 
+			custom_tooltip = {
+				text = je_ut_new_dawn_critical_lower_bound_fail_pressure_tt
+				OR = {
+					is_ai = yes
+					je:je_ut_new_dawn_autocratic = {
+						"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" > 50
+					}
+				}
+			}
 		}
 		effect = {
 			remove_modifier = je_ut_new_dawn_autocrat_focus
@@ -1441,6 +1453,15 @@ je_ut_new_dawn_fascist = {
 				}
 			}
 
+			custom_tooltip = {
+				text = je_ut_new_dawn_critical_lower_bound_fail_pressure_tt
+				OR = {
+					is_ai = yes
+					je:je_ut_new_dawn_fascist = {
+						"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" > 50
+					}
+				}
+			}
 		}
 		effect = {
 			remove_modifier = je_ut_new_dawn_fascist_focus
@@ -1671,6 +1692,16 @@ je_ut_new_dawn_communist = {
 				text = je_ut_new_dawn_critical_lower_bound_fail_tt
 				je:je_ut_new_dawn_communist = {
 					"scripted_bar_progress(je_ut_new_dawn_communist_points_bar)" <= new_dawn_ideology_critical_lower_bound
+				}
+				
+				custom_tooltip = {
+					text = je_ut_new_dawn_critical_lower_bound_fail_pressure_tt
+					OR = {
+						is_ai = yes
+						je:je_ut_new_dawn_communist = {
+							"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" > 50
+						}
+					}
 				}
 			}
 
