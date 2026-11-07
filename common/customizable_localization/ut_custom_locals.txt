@@ -270,7 +270,7 @@ ut_new_dawn_phase_1_trend_focus = {
 			}
 		}
 
-		localization_key = ut_phase_1_trend_focus_on_focus
+		localization_key = ut_phase_1_trend_on_focus
 	}
 
 	text = {
