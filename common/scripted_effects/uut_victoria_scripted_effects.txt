@@ -422,7 +422,7 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 		}
 		change_variable = {
 			name = ut_nd_autocrat_progress_from_events
-			add = 0.5 
+			add = 2
 		}
 	}
 	if = {
