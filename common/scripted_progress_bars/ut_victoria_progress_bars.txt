@@ -127,7 +127,46 @@ ut_new_dawn_fascist_bar = {
 				}
 			}
 		}
-		else = {
+		else_if = {
+			limit = {
+				je:je_ut_new_dawn = {
+					OR = {
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= 200
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= 150
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 200
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 200
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 200
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= 100
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 150
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 150
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 150
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= 50
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 100
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 100
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 100
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > 0
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 50
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 50
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 50
+							}
+						}
+					}
+				}
+			}
 			add = {
 				desc = "ut_nd_decaying_progress"
 				value = -0.5
@@ -269,7 +308,46 @@ ut_new_dawn_democrat_bar = {
 				}
 			}
 		}
-		else = {			
+		else_if = {
+			limit = {
+				je:je_ut_new_dawn = {
+					OR = {
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" >= 200
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" >= 150
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 200
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 200
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 200
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" >= 100
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 150
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 150
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 150
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" >= 50
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 100
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 100
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 100
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > 0
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 50
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 50
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 50
+							}
+						}
+					}
+				}
+			}
 			add = {
 				desc = "ut_nd_decaying_progress"
 				value = -0.5
@@ -410,7 +488,46 @@ ut_new_dawn_communist_bar = {
 				}
 			}
 		}
-		else = {
+		else_if = {
+			limit = {
+				je:je_ut_new_dawn = {
+					OR = {
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" >= 200
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" >= 150
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 200
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 200
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 200
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" >= 100
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 150
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 150
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 150
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" >= 50
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 100
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 100
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 100
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" > 0
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 50
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 50
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 50
+							}
+						}
+					}
+				}
+			}
 			add = {
 				desc = "ut_nd_decaying_progress"
 				value = -0.5
@@ -553,7 +670,46 @@ ut_new_dawn_autocrat_bar = {
 				}
 			}
 		}
-		else = {
+		else_if = {
+			limit = {
+				je:je_ut_new_dawn = {
+					OR = {
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" >= 200
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" >= 150
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 200
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 200
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 200
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" >= 100
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 150
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 150
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 150
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" >= 50
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 100
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 100
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 100
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > 0
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 50
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 50
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 50
+							}
+						}
+					}
+				}
+			}
 			add = {
 				desc = "ut_nd_decaying_progress"
 				value = -0.5
