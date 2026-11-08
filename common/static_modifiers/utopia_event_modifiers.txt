@@ -1,4 +1,4 @@
-﻿# Diesel Tractors
+# Diesel Tractors
 agricultural_mechanization = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	building_rye_farm_throughput_add = 0.15
@@ -109,22 +109,20 @@ je_ut_new_dawn_communist_focus = {
 
 ai_great_power_buff_spread = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	country_tech_spread_add = 150
+	country_tech_spread_add = 100
 	country_weekly_innovation_max_add = 50
-	country_weekly_innovation_add = 100
+	country_weekly_innovation_add = 50
 }
 
 ai_major_power_buff_spread = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 100
 	country_weekly_innovation_max_add = 25
-	country_weekly_innovation_add = 100
 }
 
 ai_below_major_power_buff_spread = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	country_tech_spread_add = 50
-	country_weekly_innovation_add = 100
+	country_tech_spread_add = 100
 }
 
 
