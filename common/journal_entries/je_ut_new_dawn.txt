@@ -361,8 +361,7 @@ je_ut_new_dawn = {
 			}
 		}
 		random_events = {
-			#og was 400
-			200 = 0
+			400 = 0
 			#IG Leader Ideological Change
 			10 = event_new_dawn.11
 			10 = event_new_dawn.12
