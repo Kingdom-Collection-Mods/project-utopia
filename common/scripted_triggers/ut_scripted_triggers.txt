@@ -223,7 +223,9 @@ ut_new_dawn_has_democrat_secondary_core_laws_trigger = {
 ut_new_dawn_has_autocrat_core_laws_trigger = {
 	AND = {
 		OR = {
-			has_law_or_variant = law_type:law_monarchy
+			#todo double check if that is ok, so supreme leader (monarchy) doesnt count as autocratic
+			has_law = law_type:law_monarchy
+			has_law = law_type:ut_law_monarchy_autocratic
 			has_law_or_variant = law_type:law_autocracy
 			has_law_or_variant = law_type:law_oligarchy
 		}

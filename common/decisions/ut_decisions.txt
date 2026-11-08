@@ -817,6 +817,9 @@ ut_new_dawn_early_game_rule_unlock = {
 			}
 		}
 	}
+	ai_chance = {
+		value = 1
+	}
 }
 
 ut_debug_apply_patch = {

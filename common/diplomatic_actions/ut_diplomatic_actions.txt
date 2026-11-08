@@ -85,6 +85,7 @@ ut_influence_new_dawn_major_power = {
 		is_revolutionary = no
 		country_rank >= rank_value:great_power
 		ut_new_dawn_has_core_trigger = yes
+		has_technology_researched = union_trade
 	}
 	
 	potential = {
@@ -445,6 +446,7 @@ ut_new_dawn_start_propaganda_campaign = {
 			has_modifier = ut_new_dawn_core_democratic_mod
 			has_modifier = ut_new_dawn_core_autocratic_mod
 		}
+		has_technology_researched = union_trade
 	}
 	
 	potential = {
