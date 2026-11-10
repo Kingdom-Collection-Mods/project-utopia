@@ -169,7 +169,7 @@ ut_new_dawn_fascist_bar = {
 			}
 			add = {
 				desc = "ut_nd_decaying_progress"
-				value = -0.5
+				value = -1
 			}
 		}
 	}
@@ -350,7 +350,7 @@ ut_new_dawn_democrat_bar = {
 			}
 			add = {
 				desc = "ut_nd_decaying_progress"
-				value = -0.5
+				value = -1
 			}
 		}
 	}
@@ -530,7 +530,7 @@ ut_new_dawn_communist_bar = {
 			}
 			add = {
 				desc = "ut_nd_decaying_progress"
-				value = -0.5
+				value = -1
 			}
 		}
 	}
@@ -712,7 +712,7 @@ ut_new_dawn_autocrat_bar = {
 			}
 			add = {
 				desc = "ut_nd_decaying_progress"
-				value = -0.5
+				value = -1
 			}
 		}
 	}

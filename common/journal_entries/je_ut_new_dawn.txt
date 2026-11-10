@@ -958,7 +958,7 @@ je_ut_new_dawn_democratic = {
 
 			je:je_ut_new_dawn = {
 				add_progress = {
-					value = -120
+					value = -60
 					name = ut_new_dawn_democrat_bar
 				}
 			}
@@ -1190,7 +1190,7 @@ je_ut_new_dawn_autocratic = {
 
 			je:je_ut_new_dawn = {
 				add_progress = {
-					value = -120
+					value = -60
 					name = ut_new_dawn_autocrat_bar
 				}
 			}
@@ -1471,7 +1471,7 @@ je_ut_new_dawn_fascist = {
 
 			je:je_ut_new_dawn = {
 				add_progress = {
-					value = -120
+					value = -60
 					name = ut_new_dawn_fascist_bar
 				}
 			}
@@ -1725,7 +1725,7 @@ je_ut_new_dawn_communist = {
 
 			je:je_ut_new_dawn = {
 				add_progress = {
-					value = -120
+					value = -60
 					name = ut_new_dawn_communist_bar
 				}
 			}
