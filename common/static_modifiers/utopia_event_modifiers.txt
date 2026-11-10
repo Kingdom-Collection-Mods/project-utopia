@@ -1,4 +1,4 @@
-﻿# Diesel Tractors
+# Diesel Tractors
 agricultural_mechanization = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	building_rye_farm_throughput_add = 0.15
@@ -75,12 +75,14 @@ new_dawn_event_constitutional_crisis_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
 	interest_group_approval_add = -2
 	political_movement_radicalism_add = 0.25
+	country_new_dawn_progress_points_progress = -1
 }
 
 new_dawn_event_emergency_decree_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
 	building_throughput_add = -0.1
 	country_loan_interest_rate_mult = 0.1
+	country_new_dawn_progress_points_progress = -1
 }
 
 ut_new_dawn_focus_recently_changed = {
