@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -2398,6 +2398,12 @@
  setting_ut_new_dawn_historical_focus_yes_desc: "Selected AI nations have a higher chance to select their historical [concept_ut_nd_focus]."
  setting_ut_new_dawn_historical_focus_no: "Disabled"
  setting_ut_new_dawn_historical_focus_no_desc: "All AI nations have the same chance to select their focus.\n@warning! Project Utopia is tested with historical [concept_ut_nd_focus] enabled."
+
+ rule_ut_ai_tech_buffs: "AI Technology Buffs"
+ setting_ut_ai_tech_buffs_yes: "Enabled"
+ setting_ut_ai_tech_buffs_yes_desc: "AI nations receive technology spread buffs."
+ setting_ut_ai_tech_buffs_no: "Disabled"
+ setting_ut_ai_tech_buffs_no_desc: "AI nations do not receive technology spread buffs."
 
  # Music
  project_utopia_ost: "Project Utopia Soundtrack"
