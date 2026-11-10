@@ -142,7 +142,6 @@
 	}
 }
 
-
 ut_law_monarchy_autocratic = {
 	group = lawgroup_governance_principles
 	parent = law_monarchy
@@ -156,7 +155,6 @@ ut_law_monarchy_autocratic = {
 	}
 
 	is_visible = {
-		always = no #todo remove
 		ut_new_dawn_has_core_trigger = yes
 	}
 
