@@ -704,6 +704,11 @@ je_ut_new_dawn_democratic = {
 	}
 
 	immediate = {
+		save_scope_as = ut_new_dawn_core_country
+		every_country = {
+			limit = { is_player = yes }
+			trigger_event = { id = event_new_dawn.201 popup = yes }
+		}
 		ut_new_dawn_democrat_progress = yes
 		add_journal_entry = {
 			type = je_ut_new_dawn_core_abilities
@@ -942,6 +947,12 @@ je_ut_new_dawn_democratic = {
 			remove_modifier = ut_new_dawn_core_democratic_mod
 			remove_variable = ut_new_dawn_bar_freeze
 
+			save_scope_as = ut_new_dawn_core_country
+			every_country = {
+				limit = { is_player = yes }
+				trigger_event = { id = event_new_dawn.211 popup = yes }
+			}
+
 			hidden_effect = {
 				remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
 				remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
@@ -1009,6 +1020,11 @@ je_ut_new_dawn_autocratic = {
 	scripted_button = je_ut_new_dawn_suppress_dissidents
 
 	immediate = {
+		save_scope_as = ut_new_dawn_core_country
+		every_country = {
+			limit = { is_player = yes }
+			trigger_event = { id = event_new_dawn.202 popup = yes }
+		}
 		ut_new_dawn_autocrat_progress = yes
 		add_journal_entry = {
 			type = je_ut_new_dawn_core_abilities
@@ -1227,6 +1243,11 @@ je_ut_new_dawn_fascist = {
 	}
 
 	immediate = {
+		save_scope_as = ut_new_dawn_core_country
+		every_country = {
+			limit = { is_player = yes }
+			trigger_event = { id = event_new_dawn.203 popup = yes }
+		}
 		ut_new_dawn_fascist_progress = yes
 		add_journal_entry = {
 			type = je_ut_new_dawn_core_abilities
@@ -1463,6 +1484,12 @@ je_ut_new_dawn_fascist = {
 			remove_modifier = ut_new_dawn_core_fascist_mod
 			remove_variable = ut_new_dawn_bar_freeze
 
+			save_scope_as = ut_new_dawn_core_country
+			every_country = {
+				limit = { is_player = yes }
+				trigger_event = { id = event_new_dawn.213 popup = yes }
+			}
+
 			hidden_effect = {
 				remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
 				remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
@@ -1518,6 +1545,11 @@ je_ut_new_dawn_communist = {
 	}
 
 	immediate = {
+		save_scope_as = ut_new_dawn_core_country
+		every_country = {
+			limit = { is_player = yes }
+			trigger_event = { id = event_new_dawn.204 popup = yes }
+		}
 		ut_new_dawn_communist_progress = yes
 		add_journal_entry = {
 			type = je_ut_new_dawn_core_abilities
@@ -1705,6 +1737,12 @@ je_ut_new_dawn_communist = {
 			remove_modifier = je_ut_new_dawn_communist_focus
 			remove_modifier = ut_new_dawn_core_communist_mod
 			remove_variable = ut_new_dawn_bar_freeze
+
+			save_scope_as = ut_new_dawn_core_country
+			every_country = {
+				limit = { is_player = yes }
+				trigger_event = { id = event_new_dawn.214 popup = yes }
+			}
 
 			hidden_effect = {
 				remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod

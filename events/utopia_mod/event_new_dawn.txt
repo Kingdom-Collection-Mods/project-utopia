@@ -4383,6 +4383,167 @@ event_new_dawn.141 = {
 }
 
 
+# Core ideology announcements
+event_new_dawn.201 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.201.t
+	desc = event_new_dawn.201.d
+	flavor = event_new_dawn.201.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}
+
+event_new_dawn.202 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.202.t
+	desc = event_new_dawn.202.d
+	flavor = event_new_dawn.202.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}
+
+event_new_dawn.203 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.203.t
+	desc = event_new_dawn.203.d
+	flavor = event_new_dawn.203.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}
+
+event_new_dawn.204 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.204.t
+	desc = event_new_dawn.204.d
+	flavor = event_new_dawn.204.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}
+
+# Core ideology loss announcements, corresponding to events 4-7
+event_new_dawn.211 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.211.t
+	desc = event_new_dawn.211.d
+	flavor = event_new_dawn.211.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}
+
+event_new_dawn.212 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.212.t
+	desc = event_new_dawn.212.d
+	flavor = event_new_dawn.212.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}
+
+event_new_dawn.213 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.213.t
+	desc = event_new_dawn.213.d
+	flavor = event_new_dawn.213.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}
+
+event_new_dawn.214 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.214.t
+	desc = event_new_dawn.214.d
+	flavor = event_new_dawn.214.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}
 
 #Phase 1 Cheat
 event_new_dawn.998 = {
