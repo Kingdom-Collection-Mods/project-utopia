@@ -952,6 +952,10 @@ je_ut_new_dawn_democratic = {
 				limit = { is_player = yes }
 				trigger_event = { id = event_new_dawn.211 popup = yes }
 			}
+			if = {
+				limit = { is_player = yes }
+				trigger_event = { id = event_new_dawn.4 popup = yes }
+			}
 
 			hidden_effect = {
 				remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
@@ -1219,6 +1223,10 @@ je_ut_new_dawn_autocratic = {
 			every_country = {
 				limit = { is_player = yes }
 				trigger_event = { id = event_new_dawn.212 popup = yes }
+			}
+			if = {
+				limit = { is_player = yes }
+				trigger_event = { id = event_new_dawn.4 popup = yes }
 			}
 
 			hidden_effect = {
@@ -1517,6 +1525,10 @@ je_ut_new_dawn_fascist = {
 				limit = { is_player = yes }
 				trigger_event = { id = event_new_dawn.213 popup = yes }
 			}
+			if = {
+				limit = { is_player = yes }
+				trigger_event = { id = event_new_dawn.4 popup = yes }
+			}
 
 			remove_modifier = je_ut_new_dawn_fascist_outlaw_communists_mod
 
@@ -1774,6 +1786,10 @@ je_ut_new_dawn_communist = {
 			every_country = {
 				limit = { is_player = yes }
 				trigger_event = { id = event_new_dawn.214 popup = yes }
+			}
+			if = {
+				limit = { is_player = yes }
+				trigger_event = { id = event_new_dawn.4 popup = yes }
 			}
 
 			hidden_effect = {
