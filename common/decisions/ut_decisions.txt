@@ -413,7 +413,7 @@ ut_lgbt_same_sex_unions = {
 			name = ut_lgbt_same_sex_unions_var
 		}
 		custom_tooltip = {
-			text = ut_add_new_dawn_progress_neg_50
+			text = ut_add_new_dawn_core_progress_neg_50
 			ut_add_new_dawn_core_progress = {
 				VALUE = -50
 			}
@@ -465,7 +465,7 @@ ut_lgbt_same_sex_marriage = {
 			name = ut_lgbt_same_sex_marriage_var
 		}
 		custom_tooltip = {
-			text = ut_add_new_dawn_progress_neg_50
+			text = ut_add_new_dawn_core_progress_neg_50
 			ut_add_new_dawn_core_progress = {
 				VALUE = -50
 			}
@@ -508,7 +508,7 @@ ut_lgbt_sexual_self_determination = {
 			name = ut_lgbt_sexual_self_determination_var
 		}
 		custom_tooltip = {
-			text = ut_add_new_dawn_progress_neg_50
+			text = ut_add_new_dawn_core_progress_neg_50
 			ut_add_new_dawn_core_progress = {
 				VALUE = -50
 			}

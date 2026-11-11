@@ -1985,7 +1985,7 @@ event_new_dawn.20 = {
 				}
 			}
 		}
-		custom_tooltip = ut_add_new_dawn_progress_neg_10
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_10
 		ut_add_new_dawn_core_progress = {
 			VALUE = -10
 		}
@@ -2006,7 +2006,7 @@ event_new_dawn.20 = {
 				}
 			}
 		}
-		custom_tooltip = ut_add_new_dawn_progress_neg_20
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_20
 		ut_add_new_dawn_core_progress = {
 			VALUE = -20
 		}
@@ -2059,7 +2059,7 @@ event_new_dawn.21 = {
 	option = {
 		name = utopia.continue
 		default_option = yes
-		custom_tooltip = ut_add_new_dawn_progress_neg_10
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_10
 		ut_add_new_dawn_core_progress = {
 			VALUE = -10
 		}
@@ -2274,7 +2274,7 @@ event_new_dawn.25 = {
 				}
 			}
 			scope:ut_je_propaganda_source_target_scope = {
-				custom_tooltip = ut_add_new_dawn_progress_neg_25
+				custom_tooltip = ut_add_new_dawn_core_progress_neg_25
 			}
 		}
 	}
@@ -2545,7 +2545,7 @@ event_new_dawn.50 = {
 			}
 		}
 		name = je_ut_new_dawn_suppress_dissidents
-		custom_tooltip = ut_add_new_dawn_progress_neg_5
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = -5
 		}
@@ -2867,7 +2867,7 @@ event_new_dawn.101 = {
 
 	option = {
 		name = event_new_dawn.101.b
-		custom_tooltip = ut_add_new_dawn_progress_5
+		custom_tooltip = ut_add_new_dawn_core_progress_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = 5
 		}
@@ -2915,7 +2915,7 @@ event_new_dawn.102 = {
 
 	option = {
 		name = event_new_dawn.102.b
-		custom_tooltip = ut_add_new_dawn_progress_5
+		custom_tooltip = ut_add_new_dawn_core_progress_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = 5
 		}
@@ -2958,7 +2958,7 @@ event_new_dawn.103 = {
 			value = yearly_gross_income
 			multiply = 0.05
 		}
-		custom_tooltip = ut_add_new_dawn_progress_5
+		custom_tooltip = ut_add_new_dawn_core_progress_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = 5
 		}
@@ -2966,7 +2966,7 @@ event_new_dawn.103 = {
 
 	option = {
 		name = event_new_dawn.103.b
-		custom_tooltip = ut_add_new_dawn_progress_10
+		custom_tooltip = ut_add_new_dawn_core_progress_10
 		ut_add_new_dawn_core_progress = {
 			VALUE = 10
 		}
@@ -3014,7 +3014,7 @@ event_new_dawn.104 = {
 
 	option = {
 		name = event_new_dawn.104.b
-		custom_tooltip = ut_add_new_dawn_progress_5
+		custom_tooltip = ut_add_new_dawn_core_progress_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = 5
 		}
@@ -3126,7 +3126,7 @@ event_new_dawn.105 = {
 
 	option = {
 		name = event_new_dawn.105.b
-		custom_tooltip = ut_add_new_dawn_progress_5
+		custom_tooltip = ut_add_new_dawn_core_progress_5
 		ut_add_new_dawn_core_progress = { 
 			VALUE = 5
 		}
@@ -3475,7 +3475,7 @@ event_new_dawn.106 = {
 		default_option = yes
 		name = event_new_dawn.106.z
 
-		custom_tooltip = ut_add_new_dawn_progress_5
+		custom_tooltip = ut_add_new_dawn_core_progress_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = 5
 		}
@@ -3898,7 +3898,7 @@ event_new_dawn.107 = {
 		default_option = yes
 		name = event_new_dawn.106.z
 
-		custom_tooltip = ut_add_new_dawn_progress_5
+		custom_tooltip = ut_add_new_dawn_core_progress_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = 5
 		}
@@ -3986,7 +3986,7 @@ event_new_dawn.120 = {
 		}
 		highlighted_option = yes
 		name = je_ut_new_dawn_suppress_dissidents
-		custom_tooltip = ut_add_new_dawn_progress_neg_5
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = -5
 		}
@@ -4044,7 +4044,7 @@ event_new_dawn.121 = {
 	option = {
 		default_option = yes
 		name = je_ut_new_dawn_suppress_dissidents
-		custom_tooltip = ut_add_new_dawn_progress_neg_5
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = -5
 		}
@@ -4099,7 +4099,7 @@ event_new_dawn.122 = {
 		}
 		highlighted_option = yes
 		name = je_ut_new_dawn_suppress_dissidents
-		custom_tooltip = ut_add_new_dawn_progress_neg_5
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = -5
 		}
@@ -4168,7 +4168,7 @@ event_new_dawn.123 = {
 		}
 		highlighted_option = yes
 		name = je_ut_new_dawn_suppress_dissidents
-		custom_tooltip = ut_add_new_dawn_progress_neg_5
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = -5
 		}
@@ -4236,7 +4236,7 @@ event_new_dawn.124 = {
 		}
 		highlighted_option = yes
 		name = je_ut_new_dawn_suppress_dissidents
-		custom_tooltip = ut_add_new_dawn_progress_neg_5
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = -5
 		}
@@ -4309,7 +4309,7 @@ event_new_dawn.140 = {
 				}
 			}
 		}
-		custom_tooltip = ut_add_new_dawn_progress_neg_10
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_10
 		ut_add_new_dawn_core_progress = {
 			VALUE = -10
 		}
@@ -4368,7 +4368,7 @@ event_new_dawn.141 = {
 				}
 			}
 		}
-		custom_tooltip = ut_add_new_dawn_progress_neg_10
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_10
 		ut_add_new_dawn_core_progress = {
 			VALUE = -10
 		}

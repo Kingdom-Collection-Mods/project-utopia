@@ -23,7 +23,7 @@ je_ut_new_dawn_emergency_powers = {
 			value = 0.01
 		}
 		custom_tooltip = {
-			text = ut_add_new_dawn_progress_neg_25
+			text = ut_add_new_dawn_core_progress_neg_25
 			je:je_ut_new_dawn_autocratic = {
 				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
 			}
@@ -59,7 +59,7 @@ je_ut_new_dawn_strengthen_power = {
 		}
 		
 		custom_tooltip = {
-			text = ut_add_new_dawn_progress_neg_25
+			text = ut_add_new_dawn_core_progress_neg_25
 			je:je_ut_new_dawn_autocratic = {
 				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
 			}
@@ -95,7 +95,7 @@ je_ut_new_dawn_border_dispute = {
 		}
 		
 		custom_tooltip = {
-			text = ut_add_new_dawn_progress_neg_25
+			text = ut_add_new_dawn_core_progress_neg_25
 			je:je_ut_new_dawn_autocratic = {
 				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
 			}
@@ -144,7 +144,7 @@ je_ut_new_dawn_suppress_dissidents = {
 		}
 
 		custom_tooltip = {
-			text = ut_add_new_dawn_progress_neg_25
+			text = ut_add_new_dawn_core_progress_neg_25
 			je:je_ut_new_dawn_autocratic = {
 				add_progress = { value = -25 name = je_ut_new_dawn_autocratic_points_bar }
 			}

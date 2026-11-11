@@ -60,7 +60,7 @@
 				}
 			}
 			scope:target = {
-				custom_tooltip = ut_add_new_dawn_progress_neg_25
+				custom_tooltip = ut_add_new_dawn_core_progress_neg_25
 				ut_add_new_dawn_core_progress = {
 					VALUE = -25
 				}
@@ -215,7 +215,7 @@ ut_je_propaganda_target = {
 		}
 		effect = {
 			show_as_tooltip = {
-				custom_tooltip = ut_add_new_dawn_progress_neg_25
+				custom_tooltip = ut_add_new_dawn_core_progress_neg_25
 				ut_add_new_dawn_core_progress = {
 					VALUE = -25
 				}
@@ -396,7 +396,7 @@ ut_je_ally_influence_petition = {
 
         }
         effect = {
-			custom_tooltip = ut_add_new_dawn_progress_5
+			custom_tooltip = ut_add_new_dawn_core_progress_5
 			ut_add_new_dawn_core_progress = {
 				VALUE = 5
 			}
@@ -481,7 +481,7 @@ ut_je_ally_influence_petition = {
 
         }
         effect = {
-			custom_tooltip = ut_add_new_dawn_progress_neg_5
+			custom_tooltip = ut_add_new_dawn_core_progress_neg_5
 			ut_add_new_dawn_core_progress = {
 				VALUE = -5
 			}
@@ -507,7 +507,7 @@ ut_je_ally_influence_petition = {
 		flags = { timeout }
 		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
 		effect = {
-			custom_tooltip = ut_add_new_dawn_progress_neg_5
+			custom_tooltip = ut_add_new_dawn_core_progress_neg_5
 			ut_add_new_dawn_core_progress = { 
 				VALUE = -5
 			}

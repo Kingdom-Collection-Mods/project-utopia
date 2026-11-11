@@ -499,7 +499,7 @@ ut_new_dawn_start_propaganda_campaign = {
 	}
 	
 	accept_effect = {
-		custom_tooltip = ut_add_new_dawn_progress_neg_10
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_10
 		ut_add_new_dawn_core_progress = {
 			VALUE = -10
 		}
@@ -968,8 +968,8 @@ ut_force_become_subject = {
 			}
 		}
 
-		custom_tooltip = ut_add_new_dawn_progress_neg_25
-		ut_add_new_dawn_progress_communist = {
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_25
+		ut_add_new_dawn_core_progress_communist = {
 			VALUE = -25
 		}
 	}
@@ -1103,8 +1103,8 @@ ut_force_regime_change = {
 			}
 		}
 
-		custom_tooltip = ut_add_new_dawn_progress_neg_25
-		ut_add_new_dawn_progress_fascist = {
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_25
+		ut_add_new_dawn_core_progress_fascist = {
 			VALUE = -25
 		}
 	}

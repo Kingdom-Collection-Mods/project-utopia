@@ -63,7 +63,7 @@ ut_new_dawn_propaganda_target_defend = {
 	}
 
 	effect = {		
-		custom_tooltip = ut_add_new_dawn_progress_neg_10
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_10
 		ut_add_new_dawn_core_progress = {
 			VALUE = -10
 		}
