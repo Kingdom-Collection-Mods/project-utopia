@@ -10,7 +10,6 @@ je_ut_new_dawn_outlaw_communists = {
 	}
 
 	possible = {
-		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_fascist = { 
@@ -54,7 +53,7 @@ je_ut_new_dawn_outlaw_communists = {
 			}
 			if = {
 				limit = {
-					NOT = { currently_enacting_law ?= imposed_law }
+					NOT = { currently_enacting_law ?= law_single_party_state }
 					enacting_any_law = yes
 				}
 				cancel_enactment = yes
@@ -67,6 +66,59 @@ je_ut_new_dawn_outlaw_communists = {
 	}
 }
 
+je_ut_new_dawn_outlaw_communists_ability_add = {
+	name = "je_ut_new_dawn_outlaw_communists_ability_add"
+	desc = "je_ut_new_dawn_outlaw_communists_ability_add_desc"
+
+	visible = {
+		has_variable = je_ut_new_dawn_outlaw_communists_done
+		NOT = {
+			has_modifier = je_ut_new_dawn_fascist_outlaw_communists_ability_mod
+		}
+	}
+
+	possible = {
+		NOT = {
+			custom_tooltip = {
+				text = ut_has_new_dawn_pressure_75
+				ut_has_new_dawn_pressure_core = {
+					VALUE = 75
+				}
+			}
+		}
+	}
+	
+	effect = {
+		custom_tooltip = {
+			text = ut_add_new_dawn_pressure_add_1
+			ut_add_new_dawn_pressure_points = {
+				VALUE = 1
+			}
+		}
+		add_modifier = {
+			name = je_ut_new_dawn_fascist_outlaw_communists_ability_mod
+		}
+	}
+}
+
+je_ut_new_dawn_outlaw_communists_ability_remove = {
+	name = "je_ut_new_dawn_outlaw_communists_ability_remove"
+	desc = "je_ut_new_dawn_outlaw_communists_ability_remove_desc"
+
+	visible = {
+		has_modifier = je_ut_new_dawn_fascist_outlaw_communists_ability_mod
+	}
+
+	possible = {
+		
+	}
+	
+	effect = {
+		remove_modifier = {
+			name = je_ut_new_dawn_fascist_outlaw_communists_ability_mod
+		}
+	}
+}
 
 je_ut_new_dawn_form_paramilitary_groups = {
 	name = "je_ut_new_dawn_form_paramilitary_groups"
@@ -99,6 +151,24 @@ je_ut_new_dawn_form_paramilitary_groups = {
 		set_variable = {
 			name = je_ut_new_dawn_form_paramilitary_groups_done
 		}
+
+		if = {
+			limit = {
+				is_ai = yes
+				NOT = { has_law_or_variant = law_type:law_outlawed_dissent }
+			}
+			if = {
+				limit = {
+					NOT = { currently_enacting_law ?= law_outlawed_dissent }
+					enacting_any_law = yes
+				}
+				cancel_enactment = yes
+			}
+			start_enactment = law_type:law_outlawed_dissent
+			add_enactment_modifier = {
+				name = agreeable_to_imposition
+			}
+		}
 	}
 }
 
@@ -126,6 +196,9 @@ je_ut_new_dawn_conformity = {
 				has_variable = je_ut_new_dawn_outlaw_communists_done
 				has_variable = je_ut_new_dawn_form_paramilitary_groups_done
 			}
+		}
+		OR = {
+			has_law_or_variant = law_type:law_outlawed_dissent
 		}
 		OR = {
 			has_law_or_variant = law_type:law_corporate_state

@@ -1,4 +1,4 @@
-# Based on Made Divided Monarchists by Victoria/Pacifica/AcresOfAsteraceae
+﻿# Based on Made Divided Monarchists by Victoria/Pacifica/AcresOfAsteraceae
 # Together with ideologies and hegemon mechanic from EU4 creatin New Dawn journal chapter.
 # 
 # Refer to comments here and in 02_french_monarchism to get an idea as to how this works.
@@ -452,6 +452,7 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 	set_variable = { name = ut_nd_fascist_progress_from_focus value = 0 }
 	set_variable = { name = ut_nd_fascist_progress_from_legitimacy value = root.government_legitimacy }
 	set_variable = { name = ut_nd_fascist_progress_from_events value = 0 }
+	
 	#From Characters
 	every_scope_character = {
 		limit = {
@@ -1080,6 +1081,25 @@ ut_new_dawn_common_pressure_progress_monthly = {
 					}
 				}
 			}
+		}
+		
+		if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+			}
+			change_variable = { name = je_ut_new_dawn_fascist_pressure_progress_from_journal_entry add = 1 }
+		}
+		if = {
+			limit = {
+				has_modifier = je_ut_new_dawn_fascist_outlaw_communists_mod
+			}
+			change_variable = { name = je_ut_new_dawn_fascist_pressure_progress_from_journal_entry add = -0.1 }
+		}
+		if = {
+			limit = {
+				has_modifier = je_ut_new_dawn_fascist_outlaw_communists_ability_mod
+			}
+			change_variable = { name = je_ut_new_dawn_fascist_pressure_progress_from_journal_entry add = 0.2 }
 		}
 	}
 }

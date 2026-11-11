@@ -444,6 +444,8 @@
  country_new_dawn_focus_selected_progress_desc: "Changes the gain of [concept_ut_nd_progress_points] towards selected Ideology."
  country_new_dawn_progress_points_progress: "[concept_ut_nd_progress_points] gain"
  country_new_dawn_progress_points_progress_desc: "Changes the gain of [concept_ut_nd_progress_points] for core Ideology."
+ country_new_dawn_pressure_progress: "[concept_ut_nd_pressure] Progress"
+ country_new_dawn_pressure_progress_desc: "Changes the gain of [concept_ut_nd_pressure] for the country."
 
  je_ut_new_dawn_critical_lower_bound_fail_tt: "Has #r [SCOPE.ScriptValue('new_dawn_ideology_critical_lower_bound')]#! [concept_ut_nd_progress_points]"
  je_ut_new_dawn_critical_lower_bound_fail_pressure_tt: "Has #r 50#! [concept_ut_nd_pressure] Pressure"
@@ -462,6 +464,7 @@
  je_ut_new_dawn_common_pressure_progress_from_war_support_tooltip: "Low $concept_war_support$ increase Pressure:\n <75%: 0.5 [concept_ut_nd_pressure]\n <50%: 1 [concept_ut_nd_pressure]\n <25%: 2 [concept_ut_nd_pressure]"
  je_ut_new_dawn_common_pressure_progress_from_insurrectionary_movement: "[Concept('concept_insurrection', 'insurrectionist')] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_insurrectionary_movement_tooltip $concept_political_movement$#!#!"
  je_ut_new_dawn_common_pressure_progress_from_insurrectionary_movement_tooltip: "Insurrectionary movements increase Pressure according to their [concept_political_movement_support]:\n>25%: 2 [concept_ut_nd_pressure]\n24-10%: 1 [concept_ut_nd_pressure]\n<10%: 0.5  [concept_ut_nd_pressure]"
+ je_ut_new_dawn_fascist_pressure_progress_from_journal_entry: "[concept_ut_nd_fascist_core] Journal Entry"
  je_ut_new_dawn_common_pressure_progress_from_high_radicalism_movement: "#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_high_radicalism_movement_tooltip $concept_political_movement$#!#! with [Concept('concept_activism', 'high activism')]"
  je_ut_new_dawn_common_pressure_progress_from_high_radicalism_movement_tooltip: "For each [concept_political_movement] with at least 50% [concept_activism]:\n[concept_activism] * ([concept_political_movement_support] / 25%)"
 

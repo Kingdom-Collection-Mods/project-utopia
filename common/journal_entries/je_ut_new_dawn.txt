@@ -1349,6 +1349,8 @@ je_ut_new_dawn_fascist = {
 	
 	# Anti-liberalism & anti-Marxism
 	scripted_button = je_ut_new_dawn_outlaw_communists
+	scripted_button = je_ut_new_dawn_outlaw_communists_ability_add
+	scripted_button = je_ut_new_dawn_outlaw_communists_ability_remove
 	# Militarism & cult of violence
 	scripted_button = je_ut_new_dawn_form_paramilitary_groups
 	# Leader principle
