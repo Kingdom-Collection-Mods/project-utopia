@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -663,7 +663,7 @@ l_english:
  je_ut_new_dawn_conformity: "Conformity"
  je_ut_new_dawn_conformity_desc: "Encourage strict social alignment with state ideals.\n\n#italic Historical Context:\nStarting in 1933, the Nazis implemented Gleichschaltung (\"coordination\"), a process of aligning all aspects of society—including media, education, culture, and religion—with Nazi ideology. Independent trade unions were banned on May 2, 1933, replaced by the state-run German Labor Front.\n\nA totalitarian, hierarchical model of society is one dimension of fascism.#!"
  je_ut_new_dawn_unite_heritage: "Unite Heritage"
- je_ut_new_dawn_unite_heritage_desc: "Create a shared national identity based on cultural myths and history.\n\n#italic Historical Context:#!\nThe Nazi regime promoted a mythic vision of Germanic history through organizations like the Ahnenerbe (founded in 1935), which spread pseudoscientific racial theories. Nazi education and propaganda glorified a supposed Aryan past to unite the population under an exclusionary, ethnonationalist identity.\n\nA culture-shaping, irrational, secular substitute religion is one dimension of fascism."
+ je_ut_new_dawn_unite_heritage_desc: "Create a shared national identity based on cultural myths and history.\n\n#italic Historical Context:\nThe Nazi regime promoted a mythic vision of Germanic history through organizations like the Ahnenerbe (founded in 1935), which spread pseudoscientific racial theories. Nazi education and propaganda glorified a supposed Aryan past to unite the population under an exclusionary, ethnonationalist identity.\n\nA culture-shaping, irrational, secular substitute religion is one dimension of fascism.#!"
  je_ut_new_dawn_unite_heritage_trigger_tt: "Todo"
  je_ut_new_dawn_volksgemeinschaft: "Us - not them."
  je_ut_new_dawn_volksgemeinschaft_desc: "Build a racially defined national community that excludes outsiders.\n\n#italic Historical Context:\nThe concept of Volksgemeinschaft (\"people's community\") was used from 1933 onward to promote unity among 'racially pure' Germans. It excluded Jews, Roma, disabled people, and others—setting the foundation for the Nuremberg Laws of 1935, which legalized antisemitism and institutionalized racial segregation.\nThis ideology laid the groundwork for systematic exclusion, culminating in the Holocaust, where over six million Jews, along with other marginalized groups, were murdered in a state-planned genocide.#!"
@@ -941,7 +941,7 @@ l_english:
  ut_ideology_conservative_movement_desc: "Conservative ideologies emphasize the preservation of traditional institutions, values, and practices. They advocate for gradual change and often prioritize stability, order, and continuity in society."
 
  ut_ideology_liberal_movement_modern: "$ideology_liberal_movement$"
- ut_ideology_liberal_movement_modern_desc: "$ideology_liberal_movement_desc$"
+ ut_ideology_liberal_movement_modern_desc: "$ideology_liberal_movement_desc$ (Modern)"
 
  ut_ideology_reactionary_movement_modern: "$ideology_reactionary_movement$"
  ut_ideology_reactionary_movement_modern_desc: "$ideology_reactionary_movement_desc$"
