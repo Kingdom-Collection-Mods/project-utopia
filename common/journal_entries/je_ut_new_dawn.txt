@@ -706,7 +706,10 @@ je_ut_new_dawn_democratic = {
 	immediate = {
 		save_scope_as = ut_new_dawn_core_country
 		every_country = {
-			limit = { is_player = yes }
+			limit = {
+				is_player = yes
+				NOT = { this = root }
+			}
 			trigger_event = { id = event_new_dawn.201 popup = yes }
 		}
 		ut_new_dawn_democrat_progress = yes
@@ -949,7 +952,10 @@ je_ut_new_dawn_democratic = {
 
 			save_scope_as = ut_new_dawn_core_country
 			every_country = {
-				limit = { is_player = yes }
+				limit = {
+					is_player = yes
+					NOT = { this = root }
+				}
 				trigger_event = { id = event_new_dawn.211 popup = yes }
 			}
 			if = {
@@ -1026,7 +1032,10 @@ je_ut_new_dawn_autocratic = {
 	immediate = {
 		save_scope_as = ut_new_dawn_core_country
 		every_country = {
-			limit = { is_player = yes }
+			limit = {
+				is_player = yes
+				NOT = { this = root }
+			}
 			trigger_event = { id = event_new_dawn.202 popup = yes }
 		}
 		ut_new_dawn_autocrat_progress = yes
@@ -1221,7 +1230,10 @@ je_ut_new_dawn_autocratic = {
 
 			save_scope_as = ut_new_dawn_core_country
 			every_country = {
-				limit = { is_player = yes }
+				limit = {
+					is_player = yes
+					NOT = { this = root }
+				}
 				trigger_event = { id = event_new_dawn.212 popup = yes }
 			}
 			if = {
@@ -1281,7 +1293,10 @@ je_ut_new_dawn_fascist = {
 	immediate = {
 		save_scope_as = ut_new_dawn_core_country
 		every_country = {
-			limit = { is_player = yes }
+			limit = {
+				is_player = yes
+				NOT = { this = root }
+			}
 			trigger_event = { id = event_new_dawn.203 popup = yes }
 		}
 		ut_new_dawn_fascist_progress = yes
@@ -1522,7 +1537,10 @@ je_ut_new_dawn_fascist = {
 
 			save_scope_as = ut_new_dawn_core_country
 			every_country = {
-				limit = { is_player = yes }
+				limit = {
+					is_player = yes
+					NOT = { this = root }
+				}
 				trigger_event = { id = event_new_dawn.213 popup = yes }
 			}
 			if = {
@@ -1591,7 +1609,10 @@ je_ut_new_dawn_communist = {
 	immediate = {
 		save_scope_as = ut_new_dawn_core_country
 		every_country = {
-			limit = { is_player = yes }
+			limit = {
+				is_player = yes
+				NOT = { this = root }
+			}
 			trigger_event = { id = event_new_dawn.204 popup = yes }
 		}
 		ut_new_dawn_communist_progress = yes
@@ -1784,7 +1805,10 @@ je_ut_new_dawn_communist = {
 
 			save_scope_as = ut_new_dawn_core_country
 			every_country = {
-				limit = { is_player = yes }
+				limit = {
+					is_player = yes
+					NOT = { this = root }
+				}
 				trigger_event = { id = event_new_dawn.214 popup = yes }
 			}
 			if = {
