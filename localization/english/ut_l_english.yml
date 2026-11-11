@@ -1374,6 +1374,10 @@
  ut_add_new_dawn_p1_progress_communist_neg_5: "Loses #r 5#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
  ut_add_new_dawn_p1_progress_fascist_neg_5: "Loses #r 5#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
 
+ ut_add_new_dawn_p1_progress_communist_30: "Gains #b 30#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_democrat_30: "Gains #b 30#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_autocrat_30: "Gains #b 30#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_p1_progress_fascist_30: "Gains #b 30#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
  ut_add_new_dawn_p1_progress_communist_neg_10: "Loses #r 10#! [concept_ut_nd_communist_core] [concept_ut_nd_progress_points]"
  ut_add_new_dawn_p1_progress_democrat_neg_10: "Loses #r 10#! [concept_ut_nd_democrat_core] [concept_ut_nd_progress_points]"
  ut_add_new_dawn_p1_progress_autocrat_neg_10: "Loses #r 10#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"

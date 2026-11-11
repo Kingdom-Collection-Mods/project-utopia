@@ -491,6 +491,71 @@ event_new_dawn.3 = {
 	}
 }
 
+
+# Core ideology loss: choose which ideology to strengthen
+event_new_dawn.4 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.4.t
+	desc = event_new_dawn.4.d
+	flavor = event_new_dawn.4.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = event_new_dawn.4.o.democrat
+		custom_tooltip = ut_add_new_dawn_p1_progress_democrat_30
+		je:je_ut_new_dawn = {
+			add_progress = {
+				value = 30
+				name = ut_new_dawn_democrat_bar
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.4.o.autocrat
+		custom_tooltip = ut_add_new_dawn_p1_progress_autocrat_30
+		je:je_ut_new_dawn = {
+			add_progress = {
+				value = 30
+				name = ut_new_dawn_autocrat_bar
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.4.o.fascist
+		custom_tooltip = ut_add_new_dawn_p1_progress_fascist_30
+		je:je_ut_new_dawn = {
+			add_progress = {
+				value = 30
+				name = ut_new_dawn_fascist_bar
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn.4.o.communist
+		custom_tooltip = ut_add_new_dawn_p1_progress_communist_30
+		je:je_ut_new_dawn = {
+			add_progress = {
+				value = 30
+				name = ut_new_dawn_communist_bar
+			}
+		}
+	}
+	option = {
+		default_option = yes
+		name = event_new_dawn.4.o.neutral
+	}
+}
+
 # Armed Forces
 event_new_dawn.11 = {
 	type = country_event
@@ -4545,65 +4610,6 @@ event_new_dawn.214 = {
 	}
 }
 
-# Core ideology loss: choose which ideology to strengthen
-event_new_dawn.4 = {
-	type = country_event
-	placement = ROOT
-	title = event_new_dawn.4.t
-	desc = event_new_dawn.4.d
-	flavor = event_new_dawn.4.f
-
-	event_image = {
-		video = "unspecific_world_fair"
-	}
-
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	duration = 3
-
-	option = {
-		name = event_new_dawn.4.o.democrat
-		je:je_ut_new_dawn = {
-			add_progress = {
-				value = 30
-				name = ut_new_dawn_democrat_bar
-			}
-		}
-	}
-
-	option = {
-		name = event_new_dawn.4.o.autocrat
-		je:je_ut_new_dawn = {
-			add_progress = {
-				value = 30
-				name = ut_new_dawn_autocrat_bar
-			}
-		}
-	}
-
-	option = {
-		name = event_new_dawn.4.o.fascist
-		je:je_ut_new_dawn = {
-			add_progress = {
-				value = 30
-				name = ut_new_dawn_fascist_bar
-			}
-		}
-	}
-
-	option = {
-		name = event_new_dawn.4.o.communist
-		je:je_ut_new_dawn = {
-			add_progress = {
-				value = 30
-				name = ut_new_dawn_communist_bar
-			}
-		}
-	}
-	option = {
-		default_option = yes
-		name = event_new_dawn.4.o.neutral
-	}
-}
 
 #Phase 1 Cheat
 event_new_dawn.998 = {
