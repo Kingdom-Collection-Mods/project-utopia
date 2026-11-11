@@ -10,6 +10,9 @@ concept_ut_nd_abilities = {
 	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds"
 	is_loading_tip = yes
 }
+concept_ut_nd_progress = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_progress_points.dds"
+}
 concept_ut_nd_progress_points = {
 	texture = "gfx/interface/icons/new_dawn_icons/ut_progress_points.dds"
 	is_loading_tip = yes
