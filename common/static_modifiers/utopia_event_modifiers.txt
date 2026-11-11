@@ -1,4 +1,4 @@
-# Diesel Tractors
+﻿# Diesel Tractors
 agricultural_mechanization = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	building_rye_farm_throughput_add = 0.15
@@ -389,6 +389,13 @@ je_ut_new_dawn_suppress_dissidents_rural_folk_mod = {
 je_ut_new_dawn_suppress_dissidents_trade_unions_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	interest_group_ig_trade_unions_pol_str_mult = -0.5
+}
+
+je_ut_new_dawn_fascist_outlaw_communists_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	state_pop_support_movement_communist_mult = -0.05
+	state_pop_support_movement_anarchist_mult = -0.05
+	state_pop_support_movement_socialist_mult = -0.05
 }
 
 ut_released_colony = {

@@ -1,4 +1,4 @@
-je_ut_new_dawn = {
+﻿je_ut_new_dawn = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
@@ -1171,19 +1171,41 @@ je_ut_new_dawn_autocratic = {
 		color = "blue_negative"
 		conclusion_desc = je_standard_failure_conclusion_desc
 		trigger = {
-			custom_tooltip = {
-				text = je_ut_new_dawn_critical_lower_bound_fail_tt
-				je:je_ut_new_dawn_autocratic = {
-					"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" <= new_dawn_ideology_critical_lower_bound
-				}
-			}
+			OR = {
+				AND = {
+					custom_tooltip = {
+						text = je_ut_new_dawn_critical_lower_bound_fail_tt
+						je:je_ut_new_dawn_autocratic = {
+							"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" <= new_dawn_ideology_critical_lower_bound
+						}
+					}
 
-			custom_tooltip = {
-				text = je_ut_new_dawn_critical_lower_bound_fail_pressure_tt
-				OR = {
-					is_ai = yes
-					je:je_ut_new_dawn_autocratic = {
-						"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" > 50
+					custom_tooltip = {
+						text = je_ut_new_dawn_critical_lower_bound_fail_pressure_tt
+						OR = {
+							is_ai = yes
+							je:je_ut_new_dawn_autocratic = {
+								"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" >= 50
+							}
+						}
+					}
+				}
+				AND = {
+					custom_tooltip = {
+						text = je_ut_new_dawn_critical_high_pressure_fail_tt
+						je:je_ut_new_dawn_autocratic = {
+							"scripted_bar_progress(je_ut_new_dawn_autocratic_points_bar)" < 25
+						}
+					}
+
+					custom_tooltip = {
+						text = je_ut_new_dawn_critical_high_pressure_fail_pressure_tt
+						OR = {
+							is_ai = yes
+							je:je_ut_new_dawn_autocratic = {
+								"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" >= 100
+							}
+						}
 					}
 				}
 			}
@@ -1192,6 +1214,12 @@ je_ut_new_dawn_autocratic = {
 			remove_modifier = je_ut_new_dawn_autocrat_focus
 			remove_modifier = ut_new_dawn_core_autocratic_mod
 			remove_variable = ut_new_dawn_bar_freeze
+
+			save_scope_as = ut_new_dawn_core_country
+			every_country = {
+				limit = { is_player = yes }
+				trigger_event = { id = event_new_dawn.212 popup = yes }
+			}
 
 			hidden_effect = {
 				remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
@@ -1490,7 +1518,11 @@ je_ut_new_dawn_fascist = {
 				trigger_event = { id = event_new_dawn.213 popup = yes }
 			}
 
+			remove_modifier = je_ut_new_dawn_fascist_outlaw_communists_mod
+
 			hidden_effect = {
+				remove_variable = je_ut_new_dawn_outlaw_communists_done
+
 				remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
 				remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
 				remove_modifier = ut_new_dawn_core_internal_bad_times_focus_mod

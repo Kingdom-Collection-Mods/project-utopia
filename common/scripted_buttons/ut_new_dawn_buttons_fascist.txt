@@ -17,7 +17,20 @@ je_ut_new_dawn_outlaw_communists = {
 				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_required_points
 			}
 		}
-		has_law = law_type:law_single_party_state
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			NOT = {
+				has_law_or_variant = law_type:law_census_voting
+				has_law_or_variant = law_type:law_universal_suffrage
+				has_law_or_variant = law_type:law_anarchy
+				has_law_or_variant = law_type:law_labor_suffrage
+			}
+		}
+		trigger_else = {
+			has_law_or_variant = law_type:law_single_party_state
+		}
 	}
 
 	effect = {
@@ -27,8 +40,29 @@ je_ut_new_dawn_outlaw_communists = {
 				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
 			}
 		}
+		add_modifier = {
+			name = je_ut_new_dawn_fascist_outlaw_communists_mod
+		}
 		set_variable = {
 			name = je_ut_new_dawn_outlaw_communists_done
+		}
+
+		if = {
+			limit = {
+				is_ai = yes
+				NOT = { has_law_or_variant = law_type:law_single_party_state }
+			}
+			if = {
+				limit = {
+					NOT = { currently_enacting_law ?= imposed_law }
+					enacting_any_law = yes
+				}
+				cancel_enactment = yes
+			}
+			start_enactment = law_type:law_single_party_state
+			add_enactment_modifier = {
+				name = agreeable_to_imposition
+			}
 		}
 	}
 }
@@ -52,7 +86,7 @@ je_ut_new_dawn_form_paramilitary_groups = {
 				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_required_points
 			}
 		}
-		has_law = law_type:law_secret_police
+		has_law_or_variant = law_type:law_secret_police
 	}
 
 	effect = {
@@ -94,8 +128,11 @@ je_ut_new_dawn_conformity = {
 			}
 		}
 		OR = {
-			has_law = law_type:law_corporate_state
-			has_law = law_type:ut_law_monarchy_corporate_state
+			has_law_or_variant = law_type:law_corporate_state
+			has_law_or_variant = law_type:ut_law_monarchy_corporate_state
+			
+			has_law_or_variant = law_type:law_autocracy
+			has_law_or_variant = law_type:law_oligarchy
 		}
 		#todo corporate nazi state or smth
 	}
@@ -177,7 +214,7 @@ je_ut_new_dawn_unite_heritage = {
 
 		custom_tooltip = {
 			text = je_ut_new_dawn_unite_heritage_trigger_tt
-			has_law = law_type:law_censorship
+			has_law_or_variant = law_type:law_censorship
 			NOT = {
 				any_state = {
 					is_homeland_of_country_cultures = c:SWE
@@ -227,8 +264,8 @@ je_ut_new_dawn_volksgemeinschaft = {
 		}
 		
 		OR = {
-			has_law = law_type:law_ethnostate
-			has_law = law_type:law_neo_ethno_state
+			has_law_or_variant = law_type:law_ethnostate
+			has_law_or_variant = law_type:law_neo_ethno_state
 		}
 	}
 
