@@ -1,4 +1,4 @@
-namespace = event_new_dawn_fascist
+﻿namespace = event_new_dawn_fascist
 
 #Journal Entries core direct trigger events 1-99
 #New Dawn start

@@ -1,4 +1,4 @@
-namespace = event_new_dawn
+﻿namespace = event_new_dawn
 
 #Journal Entries core direct trigger events 1-99
 #New Dawn start
