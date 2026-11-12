@@ -540,7 +540,8 @@ pm_electronics_circuits_process = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_explosives_add = 10 
+			goods_input_explosives_add = 8 
+			goods_input_copper_add = 2 
 			goods_input_electricity_add = 15
 			
 			# output goods
@@ -574,7 +575,8 @@ pm_electronics_transistors_process = {
 		workforce_scaled = {
 			# input goods
 			goods_input_plastic_add = 10
-			goods_input_explosives_add = 35
+			goods_input_explosives_add = 30
+			goods_input_copper_add = 5
 			goods_input_electricity_add = 30
 			
 			# output goods
@@ -609,7 +611,8 @@ pm_electronics_micro_chips_process = {
 		workforce_scaled = {
 			# input goods
 			goods_input_plastic_add = 15
-			goods_input_explosives_add = 30
+			goods_input_explosives_add = 25
+			goods_input_copper_add = 5
 			goods_input_rare_earths_add = 10
 			goods_input_electricity_add = 40
 			
@@ -641,7 +644,8 @@ pm_computers_electromechanical_process = {
 		workforce_scaled = {
 			# input goods
 			goods_input_electricity_add = 10
-			goods_input_explosives_add = 10 
+			goods_input_explosives_add = 8 
+			goods_input_copper_add = 2
 			goods_input_heavy_machinery_add = 1
 			
 			# output goods
