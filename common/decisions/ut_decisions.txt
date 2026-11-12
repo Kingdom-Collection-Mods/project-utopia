@@ -1,4 +1,4 @@
-ut_tech_preview_cheat_research = {
+﻿ut_tech_preview_cheat_research = {
 	is_shown = {
 		is_player = yes
 		NOT = { has_global_variable = ut_tech_preview_cheat_disable }
@@ -917,5 +917,18 @@ ut_new_dawn_fascist_raid = {
 	}
 	when_taken = {
 		# Implement the effects of the fascist raid here
+	}
+}
+
+ut_law_forced_laborers_enact = {
+	is_shown = {
+		is_player = yes
+	}
+	
+	possible = {
+	}
+
+	when_taken = {
+		enact_law = law_type:ut_law_forced_laborers
 	}
 }

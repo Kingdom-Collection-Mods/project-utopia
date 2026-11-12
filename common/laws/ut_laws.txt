@@ -197,7 +197,6 @@ law_private_universities = {
 	}
 }
 
-
 law_compulsory_secondary_school = {
 	group = lawgroup_childrens_rights
 
@@ -285,7 +284,6 @@ law_compulsory_tertiary_school = {
 		}
 	}
 }
-
 
 law_social_market_economy = {
 	group = lawgroup_economic_system
@@ -1760,6 +1758,93 @@ ut_law_international_navy = {
 	# AI will never return to merchant navy
 	ai_will_do = {
 		always = no
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+	}
+}
+
+ut_law_forced_laborers = {
+	group = lawgroup_slavery
+	parent = law_slave_trade
+
+	progressiveness = -100
+
+	icon = "gfx/interface/icons/law_icons/slave_trade.dds"
+
+	disallowing_laws = {
+		law_cultural_exclusion
+		law_multicultural
+		law_multicultural_globalism
+		law_affirmative_action
+	}
+
+	on_activate = {
+		set_variable = {
+			name = slavery_recently_enacted
+			value = yes
+			days = 1825
+		}
+		if = {
+			limit = { has_variable = slavery_recently_abolished }
+			custom_tooltip = {
+				text = enslave_discriminated_farm_workers_tt
+				every_scope_state = {
+					limit = { has_variable = former_slave_state }
+					enslave_discriminated_farm_workers = yes
+				}
+			}
+			remove_variable = slavery_recently_abolished
+			every_scope_state = {
+				remove_variable = former_slave_state
+			}
+		}
+
+		ig:ig_landowners ?= {
+			switch_from_colonial_slavery_to_pro_slavery = yes
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					any_political_movement = {
+						is_political_movement_type = movement_pro_slavery
+						has_core_ideology = ideology:ideology_pro_slavery_colonial_movement
+					}
+				}
+				random_political_movement = {
+					limit = {
+						is_political_movement_type = movement_pro_slavery
+						has_core_ideology = ideology:ideology_pro_slavery_colonial_movement
+					}
+					set_core_ideology = ideology_pro_slavery_movement
+				}
+			}
+		}
+	}
+
+	can_enact = {
+		has_variable = je_ut_new_dawn_conformity_done
+	}
+
+	modifier = {
+		interest_group_ig_industrialists_pol_str_mult = 0.25
+		state_non_homeland_mortality_mult = 0.1
+		country_influence_mult = -0.25 #Balance for all the economic benefits coming with slavery PMs
+	}
+
+	ai_will_do = {
+		has_modifier = ut_new_dawn_core_fascist_mod
+		exists = ruler
+		ruler = {
+			has_ideology = ideology:ut_ideology_national_socialist_leader
+		}
 	}
 
 	ai_enact_weight_modifier = { #Petitions
