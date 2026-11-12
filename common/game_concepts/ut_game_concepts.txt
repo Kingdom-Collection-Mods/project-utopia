@@ -40,6 +40,19 @@ concept_ut_nd_democrat_core = {
 concept_ut_nd_fascist_core = {
 	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds"
 }
+
+concept_ut_new_dawn_fascist_petty_vs_big_bourgeoisie = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds"
+}
+
+concept_ut_nd_fascist_petty_bourgeoisie = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds"
+}
+
+concept_ut_nd_fascist_industrialists = {
+	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds"
+}
+
 concept_ut_nd_communist_core = {
 	texture = "gfx/interface/icons/new_dawn_icons/ut_nd_communist.dds"
 }

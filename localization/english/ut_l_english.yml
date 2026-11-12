@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -598,6 +598,30 @@ l_english:
  je_ut_new_dawn_democratic_reason: "The people demand participation, transparency, and free elections. Across the country, new parties are forming, trade unions are gaining influence, and protests for civil rights are filling the streets. \n Whether this awakening leads to a stable democracy or is crushed by the old elites is now in your hands. Will you allow reform - or try to preserve the old order by any means necessary?\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n #italic - [Concept('concept_ut_nd_democrat_core', 'Democratic')] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_points_bar: "Progress Points"
  je_ut_new_dawn_points_bar_desc: "Progress Points: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
+
+ je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar: "Petty vs Big Bourgeoisie"
+ je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar_desc: "@petty_bourgeoisie!@urbanists!@trade_unions!@rural_folk! Petty Bourgeoisie"
+ je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar_second_desc: "Industrialists @industrialists!"
+ je_ut_new_dawn_fascist_petty_bourgeoisie_powerful_progress: "[concept_ut_nd_fascist_petty_bourgeoisie] are [concept_powerful] and [concept_ut_nd_fascist_industrialists] are not"
+ je_ut_new_dawn_fascist_industrialist_powerful_progress: "[concept_ut_nd_fascist_industrialists] are [concept_powerful] and [concept_ut_nd_fascist_petty_bourgeoisie] are not"
+ je_ut_new_dawn_fascist_petty_bourgeoisie_in_government_progress: "[GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetNameWithCountryVariant] are in [concept_government]"
+ je_ut_new_dawn_fascist_urbanists_in_government_progress: "[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant] are in [concept_government]"
+ je_ut_new_dawn_fascist_trade_unions_in_government_progress: "[GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] are in [concept_government]"
+ je_ut_new_dawn_fascist_rural_folk_in_government_progress: "[GetInterestGroupVariant('ig_rural_folk',GetPlayer).GetNameWithCountryVariant] are in [concept_government]"
+ je_ut_new_dawn_fascist_industrialist_in_government_progress: "[GetInterestGroupVariant('ig_industrialists',GetPlayer).GetNameWithCountryVariant] are in [concept_government]"
+
+ ut_new_dawn_fascist_petty_vs_big_bourgeoisie_status_unclear: "[concept_ut_nd_fascist_petty_bourgeoisie] and [concept_ut_nd_fascist_industrialists] [concept_ut_new_dawn_fascist_petty_vs_big_bourgeoisie]"
+ ut_new_dawn_fascist_petty_bourgeoisie_in_power: "[concept_ut_nd_fascist_petty_bourgeoisie] in [Concept('concept_ut_new_dawn_fascist_petty_vs_big_bourgeoisie', 'Power')]"
+ ut_new_dawn_fascist_big_bourgeoisie_in_power: "[concept_ut_nd_fascist_industrialists] in [Concept('concept_ut_new_dawn_fascist_petty_vs_big_bourgeoisie', 'Power')]"
+
+ concept_ut_new_dawn_fascist_petty_vs_big_bourgeoisie: "Fight over Power"
+ concept_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_desc: "While [concept_ut_nd_fascist_petty_bourgeoisie] and [concept_ut_nd_fascist_industrialists] vie for influence, infighting will weaken the movements powers. Both groups will push for their agendas."
+
+ concept_ut_nd_fascist_petty_bourgeoisie: "Petty Bourgeoisie"
+ concept_ut_nd_fascist_petty_bourgeoisie_desc: "Petty Bourgeoisie are represented by [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetNameWithCountryVariant], [GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant], [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] and [GetInterestGroupVariant('ig_rural_folk',GetPlayer).GetNameWithCountryVariant].\n\nWhen in power, they will push for repressions against minorities and less influential groups within society."
+ concept_ut_nd_fascist_industrialists: "Industrialists"
+ concept_ut_nd_fascist_industrialists_desc: "Industrialists are represented by [GetInterestGroupVariant('ig_industrialists',GetPlayer).GetNameWithCountryVariant].\n\nWhen in power, they will want to expand the nation's territory to exploit more resources and raise more forced laborers."
+ 
  concept_ut_nd_progress: "Progress"
  concept_ut_nd_progress_desc: "Progress represents the advancement of an ideology within your nation."
  concept_ut_nd_progress_points: "Progress Points"

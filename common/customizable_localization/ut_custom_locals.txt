@@ -1,4 +1,4 @@
-ut_new_dawn_progress_trend = {
+﻿ut_new_dawn_progress_trend = {
 	type = country
 	random_valid = no
 
@@ -444,6 +444,33 @@ ut_new_dawn_pressure_status = {
 	}	
 	text = {
 		localization_key = ut_new_dawn_pressure_status_good
+	}
+}
+
+ut_new_dawn_fascist_petty_vs_big_bourgeoisie_status = {
+	type = country
+	random_valid = no
+	
+	text = {
+		trigger = {
+			je:je_ut_new_dawn_fascist = {
+				"scripted_bar_progress(je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar)" <= -25
+			}
+		}
+
+		localization_key = ut_new_dawn_fascist_petty_bourgeoisie_in_power
+	}
+	text = {
+		trigger = {
+			je:je_ut_new_dawn_fascist = {
+				"scripted_bar_progress(je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar)" >= 25
+			}
+		}
+
+		localization_key = ut_new_dawn_fascist_big_bourgeoisie_in_power
+	}
+	text = {
+		localization_key = ut_new_dawn_fascist_petty_vs_big_bourgeoisie_status_unclear
 	}
 }
 

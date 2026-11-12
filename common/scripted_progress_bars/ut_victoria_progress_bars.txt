@@ -895,6 +895,133 @@ je_ut_new_dawn_fascist_points_bar = {
 	max_value = 100 # new_dawn_core_upper_bound
 }
 
+je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar = {
+	name = "je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar"
+	desc = "je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar_desc"
+	second_desc = "je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar_second_desc"
+
+	progress_texture = "gfx/interface/progressbar/progressbar_default.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_gold.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_default_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_default_glow_line.dds"
+	marker = yes
+	#left_icon = "gfx/interface/progressbar/twospains_radicalism_marker.dds"
+	#right_icon = "gfx/interface/progressbar/twospains_conservatism_marker.dds"
+
+	monthly_progress = {
+		
+		progress_condition = {
+			limit = {
+				OR = {
+					ig:ig_petty_bourgeoisie ?= {
+						is_powerful = yes
+					}
+					ig:ig_urbanists ?= {
+						is_powerful = yes
+					}
+					ig:ig_trade_unions ?= {
+						is_powerful = yes
+					}
+					ig:ig_rural_folk ?= {
+						is_powerful = yes
+					}
+				}
+				ig:ig_industrialists ?= {
+					is_powerful = no
+				}
+			}
+			add = {
+				desc = "je_ut_new_dawn_fascist_petty_bourgeoisie_powerful_progress"
+				value = -0.5
+			}
+		}
+
+		progress_condition = {
+			limit = {
+				ig:ig_petty_bourgeoisie ?= {
+					is_in_government = yes
+				}
+			}
+			add = {
+				desc = "je_ut_new_dawn_fascist_petty_bourgeoisie_in_government_progress"
+				value = -0.5
+			}
+		}
+		progress_condition = {
+			limit = {
+				ig:ig_urbanists ?= {
+					is_in_government = yes
+				}
+			}
+			add = {
+				desc = "je_ut_new_dawn_fascist_urbanists_in_government_progress"
+				value = -0.5
+			}
+		}
+		progress_condition = {
+			limit = {
+				ig:ig_rural_folk ?= {
+					is_in_government = yes
+				}
+			}
+			add = {
+				desc = "je_ut_new_dawn_fascist_rural_folk_in_government_progress"
+				value = -0.5
+			}
+		}
+		progress_condition = {
+			limit = {
+				ig:ig_trade_unions ?= {
+					is_in_government = yes
+				}
+			}
+			add = {
+				desc = "je_ut_new_dawn_fascist_trade_unions_in_government_progress"
+				value = -0.5
+			}
+		}
+		
+		progress_condition = {
+			limit = {
+				ig:ig_industrialists ?= {
+					is_in_government = yes
+				}
+			}
+			add = {
+				desc = "je_ut_new_dawn_fascist_industrialist_in_government_progress"
+				value = 1
+			}
+		}
+		progress_condition = {
+			limit = {
+				ig:ig_petty_bourgeoisie ?= {
+					is_powerful = no
+				}
+				ig:ig_urbanists ?= {
+					is_powerful = no
+				}
+				ig:ig_trade_unions ?= {
+					is_powerful = no
+				}
+				ig:ig_rural_folk ?= {
+					is_powerful = no
+				}
+				ig:ig_industrialists ?= {
+					is_powerful = yes
+				}
+			}
+			add = {
+				desc = "je_ut_new_dawn_fascist_industrialist_powerful_progress"
+				value = 0.5
+			}
+		}
+	}
+
+	start_value = 0
+	min_value = -25 #Kleinbürger
+	max_value = 25 #Großbürger
+}
+
 je_ut_new_dawn_communist_points_bar = {
 	name = "je_ut_new_dawn_points_bar"
 	desc = "je_ut_new_dawn_points_bar_desc"
