@@ -1,4 +1,4 @@
-﻿ut_new_dawn_progress_trend = {
+ut_new_dawn_progress_trend = {
 	type = country
 	random_valid = no
 
@@ -278,7 +278,7 @@ ut_new_dawn_phase_1_trend_focus = {
 			has_modifier = je_ut_new_dawn_democrat_focus
 		}
 
-		localization_key = concept_ut_nd_democrat_core
+		localization_key = concept_ut_nd_democrat_core_loc
 	}
 	
 	text = {
@@ -286,7 +286,7 @@ ut_new_dawn_phase_1_trend_focus = {
 			has_modifier = je_ut_new_dawn_fascist_focus
 		}
 
-		localization_key = concept_ut_nd_fascist_core
+		localization_key = concept_ut_nd_fascist_core_loc
 	}
 	
 	text = {
@@ -294,7 +294,7 @@ ut_new_dawn_phase_1_trend_focus = {
 			has_modifier = je_ut_new_dawn_communist_focus
 		}
 
-		localization_key = concept_ut_nd_communist_core
+		localization_key = concept_ut_nd_communist_core_loc
 	}
 	
 	text = {
@@ -302,7 +302,7 @@ ut_new_dawn_phase_1_trend_focus = {
 			has_modifier = je_ut_new_dawn_autocrat_focus
 		}
 
-		localization_key = concept_ut_nd_autocrat_core
+		localization_key = concept_ut_nd_autocrat_core_loc
 	}
 
 	text = {
