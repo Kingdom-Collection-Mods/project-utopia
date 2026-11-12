@@ -703,6 +703,8 @@
  je_ut_new_dawn_form_paramilitary_groups_effect_tt: "Enables: $ut_new_dawn_fascist_raid$"
  ut_new_dawn_fascist_raid: "Fascist Raid"
  ut_new_dawn_fascist_raid_desc: "Todo..."
+ je_ut_new_dawn_conformity_effect_tt: "Enables: Einsatz Hilfs Polizei. Event: Röhm Putsch"
+ je_ut_new_dawn_volksgemeinschaft_effect_tt: "Enables: Political Education. Event: Novemberpogrom"
 
  je_ut_new_dawn_conformity: "Conformity"
  je_ut_new_dawn_conformity_desc: "Encourage strict social alignment with state ideals.\n\n#italic Historical Context:\nStarting in 1933, the Nazis implemented Gleichschaltung (\"coordination\"), a process of aligning all aspects of society—including media, education, culture, and religion—with Nazi ideology. Independent trade unions were banned on May 2, 1933, replaced by the state-run German Labor Front.\n\nA totalitarian, hierarchical model of society is one dimension of fascism.#!"
