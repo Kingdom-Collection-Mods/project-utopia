@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -621,13 +621,17 @@
  ut_new_dawn_fascist_petty_bourgeoisie_in_power: "[concept_ut_nd_fascist_petty_bourgeoisie] in [Concept('concept_ut_new_dawn_fascist_petty_vs_big_bourgeoisie', 'Power')]"
  ut_new_dawn_fascist_big_bourgeoisie_in_power: "[concept_ut_nd_fascist_industrialists] in [Concept('concept_ut_new_dawn_fascist_petty_vs_big_bourgeoisie', 'Power')]"
 
+ je_ut_new_dawn_fascist_petty_bourgeoisie_in_power_mod: "Bourgeoisie in Power"
+ je_ut_new_dawn_fascist_big_bourgeoisie_in_power_mod: "Industrialists in Power"
+ je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_mod: "Fight over Power"
+
  concept_ut_new_dawn_fascist_petty_vs_big_bourgeoisie: "Fight over Power"
- concept_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_desc: "While [concept_ut_nd_fascist_petty_bourgeoisie] and [concept_ut_nd_fascist_industrialists] vie for influence, infighting will weaken the movements powers. Both groups will push for their agendas."
+ concept_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_desc: "While [concept_ut_nd_fascist_petty_bourgeoisie] and [concept_ut_nd_fascist_industrialists] vie for influence, infighting will weaken the movements powers. Both groups will push for their agendas.\n\nModifiers:\n[GetStaticModifier('je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_mod').GetDesc]"
 
  concept_ut_nd_fascist_petty_bourgeoisie: "Petty Bourgeoisie"
- concept_ut_nd_fascist_petty_bourgeoisie_desc: "Petty Bourgeoisie are represented by [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetNameWithCountryVariant], [GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant], [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] and [GetInterestGroupVariant('ig_rural_folk',GetPlayer).GetNameWithCountryVariant].\n\nWhen in power, they will push for repressions against minorities and less influential groups within society."
+ concept_ut_nd_fascist_petty_bourgeoisie_desc: "Petty Bourgeoisie are represented by [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetNameWithCountryVariant], [GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant], [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] and [GetInterestGroupVariant('ig_rural_folk',GetPlayer).GetNameWithCountryVariant].\n\nWhen in power, they will push for repressions against minorities and less influential groups within society.\n\nModifiers:\n[GetStaticModifier('je_ut_new_dawn_fascist_petty_bourgeoisie_in_power_mod').GetDesc]"
  concept_ut_nd_fascist_industrialists: "Industrialists"
- concept_ut_nd_fascist_industrialists_desc: "Industrialists are represented by [GetInterestGroupVariant('ig_industrialists',GetPlayer).GetNameWithCountryVariant].\n\nWhen in power, they will want to expand the nation's territory to exploit more resources and raise more forced laborers."
+ concept_ut_nd_fascist_industrialists_desc: "Industrialists are represented by [GetInterestGroupVariant('ig_industrialists',GetPlayer).GetNameWithCountryVariant].\n\nWhen in power, they will want to expand the nation's territory to exploit more resources and raise more forced laborers.\n\nModifiers:\n[GetStaticModifier('je_ut_new_dawn_fascist_big_bourgeoisie_in_power_mod').GetDesc]"
  
  concept_ut_nd_progress: "Progress"
  concept_ut_nd_progress_desc: "Progress represents the advancement of an ideology within your nation."
@@ -702,11 +706,16 @@
  
  je_ut_new_dawn_outlaw_communists: "Outlaw Communists"
  je_ut_new_dawn_outlaw_communists_desc: "Crack down on leftist movements and ban communist parties.\n\n#italic Historical Context:\nOn February 28, 1933, following the Reichstag Fire, the Nazis passed the Reichstag Fire Decree, suspending civil liberties and allowing the arrest of thousands of communists. The KPD (Communist Party of Germany) was soon outlawed, marking the first step in dismantling political opposition. Which 4 months later was followed by the ban of the SPD (Social Democratic Party) and another month later all parties were banned; dismantling democracy.\n\nThe claim to totality is one dimension of fascism.#!"
+ je_ut_new_dawn_fascist_outlaw_communists_mod: "$je_ut_new_dawn_outlaw_communists$"
  je_ut_new_dawn_outlaw_communists_ability_add: "Political Cleansing"
  je_ut_new_dawn_outlaw_communists_ability_remove: "#g Political Cleansing#!"
  je_ut_new_dawn_fascist_outlaw_communists_ability_mod: "$je_ut_new_dawn_outlaw_communists_ability_add$"
  je_ut_new_dawn_form_paramilitary_groups: "Paramilitary Groups"
  je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant organizations to enforce party rule.\n\n#italic Historical Context:\nThe Sturmabteilung, active since the 1920s, grew into a powerful paramilitary force by the early 1930s, intimidating voters and disrupting opposition meetings. On June 30, 1934, during the Night of the Long Knives, Hitler purged the SA leadership to consolidate power, elevating the more ideologically driven Schutzstaffel.\n\nA party organization modeled on the military is one dimension of fascism.#!"
+ je_ut_new_dawn_fascist_form_paramilitary_groups_mod: "$je_ut_new_dawn_form_paramilitary_groups$"
+ je_ut_new_dawn_fascist_form_paramilitary_groups_ability_add: "Paramilitary Raids"
+ je_ut_new_dawn_fascist_form_paramilitary_groups_ability_remove: "#g Paramilitary Raids#!"
+ je_ut_new_dawn_fascist_form_paramilitary_groups_ability_mod: "$je_ut_new_dawn_form_paramilitary_groups_ability_add$"
  je_ut_new_dawn_form_paramilitary_groups_effect_tt: "Enables: $ut_new_dawn_fascist_raid$"
  ut_new_dawn_fascist_raid: "Fascist Raid"
  ut_new_dawn_fascist_raid_desc: "Todo..."
@@ -865,7 +874,7 @@
  ut_nd_core_laws_communist: "[GetLawType('law_command_economy').GetName], [GetLawType('law_cooperative_ownership').GetName]"
  ut_nd_core_laws_democrat: "[GetLawType('law_universal_suffrage').GetName], ([GetLawType('law_census_voting').GetName])"
  ut_nd_core_laws_autocrat: "[GetLawType('law_monarchy').GetName], [GetLawType('law_autocracy').GetName], [GetLawType('law_oligarchy').GetName]"
- ut_nd_core_laws_fascist: "[GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName], [GetLawType('ut_law_monarchy_corporate_state')]"
+ ut_nd_core_laws_fascist: "[GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName]"
 
  je_ai_radio_researched: "Radio Researched"
  je_ai_radio_researched_reason: ""

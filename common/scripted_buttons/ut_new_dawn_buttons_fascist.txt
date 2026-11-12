@@ -64,6 +64,15 @@ je_ut_new_dawn_outlaw_communists = {
 			}
 		}
 	}
+	ai_chance = {
+		value = 1
+		if = {
+			limit = {
+				enacting_any_law = yes
+			}
+			multiply = 0
+		}
+	}
 }
 
 je_ut_new_dawn_outlaw_communists_ability_add = {
@@ -101,7 +110,7 @@ je_ut_new_dawn_outlaw_communists_ability_add = {
 		}
 	}
 	ai_chance = {
-		value = 1
+		value = 0
 	}
 }
 
@@ -114,11 +123,15 @@ je_ut_new_dawn_outlaw_communists_ability_remove = {
 	}
 
 	possible = {
-		
+		has_modifier = je_ut_new_dawn_fascist_outlaw_communists_ability_mod		
 	}
 	
 	effect = {
 		remove_modifier = je_ut_new_dawn_fascist_outlaw_communists_ability_mod
+	}
+
+	ai_chance = {
+		value = 1
 	}
 }
 
@@ -133,7 +146,6 @@ je_ut_new_dawn_form_paramilitary_groups = {
 	}
 
 	possible = {
-		always = no #disabled
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_fascist = { 
@@ -153,6 +165,7 @@ je_ut_new_dawn_form_paramilitary_groups = {
 		set_variable = {
 			name = je_ut_new_dawn_form_paramilitary_groups_done
 		}
+		add_modifier = je_ut_new_dawn_fascist_form_paramilitary_groups_mod
 		custom_tooltip = je_ut_new_dawn_form_paramilitary_groups_effect_tt
 
 		if = {
@@ -173,19 +186,27 @@ je_ut_new_dawn_form_paramilitary_groups = {
 			}
 		}
 	}
+	
+	ai_chance = {
+		value = 1
+		if = {
+			limit = {
+				enacting_any_law = yes
+			}
+			multiply = 0
+		}
+	}
 }
 
 je_ut_new_dawn_form_paramilitary_groups_ability_add = {
 	name = "je_ut_new_dawn_form_paramilitary_groups_ability_add"
 	desc = "je_ut_new_dawn_form_paramilitary_groups_ability_add_desc"
 	visible = {
-		NOT = {
-			has_variable = je_ut_new_dawn_form_paramilitary_groups_done
-		}
+		has_variable = je_ut_new_dawn_form_paramilitary_groups_done
 	}
 	possible = {
 		NOT = {
-			has_modifier = je_ut_new_dawn_form_paramilitary_groups_ability_mod
+			has_modifier = je_ut_new_dawn_fascist_form_paramilitary_groups_ability_mod
 		}
 	}
 	effect = {
@@ -196,8 +217,12 @@ je_ut_new_dawn_form_paramilitary_groups_ability_add = {
 			}
 		}
 		add_modifier = {
-			name = je_ut_new_dawn_form_paramilitary_groups_ability_mod
+			name = je_ut_new_dawn_fascist_form_paramilitary_groups_ability_mod
 		}
+	}
+
+	ai_chance = {
+		value = 0
 	}
 }
 
@@ -205,13 +230,16 @@ je_ut_new_dawn_form_paramilitary_groups_ability_remove = {
 	name = "je_ut_new_dawn_form_paramilitary_groups_ability_remove"
 	desc = "je_ut_new_dawn_form_paramilitary_groups_ability_remove_desc"
 	visible = {
-		has_modifier = je_ut_new_dawn_form_paramilitary_groups_ability_mod
+		has_modifier = je_ut_new_dawn_fascist_form_paramilitary_groups_ability_mod
 	}
 	possible = {
-		has_modifier = je_ut_new_dawn_form_paramilitary_groups_ability_mod
+		has_modifier = je_ut_new_dawn_fascist_form_paramilitary_groups_ability_mod
 	}
 	effect = {
-		remove_modifier = je_ut_new_dawn_form_paramilitary_groups_ability_mod
+		remove_modifier = je_ut_new_dawn_fascist_form_paramilitary_groups_ability_mod
+	}
+	ai_chance = {
+		value = 1
 	}
 }
 
@@ -297,69 +325,7 @@ je_ut_new_dawn_conformity = {
 	}
 	
 	ai_chance = {
-		value = 10
-	}
-}
-
-je_ut_new_dawn_unite_heritage = {
-	name = "je_ut_new_dawn_unite_heritage"
-	desc = "je_ut_new_dawn_unite_heritage_desc"
-
-	visible = {
-		NOT = {
-			has_variable = je_ut_new_dawn_unite_heritage_done
-		}
-	}
-
-	possible = {
-		always = no #disabled
-		custom_tooltip = {
-			text = new_dawn_ideology_required_points_tt
-			je:je_ut_new_dawn_fascist = { 
-				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_required_points
-			}
-		}
-		custom_tooltip = {
-			text = new_dawn_ideology_any_previous_milestone_done_tt
-			OR = {
-				has_variable = je_ut_new_dawn_outlaw_communists_done
-				has_variable = je_ut_new_dawn_form_paramilitary_groups_done
-			}
-		}
-
-		custom_tooltip = {
-			text = je_ut_new_dawn_unite_heritage_trigger_tt
-			has_law_or_variant = law_type:law_censorship
-			NOT = {
-				any_state = {
-					is_homeland_of_country_cultures = c:SWE
-					NOT = { owner = root }
-				}
-			}
-		}
-
-		any_state = {
-			OR = {
-				NOT = {
-					state_region = {
-						is_homeland = root.culture
-					}
-				}
-				owner ?= root
-			}
-		}
-	}
-
-	effect = {
-		custom_tooltip = {
-			text = new_dawn_ideology_required_points_spend_tt
-			je:je_ut_new_dawn_fascist = {
-				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
-			}
-		}
-		set_variable = {
-			name = je_ut_new_dawn_unite_heritage_done
-		}
+		value = 1
 	}
 }
 
@@ -406,7 +372,85 @@ je_ut_new_dawn_volksgemeinschaft = {
 			name = je_ut_new_dawn_volksgemeinschaft_done
 		}
 	}
+	
+	ai_chance = {
+		value = 1
+	}
 }
+
+je_ut_new_dawn_unite_heritage = {
+	name = "je_ut_new_dawn_unite_heritage"
+	desc = "je_ut_new_dawn_unite_heritage_desc"
+
+	visible = {
+		NOT = {
+			has_variable = je_ut_new_dawn_unite_heritage_done
+		}
+	}
+
+	possible = {
+		always = no #disabled
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_tt
+			je:je_ut_new_dawn_fascist = { 
+				"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" >= new_dawn_ideology_required_points
+			}
+		}
+		custom_tooltip = {
+			text = new_dawn_ideology_any_previous_milestone_done_tt
+			OR = {
+				has_variable = je_ut_new_dawn_outlaw_communists_done
+				has_variable = je_ut_new_dawn_form_paramilitary_groups_done
+			}
+		}
+
+		custom_tooltip = {
+			text = je_ut_new_dawn_unite_heritage_trigger_tt
+			has_law_or_variant = law_type:law_censorship
+			NOT = {
+				any_state = {
+					is_homeland_of_country_cultures = c:SWE
+					NOT = { owner = root }
+				}
+			}
+		}
+any_scope_state = {
+			state_region = {
+				is_homeland = cu:korean
+			}
+		}
+		cu:french = {
+				is_primary_culture_of = root
+			}
+		any_state = {
+			OR = {
+				NOT = {
+					state_region = {
+						is_homeland = root.culture
+					}
+				}
+				owner ?= root
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = new_dawn_ideology_required_points_spend_tt
+			je:je_ut_new_dawn_fascist = {
+				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
+			}
+		}
+		set_variable = {
+			name = je_ut_new_dawn_unite_heritage_done
+		}
+	}
+	
+	ai_chance = {
+		value = 1
+	}
+}
+
 
 je_ut_new_dawn_expansionism = {
 	name = "je_ut_new_dawn_expansionism"
@@ -458,5 +502,9 @@ je_ut_new_dawn_expansionism = {
 		set_variable = {
 			name = je_ut_new_dawn_expansionism_done
 		}
+	}
+	
+	ai_chance = {
+		value = 1
 	}
 }

@@ -406,14 +406,37 @@ je_ut_new_dawn_fascist_outlaw_communists_ability_mod = {
 	political_movement_radicalism_add = -0.2
 	country_suppression_attraction_factor = -0.1
 	state_mortality_turmoil_mult = 0.05
-	country_new_dawn_pressure_progress = 0.2
+	country_new_dawn_pressure_progress = -0.2
 }
 
-je_ut_new_dawn_form_paramilitary_groups_ability_mod = {
+je_ut_new_dawn_fascist_form_paramilitary_groups_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_new_dawn_pressure_progress = -0.2
+	country_institution_cost_institution_police_mult = 0.25
+	country_disallow_law_no_police_bool = yes
+}
+
+je_ut_new_dawn_fascist_form_paramilitary_groups_ability_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	state_mortality_turmoil_mult = 0.1
 	state_non_homeland_mortality_mult = 0.05
 	country_new_dawn_pressure_progress = -0.2
+}
+
+je_ut_new_dawn_fascist_petty_bourgeoisie_in_power_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	building_minimum_wage_mult = 0.1
+	state_pop_support_movement_pro_slavery_mult = 0.2
+}
+je_ut_new_dawn_fascist_big_bourgeoisie_in_power_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	state_slaves_mortality_mult = 0.1
+	state_slave_import_mult = 0.1
+	building_minimum_wage_mult = -0.1
+}
+je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	country_new_dawn_pressure_progress = 1
 }
 
 ut_released_colony = {

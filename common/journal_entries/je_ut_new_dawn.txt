@@ -5,8 +5,7 @@
 
 	activation_description = {
 		always = yes
-	}
-	
+	}	
 
 	is_shown_when_inactive = {
 		OR = {
@@ -1358,13 +1357,13 @@ je_ut_new_dawn_fascist = {
 	# Leader principle
 	# State-controlled economy (corporatism)
 	scripted_button = je_ut_new_dawn_conformity
-	# Collectivism
-	scripted_button = je_ut_new_dawn_unite_heritage
 
 	# Extreme nationalism
 	# Propaganda & myths
 	scripted_button = je_ut_new_dawn_volksgemeinschaft
 
+	# Collectivism
+	scripted_button = je_ut_new_dawn_unite_heritage
 	
 	scripted_button = je_ut_new_dawn_expansionism
 
@@ -1482,6 +1481,37 @@ je_ut_new_dawn_fascist = {
 			change_variable = {
 				name = je_ut_new_dawn_core_progress_diff
 				subtract = var:je_ut_new_dawn_core_prev_progress
+			}
+
+			if = {
+				limit = {
+					NOT = { has_modifier = je_ut_new_dawn_fascist_petty_bourgeoisie_in_power_mod }
+					je:je_ut_new_dawn_fascist = {
+						"scripted_bar_progress(je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar)" <= -25
+					}
+				}
+				add_modifier = je_ut_new_dawn_fascist_petty_bourgeoisie_in_power_mod
+				remove_modifier = je_ut_new_dawn_fascist_big_bourgeoisie_in_power_mod
+				remove_modifier = je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_mod
+			}
+			else_if = {
+				limit = {
+					NOT = { has_modifier = je_ut_new_dawn_fascist_big_bourgeoisie_in_power_mod }
+					je:je_ut_new_dawn_fascist = {
+						"scripted_bar_progress(je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar)" >= 25
+					}
+				}
+				add_modifier = je_ut_new_dawn_fascist_big_bourgeoisie_in_power_mod
+				remove_modifier = je_ut_new_dawn_fascist_petty_bourgeoisie_in_power_mod
+				remove_modifier = je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_mod
+			}
+			else_if = {
+				limit = {
+					NOT = { has_modifier = je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_mod }
+				}
+				add_modifier = je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_mod
+				remove_modifier = je_ut_new_dawn_fascist_petty_bourgeoisie_in_power_mod
+				remove_modifier = je_ut_new_dawn_fascist_big_bourgeoisie_in_power_mod
 			}
 		}
 		random_events = {
