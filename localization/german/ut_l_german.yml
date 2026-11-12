@@ -194,6 +194,13 @@
  event_new_dawn.1.a: "Auf zum Neuen Aufbruch"
  event_new_dawn.1.a.tt: "[concept_ut_new_dawn] hat in [SCOPE.sCountry('je_ut_new_dawn_first_started_scope').GetName] begonnen"
 
+ event_new_dawn_fascist.1.t: "Der Machtkampf"
+ event_new_dawn_fascist.1.d: "Die Zukunft des Neuen Aufbruchs hängt davon ab, welche Interessen ihren Einfluss in Macht verwandeln können. Industrielle und Kleinbürger kämpfen um die Kontrolle und wollen den Staat jeweils nach ihren Vorstellungen gestalten."
+ event_new_dawn_fascist.1.f: "Hinter jeder Abstimmung und jeder Ernennung verbirgt sich ein Kampf darum, wer die Nation lenkt. Die schwächere Fraktion droht verdrängt zu werden, während diejenige, die sich einen Platz in der Regierung sichert, ihre bevorzugten Gesetze durchsetzen und ihren Einfluss festigen kann."
+ event_new_dawn_fascist.1.a: "Der Machtkampf soll weitergehen"
+ event_new_dawn_fascist.1.b: "Die Industriellen erstarken"
+ event_new_dawn_fascist.1.c: "Das Kleinbürgertum erstarkt"
+
  event_new_dawn.2.a: "Grundlage für die Kernideologie schaffen"
  
  event_new_dawn.2.d.a: "Unsere Verbündeten in der autokratischen Fraktion haben rasch gehandelt, um die Macht zu sichern, unterstützt von wichtigen Institutionen. Der Übergang verläuft geordnet, wenn auch nicht ohne Widerstand."

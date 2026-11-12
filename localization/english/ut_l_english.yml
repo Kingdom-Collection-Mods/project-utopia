@@ -194,6 +194,13 @@
  event_new_dawn.1.a: "Towards a New Dawn"
  event_new_dawn.1.a.tt: "[concept_ut_new_dawn] has started in [SCOPE.sCountry('je_ut_new_dawn_first_started_scope').GetName]"
 
+ event_new_dawn_fascist.1.t: "The Struggle for Power"
+ event_new_dawn_fascist.1.d: "The New Dawn's future depends on which interests can turn their influence into power. The Industrialists and the Petty Bourgeoisie compete for control, each looking to shape the state in its own image."
+ event_new_dawn_fascist.1.f: "Behind every vote and appointment lies a contest over who will command the nation. The weaker faction risks being pushed aside, while the faction that secures a place in government can press its preferred laws and strengthen its hold."
+ event_new_dawn_fascist.1.a: "Let the struggle continue"
+ event_new_dawn_fascist.1.b: "The Industrialists rise"
+ event_new_dawn_fascist.1.c: "The Bourgeoisie rise"
+
  event_new_dawn.2.a: "Build foundation for core ideology"
  
  event_new_dawn.2.d.a: "Our allies in the autocratic faction have moved swiftly to secure power, with support from key institutions. The transition is orderly, though not without opposition."
@@ -600,7 +607,7 @@
  je_ut_new_dawn_points_bar_desc: "Progress Points: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[SCOPE.ScriptValue('new_dawn_ideology_upper_bound')])"
 
  je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar: "Petty vs Big Bourgeoisie"
- je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar_desc: "@petty_bourgeoisie!@urbanists!@trade_unions!@rural_folk! Petty Bourgeoisie"
+ je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar_desc: "@petty_bourgeoisie!@urbanists!@trade_unions!@rural_folk! Bourgeoisie"
  je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar_second_desc: "Industrialists @industrialists!"
  je_ut_new_dawn_fascist_petty_bourgeoisie_powerful_progress: "[concept_ut_nd_fascist_petty_bourgeoisie] are [concept_powerful] and [concept_ut_nd_fascist_industrialists] are not"
  je_ut_new_dawn_fascist_industrialist_powerful_progress: "[concept_ut_nd_fascist_industrialists] are [concept_powerful] and [concept_ut_nd_fascist_petty_bourgeoisie] are not"

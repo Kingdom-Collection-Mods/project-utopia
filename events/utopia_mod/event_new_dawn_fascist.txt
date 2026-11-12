@@ -6,26 +6,143 @@ event_new_dawn_fascist.1 = {
 	type = country_event
 
 	event_image = {
-		video = "unspecific_world_fair"
+		video = "unspecific_politicians_arguing"
 	}
 
 	fire_only_once = yes
-
 	duration = 3
-
 	placement = ROOT
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
-	title = event_new_dawn.1.t
-	desc = event_new_dawn.1.d
-	flavor = event_new_dawn.1.f
+	title = event_new_dawn_fascist.1.t
+	desc = event_new_dawn_fascist.1.d
+	flavor = event_new_dawn_fascist.1.f
 
 	option = {
-		name = event_new_dawn.1.a
+		name = event_new_dawn_fascist.1.a
 		default_option = yes
-		custom_tooltip = event_new_dawn.1.a.tt
+
+		custom_tooltip = ut_add_new_dawn_pressure_add_5
+		ut_add_new_dawn_pressure_points = {
+			VALUE = 5
+		}
+	}
+
+	option = {
+		name = event_new_dawn_fascist.1.b
+		highlighted_option = yes
+		trigger = {
+			ig:ig_industrialists ?= {
+				is_powerful = yes
+			}
+			OR = {
+				ig:ig_petty_bourgeoisie ?= {
+					is_powerful = no
+				}
+				ig:ig_urbanists ?= {
+					is_powerful = no
+				}
+				ig:ig_trade_unions ?= {
+					is_powerful = no
+				}
+				ig:ig_rural_folk ?= {
+					is_powerful = no
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				has_law_or_variant = law_type:ut_law_forced_laborers
+			}
+			custom_tooltip = ut_add_new_dawn_core_progress_5
+			ut_add_new_dawn_core_progress = {
+				VALUE = 5
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_law_or_variant = law_type:ut_law_forced_laborers }
+				NOT = {
+					has_journal_entry = je_government_petition
+				}
+			}
+			
+			ig:ig_petty_bourgeoisie = {
+				set_variable = {
+					name = petitioning_ig
+					days = 100
+				}
+			}
+			set_variable = {
+				name = desired_law_var
+				value = law_type:ut_law_forced_laborers
+			}
+			add_journal_entry = {
+				type = je_government_petition
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn_fascist.1.c
+		highlighted_option = yes
+		trigger = {
+			ig:ig_industrialists = {
+				is_powerful = no
+			}
+			OR = {
+				ig:ig_petty_bourgeoisie ?= {
+					is_powerful = yes
+				}
+				ig:ig_urbanists ?= {
+					is_powerful = yes
+				}
+				ig:ig_trade_unions ?= {
+					is_powerful = yes
+				}
+				ig:ig_rural_folk ?= {
+					is_powerful = yes
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_secret_police
+			}
+			custom_tooltip = ut_add_new_dawn_core_progress_5
+			ut_add_new_dawn_core_progress = {
+				VALUE = 5
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_law_or_variant = law_type:law_secret_police }
+				NOT = {
+					has_journal_entry = je_government_petition
+				}
+				ig:ig_petty_bourgeoisie = {
+					is_marginal = no
+				}
+			}
+			
+			ig:ig_petty_bourgeoisie = {
+				set_variable = {
+					name = petitioning_ig
+					days = 100
+				}
+			}
+			set_variable = {
+				name = desired_law_var
+				value = law_type:law_secret_police
+			}
+			add_journal_entry = {
+				type = je_government_petition
+			}
+		}
 	}
 }
