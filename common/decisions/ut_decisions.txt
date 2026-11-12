@@ -1,4 +1,4 @@
-﻿ut_tech_preview_cheat_research = {
+ut_tech_preview_cheat_research = {
 	is_shown = {
 		is_player = yes
 		NOT = { has_global_variable = ut_tech_preview_cheat_disable }
@@ -608,7 +608,7 @@ ut_democrat_enact_law_variants = {
 
 	when_taken = {
 		ig:ig_petty_bourgeoisie ?= {
-			save_scope_as = petty_bourgeoisie_ig
+			is_in_government = yes
 		}
 		active_law:lawgroup_governance_principles ?= {
 			add_amendment = {
@@ -905,5 +905,17 @@ ut_debug_apply_patch = {
 	}
 	ai_chance = {
 		value = 1
+	}
+}
+
+ut_new_dawn_fascist_raid = {
+	is_shown = {
+		has_modifier = ut_new_dawn_core_fascist_mod
+	}
+	possible = {
+		has_variable = je_ut_new_dawn_form_paramilitary_groups_done
+	}
+	when_taken = {
+		# Implement the effects of the fascist raid here
 	}
 }

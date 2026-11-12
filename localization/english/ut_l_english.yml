@@ -671,8 +671,15 @@ l_english:
  
  je_ut_new_dawn_outlaw_communists: "Outlaw Communists"
  je_ut_new_dawn_outlaw_communists_desc: "Crack down on leftist movements and ban communist parties.\n\n#italic Historical Context:\nOn February 28, 1933, following the Reichstag Fire, the Nazis passed the Reichstag Fire Decree, suspending civil liberties and allowing the arrest of thousands of communists. The KPD (Communist Party of Germany) was soon outlawed, marking the first step in dismantling political opposition. Which 4 months later was followed by the ban of the SPD (Social Democratic Party) and another month later all parties were banned; dismantling democracy.\n\nThe claim to totality is one dimension of fascism.#!"
+ je_ut_new_dawn_outlaw_communists_ability_add: "Political Cleansing"
+ je_ut_new_dawn_outlaw_communists_ability_remove: "#g Political Cleansing#!"
+ je_ut_new_dawn_fascist_outlaw_communists_ability_mod: "$je_ut_new_dawn_outlaw_communists_ability_add$"
  je_ut_new_dawn_form_paramilitary_groups: "Paramilitary Groups"
  je_ut_new_dawn_form_paramilitary_groups_desc: "Establish unofficial militant organizations to enforce party rule.\n\n#italic Historical Context:\nThe Sturmabteilung, active since the 1920s, grew into a powerful paramilitary force by the early 1930s, intimidating voters and disrupting opposition meetings. On June 30, 1934, during the Night of the Long Knives, Hitler purged the SA leadership to consolidate power, elevating the more ideologically driven Schutzstaffel.\n\nA party organization modeled on the military is one dimension of fascism.#!"
+ je_ut_new_dawn_form_paramilitary_groups_effect_tt: "Enables: $ut_new_dawn_fascist_raid$"
+ ut_new_dawn_fascist_raid: "Fascist Raid"
+ ut_new_dawn_fascist_raid_desc: "Todo..."
+
  je_ut_new_dawn_conformity: "Conformity"
  je_ut_new_dawn_conformity_desc: "Encourage strict social alignment with state ideals.\n\n#italic Historical Context:\nStarting in 1933, the Nazis implemented Gleichschaltung (\"coordination\"), a process of aligning all aspects of society—including media, education, culture, and religion—with Nazi ideology. Independent trade unions were banned on May 2, 1933, replaced by the state-run German Labor Front.\n\nA totalitarian, hierarchical model of society is one dimension of fascism.#!"
  je_ut_new_dawn_unite_heritage: "Unite Heritage"
@@ -713,7 +720,7 @@ l_english:
  je_ut_communist_world_revolution_effect_tt: "Unlocks [GetLawType('ut_law_international_council').GetName]"
 
  je_ut_new_dawn_fascist: "Fascism"
- je_ut_new_dawn_fascist_reason: "Society has been reorganized. National identity and the nation prioritize the common good over individual interests. Critical voices are viewed as a threat, while the media and institutions are brought into line.\n\nWhether you reinforce this course and impose your will on the nations, or whether humanity's hope is restored, is now up to you.\n#italic - [Concept('concept_ut_nd_fascist_core', 'Fascist')]#!"
+ je_ut_new_dawn_fascist_reason: "Society has been reorganized. National identity and the nation prioritize the common good over individual interests. Critical voices are viewed as a threat, while the media and institutions are brought into line.\n\nWhether you reinforce this course and impose your will on the nations, or whether humanity's hope is restored, is now up to you.\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_fascist_petty_vs_big_bourgeoisie_status')]\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n#italic - [Concept('concept_ut_nd_fascist_core', 'Fascist')]#!"
 
  je_ut_new_dawn_communist: "Communism"
  je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets.\nWhere this awakening leads is now up to you.\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n #italic - [Concept('concept_ut_nd_communist_core', 'Communist')] [concept_ut_nd_path_to_utopia]#!"
@@ -1359,6 +1366,7 @@ l_english:
  ut_has_new_dawn_progress_75: "Has #b 75#! [concept_ut_nd_progress_points]"
  ut_has_new_dawn_progress_50: "Has #b 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_core_progress_50: "Gains #b 50#! [concept_ut_nd_progress_points]"
+ ut_add_new_dawn_core_progress_10: "Gains #b 10#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_core_progress_5: "Gains #b 5#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_core_progress_neg_50: "Loses #r 50#! [concept_ut_nd_progress_points]"
  ut_add_new_dawn_core_progress_neg_25: "Loses #r 25#! [concept_ut_nd_progress_points]"
@@ -1394,6 +1402,7 @@ l_english:
 
  ut_has_new_dawn_pressure_50: "Has #b 50#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_75: "Has #b 75#! [concept_ut_nd_pressure]"
+ ut_has_new_dawn_pressure_not_75: "Does not have #b 75#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_90: "Has #b 90#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_max: "Has #b 100#! [concept_ut_nd_pressure]"
 
@@ -1978,6 +1987,7 @@ l_english:
  pm_ut_factory_farming: "Factory Farming"
 
  pm_heavy_machinery_building_coal_mine: "Heavy Machinery"
+ pm_heavy_machinery_building_copper_mine: "Heavy Machinery"
  pm_heavy_machinery_building_iron_mine: "Heavy Machinery"
 
  pm_heavy_machinery_furnite: "CNC Machines"
