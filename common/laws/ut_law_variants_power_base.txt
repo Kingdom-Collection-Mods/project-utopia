@@ -296,6 +296,8 @@ ut_law_monarchy_corporate_state = {
 
 	disallowing_laws = {
 		law_anarchy
+		law_cooperative_ownership
+		law_universal_suffrage
 	}
 
 	is_visible = {
@@ -314,11 +316,13 @@ ut_law_monarchy_corporate_state = {
 		country_legitimacy_ideological_incoherence_mult = -0.25
 		country_authority_add = 100
 		interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.25
+
+		
+		country_new_dawn_progress_points_progress = 0.5
 	}
 
 	ai_will_do = {
 		exists = ruler
-		has_law = law_type:law_monarchy
 		has_modifier = ut_new_dawn_core_fascist_mod
 	}
 
