@@ -398,14 +398,22 @@ je_ut_new_dawn_fascist_outlaw_communists_mod = {
 	state_pop_support_movement_anarchist_mult = -0.05
 	state_pop_support_movement_socialist_mult = -0.05
 	country_new_dawn_progress_points_progress = -0.1
-	country_new_dawn_pressure_progress = -0.1
+	country_new_dawn_pressure_progress = -0.2
 }
 
 je_ut_new_dawn_fascist_outlaw_communists_ability_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	political_movement_radicalism_add = -0.2
 	country_suppression_attraction_factor = -0.1
+	state_mortality_turmoil_mult = 0.05
 	country_new_dawn_pressure_progress = 0.2
+}
+
+je_ut_new_dawn_form_paramilitary_groups_ability_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	state_mortality_turmoil_mult = 0.1
+	state_non_homeland_mortality_mult = 0.05
+	country_new_dawn_pressure_progress = -0.2
 }
 
 ut_released_colony = {

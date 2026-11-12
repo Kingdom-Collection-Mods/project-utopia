@@ -78,10 +78,11 @@ je_ut_new_dawn_outlaw_communists_ability_add = {
 	}
 
 	possible = {
-		NOT = {
-			custom_tooltip = {
-				text = ut_has_new_dawn_pressure_75
-				ut_has_new_dawn_pressure_core = {
+		custom_tooltip = {
+			text = ut_has_new_dawn_pressure_not_75
+			
+			NOT = {
+				ut_has_new_dawn_pressure_points = {
 					VALUE = 75
 				}
 			}
@@ -90,14 +91,17 @@ je_ut_new_dawn_outlaw_communists_ability_add = {
 	
 	effect = {
 		custom_tooltip = {
-			text = ut_add_new_dawn_pressure_add_1
+			text = ut_add_new_dawn_pressure_add_5
 			ut_add_new_dawn_pressure_points = {
-				VALUE = 1
+				VALUE = 5
 			}
 		}
 		add_modifier = {
 			name = je_ut_new_dawn_fascist_outlaw_communists_ability_mod
 		}
+	}
+	ai_chance = {
+		value = 1
 	}
 }
 
@@ -114,9 +118,7 @@ je_ut_new_dawn_outlaw_communists_ability_remove = {
 	}
 	
 	effect = {
-		remove_modifier = {
-			name = je_ut_new_dawn_fascist_outlaw_communists_ability_mod
-		}
+		remove_modifier = je_ut_new_dawn_fascist_outlaw_communists_ability_mod
 	}
 }
 
@@ -151,6 +153,7 @@ je_ut_new_dawn_form_paramilitary_groups = {
 		set_variable = {
 			name = je_ut_new_dawn_form_paramilitary_groups_done
 		}
+		custom_tooltip = je_ut_new_dawn_form_paramilitary_groups_effect_tt
 
 		if = {
 			limit = {
@@ -172,6 +175,45 @@ je_ut_new_dawn_form_paramilitary_groups = {
 	}
 }
 
+je_ut_new_dawn_form_paramilitary_groups_ability_add = {
+	name = "je_ut_new_dawn_form_paramilitary_groups_ability_add"
+	desc = "je_ut_new_dawn_form_paramilitary_groups_ability_add_desc"
+	visible = {
+		NOT = {
+			has_variable = je_ut_new_dawn_form_paramilitary_groups_done
+		}
+	}
+	possible = {
+		NOT = {
+			has_modifier = je_ut_new_dawn_form_paramilitary_groups_ability_mod
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = ut_add_new_dawn_pressure_add_5
+			ut_add_new_dawn_pressure_points = {
+				VALUE = 5
+			}
+		}
+		add_modifier = {
+			name = je_ut_new_dawn_form_paramilitary_groups_ability_mod
+		}
+	}
+}
+
+je_ut_new_dawn_form_paramilitary_groups_ability_remove = {
+	name = "je_ut_new_dawn_form_paramilitary_groups_ability_remove"
+	desc = "je_ut_new_dawn_form_paramilitary_groups_ability_remove_desc"
+	visible = {
+		has_modifier = je_ut_new_dawn_form_paramilitary_groups_ability_mod
+	}
+	possible = {
+		has_modifier = je_ut_new_dawn_form_paramilitary_groups_ability_mod
+	}
+	effect = {
+		remove_modifier = je_ut_new_dawn_form_paramilitary_groups_ability_mod
+	}
+}
 
 je_ut_new_dawn_conformity = {
 	name = "je_ut_new_dawn_conformity"
@@ -202,7 +244,7 @@ je_ut_new_dawn_conformity = {
 		}
 		OR = {
 			has_law_or_variant = law_type:law_corporate_state
-			has_law_or_variant = law_type:ut_law_monarchy_corporate_state
+			has_law = law_type:ut_law_monarchy_corporate_state
 			
 			has_law_or_variant = law_type:law_autocracy
 			has_law_or_variant = law_type:law_oligarchy
@@ -293,6 +335,17 @@ je_ut_new_dawn_unite_heritage = {
 					is_homeland_of_country_cultures = c:SWE
 					NOT = { owner = root }
 				}
+			}
+		}
+
+		any_state = {
+			OR = {
+				NOT = {
+					state_region = {
+						is_homeland = root.culture
+					}
+				}
+				owner ?= root
 			}
 		}
 	}
