@@ -11,6 +11,14 @@
 	}
 	weight = {
         value = 50
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_ut_new_dawn
+				NOT = { ut_new_dawn_has_core_trigger = yes }
+			}
+			add = 100
+		}
 	}
 }
 
@@ -27,6 +35,14 @@ utopia_track_02 = {
 	}
 	weight = {
         value = 50
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_ut_new_dawn
+				NOT = { ut_new_dawn_has_core_trigger = yes }
+			}
+			add = 50
+		}
 	}
 }
 
@@ -43,6 +59,14 @@ utopia_track_03 = {
 	}
 	weight = {
         value = 50
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_ut_new_dawn
+				NOT = { ut_new_dawn_has_core_trigger = yes }
+			}
+			add = 50
+		}
 	}
 }
 
@@ -59,6 +83,14 @@ utopia_track_04 = {
 	}
 	weight = {
         value = 50
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_ut_new_dawn
+				NOT = { ut_new_dawn_has_core_trigger = yes }
+			}
+			add = 50
+		}
 	}
 }
 
@@ -75,6 +107,14 @@ utopia_track_05 = {
 	}
 	weight = {
         value = 50
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_ut_new_dawn
+				NOT = { ut_new_dawn_has_core_trigger = yes }
+			}
+			add = 50
+		}
 	}
 }
 
@@ -91,6 +131,14 @@ utopia_track_06 = {
 	}
 	weight = {
         value = 50
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_ut_new_dawn
+				NOT = { ut_new_dawn_has_core_trigger = yes }
+			}
+			add = 50
+		}
 	}
 }
 
@@ -181,7 +229,7 @@ utopia_track_fascist_01 = {
 			limit = {
 				has_modifier = ut_new_dawn_core_fascist_mod
 			}
-			add = 100
+			add = 50
 		}
 	}
 }
