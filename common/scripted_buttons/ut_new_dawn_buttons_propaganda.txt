@@ -63,6 +63,11 @@ ut_new_dawn_propaganda_target_defend = {
 	}
 
 	effect = {		
+		set_variable = ut_new_dawn_propaganda_target_defend_cooldown_var
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_10
+		ut_add_new_dawn_core_progress = {
+			VALUE = -10
+		}
 		scope:target = {
 			set_variable = {
 				name = ut_new_dawn_propaganda_target_defend_source_var
@@ -72,15 +77,8 @@ ut_new_dawn_propaganda_target_defend = {
 				id = event_new_dawn.20
 				popup = yes
 			}
+			custom_tooltip = ut_new_dawn_propaganda_target_defend_tt
 		}
-		set_variable = ut_new_dawn_propaganda_target_defend_cooldown_var
-		custom_tooltip = ut_add_new_dawn_core_progress_neg_10
-		ut_add_new_dawn_core_progress = {
-			VALUE = -10
-		}
-
-		
-		custom_tooltip = ut_new_dawn_propaganda_target_defend_tt
 	}
 	ai_chance = {
 		value = 0
