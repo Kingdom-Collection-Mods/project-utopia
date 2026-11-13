@@ -1286,7 +1286,7 @@
  ut_je_propaganda_source_abort_tt: "Has aborted the propaganda campaign"
  ut_je_propaganda_target: "Target of Propaganda Campaign"
  ut_je_propaganda_target_reason: "The country behind the propaganda campaign is attempting to weaken the core ideology in our country."
- ut_je_propaganda_target_abort_tt: "The country behind the propaganda campaign has aborted the campaign."
+ ut_je_propaganda_target_abort_tt: "[THIS.GetCountry.GetName] has aborted the propaganda campaign."
  ut_je_propaganda_target_effect: "$ut_add_new_dawn_core_progress_neg_25$ and receive the Propaganda modifier for 2 years"
  ut_je_propaganda_target_goal: "Defend against propaganda campaign"
 
@@ -1294,6 +1294,9 @@
  ut_propaganda_campaign_source_happened_desc: "A coordinated propaganda campaign was launched against [SCOPE.sCountry('ut_je_propaganda_source_target_scope').GetName] to shape public opinion and weaken the target's government's ideology."
  ut_propaganda_campaign_source_happened_tt: "Propaganda campaign completed"
  ut_propaganda_campaign_source_happened_disable_tt: "Disable Notification"
+
+ ut_propaganda_campaign_target_started_title: "Target of Propaganda Campaign"
+ ut_propaganda_campaign_target_started_desc: "[SCOPE.sCountry('ut_je_propaganda_target_source_scope').GetName] has started a propaganda campaign against us."
 
  ut_propaganda_campaign_target_happened_title: "Target of Propaganda Campaign"
  ut_propaganda_campaign_target_happened_desc: "We have been targeted by a propaganda campaign from [SCOPE.sCountry('ut_je_propaganda_target_source_scope').GetName]. Next time we should try to defend against it to avoid losing progress points and gaining a negative modifier."

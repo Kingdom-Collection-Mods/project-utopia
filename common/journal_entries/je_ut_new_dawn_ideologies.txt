@@ -172,6 +172,16 @@ ut_je_propaganda_target = {
 	activation_description = {
 		always = yes
 	}
+	immediate = {
+		set_variable = {
+			name = ut_je_propaganda_target_source_var
+			value = scope:target
+		}
+		trigger_event = {
+			id = event_new_dawn.26
+			popup = yes
+		}
+	}
 
 	scripted_button = ut_new_dawn_propaganda_target_defend
 
@@ -192,15 +202,17 @@ ut_je_propaganda_target = {
 		color = "gold_positive"
 		conclusion_desc = je_standard_completion_conclusion_desc
 		trigger = {
-			scope:target = {
-				custom_tooltip = {
-					text = ut_je_propaganda_target_abort_tt
-					always = yes
-					#just to show what the attacking country is
+			OR = {
+				scope:target = {
+					custom_tooltip = {
+						text = ut_je_propaganda_target_abort_tt
+						always = no
+						#just to show what the attacking country is
+					}
 				}
-			}
-			hidden_trigger = {
-				has_variable = ut_propaganda_target_abandon_var
+				hidden_trigger = {
+					has_variable = ut_propaganda_target_abandon_var
+				}
 			}
 		}
 		effect = {
