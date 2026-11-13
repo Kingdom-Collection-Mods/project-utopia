@@ -204,6 +204,10 @@
  event_new_dawn.800.t: "Ein vereintes Erbe"
  event_new_dawn.800.d: "[SCOPE.sCountry('ut_united_heritage_country').GetName] hat [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName] eingegliedert, ein Land, das eine seiner Primärkulturen teilt."
  event_new_dawn.800.f: "Im Namen eines gemeinsamen Erbes wurde die politische Landkarte neu gezeichnet, indem ein kleinerer Staat in eine größere Nation eingegliedert wurde."
+ event_new_dawn.801.t: "Widerstand in [SCOPE.sCountry('ut_united_heritage_opposing_country').GetName]"
+ event_new_dawn.801.d: "[SCOPE.sCountry('ut_united_heritage_opposing_country').GetName] hat sich der Vereinigung widersetzt und Anspruch auf das gemeinsame Erbe erhoben."
+ event_new_dawn.801.f: "Nicht alle Nationen teilen unsere Vorstellung eines vereinten Erbes. Diplomatische Spannungen nehmen zu, während sich Widerstand regt."
+ ut_is_country_on_same_continent_as_root: "Auf demselben Kontinent"
 
  event_new_dawn.2.a: "Grundlage für die Kernideologie schaffen"
  
@@ -671,6 +675,12 @@
  je_ut_new_dawn_suppress_dissidents_rural_folk_mod: "$event_new_dawn.30.o.rural_folk$"
  je_ut_new_dawn_suppress_dissidents_trade_unions_mod: "$event_new_dawn.30.o.trade_unions$"
  
+ ut_unite_homeland: "Die Heimat vereinen"
+ ut_unite_homeland_desc: "Gliedert geeignete kleinere Länder auf diesem Kontinent ein, die unsere Primärkultur und New-Dawn-Ideologie teilen."
+ ut_homeland_spread_new_dawn: "New Dawn in der Heimat verbreiten"
+ ut_homeland_spread_new_dawn_desc: "Weitet New Dawn auf kleinere Länder dieses Kontinents aus, die unsere Primärkultur teilen."
+ ut_unite_against_foreign_core: "Unser gemeinsames Erbe verteidigen"
+ ut_unite_against_foreign_core_desc: "Greift in einen Konflikt mit einem kulturell verwandten Land ein und gliedert es ein, solange keiner der Beteiligten dem autokratischen Lager angehört."
  je_ut_new_dawn_outlaw_communists: "Kommunisten verbieten"
  je_ut_new_dawn_outlaw_communists_desc: "Linke Bewegungen bekämpfen und kommunistische Parteien verbieten.\n\n#italic Historischer Kontext:\nAm 28. Februar 1933 verabschiedeten die Nazis nach dem Reichstagsbrand die Reichstagsbrandverordnung, die Bürgerrechte aussetzte und die Verhaftung Tausender Kommunisten ermöglichte. Die KPD (Kommunistische Partei Deutschlands) wurde bald verboten - der erste Schritt zur Zerschlagung der politischen Opposition. Vier Monate später folgte das Verbot der SPD (Sozialdemokratische Partei Deutschlands), und einen Monat darauf wurden alle Parteien verboten - die Demokratie wurde zerstört.\n\nDer Totalitätsanspruch ist eine Dimension des Faschismus.#!"
  je_ut_new_dawn_form_paramilitary_groups: "Paramilitärische Gruppen"

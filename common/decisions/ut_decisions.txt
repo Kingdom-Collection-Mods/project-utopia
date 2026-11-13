@@ -989,6 +989,9 @@ ut_unite_homeland = {
 					}
 				}
 				country_rank < rank_value:unrecognized_major_power
+				is_at_war = no
+				is_diplomatic_play_initiator  = no
+				is_diplomatic_play_target = no
 				any_primary_culture = {
 					is_primary_culture_of = ROOT
 				}
@@ -1263,7 +1266,7 @@ ut_homeland_spread_new_dawn = {
 		}
 	}
 	ai_chance = {
-		value = 5
+		value = 10
 		#should be quite low so doesn't stack due to je_new_dawn start delay bug
 	}
 }
