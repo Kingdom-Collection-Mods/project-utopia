@@ -97,7 +97,7 @@ ut_new_dawn_fascist_focus = {
 		if = {
 			#Historically Germany, Italy, and Japan below in "ranking"?
 			limit = {
-				global_country_ranking >= 5
+				global_country_ranking < 5
 				country_rank >= rank_value:great_power
 			}
 			add = 5
@@ -318,7 +318,7 @@ ut_new_dawn_democrat_focus = {
 		if = {
 			#Historically USA and Great Britain high "ranking"?
 			limit = {
-				global_country_ranking < 5
+				global_country_ranking > 5
 			}
 			add = 10
 		}
@@ -495,7 +495,7 @@ ut_new_dawn_communist_focus = {
 		if = {
 			#to balance with fascism
 			limit = {
-				global_country_ranking >= 5
+				global_country_ranking < 5
 				country_rank >= rank_value:great_power
 			}
 			add = 5
