@@ -13,6 +13,7 @@
 			has_variable = je_ut_new_dawn_major_power_influenced_var
 			country_rank >= rank_value:great_power
 			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
+			hidden_trigger = { has_variable = je_ut_new_dawn_heritage_activated_var }
 		}
 		# OR = {
 		# 	ut_service_workers_possible = yes
@@ -36,6 +37,7 @@
 				has_game_rule = ut_new_dawn_start_era_5
 			}
 			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
+			hidden_trigger = { has_variable = je_ut_new_dawn_heritage_activated_var }
 		}
 		OR = {
 			custom_tooltip = {
@@ -85,6 +87,7 @@
 				}
 			}
 			hidden_trigger = { has_variable = je_ut_new_dawn_activate_cheat_var }
+			hidden_trigger = { has_variable = je_ut_new_dawn_heritage_activated_var }
 		}
 	}
 
