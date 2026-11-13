@@ -1023,8 +1023,8 @@ ut_unite_homeland = {
 					}
 				}
 				ut_is_country_on_same_continent_as_root = yes
+				save_scope_as = ut_united_heritage_annexed_country
 			}
-			save_scope_as = ut_united_heritage_annexed_country
 			ROOT = {
 				save_scope_as = ut_united_heritage_country
 				every_country = {
