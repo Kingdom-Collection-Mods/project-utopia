@@ -1052,11 +1052,8 @@ ut_unite_homeland = {
 					}
 				}
 				ut_is_country_on_same_continent_as_root = yes
-				save_scope_as = ut_united_heritage_annexed_country
-				ROOT = {
-					annex_with_incorporation = prev
-				}
 			}
+			save_scope_as = ut_united_heritage_annexed_country
 		}
 		
 		save_scope_as = ut_united_heritage_country
@@ -1067,6 +1064,8 @@ ut_unite_homeland = {
 			}
 			trigger_event = { id = event_new_dawn.800 }
 		}
+		
+		annex_with_incorporation = scope:ut_united_heritage_annexed_country
 	}
 	ai_chance = {
 		value = 100
