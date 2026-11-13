@@ -920,10 +920,134 @@ ut_new_dawn_fascist_raid = {
 	}
 }
 
-ut_ai_unite_homeland = {
+ut_unite_homeland = {
 	is_shown = {
-		#is_ai = yes
+		country_rank >= rank_value:unrecognized_major_power
 		ut_new_dawn_has_core_trigger = yes
+	}
+	possible = {
+		is_at_war = no
+		any_diplomatically_relevant_country = {
+			NOT = { this = root }
+			OR = {
+				is_subject = no
+				AND = {
+					is_subject_of = ROOT
+					is_subject_type = subject_type_puppet
+				}
+			}
+			country_rank < rank_value:unrecognized_major_power
+			is_at_war = no
+			is_diplomatic_play_initiator  = no
+			is_diplomatic_play_target = no
+			any_primary_culture = {
+				is_primary_culture_of = ROOT
+			}
+			OR = {
+				AND = {
+					OR = {
+						has_modifier = ut_new_dawn_core_fascist_mod
+						has_modifier = je_ut_new_dawn_fascist_focus
+					}
+					ROOT = { has_modifier = ut_new_dawn_core_fascist_mod }
+				}
+				AND = {
+					OR = {
+						has_modifier = ut_new_dawn_core_democratic_mod
+						has_modifier = je_ut_new_dawn_democrat_focus
+					}
+					ROOT = { has_modifier = ut_new_dawn_core_democratic_mod }
+				}
+				AND = {
+					OR = {
+						has_modifier = ut_new_dawn_core_autocratic_mod
+						has_modifier = je_ut_new_dawn_autocrat_focus
+					}
+					ROOT = { has_modifier = ut_new_dawn_core_autocratic_mod }
+				}
+				AND = {
+					OR = {
+						has_modifier = ut_new_dawn_core_communist_mod
+						has_modifier = je_ut_new_dawn_communist_focus
+					}
+					ROOT = { has_modifier = ut_new_dawn_core_communist_mod }
+				}
+			}
+			
+			ut_is_country_on_same_continent_as_root = yes
+		}
+	}
+	when_taken = {
+		random_diplomatically_relevant_country = {
+			limit = {
+				NOT = { this = root }
+				OR = {
+					is_subject = no
+					AND = {
+						is_subject_of = ROOT
+						is_subject_type = subject_type_puppet
+					}
+				}
+				country_rank < rank_value:unrecognized_major_power
+				any_primary_culture = {
+					is_primary_culture_of = ROOT
+				}
+				OR = {
+					AND = {
+						OR = {
+							has_modifier = ut_new_dawn_core_fascist_mod
+							has_modifier = je_ut_new_dawn_fascist_focus
+						}
+						ROOT = { has_modifier = ut_new_dawn_core_fascist_mod }
+					}
+					AND = {
+						OR = {
+							has_modifier = ut_new_dawn_core_democratic_mod
+							has_modifier = je_ut_new_dawn_democrat_focus
+						}
+						ROOT = { has_modifier = ut_new_dawn_core_democratic_mod }
+					}
+					AND = {
+						OR = {
+							has_modifier = ut_new_dawn_core_autocratic_mod
+							has_modifier = je_ut_new_dawn_autocrat_focus
+						}
+						ROOT = { has_modifier = ut_new_dawn_core_autocratic_mod }
+					}
+					AND = {
+						OR = {
+							has_modifier = ut_new_dawn_core_communist_mod
+							has_modifier = je_ut_new_dawn_communist_focus
+						}
+						ROOT = { has_modifier = ut_new_dawn_core_communist_mod }
+					}
+				}
+				ut_is_country_on_same_continent_as_root = yes
+			}
+			save_scope_as = ut_united_heritage_annexed_country
+			ROOT = {
+				save_scope_as = ut_united_heritage_country
+				every_country = {
+					limit = {
+						is_player = yes
+						NOT = { this = root }
+					}
+					trigger_event = { id = event_new_dawn.800 }
+				}
+				annex_with_incorporation = prev
+			}
+		}
+
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+ut_homeland_spread_new_dawn = {
+	is_shown = {
+		ut_new_dawn_has_core_trigger = yes
+		NOT = { has_variable = ut_ai_homeland_spread_new_dawn_var }
 	}
 	possible = {
 		is_at_war = no
@@ -945,6 +1069,7 @@ ut_ai_unite_homeland = {
 			}
 			NOT = { has_journal_entry = je_ut_new_dawn }
 			NOT = { ut_new_dawn_has_core_trigger = yes }
+			NOT =  { has_variable = je_ut_new_dawn_activate_cheat_var }
 			
 			ut_is_country_on_same_continent_as_root = yes
 		}
@@ -999,6 +1124,7 @@ ut_ai_unite_homeland = {
 					add_journal_entry = {
 						type = je_ut_new_dawn
 					}
+					ut_freeze_new_dawn_progress = yes
 				}
 
 				if = {
@@ -1099,9 +1225,8 @@ ut_ai_unite_homeland = {
 				}
 			}
 		}
-
-
-		random_diplomatically_relevant_country = {
+		
+		every_diplomatically_relevant_country = {
 			limit = {
 				NOT = { this = root }
 				OR = {
@@ -1112,19 +1237,16 @@ ut_ai_unite_homeland = {
 					}
 				}
 				country_rank < rank_value:major_power
-				is_at_war = no
 				any_primary_culture = {
 					is_primary_culture_of = ROOT
 				}
-				is_diplomatic_play_initiator  = no
-				is_diplomatic_play_target = no
 				NOT = { has_journal_entry = je_ut_new_dawn }
 				NOT = { ut_new_dawn_has_core_trigger = yes }
 				ut_is_country_on_same_continent_as_root = yes
 			}
-			save_scope_as = ut_united_heritage_annexed_country
-			ROOT = {
-				annex_with_incorporation = prev
+			add_journal_entry = je_ut_new_dawn
+			set_variable = {
+				name = je_ut_new_dawn_activate_cheat_var
 			}
 		}
 
@@ -1136,9 +1258,13 @@ ut_ai_unite_homeland = {
 			}
 			trigger_event = { id = event_new_dawn.800 }
 		}
+		set_variable = {
+			name = ut_ai_homeland_spread_new_dawn_var
+		}
 	}
 	ai_chance = {
-		value = 50
+		value = 5
+		#should be quite low so doesn't stack due to je_new_dawn start delay bug
 	}
 }
 
@@ -1151,7 +1277,7 @@ ut_unite_against_foreign_core = {
 		any_diplomatically_relevant_country = {
 			NOT = { this = root }
 			is_subject = no
-			country_rank < rank_value:major_power
+			country_rank <= rank_value:minor_power
 			any_primary_culture = {
 				is_primary_culture_of = ROOT
 			}
@@ -1170,7 +1296,7 @@ ut_unite_against_foreign_core = {
 			limit = {
 				NOT = { this = root }
 				is_subject = no
-				country_rank < rank_value:major_power
+				country_rank <= rank_value:minor_power
 				any_primary_culture = {
 					is_primary_culture_of = ROOT
 				}
