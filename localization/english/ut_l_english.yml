@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -715,7 +715,7 @@
  je_ut_new_dawn_fascist_form_paramilitary_groups_mod: "$je_ut_new_dawn_form_paramilitary_groups$"
  je_ut_new_dawn_fascist_form_paramilitary_groups_ability_add: "Paramilitary Raids"
  je_ut_new_dawn_fascist_form_paramilitary_groups_ability_remove: "#g Paramilitary Raids#!"
- je_ut_new_dawn_fascist_form_paramilitary_groups_ability_mod: "$je_ut_new_dawn_form_paramilitary_groups_ability_add$"
+ je_ut_new_dawn_fascist_form_paramilitary_groups_ability_mod: "$je_ut_new_dawn_fascist_form_paramilitary_groups_ability_add$"
  je_ut_new_dawn_form_paramilitary_groups_effect_tt: "Enables: $ut_new_dawn_fascist_raid$"
  ut_new_dawn_fascist_raid: "Fascist Raid"
  ut_new_dawn_fascist_raid_desc: "Todo..."
@@ -2468,6 +2468,8 @@
  unit_combat_unit_type_task_force_infantry_defense_add_desc: "$combat_unit_type_task_force_infantry$ $unit_defense_add$"
  unit_combat_unit_type_modern_submarine_offense_add: "$combat_unit_type_modern_submarine$ $unit_offense_add$"
  unit_combat_unit_type_modern_submarine_offense_add_desc: "$combat_unit_type_modern_submarine$ $unit_offense_add$"
+
+ ut_is_country_on_same_continent_as_root: "On Same Continent"
 
 
 #geo regions

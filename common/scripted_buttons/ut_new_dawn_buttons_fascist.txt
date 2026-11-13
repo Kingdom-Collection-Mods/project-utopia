@@ -198,9 +198,9 @@ je_ut_new_dawn_form_paramilitary_groups = {
 	}
 }
 
-je_ut_new_dawn_form_paramilitary_groups_ability_add = {
-	name = "je_ut_new_dawn_form_paramilitary_groups_ability_add"
-	desc = "je_ut_new_dawn_form_paramilitary_groups_ability_add_desc"
+je_ut_new_dawn_fascist_form_paramilitary_groups_ability_add = {
+	name = "je_ut_new_dawn_fascist_form_paramilitary_groups_ability_add"
+	desc = "je_ut_new_dawn_fascist_form_paramilitary_groups_ability_add_desc"
 	visible = {
 		has_variable = je_ut_new_dawn_form_paramilitary_groups_done
 	}
@@ -226,9 +226,9 @@ je_ut_new_dawn_form_paramilitary_groups_ability_add = {
 	}
 }
 
-je_ut_new_dawn_form_paramilitary_groups_ability_remove = {
-	name = "je_ut_new_dawn_form_paramilitary_groups_ability_remove"
-	desc = "je_ut_new_dawn_form_paramilitary_groups_ability_remove_desc"
+je_ut_new_dawn_fascist_form_paramilitary_groups_ability_add = {
+	name = "je_ut_new_dawn_fascist_form_paramilitary_groups_ability_add"
+	desc = "je_ut_new_dawn_fascist_form_paramilitary_groups_ability_add_desc"
 	visible = {
 		has_modifier = je_ut_new_dawn_fascist_form_paramilitary_groups_ability_mod
 	}

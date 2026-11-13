@@ -406,7 +406,7 @@ je_ut_new_dawn_fascist_outlaw_communists_ability_mod = {
 	political_movement_radicalism_add = -0.2
 	country_suppression_attraction_factor = -0.1
 	state_mortality_turmoil_mult = 0.05
-	country_new_dawn_pressure_progress = -0.2
+	country_new_dawn_pressure_progress = 0.2
 }
 
 je_ut_new_dawn_fascist_form_paramilitary_groups_mod = {
