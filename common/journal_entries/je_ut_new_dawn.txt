@@ -617,13 +617,12 @@
 
 	map_tooltip = {
 		owner ?= {
-			save_scope_as = relevant_country
-			#custom_tooltip_no_bullet = "reform_or_revolution_map_debug_tooltip"
 			if = {
 				limit = {
 					has_journal_entry = je_ut_new_dawn
 				}
 			}
+			custom_tooltip_no_bullet = "je_ut_new_dawn_map_tooltip"
 		}
 	}
 
