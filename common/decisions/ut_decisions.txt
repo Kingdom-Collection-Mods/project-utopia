@@ -1,4 +1,4 @@
-ut_tech_preview_cheat_research = {
+﻿ut_tech_preview_cheat_research = {
 	is_shown = {
 		is_player = yes
 		NOT = { has_global_variable = ut_tech_preview_cheat_disable }
@@ -1054,16 +1054,18 @@ ut_unite_homeland = {
 				save_scope_as = ut_united_heritage_annexed_country
 			}
 			ROOT = {
+				save_scope_as = ut_united_heritage_country
+				every_country = {
+					limit = {
+						is_player = yes
+						NOT = { this = root }
+					}
+					trigger_event = { id = event_new_dawn.800 }
+				}
+			}
+			ROOT = {
 				annex_with_incorporation = prev
 			}
-		}
-		save_scope_as = ut_united_heritage_country
-		every_country = {
-			limit = {
-				is_player = yes
-				NOT = { this = root }
-			}
-			trigger_event = { id = event_new_dawn.800 }
 		}
 	}
 	ai_chance = {
@@ -1283,7 +1285,7 @@ ut_homeland_spread_new_dawn = {
 				is_player = yes
 				NOT = { this = root }
 			}
-			trigger_event = { id = event_new_dawn.800 }
+			trigger_event = { id = event_new_dawn.803 }
 		}
 		set_variable = {
 			name = ut_ai_homeland_spread_new_dawn_var

@@ -210,6 +210,9 @@
  event_new_dawn.802.t: "[SCOPE.sCountry('ut_united_heritage_country').GetName] intervenes in [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName]"
  event_new_dawn.802.d: "[SCOPE.sCountry('ut_united_heritage_country').GetName] has intervened in the conflict surrounding [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName], a country sharing one of its primary cultures, and has incorporated it."
  event_new_dawn.802.f: "Under the banner of a shared heritage, a foreign power stepped into the war and claimed the prize for itself."
+ event_new_dawn.803.t: "A New Dawn for the [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetPrimaryCulturesDesc] people"
+ event_new_dawn.803.d: "[SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetPrimaryCulturesDesc] has set out to spread the new dawn among the [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetPrimaryCulturesDesc] lands nearby."
+ event_new_dawn.803.f: "A new dawn is breaking for the [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetPrimaryCulturesDesc] people, and its light is spreading beyond the borders of [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetName]."
 #zambia, ivory, south cameroon, lower congo
 
  event_new_dawn.2.a: "Build foundation for core ideology"

@@ -4673,6 +4673,27 @@ event_new_dawn.802 = {
 	}
 }
 
+#A new dawn spreads to a culture
+event_new_dawn.803 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.803.t
+	desc = event_new_dawn.803.d
+	flavor = event_new_dawn.803.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}
+
 #Phase 1 Cheat
 event_new_dawn.998 = {
 	type = country_event
