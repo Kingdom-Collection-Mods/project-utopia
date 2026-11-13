@@ -742,6 +742,11 @@ ut_has_modifier_autocratic_opposing_stance = {
 	has_modifier = ut_new_dawn_core_communist_mod
 }
 
+ut_root_to_this_has_modifier_opposing_stance = {
+	has_modifier = ut_new_dawn_core_autocratic_mod
+	#todo
+}
+
 ut_has_ideology_any_liberal = {
 	OR = {
 		has_ideology = ideology:ideology_liberal
@@ -764,5 +769,52 @@ ut_has_ideology_any_plutocratic = {
 		has_ideology = ideology:ideology_plutocratic_alternative
 		has_ideology = ideology:ideology_plutocratic_democratic
 		has_ideology = ideology:ideology_plutocratic_communist
+	}
+}
+
+ut_is_country_on_same_continent_as_root = {
+	custom_tooltip = {
+		text = "ut_is_country_on_same_continent_as_root"
+
+		trigger_if = {
+			limit = {
+				this.capital.state_region = {
+					is_in_geographic_region = geographic_region_europe
+				}
+			}
+			root.capital.state_region = {
+				is_in_geographic_region = geographic_region_europe
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				this.capital.state_region = {
+					is_in_geographic_region = geographic_region_americas
+				}
+			}
+			root.capital.state_region = {
+				is_in_geographic_region = geographic_region_americas
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				this.capital.state_region = {
+					is_in_geographic_region = geographic_region_africa
+				}
+			}
+			root.capital.state_region = {
+				is_in_geographic_region = geographic_region_africa
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				this.capital.state_region = {
+					is_in_geographic_region = geographic_region_asia
+				}
+			}
+			root.capital.state_region = {
+				is_in_geographic_region = geographic_region_asia
+			}
+		}
 	}
 }

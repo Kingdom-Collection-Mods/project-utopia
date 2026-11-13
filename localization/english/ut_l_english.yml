@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -200,6 +200,14 @@ l_english:
  event_new_dawn_fascist.1.a: "Let the struggle continue"
  event_new_dawn_fascist.1.b: "The Industrialists rise"
  event_new_dawn_fascist.1.c: "The Bourgeoisie rise"
+
+ event_new_dawn.800.t: "[SCOPE.sCountry('ut_united_heritage_country').GetName] incorporated [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName]"
+ event_new_dawn.800.d: "[SCOPE.sCountry('ut_united_heritage_country').GetName] has incorporated [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName], a country sharing one of its primary cultures."
+ event_new_dawn.800.f: "In the name of a shared heritage, the political map has been redrawn as a smaller state is incorporated into a larger nation."
+ event_new_dawn.801.t: "Opposition in [SCOPE.sCountry('ut_united_heritage_opposing_country').GetName] Arises"
+ event_new_dawn.801.d: "[SCOPE.sCountry('ut_united_heritage_opposing_country').GetName] has opposed the unification, setting a claim to their shared heritage."
+ event_new_dawn.801.f: "Not all nations agree with our vision of a united heritage. Diplomatic tensions rise as opposition voices make themselves heard."
+#zambia, ivory, south cameroon, lower congo
 
  event_new_dawn.2.a: "Build foundation for core ideology"
  

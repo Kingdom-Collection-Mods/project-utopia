@@ -201,6 +201,10 @@
  event_new_dawn_fascist.1.b: "Die Industriellen erstarken"
  event_new_dawn_fascist.1.c: "Das Kleinbürgertum erstarkt"
 
+ event_new_dawn.800.t: "Ein vereintes Erbe"
+ event_new_dawn.800.d: "[SCOPE.sCountry('ut_united_heritage_country').GetName] hat [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName] eingegliedert, ein Land, das eine seiner Primärkulturen teilt."
+ event_new_dawn.800.f: "Im Namen eines gemeinsamen Erbes wurde die politische Landkarte neu gezeichnet, indem ein kleinerer Staat in eine größere Nation eingegliedert wurde."
+
  event_new_dawn.2.a: "Grundlage für die Kernideologie schaffen"
  
  event_new_dawn.2.d.a: "Unsere Verbündeten in der autokratischen Fraktion haben rasch gehandelt, um die Macht zu sichern, unterstützt von wichtigen Institutionen. Der Übergang verläuft geordnet, wenn auch nicht ohne Widerstand."
