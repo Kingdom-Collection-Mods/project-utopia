@@ -499,7 +499,7 @@ ut_new_dawn_communist_focus = {
 				country_rank <= rank_value:unrecognized_major_power
 				NOT = { country_rank = rank_value:minor_power }
 			}
-			add = 5
+			add = 10
 		}
 		if = {
 			#Fascist scare if communist them self
@@ -550,6 +550,12 @@ ut_new_dawn_communist_focus = {
 		if = {
 			limit = {
 				NOT = { has_technology_researched = socialism }
+			}
+			add = -10
+		}
+		if = {
+			limit = {
+				NOT = { has_technology_researched = anarchism }
 			}
 			add = -10
 		}

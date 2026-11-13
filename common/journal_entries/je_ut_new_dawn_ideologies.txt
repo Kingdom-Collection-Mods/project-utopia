@@ -192,15 +192,19 @@ ut_je_propaganda_target = {
 		color = "gold_positive"
 		conclusion_desc = je_standard_completion_conclusion_desc
 		trigger = {
-			custom_tooltip = {
-				text = ut_je_propaganda_target_abort_tt
+			scope:target = {
+				custom_tooltip = {
+					text = ut_je_propaganda_target_abort_tt
+					always = yes
+					#just to show what the attacking country is
+				}
+			}
+			hidden_trigger = {
 				has_variable = ut_propaganda_target_abandon_var
 			}
-
 		}
 		effect = {
 			remove_variable = ut_propaganda_target_abandon_var
-
 		}
 	}
 
