@@ -132,7 +132,7 @@ ut_new_dawn_fascist_focus = {
 		#For Rule Start Era 4/5, so monarchies are more likely to choose autocrat focus then fascist
 		if = {
 			limit = {
-				NOT = { has_technology_researched = political_agitation }
+				NOT = { has_technology_researched = corporatism }
 			}
 			add = -10
 		}
@@ -549,7 +549,7 @@ ut_new_dawn_communist_focus = {
 		#For Rule Start Era 4/5, so monarchies are more likely to choose autocrat/democrat focus then communist
 		if = {
 			limit = {
-				NOT = { has_technology_researched = political_agitation }
+				NOT = { has_technology_researched = socialism }
 			}
 			add = -10
 		}
