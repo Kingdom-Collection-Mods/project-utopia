@@ -1055,18 +1055,17 @@ ut_unite_homeland = {
 				save_scope_as = ut_united_heritage_annexed_country
 			}
 			ROOT = {
-				save_scope_as = ut_united_heritage_country
-				every_country = {
-					limit = {
-						is_player = yes
-						NOT = { this = root }
-					}
-					trigger_event = { id = event_new_dawn.800 }
-				}
-			}
-			ROOT = {
 				annex_with_incorporation = prev
 			}
+		}
+		
+		save_scope_as = ut_united_heritage_country
+		every_country = {
+			limit = {
+				is_player = yes
+				NOT = { this = root }
+			}
+			trigger_event = { id = event_new_dawn.800 }
 		}
 	}
 	ai_chance = {
@@ -1076,14 +1075,14 @@ ut_unite_homeland = {
 
 ut_homeland_spread_new_dawn = {
 	is_shown = {
+		country_rank >= rank_value:major_power
 		ut_new_dawn_has_core_trigger = yes
 		NOT = { has_variable = ut_ai_homeland_spread_new_dawn_var }
 	}
 	possible = {
-		is_at_war = no
 		any_diplomatically_relevant_country = {
-			is_revolutionary = no
 			NOT = { this = root }
+			is_revolutionary = no
 			OR = {
 				is_subject = no
 				AND = {
@@ -1092,9 +1091,6 @@ ut_homeland_spread_new_dawn = {
 				}
 			}
 			country_rank < rank_value:major_power
-			is_at_war = no
-			is_diplomatic_play_initiator  = no
-			is_diplomatic_play_target = no
 			any_primary_culture = {
 				is_primary_culture_of = ROOT
 			}
@@ -1261,6 +1257,7 @@ ut_homeland_spread_new_dawn = {
 		every_diplomatically_relevant_country = {
 			limit = {
 				NOT = { this = root }
+				is_revolutionary = no
 				OR = {
 					is_subject = no
 					AND = {
