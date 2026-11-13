@@ -210,9 +210,9 @@
  event_new_dawn.802.t: "[SCOPE.sCountry('ut_united_heritage_country').GetName] greift in [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName] ein"
  event_new_dawn.802.d: "[SCOPE.sCountry('ut_united_heritage_country').GetName] hat in den Konflikt um [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName], ein Land, das eine seiner Primärkulturen teilt, eingegriffen und es eingegliedert."
  event_new_dawn.802.f: "Im Namen eines gemeinsamen Erbes trat eine fremde Macht in den Krieg ein und sicherte sich die Beute."
- event_new_dawn.803.t: "Eine neue Morgendämmerung für die [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetCulture.GetName]"
- event_new_dawn.803.d: "[SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetName] hat begonnen, die neue Morgendämmerung unter den nahegelegenen [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetCulture.GetName]en Ländern zu verbreiten."
- event_new_dawn.803.f: "Eine neue Morgendämmerung bricht für das Volk der [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetCulture.GetName] an, und ihr Licht reicht über die Grenzen von [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetName] hinaus."
+event_new_dawn.803.t: "Eine neue Morgendämmerung für die [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetPrimaryCulturesDesc]"
+event_new_dawn.803.d: "[SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetName] hat begonnen, die neue Morgendämmerung unter den nahegelegenen [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetPrimaryCulturesDesc]en Ländern zu verbreiten."
+event_new_dawn.803.f: "Eine neue Morgendämmerung bricht für das Volk der [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetPrimaryCulturesDesc] an, und ihr Licht reicht über die Grenzen von [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetName] hinaus."
  ut_is_country_on_same_continent_as_root: "Auf demselben Kontinent"
 
  event_new_dawn.2.a: "Grundlage für die Kernideologie schaffen"
