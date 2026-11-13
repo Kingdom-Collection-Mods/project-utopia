@@ -4652,6 +4652,27 @@ event_new_dawn.801 = {
 	}
 }
 
+#A country intervenes in a conflict and incorporates the target
+event_new_dawn.802 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.802.t
+	desc = event_new_dawn.802.d
+	flavor = event_new_dawn.802.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}
+
 #Phase 1 Cheat
 event_new_dawn.998 = {
 	type = country_event

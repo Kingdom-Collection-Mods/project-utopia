@@ -207,6 +207,9 @@
  event_new_dawn.801.t: "Widerstand in [SCOPE.sCountry('ut_united_heritage_opposing_country').GetName]"
  event_new_dawn.801.d: "[SCOPE.sCountry('ut_united_heritage_opposing_country').GetName] hat sich der Vereinigung widersetzt und Anspruch auf das gemeinsame Erbe erhoben."
  event_new_dawn.801.f: "Nicht alle Nationen teilen unsere Vorstellung eines vereinten Erbes. Diplomatische Spannungen nehmen zu, während sich Widerstand regt."
+ event_new_dawn.802.t: "[SCOPE.sCountry('ut_united_heritage_country').GetName] greift in [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName] ein"
+ event_new_dawn.802.d: "[SCOPE.sCountry('ut_united_heritage_country').GetName] hat in den Konflikt um [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName], ein Land, das eine seiner Primärkulturen teilt, eingegriffen und es eingegliedert."
+ event_new_dawn.802.f: "Im Namen eines gemeinsamen Erbes trat eine fremde Macht in den Krieg ein und sicherte sich die Beute."
  ut_is_country_on_same_continent_as_root: "Auf demselben Kontinent"
 
  event_new_dawn.2.a: "Grundlage für die Kernideologie schaffen"

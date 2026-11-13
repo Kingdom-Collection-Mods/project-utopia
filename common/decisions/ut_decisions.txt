@@ -943,6 +943,18 @@ ut_unite_homeland = {
 			any_primary_culture = {
 				is_primary_culture_of = ROOT
 			}
+			every_primary_culture = {
+				ROOT = {
+					country_average_cultural_acceptance = {
+						target = prev
+						value >= acceptance_status_5
+					}
+					country_average_religious_acceptance = {
+						target = prev
+						value >= religious_acceptance_low
+					}
+				}
+			}
 			OR = {
 				AND = {
 					OR = {
@@ -980,6 +992,7 @@ ut_unite_homeland = {
 	when_taken = {
 		random_diplomatically_relevant_country = {
 			limit = {
+				exists = this
 				NOT = { this = root }
 				OR = {
 					is_subject = no
@@ -994,6 +1007,18 @@ ut_unite_homeland = {
 				is_diplomatic_play_target = no
 				any_primary_culture = {
 					is_primary_culture_of = ROOT
+				}
+				every_primary_culture = {
+					ROOT = {
+						country_average_cultural_acceptance = {
+							target = prev
+							value >= acceptance_status_5
+						}
+						country_average_religious_acceptance = {
+							target = prev
+							value >= religious_acceptance_low
+						}
+					}
 				}
 				OR = {
 					AND = {
@@ -1043,7 +1068,7 @@ ut_unite_homeland = {
 
 	}
 	ai_chance = {
-		value = 100
+		value = 50
 	}
 }
 
@@ -1315,7 +1340,16 @@ ut_unite_against_foreign_core = {
 				}
 				add_target_backers = { ROOT }
 			}
+			save_scope_as = ut_united_heritage_annexed_country
 			ROOT = {
+				save_scope_as = ut_united_heritage_country
+				every_country = {
+					limit = {
+						is_player = yes
+						NOT = { this = root }
+					}
+					trigger_event = { id = event_new_dawn.802 popup = yes }
+				}
 				annex_with_incorporation = prev
 			}
 		}

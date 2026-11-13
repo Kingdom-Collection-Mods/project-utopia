@@ -207,6 +207,9 @@
  event_new_dawn.801.t: "Opposition in [SCOPE.sCountry('ut_united_heritage_opposing_country').GetName] Arises"
  event_new_dawn.801.d: "[SCOPE.sCountry('ut_united_heritage_opposing_country').GetName] has opposed the unification, setting a claim to their shared heritage."
  event_new_dawn.801.f: "Not all nations agree with our vision of a united heritage. Diplomatic tensions rise as opposition voices make themselves heard."
+ event_new_dawn.802.t: "[SCOPE.sCountry('ut_united_heritage_country').GetName] intervenes in [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName]"
+ event_new_dawn.802.d: "[SCOPE.sCountry('ut_united_heritage_country').GetName] has intervened in the conflict surrounding [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName], a country sharing one of its primary cultures, and has incorporated it."
+ event_new_dawn.802.f: "Under the banner of a shared heritage, a foreign power stepped into the war and claimed the prize for itself."
 #zambia, ivory, south cameroon, lower congo
 
  event_new_dawn.2.a: "Build foundation for core ideology"
