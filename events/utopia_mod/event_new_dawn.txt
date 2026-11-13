@@ -4101,7 +4101,7 @@ event_new_dawn.121 = {
 		ut_new_dawn_has_core_trigger = yes
 
 		ut_has_new_dawn_pressure_points = {
-			VALUE = 10
+			VALUE = 50
 		}
 	}
 
@@ -4610,6 +4610,89 @@ event_new_dawn.214 = {
 	}
 }
 
+
+#A country unites its heritage
+event_new_dawn.800 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.800.t
+	desc = event_new_dawn.800.d
+	flavor = event_new_dawn.800.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}
+
+event_new_dawn.801 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.801.t
+	desc = event_new_dawn.801.d
+	flavor = event_new_dawn.801.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}
+
+#A country intervenes in a conflict and incorporates the target
+event_new_dawn.802 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.802.t
+	desc = event_new_dawn.802.d
+	flavor = event_new_dawn.802.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}
+
+#A new dawn spreads to a culture
+event_new_dawn.803 = {
+	type = country_event
+	placement = ROOT
+	title = event_new_dawn.803.t
+	desc = event_new_dawn.803.d
+	flavor = event_new_dawn.803.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}
 
 #Phase 1 Cheat
 event_new_dawn.998 = {

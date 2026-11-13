@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -200,6 +200,20 @@ l_english:
  event_new_dawn_fascist.1.a: "Let the struggle continue"
  event_new_dawn_fascist.1.b: "The Industrialists rise"
  event_new_dawn_fascist.1.c: "The Bourgeoisie rise"
+
+ event_new_dawn.800.t: "[SCOPE.sCountry('ut_united_heritage_country').GetName] incorporated [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName]"
+ event_new_dawn.800.d: "[SCOPE.sCountry('ut_united_heritage_country').GetName] has incorporated [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName], a country sharing one of its primary cultures."
+ event_new_dawn.800.f: "In the name of a shared heritage, the political map has been redrawn as a smaller state is incorporated into a larger nation."
+ event_new_dawn.801.t: "Opposition in [SCOPE.sCountry('ut_united_heritage_opposing_country').GetName] Arises"
+ event_new_dawn.801.d: "[SCOPE.sCountry('ut_united_heritage_opposing_country').GetName] has opposed the unification, setting a claim to their shared heritage."
+ event_new_dawn.801.f: "Not all nations agree with our vision of a united heritage. Diplomatic tensions rise as opposition voices make themselves heard."
+ event_new_dawn.802.t: "[SCOPE.sCountry('ut_united_heritage_country').GetName] intervenes in [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName]"
+ event_new_dawn.802.d: "[SCOPE.sCountry('ut_united_heritage_country').GetName] has intervened in the conflict surrounding [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName], a country sharing one of its primary cultures, and has incorporated it."
+ event_new_dawn.802.f: "Under the banner of a shared heritage, a foreign power stepped into the war and claimed the prize for itself."
+ event_new_dawn.803.t: "A New Dawn for the [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetPrimaryCulturesDesc] people"
+ event_new_dawn.803.d: "[SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetPrimaryCulturesDesc] has set out to spread the new dawn among the [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetPrimaryCulturesDesc] lands nearby."
+ event_new_dawn.803.f: "A new dawn is breaking for the [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetPrimaryCulturesDesc] people, and its light is spreading beyond the borders of [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetName]."
+#zambia, ivory, south cameroon, lower congo
 
  event_new_dawn.2.a: "Build foundation for core ideology"
  
@@ -719,6 +733,12 @@ l_english:
  je_ut_new_dawn_form_paramilitary_groups_effect_tt: "Enables: $ut_new_dawn_fascist_raid$"
  ut_new_dawn_fascist_raid: "Fascist Raid"
  ut_new_dawn_fascist_raid_desc: "Todo..."
+ ut_unite_homeland: "Unite the Homeland"
+ ut_unite_homeland_desc: "Incorporate eligible smaller countries on this continent that share our primary culture and New Dawn ideology."
+ ut_homeland_spread_new_dawn: "Spread New Dawn in the Homeland"
+ ut_homeland_spread_new_dawn_desc: "Extend the New Dawn to smaller countries on this continent that share our primary culture."
+ ut_unite_against_foreign_core: "Defend Our Shared Heritage"
+ ut_unite_against_foreign_core_desc: "Intervene in a conflict involving a culturally related country and incorporate it into our nation, so long as none of the participants follow the autocratic path."
  je_ut_new_dawn_conformity_effect_tt: "Enables: Einsatz Hilfs Polizei. Event: Röhm Putsch"
  je_ut_new_dawn_volksgemeinschaft_effect_tt: "Enables: Political Education. Event: Novemberpogrom"
 
