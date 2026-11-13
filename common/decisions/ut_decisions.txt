@@ -1315,6 +1315,13 @@ ut_unite_against_foreign_core = {
 			}
 			is_diplomatic_play_target = yes
 			ut_is_country_on_same_continent_as_root = { TARGET = root }
+			#todo check if intervene possibility to broad
+			any_diplomatic_play = {
+                target_is = this
+                any_scope_play_involved = {
+					ut_new_dawn_has_core_trigger = yes
+                }
+            }
 		}
 	}
 	when_taken = {
