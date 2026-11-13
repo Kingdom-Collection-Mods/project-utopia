@@ -1,4 +1,4 @@
-﻿#Base
+#Base
 ut_new_dawn_fascist_focus = {
 	name = "ut_new_dawn_fascist_focus"
 	desc = "ut_new_dawn_fascist_focus_desc"
@@ -473,6 +473,7 @@ ut_new_dawn_communist_focus = {
 				OR = {
 					c:FRA ?= this
 					c:CHI ?= this
+					country_has_primary_culture = cu:han
 				}
 			}
 			add = 10
