@@ -1053,9 +1053,9 @@ ut_unite_homeland = {
 				}
 				ut_is_country_on_same_continent_as_root = yes
 				save_scope_as = ut_united_heritage_annexed_country
-			}
-			ROOT = {
-				annex_with_incorporation = prev
+				ROOT = {
+					annex_with_incorporation = prev
+				}
 			}
 		}
 		
@@ -1096,7 +1096,7 @@ ut_homeland_spread_new_dawn = {
 			}
 			NOT = { has_journal_entry = je_ut_new_dawn }
 			NOT = { ut_new_dawn_has_core_trigger = yes }
-			NOT =  { has_variable = je_ut_new_dawn_activate_cheat_var }
+			NOT =  { has_variable = je_ut_new_dawn_heritage_activated_var }
 			
 			ut_is_country_on_same_continent_as_root = yes
 		}
@@ -1147,7 +1147,7 @@ ut_homeland_spread_new_dawn = {
 						}
 					}
 					set_variable = {
-						name = je_ut_new_dawn_activate_cheat_var
+						name = je_ut_new_dawn_heritage_activated_var
 					}
 					add_journal_entry = {
 						type = je_ut_new_dawn
@@ -1294,7 +1294,7 @@ ut_homeland_spread_new_dawn = {
 		}
 	}
 	ai_chance = {
-		value = 10
+		value = 100
 		#should be quite low so doesn't stack due to je_new_dawn start delay bug
 	}
 }
@@ -1310,18 +1310,18 @@ ut_unite_against_foreign_core = {
 			NOT = { this = root }
 			is_subject = no
 			country_rank <= rank_value:minor_power
-			any_primary_culture = {
-				is_primary_culture_of = ROOT
-			}
-			is_diplomatic_play_target = yes
 			ut_is_country_on_same_continent_as_root = { TARGET = root }
+			is_diplomatic_play_target = yes
 			#todo check if intervene possibility to broad
 			any_diplomatic_play = {
-                target_is = this
+                target_is = prev
                 any_scope_play_involved = {
 					ut_new_dawn_has_core_trigger = yes
                 }
             }
+			any_primary_culture = {
+				is_primary_culture_of = ROOT
+			}
 		}
 	}
 	when_taken = {
@@ -1331,11 +1331,18 @@ ut_unite_against_foreign_core = {
 				is_revolutionary = no
 				is_subject = no
 				country_rank <= rank_value:minor_power
+				ut_is_country_on_same_continent_as_root = { TARGET = root }
+				is_diplomatic_play_target = yes
+				#
+				any_diplomatic_play = {
+					target_is = prev
+					any_scope_play_involved = {
+						ut_new_dawn_has_core_trigger = yes
+					}
+				}
 				any_primary_culture = {
 					is_primary_culture_of = ROOT
 				}
-				is_diplomatic_play_target = yes
-				ut_is_country_on_same_continent_as_root = { TARGET = root }
 			}
 			random_diplomatic_play = {
 				limit = {
@@ -1367,12 +1374,21 @@ ut_unite_against_foreign_core = {
 	}
 }
 
+#deprecated for backward compatibility, not sure if laws properly load into countries in 1.15
 ut_law_forced_laborers_enact = {
 	is_shown = {
 		is_player = yes
+		NOT = { has_law = law_type:ut_law_forced_laborers }	
 	}
 	
 	possible = {
+		has_modifier = ut_new_dawn_core_fascist_mod
+		OR = {
+			has_law = law_type:law_debt_slavery
+			has_law = law_type:law_slave_trade
+			has_law = law_type:law_legacy_slavery
+			has_law = law_type:law_colonial_slavery
+		}
 	}
 
 	when_taken = {

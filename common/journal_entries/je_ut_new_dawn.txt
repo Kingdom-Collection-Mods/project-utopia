@@ -623,7 +623,6 @@
 				limit = {
 					has_journal_entry = je_ut_new_dawn
 				}
-				custom_tooltip_no_bullet = "je_ut_new_dawn_map_tooltip"
 			}
 		}
 	}

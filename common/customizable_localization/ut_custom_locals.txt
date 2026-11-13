@@ -117,7 +117,7 @@ ut_new_dawn_phase_1_trend = {
 
 	text = {
 		trigger = {
-			je:je_ut_new_dawn = {
+			je:je_ut_new_dawn ?= {
 				"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
 				"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 				"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
@@ -129,7 +129,7 @@ ut_new_dawn_phase_1_trend = {
 
 	text = {
 		trigger = {
-			je:je_ut_new_dawn = {
+			je:je_ut_new_dawn ?= {
 				"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
 				"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 				"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -141,7 +141,7 @@ ut_new_dawn_phase_1_trend = {
 	
 	text = {
 		trigger = {
-			je:je_ut_new_dawn = {
+			je:je_ut_new_dawn ?= {
 				"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
 				"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)" 
 				"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -153,7 +153,7 @@ ut_new_dawn_phase_1_trend = {
 	
 	text = {
 		trigger = {
-			je:je_ut_new_dawn = {
+			je:je_ut_new_dawn ?= {
 				"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 				"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 				"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -175,7 +175,7 @@ ut_new_dawn_phase_1_trend_detailed = {
 
 	text = {
 		trigger = {
-			je:je_ut_new_dawn = {
+			je:je_ut_new_dawn ?= {
 				"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
 				"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 				"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
@@ -187,7 +187,7 @@ ut_new_dawn_phase_1_trend_detailed = {
 
 	text = {
 		trigger = {
-			je:je_ut_new_dawn = {
+			je:je_ut_new_dawn ?= {
 				"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
 				"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 				"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -199,7 +199,7 @@ ut_new_dawn_phase_1_trend_detailed = {
 	
 	text = {
 		trigger = {
-			je:je_ut_new_dawn = {
+			je:je_ut_new_dawn ?= {
 				"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
 				"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)" 
 				"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -211,7 +211,7 @@ ut_new_dawn_phase_1_trend_detailed = {
 	
 	text = {
 		trigger = {
-			je:je_ut_new_dawn = {
+			je:je_ut_new_dawn ?= {
 				"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 				"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 				"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -237,7 +237,7 @@ ut_new_dawn_phase_1_trend_focus = {
 			OR = {
 				AND = {
 					has_modifier = je_ut_new_dawn_democrat_focus
-					je:je_ut_new_dawn = {
+					je:je_ut_new_dawn ?= {
 						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
 						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 						"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
@@ -245,7 +245,7 @@ ut_new_dawn_phase_1_trend_focus = {
 				}
 				AND = {
 					has_modifier = je_ut_new_dawn_autocrat_focus
-					je:je_ut_new_dawn = {
+					je:je_ut_new_dawn ?= {
 						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
 						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -253,7 +253,7 @@ ut_new_dawn_phase_1_trend_focus = {
 				}
 				AND = {
 					has_modifier = je_ut_new_dawn_fascist_focus
-					je:je_ut_new_dawn = {
+					je:je_ut_new_dawn ?= {
 						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
 						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)" 
 						"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
@@ -261,7 +261,7 @@ ut_new_dawn_phase_1_trend_focus = {
 				}
 				AND = {
 					has_modifier = je_ut_new_dawn_communist_focus
-					je:je_ut_new_dawn = {
+					je:je_ut_new_dawn ?= {
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
 						"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"

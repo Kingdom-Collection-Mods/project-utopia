@@ -103,6 +103,8 @@
  concept_ut_research_institute_desc: "When unlocked, an initiative to found a [GetBuildingType('building_ut_research_institute').GetName] can be started via [concept_decision]. The Institute then needs to be constructed. The institute is a major source of $country_weekly_innovation_max_add$. Large research projects can be unlocked. \n\nEra 6 (1936-1961): [GetTechnology('nuclear_power').GetName] \nEra 7 (1962-1986): [GetTechnology('high_tech_computers').GetName]."
  ut_research_institute_found: "Found Research Institute"
  ut_research_institute_found_desc: "A national [concept_ut_research_institute] is to be established to consolidate scientific excellence, promote fundamental research, and structurally accelerate technological progress. The construction of this institution marks a milestone on the path to a knowledge-based society."
+ ut_law_forced_laborers_enact: "Enact Forced Laborers"
+ ut_law_forced_laborers_enact_desc: "Enact the Forced Laborers law, permitting the forced labor of enslaved people."
  ut_je_research_institute_founding: "Founding a Research Institute"
  ut_je_research_institute_founding_reason: "Our nation prepares to institutionalize innovation by establishing a dedicated research institute. In an age where ideas fuel power, the foundation of such an institute marks a monumental step forward. Here, minds will be sharpened, knowledge systematized, and breakthroughs born not of accident, but design."
  ut_je_research_institute_founding.success.d: "The research institute is operational. It provides a structured space for innovation, accelerating technological advancement and cultivating national prestige."
