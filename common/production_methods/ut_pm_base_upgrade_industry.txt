@@ -1069,7 +1069,7 @@ pm_elastics_two = {
 	}
 }
 
-
+#todo rework heavy_machinery_era_analog_two era 6 into 6 and 8 (robots era)
 pm_assembly_lines_building_heavy_machinery_cars = {
 	texture = gfx/interface/icons/production_method_icons/ut_assembly_lines.dds
 	

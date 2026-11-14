@@ -2713,6 +2713,10 @@ event_new_dawn.50 = {
 		ut_add_new_dawn_core_progress = {
 			VALUE = -5
 		}
+		add_modifier = {
+			name = new_dawn_event_suppress_radicals_mod
+			days = 90
+		}
 	}
 
 	#Happens

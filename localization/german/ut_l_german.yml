@@ -518,7 +518,7 @@ event_new_dawn.803.f: "Eine neue Morgendämmerung bricht für das Volk der [SCOP
  je_ut_new_dawn_autocrat_focus_desc: "Autokratischer Fokus ausgewählt"
  je_ut_new_dawn_communist_focus: "Kommunistischer Fokus"
  je_ut_new_dawn_communist_focus_desc: "Kommunistischer Fokus ausgewählt"
- ut_new_dawn_phase_2_progress_modifier: "x0.25 Multiplikator während $new_dawn_phase_2_mod$"
+ ut_new_dawn_phase_2_progress_modifier: "x0.5 Multiplikator während $new_dawn_phase_2_mod$"
 
  ut_new_dawn_core_fascist_mod: "Faschistische Ideologie"
  je_ut_new_dawn_fascist_mod: "Faschist"
