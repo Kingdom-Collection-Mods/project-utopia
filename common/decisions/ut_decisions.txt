@@ -1054,6 +1054,9 @@ ut_unite_homeland = {
 				ut_is_country_on_same_continent_as_root = yes
 			}
 			save_scope_as = ut_united_heritage_annexed_country
+			capital = {
+				save_scope_as = ut_united_heritage_annexed_country_capital
+			}
 		}
 		
 		save_scope_as = ut_united_heritage_country
@@ -1140,6 +1143,9 @@ ut_homeland_spread_new_dawn = {
 					exists = scope:ut_united_heritage_opposing_country
 				}
 				scope:ut_united_heritage_opposing_country = {
+					capital = {
+						save_scope_as = ut_united_heritage_annexed_country_capital
+					}
 					if = {
 						limit = {
 							NOT = { has_journal_entry = je_ut_new_dawn }
@@ -1287,6 +1293,9 @@ ut_homeland_spread_new_dawn = {
 		}
 
 		save_scope_as = ut_homeland_spread_new_dawn_country
+		capital = {
+			save_scope_as = ut_homeland_spread_new_dawn_country_capital
+		}
 		every_country = {
 			limit = {
 				is_player = yes
@@ -1362,6 +1371,9 @@ ut_unite_against_foreign_core = {
 				add_target_backers = { ROOT }
 			}
 			save_scope_as = ut_united_heritage_annexed_country
+			capital = {
+				save_scope_as = ut_united_heritage_annexed_country_capital
+			}
 			ROOT = {
 				save_scope_as = ut_united_heritage_country
 				every_country = {
