@@ -519,7 +519,7 @@
  je_ut_new_dawn_autocrat_focus_desc: "Autocratic focus selected"
  je_ut_new_dawn_communist_focus: "Communist Focus"
  je_ut_new_dawn_communist_focus_desc: "Communist focus selected"
- ut_new_dawn_phase_2_progress_modifier: "x0.25 Multiplier during #bold $new_dawn_phase_2_mod$#!"
+ ut_new_dawn_phase_2_progress_modifier: "x0.5 Multiplier during #bold $new_dawn_phase_2_mod$#!"
 
  ut_new_dawn_core_fascist_mod: "Fascist Ideology"
  je_ut_new_dawn_fascist_mod: "Fascist"
