@@ -39,7 +39,12 @@
 		trigger = {
 			has_technology_researched = computers
 			has_modifier = je_ut_software_era_6_3_high_level_language_mod
-
+			custom_tooltip = {
+				text = je_ut_software_era_6_required_points_tt
+				je:je_ut_software_era_6 = { 
+					"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 100
+				}
+			}
 		}
 		effect = {
 			set_variable = je_ut_software_era_6_done
@@ -181,6 +186,12 @@ je_ut_software_era_7 = {
 		trigger = {
 			has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
 			has_technology_researched = internet
+			custom_tooltip = {
+				text = je_ut_software_era_7_required_points_tt
+				je:je_ut_software_era_7 = { 
+					"scripted_bar_progress(je_ut_software_points_bar_era_7)" >= 1000
+				}
+			}
 
 		}
 		effect = {
