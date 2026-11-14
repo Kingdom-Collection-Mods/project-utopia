@@ -1461,7 +1461,7 @@ event_new_dawn.803.f: "Eine neue Morgendämmerung bricht für das Volk der [SCOP
  ut_add_new_dawn_p1_progress_autocrat_neg_10: "Verliert #r 10#! [concept_ut_nd_autocrat_core] [concept_ut_nd_progress_points]"
  ut_add_new_dawn_p1_progress_fascist_neg_10: "Verliert #r 10#! [concept_ut_nd_fascist_core] [concept_ut_nd_progress_points]"
  ut_add_new_dawn_p1_progress_focus_5: "Erhält #g 5#! [concept_ut_nd_progress_points] für die Ideologie im [concept_ut_nd_focus]"
- ut_add_new_dawn_p1_progress_focus_10: "Gains #g 10#! [concept_ut_nd_progress_points] to [concept_ut_nd_focus] Ideology"
+ ut_add_new_dawn_p1_progress_focus_10: "Erhält #g 10#! [concept_ut_nd_progress_points] für die Ideologie im [concept_ut_nd_focus]"
 
  ut_has_new_dawn_pressure_50: "Hat #b 50#! [concept_ut_nd_pressure]"
  ut_has_new_dawn_pressure_75: "Hat #b 75#! [concept_ut_nd_pressure]"
@@ -1470,6 +1470,7 @@ event_new_dawn.803.f: "Eine neue Morgendämmerung bricht für das Volk der [SCOP
  ut_has_new_dawn_pressure_max: "Hat #b 100#! [concept_ut_nd_pressure]"
 
  ut_add_new_dawn_pressure_add_1: "Erhöht [concept_ut_nd_pressure] um #r 1#!"
+ ut_add_new_dawn_pressure_add_2: "Erhöht [concept_ut_nd_pressure] um #r 2#!"
  ut_add_new_dawn_pressure_add_5: "Erhöht [concept_ut_nd_pressure] um #r 5#!"
  ut_add_new_dawn_pressure_add_10: "Erhöht [concept_ut_nd_pressure] um #r 10#!"
  ut_add_new_dawn_pressure_remove_10: "Verringert [concept_ut_nd_pressure] um #g 10#!"

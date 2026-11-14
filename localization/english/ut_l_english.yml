@@ -871,7 +871,7 @@
  concept_ut_nd_focus_desc: "When the #b New Dawn#! journal entry is active, focus on the New Dawn ideology becomes available. Focusing on an ideology makes it much more likely to become dominant. If the ideology becomes entrenched, the focus also remains active."
 
  concept_ut_nd_pressure: "Pressure"
- concept_ut_nd_pressure_desc: "Pressure represents the degree of friction a nation faces. It measures the strength of internal forces attempting to erode your country's ideology, pushing it toward a new political identity.\n\nIf active, events can happen:\n- Pressure <25: Positive events can happen\n- Pressure >50: Negative events can happen\n- Pressure >75: Very negative events can happen\n\n#b AI nations do not have [concept_ut_nd_pressure] and do not experience pressure events.#!"
+ concept_ut_nd_pressure_desc: "Pressure represents the degree of friction a nation faces. It measures the strength of internal forces attempting to erode your country's ideology, pushing it toward a new political identity.\n\nIf active, events can happen:\n- Pressure <25: Positive events can happen\n- Pressure >50: Negative events can happen\n- Pressure >75: Very negative events are likely to happen\n\n#b AI nations do not have [concept_ut_nd_pressure] and do not experience pressure events.#!"
 
  concept_ut_nd_stance_default_desc: "Each ideology has a stance towards other ideologies. The stance affects acceptance of joining and staying in a power bloc, ideological law stances, and most new Project Utopia actions."
 
@@ -1476,6 +1476,7 @@
  ut_has_new_dawn_pressure_max: "Has #b 100#! [concept_ut_nd_pressure]"
 
  ut_add_new_dawn_pressure_add_1: "Gains #r 1#! [concept_ut_nd_pressure]"
+ ut_add_new_dawn_pressure_add_2: "Gains #r 2#! [concept_ut_nd_pressure]"
  ut_add_new_dawn_pressure_add_5: "Gains #r 5#! [concept_ut_nd_pressure]"
  ut_add_new_dawn_pressure_add_10: "Gains #r 10#! [concept_ut_nd_pressure]"
  ut_add_new_dawn_pressure_remove_10: "Loses #g 10#! [concept_ut_nd_pressure]"

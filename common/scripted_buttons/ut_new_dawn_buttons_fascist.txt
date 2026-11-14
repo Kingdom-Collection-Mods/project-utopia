@@ -100,9 +100,9 @@ je_ut_new_dawn_outlaw_communists_ability_add = {
 	
 	effect = {
 		custom_tooltip = {
-			text = ut_add_new_dawn_pressure_add_5
+			text = ut_add_new_dawn_pressure_add_2
 			ut_add_new_dawn_pressure_points = {
-				VALUE = 5
+				VALUE = 2
 			}
 		}
 		add_modifier = {
@@ -211,9 +211,9 @@ je_ut_new_dawn_fascist_form_paramilitary_groups_ability_add = {
 	}
 	effect = {
 		custom_tooltip = {
-			text = ut_add_new_dawn_pressure_add_5
+			text = ut_add_new_dawn_pressure_add_2
 			ut_add_new_dawn_pressure_points = {
-				VALUE = 5
+				VALUE = 2
 			}
 		}
 		add_modifier = {

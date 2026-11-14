@@ -1303,12 +1303,13 @@ ut_unite_against_foreign_core = {
 		ut_new_dawn_has_core_trigger = yes
 	}
 	possible = {
-		is_at_war = no
 		any_diplomatically_relevant_country = {
 			is_revolutionary = no
+			is_at_war = no
 			NOT = { this = root }
 			is_subject = no
 			country_rank <= rank_value:minor_power
+			NOT = { ut_new_dawn_has_core_trigger = yes }
 			ut_is_country_on_same_continent_as_root = { TARGET = root }
 			is_diplomatic_play_target = yes
 			#todo check if intervene possibility to broad
@@ -1329,7 +1330,9 @@ ut_unite_against_foreign_core = {
 				NOT = { this = root }
 				is_revolutionary = no
 				is_subject = no
+				is_at_war = no
 				country_rank <= rank_value:minor_power
+				NOT = { ut_new_dawn_has_core_trigger = yes }
 				ut_is_country_on_same_continent_as_root = { TARGET = root }
 				is_diplomatic_play_target = yes
 				#
