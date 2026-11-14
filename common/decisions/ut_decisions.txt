@@ -1152,6 +1152,12 @@ ut_homeland_spread_new_dawn = {
 						type = je_ut_new_dawn
 					}
 					ut_freeze_new_dawn_progress = yes
+					if = {
+						limit = {
+							has_journal_entry = je_earn_recognition
+						}	
+						set_country_type = recognized
+					}
 				}
 
 				if = {
