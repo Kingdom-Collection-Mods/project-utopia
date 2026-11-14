@@ -228,7 +228,7 @@ ut_new_dawn_democrat_progress = { #See Communist progress to see how this works.
 	}
 	else_if = {
 		limit = {
-			ut_new_dawn_has_democrat_secondary_core_laws_trigger = yes
+			ut_new_dawn_has_democrat_core_secondary_laws_trigger = yes
 		}
 		ROOT = {
 			change_variable = { name = ut_nd_democrat_progress_from_core_laws add = 0.5 }
@@ -376,7 +376,7 @@ ut_new_dawn_autocrat_progress = { #See Communist progress to see how this works.
 	}
 	else_if = {
 		limit = {
-			ut_new_dawn_has_democrat_secondary_core_laws_trigger = yes
+			ut_new_dawn_has_democrat_core_secondary_laws_trigger = yes
 		}
 		change_variable = { name = ut_nd_autocrat_progress_from_opposing_laws add = -0.05 }
 	}
@@ -499,7 +499,7 @@ ut_new_dawn_fascist_progress = { #See Fascist progress to see how this works.
 	}
 	else_if = {
 		limit = {
-			ut_new_dawn_has_democrat_secondary_core_laws_trigger = yes
+			ut_new_dawn_has_democrat_core_secondary_laws_trigger = yes
 		}
 		change_variable = { name = ut_nd_fascist_progress_from_opposing_laws add = -0.1 }
 	}

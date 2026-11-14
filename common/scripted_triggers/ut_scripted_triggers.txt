@@ -204,7 +204,7 @@ ut_new_dawn_has_democrat_core_laws_trigger = {
 	has_law_or_variant = law_type:law_universal_suffrage
 }
 
-ut_new_dawn_has_democrat_secondary_core_laws_trigger = {
+ut_new_dawn_has_democrat_core_secondary_laws_trigger = {
 	has_law_or_variant = law_type:law_census_voting
 }
 
@@ -223,7 +223,7 @@ ut_new_dawn_has_autocrat_core_laws_trigger = {
 }
 
 # todo do something for law_technocracy and theocracy alignment to autocracy or more
-# ut_new_dawn_has_autocrat_secondary_core_laws_trigger = {
+# ut_new_dawn_has_autocrat_core_secondary_laws_trigger = {
 # 	AND = {
 # 		OR = {
 # 			has_law_or_variant = law_type:law_technocracy
