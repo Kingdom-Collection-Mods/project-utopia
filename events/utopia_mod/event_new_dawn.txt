@@ -4713,7 +4713,7 @@ event_new_dawn.214 = {
 #A country unites its heritage
 event_new_dawn.800 = {
 	type = country_event
-	placement = ROOT
+	placement = scope:ut_united_heritage_annexed_country
 	title = event_new_dawn.800.t
 	desc = event_new_dawn.800.d
 	flavor = event_new_dawn.800.f
@@ -4733,7 +4733,7 @@ event_new_dawn.800 = {
 
 event_new_dawn.801 = {
 	type = country_event
-	placement = ROOT
+	placement = scope:ut_united_heritage_opposing_country
 	title = event_new_dawn.801.t
 	desc = event_new_dawn.801.d
 	flavor = event_new_dawn.801.f
@@ -4754,7 +4754,7 @@ event_new_dawn.801 = {
 #A country intervenes in a conflict and incorporates the target
 event_new_dawn.802 = {
 	type = country_event
-	placement = ROOT
+	placement = scope:ut_united_heritage_annexed_country
 	title = event_new_dawn.802.t
 	desc = event_new_dawn.802.d
 	flavor = event_new_dawn.802.f
@@ -4775,7 +4775,7 @@ event_new_dawn.802 = {
 #A new dawn spreads to a culture
 event_new_dawn.803 = {
 	type = country_event
-	placement = ROOT
+	placement = scope:ut_homeland_spread_new_dawn_country
 	title = event_new_dawn.803.t
 	desc = event_new_dawn.803.d
 	flavor = event_new_dawn.803.f
