@@ -2055,6 +2055,16 @@ event_new_dawn.20 = {
 			VALUE = -10
 		}
 		set_variable = ut_new_dawn_propaganda_source_defend_once_var
+		scope:ut_new_dawn_propaganda_target_defend_source_scope = {
+			set_variable = {
+				name = ut_new_dawn_propaganda_target_continue_source_var
+				value = root
+			}
+			trigger_event = {
+				id = event_new_dawn.27
+				popup = yes
+			}
+		}
 	}
 	
 	option = {
@@ -2074,6 +2084,16 @@ event_new_dawn.20 = {
 		custom_tooltip = ut_add_new_dawn_core_progress_neg_20
 		ut_add_new_dawn_core_progress = {
 			VALUE = -20
+		}
+		scope:ut_new_dawn_propaganda_target_defend_source_scope = {
+			set_variable = {
+				name = ut_new_dawn_propaganda_target_continue_source_var
+				value = root
+			}
+			trigger_event = {
+				id = event_new_dawn.27
+				popup = yes
+			}
 		}
 	}
 	
@@ -2254,44 +2274,6 @@ event_new_dawn.24 = {
 	}
 }
 
-#propaganda campaign target notification
-event_new_dawn.26 = {
-	type = country_event
-	title = ut_propaganda_campaign_target_started_title
-	desc = ut_propaganda_campaign_target_started_desc
-
-	event_image = {
-		video = "unspecific_vandalized_storefront"
-	}
-
-	duration = 3
-
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
-
-	trigger = {
-		# by journal entry
-	}
-
-	immediate = {
-		var:ut_je_propaganda_target_source_var = {
-			save_scope_as = ut_je_propaganda_target_source_scope
-		}
-		remove_variable = ut_je_propaganda_target_source_var
-	}
-
-	option = {
-		name = utopia.continue
-		default_option = yes
-	}
-
-	after = {
-		clear_saved_scope = ut_je_propaganda_target_source_scope
-	}
-}
-
 #propaganda campaign source notification
 event_new_dawn.25 = {
 	type = country_event
@@ -2393,6 +2375,85 @@ event_new_dawn.25 = {
 		clear_saved_scope = ut_je_propaganda_source_target_scope
 	}
 }
+
+#propaganda campaign target notification
+event_new_dawn.26 = {
+	type = country_event
+	title = ut_propaganda_campaign_target_started_title
+	desc = ut_propaganda_campaign_target_started_desc
+
+	event_image = {
+		video = "unspecific_vandalized_storefront"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		# by journal entry
+	}
+
+	immediate = {
+		var:ut_je_propaganda_target_source_var = {
+			save_scope_as = ut_je_propaganda_target_source_scope
+		}
+		remove_variable = ut_je_propaganda_target_source_var
+	}
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+
+	after = {
+		clear_saved_scope = ut_je_propaganda_target_source_scope
+	}
+}
+
+
+#propaganda campaign continues after defense
+event_new_dawn.27 = {
+	type = country_event
+	placement = ROOT
+	title = ut_propaganda_campaign_target_defense_failed_title
+	desc = ut_propaganda_campaign_target_defense_failed_desc
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	trigger = {
+		# by event option
+	}
+
+	immediate = {
+		var:ut_new_dawn_propaganda_target_continue_source_var = {
+			save_scope_as = ut_new_dawn_propaganda_target_continue_source_scope
+		}
+		remove_variable = ut_new_dawn_propaganda_target_continue_source_var
+	}
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+
+	after = {
+		clear_saved_scope = ut_new_dawn_propaganda_target_continue_source_scope
+	}
+}
+
 
 #Autocratic
 event_new_dawn.30 = {

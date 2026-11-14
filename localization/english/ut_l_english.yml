@@ -1301,6 +1301,8 @@
  ut_propaganda_campaign_target_happened_title: "Target of Propaganda Campaign"
  ut_propaganda_campaign_target_happened_desc: "We have been targeted by a propaganda campaign from [SCOPE.sCountry('ut_je_propaganda_target_source_scope').GetName]. Next time we should try to defend against it to avoid losing progress points and gaining a negative modifier."
  ut_propaganda_campaign_target_happened_tt: "$ut_je_propaganda_target_effect$\n#lore A propaganda campaign against us has completed.#!"
+ ut_propaganda_campaign_target_defense_failed_title: "Propaganda Campaign Continues"
+ ut_propaganda_campaign_target_defense_failed_desc: "Despite our defense, [SCOPE.sCountry('ut_new_dawn_propaganda_target_continue_source_scope').GetName] has chosen to continue its propaganda campaign against us."
 
  ut_new_dawn_propaganda_source_abort: "Abort Propaganda Campaign"
  ut_new_dawn_propaganda_source_abort_desc: ""

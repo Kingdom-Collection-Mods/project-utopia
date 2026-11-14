@@ -1295,6 +1295,8 @@ event_new_dawn.803.f: "Eine neue Morgendämmerung bricht für das Volk der [SCOP
  ut_propaganda_campaign_target_happened_title: "Ziel einer Propaganda-Kampagne"
  ut_propaganda_campaign_target_happened_desc: "Wir wurden von einer Propaganda-Kampagne von [SCOPE.sCountry('ut_je_propaganda_target_source_scope').GetName] angegriffen. Beim nächsten Mal sollten wir versuchen, uns zu verteidigen, um den Verlust von Fortschrittspunkten und einen negativen Modifikator zu vermeiden."
  ut_propaganda_campaign_target_happened_tt: "$ut_je_propaganda_target_effect$\n#lore Eine Propaganda-Kampagne gegen uns wurde abgeschlossen.#!"
+ ut_propaganda_campaign_target_defense_failed_title: "Propaganda-Kampagne wird fortgesetzt"
+ ut_propaganda_campaign_target_defense_failed_desc: "Trotz unserer Verteidigung hat sich [SCOPE.sCountry('ut_new_dawn_propaganda_target_continue_source_scope').GetName] entschieden, seine Propaganda-Kampagne gegen uns fortzusetzen."
 
  ut_new_dawn_propaganda_source_abort: "Propaganda-Kampagne abbrechen"
  ut_new_dawn_propaganda_source_abort_desc: ""
