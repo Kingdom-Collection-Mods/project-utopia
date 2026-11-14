@@ -782,7 +782,7 @@ pm_oil_heavy_machinery_mine = {
 pm_oil_automated_heavy_machinery_mine = {
 	texture = "gfx/interface/icons/production_method_icons/ut_pumping_jack_2.dds"
 	unlocking_technologies = {
-		software
+		computers
 	}
 
 	building_modifiers = {
