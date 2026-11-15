@@ -123,6 +123,18 @@ ut_spread_new_dawn_effect = {
 				capital = {
 					save_scope_as = ut_united_heritage_annexed_country_capital
 				}
+				if = {
+					limit = {
+						has_variable = je_ut_new_dawn_heritage_activated_var
+					}
+					
+					set_variable = {
+						name = je_ut_new_dawn_heritage_activated_var
+					}
+					add_journal_entry = {
+						type = je_ut_new_dawn
+					}
+				}
 				ut_freeze_new_dawn_progress = yes
 				if = {
 					limit = {

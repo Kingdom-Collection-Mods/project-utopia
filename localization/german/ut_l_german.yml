@@ -851,6 +851,8 @@ event_new_dawn.805.f: "Eine neue Morgendämmerung bricht für das Volk der [SCOP
  concept_ut_nd_fascist_characters_desc: "Faschistische Charakter Ideologien sind: [GetIdeology('ideology_ethno_nationalist').GetName], [GetIdeology('ut_ideology_national_socialist_leader').GetName] und [GetIdeology('ideology_fascist').GetName].\nWenn Faschistischer [concept_ut_nd_focus] aktiv ist, sind ebenfalls enthalten: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_corporatist_leader').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName], [GetIdeology('ideology_jingoist_leader').GetName], [GetIdeology('ideology_shojoi').GetName], [GetIdeology('ideology_despotic_utopian').GetName] und [GetIdeology('ideology_carlist').GetName]."
  ut_new_dawn_fascist_status: "Faschistische Ideen prägen den Diskurs"
 
+ ut_nd_multiplier_from_major: "x2 Multiplikator für Großmächte"
+ ut_nd_multiplier_from_minor: "x4 Multiplikator für Kleinstaaten"
  ut_nd_multiplier_from_is_ai: "x2 Multiplikator für KI-Nationen"
  ut_nd_multiplier_from_service_workers_0: "x0,5 Multiplikator bei weniger als 1% $service_workers$\n$ut_nd_mp_sw_note$"
  ut_nd_multiplier_from_service_workers_1: "x1,5 Multiplikator nach $service_workers$ Anteil\n$ut_nd_mp_sw_note$"
