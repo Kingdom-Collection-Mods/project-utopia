@@ -1354,7 +1354,7 @@ je_ut_new_dawn_fascist = {
 	# Militarism & cult of violence
 	scripted_button = je_ut_new_dawn_form_paramilitary_groups
 	scripted_button = je_ut_new_dawn_fascist_form_paramilitary_groups_ability_add
-	scripted_button = je_ut_new_dawn_fascist_form_paramilitary_groups_ability_add
+	scripted_button = je_ut_new_dawn_fascist_form_paramilitary_groups_ability_remove
 	# Leader principle
 	# State-controlled economy (corporatism)
 	scripted_button = je_ut_new_dawn_conformity
