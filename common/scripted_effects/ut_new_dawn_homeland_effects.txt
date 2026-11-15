@@ -31,6 +31,10 @@
 			}
 			OR = {
 				AND = {
+					is_subject_of = ROOT
+					is_subject_type = subject_type_puppet
+				}
+				AND = {
 					OR = {
 						has_modifier = ut_new_dawn_core_fascist_mod
 						#has_modifier = je_ut_new_dawn_fascist_focus
@@ -45,12 +49,9 @@
 					ROOT = { has_modifier = ut_new_dawn_core_democratic_mod }
 				}
 				AND = {
-					has_technology_researched = union_new_mandates_two
-					OR = {
-						has_modifier = ut_new_dawn_core_autocratic_mod
-						#has_modifier = je_ut_new_dawn_autocrat_focus
-					}
+					has_modifier = ut_new_dawn_core_autocratic_mod
 					ROOT = { has_modifier = ut_new_dawn_core_autocratic_mod }
+					ROOT = { has_technology_researched = union_new_mandates_two }
 				}
 				AND = {
 					OR = {
