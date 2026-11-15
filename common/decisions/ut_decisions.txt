@@ -946,8 +946,10 @@ ut_homeland_spread_new_dawn = {
 		ut_new_dawn_has_core_trigger = yes
 		OR = {
 			is_player = yes
-			NOT = { has_variable = ut_homeland_spread_new_dawn_var }
-			NOT = { has_variable = ut_homeland_spread_new_dawn_opposing_country_var }
+			AND = {
+				NOT = { has_variable = ut_homeland_spread_new_dawn_var }
+				NOT = { has_variable = ut_homeland_spread_new_dawn_opposing_country_var }
+			}
 		}
 	}
 	possible = {
