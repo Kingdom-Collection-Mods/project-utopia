@@ -45,6 +45,7 @@
 					ROOT = { has_modifier = ut_new_dawn_core_democratic_mod }
 				}
 				AND = {
+					has_technology_researched = union_new_mandates_two
 					OR = {
 						has_modifier = ut_new_dawn_core_autocratic_mod
 						#has_modifier = je_ut_new_dawn_autocrat_focus
@@ -140,7 +141,7 @@ ut_spread_new_dawn_effect = {
 						type = je_ut_new_dawn
 					}
 					set_variable = {
-						name = ut_homeland_spread_new_dawn_opposing_country_var
+						name = ut_homeland_spread_new_dawn_var
 					}
 				}
 				ut_freeze_new_dawn_progress = yes
@@ -149,6 +150,39 @@ ut_spread_new_dawn_effect = {
 						has_journal_entry = je_earn_recognition
 					}
 					set_country_type = recognized
+				}
+				custom_tooltip = {
+					text = ut_homeland_spread_new_dawn_opponent_claim_effect_tt
+					every_diplomatically_relevant_country = {
+						limit = {
+							exists = this
+							NOT = { this = root }
+							any_primary_culture = {
+								is_primary_culture_of = ROOT
+							}
+							every_primary_culture = {
+								ROOT = {
+									country_average_cultural_acceptance = {
+										target = prev
+										value >= acceptance_status_5
+									}
+									country_average_religious_acceptance = {
+										target = prev
+										value >= religious_acceptance_low
+									}
+								}
+							}
+							ut_is_country_on_same_continent_as_root = yes
+						}
+						every_scope_state = {
+							limit = {
+								NOT = { has_claim_by = scope:ut_united_heritage_opposing_country }
+							}
+							state_region = {
+								add_claim = scope:ut_united_heritage_opposing_country
+							}
+						}
+					}
 				}
 			}
 
@@ -318,6 +352,40 @@ ut_spread_new_dawn_effect = {
 			}
 		}
 	}
+
+	every_diplomatically_relevant_country = {
+		limit = {
+			exists = this
+			NOT = { this = root }
+			any_primary_culture = {
+				is_primary_culture_of = ROOT
+			}
+			every_primary_culture = {
+				ROOT = {
+					country_average_cultural_acceptance = {
+						target = prev
+						value >= acceptance_status_5
+					}
+					country_average_religious_acceptance = {
+						target = prev
+						value >= religious_acceptance_low
+					}
+				}
+			}
+			ut_is_country_on_same_continent_as_root = yes
+		}
+		hidden_effect = {
+			every_scope_state = {
+				limit = {
+					NOT = { has_claim_by = ROOT }
+				}
+				state_region = {
+					add_claim = ROOT
+				}
+			}
+		}
+	}
+	custom_tooltip = ut_homeland_spread_new_dawn_claim_effect_tt
 
 	save_scope_as = ut_homeland_spread_new_dawn_country
 	capital = {

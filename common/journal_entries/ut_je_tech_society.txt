@@ -144,6 +144,7 @@ je_wirtschaftswunder = {
 	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
+#todo fix this
 je_wirtschaftswunder_others = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 

@@ -812,6 +812,7 @@ ut_is_country_on_same_continent_as_root = {
 ut_unite_homeland_target_trigger = {
 	NOT = { this = root }
 	is_revolutionary = no
+	is_secessionist = no
 	OR = {
 		is_subject = no
 		AND = {
@@ -842,28 +843,29 @@ ut_unite_homeland_target_trigger = {
 		AND = {
 			OR = {
 				has_modifier = ut_new_dawn_core_fascist_mod
-				has_modifier = je_ut_new_dawn_fascist_focus
+				#has_modifier = je_ut_new_dawn_fascist_focus
 			}
 			ROOT = { has_modifier = ut_new_dawn_core_fascist_mod }
 		}
 		AND = {
 			OR = {
 				has_modifier = ut_new_dawn_core_democratic_mod
-				has_modifier = je_ut_new_dawn_democrat_focus
+				#has_modifier = je_ut_new_dawn_democrat_focus
 			}
 			ROOT = { has_modifier = ut_new_dawn_core_democratic_mod }
 		}
 		AND = {
+			has_technology_researched = union_new_mandates_two
 			OR = {
 				has_modifier = ut_new_dawn_core_autocratic_mod
-				has_modifier = je_ut_new_dawn_autocrat_focus
+				#has_modifier = je_ut_new_dawn_autocrat_focus
 			}
 			ROOT = { has_modifier = ut_new_dawn_core_autocratic_mod }
 		}
 		AND = {
 			OR = {
 				has_modifier = ut_new_dawn_core_communist_mod
-				has_modifier = je_ut_new_dawn_communist_focus
+				#has_modifier = je_ut_new_dawn_communist_focus
 			}
 			ROOT = { has_modifier = ut_new_dawn_core_communist_mod }
 		}

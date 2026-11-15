@@ -1,4 +1,4 @@
-ut_tech_preview_cheat_research = {
+﻿ut_tech_preview_cheat_research = {
 	is_shown = {
 		is_player = yes
 		NOT = { has_global_variable = ut_tech_preview_cheat_disable }
@@ -944,15 +944,18 @@ ut_homeland_spread_new_dawn = {
 	is_shown = {
 		country_rank >= rank_value:major_power
 		ut_new_dawn_has_core_trigger = yes
-		OR = {
-			is_player = yes
-			AND = {
-				NOT = { has_variable = ut_homeland_spread_new_dawn_var }
-				NOT = { has_variable = ut_homeland_spread_new_dawn_opposing_country_var }
-			}
-		}
+		NOT = { has_variable = ut_homeland_spread_new_dawn_var }
 	}
 	possible = {
+		trigger_if = {
+			limit = {
+				month > 9
+			}
+			custom_tooltip = {
+				text = ut_homeland_spread_new_dawn_wait_tick_tt
+				NOT = { month > 9 }
+			}
+		}
 		any_diplomatically_relevant_country = {
 			ut_spread_new_dawn_target_trigger = yes
 		}
@@ -961,7 +964,7 @@ ut_homeland_spread_new_dawn = {
 		ut_spread_new_dawn_effect = yes
 	}
 	ai_chance = {
-		value = 30
+		value = 60
 		#should be quite low so doesn't stack due to je_new_dawn start delay bug
 	}
 }
@@ -973,21 +976,38 @@ ut_unite_against_foreign_core = {
 	}
 	possible = {
 		any_diplomatically_relevant_country = {
-			is_revolutionary = no
 			is_at_war = no
 			NOT = { this = root }
 			is_subject = no
 			country_rank <= rank_value:minor_power
 			NOT = { ut_new_dawn_has_core_trigger = yes }
 			ut_is_country_on_same_continent_as_root = { TARGET = root }
-			is_diplomatic_play_target = yes
 			#todo check if intervene possibility to broad
 			custom_tooltip = {
 				text = ut_unite_against_foreign_core_diplomatic_play_tt
-				any_diplomatic_play = {
-					target_is = prev
-					any_scope_play_involved = {
-						ut_new_dawn_has_core_trigger = yes
+				OR = {
+					AND = {
+						is_diplomatic_play_target = yes
+						any_diplomatic_play = {
+							target_is = prev
+							initiator = {
+								is_revolutionary = no
+								is_secessionist = no
+								ut_new_dawn_has_core_trigger = yes
+							}
+						}
+					}
+					AND = {
+						#so revolts (that count as attacking their core) can be annexed and war with counter ideology starts
+						is_diplomatic_play_initiator = yes
+						any_diplomatic_play = {
+							initiator = prev
+							target = {
+								is_revolutionary = no
+								is_secessionist = no
+								ut_new_dawn_has_core_trigger = yes
+							}
+						}
 					}
 				}
 			}
@@ -1000,32 +1020,61 @@ ut_unite_against_foreign_core = {
 		random_diplomatically_relevant_country = {
 			limit = {
 				NOT = { this = root }
-				is_revolutionary = no
+				#is_revolutionary = no
 				is_subject = no
 				is_at_war = no
 				country_rank <= rank_value:minor_power
 				NOT = { ut_new_dawn_has_core_trigger = yes }
 				ut_is_country_on_same_continent_as_root = { TARGET = root }
-				is_diplomatic_play_target = yes
-				#
-				any_diplomatic_play = {
-					target_is = prev
-					any_scope_play_involved = {
-						ut_new_dawn_has_core_trigger = yes
+				OR = {
+					AND = {
+						is_diplomatic_play_target = yes
+						any_diplomatic_play = {
+							target_is = prev
+							initiator = {
+								is_revolutionary = no
+								is_secessionist = no
+								ut_new_dawn_has_core_trigger = yes
+							}
+						}
+					}
+					AND = {
+						#so revolts (that count as attacking their core) can be annexed and war with counter ideology starts
+						is_diplomatic_play_initiator = yes
+						any_diplomatic_play = {
+							initiator = prev
+							target = {
+								is_revolutionary = no
+								is_secessionist = no
+								ut_new_dawn_has_core_trigger = yes
+							}
+						}
 					}
 				}
+				
 				any_primary_culture = {
 					is_primary_culture_of = ROOT
 				}
 			}
 			random_diplomatic_play = {
 				limit = {
-					target_is = prev
-					any_scope_play_involved = {
-						NOT = { has_modifier = ut_new_dawn_core_autocratic_mod }
+					OR = {
+						target_is = prev
+						initiator_is = prev
 					}
 				}
-				add_target_backers = { ROOT }
+				if = {
+					limit = {
+						target_is = prev
+					}
+					add_target_backers = { ROOT }
+				}
+				else = {
+					limit = {
+						initiator_is = prev
+					}
+					add_initiator_backers = { ROOT }
+				}
 			}
 			save_scope_as = ut_united_heritage_annexed_country
 			capital = {
