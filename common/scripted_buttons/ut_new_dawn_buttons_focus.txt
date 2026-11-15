@@ -92,7 +92,7 @@ ut_new_dawn_fascist_focus = {
 					ut_ideology_new_dawn_fascist_trigger = yes
 				}
 			}
-			add = 25
+			add = 30
 		}
 		if = {
 			#Historically Germany, Italy, and Japan below in "ranking"?
@@ -218,7 +218,7 @@ ut_new_dawn_autocrat_focus = {
 					ut_ideology_new_dawn_autocrat_trigger = yes
 				}
 			}
-			add = 25
+			add = 20
 		}
 		if = {
 			limit = {
@@ -544,7 +544,7 @@ ut_new_dawn_communist_focus = {
 					ut_ideology_new_dawn_communist_trigger = yes
 				}
 			}
-			add = 25
+			add = 30
 		}
 		#For Rule Start Era 4/5, so monarchies are more likely to choose autocrat/democrat focus then communist
 		if = {
