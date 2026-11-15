@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -1495,7 +1495,8 @@ l_english:
  ut_add_new_dawn_pressure_add_1: "Gains #r 1#! [concept_ut_nd_pressure]"
  ut_add_new_dawn_pressure_add_2: "Gains #r 2#! [concept_ut_nd_pressure]"
  ut_add_new_dawn_pressure_add_5: "Gains #r 5#! [concept_ut_nd_pressure]"
- ut_add_new_dawn_pressure_add_10: "Gains #r 10#! [concept_ut_nd_pressure]"
+ ut_add_new_dawn_pressure_add_10: "Gains #r 10#! [concept_ut_nd_pressure]"#
+ ut_add_new_dawn_pressure_remove_1: "Loses #g 1#! [concept_ut_nd_pressure]"
  ut_add_new_dawn_pressure_remove_10: "Loses #g 10#! [concept_ut_nd_pressure]"
 
  ut_force_become_subject: "Collectivize Council Republics"

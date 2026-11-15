@@ -2713,6 +2713,10 @@ event_new_dawn.50 = {
 		ut_add_new_dawn_core_progress = {
 			VALUE = -5
 		}
+		custom_tooltip = ut_add_new_dawn_pressure_remove_1
+		ut_add_new_dawn_pressure_points = {
+			VALUE = -1
+		}
 		add_modifier = {
 			name = new_dawn_event_suppress_radicals_mod
 			days = 90
@@ -4158,6 +4162,10 @@ event_new_dawn.120 = {
 		ut_add_new_dawn_core_progress = {
 			VALUE = -5
 		}
+		custom_tooltip = ut_add_new_dawn_pressure_remove_1
+		ut_add_new_dawn_pressure_points = {
+			VALUE = -1
+		}
 	}
 
 	#Happens
@@ -4210,18 +4218,33 @@ event_new_dawn.121 = {
 
 	#Forced Setback
 	option = {
-		default_option = yes
+		trigger = {
+			custom_tooltip = {
+				text = ut_has_new_dawn_pressure_not_75
+				NOT = {
+					ut_has_new_dawn_pressure_points = {
+						VALUE = 75
+					}
+				}
+			}
+		}
 		name = je_ut_new_dawn_suppress_dissidents
 		custom_tooltip = ut_add_new_dawn_core_progress_neg_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = -5
 		}
+		custom_tooltip = ut_add_new_dawn_pressure_remove_1
+		ut_add_new_dawn_pressure_points = {
+			VALUE = -1
+		}
 	}
 	
 	option = {
 		name = event_new_dawn.suppress_random_decision
-		add_radicals = {
-			value = 0.01
+		default_option = yes
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_10
+		ut_add_new_dawn_core_progress = {
+			VALUE = -10
 		}
 	}
 }
@@ -4270,6 +4293,10 @@ event_new_dawn.122 = {
 		custom_tooltip = ut_add_new_dawn_core_progress_neg_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = -5
+		}
+		custom_tooltip = ut_add_new_dawn_pressure_remove_1
+		ut_add_new_dawn_pressure_points = {
+			VALUE = -1
 		}
 	}
 
@@ -4340,6 +4367,10 @@ event_new_dawn.123 = {
 		ut_add_new_dawn_core_progress = {
 			VALUE = -5
 		}
+		custom_tooltip = ut_add_new_dawn_pressure_remove_1
+		ut_add_new_dawn_pressure_points = {
+			VALUE = -1
+		}
 	}
 
 	option = {
@@ -4407,6 +4438,10 @@ event_new_dawn.124 = {
 		custom_tooltip = ut_add_new_dawn_core_progress_neg_5
 		ut_add_new_dawn_core_progress = {
 			VALUE = -5
+		}
+		custom_tooltip = ut_add_new_dawn_pressure_remove_1
+		ut_add_new_dawn_pressure_points = {
+			VALUE = -1
 		}
 	}
 	

@@ -1487,6 +1487,7 @@
  ut_add_new_dawn_pressure_add_2: "Erhöht [concept_ut_nd_pressure] um #r 2#!"
  ut_add_new_dawn_pressure_add_5: "Erhöht [concept_ut_nd_pressure] um #r 5#!"
  ut_add_new_dawn_pressure_add_10: "Erhöht [concept_ut_nd_pressure] um #r 10#!"
+ ut_add_new_dawn_pressure_remove_1: "Verringert [concept_ut_nd_pressure] um #g 1#!"
  ut_add_new_dawn_pressure_remove_10: "Verringert [concept_ut_nd_pressure] um #g 10#!"
 
 
