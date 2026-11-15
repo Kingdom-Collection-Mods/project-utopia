@@ -1301,7 +1301,7 @@ ut_homeland_spread_new_dawn = {
 				is_player = yes
 				NOT = { this = root }
 			}
-			trigger_event = { id = event_new_dawn.803 }
+			trigger_event = { id = event_new_dawn.804 }
 		}
 		set_variable = {
 			name = ut_ai_homeland_spread_new_dawn_var

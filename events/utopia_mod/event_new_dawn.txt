@@ -4779,6 +4779,259 @@ event_new_dawn.802 = {
 #A new dawn spreads to a culture
 event_new_dawn.803 = {
 	type = country_event
+	placement = root
+	title = event_new_dawn.803.t
+	desc = event_new_dawn.803.d
+	flavor = event_new_dawn.803.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+	
+	trigger = {
+		country_rank >= rank_value:major_power
+		ut_new_dawn_has_core_trigger = yes
+
+		any_diplomatically_relevant_country = {
+			NOT = { this = root }
+			is_revolutionary = no
+			OR = {
+				is_subject = no
+				AND = {
+					is_subject_of = ROOT
+					is_subject_type = subject_type_puppet
+				}
+			}
+			country_rank < rank_value:major_power
+			any_primary_culture = {
+				is_primary_culture_of = ROOT
+			}
+			NOT = { has_journal_entry = je_ut_new_dawn }
+			NOT = { ut_new_dawn_has_core_trigger = yes }
+			NOT =  { has_variable = je_ut_new_dawn_heritage_activated_var }
+			
+			ut_is_country_on_same_continent_as_root = yes
+		}
+	}
+
+	immediate = {
+		save_scope_as = ut_homeland_spread_new_dawn_country
+	}
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+
+		if = {
+			limit = {
+				NOT = {
+					any_diplomatically_relevant_country = {
+						is_revolutionary = no
+						NOT = { this = root }
+						is_subject = no
+						country_rank >= rank_value:unrecognized_major_power
+						any_primary_culture = {
+							is_primary_culture_of = ROOT
+						}
+						OR = {
+							has_journal_entry = je_ut_new_dawn
+							ut_new_dawn_has_core_trigger = yes
+						}
+						ut_is_country_on_same_continent_as_root = yes
+					}
+				}
+			}
+			ordered_country = {
+				limit = {
+					NOT = { this = root }
+					is_subject = no
+					country_rank >= rank_value:unrecognized_major_power 
+					any_primary_culture = {
+						is_primary_culture_of = ROOT
+					}
+					NOT = { has_journal_entry = je_ut_new_dawn }
+					ut_is_country_on_same_continent_as_root = yes
+				}
+				order_by = country_rank
+				save_scope_as = ut_united_heritage_opposing_country
+			}
+
+			if = {
+				limit = {
+					exists = scope:ut_united_heritage_opposing_country
+				}
+				scope:ut_united_heritage_opposing_country = {
+					capital = {
+						save_scope_as = ut_united_heritage_annexed_country_capital
+					}
+					if = {
+						limit = {
+							NOT = { has_journal_entry = je_ut_new_dawn }
+						}
+					}
+					set_variable = {
+						name = je_ut_new_dawn_heritage_activated_var
+					}
+					add_journal_entry = {
+						type = je_ut_new_dawn
+					}
+					ut_freeze_new_dawn_progress = yes
+					if = {
+						limit = {
+							has_journal_entry = je_earn_recognition
+						}	
+						set_country_type = recognized
+					}
+				}
+
+				if = {
+					limit = {
+						has_modifier = ut_new_dawn_core_democratic_mod
+					}
+					scope:ut_united_heritage_opposing_country = {
+						je:je_ut_new_dawn = {
+							random_list = {
+								80 = {
+									add_journal_entry = {
+										type = je_ut_new_dawn_fascist
+									}
+									enact_law = law_type:law_ethnostate
+								}
+								10 = {
+									add_journal_entry = {
+										type = je_ut_new_dawn_autocratic
+									}
+									enact_law = law_type:law_autocracy
+								}
+								10 = {
+									add_journal_entry = {
+										type = je_ut_new_dawn_communist
+									}
+									enact_law = law_type:law_command_economy
+								}
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_modifier = ut_new_dawn_core_fascist_mod
+					}
+					scope:ut_united_heritage_opposing_country = {
+						add_journal_entry = {
+							type = je_ut_new_dawn_communist
+						}
+						enact_law = law_type:law_command_economy
+					}
+				}
+				else_if = {
+					limit = {
+						has_modifier = ut_new_dawn_core_communist_mod
+					}
+					scope:ut_united_heritage_opposing_country = {
+						random_list = {
+							80 = {
+								add_journal_entry = {
+									type = je_ut_new_dawn_fascist
+								}
+								enact_law = law_type:law_ethnostate
+							}
+							10 = {
+								add_journal_entry = {
+									type = je_ut_new_dawn_autocratic
+								}
+								enact_law = law_type:law_autocracy
+							}
+							10 = {
+								add_journal_entry = {
+									type = je_ut_new_dawn_communist
+								}
+								enact_law = law_type:law_command_economy
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_modifier = ut_new_dawn_core_autocratic_mod
+					}
+					scope:ut_united_heritage_opposing_country = {
+						
+						random_list = {
+							80 = {
+								add_journal_entry = {
+									type = je_ut_new_dawn_communist
+								}
+								enact_law = law_type:law_command_economy
+							}
+							20 = {
+								add_journal_entry = {
+									type = je_ut_new_dawn_democratic
+								}
+								enact_law = law_type:law_universal_suffrage
+							}
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						is_player = yes
+						NOT = { this = root }
+					}
+					trigger_event = { id = event_new_dawn.801 }
+				}
+			}
+		}
+		
+		every_diplomatically_relevant_country = {
+			limit = {
+				NOT = { this = root }
+				is_revolutionary = no
+				OR = {
+					is_subject = no
+					AND = {
+						is_subject_of = ROOT
+						is_subject_type = subject_type_puppet
+					}
+				}
+				country_rank < rank_value:major_power
+				any_primary_culture = {
+					is_primary_culture_of = ROOT
+				}
+				NOT = { has_journal_entry = je_ut_new_dawn }
+				NOT = { ut_new_dawn_has_core_trigger = yes }
+				ut_is_country_on_same_continent_as_root = yes
+			}
+			set_variable = {
+				name = je_ut_new_dawn_heritage_activated_var
+			}
+			add_journal_entry = {
+				type = je_ut_new_dawn
+			}
+		}
+
+		save_scope_as = ut_homeland_spread_new_dawn_country
+		capital = {
+			save_scope_as = ut_homeland_spread_new_dawn_country_capital
+		}
+		every_country = {
+			limit = {
+				is_player = yes
+				NOT = { this = root }
+			}
+			trigger_event = { id = event_new_dawn.804 }
+		}
+		set_variable = {
+			name = ut_ai_homeland_spread_new_dawn_var
+		}
+	}
+}
+
+event_new_dawn.804 = {
+	type = country_event
 	placement = scope:ut_homeland_spread_new_dawn_country_capital
 	title = event_new_dawn.803.t
 	desc = event_new_dawn.803.d
