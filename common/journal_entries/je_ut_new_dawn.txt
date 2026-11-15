@@ -1,4 +1,4 @@
-je_ut_new_dawn = {
+﻿je_ut_new_dawn = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
@@ -1367,10 +1367,14 @@ je_ut_new_dawn_fascist = {
 	# Leader principle
 	# State-controlled economy (corporatism)
 	scripted_button = je_ut_new_dawn_conformity
+	scripted_button = je_ut_new_dawn_conformity_ability_add
+	scripted_button = je_ut_new_dawn_conformity_ability_remove
 
 	# Extreme nationalism
 	# Propaganda & myths
 	scripted_button = je_ut_new_dawn_volksgemeinschaft
+	scripted_button = je_ut_new_dawn_volksgemeinschaft_ability_add
+	scripted_button = je_ut_new_dawn_volksgemeinschaft_ability_remove
 
 	# Collectivism
 	scripted_button = je_ut_new_dawn_unite_heritage

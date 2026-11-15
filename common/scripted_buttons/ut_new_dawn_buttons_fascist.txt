@@ -323,11 +323,70 @@ je_ut_new_dawn_conformity = {
 			}
 			add_ideology = ut_ideology_laissez_faire_authoritarian
 		}
+		add_modifier = je_ut_new_dawn_fascist_conformity_mod
 		set_variable = {
 			name = je_ut_new_dawn_conformity_done
 		}
 	}
 	
+	ai_chance = {
+		value = 1
+	}
+}
+
+je_ut_new_dawn_conformity_ability_add = {
+	name = "je_ut_new_dawn_conformity_ability_add"
+	desc = "je_ut_new_dawn_conformity_ability_add_desc"
+
+	visible = {
+		has_variable = je_ut_new_dawn_conformity_done
+		NOT = {
+			has_modifier = je_ut_new_dawn_fascist_conformity_ability_mod
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = ut_has_new_dawn_pressure_not_75
+			NOT = {
+				ut_has_new_dawn_pressure_points = {
+					VALUE = 75
+				}
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = ut_add_new_dawn_pressure_add_2
+			ut_add_new_dawn_pressure_points = {
+				VALUE = 2
+			}
+		}
+		add_modifier = je_ut_new_dawn_fascist_conformity_ability_mod
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+je_ut_new_dawn_conformity_ability_remove = {
+	name = "je_ut_new_dawn_conformity_ability_remove"
+	desc = "je_ut_new_dawn_conformity_ability_remove_desc"
+
+	visible = {
+		has_modifier = je_ut_new_dawn_fascist_conformity_ability_mod
+	}
+
+	possible = {
+		has_modifier = je_ut_new_dawn_fascist_conformity_ability_mod
+	}
+
+	effect = {
+		remove_modifier = je_ut_new_dawn_fascist_conformity_ability_mod
+	}
+
 	ai_chance = {
 		value = 1
 	}
@@ -344,7 +403,6 @@ je_ut_new_dawn_volksgemeinschaft = {
 	}
 
 	possible = {
-		always = no #disabled		
 		custom_tooltip = {
 			text = new_dawn_ideology_required_points_tt
 			je:je_ut_new_dawn_fascist = { 
@@ -372,11 +430,70 @@ je_ut_new_dawn_volksgemeinschaft = {
 				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
 			}
 		}
+		add_modifier = je_ut_new_dawn_fascist_volksgemeinschaft_mod
 		set_variable = {
 			name = je_ut_new_dawn_volksgemeinschaft_done
 		}
 	}
 	
+	ai_chance = {
+		value = 1
+	}
+}
+
+je_ut_new_dawn_volksgemeinschaft_ability_add = {
+	name = "je_ut_new_dawn_volksgemeinschaft_ability_add"
+	desc = "je_ut_new_dawn_volksgemeinschaft_ability_add_desc"
+
+	visible = {
+		has_variable = je_ut_new_dawn_volksgemeinschaft_done
+		NOT = {
+			has_modifier = je_ut_new_dawn_fascist_volksgemeinschaft_ability_mod
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = ut_has_new_dawn_pressure_not_75
+			NOT = {
+				ut_has_new_dawn_pressure_points = {
+					VALUE = 75
+				}
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = ut_add_new_dawn_pressure_add_2
+			ut_add_new_dawn_pressure_points = {
+				VALUE = 2
+			}
+		}
+		add_modifier = je_ut_new_dawn_fascist_volksgemeinschaft_ability_mod
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+je_ut_new_dawn_volksgemeinschaft_ability_remove = {
+	name = "je_ut_new_dawn_volksgemeinschaft_ability_remove"
+	desc = "je_ut_new_dawn_volksgemeinschaft_ability_remove_desc"
+
+	visible = {
+		has_modifier = je_ut_new_dawn_fascist_volksgemeinschaft_ability_mod
+	}
+
+	possible = {
+		has_modifier = je_ut_new_dawn_fascist_volksgemeinschaft_ability_mod
+	}
+
+	effect = {
+		remove_modifier = je_ut_new_dawn_fascist_volksgemeinschaft_ability_mod
+	}
+
 	ai_chance = {
 		value = 1
 	}
@@ -418,7 +535,7 @@ je_ut_new_dawn_unite_heritage = {
 				}
 			}
 		}
-any_scope_state = {
+		any_scope_state = {
 			state_region = {
 				is_homeland = cu:korean
 			}
