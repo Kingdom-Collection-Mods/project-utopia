@@ -35,6 +35,14 @@ ut_new_dawn_fascist_focus = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
 		}
+		if = {
+			limit = {
+				has_variable = je_ut_new_dawn_heritage_activated_var
+				has_variable = je_ut_new_dawn_heritage_with_opposing_country_activated_var
+				is_ai = yes
+			}
+			enact_law = law_type:law_ethnostate
+		}
 	}
 	#1000 always
 	#10 very likely
@@ -265,7 +273,16 @@ ut_new_dawn_democrat_focus = {
 		add_modifier = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
-		}	
+		}
+		
+		if = {
+			limit = {
+				has_variable = je_ut_new_dawn_heritage_activated_var
+				has_variable = je_ut_new_dawn_heritage_with_opposing_country_activated_var
+				is_ai = yes
+			}
+			enact_law = law_type:law_universal_suffrage
+		}
 	}
 	ai_chance = {
 		value = 0
@@ -442,6 +459,26 @@ ut_new_dawn_communist_focus = {
 		add_modifier = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
+		}
+
+		if = {
+			limit = {
+				has_variable = je_ut_new_dawn_heritage_activated_var
+				has_variable = je_ut_new_dawn_heritage_with_opposing_country_activated_var
+				is_ai = yes
+			}
+			enact_law = law_type:law_council_republic
+			random_list = {
+				25 = {
+					enact_law = law_type:law_command_economy
+				}
+				25 = {
+					enact_law = law_type:law_cooperative_ownership
+				}
+				50 = {
+					enact_law = law_type:law_labour_suffrage
+				}
+			}
 		}
 	}
 	ai_chance = {

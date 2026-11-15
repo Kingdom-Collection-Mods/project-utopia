@@ -1,4 +1,4 @@
-ut_unite_homeland_effect = {
+﻿ut_unite_homeland_effect = {
 	random_diplomatically_relevant_country = {
 		limit = {
 			exists = this
@@ -33,28 +33,28 @@ ut_unite_homeland_effect = {
 				AND = {
 					OR = {
 						has_modifier = ut_new_dawn_core_fascist_mod
-						has_modifier = je_ut_new_dawn_fascist_focus
+						#has_modifier = je_ut_new_dawn_fascist_focus
 					}
 					ROOT = { has_modifier = ut_new_dawn_core_fascist_mod }
 				}
 				AND = {
 					OR = {
 						has_modifier = ut_new_dawn_core_democratic_mod
-						has_modifier = je_ut_new_dawn_democrat_focus
+						#has_modifier = je_ut_new_dawn_democrat_focus
 					}
 					ROOT = { has_modifier = ut_new_dawn_core_democratic_mod }
 				}
 				AND = {
 					OR = {
 						has_modifier = ut_new_dawn_core_autocratic_mod
-						has_modifier = je_ut_new_dawn_autocrat_focus
+						#has_modifier = je_ut_new_dawn_autocrat_focus
 					}
 					ROOT = { has_modifier = ut_new_dawn_core_autocratic_mod }
 				}
 				AND = {
 					OR = {
 						has_modifier = ut_new_dawn_core_communist_mod
-						has_modifier = je_ut_new_dawn_communist_focus
+						#has_modifier = je_ut_new_dawn_communist_focus
 					}
 					ROOT = { has_modifier = ut_new_dawn_core_communist_mod }
 				}
@@ -175,7 +175,16 @@ ut_spread_new_dawn_effect = {
 								add_journal_entry = {
 									type = je_ut_new_dawn_communist
 								}
-								enact_law = law_type:law_command_economy
+								enact_law = law_type:law_council_republic
+								enact_law = law_type:law_labour_suffrage
+								random_list = {
+									50 = {
+										enact_law = law_type:law_command_economy
+									}
+									50 = {
+										enact_law = law_type:law_cooperative_ownership
+									}
+								}
 							}
 						}
 					}
@@ -189,7 +198,16 @@ ut_spread_new_dawn_effect = {
 					add_journal_entry = {
 						type = je_ut_new_dawn_communist
 					}
-					enact_law = law_type:law_command_economy
+					enact_law = law_type:law_council_republic
+					enact_law = law_type:law_labour_suffrage
+					random_list = {
+						50 = {
+							enact_law = law_type:law_command_economy
+						}
+						50 = {
+							enact_law = law_type:law_cooperative_ownership
+						}
+					}
 				}
 			}
 			else_if = {
@@ -212,9 +230,9 @@ ut_spread_new_dawn_effect = {
 						}
 						10 = {
 							add_journal_entry = {
-								type = je_ut_new_dawn_communist
+								type = je_ut_new_dawn_democratic
 							}
-							enact_law = law_type:law_command_economy
+							enact_law = law_type:law_universal_suffrage
 						}
 					}
 				}
@@ -229,7 +247,17 @@ ut_spread_new_dawn_effect = {
 							add_journal_entry = {
 								type = je_ut_new_dawn_communist
 							}
-							enact_law = law_type:law_command_economy
+							enact_law = law_type:law_council_republic
+							enact_law = law_type:law_labour_suffrage
+							
+							random_list = {
+								50 = {
+									enact_law = law_type:law_command_economy
+								}
+								50 = {
+									enact_law = law_type:law_cooperative_ownership
+								}
+							}
 						}
 						20 = {
 							add_journal_entry = {
@@ -276,6 +304,14 @@ ut_spread_new_dawn_effect = {
 			}
 			set_variable = {
 				name = je_ut_new_dawn_heritage_activated_var
+			}
+			if = {
+				limit = {
+					exists = scope:ut_united_heritage_opposing_country
+				}
+				set_variable = {
+					name = je_ut_new_dawn_heritage_with_opposing_country_activated_var
+				}
 			}
 			add_journal_entry = {
 				type = je_ut_new_dawn
