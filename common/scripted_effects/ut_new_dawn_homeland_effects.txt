@@ -84,6 +84,7 @@ ut_spread_new_dawn_effect = {
 		limit = {
 			NOT = {
 				any_diplomatically_relevant_country = {
+					is_ai = yes
 					is_revolutionary = no
 					NOT = { this = root }
 					is_subject = no
@@ -102,6 +103,8 @@ ut_spread_new_dawn_effect = {
 		ordered_country = {
 			limit = {
 				NOT = { this = root }
+				is_ai = yes
+				#todo consider if player can become opponent
 				is_subject = no
 				country_rank >= rank_value:unrecognized_regional_power
 				any_primary_culture = {
