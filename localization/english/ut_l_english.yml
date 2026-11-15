@@ -740,6 +740,7 @@
  ut_homeland_spread_new_dawn_desc: "Extend the New Dawn to smaller countries on this continent that share our primary culture."
  ut_unite_against_foreign_core: "Defend Our Shared Heritage"
  ut_unite_against_foreign_core_desc: "Intervene in a conflict involving a culturally related country and incorporate it into our nation, so long as none of the participants follow the autocratic path."
+ ut_unite_against_foreign_core_diplomatic_play_tt: "Is targeted by a country with any core ideology."
  je_ut_new_dawn_conformity_effect_tt: "Enables: Einsatz Hilfs Polizei. Event: Röhm Putsch"
  je_ut_new_dawn_volksgemeinschaft_effect_tt: "Enables: Political Education. Event: Novemberpogrom"
 

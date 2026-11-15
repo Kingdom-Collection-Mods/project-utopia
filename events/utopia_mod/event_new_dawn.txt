@@ -4825,6 +4825,7 @@ event_new_dawn.803 = {
 		name = utopia.continue
 		default_option = yes
 
+		
 		if = {
 			limit = {
 				NOT = {
@@ -4832,7 +4833,7 @@ event_new_dawn.803 = {
 						is_revolutionary = no
 						NOT = { this = root }
 						is_subject = no
-						country_rank >= rank_value:unrecognized_major_power
+						country_rank >= rank_value:unrecognized_regional_power
 						any_primary_culture = {
 							is_primary_culture_of = ROOT
 						}
@@ -4848,7 +4849,7 @@ event_new_dawn.803 = {
 				limit = {
 					NOT = { this = root }
 					is_subject = no
-					country_rank >= rank_value:unrecognized_major_power 
+					country_rank >= rank_value:unrecognized_regional_power 
 					any_primary_culture = {
 						is_primary_culture_of = ROOT
 					}
@@ -4856,6 +4857,7 @@ event_new_dawn.803 = {
 					ut_is_country_on_same_continent_as_root = yes
 				}
 				order_by = country_rank
+				position = 0
 				save_scope_as = ut_united_heritage_opposing_country
 			}
 
@@ -4867,22 +4869,23 @@ event_new_dawn.803 = {
 					capital = {
 						save_scope_as = ut_united_heritage_annexed_country_capital
 					}
+					set_variable = {
+						name = je_ut_new_dawn_heritage_activated_var
+					}
 					if = {
 						limit = {
 							NOT = { has_journal_entry = je_ut_new_dawn }
 						}
-					}
-					set_variable = {
-						name = je_ut_new_dawn_heritage_activated_var
-					}
-					add_journal_entry = {
-						type = je_ut_new_dawn
+						add_journal_entry = {
+							type = je_ut_new_dawn
+						}
 					}
 					ut_freeze_new_dawn_progress = yes
 					if = {
 						limit = {
 							has_journal_entry = je_earn_recognition
 						}	
+						#unrecognized major power can become just minor powers when recognized, losing country rank
 						set_country_type = recognized
 					}
 				}
@@ -5005,11 +5008,16 @@ event_new_dawn.803 = {
 				NOT = { ut_new_dawn_has_core_trigger = yes }
 				ut_is_country_on_same_continent_as_root = yes
 			}
-			set_variable = {
-				name = je_ut_new_dawn_heritage_activated_var
-			}
-			add_journal_entry = {
-				type = je_ut_new_dawn
+			if = {
+				limit = {
+					NOT = { has_variable = je_ut_new_dawn_heritage_activated_var }
+				}
+				set_variable = {
+					name = je_ut_new_dawn_heritage_activated_var
+				}
+				add_journal_entry = {
+					type = je_ut_new_dawn
+				}
 			}
 		}
 
@@ -5025,7 +5033,7 @@ event_new_dawn.803 = {
 			trigger_event = { id = event_new_dawn.804 }
 		}
 		set_variable = {
-			name = ut_ai_homeland_spread_new_dawn_var
+			name = ut_homeland_spread_new_dawn_var
 		}
 	}
 }

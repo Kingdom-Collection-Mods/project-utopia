@@ -922,8 +922,9 @@ ut_new_dawn_fascist_raid = {
 
 ut_unite_homeland = {
 	is_shown = {
-		country_rank >= rank_value:unrecognized_major_power
+		country_rank >= rank_value:minor_power
 		ut_new_dawn_has_core_trigger = yes
+		is_player = yes
 	}
 	possible = {
 		is_at_war = no
@@ -937,7 +938,8 @@ ut_unite_homeland = {
 					is_subject_type = subject_type_puppet
 				}
 			}
-			country_rank < rank_value:unrecognized_major_power
+			#unrecognized_major_power can not be annexed
+			country_rank <= rank_value:minor_power
 			is_at_war = no
 			is_diplomatic_play_initiator  = no
 			is_diplomatic_play_target = no
@@ -1079,7 +1081,10 @@ ut_homeland_spread_new_dawn = {
 	is_shown = {
 		country_rank >= rank_value:major_power
 		ut_new_dawn_has_core_trigger = yes
-		NOT = { has_variable = ut_ai_homeland_spread_new_dawn_var }
+		OR = {
+			is_player = yes
+			NOT = { has_variable = ut_homeland_spread_new_dawn_var }
+		}
 	}
 	possible = {
 		any_diplomatically_relevant_country = {
@@ -1111,7 +1116,7 @@ ut_homeland_spread_new_dawn = {
 						is_revolutionary = no
 						NOT = { this = root }
 						is_subject = no
-						country_rank >= rank_value:unrecognized_major_power
+						country_rank >= rank_value:unrecognized_regional_power
 						any_primary_culture = {
 							is_primary_culture_of = ROOT
 						}
@@ -1127,7 +1132,7 @@ ut_homeland_spread_new_dawn = {
 				limit = {
 					NOT = { this = root }
 					is_subject = no
-					country_rank >= rank_value:unrecognized_major_power 
+					country_rank >= rank_value:unrecognized_regional_power 
 					any_primary_culture = {
 						is_primary_culture_of = ROOT
 					}
@@ -1135,6 +1140,7 @@ ut_homeland_spread_new_dawn = {
 					ut_is_country_on_same_continent_as_root = yes
 				}
 				order_by = country_rank
+				position = 0
 				save_scope_as = ut_united_heritage_opposing_country
 			}
 
@@ -1146,22 +1152,23 @@ ut_homeland_spread_new_dawn = {
 					capital = {
 						save_scope_as = ut_united_heritage_annexed_country_capital
 					}
+					set_variable = {
+						name = je_ut_new_dawn_heritage_activated_var
+					}
 					if = {
 						limit = {
 							NOT = { has_journal_entry = je_ut_new_dawn }
 						}
-					}
-					set_variable = {
-						name = je_ut_new_dawn_heritage_activated_var
-					}
-					add_journal_entry = {
-						type = je_ut_new_dawn
+						add_journal_entry = {
+							type = je_ut_new_dawn
+						}
 					}
 					ut_freeze_new_dawn_progress = yes
 					if = {
 						limit = {
 							has_journal_entry = je_earn_recognition
 						}	
+						#unrecognized major power can become just minor powers when recognized, losing country rank
 						set_country_type = recognized
 					}
 				}
@@ -1284,11 +1291,16 @@ ut_homeland_spread_new_dawn = {
 				NOT = { ut_new_dawn_has_core_trigger = yes }
 				ut_is_country_on_same_continent_as_root = yes
 			}
-			set_variable = {
-				name = je_ut_new_dawn_heritage_activated_var
-			}
-			add_journal_entry = {
-				type = je_ut_new_dawn
+			if = {
+				limit = {
+					NOT = { has_variable = je_ut_new_dawn_heritage_activated_var }
+				}
+				set_variable = {
+					name = je_ut_new_dawn_heritage_activated_var
+				}
+				add_journal_entry = {
+					type = je_ut_new_dawn
+				}
 			}
 		}
 
@@ -1304,17 +1316,18 @@ ut_homeland_spread_new_dawn = {
 			trigger_event = { id = event_new_dawn.804 }
 		}
 		set_variable = {
-			name = ut_ai_homeland_spread_new_dawn_var
+			name = ut_homeland_spread_new_dawn_var
 		}
 	}
 	ai_chance = {
-		value = 20
+		value = 30
 		#should be quite low so doesn't stack due to je_new_dawn start delay bug
 	}
 }
 
 ut_unite_against_foreign_core = {
 	is_shown = {
+		country_rank >= rank_value:major_power
 		ut_new_dawn_has_core_trigger = yes
 	}
 	possible = {
@@ -1328,12 +1341,15 @@ ut_unite_against_foreign_core = {
 			ut_is_country_on_same_continent_as_root = { TARGET = root }
 			is_diplomatic_play_target = yes
 			#todo check if intervene possibility to broad
-			any_diplomatic_play = {
-                target_is = prev
-                any_scope_play_involved = {
-					ut_new_dawn_has_core_trigger = yes
-                }
-            }
+			custom_tooltip = {
+				text = ut_unite_against_foreign_core_diplomatic_play_tt
+				any_diplomatic_play = {
+					target_is = prev
+					any_scope_play_involved = {
+						ut_new_dawn_has_core_trigger = yes
+					}
+				}
+			}
 			any_primary_culture = {
 				is_primary_culture_of = ROOT
 			}
