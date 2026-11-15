@@ -897,7 +897,7 @@
 
  ut_nd_core_laws_communist: "[GetLawType('law_command_economy').GetName], [GetLawType('law_cooperative_ownership').GetName]"
  ut_nd_core_laws_democrat: "[GetLawType('law_universal_suffrage').GetName], ([GetLawType('law_census_voting').GetName])"
- ut_nd_core_laws_autocrat: "[GetLawType('law_monarchy').GetName], [GetLawType('law_autocracy').GetName], [GetLawType('law_oligarchy').GetName]"
+ ut_nd_core_laws_autocrat: "[GetLawType('law_autocracy').GetName], [GetLawType('law_oligarchy').GetName]"
  ut_nd_core_laws_fascist: "[GetLawType('law_ethnostate').GetName], [GetLawType('law_neo_ethno_state').GetName]"
 
  je_ai_radio_researched: "Radio Researched"

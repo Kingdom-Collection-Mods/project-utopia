@@ -149,8 +149,8 @@
 			custom_tooltip = {
 				text = je_ut_new_dawn_condition_tt
 				has_variable = je_ut_new_dawn_done #Can only ever complete upon finishing the Cement the Rightful ideology journal entry.
+				always = no
 			}
-
 		}
 		effect = {
 			custom_tooltip = {
@@ -477,6 +477,7 @@
 	}
 
 	map_color = {
+		#		lerp = { min_color = "smv_low" max_color = "smv_high" factor = smv_factor_birthrate }
 		if = {
 			limit = {
 				OR = {
@@ -627,6 +628,8 @@
 	}
 
 	weight = 100
+
+	#transferable = no so winning revolutions start from 0, investigate if this leads to weird edge cases
 
 	should_be_pinned_by_default_uninvolved_or_context = yes
 }
