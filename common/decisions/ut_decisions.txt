@@ -1267,7 +1267,7 @@ ut_homeland_spread_new_dawn = {
 						is_player = yes
 						NOT = { this = root }
 					}
-					trigger_event = { id = event_new_dawn.801 }
+					trigger_event = { id = event_new_dawn.802 }
 				}
 			}
 		}
@@ -1313,7 +1313,7 @@ ut_homeland_spread_new_dawn = {
 				is_player = yes
 				NOT = { this = root }
 			}
-			trigger_event = { id = event_new_dawn.804 }
+			trigger_event = { id = event_new_dawn.805 }
 		}
 		set_variable = {
 			name = ut_homeland_spread_new_dawn_var
@@ -1397,7 +1397,7 @@ ut_unite_against_foreign_core = {
 						is_player = yes
 						NOT = { this = root }
 					}
-					trigger_event = { id = event_new_dawn.802 popup = yes }
+					trigger_event = { id = event_new_dawn.803 popup = yes }
 				}
 				annex_with_incorporation = prev
 			}

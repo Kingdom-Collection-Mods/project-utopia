@@ -4735,30 +4735,9 @@ event_new_dawn.800 = {
 	}
 }
 
-event_new_dawn.801 = {
-	type = country_event
-	placement = scope:ut_united_heritage_opposing_country_capital
-	title = event_new_dawn.801.t
-	desc = event_new_dawn.801.d
-	flavor = event_new_dawn.801.f
-
-	event_image = {
-		video = "unspecific_world_fair"
-	}
-
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	duration = 3
-
-	option = {
-		name = utopia.continue
-		default_option = yes
-	}
-}
-
-#A country intervenes in a conflict and incorporates the target
 event_new_dawn.802 = {
 	type = country_event
-	placement = scope:ut_united_heritage_annexed_country_capital
+	placement = scope:ut_united_heritage_opposing_country_capital
 	title = event_new_dawn.802.t
 	desc = event_new_dawn.802.d
 	flavor = event_new_dawn.802.f
@@ -4776,13 +4755,34 @@ event_new_dawn.802 = {
 	}
 }
 
-#A new dawn spreads to a culture
+#A country intervenes in a conflict and incorporates the target
 event_new_dawn.803 = {
 	type = country_event
-	placement = root
+	placement = scope:ut_united_heritage_annexed_country_capital
 	title = event_new_dawn.803.t
 	desc = event_new_dawn.803.d
 	flavor = event_new_dawn.803.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+	}
+}
+
+#A new dawn spreads to a culture
+event_new_dawn.804 = {
+	type = country_event
+	placement = root
+	title = event_new_dawn.804.t
+	desc = event_new_dawn.804.d
+	flavor = event_new_dawn.804.f
 
 	event_image = {
 		video = "unspecific_world_fair"
@@ -4984,7 +4984,7 @@ event_new_dawn.803 = {
 						is_player = yes
 						NOT = { this = root }
 					}
-					trigger_event = { id = event_new_dawn.801 }
+					trigger_event = { id = event_new_dawn.802 }
 				}
 			}
 		}
@@ -5030,7 +5030,7 @@ event_new_dawn.803 = {
 				is_player = yes
 				NOT = { this = root }
 			}
-			trigger_event = { id = event_new_dawn.804 }
+			trigger_event = { id = event_new_dawn.805 }
 		}
 		set_variable = {
 			name = ut_homeland_spread_new_dawn_var
@@ -5038,12 +5038,12 @@ event_new_dawn.803 = {
 	}
 }
 
-event_new_dawn.804 = {
+event_new_dawn.805 = {
 	type = country_event
 	placement = scope:ut_homeland_spread_new_dawn_country_capital
-	title = event_new_dawn.803.t
-	desc = event_new_dawn.803.d
-	flavor = event_new_dawn.803.f
+	title = event_new_dawn.804.t
+	desc = event_new_dawn.804.d
+	flavor = event_new_dawn.804.f
 
 	event_image = {
 		video = "unspecific_world_fair"

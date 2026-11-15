@@ -898,7 +898,7 @@ je_ut_new_dawn_democratic = {
 				subtract = var:je_ut_new_dawn_core_prev_progress_yearly
 			}
 
-			trigger_event = { id = event_new_dawn.803 popup = yes }
+			trigger_event = { id = event_new_dawn.804 popup = yes }
 
 			if = {
 				limit = {
@@ -1178,7 +1178,7 @@ je_ut_new_dawn_autocratic = {
 				subtract = var:je_ut_new_dawn_core_prev_progress_yearly
 			}
 
-			trigger_event = { id = event_new_dawn.803 popup = yes }
+			trigger_event = { id = event_new_dawn.804 popup = yes }
 		}
 	}
 
@@ -1545,7 +1545,7 @@ je_ut_new_dawn_fascist = {
 				subtract = var:je_ut_new_dawn_core_prev_progress_yearly
 			}
 
-			trigger_event = { id = event_new_dawn.803 popup = yes }
+			trigger_event = { id = event_new_dawn.804 popup = yes }
 		}
 	}
 
@@ -1814,7 +1814,7 @@ je_ut_new_dawn_communist = {
 				subtract = var:je_ut_new_dawn_core_prev_progress_yearly
 			}
 
-			trigger_event = { id = event_new_dawn.803 popup = yes }
+			trigger_event = { id = event_new_dawn.804 popup = yes }
 		}
 	}
 
