@@ -1,4 +1,4 @@
-﻿#Base
+#Base
 ut_new_dawn_fascist_focus = {
 	name = "ut_new_dawn_fascist_focus"
 	desc = "ut_new_dawn_fascist_focus_desc"
@@ -114,7 +114,7 @@ ut_new_dawn_fascist_focus = {
 					}
 				}
 			}
-			add = 20
+			add = 10
 		}
 		if = {
 			#Dem scare if not democratic them self
@@ -127,7 +127,7 @@ ut_new_dawn_fascist_focus = {
 					}
 				}
 			}
-			add = 10
+			add = 5
 		}
 		#For Rule Start Era 4/5, so monarchies are more likely to choose autocrat focus then fascist
 		if = {
@@ -359,7 +359,7 @@ ut_new_dawn_democrat_focus = {
 					}
 				}
 			}
-			add = 20
+			add = 10
 		}
 		
 		if = {
@@ -377,7 +377,7 @@ ut_new_dawn_democrat_focus = {
 					}
 				}
 			}
-			add = 10
+			add = 5
 		}
 
 		if = {
@@ -516,7 +516,7 @@ ut_new_dawn_communist_focus = {
 					}
 				}
 			}
-			add = 20
+			add = 10
 		}
 		if = {
 			#communist wave if major ally communist and no core law of other path
