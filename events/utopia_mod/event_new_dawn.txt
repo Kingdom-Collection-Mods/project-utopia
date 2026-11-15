@@ -4718,9 +4718,176 @@ event_new_dawn.214 = {
 event_new_dawn.800 = {
 	type = country_event
 	placement = scope:ut_united_heritage_annexed_country_capital
-	title = event_new_dawn.800.t
-	desc = event_new_dawn.800.d
-	flavor = event_new_dawn.800.f
+	title = event_new_dawn.801.t
+	desc = event_new_dawn.801.d
+	flavor = event_new_dawn.801.f
+
+	trigger = {
+		is_player = no
+		is_at_war = no
+		any_diplomatically_relevant_country = {
+			NOT = { this = root }	
+			is_revolutionary = no
+			OR = {
+				is_subject = no
+				AND = {
+					is_subject_of = ROOT
+					is_subject_type = subject_type_puppet
+				}
+			}
+			#unrecognized_major_power can not be annexed
+			country_rank <= rank_value:minor_power
+			is_at_war = no
+			is_diplomatic_play_initiator  = no
+			is_diplomatic_play_target = no
+			any_primary_culture = {
+				is_primary_culture_of = ROOT
+			}
+			every_primary_culture = {
+				ROOT = {
+					country_average_cultural_acceptance = {
+						target = prev
+						value >= acceptance_status_5
+					}
+					country_average_religious_acceptance = {
+						target = prev
+						value >= religious_acceptance_low
+					}
+				}
+			}
+			OR = {
+				AND = {
+					OR = {
+						has_modifier = ut_new_dawn_core_fascist_mod
+						has_modifier = je_ut_new_dawn_fascist_focus
+					}
+					ROOT = { has_modifier = ut_new_dawn_core_fascist_mod }
+				}
+				AND = {
+					OR = {
+						has_modifier = ut_new_dawn_core_democratic_mod
+						has_modifier = je_ut_new_dawn_democrat_focus
+					}
+					ROOT = { has_modifier = ut_new_dawn_core_democratic_mod }
+				}
+				AND = {
+					OR = {
+						has_modifier = ut_new_dawn_core_autocratic_mod
+						has_modifier = je_ut_new_dawn_autocrat_focus
+					}
+					ROOT = { has_modifier = ut_new_dawn_core_autocratic_mod }
+				}
+				AND = {
+					OR = {
+						has_modifier = ut_new_dawn_core_communist_mod
+						has_modifier = je_ut_new_dawn_communist_focus
+					}
+					ROOT = { has_modifier = ut_new_dawn_core_communist_mod }
+				}
+			}
+			
+			ut_is_country_on_same_continent_as_root = yes
+		}
+	}
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = utopia.continue
+		default_option = yes
+		
+		random_diplomatically_relevant_country = {
+			limit = {
+				exists = this
+				NOT = { this = root }
+				OR = {
+					is_subject = no
+					AND = {
+						is_subject_of = ROOT
+						is_subject_type = subject_type_puppet
+					}
+				}
+				country_rank < rank_value:unrecognized_major_power
+				is_at_war = no
+				is_diplomatic_play_initiator  = no
+				is_diplomatic_play_target = no
+				any_primary_culture = {
+					is_primary_culture_of = ROOT
+				}
+				every_primary_culture = {
+					ROOT = {
+						country_average_cultural_acceptance = {
+							target = prev
+							value >= acceptance_status_5
+						}
+						country_average_religious_acceptance = {
+							target = prev
+							value >= religious_acceptance_low
+						}
+					}
+				}
+				OR = {
+					AND = {
+						OR = {
+							has_modifier = ut_new_dawn_core_fascist_mod
+							has_modifier = je_ut_new_dawn_fascist_focus
+						}
+						ROOT = { has_modifier = ut_new_dawn_core_fascist_mod }
+					}
+					AND = {
+						OR = {
+							has_modifier = ut_new_dawn_core_democratic_mod
+							has_modifier = je_ut_new_dawn_democrat_focus
+						}
+						ROOT = { has_modifier = ut_new_dawn_core_democratic_mod }
+					}
+					AND = {
+						OR = {
+							has_modifier = ut_new_dawn_core_autocratic_mod
+							has_modifier = je_ut_new_dawn_autocrat_focus
+						}
+						ROOT = { has_modifier = ut_new_dawn_core_autocratic_mod }
+					}
+					AND = {
+						OR = {
+							has_modifier = ut_new_dawn_core_communist_mod
+							has_modifier = je_ut_new_dawn_communist_focus
+						}
+						ROOT = { has_modifier = ut_new_dawn_core_communist_mod }
+					}
+				}
+				ut_is_country_on_same_continent_as_root = yes
+			}
+			save_scope_as = ut_united_heritage_annexed_country
+			capital = {
+				save_scope_as = ut_united_heritage_annexed_country_capital
+			}
+		}
+		
+		save_scope_as = ut_united_heritage_country
+		every_country = {
+			limit = {
+				is_player = yes
+				NOT = { this = root }
+			}
+			trigger_event = { id = event_new_dawn.801 }
+		}
+		
+		annex_with_incorporation = scope:ut_united_heritage_annexed_country
+	}
+}
+
+event_new_dawn.801 = {
+	type = country_event
+	placement = scope:ut_united_heritage_annexed_country_capital
+	title = event_new_dawn.801.t
+	desc = event_new_dawn.801.d
+	flavor = event_new_dawn.801.f
 
 	event_image = {
 		video = "unspecific_world_fair"

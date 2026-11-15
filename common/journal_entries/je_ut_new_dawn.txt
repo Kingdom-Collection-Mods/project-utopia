@@ -871,6 +871,7 @@ je_ut_new_dawn_democratic = {
 				name = je_ut_new_dawn_core_progress_diff
 				subtract = var:je_ut_new_dawn_core_prev_progress
 			}
+			trigger_event = { id = event_new_dawn.800 popup = yes } # Unite culture
 		}
 		random_events = {
 			400 = 0
@@ -1151,6 +1152,7 @@ je_ut_new_dawn_autocratic = {
 				name = je_ut_new_dawn_core_progress_diff
 				subtract = var:je_ut_new_dawn_core_prev_progress
 			}
+			trigger_event = { id = event_new_dawn.800 popup = yes } # Unite culture
 		}
 		random_events = {
 			400 = 0
@@ -1488,6 +1490,8 @@ je_ut_new_dawn_fascist = {
 				subtract = var:je_ut_new_dawn_core_prev_progress
 			}
 
+			trigger_event = { id = event_new_dawn.800 popup = yes } # Unite culture
+
 			if = {
 				limit = {
 					NOT = { has_modifier = je_ut_new_dawn_fascist_petty_bourgeoisie_in_power_mod }
@@ -1787,6 +1791,7 @@ je_ut_new_dawn_communist = {
 				name = je_ut_new_dawn_core_progress_diff
 				subtract = var:je_ut_new_dawn_core_prev_progress
 			}
+			trigger_event = { id = event_new_dawn.800 popup = yes } # Unite culture
 		}
 		random_events = {
 			400 = 0
