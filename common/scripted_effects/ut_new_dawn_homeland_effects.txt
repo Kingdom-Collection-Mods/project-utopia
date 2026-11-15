@@ -139,6 +139,9 @@ ut_spread_new_dawn_effect = {
 					add_journal_entry = {
 						type = je_ut_new_dawn
 					}
+					set_variable = {
+						name = ut_homeland_spread_new_dawn_opposing_country_var
+					}
 				}
 				ut_freeze_new_dawn_progress = yes
 				if = {

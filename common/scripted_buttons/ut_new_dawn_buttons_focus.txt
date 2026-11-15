@@ -1,4 +1,4 @@
-#Base
+﻿#Base
 ut_new_dawn_fascist_focus = {
 	name = "ut_new_dawn_fascist_focus"
 	desc = "ut_new_dawn_fascist_focus_desc"

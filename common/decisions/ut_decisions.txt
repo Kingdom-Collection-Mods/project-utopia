@@ -1,4 +1,4 @@
-﻿ut_tech_preview_cheat_research = {
+ut_tech_preview_cheat_research = {
 	is_shown = {
 		is_player = yes
 		NOT = { has_global_variable = ut_tech_preview_cheat_disable }
@@ -947,6 +947,7 @@ ut_homeland_spread_new_dawn = {
 		OR = {
 			is_player = yes
 			NOT = { has_variable = ut_homeland_spread_new_dawn_var }
+			NOT = { has_variable = ut_homeland_spread_new_dawn_opposing_country_var }
 		}
 	}
 	possible = {

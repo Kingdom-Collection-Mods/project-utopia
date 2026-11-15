@@ -713,9 +713,7 @@ je_ut_new_dawn_democratic = {
 			trigger_event = { id = event_new_dawn.201 popup = yes }
 		}
 		ut_new_dawn_democrat_progress = yes
-		add_journal_entry = {
-			type = je_ut_new_dawn_core_abilities
-		}
+		ut_new_dawn_common_start_phase_2 = yes
 		
 		remove_modifier = je_ut_new_dawn_democrat_focus
 		remove_modifier = je_ut_new_dawn_autocrat_focus
@@ -1042,9 +1040,7 @@ je_ut_new_dawn_autocratic = {
 			trigger_event = { id = event_new_dawn.202 popup = yes }
 		}
 		ut_new_dawn_autocrat_progress = yes
-		add_journal_entry = {
-			type = je_ut_new_dawn_core_abilities
-		}
+		ut_new_dawn_common_start_phase_2 = yes
 
 		remove_modifier = je_ut_new_dawn_democrat_focus
 		remove_modifier = je_ut_new_dawn_autocrat_focus
@@ -1306,9 +1302,7 @@ je_ut_new_dawn_fascist = {
 			trigger_event = { id = event_new_dawn.203 popup = yes }
 		}
 		ut_new_dawn_fascist_progress = yes
-		add_journal_entry = {
-			type = je_ut_new_dawn_core_abilities
-		}
+		ut_new_dawn_common_start_phase_2 = yes
 
 		remove_modifier = je_ut_new_dawn_democrat_focus
 		remove_modifier = je_ut_new_dawn_autocrat_focus
@@ -1661,10 +1655,7 @@ je_ut_new_dawn_communist = {
 			}
 			trigger_event = { id = event_new_dawn.204 popup = yes }
 		}
-		ut_new_dawn_communist_progress = yes
-		add_journal_entry = {
-			type = je_ut_new_dawn_core_abilities
-		}
+		ut_new_dawn_common_start_phase_2 = yes
 
 		remove_modifier = je_ut_new_dawn_democrat_focus
 		remove_modifier = je_ut_new_dawn_autocrat_focus

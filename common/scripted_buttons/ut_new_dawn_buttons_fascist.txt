@@ -1,4 +1,4 @@
-#Fascist Buttons
+﻿#Fascist Buttons
 je_ut_new_dawn_outlaw_communists = {
 	name = "je_ut_new_dawn_outlaw_communists"
 	desc = "je_ut_new_dawn_outlaw_communists_desc"
