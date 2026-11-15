@@ -89,6 +89,7 @@ ut_spread_new_dawn_effect = {
 					NOT = { this = root }
 					is_subject = no
 					country_rank >= rank_value:unrecognized_regional_power
+					NOT = { country_rank = rank_value:minor_power }
 					any_primary_culture = {
 						is_primary_culture_of = ROOT
 					}
@@ -107,6 +108,7 @@ ut_spread_new_dawn_effect = {
 				#todo consider if player can become opponent
 				is_subject = no
 				country_rank >= rank_value:unrecognized_regional_power
+				NOT = { country_rank = rank_value:minor_power }
 				any_primary_culture = {
 					is_primary_culture_of = ROOT
 				}
@@ -128,9 +130,9 @@ ut_spread_new_dawn_effect = {
 				}
 				if = {
 					limit = {
-						has_variable = je_ut_new_dawn_heritage_activated_var
+						NOT = { has_variable = je_ut_new_dawn_heritage_activated_var }
+						NOT = { has_journal_entry = je_ut_new_dawn }
 					}
-					
 					set_variable = {
 						name = je_ut_new_dawn_heritage_activated_var
 					}
@@ -267,6 +269,7 @@ ut_spread_new_dawn_effect = {
 		if = {
 			limit = {
 				NOT = { has_variable = je_ut_new_dawn_heritage_activated_var }
+				NOT = { has_journal_entry = je_ut_new_dawn }
 			}
 			set_variable = {
 				name = je_ut_new_dawn_heritage_activated_var
