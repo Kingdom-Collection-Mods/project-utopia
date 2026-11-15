@@ -318,7 +318,7 @@ ut_law_monarchy_corporate_state = {
 		interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.25
 
 		
-		country_new_dawn_progress_points_progress = 0.5
+		country_new_dawn_progress_points_progress = 0.2
 	}
 
 	ai_will_do = {
