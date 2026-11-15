@@ -98,21 +98,7 @@ ut_spread_new_dawn_effect = {
 						limit = {
 							exists = this
 							NOT = { this = root }
-							any_primary_culture = {
-								is_primary_culture_of = ROOT
-							}
-							every_primary_culture = {
-								ROOT = {
-									country_average_cultural_acceptance = {
-										target = prev
-										value >= acceptance_status_5
-									}
-									country_average_religious_acceptance = {
-										target = prev
-										value >= religious_acceptance_low
-									}
-								}
-							}
+							ut_new_dawn_shared_accepted_cultures_trigger = yes
 							ut_is_country_on_same_continent_as_root = yes
 						}
 						every_scope_state = {
@@ -255,22 +241,7 @@ ut_spread_new_dawn_effect = {
 
 	every_diplomatically_relevant_country = {
 		limit = {
-			NOT = { this = root }
-			is_revolutionary = no
-			OR = {
-				is_subject = no
-				AND = {
-					is_subject_of = ROOT
-					is_subject_type = subject_type_puppet
-				}
-			}
-			country_rank < rank_value:major_power
-			any_primary_culture = {
-				is_primary_culture_of = ROOT
-			}
-			NOT = { has_journal_entry = je_ut_new_dawn }
-			NOT = { ut_new_dawn_has_core_trigger = yes }
-			ut_is_country_on_same_continent_as_root = yes
+			ut_spread_new_dawn_target_trigger = yes
 		}
 		if = {
 			limit = {
@@ -298,21 +269,7 @@ ut_spread_new_dawn_effect = {
 		limit = {
 			exists = this
 			NOT = { this = root }
-			any_primary_culture = {
-				is_primary_culture_of = ROOT
-			}
-			every_primary_culture = {
-				ROOT = {
-					country_average_cultural_acceptance = {
-						target = prev
-						value >= acceptance_status_5
-					}
-					country_average_religious_acceptance = {
-						target = prev
-						value >= religious_acceptance_low
-					}
-				}
-			}
+			ut_new_dawn_shared_accepted_cultures_trigger = yes
 			ut_is_country_on_same_continent_as_root = yes
 		}
 		hidden_effect = {

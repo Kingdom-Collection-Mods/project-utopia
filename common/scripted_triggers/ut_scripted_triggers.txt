@@ -807,7 +807,23 @@ ut_is_country_on_same_continent_as_root = {
 	}
 }
 
-
+ut_new_dawn_shared_accepted_cultures_trigger = {
+	any_primary_culture = {
+		is_primary_culture_of = ROOT
+	}
+	every_primary_culture = {
+		ROOT = {
+			country_average_cultural_acceptance = {
+				target = prev
+				value >= acceptance_status_5
+			}
+			country_average_religious_acceptance = {
+				target = prev
+				value >= religious_acceptance_low
+			}
+		}
+	}
+}
 
 ut_unite_homeland_target_trigger = {
 	NOT = { this = root }
@@ -824,21 +840,7 @@ ut_unite_homeland_target_trigger = {
 	is_at_war = no
 	is_diplomatic_play_initiator = no
 	is_diplomatic_play_target = no
-	any_primary_culture = {
-		is_primary_culture_of = ROOT
-	}
-	every_primary_culture = {
-		ROOT = {
-			country_average_cultural_acceptance = {
-				target = prev
-				value >= acceptance_status_5
-			}
-			country_average_religious_acceptance = {
-				target = prev
-				value >= religious_acceptance_low
-			}
-		}
-	}
+	ut_new_dawn_shared_accepted_cultures_trigger = yes
 	OR = {
 		AND = {
 			is_subject_of = ROOT
