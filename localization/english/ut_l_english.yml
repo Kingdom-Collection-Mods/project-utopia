@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -481,7 +481,7 @@
  je_ut_new_dawn_common_pressure_progress_from_expected_sol: "#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_expected_sol_tooltip expected#!#! [concept_sol]"
  je_ut_new_dawn_common_pressure_progress_from_expected_sol_tooltip: "Expected [concept_sol] is [Country.MakeScope.Var('je_ut_new_dawn_common_pressure_expected_sol').GetValue].\n[Country.MakeScope.Var('je_ut_new_dawn_common_pressure_utopia_sol').GetValue] [concept_sol] reduces pressure by 0.5."
  je_ut_new_dawn_common_pressure_progress_from_core_progress: "[concept_ut_nd_progress_points] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_core_progress_tooltip gained#!#!"
- je_ut_new_dawn_common_pressure_progress_from_core_progress_tooltip: "Every 1 [concept_ut_nd_progress_points] gained decreases pressure by 0.5 points."
+ je_ut_new_dawn_common_pressure_progress_from_core_progress_tooltip: "Every 1 [concept_ut_nd_progress_points] gained decreases pressure by 0.5 points. At maximum progress, pressure is reduced by 0.5."
  je_ut_new_dawn_common_pressure_progress_from_war_support: "#tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_war_support_tooltip low#!#! [concept_war_support]"
  je_ut_new_dawn_common_pressure_progress_from_war_support_tooltip: "Low $concept_war_support$ increase Pressure:\n <75%: 0.5 [concept_ut_nd_pressure]\n <50%: 1 [concept_ut_nd_pressure]\n <25%: 2 [concept_ut_nd_pressure]"
  je_ut_new_dawn_common_pressure_progress_from_insurrectionary_movement: "[Concept('concept_insurrection', 'insurrectionist')] #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],je_ut_new_dawn_common_pressure_progress_from_insurrectionary_movement_tooltip $concept_political_movement$#!#!"
