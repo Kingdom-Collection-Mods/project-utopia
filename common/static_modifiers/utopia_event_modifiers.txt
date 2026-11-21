@@ -24,6 +24,18 @@ new_dawn_mod = {
 	country_law_enactment_speed_mult = 0.3
 }
 
+ut_fascist_raid_suppressed_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	political_movement_pop_attraction_mult = -0.1
+	political_movement_radicalism_add = -0.5
+}
+
+ut_fascist_raid_provoked_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	political_movement_pop_attraction_mult = 0.1
+	political_movement_radicalism_add = 0.5
+}
+
 
 new_dawn_phase_2_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_torch.dds

@@ -146,3 +146,56 @@ event_new_dawn_fascist.1 = {
 		}
 	}
 }
+
+event_new_dawn_fascist.2 = {
+	type = country_event
+	placement = ROOT
+	duration = 3
+
+	title = event_new_dawn_fascist.2.t
+	desc = event_new_dawn_fascist.2.d
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	immediate = {
+		random_political_movement = {
+			limit = {
+				is_insurrectionary = yes
+			}
+			save_scope_as = ut_fascist_raid_movement
+		}
+	}
+
+	cancellation_trigger = {
+		NOT = {
+			scope:ut_fascist_raid_movement ?= {
+				is_insurrectionary = yes
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn_fascist.2.a
+		default_option = yes
+		scope:ut_fascist_raid_movement ?= {
+			add_modifier = {
+				name = ut_fascist_raid_suppressed_mod
+				days = 365
+			}
+		}
+	}
+
+	option = {
+		name = event_new_dawn_fascist.2.b
+		scope:ut_fascist_raid_movement ?= {
+			add_modifier = {
+				name = ut_fascist_raid_provoked_mod
+				days = 365
+			}
+		}
+	}
+}

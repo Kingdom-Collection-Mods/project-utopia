@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -202,6 +202,13 @@ l_english:
  event_new_dawn_fascist.1.a: "Let the struggle continue"
  event_new_dawn_fascist.1.b: "The Industrialists rise"
  event_new_dawn_fascist.1.c: "The Bourgeoisie rise"
+
+ event_new_dawn_fascist.2.t: "A well organized Raid"
+ event_new_dawn_fascist.2.d: "Our paramilitary groups have identified the [SCOPE.sPoliticalMovement('ut_fascist_raid_movement').GetName] as a target. We can intimidate its supporters into silence or provoke them into a more radical response."
+ event_new_dawn_fascist.2.a: "Suppress the movement"
+ event_new_dawn_fascist.2.b: "Provoke a confrontation"
+ ut_fascist_raid_suppressed_mod: "Movement Suppressed"
+ ut_fascist_raid_provoked_mod: "Movement Provoked"
 
  event_new_dawn.801.t: "[SCOPE.sCountry('ut_united_heritage_country').GetName] incorporated [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName]"
  event_new_dawn.801.d: "[SCOPE.sCountry('ut_united_heritage_country').GetName] has incorporated [SCOPE.sCountry('ut_united_heritage_annexed_country').GetName], a country sharing one of its primary cultures."
@@ -747,8 +754,9 @@ l_english:
  je_ut_new_dawn_volksgemeinschaft_ability_remove_desc: "todo"
  je_ut_new_dawn_fascist_volksgemeinschaft_ability_mod: "$je_ut_new_dawn_volksgemeinschaft_ability_add$"
  je_ut_new_dawn_form_paramilitary_groups_effect_tt: "Enables: $ut_new_dawn_fascist_raid$"
- ut_new_dawn_fascist_raid: "Fascist Raid"
- ut_new_dawn_fascist_raid_desc: "Todo..."
+ ut_new_dawn_fascist_raid: "Organize Raid"
+ ut_new_dawn_fascist_raid_desc: "Send paramilitaries against an opposing political movement, either suppressing or provoking it."
+ ut_new_dawn_fascist_raid_cooldown_tt: "A paramilitary raid has not been ordered in the past year"
  ut_unite_homeland: "Unite the Homeland"
  ut_unite_homeland_desc: "Incorporate eligible smaller countries on this continent that share our primary culture and New Dawn ideology."
  ut_homeland_spread_new_dawn: "Spread New Dawn in the Homeland"
