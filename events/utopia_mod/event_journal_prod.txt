@@ -125,18 +125,20 @@ utopia_journal_prod.3 = {
 			}
 			has_technology_researched = computers
 		}
-		add_technology_progress = { progress = 6000 technology = heavy_machinery_industry }
+		add_technology_progress = { progress = 8000 technology = heavy_machinery_industry }
 	}
 	
 	option = {
 		name = utopia.progress_b
+		highlighted_option = yes
 		
 		trigger = {
-			NOT = { has_technology_researched = heavy_machinery_industry }
-			can_research = heavy_machinery_industry
-			country_rank = rank_value:great_power
+			hidden_trigger = { 
+				NOT = { has_technology_researched = heavy_machinery_industry }
+				can_research = heavy_machinery_industry
+			}
 		}
-		add_technology_progress = { progress = 4150 technology = heavy_machinery_industry }
+		add_technology_progress = { progress = 6000 technology = heavy_machinery_industry }
 	}
 	
 	option = {
