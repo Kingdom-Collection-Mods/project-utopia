@@ -1,4 +1,4 @@
-﻿je_ut_new_dawn = {
+je_ut_new_dawn = {
 	icon = "gfx/interface/icons/new_dawn_icons/ut_new_dawn.dds"
 
 	group = je_group_utopia
@@ -329,27 +329,19 @@
 						scope:journal_entry = { 
 							OR = {
 								AND = {
-									"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-									"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)" 
-									"scripted_bar_progress(ut_new_dawn_democrat_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
+									"scripted_bar_progress(ut_new_dawn_democrat_bar)" >= new_dawn_core_upper_bound
 									root = { has_modifier = je_ut_new_dawn_democrat_focus }
 								}
 								AND = {
-									"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
-									"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
-									"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+									"scripted_bar_progress(ut_new_dawn_autocrat_bar)" >= new_dawn_core_upper_bound
 									root = { has_modifier = je_ut_new_dawn_autocrat_focus }
 								}
 								AND = {
-									"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
-									"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
-									"scripted_bar_progress(ut_new_dawn_communist_bar)" > "scripted_bar_progress(ut_new_dawn_fascist_bar)"
+									"scripted_bar_progress(ut_new_dawn_communist_bar)" >= new_dawn_core_upper_bound
 									root = { has_modifier = je_ut_new_dawn_communist_focus }
 								}
 								AND = {
-									"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_democrat_bar)"
-									"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_autocrat_bar)"
-									"scripted_bar_progress(ut_new_dawn_fascist_bar)" > "scripted_bar_progress(ut_new_dawn_communist_bar)"
+									"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= new_dawn_core_upper_bound
 									root = { has_modifier = je_ut_new_dawn_fascist_focus }
 								}
 							}

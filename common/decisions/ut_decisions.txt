@@ -1005,10 +1005,11 @@ ut_unite_against_foreign_core = {
 		any_diplomatically_relevant_country = {
 			is_at_war = no
 			NOT = { this = root }
+			is_insurrectionary = no
 			is_subject = no
 			country_rank <= rank_value:minor_power
 			NOT = { ut_new_dawn_has_core_trigger = yes }
-			ut_is_country_on_same_continent_as_root = { TARGET = root }
+			ut_is_country_on_same_continent_as_root = yes
 			#todo check if intervene possibility to broad
 			custom_tooltip = {
 				text = ut_unite_against_foreign_core_diplomatic_play_tt
@@ -1047,12 +1048,12 @@ ut_unite_against_foreign_core = {
 		random_diplomatically_relevant_country = {
 			limit = {
 				NOT = { this = root }
-				is_revolutionary = no
+				is_insurrectionary = no
 				is_subject = no
 				is_at_war = no
 				country_rank <= rank_value:minor_power
 				NOT = { ut_new_dawn_has_core_trigger = yes }
-				ut_is_country_on_same_continent_as_root = { TARGET = root }
+				ut_is_country_on_same_continent_as_root = yes
 				OR = {
 					AND = {
 						is_diplomatic_play_target = yes

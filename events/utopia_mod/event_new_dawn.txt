@@ -2449,6 +2449,36 @@ event_new_dawn.27 = {
 		default_option = yes
 	}
 
+	option = {
+		name = ut_new_dawn_propaganda_target_defend
+		highlighted_option = yes
+		trigger = {
+			custom_tooltip = {
+				text = ut_has_new_dawn_progress_50
+				ut_has_new_dawn_progress_core = {
+					VALUE = 50
+				}
+			}
+		}
+		
+		set_variable = ut_new_dawn_propaganda_target_defend_cooldown_var
+		custom_tooltip = ut_add_new_dawn_core_progress_neg_10
+		ut_add_new_dawn_core_progress = {
+			VALUE = -10
+		}
+		scope:ut_new_dawn_propaganda_target_continue_source_scope = {
+			set_variable = {
+				name = ut_new_dawn_propaganda_target_defend_source_var
+				value = root
+			}
+			trigger_event = {
+				id = event_new_dawn.20
+				popup = yes
+			}
+			custom_tooltip = ut_new_dawn_propaganda_target_defend_tt
+		}
+	}
+
 	after = {
 		clear_saved_scope = ut_new_dawn_propaganda_target_continue_source_scope
 	}
