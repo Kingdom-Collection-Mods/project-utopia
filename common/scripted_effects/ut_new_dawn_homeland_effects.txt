@@ -262,6 +262,36 @@ ut_spread_new_dawn_effect = {
 			add_journal_entry = {
 				type = je_ut_new_dawn
 			}
+			if = {
+				limit = {
+					ROOT = { country_rank >= rank_value:great_power }
+					country_rank = rank_value:insignificant_power  #only recognized insignificant powers get join bonus
+				}
+				if = {
+					limit = {
+						ROOT = { has_modifier = ut_new_dawn_core_fascist_mod }
+					}
+					add_modifier = je_ut_new_dawn_fascist_focus
+				}
+				else_if = {
+					limit = {
+						ROOT = { has_modifier = ut_new_dawn_core_democratic_mod }
+					}
+					add_modifier = je_ut_new_dawn_democrat_focus
+				}
+				else_if = {
+					limit = {
+						ROOT = { has_modifier = ut_new_dawn_core_autocratic_mod }
+					}
+					add_modifier = je_ut_new_dawn_autocrat_focus
+				}
+				else_if = {
+					limit = {
+						ROOT = { has_modifier = ut_new_dawn_core_communist_mod }
+					}
+					add_modifier = je_ut_new_dawn_communist_focus
+				}
+			}
 		}
 	}
 

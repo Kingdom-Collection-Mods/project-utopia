@@ -1830,7 +1830,7 @@ ut_law_forced_laborers = {
 	}
 
 	can_enact = {
-		has_variable = je_ut_new_dawn_conformity_done
+		has_modifier = je_ut_new_dawn_fascist_conformity_mod
 	}
 
 	modifier = {

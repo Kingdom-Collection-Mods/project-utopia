@@ -5,7 +5,7 @@ je_ut_new_dawn_outlaw_communists = {
 
 	visible = {
 		NOT = {
-			has_variable = je_ut_new_dawn_outlaw_communists_done
+			has_modifier = je_ut_new_dawn_fascist_outlaw_communists_mod
 		}
 	}
 
@@ -42,10 +42,6 @@ je_ut_new_dawn_outlaw_communists = {
 		add_modifier = {
 			name = je_ut_new_dawn_fascist_outlaw_communists_mod
 		}
-		set_variable = {
-			name = je_ut_new_dawn_outlaw_communists_done
-		}
-
 		if = {
 			limit = {
 				is_ai = yes
@@ -80,7 +76,7 @@ je_ut_new_dawn_outlaw_communists_ability_add = {
 	desc = "je_ut_new_dawn_outlaw_communists_ability_add_desc"
 
 	visible = {
-		has_variable = je_ut_new_dawn_outlaw_communists_done
+		has_modifier = je_ut_new_dawn_fascist_outlaw_communists_modje_ut_new_dawn_outlaw_communists_done
 		NOT = {
 			has_modifier = je_ut_new_dawn_fascist_outlaw_communists_ability_mod
 		}
@@ -141,7 +137,7 @@ je_ut_new_dawn_form_paramilitary_groups = {
 
 	visible = {
 		NOT = {
-			has_variable = je_ut_new_dawn_form_paramilitary_groups_done
+			has_modifier = je_ut_new_dawn_fascist_form_paramilitary_groups_mod
 		}
 	}
 
@@ -161,9 +157,6 @@ je_ut_new_dawn_form_paramilitary_groups = {
 			je:je_ut_new_dawn_fascist = {
 				add_progress = { value = -50 name = je_ut_new_dawn_fascist_points_bar }
 			}
-		}
-		set_variable = {
-			name = je_ut_new_dawn_form_paramilitary_groups_done
 		}
 		add_modifier = je_ut_new_dawn_fascist_form_paramilitary_groups_mod
 		custom_tooltip = je_ut_new_dawn_form_paramilitary_groups_effect_tt
@@ -202,7 +195,7 @@ je_ut_new_dawn_fascist_form_paramilitary_groups_ability_add = {
 	name = "je_ut_new_dawn_fascist_form_paramilitary_groups_ability_add"
 	desc = "je_ut_new_dawn_fascist_form_paramilitary_groups_ability_add_desc"
 	visible = {
-		has_variable = je_ut_new_dawn_form_paramilitary_groups_done
+		has_modifier = je_ut_new_dawn_fascist_form_paramilitary_groups_mod
 		
 		NOT = {
 			has_modifier = je_ut_new_dawn_fascist_form_paramilitary_groups_ability_mod
@@ -253,7 +246,7 @@ je_ut_new_dawn_conformity = {
 
 	visible = {
 		NOT = {
-			has_variable = je_ut_new_dawn_conformity_done
+			has_modifier = je_ut_new_dawn_fascist_conformity_mod
 		}
 	}
 
@@ -267,8 +260,8 @@ je_ut_new_dawn_conformity = {
 		custom_tooltip = {
 			text = new_dawn_ideology_any_previous_milestone_done_tt
 			OR = {
-				has_variable = je_ut_new_dawn_outlaw_communists_done
-				has_variable = je_ut_new_dawn_form_paramilitary_groups_done
+				has_modifier = je_ut_new_dawn_fascist_outlaw_communists_mod
+				has_modifier = je_ut_new_dawn_fascist_form_paramilitary_groups_mod
 			}
 		}
 		OR = {
@@ -324,9 +317,6 @@ je_ut_new_dawn_conformity = {
 			add_ideology = ut_ideology_laissez_faire_authoritarian
 		}
 		add_modifier = je_ut_new_dawn_fascist_conformity_mod
-		set_variable = {
-			name = je_ut_new_dawn_conformity_done
-		}
 	}
 	
 	ai_chance = {
@@ -339,7 +329,7 @@ je_ut_new_dawn_conformity_ability_add = {
 	desc = "je_ut_new_dawn_conformity_ability_add_desc"
 
 	visible = {
-		has_variable = je_ut_new_dawn_conformity_done
+		has_modifier = je_ut_new_dawn_fascist_conformity_mod
 		NOT = {
 			has_modifier = je_ut_new_dawn_fascist_conformity_ability_mod
 		}
@@ -412,7 +402,7 @@ je_ut_new_dawn_volksgemeinschaft = {
 		custom_tooltip = {
 			text = new_dawn_ideology_any_previous_milestone_done_tt
 			OR = {
-				has_variable = je_ut_new_dawn_conformity_done
+				has_modifier = je_ut_new_dawn_fascist_conformity_mod
 				has_variable = je_ut_new_dawn_unite_heritage_done
 			}
 		}
@@ -520,8 +510,8 @@ je_ut_new_dawn_unite_heritage = {
 		custom_tooltip = {
 			text = new_dawn_ideology_any_previous_milestone_done_tt
 			OR = {
-				has_variable = je_ut_new_dawn_outlaw_communists_done
-				has_variable = je_ut_new_dawn_form_paramilitary_groups_done
+				has_modifier = je_ut_new_dawn_fascist_outlaw_communists_mod
+				has_modifier = je_ut_new_dawn_fascist_form_paramilitary_groups_mod
 			}
 		}
 
@@ -594,7 +584,7 @@ je_ut_new_dawn_expansionism = {
 		custom_tooltip = {
 			text = new_dawn_ideology_any_previous_milestone_done_tt
 			OR = {
-				has_variable = je_ut_new_dawn_conformity_done
+				has_modifier = je_ut_new_dawn_fascist_conformity_mod
 				has_variable = je_ut_new_dawn_unite_heritage_done
 			}
 		}
