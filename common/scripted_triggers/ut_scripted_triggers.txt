@@ -811,16 +811,23 @@ ut_new_dawn_shared_accepted_cultures_trigger = {
 	any_primary_culture = {
 		is_primary_culture_of = ROOT
 	}
-	every_primary_culture = {
-		ROOT = {
-			country_average_cultural_acceptance = {
-				target = prev
-				value >= acceptance_status_5
+	NOT = {
+		any_primary_culture = {
+			ROOT = {
+				country_average_cultural_acceptance = {
+					target = prev
+					value < acceptance_status_5
+				}
 			}
-			country_average_religious_acceptance = {
-				target = prev
-				value >= religious_acceptance_low
-			}
+		}
+	}
+	religion = {
+		save_scope_as = relevant_religion
+	}
+	ROOT = {
+		country_average_religious_acceptance = {
+			target = scope:relevant_religion
+			value >= religious_acceptance_low
 		}
 	}
 }

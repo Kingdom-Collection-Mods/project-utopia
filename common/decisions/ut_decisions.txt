@@ -1020,7 +1020,7 @@ ut_unite_against_foreign_core = {
 		random_diplomatically_relevant_country = {
 			limit = {
 				NOT = { this = root }
-				#is_revolutionary = no
+				is_revolutionary = no
 				is_subject = no
 				is_at_war = no
 				country_rank <= rank_value:minor_power

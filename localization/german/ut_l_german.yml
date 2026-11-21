@@ -1012,10 +1012,10 @@
  ut_ideology_laissez_faire_democratic_neoliberal_desc: "#lore Diese Gruppe glaubt an den freien Fluss von Handel und Arbeitskräften und bevorzugt das Urteil der Märkte gegenüber dem der Regierungen. Ersetzt [GetIdeology('ideology_laissez_faire').GetName]. [concept_ut_nd_democrat_core] Variante.#!"
 
  ut_ideology_laissez_faire_authoritarian: "Plutokratischer Liberalismus"
- ut_ideology_laissez_faire_authoritarian_desc: "#lore Diese Gruppe glaubt an den freien Fluss von Handel und Arbeitskräften und bevorzugt das Urteil der Märkte gegenüber dem der Regierungen. Ersetzt [GetIdeology('ideology_laissez_faire').GetName]. [concept_ut_nd_autocrat_core] Variante.#!. #r Geht verloren, wenn $new_dawn_phase_2_mod$ scheitert.#!"
+ ut_ideology_laissez_faire_authoritarian_desc: "#lore Diese Gruppe glaubt an den freien Fluss von Handel und Arbeitskräften und bevorzugt das Urteil der Märkte gegenüber dem der Regierungen. Ersetzt [GetIdeology('ideology_laissez_faire').GetName]. [concept_ut_nd_autocrat_core] Variante.#! #r Geht verloren, wenn $new_dawn_phase_2_mod$ scheitert.#!"
 
  ideology_patriotic_fascist: "Nationalist"
- ideology_patriotic_fascist_desc: "#lore Diese Gruppe betont eine starke nationale Identität, Patriotismus und oft autoritäre Regierungsführung. Sie priorisieren nationale Einheit und können aggressive Außenpolitiken unterstützen. Ersetzt [GetIdeology('ideology_patriotic').GetName]. #!"
+ ideology_patriotic_fascist_desc: "#lore Diese Gruppe betont eine starke nationale Identität, Patriotismus und oft autoritäre Regierungsführung. Sie priorisieren nationale Einheit und können aggressive Außenpolitiken unterstützen. Ersetzt [GetIdeology('ideology_patriotic').GetName].#! #r Lost if $new_dawn_phase_2_mod$ fails.#!"
  ideology_patriotic_communist_national: "Anti-Imperialistisch"
  ideology_patriotic_communist_national_desc: "#lore Diese Gruppe betont eine starke nationale Identität, Patriotismus und oft autoritäre Regierungsführung. Sie priorisieren nationale Einheit und können aggressive Außenpolitiken unterstützen. Ersetzt [GetIdeology('ideology_patriotic').GetName]. [concept_ut_nd_communist_core] variation.#! #r Lost if $new_dawn_phase_2_mod$ fails.#!"
  ideology_patriotic_communist_international: "Internationalistisch"
