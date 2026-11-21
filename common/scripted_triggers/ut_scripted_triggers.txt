@@ -811,12 +811,15 @@ ut_new_dawn_shared_accepted_cultures_trigger = {
 	any_primary_culture = {
 		is_primary_culture_of = ROOT
 	}
-	NOT = {
-		any_primary_culture = {
-			ROOT = {
-				country_average_cultural_acceptance = {
-					target = prev
-					value < acceptance_status_5
+	custom_tooltip = {
+		text = ut_new_dawn_shared_accepted_cultures_every_culture_acceptance_status_5
+		NOT = {
+			any_primary_culture = {
+				ROOT = {
+					country_average_cultural_acceptance = {
+						target = prev
+						value < acceptance_status_5
+					}
 				}
 			}
 		}
@@ -824,10 +827,13 @@ ut_new_dawn_shared_accepted_cultures_trigger = {
 	religion = {
 		save_scope_as = relevant_religion
 	}
-	ROOT = {
-		country_average_religious_acceptance = {
-			target = scope:relevant_religion
-			value >= religious_acceptance_low
+	custom_tooltip = {
+		text = ut_new_dawn_shared_accepted_cultures_religion
+		ROOT = {
+			country_average_religious_acceptance = {
+				target = scope:relevant_religion
+				value >= religious_acceptance_low
+			}
 		}
 	}
 }

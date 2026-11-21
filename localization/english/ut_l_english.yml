@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -215,6 +215,9 @@
  event_new_dawn.804.t: "A New Dawn for the [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetPrimaryCulturesDesc] people"
  event_new_dawn.804.d: "[SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetName] has set out to spread the new dawn among the [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetPrimaryCulturesDesc] lands nearby."
  event_new_dawn.804.f: "A new dawn is breaking for the [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetPrimaryCulturesDesc] people, and its light is spreading beyond the borders of [SCOPE.sCountry('ut_homeland_spread_new_dawn_country').GetName]."
+
+ ut_new_dawn_shared_accepted_cultures_every_culture_acceptance_status_5: "Every [concept_primary_cultures] has [concept_acceptance_status] $full_acceptance$"
+ ut_new_dawn_shared_accepted_cultures_religion: "Their [concept_religion] has [concept_acceptance] of at least 10"
 
  event_new_dawn.2.a: "Build foundation for core ideology"
  
