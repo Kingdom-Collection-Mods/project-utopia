@@ -1,4 +1,4 @@
-﻿###based on je_divided_monarchists by Paradox
+###based on je_divided_monarchists by Paradox
 
 ut_new_dawn_fascist_bar = {
 	name = "ut_new_dawn_fascist_bar"
@@ -980,8 +980,8 @@ je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar = {
 	desc = "je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar_desc"
 	second_desc = "je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar_second_desc"
 
-	progress_texture = "gfx/interface/progressbar/progressbar_default.dds"
-	background_texture = "gfx/interface/progressbar/progressbar_gold.dds"
+	progress_texture = "gfx/interface/progressbar/progressbar_gold.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_default.dds"
 	glow_texture = "gfx/interface/progressbar/progressbar_default_glow.dds"
 	glow_line_texture = "gfx/interface/progressbar/progressbar_default_glow_line.dds"
 	marker = yes

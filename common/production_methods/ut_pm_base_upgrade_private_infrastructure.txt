@@ -229,6 +229,8 @@ ut_pm_research_department = {
 
 ut_pm_research_department_principle_movement = {
 	texture = "gfx/interface/icons/production_method_icons/social_science.dds"
+	is_hidden_when_unavailable = yes
+	
 	unlocking_principles = {
 		ut_principle_freedom_of_movement_4
 		ut_principle_freedom_of_movement_5

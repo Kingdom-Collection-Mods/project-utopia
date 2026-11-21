@@ -1,4 +1,4 @@
-# Diesel Tractors
+﻿# Diesel Tractors
 agricultural_mechanization = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	building_rye_farm_throughput_add = 0.15
@@ -423,7 +423,7 @@ je_ut_new_dawn_fascist_form_paramilitary_groups_mod = {
 je_ut_new_dawn_fascist_form_paramilitary_groups_ability_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	state_mortality_turmoil_mult = 0.1
-	state_non_homeland_mortality_mult = 0.04
+	state_non_homeland_mortality_mult = 0.03
 	country_new_dawn_pressure_progress = -0.2
 }
 
@@ -444,6 +444,7 @@ je_ut_new_dawn_fascist_conformity_ability_mod = {
 
 je_ut_new_dawn_fascist_volksgemeinschaft_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_authority_mult = 0.2
 	state_non_homeland_mortality_mult = 0.01
 	country_acceptance_not_homeland_add = -10
 	country_new_dawn_pressure_progress = -0.2
@@ -452,10 +453,12 @@ je_ut_new_dawn_fascist_volksgemeinschaft_mod = {
 
 je_ut_new_dawn_fascist_volksgemeinschaft_ability_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	state_non_homeland_mortality_mult = 0.05
 	country_acceptance_not_homeland_add = -10
 	country_war_support_casualties_mult = -0.5
 	country_war_support_battles_decrease_mult = -0.5
 	building_training_rate_mult = 1
+	state_building_conscription_center_max_level_add = 10
 	country_new_dawn_pressure_progress = 0.2
 }
 
@@ -508,7 +511,6 @@ ut_new_dawn_core_internal_bad_times_focus_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	country_new_dawn_progress_points_progress = 0.5
 	country_loyalists_from_legitimacy_mult = -0.1
-	state_standard_of_living_add = -0.2
 	state_radicals_from_political_movements_mult = 0.2
 }
 
