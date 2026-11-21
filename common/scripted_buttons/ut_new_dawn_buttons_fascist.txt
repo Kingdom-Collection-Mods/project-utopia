@@ -514,30 +514,12 @@ je_ut_new_dawn_unite_heritage = {
 
 		custom_tooltip = {
 			text = je_ut_new_dawn_unite_heritage_trigger_tt
-			has_law_or_variant = law_type:law_censorship
-			NOT = {
-				any_state = {
-					is_homeland_of_country_cultures = c:SWE
-					NOT = { owner = root }
-				}
-			}
+			
 		}
-		any_scope_state = {
-			state_region = {
-				is_homeland = cu:korean
-			}
-		}
-		cu:french = {
-				is_primary_culture_of = root
-			}
-		any_state = {
-			OR = {
-				NOT = {
-					state_region = {
-						is_homeland = root.culture
-					}
-				}
-				owner ?= root
+		NOT = {
+			any_state = {
+				is_homeland_of_country_cultures = root
+				NOT = { owner ?= root }
 			}
 		}
 	}
