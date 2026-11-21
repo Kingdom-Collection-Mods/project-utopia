@@ -842,6 +842,7 @@ je_ut_new_dawn_democratic = {
 					is_player = yes
 				}
 				ut_new_dawn_democrat_progress = yes
+				ut_new_dawn_common_pressure_progress_monthly = yes
 			}
 		}
 	}
@@ -1122,6 +1123,7 @@ je_ut_new_dawn_autocratic = {
 					is_player = yes
 				}
 				ut_new_dawn_autocrat_progress = yes
+				ut_new_dawn_common_pressure_progress_monthly = yes
 			}
 		}
 	}
@@ -1465,6 +1467,7 @@ je_ut_new_dawn_fascist = {
 					is_player = yes
 				}
 				ut_new_dawn_fascist_progress = yes
+				ut_new_dawn_common_pressure_progress_monthly = yes
 			}
 		}
 	}
@@ -1812,6 +1815,7 @@ je_ut_new_dawn_communist = {
 					is_player = yes
 				}
 				ut_new_dawn_communist_progress = yes
+				ut_new_dawn_common_pressure_progress_monthly = yes
 			}
 		}
 	}
