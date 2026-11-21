@@ -457,6 +457,7 @@ ut_new_dawn_start_propaganda_campaign = {
 			NOT = { has_modifier = ut_propaganda_fascist_mod }
 			NOT = { has_modifier = ut_propaganda_democratic_mod }
 			NOT = { has_modifier = ut_propaganda_autocratic_mod }
+			NOT = { has_modifier = ut_propaganda_campaign_successfully_defended_mod }
 			hidden_trigger = {
 				NOT = { has_variable = je_ut_new_dawn_done }
 			}

@@ -216,6 +216,10 @@ ut_je_propaganda_target = {
 			}
 		}
 		effect = {
+			add_modifier = {
+				name = ut_propaganda_campaign_successfully_defended_mod
+				days = very_short_modifier_time
+			}
 			remove_variable = ut_propaganda_target_abandon_var
 		}
 	}

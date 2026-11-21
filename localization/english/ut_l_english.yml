@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Generics
  utopia.yes: "Yes"
  utopia.no: "No"
@@ -1328,6 +1328,7 @@
  ut_new_dawn_propaganda_source_defend_once_tt: "First defense attempt (consecutive attempts will cost 20 [concept_ut_nd_progress_points])"
  ut_new_dawn_propaganda_target_defend_cooldown_tt: "Can only be used once per month."
 
+ ut_propaganda_campaign_successfully_defended_mod: "Defended against Propaganda"
  ut_propaganda_communist_mod: "Communist Propaganda"
  ut_propaganda_fascist_mod: "Fascist Propaganda"
  ut_propaganda_democratic_mod: "Democratic Propaganda"
