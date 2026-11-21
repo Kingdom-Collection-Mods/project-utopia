@@ -433,7 +433,7 @@ je_ut_new_dawn_volksgemeinschaft_ability_add = {
 	desc = "je_ut_new_dawn_volksgemeinschaft_ability_add_desc"
 
 	visible = {
-		has_modifier = je_ut_new_dawn_fascist_volksgemeinschaft_ability_mod
+		has_modifier = je_ut_new_dawn_fascist_volksgemeinschaft_mod
 		NOT = {
 			has_modifier = je_ut_new_dawn_fascist_volksgemeinschaft_ability_mod
 		}

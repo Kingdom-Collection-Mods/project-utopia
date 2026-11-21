@@ -32,7 +32,7 @@ ut_fascist_raid_suppressed_mod = {
 
 ut_fascist_raid_provoked_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
-	political_movement_pop_attraction_mult = 0.1
+	political_movement_pop_attraction_mult = 1
 	political_movement_radicalism_add = 0.5
 }
 
@@ -470,7 +470,8 @@ je_ut_new_dawn_fascist_volksgemeinschaft_ability_mod = {
 	country_war_support_casualties_mult = -0.5
 	country_war_support_battles_decrease_mult = -0.5
 	building_training_rate_mult = 1
-	state_building_conscription_center_max_level_add = 10
+	state_building_conscription_center_max_level_add = 20
+	standard_of_living_add = -1
 	country_new_dawn_pressure_progress = 0.2
 }
 
@@ -524,6 +525,7 @@ ut_new_dawn_core_internal_bad_times_focus_mod = {
 	country_new_dawn_progress_points_progress = 0.5
 	country_loyalists_from_legitimacy_mult = -0.1
 	state_radicals_from_political_movements_mult = 0.2
+	country_new_dawn_pressure_progress = 0.5 #to counter gain from increased progress
 }
 
 ut_tax_code_changed = {
