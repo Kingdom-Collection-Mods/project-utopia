@@ -18,6 +18,7 @@
 			has_technology_researched = radio
 		}
 		NOT = { has_modifier = ai_great_power_buff_spread }
+		has_game_rule = ut_ai_tech_buffs_yes
 	}
 
 	immediate = {
@@ -58,6 +59,7 @@ je_ai_consumer_goods_researched = {
 			has_technology_researched = consumer_goods_main_analog
 		}
 		has_variable = je_ai_radio_researched_done
+		has_game_rule = ut_ai_tech_buffs_yes
 	}
 
 	immediate = {
@@ -99,6 +101,7 @@ je_ai_advanced_consumer_goods_researched = {
 		}
 		NOT = { has_modifier = ai_great_power_buff_spread }
 		has_variable = je_ai_consumer_goods_researched_done
+		has_game_rule = ut_ai_tech_buffs_yes
 	}
 
 	immediate = {

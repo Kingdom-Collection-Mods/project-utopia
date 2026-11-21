@@ -39,7 +39,12 @@
 		trigger = {
 			has_technology_researched = computers
 			has_modifier = je_ut_software_era_6_3_high_level_language_mod
-
+			custom_tooltip = {
+				text = je_ut_software_era_6_required_points_tt
+				je:je_ut_software_era_6 = { 
+					"scripted_bar_progress(je_ut_software_points_bar_era_6)" >= 100
+				}
+			}
 		}
 		effect = {
 			set_variable = je_ut_software_era_6_done
@@ -103,16 +108,16 @@
 							add = local_var:je_ut_software_points_bar_progress_buildings_loc
 						}
 					}
-					#cap at 10
-					if = {
-						limit = {
-							has_variable = je_ut_software_points_bar_progress_buildings_era_6
-							var:je_ut_software_points_bar_progress_buildings_era_6 > 10
-						}
-						set_variable = {
-							name = je_ut_software_points_bar_progress_buildings_era_6
-							value = 10
-						}
+				}
+				#cap at 10
+				if = {
+					limit = {
+						has_variable = je_ut_software_points_bar_progress_buildings_era_6
+						var:je_ut_software_points_bar_progress_buildings_era_6 > 10
+					}
+					set_variable = {
+						name = je_ut_software_points_bar_progress_buildings_era_6
+						value = 10
 					}
 				}
 			}
@@ -181,6 +186,12 @@ je_ut_software_era_7 = {
 		trigger = {
 			has_modifier = je_ut_software_era_7_3_object_oriented_language_mod
 			has_technology_researched = internet
+			custom_tooltip = {
+				text = je_ut_software_era_7_required_points_tt
+				je:je_ut_software_era_7 = { 
+					"scripted_bar_progress(je_ut_software_points_bar_era_7)" >= 1000
+				}
+			}
 
 		}
 		effect = {
@@ -246,16 +257,16 @@ je_ut_software_era_7 = {
 							add = local_var:je_ut_software_points_bar_progress_loc
 						}
 					}
-					#cap at 100
-					if = {
-						limit = {
-							has_variable = je_ut_software_points_bar_progress_buildings_era_7
-							var:je_ut_software_points_bar_progress_buildings_era_7 > 100
-						}
-						set_variable = {
-							name = je_ut_software_points_bar_progress_buildings_era_7
-							value = 100
-						}
+				}
+				#cap at 100
+				if = {
+					limit = {
+						has_variable = je_ut_software_points_bar_progress_buildings_era_7
+						var:je_ut_software_points_bar_progress_buildings_era_7 > 100
+					}
+					set_variable = {
+						name = je_ut_software_points_bar_progress_buildings_era_7
+						value = 100
 					}
 				}
 			}
@@ -371,11 +382,11 @@ je_ut_software_era_8 = {
 				if = {
 					limit = {
 						has_variable = je_ut_software_points_bar_progress_buildings_era_8
-						var:je_ut_software_points_bar_progress_buildings_era_8 > 100
+						var:je_ut_software_points_bar_progress_buildings_era_8 > 1000
 					}
 					set_variable = {
 						name = je_ut_software_points_bar_progress_buildings_era_8
-						value = 100
+						value = 1000
 					}
 				}
 			}

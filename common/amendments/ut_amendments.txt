@@ -13,7 +13,6 @@
         always = yes
     }
 
-
     would_sponsor = {
 		ROOT = {
             AND = {

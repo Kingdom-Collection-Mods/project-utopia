@@ -193,18 +193,6 @@ ut_ideology_new_dawn_communist_trigger = {
 	}
 }
 
-ut_ideology_new_dawn_fascist_laws_trigger = {
-}
-
-ut_ideology_new_dawn_democrat_laws_trigger = {
-}
-
-ut_ideology_new_dawn_autocrat_laws_trigger = {
-}
-
-ut_ideology_new_dawn_monarchist_laws_trigger = {
-}
-
 ut_new_dawn_has_communist_core_laws_trigger = {
 	OR = {
 		has_law_or_variant = law_type:law_command_economy
@@ -216,14 +204,16 @@ ut_new_dawn_has_democrat_core_laws_trigger = {
 	has_law_or_variant = law_type:law_universal_suffrage
 }
 
-ut_new_dawn_has_democrat_secondary_core_laws_trigger = {
+ut_new_dawn_has_democrat_core_secondary_laws_trigger = {
 	has_law_or_variant = law_type:law_census_voting
 }
 
 ut_new_dawn_has_autocrat_core_laws_trigger = {
 	AND = {
 		OR = {
-			has_law_or_variant = law_type:law_monarchy
+			#todo double check if that is ok, so supreme leader (monarchy) doesnt count as autocratic
+			# has_law = law_type:law_monarchy
+			# has_law = law_type:ut_law_monarchy_autocratic
 			has_law_or_variant = law_type:law_autocracy
 			has_law_or_variant = law_type:law_oligarchy
 		}
@@ -233,7 +223,7 @@ ut_new_dawn_has_autocrat_core_laws_trigger = {
 }
 
 # todo do something for law_technocracy and theocracy alignment to autocracy or more
-# ut_new_dawn_has_autocrat_secondary_core_laws_trigger = {
+# ut_new_dawn_has_autocrat_core_secondary_laws_trigger = {
 # 	AND = {
 # 		OR = {
 # 			has_law_or_variant = law_type:law_technocracy
@@ -740,6 +730,11 @@ ut_has_modifier_autocratic_opposing_stance = {
 	has_modifier = ut_new_dawn_core_communist_mod
 }
 
+ut_root_to_this_has_modifier_opposing_stance = {
+	has_modifier = ut_new_dawn_core_autocratic_mod
+	#todo
+}
+
 ut_has_ideology_any_liberal = {
 	OR = {
 		has_ideology = ideology:ideology_liberal
@@ -763,4 +758,143 @@ ut_has_ideology_any_plutocratic = {
 		has_ideology = ideology:ideology_plutocratic_democratic
 		has_ideology = ideology:ideology_plutocratic_communist
 	}
+}
+
+ut_is_country_on_same_continent_as_root = {
+	custom_tooltip = {
+		text = "ut_is_country_on_same_continent_as_root"
+
+		trigger_if = {
+			limit = {
+				this.capital.state_region = {
+					is_in_geographic_region = geographic_region_europe
+				}
+			}
+			root.capital.state_region = {
+				is_in_geographic_region = geographic_region_europe
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				this.capital.state_region = {
+					is_in_geographic_region = geographic_region_americas
+				}
+			}
+			root.capital.state_region = {
+				is_in_geographic_region = geographic_region_americas
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				this.capital.state_region = {
+					is_in_geographic_region = geographic_region_africa
+				}
+			}
+			root.capital.state_region = {
+				is_in_geographic_region = geographic_region_africa
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				this.capital.state_region = {
+					is_in_geographic_region = geographic_region_asia
+				}
+			}
+			root.capital.state_region = {
+				is_in_geographic_region = geographic_region_asia
+			}
+		}
+	}
+}
+
+ut_new_dawn_shared_accepted_cultures_trigger = {
+	any_primary_culture = {
+		is_primary_culture_of = ROOT
+	}
+	custom_tooltip = {
+		text = ut_new_dawn_shared_accepted_cultures_every_culture_acceptance_status_5
+		NOT = {
+			any_primary_culture = {
+				ROOT = {
+					country_average_cultural_acceptance = {
+						target = prev
+						value < acceptance_status_5
+					}
+				}
+			}
+		}
+	}
+	religion = {
+		save_scope_as = relevant_religion
+	}
+	custom_tooltip = {
+		text = ut_new_dawn_shared_accepted_cultures_religion
+		ROOT = {
+			country_average_religious_acceptance = {
+				target = scope:relevant_religion
+				value >= religious_acceptance_low
+			}
+		}
+	}
+}
+
+ut_unite_homeland_target_trigger = {
+	NOT = { this = root }
+	is_revolutionary = no
+	is_secessionist = no
+	OR = {
+		is_subject = no
+		AND = {
+			is_subject_of = ROOT
+			is_subject_type = subject_type_puppet
+		}
+	}
+	country_rank <= rank_value:minor_power
+	is_at_war = no
+	is_diplomatic_play_initiator = no
+	is_diplomatic_play_target = no
+	ut_new_dawn_shared_accepted_cultures_trigger = yes
+	OR = {
+		AND = {
+			is_subject_of = ROOT
+			is_subject_type = subject_type_puppet
+		}
+		AND = {
+			has_modifier = ut_new_dawn_core_fascist_mod
+			ROOT = { has_modifier = ut_new_dawn_core_fascist_mod }
+		}
+		AND = {
+			has_modifier = ut_new_dawn_core_democratic_mod
+			ROOT = { has_modifier = ut_new_dawn_core_democratic_mod }
+		}
+		AND = {
+			has_modifier = ut_new_dawn_core_autocratic_mod
+			ROOT = { has_modifier = ut_new_dawn_core_autocratic_mod }
+			ROOT = { has_technology_researched = union_new_mandates_two }
+		}
+		AND = {
+			has_modifier = ut_new_dawn_core_communist_mod
+			ROOT = { has_modifier = ut_new_dawn_core_communist_mod }
+		}
+	}
+	ut_is_country_on_same_continent_as_root = yes
+}
+
+ut_spread_new_dawn_target_trigger = {
+	NOT = { this = root }
+	is_revolutionary = no
+	OR = {
+		is_subject = no
+		AND = {
+			is_subject_of = ROOT
+			is_subject_type = subject_type_puppet
+		}
+	}
+	country_rank < rank_value:major_power
+	any_primary_culture = {
+		is_primary_culture_of = ROOT
+	}
+	NOT = { has_journal_entry = je_ut_new_dawn }
+	NOT = { ut_new_dawn_has_core_trigger = yes }
+	ut_is_country_on_same_continent_as_root = yes
 }

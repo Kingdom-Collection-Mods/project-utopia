@@ -60,7 +60,7 @@
 				}
 			}
 			scope:target = {
-				custom_tooltip = ut_add_new_dawn_progress_neg_25
+				custom_tooltip = ut_add_new_dawn_core_progress_neg_25
 				ut_add_new_dawn_core_progress = {
 					VALUE = -25
 				}
@@ -172,6 +172,16 @@ ut_je_propaganda_target = {
 	activation_description = {
 		always = yes
 	}
+	immediate = {
+		set_variable = {
+			name = ut_je_propaganda_target_source_var
+			value = scope:target
+		}
+		trigger_event = {
+			id = event_new_dawn.26
+			popup = yes
+		}
+	}
 
 	scripted_button = ut_new_dawn_propaganda_target_defend
 
@@ -192,15 +202,25 @@ ut_je_propaganda_target = {
 		color = "gold_positive"
 		conclusion_desc = je_standard_completion_conclusion_desc
 		trigger = {
-			custom_tooltip = {
-				text = ut_je_propaganda_target_abort_tt
-				has_variable = ut_propaganda_target_abandon_var
+			OR = {
+				scope:target = {
+					custom_tooltip = {
+						text = ut_je_propaganda_target_abort_tt
+						always = no
+						#just to show what the attacking country is
+					}
+				}
+				hidden_trigger = {
+					has_variable = ut_propaganda_target_abandon_var
+				}
 			}
-
 		}
 		effect = {
+			add_modifier = {
+				name = ut_propaganda_campaign_successfully_defended_mod
+				days = very_short_modifier_time
+			}
 			remove_variable = ut_propaganda_target_abandon_var
-
 		}
 	}
 
@@ -215,7 +235,7 @@ ut_je_propaganda_target = {
 		}
 		effect = {
 			show_as_tooltip = {
-				custom_tooltip = ut_add_new_dawn_progress_neg_25
+				custom_tooltip = ut_add_new_dawn_core_progress_neg_25
 				ut_add_new_dawn_core_progress = {
 					VALUE = -25
 				}
@@ -396,7 +416,7 @@ ut_je_ally_influence_petition = {
 
         }
         effect = {
-			custom_tooltip = ut_add_new_dawn_progress_5
+			custom_tooltip = ut_add_new_dawn_core_progress_5
 			ut_add_new_dawn_core_progress = {
 				VALUE = 5
 			}
@@ -481,7 +501,7 @@ ut_je_ally_influence_petition = {
 
         }
         effect = {
-			custom_tooltip = ut_add_new_dawn_progress_neg_5
+			custom_tooltip = ut_add_new_dawn_core_progress_neg_5
 			ut_add_new_dawn_core_progress = {
 				VALUE = -5
 			}
@@ -507,7 +527,7 @@ ut_je_ally_influence_petition = {
 		flags = { timeout }
 		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
 		effect = {
-			custom_tooltip = ut_add_new_dawn_progress_neg_5
+			custom_tooltip = ut_add_new_dawn_core_progress_neg_5
 			ut_add_new_dawn_core_progress = { 
 				VALUE = -5
 			}

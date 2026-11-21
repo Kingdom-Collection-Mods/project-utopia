@@ -53,433 +53,28 @@ ut_new_dawn_fascist_bar = {
 			}
 			if = {
 				limit = {
-					is_ai = yes
+					country_rank = rank_value:major_power
 				}
-				multiply = 2
-			}
-			else = {
-				if ={
-					limit = {
-						OR = {
-							has_game_rule = ut_new_dawn_start_era_4
-							has_game_rule = ut_new_dawn_start_era_5
-						}
-						pop_type_percent_country = {
-							target = pop_type:service_workers
-							value < 0.01
-						}
-					}
-					#no malus if starting era 4 or 5
-				}
-				else_if ={
-					limit = {
-						pop_type_percent_country = {
-							target = pop_type:service_workers
-							value < 0.01
-						}
-					}
-					multiply = {
-						desc = "ut_nd_multiplier_from_service_workers_0"
-						value = 0.5
-					}
-				}
-				else_if = {
-					limit = {
-						pop_type_percent_country = {
-							target = pop_type:service_workers
-							value < 0.02
-						}
-					}
-					multiply = {
-						desc = "ut_nd_multiplier_from_service_workers_1"
-						value = 1.5
-					}
-				}
-				else_if = {
-					limit = {
-						pop_type_percent_country = {
-							target = pop_type:service_workers
-							value < 0.03
-						}
-					}
-					multiply = {
-						desc = "ut_nd_multiplier_from_service_workers_2"
-						value = 2
-					}
-				}
-				else_if = {
-					limit = {
-						pop_type_percent_country = {
-							target = pop_type:service_workers
-							value < 0.04
-						}
-					}
-					multiply = {
-						desc = "ut_nd_multiplier_from_service_workers_3"
-						value = 2.5
-					}				
-				}
-				else = {
-					multiply = {
-						desc = "ut_nd_multiplier_from_service_workers_4"
-						value = 3
-					}
-				}
-			}
-		}
-		else = {
-			add = {
-				desc = "ut_nd_decaying_progress"
-				value = -0.5
-			}
-		}
-	}
-
-	start_value = 0
-	min_value = 0
-	max_value = 240 # new_dawn_core_upper_bound
-
-}
-
-ut_new_dawn_democrat_bar = {
-	name = "ut_new_dawn_democrat_bar"
-	desc = "ut_new_dawn_democrat_bar_desc"
-
-	#for color
-	progress_texture = "gfx/interface/progressbar/progressbar_default.dds"
-	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
-	glow_texture = "gfx/interface/progressbar/progressbar_default_glow.dds"
-	glow_line_texture = "gfx/interface/progressbar/progressbar_default_glow_line.dds"
-
-	monthly_progress = {
-		if = {
-			limit = {
-				NOT = {
-					has_variable = ut_new_dawn_bar_freeze
-				}
-				has_variable = ut_nd_democrat_progress_from_characters
-				has_variable = ut_nd_democrat_progress_from_igs
-				has_variable = ut_nd_democrat_progress_from_core_laws
-				has_variable = ut_nd_democrat_progress_from_legitimacy
-				has_variable = ut_nd_democrat_progress_from_focus
-				has_variable = ut_nd_democrat_progress_from_events
-				has_variable = ut_nd_common_progress_from_events
-			}
-			add = {
-				desc = "ut_nd_democrat_progress_from_characters"
-				value = root.var:ut_nd_democrat_progress_from_characters
-			}
-			add = {
-				desc = "ut_nd_democrat_progress_from_igs"
-				value = root.var:ut_nd_democrat_progress_from_igs
-			}
-			add = {
-				desc = "ut_nd_democrat_progress_from_core_laws"
-				value = root.var:ut_nd_democrat_progress_from_core_laws
-			}
-			add = {
-				desc = "ut_nd_democrat_progress_from_legitimacy"
-				value = root.var:ut_nd_democrat_progress_from_legitimacy
-			}
-			add = {
-				desc = "ut_nd_democrat_progress_from_focus"
-				value = root.var:ut_nd_democrat_progress_from_focus
-			}
-			add = {
-				desc = "ut_nd_democrat_progress_from_events"
-				value = root.var:ut_nd_democrat_progress_from_events
-				add = {
-					value = root.var:ut_nd_common_progress_from_events
-				}
-			}
-			
-			if = {
-				limit = {
-					is_ai = yes
-				}
-				multiply = 2
-			}
-			else = {
-				if ={
-					limit = {
-						OR = {
-							has_game_rule = ut_new_dawn_start_era_4
-							has_game_rule = ut_new_dawn_start_era_5
-						}
-						pop_type_percent_country = {
-							target = pop_type:service_workers
-							value < 0.01
-						}
-					}
-					#no malus if starting era 4 or 5
-				}
-				else_if ={
-					limit = {
-						pop_type_percent_country = {
-							target = pop_type:service_workers
-							value < 0.01
-						}
-					}
-					multiply = {
-						desc = "ut_nd_multiplier_from_service_workers_0"
-						value = 0.5
-					}
-				}
-				else_if = {
-					limit = {
-						pop_type_percent_country = {
-							target = pop_type:service_workers
-							value < 0.02
-						}
-					}
-					multiply = {
-						desc = "ut_nd_multiplier_from_service_workers_1"
-						value = 1.5
-					}
-				}
-				else_if = {
-					limit = {
-						pop_type_percent_country = {
-							target = pop_type:service_workers
-							value < 0.03
-						}
-					}
-					multiply = {
-						desc = "ut_nd_multiplier_from_service_workers_2"
-						value = 2
-					}
-				}
-				else_if = {
-					limit = {
-						pop_type_percent_country = {
-							target = pop_type:service_workers
-							value < 0.04
-						}
-					}
-					multiply = {
-						desc = "ut_nd_multiplier_from_service_workers_3"
-						value = 2.5
-					}				
-				}
-				else = {
-					multiply = {
-						desc = "ut_nd_multiplier_from_service_workers_4"
-						value = 3
-					}
-				}
-			}
-		}
-		else = {			
-			add = {
-				desc = "ut_nd_decaying_progress"
-				value = -0.5
-			}
-		}
-	}
-
-	start_value = 0
-	min_value = 0
-	max_value = 240 # new_dawn_core_upper_bound
-
-}
-
-ut_new_dawn_communist_bar = {
-	name = "ut_new_dawn_communist_bar"
-	desc = "ut_new_dawn_communist_bar_desc"
-
-	#for color
-	progress_texture = "gfx/interface/progressbar/progressbar_bad.dds"
-	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
-	glow_texture = "gfx/interface/progressbar/progressbar_bad_glow.dds"
-	glow_line_texture = "gfx/interface/progressbar/progressbar_bad_glow_line.dds"
-
-	monthly_progress = {
-		if = {
-			limit = {
-				NOT = {
-					has_variable = ut_new_dawn_bar_freeze
-				}
-				has_variable = ut_nd_communist_progress_from_characters
-				has_variable = ut_nd_communist_progress_from_igs
-				has_variable = ut_nd_communist_progress_from_legitimacy
-				has_variable = ut_nd_communist_progress_from_core_laws
-				has_variable = ut_nd_communist_progress_from_focus
-				has_variable = ut_nd_communist_progress_from_events
-				has_variable = ut_nd_common_progress_from_events
-			}
-			add = {
-				desc = "ut_nd_communist_progress_from_characters"
-				value = root.var:ut_nd_communist_progress_from_characters
-			}
-			add = {
-				desc = "ut_nd_communist_progress_from_igs"
-				value = root.var:ut_nd_communist_progress_from_igs
-			}
-			add = {
-				desc = "ut_nd_communist_progress_from_legitimacy"
-				value = root.var:ut_nd_communist_progress_from_legitimacy
-			}
-			add = {
-				desc = "ut_nd_communist_progress_from_core_laws"
-				value = root.var:ut_nd_communist_progress_from_core_laws
-			}
-			add = {
-				desc = "ut_nd_communist_progress_from_focus"
-				value = root.var:ut_nd_communist_progress_from_focus
-			}
-			add = {
-				desc = "ut_nd_communist_progress_from_events"
-				value = root.var:ut_nd_communist_progress_from_events
-				add = {
-					value = root.var:ut_nd_common_progress_from_events
-				}
-			}
-			if = {
-				limit = {
-					is_ai = yes
-				}
-				multiply = 2
-			}
-			else = {				
-				if ={
-					limit = {
-						OR = {
-							has_game_rule = ut_new_dawn_start_era_4
-							has_game_rule = ut_new_dawn_start_era_5
-						}
-						pop_type_percent_country = {
-							target = pop_type:service_workers
-							value < 0.01
-						}
-					}
-					#no malus if starting era 4 or 5
-				}
-				else_if ={
-					limit = {
-						pop_type_percent_country = {
-							target = pop_type:service_workers
-							value < 0.01
-						}
-					}
-					multiply = {
-						desc = "ut_nd_multiplier_from_service_workers_0"
-						value = 0.5
-					}
-				}
-				else_if = {
-					limit = {
-						pop_type_percent_country = {
-							target = pop_type:service_workers
-							value < 0.02
-						}
-					}
-					multiply = {
-						desc = "ut_nd_multiplier_from_service_workers_1"
-						value = 1.5
-					}
-				}
-				else_if = {
-					limit = {
-						pop_type_percent_country = {
-							target = pop_type:service_workers
-							value < 0.03
-						}
-					}
-					multiply = {
-						desc = "ut_nd_multiplier_from_service_workers_2"
-						value = 2
-					}
-				}
-				else_if = {
-					limit = {
-						pop_type_percent_country = {
-							target = pop_type:service_workers
-							value < 0.04
-						}
-					}
-					multiply = {
-						desc = "ut_nd_multiplier_from_service_workers_3"
-						value = 2.5
-					}				
-				}
-				else = {
-					multiply = {
-						desc = "ut_nd_multiplier_from_service_workers_4"
-						value = 3
-					}
-				}
-			}
-		}
-		else = {
-			add = {
-				desc = "ut_nd_decaying_progress"
-				value = -0.5
-			}
-		}
-	}
-
-	start_value = 0
-	min_value = 0
-	max_value = 240 # new_dawn_core_upper_bound
-
-}
-
-ut_new_dawn_autocrat_bar = {
-	name = "ut_new_dawn_autocrat_bar"
-	desc = "ut_new_dawn_autocrat_bar_desc"
-
-	progress_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue.dds"
-	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
-	glow_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue_glow.dds"
-	glow_line_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue_glow_line.dds"
-
-	monthly_progress = {
-		if = {
-			limit = {
-				NOT = {
-					has_variable = ut_new_dawn_bar_freeze
-				}
-				has_variable = ut_nd_autocrat_progress_from_characters
-				has_variable = ut_nd_autocrat_progress_from_igs
-				has_variable = ut_nd_autocrat_progress_from_legitimacy
-				has_variable = ut_nd_autocrat_progress_from_core_laws
-				has_variable = ut_nd_autocrat_progress_from_focus
-				has_variable = ut_nd_autocrat_progress_from_events
-				has_variable = ut_nd_common_progress_from_events
-			}
-			add = {
-				desc = "ut_nd_autocrat_progress_from_characters"
-				value = root.var:ut_nd_autocrat_progress_from_characters
-			}
-			add = {
-				desc = "ut_nd_autocrat_progress_from_igs"
-				value = root.var:ut_nd_autocrat_progress_from_igs
-			}
-			add = {
-				desc = "ut_nd_autocrat_progress_from_legitimacy"
-				value = root.var:ut_nd_autocrat_progress_from_legitimacy
-			}
-			add = {
-				desc = "ut_nd_autocrat_progress_from_core_laws"
-				value = root.var:ut_nd_autocrat_progress_from_core_laws
-			}
-			add = {
-				desc = "ut_nd_autocrat_progress_from_focus"
-				value = root.var:ut_nd_autocrat_progress_from_focus
-			}
-			add = {
-				desc = "ut_nd_autocrat_progress_from_events"
-				value = root.var:ut_nd_autocrat_progress_from_events
-				add = {
-					value = root.var:ut_nd_common_progress_from_events
-				}
-			}
-			if = {
-				limit = {
-					is_ai = yes
-				}				
 				multiply = {
-					desc = "ut_nd_multiplier_from_service_workers_0"
+					desc = "ut_nd_multiplier_from_major"
+					value = 2
+				}
+			}
+			if = {
+				limit = {
+					country_rank < rank_value:major_power
+				}
+				multiply = {
+					desc = "ut_nd_multiplier_from_minor"
+					value = 4
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				multiply = {
+					desc = "ut_nd_multiplier_from_is_ai"
 					value = 2
 				}
 			}
@@ -553,10 +148,651 @@ ut_new_dawn_autocrat_bar = {
 				}
 			}
 		}
-		else = {
+		else_if = {
+			limit = {
+				je:je_ut_new_dawn = {
+					OR = {
+						"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= 200
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= 150
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 200
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 200
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 200
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= 100
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 150
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 150
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 150
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" >= 50
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 100
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 100
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 100
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_fascist_bar)" > 0
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 50
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 50
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 50
+							}
+						}
+					}
+				}
+			}
 			add = {
 				desc = "ut_nd_decaying_progress"
-				value = -0.5
+				value = -1
+			}
+		}
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 240 # new_dawn_core_upper_bound
+
+}
+
+ut_new_dawn_democrat_bar = {
+	name = "ut_new_dawn_democrat_bar"
+	desc = "ut_new_dawn_democrat_bar_desc"
+
+	#for color
+	progress_texture = "gfx/interface/progressbar/progressbar_default.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_default_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_default_glow_line.dds"
+
+	monthly_progress = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = ut_new_dawn_bar_freeze
+				}
+				has_variable = ut_nd_democrat_progress_from_characters
+				has_variable = ut_nd_democrat_progress_from_igs
+				has_variable = ut_nd_democrat_progress_from_core_laws
+				has_variable = ut_nd_democrat_progress_from_legitimacy
+				has_variable = ut_nd_democrat_progress_from_focus
+				has_variable = ut_nd_democrat_progress_from_events
+				has_variable = ut_nd_common_progress_from_events
+			}
+			add = {
+				desc = "ut_nd_democrat_progress_from_characters"
+				value = root.var:ut_nd_democrat_progress_from_characters
+			}
+			add = {
+				desc = "ut_nd_democrat_progress_from_igs"
+				value = root.var:ut_nd_democrat_progress_from_igs
+			}
+			add = {
+				desc = "ut_nd_democrat_progress_from_core_laws"
+				value = root.var:ut_nd_democrat_progress_from_core_laws
+			}
+			add = {
+				desc = "ut_nd_democrat_progress_from_legitimacy"
+				value = root.var:ut_nd_democrat_progress_from_legitimacy
+			}
+			add = {
+				desc = "ut_nd_democrat_progress_from_focus"
+				value = root.var:ut_nd_democrat_progress_from_focus
+			}
+			add = {
+				desc = "ut_nd_democrat_progress_from_events"
+				value = root.var:ut_nd_democrat_progress_from_events
+				add = {
+					value = root.var:ut_nd_common_progress_from_events
+				}
+			}
+			if = {
+				limit = {
+					country_rank = rank_value:major_power
+				}
+				multiply = {
+					desc = "ut_nd_multiplier_from_major"
+					value = 2
+				}
+			}
+			if = {
+				limit = {
+					country_rank < rank_value:major_power
+				}
+				multiply = {
+					desc = "ut_nd_multiplier_from_minor"
+					value = 4
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				multiply = {
+					desc = "ut_nd_multiplier_from_is_ai"
+					value = 2
+				}
+			}
+			else = {
+				if ={
+					limit = {
+						OR = {
+							has_game_rule = ut_new_dawn_start_era_4
+							has_game_rule = ut_new_dawn_start_era_5
+						}
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					#no malus if starting era 4 or 5
+				}
+				else_if ={
+					limit = {
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_0"
+						value = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.02
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_1"
+						value = 1.5
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.03
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_2"
+						value = 2
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.04
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_3"
+						value = 2.5
+					}				
+				}
+				else = {
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_4"
+						value = 3
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				je:je_ut_new_dawn = {
+					OR = {
+						"scripted_bar_progress(ut_new_dawn_democrat_bar)" >= 200
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" >= 150
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 200
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 200
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 200
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" >= 100
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 150
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 150
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 150
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" >= 50
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 100
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 100
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 100
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_democrat_bar)" > 0
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 50
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 50
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 50
+							}
+						}
+					}
+				}
+			}
+			add = {
+				desc = "ut_nd_decaying_progress"
+				value = -1
+			}
+		}
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 240 # new_dawn_core_upper_bound
+
+}
+
+ut_new_dawn_communist_bar = {
+	name = "ut_new_dawn_communist_bar"
+	desc = "ut_new_dawn_communist_bar_desc"
+
+	#for color
+	progress_texture = "gfx/interface/progressbar/progressbar_bad.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_bad_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_bad_glow_line.dds"
+
+	monthly_progress = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = ut_new_dawn_bar_freeze
+				}
+				has_variable = ut_nd_communist_progress_from_characters
+				has_variable = ut_nd_communist_progress_from_igs
+				has_variable = ut_nd_communist_progress_from_legitimacy
+				has_variable = ut_nd_communist_progress_from_core_laws
+				has_variable = ut_nd_communist_progress_from_focus
+				has_variable = ut_nd_communist_progress_from_events
+				has_variable = ut_nd_common_progress_from_events
+			}
+			add = {
+				desc = "ut_nd_communist_progress_from_characters"
+				value = root.var:ut_nd_communist_progress_from_characters
+			}
+			add = {
+				desc = "ut_nd_communist_progress_from_igs"
+				value = root.var:ut_nd_communist_progress_from_igs
+			}
+			add = {
+				desc = "ut_nd_communist_progress_from_legitimacy"
+				value = root.var:ut_nd_communist_progress_from_legitimacy
+			}
+			add = {
+				desc = "ut_nd_communist_progress_from_core_laws"
+				value = root.var:ut_nd_communist_progress_from_core_laws
+			}
+			add = {
+				desc = "ut_nd_communist_progress_from_focus"
+				value = root.var:ut_nd_communist_progress_from_focus
+			}
+			add = {
+				desc = "ut_nd_communist_progress_from_events"
+				value = root.var:ut_nd_communist_progress_from_events
+				add = {
+					value = root.var:ut_nd_common_progress_from_events
+				}
+			}
+			if = {
+				limit = {
+					country_rank = rank_value:major_power
+				}
+				multiply = {
+					desc = "ut_nd_multiplier_from_major"
+					value = 2
+				}
+			}
+			if = {
+				limit = {
+					country_rank < rank_value:major_power
+				}
+				multiply = {
+					desc = "ut_nd_multiplier_from_minor"
+					value = 4
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				multiply = {
+					desc = "ut_nd_multiplier_from_is_ai"
+					value = 2
+				}
+			}
+			else = {				
+				if ={
+					limit = {
+						OR = {
+							has_game_rule = ut_new_dawn_start_era_4
+							has_game_rule = ut_new_dawn_start_era_5
+						}
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					#no malus if starting era 4 or 5
+				}
+				else_if ={
+					limit = {
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_0"
+						value = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.02
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_1"
+						value = 1.5
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.03
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_2"
+						value = 2
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.04
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_3"
+						value = 2.5
+					}				
+				}
+				else = {
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_4"
+						value = 3
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				je:je_ut_new_dawn = {
+					OR = {
+						"scripted_bar_progress(ut_new_dawn_communist_bar)" >= 200
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" >= 150
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 200
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 200
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 200
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" >= 100
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 150
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 150
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 150
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" >= 50
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 100
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 100
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 100
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_communist_bar)" > 0
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 50
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 50
+								"scripted_bar_progress(ut_new_dawn_autocrat_bar)" < 50
+							}
+						}
+					}
+				}
+			}
+			add = {
+				desc = "ut_nd_decaying_progress"
+				value = -1
+			}
+		}
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 240 # new_dawn_core_upper_bound
+
+}
+
+ut_new_dawn_autocrat_bar = {
+	name = "ut_new_dawn_autocrat_bar"
+	desc = "ut_new_dawn_autocrat_bar_desc"
+
+	progress_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_empty.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_ut_dark_blue_glow_line.dds"
+
+	monthly_progress = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = ut_new_dawn_bar_freeze
+				}
+				has_variable = ut_nd_autocrat_progress_from_characters
+				has_variable = ut_nd_autocrat_progress_from_igs
+				has_variable = ut_nd_autocrat_progress_from_legitimacy
+				has_variable = ut_nd_autocrat_progress_from_core_laws
+				has_variable = ut_nd_autocrat_progress_from_focus
+				has_variable = ut_nd_autocrat_progress_from_events
+				has_variable = ut_nd_common_progress_from_events
+			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_characters"
+				value = root.var:ut_nd_autocrat_progress_from_characters
+			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_igs"
+				value = root.var:ut_nd_autocrat_progress_from_igs
+			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_legitimacy"
+				value = root.var:ut_nd_autocrat_progress_from_legitimacy
+			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_core_laws"
+				value = root.var:ut_nd_autocrat_progress_from_core_laws
+			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_focus"
+				value = root.var:ut_nd_autocrat_progress_from_focus
+			}
+			add = {
+				desc = "ut_nd_autocrat_progress_from_events"
+				value = root.var:ut_nd_autocrat_progress_from_events
+				add = {
+					value = root.var:ut_nd_common_progress_from_events
+				}
+			}
+			if = {
+				limit = {
+					country_rank = rank_value:major_power
+				}
+				multiply = {
+					desc = "ut_nd_multiplier_from_major"
+					value = 2
+				}
+			}
+			if = {
+				limit = {
+					country_rank < rank_value:major_power
+				}
+				multiply = {
+					desc = "ut_nd_multiplier_from_minor"
+					value = 4
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				multiply = {
+					desc = "ut_nd_multiplier_from_is_ai"
+					value = 2
+				}
+			}
+			else = {
+				if ={
+					limit = {
+						OR = {
+							has_game_rule = ut_new_dawn_start_era_4
+							has_game_rule = ut_new_dawn_start_era_5
+						}
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					#no malus if starting era 4 or 5
+				}
+				else_if ={
+					limit = {
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.01
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_0"
+						value = 0.5
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.02
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_1"
+						value = 1.5
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.03
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_2"
+						value = 2
+					}
+				}
+				else_if = {
+					limit = {
+						pop_type_percent_country = {
+							target = pop_type:service_workers
+							value < 0.04
+						}
+					}
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_3"
+						value = 2.5
+					}				
+				}
+				else = {
+					multiply = {
+						desc = "ut_nd_multiplier_from_service_workers_4"
+						value = 3
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				je:je_ut_new_dawn = {
+					OR = {
+						"scripted_bar_progress(ut_new_dawn_autocrat_bar)" >= 200
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" >= 150
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 200
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 200
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 200
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" >= 100
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 150
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 150
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 150
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" >= 50
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 100
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 100
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 100
+							}
+						}
+						AND = {
+							"scripted_bar_progress(ut_new_dawn_autocrat_bar)" > 0
+							AND = {
+								"scripted_bar_progress(ut_new_dawn_fascist_bar)" < 50
+								"scripted_bar_progress(ut_new_dawn_communist_bar)" < 50
+								"scripted_bar_progress(ut_new_dawn_democrat_bar)" < 50
+							}
+						}
+					}
+				}
+			}
+			add = {
+				desc = "ut_nd_decaying_progress"
+				value = -1
 			}
 		}
 	}
@@ -610,7 +846,7 @@ je_ut_new_dawn_democratic_points_bar = {
 			}
 			multiply = {
 				desc = "ut_new_dawn_phase_2_progress_modifier"
-				value = 0.25
+				value = 0.5
 			}	
 		}
 	}
@@ -668,7 +904,7 @@ je_ut_new_dawn_autocratic_points_bar = {
 			}
 			multiply = {
 				desc = "ut_new_dawn_phase_2_progress_modifier"
-				value = 0.25
+				value = 0.5
 			}	
 		}
 		else = {
@@ -726,7 +962,7 @@ je_ut_new_dawn_fascist_points_bar = {
 			}
 			multiply = {
 				desc = "ut_new_dawn_phase_2_progress_modifier"
-				value = 0.25
+				value = 0.5
 			}	
 		}
 		else = {
@@ -737,6 +973,133 @@ je_ut_new_dawn_fascist_points_bar = {
 	start_value = 50
 	min_value = 0
 	max_value = 100 # new_dawn_core_upper_bound
+}
+
+je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar = {
+	name = "je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar"
+	desc = "je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar_desc"
+	second_desc = "je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar_second_desc"
+
+	progress_texture = "gfx/interface/progressbar/progressbar_gold.dds"
+	background_texture = "gfx/interface/progressbar/progressbar_default.dds"
+	glow_texture = "gfx/interface/progressbar/progressbar_default_glow.dds"
+	glow_line_texture = "gfx/interface/progressbar/progressbar_default_glow_line.dds"
+	marker = yes
+	#left_icon = "gfx/interface/progressbar/twospains_radicalism_marker.dds"
+	#right_icon = "gfx/interface/progressbar/twospains_conservatism_marker.dds"
+
+	monthly_progress = {
+		
+		progress_condition = {
+			limit = {
+				OR = {
+					ig:ig_petty_bourgeoisie ?= {
+						is_powerful = yes
+					}
+					ig:ig_urbanists ?= {
+						is_powerful = yes
+					}
+					ig:ig_trade_unions ?= {
+						is_powerful = yes
+					}
+					ig:ig_rural_folk ?= {
+						is_powerful = yes
+					}
+				}
+				ig:ig_industrialists ?= {
+					is_powerful = no
+				}
+			}
+			add = {
+				desc = "je_ut_new_dawn_fascist_petty_bourgeoisie_powerful_progress"
+				value = -0.5
+			}
+		}
+
+		progress_condition = {
+			limit = {
+				ig:ig_petty_bourgeoisie ?= {
+					is_in_government = yes
+				}
+			}
+			add = {
+				desc = "je_ut_new_dawn_fascist_petty_bourgeoisie_in_government_progress"
+				value = -0.5
+			}
+		}
+		progress_condition = {
+			limit = {
+				ig:ig_urbanists ?= {
+					is_in_government = yes
+				}
+			}
+			add = {
+				desc = "je_ut_new_dawn_fascist_urbanists_in_government_progress"
+				value = -0.5
+			}
+		}
+		progress_condition = {
+			limit = {
+				ig:ig_rural_folk ?= {
+					is_in_government = yes
+				}
+			}
+			add = {
+				desc = "je_ut_new_dawn_fascist_rural_folk_in_government_progress"
+				value = -0.5
+			}
+		}
+		progress_condition = {
+			limit = {
+				ig:ig_trade_unions ?= {
+					is_in_government = yes
+				}
+			}
+			add = {
+				desc = "je_ut_new_dawn_fascist_trade_unions_in_government_progress"
+				value = -0.5
+			}
+		}
+		
+		progress_condition = {
+			limit = {
+				ig:ig_industrialists ?= {
+					is_in_government = yes
+				}
+			}
+			add = {
+				desc = "je_ut_new_dawn_fascist_industrialist_in_government_progress"
+				value = 1
+			}
+		}
+		progress_condition = {
+			limit = {
+				ig:ig_petty_bourgeoisie ?= {
+					is_powerful = no
+				}
+				ig:ig_urbanists ?= {
+					is_powerful = no
+				}
+				ig:ig_trade_unions ?= {
+					is_powerful = no
+				}
+				ig:ig_rural_folk ?= {
+					is_powerful = no
+				}
+				ig:ig_industrialists ?= {
+					is_powerful = yes
+				}
+			}
+			add = {
+				desc = "je_ut_new_dawn_fascist_industrialist_powerful_progress"
+				value = 0.5
+			}
+		}
+	}
+
+	start_value = 0
+	min_value = -25 #Kleinbürger
+	max_value = 25 #Großbürger
 }
 
 je_ut_new_dawn_communist_points_bar = {
@@ -784,7 +1147,7 @@ je_ut_new_dawn_communist_points_bar = {
 			}
 			multiply = {
 				desc = "ut_new_dawn_phase_2_progress_modifier"
-				value = 0.25
+				value = 0.5
 			}	
 		}
 		else = {
@@ -825,6 +1188,21 @@ je_ut_new_dawn_pressure_points_bar = {
 		add = {
 			desc = "je_ut_new_dawn_common_pressure_progress_from_war_support"
 			value = root.var:je_ut_new_dawn_common_pressure_progress_from_war_support
+			
+			if = {
+				limit = {
+					has_modifier = ut_new_dawn_core_fascist_mod
+					je_ut_new_dawn_common_pressure_progress_from_war_support > 0
+				}
+				multiply = 4
+			}
+			if = {
+				limit = {
+					has_modifier = ut_new_dawn_core_autocrat_mod
+					je_ut_new_dawn_common_pressure_progress_from_war_support > 0
+				}
+				multiply = 2
+			}
 		}
 		add = {
 			desc = "je_ut_new_dawn_common_pressure_progress_from_high_radicalism_movement"
@@ -833,6 +1211,29 @@ je_ut_new_dawn_pressure_points_bar = {
 		add = {
 			desc = "je_ut_new_dawn_common_pressure_progress_from_insurrectionary_movement"
 			value = root.var:je_ut_new_dawn_common_pressure_progress_from_insurrectionary_movement
+		}
+		if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+			}
+			
+			add = {
+				desc = "je_ut_new_dawn_fascist_pressure_progress_from_journal_entry"
+				value = root.var:je_ut_new_dawn_fascist_pressure_progress_from_journal_entry
+			}
+		}
+		progress_condition = {
+			if = {
+				limit = {
+					has_modifier = ut_new_dawn_core_fascist_mod
+					is_at_war = yes
+				}
+				
+				add = {
+					desc = "je_ut_new_dawn_fascist_pressure_progress_from_journal_entry"
+					value = -1
+				}
+			}
 		}
 		
 		if = {

@@ -637,6 +637,7 @@ ut_military_complex = {
 	}
 	
 	modifier = {
+		country_military_tech_spread_mult = 0.3
 	}
 	
 	ai_weight = {
