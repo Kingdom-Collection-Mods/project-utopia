@@ -76,7 +76,7 @@ je_ut_new_dawn_outlaw_communists_ability_add = {
 	desc = "je_ut_new_dawn_outlaw_communists_ability_add_desc"
 
 	visible = {
-		has_modifier = je_ut_new_dawn_fascist_outlaw_communists_modje_ut_new_dawn_outlaw_communists_done
+		has_modifier = je_ut_new_dawn_fascist_outlaw_communists_mod
 		NOT = {
 			has_modifier = je_ut_new_dawn_fascist_outlaw_communists_ability_mod
 		}
