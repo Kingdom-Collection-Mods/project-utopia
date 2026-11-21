@@ -1229,6 +1229,7 @@ je_ut_new_dawn_autocratic = {
 							}
 						}
 					}
+					is_player = yes
 				}
 			}
 		}
@@ -1524,6 +1525,10 @@ je_ut_new_dawn_fascist = {
 			else_if = {
 				limit = {
 					NOT = { has_modifier = je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_mod }
+					je:je_ut_new_dawn_fascist = {
+						"scripted_bar_progress(je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar)" > -25
+						"scripted_bar_progress(je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_bar)" < 25
+					}
 				}
 				add_modifier = je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_mod
 				remove_modifier = je_ut_new_dawn_fascist_petty_bourgeoisie_in_power_mod
@@ -1566,19 +1571,42 @@ je_ut_new_dawn_fascist = {
 		color = "blue_negative"
 		conclusion_desc = je_standard_failure_conclusion_desc
 		trigger = {
-			custom_tooltip = {
-				text = je_ut_new_dawn_critical_lower_bound_fail_tt
-				je:je_ut_new_dawn_fascist  = {
-					"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" <= new_dawn_ideology_critical_lower_bound
-				}
-			}
+			
+			OR = {
+				AND = {
+					custom_tooltip = {
+						text = je_ut_new_dawn_critical_lower_bound_fail_tt
+						je:je_ut_new_dawn_fascist = {
+							"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" <= new_dawn_ideology_critical_lower_bound
+						}
+					}
 
-			custom_tooltip = {
-				text = je_ut_new_dawn_critical_lower_bound_fail_pressure_tt
-				OR = {
-					is_ai = yes
-					je:je_ut_new_dawn_fascist = {
-						"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" > 50
+					custom_tooltip = {
+						text = je_ut_new_dawn_critical_lower_bound_fail_pressure_tt
+						OR = {
+							is_ai = yes
+							je:je_ut_new_dawn_fascist = {
+								"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" >= 50
+							}
+						}
+					}
+				}
+				AND = {
+					custom_tooltip = {
+						text = je_ut_new_dawn_critical_high_pressure_fail_tt
+						je:je_ut_new_dawn_fascist = {
+							"scripted_bar_progress(je_ut_new_dawn_fascist_points_bar)" < 25
+						}
+					}
+
+					custom_tooltip = {
+						text = je_ut_new_dawn_critical_high_pressure_fail_pressure_tt
+						OR = {
+							is_ai = yes
+							je:je_ut_new_dawn_fascist = {
+								"scripted_bar_progress(je_ut_new_dawn_pressure_points_bar)" >= 100
+							}
+						}
 					}
 				}
 			}
@@ -1602,9 +1630,13 @@ je_ut_new_dawn_fascist = {
 			}
 
 			remove_modifier = je_ut_new_dawn_fascist_outlaw_communists_mod
+			remove_modifier = je_ut_new_dawn_fascist_conformity_mod
+			remove_modifier = je_ut_new_dawn_fascist_form_paramilitary_groups_mod
 
 			hidden_effect = {
-				remove_variable = je_ut_new_dawn_outlaw_communists_done
+				remove_modifier = je_ut_new_dawn_fascist_outlaw_communists_ability_mod
+				remove_modifier = je_ut_new_dawn_fascist_conformity_ability_mod
+				remove_modifier = je_ut_new_dawn_fascist_form_paramilitary_groups_ability_mod
 
 				remove_modifier = ut_new_dawn_core_external_cooperative_focus_mod
 				remove_modifier = ut_new_dawn_core_external_offensive_focus_mod
@@ -1629,14 +1661,20 @@ je_ut_new_dawn_fascist = {
 
 			every_interest_group = {
 				limit = {
-					has_ideology = ideology:ideology_republican_communist
+					has_ideology = ideology:ideology_patriotic_fascist
 				}
-				remove_ideology = ideology_republican_communist
+				remove_ideology = ideology_patriotic_fascist
+				add_ideology = ideology_patriotic
+			}
+			every_interest_group = {
+				limit = {
+					has_ideology = ideology:ut_ideology_laissez_faire_authoritarian
+				}
+				remove_ideology = ut_ideology_laissez_faire_authoritarian
 				hidden_effect = {
-					add_ideology = ideology_republican
+					add_ideology = ut_ideology_laissez_faire
 				}
 			}
-
 		}
 	}
 
