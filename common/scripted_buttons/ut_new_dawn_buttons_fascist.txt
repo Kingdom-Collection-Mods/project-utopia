@@ -388,7 +388,7 @@ je_ut_new_dawn_volksgemeinschaft = {
 
 	visible = {
 		NOT = {
-			has_variable = je_ut_new_dawn_volksgemeinschaft_done
+			has_modifier = je_ut_new_dawn_fascist_volksgemeinschaft_mod
 		}
 	}
 
@@ -421,9 +421,6 @@ je_ut_new_dawn_volksgemeinschaft = {
 			}
 		}
 		add_modifier = je_ut_new_dawn_fascist_volksgemeinschaft_mod
-		set_variable = {
-			name = je_ut_new_dawn_volksgemeinschaft_done
-		}
 	}
 	
 	ai_chance = {
@@ -436,7 +433,7 @@ je_ut_new_dawn_volksgemeinschaft_ability_add = {
 	desc = "je_ut_new_dawn_volksgemeinschaft_ability_add_desc"
 
 	visible = {
-		has_variable = je_ut_new_dawn_volksgemeinschaft_done
+		has_modifier = je_ut_new_dawn_fascist_volksgemeinschaft_ability_mod
 		NOT = {
 			has_modifier = je_ut_new_dawn_fascist_volksgemeinschaft_ability_mod
 		}
