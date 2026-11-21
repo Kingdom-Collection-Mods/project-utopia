@@ -449,6 +449,10 @@ electronics = {
 		radio
 	}
 	
+	modifier = {
+		country_production_tech_spread_mult = 0.2
+	}
+
 	ai_weight = {
 		value = 3 # Very important
 	}
@@ -461,6 +465,7 @@ computers = {
 	
 	modifier = {
 		building_economy_of_scale_level_cap_add = 5
+		country_production_tech_spread_mult = 0.2
 	}
 	
 	on_researched = {
@@ -570,6 +575,9 @@ internet = {
 	
 	unlocking_technologies = {	
 		software
+	}
+	modifier = {
+		country_production_tech_spread_mult = 0.4
 	}
 	
 	ai_weight = {

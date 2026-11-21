@@ -35,6 +35,14 @@ ut_new_dawn_fascist_focus = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
 		}
+		if = {
+			limit = {
+				has_variable = je_ut_new_dawn_heritage_activated_var
+				has_variable = je_ut_new_dawn_heritage_with_opposing_country_activated_var
+				is_ai = yes
+			}
+			enact_law = law_type:law_ethnostate
+		}
 	}
 	#1000 always
 	#10 very likely
@@ -92,13 +100,13 @@ ut_new_dawn_fascist_focus = {
 					ut_ideology_new_dawn_fascist_trigger = yes
 				}
 			}
-			add = 25
+			add = 30
 		}
 		if = {
 			#Historically Germany, Italy, and Japan below in "ranking"?
 			limit = {
-				global_country_ranking >= 5
-				country_rank >= rank_value:great_power
+				global_country_ranking > 5
+				country_rank <= rank_value:great_power
 			}
 			add = 5
 		}
@@ -114,7 +122,7 @@ ut_new_dawn_fascist_focus = {
 					}
 				}
 			}
-			add = 20
+			add = 10
 		}
 		if = {
 			#Dem scare if not democratic them self
@@ -127,12 +135,12 @@ ut_new_dawn_fascist_focus = {
 					}
 				}
 			}
-			add = 10
+			add = 5
 		}
 		#For Rule Start Era 4/5, so monarchies are more likely to choose autocrat focus then fascist
 		if = {
 			limit = {
-				NOT = { has_technology_researched = political_agitation }
+				NOT = { has_technology_researched = corporatism }
 			}
 			add = -10
 		}
@@ -208,17 +216,9 @@ ut_new_dawn_autocrat_focus = {
 			#let's stay in power, if nothing else to bother
 			limit = {
 				NOT = { has_law = law_type:law_census_voting }
-				NOT = { has_law = law_type:law_universal_suffrage }
-				OR = {
-					has_law = law_type:law_monarchy
-					has_law = law_type:law_corporate_state
-				}
-				OR = {
-					has_law = law_type:law_autocracy
-					has_law = law_type:law_oligarchy
-				}
+				ut_new_dawn_has_autocrat_core_laws_trigger = yes
 			}
-			add = 30
+			add = 20
 		}
 		if = {
 			limit = {
@@ -226,7 +226,7 @@ ut_new_dawn_autocrat_focus = {
 					ut_ideology_new_dawn_autocrat_trigger = yes
 				}
 			}
-			add = 25
+			add = 20
 		}
 		if = {
 			limit = {
@@ -273,7 +273,16 @@ ut_new_dawn_democrat_focus = {
 		add_modifier = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
-		}	
+		}
+		
+		if = {
+			limit = {
+				has_variable = je_ut_new_dawn_heritage_activated_var
+				has_variable = je_ut_new_dawn_heritage_with_opposing_country_activated_var
+				is_ai = yes
+			}
+			enact_law = law_type:law_universal_suffrage
+		}
 	}
 	ai_chance = {
 		value = 0
@@ -318,7 +327,7 @@ ut_new_dawn_democrat_focus = {
 		if = {
 			#Historically USA and Great Britain high "ranking"?
 			limit = {
-				global_country_ranking < 5
+				global_country_ranking <= 5
 			}
 			add = 10
 		}
@@ -367,7 +376,7 @@ ut_new_dawn_democrat_focus = {
 					}
 				}
 			}
-			add = 20
+			add = 10
 		}
 		
 		if = {
@@ -385,7 +394,7 @@ ut_new_dawn_democrat_focus = {
 					}
 				}
 			}
-			add = 10
+			add = 5
 		}
 
 		if = {
@@ -451,6 +460,26 @@ ut_new_dawn_communist_focus = {
 			name = ut_new_dawn_focus_recently_changed
 			days = normal_modifier_time
 		}
+
+		if = {
+			limit = {
+				has_variable = je_ut_new_dawn_heritage_activated_var
+				has_variable = je_ut_new_dawn_heritage_with_opposing_country_activated_var
+				is_ai = yes
+			}
+			enact_law = law_type:law_council_republic
+			random_list = {
+				25 = {
+					enact_law = law_type:law_command_economy
+				}
+				25 = {
+					enact_law = law_type:law_cooperative_ownership
+				}
+				50 = {
+					enact_law = law_type:law_labour_suffrage
+				}
+			}
+		}
 	}
 	ai_chance = {
 		value = 0
@@ -473,6 +502,7 @@ ut_new_dawn_communist_focus = {
 				OR = {
 					c:FRA ?= this
 					c:CHI ?= this
+					country_has_primary_culture = cu:han
 				}
 			}
 			add = 10
@@ -495,10 +525,18 @@ ut_new_dawn_communist_focus = {
 		if = {
 			#to balance with fascism
 			limit = {
-				global_country_ranking >= 5
-				country_rank >= rank_value:great_power
+				global_country_ranking > 5
+				country_rank <= rank_value:great_power
 			}
 			add = 5
+		}
+		if = {
+			#So unrecognized nations during homeland spread new dawn that have autocrat laws have any chance to choose communism
+			limit = {
+				country_rank <= rank_value:unrecognized_major_power
+				NOT = { country_rank = rank_value:minor_power }
+			}
+			add = 10
 		}
 		if = {
 			#Fascist scare if communist them self
@@ -515,7 +553,7 @@ ut_new_dawn_communist_focus = {
 					}
 				}
 			}
-			add = 20
+			add = 10
 		}
 		if = {
 			#communist wave if major ally communist and no core law of other path
@@ -543,12 +581,18 @@ ut_new_dawn_communist_focus = {
 					ut_ideology_new_dawn_communist_trigger = yes
 				}
 			}
-			add = 25
+			add = 30
 		}
 		#For Rule Start Era 4/5, so monarchies are more likely to choose autocrat/democrat focus then communist
 		if = {
 			limit = {
-				NOT = { has_technology_researched = political_agitation }
+				NOT = { has_technology_researched = socialism }
+			}
+			add = -10
+		}
+		if = {
+			limit = {
+				NOT = { has_technology_researched = anarchism }
 			}
 			add = -10
 		}

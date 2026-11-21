@@ -137,6 +137,8 @@ ut_cnc_machines_je = {
 		always = yes
 	}
 
+	should_be_pinned_by_default_uninvolved_or_context = yes
+
 	is_shown_when_inactive = {
 		has_variable = heavy_industrial_machinery_je_done
 		NOT = { has_variable = cnc_machines_je_done }
@@ -198,6 +200,8 @@ ut_heavy_tractors_je = {
 	activation_description = {
 		always = yes
 	}
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
 
 	is_shown_when_inactive = {
 		has_technology_researched = mechanized_farming
@@ -268,6 +272,8 @@ ut_agrarian_planes_je = {
 		always = yes
 	}
 
+	should_be_pinned_by_default_uninvolved_or_context = yes
+
 	is_shown_when_inactive = {
 		has_variable = heavy_tractors_je_done
 	}
@@ -337,6 +343,8 @@ ut_plastic_je = {
 		always = yes
 	}
 
+	should_be_pinned_by_default_uninvolved_or_context = yes
+
 	is_shown_when_inactive = {
 		has_technology_researched = art_silk
 	}
@@ -390,6 +398,8 @@ ut_electronics_je = {
 	activation_description = {
 		always = yes
 	}
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
 
 	is_shown_when_inactive = {
 		has_technology_researched = electric_railway
@@ -448,6 +458,8 @@ ut_computers_je = {
 		always = yes
 	}
 
+	should_be_pinned_by_default_uninvolved_or_context = yes
+
 	is_shown_when_inactive = {
 		has_variable =  electronics_je_done
 	}
@@ -505,6 +517,8 @@ ut_software_je = {
 	activation_description = {
 		always = yes
 	}
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
 
 	is_shown_when_inactive = {
 		has_variable =  computers_je_done
@@ -622,6 +636,8 @@ ut_consumer_goods_complex_je = {
 	activation_description = {
 		always = yes
 	}
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
 
 	is_shown_when_inactive = {
 		has_variable = consumer_goods_simple_je_done

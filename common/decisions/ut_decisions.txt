@@ -413,7 +413,7 @@ ut_lgbt_same_sex_unions = {
 			name = ut_lgbt_same_sex_unions_var
 		}
 		custom_tooltip = {
-			text = ut_add_new_dawn_progress_neg_50
+			text = ut_add_new_dawn_core_progress_neg_50
 			ut_add_new_dawn_core_progress = {
 				VALUE = -50
 			}
@@ -465,7 +465,7 @@ ut_lgbt_same_sex_marriage = {
 			name = ut_lgbt_same_sex_marriage_var
 		}
 		custom_tooltip = {
-			text = ut_add_new_dawn_progress_neg_50
+			text = ut_add_new_dawn_core_progress_neg_50
 			ut_add_new_dawn_core_progress = {
 				VALUE = -50
 			}
@@ -508,7 +508,7 @@ ut_lgbt_sexual_self_determination = {
 			name = ut_lgbt_sexual_self_determination_var
 		}
 		custom_tooltip = {
-			text = ut_add_new_dawn_progress_neg_50
+			text = ut_add_new_dawn_core_progress_neg_50
 			ut_add_new_dawn_core_progress = {
 				VALUE = -50
 			}
@@ -608,7 +608,7 @@ ut_democrat_enact_law_variants = {
 
 	when_taken = {
 		ig:ig_petty_bourgeoisie ?= {
-			save_scope_as = petty_bourgeoisie_ig
+			is_in_government = yes
 		}
 		active_law:lawgroup_governance_principles ?= {
 			add_amendment = {
@@ -817,6 +817,9 @@ ut_new_dawn_early_game_rule_unlock = {
 			}
 		}
 	}
+	ai_chance = {
+		value = 1
+	}
 }
 
 ut_debug_apply_patch = {
@@ -902,5 +905,219 @@ ut_debug_apply_patch = {
 	}
 	ai_chance = {
 		value = 1
+	}
+}
+
+ut_new_dawn_fascist_raid = {
+	is_shown = {
+		has_modifier = ut_new_dawn_core_fascist_mod
+	}
+	possible = {
+		has_variable = je_ut_new_dawn_form_paramilitary_groups_done
+	}
+	when_taken = {
+		# Implement the effects of the fascist raid here
+	}
+}
+
+ut_unite_homeland = {
+	is_shown = {
+		country_rank >= rank_value:minor_power
+		ut_new_dawn_has_core_trigger = yes
+		is_player = yes
+	}
+	possible = {
+		is_at_war = no
+		any_diplomatically_relevant_country = {
+			ut_unite_homeland_target_trigger = yes
+		}
+	}
+	when_taken = {
+		ut_unite_homeland_effect = yes
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+ut_homeland_spread_new_dawn = {
+	is_shown = {
+		country_rank >= rank_value:major_power
+		ut_new_dawn_has_core_trigger = yes
+		NOT = { has_variable = ut_homeland_spread_new_dawn_var }
+	}
+	possible = {
+		trigger_if = {
+			limit = {
+				month > 9
+			}
+			custom_tooltip = {
+				text = ut_homeland_spread_new_dawn_wait_tick_tt
+				NOT = { month > 9 }
+			}
+		}
+		any_diplomatically_relevant_country = {
+			ut_spread_new_dawn_target_trigger = yes
+		}
+	}
+	when_taken = {
+		ut_spread_new_dawn_effect = yes
+	}
+	ai_chance = {
+		value = 60
+		#should be quite low so doesn't stack due to je_new_dawn start delay bug
+	}
+}
+
+ut_unite_against_foreign_core = {
+	is_shown = {
+		country_rank >= rank_value:major_power
+		ut_new_dawn_has_core_trigger = yes
+	}
+	possible = {
+		any_diplomatically_relevant_country = {
+			is_at_war = no
+			NOT = { this = root }
+			is_subject = no
+			country_rank <= rank_value:minor_power
+			NOT = { ut_new_dawn_has_core_trigger = yes }
+			ut_is_country_on_same_continent_as_root = { TARGET = root }
+			#todo check if intervene possibility to broad
+			custom_tooltip = {
+				text = ut_unite_against_foreign_core_diplomatic_play_tt
+				OR = {
+					AND = {
+						is_diplomatic_play_target = yes
+						any_diplomatic_play = {
+							target_is = prev
+							initiator = {
+								is_revolutionary = no
+								is_secessionist = no
+								ut_new_dawn_has_core_trigger = yes
+							}
+						}
+					}
+					AND = {
+						#so revolts (that count as attacking their core) can be annexed and war with counter ideology starts
+						is_diplomatic_play_initiator = yes
+						any_diplomatic_play = {
+							initiator = prev
+							target = {
+								is_revolutionary = no
+								is_secessionist = no
+								ut_new_dawn_has_core_trigger = yes
+							}
+						}
+					}
+				}
+			}
+			any_primary_culture = {
+				is_primary_culture_of = ROOT
+			}
+		}
+	}
+	when_taken = {
+		random_diplomatically_relevant_country = {
+			limit = {
+				NOT = { this = root }
+				is_revolutionary = no
+				is_subject = no
+				is_at_war = no
+				country_rank <= rank_value:minor_power
+				NOT = { ut_new_dawn_has_core_trigger = yes }
+				ut_is_country_on_same_continent_as_root = { TARGET = root }
+				OR = {
+					AND = {
+						is_diplomatic_play_target = yes
+						any_diplomatic_play = {
+							target_is = prev
+							initiator = {
+								is_revolutionary = no
+								is_secessionist = no
+								ut_new_dawn_has_core_trigger = yes
+							}
+						}
+					}
+					AND = {
+						#so revolts (that count as attacking their core) can be annexed and war with counter ideology starts
+						is_diplomatic_play_initiator = yes
+						any_diplomatic_play = {
+							initiator = prev
+							target = {
+								is_revolutionary = no
+								is_secessionist = no
+								ut_new_dawn_has_core_trigger = yes
+							}
+						}
+					}
+				}
+				
+				any_primary_culture = {
+					is_primary_culture_of = ROOT
+				}
+			}
+			random_diplomatic_play = {
+				limit = {
+					OR = {
+						target_is = prev
+						initiator_is = prev
+					}
+				}
+				if = {
+					limit = {
+						target_is = prev
+					}
+					add_target_backers = { ROOT }
+				}
+				else = {
+					limit = {
+						initiator_is = prev
+					}
+					add_initiator_backers = { ROOT }
+				}
+			}
+			save_scope_as = ut_united_heritage_annexed_country
+			capital = {
+				save_scope_as = ut_united_heritage_annexed_country_capital
+			}
+			ROOT = {
+				save_scope_as = ut_united_heritage_country
+				every_country = {
+					limit = {
+						is_player = yes
+						NOT = { this = root }
+					}
+					trigger_event = { id = event_new_dawn.803 popup = yes }
+				}
+				annex_with_incorporation = prev
+			}
+		}
+		# Implement the effects of the fascist raid here
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+#deprecated for backward compatibility, not sure if laws properly load into countries in 1.15
+ut_law_forced_laborers_enact = {
+	is_shown = {
+		is_player = yes
+		NOT = { has_law = law_type:ut_law_forced_laborers }	
+	}
+	
+	possible = {
+		has_modifier = ut_new_dawn_core_fascist_mod
+		OR = {
+			has_law = law_type:law_debt_slavery
+			has_law = law_type:law_slave_trade
+			has_law = law_type:law_legacy_slavery
+			has_law = law_type:law_colonial_slavery
+		}
+	}
+
+	when_taken = {
+		enact_law = law_type:ut_law_forced_laborers
 	}
 }

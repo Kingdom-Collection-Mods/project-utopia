@@ -23,3 +23,14 @@ ut_new_dawn_historical_focus = {
 		flag = ut_new_dawn_historical_focus_no
 	}	
 }
+
+ut_ai_tech_buffs = {
+	default = ut_ai_tech_buffs_no
+
+	ut_ai_tech_buffs_yes = {
+		flag = ut_ai_tech_buffs_yes
+	}
+
+	ut_ai_tech_buffs_no = {
+	}	
+}

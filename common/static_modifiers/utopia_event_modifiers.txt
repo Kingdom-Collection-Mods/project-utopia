@@ -21,7 +21,7 @@ new_dawn_mod = {
 	state_radicals_from_political_movements_mult = 0.25
 	state_radicals_and_loyalists_from_sol_change_mult = 0.25
 	country_radicals_from_legitimacy_mult = 0.5
-	country_law_enactment_speed_mult = 0.25
+	country_law_enactment_speed_mult = 0.3
 }
 
 
@@ -75,12 +75,14 @@ new_dawn_event_constitutional_crisis_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
 	interest_group_approval_add = -2
 	political_movement_radicalism_add = 0.25
+	country_new_dawn_progress_points_progress = -1
 }
 
 new_dawn_event_emergency_decree_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_all.dds
 	building_throughput_add = -0.1
 	country_loan_interest_rate_mult = 0.1
+	country_new_dawn_progress_points_progress = -1
 }
 
 ut_new_dawn_focus_recently_changed = {
@@ -109,22 +111,20 @@ je_ut_new_dawn_communist_focus = {
 
 ai_great_power_buff_spread = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	country_tech_spread_add = 150
+	country_tech_spread_add = 100
 	country_weekly_innovation_max_add = 50
-	country_weekly_innovation_add = 100
+	country_weekly_innovation_add = 50
 }
 
 ai_major_power_buff_spread = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 100
 	country_weekly_innovation_max_add = 25
-	country_weekly_innovation_add = 100
 }
 
 ai_below_major_power_buff_spread = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	country_tech_spread_add = 50
-	country_weekly_innovation_add = 100
+	country_tech_spread_add = 100
 }
 
 
@@ -182,11 +182,13 @@ je_ut_new_dawn_democratic_fair_elections_mod = {
 
 je_ut_new_dawn_autocratic_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_autocrat.dds
-	country_suppression_attraction_factor = -0.25
+	country_suppression_attraction_factor = -0.1
 	country_authority_mult = 0.5
 	country_radicals_from_conquest_mult = 0.25
 	country_diplomatic_play_maneuvers_add = 50
-	state_pop_support_movement_liberal_mult = -0.05
+	state_pop_support_movement_liberal_mult = -0.1
+	state_pop_support_movement_radical_mult = -0.1
+	state_pop_support_movement_socialist_mult = -0.1
 }
 
 ut_new_dawn_core_autocratic_mod = {
@@ -196,7 +198,7 @@ ut_new_dawn_core_autocratic_mod = {
 je_ut_new_dawn_fascist_mod = {
 	icon = gfx/interface/icons/new_dawn_icons/ut_nd_fascist.dds
 	country_liberty_desire_of_subjects_add = 0.1
-	country_infamy_generation_mult = -0.5
+	country_infamy_generation_mult = -0.25
 	country_infamy_decay_mult = -0.75
 	country_diplomatic_play_maneuvers_add = 50
 	country_military_tech_research_speed_mult = 0.03
@@ -205,6 +207,7 @@ je_ut_new_dawn_fascist_mod = {
 	state_pop_support_movement_fascist_mult = 0.1
 	country_radicals_from_conquest_mult = 0.25
 	country_diplomatic_play_maneuvers_add = 50
+	country_new_dawn_pressure_progress = 1
 }
 
 ut_new_dawn_core_fascist_mod = {
@@ -291,46 +294,58 @@ ut_nuclear_power_site_mod = {
 
 je_ut_new_dawn_emergency_powers_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_new_dawn_progress_points_progress = -1
 	country_law_enactment_speed_mult = 0.25
 	country_law_enactment_stall_mult = -0.25
 	interest_group_in_government_approval_add = 2
-	state_pop_support_movement_liberal_mult = 0.05
-	state_pop_support_movement_radical_mult = 0.05
-	state_pop_support_movement_socialist_mult = 0.05
+	state_pop_support_movement_liberal_mult = 0.1
+	state_pop_support_movement_radical_mult = 0.1
+	state_pop_support_movement_socialist_mult = 0.1
+	political_movement_radicalism_add = 0.05
 	
 }
 
 je_ut_new_dawn_strengthen_power_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	country_new_dawn_progress_points_progress = 0.5
-	state_pop_support_movement_liberal_mult = 0.05
-	state_pop_support_movement_radical_mult = 0.05
-	state_pop_support_movement_socialist_mult = 0.05
+	country_new_dawn_progress_points_progress = 2
+	state_pop_support_movement_liberal_mult = 0.1
+	state_pop_support_movement_radical_mult = 0.1
+	state_pop_support_movement_socialist_mult = 0.1
+	political_movement_pop_attraction_mult = 0.1
+	political_movement_radicalism_add = 0.05
 }
 
 je_ut_new_dawn_border_dispute_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	country_infamy_generation_mult = -0.5
+	country_new_dawn_progress_points_progress = -1
+	country_infamy_generation_mult = -0.25
 	country_infamy_decay_mult = -0.5
 	country_diplomatic_play_maneuvers_add = 50
-	country_radicals_from_conquest_mult = -0.5
-	unit_defense_mult = 0.1
-	state_pop_support_movement_liberal_mult = 0.05
-	state_pop_support_movement_radical_mult = 0.05
-	state_pop_support_movement_socialist_mult = 0.05
+	country_radicals_from_conquest_mult = 0.25
+	unit_offense_mult = 0.1
+	unit_defense_mult = -0.05
+	state_pop_support_movement_liberal_mult = 0.1
+	state_pop_support_movement_radical_mult = 0.1
+	state_pop_support_movement_socialist_mult = 0.1
+	political_movement_radicalism_add = 0.05
 }
 
 je_ut_new_dawn_suppress_dissidents_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	state_pop_support_movement_liberal_mult = 0.05
-	state_pop_support_movement_radical_mult = 0.05
-	state_pop_support_movement_socialist_mult = 0.05
+	country_new_dawn_progress_points_progress = -0.5
+	state_pop_support_movement_liberal_mult = 0.1
+	state_pop_support_movement_radical_mult = 0.1
+	state_pop_support_movement_socialist_mult = 0.1
+	political_movement_radicalism_add = 0.05
 }
 
 je_ut_new_dawn_suppress_dissidents_self_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-	country_legitimacy_base_add = 10
-	state_pop_support_movement_liberal_add = -0.1
+	country_legitimacy_base_add = 5
+	state_pop_support_movement_liberal_mult = -0.2
+	state_pop_support_movement_radical_mult = -0.2
+	state_pop_support_movement_socialist_mult = -0.2
+	political_movement_radicalism_add = -0.1
 }
 
 
@@ -378,6 +393,86 @@ je_ut_new_dawn_suppress_dissidents_rural_folk_mod = {
 je_ut_new_dawn_suppress_dissidents_trade_unions_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	interest_group_ig_trade_unions_pol_str_mult = -0.5
+}
+
+je_ut_new_dawn_fascist_outlaw_communists_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	state_pop_support_movement_communist_mult = -0.05
+	state_pop_support_movement_anarchist_mult = -0.05
+	state_pop_support_movement_socialist_mult = -0.05
+	country_authority_mult = 0.05
+	country_new_dawn_pressure_progress = -0.2
+}
+
+je_ut_new_dawn_fascist_outlaw_communists_ability_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	political_movement_radicalism_add = -0.3
+	country_suppression_attraction_factor = -0.1
+	state_mortality_turmoil_mult = 0.05
+	country_new_dawn_pressure_progress = 0.2
+}
+
+je_ut_new_dawn_fascist_form_paramilitary_groups_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_institution_cost_institution_police_mult = 0.25
+	country_disallow_law_no_police_bool = yes
+	country_authority_mult = 0.05
+	country_new_dawn_pressure_progress = -0.2
+}
+
+je_ut_new_dawn_fascist_form_paramilitary_groups_ability_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	state_mortality_turmoil_mult = 0.1
+	state_non_homeland_mortality_mult = 0.04
+	country_new_dawn_pressure_progress = -0.2
+}
+
+je_ut_new_dawn_fascist_conformity_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_authority_mult = 0.1
+	country_law_enactment_speed_mult = 0.1
+	country_new_dawn_pressure_progress = -0.2
+}
+
+je_ut_new_dawn_fascist_conformity_ability_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_law_enactment_speed_mult = 0.2
+	country_law_enactment_stall_mult = -0.3
+	political_movement_radicalism_add = 0.1
+	country_new_dawn_pressure_progress = 0.2
+}
+
+je_ut_new_dawn_fascist_volksgemeinschaft_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	state_non_homeland_mortality_mult = 0.01
+	country_acceptance_not_homeland_add = -10
+	country_new_dawn_pressure_progress = -0.2
+	state_conscription_rate_add = 0.05
+}
+
+je_ut_new_dawn_fascist_volksgemeinschaft_ability_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_acceptance_not_homeland_add = -10
+	country_war_support_casualties_mult = -0.5
+	country_war_support_battles_decrease_mult = -0.5
+	building_training_rate_mult = 1
+	country_new_dawn_pressure_progress = 0.2
+}
+
+je_ut_new_dawn_fascist_petty_bourgeoisie_in_power_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	building_minimum_wage_mult = 0.1
+	state_pop_support_movement_pro_slavery_mult = 0.2
+}
+je_ut_new_dawn_fascist_big_bourgeoisie_in_power_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	state_slaves_mortality_mult = 0.1
+	state_slave_import_mult = 0.1
+	building_minimum_wage_mult = -0.1
+}
+je_ut_new_dawn_fascist_petty_vs_big_bourgeoisie_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	country_new_dawn_pressure_progress = 1
 }
 
 ut_released_colony = {

@@ -372,9 +372,12 @@ ut_modern_ideological_union_1 = {
 		
 		if = {
 			limit = {
-				has_identity = identity:identity_ideological_union
-				NOT = { has_principle_group = principle_group:principle_group_creative_legislature }
-				NOT = { has_principle_group = principle_group:principle_group_ideological_truth }
+				is_in_power_bloc = yes
+				power_bloc ?= {
+					has_identity = identity:identity_ideological_union
+					NOT = { has_principle_group = principle_group:principle_group_creative_legislature }
+					NOT = { has_principle_group = principle_group:principle_group_ideological_truth }
+				}
 			}
 			add = 1000
 		}

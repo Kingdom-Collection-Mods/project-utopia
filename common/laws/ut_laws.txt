@@ -197,7 +197,6 @@ law_private_universities = {
 	}
 }
 
-
 law_compulsory_secondary_school = {
 	group = lawgroup_childrens_rights
 
@@ -285,7 +284,6 @@ law_compulsory_tertiary_school = {
 		}
 	}
 }
-
 
 law_social_market_economy = {
 	group = lawgroup_economic_system
@@ -379,6 +377,14 @@ law_free_market_economy = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
+
+		if = {
+			limit = {
+				has_law = law_type:law_laissez_faire
+				has_modifier = ut_new_dawn_core_democratic_mod
+			}
+			add = 500
+		}
 	}
 }
 
@@ -421,34 +427,13 @@ law_state_capitalism_economy = {
 
 		if = {
 			limit = {
+				has_law = law_type:law_interventionism
 				OR = {
-					has_journal_entry = je_sick_man_bureaucracy
-					has_modifier = shogun_ig_forced_to_open_market
-					has_journal_entry = je_meiji_main
-					has_journal_entry = je_great_reforms_serfdom
-				}
-				has_law = law_type:law_traditionalism
-			}
-			add = 10000 # Top priority for Tanzimat/Meiji AI is to get out of Traditionalism
-		}
-
-		# AI should really try to get out of Traditionalism under the right circumstances
-		if = {
-			limit = {
-				has_law = law_type:law_traditionalism
-				NOT = { has_strategy = ai_strategy_reactionary_agenda }
-				OR = {
-					NOT = { has_strategy = ai_strategy_conservative_agenda }
-					any_political_movement = {
-						law_enactment_stance = {
-							law = law_type:law_interventionism
-							value > neutral
-						}
-						political_movement_support >= 0.10
-					}
+					has_modifier = ut_new_dawn_core_democratic_mod
+					has_modifier = ut_new_dawn_core_autocratic_mod
 				}
 			}
-			add = 1000
+			add = 500
 		}
 	}
 }
@@ -491,6 +476,17 @@ law_corporate_economy = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
+
+		if = {
+			limit = {
+				has_law = law_type:law_interventionism
+				OR = {
+					has_modifier = ut_new_dawn_core_fascist_mod
+					has_modifier = ut_new_dawn_core_autocratic_mod
+				}
+			}
+			add = 500
+		}
 	}
 }
 
@@ -523,6 +519,18 @@ law_protectionism_union = {
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
+		}
+
+		if = {
+			limit = {
+				has_law = law_type:law_protectionism
+				OR = {
+					has_modifier = ut_new_dawn_core_fascist_mod
+					has_modifier = ut_new_dawn_core_autocratic_mod
+					has_modifier = ut_new_dawn_core_communist_mod
+				}
+			}
+			add = 500
 		}
 	}
 }
@@ -571,6 +579,16 @@ law_free_trade_union = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
+
+		if = {
+			limit = {
+				has_law = law_type:law_free_trade
+				OR = {
+					has_modifier = ut_new_dawn_core_democratic_mod
+				}
+			}
+			add = 500
+		}
 	}
 }
 
@@ -603,13 +621,14 @@ law_international_trade = {
 		if = {
 			limit = {
 				has_law_or_variant = law_type:law_protectionism
+				NOT = { ut_new_dawn_has_core_trigger = yes }
 			}
-			add = 1000
+			add = 500
 		}
 		
 		if = {
 			limit = {
-				has_law_or_variant = law_type:law_isolationism
+				has_law_or_variant = law_type:law_mercantilism
 			}
 			add = 500
 		}
@@ -705,6 +724,16 @@ law_multicultural_globalism = {
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
+		}
+		if = {
+			limit = {
+				OR = {
+					has_modifier = ut_new_dawn_core_communist_mod
+					has_modifier = ut_new_dawn_core_democratic_mod
+				}
+				has_law = law_type:law_multiculturalism
+			}
+			add = 100
 		}
 	}
 }
@@ -811,6 +840,13 @@ law_neo_ethno_state = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
+		if = {
+			limit = {
+				has_modifier = ut_new_dawn_core_fascist_mod
+				has_law = law_type:law_ethnostate
+			}
+			add = 100
+		}
 	}
 }
 
@@ -858,18 +894,7 @@ law_privatized_bureaucrats = {
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
-		}
-		
-		if = {
-			limit = { 
-				OR = {
-					has_journal_entry = je_sick_man_bureaucracy
-					has_journal_entry = je_great_reforms_bureaucratic
-				}
-				has_law = law_type:law_hereditary_bureaucrats
-			}
-			add = 1000
-		}		
+		}	
 	}
 }
 
@@ -928,38 +953,7 @@ law_task_forces = {
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
-		}
-		
-		if = {
-			limit = { 
-				OR = {
-					has_journal_entry = je_sick_man_army
-					has_journal_entry = je_great_reforms_military
-				}
-				has_law = law_type:law_peasant_levies
-			}
-			add = 1000
-		}			
-		
-		# AI should really try to get out of Peasant Levies under the right circumstances
-		if = {
-			limit = {
-				has_law = law_type:law_peasant_levies
-				NOT = { has_strategy = ai_strategy_reactionary_agenda }
-				OR = {
-					NOT = { has_strategy = ai_strategy_conservative_agenda }
-					any_political_movement = {
-						law_stance = {
-							law = law_type:law_mass_conscription
-							value > neutral
-						}	
-						political_movement_support >= 0.10
-					}
-					has_technology_researched = napoleonic_warfare
-				}	
-			}
-			add = 1000
-		}		
+		}	
 	}
 }
 
@@ -1017,37 +1011,6 @@ law_demobilized = {
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
-		}
-		
-		if = {
-			limit = { 
-				OR = {
-					has_journal_entry = je_sick_man_army
-					has_journal_entry = je_great_reforms_military
-				}
-				has_law = law_type:law_peasant_levies
-			}
-			add = 1000
-		}			
-		
-		# AI should really try to get out of Peasant Levies under the right circumstances
-		if = {
-			limit = {
-				has_law = law_type:law_peasant_levies
-				NOT = { has_strategy = ai_strategy_reactionary_agenda }
-				OR = {
-					NOT = { has_strategy = ai_strategy_conservative_agenda }
-					any_political_movement = {
-						law_stance = {
-							law = law_type:law_mass_conscription
-							value > neutral
-						}	
-						political_movement_support >= 0.10
-					}
-					has_technology_researched = napoleonic_warfare
-				}	
-			}
-			add = 1000
 		}		
 	}
 }
@@ -1795,6 +1758,93 @@ ut_law_international_navy = {
 	# AI will never return to merchant navy
 	ai_will_do = {
 		always = no
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+	}
+}
+
+ut_law_forced_laborers = {
+	group = lawgroup_slavery
+	parent = law_slave_trade
+
+	progressiveness = -100
+
+	icon = "gfx/interface/icons/law_icons/slave_trade.dds"
+
+	disallowing_laws = {
+		law_cultural_exclusion
+		law_multicultural
+		law_multicultural_globalism
+		law_affirmative_action
+	}
+
+	on_activate = {
+		set_variable = {
+			name = slavery_recently_enacted
+			value = yes
+			days = 1825
+		}
+		if = {
+			limit = { has_variable = slavery_recently_abolished }
+			custom_tooltip = {
+				text = enslave_discriminated_farm_workers_tt
+				every_scope_state = {
+					limit = { has_variable = former_slave_state }
+					enslave_discriminated_farm_workers = yes
+				}
+			}
+			remove_variable = slavery_recently_abolished
+			every_scope_state = {
+				remove_variable = former_slave_state
+			}
+		}
+
+		ig:ig_landowners ?= {
+			switch_from_colonial_slavery_to_pro_slavery = yes
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					any_political_movement = {
+						is_political_movement_type = movement_pro_slavery
+						has_core_ideology = ideology:ideology_pro_slavery_colonial_movement
+					}
+				}
+				random_political_movement = {
+					limit = {
+						is_political_movement_type = movement_pro_slavery
+						has_core_ideology = ideology:ideology_pro_slavery_colonial_movement
+					}
+					set_core_ideology = ideology_pro_slavery_movement
+				}
+			}
+		}
+	}
+
+	can_enact = {
+		has_modifier = je_ut_new_dawn_fascist_conformity_mod
+	}
+
+	modifier = {
+		interest_group_ig_industrialists_pol_str_mult = 0.25
+		state_non_homeland_mortality_mult = 0.1
+		country_influence_mult = -0.25 #Balance for all the economic benefits coming with slavery PMs
+	}
+
+	ai_will_do = {
+		has_modifier = ut_new_dawn_core_fascist_mod
+		exists = ruler
+		ruler = {
+			has_ideology = ideology:ut_ideology_national_socialist_leader
+		}
 	}
 
 	ai_enact_weight_modifier = { #Petitions

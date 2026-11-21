@@ -4,6 +4,12 @@
 	}
 }
 
+INJECT:pmg_mining_equipment_building_copper_mine = {
+	production_methods = {
+		pm_heavy_machinery_building_copper_mine
+	}
+}
+
 # INJECT:pmg_explosives_building_coal_mine = {
 # 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 # 	production_methods = {
