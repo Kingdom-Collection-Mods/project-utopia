@@ -493,7 +493,7 @@
  country_expected_sol_for_new_dawn_pressure: "Expected [concept_sol] for [concept_ut_nd_pressure]"
  country_expected_sol_for_new_dawn_pressure_desc: "Changes the expected [concept_sol] for [concept_ut_nd_pressure] calculation."
  
- ut_new_dawn_communist_focus: "Communist Focus"
+ ut_new_dawn_communist_focus: "[concept_ut_nd_communist_core] Focus"
  ut_new_dawn_communist_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities] and [concept_ut_nd_milestones].#!"
  ut_new_dawn_communist_bar: "Communist"
  ut_new_dawn_communist_bar_desc: "Communist Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
@@ -510,14 +510,10 @@
  concept_ut_nd_communist_characters: "Communist Characters"
  concept_ut_nd_communist_characters_desc: "Communist [concept_character] ideologies are: [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_communist_leader').GetName], [GetIdeology('ideology_vanguardist').GetName], [GetIdeology('ideology_nihilist').GetName], [GetIdeology('ideology_state_socialist').GetName] and [GetIdeology('ideology_utilitarian_leader').GetName].\nIf Communist [concept_ut_nd_focus] is active, also includes: [GetIdeology('ideology_moderate').GetName], [GetIdeology('ideology_land_reformer').GetName], [GetIdeology('ideology_modernizer_leader').GetName], [GetIdeology('ideology_positivist').GetName], [GetIdeology('ideology_luddite').GetName] and [GetIdeology('ideology_sovereignist_leader').GetName]."
 
- je_ut_new_dawn_democrat_focus: "Democratic Focus"
- je_ut_new_dawn_democrat_focus_desc: "Democratic focus selected"
- je_ut_new_dawn_fascist_focus: "Fascist Focus"
- je_ut_new_dawn_fascist_focus_desc: "Fascist focus selected"
- je_ut_new_dawn_autocrat_focus: "Autocratic Focus"
- je_ut_new_dawn_autocrat_focus_desc: "Autocratic focus selected"
- je_ut_new_dawn_communist_focus: "Communist Focus"
- je_ut_new_dawn_communist_focus_desc: "Communist focus selected"
+ je_ut_new_dawn_democrat_focus: "[concept_ut_nd_democratic_core] Focus"
+ je_ut_new_dawn_fascist_focus: "[concept_ut_nd_fascist_core] Focus"
+ je_ut_new_dawn_autocrat_focus: "[concept_ut_nd_autocratic_core] Focus"
+ je_ut_new_dawn_communist_focus: "[concept_ut_nd_communist_core] Focus"
  ut_new_dawn_phase_2_progress_modifier: "x0.5 Multiplier during #bold $new_dawn_phase_2_mod$#!"
 
  ut_new_dawn_core_fascist_mod: "Fascist Ideology"
@@ -575,7 +571,7 @@
  ut_new_dawn_ideology_status_autocratic_tt: "#b [concept_ut_nd_progress_points]#!: #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]/100#! [Country.GetCustom('ut_new_dawn_progress_trend')]\n\n#b [concept_ut_new_dawn]#!\n$ut_phase_1_trend_tooltip$\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_autocratic_stance$"
  ut_new_dawn_ideology_status_democratic_tt: "#b [concept_ut_nd_progress_points]#!: #v [Country.MakeScope.Var('je_ut_new_dawn_core_progress').GetValue|0]/100#! [Country.GetCustom('ut_new_dawn_progress_trend')]\n\n#b [concept_ut_new_dawn]#!\n$ut_phase_1_trend_tooltip$\n\n#b [concept_ut_nd_stance]#!\n$ut_nd_democratic_stance$"
 
- ut_new_dawn_democrat_focus: "Democratic Focus"
+ ut_new_dawn_democrat_focus: "[Concept('concept_ut_nd_democrat_core','Democratic')] Focus"
  ut_new_dawn_democrat_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities] and [concept_ut_nd_milestones].#!"
  ut_new_dawn_democrat_bar: "Democratic"
  ut_new_dawn_democrat_bar_desc: "Democratic Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
@@ -805,7 +801,7 @@
  je_ut_new_dawn_communist_reason: "The people demand equality, justice, and the end of class oppression. Across the country, workers' councils are forming, trade unions are gaining influence, and protests for social rights are filling the streets.\nWhere this awakening leads is now up to you.\n\n[ROOT.GetCountry.GetCustom('ut_new_dawn_pressure_status')]\n\n #italic - [Concept('concept_ut_nd_communist_core', 'Communist')] [concept_ut_nd_path_to_utopia]#!"
  je_ut_new_dawn_communist_complete_condition_tt: "Never (wip)"
 
- ut_new_dawn_autocrat_focus: "Autocratic Focus"
+ ut_new_dawn_autocrat_focus: "[Concept('concept_ut_nd_autocrat_core','Autocratic')] Focus"
  ut_new_dawn_autocrat_focus_desc: "#italic Preview: Features a base implementation of [concept_ut_nd_abilities].#!"
 
  ut_new_dawn_autocrat_bar: "Autocratic"
@@ -859,7 +855,7 @@
  ut_utopia_enabled_on_game_started_loc_latest_yes: "$ut_utopia_enabled_on_game_started_loc_yes$ All content available."
  ut_utopia_enabled_on_game_started_loc_no: "Started save game before 13. March or Project Utopia was not enabled on game start.\n#bold Important:#! New mining resources and laws require Project Utopia to be enabled since game start."
 
- ut_new_dawn_fascist_focus: "Fascist Focus"
+ ut_new_dawn_fascist_focus: "[concept_ut_nd_fascist_core] Focus"
  ut_new_dawn_fascist_focus_desc: "#italic In Design: Only preview of [concept_ut_nd_milestones] available. #!"
  ut_new_dawn_fascist_bar: "Fascist"
  ut_new_dawn_fascist_bar_desc: "Fascist Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('new_dawn_core_upper_bound')])"
